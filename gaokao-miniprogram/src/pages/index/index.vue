@@ -1,5 +1,11 @@
 <template>
   <view class="container">
-    <text>首页占位</text>
+    <text class="test">样式测试</text>
   </view>
 </template>
+
+<style lang="scss" scoped>
+.test {
+  color: $brand-primary;
+}
+</style>
