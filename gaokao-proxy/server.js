@@ -29,6 +29,9 @@ app.post('/api/chat', async (req, res) => {
       return res.status(400).json({ error: 'query and user are required' })
     }
 
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 30000)
+
     const response = await fetch(`${DIFY_API_URL}/v1/chat-messages`, {
       method: 'POST',
       headers: {
@@ -41,8 +44,10 @@ app.post('/api/chat', async (req, res) => {
         response_mode: 'blocking',
         conversation_id,
         user
-      })
+      }),
+      signal: controller.signal
     })
+    clearTimeout(timeout)
 
     if (!response.ok) {
       const errText = await response.text()
