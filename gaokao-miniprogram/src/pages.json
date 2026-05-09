@@ -3,14 +3,14 @@
     {
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "峰哥报考参谋",
+        "navigationBarTitleText": "峰哥咨询参考",
         "navigationStyle": "custom"
       }
     },
     {
       "path": "pages/chat/chat",
       "style": {
-        "navigationBarTitleText": "峰哥报考参谋",
+        "navigationBarTitleText": "峰哥咨询参考",
         "navigationBarBackgroundColor": "#FFFFFF",
         "navigationBarTextStyle": "black"
       }
@@ -18,7 +18,7 @@
   ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "峰哥报考参谋",
+    "navigationBarTitleText": "峰哥咨询参考",
     "navigationBarBackgroundColor": "#FFFFFF",
     "backgroundColor": "#F9FAFB"
   }

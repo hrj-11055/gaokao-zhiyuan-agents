@@ -7,16 +7,20 @@
 
     <!-- 气泡内容 -->
     <view class="bubble" :class="[`bubble-${type}-inner`]">
-      <text class="bubble-text" :class="{ 'text-streaming': isStreaming }">
-        {{ content }}<text v-if="isStreaming" class="cursor" />
-      </text>
+      <view class="bubble-text" :class="{ 'text-streaming': isStreaming }">
+        <rich-text :nodes="contentHtml" />
+        <text v-if="isStreaming" class="cursor" />
+      </view>
       <text v-if="type === 'ai'" class="ai-label">AI 生成 · 仅供参考</text>
     </view>
   </view>
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+import { markdownToRichTextHtml } from '../utils/markdown.js'
+
+const props = defineProps({
   type: {
     type: String,
     required: true,
@@ -31,6 +35,8 @@ defineProps({
     default: false
   }
 })
+
+const contentHtml = computed(() => markdownToRichTextHtml(props.content))
 </script>
 
 <style lang="scss" scoped>

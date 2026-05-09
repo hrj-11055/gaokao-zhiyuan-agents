@@ -54,9 +54,9 @@ import { onShow } from '@dcloudio/uni-app'
 import ChatBubble from '../../components/ChatBubble.vue'
 import QuickQuestions from '../../components/QuickQuestions.vue'
 import { sendMessageStream } from '../../api/dify.js'
-import { getUserId, loadHistory, saveHistory, appendMessage } from '../../utils/storage.js'
+import { getUserId, loadHistory, saveHistory, appendMessage, loadUserProfile, buildProfileInputs } from '../../utils/storage.js'
 
-const welcomeMsg = '同学你好！我是峰哥报考参谋，你的 AI 志愿填报助手。有什么想问的？分数、学校、专业，都可以聊 👋'
+const welcomeMsg = '同学你好！我是峰哥咨询参考，你的 AI 志愿填报助手。有什么想问的？分数、学校、专业，都可以聊 👋'
 
 const messages = ref([])
 const inputText = ref('')
@@ -113,6 +113,7 @@ function onSend() {
     query: text,
     conversationId: conversationId.value,
     user: getUserId(),
+    inputs: buildProfileInputs(loadUserProfile()),
     onChunk(answerChunk, convId) {
       const lastMsg = messages.value[messages.value.length - 1]
       if (lastMsg && lastMsg.role === 'ai') {
@@ -132,7 +133,7 @@ function onSend() {
     },
     onError(errMsg) {
       isStreaming.value = false
-      const lastMsg = messages.value[messages.length - 1]
+      const lastMsg = messages.value[messages.value.length - 1]
       if (lastMsg && lastMsg.role === 'ai') {
         lastMsg.content = errMsg || '出了点问题，请稍后重试'
         messages.value = [...messages.value]

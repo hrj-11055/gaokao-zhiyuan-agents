@@ -1,12 +1,12 @@
 {
-  "name": "峰哥报考参谋",
+  "name": "峰哥咨询参考",
   "appid": "",
-  "description": "张雪峰风格的 AI 志愿填报助手",
+  "description": "AI 志愿填报助手，为你提供专业的高考志愿填报参考建议",
   "versionName": "0.1.0",
   "versionCode": "100",
   "transformPx": false,
   "mp-weixin": {
-    "appid": "__YOUR_APPID__",
+    "appid": "wx52fc7943bf6e76aa",
     "setting": {
       "urlCheck": false,
       "es6": true,
