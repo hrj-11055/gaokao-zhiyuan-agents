@@ -1,7 +1,6 @@
 'use strict'
 const fs = require('fs').promises
 const path = require('path')
-const { GoogleGenerativeAI } = require('@google/generative-ai')
 
 const MAJOR_REPORTS_DIR = process.env.MAJOR_REPORTS_DIR ||
   path.join(__dirname, '../../data/专业评估报告')
@@ -10,7 +9,7 @@ const UNIV_REPORTS_DIR = process.env.UNIV_REPORTS_DIR ||
 const REPORTS_DIR = process.env.REPORTS_DIR ||
   path.join(__dirname, '../reports')
 const SCORE_API_URL = process.env.SCORE_API_URL || 'http://159.75.110.157:5000'
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash'
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-chat'
 
 // 兴趣领域 → 专业门类代码前缀
 const INTEREST_TO_CODES = {
@@ -174,8 +173,8 @@ ${univText}
 }
 
 async function generateReport({ profile, questionnaire, conversationId, difyApiUrl, difyApiKey }) {
-  if (!process.env.GEMINI_API_KEY) {
-    throw new Error('GEMINI_API_KEY 环境变量未配置')
+  if (!process.env.DEEPSEEK_API_KEY) {
+    throw new Error('DEEPSEEK_API_KEY 环境变量未配置')
   }
 
   const [majorReports, univReports, messages] = await Promise.all([
@@ -186,17 +185,31 @@ async function generateReport({ profile, questionnaire, conversationId, difyApiU
 
   const prompt = buildPrompt(profile, questionnaire, messages, majorReports, univReports)
 
-  const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY)
-  const model = genAI.getGenerativeModel({
-    model: GEMINI_MODEL,
-    generationConfig: { maxOutputTokens: 8192, temperature: 0.7 },
-  })
-
   try {
-    const result = await model.generateContent(prompt)
-    return result.response.text()
+    const res = await fetch('https://api.deepseek.com/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model: DEEPSEEK_MODEL,
+        messages: [{ role: 'user', content: prompt }],
+        max_tokens: 8192,
+        temperature: 0.7,
+      }),
+      signal: AbortSignal.timeout(110000),
+    })
+
+    if (!res.ok) {
+      const err = await res.text()
+      throw new Error(`DeepSeek API error ${res.status}: ${err.slice(0, 200)}`)
+    }
+
+    const data = await res.json()
+    return data.choices[0].message.content
   } catch (err) {
-    console.error('Gemini generation failed:', err.message)
+    console.error('DeepSeek generation failed:', err.message)
     throw new Error('AI 报告生成失败，请稍后重试')
   }
 }
