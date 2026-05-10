@@ -108,18 +108,37 @@ Gemini Flash API
 **处理流程：**
 1. 限流检查：同一 userId 10 分钟内只允许生成一次
 2. 若 `conversationId` 非空，调 Dify `GET /v1/messages` 拉取对话记录（最多 50 条）；为空则跳过
-3. 拼接 prompt（profile + 问卷 + 对话摘要），调 Gemini Flash API
-4. 把响应 HTML 写入 `/var/www/reports/{userId}-{timestamp}.html`
-5. 返回 `{ "url": "http://47.113.125.147/reports/{filename}" }`
+3. **匹配预生成报告**（见下方说明）：
+   - 根据问卷 q15（兴趣领域）+ q20（目标行业）匹配 2-3 份专业评估报告（`.md` 文件）
+   - 根据 profile（省份、分数、科目）匹配 3-5 所院校评估报告（`.md` 文件）
+   - 读取对应文件内容作为上下文
+4. 拼接 prompt（profile + 问卷 + 对话摘要 + 专业/院校报告原文），调 Gemini Flash API
+5. 把响应 HTML 写入 `/var/www/reports/{userId}-{timestamp}.html`
+6. 返回 `{ "url": "http://47.113.125.147/reports/{filename}" }`
 
-**超时：** 60s（Gemini Flash 预计 10-15s）
+**超时：** 120s（含文件读取 + Gemini 生成，上下文较长）
+
+### 预生成报告匹配规则
+
+报告文件已提前跑出，存放于 proxy 服务器：
+- 专业报告：`MAJOR_REPORTS_DIR/{专业代码}_{专业名称}.md`（~840 份）
+- 院校报告：`UNIV_REPORTS_DIR/{大学名称}.md`
+
+**专业匹配**：把 q15 兴趣领域和 q20 目标行业映射到学科门类代码，扫描目录取前 3 份相关专业文件。优先取用户在对话中提到的专业名称（从对话记录中提取关键词匹配文件名）。
+
+**院校匹配**：调现有 Flask API（`/api/recommend?province=XX&score=XX&category=XX`）获取推荐院校列表，再从 `UNIV_REPORTS_DIR` 读取对应 `.md` 文件（无文件则跳过）。取分数段冲/稳/保各 1-2 所，共 4-5 所。
 
 **Response：**
 ```json
 { "url": "http://47.113.125.147/reports/user_xxx-1715000000.html" }
 ```
 
-**proxy `.env` 新增变量：** `GEMINI_API_KEY`、`REPORTS_DIR`（默认 `/var/www/reports`）
+**proxy `.env` 新增变量：**
+- `GEMINI_API_KEY` — Gemini Flash API 密钥
+- `REPORTS_DIR` — 生成报告存放目录（默认 `/var/www/reports`）
+- `MAJOR_REPORTS_DIR` — 专业评估报告目录（默认 `/opt/gaokao-data/专业评估报告`）
+- `UNIV_REPORTS_DIR` — 院校评估报告目录（默认 `/opt/gaokao-data/大学评估报告`）
+- `SCORE_API_URL` — Flask 分数推荐 API 地址（默认 `http://159.75.110.157:5000`）
 
 ### Nginx 配置（`/reports/` 静态托管，添加到 proxy 服务器 nginx 配置）
 ```nginx
@@ -147,12 +166,25 @@ location /reports/ {
 【AI 对话记录（最近 20 条）】
 {conversation_messages}
 
+【专业深度研究资料（已预生成，直接引用）】
+{major_report_1_content}
+
+{major_report_2_content}
+
+【院校深度研究资料（已预生成，直接引用）】
+{univ_report_1_content}
+
+{univ_report_2_content}
+
+{univ_report_3_content}
+
 输出要求：
 - 直接输出完整 HTML，不要代码块标记
 - 包含 6 个 Tab：自我评估总结、个人特质分析、专业匹配分析、专业深度研究、大学深度研究、综合决策报告
+- Tab 4（专业深度研究）和 Tab 5（大学深度研究）必须基于上方提供的预生成资料，不得自行编造数据
 - 使用 ECharts 雷达图展示六维能力
 - 深色渐变顶部（#0f1419 → #1a2332），白色卡片内容区
-- 报告中的数据必须基于考生真实信息，禁止编造录取分数线等具体数字
+- 其他 Tab 的分析结论需与预生成资料保持一致
 ```
 
 ## 数据结构
