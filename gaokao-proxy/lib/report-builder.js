@@ -93,12 +93,17 @@ async function matchUnivReports(profile) {
   const fileSet = new Set(files.map(f => f.replace('.md', '')))
   const matched = univNames.filter(name => fileSet.has(name)).slice(0, 5)
 
-  return Promise.all(
+  const results = await Promise.all(
     matched.map(async name => {
-      const content = await fs.readFile(path.join(UNIV_REPORTS_DIR, `${name}.md`), 'utf8')
-      return `### 院校：${name}\n${content.slice(0, 3000)}`
+      try {
+        const content = await fs.readFile(path.join(UNIV_REPORTS_DIR, `${name}.md`), 'utf8')
+        return `### 院校：${name}\n${content.slice(0, 3000)}`
+      } catch {
+        return ''
+      }
     })
   )
+  return results.filter(Boolean)
 }
 
 async function fetchDifyMessages(conversationId, difyApiUrl, difyApiKey) {
@@ -169,6 +174,10 @@ ${univText}
 }
 
 async function generateReport({ profile, questionnaire, conversationId, difyApiUrl, difyApiKey }) {
+  if (!process.env.GEMINI_API_KEY) {
+    throw new Error('GEMINI_API_KEY 环境变量未配置')
+  }
+
   const [majorReports, univReports, messages] = await Promise.all([
     matchMajorReports(questionnaire),
     matchUnivReports(profile),
@@ -183,8 +192,13 @@ async function generateReport({ profile, questionnaire, conversationId, difyApiU
     generationConfig: { maxOutputTokens: 8192, temperature: 0.7 },
   })
 
-  const result = await model.generateContent(prompt)
-  return result.response.text()
+  try {
+    const result = await model.generateContent(prompt)
+    return result.response.text()
+  } catch (err) {
+    console.error('Gemini generation failed:', err.message)
+    throw new Error('AI 报告生成失败，请稍后重试')
+  }
 }
 
 async function saveReport(userId, html) {
