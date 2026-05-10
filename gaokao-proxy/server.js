@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
+const { generateReport, saveReport, REPORTS_DIR } = require('./lib/report-builder')
 
 const app = express()
 const DIFY_API_URL = process.env.DIFY_API_URL || 'http://127.0.0.1:8080'
@@ -19,6 +20,8 @@ const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || '')
   .filter(Boolean)
 
 const rateLimitBuckets = new Map()
+const reportCooldowns = new Map()
+const REPORT_COOLDOWN_MS = 10 * 60 * 1000
 const THINK_OPEN = '<think>'
 const THINK_CLOSE = '</think>'
 
@@ -43,7 +46,7 @@ app.use(cors({
 app.use(express.json({ limit: JSON_BODY_LIMIT }))
 
 function rateLimit(req, res, next) {
-  const key = req.ip || req.headers['x-forwarded-for'] || 'unknown'
+  const key = (req.body && req.body.user) || req.ip || 'unknown'
   const now = Date.now()
   const bucket = rateLimitBuckets.get(key) || { count: 0, resetAt: now + RATE_LIMIT_WINDOW_MS }
 
@@ -175,7 +178,7 @@ function createThinkStripper() {
   }
 }
 
-app.use('/api/chat', rateLimit, requireProxyToken, validateChatRequest)
+app.use('/api/chat', requireProxyToken, validateChatRequest, rateLimit)
 
 // Health check
 app.get('/api/health', (req, res) => {
@@ -336,6 +339,44 @@ app.post('/api/chat/stream', async (req, res) => {
     }
   } finally {
     clearTimeout(timeout)
+  }
+})
+
+// 静态报告文件
+app.use('/reports', express.static(REPORTS_DIR))
+
+// 报告生成端点
+app.post('/api/report/generate', async (req, res) => {
+  const { userId, profile, questionnaire, conversationId } = req.body || {}
+
+  if (!userId || typeof userId !== 'string' || userId.length > 128) {
+    return res.status(400).json({ error: 'userId is required' })
+  }
+
+  const lastAt = reportCooldowns.get(userId) || 0
+  if (Date.now() - lastAt < REPORT_COOLDOWN_MS) {
+    const waitSec = Math.ceil((REPORT_COOLDOWN_MS - (Date.now() - lastAt)) / 1000)
+    return res.status(429).json({ error: `请 ${waitSec} 秒后再试` })
+  }
+
+  reportCooldowns.set(userId, Date.now())
+
+  try {
+    const html = await generateReport({
+      profile: profile || {},
+      questionnaire: questionnaire || {},
+      conversationId: conversationId || '',
+      difyApiUrl: DIFY_API_URL,
+      difyApiKey: DIFY_API_KEY,
+    })
+
+    const filename = await saveReport(userId, html)
+    const baseUrl = process.env.REPORT_BASE_URL || `http://localhost:${PORT}`
+    res.json({ url: `${baseUrl}/reports/${filename}` })
+  } catch (err) {
+    console.error('Report generation error:', err.message)
+    reportCooldowns.delete(userId)
+    res.status(500).json({ error: err.message || '报告生成失败，请稍后重试' })
   }
 })
 
