@@ -43,7 +43,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { loadUserProfile, loadQuestionnaire, loadHistory } from '../../utils/storage.js'
+import { loadUserProfile, loadQuestionnaire, loadHistory, getUserId } from '../../utils/storage.js'
 
 const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:3001'
 
@@ -77,7 +77,7 @@ async function generate() {
       url: `${API_BASE}/api/report/generate`,
       method: 'POST',
       data: {
-        userId: profile.userId || ('user_' + Date.now()),
+        userId: getUserId(),
         profile,
         questionnaire: answers || {},
         conversationId: conversationId || '',
