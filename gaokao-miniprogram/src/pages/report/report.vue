@@ -86,7 +86,7 @@ async function generate() {
       timeout: 120000,
     })
 
-    if (res.statusCode !== 200 || !res.data.url) {
+    if (res.statusCode !== 200 || !res.data?.url) {
       throw new Error(res.data?.error || '服务暂时不可用')
     }
 
@@ -106,9 +106,9 @@ function copyLink() {
 }
 
 function openInBrowser() {
-  // #ifdef MP-WEIXIN
-  uni.navigateTo({ url: reportUrl.value })
-  // #endif
+  uni.navigateTo({
+    url: `/pages/report-view/report-view?url=${encodeURIComponent(reportUrl.value)}`
+  })
 }
 </script>
 
