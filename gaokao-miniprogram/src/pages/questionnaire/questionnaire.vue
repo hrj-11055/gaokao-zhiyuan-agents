@@ -3,8 +3,8 @@
     <!-- 进度条 -->
     <view class="progress-bar-wrap">
       <view class="progress-info">
-        <text class="progress-text">已完成 {{ completedCount }}/22 题</text>
-        <text class="progress-pct">{{ Math.round(completedCount / 22 * 100) }}%</text>
+        <text class="progress-text">已完成 {{ completedCount }}/{{ QUESTIONS.length }} 题</text>
+        <text class="progress-pct">{{ Math.round(completedCount / QUESTIONS.length * 100) }}%</text>
       </view>
       <view class="progress-track">
         <view class="progress-fill" :style="{ width: (completedCount / 22 * 100) + '%' }" />
@@ -143,7 +143,12 @@ const rings = [
   { id: 5, label: '五' },
 ]
 
-const RING_START_INDEX = { 1: 0, 2: 5, 3: 9, 4: 13, 5: 16 }
+const RING_START_INDEX = (() => {
+  const index = {}
+  let cur = null
+  QUESTIONS.forEach((q, i) => { if (q.ring !== cur) { cur = q.ring; index[cur] = i } })
+  return index
+})()
 
 const currentIndex = ref(0)
 const answers = ref({})
@@ -176,11 +181,11 @@ function toggleOption(id, opt, type, maxSelect) {
   }
   const current = Array.isArray(answers.value[id]) ? [...answers.value[id]] : []
   const idx = current.indexOf(opt)
+  if (idx === -1 && maxSelect && current.length >= maxSelect) {
+    uni.showToast({ title: `最多选 ${maxSelect} 个`, icon: 'none' })
+    return
+  }
   if (idx === -1) {
-    if (maxSelect && current.length >= maxSelect) {
-      uni.showToast({ title: `最多选 ${maxSelect} 个`, icon: 'none' })
-      return
-    }
     current.push(opt)
   } else {
     current.splice(idx, 1)
