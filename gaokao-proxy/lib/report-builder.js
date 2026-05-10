@@ -10,7 +10,7 @@ const UNIV_REPORTS_DIR = process.env.UNIV_REPORTS_DIR ||
 const REPORTS_DIR = process.env.REPORTS_DIR ||
   path.join(__dirname, '../reports')
 const SCORE_API_URL = process.env.SCORE_API_URL || 'http://159.75.110.157:5000'
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash'
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash'
 
 // 兴趣领域 → 专业门类代码前缀
 const INTEREST_TO_CODES = {
