@@ -145,3 +145,32 @@ export function buildProfileInputs(profile) {
   }
   return inputs
 }
+
+const QUESTIONNAIRE_KEY = 'questionnaire'
+
+/**
+ * 保存问卷草稿（随时调用，允许部分填写）
+ * @param {{ [id: string]: string | string[] }} answers
+ */
+export function saveQuestionnaire(answers) {
+  const completed = Object.values(answers).filter(v => v !== '' && !(Array.isArray(v) && v.length === 0)).length
+  uni.setStorageSync(QUESTIONNAIRE_KEY, JSON.stringify({
+    answers,
+    completedCount: completed,
+    updatedAt: Date.now()
+  }))
+}
+
+/**
+ * 读取问卷草稿
+ * @returns {{ answers: object, completedCount: number, updatedAt: number }}
+ */
+export function loadQuestionnaire() {
+  const data = uni.getStorageSync(QUESTIONNAIRE_KEY)
+  if (!data) return { answers: {}, completedCount: 0, updatedAt: 0 }
+  try {
+    return JSON.parse(data)
+  } catch {
+    return { answers: {}, completedCount: 0, updatedAt: 0 }
+  }
+}
