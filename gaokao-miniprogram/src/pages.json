@@ -14,6 +14,22 @@
         "navigationBarBackgroundColor": "#FFFFFF",
         "navigationBarTextStyle": "black"
       }
+    },
+    {
+      "path": "pages/questionnaire/questionnaire",
+      "style": {
+        "navigationBarTitleText": "个人特质问卷",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/report/report",
+      "style": {
+        "navigationBarTitleText": "我的志愿报告",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
     }
   ],
   "globalStyle": {

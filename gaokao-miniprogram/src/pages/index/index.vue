@@ -84,6 +84,15 @@
       <text class="chat-entry-arrow">›</text>
     </view>
 
+    <!-- 报告入口 -->
+    <view class="report-entry" @click="goQuestionnaire">
+      <view class="report-entry-content">
+        <text class="report-entry-title">生成个人报告</text>
+        <text class="report-entry-sub">填写测评 · AI 深度分析 · 可转发家长</text>
+      </view>
+      <text class="report-entry-arrow">›</text>
+    </view>
+
     <!-- 免责声明 -->
     <view class="disclaimer">
       <text class="disclaimer-text">⚠️ 数据仅供参考，请以各省考试院公布信息为准</text>
@@ -113,6 +122,10 @@ const categoryIndex = computed(() => Math.max(0, categories.indexOf(profile.valu
 onShow(() => {
   profile.value = loadUserProfile()
 })
+
+function goQuestionnaire() {
+  uni.navigateTo({ url: '/pages/questionnaire/questionnaire' })
+}
 
 function goChat() {
   uni.navigateTo({ url: '/pages/chat/chat' })
@@ -355,5 +368,39 @@ function onSmartFill() {
 .disclaimer-text {
   font-size: 22rpx;
   color: $text-muted;
+}
+
+.report-entry {
+  width: 100%;
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  border-radius: $radius-lg;
+  padding: 28rpx 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16rpx;
+  box-sizing: border-box;
+}
+
+.report-entry-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.report-entry-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #fff;
+}
+
+.report-entry-sub {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.report-entry-arrow {
+  font-size: 46rpx;
+  color: #fff;
 }
 </style>
