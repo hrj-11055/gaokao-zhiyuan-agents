@@ -195,7 +195,7 @@ async function generateReport({ profile, questionnaire, conversationId, difyApiU
       body: JSON.stringify({
         model: DEEPSEEK_MODEL,
         messages: [{ role: 'user', content: prompt }],
-        max_tokens: 8192,
+        max_tokens: 32768,
         temperature: 0.7,
       }),
       signal: AbortSignal.timeout(110000),
