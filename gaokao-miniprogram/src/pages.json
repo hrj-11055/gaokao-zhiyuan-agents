@@ -38,6 +38,22 @@
         "navigationBarBackgroundColor": "#FFFFFF",
         "navigationBarTextStyle": "black"
       }
+    },
+    {
+      "path": "pages/assessments/assessments",
+      "style": {
+        "navigationBarTitleText": "测评",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
     }
   ],
   "globalStyle": {
@@ -45,5 +61,31 @@
     "navigationBarTitleText": "峰哥咨询参考",
     "navigationBarBackgroundColor": "#FFFFFF",
     "backgroundColor": "#F9FAFB"
+  },
+  "tabBar": {
+    "color": "#9CA3AF",
+    "selectedColor": "#F97316",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/assessments/assessments",
+        "text": "测评",
+        "iconPath": "static/tabbar/assess.png",
+        "selectedIconPath": "static/tabbar/assess-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "static/tabbar/profile.png",
+        "selectedIconPath": "static/tabbar/profile-active.png"
+      }
+    ]
   }
 }
