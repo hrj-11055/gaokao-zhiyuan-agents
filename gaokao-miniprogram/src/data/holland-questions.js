@@ -935,7 +935,8 @@ export const HOLLAND_TYPE_LABELS = {
 
 /**
  * 计算霍兰德职业兴趣代码
- * @param {Array} answers - 答案数组，每个元素是0-3的数字（选项索引）
+ * @param {Object} answers - 答案对象，格式为 { questionId: optionIndex }
+ *                          其中 questionId 是题目 ID (1-60)，optionIndex 是选项索引 (0-3)
  * @returns {Object} { code: 'RIA', scores: { R: 35, I: 32, A: 28, S: 25, E: 20, C: 18 } }
  */
 export function calculateHollandCode(answers) {
@@ -951,10 +952,10 @@ export function calculateHollandCode(answers) {
 
   // 计算每个类型的总分
   // 答案索引0-3对应分数1-4 (索引+1)
-  answers.forEach((answer, index) => {
-    const question = HOLLAND_QUESTIONS[index]
-    if (question && typeof answer === 'number' && answer >= 0 && answer <= 3) {
-      scores[question.type] += (answer + 1)
+  HOLLAND_QUESTIONS.forEach(q => {
+    const answer = answers[q.id]
+    if (answer !== undefined && answer >= 0 && answer <= 3) {
+      scores[q.type] += (answer + 1)
     }
   })
 
