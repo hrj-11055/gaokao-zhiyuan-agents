@@ -174,3 +174,176 @@ export function loadQuestionnaire() {
     return { answers: {}, completedCount: 0, updatedAt: 0 }
   }
 }
+
+// ==================== 测评模块存储 ====================
+
+const ASSESSMENTS_KEY = 'assessments'
+
+/**
+ * 规范化 MBTI 测评数据
+ */
+function normalizeMbti(mbti = {}) {
+  return {
+    completed: Boolean(mbti.completed),
+    type: typeof mbti.type === 'string' ? mbti.type : '',
+    scores: {
+      E: Number(mbti.scores?.E) || 0,
+      I: Number(mbti.scores?.I) || 0,
+      S: Number(mbti.scores?.S) || 0,
+      N: Number(mbti.scores?.N) || 0,
+      T: Number(mbti.scores?.T) || 0,
+      F: Number(mbti.scores?.F) || 0,
+      J: Number(mbti.scores?.J) || 0,
+      P: Number(mbti.scores?.P) || 0
+    },
+    answers: Array.isArray(mbti.answers) ? mbti.answers : [],
+    completedAt: mbti.completedAt || 0
+  }
+}
+
+/**
+ * 规范化霍兰德测评数据
+ */
+function normalizeHolland(holland = {}) {
+  return {
+    completed: Boolean(holland.completed),
+    code: typeof holland.code === 'string' ? holland.code : '',
+    scores: {
+      R: Number(holland.scores?.R) || 0,
+      I: Number(holland.scores?.I) || 0,
+      A: Number(holland.scores?.A) || 0,
+      S: Number(holland.scores?.S) || 0,
+      E: Number(holland.scores?.E) || 0,
+      C: Number(holland.scores?.C) || 0
+    },
+    answers: Array.isArray(holland.answers) ? holland.answers : [],
+    completedAt: holland.completedAt || 0
+  }
+}
+
+/**
+ * 规范化测评数据（内部使用）
+ */
+function normalizeAssessments(data = {}) {
+  return {
+    mbti: normalizeMbti(data.mbti),
+    holland: normalizeHolland(data.holland),
+    questionnaire: {
+      answers: typeof data.questionnaire?.answers === 'object' ? data.questionnaire.answers : {},
+      completedCount: Number(data.questionnaire?.completedCount) || 0
+    },
+    updatedAt: data.updatedAt || 0
+  }
+}
+
+/**
+ * 保存测评数据
+ * @param {object} assessments - 包含 mbti, holland, questionnaire 的测评数据
+ */
+export function saveAssessments(assessments) {
+  const data = normalizeAssessments({ ...assessments, updatedAt: Date.now() })
+  uni.setStorageSync(ASSESSMENTS_KEY, JSON.stringify(data))
+  return data
+}
+
+/**
+ * 读取测评数据
+ * @returns {object} 规范化后的测评数据
+ */
+export function loadAssessments() {
+  const data = uni.getStorageSync(ASSESSMENTS_KEY)
+  if (!data) {
+    return normalizeAssessments({ updatedAt: 0 })
+  }
+  try {
+    return normalizeAssessments(JSON.parse(data))
+  } catch {
+    return normalizeAssessments({ updatedAt: 0 })
+  }
+}
+
+/**
+ * 保存 MBTI 测评结果
+ * @param {object} result - { type, scores, answers }
+ */
+export function saveMbtiResult(result) {
+  const assessments = loadAssessments()
+  assessments.mbti = normalizeMbti({
+    ...result,
+    completed: true,
+    completedAt: Date.now()
+  })
+  return saveAssessments(assessments)
+}
+
+/**
+ * 保存霍兰德测评结果
+ * @param {object} result - { code, scores, answers }
+ */
+export function saveHollandResult(result) {
+  const assessments = loadAssessments()
+  assessments.holland = normalizeHolland({
+    ...result,
+    completed: true,
+    completedAt: Date.now()
+  })
+  return saveAssessments(assessments)
+}
+
+/**
+ * 保存 MBTI 答题进度
+ * @param {number} questionIndex - 当前题目索引
+ * @param {Array} answers - 已保存的答案
+ */
+export function saveMbtiProgress(questionIndex, answers = []) {
+  const assessments = loadAssessments()
+  assessments.mbti = normalizeMbti({
+    ...assessments.mbti,
+    completed: false,
+    questionIndex,
+    answers
+  })
+  return saveAssessments(assessments)
+}
+
+/**
+ * 保存霍兰德答题进度
+ * @param {number} questionIndex - 当前题目索引
+ * @param {Array} answers - 已保存的答案
+ */
+export function saveHollandProgress(questionIndex, answers = []) {
+  const assessments = loadAssessments()
+  assessments.holland = normalizeHolland({
+    ...assessments.holland,
+    completed: false,
+    questionIndex,
+    answers
+  })
+  return saveAssessments(assessments)
+}
+
+/**
+ * 计算已完成测评数量（0-3）
+ * @returns {number} 已完成的测评数量
+ */
+export function getCompletedAssessmentsCount() {
+  const assessments = loadAssessments()
+  let count = 0
+  if (assessments.mbti.completed) count++
+  if (assessments.holland.completed) count++
+  if (assessments.questionnaire.completedCount > 0) count++
+  return count
+}
+
+/**
+ * 检查是否所有测评都完成
+ * @returns {boolean}
+ */
+export function isAllAssessmentsCompleted() {
+  const assessments = loadAssessments()
+  return (
+    assessments.mbti.completed &&
+    assessments.holland.completed &&
+    assessments.questionnaire.completedCount > 0
+  )
+}
