@@ -84,13 +84,69 @@
       <text class="chat-entry-arrow">›</text>
     </view>
 
+    <!-- 测评卡片区 -->
+    <view class="assessments-section">
+      <view class="assessments-header">
+        <text class="assessments-title">专业测评</text>
+        <text class="assessments-count">{{ completedCount }}/3 已完成</text>
+      </view>
+
+      <!-- 五环问卷卡片 -->
+      <view class="assessment-card" :class="{ completed: questionnaireCompleted }" @click="goQuestionnaire">
+        <view class="assessment-card-left">
+          <view class="assessment-icon">
+            <text class="assessment-emoji">📋</text>
+          </view>
+          <view class="assessment-info">
+            <text class="assessment-name">五环问卷</text>
+            <text class="assessment-desc">{{ questionnaireCompleted ? '已完成' : `${questionnaire.completedCount}/22 题` }}</text>
+          </view>
+        </view>
+        <view class="assessment-status" :class="{ completed: questionnaireCompleted }">
+          <text class="status-text">{{ questionnaireCompleted ? '✓' : '›' }}</text>
+        </view>
+      </view>
+
+      <!-- MBTI 卡片 -->
+      <view class="assessment-card" :class="{ completed: assessments.mbti.completed }" @click="goMbti">
+        <view class="assessment-card-left">
+          <view class="assessment-icon">
+            <text class="assessment-emoji">🧠</text>
+          </view>
+          <view class="assessment-info">
+            <text class="assessment-name">MBTI 性格测评</text>
+            <text class="assessment-desc">{{ assessments.mbti.completed ? `已测出: ${assessments.mbti.type}` : '未完成' }}</text>
+          </view>
+        </view>
+        <view class="assessment-status" :class="{ completed: assessments.mbti.completed }">
+          <text class="status-text">{{ assessments.mbti.completed ? '✓' : '›' }}</text>
+        </view>
+      </view>
+
+      <!-- 霍兰德卡片 -->
+      <view class="assessment-card" :class="{ completed: assessments.holland.completed }" @click="goHolland">
+        <view class="assessment-card-left">
+          <view class="assessment-icon">
+            <text class="assessment-emoji">💼</text>
+          </view>
+          <view class="assessment-info">
+            <text class="assessment-name">霍兰德兴趣测评</text>
+            <text class="assessment-desc">{{ assessments.holland.completed ? `已测出: ${assessments.holland.code}` : '未完成' }}</text>
+          </view>
+        </view>
+        <view class="assessment-status" :class="{ completed: assessments.holland.completed }">
+          <text class="status-text">{{ assessments.holland.completed ? '✓' : '›' }}</text>
+        </view>
+      </view>
+    </view>
+
     <!-- 报告入口 -->
-    <view class="report-entry" @click="goQuestionnaire">
+    <view class="report-entry" :class="{ disabled: !allAssessmentsCompleted }" @click="goReport">
       <view class="report-entry-content">
         <text class="report-entry-title">生成个人报告</text>
-        <text class="report-entry-sub">填写测评 · AI 深度分析 · 可转发家长</text>
+        <text class="report-entry-sub">{{ reportSubtitle }}</text>
       </view>
-      <text class="report-entry-arrow">›</text>
+      <text class="report-entry-arrow" :class="{ disabled: !allAssessmentsCompleted }">{{ allAssessmentsCompleted ? '›' : '🔒' }}</text>
     </view>
 
     <!-- 免责声明 -->
@@ -103,7 +159,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
-import { loadUserProfile, saveUserProfile, isProfileComplete } from '../../utils/storage.js'
+import { loadUserProfile, saveUserProfile, isProfileComplete, loadAssessments, loadQuestionnaire, getCompletedAssessmentsCount } from '../../utils/storage.js'
 
 const provinces = [
   '北京', '天津', '河北', '山西', '内蒙古', '辽宁', '吉林', '黑龙江',
@@ -115,16 +171,58 @@ const categories = ['物理类', '历史类']
 
 const profile = ref(loadUserProfile())
 const saveStatus = ref('自动保存')
+const assessments = ref(loadAssessments())
+const questionnaire = ref(loadQuestionnaire())
 
 const provinceIndex = computed(() => Math.max(0, provinces.indexOf(profile.value.province)))
 const categoryIndex = computed(() => Math.max(0, categories.indexOf(profile.value.category)))
 
+const questionnaireCompleted = computed(() => questionnaire.value.completedCount >= 22)
+
+const allAssessmentsCompleted = computed(() => {
+  return (
+    assessments.value.mbti.completed &&
+    assessments.value.holland.completed &&
+    questionnaire.value.completedCount >= 22
+  )
+})
+
+const completedCount = computed(() => getCompletedAssessmentsCount())
+
+const reportSubtitle = computed(() => {
+  if (allAssessmentsCompleted.value) {
+    return '全部测评已完成 · 可生成深度报告'
+  }
+  return `还差 ${3 - completedCount.value} 个测评完成`
+})
+
 onShow(() => {
   profile.value = loadUserProfile()
+  assessments.value = loadAssessments()
+  questionnaire.value = loadQuestionnaire()
 })
 
 function goQuestionnaire() {
   uni.navigateTo({ url: '/pages/questionnaire/questionnaire' })
+}
+
+function goMbti() {
+  uni.navigateTo({ url: '/pages/mbti/mbti' })
+}
+
+function goHolland() {
+  uni.navigateTo({ url: '/pages/holland/holland' })
+}
+
+function goReport() {
+  if (!allAssessmentsCompleted.value) {
+    uni.showToast({
+      title: `还差 ${3 - completedCount.value} 个测评完成`,
+      icon: 'none'
+    })
+    return
+  }
+  uni.navigateTo({ url: '/pages/report/report' })
 }
 
 function goChat() {
@@ -333,7 +431,7 @@ function onSmartFill() {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: auto;
+  margin-bottom: 16rpx;
   box-sizing: border-box;
 }
 
@@ -357,6 +455,127 @@ function onSmartFill() {
 .chat-entry-arrow {
   font-size: 46rpx;
   color: $brand-primary;
+}
+
+.assessments-section {
+  width: 100%;
+  background: $bg-white;
+  border-radius: $radius-xl;
+  padding: 28rpx 24rpx;
+  margin-bottom: 16rpx;
+  box-sizing: border-box;
+}
+
+.assessments-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  padding: 0 8rpx;
+}
+
+.assessments-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: $text-primary;
+}
+
+.assessments-count {
+  font-size: 24rpx;
+  color: $text-secondary;
+  background: #F3F4F6;
+  padding: 6rpx 16rpx;
+  border-radius: $radius-full;
+}
+
+.assessment-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 16rpx;
+  border-radius: $radius-lg;
+  margin-bottom: 12rpx;
+  background: #F9FAFB;
+  transition: background-color 0.2s;
+}
+
+.assessment-card:last-child {
+  margin-bottom: 0;
+}
+
+.assessment-card.completed {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.08));
+  border: 1rpx solid rgba(16, 185, 129, 0.2);
+}
+
+.assessment-card-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.assessment-icon {
+  width: 64rpx;
+  height: 64rpx;
+  background: rgba(249, 115, 22, 0.1);
+  border-radius: $radius-md;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16rpx;
+}
+
+.assessment-emoji {
+  font-size: 32rpx;
+}
+
+.assessment-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.assessment-name {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: $text-primary;
+  margin-bottom: 4rpx;
+}
+
+.assessment-desc {
+  font-size: 23rpx;
+  color: $text-secondary;
+}
+
+.assessment-status {
+  width: 48rpx;
+  height: 48rpx;
+  background: $bg-white;
+  border-radius: $radius-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assessment-status.completed {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.status-text {
+  font-size: 28rpx;
+  color: $text-muted;
+}
+
+.assessment-status.completed .status-text {
+  color: #fff;
+  font-weight: 600;
+}
+
+.report-entry.disabled {
+  opacity: 0.6;
+}
+
+.report-entry-arrow.disabled {
+  opacity: 0.7;
 }
 
 .disclaimer {
