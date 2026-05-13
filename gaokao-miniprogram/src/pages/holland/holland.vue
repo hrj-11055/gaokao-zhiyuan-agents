@@ -64,7 +64,7 @@ onShow(() => {
   if (assessments.holland.completed) {
     // 已完成，跳转到结果页
     uni.redirectTo({
-      url: '/pages/holland/result'
+      url: '/pages/holland/holland-result'
     })
     return
   }
@@ -157,7 +157,7 @@ function submitResult() {
 
   // 跳转到结果页
   uni.redirectTo({
-    url: '/pages/holland/result'
+    url: '/pages/holland/holland-result'
   })
 }
 </script>
