@@ -82,7 +82,7 @@ onShow(() => {
   const assessments = loadAssessments()
   if (assessments.mbti.completed) {
     // 已完成，跳转到结果页
-    uni.redirectTo({ url: '/pages/mbti/result' })
+    uni.redirectTo({ url: '/pages/mbti/mbti-result' })
     return
   }
 
@@ -180,7 +180,7 @@ function finish() {
   })
 
   // 跳转到结果页
-  uni.redirectTo({ url: '/pages/mbti/result' })
+  uni.redirectTo({ url: '/pages/mbti/mbti-result' })
 }
 </script>
 
