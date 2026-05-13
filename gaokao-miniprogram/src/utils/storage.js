@@ -197,6 +197,7 @@ function normalizeMbti(mbti = {}) {
       P: Number(mbti.scores?.P) || 0
     },
     answers: Array.isArray(mbti.answers) ? mbti.answers : [],
+    questionIndex: typeof mbti.questionIndex === 'number' ? mbti.questionIndex : 0,
     completedAt: mbti.completedAt || 0
   }
 }
@@ -217,6 +218,7 @@ function normalizeHolland(holland = {}) {
       C: Number(holland.scores?.C) || 0
     },
     answers: Array.isArray(holland.answers) ? holland.answers : [],
+    questionIndex: typeof holland.questionIndex === 'number' ? holland.questionIndex : 0,
     completedAt: holland.completedAt || 0
   }
 }
@@ -273,7 +275,8 @@ export function saveMbtiResult(result) {
     completed: true,
     completedAt: Date.now()
   })
-  return saveAssessments(assessments)
+  const saved = saveAssessments(assessments)
+  return saved.mbti
 }
 
 /**
@@ -287,7 +290,8 @@ export function saveHollandResult(result) {
     completed: true,
     completedAt: Date.now()
   })
-  return saveAssessments(assessments)
+  const saved = saveAssessments(assessments)
+  return saved.holland
 }
 
 /**
@@ -331,7 +335,7 @@ export function getCompletedAssessmentsCount() {
   let count = 0
   if (assessments.mbti.completed) count++
   if (assessments.holland.completed) count++
-  if (assessments.questionnaire.completedCount > 0) count++
+  if (assessments.questionnaire.completedCount >= 22) count++
   return count
 }
 
@@ -344,6 +348,6 @@ export function isAllAssessmentsCompleted() {
   return (
     assessments.mbti.completed &&
     assessments.holland.completed &&
-    assessments.questionnaire.completedCount > 0
+    assessments.questionnaire.completedCount >= 22
   )
 }
