@@ -91,7 +91,7 @@ export class SSEParser {
  * @param {string} params.conversationId - 会话 ID（首轮为空）
  * @param {string} params.user - 用户标识
  * @param {Object} params.inputs - Dify 输入变量（考生省份、科目、分数、位次）
- * @param {Function} params.onChunk - 每收到一段文本时回调(answerChunk, conversationId)
+ * @param {Function} params.onChunk - 每收到一段文本时回调(answerChunk, conversationId, messageId)
  * @param {Function} params.onEnd - 流结束时回调({ conversationId, messageId })
  * @param {Function} params.onError - 错误回调(errorMessage)
  * @returns {{ abort: Function }} 可调用 abort() 取消请求
@@ -101,7 +101,7 @@ export function sendMessageStream({ query, conversationId, user, inputs = {}, on
   const parser = new SSEParser(
     (data) => {
       if (data.answer) {
-        onChunk(data.answer, data.conversation_id)
+        onChunk(data.answer, data.conversation_id, data.message_id)
       }
     },
     (data) => {
@@ -180,4 +180,36 @@ export async function sendMessageBlocking({ query, conversationId, user, inputs 
     conversationId: response.data.conversation_id,
     messageId: response.data.message_id
   }
+}
+
+/**
+ * 发送对话反馈（点赞/点踩）
+ */
+export async function sendFeedback({ messageId, rating, query, answer }) {
+  const response = await uni.request({
+    url: `${API_BASE}/api/chat/feedback`,
+    method: 'POST',
+    data: { messageId, rating, query, answer },
+    header: { 'Content-Type': 'application/json' }
+  })
+  return response.statusCode === 200
+}
+
+/**
+ * 语音合成请求
+ * 返回音频的 ArrayBuffer
+ */
+export async function fetchTTSAudio(text) {
+  const response = await uni.request({
+    url: `${API_BASE}/api/tts`,
+    method: 'POST',
+    data: { text },
+    responseType: 'arraybuffer',
+    header: { 'Content-Type': 'application/json' }
+  })
+  
+  if (response.statusCode !== 200) {
+    throw new Error('语音合成失败')
+  }
+  return response.data
 }

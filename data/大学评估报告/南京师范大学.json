@@ -1,0 +1,54 @@
+{
+  "university_name": "南京师范大学",
+  "short_name": "NNU",
+  "location": {
+    "city": "南京",
+    "provinces": "江苏",
+    "campuses": [
+      "随园",
+      "仙林",
+      "紫金"
+    ]
+  },
+  "academic_standing": {
+    "double_first_class": true,
+    "project_211": true,
+    "a_plus_disciplines": [
+      "教育学",
+      "地理学"
+    ],
+    "a_disciplines": [
+      "马克思主义理论"
+    ],
+    "a_minus_disciplines": [
+      "中国语言文学",
+      "外国语言文学",
+      "美术学"
+    ],
+    "academician_count": 11
+  },
+  "student_quality": {
+    "jiangsu_history_rank_required": "Top 1500",
+    "jiangsu_physics_rank_required": "Top 12000",
+    "source_competitiveness_index": 4.5
+  },
+  "employment_outcomes": {
+    "further_study_rate": "44.17%",
+    "key_employers": [
+      "江苏省重点中学",
+      "华为",
+      "政府机关"
+    ],
+    "starting_salary_median": 6800,
+    "employment_satisfaction": "92%"
+  },
+  "campus_life": {
+    "transfer_success_rate": "55%",
+    "dormitory_condition": "仙林优于随园",
+    "canteen_rating": 4.5
+  },
+  "overall_evaluation": {
+    "comprehensive_score": 4.41,
+    "recommendation_level": "Strongly Recommended"
+  }
+}

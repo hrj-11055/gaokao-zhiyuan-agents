@@ -1,0 +1,39 @@
+{
+  "university_name": "湖南应用技术学院",
+  "short_name": "应院 / HATU",
+  "location": {
+    "province": "湖南",
+    "city": "常德",
+    "campus": [
+      "东校区",
+      "西校区"
+    ]
+  },
+  "academic_level": {
+    "type": "民办应用型本科",
+    "key_majors": [
+      "园林",
+      "机械电子工程",
+      "汉语言文学",
+      "财务管理"
+    ],
+    "first_class_provincial": 4
+  },
+  "admission_index": {
+    "avg_rank_history": 50000,
+    "avg_rank_physics": 186000,
+    "difficulty_level": "Low"
+  },
+  "employment_index": {
+    "employment_rate": "87.75%",
+    "further_study_rate": "5.1%",
+    "primary_industry": "制造业、建筑园林",
+    "starting_salary_median": 5100
+  },
+  "vibe_tags": [
+    "Strict Management",
+    "Practical Skills",
+    "Local Integration"
+  ],
+  "comprehensive_score": 2.24
+}

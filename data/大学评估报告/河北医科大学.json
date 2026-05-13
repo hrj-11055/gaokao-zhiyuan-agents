@@ -1,0 +1,44 @@
+{
+  "university_info": {
+    "name": "河北医科大学",
+    "abbreviation": "HEBMU",
+    "established": 1894,
+    "location": "河北省石家庄市",
+    "type": "公办医科院校",
+    "level": "省部共建重点大学"
+  },
+  "academic_strength": {
+    "key_disciplines": [
+      "临床医学",
+      "基础医学",
+      "药学",
+      "中西医结合"
+    ],
+    "academician_count": 1,
+    "phd_programs": 6,
+    "esi_top_1_percent": 5
+  },
+  "student_quality": {
+    "hebei_rank_clinical_5plus3": "Top 8000",
+    "average_retention_rate": "98%",
+    "further_study_rate": "45.72%"
+  },
+  "employment_data": {
+    "major_employers": [
+      "河北医大附属医院",
+      "石药集团",
+      "以岭药业"
+    ],
+    "primary_employment_region": "京津冀",
+    "starting_salary_estimate": 5800
+  },
+  "evaluation_scores": {
+    "academic": 3.6,
+    "employment": 4.0,
+    "location": 3.7,
+    "globalization": 2.8,
+    "student_freedom": 2.5,
+    "brand_value": 3.8,
+    "overall_weighted_score": 3.62
+  }
+}

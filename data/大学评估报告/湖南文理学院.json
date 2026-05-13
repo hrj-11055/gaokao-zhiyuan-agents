@@ -1,0 +1,45 @@
+{
+  "university_name": "湖南文理学院",
+  "english_name": "Hunan University of Arts and Science",
+  "location": {
+    "province": "湖南省",
+    "city": "常德市",
+    "campus": [
+      "主校区",
+      "滨湖校区"
+    ]
+  },
+  "academic_level": {
+    "type": "省属公办本科",
+    "tags": [
+      "应用型本科",
+      "硕士学位授予单位",
+      "楚怡工匠计划"
+    ],
+    "key_disciplines": [
+      "水产养殖学",
+      "地理科学",
+      "机械工程",
+      "教育学"
+    ]
+  },
+  "key_stats": {
+    "academician_count": 1,
+    "provincial_key_disciplines": 7,
+    "further_study_rate": "16.7%",
+    "starting_salary_median": 4800
+  },
+  "admission_guide": {
+    "history_group_rank_avg": 22000,
+    "physics_group_rank_avg": 100000,
+    "competitive_majors": [
+      "汉语言文学(师范)",
+      "计算机科学与技术",
+      "电气工程"
+    ]
+  },
+  "evaluation": {
+    "comprehensive_score": 2.87,
+    "recommendation_index": "4星 (针对省内务实型考生)"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "university_name": "北京师范大学",
+  "short_name": "BNU",
+  "location": {
+    "main_campus": "北京海淀",
+    "secondary_campus": "北京昌平, 广东珠海"
+  },
+  "academic_standing": {
+    "double_first_class": "A类",
+    "a_plus_subjects": [
+      "教育学",
+      "心理学",
+      "中国语言文学",
+      "中国史",
+      "地理学",
+      "戏剧与影视学"
+    ],
+    "key_labs": [
+      "认知神经科学与学习国家重点实验室",
+      "地表过程与资源生态国家重点实验室"
+    ]
+  },
+  "admission_competitiveness": {
+    "liberal_arts_rank": "Top 5",
+    "science_rank": "Top 15",
+    "transfer_policy": "Zero threshold for outgoing"
+  },
+  "career_outcomes": {
+    "further_study_rate": "62.38%",
+    "top_employers": [
+      "Top K-12 Schools",
+      "Government",
+      "Tech Giants"
+    ],
+    "avg_starting_salary": 9229
+  },
+  "scores": {
+    "academic": 4.9,
+    "employment": 4.8,
+    "location": 4.8,
+    "brand": 4.9,
+    "overall": 4.795
+  }
+}

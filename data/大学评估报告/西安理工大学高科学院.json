@@ -1,0 +1,59 @@
+{
+  "university_name": "西安理工大学高科学院",
+  "short_name": "西理工高科",
+  "established_year": 2006,
+  "location": {
+    "province": "陕西省",
+    "city": "西安市",
+    "district": "西咸新区泾河新城",
+    "campus_features": "现代化、硬件优越、地理位置偏远"
+  },
+  "academic_stats": {
+    "parent_university": "西安理工大学",
+    "faculty_senior_title_rate": "约70%（含共享）",
+    "key_majors": [
+      "机械设计制造及其自动化",
+      "电气工程及其自动化",
+      "水利水电工程",
+      "财务管理"
+    ],
+    "research_platforms": [
+      "智能制造实验实训中心",
+      "泾河新城智算中心"
+    ]
+  },
+  "admission_data": {
+    "average_score_shaanxi_science": "403-415",
+    "average_score_henan_science": "465-477",
+    "student_quality_trend": "Stable/Rising"
+  },
+  "employment_stats": {
+    "overall_employment_rate": ">90%",
+    "kaoyan_rate": "13.5%",
+    "median_starting_salary": 5200,
+    "primary_industries": [
+      "Manufacturing",
+      "Construction",
+      "Power & Energy"
+    ],
+    "top_employers": [
+      "BYD",
+      "CSCEC",
+      "Shaanxi Automobile Holding Group"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.2,
+    "employment_value": 2.5,
+    "location_advantage": 3.2,
+    "globalization": 1.8,
+    "student_empowerment": 2.8,
+    "brand_asset": 2.6,
+    "weighted_total_score": 2.47
+  },
+  "risk_factors": [
+    "Independent college transition uncertainty",
+    "Remote campus location",
+    "Brand reliance on parent university"
+  ]
+}

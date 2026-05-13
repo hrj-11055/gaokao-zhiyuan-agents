@@ -1,0 +1,51 @@
+{
+  "university_details": {
+    "name": "江苏科技大学苏州理工学院",
+    "short_name": "苏理工 / SIT",
+    "location": "江苏省苏州市张家港市",
+    "type": "独立学院（应用型本科）",
+    "parent_university": "江苏科技大学",
+    "founding_year": 2005
+  },
+  "academic_strength": {
+    "key_disciplines": [
+      "船舶与海洋工程",
+      "机械设计制造及其自动化",
+      "材料科学与工程"
+    ],
+    "faculty_structure": {
+      "dual_teacher_ratio": "45%",
+      "doctorate_ratio": "[待核实]"
+    }
+  },
+  "admission_data_2024": {
+    "jiangsu_physics_group": {
+      "min_score": 475,
+      "min_rank": 174679
+    },
+    "jiangsu_history_group": {
+      "min_score": 495,
+      "min_rank": 43078
+    }
+  },
+  "career_outcomes": {
+    "overall_employment_rate": "95%+",
+    "further_study_rate": "12.5%",
+    "top_employers": [
+      "沙钢集团",
+      "中船澄西",
+      "永钢集团",
+      "招商局重工"
+    ],
+    "avg_starting_salary": 5800
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.2,
+    "graduate_value": 3.2,
+    "location_advantage": 4.5,
+    "global_capability": 1.8,
+    "student_empowerment": 2.8,
+    "brand_equity": 2.5,
+    "weighted_total": 2.865
+  }
+}

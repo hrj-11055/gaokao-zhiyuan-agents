@@ -1,0 +1,368 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwie18O3wIyUAxX6SPEDHXW7LP8QPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 智能影像工程专业 101013T 就业前景 薪资 院校 2025 智能影像工程专业 101013T 就业前景 薪资 院校 2025
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%2599%25BA%25E8%2583%25BD%25E5%25BD%25B1%25E5%2583%258F%25E5%25B7%25A5%25E7%25A8%258B%25E4%25B8%2593%25E4%25B8%259A%2B101013T%2B%25E5%25B0%25B1%25E4%25B8%259A%25E5%2589%258D%25E6%2599%25AF%2B%25E8%2596%25AA%25E8%25B5%2584%2B%25E9%2599%25A2%25E6%25A0%25A1%2B2025&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A+101013T+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E8%B5%84+%E9%99%A2%E6%A0%A1+2025&sca_esv=f626b95a298d7988&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&aep=1&ntc=1&sa=X&ved=2ahUKEwie18O3wIyUAxX6SPEDHXW7LP8Q2J8OegQIEhAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A+101013T+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E8%B5%84+%E9%99%A2%E6%A0%A1+2025&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&sa=X&ved=2ahUKEwie18O3wIyUAxX6SPEDHXW7LP8Q0pQJegQIGBAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A+101013T+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E8%B5%84+%E9%99%A2%E6%A0%A1+2025&sa=X&ved=2ahUKEwie18O3wIyUAxX6SPEDHXW7LP8QtKgLegQIFBAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A+101013T+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E8%B5%84+%E9%99%A2%E6%A0%A1+2025&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "短视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A+101013T+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E8%B5%84+%E9%99%A2%E6%A0%A1+2025&sa=X&ved=2ahUKEwie18O3wIyUAxX6SPEDHXW7LP8Qs6gLegQIFhAB
+              - generic [ref=e103]: 短视频
+          - listitem [ref=e104]:
+            - link "视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A+101013T+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E8%B5%84+%E9%99%A2%E6%A0%A1+2025&sa=X&ved=2ahUKEwie18O3wIyUAxX6SPEDHXW7LP8QtKgLegQIFxAB
+              - generic [ref=e107]: 视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在搜索 再多想一会儿" [level=2] [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e155]: 正在搜索
+            - generic [ref=e165]: 再多想一会儿
+        - progressbar [ref=e167]
+      - main [ref=e209]:
+        - generic [ref=e213]:
+          - generic [ref=e216]:
+            - heading "网页搜索结果" [level=2] [ref=e217]
+            - generic [ref=e218]:
+              - generic [ref=e221]:
+                - link "智能影像工程专业读几年 掌上高考 https://m.gaokao.cn › ..." [ref=e223] [cursor=pointer]:
+                  - /url: https://m.gaokao.cn/zd/118608
+                  - heading "智能影像工程专业读几年" [level=3] [ref=e224]
+                  - generic [ref=e229]:
+                    - generic [ref=e231]: 掌上高考
+                    - generic [ref=e233]: https://m.gaokao.cn › ...
+                - button "关于这条结果的详细信息" [ref=e234] [cursor=pointer]:
+                  - img [ref=e237]
+              - generic [ref=e241]:
+                - emphasis [ref=e242]: 智能影像工程专业
+                - text: 本科读四年。专业代码为
+                - emphasis [ref=e243]: 101013T
+                - text: 的
+                - emphasis [ref=e244]: 智能影像工程专业
+                - text: 是本科层次，学制是四年，门类是医学，专业类是医学技术类，毕业后授予工学学士学位。智能影像工程 ...
+          - generic [ref=e249]:
+            - heading "相关问题" [level=2] [ref=e251]
+            - generic [ref=e252]:
+              - button "人工智能需要学什么专业？" [ref=e258] [cursor=pointer]:
+                - generic [ref=e260]: 人工智能需要学什么专业？
+                - img [ref=e263]
+              - button "2025热门专业？" [ref=e272] [cursor=pointer]:
+                - generic [ref=e274]: 2025热门专业？
+                - img [ref=e277]
+          - generic [ref=e282]:
+            - heading "网页搜索结果" [level=2] [ref=e283]
+            - generic [ref=e284]:
+              - generic [ref=e287]:
+                - link "智能影像工程专业-101013T 果然优志 https://www.hzgrys.net › subject › 101013T" [ref=e289] [cursor=pointer]:
+                  - /url: https://www.hzgrys.net/subject/101013T.html
+                  - heading "智能影像工程专业-101013T" [level=3] [ref=e290]
+                  - generic [ref=e295]:
+                    - generic [ref=e297]: 果然优志
+                    - generic [ref=e299]: https://www.hzgrys.net › subject › 101013T
+                - button "关于这条结果的详细信息" [ref=e300] [cursor=pointer]:
+                  - img [ref=e303]
+              - generic [ref=e307]:
+                - emphasis [ref=e308]: 智能影像工程专业
+                - text: 是人工智能+医学影像（技术与设备）的复合特色专业，主要培养具备医学、医学影像工程、人工智能等领域的基本知识和技能，能够从事人工智能辅助诊断、智能 ...
+          - generic [ref=e312]:
+            - generic [ref=e315]:
+              - link "智能影像工程_百度百科 百度百科 https://baike.baidu.com › item › 智能影像工程" [ref=e317] [cursor=pointer]:
+                - /url: https://baike.baidu.com/item/%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B/56174862
+                - heading "智能影像工程_百度百科" [level=3] [ref=e318]
+                - generic [ref=e323]:
+                  - generic [ref=e325]: 百度百科
+                  - generic [ref=e327]: https://baike.baidu.com › item › 智能影像工程
+              - button "关于这条结果的详细信息" [ref=e328] [cursor=pointer]:
+                - img [ref=e331]
+            - generic [ref=e335]:
+              - emphasis [ref=e336]: 智能影像工程
+              - text: （Intelligent Imaging Engineering）是中国普通高等学校本科
+              - emphasis [ref=e337]: 专业
+              - text: ，属于医学技术类，学制四年，授予工学学士学位，
+              - emphasis [ref=e338]: 专业
+              - text: 代码为
+              - emphasis [ref=e339]: 101013T
+              - text: 。该
+              - emphasis [ref=e340]: 专业
+              - text: 是医学
+              - emphasis [ref=e341]: 影像
+              - text: 学与 ...
+          - generic [ref=e345]:
+            - generic [ref=e348]:
+              - link "智能影像工程专业就业方向有哪些？就业前景如何？ 高考志愿填报 https://www.gaokao.cn › ..." [ref=e350] [cursor=pointer]:
+                - /url: https://www.gaokao.cn/gk/40298
+                - heading "智能影像工程专业就业方向有哪些？就业前景如何？" [level=3] [ref=e351]
+                - generic [ref=e353]:
+                  - img [ref=e357]
+                  - generic [ref=e359]:
+                    - generic [ref=e361]: 高考志愿填报
+                    - generic [ref=e363]: https://www.gaokao.cn › ...
+              - button "关于这条结果的详细信息" [ref=e364] [cursor=pointer]:
+                - img [ref=e367]
+            - generic [ref=e370]:
+              - generic [ref=e371]: 2024年12月12日 —
+              - generic [ref=e372]:
+                - emphasis [ref=e373]: 智能影像工程专业
+                - text: 毕业生可以在多个行业中找到
+                - emphasis [ref=e374]: 就业
+                - text: 机会，包括人工智能、机器视觉、医疗影像、媒体与娱乐等领域。下面将详细介绍
+                - emphasis [ref=e375]: 智能影像工程专业
+                - text: 的
+                - emphasis [ref=e376]: 就业
+                - text: 方向 ...
+            - generic [ref=e378]:
+              - text: 缺少字词： 101013T ‎| 必须包含：
+              - link "101013T" [ref=e379] [cursor=pointer]:
+                - /url: /search?sca_esv=f626b95a298d7988&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A+%22101013T%22+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E8%B5%84+%E9%99%A2%E6%A0%A1+2025&sa=X&ved=2ahUKEwie18O3wIyUAxX6SPEDHXW7LP8Q5t4CegQIQxAB
+          - generic [ref=e383]:
+            - generic [ref=e386]:
+              - link "医学影像技术专业属于什么大类哪个门类 大学生必备网 https://www.dxsbb.com › news" [ref=e388] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/145057.html
+                - heading "医学影像技术专业属于什么大类哪个门类" [level=3] [ref=e389]
+                - generic [ref=e394]:
+                  - generic [ref=e396]: 大学生必备网
+                  - generic [ref=e398]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e399] [cursor=pointer]:
+                - img [ref=e402]
+            - generic [ref=e405]:
+              - generic [ref=e406]: 2025年4月28日 —
+              - generic [ref=e407]:
+                - text: 医学
+                - emphasis [ref=e408]: 影像
+                - text: 技术
+                - emphasis [ref=e409]: 专业
+                - text: 属于医学技术类
+                - emphasis [ref=e410]: 专业
+                - text: ，所属门类为医学。医学
+                - emphasis [ref=e411]: 影像
+                - text: 技术
+                - emphasis [ref=e412]: 专业
+                - text: 代码为101003，层次为本科，修业年限为四年，毕业可授予理学学士学位。
+          - generic [ref=e416]:
+            - generic [ref=e419]:
+              - link "智能影像工程专业属于哪个大类 掌上高考 https://m.gaokao.cn › gk-mb" [ref=e421] [cursor=pointer]:
+                - /url: https://m.gaokao.cn/gk-mb/24/8822
+                - heading "智能影像工程专业属于哪个大类" [level=3] [ref=e422]
+                - generic [ref=e427]:
+                  - generic [ref=e429]: 掌上高考
+                  - generic [ref=e431]: https://m.gaokao.cn › gk-mb
+              - button "关于这条结果的详细信息" [ref=e432] [cursor=pointer]:
+                - img [ref=e435]
+            - generic [ref=e438]:
+              - generic [ref=e439]: 2026年3月15日 —
+              - generic [ref=e440]:
+                - text: 二、开设
+                - emphasis [ref=e441]: 智能影像工程
+                - text: 的
+                - emphasis [ref=e442]: 院校
+                - text: 推荐： · 1.聊城大学. 聊城大学坐落于享有“江北水城·两河明珠（黄河、运河）”美誉的国家历史文化名城——山东省聊城市。 · 2.山东第一 ...
+          - generic [ref=e446]:
+            - generic [ref=e449]:
+              - link "医技类专业包括哪些？盘点医技类最吃香的三个专业 - 考试帮手网 help315.com.cn http://www.help315.com.cn › gkdt › 2025" [ref=e451] [cursor=pointer]:
+                - /url: http://www.help315.com.cn/gkdt/2025/0227/2280767.html
+                - heading "医技类专业包括哪些？盘点医技类最吃香的三个专业 - 考试帮手网" [level=3] [ref=e452]
+                - generic [ref=e457]:
+                  - generic [ref=e459]: help315.com.cn
+                  - generic [ref=e461]: http://www.help315.com.cn › gkdt › 2025
+              - button "关于这条结果的详细信息" [ref=e462] [cursor=pointer]:
+                - img [ref=e465]
+            - generic [ref=e469]:
+              - text: ...
+              - emphasis [ref=e470]: 就业前景
+              - text: 还是
+              - emphasis [ref=e471]: 薪资
+              - text: 待遇上医学技术类
+              - emphasis [ref=e472]: 专业
+              - text: 都是非常值得报考的，那么医学技术类
+              - emphasis [ref=e473]: 专业
+              - text: 主要包含哪些呢？ ...
+              - emphasis [ref=e474]: 智能影像工程
+              - text: ","
+              - emphasis [ref=e475]: 101013T
+              - text: . 14, 医工学, 101014TK. 从以上 ... 附
+              - emphasis [ref=e476]: 院校
+              - text: +
+              - emphasis [ref=e477]: 专业
+              - text: ...
+          - generic [ref=e481]:
+            - generic [ref=e484]:
+              - link "齐鲁理工学院新增专业有哪些（含名单） 大学生必备网 https://www.dxsbb.com › news" [ref=e486] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/10188.html
+                - heading "齐鲁理工学院新增专业有哪些（含名单）" [level=3] [ref=e487]
+                - generic [ref=e492]:
+                  - generic [ref=e494]: 大学生必备网
+                  - generic [ref=e496]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e497] [cursor=pointer]:
+                - img [ref=e500]
+            - generic [ref=e503]:
+              - generic [ref=e504]: 2025年4月29日 —
+              - generic [ref=e505]:
+                - emphasis [ref=e506]: 智能影像工程
+                - text: ", 工学, 四年, 2022. 14, 齐鲁理工学院, 120103,"
+                - emphasis [ref=e507]: 工程
+                - text: 管理, 工学, 四 ... 齐鲁理工学院就业率及
+                - emphasis [ref=e508]: 就业前景
+                - text: 怎么样.
+                - emphasis [ref=e509]: "2025"
+                - text: "-2-11 · 齐鲁理工学院地址 ..."
+          - generic [ref=e513]:
+            - heading "图片" [level=2] [ref=e517]
+            - generic [ref=e521]:
+              - generic [ref=e525] [cursor=pointer]:
+                - link "智能影像工程_智能影像工程本科专业课程介绍与就业方向- 52艺考网 52艺考网_艺术高考招生培训信息与学习资源平台":
+                  - /url: http://www.52ikao.com/101013.html?m568pageno=3
+                - button "智能影像工程_智能影像工程本科专业课程介绍与就业方向- 52艺考网" [ref=e527]:
+                  - img "智能影像工程_智能影像工程本科专业课程介绍与就业方向- 52艺考网" [ref=e529]
+                - generic [ref=e531]:
+                  - generic [ref=e533]: 智能影像工程_智能影像工程本科专业课程介绍与就业方向- 52艺考网
+                  - generic [ref=e534]:
+                    - generic [ref=e541]: 52艺考网_艺术高考招生培训信息与学习资源平台
+                    - button "关于这条结果的详细信息" [ref=e544]:
+                      - img [ref=e547]
+              - generic [ref=e552] [cursor=pointer]:
+                - link "高考专业热度榜：AI专业依旧火热老牌工科“钱”景好_新闻频道_央视 ... 新闻- 央视网":
+                  - /url: https://news.cctv.cn/2025/06/18/ARTIhGpDF6yZfCbgydFW5bOY250618.shtml
+                - button "高考专业热度榜：AI专业依旧火热老牌工科“钱”景好_新闻频道_央视 ..." [ref=e554]:
+                  - img "高考专业热度榜：AI专业依旧火热老牌工科“钱”景好_新闻频道_央视 ..." [ref=e556]
+                - generic [ref=e558]:
+                  - generic [ref=e560]: 高考专业热度榜：AI专业依旧火热老牌工科“钱”景好_新闻频道_央视 ...
+                  - generic [ref=e561]:
+                    - generic [ref=e568]: 新闻- 央视网
+                    - button "关于这条结果的详细信息" [ref=e571]:
+                      - img [ref=e574]
+              - generic [ref=e579] [cursor=pointer]:
+                - link "2025年10大高薪专业，公布！（附院校推荐名单）_搜狐网 搜狐":
+                  - /url: https://www.sohu.com/a/904903428_121294
+                - button "2025年10大高薪专业，公布！（附院校推荐名单）_搜狐网" [ref=e581]:
+                  - img "2025年10大高薪专业，公布！（附院校推荐名单）_搜狐网" [ref=e583]
+                - generic [ref=e585]:
+                  - generic [ref=e587]: 2025年10大高薪专业，公布！（附院校推荐名单）_搜狐网
+                  - generic [ref=e588]:
+                    - generic [ref=e595]: 搜狐
+                    - button "关于这条结果的详细信息" [ref=e598]:
+                      - img [ref=e601]
+            - button "显示更多图片" [ref=e604] [cursor=pointer]:
+              - separator [ref=e605]
+              - generic [ref=e606]:
+                - generic [ref=e607]: 显示更多图片
+                - img [ref=e609]
+          - generic [ref=e613]:
+            - heading "网页搜索结果" [level=2] [ref=e614]
+            - generic [ref=e615]:
+              - generic [ref=e618]:
+                - link "目录 - 浙江万里学院 zjwu.net http://www.zjwu.net › _upload › article › files" [ref=e620] [cursor=pointer]:
+                  - /url: http://www.zjwu.net/_upload/article/files/4b/1b/c78a7fd3463d9fa63b0d360c29ed/0779c493-0a30-4b9e-9e65-97d1f6a408fe.pdf
+                  - heading "目录 - 浙江万里学院" [level=3] [ref=e621]
+                  - generic [ref=e626]:
+                    - generic [ref=e628]: zjwu.net
+                    - generic [ref=e630]: http://www.zjwu.net › _upload › article › files
+                - generic [ref=e631]:
+                  - generic:
+                    - generic: PDF
+                - button "关于这条结果的详细信息" [ref=e632] [cursor=pointer]:
+                  - img [ref=e635]
+              - generic [ref=e639]:
+                - emphasis [ref=e640]: 101013T
+                - text: . 本科.
+                - emphasis [ref=e641]: 智能影像工程
+                - text: . 2023. 8. 020109T. 本科. 数字经济. 2023. 9. 12. 13. 14. 15. 16. 17. Page 32. 32. 10.增设
+                - emphasis [ref=e642]: 专业
+                - text: 的区分度. （应包括增设
+                - emphasis [ref=e643]: 专业
+                - text: 的科学性、合理 ...
+        - navigation [ref=e646]:
+          - heading "网页导航" [level=1] [ref=e647]
+          - text: "1"
+          - link "Page 2" [ref=e650] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A+101013T+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E8%B5%84+%E9%99%A2%E6%A0%A1+2025&sca_esv=f626b95a298d7988&ei=U4nuad7hKPqRxc8P9fay-Q8&start=10&sa=N&sstk=Af77f_ejhQrchteWlQuyYg9B7DrezViqPQn0f1KCThABzYpwgpPkpL0DrrE0gCn-R2gTsS163oWV7JP156EpqDkNooGjxg47yYDHIQ&ved=2ahUKEwie18O3wIyUAxX6SPEDHXW7LP8Q8tMDegQIJhAE
+            - text: "2"
+          - link "Page 3" [ref=e652] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A+101013T+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E8%B5%84+%E9%99%A2%E6%A0%A1+2025&sca_esv=f626b95a298d7988&ei=U4nuad7hKPqRxc8P9fay-Q8&start=20&sa=N&sstk=Af77f_ejhQrchteWlQuyYg9B7DrezViqPQn0f1KCThABzYpwgpPkpL0DrrE0gCn-R2gTsS163oWV7JP156EpqDkNooGjxg47yYDHIQ&ved=2ahUKEwie18O3wIyUAxX6SPEDHXW7LP8Q8tMDegQIJhAG
+            - text: "3"
+          - heading "下一页" [level=2] [ref=e654]:
+            - link "下一页" [ref=e655] [cursor=pointer]:
+              - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A+101013T+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E8%B5%84+%E9%99%A2%E6%A0%A1+2025&sca_esv=f626b95a298d7988&ei=U4nuad7hKPqRxc8P9fay-Q8&start=10&sa=N&sstk=Af77f_ejhQrchteWlQuyYg9B7DrezViqPQn0f1KCThABzYpwgpPkpL0DrrE0gCn-R2gTsS163oWV7JP156EpqDkNooGjxg47yYDHIQ&ved=2ahUKEwie18O3wIyUAxX6SPEDHXW7LP8Q8NMDegQIJhAI
+              - generic [ref=e657]: 下一页
+        - navigation
+    - contentinfo [ref=e658]:
+      - heading "页脚链接" [level=1] [ref=e659]
+      - generic [ref=e663]:
+        - generic [ref=e667]:
+          - button "Hyde Park, 波士顿麻萨诸塞州 - 根据您的活动记录" [ref=e669] [cursor=pointer]:
+            - generic [ref=e670]: Hyde Park, 波士顿麻萨诸塞州
+            - generic [ref=e672]:
+              - text: "-"
+              - generic [ref=e673]: 根据您的活动记录
+          - text: "-"
+          - button "更新位置信息" [ref=e675] [cursor=pointer]: 更新位置信息
+        - generic [ref=e678]:
+          - link "帮助" [ref=e679] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e680] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e681] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e682] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

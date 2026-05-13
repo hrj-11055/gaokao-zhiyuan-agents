@@ -1,0 +1,354 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwii3-zn5o-UAxX9tysGHageI9EQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 文物修复师 职业资格 考试 通过率 文物保护与修复 考研 深造率 文物修复师 职业资格 考试 通过率 文物保护与修复 考研 深造率
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%2596%2587%25E7%2589%25A9%25E4%25BF%25AE%25E5%25A4%258D%25E5%25B8%2588%2B%25E8%2581%258C%25E4%25B8%259A%25E8%25B5%2584%25E6%25A0%25BC%2B%25E8%2580%2583%25E8%25AF%2595%2B%25E9%2580%259A%25E8%25BF%2587%25E7%258E%2587%2B%25E6%2596%2587%25E7%2589%25A9%25E4%25BF%259D%25E6%258A%25A4%25E4%25B8%258E%25E4%25BF%25AE%25E5%25A4%258D%2B%25E8%2580%2583%25E7%25A0%2594%2B%25E6%25B7%25B1%25E9%2580%25A0%25E7%258E%2587%26hl%3Dzh-CN&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%AE%E5%A4%8D%E5%B8%88+%E8%81%8C%E4%B8%9A%E8%B5%84%E6%A0%BC+%E8%80%83%E8%AF%95+%E9%80%9A%E8%BF%87%E7%8E%87+%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRGQpZu-tY0PsVkoJV9grI6GVJuu65CvAw_UtLiH0eMZU8_HQBgKk19OhKR0P7ssyS1E3olU_Ns_1zk7W4-FrMNV3nQ_WkSC30WKb-CZoy0rHh8m7Vg&aep=1&ntc=1&sa=X&ved=2ahUKEwii3-zn5o-UAxX9tysGHageI9EQ2J8OegQIEhAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "图片" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRGQpZu-tY0PsVkoJV9grI6GVJuu65CvAw_UtLiH0eMZU8_HQBgKk19OhKR0P7ssyS1E3olU_Ns_1zk7W4-FrMNV3nQ_WkSC30WKb-CZoy0rHh8m7Vg&q=%E6%96%87%E7%89%A9%E4%BF%AE%E5%A4%8D%E5%B8%88+%E8%81%8C%E4%B8%9A%E8%B5%84%E6%A0%BC+%E8%80%83%E8%AF%95+%E9%80%9A%E8%BF%87%E7%8E%87+%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&sa=X&ved=2ahUKEwii3-zn5o-UAxX9tysGHageI9EQtKgLegQIGBAB
+              - generic [ref=e91]: 图片
+          - listitem [ref=e92]:
+            - link "新闻" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&q=%E6%96%87%E7%89%A9%E4%BF%AE%E5%A4%8D%E5%B8%88+%E8%81%8C%E4%B8%9A%E8%B5%84%E6%A0%BC+%E8%80%83%E8%AF%95+%E9%80%9A%E8%BF%87%E7%8E%87+%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRGQpZu-tY0PsVkoJV9grI6GVJuu65CvAw_UtLiH0eMZU8_HQBgKk19OhKR0P7ssyS1E3olU_Ns_1zk7W4-FrMNV3nQ_WkSC30WKb-CZoy0rHh8m7Vg&sa=X&ved=2ahUKEwii3-zn5o-UAxX9tysGHageI9EQ0pQJegQIFxAB
+              - generic [ref=e95]: 新闻
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRGQpZu-tY0PsVkoJV9grI6GVJuu65CvAw_UtLiH0eMZU8_HQBgKk19OhKR0P7ssyS1E3olU_Ns_1zk7W4-FrMNV3nQ_WkSC30WKb-CZoy0rHh8m7Vg&q=%E6%96%87%E7%89%A9%E4%BF%AE%E5%A4%8D%E5%B8%88+%E8%81%8C%E4%B8%9A%E8%B5%84%E6%A0%BC+%E8%80%83%E8%AF%95+%E9%80%9A%E8%BF%87%E7%8E%87+%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRGQpZu-tY0PsVkoJV9grI6GVJuu65CvAw_UtLiH0eMZU8_HQBgKk19OhKR0P7ssyS1E3olU_Ns_1zk7W4-FrMNV3nQ_WkSC30WKb-CZoy0rHh8m7Vg&q=%E6%96%87%E7%89%A9%E4%BF%AE%E5%A4%8D%E5%B8%88+%E8%81%8C%E4%B8%9A%E8%B5%84%E6%A0%BC+%E8%80%83%E8%AF%95+%E9%80%9A%E8%BF%87%E7%8E%87+%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&sa=X&ved=2ahUKEwii3-zn5o-UAxX9tysGHageI9EQtKgLegQIFhAB
+              - generic [ref=e103]: 视频
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRGQpZu-tY0PsVkoJV9grI6GVJuu65CvAw_UtLiH0eMZU8_HQBgKk19OhKR0P7ssyS1E3olU_Ns_1zk7W4-FrMNV3nQ_WkSC30WKb-CZoy0rHh8m7Vg&q=%E6%96%87%E7%89%A9%E4%BF%AE%E5%A4%8D%E5%B8%88+%E8%81%8C%E4%B8%9A%E8%B5%84%E6%A0%BC+%E8%80%83%E8%AF%95+%E9%80%9A%E8%BF%87%E7%8E%87+%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&sa=X&ved=2ahUKEwii3-zn5o-UAxX9tysGHageI9EQs6gLegQIFBAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考" [level=2] [ref=e152]:
+          - generic [ref=e153]: 正在思考
+        - progressbar [ref=e154]
+      - main [ref=e156]:
+        - generic [ref=e160]:
+          - generic [ref=e163]:
+            - heading "网页搜索结果" [level=2] [ref=e164]
+            - generic [ref=e165]:
+              - generic [ref=e168]:
+                - link "高本贯通扩容不只是提升学历捷径- 电子报详情页 - 新民晚报 新民晚报 https://paper.xinmin.cn › html › xmwb" [ref=e170] [cursor=pointer]:
+                  - /url: https://paper.xinmin.cn/html/xmwb/2026-03-25/10/234680.html
+                  - heading "高本贯通扩容不只是提升学历捷径- 电子报详情页 - 新民晚报" [level=3] [ref=e171]
+                  - generic [ref=e176]:
+                    - generic [ref=e178]: 新民晚报
+                    - generic [ref=e180]: https://paper.xinmin.cn › html › xmwb
+                - button "关于这条结果的详细信息" [ref=e181] [cursor=pointer]:
+                  - img [ref=e184]
+              - generic [ref=e188]:
+                - text: 全国现有2500余万件/套馆藏
+                - emphasis [ref=e189]: 文物
+                - text: 亟待
+                - emphasis [ref=e190]: 修复
+                - text: ，而专业
+                - emphasis [ref=e191]: 修复
+                - text: 人员不足7000人，人才缺口显著。高本贯通政策
+                - emphasis [ref=e192]: 通过
+                - text: 五年一体化培养，精准破解了传统高职培养“技能有余、理论不足”和本科 ...
+          - generic [ref=e196]:
+            - generic [ref=e199]:
+              - link "高考专业解读：文物与博物馆学 河南省阳光高考信息平台 https://gaokao.haedu.cn › zyjd" [ref=e201] [cursor=pointer]:
+                - /url: https://gaokao.haedu.cn/zyjd/2017/1025/113398.html
+                - heading "高考专业解读：文物与博物馆学" [level=3] [ref=e202]
+                - generic [ref=e207]:
+                  - generic [ref=e209]: 河南省阳光高考信息平台
+                  - generic [ref=e211]: https://gaokao.haedu.cn › zyjd
+              - button "关于这条结果的详细信息" [ref=e212] [cursor=pointer]:
+                - img [ref=e215]
+            - generic [ref=e219]:
+              - text: 教育部阳光高考信息平台数据显示，2015年
+              - emphasis [ref=e220]: 文物
+              - text: 与博物馆学专业毕业生规模为500人至600人，近三年
+              - emphasis [ref=e221]: 文物
+              - text: 与博物馆学专业本科就业率为：2013年(70%-75%)、2014年(70%-75%)、2015年 ...
+          - generic [ref=e225]:
+            - generic [ref=e228]:
+              - link "高本贯通扩容，不只是提升学历捷径｜新民·教育星球 腾讯网 https://view.inews.qq.com › ..." [ref=e230] [cursor=pointer]:
+                - /url: https://view.inews.qq.com/a/20260326A06UKD00
+                - heading "高本贯通扩容，不只是提升学历捷径｜新民·教育星球" [level=3] [ref=e231]
+                - generic [ref=e236]:
+                  - generic [ref=e238]: 腾讯网
+                  - generic [ref=e240]: https://view.inews.qq.com › ...
+              - button "关于这条结果的详细信息" [ref=e241] [cursor=pointer]:
+                - img [ref=e244]
+            - generic [ref=e248]:
+              - text: 课程体系上，高职阶段聚焦
+              - emphasis [ref=e249]: 文物
+              - text: 本体检测与基础
+              - emphasis [ref=e250]: 修复
+              - text: 技能，本科阶段强化科技分析与创新转化能力，形成“基础+核心+专项”的递进式课程结构，确保学生既能熟练掌握传统
+              - emphasis [ref=e251]: 修复
+              - text: 技艺， ...
+          - generic [ref=e255]:
+            - generic [ref=e258]:
+              - link "学位授权点质量建设年度报告 哈尔滨工业大学-建筑学院 https://arch.hit.edu.cn › _upload › article › files" [ref=e260] [cursor=pointer]:
+                - /url: https://arch.hit.edu.cn/_upload/article/files/2c/1d/306b84004a8398473c24869549aa/e7abfc78-cfff-48dc-a016-da917677de6e.pdf
+                - heading "学位授权点质量建设年度报告" [level=3] [ref=e261]
+                - generic [ref=e266]:
+                  - generic [ref=e268]: 哈尔滨工业大学-建筑学院
+                  - generic [ref=e270]: https://arch.hit.edu.cn › _upload › article › files
+              - generic [ref=e271]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e272] [cursor=pointer]:
+                - img [ref=e275]
+            - generic [ref=e278]:
+              - generic [ref=e279]: 2021年12月31日 —
+              - text: 一、本报告由学位授权点整理年度工作，于下年度1 月10 日前提交至研究. 生院。 二、本报告按学术学位授权点和专业学位授权点分别编写，同时获得博士、.
+          - generic [ref=e283]:
+            - generic [ref=e286]:
+              - link "安阳学院-高招直通车 - 云南升学网 eeayn.com https://eeayn.com › index › school › school_article_detail" [ref=e288] [cursor=pointer]:
+                - /url: https://eeayn.com/index/school/school_article_detail?id=15884&uid=72
+                - heading "安阳学院-高招直通车 - 云南升学网" [level=3] [ref=e289]
+                - generic [ref=e291]:
+                  - img [ref=e295]
+                  - generic [ref=e297]:
+                    - generic [ref=e299]: eeayn.com
+                    - generic [ref=e301]: https://eeayn.com › index › school › school_article_detail
+              - button "关于这条结果的详细信息" [ref=e302] [cursor=pointer]:
+                - img [ref=e305]
+            - generic [ref=e309]:
+              - text: ... 研究生，
+              - emphasis [ref=e310]: 通过
+              - text: 各种认证
+              - emphasis [ref=e311]: 考试
+              - text: 考取设计师
+              - emphasis [ref=e312]: 资格
+              - text: 证。 6.
+              - emphasis [ref=e313]: 文物修复
+              - text: 与
+              - emphasis [ref=e314]: 保护
+              - text: （本科）. ☆专业特色：培养掌握
+              - emphasis [ref=e315]: 文物
+              - text: 鉴定与
+              - emphasis [ref=e316]: 修复
+              - text: 基本知识，具备青铜器、古陶瓷、书画三类
+              - emphasis [ref=e317]: 文物
+              - text: 的基本的
+              - emphasis [ref=e318]: 修复
+              - text: ...
+          - generic [ref=e322]:
+            - generic [ref=e325]:
+              - link "桂林日报-02版:要闻-2025年07月07日 桂林生活网 https://epaper.guilinlife.com › glrbh5 › glrb" [ref=e327] [cursor=pointer]:
+                - /url: https://epaper.guilinlife.com/glrbh5/glrb/20250707/Page02BC.htm
+                - heading "桂林日报-02版:要闻-2025年07月07日" [level=3] [ref=e328]
+                - generic [ref=e333]:
+                  - generic [ref=e335]: 桂林生活网
+                  - generic [ref=e337]: https://epaper.guilinlife.com › glrbh5 › glrb
+              - button "关于这条结果的详细信息" [ref=e338] [cursor=pointer]:
+                - img [ref=e341]
+            - generic [ref=e344]:
+              - generic [ref=e345]: 2025年7月7日 —
+              - generic [ref=e346]:
+                - text: 要
+                - emphasis [ref=e347]: 通过
+                - text: 高水平
+                - emphasis [ref=e348]: 保护
+                - text: ，不断塑造发展的新动能、新优势，持续增强发展的潜力和 ... 2024年12月在全国硕士研究生招生
+                - emphasis [ref=e349]: 考试
+                - text: 中，她取得了385分（超录取 ...
+          - generic [ref=e353]:
+            - generic [ref=e356]:
+              - link "Untitled - 高等教育深耕計畫辦公室 高等教育深耕計畫辦公室 https://top.ntnu.edu.tw › report" [ref=e358] [cursor=pointer]:
+                - /url: https://top.ntnu.edu.tw/report/1.%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8%20%E7%B8%BD%E8%80%83%E8%A9%95%E8%87%AA%E8%A9%95%E5%A0%B1%E5%91%8A.pdf
+                - heading "Untitled - 高等教育深耕計畫辦公室" [level=3] [ref=e359]
+                - generic [ref=e361]:
+                  - img [ref=e365]
+                  - generic [ref=e367]:
+                    - generic [ref=e369]: 高等教育深耕計畫辦公室
+                    - generic [ref=e371]: https://top.ntnu.edu.tw › report
+              - generic [ref=e372]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e373] [cursor=pointer]:
+                - img [ref=e376]
+            - generic [ref=e380]:
+              - text: ...
+              - emphasis [ref=e381]: 資格
+              - text: 檢定
+              - emphasis [ref=e382]: 通過率
+              - text: 穩定. 超過八成，遠高於全國
+              - emphasis [ref=e383]: 通過率
+              - text: 的五成。且畢業後三年內獲得正式教職的比例高，顯示. 本校師培成果獲縣市政府肯定。此外本校畢業生至今已超過12 萬人 ...
+          - generic [ref=e387]:
+            - heading "图片" [level=2] [ref=e391]
+            - generic [ref=e395]:
+              - generic [ref=e399] [cursor=pointer]:
+                - link "好的文物修复师比文物还稀缺_新闻频道_央视网(cctv.com) 新闻频道- 央视网":
+                  - /url: https://news.cctv.com/2023/05/29/ARTI3y3TbhTWbGmLkqfUl9YF230529.shtml
+                - button "好的文物修复师比文物还稀缺_新闻频道_央视网(cctv.com)" [ref=e401]:
+                  - img "好的文物修复师比文物还稀缺_新闻频道_央视网(cctv.com)" [ref=e403]
+                - generic [ref=e405]:
+                  - generic [ref=e407]: 好的文物修复师比文物还稀缺_新闻频道_央视网(cctv.com)
+                  - generic [ref=e408]:
+                    - generic [ref=e415]: 新闻频道- 央视网
+                    - button "关于这条结果的详细信息" [ref=e418]:
+                      - img [ref=e421]
+              - generic [ref=e426] [cursor=pointer]:
+                - link "2025年3月30日，关于《文物修复师》职业能力评价考试通知！-培训 ... 中国旧货业协会":
+                  - /url: http://www.crgta.org.cn/article/1851/
+                - button "2025年3月30日，关于《文物修复师》职业能力评价考试通知！-培训 ..." [ref=e428]:
+                  - img "2025年3月30日，关于《文物修复师》职业能力评价考试通知！-培训 ..." [ref=e430]
+                - generic [ref=e432]:
+                  - generic [ref=e434]: 2025年3月30日，关于《文物修复师》职业能力评价考试通知！-培训 ...
+                  - generic [ref=e435]:
+                    - generic [ref=e442]: 中国旧货业协会
+                    - button "关于这条结果的详细信息" [ref=e445]:
+                      - img [ref=e448]
+              - generic [ref=e453] [cursor=pointer]:
+                - link "好的文物修复师比文物还稀缺_新闻频道_央视网(cctv.com) 新闻频道- 央视网":
+                  - /url: https://news.cctv.com/2023/05/29/ARTI3y3TbhTWbGmLkqfUl9YF230529.shtml
+                - button "好的文物修复师比文物还稀缺_新闻频道_央视网(cctv.com)" [ref=e455]:
+                  - img "好的文物修复师比文物还稀缺_新闻频道_央视网(cctv.com)" [ref=e457]
+                - generic [ref=e459]:
+                  - generic [ref=e461]: 好的文物修复师比文物还稀缺_新闻频道_央视网(cctv.com)
+                  - generic [ref=e462]:
+                    - generic [ref=e469]: 新闻频道- 央视网
+                    - button "关于这条结果的详细信息" [ref=e472]:
+                      - img [ref=e475]
+            - button "显示更多图片" [ref=e478] [cursor=pointer]:
+              - separator [ref=e479]
+              - generic [ref=e480]:
+                - generic [ref=e481]: 显示更多图片
+                - img [ref=e483]
+          - generic [ref=e487]:
+            - heading "網頁搜尋結果" [level=2] [ref=e488]
+            - generic [ref=e489]:
+              - generic [ref=e492]:
+                - link "2025/26學年內地高校招收香港中學文憑考試學生計劃指南 Education Bureau https://www.edb.gov.hk › Handbook2025_26" [ref=e494] [cursor=pointer]:
+                  - /url: https://www.edb.gov.hk/attachment/tc/edu-system/postsecondary/policy-doc/pilot-scheme/scheme_2025/Handbook2025_26.pdf
+                  - heading "2025/26學年內地高校招收香港中學文憑考試學生計劃指南" [level=3] [ref=e495]
+                  - generic [ref=e500]:
+                    - generic [ref=e502]: Education Bureau
+                    - generic [ref=e504]: https://www.edb.gov.hk › Handbook2025_26
+                - generic [ref=e505]:
+                  - generic:
+                    - generic: PDF
+                - button "关于这条结果的详细信息" [ref=e506] [cursor=pointer]:
+                  - img [ref=e509]
+              - generic [ref=e511]:
+                - generic [ref=e512]:
+                  - generic [ref=e513]: 2024年11月4日 —
+                  - generic [ref=e514]:
+                    - text: ...
+                    - emphasis [ref=e515]: 深造
+                    - text: 攻讀碩士認可學歷增競爭力. 考慮到當前的就業市場不佳，企業對求職者的要求亦提. 高，僅有大學本科學歷已不足以滿足市場需求，故嘉麗明白深. 造是 ...
+                - generic [ref=e516]: 342 页
+          - generic [ref=e520]:
+            - generic [ref=e523]:
+              - link "北京电影学院现代创意媒体学院2017 年专业人才培养状况报告 山东教育厅 http://edu.shandong.gov.cn › download › downfile" [ref=e525] [cursor=pointer]:
+                - /url: http://edu.shandong.gov.cn/module/download/downfile.jsp?classid=-1&filename=1809252112302345767.pdf
+                - heading "北京电影学院现代创意媒体学院2017 年专业人才培养状况报告" [level=3] [ref=e526]
+                - generic [ref=e528]:
+                  - img [ref=e532]
+                  - generic [ref=e534]:
+                    - generic [ref=e536]: 山东教育厅
+                    - generic [ref=e538]: http://edu.shandong.gov.cn › download › downfile
+              - generic [ref=e539]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e540] [cursor=pointer]:
+                - img [ref=e543]
+            - generic [ref=e547]:
+              - text: 职责的
+              - emphasis [ref=e548]: 文物修复师
+              - text: 。 二、培养能力. 培养具有良好的 ...
+              - emphasis [ref=e549]: 文物保护修复
+              - text: 中心和国家文物局北海基地. （青岛）建立 ...
+              - emphasis [ref=e550]: 文物保护与修复
+              - text: 专业人才是推进并提升我国文化遗产保护修复 ...
+        - navigation [ref=e553]:
+          - heading "网页导航" [level=1] [ref=e554]
+          - text: "1"
+          - link "Page 2" [ref=e557] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%AE%E5%A4%8D%E5%B8%88+%E8%81%8C%E4%B8%9A%E8%B5%84%E6%A0%BC+%E8%80%83%E8%AF%95+%E9%80%9A%E8%BF%87%E7%8E%87+%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=OETwaaLjLv3vruEPqL2MiQ0&start=10&sa=N&sstk=Af77f_eOUyTKaAjiz5cQYIZT8YkfFM0NFiURaUm_xJHwGSP7nIsoZRJthf0HlJnpJiKl2AEsGOhJNbON__9LWBpLUbugulxj4s5gJg&ved=2ahUKEwii3-zn5o-UAxX9tysGHageI9EQ8tMDegQIIhAE
+            - text: "2"
+          - link "Page 3" [ref=e559] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%AE%E5%A4%8D%E5%B8%88+%E8%81%8C%E4%B8%9A%E8%B5%84%E6%A0%BC+%E8%80%83%E8%AF%95+%E9%80%9A%E8%BF%87%E7%8E%87+%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=OETwaaLjLv3vruEPqL2MiQ0&start=20&sa=N&sstk=Af77f_eOUyTKaAjiz5cQYIZT8YkfFM0NFiURaUm_xJHwGSP7nIsoZRJthf0HlJnpJiKl2AEsGOhJNbON__9LWBpLUbugulxj4s5gJg&ved=2ahUKEwii3-zn5o-UAxX9tysGHageI9EQ8tMDegQIIhAG
+            - text: "3"
+          - link "Page 4" [ref=e561] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%AE%E5%A4%8D%E5%B8%88+%E8%81%8C%E4%B8%9A%E8%B5%84%E6%A0%BC+%E8%80%83%E8%AF%95+%E9%80%9A%E8%BF%87%E7%8E%87+%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=OETwaaLjLv3vruEPqL2MiQ0&start=30&sa=N&sstk=Af77f_eOUyTKaAjiz5cQYIZT8YkfFM0NFiURaUm_xJHwGSP7nIsoZRJthf0HlJnpJiKl2AEsGOhJNbON__9LWBpLUbugulxj4s5gJg&ved=2ahUKEwii3-zn5o-UAxX9tysGHageI9EQ8tMDegQIIhAI
+            - text: "4"
+          - heading "下一页" [level=2] [ref=e563]:
+            - link "下一页" [ref=e564] [cursor=pointer]:
+              - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%AE%E5%A4%8D%E5%B8%88+%E8%81%8C%E4%B8%9A%E8%B5%84%E6%A0%BC+%E8%80%83%E8%AF%95+%E9%80%9A%E8%BF%87%E7%8E%87+%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=OETwaaLjLv3vruEPqL2MiQ0&start=10&sa=N&sstk=Af77f_eOUyTKaAjiz5cQYIZT8YkfFM0NFiURaUm_xJHwGSP7nIsoZRJthf0HlJnpJiKl2AEsGOhJNbON__9LWBpLUbugulxj4s5gJg&ved=2ahUKEwii3-zn5o-UAxX9tysGHageI9EQ8NMDegQIIhAK
+              - generic [ref=e566]: 下一页
+        - navigation
+    - contentinfo [ref=e567]:
+      - heading "页脚链接" [level=1] [ref=e568]
+      - generic [ref=e572]:
+        - generic [ref=e576]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e578] [cursor=pointer]:
+            - generic [ref=e579]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e581]:
+              - text: "-"
+              - generic [ref=e582]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e584] [cursor=pointer]: 更新位置信息
+        - generic [ref=e587]:
+          - link "帮助" [ref=e588] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e589] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e590] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e591] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

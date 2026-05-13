@@ -1,0 +1,34 @@
+{
+  "university_name": "西安美术学院",
+  "academic": {
+    "a_plus_count": 0,
+    "a_count": 1,
+    "a_minus_count": 0,
+    "academician_count": 0,
+    "key_disciplines": [
+      "美术学",
+      "设计学",
+      "艺术学理论"
+    ]
+  },
+  "employment": {
+    "domestic_further_study_rate": "12.45%",
+    "overseas_further_study_rate": "5.12%",
+    "overall_employment_rate": "86.00%",
+    "starting_salary_median": 6800
+  },
+  "location": {
+    "city": "西安",
+    "city_gdp": "12010.76亿元",
+    "city_rank": 22
+  },
+  "scores": {
+    "academic_capital": 4.2,
+    "employment_value": 3.8,
+    "location_energy": 4.0,
+    "globalization": 3.2,
+    "student_empowerment": 3.5,
+    "brand_asset": 4.5,
+    "comprehensive_score": 3.95
+  }
+}

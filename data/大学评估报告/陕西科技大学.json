@@ -1,0 +1,39 @@
+{
+  "university_name": "陕西科技大学",
+  "short_name": "SUST / 陕科大",
+  "location": {
+    "province": "陕西",
+    "city": "西安",
+    "district": "未央区"
+  },
+  "academic_level": {
+    "is_985": false,
+    "is_211": false,
+    "is_double_first_class": false,
+    "rank_shanghai_2024": 124
+  },
+  "key_disciplines": [
+    {
+      "name": "轻工技术与工程",
+      "level": "A-"
+    },
+    {
+      "name": "化学工程与技术",
+      "level": "B"
+    },
+    {
+      "name": "材料科学与工程",
+      "level": "B-"
+    }
+  ],
+  "employment_stats": {
+    "further_study_rate": "36.9%",
+    "top_employer": "比亚迪",
+    "avg_starting_salary": 6500
+  },
+  "evaluation": {
+    "comprehensive_score": 3.74,
+    "recommendation_index": "4.5/5.0",
+    "suitable_for": "追求高性价比、意向制造业或材料领域的务实型理工考生"
+  }
+}

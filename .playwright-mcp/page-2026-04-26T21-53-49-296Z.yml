@@ -1,0 +1,390 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: AI医学影像 市场规模 增长率 2025 中国 AI医学影像 市场规模 增长率 2025 中国
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3DAI%25E5%258C%25BB%25E5%25AD%25A6%25E5%25BD%25B1%25E5%2583%258F%2B%25E5%25B8%2582%25E5%259C%25BA%25E8%25A7%2584%25E6%25A8%25A1%2B%25E5%25A2%259E%25E9%2595%25BF%25E7%258E%2587%2B2025%2B%25E4%25B8%25AD%25E5%259B%25BD&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&aep=1&ntc=1&sa=X&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ2J8OegQIERAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&sa=X&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ0pQJegQIGBAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sa=X&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQtKgLegQIFxAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sa=X&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQtKgLegQIExAB
+              - generic [ref=e103]: 视频
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sa=X&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQs6gLegQIFRAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考" [level=2] [ref=e152]:
+          - generic [ref=e153]: 正在思考
+        - progressbar [ref=e154]
+      - main [ref=e156]:
+        - generic [ref=e160]:
+          - generic [ref=e163]:
+            - heading "网页搜索结果" [level=2] [ref=e164]
+            - generic [ref=e165]:
+              - generic [ref=e168]:
+                - link "2025年中国AI+医疗创新赛道深度分析 知乎专栏 https://zhuanlan.zhihu.com › ..." [ref=e170] [cursor=pointer]:
+                  - /url: https://zhuanlan.zhihu.com/p/1933894121841460506
+                  - heading "2025年中国AI+医疗创新赛道深度分析" [level=3] [ref=e171]
+                  - generic [ref=e176]:
+                    - generic [ref=e178]: 知乎专栏
+                    - generic [ref=e180]: https://zhuanlan.zhihu.com › ...
+                - button "关于这条结果的详细信息" [ref=e181] [cursor=pointer]:
+                  - img [ref=e184]
+              - generic [ref=e187]:
+                - generic [ref=e188]: 2025年7月30日 —
+                - generic [ref=e189]:
+                  - emphasis [ref=e190]: 中国AI+医疗市场正以年复合增长率58.3%的速度扩张
+                  - text: ，2025年市场规模预计突破900亿元，2030年更将达1200亿元。这一增长由三大核心动力支撑：人口老龄化催生 ...
+          - generic [ref=e194]:
+            - generic [ref=e197]:
+              - link "2025年AI精准医疗市场专题分析 东方财富 https://pdf.dfcfw.com › pdf › H3_AP2025121618..." [ref=e199] [cursor=pointer]:
+                - /url: https://pdf.dfcfw.com/pdf/H3_AP202512161801634961_1.pdf?1765897883000.pdf
+                - heading "2025年AI精准医疗市场专题分析" [level=3] [ref=e200]
+                - generic [ref=e205]:
+                  - generic [ref=e207]: 东方财富
+                  - generic [ref=e209]: https://pdf.dfcfw.com › pdf › H3_AP2025121618...
+              - generic [ref=e210]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e211] [cursor=pointer]:
+                - img [ref=e214]
+            - generic [ref=e216]:
+              - generic [ref=e217]:
+                - generic [ref=e218]: 2025年12月8日 —
+                - generic [ref=e219]:
+                  - text: 2024年
+                  - emphasis [ref=e220]: 中国AI
+                  - text: 精准医疗
+                  - emphasis [ref=e221]: 市场规模
+                  - text: 达到351亿元，预计2028年有望达到760亿元。
+                  - emphasis [ref=e222]: 中国AI
+                  - text: 医疗
+                  - emphasis [ref=e223]: 市场规模
+                  - text: （亿美元）.
+                  - emphasis [ref=e224]: 中国AI
+                  - text: 精准医疗
+                  - emphasis [ref=e225]: 市场规模
+                  - text: （亿人民币）. 2022 ...
+              - generic [ref=e226]: 21 页
+          - generic [ref=e230]:
+            - generic [ref=e233]:
+              - link "AI医疗爆发三重奏 证券时报 https://www.stcn.com › article › detail" [ref=e235] [cursor=pointer]:
+                - /url: https://www.stcn.com/article/detail/3607739.html
+                - heading "AI医疗爆发三重奏" [level=3] [ref=e236]
+                - generic [ref=e241]:
+                  - generic [ref=e243]: 证券时报
+                  - generic [ref=e245]: https://www.stcn.com › article › detail
+              - button "关于这条结果的详细信息" [ref=e246] [cursor=pointer]:
+                - img [ref=e249]
+            - generic [ref=e252]:
+              - generic [ref=e253]: 2026年1月23日 —
+              - generic [ref=e254]:
+                - text: 据弗若斯特沙利文预测，从2023年至2033年，
+                - emphasis [ref=e255]: 中国AI
+                - text: 医疗
+                - emphasis [ref=e256]: 市场规模
+                - text: 将从88亿元飙升至3157亿元，年复合
+                - emphasis [ref=e257]: 增长率
+                - text: 高达43.1%。 但另一方面，商业化进程、道德伦理、监管 ...
+          - generic [ref=e261]:
+            - generic [ref=e264]:
+              - link "2025年中国AI医学影像行业市场规模及竞争格局 Sohu https://www.sohu.com › 搜狐文章页 › 华经—张鑫" [ref=e266] [cursor=pointer]:
+                - /url: https://www.sohu.com/a/898748548_120939916
+                - heading "2025年中国AI医学影像行业市场规模及竞争格局" [level=3] [ref=e267]
+                - generic [ref=e272]:
+                  - generic [ref=e274]: Sohu
+                  - generic [ref=e276]: https://www.sohu.com › 搜狐文章页 › 华经—张鑫
+              - button "关于这条结果的详细信息" [ref=e277] [cursor=pointer]:
+                - img [ref=e280]
+            - generic [ref=e283]:
+              - generic [ref=e284]: 2025年5月26日 —
+              - generic [ref=e285]:
+                - text: ...
+                - emphasis [ref=e286]: 中国
+                - text: 医疗影像设备市场将持续
+                - emphasis [ref=e287]: 增长
+                - text: 。到2022年，
+                - emphasis [ref=e288]: 中国
+                - text: 医疗影像设备
+                - emphasis [ref=e289]: 市场规模
+                - text: 将
+                - emphasis [ref=e290]: 增长
+                - text: 至1126亿元，同比
+                - emphasis [ref=e291]: 增长
+                - text: 7.85%。
+                - emphasis [ref=e292]: AI医学影像
+                - text: 主要用于医疗健康市场和大健康 ...
+          - generic [ref=e296]:
+            - generic [ref=e299]:
+              - link "中国A!医学影像市场规模及增速- 2025年11月- 行业研究数据 小牛行研 https://www.hangyan.co › charts" [ref=e301] [cursor=pointer]:
+                - /url: https://www.hangyan.co/charts/3759112941773784559
+                - heading "中国A!医学影像市场规模及增速- 2025年11月- 行业研究数据" [level=3] [ref=e302]
+                - generic [ref=e307]:
+                  - generic [ref=e309]: 小牛行研
+                  - generic [ref=e311]: https://www.hangyan.co › charts
+              - button "关于这条结果的详细信息" [ref=e312] [cursor=pointer]:
+                - img [ref=e315]
+            - generic [ref=e318]:
+              - generic [ref=e319]: 2025年11月5日 —
+              - generic [ref=e320]:
+                - text: 根据观研天下的统计，2024 年
+                - emphasis [ref=e321]: 中国AI 医学影像市场规模
+                - text: 约74.5 亿元，同比
+                - emphasis [ref=e322]: 增长
+                - text: 160.5%；预计
+                - emphasis [ref=e323]: "2025"
+                - text: 年我国
+                - emphasis [ref=e324]: AI 医学影像市场规模
+                - text: 将超150 亿元，2026 年将达235.7亿元 ...
+          - generic [ref=e328]:
+            - generic [ref=e331]:
+              - link "2025年AI医疗行业：973亿市场规模背后的机遇与挑战 远瞻慧库 https://www.baogaobox.com › insights" [ref=e333] [cursor=pointer]:
+                - /url: https://www.baogaobox.com/insights/251106000022253.html
+                - heading "2025年AI医疗行业：973亿市场规模背后的机遇与挑战" [level=3] [ref=e334]
+                - generic [ref=e339]:
+                  - generic [ref=e341]: 远瞻慧库
+                  - generic [ref=e343]: https://www.baogaobox.com › insights
+              - button "关于这条结果的详细信息" [ref=e344] [cursor=pointer]:
+                - img [ref=e347]
+            - generic [ref=e350]:
+              - generic [ref=e351]: 2025年11月7日 —
+              - generic [ref=e352]:
+                - text: 从细分市场来看，
+                - emphasis [ref=e353]: AI医学影像
+                - text: 和AI制药
+                - emphasis [ref=e354]: 增长
+                - text: 较快。2024年
+                - emphasis [ref=e355]: 中国AI医学影像市场规模
+                - text: 约74.5亿元，同比
+                - emphasis [ref=e356]: 增长
+                - text: 160.5%；预计
+                - emphasis [ref=e357]: "2025"
+                - text: 年我国
+                - emphasis [ref=e358]: AI医学影像市场规模
+                - text: 将超150 ...
+          - generic [ref=e362]:
+            - generic [ref=e365]:
+              - link "证券研究报告 piinm.com https://www.piinm.com › uploads › 20250520" [ref=e367] [cursor=pointer]:
+                - /url: https://www.piinm.com/uploads/20250520/d281d2cfa9901075e8c890f914fb3a75.pdf
+                - heading "证券研究报告" [level=3] [ref=e368]
+                - generic [ref=e373]:
+                  - generic [ref=e375]: piinm.com
+                  - generic [ref=e377]: https://www.piinm.com › uploads › 20250520
+              - generic [ref=e378]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e379] [cursor=pointer]:
+                - img [ref=e382]
+            - generic [ref=e384]:
+              - generic [ref=e385]:
+                - generic [ref=e386]: 2025年5月13日 —
+                - generic [ref=e387]:
+                  - text: 模持续
+                  - emphasis [ref=e388]: 增长
+                  - text: ，预计
+                  - emphasis [ref=e389]: "2025"
+                  - text: 年
+                  - emphasis [ref=e390]: 中国AI 医学影像市场规模
+                  - text: 将达61.7 亿元，2030 年将达137.4. 亿元。 图7：2025E-2030E
+                  - emphasis [ref=e391]: 中国AI 医学影像市场规模
+                  - text: . 资料来源：《2023 年 ...
+              - generic [ref=e392]: 35 页
+          - generic [ref=e396]:
+            - generic [ref=e399]:
+              - link "中国AI医学影像行业发展趋势分析与投资前景 ... 观研报告网 https://www.chinabaogao.com › pdf" [ref=e401] [cursor=pointer]:
+                - /url: https://www.chinabaogao.com/pdf/54/95/745495.pdf
+                - heading "中国AI医学影像行业发展趋势分析与投资前景 ..." [level=3] [ref=e402]
+                - generic [ref=e404]:
+                  - img [ref=e408]
+                  - generic [ref=e410]:
+                    - generic [ref=e412]: 观研报告网
+                    - generic [ref=e414]: https://www.chinabaogao.com › pdf
+              - generic [ref=e415]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e416] [cursor=pointer]:
+                - img [ref=e419]
+            - generic [ref=e421]:
+              - generic [ref=e423]:
+                - text: 从
+                - emphasis [ref=e424]: 市场规模
+                - text: 来看，
+                - emphasis [ref=e425]: AI医学影像
+                - text: 行业
+                - emphasis [ref=e426]: 市场规模
+                - text: 高速
+                - emphasis [ref=e427]: 增长
+                - text: ，成为AI+医疗
+                - emphasis [ref=e428]: 增长
+                - text: 最快的细分市场之. 一。数据显示，2024年我国
+                - emphasis [ref=e429]: AI医学影像
+                - text: 约74.5亿元，同比
+                - emphasis [ref=e430]: 增长
+                - text: 160.5%；
+                - emphasis [ref=e431]: "2025"
+                - text: 年我国AI医学. 影像 ...
+              - generic [ref=e432]: 15 页
+          - generic [ref=e436]:
+            - generic [ref=e439]:
+              - link "一、AI+医疗行业#### 1. 市场空间与渗透率 雪球 https://xueqiu.com › ..." [ref=e441] [cursor=pointer]:
+                - /url: https://xueqiu.com/4356153971/326607867
+                - heading "一、AI+医疗行业#### 1. 市场空间与渗透率" [level=3] [ref=e442]
+                - generic [ref=e447]:
+                  - generic [ref=e449]: 雪球
+                  - generic [ref=e451]: https://xueqiu.com › ...
+              - button "关于这条结果的详细信息" [ref=e452] [cursor=pointer]:
+                - img [ref=e455]
+            - generic [ref=e458]:
+              - generic [ref=e459]: 2025年3月9日 —
+              - generic [ref=e460]:
+                - text: "- **市场空间**："
+                - emphasis [ref=e461]: "2025"
+                - text: 年
+                - emphasis [ref=e462]: 中国AI
+                - text: 医疗
+                - emphasis [ref=e463]: 市场规模
+                - text: 预计突破800亿元（2023年约973亿元），年复合
+                - emphasis [ref=e464]: 增长率
+                - text: 达50%以上；全球市场2030年预计达1.5万亿美元。 - **渗透率**： ...
+          - generic [ref=e468]:
+            - generic [ref=e471]:
+              - link "2025年AI医疗行业分析：市场规模将突破1500亿元 智慧医疗网 http://www.cn-witmed.com › list" [ref=e473] [cursor=pointer]:
+                - /url: http://www.cn-witmed.com/list/13/15052.html
+                - heading "2025年AI医疗行业分析：市场规模将突破1500亿元" [level=3] [ref=e474]
+                - generic [ref=e476]:
+                  - img [ref=e480]
+                  - generic [ref=e482]:
+                    - generic [ref=e484]: 智慧医疗网
+                    - generic [ref=e486]: http://www.cn-witmed.com › list
+              - button "关于这条结果的详细信息" [ref=e487] [cursor=pointer]:
+                - img [ref=e490]
+            - generic [ref=e493]:
+              - generic [ref=e494]: 2025年6月3日 —
+              - generic [ref=e495]:
+                - text: 根据权威机构预测，
+                - emphasis [ref=e496]: "2025"
+                - text: 年
+                - emphasis [ref=e497]: 中国AI
+                - text: 医疗行业
+                - emphasis [ref=e498]: 规模
+                - text: 将达到1157亿元，预计在2028年达到1598亿元，2022-2028年复合
+                - emphasis [ref=e499]: 增长率
+                - text: 为10.5%。这一快速增长得益于人口老龄化加速 ...
+        - navigation [ref=e502]:
+          - heading "网页导航" [level=1] [ref=e503]
+          - text: "1"
+          - link "Page 2" [ref=e506] [cursor=pointer]:
+            - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&ei=bInuaYz8B_2K7NYPt9aF0QQ&start=10&sa=N&sstk=Af77f_cbpLbDEohe-sVNXLblWtegdzvH8Z4iU8v_9eVuIPzYwMrxGLODfJi4NCpPJ4vhpTGAtDDbOyVgBTLGoEdIqZVvdfc2sMcbKQ&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ8tMDegQIIhAE
+            - text: "2"
+          - link "Page 3" [ref=e508] [cursor=pointer]:
+            - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&ei=bInuaYz8B_2K7NYPt9aF0QQ&start=20&sa=N&sstk=Af77f_cbpLbDEohe-sVNXLblWtegdzvH8Z4iU8v_9eVuIPzYwMrxGLODfJi4NCpPJ4vhpTGAtDDbOyVgBTLGoEdIqZVvdfc2sMcbKQ&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ8tMDegQIIhAG
+            - text: "3"
+          - link "Page 4" [ref=e510] [cursor=pointer]:
+            - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&ei=bInuaYz8B_2K7NYPt9aF0QQ&start=30&sa=N&sstk=Af77f_cbpLbDEohe-sVNXLblWtegdzvH8Z4iU8v_9eVuIPzYwMrxGLODfJi4NCpPJ4vhpTGAtDDbOyVgBTLGoEdIqZVvdfc2sMcbKQ&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ8tMDegQIIhAI
+            - text: "4"
+          - link "Page 5" [ref=e512] [cursor=pointer]:
+            - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&ei=bInuaYz8B_2K7NYPt9aF0QQ&start=40&sa=N&sstk=Af77f_cbpLbDEohe-sVNXLblWtegdzvH8Z4iU8v_9eVuIPzYwMrxGLODfJi4NCpPJ4vhpTGAtDDbOyVgBTLGoEdIqZVvdfc2sMcbKQ&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ8tMDegQIIhAK
+            - text: "5"
+          - link "Page 6" [ref=e514] [cursor=pointer]:
+            - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&ei=bInuaYz8B_2K7NYPt9aF0QQ&start=50&sa=N&sstk=Af77f_cbpLbDEohe-sVNXLblWtegdzvH8Z4iU8v_9eVuIPzYwMrxGLODfJi4NCpPJ4vhpTGAtDDbOyVgBTLGoEdIqZVvdfc2sMcbKQ&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ8tMDegQIIhAM
+            - text: "6"
+          - link "Page 7" [ref=e516] [cursor=pointer]:
+            - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&ei=bInuaYz8B_2K7NYPt9aF0QQ&start=60&sa=N&sstk=Af77f_cbpLbDEohe-sVNXLblWtegdzvH8Z4iU8v_9eVuIPzYwMrxGLODfJi4NCpPJ4vhpTGAtDDbOyVgBTLGoEdIqZVvdfc2sMcbKQ&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ8tMDegQIIhAO
+            - text: "7"
+          - link "Page 8" [ref=e518] [cursor=pointer]:
+            - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&ei=bInuaYz8B_2K7NYPt9aF0QQ&start=70&sa=N&sstk=Af77f_cbpLbDEohe-sVNXLblWtegdzvH8Z4iU8v_9eVuIPzYwMrxGLODfJi4NCpPJ4vhpTGAtDDbOyVgBTLGoEdIqZVvdfc2sMcbKQ&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ8tMDegQIIhAQ
+            - text: "8"
+          - link "Page 9" [ref=e520] [cursor=pointer]:
+            - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&ei=bInuaYz8B_2K7NYPt9aF0QQ&start=80&sa=N&sstk=Af77f_cbpLbDEohe-sVNXLblWtegdzvH8Z4iU8v_9eVuIPzYwMrxGLODfJi4NCpPJ4vhpTGAtDDbOyVgBTLGoEdIqZVvdfc2sMcbKQ&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ8tMDegQIIhAS
+            - text: "9"
+          - link "Page 10" [ref=e522] [cursor=pointer]:
+            - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&ei=bInuaYz8B_2K7NYPt9aF0QQ&start=90&sa=N&sstk=Af77f_cbpLbDEohe-sVNXLblWtegdzvH8Z4iU8v_9eVuIPzYwMrxGLODfJi4NCpPJ4vhpTGAtDDbOyVgBTLGoEdIqZVvdfc2sMcbKQ&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ8tMDegQIIhAU
+            - text: "10"
+          - heading "下一页" [level=2] [ref=e524]:
+            - link "下一页" [ref=e525] [cursor=pointer]:
+              - /url: /search?q=AI%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025+%E4%B8%AD%E5%9B%BD&sca_esv=f626b95a298d7988&ei=bInuaYz8B_2K7NYPt9aF0QQ&start=10&sa=N&sstk=Af77f_cbpLbDEohe-sVNXLblWtegdzvH8Z4iU8v_9eVuIPzYwMrxGLODfJi4NCpPJ4vhpTGAtDDbOyVgBTLGoEdIqZVvdfc2sMcbKQ&ved=2ahUKEwiM4pjDwIyUAxV9BdsEHTdrIUoQ8NMDegQIIhAW
+              - generic [ref=e527]: 下一页
+        - navigation
+    - contentinfo [ref=e528]:
+      - heading "页脚链接" [level=1] [ref=e529]
+      - generic [ref=e533]:
+        - generic [ref=e537]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e539] [cursor=pointer]:
+            - generic [ref=e540]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e542]:
+              - text: "-"
+              - generic [ref=e543]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e545] [cursor=pointer]: 更新位置信息
+        - generic [ref=e548]:
+          - link "帮助" [ref=e549] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e550] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e551] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e552] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

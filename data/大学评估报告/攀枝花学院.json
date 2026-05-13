@@ -1,0 +1,36 @@
+{
+  "university_name": "攀枝花学院",
+  "short_name": "PZHU",
+  "location": {
+    "province": "四川省",
+    "city": "攀枝花市",
+    "feature": "山地校园"
+  },
+  "academic_level": {
+    "master_points": [
+      "材料与化工",
+      "资源与环境",
+      "土木水利"
+    ],
+    "national_key_platforms": 3,
+    "industry_college_level": "国家级"
+  },
+  "employment_stats": {
+    "overall_employment_rate": ">91%",
+    "major_employers": [
+      "攀钢集团",
+      "中国中铁",
+      "比亚迪"
+    ],
+    "further_study_rate": "12.8%"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.8,
+    "employment_value": 3.2,
+    "location_synergy": 2.6,
+    "globalization": 2.0,
+    "student_empowerment": 2.5,
+    "brand_asset": 2.4,
+    "weighted_average": 2.76
+  }
+}

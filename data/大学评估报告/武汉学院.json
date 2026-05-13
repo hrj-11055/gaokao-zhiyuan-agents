@@ -1,0 +1,57 @@
+{
+  "university_name": "武汉学院",
+  "english_name": "Wuhan College",
+  "location": {
+    "province": "湖北",
+    "city": "武汉",
+    "district": "江夏区",
+    "campus_area": "1000余亩"
+  },
+  "tags": [
+    "腾讯背景",
+    "公益办学",
+    "财经强校",
+    "非营利"
+  ],
+  "academic": {
+    "key_disciplines": [
+      "软件工程",
+      "会计学",
+      "财务管理"
+    ],
+    "provincial_first_class_majors": 6,
+    "faculty_structure": {
+      "senior_title_ratio": "45%",
+      "industry_experts": "20+"
+    }
+  },
+  "employment": {
+    "overall_employment_rate": "92.4%",
+    "top_employers": [
+      "腾讯",
+      "华为",
+      "京东",
+      "德勤",
+      "顺丰"
+    ],
+    "average_starting_salary": 6200,
+    "further_study_rate": {
+      "domestic": "3.69%",
+      "overseas": "1.48%"
+    }
+  },
+  "admission_level": {
+    "hubei_history_rank": "48000",
+    "hubei_physics_rank": "115000",
+    "competitiveness": "High (Private Tier 1)"
+  },
+  "scores": {
+    "academic_capital": 3.5,
+    "graduate_value": 4.2,
+    "location_synergy": 3.8,
+    "globalization": 3.6,
+    "student_empowerment": 3.7,
+    "brand_asset": 4.5,
+    "comprehensive_score": 3.875
+  }
+}

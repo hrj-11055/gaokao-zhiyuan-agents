@@ -1,0 +1,61 @@
+{
+  "university_info": {
+    "name": "四川工业科技学院",
+    "short_name": "川工科",
+    "location": "四川省德阳市",
+    "type": "民办本科",
+    "ranking": {
+      "ruanke_private": 95,
+      "xyh_private": "100+"
+    }
+  },
+  "academic_capital": {
+    "a_class_disciplines": 0,
+    "provincial_first_class_majors": [
+      "机械设计制造及其自动化",
+      "物流管理"
+    ],
+    "double_qualified_teacher_ratio": "50%+",
+    "national_key_labs": 0
+  },
+  "admission_data_2024_sc": {
+    "liberal_arts": {
+      "score": 480,
+      "rank": 72100,
+      "control_line_diff": 13
+    },
+    "science": {
+      "score": 477,
+      "rank": 185000,
+      "control_line_diff": 18
+    }
+  },
+  "employment_outcomes": {
+    "further_study_rate": "1.49%",
+    "overseas_study_rate": "0.08%",
+    "major_industry": "制造业 (42%)",
+    "median_starting_salary": 4500,
+    "top_employers": [
+      "吉利汽车",
+      "中国十九冶",
+      "德阳重装配套企业"
+    ]
+  },
+  "campus_life": {
+    "campuses": [
+      "罗江校区",
+      "绵竹校区"
+    ],
+    "dorm_quality": "新校区4人间/空调/独卫",
+    "transfer_policy_flexibility": "极高"
+  },
+  "evaluation_scores": {
+    "academic": 1.5,
+    "employment": 1.8,
+    "location_industry": 3.5,
+    "globalization": 1.5,
+    "student_empowerment": 3.2,
+    "brand_asset": 2.5,
+    "weighted_total": 2.075
+  }
+}

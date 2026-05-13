@@ -1,0 +1,57 @@
+{
+  "university_name": "湖南科技大学",
+  "short_name": "HNUST",
+  "location": {
+    "province": "湖南省",
+    "city": "湘潭市",
+    "region": "长株潭城市群"
+  },
+  "academic": {
+    "rank_shanghai": 181,
+    "esi_top_1_percent": [
+      "Engineering",
+      "Chemistry",
+      "Computer Science",
+      "Materials Science"
+    ],
+    "key_disciplines": [
+      "机械工程",
+      "矿业工程",
+      "安全科学与工程",
+      "马克思主义理论"
+    ],
+    "national_platforms": 3,
+    "academician_count": 2
+  },
+  "admission": {
+    "hunan_history_rank": 11404,
+    "hunan_physics_rank": 51554,
+    "competition_level": "High"
+  },
+  "employment": {
+    "further_study_rate": "18.5%",
+    "top_employers": [
+      "中国建筑",
+      "三一重工",
+      "比亚迪",
+      "吉利汽车"
+    ],
+    "median_salary": 5800,
+    "alumni_network_strength": "Very Strong (Industrial Sector)"
+  },
+  "campus_life": {
+    "area_acres": 3003,
+    "cherry_blossom_festival": true,
+    "canteen_rating": "Excellent",
+    "dormitory_variability": "High"
+  },
+  "scores": {
+    "academic_capital": 3.8,
+    "graduate_value": 3.4,
+    "location_synergy": 3.4,
+    "globalization": 2.8,
+    "student_empowerment": 3.6,
+    "brand_asset": 3.7,
+    "comprehensive_score": 3.5
+  }
+}

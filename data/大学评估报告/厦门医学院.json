@@ -1,0 +1,39 @@
+{
+  "university_name": "厦门医学院",
+  "short_name": "厦医 / XMMC",
+  "location": {
+    "province": "福建",
+    "city": "厦门",
+    "district": "集美区"
+  },
+  "academic_level": {
+    "type": "公办本科",
+    "master_points": "培育中",
+    "key_disciplines": [
+      "临床医学",
+      "口腔医学",
+      "药学",
+      "护理学"
+    ]
+  },
+  "student_quality": {
+    "fujian_physics_rank_avg": 55000,
+    "fujian_history_rank_avg": 12500,
+    "top_major": "口腔医学"
+  },
+  "employment_stats": {
+    "employment_rate": "96.5%",
+    "further_study_rate": "23.87%",
+    "avg_starting_salary": 5800,
+    "primary_employer_type": "医疗卫生事业单位"
+  },
+  "campus_life": {
+    "dormitory_standard": "4-6人间/空调/独卫",
+    "academic_pressure": "高",
+    "location_advantage": "紧邻生物医药产业园"
+  },
+  "comprehensive_evaluation": {
+    "score": 3.06,
+    "recommendation_index": "4.5星 (针对福建省内就业)"
+  }
+}

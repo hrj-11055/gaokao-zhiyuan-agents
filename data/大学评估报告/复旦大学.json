@@ -1,0 +1,56 @@
+{
+  "university_info": {
+    "name": "复旦大学",
+    "english_name": "Fudan University",
+    "location": "上海",
+    "type": "综合性研究型大学",
+    "tags": [
+      "985",
+      "211",
+      "双一流",
+      "C9联盟"
+    ]
+  },
+  "academic_strength": {
+    "a_plus_subjects": 12,
+    "key_disciplines": [
+      "数学",
+      "哲学",
+      "理论经济学",
+      "基础医学",
+      "微电子"
+    ],
+    "academicians": 71,
+    "national_labs": 5
+  },
+  "admission_stats": {
+    "average_rank_liberal_arts": "Top 150 (Major Provinces)",
+    "average_rank_science": "Top 500 (Major Provinces)",
+    "admission_modes": [
+      "Gaokao",
+      "Strong Base Plan",
+      "Comprehensive Evaluation"
+    ]
+  },
+  "career_outcomes": {
+    "further_study_rate": "70.6%",
+    "overseas_study_top_50_rate": "18.5%",
+    "median_starting_salary": 13500,
+    "top_employers": [
+      "Huawei",
+      "Tencent",
+      "CICC",
+      "SAIC",
+      "ByteDance"
+    ]
+  },
+  "campus_life": {
+    "transfer_policy_friendliness": "High",
+    "general_education_focus": "Very High",
+    "accommodation_quality": "Mixed (Old Handan vs New Jiangwan)"
+  },
+  "overall_score": {
+    "score": 4.92,
+    "rating": "A++"
+  }
+}

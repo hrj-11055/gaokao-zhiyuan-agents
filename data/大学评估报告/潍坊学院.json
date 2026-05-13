@@ -1,0 +1,39 @@
+{
+  "university_name": "潍坊学院",
+  "short_name": "WFU / 潍院",
+  "location": {
+    "province": "山东省",
+    "city": "潍坊市",
+    "economic_zone": "山东半岛蓝色经济区"
+  },
+  "academic_standing": {
+    "type": "应用型本科",
+    "master_point_status": "立项建设A类单位",
+    "key_disciplines": [
+      "光学工程",
+      "区域经济学",
+      "比较文学",
+      "机械电子"
+    ]
+  },
+  "student_quality": {
+    "shandong_rank_avg": 180000,
+    "competitive_index": "Medium",
+    "postgraduate_exam_culture": "Strong"
+  },
+  "employment_stats": {
+    "major_employers": [
+      "Weichai Power",
+      "Goertek",
+      "Haomai Technology"
+    ],
+    "further_study_rate": "22.4%-28%",
+    "avg_starting_salary": 5000
+  },
+  "campus_life": {
+    "dormitory_rating": 3,
+    "food_rating": 4.5,
+    "cultural_tag": "Kite Culture"
+  },
+  "comprehensive_score": 2.86
+}

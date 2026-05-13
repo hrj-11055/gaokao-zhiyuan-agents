@@ -1,0 +1,409 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwilpa34poyUAxXshSsGHRgNEMMQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 暨南大学 2022届 毕业生 就业质量报告 深造率 升学率 本科 数据 暨南大学 2022届 毕业生 就业质量报告 深造率 升学率 本科 数据
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%259A%25A8%25E5%258D%2597%25E5%25A4%25A7%25E5%25AD%25A6%2B2022%25E5%25B1%258A%2B%25E6%25AF%2595%25E4%25B8%259A%25E7%2594%259F%2B%25E5%25B0%25B1%25E4%25B8%259A%25E8%25B4%25A8%25E9%2587%258F%25E6%258A%25A5%25E5%2591%258A%2B%25E6%25B7%25B1%25E9%2580%25A0%25E7%258E%2587%2B%25E5%258D%2587%25E5%25AD%25A6%25E7%258E%2587%2B%25E6%259C%25AC%25E7%25A7%2591%2B%25E6%2595%25B0%25E6%258D%25AE&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2022%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&aep=1&ntc=1&sa=X&ved=2ahUKEwilpa34poyUAxXshSsGHRgNEMMQ2J8OegQIExAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2022%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&sa=X&ved=2ahUKEwilpa34poyUAxXshSsGHRgNEMMQ0pQJegQIGRAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2022%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&sa=X&ved=2ahUKEwilpa34poyUAxXshSsGHRgNEMMQtKgLegQIGBAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2022%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "短视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2022%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&sa=X&ved=2ahUKEwilpa34poyUAxXshSsGHRgNEMMQs6gLegQIFhAB
+              - generic [ref=e103]: 短视频
+          - listitem [ref=e104]:
+            - link "视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2022%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&sa=X&ved=2ahUKEwilpa34poyUAxXshSsGHRgNEMMQtKgLegQIFRAB
+              - generic [ref=e107]: 视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在搜索 再多想一会儿" [level=2] [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e155]: 正在搜索
+            - generic [ref=e165]: 再多想一会儿
+        - progressbar [ref=e167]
+      - main [ref=e209]:
+        - generic [ref=e213]:
+          - generic [ref=e216]:
+            - heading "网页搜索结果" [level=2] [ref=e217]
+            - generic [ref=e218]:
+              - generic [ref=e221]:
+                - link "2022年暨南大学毕业生就业质量年度报告 - 信息公开 暨南大学 https://xxgk.jnu.edu.cn › page" [ref=e223] [cursor=pointer]:
+                  - /url: https://xxgk.jnu.edu.cn/2023/0224/c7604a736721/page.htm
+                  - heading "2022年暨南大学毕业生就业质量年度报告 - 信息公开" [level=3] [ref=e224]
+                  - generic [ref=e226]:
+                    - img [ref=e230]
+                    - generic [ref=e232]:
+                      - generic [ref=e234]: 暨南大学
+                      - generic [ref=e236]: https://xxgk.jnu.edu.cn › page
+                - button "关于这条结果的详细信息" [ref=e237] [cursor=pointer]:
+                  - img [ref=e240]
+              - generic [ref=e244]:
+                - emphasis [ref=e245]: "2022"
+                - text: 年
+                - emphasis [ref=e246]: 暨南大学毕业生就业质量
+                - text: 年度
+                - emphasis [ref=e247]: 报告
+                - text: .
+                - emphasis [ref=e248]: "2022"
+                - text: 年
+                - emphasis [ref=e249]: 暨南大学毕业生就业质量
+                - text: 年度
+                - emphasis [ref=e250]: 报告
+                - text: ".pdf. 受理部门:"
+                - emphasis [ref=e251]: 暨南大学
+                - text: "信息公开办公室: 电话：85220016: 邮箱：Oxxk@jnu.edu.cn."
+              - generic [ref=e253]: 缺少字词： 深造 ‎率 ‎升学
+          - generic [ref=e257]:
+            - generic [ref=e260]:
+              - link "暨南大学2022届毕业生就业质量报告 高考直通车App https://app.gaokaozhitongche.com › newsguide" [ref=e262] [cursor=pointer]:
+                - /url: https://app.gaokaozhitongche.com/newsguide/h/WXywb7PG
+                - heading "暨南大学2022届毕业生就业质量报告" [level=3] [ref=e263]
+                - generic [ref=e268]:
+                  - generic [ref=e270]: 高考直通车App
+                  - generic [ref=e272]: https://app.gaokaozhitongche.com › newsguide
+              - button "关于这条结果的详细信息" [ref=e273] [cursor=pointer]:
+                - img [ref=e276]
+            - generic [ref=e279]:
+              - generic [ref=e280]: 2023年1月29日 —
+              - generic [ref=e281]:
+                - text: ①
+                - emphasis [ref=e282]: 本科
+                - text: 生
+                - emphasis [ref=e283]: 就业
+                - text: 单位： 对已落实毕业去向人员进行分析，
+                - emphasis [ref=e284]: 暨南大学2022 届本科毕业生
+                - text: 最主要的毕业去向是“国内
+                - emphasis [ref=e285]: 升学
+                - text: ”（29.5%）、“民营企业”（23.6%）。
+          - generic [ref=e289]:
+            - generic [ref=e292]:
+              - link "关于发布《2022年暨南大学毕业生就业质量年度报告》的公告 暨南大学 https://career.jnu.edu.cn › 2022 › page" [ref=e294] [cursor=pointer]:
+                - /url: https://career.jnu.edu.cn/2022/1231/c28885a734171/page.htm
+                - heading "关于发布《2022年暨南大学毕业生就业质量年度报告》的公告" [level=3] [ref=e295]
+                - generic [ref=e300]:
+                  - generic [ref=e302]: 暨南大学
+                  - generic [ref=e304]: https://career.jnu.edu.cn › 2022 › page
+              - button "关于这条结果的详细信息" [ref=e305] [cursor=pointer]:
+                - img [ref=e308]
+            - generic [ref=e311]:
+              - generic [ref=e312]: 2022年12月31日 —
+              - generic [ref=e313]:
+                - text: 现公布《
+                - emphasis [ref=e314]: "2022"
+                - text: 年
+                - emphasis [ref=e315]: 暨南大学毕业生就业质量
+                - text: 年度
+                - emphasis [ref=e316]: 报告
+                - text: 》，感谢所有一直以来关心关爱暨南学子成长成才的社会各界，感谢为学校学生
+                - emphasis [ref=e317]: 就业
+                - text: 工作付出辛勤劳动的老师和同学 ...
+            - generic [ref=e319]: 缺少字词： 深造 ‎率 ‎升学 ‎本科 ‎数据
+          - generic [ref=e323]:
+            - generic [ref=e326]:
+              - link "暨大2022届毕业生就业质量报告出炉！这些专业就业率达 ... 知乎专栏 https://zhuanlan.zhihu.com › ..." [ref=e328] [cursor=pointer]:
+                - /url: https://zhuanlan.zhihu.com/p/639582711
+                - heading "暨大2022届毕业生就业质量报告出炉！这些专业就业率达 ..." [level=3] [ref=e329]
+                - generic [ref=e334]:
+                  - generic [ref=e336]: 知乎专栏
+                  - generic [ref=e338]: https://zhuanlan.zhihu.com › ...
+              - button "关于这条结果的详细信息" [ref=e339] [cursor=pointer]:
+                - img [ref=e342]
+            - generic [ref=e345]:
+              - generic [ref=e346]: 2023年6月26日 —
+              - generic [ref=e347]:
+                - emphasis [ref=e348]: 暨南大学2022届毕业生
+                - text: 的整体毕业去向落实率为91.83%，其中
+                - emphasis [ref=e349]: 本科毕业生
+                - text: 为88.06%，硕士
+                - emphasis [ref=e350]: 毕业生
+                - text: 为96.67%，博士
+                - emphasis [ref=e351]: 毕业生
+                - text: 为97.54%。各学院/专业毕业去向落实率如上表所 ...
+            - generic [ref=e353]: 缺少字词： 深造 ‎数据
+          - generic [ref=e357]:
+            - generic [ref=e360]:
+              - link "毕业生就业质量年度报告 暨南大学 https://xxgk.jnu.edu.cn › _upload › article › files" [ref=e362] [cursor=pointer]:
+                - /url: https://xxgk.jnu.edu.cn/_upload/article/files/93/6e/4a549c57484a8c1c8e4d567cd3ed/33dd0736-aa90-461b-9bcc-5e3aa5f9d06a.pdf
+                - heading "毕业生就业质量年度报告" [level=3] [ref=e363]
+                - generic [ref=e365]:
+                  - img [ref=e369]
+                  - generic [ref=e371]:
+                    - generic [ref=e373]: 暨南大学
+                    - generic [ref=e375]: https://xxgk.jnu.edu.cn › _upload › article › files
+              - generic [ref=e376]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e377] [cursor=pointer]:
+                - img [ref=e380]
+            - generic [ref=e382]:
+              - generic [ref=e384]:
+                - text: 截. 至2021 年12 月15 日，本校2021 届
+                - emphasis [ref=e385]: 毕业生
+                - text: 的整体毕业去向落实率为90.04%，其中.
+                - emphasis [ref=e386]: 本科毕业生
+                - text: 为85.09%，硕士
+                - emphasis [ref=e387]: 毕业生
+                - text: 为96.80%，博士
+                - emphasis [ref=e388]: 毕业生
+                - text: 为96.28%。各学院/专业. 毕业去向落实 ...
+              - generic [ref=e389]: 74 页
+          - generic [ref=e394]:
+            - heading "相关问题" [level=2] [ref=e396]
+            - generic [ref=e397]:
+              - button "暨南大学最好的专业？" [ref=e403] [cursor=pointer]:
+                - generic [ref=e405]: 暨南大学最好的专业？
+                - img [ref=e408]
+              - button "中国每年大学毕业生有多少？" [ref=e417] [cursor=pointer]:
+                - generic [ref=e419]: 中国每年大学毕业生有多少？
+                - img [ref=e422]
+              - button "暨南大学是985还是211大学？" [ref=e431] [cursor=pointer]:
+                - generic [ref=e433]: 暨南大学是985还是211大学？
+                - img [ref=e436]
+              - button "暨南大学全球排名？" [ref=e445] [cursor=pointer]:
+                - generic [ref=e447]: 暨南大学全球排名？
+                - img [ref=e450]
+          - generic [ref=e455]:
+            - heading "网页搜索结果" [level=2] [ref=e456]
+            - generic [ref=e457]:
+              - generic [ref=e460]:
+                - link "暨南大学2022年毕业生就业质量报告 - 新闻中心 教育在线 https://news.eol.cn › dongtai › jiuye" [ref=e462] [cursor=pointer]:
+                  - /url: https://news.eol.cn/dongtai/jiuye/202308/t20230825_2458155.shtml
+                  - heading "暨南大学2022年毕业生就业质量报告 - 新闻中心" [level=3] [ref=e463]
+                  - generic [ref=e468]:
+                    - generic [ref=e470]: 教育在线
+                    - generic [ref=e472]: https://news.eol.cn › dongtai › jiuye
+                - button "关于这条结果的详细信息" [ref=e473] [cursor=pointer]:
+                  - img [ref=e476]
+              - generic [ref=e479]:
+                - generic [ref=e480]: 2023年8月25日 —
+                - generic [ref=e481]:
+                  - emphasis [ref=e482]: 暨南大学2022
+                  - text: 年
+                  - emphasis [ref=e483]: 毕业生就业质量报告
+                  - text: . 2023-08-25 16:09.
+                  - emphasis [ref=e484]: 暨南大学
+                  - text: . https://www.eol.cn/news/. 分享：. 微信扫一扫：分享. 微信里点“发现”，扫一下.
+              - generic [ref=e486]: 缺少字词： 深造 ‎率 ‎升学 ‎本科
+          - generic [ref=e490]:
+            - generic [ref=e493]:
+              - link "2022 年度毕业生就业质量报告 - ITYE stitye.com https://people.stitye.com › jiuye.net › jiuye_baogao" [ref=e495] [cursor=pointer]:
+                - /url: https://people.stitye.com/p2/jiuye.net/jiuye_baogao/2606.pdf
+                - heading "2022 年度毕业生就业质量报告 - ITYE" [level=3] [ref=e496]
+                - generic [ref=e498]:
+                  - img [ref=e502]
+                  - generic [ref=e504]:
+                    - generic [ref=e506]: stitye.com
+                    - generic [ref=e508]: https://people.stitye.com › jiuye.net › jiuye_baogao
+              - generic [ref=e509]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e510] [cursor=pointer]:
+                - img [ref=e513]
+            - generic [ref=e515]:
+              - generic [ref=e517]:
+                - text: 截至2022 年12 月6 日，学校
+                - emphasis [ref=e518]: 2022 届毕业生
+                - text: 毕业去向落实率为88.36 %。 其中，硕士研究生为96.34 %，
+                - emphasis [ref=e519]: 本科毕业生
+                - text: 为85.56 %，专科
+                - emphasis [ref=e520]: 毕业生
+                - text: 为93.50 %。 截至2022 年8 ...
+              - generic [ref=e521]: 56 页
+          - generic [ref=e525]:
+            - generic [ref=e528]:
+              - link "毕业生就业质量年度报告 - 信息公开- 暨南大学 暨南大学 https://xxgk.jnu.edu.cn › list" [ref=e530] [cursor=pointer]:
+                - /url: https://xxgk.jnu.edu.cn/7604/list.htm
+                - heading "毕业生就业质量年度报告 - 信息公开- 暨南大学" [level=3] [ref=e531]
+                - generic [ref=e533]:
+                  - img [ref=e537]
+                  - generic [ref=e539]:
+                    - generic [ref=e541]: 暨南大学
+                    - generic [ref=e543]: https://xxgk.jnu.edu.cn › list
+              - button "关于这条结果的详细信息" [ref=e544] [cursor=pointer]:
+                - img [ref=e547]
+            - generic [ref=e551]:
+              - emphasis [ref=e552]: "2022"
+              - text: 年
+              - emphasis [ref=e553]: 暨南大学毕业生就业质量
+              - text: 年度
+              - emphasis [ref=e554]: 报告
+              - text: ·
+              - emphasis [ref=e555]: 暨南大学
+              - text: 2020年
+              - emphasis [ref=e556]: 毕业生就业质量
+              - text: 年度
+              - emphasis [ref=e557]: 报告
+              - text: ·
+              - emphasis [ref=e558]: 暨南大学
+              - text: 2019年
+              - emphasis [ref=e559]: 毕业生就业质量
+              - text: 年度
+              - emphasis [ref=e560]: 报告
+              - text: ·
+              - emphasis [ref=e561]: 暨南大学
+              - text: 2016年
+              - emphasis [ref=e562]: 毕业生就业质量
+              - text: 年度
+              - emphasis [ref=e563]: 报告
+              - text: ·
+              - emphasis [ref=e564]: 暨南大学
+              - text: ...
+            - generic [ref=e566]: 缺少字词： 深造 ‎率 ‎升学
+          - generic [ref=e570]:
+            - generic [ref=e573]:
+              - link "暨南大学2022届毕业生就业质量报告 北京高考在线 https://www.gaokzx.com › ..." [ref=e575] [cursor=pointer]:
+                - /url: https://www.gaokzx.com/c/202302/68002.html
+                - heading "暨南大学2022届毕业生就业质量报告" [level=3] [ref=e576]
+                - generic [ref=e581]:
+                  - generic [ref=e583]: 北京高考在线
+                  - generic [ref=e585]: https://www.gaokzx.com › ...
+              - button "关于这条结果的详细信息" [ref=e586] [cursor=pointer]:
+                - img [ref=e589]
+            - generic [ref=e592]:
+              - generic [ref=e593]: 2023年2月3日 —
+              - generic [ref=e594]:
+                - emphasis [ref=e595]: 暨南大学2022届毕业生就业质量
+                - text: 年度
+                - emphasis [ref=e596]: 报告
+                - text: 已更新，学校一次毕业去向落实率保持稳定，年底整体毕业去向落实率为91.83%，其中
+                - emphasis [ref=e597]: 本科毕业生
+                - text: 为88.06%，硕士
+                - emphasis [ref=e598]: 毕业生
+                - text: ...
+            - generic [ref=e600]:
+              - text: 缺少字词： 深造 ‎| 必须包含：
+              - link "深造" [ref=e601] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2022%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%22%E6%B7%B1%E9%80%A0%22+%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&sa=X&ved=2ahUKEwilpa34poyUAxXshSsGHRgNEMMQ5t4CegQIQxAB
+          - generic [ref=e605]:
+            - generic [ref=e608]:
+              - link "毕业生就业质量年度报告 - 信息公开- 暨南大学 暨南大学 https://xxgk.jnu.edu.cn › _upload › article › files" [ref=e610] [cursor=pointer]:
+                - /url: https://xxgk.jnu.edu.cn/_upload/article/files/d0/2e/b349fab04d8aac80f3c86eaa6ba6/ca0b7e6a-1ad4-4fa8-b5c6-82a06c3e3c84.pdf
+                - heading "毕业生就业质量年度报告 - 信息公开- 暨南大学" [level=3] [ref=e611]
+                - generic [ref=e613]:
+                  - img [ref=e617]
+                  - generic [ref=e619]:
+                    - generic [ref=e621]: 暨南大学
+                    - generic [ref=e623]: https://xxgk.jnu.edu.cn › _upload › article › files
+              - generic [ref=e624]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e625] [cursor=pointer]:
+                - img [ref=e628]
+            - generic [ref=e630]:
+              - generic [ref=e632]:
+                - text: 截至2020 年12 月底，本校2020 届
+                - emphasis [ref=e633]: 毕业生
+                - text: 的整体
+                - emphasis [ref=e634]: 就业
+                - text: 率为88.32%，其中
+                - emphasis [ref=e635]: 本科
+                - text: .
+                - emphasis [ref=e636]: 毕业生
+                - text: 为83.01%，硕士
+                - emphasis [ref=e637]: 毕业生
+                - text: 为96.12%，博士
+                - emphasis [ref=e638]: 毕业生
+                - text: 为97.08%。
+                - emphasis [ref=e639]: 本科
+                - text: 未
+                - emphasis [ref=e640]: 就业
+                - text: 学生中，65.61%的学生继续考研 ...
+              - generic [ref=e641]: 108 页
+            - generic [ref=e643]:
+              - text: 缺少字词： 2022 ‎| 必须包含：
+              - link "2022" [ref=e644] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%222022%22+%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&sa=X&ved=2ahUKEwilpa34poyUAxXshSsGHRgNEMMQ5t4CegQIRxAB
+        - navigation [ref=e647]:
+          - heading "网页导航" [level=1] [ref=e648]
+          - text: "1"
+          - link "Page 2" [ref=e651] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2022%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&sca_esv=164079556523993e&ei=mG7uaaX5EeyLruEPmJrAmAw&start=10&sa=N&sstk=Af77f_dmrQsX1s1hNEc6HvOC2N8JoIgM3QQl3OgtfIWqIjQg-Fh5LNCh3hVAtGsHc5_GwPw2mLTwp5vbfo9NWhzD1LVMcUSpgj8-8A&ved=2ahUKEwilpa34poyUAxXshSsGHRgNEMMQ8tMDegQIKhAE
+            - text: "2"
+          - link "Page 3" [ref=e653] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2022%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&sca_esv=164079556523993e&ei=mG7uaaX5EeyLruEPmJrAmAw&start=20&sa=N&sstk=Af77f_dmrQsX1s1hNEc6HvOC2N8JoIgM3QQl3OgtfIWqIjQg-Fh5LNCh3hVAtGsHc5_GwPw2mLTwp5vbfo9NWhzD1LVMcUSpgj8-8A&ved=2ahUKEwilpa34poyUAxXshSsGHRgNEMMQ8tMDegQIKhAG
+            - text: "3"
+          - heading "下一页" [level=2] [ref=e655]:
+            - link "下一页" [ref=e656] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2022%E5%B1%8A+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%8D%87%E5%AD%A6%E7%8E%87+%E6%9C%AC%E7%A7%91+%E6%95%B0%E6%8D%AE&sca_esv=164079556523993e&ei=mG7uaaX5EeyLruEPmJrAmAw&start=10&sa=N&sstk=Af77f_dmrQsX1s1hNEc6HvOC2N8JoIgM3QQl3OgtfIWqIjQg-Fh5LNCh3hVAtGsHc5_GwPw2mLTwp5vbfo9NWhzD1LVMcUSpgj8-8A&ved=2ahUKEwilpa34poyUAxXshSsGHRgNEMMQ8NMDegQIKhAI
+              - generic [ref=e658]: 下一页
+        - navigation
+    - contentinfo [ref=e659]:
+      - heading "页脚链接" [level=1] [ref=e660]
+      - generic [ref=e664]:
+        - generic [ref=e668]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e670] [cursor=pointer]:
+            - generic [ref=e671]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e673]:
+              - text: "-"
+              - generic [ref=e674]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e676] [cursor=pointer]: 更新位置信息
+        - generic [ref=e679]:
+          - link "帮助" [ref=e680] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e681] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e682] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e683] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

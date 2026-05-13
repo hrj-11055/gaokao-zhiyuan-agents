@@ -1,0 +1,37 @@
+{
+  "university_name": "中国医科大学",
+  "short_name": "CMU",
+  "location": {
+    "province": "辽宁",
+    "city": "沈阳",
+    "campus": [
+      "沈北校区",
+      "中山校区"
+    ]
+  },
+  "academic_stats": {
+    "esi_top_1_permille": [
+      "临床医学"
+    ],
+    "esi_top_1_percent": 8,
+    "national_key_labs": 1,
+    "academician_count": 1
+  },
+  "admission_data": {
+    "average_percentile_physic": "前 3%",
+    "popular_program": "临床医学 (5+3 一体化)"
+  },
+  "employment_stats": {
+    "further_study_rate": "50.6%",
+    "top_employer_type": "三级甲等医院",
+    "average_starting_salary": 6200
+  },
+  "evaluation": {
+    "comprehensive_score": 3.99,
+    "tag": [
+      "红色医学院",
+      "临床强校",
+      "考研大户"
+    ]
+  }
+}

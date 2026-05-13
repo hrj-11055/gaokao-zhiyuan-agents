@@ -1,0 +1,39 @@
+{
+  "university_full_name": "杭州师范大学",
+  "abbreviation": "HZNU",
+  "location": {
+    "province": "浙江",
+    "city": "杭州",
+    "district": "余杭区（仓前校区）",
+    "economic_zone": "城西科创大走廊"
+  },
+  "academic_status": {
+    "is_double_first_class": true,
+    "double_first_class_disciplines": [
+      "数学"
+    ],
+    "key_disciplines": [
+      "教育学",
+      "外国语言文学",
+      "艺术学",
+      "心理学"
+    ],
+    "academician_count": 1
+  },
+  "admission_data_2024": {
+    "zhejiang_min_rank_liberal_arts": 22735,
+    "zhejiang_min_rank_science": 45193,
+    "competition_level": "High"
+  },
+  "career_outcomes": {
+    "further_study_rate": "31.44%",
+    "top_employer_sector": "Education",
+    "avg_starting_salary": 7318,
+    "salary_rank_in_province": 5
+  },
+  "risk_assessment": {
+    "administrative_risk": "High (Recent fraud incident)",
+    "employment_risk": "Medium (Increasing competition in teacher recruitment)",
+    "overall_score": 4.15
+  }
+}

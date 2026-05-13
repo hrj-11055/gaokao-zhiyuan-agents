@@ -1,0 +1,55 @@
+{
+  "university_name": "武汉音乐学院",
+  "short_name": "武音",
+  "location": {
+    "province": "湖北",
+    "city": "武汉",
+    "districts": [
+      "武昌区"
+    ]
+  },
+  "academic_level": {
+    "discipline_evaluation": "A-",
+    "national_first_class_majors": 5,
+    "key_platforms": [
+      "音乐表演国家级实验教学示范中心",
+      "长江传统音乐文化研究中心"
+    ]
+  },
+  "student_profile": {
+    "admission_difficulty": "极高",
+    "cultural_score_trend": "逐年上升",
+    "core_source_regions": [
+      "湖北",
+      "湖南",
+      "河南"
+    ]
+  },
+  "employment_stats": {
+    "flexible_employment_rate": "65%",
+    "primary_sectors": [
+      "艺术培训",
+      "演艺团体",
+      "教育系统"
+    ],
+    "salary_level_5yr": "12000-20000 CNY"
+  },
+  "campus_features": {
+    "campuses": [
+      "解放路校区",
+      "滨江校区"
+    ],
+    "iconic_elements": [
+      "编钟乐团",
+      "滨江琴房",
+      "热干面文化"
+    ]
+  },
+  "evaluation_scores": {
+    "academic": 4.5,
+    "employment": 4.0,
+    "location": 4.2,
+    "brand": 4.6,
+    "overall": 4.16
+  }
+}

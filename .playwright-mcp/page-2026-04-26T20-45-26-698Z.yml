@@ -1,0 +1,631 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 执业中药师考试通过率2024 中药制药考研深造率
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024+%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2213730517426065332772%22%2C%22ori_lid%22%3A%2213730517426065332772%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=be8c98da02ef5a24&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024+%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024+%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=be8c98da02ef5a24&ie=utf-8&wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024+%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_spt=7&rsv_bp=1&f=8&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024+%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024+%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024+%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024+%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024+%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  执业中药师和西药师哪个难考  执业中药师一年考4门难吗  执业中药师难考还是西药师难考  执业助理医师报名条件  中药学考研难度排名  中药执业药师证难考吗    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 伊朗外长向巴基斯坦递交停战条件 9 女性多和好友聚会能“续命” 10 母亲躺医院长椅儿子一手垫头一手轻拍 11 黄鳝被喂避孕药是传了30年的谣言 12 A股一季度最赚钱公司曝光 13 厨师锅里吐口水后继续出餐 店长回应 14 DeepSeek输入缓存降价 15 男子杀害岳父后潜逃33年终落网" [ref=e69]:
+              - cell "相关搜索  执业中药师和西药师哪个难考  执业中药师一年考4门难吗  执业中药师难考还是西药师难考  执业助理医师报名条件  中药学考研难度排名  中药执业药师证难考吗    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 伊朗外长向巴基斯坦递交停战条件 9 女性多和好友聚会能“续命” 10 母亲躺医院长椅儿子一手垫头一手轻拍 11 黄鳝被喂避孕药是传了30年的谣言 12 A股一季度最赚钱公司曝光 13 厨师锅里吐口水后继续出餐 店长回应 14 DeepSeek输入缓存降价 15 男子杀害岳父后潜逃33年终落网" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 执业中药师和西药师哪个难考" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E5%92%8C%E8%A5%BF%E8%8D%AF%E5%B8%88%E5%93%AA%E4%B8%AA%E9%9A%BE%E8%80%83&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rfqid=be8c98da02ef5a24&rsv_dl=0_prs_28616_1&rq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101636803
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 执业中药师和西药师哪个难考
+                      - link " 执业中药师一年考4门难吗" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E4%B8%80%E5%B9%B4%E8%80%834%E9%97%A8%E9%9A%BE%E5%90%97&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rfqid=be8c98da02ef5a24&rsv_dl=0_prs_28616_2&rq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101636803
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 执业中药师一年考4门难吗
+                      - link " 执业中药师难考还是西药师难考" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E9%9A%BE%E8%80%83%E8%BF%98%E6%98%AF%E8%A5%BF%E8%8D%AF%E5%B8%88%E9%9A%BE%E8%80%83&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rfqid=be8c98da02ef5a24&rsv_dl=0_prs_28616_3&rq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101636803
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 执业中药师难考还是西药师难考
+                      - link " 执业助理医师报名条件" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8A%A9%E7%90%86%E5%8C%BB%E5%B8%88%E6%8A%A5%E5%90%8D%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rfqid=be8c98da02ef5a24&rsv_dl=0_prs_28616_4&rq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101631202
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 执业助理医师报名条件
+                      - link " 中药学考研难度排名" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E8%8D%AF%E5%AD%A6%E8%80%83%E7%A0%94%E9%9A%BE%E5%BA%A6%E6%8E%92%E5%90%8D&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rfqid=be8c98da02ef5a24&rsv_dl=0_prs_28616_5&rq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101636803
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 中药学考研难度排名
+                      - link " 中药执业药师证难考吗" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E8%8D%AF%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88%E8%AF%81%E9%9A%BE%E8%80%83%E5%90%97&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rfqid=be8c98da02ef5a24&rsv_dl=0_prs_28616_6&rq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101633403
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 中药执业药师证难考吗
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=a1e54sYo9fBXNMShDsw%2FUzHcX0dxwqw1hSSmMD7S7JX1IIf0AKjcieglYjA&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=84f0ZsDO%2Fwbd0tmVrc%2FEUHf5dHRiix7RF9iE6QFtT4ixQnhHzh20R%2FEDSZ8&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=84f0ZsDO%2Fwbd0tmVrc%2FEUHf5dHRiix7RF9iE6QFtT4ixQnhHzh20R%2FEDSZ8&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=84f0ZsDO%2Fwbd0tmVrc%2FEUHf5dHRiix7RF9iE6QFtT4ixQnhHzh20R%2FEDSZ8&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "女性多和好友聚会能“续命”" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=84f0ZsDO%2Fwbd0tmVrc%2FEUHf5dHRiix7RF9iE6QFtT4ixQnhHzh20R%2FEDSZ8&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=84f0ZsDO%2Fwbd0tmVrc%2FEUHf5dHRiix7RF9iE6QFtT4ixQnhHzh20R%2FEDSZ8&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=84f0ZsDO%2Fwbd0tmVrc%2FEUHf5dHRiix7RF9iE6QFtT4ixQnhHzh20R%2FEDSZ8&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "A股一季度最赚钱公司曝光" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=A%E8%82%A1%E4%B8%80%E5%AD%A3%E5%BA%A6%E6%9C%80%E8%B5%9A%E9%92%B1%E5%85%AC%E5%8F%B8%E6%9B%9D%E5%85%89&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=84f0ZsDO%2Fwbd0tmVrc%2FEUHf5dHRiix7RF9iE6QFtT4ixQnhHzh20R%2FEDSZ8&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=84f0ZsDO%2Fwbd0tmVrc%2FEUHf5dHRiix7RF9iE6QFtT4ixQnhHzh20R%2FEDSZ8&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "DeepSeek输入缓存降价" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=DeepSeek%E8%BE%93%E5%85%A5%E7%BC%93%E5%AD%98%E9%99%8D%E4%BB%B7&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=84f0ZsDO%2Fwbd0tmVrc%2FEUHf5dHRiix7RF9iE6QFtT4ixQnhHzh20R%2FEDSZ8&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "男子杀害岳父后潜逃33年终落网" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E7%94%B7%E5%AD%90%E6%9D%80%E5%AE%B3%E5%B2%B3%E7%88%B6%E5%90%8E%E6%BD%9C%E9%80%8333%E5%B9%B4%E7%BB%88%E8%90%BD%E7%BD%91&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=84f0ZsDO%2Fwbd0tmVrc%2FEUHf5dHRiix7RF9iE6QFtT4ixQnhHzh20R%2FEDSZ8&rqid=be8c98da02ef5a24&rsf=8b9262d4cc92d975c3e551d9dd386292_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e206]:
+            - generic [ref=e208]:
+              - heading "中药制药专业就业难?5大原因与破解之道 - 百度文库" [level=3] [ref=e209]:
+                - link "中药制药专业就业难?5大原因与破解之道 - 百度文库" [ref=e210] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=s2WsUwWF75I5gwQ6Ufa5l3tF-8DQTmDfehg1BLQx3dL78PBOG-VgDu_wKJkLSJ-8CH7xvs1MLD7s7ZKIaS6LRlLOUCj0HknsHnyy7YsOBdAzMJ6F-7dljJyy64LKyFsPIDjydtb4SgPRf_vWfyuCSfeHGPyRtM3x40ky-_iG1rlX2ml78i6A6UmlRsmNON3Gzt8uju6Bdw2g4jWx9NUfZlKlOKVoewlgBUDZrRYX-R4ygg2rUugmEattH-n92L_utjrtzBJs65lDAOv3Y-S-vsKWACSv0BHqNDmMaUYN-4e
+                  - generic [ref=e211]:
+                    - emphasis [ref=e212]: 中药制药
+                    - text: 专业就业难?5大原因与破解之道 - 百度文库
+              - generic [ref=e213]:
+                - generic [ref=e214]:
+                  - generic [ref=e217]:
+                    - generic [ref=e219]: 
+                    - generic [ref=e221]: 
+                    - generic [ref=e223]: 
+                    - generic [ref=e224]:
+                      - generic [ref=e225]: 
+                      - generic [ref=e227]: 
+                    - generic [ref=e229]: 
+                  - generic [ref=e230]: 3页
+                  - generic [ref=e231]: 0次阅读
+                - paragraph [ref=e234]:
+                  - generic [ref=e235]:
+                    - text: 学历门槛显著提升构成首要障碍，新药研发、工艺优化等中高端岗位硕士需求占比达68%，而本科毕业生只能竞争基础技术岗。某招聘平台数据显示，
+                    - emphasis [ref=e236]: 中药制药
+                    - text: 专业硕士学历者平均获得面试机会是本科生的2.3倍。证书壁垒日益森严，
+                    - emphasis [ref=e237]: 执业药师
+                    - text: 资格证
+                    - emphasis [ref=e238]: 通过率
+                    - text: 长期维持在15%-20%区间，
+                    - emphasis [ref=e239]: "2024"
+                    - text: 年
+                    - emphasis [ref=e240]: 考试
+                    - text: 大纲新增的
+                    - emphasis [ref=e241]: 中药
+                    - text: 质量标准制定内容，使备考难度进一步提升
+                - generic [ref=e242]:
+                  - heading "2024中药学最吃香的3个专业:就业前景与院校推荐" [level=3] [ref=e245]:
+                    - link "2024中药学最吃香的3个专业:就业前景与院校推荐" [ref=e246] [cursor=pointer]:
+                      - /url: http://www.baidu.com/link?url=s2WsUwWF75I5gwQ6Ufa5l3tF-8DQTmDfehg1BLQx3dLZX2qwEWgBLdHAeLCytBD9Tcs8DBh6T-j1KKaGUiEWUl4h8B3nQ9rxCl_kIASuaKFUDpccnhYVuyA4XkBaH8CcZb_FGFe6mRTkpLMK006qkK-gYuqAWuNhouadnRLZDdq7jJKoE9dvyZAVCfe677R3bbMqmhVdf0XjsNvRmS_X1G2FOwuqgUAxP_WHL59XLSwffpo6g5ISCdxbK2xz2O_xdmjC-Je8BsZ7RbgI2OJV1NYYe3mbbwvSfxR_pZPVpae
+                      - paragraph [ref=e249]:
+                        - generic [ref=e251]:
+                          - emphasis [ref=e253]: 2024中药
+                          - text: 学最吃香的3个专业:就业前景与院校推荐
+                  - generic [ref=e254]:
+                    - generic [ref=e257]:
+                      - generic [ref=e259]: 
+                      - generic [ref=e261]: 
+                      - generic [ref=e263]: 
+                      - generic [ref=e265]: 
+                      - generic [ref=e267]: 
+                    - generic [ref=e268]: 3页
+                    - generic [ref=e269]: 0次阅读
+                  - paragraph [ref=e272]:
+                    - generic [ref=e273]:
+                      - text: 2.生产领域：制药企业工艺工程师、质量管理员是核心岗位，年薪范围在15-25万元，且晋升空间明确。3.营销领域：医药代表需兼具专业知识和沟通能力，外企药企的医药代表年薪可达30万以上，但需
+                      - emphasis [ref=e274]: 通过执业药师考试
+                      - text: 。4.医疗机构：
+                      - emphasis [ref=e275]: 中药师
+                      - text: 资格证是进入医院、诊所的必备门槛，三级医院中药师月薪在8000-12000元。5.科研教育：高校...
+                - generic [ref=e276]:
+                  - heading "中药制药是冷门专业吗?就业前景与报考趋势全解析" [level=3] [ref=e279]:
+                    - link "中药制药是冷门专业吗?就业前景与报考趋势全解析" [ref=e280] [cursor=pointer]:
+                      - /url: http://www.baidu.com/link?url=s2WsUwWF75I5gwQ6Ufa5l3tF-8DQTmDfehg1BLQx3dNxx56v9ZdPAgoR7_2n4DxHkNpLQ6DCXDsagdL_85hwerlbHJ66hGGWocrN-3Ge1YKqIqszScudYfUdQNsW74FtVpcUE6Q0SuAHdGCef03c5JegtXc3KDDSJjpXLi-y5q7Bjw7M7iO_K1LY4sHXJNmg6Eqh-tAa1-OVPwCniHtOyaVMLj-M8a84WQs4zLCaGLCT7mG2jzl-AZWOdhRhD1WgOFhcnVijjEYFoj5CPJMOz7MTF_5z6ANvzYRtk0lVAB7
+                      - paragraph [ref=e283]:
+                        - generic [ref=e285]:
+                          - emphasis [ref=e287]: 中药制药
+                          - text: 是冷门专业吗?就业前景与报考趋势全解析
+                  - generic [ref=e288]:
+                    - generic [ref=e291]:
+                      - generic [ref=e293]: 
+                      - generic [ref=e295]: 
+                      - generic [ref=e297]: 
+                      - generic [ref=e299]: 
+                      - generic [ref=e301]: 
+                    - generic [ref=e302]: 3页
+                    - generic [ref=e303]: 0次阅读
+                  - paragraph [ref=e306]:
+                    - generic [ref=e307]:
+                      - text: 报考数据呈现两极分化特征。
+                      - emphasis [ref=e308]: "2024"
+                      - text: 年
+                      - emphasis [ref=e309]: 执业中药师考试
+                      - text: 报考人数达418,279人，参考率82.08%，显示行业准入需求旺盛。但部分院校存在报录比失衡现象，如2025年江苏大学中药学硕士计划招生15人，仅5人报考，反映出考生对专业认知存在地域差异。与药学专业的区别
+                      - emphasis [ref=e310]: 中药制药
+                      - text: 与药学专业在研究范式上存在本质差异。药学专业聚焦西药研发...
+                - generic [ref=e311]:
+                  - heading "2024中药学最吃香的3个专业:就业前景与院校推荐" [level=3] [ref=e314]:
+                    - link "2024中药学最吃香的3个专业:就业前景与院校推荐" [ref=e315] [cursor=pointer]:
+                      - /url: http://www.baidu.com/link?url=s2WsUwWF75I5gwQ6Ufa5l3tF-8DQTmDfehg1BLQx3dL01DqTJRiyiMITq1j2pzeU2-AnXz4tPub-0noSCinpeuO6o61oJPLSaMQFp6iOJv-GcxNHlafDt4rJDxosmcXVqquwYFOtJs7BOsfcZ1D-UC56kDMhgWw0qziI8S9PIqnFmNQRrYpQ8LlswAtcay2bhzqkgXzPpzp9J67W-OGru9-5EV8yoYr6peB5vkHxU1HZWtUygkABvs82Jt4TVvfKGfAyhpKtzQW9yz91JFwEpgnAJePeq04cnGYBr2ro5XK
+                      - paragraph [ref=e318]:
+                        - generic [ref=e320]:
+                          - emphasis [ref=e322]: 2024中药
+                          - text: 学最吃香的3个专业:就业前景与院校推荐
+                  - generic [ref=e323]:
+                    - generic [ref=e326]:
+                      - generic [ref=e328]: 
+                      - generic [ref=e330]: 
+                      - generic [ref=e332]: 
+                      - generic [ref=e334]: 
+                      - generic [ref=e336]: 
+                    - generic [ref=e337]: 3页
+                    - generic [ref=e338]: 0次阅读
+                  - paragraph [ref=e341]:
+                    - generic [ref=e342]:
+                      - text: 2.生产领域：制药企业工艺工程师、质量管理员是核心岗位，年薪范围在15-25万元，且晋升空间明确。3.营销领域：医药代表需兼具专业知识和沟通能力，外企药企的医药代表年薪可达30万以上，但需
+                      - emphasis [ref=e343]: 通过执业药师考试
+                      - text: 。4.医疗机构：
+                      - emphasis [ref=e344]: 中药师
+                      - text: 资格证是进入医院、诊所的必备门槛，三级医院中药师月薪在8000-12000元。5.科研教育：高校...
+              - link "查看更多同站结果 " [ref=e345] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=zgE6LpK3V6g-voxqjzqAdwET3CsgYL-a0tpA_4kuSdF1WdvIKR0o2iV-7-4NUZdaeo-qcfPBeJ5f6Y9lqdeSAUEEQwwc2EirJNSFn4mqUmLuTOsWZak04I06XR23HeZz4iRjd0HhRL87SkDeAaj6CSg8LIQk9pGK-gV5tVgaJDS94xJasUhi-odCOr0OiTkrW_w6ytSmtpD5-zGMIyUEAa
+                - generic [ref=e346]:
+                  - generic [ref=e347]: 查看更多同站结果
+                  - generic [ref=e348]: 
+            - generic [ref=e349]:
+              - link "百度文库" [ref=e352] [cursor=pointer]:
+                - /url: http://wenku.baidu.com/search?word=执业中药师考试通过率2024 中药制药考研深造率&fr=aladdin266&ind=0&hitsid=0&aigcsid=0&qtype=0
+                - generic [ref=e355]: 百度文库
+              - img [ref=e360] [cursor=pointer]
+              - link [ref=e362] [cursor=pointer]:
+                - /url: http://open.baidu.com
+          - generic [ref=e367]:
+            - heading "创7年新高!官方公布:2024年执业药师考试合格率!" [level=3] [ref=e370]:
+              - link "创7年新高!官方公布:2024年执业药师考试合格率!" [ref=e371] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0l5HfzY_b8bA57XBCmvDeUMA78SK0fuispncKnDRX8k59R4YnRlzS2WkZNZt-kDmRBAKsvM0SrNi66FFbMsKIpBUwnKIHPtD0viBF7s8gOsDZgQyNZRulrS9mSKI4v2Si_PGwOlHXsXxN2610JCLfDHcv_htHFnR68FRMqmjiyqz-tsAN5GNTMJmMZQvxR9MHFDwQC-n3OsfD4YAX2PnLzRa6gFTCV42iY2fqtjFsWdDqbpNOcXOAmPB-K6Vnr_K1q
+                - paragraph [ref=e374]:
+                  - generic [ref=e377]:
+                    - text: "创7年新高!官方公布:"
+                    - emphasis [ref=e378]: "2024"
+                    - text: 年
+                    - emphasis [ref=e379]: 执业药师考试合格率
+                    - text: "!"
+            - generic [ref=e384]:
+              - text: 2024年12月16日
+              - generic [ref=e385]:
+                - text: 人力资源社会保障部人事
+                - emphasis [ref=e386]: 考试
+                - text: 中心数据显示,
+                - emphasis [ref=e387]: "2024"
+                - text: 年度
+                - emphasis [ref=e388]: 执业药师
+                - text: 职业资格
+                - emphasis [ref=e389]: 考试
+                - text: 共计834,857人报考,617,271人实际参考,参考率73.94%。 其中,129,872人
+                - emphasis [ref=e390]: 考试
+                - text: 成绩合格(合格标准为72分),合格率为21.04% 2025
+                - emphasis [ref=e391]: 执业药师
+                - text: 0基础训练营直播课🔥 今晚药考【法规】开讲 点“...
+            - generic [ref=e392]:
+              - link [ref=e393] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0l5HfzY_b8bA57XBCmvDeUMA78SK0fuispncKnDRX8k59R4YnRlzS2WkZNZt-kDmRBAKsvM0SrNi66FFbMsKIpBUwnKIHPtD0viBF7s8gOsDZgQyNZRulrS9mSKI4v2Si_PGwOlHXsXxN2610JCLfDHcv_htHFnR68FRMqmjiyqz-tsAN5GNTMJmMZQvxR9MHFDwQC-n3OsfD4YAX2PnLzRa6gFTCV42iY2fqtjFsWdDqbpNOcXOAmPB-K6Vnr_K1q
+              - link [ref=e397] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0l5HfzY_b8bA57XBCmvDeUMA78SK0fuispncKnDRX8k59R4YnRlzS2WkZNZt-kDmRBAKsvM0SrNi66FFbMsKIpBUwnKIHPtD0viBF7s8gOsDZgQyNZRulrS9mSKI4v2Si_PGwOlHXsXxN2610JCLfDHcv_htHFnR68FRMqmjiyqz-tsAN5GNTMJmMZQvxR9MHFDwQC-n3OsfD4YAX2PnLzRa6gFTCV42iY2fqtjFsWdDqbpNOcXOAmPB-K6Vnr_K1q
+              - link [ref=e401] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0l5HfzY_b8bA57XBCmvDeUMA78SK0fuispncKnDRX8k59R4YnRlzS2WkZNZt-kDmRBAKsvM0SrNi66FFbMsKIpBUwnKIHPtD0viBF7s8gOsDZgQyNZRulrS9mSKI4v2Si_PGwOlHXsXxN2610JCLfDHcv_htHFnR68FRMqmjiyqz-tsAN5GNTMJmMZQvxR9MHFDwQC-n3OsfD4YAX2PnLzRa6gFTCV42iY2fqtjFsWdDqbpNOcXOAmPB-K6Vnr_K1q
+              - link [ref=e405] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0l5HfzY_b8bA57XBCmvDeUMA78SK0fuispncKnDRX8k59R4YnRlzS2WkZNZt-kDmRBAKsvM0SrNi66FFbMsKIpBUwnKIHPtD0viBF7s8gOsDZgQyNZRulrS9mSKI4v2Si_PGwOlHXsXxN2610JCLfDHcv_htHFnR68FRMqmjiyqz-tsAN5GNTMJmMZQvxR9MHFDwQC-n3OsfD4YAX2PnLzRa6gFTCV42iY2fqtjFsWdDqbpNOcXOAmPB-K6Vnr_K1q
+              - link "14" [ref=e409] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0l5HfzY_b8bA57XBCmvDeUMA78SK0fuispncKnDRX8k59R4YnRlzS2WkZNZt-kDmRBAKsvM0SrNi66FFbMsKIpBUwnKIHPtD0viBF7s8gOsDZgQyNZRulrS9mSKI4v2Si_PGwOlHXsXxN2610JCLfDHcv_htHFnR68FRMqmjiyqz-tsAN5GNTMJmMZQvxR9MHFDwQC-n3OsfD4YAX2PnLzRa6gFTCV42iY2fqtjFsWdDqbpNOcXOAmPB-K6Vnr_K1q
+                - generic [ref=e414]:
+                  - generic [ref=e415]: 
+                  - text: "14"
+            - link "微信公众平台" [ref=e420] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0l5HfzY_b8bA57XBCmvDeUMA78SK0fuispncKnDRX8k59R4YnRlzS2WkZNZt-kDmRBAKsvM0SrNi66FFbMsKIpBUwnKIHPtD0viBF7s8gOsDZgQyNZRulrS9mSKI4v2Si_PGwOlHXsXxN2610JCLfDHcv_htHFnR68FRMqmjiyqz-tsAN5GNTMJmMZQvxR9MHFDwQC-n3OsfD4YAX2PnLzRa6gFTCV42iY2fqtjFsWdDqbpNOcXOAmPB-K6Vnr_K1q
+              - generic [ref=e421]: 微信公众平台
+              - generic [ref=e423]: 
+          - generic [ref=e425]:
+            - generic [ref=e426]: 大家还在搜
+            - generic [ref=e427]:
+              - link "执业中药师和西药师哪个难考" [ref=e428] [cursor=pointer]:
+                - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E5%92%8C%E8%A5%BF%E8%8D%AF%E5%B8%88%E5%93%AA%E4%B8%AA%E9%9A%BE%E8%80%83&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=ab4aZPhtDcgpeJ8J1RmtUhPncBMt6SOUFrzrycQeFsEHqFcXBTG5qAwjRHk&rsf=101636803&rsv_dl=0_prs_28608_1
+                - generic [ref=e430]: 执业中药师和西药师哪个难考
+              - link "执业中药师一年考4门难吗" [ref=e431] [cursor=pointer]:
+                - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E4%B8%80%E5%B9%B4%E8%80%834%E9%97%A8%E9%9A%BE%E5%90%97&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=ab4aZPhtDcgpeJ8J1RmtUhPncBMt6SOUFrzrycQeFsEHqFcXBTG5qAwjRHk&rsf=101636803&rsv_dl=0_prs_28608_2
+                - generic [ref=e433]: 执业中药师一年考4门难吗
+              - link "执业中药师难考还是西药师难考" [ref=e434] [cursor=pointer]:
+                - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E9%9A%BE%E8%80%83%E8%BF%98%E6%98%AF%E8%A5%BF%E8%8D%AF%E5%B8%88%E9%9A%BE%E8%80%83&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=ab4aZPhtDcgpeJ8J1RmtUhPncBMt6SOUFrzrycQeFsEHqFcXBTG5qAwjRHk&rsf=101636803&rsv_dl=0_prs_28608_3
+                - generic [ref=e436]: 执业中药师难考还是西药师难考
+              - link "执业助理医师报名条件" [ref=e437] [cursor=pointer]:
+                - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8A%A9%E7%90%86%E5%8C%BB%E5%B8%88%E6%8A%A5%E5%90%8D%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=ab4aZPhtDcgpeJ8J1RmtUhPncBMt6SOUFrzrycQeFsEHqFcXBTG5qAwjRHk&rsf=101631202&rsv_dl=0_prs_28608_4
+                - generic [ref=e439]: 执业助理医师报名条件
+              - link "中药学考研难度排名" [ref=e440] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E8%8D%AF%E5%AD%A6%E8%80%83%E7%A0%94%E9%9A%BE%E5%BA%A6%E6%8E%92%E5%90%8D&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=4d55YUv3k6WGyAYFkLbgmLgyXPNgSq%2BGsJnDbRgdODVmon7BpN4%2BayjLktY&rsf=101636803&rsv_dl=0_prs_28608_5
+                - generic [ref=e442]: 中药学考研难度排名
+              - link "中药执业药师证难考吗" [ref=e443] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E8%8D%AF%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88%E8%AF%81%E9%9A%BE%E8%80%83%E5%90%97&usm=2&ie=utf-8&rsv_pq=be8c98da02ef5a24&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=4d55YUv3k6WGyAYFkLbgmLgyXPNgSq%2BGsJnDbRgdODVmon7BpN4%2BayjLktY&rsf=101633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e445]: 中药执业药师证难考吗
+          - generic [ref=e449]:
+            - heading "2024年执业药师考试数据公布!这个省通过率最高!_执业药师考试..." [level=3] [ref=e452]:
+              - link "2024年执业药师考试数据公布!这个省通过率最高!_执业药师考试..." [ref=e453] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=h6rklK29T5MiAafC8v_mBGYgwt-9IokCN-an0Jqlh0HcN-3dxxpQCneSNrTiJlGfwPFR_Ps6wpTk_ufTzsmT7CwinS9uK4-DkS0Ro2NBaye
+                - paragraph [ref=e456]:
+                  - generic [ref=e459]:
+                    - emphasis [ref=e460]: "2024"
+                    - text: 年
+                    - emphasis [ref=e461]: 执业药师考试
+                    - text: 数据公布!这个省
+                    - emphasis [ref=e462]: 通过率
+                    - text: 最高!_执业药师考试...
+            - generic [ref=e463]:
+              - link [ref=e465] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=h6rklK29T5MiAafC8v_mBGYgwt-9IokCN-an0Jqlh0HcN-3dxxpQCneSNrTiJlGfwPFR_Ps6wpTk_ufTzsmT7CwinS9uK4-DkS0Ro2NBaye
+              - generic [ref=e470]:
+                - generic [ref=e475]:
+                  - text: 2025年8月27日
+                  - generic [ref=e476]:
+                    - text: 2024年执业西药师考试总报考人数为294,640人,实际参考人数226,366人,
+                    - emphasis [ref=e477]: 参考率达到76.83%
+                    - text: 。 执业中药师考试总报考人数高达418,279人,实际参考人数343,315人,参考率更达到82.08%。 与往年相比,报考人数和参考率均呈现稳步上升趋势,表明医药行业从业人员对执业资格重视程度不断提高。高参考率也反映出考生备考意愿强烈,考试...
+                - link "手机网" [ref=e482] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=h6rklK29T5MiAafC8v_mBGYgwt-9IokCN-an0Jqlh0HcN-3dxxpQCneSNrTiJlGfwPFR_Ps6wpTk_ufTzsmT7CwinS9uK4-DkS0Ro2NBaye
+                  - generic [ref=e483]: 手机网
+                  - generic [ref=e485]: 
+          - generic [ref=e489]:
+            - heading "药监局新消息:24年执业药师合格率21.04%!证书可于25年2月注册" [level=3] [ref=e492]:
+              - link "药监局新消息:24年执业药师合格率21.04%!证书可于25年2月注册" [ref=e493] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0f0iOxrYLG5P50FKnAhisvXa9HelW6kuDm_7NetjipOnxdwbfXI6thDONa8rQlMuva
+                - paragraph [ref=e496]:
+                  - generic [ref=e499]:
+                    - text: 药监局新消息:24年
+                    - emphasis [ref=e500]: 执业药师合格率21.04%
+                    - text: "!证书可于25年2月注册"
+            - generic [ref=e501]:
+              - link [ref=e503] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0f0iOxrYLG5P50FKnAhisvXa9HelW6kuDm_7NetjipOnxdwbfXI6thDONa8rQlMuva
+              - generic [ref=e508]:
+                - generic [ref=e513]:
+                  - text: 2024年12月18日
+                  - generic [ref=e514]:
+                    - text: 人力资源社会保障部人事考试中心数据显示，2024年度执业药师职业资格考试共计834,857人报考，617,271人实际参考，
+                    - emphasis [ref=e515]: 参考率73.94%
+                    - text: 。其中，129,872人考试成绩合格（合格标准为72分），合格率为
+                    - emphasis [ref=e516]: 21.04%
+                    - text: 。根据考后资格审核工作进度安排，预计新取得执业药师职业资格证书的人员可于2025年2月左右办理注册。原文链接：http://w...
+                - link "头像 优路教育" [ref=e521] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0f0iOxrYLG5P50FKnAhisvXa9HelW6kuDm_7NetjipOnxdwbfXI6thDONa8rQlMuva
+                  - img "头像" [ref=e524]
+                  - generic [ref=e525]: 优路教育
+                  - generic [ref=e527]: 
+          - generic [ref=e531]:
+            - heading "官方公布!2024年执业药师考试合格率创7年新高!" [level=3] [ref=e534]:
+              - link "官方公布!2024年执业药师考试合格率创7年新高!" [ref=e535] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0l5HfzY_b8bA57XBCmvDeUMA78SK0fuispncKnDRX8k5_hTQcNNF5GMtnlIWBYuEPHnJEAPTiuY7BY1ssYyc9jdFVkMBhJ0l87Sy9gX1KU-f1IXp38lNv7JC1kboP1NJ216ss3OpcfVm8qYcuSYjmHg8oo8ahjVC6GgDxQ5-Ev8ZOl-G2qwh_PP7f5Mz-HFAB_Za6usIhra4orp8P_3SKR-GRnHTAiQ6DTd9cpeTzHXhk6jB3OHKd6gcWvF3bD3A3K
+                - paragraph [ref=e538]:
+                  - generic [ref=e541]:
+                    - text: 官方公布!
+                    - emphasis [ref=e542]: "2024"
+                    - text: 年
+                    - emphasis [ref=e543]: 执业药师考试合格率
+                    - text: 创7年新高!
+            - generic [ref=e544]:
+              - link [ref=e546] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0l5HfzY_b8bA57XBCmvDeUMA78SK0fuispncKnDRX8k5_hTQcNNF5GMtnlIWBYuEPHnJEAPTiuY7BY1ssYyc9jdFVkMBhJ0l87Sy9gX1KU-f1IXp38lNv7JC1kboP1NJ216ss3OpcfVm8qYcuSYjmHg8oo8ahjVC6GgDxQ5-Ev8ZOl-G2qwh_PP7f5Mz-HFAB_Za6usIhra4orp8P_3SKR-GRnHTAiQ6DTd9cpeTzHXhk6jB3OHKd6gcWvF3bD3A3K
+              - generic [ref=e551]:
+                - generic [ref=e556]:
+                  - text: 2024年12月19日
+                  - generic [ref=e557]:
+                    - text: 据人力资源社会保障部人事考试中心的数据显示,2024年度执业药师职业资格考试全国有834,857人报考,617,271人实际参考,
+                    - emphasis [ref=e558]: 参考率73.94%
+                    - text: 。其中,129,872人考试成绩合格(合格标准为72分),合格率为
+                    - emphasis [ref=e559]: 21.04%
+                    - text: 。 执业药师考试历年合格率 2024年合格率为21.04%,是什么概念...
+                - link "微信公众平台" [ref=e564] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0l5HfzY_b8bA57XBCmvDeUMA78SK0fuispncKnDRX8k5_hTQcNNF5GMtnlIWBYuEPHnJEAPTiuY7BY1ssYyc9jdFVkMBhJ0l87Sy9gX1KU-f1IXp38lNv7JC1kboP1NJ216ss3OpcfVm8qYcuSYjmHg8oo8ahjVC6GgDxQ5-Ev8ZOl-G2qwh_PP7f5Mz-HFAB_Za6usIhra4orp8P_3SKR-GRnHTAiQ6DTd9cpeTzHXhk6jB3OHKd6gcWvF3bD3A3K
+                  - generic [ref=e565]: 微信公众平台
+                  - generic [ref=e567]: 
+          - generic [ref=e571]:
+            - heading "2024年执业药师考试合格率 21.04%" [level=3] [ref=e574]:
+              - link "2024年执业药师考试合格率 21.04%" [ref=e575] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0hdzZQIfC30tFNn3GmRJxd-Hwe-GjliTiQTtdojSe1LIgdHowWMILlZ_HxnMCH36jouB7gJVUeNzSavlQsRjctq
+                - paragraph [ref=e578]:
+                  - generic [ref=e581]:
+                    - emphasis [ref=e582]: "2024"
+                    - text: 年
+                    - emphasis [ref=e583]: 执业药师考试合格率
+                    - text: 21.04%
+            - generic [ref=e584]:
+              - link [ref=e586] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0hdzZQIfC30tFNn3GmRJxd-Hwe-GjliTiQTtdojSe1LIgdHowWMILlZ_HxnMCH36jouB7gJVUeNzSavlQsRjctq
+              - generic [ref=e591]:
+                - generic [ref=e596]:
+                  - text: 2024年12月18日
+                  - generic [ref=e597]:
+                    - emphasis [ref=e598]: 2024年执业药师考试合格率 21.04%
+                    - text: 今天，官方发布2024年度执业药师职业资格考试结果：2024年度执业药师职业资格考试共计834,857人报考，617,271人实际参考，参考率73.94%。其中，129,872人考试成绩合格（合格标准为72分），合格率为21.04%。执业药师考试历年合格率 2024年合格率为21.04%，是什么概念呢？我们先来...
+                - link "头像 阿虎医考APP" [ref=e603] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=TweBeLvEbslfa2tvCbYI0hdzZQIfC30tFNn3GmRJxd-Hwe-GjliTiQTtdojSe1LIgdHowWMILlZ_HxnMCH36jouB7gJVUeNzSavlQsRjctq
+                  - img "头像" [ref=e606]
+                  - generic [ref=e607]: 阿虎医考APP
+                  - generic [ref=e609]: 
+          - generic [ref=e613]:
+            - heading "2024年执业药师考试通过率创新高:21.04%!_执业药师考试-正保医学教育网" [level=3] [ref=e616]:
+              - link "2024年执业药师考试通过率创新高:21.04%!_执业药师考试-正保医学教育网" [ref=e617] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=IapSRKe5X7zdk6lQnwiL7tf4O7_u2CtyxWVvLo9sdtzVjul319RMO9EvVnRcEkd6A08xa47ybyGw4aHhnw_QNRSQbCEJ0K-vSad9ICBJTjO
+                - paragraph [ref=e620]:
+                  - generic [ref=e623]:
+                    - emphasis [ref=e624]: "2024"
+                    - text: 年
+                    - emphasis [ref=e625]: 执业药师考试通过率
+                    - text: "创新高:"
+                    - emphasis [ref=e626]: 21.04%
+                    - text: "!_执业药师考试-正保医学教育网"
+            - generic [ref=e631]:
+              - text: 2024年12月16日
+              - generic [ref=e632]:
+                - text: 人力资源社会保障部人事考试中心数据显示,2024年度执业药师职业资格考试共计834,857人报考,617,271人实际参考,
+                - emphasis [ref=e633]: 参考率73.94%
+                - text: 。其中,129,872人考试成绩合格(合格标准为72分),
+                - emphasis [ref=e634]: 合格率为21.04%
+                - text: 。为近7年最高!!! 根据考后资格审核工作进度安排,预计新取得执业药师职业资格证书的人员可于2025年2月左右办理注册。
+            - link "医学教育网官网" [ref=e639] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=IapSRKe5X7zdk6lQnwiL7tf4O7_u2CtyxWVvLo9sdtzVjul319RMO9EvVnRcEkd6A08xa47ybyGw4aHhnw_QNRSQbCEJ0K-vSad9ICBJTjO
+              - generic [ref=e640]: 医学教育网官网
+              - generic [ref=e642]: 
+          - generic [ref=e646]:
+            - heading "执业药师考试通过率及2025年考情分析_执业药师_希赛网" [level=3] [ref=e649]:
+              - link "执业药师考试通过率及2025年考情分析_执业药师_希赛网" [ref=e650] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=zgE6LpK3V6g-voxqjzqAdq4yw-2OM8V5XXypt8Ilu_oMWVWmYuMIciU-FZxpA6JW5D_u75oY73BtYgJw9V7Nk_
+                - paragraph [ref=e653]:
+                  - generic [ref=e656]:
+                    - emphasis [ref=e657]: 执业药师考试通过率
+                    - text: 及2025年考情分析_执业药师_希赛网
+            - generic [ref=e658]:
+              - link [ref=e660] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=zgE6LpK3V6g-voxqjzqAdq4yw-2OM8V5XXypt8Ilu_oMWVWmYuMIciU-FZxpA6JW5D_u75oY73BtYgJw9V7Nk_
+              - generic [ref=e665]:
+                - generic [ref=e670]:
+                  - text: 2025年4月18日
+                  - generic [ref=e671]:
+                    - text: "为助力考生精准把握考试动态,以下为历年执业药师考试通过率汇总: 1. 历年通过率概览 根据官方统计数据,2024年执业药师考试合格率达"
+                    - emphasis [ref=e672]: 21.04%
+                    - text: ",创近七年新高。这一提升或与以下因素相关: - 机考改革首年:2024年首次采用机考形式,为降低考生适应难度,题目难度有所下调; ..."
+                - link "头像 希赛网" [ref=e677] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=zgE6LpK3V6g-voxqjzqAdq4yw-2OM8V5XXypt8Ilu_oMWVWmYuMIciU-FZxpA6JW5D_u75oY73BtYgJw9V7Nk_
+                  - img "头像" [ref=e680]
+                  - generic [ref=e681]: 希赛网
+                  - generic [ref=e683]: 
+          - generic [ref=e687]:
+            - heading "2024西药师和中药师哪个比较好考 - 百度知道" [level=3] [ref=e690]:
+              - link "2024西药师和中药师哪个比较好考 - 百度知道" [ref=e691] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=zgE6LpK3V6g-voxqjzqAdz7MrFK0BB4RTymfScDeVK_uD0KcI_wLnzsFAMpvz3vGyQ4Sy6oDaidisp7NlqmNFc2d9DnqEw_909M1F5e6vcq
+                - paragraph [ref=e694]:
+                  - generic [ref=e697]:
+                    - emphasis [ref=e698]: "2024"
+                    - text: 西药师和
+                    - emphasis [ref=e699]: 中药师
+                    - text: 哪个比较好考 - 百度知道
+            - generic [ref=e701]: "1个回答 - 回答时间: 2025年5月10日"
+            - generic [ref=e706]:
+              - text: "最佳答案:"
+              - generic [ref=e707]:
+                - emphasis [ref=e708]: 考试通过率
+                - text: ：依据过往数据，执业西药师的考试通过率为18.2%，而
+                - emphasis [ref=e709]: 执业中药师
+                - text: 的考试通过率为21.0%。这意味着，从统计学的角度来看，执业中药师的考试难度相对较低，更容易通过。考试内容特点：中药学考试侧重于记忆，需要考生掌握大量的
+                - emphasis [ref=e710]: 中药材
+                - text: 名称、功效、用法等知识点；而药学考试则侧重于理解，需要考生对...
+            - link "更多关于执业中药师考试通过率2024 中药制药考研深造率的问题>>" [ref=e714] [cursor=pointer]:
+              - /url: http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5
+            - link "百度知道" [ref=e719] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=zgE6LpK3V6g-voxqjzqAdz7MrFK0BB4RTymfScDeVK_uD0KcI_wLnzsFAMpvz3vGyQ4Sy6oDaidisp7NlqmNFc2d9DnqEw_909M1F5e6vcq
+              - generic [ref=e720]: 百度知道
+              - generic [ref=e722]: 
+        - generic [ref=e725]:
+          - generic [ref=e726]: 相关搜索
+          - table [ref=e727]:
+            - rowgroup [ref=e728]:
+              - row "执业中药师和西药师哪个难考 执业中药师一年考4门难吗" [ref=e729]:
+                - cell "执业中药师和西药师哪个难考" [ref=e730]:
+                  - link "执业中药师和西药师哪个难考" [ref=e731] [cursor=pointer]:
+                    - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E5%92%8C%E8%A5%BF%E8%8D%AF%E5%B8%88%E5%93%AA%E4%B8%AA%E9%9A%BE%E8%80%83&rsf=101636803&rsp=0&f=1&rs_src=0&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&rsv_dl=brs_28338_1
+                    - generic [ref=e733]: 执业中药师和西药师哪个难考
+                - cell "执业中药师一年考4门难吗" [ref=e734]:
+                  - link "执业中药师一年考4门难吗" [ref=e735] [cursor=pointer]:
+                    - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E4%B8%80%E5%B9%B4%E8%80%834%E9%97%A8%E9%9A%BE%E5%90%97&rsf=101636803&rsp=1&f=1&rs_src=0&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&rsv_dl=brs_28338_2
+                    - generic [ref=e737]: 执业中药师一年考4门难吗
+              - row "执业中药师难考还是西药师难考 执业助理医师报名条件" [ref=e738]:
+                - cell "执业中药师难考还是西药师难考" [ref=e739]:
+                  - link "执业中药师难考还是西药师难考" [ref=e740] [cursor=pointer]:
+                    - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E9%9A%BE%E8%80%83%E8%BF%98%E6%98%AF%E8%A5%BF%E8%8D%AF%E5%B8%88%E9%9A%BE%E8%80%83&rsf=101636803&rsp=2&f=1&rs_src=0&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&rsv_dl=brs_28338_3
+                    - generic [ref=e742]: 执业中药师难考还是西药师难考
+                - cell "执业助理医师报名条件" [ref=e743]:
+                  - link "执业助理医师报名条件" [ref=e744] [cursor=pointer]:
+                    - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8A%A9%E7%90%86%E5%8C%BB%E5%B8%88%E6%8A%A5%E5%90%8D%E6%9D%A1%E4%BB%B6&rsf=101631202&rsp=3&f=1&rs_src=0&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&rsv_dl=brs_28338_4
+                    - generic [ref=e746]: 执业助理医师报名条件
+              - row "中药学考研难度排名 中药执业药师证难考吗" [ref=e747]:
+                - cell "中药学考研难度排名" [ref=e748]:
+                  - link "中药学考研难度排名" [ref=e749] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E8%8D%AF%E5%AD%A6%E8%80%83%E7%A0%94%E9%9A%BE%E5%BA%A6%E6%8E%92%E5%90%8D&rsf=101636803&rsp=4&f=1&rs_src=0&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&rsv_dl=brs_28338_5
+                    - generic [ref=e751]: 中药学考研难度排名
+                - cell "中药执业药师证难考吗" [ref=e752]:
+                  - link "中药执业药师证难考吗" [ref=e753] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E8%8D%AF%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88%E8%AF%81%E9%9A%BE%E8%80%83%E5%90%97&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&rsv_dl=brs_28338_6
+                    - generic [ref=e755]: 中药执业药师证难考吗
+              - row "执业药师中药学和药学哪个好考 执业中药师一次过经验" [ref=e756]:
+                - cell "执业药师中药学和药学哪个好考" [ref=e757]:
+                  - link "执业药师中药学和药学哪个好考" [ref=e758] [cursor=pointer]:
+                    - /url: /s?wd=%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88%E4%B8%AD%E8%8D%AF%E5%AD%A6%E5%92%8C%E8%8D%AF%E5%AD%A6%E5%93%AA%E4%B8%AA%E5%A5%BD%E8%80%83&rsf=100633403&rsp=6&f=1&rs_src=0&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&rsv_dl=brs_28338_7
+                    - generic [ref=e760]: 执业药师中药学和药学哪个好考
+                - cell "执业中药师一次过经验" [ref=e761]:
+                  - link "执业中药师一次过经验" [ref=e762] [cursor=pointer]:
+                    - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E4%B8%80%E6%AC%A1%E8%BF%87%E7%BB%8F%E9%AA%8C&rsf=100633403&rsp=7&f=1&rs_src=0&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&rsv_dl=brs_28338_8
+                    - generic [ref=e764]: 执业中药师一次过经验
+              - row "执业兽医资格证通过率 中药执业药师好考吗" [ref=e765]:
+                - cell "执业兽医资格证通过率" [ref=e766]:
+                  - link "执业兽医资格证通过率" [ref=e767] [cursor=pointer]:
+                    - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%85%BD%E5%8C%BB%E8%B5%84%E6%A0%BC%E8%AF%81%E9%80%9A%E8%BF%87%E7%8E%87&rsf=100631202&rsp=8&f=1&rs_src=0&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&rsv_dl=brs_28338_9
+                    - generic [ref=e769]: 执业兽医资格证通过率
+                - cell "中药执业药师好考吗" [ref=e770]:
+                  - link "中药执业药师好考吗" [ref=e771] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E8%8D%AF%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88%E5%A5%BD%E8%80%83%E5%90%97&rsf=100633403&rsp=9&f=1&rs_src=0&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&rsv_dl=brs_28338_10
+                    - generic [ref=e773]: 中药执业药师好考吗
+      - generic [ref=e776]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e777]:
+          - generic [ref=e778]: "1"
+        - link "2" [ref=e779] [cursor=pointer]:
+          - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&pn=10&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&topic_pn=
+          - generic [ref=e780]: "2"
+        - link "3" [ref=e781] [cursor=pointer]:
+          - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&pn=20&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&topic_pn=
+          - generic [ref=e782]: "3"
+        - link "4" [ref=e783] [cursor=pointer]:
+          - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&pn=30&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&topic_pn=
+          - generic [ref=e784]: "4"
+        - link "5" [ref=e785] [cursor=pointer]:
+          - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&pn=40&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&topic_pn=
+          - generic [ref=e786]: "5"
+        - link "6" [ref=e787] [cursor=pointer]:
+          - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&pn=50&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&topic_pn=
+          - generic [ref=e788]: "6"
+        - link "7" [ref=e789] [cursor=pointer]:
+          - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&pn=60&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&topic_pn=
+          - generic [ref=e790]: "7"
+        - link "8" [ref=e791] [cursor=pointer]:
+          - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&pn=70&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&topic_pn=
+          - generic [ref=e792]: "8"
+        - link "9" [ref=e793] [cursor=pointer]:
+          - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&pn=80&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&topic_pn=
+          - generic [ref=e794]: "9"
+        - link "10" [ref=e795] [cursor=pointer]:
+          - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&pn=90&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&topic_pn=
+          - generic [ref=e796]: "10"
+        - link "下一页" [ref=e797] [cursor=pointer]:
+          - /url: /s?wd=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&pn=10&oq=%E6%89%A7%E4%B8%9A%E4%B8%AD%E8%8D%AF%E5%B8%88%E8%80%83%E8%AF%95%E9%80%9A%E8%BF%87%E7%8E%872024%20%E4%B8%AD%E8%8D%AF%E5%88%B6%E8%8D%AF%E8%80%83%E7%A0%94%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=be8c98da02ef5a24&rsv_t=10b52z7Zh2F93mZrxKDy5rfCIsKjQUJsWhKt%2F40Z7fN2IKVTDmPAuKAZWv4&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e798]
+      - generic [ref=e801]:
+        - link "帮助" [ref=e802] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e803] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e804] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e805] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

@@ -1,0 +1,40 @@
+{
+  "university_name": "常州大学怀德学院",
+  "short_name": "怀德学院",
+  "location": {
+    "province": "江苏",
+    "city": "泰州靖江",
+    "address": "江苏省靖江市新港大道136号"
+  },
+  "academic_profile": {
+    "type": "独立学院",
+    "mother_university": "常州大学",
+    "top_majors": [
+      "会计学",
+      "机械设计制造及其自动化",
+      "电子信息工程"
+    ],
+    "first_class_provincial_majors": 5
+  },
+  "admission_stats": {
+    "avg_rank_jiangsu_physics": 200000,
+    "avg_rank_jiangsu_history": 50000,
+    "competitiveness": "中等"
+  },
+  "employment_outcomes": {
+    "employment_rate": "92.5%",
+    "further_study_rate": "6.12%",
+    "primary_industry": "制造业",
+    "avg_starting_salary": 5200
+  },
+  "campus_facilities": {
+    "dorm_quality": "优秀",
+    "ac_equipped": true,
+    "independent_bathroom": true
+  },
+  "risk_assessment": {
+    "data_privacy_incident": "2018 Information Leak",
+    "transfer_status": "Pending/Stable"
+  },
+  "comprehensive_score": 2.855
+}

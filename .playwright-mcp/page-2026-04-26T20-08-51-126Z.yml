@@ -1,0 +1,388 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 汕头大学 在汕头大学就读是怎样一种体验 宿舍 食堂 知乎 汕头大学 在汕头大学就读是怎样一种体验 宿舍 食堂 知乎
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%25B1%2595%25E5%25A4%25B4%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E5%259C%25A8%25E6%25B1%2595%25E5%25A4%25B4%25E5%25A4%25A7%25E5%25AD%25A6%25E5%25B0%25B1%25E8%25AF%25BB%25E6%2598%25AF%25E6%2580%258E%25E6%25A0%25B7%25E4%25B8%2580%25E7%25A7%258D%25E4%25BD%2593%25E9%25AA%258C%2B%25E5%25AE%25BF%25E8%2588%258D%2B%25E9%25A3%259F%25E5%25A0%2582%2B%25E7%259F%25A5%25E4%25B9%258E&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrsojpaijeJRLrp4clUvcwVLqz22G_DDF8uXB52NlEFf5wf7GIq1kUkf2LzqDT3jWEl-0VrzTR6fhHrgXfCBw-vth8zxeOYc8zSTz1oDvTtPw-RK_IU-AltwiP4Xpnt4eywltspSanf7p51sTkZF-LOHg0OGrO-qMLJM3cL3PYr2mxw9fBg&aep=1&ntc=1&sa=X&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ2J8OegQIEhAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "图片" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrsojpaijeJRLrp4clUvcwVLqz22G_DDF8uXB52NlEFf5wf7GIq1kUkf2LzqDT3jWEl-0VrzTR6fhHrgXfCBw-vth8zxeOYc8zSTz1oDvTtPw-RK_IU-AltwiP4Xpnt4eywltspSanf7p51sTkZF-LOHg0OGrO-qMLJM3cL3PYr2mxw9fBg&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sa=X&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQtKgLegQIFBAB
+              - generic [ref=e91]: 图片
+          - listitem [ref=e92]:
+            - link "视频" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrsojpaijeJRLrp4clUvcwVLqz22G_DDF8uXB52NlEFf5wf7GIq1kUkf2LzqDT3jWEl-0VrzTR6fhHrgXfCBw-vth8zxeOYc8zSTz1oDvTtPw-RK_IU-AltwiP4Xpnt4eywltspSanf7p51sTkZF-LOHg0OGrO-qMLJM3cL3PYr2mxw9fBg&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sa=X&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQtKgLegQIFRAB
+              - generic [ref=e95]: 视频
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrsojpaijeJRLrp4clUvcwVLqz22G_DDF8uXB52NlEFf5wf7GIq1kUkf2LzqDT3jWEl-0VrzTR6fhHrgXfCBw-vth8zxeOYc8zSTz1oDvTtPw-RK_IU-AltwiP4Xpnt4eywltspSanf7p51sTkZF-LOHg0OGrO-qMLJM3cL3PYr2mxw9fBg&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "新闻" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrsojpaijeJRLrp4clUvcwVLqz22G_DDF8uXB52NlEFf5wf7GIq1kUkf2LzqDT3jWEl-0VrzTR6fhHrgXfCBw-vth8zxeOYc8zSTz1oDvTtPw-RK_IU-AltwiP4Xpnt4eywltspSanf7p51sTkZF-LOHg0OGrO-qMLJM3cL3PYr2mxw9fBg&sa=X&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ0pQJegQIFxAB
+              - generic [ref=e103]: 新闻
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrsojpaijeJRLrp4clUvcwVLqz22G_DDF8uXB52NlEFf5wf7GIq1kUkf2LzqDT3jWEl-0VrzTR6fhHrgXfCBw-vth8zxeOYc8zSTz1oDvTtPw-RK_IU-AltwiP4Xpnt4eywltspSanf7p51sTkZF-LOHg0OGrO-qMLJM3cL3PYr2mxw9fBg&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sa=X&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQs6gLegQIGBAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - main [ref=e130]:
+      - generic [ref=e134]:
+        - generic [ref=e137]:
+          - heading "网页搜索结果" [level=2] [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e142]:
+              - link "在汕头大学就读是什么体验？ 知乎 https://www.zhihu.com › question" [ref=e144] [cursor=pointer]:
+                - /url: https://www.zhihu.com/question/401645725
+                - heading "在汕头大学就读是什么体验？" [level=3] [ref=e145]
+                - generic [ref=e150]:
+                  - generic [ref=e152]: 知乎
+                  - generic [ref=e154]: https://www.zhihu.com › question
+              - button "关于这条结果的详细信息" [ref=e155] [cursor=pointer]:
+                - img [ref=e158]
+            - generic [ref=e161]:
+              - generic [ref=e162]: 2020年6月15日 —
+              - generic [ref=e163]:
+                - text: ...
+                - emphasis [ref=e164]: 食堂
+                - text: 有很多好吃的，
+                - emphasis [ref=e165]: 食堂
+                - text: 阿姨人也超好的。喜欢饭后到操场散步，吹吹风。想学习就到图书馆里学习。
+                - emphasis [ref=e166]: 宿舍
+                - text: 是上床下桌，有独立的卫生间和浴室，宿友是不同 ...
+            - generic [ref=e171]:
+              - link "14 个回答" [ref=e172] [cursor=pointer]:
+                - /url: https://www.zhihu.com/question/401645725/answer/1309714674
+              - generic [ref=e173]: ·
+              - generic [ref=e174]: "最佳答案:"
+              - generic [ref=e175]: ………………2022.7 汕大的毕业典礼 淑德优秀女性演讲。-讲的特别好！ ...
+        - generic [ref=e179]:
+          - generic [ref=e182]:
+            - link "在汕头大学就读是一种怎样的体验？ - 清樱的回答 知乎 https://www.zhihu.com › question › answer" [ref=e184] [cursor=pointer]:
+              - /url: https://www.zhihu.com/question/24431948/answer/1699953639
+              - heading "在汕头大学就读是一种怎样的体验？ - 清樱的回答" [level=3] [ref=e185]
+              - generic [ref=e190]:
+                - generic [ref=e192]: 知乎
+                - generic [ref=e194]: https://www.zhihu.com › question › answer
+            - button "关于这条结果的详细信息" [ref=e195] [cursor=pointer]:
+              - img [ref=e198]
+          - generic [ref=e202]:
+            - text: 首先，免了四年学费，在过渡校区第一年水电费也不用钱。夏天开空调就很爽，不用钱。 第二，
+            - emphasis [ref=e203]: 汕头大学
+            - text: 拥有亚洲最美图书 ...
+        - generic [ref=e207]:
+          - generic [ref=e210]:
+            - link "在汕头大学就读是一种怎样的体验？ 知乎 https://www.zhihu.com › question › answer" [ref=e212] [cursor=pointer]:
+              - /url: https://www.zhihu.com/question/24431948/answer/74458592
+              - heading "在汕头大学就读是一种怎样的体验？" [level=3] [ref=e213]
+              - generic [ref=e218]:
+                - generic [ref=e220]: 知乎
+                - generic [ref=e222]: https://www.zhihu.com › question › answer
+            - button "关于这条结果的详细信息" [ref=e223] [cursor=pointer]:
+              - img [ref=e226]
+          - generic [ref=e229]:
+            - generic [ref=e230]: 2014年7月9日 —
+            - generic [ref=e231]:
+              - text: 在
+              - emphasis [ref=e232]: 汕头大学就读是一种
+              - text: 怎样的
+              - emphasis [ref=e233]: 体验
+              - text: ？ ... 毕竟是将来要生活四年的学校，环境的好坏直接影响了生活品质。 这张照片是我国庆假期结束后在回
+              - emphasis [ref=e234]: 宿舍
+              - text: （旧
+              - emphasis [ref=e235]: 宿舍
+              - text: ...
+          - generic [ref=e237]:
+            - text: 缺少字词： 食堂 ‎| 必须包含：
+            - link "食堂" [ref=e238] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%22%E9%A3%9F%E5%A0%82%22+%E7%9F%A5%E4%B9%8E&sa=X&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ5t4CegQILhAB
+        - generic [ref=e242]:
+          - generic [ref=e245]:
+            - link "在汕头一中就读是种怎样的体验？ 知乎 https://www.zhihu.com › question" [ref=e247] [cursor=pointer]:
+              - /url: https://www.zhihu.com/question/36424655
+              - heading "在汕头一中就读是种怎样的体验？" [level=3] [ref=e248]
+              - generic [ref=e253]:
+                - generic [ref=e255]: 知乎
+                - generic [ref=e257]: https://www.zhihu.com › question
+            - button "关于这条结果的详细信息" [ref=e258] [cursor=pointer]:
+              - img [ref=e261]
+          - generic [ref=e264]:
+            - generic [ref=e265]: 2015年10月12日 —
+            - generic [ref=e266]:
+              - text: 第一时间冲去
+              - emphasis [ref=e267]: 食堂
+              - text: 也是
+              - emphasis [ref=e268]: 一种
+              - text: 奇妙的
+              - emphasis [ref=e269]: 体验
+              - text: 哈哈哈. 附上感觉高大上的
+              - emphasis [ref=e270]: 食堂
+              - text: 三层总共六个.
+              - emphasis [ref=e271]: 食堂
+              - text: 真心好吃好吃好吃重要的事情说三遍. 吃过新一的
+              - emphasis [ref=e272]: 食堂
+              - text: 再上
+              - emphasis [ref=e273]: 大学
+              - text: . 真的 ...
+          - generic [ref=e278]:
+            - link "153 个回答" [ref=e279] [cursor=pointer]:
+              - /url: https://www.zhihu.com/question/36424655/answer/86421410
+            - generic [ref=e280]: ·
+            - generic [ref=e281]: "最佳答案:"
+            - generic [ref=e282]: 第一次回答 献给我永远的汕头一中 永远的新一。 答主是一中新校区的 ...
+        - generic [ref=e286]:
+          - generic [ref=e289]:
+            - link "在汕头大学就读是一种怎样的体验？ 知乎 https://www.zhihu.com › question" [ref=e291] [cursor=pointer]:
+              - /url: https://www.zhihu.com/question/24431948
+              - heading "在汕头大学就读是一种怎样的体验？" [level=3] [ref=e292]
+              - generic [ref=e297]:
+                - generic [ref=e299]: 知乎
+                - generic [ref=e301]: https://www.zhihu.com › question
+            - button "关于这条结果的详细信息" [ref=e302] [cursor=pointer]:
+              - img [ref=e305]
+          - generic [ref=e308]:
+            - generic [ref=e309]: 2014年7月9日 —
+            - generic [ref=e310]:
+              - text: 在
+              - emphasis [ref=e311]: 汕头大学就读是一种
+              - text: 怎样的
+              - emphasis [ref=e312]: 体验
+              - text: ？ ... 毕竟是将来要生活四年的学校，环境的好坏直接影响了生活品质。 这张照片是我国庆假期结束后在回
+              - emphasis [ref=e313]: 宿舍
+              - text: （旧
+              - emphasis [ref=e314]: 宿舍
+              - text: ...
+          - generic [ref=e319]:
+            - link "133 个回答" [ref=e320] [cursor=pointer]:
+              - /url: https://www.zhihu.com/question/24431948/answer/1962386705
+            - generic [ref=e321]: ·
+            - generic [ref=e322]: "最佳答案:"
+            - generic [ref=e323]: 2021年7月4日更新一下 没想到帖子会高赞第一，几年前都没能掀起波浪的事 ...
+          - generic [ref=e325]:
+            - text: 缺少字词： 食堂 ‎| 必须包含：
+            - link "食堂" [ref=e326] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%22%E9%A3%9F%E5%A0%82%22+%E7%9F%A5%E4%B9%8E&sa=X&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ5t4CegQIMBAB
+        - generic [ref=e330]:
+          - generic [ref=e333]:
+            - link "在汕头大学就读是一种怎样的体验？ - 蚁锻意的回答 知乎 https://www.zhihu.com › question › answer" [ref=e335] [cursor=pointer]:
+              - /url: https://www.zhihu.com/question/24431948/answer/484164200
+              - heading "在汕头大学就读是一种怎样的体验？ - 蚁锻意的回答" [level=3] [ref=e336]
+              - generic [ref=e341]:
+                - generic [ref=e343]: 知乎
+                - generic [ref=e345]: https://www.zhihu.com › question › answer
+            - button "关于这条结果的详细信息" [ref=e346] [cursor=pointer]:
+              - img [ref=e349]
+          - generic [ref=e352]:
+            - generic [ref=e353]: 2014年7月9日 —
+            - text: 汕大学生，已经毕业一年了。突然翻到去年写的毕业心得总结，希望能让想去汕大读书，想要了解汕大，热爱汕大的人更加了解汕大，了解一个普通汕大同学四年的 ...
+          - generic [ref=e355]: 缺少字词： 宿舍 ‎食堂
+        - generic [ref=e359]:
+          - generic [ref=e362]:
+            - link "在汕头大学就读是一种怎样的体验？ - 罗培羽的回答 知乎 https://www.zhihu.com › question › answer" [ref=e364] [cursor=pointer]:
+              - /url: https://www.zhihu.com/question/24431948/answer/27962246
+              - heading "在汕头大学就读是一种怎样的体验？ - 罗培羽的回答" [level=3] [ref=e365]
+              - generic [ref=e370]:
+                - generic [ref=e372]: 知乎
+                - generic [ref=e374]: https://www.zhihu.com › question › answer
+            - button "关于这条结果的详细信息" [ref=e375] [cursor=pointer]:
+              - img [ref=e378]
+          - generic [ref=e381]:
+            - generic [ref=e382]: 2014年7月9日 —
+            - generic [ref=e383]:
+              - text: 有固定的场所对社团的发展绝对
+              - emphasis [ref=e384]: 是一
+              - text: 件大事，以前颠沛流离的，做事情只能是分配任务然后大家自己回
+              - emphasis [ref=e385]: 宿舍
+              - text: 去做，沟通交流自然很少。现在可以定时到实验室里 ...
+          - generic [ref=e387]:
+            - text: 缺少字词： 食堂 ‎| 必须包含：
+            - link "食堂" [ref=e388] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%22%E9%A3%9F%E5%A0%82%22+%E7%9F%A5%E4%B9%8E&sa=X&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ5t4CegQISRAB
+        - generic [ref=e392]:
+          - generic [ref=e395]:
+            - link "在汕头大学就读是一种怎样的体验？ - 幕后煮屎者的回答 知乎 https://www.zhihu.com › question › answer" [ref=e397] [cursor=pointer]:
+              - /url: https://www.zhihu.com/question/24431948/answer/1962386705
+              - heading "在汕头大学就读是一种怎样的体验？ - 幕后煮屎者的回答" [level=3] [ref=e398]
+              - generic [ref=e403]:
+                - generic [ref=e405]: 知乎
+                - generic [ref=e407]: https://www.zhihu.com › question › answer
+            - button "关于这条结果的详细信息" [ref=e408] [cursor=pointer]:
+              - img [ref=e411]
+          - generic [ref=e414]:
+            - generic [ref=e415]: 2014年7月9日 —
+            - generic [ref=e416]:
+              - text: 19年在汕大至诚书院，李毓同学在
+              - emphasis [ref=e417]: 宿舍
+              - text: 偷窃我女朋友三年生活物品事件被发现。 原因是我女朋友打扫卫生的时候发现李毓同学对柜子忘记关了，她发现柜子里有很多 ...
+          - generic [ref=e419]:
+            - text: 缺少字词： 食堂 ‎| 必须包含：
+            - link "食堂" [ref=e420] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%22%E9%A3%9F%E5%A0%82%22+%E7%9F%A5%E4%B9%8E&sa=X&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ5t4CegQIRhAB
+        - generic [ref=e425]:
+          - heading "相关问题" [level=2] [ref=e427]
+          - generic [ref=e428]:
+            - button "汕头大学为什么不是211？" [ref=e434] [cursor=pointer]:
+              - generic [ref=e436]: 汕头大学为什么不是211？
+              - img [ref=e439]
+            - button "汕头大学是重点大学吗？" [ref=e448] [cursor=pointer]:
+              - generic [ref=e450]: 汕头大学是重点大学吗？
+              - img [ref=e453]
+            - button "汕头大学教师待遇？" [ref=e462] [cursor=pointer]:
+              - generic [ref=e464]: 汕头大学教师待遇？
+              - img [ref=e467]
+        - generic [ref=e472]:
+          - heading "网页搜索结果" [level=2] [ref=e473]
+          - generic [ref=e474]:
+            - generic [ref=e477]:
+              - link "在汕头潮阳一中就读是一种怎样的体验？ 知乎 https://www.zhihu.com › question" [ref=e479] [cursor=pointer]:
+                - /url: https://www.zhihu.com/question/36426609
+                - heading "在汕头潮阳一中就读是一种怎样的体验？" [level=3] [ref=e480]
+                - generic [ref=e485]:
+                  - generic [ref=e487]: 知乎
+                  - generic [ref=e489]: https://www.zhihu.com › question
+              - button "关于这条结果的详细信息" [ref=e490] [cursor=pointer]:
+                - img [ref=e493]
+            - generic [ref=e496]:
+              - generic [ref=e497]: 2015年10月12日 —
+              - generic [ref=e498]:
+                - text: 学校的
+                - emphasis [ref=e499]: 食堂
+                - text: 小卖部是捆绑承包的，所以第一
+                - emphasis [ref=e500]: 食堂
+                - text: 和第一小卖部是同一个老板。一楼
+                - emphasis [ref=e501]: 食堂
+                - text: 清淡二楼
+                - emphasis [ref=e502]: 食堂
+                - text: 咸香所以三年时间我成了第一
+                - emphasis [ref=e503]: 食堂
+                - text: 的常客顺带也成了第一小卖部 ...
+            - generic [ref=e508]:
+              - link "54 个回答" [ref=e509] [cursor=pointer]:
+                - /url: https://www.zhihu.com/question/36426609/answer/68084158
+              - generic [ref=e510]: ·
+              - generic [ref=e511]: "最佳答案:"
+              - generic [ref=e512]: 在朋友圈看到几条在xx就读是怎样的体验，于是也来知乎搜索搜索“在潮阳 ...
+        - generic [ref=e516]:
+          - generic [ref=e519]:
+            - link "在汕头大学就读是一种怎样的体验？ - 吾庸的回答 知乎 https://www.zhihu.com › question › answer" [ref=e521] [cursor=pointer]:
+              - /url: https://www.zhihu.com/question/24431948/answer/1954881884782834074
+              - heading "在汕头大学就读是一种怎样的体验？ - 吾庸的回答" [level=3] [ref=e522]
+              - generic [ref=e527]:
+                - generic [ref=e529]: 知乎
+                - generic [ref=e531]: https://www.zhihu.com › question › answer
+            - button "关于这条结果的详细信息" [ref=e532] [cursor=pointer]:
+              - img [ref=e535]
+          - generic [ref=e538]:
+            - generic [ref=e539]: 2014年7月9日 —
+            - generic [ref=e540]:
+              - text: 在
+              - emphasis [ref=e541]: 汕头大学就读是一种
+              - text: 怎样的
+              - emphasis [ref=e542]: 体验
+              - text: ？ 点击查看问题描述. 关注问题 写回答. 邀请回答. 好问题49. 5. .
+              - emphasis [ref=e543]: 知乎
+              - text: · 133 个回答· 940 关注.
+          - generic [ref=e545]: 缺少字词： 宿舍 ‎食堂
+      - navigation [ref=e548]:
+        - heading "网页导航" [level=1] [ref=e549]
+        - text: "1"
+        - link "Page 2" [ref=e552] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&ei=0XDuaavSGNjm1e8P9_ftoQ0&start=10&sa=N&sstk=Af77f_co3G0crggYS1_mOVHBP330WOL9zlAHY33AIZTaLPyq5r-eEJS2TdE_kwWhbg5TgBx2ySanS3At9NzXrWlOJ0oxNGbM4Lf22Q&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ8tMDegQIMRAE
+          - text: "2"
+        - link "Page 3" [ref=e554] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&ei=0XDuaavSGNjm1e8P9_ftoQ0&start=20&sa=N&sstk=Af77f_co3G0crggYS1_mOVHBP330WOL9zlAHY33AIZTaLPyq5r-eEJS2TdE_kwWhbg5TgBx2ySanS3At9NzXrWlOJ0oxNGbM4Lf22Q&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ8tMDegQIMRAG
+          - text: "3"
+        - link "Page 4" [ref=e556] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&ei=0XDuaavSGNjm1e8P9_ftoQ0&start=30&sa=N&sstk=Af77f_co3G0crggYS1_mOVHBP330WOL9zlAHY33AIZTaLPyq5r-eEJS2TdE_kwWhbg5TgBx2ySanS3At9NzXrWlOJ0oxNGbM4Lf22Q&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ8tMDegQIMRAI
+          - text: "4"
+        - link "Page 5" [ref=e558] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&ei=0XDuaavSGNjm1e8P9_ftoQ0&start=40&sa=N&sstk=Af77f_co3G0crggYS1_mOVHBP330WOL9zlAHY33AIZTaLPyq5r-eEJS2TdE_kwWhbg5TgBx2ySanS3At9NzXrWlOJ0oxNGbM4Lf22Q&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ8tMDegQIMRAK
+          - text: "5"
+        - link "Page 6" [ref=e560] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&ei=0XDuaavSGNjm1e8P9_ftoQ0&start=50&sa=N&sstk=Af77f_co3G0crggYS1_mOVHBP330WOL9zlAHY33AIZTaLPyq5r-eEJS2TdE_kwWhbg5TgBx2ySanS3At9NzXrWlOJ0oxNGbM4Lf22Q&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ8tMDegQIMRAM
+          - text: "6"
+        - link "Page 7" [ref=e562] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&ei=0XDuaavSGNjm1e8P9_ftoQ0&start=60&sa=N&sstk=Af77f_co3G0crggYS1_mOVHBP330WOL9zlAHY33AIZTaLPyq5r-eEJS2TdE_kwWhbg5TgBx2ySanS3At9NzXrWlOJ0oxNGbM4Lf22Q&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ8tMDegQIMRAO
+          - text: "7"
+        - link "Page 8" [ref=e564] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&ei=0XDuaavSGNjm1e8P9_ftoQ0&start=70&sa=N&sstk=Af77f_co3G0crggYS1_mOVHBP330WOL9zlAHY33AIZTaLPyq5r-eEJS2TdE_kwWhbg5TgBx2ySanS3At9NzXrWlOJ0oxNGbM4Lf22Q&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ8tMDegQIMRAQ
+          - text: "8"
+        - link "Page 9" [ref=e566] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&ei=0XDuaavSGNjm1e8P9_ftoQ0&start=80&sa=N&sstk=Af77f_co3G0crggYS1_mOVHBP330WOL9zlAHY33AIZTaLPyq5r-eEJS2TdE_kwWhbg5TgBx2ySanS3At9NzXrWlOJ0oxNGbM4Lf22Q&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ8tMDegQIMRAS
+          - text: "9"
+        - link "Page 10" [ref=e568] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&ei=0XDuaavSGNjm1e8P9_ftoQ0&start=90&sa=N&sstk=Af77f_co3G0crggYS1_mOVHBP330WOL9zlAHY33AIZTaLPyq5r-eEJS2TdE_kwWhbg5TgBx2ySanS3At9NzXrWlOJ0oxNGbM4Lf22Q&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ8tMDegQIMRAU
+          - text: "10"
+        - heading "下一页" [level=2] [ref=e570]:
+          - link "下一页" [ref=e571] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E5%9C%A8%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E6%98%AF%E6%80%8E%E6%A0%B7%E4%B8%80%E7%A7%8D%E4%BD%93%E9%AA%8C+%E5%AE%BF%E8%88%8D+%E9%A3%9F%E5%A0%82+%E7%9F%A5%E4%B9%8E&sca_esv=164079556523993e&ei=0XDuaavSGNjm1e8P9_ftoQ0&start=10&sa=N&sstk=Af77f_co3G0crggYS1_mOVHBP330WOL9zlAHY33AIZTaLPyq5r-eEJS2TdE_kwWhbg5TgBx2ySanS3At9NzXrWlOJ0oxNGbM4Lf22Q&ved=2ahUKEwjr_tyHqYyUAxVYc_UHHfd7O9QQ8NMDegQIMRAW
+            - generic [ref=e573]: 下一页
+      - navigation
+    - contentinfo [ref=e574]:
+      - heading "页脚链接" [level=1] [ref=e575]
+      - generic [ref=e579]:
+        - generic [ref=e583]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e585] [cursor=pointer]:
+            - generic [ref=e586]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e588]:
+              - text: "-"
+              - generic [ref=e589]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e591] [cursor=pointer]: 更新位置信息
+        - generic [ref=e594]:
+          - link "帮助" [ref=e595] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e596] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e597] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e598] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

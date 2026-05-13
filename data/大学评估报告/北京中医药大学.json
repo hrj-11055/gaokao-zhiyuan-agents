@@ -1,0 +1,41 @@
+{
+  "university": {
+    "name": "北京中医药大学",
+    "abbreviation": "BUCM",
+    "location": "北京",
+    "tags": [
+      "211",
+      "双一流",
+      "教育部直属"
+    ],
+    "rankings": {
+      "shanghai_ranking_tcm": 1,
+      "comprehensive_score": 4.62
+    },
+    "academic_assets": {
+      "a_plus_disciplines": [
+        "中医学",
+        "中药学"
+      ],
+      "a_minus_disciplines": [
+        "中西医结合"
+      ],
+      "national_key_labs": 1,
+      "academician_count": 4
+    },
+    "admission": {
+      "avg_percentile_beijing": "Top 2%",
+      "avg_percentile_henan": "Top 0.5%",
+      "key_program": "岐黄学院九年一贯制"
+    },
+    "career_outcomes": {
+      "further_study_rate": "48.29%",
+      "major_employers": [
+        "三甲医院",
+        "大型药企",
+        "科研院所"
+      ],
+      "starting_salary_est": 8000
+    }
+  }
+}

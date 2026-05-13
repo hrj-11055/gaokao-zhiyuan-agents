@@ -1,0 +1,43 @@
+{
+  "university_name": "山东理工大学",
+  "short_name": "SDUT",
+  "location": {
+    "province": "山东省",
+    "city": "淄博市",
+    "city_gdp_2024": "4884.08亿元"
+  },
+  "academic_standing": {
+    "soft_science_rank_2025": 194,
+    "key_disciplines": [
+      "农业工程",
+      "机械工程",
+      "电气工程"
+    ],
+    "b_plus_subjects": [
+      "农业工程"
+    ],
+    "national_talents_count": 17
+  },
+  "employment_stats": {
+    "further_study_rate": "27.5%",
+    "average_starting_salary": 6594,
+    "top_employers": [
+      "国家电网",
+      "潍柴动力",
+      "海尔集团"
+    ]
+  },
+  "admission_difficulty": {
+    "shandong_rank_required": "10万-20万位次",
+    "overall_difficulty_level": "Medium"
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.2,
+    "graduate_value": 3.3,
+    "location_advantage": 3.5,
+    "globalization": 2.8,
+    "student_empowerment": 3.4,
+    "brand_asset": 3.1,
+    "weighted_total_score": 3.24
+  }
+}

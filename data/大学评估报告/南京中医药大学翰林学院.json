@@ -1,0 +1,45 @@
+{
+  "university_name": "南京中医药大学翰林学院",
+  "short_name": "南中医翰林",
+  "status": {
+    "is_recruiting": false,
+    "last_recruitment_year": 2020,
+    "current_phase": "Winding down / Transitioning"
+  },
+  "academic": {
+    "parent_university": "Nanjing University of Chinese Medicine",
+    "top_disciplines": [
+      "Traditional Chinese Medicine",
+      "Pharmacy",
+      "Nursing"
+    ],
+    "a_plus_count": 0,
+    "note": "Academic resources are shared with the parent university."
+  },
+  "employment": {
+    "overall_employment_rate": "75.2%",
+    "further_study_rate": "12.5%",
+    "primary_industry": "Pharmaceutical Manufacturing",
+    "top_employer_region": "Taizhou China Medical City"
+  },
+  "location": {
+    "city": "Taizhou",
+    "province": "Jiangsu",
+    "industrial_cluster": "China Medical City (CMC)"
+  },
+  "scores": {
+    "academic_capital": 2.2,
+    "graduate_value": 2.4,
+    "location_advantage": 3.8,
+    "globalization": 2.0,
+    "student_empowerment": 2.1,
+    "brand_asset": 2.3,
+    "weighted_total": 2.49
+  },
+  "risk_factors": [
+    "Discontinuation of recruitment",
+    "Administrative shrinking",
+    "Brand dilution",
+    "Uncertainty of future alumni services"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "university_name": "外交学院",
+  "short_name": "CFAU",
+  "tags": [
+    "双一流",
+    "部属高校",
+    "外交官摇篮",
+    "小而精"
+  ],
+  "academic": {
+    "a_plus_count": 1,
+    "a_minus_count": 1,
+    "key_disciplines": [
+      "外交学",
+      "国际关系",
+      "英语语言文学"
+    ],
+    "academician_count": 0,
+    "ambassador_professors": 30
+  },
+  "admission": {
+    "avg_percentile": "Top 1.5%",
+    "difficulty_level": "Extreme",
+    "early_batch_dominance": true
+  },
+  "employment": {
+    "mfa_recruitment_rank": 1,
+    "starting_salary_median": 11500,
+    "further_study_rate_total": "63.7%",
+    "top_employers": [
+      "外交部",
+      "商务部",
+      "新华社",
+      "华为"
+    ]
+  },
+  "campus": {
+    "main_campuses": [
+      "展览路校区",
+      "沙河校区"
+    ],
+    "student_count": "约 2000-3000人",
+    "transfer_success_rate": "<1%"
+  },
+  "scores": {
+    "academic_capital": 4.2,
+    "career_value": 4.8,
+    "location_advantage": 4.9,
+    "globalization": 4.7,
+    "student_freedom": 3.2,
+    "brand_asset": 4.5,
+    "comprehensive_score": 4.52
+  }
+}

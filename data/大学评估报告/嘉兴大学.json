@@ -1,0 +1,49 @@
+{
+  "university_name": "嘉兴大学",
+  "short_name": "嘉大 / JXU",
+  "location": {
+    "province": "浙江省",
+    "city": "嘉兴市",
+    "district": "南湖区",
+    "economic_zone": "长三角一体化核心区"
+  },
+  "academic_standing": {
+    "type": "省属重点建设应用型大学",
+    "esi_top_1_percent": [
+      "Clinical Medicine",
+      "Engineering",
+      "Materials Science"
+    ],
+    "key_disciplines": [
+      "Economics",
+      "Management",
+      "Textile Engineering"
+    ],
+    "academician_count": 10
+  },
+  "admission_stats": {
+    "zhejiang_rank_avg": 45000,
+    "competitiveness_index": "High (Rising)",
+    "special_programs": [
+      "Three-in-One Evaluation"
+    ]
+  },
+  "career_outcomes": {
+    "employment_rate": "97.2%",
+    "avg_starting_salary": 5800,
+    "top_employment_region": "Yangtze River Delta",
+    "further_study_rate": "26.3%"
+  },
+  "campus_life": {
+    "main_campus": "Lianglin Campus",
+    "dormitory_standard": "4-person room with AC",
+    "cultural_identity": "Red Boat Spirit"
+  },
+  "evaluation_scores": {
+    "academic": 3.5,
+    "employment": 3.8,
+    "location": 4.5,
+    "brand": 3.8,
+    "overall": 3.745
+  }
+}

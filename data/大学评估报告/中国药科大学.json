@@ -1,0 +1,32 @@
+{
+  "university_name": "中国药科大学",
+  "abbreviation": "CPU",
+  "location": "南京",
+  "academic_level": {
+    "double_first_class": true,
+    "211_project": true,
+    "key_disciplines": [
+      "药学",
+      "中药学"
+    ]
+  },
+  "key_metrics": {
+    "a_plus_disciplines": 1,
+    "esi_top_1_permille": [
+      "药理学与毒理学"
+    ],
+    "undergraduate_further_study_rate": "59.2%",
+    "employment_rate": "95%+"
+  },
+  "industry_influence": {
+    "alumni_in_top_pharma": "High",
+    "research_conversion": "Strong",
+    "reputation": "Pharmacy Whampoa"
+  },
+  "risk_factors": [
+    "Single discipline focus",
+    "High academic pressure",
+    "International compliance challenges"
+  ],
+  "overall_score": 4.56
+}

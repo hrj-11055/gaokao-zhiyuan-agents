@@ -1,0 +1,38 @@
+{
+  "university_name": "北京农学院",
+  "short_name": "BUA / 北农",
+  "location": {
+    "city": "北京",
+    "district": "昌平区",
+    "position_advantage": "紧邻中关村生命科学园"
+  },
+  "academic_level": {
+    "key_disciplines": [
+      "园艺学",
+      "畜牧学",
+      "兽医学"
+    ],
+    "evaluation_tags": [
+      "都市型现代农业特色",
+      "应用型本科"
+    ]
+  },
+  "student_quality": {
+    "beijing_rank_avg": 40000,
+    "outside_province_premium": "High"
+  },
+  "employment_stats": {
+    "overall_rate": ">90%",
+    "top_sectors": [
+      "Agriculture",
+      "Public Service",
+      "Food Science"
+    ],
+    "salary_median": 6500
+  },
+  "campus_life": {
+    "dorm_rating": "Excellent (Air-conditioned)",
+    "food_rating": "High (Self-supplied ingredients)"
+  },
+  "comprehensive_score": 3.27
+}

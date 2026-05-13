@@ -1,0 +1,45 @@
+{
+  "university_name": "安阳工学院",
+  "short_name": "安工 / AYIT",
+  "location": {
+    "province": "河南省",
+    "city": "安阳市",
+    "city_level": "三线城市",
+    "gdp_context": "2486.1亿元 (2023)"
+  },
+  "academic_standing": {
+    "rank_ruanke": 487,
+    "key_disciplines_provincial": 5,
+    "master_points": "重点建设单位",
+    "featured_fields": [
+      "航空航天",
+      "机械工程",
+      "精准农业"
+    ]
+  },
+  "student_source": {
+    "henan_admission_rank_liberal_arts": 58200,
+    "henan_admission_rank_science": 235000,
+    "competition_level": "中等"
+  },
+  "employment_outcomes": {
+    "employment_rate": "79.73%",
+    "further_study_rate": "12.25%",
+    "avg_starting_salary": 5600,
+    "top_employers": [
+      "中国南方航空",
+      "中国东方航空",
+      "富士康",
+      "安阳钢铁"
+    ]
+  },
+  "campus_life": {
+    "dormitory_quality": "中等偏上 (空调全覆盖)",
+    "management_style": "务实/部分半军事化",
+    "transfer_success_rate": "53%"
+  },
+  "strategic_fit": {
+    "low_altitude_economy": "高度契合",
+    "manufacturing_upgrade": "深度融合"
+  }
+}

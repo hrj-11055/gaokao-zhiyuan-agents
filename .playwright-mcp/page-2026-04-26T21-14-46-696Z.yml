@@ -1,0 +1,101 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: site:dxjyw.com 暨南大学 2024 录取分数线 全国
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=site%3Adxjyw.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%85%A8%E5%9B%BD&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2210626470799466107256%22%2C%22ori_lid%22%3A%2210626470799466107256%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=9378cee4023d1178&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=site%3Adxjyw.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%85%A8%E5%9B%BD
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=site%3Adxjyw.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%85%A8%E5%9B%BD
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=9378cee4023d1178&ie=utf-8&wd=site%3Adxjyw.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%85%A8%E5%9B%BD&rsv_spt=7&rsv_bp=1&f=8&oq=site%3Adxjyw.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%85%A8%E5%9B%BD&rsv_pq=9378cee4023d1178&rsv_t=887ccpUhKUV5JUgS4%2FNaBoDmfBVJgwh%2FR0e%2FjmAEo9SDc67FEIP4C1maKJc
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=site%3Adxjyw.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%85%A8%E5%9B%BD
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3Dsite%3Adxjyw.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%85%A8%E5%9B%BD
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=site%3Adxjyw.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%85%A8%E5%9B%BD
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=site%3Adxjyw.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%85%A8%E5%9B%BD
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e71] [cursor=pointer]: 清除
+            - generic [ref=e74] [cursor=pointer]: 时间不限
+            - generic [ref=e76] [cursor=pointer]: 所有网页和文件
+            - generic [ref=e78] [cursor=pointer]: dxjyw.com
+          - generic [ref=e80]: 百度为您找到以下结果
+        - table [ref=e82]:
+          - rowgroup [ref=e83]:
+            - row "深度合作 百度信誉V 开放平台 官网认证 百度开放 计划，让搜索引擎发现您的价值" [ref=e84]:
+              - cell "深度合作 百度信誉V 开放平台 官网认证 百度开放 计划，让搜索引擎发现您的价值" [ref=e85]:
+                - generic [ref=e88]:
+                  - paragraph [ref=e89]: 深度合作
+                  - generic [ref=e90]:
+                    - list [ref=e91]:
+                      - listitem [ref=e92]: 百度信誉V
+                      - listitem [ref=e93] [cursor=pointer]: 开放平台
+                      - listitem [ref=e94] [cursor=pointer]
+                      - listitem [ref=e95] [cursor=pointer]: 官网认证
+                    - generic [ref=e96]:
+                      - paragraph [ref=e97]:
+                        - text: 百度开放
+                        - text: 计划，让搜索引擎发现您的价值
+                      - paragraph [ref=e99]:
+                        - link [ref=e100] [cursor=pointer]:
+                          - /url: http://www.baidu.com/link?url=FkOtvKIf7dbAdKZtAsMNQtX83mhZyTpn3gHrau7dzne
+                          - img [ref=e101]
+        - generic [ref=e103]:
+          - paragraph [ref=e104]: 抱歉，未找到相关结果。
+          - generic [ref=e105]: 温馨提示：
+          - list [ref=e106]:
+            - listitem [ref=e107]: 请检查您的输入是否正确
+            - listitem [ref=e108]:
+              - text: 如网页未收录或者新站未收录，请
+              - link "提交网址" [ref=e109] [cursor=pointer]:
+                - /url: http://zhanzhang.baidu.com/sitesubmit/index?sitename=http%3A%2F%2Fsite%3Adxjyw.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202024%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%85%A8%E5%9B%BD
+              - text: 给我们
+            - listitem [ref=e110]:
+              - text: 如有任何意见或建议，请及时
+              - link "反馈给我们" [ref=e111] [cursor=pointer]:
+                - /url: http://help.baidu.com/newadd?prod_id=1&category=4
+      - generic [ref=e113]:
+        - link "帮助" [ref=e114] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e115] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e116] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e117] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

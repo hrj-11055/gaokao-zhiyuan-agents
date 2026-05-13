@@ -1,0 +1,45 @@
+{
+  "university_name": "湖南工业大学科技学院",
+  "short_name": "工大科院",
+  "location": {
+    "province": "湖南省",
+    "city": "株洲市",
+    "economic_zone": "长株潭都市圈"
+  },
+  "academic_profile": {
+    "parent_university": "湖南工业大学",
+    "core_specialty": [
+      "包装工程",
+      "艺术设计",
+      "机械制造"
+    ],
+    "national_platforms_shared": 2
+  },
+  "admission_stats": {
+    "avg_score_hunan_physics": 450,
+    "avg_score_hunan_history": 465,
+    "competitiveness_index": "Medium"
+  },
+  "employment_stats": {
+    "employment_rate": "90%+",
+    "major_industry": "Manufacturing & Packaging",
+    "starting_salary_median": 4800,
+    "top_employers": [
+      "BYD",
+      "Lens Technology",
+      "O瑞金"
+    ]
+  },
+  "evaluation_scores": {
+    "academic": 2.6,
+    "employment": 3.0,
+    "location": 3.5,
+    "globalization": 1.5,
+    "brand": 3.2,
+    "comprehensive": 2.82
+  },
+  "risk_factors": [
+    "Transfer uncertainty",
+    "Limited research funding"
+  ]
+}

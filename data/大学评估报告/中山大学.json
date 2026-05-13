@@ -1,0 +1,53 @@
+{
+  "university_name": "中山大学",
+  "abbreviation": "SYSU",
+  "established_year": 1924,
+  "location": {
+    "cities": [
+      "广州",
+      "深圳",
+      "珠海"
+    ],
+    "campuses": [
+      "南校园",
+      "北校园",
+      "东校园",
+      "深圳校区",
+      "珠海校区"
+    ]
+  },
+  "academic_standing": {
+    "soft_science_rank": 12,
+    "a_plus_disciplines": [
+      "工商管理",
+      "生态学"
+    ],
+    "a_disciplines_count": 14,
+    "academician_count": 22
+  },
+  "admission_competitiveness": {
+    "guangdong_physics_rank_min": 9420,
+    "guangdong_history_rank_min": 1439,
+    "zongping_admission_scale": "1000+"
+  },
+  "employment_and_further_study": {
+    "overall_further_study_rate": "75%",
+    "domestic_study_top_destinations": [
+      "中山大学",
+      "清华大学",
+      "北京大学"
+    ],
+    "average_starting_salary": 12902,
+    "top_employers": [
+      "华为",
+      "腾讯",
+      "招商银行",
+      "中山医系统"
+    ]
+  },
+  "policy_features": {
+    "major_transfer": "Zero threshold (No GPA requirement)",
+    "campus_model": "Three cities, Five campuses"
+  },
+  "comprehensive_score": 4.72
+}

@@ -1,0 +1,51 @@
+{
+  "university_name": "上海商学院",
+  "short_name": "SBS",
+  "location": {
+    "city": "上海",
+    "districts": [
+      "奉贤区",
+      "徐汇区"
+    ],
+    "city_gdp_2024": "4.72万亿元"
+  },
+  "academic_profile": {
+    "key_disciplines": [
+      "工商管理",
+      "应用经济学",
+      "酒店管理"
+    ],
+    "national_platforms": 2,
+    "academician_count": 1
+  },
+  "admission_stats": {
+    "shanghai_rank_avg": 28500,
+    "out_of_province_premium": "High",
+    "selectivity_score": 3.5
+  },
+  "employment_profile": {
+    "overall_employment_rate": ">95%",
+    "further_study_rate": "10.95%",
+    "top_industries": [
+      "Retail",
+      "Finance",
+      "Hospitality"
+    ],
+    "starting_salary_median": 7200
+  },
+  "evaluation_scores": {
+    "academic": 2.2,
+    "employment": 3.5,
+    "location": 4.5,
+    "globalization": 3.8,
+    "freedom": 3.2,
+    "brand": 3.0,
+    "weighted_total": 3.23
+  },
+  "tags": [
+    "务实",
+    "就业强",
+    "上海优势",
+    "零售特色"
+  ]
+}

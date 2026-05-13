@@ -1,0 +1,45 @@
+{
+  "university_name": "湘南学院",
+  "short_name": "XNU",
+  "location": {
+    "province": "湖南省",
+    "city": "郴州市",
+    "campus": [
+      "王仙校区",
+      "北湖校区"
+    ]
+  },
+  "academic_standing": {
+    "type": "公办全日制综合性本科",
+    "key_disciplines": [
+      "临床医学",
+      "药学",
+      "应用化学"
+    ],
+    "master_degree_granting_status": "立项建设单位"
+  },
+  "student_profile": {
+    "admission_difficulty": "中等（医学类极高）",
+    "kaoyan_rate": "16.8%",
+    "employment_rate": "91.2%"
+  },
+  "industry_alignment": {
+    "primary_industry": "医疗卫生",
+    "secondary_industry": "有色金属/新材料",
+    "geographic_advantage": "对接粤港澳大湾区"
+  },
+  "campus_vibe": {
+    "management_style": "严格/高中化",
+    "student_culture": "务实/考研导向",
+    "signature_food": "郴州鱼粉"
+  },
+  "scores": {
+    "academic_capital": 2.4,
+    "graduate_value": 2.6,
+    "location_potential": 2.8,
+    "globalization": 2.1,
+    "student_empowerment": 2.5,
+    "brand_asset": 2.7,
+    "comprehensive_weighted_score": 2.53
+  }
+}

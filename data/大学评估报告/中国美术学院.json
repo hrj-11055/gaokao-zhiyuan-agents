@@ -1,0 +1,63 @@
+{
+  "university_info": {
+    "name": "中国美术学院",
+    "abbreviation": "CAA",
+    "location": [
+      "杭州南山",
+      "杭州象山",
+      "杭州良渚",
+      "上海张江"
+    ],
+    "status": "双一流建设高校"
+  },
+  "academic_strength": {
+    "a_plus_subjects": [
+      "美术学",
+      "设计学"
+    ],
+    "a_minus_subjects": [
+      "艺术学理论"
+    ],
+    "key_platforms": [
+      "国家大学科技园",
+      "文旅部重点实验室"
+    ],
+    "faculty_highlights": {
+      "senior_professors": 9,
+      "pritzker_prize_winners": 1
+    }
+  },
+  "admission_data": {
+    "average_acceptance_rate": "约 2.8%",
+    "culture_score_requirement": "省一段线 75% 以上",
+    "top_source_provinces": [
+      "浙江",
+      "山东",
+      "广东",
+      "江苏"
+    ]
+  },
+  "career_outcomes": {
+    "employment_rate": "约 90%",
+    "median_starting_salary": 10200,
+    "top_employers": [
+      "Alibaba",
+      "NetEase",
+      "Tencent",
+      "ByteDance"
+    ],
+    "further_study_rate": {
+      "domestic": "18.5%",
+      "overseas": "12.4%"
+    }
+  },
+  "brand_valuation": {
+    "soft_ranking_art": 2,
+    "social_media_influence": "极高",
+    "signature_event": "之江国际青年艺术周"
+  },
+  "risk_assessment": {
+    "academic_integrity_risk": "中低（已有处理机制）",
+    "admission_competition_risk": "极高"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "university_name": "上海大学",
+  "short_name": "SHU",
+  "location": {
+    "city": "上海",
+    "campuses": [
+      "宝山",
+      "延长",
+      "嘉定"
+    ]
+  },
+  "academic_stats": {
+    "double_first_class": true,
+    "a_minus_count": 2,
+    "national_key_labs": 3,
+    "academician_count": 11
+  },
+  "admission_profile": {
+    "shanghai_rank_avg": 8500,
+    "out_of_province_percentile": "Top 2.5%"
+  },
+  "career_outcomes": {
+    "further_study_rate": "45.3%",
+    "top_employers": [
+      "华为",
+      "上汽",
+      "中芯国际",
+      "普华永道"
+    ],
+    "median_starting_salary": 9000
+  },
+  "evaluation_scores": {
+    "academic_capital": 4.0,
+    "employment_value": 4.3,
+    "location_advantage": 4.9,
+    "globalization": 4.4,
+    "student_freedom": 3.9,
+    "brand_asset": 4.2,
+    "weighted_total": 4.29
+  }
+}

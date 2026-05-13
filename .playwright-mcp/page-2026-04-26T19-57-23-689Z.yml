@@ -1,0 +1,334 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 暨南大学 负面 丑闻 处罚 通报 暨南大学 负面 丑闻 处罚 通报
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%259A%25A8%25E5%258D%2597%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E8%25B4%259F%25E9%259D%25A2%2B%25E4%25B8%2591%25E9%2597%25BB%2B%25E5%25A4%2584%25E7%25BD%259A%2B%25E9%2580%259A%25E6%258A%25A5&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&aep=1&ntc=1&sa=X&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ2J8OegQICxAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&sa=X&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ0pQJegQIERAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sa=X&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQtKgLegQIEhAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "视频" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sa=X&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQtKgLegQIDxAB
+              - generic [ref=e99]: 视频
+          - listitem [ref=e100]:
+            - link "购物" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&ved=1t:220175&ictx=111
+              - generic [ref=e103]: 购物
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sa=X&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQs6gLegQIDRAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - main [ref=e130]:
+      - generic [ref=e134]:
+        - generic [ref=e137]:
+          - heading "网页搜索结果" [level=2] [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e142]:
+              - link "暨南大学学术不端行为处理细则 - 信息公开 暨南大学 https://xxgk.jnu.edu.cn › page" [ref=e144] [cursor=pointer]:
+                - /url: https://xxgk.jnu.edu.cn/2018/0515/c7614a199908/page.psp
+                - heading "暨南大学学术不端行为处理细则 - 信息公开" [level=3] [ref=e145]
+                - generic [ref=e147]:
+                  - img [ref=e151]
+                  - generic [ref=e153]:
+                    - generic [ref=e155]: 暨南大学
+                    - generic [ref=e157]: https://xxgk.jnu.edu.cn › page
+              - button "关于这条结果的详细信息" [ref=e158] [cursor=pointer]:
+                - img [ref=e161]
+            - generic [ref=e165]:
+              - text: 第二十四条 对经查证核实，没有学术不端行为，学校有责任维护被举报人的学术声誉。捏造事实、故意陷害他人的举报，要对举报人进行教育、警示、
+              - emphasis [ref=e166]: 处罚
+              - text: ，直至追究法律责任。
+            - generic [ref=e168]: 缺少字词： 负面 ‎丑闻
+        - generic [ref=e173]:
+          - heading "相关问题" [level=2] [ref=e175]
+          - generic [ref=e176]:
+            - button "暨南大学最好的专业？" [ref=e182] [cursor=pointer]:
+              - generic [ref=e184]: 暨南大学最好的专业？
+              - img [ref=e187]
+            - button "暨南大學是不是985？" [ref=e196] [cursor=pointer]:
+              - generic [ref=e198]: 暨南大學是不是985？
+              - img [ref=e201]
+            - button "暨南大学世界排名？" [ref=e210] [cursor=pointer]:
+              - generic [ref=e212]: 暨南大学世界排名？
+              - img [ref=e215]
+            - button "暨南大学校长是谁？" [ref=e224] [cursor=pointer]:
+              - generic [ref=e226]: 暨南大学校长是谁？
+              - img [ref=e229]
+        - generic [ref=e234]:
+          - heading "网页搜索结果" [level=2] [ref=e235]
+          - generic [ref=e236]:
+            - generic [ref=e239]:
+              - link "暨南大学关于印发《暨南大学学生违纪处分办法（试行）》的通知 暨南大学学生处 https://xsc.jnu.edu.cn › _upload › article › files" [ref=e241] [cursor=pointer]:
+                - /url: https://xsc.jnu.edu.cn/_upload/article/files/f6/db/8170aacb40bd96612acf8d40f941/3ba6df52-4cd8-4375-907c-3ff2200a2940.pdf
+                - heading "暨南大学关于印发《暨南大学学生违纪处分办法（试行）》的通知" [level=3] [ref=e242]
+                - generic [ref=e247]:
+                  - generic [ref=e249]: 暨南大学学生处
+                  - generic [ref=e251]: https://xsc.jnu.edu.cn › _upload › article › files
+              - generic [ref=e252]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e253] [cursor=pointer]:
+                - img [ref=e256]
+            - generic [ref=e258]:
+              - generic [ref=e259]:
+                - generic [ref=e260]: 2022年1月28日 —
+                - text: 对违反宪. 法、法律、法规、规章者，给予下列处分：. （一）违反宪法，反对四项基本原则，破坏安定团结的，给. 予留校察看或者开除学籍处分；. （二）触犯国家法律， ...
+              - generic [ref=e261]: 28 页
+            - generic [ref=e263]:
+              - text: 缺少字词： 丑闻 ‎| 必须包含：
+              - link "丑闻" [ref=e264] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%22%E4%B8%91%E9%97%BB%22+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sa=X&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ5t4CegQIJBAB
+        - generic [ref=e268]:
+          - generic [ref=e271]:
+            - link "暨南大学学生违纪处分实施细则(2006年8月修订) 暨南大学研究生德育网 https://gsd.jnu.edu.cn › page" [ref=e273] [cursor=pointer]:
+              - /url: https://gsd.jnu.edu.cn/2017/0601/c2075a141091/page.psp
+              - heading "暨南大学学生违纪处分实施细则(2006年8月修订)" [level=3] [ref=e274]
+              - generic [ref=e276]:
+                - img [ref=e280]
+                - generic [ref=e282]:
+                  - generic [ref=e284]: 暨南大学研究生德育网
+                  - generic [ref=e286]: https://gsd.jnu.edu.cn › page
+            - button "关于这条结果的详细信息" [ref=e287] [cursor=pointer]:
+              - img [ref=e290]
+          - generic [ref=e293]:
+            - generic [ref=e294]: 2010年6月15日 —
+            - generic [ref=e295]:
+              - text: 学生有违反校规校纪的行为，但情节轻微不足以给予上述处分的，由学生所在院系给予
+              - emphasis [ref=e296]: 通报
+              - text: 批评，督促其改正错误；特殊情况，学校可以直接给予违纪学生
+              - emphasis [ref=e297]: 通报
+              - text: 批评。
+          - generic [ref=e299]: 缺少字词： 负面 ‎丑闻
+        - generic [ref=e303]:
+          - generic [ref=e306]:
+            - link "行政执法分类监管机制研究 - 上海市司法局 上海市司法局 https://sfj.sh.gov.cn › ztzl_xsqk" [ref=e308] [cursor=pointer]:
+              - /url: https://sfj.sh.gov.cn/ztzl_xsqk/20201126/7dae65442aad4f2f9bb8b000698d532c.html
+              - heading "行政执法分类监管机制研究 - 上海市司法局" [level=3] [ref=e309]
+              - generic [ref=e311]:
+                - img [ref=e315]
+                - generic [ref=e317]:
+                  - generic [ref=e319]: 上海市司法局
+                  - generic [ref=e321]: https://sfj.sh.gov.cn › ztzl_xsqk
+            - button "关于这条结果的详细信息" [ref=e322] [cursor=pointer]:
+              - img [ref=e325]
+          - generic [ref=e328]: 目前，行政执法中分类监管存在的主要问题：风险规制意识缺失、法律依据不足、分类依据和分类标准不明确、公平公开问题饱受质疑、配套机制和激励机制不完善。
+        - generic [ref=e332]:
+          - generic [ref=e335]:
+            - link "消費者保護研究 敦品中學 https://www.tyr.moj.gov.tw › media › 消費者保..." [ref=e337] [cursor=pointer]:
+              - /url: https://www.tyr.moj.gov.tw/media/20682451/%E6%B6%88%E8%B2%BB%E8%80%85%E4%BF%9D%E8%AD%B7%E7%A0%94%E7%A9%B629%E8%BC%AF.pdf?mediaDL=true
+              - heading "消費者保護研究" [level=3] [ref=e338]
+              - generic [ref=e343]:
+                - generic [ref=e345]: 敦品中學
+                - generic [ref=e347]: https://www.tyr.moj.gov.tw › media › 消費者保...
+            - generic [ref=e348]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e349] [cursor=pointer]:
+              - img [ref=e352]
+          - generic [ref=e355]: 一、 為有效推動我國消費者保護工作，促使行政理論與實務與時俱. 進，進而帶動本領域的學術研究風氣，自民國84 年起，每年徵求. 各界就消費者保護理念、法規及制度相關議題 ...
+        - generic [ref=e359]:
+          - generic [ref=e362]:
+            - link "一百一十二年度年報 Hong Kong Monetary Authority https://vpr.hkma.gov.hk › assets › doc › ar_23_chi" [ref=e364] [cursor=pointer]:
+              - /url: https://vpr.hkma.gov.hk/statics/assets/doc/100257/ar_23/ar_23_chi.pdf
+              - heading "一百一十二年度年報" [level=3] [ref=e365]
+              - generic [ref=e367]:
+                - img [ref=e371]
+                - generic [ref=e373]:
+                  - generic [ref=e375]: Hong Kong Monetary Authority
+                  - generic [ref=e377]: https://vpr.hkma.gov.hk › assets › doc › ar_23_chi
+            - generic [ref=e378]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e379] [cursor=pointer]:
+              - img [ref=e382]
+          - generic [ref=e386]:
+            - text: ...
+            - emphasis [ref=e387]: 暨南大學
+            - text: 經營管理碩士. 資深. 協理. 中華. 民國. 郭尤美女性1120501. 台北富邦銀行資深協理. 世新大學資訊管理碩士. 資深. 協理. 中華. 民國. 陳鋒智男性1120501. 台北富邦 ...
+        - generic [ref=e391]:
+          - generic [ref=e394]:
+            - link "2021 年传媒伦理研究报告 南京大学 https://jil.nju.edu.cn › DFS › file › 2022/01/25" [ref=e396] [cursor=pointer]:
+              - /url: https://jil.nju.edu.cn/DFS/file/2022/01/25/20220125150013966cwfevf.pdf
+              - heading "2021 年传媒伦理研究报告" [level=3] [ref=e397]
+              - generic [ref=e399]:
+                - img [ref=e403]
+                - generic [ref=e405]:
+                  - generic [ref=e407]: 南京大学
+                  - generic [ref=e409]: https://jil.nju.edu.cn › DFS › file › 2022/01/25
+            - generic [ref=e410]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e411] [cursor=pointer]:
+              - img [ref=e414]
+          - generic [ref=e416]:
+            - generic [ref=e417]:
+              - generic [ref=e418]: 2022年1月24日 —
+              - generic [ref=e419]:
+                - text: 法对崔某某处以行政拘留
+                - emphasis [ref=e420]: 处罚
+                - text: 。抖音也发布《关. 于虚假摆拍
+                - emphasis [ref=e421]: 处罚
+                - text: 规则 ...
+                - emphasis [ref=e422]: 暨南大学
+                - text: 博士论文。 郑雯，施畅，桂勇（2021）。“底层主体性时代”：理解 ...
+            - generic [ref=e423]: 16 页
+        - generic [ref=e427]:
+          - generic [ref=e430]:
+            - link "公司公告_省广集团：2025年可持续发展(ESG)报告 ... 新浪网 http://money.finance.sina.com.cn › vCB_AllBulletinDetail" [ref=e432] [cursor=pointer]:
+              - /url: http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=002400&id=12039137
+              - heading "公司公告_省广集团：2025年可持续发展(ESG)报告 ..." [level=3] [ref=e433]
+              - generic [ref=e438]:
+                - generic [ref=e440]: 新浪网
+                - generic [ref=e442]: http://money.finance.sina.com.cn › vCB_AllBulletinDetail
+            - button "关于这条结果的详细信息" [ref=e443] [cursor=pointer]:
+              - img [ref=e446]
+          - generic [ref=e449]:
+            - generic [ref=e450]: 2026年3月30日 —
+            - generic [ref=e451]:
+              - text: ...
+              - emphasis [ref=e452]: 暨南大学
+              - text: 新闻与传播学院达成三方合作，共同筹备成立“品牌出海专业委员会 ... 在广告投放、客户服务等环节，若未严格遵守相关法规与内部政策，可能面临监管
+              - emphasis [ref=e453]: 处罚
+              - text: ...
+        - generic [ref=e457]:
+          - generic [ref=e460]:
+            - link "二零一九) 第一組第VI-66 期 al.gov.mo https://www.al.gov.mo › uploads › attachment" [ref=e462] [cursor=pointer]:
+              - /url: https://www.al.gov.mo/uploads/attachment/2023-10/32791651fc0df4a392.pdf
+              - heading "二零一九) 第一組第VI-66 期" [level=3] [ref=e463]
+              - generic [ref=e468]:
+                - generic [ref=e470]: al.gov.mo
+                - generic [ref=e472]: https://www.al.gov.mo › uploads › attachment
+            - generic [ref=e473]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e474] [cursor=pointer]:
+              - img [ref=e477]
+          - generic [ref=e480]: 議程：辯論分別由林玉鳳議員、梁孫旭議員以及高天賜議員就. 公共利益事項提出的辯題：“應否通過修改《刑法. 典》中有關公職人員貪瀆、違紀等罪行的刑罰條文以提.
+        - generic [ref=e484]:
+          - generic [ref=e487]:
+            - link "一、政治情勢葉明德國立暨南大學東南亞研究所教授 政治大學國際關係研究中心 https://iir.nccu.edu.tw › upload › doc" [ref=e489] [cursor=pointer]:
+              - /url: https://iir.nccu.edu.tw/upload/42/doc/8633/2000.pdf
+              - heading "一、政治情勢葉明德國立暨南大學東南亞研究所教授" [level=3] [ref=e490]
+              - generic [ref=e495]:
+                - generic [ref=e497]: 政治大學國際關係研究中心
+                - generic [ref=e499]: https://iir.nccu.edu.tw › upload › doc
+            - generic [ref=e500]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e501] [cursor=pointer]:
+              - img [ref=e504]
+          - generic [ref=e508]:
+            - text: ...
+            - emphasis [ref=e509]: 醜聞
+            - text: . 糾纏，無暇反制有關：1 月，前總理柯爾因受賄政治獻金，被迫辭去基民黨榮譽. 黨主席；2 月，基民黨被裁定因非法接受獻金，被罰款2 千1 佰萬馬克，柯爾的. 繼任人 ...
+      - navigation [ref=e512]:
+        - heading "网页导航" [level=1] [ref=e513]
+        - text: "1"
+        - link "Page 2" [ref=e516] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=Im7uaem7M5bqmLQPxaL5uAc&start=10&sa=N&sstk=Af77f_clMuktJcI4uX5C3Yw-bFGfiqlgN_MCMET7bVzI8fkqqQH3LIAR4P0T3DM3bEcjVTCYZJv2mEFAtvxQv1cQ_6v2PrhX4jlYVA&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ8tMDegQINBAE
+          - text: "2"
+        - link "Page 3" [ref=e518] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=Im7uaem7M5bqmLQPxaL5uAc&start=20&sa=N&sstk=Af77f_clMuktJcI4uX5C3Yw-bFGfiqlgN_MCMET7bVzI8fkqqQH3LIAR4P0T3DM3bEcjVTCYZJv2mEFAtvxQv1cQ_6v2PrhX4jlYVA&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ8tMDegQINBAG
+          - text: "3"
+        - link "Page 4" [ref=e520] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=Im7uaem7M5bqmLQPxaL5uAc&start=30&sa=N&sstk=Af77f_clMuktJcI4uX5C3Yw-bFGfiqlgN_MCMET7bVzI8fkqqQH3LIAR4P0T3DM3bEcjVTCYZJv2mEFAtvxQv1cQ_6v2PrhX4jlYVA&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ8tMDegQINBAI
+          - text: "4"
+        - link "Page 5" [ref=e522] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=Im7uaem7M5bqmLQPxaL5uAc&start=40&sa=N&sstk=Af77f_clMuktJcI4uX5C3Yw-bFGfiqlgN_MCMET7bVzI8fkqqQH3LIAR4P0T3DM3bEcjVTCYZJv2mEFAtvxQv1cQ_6v2PrhX4jlYVA&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ8tMDegQINBAK
+          - text: "5"
+        - link "Page 6" [ref=e524] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=Im7uaem7M5bqmLQPxaL5uAc&start=50&sa=N&sstk=Af77f_clMuktJcI4uX5C3Yw-bFGfiqlgN_MCMET7bVzI8fkqqQH3LIAR4P0T3DM3bEcjVTCYZJv2mEFAtvxQv1cQ_6v2PrhX4jlYVA&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ8tMDegQINBAM
+          - text: "6"
+        - link "Page 7" [ref=e526] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=Im7uaem7M5bqmLQPxaL5uAc&start=60&sa=N&sstk=Af77f_clMuktJcI4uX5C3Yw-bFGfiqlgN_MCMET7bVzI8fkqqQH3LIAR4P0T3DM3bEcjVTCYZJv2mEFAtvxQv1cQ_6v2PrhX4jlYVA&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ8tMDegQINBAO
+          - text: "7"
+        - link "Page 8" [ref=e528] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=Im7uaem7M5bqmLQPxaL5uAc&start=70&sa=N&sstk=Af77f_clMuktJcI4uX5C3Yw-bFGfiqlgN_MCMET7bVzI8fkqqQH3LIAR4P0T3DM3bEcjVTCYZJv2mEFAtvxQv1cQ_6v2PrhX4jlYVA&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ8tMDegQINBAQ
+          - text: "8"
+        - link "Page 9" [ref=e530] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=Im7uaem7M5bqmLQPxaL5uAc&start=80&sa=N&sstk=Af77f_clMuktJcI4uX5C3Yw-bFGfiqlgN_MCMET7bVzI8fkqqQH3LIAR4P0T3DM3bEcjVTCYZJv2mEFAtvxQv1cQ_6v2PrhX4jlYVA&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ8tMDegQINBAS
+          - text: "9"
+        - link "Page 10" [ref=e532] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=Im7uaem7M5bqmLQPxaL5uAc&start=90&sa=N&sstk=Af77f_clMuktJcI4uX5C3Yw-bFGfiqlgN_MCMET7bVzI8fkqqQH3LIAR4P0T3DM3bEcjVTCYZJv2mEFAtvxQv1cQ_6v2PrhX4jlYVA&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ8tMDegQINBAU
+          - text: "10"
+        - heading "下一页" [level=2] [ref=e534]:
+          - link "下一页" [ref=e535] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E8%B4%9F%E9%9D%A2+%E4%B8%91%E9%97%BB+%E5%A4%84%E7%BD%9A+%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=Im7uaem7M5bqmLQPxaL5uAc&start=10&sa=N&sstk=Af77f_clMuktJcI4uX5C3Yw-bFGfiqlgN_MCMET7bVzI8fkqqQH3LIAR4P0T3DM3bEcjVTCYZJv2mEFAtvxQv1cQ_6v2PrhX4jlYVA&ved=2ahUKEwjp1KzApoyUAxUWNYYAHUVRHncQ8NMDegQINBAW
+            - generic [ref=e537]: 下一页
+      - navigation
+    - contentinfo [ref=e538]:
+      - heading "页脚链接" [level=1] [ref=e539]
+      - generic [ref=e543]:
+        - generic [ref=e547]:
+          - button "Hyde Park, 波士顿麻萨诸塞州 - 根据您的活动记录" [ref=e549] [cursor=pointer]:
+            - generic [ref=e550]: Hyde Park, 波士顿麻萨诸塞州
+            - generic [ref=e552]:
+              - text: "-"
+              - generic [ref=e553]: 根据您的活动记录
+          - text: "-"
+          - button "更新位置信息" [ref=e555] [cursor=pointer]: 更新位置信息
+        - generic [ref=e558]:
+          - link "帮助" [ref=e559] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e560] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e561] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e562] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

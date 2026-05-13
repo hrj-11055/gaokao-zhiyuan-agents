@@ -1,0 +1,44 @@
+{
+  "university_info": {
+    "name": "武汉科技大学",
+    "short_name": "WUST",
+    "location": "湖北省武汉市",
+    "type": "省属重点/行业特色",
+    "tags": [
+      "钢铁摇篮",
+      "全国重点实验室",
+      "省部共建"
+    ]
+  },
+  "academic_strength": {
+    "top_disciplines": [
+      "冶金工程",
+      "材料科学与工程",
+      "控制科学与工程"
+    ],
+    "national_key_labs": 2,
+    "academician_count": 1,
+    "b_plus_count": 3
+  },
+  "admission_data_2025_est": {
+    "hubei_physics_rank": 42000,
+    "hubei_history_rank": 5200,
+    "henan_physics_rank": 38000
+  },
+  "career_outcomes": {
+    "further_study_rate": "32.5%",
+    "major_employers": [
+      "中国宝武",
+      "中建三局",
+      "比亚迪",
+      "华为"
+    ],
+    "median_salary_5y": 11500
+  },
+  "evaluation_scores": {
+    "academic": 4.2,
+    "employment": 4.1,
+    "location": 4.3,
+    "overall": 4.03
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "university_name": "西南科技大学",
+  "short_name": "SWUST / 西科大",
+  "location": {
+    "province": "四川",
+    "city": "绵阳",
+    "city_level": "地级市 / 中国科技城"
+  },
+  "academic_standing": {
+    "key_disciplines": [
+      "环境科学与工程",
+      "材料科学与工程",
+      "控制科学与工程"
+    ],
+    "national_lab_count": 1,
+    "academician_count": 29
+  },
+  "admission_stats": {
+    "avg_rank_science_sichuan": 57000,
+    "avg_rank_liberal_arts_sichuan": 25000,
+    "transfer_success_rate": "60%+"
+  },
+  "employment_outcomes": {
+    "overall_employment_rate": "91.8%",
+    "further_study_rate": "24.3%",
+    "top_employers": [
+      "中国工程物理研究院",
+      "长虹",
+      "九洲",
+      "中核集团"
+    ],
+    "avg_starting_salary": 6200
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.5,
+    "employment_value": 4.0,
+    "location_potential": 3.6,
+    "student_empowerment": 4.2,
+    "comprehensive_score": 3.63
+  }
+}

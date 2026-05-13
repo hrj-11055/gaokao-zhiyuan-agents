@@ -1,0 +1,40 @@
+{
+  "university_name": "福建商学院",
+  "english_name": "Fujian Business University",
+  "location": {
+    "province": "福建",
+    "city": "福州",
+    "districts": [
+      "连江校区",
+      "鼓楼校区"
+    ]
+  },
+  "attributes": {
+    "type": "公办",
+    "category": "财经类",
+    "level": "应用型本科"
+  },
+  "academic_stats": {
+    "provincial_key_disciplines": 2,
+    "master_degree_points": 0,
+    "phd_teacher_ratio": "22%"
+  },
+  "admission_profile": {
+    "avg_rank_history_group": 23000,
+    "avg_rank_physics_group": 62000
+  },
+  "employment_stats": {
+    "overall_employment_rate": ">95%",
+    "further_study_rate": "5.6%",
+    "top_industry": "商贸流通"
+  },
+  "evaluation_scores": {
+    "academic": 2.1,
+    "employment": 2.8,
+    "location": 3.5,
+    "globalization": 2.5,
+    "student_freedom": 3.2,
+    "brand_asset": 2.4,
+    "weighted_total": 2.65
+  }
+}

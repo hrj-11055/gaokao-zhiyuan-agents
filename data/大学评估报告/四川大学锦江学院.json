@@ -1,0 +1,56 @@
+{
+  "university_name": "四川大学锦江学院",
+  "short_name": "川大锦江 / 锦江学院",
+  "location": {
+    "province": "四川省",
+    "city": "眉山市",
+    "district": "彭山区",
+    "economic_zone": "成渝地区双城经济圈 / 成都都市圈"
+  },
+  "academic_standing": {
+    "type": "民办本科（原独立学院）",
+    "ranking_top_private": "全国前3",
+    "provincial_first_class_majors": [
+      "计算机科学与技术",
+      "经济学",
+      "会计学",
+      "视觉传达设计",
+      "英语"
+    ],
+    "special_academy": "东坡学院 (考研特区)"
+  },
+  "student_quality": {
+    "average_acceptance_score_sc": "文科~510, 理科~470",
+    "competitiveness_index": "高（同类院校中）"
+  },
+  "employment_and_further_study": {
+    "further_study_rate_total": "16.3% (2023)",
+    "domestic_further_study": "12.5%",
+    "overseas_further_study": "3.8%",
+    "starting_salary_median": 5200,
+    "top_employers": [
+      "京东方",
+      "中国电信",
+      "华为生态",
+      "字节跳动"
+    ]
+  },
+  "campus_life": {
+    "dormitory_rating": "5星",
+    "architecture_style": "欧式古典",
+    "key_facilities": [
+      "地标图书馆",
+      "标准化4人间",
+      "东坡文化研究中心"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.6,
+    "graduate_value": 3.5,
+    "location_potential": 3.0,
+    "global_capability": 3.6,
+    "student_empowerment": 4.0,
+    "brand_asset": 4.5,
+    "overall_weighted_score": 3.29
+  }
+}

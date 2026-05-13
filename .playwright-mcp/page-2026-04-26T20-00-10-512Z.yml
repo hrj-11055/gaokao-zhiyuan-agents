@@ -1,0 +1,553 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: site:zhihu.com 暨南大学 就读 体验
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=site%3Azhihu.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E8%AF%BB+%E4%BD%93%E9%AA%8C&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2213752419109270175827%22%2C%22ori_lid%22%3A%2213752419109270175827%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=beda68510257c053&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=site%3Azhihu.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E8%AF%BB+%E4%BD%93%E9%AA%8C
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=site%3Azhihu.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E8%AF%BB+%E4%BD%93%E9%AA%8C
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=beda68510257c053&ie=utf-8&wd=site%3Azhihu.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E8%AF%BB+%E4%BD%93%E9%AA%8C&rsv_spt=7&rsv_bp=1&f=8&oq=site%3Azhihu.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E8%AF%BB+%E4%BD%93%E9%AA%8C&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=site%3Azhihu.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E8%AF%BB+%E4%BD%93%E9%AA%8C
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3Dsite%3Azhihu.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E8%AF%BB+%E4%BD%93%E9%AA%8C
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=site%3Azhihu.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E8%AF%BB+%E4%BD%93%E9%AA%8C
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=site%3Azhihu.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E8%AF%BB+%E4%BD%93%E9%AA%8C
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  匹兹堡大学就读体验  广州暨南大学怎么样  马里兰大学就读体验  清华大学就读体验  西安大略大学就读体验  暨南大学校区哪个好 深度合作 百度信誉V 开放平台 官网认证 百度开放 计划，让搜索引擎发现您的价值    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 厨师锅里吐口水后继续出餐 店长回应 9 伊朗外长向巴基斯坦递交停战条件 10 枪击发生时特朗普旁的华裔女记者是谁 11 黄鳝被喂避孕药是传了30年的谣言 12 A股一季度最赚钱公司曝光 13 女性多和好友聚会能“续命” 14 男子杀害岳父后潜逃33年终落网 15 高市政府越过“最后一根红线”" [ref=e69]:
+              - cell "相关搜索  匹兹堡大学就读体验  广州暨南大学怎么样  马里兰大学就读体验  清华大学就读体验  西安大略大学就读体验  暨南大学校区哪个好 深度合作 百度信誉V 开放平台 官网认证 百度开放 计划，让搜索引擎发现您的价值    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 厨师锅里吐口水后继续出餐 店长回应 9 伊朗外长向巴基斯坦递交停战条件 10 枪击发生时特朗普旁的华裔女记者是谁 11 黄鳝被喂避孕药是传了30年的谣言 12 A股一季度最赚钱公司曝光 13 女性多和好友聚会能“续命” 14 男子杀害岳父后潜逃33年终落网 15 高市政府越过“最后一根红线”" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 匹兹堡大学就读体验" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%B9%E5%85%B9%E5%A0%A1%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E4%BD%93%E9%AA%8C&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=3496YVh3lyRJ7j7pVJxcrHKOxLhqXcRkEe8lFctvGnEAsT5JBKWiP84Gm5s&rfqid=beda68510257c053&rsv_dl=0_prs_28616_1&rq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsf=101631202
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 匹兹堡大学就读体验
+                      - link " 广州暨南大学怎么样" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E5%B9%BF%E5%B7%9E%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%80%8E%E4%B9%88%E6%A0%B7&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=3496YVh3lyRJ7j7pVJxcrHKOxLhqXcRkEe8lFctvGnEAsT5JBKWiP84Gm5s&rfqid=beda68510257c053&rsv_dl=0_prs_28616_2&rq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 广州暨南大学怎么样
+                      - link " 马里兰大学就读体验" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E9%A9%AC%E9%87%8C%E5%85%B0%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E4%BD%93%E9%AA%8C&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=3496YVh3lyRJ7j7pVJxcrHKOxLhqXcRkEe8lFctvGnEAsT5JBKWiP84Gm5s&rfqid=beda68510257c053&rsv_dl=0_prs_28616_3&rq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsf=101631202
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 马里兰大学就读体验
+                      - link " 清华大学就读体验" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E4%BD%93%E9%AA%8C&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=3496YVh3lyRJ7j7pVJxcrHKOxLhqXcRkEe8lFctvGnEAsT5JBKWiP84Gm5s&rfqid=beda68510257c053&rsv_dl=0_prs_28616_4&rq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsf=101631202
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 清华大学就读体验
+                      - link " 西安大略大学就读体验" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E8%A5%BF%E5%AE%89%E5%A4%A7%E7%95%A5%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E4%BD%93%E9%AA%8C&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=3496YVh3lyRJ7j7pVJxcrHKOxLhqXcRkEe8lFctvGnEAsT5JBKWiP84Gm5s&rfqid=beda68510257c053&rsv_dl=0_prs_28616_5&rq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsf=101631202
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 西安大略大学就读体验
+                      - link " 暨南大学校区哪个好" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%8C%BA%E5%93%AA%E4%B8%AA%E5%A5%BD&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=3496YVh3lyRJ7j7pVJxcrHKOxLhqXcRkEe8lFctvGnEAsT5JBKWiP84Gm5s&rfqid=beda68510257c053&rsv_dl=0_prs_28616_6&rq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsf=101633403
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 暨南大学校区哪个好
+                  - generic [ref=e118]:
+                    - paragraph [ref=e119]: 深度合作
+                    - generic [ref=e120]:
+                      - list [ref=e121]:
+                        - listitem [ref=e122]: 百度信誉V
+                        - listitem [ref=e123] [cursor=pointer]: 开放平台
+                        - listitem [ref=e124] [cursor=pointer]
+                        - listitem [ref=e125] [cursor=pointer]: 官网认证
+                      - generic [ref=e126]:
+                        - paragraph [ref=e127]:
+                          - text: 百度开放
+                          - text: 计划，让搜索引擎发现您的价值
+                        - paragraph [ref=e129]:
+                          - link [ref=e130] [cursor=pointer]:
+                            - /url: http://www.baidu.com/link?url=fxnaU4_BVDQtE0S8nq_Y9Bpy5oPbrQ7zPjL0HDLwg_W
+                            - img [ref=e131]
+                  - generic [ref=e135]:
+                    - generic "百度热搜" [ref=e136]:
+                      - link " " [ref=e137] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e138]: 
+                        - generic [ref=e139]: 
+                      - link " 换一换" [ref=e141] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e142]: 
+                        - text: 换一换
+                    - generic [ref=e143]:
+                      - generic [ref=e144] [cursor=pointer]: 热搜榜
+                      - generic [ref=e145] [cursor=pointer]: 民生榜
+                      - generic [ref=e146] [cursor=pointer]: 财经榜
+                    - generic [ref=e148]:
+                      - generic [ref=e150]:
+                        - generic [ref=e152]: 
+                        - link "“一分部署 九分落实”" [ref=e153] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=3496YVh3lyRJ7j7pVJxcrHKOxLhqXcRkEe8lFctvGnEAsT5JBKWiP84Gm5s&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e155]:
+                        - generic [ref=e156]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e157] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=3496YVh3lyRJ7j7pVJxcrHKOxLhqXcRkEe8lFctvGnEAsT5JBKWiP84Gm5s&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e158]: 热
+                      - generic [ref=e160]:
+                        - generic [ref=e161]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e162] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=3496YVh3lyRJ7j7pVJxcrHKOxLhqXcRkEe8lFctvGnEAsT5JBKWiP84Gm5s&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e163]: 新
+                      - generic [ref=e165]:
+                        - generic [ref=e166]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e167] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=3496YVh3lyRJ7j7pVJxcrHKOxLhqXcRkEe8lFctvGnEAsT5JBKWiP84Gm5s&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e172]: 热
+                      - generic [ref=e174]:
+                        - generic [ref=e175]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e176] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e177]: 新
+                      - generic [ref=e179]:
+                        - generic [ref=e180]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e181] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e182]: 热
+                      - generic [ref=e184]:
+                        - generic [ref=e185]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e186] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e188]:
+                        - generic [ref=e189]: "8"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e190] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e192]:
+                        - generic [ref=e193]: "9"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e194] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e196]:
+                        - generic [ref=e197]: "10"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e198] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e200]:
+                        - generic [ref=e201]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e202] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e204]:
+                        - generic [ref=e205]: "12"
+                        - link "A股一季度最赚钱公司曝光" [ref=e206] [cursor=pointer]:
+                          - /url: /s?wd=A%E8%82%A1%E4%B8%80%E5%AD%A3%E5%BA%A6%E6%9C%80%E8%B5%9A%E9%92%B1%E5%85%AC%E5%8F%B8%E6%9B%9D%E5%85%89&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e208]:
+                        - generic [ref=e209]: "13"
+                        - link "女性多和好友聚会能“续命”" [ref=e210] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e212]:
+                        - generic [ref=e213]: "14"
+                        - link "男子杀害岳父后潜逃33年终落网" [ref=e214] [cursor=pointer]:
+                          - /url: /s?wd=%E7%94%B7%E5%AD%90%E6%9D%80%E5%AE%B3%E5%B2%B3%E7%88%B6%E5%90%8E%E6%BD%9C%E9%80%8333%E5%B9%B4%E7%BB%88%E8%90%BD%E7%BD%91&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e216]:
+                        - generic [ref=e217]: "15"
+                        - link "高市政府越过“最后一根红线”" [ref=e218] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=a98dXk%2Bfsb2tfxInOa189GgsPe0GXdJGJtu6uddEWxajaYjrWd1DKA2Ks88&rqid=beda68510257c053&rsf=1692bf2f2e39946faeb40709d104dd12_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e221]:
+          - generic [ref=e222]:
+            - generic [ref=e224] [cursor=pointer]: 清除
+            - generic [ref=e227] [cursor=pointer]: 时间不限
+            - generic [ref=e229] [cursor=pointer]: 所有网页和文件
+            - generic [ref=e231] [cursor=pointer]: zhihu.com
+          - generic [ref=e233]: 百度为您找到以下结果
+        - generic [ref=e234]:
+          - generic [ref=e238]:
+            - heading "在暨南大学就读是怎样一番体验? - 知乎" [level=3] [ref=e241]:
+              - link "在暨南大学就读是怎样一番体验? - 知乎" [ref=e242] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzsmHbQNs6DAiccuXJbc1KF7NSD8xJ0Vopu9PY8mW2pMpAsHEsH2TuowZDj4G1Py0HXq
+                - paragraph [ref=e245]:
+                  - generic [ref=e248]:
+                    - text: 在
+                    - emphasis [ref=e249]: 暨南大学就读
+                    - text: 是怎样一番
+                    - emphasis [ref=e250]: 体验
+                    - text: "? - 知乎"
+            - generic [ref=e255]:
+              - text: 2014年6月30日
+              - generic [ref=e256]:
+                - text: 我能理解他们的失望,特别是外省来的同学,高考中以远超过重点本科分数线的分数考入这所
+                - emphasis [ref=e257]: 大学
+                - text: ",却发现每次回到家之后,要一次又一次向别人解释:我不是在山东读书,我是在广州的"
+                - emphasis [ref=e258]: 暨南大学
+                - text: 读书,急了的时候甚至还要拿出笔来,告诉人家“暨南”两个字怎么写;一次又一次地在人家狐疑的眼神中解释:我读的是重点大学,不是读的一个专科或者民办高校。在广东之外,少有人知道
+            - link "头像 知乎" [ref=e263] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzsmHbQNs6DAiccuXJbc1KF7NSD8xJ0Vopu9PY8mW2pMpAsHEsH2TuowZDj4G1Py0HXq
+              - img "头像" [ref=e266]
+              - generic [ref=e267]: 知乎
+              - generic [ref=e269]: 
+          - generic [ref=e273]:
+            - heading "在暨南大学就读是怎样一番体验? - 知乎" [level=3] [ref=e276]:
+              - link "在暨南大学就读是怎样一番体验? - 知乎" [ref=e277] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdtdttXbQmoy5T39Ef0how9hG
+                - paragraph [ref=e280]:
+                  - generic [ref=e283]:
+                    - text: 在
+                    - emphasis [ref=e284]: 暨南大学就读
+                    - text: 是怎样一番
+                    - emphasis [ref=e285]: 体验
+                    - text: "? - 知乎"
+            - generic [ref=e290]:
+              - text: 2018年7月7日
+              - generic [ref=e291]:
+                - emphasis [ref=e292]: 暨南大学
+                - text: 石牌校区坐落于广州最为繁华的天河岗顶，地址为广东省广州市天河区黄埔大道西601号。走到这里，...
+            - generic [ref=e293]:
+              - link [ref=e295] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdtdttXbQmoy5T39Ef0how9hG
+              - link [ref=e299] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdtdttXbQmoy5T39Ef0how9hG
+              - link [ref=e303] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdtdttXbQmoy5T39Ef0how9hG
+              - link "5" [ref=e307] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdtdttXbQmoy5T39Ef0how9hG
+                - generic [ref=e310]:
+                  - generic [ref=e311]: 
+                  - text: "5"
+            - link "头像 知乎" [ref=e316] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdtdttXbQmoy5T39Ef0how9hG
+              - img "头像" [ref=e319]
+              - generic [ref=e320]: 知乎
+              - generic [ref=e322]: 
+          - generic [ref=e326]:
+            - heading "在暨南大学读研是什么体验? - 知乎" [level=3] [ref=e329]:
+              - link "在暨南大学读研是什么体验? - 知乎" [ref=e330] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=zl7Kp8DfzhvLbLKZLH-fccsGWOLCG3Kpst7Ny5vMse-9FSJMQzp3d6k6hHMD4XB2kNTFUtIKAgu5R9JYu5ePkNylssUELLoRKxDq_kKqkWG
+                - paragraph [ref=e333]:
+                  - generic [ref=e336]:
+                    - text: 在
+                    - emphasis [ref=e337]: 暨南大学
+                    - text: 读研是什么
+                    - emphasis [ref=e338]: 体验
+                    - text: "? - 知乎"
+            - generic [ref=e339]:
+              - link [ref=e341] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=zl7Kp8DfzhvLbLKZLH-fccsGWOLCG3Kpst7Ny5vMse-9FSJMQzp3d6k6hHMD4XB2kNTFUtIKAgu5R9JYu5ePkNylssUELLoRKxDq_kKqkWG
+              - generic [ref=e346]:
+                - generic [ref=e351]:
+                  - text: 2025年1月12日
+                  - generic [ref=e352]:
+                    - text: 在
+                    - emphasis [ref=e353]: 暨大就读
+                    - text: 药学研究生，在石牌校区待了3年，现在的话，整个药学院都搬去番禺校区了，实验条件更是没得...
+                - link "头像 知乎" [ref=e358] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=zl7Kp8DfzhvLbLKZLH-fccsGWOLCG3Kpst7Ny5vMse-9FSJMQzp3d6k6hHMD4XB2kNTFUtIKAgu5R9JYu5ePkNylssUELLoRKxDq_kKqkWG
+                  - img "头像" [ref=e361]
+                  - generic [ref=e362]: 知乎
+                  - generic [ref=e364]: 
+          - generic [ref=e366]:
+            - generic [ref=e367]: 大家还在搜
+            - generic [ref=e368]:
+              - link "匹兹堡大学就读体验" [ref=e369] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%B9%E5%85%B9%E5%A0%A1%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E4%BD%93%E9%AA%8C&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=49b950VCAPMrseuMyhHJL0ClZSeF79Tz0BefyEmrEdx62rG5qV6L5BJMCwk&rsf=101631202&rsv_dl=0_prs_28608_1
+                - generic [ref=e371]: 匹兹堡大学就读体验
+              - link "广州暨南大学怎么样" [ref=e372] [cursor=pointer]:
+                - /url: /s?wd=%E5%B9%BF%E5%B7%9E%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%80%8E%E4%B9%88%E6%A0%B7&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=49b950VCAPMrseuMyhHJL0ClZSeF79Tz0BefyEmrEdx62rG5qV6L5BJMCwk&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e374]: 广州暨南大学怎么样
+              - link "马里兰大学就读体验" [ref=e375] [cursor=pointer]:
+                - /url: /s?wd=%E9%A9%AC%E9%87%8C%E5%85%B0%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E4%BD%93%E9%AA%8C&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=49b950VCAPMrseuMyhHJL0ClZSeF79Tz0BefyEmrEdx62rG5qV6L5BJMCwk&rsf=101631202&rsv_dl=0_prs_28608_3
+                - generic [ref=e377]: 马里兰大学就读体验
+              - link "清华大学就读体验" [ref=e378] [cursor=pointer]:
+                - /url: /s?wd=%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E4%BD%93%E9%AA%8C&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=49b950VCAPMrseuMyhHJL0ClZSeF79Tz0BefyEmrEdx62rG5qV6L5BJMCwk&rsf=101631202&rsv_dl=0_prs_28608_4
+                - generic [ref=e380]: 清华大学就读体验
+              - link "西安大略大学就读体验" [ref=e381] [cursor=pointer]:
+                - /url: /s?wd=%E8%A5%BF%E5%AE%89%E5%A4%A7%E7%95%A5%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E4%BD%93%E9%AA%8C&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=49b950VCAPMrseuMyhHJL0ClZSeF79Tz0BefyEmrEdx62rG5qV6L5BJMCwk&rsf=101631202&rsv_dl=0_prs_28608_5
+                - generic [ref=e383]: 西安大略大学就读体验
+              - link "暨南大学校区哪个好" [ref=e384] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%8C%BA%E5%93%AA%E4%B8%AA%E5%A5%BD&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=49b950VCAPMrseuMyhHJL0ClZSeF79Tz0BefyEmrEdx62rG5qV6L5BJMCwk&rsf=101633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e386]: 暨南大学校区哪个好
+              - link "广东人眼中的暨南大学" [ref=e387] [cursor=pointer]:
+                - /url: /s?wd=%E5%B9%BF%E4%B8%9C%E4%BA%BA%E7%9C%BC%E4%B8%AD%E7%9A%84%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=49b950VCAPMrseuMyhHJL0ClZSeF79Tz0BefyEmrEdx62rG5qV6L5BJMCwk&rsf=101636803&rsv_dl=0_prs_28608_7
+                - generic [ref=e389]: 广东人眼中的暨南大学
+              - link "暨南大学前景如何" [ref=e390] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%89%8D%E6%99%AF%E5%A6%82%E4%BD%95&usm=1&ie=utf-8&rsv_pq=beda68510257c053&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&rsv_t=49b950VCAPMrseuMyhHJL0ClZSeF79Tz0BefyEmrEdx62rG5qV6L5BJMCwk&rsf=101636803&rsv_dl=0_prs_28608_8
+                - generic [ref=e392]: 暨南大学前景如何
+          - generic [ref=e396]:
+            - heading "在暨南大学番禺校区就读是一种怎样的体验?食篇 - 知乎" [level=3] [ref=e399]:
+              - link "在暨南大学番禺校区就读是一种怎样的体验?食篇 - 知乎" [ref=e400] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=F4JJf6To2fBlllyOvAIUXzK9UeEHGxCIECygZ_rcXSxmoSq14RSZR-6e008AF8oc
+                - paragraph [ref=e403]:
+                  - generic [ref=e406]:
+                    - text: 在
+                    - emphasis [ref=e407]: 暨南大学
+                    - text: 番禺校区
+                    - emphasis [ref=e408]: 就读
+                    - text: 是一种怎样的
+                    - emphasis [ref=e409]: 体验
+                    - text: "?食篇 - 知乎"
+            - generic [ref=e414]:
+              - text: 2020年8月23日
+              - generic [ref=e415]:
+                - text: 在
+                - emphasis [ref=e416]: 暨南大学
+                - text: 番禺校区
+                - emphasis [ref=e417]: 就读
+                - text: 是一种怎样的
+                - emphasis [ref=e418]: 体验
+                - text: "?食篇w1w 暨南大学Business English→中国政法大学法硕 收录于 · 大学经验分享 25 人赞同了该文章 大家好,我是2018级的"
+                - emphasis [ref=e419]: 暨大
+                - text: 本科生,主修商务英语专业,同时在修法学双学位,现在离开学还有10天,开学就是大三的老腊肉啦,学姐在大一开学之前对番禺校区一脸无知,刚入校的时候...
+            - link "头像 知乎" [ref=e424] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=F4JJf6To2fBlllyOvAIUXzK9UeEHGxCIECygZ_rcXSxmoSq14RSZR-6e008AF8oc
+              - img "头像" [ref=e427]
+              - generic [ref=e428]: 知乎
+              - generic [ref=e430]: 
+          - generic [ref=e434]:
+            - heading "在暨南大学就读是怎样一番体验? - 知乎" [level=3] [ref=e437]:
+              - link "在暨南大学就读是怎样一番体验? - 知乎" [ref=e438] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=M1SIOVH1ZIRsnKPOCpZhCALRrl08lPgXyH7MKX7vg62AraYr6sRj4CzGRkNIj6njJyae_zLWZtICQoxF1QWWU5k4Bi2lWorjkMQ2BxLQjhq
+                - paragraph [ref=e441]:
+                  - generic [ref=e444]:
+                    - text: 在
+                    - emphasis [ref=e445]: 暨南大学就读
+                    - text: 是怎样一番
+                    - emphasis [ref=e446]: 体验
+                    - text: "? - 知乎"
+            - generic [ref=e451]:
+              - text: 2020年4月27日
+              - generic [ref=e452]:
+                - text: 在
+                - emphasis [ref=e453]: 暨南大学
+                - text: 读研，在校同学来自五湖四海，研究生生活可以过得丰富多彩。暨南大学在广州、深圳、珠海三地设...
+            - link "头像 知乎" [ref=e458] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=M1SIOVH1ZIRsnKPOCpZhCALRrl08lPgXyH7MKX7vg62AraYr6sRj4CzGRkNIj6njJyae_zLWZtICQoxF1QWWU5k4Bi2lWorjkMQ2BxLQjhq
+              - img "头像" [ref=e461]
+              - generic [ref=e462]: 知乎
+              - generic [ref=e464]: 
+          - generic [ref=e468]:
+            - heading "在暨南大学就读是怎样一番体验? - 知乎" [level=3] [ref=e471]:
+              - link "在暨南大学就读是怎样一番体验? - 知乎" [ref=e472] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdthZqtltS3McjsMJ04xYfZG7
+                - paragraph [ref=e475]:
+                  - generic [ref=e478]:
+                    - text: 在
+                    - emphasis [ref=e479]: 暨南大学就读
+                    - text: 是怎样一番
+                    - emphasis [ref=e480]: 体验
+                    - text: "? - 知乎"
+            - generic [ref=e485]:
+              - text: 2019年7月30日
+              - generic [ref=e486]:
+                - text: 当初高考成绩出来后，我主要在
+                - emphasis [ref=e487]: 暨南大学
+                - text: 、中南大学、湖南大学、华东理工大学这四个学校中做选择，最后选择...
+            - generic [ref=e488]:
+              - link [ref=e490] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdthZqtltS3McjsMJ04xYfZG7
+              - link [ref=e494] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdthZqtltS3McjsMJ04xYfZG7
+              - link [ref=e498] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdthZqtltS3McjsMJ04xYfZG7
+              - link "5" [ref=e502] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdthZqtltS3McjsMJ04xYfZG7
+                - generic [ref=e505]:
+                  - generic [ref=e506]: 
+                  - text: "5"
+            - link "头像 知乎" [ref=e511] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzshICi_O9Ay6Uta3otW4bLM2TvOIO9UAMArHfj5DOXCsM2rx0dMsfzMjsvASXn3CdthZqtltS3McjsMJ04xYfZG7
+              - img "头像" [ref=e514]
+              - generic [ref=e515]: 知乎
+              - generic [ref=e517]: 
+          - generic [ref=e521]:
+            - heading "在暨南大学就读是怎样一番体验? - 知乎" [level=3] [ref=e524]:
+              - link "在暨南大学就读是怎样一番体验? - 知乎" [ref=e525] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzsmHbQNs6DAiccuXJbc1KF7NSD8xJ0Vopu9PY8mW2pMpAsHEsH2TuowZDj4G1Py0HXyJUv9E5pIu0WkXFbxJtCpK
+                - paragraph [ref=e528]:
+                  - generic [ref=e531]:
+                    - text: 在
+                    - emphasis [ref=e532]: 暨南大学就读
+                    - text: 是怎样一番
+                    - emphasis [ref=e533]: 体验
+                    - text: "? - 知乎"
+            - generic [ref=e538]:
+              - text: 2014年8月10日
+              - generic [ref=e539]:
+                - text: 瘦狗岭校区的全称是：
+                - emphasis [ref=e540]: 暨南大学
+                - text: 华文学院 坐落于广州市打雷劈死人事件高发区 瘦狗岭地区 接下来请欣赏 迷...
+            - link "头像 知乎" [ref=e545] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzsmHbQNs6DAiccuXJbc1KF7NSD8xJ0Vopu9PY8mW2pMpAsHEsH2TuowZDj4G1Py0HXyJUv9E5pIu0WkXFbxJtCpK
+              - img "头像" [ref=e548]
+              - generic [ref=e549]: 知乎
+              - generic [ref=e551]: 
+          - generic [ref=e555]:
+            - heading "在暨南大学就读是怎样一番体验? - 知乎" [level=3] [ref=e558]:
+              - link "在暨南大学就读是怎样一番体验? - 知乎" [ref=e559] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzsmHbQNs6DAiccuXJbc1KF7NSD8xJ0Vopu9PY8mW2pMpAsHEsH2TuowZDj4G1Py0HXyN_cNXuTeHsJTvsBNcMOl_
+                - paragraph [ref=e562]:
+                  - generic [ref=e565]:
+                    - text: 在
+                    - emphasis [ref=e566]: 暨南大学就读
+                    - text: 是怎样一番
+                    - emphasis [ref=e567]: 体验
+                    - text: "? - 知乎"
+            - generic [ref=e572]:
+              - text: 2014年7月3日
+              - generic [ref=e573]:
+                - text: 九月开学了，小明去了济南大学，小华小丽小军小王去了
+                - emphasis [ref=e574]: 暨南大学
+                - text: 。而小华在深圳、小丽在珠海、小军在本部、...
+            - link "头像 知乎" [ref=e579] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzsmHbQNs6DAiccuXJbc1KF7NSD8xJ0Vopu9PY8mW2pMpAsHEsH2TuowZDj4G1Py0HXyN_cNXuTeHsJTvsBNcMOl_
+              - img "头像" [ref=e582]
+              - generic [ref=e583]: 知乎
+              - generic [ref=e585]: 
+          - generic [ref=e589]:
+            - heading "在暨南大学就读是怎样一番体验? - 知乎" [level=3] [ref=e592]:
+              - link "在暨南大学就读是怎样一番体验? - 知乎" [ref=e593] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzscqLo0D-6cpuuDlCwoj4CuiPBBoD_qwbcpRiY40VDNwtrNgx0ihOEvErcSE6SksjeJCZj2LhR-6N_E2U3x9GgCK
+                - paragraph [ref=e596]:
+                  - generic [ref=e599]:
+                    - text: 在
+                    - emphasis [ref=e600]: 暨南大学就读
+                    - text: 是怎样一番
+                    - emphasis [ref=e601]: 体验
+                    - text: "? - 知乎"
+            - generic [ref=e606]:
+              - text: 2023年9月23日
+              - generic [ref=e607]:
+                - text: 瘦狗岭校区的全称是：
+                - emphasis [ref=e608]: 暨南大学
+                - text: 华文学院坐落于广州市打雷劈死人事件高发区瘦狗岭地区接下来请欣赏迷人の大...
+            - link "头像 知乎" [ref=e613] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Z_Wxy84iXNm1zgqS5oGzscqLo0D-6cpuuDlCwoj4CuiPBBoD_qwbcpRiY40VDNwtrNgx0ihOEvErcSE6SksjeJCZj2LhR-6N_E2U3x9GgCK
+              - img "头像" [ref=e616]
+              - generic [ref=e617]: 知乎
+              - generic [ref=e619]: 
+        - generic [ref=e622]:
+          - generic [ref=e623]: 相关搜索
+          - table [ref=e624]:
+            - rowgroup [ref=e625]:
+              - row "广州暨南大学怎么样 广东人眼中的暨南大学" [ref=e626]:
+                - cell "广州暨南大学怎么样" [ref=e627]:
+                  - link "广州暨南大学怎么样" [ref=e628] [cursor=pointer]:
+                    - /url: /s?wd=%E5%B9%BF%E5%B7%9E%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%80%8E%E4%B9%88%E6%A0%B7&rsf=101633403&rsp=0&f=1&rs_src=0&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&rsv_dl=brs_28338_1
+                    - generic [ref=e630]: 广州暨南大学怎么样
+                - cell "广东人眼中的暨南大学" [ref=e631]:
+                  - link "广东人眼中的暨南大学" [ref=e632] [cursor=pointer]:
+                    - /url: /s?wd=%E5%B9%BF%E4%B8%9C%E4%BA%BA%E7%9C%BC%E4%B8%AD%E7%9A%84%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6&rsf=101636803&rsp=1&f=1&rs_src=0&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&rsv_dl=brs_28338_2
+                    - generic [ref=e634]: 广东人眼中的暨南大学
+              - row "暨南大学好不好值不值得报考 暨南大学怎么样知乎" [ref=e635]:
+                - cell "暨南大学好不好值不值得报考" [ref=e636]:
+                  - link "暨南大学好不好值不值得报考" [ref=e637] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%A5%BD%E4%B8%8D%E5%A5%BD%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E6%8A%A5%E8%80%83&rsf=101636803&rsp=2&f=1&rs_src=0&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&rsv_dl=brs_28338_3
+                    - generic [ref=e639]: 暨南大学好不好值不值得报考
+                - cell "暨南大学怎么样知乎" [ref=e640]:
+                  - link "暨南大学怎么样知乎" [ref=e641] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%80%8E%E4%B9%88%E6%A0%B7%E7%9F%A5%E4%B9%8E&rsf=101636803&rsp=3&f=1&rs_src=0&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&rsv_dl=brs_28338_4
+                    - generic [ref=e643]: 暨南大学怎么样知乎
+              - row "匹兹堡大学就读体验 暨南大学校区哪个好" [ref=e644]:
+                - cell "匹兹堡大学就读体验" [ref=e645]:
+                  - link "匹兹堡大学就读体验" [ref=e646] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%B9%E5%85%B9%E5%A0%A1%E5%A4%A7%E5%AD%A6%E5%B0%B1%E8%AF%BB%E4%BD%93%E9%AA%8C&rsf=101631202&rsp=4&f=1&rs_src=0&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&rsv_dl=brs_28338_5
+                    - generic [ref=e648]: 匹兹堡大学就读体验
+                - cell "暨南大学校区哪个好" [ref=e649]:
+                  - link "暨南大学校区哪个好" [ref=e650] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%A0%A1%E5%8C%BA%E5%93%AA%E4%B8%AA%E5%A5%BD&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&rsv_dl=brs_28338_6
+                    - generic [ref=e652]: 暨南大学校区哪个好
+              - row "暨南大学值得上吗 暨南大学前景如何" [ref=e653]:
+                - cell "暨南大学值得上吗" [ref=e654]:
+                  - link "暨南大学值得上吗" [ref=e655] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%80%BC%E5%BE%97%E4%B8%8A%E5%90%97&rsf=101633403&rsp=6&f=1&rs_src=0&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&rsv_dl=brs_28338_7
+                    - generic [ref=e657]: 暨南大学值得上吗
+                - cell "暨南大学前景如何" [ref=e658]:
+                  - link "暨南大学前景如何" [ref=e659] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%89%8D%E6%99%AF%E5%A6%82%E4%BD%95&rsf=101636803&rsp=7&f=1&rs_src=0&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&rsv_dl=brs_28338_8
+                    - generic [ref=e661]: 暨南大学前景如何
+              - row "暨南大学在广州口碑 考上暨南大学算什么水平" [ref=e662]:
+                - cell "暨南大学在广州口碑" [ref=e663]:
+                  - link "暨南大学在广州口碑" [ref=e664] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%9C%A8%E5%B9%BF%E5%B7%9E%E5%8F%A3%E7%A2%91&rsf=101633403&rsp=8&f=1&rs_src=0&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&rsv_dl=brs_28338_9
+                    - generic [ref=e666]: 暨南大学在广州口碑
+                - cell "考上暨南大学算什么水平" [ref=e667]:
+                  - link "考上暨南大学算什么水平" [ref=e668] [cursor=pointer]:
+                    - /url: /s?wd=%E8%80%83%E4%B8%8A%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%AE%97%E4%BB%80%E4%B9%88%E6%B0%B4%E5%B9%B3&rsf=101636803&rsp=9&f=1&rs_src=0&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&rsv_dl=brs_28338_10
+                    - generic [ref=e670]: 考上暨南大学算什么水平
+      - generic [ref=e673]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e674]:
+          - generic [ref=e675]: "1"
+        - link "2" [ref=e676] [cursor=pointer]:
+          - /url: /s?wd=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&pn=10&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&ie=utf-8&usm=1&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&topic_pn=
+          - generic [ref=e677]: "2"
+        - link "3" [ref=e678] [cursor=pointer]:
+          - /url: /s?wd=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&pn=20&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&ie=utf-8&usm=1&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&topic_pn=
+          - generic [ref=e679]: "3"
+        - link "4" [ref=e680] [cursor=pointer]:
+          - /url: /s?wd=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&pn=30&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&ie=utf-8&usm=1&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&topic_pn=
+          - generic [ref=e681]: "4"
+        - link "5" [ref=e682] [cursor=pointer]:
+          - /url: /s?wd=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&pn=40&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&ie=utf-8&usm=1&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&topic_pn=
+          - generic [ref=e683]: "5"
+        - link "6" [ref=e684] [cursor=pointer]:
+          - /url: /s?wd=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&pn=50&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&ie=utf-8&usm=1&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&topic_pn=
+          - generic [ref=e685]: "6"
+        - link "7" [ref=e686] [cursor=pointer]:
+          - /url: /s?wd=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&pn=60&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&ie=utf-8&usm=1&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&topic_pn=
+          - generic [ref=e687]: "7"
+        - link "8" [ref=e688] [cursor=pointer]:
+          - /url: /s?wd=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&pn=70&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&ie=utf-8&usm=1&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&topic_pn=
+          - generic [ref=e689]: "8"
+        - link "9" [ref=e690] [cursor=pointer]:
+          - /url: /s?wd=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&pn=80&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&ie=utf-8&usm=1&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&topic_pn=
+          - generic [ref=e691]: "9"
+        - link "10" [ref=e692] [cursor=pointer]:
+          - /url: /s?wd=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&pn=90&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&ie=utf-8&usm=1&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&topic_pn=
+          - generic [ref=e693]: "10"
+        - link "下一页" [ref=e694] [cursor=pointer]:
+          - /url: /s?wd=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&pn=10&oq=site%3Azhihu.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E5%B0%B1%E8%AF%BB%20%E4%BD%93%E9%AA%8C&ie=utf-8&usm=1&rsv_pq=beda68510257c053&rsv_t=7976VR9U4WvwlpTgOr5SiGrjsPpvwIWCCvAEhqrNfIYL3AdUD6VLO7nlGI8&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e695]
+      - generic [ref=e698]:
+        - link "帮助" [ref=e699] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e700] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e701] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e702] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

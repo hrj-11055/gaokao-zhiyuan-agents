@@ -1,0 +1,36 @@
+{
+  "university_name": "成都理工大学",
+  "academic": {
+    "a_plus_count": 0,
+    "a_count": 1,
+    "a_minus_count": 0,
+    "academician_count": 1,
+    "double_first_class_disciplines": [
+      "地质资源与地质工程"
+    ]
+  },
+  "employment": {
+    "domestic_further_study_rate": "28.5%",
+    "overseas_further_study_rate": "3.2%",
+    "starting_salary": 7800,
+    "top_employers": [
+      "中国建筑",
+      "中国石油",
+      "华为"
+    ]
+  },
+  "location": {
+    "city": "成都",
+    "city_gdp": "24763.6亿元",
+    "city_rank": 7
+  },
+  "scores": {
+    "academic_capital": 3.8,
+    "employment_value": 3.5,
+    "location_energy": 4.2,
+    "globalization": 3.2,
+    "student_empowerment": 3.4,
+    "brand_asset": 3.7,
+    "comprehensive_score": 3.68
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "university_name": "上海纽约大学",
+  "short_name": "NYUSH",
+  "location": {
+    "city": "上海",
+    "district": "浦东新区前滩",
+    "city_gdp_2024": "4.72万亿元"
+  },
+  "academic_stats": {
+    "faculty_student_ratio": "1:8",
+    "academician_count": 22,
+    "key_disciplines": [
+      "数据科学",
+      "金融学",
+      "神经科学",
+      "数学"
+    ],
+    "instruction_language": "100% English"
+  },
+  "admission_data": {
+    "evaluation_mode": "Comprehensive Evaluation (Campus Day)",
+    "annual_applicants": 24000,
+    "chinese_student_quota": 251,
+    "selectivity": "Extremely High"
+  },
+  "graduate_outcomes": {
+    "overseas_further_study_rate": "85%",
+    "top_50_university_rate": "77%",
+    "median_starting_salary": 14500,
+    "top_employers": [
+      "J.P. Morgan",
+      "McKinsey",
+      "Google",
+      "Tencent"
+    ]
+  },
+  "financial_cost": {
+    "annual_tuition": "215,000 RMB (Freshman/Sophomore)",
+    "study_away_cost": "Variable by location"
+  },
+  "overall_score": 4.74
+}

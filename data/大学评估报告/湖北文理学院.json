@@ -1,0 +1,39 @@
+{
+  "university_name": "湖北文理学院",
+  "short_name": "湖文理 / HUAS",
+  "location": {
+    "province": "湖北省",
+    "city": "襄阳市",
+    "campus": [
+      "隆中校区",
+      "东津校区"
+    ]
+  },
+  "academic_level": {
+    "master_points": 13,
+    "key_disciplines": [
+      "机械工程",
+      "物理学",
+      "中国语言文学"
+    ],
+    "is_dual_class": false
+  },
+  "admission_stats": {
+    "hubei_history_rank_2025": 24253,
+    "hubei_physics_rank_2025": 95000
+  },
+  "employment_stats": {
+    "further_study_rate": "15.3%",
+    "key_employers": [
+      "东风汽车",
+      "中铁十一局",
+      "教育系统"
+    ],
+    "avg_starting_salary": 5000
+  },
+  "evaluation": {
+    "comprehensive_score": 2.93,
+    "star_rating": "3.5星",
+    "recommendation": "适合追求性价比与稳健就业的湖北及周边省份考生"
+  }
+}

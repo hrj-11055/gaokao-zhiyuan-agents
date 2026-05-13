@@ -1,0 +1,50 @@
+{
+  "university_info": {
+    "name": "广东财经大学",
+    "abbreviation": "GUFE",
+    "location": [
+      "广州琶洲",
+      "佛山三水"
+    ],
+    "type": "财经类",
+    "level": "省属重点大学 / 博士学位授予单位"
+  },
+  "academic_strength": {
+    "key_disciplines": [
+      "法学",
+      "工商管理",
+      "应用经济学"
+    ],
+    "b_minus_count": 2,
+    "doctoral_points": 1,
+    "national_centers": 1
+  },
+  "admission_stats": {
+    "guangdong_history_rank": 11817,
+    "guangdong_physics_rank": 54020,
+    "competition_level": "High (Provincial)"
+  },
+  "career_outcomes": {
+    "employment_rate": "95%+",
+    "top_industries": [
+      "Finance",
+      "Law",
+      "Audit"
+    ],
+    "starting_salary_median": 6800,
+    "five_year_salary_median": 12500
+  },
+  "campus_life": {
+    "transfer_success_rate": "65%",
+    "dormitory_rating": {
+      "Guangzhou": "Low",
+      "Foshan": "High"
+    },
+    "culture_tag": "Pragmatic / Certification-oriented"
+  },
+  "overall_evaluation": {
+    "score": 3.87,
+    "rating": "B+",
+    "recommendation": "Ideal for GBA-based career seekers in finance and law."
+  }
+}

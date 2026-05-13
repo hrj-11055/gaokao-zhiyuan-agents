@@ -1,0 +1,43 @@
+{
+  "university_name": "四川农业大学",
+  "short_name": "SICAU",
+  "tags": [
+    "211工程",
+    "双一流",
+    "农林类",
+    "成都高校"
+  ],
+  "academic": {
+    "a_minus_subjects": [
+      "畜牧学",
+      "作物学"
+    ],
+    "b_plus_subjects": [
+      "兽医学",
+      "草学"
+    ],
+    "esi_top_1_percent": 9,
+    "national_key_labs": 1
+  },
+  "admission_stats": {
+    "sc_province_rank_liberal": 5800,
+    "sc_province_rank_science": 52000,
+    "admission_difficulty_index": 7.5
+  },
+  "employment": {
+    "further_study_rate": "34.8%",
+    "recommendation_rate": "16.5%",
+    "top_industry": "现代农牧业",
+    "median_salary_5y": 9200
+  },
+  "campus": {
+    "main_campus": "成都温江",
+    "other_campuses": [
+      "雅安",
+      "都江堰"
+    ],
+    "dorm_quality": "A-",
+    "food_quality": "A+"
+  },
+  "comprehensive_score": 3.57
+}

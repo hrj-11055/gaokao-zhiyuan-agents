@@ -1,0 +1,40 @@
+{
+  "university_name": "衡阳师范学院",
+  "short_name": "衡师",
+  "location": {
+    "province": "湖南省",
+    "city": "衡阳市",
+    "campus": [
+      "东校区",
+      "西校区"
+    ]
+  },
+  "academic_level": {
+    "master_points": 9,
+    "key_labs": [
+      "国家地方联合工程实验室",
+      "湖南省重点实验室"
+    ],
+    "top_disciplines": [
+      "地理学",
+      "教育学",
+      "化学"
+    ]
+  },
+  "admission_stats": {
+    "hunan_history_rank": 24800,
+    "hunan_physics_rank": 140382,
+    "public_funded_normal_students": "Core Advantage"
+  },
+  "employment": {
+    "education_sector_rate": "55%",
+    "starting_salary_avg": 4800,
+    "further_study_rate": "15.2%"
+  },
+  "risk_factors": [
+    "School-enterprise cooperation supervision",
+    "Renaming university delay",
+    "Brain drain to Changsha"
+  ],
+  "comprehensive_score": 2.94
+}

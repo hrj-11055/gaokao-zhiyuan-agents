@@ -242,7 +242,7 @@ function submitResult() {
 }
 
 .option-item.option-selected {
-  background: linear-gradient(135deg, rgba($brand-primary-rgb, 0.08), rgba($brand-primary-rgb, 0.12));
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.08), rgba(249, 115, 22, 0.12));
   border-color: $brand-primary;
 }
 
@@ -250,7 +250,7 @@ function submitResult() {
   width: 40rpx;
   height: 40rpx;
   border-radius: 50%;
-  border: 2rpx solid $border-color;
+  border: 2rpx solid $border-light;
   margin-right: 20rpx;
   display: flex;
   align-items: center;
@@ -261,7 +261,7 @@ function submitResult() {
 
 .option-item.option-selected .option-radio {
   border-color: $brand-primary;
-  background: rgba($brand-primary-rgb, 0.1);
+  background: rgba(249, 115, 22, 0.1);
 }
 
 .radio-dot {

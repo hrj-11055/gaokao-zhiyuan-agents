@@ -1,0 +1,49 @@
+{
+  "university_details": {
+    "name": "苏州城市学院",
+    "former_name": "苏州大学文正学院",
+    "type": "公办本科",
+    "location": "江苏省苏州市吴中区",
+    "established_year": 1998,
+    "transition_year": 2021
+  },
+  "academic_stats": {
+    "provincial_first_class_majors": [
+      "信息工程",
+      "服装与服饰设计",
+      "物联网工程",
+      "汉语言文学",
+      "档案学"
+    ],
+    "master_point_status": "2026年冲刺中",
+    "doctor_point_status": "无",
+    "faculty_phd_ratio": "45%"
+  },
+  "admission_data_2024": {
+    "jiangsu_history_min_rank": 24175,
+    "jiangsu_physics_min_rank": 106680,
+    "competition_index": "High"
+  },
+  "employment_outcomes": {
+    "further_study_rate": "15.76%",
+    "local_employment_rate": "52.4%",
+    "median_starting_salary": 6650,
+    "top_industries": [
+      "Manufacturing",
+      "IT",
+      "Financial Services"
+    ]
+  },
+  "campus_features": {
+    "architect": "Wang Shu",
+    "landmark": "Library",
+    "scenic_area": "Shihu Lake"
+  },
+  "evaluation_scores": {
+    "academic": 2.5,
+    "employment": 3.5,
+    "location": 4.9,
+    "brand": 3.5,
+    "overall_weighted": 3.36
+  }
+}

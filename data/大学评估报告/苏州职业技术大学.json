@@ -1,0 +1,50 @@
+{
+  "university_details": {
+    "name": "苏州职业技术大学",
+    "short_name": "苏职大 / SVUT",
+    "location": "江苏省苏州市吴中区",
+    "type": "公办职业本科",
+    "established_year": "1981年（2025年更名大学）"
+  },
+  "academic_strength": {
+    "vocational_undergraduate_majors": 6,
+    "key_fields": [
+      "智能制造",
+      "集成电路",
+      "人工智能",
+      "大数据"
+    ],
+    "double_qualified_teacher_ratio": ">80%",
+    "national_training_bases": 3
+  },
+  "admission_data_2025": {
+    "jiangsu_physics_line": 505,
+    "jiangsu_history_line": 518,
+    "competition_level": "Medium-High"
+  },
+  "employment_outcomes": {
+    "employment_rate": ">96%",
+    "stay_in_suzhou_rate": "65%",
+    "top_employers": [
+      "Bosch",
+      "Inovance",
+      "Hengtong",
+      "Samsung"
+    ],
+    "starting_salary_median": 6200
+  },
+  "campus_life": {
+    "main_campus": "石湖校区",
+    "dorm_standard": "4-person room with AC/Private Bath",
+    "student_satisfaction_score": 4.2
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.8,
+    "graduate_value": 4.2,
+    "location_advantage": 4.9,
+    "globalization": 2.5,
+    "student_empowerment": 3.5,
+    "brand_asset": 3.8,
+    "weighted_total_score": 3.65
+  }
+}

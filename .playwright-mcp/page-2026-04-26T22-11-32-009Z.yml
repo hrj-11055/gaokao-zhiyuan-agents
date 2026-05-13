@@ -1,0 +1,541 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 医保局 工作人员 待遇 薪酬 公务员 事业编 2024
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E5%8C%BB%E4%BF%9D%E5%B1%80+%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98+%E5%BE%85%E9%81%87+%E8%96%AA%E9%85%AC+%E5%85%AC%E5%8A%A1%E5%91%98+%E4%BA%8B%E4%B8%9A%E7%BC%96+2024&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2217333644131505510122%22%2C%22ori_lid%22%3A%2217333644131505510122%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=f08d7980016b96ea&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%8C%BB%E4%BF%9D%E5%B1%80+%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98+%E5%BE%85%E9%81%87+%E8%96%AA%E9%85%AC+%E5%85%AC%E5%8A%A1%E5%91%98+%E4%BA%8B%E4%B8%9A%E7%BC%96+2024
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E5%8C%BB%E4%BF%9D%E5%B1%80+%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98+%E5%BE%85%E9%81%87+%E8%96%AA%E9%85%AC+%E5%85%AC%E5%8A%A1%E5%91%98+%E4%BA%8B%E4%B8%9A%E7%BC%96+2024
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=f08d7980016b96ea&ie=utf-8&wd=%E5%8C%BB%E4%BF%9D%E5%B1%80+%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98+%E5%BE%85%E9%81%87+%E8%96%AA%E9%85%AC+%E5%85%AC%E5%8A%A1%E5%91%98+%E4%BA%8B%E4%B8%9A%E7%BC%96+2024&rsv_spt=7&rsv_bp=1&f=8&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80+%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98+%E5%BE%85%E9%81%87+%E8%96%AA%E9%85%AC+%E5%85%AC%E5%8A%A1%E5%91%98+%E4%BA%8B%E4%B8%9A%E7%BC%96+2024&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%8C%BB%E4%BF%9D%E5%B1%80+%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98+%E5%BE%85%E9%81%87+%E8%96%AA%E9%85%AC+%E5%85%AC%E5%8A%A1%E5%91%98+%E4%BA%8B%E4%B8%9A%E7%BC%96+2024
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E5%8C%BB%E4%BF%9D%E5%B1%80+%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98+%E5%BE%85%E9%81%87+%E8%96%AA%E9%85%AC+%E5%85%AC%E5%8A%A1%E5%91%98+%E4%BA%8B%E4%B8%9A%E7%BC%96+2024
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E5%8C%BB%E4%BF%9D%E5%B1%80+%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98+%E5%BE%85%E9%81%87+%E8%96%AA%E9%85%AC+%E5%85%AC%E5%8A%A1%E5%91%98+%E4%BA%8B%E4%B8%9A%E7%BC%96+2024
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%8C%BB%E4%BF%9D%E5%B1%80+%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98+%E5%BE%85%E9%81%87+%E8%96%AA%E9%85%AC+%E5%85%AC%E5%8A%A1%E5%91%98+%E4%BA%8B%E4%B8%9A%E7%BC%96+2024
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  医保局公务员待遇好吗  医疗保障局是公务员还是事业编  医保局工作正式编制待遇怎么样  医保处是公务员吗  医保局是公务员编制吗  医保公务员补助怎么用    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e69]:
+              - cell "相关搜索  医保局公务员待遇好吗  医疗保障局是公务员还是事业编  医保局工作正式编制待遇怎么样  医保处是公务员吗  医保局是公务员编制吗  医保公务员补助怎么用    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 医保局公务员待遇好吗" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E5%85%AC%E5%8A%A1%E5%91%98%E5%BE%85%E9%81%87%E5%A5%BD%E5%90%97&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rfqid=f08d7980016b96ea&rsv_dl=0_prs_28616_1&rq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsf=101633403
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 医保局公务员待遇好吗
+                      - link " 医疗保障局是公务员还是事业编" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E5%B1%80%E6%98%AF%E5%85%AC%E5%8A%A1%E5%91%98%E8%BF%98%E6%98%AF%E4%BA%8B%E4%B8%9A%E7%BC%96&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rfqid=f08d7980016b96ea&rsv_dl=0_prs_28616_2&rq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsf=101636803
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 医疗保障局是公务员还是事业编
+                      - link " 医保局工作正式编制待遇怎么样" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E5%B7%A5%E4%BD%9C%E6%AD%A3%E5%BC%8F%E7%BC%96%E5%88%B6%E5%BE%85%E9%81%87%E6%80%8E%E4%B9%88%E6%A0%B7&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rfqid=f08d7980016b96ea&rsv_dl=0_prs_28616_3&rq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsf=101633403
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 医保局工作正式编制待遇怎么样
+                      - link " 医保处是公务员吗" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%A4%84%E6%98%AF%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%97&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rfqid=f08d7980016b96ea&rsv_dl=0_prs_28616_4&rq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsf=101636803
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 医保处是公务员吗
+                      - link " 医保局是公务员编制吗" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E6%98%AF%E5%85%AC%E5%8A%A1%E5%91%98%E7%BC%96%E5%88%B6%E5%90%97&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rfqid=f08d7980016b96ea&rsv_dl=0_prs_28616_5&rq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsf=101633403
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 医保局是公务员编制吗
+                      - link " 医保公务员补助怎么用" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%85%AC%E5%8A%A1%E5%91%98%E8%A1%A5%E5%8A%A9%E6%80%8E%E4%B9%88%E7%94%A8&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rfqid=f08d7980016b96ea&rsv_dl=0_prs_28616_6&rq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsf=101631203
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 医保公务员补助怎么用
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "“早上6点半 杭州东站全是孩子”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E6%97%A9%E4%B8%8A6%E7%82%B9%E5%8D%8A%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%E5%85%A8%E6%98%AF%E5%AD%A9%E5%AD%90%E2%80%9D&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "高市政府越过“最后一根红线”" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=d531CZQzBBUZF6fV8gyArZoirmqvs7eB92Gx6QXo7tfADhnZ1qFM1Fmuflg&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=61628yiJhNsbuOC4w8B55crAX8QYqt0aGNbwhwhvkKdof7fI1jGjmCCk94A&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=61628yiJhNsbuOC4w8B55crAX8QYqt0aGNbwhwhvkKdof7fI1jGjmCCk94A&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "女性多和好友聚会能“续命”" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=61628yiJhNsbuOC4w8B55crAX8QYqt0aGNbwhwhvkKdof7fI1jGjmCCk94A&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=61628yiJhNsbuOC4w8B55crAX8QYqt0aGNbwhwhvkKdof7fI1jGjmCCk94A&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=61628yiJhNsbuOC4w8B55crAX8QYqt0aGNbwhwhvkKdof7fI1jGjmCCk94A&rqid=f08d7980016b96ea&rsf=7e1c123655c4be9abdd86725590e4a15_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e208]:
+            - heading "医保局工作人员工资" [level=3] [ref=e211]:
+              - link "医保局工作人员工资" [ref=e212] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKXknOPC24mfAg0cWvOuryhWyni9xiIjTuPJYWd1t-KL9YwKGqR1rGw8mad2t47yBr4hd-XIzKwRCjMrZTYmOIN1d4HJLCHddeUdG6psFRiI_
+                - paragraph [ref=e215]:
+                  - emphasis [ref=e219]: 医保局工作人员工资
+            - generic [ref=e220]:
+              - link [ref=e222] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKXknOPC24mfAg0cWvOuryhWyni9xiIjTuPJYWd1t-KL9YwKGqR1rGw8mad2t47yBr4hd-XIzKwRCjMrZTYmOIN1d4HJLCHddeUdG6psFRiI_
+              - generic [ref=e227]:
+                - generic [ref=e232]:
+                  - text: 2026年4月10日
+                  - generic [ref=e233]:
+                    - text: 岗位工资体现工作人员所聘岗位的职责和要求,
+                    - emphasis [ref=e234]: 一般在1000-6000元范围内
+                    - text: "。 薪级工资则体现工作人员的工作表现和资历,通常在200-2000元之间。 绩效工资: 绩效工资主要根据工作人员的实绩和贡献来分配。 事业单位在核定的绩效工资总量内,按照规范的程序和要求进行自主分配。 津贴补贴: 对于在特殊岗位上工作的人员,事业单位会给"
+                - link "头像 法行宝" [ref=e239] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKXknOPC24mfAg0cWvOuryhWyni9xiIjTuPJYWd1t-KL9YwKGqR1rGw8mad2t47yBr4hd-XIzKwRCjMrZTYmOIN1d4HJLCHddeUdG6psFRiI_
+                  - img "头像" [ref=e242]
+                  - generic [ref=e243]: 法行宝
+                  - generic [ref=e245]: 
+          - generic [ref=e250]:
+            - heading "县级医保局工资一般多少 - 智能分身实时回复" [level=3] [ref=e252] [cursor=pointer]:
+              - link "县级医保局工资一般多少 - 智能分身实时回复" [ref=e253]:
+                - /url: http://www.baidu.com/link?url=93tHTD2twm36bVE55Kxq2epCBu3oq40VDYmOv8fyIfHeUDSWebaeRa_4d-Br_LPULEghqw4P8-sL_y6qZ75qgwcQefAs7NTDpZzODYjnn_hiKD6g6AqRn80SuEZ4Vjj1YY28zfr8jORWWY56w72yS9SLDN76huaWjvj8RLpzKY-Xt9H1tWxHBrgBWLMjmRRf9rb5vzq9GgYGigMLNwYUYRFevAkNq1fFfji3UcllHZG-BcpytmU6DFv7_HB9k3e2Ud6olOEqLM-KRzzReZYNtKCtIgYKcIKQ_NfXwEd7fhqaDQi5CP4DwExwjXISZRDro3L8E2PvLNczxjPTGF2LBfe_HHb4McAO2Qc9RJsDXtW4RrzgQzo3yOURK-AvOl2nVe8nomnTIgnYhQilzAeAJ23kHYSw738868XPk364kalfx5-bb19fGynhfT3SoqZ3e4qkJIseX6wB9hIe0Sw1JtNyS3V8PC-nqOSfUmwhc0SBnhabAf_rXuysBp9r3h86A3T6OGx-Bk9HNN2jAZAQdO58uER3K-I6pZlF8FflZplfrFRq4p6HEhM_shKU-IPnRLet0vehQJKaY3PYjphkcCUzyIztCU2nZk1SdyIXo9EivazP_G4kIAfzrfuOWjLVAGhy7eGZyXuyWy06mdJB-quo037xh5NxPUCYNV32cHhqBeu7Ihbd_awLenE-LQy7-c0FsQ6tPOeEz_YZutM03bdKLp0t91dSAWogDzz3a0H1gnC7ASZO1MRp0wn4AZ9N
+                - generic [ref=e254]:
+                  - text: 县级
+                  - emphasis [ref=e255]: 医保局
+                  - text: 工资一般多少 - 智能分身实时回复
+            - generic [ref=e256]:
+              - link "头像" [ref=e257] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=93tHTD2twm36bVE55Kxq2epCBu3oq40VDYmOv8fyIfHeUDSWebaeRa_4d-Br_LPULEghqw4P8-sL_y6qZ75qgwcQefAs7NTDpZzODYjnn_hiKD6g6AqRn80SuEZ4Vjj1YY28zfr8jORWWY56w72yS9SLDN76huaWjvj8RLpzKY-Xt9H1tWxHBrgBWLMjmRRf9rb5vzq9GgYGigMLNwYUYRFevAkNq1fFfji3UcllHZG-BcpytmU6DFv7_HB9k3e2Ud6olOEqLM-KRzzReZYNtKCtIgYKcIKQ_NfXwEd7fhqaDQi5CP4DwExwjXISZRDro3L8E2PvLNczxjPTGF2LBfe_HHb4McAO2Qc9RJsDXtW4RrzgQzo3yOURK-AvOl2nVe8nomnTIgnYhQilzAeAJ23kHYSw738868XPk364kalfx5-bb19fGynhfT3SoqZ3e4qkJIseX6wB9hIe0Sw1JtNyS3V8PC-nqOSfUmwhc0SBnhabAf_rXuysBp9r3h86A3T6OGx-Bk9HNN2jAZAQdO58uER3K-I6pZlF8FflZplfrFRq4p6HEhM_shKU-IPnRLet0vehQJKaY3PYjphkcCUzyIztCU2nZk1SdyIXo9EivazP_G4kIAfzrfuOWjLVAGhy7eGZyXuyWy06mdJB-quo037xh5NxPUCYNV32cHhqBeu7Ihbd_awLenE-LQy7-c0FsQ6tPOeEz_YZutM03bdKLp0t91dSAWogDzz3a0H1gnC7ASZO1MRp0wn4AZ9N
+                - img "头像" [ref=e259]
+              - link "就那点事儿百姓各类信息 61.6万人聊过嗨！我是百姓信息小灵通，生活琐事、学习难题、工作挑战都能搞定，为您送上精准信息和实用妙招！" [ref=e260]:
+                - /url: http://www.baidu.com/link?url=93tHTD2twm36bVE55Kxq2epCBu3oq40VDYmOv8fyIfHeUDSWebaeRa_4d-Br_LPULEghqw4P8-sL_y6qZ75qgwcQefAs7NTDpZzODYjnn_hiKD6g6AqRn80SuEZ4Vjj1YY28zfr8jORWWY56w72yS9SLDN76huaWjvj8RLpzKY-Xt9H1tWxHBrgBWLMjmRRf9rb5vzq9GgYGigMLNwYUYRFevAkNq1fFfji3UcllHZG-BcpytmU6DFv7_HB9k3e2Ud6olOEqLM-KRzzReZYNtKCtIgYKcIKQ_NfXwEd7fhqaDQi5CP4DwExwjXISZRDro3L8E2PvLNczxjPTGF2LBfe_HHb4McAO2Qc9RJsDXtW4RrzgQzo3yOURK-AvOl2nVe8nomnTIgnYhQilzAeAJ23kHYSw738868XPk364kalfx5-bb19fGynhfT3SoqZ3e4qkJIseX6wB9hIe0Sw1JtNyS3V8PC-nqOSfUmwhc0SBnhabAf_rXuysBp9r3h86A3T6OGx-Bk9HNN2jAZAQdO58uER3K-I6pZlF8FflZplfrFRq4p6HEhM_shKU-IPnRLet0vehQJKaY3PYjphkcCUzyIztCU2nZk1SdyIXo9EivazP_G4kIAfzrfuOWjLVAGhy7eGZyXuyWy06mdJB-quo037xh5NxPUCYNV32cHhqBeu7Ihbd_awLenE-LQy7-c0FsQ6tPOeEz_YZutM03bdKLp0t91dSAWogDzz3a0H1gnC7ASZO1MRp0wn4AZ9N
+                - generic [ref=e261]:
+                  - generic [ref=e262]: 就那点事儿百姓各类信息
+                  - generic [ref=e263]: 61.6万人聊过嗨！我是百姓信息小灵通，生活琐事、学习难题、工作挑战都能搞定，为您送上精准信息和实用妙招！
+            - paragraph [ref=e265]:
+              - text: 县级
+              - emphasis [ref=e266]: 医保局
+              - text: 的工资水平受地区经济水平、财政状况、职位等级、编制类型（
+              - emphasis [ref=e267]: 公务员
+              - text: /
+              - emphasis [ref=e268]: 事业编
+              - text: /合同制）等因素影响，具体范围大致如下： 一、基本工资结构 1.
+              - emphasis [ref=e269]: 公务员
+              - text: 编制（如行政岗） - 基本工资：按国家统一职级标准（如科员约3000-4000元/月，副科级约4000-5000元/月）。 - 补贴津贴：包括生活补贴、交通补贴、通讯补贴等，因地区差异较大（如经济发达地区可能多1000-2000元/月）。 - 年终奖/绩效：部分县市有年终考核奖（1-3个月工资）。 - 合计：月收入通常 4000-7000元（中西部欠发达地区偏低，东部沿海或经济强县可能更高）。 2.
+              - emphasis [ref=e270]: 事业编
+              - text: 制（如医保中心
+              - emphasis [ref=e271]: 工作人员
+              - text: ） - 专业技术岗：按职称等级（初级约3000-5000元/月，中级5000-7000元/月）。 - 管理岗：类似
+              - emphasis [ref=e272]: 公务员
+              - text: 科员级。 - 合计：与
+              - emphasis [ref=e273]: 公务员
+              - text: 编制相近，但绩效分配可能不同。 3. 合同制人员 - 工资较低，通常 2000-4000元/月，五险一金按最低标准缴纳。 二、地区差异示例 - 东部沿海县市（如浙江、江苏）：
+              - emphasis [ref=e274]: 公务员
+              - text: 科员年收入约8-12万元（含公积金）。 - 中西部普通县市：
+              - emphasis [ref=e275]: 公务员
+              - text: 科员年收入约5-8万元。 - 贫困县：可能低于5万元，但有专项补贴。 三、其他福利 - 五险一金：
+              - emphasis [ref=e276]: 公务员
+              - text: 和
+              - emphasis [ref=e277]: 事业编
+              - text: 缴费比例高（如公积金12%）。 - 社保
+              - emphasis [ref=e278]: 待遇
+              - text: ：医保报销比例高，部分有补充医疗保险。 - 稳定性：编制内岗位稳定性强，调薪随政策调整。 四、注意事项 - 具体薪资需咨询当地人社局或
+              - emphasis [ref=e279]: 医保局
+              - text: ，同一省内不同县也可能差异显著。 - 改革影响：部分地区推行绩效改革，基本工资占比降低，绩效浮动加大。 建议通过当地政府官网、招聘公告或熟人了解最新情况。
+            - generic [ref=e284] [cursor=pointer]:
+              - generic [ref=e285]: 文心智能体·AI生成
+              - generic [ref=e287]: 
+          - generic [ref=e291]:
+            - heading "医保局工资大概是多少" [level=3] [ref=e294]:
+              - link "医保局工资大概是多少" [ref=e295] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKXknOPC24mfAg0cWvOuryhWyni9xiIjTuPJYWd1t-KL9YwKGqR1rGw8mad2t47yBrIoXEoXCgTBlUuCZ_gc9XwFcg1Gqa3MJ2IecZ1UgE046
+                - paragraph [ref=e298]:
+                  - generic [ref=e301]:
+                    - emphasis [ref=e302]: 医保局工资
+                    - text: 大概是多少
+            - generic [ref=e303]:
+              - link [ref=e305] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKXknOPC24mfAg0cWvOuryhWyni9xiIjTuPJYWd1t-KL9YwKGqR1rGw8mad2t47yBrIoXEoXCgTBlUuCZ_gc9XwFcg1Gqa3MJ2IecZ1UgE046
+              - generic [ref=e310]:
+                - generic [ref=e315]:
+                  - text: 6天前
+                  - generic [ref=e316]:
+                    - text: 医保局工资大概是多少
+                    - emphasis [ref=e317]: 医保局的工资大概在每月4500到5000元左右
+                    - text: 。这一数字显示了医保局员工的基本收入水平,但请注意,具体工资可能因个人职位、工作经验、专业技能等因素而有所差异。 医保局是负责医疗保险管理和监督的机构,其主要职责包括制定和执行医疗保险政策,监督医疗保险基金的使用情况,以及提供医疗保险服务等。因此...
+                - link "头像 法行宝" [ref=e322] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKXknOPC24mfAg0cWvOuryhWyni9xiIjTuPJYWd1t-KL9YwKGqR1rGw8mad2t47yBrIoXEoXCgTBlUuCZ_gc9XwFcg1Gqa3MJ2IecZ1UgE046
+                  - img "头像" [ref=e325]
+                  - generic [ref=e326]: 法行宝
+                  - generic [ref=e328]: 
+          - generic [ref=e332]:
+            - heading "2024年全国医疗保障事业发展统计公报_部门动态_中国政府网" [level=3] [ref=e335]:
+              - link "2024年全国医疗保障事业发展统计公报_部门动态_中国政府网" [ref=e336] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=GGhTPvUHHVJJgoJvh0fC3xIAb21K_B2N2XOTFBm_0iONY9Mn4qcxZMd0MspSpDMlgqWa9MsAnpGVeAPt1YeFHaM1DOzB73MCX0KsMr-0wCm
+                - paragraph [ref=e339]:
+                  - generic [ref=e342]:
+                    - emphasis [ref=e343]: "2024"
+                    - text: 年全国
+                    - emphasis [ref=e344]: 医疗保障事业
+                    - text: 发展统计公报_部门动态_中国政府网
+            - generic [ref=e345]:
+              - link [ref=e347] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=GGhTPvUHHVJJgoJvh0fC3xIAb21K_B2N2XOTFBm_0iONY9Mn4qcxZMd0MspSpDMlgqWa9MsAnpGVeAPt1YeFHaM1DOzB73MCX0KsMr-0wCm
+              - generic [ref=e352]:
+                - generic [ref=e357]:
+                  - text: 2025年7月14日
+                  - generic [ref=e358]:
+                    - emphasis [ref=e359]: 2024年居民医保次均住院费用7408.08元
+                    - text: ",其中三级、二级、一级及以下医疗机构(含未定级)的次均住院费用分别为11956元、5852元、2730元。居民医保参保人员次均住院床日8.5天,其中三级、二级、一级及以下医疗机构(含未定级)的次均住院床日分别为7.7天、9.5天、8.2天。 2020—2024年居民医保次均住院费用和出院人次 单..."
+                - generic [ref=e361]:
+                  - link "头像 中国政府网" [ref=e364] [cursor=pointer]:
+                    - /url: http://www.baidu.com/link?url=GGhTPvUHHVJJgoJvh0fC3xIAb21K_B2N2XOTFBm_0iONY9Mn4qcxZMd0MspSpDMlgqWa9MsAnpGVeAPt1YeFHaM1DOzB73MCX0KsMr-0wCm
+                    - img "头像" [ref=e367]
+                    - generic [ref=e368]: 中国政府网
+                    - generic [ref=e370]: 
+                  - generic [ref=e372]: 党政机关
+          - generic [ref=e374]:
+            - generic [ref=e375]: 大家还在搜
+            - generic [ref=e376]:
+              - link "医保局公务员待遇好吗" [ref=e377] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E5%85%AC%E5%8A%A1%E5%91%98%E5%BE%85%E9%81%87%E5%A5%BD%E5%90%97&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=39399rY%2BDq314ojIOA7LEqfD0BYnW1iJpJ35EWEX7T0K9GQ1gq1Ywar79jw&rsf=101633403&rsv_dl=0_prs_28608_1
+                - generic [ref=e379]: 医保局公务员待遇好吗
+              - link "医疗保障局是公务员还是事业编" [ref=e380] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E5%B1%80%E6%98%AF%E5%85%AC%E5%8A%A1%E5%91%98%E8%BF%98%E6%98%AF%E4%BA%8B%E4%B8%9A%E7%BC%96&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=39399rY%2BDq314ojIOA7LEqfD0BYnW1iJpJ35EWEX7T0K9GQ1gq1Ywar79jw&rsf=101636803&rsv_dl=0_prs_28608_2
+                - generic [ref=e382]: 医疗保障局是公务员还是事业编
+              - link "医保局工作正式编制待遇怎么样" [ref=e383] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E5%B7%A5%E4%BD%9C%E6%AD%A3%E5%BC%8F%E7%BC%96%E5%88%B6%E5%BE%85%E9%81%87%E6%80%8E%E4%B9%88%E6%A0%B7&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=39399rY%2BDq314ojIOA7LEqfD0BYnW1iJpJ35EWEX7T0K9GQ1gq1Ywar79jw&rsf=101633403&rsv_dl=0_prs_28608_3
+                - generic [ref=e385]: 医保局工作正式编制待遇怎么样
+              - link "医保处是公务员吗" [ref=e386] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%A4%84%E6%98%AF%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%97&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=39399rY%2BDq314ojIOA7LEqfD0BYnW1iJpJ35EWEX7T0K9GQ1gq1Ywar79jw&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e388]: 医保处是公务员吗
+              - link "医保局是公务员编制吗" [ref=e389] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E6%98%AF%E5%85%AC%E5%8A%A1%E5%91%98%E7%BC%96%E5%88%B6%E5%90%97&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=39399rY%2BDq314ojIOA7LEqfD0BYnW1iJpJ35EWEX7T0K9GQ1gq1Ywar79jw&rsf=101633403&rsv_dl=0_prs_28608_5
+                - generic [ref=e391]: 医保局是公务员编制吗
+              - link "医保公务员补助怎么用" [ref=e392] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%85%AC%E5%8A%A1%E5%91%98%E8%A1%A5%E5%8A%A9%E6%80%8E%E4%B9%88%E7%94%A8&usm=1&ie=utf-8&rsv_pq=f08d7980016b96ea&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&rsv_t=39399rY%2BDq314ojIOA7LEqfD0BYnW1iJpJ35EWEX7T0K9GQ1gq1Ywar79jw&rsf=101631203&rsv_dl=0_prs_28608_6
+                - generic [ref=e394]: 医保公务员补助怎么用
+          - generic [ref=e398]:
+            - heading "2024年广东省考公告发布时间_医保局公务员待遇和晋升情况介绍" [level=3] [ref=e401]:
+              - link "2024年广东省考公告发布时间_医保局公务员待遇和晋升情况介绍" [ref=e402] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=93tHTD2twm36bVE55Kxq2nQe70I-rRCYH6Ic-iJXzgAvPBK00KBwi_5sW_IKd2jXrktdZNnSniIxtT9dt11nqK
+                - paragraph [ref=e405]:
+                  - generic [ref=e408]:
+                    - emphasis [ref=e409]: "2024"
+                    - text: 年广东
+                    - emphasis [ref=e410]: 省考
+                    - text: 公告发布时间_
+                    - emphasis [ref=e411]: 医保局公务员待遇
+                    - text: 和晋升情况介绍
+            - generic [ref=e416]:
+              - text: 2024年1月3日
+              - generic [ref=e417]:
+                - text: 二、
+                - emphasis [ref=e418]: 工资待遇
+                - text: 。 4颗星。通常比其他
+                - emphasis [ref=e419]: 事业
+                - text: 单位略高一些,但具体数额因地区和级别而异,跟地方财政有关系。 三、加班情况。 1颗星。因岗位而异,但总体来说不算很累,因为
+                - emphasis [ref=e420]: 医保局
+                - text: 的
+                - emphasis [ref=e421]: 工作
+                - text: 主要是对参保
+                - emphasis [ref=e422]: 人员
+                - text: 的医疗保险事务进行管理和服务,不需要经常外出或进行高强度的体力劳动。
+            - link "广东华图" [ref=e427] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=93tHTD2twm36bVE55Kxq2nQe70I-rRCYH6Ic-iJXzgAvPBK00KBwi_5sW_IKd2jXrktdZNnSniIxtT9dt11nqK
+              - generic [ref=e428]: 广东华图
+              - generic [ref=e430]: 
+          - generic [ref=e434]:
+            - heading "市人社局市医保局市税务局关于公布2024年度全市职工平均工资及..." [level=3] [ref=e437]:
+              - link "市人社局市医保局市税务局关于公布2024年度全市职工平均工资及..." [ref=e438] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKKQk9MglGPTsq0nYxOdm3WMUzt-7WgKg4e1GYHDkPgvrkYBuyFNHNqmtsncnKmvbvGUYWJtFcFU59cf-mG0Cn__QhmNP2I4SOykAaapkmAdeL3dFq5s6f3RClNz5KSgNl_
+                - paragraph [ref=e441]:
+                  - generic [ref=e444]:
+                    - text: 市人社局市
+                    - emphasis [ref=e445]: 医保局
+                    - text: 市税务局关于公布
+                    - emphasis [ref=e446]: "2024"
+                    - text: 年度全市职工平均
+                    - emphasis [ref=e447]: 工资
+                    - text: 及...
+            - generic [ref=e452]:
+              - text: 2025年9月18日
+              - generic [ref=e453]:
+                - text: (一)相关部门管理的退休
+                - emphasis [ref=e454]: 人员
+                - text: 和军队无军籍退休人员,参加职工基本
+                - emphasis [ref=e455]: 医疗保险
+                - text: (含生育保险)筹资标准每年为11328元,每月为944元,其中,职工基本医疗保险每年为10872元、每月为906元,生育保险每年为456元、每月为38元。 (二)安置在本市的军队退休干部参加职工基本医疗保险(含生育保险)和
+                - emphasis [ref=e456]: 公务员
+                - text: 医疗补助筹资标准每年为17568元、...
+            - link "头像 天津市人力资源和社会保障局" [ref=e461] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKKQk9MglGPTsq0nYxOdm3WMUzt-7WgKg4e1GYHDkPgvrkYBuyFNHNqmtsncnKmvbvGUYWJtFcFU59cf-mG0Cn__QhmNP2I4SOykAaapkmAdeL3dFq5s6f3RClNz5KSgNl_
+              - img "头像" [ref=e464]
+              - generic [ref=e465]: 天津市人力资源和社会保障局
+              - generic [ref=e467]: 
+          - generic [ref=e471]:
+            - heading "医保局事业编待遇_律临" [level=3] [ref=e474]:
+              - link "医保局事业编待遇_律临" [ref=e475] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKZfecmzxECIKqBFYE9F9l3ma5pVokG0N8jWFgSbL0vR5Aib4x5URCCfZkuddUDjJJlry2zicJziUolNTcFjZP9_
+                - paragraph [ref=e478]:
+                  - generic [ref=e481]:
+                    - emphasis [ref=e482]: 医保局事业编待遇
+                    - text: _律临
+            - generic [ref=e487]:
+              - text: 2024年6月14日
+              - generic [ref=e488]:
+                - text: 医保局事业编的待遇主要包括基本工资、绩效工资、津贴补贴以及按照国家规定参加的社会保险等。以下将从法律角度对
+                - emphasis [ref=e489]: 医保局事业编待遇
+                - text: "进行详细分析: 一、工资构成 基本工资:根据《事业单位人事管理条例》第三十二条,事业单位"
+                - emphasis [ref=e490]: 工作人员工资
+                - text: 包括基本工资。具体标准因地区、岗位等因素而异,一般参照当地
+                - emphasis [ref=e491]: 公务员
+                - text: 的工资水平来确定。
+            - link "头像 律临" [ref=e496] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKZfecmzxECIKqBFYE9F9l3ma5pVokG0N8jWFgSbL0vR5Aib4x5URCCfZkuddUDjJJlry2zicJziUolNTcFjZP9_
+              - img "头像" [ref=e499]
+              - generic [ref=e500]: 律临
+              - generic [ref=e502]: 
+          - generic [ref=e506]:
+            - heading "医保局雇员的工资是多少?_网友(匿名用户)职场问答-职Q!" [level=3] [ref=e509]:
+              - link "医保局雇员的工资是多少?_网友(匿名用户)职场问答-职Q!" [ref=e510] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKZfecmzxECIKqBFYE9F9l3m4UQdJtV2-HS6GGJiFGB4_MoC8fxivInzkEUxJiuRzd_
+                - paragraph [ref=e513]:
+                  - generic [ref=e516]:
+                    - emphasis [ref=e517]: 医保局
+                    - text: 雇员的
+                    - emphasis [ref=e518]: 工资
+                    - text: 是多少?_网友(匿名用户)职场问答-职Q!
+            - generic [ref=e523]:
+              - text: 2026年4月11日
+              - generic [ref=e524]:
+                - emphasis [ref=e525]: 医保局
+                - text: 雇员的
+                - emphasis [ref=e526]: 工资
+                - text: 是每月3000至4000元，但根据所属地区和所属行业性质，其工资会有所不同，具体需要以...
+            - link "职Q" [ref=e531] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=F8eFc3rhlAMWWQgR4BfLKZfecmzxECIKqBFYE9F9l3m4UQdJtV2-HS6GGJiFGB4_MoC8fxivInzkEUxJiuRzd_
+              - generic [ref=e532]: 职Q
+              - generic [ref=e534]: 
+          - generic [ref=e544]:
+            - heading "温州市2024年度公务员基本医疗保险待遇简明表" [level=3] [ref=e547]:
+              - link "温州市2024年度公务员基本医疗保险待遇简明表" [ref=e548] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=b7crDNk8GDKhiweSAGhEJ9cV1uExyD4BVUU3ZVVjPDj_5KGkQqgNZC2dyHnRHyPPiDyzFuufCa-8UvRCJFz9mFLxI4_RiHe93gF_2H4h-9O
+                - paragraph [ref=e551]:
+                  - generic [ref=e554]:
+                    - text: 温州市
+                    - emphasis [ref=e555]: "2024"
+                    - text: 年度
+                    - emphasis [ref=e556]: 公务员
+                    - text: 基本
+                    - emphasis [ref=e557]: 医疗保险待遇
+                    - text: 简明表
+            - generic [ref=e562]:
+              - text: 2024年10月10日
+              - generic [ref=e563]:
+                - text: 1、每年1月1日至12月31日为职工
+                - emphasis [ref=e564]: 医疗保险
+                - text: 费用结算年度。 2、上述医疗费用指符合基本医疗保险有关规定的费用。参保
+                - emphasis [ref=e565]: 人员
+                - text: 符合基本医疗保险范围的住院和特殊病种门诊医疗费用
+                - emphasis [ref=e566]: "2024"
+                - text: 年度统筹基金
+                - emphasis [ref=e567]: 医保
+                - text: 合规费用最高限额为535464元。 3、年度内只设一次住院起付标准,年度内发生多次住院的,参保人起付段支付金额全年累计,起付段计付...
+            - link "头像 泰顺县人民政府" [ref=e572] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=b7crDNk8GDKhiweSAGhEJ9cV1uExyD4BVUU3ZVVjPDj_5KGkQqgNZC2dyHnRHyPPiDyzFuufCa-8UvRCJFz9mFLxI4_RiHe93gF_2H4h-9O
+              - img "头像" [ref=e575]
+              - generic [ref=e576]: 泰顺县人民政府
+              - generic [ref=e578]: 
+        - generic [ref=e581]:
+          - generic [ref=e582]: 相关搜索
+          - table [ref=e583]:
+            - rowgroup [ref=e584]:
+              - row "医保局公务员待遇好吗 医疗保障局是公务员还是事业编" [ref=e585]:
+                - cell "医保局公务员待遇好吗" [ref=e586]:
+                  - link "医保局公务员待遇好吗" [ref=e587] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E5%85%AC%E5%8A%A1%E5%91%98%E5%BE%85%E9%81%87%E5%A5%BD%E5%90%97&rsf=101633403&rsp=0&f=1&rs_src=0&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&rsv_dl=brs_28338_1
+                    - generic [ref=e589]: 医保局公务员待遇好吗
+                - cell "医疗保障局是公务员还是事业编" [ref=e590]:
+                  - link "医疗保障局是公务员还是事业编" [ref=e591] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E5%B1%80%E6%98%AF%E5%85%AC%E5%8A%A1%E5%91%98%E8%BF%98%E6%98%AF%E4%BA%8B%E4%B8%9A%E7%BC%96&rsf=101636803&rsp=1&f=1&rs_src=0&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&rsv_dl=brs_28338_2
+                    - generic [ref=e593]: 医疗保障局是公务员还是事业编
+              - row "医保局工作正式编制待遇怎么样 在医保局工作工资待遇" [ref=e594]:
+                - cell "医保局工作正式编制待遇怎么样" [ref=e595]:
+                  - link "医保局工作正式编制待遇怎么样" [ref=e596] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E5%B7%A5%E4%BD%9C%E6%AD%A3%E5%BC%8F%E7%BC%96%E5%88%B6%E5%BE%85%E9%81%87%E6%80%8E%E4%B9%88%E6%A0%B7&rsf=101633403&rsp=2&f=1&rs_src=0&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&rsv_dl=brs_28338_3
+                    - generic [ref=e598]: 医保局工作正式编制待遇怎么样
+                - cell "在医保局工作工资待遇" [ref=e599]:
+                  - link "在医保局工作工资待遇" [ref=e600] [cursor=pointer]:
+                    - /url: /s?wd=%E5%9C%A8%E5%8C%BB%E4%BF%9D%E5%B1%80%E5%B7%A5%E4%BD%9C%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87&rsf=101633403&rsp=3&f=1&rs_src=0&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&rsv_dl=brs_28338_4
+                    - generic [ref=e602]: 在医保局工作工资待遇
+              - row "医保局事业编待遇怎么样 事业编制人员医保报销比例" [ref=e603]:
+                - cell "医保局事业编待遇怎么样" [ref=e604]:
+                  - link "医保局事业编待遇怎么样" [ref=e605] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E4%BA%8B%E4%B8%9A%E7%BC%96%E5%BE%85%E9%81%87%E6%80%8E%E4%B9%88%E6%A0%B7&rsf=101633403&rsp=4&f=1&rs_src=0&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&rsv_dl=brs_28338_5
+                    - generic [ref=e607]: 医保局事业编待遇怎么样
+                - cell "事业编制人员医保报销比例" [ref=e608]:
+                  - link "事业编制人员医保报销比例" [ref=e609] [cursor=pointer]:
+                    - /url: /s?wd=%E4%BA%8B%E4%B8%9A%E7%BC%96%E5%88%B6%E4%BA%BA%E5%91%98%E5%8C%BB%E4%BF%9D%E6%8A%A5%E9%94%80%E6%AF%94%E4%BE%8B&rsf=101631203&rsp=5&f=1&rs_src=0&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&rsv_dl=brs_28338_6
+                    - generic [ref=e611]: 事业编制人员医保报销比例
+              - row "事业单位有公务员医疗补助 医保局事业单位待遇" [ref=e612]:
+                - cell "事业单位有公务员医疗补助" [ref=e613]:
+                  - link "事业单位有公务员医疗补助" [ref=e614] [cursor=pointer]:
+                    - /url: /s?wd=%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E6%9C%89%E5%85%AC%E5%8A%A1%E5%91%98%E5%8C%BB%E7%96%97%E8%A1%A5%E5%8A%A9&rsf=101631203&rsp=6&f=1&rs_src=0&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&rsv_dl=brs_28338_7
+                    - generic [ref=e616]: 事业单位有公务员医疗补助
+                - cell "医保局事业单位待遇" [ref=e617]:
+                  - link "医保局事业单位待遇" [ref=e618] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E5%BE%85%E9%81%87&rsf=101633403&rsp=7&f=1&rs_src=0&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&rsv_dl=brs_28338_8
+                    - generic [ref=e620]: 医保局事业单位待遇
+              - row "医保局编内人员工资待遇 医保处是公务员吗" [ref=e621]:
+                - cell "医保局编内人员工资待遇" [ref=e622]:
+                  - link "医保局编内人员工资待遇" [ref=e623] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%E7%BC%96%E5%86%85%E4%BA%BA%E5%91%98%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87&rsf=101636803&rsp=8&f=1&rs_src=0&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&rsv_dl=brs_28338_9
+                    - generic [ref=e625]: 医保局编内人员工资待遇
+                - cell "医保处是公务员吗" [ref=e626]:
+                  - link "医保处是公务员吗" [ref=e627] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%A4%84%E6%98%AF%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%97&rsf=101636803&rsp=9&f=1&rs_src=0&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&rsv_dl=brs_28338_10
+                    - generic [ref=e629]: 医保处是公务员吗
+      - generic [ref=e632]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e633]:
+          - generic [ref=e634]: "1"
+        - link "2" [ref=e635] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&pn=10&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&ie=utf-8&usm=1&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&topic_pn=
+          - generic [ref=e636]: "2"
+        - link "3" [ref=e637] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&pn=20&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&ie=utf-8&usm=1&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&topic_pn=
+          - generic [ref=e638]: "3"
+        - link "4" [ref=e639] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&pn=30&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&ie=utf-8&usm=1&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&topic_pn=
+          - generic [ref=e640]: "4"
+        - link "5" [ref=e641] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&pn=40&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&ie=utf-8&usm=1&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&topic_pn=
+          - generic [ref=e642]: "5"
+        - link "6" [ref=e643] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&pn=50&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&ie=utf-8&usm=1&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&topic_pn=
+          - generic [ref=e644]: "6"
+        - link "7" [ref=e645] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&pn=60&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&ie=utf-8&usm=1&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&topic_pn=
+          - generic [ref=e646]: "7"
+        - link "8" [ref=e647] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&pn=70&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&ie=utf-8&usm=1&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&topic_pn=
+          - generic [ref=e648]: "8"
+        - link "9" [ref=e649] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&pn=80&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&ie=utf-8&usm=1&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&topic_pn=
+          - generic [ref=e650]: "9"
+        - link "10" [ref=e651] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&pn=90&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&ie=utf-8&usm=1&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&topic_pn=
+          - generic [ref=e652]: "10"
+        - link "下一页" [ref=e653] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&pn=10&oq=%E5%8C%BB%E4%BF%9D%E5%B1%80%20%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%20%E5%BE%85%E9%81%87%20%E8%96%AA%E9%85%AC%20%E5%85%AC%E5%8A%A1%E5%91%98%20%E4%BA%8B%E4%B8%9A%E7%BC%96%202024&ie=utf-8&usm=1&rsv_pq=f08d7980016b96ea&rsv_t=c2043NP%2BL9yPSGPmeGFhUStvWSucRKhgbup3p2ILJ3hZ99oDdcFYlDQcG4A&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e654]
+      - generic [ref=e657]:
+        - link "帮助" [ref=e658] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e659] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e660] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e661] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

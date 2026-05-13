@@ -1,0 +1,57 @@
+{
+  "university_name": "湖北警官学院",
+  "short_name": "湖北警院 / HBPGC",
+  "location": {
+    "province": "湖北",
+    "city": "武汉",
+    "campus": [
+      "南校区",
+      "北校区"
+    ]
+  },
+  "academic": {
+    "key_disciplines": [
+      "侦查学",
+      "治安学",
+      "刑事科学技术"
+    ],
+    "national_first_class_majors": 2,
+    "academician_count": 0
+  },
+  "admission_profile": {
+    "difficulty_level": "高（尤其是女生）",
+    "special_requirements": [
+      "政审",
+      "体测",
+      "面试"
+    ],
+    "avg_rank_hubei_history_female": "Top 1%",
+    "avg_rank_hubei_physics_male": "Top 10%"
+  },
+  "employment": {
+    "core_competitiveness": "公安联考",
+    "police_entry_rate_police_majors": ">90%",
+    "primary_employers": [
+      "湖北省公安系统"
+    ],
+    "starting_salary_avg": 6000
+  },
+  "culture": {
+    "management_style": "准军事化",
+    "key_values": [
+      "忠诚",
+      "严谨",
+      "勤奋",
+      "开拓"
+    ]
+  },
+  "scores": {
+    "academic_capital": 2.5,
+    "graduate_value": 4.8,
+    "location_power": 4.0,
+    "globalization": 1.5,
+    "student_empowerment": 1.5,
+    "brand_asset": 4.0,
+    "overall_weighted_score": 3.415
+  }
+}

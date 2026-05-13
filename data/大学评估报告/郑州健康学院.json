@@ -1,0 +1,38 @@
+{
+  "university_details": {
+    "name": "郑州健康学院",
+    "former_name": "郑州澍青医学高等专科学校",
+    "established": 1984,
+    "upgrade_to_undergraduate": 2025,
+    "location": [
+      "郑州马寨校区",
+      "焦作修武校区"
+    ],
+    "type": "Private Undergraduate"
+  },
+  "academic_stats": {
+    "a_plus_disciplines": 0,
+    "key_majors": [
+      "Nursing",
+      "Rehabilitation Therapeutics",
+      "Pharmacy"
+    ],
+    "faculty_with_clinical_exp_rate": ">60%"
+  },
+  "admission_predict_2025": {
+    "henan_liberal_arts_rank": 115000,
+    "henan_science_rank": 285000
+  },
+  "employment_landscape": {
+    "primary_medical_sector_rate": "65%",
+    "alumni_network_strength": "High (Henan Province)",
+    "avg_starting_salary": 3800
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.3,
+    "graduate_value": 3.0,
+    "location_advantage": 3.6,
+    "brand_asset": 3.5,
+    "overall_weighted_score": 2.81
+  }
+}

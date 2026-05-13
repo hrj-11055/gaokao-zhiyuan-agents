@@ -1,0 +1,36 @@
+{
+  "university_name": "南京特殊教育师范学院",
+  "short_name": "南京特师 / NJNU",
+  "location": {
+    "city": "南京",
+    "district": "栖霞区",
+    "campus": "燕子矶校区、江宁校区（规划/部分）"
+  },
+  "academic_standing": {
+    "soft_science_rank": 480,
+    "key_disciplines": [
+      "特殊教育",
+      "教育康复学",
+      "心理学"
+    ],
+    "national_first_class_majors": 2
+  },
+  "employment_stats": {
+    "overall_employment_rate": "91.2%",
+    "further_study_rate": "4.33%",
+    "major_employer_type": "Special Education Schools & Rehabilitation Centers",
+    "starting_salary_median": 5200
+  },
+  "unique_features": {
+    "is_only_special_edu_college": true,
+    "has_special_edu_museum": true,
+    "disability_recruitment_program": "Single Exam & Single Admission"
+  },
+  "scores": {
+    "academic_capital": 2.5,
+    "graduate_value": 3.5,
+    "location_advantage": 4.0,
+    "brand_asset": 4.2,
+    "comprehensive_score": 3.19
+  }
+}

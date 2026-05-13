@@ -1,0 +1,45 @@
+{
+  "university_info": {
+    "name": "武汉工程大学邮电与信息工程学院",
+    "short_name": "WITPT",
+    "location": [
+      "武汉洪山区虎泉校区",
+      "武汉江夏区流芳校区"
+    ],
+    "type": "独立学院",
+    "tags": [
+      "工科",
+      "光谷",
+      "化工",
+      "邮电"
+    ]
+  },
+  "academic_score": {
+    "parent_support": "High",
+    "core_majors": [
+      "化学工程与工艺",
+      "通信工程",
+      "计算机科学与技术"
+    ],
+    "research_platform_sharing": true
+  },
+  "admission_data": {
+    "hubei_physics_2024_min": 428,
+    "hubei_history_2024_min": 435,
+    "competition_level": "Moderate"
+  },
+  "employment_stats": {
+    "further_study_rate": "11.78%-13.2%",
+    "top_industries": [
+      "ICT",
+      "Chemical Engineering",
+      "Manufacturing"
+    ],
+    "avg_starting_salary": 4800
+  },
+  "comprehensive_evaluation": {
+    "total_score": 2.69,
+    "recommendation_index": "3.5/5",
+    "risk_level": "Medium (Due to transition uncertainty)"
+  }
+}

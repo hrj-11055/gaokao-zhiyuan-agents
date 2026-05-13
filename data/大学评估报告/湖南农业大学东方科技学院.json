@@ -1,0 +1,52 @@
+{
+  "university_info": {
+    "name": "湖南农业大学东方科技学院",
+    "short_name": "东方科技",
+    "type": "独立学院",
+    "location": "湖南省长沙市",
+    "founding_year": 2002
+  },
+  "academic_strength": {
+    "parent_university": "湖南农业大学",
+    "key_disciplines": [
+      "农学",
+      "食品科学",
+      "机械工程",
+      "园艺"
+    ],
+    "shared_resources": [
+      "国家重点实验室",
+      "图书馆",
+      "核心师资"
+    ],
+    "kaoyan_rate": "14.1%-17%"
+  },
+  "admission_data_2025": {
+    "hunan_history_cutoff": 480,
+    "hunan_physics_cutoff": 455,
+    "competitive_level": "Moderate"
+  },
+  "employment_stats": {
+    "avg_starting_salary": 5400,
+    "top_employers": [
+      "正大集团",
+      "三一重工",
+      "中联重科"
+    ],
+    "employment_rate": "82.17% (2023)"
+  },
+  "evaluation_scores": {
+    "academic": 2.1,
+    "employment": 2.8,
+    "location": 3.5,
+    "globalization": 1.8,
+    "student_empowerment": 3.0,
+    "brand_asset": 2.5,
+    "overall_weighted_score": 2.58
+  },
+  "risk_factors": [
+    "Transfer policy uncertainty",
+    "Heavy reliance on parent university",
+    "Limited independent research output"
+  ]
+}

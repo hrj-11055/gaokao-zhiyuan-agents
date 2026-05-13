@@ -1,0 +1,49 @@
+{
+  "university_name": "青岛大学",
+  "short_name": "QDU",
+  "location": {
+    "province": "山东",
+    "city": "青岛",
+    "campus": [
+      "浮山校区",
+      "金家岭校区",
+      "松山校区"
+    ]
+  },
+  "academic_standing": {
+    "soft_science_rank_2025": 111,
+    "key_disciplines": [
+      "系统科学",
+      "临床医学",
+      "纺织科学与工程"
+    ],
+    "esi_top_1_permille": [
+      "临床医学",
+      "工程学",
+      "材料科学"
+    ]
+  },
+  "admission_stats": {
+    "shandong_rank_avg": "Top 8%-15%",
+    "medical_rank_avg": "Top 3%-5%"
+  },
+  "employment": {
+    "further_study_rate": "24.0%",
+    "median_salary": 6800,
+    "top_employers": [
+      "青医附院",
+      "海尔",
+      "海信",
+      "华为"
+    ]
+  },
+  "vibe_tags": [
+    "Graduation Concert",
+    "Medical Powerhouse",
+    "Coastal City Life"
+  ],
+  "risk_factors": [
+    "Dormitory Infrastructure",
+    "Research Integrity Monitoring"
+  ]
+}

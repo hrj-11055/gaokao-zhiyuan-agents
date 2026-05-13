@@ -1,0 +1,47 @@
+{
+  "university_name": "佛山大学",
+  "short_name": "FOSU",
+  "location": {
+    "province": "广东",
+    "city": "佛山",
+    "districts": [
+      "南海区 (仙溪)",
+      "禅城区 (江湾)"
+    ]
+  },
+  "academic_status": {
+    "is_985": false,
+    "is_211": false,
+    "is_double_first_class": false,
+    "has_doctorate_points": true,
+    "esi_top_1_percent": 6
+  },
+  "key_disciplines": [
+    "兽医学",
+    "机械工程",
+    "材料科学",
+    "土木工程"
+  ],
+  "employment_metrics": {
+    "overall_employment_rate": "90%+",
+    "further_study_rate": "18.2%",
+    "major_employers": [
+      "Midea",
+      "Country Garden",
+      "Hisense"
+    ],
+    "avg_starting_salary": 6200
+  },
+  "admission_level": {
+    "guangdong_physics_rank_min": 63250,
+    "guangdong_history_rank_min": 22000,
+    "trend": "Rising"
+  },
+  "scores": {
+    "academic": 3.8,
+    "employment": 3.7,
+    "location": 4.7,
+    "brand": 4.0,
+    "comprehensive": 3.86
+  }
+}

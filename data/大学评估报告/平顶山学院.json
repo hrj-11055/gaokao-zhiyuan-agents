@@ -1,0 +1,50 @@
+{
+  "university_name": "平顶山学院",
+  "short_name": "平院 / PDSU",
+  "location": "河南·平顶山",
+  "status": {
+    "is_master_unit": true,
+    "master_points": [
+      "机械",
+      "材料与化工",
+      "教育"
+    ],
+    "key_disciplines": [
+      "生态学",
+      "软件工程",
+      "材料化学"
+    ]
+  },
+  "student_profile": {
+    "admission_difficulty": "Medium-High",
+    "top_majors": [
+      "临床医学",
+      "电气工程",
+      "汉语言文学",
+      "陶瓷艺术"
+    ],
+    "kaoyan_vibe": "Strong"
+  },
+  "employment": {
+    "key_industries": [
+      "Power Equipment",
+      "Nylon Chemicals",
+      "Education",
+      "Healthcare"
+    ],
+    "major_employers": [
+      "Pinggao Group",
+      "China Pingmei Shenma Group"
+    ],
+    "avg_starting_salary": 4850
+  },
+  "campus_life": {
+    "dormitory_condition": "Mostly 6-person with AC",
+    "location_advantage": "Lakeside (Baigui Lake)",
+    "vibe_tags": [
+      "Pragmatic",
+      "Hardworking",
+      "Industry-focused"
+    ]
+  }
+}

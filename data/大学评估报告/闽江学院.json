@@ -1,0 +1,39 @@
+{
+  "university_name": "闽江学院 (闽江大学)",
+  "short_name": "MJU",
+  "location": {
+    "province": "福建",
+    "city": "福州",
+    "district": "闽侯县 (大学城)"
+  },
+  "academic_stats": {
+    "esi_top_1_percent": [
+      "Chemistry",
+      "Engineering",
+      "Materials Science"
+    ],
+    "master_degree_points": 8,
+    "key_labs": [
+      "纺织服装福建省重点实验室",
+      "海洋传感功能材料重点实验室"
+    ]
+  },
+  "admission_index": {
+    "fujian_physics_rank": 38000,
+    "fujian_history_rank": 9500,
+    "competition_level": "High"
+  },
+  "employment_stats": {
+    "employment_rate": "91.5%",
+    "top_employer_sectors": [
+      "Manufacturing",
+      "IT",
+      "Finance"
+    ],
+    "avg_starting_salary": 5800
+  },
+  "evaluation": {
+    "comprehensive_score": 3.71,
+    "recommendation_index": "4.5 stars for pragmatic students"
+  }
+}

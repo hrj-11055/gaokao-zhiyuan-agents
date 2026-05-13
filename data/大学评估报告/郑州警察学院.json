@@ -1,0 +1,40 @@
+{
+  "university_name": "郑州警察学院",
+  "short_name": "郑警",
+  "tags": [
+    "公安部直属",
+    "铁路特色",
+    "高入警率",
+    "半军事化"
+  ],
+  "academic": {
+    "key_disciplines": [
+      "公安学",
+      "公安技术",
+      "网络空间安全"
+    ],
+    "national_first_class_majors": 5,
+    "doctorate_points": 0
+  },
+  "employment": {
+    "overall_employment_rate": "98%+",
+    "police_entry_rate": "93.52%",
+    "main_employer": "全国铁路公安机关",
+    "average_starting_salary": "8000-10000"
+  },
+  "admission": {
+    "batch": "提前批",
+    "requirements": [
+      "政审",
+      "体检",
+      "体测",
+      "面试"
+    ],
+    "gender_ratio_limit": "女生通常不超过15%"
+  },
+  "location": {
+    "city": "郑州",
+    "campus_count": 2,
+    "hub_advantage": "全国铁路心脏"
+  }
+}

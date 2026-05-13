@@ -1,0 +1,41 @@
+{
+  "university_name": "东北财经大学",
+  "short_name": "东财 (DUFE)",
+  "location": {
+    "province": "辽宁",
+    "city": "大连",
+    "region_advantage": "东北亚金融中心，航运枢纽"
+  },
+  "academic_level": {
+    "a_plus_count": 0,
+    "a_count": 1,
+    "a_minus_count": 2,
+    "key_disciplines": [
+      "应用经济学",
+      "工商管理",
+      "统计学"
+    ],
+    "double_first_class": false
+  },
+  "employment_stats": {
+    "domestic_further_study_rate": "26.8%",
+    "overseas_further_study_rate": "18.4%",
+    "top_employers": [
+      "中国工商银行",
+      "普华永道",
+      "国家电网",
+      "华为"
+    ],
+    "starting_salary_median": 7063
+  },
+  "student_life": {
+    "dormitory_quality": "中等偏上",
+    "canteen_reputation": "极高",
+    "study_vibe": "极浓（考证导向）"
+  },
+  "evaluation": {
+    "comprehensive_score": 4.2,
+    "recommendation_index": "4.5星",
+    "core_risk": "非双一流身份在特定准入环节的限制"
+  }
+}

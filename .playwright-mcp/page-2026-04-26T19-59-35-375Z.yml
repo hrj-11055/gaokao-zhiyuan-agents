@@ -1,0 +1,520 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 暨南大学 毕业生 平均月收入 起薪 薪酬排名 2024
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5+%E8%B5%B7%E8%96%AA+%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D+2024&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%229878273288736750298%22%2C%22ori_lid%22%3A%229878273288736750298%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=8916ad3801623ada&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5+%E8%B5%B7%E8%96%AA+%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D+2024
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5+%E8%B5%B7%E8%96%AA+%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D+2024
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=8916ad3801623ada&ie=utf-8&wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5+%E8%B5%B7%E8%96%AA+%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D+2024&rsv_spt=7&rsv_bp=1&f=8&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5+%E8%B5%B7%E8%96%AA+%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D+2024&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5+%E8%B5%B7%E8%96%AA+%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D+2024
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5+%E8%B5%B7%E8%96%AA+%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D+2024
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5+%E8%B5%B7%E8%96%AA+%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D+2024
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5+%E8%B5%B7%E8%96%AA+%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D+2024
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  暨南大学研究生分数线  暨南大学毕业生薪酬  985211毕业生薪资起薪  暨南大学外招生奖学金  南邮毕业生起薪多少  暨南大学金融就业年薪    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 厨师锅里吐口水后继续出餐 店长回应 9 伊朗外长向巴基斯坦递交停战条件 10 枪击发生时特朗普旁的华裔女记者是谁 11 黄鳝被喂避孕药是传了30年的谣言 12 A股一季度最赚钱公司曝光 13 女性多和好友聚会能“续命” 14 男子杀害岳父后潜逃33年终落网 15 高市政府越过“最后一根红线”" [ref=e69]:
+              - cell "相关搜索  暨南大学研究生分数线  暨南大学毕业生薪酬  985211毕业生薪资起薪  暨南大学外招生奖学金  南邮毕业生起薪多少  暨南大学金融就业年薪    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 厨师锅里吐口水后继续出餐 店长回应 9 伊朗外长向巴基斯坦递交停战条件 10 枪击发生时特朗普旁的华裔女记者是谁 11 黄鳝被喂避孕药是传了30年的谣言 12 A股一季度最赚钱公司曝光 13 女性多和好友聚会能“续命” 14 男子杀害岳父后潜逃33年终落网 15 高市政府越过“最后一根红线”" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 暨南大学研究生分数线" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E5%88%86%E6%95%B0%E7%BA%BF&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rfqid=8916ad3801623ada&rsv_dl=0_prs_28616_1&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsf=101631202
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 暨南大学研究生分数线
+                      - link " 暨南大学毕业生薪酬" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%AF%95%E4%B8%9A%E7%94%9F%E8%96%AA%E9%85%AC&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rfqid=8916ad3801623ada&rsv_dl=0_prs_28616_2&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 暨南大学毕业生薪酬
+                      - link " 985211毕业生薪资起薪" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=985211%E6%AF%95%E4%B8%9A%E7%94%9F%E8%96%AA%E8%B5%84%E8%B5%B7%E8%96%AA&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rfqid=8916ad3801623ada&rsv_dl=0_prs_28616_3&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsf=101631202
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 985211毕业生薪资起薪
+                      - link " 暨南大学外招生奖学金" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%A4%96%E6%8B%9B%E7%94%9F%E5%A5%96%E5%AD%A6%E9%87%91&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rfqid=8916ad3801623ada&rsv_dl=0_prs_28616_4&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsf=101631202
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 暨南大学外招生奖学金
+                      - link " 南邮毕业生起薪多少" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8D%97%E9%82%AE%E6%AF%95%E4%B8%9A%E7%94%9F%E8%B5%B7%E8%96%AA%E5%A4%9A%E5%B0%91&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rfqid=8916ad3801623ada&rsv_dl=0_prs_28616_5&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsf=101631202
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 南邮毕业生起薪多少
+                      - link " 暨南大学金融就业年薪" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E9%87%91%E8%9E%8D%E5%B0%B1%E4%B8%9A%E5%B9%B4%E8%96%AA&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rfqid=8916ad3801623ada&rsv_dl=0_prs_28616_6&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsf=101633403
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 暨南大学金融就业年薪
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=07f1XsCsWrM0bwB8jHvZCagsGtCAEmENAhemhDp6LaKCGKbRmPO7%2BWawNbY&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "A股一季度最赚钱公司曝光" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=A%E8%82%A1%E4%B8%80%E5%AD%A3%E5%BA%A6%E6%9C%80%E8%B5%9A%E9%92%B1%E5%85%AC%E5%8F%B8%E6%9B%9D%E5%85%89&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "女性多和好友聚会能“续命”" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "男子杀害岳父后潜逃33年终落网" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E7%94%B7%E5%AD%90%E6%9D%80%E5%AE%B3%E5%B2%B3%E7%88%B6%E5%90%8E%E6%BD%9C%E9%80%8333%E5%B9%B4%E7%BB%88%E8%90%BD%E7%BD%91&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "高市政府越过“最后一根红线”" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=0dfcbvHRI1mFNi5n20g00MTg4JA6tYQwSQoG74qbdDoEC7WmDlQorSz5FT0&rqid=8916ad3801623ada&rsf=1692bf2f2e39946faeb40709d104dd12_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e209]:
+            - generic [ref=e211]:
+              - img [ref=e214]
+              - generic:
+                - generic: 
+            - generic [ref=e219]:
+              - generic [ref=e220]: 问题分析中
+              - img [ref=e222]
+          - generic [ref=e246]:
+            - heading "暨大毕业生月薪超1.1万,2025年高校毕业生薪酬排行榜发布!" [level=3] [ref=e249]:
+              - link "暨大毕业生月薪超1.1万,2025年高校毕业生薪酬排行榜发布!" [ref=e250] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbkQa8n9jQIikaOw7Tvr7RNEMxxfCOzfkiyEQa1R7mHtR3K2pD6gMIYxHVpmdndkk0dnOhVUQuUazA-DDJ_KC_pPaQSnJLotdGbrT6RL7rinSzhrllJJUnOBaPwYySY144X89-dTg4RRCtYLfBDUqQz0ju7WH4-dAtK3OoMyoLCVgU88_4NXTiouH5TO2S3O_E7q6Id6904vpSD4lOAY9MStGsfclxatZ4eUdAeM2Hw9DUBWf-rrrWA3KxcIMT7YRHa
+                - paragraph [ref=e253]:
+                  - generic [ref=e256]:
+                    - emphasis [ref=e257]: 暨大毕业生
+                    - text: 月薪超1.1万,2025年高校
+                    - emphasis [ref=e258]: 毕业生薪酬排行
+                    - text: 榜发布!
+            - generic [ref=e263]:
+              - text: 2025年7月5日
+              - generic [ref=e264]:
+                - text: 根据榜单显示,
+                - emphasis [ref=e265]: 暨南大学2024
+                - text: 届
+                - emphasis [ref=e266]: 毕业生平均
+                - text: 月薪11926元,在全国高校
+                - emphasis [ref=e267]: 排名
+                - text: 中位居第31名。2022届
+                - emphasis [ref=e268]: 毕业生平均
+                - text: 月薪16844元,2020届
+                - emphasis [ref=e269]: 毕业生平均
+                - text: 月薪22440元。 榜单采用全国各高校上年度
+                - emphasis [ref=e270]: 毕业生
+                - text: 进入用人单位满一年的
+                - emphasis [ref=e271]: 薪酬
+                - text: 数据,包括基础工资、奖金和补贴等年度
+                - emphasis [ref=e272]: 总收入
+                - text: 。...
+            - generic [ref=e273]:
+              - link [ref=e274] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbkQa8n9jQIikaOw7Tvr7RNEMxxfCOzfkiyEQa1R7mHtR3K2pD6gMIYxHVpmdndkk0dnOhVUQuUazA-DDJ_KC_pPaQSnJLotdGbrT6RL7rinSzhrllJJUnOBaPwYySY144X89-dTg4RRCtYLfBDUqQz0ju7WH4-dAtK3OoMyoLCVgU88_4NXTiouH5TO2S3O_E7q6Id6904vpSD4lOAY9MStGsfclxatZ4eUdAeM2Hw9DUBWf-rrrWA3KxcIMT7YRHa
+              - link [ref=e278] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbkQa8n9jQIikaOw7Tvr7RNEMxxfCOzfkiyEQa1R7mHtR3K2pD6gMIYxHVpmdndkk0dnOhVUQuUazA-DDJ_KC_pPaQSnJLotdGbrT6RL7rinSzhrllJJUnOBaPwYySY144X89-dTg4RRCtYLfBDUqQz0ju7WH4-dAtK3OoMyoLCVgU88_4NXTiouH5TO2S3O_E7q6Id6904vpSD4lOAY9MStGsfclxatZ4eUdAeM2Hw9DUBWf-rrrWA3KxcIMT7YRHa
+              - link [ref=e282] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbkQa8n9jQIikaOw7Tvr7RNEMxxfCOzfkiyEQa1R7mHtR3K2pD6gMIYxHVpmdndkk0dnOhVUQuUazA-DDJ_KC_pPaQSnJLotdGbrT6RL7rinSzhrllJJUnOBaPwYySY144X89-dTg4RRCtYLfBDUqQz0ju7WH4-dAtK3OoMyoLCVgU88_4NXTiouH5TO2S3O_E7q6Id6904vpSD4lOAY9MStGsfclxatZ4eUdAeM2Hw9DUBWf-rrrWA3KxcIMT7YRHa
+              - link [ref=e286] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbkQa8n9jQIikaOw7Tvr7RNEMxxfCOzfkiyEQa1R7mHtR3K2pD6gMIYxHVpmdndkk0dnOhVUQuUazA-DDJ_KC_pPaQSnJLotdGbrT6RL7rinSzhrllJJUnOBaPwYySY144X89-dTg4RRCtYLfBDUqQz0ju7WH4-dAtK3OoMyoLCVgU88_4NXTiouH5TO2S3O_E7q6Id6904vpSD4lOAY9MStGsfclxatZ4eUdAeM2Hw9DUBWf-rrrWA3KxcIMT7YRHa
+              - link "12" [ref=e290] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbkQa8n9jQIikaOw7Tvr7RNEMxxfCOzfkiyEQa1R7mHtR3K2pD6gMIYxHVpmdndkk0dnOhVUQuUazA-DDJ_KC_pPaQSnJLotdGbrT6RL7rinSzhrllJJUnOBaPwYySY144X89-dTg4RRCtYLfBDUqQz0ju7WH4-dAtK3OoMyoLCVgU88_4NXTiouH5TO2S3O_E7q6Id6904vpSD4lOAY9MStGsfclxatZ4eUdAeM2Hw9DUBWf-rrrWA3KxcIMT7YRHa
+                - generic [ref=e295]:
+                  - generic [ref=e296]: 
+                  - text: "12"
+            - link "微信公众平台" [ref=e301] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbkQa8n9jQIikaOw7Tvr7RNEMxxfCOzfkiyEQa1R7mHtR3K2pD6gMIYxHVpmdndkk0dnOhVUQuUazA-DDJ_KC_pPaQSnJLotdGbrT6RL7rinSzhrllJJUnOBaPwYySY144X89-dTg4RRCtYLfBDUqQz0ju7WH4-dAtK3OoMyoLCVgU88_4NXTiouH5TO2S3O_E7q6Id6904vpSD4lOAY9MStGsfclxatZ4eUdAeM2Hw9DUBWf-rrrWA3KxcIMT7YRHa
+              - generic [ref=e302]: 微信公众平台
+              - generic [ref=e304]: 
+          - generic [ref=e308]:
+            - heading "暨南大学出来工资多少" [level=3] [ref=e311]:
+              - link "暨南大学出来工资多少" [ref=e312] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=8VEFuUFv5VEsW7ItpRRH1QfXu3_JK7KQRqExce8dSvUcwrFJXsm3DdSiEAygnT7yBTjcrCub4T0NfgpGSE7yKc3j1ilgX16gpafQwx1nFJIU3or4m3QkdedDbQaOaNIDIYMILo_aC3eXvDq6QSzQN4C4qnlYG4lIe92cDRJZdv-2-PXV3b8hPPKwaM1TtxK3QfrVz1tEi1WjoS9RrzVtJa6qnEU80LS3xsp12wjWFVtz_K7S1-3CYUmFC-Kipj-e49kQlBPg9AvOBqCUQLGSBkyKyxDLxYpshrtdbNKLUS8Q7ZZNPdDfEiRYK2CpQbGO59YZ0-2_VcYQ_pFwL5jUpa
+                - paragraph [ref=e315]:
+                  - generic [ref=e318]:
+                    - emphasis [ref=e319]: 暨南大学
+                    - text: 出来
+                    - emphasis [ref=e320]: 工资
+                    - text: 多少
+            - generic [ref=e325]:
+              - text: 2025年7月14日
+              - generic [ref=e326]:
+                - emphasis [ref=e327]: 2024年暨南大学毕业生平均月薪为11926元
+                - text: ",较2022届毕业生(16844元)有所波动,主要原因在于统计口径调整(包括基础工资、奖金、补贴等)。该数据覆盖全国300多个城市、50多万家企业及100多万条毕业生薪酬记录,通过统计学模型计算得出。该校在全国高校薪酬排名中位列第31名,处于国内中上游..."
+            - link "头像 知了爱学" [ref=e332] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=8VEFuUFv5VEsW7ItpRRH1QfXu3_JK7KQRqExce8dSvUcwrFJXsm3DdSiEAygnT7yBTjcrCub4T0NfgpGSE7yKc3j1ilgX16gpafQwx1nFJIU3or4m3QkdedDbQaOaNIDIYMILo_aC3eXvDq6QSzQN4C4qnlYG4lIe92cDRJZdv-2-PXV3b8hPPKwaM1TtxK3QfrVz1tEi1WjoS9RrzVtJa6qnEU80LS3xsp12wjWFVtz_K7S1-3CYUmFC-Kipj-e49kQlBPg9AvOBqCUQLGSBkyKyxDLxYpshrtdbNKLUS8Q7ZZNPdDfEiRYK2CpQbGO59YZ0-2_VcYQ_pFwL5jUpa
+              - img "头像" [ref=e335]
+              - generic [ref=e336]: 知了爱学
+              - generic [ref=e338]: 
+          - generic [ref=e342]:
+            - heading "就业去向" [level=3] [ref=e345]:
+              - link "就业去向" [ref=e346] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbpZ5sxNKLjc9E2FVo8h35erx1kpQSHvdKcIDY28fchQ4
+                - paragraph [ref=e349]:
+                  - generic [ref=e352]: 就业去向
+            - generic [ref=e358]:
+              - text: 近三年,MPAcc项目一次性就业率达96.4%,全日制MPAcc
+              - emphasis [ref=e359]: 毕业生平均
+              - text: 年薪14.2万元,MPAcc兼读制毕业生平均年薪25万元;MPAcc全日制薪酬与学费比例为2.3,在职双证薪酬与学费比为2.8:1,在职单证薪酬与学费比为3.4:1,充分说明我校MPAcc
+              - emphasis [ref=e360]: 毕业生薪酬
+              - text: 竞争力强,社会认可程度高。 我校MPAcc毕业生就业地区涵盖珠三角地区、港澳台地区、北...
+            - link "头像 暨南大学MPAcc" [ref=e365] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbpZ5sxNKLjc9E2FVo8h35erx1kpQSHvdKcIDY28fchQ4
+              - img "头像" [ref=e368]
+              - generic [ref=e369]: 暨南大学MPAcc
+              - generic [ref=e371]: 
+          - generic [ref=e373]:
+            - generic [ref=e374]: 大家还在搜
+            - generic [ref=e375]:
+              - link "暨南大学研究生分数线" [ref=e376] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E5%88%86%E6%95%B0%E7%BA%BF&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=2a1b3L5qm5op9SJFRghYMBYXk3jND3ZJ5TvD1jbnMwbwAFNHlsBlQ5eTDYc&rsf=101631202&rsv_dl=0_prs_28608_1
+                - generic [ref=e378]: 暨南大学研究生分数线
+              - link "暨南大学毕业生薪酬" [ref=e379] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%AF%95%E4%B8%9A%E7%94%9F%E8%96%AA%E9%85%AC&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=2a1b3L5qm5op9SJFRghYMBYXk3jND3ZJ5TvD1jbnMwbwAFNHlsBlQ5eTDYc&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e381]: 暨南大学毕业生薪酬
+              - link "985211毕业生薪资起薪" [ref=e382] [cursor=pointer]:
+                - /url: /s?wd=985211%E6%AF%95%E4%B8%9A%E7%94%9F%E8%96%AA%E8%B5%84%E8%B5%B7%E8%96%AA&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=2a1b3L5qm5op9SJFRghYMBYXk3jND3ZJ5TvD1jbnMwbwAFNHlsBlQ5eTDYc&rsf=101631202&rsv_dl=0_prs_28608_3
+                - generic [ref=e384]: 985211毕业生薪资起薪
+              - link "暨南大学外招生奖学金" [ref=e385] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%A4%96%E6%8B%9B%E7%94%9F%E5%A5%96%E5%AD%A6%E9%87%91&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=2a1b3L5qm5op9SJFRghYMBYXk3jND3ZJ5TvD1jbnMwbwAFNHlsBlQ5eTDYc&rsf=101631202&rsv_dl=0_prs_28608_4
+                - generic [ref=e387]: 暨南大学外招生奖学金
+              - link "南邮毕业生起薪多少" [ref=e388] [cursor=pointer]:
+                - /url: /s?wd=%E5%8D%97%E9%82%AE%E6%AF%95%E4%B8%9A%E7%94%9F%E8%B5%B7%E8%96%AA%E5%A4%9A%E5%B0%91&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=2a1b3L5qm5op9SJFRghYMBYXk3jND3ZJ5TvD1jbnMwbwAFNHlsBlQ5eTDYc&rsf=101631202&rsv_dl=0_prs_28608_5
+                - generic [ref=e390]: 南邮毕业生起薪多少
+              - link "暨南大学金融就业年薪" [ref=e391] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E9%87%91%E8%9E%8D%E5%B0%B1%E4%B8%9A%E5%B9%B4%E8%96%AA&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=2a1b3L5qm5op9SJFRghYMBYXk3jND3ZJ5TvD1jbnMwbwAFNHlsBlQ5eTDYc&rsf=101633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e393]: 暨南大学金融就业年薪
+              - link "广东大学毕业生薪酬排行榜" [ref=e394] [cursor=pointer]:
+                - /url: /s?wd=%E5%B9%BF%E4%B8%9C%E5%A4%A7%E5%AD%A6%E6%AF%95%E4%B8%9A%E7%94%9F%E8%96%AA%E9%85%AC%E6%8E%92%E8%A1%8C%E6%A6%9C&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=2a1b3L5qm5op9SJFRghYMBYXk3jND3ZJ5TvD1jbnMwbwAFNHlsBlQ5eTDYc&rsf=101633403&rsv_dl=0_prs_28608_7
+                - generic [ref=e396]: 广东大学毕业生薪酬排行榜
+              - link "暨南大学博后一个月到手工资多少" [ref=e397] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%8D%9A%E5%90%8E%E4%B8%80%E4%B8%AA%E6%9C%88%E5%88%B0%E6%89%8B%E5%B7%A5%E8%B5%84%E5%A4%9A%E5%B0%91&usm=2&ie=utf-8&rsv_pq=8916ad3801623ada&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&rsv_t=2a1b3L5qm5op9SJFRghYMBYXk3jND3ZJ5TvD1jbnMwbwAFNHlsBlQ5eTDYc&rsf=101636803&rsv_dl=0_prs_28608_8
+                - generic [ref=e399]: 暨南大学博后一个月到手工资多少
+          - generic [ref=e403]:
+            - heading "广东7校毕业生月薪过万! 1、中山大学 2024平均月薪12675元 2..." [level=3] [ref=e406]:
+              - link "广东7校毕业生月薪过万! 1、中山大学 2024平均月薪12675元 2..." [ref=e407] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbkQa8n9jQIikaOw7Tvr7RNDCvAEp-61hmns-7nckw5HQIJYohiYiFcNlu_9f2j07N7ssKRCcKz7HH9gKhuO11LgylZ7ECzfTUJRs3VpLMX0_5Uz74tkbZLng8Mpe-colp0WggCuTDJZaAJ4tazEBQhpN_DmExASmCNuaeYyQ9xdC6YXRGi9mMkMRdgs7Cjv2iQDZfJR7-zNpaHu2_h1waBZR0aPGQ_vtp9H1Zn0D3kN4U5itFAtccwklTWtariAuX_
+                - paragraph [ref=e410]:
+                  - generic [ref=e413]:
+                    - text: 广东7校
+                    - emphasis [ref=e414]: 毕业生
+                    - text: 月薪过万! 1、中山
+                    - emphasis [ref=e415]: 大学
+                    - emphasis [ref=e416]: 2024平均
+                    - text: 月薪12675元 2...
+            - generic [ref=e422]:
+              - text: 1、中山大学 2024平均月薪12675元 2、华南理工大学 2024平均月薪12254元
+              - emphasis [ref=e423]: 3、暨南大学 2024平均月薪11926元
+              - text: 4、深圳大学 2024平均月薪11422元 5、广东外语外贸大学 2024平均月薪11166元 6、汕头大学 2024平均月薪10547元 7、广州美术学...
+            - link "头像 择校易" [ref=e428] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbkQa8n9jQIikaOw7Tvr7RNDCvAEp-61hmns-7nckw5HQIJYohiYiFcNlu_9f2j07N7ssKRCcKz7HH9gKhuO11LgylZ7ECzfTUJRs3VpLMX0_5Uz74tkbZLng8Mpe-colp0WggCuTDJZaAJ4tazEBQhpN_DmExASmCNuaeYyQ9xdC6YXRGi9mMkMRdgs7Cjv2iQDZfJR7-zNpaHu2_h1waBZR0aPGQ_vtp9H1Zn0D3kN4U5itFAtccwklTWtariAuX_
+              - img "头像" [ref=e431]
+              - generic [ref=e432]: 择校易
+              - generic [ref=e434]: 
+          - generic [ref=e438]:
+            - heading "暨大22届毕业生平均月薪过万?大学薪酬指数最新排名公布 - 百度知道" [level=3] [ref=e441]:
+              - link "暨大22届毕业生平均月薪过万?大学薪酬指数最新排名公布 - 百度知道" [ref=e442] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=SXkJkg7_5NdQindaf5D6VHOD-Fhpe4FuVSw7fCybw-DTNoos7X39kUBKdYg_-e90IIpy0x55jwxf55F-uWXumRYAGBco1ehkmfbTfKTMjkG
+                - paragraph [ref=e445]:
+                  - generic [ref=e448]:
+                    - emphasis [ref=e449]: 暨大
+                    - text: 22届
+                    - emphasis [ref=e450]: 毕业生平均
+                    - text: 月薪过万?
+                    - emphasis [ref=e451]: 大学薪酬
+                    - text: 指数最新
+                    - emphasis [ref=e452]: 排名
+                    - text: 公布 - 百度知道
+            - generic [ref=e453]:
+              - link [ref=e455] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=SXkJkg7_5NdQindaf5D6VHOD-Fhpe4FuVSw7fCybw-DTNoos7X39kUBKdYg_-e90IIpy0x55jwxf55F-uWXumRYAGBco1ehkmfbTfKTMjkG
+              - generic [ref=e460]:
+                - generic [ref=e462]: "1个回答 - 回答时间: 2026年1月29日"
+                - generic [ref=e467]:
+                  - text: "最佳答案:"
+                  - generic [ref=e468]:
+                    - text: 暨大薪酬表现：在2023年榜单中，暨南大学毕业生平均月薪为10204元，
+                    - emphasis [ref=e469]: 位列全国高校第40名、广东高校第4名
+                    - text: 。这一数据表明，暨大毕业生整体薪酬水平较高，但需注意其排名较上一年度下降了25名，可能受行业需求变化、就业市场波动等因素影响。广东高校整体情况：广东共有8所高校进入TOP100榜单，其中前5名依次为...
+                - link "更多关于暨南大学 毕业生 平均月收入 起薪 薪酬排名 2024的问题>>" [ref=e473] [cursor=pointer]:
+                  - /url: http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5
+                - link "百度知道" [ref=e478] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=SXkJkg7_5NdQindaf5D6VHOD-Fhpe4FuVSw7fCybw-DTNoos7X39kUBKdYg_-e90IIpy0x55jwxf55F-uWXumRYAGBco1ehkmfbTfKTMjkG
+                  - generic [ref=e479]: 百度知道
+                  - generic [ref=e481]: 
+          - generic [ref=e485]:
+            - heading "广东7校毕业生月薪过万!\\n\\n1、中山大学 2024平均月薪12675元\\n2..." [level=3] [ref=e488]:
+              - link "广东7校毕业生月薪过万!\\n\\n1、中山大学 2024平均月薪12675元\\n2..." [ref=e489] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=9ztCS9cddlUwLfgkhiBKD3hl_dzDDr_iefA03mLrn7UUt0v7OfjpTdbN3iAuR9ts0qQqXqSBdZxj4UE4Su2yTK
+                - paragraph [ref=e492]:
+                  - generic [ref=e495]:
+                    - text: 广东7校
+                    - emphasis [ref=e496]: 毕业生
+                    - text: 月薪过万!\n\n1、中山
+                    - emphasis [ref=e497]: 大学
+                    - emphasis [ref=e498]: 2024平均
+                    - text: 月薪12675元\n2...
+            - generic [ref=e503]:
+              - text: 2025年9月10日
+              - generic [ref=e504]:
+                - text: 7、广州美术学院
+                - emphasis [ref=e505]: 2024平均
+                - text: 月薪10611 要注意的是,此
+                - emphasis [ref=e506]: 榜单
+                - text: 并不能反映各高校的全部情况,只是提供一个角度而已。 来源于全国各高校
+                - emphasis [ref=e507]: 毕业生
+                - text: 进入用人单位满一年的基础数据,包括国内200多个行业细分领域、300多个城市地区、50多万家企业,100万多万条毕业生数据,按照
+                - emphasis [ref=e508]: 工资
+                - text: 水平、就业率、人才成长率、
+                - emphasis [ref=e509]: 薪酬
+                - text: 增长率等四个要素,以相应...
+            - link "搜狐网" [ref=e514] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=9ztCS9cddlUwLfgkhiBKD3hl_dzDDr_iefA03mLrn7UUt0v7OfjpTdbN3iAuR9ts0qQqXqSBdZxj4UE4Su2yTK
+              - generic [ref=e515]: 搜狐网
+              - generic [ref=e517]: 
+          - generic [ref=e521]:
+            - heading "暨南大学平均月薪 - 百度知道" [level=3] [ref=e524]:
+              - link "暨南大学平均月薪 - 百度知道" [ref=e525] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=SXkJkg7_5NdQindaf5D6VHOD-Fhpe4FuVSw7fCybw-DTNoos7X39kUBKdYg_-e901j1Bv4V8F0j8smW5J6RnfngIq3blONX0-GHEPZRK5pe
+                - paragraph [ref=e528]:
+                  - generic [ref=e531]:
+                    - emphasis [ref=e532]: 暨南大学平均
+                    - text: 月薪 - 百度知道
+            - generic [ref=e534]: "1个回答 - 回答时间: 2025年8月20日"
+            - generic [ref=e539]:
+              - text: "最佳答案:"
+              - generic [ref=e540]:
+                - emphasis [ref=e541]: 暨南大学2024
+                - text: 届毕业生的
+                - emphasis [ref=e542]: 平均
+                - text: 月薪为11926元。不过，这一数据仅作为整体情况的参考，实际月薪会受到多种因素的影响，以下是一些可能影响
+                - emphasis [ref=e543]: 暨南大学毕业生
+                - text: 月薪的关键因素：学历层次：一般来说，硕士及以上学历的毕业生相较于本科毕业生，由于专业知识的深度和广度以及研究经验的积累，往往能获得更高的月薪。暨南...
+            - link "更多关于暨南大学 毕业生 平均月收入 起薪 薪酬排名 2024的问题>>" [ref=e547] [cursor=pointer]:
+              - /url: http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5
+            - link "百度知道" [ref=e552] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=SXkJkg7_5NdQindaf5D6VHOD-Fhpe4FuVSw7fCybw-DTNoos7X39kUBKdYg_-e901j1Bv4V8F0j8smW5J6RnfngIq3blONX0-GHEPZRK5pe
+              - generic [ref=e553]: 百度知道
+              - generic [ref=e555]: 
+          - generic [ref=e559]:
+            - heading "最新全国高校毕业生薪酬排名出炉,广东8所高校上榜前100,汕大排名→" [level=3] [ref=e562]:
+              - link "最新全国高校毕业生薪酬排名出炉,广东8所高校上榜前100,汕大排名→" [ref=e563] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbj1vWf0gi0KXsdB6dvIPSxCZM7g3Md-VSdv9jp53ws1kS6ml8uiD_d0Nku3QA1zoNKmsoI-y9PA28ifvjEi3lsu
+                - paragraph [ref=e566]:
+                  - generic [ref=e569]:
+                    - text: 最新全国高校
+                    - emphasis [ref=e570]: 毕业生薪酬排名
+                    - text: 出炉,广东8所高校上榜前100,汕大排名→
+            - generic [ref=e575]:
+              - text: 2023年7月10日
+              - generic [ref=e576]:
+                - text: 近日，中国薪酬指数研究机构发布《2023年全国高校
+                - emphasis [ref=e577]: 毕业生薪酬排行
+                - text: 榜TOP100》，清华大学、北京大学、上海交通大学位列三甲。广东有8所大学上榜，依次是 广东外语外贸大学（排名第7
+                - emphasis [ref=e578]: 平均
+                - text: 月薪2022届11333元）中山大学（排名第21 平均月薪2022届10940元）华南理工大学（排名第26 平均月薪2022届10832元）
+                - emphasis [ref=e579]: 暨南大学
+                - text: （排名第45 ...
+            - link "头像  潮安广播电视台" [ref=e584] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=CY8a-5LVVrHq9EDncnANbj1vWf0gi0KXsdB6dvIPSxCZM7g3Md-VSdv9jp53ws1kS6ml8uiD_d0Nku3QA1zoNKmsoI-y9PA28ifvjEi3lsu
+              - generic [ref=e585]:
+                - img "头像" [ref=e587]
+                - generic [ref=e589]: 
+              - generic [ref=e590]: 潮安广播电视台
+              - generic [ref=e592]: 
+        - generic [ref=e595]:
+          - generic [ref=e596]: 相关搜索
+          - table [ref=e597]:
+            - rowgroup [ref=e598]:
+              - row "暨南大学研究生分数线 暨南大学毕业生薪酬" [ref=e599]:
+                - cell "暨南大学研究生分数线" [ref=e600]:
+                  - link "暨南大学研究生分数线" [ref=e601] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202&rsp=0&f=1&rs_src=0&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&rsv_dl=brs_28338_1
+                    - generic [ref=e603]: 暨南大学研究生分数线
+                - cell "暨南大学毕业生薪酬" [ref=e604]:
+                  - link "暨南大学毕业生薪酬" [ref=e605] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%AF%95%E4%B8%9A%E7%94%9F%E8%96%AA%E9%85%AC&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&rsv_dl=brs_28338_2
+                    - generic [ref=e607]: 暨南大学毕业生薪酬
+              - row "985211毕业生薪资起薪 南邮毕业生起薪多少" [ref=e608]:
+                - cell "985211毕业生薪资起薪" [ref=e609]:
+                  - link "985211毕业生薪资起薪" [ref=e610] [cursor=pointer]:
+                    - /url: /s?wd=985211%E6%AF%95%E4%B8%9A%E7%94%9F%E8%96%AA%E8%B5%84%E8%B5%B7%E8%96%AA&rsf=101631202&rsp=2&f=1&rs_src=0&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&rsv_dl=brs_28338_3
+                    - generic [ref=e612]: 985211毕业生薪资起薪
+                - cell "南邮毕业生起薪多少" [ref=e613]:
+                  - link "南邮毕业生起薪多少" [ref=e614] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8D%97%E9%82%AE%E6%AF%95%E4%B8%9A%E7%94%9F%E8%B5%B7%E8%96%AA%E5%A4%9A%E5%B0%91&rsf=101631202&rsp=3&f=1&rs_src=0&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&rsv_dl=brs_28338_4
+                    - generic [ref=e616]: 南邮毕业生起薪多少
+              - row "暨南大学金融就业年薪 广东大学毕业生薪酬排行榜" [ref=e617]:
+                - cell "暨南大学金融就业年薪" [ref=e618]:
+                  - link "暨南大学金融就业年薪" [ref=e619] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E9%87%91%E8%9E%8D%E5%B0%B1%E4%B8%9A%E5%B9%B4%E8%96%AA&rsf=101633403&rsp=4&f=1&rs_src=0&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&rsv_dl=brs_28338_5
+                    - generic [ref=e621]: 暨南大学金融就业年薪
+                - cell "广东大学毕业生薪酬排行榜" [ref=e622]:
+                  - link "广东大学毕业生薪酬排行榜" [ref=e623] [cursor=pointer]:
+                    - /url: /s?wd=%E5%B9%BF%E4%B8%9C%E5%A4%A7%E5%AD%A6%E6%AF%95%E4%B8%9A%E7%94%9F%E8%96%AA%E9%85%AC%E6%8E%92%E8%A1%8C%E6%A6%9C&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&rsv_dl=brs_28338_6
+                    - generic [ref=e625]: 广东大学毕业生薪酬排行榜
+              - row "暨南大学财务管理应届生平均工资 美国大学毕业生起薪" [ref=e626]:
+                - cell "暨南大学财务管理应届生平均工资" [ref=e627]:
+                  - link "暨南大学财务管理应届生平均工资" [ref=e628] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86%E5%BA%94%E5%B1%8A%E7%94%9F%E5%B9%B3%E5%9D%87%E5%B7%A5%E8%B5%84&rsf=101636803&rsp=6&f=1&rs_src=0&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&rsv_dl=brs_28338_7
+                    - generic [ref=e630]: 暨南大学财务管理应届生平均工资
+                - cell "美国大学毕业生起薪" [ref=e631]:
+                  - link "美国大学毕业生起薪" [ref=e632] [cursor=pointer]:
+                    - /url: /s?wd=%E7%BE%8E%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%AF%95%E4%B8%9A%E7%94%9F%E8%B5%B7%E8%96%AA&rsf=101631202&rsp=7&f=1&rs_src=0&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&rsv_dl=brs_28338_8
+                    - generic [ref=e634]: 美国大学毕业生起薪
+              - row "暨南大学博后一个月到手工资多少 暨南大学毕业生就业去向" [ref=e635]:
+                - cell "暨南大学博后一个月到手工资多少" [ref=e636]:
+                  - link "暨南大学博后一个月到手工资多少" [ref=e637] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%8D%9A%E5%90%8E%E4%B8%80%E4%B8%AA%E6%9C%88%E5%88%B0%E6%89%8B%E5%B7%A5%E8%B5%84%E5%A4%9A%E5%B0%91&rsf=101636803&rsp=8&f=1&rs_src=0&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&rsv_dl=brs_28338_9
+                    - generic [ref=e639]: 暨南大学博后一个月到手工资多少
+                - cell "暨南大学毕业生就业去向" [ref=e640]:
+                  - link "暨南大学毕业生就业去向" [ref=e641] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E5%8E%BB%E5%90%91&rsf=101633403&rsp=9&f=1&rs_src=0&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&rsv_dl=brs_28338_10
+                    - generic [ref=e643]: 暨南大学毕业生就业去向
+      - generic [ref=e646]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e647]:
+          - generic [ref=e648]: "1"
+        - link "2" [ref=e649] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&pn=10&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&ie=utf-8&usm=2&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&topic_pn=
+          - generic [ref=e650]: "2"
+        - link "3" [ref=e651] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&pn=20&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&ie=utf-8&usm=2&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&topic_pn=
+          - generic [ref=e652]: "3"
+        - link "4" [ref=e653] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&pn=30&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&ie=utf-8&usm=2&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&topic_pn=
+          - generic [ref=e654]: "4"
+        - link "5" [ref=e655] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&pn=40&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&ie=utf-8&usm=2&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&topic_pn=
+          - generic [ref=e656]: "5"
+        - link "6" [ref=e657] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&pn=50&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&ie=utf-8&usm=2&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&topic_pn=
+          - generic [ref=e658]: "6"
+        - link "7" [ref=e659] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&pn=60&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&ie=utf-8&usm=2&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&topic_pn=
+          - generic [ref=e660]: "7"
+        - link "8" [ref=e661] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&pn=70&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&ie=utf-8&usm=2&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&topic_pn=
+          - generic [ref=e662]: "8"
+        - link "9" [ref=e663] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&pn=80&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&ie=utf-8&usm=2&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&topic_pn=
+          - generic [ref=e664]: "9"
+        - link "10" [ref=e665] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&pn=90&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&ie=utf-8&usm=2&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&topic_pn=
+          - generic [ref=e666]: "10"
+        - link "下一页" [ref=e667] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&pn=10&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E6%AF%95%E4%B8%9A%E7%94%9F%20%E5%B9%B3%E5%9D%87%E6%9C%88%E6%94%B6%E5%85%A5%20%E8%B5%B7%E8%96%AA%20%E8%96%AA%E9%85%AC%E6%8E%92%E5%90%8D%202024&ie=utf-8&usm=2&rsv_pq=8916ad3801623ada&rsv_t=cb4a21MYo%2Bb75vi3rptELSHmMUci3%2FiXJELA8nnnKK2JpIw%2BO1o4PqcQ35A&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e668]
+      - generic [ref=e671]:
+        - link "帮助" [ref=e672] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e673] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e674] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e675] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

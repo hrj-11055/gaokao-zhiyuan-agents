@@ -1,0 +1,53 @@
+{
+  "university_name": "大连民族大学",
+  "short_name": "DLNU",
+  "tags": [
+    "国家民委直属",
+    "工科特色",
+    "大连金普新区",
+    "民族融合"
+  ],
+  "academic": {
+    "a_plus_count": 0,
+    "a_count": 0,
+    "a_minus_count": 1,
+    "key_disciplines": [
+      "生物工程",
+      "计算机科学与技术",
+      "设计学"
+    ],
+    "academician_count": 0,
+    "support_unit": "大连理工大学"
+  },
+  "admission": {
+    "liaoning_physics_rank_2025": 21329,
+    "liaoning_history_rank_2025": 11200,
+    "ethnic_student_ratio": "约60%"
+  },
+  "employment": {
+    "domestic_further_study_rate": "10.6%",
+    "overseas_further_study_rate": "0.8%",
+    "starting_salary_median": 5800,
+    "top_employers": [
+      "华为",
+      "中铁",
+      "恒力石化",
+      "东软"
+    ]
+  },
+  "location": {
+    "city": "大连",
+    "district": "金普新区",
+    "campus_count": 2,
+    "city_gdp_2024": "9003亿元"
+  },
+  "scores": {
+    "academic_capital": 3.5,
+    "employment_value": 3.2,
+    "location_advantage": 3.8,
+    "globalization": 2.9,
+    "student_empowerment": 3.5,
+    "brand_asset": 3.4,
+    "comprehensive_score": 3.38
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "university_name": "南阳理工学院",
+  "short_name": "南工 / NYIST",
+  "location": {
+    "province": "河南",
+    "city": "南阳",
+    "tier": "三线城市 / 区域中心"
+  },
+  "academic_level": {
+    "master_points": [
+      "机械",
+      "土木水利",
+      "中医"
+    ],
+    "key_disciplines_provincial": 5,
+    "national_featured_pro": 2
+  },
+  "student_quality": {
+    "henan_rank_physics_avg": 170000,
+    "henan_rank_history_avg": 42000,
+    "admission_difficulty": "中等"
+  },
+  "employment_metrics": {
+    "initial_employment_rate": "89.2%",
+    "further_study_rate": "16.5%",
+    "top_employer_sectors": [
+      "IT",
+      "Manufacturing",
+      "Healthcare"
+    ],
+    "avg_starting_salary": 5200
+  },
+  "campus_life": {
+    "dormitory_condition": "Good (Air-conditioned)",
+    "motto": "不甘示弱",
+    "risk_factors": [
+      "Geographic limitation",
+      "High-level talent shortage"
+    ]
+  },
+  "overall_rating": 2.645
+}

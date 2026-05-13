@@ -1,0 +1,36 @@
+{
+  "university_name": "湖北商贸学院",
+  "english_name": "Hubei Business College",
+  "location": {
+    "main_campus": "武汉市洪山区",
+    "secondary_campus": "咸宁市梓山湖",
+    "city_level": "新一线城市"
+  },
+  "academic": {
+    "key_disciplines": [
+      "金融学",
+      "设计学",
+      "计算机科学与技术"
+    ],
+    "academician_count": 1,
+    "provincial_first_class_majors": 6
+  },
+  "employment": {
+    "overall_employment_rate": "89.2%",
+    "further_study_rate": "2.53%",
+    "starting_salary_median": 5200,
+    "top_employment_sectors": [
+      "IT/互联网",
+      "电商",
+      "金融"
+    ]
+  },
+  "financial": {
+    "tuition_range": "22000-28000 RMB/Year",
+    "accommodation_fee": "1200-2500 RMB/Year"
+  },
+  "rankings": {
+    "ruanke_private_finance": "Top 30",
+    "comprehensive_score": 2.82
+  }
+}

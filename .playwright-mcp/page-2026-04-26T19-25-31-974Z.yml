@@ -1,0 +1,548 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 药物经济学 行业前景 AI替代 医药产业 市场规模 2025 2026
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E6%9B%BF%E4%BB%A3+%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+2026&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2211694726236531686296%22%2C%22ori_lid%22%3A%2211694726236531686296%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=a24c038d01e97b98&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E6%9B%BF%E4%BB%A3+%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+2026
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E6%9B%BF%E4%BB%A3+%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+2026
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=a24c038d01e97b98&ie=utf-8&wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E6%9B%BF%E4%BB%A3+%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+2026&rsv_spt=7&rsv_bp=1&f=8&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E6%9B%BF%E4%BB%A3+%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+2026&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E6%9B%BF%E4%BB%A3+%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+2026
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E6%9B%BF%E4%BB%A3+%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+2026
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E6%9B%BF%E4%BB%A3+%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+2026
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E6%9B%BF%E4%BB%A3+%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+2026
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  ai制药的最新进展  ai在医药行业的应用  医药行业还有前景吗  药物制剂未来发展前景  医药行业未来发展前景  未来医药代表行业的发展    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 高市政府越过“最后一根红线” 9 厨师锅里吐口水后继续出餐 店长回应 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 枪击发生时特朗普旁的华裔女记者是谁 14 A股一季度最赚钱公司曝光 15 女性多和好友聚会能“续命”" [ref=e69]:
+              - cell "相关搜索  ai制药的最新进展  ai在医药行业的应用  医药行业还有前景吗  药物制剂未来发展前景  医药行业未来发展前景  未来医药代表行业的发展    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 高市政府越过“最后一根红线” 9 厨师锅里吐口水后继续出餐 店长回应 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 枪击发生时特朗普旁的华裔女记者是谁 14 A股一季度最赚钱公司曝光 15 女性多和好友聚会能“续命”" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " ai制药的最新进展" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=ai%E5%88%B6%E8%8D%AF%E7%9A%84%E6%9C%80%E6%96%B0%E8%BF%9B%E5%B1%95&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=f2c2FVCvY81zAzNlhF%2BWsSnXsTN9TXUnVvYK2yDns3xjJmkTG%2BWqAyO6vK8&rfqid=a24c038d01e97b98&rsv_dl=0_prs_28616_1&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsf=101636803
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: ai制药的最新进展
+                      - link " ai在医药行业的应用" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=ai%E5%9C%A8%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E7%9A%84%E5%BA%94%E7%94%A8&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=f2c2FVCvY81zAzNlhF%2BWsSnXsTN9TXUnVvYK2yDns3xjJmkTG%2BWqAyO6vK8&rfqid=a24c038d01e97b98&rsv_dl=0_prs_28616_2&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsf=101636803
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: ai在医药行业的应用
+                      - link " 医药行业还有前景吗" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E8%BF%98%E6%9C%89%E5%89%8D%E6%99%AF%E5%90%97&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=f2c2FVCvY81zAzNlhF%2BWsSnXsTN9TXUnVvYK2yDns3xjJmkTG%2BWqAyO6vK8&rfqid=a24c038d01e97b98&rsv_dl=0_prs_28616_3&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsf=101636803
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 医药行业还有前景吗
+                      - link " 药物制剂未来发展前景" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E8%8D%AF%E7%89%A9%E5%88%B6%E5%89%82%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=f2c2FVCvY81zAzNlhF%2BWsSnXsTN9TXUnVvYK2yDns3xjJmkTG%2BWqAyO6vK8&rfqid=a24c038d01e97b98&rsv_dl=0_prs_28616_4&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsf=101636803
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 药物制剂未来发展前景
+                      - link " 医药行业未来发展前景" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=f2c2FVCvY81zAzNlhF%2BWsSnXsTN9TXUnVvYK2yDns3xjJmkTG%2BWqAyO6vK8&rfqid=a24c038d01e97b98&rsv_dl=0_prs_28616_5&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsf=101633403
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 医药行业未来发展前景
+                      - link " 未来医药代表行业的发展" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9C%AA%E6%9D%A5%E5%8C%BB%E8%8D%AF%E4%BB%A3%E8%A1%A8%E8%A1%8C%E4%B8%9A%E7%9A%84%E5%8F%91%E5%B1%95&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=8ab9bEUPcm8%2BWSpUOZOw7gJOJ0YYtTILvHy9Ymuzpxx%2Fee5jCuH%2BI1L%2Bksw&rfqid=a24c038d01e97b98&rsv_dl=0_prs_28616_6&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsf=101636803
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 未来医药代表行业的发展
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "高市政府越过“最后一根红线”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "A股一季度最赚钱公司曝光" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=A%E8%82%A1%E4%B8%80%E5%AD%A3%E5%BA%A6%E6%9C%80%E8%B5%9A%E9%92%B1%E5%85%AC%E5%8F%B8%E6%9B%9D%E5%85%89&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "女性多和好友聚会能“续命”" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=7668wTjO4zatjbYrkvfTpeZf9kzKO61wTQq%2BwW%2FYkQ31sgHWAK%2B2dOUuZPY&rqid=a24c038d01e97b98&rsf=332ea555d0a905bb46da11970178570c_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e209]:
+            - generic [ref=e211]:
+              - img [ref=e214]
+              - generic:
+                - generic: 
+            - generic [ref=e219]:
+              - generic [ref=e220]: 问题分析中
+              - img [ref=e222]
+          - generic [ref=e246]:
+            - heading "【医药行业前瞻】AI制药,2026十大预测! - 知乎" [level=3] [ref=e249]:
+              - link "【医药行业前瞻】AI制药,2026十大预测! - 知乎" [ref=e250] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=QqYxO5LsB0Gh6TXjhAM4pEr8pen_RQzMlJuKaubTMgetAt3vkPs1V4_OI7xvzXLa4gyCDmLoE3-IHhB969dB7a
+                - paragraph [ref=e253]:
+                  - generic [ref=e256]:
+                    - text: 【
+                    - emphasis [ref=e257]: 医药行业
+                    - text: 前瞻】
+                    - emphasis [ref=e258]: AI
+                    - text: 制药,
+                    - emphasis [ref=e259]: "2026"
+                    - text: 十大预测! - 知乎
+            - generic [ref=e260]:
+              - link [ref=e262] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=QqYxO5LsB0Gh6TXjhAM4pEr8pen_RQzMlJuKaubTMgetAt3vkPs1V4_OI7xvzXLa4gyCDmLoE3-IHhB969dB7a
+              - generic [ref=e267]:
+                - generic [ref=e272]:
+                  - text: 2026年2月24日
+                  - generic [ref=e273]:
+                    - text: 市场预测显示,
+                    - emphasis [ref=e274]: AI药物
+                    - text: 发现
+                    - emphasis [ref=e275]: 市场规模
+                    - text: 将从
+                    - emphasis [ref=e276]: "2025"
+                    - text: 年的约50-70亿美元增长至
+                    - emphasis [ref=e277]: "2026"
+                    - text: 年的80-100亿美元,部分估算表明,生成式AI有望为制药行业整体带来每年600-1100亿美元的价值。 然而,2025年的市场趋势显示,小型AI药物发现企业正面临生存压力。 多家企业尽管获得了大量资金支持,仍彻底倒闭;另有企业宣布裁员20%以上,部分企业则寻求退市。风
+                - link "头像 知乎" [ref=e282] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=QqYxO5LsB0Gh6TXjhAM4pEr8pen_RQzMlJuKaubTMgetAt3vkPs1V4_OI7xvzXLa4gyCDmLoE3-IHhB969dB7a
+                  - img "头像" [ref=e285]
+                  - generic [ref=e286]: 知乎
+                  - generic [ref=e288]: 
+          - generic [ref=e292]:
+            - heading "生物医药首入新兴支柱产业,2026年中国创新药迎来黄金发展期" [level=3] [ref=e295]:
+              - link "生物医药首入新兴支柱产业,2026年中国创新药迎来黄金发展期" [ref=e296] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3q8uo7RKn6F_r5fZPfyDA4rivgu9nsv5DGsHHsnBmpUjM-mdx8Rzam6iXC57VY4XnT9AWE9Jg6KYXni2qqzt7q4q
+                - paragraph [ref=e299]:
+                  - generic [ref=e302]:
+                    - text: 生物
+                    - emphasis [ref=e303]: 医药
+                    - text: 首入新兴支柱
+                    - emphasis [ref=e304]: 产业
+                    - text: ","
+                    - emphasis [ref=e305]: "2026"
+                    - text: 年中国创新药迎来黄金发展期
+            - generic [ref=e306]:
+              - link [ref=e308] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3q8uo7RKn6F_r5fZPfyDA4rivgu9nsv5DGsHHsnBmpUjM-mdx8Rzam6iXC57VY4XnT9AWE9Jg6KYXni2qqzt7q4q
+              - generic [ref=e313]:
+                - generic [ref=e318]:
+                  - text: 5天前
+                  - generic [ref=e319]:
+                    - text: 截至
+                    - emphasis [ref=e320]: "2025"
+                    - text: 年，中国
+                    - emphasis [ref=e321]: AI药物
+                    - text: 研发
+                    - emphasis [ref=e322]: 行业市场规模
+                    - text: 已突破80亿元人民币，年复合增长率超过40%。2025年中国基因治疗市场规模有望超过100亿元。全拓数据调查显示，AI技术正被广泛应用于靶点发现、药物筛选、临床试验优化等环节，显著缩短新药研发周期、降低研发成本，成为中国创新药弯道超车的重要突破口。从区域布局来看，中国生物
+                    - emphasis [ref=e323]: 医药
+                    - text: ...
+                - link "头像 全拓数据" [ref=e328] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3q8uo7RKn6F_r5fZPfyDA4rivgu9nsv5DGsHHsnBmpUjM-mdx8Rzam6iXC57VY4XnT9AWE9Jg6KYXni2qqzt7q4q
+                  - img "头像" [ref=e331]
+                  - generic [ref=e332]: 全拓数据
+                  - generic [ref=e334]: 
+          - generic [ref=e338]:
+            - heading "暴降83%!AI“清洗”的不是医药代表,而是无效拜访" [level=3] [ref=e341]:
+              - link "暴降83%!AI“清洗”的不是医药代表,而是无效拜访" [ref=e342] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=eorxSuGlSjb2E4_B2FI6RCGlmuwUGR8umMcbIBvciwEDIHcAbe9HUAloAl4SXXcW-9QDE7B93uchxXt1y-QMvJUvr0TXzfuOyXxvHQETVKfbQVfyf-tgfWMlPuwwi2ja9JYrqulzLk1Eit5AMBxdm2SaZSYoIwhqoHgQ1jik7S2DxgE6JMM0DoR-Ds_K972vDgkf2xnd1463wKoegG_JhKriW2WVdb2kqxL9YpOdO-XXag1HHqzxIcTaDwAR5zw_CUWTE_K-TcOZlud8177zwK
+                - paragraph [ref=e345]:
+                  - generic [ref=e348]:
+                    - text: 暴降83%!
+                    - emphasis [ref=e349]: AI
+                    - text: “清洗”的不是
+                    - emphasis [ref=e350]: 医药
+                    - text: 代表,而是无效拜访
+            - generic [ref=e351]:
+              - link [ref=e353] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=eorxSuGlSjb2E4_B2FI6RCGlmuwUGR8umMcbIBvciwEDIHcAbe9HUAloAl4SXXcW-9QDE7B93uchxXt1y-QMvJUvr0TXzfuOyXxvHQETVKfbQVfyf-tgfWMlPuwwi2ja9JYrqulzLk1Eit5AMBxdm2SaZSYoIwhqoHgQ1jik7S2DxgE6JMM0DoR-Ds_K972vDgkf2xnd1463wKoegG_JhKriW2WVdb2kqxL9YpOdO-XXag1HHqzxIcTaDwAR5zw_CUWTE_K-TcOZlud8177zwK
+              - generic [ref=e358]:
+                - generic [ref=e363]:
+                  - text: 2026年4月8日
+                  - generic [ref=e364]:
+                    - text: 中国医药代表
+                    - emphasis [ref=e365]: 规模
+                    - text: 从2015年的300万人持续下行,2023年已不足80万人,
+                    - emphasis [ref=e366]: "2025"
+                    - text: 年底进一步收缩至50万人;与之形成鲜明对比的是,全球药企AI投入呈现持续攀升态势,从2015年的2亿美元到2025年大幅增长至85亿美元。 一降一升的鲜明反差,直观展现了AI驱动下中国医药销售行业的...
+                - link "头像 E药经理人" [ref=e371] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=eorxSuGlSjb2E4_B2FI6RCGlmuwUGR8umMcbIBvciwEDIHcAbe9HUAloAl4SXXcW-9QDE7B93uchxXt1y-QMvJUvr0TXzfuOyXxvHQETVKfbQVfyf-tgfWMlPuwwi2ja9JYrqulzLk1Eit5AMBxdm2SaZSYoIwhqoHgQ1jik7S2DxgE6JMM0DoR-Ds_K972vDgkf2xnd1463wKoegG_JhKriW2WVdb2kqxL9YpOdO-XXag1HHqzxIcTaDwAR5zw_CUWTE_K-TcOZlud8177zwK
+                  - img "头像" [ref=e374]
+                  - generic [ref=e375]: E药经理人
+                  - generic [ref=e377]: 
+          - generic [ref=e381]:
+            - heading "2025年我国医药行业发展趋势:AI制药市场规模将突破50亿 数智化..." [level=3] [ref=e384]:
+              - link "2025年我国医药行业发展趋势:AI制药市场规模将突破50亿 数智化..." [ref=e385] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Iu5WsIwsAU7CU88c71wCtCac1clU3hl8nEObpCjgx7IE3vmmY2kG2NiBT3GgwuxYbcQbPOlVKiWvvpcez2NOISCuyRaaJPx-KX-YUM_qYr_
+                - paragraph [ref=e388]:
+                  - generic [ref=e391]:
+                    - emphasis [ref=e392]: "2025"
+                    - text: 年我国
+                    - emphasis [ref=e393]: 医药行业
+                    - text: "发展趋势:"
+                    - emphasis [ref=e394]: AI
+                    - text: 制药
+                    - emphasis [ref=e395]: 市场规模
+                    - text: 将突破50亿 数智化...
+            - generic [ref=e396]:
+              - link [ref=e398] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Iu5WsIwsAU7CU88c71wCtCac1clU3hl8nEObpCjgx7IE3vmmY2kG2NiBT3GgwuxYbcQbPOlVKiWvvpcez2NOISCuyRaaJPx-KX-YUM_qYr_
+              - generic [ref=e403]:
+                - generic [ref=e408]:
+                  - text: 2025年4月25日
+                  - generic [ref=e409]:
+                    - text: 目前AI制药主要应用于靶点发现、化合物筛选等临床前阶段,可将药物发现效率提升50%以上。2023年全球AI制药
+                    - emphasis [ref=e410]: 市场规模
+                    - text: 达13.8亿美元,预计
+                    - emphasis [ref=e411]: "2026"
+                    - text: 年将增长至29.94亿美元。我国AI制药市场快速成长,2022年对外合作管线规模15.5亿元,预计2035年将达到1353亿元。 研发效率与成本双重优化。在全球医药研发支出超3000亿美元的背景下,AI技术...
+                - link "东方财富网" [ref=e416] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=Iu5WsIwsAU7CU88c71wCtCac1clU3hl8nEObpCjgx7IE3vmmY2kG2NiBT3GgwuxYbcQbPOlVKiWvvpcez2NOISCuyRaaJPx-KX-YUM_qYr_
+                  - generic [ref=e417]: 东方财富网
+                  - generic [ref=e419]: 
+          - generic [ref=e423]:
+            - heading "中国AI新药研发市场分析" [level=3] [ref=e426]:
+              - link "中国AI新药研发市场分析" [ref=e427] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3qx6emHKjE3P_tpmeHDbGzYziDQbAQueFPBrmpdoUd9QATD3MqtYk9ZVHVSfJaiqIJtapHm8Lzxgbzmxk1octMKEupGS9qMz364gWsmFVWQm9XrjgOPlwd_PSFwDPjBe_daou7EC4_IKKzP5zl7oOKMok1wpN5U2yg9TxmbyW1mbVo5nq6hYeI1JLpyvgf-NkaLT1MDW--BQCzW56DNXLFHVcNcYxKDgglos035Z3qoLgDXNu_F0Qy2WvBexq_iiU2_
+                - paragraph [ref=e430]:
+                  - generic [ref=e433]:
+                    - text: 中国
+                    - emphasis [ref=e434]: AI
+                    - text: 新药研发
+                    - emphasis [ref=e435]: 市场
+                    - text: 分析
+            - generic [ref=e436]:
+              - link [ref=e438] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3qx6emHKjE3P_tpmeHDbGzYziDQbAQueFPBrmpdoUd9QATD3MqtYk9ZVHVSfJaiqIJtapHm8Lzxgbzmxk1octMKEupGS9qMz364gWsmFVWQm9XrjgOPlwd_PSFwDPjBe_daou7EC4_IKKzP5zl7oOKMok1wpN5U2yg9TxmbyW1mbVo5nq6hYeI1JLpyvgf-NkaLT1MDW--BQCzW56DNXLFHVcNcYxKDgglos035Z3qoLgDXNu_F0Qy2WvBexq_iiU2_
+              - generic [ref=e443]:
+                - generic [ref=e448]:
+                  - text: 2026年3月13日
+                  - generic [ref=e449]:
+                    - text: "中国市场 :"
+                    - emphasis [ref=e450]: 规模
+                    - text: 远小于全球,但增速惊人。从2019年的0.67亿元增长至2024年的约5.62亿元,CAGR高达53.01%。预计
+                    - emphasis [ref=e451]: "2025"
+                    - text: "年将达19.4亿美元(全球口径),显示出巨大潜力。 国际地位: 科研产出全球第二 :在AI辅助药物发现(AIDD)领域的科研文献产出数量上,中国(占比29.0%)仅次于美国(30.1%),..."
+                - link "头像 医健趋势" [ref=e456] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3qx6emHKjE3P_tpmeHDbGzYziDQbAQueFPBrmpdoUd9QATD3MqtYk9ZVHVSfJaiqIJtapHm8Lzxgbzmxk1octMKEupGS9qMz364gWsmFVWQm9XrjgOPlwd_PSFwDPjBe_daou7EC4_IKKzP5zl7oOKMok1wpN5U2yg9TxmbyW1mbVo5nq6hYeI1JLpyvgf-NkaLT1MDW--BQCzW56DNXLFHVcNcYxKDgglos035Z3qoLgDXNu_F0Qy2WvBexq_iiU2_
+                  - img "头像" [ref=e459]
+                  - generic [ref=e460]: 医健趋势
+                  - generic [ref=e462]: 
+          - generic [ref=e464]:
+            - generic [ref=e465]: 大家还在搜
+            - generic [ref=e466]:
+              - link "ai制药的最新进展" [ref=e467] [cursor=pointer]:
+                - /url: /s?wd=ai%E5%88%B6%E8%8D%AF%E7%9A%84%E6%9C%80%E6%96%B0%E8%BF%9B%E5%B1%95&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=cfe3EMfEgRcM%2FiA6fEtc3RW76ykDScYwly3Lk5zMQIXo%2Fr6E6tioThxWP6E&rsf=101636803&rsv_dl=0_prs_28608_1
+                - generic [ref=e469]: ai制药的最新进展
+              - link "ai在医药行业的应用" [ref=e470] [cursor=pointer]:
+                - /url: /s?wd=ai%E5%9C%A8%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E7%9A%84%E5%BA%94%E7%94%A8&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=cfe3EMfEgRcM%2FiA6fEtc3RW76ykDScYwly3Lk5zMQIXo%2Fr6E6tioThxWP6E&rsf=101636803&rsv_dl=0_prs_28608_2
+                - generic [ref=e472]: ai在医药行业的应用
+              - link "医药行业还有前景吗" [ref=e473] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E8%BF%98%E6%9C%89%E5%89%8D%E6%99%AF%E5%90%97&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=cfe3EMfEgRcM%2FiA6fEtc3RW76ykDScYwly3Lk5zMQIXo%2Fr6E6tioThxWP6E&rsf=101636803&rsv_dl=0_prs_28608_3
+                - generic [ref=e475]: 医药行业还有前景吗
+              - link "药物制剂未来发展前景" [ref=e476] [cursor=pointer]:
+                - /url: /s?wd=%E8%8D%AF%E7%89%A9%E5%88%B6%E5%89%82%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=cfe3EMfEgRcM%2FiA6fEtc3RW76ykDScYwly3Lk5zMQIXo%2Fr6E6tioThxWP6E&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e478]: 药物制剂未来发展前景
+              - link "医药行业未来发展前景" [ref=e479] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=cfe3EMfEgRcM%2FiA6fEtc3RW76ykDScYwly3Lk5zMQIXo%2Fr6E6tioThxWP6E&rsf=101633403&rsv_dl=0_prs_28608_5
+                - generic [ref=e481]: 医药行业未来发展前景
+              - link "未来医药代表行业的发展" [ref=e482] [cursor=pointer]:
+                - /url: /s?wd=%E6%9C%AA%E6%9D%A5%E5%8C%BB%E8%8D%AF%E4%BB%A3%E8%A1%A8%E8%A1%8C%E4%B8%9A%E7%9A%84%E5%8F%91%E5%B1%95&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=cfe3EMfEgRcM%2FiA6fEtc3RW76ykDScYwly3Lk5zMQIXo%2Fr6E6tioThxWP6E&rsf=101636803&rsv_dl=0_prs_28608_6
+                - generic [ref=e484]: 未来医药代表行业的发展
+              - link "药物经济学发展前景" [ref=e485] [cursor=pointer]:
+                - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=cfe3EMfEgRcM%2FiA6fEtc3RW76ykDScYwly3Lk5zMQIXo%2Fr6E6tioThxWP6E&rsf=101633403&rsv_dl=0_prs_28608_7
+                - generic [ref=e487]: 药物经济学发展前景
+              - link "药学未来发展与价值" [ref=e488] [cursor=pointer]:
+                - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E4%B8%8E%E4%BB%B7%E5%80%BC&usm=2&ie=utf-8&rsv_pq=a24c038d01e97b98&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&rsv_t=cfe3EMfEgRcM%2FiA6fEtc3RW76ykDScYwly3Lk5zMQIXo%2Fr6E6tioThxWP6E&rsf=101633403&rsv_dl=0_prs_28608_8
+                - generic [ref=e490]: 药学未来发展与价值
+          - generic [ref=e494]:
+            - generic [ref=e496]:
+              - generic [ref=e497]: 
+              - heading "2026年中国药物开发人工智能行业市场规模及投资前景预测分析报告_百度..." [level=3] [ref=e498]:
+                - link "2026年中国药物开发人工智能行业市场规模及投资前景预测分析报告_百度..." [ref=e499] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=BOMWB5xjbFUVU0YeqbWkIiPhDHRuM3_KS8Ilj9E7gr6MPzVkslh2azWShFEQtiPPm2iWXHvQsVhbUNnsKgYZu57R1PH_wWJMrrpiYkq2oLHIFUGsYcngvhCeIinFJLms
+                  - paragraph [ref=e502]:
+                    - generic [ref=e505]:
+                      - emphasis [ref=e506]: "2026"
+                      - text: 年中国
+                      - emphasis [ref=e507]: 药物
+                      - text: 开发人工智能
+                      - emphasis [ref=e508]: 行业市场规模
+                      - text: 及投资
+                      - emphasis [ref=e509]: 前景
+                      - text: 预测分析报告_百度...
+            - generic [ref=e511]: "67页 发布时间: 2026年04月19日"
+            - generic [ref=e517]:
+              - text: 第十一章、中国药物开发人工智能企业出海战略机遇分析55 第十二章、对企业和投资者的建议59 声明65 图表目录 图表1
+              - emphasis [ref=e518]: "2025"
+              - text: —
+              - emphasis [ref=e519]: "2026"
+              - text: 年中国药物开发人工智能
+              - emphasis [ref=e520]: 行业市场规模
+              - text: 变化趋势10 图表2 2025年中国药物开发人工智能行业关键结构指标11 图表3 2025年药物开发AI领域资金投向结构13 图表4 2025–2026年中国药物开发
+              - emphasis [ref=e521]: AI市场规模
+              - text: ...
+            - link "百度文库" [ref=e526] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=BOMWB5xjbFUVU0YeqbWkIiPhDHRuM3_KS8Ilj9E7gr6MPzVkslh2azWShFEQtiPPm2iWXHvQsVhbUNnsKgYZu57R1PH_wWJMrrpiYkq2oLHIFUGsYcngvhCeIinFJLms
+              - generic [ref=e527]: 百度文库
+              - generic [ref=e529]: 
+          - generic [ref=e533]:
+            - heading "2026年启幕,AI医疗公司竞争最新格局——谁将领跑行业? — 新京报" [level=3] [ref=e536]:
+              - link "2026年启幕,AI医疗公司竞争最新格局——谁将领跑行业? — 新京报" [ref=e537] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3q8ytZ5D3XS3ADVfQknybjWDTgK4Lt9oNRYSUnYhPId-2YF-jkiWcryUz6d6AoXBwgq
+                - paragraph [ref=e540]:
+                  - generic [ref=e543]:
+                    - emphasis [ref=e544]: "2026"
+                    - text: 年启幕,
+                    - emphasis [ref=e545]: AI
+                    - text: 医疗公司竞争最新格局——谁将领跑
+                    - emphasis [ref=e546]: 行业
+                    - text: "? — 新京报"
+            - generic [ref=e547]:
+              - link [ref=e549] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3q8ytZ5D3XS3ADVfQknybjWDTgK4Lt9oNRYSUnYhPId-2YF-jkiWcryUz6d6AoXBwgq
+              - generic [ref=e554]:
+                - generic [ref=e559]:
+                  - text: 4天前
+                  - generic [ref=e560]:
+                    - text: 据权威机构预测,从2023年至2033年,我国AI医疗
+                    - emphasis [ref=e561]: 市场规模
+                    - text: 将从88亿元飙升至3157亿元,年复合增长率高达43.1%。回望
+                    - emphasis [ref=e562]: "2025"
+                    - text: 年,AI医疗行业已普遍步入产品落地验证的关键阶段;进入
+                    - emphasis [ref=e563]: "2026"
+                    - text: 年,随着政策加速、临床需求释放与技术迭代深化,AI医疗公司排名的竞争日趋白热化,头部企业正以扎实的临床落地能力与系统级解决方案,剑指未来千亿蓝海...
+                - link "新京报网" [ref=e568] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3q8ytZ5D3XS3ADVfQknybjWDTgK4Lt9oNRYSUnYhPId-2YF-jkiWcryUz6d6AoXBwgq
+                  - generic [ref=e569]: 新京报网
+                  - generic [ref=e571]: 
+          - generic [ref=e575]:
+            - heading "生物医药行业:现状深度解析与未来发展全景展望(2026)" [level=3] [ref=e578]:
+              - link "生物医药行业:现状深度解析与未来发展全景展望(2026)" [ref=e579] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3q8uo7RKn6F_r5fZPfyDA4ri0nNsCHF6dEZizI02cFnBB58qkbYsI8ri7ND9YF_6LUGyra9skaBjVlToGqOIkExG
+                - paragraph [ref=e582]:
+                  - generic [ref=e585]:
+                    - text: 生物
+                    - emphasis [ref=e586]: 医药行业
+                    - text: :现状深度解析与未来发展全景展望(
+                    - emphasis [ref=e587]: "2026"
+                    - text: )
+            - generic [ref=e588]:
+              - link [ref=e590] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3q8uo7RKn6F_r5fZPfyDA4ri0nNsCHF6dEZizI02cFnBB58qkbYsI8ri7ND9YF_6LUGyra9skaBjVlToGqOIkExG
+              - generic [ref=e595]:
+                - generic [ref=e600]:
+                  - text: 2026年2月4日
+                  - generic [ref=e601]:
+                    - text: "- 订单结构：海外订单占比超60%，"
+                    - emphasis [ref=e602]: "2025"
+                    - text: 年海外客户需求持续增长，特别是ADC、双抗等新模态药物的CDMO需求激增 4. AI+生物医药：全流程赋能，效率与成功率双提升 - 市场规模：全球医疗
+                    - emphasis [ref=e603]: AI市场规模
+                    - text: 从2025年的393.4亿美元增长至
+                    - emphasis [ref=e604]: "2026"
+                    - text: 年的560.1亿美元，中国AI制药渗透率预计达26.0% - 核心应用：- 靶点发现效率提升10...
+                - link "头像 社会发展研究" [ref=e609] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=2xijbfMWuytYZWg2q6-3q8uo7RKn6F_r5fZPfyDA4ri0nNsCHF6dEZizI02cFnBB58qkbYsI8ri7ND9YF_6LUGyra9skaBjVlToGqOIkExG
+                  - img "头像" [ref=e612]
+                  - generic [ref=e613]: 社会发展研究
+                  - generic [ref=e615]: 
+        - generic [ref=e618]:
+          - generic [ref=e619]: 相关搜索
+          - table [ref=e620]:
+            - rowgroup [ref=e621]:
+              - row "ai在医药行业的应用 ai制药的最新进展" [ref=e622]:
+                - cell "ai在医药行业的应用" [ref=e623]:
+                  - link "ai在医药行业的应用" [ref=e624] [cursor=pointer]:
+                    - /url: /s?wd=ai%E5%9C%A8%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E7%9A%84%E5%BA%94%E7%94%A8&rsf=101636803&rsp=0&f=1&rs_src=0&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&rsv_dl=brs_28338_1
+                    - generic [ref=e626]: ai在医药行业的应用
+                - cell "ai制药的最新进展" [ref=e627]:
+                  - link "ai制药的最新进展" [ref=e628] [cursor=pointer]:
+                    - /url: /s?wd=ai%E5%88%B6%E8%8D%AF%E7%9A%84%E6%9C%80%E6%96%B0%E8%BF%9B%E5%B1%95&rsf=101636803&rsp=1&f=1&rs_src=0&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&rsv_dl=brs_28338_2
+                    - generic [ref=e630]: ai制药的最新进展
+              - row "医药行业还有前景吗 药物制剂未来发展前景" [ref=e631]:
+                - cell "医药行业还有前景吗" [ref=e632]:
+                  - link "医药行业还有前景吗" [ref=e633] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E8%BF%98%E6%9C%89%E5%89%8D%E6%99%AF%E5%90%97&rsf=101636803&rsp=2&f=1&rs_src=0&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&rsv_dl=brs_28338_3
+                    - generic [ref=e635]: 医药行业还有前景吗
+                - cell "药物制剂未来发展前景" [ref=e636]:
+                  - link "药物制剂未来发展前景" [ref=e637] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E7%89%A9%E5%88%B6%E5%89%82%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&rsf=101636803&rsp=3&f=1&rs_src=0&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&rsv_dl=brs_28338_4
+                    - generic [ref=e639]: 药物制剂未来发展前景
+              - row "医药行业未来发展前景 未来医药代表行业的发展" [ref=e640]:
+                - cell "医药行业未来发展前景" [ref=e641]:
+                  - link "医药行业未来发展前景" [ref=e642] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&rsf=101633403&rsp=4&f=1&rs_src=0&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&rsv_dl=brs_28338_5
+                    - generic [ref=e644]: 医药行业未来发展前景
+                - cell "未来医药代表行业的发展" [ref=e645]:
+                  - link "未来医药代表行业的发展" [ref=e646] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9C%AA%E6%9D%A5%E5%8C%BB%E8%8D%AF%E4%BB%A3%E8%A1%A8%E8%A1%8C%E4%B8%9A%E7%9A%84%E5%8F%91%E5%B1%95&rsf=101636803&rsp=5&f=1&rs_src=0&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&rsv_dl=brs_28338_6
+                    - generic [ref=e648]: 未来医药代表行业的发展
+              - row "药物经济学发展前景 我国药物经济学发展现状" [ref=e649]:
+                - cell "药物经济学发展前景" [ref=e650]:
+                  - link "药物经济学发展前景" [ref=e651] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&rsf=101633403&rsp=6&f=1&rs_src=0&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&rsv_dl=brs_28338_7
+                    - generic [ref=e653]: 药物经济学发展前景
+                - cell "我国药物经济学发展现状" [ref=e654]:
+                  - link "我国药物经济学发展现状" [ref=e655] [cursor=pointer]:
+                    - /url: /s?wd=%E6%88%91%E5%9B%BD%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6&rsf=101633403&rsp=7&f=1&rs_src=0&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&rsv_dl=brs_28338_8
+                    - generic [ref=e657]: 我国药物经济学发展现状
+              - row "药学对未来医疗的影响 药学未来发展与价值" [ref=e658]:
+                - cell "药学对未来医疗的影响" [ref=e659]:
+                  - link "药学对未来医疗的影响" [ref=e660] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E5%AF%B9%E6%9C%AA%E6%9D%A5%E5%8C%BB%E7%96%97%E7%9A%84%E5%BD%B1%E5%93%8D&rsf=101636803&rsp=8&f=1&rs_src=0&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&rsv_dl=brs_28338_9
+                    - generic [ref=e662]: 药学对未来医疗的影响
+                - cell "药学未来发展与价值" [ref=e663]:
+                  - link "药学未来发展与价值" [ref=e664] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E4%B8%8E%E4%BB%B7%E5%80%BC&rsf=101633403&rsp=9&f=1&rs_src=0&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&rsv_dl=brs_28338_10
+                    - generic [ref=e666]: 药学未来发展与价值
+      - generic [ref=e669]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e670]:
+          - generic [ref=e671]: "1"
+        - link "2" [ref=e672] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&pn=10&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&ie=utf-8&usm=2&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&topic_pn=
+          - generic [ref=e673]: "2"
+        - link "3" [ref=e674] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&pn=20&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&ie=utf-8&usm=2&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&topic_pn=
+          - generic [ref=e675]: "3"
+        - link "4" [ref=e676] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&pn=30&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&ie=utf-8&usm=2&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&topic_pn=
+          - generic [ref=e677]: "4"
+        - link "5" [ref=e678] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&pn=40&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&ie=utf-8&usm=2&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&topic_pn=
+          - generic [ref=e679]: "5"
+        - link "6" [ref=e680] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&pn=50&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&ie=utf-8&usm=2&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&topic_pn=
+          - generic [ref=e681]: "6"
+        - link "7" [ref=e682] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&pn=60&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&ie=utf-8&usm=2&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&topic_pn=
+          - generic [ref=e683]: "7"
+        - link "8" [ref=e684] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&pn=70&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&ie=utf-8&usm=2&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&topic_pn=
+          - generic [ref=e685]: "8"
+        - link "9" [ref=e686] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&pn=80&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&ie=utf-8&usm=2&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&topic_pn=
+          - generic [ref=e687]: "9"
+        - link "10" [ref=e688] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&pn=90&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&ie=utf-8&usm=2&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&topic_pn=
+          - generic [ref=e689]: "10"
+        - link "下一页" [ref=e690] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&pn=10&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E6%9B%BF%E4%BB%A3%20%E5%8C%BB%E8%8D%AF%E4%BA%A7%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%202026&ie=utf-8&usm=2&rsv_pq=a24c038d01e97b98&rsv_t=0390d2n2jHAu2D2uBtWRPfWa%2F8wPAG14o7eBHd463jLbk70w%2B2gfQD374NA&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e691]
+      - generic [ref=e694]:
+        - link "帮助" [ref=e695] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e696] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e697] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e698] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

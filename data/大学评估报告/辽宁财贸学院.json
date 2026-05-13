@@ -1,0 +1,40 @@
+{
+  "university_name": "辽宁财贸学院",
+  "short_name": "辽财",
+  "location": {
+    "province": "辽宁省",
+    "city": "葫芦岛市（兴城）",
+    "feature": "滨海旅游区"
+  },
+  "academic_profile": {
+    "type": "民办财经类",
+    "key_majors": [
+      "会计学",
+      "审计学",
+      "经济学"
+    ],
+    "provincial_level_majors": 3,
+    "teaching_style": "应用型/实训导向"
+  },
+  "student_life": {
+    "management_style": "严格/高中化",
+    "dormitory_quality": "极高/城堡风格",
+    "tuition_level": "较高（民办标准）"
+  },
+  "employment_stats": {
+    "employment_rate": "95%+",
+    "primary_sectors": [
+      "中小企业财务",
+      "基层金融",
+      "考公"
+    ],
+    "starting_salary_median": 4800
+  },
+  "evaluation_scores": {
+    "academic_capital": 1.8,
+    "employment_value": 2.8,
+    "location_advantage": 2.2,
+    "brand_asset": 3.5,
+    "overall_weighted_score": 2.33
+  }
+}

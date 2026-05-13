@@ -1,0 +1,49 @@
+{
+  "university_name": "浙江越秀外国语学院",
+  "short_name": "越秀",
+  "location": {
+    "province": "浙江",
+    "city": "绍兴",
+    "campuses": [
+      "镜湖校区",
+      "稽山校区"
+    ]
+  },
+  "academic_level": {
+    "type": "民办本科",
+    "key_disciplines": [
+      "外国语言文学",
+      "中国语言文学",
+      "工商管理"
+    ],
+    "master_status": "硕士学位授予加强建设单位"
+  },
+  "student_profile": {
+    "gender_ratio": "1:9",
+    "major_categories": [
+      "文学",
+      "管理学",
+      "经济学",
+      "艺术学",
+      "工学"
+    ]
+  },
+  "employment_stats": {
+    "overall_rate": "93%+",
+    "top_industries": [
+      "教育",
+      "批发和零售业",
+      "租赁和商务服务业"
+    ],
+    "avg_starting_salary": 5403
+  },
+  "evaluation_scores": {
+    "academic": 2.5,
+    "employment": 3.0,
+    "location": 4.0,
+    "globalization": 3.8,
+    "campus_life": 3.5,
+    "brand_value": 3.5,
+    "weighted_total": 3.15
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "university_name": "南方科技大学",
+  "short_name": "SUSTech",
+  "location": {
+    "city": "深圳",
+    "district": "南山区",
+    "city_gdp_2024": "3.46万亿元"
+  },
+  "academic_stats": {
+    "a_plus_disciplines": [
+      "数学"
+    ],
+    "a_disciplines": [
+      "物理学",
+      "化学"
+    ],
+    "academician_count": 58,
+    "faculty_overseas_ratio": "90%+"
+  },
+  "admission_model": {
+    "type": "6+3+1 综合评价",
+    "selectivity": "极高",
+    "annual_intake_undergrad": 1300
+  },
+  "graduate_outcomes": {
+    "overall_further_study_rate": "80%",
+    "overseas_study_rate": "42%",
+    "top_employers": [
+      "华为",
+      "腾讯",
+      "大疆",
+      "比亚迪"
+    ],
+    "avg_starting_salary": 11500
+  },
+  "rankings": {
+    "shanghai_ranking_2026": 30,
+    "the_china_ranking": "Top 10"
+  },
+  "evaluation_scores": {
+    "academic_capital": 4.8,
+    "graduate_value": 4.9,
+    "location_advantage": 5.0,
+    "globalization": 4.8,
+    "student_freedom": 4.9,
+    "brand_asset": 4.6,
+    "weighted_total": 4.85
+  }
+}

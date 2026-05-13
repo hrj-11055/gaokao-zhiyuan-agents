@@ -1,0 +1,48 @@
+{
+  "university_name": "武汉职业技术大学",
+  "short_name": "武职大",
+  "type": "公办职业本科",
+  "location": {
+    "province": "湖北",
+    "city": "武汉",
+    "district": "东湖高新区（光谷）",
+    "core_advantage": "光谷产业集群中心"
+  },
+  "academic_standing": {
+    "double_high_plan": "A档",
+    "key_disciplines": [
+      "光电技术应用",
+      "智能制造",
+      "软件技术"
+    ],
+    "national_teaching_masters": 2
+  },
+  "admission_2025_estimate": {
+    "hubei_physics_line": 494,
+    "hubei_history_line": 508,
+    "competitiveness_index": "High"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "95%+",
+    "starting_salary_median": 5800,
+    "top_employers": [
+      "Huawei",
+      "YMTC",
+      "CSOT"
+    ],
+    "local_retention_rate": "60%+"
+  },
+  "campus_life": {
+    "food_rating": 4.8,
+    "dormitory_condition": "Standard to Good",
+    "transfer_major_difficulty": "Moderate"
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.8,
+    "employment_value": 4.5,
+    "location_advantage": 4.9,
+    "global_vision": 2.8,
+    "brand_asset": 4.2,
+    "comprehensive_score": 4.12
+  }
+}

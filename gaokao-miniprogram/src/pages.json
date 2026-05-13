@@ -54,6 +54,38 @@
         "navigationBarBackgroundColor": "#FFFFFF",
         "navigationBarTextStyle": "black"
       }
+    },
+    {
+      "path": "pages/mbti/mbti",
+      "style": {
+        "navigationBarTitleText": "MBTI 性格测试",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/mbti/mbti-result",
+      "style": {
+        "navigationBarTitleText": "MBTI 测试结果",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/holland/holland",
+      "style": {
+        "navigationBarTitleText": "霍兰德职业兴趣测试",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/holland/holland-result",
+      "style": {
+        "navigationBarTitleText": "霍兰德测试结果",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
     }
   ],
   "globalStyle": {

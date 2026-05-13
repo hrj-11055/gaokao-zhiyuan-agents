@@ -1,0 +1,38 @@
+{
+  "university_name": "集美大学",
+  "english_name": "Jimei University",
+  "location": {
+    "province": "福建",
+    "city": "厦门",
+    "district": "集美区"
+  },
+  "academic_level": {
+    "key_disciplines": [
+      "水产",
+      "海洋科学",
+      "船舶与海洋工程"
+    ],
+    "b_plus_count": 2,
+    "academician_count": 1
+  },
+  "admission_stats": {
+    "fujian_history_rank": "Top 3.5%",
+    "fujian_physics_rank": "Top 16%",
+    "maritime_special_batch": true
+  },
+  "employment_outcomes": {
+    "overall_employment_rate": "92%+",
+    "maritime_starting_salary": "12000-18000",
+    "top_employers": [
+      "COSCO",
+      "招商局",
+      "建发集团"
+    ]
+  },
+  "campus_features": {
+    "architectural_style": "Jiageng Style",
+    "management_mode": "Semi-military (Maritime)",
+    "motto": "Sincerity and Perseverance (诚毅)"
+  },
+  "comprehensive_score": 4.05
+}

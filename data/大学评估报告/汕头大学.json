@@ -1,0 +1,52 @@
+{
+  "university_name": "汕头大学",
+  "short_name": "STU",
+  "location": {
+    "province": "广东",
+    "city": "汕头",
+    "campuses": [
+      "桑浦山校区",
+      "东海岸校区"
+    ]
+  },
+  "academic_standing": {
+    "esi_top_1_percent_count": 8,
+    "esi_top_1_permille_count": 1,
+    "key_disciplines": [
+      "临床医学",
+      "化学",
+      "工程学",
+      "商科",
+      "新闻传播学"
+    ],
+    "academician_count": 5
+  },
+  "admission_competitiveness": {
+    "guangdong_physics_rank_avg": 80000,
+    "guangdong_history_rank_avg": 18000,
+    "medical_school_premium": "High"
+  },
+  "employment_outcomes": {
+    "further_study_rate": "35.9%",
+    "top_employer_regions": [
+      "深圳",
+      "广州",
+      "汕头"
+    ],
+    "salary_rank_national": 58
+  },
+  "unique_features": {
+    "management_model": "Residential College System (书院制)",
+    "funding_source": "Government + Li Ka Shing Foundation",
+    "internationalization_level": "High"
+  },
+  "scores": {
+    "academic_capital": 4.0,
+    "employment_value": 4.2,
+    "location_potential": 3.5,
+    "globalization": 4.6,
+    "student_freedom": 4.4,
+    "brand_asset": 3.8,
+    "overall_weighted_score": 4.045
+  }
+}

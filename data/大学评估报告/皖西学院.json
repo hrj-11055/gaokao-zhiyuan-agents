@@ -1,0 +1,43 @@
+{
+  "university_name": "皖西学院",
+  "short_name": "West Anhui University (WAU)",
+  "location": {
+    "province": "安徽省",
+    "city": "六安市",
+    "feature": "月亮岛"
+  },
+  "academic_stats": {
+    "key_disciplines_provincial": [
+      "人文地理学",
+      "应用经济学",
+      "中药学"
+    ],
+    "national_featured_majors": [
+      "数学与应用数学",
+      "电子信息科学与技术"
+    ],
+    "master_points": "正在积极增列中"
+  },
+  "admission_data_2024": {
+    "anhui_liberal_arts_rank": 26124,
+    "anhui_science_rank": 90282
+  },
+  "career_outcomes": {
+    "further_study_rate": "30.66%",
+    "primary_employers": [
+      "奇瑞",
+      "京东方",
+      "科大讯飞"
+    ],
+    "salary_index": 2.5
+  },
+  "evaluation_scores": {
+    "academic": 2.5,
+    "employment": 3.2,
+    "location": 3.0,
+    "globalization": 1.5,
+    "student_freedom": 2.8,
+    "brand": 2.6,
+    "overall_weighted": 2.71
+  }
+}

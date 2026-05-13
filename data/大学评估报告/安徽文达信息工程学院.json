@@ -1,0 +1,43 @@
+{
+  "university_name": "安徽文达信息工程学院",
+  "short_name": "文达学院",
+  "established_year": 2001,
+  "location": {
+    "province": "安徽",
+    "city": "合肥",
+    "district": "肥西县紫蓬山"
+  },
+  "academic_profile": {
+    "type": "民办本科",
+    "key_disciplines": [
+      "计算机科学与技术",
+      "电子信息工程",
+      "机械设计制造"
+    ],
+    "a_class_disciplines": 0,
+    "master_points": 0
+  },
+  "employment_data": {
+    "employment_rate": "96.2%",
+    "average_starting_salary": 5100,
+    "top_employer_industries": [
+      "智能制造",
+      "信息技术",
+      "电子商务"
+    ]
+  },
+  "evaluation_scores": {
+    "academic": 1.8,
+    "employment": 2.1,
+    "location": 3.5,
+    "globalization": 1.5,
+    "student_empowerment": 2.5,
+    "brand_asset": 2.2,
+    "weighted_total": 2.2
+  },
+  "risk_factors": [
+    "教学管理合规性风险",
+    "地理位置偏僻导致的通勤成本",
+    "民办院校品牌溢价不足"
+  ]
+}

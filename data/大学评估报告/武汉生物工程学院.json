@@ -1,0 +1,51 @@
+{
+  "university_name": "武汉生物工程学院",
+  "short_name": "武生院 / WIB",
+  "established_year": 1994,
+  "location": {
+    "province": "湖北",
+    "city": "武汉",
+    "district": "长江新区（阳逻）",
+    "gdp_2024": "20011亿元"
+  },
+  "academic_level": {
+    "is_private": true,
+    "key_disciplines": [
+      "生物工程",
+      "制药工程",
+      "环境工程",
+      "园林"
+    ],
+    "national_nsf_projects": 26,
+    "qian_xuesen_class": true
+  },
+  "student_quality": {
+    "hubei_physics_line_2024": 469,
+    "hubei_history_line_2024": 442,
+    "overall_competitiveness": "Middle-High (Private)"
+  },
+  "employment_outcomes": {
+    "employment_rate": "87.53%",
+    "further_study_rate": "10.2%",
+    "avg_starting_salary": 5900,
+    "top_industries": [
+      "Biotech",
+      "Pharma",
+      "Construction"
+    ]
+  },
+  "campus_life": {
+    "dorm_quality": "Excellent",
+    "campus_style": "Botanical Garden / Great Wall",
+    "transfer_policy_flexibility": "High"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.2,
+    "graduate_value": 2.4,
+    "location_potential": 3.2,
+    "globalization": 1.5,
+    "student_empowerment": 3.5,
+    "brand_asset": 3.8,
+    "weighted_total": 2.57
+  }
+}

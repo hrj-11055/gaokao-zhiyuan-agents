@@ -1,0 +1,32 @@
+{
+  "university_name": "山东警察学院",
+  "short_name": "山警 / SDPC",
+  "location": {
+    "province": "山东",
+    "city": "济南",
+    "campuses": [
+      "明水校区",
+      "五影山校区"
+    ]
+  },
+  "academic": {
+    "key_disciplines": [
+      "公安学",
+      "公安技术"
+    ],
+    "master_points_status": "立项建设中",
+    "top_tier_majors_count": 8
+  },
+  "admission_stats": {
+    "avg_score_margin_female": "160+",
+    "avg_score_margin_male": "100+",
+    "admission_batch": "提前批"
+  },
+  "employment": {
+    "police_entry_rate": "约 90%",
+    "primary_employer": "山东省公安系统",
+    "further_study_rate": "3.86%"
+  },
+  "management_style": "准军事化",
+  "overall_rating": 3.47
+}

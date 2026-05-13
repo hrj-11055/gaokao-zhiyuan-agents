@@ -1,0 +1,51 @@
+{
+  "university_name": "新乡工程学院",
+  "short_name": "XXU / 新工院",
+  "location": {
+    "province": "河南省",
+    "city": "新乡市",
+    "districts": [
+      "红旗区",
+      "原阳县"
+    ]
+  },
+  "academic": {
+    "type": "民办应用型本科",
+    "key_disciplines": [
+      "生物工程",
+      "机械设计制造及其自动化",
+      "食品科学与工程"
+    ],
+    "provincial_first_class_majors": 4,
+    "academician_count": 0,
+    "master_points": 0
+  },
+  "admission": {
+    "henan_rank_history": 82450,
+    "henan_rank_physics": 245600,
+    "difficulty_level": "Low-Medium"
+  },
+  "employment": {
+    "further_study_rate": "12.5%",
+    "top_employers": [
+      "牧原集团",
+      "宇通客车",
+      "富士康"
+    ],
+    "starting_salary_median": 4200
+  },
+  "campus_life": {
+    "management_style": "Strict",
+    "dormitory_condition": "Excellent (New Campus)",
+    "kaoyan_vibe": "Strong"
+  },
+  "scores": {
+    "academic_capital": 2.2,
+    "graduate_value": 2.5,
+    "location_advantage": 3.2,
+    "globalization": 1.2,
+    "student_empowerment": 2.5,
+    "brand_asset": 2.8,
+    "comprehensive_score": 2.42
+  }
+}

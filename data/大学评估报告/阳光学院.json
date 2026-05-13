@@ -1,0 +1,31 @@
+{
+  "university_name": "阳光学院",
+  "academic": {
+    "a_plus_count": 0,
+    "a_count": 0,
+    "a_minus_count": 0,
+    "academician_count": 1,
+    "national_first_class_majors": 3
+  },
+  "employment": {
+    "domestic_further_study_rate": "5.2%",
+    "overseas_further_study_rate": "2.1%",
+    "starting_salary_median": 5200,
+    "employment_rate": "90.61%"
+  },
+  "location": {
+    "city": "福州市",
+    "city_gdp": "12928亿元",
+    "district": "马尾区"
+  },
+  "scores": {
+    "comprehensive_score": 3.22,
+    "academic_score": 2.8,
+    "employment_score": 3.2,
+    "location_score": 4.2
+  },
+  "rankings": {
+    "ruanke_private_rank": 25,
+    "fujian_private_rank": 1
+  }
+}

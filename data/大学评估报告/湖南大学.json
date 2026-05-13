@@ -1,0 +1,62 @@
+{
+  "university_name": "湖南大学",
+  "short_name": "HNU",
+  "location": {
+    "city": "长沙",
+    "province": "湖南",
+    "region": "华中"
+  },
+  "academic_stats": {
+    "double_first_class_disciplines": [
+      "化学",
+      "机械工程",
+      "电气工程"
+    ],
+    "a_plus_disciplines": [
+      "设计学"
+    ],
+    "a_disciplines": [
+      "化学"
+    ],
+    "a_minus_disciplines": [
+      "机械工程",
+      "土木工程",
+      "工商管理",
+      "电气工程",
+      "外国语言文学",
+      "计算机科学与技术"
+    ],
+    "academician_count": 15
+  },
+  "admission_data_2025_est": {
+    "hunan_physics_rank": 11500,
+    "hunan_history_rank": 850,
+    "guangdong_physics_rank": 12000,
+    "zhejiang_rank": 11675
+  },
+  "employment_stats": {
+    "further_study_rate": "48.26%",
+    "domestic_study_rate": "39.44%",
+    "overseas_study_rate": "8.82%",
+    "top_employers": [
+      "华为",
+      "国家电网",
+      "中国建筑",
+      "比亚迪"
+    ],
+    "median_salary": 8891
+  },
+  "campus_life": {
+    "major_transfer_policy": "极度开放",
+    "campus_type": "无围墙/开放式",
+    "dormitory_areas": [
+      "天马",
+      "德智",
+      "园区"
+    ]
+  },
+  "evaluation": {
+    "comprehensive_score": 4.37,
+    "recommendation_index": "9.2/10"
+  }
+}

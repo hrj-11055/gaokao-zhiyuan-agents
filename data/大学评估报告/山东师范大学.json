@@ -1,0 +1,46 @@
+{
+  "university_name": "山东师范大学",
+  "short_name": "SDNU / 山师大",
+  "location": {
+    "city": "济南",
+    "campuses": [
+      "千佛山校区",
+      "长清湖校区"
+    ]
+  },
+  "academic_standing": {
+    "a_minus_subjects": [
+      "教育学",
+      "心理学"
+    ],
+    "b_plus_subjects": [
+      "马克思主义理论",
+      "中国语言文学"
+    ],
+    "esi_top_1_percent": [
+      "化学",
+      "工程学",
+      "植物与动物科学",
+      "材料科学",
+      "数学"
+    ]
+  },
+  "admission_stats": {
+    "avg_rank_shandong_shifan": 25000,
+    "competition_level": "Very High"
+  },
+  "employment_stats": {
+    "further_study_rate": "37.7%",
+    "education_sector_ratio": "48%",
+    "median_starting_salary": 5800
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.8,
+    "graduate_value": 3.7,
+    "location_advantage": 3.5,
+    "global_capability": 3.2,
+    "student_empowerment": 3.4,
+    "brand_asset": 3.8,
+    "overall_weighted_score": 3.65
+  }
+}

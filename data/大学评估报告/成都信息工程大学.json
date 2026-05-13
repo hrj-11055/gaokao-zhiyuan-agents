@@ -1,0 +1,53 @@
+{
+  "university_name": "成都信息工程大学",
+  "short_name": "成信大 / CUIT",
+  "location": {
+    "province": "四川",
+    "city": "成都",
+    "districts": [
+      "双流航空港",
+      "龙泉驿"
+    ]
+  },
+  "tags": [
+    "局省共建",
+    "行业特色校",
+    "气象人才摇篮",
+    "IT强校"
+  ],
+  "academic_stats": {
+    "phd_points": 1,
+    "master_points": 14,
+    "key_disciplines": [
+      "大气科学",
+      "信息与通信工程",
+      "计算机科学与技术"
+    ],
+    "esi_top_1_percent": [
+      "工程学",
+      "计算机科学",
+      "地球科学"
+    ]
+  },
+  "admission_competitiveness": {
+    "science_rank_avg": 55000,
+    "liberal_arts_rank_avg": 13000,
+    "difficulty_level": "High (Science) / Medium (Arts)"
+  },
+  "employment_data": {
+    "overall_employment_rate": "89.39%",
+    "further_study_rate": "19.94%",
+    "avg_starting_salary_it": 8500,
+    "top_employers": [
+      "中国气象局",
+      "华为",
+      "腾讯",
+      "国家统计局"
+    ]
+  },
+  "risk_factors": [
+    "军队采购禁入 (2025-2028)",
+    "非双一流身份限制"
+  ],
+  "overall_score": 3.96
+}

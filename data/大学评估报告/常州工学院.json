@@ -1,0 +1,53 @@
+{
+  "university_name": "常州工学院",
+  "short_name": "常工院 / CZU",
+  "location": {
+    "province": "江苏",
+    "city": "常州",
+    "district": "新北区",
+    "campus": [
+      "辽河路校区 (主校区)",
+      "巫山路校区"
+    ]
+  },
+  "academic_profile": {
+    "master_points": 3,
+    "national_first_class_majors": 10,
+    "key_disciplines": [
+      "机械工程",
+      "自动化",
+      "电子信息",
+      "土木工程"
+    ],
+    "academician_count": 1
+  },
+  "admission_stats": {
+    "js_physics_rank_2025": 102450,
+    "js_history_rank_2025": 28450,
+    "competitive_level": "中等偏上 / 务实型热门"
+  },
+  "employment_stats": {
+    "initial_employment_rate": ">95%",
+    "further_study_rate": "19.8%",
+    "top_employers": [
+      "比亚迪",
+      "理想汽车",
+      "恒立液压",
+      "中国民航"
+    ],
+    "avg_starting_salary_eng": 6500
+  },
+  "evaluation_scores": {
+    "academic": 3.2,
+    "employment": 4.0,
+    "location": 4.5,
+    "facilities": 4.8,
+    "overall_weighted": 3.63
+  },
+  "tags": [
+    "应用型本科",
+    "新能源之都",
+    "产教融合",
+    "高性价比"
+  ]
+}

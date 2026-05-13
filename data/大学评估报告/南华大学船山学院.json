@@ -1,0 +1,46 @@
+{
+  "university_name": "南华大学船山学院",
+  "short_name": "船山学院",
+  "location": {
+    "province": "湖南省",
+    "city": "衡阳市",
+    "campus": "红湘校区"
+  },
+  "academic_level": {
+    "parent_university": "南华大学",
+    "key_disciplines": [
+      "核科学与技术",
+      "临床医学",
+      "护理学"
+    ],
+    "is_independent_college": true
+  },
+  "admission_data": {
+    "avg_score_physics_hunan_2025": 440,
+    "avg_score_history_hunan_2025": 478,
+    "competitiveness_index": "Medium-High"
+  },
+  "employment_stats": {
+    "top_industries": [
+      "Healthcare",
+      "Nuclear Energy",
+      "Construction"
+    ],
+    "median_starting_salary": 4700,
+    "further_study_rate": "3.5%-5.0%"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.4,
+    "graduate_value": 2.5,
+    "location_potential": 2.8,
+    "globalization": 2.2,
+    "student_freedom": 2.6,
+    "brand_asset": 2.7,
+    "weighted_total": 2.51
+  },
+  "risk_factors": [
+    "Transfer uncertainty",
+    "High tuition fees",
+    "First degree bias"
+  ]
+}

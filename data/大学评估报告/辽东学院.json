@@ -1,0 +1,49 @@
+{
+  "university_name": "辽东学院",
+  "english_name": "Eastern Liaoning University",
+  "location": {
+    "province": "辽宁省",
+    "city": "丹东市",
+    "campus": [
+      "临江校区",
+      "金山校区"
+    ]
+  },
+  "academic_level": {
+    "type": "应用型本科",
+    "key_disciplines": [
+      "纺织工程",
+      "服装设计与工程",
+      "旅游管理",
+      "园艺"
+    ],
+    "master_degree_status": "立项建设中"
+  },
+  "student_quality": {
+    "liaoning_admission_rank_avg_physic": 75000,
+    "liaoning_admission_rank_avg_history": 18500
+  },
+  "employment_stats": {
+    "overall_employment_rate": "94.5%",
+    "further_study_rate": "8.5%",
+    "median_starting_salary": 4100,
+    "top_employment_sectors": [
+      "教育",
+      "制造业",
+      "商贸"
+    ]
+  },
+  "globalization": {
+    "key_partner_country": "韩国",
+    "cooperative_program": "中韩合作办学项目"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.2,
+    "graduate_value": 2.3,
+    "location_advantage": 2.4,
+    "globalization_capability": 2.6,
+    "student_empowerment": 2.5,
+    "brand_asset": 2.3,
+    "weighted_total_score": 2.33
+  }
+}

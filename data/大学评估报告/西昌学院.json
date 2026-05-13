@@ -1,0 +1,43 @@
+{
+  "university_name": "西昌学院",
+  "short_name": "XCC",
+  "location": {
+    "province": "四川省",
+    "city": "西昌市",
+    "campus": [
+      "安宁校区",
+      "南校区"
+    ]
+  },
+  "academic_level": {
+    "master_degree_units": 3,
+    "key_disciplines": [
+      "农学",
+      "动物科学",
+      "彝语言文化"
+    ],
+    "research_platforms": [
+      "攀西特色作物研究与利用重点实验室"
+    ]
+  },
+  "admission_stats": {
+    "average_rank_sichuan_liberal_arts": 21000,
+    "average_rank_sichuan_science": 105000
+  },
+  "career_outcomes": {
+    "employment_rate": "93.35%",
+    "further_study_rate": "10.19%",
+    "top_employers": [
+      "中国建筑",
+      "通威股份",
+      "凉山教育系统"
+    ],
+    "avg_starting_salary": 5200
+  },
+  "tags": [
+    "应用型本科",
+    "民族特色",
+    "农林优势",
+    "航天城"
+  ]
+}

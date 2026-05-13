@@ -1,0 +1,368 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 汕头大学 毕业生 薪酬 起薪 月薪 排名 2024 汕头大学 毕业生 薪酬 起薪 月薪 排名 2024
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%25B1%2595%25E5%25A4%25B4%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E6%25AF%2595%25E4%25B8%259A%25E7%2594%259F%2B%25E8%2596%25AA%25E9%2585%25AC%2B%25E8%25B5%25B7%25E8%2596%25AA%2B%25E6%259C%2588%25E8%2596%25AA%2B%25E6%258E%2592%25E5%2590%258D%2B2024&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&aep=1&ntc=1&sa=X&ved=2ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQ2J8OegQIEBAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&sa=X&ved=2ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQ0pQJegQIEhAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&sa=X&ved=2ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQtKgLegQIFBAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "短视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&sa=X&ved=2ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQs6gLegQIFhAB
+              - generic [ref=e103]: 短视频
+          - listitem [ref=e104]:
+            - link "视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&sa=X&ved=2ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQtKgLegQIFRAB
+              - generic [ref=e107]: 视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在搜索 再多想一会儿" [level=2] [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e155]: 正在搜索
+            - generic [ref=e165]: 再多想一会儿
+        - progressbar [ref=e167]
+      - main [ref=e209]:
+        - generic [ref=e213]:
+          - generic [ref=e216]:
+            - heading "网页搜索结果" [level=2] [ref=e217]
+            - generic [ref=e218]:
+              - generic [ref=e221]:
+                - link "广东7校月薪过万！2025高校毕业生薪酬排行出炉！你 ... 搜狐网 https://www.sohu.com › 搜狐文章页 › 鬼谷子课堂" [ref=e223] [cursor=pointer]:
+                  - /url: https://www.sohu.com/a/906550079_121124217
+                  - heading "广东7校月薪过万！2025高校毕业生薪酬排行出炉！你 ..." [level=3] [ref=e224]
+                  - generic [ref=e229]:
+                    - generic [ref=e231]: 搜狐网
+                    - generic [ref=e233]: https://www.sohu.com › 搜狐文章页 › 鬼谷子课堂
+                - button "关于这条结果的详细信息" [ref=e234] [cursor=pointer]:
+                  - img [ref=e237]
+              - generic [ref=e240]:
+                - generic [ref=e241]: 2025年6月21日 —
+                - generic [ref=e242]:
+                  - text: 中山大学
+                  - emphasis [ref=e243]: "2024"
+                  - text: 届
+                  - emphasis [ref=e244]: 毕业生
+                  - text: 平均
+                  - emphasis [ref=e245]: 月薪
+                  - text: 12675元，位列全国第7、广东第1，符合省内 ... 暨南大学、深圳大学、广州美术学院、
+                  - emphasis [ref=e246]: 汕头大学
+                  - text: 紧随其后，以上7校毕业 ...
+          - generic [ref=e251]:
+            - heading "相关问题" [level=2] [ref=e253]
+            - generic [ref=e254]:
+              - button "大学与中学文凭 月薪平均差多少？" [ref=e260] [cursor=pointer]:
+                - generic [ref=e262]: 大学与中学文凭 月薪平均差多少？
+                - img [ref=e265]
+              - button "美国大学毕业生平均工资？" [ref=e274] [cursor=pointer]:
+                - generic [ref=e276]: 美国大学毕业生平均工资？
+                - img [ref=e279]
+              - button "汕头公务员待遇？" [ref=e288] [cursor=pointer]:
+                - generic [ref=e290]: 汕头公务员待遇？
+                - img [ref=e293]
+              - button "中国月收入两万是什么水平？" [ref=e302] [cursor=pointer]:
+                - generic [ref=e304]: 中国月收入两万是什么水平？
+                - img [ref=e307]
+          - generic [ref=e312]:
+            - heading "网页搜索结果" [level=2] [ref=e313]
+            - generic [ref=e314]:
+              - generic [ref=e317]:
+                - link "有“钱”途！高校毕业生薪酬排行出炉，广东7校月薪过万！ 教育宝 https://www.jiaoyubao.cn › news" [ref=e319] [cursor=pointer]:
+                  - /url: https://www.jiaoyubao.cn/news/n175509.html
+                  - heading "有“钱”途！高校毕业生薪酬排行出炉，广东7校月薪过万！" [level=3] [ref=e320]
+                  - generic [ref=e325]:
+                    - generic [ref=e327]: 教育宝
+                    - generic [ref=e329]: https://www.jiaoyubao.cn › news
+                - button "关于这条结果的详细信息" [ref=e330] [cursor=pointer]:
+                  - img [ref=e333]
+              - generic [ref=e336]:
+                - generic [ref=e337]: 2025年3月5日 —
+                - generic [ref=e338]:
+                  - text: ... 生
+                  - emphasis [ref=e339]: 薪酬
+                  - text: 水平占广东第1，但在
+                  - emphasis [ref=e340]: "2024"
+                  - text: 年从全国第7骤降至全国第26（平均
+                  - emphasis [ref=e341]: 月薪
+                  - text: 是上涨的），下降了19名。
+                  - emphasis [ref=e342]: 汕头大学
+                  - text: 下降了14名，降幅也颇大。从2021届到2023届，这12校的薪资 ...
+          - generic [ref=e346]:
+            - generic [ref=e349]:
+              - link "广东待遇最好的大学！看2024本科高校毕业薪资排名 - 圆梦小灯塔 6617.com https://www.6617.com › ..." [ref=e351] [cursor=pointer]:
+                - /url: https://www.6617.com/p_1863408192.html
+                - heading "广东待遇最好的大学！看2024本科高校毕业薪资排名 - 圆梦小灯塔" [level=3] [ref=e352]
+                - generic [ref=e357]:
+                  - generic [ref=e359]: 6617.com
+                  - generic [ref=e361]: https://www.6617.com › ...
+              - button "关于这条结果的详细信息" [ref=e362] [cursor=pointer]:
+                - img [ref=e365]
+            - generic [ref=e368]:
+              - generic [ref=e369]: 2024年12月18日 —
+              - generic [ref=e370]:
+                - text: 广东待遇最好的
+                - emphasis [ref=e371]: 大学
+                - text: 是中山
+                - emphasis [ref=e372]: 大学
+                - text: ，
+                - emphasis [ref=e373]: "2024"
+                - text: 年应届生平均薪资达到了9141.63元，广东省作为中国经济最为发达的地区之一，其高校在就业市场上具有极高的竞争力。
+          - generic [ref=e377]:
+            - generic [ref=e380]:
+              - link "2025毕业生薪酬排行榜TOP200发布！丨中国农大 新浪财经 https://finance.sina.cn › 文章页 › 市场资讯" [ref=e382] [cursor=pointer]:
+                - /url: https://finance.sina.cn/2025-10-12/detail-inftruie9104925.d.html?vt=4&wm=2824_0024?q$q
+                - heading "2025毕业生薪酬排行榜TOP200发布！丨中国农大" [level=3] [ref=e383]
+                - generic [ref=e388]:
+                  - generic [ref=e390]: 新浪财经
+                  - generic [ref=e392]: https://finance.sina.cn › 文章页 › 市场资讯
+              - button "关于这条结果的详细信息" [ref=e393] [cursor=pointer]:
+                - img [ref=e396]
+            - generic [ref=e399]:
+              - generic [ref=e400]: 2025年10月12日 —
+              - generic [ref=e401]:
+                - text: 每年发布的《2025年全国高校
+                - emphasis [ref=e402]: 毕业生薪酬
+                - text: 排行榜TOP200》采用全国各高校上年度
+                - emphasis [ref=e403]: 毕业生
+                - text: 进入用人单位满一年的
+                - emphasis [ref=e404]: 薪酬
+                - text: 数据，包括基础工资、奖金和补贴等年度总收入。
+          - generic [ref=e408]:
+            - generic [ref=e411]:
+              - link "2024高校毕业生薪酬排行榜发布：这才是90%大学生的工资 ... 知乎专栏 https://zhuanlan.zhihu.com › ..." [ref=e413] [cursor=pointer]:
+                - /url: https://zhuanlan.zhihu.com/p/714913590
+                - heading "2024高校毕业生薪酬排行榜发布：这才是90%大学生的工资 ..." [level=3] [ref=e414]
+                - generic [ref=e419]:
+                  - generic [ref=e421]: 知乎专栏
+                  - generic [ref=e423]: https://zhuanlan.zhihu.com › ...
+              - button "关于这条结果的详细信息" [ref=e424] [cursor=pointer]:
+                - img [ref=e427]
+            - generic [ref=e430]:
+              - generic [ref=e431]: 2024年8月16日 —
+              - generic [ref=e432]:
+                - text: 最近，中国
+                - emphasis [ref=e433]: 薪酬
+                - text: 网发布了《
+                - emphasis [ref=e434]: "2024"
+                - text: 年全国高校
+                - emphasis [ref=e435]: 毕业生薪酬
+                - text: 排行榜TOP200》，结果显示：位列前10名的分别为清华
+                - emphasis [ref=e436]: 大学
+                - text: 、上海交通
+                - emphasis [ref=e437]: 大学
+                - text: 、北京
+                - emphasis [ref=e438]: 大学
+                - text: 、中央财经
+                - emphasis [ref=e439]: 大学
+                - text: 、浙江 ...
+            - generic [ref=e441]:
+              - text: 缺少字词： 汕头 ‎| 必须包含：
+              - link "汕头" [ref=e442] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%22%E6%B1%95%E5%A4%B4%22+%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&sa=X&ved=2ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQ5t4CegQIQxAB
+          - generic [ref=e446]:
+            - generic [ref=e449]:
+              - link "你拖后腿了吗？高校毕业生薪酬排行出炉！广东7校月薪过万！ 搜狐网 https://www.sohu.com › 搜狐文章页 › 鬼谷子课堂" [ref=e451] [cursor=pointer]:
+                - /url: https://www.sohu.com/a/859021264_121124217
+                - heading "你拖后腿了吗？高校毕业生薪酬排行出炉！广东7校月薪过万！" [level=3] [ref=e452]
+                - generic [ref=e457]:
+                  - generic [ref=e459]: 搜狐网
+                  - generic [ref=e461]: https://www.sohu.com › 搜狐文章页 › 鬼谷子课堂
+              - button "关于这条结果的详细信息" [ref=e462] [cursor=pointer]:
+                - img [ref=e465]
+            - generic [ref=e468]:
+              - generic [ref=e469]: 2025年2月13日 —
+              - generic [ref=e470]:
+                - text: ... 生
+                - emphasis [ref=e471]: 薪酬
+                - text: 水平占广东第1，但在
+                - emphasis [ref=e472]: "2024"
+                - text: 年从全国第7骤降至全国第26（平均
+                - emphasis [ref=e473]: 月薪
+                - text: 是上涨的），下降了19名。
+                - emphasis [ref=e474]: 汕头大学
+                - text: 下降了14名，降幅也颇大。 从2021届到2023届，这12校的 ...
+          - generic [ref=e478]:
+            - generic [ref=e481]:
+              - link "2024年中国大学生薪酬排行发布，来看你的学校上榜没？ 高顿 https://www.gaodun.com › acca" [ref=e483] [cursor=pointer]:
+                - /url: https://www.gaodun.com/acca/1675724.html
+                - heading "2024年中国大学生薪酬排行发布，来看你的学校上榜没？" [level=3] [ref=e484]
+                - generic [ref=e489]:
+                  - generic [ref=e491]: 高顿
+                  - generic [ref=e493]: https://www.gaodun.com › acca
+              - button "关于这条结果的详细信息" [ref=e494] [cursor=pointer]:
+                - img [ref=e497]
+            - generic [ref=e500]:
+              - generic [ref=e501]: 2024年12月24日 —
+              - generic [ref=e502]:
+                - text: 博士及以上学历
+                - emphasis [ref=e503]: 起薪
+                - text: 点比硕士学历高3000元以上，硕士学历比本科学历高1300-3000元，本科学历
+                - emphasis [ref=e504]: 起薪
+                - text: 点则比专科及以下学历高400-1000元。 除了学历层次外，
+                - emphasis [ref=e505]: 毕业生
+                - text: ...
+            - generic [ref=e507]:
+              - text: 缺少字词： 汕头 ‎| 必须包含：
+              - link "汕头" [ref=e508] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%22%E6%B1%95%E5%A4%B4%22+%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&sa=X&ved=2ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQ5t4CegQIPRAB
+          - generic [ref=e512]:
+            - generic [ref=e515]:
+              - link "2025全国高校毕业薪酬排行TOP200！四川8所院校上榜 新东方 https://zsb.xdf.cn › ..." [ref=e517] [cursor=pointer]:
+                - /url: https://zsb.xdf.cn/202507/14729449.html
+                - heading "2025全国高校毕业薪酬排行TOP200！四川8所院校上榜" [level=3] [ref=e518]
+                - generic [ref=e523]:
+                  - generic [ref=e525]: 新东方
+                  - generic [ref=e527]: https://zsb.xdf.cn › ...
+              - button "关于这条结果的详细信息" [ref=e528] [cursor=pointer]:
+                - img [ref=e531]
+            - generic [ref=e534]:
+              - generic [ref=e535]: 2025年7月30日 —
+              - generic [ref=e536]:
+                - text: 每年发布的《2025年全国高校
+                - emphasis [ref=e537]: 毕业生薪酬
+                - text: 排行榜TOP200》采用全国各高校上年度
+                - emphasis [ref=e538]: 毕业生
+                - text: 进入用人单位满一年的
+                - emphasis [ref=e539]: 薪酬
+                - text: 数据，包括基础工资、奖金和补贴等年度总收入。
+          - generic [ref=e543]:
+            - generic [ref=e546]:
+              - link "【民间】2024毕业生薪酬排行榜发布！还是清华最强 手机网易网 https://www.163.com › article" [ref=e548] [cursor=pointer]:
+                - /url: https://www.163.com/dy/article/JM42370J0519EA27.html
+                - heading "【民间】2024毕业生薪酬排行榜发布！还是清华最强" [level=3] [ref=e549]
+                - generic [ref=e554]:
+                  - generic [ref=e556]: 手机网易网
+                  - generic [ref=e558]: https://www.163.com › article
+              - button "关于这条结果的详细信息" [ref=e559] [cursor=pointer]:
+                - img [ref=e562]
+            - generic [ref=e565]:
+              - generic [ref=e566]: 2025年1月17日 —
+              - generic [ref=e567]:
+                - text: 《
+                - emphasis [ref=e568]: "2024"
+                - text: 年全国高校
+                - emphasis [ref=e569]: 毕业生薪酬
+                - text: 排行榜TOP200》采用全国各高校上年度
+                - emphasis [ref=e570]: 毕业生
+                - text: 进入用人单位满一年的
+                - emphasis [ref=e571]: 薪酬
+                - text: 数据，包括基础工资、奖金和补贴等年度总收入。该数据来源 ...
+          - generic [ref=e575]:
+            - generic [ref=e578]:
+              - link "汕头大学入榜2022中国高校毕业生薪酬指数前50强！ - 广东 教育在线 https://guangdong.eol.cn › gdgd" [ref=e580] [cursor=pointer]:
+                - /url: https://guangdong.eol.cn/gdgd/202302/t20230223_2302446.shtml
+                - heading "汕头大学入榜2022中国高校毕业生薪酬指数前50强！ - 广东" [level=3] [ref=e581]
+                - generic [ref=e583]:
+                  - img [ref=e587]
+                  - generic [ref=e589]:
+                    - generic [ref=e591]: 教育在线
+                    - generic [ref=e593]: https://guangdong.eol.cn › gdgd
+              - button "关于这条结果的详细信息" [ref=e594] [cursor=pointer]:
+                - img [ref=e597]
+            - generic [ref=e600]:
+              - generic [ref=e601]: 2023年2月23日 —
+              - generic [ref=e602]:
+                - text: 据中国
+                - emphasis [ref=e603]: 薪酬
+                - text: 指数研究机构发布的《2022中国高校
+                - emphasis [ref=e604]: 毕业生薪酬
+                - text: 指数排行榜TOP100》，
+                - emphasis [ref=e605]: 汕头大学
+                - text: 入榜前50强，
+                - emphasis [ref=e606]: 排名
+                - text: 第40位。此前，中国
+                - emphasis [ref=e607]: 薪酬
+                - text: 指数研究机构发布该指数， ...
+        - navigation [ref=e610]:
+          - heading "网页导航" [level=1] [ref=e611]
+          - text: "1"
+          - link "Page 2" [ref=e614] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&sca_esv=164079556523993e&ei=33Duae_0DdS8ruEP2-Cp2AI&start=10&sa=N&sstk=Af77f_eLIbxgdvpckDlHCsvB1AeyR3DC2wMefYF9hYoZn3J_w2PTk1KTfnMSmnWRUC0XtZrOZjHKQUG8uVG0x7rcEknFO3nF-8G1RA&ved=2ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQ8tMDegQIRBAE
+            - text: "2"
+          - link "Page 3" [ref=e616] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&sca_esv=164079556523993e&ei=33Duae_0DdS8ruEP2-Cp2AI&start=20&sa=N&sstk=Af77f_eLIbxgdvpckDlHCsvB1AeyR3DC2wMefYF9hYoZn3J_w2PTk1KTfnMSmnWRUC0XtZrOZjHKQUG8uVG0x7rcEknFO3nF-8G1RA&ved=2ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQ8tMDegQIRBAG
+            - text: "3"
+          - heading "下一页" [level=2] [ref=e618]:
+            - link "下一页" [ref=e619] [cursor=pointer]:
+              - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+%E6%9C%88%E8%96%AA+%E6%8E%92%E5%90%8D+2024&sca_esv=164079556523993e&ei=33Duae_0DdS8ruEP2-Cp2AI&start=10&sa=N&sstk=Af77f_eLIbxgdvpckDlHCsvB1AeyR3DC2wMefYF9hYoZn3J_w2PTk1KTfnMSmnWRUC0XtZrOZjHKQUG8uVG0x7rcEknFO3nF-8G1RA&ved=2ahUKEwiv4KiOqYyUAxVUnisGHVtwCisQ8NMDegQIRBAI
+              - generic [ref=e621]: 下一页
+        - navigation
+    - contentinfo [ref=e622]:
+      - heading "页脚链接" [level=1] [ref=e623]
+      - generic [ref=e627]:
+        - generic [ref=e631]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e633] [cursor=pointer]:
+            - generic [ref=e634]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e636]:
+              - text: "-"
+              - generic [ref=e637]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e639] [cursor=pointer]: 更新位置信息
+        - generic [ref=e642]:
+          - link "帮助" [ref=e643] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e644] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e645] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e646] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

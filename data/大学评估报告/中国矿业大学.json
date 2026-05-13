@@ -1,0 +1,50 @@
+{
+  "university_info": {
+    "name": "中国矿业大学",
+    "short_name": "CUMT",
+    "location": "江苏徐州",
+    "level": "211 / 双一流",
+    "type": "理工类"
+  },
+  "academic_strength": {
+    "a_plus_disciplines": [
+      "矿业工程",
+      "安全科学与工程"
+    ],
+    "a_minus_disciplines": [
+      "测绘科学与技术",
+      "地质资源与地质工程"
+    ],
+    "national_key_labs": 2,
+    "academician_count": 14
+  },
+  "admission_stats": {
+    "average_rank_physic": "前 5%-8%",
+    "average_rank_history": "前 1.5%-3%",
+    "popular_majors": [
+      "电气工程",
+      "计算机",
+      "自动化"
+    ]
+  },
+  "career_outcomes": {
+    "further_study_rate": "42.7% (含出国)",
+    "state_grid_recruitment_level": "Tier 1",
+    "median_salary_5y": 13500,
+    "main_industries": [
+      "能源",
+      "电力",
+      "建筑",
+      "制造"
+    ]
+  },
+  "evaluation_scores": {
+    "academic": 4.5,
+    "employment": 4.2,
+    "location": 3.8,
+    "globalization": 3.5,
+    "student_empowerment": 3.7,
+    "brand_asset": 4.0,
+    "overall_weighted_score": 4.12
+  }
+}

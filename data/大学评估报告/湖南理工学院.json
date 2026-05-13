@@ -1,0 +1,41 @@
+{
+  "university_name": "湖南理工学院",
+  "short_name": "HNIST / 湖理",
+  "location": {
+    "province": "湖南省",
+    "city": "岳阳市",
+    "district": "南湖新区",
+    "city_level": "省域副中心 / 二线城市"
+  },
+  "academic_standing": {
+    "rank_ruanke": 344,
+    "rank_alumni": 295,
+    "key_disciplines": [
+      "化学工程与技术",
+      "信息与通信工程",
+      "机械工程"
+    ],
+    "master_points": 21,
+    "doctor_points": 0
+  },
+  "admission_profile": {
+    "avg_score_hunan_physics": 504,
+    "avg_score_hunan_history": 513,
+    "competitiveness": "中等"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "98.2%",
+    "further_study_rate": "14.8%",
+    "avg_starting_salary": 4900,
+    "top_industries": [
+      "制造业",
+      "石油化工",
+      "IT服务"
+    ]
+  },
+  "campus_life": {
+    "dormitory_quality": "优 (4人间/空调/热水)",
+    "food_rating": "极高 (岳阳特色)",
+    "vibe": "务实考研型"
+  }
+}

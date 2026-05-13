@@ -1,0 +1,48 @@
+{
+  "university_details": {
+    "name": "苏州工学院",
+    "former_name": "江苏科技大学苏州理工学院",
+    "location": "江苏省苏州市张家港市",
+    "type": "公办应用型本科",
+    "attributes": [
+      "转设红利",
+      "工科见长",
+      "县域经济龙头支持"
+    ]
+  },
+  "academic_performance": {
+    "key_disciplines": [
+      "船舶与海洋工程",
+      "机械工程",
+      "材料科学与工程",
+      "自动化"
+    ],
+    "doctorate_points": 0,
+    "master_points": 0,
+    "faculty_phd_ratio": "35%"
+  },
+  "admission_data_2025": {
+    "jiangsu_physics_rank": 125021,
+    "jiangsu_history_rank": 26540,
+    "competition_level": "High (Post-transfer)"
+  },
+  "employment_outcomes": {
+    "employment_rate": "92.3%",
+    "further_study_rate": "14.8%",
+    "avg_starting_salary": 6200,
+    "top_employers": [
+      "沙钢集团",
+      "永钢集团",
+      "中船重工"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.2,
+    "graduate_value": 3.4,
+    "location_advantage": 4.5,
+    "globalization": 2.5,
+    "student_empowerment": 3.6,
+    "brand_asset": 3.5,
+    "weighted_total": 3.135
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "university_info": {
+    "name": "广东金融学院",
+    "short_name": "广金 / GDUF",
+    "location": [
+      "广州天河",
+      "广州清远",
+      "肇庆"
+    ],
+    "type": "公办财经类应用型大学"
+  },
+  "academic_ranking": {
+    "soft_science_finance_rank": 38,
+    "key_disciplines": [
+      "应用经济学",
+      "工商管理",
+      "金融学"
+    ]
+  },
+  "admission_data_2024": {
+    "guangdong_history_min_rank": 23451,
+    "guangdong_physics_min_rank": 95432,
+    "competition_level": "High"
+  },
+  "employment_stats": {
+    "major_industry": "Banking & Finance",
+    "industry_placement_rate": "23.7% (Direct Finance)",
+    "avg_starting_salary": 6200,
+    "top_employers": [
+      "ICBC",
+      "CCB",
+      "GF Securities",
+      "Ping An"
+    ]
+  },
+  "evaluation_scores": {
+    "academic": 3.2,
+    "employment": 4.2,
+    "location": 4.8,
+    "globalization": 3.5,
+    "freedom": 3.0,
+    "brand": 4.0,
+    "overall": 3.85
+  }
+}

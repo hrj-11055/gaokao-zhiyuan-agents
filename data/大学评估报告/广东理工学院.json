@@ -1,0 +1,41 @@
+{
+  "university_name": "广东理工学院",
+  "short_name": "广理 / GPC",
+  "location": {
+    "province": "广东省",
+    "city": "肇庆市",
+    "campuses": [
+      "高要校区",
+      "鼎湖校区"
+    ]
+  },
+  "academic_standing": {
+    "type": "民办应用型本科",
+    "key_disciplines": [
+      "机械电子工程",
+      "计算机科学与技术"
+    ],
+    "a_plus_count": 0,
+    "provincial_first_class_majors": 2
+  },
+  "admission_stats": {
+    "avg_score_history_group_gd": 458,
+    "avg_score_physics_group_gd": 462,
+    "acceptance_difficulty": "Low to Moderate"
+  },
+  "employment_outcomes": {
+    "employment_rate": "95%+",
+    "avg_starting_salary": 4800,
+    "top_employer_sectors": [
+      "Advanced Manufacturing",
+      "IT",
+      "E-commerce"
+    ],
+    "further_study_rate": "3.5%"
+  },
+  "financial_aspects": {
+    "annual_tuition": "28000-35000 CNY",
+    "living_cost_index": "Low (Zhaoqing)"
+  },
+  "overall_score": 2.75
+}

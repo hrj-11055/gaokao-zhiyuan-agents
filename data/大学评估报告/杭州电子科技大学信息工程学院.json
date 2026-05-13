@@ -1,0 +1,43 @@
+{
+  "university_info": {
+    "name": "杭州电子科技大学信息工程学院",
+    "short_name": "杭电信工",
+    "location": "杭州市临安区",
+    "type": "独立学院",
+    "parent_university": "杭州电子科技大学"
+  },
+  "academic_ranking": {
+    "province_rank": "浙江省独立学院前3",
+    "key_majors": [
+      "计算机科学与技术",
+      "软件工程",
+      "电子信息工程",
+      "电子商务"
+    ],
+    "first_class_majors_count": 3
+  },
+  "admission_stats": {
+    "zhejiang_avg_rank": 150000,
+    "competitive_index": "High",
+    "major_transfer_policy": "Commitment System (Extremely Free)"
+  },
+  "employment_stats": {
+    "employment_rate": "95.18%",
+    "avg_starting_salary": 5700,
+    "top_employer_industry": "IT/Software/Internet",
+    "further_study_rate": "6.51% (Domestic + Overseas)"
+  },
+  "campus_life": {
+    "dormitory_condition": "Standard 5-person room, Air-conditioned",
+    "transportation": "Metro Line 16",
+    "vibe": "Pragmatic, Tech-oriented"
+  },
+  "evaluation_scores": {
+    "academic": 3.5,
+    "employment": 4.2,
+    "location": 4.0,
+    "freedom": 4.8,
+    "brand": 3.8,
+    "overall": 3.81
+  }
+}

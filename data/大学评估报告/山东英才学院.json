@@ -1,0 +1,46 @@
+{
+  "university_name": "山东英才学院",
+  "short_name": "英才学院",
+  "location": {
+    "province": "山东",
+    "city": "济南",
+    "campuses": [
+      "南校区（高新区）",
+      "北校区（起步区）"
+    ]
+  },
+  "academic_level": {
+    "type": "民办应用型本科",
+    "master_degree_cultivation": true,
+    "key_majors": [
+      "学前教育",
+      "护理学",
+      "机械制造及自动化",
+      "物流管理"
+    ]
+  },
+  "admission_stats": {
+    "avg_rank_liberal_arts": 350000,
+    "avg_rank_science": 275000,
+    "difficulty_level": "Moderate"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "95%+",
+    "further_study_rate": "5.2%",
+    "top_industries": [
+      "Education",
+      "Healthcare",
+      "Manufacturing"
+    ],
+    "avg_starting_salary": 6000
+  },
+  "brand_index": {
+    "ruanke_rank": 56,
+    "alumni_association_rank": 3,
+    "social_media_vibe": "Active/Strict"
+  },
+  "financial_aspect": {
+    "tuition_range": "22000-29800 CNY/Year",
+    "cost_performance": "Medium"
+  }
+}

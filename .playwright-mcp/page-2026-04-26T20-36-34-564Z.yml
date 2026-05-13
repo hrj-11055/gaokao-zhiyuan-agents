@@ -1,0 +1,388 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwj1kNyfr4yUAxV5wskDHR5EBIAQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 藏药学 就业率 薪酬 起薪 2024 藏药学 就业率 薪酬 起薪 2024
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E8%2597%258F%25E8%258D%25AF%25E5%25AD%25A6%2B%25E5%25B0%25B1%25E4%25B8%259A%25E7%258E%2587%2B%25E8%2596%25AA%25E9%2585%25AC%2B%25E8%25B5%25B7%25E8%2596%25AA%2B2024&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024&sca_esv=50e2bf8f38455036&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&aep=1&ntc=1&sa=X&ved=2ahUKEwj1kNyfr4yUAxV5wskDHR5EBIAQ2J8OegQIERAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&sa=X&ved=2ahUKEwj1kNyfr4yUAxV5wskDHR5EBIAQ0pQJegQIFxAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "购物" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024&ved=1t:220175&ictx=111
+              - generic [ref=e95]: 购物
+          - listitem [ref=e96]:
+            - link "图片" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024&sa=X&ved=2ahUKEwj1kNyfr4yUAxV5wskDHR5EBIAQtKgLegQIFBAB
+              - generic [ref=e99]: 图片
+          - listitem [ref=e100]:
+            - link "短视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024&sa=X&ved=2ahUKEwj1kNyfr4yUAxV5wskDHR5EBIAQs6gLegQIFRAB
+              - generic [ref=e103]: 短视频
+          - listitem [ref=e104]:
+            - link "视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024&sa=X&ved=2ahUKEwj1kNyfr4yUAxV5wskDHR5EBIAQtKgLegQIExAB
+              - generic [ref=e107]: 视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - generic [ref=e153]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - img [ref=e157]
+              - heading "AI 概览" [level=2] [ref=e159]
+            - button "关于这条结果的详细信息" [ref=e163]:
+              - img [ref=e165]
+          - generic [ref=e186]:
+            - generic [ref=e189]:
+              - generic [ref=e190]: 2024年藏药学专业的就业前景在民族医药领域具有特色优势，主要集中在西藏及相关民族地区。近年来，随着藏医药现代化和企业对核心人才的需求增加，薪资水平呈现逐年上升的趋势。
+              - generic [ref=e191]: 以下是基于2024年趋势的藏药学专业就业与薪酬分析：
+              - heading "一、 就业率与方向" [level=3] [ref=e192]
+              - list [ref=e193]:
+                - listitem [ref=e194]:
+                  - generic [ref=e195]:
+                    - strong [ref=e196]: 就业方向：
+                    - text: 藏药学毕业生主要在
+                    - strong [ref=e197]: 藏医药企业
+                    - text: 、
+                    - strong [ref=e198]: 医院（药剂科/制剂室）
+                    - text: 、
+                    - strong [ref=e199]: 藏药研究机构
+                    - text: 以及
+                    - strong [ref=e200]: 药物监管部门
+                    - text: 工作。具体岗位包括藏药鉴定、炮制、制剂、技术研发、学术推广及药店专业岗位等。
+                - listitem [ref=e201]:
+                  - generic [ref=e202]:
+                    - strong [ref=e203]: 就业热门企业：
+                    - text: 如奇正藏药等企业在现代藏药研究、学术循证等方面持续投入，提供了相应研发和学术推广岗位。
+                - listitem [ref=e204]:
+                  - generic [ref=e205]:
+                    - strong [ref=e206]: 优势地区：
+                    - text: 西藏自治区、青海省及四川、云南部分民族自治州。
+                  - button [ref=e209] [cursor=pointer]:
+                    - generic [ref=e210]:
+                      - img [ref=e211]
+                      - generic [ref=e212]:
+                        - generic [ref=e213]: 新浪网
+                        - generic [ref=e214]: "+2"
+              - heading [level=3] [ref=e215]: 二、 薪酬水平
+              - list [ref=e216]:
+                - listitem [ref=e217]:
+                  - generic [ref=e218]:
+                    - strong [ref=e219]: 薪资趋势：
+                    - text: 近10年数据显示，藏药学平均薪资呈上升趋势。
+                - listitem [ref=e220]:
+                  - generic [ref=e221]:
+                    - strong [ref=e222]: 2024年薪酬预测：
+                    - text: 根据近年数据推算，2024年藏药学相关岗位平均薪资水平在
+                    - strong [ref=e223]: 7.33K左右
+                    - text: ，相较2023年有了较大幅度增长（2023年约为6.25K）。
+                - listitem [ref=e224]:
+                  - generic [ref=e225]:
+                    - strong [ref=e226]: 行业薪资区间：
+                    - text: 藏药学人才工资水平一般在5280元到8280元之间，2025年预计达到8280元，这意味着2024至2025年为职业上升期。
+                  - button [ref=e229] [cursor=pointer]:
+                    - img [ref=e231]
+              - heading [level=3] [ref=e233]: 三、 起薪与待遇
+              - list [ref=e234]:
+                - listitem [ref=e235]:
+                  - generic [ref=e236]:
+                    - strong [ref=e237]: 起薪情况：
+                    - text: 普通本科及专科应届生进入藏医药企业主要从事生产、质检或学术销售，起薪通常在
+                    - strong [ref=e238]: 4k-6k
+                    - text: 元/月，在西藏地区就业的可能包含地区补贴和较高的住房公积金待遇。
+                - listitem [ref=e239]:
+                  - generic [ref=e240]:
+                    - strong [ref=e241]: 发展空间：
+                    - text: 具有药师证书或硕士以上学位的技术研发人员起薪更高，核心技术人员薪酬可达10K以上。
+              - heading [level=3] [ref=e242]: 四、 2024年行业特色
+              - list [ref=e243]:
+                - listitem [ref=e244]:
+                  - generic [ref=e245]:
+                    - strong [ref=e246]: 特色优势：
+                    - text: 藏药学属于药学类冷门但特色鲜明的专业，竞争相对较小。
+                - listitem [ref=e247]:
+                  - generic [ref=e248]:
+                    - strong [ref=e249]: 学术推动：
+                    - text: 奇正藏药等公司推动的藏药现代化使得皮科、妇科等治疗领域技术人员需求量上升，如青鹏软膏、红花如意丸的循证医学研究需要相关专业人才。
+                  - button [ref=e252] [cursor=pointer]:
+                    - generic [ref=e253]:
+                      - img [ref=e254]
+                      - generic [ref=e256]: 新浪网
+              - generic [ref=e257]: 总体而言，藏药学专业毕业生在2024年的就业市场属于“ niche（利基）”类市场，具备一定专业壁垒，就业待遇在相应地区处于良好水平。
+            - list [ref=e266]:
+              - listitem [ref=e267]:
+                - generic [ref=e268]:
+                  - link "公司公告_奇正藏药：2024年半年度报告新浪财经. 在新标签页中打开。" [ref=e269] [cursor=pointer]:
+                    - /url: http://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=002287&id=10408239
+                  - generic [ref=e270]:
+                    - generic [ref=e272]:
+                      - generic [ref=e273]: 公司公告_奇正藏药：2024年半年度报告新浪财经
+                      - generic [ref=e274]: 2024年8月24日 — 战役二：藏药现代化公司持续推进藏药现代化工作，探索藏医药理论转化研究模式，开展高质量藏医药循证医学研究，完善医学证据链。...
+                    - generic [ref=e276]:
+                      - generic [ref=e281]: 新浪网
+                      - button "关于这条结果" [ref=e283] [cursor=pointer]:
+                        - img [ref=e284]
+              - listitem [ref=e287]:
+                - generic [ref=e288]:
+                  - link "藏药学专业就业前景方向及平均薪资是多少热度大学排名 .... 在新标签页中打开。" [ref=e289] [cursor=pointer]:
+                    - /url: http://m.diebian.net/gaokao/113151.html
+                  - generic [ref=e290]:
+                    - generic [ref=e292]:
+                      - generic [ref=e293]: 藏药学专业就业前景方向及平均薪资是多少热度大学排名 ...
+                      - generic [ref=e294]: 2026年2月12日 — 1藏药学专业就业前景方向及近年平均薪资. 藏药学专业一般从事藏药鉴定、炮制、药剂等工作。 藏药学专业近10年平均薪资在5...
+                    - generic [ref=e296]:
+                      - generic [ref=e301]: 蝶变志愿
+                      - button [ref=e303] [cursor=pointer]:
+                        - img [ref=e304]
+              - listitem [ref=e307]:
+                - generic [ref=e308]:
+                  - link [ref=e309] [cursor=pointer]:
+                    - /url: https://edu.jobui.com/m/major/zhongyaozhiyao/
+                  - generic [ref=e310]:
+                    - generic [ref=e312]:
+                      - generic [ref=e313]: 中药制药专业就业方向及前景（工资待遇排名）
+                      - generic [ref=e314]: 中药制药专业有前途吗？据统计，中药学类共6个专业，中药制药专业在中药学类中排名第2，在医学类大类66个专业中，就业排名第...
+                    - generic [ref=e315]:
+                      - generic [ref=e320]: 职友集
+                      - button [ref=e322] [cursor=pointer]:
+                        - img [ref=e323]
+        - button "显示更多 AI 概览" [ref=e328]:
+          - generic [ref=e330] [cursor=pointer]:
+            - generic [ref=e331]: 展开
+            - img [ref=e333]
+      - main [ref=e336]:
+        - generic [ref=e340]:
+          - generic [ref=e343]:
+            - heading "网页搜索结果" [level=2] [ref=e344]
+            - generic [ref=e345]:
+              - generic [ref=e348]:
+                - link "藏药学专业就业前景方向及平均薪资是多少热度大学排名 ... 蝶变志愿 http://m.diebian.net › gaokao" [ref=e350] [cursor=pointer]:
+                  - /url: http://m.diebian.net/gaokao/113151.html
+                  - heading "藏药学专业就业前景方向及平均薪资是多少热度大学排名 ..." [level=3] [ref=e351]
+                  - generic [ref=e356]:
+                    - generic [ref=e358]: 蝶变志愿
+                    - generic [ref=e360]: http://m.diebian.net › gaokao
+                - button "关于这条结果的详细信息" [ref=e361] [cursor=pointer]:
+                  - img [ref=e364]
+              - generic [ref=e367]:
+                - generic [ref=e368]: 2026年2月12日 —
+                - generic [ref=e369]:
+                  - text: 1藏药学专业就业前景方向及近年平均薪资 ; 2025, 8.28K ; 2024,
+                  - emphasis [ref=e370]: 7.33K
+                  - text: ; 2023, 6.25K ; 2022, 5.85K.
+              - generic [ref=e372]: 缺少字词： 率 ‎起
+          - generic [ref=e377]:
+            - heading "相关问题" [level=2] [ref=e379]
+            - generic [ref=e380]:
+              - button "药师的工资水平如何?" [ref=e386] [cursor=pointer]:
+                - generic [ref=e388]: 药师的工资水平如何?
+                - img [ref=e391]
+              - button "药学专业的毕业生有哪些就业方向?" [ref=e400] [cursor=pointer]:
+                - generic [ref=e402]: 药学专业的毕业生有哪些就业方向?
+                - img [ref=e405]
+          - generic [ref=e410]:
+            - heading "网页搜索结果" [level=2] [ref=e411]
+            - generic [ref=e412]:
+              - generic [ref=e415]:
+                - link "中药资源与开发专业就业方向及前景（工资待遇排名） 职友集 https://edu.jobui.com › major › zhongyaoziyuan" [ref=e417] [cursor=pointer]:
+                  - /url: https://edu.jobui.com/major/zhongyaoziyuan/
+                  - heading "中药资源与开发专业就业方向及前景（工资待遇排名）" [level=3] [ref=e418]
+                  - generic [ref=e423]:
+                    - generic [ref=e425]: 职友集
+                    - generic [ref=e427]: https://edu.jobui.com › major › zhongyaoziyuan
+                - button "关于这条结果的详细信息" [ref=e428] [cursor=pointer]:
+                  - img [ref=e431]
+              - generic [ref=e435]:
+                - text: 中药资源与开发专业有前途吗？据统计，中
+                - emphasis [ref=e436]: 药学
+                - text: 类共6个专业，中药资源与开发专业在中
+                - emphasis [ref=e437]: 药学
+                - text: 类中排名第3，在医学类大类66个专业中，
+                - emphasis [ref=e438]: 就业
+                - text: 排名第44。排名越前，说明比较好
+                - emphasis [ref=e439]: 就业
+                - text: 。
+          - generic [ref=e443]:
+            - generic [ref=e446]:
+              - link "2025年医药行业就业现状（5图分析） 手机网易网 https://www.163.com › article" [ref=e448] [cursor=pointer]:
+                - /url: https://www.163.com/dy/article/K26S0NL40514BK1U.html
+                - heading "2025年医药行业就业现状（5图分析）" [level=3] [ref=e449]
+                - generic [ref=e454]:
+                  - generic [ref=e456]: 手机网易网
+                  - generic [ref=e458]: https://www.163.com › article
+              - button "关于这条结果的详细信息" [ref=e459] [cursor=pointer]:
+                - img [ref=e462]
+            - generic [ref=e465]:
+              - generic [ref=e466]: 2025年6月16日 —
+              - generic [ref=e467]:
+                - text: 年固定
+                - emphasis [ref=e468]: 薪酬
+                - text: 统计口径，处于平均水平（50分位）的销售职位的
+                - emphasis [ref=e469]: 薪酬
+                - text: 大多在12-13万上下，研发及医疗服务相关的职位则在16-20万的范围，这是行业平均水平的反映；处于 ...
+          - generic [ref=e473]:
+            - generic [ref=e476]:
+              - link "中药制药专业就业方向及前景（工资待遇排名） 职友集 https://edu.jobui.com › major › zhongyaozhiyao" [ref=e478] [cursor=pointer]:
+                - /url: https://edu.jobui.com/m/major/zhongyaozhiyao/
+                - heading "中药制药专业就业方向及前景（工资待遇排名）" [level=3] [ref=e479]
+                - generic [ref=e484]:
+                  - generic [ref=e486]: 职友集
+                  - generic [ref=e488]: https://edu.jobui.com › major › zhongyaozhiyao
+              - button "关于这条结果的详细信息" [ref=e489] [cursor=pointer]:
+                - img [ref=e492]
+            - generic [ref=e496]:
+              - text: ...
+              - emphasis [ref=e497]: 就业
+              - text: 排名第14。排名越前，说明比较好
+              - emphasis [ref=e498]: 就业
+              - text: 。中药制药专业工资高吗？最多岗位拿3-6K，占49.7%。最吃香的
+              - emphasis [ref=e499]: 就业
+              - text: 岗位有：化验员，执业药师，药店营业员等。
+              - emphasis [ref=e500]: 就业
+              - text: ... 4
+              - emphasis [ref=e501]: 藏药学
+              - text: 0 · 5 蒙 ...
+          - generic [ref=e505]:
+            - generic [ref=e508]:
+              - link "奇正藏药(002287)_公司公告 新浪网 http://vip.stock.finance.sina.com.cn › corp › view › vC..." [ref=e510] [cursor=pointer]:
+                - /url: http://vip.stock.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=002287&id=10408239
+                - heading "奇正藏药(002287)_公司公告" [level=3] [ref=e511]
+                - generic [ref=e516]:
+                  - generic [ref=e518]: 新浪网
+                  - generic [ref=e520]: http://vip.stock.finance.sina.com.cn › corp › view › vC...
+              - button "关于这条结果的详细信息" [ref=e521] [cursor=pointer]:
+                - img [ref=e524]
+            - generic [ref=e527]:
+              - generic [ref=e528]: 2024年8月24日 —
+              - generic [ref=e529]:
+                - text: 战役二：
+                - emphasis [ref=e530]: 藏药
+                - text: 现代化公司持续推进
+                - emphasis [ref=e531]: 藏药
+                - text: 现代化工作，探索藏医药理论转化 ... 在公司层面业绩考核达标的情况下，根据公司
+                - emphasis [ref=e532]: 薪酬
+                - text: 与绩效考核相关管理办法 ...
+          - generic [ref=e536]:
+            - heading "图片" [level=2] [ref=e540]
+            - generic [ref=e544]:
+              - generic [ref=e548] [cursor=pointer]:
+                - link "药学专业就业前景：95%就业率背后的真相与选择 圆梦小灯塔":
+                  - /url: https://m.6617.com/p_34977994002.html
+                - button "药学专业就业前景：95%就业率背后的真相与选择" [ref=e550]:
+                  - img "药学专业就业前景：95%就业率背后的真相与选择" [ref=e552]
+                - generic [ref=e554]:
+                  - generic [ref=e556]: 药学专业就业前景：95%就业率背后的真相与选择
+                  - generic [ref=e557]:
+                    - generic [ref=e564]: 圆梦小灯塔
+                    - button "关于这条结果的详细信息" [ref=e567]:
+                      - img [ref=e570]
+              - generic [ref=e575] [cursor=pointer]:
+                - link "药学：就业专业性强薪酬差距大 阳光高考- 学信网":
+                  - /url: https://gaokao.chsi.com.cn/gkxx/zybk/201401/20140109/718444000.html
+                - button "药学：就业专业性强薪酬差距大" [ref=e577]:
+                  - img "药学：就业专业性强薪酬差距大" [ref=e579]
+                - generic [ref=e581]:
+                  - generic [ref=e583]: 药学：就业专业性强薪酬差距大
+                  - generic [ref=e584]:
+                    - generic [ref=e591]: 阳光高考- 学信网
+                    - button "关于这条结果的详细信息" [ref=e594]:
+                      - img [ref=e597]
+              - generic [ref=e602] [cursor=pointer]:
+                - link "全球洞察：各国药剂师的收入是多少？ Pharmaoffer.com":
+                  - /url: https://pharmaoffer.com/zh-CN/blog/how-much-do-pharmacists-earn-around-the-globe/
+                - button "全球洞察：各国药剂师的收入是多少？" [ref=e604]:
+                  - img "全球洞察：各国药剂师的收入是多少？" [ref=e606]
+                - generic [ref=e608]:
+                  - generic [ref=e610]: 全球洞察：各国药剂师的收入是多少？
+                  - generic [ref=e611]:
+                    - generic [ref=e618]: Pharmaoffer.com
+                    - button "关于这条结果的详细信息" [ref=e621]:
+                      - img [ref=e624]
+            - button "显示更多图片" [ref=e627] [cursor=pointer]:
+              - separator [ref=e628]
+              - generic [ref=e629]:
+                - generic [ref=e630]: 显示更多图片
+                - img [ref=e632]
+        - generic [ref=e635]:
+          - generic [ref=e636]:
+            - heading "关于过滤结果的声明" [level=2] [ref=e637]
+            - paragraph [ref=e639]:
+              - generic [ref=e640]:
+                - text: 为了向您显示相关程度最高的结果，我们省略了一些与已显示的 5 条结果极为相似的条目。
+                - text: 如有需要，您可以
+                - link "重新搜索以显示省略的结果" [ref=e641] [cursor=pointer]:
+                  - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024&sca_esv=50e2bf8f38455036&filter=0
+                - text: 。
+          - navigation
+        - navigation
+    - contentinfo [ref=e642]:
+      - heading "页脚链接" [level=1] [ref=e643]
+      - generic [ref=e647]:
+        - generic [ref=e651]:
+          - button "Hyde Park, 波士顿麻萨诸塞州 - 根据您的活动记录" [ref=e653] [cursor=pointer]:
+            - generic [ref=e654]: Hyde Park, 波士顿麻萨诸塞州
+            - generic [ref=e656]:
+              - text: "-"
+              - generic [ref=e657]: 根据您的活动记录
+          - text: "-"
+          - button "更新位置信息" [ref=e659] [cursor=pointer]: 更新位置信息
+        - generic [ref=e662]:
+          - link "帮助" [ref=e663] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e664] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e665] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e666] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

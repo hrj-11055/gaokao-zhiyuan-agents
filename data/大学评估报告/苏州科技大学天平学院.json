@@ -1,0 +1,41 @@
+{
+  "university_name": "苏州科技大学天平学院",
+  "short_name": "天平学院",
+  "location": {
+    "province": "江苏",
+    "city": "苏州",
+    "district": "高新区"
+  },
+  "academic_stats": {
+    "parent_university": "苏州科技大学",
+    "key_disciplines": [
+      "城乡规划",
+      "土木工程",
+      "环境工程"
+    ],
+    "academician_count": 0
+  },
+  "admission_data": {
+    "jiangsu_history_group_2024_rank": 45120,
+    "jiangsu_physics_group_2024_rank": 185000
+  },
+  "employment_stats": {
+    "further_study_rate": "12.7%",
+    "primary_employment_sector": "建筑与工程施工",
+    "avg_starting_salary": 5800
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.1,
+    "graduate_value": 2.8,
+    "location_advantage": 4.5,
+    "globalization": 2.0,
+    "student_empowerment": 3.5,
+    "brand_asset": 2.6,
+    "weighted_total_score": 2.78
+  },
+  "risk_factors": [
+    "转设不确定性",
+    "民办学费成本",
+    "行业周期性波动"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "university_name": "南京医科大学康达学院",
+  "short_name": "康达学院",
+  "location": {
+    "province": "江苏",
+    "city": "连云港",
+    "district": "海州区"
+  },
+  "academic_stats": {
+    "total_majors": 17,
+    "key_majors": [
+      "临床医学",
+      "预防医学",
+      "药学",
+      "护理学"
+    ],
+    "academician_count_shared": 7,
+    "senior_title_ratio": "24.2%"
+  },
+  "admission_data_2024": {
+    "jiangsu_physics_cutoff": 505,
+    "jiangsu_history_cutoff": 512,
+    "clinical_medicine_min_rank": "约10万名"
+  },
+  "career_outcomes": {
+    "further_study_rate": "15.76%",
+    "primary_employment_sector": "医疗卫生单位",
+    "top_employer_industry": "生物医药"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.8,
+    "graduate_value": 3.2,
+    "location_advantage": 3.5,
+    "globalization": 2.0,
+    "student_freedom": 2.5,
+    "brand_asset": 2.7,
+    "overall_weighted_score": 2.93
+  },
+  "risk_factors": [
+    "独立学院转设不确定性",
+    "地理位置偏离省会"
+  ]
+}

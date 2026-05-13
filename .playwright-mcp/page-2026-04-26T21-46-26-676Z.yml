@@ -1,0 +1,570 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 智能医学工程 行业前景 AI医疗 市场规模 增长率 2025
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E5%8C%BB%E7%96%97+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2215875494080162362608%22%2C%22ori_lid%22%3A%2215875494080162362608%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=dc5115c101e4f4f0&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E5%8C%BB%E7%96%97+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E5%8C%BB%E7%96%97+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=dc5115c101e4f4f0&ie=utf-8&wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E5%8C%BB%E7%96%97+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025&rsv_spt=7&rsv_bp=1&f=8&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E5%8C%BB%E7%96%97+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E5%8C%BB%E7%96%97+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E5%8C%BB%E7%96%97+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E5%8C%BB%E7%96%97+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+AI%E5%8C%BB%E7%96%97+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+2025
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  智能医学工程就业前景  智能医学工程专业全球大学排名  智能医学的现状及前景  智能医学工程月薪过万难吗  智能医学工程发展前景  人工智能在医疗领域的发展前景    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 女性多和好友聚会能“续命” 9 母亲躺医院长椅儿子一手垫头一手轻拍 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 高市政府越过“最后一根红线” 13 “早上6点半 杭州东站全是孩子” 14 厨师锅里吐口水后继续出餐 店长回应 15 财务造假“不敢不能不想”时代来了" [ref=e69]:
+              - cell "相关搜索  智能医学工程就业前景  智能医学工程专业全球大学排名  智能医学的现状及前景  智能医学工程月薪过万难吗  智能医学工程发展前景  人工智能在医疗领域的发展前景    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 女性多和好友聚会能“续命” 9 母亲躺医院长椅儿子一手垫头一手轻拍 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 高市政府越过“最后一根红线” 13 “早上6点半 杭州东站全是孩子” 14 厨师锅里吐口水后继续出餐 店长回应 15 财务造假“不敢不能不想”时代来了" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 智能医学工程就业前景" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=63c8dnDyMl1TZqWDXPoGp5ChbBjvFsaQmf91PpoM370noIfn3pjleN2RqJc&rfqid=dc5115c101e4f4f0&rsv_dl=0_prs_28616_1&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsf=101633403
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 智能医学工程就业前景
+                      - link " 智能医学工程专业全球大学排名" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A%E5%85%A8%E7%90%83%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rfqid=dc5115c101e4f4f0&rsv_dl=0_prs_28616_2&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsf=101636803
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 智能医学工程专业全球大学排名
+                      - link " 智能医学的现状及前景" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%8F%8A%E5%89%8D%E6%99%AF&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rfqid=dc5115c101e4f4f0&rsv_dl=0_prs_28616_3&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsf=101633403
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 智能医学的现状及前景
+                      - link " 智能医学工程月薪过万难吗" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E6%9C%88%E8%96%AA%E8%BF%87%E4%B8%87%E9%9A%BE%E5%90%97&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rfqid=dc5115c101e4f4f0&rsv_dl=0_prs_28616_4&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsf=101636803
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 智能医学工程月薪过万难吗
+                      - link " 智能医学工程发展前景" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rfqid=dc5115c101e4f4f0&rsv_dl=0_prs_28616_5&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsf=101633403
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 智能医学工程发展前景
+                      - link " 人工智能在医疗领域的发展前景" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9C%A8%E5%8C%BB%E7%96%97%E9%A2%86%E5%9F%9F%E7%9A%84%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rfqid=dc5115c101e4f4f0&rsv_dl=0_prs_28616_6&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsf=101633403
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 人工智能在医疗领域的发展前景
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=96186hMTfsSJXxDnQP9%2BTmU0EDjjgln%2BB%2BBtSO8gnQ5aTdiHlweBxoE9MCc&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=1b96QweDcntDnVPUyncTk4byqE9FZfnMjv41vlYRmqeS9nUiQs9p4%2FIKqUI&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "女性多和好友聚会能“续命”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=1b96QweDcntDnVPUyncTk4byqE9FZfnMjv41vlYRmqeS9nUiQs9p4%2FIKqUI&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=1b96QweDcntDnVPUyncTk4byqE9FZfnMjv41vlYRmqeS9nUiQs9p4%2FIKqUI&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=1b96QweDcntDnVPUyncTk4byqE9FZfnMjv41vlYRmqeS9nUiQs9p4%2FIKqUI&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=1b96QweDcntDnVPUyncTk4byqE9FZfnMjv41vlYRmqeS9nUiQs9p4%2FIKqUI&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "高市政府越过“最后一根红线”" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=1b96QweDcntDnVPUyncTk4byqE9FZfnMjv41vlYRmqeS9nUiQs9p4%2FIKqUI&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "“早上6点半 杭州东站全是孩子”" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E6%97%A9%E4%B8%8A6%E7%82%B9%E5%8D%8A%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%E5%85%A8%E6%98%AF%E5%AD%A9%E5%AD%90%E2%80%9D&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=1b96QweDcntDnVPUyncTk4byqE9FZfnMjv41vlYRmqeS9nUiQs9p4%2FIKqUI&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=1b96QweDcntDnVPUyncTk4byqE9FZfnMjv41vlYRmqeS9nUiQs9p4%2FIKqUI&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=1b96QweDcntDnVPUyncTk4byqE9FZfnMjv41vlYRmqeS9nUiQs9p4%2FIKqUI&rqid=dc5115c101e4f4f0&rsf=85c727a219d39305f5dca0d666e71526_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e209]:
+            - generic [ref=e211]:
+              - img [ref=e214]
+              - generic:
+                - generic: 
+            - generic [ref=e219]:
+              - generic [ref=e220]: 问题分析中
+              - img [ref=e222]
+          - generic [ref=e246]:
+            - heading "2026年启幕,AI医疗公司竞争最新格局——谁将领跑行业? — 新京报" [level=3] [ref=e249]:
+              - link "2026年启幕,AI医疗公司竞争最新格局——谁将领跑行业? — 新京报" [ref=e250] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=fKS0llfRrryMNPq3A7Te3EshRJIECnxfr3dry_xyyEylHCh9JpVAUXj24AU3sXDTEP-PgiG9f34Z8dp-gIiEUa
+                - paragraph [ref=e253]:
+                  - generic [ref=e256]:
+                    - text: 2026年启幕,
+                    - emphasis [ref=e257]: AI医疗
+                    - text: 公司竞争最新格局——谁将领跑
+                    - emphasis [ref=e258]: 行业
+                    - text: "? — 新京报"
+            - generic [ref=e259]:
+              - link [ref=e261] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=fKS0llfRrryMNPq3A7Te3EshRJIECnxfr3dry_xyyEylHCh9JpVAUXj24AU3sXDTEP-PgiG9f34Z8dp-gIiEUa
+              - generic [ref=e266]:
+                - generic [ref=e271]:
+                  - text: 4天前
+                  - generic [ref=e272]:
+                    - text: 据权威机构预测,从2023年至2033年,我国
+                    - emphasis [ref=e273]: AI医疗市场规模
+                    - text: 将从88亿元飙升至3157亿元,年复合
+                    - emphasis [ref=e274]: 增长率
+                    - text: 高达43.1%。回望
+                    - emphasis [ref=e275]: "2025"
+                    - text: 年,
+                    - emphasis [ref=e276]: AI医疗行业
+                    - text: 已普遍步入产品落地验证的关键阶段;进入2026年,随着政策加速、临床需求释放与技术迭代深化,
+                    - emphasis [ref=e277]: AI医疗
+                    - text: 公司排名的竞争日趋白热化,头部企业正以扎实的临床落地能力与系统级解决方案,剑指未来千亿
+                - link "新京报网" [ref=e282] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=fKS0llfRrryMNPq3A7Te3EshRJIECnxfr3dry_xyyEylHCh9JpVAUXj24AU3sXDTEP-PgiG9f34Z8dp-gIiEUa
+                  - generic [ref=e283]: 新京报网
+                  - generic [ref=e285]: 
+          - generic [ref=e289]:
+            - heading "中国智能医疗(AI医疗)产业发展趋势及前景规模分析报告2025～2031年" [level=3] [ref=e292]:
+              - link "中国智能医疗(AI医疗)产业发展趋势及前景规模分析报告2025～2031年" [ref=e293] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=IxeDzC7nA2BcdbQlX1CdxCSblHq_ylldCuEoIiTTMec_MSLcRCbwr8QiDwiGuBz2Ew6vJ_QwR3bpo2I8sSN8d23vhYDxjKfYXy8zB14gzhy
+                - paragraph [ref=e296]:
+                  - generic [ref=e299]:
+                    - text: 中国
+                    - emphasis [ref=e300]: 智能
+                    - text: 医疗(
+                    - emphasis [ref=e301]: AI医疗
+                    - text: )产业发展趋势及
+                    - emphasis [ref=e302]: 前景规模
+                    - text: 分析报告
+                    - emphasis [ref=e303]: "2025"
+                    - text: ～2031年
+            - generic [ref=e305]: "1个回答 - 回答时间: 2026年4月6日"
+            - generic [ref=e310]:
+              - text: "最佳答案:"
+              - generic [ref=e311]:
+                - text: 一线城市：北京、上海依托顶尖医院和科研机构成为技术策源地，
+                - emphasis [ref=e312]: AI医疗
+                - text: 临床验证和高端设备研发领先。二三线城市：通过政策倾斜和基层医疗数字化需求驱动，在远程诊疗、健康管理等领域形成差异化增长。二、
+                - emphasis [ref=e313]: 市场规模
+                - text: 预测总体规模
+                - emphasis [ref=e314]: "2025"
+                - text: 年中国
+                - emphasis [ref=e315]: 智能
+                - text: 医疗市场规模约1,200亿元，2031年预计突破4,500亿元，CAGR（复合
+                - emphasis [ref=e316]: 增长率
+                - text: ...
+            - link "更多关于智能医学工程 行业前景 AI医疗 市场规模 增长率 2025的问题>>" [ref=e320] [cursor=pointer]:
+              - /url: http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5
+            - link "百度知道" [ref=e325] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=IxeDzC7nA2BcdbQlX1CdxCSblHq_ylldCuEoIiTTMec_MSLcRCbwr8QiDwiGuBz2Ew6vJ_QwR3bpo2I8sSN8d23vhYDxjKfYXy8zB14gzhy
+              - generic [ref=e326]: 百度知道
+              - generic [ref=e328]: 
+          - generic [ref=e332]:
+            - heading "智能医学工程就业真相曝光" [level=3] [ref=e335]:
+              - link "智能医学工程就业真相曝光" [ref=e336] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=B32M0qQjUysJlXfllsEKFE_eCxTOg0U4-jBNkn4vJl9n1a-zmH90yMKTrFE58HE9SPtBkz9Vb73XDmndar8zhZHSDz8qU9eIGFYBi-vSwOPOIa1_MUkHk78-CzEjIqs6
+                - paragraph [ref=e339]:
+                  - generic [ref=e342]:
+                    - emphasis [ref=e343]: 智能医学工程
+                    - text: 就业真相曝光
+            - generic [ref=e344]:
+              - link [ref=e346] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=B32M0qQjUysJlXfllsEKFE_eCxTOg0U4-jBNkn4vJl9n1a-zmH90yMKTrFE58HE9SPtBkz9Vb73XDmndar8zhZHSDz8qU9eIGFYBi-vSwOPOIa1_MUkHk78-CzEjIqs6
+              - generic [ref=e351]:
+                - generic [ref=e356]:
+                  - text: 2025年6月18日
+                  - generic [ref=e357]:
+                    - emphasis [ref=e358]: 智能医学工程
+                    - text: 作为"医疗+人工智能"的跨界专业,已成为就业市场的黄金赛道。毕业生凭借"医学+工科"复合背景,在医疗智能化浪潮中享受行业红利。本文从行业趋势、就业方向、核心竞争力和职业发展进行解析。 ━━━ 行业红利期已至 国家战略推动下,开设院校从2017年2所增至2024年85所。医疗智能市场年复合
+                    - emphasis [ref=e359]: 增长率
+                    - text: 30%,人才...
+                - link "头像 洛兹行者" [ref=e364] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=B32M0qQjUysJlXfllsEKFE_eCxTOg0U4-jBNkn4vJl9n1a-zmH90yMKTrFE58HE9SPtBkz9Vb73XDmndar8zhZHSDz8qU9eIGFYBi-vSwOPOIa1_MUkHk78-CzEjIqs6
+                  - img "头像" [ref=e367]
+                  - generic [ref=e368]: 洛兹行者
+                  - generic [ref=e370]: 
+          - generic [ref=e372]:
+            - generic [ref=e373]: 大家还在搜
+            - generic [ref=e374]:
+              - link "智能医学工程就业前景" [ref=e375] [cursor=pointer]:
+                - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=0958ChMzZY7ZC5kRUTNsr79%2BJzsLlg3ZbCwFumJOrUnjZD0ITKHxDp%2BZOnM&rsf=101633403&rsv_dl=0_prs_28608_1
+                - generic [ref=e377]: 智能医学工程就业前景
+              - link "智能医学工程专业全球大学排名" [ref=e378] [cursor=pointer]:
+                - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A%E5%85%A8%E7%90%83%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=0958ChMzZY7ZC5kRUTNsr79%2BJzsLlg3ZbCwFumJOrUnjZD0ITKHxDp%2BZOnM&rsf=101636803&rsv_dl=0_prs_28608_2
+                - generic [ref=e380]: 智能医学工程专业全球大学排名
+              - link "智能医学的现状及前景" [ref=e381] [cursor=pointer]:
+                - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%8F%8A%E5%89%8D%E6%99%AF&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=0958ChMzZY7ZC5kRUTNsr79%2BJzsLlg3ZbCwFumJOrUnjZD0ITKHxDp%2BZOnM&rsf=101633403&rsv_dl=0_prs_28608_3
+                - generic [ref=e383]: 智能医学的现状及前景
+              - link "智能医学工程月薪过万难吗" [ref=e384] [cursor=pointer]:
+                - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E6%9C%88%E8%96%AA%E8%BF%87%E4%B8%87%E9%9A%BE%E5%90%97&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=0958ChMzZY7ZC5kRUTNsr79%2BJzsLlg3ZbCwFumJOrUnjZD0ITKHxDp%2BZOnM&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e386]: 智能医学工程月薪过万难吗
+              - link "智能医学工程发展前景" [ref=e387] [cursor=pointer]:
+                - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=0958ChMzZY7ZC5kRUTNsr79%2BJzsLlg3ZbCwFumJOrUnjZD0ITKHxDp%2BZOnM&rsf=101633403&rsv_dl=0_prs_28608_5
+                - generic [ref=e389]: 智能医学工程发展前景
+              - link "人工智能在医疗领域的发展前景" [ref=e390] [cursor=pointer]:
+                - /url: /s?wd=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9C%A8%E5%8C%BB%E7%96%97%E9%A2%86%E5%9F%9F%E7%9A%84%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&usm=3&ie=utf-8&rsv_pq=dc5115c101e4f4f0&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&rsv_t=0958ChMzZY7ZC5kRUTNsr79%2BJzsLlg3ZbCwFumJOrUnjZD0ITKHxDp%2BZOnM&rsf=101633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e392]: 人工智能在医疗领域的发展前景
+          - generic [ref=e396]:
+            - heading "智能医学工程 行业前景 AI医疗 市场规模 增长率 2025 - 精选笔记" [level=3] [ref=e397]:
+              - link "智能医学工程 行业前景 AI医疗 市场规模 增长率 2025 - 精选笔记" [ref=e398] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=fKS0llfRrryMNPq3A7Te3J8ZBIQHYCCKlS7l5V-kSkPx34DkmNLqQFPvS6AEUD7mHKsBTaq5PYhtBAcD4r4xkSepE6jT4Bcn3fAgD2rZ92Dp3J6dG1oPx4wvinih-qPxTwfnAQyft0WQSJ3YNXLiDhTc8_PWqX7XbxVSXsDtc0hYV1gQWP5H5gDdfMITqdVCO7XG6NNJpNTJ6VH2PUJGS9f0J9NWJeMVPhYbt5nILqplUQN4MvKKQF_FDd6QweAAyovisQmYu4IaXgP-vvB-Nz92AW8CMv1DWjZLXMisOqBoJKq4T7DBuj_LeR2AptrtwAq080pX1SMKZ7Mtd3bLoa
+                - generic [ref=e400]:
+                  - emphasis [ref=e402]: 智能医学工程 行业前景 AI医疗 市场规模 增长率 2025
+                  - generic [ref=e403]: "- 精选笔记"
+            - generic [ref=e405]:
+              - link "专题2025医疗ai应用研究报告附200份报告pdf汇总下载 头像 拓端小助手" [ref=e408] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=nbx5otqr1-PV1Nw3hE2EF3K0EPY1RD0KHVFzGKkpdkVZKBJxY0DkHId0euyjpinhqV4Hm6EyPn1GERqVnH8RYq
+                - generic [ref=e409]:
+                  - heading "专题2025医疗ai应用研究报告附200份报告pdf汇总下载" [level=3] [ref=e416]:
+                    - generic [ref=e418]: 专题2025医疗ai应用研究报告附200份报告pdf汇总下载
+                  - generic [ref=e420]:
+                    - img "头像" [ref=e423]
+                    - generic [ref=e425]: 拓端小助手
+              - link "智能医学工程:非冷门潜力新兴学科 头像 智哥AI解码师" [ref=e428] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=B32M0qQjUysJlXfllsEKFE_eCxTOg0U4-jBNkn4vJl9n1a-zmH90yMKTrFE58HE9SPtBkz9Vb73XDmndar8zhTVPenMdoOOtZ-Xjrw1BepRvAibPrLJ4AACHEsyiHiYk
+                - generic [ref=e429]:
+                  - heading "智能医学工程:非冷门潜力新兴学科" [level=3] [ref=e436]:
+                    - generic [ref=e438]: 智能医学工程:非冷门潜力新兴学科
+                  - generic [ref=e440]:
+                    - img "头像" [ref=e443]
+                    - generic [ref=e445]: 智哥AI解码师
+              - link "ai医疗健康解决方案市场规模将突破1000亿 头像 佑信医管" [ref=e448] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=nbx5otqr1-PV1Nw3hE2EF3K0EPY1RD0KHVFzGKkpdkVZKBJxY0DkHId0euyjpinhZnVBcmKIJhD2iC0k4r_L_K
+                - generic [ref=e449]:
+                  - heading "ai医疗健康解决方案市场规模将突破1000亿" [level=3] [ref=e456]:
+                    - generic [ref=e458]: ai医疗健康解决方案市场规模将突破1000亿
+                  - generic [ref=e460]:
+                    - img "头像" [ref=e463]
+                    - generic [ref=e465]: 佑信医管
+              - link "科技巨头竞逐ai医疗赛道ai医疗迎来爆发式增长 头像 答魔数据-答魔君" [ref=e468] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=nbx5otqr1-PV1Nw3hE2EF3K0EPY1RD0KHVFzGKkpdkVZKBJxY0DkHId0euyjpinh02uEvx6C3g2GltVjWhu4pK
+                - generic [ref=e469]:
+                  - heading "科技巨头竞逐ai医疗赛道ai医疗迎来爆发式增长" [level=3] [ref=e476]:
+                    - generic [ref=e478]: 科技巨头竞逐ai医疗赛道ai医疗迎来爆发式增长
+                  - generic [ref=e480]:
+                    - img "头像" [ref=e483]
+                    - generic [ref=e485]: 答魔数据-答魔君
+            - link "查看更多笔记 >" [ref=e486] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=IxeDzC7nA2BcdbQlX1CdxDZXhYK3RPv2LeJZ0LLc2PiuwhSCKKZpi85Lbm86JKaPVxJy_hrsASzYZXmdRhiT95ZlRv6rHri2mw7OYeOrmCXa_SSUkBxHuxzBvfUvmQgobXtoCnAU836kyriTNwS6z5ijiM-yHbAn5JGMmInUVIsNbW8hfyGdiUfOe3vXttn0pi18gjOx0R1l0v18i3p3SDX1Ke2YHtwlKMNLT0Cuiyy86EKeE3U1Sv3BrWakxOOKEYi9GYgs-vAgQsE6Q1mdd18BY70Q98qjqnIfYQLejKYOR38_arEjHlE2dHfrLBMW-in9JHG8xXgCIjy75vUPlucOnn3iGwMsMxEvgyDPNYm
+          - generic [ref=e490]:
+            - heading "专题:2025医疗AI应用研究报告|附200+份报告PDF汇总下载 - 知乎" [level=3] [ref=e493]:
+              - link "专题:2025医疗AI应用研究报告|附200+份报告PDF汇总下载 - 知乎" [ref=e494] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=nbx5otqr1-PV1Nw3hE2EF3K0EPY1RD0KHVFzGKkpdkVZKBJxY0DkHId0euyjpinhqV4Hm6EyPn1GERqVnH8RYq
+                - paragraph [ref=e497]:
+                  - generic [ref=e500]:
+                    - text: "专题:"
+                    - emphasis [ref=e501]: 2025医疗AI
+                    - text: 应用研究报告|附200+份报告PDF汇总下载 - 知乎
+            - generic [ref=e506]:
+              - text: 2025年6月29日
+              - generic [ref=e507]:
+                - text: 本报告汇总解读聚焦
+                - emphasis [ref=e508]: 医疗行业
+                - text: 人工
+                - emphasis [ref=e509]: 智能
+                - text: 应用的前沿动态与市场机遇,以数据驱动视角剖析技术演进与商业落地的关键路径。从GenAI在医疗领域的爆发式
+                - emphasis [ref=e510]: 增长
+                - text: ",到细分场景的成熟度矩阵,再到运营成本压力与区域市场潜力,本报告整合多源数据勾勒出"
+                - emphasis [ref=e511]: "2025"
+                - text: 年
+                - emphasis [ref=e512]: 医疗AI
+                - text: 的发展蓝图。 医疗健康行业正经历前所未有的数字化变革,AI技术尤其是生成式人工...
+            - generic [ref=e513]:
+              - link [ref=e515] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=nbx5otqr1-PV1Nw3hE2EF3K0EPY1RD0KHVFzGKkpdkVZKBJxY0DkHId0euyjpinhqV4Hm6EyPn1GERqVnH8RYq
+              - link [ref=e519] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=nbx5otqr1-PV1Nw3hE2EF3K0EPY1RD0KHVFzGKkpdkVZKBJxY0DkHId0euyjpinhqV4Hm6EyPn1GERqVnH8RYq
+              - link [ref=e523] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=nbx5otqr1-PV1Nw3hE2EF3K0EPY1RD0KHVFzGKkpdkVZKBJxY0DkHId0euyjpinhqV4Hm6EyPn1GERqVnH8RYq
+              - link "4" [ref=e527] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=nbx5otqr1-PV1Nw3hE2EF3K0EPY1RD0KHVFzGKkpdkVZKBJxY0DkHId0euyjpinhqV4Hm6EyPn1GERqVnH8RYq
+                - generic [ref=e530]:
+                  - generic [ref=e531]: 
+                  - text: "4"
+            - link "头像 知乎" [ref=e536] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=nbx5otqr1-PV1Nw3hE2EF3K0EPY1RD0KHVFzGKkpdkVZKBJxY0DkHId0euyjpinhqV4Hm6EyPn1GERqVnH8RYq
+              - img "头像" [ref=e539]
+              - generic [ref=e540]: 知乎
+              - generic [ref=e542]: 
+          - generic [ref=e546]:
+            - heading "2025医疗人工智能报告:价值计量与支付探索,医疗人工智能的两个困局" [level=3] [ref=e549]:
+              - link "2025医疗人工智能报告:价值计量与支付探索,医疗人工智能的两个困局" [ref=e550] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=fKS0llfRrryMNPq3A7Te31ogEnRDc56J1oQaUPmYdpAuzGE9f69r74vY507_fUTHh0QiyXsDIc2YO5FGDl5EXn4h00Hiz82PipLa25kOAwC
+                - paragraph [ref=e553]:
+                  - generic [ref=e556]:
+                    - emphasis [ref=e557]: 2025医疗
+                    - text: 人工
+                    - emphasis [ref=e558]: 智能
+                    - text: 报告:价值计量与支付探索,医疗人工智能的两个困局
+            - generic [ref=e559]:
+              - link [ref=e561] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=fKS0llfRrryMNPq3A7Te31ogEnRDc56J1oQaUPmYdpAuzGE9f69r74vY507_fUTHh0QiyXsDIc2YO5FGDl5EXn4h00Hiz82PipLa25kOAwC
+              - generic [ref=e566]:
+                - generic [ref=e571]:
+                  - text: 2025年12月17日
+                  - generic [ref=e572]:
+                    - text: 庞大且
+                    - emphasis [ref=e573]: 增长
+                    - text: 的市场不仅吸引了更多创业者，亦将带动大量医生进入AI的科学研究与产品研发，当前的
+                    - emphasis [ref=e574]: 医疗AI
+                    - text: 已不是某个单一学科的造物，而是计算机、工业、
+                    - emphasis [ref=e575]: 医学
+                    - text: 等学科的深度融合。聚焦
+                    - emphasis [ref=e576]: "2025"
+                    - text: 年，医疗AI最显著的变化可归纳于两个要点：大模型的突破式演变与医疗机构的
+                    - emphasis [ref=e577]: 规模
+                    - text: 化参与。2025年年初DeepSeek发布的DeepSeek-R1为大模型产业...
+                - link "头像  潇湘晨报网" [ref=e582] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=fKS0llfRrryMNPq3A7Te31ogEnRDc56J1oQaUPmYdpAuzGE9f69r74vY507_fUTHh0QiyXsDIc2YO5FGDl5EXn4h00Hiz82PipLa25kOAwC
+                  - generic [ref=e583]:
+                    - img "头像" [ref=e585]
+                    - generic [ref=e587]: 
+                  - generic [ref=e588]: 潇湘晨报网
+                  - generic [ref=e590]: 
+          - generic [ref=e594]:
+            - heading "...赋能精准诊疗随着医疗人工智能的快速发展,AI医疗市场已成为全球资..." [level=3] [ref=e597]:
+              - link "...赋能精准诊疗随着医疗人工智能的快速发展,AI医疗市场已成为全球资..." [ref=e598] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=IxeDzC7nA2BcdbQlX1Cdx3ISnf4SMkKoQVnBsMuirW_nGGuHYPIqCA99liXEuuXyjpHT3JQu39jba0q-LRZatq
+                - paragraph [ref=e601]:
+                  - generic [ref=e604]:
+                    - text: ...赋能精准诊疗随着医疗人工
+                    - emphasis [ref=e605]: 智能
+                    - text: 的快速发展,
+                    - emphasis [ref=e606]: AI医疗市场
+                    - text: 已成为全球资...
+            - generic [ref=e607]:
+              - link [ref=e609] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=IxeDzC7nA2BcdbQlX1Cdx3ISnf4SMkKoQVnBsMuirW_nGGuHYPIqCA99liXEuuXyjpHT3JQu39jba0q-LRZatq
+              - generic [ref=e614]:
+                - generic [ref=e619]:
+                  - text: 2025年2月18日
+                  - generic [ref=e620]:
+                    - text: 随着医疗人工
+                    - emphasis [ref=e621]: 智能
+                    - text: 的快速发展,
+                    - emphasis [ref=e622]: AI医疗
+                    - text: 市场已成为全球资本关注的重点。根据市场调研机构IDC预测,到2026年,中国医疗AI
+                    - emphasis [ref=e623]: 市场规模
+                    - text: 将突破千亿大关,年复合
+                    - emphasis [ref=e624]: 增长率
+                    - text: 超过30%。AI技术的应用正推动精准医疗、智慧医疗和健康管理的加速发展。 在AI医疗的应用场景中,涵盖了疾病筛查、基因检测、
+                    - emphasis [ref=e625]: 医学
+                    - text: 影像分析、药物研发、临床辅助决策等多个...
+                - link "雪球" [ref=e630] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=IxeDzC7nA2BcdbQlX1Cdx3ISnf4SMkKoQVnBsMuirW_nGGuHYPIqCA99liXEuuXyjpHT3JQu39jba0q-LRZatq
+                  - generic [ref=e631]: 雪球
+                  - generic [ref=e633]: 
+          - generic [ref=e637]:
+            - heading "未来五年中国未来产业之医学人工智能(医学AI)行业趋势预测 - 知乎" [level=3] [ref=e640]:
+              - link "未来五年中国未来产业之医学人工智能(医学AI)行业趋势预测 - 知乎" [ref=e641] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=IxeDzC7nA2BcdbQlX1CdxFWG6qsR19Rz2Y46dn0gdrSP9vzsaYadGfqyZ70WOm1oYKB0HLxYKAsogyQavwO8A_
+                - paragraph [ref=e644]:
+                  - generic [ref=e647]:
+                    - text: 未来五年中国未来产业之医学人工
+                    - emphasis [ref=e648]: 智能
+                    - text: (
+                    - emphasis [ref=e649]: 医学AI
+                    - text: )
+                    - emphasis [ref=e650]: 行业
+                    - text: 趋势预测 - 知乎
+            - generic [ref=e651]:
+              - link [ref=e653] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=IxeDzC7nA2BcdbQlX1CdxFWG6qsR19Rz2Y46dn0gdrSP9vzsaYadGfqyZ70WOm1oYKB0HLxYKAsogyQavwO8A_
+              - generic [ref=e658]:
+                - generic [ref=e663]:
+                  - text: 2025年2月26日
+                  - generic [ref=e664]:
+                    - text: 当前,中国
+                    - emphasis [ref=e665]: AI医疗市场规模
+                    - text: 从2019年的27亿元已快速增长至2023年的88亿元,年复合
+                    - emphasis [ref=e666]: 增长率
+                    - text: 达34%。预计到2028年,市场规模将接近300亿元,未来五年增速仍将保持在25%以上。全球市场同样呈现爆发态势,2032年市场规模或达700亿美元,年复合增长率约30%。从地域分布来看,美国、欧洲等发达国家在AI医疗领域起步较早,拥有较为成熟的...
+                - link "头像 知乎" [ref=e671] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=IxeDzC7nA2BcdbQlX1CdxFWG6qsR19Rz2Y46dn0gdrSP9vzsaYadGfqyZ70WOm1oYKB0HLxYKAsogyQavwO8A_
+                  - img "头像" [ref=e674]
+                  - generic [ref=e675]: 知乎
+                  - generic [ref=e677]: 
+        - generic [ref=e680]:
+          - generic [ref=e681]: 相关搜索
+          - table [ref=e682]:
+            - rowgroup [ref=e683]:
+              - row "智能医学工程就业前景 智能医学工程专业全球大学排名" [ref=e684]:
+                - cell "智能医学工程就业前景" [ref=e685]:
+                  - link "智能医学工程就业前景" [ref=e686] [cursor=pointer]:
+                    - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF&rsf=133633403&rsp=0&f=1&rs_src=0&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&rsv_dl=brs_28338_1
+                    - generic [ref=e688]: 智能医学工程就业前景
+                - cell "智能医学工程专业全球大学排名" [ref=e689]:
+                  - link "智能医学工程专业全球大学排名" [ref=e690] [cursor=pointer]:
+                    - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A%E5%85%A8%E7%90%83%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&rsf=133636803&rsp=1&f=1&rs_src=0&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&rsv_dl=brs_28338_2
+                    - generic [ref=e692]: 智能医学工程专业全球大学排名
+              - row "智能医学的现状及前景 智能医学工程月薪过万难吗" [ref=e693]:
+                - cell "智能医学的现状及前景" [ref=e694]:
+                  - link "智能医学的现状及前景" [ref=e695] [cursor=pointer]:
+                    - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E7%9A%84%E7%8E%B0%E7%8A%B6%E5%8F%8A%E5%89%8D%E6%99%AF&rsf=133633403&rsp=2&f=1&rs_src=0&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&rsv_dl=brs_28338_3
+                    - generic [ref=e697]: 智能医学的现状及前景
+                - cell "智能医学工程月薪过万难吗" [ref=e698]:
+                  - link "智能医学工程月薪过万难吗" [ref=e699] [cursor=pointer]:
+                    - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E6%9C%88%E8%96%AA%E8%BF%87%E4%B8%87%E9%9A%BE%E5%90%97&rsf=133636803&rsp=3&f=1&rs_src=0&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&rsv_dl=brs_28338_4
+                    - generic [ref=e701]: 智能医学工程月薪过万难吗
+              - row "未来医疗行业的发展前景 人工智能在医疗领域的发展前景" [ref=e702]:
+                - cell "未来医疗行业的发展前景" [ref=e703]:
+                  - link "未来医疗行业的发展前景" [ref=e704] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9C%AA%E6%9D%A5%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%E7%9A%84%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&rsf=133633403&rsp=4&f=1&rs_src=0&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&rsv_dl=brs_28338_5
+                    - generic [ref=e706]: 未来医疗行业的发展前景
+                - cell "人工智能在医疗领域的发展前景" [ref=e707]:
+                  - link "人工智能在医疗领域的发展前景" [ref=e708] [cursor=pointer]:
+                    - /url: /s?wd=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%9C%A8%E5%8C%BB%E7%96%97%E9%A2%86%E5%9F%9F%E7%9A%84%E5%8F%91%E5%B1%95%E5%89%8D%E6%99%AF&rsf=133633403&rsp=5&f=1&rs_src=0&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&rsv_dl=brs_28338_6
+                    - generic [ref=e710]: 人工智能在医疗领域的发展前景
+              - row "人工智能进入医疗行业的优势 人工智能与医疗未来发展" [ref=e711]:
+                - cell "人工智能进入医疗行业的优势" [ref=e712]:
+                  - link "人工智能进入医疗行业的优势" [ref=e713] [cursor=pointer]:
+                    - /url: /s?wd=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%BF%9B%E5%85%A5%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%E7%9A%84%E4%BC%98%E5%8A%BF&rsf=133636803&rsp=6&f=1&rs_src=0&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&rsv_dl=brs_28338_7
+                    - generic [ref=e715]: 人工智能进入医疗行业的优势
+                - cell "人工智能与医疗未来发展" [ref=e716]:
+                  - link "人工智能与医疗未来发展" [ref=e717] [cursor=pointer]:
+                    - /url: /s?wd=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%B8%8E%E5%8C%BB%E7%96%97%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95&rsf=133633403&rsp=7&f=1&rs_src=0&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&rsv_dl=brs_28338_8
+                    - generic [ref=e719]: 人工智能与医疗未来发展
+              - row "人工智能医疗前景 智能医学工程专业就业方向" [ref=e720]:
+                - cell "人工智能医疗前景" [ref=e721]:
+                  - link "人工智能医疗前景" [ref=e722] [cursor=pointer]:
+                    - /url: /s?wd=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%8C%BB%E7%96%97%E5%89%8D%E6%99%AF&rsf=133633403&rsp=8&f=1&rs_src=0&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&rsv_dl=brs_28338_9
+                    - generic [ref=e724]: 人工智能医疗前景
+                - cell "智能医学工程专业就业方向" [ref=e725]:
+                  - link "智能医学工程专业就业方向" [ref=e726] [cursor=pointer]:
+                    - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&rsf=133636803&rsp=9&f=1&rs_src=0&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&rsv_dl=brs_28338_10
+                    - generic [ref=e728]: 智能医学工程专业就业方向
+      - generic [ref=e731]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e732]:
+          - generic [ref=e733]: "1"
+        - link "2" [ref=e734] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&pn=10&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&ie=utf-8&usm=3&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&topic_pn=
+          - generic [ref=e735]: "2"
+        - link "3" [ref=e736] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&pn=20&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&ie=utf-8&usm=3&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&topic_pn=
+          - generic [ref=e737]: "3"
+        - link "4" [ref=e738] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&pn=30&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&ie=utf-8&usm=3&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&topic_pn=
+          - generic [ref=e739]: "4"
+        - link "5" [ref=e740] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&pn=40&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&ie=utf-8&usm=3&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&topic_pn=
+          - generic [ref=e741]: "5"
+        - link "6" [ref=e742] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&pn=50&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&ie=utf-8&usm=3&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&topic_pn=
+          - generic [ref=e743]: "6"
+        - link "7" [ref=e744] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&pn=60&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&ie=utf-8&usm=3&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&topic_pn=
+          - generic [ref=e745]: "7"
+        - link "8" [ref=e746] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&pn=70&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&ie=utf-8&usm=3&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&topic_pn=
+          - generic [ref=e747]: "8"
+        - link "9" [ref=e748] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&pn=80&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&ie=utf-8&usm=3&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&topic_pn=
+          - generic [ref=e749]: "9"
+        - link "10" [ref=e750] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&pn=90&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&ie=utf-8&usm=3&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&topic_pn=
+          - generic [ref=e751]: "10"
+        - link "下一页" [ref=e752] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&pn=10&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF%20AI%E5%8C%BB%E7%96%97%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%20%E5%A2%9E%E9%95%BF%E7%8E%87%202025&ie=utf-8&usm=3&rsv_pq=dc5115c101e4f4f0&rsv_t=a762FgE%2FqkAfni29pRdWu2F5K0HGOGcFR7v%2FaNmdVIA9FKLNjOJBoWBBx9g&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e753]
+      - generic [ref=e756]:
+        - link "帮助" [ref=e757] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e758] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e759] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e760] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

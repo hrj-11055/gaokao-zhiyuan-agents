@@ -1,0 +1,45 @@
+{
+  "university_name": "重庆三峡学院",
+  "short_name": "CQSXU",
+  "location": {
+    "province": "重庆",
+    "city": "万州区",
+    "campus": [
+      "百安坝校区",
+      "沙河校区"
+    ]
+  },
+  "academic_level": {
+    "master_points": 4,
+    "key_disciplines": [
+      "农业工程",
+      "环境科学",
+      "中国语言文学"
+    ],
+    "is_985": false,
+    "is_211": false,
+    "is_double_first_class": false
+  },
+  "admission_stats": {
+    "cq_history_rank_avg": 16000,
+    "cq_physics_rank_avg": 69000
+  },
+  "employment_data": {
+    "further_study_rate": "12.5%",
+    "primary_employment_sector": "Education",
+    "median_salary_6m": 5000
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.2,
+    "graduate_value": 2.5,
+    "location_potential": 2.8,
+    "globalization": 2.1,
+    "student_empowerment": 2.6,
+    "brand_asset": 2.7,
+    "overall_weighted_score": 2.44
+  },
+  "risk_factors": [
+    "Geographic isolation from main city",
+    "Internal governance compliance"
+  ]
+}

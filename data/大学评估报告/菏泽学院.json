@@ -1,0 +1,46 @@
+{
+  "university_name": "菏泽学院",
+  "short_name": "HezeUni",
+  "location": {
+    "province": "山东省",
+    "city": "菏泽市",
+    "economic_zone": "鲁西南"
+  },
+  "academic_profile": {
+    "key_disciplines": [
+      "农学",
+      "生物学",
+      "计算机科学",
+      "教育学"
+    ],
+    "master_degree_status": "立项建设单位",
+    "provincial_labs_count": 3
+  },
+  "admission_data": {
+    "shandong_rank_avg": 270000,
+    "competitive_majors": [
+      "汉语言文学",
+      "小学教育",
+      "计算机"
+    ]
+  },
+  "employment_stats": {
+    "further_study_rate": "15.92%",
+    "primary_industry": "教育/制造业/电商",
+    "avg_starting_salary": 4500
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.1,
+    "employment_value": 2.4,
+    "location_potential": 2.5,
+    "globalization": 1.2,
+    "student_freedom": 2.2,
+    "brand_asset": 2.4,
+    "overall_weighted_score": 2.2
+  },
+  "risk_factors": [
+    "硬件设施老化",
+    "高层次人才流失",
+    "就业行业单一"
+  ]
+}

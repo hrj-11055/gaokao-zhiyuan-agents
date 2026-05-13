@@ -1,0 +1,45 @@
+{
+  "university_name": "重庆机电职业技术大学",
+  "short_name": "重庆机电大学",
+  "type": "民办职业本科",
+  "location": {
+    "province": "重庆",
+    "district": "璧山区",
+    "industrial_zone": "璧山高新区"
+  },
+  "academic": {
+    "key_disciplines": [
+      "机械设计制造及自动化",
+      "汽车工程技术",
+      "电气工程及自动化"
+    ],
+    "faculty_structure": {
+      "double_qualified_ratio": "60%+",
+      "academician_count": 0
+    }
+  },
+  "employment": {
+    "overall_employment_rate": "95.2%",
+    "further_study_rate": "2.1%",
+    "top_employers": [
+      "中国兵器",
+      "长安汽车",
+      "吉利汽车"
+    ],
+    "special_program": "定向培养士官"
+  },
+  "scores": {
+    "academic_capital": 1.8,
+    "graduate_value": 3.2,
+    "location_advantage": 4.2,
+    "globalization": 1.5,
+    "student_freedom": 3.0,
+    "brand_asset": 2.6,
+    "weighted_total": 2.69
+  },
+  "risk_factors": [
+    "民办学费较高",
+    "社会认知偏差",
+    "地理位置偏郊区"
+  ]
+}

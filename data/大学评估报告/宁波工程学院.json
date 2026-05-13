@@ -1,0 +1,42 @@
+{
+  "university_name": "宁波工程学院",
+  "short_name": "NBUT",
+  "location": {
+    "city": "宁波",
+    "province": "浙江",
+    "economic_zone": "长三角经济圈"
+  },
+  "academic_level": {
+    "master_points": 8,
+    "phd_points": 0,
+    "key_disciplines": [
+      "土木工程",
+      "化学工程",
+      "机械工程"
+    ],
+    "recommendation_privilege": false
+  },
+  "employment_stats": {
+    "overall_employment_rate": "93.6%+",
+    "further_study_rate": "19.60%",
+    "top_employer": "吉利控股集团",
+    "median_starting_salary": 6199
+  },
+  "campus_info": {
+    "campuses": [
+      "风华校区",
+      "翠柏校区",
+      "前湾校区"
+    ],
+    "national_level_platforms": 3
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.4,
+    "employment_value": 3.1,
+    "location_advantage": 4.2,
+    "globalization": 3.2,
+    "student_empowerment": 2.5,
+    "brand_asset": 2.8,
+    "weighted_total": 3.01
+  }
+}

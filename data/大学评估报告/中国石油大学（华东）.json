@@ -1,0 +1,49 @@
+{
+  "university_name": "中国石油大学（华东）",
+  "short_name": "UPC / 中石大（华东）",
+  "location": {
+    "province": "山东",
+    "city": "青岛",
+    "district": "西海岸新区",
+    "gdp_2023": "15760亿元"
+  },
+  "academic_standing": {
+    "level": "211 / 双一流",
+    "a_plus_disciplines": [
+      "石油与天然气工程",
+      "地质资源与地质工程"
+    ],
+    "a_minus_disciplines": [
+      "化学工程与技术"
+    ],
+    "state_key_labs": 1,
+    "total_academicians": 17
+  },
+  "admission_stats": {
+    "avg_physic_rank_sd": 30395,
+    "avg_history_rank_sd": 30395,
+    "competition_level": "High"
+  },
+  "career_outcomes": {
+    "further_study_rate": "49.7%",
+    "domestic_study_rate": "45.2%",
+    "overseas_study_rate": "4.5%",
+    "major_employers": [
+      "CNPC",
+      "Sinopec",
+      "CNOOC",
+      "PipeChina",
+      "Huawei"
+    ],
+    "median_starting_salary": 7200
+  },
+  "quantitative_scores": {
+    "academic_capital": 4.5,
+    "employment_value": 4.4,
+    "location_momentum": 4.2,
+    "globalization": 3.8,
+    "student_empowerment": 4.0,
+    "brand_asset": 4.1,
+    "overall_weighted_score": 4.29
+  }
+}

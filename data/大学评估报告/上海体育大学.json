@@ -1,0 +1,54 @@
+{
+  "university_name": "上海体育大学",
+  "short_name": "SUS / 上体",
+  "location": {
+    "city": "上海",
+    "districts": [
+      "杨浦区",
+      "徐汇区"
+    ]
+  },
+  "academic_status": {
+    "double_first_class": true,
+    "a_plus_subjects": [
+      "体育学"
+    ],
+    "key_labs": [
+      "国家体育总局重点研究基地",
+      "运动科学实验教学示范中心"
+    ]
+  },
+  "admission_competitiveness": {
+    "liberal_arts_percentile": "Top 1.5%",
+    "science_percentile": "Top 5-10%",
+    "hot_majors": [
+      "运动康复",
+      "体育新闻",
+      "体育管理"
+    ]
+  },
+  "career_outcomes": {
+    "overall_employment_rate": ">90%",
+    "further_study_rate": "31%",
+    "top_employers": [
+      "久事体育",
+      "耐克",
+      "上海教育系统"
+    ],
+    "avg_starting_salary": 7200
+  },
+  "brand_identity": {
+    "ranking_sport_category": 1,
+    "cultural_symbol": "绿瓦大楼",
+    "motto": "身心一统，兼蓄竞攀"
+  },
+  "scores": {
+    "academic": 4.7,
+    "employment": 4.4,
+    "location": 4.9,
+    "globalization": 4.5,
+    "student_empowerment": 3.9,
+    "brand": 4.8,
+    "overall": 4.59
+  }
+}

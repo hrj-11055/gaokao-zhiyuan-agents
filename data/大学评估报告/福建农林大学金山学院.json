@@ -1,0 +1,40 @@
+{
+  "university_name": "福建农林大学金山学院",
+  "short_name": "FAFU-JS",
+  "location": {
+    "province": "福建",
+    "city": "福州",
+    "district": "仓山区"
+  },
+  "academic_stats": {
+    "key_majors": [
+      "林学",
+      "园林",
+      "农村区域发展",
+      "食品质量与安全"
+    ],
+    "shared_resources_with_parent": true,
+    "independent_evaluation_rank": "校友会应用型545"
+  },
+  "admission_profile": {
+    "avg_percentile_fujian_physics": "53%",
+    "avg_percentile_fujian_history": "35%",
+    "competitiveness": "Medium"
+  },
+  "employment_data": {
+    "employment_rate": "86.4%",
+    "further_study_rate": "5.2%",
+    "top_employer_sectors": [
+      "Agriculture",
+      "Manufacturing",
+      "Education"
+    ],
+    "avg_starting_salary": 4200
+  },
+  "campus_life": {
+    "dormitory_quality": "B+",
+    "canteen_rating": "A",
+    "forest_coverage": "High"
+  },
+  "strategic_score": 2.57
+}

@@ -1,0 +1,52 @@
+{
+  "university_info": {
+    "name": "南京理工大学紫金学院",
+    "type": "独立学院 (民办本科)",
+    "location": "江苏省南京市仙林大学城",
+    "parent_university": "南京理工大学",
+    "established": 1999
+  },
+  "academic_strength": {
+    "provincial_first_class_majors": [
+      "计算机科学与技术",
+      "电子信息工程",
+      "通信工程",
+      "自动化",
+      "会计学"
+    ],
+    "faculty_senior_title_ratio": "35%+",
+    "key_platforms": [
+      "国家制造业信息化培训中心",
+      "江苏省产业人才培训基地"
+    ]
+  },
+  "admission_data_2024_js": {
+    "physics_group": {
+      "min_score": 495,
+      "min_rank": 153886
+    },
+    "history_group": {
+      "min_score": 518,
+      "min_rank": 39270
+    }
+  },
+  "employment_and_further_study": {
+    "overall_employment_rate": "95.8%",
+    "further_study_rate_total": "8.9%",
+    "median_starting_salary": 6200,
+    "top_employer_sectors": [
+      "IT/Software",
+      "Intelligent Manufacturing",
+      "Finance"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.5,
+    "graduate_value": 3.8,
+    "location_advantage": 4.8,
+    "globalization": 2.5,
+    "student_empowerment": 3.5,
+    "brand_asset": 4.0,
+    "weighted_average_score": 3.735
+  }
+}

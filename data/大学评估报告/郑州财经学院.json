@@ -1,0 +1,32 @@
+{
+  "university_name": "郑州财经学院",
+  "short_name": "郑财",
+  "location": {
+    "province": "河南",
+    "city": "郑州",
+    "campuses": [
+      "天河校区",
+      "航空港校区"
+    ]
+  },
+  "academic_level": {
+    "type": "民办本科",
+    "ranking_province_private": 1,
+    "key_disciplines": [
+      "会计学",
+      "金融学",
+      "物流管理"
+    ]
+  },
+  "admission_data_2024": {
+    "henan_liberal_arts_rank": 73188,
+    "henan_science_rank": 214152
+  },
+  "employment_stats": {
+    "overall_employment_rate": "80%+",
+    "further_study_rate": "5.2%",
+    "top_industry": "金融与商贸物流"
+  },
+  "hardware_rating": "A+",
+  "comprehensive_score": 2.49
+}

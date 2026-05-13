@@ -1,0 +1,25 @@
+{
+  "university_name": "华东师范大学",
+  "academic": {
+    "a_plus_count": 2,
+    "a_count": 3,
+    "a_minus_count": 7,
+    "academician_count": 19
+  },
+  "employment": {
+    "domestic_further_study_rate": "42.89%",
+    "overseas_further_study_rate": "15.64%",
+    "starting_salary_rank": 17,
+    "starting_salary_median": 10500
+  },
+  "location": {
+    "city": "上海",
+    "city_gdp": "4.72万亿元"
+  },
+  "scores": {
+    "comprehensive_score": 4.61,
+    "academic_score": 4.6,
+    "employment_score": 4.7,
+    "location_score": 4.8
+  }
+}

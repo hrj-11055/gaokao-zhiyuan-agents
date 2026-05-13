@@ -9,7 +9,7 @@ const UNIV_REPORTS_DIR = process.env.UNIV_REPORTS_DIR ||
 const REPORTS_DIR = process.env.REPORTS_DIR ||
   path.join(__dirname, '../reports')
 const SCORE_API_URL = process.env.SCORE_API_URL || 'http://159.75.110.157:5000'
-const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-chat'
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-v4-pro'
 
 // 兴趣领域 → 专业门类代码前缀
 const INTEREST_TO_CODES = {

@@ -1,0 +1,444 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjXjKW4poyUAxXytysGHcJYFgAQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 暨南大学 保送生 录取名单 2025 2024 人数 暨南大学 保送生 录取名单 2025 2024 人数
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%259A%25A8%25E5%258D%2597%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E4%25BF%259D%25E9%2580%2581%25E7%2594%259F%2B%25E5%25BD%2595%25E5%258F%2596%25E5%2590%258D%25E5%258D%2595%2B2025%2B2024%2B%25E4%25BA%25BA%25E6%2595%25B0&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&aep=1&ntc=1&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ2J8OegQIDBAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ0pQJegQIEhAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "购物" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&ved=1t:220175&ictx=111
+              - generic [ref=e95]: 购物
+          - listitem [ref=e96]:
+            - link "图片" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQtKgLegQIFBAB
+              - generic [ref=e99]: 图片
+          - listitem [ref=e100]:
+            - link "视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQtKgLegQIFRAB
+              - generic [ref=e103]: 视频
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQs6gLegQIFhAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考" [level=2] [ref=e152]:
+          - generic [ref=e153]: 正在思考
+        - progressbar [ref=e154]
+      - main [ref=e156]:
+        - generic [ref=e160]:
+          - generic [ref=e163]:
+            - heading "网页搜索结果" [level=2] [ref=e164]
+            - generic [ref=e165]:
+              - generic [ref=e168]:
+                - link "暨南大学招生办公室 暨南大学招生办公室 https://zsb.jnu.edu.cn" [ref=e170] [cursor=pointer]:
+                  - /url: https://zsb.jnu.edu.cn/
+                  - heading "暨南大学招生办公室" [level=3] [ref=e171]
+                  - generic [ref=e173]:
+                    - img [ref=e177]
+                    - generic [ref=e179]:
+                      - generic [ref=e181]: 暨南大学招生办公室
+                      - generic [ref=e183]: https://zsb.jnu.edu.cn
+                - button "关于这条结果的详细信息" [ref=e184] [cursor=pointer]:
+                  - img [ref=e187]
+              - generic [ref=e191]:
+                - text: ...
+                - emphasis [ref=e192]: 暨南大学
+                - text: 2026年优秀运动员
+                - emphasis [ref=e193]: 保送
+                - text: 拟
+                - emphasis [ref=e194]: 录取名单
+                - text: 的通知. 2026-01-27.
+                - emphasis [ref=e195]: 暨南大学2025
+                - text: 年增设3个国际班、18个创新（特色）班！
+                - emphasis [ref=e196]: "2025"
+                - text: "-06-27."
+                - emphasis [ref=e197]: 暨南大学2025
+                - text: 年全国各省区市招生宣传行程 ...
+          - generic [ref=e202]:
+            - heading "相关问题" [level=2] [ref=e204]
+            - generic [ref=e205]:
+              - button "暨南大学最好的专业？" [ref=e211] [cursor=pointer]:
+                - generic [ref=e213]: 暨南大学最好的专业？
+                - img [ref=e216]
+              - button "暨南大学人才引进待遇？" [ref=e225] [cursor=pointer]:
+                - generic [ref=e227]: 暨南大学人才引进待遇？
+                - img [ref=e230]
+              - button "暨南大学世界排名？" [ref=e239] [cursor=pointer]:
+                - generic [ref=e241]: 暨南大学世界排名？
+                - img [ref=e244]
+              - button "暨南大学人数？" [ref=e253] [cursor=pointer]:
+                - generic [ref=e255]: 暨南大学人数？
+                - img [ref=e258]
+          - generic [ref=e263]:
+            - heading "网页搜索结果" [level=2] [ref=e264]
+            - generic [ref=e265]:
+              - generic [ref=e268]:
+                - link "机构人员 暨南大学招生办公室 https://zsb.jnu.edu.cn › list" [ref=e270] [cursor=pointer]:
+                  - /url: https://zsb.jnu.edu.cn/3516/list.htm
+                  - heading "机构人员" [level=3] [ref=e271]
+                  - generic [ref=e273]:
+                    - img [ref=e277]
+                    - generic [ref=e279]:
+                      - generic [ref=e281]: 暨南大学招生办公室
+                      - generic [ref=e283]: https://zsb.jnu.edu.cn › list
+                - button "关于这条结果的详细信息" [ref=e284] [cursor=pointer]:
+                  - img [ref=e287]
+              - generic [ref=e291]:
+                - text: 姓名. 职位. 朱子木. 主任. 罗颖. 副主任. 肖骏. 科长. 费正彬. 科员. 陈佳龄. 科员. 通讯地址：中国广东省广州市天河区黄埔大道西601号
+                - emphasis [ref=e292]: 暨南大学
+                - text: 行政楼404.
+              - generic [ref=e294]:
+                - text: 缺少字词： 2024 ‎| 必须包含：
+                - link "2024" [ref=e295] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+%222024%22+%E4%BA%BA%E6%95%B0&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ5t4CegQIKhAB
+          - generic [ref=e299]:
+            - generic [ref=e302]:
+              - link "视频｜全红婵，拟被保送暨南大学 21财经 https://www.21jingji.com › article › 20250224 › herald" [ref=e304] [cursor=pointer]:
+                - /url: https://www.21jingji.com/article/20250224/herald/abb570fc0ded04e07b113223c1a560b4.html
+                - heading "视频｜全红婵，拟被保送暨南大学" [level=3] [ref=e305]
+                - generic [ref=e310]:
+                  - generic [ref=e312]: 21财经
+                  - generic [ref=e314]: https://www.21jingji.com › article › 20250224 › herald
+              - button "关于这条结果的详细信息" [ref=e315] [cursor=pointer]:
+                - img [ref=e318]
+            - generic [ref=e321]:
+              - generic [ref=e322]: 2025年2月24日 —
+              - generic [ref=e323]:
+                - text: 2月24日，
+                - emphasis [ref=e324]: 暨南大学
+                - text: 本科生招生办公室公布了《关于公示
+                - emphasis [ref=e325]: 暨南大学2025
+                - text: 年优秀运动员
+                - emphasis [ref=e326]: 保送
+                - text: 拟
+                - emphasis [ref=e327]: 录取名单
+                - text: 的通知》。 通知显示，“经考生本人申请，我校组织相关学科 ...
+          - generic [ref=e331]:
+            - generic [ref=e334]:
+              - link "2025暨南大学录取规则及投档比例 大学生必备网 https://www.dxsbb.com › news" [ref=e336] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/108158.html
+                - heading "2025暨南大学录取规则及投档比例" [level=3] [ref=e337]
+                - generic [ref=e342]:
+                  - generic [ref=e344]: 大学生必备网
+                  - generic [ref=e346]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e347] [cursor=pointer]:
+                - img [ref=e350]
+            - generic [ref=e353]:
+              - generic [ref=e354]: 2025年6月3日 —
+              - generic [ref=e355]:
+                - text: 本文为大家整理的是
+                - emphasis [ref=e356]: 2025暨南大学录取
+                - text: 规则，主要包含投档比例、专业分配、调剂规则、身体要求等信息，以下是详细内容，供大家参考，如有变动，以学校最新 ...
+          - generic [ref=e360]:
+            - generic [ref=e363]:
+              - link "聯招辦 - 內地與澳門高等教育展2025｜教育及青年發展局 教育及青年發展局 https://portal.dsedj.gov.mo › zh-TW" [ref=e365] [cursor=pointer]:
+                - /url: https://portal.dsedj.gov.mo/webdsejspace/site/ees/zh-TW/home.jsp?con=union-admissions-office
+                - heading "聯招辦 - 內地與澳門高等教育展2025｜教育及青年發展局" [level=3] [ref=e366]
+                - generic [ref=e371]:
+                  - generic [ref=e373]: 教育及青年發展局
+                  - generic [ref=e375]: https://portal.dsedj.gov.mo › zh-TW
+              - generic [ref=e376]:
+                - generic [ref=e377]: ·
+                - link "转为简体网页" [ref=e378] [cursor=pointer]:
+                  - /url: https://translate.google.com/translate?u=https://portal.dsedj.gov.mo/webdsejspace/site/ees/zh-TW/home.jsp?con%3Dunion-admissions-office&hl=zh-CN&sl=zh-TW&tl=zh-CN&client=search
+              - button "关于这条结果的详细信息" [ref=e379] [cursor=pointer]:
+                - img [ref=e382]
+            - generic [ref=e386]:
+              - emphasis [ref=e387]: "2025"
+              - text: 年澳門
+              - emphasis [ref=e388]: 保送生
+              - text: 院校
+              - emphasis [ref=e389]: 錄取人數
+              - text: TOP10 ; 排序. 省份. 院校名稱 ; 1. 廣東省. 中山
+              - emphasis [ref=e390]: 大學
+              - text: ; 2. 湖北省. 武漢
+              - emphasis [ref=e391]: 大學
+              - text: ; 3. 廣東省. 華南師範
+              - emphasis [ref=e392]: 大學
+              - text: ; 4. 福建省. 厦門
+              - emphasis [ref=e393]: 大學
+              - text: .
+          - generic [ref=e397]:
+            - generic [ref=e400]:
+              - link "暨南大學2024年在香港招收保送生的規定 华禹教育网 http://www.huaue.com › bss2023" [ref=e402] [cursor=pointer]:
+                - /url: http://www.huaue.com/bss2023/20231127204233.htm
+                - heading "暨南大學2024年在香港招收保送生的規定" [level=3] [ref=e403]
+                - generic [ref=e408]:
+                  - generic [ref=e410]: 华禹教育网
+                  - generic [ref=e412]: http://www.huaue.com › bss2023
+              - generic [ref=e413]:
+                - generic [ref=e414]: ·
+                - link "转为简体网页" [ref=e415] [cursor=pointer]:
+                  - /url: https://translate.google.com/translate?u=http://www.huaue.com/bss2023/20231127204233.htm&hl=zh-CN&sl=zh-TW&tl=zh-CN&client=search
+              - button "关于这条结果的详细信息" [ref=e416] [cursor=pointer]:
+                - img [ref=e419]
+            - generic [ref=e422]:
+              - generic [ref=e423]: 2023年11月27日 —
+              - text: 學校目前有全日制學生48580人，其中本科生30180人，研究生18400人。來自96個國家和地區的在校華僑、港澳台和外國留學生14621人，其中香港學生7641人。
+          - generic [ref=e427]:
+            - generic [ref=e430]:
+              - link "暨南大学2025年招收华侨学生招生简章 暨南大学招生办公室 https://zsb.jnu.edu.cn › 2024 › page" [ref=e432] [cursor=pointer]:
+                - /url: https://zsb.jnu.edu.cn/2024/1224/c40322a828496/page.htm
+                - heading "暨南大学2025年招收华侨学生招生简章" [level=3] [ref=e433]
+                - generic [ref=e435]:
+                  - img [ref=e439]
+                  - generic [ref=e441]:
+                    - generic [ref=e443]: 暨南大学招生办公室
+                    - generic [ref=e445]: https://zsb.jnu.edu.cn › 2024 › page
+              - button "关于这条结果的详细信息" [ref=e446] [cursor=pointer]:
+                - img [ref=e449]
+            - generic [ref=e452]:
+              - generic [ref=e453]: 2024年12月27日 —
+              - generic [ref=e454]:
+                - text: 学校目前有全日制学生49274人，其中本科生32308人，研究生16966人，在 ... 学生，学校将根据其考试成绩，择优
+                - emphasis [ref=e455]: 录取
+                - text: 。 两校联招实行“3+X”考试形式 ...
+          - generic [ref=e459]:
+            - heading "图片" [level=2] [ref=e463]
+            - generic [ref=e467]:
+              - generic [ref=e471] [cursor=pointer]:
+                - link "【勞校新聞】 勞校173位應屆高三學生提前獲各高校錄取 澳門勞校中學":
+                  - /url: https://www.louhau.edu.mo/www/lhnews/news_count.asp?id=3518
+                - button "【勞校新聞】 勞校173位應屆高三學生提前獲各高校錄取" [ref=e473]:
+                  - img "【勞校新聞】 勞校173位應屆高三學生提前獲各高校錄取" [ref=e475]
+                - generic [ref=e477]:
+                  - generic [ref=e479]: 【勞校新聞】 勞校173位應屆高三學生提前獲各高校錄取
+                  - generic [ref=e480]:
+                    - generic [ref=e487]: 澳門勞校中學
+                    - button "关于这条结果的详细信息" [ref=e490]:
+                      - img [ref=e493]
+              - generic [ref=e498] [cursor=pointer]:
+                - link "暨南大学2024年招收澳门保送生简章_华禹教育网 华禹教育网":
+                  - /url: http://www.huaue.com/bss2023/20231027102836.htm
+                - button "暨南大学2024年招收澳门保送生简章_华禹教育网" [ref=e500]:
+                  - img "暨南大学2024年招收澳门保送生简章_华禹教育网" [ref=e502]
+                - generic [ref=e504]:
+                  - generic [ref=e506]: 暨南大学2024年招收澳门保送生简章_华禹教育网
+                  - generic [ref=e507]:
+                    - generic [ref=e514]: 华禹教育网
+                    - button "关于这条结果的详细信息" [ref=e517]:
+                      - img [ref=e520]
+              - generic [ref=e525] [cursor=pointer]:
+                - link "暨南大學2025年在香港招收保送生的規定-掌上高考 高考志愿填报":
+                  - /url: https://www.gaokao.cn/school/106/newsdetail/68001/216297
+                - button "暨南大學2025年在香港招收保送生的規定-掌上高考" [ref=e527]:
+                  - img "暨南大學2025年在香港招收保送生的規定-掌上高考" [ref=e529]
+                - generic [ref=e531]:
+                  - generic [ref=e533]: 暨南大學2025年在香港招收保送生的規定-掌上高考
+                  - generic [ref=e534]:
+                    - generic [ref=e541]: 高考志愿填报
+                    - button "关于这条结果的详细信息" [ref=e544]:
+                      - img [ref=e547]
+            - button "显示更多图片" [ref=e550] [cursor=pointer]:
+              - separator [ref=e551]
+              - generic [ref=e552]:
+                - generic [ref=e553]: 显示更多图片
+                - img [ref=e555]
+          - generic [ref=e559]:
+            - heading "網頁搜尋結果" [level=2] [ref=e560]
+            - generic [ref=e561]:
+              - generic [ref=e564]:
+                - link "大學辦理特殊選才招生 大學辦理特殊選才招生 https://srecruit.moe.edu.tw" [ref=e566] [cursor=pointer]:
+                  - /url: https://srecruit.moe.edu.tw/
+                  - heading "大學辦理特殊選才招生" [level=3] [ref=e567]
+                  - generic [ref=e569]:
+                    - img [ref=e573]
+                    - generic [ref=e575]:
+                      - generic [ref=e577]: 大學辦理特殊選才招生
+                      - generic [ref=e579]: https://srecruit.moe.edu.tw
+                - generic [ref=e580]:
+                  - generic [ref=e581]: ·
+                  - link "转为简体网页" [ref=e582] [cursor=pointer]:
+                    - /url: https://translate.google.com/translate?u=https://srecruit.moe.edu.tw/&hl=zh-CN&sl=zh-TW&tl=zh-CN&client=search
+                - button "关于这条结果的详细信息" [ref=e583] [cursor=pointer]:
+                  - img [ref=e586]
+              - generic [ref=e590]:
+                - text: 【放榜日期】
+                - emphasis [ref=e591]: "2025"
+                - text: /12/19. 聯絡人：黃小姐. 聯絡電話：04-22840422#451. 簡章網址. 【中、國立】 國立中興
+                - emphasis [ref=e592]: 大學
+                - text: ", 環境工程學系, 特殊選才, 特殊才能境外臺生. 經濟弱勢學生."
+          - generic [ref=e596]:
+            - generic [ref=e599]:
+              - link "立志中學全球資訊網 立志中學 https://w5.lcvs.kh.edu.tw" [ref=e601] [cursor=pointer]:
+                - /url: https://w5.lcvs.kh.edu.tw/
+                - heading "立志中學全球資訊網" [level=3] [ref=e602]
+                - generic [ref=e607]:
+                  - generic [ref=e609]: 立志中學
+                  - generic [ref=e611]: https://w5.lcvs.kh.edu.tw
+              - generic [ref=e612]:
+                - generic [ref=e613]: ·
+                - link "转为简体网页" [ref=e614] [cursor=pointer]:
+                  - /url: https://translate.google.com/translate?u=https://w5.lcvs.kh.edu.tw/&hl=zh-CN&sl=zh-TW&tl=zh-CN&client=search
+              - button "关于这条结果的详细信息" [ref=e615] [cursor=pointer]:
+                - img [ref=e618]
+            - generic [ref=e622]:
+              - text: 恩
+              - emphasis [ref=e623]: 錄取
+              - text: 國立臺南
+              - emphasis [ref=e624]: 大學
+              - text: 資訊工程學系賀資訊301 郭。佑
+              - emphasis [ref=e625]: 錄取
+              - text: 國立聯合
+              - emphasis [ref=e626]: 大學
+              - text: 電機工程學系賀資訊301 郭。祐
+              - emphasis [ref=e627]: 錄取
+              - text: 國立宜蘭
+              - emphasis [ref=e628]: 大學
+              - text: 機械與機電工程學系賀資訊301 陳。瑄
+              - emphasis [ref=e629]: 錄取
+              - text: 國立
+              - emphasis [ref=e630]: 暨南
+              - text: 國際
+              - emphasis [ref=e631]: 大學
+              - text: ...
+        - generic [ref=e633]:
+          - generic [ref=e638]:
+            - heading "用户还搜索了" [level=2] [ref=e640]
+            - generic [ref=e642]:
+              - generic [ref=e643]:
+                - link "暨南大学留学生招生简章2026" [ref=e647] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%99%E5%AD%A6%E7%94%9F%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A02026&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ1QJ6BAguEAE
+                  - generic [ref=e648]:
+                    - generic [ref=e653]: 暨南大学留学生招生简章2026
+                    - img [ref=e657]
+                - link "暨南大学2025年申请审核入学报名指南" [ref=e662] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62025%E5%B9%B4%E7%94%B3%E8%AF%B7%E5%AE%A1%E6%A0%B8%E5%85%A5%E5%AD%A6%E6%8A%A5%E5%90%8D%E6%8C%87%E5%8D%97&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ1QJ6BAhDEAE
+                  - generic [ref=e663]:
+                    - generic [ref=e668]: 暨南大学2025年申请审核入学报名指南
+                    - img [ref=e672]
+                - link "暨南大学华侨招生" [ref=e677] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%8D%8E%E4%BE%A8%E6%8B%9B%E7%94%9F&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ1QJ6BAg-EAE
+                  - generic [ref=e678]:
+                    - generic [ref=e683]: 暨南大学华侨招生
+                    - img [ref=e687]
+                - link "暨南大学华侨大学联合招生系统" [ref=e692] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%8D%8E%E4%BE%A8%E5%A4%A7%E5%AD%A6%E8%81%94%E5%90%88%E6%8B%9B%E7%94%9F%E7%B3%BB%E7%BB%9F&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ1QJ6BAg6EAE
+                  - generic [ref=e693]:
+                    - generic [ref=e698]: 暨南大学华侨大学联合招生系统
+                    - img [ref=e702]
+              - generic [ref=e704]:
+                - link "暨南大学留学生招生简章2025" [ref=e708] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%99%E5%AD%A6%E7%94%9F%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A02025&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ1QJ6BAg5EAE
+                  - generic [ref=e709]:
+                    - generic [ref=e714]: 暨南大学留学生招生简章2025
+                    - img [ref=e718]
+                - link "暨南大学本科招生网" [ref=e723] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%9C%AC%E7%A7%91%E6%8B%9B%E7%94%9F%E7%BD%91&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ1QJ6BAg4EAE
+                  - generic [ref=e724]:
+                    - generic [ref=e729]: 暨南大学本科招生网
+                    - img [ref=e733]
+                - link "暨南大学官网" [ref=e738] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%AE%98%E7%BD%91&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ1QJ6BAgzEAE
+                  - generic [ref=e739]:
+                    - generic [ref=e744]: 暨南大学官网
+                    - img [ref=e748]
+                - link "暨南大学华侨免试" [ref=e753] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%8D%8E%E4%BE%A8%E5%85%8D%E8%AF%95&sa=X&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ1QJ6BAgvEAE
+                  - generic [ref=e754]:
+                    - generic [ref=e759]: 暨南大学华侨免试
+                    - img [ref=e763]
+          - navigation [ref=e765]:
+            - heading "网页导航" [level=1] [ref=e766]
+            - text: "1"
+            - link "Page 2" [ref=e769] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sca_esv=164079556523993e&ei=EW7uaZfAOfLvruEPwrFZ&start=10&sa=N&sstk=Af77f_ep-GUnxiDZ_cwBOpMZMc1K95bCfPC94XU8MpjpwXgs8g5D9MTCHMwO-cVllGhqgGl9u6Upufvl-CcchajNzmxiZWlpsVZ8ZQ&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ8tMDegQITRAE
+              - text: "2"
+            - link "Page 3" [ref=e771] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sca_esv=164079556523993e&ei=EW7uaZfAOfLvruEPwrFZ&start=20&sa=N&sstk=Af77f_ep-GUnxiDZ_cwBOpMZMc1K95bCfPC94XU8MpjpwXgs8g5D9MTCHMwO-cVllGhqgGl9u6Upufvl-CcchajNzmxiZWlpsVZ8ZQ&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ8tMDegQITRAG
+              - text: "3"
+            - link "Page 4" [ref=e773] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sca_esv=164079556523993e&ei=EW7uaZfAOfLvruEPwrFZ&start=30&sa=N&sstk=Af77f_ep-GUnxiDZ_cwBOpMZMc1K95bCfPC94XU8MpjpwXgs8g5D9MTCHMwO-cVllGhqgGl9u6Upufvl-CcchajNzmxiZWlpsVZ8ZQ&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ8tMDegQITRAI
+              - text: "4"
+            - link "Page 5" [ref=e775] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sca_esv=164079556523993e&ei=EW7uaZfAOfLvruEPwrFZ&start=40&sa=N&sstk=Af77f_ep-GUnxiDZ_cwBOpMZMc1K95bCfPC94XU8MpjpwXgs8g5D9MTCHMwO-cVllGhqgGl9u6Upufvl-CcchajNzmxiZWlpsVZ8ZQ&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ8tMDegQITRAK
+              - text: "5"
+            - link "Page 6" [ref=e777] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sca_esv=164079556523993e&ei=EW7uaZfAOfLvruEPwrFZ&start=50&sa=N&sstk=Af77f_ep-GUnxiDZ_cwBOpMZMc1K95bCfPC94XU8MpjpwXgs8g5D9MTCHMwO-cVllGhqgGl9u6Upufvl-CcchajNzmxiZWlpsVZ8ZQ&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ8tMDegQITRAM
+              - text: "6"
+            - link "Page 7" [ref=e779] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sca_esv=164079556523993e&ei=EW7uaZfAOfLvruEPwrFZ&start=60&sa=N&sstk=Af77f_ep-GUnxiDZ_cwBOpMZMc1K95bCfPC94XU8MpjpwXgs8g5D9MTCHMwO-cVllGhqgGl9u6Upufvl-CcchajNzmxiZWlpsVZ8ZQ&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ8tMDegQITRAO
+              - text: "7"
+            - link "Page 8" [ref=e781] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sca_esv=164079556523993e&ei=EW7uaZfAOfLvruEPwrFZ&start=70&sa=N&sstk=Af77f_ep-GUnxiDZ_cwBOpMZMc1K95bCfPC94XU8MpjpwXgs8g5D9MTCHMwO-cVllGhqgGl9u6Upufvl-CcchajNzmxiZWlpsVZ8ZQ&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ8tMDegQITRAQ
+              - text: "8"
+            - heading "下一页" [level=2] [ref=e783]:
+              - link "下一页" [ref=e784] [cursor=pointer]:
+                - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2025+2024+%E4%BA%BA%E6%95%B0&sca_esv=164079556523993e&ei=EW7uaZfAOfLvruEPwrFZ&start=10&sa=N&sstk=Af77f_ep-GUnxiDZ_cwBOpMZMc1K95bCfPC94XU8MpjpwXgs8g5D9MTCHMwO-cVllGhqgGl9u6Upufvl-CcchajNzmxiZWlpsVZ8ZQ&ved=2ahUKEwjXjKW4poyUAxXytysGHcJYFgAQ8NMDegQITRAS
+                - generic [ref=e786]: 下一页
+        - navigation
+    - contentinfo [ref=e787]:
+      - heading "页脚链接" [level=1] [ref=e788]
+      - generic [ref=e792]:
+        - generic [ref=e796]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e798] [cursor=pointer]:
+            - generic [ref=e799]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e801]:
+              - text: "-"
+              - generic [ref=e802]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e804] [cursor=pointer]: 更新位置信息
+        - generic [ref=e807]:
+          - link "帮助" [ref=e808] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e809] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e810] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e811] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

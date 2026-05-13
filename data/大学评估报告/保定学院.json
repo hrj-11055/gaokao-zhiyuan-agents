@@ -1,0 +1,40 @@
+{
+  "university_name": "保定学院",
+  "short_name": "BDU",
+  "location": {
+    "province": "河北省",
+    "city": "保定市",
+    "district": "莲池区"
+  },
+  "academic_profile": {
+    "key_majors": [
+      "小学教育",
+      "汉语言文学",
+      "软件工程"
+    ],
+    "national_first_class_points": 1,
+    "provincial_first_class_points": 11
+  },
+  "admission_stats": {
+    "hebei_history_rank_2024": 24560,
+    "hebei_physics_rank_2024": 112450
+  },
+  "employment_profile": {
+    "primary_industry": "Education",
+    "further_study_rate": "14.2%",
+    "top_employer_region": "Hebei Province"
+  },
+  "brand_assets": {
+    "core_spirit": "Western Teaching Spirit",
+    "notable_alumni": "Shi Changxu"
+  },
+  "evaluation_scores": {
+    "academic": 2.0,
+    "value_realization": 2.8,
+    "location_potential": 3.0,
+    "globalization": 1.5,
+    "student_empowerment": 2.2,
+    "brand_identity": 4.0,
+    "weighted_total": 2.55
+  }
+}

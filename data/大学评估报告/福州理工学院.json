@@ -1,0 +1,43 @@
+{
+  "university_name": "福州理工学院",
+  "short_name": "福理 / FIT",
+  "established_year": 2004,
+  "type": "民办应用型本科",
+  "location": {
+    "province": "福建",
+    "city": "福州",
+    "campus": [
+      "连江贵安校区"
+    ]
+  },
+  "academic": {
+    "key_disciplines": [
+      "网络工程",
+      "软件工程",
+      "物联网工程",
+      "物流管理"
+    ],
+    "academician_count": 0,
+    "provincial_first_class_majors": 4
+  },
+  "employment": {
+    "overall_employment_rate": "95.8%",
+    "further_study_rate": "1.98%",
+    "top_employer": "网龙网络公司",
+    "average_starting_salary": 5000
+  },
+  "campus_life": {
+    "management_style": "严格/企业化",
+    "dormitory_standard": "4人间/上床下桌",
+    "student_satisfaction_index": 2.2
+  },
+  "scores": {
+    "academic_capital": 1.8,
+    "employment_value": 2.4,
+    "location_advantage": 3.2,
+    "globalization": 1.5,
+    "student_freedom": 1.8,
+    "brand_asset": 2.6,
+    "comprehensive_score": 2.24
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "university_name": "国际关系学院",
+  "short_name": "UIR / 国关",
+  "tags": [
+    "部属高校",
+    "小规模试点",
+    "国家安全",
+    "政法类"
+  ],
+  "academic": {
+    "key_disciplines": {
+      "B_plus": [
+        "政治学"
+      ],
+      "B": [
+        "外国语言文学"
+      ]
+    },
+    "national_platforms": [
+      "国家安全法治研究基地",
+      "国际战略与安全研究中心"
+    ],
+    "special_status": "财政部 6 所小规模试点高校之一"
+  },
+  "admission": {
+    "difficulty_level": "极高",
+    "avg_percentile_arts": "前 1.5%",
+    "avg_percentile_science": "前 4.0%",
+    "special_requirements": [
+      "政审",
+      "面谈",
+      "身体条件"
+    ]
+  },
+  "employment": {
+    "domestic_further_study_rate": "33.4%",
+    "overseas_further_study_rate": "10.9%",
+    "top_employers": [
+      "国家机关",
+      "外交部",
+      "安全系统",
+      "新华社",
+      "华为"
+    ],
+    "salary_rank_2021": 12
+  },
+  "location": {
+    "city": "北京",
+    "district": "海淀区",
+    "neighborhood": "颐和园 / 坡上村"
+  },
+  "scores": {
+    "academic_capital": 3.8,
+    "graduate_value": 4.8,
+    "location_advantage": 4.9,
+    "globalization": 3.5,
+    "student_freedom": 2.8,
+    "brand_asset": 4.5,
+    "overall_weighted_score": 4.26
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "university_info": {
+    "name": "华南师范大学",
+    "abbreviation": "SCNU",
+    "location": [
+      "广州石牌",
+      "广州大学城",
+      "佛山南海",
+      "汕尾"
+    ],
+    "type": "211工程, 双一流建设高校",
+    "tags": [
+      "师范类",
+      "心理学强校",
+      "大湾区核心"
+    ]
+  },
+  "academic_strength": {
+    "a_plus": [
+      "心理学"
+    ],
+    "a_minus": [
+      "教育学",
+      "体育学",
+      "马克思主义理论"
+    ],
+    "world_class_discipline": [
+      "物理学"
+    ],
+    "academician_count": 2
+  },
+  "admission_data_2024": {
+    "guangdong_history_rank": 7615,
+    "guangdong_physics_rank": 37529,
+    "competition_level": "High"
+  },
+  "employment_stats": {
+    "further_study_rate": "30.57%",
+    "teacher_system_ratio": "45.2%",
+    "starting_salary_median": 6800,
+    "top_employers": [
+      "广东省各市教育局",
+      "华为",
+      "腾讯"
+    ]
+  },
+  "evaluation_scores": {
+    "academic": 4.2,
+    "employment": 4.5,
+    "location": 4.7,
+    "globalization": 3.8,
+    "freedom": 3.5,
+    "brand": 4.3,
+    "overall_weighted_score": 4.28
+  }
+}

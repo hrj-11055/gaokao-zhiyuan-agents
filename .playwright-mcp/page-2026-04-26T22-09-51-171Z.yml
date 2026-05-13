@@ -1,0 +1,647 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 医疗保险 健康管理 市场规模 2025 中国 行业报告
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9+%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+%E4%B8%AD%E5%9B%BD+%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2210931362375923978242%22%2C%22ori_lid%22%3A%2210931362375923978242%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=97b4002a0004d002&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9+%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+%E4%B8%AD%E5%9B%BD+%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9+%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+%E4%B8%AD%E5%9B%BD+%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=97b4002a0004d002&ie=utf-8&wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9+%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+%E4%B8%AD%E5%9B%BD+%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_spt=7&rsv_bp=1&f=8&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9+%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+%E4%B8%AD%E5%9B%BD+%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9+%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+%E4%B8%AD%E5%9B%BD+%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9+%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+%E4%B8%AD%E5%9B%BD+%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9+%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+%E4%B8%AD%E5%9B%BD+%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9+%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2025+%E4%B8%AD%E5%9B%BD+%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  2024健康产业趋势  2020年中国大健康产业市场规模  医疗健康行业现状分析  医疗大健康产业  医疗保健行业前景  2024健康类的行业    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e69]:
+              - cell "相关搜索  2024健康产业趋势  2020年中国大健康产业市场规模  医疗健康行业现状分析  医疗大健康产业  医疗保健行业前景  2024健康类的行业    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 2024健康产业趋势" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=2024%E5%81%A5%E5%BA%B7%E4%BA%A7%E4%B8%9A%E8%B6%8B%E5%8A%BF&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=b069iU3RSp0zh%2F6nbM%2B1v7j7AOi8HRVnoqOSTFd4SOruDnba1Vyv9PRuj9E&rfqid=97b4002a0004d002&rsv_dl=0_prs_28616_1&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsf=101636803
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 2024健康产业趋势
+                      - link " 2020年中国大健康产业市场规模" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=2020%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%81%A5%E5%BA%B7%E4%BA%A7%E4%B8%9A%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rfqid=97b4002a0004d002&rsv_dl=0_prs_28616_2&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 2020年中国大健康产业市场规模
+                      - link " 医疗健康行业现状分析" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%E8%A1%8C%E4%B8%9A%E7%8E%B0%E7%8A%B6%E5%88%86%E6%9E%90&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rfqid=97b4002a0004d002&rsv_dl=0_prs_28616_3&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsf=101633403
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 医疗健康行业现状分析
+                      - link " 医疗大健康产业" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E7%96%97%E5%A4%A7%E5%81%A5%E5%BA%B7%E4%BA%A7%E4%B8%9A&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rfqid=97b4002a0004d002&rsv_dl=0_prs_28616_4&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsf=101633403
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 医疗大健康产业
+                      - link " 医疗保健行业前景" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rfqid=97b4002a0004d002&rsv_dl=0_prs_28616_5&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsf=101636803
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 医疗保健行业前景
+                      - link " 2024健康类的行业" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=2024%E5%81%A5%E5%BA%B7%E7%B1%BB%E7%9A%84%E8%A1%8C%E4%B8%9A&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rfqid=97b4002a0004d002&rsv_dl=0_prs_28616_6&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsf=101636803
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 2024健康类的行业
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "“早上6点半 杭州东站全是孩子”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E6%97%A9%E4%B8%8A6%E7%82%B9%E5%8D%8A%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%E5%85%A8%E6%98%AF%E5%AD%A9%E5%AD%90%E2%80%9D&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "高市政府越过“最后一根红线”" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=c3e0ReJPRnvzv7%2Bf1BA6R%2F%2FxtTN%2B0x9pBuEWfFQ0Oqhue2b%2Bcb6I35drq00&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "女性多和好友聚会能“续命”" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=2c30zQgFghcglECFhzT71yUwUf9Bkrz4mqD7yC2l4bRDmxjbtqSypTx43ec&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=2c30zQgFghcglECFhzT71yUwUf9Bkrz4mqD7yC2l4bRDmxjbtqSypTx43ec&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=2c30zQgFghcglECFhzT71yUwUf9Bkrz4mqD7yC2l4bRDmxjbtqSypTx43ec&rqid=97b4002a0004d002&rsf=e400e82f95fad09fb1a1eda98e69be95_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e208]:
+            - generic [ref=e210]:
+              - link "官方" [ref=e212] [cursor=pointer]:
+                - /url: https://aiqicha.baidu.com/feedback/official?from=baidu&type=gw
+                - generic [ref=e213]: 官方
+              - heading "2025年医疗保障事业发展统计快报__中国政府网" [level=3] [ref=e214]:
+                - link "2025年医疗保障事业发展统计快报__中国政府网" [ref=e215] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=YLcLHxg_lb7LuX4wnviCkbozcpZtL-0I6zJA_bIe5AZitbCAmWWkZvXh0OlDLnljH5gZ_ApF1Uz6_FdOIFaF1_
+                  - paragraph [ref=e218]:
+                    - generic [ref=e221]:
+                      - emphasis [ref=e222]: "2025"
+                      - text: 年
+                      - emphasis [ref=e223]: 医疗
+                      - text: 保障事业发展统计快报__
+                      - emphasis [ref=e224]: 中国
+                      - text: 政府网
+            - generic [ref=e229]:
+              - text: 2026年3月16日
+              - generic [ref=e230]:
+                - emphasis [ref=e231]: "2025"
+                - text: 年,国家
+                - emphasis [ref=e232]: 医保
+                - text: 信息平台累计归集各地定点医药机构销售端药品耗材追溯码信息1001.82亿条,接入102.73万家定点医药机构;归集生产流通端追溯信息443.07亿条,已有超过3572家药耗生产、流通企业对接医保药品耗材追溯信息采集应用平台上传及下载本企业产品的追溯信息;依托国家医保服务平台APP及小程序上线“医保药品耗材追溯信息查询”
+            - generic [ref=e234]:
+              - link "头像 中国政府网" [ref=e237] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=YLcLHxg_lb7LuX4wnviCkbozcpZtL-0I6zJA_bIe5AZitbCAmWWkZvXh0OlDLnljH5gZ_ApF1Uz6_FdOIFaF1_
+                - img "头像" [ref=e240]
+                - generic [ref=e241]: 中国政府网
+                - generic [ref=e243]: 
+              - generic [ref=e245]: 党政机关
+          - generic [ref=e247]:
+            - generic [ref=e249]:
+              - heading "中国医疗行业报告(2024-2025)—— 健康中国战略下的高质量发展与创新突... - 百度文库" [level=3] [ref=e250]:
+                - link "中国医疗行业报告(2024-2025)—— 健康中国战略下的高质量发展与创新突... - 百度文库" [ref=e251] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=qyUda8XEiDV8bNxBE_DPJiNNP8qXq-8op3aAPnJ0Mce2trB02nwEUnHi7LjOmmBc-4PoWzFqvc2iUvr7rMuHz3sRdm_QgjsNTYRU_O4S_aLnp_2pBJZxNWM0cAeJPtd2R69Mnossd3zYZPXmT8jkTVhUK2SZMgqZj3sypr7xCiKKCbhGz5-V_FJ7zyqeMb6unVGfa9Yfhr_oV6zfHEl_Wa91ZqLxnPUbZ8fqtIuikj5ATW83dAPSaj811X4WtzMyTdhFVBVfZBENQuYcKtHP-zT9xGzRgZepDm4ywYGud2G
+                  - generic [ref=e252]:
+                    - emphasis [ref=e253]: 中国医疗行业报告
+                    - text: (2024-
+                    - emphasis [ref=e254]: "2025"
+                    - text: )——
+                    - emphasis [ref=e255]: 健康中国
+                    - text: 战略下的高质量发展与创新突... - 百度文库
+              - generic [ref=e256]:
+                - generic [ref=e257]:
+                  - generic [ref=e260]:
+                    - generic [ref=e262]: 
+                    - generic [ref=e264]: 
+                    - generic [ref=e266]: 
+                    - generic [ref=e268]: 
+                    - generic [ref=e269]:
+                      - generic [ref=e270]: 
+                      - generic [ref=e272]: 
+                  - generic [ref=e273]: 7页
+                  - generic [ref=e274]: 56次阅读
+                - paragraph [ref=e277]:
+                  - generic [ref=e278]:
+                    - text: 2023年，
+                    - emphasis [ref=e279]: 中国医疗行业市场规模
+                    - text: 达11.8万亿元，同比增长9.6%，较2019年实现50%以上的增长；随着分级诊疗体系完善、创新药械加速落地及健康管理市场扩容，预计2024年市场规模将突破13万亿元，2025年达到14.5万亿元，保持年均8%以上的稳健增长态势。当前行业既面临“优质医疗资源供需失衡、创新转化效率不足”的挑战，也迎来
+                - generic [ref=e280]:
+                  - heading "2025年中国万能险、健康险、商业养老险、产险、车险及互联网保险行业市..." [level=3] [ref=e283]:
+                    - link "2025年中国万能险、健康险、商业养老险、产险、车险及互联网保险行业市..." [ref=e284] [cursor=pointer]:
+                      - /url: http://www.baidu.com/link?url=qyUda8XEiDV8bNxBE_DPJiNNP8qXq-8op3aAPnJ0McfXtOJuc1QR6kzDphGsk3MgF7svKJAW7-K1IlZSHg3JXbbccD8HiDjKl4VIScXBl6l7PvtmBET61xDfWkygUdetnv3r9cJyAZkKivN5gGOJ9X5pdA-dUji-edRH89z78e-T1hfiEHOdPfcdqmekFgk9gCH-bPo4fE-NVJl2M_u3PWzwwZh66jK1cyUfo8F-x2ywvAEfg5kjmf9e2L7VHjYAIYPx2NwUCWJpzmCDmECH-3IHhSk4av93oQPlWkBV9Mu
+                      - paragraph [ref=e287]:
+                        - generic [ref=e289]:
+                          - emphasis [ref=e291]: "2025"
+                          - text: 年
+                          - emphasis [ref=e292]: 中国
+                          - text: 万能险、
+                          - emphasis [ref=e293]: 健康
+                          - text: 险、商业养老险、产险、车险及互联网
+                          - emphasis [ref=e294]: 保险行业
+                          - text: 市...
+                  - generic [ref=e295]:
+                    - generic [ref=e298]:
+                      - generic [ref=e300]: 
+                      - generic [ref=e302]: 
+                      - generic [ref=e304]: 
+                      - generic [ref=e306]: 
+                      - generic [ref=e308]: 
+                    - generic [ref=e309]: 55页
+                    - generic [ref=e310]: 1次阅读
+                  - paragraph [ref=e313]:
+                    - generic [ref=e314]:
+                      - emphasis [ref=e315]: "2025"
+                      - text: 年
+                      - emphasis [ref=e316]: 中国
+                      - text: 万能险、
+                      - emphasis [ref=e317]: 健康
+                      - text: 险、 商业养老险、产险、车险及互联 网
+                      - emphasis [ref=e318]: 保险行业市场规模
+                      - text: 及投资前景 预测分析
+                      - emphasis [ref=e319]: 报告
+                      - text: 北京博研智尚信息咨询有限公司2025 年中国万能险、健康险、商业养老险、产险、车险及互联网保险行业市场规模及投 博研咨询&市场调研在线网 www.cninfo360.com 第 2 页/共55页 北京博研智尚信息咨询有限公司...
+                - generic [ref=e320]:
+                  - heading "2026年中国医保医疗行业发展现状与市场占有率及排名研究分析报告" [level=3] [ref=e323]:
+                    - link "2026年中国医保医疗行业发展现状与市场占有率及排名研究分析报告" [ref=e324] [cursor=pointer]:
+                      - /url: http://www.baidu.com/link?url=qyUda8XEiDV8bNxBE_DPJiNNP8qXq-8op3aAPnJ0McejjM9BrCkI4W0LUFhHcwzk_Ykbypw07pQ-dgjJnjFNF4AdlDAnfrvFxS7j9JJSt7jN2N2kI7QIpX8Q0HQqvh8yYPBqSp7NOvNCpILna3eZm6zyTFmYRR4qRvFk5DHQoLNC-KUyJ5MTAZMEXNA0_tKceuzORWGfA_GirKEyMemzU2JIFv5yZUNQeGE744tXOmP8DXs4e1sHid1yquu6nHgoASKSpYEPMYyEdm7HjRRJ_S3o6gFa-YhZf16LCgYCQeu
+                      - paragraph [ref=e327]:
+                        - generic [ref=e329]:
+                          - text: 2026年
+                          - emphasis [ref=e331]: 中国医保医疗行业
+                          - text: 发展现状与
+                          - emphasis [ref=e332]: 市场
+                          - text: 占有率及排名研究分析
+                          - emphasis [ref=e333]: 报告
+                  - generic [ref=e334]:
+                    - generic [ref=e337]:
+                      - generic [ref=e339]: 
+                      - generic [ref=e341]: 
+                      - generic [ref=e343]: 
+                      - generic [ref=e344]:
+                        - generic [ref=e345]: 
+                        - generic [ref=e347]: 
+                      - generic [ref=e349]: 
+                    - generic [ref=e350]: 63页
+                    - generic [ref=e351]: 0次阅读
+                  - paragraph [ref=e354]:
+                    - generic [ref=e355]:
+                      - text: 2026 年
+                      - emphasis [ref=e356]: 中国医保医疗行业
+                      - text: 发展 现状与
+                      - emphasis [ref=e357]: 市场
+                      - text: 占有率及排名研究分 析
+                      - emphasis [ref=e358]: 报告
+                      - text: 博研咨询&市场调研在线网 北京博研智尚信息咨询有限公司2026 年中国医保医疗行业发展现状与市场占有率及排名研究分析报告 2026 年中国医保医疗行业发展现状与市场占有率及排 名研究分析报告 正文目录 摘要 ......
+              - link "查看更多同站结果 " [ref=e359] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Xkb6IbvoRnRH-zr_fHiLqUY60DGNRuHAz4aZZnDZBHno2ECQosNuBHyz3j1fO5XbeSoNaFyohWl6lIegWN24s0zy2Cd2De4fGr6DiHw1eVd2r4H_ZcmC0Uv_jnyfhPLswiMYRAFYgyKMZlcCT9_DCY2Jt8eMT1zJ4vXiXm3H_3ssjwJhQB_E-QejgvCG2MdKjqLlHJcKj_uweELTApTX_a
+                - generic [ref=e360]:
+                  - generic [ref=e361]: 查看更多同站结果
+                  - generic [ref=e362]: 
+            - generic [ref=e363]:
+              - link "百度文库" [ref=e366] [cursor=pointer]:
+                - /url: http://wenku.baidu.com/search?word=医疗保险 健康管理 市场规模 2025 中国 行业报告&fr=aladdin266&ind=0&hitsid=0&aigcsid=0&qtype=0
+                - generic [ref=e369]: 百度文库
+              - img [ref=e374] [cursor=pointer]
+              - link [ref=e376] [cursor=pointer]:
+                - /url: http://open.baidu.com
+          - generic [ref=e381]:
+            - heading "国家医疗保障局 统计数据 2025年医疗保障事业发展统计快报" [level=3] [ref=e384]:
+              - link "国家医疗保障局 统计数据 2025年医疗保障事业发展统计快报" [ref=e385] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=9sQtmDGdCy-YbzeaHYhQQPrjInOcbF9UUnqsr1BZ9WOpbb16zNZyNeMdbaWdjLEhQhEPGOTbUs-iP5m0I27WOq
+                - paragraph [ref=e388]:
+                  - generic [ref=e391]:
+                    - text: 国家
+                    - emphasis [ref=e392]: 医疗
+                    - text: 保障局 统计数据
+                    - emphasis [ref=e393]: "2025"
+                    - text: 年医疗保障事业发展统计快报
+            - generic [ref=e398]:
+              - text: 2026年3月16日
+              - generic [ref=e399]:
+                - emphasis [ref=e400]: "2025"
+                - text: 年,国家
+                - emphasis [ref=e401]: 医保
+                - text: 信息平台累计归集各地定点医药机构销售端药品耗材追溯码信息1001.82亿条,接入102.73万家定点医药机构;归集生产流通端追溯信息443.07亿条,已有超过3572家药耗生产、流通企业对接医保药品耗材追溯信息采集应用平台上传及下载本企业产品的追溯信息;依托国家医保服务平台APP及小程序上线“医保药品耗材追溯信息查询”功...
+            - link "头像 国家医疗保障局" [ref=e406] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=9sQtmDGdCy-YbzeaHYhQQPrjInOcbF9UUnqsr1BZ9WOpbb16zNZyNeMdbaWdjLEhQhEPGOTbUs-iP5m0I27WOq
+              - img "头像" [ref=e409]
+              - generic [ref=e410]: 国家医疗保障局
+              - generic [ref=e412]: 
+          - generic [ref=e416]:
+            - heading "2025中国医疗健康保险行业市场潜力深度解析及高端医疗保险与健康管..." [level=3] [ref=e419]:
+              - link "2025中国医疗健康保险行业市场潜力深度解析及高端医疗保险与健康管..." [ref=e420] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Xkb6IbvoRnRH-zr_fHiLqTzgs96SD8R1MgamCc6BW0zLu58hOzrgWfx4Ah-OTUzlNyBV3X9i_sNJzUzzW2IXwq
+                - paragraph [ref=e423]:
+                  - generic [ref=e426]:
+                    - emphasis [ref=e427]: 2025中国
+                    - text: 医疗
+                    - emphasis [ref=e428]: 健康保险行业市场
+                    - text: 潜力深度解析及高端
+                    - emphasis [ref=e429]: 医疗保险
+                    - text: 与健康管...
+            - generic [ref=e434]:
+              - text: 2026年2月7日
+              - generic [ref=e435]:
+                - emphasis [ref=e436]: 2025中国
+                - text: 医疗
+                - emphasis [ref=e437]: 健康保险行业
+                - text: 市场潜力深度解析及高端
+                - emphasis [ref=e438]: 医疗保险
+                - text: 与
+                - emphasis [ref=e439]: 健康管理
+                - text: 服务创新分析
+                - emphasis [ref=e440]: 报告
+                - text: 目录 一、行业现状与趋势 3 1. 市场规模与增长 3 年中国医疗
+                - emphasis [ref=e441]: 健康保险市场规模
+                - text: "预测 3 增长驱动因素分析:人口老龄化、医疗需求增加、政策支持 4 行业结构变化:传统保险与新型健康险并行发展 5 2. 竞争格局 6 主要竞争者分析:"
+                - emphasis [ref=e442]: 国内
+                - text: 外...
+            - link "头像 豆丁网" [ref=e447] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Xkb6IbvoRnRH-zr_fHiLqTzgs96SD8R1MgamCc6BW0zLu58hOzrgWfx4Ah-OTUzlNyBV3X9i_sNJzUzzW2IXwq
+              - img "头像" [ref=e450]
+              - generic [ref=e451]: 豆丁网
+              - generic [ref=e453]: 
+          - generic [ref=e457]:
+            - heading "2025中国医疗健康保险行业市场规模供需现状发展趋势分析研究报告" [level=3] [ref=e460]:
+              - link "2025中国医疗健康保险行业市场规模供需现状发展趋势分析研究报告" [ref=e461] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Xkb6IbvoRnRH-zr_fHiLqTzgs96SD8R1MgamCc6BW0zLu58hOzrgWfx4Ah-OTUzl1DmNW5dOGca20A75ZS5Jg_
+                - paragraph [ref=e464]:
+                  - generic [ref=e467]:
+                    - emphasis [ref=e468]: 2025中国
+                    - text: 医疗
+                    - emphasis [ref=e469]: 健康保险行业市场规模
+                    - text: 供需现状发展趋势分析研究
+                    - emphasis [ref=e470]: 报告
+            - generic [ref=e475]:
+              - text: 2026年2月7日
+              - generic [ref=e476]:
+                - emphasis [ref=e477]: "2025"
+                - text: 年
+                - emphasis [ref=e478]: 中国
+                - text: 医疗
+                - emphasis [ref=e479]: 健康保险行业市场规模
+                - text: 供需现状发展趋势分析研究
+                - emphasis [ref=e480]: 报告
+                - text: 揭示了该领域在未来的潜力与挑战。市场规模方面,随着人口老龄化加剧、健康意识提升以及医疗费用的持续增长,中国医疗健康保险市场展现出强劲的增长动力。据预测,到2025年,市场规模有望达到数万亿元人民币,年复合增长率保持在10%以上。供需现状分析显示,供给端...
+            - link "头像 豆丁网" [ref=e485] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Xkb6IbvoRnRH-zr_fHiLqTzgs96SD8R1MgamCc6BW0zLu58hOzrgWfx4Ah-OTUzl1DmNW5dOGca20A75ZS5Jg_
+              - img "头像" [ref=e488]
+              - generic [ref=e489]: 豆丁网
+              - generic [ref=e491]: 
+          - generic [ref=e493]:
+            - generic [ref=e494]: 大家还在搜
+            - generic [ref=e495]:
+              - link "2024健康产业趋势" [ref=e496] [cursor=pointer]:
+                - /url: /s?wd=2024%E5%81%A5%E5%BA%B7%E4%BA%A7%E4%B8%9A%E8%B6%8B%E5%8A%BF&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=49a406Mbz8HcxV2DeK0Dlv8TzsdAbMasqKiUOwsmOPpeDUj7i7ggksvrl08&rsf=101636803&rsv_dl=0_prs_28608_1
+                - generic [ref=e498]: 2024健康产业趋势
+              - link "2020年中国大健康产业市场规模" [ref=e499] [cursor=pointer]:
+                - /url: /s?wd=2020%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%81%A5%E5%BA%B7%E4%BA%A7%E4%B8%9A%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=49a406Mbz8HcxV2DeK0Dlv8TzsdAbMasqKiUOwsmOPpeDUj7i7ggksvrl08&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e501]: 2020年中国大健康产业市场规模
+              - link "医疗健康行业现状分析" [ref=e502] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%E8%A1%8C%E4%B8%9A%E7%8E%B0%E7%8A%B6%E5%88%86%E6%9E%90&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=49a406Mbz8HcxV2DeK0Dlv8TzsdAbMasqKiUOwsmOPpeDUj7i7ggksvrl08&rsf=101633403&rsv_dl=0_prs_28608_3
+                - generic [ref=e504]: 医疗健康行业现状分析
+              - link "医疗大健康产业" [ref=e505] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E7%96%97%E5%A4%A7%E5%81%A5%E5%BA%B7%E4%BA%A7%E4%B8%9A&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=49a406Mbz8HcxV2DeK0Dlv8TzsdAbMasqKiUOwsmOPpeDUj7i7ggksvrl08&rsf=101633403&rsv_dl=0_prs_28608_4
+                - generic [ref=e507]: 医疗大健康产业
+              - link "医疗保健行业前景" [ref=e508] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=49a406Mbz8HcxV2DeK0Dlv8TzsdAbMasqKiUOwsmOPpeDUj7i7ggksvrl08&rsf=101636803&rsv_dl=0_prs_28608_5
+                - generic [ref=e510]: 医疗保健行业前景
+              - link "2024健康类的行业" [ref=e511] [cursor=pointer]:
+                - /url: /s?wd=2024%E5%81%A5%E5%BA%B7%E7%B1%BB%E7%9A%84%E8%A1%8C%E4%B8%9A&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=897dkjVulcYtfa1DUvR9cJztcVf%2B38de%2F3qge9qpRWRdsjxGuwaimMc8wGE&rsf=101636803&rsv_dl=0_prs_28608_6
+                - generic [ref=e513]: 2024健康类的行业
+              - link "医疗信息化市场现状" [ref=e514] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%A1%E6%81%AF%E5%8C%96%E5%B8%82%E5%9C%BA%E7%8E%B0%E7%8A%B6&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=897dkjVulcYtfa1DUvR9cJztcVf%2B38de%2F3qge9qpRWRdsjxGuwaimMc8wGE&rsf=101633403&rsv_dl=0_prs_28608_7
+                - generic [ref=e516]: 医疗信息化市场现状
+              - link "医疗保健行业发展现状" [ref=e517] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E8%A1%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6&usm=2&ie=utf-8&rsv_pq=97b4002a0004d002&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&rsv_t=897dkjVulcYtfa1DUvR9cJztcVf%2B38de%2F3qge9qpRWRdsjxGuwaimMc8wGE&rsf=101633403&rsv_dl=0_prs_28608_8
+                - generic [ref=e519]: 医疗保健行业发展现状
+          - generic [ref=e523]:
+            - heading "趋势研判!2025年中国健康管理行业全景分析:市场规模将达到13225.5..." [level=3] [ref=e526]:
+              - link "趋势研判!2025年中国健康管理行业全景分析:市场规模将达到13225.5..." [ref=e527] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=oA2hmAauvGDyY5kylYRSgWQnCgZKtWqBTdfnyBjuRxtzaj-xtlj2ytZkhuTFVapAuvDXKPPxFuzLzDsqxnXfpa
+                - paragraph [ref=e530]:
+                  - generic [ref=e533]:
+                    - text: 趋势研判!
+                    - emphasis [ref=e534]: "2025"
+                    - text: 年
+                    - emphasis [ref=e535]: 中国健康管理行业
+                    - text: "全景分析:"
+                    - emphasis [ref=e536]: 市场规模
+                    - text: 将达到13225.5...
+            - generic [ref=e541]:
+              - text: 2025年7月3日
+              - generic [ref=e542]:
+                - text: 2024年我国
+                - emphasis [ref=e543]: 健康管理市场规模
+                - text: 增长至12555.2亿元,其中,体检市场规模2584亿元,
+                - emphasis [ref=e544]: 健康保险
+                - text: 报保费收入规模9351.2亿元,其他业务规模620亿元;预计
+                - emphasis [ref=e545]: "2025"
+                - text: 年我国健康管理市场规模约13225.5亿元,其中,体检规模约2827亿元,健康保险报保费收入规模约9678.5亿元,其他业务约720亿元。随着我国社会主要矛盾的转变,人民对于美好生活的向往不断增强,...
+            - generic [ref=e546]:
+              - link [ref=e548] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=oA2hmAauvGDyY5kylYRSgWQnCgZKtWqBTdfnyBjuRxtzaj-xtlj2ytZkhuTFVapAuvDXKPPxFuzLzDsqxnXfpa
+              - link [ref=e552] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=oA2hmAauvGDyY5kylYRSgWQnCgZKtWqBTdfnyBjuRxtzaj-xtlj2ytZkhuTFVapAuvDXKPPxFuzLzDsqxnXfpa
+              - link [ref=e556] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=oA2hmAauvGDyY5kylYRSgWQnCgZKtWqBTdfnyBjuRxtzaj-xtlj2ytZkhuTFVapAuvDXKPPxFuzLzDsqxnXfpa
+              - link "8" [ref=e560] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=oA2hmAauvGDyY5kylYRSgWQnCgZKtWqBTdfnyBjuRxtzaj-xtlj2ytZkhuTFVapAuvDXKPPxFuzLzDsqxnXfpa
+                - generic [ref=e563]:
+                  - generic [ref=e564]: 
+                  - text: "8"
+            - link "智研咨询" [ref=e569] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=oA2hmAauvGDyY5kylYRSgWQnCgZKtWqBTdfnyBjuRxtzaj-xtlj2ytZkhuTFVapAuvDXKPPxFuzLzDsqxnXfpa
+              - generic [ref=e570]: 智研咨询
+              - generic [ref=e572]: 
+          - generic [ref=e582]:
+            - heading "2025年中国健康险行业市场研究报告-硕远咨询" [level=3] [ref=e585]:
+              - link "2025年中国健康险行业市场研究报告-硕远咨询" [ref=e586] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=9sQtmDGdCy-YbzeaHYhQQQoH8qEv66PzWNKWYCVinXNFMtxAz1epanAcaVdjT8B8JX3A_9PBhgBg2pg7lOSfjO2ezFU8CYSvuloXpJtbV-S
+                - paragraph [ref=e589]:
+                  - generic [ref=e592]:
+                    - emphasis [ref=e593]: "2025"
+                    - text: 年
+                    - emphasis [ref=e594]: 中国健康
+                    - text: 险
+                    - emphasis [ref=e595]: 行业市场
+                    - text: 研究
+                    - emphasis [ref=e596]: 报告
+                    - text: "-硕远咨询"
+            - generic [ref=e597]:
+              - link [ref=e599] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=9sQtmDGdCy-YbzeaHYhQQQoH8qEv66PzWNKWYCVinXNFMtxAz1epanAcaVdjT8B8JX3A_9PBhgBg2pg7lOSfjO2ezFU8CYSvuloXpJtbV-S
+              - generic [ref=e604]:
+                - generic [ref=e609]:
+                  - text: 2026年1月16日
+                  - generic [ref=e610]:
+                    - text: （一）
+                    - emphasis [ref=e611]: 市场规模
+                    - text: 与增长
+                    - emphasis [ref=e612]: 中国健康
+                    - text: 险市场保持高速增长，保费收入年均增长率达两位数，
+                    - emphasis [ref=e613]: "2025"
+                    - text: 年市场规模有望突破万亿元。个人健康险受益于消费升级与健康观念转变，团体健康险受企业福利政策推动，高净值客户市场及慢性病、重大疾病险市场均呈现快速增长态势。产品结构上，传统
+                    - emphasis [ref=e614]: 医疗保险
+                    - text: 占主导，重疾险、长期护理险等新兴产品快速...
+                - link "头像 洞悉行业报告" [ref=e619] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=9sQtmDGdCy-YbzeaHYhQQQoH8qEv66PzWNKWYCVinXNFMtxAz1epanAcaVdjT8B8JX3A_9PBhgBg2pg7lOSfjO2ezFU8CYSvuloXpJtbV-S
+                  - img "头像" [ref=e622]
+                  - generic [ref=e623]: 洞悉行业报告
+                  - generic [ref=e625]: 
+          - generic [ref=e629]:
+            - heading "2025年健康管理行业市场发展现状及未来发展前景趋势分析_中研普华..." [level=3] [ref=e632]:
+              - link "2025年健康管理行业市场发展现状及未来发展前景趋势分析_中研普华..." [ref=e633] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=9sQtmDGdCy-YbzeaHYhQQQEkYH0VJcWus0XxT9_W696PIygixpPU_3Cn3FQItm3pS2dWDToWe7IF2YrUd6iun_
+                - paragraph [ref=e636]:
+                  - generic [ref=e639]:
+                    - emphasis [ref=e640]: "2025"
+                    - text: 年
+                    - emphasis [ref=e641]: 健康管理行业市场
+                    - text: 发展现状及未来发展前景趋势分析_中研普华...
+            - generic [ref=e642]:
+              - link [ref=e644] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=9sQtmDGdCy-YbzeaHYhQQQEkYH0VJcWus0XxT9_W696PIygixpPU_3Cn3FQItm3pS2dWDToWe7IF2YrUd6iun_
+              - generic [ref=e649]:
+                - generic [ref=e654]:
+                  - text: 2025年4月2日
+                  - generic [ref=e655]:
+                    - text: 《健康中国2030规划纲要》明确健康管理服务纳入基本公共卫生体系,2024年
+                    - emphasis [ref=e656]: 医保
+                    - text: 支付覆盖12项健康管理项目,商业健康险保费规模突破1.1万亿元。
+                    - emphasis [ref=e657]: "2025"
+                    - text: 年
+                    - emphasis [ref=e658]: 健康管理行业
+                    - text: 市场发展现状及未来发展前景趋势分析 核心观点速览 政策+需求双轮驱动:2020-2024年
+                    - emphasis [ref=e659]: 中国健康管理市场规模
+                    - text: 年复合增长率达12.5%,2024年突破1.2万亿元,数字健康管理渗透率...
+                - link "中研网" [ref=e664] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=9sQtmDGdCy-YbzeaHYhQQQEkYH0VJcWus0XxT9_W696PIygixpPU_3Cn3FQItm3pS2dWDToWe7IF2YrUd6iun_
+                  - generic [ref=e665]: 中研网
+                  - generic [ref=e667]: 
+          - generic [ref=e671]:
+            - heading "2025年医疗保障事业发展统计快报" [level=3] [ref=e674]:
+              - link "2025年医疗保障事业发展统计快报" [ref=e675] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ofG50RkobMzxDtKgQh0AJR2coRP4lgvjRqOdBk8ftusKcM5pbQGhlCVH4q1htbeMefdzq8Qzbd95DOhN3SJrUfaZinBRGG0sc0_aJ-lkco1eJyklB0Py6Td91eWNsa6ek79568pVkEgE_muHBToNKs9nP8JwnE2NPfvFl2Yt3T_
+                - paragraph [ref=e678]:
+                  - generic [ref=e681]:
+                    - emphasis [ref=e682]: "2025"
+                    - text: 年
+                    - emphasis [ref=e683]: 医疗
+                    - text: 保障事业发展统计快报
+            - generic [ref=e688]:
+              - text: 6天前
+              - generic [ref=e689]:
+                - emphasis [ref=e690]: "2025"
+                - text: 年,国家
+                - emphasis [ref=e691]: 医保
+                - text: 局坚持以习近平新时代
+                - emphasis [ref=e692]: 中国
+                - text: 特色社会主义思想为指导,深入学习贯彻党的二十大和二十届历次全会精神,全面落实中央经济工作会议部署,按照党中央、国务院决策部署,稳中求进、深化改革,将深入贯彻中央八项规定精神学习教育成果转化为医保改革发展惠民实效,奋力推动
+                - emphasis [ref=e693]: 医疗
+                - text: 保障事业高质量发展取得新成效。
+            - link "头像 湄潭县人民政府" [ref=e698] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=ofG50RkobMzxDtKgQh0AJR2coRP4lgvjRqOdBk8ftusKcM5pbQGhlCVH4q1htbeMefdzq8Qzbd95DOhN3SJrUfaZinBRGG0sc0_aJ-lkco1eJyklB0Py6Td91eWNsa6ek79568pVkEgE_muHBToNKs9nP8JwnE2NPfvFl2Yt3T_
+              - img "头像" [ref=e701]
+              - generic [ref=e702]: 湄潭县人民政府
+              - generic [ref=e704]: 
+        - generic [ref=e707]:
+          - generic [ref=e708]: 相关搜索
+          - table [ref=e709]:
+            - rowgroup [ref=e710]:
+              - row "医疗健康行业现状分析 医疗保健行业前景" [ref=e711]:
+                - cell "医疗健康行业现状分析" [ref=e712]:
+                  - link "医疗健康行业现状分析" [ref=e713] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7%E8%A1%8C%E4%B8%9A%E7%8E%B0%E7%8A%B6%E5%88%86%E6%9E%90&rsf=101633403&rsp=0&f=1&rs_src=0&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&rsv_dl=brs_28338_1
+                    - generic [ref=e715]: 医疗健康行业现状分析
+                - cell "医疗保健行业前景" [ref=e716]:
+                  - link "医疗保健行业前景" [ref=e717] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF&rsf=101636803&rsp=1&f=1&rs_src=0&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&rsv_dl=brs_28338_2
+                    - generic [ref=e719]: 医疗保健行业前景
+              - row "2020年中国大健康产业市场规模 医疗大健康产业" [ref=e720]:
+                - cell "2020年中国大健康产业市场规模" [ref=e721]:
+                  - link "2020年中国大健康产业市场规模" [ref=e722] [cursor=pointer]:
+                    - /url: /s?wd=2020%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%81%A5%E5%BA%B7%E4%BA%A7%E4%B8%9A%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1&rsf=101633403&rsp=2&f=1&rs_src=0&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&rsv_dl=brs_28338_3
+                    - generic [ref=e724]: 2020年中国大健康产业市场规模
+                - cell "医疗大健康产业" [ref=e725]:
+                  - link "医疗大健康产业" [ref=e726] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E5%A4%A7%E5%81%A5%E5%BA%B7%E4%BA%A7%E4%B8%9A&rsf=101633403&rsp=3&f=1&rs_src=0&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&rsv_dl=brs_28338_4
+                    - generic [ref=e728]: 医疗大健康产业
+              - row "2024健康产业趋势 医疗保健行业发展现状" [ref=e729]:
+                - cell "2024健康产业趋势" [ref=e730]:
+                  - link "2024健康产业趋势" [ref=e731] [cursor=pointer]:
+                    - /url: /s?wd=2024%E5%81%A5%E5%BA%B7%E4%BA%A7%E4%B8%9A%E8%B6%8B%E5%8A%BF&rsf=101636803&rsp=4&f=1&rs_src=0&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&rsv_dl=brs_28338_5
+                    - generic [ref=e733]: 2024健康产业趋势
+                - cell "医疗保健行业发展现状" [ref=e734]:
+                  - link "医疗保健行业发展现状" [ref=e735] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E5%81%A5%E8%A1%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&rsv_dl=brs_28338_6
+                    - generic [ref=e737]: 医疗保健行业发展现状
+              - row "医疗市场规模 我国医疗行业发展现状及趋势" [ref=e738]:
+                - cell "医疗市场规模" [ref=e739]:
+                  - link "医疗市场规模" [ref=e740] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1&rsf=101633403&rsp=6&f=1&rs_src=0&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&rsv_dl=brs_28338_7
+                    - generic [ref=e742]: 医疗市场规模
+                - cell "我国医疗行业发展现状及趋势" [ref=e743]:
+                  - link "我国医疗行业发展现状及趋势" [ref=e744] [cursor=pointer]:
+                    - /url: /s?wd=%E6%88%91%E5%9B%BD%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6%E5%8F%8A%E8%B6%8B%E5%8A%BF&rsf=101633403&rsp=7&f=1&rs_src=0&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&rsv_dl=brs_28338_8
+                    - generic [ref=e746]: 我国医疗行业发展现状及趋势
+              - row "医疗信息化市场现状 健康医疗发展趋势" [ref=e747]:
+                - cell "医疗信息化市场现状" [ref=e748]:
+                  - link "医疗信息化市场现状" [ref=e749] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%A1%E6%81%AF%E5%8C%96%E5%B8%82%E5%9C%BA%E7%8E%B0%E7%8A%B6&rsf=101633403&rsp=8&f=1&rs_src=0&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&rsv_dl=brs_28338_9
+                    - generic [ref=e751]: 医疗信息化市场现状
+                - cell "健康医疗发展趋势" [ref=e752]:
+                  - link "健康医疗发展趋势" [ref=e753] [cursor=pointer]:
+                    - /url: /s?wd=%E5%81%A5%E5%BA%B7%E5%8C%BB%E7%96%97%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF&rsf=101633403&rsp=9&f=1&rs_src=0&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&rsv_dl=brs_28338_10
+                    - generic [ref=e755]: 健康医疗发展趋势
+      - generic [ref=e758]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e759]:
+          - generic [ref=e760]: "1"
+        - link "2" [ref=e761] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&pn=10&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&ie=utf-8&usm=2&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&topic_pn=
+          - generic [ref=e762]: "2"
+        - link "3" [ref=e763] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&pn=20&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&ie=utf-8&usm=2&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&topic_pn=
+          - generic [ref=e764]: "3"
+        - link "4" [ref=e765] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&pn=30&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&ie=utf-8&usm=2&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&topic_pn=
+          - generic [ref=e766]: "4"
+        - link "5" [ref=e767] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&pn=40&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&ie=utf-8&usm=2&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&topic_pn=
+          - generic [ref=e768]: "5"
+        - link "6" [ref=e769] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&pn=50&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&ie=utf-8&usm=2&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&topic_pn=
+          - generic [ref=e770]: "6"
+        - link "7" [ref=e771] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&pn=60&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&ie=utf-8&usm=2&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&topic_pn=
+          - generic [ref=e772]: "7"
+        - link "8" [ref=e773] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&pn=70&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&ie=utf-8&usm=2&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&topic_pn=
+          - generic [ref=e774]: "8"
+        - link "9" [ref=e775] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&pn=80&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&ie=utf-8&usm=2&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&topic_pn=
+          - generic [ref=e776]: "9"
+        - link "10" [ref=e777] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&pn=90&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&ie=utf-8&usm=2&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&topic_pn=
+          - generic [ref=e778]: "10"
+        - link "下一页" [ref=e779] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&pn=10&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%20%E5%81%A5%E5%BA%B7%E7%AE%A1%E7%90%86%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202025%20%E4%B8%AD%E5%9B%BD%20%E8%A1%8C%E4%B8%9A%E6%8A%A5%E5%91%8A&ie=utf-8&usm=2&rsv_pq=97b4002a0004d002&rsv_t=2060kfXugxBtqRZIqMKjLZJaeb8dactO3YJExQfGAJjc71X9ROee06aVhxY&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e780]
+      - generic [ref=e783]:
+        - link "帮助" [ref=e784] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e785] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e786] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e787] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

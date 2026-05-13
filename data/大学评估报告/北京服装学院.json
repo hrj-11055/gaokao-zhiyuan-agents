@@ -1,0 +1,51 @@
+{
+  "university_name": "北京服装学院",
+  "short_name": "BIFT",
+  "location": {
+    "city": "北京",
+    "district": "朝阳区",
+    "campus": [
+      "樱花园校区",
+      "芍药居校区",
+      "通州校区"
+    ]
+  },
+  "academic_level": {
+    "key_disciplines": [
+      "设计学",
+      "艺术设计",
+      "纺织科学与工程"
+    ],
+    "a_minus_count": 1,
+    "a_count_pro": 1,
+    "industry_ranking": "时尚类全国第1"
+  },
+  "admission_guide": {
+    "primary_method": "艺术类校考 + 高考统招",
+    "difficulty_level": "高",
+    "target_student_profile": "艺术天赋高、文化课扎实、立志于时尚产业"
+  },
+  "career_outcomes": {
+    "major_employers": [
+      "安踏",
+      "李宁",
+      "字节跳动",
+      "华为"
+    ],
+    "entrepreneurship_vibe": "极强",
+    "overseas_target_schools": [
+      "UAL",
+      "RCA",
+      "Parsons",
+      "FIT"
+    ]
+  },
+  "quantitative_scores": {
+    "academic_capital": 4.2,
+    "graduate_value": 4.0,
+    "location_advantage": 4.8,
+    "global_influence": 4.3,
+    "brand_equity": 4.5,
+    "overall_weighted_score": 4.24
+  }
+}

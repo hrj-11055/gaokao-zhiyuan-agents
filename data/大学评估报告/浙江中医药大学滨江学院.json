@@ -1,0 +1,46 @@
+{
+  "university_name": "浙江中医药大学滨江学院",
+  "short_name": "滨江学院",
+  "location": {
+    "province": "浙江",
+    "city": "杭州",
+    "districts": [
+      "滨江区",
+      "富阳区"
+    ]
+  },
+  "academic_stats": {
+    "parent_university": "浙江中医药大学",
+    "key_disciplines": [
+      "中医学",
+      "中药学",
+      "临床医学"
+    ],
+    "academician_count": 1,
+    "national_masters_of_tcm": 3
+  },
+  "recruitment_status": {
+    "is_active": false,
+    "stop_year": 2025,
+    "last_recruitment_type": "普通本科、专升本"
+  },
+  "employment_metrics": {
+    "further_study_rate": "17.0%",
+    "primary_industry": "医疗卫生业",
+    "starting_salary_median": 5800,
+    "top_employers": [
+      "浙江省中医院",
+      "迪安诊断",
+      "华东医药"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.2,
+    "graduate_value": 3.5,
+    "location_advantage": 4.2,
+    "global_capability": 2.5,
+    "student_empowerment": 3.0,
+    "brand_asset": 3.2,
+    "weighted_total": 3.06
+  }
+}

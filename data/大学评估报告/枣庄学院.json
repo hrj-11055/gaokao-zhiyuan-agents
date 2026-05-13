@@ -1,0 +1,68 @@
+{
+  "university_info": {
+    "name": "枣庄学院",
+    "english_name": "Zaozhuang University",
+    "location": "山东省枣庄市",
+    "type": "公办全日制普通本科高校",
+    "attributes": [
+      "应用型本科高校",
+      "硕士学位授予单位"
+    ],
+    "established_year": 1971
+  },
+  "academic_strength": {
+    "master_points": [
+      "材料与化工",
+      "生物与医药"
+    ],
+    "key_disciplines": [
+      "光学工程",
+      "中国语言文学",
+      "化学"
+    ],
+    "special_features": [
+      "世界语研究",
+      "锂电产业教育"
+    ],
+    "academician_support": 3
+  },
+  "student_admission": {
+    "shandong_rank_range": "120,000 - 250,000",
+    "average_acceptance_rate": "约 15% (省外热门专业)",
+    "popular_majors": [
+      "汉语言文学",
+      "小学教育",
+      "计算机科学"
+    ]
+  },
+  "graduate_outcomes": {
+    "further_study_rate": "24.5% - 28%",
+    "top_employers": [
+      "宁德时代",
+      "万华化学",
+      "山东教育系统"
+    ],
+    "median_starting_salary": 4800,
+    "employment_rate": "87.28% (2024)"
+  },
+  "campus_facilities": {
+    "campuses": [
+      "薛城校区 (新)",
+      "市中校区 (老)"
+    ],
+    "dormitory_standard": "4-6人间, 空调, 独卫 (新校区)",
+    "key_infrastructure": [
+      "世界语博物馆",
+      "国家石榴工程中心"
+    ]
+  },
+  "quantitative_scores": {
+    "academic": 3.2,
+    "employment": 3.8,
+    "location_industry": 3.5,
+    "globalization": 2.5,
+    "student_freedom": 3.0,
+    "brand_value": 3.2,
+    "overall_weighted_score": 3.35
+  }
+}

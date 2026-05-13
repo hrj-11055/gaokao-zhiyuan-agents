@@ -1,0 +1,46 @@
+{
+  "university_name": "福建福耀科技大学",
+  "short_name": "FYUST",
+  "location": {
+    "city": "福州",
+    "district": "高新区",
+    "province": "福建"
+  },
+  "academic": {
+    "academician_count": 15,
+    "top_2_percent_scientists": 56,
+    "student_teacher_ratio": "3:1",
+    "key_majors": [
+      "材料科学与工程",
+      "计算机科学与技术",
+      "智能制造工程",
+      "车辆工程"
+    ]
+  },
+  "admission_2025": {
+    "avg_score_above_line": 140,
+    "total_enrollment": 50,
+    "selectivity": "Top 1.5%"
+  },
+  "employment_projection": {
+    "projected_starting_salary": 14500,
+    "industry_alignment": "High",
+    "key_partners": [
+      "Fuyao Group",
+      "CATL",
+      "BYD",
+      "Huawei"
+    ]
+  },
+  "campus_life": {
+    "dormitory_standard": "Double Room",
+    "management_system": "Residential College System",
+    "mentorship": "Double Mentor System"
+  },
+  "scores": {
+    "comprehensive_score": 4.22,
+    "academic_capital": 4.5,
+    "location_advantage": 4.2,
+    "brand_value": 4.4
+  }
+}

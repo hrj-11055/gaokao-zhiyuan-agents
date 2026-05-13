@@ -1,0 +1,53 @@
+{
+  "university_name": "四川文化艺术学院",
+  "short_name": "川文艺 / SCUCA",
+  "nature": "民办二本",
+  "location": {
+    "province": "四川",
+    "city": "绵阳",
+    "campuses": [
+      "绵阳校区",
+      "梓潼校区"
+    ]
+  },
+  "academic": {
+    "provincial_first_class_majors": [
+      "动画",
+      "视觉传达设计",
+      "文化产业管理"
+    ],
+    "core_research_institutes": [
+      "中国非物质文化遗产研究院",
+      "王蒙文学艺术馆"
+    ],
+    "top_talents_count": 0
+  },
+  "admission_stats": {
+    "avg_score_liberal_arts_sc": 475,
+    "avg_score_science_sc": 458,
+    "competitiveness_index": "Medium-Low"
+  },
+  "employment": {
+    "further_study_rate": "4.7% (Total)",
+    "flexible_employment_rate": "38.7%",
+    "median_starting_salary": 4200,
+    "top_industries": [
+      "Cultural & Creative",
+      "Education",
+      "Media"
+    ]
+  },
+  "financial_cost": {
+    "tuition_per_year": "16000-18000 RMB",
+    "accommodation_fee": "1200-2000 RMB"
+  },
+  "evaluation_scores": {
+    "academic_capital": 1.8,
+    "employment_value": 2.0,
+    "location_advantage": 3.2,
+    "globalization": 2.5,
+    "student_freedom": 3.5,
+    "brand_asset": 2.8,
+    "weighted_total": 2.33
+  }
+}

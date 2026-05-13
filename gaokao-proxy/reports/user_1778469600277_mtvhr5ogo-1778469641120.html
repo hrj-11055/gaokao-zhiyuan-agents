@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高考志愿填报综合报告 - 张雪峰风格</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(to right, #0f1419, #1a2332);
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 5px solid #ffcc00; /* Subtle accent */
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .header p {
+            font-size: 1.1em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: -60px auto 40px auto; /* Pulls up into the header */
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+            padding: 30px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 30px;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        .tabs button {
+            background-color: #f9f9f9;
+            border: none;
+            padding: 15px 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #555;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            border-radius: 8px 8px 0 0;
+            margin: 0 2px;
+        }
+        .tabs button:hover {
+            background-color: #e8e8e8;
+            color: #333;
+        }
+        .tabs button.active {
+            background-color: #ffcc00;
+            color: #1a2332;
+            border-bottom: 3px solid #1a2332;
+            font-weight: 700;
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        .tab-content {
+            padding: 20px 0;
+        }
+        .tab-pane {
+            display: none;
+        }
+        .tab-pane.active {
+            display: block;
+        }
+        h2 {
+            color: #1a2332;
+            border-left: 5px solid #ffcc00;
+            padding-left: 15px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+            font-weight: 700;
+        }
+        h3 {
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 8px;
+        }
+        h4 {
+            color: #555;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        p, ul, ol {
+            margin-bottom: 1em;
+            color: #444;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+        ol {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        .highlight {
+            background-color: #fffacd; /* Light yellow */
+            padding: 3px 5px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .warning {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        .success {
+            color: #5cb85c;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px 12px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+            color: #333;
+        }
+        .radar-chart {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .summary-box {
+            background-color: #f8f8f8;
+            border-left: 6px solid #ffcc00;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .summary-box strong {
+            color: #1a2332;
+        }
+        .advice {
+            background-color: #e6f7ff;
+            border-left: 6px solid #337ab7;
+            padding: 20px;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .advice strong {
+            color: #337ab7;
+        }
+        .zhangxuefeng-style {
+            background-color: #fff3e0;
+            border-left: 6px solid #ff9800;
+            padding: 20px;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            font-style: italic;
+            color: #6d4c41;
+            line-height: 1.8;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .zhangxuefeng-style strong {
+            color: #e65100;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .tag.red { background-color: #ffe0e0; color: #d9534f; }
+        .tag.yellow { background-color: #fffbe6; color: #f0ad4e; }
+        .tag.green { background-color: #e6ffe6; color: #5cb85c; }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>高考志愿填报综合报告</h1>
+        <p>—— 来自您的专业顾问，张雪峰风格</p>
+    </div>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'tab1')">自我评估总结</button>
+            <button class="tab-button" onclick="openTab(event, 'tab2')">个人特质分析</button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">专业匹配分析</button>
+            <button class="tab-button" onclick="openTab(event, 'tab4')">专业深度研究</button>
+            <button class="tab-button" onclick="openTab(event, 'tab5')">大学深度研究</button>
+            <button class="tab-button" onclick="openTab(event, 'tab6')">综合决策报告</button>
+        </div>
+
+        <div class="tab-content">
+            <!-- Tab 1: 自我评估总结 -->
+            <div id="tab1" class="tab-pane active">
+                <h2>考生自我评估总结</h2>
+                <div class="summary-box">
+                    <p>这位同学，你这情况，有点意思，也有点矛盾，但底子不错。先给你总结一下，让你心里有个数。</p>
+                    <ul>
+                        <li><strong>学习底子：</strong> 数学、物理是你的强项，班级排名前10%，这说明你智商在线，学习能力杠杠的。逻辑推理、数据分析是你的杀手锏，学习喜欢刨根问底，自己推演，不喜欢人云亦云。这都是搞理工科的好苗子。</li>
+                        <li><strong>薄弱环节：</strong> 语文、英语是短板，这得注意了，很多专业和未来发展都会卡这两门。</li>
+                        <li><strong>家庭背景：</strong> 父母做生意，经济偏紧，但对你兴趣尊重，同时又期望你收入高。这“高收入”和“尊重兴趣”之间，往往是道坎儿，得好好衡量。本省优先，但毕业想去一线城市，这规划倒也合理。</li>
+                        <li><strong>个人特质：</strong> 你喜欢独立深度工作，不喜欢对人服务，但成就感却来自于“帮助了他人”，目标行业是“教育”。这几个点，<span class="warning">矛盾不小啊！</span> 既要“不服务人”又要“帮助人”，这“帮助人”到底是咋帮法？教育行业普遍薪资不高，你又想“收入高”，这可不是闹着玩的。</li>
+                        <li><strong>职业方向：</strong> 还没想好毕业具体干啥，但对“教育”有想法，还想去一线城市。方向感有，但细节和实现路径上，你还需要我给你好好捋捋。</li>
+                    </ul>
+                    <div class="zhangxuefeng-style">
+                        <strong>张雪峰直言：</strong> “你这孩子，底子好，有主见，但对未来职业的认知，还停留在‘我觉得’和‘我以为’的阶段。‘高收入’、‘教育行业’、‘不服务人’、‘帮助人’，这几个词放一起，就跟往火锅里放榴莲一样，味道不对劲！咱们得把这些矛盾点掰扯清楚，不然等你毕业了，才发现自己掉坑里，可就晚了！”
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: 个人特质分析 -->
+            <div id="tab2" class="tab-pane">
+                <h2>个人特质深度分析</h2>
+                <p>这位同学，你的问卷答案和基本信息，勾勒出了一个清晰的画像。咱们来仔细剖析一下，看看你到底是个什么样的人，适合干什么。</p>
+
+                <h3>1. 学习风格：典型的理工科思维，效率与深度兼顾</h3>
+                <ul>
+                    <li><strong>Q1=先理解原理，再做题：</strong> 这非常好，说明你不是死记硬背的料，而是追求<span class="success">底层逻辑</span>和<span class="success">系统性理解</span>。这是未来在科研、技术开发领域成功的基石。</li>
+                    <li><strong>Q2=先跳过，找会的做：</strong> 务实，懂得<span class="success">策略性学习</span>，避免在难题上卡死。但也可能说明在攻克超高难度问题时，需要更强的毅力和方法论。</li>
+                    <li><strong>Q3=用逻辑规律推导记忆：</strong> 再次印证了你的<span class="success">逻辑推理能力</span>。你记忆东西不是靠重复，而是靠理解和构建内部联系，这让你的知识体系更稳固。</li>
+                    <li><strong>Q4=自己推演，不喜欢抄：</strong> <span class="success">独立思考能力</span>和<span class="success">动手实践能力</span>突出。你追求的是“知其所以然”，而不是简单的结果。这对于任何需要创新和解决问题的职业都至关重要。</li>
+                    <li><strong>Q5=深夜：</strong> 生物钟偏晚，说明你可能在深夜效率更高，更适合<span class="success">需要安静和长时间专注</span>的深度工作。</li>
+                </ul>
+                <div class="zhangxuefeng-style">
+                    <strong>张雪峰直言：</strong> “你这学习风格，就是个典型的‘技术宅’、‘研究型人才’的底子。喜欢钻研，不爱凑热闹，自己能琢磨明白的事儿，绝不问别人。这是好事儿！但也要注意，有时候该请教就得请教，别自己死磕，效率也很重要。”
+                </div>
+
+                <h3>2. 学业现状：优势明显，短板需补齐</h3>
+                <ul>
+                    <li><strong>优势科目=数学、物理：</strong> <span class="success">核心竞争力</span>！这直接对应你的逻辑推理和数据分析能力。在大学选专业时，这能让你在理工科领域如鱼得水。</li>
+                    <li><strong>薄弱科目=语文、英语：</strong> <span class="warning">这是个大问题！</span> 别以为进了理工科专业就不需要语文英语了。语文决定你的表达能力、沟通能力和材料理解能力；英语更不用说，国际前沿资料、学术交流、一线城市就业，英语都是硬通货。你这短板，必须重视，不能坐视不理。</li>
+                    <li><strong>压力来源=来自父母期望：</strong> 这是很多优秀学生的普遍问题。父母期望高是好事，但你得学会跟父母沟通，让他们理解你的兴趣和规划，同时也要把他们的“高收入”期望转化为你前进的动力。</li>
+                    <li><strong>班级位置=前10%：</strong> <span class="success">你是个好学生！</span> 这意味着你有冲刺重点大学、一流专业的能力和潜力。别浪费了！</li>
+                </ul>
+
+                <h3>3. 家庭背景：理性看待，助力未来</h3>
+                <ul>
+                    <li><strong>父母职业=自营生意：</strong> 父母对市场、风险、回报可能有着更直接的认知。这有助于你理解未来职业的商业价值和发展前景。</li>
+                    <li><strong>家庭期望=尊重孩子兴趣、收入高：</strong> “尊重兴趣”是你的幸运，“收入高”是你的挑战。你得找到一个能结合你兴趣，又能满足高收入期望的方向。这需要你更深入地思考职业路径。</li>
+                    <li><strong>城市偏好=本省优先：</strong> 考虑到经济状况，大学在本省就读是务实的选择，可以节省开支。</li>
+                    <li><strong>经济状况=偏紧：</strong> 这会影响你的大学选择和未来深造的决策。在选择专业时，要考虑其就业的稳定性和早期回报。</li>
+                </ul>
+
+                <h3>4. 能力特质：核心优势与潜在冲突</h3>
+                <ul>
+                    <li><strong>突出能力=逻辑推理、数据分析：</strong> <span class="success">你的核心优势！</span> 这是理工科、金融、IT等高薪行业的敲门砖。</li>
+                    <li><strong>兴趣领域=理工技术：</strong> 方向明确，与你的优势科目和学习风格高度契合。这是你未来专业选择的基石。</li>
+                    <li><strong>排斥方向=对人服务：</strong> <span class="warning">这是一个巨大的矛盾点！</span> 你说你排斥对人服务，但你的成就感又是“帮助了他人”，目标行业是“教育”。教育行业，尤其是教师，是典型的对人服务！你得搞清楚，你排斥的是哪种“对人服务”？是直接面对客户推销、处理纠纷？还是不喜欢琐碎的人际交往？而“帮助他人”是间接的通过技术、产品、研究来帮助，还是直接的传道授业？这必须界定清楚，否则会让你非常痛苦。</li>
+                </ul>
+
+                <h3>5. 职业期望：理想与现实的碰撞</h3>
+                <ul>
+                    <li><strong>成就感=帮助了他人：</strong> 再次出现，需要明确其实现方式。</li>
+                    <li><strong>价值观=有意义有价值：</strong> 追求内在驱动，这很好，但“有意义”和“有钱”之间，往往需要平衡。</li>
+                    <li><strong>工作方式=独立深度工作：</strong> 与你的学习风格吻合，你喜欢沉浸式、不被打扰的工作。这在科研、开发、数据分析等领域很常见。</li>
+                    <li><strong>目标行业=教育：</strong> <span class="warning">这是你最大的矛盾点！</span> 结合你“排斥对人服务”和“高收入”的期望，传统教育行业（尤其是中小学教师）可能与你的期望背道而驰。除非你进入教育行业的高附加值环节，比如教育科技研发、教育产品设计、教育管理等，这些岗位才可能满足你独立深度工作和更高收入的期望。</li>
+                    <li><strong>毕业方向=还没想好：</strong> 正常，但现在是时候开始思考了。</li>
+                    <li><strong>城市偏好=去一线城市：</strong> 合理的职业发展目标，一线城市机会多，发展平台广阔。</li>
+                </ul>
+                <div class="zhangxuefeng-style">
+                    <strong>张雪峰直言：</strong> “同学，你这‘排斥对人服务’和‘目标教育行业’、‘成就感帮助他人’，简直是‘薛定谔的猫’，你得把这只猫打开看看是死是活！教育行业里，如果你不想直接站讲台，不想面对熊孩子和家长，那你就得往教育科技、教育研发、教育管理这些‘幕后’走。这些岗位才能让你‘独立深度工作’，也才有可能摸到‘高收入’的边儿。”
+                </div>
+            </div>
+
+            <!-- Tab 3: 专业匹配分析 -->
+            <div id="tab3" class="tab-pane">
+                <h2>专业匹配分析：你的路，到底怎么走？</h2>
+                <p>这位同学，根据你前面的自述，你的优势和兴趣都非常明确地指向理工科。但你又对“教育”行业情有独钟，这就像一个爱吃辣的四川人说自己想去广东开饭馆，不是不行，但得把菜系改改。咱们就着重分析一下，你这“理工底子”和“教育梦想”，到底能擦出什么火花，或者说，怎么才能不把自己坑进去。</p>
+
+                <h3>核心矛盾点再梳理：</h3>
+                <ol>
+                    <li><strong>理工技术兴趣 VS 传统教育学：</strong> 你的数学、物理强，逻辑推理和数据分析是拿手好戏。传统的教育学（尤其是偏文科方向）可能无法充分发挥你的这些优势，甚至让你感到枯燥。</li>
+                    <li><strong>高收入期望 VS 教育行业薪资：</strong> 绝大多数教育岗位，尤其是基础教育，薪资水平在中下游。如果你真的追求高收入，那传统教师这条路，你得掂量掂量。</li>
+                    <li><strong>排斥对人服务 VS 教师职业：</strong> 教师是典型的对人服务职业，需要大量与学生、家长、同事沟通互动。如果你排斥这种直接的人际交往，那站在讲台上，你可能每天都想辞职。</li>
+                    <li><strong>独立深度工作 VS 教师的班级管理/互动：</strong> 教师工作是高度互动和碎片化的，班级管理、课后辅导、家校沟通，很难实现“独立深度工作”。</li>
+                </ol>
+                <div class="zhangxuefeng-style">
+                    <strong>张雪峰直言：</strong> “同学，你这矛盾点，说白了就是‘既要又要’。想搞教育，又不想服务人；想高薪，又想稳定。这世界上哪有那么多好事儿都让你占了？咱们得现实点，要么调整期望，要么调整方向！”
+                </div>
+
+                <h3>专业匹配度评估：</h3>
+
+                <h4>1. 专业：040101_教育学</h4>
+                <div class="summary-box">
+                    <p><strong>匹配度：</strong> <span class="tag red">低</span></p>
+                    <p><strong>分析：</strong> 这个专业，对你来说，<span class="warning">风险很高</span>。首先，它更偏向文科，你的数学、物理优势在这里很难得到发挥。其次，就业方向多是中小学教师，这与你“排斥对人服务”和“独立深度工作”的期望直接冲突。最关键的是，它的市场回报（薪酬）在所有学科中排倒数第二，与你“高收入”的期望南辕北辙。考编内卷白热化，根本不是“铁饭碗”那么简单。你一个理工科的苗子，跑去学这个，简直是<span class="warning">浪费天赋！</span></p>
+                    <p><strong>建议：</strong> <span class="warning">不推荐！</span> 除非你对教育理论研究有极强的兴趣，且能接受较低的薪资和高度人际互动的工作环境，否则这个专业只会让你痛苦。</p>
+                </div>
+
+                <h4>2. 专业：040102_科学教育</h4>
+                <div class="summary-box">
+                    <p><strong>匹配度：</strong> <span class="tag yellow">中高</span> （但需调整职业路径）</p>
+                    <p><strong>分析：</strong> <span class="success">这个专业，有点意思，是你目前看来最靠谱的选项！</span> 它完美结合了你的<span class="success">理工技术兴趣</span>和<span class="success">教育行业目标</span>。国家战略级“政策风口”，小学科学教师严重供不应求，就业确定性高。你的数学、物理优势在这里能得到充分发挥。AI抗风险性较低，因为科学实验、探究引导是AI难以替代的。核心可迁移能力强，比如跨学科整合、科学实验设计、公众科学传播，这些都能让你在教育科技、科普领域找到位置。</p>
+                    <p><strong>挑战：</strong> 薪酬天花板依然明显，公立学校教师的工资体系在那里摆着。如果你想实现“高收入”和“独立深度工作”，仅仅做一线科学教师是不够的。你需要向<span class="success">教育科技研发、科学课程设计、科技馆/博物馆教育、科普内容创作</span>等方向发展，这些岗位能更好地结合你的理工背景和独立工作需求，并有更高的薪资潜力。</p>
+                    <p><strong>建议：</strong> <span class="success">强烈建议你深入研究这个专业！</span> 如果选择，本科毕业后考虑<span class="success">深造（硕士）</span>，方向锁定在“学科教学·科学”、“科学与技术教育专硕”或者“教育技术学”等，为进入教育科技公司或科研机构打基础。这能让你在教育行业里，既能“帮助他人”（通过设计优质课程、研发教育产品），又能“独立深度工作”，还有机会实现“高收入”。</p>
+                </div>
+
+                <h4>3. 专业：040103_人文教育</h4>
+                <div class="summary-box">
+                    <p><strong>匹配度：</strong> <span class="tag red">极低</span></p>
+                    <p><strong>分析：</strong> 别想了，这个专业跟你基本<span class="warning">八竿子打不着！</span> 你的优势科目是数学、物理，薄弱科目是语文、英语，你跑去学

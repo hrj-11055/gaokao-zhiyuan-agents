@@ -1,0 +1,43 @@
+{
+  "university_name": "沈阳大学",
+  "short_name": "沈大",
+  "location": {
+    "province": "辽宁省",
+    "city": "沈阳市",
+    "district": "大东区",
+    "campus_features": "市中心, 交通便利"
+  },
+  "academic_level": {
+    "doctorate_programs": "1个（服务国家特殊需求项目）",
+    "master_programs": "一级学科硕士点10余个",
+    "national_first_class_majors": 9,
+    "key_disciplines": [
+      "环境科学与工程",
+      "工商管理",
+      "机械设计制造及其自动化"
+    ]
+  },
+  "admission_stats": {
+    "liaoning_rank_history": "约8500-9000名",
+    "liaoning_rank_physics": "约45000-48000名",
+    "difficulty_level": "Moderate"
+  },
+  "employment_outcomes": {
+    "further_study_rate": "18.5%-20%",
+    "local_employment_rate": ">60%",
+    "top_employers": [
+      "华晨宝马",
+      "沈阳鼓风机",
+      "中铁九局"
+    ],
+    "avg_starting_salary": 5200
+  },
+  "rankings": {
+    "ruanke_2024": 268,
+    "alumni_association_2025": 170
+  },
+  "evaluation": {
+    "comprehensive_score": 3.08,
+    "recommendation": "适合追求本地就业与考研性价比的务实型考生"
+  }
+}

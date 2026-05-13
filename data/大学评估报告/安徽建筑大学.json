@@ -1,0 +1,41 @@
+{
+  "university_name": "安徽建筑大学",
+  "short_name": "安建大 / AHJZU",
+  "location": {
+    "province": "安徽",
+    "city": "合肥",
+    "campuses": [
+      "南校区 (紫云路)",
+      "北校区 (金寨路)"
+    ]
+  },
+  "academic_level": {
+    "type": "省属重点一本",
+    "doctoral_programs": 1,
+    "master_programs": 14,
+    "key_disciplines": [
+      "土木工程",
+      "建筑学",
+      "城乡规划",
+      "管理科学与工程"
+    ]
+  },
+  "employment_stats": {
+    "overall_employment_rate": "90%+",
+    "further_study_rate": "24.09%",
+    "in_province_retention": "69%",
+    "top_industry": "建筑与基建"
+  },
+  "student_experience": {
+    "transfer_major_difficulty": "极低",
+    "dormitory_rating": "4/5",
+    "campus_vibe": "务实/硬核工科"
+  },
+  "evaluation_scores": {
+    "academic": 2.8,
+    "employment": 3.2,
+    "location": 4.2,
+    "freedom": 4.5,
+    "brand": 3.1
+  }
+}

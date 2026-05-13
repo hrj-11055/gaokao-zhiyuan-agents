@@ -1,0 +1,558 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 中国商业健康保险 市场规模 2024 2025 万亿元 增速
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E4%B8%87%E4%BA%BF%E5%85%83+%E5%A2%9E%E9%80%9F&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2211269404185078407682%22%2C%22ori_lid%22%3A%2211269404185078407682%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=9c64f76601e62202&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E4%B8%87%E4%BA%BF%E5%85%83+%E5%A2%9E%E9%80%9F
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E4%B8%87%E4%BA%BF%E5%85%83+%E5%A2%9E%E9%80%9F
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=9c64f76601e62202&ie=utf-8&wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E4%B8%87%E4%BA%BF%E5%85%83+%E5%A2%9E%E9%80%9F&rsv_spt=7&rsv_bp=1&f=8&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E4%B8%87%E4%BA%BF%E5%85%83+%E5%A2%9E%E9%80%9F&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E4%B8%87%E4%BA%BF%E5%85%83+%E5%A2%9E%E9%80%9F
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E4%B8%87%E4%BA%BF%E5%85%83+%E5%A2%9E%E9%80%9F
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E4%B8%87%E4%BA%BF%E5%85%83+%E5%A2%9E%E9%80%9F
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E4%B8%87%E4%BA%BF%E5%85%83+%E5%A2%9E%E9%80%9F
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  我国商业健康保险的现状  中国商业保险普及率  我国商业健康保险的发展趋势  2023年保险市场行业分析报告  2020健康险行业分析报告  中国保险业发展报告2023    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e69]:
+              - cell "相关搜索  我国商业健康保险的现状  中国商业保险普及率  我国商业健康保险的发展趋势  2023年保险市场行业分析报告  2020健康险行业分析报告  中国保险业发展报告2023    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 我国商业健康保险的现状" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E6%88%91%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E7%9A%84%E7%8E%B0%E7%8A%B6&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=ab28Jv7xQ%2FjuBQPYLdXpzrzIWaRCgnGsUWCjV6OJ%2BEPq1L%2B8C9HfvaA%2BLEE&rfqid=9c64f76601e62202&rsv_dl=0_prs_28616_1&rq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsf=101633403
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 我国商业健康保险的现状
+                      - link " 中国商业保险普及率" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E4%BF%9D%E9%99%A9%E6%99%AE%E5%8F%8A%E7%8E%87&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=ab28Jv7xQ%2FjuBQPYLdXpzrzIWaRCgnGsUWCjV6OJ%2BEPq1L%2B8C9HfvaA%2BLEE&rfqid=9c64f76601e62202&rsv_dl=0_prs_28616_2&rq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 中国商业保险普及率
+                      - link " 我国商业健康保险的发展趋势" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E6%88%91%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E7%9A%84%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=ab28Jv7xQ%2FjuBQPYLdXpzrzIWaRCgnGsUWCjV6OJ%2BEPq1L%2B8C9HfvaA%2BLEE&rfqid=9c64f76601e62202&rsv_dl=0_prs_28616_3&rq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsf=101633403
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 我国商业健康保险的发展趋势
+                      - link " 2023年保险市场行业分析报告" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=2023%E5%B9%B4%E4%BF%9D%E9%99%A9%E5%B8%82%E5%9C%BA%E8%A1%8C%E4%B8%9A%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rfqid=9c64f76601e62202&rsv_dl=0_prs_28616_4&rq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsf=101636803
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 2023年保险市场行业分析报告
+                      - link " 2020健康险行业分析报告" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=2020%E5%81%A5%E5%BA%B7%E9%99%A9%E8%A1%8C%E4%B8%9A%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rfqid=9c64f76601e62202&rsv_dl=0_prs_28616_5&rq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsf=101633403
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 2020健康险行业分析报告
+                      - link " 中国保险业发展报告2023" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E4%BF%9D%E9%99%A9%E4%B8%9A%E5%8F%91%E5%B1%95%E6%8A%A5%E5%91%8A2023&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rfqid=9c64f76601e62202&rsv_dl=0_prs_28616_6&rq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsf=101636803
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 中国保险业发展报告2023
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "“早上6点半 杭州东站全是孩子”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E6%97%A9%E4%B8%8A6%E7%82%B9%E5%8D%8A%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%E5%85%A8%E6%98%AF%E5%AD%A9%E5%AD%90%E2%80%9D&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "高市政府越过“最后一根红线”" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "女性多和好友聚会能“续命”" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=4729Smmc4fcN2ck98c8qFsi4REwSsdpffeXf%2BPMzr3SFNjE3g3CKr7yLgB8&rqid=9c64f76601e62202&rsf=7e1c123655c4be9abdd86725590e4a15_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e208]:
+            - heading "政策大年 商业健康险如何破局万亿大关?-中国经营网" [level=3] [ref=e211]:
+              - link "政策大年 商业健康险如何破局万亿大关?-中国经营网" [ref=e212] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=M0cPkKT9tixZZRxpEcacT5hdsdHwTv2EGIleRFjCJO10Vk_sd1-GwWhBnLTtjmlKVO85AOVUrMJqjX7IlqwyIq
+                - paragraph [ref=e215]:
+                  - generic [ref=e218]:
+                    - text: 政策大年
+                    - emphasis [ref=e219]: 商业健康险
+                    - text: 如何破局
+                    - emphasis [ref=e220]: 万亿
+                    - text: 大关?-
+                    - emphasis [ref=e221]: 中国
+                    - text: 经营网
+            - generic [ref=e226]:
+              - text: 3天前
+              - generic [ref=e227]:
+                - text: 但从
+                - emphasis [ref=e228]: 市场
+                - text: 数据看,金融监管总局统计数据显示,2021年至
+                - emphasis [ref=e229]: "2025"
+                - text: 年,健康险保费收入分别为8447亿元、8653亿元、9035亿元、9774亿元和9973亿元;同比增速分别为3.35%、2.44%、4.41%、8.18%和2.04%。规模增速创多年来新低。 “顶层政策持续释放护航红利,2025年商业健康险整体增速触底走低,核心源于行业发展瓶
+            - link "中国经营网" [ref=e234] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=M0cPkKT9tixZZRxpEcacT5hdsdHwTv2EGIleRFjCJO10Vk_sd1-GwWhBnLTtjmlKVO85AOVUrMJqjX7IlqwyIq
+              - generic [ref=e235]: 中国经营网
+              - generic [ref=e237]: 
+          - generic [ref=e241]:
+            - heading "政策强信号释放 商业健康险迎来规模增长新契机" [level=3] [ref=e244]:
+              - link "政策强信号释放 商业健康险迎来规模增长新契机" [ref=e245] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=-b1KSQp2_qYv7RqUcG_Uu8UszqtXJjjtZOY5Bt6iIgFyiOCnDsKbnYuSn0XMzoH2RMm2Ke5gT7kxEj_udOlflxdEHShB4sCQ1Hs5XQsQ9wS
+                - paragraph [ref=e248]:
+                  - generic [ref=e251]:
+                    - text: 政策强信号释放
+                    - emphasis [ref=e252]: 商业健康险
+                    - text: 迎来
+                    - emphasis [ref=e253]: 规模
+                    - text: 增长新契机
+            - generic [ref=e258]:
+              - text: 2026年3月14日
+              - generic [ref=e259]:
+                - text: 最新数据显示，
+                - emphasis [ref=e260]: 我国商业健康险
+                - text: 的发展速度明显提升，
+                - emphasis [ref=e261]: "2025"
+                - text: 年健康险原保费收入接近
+                - emphasis [ref=e262]: 万亿元规模
+                - text: ，达到9973亿元，占行业总保费的16%，近十年年均复合增长率超过20%。《中国经营报》记者注意到，在人口结构变化、医疗需求升级的背景下，商业健康险被赋予补齐社会保障短板、服务“
+                - emphasis [ref=e263]: 健康中国
+                - text: ”战略的重要使命，一个与基本
+                - emphasis [ref=e264]: 医疗保险
+                - text: 紧密...
+            - link "头像  中国经营报" [ref=e269] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=-b1KSQp2_qYv7RqUcG_Uu8UszqtXJjjtZOY5Bt6iIgFyiOCnDsKbnYuSn0XMzoH2RMm2Ke5gT7kxEj_udOlflxdEHShB4sCQ1Hs5XQsQ9wS
+              - generic [ref=e270]:
+                - img "头像" [ref=e272]
+                - generic [ref=e274]: 
+              - generic [ref=e275]: 中国经营报
+              - generic [ref=e277]: 
+          - generic [ref=e281]:
+            - heading "透视四家头部公司2025年业绩,看健康险市场新趋势" [level=3] [ref=e284]:
+              - link "透视四家头部公司2025年业绩,看健康险市场新趋势" [ref=e285] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=-b1KSQp2_qYv7RqUcG_Uu8UszqtXJjjtZOY5Bt6iIgEj-zcTzUQ7Lg8T6dB-0Py2XJjTnI-dsHU8NGEZN0GvqwRJ3VgUtT3xH3EvLQj75Fm
+                - paragraph [ref=e288]:
+                  - generic [ref=e291]:
+                    - text: 透视四家头部公司
+                    - emphasis [ref=e292]: "2025"
+                    - text: 年业绩,看
+                    - emphasis [ref=e293]: 健康险市场
+                    - text: 新趋势
+            - generic [ref=e294]:
+              - link [ref=e296] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=-b1KSQp2_qYv7RqUcG_Uu8UszqtXJjjtZOY5Bt6iIgEj-zcTzUQ7Lg8T6dB-0Py2XJjTnI-dsHU8NGEZN0GvqwRJ3VgUtT3xH3EvLQj75Fm
+              - generic [ref=e301]:
+                - generic [ref=e306]:
+                  - text: 2026年4月16日
+                  - generic [ref=e307]:
+                    - text: 然而，
+                    - emphasis [ref=e308]: "2025"
+                    - text: 年
+                    - emphasis [ref=e309]: 我国商业健康险市场
+                    - text: 整体
+                    - emphasis [ref=e310]: 增速
+                    - text: 却仅为2.04%，呈现出“整体低迷、局部高涨”的复杂图景：人身险公司健康险业务增长乏力，而财产险公司健康险保费却保持了超过10%的增速，两者出现明显分化。在这一宏观背景下，一个更为鲜明的对比是，当行业整体在低速增长中徘徊时，专业健康险公司却逆势爆发，成为驱动市场最强...
+                - link "头像  新浪财经" [ref=e315] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=-b1KSQp2_qYv7RqUcG_Uu8UszqtXJjjtZOY5Bt6iIgEj-zcTzUQ7Lg8T6dB-0Py2XJjTnI-dsHU8NGEZN0GvqwRJ3VgUtT3xH3EvLQj75Fm
+                  - generic [ref=e316]:
+                    - img "头像" [ref=e318]
+                    - generic [ref=e320]: 
+                  - generic [ref=e321]: 新浪财经
+                  - generic [ref=e323]: 
+          - generic [ref=e325]:
+            - generic [ref=e326]: 大家还在搜
+            - generic [ref=e327]:
+              - link "我国商业健康保险的现状" [ref=e328] [cursor=pointer]:
+                - /url: /s?wd=%E6%88%91%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E7%9A%84%E7%8E%B0%E7%8A%B6&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=d96e3rorx6y9HlWTxVzhpFjS71V3%2B4cv1RXQzzpOluOWj3lHMMSU3lO6pxM&rsf=101633403&rsv_dl=0_prs_28608_1
+                - generic [ref=e330]: 我国商业健康保险的现状
+              - link "中国商业保险普及率" [ref=e331] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E4%BF%9D%E9%99%A9%E6%99%AE%E5%8F%8A%E7%8E%87&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=d96e3rorx6y9HlWTxVzhpFjS71V3%2B4cv1RXQzzpOluOWj3lHMMSU3lO6pxM&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e333]: 中国商业保险普及率
+              - link "我国商业健康保险的发展趋势" [ref=e334] [cursor=pointer]:
+                - /url: /s?wd=%E6%88%91%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E7%9A%84%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=d96e3rorx6y9HlWTxVzhpFjS71V3%2B4cv1RXQzzpOluOWj3lHMMSU3lO6pxM&rsf=101633403&rsv_dl=0_prs_28608_3
+                - generic [ref=e336]: 我国商业健康保险的发展趋势
+              - link "2023年保险市场行业分析报告" [ref=e337] [cursor=pointer]:
+                - /url: /s?wd=2023%E5%B9%B4%E4%BF%9D%E9%99%A9%E5%B8%82%E5%9C%BA%E8%A1%8C%E4%B8%9A%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=d96e3rorx6y9HlWTxVzhpFjS71V3%2B4cv1RXQzzpOluOWj3lHMMSU3lO6pxM&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e339]: 2023年保险市场行业分析报告
+              - link "2020健康险行业分析报告" [ref=e340] [cursor=pointer]:
+                - /url: /s?wd=2020%E5%81%A5%E5%BA%B7%E9%99%A9%E8%A1%8C%E4%B8%9A%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=d96e3rorx6y9HlWTxVzhpFjS71V3%2B4cv1RXQzzpOluOWj3lHMMSU3lO6pxM&rsf=101633403&rsv_dl=0_prs_28608_5
+                - generic [ref=e342]: 2020健康险行业分析报告
+              - link "中国保险业发展报告2023" [ref=e343] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E4%BF%9D%E9%99%A9%E4%B8%9A%E5%8F%91%E5%B1%95%E6%8A%A5%E5%91%8A2023&usm=1&ie=utf-8&rsv_pq=9c64f76601e62202&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&rsv_t=d96e3rorx6y9HlWTxVzhpFjS71V3%2B4cv1RXQzzpOluOWj3lHMMSU3lO6pxM&rsf=101636803&rsv_dl=0_prs_28608_6
+                - generic [ref=e345]: 中国保险业发展报告2023
+          - generic [ref=e349]:
+            - heading "迈入万亿元时代 商业健康险正迎来深刻变革_中国经济网——国家经济门 ..." [level=3] [ref=e352]:
+              - link "迈入万亿元时代 商业健康险正迎来深刻变革_中国经济网——国家经济门 ..." [ref=e353] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ziIAWHleuLBMiKkyChZbMLCN7D1ZlAxUmcDC3FtV940zhs2hAtRju0GkryRwE8gkPurfUwLmIJShsVFVt4o1UHtpaUkiKOc20M1hTXP_y6QblE9hCyvKGhzGDOzl2sG9
+                - paragraph [ref=e356]:
+                  - generic [ref=e359]:
+                    - text: 迈入
+                    - emphasis [ref=e360]: 万亿元
+                    - text: 时代
+                    - emphasis [ref=e361]: 商业健康险
+                    - text: 正迎来深刻变革_
+                    - emphasis [ref=e362]: 中国
+                    - text: 经济网——国家经济门 ...
+            - generic [ref=e367]:
+              - text: 2026年1月29日
+              - generic [ref=e368]:
+                - emphasis [ref=e369]: "2025"
+                - text: 年9月,金融监管总局发布《关于推动健康保险高质量发展的指导意见》,为
+                - emphasis [ref=e370]: 商业健康险市场
+                - text: 拟定“新五年规划”,明确提出“推动团险与个险协同发展,满足全人群、全生命周期的多样化需求。”2025年12月,国家医保局、人力资源社会保障部发布《
+                - emphasis [ref=e371]: 商业健康保险
+                - text: 创新药品目录(2025年)》,该目录对医保目录进行延展补充,旨在进一步推动...
+            - link "中国经济网" [ref=e376] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=ziIAWHleuLBMiKkyChZbMLCN7D1ZlAxUmcDC3FtV940zhs2hAtRju0GkryRwE8gkPurfUwLmIJShsVFVt4o1UHtpaUkiKOc20M1hTXP_y6QblE9hCyvKGhzGDOzl2sG9
+              - generic [ref=e377]: 中国经济网
+              - generic [ref=e379]: 
+          - generic [ref=e383]:
+            - heading "政策强信号释放 商业健康险迎来规模增长新契机-中国经营网" [level=3] [ref=e386]:
+              - link "政策强信号释放 商业健康险迎来规模增长新契机-中国经营网" [ref=e387] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=M0cPkKT9tixZZRxpEcacT5hdsdHwTv2EGIleRFjCJO10Vk_sd1-GwWhBnLTtjmlK-31QzEx2avuosprxMwHjE_
+                - paragraph [ref=e390]:
+                  - generic [ref=e393]:
+                    - text: 政策强信号释放
+                    - emphasis [ref=e394]: 商业健康险
+                    - text: 迎来
+                    - emphasis [ref=e395]: 规模
+                    - text: 增长新契机-
+                    - emphasis [ref=e396]: 中国
+                    - text: 经营网
+            - generic [ref=e401]:
+              - text: 2026年3月14日
+              - generic [ref=e402]:
+                - text: 最新数据显示,
+                - emphasis [ref=e403]: 我国商业健康险
+                - text: 的发展速度明显提升,
+                - emphasis [ref=e404]: "2025"
+                - text: 年健康险原保费收入接近
+                - emphasis [ref=e405]: 万亿元规模
+                - text: ",达到9973亿元,占行业总保费的16%,近十年年均复合增长率超过20%。 《中国经营报》记者注意到,在人口结构变化、医疗需求升级的背景下,商业健康险被赋予补齐社会保障短板、服务“"
+                - emphasis [ref=e406]: 健康中国
+                - text: ”战略的重要使命,一个与基本
+                - emphasis [ref=e407]: 医疗保险
+                - text: 紧密衔接...
+            - link "中国经营网" [ref=e412] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=M0cPkKT9tixZZRxpEcacT5hdsdHwTv2EGIleRFjCJO10Vk_sd1-GwWhBnLTtjmlK-31QzEx2avuosprxMwHjE_
+              - generic [ref=e413]: 中国经营网
+              - generic [ref=e415]: 
+          - generic [ref=e419]:
+            - heading "盘点2025|万亿健康险转型深水区:政策破局、生态重构" [level=3] [ref=e422]:
+              - link "盘点2025|万亿健康险转型深水区:政策破局、生态重构" [ref=e423] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=-b1KSQp2_qYv7RqUcG_Uu8UszqtXJjjtZOY5Bt6iIgCcqjsCvJPKZBqjDuRxRzRQrEGzmOedVzPdDA-xjXKdxEjD0C_EgmDiG2-zi4GYWQC
+                - paragraph [ref=e426]:
+                  - generic [ref=e429]:
+                    - text: 盘点
+                    - emphasis [ref=e430]: "2025"
+                    - text: "|"
+                    - emphasis [ref=e431]: 万亿健康险
+                    - text: 转型深水区:政策破局、生态重构
+            - generic [ref=e436]:
+              - text: 2026年1月5日
+              - generic [ref=e437]:
+                - text: 最新数据显示，
+                - emphasis [ref=e438]: "2025"
+                - text: 年1—11月，商业健康险累计保费9439亿元，同比增长2.3%，预估全年保费
+                - emphasis [ref=e439]: 规模
+                - text: 在1
+                - emphasis [ref=e440]: 万亿元
+                - text: 左右。这一规模延续了近年来的平稳态势，但与2020年提出的“2025年突破2万亿元”目标相比尚有一定差距，
+                - emphasis [ref=e441]: 增速
+                - text: 较行业高速发展期明显回落。站在规模企稳与模式革新的十字路口，2025年的
+                - emphasis [ref=e442]: 中国商业健康险市场
+                - text: ，以监管顶层...
+            - link "头像  新浪财经" [ref=e447] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=-b1KSQp2_qYv7RqUcG_Uu8UszqtXJjjtZOY5Bt6iIgCcqjsCvJPKZBqjDuRxRzRQrEGzmOedVzPdDA-xjXKdxEjD0C_EgmDiG2-zi4GYWQC
+              - generic [ref=e448]:
+                - img "头像" [ref=e450]
+                - generic [ref=e452]: 
+              - generic [ref=e453]: 新浪财经
+              - generic [ref=e455]: 
+          - generic [ref=e459]:
+            - heading "带病体保险崛起:医保边界之外的万亿健康险新战场-北京医学会罕见..." [level=3] [ref=e462]:
+              - link "带病体保险崛起:医保边界之外的万亿健康险新战场-北京医学会罕见..." [ref=e463] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ziIAWHleuLBMiKkyChZbMMlIoy7nK0nGa-2MnawbfkweXSZEw3m265mpM_MdoszmBMA3o3RYHHiq9-6Xg7xlPq
+                - paragraph [ref=e466]:
+                  - generic [ref=e469]:
+                    - text: 带病体
+                    - emphasis [ref=e470]: 保险
+                    - text: 崛起:医保边界之外的
+                    - emphasis [ref=e471]: 万亿健康险
+                    - text: 新战场-北京医学会罕见...
+            - generic [ref=e476]:
+              - text: 2026年3月23日
+              - generic [ref=e477]:
+                - emphasis [ref=e478]: "2025"
+                - text: 年,
+                - emphasis [ref=e479]: 中国商业健康险
+                - text: 保费收入以9973亿元收官,没有跨过行业多年冲刺的万亿门槛。比
+                - emphasis [ref=e480]: 规模
+                - text: 更值得注意的是结构变化:曾经独挑大梁的重疾险持续走低,而医疗险在
+                - emphasis [ref=e481]: "2024"
+                - text: 年以44%的占比成为商业健康险最大的板块。旧引擎在减速,新增长逻辑却尚未完全站稳。
+                - emphasis [ref=e482]: 商业健康保险
+                - text: 增长的制度背景,是医保划下的机制边界。
+            - link "中华医学会北京分会" [ref=e487] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=ziIAWHleuLBMiKkyChZbMMlIoy7nK0nGa-2MnawbfkweXSZEw3m265mpM_MdoszmBMA3o3RYHHiq9-6Xg7xlPq
+              - generic [ref=e488]: 中华医学会北京分会
+              - generic [ref=e490]: 
+          - generic [ref=e494]:
+            - heading "“万亿元年”期待落空,商业健康险行业走向转型拐点" [level=3] [ref=e497]:
+              - link "“万亿元年”期待落空,商业健康险行业走向转型拐点" [ref=e498] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=-b1KSQp2_qYv7RqUcG_Uu8UszqtXJjjtZOY5Bt6iIgDY9r0LynHAfWcPgjtWNCPoWcoQvA60hkPyMf5i4Nur8fs9KoCk9GlyEmByWRveLyu
+                - paragraph [ref=e501]:
+                  - generic [ref=e504]:
+                    - text: “
+                    - emphasis [ref=e505]: 万亿元
+                    - text: 年”期待落空,
+                    - emphasis [ref=e506]: 商业健康险
+                    - text: 行业走向转型拐点
+            - generic [ref=e507]:
+              - link [ref=e509] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=-b1KSQp2_qYv7RqUcG_Uu8UszqtXJjjtZOY5Bt6iIgDY9r0LynHAfWcPgjtWNCPoWcoQvA60hkPyMf5i4Nur8fs9KoCk9GlyEmByWRveLyu
+              - generic [ref=e514]:
+                - generic [ref=e519]:
+                  - text: 2026年2月5日
+                  - generic [ref=e520]:
+                    - text: 泰康集团旗下长寿时代研究院测算数据显示，根据
+                    - emphasis [ref=e521]: "2025"
+                    - text: 年
+                    - emphasis [ref=e522]: 商业健康险万亿元规模
+                    - text: 保费测算，人身险公司的医疗险和疾病险保费在2025年或分别同比增长3%及下降2%；而财产险公司的这两类业务则分别同比增长11%及13%。近五年
+                    - emphasis [ref=e523]: 增速
+                    - text: 新低 从同比增速的变动来看，即使2025年财产险公司的健康险保费还能呈现两位数的增长，但也已较
+                    - emphasis [ref=e524]: "2024"
+                    - text: ...
+                - link "头像  第一财经" [ref=e529] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=-b1KSQp2_qYv7RqUcG_Uu8UszqtXJjjtZOY5Bt6iIgDY9r0LynHAfWcPgjtWNCPoWcoQvA60hkPyMf5i4Nur8fs9KoCk9GlyEmByWRveLyu
+                  - generic [ref=e530]:
+                    - img "头像" [ref=e532]
+                    - generic [ref=e534]: 
+                  - generic [ref=e535]: 第一财经
+                  - generic [ref=e537]: 
+          - generic [ref=e541]:
+            - heading "迈入万亿元时代 商业健康险正迎来深刻变革" [level=3] [ref=e544]:
+              - link "迈入万亿元时代 商业健康险正迎来深刻变革" [ref=e545] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=tVKyrzWnigqaEIiQw88OMreTZwwfh5HeNACRe1Ln8h9XHc3JgBqIbZDQIdNZ1fCJiKupY3yJ9mlnBo8UmSu2fK
+                - paragraph [ref=e548]:
+                  - generic [ref=e551]:
+                    - text: 迈入
+                    - emphasis [ref=e552]: 万亿元
+                    - text: 时代
+                    - emphasis [ref=e553]: 商业健康险
+                    - text: 正迎来深刻变革
+            - generic [ref=e558]:
+              - text: 2026年1月28日
+              - generic [ref=e559]:
+                - text: 数据显示,截至
+                - emphasis [ref=e560]: "2025"
+                - text: 年11月,
+                - emphasis [ref=e561]: 商业健康险
+                - text: 保费规模已达9440亿元,同比增长2.39%。按此
+                - emphasis [ref=e562]: 增速
+                - text: 推算,2025年全年保费收入有望首次跨越
+                - emphasis [ref=e563]: 万亿元
+                - text: 大关。这一跨越,不仅标志着
+                - emphasis [ref=e564]: 市场规模
+                - text: 的历史性跃升,更预示着行业迈入追求质量、韧性与协同发展的新阶段。 顶层设计日趋清晰 政策与市场双轮驱动 ...
+            - link "同花顺财经" [ref=e569] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=tVKyrzWnigqaEIiQw88OMreTZwwfh5HeNACRe1Ln8h9XHc3JgBqIbZDQIdNZ1fCJiKupY3yJ9mlnBo8UmSu2fK
+              - generic [ref=e570]: 同花顺财经
+              - generic [ref=e572]: 
+        - generic [ref=e575]:
+          - generic [ref=e576]: 相关搜索
+          - table [ref=e577]:
+            - rowgroup [ref=e578]:
+              - row "我国商业健康保险的现状 中国商业保险普及率" [ref=e579]:
+                - cell "我国商业健康保险的现状" [ref=e580]:
+                  - link "我国商业健康保险的现状" [ref=e581] [cursor=pointer]:
+                    - /url: /s?wd=%E6%88%91%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E7%9A%84%E7%8E%B0%E7%8A%B6&rsf=101633403&rsp=0&f=1&rs_src=0&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&rsv_dl=brs_28338_1
+                    - generic [ref=e583]: 我国商业健康保险的现状
+                - cell "中国商业保险普及率" [ref=e584]:
+                  - link "中国商业保险普及率" [ref=e585] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E4%BF%9D%E9%99%A9%E6%99%AE%E5%8F%8A%E7%8E%87&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&rsv_dl=brs_28338_2
+                    - generic [ref=e587]: 中国商业保险普及率
+              - row "我国商业健康保险的发展趋势 2020健康险行业分析报告" [ref=e588]:
+                - cell "我国商业健康保险的发展趋势" [ref=e589]:
+                  - link "我国商业健康保险的发展趋势" [ref=e590] [cursor=pointer]:
+                    - /url: /s?wd=%E6%88%91%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E7%9A%84%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF&rsf=101633403&rsp=2&f=1&rs_src=0&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&rsv_dl=brs_28338_3
+                    - generic [ref=e592]: 我国商业健康保险的发展趋势
+                - cell "2020健康险行业分析报告" [ref=e593]:
+                  - link "2020健康险行业分析报告" [ref=e594] [cursor=pointer]:
+                    - /url: /s?wd=2020%E5%81%A5%E5%BA%B7%E9%99%A9%E8%A1%8C%E4%B8%9A%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A&rsf=101633403&rsp=3&f=1&rs_src=0&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&rsv_dl=brs_28338_4
+                    - generic [ref=e596]: 2020健康险行业分析报告
+              - row "2023年保险市场行业分析报告 中国保险业规模" [ref=e597]:
+                - cell "2023年保险市场行业分析报告" [ref=e598]:
+                  - link "2023年保险市场行业分析报告" [ref=e599] [cursor=pointer]:
+                    - /url: /s?wd=2023%E5%B9%B4%E4%BF%9D%E9%99%A9%E5%B8%82%E5%9C%BA%E8%A1%8C%E4%B8%9A%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A&rsf=101636803&rsp=4&f=1&rs_src=0&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&rsv_dl=brs_28338_5
+                    - generic [ref=e601]: 2023年保险市场行业分析报告
+                - cell "中国保险业规模" [ref=e602]:
+                  - link "中国保险业规模" [ref=e603] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E4%BF%9D%E9%99%A9%E4%B8%9A%E8%A7%84%E6%A8%A1&rsf=101636803&rsp=5&f=1&rs_src=0&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&rsv_dl=brs_28338_6
+                    - generic [ref=e605]: 中国保险业规模
+              - row "中国保险业发展报告2023 中国商业保险覆盖率" [ref=e606]:
+                - cell "中国保险业发展报告2023" [ref=e607]:
+                  - link "中国保险业发展报告2023" [ref=e608] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E4%BF%9D%E9%99%A9%E4%B8%9A%E5%8F%91%E5%B1%95%E6%8A%A5%E5%91%8A2023&rsf=101636803&rsp=6&f=1&rs_src=0&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&rsv_dl=brs_28338_7
+                    - generic [ref=e610]: 中国保险业发展报告2023
+                - cell "中国商业保险覆盖率" [ref=e611]:
+                  - link "中国商业保险覆盖率" [ref=e612] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E4%BF%9D%E9%99%A9%E8%A6%86%E7%9B%96%E7%8E%87&rsf=101633403&rsp=7&f=1&rs_src=0&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&rsv_dl=brs_28338_8
+                    - generic [ref=e614]: 中国商业保险覆盖率
+              - row "中国保险在全球保险市场的地位 健康保险发展趋势" [ref=e615]:
+                - cell "中国保险在全球保险市场的地位" [ref=e616]:
+                  - link "中国保险在全球保险市场的地位" [ref=e617] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E4%BF%9D%E9%99%A9%E5%9C%A8%E5%85%A8%E7%90%83%E4%BF%9D%E9%99%A9%E5%B8%82%E5%9C%BA%E7%9A%84%E5%9C%B0%E4%BD%8D&rsf=101633403&rsp=8&f=1&rs_src=0&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&rsv_dl=brs_28338_9
+                    - generic [ref=e619]: 中国保险在全球保险市场的地位
+                - cell "健康保险发展趋势" [ref=e620]:
+                  - link "健康保险发展趋势" [ref=e621] [cursor=pointer]:
+                    - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF&rsf=101633403&rsp=9&f=1&rs_src=0&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&rsv_dl=brs_28338_10
+                    - generic [ref=e623]: 健康保险发展趋势
+      - generic [ref=e626]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e627]:
+          - generic [ref=e628]: "1"
+        - link "2" [ref=e629] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&pn=10&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&ie=utf-8&usm=1&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&topic_pn=
+          - generic [ref=e630]: "2"
+        - link "3" [ref=e631] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&pn=20&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&ie=utf-8&usm=1&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&topic_pn=
+          - generic [ref=e632]: "3"
+        - link "4" [ref=e633] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&pn=30&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&ie=utf-8&usm=1&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&topic_pn=
+          - generic [ref=e634]: "4"
+        - link "5" [ref=e635] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&pn=40&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&ie=utf-8&usm=1&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&topic_pn=
+          - generic [ref=e636]: "5"
+        - link "6" [ref=e637] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&pn=50&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&ie=utf-8&usm=1&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&topic_pn=
+          - generic [ref=e638]: "6"
+        - link "7" [ref=e639] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&pn=60&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&ie=utf-8&usm=1&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&topic_pn=
+          - generic [ref=e640]: "7"
+        - link "8" [ref=e641] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&pn=70&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&ie=utf-8&usm=1&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&topic_pn=
+          - generic [ref=e642]: "8"
+        - link "9" [ref=e643] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&pn=80&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&ie=utf-8&usm=1&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&topic_pn=
+          - generic [ref=e644]: "9"
+        - link "10" [ref=e645] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&pn=90&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&ie=utf-8&usm=1&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&topic_pn=
+          - generic [ref=e646]: "10"
+        - link "下一页" [ref=e647] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&pn=10&oq=%E4%B8%AD%E5%9B%BD%E5%95%86%E4%B8%9A%E5%81%A5%E5%BA%B7%E4%BF%9D%E9%99%A9%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E4%B8%87%E4%BA%BF%E5%85%83%20%E5%A2%9E%E9%80%9F&ie=utf-8&usm=1&rsv_pq=9c64f76601e62202&rsv_t=c8afqR9%2BzDTcs1t3uFwmPG886GRDakOWmnn3HEIdx2aGZKp7HMOC0F9xPFI&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e648]
+      - generic [ref=e651]:
+        - link "帮助" [ref=e652] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e653] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e654] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e655] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

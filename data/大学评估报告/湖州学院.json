@@ -1,0 +1,38 @@
+{
+  "university_name": "湖州学院",
+  "short_name": "Huzhou College / HZXY",
+  "established_year": 2021,
+  "type": "Public Undergraduate",
+  "location": {
+    "province": "Zhejiang",
+    "city": "Huzhou",
+    "campus": "Xisai Mountain Campus"
+  },
+  "academic_stats": {
+    "provincial_first_class_disciplines": [
+      "Mechanical Engineering",
+      "Pharmacy"
+    ],
+    "phd_teacher_ratio": "35%",
+    "master_points": 0
+  },
+  "admission_data_2024": {
+    "zhejiang_rank_median": 75416,
+    "anhui_history_rank": 25795,
+    "jiangsu_physics_rank": 116554
+  },
+  "employment_stats": {
+    "further_study_rate": "9.70%",
+    "local_employment_rate": ">25%",
+    "avg_starting_salary": 5850
+  },
+  "evaluation_scores": {
+    "academic": 2.5,
+    "employment": 3.2,
+    "location": 4.2,
+    "globalization": 1.8,
+    "student_freedom": 4.0,
+    "brand": 2.8,
+    "overall_weighted": 3.0
+  }
+}

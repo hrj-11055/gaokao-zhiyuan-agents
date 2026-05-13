@@ -1,0 +1,61 @@
+{
+  "university_name": "福建农林大学",
+  "short_name": "FAFU",
+  "location": {
+    "province": "福建",
+    "city": "福州",
+    "campus": [
+      "金山校区",
+      "旗山校区",
+      "安溪校区"
+    ]
+  },
+  "academic_level": {
+    "double_first_class": false,
+    "key_disciplines": {
+      "A_plus": [
+        "植物保护"
+      ],
+      "A_minus": [
+        "生态学",
+        "风景园林学"
+      ],
+      "B_plus": [
+        "林学",
+        "生物学"
+      ]
+    },
+    "esi_top_1_permille": [
+      "植物学与动物学",
+      "农业科学"
+    ]
+  },
+  "admission_stats": {
+    "fujian_physics_rank_2025_est": 38000,
+    "fujian_history_rank_2025_est": 6800
+  },
+  "career_development": {
+    "further_study_rate": "29.7%",
+    "selection_student_advantage": "High",
+    "top_employers": [
+      "福建省政府部门",
+      "大北农",
+      "海大集团",
+      "国家电网"
+    ]
+  },
+  "campus_life": {
+    "dormitory_rating": 3.5,
+    "food_rating": 4.5,
+    "transfer_major_difficulty": "Low"
+  },
+  "evaluation_scores": {
+    "academic": 4.5,
+    "employment": 4.0,
+    "location": 3.8,
+    "globalization": 3.5,
+    "student_freedom": 3.7,
+    "brand_asset": 3.8,
+    "overall": 4.03
+  }
+}

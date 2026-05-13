@@ -1,0 +1,35 @@
+{
+  "university_name": "北京邮电大学世纪学院",
+  "short_name": "BUPTCC",
+  "location": {
+    "province": "北京",
+    "district": "延庆区",
+    "address": "康庄镇"
+  },
+  "academic_profile": {
+    "type": "民办独立学院",
+    "core_disciplines": [
+      "通信工程",
+      "计算机科学与技术",
+      "软件工程"
+    ],
+    "faculty_senior_ratio": "35%"
+  },
+  "employment_data": {
+    "overall_employment_rate": "92%+",
+    "it_industry_ratio": "65%",
+    "average_starting_salary": 6300,
+    "top_employers": [
+      "中国移动",
+      "中国电信",
+      "华为",
+      "京东"
+    ]
+  },
+  "admission_guide": {
+    "avg_score_beijing_2024": 445,
+    "competitive_edge": "BUPT Brand, Beijing Location",
+    "risk_factor": "Transition Uncertainty, Remote Location"
+  },
+  "comprehensive_score": 2.81
+}

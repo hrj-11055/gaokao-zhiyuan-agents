@@ -1,0 +1,41 @@
+{
+  "university_name": "中国社会科学院大学",
+  "short_name": "UCASS / 社科大",
+  "academic": {
+    "a_plus_count": 2,
+    "a_count": 4,
+    "a_minus_count": 2,
+    "academician_equivalent_count": 190,
+    "mentor_student_ratio": "1:2 (本科师徒制)"
+  },
+  "admission": {
+    "avg_liberal_arts_percentile": "0.25%",
+    "avg_science_percentile": "0.95%",
+    "difficulty_level": "Extreme"
+  },
+  "employment": {
+    "further_study_rate": "71.0%",
+    "domestic_further_study_rate": "52.4%",
+    "overseas_further_study_rate": "18.6%",
+    "top_employer_sectors": [
+      "Government",
+      "Think Tanks",
+      "State-owned Enterprises"
+    ],
+    "starting_salary_median": 10250
+  },
+  "location": {
+    "city": "北京",
+    "campus": "良乡校区 (主), 望京校区",
+    "city_gdp_2024": "4.37T"
+  },
+  "scores": {
+    "academic_capital": 4.9,
+    "career_realization": 4.7,
+    "location_industry": 4.2,
+    "globalization": 3.9,
+    "student_empowerment": 4.5,
+    "brand_assets": 4.6,
+    "comprehensive_score": 4.59
+  }
+}

@@ -1,0 +1,525 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 暨南大学 石牌校区 番禺校区 宿舍 条件 几人间 空调 独卫
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA+%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA+%E5%AE%BF%E8%88%8D+%E6%9D%A1%E4%BB%B6+%E5%87%A0%E4%BA%BA%E9%97%B4+%E7%A9%BA%E8%B0%83+%E7%8B%AC%E5%8D%AB&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2210497161115263588842%22%2C%22ori_lid%22%3A%2210497161115263588842%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=91ad686b015459ea&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA+%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA+%E5%AE%BF%E8%88%8D+%E6%9D%A1%E4%BB%B6+%E5%87%A0%E4%BA%BA%E9%97%B4+%E7%A9%BA%E8%B0%83+%E7%8B%AC%E5%8D%AB
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA+%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA+%E5%AE%BF%E8%88%8D+%E6%9D%A1%E4%BB%B6+%E5%87%A0%E4%BA%BA%E9%97%B4+%E7%A9%BA%E8%B0%83+%E7%8B%AC%E5%8D%AB
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=91ad686b015459ea&ie=utf-8&wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA+%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA+%E5%AE%BF%E8%88%8D+%E6%9D%A1%E4%BB%B6+%E5%87%A0%E4%BA%BA%E9%97%B4+%E7%A9%BA%E8%B0%83+%E7%8B%AC%E5%8D%AB&rsv_spt=7&rsv_bp=1&f=8&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA+%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA+%E5%AE%BF%E8%88%8D+%E6%9D%A1%E4%BB%B6+%E5%87%A0%E4%BA%BA%E9%97%B4+%E7%A9%BA%E8%B0%83+%E7%8B%AC%E5%8D%AB&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA+%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA+%E5%AE%BF%E8%88%8D+%E6%9D%A1%E4%BB%B6+%E5%87%A0%E4%BA%BA%E9%97%B4+%E7%A9%BA%E8%B0%83+%E7%8B%AC%E5%8D%AB
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA+%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA+%E5%AE%BF%E8%88%8D+%E6%9D%A1%E4%BB%B6+%E5%87%A0%E4%BA%BA%E9%97%B4+%E7%A9%BA%E8%B0%83+%E7%8B%AC%E5%8D%AB
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA+%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA+%E5%AE%BF%E8%88%8D+%E6%9D%A1%E4%BB%B6+%E5%87%A0%E4%BA%BA%E9%97%B4+%E7%A9%BA%E8%B0%83+%E7%8B%AC%E5%8D%AB
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA+%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA+%E5%AE%BF%E8%88%8D+%E6%9D%A1%E4%BB%B6+%E5%87%A0%E4%BA%BA%E9%97%B4+%E7%A9%BA%E8%B0%83+%E7%8B%AC%E5%8D%AB
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  暨南大学国际学院  暨南大学番禺宿舍图片  暨南大学石牌宿舍条件  暨南大学石牌校区宿舍  暨南大学番禺校区好吗  广州暨南大学宿舍图片    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 厨师锅里吐口水后继续出餐 店长回应 9 伊朗外长向巴基斯坦递交停战条件 10 枪击发生时特朗普旁的华裔女记者是谁 11 黄鳝被喂避孕药是传了30年的谣言 12 A股一季度最赚钱公司曝光 13 女性多和好友聚会能“续命” 14 男子杀害岳父后潜逃33年终落网 15 高市政府越过“最后一根红线”" [ref=e69]:
+              - cell "相关搜索  暨南大学国际学院  暨南大学番禺宿舍图片  暨南大学石牌宿舍条件  暨南大学石牌校区宿舍  暨南大学番禺校区好吗  广州暨南大学宿舍图片    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 厨师锅里吐口水后继续出餐 店长回应 9 伊朗外长向巴基斯坦递交停战条件 10 枪击发生时特朗普旁的华裔女记者是谁 11 黄鳝被喂避孕药是传了30年的谣言 12 A股一季度最赚钱公司曝光 13 女性多和好友聚会能“续命” 14 男子杀害岳父后潜逃33年终落网 15 高市政府越过“最后一根红线”" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 暨南大学国际学院" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%9B%BD%E9%99%85%E5%AD%A6%E9%99%A2&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=7b3deJUOvAO2%2BQsegjdAttr2qmBYuybtkyh6c8TY%2Bu4tN8vP7APvAoe51WI&rfqid=91ad686b015459ea&rsv_dl=0_prs_28616_1&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsf=101631202
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 暨南大学国际学院
+                      - link " 暨南大学番禺宿舍图片" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E5%AE%BF%E8%88%8D%E5%9B%BE%E7%89%87&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=7b3deJUOvAO2%2BQsegjdAttr2qmBYuybtkyh6c8TY%2Bu4tN8vP7APvAoe51WI&rfqid=91ad686b015459ea&rsv_dl=0_prs_28616_2&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 暨南大学番禺宿舍图片
+                      - link " 暨南大学石牌宿舍条件" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%9F%B3%E7%89%8C%E5%AE%BF%E8%88%8D%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=7b3deJUOvAO2%2BQsegjdAttr2qmBYuybtkyh6c8TY%2Bu4tN8vP7APvAoe51WI&rfqid=91ad686b015459ea&rsv_dl=0_prs_28616_3&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsf=101633403
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 暨南大学石牌宿舍条件
+                      - link " 暨南大学石牌校区宿舍" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%E5%AE%BF%E8%88%8D&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=7b3deJUOvAO2%2BQsegjdAttr2qmBYuybtkyh6c8TY%2Bu4tN8vP7APvAoe51WI&rfqid=91ad686b015459ea&rsv_dl=0_prs_28616_4&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsf=101631202
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 暨南大学石牌校区宿舍
+                      - link " 暨南大学番禺校区好吗" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E5%A5%BD%E5%90%97&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=7b3deJUOvAO2%2BQsegjdAttr2qmBYuybtkyh6c8TY%2Bu4tN8vP7APvAoe51WI&rfqid=91ad686b015459ea&rsv_dl=0_prs_28616_5&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsf=101631202
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 暨南大学番禺校区好吗
+                      - link " 广州暨南大学宿舍图片" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E5%B9%BF%E5%B7%9E%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%AE%BF%E8%88%8D%E5%9B%BE%E7%89%87&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=7b3deJUOvAO2%2BQsegjdAttr2qmBYuybtkyh6c8TY%2Bu4tN8vP7APvAoe51WI&rfqid=91ad686b015459ea&rsv_dl=0_prs_28616_6&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsf=101633403
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 广州暨南大学宿舍图片
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "A股一季度最赚钱公司曝光" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=A%E8%82%A1%E4%B8%80%E5%AD%A3%E5%BA%A6%E6%9C%80%E8%B5%9A%E9%92%B1%E5%85%AC%E5%8F%B8%E6%9B%9D%E5%85%89&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=36afBMfuQaGdDA9DmMDUyOPfAuTXEHoZwzztnOk2C2eOGOuCcGORa7ttziU&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "女性多和好友聚会能“续命”" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=8e34aXQIj%2FnnJ7VPtvTKDpe%2FELRpE%2B%2FzvoVC12DgEBxkmK5Yqkb6xECb0DQ&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "男子杀害岳父后潜逃33年终落网" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E7%94%B7%E5%AD%90%E6%9D%80%E5%AE%B3%E5%B2%B3%E7%88%B6%E5%90%8E%E6%BD%9C%E9%80%8333%E5%B9%B4%E7%BB%88%E8%90%BD%E7%BD%91&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=8e34aXQIj%2FnnJ7VPtvTKDpe%2FELRpE%2B%2FzvoVC12DgEBxkmK5Yqkb6xECb0DQ&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "高市政府越过“最后一根红线”" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=8e34aXQIj%2FnnJ7VPtvTKDpe%2FELRpE%2B%2FzvoVC12DgEBxkmK5Yqkb6xECb0DQ&rqid=91ad686b015459ea&rsf=9c0d20c3208fdbd20f72dc72dbc76304_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e209]:
+            - generic [ref=e211]:
+              - img [ref=e214]
+              - generic:
+                - generic: 
+            - generic [ref=e219]:
+              - generic [ref=e220]: 问题分析中
+              - img [ref=e222]
+          - generic [ref=e246]:
+            - heading "暨南大学番禺校区宿舍:5人间,有空调独立卫浴" [level=3] [ref=e249]:
+              - link "暨南大学番禺校区宿舍:5人间,有空调独立卫浴" [ref=e250] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=vYC6nCTAFQfsshsqYTBqIlQzPH_y424uSEhyMjRmfSsFx8pIveBnNWQsADOG99XU
+                - paragraph [ref=e253]:
+                  - generic [ref=e256]:
+                    - emphasis [ref=e257]: 暨南大学番禺校区宿舍
+                    - text: :5
+                    - emphasis [ref=e258]: 人间
+                    - text: ",有"
+                    - emphasis [ref=e259]: 空调独立卫浴
+            - generic [ref=e260]:
+              - link [ref=e262] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=vYC6nCTAFQfsshsqYTBqIlQzPH_y424uSEhyMjRmfSsFx8pIveBnNWQsADOG99XU
+              - generic [ref=e267]:
+                - generic [ref=e269]: "回复数: 9 发贴时间: 2025年05月03日"
+                - generic [ref=e273]:
+                  - generic [ref=e275]:
+                    - text: "1楼: ..."
+                    - emphasis [ref=e276]: 番禺校区
+                    - text: "##"
+                    - emphasis [ref=e277]: 暨南大学番禺校区宿舍
+                    - text: ...
+                  - generic [ref=e278]: "2楼: 在群里一起找舍友啦"
+                - link "百度贴吧" [ref=e283] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=vYC6nCTAFQfsshsqYTBqIlQzPH_y424uSEhyMjRmfSsFx8pIveBnNWQsADOG99XU
+                  - generic [ref=e284]: 百度贴吧
+                  - generic [ref=e286]: 
+          - generic [ref=e290]:
+            - heading "暨大宿舍大揭秘🏠5校区避坑...@小茹云朵蒲吖吖的动态" [level=3] [ref=e293]:
+              - link "暨大宿舍大揭秘🏠5校区避坑...@小茹云朵蒲吖吖的动态" [ref=e294] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAHZiS1HF9vQ204j_WVmoD9naipdFOlM87M4i2ebQ7rW6
+                - paragraph [ref=e297]:
+                  - generic [ref=e300]:
+                    - emphasis [ref=e301]: 暨大宿舍
+                    - text: 大揭秘🏠5
+                    - emphasis [ref=e302]: 校区
+                    - text: 避坑...@小茹云朵蒲吖吖的动态
+            - generic [ref=e307]:
+              - text: 2025年7月12日
+              - generic [ref=e308]:
+                - emphasis [ref=e309]: 二、番禺校区 - 宿舍类型:五人间(需开学办理房卡
+                - text: ",电子锁门禁) - 宿舍条件: - 空调、独立卫生间、阳台 - 热水供应:24小时不断 - 门禁时间:周日至周四23:30(周五周六24:00) - 快递地址:广东省广州市番禺区南村镇兴业大道东855号暨南大学番禺校区 --- 三、华文校区 - 宿舍类型:忠爱楼、信义楼、笃行楼、..."
+            - generic [ref=e310]:
+              - link [ref=e311] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAHZiS1HF9vQ204j_WVmoD9naipdFOlM87M4i2ebQ7rW6
+              - link [ref=e315] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAHZiS1HF9vQ204j_WVmoD9naipdFOlM87M4i2ebQ7rW6
+              - link [ref=e319] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAHZiS1HF9vQ204j_WVmoD9naipdFOlM87M4i2ebQ7rW6
+              - link [ref=e323] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAHZiS1HF9vQ204j_WVmoD9naipdFOlM87M4i2ebQ7rW6
+              - link "5" [ref=e327] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAHZiS1HF9vQ204j_WVmoD9naipdFOlM87M4i2ebQ7rW6
+                - generic [ref=e332]:
+                  - generic [ref=e333]: 
+                  - text: "5"
+            - link "头像 小茹云朵蒲吖吖" [ref=e338] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAHZiS1HF9vQ204j_WVmoD9naipdFOlM87M4i2ebQ7rW6
+              - img "头像" [ref=e341]
+              - generic [ref=e342]: 小茹云朵蒲吖吖
+              - generic [ref=e344]: 
+          - generic [ref=e346]:
+            - generic [ref=e347]: 大家还在搜
+            - generic [ref=e348]:
+              - link "暨南大学国际学院" [ref=e349] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%9B%BD%E9%99%85%E5%AD%A6%E9%99%A2&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=7fa9WUduQT5%2FFG8aBdvzo2eJAQBrIQcZxn3V5ZQha3Sfj4KdPary47yWXRc&rsf=101631202&rsv_dl=0_prs_28608_1
+                - generic [ref=e351]: 暨南大学国际学院
+              - link "暨南大学番禺宿舍图片" [ref=e352] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E5%AE%BF%E8%88%8D%E5%9B%BE%E7%89%87&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=5c9dXExBCUQk1WZrCvMSkPScdP%2FIHFBVRGH4TfR5cKneVawzmS1IDD0HIUw&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e354]: 暨南大学番禺宿舍图片
+              - link "暨南大学石牌宿舍条件" [ref=e355] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%9F%B3%E7%89%8C%E5%AE%BF%E8%88%8D%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=5c9dXExBCUQk1WZrCvMSkPScdP%2FIHFBVRGH4TfR5cKneVawzmS1IDD0HIUw&rsf=101633403&rsv_dl=0_prs_28608_3
+                - generic [ref=e357]: 暨南大学石牌宿舍条件
+              - link "暨南大学石牌校区宿舍" [ref=e358] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%E5%AE%BF%E8%88%8D&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=5c9dXExBCUQk1WZrCvMSkPScdP%2FIHFBVRGH4TfR5cKneVawzmS1IDD0HIUw&rsf=101631202&rsv_dl=0_prs_28608_4
+                - generic [ref=e360]: 暨南大学石牌校区宿舍
+              - link "暨南大学番禺校区好吗" [ref=e361] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E5%A5%BD%E5%90%97&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=5c9dXExBCUQk1WZrCvMSkPScdP%2FIHFBVRGH4TfR5cKneVawzmS1IDD0HIUw&rsf=101631202&rsv_dl=0_prs_28608_5
+                - generic [ref=e363]: 暨南大学番禺校区好吗
+              - link "广州暨南大学宿舍图片" [ref=e364] [cursor=pointer]:
+                - /url: /s?wd=%E5%B9%BF%E5%B7%9E%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%AE%BF%E8%88%8D%E5%9B%BE%E7%89%87&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=5c9dXExBCUQk1WZrCvMSkPScdP%2FIHFBVRGH4TfR5cKneVawzmS1IDD0HIUw&rsf=101633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e366]: 广州暨南大学宿舍图片
+              - link "暨南大学江门校区" [ref=e367] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%B1%9F%E9%97%A8%E6%A0%A1%E5%8C%BA&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=5c9dXExBCUQk1WZrCvMSkPScdP%2FIHFBVRGH4TfR5cKneVawzmS1IDD0HIUw&rsf=100631202&rsv_dl=0_prs_28608_7
+                - generic [ref=e369]: 暨南大学江门校区
+              - link "暨南大学番禺校区可以进去参观吗" [ref=e370] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E5%8F%AF%E4%BB%A5%E8%BF%9B%E5%8E%BB%E5%8F%82%E8%A7%82%E5%90%97&usm=2&ie=utf-8&rsv_pq=91ad686b015459ea&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&rsv_t=5c9dXExBCUQk1WZrCvMSkPScdP%2FIHFBVRGH4TfR5cKneVawzmS1IDD0HIUw&rsf=101636803&rsv_dl=0_prs_28608_8
+                - generic [ref=e372]: 暨南大学番禺校区可以进去参观吗
+          - generic [ref=e376]:
+            - heading "暨南大学宿舍环境怎么样" [level=3] [ref=e379]:
+              - link "暨南大学宿舍环境怎么样" [ref=e380] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8OYXyFa7CEW03jqFqexYX1F5Cb-rybax6E0C-B0e6m7e5n44Bf2ctmGeAnbrY3T2zyvA_gUUCjPht_EfD51gTdjb9eAcVFpPxTFhG2S7owBLY9alyxjH3gQBtOd2FgrYkgPgy9ufFz0KJL5_ixwOe5qaFX5A-_lBRdy3D3sKCrPU7CRC_i_DZIdaGnZRUbkMMdCIcfkdCpjW-vYZ9aG3pp03vk5cjGCy2zp1s3XGHlSd77wV8nP99oyaciIOtBD0AJvjlL4KAypJuHJgqbns4BsFV0y4lOn0UcASlH_O-qpuiYPtVvvuMS3O9AY_-7gGFa
+                - paragraph [ref=e383]:
+                  - generic [ref=e386]:
+                    - emphasis [ref=e387]: 暨南大学宿舍
+                    - text: 环境怎么样
+            - generic [ref=e392]:
+              - text: 2025年8月13日
+              - generic [ref=e393]:
+                - text: 暨南大学宿舍环境整体良好,各校区均配备空调、独立卫浴等基础生活设施,
+                - emphasis [ref=e394]: 以4-6人间为主
+                - text: ",热水供应稳定,生活便利性较高。不同校区在房型配置、热水供应时间及特色设施上存在差异。 一、石牌校区宿舍概况 石牌校区宿舍类型多样,包括真如苑(4人间)、金陵苑(6人间)、建阳苑(2-3人间)及..."
+            - link "头像 知了爱学" [ref=e399] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8OYXyFa7CEW03jqFqexYX1F5Cb-rybax6E0C-B0e6m7e5n44Bf2ctmGeAnbrY3T2zyvA_gUUCjPht_EfD51gTdjb9eAcVFpPxTFhG2S7owBLY9alyxjH3gQBtOd2FgrYkgPgy9ufFz0KJL5_ixwOe5qaFX5A-_lBRdy3D3sKCrPU7CRC_i_DZIdaGnZRUbkMMdCIcfkdCpjW-vYZ9aG3pp03vk5cjGCy2zp1s3XGHlSd77wV8nP99oyaciIOtBD0AJvjlL4KAypJuHJgqbns4BsFV0y4lOn0UcASlH_O-qpuiYPtVvvuMS3O9AY_-7gGFa
+              - img "头像" [ref=e402]
+              - generic [ref=e403]: 知了爱学
+              - generic [ref=e405]: 
+          - generic [ref=e409]:
+            - heading "暨南大学宿舍环境如何" [level=3] [ref=e412]:
+              - link "暨南大学宿舍环境如何" [ref=e413] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8OYXyFa7CEW03jqFqexYX1F5Cb-rybax6E0C-B0e6m7e5n44Bf2ctmGeAnbrY3T2zyvA_gUUCjPht_EfD51gTdjb9eAcVFpPxTFhG2S7owBLwmskr9XQzWy9UDvEqwSGJsNzNVDMx8rQLiMIq_q5BYd_cEaHIyorwsoVsD9_mdU3NKwZJ5L2lJqC-jJy7iZezG5_zVd724bLZRtHtiMk7ER_vVPXNGAwV8peG0pdT3GEK8lUlPShxYIgDmxeH6GGDiUFsxnbLV66s4hx-GRlcm0bsMM9lruPNbzcocpf4sCubKQQUDcVzAq2NI-sr21eW_
+                - paragraph [ref=e416]:
+                  - generic [ref=e419]:
+                    - emphasis [ref=e420]: 暨南大学宿舍
+                    - text: 环境如何
+            - generic [ref=e425]:
+              - text: 2025年8月10日
+              - generic [ref=e426]:
+                - emphasis [ref=e427]: ==随机分配宿舍==:四人间或六人间
+                - text: ",配备空调/风扇、独立卫浴、阳台;部分楼栋允许自购电器。 ==热水分时供应==:每日7:00-11:00及17:00-24:00;限电2500W,易触发跳闸。 ==安全提示==:台风天气门窗易异响;门禁与其他校区一致。"
+            - link "头像 知了爱学" [ref=e432] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8OYXyFa7CEW03jqFqexYX1F5Cb-rybax6E0C-B0e6m7e5n44Bf2ctmGeAnbrY3T2zyvA_gUUCjPht_EfD51gTdjb9eAcVFpPxTFhG2S7owBLwmskr9XQzWy9UDvEqwSGJsNzNVDMx8rQLiMIq_q5BYd_cEaHIyorwsoVsD9_mdU3NKwZJ5L2lJqC-jJy7iZezG5_zVd724bLZRtHtiMk7ER_vVPXNGAwV8peG0pdT3GEK8lUlPShxYIgDmxeH6GGDiUFsxnbLV66s4hx-GRlcm0bsMM9lruPNbzcocpf4sCubKQQUDcVzAq2NI-sr21eW_
+              - img "头像" [ref=e435]
+              - generic [ref=e436]: 知了爱学
+              - generic [ref=e438]: 
+          - generic [ref=e442]:
+            - heading "暨南大学五校区宿舍环境如何?均配空调独立卫浴" [level=3] [ref=e445]:
+              - link "暨南大学五校区宿舍环境如何?均配空调独立卫浴" [ref=e446] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=vYC6nCTAFQfsshsqYTBqIlQzPH_y424uSEhyMjRmfSqGhgw8BRqcUyj5-0aoZNrK
+                - paragraph [ref=e449]:
+                  - generic [ref=e452]:
+                    - emphasis [ref=e453]: 暨南大学
+                    - text: 五
+                    - emphasis [ref=e454]: 校区宿舍
+                    - text: 环境如何?均配
+                    - emphasis [ref=e455]: 空调独立卫浴
+            - generic [ref=e457]: "回复数: 4 发贴时间: 2025年12月01日"
+            - generic [ref=e461]:
+              - generic [ref=e463]:
+                - text: "1楼:"
+                - emphasis [ref=e464]: 暨南大学
+                - text: 有几个
+                - emphasis [ref=e465]: 校区
+                - text: ",各"
+                - emphasis [ref=e466]: 校区
+                - text: 的
+                - emphasis [ref=e467]: 宿舍
+                - text: 环境如何?
+                - emphasis [ref=e468]: 几人间
+                - text: ",有..."
+              - generic [ref=e469]: "2楼: 暨南大学有石牌校区、番禺校区、华文校区、珠海校区和..."
+            - link "百度贴吧" [ref=e474] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=vYC6nCTAFQfsshsqYTBqIlQzPH_y424uSEhyMjRmfSqGhgw8BRqcUyj5-0aoZNrK
+              - generic [ref=e475]: 百度贴吧
+              - generic [ref=e477]: 
+          - generic [ref=e481]:
+            - heading "暨大宿舍环境大揭秘!🏠 最...@海边的曼彻斯特的动态" [level=3] [ref=e484]:
+              - link "暨大宿舍环境大揭秘!🏠 最...@海边的曼彻斯特的动态" [ref=e485] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAJg_qCi-bOvVoP21ZURznXHqNNcKs-tQOWKJB5Bcxj80
+                - paragraph [ref=e488]:
+                  - generic [ref=e491]:
+                    - emphasis [ref=e492]: 暨大宿舍
+                    - text: 环境大揭秘!🏠 最...@海边的曼彻斯特的动态
+            - generic [ref=e497]:
+              - text: 2025年3月10日
+              - generic [ref=e498]:
+                - text: 四人间则是上床下桌。 建阳苑:这里有2人间、3人间和4人间,每个宿舍都有开放式阳台。石牌校区的所有宿舍都配备了空调,地址在广州市天河区黄埔大道西601号。 番禺校区🌳番禺校区的宿舍主要是
+                - emphasis [ref=e499]: 5人间
+                - text: ",上床下桌的设计,每个人都有独立的学习空间。宿舍也配备了空调,环境还是相当不错的。希望这些信息能帮到大家,对宿舍..."
+            - generic [ref=e500]:
+              - link [ref=e502] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAJg_qCi-bOvVoP21ZURznXHqNNcKs-tQOWKJB5Bcxj80
+              - link [ref=e506] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAJg_qCi-bOvVoP21ZURznXHqNNcKs-tQOWKJB5Bcxj80
+              - link [ref=e510] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAJg_qCi-bOvVoP21ZURznXHqNNcKs-tQOWKJB5Bcxj80
+              - link "4" [ref=e514] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAJg_qCi-bOvVoP21ZURznXHqNNcKs-tQOWKJB5Bcxj80
+                - generic [ref=e517]:
+                  - generic [ref=e518]: 
+                  - text: "4"
+            - link "头像 花信如期" [ref=e523] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=1qc7nygSJkdk3Ik8fOyW8YT9W1yEJ3CDUC-djnegGfFnTEGD00hKnMOU6MHeKSgUazfdHU4XD59_uPHoJ-2pAJg_qCi-bOvVoP21ZURznXHqNNcKs-tQOWKJB5Bcxj80
+              - img "头像" [ref=e526]
+              - generic [ref=e527]: 花信如期
+              - generic [ref=e529]: 
+          - generic [ref=e533]:
+            - heading "暨南大学宿舍条件怎么样,有空调吗(含宿舍图片)_大学生必备网" [level=3] [ref=e536]:
+              - link "暨南大学宿舍条件怎么样,有空调吗(含宿舍图片)_大学生必备网" [ref=e537] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1GeRZzbtZxelfvnez0qENIZACbrK44XRWLENyJs4NmHQagdllw8RtkCT0CBbt53H
+                - paragraph [ref=e540]:
+                  - generic [ref=e543]:
+                    - emphasis [ref=e544]: 暨南大学宿舍条件
+                    - text: 怎么样,有
+                    - emphasis [ref=e545]: 空调
+                    - text: 吗(含宿舍图片)_大学生必备网
+            - generic [ref=e546]:
+              - link [ref=e548] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1GeRZzbtZxelfvnez0qENIZACbrK44XRWLENyJs4NmHQagdllw8RtkCT0CBbt53H
+              - generic [ref=e553]:
+                - generic [ref=e558]:
+                  - text: 2023年10月10日
+                  - generic [ref=e559]:
+                    - text: 1、
+                    - emphasis [ref=e560]: 暨南大学宿舍条件
+                    - emphasis [ref=e561]: 石牌校区
+                    - text: :宿舍分为真如苑、周转楼、金陵苑和建阳苑四个区域。宿舍统一配备有
+                    - emphasis [ref=e562]: 空调
+                    - text: 和独立卫生间,部分宿舍楼栋配有电梯、公共微波炉。
+                    - emphasis [ref=e563]: 番禺校区
+                    - text: :宿舍楼包括两个区域,一个宿舍区靠近运动场和兴安超市(T1、T2、T3、T4、T5),另一区域靠近食堂和东门(T10、T11、T12)。宿舍统一配备有空调和独立卫生...
+                - link "大学生必备网" [ref=e568] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=1GeRZzbtZxelfvnez0qENIZACbrK44XRWLENyJs4NmHQagdllw8RtkCT0CBbt53H
+                  - generic [ref=e569]: 大学生必备网
+                  - generic [ref=e571]: 
+          - generic [ref=e575]:
+            - 'heading "暨大住宿体验如何?师兄师姐们这样说: - 知乎" [level=3] [ref=e578]':
+              - 'link "暨大住宿体验如何?师兄师姐们这样说: - 知乎" [ref=e579] [cursor=pointer]':
+                - /url: http://www.baidu.com/link?url=1GeRZzbtZxelfvnez0qEN4M4Qt9blMZUROB_mFQ54Qyl7piOOgecV6jdwsqyaSbe
+                - paragraph [ref=e582]:
+                  - generic [ref=e585]:
+                    - emphasis [ref=e586]: 暨大住宿
+                    - text: "体验如何?师兄师姐们这样说: - 知乎"
+            - generic [ref=e591]:
+              - text: 2023年7月28日
+              - generic [ref=e592]:
+                - text: "校区:番禺校区 宿舍楼栋:T5 几人间:"
+                - emphasis [ref=e593]: 5人间
+                - text: "住宿体验: 宿舍除了五个人比较挤以外其实都挺好的。刚进宿舍的床位都是分好的,我分到的是一号床也就是唯一下铺和单人桌的,分给每个人的桌面空间挺小的,我的单人桌只有大概60cm长。宿舍有空调有独立卫浴,24小时不断电断网,热水每天有两个很短的时段没有,只有温水(具..."
+            - generic [ref=e594]:
+              - link [ref=e595] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1GeRZzbtZxelfvnez0qEN4M4Qt9blMZUROB_mFQ54Qyl7piOOgecV6jdwsqyaSbe
+              - link [ref=e599] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1GeRZzbtZxelfvnez0qEN4M4Qt9blMZUROB_mFQ54Qyl7piOOgecV6jdwsqyaSbe
+              - link [ref=e603] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1GeRZzbtZxelfvnez0qEN4M4Qt9blMZUROB_mFQ54Qyl7piOOgecV6jdwsqyaSbe
+              - link [ref=e607] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1GeRZzbtZxelfvnez0qEN4M4Qt9blMZUROB_mFQ54Qyl7piOOgecV6jdwsqyaSbe
+              - link "16" [ref=e611] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1GeRZzbtZxelfvnez0qEN4M4Qt9blMZUROB_mFQ54Qyl7piOOgecV6jdwsqyaSbe
+                - generic [ref=e616]:
+                  - generic [ref=e617]: 
+                  - text: "16"
+            - link "头像 知乎" [ref=e622] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=1GeRZzbtZxelfvnez0qEN4M4Qt9blMZUROB_mFQ54Qyl7piOOgecV6jdwsqyaSbe
+              - img "头像" [ref=e625]
+              - generic [ref=e626]: 知乎
+              - generic [ref=e628]: 
+        - generic [ref=e631]:
+          - generic [ref=e632]: 相关搜索
+          - table [ref=e633]:
+            - rowgroup [ref=e634]:
+              - row "暨南大学国际学院 暨南大学番禺宿舍图片" [ref=e635]:
+                - cell "暨南大学国际学院" [ref=e636]:
+                  - link "暨南大学国际学院" [ref=e637] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%9B%BD%E9%99%85%E5%AD%A6%E9%99%A2&rsf=101631202&rsp=0&f=1&rs_src=0&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&rsv_dl=brs_28338_1
+                    - generic [ref=e639]: 暨南大学国际学院
+                - cell "暨南大学番禺宿舍图片" [ref=e640]:
+                  - link "暨南大学番禺宿舍图片" [ref=e641] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E5%AE%BF%E8%88%8D%E5%9B%BE%E7%89%87&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&rsv_dl=brs_28338_2
+                    - generic [ref=e643]: 暨南大学番禺宿舍图片
+              - row "暨南大学石牌宿舍条件 暨南大学石牌校区宿舍" [ref=e644]:
+                - cell "暨南大学石牌宿舍条件" [ref=e645]:
+                  - link "暨南大学石牌宿舍条件" [ref=e646] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%9F%B3%E7%89%8C%E5%AE%BF%E8%88%8D%E6%9D%A1%E4%BB%B6&rsf=101633403&rsp=2&f=1&rs_src=0&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&rsv_dl=brs_28338_3
+                    - generic [ref=e648]: 暨南大学石牌宿舍条件
+                - cell "暨南大学石牌校区宿舍" [ref=e649]:
+                  - link "暨南大学石牌校区宿舍" [ref=e650] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%E5%AE%BF%E8%88%8D&rsf=101631202&rsp=3&f=1&rs_src=0&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&rsv_dl=brs_28338_4
+                    - generic [ref=e652]: 暨南大学石牌校区宿舍
+              - row "广州暨南大学宿舍图片 暨南大学番禺校区好吗" [ref=e653]:
+                - cell "广州暨南大学宿舍图片" [ref=e654]:
+                  - link "广州暨南大学宿舍图片" [ref=e655] [cursor=pointer]:
+                    - /url: /s?wd=%E5%B9%BF%E5%B7%9E%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%AE%BF%E8%88%8D%E5%9B%BE%E7%89%87&rsf=101633403&rsp=4&f=1&rs_src=0&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&rsv_dl=brs_28338_5
+                    - generic [ref=e657]: 广州暨南大学宿舍图片
+                - cell "暨南大学番禺校区好吗" [ref=e658]:
+                  - link "暨南大学番禺校区好吗" [ref=e659] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E5%A5%BD%E5%90%97&rsf=101631202&rsp=5&f=1&rs_src=0&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&rsv_dl=brs_28338_6
+                    - generic [ref=e661]: 暨南大学番禺校区好吗
+              - row "暨南大学番禺校区可以进去参观吗 暨南大学番禺校区在建工程" [ref=e662]:
+                - cell "暨南大学番禺校区可以进去参观吗" [ref=e663]:
+                  - link "暨南大学番禺校区可以进去参观吗" [ref=e664] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E5%8F%AF%E4%BB%A5%E8%BF%9B%E5%8E%BB%E5%8F%82%E8%A7%82%E5%90%97&rsf=101636803&rsp=6&f=1&rs_src=0&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&rsv_dl=brs_28338_7
+                    - generic [ref=e666]: 暨南大学番禺校区可以进去参观吗
+                - cell "暨南大学番禺校区在建工程" [ref=e667]:
+                  - link "暨南大学番禺校区在建工程" [ref=e668] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E5%9C%A8%E5%BB%BA%E5%B7%A5%E7%A8%8B&rsf=100631202&rsp=7&f=1&rs_src=0&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&rsv_dl=brs_28338_8
+                    - generic [ref=e670]: 暨南大学番禺校区在建工程
+              - row "暨南大学江门校区 暨南大学广州石牌校区" [ref=e671]:
+                - cell "暨南大学江门校区" [ref=e672]:
+                  - link "暨南大学江门校区" [ref=e673] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%B1%9F%E9%97%A8%E6%A0%A1%E5%8C%BA&rsf=100631202&rsp=8&f=1&rs_src=0&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&rsv_dl=brs_28338_9
+                    - generic [ref=e675]: 暨南大学江门校区
+                - cell "暨南大学广州石牌校区" [ref=e676]:
+                  - link "暨南大学广州石牌校区" [ref=e677] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%B9%BF%E5%B7%9E%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA&rsf=100631202&rsp=9&f=1&rs_src=0&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&rsv_dl=brs_28338_10
+                    - generic [ref=e679]: 暨南大学广州石牌校区
+      - generic [ref=e682]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e683]:
+          - generic [ref=e684]: "1"
+        - link "2" [ref=e685] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&pn=10&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&ie=utf-8&usm=2&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&topic_pn=
+          - generic [ref=e686]: "2"
+        - link "3" [ref=e687] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&pn=20&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&ie=utf-8&usm=2&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&topic_pn=
+          - generic [ref=e688]: "3"
+        - link "4" [ref=e689] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&pn=30&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&ie=utf-8&usm=2&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&topic_pn=
+          - generic [ref=e690]: "4"
+        - link "5" [ref=e691] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&pn=40&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&ie=utf-8&usm=2&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&topic_pn=
+          - generic [ref=e692]: "5"
+        - link "6" [ref=e693] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&pn=50&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&ie=utf-8&usm=2&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&topic_pn=
+          - generic [ref=e694]: "6"
+        - link "7" [ref=e695] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&pn=60&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&ie=utf-8&usm=2&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&topic_pn=
+          - generic [ref=e696]: "7"
+        - link "8" [ref=e697] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&pn=70&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&ie=utf-8&usm=2&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&topic_pn=
+          - generic [ref=e698]: "8"
+        - link "9" [ref=e699] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&pn=80&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&ie=utf-8&usm=2&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&topic_pn=
+          - generic [ref=e700]: "9"
+        - link "10" [ref=e701] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&pn=90&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&ie=utf-8&usm=2&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&topic_pn=
+          - generic [ref=e702]: "10"
+        - link "下一页" [ref=e703] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&pn=10&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%20%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%20%E5%AE%BF%E8%88%8D%20%E6%9D%A1%E4%BB%B6%20%E5%87%A0%E4%BA%BA%E9%97%B4%20%E7%A9%BA%E8%B0%83%20%E7%8B%AC%E5%8D%AB&ie=utf-8&usm=2&rsv_pq=91ad686b015459ea&rsv_t=b4cacILSpPly0IwkbJh%2FN9QplWGtDv6JmbSU%2B1Tdt7bvBExia5JpCtRUYiE&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e704]
+      - generic [ref=e707]:
+        - link "帮助" [ref=e708] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e709] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e710] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e711] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

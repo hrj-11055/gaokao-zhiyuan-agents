@@ -1,0 +1,38 @@
+{
+  "university_name": "北京信息科技大学",
+  "short_name": "北信科 / BISTU",
+  "tags": [
+    "信息特色",
+    "工科强校",
+    "高薪就业",
+    "北京属重点"
+  ],
+  "academic": {
+    "key_disciplines": [
+      "仪器科学与技术",
+      "控制科学与工程",
+      "机械工程"
+    ],
+    "phd_programs": 4,
+    "robotics_index": "A+"
+  },
+  "employment": {
+    "salary_rank": 35,
+    "main_industries": [
+      "IT",
+      "Intelligent Manufacturing",
+      "Finance Tech"
+    ],
+    "stay_in_beijing_rate": ">70%"
+  },
+  "campus": {
+    "main_campus": "沙河校区",
+    "dormitory_quality": "Excellent (New Campus)",
+    "location_advantage": "High (Proximity to Zhongguancun)"
+  },
+  "scores": {
+    "comprehensive": 4.03,
+    "employment_roi": 4.8,
+    "academic_depth": 3.5
+  }
+}

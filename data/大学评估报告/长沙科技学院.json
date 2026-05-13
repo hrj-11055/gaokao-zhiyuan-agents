@@ -1,0 +1,45 @@
+{
+  "university_name": "长沙科技学院",
+  "english_name": "Changsha Institute of Technology",
+  "location": {
+    "province": "湖南省",
+    "city": "长沙市",
+    "district": "长沙经开区（汨罗飞地园）"
+  },
+  "attributes": {
+    "type": "民办非营利性",
+    "level": "普通本科",
+    "established_year": 2025,
+    "former_name": "湖南科技经贸职业学院"
+  },
+  "academic_stats": {
+    "academician_count": 1,
+    "key_majors": [
+      "软件工程",
+      "智能制造工程",
+      "数字档案学",
+      "数据科学与大数据技术"
+    ],
+    "provincial_platforms": 5
+  },
+  "admission_guide": {
+    "difficulty_level": "Low",
+    "target_score_range": "本科线上 0-40 分",
+    "main_recruitment_province": "湖南"
+  },
+  "employment_outlook": {
+    "primary_industry": "工程机械、电子信息、数字档案",
+    "strategic_partners": [
+      "三一重工",
+      "天河国云",
+      "中联重科"
+    ],
+    "estimated_starting_salary": "4500-7500 CNY"
+  },
+  "campus_life": {
+    "dormitory_standard": "4人一间/上床下桌/独立卫浴",
+    "management_style": "Strict",
+    "vibe": "Pragmatic/Tech-oriented"
+  },
+  "comprehensive_score": 2.7
+}

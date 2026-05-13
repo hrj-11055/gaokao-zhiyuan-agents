@@ -1,0 +1,438 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 暨南大学 大学排名 软科 校友会 2025 暨南大学 大学排名 软科 校友会 2025
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%259A%25A8%25E5%258D%2597%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E5%25A4%25A7%25E5%25AD%25A6%25E6%258E%2592%25E5%2590%258D%2B%25E8%25BD%25AF%25E7%25A7%2591%2B%25E6%25A0%25A1%25E5%258F%258B%25E4%25BC%259A%2B2025&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiF7FJsZzcX6T6vyd2M36hmdBBK1XITSHAsqBRT-SyMJviD41FEKRoBfpy_tg1o6-IqzPLi6ZawWIYElBnTY0SXsc4nJ88FRLcShK7AakqK_Rl-fppQ&aep=1&ntc=1&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ2J8OegQIEhAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiF7FJsZzcX6T6vyd2M36hmdBBK1XITSHAsqBRT-SyMJviD41FEKRoBfpy_tg1o6-IqzPLi6ZawWIYElBnTY0SXsc4nJ88FRLcShK7AakqK_Rl-fppQ&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ0pQJegQIGBAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiF7FJsZzcX6T6vyd2M36hmdBBK1XITSHAsqBRT-SyMJviD41FEKRoBfpy_tg1o6-IqzPLi6ZawWIYElBnTY0SXsc4nJ88FRLcShK7AakqK_Rl-fppQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQtKgLegQIFhAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiF7FJsZzcX6T6vyd2M36hmdBBK1XITSHAsqBRT-SyMJviD41FEKRoBfpy_tg1o6-IqzPLi6ZawWIYElBnTY0SXsc4nJ88FRLcShK7AakqK_Rl-fppQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiF7FJsZzcX6T6vyd2M36hmdBBK1XITSHAsqBRT-SyMJviD41FEKRoBfpy_tg1o6-IqzPLi6ZawWIYElBnTY0SXsc4nJ88FRLcShK7AakqK_Rl-fppQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQtKgLegQIFRAB
+              - generic [ref=e103]: 视频
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiF7FJsZzcX6T6vyd2M36hmdBBK1XITSHAsqBRT-SyMJviD41FEKRoBfpy_tg1o6-IqzPLi6ZawWIYElBnTY0SXsc4nJ88FRLcShK7AakqK_Rl-fppQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQs6gLegQIFBAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考" [level=2] [ref=e152]:
+          - generic [ref=e153]: 正在思考
+        - progressbar [ref=e154]
+      - main [ref=e156]:
+        - generic [ref=e160]:
+          - generic [ref=e163]:
+            - heading "网页搜索结果" [level=2] [ref=e164]
+            - generic [ref=e165]:
+              - generic [ref=e168]:
+                - link "暨大位居第三！2025中国华南地区最好大学排名！ 搜狐网 https://www.sohu.com › 搜狐文章页 › 前程考研院" [ref=e170] [cursor=pointer]:
+                  - /url: https://www.sohu.com/a/893477187_121061786
+                  - heading "暨大位居第三！2025中国华南地区最好大学排名！" [level=3] [ref=e171]
+                  - generic [ref=e176]:
+                    - generic [ref=e178]: 搜狐网
+                    - generic [ref=e180]: https://www.sohu.com › 搜狐文章页 › 前程考研院
+                - button "关于这条结果的详细信息" [ref=e181] [cursor=pointer]:
+                  - img [ref=e184]
+              - generic [ref=e187]:
+                - generic [ref=e188]: 2025年5月9日 —
+                - generic [ref=e189]:
+                  - text: 前段时间，艾瑞深
+                  - emphasis [ref=e190]: 校友会
+                  - text: 网(Cuaa.net)公布
+                  - emphasis [ref=e191]: 校友会2025
+                  - text: 中国最好
+                  - emphasis [ref=e192]: 大学排名
+                  - text: ... 在
+                  - emphasis [ref=e193]: 2025软科
+                  - text: 中国
+                  - emphasis [ref=e194]: 大学排名
+                  - text: 中，
+                  - emphasis [ref=e195]: 暨南大学
+                  - text: 全国排名第55；在广东省高校排名中 ...
+          - generic [ref=e200]:
+            - heading "相关问题" [level=2] [ref=e202]
+            - generic [ref=e203]:
+              - button "2025年软科中国大学最新排名？" [ref=e209] [cursor=pointer]:
+                - generic [ref=e211]: 2025年软科中国大学最新排名？
+                - img [ref=e214]
+              - button "暨南大学最好的专业？" [ref=e223] [cursor=pointer]:
+                - generic [ref=e225]: 暨南大学最好的专业？
+                - img [ref=e228]
+              - button "暨南大学软科排名？" [ref=e237] [cursor=pointer]:
+                - generic [ref=e239]: 暨南大学软科排名？
+                - img [ref=e242]
+              - button "罗格斯大学相当于国内什么大学？" [ref=e251] [cursor=pointer]:
+                - generic [ref=e253]: 罗格斯大学相当于国内什么大学？
+                - img [ref=e256]
+          - generic [ref=e261]:
+            - heading "网页搜索结果" [level=2] [ref=e262]
+            - generic [ref=e263]:
+              - generic [ref=e266]:
+                - link "权威发布|2025软科中国大学专业排名|国际新闻与传播 软科 https://www.shanghairanking.cn › rankings › bcmr › 2025" [ref=e268] [cursor=pointer]:
+                  - /url: https://www.shanghairanking.cn/rankings/bcmr/2025/050309T
+                  - heading "权威发布|2025软科中国大学专业排名|国际新闻与传播" [level=3] [ref=e269]
+                  - generic [ref=e271]:
+                    - img [ref=e275]
+                    - generic [ref=e277]:
+                      - generic [ref=e279]: 软科
+                      - generic [ref=e281]: https://www.shanghairanking.cn › rankings › bcmr › 2025
+                - button "关于这条结果的详细信息" [ref=e282] [cursor=pointer]:
+                  - img [ref=e285]
+              - generic [ref=e289]:
+                - text: ...
+                - emphasis [ref=e290]: 大学
+                - text: 专业
+                - emphasis [ref=e291]: 排名
+                - text: ”于2021年首次发布，
+                - emphasis [ref=e292]: 排名
+                - text: 覆盖92个专业类的500多个本科专业，发布近3万个专业点，是迄今为止规模最大的中国
+                - emphasis [ref=e293]: 大学
+                - text: 本科专业
+                - emphasis [ref=e294]: 排名
+                - text: ...
+                - emphasis [ref=e295]: 暨南大学
+                - text: . 广州 . 总分21.8 . 6. 双 ...
+              - generic [ref=e297]: 缺少字词： 校友 ‎会
+          - generic [ref=e301]:
+            - generic [ref=e304]:
+              - link "暨南大学-软科世界大学排名(2017-2025) 梦奇大学排名搜索 https://daxue.menggy.com › 软科世界大学排名 › 暨南..." [ref=e306] [cursor=pointer]:
+                - /url: https://daxue.menggy.com/141/%E8%BD%AF%E7%A7%91%E4%B8%96%E7%95%8C%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D/284/%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6
+                - heading "暨南大学-软科世界大学排名(2017-2025)" [level=3] [ref=e307]
+                - generic [ref=e312]:
+                  - generic [ref=e314]: 梦奇大学排名搜索
+                  - generic [ref=e316]: https://daxue.menggy.com › 软科世界大学排名 › 暨南...
+              - button "关于这条结果的详细信息" [ref=e317] [cursor=pointer]:
+                - img [ref=e320]
+            - generic [ref=e324]:
+              - emphasis [ref=e325]: 暨南大学软科
+              - text: 世界
+              - emphasis [ref=e326]: 大学排名
+              - text: ":"
+              - emphasis [ref=e327]: "2025"
+              - text: 年第301位;2024年第201位;2023年第201位;2022年第301位;2021年第401位;2020年第401位;2019年第401位;2018年第501位;2017年第601位.
+          - generic [ref=e331]:
+            - generic [ref=e334]:
+              - link "2025年中国大学排名800强完整榜单（校友会版） 大学生必备网 https://www.dxsbb.com › news" [ref=e336] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/5463.html
+                - heading "2025年中国大学排名800强完整榜单（校友会版）" [level=3] [ref=e337]
+                - generic [ref=e342]:
+                  - generic [ref=e344]: 大学生必备网
+                  - generic [ref=e346]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e347] [cursor=pointer]:
+                - img [ref=e350]
+            - generic [ref=e353]:
+              - generic [ref=e354]: 2025年5月10日 —
+              - generic [ref=e355]:
+                - emphasis [ref=e356]: "2025"
+                - text: 年中国
+                - emphasis [ref=e357]: 大学排名
+                - text: 800强完整榜单（
+                - emphasis [ref=e358]: 校友会
+                - text: 版） ; 44,
+                - emphasis [ref=e359]: 暨南大学
+                - text: ", 64.28 ; 45, 南京农业大学, 64.27 ; 46, 北京邮电大学, 64.06 ; 47, 中国海洋大学, 64.04 ; 47 ..."
+          - generic [ref=e363]:
+            - generic [ref=e366]:
+              - link "最新！2025软科中国大学排名发布（附详细名单）-高校科技 中国教育和科研计算机网 https://www.edu.cn › 202504 › t20250415_2663800" [ref=e368] [cursor=pointer]:
+                - /url: https://www.edu.cn/ke_yan_yu_fa_zhan/gao_xiao_cheng_guo/ssgx/202504/t20250415_2663800.shtml
+                - heading "最新！2025软科中国大学排名发布（附详细名单）-高校科技" [level=3] [ref=e369]
+                - generic [ref=e374]:
+                  - generic [ref=e376]: 中国教育和科研计算机网
+                  - generic [ref=e378]: https://www.edu.cn › 202504 › t20250415_2663800
+              - button "关于这条结果的详细信息" [ref=e379] [cursor=pointer]:
+                - img [ref=e382]
+            - generic [ref=e385]:
+              - generic [ref=e386]: 2025年4月15日 —
+              - generic [ref=e387]:
+                - emphasis [ref=e388]: 2025软科
+                - text: 中国
+                - emphasis [ref=e389]: 大学排名
+                - text: （主榜）的上榜高校共有589所，清华
+                - emphasis [ref=e390]: 大学
+                - text: 、北京
+                - emphasis [ref=e391]: 大学
+                - text: 、浙江
+                - emphasis [ref=e392]: 大学
+                - text: 连续11年蝉联全国三甲，实力强劲。上海交通
+                - emphasis [ref=e393]: 大学
+                - text: 、复旦
+                - emphasis [ref=e394]: 大学
+                - text: 位列全国前五。
+            - generic [ref=e396]: 缺少字词： 暨南 ‎校友
+          - generic [ref=e400]:
+            - generic [ref=e403]:
+              - link "世界大学学术排名 软科 https://www.shanghairanking.cn › rankings › arwu › 2025" [ref=e405] [cursor=pointer]:
+                - /url: https://www.shanghairanking.cn/rankings/arwu/2025
+                - heading "世界大学学术排名" [level=3] [ref=e406]
+                - generic [ref=e408]:
+                  - img [ref=e412]
+                  - generic [ref=e414]:
+                    - generic [ref=e416]: 软科
+                    - generic [ref=e418]: https://www.shanghairanking.cn › rankings › arwu › 2025
+              - button "关于这条结果的详细信息" [ref=e419] [cursor=pointer]:
+                - img [ref=e422]
+            - generic [ref=e426]:
+              - text: 哈佛
+              - emphasis [ref=e427]: 大学
+              - text: . 1. 美国 . 总分100.0 · 斯坦福
+              - emphasis [ref=e428]: 大学
+              - text: . 2. 美国 . 总分76.8 · 麻省理工学院. 3. 美国 . 总分71.2 · 剑桥
+              - emphasis [ref=e429]: 大学
+              - text: . 4. 英国 . 总分68.6 · 加州
+              - emphasis [ref=e430]: 大学
+              - text: "-伯克利. 5. 美国 . 总分 ..."
+            - generic [ref=e432]: 缺少字词： 暨南 ‎会
+          - generic [ref=e436]:
+            - generic [ref=e439]:
+              - link "校友会2025暨南大学专业排名，新闻学全国第四 校友会中国大学排名 http://www.cuaa.net › news › mynews" [ref=e441] [cursor=pointer]:
+                - /url: http://www.cuaa.net/2022index/news/mynews.jsp?information_id=18799
+                - heading "校友会2025暨南大学专业排名，新闻学全国第四" [level=3] [ref=e442]
+                - generic [ref=e444]:
+                  - img [ref=e448]
+                  - generic [ref=e450]:
+                    - generic [ref=e452]: 校友会中国大学排名
+                    - generic [ref=e454]: http://www.cuaa.net › news › mynews
+              - button "关于这条结果的详细信息" [ref=e455] [cursor=pointer]:
+                - img [ref=e458]
+            - generic [ref=e462]:
+              - text: 在
+              - emphasis [ref=e463]: 校友会2025
+              - text: 中国
+              - emphasis [ref=e464]: 大学
+              - text: 一流专业
+              - emphasis [ref=e465]: 排名
+              - text: （研究型）中，
+              - emphasis [ref=e466]: 暨南大学
+              - text: 位居全国第66名，共有1个专业评为中国七星级专业（7☆），9个专业评为中国六星级专业（6☆），27个专业评为中国五星级专业（5☆） ...
+            - generic [ref=e468]:
+              - text: 缺少字词： 软 ‎| 必须包含：
+              - link "软" [ref=e469] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%22%E8%BD%AF%22+%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ5t4CegQIShAB
+          - generic [ref=e473]:
+            - generic [ref=e476]:
+              - link "2025软科中国大学排名正式发布 软科 https://www.shanghairanking.cn › info › detail › code=2..." [ref=e478] [cursor=pointer]:
+                - /url: https://www.shanghairanking.cn/info/detail?code=2025_04_1359
+                - heading "2025软科中国大学排名正式发布" [level=3] [ref=e479]
+                - generic [ref=e481]:
+                  - img [ref=e485]
+                  - generic [ref=e487]:
+                    - generic [ref=e489]: 软科
+                    - generic [ref=e491]: https://www.shanghairanking.cn › info › detail › code=2...
+              - button "关于这条结果的详细信息" [ref=e492] [cursor=pointer]:
+                - img [ref=e495]
+            - generic [ref=e499]:
+              - emphasis [ref=e500]: 2025软科
+              - text: 中国
+              - emphasis [ref=e501]: 大学排名
+              - text: （主榜）的上榜高校共有589所，清华
+              - emphasis [ref=e502]: 大学
+              - text: 、北京
+              - emphasis [ref=e503]: 大学
+              - text: 、浙江
+              - emphasis [ref=e504]: 大学
+              - text: 连续11年蝉联全国三甲，实力强劲。上海交通
+              - emphasis [ref=e505]: 大学
+              - text: 、复旦
+              - emphasis [ref=e506]: 大学
+              - text: 位列全国前五。其他位列全国前十名 ...
+            - generic [ref=e508]: 缺少字词： 暨南 ‎校友
+          - generic [ref=e512]:
+            - generic [ref=e515]:
+              - link "“2025软科中国大学专业排名”，会计学冲进全国前十！ 暨南大学 https://kjx.jnu.edu.cn › 2025 › page" [ref=e517] [cursor=pointer]:
+                - /url: https://kjx.jnu.edu.cn/2025/0626/c13756a839328/page.htm
+                - heading "“2025软科中国大学专业排名”，会计学冲进全国前十！" [level=3] [ref=e518]
+                - generic [ref=e520]:
+                  - img [ref=e524]
+                  - generic [ref=e526]:
+                    - generic [ref=e528]: 暨南大学
+                    - generic [ref=e530]: https://kjx.jnu.edu.cn › 2025 › page
+              - button "关于这条结果的详细信息" [ref=e531] [cursor=pointer]:
+                - img [ref=e534]
+            - generic [ref=e537]:
+              - generic [ref=e538]: 2025年6月26日 —
+              - generic [ref=e539]:
+                - emphasis [ref=e540]: 排名
+                - text: 包括836个专业、涉及93个专业类、12个专业门类。
+                - emphasis [ref=e541]: 暨南大学
+                - text: 管理学院所有专业表现优异，其中会计学、财务管理专业层次被评为最高档A+，工商 ...
+            - generic [ref=e543]: 缺少字词： 校友 ‎会
+          - generic [ref=e547]:
+            - generic [ref=e550]:
+              - link "重磅发布：2025软科中国大学排名 知乎专栏 https://zhuanlan.zhihu.com › ..." [ref=e552] [cursor=pointer]:
+                - /url: https://zhuanlan.zhihu.com/p/1895079432139547292
+                - heading "重磅发布：2025软科中国大学排名" [level=3] [ref=e553]
+                - generic [ref=e558]:
+                  - generic [ref=e560]: 知乎专栏
+                  - generic [ref=e562]: https://zhuanlan.zhihu.com › ...
+              - button "关于这条结果的详细信息" [ref=e563] [cursor=pointer]:
+                - img [ref=e566]
+            - generic [ref=e569]:
+              - generic [ref=e570]: 2025年4月15日 —
+              - generic [ref=e571]:
+                - text: （
+                - emphasis [ref=e572]: "2025"
+                - text: 年4月15日）高等教育专业评价机构
+                - emphasis [ref=e573]: 软科
+                - text: 今日正式发布“
+                - emphasis [ref=e574]: 2025软科
+                - text: 中国
+                - emphasis [ref=e575]: 大学排名
+                - text: ”。清华
+                - emphasis [ref=e576]: 大学
+                - text: 、北京
+                - emphasis [ref=e577]: 大学
+                - text: 、浙江
+                - emphasis [ref=e578]: 大学
+                - text: 稳居主榜（即综合性
+                - emphasis [ref=e579]: 大学排名
+                - text: ）前三位。
+            - generic [ref=e581]: 缺少字词： 暨南 ‎校友
+        - generic [ref=e583]:
+          - generic [ref=e588]:
+            - heading "用户还搜索了" [level=2] [ref=e590]
+            - generic [ref=e592]:
+              - generic [ref=e593]:
+                - link "软科中国大学排名" [ref=e597] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E8%BD%AF%E7%A7%91%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ1QJ6BAgtEAE
+                  - generic [ref=e598]:
+                    - generic [ref=e603]: 软科中国大学排名
+                    - img [ref=e607]
+                - link "校友会2025中国大学排名" [ref=e612] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%A0%A1%E5%8F%8B%E4%BC%9A2025%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ1QJ6BAhPEAE
+                  - generic [ref=e613]:
+                    - generic [ref=e618]: 校友会2025中国大学排名
+                    - img [ref=e622]
+                - link "软科中国大学排名2025" [ref=e627] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E8%BD%AF%E7%A7%91%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D2025&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ1QJ6BAhQEAE
+                  - generic [ref=e628]:
+                    - generic [ref=e633]: 软科中国大学排名2025
+                    - img [ref=e637]
+                - link "校友会排名2025" [ref=e642] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%A0%A1%E5%8F%8B%E4%BC%9A%E6%8E%92%E5%90%8D2025&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ1QJ6BAhREAE
+                  - generic [ref=e643]:
+                    - generic [ref=e648]: 校友会排名2025
+                    - img [ref=e652]
+              - generic [ref=e654]:
+                - link "中国大学排名2026" [ref=e658] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D2026&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ1QJ6BAhJEAE
+                  - generic [ref=e659]:
+                    - generic [ref=e664]: 中国大学排名2026
+                    - img [ref=e668]
+                - link "校友会中国大学排名" [ref=e673] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%A0%A1%E5%8F%8B%E4%BC%9A%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ1QJ6BAg-EAE
+                  - generic [ref=e674]:
+                    - generic [ref=e679]: 校友会中国大学排名
+                    - img [ref=e683]
+                - link "软科排名2025" [ref=e688] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E8%BD%AF%E7%A7%91%E6%8E%92%E5%90%8D2025&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ1QJ6BAg3EAE
+                  - generic [ref=e689]:
+                    - generic [ref=e694]: 软科排名2025
+                    - img [ref=e698]
+                - link "软科世界大学排名" [ref=e703] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E8%BD%AF%E7%A7%91%E4%B8%96%E7%95%8C%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ1QJ6BAg2EAE
+                  - generic [ref=e704]:
+                    - generic [ref=e709]: 软科世界大学排名
+                    - img [ref=e713]
+          - navigation [ref=e715]:
+            - heading "网页导航" [level=1] [ref=e716]
+            - text: "1"
+            - link "Page 2" [ref=e719] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sca_esv=164079556523993e&ei=LG7uaZfyC6KPruEPy-LigAQ&start=10&sa=N&sstk=Af77f_cKQaAcmeWA_7ij9B9EoSoh4nMjMohzvVdiIQzl7LLulFZ-sHiQ3RavLhhRC64_cPWxxKMh-q6cmH_-cGi2QSEqIYbioxJyUg&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ8tMDegQIUhAE
+              - text: "2"
+            - link "Page 3" [ref=e721] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sca_esv=164079556523993e&ei=LG7uaZfyC6KPruEPy-LigAQ&start=20&sa=N&sstk=Af77f_cKQaAcmeWA_7ij9B9EoSoh4nMjMohzvVdiIQzl7LLulFZ-sHiQ3RavLhhRC64_cPWxxKMh-q6cmH_-cGi2QSEqIYbioxJyUg&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ8tMDegQIUhAG
+              - text: "3"
+            - link "Page 4" [ref=e723] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sca_esv=164079556523993e&ei=LG7uaZfyC6KPruEPy-LigAQ&start=30&sa=N&sstk=Af77f_cKQaAcmeWA_7ij9B9EoSoh4nMjMohzvVdiIQzl7LLulFZ-sHiQ3RavLhhRC64_cPWxxKMh-q6cmH_-cGi2QSEqIYbioxJyUg&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ8tMDegQIUhAI
+              - text: "4"
+            - link "Page 5" [ref=e725] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sca_esv=164079556523993e&ei=LG7uaZfyC6KPruEPy-LigAQ&start=40&sa=N&sstk=Af77f_cKQaAcmeWA_7ij9B9EoSoh4nMjMohzvVdiIQzl7LLulFZ-sHiQ3RavLhhRC64_cPWxxKMh-q6cmH_-cGi2QSEqIYbioxJyUg&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ8tMDegQIUhAK
+              - text: "5"
+            - link "Page 6" [ref=e727] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sca_esv=164079556523993e&ei=LG7uaZfyC6KPruEPy-LigAQ&start=50&sa=N&sstk=Af77f_cKQaAcmeWA_7ij9B9EoSoh4nMjMohzvVdiIQzl7LLulFZ-sHiQ3RavLhhRC64_cPWxxKMh-q6cmH_-cGi2QSEqIYbioxJyUg&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ8tMDegQIUhAM
+              - text: "6"
+            - heading "下一页" [level=2] [ref=e729]:
+              - link "下一页" [ref=e730] [cursor=pointer]:
+                - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E8%BD%AF%E7%A7%91+%E6%A0%A1%E5%8F%8B%E4%BC%9A+2025&sca_esv=164079556523993e&ei=LG7uaZfyC6KPruEPy-LigAQ&start=10&sa=N&sstk=Af77f_cKQaAcmeWA_7ij9B9EoSoh4nMjMohzvVdiIQzl7LLulFZ-sHiQ3RavLhhRC64_cPWxxKMh-q6cmH_-cGi2QSEqIYbioxJyUg&ved=2ahUKEwiXuOfEpoyUAxWihysGHUuxGEAQ8NMDegQIUhAO
+                - generic [ref=e732]: 下一页
+        - navigation
+    - contentinfo [ref=e733]:
+      - heading "页脚链接" [level=1] [ref=e734]
+      - generic [ref=e738]:
+        - generic [ref=e742]:
+          - button "Hyde Park, 波士顿麻萨诸塞州 - 根据您的活动记录" [ref=e744] [cursor=pointer]:
+            - generic [ref=e745]: Hyde Park, 波士顿麻萨诸塞州
+            - generic [ref=e747]:
+              - text: "-"
+              - generic [ref=e748]: 根据您的活动记录
+          - text: "-"
+          - button "更新位置信息" [ref=e750] [cursor=pointer]: 更新位置信息
+        - generic [ref=e753]:
+          - link "帮助" [ref=e754] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e755] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e756] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e757] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

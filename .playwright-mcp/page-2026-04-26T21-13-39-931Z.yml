@@ -1,0 +1,718 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 暨南大学 2025 录取分数线 各省 最低分 位次
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E6%9C%80%E4%BD%8E%E5%88%86+%E4%BD%8D%E6%AC%A1&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2210391518354448276918%22%2C%22ori_lid%22%3A%2210391518354448276918%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=903616e301d75db6&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E6%9C%80%E4%BD%8E%E5%88%86+%E4%BD%8D%E6%AC%A1
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E6%9C%80%E4%BD%8E%E5%88%86+%E4%BD%8D%E6%AC%A1
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=903616e301d75db6&ie=utf-8&wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E6%9C%80%E4%BD%8E%E5%88%86+%E4%BD%8D%E6%AC%A1&rsv_spt=7&rsv_bp=1&f=8&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E6%9C%80%E4%BD%8E%E5%88%86+%E4%BD%8D%E6%AC%A1&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E6%9C%80%E4%BD%8E%E5%88%86+%E4%BD%8D%E6%AC%A1
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E6%9C%80%E4%BD%8E%E5%88%86+%E4%BD%8D%E6%AC%A1
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E6%9C%80%E4%BD%8E%E5%88%86+%E4%BD%8D%E6%AC%A1
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E6%9C%80%E4%BD%8E%E5%88%86+%E4%BD%8D%E6%AC%A1
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  暨南大学广东录取分数线2021是多少  暨南大学2021年高考录取分数线  暨南大学江苏录取分数线2023  暨南大学编导专业录取分数线  名牌大学录取分数线2019  暨南大学美术类录取分数线    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 女性多和好友聚会能“续命” 9 伊朗外长向巴基斯坦递交停战条件 10 母亲躺医院长椅儿子一手垫头一手轻拍 11 黄鳝被喂避孕药是传了30年的谣言 12 高市政府越过“最后一根红线” 13 男孩泡温泉被蛇吓应激酒店竟邀再泡 14 A股一季度最赚钱公司曝光 15 厨师锅里吐口水后继续出餐 店长回应" [ref=e69]:
+              - cell "相关搜索  暨南大学广东录取分数线2021是多少  暨南大学2021年高考录取分数线  暨南大学江苏录取分数线2023  暨南大学编导专业录取分数线  名牌大学录取分数线2019  暨南大学美术类录取分数线    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 女性多和好友聚会能“续命” 9 伊朗外长向巴基斯坦递交停战条件 10 母亲躺医院长椅儿子一手垫头一手轻拍 11 黄鳝被喂避孕药是传了30年的谣言 12 高市政府越过“最后一根红线” 13 男孩泡温泉被蛇吓应激酒店竟邀再泡 14 A股一季度最赚钱公司曝光 15 厨师锅里吐口水后继续出餐 店长回应" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 暨南大学广东录取分数线2021是多少" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%B9%BF%E4%B8%9C%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF2021%E6%98%AF%E5%A4%9A%E5%B0%91&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=2bddWGDif5xa3BWKc7Zo%2BlV53j8yg1%2F3RKqz8F7qaSSXsT0HIg54M0sb%2BgQ&rfqid=903616e301d75db6&rsv_dl=0_prs_28616_1&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsf=101633403
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 暨南大学广东录取分数线2021是多少
+                      - link " 暨南大学2021年高考录取分数线" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62021%E5%B9%B4%E9%AB%98%E8%80%83%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=2bddWGDif5xa3BWKc7Zo%2BlV53j8yg1%2F3RKqz8F7qaSSXsT0HIg54M0sb%2BgQ&rfqid=903616e301d75db6&rsv_dl=0_prs_28616_2&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 暨南大学2021年高考录取分数线
+                      - link " 暨南大学江苏录取分数线2023" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%B1%9F%E8%8B%8F%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF2023&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=2bddWGDif5xa3BWKc7Zo%2BlV53j8yg1%2F3RKqz8F7qaSSXsT0HIg54M0sb%2BgQ&rfqid=903616e301d75db6&rsv_dl=0_prs_28616_3&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsf=101636803
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 暨南大学江苏录取分数线2023
+                      - link " 暨南大学编导专业录取分数线" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BC%96%E5%AF%BC%E4%B8%93%E4%B8%9A%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=2bddWGDif5xa3BWKc7Zo%2BlV53j8yg1%2F3RKqz8F7qaSSXsT0HIg54M0sb%2BgQ&rfqid=903616e301d75db6&rsv_dl=0_prs_28616_4&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsf=101631202
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 暨南大学编导专业录取分数线
+                      - link " 名牌大学录取分数线2019" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E5%90%8D%E7%89%8C%E5%A4%A7%E5%AD%A6%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF2019&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=2bddWGDif5xa3BWKc7Zo%2BlV53j8yg1%2F3RKqz8F7qaSSXsT0HIg54M0sb%2BgQ&rfqid=903616e301d75db6&rsv_dl=0_prs_28616_5&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsf=101631202
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 名牌大学录取分数线2019
+                      - link " 暨南大学美术类录取分数线" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BE%8E%E6%9C%AF%E7%B1%BB%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=2bddWGDif5xa3BWKc7Zo%2BlV53j8yg1%2F3RKqz8F7qaSSXsT0HIg54M0sb%2BgQ&rfqid=903616e301d75db6&rsv_dl=0_prs_28616_6&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsf=101631202
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 暨南大学美术类录取分数线
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=2bddWGDif5xa3BWKc7Zo%2BlV53j8yg1%2F3RKqz8F7qaSSXsT0HIg54M0sb%2BgQ&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=2bddWGDif5xa3BWKc7Zo%2BlV53j8yg1%2F3RKqz8F7qaSSXsT0HIg54M0sb%2BgQ&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "女性多和好友聚会能“续命”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "高市政府越过“最后一根红线”" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "男孩泡温泉被蛇吓应激酒店竟邀再泡" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E7%94%B7%E5%AD%A9%E6%B3%A1%E6%B8%A9%E6%B3%89%E8%A2%AB%E8%9B%87%E5%90%93%E5%BA%94%E6%BF%80%E9%85%92%E5%BA%97%E7%AB%9F%E9%82%80%E5%86%8D%E6%B3%A1&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=8312johCQh9aM2sdnfG0HK37JgqGk1v9exS3hFiv5RCwBXjGhsIRy3DP4mI&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "A股一季度最赚钱公司曝光" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=A%E8%82%A1%E4%B8%80%E5%AD%A3%E5%BA%A6%E6%9C%80%E8%B5%9A%E9%92%B1%E5%85%AC%E5%8F%B8%E6%9B%9D%E5%85%89&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=47f4T60z5cjo9KNyEDpJ%2FtnSUxnFsr2UO67SE5bCmWF23sdRZPblAOV6b%2BM&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=7c449SlOK3Rg3Wz5eHjJ%2BvZQbBeSBH5Al1eKtzIgyncbv9Wm4JyVujwziEw&rqid=903616e301d75db6&rsf=a80e8349e565ba7f07efaaf3b4369493_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e206]:
+          - generic [ref=e207]:
+            - generic [ref=e209] [cursor=pointer]: 时间不限
+            - generic [ref=e211] [cursor=pointer]: 所有网页和文件
+            - generic [ref=e213] [cursor=pointer]: 站点内检索
+          - generic [ref=e216]:
+            - generic [ref=e217]: 已优先为您展示 “广州” 结果，
+            - generic [ref=e218] [cursor=pointer]: 取消
+        - generic [ref=e219]:
+          - generic [ref=e220]:
+            - generic [ref=e227]:
+              - generic [ref=e232]:
+                - link "暨南大学" [ref=e233] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=HC1qW-6gHy9Uka7x1SFR2NjnNQMF_c-BUjYrIrwgNO3_q5uXR6X1abSFFHwa9cPS
+                - generic [ref=e234]: 广东 综合类 公办 本科 | 双一流 211 中央部委院校
+              - link "+ 对比" [ref=e236] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HC1qW-6gHy9Uka7x1SFR2UNFtrneteJjrrTVYmM5BLsr8DwqIop8lX_J6sesYkxh4hll4At82EjP4Kmo1D77O_QbPSX5SZ156O-Spnn-xS0RFwkp725kzxzv149dR7XY
+                - button "+ 对比" [ref=e237]:
+                  - generic [ref=e238]: + 对比
+            - generic [ref=e240]:
+              - link "暨南大学招录信息" [ref=e241] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=cqJdoekC9IKjc6MFZcGO8po4QsBQZpjpKQ_YylOVS0Wk1xz2EkF9Zo-1x5c8wtrEHm2kp54IC14WUeP3hMLdpWiTgCM41dG71EwqvRxh39gPKrp6WXMoDBWMO9urOeuE1XUAJ9vUTrlp7Bxag8Nou_
+                - paragraph [ref=e243]:
+                  - generic [ref=e245]: 暨南大学招录信息
+              - generic [ref=e247]:
+                - generic [ref=e252]:
+                  - generic [ref=e253]: 录取分数
+                  - generic [ref=e254]: 专业分数
+                  - generic [ref=e255]: 招生计划
+                  - generic [ref=e256]: 开设专业
+                - generic [ref=e258]:
+                  - generic [ref=e260]:
+                    - generic [ref=e262] [cursor=pointer]:
+                      - generic [ref=e263]: 广东
+                      - generic [ref=e264]: 
+                    - generic [ref=e266] [cursor=pointer]:
+                      - generic [ref=e267]: "2025"
+                      - generic [ref=e268]: 
+                    - generic [ref=e270] [cursor=pointer]:
+                      - generic [ref=e271]: 物理类
+                      - generic [ref=e272]: 
+                  - generic [ref=e273]:
+                    - table [ref=e275]:
+                      - rowgroup [ref=e276]:
+                        - row "批次/招生类型 专业组/选科 最低分 位次 人数 批次线差 " [ref=e277]:
+                          - columnheader "批次/招生类型" [ref=e278]:
+                            - generic [ref=e280]: 批次/招生类型
+                          - columnheader "专业组/选科" [ref=e281]:
+                            - generic [ref=e283]: 专业组/选科
+                          - columnheader "最低分" [ref=e284]:
+                            - generic [ref=e286]: 最低分
+                          - columnheader "位次" [ref=e287]:
+                            - generic [ref=e289]: 位次
+                          - columnheader "人数" [ref=e290]:
+                            - generic [ref=e292]: 人数
+                          - columnheader "批次线差 " [ref=e293]:
+                            - generic [ref=e294]:
+                              - generic [ref=e295]: 批次线差
+                              - generic [ref=e297] [cursor=pointer]: 
+                      - rowgroup [ref=e298]:
+                        - row "本科批 普通类 专业组216 物+政 591 34231 17 155" [ref=e299]:
+                          - cell "本科批 普通类" [ref=e300]:
+                            - generic [ref=e301]: 本科批
+                            - generic [ref=e302]: 普通类
+                          - cell "专业组216 物+政" [ref=e303]:
+                            - generic [ref=e304]: 专业组216
+                            - generic [ref=e305]: 物+政
+                          - cell "591" [ref=e306]:
+                            - generic [ref=e307]: "591"
+                          - cell "34231" [ref=e308]:
+                            - generic [ref=e309]: "34231"
+                          - cell "17" [ref=e310]:
+                            - generic [ref=e311]: "17"
+                          - cell "155" [ref=e312]:
+                            - generic [ref=e313]: "155"
+                        - row "本科批 普通类 专业组211 物+不限 592 33210 154 156" [ref=e314]:
+                          - cell "本科批 普通类" [ref=e315]:
+                            - generic [ref=e316]: 本科批
+                            - generic [ref=e317]: 普通类
+                          - cell "专业组211 物+不限" [ref=e318]:
+                            - generic [ref=e319]: 专业组211
+                            - generic [ref=e320]: 物+不限
+                          - cell "592" [ref=e321]:
+                            - generic [ref=e322]: "592"
+                          - cell "33210" [ref=e323]:
+                            - generic [ref=e324]: "33210"
+                          - cell "154" [ref=e325]:
+                            - generic [ref=e326]: "154"
+                          - cell "156" [ref=e327]:
+                            - generic [ref=e328]: "156"
+                        - row "本科批 普通类 专业组215 物+不限 593 32622 182 157" [ref=e329]:
+                          - cell "本科批 普通类" [ref=e330]:
+                            - generic [ref=e331]: 本科批
+                            - generic [ref=e332]: 普通类
+                          - cell "专业组215 物+不限" [ref=e333]:
+                            - generic [ref=e334]: 专业组215
+                            - generic [ref=e335]: 物+不限
+                          - cell "593" [ref=e336]:
+                            - generic [ref=e337]: "593"
+                          - cell "32622" [ref=e338]:
+                            - generic [ref=e339]: "32622"
+                          - cell "182" [ref=e340]:
+                            - generic [ref=e341]: "182"
+                          - cell "157" [ref=e342]:
+                            - generic [ref=e343]: "157"
+                    - link "查看更多 " [ref=e345] [cursor=pointer]:
+                      - /url: http://www.baidu.com/link?url=cqJdoekC9IKjc6MFZcGO8po4QsBQZpjpKQ_YylOVS0Wk1xz2EkF9Zo-1x5c8wtrEHm2kp54IC14WUeP3hMLdpWiTgCM41dG71EwqvRxh39gPKrp6WXMoDBWMO9urOeuE1XUAJ9vUTrlp7Bxag8Nou_
+                      - generic [ref=e346]:
+                        - generic [ref=e347]: 查看更多
+                        - generic [ref=e348]: 
+            - generic [ref=e352]:
+              - heading "招生资讯" [level=3] [ref=e353]:
+                - link "招生资讯" [ref=e354] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=5yhTAtKJaef666mNH49STciAkys1_KXp1Z0MYGA3KAWi_1f7OxtbX1wgHvtUrFKD7q1M_pYKMMN13GSdjJ3mJ_
+                  - generic [ref=e355]: 招生资讯
+              - generic [ref=e357]:
+                - link "暨南大学2026年优秀运动员保送生招生简章" [ref=e359] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=5yhTAtKJaef666mNH49STciAkys1_KXp1Z0MYGA3KAZgxOvCG9x7BLSyhCucOgXEsPqrykT8NRqBIZWZSKfSmYqFoTAxpqyHaMFjVY1ce43
+                  - generic [ref=e360]: 暨南大学2026年优秀运动员保送生招生简章
+                - generic [ref=e361]: 2026年1月19日
+              - generic [ref=e364]:
+                - link "权威发布 | 暨南大学2026年招收华人及其他外籍学生（来华留学生）简章" [ref=e366] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=5yhTAtKJaef666mNH49STciAkys1_KXp1Z0MYGA3KAZgxOvCG9x7BLSyhCucOgXEaKJDDPMOUGzZcGxz3FTgxYPoPeJH2fJrbNZRnLwmXBu
+                  - generic [ref=e367]: 权威发布 | 暨南大学2026年招收华人及其他外籍学生（来华留学生）简章
+                - generic [ref=e368]: 2025年12月5日
+              - generic [ref=e371]:
+                - link "权威发布 | 暨南大学2026年招收华侨学生简章" [ref=e373] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=5yhTAtKJaef666mNH49STciAkys1_KXp1Z0MYGA3KAZgxOvCG9x7BLSyhCucOgXE7HRsLB3VVpUrkRlKwKGKJJx50bIQoFizM56xVL0aHRS
+                  - generic [ref=e374]: 权威发布 | 暨南大学2026年招收华侨学生简章
+                - generic [ref=e375]: 2025年12月5日
+              - generic [ref=e378]:
+                - link "超全汇总！暨南大学2025年本科招生咨询方式来啦~" [ref=e380] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=5yhTAtKJaef666mNH49STciAkys1_KXp1Z0MYGA3KAZgxOvCG9x7BLSyhCucOgXE2iRiM9-RXQLzrDCH68MlbDSRS9Z98ROys3C0cGIZtxG
+                  - generic [ref=e381]:
+                    - text: 超全汇总！暨南大学
+                    - emphasis [ref=e382]: "2025"
+                    - text: 年本科招生咨询方式来啦~
+                - generic [ref=e383]: 2025年6月16日
+              - generic [ref=e386]:
+                - link "权威发布 | 暨南大学2025年本科招生章程" [ref=e388] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=5yhTAtKJaef666mNH49STciAkys1_KXp1Z0MYGA3KAZgxOvCG9x7BLSyhCucOgXExrUGgUpvtSO03qGfVJ1FsyFvPnxMJ6ZhWX7zfpZTqVy
+                  - generic [ref=e389]:
+                    - text: 权威发布 | 暨南大学
+                    - emphasis [ref=e390]: "2025"
+                    - text: 年本科招生章程
+                - generic [ref=e391]: 2025年5月29日
+              - generic [ref=e393] [cursor=pointer]:
+                - generic [ref=e394]: 展开
+                - generic [ref=e395]: 
+          - generic [ref=e396]:
+            - generic [ref=e397]: 搜索智能聚合
+            - generic [ref=e398]: 
+          - generic [ref=e403]:
+            - generic [ref=e405]:
+              - img [ref=e408]
+              - generic [ref=e410]:
+                - generic [ref=e414]:
+                  - generic [ref=e415]: 
+                  - generic [ref=e416]: 停
+                - generic [ref=e419]:
+                  - generic [ref=e420]: 
+                  - generic [ref=e421]: 听
+            - generic [ref=e422]:
+              - generic [ref=e431]:
+                - paragraph [ref=e432]:
+                  - text: 暨南大学2025年在全国各省的本科录取分数线存在较大差异，‌
+                  - strong [ref=e433]: 最低分459分（宁夏物理类）
+                  - text: ‌，‌
+                  - strong [ref=e434]: 最高分682分（海南专业组03）
+                  - text: ‌。以下是根据权威公开资料整理的关键信息：
+                - separator [ref=e435]
+                - heading "‌一、全国各省最低录取分数线（按科类/模式）‌" [level=3] [ref=e436]:
+                  - text: ‌
+                  - strong [ref=e437]: 一、全国各省最低录取分数线（按科类/模式）
+                  - text: ‌
+                - list [ref=e438]:
+                  - listitem [ref=e439]:
+                    - paragraph [ref=e440]:
+                      - text: ‌
+                      - strong [ref=e441]: 普通类（传统高考省份）
+                      - text: ‌
+                    - list [ref=e442]:
+                      - listitem [ref=e443]:
+                        - text: ‌
+                        - strong [ref=e444]: 物理类/理科最低
+                        - text: ‌：‌
+                        - strong [ref=e445]: 459分
+                        - text: ‌（宁夏）‌
+                        - generic [ref=e446]:
+                          - generic [ref=e449] [cursor=pointer]: "2"
+                          - generic [ref=e452] [cursor=pointer]: "3"
+                      - listitem [ref=e453]:
+                        - text: ‌
+                        - strong [ref=e454]: 历史类/文科最低
+                        - text: ‌：‌
+                        - strong [ref=e455]: 464分
+                        - text: ‌（宁夏）‌
+                        - generic [ref=e456]:
+                          - generic [ref=e459] [cursor=pointer]: "2"
+                          - generic [ref=e462] [cursor=pointer]: "3"
+                  - listitem [ref=e463]:
+                    - paragraph [ref=e464]:
+                      - text: ‌
+                      - strong [ref=e465]: 新高考省份（“3+1+2”模式）
+                      - text: ‌
+                    - list [ref=e466]:
+                      - listitem [ref=e467]:
+                        - text: ‌
+                        - strong [ref=e468]: 物理类最低
+                        - text: ‌：‌
+                        - strong [ref=e469]: 459分
+                        - text: ‌（宁夏）‌
+                        - generic [ref=e470]:
+                          - generic [ref=e473] [cursor=pointer]: "2"
+                          - generic [ref=e476] [cursor=pointer]: "3"
+                      - listitem [ref=e477]:
+                        - text: ‌
+                        - strong [ref=e478]: 历史类最低
+                        - text: ‌：‌
+                        - strong [ref=e479]: 464分
+                        - text: ‌（宁夏）‌
+                        - generic [ref=e480]:
+                          - generic [ref=e483] [cursor=pointer]: "2"
+                          - generic [ref=e486] [cursor=pointer]: "3"
+                  - listitem [ref=e487]:
+                    - paragraph [ref=e488]:
+                      - text: ‌
+                      - strong [ref=e489]: “3+3”综合改革省份（如上海、浙江、海南等）
+                      - text: ‌
+                    - list [ref=e490]:
+                      - listitem [ref=e491]:
+                        - text: ‌
+                        - strong [ref=e492]: 最低
+                        - text: ‌：‌
+                        - strong [ref=e493]: 542分
+                        - text: ‌（上海）‌
+                        - generic [ref=e494]:
+                          - generic [ref=e497] [cursor=pointer]: "2"
+                          - generic [ref=e500] [cursor=pointer]: "3"
+                      - listitem [ref=e501]:
+                        - text: ‌
+                        - strong [ref=e502]: 最高
+                        - text: ‌：‌
+                        - strong [ref=e503]: 682分
+                        - text: ‌（海南专业组03）‌
+                        - generic [ref=e504]:
+                          - generic [ref=e507] [cursor=pointer]: "1"
+                          - generic [ref=e510] [cursor=pointer]: "2"
+                - separator [ref=e511]
+                - heading "‌二、部分重点省份最低分及对应位次‌" [level=3] [ref=e512]:
+                  - text: ‌
+                  - strong [ref=e513]: 二、部分重点省份最低分及对应位次
+                  - text: ‌
+                - paragraph [ref=e514]: "| 省份 | 科类 | 最低分 | 对应位次 | 招生类型/备注 |"
+              - generic [ref=e521] [cursor=pointer]:
+                - generic [ref=e522]: 展开
+                - generic [ref=e523]: 
+          - generic [ref=e527]:
+            - generic [ref=e529]:
+              - link "官方" [ref=e531] [cursor=pointer]:
+                - /url: https://aiqicha.baidu.com/feedback/official?from=baidu&type=gw
+                - generic [ref=e532]: 官方
+              - heading "暨南大学2025年在广东录取分数线" [level=3] [ref=e533]:
+                - link "暨南大学2025年在广东录取分数线" [ref=e534] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=4r5UIY0qyaOs3P6UlFf8OePUv4lCGs778MC9--2TSZq4OKaiwf_wn-shl3HSeFyIK1Mqk0c8IEDEblxX49EpIz1lDAr0RzgD5AWyToELMmi
+                  - paragraph [ref=e537]:
+                    - generic [ref=e540]:
+                      - emphasis [ref=e541]: 暨南大学2025
+                      - text: 年在广东
+                      - emphasis [ref=e542]: 录取分数线
+            - generic [ref=e547]:
+              - text: 2026年4月2日
+              - generic [ref=e548]:
+                - text: 录取 人数 最高分平均分
+                - emphasis [ref=e549]: 最低分
+                - emphasis [ref=e550]: 最低分
+                - text: 排位 物理 广州 番禺校区 法学院/知识产权学院法学20619609.1560522864 法学院/知识产权学院法学(涉外法治特色班)8619614.1361118836 法学院/知识产权学院知识产权5611607.2060423797 管理学院工商管理12613598.4259431107 管理学院会计学22618600.00595
+            - link "暨南大学招生办公室" [ref=e555] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=4r5UIY0qyaOs3P6UlFf8OePUv4lCGs778MC9--2TSZq4OKaiwf_wn-shl3HSeFyIK1Mqk0c8IEDEblxX49EpIz1lDAr0RzgD5AWyToELMmi
+              - generic [ref=e556]: 暨南大学招生办公室
+              - generic [ref=e558]: 
+          - generic [ref=e560]:
+            - generic [ref=e561]: 大家还在搜
+            - generic [ref=e562]:
+              - link "暨南大学广东录取分数线2021是多少" [ref=e563] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%B9%BF%E4%B8%9C%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF2021%E6%98%AF%E5%A4%9A%E5%B0%91&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=12bfQgf5iDYtcIHy84GvmTHk%2FZY3RZKcCQpcQwdVrTMQSajEEDCWHBU0QW8&rsf=101633403&rsv_dl=0_prs_28608_1
+                - generic [ref=e565]: 暨南大学广东录取分数线2021是多少
+              - link "暨南大学2021年高考录取分数线" [ref=e566] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62021%E5%B9%B4%E9%AB%98%E8%80%83%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=12bfQgf5iDYtcIHy84GvmTHk%2FZY3RZKcCQpcQwdVrTMQSajEEDCWHBU0QW8&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e568]: 暨南大学2021年高考录取分数线
+              - link "暨南大学江苏录取分数线2023" [ref=e569] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%B1%9F%E8%8B%8F%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF2023&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=12bfQgf5iDYtcIHy84GvmTHk%2FZY3RZKcCQpcQwdVrTMQSajEEDCWHBU0QW8&rsf=101636803&rsv_dl=0_prs_28608_3
+                - generic [ref=e571]: 暨南大学江苏录取分数线2023
+              - link "暨南大学编导专业录取分数线" [ref=e572] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BC%96%E5%AF%BC%E4%B8%93%E4%B8%9A%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=12bfQgf5iDYtcIHy84GvmTHk%2FZY3RZKcCQpcQwdVrTMQSajEEDCWHBU0QW8&rsf=101631202&rsv_dl=0_prs_28608_4
+                - generic [ref=e574]: 暨南大学编导专业录取分数线
+              - link "名牌大学录取分数线2019" [ref=e575] [cursor=pointer]:
+                - /url: /s?wd=%E5%90%8D%E7%89%8C%E5%A4%A7%E5%AD%A6%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF2019&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=12bfQgf5iDYtcIHy84GvmTHk%2FZY3RZKcCQpcQwdVrTMQSajEEDCWHBU0QW8&rsf=101631202&rsv_dl=0_prs_28608_5
+                - generic [ref=e577]: 名牌大学录取分数线2019
+              - link "暨南大学美术类录取分数线" [ref=e578] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BE%8E%E6%9C%AF%E7%B1%BB%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&usm=3&ie=utf-8&rsv_pq=903616e301d75db6&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&rsv_t=12bfQgf5iDYtcIHy84GvmTHk%2FZY3RZKcCQpcQwdVrTMQSajEEDCWHBU0QW8&rsf=101631202&rsv_dl=0_prs_28608_6
+                - generic [ref=e580]: 暨南大学美术类录取分数线
+          - generic [ref=e584]:
+            - heading "暨南大学2025年录取分数线:含各专业最低分-高考100" [level=3] [ref=e587]:
+              - link "暨南大学2025年录取分数线:含各专业最低分-高考100" [ref=e588] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=6QBBAHznSjoZ9dcyjoIMRrtijAlqsYBFsSWVwBCPH6atdUYzqSenv9SLtO4-SK_cfATHs9PEGWy9mrQK0HQN4K
+                - paragraph [ref=e591]:
+                  - generic [ref=e594]:
+                    - emphasis [ref=e595]: 暨南大学2025
+                    - text: 年
+                    - emphasis [ref=e596]: 录取分数线
+                    - text: :含各专业
+                    - emphasis [ref=e597]: 最低分
+                    - text: "-高考100"
+            - generic [ref=e598]:
+              - link [ref=e600] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=6QBBAHznSjoZ9dcyjoIMRrtijAlqsYBFsSWVwBCPH6atdUYzqSenv9SLtO4-SK_cfATHs9PEGWy9mrQK0HQN4K
+              - generic [ref=e605]:
+                - generic [ref=e610]:
+                  - text: 2026年3月20日
+                  - generic [ref=e611]:
+                    - emphasis [ref=e612]: 2025年暨南大学全国录取分数线是459分到682分之间,其中在广东省录取最低分:历史组598分、物理组591分
+                    - text: 。参考上海招录数据,各专业分数线是:口腔医学(办学点:广州石牌校区)558分、会计学(全英语教学)555分、电气工程及其自动化551分等。 一、暨南大学2025年录取分数线 1、全国录取情况 2025年暨南大学全国录取分数线...
+                - link "高考100网" [ref=e617] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=6QBBAHznSjoZ9dcyjoIMRrtijAlqsYBFsSWVwBCPH6atdUYzqSenv9SLtO4-SK_cfATHs9PEGWy9mrQK0HQN4K
+                  - generic [ref=e618]: 高考100网
+                  - generic [ref=e620]: 
+          - generic [ref=e624]:
+            - heading "暨南大学2025年录取分数线(含本科)-高考100" [level=3] [ref=e627]:
+              - link "暨南大学2025年录取分数线(含本科)-高考100" [ref=e628] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=6QBBAHznSjoZ9dcyjoIMRrtijAlqsYBFsSWVwBCPH6atdUYzqSenv9SLtO4-SK_c4C8Z7ZwUGdQ9NtRCA8lkOa
+                - paragraph [ref=e631]:
+                  - generic [ref=e634]:
+                    - emphasis [ref=e635]: 暨南大学2025
+                    - text: 年
+                    - emphasis [ref=e636]: 录取分数线
+                    - text: (含本科)-高考100
+            - generic [ref=e637]:
+              - link [ref=e639] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=6QBBAHznSjoZ9dcyjoIMRrtijAlqsYBFsSWVwBCPH6atdUYzqSenv9SLtO4-SK_c4C8Z7ZwUGdQ9NtRCA8lkOa
+              - generic [ref=e644]:
+                - generic [ref=e649]:
+                  - text: 2026年4月13日
+                  - generic [ref=e650]:
+                    - emphasis [ref=e651]: 文科:最低分514分、位次1466位
+                    - text: (2)宁夏 物理类:最低分459分、最高分568分 历史类:最低分464分、最高分541分 (3)吉林 物理类:最低分501分、最高分603分 历史类:最低分550分、最高分591分 (4)黑龙江 物理类:最低分504分、最高分599分 历史类:最低分555分、最高分582分 (5)山西 物理类:最低分...
+                - link "高考100网" [ref=e656] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=6QBBAHznSjoZ9dcyjoIMRrtijAlqsYBFsSWVwBCPH6atdUYzqSenv9SLtO4-SK_c4C8Z7ZwUGdQ9NtRCA8lkOa
+                  - generic [ref=e657]: 高考100网
+                  - generic [ref=e659]: 
+          - generic [ref=e663]:
+            - heading "2025暨南大学录取分数线汇总:全国各省最低多少分能上" [level=3] [ref=e666]:
+              - link "2025暨南大学录取分数线汇总:全国各省最低多少分能上" [ref=e667] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HC1qW-6gHy9Uka7x1SFR2S3zyu2IXRGPe0XYsBoYp0B9eKu8wo_ZYVKhnf09FGbVlLNMI7zBf1AQWjK0_kp9qK
+                - paragraph [ref=e670]:
+                  - generic [ref=e673]:
+                    - emphasis [ref=e674]: 2025暨南大学录取分数线
+                    - text: 汇总:全国
+                    - emphasis [ref=e675]: 各省最低
+                    - text: 多少分能上
+            - generic [ref=e676]:
+              - link [ref=e678] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HC1qW-6gHy9Uka7x1SFR2S3zyu2IXRGPe0XYsBoYp0B9eKu8wo_ZYVKhnf09FGbVlLNMI7zBf1AQWjK0_kp9qK
+              - generic [ref=e683]:
+                - generic [ref=e688]:
+                  - text: 2026年3月24日
+                  - generic [ref=e689]:
+                    - emphasis [ref=e690]: 2025年暨南大学在全国各省本科的最低录取分数线在459~682分之间
+                    - text: 。海南高考生最低682分能上暨南大学、河南物理类高考生最低638分能上暨南大学……下文将展示暨南大学在全国27个高考省份中的本科最低投档录取分汇总! 一、2025暨南大学录取分数线 1、广东省内 暨南大学2025年有16个专业组面向广东省内首选了物理科目的考...
+                - link "圆梦小灯塔" [ref=e695] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=HC1qW-6gHy9Uka7x1SFR2S3zyu2IXRGPe0XYsBoYp0B9eKu8wo_ZYVKhnf09FGbVlLNMI7zBf1AQWjK0_kp9qK
+                  - generic [ref=e696]: 圆梦小灯塔
+                  - generic [ref=e698]: 
+          - generic [ref=e702]:
+            - heading "2025年暨南大学录取分数线_暨南大学各省录取分数线汇总-掌上高考" [level=3] [ref=e705]:
+              - link "2025年暨南大学录取分数线_暨南大学各省录取分数线汇总-掌上高考" [ref=e706] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=C_7l5qf-04OYCuLrRa81dasnrtQtLtXjiIPovjKDWgHHb30mAIXSGAw3RWQd0dQ7
+                - paragraph [ref=e709]:
+                  - generic [ref=e712]:
+                    - emphasis [ref=e713]: "2025"
+                    - text: 年
+                    - emphasis [ref=e714]: 暨南大学录取分数线
+                    - text: _
+                    - emphasis [ref=e715]: 暨南大学各省录取分数线
+                    - text: 汇总-掌上高考
+            - generic [ref=e720]:
+              - text: 2025年11月6日
+              - generic [ref=e721]:
+                - emphasis [ref=e722]: 4.暨南大学在安徽录取分数线:物理类597分、历史类606分
+                - text: "。 5.暨南大学在江苏录取分数线:物理类598分、历史类599分。 以下是2025年暨南大学在本省以及全国各省录取分数汇总: 一、2025年暨南大学各专业录取分数线(在本省) 2025年暨南大学在广东各专业最低录取分数线详细如下: ..."
+            - link "掌上高考" [ref=e727] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=C_7l5qf-04OYCuLrRa81dasnrtQtLtXjiIPovjKDWgHHb30mAIXSGAw3RWQd0dQ7
+              - generic [ref=e728]: 掌上高考
+              - generic [ref=e730]: 
+          - generic [ref=e734]:
+            - heading "暨南大学2025年在各省普通高考录取分数线(含2026年招生指南)" [level=3] [ref=e737]:
+              - link "暨南大学2025年在各省普通高考录取分数线(含2026年招生指南)" [ref=e738] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=6QBBAHznSjoZ9dcyjoIMRvUfelT72ld7LE0VjlQlmefn1pygvs09PBCPib99Rg7wX0Hs10q5FGqyLaWDRo6YK34cLEla_KR4JKw-mqL7VGe
+                - paragraph [ref=e741]:
+                  - generic [ref=e744]:
+                    - emphasis [ref=e745]: 暨南大学2025
+                    - text: 年在
+                    - emphasis [ref=e746]: 各省
+                    - text: 普通高考
+                    - emphasis [ref=e747]: 录取分数线
+                    - text: (含2026年招生指南)
+            - generic [ref=e752]:
+              - text: 2026年4月3日
+              - generic [ref=e753]:
+                - text: 区域划分及招生咨询群
+                - emphasis [ref=e754]: 各省
+                - emphasis [ref=e755]: "2025"
+                - text: 年
+                - emphasis [ref=e756]: 录取分数线
+                - text: "2026 年招生指南广东省 QQ 群: 231863845点击查看【广东分数线】"
+                - emphasis [ref=e757]: 暨南大学
+                - text: "2026年在广东省招生指南.pdf华北地区 ( QQ 群号: 892283342 )点击查看【北京分数线】暨南大学2026年在北京市招生指南.pdf点击查看【天津分数线】暨南大学2026年在天津市招生指南.pdf点击查看【河北分..."
+            - link "暨南大学招生办公室" [ref=e762] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=6QBBAHznSjoZ9dcyjoIMRvUfelT72ld7LE0VjlQlmefn1pygvs09PBCPib99Rg7wX0Hs10q5FGqyLaWDRo6YK34cLEla_KR4JKw-mqL7VGe
+              - generic [ref=e763]: 暨南大学招生办公室
+              - generic [ref=e765]: 
+          - generic [ref=e769]:
+            - heading "从高到低排序!暨南大学2025年广东高考招生专业录取分数线来了!" [level=3] [ref=e772]:
+              - link "从高到低排序!暨南大学2025年广东高考招生专业录取分数线来了!" [ref=e773] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=PIUCuSNedwQA9pJkVEDF8wZPgrWZ2YZ3biMWDuHh_vTNI9__pFhkD8RzmwKdSq8qocQZTAHa1TZjSdj1GfG48a
+                - paragraph [ref=e776]:
+                  - generic [ref=e779]:
+                    - text: 从高到低排序!
+                    - emphasis [ref=e780]: 暨南大学2025
+                    - text: 年广东高考招生专业
+                    - emphasis [ref=e781]: 录取分数线
+                    - text: 来了!
+            - generic [ref=e782]:
+              - link [ref=e784] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=PIUCuSNedwQA9pJkVEDF8wZPgrWZ2YZ3biMWDuHh_vTNI9__pFhkD8RzmwKdSq8qocQZTAHa1TZjSdj1GfG48a
+              - generic [ref=e789]:
+                - generic [ref=e794]:
+                  - text: 2026年2月6日
+                  - generic [ref=e795]:
+                    - text: 医学类专业中,口腔医学
+                    - emphasis [ref=e796]: 最低分
+                    - text: 601分,临床医学各方向
+                    - emphasis [ref=e797]: 分数线
+                    - text: 在595-599分。中外合作办学专业分数低于普通批,如信息与计算科学(中外合作办学)最低分602分。工科、计算机类专业分数居首,医学类次之,中外合作及部分文科类专业分数较低。 版权声明:信息来源于
+                    - emphasis [ref=e798]: 暨南大学
+                    - text: 官网,科教撰稿人整理。如有不足之处,欢迎指正!
+                - link "头像 知乎" [ref=e803] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=PIUCuSNedwQA9pJkVEDF8wZPgrWZ2YZ3biMWDuHh_vTNI9__pFhkD8RzmwKdSq8qocQZTAHa1TZjSdj1GfG48a
+                  - img "头像" [ref=e806]
+                  - generic [ref=e807]: 知乎
+                  - generic [ref=e809]: 
+        - generic [ref=e812]:
+          - generic [ref=e813]: 相关搜索
+          - table [ref=e814]:
+            - rowgroup [ref=e815]:
+              - row "暨南大学2021年各专业录取分数线 暨南大学广东录取分数线2021是多少" [ref=e816]:
+                - cell "暨南大学2021年各专业录取分数线" [ref=e817]:
+                  - link "暨南大学2021年各专业录取分数线" [ref=e818] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62021%E5%B9%B4%E5%90%84%E4%B8%93%E4%B8%9A%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101633403&rsp=0&f=1&rs_src=0&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&rsv_dl=brs_28338_1
+                    - generic [ref=e820]: 暨南大学2021年各专业录取分数线
+                - cell "暨南大学广东录取分数线2021是多少" [ref=e821]:
+                  - link "暨南大学广东录取分数线2021是多少" [ref=e822] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%B9%BF%E4%B8%9C%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF2021%E6%98%AF%E5%A4%9A%E5%B0%91&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&rsv_dl=brs_28338_2
+                    - generic [ref=e824]: 暨南大学广东录取分数线2021是多少
+              - row "暨南大学江苏录取分数线2023 暨南大学编导专业录取分数线" [ref=e825]:
+                - cell "暨南大学江苏录取分数线2023" [ref=e826]:
+                  - link "暨南大学江苏录取分数线2023" [ref=e827] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%B1%9F%E8%8B%8F%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF2023&rsf=101636803&rsp=2&f=1&rs_src=0&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&rsv_dl=brs_28338_3
+                    - generic [ref=e829]: 暨南大学江苏录取分数线2023
+                - cell "暨南大学编导专业录取分数线" [ref=e830]:
+                  - link "暨南大学编导专业录取分数线" [ref=e831] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BC%96%E5%AF%BC%E4%B8%93%E4%B8%9A%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202&rsp=3&f=1&rs_src=0&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&rsv_dl=brs_28338_4
+                    - generic [ref=e833]: 暨南大学编导专业录取分数线
+              - row "暨南大学美术类录取分数线 2021年多少分能考上暨南大学" [ref=e834]:
+                - cell "暨南大学美术类录取分数线" [ref=e835]:
+                  - link "暨南大学美术类录取分数线" [ref=e836] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BE%8E%E6%9C%AF%E7%B1%BB%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202&rsp=4&f=1&rs_src=0&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&rsv_dl=brs_28338_5
+                    - generic [ref=e838]: 暨南大学美术类录取分数线
+                - cell "2021年多少分能考上暨南大学" [ref=e839]:
+                  - link "2021年多少分能考上暨南大学" [ref=e840] [cursor=pointer]:
+                    - /url: /s?wd=2021%E5%B9%B4%E5%A4%9A%E5%B0%91%E5%88%86%E8%83%BD%E8%80%83%E4%B8%8A%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&rsv_dl=brs_28338_6
+                    - generic [ref=e842]: 2021年多少分能考上暨南大学
+              - row "名牌大学录取分数线2019 天津理工大学2019录取分数线" [ref=e843]:
+                - cell "名牌大学录取分数线2019" [ref=e844]:
+                  - link "名牌大学录取分数线2019" [ref=e845] [cursor=pointer]:
+                    - /url: /s?wd=%E5%90%8D%E7%89%8C%E5%A4%A7%E5%AD%A6%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF2019&rsf=101631202&rsp=6&f=1&rs_src=0&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&rsv_dl=brs_28338_7
+                    - generic [ref=e847]: 名牌大学录取分数线2019
+                - cell "天津理工大学2019录取分数线" [ref=e848]:
+                  - link "天津理工大学2019录取分数线" [ref=e849] [cursor=pointer]:
+                    - /url: /s?wd=%E5%A4%A9%E6%B4%A5%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A62019%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=100631202&rsp=7&f=1&rs_src=0&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&rsv_dl=brs_28338_8
+                    - generic [ref=e851]: 天津理工大学2019录取分数线
+              - row "暨南大学2022分数线 暨南大学国际学院录取分数线" [ref=e852]:
+                - cell "暨南大学2022分数线" [ref=e853]:
+                  - link "暨南大学2022分数线" [ref=e854] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62022%E5%88%86%E6%95%B0%E7%BA%BF&rsf=100636803&rsp=8&f=1&rs_src=0&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&rsv_dl=brs_28338_9
+                    - generic [ref=e856]: 暨南大学2022分数线
+                - cell "暨南大学国际学院录取分数线" [ref=e857]:
+                  - link "暨南大学国际学院录取分数线" [ref=e858] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%9B%BD%E9%99%85%E5%AD%A6%E9%99%A2%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=100631202&rsp=9&f=1&rs_src=0&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&rsv_dl=brs_28338_10
+                    - generic [ref=e860]: 暨南大学国际学院录取分数线
+      - generic [ref=e863]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e864]:
+          - generic [ref=e865]: "1"
+        - link "2" [ref=e866] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&pn=10&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&ie=utf-8&usm=3&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&topic_pn=
+          - generic [ref=e867]: "2"
+        - link "3" [ref=e868] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&pn=20&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&ie=utf-8&usm=3&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&topic_pn=
+          - generic [ref=e869]: "3"
+        - link "4" [ref=e870] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&pn=30&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&ie=utf-8&usm=3&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&topic_pn=
+          - generic [ref=e871]: "4"
+        - link "5" [ref=e872] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&pn=40&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&ie=utf-8&usm=3&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&topic_pn=
+          - generic [ref=e873]: "5"
+        - link "6" [ref=e874] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&pn=50&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&ie=utf-8&usm=3&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&topic_pn=
+          - generic [ref=e875]: "6"
+        - link "7" [ref=e876] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&pn=60&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&ie=utf-8&usm=3&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&topic_pn=
+          - generic [ref=e877]: "7"
+        - link "8" [ref=e878] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&pn=70&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&ie=utf-8&usm=3&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&topic_pn=
+          - generic [ref=e879]: "8"
+        - link "9" [ref=e880] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&pn=80&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&ie=utf-8&usm=3&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&topic_pn=
+          - generic [ref=e881]: "9"
+        - link "10" [ref=e882] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&pn=90&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&ie=utf-8&usm=3&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&topic_pn=
+          - generic [ref=e883]: "10"
+        - link "下一页" [ref=e884] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&pn=10&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%20%E5%90%84%E7%9C%81%20%E6%9C%80%E4%BD%8E%E5%88%86%20%E4%BD%8D%E6%AC%A1&ie=utf-8&usm=3&rsv_pq=903616e301d75db6&rsv_t=dc5dKdZh2pqOOAulpdFkOLx9scT67FLzxoHvHpkfgnmOGP%2ByZY2M8g8r%2FNc&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e885]
+      - generic [ref=e888]:
+        - link "帮助" [ref=e889] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e890] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e891] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e892] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

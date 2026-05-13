@@ -1,0 +1,12 @@
+[     343ms] [WARNING] A parser-blocking, cross site (i.e. different eTLD+1) script, https://api.map.baidu.com/getscript?v=2.0&ak=WkGSwQR2Gx8tyFtHigd2JIrWW2clBQZX&services=&t=20260311112242, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details. @ https://api.map.baidu.com/api?v=2.0&ak=WkGSwQR2Gx8tyFtHigd2JIrWW2clBQZX&s=1:0
+[     343ms] [WARNING] A parser-blocking, cross site (i.e. different eTLD+1) script, https://api.map.baidu.com/getscript?v=2.0&ak=WkGSwQR2Gx8tyFtHigd2JIrWW2clBQZX&services=&t=20260311112242, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details. @ https://api.map.baidu.com/api?v=2.0&ak=WkGSwQR2Gx8tyFtHigd2JIrWW2clBQZX&s=1:0
+[     697ms] [LOG] 
+        %c
+        N年前，高考改变了你的人生。
+
+        N年后，你有一个机会，用代码帮助别人用高考改变人生。
+
+        朋友，都看到这里了，不妨来试试，成就他人的梦想，码出自己的未来。
+
+         color:blue;font-weight:bold; @ https://www.gaokao.cn/static/js/2026_04_24_15_13.1ac31fadd650f4f8b1e2.143.chunk.js:0
+[     814ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://www.gaokao.cn/assets/iconfont/iconfont.woff2?t=1764897141454 @ https://www.gaokao.cn/static/js/2026_04_24_15_13.b2ff3e60c1dafa27a64a.main~0511367e.chunk.js:0

@@ -1,0 +1,44 @@
+{
+  "university_name": "武昌理工学院",
+  "short_name": "WUT",
+  "location": {
+    "province": "湖北",
+    "city": "武汉",
+    "district": "江夏区",
+    "proximity_to_industry_hub": "Optics Valley (High)"
+  },
+  "academic_standing": {
+    "ranking_shanghai": "Private Top 10",
+    "key_disciplines": [
+      "Biological Engineering",
+      "Art Design",
+      "Nursing"
+    ],
+    "nobel_laureate_workstation": true,
+    "academician_count": 3
+  },
+  "admission_difficulty": {
+    "average_score_margin_over_cutoff": "20-40 points",
+    "trend": "Increasing"
+  },
+  "employment_outcomes": {
+    "employment_rate": "94.2%",
+    "major_employers_cluster": "Optics Valley Bio-city, ICT sector",
+    "further_study_rate": "12.7% (Domestic + Overseas)",
+    "starting_salary_median": 4600
+  },
+  "campus_life": {
+    "style": "European Architecture",
+    "management_style": "Strict/Success-oriented",
+    "dormitory_quality": "High (Renovated)"
+  },
+  "scores": {
+    "academic_capital": 3.5,
+    "graduate_value": 3.4,
+    "location_advantage": 4.2,
+    "globalization": 3.2,
+    "student_empowerment": 3.6,
+    "brand_asset": 4.5,
+    "comprehensive_weighted_score": 3.65
+  }
+}

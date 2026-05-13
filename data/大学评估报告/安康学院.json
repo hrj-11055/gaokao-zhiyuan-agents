@@ -1,0 +1,47 @@
+{
+  "university_name": "安康学院",
+  "short_name": "AKU",
+  "location": {
+    "province": "陕西省",
+    "city": "安康市",
+    "campuses": [
+      "江北校区",
+      "江南校区"
+    ]
+  },
+  "academic": {
+    "key_disciplines": [
+      "农业资源与环境",
+      "生物学"
+    ],
+    "special_colleges": [
+      "茶学院",
+      "蚕桑学院"
+    ],
+    "a_plus_count": 0,
+    "academician_count": 0
+  },
+  "employment": {
+    "overall_employment_rate": "91.3%",
+    "domestic_further_study_rate": "12.5%",
+    "starting_salary_median": 3800,
+    "top_employment_sectors": [
+      "教育",
+      "公共管理",
+      "农林牧渔"
+    ]
+  },
+  "admission": {
+    "difficulty_level": "Easy-Medium",
+    "main_source_province": "陕西"
+  },
+  "scores": {
+    "academic_capital": 2.1,
+    "graduate_value": 2.4,
+    "location_potential": 2.2,
+    "globalization": 1.8,
+    "student_empowerment": 2.5,
+    "brand_asset": 2.3,
+    "comprehensive_weighted_score": 2.22
+  }
+}

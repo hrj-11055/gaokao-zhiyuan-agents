@@ -1,0 +1,60 @@
+{
+  "university_info": {
+    "name": "上海科技大学",
+    "short_name": "ShanghaiTech",
+    "location": "上海市浦东新区张江科学城",
+    "type": "研究型大学",
+    "attributes": [
+      "双一流",
+      "科教融合",
+      "小规模高水平"
+    ]
+  },
+  "academic_strength": {
+    "key_disciplines": [
+      "物理学",
+      "材料科学",
+      "生物科学",
+      "计算机科学"
+    ],
+    "academician_count": 38,
+    "tenure_track_system": true,
+    "large_scientific_facilities": [
+      "SHINE",
+      "SSRF",
+      "Protein Research Facility"
+    ]
+  },
+  "student_quality": {
+    "admission_mode": "综合评价录取 (校园开放日) + 高考",
+    "gaokao_percentile": "Top 0.5% - 1%",
+    "transfer_policy": "满足第一专业志愿，零门槛"
+  },
+  "graduate_outcomes": {
+    "further_study_rate": "81.7%",
+    "overseas_study_top_50_rate": ">50%",
+    "average_starting_salary_monthly": 17000,
+    "top_employers": [
+      "华为",
+      "中芯国际",
+      "联影医疗",
+      "阿里巴巴",
+      "腾讯"
+    ]
+  },
+  "campus_life": {
+    "management_system": "书院制",
+    "teaching_language": "全英文",
+    "student_teacher_ratio": "10:1",
+    "dormitory_quality": "A+"
+  },
+  "evaluation_scores": {
+    "academic_capital": 4.9,
+    "graduate_value": 4.9,
+    "location_advantage": 5.0,
+    "globalization": 4.8,
+    "student_freedom": 4.9,
+    "brand_asset": 4.3,
+    "overall_weighted_score": 4.845
+  }
+}

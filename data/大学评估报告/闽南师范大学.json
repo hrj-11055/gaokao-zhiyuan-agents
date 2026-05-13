@@ -1,0 +1,48 @@
+{
+  "university_name": "闽南师范大学",
+  "short_name": "闽南师大 / MNU",
+  "location": {
+    "province": "福建",
+    "city": "漳州",
+    "campus": [
+      "北江滨校区",
+      "圆山校区"
+    ]
+  },
+  "academic_standing": {
+    "type": "省属重点师范大学",
+    "phd_points": 1,
+    "key_disciplines": [
+      "中国语言文学",
+      "数学",
+      "心理学"
+    ],
+    "soft_ranking_2025": 303
+  },
+  "admission_competitiveness": {
+    "fujian_history_rank": 10200,
+    "fujian_physics_rank": 45000,
+    "difficulty_level": "中等"
+  },
+  "employment_stats": {
+    "further_study_rate": "18.7%",
+    "primary_industry": "教育",
+    "starting_salary_median": 5200,
+    "top_employer_type": "公立中小学"
+  },
+  "tags": [
+    "务实",
+    "教师摇篮",
+    "闽南文化",
+    "性价比"
+  ],
+  "scores": {
+    "academic": 2.8,
+    "employment": 3.5,
+    "location": 3.0,
+    "globalization": 2.5,
+    "student_empowerment": 3.2,
+    "brand": 2.9,
+    "overall": 3.04
+  }
+}

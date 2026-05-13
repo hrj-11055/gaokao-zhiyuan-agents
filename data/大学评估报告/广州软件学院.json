@@ -1,0 +1,52 @@
+{
+  "university_details": {
+    "name": "广州软件学院",
+    "short_name": "广软 / GZUS",
+    "previous_name": "中山大学大学华软软件学院",
+    "type": "Private Undergraduate",
+    "location": {
+      "province": "Guangdong",
+      "city": "Guangzhou",
+      "district": "Conghua"
+    }
+  },
+  "academic_ranking": {
+    "shanghai_ranking_private": 32,
+    "alumni_association_ranking": 22,
+    "key_majors": [
+      "Software Engineering",
+      "IoT Engineering",
+      "Logistics Management"
+    ]
+  },
+  "admission_stats_2024": {
+    "guangdong_physics_line": 485,
+    "guangdong_physics_rank": 168000,
+    "guangdong_history_line": 464,
+    "guangdong_history_rank": 74521
+  },
+  "employment_outcomes": {
+    "employment_rate": "95%+",
+    "avg_starting_salary": 6200,
+    "top_industries": [
+      "IT",
+      "Internet",
+      "Digital Media"
+    ],
+    "further_study_rate": "3.5%"
+  },
+  "campus_features": {
+    "power_policy": "24/7 No Power Cut",
+    "dormitory_standard": "4-person room",
+    "signature_flower": "Silk Cotton (Ceiba speciosa)"
+  },
+  "evaluation_scores": {
+    "academic": 1.9,
+    "employment": 3.4,
+    "location": 3.6,
+    "globalization": 2.6,
+    "freedom": 3.2,
+    "brand": 3.3,
+    "weighted_total": 2.88
+  }
+}

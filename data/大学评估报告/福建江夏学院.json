@@ -1,0 +1,44 @@
+{
+  "university_info": {
+    "name": "福建江夏学院",
+    "short_name": "江夏",
+    "type": "公办本科",
+    "category": "财经政法类",
+    "location": "福建省福州市上街大学城"
+  },
+  "academic_stats": {
+    "master_degree_points": 2,
+    "provincial_key_disciplines": 4,
+    "doctoral_teacher_ratio": "35%",
+    "a_class_disciplines": 0
+  },
+  "admission_data": {
+    "fujian_history_rank_avg": 13000,
+    "fujian_physics_rank_avg": 60000,
+    "competitiveness_level": "Medium-High"
+  },
+  "employment_outcomes": {
+    "further_study_rate": "13.7%",
+    "key_industries": [
+      "Banking",
+      "Legal Services",
+      "Public Sector"
+    ],
+    "selection_student_category": "II",
+    "median_salary_1y": 5400
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.5,
+    "graduate_value": 3.2,
+    "location_advantage": 3.8,
+    "globalization": 2.8,
+    "student_empowerment": 3.2,
+    "brand_asset": 2.6,
+    "overall_weighted_score": 2.98
+  },
+  "risk_factors": [
+    "Name confusion with private institutions",
+    "Limited master degree programs",
+    "Regional brand awareness outside Fujian"
+  ]
+}

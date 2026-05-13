@@ -1,0 +1,364 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 文物保护修复 行业前景 市场规模 增长率 文物产业 2024 2025 文物保护修复 行业前景 市场规模 增长率 文物产业 2024 2025
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%2596%2587%25E7%2589%25A9%25E4%25BF%259D%25E6%258A%25A4%25E4%25BF%25AE%25E5%25A4%258D%2B%25E8%25A1%258C%25E4%25B8%259A%25E5%2589%258D%25E6%2599%25AF%2B%25E5%25B8%2582%25E5%259C%25BA%25E8%25A7%2584%25E6%25A8%25A1%2B%25E5%25A2%259E%25E9%2595%25BF%25E7%258E%2587%2B%25E6%2596%2587%25E7%2589%25A9%25E4%25BA%25A7%25E4%25B8%259A%2B2024%2B2025%26hl%3Dzh-CN&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&aep=1&ntc=1&sa=X&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQ2J8OegQIEBAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&sa=X&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQ0pQJegQIFhAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sa=X&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQtKgLegQIFRAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sa=X&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQtKgLegQIFBAB
+              - generic [ref=e103]: 视频
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sa=X&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQs6gLegQIEhAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - generic [ref=e151]:
+          - generic [ref=e153]:
+            - generic [ref=e155]:
+              - generic [ref=e156]:
+                - img [ref=e157]
+                - heading "AI 概览" [level=2] [ref=e159]
+              - button "关于这条结果的详细信息" [ref=e163]:
+                - img [ref=e165]
+            - generic [ref=e191]:
+              - text: 基于2024-2025年的市场调研数据，中国文物保护修复及相关文物产业正处于快速发展与数字转型期，
+              - mark [ref=e192]: 市场前景广阔
+              - text: 。
+          - progressbar [ref=e198]
+        - button "显示更多 AI 概览" [ref=e222]:
+          - generic [ref=e224] [cursor=pointer]:
+            - generic [ref=e225]: 展开
+            - img [ref=e227]
+      - main [ref=e230]:
+        - generic [ref=e234]:
+          - generic [ref=e237]:
+            - heading "网页搜索结果" [level=2] [ref=e238]
+            - generic [ref=e239]:
+              - generic [ref=e242]:
+                - link "2025中国文物保护工程万亿赛道：数字赋能、社会资本 mgisk.com https://www.mgisk.com › post" [ref=e244] [cursor=pointer]:
+                  - /url: https://www.mgisk.com/post/26068.html
+                  - heading "2025中国文物保护工程万亿赛道：数字赋能、社会资本" [level=3] [ref=e245]
+                  - generic [ref=e247]:
+                    - img [ref=e251]
+                    - generic [ref=e253]:
+                      - generic [ref=e255]: mgisk.com
+                      - generic [ref=e257]: https://www.mgisk.com › post
+                - button "关于这条结果的详细信息" [ref=e258] [cursor=pointer]:
+                  - img [ref=e261]
+              - generic [ref=e264]:
+                - generic [ref=e265]: 2025年5月6日 —
+                - generic [ref=e266]:
+                  - text: 根据中研普华
+                  - emphasis [ref=e267]: 产业
+                  - text: 研究院发布的《》显示，
+                  - emphasis [ref=e268]: "2024"
+                  - text: 年中国
+                  - emphasis [ref=e269]: 文物保护
+                  - text: 工程
+                  - emphasis [ref=e270]: 市场规模
+                  - text: 达820亿元，但数字化率不足15%，社会资本参与度仅28%。这场传统
+                  - emphasis [ref=e271]: 行业
+                  - text: 的数字化觉醒， ...
+          - generic [ref=e275]:
+            - generic [ref=e278]:
+              - link "2025至2030中国文物保护行业市场发展现状分析及有效策略 ... 人人文库 https://www.renrendoc.com › paper" [ref=e280] [cursor=pointer]:
+                - /url: https://www.renrendoc.com/paper/432150869.html
+                - heading "2025至2030中国文物保护行业市场发展现状分析及有效策略 ..." [level=3] [ref=e281]
+                - generic [ref=e286]:
+                  - generic [ref=e288]: 人人文库
+                  - generic [ref=e290]: https://www.renrendoc.com › paper
+              - button "关于这条结果的详细信息" [ref=e291] [cursor=pointer]:
+                - img [ref=e294]
+            - generic [ref=e297]:
+              - generic [ref=e298]: 2025年6月17日 —
+              - generic [ref=e299]:
+                - text: ...
+                - emphasis [ref=e300]: "2025"
+                - text: "-2030年中国"
+                - emphasis [ref=e301]: 文物保护行业
+                - text: 发展现状分析 31.
+                - emphasis [ref=e302]: 行业市场规模
+                - text: 与
+                - emphasis [ref=e303]: 增长
+                - text: 趋势 3
+                - emphasis [ref=e304]: 文物保护行业
+                - text: 整体
+                - emphasis [ref=e305]: 市场规模
+                - text: 统计与预测 3细分领域（如古建筑
+                - emphasis [ref=e306]: 修复
+                - text: 、
+                - emphasis [ref=e307]: 文物
+                - text: 数字化等 ...
+          - generic [ref=e311]:
+            - generic [ref=e314]:
+              - link "全球及中国历史文化遗产修复服务行业研究及十五五规划分析报告 格隆汇 https://www.gelonghui.com › ..." [ref=e316] [cursor=pointer]:
+                - /url: https://www.gelonghui.com/p/2621995
+                - heading "全球及中国历史文化遗产修复服务行业研究及十五五规划分析报告" [level=3] [ref=e317]
+                - generic [ref=e322]:
+                  - generic [ref=e324]: 格隆汇
+                  - generic [ref=e326]: https://www.gelonghui.com › ...
+              - button "关于这条结果的详细信息" [ref=e327] [cursor=pointer]:
+                - img [ref=e330]
+            - generic [ref=e334]:
+              - text: QYResearch调研显示，
+              - emphasis [ref=e335]: "2024"
+              - text: 年全球历史文化遗产
+              - emphasis [ref=e336]: 修复
+              - text: 服务
+              - emphasis [ref=e337]: 市场规模
+              - text: 大约为1.05亿美元，预计2031年将达到1.33亿美元，
+              - emphasis [ref=e338]: "2025"
+              - text: "-2031期间年复合"
+              - emphasis [ref=e339]: 增长率
+              - text: （CAGR）为3.4%。
+          - generic [ref=e343]:
+            - generic [ref=e346]:
+              - link "2024年中国文物保护修缮市场规模为27.87亿元产业发展 ... Sohu https://www.sohu.com › 搜狐文章页 › 共研产业研究院" [ref=e348] [cursor=pointer]:
+                - /url: https://www.sohu.com/a/810450825_121388092
+                - heading "2024年中国文物保护修缮市场规模为27.87亿元产业发展 ..." [level=3] [ref=e349]
+                - generic [ref=e354]:
+                  - generic [ref=e356]: Sohu
+                  - generic [ref=e358]: https://www.sohu.com › 搜狐文章页 › 共研产业研究院
+              - button "关于这条结果的详细信息" [ref=e359] [cursor=pointer]:
+                - img [ref=e362]
+            - generic [ref=e365]:
+              - generic [ref=e366]: 2024年9月23日 —
+              - generic [ref=e367]:
+                - text: 报告首先介绍了
+                - emphasis [ref=e368]: 文物保护
+                - text: 修缮
+                - emphasis [ref=e369]: 行业
+                - text: 定义、商业模式、
+                - emphasis [ref=e370]: 产业
+                - text: 壁垒、风险因素、
+                - emphasis [ref=e371]: 产业
+                - text: 特征及研究方法；接着在综合
+                - emphasis [ref=e372]: 行业
+                - text: PEST环境的基础上对国内外
+                - emphasis [ref=e373]: 市场文物保护
+                - text: 修缮 ...
+            - generic [ref=e375]: 缺少字词： 率 ‎2025
+          - generic [ref=e379]:
+            - generic [ref=e382]:
+              - link "2025-2031全球与中国艺术品保护服务市场现状及未来发展 ... 掘金 https://juejin.cn › 阅读" [ref=e384] [cursor=pointer]:
+                - /url: https://juejin.cn/post/7559514797673726006
+                - heading "2025-2031全球与中国艺术品保护服务市场现状及未来发展 ..." [level=3] [ref=e385]
+                - generic [ref=e390]:
+                  - generic [ref=e392]: 掘金
+                  - generic [ref=e394]: https://juejin.cn › 阅读
+              - button "关于这条结果的详细信息" [ref=e395] [cursor=pointer]:
+                - img [ref=e398]
+            - generic [ref=e401]:
+              - generic [ref=e402]: 2025年10月10日 —
+              - generic [ref=e403]:
+                - text: ...
+                - emphasis [ref=e404]: 2024年全球艺术品保护服务市场销售额达到了1.86亿美元
+                - text: ，预计2031年将达到2.33亿美元，年复合增长率（CAGR）为3.4%（2025-2031）。地区层面来看，中国市场 ...
+          - generic [ref=e408]:
+            - generic [ref=e411]:
+              - link "2025北大报告：2025年度文化产业发展十大趋势预测 新华网 http://www.news.cn › culture › 20250109" [ref=e413] [cursor=pointer]:
+                - /url: http://www.news.cn/culture/20250109/94902bda0f104386b4d582113ea00c78/c.html
+                - heading "2025北大报告：2025年度文化产业发展十大趋势预测" [level=3] [ref=e414]
+                - generic [ref=e419]:
+                  - generic [ref=e421]: 新华网
+                  - generic [ref=e423]: http://www.news.cn › culture › 20250109
+              - button "关于这条结果的详细信息" [ref=e424] [cursor=pointer]:
+                - img [ref=e427]
+            - generic [ref=e430]:
+              - generic [ref=e431]: 2025年1月9日 —
+              - generic [ref=e432]:
+                - emphasis [ref=e433]: "2025"
+                - text: 北大报告：
+                - emphasis [ref=e434]: "2025"
+                - text: 年度文化
+                - emphasis [ref=e435]: 产业
+                - text: 发展十大趋势预测-3.“低空经济+文旅”打造文化消费新
+                - emphasis [ref=e436]: 增长
+                - text: 点
+                - emphasis [ref=e437]: "2024"
+                - text: 年是“低空经济元年”，低空经济已被列入国家战略性新兴
+                - emphasis [ref=e438]: 产业
+                - text: ...
+          - generic [ref=e442]:
+            - generic [ref=e445]:
+              - link "关于2024年中央和地方预算执行情况与2025 ... NPC Observer https://npcobserver.com › uploads › 2025/03 › 20..." [ref=e447] [cursor=pointer]:
+                - /url: https://npcobserver.com/wp-content/uploads/2025/03/2025-MOF-Report_NON-FINAL_ZH.pdf
+                - heading "关于2024年中央和地方预算执行情况与2025 ..." [level=3] [ref=e448]
+                - generic [ref=e453]:
+                  - generic [ref=e455]: NPC Observer
+                  - generic [ref=e457]: https://npcobserver.com › uploads › 2025/03 › 20...
+              - generic [ref=e458]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e459] [cursor=pointer]:
+                - img [ref=e462]
+            - generic [ref=e464]:
+              - generic [ref=e465]:
+                - generic [ref=e466]: 2025年3月5日 —
+                - generic [ref=e467]:
+                  - text: 中央国有资本经营预算支出1555.2亿元,. 完成预算的88.9%,
+                  - emphasis [ref=e468]: 增长
+                  - text: 4%,其中,本级支出1515.03亿元,. 对地方转移支付40.17亿元。调入中央一般公共预算750亿元。 结 ...
+              - generic [ref=e469]: 88 页
+          - generic [ref=e473]:
+            - generic [ref=e476]:
+              - link "2025文物鉴定行业市场需求及未来发展前景分析 - 资讯纵横网 mgisk.com https://mgisk.com › post" [ref=e478] [cursor=pointer]:
+                - /url: https://mgisk.com/post/39880.html
+                - heading "2025文物鉴定行业市场需求及未来发展前景分析 - 资讯纵横网" [level=3] [ref=e479]
+                - generic [ref=e481]:
+                  - img [ref=e485]
+                  - generic [ref=e487]:
+                    - generic [ref=e489]: mgisk.com
+                    - generic [ref=e491]: https://mgisk.com › post
+              - button "关于这条结果的详细信息" [ref=e492] [cursor=pointer]:
+                - img [ref=e495]
+            - generic [ref=e498]:
+              - generic [ref=e499]: 2025年11月21日 —
+              - generic [ref=e500]:
+                - text: 区域市场发展呈现“东部领先、中西部追赶、下沉市场崛起”的格局。东部地区因经济发达、文化资源丰富，
+                - emphasis [ref=e501]: 市场规模
+                - text: 占比高，且聚集了多数头部机构与高端客户。中 ...
+          - generic [ref=e505]:
+            - generic [ref=e508]:
+              - link "2024-2030年中国文物保护修缮市场调查与投资战略研究报告 共研网 https://www.gonyn.com › report" [ref=e510] [cursor=pointer]:
+                - /url: https://www.gonyn.com/report/1790540.html
+                - heading "2024-2030年中国文物保护修缮市场调查与投资战略研究报告" [level=3] [ref=e511]
+                - generic [ref=e513]:
+                  - img [ref=e517]
+                  - generic [ref=e519]:
+                    - generic [ref=e521]: 共研网
+                    - generic [ref=e523]: https://www.gonyn.com › report
+              - button "关于这条结果的详细信息" [ref=e524] [cursor=pointer]:
+                - img [ref=e527]
+            - generic [ref=e530]:
+              - generic [ref=e531]: 2024年9月20日 —
+              - generic [ref=e532]:
+                - emphasis [ref=e533]: 2025年中国文物保护修缮市场规模约31亿元
+                - text: 产业发展前景广阔[图] · 文物保护修缮 2024-09-20 ...
+            - generic [ref=e535]: 缺少字词： 修复 ‎增长 ‎率
+          - generic [ref=e539]:
+            - generic [ref=e542]:
+              - link "关于2024年中央和地方预算执行情况与2025年 ... 财政部 https://www.mof.gov.cn › 202503 › t20250314_3959885" [ref=e544] [cursor=pointer]:
+                - /url: https://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/202503/t20250314_3959885.htm
+                - heading "关于2024年中央和地方预算执行情况与2025年 ..." [level=3] [ref=e545]
+                - generic [ref=e550]:
+                  - generic [ref=e552]: 财政部
+                  - generic [ref=e554]: https://www.mof.gov.cn › 202503 › t20250314_3959885
+              - button "关于这条结果的详细信息" [ref=e555] [cursor=pointer]:
+                - img [ref=e558]
+            - generic [ref=e561]:
+              - generic [ref=e562]: 2025年3月14日 —
+              - generic [ref=e563]:
+                - text: 中央一般公共预算支出141117.34亿元，完成预算的98%，与2023年基本持平，其中，本级支出40720.18亿元，完成预算的98.1%，
+                - emphasis [ref=e564]: 增长
+                - text: 6.5%；对地方转移支付100397.16亿元， ...
+        - navigation [ref=e567]:
+          - heading "网页导航" [level=1] [ref=e568]
+          - text: "1"
+          - link "Page 2" [ref=e571] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=IUTwabXPJ-S0ruEPss2muQM&start=10&sa=N&sstk=Af77f_fD6FF19RMKzD9TeGoqMxZM8aNJDMC4C4NQEnSl8HcSFoaXK7qbXumHL1YCGY2Zk-3DwXBgLDj-kNCk5ezPUjO_9YUIU_9bIQ&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQ8tMDegQIIBAE
+            - text: "2"
+          - link "Page 3" [ref=e573] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=IUTwabXPJ-S0ruEPss2muQM&start=20&sa=N&sstk=Af77f_fD6FF19RMKzD9TeGoqMxZM8aNJDMC4C4NQEnSl8HcSFoaXK7qbXumHL1YCGY2Zk-3DwXBgLDj-kNCk5ezPUjO_9YUIU_9bIQ&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQ8tMDegQIIBAG
+            - text: "3"
+          - link "Page 4" [ref=e575] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=IUTwabXPJ-S0ruEPss2muQM&start=30&sa=N&sstk=Af77f_fD6FF19RMKzD9TeGoqMxZM8aNJDMC4C4NQEnSl8HcSFoaXK7qbXumHL1YCGY2Zk-3DwXBgLDj-kNCk5ezPUjO_9YUIU_9bIQ&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQ8tMDegQIIBAI
+            - text: "4"
+          - link "Page 5" [ref=e577] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=IUTwabXPJ-S0ruEPss2muQM&start=40&sa=N&sstk=Af77f_fD6FF19RMKzD9TeGoqMxZM8aNJDMC4C4NQEnSl8HcSFoaXK7qbXumHL1YCGY2Zk-3DwXBgLDj-kNCk5ezPUjO_9YUIU_9bIQ&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQ8tMDegQIIBAK
+            - text: "5"
+          - link "Page 6" [ref=e579] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=IUTwabXPJ-S0ruEPss2muQM&start=50&sa=N&sstk=Af77f_fD6FF19RMKzD9TeGoqMxZM8aNJDMC4C4NQEnSl8HcSFoaXK7qbXumHL1YCGY2Zk-3DwXBgLDj-kNCk5ezPUjO_9YUIU_9bIQ&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQ8tMDegQIIBAM
+            - text: "6"
+          - link "Page 7" [ref=e581] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=IUTwabXPJ-S0ruEPss2muQM&start=60&sa=N&sstk=Af77f_fD6FF19RMKzD9TeGoqMxZM8aNJDMC4C4NQEnSl8HcSFoaXK7qbXumHL1YCGY2Zk-3DwXBgLDj-kNCk5ezPUjO_9YUIU_9bIQ&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQ8tMDegQIIBAO
+            - text: "7"
+          - heading "下一页" [level=2] [ref=e583]:
+            - link "下一页" [ref=e584] [cursor=pointer]:
+              - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%BF%AE%E5%A4%8D+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E5%A2%9E%E9%95%BF%E7%8E%87+%E6%96%87%E7%89%A9%E4%BA%A7%E4%B8%9A+2024+2025&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=IUTwabXPJ-S0ruEPss2muQM&start=10&sa=N&sstk=Af77f_fD6FF19RMKzD9TeGoqMxZM8aNJDMC4C4NQEnSl8HcSFoaXK7qbXumHL1YCGY2Zk-3DwXBgLDj-kNCk5ezPUjO_9YUIU_9bIQ&ved=2ahUKEwj14-nc5o-UAxVkmisGHbKmKTcQ8NMDegQIIBAQ
+              - generic [ref=e586]: 下一页
+        - navigation
+    - contentinfo [ref=e587]:
+      - heading "页脚链接" [level=1] [ref=e588]
+      - generic [ref=e592]:
+        - generic [ref=e596]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e598] [cursor=pointer]:
+            - generic [ref=e599]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e601]:
+              - text: "-"
+              - generic [ref=e602]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e604] [cursor=pointer]: 更新位置信息
+        - generic [ref=e607]:
+          - link "帮助" [ref=e608] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e609] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e610] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e611] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

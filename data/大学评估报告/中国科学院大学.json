@@ -1,0 +1,59 @@
+{
+  "university_info": {
+    "name": "中国科学院大学",
+    "abbreviation": "UCAS",
+    "location": [
+      "北京怀柔",
+      "北京玉泉路",
+      "北京中关村"
+    ],
+    "type": "研究型大学",
+    "attributes": [
+      "科教融合",
+      "双一流",
+      "中科院直属"
+    ]
+  },
+  "academic_strength": {
+    "a_plus_disciplines": 18,
+    "total_a_disciplines": 30,
+    "academician_count": 236,
+    "graduate_tutors": 14000
+  },
+  "undergraduate_admission": {
+    "annual_intake": 400,
+    "admission_model": "综合评价(6+3+1) + 统招",
+    "avg_percentile": "Top 0.15%"
+  },
+  "career_outcomes": {
+    "further_study_rate": "93.8%",
+    "domestic_study_destinations": [
+      "CAS Institutes",
+      "Tsinghua",
+      "PKU"
+    ],
+    "overseas_study_destinations": [
+      "Harvard",
+      "MIT",
+      "Stanford",
+      "Caltech"
+    ],
+    "primary_employers": [
+      "Huawei",
+      "CAS",
+      "Tech Giants"
+    ]
+  },
+  "campus_life": {
+    "dormitory": "Single room (Yanqihu)",
+    "major_change_policy": "Unrestricted",
+    "academic_pressure": "Extremely High"
+  },
+  "evaluation_scores": {
+    "academic_capital": 5.0,
+    "graduate_value": 5.0,
+    "location_advantage": 5.0,
+    "brand_equity": 4.8,
+    "overall_weighted_score": 4.91
+  }
+}

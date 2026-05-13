@@ -1,0 +1,45 @@
+{
+  "university_name": "福建技术师范学院",
+  "short_name": "福技师 / FPNU",
+  "location": {
+    "province": "福建",
+    "city": "福州福清市",
+    "campus": [
+      "五马山校区",
+      "石竹山校区"
+    ]
+  },
+  "attributes": {
+    "type": "应用型本科",
+    "feature": "技术师范",
+    "is_master_point_cultivation": true
+  },
+  "academic_ranking": {
+    "shanghai_ranking_2025": 477,
+    "alumni_association_2025": 505
+  },
+  "core_disciplines": [
+    "食品科学与工程",
+    "材料科学与工程",
+    "教育学",
+    "电子信息工程"
+  ],
+  "employment_stats": {
+    "overall_employment_rate": ">90%",
+    "vocational_teacher_ratio": "约15-20%",
+    "major_employers": [
+      "福耀玻璃",
+      "冠捷电子",
+      "福建省中职学校"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.1,
+    "graduate_value": 2.8,
+    "location_advantage": 4.2,
+    "globalization": 2.7,
+    "student_empowerment": 3.0,
+    "brand_asset": 2.9,
+    "weighted_total": 2.81
+  }
+}

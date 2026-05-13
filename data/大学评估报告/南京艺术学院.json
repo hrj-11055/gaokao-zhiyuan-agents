@@ -1,0 +1,49 @@
+{
+  "university_name": "南京艺术学院",
+  "short_name": "南艺",
+  "location": {
+    "province": "江苏",
+    "city": "南京",
+    "district": "鼓楼区"
+  },
+  "academic_standing": {
+    "discipline_evaluation": {
+      "A+": [
+        "美术学"
+      ],
+      "A": [
+        "设计学"
+      ],
+      "A-": [
+        "艺术学理论",
+        "音乐与舞蹈学"
+      ],
+      "B+": [
+        "戏剧与影视学"
+      ]
+    },
+    "doctoral_programs": 5,
+    "postdoctoral_stations": 5
+  },
+  "student_life": {
+    "iconic_event": "520毕业展演嘉年华",
+    "vibe": "自由、先锋、烟火气",
+    "dormitory_rating": "两极分化"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "90.39%",
+    "flexible_employment_rate": "39.67%",
+    "top_destinations": [
+      "文创产业",
+      "互联网设计",
+      "教育系统",
+      "演艺行业"
+    ]
+  },
+  "risk_factors": [
+    "行政廉政风险",
+    "老校区硬件饱和",
+    "艺考改革文化课压力"
+  ],
+  "comprehensive_score": 4.44
+}

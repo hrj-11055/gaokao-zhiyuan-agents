@@ -1,0 +1,46 @@
+{
+  "university_name": "香港中文大学（深圳）",
+  "short_name": "CUHK-Shenzhen",
+  "location": {
+    "city": "深圳",
+    "district": "龙岗",
+    "region": "大湾区"
+  },
+  "academic_stats": {
+    "esi_top_1_percent_count": 10,
+    "nobel_laureate_count": 6,
+    "academician_count": 50,
+    "strong_subjects": [
+      "Data Science",
+      "Finance",
+      "Clinical Medicine",
+      "AI"
+    ]
+  },
+  "admission_data": {
+    "model": "631 Comprehensive Evaluation",
+    "avg_rank_physic_gd": 1000,
+    "avg_rank_history_gd": 400,
+    "tuition_fee_annual": 115000
+  },
+  "employment_outcomes": {
+    "further_study_rate": "80.92%",
+    "qs_top_50_rate": "71.55%",
+    "avg_starting_salary": 17080,
+    "top_employers": [
+      "Huawei",
+      "Tencent",
+      "Morgan Stanley",
+      "Big Four"
+    ]
+  },
+  "campus_life": {
+    "system": "Collegiate System",
+    "language": "English",
+    "vibe": "High Pressure, International"
+  },
+  "rankings": {
+    "shanghai_ranking_coop": 1,
+    "comprehensive_score": 4.77
+  }
+}

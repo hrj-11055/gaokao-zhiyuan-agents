@@ -1,0 +1,508 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 中医康复学 大学排名 学科评估 开设院校推荐
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2215903659900146817127%22%2C%22ori_lid%22%3A%2215903659900146817127%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=dcb5266b00e01867&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=dcb5266b00e01867&ie=utf-8&wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_spt=7&rsv_bp=1&f=8&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  康复医科院校排名  天津中医药大学第四轮学科评估  中医康复学专业大学排名  中医康复护理专业本科学校排名  北京中医药大学第四轮学科评估结果  中医药大学学科评估    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 枪击发生时特朗普旁的华裔女记者是谁 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 厨师锅里吐口水后继续出餐 店长回应 14 男子从内地偷运51公斤盒饭回澳门被查 15 财务造假“不敢不能不想”时代来了" [ref=e69]:
+              - cell "相关搜索  康复医科院校排名  天津中医药大学第四轮学科评估  中医康复学专业大学排名  中医康复护理专业本科学校排名  北京中医药大学第四轮学科评估结果  中医药大学学科评估    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 枪击发生时特朗普旁的华裔女记者是谁 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 厨师锅里吐口水后继续出餐 店长回应 14 男子从内地偷运51公斤盒饭回澳门被查 15 财务造假“不敢不能不想”时代来了" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 康复医科院校排名" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%A7%91%E9%99%A2%E6%A0%A1%E6%8E%92%E5%90%8D&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rfqid=dcb5266b00e01867&rsv_dl=0_prs_28616_1&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsf=101636803
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 康复医科院校排名
+                      - link " 天津中医药大学第四轮学科评估" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E5%A4%A9%E6%B4%A5%E4%B8%AD%E5%8C%BB%E8%8D%AF%E5%A4%A7%E5%AD%A6%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rfqid=dcb5266b00e01867&rsv_dl=0_prs_28616_2&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 天津中医药大学第四轮学科评估
+                      - link " 中医康复学专业大学排名" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rfqid=dcb5266b00e01867&rsv_dl=0_prs_28616_3&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsf=101633403
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 中医康复学专业大学排名
+                      - link " 中医康复护理专业本科学校排名" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E6%8A%A4%E7%90%86%E4%B8%93%E4%B8%9A%E6%9C%AC%E7%A7%91%E5%AD%A6%E6%A0%A1%E6%8E%92%E5%90%8D&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rfqid=dcb5266b00e01867&rsv_dl=0_prs_28616_4&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsf=101636803
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 中医康复护理专业本科学校排名
+                      - link " 北京中医药大学第四轮学科评估结果" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%97%E4%BA%AC%E4%B8%AD%E5%8C%BB%E8%8D%AF%E5%A4%A7%E5%AD%A6%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E7%BB%93%E6%9E%9C&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rfqid=dcb5266b00e01867&rsv_dl=0_prs_28616_5&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsf=101633403
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 北京中医药大学第四轮学科评估结果
+                      - link " 中医药大学学科评估" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E8%8D%AF%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rfqid=dcb5266b00e01867&rsv_dl=0_prs_28616_6&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsf=101633403
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 中医药大学学科评估
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=9228%2BEvi2vKdHlYwu3doFgyGUImdD9a7K5ySd9hZuXpG2azXGgYaxaobe9k&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=cbbdycd223OKYNbWevgCxCfD6PJBoG%2FUpszZ8CkDnS7N%2FKLcFD1%2B3p4NFOM&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=cbbdycd223OKYNbWevgCxCfD6PJBoG%2FUpszZ8CkDnS7N%2FKLcFD1%2B3p4NFOM&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "高市政府越过“最后一根红线”" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=cbbdycd223OKYNbWevgCxCfD6PJBoG%2FUpszZ8CkDnS7N%2FKLcFD1%2B3p4NFOM&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=cbbdycd223OKYNbWevgCxCfD6PJBoG%2FUpszZ8CkDnS7N%2FKLcFD1%2B3p4NFOM&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=cbbdycd223OKYNbWevgCxCfD6PJBoG%2FUpszZ8CkDnS7N%2FKLcFD1%2B3p4NFOM&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=cbbdycd223OKYNbWevgCxCfD6PJBoG%2FUpszZ8CkDnS7N%2FKLcFD1%2B3p4NFOM&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=cbbdycd223OKYNbWevgCxCfD6PJBoG%2FUpszZ8CkDnS7N%2FKLcFD1%2B3p4NFOM&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "男子从内地偷运51公斤盒饭回澳门被查" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E7%94%B7%E5%AD%90%E4%BB%8E%E5%86%85%E5%9C%B0%E5%81%B7%E8%BF%9051%E5%85%AC%E6%96%A4%E7%9B%92%E9%A5%AD%E5%9B%9E%E6%BE%B3%E9%97%A8%E8%A2%AB%E6%9F%A5&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=cbbdycd223OKYNbWevgCxCfD6PJBoG%2FUpszZ8CkDnS7N%2FKLcFD1%2B3p4NFOM&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=cbbdycd223OKYNbWevgCxCfD6PJBoG%2FUpszZ8CkDnS7N%2FKLcFD1%2B3p4NFOM&rqid=dcb5266b00e01867&rsf=a1014b839252086a8c17f4684c551952_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e211]:
+            - img [ref=e214]
+            - generic [ref=e216]:
+              - generic [ref=e220]:
+                - generic [ref=e221]: 
+                - generic [ref=e222]: 停
+              - generic [ref=e225]:
+                - generic [ref=e226]: 
+                - generic [ref=e227]: 听
+          - generic [ref=e233]:
+            - heading "中医康复学 大学排名 学科评估 开设院校推荐 - 精选笔记" [level=3] [ref=e234]:
+              - link "中医康复学 大学排名 学科评估 开设院校推荐 - 精选笔记" [ref=e235] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=PAtyqKu1nxgLd50CFMo37XpN6u6xFBqRHT8EsHDP71_lwk4r_QmW6qci3jgynuSG9aXW1OjOX5hGkEyu9_chI3zjai-j6Am-Ul4HEPzHX_zQgwoMJZqWnl5XG2yvFSTF_S-8rwfrw27rUGqTUXe8FcIXjeGy0bU4hCmWSqaRf88od2vZxxQ6kB0CuJCh4BKYVk-BSyzVjXsRLmo5RVRTxXUNxPrV43tvtQIvpN1ebU9z_EnfZDNihvumXQWW1XmO2cadKkLInmS75UpP0GMvkoH9LDp4xrdlRwzf5jMA7uwsCfS6qErYAqIcNdtGMDLlrMSDK0UBWNV8UXgXgLIOI_
+                - generic [ref=e237]:
+                  - emphasis [ref=e239]: 中医康复学 大学排名 学科评估 开设院校推荐
+                  - generic [ref=e240]: "- 精选笔记"
+            - generic [ref=e242]:
+              - link "全国三大康复医学名校实力盘点 头像 医研西西" [ref=e245] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=bWAIfHfh4CaW4WWrcHecZtN6nWAbxnO5LZ98IN4BU1-dmFK4llzAfFtCLGWPASrrnmq-zMs42fN8O7qop5zsuBRKyjBRCkdbggh1B9ZDEngAFdGMJk0ME50jE6iEMWlM
+                - generic [ref=e246]:
+                  - heading "全国三大康复医学名校实力盘点" [level=3] [ref=e253]:
+                    - generic [ref=e255]: 全国三大康复医学名校实力盘点
+                  - generic [ref=e257]:
+                    - img "头像" [ref=e260]
+                    - generic [ref=e262]: 医研西西
+              - link "2025年康复治疗学专业排名发布南京医科大学四川大学前二 头像 高校界" [ref=e265] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=8dZpWEKARtLdiytfjF4r_VOxy1lzIs47X5SDOE_IfN0Y07s9HsY966JQojSXqTlLL6Ber0b6oN867XM825PB4_
+                - generic [ref=e266]:
+                  - heading "2025年康复治疗学专业排名发布南京医科大学四川大学前二" [level=3] [ref=e273]:
+                    - generic [ref=e275]: 2025年康复治疗学专业排名发布南京医科大学四川大学前二
+                  - generic [ref=e277]:
+                    - img "头像" [ref=e280]
+                    - generic [ref=e282]: 高校界
+              - link "康复医学技术专业,40+院校精选! 头像 卡点的孑然吖梓" [ref=e285] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=bWAIfHfh4CaW4WWrcHecZtN6nWAbxnO5LZ98IN4BU1-dmFK4llzAfFtCLGWPASrrnmq-zMs42fN8O7qop5zsuGejGYRkVIEWvyiJNNxL1ZpCs2wkBQOa7HVf2ORMGXzU
+                - generic [ref=e286]:
+                  - heading "康复医学技术专业,40+院校精选!" [level=3] [ref=e293]:
+                    - generic [ref=e295]: 康复医学技术专业,40+院校精选!
+                  - generic [ref=e297]:
+                    - img "头像" [ref=e300]
+                    - generic [ref=e302]: 卡点的孑然吖梓
+              - link "最新排名汇总2024软科中国大学康复类专业排名大汇总 头像 华励康复考研 2赞" [ref=e305] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=1f4mEAIO6J8W34xcART_9_TzehizxXpaLr45ohU-L_f3WIH15YYSHdTm8fQQboHp
+                - generic [ref=e306]:
+                  - heading "最新排名汇总2024软科中国大学康复类专业排名大汇总" [level=3] [ref=e313]:
+                    - generic [ref=e315]: 最新排名汇总2024软科中国大学康复类专业排名大汇总
+                  - generic [ref=e316]:
+                    - generic [ref=e317]:
+                      - img "头像" [ref=e320]
+                      - generic [ref=e322]: 华励康复考研
+                    - generic [ref=e324]: 2赞
+            - link "查看更多笔记 >" [ref=e325] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=KkITkzRKkS156QQVv-F0ri4_kxeBhCgCCe4VNUyQfGHkEMcqFP4KRjJamCjj6lfD8DWI3XSWLxMJwTjOIMpOhQoGzZPtF2MDdzfPZ0KlepC6re-ygJMAEtzBS-qFF_xK9JSpqIaH55uIv5fsvZB-FH0ET_xF48AnfHLXJk4wIwFKBKFSpQ5XOMn1HJgbWp0OcqbuqJ8NVajWg3OuENgz4HUDgxDVGxsl84RaK0zcAxC72HuV4gNwxRFGyq-orB6rSElrsmL5clT3CTNLeapeBevVg8kpjyM9g7byECkhtcm8zReobIQsYpVDy_z6vTyZ4VS4298Fe2abV14FwOY6Y_
+          - generic [ref=e329]:
+            - heading "中医康复学专业全国大学排名一览表(2026年最新14强)-高考100" [level=3] [ref=e332]:
+              - link "中医康复学专业全国大学排名一览表(2026年最新14强)-高考100" [ref=e333] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=H9b-rk3pyqp1E5QxFuWk8kstHnRks_4oo84nOZfiHmlqE4coWdzvAiMxAQ0iukIpXAAMCKqMimESvy37MJ1izq
+                - paragraph [ref=e336]:
+                  - generic [ref=e339]:
+                    - emphasis [ref=e340]: 中医康复学
+                    - text: 专业全国
+                    - emphasis [ref=e341]: 大学排名
+                    - text: 一览表(2026年最新14强)-高考100
+            - generic [ref=e342]:
+              - link [ref=e344] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=H9b-rk3pyqp1E5QxFuWk8kstHnRks_4oo84nOZfiHmlqE4coWdzvAiMxAQ0iukIpXAAMCKqMimESvy37MJ1izq
+              - generic [ref=e349]:
+                - generic [ref=e354]:
+                  - text: 2026年4月8日
+                  - generic [ref=e355]:
+                    - emphasis [ref=e356]: 第1名:南京中医药大学(评分为43.9)
+                    - text: 第1名:天津中医药大学(评分为43.9) 第1名:浙江中医药大学(评分为43.9) 第4名:成都中医药大学(评分为43.1) 第5名:山东中医药大学(评分为39.0) 第6名:长春中医药大学(评分为35.9) 第7名:湖南中医药大学(评分为35.4) 第8名:大连医科大学(评分为33.3) 第9名:黑龙江中医药大学(评分为
+                - link "高考100网" [ref=e361] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=H9b-rk3pyqp1E5QxFuWk8kstHnRks_4oo84nOZfiHmlqE4coWdzvAiMxAQ0iukIpXAAMCKqMimESvy37MJ1izq
+                  - generic [ref=e362]: 高考100网
+                  - generic [ref=e364]: 
+          - generic [ref=e366]:
+            - generic [ref=e367]: 大家还在搜
+            - generic [ref=e368]:
+              - link "康复医科院校排名" [ref=e369] [cursor=pointer]:
+                - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%A7%91%E9%99%A2%E6%A0%A1%E6%8E%92%E5%90%8D&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=c586kq0S3mTA%2BIIAioaP%2FqzP5NWWqXkamtELSF9S4%2Bw0%2F3Fi38y%2BuF8CFL4&rsf=101636803&rsv_dl=0_prs_28608_1
+                - generic [ref=e371]: 康复医科院校排名
+              - link "天津中医药大学第四轮学科评估" [ref=e372] [cursor=pointer]:
+                - /url: /s?wd=%E5%A4%A9%E6%B4%A5%E4%B8%AD%E5%8C%BB%E8%8D%AF%E5%A4%A7%E5%AD%A6%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=c586kq0S3mTA%2BIIAioaP%2FqzP5NWWqXkamtELSF9S4%2Bw0%2F3Fi38y%2BuF8CFL4&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e374]: 天津中医药大学第四轮学科评估
+              - link "中医康复学专业大学排名" [ref=e375] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=c586kq0S3mTA%2BIIAioaP%2FqzP5NWWqXkamtELSF9S4%2Bw0%2F3Fi38y%2BuF8CFL4&rsf=101633403&rsv_dl=0_prs_28608_3
+                - generic [ref=e377]: 中医康复学专业大学排名
+              - link "中医康复护理专业本科学校排名" [ref=e378] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E6%8A%A4%E7%90%86%E4%B8%93%E4%B8%9A%E6%9C%AC%E7%A7%91%E5%AD%A6%E6%A0%A1%E6%8E%92%E5%90%8D&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=c586kq0S3mTA%2BIIAioaP%2FqzP5NWWqXkamtELSF9S4%2Bw0%2F3Fi38y%2BuF8CFL4&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e380]: 中医康复护理专业本科学校排名
+              - link "北京中医药大学第四轮学科评估结果" [ref=e381] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%97%E4%BA%AC%E4%B8%AD%E5%8C%BB%E8%8D%AF%E5%A4%A7%E5%AD%A6%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E7%BB%93%E6%9E%9C&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=c586kq0S3mTA%2BIIAioaP%2FqzP5NWWqXkamtELSF9S4%2Bw0%2F3Fi38y%2BuF8CFL4&rsf=101633403&rsv_dl=0_prs_28608_5
+                - generic [ref=e383]: 北京中医药大学第四轮学科评估结果
+              - link "中医药大学学科评估" [ref=e384] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E8%8D%AF%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&usm=3&ie=utf-8&rsv_pq=dcb5266b00e01867&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&rsv_t=c586kq0S3mTA%2BIIAioaP%2FqzP5NWWqXkamtELSF9S4%2Bw0%2F3Fi38y%2BuF8CFL4&rsf=101633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e386]: 中医药大学学科评估
+          - generic [ref=e390]:
+            - heading "中医康复学专业哪个学校最好?附全国排名前10强的大学名单-高考100" [level=3] [ref=e393]:
+              - link "中医康复学专业哪个学校最好?附全国排名前10强的大学名单-高考100" [ref=e394] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=y3WAN_bggFSF7gF2WudzjUvOzBDddQDM2GwCkcigpK7ZLv5U0M7MMUL7atnMoc9U3WRJbqIj8ghzlu-2pnhHsa
+                - paragraph [ref=e397]:
+                  - generic [ref=e400]:
+                    - emphasis [ref=e401]: 中医康复学
+                    - text: 专业哪个
+                    - emphasis [ref=e402]: 学校
+                    - text: 最好?附全国
+                    - emphasis [ref=e403]: 排名
+                    - text: 前10强的
+                    - emphasis [ref=e404]: 大学
+                    - text: 名单-高考100
+            - generic [ref=e409]:
+              - text: 2026年3月18日
+              - generic [ref=e410]:
+                - emphasis [ref=e411]: (1)南京中医药大学:在中医康复学专业软科排名中位居第一
+                - text: 。该校是该领域的老牌名校,专业教学注重传统中医理论与现代康复技术的深度融合,并拥有先进的实训中心与丰富的临床实习资源。 (2)天津中医药大学:在中医康复学专业软科排名中同样位居第一。该校专业教学突出针灸、推拿等中医特色康复疗法,注重学科交叉与国际视野...
+            - link "高考100网" [ref=e416] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=y3WAN_bggFSF7gF2WudzjUvOzBDddQDM2GwCkcigpK7ZLv5U0M7MMUL7atnMoc9U3WRJbqIj8ghzlu-2pnhHsa
+              - generic [ref=e417]: 高考100网
+              - generic [ref=e419]: 
+          - generic [ref=e423]:
+            - heading "2025全国中医康复学专业大学排行榜 最好院校排名名单汇总_高三网" [level=3] [ref=e426]:
+              - link "2025全国中医康复学专业大学排行榜 最好院校排名名单汇总_高三网" [ref=e427] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=H9b-rk3pyqp1E5QxFuWk8hzH7qGFM5E152uisFgy2c3Uw71wcvCAHQEAFzAHq_uxc5bwwgUmblOs6kvkwAhifq
+                - paragraph [ref=e430]:
+                  - generic [ref=e433]:
+                    - text: 2025全国
+                    - emphasis [ref=e434]: 中医康复学
+                    - text: 专业
+                    - emphasis [ref=e435]: 大学排行榜
+                    - text: 最好
+                    - emphasis [ref=e436]: 院校排名
+                    - text: 名单汇总_高三网
+            - generic [ref=e441]:
+              - text: 2025年6月21日
+              - generic [ref=e442]:
+                - text: 2025全国开设中医康复学专业的学校共有11所,其中,
+                - emphasis [ref=e443]: 南京中医药大学、浙江中医药大学、天津中医药大学的中医康复学专业在全国排名前三位
+                - text: ",实力非常不错,而且专业分数线也很高,以下是小编整理的2025全国中医康复学专业院校排行榜,希望对想要报考中医康复学专业的同学有所帮助! 1全国中医康复学专业院校排行榜2025 南京中医药..."
+            - link "高三网" [ref=e448] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=H9b-rk3pyqp1E5QxFuWk8hzH7qGFM5E152uisFgy2c3Uw71wcvCAHQEAFzAHq_uxc5bwwgUmblOs6kvkwAhifq
+              - generic [ref=e449]: 高三网
+              - generic [ref=e451]: 
+          - generic [ref=e455]:
+            - heading "中医康复学专业大学有哪些(2025最新排名榜一览)-新高考网" [level=3] [ref=e458]:
+              - link "中医康复学专业大学有哪些(2025最新排名榜一览)-新高考网" [ref=e459] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=rz4NoYgMY8D5UcdvbIl_2amatCu84rshpsV-MLa1XQWpLUOkim41gbJoFx9zbXQUhduGRV4L8em4x45uiQzfQK
+                - paragraph [ref=e462]:
+                  - generic [ref=e465]:
+                    - emphasis [ref=e466]: 中医康复学
+                    - text: 专业
+                    - emphasis [ref=e467]: 大学
+                    - text: 有哪些(2025最新
+                    - emphasis [ref=e468]: 排名
+                    - text: 榜一览)-新高考网
+            - generic [ref=e469]:
+              - link [ref=e471] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=rz4NoYgMY8D5UcdvbIl_2amatCu84rshpsV-MLa1XQWpLUOkim41gbJoFx9zbXQUhduGRV4L8em4x45uiQzfQK
+              - generic [ref=e476]:
+                - generic [ref=e481]:
+                  - text: 2025年6月19日
+                  - generic [ref=e482]:
+                    - emphasis [ref=e483]: 中医康复学专业大学排名前三强名单有:第一档(A+级):天津中医药大学、成都中医药大学;第二档(B+级):浙江中医药大学、南京中医药大学、山东中医药大学
+                    - text: ;第三档(B级):长春中医药大学、陕西中医药大学、安徽中医药大学。 2025年全国有哪些大学开设了中医康复学专业?各院校专业实力和排名如何?详见如下最新软科中国大学...
+                - link "新高考网" [ref=e488] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=rz4NoYgMY8D5UcdvbIl_2amatCu84rshpsV-MLa1XQWpLUOkim41gbJoFx9zbXQUhduGRV4L8em4x45uiQzfQK
+                  - generic [ref=e489]: 新高考网
+                  - generic [ref=e491]: 
+          - generic [ref=e495]:
+            - heading "全国开设中医康复学专业的大学排名_2025年更新 - 掌上高考" [level=3] [ref=e498]:
+              - link "全国开设中医康复学专业的大学排名_2025年更新 - 掌上高考" [ref=e499] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=phq5ygXyoPZSPBNdfG28n5efoPuLOfgW2i0IHaLW3Lox0E53Cy7Q2m1lSCmRSim4
+                - paragraph [ref=e502]:
+                  - generic [ref=e505]:
+                    - text: 全国
+                    - emphasis [ref=e506]: 开设中医康复学
+                    - text: 专业的
+                    - emphasis [ref=e507]: 大学排名
+                    - text: _2025年更新 - 掌上高考
+            - generic [ref=e512]:
+              - text: 2024年11月26日
+              - generic [ref=e513]:
+                - emphasis [ref=e514]: 排名第8:内蒙古医科大学; 排名第9:山西中医药大学; 排名第10:河北中医药大学
+                - text: "; 二、全国中医康复学专业大学排名榜(2025年最新) 三、中医康复学专业简介: 四、开设中医康复学的院校推荐: 1.浙江中医药大学 浙江中医药大学是浙江省重点建设高校、高水平大学建设高校,是浙江省人民政府、国家中医药管理局、教育部共建..."
+            - link "掌上高考" [ref=e519] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=phq5ygXyoPZSPBNdfG28n5efoPuLOfgW2i0IHaLW3Lox0E53Cy7Q2m1lSCmRSim4
+              - generic [ref=e520]: 掌上高考
+              - generic [ref=e522]: 
+          - generic [ref=e526]:
+            - heading "全国开设中医康复学专业的大学排名_2026年更新 - 掌上高考" [level=3] [ref=e529]:
+              - link "全国开设中医康复学专业的大学排名_2026年更新 - 掌上高考" [ref=e530] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=WpPSDnt_NfO_LjWHK_tVGn1_KNp1jYFlKq-bX6oTVHV0NbBrn8JKJizmW7mm4REV
+                - paragraph [ref=e533]:
+                  - generic [ref=e536]:
+                    - text: 全国
+                    - emphasis [ref=e537]: 开设中医康复学
+                    - text: 专业的
+                    - emphasis [ref=e538]: 大学排名
+                    - text: _2026年更新 - 掌上高考
+            - generic [ref=e539]:
+              - link [ref=e541] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=WpPSDnt_NfO_LjWHK_tVGn1_KNp1jYFlKq-bX6oTVHV0NbBrn8JKJizmW7mm4REV
+              - generic [ref=e546]:
+                - generic [ref=e551]:
+                  - text: 2026年3月5日
+                  - generic [ref=e552]:
+                    - text: 排名第4:黑龙江中医药大学; 排名第5:山东中医药大学; 排名第6:湖南中医药大学; 排名第7:长春中医药大学; 排名第8:河南中医药大学; 排名第9:大连医科大学; 排名第10:陕西中医药大学; 二、全国中医康复学专业大学排名榜(2026年最新) 排名院校名称专业名称专业排名等级1
+                    - emphasis [ref=e553]: 天津中医药大学
+                    - text: 中医康复学A+2浙江中医药大学...
+                - link "掌上高考" [ref=e558] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=WpPSDnt_NfO_LjWHK_tVGn1_KNp1jYFlKq-bX6oTVHV0NbBrn8JKJizmW7mm4REV
+                  - generic [ref=e559]: 掌上高考
+                  - generic [ref=e561]: 
+          - generic [ref=e565]:
+            - heading "中医康复学专业2024年大学排名 最好的大学排行榜_高三网" [level=3] [ref=e568]:
+              - link "中医康复学专业2024年大学排名 最好的大学排行榜_高三网" [ref=e569] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=YJu_Ey2aSq4A84TcVo3UdUHYyHB6q_7Vpfvzccx9w9bG4I1Rg9oS4MX6i4tzPefm
+                - paragraph [ref=e572]:
+                  - generic [ref=e575]:
+                    - emphasis [ref=e576]: 中医康复学
+                    - text: 专业2024年
+                    - emphasis [ref=e577]: 大学排名
+                    - text: 最好的
+                    - emphasis [ref=e578]: 大学排行榜
+                    - text: _高三网
+            - generic [ref=e579]:
+              - link [ref=e581] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=YJu_Ey2aSq4A84TcVo3UdUHYyHB6q_7Vpfvzccx9w9bG4I1Rg9oS4MX6i4tzPefm
+              - generic [ref=e586]:
+                - generic [ref=e591]:
+                  - text: 2025年3月4日
+                  - generic [ref=e592]:
+                    - text: 哪些大学是2024年中医康复学专业办学实力最强,最具竞争力,办学水平最高的大学?榜单显示,山东中医药大学、
+                    - emphasis [ref=e593]: 浙江中医药大学
+                    - text: 、黑龙江中医药大学位居校友会2024中国大学一流专业排名前三甲。 校友会2024中国大学中医康复学专业排名(研究型) 校友会2024中国大学中医康复学专业排名(应用型) ...
+                - link "头像 高三网" [ref=e598] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=YJu_Ey2aSq4A84TcVo3UdUHYyHB6q_7Vpfvzccx9w9bG4I1Rg9oS4MX6i4tzPefm
+                  - img "头像" [ref=e601]
+                  - generic [ref=e602]: 高三网
+                  - generic [ref=e604]: 
+        - generic [ref=e607]:
+          - generic [ref=e608]: 相关搜索
+          - table [ref=e609]:
+            - rowgroup [ref=e610]:
+              - row "康复医科院校排名 中医药大学学科评估" [ref=e611]:
+                - cell "康复医科院校排名" [ref=e612]:
+                  - link "康复医科院校排名" [ref=e613] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%A7%91%E9%99%A2%E6%A0%A1%E6%8E%92%E5%90%8D&rsf=101636803&rsp=0&f=1&rs_src=0&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&rsv_dl=brs_28338_1
+                    - generic [ref=e615]: 康复医科院校排名
+                - cell "中医药大学学科评估" [ref=e616]:
+                  - link "中医药大学学科评估" [ref=e617] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E8%8D%AF%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&rsv_dl=brs_28338_2
+                    - generic [ref=e619]: 中医药大学学科评估
+              - row "中医康复学专业大学排名 中医康复护理专业本科学校排名" [ref=e620]:
+                - cell "中医康复学专业大学排名" [ref=e621]:
+                  - link "中医康复学专业大学排名" [ref=e622] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&rsf=101633403&rsp=2&f=1&rs_src=0&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&rsv_dl=brs_28338_3
+                    - generic [ref=e624]: 中医康复学专业大学排名
+                - cell "中医康复护理专业本科学校排名" [ref=e625]:
+                  - link "中医康复护理专业本科学校排名" [ref=e626] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E6%8A%A4%E7%90%86%E4%B8%93%E4%B8%9A%E6%9C%AC%E7%A7%91%E5%AD%A6%E6%A0%A1%E6%8E%92%E5%90%8D&rsf=101636803&rsp=3&f=1&rs_src=0&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&rsv_dl=brs_28338_4
+                    - generic [ref=e628]: 中医康复护理专业本科学校排名
+              - row "中医康复理疗专业大学 康复治疗学学科评估" [ref=e629]:
+                - cell "中医康复理疗专业大学" [ref=e630]:
+                  - link "中医康复理疗专业大学" [ref=e631] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E7%90%86%E7%96%97%E4%B8%93%E4%B8%9A%E5%A4%A7%E5%AD%A6&rsf=101636803&rsp=4&f=1&rs_src=0&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&rsv_dl=brs_28338_5
+                    - generic [ref=e633]: 中医康复理疗专业大学
+                - cell "康复治疗学学科评估" [ref=e634]:
+                  - link "康复治疗学学科评估" [ref=e635] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E6%B2%BB%E7%96%97%E5%AD%A6%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&rsv_dl=brs_28338_6
+                    - generic [ref=e637]: 康复治疗学学科评估
+              - row "康复治疗学专业最好的大学排名 成都中医药大学第四轮学科评估" [ref=e638]:
+                - cell "康复治疗学专业最好的大学排名" [ref=e639]:
+                  - link "康复治疗学专业最好的大学排名" [ref=e640] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E6%B2%BB%E7%96%97%E5%AD%A6%E4%B8%93%E4%B8%9A%E6%9C%80%E5%A5%BD%E7%9A%84%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&rsf=101636803&rsp=6&f=1&rs_src=0&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&rsv_dl=brs_28338_7
+                    - generic [ref=e642]: 康复治疗学专业最好的大学排名
+                - cell "成都中医药大学第四轮学科评估" [ref=e643]:
+                  - link "成都中医药大学第四轮学科评估" [ref=e644] [cursor=pointer]:
+                    - /url: /s?wd=%E6%88%90%E9%83%BD%E4%B8%AD%E5%8C%BB%E8%8D%AF%E5%A4%A7%E5%AD%A6%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101633403&rsp=7&f=1&rs_src=0&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&rsv_dl=brs_28338_8
+                    - generic [ref=e646]: 成都中医药大学第四轮学科评估
+              - row "康复治疗学全国排名前十的大学 中医药大学康复物理治疗专业好吗" [ref=e647]:
+                - cell "康复治疗学全国排名前十的大学" [ref=e648]:
+                  - link "康复治疗学全国排名前十的大学" [ref=e649] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E6%B2%BB%E7%96%97%E5%AD%A6%E5%85%A8%E5%9B%BD%E6%8E%92%E5%90%8D%E5%89%8D%E5%8D%81%E7%9A%84%E5%A4%A7%E5%AD%A6&rsf=101633403&rsp=8&f=1&rs_src=0&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&rsv_dl=brs_28338_9
+                    - generic [ref=e651]: 康复治疗学全国排名前十的大学
+                - cell "中医药大学康复物理治疗专业好吗" [ref=e652]:
+                  - link "中医药大学康复物理治疗专业好吗" [ref=e653] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E8%8D%AF%E5%A4%A7%E5%AD%A6%E5%BA%B7%E5%A4%8D%E7%89%A9%E7%90%86%E6%B2%BB%E7%96%97%E4%B8%93%E4%B8%9A%E5%A5%BD%E5%90%97&rsf=101636803&rsp=9&f=1&rs_src=0&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&rsv_dl=brs_28338_10
+                    - generic [ref=e655]: 中医药大学康复物理治疗专业好吗
+      - generic [ref=e658]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e659]:
+          - generic [ref=e660]: "1"
+        - link "2" [ref=e661] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&pn=10&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&ie=utf-8&usm=3&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&topic_pn=
+          - generic [ref=e662]: "2"
+        - link "3" [ref=e663] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&pn=20&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&ie=utf-8&usm=3&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&topic_pn=
+          - generic [ref=e664]: "3"
+        - link "4" [ref=e665] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&pn=30&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&ie=utf-8&usm=3&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&topic_pn=
+          - generic [ref=e666]: "4"
+        - link "5" [ref=e667] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&pn=40&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&ie=utf-8&usm=3&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&topic_pn=
+          - generic [ref=e668]: "5"
+        - link "6" [ref=e669] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&pn=50&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&ie=utf-8&usm=3&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&topic_pn=
+          - generic [ref=e670]: "6"
+        - link "7" [ref=e671] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&pn=60&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&ie=utf-8&usm=3&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&topic_pn=
+          - generic [ref=e672]: "7"
+        - link "8" [ref=e673] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&pn=70&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&ie=utf-8&usm=3&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&topic_pn=
+          - generic [ref=e674]: "8"
+        - link "9" [ref=e675] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&pn=80&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&ie=utf-8&usm=3&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&topic_pn=
+          - generic [ref=e676]: "9"
+        - link "10" [ref=e677] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&pn=90&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&ie=utf-8&usm=3&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&topic_pn=
+          - generic [ref=e678]: "10"
+        - link "下一页" [ref=e679] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&pn=10&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%E6%8E%A8%E8%8D%90&ie=utf-8&usm=3&rsv_pq=dcb5266b00e01867&rsv_t=6b7652qOYMXp%2BhDOCpOJp3lDkvqQQhWvoGbY8jS19xJ8oOLd%2FW8EekzmsNk&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e680]
+      - generic [ref=e683]:
+        - link "帮助" [ref=e684] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e685] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e686] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e687] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

@@ -1,0 +1,8 @@
+- generic [ref=e1]:
+  - img [ref=e3]
+  - generic [ref=e4]: 提示：访问地址无效，错误的模板参数，siteId=145, tplId=3189, columnId=12783, pageType=3！
+  - generic [ref=e5]:
+    - link "首页" [ref=e7] [cursor=pointer]:
+      - /url: "#"
+    - link "关闭此页" [ref=e9] [cursor=pointer]:
+      - /url: "#"

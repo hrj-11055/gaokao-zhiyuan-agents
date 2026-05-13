@@ -1,0 +1,51 @@
+{
+  "university_name": "青岛黄海学院",
+  "short_name": "黄海学院",
+  "location": {
+    "province": "山东",
+    "city": "青岛",
+    "district": "西海岸新区",
+    "city_gdp_2023": "15760亿元"
+  },
+  "academic_standing": {
+    "national_first_class_major": [
+      "船舶与海洋工程"
+    ],
+    "provincial_first_class_majors": [
+      "机械设计制造及其自动化",
+      "电子商务",
+      "物流管理",
+      "计算机科学与技术"
+    ],
+    "a_plus_count": 0,
+    "academician_count_full_time": 0
+  },
+  "admission_data_2024": {
+    "shandong_comprehensive_score": 444,
+    "shandong_rank": 318757,
+    "liaoning_physics_score": 394
+  },
+  "employment_stats": {
+    "further_study_rate": "5.2%",
+    "major_employers": [
+      "海尔",
+      "海信",
+      "上汽通用五菱"
+    ],
+    "starting_salary_median": 5000
+  },
+  "campus_life": {
+    "management_style": "Military-style",
+    "dormitory_condition": "High (New Campus)",
+    "key_culture_tag": "Traditional Chinese Culture & Discipline"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.5,
+    "employment_value": 2.8,
+    "location_advantage": 4.2,
+    "globalization": 1.8,
+    "student_freedom": 1.5,
+    "brand_asset": 3.5,
+    "weighted_total": 2.825
+  }
+}

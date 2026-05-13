@@ -1,0 +1,46 @@
+{
+  "university_info": {
+    "name": "西安思源学院",
+    "english_name": "Xi'an Siyuan University",
+    "location": "陕西省西安市",
+    "type": "民办本科",
+    "founded_year": 1998
+  },
+  "academic_strength": {
+    "provincial_first_class_majors": [
+      "计算机科学与技术",
+      "机械设计制造及其自动化",
+      "网络工程",
+      "土木工程",
+      "国际经济与贸易",
+      "汉语言文学",
+      "护理学"
+    ],
+    "research_platforms": [
+      "教育部东南亚研究中心",
+      "数字化建筑陕西省高校工程研究中心"
+    ]
+  },
+  "student_performance": {
+    "admission_difficulty": "Medium-Low",
+    "junior_to_bachelor_rate": "63.31%",
+    "graduate_starting_salary_median": 4800
+  },
+  "campus_life": {
+    "dormitory_features": [
+      "Floor Heating",
+      "Air Conditioning",
+      "Independent Bathroom"
+    ],
+    "management_style": "Strict/Pragmatic"
+  },
+  "evaluation_scores": {
+    "academic": 2.5,
+    "employment": 2.8,
+    "location_industry": 3.5,
+    "globalization": 2.6,
+    "student_empowerment": 3.0,
+    "brand_asset": 3.2,
+    "weighted_total": 2.85
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "university_info": {
+    "name": "厦门大学",
+    "abbreviation": "XMU",
+    "established": 1921,
+    "founder": "陈嘉庚",
+    "motto": "自强不息，止于至善"
+  },
+  "academic_ranking": {
+    "ruanke_2025": 24,
+    "qs_2025": 362,
+    "a_plus_subjects": [
+      "海洋科学"
+    ],
+    "a_subjects": [
+      "统计学",
+      "工商管理",
+      "经济学",
+      "化学"
+    ]
+  },
+  "student_quality": {
+    "average_percentile_fujian": "Top 0.5%",
+    "undergraduate_research_rate": "45%+",
+    "key_employers": [
+      "Huawei",
+      "BYD",
+      "CATL",
+      "Big Four Accounting Firms"
+    ]
+  },
+  "campus_life": {
+    "main_campuses": [
+      "Siming",
+      "Xiang'an",
+      "Zhangzhou"
+    ],
+    "dormitory_rating": 4.2,
+    "canteen_rating": 4.8,
+    "location_advantage": "High (Special Economic Zone)"
+  },
+  "financial_metrics": {
+    "starting_salary_median": 10500,
+    "five_year_salary_growth": "60%+"
+  },
+  "risk_factors": [
+    "Campus tourism management",
+    "Geographic separation of campuses",
+    "Intense competition in business school"
+  ]
+}

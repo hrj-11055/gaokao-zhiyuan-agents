@@ -1,0 +1,44 @@
+{
+  "university_name": "宁波大学",
+  "short_name": "NBU",
+  "established_year": 1986,
+  "location": {
+    "province": "浙江",
+    "city": "宁波",
+    "city_level": "计划单列市",
+    "gdp_rank": 12
+  },
+  "academic_status": {
+    "is_double_first_class": true,
+    "key_disciplines": [
+      "力学",
+      "水产",
+      "数学",
+      "外国语言文学"
+    ],
+    "academician_count": 10,
+    "esi_top_1_percent_count": 13
+  },
+  "student_quality": {
+    "zhejiang_rank_avg": 56000,
+    "out_of_province_percentile": "Top 2-5%"
+  },
+  "employment_metrics": {
+    "further_study_rate": "34.9% (含出国)",
+    "median_starting_salary": 6993,
+    "top_employers": [
+      "吉利",
+      "宁波银行",
+      "华为"
+    ]
+  },
+  "evaluation_scores": {
+    "academic": 3.6,
+    "employment": 3.8,
+    "location": 4.5,
+    "globalization": 3.5,
+    "student_empowerment": 3.7,
+    "brand_asset": 3.9,
+    "overall_weighted": 3.83
+  }
+}

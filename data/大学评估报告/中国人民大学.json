@@ -1,0 +1,56 @@
+{
+  "university_name": "中国人民大学",
+  "short_name": "RUC",
+  "location": {
+    "city": "北京",
+    "district": "海淀区/通州区",
+    "campus_status": "一校三地（北京本部、通州新校区、苏州校区）"
+  },
+  "academic": {
+    "a_plus_disciplines": [
+      "理论经济学",
+      "应用经济学",
+      "法学",
+      "社会学",
+      "新闻传播学",
+      "统计学",
+      "工商管理",
+      "公共管理",
+      "哲学"
+    ],
+    "key_platforms": [
+      "国家发展与战略研究院",
+      "中国调查与数据中心"
+    ],
+    "faculty_strength": "文科资深教授规模全国领先"
+  },
+  "admission": {
+    "difficulty_level": "Top 3 (Liberal Arts), Top 10 (Science)",
+    "source_quality": "Provincial Top 0.05%-0.2%"
+  },
+  "employment": {
+    "primary_sectors": [
+      "Government/Civil Service",
+      "Finance",
+      "Legal",
+      "Tech"
+    ],
+    "further_study_rate": "62.38% (Total)",
+    "starting_salary_index": "4.9/5.0"
+  },
+  "brand_tags": [
+    "Red Gene",
+    "Elite",
+    "Pragmatic",
+    "Zhongguancun"
+  ],
+  "scores": {
+    "academic_capital": 4.9,
+    "career_realization": 4.8,
+    "location_advantage": 5.0,
+    "globalization": 4.5,
+    "student_freedom": 4.0,
+    "brand_asset": 4.9,
+    "overall_weighted_score": 4.8
+  }
+}

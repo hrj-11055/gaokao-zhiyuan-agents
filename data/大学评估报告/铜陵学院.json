@@ -1,0 +1,45 @@
+{
+  "university_name": "铜陵学院",
+  "short_name": "TLU / 铜院",
+  "location": {
+    "province": "安徽省",
+    "city": "铜陵市",
+    "campus": [
+      "翠湖校区",
+      "育秀校区"
+    ]
+  },
+  "academic_level": {
+    "type": "应用型本科",
+    "key_disciplines": [
+      "会计学",
+      "材料科学与工程",
+      "国际经济与贸易"
+    ],
+    "national_first_class_majors": 4,
+    "master_points_status": "筹建中"
+  },
+  "student_profile": {
+    "avg_admission_rank_anhui_physics": 115000,
+    "avg_admission_rank_anhui_history": 22000,
+    "further_study_rate": "13.1%"
+  },
+  "employment": {
+    "top_industries": [
+      "金融业",
+      "制造业",
+      "建筑业"
+    ],
+    "primary_employment_region": "长三角",
+    "estimated_starting_salary": 5000
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.3,
+    "employment_value": 2.8,
+    "location_advantage": 2.5,
+    "globalization": 1.8,
+    "student_freedom": 2.6,
+    "brand_asset": 2.5,
+    "overall_weighted_score": 2.465
+  }
+}

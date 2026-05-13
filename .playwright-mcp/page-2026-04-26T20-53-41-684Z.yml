@@ -1,0 +1,408 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 中山大学 就业质量报告 2024 深造率 就业率 毕业生去向 中山大学 就业质量报告 2024 深造率 就业率 毕业生去向
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E4%25B8%25AD%25E5%25B1%25B1%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E5%25B0%25B1%25E4%25B8%259A%25E8%25B4%25A8%25E9%2587%258F%25E6%258A%25A5%25E5%2591%258A%2B2024%2B%25E6%25B7%25B1%25E9%2580%25A0%25E7%258E%2587%2B%25E5%25B0%25B1%25E4%25B8%259A%25E7%258E%2587%2B%25E6%25AF%2595%25E4%25B8%259A%25E7%2594%259F%25E5%258E%25BB%25E5%2590%2591&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+2024+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%8E%BB%E5%90%91&sca_esv=50e2bf8f38455036&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&aep=1&ntc=1&sa=X&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQ2J8OegQIEhAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+2024+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%8E%BB%E5%90%91&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&sa=X&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQ0pQJegQIGBAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "购物" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+2024+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%8E%BB%E5%90%91&ved=1t:220175&ictx=111
+              - generic [ref=e95]: 购物
+          - listitem [ref=e96]:
+            - link "图片" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+2024+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%8E%BB%E5%90%91&sa=X&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQtKgLegQIFhAB
+              - generic [ref=e99]: 图片
+          - listitem [ref=e100]:
+            - link "短视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+2024+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%8E%BB%E5%90%91&sa=X&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQs6gLegQIFRAB
+              - generic [ref=e103]: 短视频
+          - listitem [ref=e104]:
+            - link "视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+2024+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%8E%BB%E5%90%91&sa=X&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQtKgLegQIFBAB
+              - generic [ref=e107]: 视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考" [level=2] [ref=e152]:
+          - generic [ref=e153]: 正在思考
+        - progressbar [ref=e154]
+      - main [ref=e156]:
+        - generic [ref=e160]:
+          - generic [ref=e163]:
+            - heading "网页搜索结果" [level=2] [ref=e164]
+            - generic [ref=e165]:
+              - generic [ref=e168]:
+                - link "就业深造｜2024届就业再创佳绩 - 中法核工程与技术学院 中法核工程与技术学院 https://ifcen.sysu.edu.cn › article" [ref=e170] [cursor=pointer]:
+                  - /url: https://ifcen.sysu.edu.cn/article/1387
+                  - heading "就业深造｜2024届就业再创佳绩 - 中法核工程与技术学院" [level=3] [ref=e171]
+                  - generic [ref=e176]:
+                    - generic [ref=e178]: 中法核工程与技术学院
+                    - generic [ref=e180]: https://ifcen.sysu.edu.cn › article
+                - button "关于这条结果的详细信息" [ref=e181] [cursor=pointer]:
+                  - img [ref=e184]
+              - generic [ref=e187]:
+                - generic [ref=e188]: 2024年12月25日 —
+                - generic [ref=e189]:
+                  - text: 截至
+                  - emphasis [ref=e190]: "2024"
+                  - text: 年8月25日，我院
+                  - emphasis [ref=e191]: "2024"
+                  - text: 届5位博士
+                  - emphasis [ref=e192]: 毕业生
+                  - text: 全部落实
+                  - emphasis [ref=e193]: 去向
+                  - text: ，落实
+                  - emphasis [ref=e194]: 去向
+                  - text: 率达100%。 ... 截至
+                  - emphasis [ref=e195]: "2024"
+                  - text: 年8月25日，有4名硕士
+                  - emphasis [ref=e196]: 毕业生
+                  - text: 成功申请到博士（占
+                  - emphasis [ref=e197]: 毕业生
+                  - text: 的22.2%）。
+          - generic [ref=e201]:
+            - generic [ref=e204]:
+              - link "系统科学与工程学院2024届毕业生就业质量报告 中山大学系统科学与工程学院 https://ssse.sysu.edu.cn › article" [ref=e206] [cursor=pointer]:
+                - /url: https://ssse.sysu.edu.cn/article/1278
+                - heading "系统科学与工程学院2024届毕业生就业质量报告" [level=3] [ref=e207]
+                - generic [ref=e212]:
+                  - generic [ref=e214]: 中山大学系统科学与工程学院
+                  - generic [ref=e216]: https://ssse.sysu.edu.cn › article
+              - button "关于这条结果的详细信息" [ref=e217] [cursor=pointer]:
+                - img [ref=e220]
+            - generic [ref=e223]:
+              - generic [ref=e224]: 2025年3月3日 —
+              - generic [ref=e225]:
+                - emphasis [ref=e226]: 整体深造就业率达97.0
+                - text: "%，其中本科生升学率达100%，升学去向包括上海交通大学、中国科学技术大学、中山大学、哈尔滨工业大学、中国科学院大学、香港大学 ..."
+          - generic [ref=e230]:
+            - generic [ref=e233]:
+              - link "中山大学系统科学与工程学院2024届毕业生就业质量报告 北京高考在线 https://www.gaokzx.com › gaokao" [ref=e235] [cursor=pointer]:
+                - /url: https://www.gaokzx.com/gk/gaokao/141095.html
+                - heading "中山大学系统科学与工程学院2024届毕业生就业质量报告" [level=3] [ref=e236]
+                - generic [ref=e241]:
+                  - generic [ref=e243]: 北京高考在线
+                  - generic [ref=e245]: https://www.gaokzx.com › gaokao
+              - button "关于这条结果的详细信息" [ref=e246] [cursor=pointer]:
+                - img [ref=e249]
+            - generic [ref=e252]:
+              - generic [ref=e253]: 2025年5月28日 —
+              - generic [ref=e254]:
+                - emphasis [ref=e255]: "2024"
+                - text: 年6月学院
+                - emphasis [ref=e256]: 毕业
+                - text: 66人，其中研究生52人，本科生14人。整体
+                - emphasis [ref=e257]: 深造就业率
+                - text: 达97.0%，其中本科生升学率达100%，升学
+                - emphasis [ref=e258]: 去向
+                - text: 包括上海交通
+                - emphasis [ref=e259]: 大学
+                - text: 、中国科学技术
+                - emphasis [ref=e260]: 大学
+                - text: 、
+                - emphasis [ref=e261]: 中山
+                - text: ...
+          - generic [ref=e265]:
+            - generic [ref=e268]:
+              - link "博彩平台2024届毕业生就业质量报告 bcptvip.com http://bcptvip.com › article" [ref=e270] [cursor=pointer]:
+                - /url: http://bcptvip.com/article/1278
+                - heading "博彩平台2024届毕业生就业质量报告" [level=3] [ref=e271]
+                - generic [ref=e273]:
+                  - img [ref=e277]
+                  - generic [ref=e279]:
+                    - generic [ref=e281]: bcptvip.com
+                    - generic [ref=e283]: http://bcptvip.com › article
+              - button "关于这条结果的详细信息" [ref=e284] [cursor=pointer]:
+                - img [ref=e287]
+            - generic [ref=e290]:
+              - generic [ref=e291]: 2025年3月3日 —
+              - generic [ref=e292]:
+                - emphasis [ref=e293]: 整体深造就业率达97.0
+                - text: "%，其中本科生升学率达100%，升学去向包括上海交通大学、中国科学技术大学、中山大学、哈尔滨工业大学、中国科博彩平台大学、香港大学 ..."
+          - generic [ref=e298]:
+            - heading "相关问题" [level=2] [ref=e300]
+            - generic [ref=e301]:
+              - button "中山大学什么水平？" [ref=e307] [cursor=pointer]:
+                - generic [ref=e309]: 中山大学什么水平？
+                - img [ref=e312]
+              - button "中山大学是985大学还是211大学?" [ref=e321] [cursor=pointer]:
+                - generic [ref=e323]: 中山大学是985大学还是211大学?
+                - img [ref=e326]
+              - button "中山大学 特聘副研究员 待遇？" [ref=e335] [cursor=pointer]:
+                - generic [ref=e337]: 中山大学 特聘副研究员 待遇？
+                - img [ref=e340]
+              - button "中山大学本科生人数？" [ref=e349] [cursor=pointer]:
+                - generic [ref=e351]: 中山大学本科生人数？
+                - img [ref=e354]
+          - generic [ref=e359]:
+            - heading "网页搜索结果" [level=2] [ref=e360]
+            - generic [ref=e361]:
+              - generic [ref=e364]:
+                - link "2024届全日制MBA毕业生就业报告 中山大学管理学院 https://bus.sysu.edu.cn › mba › article" [ref=e366] [cursor=pointer]:
+                  - /url: https://bus.sysu.edu.cn/mba/article/1667
+                  - heading "2024届全日制MBA毕业生就业报告" [level=3] [ref=e367]
+                  - generic [ref=e372]:
+                    - generic [ref=e374]: 中山大学管理学院
+                    - generic [ref=e376]: https://bus.sysu.edu.cn › mba › article
+                - button "关于这条结果的详细信息" [ref=e377] [cursor=pointer]:
+                  - img [ref=e380]
+              - generic [ref=e384]:
+                - text: ...
+                - emphasis [ref=e385]: "2024"
+                - text: 届全日制MBA
+                - emphasis [ref=e386]: 毕业生就业报告
+                - text: .
+                - emphasis [ref=e387]: 就业报告
+                - text: .
+                - emphasis [ref=e388]: "2024"
+                - text: 届全日制MBA
+                - emphasis [ref=e389]: 毕业生就业报告
+                - text: . 发布日期：2025-04-16 阅读次数：1341.
+                - emphasis [ref=e390]: "2024"
+                - text: 届全日制MBA
+                - emphasis [ref=e391]: 毕业生就业报告
+                - text: 2025.03.pdf.
+              - generic [ref=e393]: 缺少字词： 深造 ‎率 ‎去向
+          - generic [ref=e397]:
+            - generic [ref=e400]:
+              - link "2024届毕业生年度就业质量报告 jysd.com https://static.jysd.com › wku › ueditor › file › 521..." [ref=e402] [cursor=pointer]:
+                - /url: https://static.jysd.com/wku/ueditor/file/20250220/5218_2024%E5%B1%8A%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B9%B4%E5%BA%A6%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A.pdf
+                - heading "2024届毕业生年度就业质量报告" [level=3] [ref=e403]
+                - generic [ref=e405]:
+                  - img [ref=e409]
+                  - generic [ref=e411]:
+                    - generic [ref=e413]: jysd.com
+                    - generic [ref=e415]: https://static.jysd.com › wku › ueditor › file › 521...
+              - generic [ref=e416]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e417] [cursor=pointer]:
+                - img [ref=e420]
+            - generic [ref=e422]:
+              - generic [ref=e423]:
+                - generic [ref=e424]: 2024年12月31日 —
+                - generic [ref=e425]:
+                  - text: 博
+                  - emphasis [ref=e426]: 毕业生就业
+                  - text: 情况反馈,总体硕博初次
+                  - emphasis [ref=e427]: 就业率
+                  - text: 为. 82.05%。硕士
+                  - emphasis [ref=e428]: 毕业生
+                  - text: 落实毕业
+                  - emphasis [ref=e429]: 去向
+                  - text: 人数为62人,.
+                  - emphasis [ref=e430]: 就业率
+                  - text: 为81.58%;其中,直接
+                  - emphasis [ref=e431]: 就业
+                  - text: 54人. (71.05%),继续
+                  - emphasis [ref=e432]: 深造
+                  - text: 8人 ...
+              - generic [ref=e433]: 24 页
+          - generic [ref=e437]:
+            - generic [ref=e440]:
+              - link "中山大学系统科学与工程学院2024届毕业生就业质量报告 华禹教育网 http://huaue.com › ..." [ref=e442] [cursor=pointer]:
+                - /url: http://huaue.com/jy2025/202534183053.htm
+                - heading "中山大学系统科学与工程学院2024届毕业生就业质量报告" [level=3] [ref=e443]
+                - generic [ref=e448]:
+                  - generic [ref=e450]: 华禹教育网
+                  - generic [ref=e452]: http://huaue.com › ...
+              - button "关于这条结果的详细信息" [ref=e453] [cursor=pointer]:
+                - img [ref=e456]
+            - generic [ref=e459]:
+              - generic [ref=e460]: 2025年3月4日 —
+              - generic [ref=e461]:
+                - emphasis [ref=e462]: 中山大学
+                - text: 系统科学与工程学院
+                - emphasis [ref=e463]: "2024"
+                - text: 届
+                - emphasis [ref=e464]: 毕业生就业质量报告
+                - text: . http://www.huaue.com 2025年3月4日来源：微信公众号：
+                - emphasis [ref=e465]: 中山大学
+                - text: 系统科学与工程学院 ...
+            - generic [ref=e467]: 缺少字词： 深造 ‎率 ‎去向
+          - generic [ref=e471]:
+            - generic [ref=e474]:
+              - link "关于开展2024届毕业生毕业去向信息报送工作的通知 中山大学计算机学院 https://cse.sysu.edu.cn › article" [ref=e476] [cursor=pointer]:
+                - /url: https://cse.sysu.edu.cn/article/1453
+                - heading "关于开展2024届毕业生毕业去向信息报送工作的通知" [level=3] [ref=e477]
+                - generic [ref=e482]:
+                  - generic [ref=e484]: 中山大学计算机学院
+                  - generic [ref=e486]: https://cse.sysu.edu.cn › article
+              - button "关于这条结果的详细信息" [ref=e487] [cursor=pointer]:
+                - img [ref=e490]
+            - generic [ref=e493]:
+              - generic [ref=e494]: 2024年4月8日 —
+              - generic [ref=e495]:
+                - text: 各位
+                - emphasis [ref=e496]: "2024"
+                - text: 届
+                - emphasis [ref=e497]: 毕业生
+                - text: ： 根据教育部与广东省教育厅的要求，为进一步规范
+                - emphasis [ref=e498]: 就业
+                - text: 统计，促进
+                - emphasis [ref=e499]: "2024"
+                - text: 届
+                - emphasis [ref=e500]: 毕业生
+                - text: 高
+                - emphasis [ref=e501]: 质量
+                - text: 充分
+                - emphasis [ref=e502]: 就业
+                - text: ，
+                - emphasis [ref=e503]: 毕业生
+                - text: 应在确定升学或
+                - emphasis [ref=e504]: 就业
+                - text: 后及时报送毕业
+                - emphasis [ref=e505]: 去向
+                - text: ...
+            - generic [ref=e507]: 缺少字词： 深造 ‎率
+          - generic [ref=e511]:
+            - generic [ref=e514]:
+              - link "广东就业率不错的5所大学，最高98% 高考直通车App https://app.gaokaozhitongche.com › news" [ref=e516] [cursor=pointer]:
+                - /url: https://app.gaokaozhitongche.com/news/h/L2l85k02
+                - heading "广东就业率不错的5所大学，最高98%" [level=3] [ref=e517]
+                - generic [ref=e522]:
+                  - generic [ref=e524]: 高考直通车App
+                  - generic [ref=e526]: https://app.gaokaozhitongche.com › news
+              - button "关于这条结果的详细信息" [ref=e527] [cursor=pointer]:
+                - img [ref=e530]
+            - generic [ref=e533]:
+              - generic [ref=e534]: 2025年2月14日 —
+              - generic [ref=e535]:
+                - text: 根据最新数据，
+                - emphasis [ref=e536]: 中山大学
+                - text: 的总体
+                - emphasis [ref=e537]: 毕业生就业率
+                - text: 高达91.55%，其中本科
+                - emphasis [ref=e538]: 毕业生就业率
+                - text: 为86.99%，硕士
+                - emphasis [ref=e539]: 毕业生就业率
+                - text: 为95.81%，博士
+                - emphasis [ref=e540]: 毕业生就业率
+                - text: 更是高达96.78%。薪酬网 ...
+          - generic [ref=e544]:
+            - generic [ref=e547]:
+              - link "名校毕业生都去哪了？ 人民日报-有品质的新闻 https://www.peopleapp.com › rmharticle" [ref=e549] [cursor=pointer]:
+                - /url: https://www.peopleapp.com/rmharticle/30048061612
+                - heading "名校毕业生都去哪了？" [level=3] [ref=e550]
+                - generic [ref=e555]:
+                  - generic [ref=e557]: 人民日报-有品质的新闻
+                  - generic [ref=e559]: https://www.peopleapp.com › rmharticle
+              - button "关于这条结果的详细信息" [ref=e560] [cursor=pointer]:
+                - img [ref=e563]
+            - generic [ref=e567]:
+              - text: 其中，本科
+              - emphasis [ref=e568]: 毕业生
+              - text: 394人，
+              - emphasis [ref=e569]: 就业去向
+              - text: 落实率为91.4%，本科
+              - emphasis [ref=e570]: 深造率
+              - text: 达84.26%。其中境内升学230人，境内升学率58.4%，境外深造102人，境外
+              - emphasis [ref=e571]: 深造率
+              - text: 25.9%，
+              - emphasis [ref=e572]: 就业
+              - text: 28人，占7.1% ...
+            - generic [ref=e574]:
+              - text: 缺少字词： 中山 ‎| 必须包含：
+              - link "中山" [ref=e575] [cursor=pointer]:
+                - /url: /search?sca_esv=50e2bf8f38455036&q=%22%E4%B8%AD%E5%B1%B1%22+%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+2024+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%8E%BB%E5%90%91&sa=X&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQ5t4CegQIPRAB
+        - generic [ref=e577]:
+          - generic [ref=e582]:
+            - heading "用户还搜索了" [level=2] [ref=e584]
+            - generic [ref=e586]:
+              - link "中山大学系统科学与工程学院" [ref=e591] [cursor=pointer]:
+                - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E7%B3%BB%E7%BB%9F%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2&sa=X&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQ1QJ6BAgjEAE
+                - generic [ref=e592]:
+                  - generic [ref=e597]: 中山大学系统科学与工程学院
+                  - img [ref=e601]
+              - link "中山大学工学院" [ref=e607] [cursor=pointer]:
+                - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E5%B7%A5%E5%AD%A6%E9%99%A2&sa=X&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQ1QJ6BAgkEAE
+                - generic [ref=e608]:
+                  - generic [ref=e613]: 中山大学工学院
+                  - img [ref=e617]
+          - navigation [ref=e619]:
+            - heading "网页导航" [level=1] [ref=e620]
+            - text: "1"
+            - link "Page 2" [ref=e623] [cursor=pointer]:
+              - /url: /search?q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+2024+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%8E%BB%E5%90%91&sca_esv=50e2bf8f38455036&ei=VHvuaYPcKMCNruEP06aFmAo&start=10&sa=N&sstk=Af77f_fylgcTitzn1Y87ItIS0WSZ_1N8XneZm5Gu_iOHHOZSvVhQrr3hSiNMXF_PfmsKouy9pC0lDWz8oxIJm5B7oQ68au5fODX_OA&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQ8tMDegQILBAE
+              - text: "2"
+            - link "Page 3" [ref=e625] [cursor=pointer]:
+              - /url: /search?q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+2024+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%8E%BB%E5%90%91&sca_esv=50e2bf8f38455036&ei=VHvuaYPcKMCNruEP06aFmAo&start=20&sa=N&sstk=Af77f_fylgcTitzn1Y87ItIS0WSZ_1N8XneZm5Gu_iOHHOZSvVhQrr3hSiNMXF_PfmsKouy9pC0lDWz8oxIJm5B7oQ68au5fODX_OA&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQ8tMDegQILBAG
+              - text: "3"
+            - heading "下一页" [level=2] [ref=e627]:
+              - link "下一页" [ref=e628] [cursor=pointer]:
+                - /url: /search?q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+2024+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%8E%BB%E5%90%91&sca_esv=50e2bf8f38455036&ei=VHvuaYPcKMCNruEP06aFmAo&start=10&sa=N&sstk=Af77f_fylgcTitzn1Y87ItIS0WSZ_1N8XneZm5Gu_iOHHOZSvVhQrr3hSiNMXF_PfmsKouy9pC0lDWz8oxIJm5B7oQ68au5fODX_OA&ved=2ahUKEwiD1oKLs4yUAxXAhisGHVNTAaMQ8NMDegQILBAI
+                - generic [ref=e630]: 下一页
+        - navigation
+    - contentinfo [ref=e631]:
+      - heading "页脚链接" [level=1] [ref=e632]
+      - generic [ref=e636]:
+        - generic [ref=e640]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e642] [cursor=pointer]:
+            - generic [ref=e643]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e645]:
+              - text: "-"
+              - generic [ref=e646]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e648] [cursor=pointer]: 更新位置信息
+        - generic [ref=e651]:
+          - link "帮助" [ref=e652] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e653] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e654] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e655] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

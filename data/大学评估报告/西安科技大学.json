@@ -1,0 +1,49 @@
+{
+  "university_name": "西安科技大学",
+  "short_name": "西科大 / XUST",
+  "tags": [
+    "煤炭老八校",
+    "应急管理部共建",
+    "安全科学 A-",
+    "西安理工强校"
+  ],
+  "academic": {
+    "a_minus_count": 1,
+    "b_range_count": 3,
+    "esi_top_1_percent": 6,
+    "academician_count": 1,
+    "national_key_lab": 1
+  },
+  "admission": {
+    "shaanxi_physics_rank_2024": 42000,
+    "henan_physics_rank_2024": 46513,
+    "selection_requirement": "物理+化学 (大部分工科)"
+  },
+  "employment": {
+    "further_study_rate": "25.27%",
+    "soe_employment_ratio": "55%",
+    "median_starting_salary": 6200,
+    "top_employers": [
+      "中国建筑",
+      "国家能源集团",
+      "陕煤集团"
+    ]
+  },
+  "location": {
+    "city": "西安",
+    "campus": [
+      "临潼校区",
+      "雁塔校区"
+    ],
+    "city_tier": "新一线"
+  },
+  "scores": {
+    "academic_capital": 3.6,
+    "employment_value": 3.4,
+    "location_power": 3.8,
+    "globalization": 3.2,
+    "student_empowerment": 3.3,
+    "brand_asset": 3.5,
+    "overall_weighted_score": 3.51
+  }
+}

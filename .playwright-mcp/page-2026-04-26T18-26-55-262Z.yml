@@ -1,0 +1,527 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 中医执业医师 通过率 2024 2025 康复方向 考研 深造率
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88+%E9%80%9A%E8%BF%87%E7%8E%87+2024+2025+%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2210588140973709624454%22%2C%22ori_lid%22%3A%2210588140973709624454%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=92f0a21e01b88486&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88+%E9%80%9A%E8%BF%87%E7%8E%87+2024+2025+%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88+%E9%80%9A%E8%BF%87%E7%8E%87+2024+2025+%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=92f0a21e01b88486&ie=utf-8&wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88+%E9%80%9A%E8%BF%87%E7%8E%87+2024+2025+%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_spt=7&rsv_bp=1&f=8&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88+%E9%80%9A%E8%BF%87%E7%8E%87+2024+2025+%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88+%E9%80%9A%E8%BF%87%E7%8E%87+2024+2025+%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88+%E9%80%9A%E8%BF%87%E7%8E%87+2024+2025+%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88+%E9%80%9A%E8%BF%87%E7%8E%87+2024+2025+%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88+%E9%80%9A%E8%BF%87%E7%8E%87+2024+2025+%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0%E7%8E%87
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  执业医师报考条件  执业医师  中医考研通过率  2022中医考研难度  2021年中医执业医师考试难度  执业医师考了6次都没过    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 枪击发生时特朗普旁的华裔女记者是谁 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 厨师锅里吐口水后继续出餐 店长回应 13 母亲躺医院长椅儿子一手垫头一手轻拍 14 “早上6点半 杭州东站全是孩子” 15 财务造假“不敢不能不想”时代来了" [ref=e69]:
+              - cell "相关搜索  执业医师报考条件  执业医师  中医考研通过率  2022中医考研难度  2021年中医执业医师考试难度  执业医师考了6次都没过    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 枪击发生时特朗普旁的华裔女记者是谁 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 厨师锅里吐口水后继续出餐 店长回应 13 母亲躺医院长椅儿子一手垫头一手轻拍 14 “早上6点半 杭州东站全是孩子” 15 财务造假“不敢不能不想”时代来了" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 执业医师报考条件" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E6%8A%A5%E8%80%83%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rfqid=92f0a21e01b88486&rsv_dl=0_prs_28616_1&rq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101631202
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 执业医师报考条件
+                      - link " 执业医师" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rfqid=92f0a21e01b88486&rsv_dl=0_prs_28616_2&rq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101631202
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 执业医师
+                      - link " 中医考研通过率" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E8%80%83%E7%A0%94%E9%80%9A%E8%BF%87%E7%8E%87&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rfqid=92f0a21e01b88486&rsv_dl=0_prs_28616_3&rq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101633403
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 中医考研通过率
+                      - link " 2022中医考研难度" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=2022%E4%B8%AD%E5%8C%BB%E8%80%83%E7%A0%94%E9%9A%BE%E5%BA%A6&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rfqid=92f0a21e01b88486&rsv_dl=0_prs_28616_4&rq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101633403
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 2022中医考研难度
+                      - link " 2021年中医执业医师考试难度" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=2021%E5%B9%B4%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E8%80%83%E8%AF%95%E9%9A%BE%E5%BA%A6&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rfqid=92f0a21e01b88486&rsv_dl=0_prs_28616_5&rq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101633403
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 2021年中医执业医师考试难度
+                      - link " 执业医师考了6次都没过" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E8%80%83%E4%BA%866%E6%AC%A1%E9%83%BD%E6%B2%A1%E8%BF%87&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rfqid=92f0a21e01b88486&rsv_dl=0_prs_28616_6&rq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsf=101631202
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 执业医师考了6次都没过
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=9958RLgz3dyvCJ%2Bg4CqIkPoSXjqgilfLp92BaKbC02yteiL555Ay4oDn5Ho&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "高市政府越过“最后一根红线”" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=914cMxoSthS0PydJhKHGWzGpTi3pWBGHhRFgSF4HNl8EwM6lQcT0xnj6aKk&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=914cMxoSthS0PydJhKHGWzGpTi3pWBGHhRFgSF4HNl8EwM6lQcT0xnj6aKk&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=914cMxoSthS0PydJhKHGWzGpTi3pWBGHhRFgSF4HNl8EwM6lQcT0xnj6aKk&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=914cMxoSthS0PydJhKHGWzGpTi3pWBGHhRFgSF4HNl8EwM6lQcT0xnj6aKk&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=914cMxoSthS0PydJhKHGWzGpTi3pWBGHhRFgSF4HNl8EwM6lQcT0xnj6aKk&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "“早上6点半 杭州东站全是孩子”" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E6%97%A9%E4%B8%8A6%E7%82%B9%E5%8D%8A%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%E5%85%A8%E6%98%AF%E5%AD%A9%E5%AD%90%E2%80%9D&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=914cMxoSthS0PydJhKHGWzGpTi3pWBGHhRFgSF4HNl8EwM6lQcT0xnj6aKk&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=914cMxoSthS0PydJhKHGWzGpTi3pWBGHhRFgSF4HNl8EwM6lQcT0xnj6aKk&rqid=92f0a21e01b88486&rsf=ac89c8d39e9a16d121771de84e824657_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e209]:
+            - generic [ref=e211]:
+              - img [ref=e214]
+              - generic:
+                - generic: 
+            - generic [ref=e219]:
+              - generic [ref=e220]: 问题分析中
+              - img [ref=e222]
+          - generic [ref=e246]:
+            - heading "2025年中医执业医师通过率" [level=3] [ref=e249]:
+              - link "2025年中医执业医师通过率" [ref=e250] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=KUG7HhGsXTKDn6GN35wsLd0hUEBIWvhHBW0YtFTkY3Voufu4QL4tk2e9M65mdoUtibfSm-yzEQC77dwuayfZDHbfCk2DMZxeNOhQELvWn1NAY5UpQvq8C6Jv2YUuIau7xRKrufpe3woEH6Vi6GfD8n9DVzgRkdoHjONRtngdPMLc8-ZVk-bzyEGxVmVgyQGz6q4xrcJbuOlmu4th3Mro3VxJi6dUtHurVpKtM54NLknyP8ow6Sxpk98uzCc5_7gptE9nmExkPvDp-umqUXSAXBdvz1iNIzZ6p-rVsVhxG93Oqb3oeP4rG_gPMDnq4x_nLr01_dJvv1pxbubm7R5Qqzl-7zo2t9nSBgEG20DBq5G
+                - paragraph [ref=e253]:
+                  - generic [ref=e256]:
+                    - emphasis [ref=e257]: "2025"
+                    - text: 年
+                    - emphasis [ref=e258]: 中医执业医师通过率
+            - generic [ref=e263]:
+              - text: 2025年8月30日
+              - generic [ref=e264]:
+                - emphasis [ref=e265]: 2025年中医执业医师考试通过率预计在== 15%~25% ==之间
+                - text: ",这一较低区间源于考试难度提升和竞争加剧.本文将从历史波动,考试难点,淘汰趋势及区域差异等方面展开分析. 历史波动与预测依据 中医执业医师考试通过率近五年呈\"大小年\"波动(如2023年为43%,2024年上升至61%),202..."
+            - link "头像 知了爱学" [ref=e270] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=KUG7HhGsXTKDn6GN35wsLd0hUEBIWvhHBW0YtFTkY3Voufu4QL4tk2e9M65mdoUtibfSm-yzEQC77dwuayfZDHbfCk2DMZxeNOhQELvWn1NAY5UpQvq8C6Jv2YUuIau7xRKrufpe3woEH6Vi6GfD8n9DVzgRkdoHjONRtngdPMLc8-ZVk-bzyEGxVmVgyQGz6q4xrcJbuOlmu4th3Mro3VxJi6dUtHurVpKtM54NLknyP8ow6Sxpk98uzCc5_7gptE9nmExkPvDp-umqUXSAXBdvz1iNIzZ6p-rVsVhxG93Oqb3oeP4rG_gPMDnq4x_nLr01_dJvv1pxbubm7R5Qqzl-7zo2t9nSBgEG20DBq5G
+              - img "头像" [ref=e273]
+              - generic [ref=e274]: 知了爱学
+              - generic [ref=e276]: 
+          - generic [ref=e280]:
+            - heading "中医 执业医师资格证考试通过率 - 百度知道" [level=3] [ref=e283]:
+              - link "中医 执业医师资格证考试通过率 - 百度知道" [ref=e284] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=QKYseCC_zJCcnLaceHlB-0AL3U6FLvGwx6eBnPUjqkdQgc2yJlPBENKCMmUgSqpcfvJ-BjLud5glztZ9GKUhtFLM0E4d2MfBeQ12YkrsbYa
+                - paragraph [ref=e287]:
+                  - generic [ref=e290]:
+                    - emphasis [ref=e291]: 中医 执业医师
+                    - text: 资格证考试
+                    - emphasis [ref=e292]: 通过率
+                    - text: "- 百度知道"
+            - generic [ref=e294]: "1个回答 - 回答时间: 2026年2月5日"
+            - generic [ref=e299]:
+              - text: "最佳答案:"
+              - generic [ref=e300]:
+                - text: 中医执业医师资格证考试通过率因年份和统计口径不同存在差异，
+                - emphasis [ref=e301]: 整体通过率在40%-70%之间
+                - text: 。以下为具体数据及分析：2025年通过率呈现两极分化特征。某院校中医学专业毕业生表现突出，其总通过率达84.03%，且医学综合考试通过率在全国院校中排名第一，这一数据反映了优质院校的教学质量优势。但全国层面通过率...
+            - link "更多关于中医执业医师 通过率 2024 2025 康复方向 考研 深造率的问题>>" [ref=e305] [cursor=pointer]:
+              - /url: http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5
+            - link "百度知道" [ref=e310] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=QKYseCC_zJCcnLaceHlB-0AL3U6FLvGwx6eBnPUjqkdQgc2yJlPBENKCMmUgSqpcfvJ-BjLud5glztZ9GKUhtFLM0E4d2MfBeQ12YkrsbYa
+              - generic [ref=e311]: 百度知道
+              - generic [ref=e313]: 
+          - generic [ref=e317]:
+            - heading "2025中医执医通过率" [level=3] [ref=e320]:
+              - link "2025中医执医通过率" [ref=e321] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=KUG7HhGsXTKDn6GN35wsLd0hUEBIWvhHBW0YtFTkY3Voufu4QL4tk2e9M65mdoUtibfSm-yzEQC77dwuayfZDHbfCk2DMZxeNOhQELvWn1NAY5UpQvq8C6Jv2YUuIau7xrCvLDVklhuUFjSYRbtYBbztEENiCyqOULYXBAvAYUJ-M14pIZqbfD73BgZR4_uNpYDnHLBeBw_OSs5SJoUkHoMVlqAth98rxVsDxqA_vfCvfB2bpNiVWJpb6ZjSslaxKRcuSqIsvMRtTvh4KeMab6W0Wu13dDYw-jNCMTFQbDSHDRTGIljnFP1ohwmnh0R2F0Oy9LnFJ4OmDK9_H0LXAAkjNDT7HI5DPAB2k9SYrFq
+                - paragraph [ref=e324]:
+                  - generic [ref=e327]:
+                    - emphasis [ref=e328]: 2025中医执
+                    - text: 医
+                    - emphasis [ref=e329]: 通过率
+            - generic [ref=e334]:
+              - text: 2025年8月26日
+              - generic [ref=e335]:
+                - text: ==
+                - emphasis [ref=e336]: 2025年中医执业医师考试的通过率预计在15%至25%之间.
+                - text: ==这一较低通过率源于考试难度提升和竞争加剧,以下从预测范围,影响因素,考试环节及整体趋势分点展开分析. 预测通过率范围 根据2025年权威预估数据,中医执业医师考试通过率维持在15%-25%区间,低于临床类别(例如临床执业...
+            - link "头像 知了爱学" [ref=e341] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=KUG7HhGsXTKDn6GN35wsLd0hUEBIWvhHBW0YtFTkY3Voufu4QL4tk2e9M65mdoUtibfSm-yzEQC77dwuayfZDHbfCk2DMZxeNOhQELvWn1NAY5UpQvq8C6Jv2YUuIau7xrCvLDVklhuUFjSYRbtYBbztEENiCyqOULYXBAvAYUJ-M14pIZqbfD73BgZR4_uNpYDnHLBeBw_OSs5SJoUkHoMVlqAth98rxVsDxqA_vfCvfB2bpNiVWJpb6ZjSslaxKRcuSqIsvMRtTvh4KeMab6W0Wu13dDYw-jNCMTFQbDSHDRTGIljnFP1ohwmnh0R2F0Oy9LnFJ4OmDK9_H0LXAAkjNDT7HI5DPAB2k9SYrFq
+              - img "头像" [ref=e344]
+              - generic [ref=e345]: 知了爱学
+              - generic [ref=e347]: 
+          - generic [ref=e349]:
+            - generic [ref=e350]: 大家还在搜
+            - generic [ref=e351]:
+              - link "执业医师报考条件" [ref=e352] [cursor=pointer]:
+                - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E6%8A%A5%E8%80%83%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=11a4kNX8I%2F8B1gUsrz0yzqGrw88Ricl30i99qLBw5Lcdcq0NQ6kTAMVCbjs&rsf=101631202&rsv_dl=0_prs_28608_1
+                - generic [ref=e354]: 执业医师报考条件
+              - link "执业医师" [ref=e355] [cursor=pointer]:
+                - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=11a4kNX8I%2F8B1gUsrz0yzqGrw88Ricl30i99qLBw5Lcdcq0NQ6kTAMVCbjs&rsf=101631202&rsv_dl=0_prs_28608_2
+                - generic [ref=e357]: 执业医师
+              - link "中医考研通过率" [ref=e358] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E8%80%83%E7%A0%94%E9%80%9A%E8%BF%87%E7%8E%87&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=11a4kNX8I%2F8B1gUsrz0yzqGrw88Ricl30i99qLBw5Lcdcq0NQ6kTAMVCbjs&rsf=101633403&rsv_dl=0_prs_28608_3
+                - generic [ref=e360]: 中医考研通过率
+              - link "2022中医考研难度" [ref=e361] [cursor=pointer]:
+                - /url: /s?wd=2022%E4%B8%AD%E5%8C%BB%E8%80%83%E7%A0%94%E9%9A%BE%E5%BA%A6&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=11a4kNX8I%2F8B1gUsrz0yzqGrw88Ricl30i99qLBw5Lcdcq0NQ6kTAMVCbjs&rsf=101633403&rsv_dl=0_prs_28608_4
+                - generic [ref=e363]: 2022中医考研难度
+              - link "2021年中医执业医师考试难度" [ref=e364] [cursor=pointer]:
+                - /url: /s?wd=2021%E5%B9%B4%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E8%80%83%E8%AF%95%E9%9A%BE%E5%BA%A6&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=11a4kNX8I%2F8B1gUsrz0yzqGrw88Ricl30i99qLBw5Lcdcq0NQ6kTAMVCbjs&rsf=101633403&rsv_dl=0_prs_28608_5
+                - generic [ref=e366]: 2021年中医执业医师考试难度
+              - link "执业医师考了6次都没过" [ref=e367] [cursor=pointer]:
+                - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E8%80%83%E4%BA%866%E6%AC%A1%E9%83%BD%E6%B2%A1%E8%BF%87&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=c51daxrcju8TF%2FlHLauBiaMOfrEbyBqn9Ri2w5mVT5I65ReuFBM1E7rGQic&rsf=101631202&rsv_dl=0_prs_28608_6
+                - generic [ref=e369]: 执业医师考了6次都没过
+              - link "康复治疗学考研后允许考医师证吗" [ref=e370] [cursor=pointer]:
+                - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E6%B2%BB%E7%96%97%E5%AD%A6%E8%80%83%E7%A0%94%E5%90%8E%E5%85%81%E8%AE%B8%E8%80%83%E5%8C%BB%E5%B8%88%E8%AF%81%E5%90%97&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=c51daxrcju8TF%2FlHLauBiaMOfrEbyBqn9Ri2w5mVT5I65ReuFBM1E7rGQic&rsf=101633403&rsv_dl=0_prs_28608_7
+                - generic [ref=e372]: 康复治疗学考研后允许考医师证吗
+              - link "中医综合2024年难吗" [ref=e373] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E7%BB%BC%E5%90%882024%E5%B9%B4%E9%9A%BE%E5%90%97&usm=2&ie=utf-8&rsv_pq=92f0a21e01b88486&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&rsv_t=c51daxrcju8TF%2FlHLauBiaMOfrEbyBqn9Ri2w5mVT5I65ReuFBM1E7rGQic&rsf=101636803&rsv_dl=0_prs_28608_8
+                - generic [ref=e375]: 中医综合2024年难吗
+          - generic [ref=e379]:
+            - heading "中医药院校全榜单:2024报考速查手册" [level=3] [ref=e382]:
+              - link "中医药院校全榜单:2024报考速查手册" [ref=e383] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtzE1lS6GbaTI2TVo-S5IH-ADFH0MaYOKyU-r2LSb9HChvzvxHBPLTG9Cnkl0yYVILqFtJug4eY214cUH7-bv27O
+                - paragraph [ref=e386]:
+                  - generic [ref=e389]:
+                    - emphasis [ref=e390]: 中医药
+                    - text: "院校全榜单:"
+                    - emphasis [ref=e391]: "2024"
+                    - text: 报考速查手册
+            - generic [ref=e392]:
+              - link [ref=e394] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtzE1lS6GbaTI2TVo-S5IH-ADFH0MaYOKyU-r2LSb9HChvzvxHBPLTG9Cnkl0yYVILqFtJug4eY214cUH7-bv27O
+              - generic [ref=e399]:
+                - generic [ref=e404]:
+                  - text: 2026年1月13日
+                  - generic [ref=e405]:
+                    - text: 就业三高：连续95%以上就业率，80%毕业生坚守中医岗位，六成落脚京津冀三甲。未来班型：数智班聚焦AI+中医，保研率20.4%，
+                    - emphasis [ref=e406]: 考研深造率60.31%
+                    - text: ，适合高分冲刺党。2.2 ▲ 上海中医药大学——南方国际化标杆 3个A+学科：全国唯一“三冠王”，张江科学城隔壁，年门诊量1900万+的附属医院群就在校门口。全球合作网：...
+                - link "头像 首尔金妮娜" [ref=e411] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtzE1lS6GbaTI2TVo-S5IH-ADFH0MaYOKyU-r2LSb9HChvzvxHBPLTG9Cnkl0yYVILqFtJug4eY214cUH7-bv27O
+                  - img "头像" [ref=e414]
+                  - generic [ref=e415]: 首尔金妮娜
+                  - generic [ref=e417]: 
+          - generic [ref=e422]:
+            - heading "2025中医执医通过率高吗 - 智能分身实时回复" [level=3] [ref=e424] [cursor=pointer]:
+              - link "2025中医执医通过率高吗 - 智能分身实时回复" [ref=e425]:
+                - /url: http://www.baidu.com/link?url=XetDyOoXJmXd7CCRxUcUvnrM0riMrHKS7AK9-mBzRLTSE1OLuGkqbu7vU1e_XGfxar8SEgRcx0cBCZ13XFnz5adqS0ofDqw2lx_9SVyIPHjHqHrLkNMOK-6bfkpexXNqvbTyFicxW1j1Jv8-JrNhdz-n5IH6xwiLmQ5luTsGQwu6YpXup1dhDdShMBh8feZ6tEq30qu1KwGp93iQcF6g09bjYMNZOYBkt-dlhApz89o3GJiFe-21zjNQ82lIePuW_MuRT2igFGbf3BXvbfCS4ZfyxfZlpNy--fPYrXVYA1oZMlw67zJiet6QN0RD5h6Gm5m4soQwj2Lr1MJcTMviSCYd3I-SDxJKd9NZ2AOiWoEZg7RhgSktPqh6Qtfkcxp2-c7J_S160LNGaLbXVXeHYWqcO9H-P6VEnU313uDTfJMDS9dOjcV8hY8aMmBdPE7qv9S_q0cvTE6SlDAs7vT_-Rn6Hob4QSSrZRgADVSDek-3Q3t9mPaTQdjEODXz4pEFC93SZGR2VHTGa4Ck_gQgU8MBhjkJMgR-f6eAqc_DuF2jJHXfArG4J0UiPsem6qtiOkNQfq5iM1wgNTWbm1vbLA9m_XVOjsO0MDbWnmNmP3UtrgR4MrLVQ5Hf9O7W0L-MHpuCYxHRlY4IvMXGFPE4YHlHO0BfFVLAeHAcz1BMyHq_qRWm5ORIqjuDTxIj_UBg-LAwiyVZLoIU-XhpmBfebK
+                - generic [ref=e426]:
+                  - emphasis [ref=e427]: 2025中医执医通过率
+                  - text: 高吗 - 智能分身实时回复
+            - generic [ref=e428]:
+              - link "头像" [ref=e429] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=XetDyOoXJmXd7CCRxUcUvnrM0riMrHKS7AK9-mBzRLTSE1OLuGkqbu7vU1e_XGfxar8SEgRcx0cBCZ13XFnz5adqS0ofDqw2lx_9SVyIPHjHqHrLkNMOK-6bfkpexXNqvbTyFicxW1j1Jv8-JrNhdz-n5IH6xwiLmQ5luTsGQwu6YpXup1dhDdShMBh8feZ6tEq30qu1KwGp93iQcF6g09bjYMNZOYBkt-dlhApz89o3GJiFe-21zjNQ82lIePuW_MuRT2igFGbf3BXvbfCS4ZfyxfZlpNy--fPYrXVYA1oZMlw67zJiet6QN0RD5h6Gm5m4soQwj2Lr1MJcTMviSCYd3I-SDxJKd9NZ2AOiWoEZg7RhgSktPqh6Qtfkcxp2-c7J_S160LNGaLbXVXeHYWqcO9H-P6VEnU313uDTfJMDS9dOjcV8hY8aMmBdPE7qv9S_q0cvTE6SlDAs7vT_-Rn6Hob4QSSrZRgADVSDek-3Q3t9mPaTQdjEODXz4pEFC93SZGR2VHTGa4Ck_gQgU8MBhjkJMgR-f6eAqc_DuF2jJHXfArG4J0UiPsem6qtiOkNQfq5iM1wgNTWbm1vbLA9m_XVOjsO0MDbWnmNmP3UtrgR4MrLVQ5Hf9O7W0L-MHpuCYxHRlY4IvMXGFPE4YHlHO0BfFVLAeHAcz1BMyHq_qRWm5ORIqjuDTxIj_UBg-LAwiyVZLoIU-XhpmBfebK
+                - img "头像" [ref=e431]
+              - link "中大网校 3.2万人聊过您好!欢迎访问中大网校，我是中大网校助考小秘书，可为您提供职业资格培训课程和报考咨询服务，帮助您快速了解各职业资格考试报考指南、政策资讯、备考攻略及考试干货等信息，请问您需要了解哪一职业资格考试相关问题呢？" [ref=e432]:
+                - /url: http://www.baidu.com/link?url=XetDyOoXJmXd7CCRxUcUvnrM0riMrHKS7AK9-mBzRLTSE1OLuGkqbu7vU1e_XGfxar8SEgRcx0cBCZ13XFnz5adqS0ofDqw2lx_9SVyIPHjHqHrLkNMOK-6bfkpexXNqvbTyFicxW1j1Jv8-JrNhdz-n5IH6xwiLmQ5luTsGQwu6YpXup1dhDdShMBh8feZ6tEq30qu1KwGp93iQcF6g09bjYMNZOYBkt-dlhApz89o3GJiFe-21zjNQ82lIePuW_MuRT2igFGbf3BXvbfCS4ZfyxfZlpNy--fPYrXVYA1oZMlw67zJiet6QN0RD5h6Gm5m4soQwj2Lr1MJcTMviSCYd3I-SDxJKd9NZ2AOiWoEZg7RhgSktPqh6Qtfkcxp2-c7J_S160LNGaLbXVXeHYWqcO9H-P6VEnU313uDTfJMDS9dOjcV8hY8aMmBdPE7qv9S_q0cvTE6SlDAs7vT_-Rn6Hob4QSSrZRgADVSDek-3Q3t9mPaTQdjEODXz4pEFC93SZGR2VHTGa4Ck_gQgU8MBhjkJMgR-f6eAqc_DuF2jJHXfArG4J0UiPsem6qtiOkNQfq5iM1wgNTWbm1vbLA9m_XVOjsO0MDbWnmNmP3UtrgR4MrLVQ5Hf9O7W0L-MHpuCYxHRlY4IvMXGFPE4YHlHO0BfFVLAeHAcz1BMyHq_qRWm5ORIqjuDTxIj_UBg-LAwiyVZLoIU-XhpmBfebK
+                - generic [ref=e433]:
+                  - generic [ref=e434]: 中大网校
+                  - generic [ref=e435]: 3.2万人聊过您好!欢迎访问中大网校，我是中大网校助考小秘书，可为您提供职业资格培训课程和报考咨询服务，帮助您快速了解各职业资格考试报考指南、政策资讯、备考攻略及考试干货等信息，请问您需要了解哪一职业资格考试相关问题呢？
+            - paragraph [ref=e437]:
+              - emphasis [ref=e438]: "2025"
+              - text: 年
+              - emphasis [ref=e439]: 中医执业医师
+              - text: 考试的
+              - emphasis [ref=e440]: 通过率
+              - text: 预计与往年相近，约在30%-50%之间。以下是对
+              - emphasis [ref=e441]: "2025"
+              - text: 年中医执医考试
+              - emphasis [ref=e442]: 通过率
+              - text: 的相关分析： 1. 历年
+              - emphasis [ref=e443]: 通过率
+              - text: 参考 - 总体趋势：近年来全国
+              - emphasis [ref=e444]: 中医执业医师
+              - text: 考试（含技能和笔试）的总
+              - emphasis [ref=e445]: 通过率
+              - text: 约在30%-50%之间，其中： - 实践技能考试
+              - emphasis [ref=e446]: 通过率
+              - text: 较高，约为70%-75%（部分考区更高）。 - 综合笔试
+              - emphasis [ref=e447]: 通过率
+              - text: 较低，约为40%-45%，是拉低总
+              - emphasis [ref=e448]: 通过率
+              - text: 的主要原因。 -
+              - emphasis [ref=e449]: "2024"
+              - text: 年数据：若政策或考试难度无重大调整，
+              - emphasis [ref=e450]: "2025"
+              - text: 年可能延续类似水平。 2. 影响
+              - emphasis [ref=e451]: 2025通过率
+              - text: 的因素 - 政策变化：如考试大纲调整（如新增考点、题型改革）、合格线变动等，可能影响难度。 - 报考人数：近年中医热度上升，报考人数增加可能导致竞争加剧（但合格线固定，不影响绝对
+              - emphasis [ref=e452]: 通过率
+              - text: ）。 - 考试形式：部分地区推进计算机化考试，需适应新题型（如案例分析题比重增加）。 3. 备考关键点 - 技能考试：强化中医四诊操作、针灸推拿技能、急救技术（如心肺复苏），注意沟通与人文关怀分值的提升。 - 综合笔试： - 基础科目（中医基础理论、诊断学、中药学）占分高，需扎实掌握。 - 临床科目（中医内、外、妇、儿）侧重病例分析，建议结合真题训练。 - 西医内容（约占20-30%）：重点复习诊断学基础、传染病学等。 4. 备考建议 - 早规划：至少预留6个月系统复习，分阶段巩固基础与冲刺。 - 真题导向：近5年真题反复练习，熟悉命题思路（如A2型病例题的常见病机陷阱）。 - 模拟考试：严格计时答题，适应机考节奏（尤其是300题/150分钟的笔试强度）。 5. 注意事项 - 材料审核：
+              - emphasis [ref=e453]: "2025"
+              - text: 年可能进一步严格学历/师承证明材料，提前核对报名资格。 - 地区差异：部分省（如河南、广东）考生基数大，但
+              - emphasis [ref=e454]: 通过率
+              - text: 与全国持平，无需过度担忧
+            - generic [ref=e459] [cursor=pointer]:
+              - generic [ref=e460]: 文心智能体·AI生成
+              - generic [ref=e462]: 
+          - generic [ref=e466]:
+            - heading "一文读懂:中医康复学专业学生能考执业医师吗?" [level=3] [ref=e469]:
+              - link "一文读懂:中医康复学专业学生能考执业医师吗?" [ref=e470] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtzE1lS6GbaTI2TVo-S5IH-AvfYv3qZzvndQbDLHaeRh0Niwo3hNOxCA6Gt1Y6v8v3NueI6r-2rPdl3o5ja4f_V_
+                - paragraph [ref=e473]:
+                  - generic [ref=e476]:
+                    - text: "一文读懂:"
+                    - emphasis [ref=e477]: 中医康复
+                    - text: 学专业学生能考
+                    - emphasis [ref=e478]: 执业医师
+                    - text: 吗?
+            - generic [ref=e479]:
+              - link [ref=e481] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtzE1lS6GbaTI2TVo-S5IH-AvfYv3qZzvndQbDLHaeRh0Niwo3hNOxCA6Gt1Y6v8v3NueI6r-2rPdl3o5ja4f_V_
+              - generic [ref=e486]:
+                - generic [ref=e491]:
+                  - text: 2025年6月13日
+                  - generic [ref=e492]:
+                    - text: 再看
+                    - emphasis [ref=e493]: 通过率
+                    - text: ，
+                    - emphasis [ref=e494]: "2024"
+                    - text: 年
+                    - emphasis [ref=e495]: 中医执业医师
+                    - text: 一试通过率约为 48%，助理医师约为 23%，较往年有所下降，这也表明考试难度在增加。不过好消息是，根据趋势预测，
+                    - emphasis [ref=e496]: "2025"
+                    - text: 年通过率可能会回升一些。（二）细分数据 2024 年全国共有 6.71 万人考取中医类别执业（助理）医师，但中医康复学专业的具体占比并未明确。这说明中医康复学...
+                - link "头像 曹老师聊教育" [ref=e501] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtzE1lS6GbaTI2TVo-S5IH-AvfYv3qZzvndQbDLHaeRh0Niwo3hNOxCA6Gt1Y6v8v3NueI6r-2rPdl3o5ja4f_V_
+                  - img "头像" [ref=e504]
+                  - generic [ref=e505]: 曹老师聊教育
+                  - generic [ref=e507]: 
+          - generic [ref=e511]:
+            - heading "24年医考通过率出炉!明年考试难度会..." [level=3] [ref=e514]:
+              - link "24年医考通过率出炉!明年考试难度会..." [ref=e515] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtuawWx1Et2Z0SG09NreU8UlFbhqFJdXssBNr_idn9-X-0SvVoVEjI1BitehhSQaWKuVPVEsvVqxfsZH8CrUr-wqHayKA_BVthfzEOsM74eyxl91U2GJHvsYgovSh43BDMrH_zFdoxKh6148V7qP1j_9vG0lEeWsspB1beYViWlhy4EeB-PJvjb4zytOhjfy5adAOOnQ2Q3WpJY1oDTmadUK-D7xE7GWbYmk6z_XoiHBe-gGRxkbmzrgmmNv0TxBxpq
+                - paragraph [ref=e518]:
+                  - generic [ref=e521]:
+                    - text: 24年医考
+                    - emphasis [ref=e522]: 通过率
+                    - text: 出炉!明年考试难度会...
+            - generic [ref=e523]:
+              - link [ref=e525] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtuawWx1Et2Z0SG09NreU8UlFbhqFJdXssBNr_idn9-X-0SvVoVEjI1BitehhSQaWKuVPVEsvVqxfsZH8CrUr-wqHayKA_BVthfzEOsM74eyxl91U2GJHvsYgovSh43BDMrH_zFdoxKh6148V7qP1j_9vG0lEeWsspB1beYViWlhy4EeB-PJvjb4zytOhjfy5adAOOnQ2Q3WpJY1oDTmadUK-D7xE7GWbYmk6z_XoiHBe-gGRxkbmzrgmmNv0TxBxpq
+              - generic [ref=e530]:
+                - generic [ref=e535]:
+                  - text: 2024年10月30日
+                  - generic [ref=e536]:
+                    - emphasis [ref=e537]: "2024"
+                    - text: 年
+                    - emphasis [ref=e538]: 通过率
+                    - text: "是48%; 2023年通过率是70%; 今年比去年下降22%! ★平均分对比 24年全国平均分357.85分; 23年全国平均分388.80分; 今年比去年下降30.95分! 中医助理医师: (2024年中医助理医师成绩分析报告) 此为报考具有规定学历的"
+                    - emphasis [ref=e539]: 中医执业医师
+                    - text: 的同学的成绩报告,...
+                - link "微信公众平台" [ref=e544] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtuawWx1Et2Z0SG09NreU8UlFbhqFJdXssBNr_idn9-X-0SvVoVEjI1BitehhSQaWKuVPVEsvVqxfsZH8CrUr-wqHayKA_BVthfzEOsM74eyxl91U2GJHvsYgovSh43BDMrH_zFdoxKh6148V7qP1j_9vG0lEeWsspB1beYViWlhy4EeB-PJvjb4zytOhjfy5adAOOnQ2Q3WpJY1oDTmadUK-D7xE7GWbYmk6z_XoiHBe-gGRxkbmzrgmmNv0TxBxpq
+                  - generic [ref=e545]: 微信公众平台
+                  - generic [ref=e547]: 
+          - generic [ref=e551]:
+            - heading "康复职考通过率低于50%!这届考试在淘汰哪种考生" [level=3] [ref=e554]:
+              - link "康复职考通过率低于50%!这届考试在淘汰哪种考生" [ref=e555] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtuawWx1Et2Z0SG09NreU8UkZt9tGbwJlgwVO474pkh3-QPN6V60PYq374ySJM2hc9Y6S7ljTa7ZdgxMR9Cd15v9L_B5HAcf0HAuiclLzQHz8ZhvcQOW3qHvYDdvlAGv8tLp883TlfamhFkLSvHKAV6mnC-TmCdxGBdrTRlgO5L-KPFKqSclzzMQEMPL1ta5otawinutO_d8HnVEYXuS0TN99U-sFaxNVyBsi2gJPW_vxLP9HV11uGuULMfmU3hXksa
+                - paragraph [ref=e558]:
+                  - generic [ref=e561]:
+                    - emphasis [ref=e562]: 康复
+                    - text: 职考
+                    - emphasis [ref=e563]: 通过率
+                    - text: 低于50%!这届考试在淘汰哪种考生
+            - generic [ref=e564]:
+              - link [ref=e566] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtuawWx1Et2Z0SG09NreU8UkZt9tGbwJlgwVO474pkh3-QPN6V60PYq374ySJM2hc9Y6S7ljTa7ZdgxMR9Cd15v9L_B5HAcf0HAuiclLzQHz8ZhvcQOW3qHvYDdvlAGv8tLp883TlfamhFkLSvHKAV6mnC-TmCdxGBdrTRlgO5L-KPFKqSclzzMQEMPL1ta5otawinutO_d8HnVEYXuS0TN99U-sFaxNVyBsi2gJPW_vxLP9HV11uGuULMfmU3hXksa
+              - generic [ref=e571]:
+                - generic [ref=e576]:
+                  - text: 2025年3月25日
+                  - generic [ref=e577]:
+                    - emphasis [ref=e578]: "2024"
+                    - text: 卫生资格考试合格人数为6163人。其中,中级3139人,初级(师)2600人,初级(士)424人。 根据之前宁夏人社厅的报道,2024卫生资格考试宁夏考区有1.5万余考生,即卫生资格考试
+                    - emphasis [ref=e579]: 通过率
+                    - text: 约为41.09% ✅ 山东临沂 各地卫考通过率虽存差异,但整体呈现"报考热、通关...
+                - link "微信公众平台" [ref=e584] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=HmrmGT3XBQVIKjqZtPqvtuawWx1Et2Z0SG09NreU8UkZt9tGbwJlgwVO474pkh3-QPN6V60PYq374ySJM2hc9Y6S7ljTa7ZdgxMR9Cd15v9L_B5HAcf0HAuiclLzQHz8ZhvcQOW3qHvYDdvlAGv8tLp883TlfamhFkLSvHKAV6mnC-TmCdxGBdrTRlgO5L-KPFKqSclzzMQEMPL1ta5otawinutO_d8HnVEYXuS0TN99U-sFaxNVyBsi2gJPW_vxLP9HV11uGuULMfmU3hXksa
+                  - generic [ref=e585]: 微信公众平台
+                  - generic [ref=e587]: 
+        - generic [ref=e590]:
+          - generic [ref=e591]: 相关搜索
+          - table [ref=e592]:
+            - rowgroup [ref=e593]:
+              - row "执业医师报考条件 执业医师" [ref=e594]:
+                - cell "执业医师报考条件" [ref=e595]:
+                  - link "执业医师报考条件" [ref=e596] [cursor=pointer]:
+                    - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E6%8A%A5%E8%80%83%E6%9D%A1%E4%BB%B6&rsf=101631202&rsp=0&f=1&rs_src=0&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&rsv_dl=brs_28338_1
+                    - generic [ref=e598]: 执业医师报考条件
+                - cell "执业医师" [ref=e599]:
+                  - link "执业医师" [ref=e600] [cursor=pointer]:
+                    - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88&rsf=101631202&rsp=1&f=1&rs_src=0&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&rsv_dl=brs_28338_2
+                    - generic [ref=e602]: 执业医师
+              - row "中医考研通过率 执业医师考了6次都没过" [ref=e603]:
+                - cell "中医考研通过率" [ref=e604]:
+                  - link "中医考研通过率" [ref=e605] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E8%80%83%E7%A0%94%E9%80%9A%E8%BF%87%E7%8E%87&rsf=101633403&rsp=2&f=1&rs_src=0&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&rsv_dl=brs_28338_3
+                    - generic [ref=e607]: 中医考研通过率
+                - cell "执业医师考了6次都没过" [ref=e608]:
+                  - link "执业医师考了6次都没过" [ref=e609] [cursor=pointer]:
+                    - /url: /s?wd=%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E8%80%83%E4%BA%866%E6%AC%A1%E9%83%BD%E6%B2%A1%E8%BF%87&rsf=101631202&rsp=3&f=1&rs_src=0&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&rsv_dl=brs_28338_4
+                    - generic [ref=e611]: 执业医师考了6次都没过
+              - row "中医综合2024年难吗 康复治疗学考研后允许考医师证吗" [ref=e612]:
+                - cell "中医综合2024年难吗" [ref=e613]:
+                  - link "中医综合2024年难吗" [ref=e614] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E7%BB%BC%E5%90%882024%E5%B9%B4%E9%9A%BE%E5%90%97&rsf=101636803&rsp=4&f=1&rs_src=0&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&rsv_dl=brs_28338_5
+                    - generic [ref=e616]: 中医综合2024年难吗
+                - cell "康复治疗学考研后允许考医师证吗" [ref=e617]:
+                  - link "康复治疗学考研后允许考医师证吗" [ref=e618] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E6%B2%BB%E7%96%97%E5%AD%A6%E8%80%83%E7%A0%94%E5%90%8E%E5%85%81%E8%AE%B8%E8%80%83%E5%8C%BB%E5%B8%88%E8%AF%81%E5%90%97&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&rsv_dl=brs_28338_6
+                    - generic [ref=e620]: 康复治疗学考研后允许考医师证吗
+              - row "中医药康复医技考研学校排名 中医执业医师考试过关率" [ref=e621]:
+                - cell "中医药康复医技考研学校排名" [ref=e622]:
+                  - link "中医药康复医技考研学校排名" [ref=e623] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E8%8D%AF%E5%BA%B7%E5%A4%8D%E5%8C%BB%E6%8A%80%E8%80%83%E7%A0%94%E5%AD%A6%E6%A0%A1%E6%8E%92%E5%90%8D&rsf=101636803&rsp=6&f=1&rs_src=0&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&rsv_dl=brs_28338_7
+                    - generic [ref=e625]: 中医药康复医技考研学校排名
+                - cell "中医执业医师考试过关率" [ref=e626]:
+                  - link "中医执业医师考试过关率" [ref=e627] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E8%80%83%E8%AF%95%E8%BF%87%E5%85%B3%E7%8E%87&rsf=101636803&rsp=7&f=1&rs_src=0&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&rsv_dl=brs_28338_8
+                    - generic [ref=e629]: 中医执业医师考试过关率
+              - row "2021年中医执业医师考试难度 中医执业医师难度" [ref=e630]:
+                - cell "2021年中医执业医师考试难度" [ref=e631]:
+                  - link "2021年中医执业医师考试难度" [ref=e632] [cursor=pointer]:
+                    - /url: /s?wd=2021%E5%B9%B4%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E8%80%83%E8%AF%95%E9%9A%BE%E5%BA%A6&rsf=101633403&rsp=8&f=1&rs_src=0&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&rsv_dl=brs_28338_9
+                    - generic [ref=e634]: 2021年中医执业医师考试难度
+                - cell "中医执业医师难度" [ref=e635]:
+                  - link "中医执业医师难度" [ref=e636] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%E9%9A%BE%E5%BA%A6&rsf=101633403&rsp=9&f=1&rs_src=0&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&rsv_dl=brs_28338_10
+                    - generic [ref=e638]: 中医执业医师难度
+      - generic [ref=e641]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e642]:
+          - generic [ref=e643]: "1"
+        - link "2" [ref=e644] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&pn=10&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&topic_pn=
+          - generic [ref=e645]: "2"
+        - link "3" [ref=e646] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&pn=20&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&topic_pn=
+          - generic [ref=e647]: "3"
+        - link "4" [ref=e648] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&pn=30&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&topic_pn=
+          - generic [ref=e649]: "4"
+        - link "5" [ref=e650] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&pn=40&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&topic_pn=
+          - generic [ref=e651]: "5"
+        - link "6" [ref=e652] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&pn=50&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&topic_pn=
+          - generic [ref=e653]: "6"
+        - link "7" [ref=e654] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&pn=60&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&topic_pn=
+          - generic [ref=e655]: "7"
+        - link "8" [ref=e656] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&pn=70&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&topic_pn=
+          - generic [ref=e657]: "8"
+        - link "9" [ref=e658] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&pn=80&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&topic_pn=
+          - generic [ref=e659]: "9"
+        - link "10" [ref=e660] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&pn=90&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&topic_pn=
+          - generic [ref=e661]: "10"
+        - link "下一页" [ref=e662] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&pn=10&oq=%E4%B8%AD%E5%8C%BB%E6%89%A7%E4%B8%9A%E5%8C%BB%E5%B8%88%20%E9%80%9A%E8%BF%87%E7%8E%87%202024%202025%20%E5%BA%B7%E5%A4%8D%E6%96%B9%E5%90%91%20%E8%80%83%E7%A0%94%20%E6%B7%B1%E9%80%A0%E7%8E%87&ie=utf-8&usm=2&rsv_pq=92f0a21e01b88486&rsv_t=b1821yMPabn%2BEqsj22XhQuclb3F0ATQPwg2Lhyl0bQvWLgA0vo3pFqsmGQQ&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e663]
+      - generic [ref=e666]:
+        - link "帮助" [ref=e667] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e668] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e669] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e670] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

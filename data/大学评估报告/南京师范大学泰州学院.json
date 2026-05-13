@@ -1,0 +1,43 @@
+{
+  "university_name": "南京师范大学泰州学院",
+  "short_name": "NNUTC",
+  "location": {
+    "province": "江苏",
+    "city": "泰州",
+    "district": "海陵区"
+  },
+  "academic_stats": {
+    "provincial_first_class_majors": [
+      "小学教育",
+      "生物技术",
+      "数学与应用数学"
+    ],
+    "faculty_with_phd": 89,
+    "professor_count": 294
+  },
+  "employment_stats": {
+    "overall_employment_rate": "93%+",
+    "teacher_recruitment_rate": "40.87%",
+    "domestic_further_study_rate": "6.37%",
+    "average_starting_salary": 5200
+  },
+  "admission_stats_2024": {
+    "jiangsu_history_group": {
+      "score": 504,
+      "rank": 39269
+    },
+    "jiangsu_physics_group": {
+      "score": 474,
+      "rank": 154931
+    }
+  },
+  "brand_ranking": {
+    "alumni_association_private_teacher_training": 1,
+    "comprehensive_score": 3.55
+  },
+  "risk_factors": [
+    "High tuition fees",
+    "Uncertainty of conversion to public status",
+    "Demographic impact on future teaching jobs"
+  ]
+}

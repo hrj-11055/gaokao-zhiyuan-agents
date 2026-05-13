@@ -1,0 +1,146 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - list [ref=e5]:
+        - listitem [ref=e6]:
+          - link "首页" [ref=e7] [cursor=pointer]:
+            - /url: //www.bilibili.com
+            - img [ref=e8]
+            - generic [ref=e10]:
+              - generic [ref=e11]: 首页
+              - img [ref=e12]
+        - listitem [ref=e15]:
+          - link "番剧" [ref=e16] [cursor=pointer]:
+            - /url: //www.bilibili.com/anime/
+        - listitem [ref=e17]:
+          - link "直播" [ref=e18] [cursor=pointer]:
+            - /url: //live.bilibili.com
+        - listitem [ref=e19]:
+          - link "游戏中心" [ref=e20] [cursor=pointer]:
+            - /url: //game.bilibili.com/platform
+        - listitem [ref=e21]:
+          - link "会员购" [ref=e22] [cursor=pointer]:
+            - /url: //show.bilibili.com/platform/home.html?msource=pc_web
+        - listitem [ref=e23]:
+          - link "漫画" [ref=e24] [cursor=pointer]:
+            - /url: //manga.bilibili.com?from=bill_top_mnav
+        - listitem [ref=e25]:
+          - link "赛事" [ref=e26] [cursor=pointer]:
+            - /url: //www.bilibili.com/match/home/
+        - listitem [ref=e27]:
+          - link "下载客户端" [ref=e28] [cursor=pointer]:
+            - /url: //app.bilibili.com
+            - img [ref=e29]
+            - generic [ref=e32]: 下载客户端
+      - generic [ref=e36]:
+        - textbox "老飞宇66" [ref=e38]
+        - img [ref=e40] [cursor=pointer]
+      - list [ref=e42]:
+        - listitem [ref=e43] [cursor=pointer]:
+          - listitem [ref=e44]:
+            - generic [ref=e46]: 登录
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: 登录后你可以：
+              - generic [ref=e51]:
+                - generic [ref=e52]:
+                  - img [ref=e53]
+                  - generic [ref=e57]: 免费看高清视频
+                - generic [ref=e58]:
+                  - img [ref=e59]
+                  - generic [ref=e62]: 多端同步播放记录
+                - generic [ref=e63]:
+                  - img [ref=e64]
+                  - generic [ref=e70]: 发表弹幕/评论
+                - generic [ref=e71]:
+                  - img [ref=e72]
+                  - generic [ref=e75]: 热门番剧影视看不停
+              - generic [ref=e76]: 立即登录 立即登录
+              - generic [ref=e77]: 首次使用？ 点我注册
+        - listitem [ref=e78] [cursor=pointer]:
+          - listitem [ref=e80]:
+            - link [ref=e81]:
+              - /url: //account.bilibili.com/big
+              - img [ref=e82]
+        - listitem [ref=e86] [cursor=pointer]:
+          - img [ref=e88]
+        - listitem [ref=e91] [cursor=pointer]:
+          - img [ref=e93]
+        - listitem [ref=e99] [cursor=pointer]:
+          - img [ref=e101]
+        - listitem [ref=e104] [cursor=pointer]:
+          - img [ref=e106]
+        - listitem [ref=e108] [cursor=pointer]:
+          - img [ref=e110]
+        - listitem [ref=e114] [cursor=pointer]:
+          - listitem [ref=e115]:
+            - img [ref=e118]
+  - generic [ref=e121]:
+    - generic [ref=e123]:
+      - generic [ref=e124]:
+        - generic [ref=e127]:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+        - generic [ref=e129]:
+          - generic [ref=e130]: bedbni75
+          - link "" [ref=e131] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/help.html/?spm_id_from=333.1387.0.0#/?qid=59e2cffdaa69465486497bb35a5ac295
+            - generic [ref=e132]: 
+      - generic [ref=e136]:
+        - generic [ref=e141] [cursor=pointer]:
+          - generic [ref=e142]: 
+          - text: 关注
+        - link "发消息" [ref=e143] [cursor=pointer]:
+          - /url: //message.bilibili.com/#/whisper/mid119146564
+        - generic [ref=e147]: 
+    - generic [ref=e149]:
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - link " 主页" [ref=e152] [cursor=pointer]:
+            - /url: /119146564
+            - generic [ref=e153]: 
+            - generic [ref=e154]: 主页
+          - link " 动态" [ref=e155] [cursor=pointer]:
+            - /url: /119146564/dynamic
+            - generic [ref=e156]: 
+            - generic [ref=e157]: 动态
+          - link " 投稿" [ref=e158] [cursor=pointer]:
+            - /url: /119146564/upload
+            - generic [ref=e159]: 
+            - generic [ref=e160]: 投稿
+          - link " 合集和系列" [ref=e161] [cursor=pointer]:
+            - /url: /119146564/lists
+            - generic [ref=e162]: 
+            - generic [ref=e163]: 合集和系列
+        - generic [ref=e165]:
+          - textbox "" [ref=e166]:
+            - /placeholder: 搜索视频、动态
+          - generic [ref=e167]:
+            - text: 
+            - generic [ref=e168] [cursor=pointer]: 
+      - generic [ref=e170]:
+        - link "关注数 0" [ref=e171] [cursor=pointer]:
+          - /url: /119146564/relation/follow
+          - generic [ref=e172]: 关注数
+          - generic "0" [ref=e173]
+        - link "粉丝数 0" [ref=e174] [cursor=pointer]:
+          - /url: /119146564/relation/fans
+          - generic [ref=e175]: 粉丝数
+          - generic "0" [ref=e176]
+    - main [ref=e177]:
+      - generic [ref=e178]:
+        - img [ref=e183]
+        - generic [ref=e184]:
+          - generic [ref=e186]:
+            - generic [ref=e188]: 个人资料
+            - generic [ref=e190]:
+              - generic [ref=e191]: 
+              - generic [ref=e192]: "119146564"
+          - generic:  
+      - generic [ref=e193]:
+        - generic [ref=e195] [cursor=pointer]: 返回旧版
+        - text: 

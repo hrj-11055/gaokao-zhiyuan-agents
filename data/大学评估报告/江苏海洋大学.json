@@ -1,0 +1,42 @@
+{
+  "university_name": "江苏海洋大学",
+  "short_name": "JOU / 江海大",
+  "location": {
+    "province": "江苏",
+    "city": "连云港",
+    "campus_count": 3
+  },
+  "academic_standing": {
+    "key_disciplines": [
+      "海洋科学",
+      "水产",
+      "机械工程",
+      "化学工程"
+    ],
+    "doctorate_points": 0,
+    "postdoc_stations": 1,
+    "master_points": 10
+  },
+  "student_quality": {
+    "jiangsu_rank_avg": 130000,
+    "admission_difficulty": "Medium"
+  },
+  "employment_stats": {
+    "employment_rate": "91.5%",
+    "further_study_rate": "18.2%",
+    "top_industry": "Pharmaceuticals & Manufacturing",
+    "avg_starting_salary": 5200
+  },
+  "evaluation_scores": {
+    "academic": 2.4,
+    "employment": 2.6,
+    "location": 2.8,
+    "brand": 2.9,
+    "total_weighted": 2.64
+  },
+  "risk_factors": [
+    "Geographic isolation",
+    "Limited high-end research",
+    "Extreme weather (wind)"
+  ]
+}

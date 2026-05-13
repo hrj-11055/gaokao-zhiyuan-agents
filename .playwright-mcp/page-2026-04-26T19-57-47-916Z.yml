@@ -1,0 +1,1726 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "圆梦小灯塔" [ref=e1581] [cursor=pointer]:
+        - /url: /
+        - img "圆梦小灯塔" [ref=e1582]
+      - generic [ref=e4] [cursor=pointer]:
+        - link "首页" [ref=e5]:
+          - /url: /
+        - link "高考 " [ref=e7]:
+          - /url: /gaokao
+          - generic [ref=e8]: 高考
+          - generic [ref=e10]: 
+        - link "院校库" [ref=e11]:
+          - /url: /yuanxiaoku
+        - link "教学报告" [ref=e12]:
+          - /url: /jiaoxuebaogao
+        - link "就业报告" [ref=e13]:
+          - /url: /jiuyebaogao
+      - generic [ref=e14]:
+        - generic [ref=e15]: 
+        - textbox "请输入搜索内容" [ref=e16]
+        - button "搜索" [ref=e17] [cursor=pointer]
+  - generic [ref=e18]:
+    - generic [ref=e19]:
+      - link "首页" [ref=e20] [cursor=pointer]:
+        - /url: /
+      - text: ">"
+      - link "分数线" [ref=e21] [cursor=pointer]:
+        - /url: /list_3001.html
+      - text: "> 正文"
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - heading "暨南大学全国各省高考录取分数线汇总（2026年参考）" [level=1] [ref=e26]
+            - paragraph [ref=e27]:
+              - text: 编辑： 何绍老师
+              - time [ref=e28]: 2026-03-23 21:00
+              - text: 校对：罗老师
+          - article [ref=e29]:
+            - paragraph [ref=e30]: 2025年高考，北京最低603分可以读暨南大学，上海最低542分可以被暨南大学录取，海南最低665分录取！
+            - paragraph [ref=e31]: 圆梦小编将在本文详细展示：暨南大学2025年、2024年在全国所有省市区的录取分数，供2026年考生查阅！
+            - paragraph [ref=e32]:
+              - img
+            - heading "一、高考多少分可以读暨南大学" [level=3] [ref=e33]
+            - paragraph [ref=e34]: 2025年北京、上海、海南等地的考试院已经公布了暨南大学的最低录取分数线。
+            - paragraph [ref=e35]: 1、北京
+            - paragraph [ref=e36]: 北京高考生最低603分，就可以读暨南大学。
+            - paragraph [ref=e37]: 03组（物理+化学）：2025年投档分是603，最低分位次是11195
+            - paragraph [ref=e38]: 02组（物理）：2025年投档分是607，最低分位次是10332
+            - paragraph [ref=e39]: 01组（不限）：2025年投档分是614，最低分位次是8923
+            - paragraph [ref=e40]: 2、上海
+            - paragraph [ref=e41]: 上海高考生最低542分，就可以读暨南大学。
+            - paragraph [ref=e42]: 01组（不限）：2025年投档分是542，最低分位次是12532
+            - paragraph [ref=e43]: 02组（物理）：2025年投档分是545，最低分位次是11777
+            - paragraph [ref=e44]: 03组（物理+化学）：2025年投档分是549，最低分位次是10761
+            - paragraph [ref=e45]: 04组（物理+化学）：2025年投档分是558，最低分位次是8579
+            - paragraph [ref=e46]: 3、海南
+            - paragraph [ref=e47]: 海南高考生最低665分，就可以读暨南大学。
+            - paragraph [ref=e48]: 专业组04（物理+化学）：2025年投档分是665，最低分位次是3824
+            - paragraph [ref=e49]: 专业组02（不限）：2025年投档分是671，最低分位次是3356
+            - paragraph [ref=e50]: 专业组03（物理）：2025年投档分是682，最低分位次是2657
+            - paragraph [ref=e51]:
+              - img
+            - heading "二、暨南大学2024-2025年全国各省录取分数线" [level=3] [ref=e52]
+            - heading "暨南大学在全国各省各科目的录取分数线有所差异，请大家直接参考下表：" [level=4] [ref=e53]
+            - table [ref=e54]:
+              - rowgroup [ref=e55]:
+                - row "招生 省份 科目 批次 专业组 2025 分数 2024 分数" [ref=e56]:
+                  - columnheader "招生 省份" [ref=e57]:
+                    - text: 招生
+                    - text: 省份
+                  - columnheader "科目" [ref=e58]
+                  - columnheader "批次" [ref=e59]
+                  - columnheader "专业组" [ref=e60]
+                  - columnheader "2025 分数" [ref=e61]:
+                    - text: "2025"
+                    - text: 分数
+                  - columnheader "2024 分数" [ref=e62]:
+                    - text: "2024"
+                    - text: 分数
+              - rowgroup [ref=e63]:
+                - row "四川 物理 本科批B 专业组105 608 ——" [ref=e64]:
+                  - cell "四川" [ref=e65]
+                  - cell "物理" [ref=e66]
+                  - cell "本科批B" [ref=e67]
+                  - cell "专业组105" [ref=e68]
+                  - cell "608" [ref=e69]
+                  - cell "——" [ref=e70]
+                - row "江西 历史 本科批 第101组 608 601" [ref=e71]:
+                  - cell "江西" [ref=e72]
+                  - cell "历史" [ref=e73]
+                  - cell "本科批" [ref=e74]
+                  - cell "第101组" [ref=e75]
+                  - cell "608" [ref=e76]
+                  - cell "601" [ref=e77]
+                - row "河南 物理 本科批 第201组( 中外合作办学 组) 607 ——" [ref=e78]:
+                  - cell "河南" [ref=e79]
+                  - cell "物理" [ref=e80]
+                  - cell "本科批" [ref=e81]
+                  - cell "第201组( 中外合作办学 组)" [ref=e82]:
+                    - text: 第201组(
+                    - text: 中外合作办学
+                    - text: 组)
+                  - cell "607" [ref=e83]
+                  - cell "——" [ref=e84]
+                - row "湖南 历史 本科批 第107组 602 598" [ref=e85]:
+                  - cell "湖南" [ref=e86]
+                  - cell "历史" [ref=e87]
+                  - cell "本科批" [ref=e88]
+                  - cell "第107组" [ref=e89]
+                  - cell "602" [ref=e90]
+                  - cell "598" [ref=e91]
+                - row "湖南 物理 本科批 第211组( 中外合作) 584 ——" [ref=e92]:
+                  - cell "湖南" [ref=e93]
+                  - cell "物理" [ref=e94]
+                  - cell "本科批" [ref=e95]
+                  - cell "第211组( 中外合作)" [ref=e96]:
+                    - text: 第211组(
+                    - text: 中外合作)
+                  - cell "584" [ref=e97]
+                  - cell "——" [ref=e98]
+                - row "海南 —— 本科批 专业组02 671 684" [ref=e99]:
+                  - cell "海南" [ref=e100]
+                  - cell "——" [ref=e101]
+                  - cell "本科批" [ref=e102]
+                  - cell "专业组02" [ref=e103]
+                  - cell "671" [ref=e104]
+                  - cell "684" [ref=e105]
+                - row "吉林 历史 本科批 第001组 591 573" [ref=e106]:
+                  - cell "吉林" [ref=e107]
+                  - cell "历史" [ref=e108]
+                  - cell "本科批" [ref=e109]
+                  - cell "第001组" [ref=e110]
+                  - cell "591" [ref=e111]
+                  - cell "573" [ref=e112]
+                - row "湖南 物理 本科批 第110组 605 ——" [ref=e113]:
+                  - cell "湖南" [ref=e114]
+                  - cell "物理" [ref=e115]
+                  - cell "本科批" [ref=e116]
+                  - cell "第110组" [ref=e117]
+                  - cell "605" [ref=e118]
+                  - cell "——" [ref=e119]
+                - row "山西 物理 本科批 第308组 610 ——" [ref=e120]:
+                  - cell "山西" [ref=e121]
+                  - cell "物理" [ref=e122]
+                  - cell "本科批" [ref=e123]
+                  - cell "第308组" [ref=e124]
+                  - cell "610" [ref=e125]
+                  - cell "——" [ref=e126]
+                - row "黑龙 江 物理 本科批 第008组 599 ——" [ref=e127]:
+                  - cell "黑龙 江" [ref=e128]:
+                    - text: 黑龙
+                    - text: 江
+                  - cell "物理" [ref=e129]
+                  - cell "本科批" [ref=e130]
+                  - cell "第008组" [ref=e131]
+                  - cell "599" [ref=e132]
+                  - cell "——" [ref=e133]
+                - row "江西 物理 本科批 第505组 609 ——" [ref=e134]:
+                  - cell "江西" [ref=e135]
+                  - cell "物理" [ref=e136]
+                  - cell "本科批" [ref=e137]
+                  - cell "第505组" [ref=e138]
+                  - cell "609" [ref=e139]
+                  - cell "——" [ref=e140]
+                - row "新疆 文科 本科一批 —— 514 434" [ref=e141]:
+                  - cell "新疆" [ref=e142]
+                  - cell "文科" [ref=e143]
+                  - cell "本科一批" [ref=e144]
+                  - cell "——" [ref=e145]
+                  - cell "514" [ref=e146]
+                  - cell "434" [ref=e147]
+                - row "山西 历史 本科批 第003组 602 ——" [ref=e148]:
+                  - cell "山西" [ref=e149]
+                  - cell "历史" [ref=e150]
+                  - cell "本科批" [ref=e151]
+                  - cell "第003组" [ref=e152]
+                  - cell "602" [ref=e153]
+                  - cell "——" [ref=e154]
+                - row "山西 物理 本科批 第305组 590 ——" [ref=e155]:
+                  - cell "山西" [ref=e156]
+                  - cell "物理" [ref=e157]
+                  - cell "本科批" [ref=e158]
+                  - cell "第305组" [ref=e159]
+                  - cell "590" [ref=e160]
+                  - cell "——" [ref=e161]
+                - row "甘肃 历史 本科批 004组(国 家专项) 536 493" [ref=e162]:
+                  - cell "甘肃" [ref=e163]
+                  - cell "历史" [ref=e164]
+                  - cell "本科批" [ref=e165]
+                  - cell "004组(国 家专项)" [ref=e166]:
+                    - text: 004组(国
+                    - text: 家专项)
+                  - cell "536" [ref=e167]
+                  - cell "493" [ref=e168]
+                - row "北京 —— 本科批 03组 603 ——" [ref=e169]:
+                  - cell "北京" [ref=e170]
+                  - cell "——" [ref=e171]
+                  - cell "本科批" [ref=e172]
+                  - cell "03组" [ref=e173]
+                  - cell "603" [ref=e174]
+                  - cell "——" [ref=e175]
+                - row "山西 物理 本科批 第304组 599 ——" [ref=e176]:
+                  - cell "山西" [ref=e177]
+                  - cell "物理" [ref=e178]
+                  - cell "本科批" [ref=e179]
+                  - cell "第304组" [ref=e180]
+                  - cell "599" [ref=e181]
+                  - cell "——" [ref=e182]
+                - row "四川 物理 本科批B 专业组103 (中外合作) 592 ——" [ref=e183]:
+                  - cell "四川" [ref=e184]
+                  - cell "物理" [ref=e185]
+                  - cell "本科批B" [ref=e186]
+                  - cell "专业组103 (中外合作)" [ref=e187]:
+                    - text: 专业组103
+                    - text: (中外合作)
+                  - cell "592" [ref=e188]
+                  - cell "——" [ref=e189]
+                - row "广东 物理 本科批 217组 602 ——" [ref=e190]:
+                  - cell "广东" [ref=e191]
+                  - cell "物理" [ref=e192]
+                  - cell "本科批" [ref=e193]
+                  - cell "217组" [ref=e194]
+                  - cell "602" [ref=e195]
+                  - cell "——" [ref=e196]
+                - row "广西 物理 本科批 105组 591 582" [ref=e197]:
+                  - cell "广西" [ref=e198]
+                  - cell "物理" [ref=e199]
+                  - cell "本科批" [ref=e200]
+                  - cell "105组" [ref=e201]
+                  - cell "591" [ref=e202]
+                  - cell "582" [ref=e203]
+                - row "山西 历史 本科批 第002组 602 ——" [ref=e204]:
+                  - cell "山西" [ref=e205]
+                  - cell "历史" [ref=e206]
+                  - cell "本科批" [ref=e207]
+                  - cell "第002组" [ref=e208]
+                  - cell "602" [ref=e209]
+                  - cell "——" [ref=e210]
+                - row "山西 物理 本科批 第307组 614 ——" [ref=e211]:
+                  - cell "山西" [ref=e212]
+                  - cell "物理" [ref=e213]
+                  - cell "本科批" [ref=e214]
+                  - cell "第307组" [ref=e215]
+                  - cell "614" [ref=e216]
+                  - cell "——" [ref=e217]
+                - row "吉林 历史 本科批 第002组( 国家专项) 550 502" [ref=e218]:
+                  - cell "吉林" [ref=e219]
+                  - cell "历史" [ref=e220]
+                  - cell "本科批" [ref=e221]
+                  - cell "第002组( 国家专项)" [ref=e222]:
+                    - text: 第002组(
+                    - text: 国家专项)
+                  - cell "550" [ref=e223]
+                  - cell "502" [ref=e224]
+                - row "广东 物理 本科批 221组 595 597" [ref=e225]:
+                  - cell "广东" [ref=e226]
+                  - cell "物理" [ref=e227]
+                  - cell "本科批" [ref=e228]
+                  - cell "221组" [ref=e229]
+                  - cell "595" [ref=e230]
+                  - cell "597" [ref=e231]
+                - row "宁夏 物理 本科批B 001专业组 519 ——" [ref=e232]:
+                  - cell "宁夏" [ref=e233]
+                  - cell "物理" [ref=e234]
+                  - cell "本科批B" [ref=e235]
+                  - cell "001专业组" [ref=e236]
+                  - cell "519" [ref=e237]
+                  - cell "——" [ref=e238]
+                - row "山西 物理 本科批 第310组( 国家专项) 584 ——" [ref=e239]:
+                  - cell "山西" [ref=e240]
+                  - cell "物理" [ref=e241]
+                  - cell "本科批" [ref=e242]
+                  - cell "第310组( 国家专项)" [ref=e243]:
+                    - text: 第310组(
+                    - text: 国家专项)
+                  - cell "584" [ref=e244]
+                  - cell "——" [ref=e245]
+                - row "安徽 物理 本科批 008组 613 623" [ref=e246]:
+                  - cell "安徽" [ref=e247]
+                  - cell "物理" [ref=e248]
+                  - cell "本科批" [ref=e249]
+                  - cell "008组" [ref=e250]
+                  - cell "613" [ref=e251]
+                  - cell "623" [ref=e252]
+                - row "湖南 物理 本科批 第112组 608 ——" [ref=e253]:
+                  - cell "湖南" [ref=e254]
+                  - cell "物理" [ref=e255]
+                  - cell "本科批" [ref=e256]
+                  - cell "第112组" [ref=e257]
+                  - cell "608" [ref=e258]
+                  - cell "——" [ref=e259]
+                - row "广东 历史 本科批 205组 606 ——" [ref=e260]:
+                  - cell "广东" [ref=e261]
+                  - cell "历史" [ref=e262]
+                  - cell "本科批" [ref=e263]
+                  - cell "205组" [ref=e264]
+                  - cell "606" [ref=e265]
+                  - cell "——" [ref=e266]
+                - row "四川 物理 本科批B 专业组108 623 ——" [ref=e267]:
+                  - cell "四川" [ref=e268]
+                  - cell "物理" [ref=e269]
+                  - cell "本科批B" [ref=e270]
+                  - cell "专业组108" [ref=e271]
+                  - cell "623" [ref=e272]
+                  - cell "——" [ref=e273]
+                - row "上海 —— 本科批 02组 545 539" [ref=e274]:
+                  - cell "上海" [ref=e275]
+                  - cell "——" [ref=e276]
+                  - cell "本科批" [ref=e277]
+                  - cell "02组" [ref=e278]
+                  - cell "545" [ref=e279]
+                  - cell "539" [ref=e280]
+                - row "贵州 物理 本科批 —— 566 573" [ref=e281]:
+                  - cell "贵州" [ref=e282]
+                  - cell "物理" [ref=e283]
+                  - cell "本科批" [ref=e284]
+                  - cell "——" [ref=e285]
+                  - cell "566" [ref=e286]
+                  - cell "573" [ref=e287]
+                - row "山西 物理 本科批 第302组 582 ——" [ref=e288]:
+                  - cell "山西" [ref=e289]
+                  - cell "物理" [ref=e290]
+                  - cell "本科批" [ref=e291]
+                  - cell "第302组" [ref=e292]
+                  - cell "582" [ref=e293]
+                  - cell "——" [ref=e294]
+                - row "吉林 物理 本科批 第005组 567 594" [ref=e295]:
+                  - cell "吉林" [ref=e296]
+                  - cell "物理" [ref=e297]
+                  - cell "本科批" [ref=e298]
+                  - cell "第005组" [ref=e299]
+                  - cell "567" [ref=e300]
+                  - cell "594" [ref=e301]
+                - row "河南 历史 本科批 第501组( 不组织专业考 试的艺术类专 业组) 601 ——" [ref=e302]:
+                  - cell "河南" [ref=e303]
+                  - cell "历史" [ref=e304]
+                  - cell "本科批" [ref=e305]
+                  - cell "第501组( 不组织专业考 试的艺术类专 业组)" [ref=e306]:
+                    - text: 第501组(
+                    - text: 不组织专业考
+                    - text: 试的艺术类专
+                    - text: 业组)
+                  - cell "601" [ref=e307]
+                  - cell "——" [ref=e308]
+                - row "河南 物理 本科批 第104组 617 ——" [ref=e309]:
+                  - cell "河南" [ref=e310]
+                  - cell "物理" [ref=e311]
+                  - cell "本科批" [ref=e312]
+                  - cell "第104组" [ref=e313]
+                  - cell "617" [ref=e314]
+                  - cell "——" [ref=e315]
+                - row "甘肃 物理 本科批 006组 580 ——" [ref=e316]:
+                  - cell "甘肃" [ref=e317]
+                  - cell "物理" [ref=e318]
+                  - cell "本科批" [ref=e319]
+                  - cell "006组" [ref=e320]
+                  - cell "580" [ref=e321]
+                  - cell "——" [ref=e322]
+                - row "上海 —— 本科批 01组 542 540" [ref=e323]:
+                  - cell "上海" [ref=e324]
+                  - cell "——" [ref=e325]
+                  - cell "本科批" [ref=e326]
+                  - cell "01组" [ref=e327]
+                  - cell "542" [ref=e328]
+                  - cell "540" [ref=e329]
+                - row "江西 物理 本科批 第506组( 中外合作) 581 ——" [ref=e330]:
+                  - cell "江西" [ref=e331]
+                  - cell "物理" [ref=e332]
+                  - cell "本科批" [ref=e333]
+                  - cell "第506组( 中外合作)" [ref=e334]:
+                    - text: 第506组(
+                    - text: 中外合作)
+                  - cell "581" [ref=e335]
+                  - cell "——" [ref=e336]
+                - row "河南 历史 本科批 第109组 618 ——" [ref=e337]:
+                  - cell "河南" [ref=e338]
+                  - cell "历史" [ref=e339]
+                  - cell "本科批" [ref=e340]
+                  - cell "第109组" [ref=e341]
+                  - cell "618" [ref=e342]
+                  - cell "——" [ref=e343]
+                - row "山西 物理 本科批 第311组( 国家专项) 522 ——" [ref=e344]:
+                  - cell "山西" [ref=e345]
+                  - cell "物理" [ref=e346]
+                  - cell "本科批" [ref=e347]
+                  - cell "第311组( 国家专项)" [ref=e348]:
+                    - text: 第311组(
+                    - text: 国家专项)
+                  - cell "522" [ref=e349]
+                  - cell "——" [ref=e350]
+                - row "湖北 物理 本科批 第06组 599 ——" [ref=e351]:
+                  - cell "湖北" [ref=e352]
+                  - cell "物理" [ref=e353]
+                  - cell "本科批" [ref=e354]
+                  - cell "第06组" [ref=e355]
+                  - cell "599" [ref=e356]
+                  - cell "——" [ref=e357]
+                - row "湖北 物理 本科批 第08组 598 618" [ref=e358]:
+                  - cell "湖北" [ref=e359]
+                  - cell "物理" [ref=e360]
+                  - cell "本科批" [ref=e361]
+                  - cell "第08组" [ref=e362]
+                  - cell "598" [ref=e363]
+                  - cell "618" [ref=e364]
+                - row "内蒙 古 物理 本科批 第005组 601 ——" [ref=e365]:
+                  - cell "内蒙 古" [ref=e366]:
+                    - text: 内蒙
+                    - text: 古
+                  - cell "物理" [ref=e367]
+                  - cell "本科批" [ref=e368]
+                  - cell "第005组" [ref=e369]
+                  - cell "601" [ref=e370]
+                  - cell "——" [ref=e371]
+                - row "广西 物理 本科批 104组 581 605" [ref=e372]:
+                  - cell "广西" [ref=e373]
+                  - cell "物理" [ref=e374]
+                  - cell "本科批" [ref=e375]
+                  - cell "104组" [ref=e376]
+                  - cell "581" [ref=e377]
+                  - cell "605" [ref=e378]
+                - row "山西 物理 本科批 第301组 559 ——" [ref=e379]:
+                  - cell "山西" [ref=e380]
+                  - cell "物理" [ref=e381]
+                  - cell "本科批" [ref=e382]
+                  - cell "第301组" [ref=e383]
+                  - cell "559" [ref=e384]
+                  - cell "——" [ref=e385]
+                - row "湖北 历史 本科批 第02组 603 ——" [ref=e386]:
+                  - cell "湖北" [ref=e387]
+                  - cell "历史" [ref=e388]
+                  - cell "本科批" [ref=e389]
+                  - cell "第02组" [ref=e390]
+                  - cell "603" [ref=e391]
+                  - cell "——" [ref=e392]
+                - row "湖南 历史 本科批 第109组 602 ——" [ref=e393]:
+                  - cell "湖南" [ref=e394]
+                  - cell "历史" [ref=e395]
+                  - cell "本科批" [ref=e396]
+                  - cell "第109组" [ref=e397]
+                  - cell "602" [ref=e398]
+                  - cell "——" [ref=e399]
+                - row "天津 —— 本科批A 05组 629 ——" [ref=e400]:
+                  - cell "天津" [ref=e401]
+                  - cell "——" [ref=e402]
+                  - cell "本科批A" [ref=e403]
+                  - cell "05组" [ref=e404]
+                  - cell "629" [ref=e405]
+                  - cell "——" [ref=e406]
+                - row "安徽 物理 本科批 004组 600 611" [ref=e407]:
+                  - cell "安徽" [ref=e408]
+                  - cell "物理" [ref=e409]
+                  - cell "本科批" [ref=e410]
+                  - cell "004组" [ref=e411]
+                  - cell "600" [ref=e412]
+                  - cell "611" [ref=e413]
+                - row "河南 物理 本科批 第107组 624 ——" [ref=e414]:
+                  - cell "河南" [ref=e415]
+                  - cell "物理" [ref=e416]
+                  - cell "本科批" [ref=e417]
+                  - cell "第107组" [ref=e418]
+                  - cell "624" [ref=e419]
+                  - cell "——" [ref=e420]
+                - row "湖南 物理 本科批 第115组 622 ——" [ref=e421]:
+                  - cell "湖南" [ref=e422]
+                  - cell "物理" [ref=e423]
+                  - cell "本科批" [ref=e424]
+                  - cell "第115组" [ref=e425]
+                  - cell "622" [ref=e426]
+                  - cell "——" [ref=e427]
+                - row "广东 历史 本科批 208组 604 ——" [ref=e428]:
+                  - cell "广东" [ref=e429]
+                  - cell "历史" [ref=e430]
+                  - cell "本科批" [ref=e431]
+                  - cell "208组" [ref=e432]
+                  - cell "604" [ref=e433]
+                  - cell "——" [ref=e434]
+                - row "广西 历史 本科批 501组(国 家专项) 586 ——" [ref=e435]:
+                  - cell "广西" [ref=e436]
+                  - cell "历史" [ref=e437]
+                  - cell "本科批" [ref=e438]
+                  - cell "501组(国 家专项)" [ref=e439]:
+                    - text: 501组(国
+                    - text: 家专项)
+                  - cell "586" [ref=e440]
+                  - cell "——" [ref=e441]
+                - row "重庆 物理 本科批 —— 579 589" [ref=e442]:
+                  - cell "重庆" [ref=e443]
+                  - cell "物理" [ref=e444]
+                  - cell "本科批" [ref=e445]
+                  - cell "——" [ref=e446]
+                  - cell "579" [ref=e447]
+                  - cell "589" [ref=e448]
+                - row "四川 物理 本科批B 专业组106 608 ——" [ref=e449]:
+                  - cell "四川" [ref=e450]
+                  - cell "物理" [ref=e451]
+                  - cell "本科批B" [ref=e452]
+                  - cell "专业组106" [ref=e453]
+                  - cell "608" [ref=e454]
+                  - cell "——" [ref=e455]
+                - row "宁夏 历史 本科批B 001专业组 541 ——" [ref=e456]:
+                  - cell "宁夏" [ref=e457]
+                  - cell "历史" [ref=e458]
+                  - cell "本科批B" [ref=e459]
+                  - cell "001专业组" [ref=e460]
+                  - cell "541" [ref=e461]
+                  - cell "——" [ref=e462]
+                - row "宁夏 物理 本科批B 5A6专业组 (国家专项) 459 ——" [ref=e463]:
+                  - cell "宁夏" [ref=e464]
+                  - cell "物理" [ref=e465]
+                  - cell "本科批B" [ref=e466]
+                  - cell "5A6专业组 (国家专项)" [ref=e467]:
+                    - text: 5A6专业组
+                    - text: (国家专项)
+                  - cell "459" [ref=e468]
+                  - cell "——" [ref=e469]
+                - row "内蒙 古 物理 本科批 第009组 613 ——" [ref=e470]:
+                  - cell "内蒙 古" [ref=e471]:
+                    - text: 内蒙
+                    - text: 古
+                  - cell "物理" [ref=e472]
+                  - cell "本科批" [ref=e473]
+                  - cell "第009组" [ref=e474]
+                  - cell "613" [ref=e475]
+                  - cell "——" [ref=e476]
+                - row "黑龙 江 历史 本科批 第002组 578 581" [ref=e477]:
+                  - cell "黑龙 江" [ref=e478]:
+                    - text: 黑龙
+                    - text: 江
+                  - cell "历史" [ref=e479]
+                  - cell "本科批" [ref=e480]
+                  - cell "第002组" [ref=e481]
+                  - cell "578" [ref=e482]
+                  - cell "581" [ref=e483]
+                - row "天津 —— 本科批A 01组 620 623" [ref=e484]:
+                  - cell "天津" [ref=e485]
+                  - cell "——" [ref=e486]
+                  - cell "本科批A" [ref=e487]
+                  - cell "01组" [ref=e488]
+                  - cell "620" [ref=e489]
+                  - cell "623" [ref=e490]
+                - row "山东 —— 一段 —— 581 578" [ref=e491]:
+                  - cell "山东" [ref=e492]
+                  - cell "——" [ref=e493]
+                  - cell "一段" [ref=e494]
+                  - cell "——" [ref=e495]
+                  - cell "581" [ref=e496]
+                  - cell "578" [ref=e497]
+                - row "河南 历史 本科批 第101组 618 ——" [ref=e498]:
+                  - cell "河南" [ref=e499]
+                  - cell "历史" [ref=e500]
+                  - cell "本科批" [ref=e501]
+                  - cell "第101组" [ref=e502]
+                  - cell "618" [ref=e503]
+                  - cell "——" [ref=e504]
+                - row "广东 物理 本科批 224组(中 外合作) 599 ——" [ref=e505]:
+                  - cell "广东" [ref=e506]
+                  - cell "物理" [ref=e507]
+                  - cell "本科批" [ref=e508]
+                  - cell "224组(中 外合作)" [ref=e509]:
+                    - text: 224组(中
+                    - text: 外合作)
+                  - cell "599" [ref=e510]
+                  - cell "——" [ref=e511]
+                - row "广西 物理 本科批 502组(国 家专项) 536 ——" [ref=e512]:
+                  - cell "广西" [ref=e513]
+                  - cell "物理" [ref=e514]
+                  - cell "本科批" [ref=e515]
+                  - cell "502组(国 家专项)" [ref=e516]:
+                    - text: 502组(国
+                    - text: 家专项)
+                  - cell "536" [ref=e517]
+                  - cell "——" [ref=e518]
+                - row "四川 历史 本科批B 专业组103 598 ——" [ref=e519]:
+                  - cell "四川" [ref=e520]
+                  - cell "历史" [ref=e521]
+                  - cell "本科批B" [ref=e522]
+                  - cell "专业组103" [ref=e523]
+                  - cell "598" [ref=e524]
+                  - cell "——" [ref=e525]
+                - row "江西 物理 本科批 第502组( 中外合作) 574 586" [ref=e526]:
+                  - cell "江西" [ref=e527]
+                  - cell "物理" [ref=e528]
+                  - cell "本科批" [ref=e529]
+                  - cell "第502组( 中外合作)" [ref=e530]:
+                    - text: 第502组(
+                    - text: 中外合作)
+                  - cell "574" [ref=e531]
+                  - cell "586" [ref=e532]
+                - row "四川 物理 本科批B 专业组107 623 ——" [ref=e533]:
+                  - cell "四川" [ref=e534]
+                  - cell "物理" [ref=e535]
+                  - cell "本科批B" [ref=e536]
+                  - cell "专业组107" [ref=e537]
+                  - cell "623" [ref=e538]
+                  - cell "——" [ref=e539]
+                - row "宁夏 物理 本科批B 505专业组 568 ——" [ref=e540]:
+                  - cell "宁夏" [ref=e541]
+                  - cell "物理" [ref=e542]
+                  - cell "本科批B" [ref=e543]
+                  - cell "505专业组" [ref=e544]
+                  - cell "568" [ref=e545]
+                  - cell "——" [ref=e546]
+                - row "黑龙 江 历史 本科批 第003组 582 604" [ref=e547]:
+                  - cell "黑龙 江" [ref=e548]:
+                    - text: 黑龙
+                    - text: 江
+                  - cell "历史" [ref=e549]
+                  - cell "本科批" [ref=e550]
+                  - cell "第003组" [ref=e551]
+                  - cell "582" [ref=e552]
+                  - cell "604" [ref=e553]
+                - row "黑龙 江 物理 本科批 第006组 574 592" [ref=e554]:
+                  - cell "黑龙 江" [ref=e555]:
+                    - text: 黑龙
+                    - text: 江
+                  - cell "物理" [ref=e556]
+                  - cell "本科批" [ref=e557]
+                  - cell "第006组" [ref=e558]
+                  - cell "574" [ref=e559]
+                  - cell "592" [ref=e560]
+                - row "上海 —— 本科批 03组 549 534" [ref=e561]:
+                  - cell "上海" [ref=e562]
+                  - cell "——" [ref=e563]
+                  - cell "本科批" [ref=e564]
+                  - cell "03组" [ref=e565]
+                  - cell "549" [ref=e566]
+                  - cell "534" [ref=e567]
+                - row "福建 历史 本科批 专业组:99 9 600 589" [ref=e568]:
+                  - cell "福建" [ref=e569]
+                  - cell "历史" [ref=e570]
+                  - cell "本科批" [ref=e571]
+                  - cell "专业组:99 9" [ref=e572]:
+                    - text: 专业组:99
+                    - text: "9"
+                  - cell "600" [ref=e573]
+                  - cell "589" [ref=e574]
+                - row "江西 历史 本科批 第161组( 国家专项) 597 599" [ref=e575]:
+                  - cell "江西" [ref=e576]
+                  - cell "历史" [ref=e577]
+                  - cell "本科批" [ref=e578]
+                  - cell "第161组( 国家专项)" [ref=e579]:
+                    - text: 第161组(
+                    - text: 国家专项)
+                  - cell "597" [ref=e580]
+                  - cell "599" [ref=e581]
+                - row "广东 历史 本科批 202组(艺 术类) 598 ——" [ref=e582]:
+                  - cell "广东" [ref=e583]
+                  - cell "历史" [ref=e584]
+                  - cell "本科批" [ref=e585]
+                  - cell "202组(艺 术类)" [ref=e586]:
+                    - text: 202组(艺
+                    - text: 术类)
+                  - cell "598" [ref=e587]
+                  - cell "——" [ref=e588]
+                - row "甘肃 物理 本科批 007组 544 593" [ref=e589]:
+                  - cell "甘肃" [ref=e590]
+                  - cell "物理" [ref=e591]
+                  - cell "本科批" [ref=e592]
+                  - cell "007组" [ref=e593]
+                  - cell "544" [ref=e594]
+                  - cell "593" [ref=e595]
+                - row "湖北 历史 本科批 第03组 597 589" [ref=e596]:
+                  - cell "湖北" [ref=e597]
+                  - cell "历史" [ref=e598]
+                  - cell "本科批" [ref=e599]
+                  - cell "第03组" [ref=e600]
+                  - cell "597" [ref=e601]
+                  - cell "589" [ref=e602]
+                - row "北京 —— 本科批 02组 607 610" [ref=e603]:
+                  - cell "北京" [ref=e604]
+                  - cell "——" [ref=e605]
+                  - cell "本科批" [ref=e606]
+                  - cell "02组" [ref=e607]
+                  - cell "607" [ref=e608]
+                  - cell "610" [ref=e609]
+                - row "湖北 历史 本科批 第04组 599 ——" [ref=e610]:
+                  - cell "湖北" [ref=e611]
+                  - cell "历史" [ref=e612]
+                  - cell "本科批" [ref=e613]
+                  - cell "第04组" [ref=e614]
+                  - cell "599" [ref=e615]
+                  - cell "——" [ref=e616]
+                - row "湖南 物理 本科批 第114组 617 623" [ref=e617]:
+                  - cell "湖南" [ref=e618]
+                  - cell "物理" [ref=e619]
+                  - cell "本科批" [ref=e620]
+                  - cell "第114组" [ref=e621]
+                  - cell "617" [ref=e622]
+                  - cell "623" [ref=e623]
+                - row "吉林 物理 本科批 第004组 558 562" [ref=e624]:
+                  - cell "吉林" [ref=e625]
+                  - cell "物理" [ref=e626]
+                  - cell "本科批" [ref=e627]
+                  - cell "第004组" [ref=e628]
+                  - cell "558" [ref=e629]
+                  - cell "562" [ref=e630]
+                - row "四川 物理 本科批B 专业组102 609 ——" [ref=e631]:
+                  - cell "四川" [ref=e632]
+                  - cell "物理" [ref=e633]
+                  - cell "本科批B" [ref=e634]
+                  - cell "专业组102" [ref=e635]
+                  - cell "609" [ref=e636]
+                  - cell "——" [ref=e637]
+                - row "安徽 历史 本科批 002组 610 606" [ref=e638]:
+                  - cell "安徽" [ref=e639]
+                  - cell "历史" [ref=e640]
+                  - cell "本科批" [ref=e641]
+                  - cell "002组" [ref=e642]
+                  - cell "610" [ref=e643]
+                  - cell "606" [ref=e644]
+                - row "广东 物理 本科批 214组 593 ——" [ref=e645]:
+                  - cell "广东" [ref=e646]
+                  - cell "物理" [ref=e647]
+                  - cell "本科批" [ref=e648]
+                  - cell "214组" [ref=e649]
+                  - cell "593" [ref=e650]
+                  - cell "——" [ref=e651]
+                - row "江苏 物理 本科批 04组 617 627" [ref=e652]:
+                  - cell "江苏" [ref=e653]
+                  - cell "物理" [ref=e654]
+                  - cell "本科批" [ref=e655]
+                  - cell "04组" [ref=e656]
+                  - cell "617" [ref=e657]
+                  - cell "627" [ref=e658]
+                - row "河南 历史 本科批 第301组( 国家专项计划 组) 602 ——" [ref=e659]:
+                  - cell "河南" [ref=e660]
+                  - cell "历史" [ref=e661]
+                  - cell "本科批" [ref=e662]
+                  - cell "第301组( 国家专项计划 组)" [ref=e663]:
+                    - text: 第301组(
+                    - text: 国家专项计划
+                    - text: 组)
+                  - cell "602" [ref=e664]
+                  - cell "——" [ref=e665]
+                - row "内蒙 古 物理 本科批 第007组 577 ——" [ref=e666]:
+                  - cell "内蒙 古" [ref=e667]:
+                    - text: 内蒙
+                    - text: 古
+                  - cell "物理" [ref=e668]
+                  - cell "本科批" [ref=e669]
+                  - cell "第007组" [ref=e670]
+                  - cell "577" [ref=e671]
+                  - cell "——" [ref=e672]
+                - row "广东 物理 本科批 216组 591 ——" [ref=e673]:
+                  - cell "广东" [ref=e674]
+                  - cell "物理" [ref=e675]
+                  - cell "本科批" [ref=e676]
+                  - cell "216组" [ref=e677]
+                  - cell "591" [ref=e678]
+                  - cell "——" [ref=e679]
+                - row "湖北 物理 本科批 第13组(国 家专项) 598 ——" [ref=e680]:
+                  - cell "湖北" [ref=e681]
+                  - cell "物理" [ref=e682]
+                  - cell "本科批" [ref=e683]
+                  - cell "第13组(国 家专项)" [ref=e684]:
+                    - text: 第13组(国
+                    - text: 家专项)
+                  - cell "598" [ref=e685]
+                  - cell "——" [ref=e686]
+                - row "天津 —— 本科批A 03组 627 608" [ref=e687]:
+                  - cell "天津" [ref=e688]
+                  - cell "——" [ref=e689]
+                  - cell "本科批A" [ref=e690]
+                  - cell "03组" [ref=e691]
+                  - cell "627" [ref=e692]
+                  - cell "608" [ref=e693]
+                - row "江苏 物理 本科批 03组 610 598" [ref=e694]:
+                  - cell "江苏" [ref=e695]
+                  - cell "物理" [ref=e696]
+                  - cell "本科批" [ref=e697]
+                  - cell "03组" [ref=e698]
+                  - cell "610" [ref=e699]
+                  - cell "598" [ref=e700]
+                - row "湖南 历史 本科批 第Y06组( 艺术专业) 582 ——" [ref=e701]:
+                  - cell "湖南" [ref=e702]
+                  - cell "历史" [ref=e703]
+                  - cell "本科批" [ref=e704]
+                  - cell "第Y06组( 艺术专业)" [ref=e705]:
+                    - text: 第Y06组(
+                    - text: 艺术专业)
+                  - cell "582" [ref=e706]
+                  - cell "——" [ref=e707]
+                - row "广东 历史 本科批 204组 603 ——" [ref=e708]:
+                  - cell "广东" [ref=e709]
+                  - cell "历史" [ref=e710]
+                  - cell "本科批" [ref=e711]
+                  - cell "204组" [ref=e712]
+                  - cell "603" [ref=e713]
+                  - cell "——" [ref=e714]
+                - row "广西 物理 本科批 103组 581 587" [ref=e715]:
+                  - cell "广西" [ref=e716]
+                  - cell "物理" [ref=e717]
+                  - cell "本科批" [ref=e718]
+                  - cell "103组" [ref=e719]
+                  - cell "581" [ref=e720]
+                  - cell "587" [ref=e721]
+                - row "四川 历史 本科批B 专业组102 612 ——" [ref=e722]:
+                  - cell "四川" [ref=e723]
+                  - cell "历史" [ref=e724]
+                  - cell "本科批B" [ref=e725]
+                  - cell "专业组102" [ref=e726]
+                  - cell "612" [ref=e727]
+                  - cell "——" [ref=e728]
+                - row "黑龙 江 历史 本科批 第004组( 国家专项) 555 ——" [ref=e729]:
+                  - cell "黑龙 江" [ref=e730]:
+                    - text: 黑龙
+                    - text: 江
+                  - cell "历史" [ref=e731]
+                  - cell "本科批" [ref=e732]
+                  - cell "第004组( 国家专项)" [ref=e733]:
+                    - text: 第004组(
+                    - text: 国家专项)
+                  - cell "555" [ref=e734]
+                  - cell "——" [ref=e735]
+                - row "黑龙 江 物理 本科批 第010组( 国家专项) 504 ——" [ref=e736]:
+                  - cell "黑龙 江" [ref=e737]:
+                    - text: 黑龙
+                    - text: 江
+                  - cell "物理" [ref=e738]
+                  - cell "本科批" [ref=e739]
+                  - cell "第010组( 国家专项)" [ref=e740]:
+                    - text: 第010组(
+                    - text: 国家专项)
+                  - cell "504" [ref=e741]
+                  - cell "——" [ref=e742]
+                - row "福建 物理 本科批 专业组:50 0 599 616" [ref=e743]:
+                  - cell "福建" [ref=e744]
+                  - cell "物理" [ref=e745]
+                  - cell "本科批" [ref=e746]
+                  - cell "专业组:50 0" [ref=e747]:
+                    - text: 专业组:50
+                    - text: "0"
+                  - cell "599" [ref=e748]
+                  - cell "616" [ref=e749]
+                - row "湖南 历史 本科批 第108组 602 ——" [ref=e750]:
+                  - cell "湖南" [ref=e751]
+                  - cell "历史" [ref=e752]
+                  - cell "本科批" [ref=e753]
+                  - cell "第108组" [ref=e754]
+                  - cell "602" [ref=e755]
+                  - cell "——" [ref=e756]
+                - row "湖南 物理 本科批 第213组( 中外合作) 583 ——" [ref=e757]:
+                  - cell "湖南" [ref=e758]
+                  - cell "物理" [ref=e759]
+                  - cell "本科批" [ref=e760]
+                  - cell "第213组( 中外合作)" [ref=e761]:
+                    - text: 第213组(
+                    - text: 中外合作)
+                  - cell "583" [ref=e762]
+                  - cell "——" [ref=e763]
+                - row "湖南 物理 本科批 第318组( 国家专项) 600 ——" [ref=e764]:
+                  - cell "湖南" [ref=e765]
+                  - cell "物理" [ref=e766]
+                  - cell "本科批" [ref=e767]
+                  - cell "第318组( 国家专项)" [ref=e768]:
+                    - text: 第318组(
+                    - text: 国家专项)
+                  - cell "600" [ref=e769]
+                  - cell "——" [ref=e770]
+                - row "广东 物理 本科批 211组 592 ——" [ref=e771]:
+                  - cell "广东" [ref=e772]
+                  - cell "物理" [ref=e773]
+                  - cell "本科批" [ref=e774]
+                  - cell "211组" [ref=e775]
+                  - cell "592" [ref=e776]
+                  - cell "——" [ref=e777]
+                - row "广西 物理 本科批 106组 607 603" [ref=e778]:
+                  - cell "广西" [ref=e779]
+                  - cell "物理" [ref=e780]
+                  - cell "本科批" [ref=e781]
+                  - cell "106组" [ref=e782]
+                  - cell "607" [ref=e783]
+                  - cell "603" [ref=e784]
+                - row "山西 历史 本科批 第001组 593 ——" [ref=e785]:
+                  - cell "山西" [ref=e786]
+                  - cell "历史" [ref=e787]
+                  - cell "本科批" [ref=e788]
+                  - cell "第001组" [ref=e789]
+                  - cell "593" [ref=e790]
+                  - cell "——" [ref=e791]
+                - row "江苏 物理 本科批 02组 598 588" [ref=e792]:
+                  - cell "江苏" [ref=e793]
+                  - cell "物理" [ref=e794]
+                  - cell "本科批" [ref=e795]
+                  - cell "02组" [ref=e796]
+                  - cell "598" [ref=e797]
+                  - cell "588" [ref=e798]
+                - row "江苏 历史 本科批 01组 599 589" [ref=e799]:
+                  - cell "江苏" [ref=e800]
+                  - cell "历史" [ref=e801]
+                  - cell "本科批" [ref=e802]
+                  - cell "01组" [ref=e803]
+                  - cell "599" [ref=e804]
+                  - cell "589" [ref=e805]
+                - row "四川 物理 本科批B 专业组104 616 ——" [ref=e806]:
+                  - cell "四川" [ref=e807]
+                  - cell "物理" [ref=e808]
+                  - cell "本科批B" [ref=e809]
+                  - cell "专业组104" [ref=e810]
+                  - cell "616" [ref=e811]
+                  - cell "——" [ref=e812]
+                - row "福建 历史 本科批 专业组:70 0 600 ——" [ref=e813]:
+                  - cell "福建" [ref=e814]
+                  - cell "历史" [ref=e815]
+                  - cell "本科批" [ref=e816]
+                  - cell "专业组:70 0" [ref=e817]:
+                    - text: 专业组:70
+                    - text: "0"
+                  - cell "600" [ref=e818]
+                  - cell "——" [ref=e819]
+                - row "江西 物理 本科批 第504组 595 618" [ref=e820]:
+                  - cell "江西" [ref=e821]
+                  - cell "物理" [ref=e822]
+                  - cell "本科批" [ref=e823]
+                  - cell "第504组" [ref=e824]
+                  - cell "595" [ref=e825]
+                  - cell "618" [ref=e826]
+                - row "甘肃 历史 本科批 002组 579 581" [ref=e827]:
+                  - cell "甘肃" [ref=e828]
+                  - cell "历史" [ref=e829]
+                  - cell "本科批" [ref=e830]
+                  - cell "002组" [ref=e831]
+                  - cell "579" [ref=e832]
+                  - cell "581" [ref=e833]
+                - row "宁夏 历史 本科批B 0A2专业组 (国家专项) 464 ——" [ref=e834]:
+                  - cell "宁夏" [ref=e835]
+                  - cell "历史" [ref=e836]
+                  - cell "本科批B" [ref=e837]
+                  - cell "0A2专业组 (国家专项)" [ref=e838]:
+                    - text: 0A2专业组
+                    - text: (国家专项)
+                  - cell "464" [ref=e839]
+                  - cell "——" [ref=e840]
+                - row "新疆 理科 本科一批 —— 524 396" [ref=e841]:
+                  - cell "新疆" [ref=e842]
+                  - cell "理科" [ref=e843]
+                  - cell "本科一批" [ref=e844]
+                  - cell "——" [ref=e845]
+                  - cell "524" [ref=e846]
+                  - cell "396" [ref=e847]
+                - row "吉林 历史 本科批 第003组 588 575" [ref=e848]:
+                  - cell "吉林" [ref=e849]
+                  - cell "历史" [ref=e850]
+                  - cell "本科批" [ref=e851]
+                  - cell "第003组" [ref=e852]
+                  - cell "588" [ref=e853]
+                  - cell "575" [ref=e854]
+                - row "安徽 物理 本科批 007组 616 627" [ref=e855]:
+                  - cell "安徽" [ref=e856]
+                  - cell "物理" [ref=e857]
+                  - cell "本科批" [ref=e858]
+                  - cell "007组" [ref=e859]
+                  - cell "616" [ref=e860]
+                  - cell "627" [ref=e861]
+                - row "宁夏 物理 本科批B 503专业组 516 ——" [ref=e862]:
+                  - cell "宁夏" [ref=e863]
+                  - cell "物理" [ref=e864]
+                  - cell "本科批B" [ref=e865]
+                  - cell "503专业组" [ref=e866]
+                  - cell "516" [ref=e867]
+                  - cell "——" [ref=e868]
+                - row "辽宁 物理 本科批 —— 589 597" [ref=e869]:
+                  - cell "辽宁" [ref=e870]
+                  - cell "物理" [ref=e871]
+                  - cell "本科批" [ref=e872]
+                  - cell "——" [ref=e873]
+                  - cell "589" [ref=e874]
+                  - cell "597" [ref=e875]
+                - row "江西 物理 本科批 第503组 595 607" [ref=e876]:
+                  - cell "江西" [ref=e877]
+                  - cell "物理" [ref=e878]
+                  - cell "本科批" [ref=e879]
+                  - cell "第503组" [ref=e880]
+                  - cell "595" [ref=e881]
+                  - cell "607" [ref=e882]
+                - row "广西 物理 本科批 107组 596 ——" [ref=e883]:
+                  - cell "广西" [ref=e884]
+                  - cell "物理" [ref=e885]
+                  - cell "本科批" [ref=e886]
+                  - cell "107组" [ref=e887]
+                  - cell "596" [ref=e888]
+                  - cell "——" [ref=e889]
+                - row "河南 物理 本科批 第105组 620 ——" [ref=e890]:
+                  - cell "河南" [ref=e891]
+                  - cell "物理" [ref=e892]
+                  - cell "本科批" [ref=e893]
+                  - cell "第105组" [ref=e894]
+                  - cell "620" [ref=e895]
+                  - cell "——" [ref=e896]
+                - row "广东 历史 本科批 203组 603 ——" [ref=e897]:
+                  - cell "广东" [ref=e898]
+                  - cell "历史" [ref=e899]
+                  - cell "本科批" [ref=e900]
+                  - cell "203组" [ref=e901]
+                  - cell "603" [ref=e902]
+                  - cell "——" [ref=e903]
+                - row "重庆 历史 本科批 —— 573 576" [ref=e904]:
+                  - cell "重庆" [ref=e905]
+                  - cell "历史" [ref=e906]
+                  - cell "本科批" [ref=e907]
+                  - cell "——" [ref=e908]
+                  - cell "573" [ref=e909]
+                  - cell "576" [ref=e910]
+                - row "天津 —— 本科批A 02组 626 614" [ref=e911]:
+                  - cell "天津" [ref=e912]
+                  - cell "——" [ref=e913]
+                  - cell "本科批A" [ref=e914]
+                  - cell "02组" [ref=e915]
+                  - cell "626" [ref=e916]
+                  - cell "614" [ref=e917]
+                - row "天津 —— 本科批A 04组 622 ——" [ref=e918]:
+                  - cell "天津" [ref=e919]
+                  - cell "——" [ref=e920]
+                  - cell "本科批A" [ref=e921]
+                  - cell "04组" [ref=e922]
+                  - cell "622" [ref=e923]
+                  - cell "——" [ref=e924]
+                - row "内蒙 古 物理 本科批 第008组 588 ——" [ref=e925]:
+                  - cell "内蒙 古" [ref=e926]:
+                    - text: 内蒙
+                    - text: 古
+                  - cell "物理" [ref=e927]
+                  - cell "本科批" [ref=e928]
+                  - cell "第008组" [ref=e929]
+                  - cell "588" [ref=e930]
+                  - cell "——" [ref=e931]
+                - row "湖北 历史 本科批 第05组(国 家专项) 595 ——" [ref=e932]:
+                  - cell "湖北" [ref=e933]
+                  - cell "历史" [ref=e934]
+                  - cell "本科批" [ref=e935]
+                  - cell "第05组(国 家专项)" [ref=e936]:
+                    - text: 第05组(国
+                    - text: 家专项)
+                  - cell "595" [ref=e937]
+                  - cell "——" [ref=e938]
+                - row "广东 物理 本科批 212组 595 ——" [ref=e939]:
+                  - cell "广东" [ref=e940]
+                  - cell "物理" [ref=e941]
+                  - cell "本科批" [ref=e942]
+                  - cell "212组" [ref=e943]
+                  - cell "595" [ref=e944]
+                  - cell "——" [ref=e945]
+                - row "广东 物理 本科批 223组(中 外合作) 594 ——" [ref=e946]:
+                  - cell "广东" [ref=e947]
+                  - cell "物理" [ref=e948]
+                  - cell "本科批" [ref=e949]
+                  - cell "223组(中 外合作)" [ref=e950]:
+                    - text: 223组(中
+                    - text: 外合作)
+                  - cell "594" [ref=e951]
+                  - cell "——" [ref=e952]
+                - row "吉林 物理 本科批 第006组 591 568" [ref=e953]:
+                  - cell "吉林" [ref=e954]
+                  - cell "物理" [ref=e955]
+                  - cell "本科批" [ref=e956]
+                  - cell "第006组" [ref=e957]
+                  - cell "591" [ref=e958]
+                  - cell "568" [ref=e959]
+                - row "湖南 物理 本科批 第317组( 国家专项) 595 597" [ref=e960]:
+                  - cell "湖南" [ref=e961]
+                  - cell "物理" [ref=e962]
+                  - cell "本科批" [ref=e963]
+                  - cell "第317组( 国家专项)" [ref=e964]:
+                    - text: 第317组(
+                    - text: 国家专项)
+                  - cell "595" [ref=e965]
+                  - cell "597" [ref=e966]
+                - row "广东 物理 本科批 213组 593 ——" [ref=e967]:
+                  - cell "广东" [ref=e968]
+                  - cell "物理" [ref=e969]
+                  - cell "本科批" [ref=e970]
+                  - cell "213组" [ref=e971]
+                  - cell "593" [ref=e972]
+                  - cell "——" [ref=e973]
+                - row "内蒙 古 历史 本科批 第003组 608 ——" [ref=e974]:
+                  - cell "内蒙 古" [ref=e975]:
+                    - text: 内蒙
+                    - text: 古
+                  - cell "历史" [ref=e976]
+                  - cell "本科批" [ref=e977]
+                  - cell "第003组" [ref=e978]
+                  - cell "608" [ref=e979]
+                  - cell "——" [ref=e980]
+                - row "辽宁 历史 本科批 —— 582 579" [ref=e981]:
+                  - cell "辽宁" [ref=e982]
+                  - cell "历史" [ref=e983]
+                  - cell "本科批" [ref=e984]
+                  - cell "——" [ref=e985]
+                  - cell "582" [ref=e986]
+                  - cell "579" [ref=e987]
+                - row "广东 历史 本科批 209组 613 ——" [ref=e988]:
+                  - cell "广东" [ref=e989]
+                  - cell "历史" [ref=e990]
+                  - cell "本科批" [ref=e991]
+                  - cell "209组" [ref=e992]
+                  - cell "613" [ref=e993]
+                  - cell "——" [ref=e994]
+                - row "广西 历史 本科批 102组 588 588" [ref=e995]:
+                  - cell "广西" [ref=e996]
+                  - cell "历史" [ref=e997]
+                  - cell "本科批" [ref=e998]
+                  - cell "102组" [ref=e999]
+                  - cell "588" [ref=e1000]
+                  - cell "588" [ref=e1001]
+                - row "山西 物理 本科批 第309组 577 ——" [ref=e1002]:
+                  - cell "山西" [ref=e1003]
+                  - cell "物理" [ref=e1004]
+                  - cell "本科批" [ref=e1005]
+                  - cell "第309组" [ref=e1006]
+                  - cell "577" [ref=e1007]
+                  - cell "——" [ref=e1008]
+                - row "内蒙 古 历史 本科批 第004组 603 ——" [ref=e1009]:
+                  - cell "内蒙 古" [ref=e1010]:
+                    - text: 内蒙
+                    - text: 古
+                  - cell "历史" [ref=e1011]
+                  - cell "本科批" [ref=e1012]
+                  - cell "第004组" [ref=e1013]
+                  - cell "603" [ref=e1014]
+                  - cell "——" [ref=e1015]
+                - row "山西 历史 本科批 第004组( 国家专项) 575 ——" [ref=e1016]:
+                  - cell "山西" [ref=e1017]
+                  - cell "历史" [ref=e1018]
+                  - cell "本科批" [ref=e1019]
+                  - cell "第004组( 国家专项)" [ref=e1020]:
+                    - text: 第004组(
+                    - text: 国家专项)
+                  - cell "575" [ref=e1021]
+                  - cell "——" [ref=e1022]
+                - row "广东 物理 本科批 215组 593 ——" [ref=e1023]:
+                  - cell "广东" [ref=e1024]
+                  - cell "物理" [ref=e1025]
+                  - cell "本科批" [ref=e1026]
+                  - cell "215组" [ref=e1027]
+                  - cell "593" [ref=e1028]
+                  - cell "——" [ref=e1029]
+                - row "宁夏 物理 本科批B 002专业组 516 ——" [ref=e1030]:
+                  - cell "宁夏" [ref=e1031]
+                  - cell "物理" [ref=e1032]
+                  - cell "本科批B" [ref=e1033]
+                  - cell "002专业组" [ref=e1034]
+                  - cell "516" [ref=e1035]
+                  - cell "——" [ref=e1036]
+                - row "江西 物理 本科批 第562组( 国家专项) 597 ——" [ref=e1037]:
+                  - cell "江西" [ref=e1038]
+                  - cell "物理" [ref=e1039]
+                  - cell "本科批" [ref=e1040]
+                  - cell "第562组( 国家专项)" [ref=e1041]:
+                    - text: 第562组(
+                    - text: 国家专项)
+                  - cell "597" [ref=e1042]
+                  - cell "——" [ref=e1043]
+                - row "河南 物理 本科批 第106组 636 ——" [ref=e1044]:
+                  - cell "河南" [ref=e1045]
+                  - cell "物理" [ref=e1046]
+                  - cell "本科批" [ref=e1047]
+                  - cell "第106组" [ref=e1048]
+                  - cell "636" [ref=e1049]
+                  - cell "——" [ref=e1050]
+                - row "甘肃 物理 本科批 009组(国 家专项) 558 565" [ref=e1051]:
+                  - cell "甘肃" [ref=e1052]
+                  - cell "物理" [ref=e1053]
+                  - cell "本科批" [ref=e1054]
+                  - cell "009组(国 家专项)" [ref=e1055]:
+                    - text: 009组(国
+                    - text: 家专项)
+                  - cell "558" [ref=e1056]
+                  - cell "565" [ref=e1057]
+                - row "山西 物理 本科批 第306组 599 ——" [ref=e1058]:
+                  - cell "山西" [ref=e1059]
+                  - cell "物理" [ref=e1060]
+                  - cell "本科批" [ref=e1061]
+                  - cell "第306组" [ref=e1062]
+                  - cell "599" [ref=e1063]
+                  - cell "——" [ref=e1064]
+                - row "湖南 历史 本科批 第316组( 国家专项) 601 ——" [ref=e1065]:
+                  - cell "湖南" [ref=e1066]
+                  - cell "历史" [ref=e1067]
+                  - cell "本科批" [ref=e1068]
+                  - cell "第316组( 国家专项)" [ref=e1069]:
+                    - text: 第316组(
+                    - text: 国家专项)
+                  - cell "601" [ref=e1070]
+                  - cell "——" [ref=e1071]
+                - row "广东 历史 本科批 207组 604 ——" [ref=e1072]:
+                  - cell "广东" [ref=e1073]
+                  - cell "历史" [ref=e1074]
+                  - cell "本科批" [ref=e1075]
+                  - cell "207组" [ref=e1076]
+                  - cell "604" [ref=e1077]
+                  - cell "——" [ref=e1078]
+                - row "广东 物理 本科批 210组 597 ——" [ref=e1079]:
+                  - cell "广东" [ref=e1080]
+                  - cell "物理" [ref=e1081]
+                  - cell "本科批" [ref=e1082]
+                  - cell "210组" [ref=e1083]
+                  - cell "597" [ref=e1084]
+                  - cell "——" [ref=e1085]
+                - row "山西 物理 本科批 第303组 587 ——" [ref=e1086]:
+                  - cell "山西" [ref=e1087]
+                  - cell "物理" [ref=e1088]
+                  - cell "本科批" [ref=e1089]
+                  - cell "第303组" [ref=e1090]
+                  - cell "587" [ref=e1091]
+                  - cell "——" [ref=e1092]
+                - row "安徽 物理 本科批 006组 624 ——" [ref=e1093]:
+                  - cell "安徽" [ref=e1094]
+                  - cell "物理" [ref=e1095]
+                  - cell "本科批" [ref=e1096]
+                  - cell "006组" [ref=e1097]
+                  - cell "624" [ref=e1098]
+                  - cell "——" [ref=e1099]
+                - row "广东 历史 本科批 206组 605 ——" [ref=e1100]:
+                  - cell "广东" [ref=e1101]
+                  - cell "历史" [ref=e1102]
+                  - cell "本科批" [ref=e1103]
+                  - cell "206组" [ref=e1104]
+                  - cell "605" [ref=e1105]
+                  - cell "——" [ref=e1106]
+                - row "河北 物理 本科批 —— 595 580" [ref=e1107]:
+                  - cell "河北" [ref=e1108]
+                  - cell "物理" [ref=e1109]
+                  - cell "本科批" [ref=e1110]
+                  - cell "——" [ref=e1111]
+                  - cell "595" [ref=e1112]
+                  - cell "580" [ref=e1113]
+                - row "黑龙 江 物理 本科批 第007组 577 614" [ref=e1114]:
+                  - cell "黑龙 江" [ref=e1115]:
+                    - text: 黑龙
+                    - text: 江
+                  - cell "物理" [ref=e1116]
+                  - cell "本科批" [ref=e1117]
+                  - cell "第007组" [ref=e1118]
+                  - cell "577" [ref=e1119]
+                  - cell "614" [ref=e1120]
+                - row "河南 物理 本科批 第202组( 中外合作办学 组) 613 ——" [ref=e1121]:
+                  - cell "河南" [ref=e1122]
+                  - cell "物理" [ref=e1123]
+                  - cell "本科批" [ref=e1124]
+                  - cell "第202组( 中外合作办学 组)" [ref=e1125]:
+                    - text: 第202组(
+                    - text: 中外合作办学
+                    - text: 组)
+                  - cell "613" [ref=e1126]
+                  - cell "——" [ref=e1127]
+                - row "河南 物理 本科批 第304组( 国家专项计划 组) 625 ——" [ref=e1128]:
+                  - cell "河南" [ref=e1129]
+                  - cell "物理" [ref=e1130]
+                  - cell "本科批" [ref=e1131]
+                  - cell "第304组( 国家专项计划 组)" [ref=e1132]:
+                    - text: 第304组(
+                    - text: 国家专项计划
+                    - text: 组)
+                  - cell "625" [ref=e1133]
+                  - cell "——" [ref=e1134]
+                - row "北京 —— 本科批 01组 614 605" [ref=e1135]:
+                  - cell "北京" [ref=e1136]
+                  - cell "——" [ref=e1137]
+                  - cell "本科批" [ref=e1138]
+                  - cell "01组" [ref=e1139]
+                  - cell "614" [ref=e1140]
+                  - cell "605" [ref=e1141]
+                - row "浙江 —— 一段 —— 627 636" [ref=e1142]:
+                  - cell "浙江" [ref=e1143]
+                  - cell "——" [ref=e1144]
+                  - cell "一段" [ref=e1145]
+                  - cell "——" [ref=e1146]
+                  - cell "627" [ref=e1147]
+                  - cell "636" [ref=e1148]
+                - row "湖北 历史 本科批 第01组 601 590" [ref=e1149]:
+                  - cell "湖北" [ref=e1150]
+                  - cell "历史" [ref=e1151]
+                  - cell "本科批" [ref=e1152]
+                  - cell "第01组" [ref=e1153]
+                  - cell "601" [ref=e1154]
+                  - cell "590" [ref=e1155]
+                - row "内蒙 古 物理 本科批 第006组 591 ——" [ref=e1156]:
+                  - cell "内蒙 古" [ref=e1157]:
+                    - text: 内蒙
+                    - text: 古
+                  - cell "物理" [ref=e1158]
+                  - cell "本科批" [ref=e1159]
+                  - cell "第006组" [ref=e1160]
+                  - cell "591" [ref=e1161]
+                  - cell "——" [ref=e1162]
+                - row "河南 物理 本科批 第108组 638 ——" [ref=e1163]:
+                  - cell "河南" [ref=e1164]
+                  - cell "物理" [ref=e1165]
+                  - cell "本科批" [ref=e1166]
+                  - cell "第108组" [ref=e1167]
+                  - cell "638" [ref=e1168]
+                  - cell "——" [ref=e1169]
+                - row "湖北 物理 本科批 第09组 610 ——" [ref=e1170]:
+                  - cell "湖北" [ref=e1171]
+                  - cell "物理" [ref=e1172]
+                  - cell "本科批" [ref=e1173]
+                  - cell "第09组" [ref=e1174]
+                  - cell "610" [ref=e1175]
+                  - cell "——" [ref=e1176]
+                - row "广东 物理 本科批 222组 613 590" [ref=e1177]:
+                  - cell "广东" [ref=e1178]
+                  - cell "物理" [ref=e1179]
+                  - cell "本科批" [ref=e1180]
+                  - cell "222组" [ref=e1181]
+                  - cell "613" [ref=e1182]
+                  - cell "590" [ref=e1183]
+                - row "甘肃 物理 本科批 008组 575 603" [ref=e1184]:
+                  - cell "甘肃" [ref=e1185]
+                  - cell "物理" [ref=e1186]
+                  - cell "本科批" [ref=e1187]
+                  - cell "008组" [ref=e1188]
+                  - cell "575" [ref=e1189]
+                  - cell "603" [ref=e1190]
+                - row "吉林 物理 本科批 第008组 603 ——" [ref=e1191]:
+                  - cell "吉林" [ref=e1192]
+                  - cell "物理" [ref=e1193]
+                  - cell "本科批" [ref=e1194]
+                  - cell "第008组" [ref=e1195]
+                  - cell "603" [ref=e1196]
+                  - cell "——" [ref=e1197]
+                - row "安徽 物理 本科批 009组(中 外合作) 607 607" [ref=e1198]:
+                  - cell "安徽" [ref=e1199]
+                  - cell "物理" [ref=e1200]
+                  - cell "本科批" [ref=e1201]
+                  - cell "009组(中 外合作)" [ref=e1202]:
+                    - text: 009组(中
+                    - text: 外合作)
+                  - cell "607" [ref=e1203]
+                  - cell "607" [ref=e1204]
+                - row "四川 物理 本科批B 专业组109 (中外合作) 600 ——" [ref=e1205]:
+                  - cell "四川" [ref=e1206]
+                  - cell "物理" [ref=e1207]
+                  - cell "本科批B" [ref=e1208]
+                  - cell "专业组109 (中外合作)" [ref=e1209]:
+                    - text: 专业组109
+                    - text: (中外合作)
+                  - cell "600" [ref=e1210]
+                  - cell "——" [ref=e1211]
+                - row "安徽 物理 本科批 005组(中 外合作) 598 ——" [ref=e1212]:
+                  - cell "安徽" [ref=e1213]
+                  - cell "物理" [ref=e1214]
+                  - cell "本科批" [ref=e1215]
+                  - cell "005组(中 外合作)" [ref=e1216]:
+                    - text: 005组(中
+                    - text: 外合作)
+                  - cell "598" [ref=e1217]
+                  - cell "——" [ref=e1218]
+                - row "河南 历史 本科批 第103组 619 ——" [ref=e1219]:
+                  - cell "河南" [ref=e1220]
+                  - cell "历史" [ref=e1221]
+                  - cell "本科批" [ref=e1222]
+                  - cell "第103组" [ref=e1223]
+                  - cell "619" [ref=e1224]
+                  - cell "——" [ref=e1225]
+                - row "河南 历史 本科批 第102组 617 ——" [ref=e1226]:
+                  - cell "河南" [ref=e1227]
+                  - cell "历史" [ref=e1228]
+                  - cell "本科批" [ref=e1229]
+                  - cell "第102组" [ref=e1230]
+                  - cell "617" [ref=e1231]
+                  - cell "——" [ref=e1232]
+                - row "河南 历史 本科批 第302组( 国家专项计划 组) 610 ——" [ref=e1233]:
+                  - cell "河南" [ref=e1234]
+                  - cell "历史" [ref=e1235]
+                  - cell "本科批" [ref=e1236]
+                  - cell "第302组( 国家专项计划 组)" [ref=e1237]:
+                    - text: 第302组(
+                    - text: 国家专项计划
+                    - text: 组)
+                  - cell "610" [ref=e1238]
+                  - cell "——" [ref=e1239]
+                - row "湖北 物理 本科批 第11组(中 外合作) 592 ——" [ref=e1240]:
+                  - cell "湖北" [ref=e1241]
+                  - cell "物理" [ref=e1242]
+                  - cell "本科批" [ref=e1243]
+                  - cell "第11组(中 外合作)" [ref=e1244]:
+                    - text: 第11组(中
+                    - text: 外合作)
+                  - cell "592" [ref=e1245]
+                  - cell "——" [ref=e1246]
+                - row "黑龙 江 物理 本科批 第009组 595 ——" [ref=e1247]:
+                  - cell "黑龙 江" [ref=e1248]:
+                    - text: 黑龙
+                    - text: 江
+                  - cell "物理" [ref=e1249]
+                  - cell "本科批" [ref=e1250]
+                  - cell "第009组" [ref=e1251]
+                  - cell "595" [ref=e1252]
+                  - cell "——" [ref=e1253]
+                - row "广东 物理 本科批 220组 595 595" [ref=e1254]:
+                  - cell "广东" [ref=e1255]
+                  - cell "物理" [ref=e1256]
+                  - cell "本科批" [ref=e1257]
+                  - cell "220组" [ref=e1258]
+                  - cell "595" [ref=e1259]
+                  - cell "595" [ref=e1260]
+                - row "海南 —— 本科批 专业组03 682 681" [ref=e1261]:
+                  - cell "海南" [ref=e1262]
+                  - cell "——" [ref=e1263]
+                  - cell "本科批" [ref=e1264]
+                  - cell "专业组03" [ref=e1265]
+                  - cell "682" [ref=e1266]
+                  - cell "681" [ref=e1267]
+                - row "四川 物理 本科批B 专业组101 599 ——" [ref=e1268]:
+                  - cell "四川" [ref=e1269]
+                  - cell "物理" [ref=e1270]
+                  - cell "本科批B" [ref=e1271]
+                  - cell "专业组101" [ref=e1272]
+                  - cell "599" [ref=e1273]
+                  - cell "——" [ref=e1274]
+                - row "江苏 物理 本科批 05组 623 ——" [ref=e1275]:
+                  - cell "江苏" [ref=e1276]
+                  - cell "物理" [ref=e1277]
+                  - cell "本科批" [ref=e1278]
+                  - cell "05组" [ref=e1279]
+                  - cell "623" [ref=e1280]
+                  - cell "——" [ref=e1281]
+                - row "甘肃 历史 本科批 003组 564 566" [ref=e1282]:
+                  - cell "甘肃" [ref=e1283]
+                  - cell "历史" [ref=e1284]
+                  - cell "本科批" [ref=e1285]
+                  - cell "003组" [ref=e1286]
+                  - cell "564" [ref=e1287]
+                  - cell "566" [ref=e1288]
+                - row "宁夏 物理 本科批B 504专业组 544 ——" [ref=e1289]:
+                  - cell "宁夏" [ref=e1290]
+                  - cell "物理" [ref=e1291]
+                  - cell "本科批B" [ref=e1292]
+                  - cell "504专业组" [ref=e1293]
+                  - cell "544" [ref=e1294]
+                  - cell "——" [ref=e1295]
+                - row "内蒙 古 物理 本科批 第010组 618 ——" [ref=e1296]:
+                  - cell "内蒙 古" [ref=e1297]:
+                    - text: 内蒙
+                    - text: 古
+                  - cell "物理" [ref=e1298]
+                  - cell "本科批" [ref=e1299]
+                  - cell "第010组" [ref=e1300]
+                  - cell "618" [ref=e1301]
+                  - cell "——" [ref=e1302]
+                - row "江西 物理 本科批 第501组 595 598" [ref=e1303]:
+                  - cell "江西" [ref=e1304]
+                  - cell "物理" [ref=e1305]
+                  - cell "本科批" [ref=e1306]
+                  - cell "第501组" [ref=e1307]
+                  - cell "595" [ref=e1308]
+                  - cell "598" [ref=e1309]
+                - row "广东 物理 本科批 218组 603 ——" [ref=e1310]:
+                  - cell "广东" [ref=e1311]
+                  - cell "物理" [ref=e1312]
+                  - cell "本科批" [ref=e1313]
+                  - cell "218组" [ref=e1314]
+                  - cell "603" [ref=e1315]
+                  - cell "——" [ref=e1316]
+                - row "海南 —— 本科批 专业组04 665 677" [ref=e1317]:
+                  - cell "海南" [ref=e1318]
+                  - cell "——" [ref=e1319]
+                  - cell "本科批" [ref=e1320]
+                  - cell "专业组04" [ref=e1321]
+                  - cell "665" [ref=e1322]
+                  - cell "677" [ref=e1323]
+                - row "上海 —— 本科批 04组 558 ——" [ref=e1324]:
+                  - cell "上海" [ref=e1325]
+                  - cell "——" [ref=e1326]
+                  - cell "本科批" [ref=e1327]
+                  - cell "04组" [ref=e1328]
+                  - cell "558" [ref=e1329]
+                  - cell "——" [ref=e1330]
+                - row "河南 物理 本科批 第303组( 国家专项计划 组) 607 ——" [ref=e1331]:
+                  - cell "河南" [ref=e1332]
+                  - cell "物理" [ref=e1333]
+                  - cell "本科批" [ref=e1334]
+                  - cell "第303组( 国家专项计划 组)" [ref=e1335]:
+                    - text: 第303组(
+                    - text: 国家专项计划
+                    - text: 组)
+                  - cell "607" [ref=e1336]
+                  - cell "——" [ref=e1337]
+                - row "安徽 物理 本科批 003组 597 596" [ref=e1338]:
+                  - cell "安徽" [ref=e1339]
+                  - cell "物理" [ref=e1340]
+                  - cell "本科批" [ref=e1341]
+                  - cell "003组" [ref=e1342]
+                  - cell "597" [ref=e1343]
+                  - cell "596" [ref=e1344]
+                - row "广东 历史 本科批 201组 609 582" [ref=e1345]:
+                  - cell "广东" [ref=e1346]
+                  - cell "历史" [ref=e1347]
+                  - cell "本科批" [ref=e1348]
+                  - cell "201组" [ref=e1349]
+                  - cell "609" [ref=e1350]
+                  - cell "582" [ref=e1351]
+                - row "湖北 物理 本科批 第10组(中 外合作) 588 ——" [ref=e1352]:
+                  - cell "湖北" [ref=e1353]
+                  - cell "物理" [ref=e1354]
+                  - cell "本科批" [ref=e1355]
+                  - cell "第10组(中 外合作)" [ref=e1356]:
+                    - text: 第10组(中
+                    - text: 外合作)
+                  - cell "588" [ref=e1357]
+                  - cell "——" [ref=e1358]
+                - row "广西 历史 本科批 101组 604 600" [ref=e1359]:
+                  - cell "广西" [ref=e1360]
+                  - cell "历史" [ref=e1361]
+                  - cell "本科批" [ref=e1362]
+                  - cell "101组" [ref=e1363]
+                  - cell "604" [ref=e1364]
+                  - cell "600" [ref=e1365]
+                - row "吉林 物理 本科批 第009组( 国家专项) 501 ——" [ref=e1366]:
+                  - cell "吉林" [ref=e1367]
+                  - cell "物理" [ref=e1368]
+                  - cell "本科批" [ref=e1369]
+                  - cell "第009组( 国家专项)" [ref=e1370]:
+                    - text: 第009组(
+                    - text: 国家专项)
+                  - cell "501" [ref=e1371]
+                  - cell "——" [ref=e1372]
+                - row "甘肃 物理 本科批 005组 550 555" [ref=e1373]:
+                  - cell "甘肃" [ref=e1374]
+                  - cell "物理" [ref=e1375]
+                  - cell "本科批" [ref=e1376]
+                  - cell "005组" [ref=e1377]
+                  - cell "550" [ref=e1378]
+                  - cell "555" [ref=e1379]
+                - row "安徽 历史 本科批 003组 606 604" [ref=e1380]:
+                  - cell "安徽" [ref=e1381]
+                  - cell "历史" [ref=e1382]
+                  - cell "本科批" [ref=e1383]
+                  - cell "003组" [ref=e1384]
+                  - cell "606" [ref=e1385]
+                  - cell "604" [ref=e1386]
+                - row "四川 历史 本科批B 专业组101 609 ——" [ref=e1387]:
+                  - cell "四川" [ref=e1388]
+                  - cell "历史" [ref=e1389]
+                  - cell "本科批B" [ref=e1390]
+                  - cell "专业组101" [ref=e1391]
+                  - cell "609" [ref=e1392]
+                  - cell "——" [ref=e1393]
+                - row "河北 历史 本科批 —— 609 605" [ref=e1394]:
+                  - cell "河北" [ref=e1395]
+                  - cell "历史" [ref=e1396]
+                  - cell "本科批" [ref=e1397]
+                  - cell "——" [ref=e1398]
+                  - cell "609" [ref=e1399]
+                  - cell "605" [ref=e1400]
+                - row "吉林 物理 本科批 第007组 595 616" [ref=e1401]:
+                  - cell "吉林" [ref=e1402]
+                  - cell "物理" [ref=e1403]
+                  - cell "本科批" [ref=e1404]
+                  - cell "第007组" [ref=e1405]
+                  - cell "595" [ref=e1406]
+                  - cell "616" [ref=e1407]
+                - row "湖北 物理 本科批 第12组(国 家专项) 584 ——" [ref=e1408]:
+                  - cell "湖北" [ref=e1409]
+                  - cell "物理" [ref=e1410]
+                  - cell "本科批" [ref=e1411]
+                  - cell "第12组(国 家专项)" [ref=e1412]:
+                    - text: 第12组(国
+                    - text: 家专项)
+                  - cell "584" [ref=e1413]
+                  - cell "——" [ref=e1414]
+                - row "贵州 历史 本科批 —— 594 584" [ref=e1415]:
+                  - cell "贵州" [ref=e1416]
+                  - cell "历史" [ref=e1417]
+                  - cell "本科批" [ref=e1418]
+                  - cell "——" [ref=e1419]
+                  - cell "594" [ref=e1420]
+                  - cell "584" [ref=e1421]
+                - row "福建 物理 本科批 专业组:99 9 596 609" [ref=e1422]:
+                  - cell "福建" [ref=e1423]
+                  - cell "物理" [ref=e1424]
+                  - cell "本科批" [ref=e1425]
+                  - cell "专业组:99 9" [ref=e1426]:
+                    - text: 专业组:99
+                    - text: "9"
+                  - cell "596" [ref=e1427]
+                  - cell "609" [ref=e1428]
+                - row "江西 物理 本科批 第561组( 国家专项) 590 601" [ref=e1429]:
+                  - cell "江西" [ref=e1430]
+                  - cell "物理" [ref=e1431]
+                  - cell "本科批" [ref=e1432]
+                  - cell "第561组( 国家专项)" [ref=e1433]:
+                    - text: 第561组(
+                    - text: 国家专项)
+                  - cell "590" [ref=e1434]
+                  - cell "601" [ref=e1435]
+                - row "湖北 物理 本科批 第07组 605 610" [ref=e1436]:
+                  - cell "湖北" [ref=e1437]
+                  - cell "物理" [ref=e1438]
+                  - cell "本科批" [ref=e1439]
+                  - cell "第07组" [ref=e1440]
+                  - cell "605" [ref=e1441]
+                  - cell "610" [ref=e1442]
+                - row "广东 物理 本科批 219组 599 ——" [ref=e1443]:
+                  - cell "广东" [ref=e1444]
+                  - cell "物理" [ref=e1445]
+                  - cell "本科批" [ref=e1446]
+                  - cell "219组" [ref=e1447]
+                  - cell "599" [ref=e1448]
+                  - cell "——" [ref=e1449]
+            - heading "三、考上暨南大学意味着什么" [level=3] [ref=e1450]
+            - paragraph [ref=e1451]: 考上暨南大学意味着：你将在国内拔尖的大学中接受教育！
+            - paragraph [ref=e1452]: 暨南大学是我国知名的211、卓越医生、卓越法律、中央部属、保研资格、卓越医生(中医)、双万计划、国家重点、双一流大学，是位于广东广州的本科公办大学。
+            - paragraph [ref=e1453]: 暨南大学有保研资格、有硕士点、有博士点，在世界大学中排名第345名（U.S.News世界大学排名），在中国本科大学中排名第40名（金平果本科院校竞争力排名），在大学生本科竞赛排行榜中位列第141名。
+            - paragraph [ref=e1454]: 再看就业情况，暨南大学2025年超超22位毕业生被中国烟草录用，毕业生在暨南大学就读的专业包含汉语言文学、会计、产业经济学、新闻与传播、物联网工程、工业工程与管理、法学、计算机科学与技术、网络空间安全、传播学、法律（非法学）、信息安全、新闻学、软件工程、工商管理、人力资源管理、计算数学、通信与信息系统、会计学、资产评估、自动化、法律（法学）。暨南大学2025年超8位毕业生被国家电网录用。2024年超93位毕业生以选调生的方式进入体制内。这些都意味着，考上暨南大学后：你不仅能学有所成，而且还能找到好工作！
+        - generic [ref=e1458]:
+          - img "输入分数，看能上的大学" [ref=e1583]
+          - generic [ref=e1459]:
+            - generic [ref=e1460]:
+              - generic [ref=e1463] [cursor=pointer]: 四川
+              - generic [ref=e1467] [cursor=pointer]: 物理/化学/生物
+            - textbox "输入你的模考成绩" [ref=e1470]
+            - generic [ref=e1471] [cursor=pointer]: 点击查看 >
+        - generic [ref=e1472]:
+          - generic [ref=e1474]: 最新文章
+          - link "2026年青海新高考志愿如何填报？如何参考往年数据填志愿？ 2026年青海新高考志愿如何填报？如何参考往年数据填志愿？ 晖晖学姐 04-22 16:40:37" [ref=e1475] [cursor=pointer]:
+            - /url: /p_1794551811.html
+            - img "2026年青海新高考志愿如何填报？如何参考往年数据填志愿？" [ref=e1476]
+            - generic [ref=e1477]:
+              - paragraph [ref=e1478]: 2026年青海新高考志愿如何填报？如何参考往年数据填志愿？
+              - paragraph [ref=e1479]: 晖晖学姐 04-22 16:40:37
+          - link "2026物化生男生可以报什么专业好就业？选物化生能去哪些大学？ 2026物化生男生可以报什么专业好就业？选物化生能去哪些大学？ 家仪学姐 04-22 16:26:59" [ref=e1480] [cursor=pointer]:
+            - /url: /p_2647281952.html
+            - img "2026物化生男生可以报什么专业好就业？选物化生能去哪些大学？" [ref=e1481]
+            - generic [ref=e1482]:
+              - paragraph [ref=e1483]: 2026物化生男生可以报什么专业好就业？选物化生能去哪些大学？
+              - paragraph [ref=e1484]: 家仪学姐 04-22 16:26:59
+          - link "差50分可以冲一冲吗？冲学校一般冲多少分 差50分可以冲一冲吗？冲学校一般冲多少分 晖晖学姐 04-22 10:13:07" [ref=e1485] [cursor=pointer]:
+            - /url: /p_1268828799.html
+            - img "差50分可以冲一冲吗？冲学校一般冲多少分" [ref=e1486]
+            - generic [ref=e1487]:
+              - paragraph [ref=e1488]: 差50分可以冲一冲吗？冲学校一般冲多少分
+              - paragraph [ref=e1489]: 晖晖学姐 04-22 10:13:07
+          - link "2026年高考能填几个志愿？附全国各省填报批次及志愿数量汇总 2026年高考能填几个志愿？附全国各省填报批次及志愿数量汇总 晖晖学姐 04-22 09:48:31" [ref=e1490] [cursor=pointer]:
+            - /url: /p_3666140472.html
+            - img "2026年高考能填几个志愿？附全国各省填报批次及志愿数量汇总" [ref=e1491]
+            - generic [ref=e1492]:
+              - paragraph [ref=e1493]: 2026年高考能填几个志愿？附全国各省填报批次及志愿数量汇总
+              - paragraph [ref=e1494]: 晖晖学姐 04-22 09:48:31
+          - link "广西高考609分左右的文科大学名单（2024-2025年） 广西高考609分左右的文科大学名单（2024-2025年） 何绍老师 04-21 09:00:00" [ref=e1495] [cursor=pointer]:
+            - /url: /p_191294220739.html
+            - img "广西高考609分左右的文科大学名单（2024-2025年）" [ref=e1496]
+            - generic [ref=e1497]:
+              - paragraph [ref=e1498]: 广西高考609分左右的文科大学名单（2024-2025年）
+              - paragraph [ref=e1499]: 何绍老师 04-21 09:00:00
+          - link "2026学机械好还是电气好？自动化和材料专业哪个好 2026学机械好还是电气好？自动化和材料专业哪个好 冯老师 04-20 10:21:58" [ref=e1500] [cursor=pointer]:
+            - /url: /p_3560104148.html
+            - img "2026学机械好还是电气好？自动化和材料专业哪个好" [ref=e1501]
+            - generic [ref=e1502]:
+              - paragraph [ref=e1503]: 2026学机械好还是电气好？自动化和材料专业哪个好
+              - paragraph [ref=e1504]: 冯老师 04-20 10:21:58
+      - complementary [ref=e1505]:
+        - generic [ref=e1506]:
+          - generic [ref=e1507]:
+            - generic [ref=e1508]: 原创精选
+            - generic [ref=e1509] [cursor=pointer]:
+              - generic [ref=e1510]: 
+              - generic [ref=e1511]: 换一换
+          - generic [ref=e1513]:
+            - link "2025年高考录取总结：清北部分专业遇冷、“铁饭碗”成高分热门、民办本科招生难 2025年高考录取总结：清北部分专业遇冷、“铁饭碗”成高分热门、民办本科招生难" [ref=e1514] [cursor=pointer]:
+              - /url: https://www.6617.com/p_1035107268.html
+              - img "2025年高考录取总结：清北部分专业遇冷、“铁饭碗”成高分热门、民办本科招生难" [ref=e1515]
+              - paragraph [ref=e1516]: 2025年高考录取总结：清北部分专业遇冷、“铁饭碗”成高分热门、民办本科招生难
+            - link "2025年最容易进国家电网的大学推荐！行业背景强、录用人数多 2025年最容易进国家电网的大学推荐！行业背景强、录用人数多" [ref=e1517] [cursor=pointer]:
+              - /url: https://www.6617.com/p_4038111219.html
+              - img "2025年最容易进国家电网的大学推荐！行业背景强、录用人数多" [ref=e1518]
+              - paragraph [ref=e1519]: 2025年最容易进国家电网的大学推荐！行业背景强、录用人数多
+            - link "工科专业区别介绍：电子信息工程、通信工程、工业设计、储能科学与工程 工科专业区别介绍：电子信息工程、通信工程、工业设计、储能科学与工程" [ref=e1520] [cursor=pointer]:
+              - /url: https://www.6617.com/p_3275562514.html
+              - img "工科专业区别介绍：电子信息工程、通信工程、工业设计、储能科学与工程" [ref=e1521]
+              - paragraph [ref=e1522]: 工科专业区别介绍：电子信息工程、通信工程、工业设计、储能科学与工程
+            - link "银行喜欢招聘的大学专业推荐！毕业后就业稳定、待遇好 银行喜欢招聘的大学专业推荐！毕业后就业稳定、待遇好" [ref=e1523] [cursor=pointer]:
+              - /url: https://www.6617.com/p_2486086146.html
+              - img "银行喜欢招聘的大学专业推荐！毕业后就业稳定、待遇好" [ref=e1524]
+              - paragraph [ref=e1525]: 银行喜欢招聘的大学专业推荐！毕业后就业稳定、待遇好
+            - link "国家公费师范生报考指南：报考利弊、招生大学和专业、就业前景 国家公费师范生报考指南：报考利弊、招生大学和专业、就业前景" [ref=e1526] [cursor=pointer]:
+              - /url: https://www.6617.com/p_844271086.html
+              - img "国家公费师范生报考指南：报考利弊、招生大学和专业、就业前景" [ref=e1527]
+              - paragraph [ref=e1528]: 国家公费师范生报考指南：报考利弊、招生大学和专业、就业前景
+            - link "选大学、专业的11个陷阱，别在这上面吃亏！ 选大学、专业的11个陷阱，别在这上面吃亏！" [ref=e1529] [cursor=pointer]:
+              - /url: https://www.6617.com/p_1199211277.html
+              - img "选大学、专业的11个陷阱，别在这上面吃亏！" [ref=e1530]
+              - paragraph [ref=e1531]: 选大学、专业的11个陷阱，别在这上面吃亏！
+            - link "比往年录取分数线高20分，可以不服从调剂吗？ 比往年录取分数线高20分，可以不服从调剂吗？" [ref=e1532] [cursor=pointer]:
+              - /url: https://www.6617.com/p_3335133350.html
+              - img "比往年录取分数线高20分，可以不服从调剂吗？" [ref=e1533]
+              - paragraph [ref=e1534]: 比往年录取分数线高20分，可以不服从调剂吗？
+        - generic [ref=e1538]:
+          - generic [ref=e1539]: 输入分数，看能上的大学
+          - generic [ref=e1540]:
+            - generic [ref=e1541]:
+              - generic [ref=e1544] [cursor=pointer]: 四川
+              - generic [ref=e1548] [cursor=pointer]: 物理/化学/生物
+            - textbox "输入你的模考成绩" [ref=e1551]
+            - generic [ref=e1552] [cursor=pointer]: 点击查看 >
+        - generic [ref=e1553]:
+          - img "微信扫码关注公众号"
+          - paragraph [ref=e1554]: 微信扫码关注公众号
+  - generic [ref=e1555]:
+    - generic [ref=e1556] [cursor=pointer]:
+      - generic [ref=e1558]: 
+      - paragraph [ref=e1559]: 放大
+    - generic [ref=e1560] [cursor=pointer]:
+      - generic [ref=e1562]: 
+      - paragraph [ref=e1563]: 缩小
+    - generic [ref=e1564] [cursor=pointer]:
+      - generic [ref=e1566]: 
+      - paragraph [ref=e1567]: "0"
+    - generic [ref=e1568] [cursor=pointer]:
+      - generic [ref=e1570]: 
+      - paragraph [ref=e1571]: 分享
+      - text:  
+  - contentinfo [ref=e1572]:
+    - generic [ref=e1573]:
+      - generic [ref=e1574]:
+        - link "联系我们" [ref=e1575] [cursor=pointer]:
+          - /url: /contact_us.html
+        - link "关于我们" [ref=e1576] [cursor=pointer]:
+          - /url: /about_us.html
+      - generic [ref=e1578]:
+        - generic [ref=e1579]: 版权所有：成都圆梦小灯塔科技有限公司
+        - link "蜀ICP备2023028242号-1" [ref=e1580] [cursor=pointer]:
+          - /url: https://beian.miit.gov.cn/

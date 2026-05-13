@@ -1,0 +1,511 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 健康与医疗保障专业 工资 薪酬 待遇
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84+%E8%96%AA%E9%85%AC+%E5%BE%85%E9%81%87&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2210235807501992080553%22%2C%22ori_lid%22%3A%2210235807501992080553%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=8e0ce4b1018434a9&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84+%E8%96%AA%E9%85%AC+%E5%BE%85%E9%81%87
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84+%E8%96%AA%E9%85%AC+%E5%BE%85%E9%81%87
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=8e0ce4b1018434a9&ie=utf-8&wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84+%E8%96%AA%E9%85%AC+%E5%BE%85%E9%81%87&rsv_spt=7&rsv_bp=1&f=8&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84+%E8%96%AA%E9%85%AC+%E5%BE%85%E9%81%87&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84+%E8%96%AA%E9%85%AC+%E5%BE%85%E9%81%87
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84+%E8%96%AA%E9%85%AC+%E5%BE%85%E9%81%87
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84+%E8%96%AA%E9%85%AC+%E5%BE%85%E9%81%87
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84+%E8%96%AA%E9%85%AC+%E5%BE%85%E9%81%87
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  健康与医疗保障专业  智慧健康养老服务与管理就业方向  哪些大学有健康与医疗保障专业  食品营养与健康专业薪资待遇  薪酬和工资的区别  GE医疗薪资待遇    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e69]:
+              - cell "相关搜索  健康与医疗保障专业  智慧健康养老服务与管理就业方向  哪些大学有健康与医疗保障专业  食品营养与健康专业薪资待遇  薪酬和工资的区别  GE医疗薪资待遇    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 健康与医疗保障专业" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=299eF%2FZD2aE3XOtKIYUBhKvutk9KBI5Qtc3SnfiCTvU6eB%2BZZl0wD%2FzOJmc&rfqid=8e0ce4b1018434a9&rsv_dl=0_prs_28616_1&rq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsf=101636803
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 健康与医疗保障专业
+                      - link " 智慧健康养老服务与管理就业方向" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E6%99%BA%E6%85%A7%E5%81%A5%E5%BA%B7%E5%85%BB%E8%80%81%E6%9C%8D%E5%8A%A1%E4%B8%8E%E7%AE%A1%E7%90%86%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=299eF%2FZD2aE3XOtKIYUBhKvutk9KBI5Qtc3SnfiCTvU6eB%2BZZl0wD%2FzOJmc&rfqid=8e0ce4b1018434a9&rsv_dl=0_prs_28616_2&rq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 智慧健康养老服务与管理就业方向
+                      - link " 哪些大学有健康与医疗保障专业" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E5%93%AA%E4%BA%9B%E5%A4%A7%E5%AD%A6%E6%9C%89%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=299eF%2FZD2aE3XOtKIYUBhKvutk9KBI5Qtc3SnfiCTvU6eB%2BZZl0wD%2FzOJmc&rfqid=8e0ce4b1018434a9&rsv_dl=0_prs_28616_3&rq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsf=101636803
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 哪些大学有健康与医疗保障专业
+                      - link " 食品营养与健康专业薪资待遇" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E9%A3%9F%E5%93%81%E8%90%A5%E5%85%BB%E4%B8%8E%E5%81%A5%E5%BA%B7%E4%B8%93%E4%B8%9A%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=299eF%2FZD2aE3XOtKIYUBhKvutk9KBI5Qtc3SnfiCTvU6eB%2BZZl0wD%2FzOJmc&rfqid=8e0ce4b1018434a9&rsv_dl=0_prs_28616_4&rq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsf=101636803
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 食品营养与健康专业薪资待遇
+                      - link " 薪酬和工资的区别" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E8%96%AA%E9%85%AC%E5%92%8C%E5%B7%A5%E8%B5%84%E7%9A%84%E5%8C%BA%E5%88%AB&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rfqid=8e0ce4b1018434a9&rsv_dl=0_prs_28616_5&rq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsf=101631202
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 薪酬和工资的区别
+                      - link " GE医疗薪资待遇" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=GE%E5%8C%BB%E7%96%97%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rfqid=8e0ce4b1018434a9&rsv_dl=0_prs_28616_6&rq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsf=101631203
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: GE医疗薪资待遇
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "“早上6点半 杭州东站全是孩子”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E6%97%A9%E4%B8%8A6%E7%82%B9%E5%8D%8A%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%E5%85%A8%E6%98%AF%E5%AD%A9%E5%AD%90%E2%80%9D&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "高市政府越过“最后一根红线”" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=ca13wGKRZ9k7BOjKL6MYBFaC5xBBOQb8a44MErolUR2wnPcdFCki5OrzZDo&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=9af5Y7k0XihUy2aqS1GyR1BjaurRaXdcfI18pZ%2BSy9FujNn2FqdZsYhDvG8&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "女性多和好友聚会能“续命”" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=9af5Y7k0XihUy2aqS1GyR1BjaurRaXdcfI18pZ%2BSy9FujNn2FqdZsYhDvG8&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=9af5Y7k0XihUy2aqS1GyR1BjaurRaXdcfI18pZ%2BSy9FujNn2FqdZsYhDvG8&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=9af5Y7k0XihUy2aqS1GyR1BjaurRaXdcfI18pZ%2BSy9FujNn2FqdZsYhDvG8&rqid=8e0ce4b1018434a9&rsf=e400e82f95fad09fb1a1eda98e69be95_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e208]:
+            - heading "健康与医疗保障专业就业全解析" [level=3] [ref=e211]:
+              - link "健康与医疗保障专业就业全解析" [ref=e212] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=jNUIJO3CrVePHrMbGTi7ke436bacutdXYmdJ1i95aIcBs43VvG38UCwMeB4zPye9ta4Najb-BwuYeE018MANe9J9kKjl78rDPnS2-esheomWGyYL6HKpEv6NxP5j5PsU
+                - paragraph [ref=e215]:
+                  - generic [ref=e218]:
+                    - emphasis [ref=e219]: 健康与医疗保障专业
+                    - text: 就业全解析
+            - generic [ref=e224]:
+              - text: 2025年6月19日
+              - generic [ref=e225]:
+                - text: 6.国际组织:WHO项目助理/医改咨询顾问/
+                - emphasis [ref=e226]: 健康
+                - text: "投资分析薪资与晋升 地域差异显著: 一线:医保局科员年薪8-12万 新一线:医院专员月薪5000-8000 县域基层:经办岗年薪6-8万 晋升路径: 1-3年:掌握目录动态调整 4-5年:主导DRG病组核算(需ICD认证) 5年以上:参与省级支付改革报考与备考 适配要求: 优势学科:数学/政策解读能力/细致耐心 证书"
+            - generic [ref=e227]:
+              - link [ref=e229] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=jNUIJO3CrVePHrMbGTi7ke436bacutdXYmdJ1i95aIcBs43VvG38UCwMeB4zPye9ta4Najb-BwuYeE018MANe9J9kKjl78rDPnS2-esheomWGyYL6HKpEv6NxP5j5PsU
+              - link [ref=e233] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=jNUIJO3CrVePHrMbGTi7ke436bacutdXYmdJ1i95aIcBs43VvG38UCwMeB4zPye9ta4Najb-BwuYeE018MANe9J9kKjl78rDPnS2-esheomWGyYL6HKpEv6NxP5j5PsU
+              - link [ref=e237] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=jNUIJO3CrVePHrMbGTi7ke436bacutdXYmdJ1i95aIcBs43VvG38UCwMeB4zPye9ta4Najb-BwuYeE018MANe9J9kKjl78rDPnS2-esheomWGyYL6HKpEv6NxP5j5PsU
+              - link "4" [ref=e241] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=jNUIJO3CrVePHrMbGTi7ke436bacutdXYmdJ1i95aIcBs43VvG38UCwMeB4zPye9ta4Najb-BwuYeE018MANe9J9kKjl78rDPnS2-esheomWGyYL6HKpEv6NxP5j5PsU
+                - generic [ref=e244]:
+                  - generic [ref=e245]: 
+                  - text: "4"
+            - link "头像 医途优学" [ref=e250] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=jNUIJO3CrVePHrMbGTi7ke436bacutdXYmdJ1i95aIcBs43VvG38UCwMeB4zPye9ta4Najb-BwuYeE018MANe9J9kKjl78rDPnS2-esheomWGyYL6HKpEv6NxP5j5PsU
+              - img "头像" [ref=e253]
+              - generic [ref=e254]: 医途优学
+              - generic [ref=e256]: 
+          - generic [ref=e260]:
+            - heading "健康与医疗保障专业就业前景和就业方向:含优劣势分析-高考100" [level=3] [ref=e263]:
+              - link "健康与医疗保障专业就业前景和就业方向:含优劣势分析-高考100" [ref=e264] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=3dzgZKDDYgDNGM6p6KJcmzFhGyygVtrwu_hAxkzl_6Ac5g8OQZb4Cx4F6sbYID7JcNUz3wI5nCkMgltq2ohycK
+                - paragraph [ref=e267]:
+                  - generic [ref=e270]:
+                    - emphasis [ref=e271]: 健康与医疗保障专业
+                    - text: 就业前景和就业方向:含优劣势分析-高考100
+            - generic [ref=e276]:
+              - text: 2026年3月21日
+              - generic [ref=e277]:
+                - text: 薪资方面,
+                - emphasis [ref=e278]: 初级岗位月薪约6000-8000元,随着经验积累,3-5年后可达1万-1.5万元
+                - text: ",若进入管理岗或核心部门,薪资上限更高。此外,公务员、事业单位岗位稳定性强,但竞争激烈;企业岗位薪资弹性大,需承受一定业绩压力。 三、健康与医疗保障的考研方向 考研是提升专业深度的重要途径,主要方向包括:一是公共卫生与预防医学,侧重疾..."
+            - link "高考100网" [ref=e283] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=3dzgZKDDYgDNGM6p6KJcmzFhGyygVtrwu_hAxkzl_6Ac5g8OQZb4Cx4F6sbYID7JcNUz3wI5nCkMgltq2ohycK
+              - generic [ref=e284]: 高考100网
+              - generic [ref=e286]: 
+          - generic [ref=e290]:
+            - heading "健康与医疗保障专业就业前景" [level=3] [ref=e293]:
+              - link "健康与医疗保障专业就业前景" [ref=e294] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=jNUIJO3CrVePHrMbGTi7kdWOWnQAWdPTmrLvzxnQ-gbuPnVan1J7Xv74VpO17bbMpuRiITsg72RX9rYkLprg_uVjU8iQ3ktZMueangsiQNyIwvijhUv0KrB-b8n_-HZV8swbq4MqhpYUMtovVqL9zcAUvJMqkq4v0-rCKjCH9WAK-Cbr_A8E3e6xRIAkwqUe5W__BbPeB8oAmcL4886Jry_apayBRnm_o4HlBSyxQ9po2otrP6rHg43lKxg8WUig6CcQNLvypgbZz-sFQmEF_vW7oWX6-XIjCfY40tyvwQG-9ZO_Qk09hSb-DXuMO-P5cYmGtjgQqvgPnOZzzt4FR_
+                - paragraph [ref=e297]:
+                  - generic [ref=e300]:
+                    - emphasis [ref=e301]: 健康与医疗保障专业
+                    - text: 就业前景
+            - generic [ref=e306]:
+              - text: 2025年7月14日
+              - generic [ref=e307]:
+                - text: 薪资水平与发展空间
+                - emphasis [ref=e308]: 该专业应届生在保险公司、医疗咨询机构及公立医院医保科的起薪普遍在8000-12000元/月
+                - text: ",远超部分传统医疗岗位。具备3-5年工作经验者,若参与医保产品设计或医疗大数据分析项目,"
+                - emphasis [ref=e309]: 年薪可达20-35万元
+                - text: 。据中国药科大学等院校统计,超过60%的毕业生在入职后通过职称晋...
+            - link "头像 知了爱学" [ref=e314] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=jNUIJO3CrVePHrMbGTi7kdWOWnQAWdPTmrLvzxnQ-gbuPnVan1J7Xv74VpO17bbMpuRiITsg72RX9rYkLprg_uVjU8iQ3ktZMueangsiQNyIwvijhUv0KrB-b8n_-HZV8swbq4MqhpYUMtovVqL9zcAUvJMqkq4v0-rCKjCH9WAK-Cbr_A8E3e6xRIAkwqUe5W__BbPeB8oAmcL4886Jry_apayBRnm_o4HlBSyxQ9po2otrP6rHg43lKxg8WUig6CcQNLvypgbZz-sFQmEF_vW7oWX6-XIjCfY40tyvwQG-9ZO_Qk09hSb-DXuMO-P5cYmGtjgQqvgPnOZzzt4FR_
+              - img "头像" [ref=e317]
+              - generic [ref=e318]: 知了爱学
+              - generic [ref=e320]: 
+          - generic [ref=e322]:
+            - generic [ref=e323]: 大家还在搜
+            - generic [ref=e324]:
+              - link "健康与医疗保障专业" [ref=e325] [cursor=pointer]:
+                - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=6440UYjzBwztLMVdB7ZRicDraqQX8hwxCIqP1JUfwn%2BcZC0RGZvy9I0zOc0&rsf=101636803&rsv_dl=0_prs_28608_1
+                - generic [ref=e327]: 健康与医疗保障专业
+              - link "智慧健康养老服务与管理就业方向" [ref=e328] [cursor=pointer]:
+                - /url: /s?wd=%E6%99%BA%E6%85%A7%E5%81%A5%E5%BA%B7%E5%85%BB%E8%80%81%E6%9C%8D%E5%8A%A1%E4%B8%8E%E7%AE%A1%E7%90%86%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=6440UYjzBwztLMVdB7ZRicDraqQX8hwxCIqP1JUfwn%2BcZC0RGZvy9I0zOc0&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e330]: 智慧健康养老服务与管理就业方向
+              - link "哪些大学有健康与医疗保障专业" [ref=e331] [cursor=pointer]:
+                - /url: /s?wd=%E5%93%AA%E4%BA%9B%E5%A4%A7%E5%AD%A6%E6%9C%89%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=6440UYjzBwztLMVdB7ZRicDraqQX8hwxCIqP1JUfwn%2BcZC0RGZvy9I0zOc0&rsf=101636803&rsv_dl=0_prs_28608_3
+                - generic [ref=e333]: 哪些大学有健康与医疗保障专业
+              - link "食品营养与健康专业薪资待遇" [ref=e334] [cursor=pointer]:
+                - /url: /s?wd=%E9%A3%9F%E5%93%81%E8%90%A5%E5%85%BB%E4%B8%8E%E5%81%A5%E5%BA%B7%E4%B8%93%E4%B8%9A%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=6440UYjzBwztLMVdB7ZRicDraqQX8hwxCIqP1JUfwn%2BcZC0RGZvy9I0zOc0&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e336]: 食品营养与健康专业薪资待遇
+              - link "薪酬和工资的区别" [ref=e337] [cursor=pointer]:
+                - /url: /s?wd=%E8%96%AA%E9%85%AC%E5%92%8C%E5%B7%A5%E8%B5%84%E7%9A%84%E5%8C%BA%E5%88%AB&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=6440UYjzBwztLMVdB7ZRicDraqQX8hwxCIqP1JUfwn%2BcZC0RGZvy9I0zOc0&rsf=101631202&rsv_dl=0_prs_28608_5
+                - generic [ref=e339]: 薪酬和工资的区别
+              - link "GE医疗薪资待遇" [ref=e340] [cursor=pointer]:
+                - /url: /s?wd=GE%E5%8C%BB%E7%96%97%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87&usm=1&ie=utf-8&rsv_pq=8e0ce4b1018434a9&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&rsv_t=6440UYjzBwztLMVdB7ZRicDraqQX8hwxCIqP1JUfwn%2BcZC0RGZvy9I0zOc0&rsf=101631203&rsv_dl=0_prs_28608_6
+                - generic [ref=e342]: GE医疗薪资待遇
+          - generic [ref=e347]:
+            - heading "健康与医疗保障专业就业前景 - 智能分身实时回复" [level=3] [ref=e349] [cursor=pointer]:
+              - generic [ref=e351]:
+                - emphasis [ref=e352]: 健康与医疗保障专业
+                - text: 就业前景 - 智能分身实时回复
+            - generic [ref=e353]:
+              - img "头像" [ref=e356]
+              - generic [ref=e358]:
+                - generic [ref=e359]: 西安高新技师学院
+                - generic [ref=e361]: 百度认证商家
+                - generic [ref=e362]: 1万人聊过平台认证 放心选择
+            - paragraph [ref=e364]:
+              - emphasis [ref=e365]: 健康与医疗保障专业
+              - text: 的就业前景非常广阔，这个专业结合了医学和管理学的知识，培养的是复合型人才。 1. 就业方向多样： - 可以在医院、诊所等医疗机构从事行政管理工作，比如协调医疗资源、优化服务流程。 - 进入保险公司，负责医疗保险的核保、理赔等业务，或者参与健康保险产品的设计。 - 在政府部门或公共卫生机构，参与医保政策制定、健康管理项目的实施。 - 还可以从事健康咨询、健康管理服务，为个人或企业提供专业的健康规划。 2. 行业需求大： - 随着人口老龄化
+              - emphasis [ref=e366]: 和健康
+              - text: 意识的提升，社会对健康管理和医疗保障的需求持续增长。 - 医保政策的不断完善，比如DRG支付改革，也需要更多专业人才来支持。 3. 薪资
+              - emphasis [ref=e367]: 待遇
+              - text: 稳定： - 刚毕业的学生起薪一般在8000-12000元/月，随着经验积累，薪资会有明显提升。 - 在保险公司或医疗机构的管理岗位，薪资和晋升空间都比较可观。 总结来说，
+              - emphasis [ref=e368]: 健康与医疗保障专业
+              - text: 适合对医学和管理都感兴趣的学生，未来就业机会多，发展潜力大。
+            - generic [ref=e373] [cursor=pointer]:
+              - generic [ref=e374]: 文心智能体·AI生成
+              - generic [ref=e376]: 
+          - generic [ref=e380]:
+            - heading "985不如双非?健康与医疗保障专业“黑马大学”曝光,毕业生直接进..." [level=3] [ref=e383]:
+              - link "985不如双非?健康与医疗保障专业“黑马大学”曝光,毕业生直接进..." [ref=e384] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=kvIHZexZOdoA12k0msaGhNjn8Dr25_5ElIjRHsrYE_t0q1u-hYrnKP-0JiM4JINK70-82qBANEP2mt9Rv3VQ6d5k-4E_3shEA_ORLG9BA8G
+                - paragraph [ref=e387]:
+                  - generic [ref=e390]:
+                    - text: 985不如双非?
+                    - emphasis [ref=e391]: 健康与医疗保障专业
+                    - text: “黑马大学”曝光,毕业生直接进...
+            - generic [ref=e392]:
+              - link [ref=e394] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=kvIHZexZOdoA12k0msaGhNjn8Dr25_5ElIjRHsrYE_t0q1u-hYrnKP-0JiM4JINK70-82qBANEP2mt9Rv3VQ6d5k-4E_3shEA_ORLG9BA8G
+              - generic [ref=e399]:
+                - generic [ref=e404]:
+                  - text: 2025年11月19日
+                  - generic [ref=e405]:
+                    - emphasis [ref=e406]: 健康与医疗保障专业
+                    - text: 的就业面极广，涵盖保险、医疗、政府、健康科技、企业五大领域。以下是具体岗位和
+                    - emphasis [ref=e407]: 薪资
+                    - text: 水平：1. 保险行业：健康险核保/理赔/产品开发 岗位需求：随着商业健康险市场扩张（如惠民保、高端医疗险），保险公司对专业人才需求激增。典型岗位：核保师：评估客户健康风险，设计合理费率。初级岗位
+                    - emphasis [ref=e408]: 月薪
+                    - text: 8000-12000...
+                - link "头像  学予明天" [ref=e413] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=kvIHZexZOdoA12k0msaGhNjn8Dr25_5ElIjRHsrYE_t0q1u-hYrnKP-0JiM4JINK70-82qBANEP2mt9Rv3VQ6d5k-4E_3shEA_ORLG9BA8G
+                  - generic [ref=e414]:
+                    - img "头像" [ref=e416]
+                    - generic [ref=e418]: 
+                  - generic [ref=e419]: 学予明天
+                  - generic [ref=e421]: 
+          - generic [ref=e425]:
+            - heading "医疗保险专业就业方向及前景(工资待遇排名) - 职友集" [level=3] [ref=e428]:
+              - link "医疗保险专业就业方向及前景(工资待遇排名) - 职友集" [ref=e429] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=hH3k34u7VWEW_vbdKNC5UKTDWRaFGDHLZwmU27kbYC3w2-DfK_pZCf8IopqMAPKyP-NQ87ZJd3nvjaUoxpfJIq
+                - paragraph [ref=e432]:
+                  - generic [ref=e435]:
+                    - emphasis [ref=e436]: 医疗
+                    - text: 保险
+                    - emphasis [ref=e437]: 专业
+                    - text: 就业方向及前景(
+                    - emphasis [ref=e438]: 工资待遇
+                    - text: 排名) - 职友集
+            - generic [ref=e443]:
+              - text: 2026年4月16日
+              - generic [ref=e444]:
+                - emphasis [ref=e445]: 工资待遇
+                - text: (取自可从事岗位
+                - emphasis [ref=e446]: 薪酬
+                - text: "分析) 薪酬区间: 3-50K,其中44.2%的岗位拿￥8-15K/月 6% 3-4.5K 6% 4.5-6K 16.2% 6-8K *** ? 8-10K *** ? 10-15K 12.2% 15-20K 8.8% 30-50K 根据可从事岗位近一年25644份薪酬样本统计,工资与地区、行业等因素相关,仅供参考,截至 2026-04-16 ￥8-15K 44.2..."
+            - link "职友集" [ref=e451] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=hH3k34u7VWEW_vbdKNC5UKTDWRaFGDHLZwmU27kbYC3w2-DfK_pZCf8IopqMAPKyP-NQ87ZJd3nvjaUoxpfJIq
+              - generic [ref=e452]: 职友集
+              - generic [ref=e454]: 
+          - generic [ref=e458]:
+            - heading "广州医疗健康行业发展现状和前景(工资待遇 | 人才需求 | 发展趋势..." [level=3] [ref=e461]:
+              - link "广州医疗健康行业发展现状和前景(工资待遇 | 人才需求 | 发展趋势..." [ref=e462] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=tswAVR10n89UPbr5sMTiRdqUlpXXvi2MNLDui2xRC6HlTgjKvmQhZnRWKsoCMGc2rHH883Yv5y44KFXiF8QNNybZ9wP_r8RdIt-zkD00v4W
+                - paragraph [ref=e465]:
+                  - generic [ref=e468]:
+                    - text: 广州
+                    - emphasis [ref=e469]: 医疗健康
+                    - text: 行业发展现状
+                    - emphasis [ref=e470]: 和
+                    - text: 前景(
+                    - emphasis [ref=e471]: 工资待遇
+                    - text: "| 人才需求 | 发展趋势..."
+            - generic [ref=e476]:
+              - text: 5天前
+              - generic [ref=e477]:
+                - text: 广州
+                - emphasis [ref=e478]: 医疗健康
+                - text: 行业
+                - emphasis [ref=e479]: 工资收入
+                - text: 一般多少钱一个月?58.3%的岗位拿￥6-15K/月,年薪￥7-18W。2025年工资较2024增长了5%,对比广州低2.0%。就业前景怎么样?市场需求:2026较2025下降44%,招聘职位量占广州5.835%。地区分布集中在天河区。发展现状:公司规模100-499人占比最多,成立时长10年以上占比最多,融资事件A轮占比最多...
+            - link "头像 职友集" [ref=e484] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=tswAVR10n89UPbr5sMTiRdqUlpXXvi2MNLDui2xRC6HlTgjKvmQhZnRWKsoCMGc2rHH883Yv5y44KFXiF8QNNybZ9wP_r8RdIt-zkD00v4W
+              - img "头像" [ref=e487]
+              - generic [ref=e488]: 职友集
+              - generic [ref=e490]: 
+          - generic [ref=e494]:
+            - heading "大健康行业一般月薪多少" [level=3] [ref=e497]:
+              - link "大健康行业一般月薪多少" [ref=e498] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=W-uAr0h1RJv0D3-6wbZ2iI3hfI_irt2Cjfz-iZo45k-65JBBhLrq9_jar8_0QRCXMFgDZBSuWiSXtEv_pNWpF3NeWg739g3-vjyL81sm3Dvnh6xET2JHyp4mfSJGtAYe
+                - paragraph [ref=e501]:
+                  - generic [ref=e504]:
+                    - text: 大
+                    - emphasis [ref=e505]: 健康
+                    - text: 行业一般
+                    - emphasis [ref=e506]: 月薪
+                    - text: 多少
+            - generic [ref=e511]:
+              - text: 2026年3月3日
+              - generic [ref=e512]:
+                - text: :大
+                - emphasis [ref=e513]: 健康
+                - text: 行业
+                - emphasis [ref=e514]: 月薪薪酬
+                - text: 区间广泛,从4.5k到50k,其中超过一半的岗位月薪在6k至15k之间. 地区差异 :例如在青岛,57.4%的岗位月薪为6-15k;在成都,44.2%的岗位月薪为8-15k. 2 常见职位
+                - emphasis [ref=e515]: 薪资
+                - text: 示例 普工(本科) :71.4%的岗位月薪在4.5-8k,1-3年经验者约7.0k. 市场专员 :64.7%的岗位月薪在8-15k,应届生起薪约7.0k. ...
+            - link "头像 爱企查" [ref=e520] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=W-uAr0h1RJv0D3-6wbZ2iI3hfI_irt2Cjfz-iZo45k-65JBBhLrq9_jar8_0QRCXMFgDZBSuWiSXtEv_pNWpF3NeWg739g3-vjyL81sm3Dvnh6xET2JHyp4mfSJGtAYe
+              - img "头像" [ref=e523]
+              - generic [ref=e524]: 爱企查
+              - generic [ref=e526]: 
+          - generic [ref=e530]:
+            - heading "2025年健康管理师收入曝光!最高地区,年收入40万!" [level=3] [ref=e533]:
+              - link "2025年健康管理师收入曝光!最高地区,年收入40万!" [ref=e534] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=kvIHZexZOdoA12k0msaGhTlchw0wC9w-lXMV_5FRaclrG-qAZcxhKt70sY_a7nCvKgHeYB2Dr4uJmuMMAfxJhnsN0yETTQoqJAA-UbWwU3lugNa4hWUA7fpSeBL_-SyEqHg3J2mmOk7wyUJwIvUJJsD5FXwayyuFUD_DFRS39OvwsXjaSfbDMqBwRRDLB7tf-ojVWlzY5WZ8h_b3abWZUfJnS1VvXdvAUZupjEVWnjKVACNVTqlUtvobN9Xc843mMgjzUPxK_LCWNRBQ3MK9G_
+                - paragraph [ref=e537]:
+                  - generic [ref=e540]:
+                    - text: 2025年
+                    - emphasis [ref=e541]: 健康
+                    - text: 管理师收入曝光!最高地区,年收入40万!
+            - generic [ref=e542]:
+              - link [ref=e544] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=kvIHZexZOdoA12k0msaGhTlchw0wC9w-lXMV_5FRaclrG-qAZcxhKt70sY_a7nCvKgHeYB2Dr4uJmuMMAfxJhnsN0yETTQoqJAA-UbWwU3lugNa4hWUA7fpSeBL_-SyEqHg3J2mmOk7wyUJwIvUJJsD5FXwayyuFUD_DFRS39OvwsXjaSfbDMqBwRRDLB7tf-ojVWlzY5WZ8h_b3abWZUfJnS1VvXdvAUZupjEVWnjKVACNVTqlUtvobN9Xc843mMgjzUPxK_LCWNRBQ3MK9G_
+              - generic [ref=e549]:
+                - generic [ref=e554]:
+                  - text: 2025年3月22日
+                  - generic [ref=e555]:
+                    - text: 目前外国的
+                    - emphasis [ref=e556]: 健康
+                    - text: 管理师咨询时薪一般为40多美元,约等于300元人民币,以此为标准,假设我们每天工作6个小时、每个月工作20天进行计算,一个月下来可以有36000元的收入,而一年的收入能达到43万元左右。 因此,健康管理师的
+                    - emphasis [ref=e557]: 薪资待遇
+                    - text: 相当高,前途一片大好,可以说...
+                - link "微信公众平台" [ref=e562] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=kvIHZexZOdoA12k0msaGhTlchw0wC9w-lXMV_5FRaclrG-qAZcxhKt70sY_a7nCvKgHeYB2Dr4uJmuMMAfxJhnsN0yETTQoqJAA-UbWwU3lugNa4hWUA7fpSeBL_-SyEqHg3J2mmOk7wyUJwIvUJJsD5FXwayyuFUD_DFRS39OvwsXjaSfbDMqBwRRDLB7tf-ojVWlzY5WZ8h_b3abWZUfJnS1VvXdvAUZupjEVWnjKVACNVTqlUtvobN9Xc843mMgjzUPxK_LCWNRBQ3MK9G_
+                  - generic [ref=e563]: 微信公众平台
+                  - generic [ref=e565]: 
+        - generic [ref=e568]:
+          - generic [ref=e569]: 相关搜索
+          - table [ref=e570]:
+            - rowgroup [ref=e571]:
+              - row "健康与医疗保障专业 智慧健康养老服务与管理就业方向" [ref=e572]:
+                - cell "健康与医疗保障专业" [ref=e573]:
+                  - link "健康与医疗保障专业" [ref=e574] [cursor=pointer]:
+                    - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A&rsf=101636803&rsp=0&f=1&rs_src=0&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&rsv_dl=brs_28338_1
+                    - generic [ref=e576]: 健康与医疗保障专业
+                - cell "智慧健康养老服务与管理就业方向" [ref=e577]:
+                  - link "智慧健康养老服务与管理就业方向" [ref=e578] [cursor=pointer]:
+                    - /url: /s?wd=%E6%99%BA%E6%85%A7%E5%81%A5%E5%BA%B7%E5%85%BB%E8%80%81%E6%9C%8D%E5%8A%A1%E4%B8%8E%E7%AE%A1%E7%90%86%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&rsv_dl=brs_28338_2
+                    - generic [ref=e580]: 智慧健康养老服务与管理就业方向
+              - row "食品营养与健康专业薪资待遇 哪些大学有健康与医疗保障专业" [ref=e581]:
+                - cell "食品营养与健康专业薪资待遇" [ref=e582]:
+                  - link "食品营养与健康专业薪资待遇" [ref=e583] [cursor=pointer]:
+                    - /url: /s?wd=%E9%A3%9F%E5%93%81%E8%90%A5%E5%85%BB%E4%B8%8E%E5%81%A5%E5%BA%B7%E4%B8%93%E4%B8%9A%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87&rsf=101636803&rsp=2&f=1&rs_src=0&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&rsv_dl=brs_28338_3
+                    - generic [ref=e585]: 食品营养与健康专业薪资待遇
+                - cell "哪些大学有健康与医疗保障专业" [ref=e586]:
+                  - link "哪些大学有健康与医疗保障专业" [ref=e587] [cursor=pointer]:
+                    - /url: /s?wd=%E5%93%AA%E4%BA%9B%E5%A4%A7%E5%AD%A6%E6%9C%89%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A&rsf=101636803&rsp=3&f=1&rs_src=0&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&rsv_dl=brs_28338_4
+                    - generic [ref=e589]: 哪些大学有健康与医疗保障专业
+              - row "GE医疗薪资待遇 薪酬和工资的区别" [ref=e590]:
+                - cell "GE医疗薪资待遇" [ref=e591]:
+                  - link "GE医疗薪资待遇" [ref=e592] [cursor=pointer]:
+                    - /url: /s?wd=GE%E5%8C%BB%E7%96%97%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87&rsf=101631203&rsp=4&f=1&rs_src=0&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&rsv_dl=brs_28338_5
+                    - generic [ref=e594]: GE医疗薪资待遇
+                - cell "薪酬和工资的区别" [ref=e595]:
+                  - link "薪酬和工资的区别" [ref=e596] [cursor=pointer]:
+                    - /url: /s?wd=%E8%96%AA%E9%85%AC%E5%92%8C%E5%B7%A5%E8%B5%84%E7%9A%84%E5%8C%BA%E5%88%AB&rsf=101631202&rsp=5&f=1&rs_src=0&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&rsv_dl=brs_28338_6
+                    - generic [ref=e598]: 薪酬和工资的区别
+              - row "处级干部医疗待遇 职工医疗期间工资待遇" [ref=e599]:
+                - cell "处级干部医疗待遇" [ref=e600]:
+                  - link "处级干部医疗待遇" [ref=e601] [cursor=pointer]:
+                    - /url: /s?wd=%E5%A4%84%E7%BA%A7%E5%B9%B2%E9%83%A8%E5%8C%BB%E7%96%97%E5%BE%85%E9%81%87&rsf=101631203&rsp=6&f=1&rs_src=0&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&rsv_dl=brs_28338_7
+                    - generic [ref=e603]: 处级干部医疗待遇
+                - cell "职工医疗期间工资待遇" [ref=e604]:
+                  - link "职工医疗期间工资待遇" [ref=e605] [cursor=pointer]:
+                    - /url: /s?wd=%E8%81%8C%E5%B7%A5%E5%8C%BB%E7%96%97%E6%9C%9F%E9%97%B4%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87&rsf=101631203&rsp=7&f=1&rs_src=0&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&rsv_dl=brs_28338_8
+                    - generic [ref=e607]: 职工医疗期间工资待遇
+              - row "环球医疗待遇工资 医疗待遇类别" [ref=e608]:
+                - cell "环球医疗待遇工资" [ref=e609]:
+                  - link "环球医疗待遇工资" [ref=e610] [cursor=pointer]:
+                    - /url: /s?wd=%E7%8E%AF%E7%90%83%E5%8C%BB%E7%96%97%E5%BE%85%E9%81%87%E5%B7%A5%E8%B5%84&rsf=101631203&rsp=8&f=1&rs_src=0&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&rsv_dl=brs_28338_9
+                    - generic [ref=e612]: 环球医疗待遇工资
+                - cell "医疗待遇类别" [ref=e613]:
+                  - link "医疗待遇类别" [ref=e614] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E5%BE%85%E9%81%87%E7%B1%BB%E5%88%AB&rsf=101631203&rsp=9&f=1&rs_src=0&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&rsv_dl=brs_28338_10
+                    - generic [ref=e616]: 医疗待遇类别
+      - generic [ref=e619]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e620]:
+          - generic [ref=e621]: "1"
+        - link "2" [ref=e622] [cursor=pointer]:
+          - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&pn=10&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&ie=utf-8&usm=1&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&topic_pn=
+          - generic [ref=e623]: "2"
+        - link "3" [ref=e624] [cursor=pointer]:
+          - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&pn=20&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&ie=utf-8&usm=1&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&topic_pn=
+          - generic [ref=e625]: "3"
+        - link "4" [ref=e626] [cursor=pointer]:
+          - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&pn=30&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&ie=utf-8&usm=1&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&topic_pn=
+          - generic [ref=e627]: "4"
+        - link "5" [ref=e628] [cursor=pointer]:
+          - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&pn=40&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&ie=utf-8&usm=1&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&topic_pn=
+          - generic [ref=e629]: "5"
+        - link "6" [ref=e630] [cursor=pointer]:
+          - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&pn=50&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&ie=utf-8&usm=1&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&topic_pn=
+          - generic [ref=e631]: "6"
+        - link "7" [ref=e632] [cursor=pointer]:
+          - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&pn=60&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&ie=utf-8&usm=1&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&topic_pn=
+          - generic [ref=e633]: "7"
+        - link "8" [ref=e634] [cursor=pointer]:
+          - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&pn=70&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&ie=utf-8&usm=1&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&topic_pn=
+          - generic [ref=e635]: "8"
+        - link "9" [ref=e636] [cursor=pointer]:
+          - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&pn=80&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&ie=utf-8&usm=1&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&topic_pn=
+          - generic [ref=e637]: "9"
+        - link "10" [ref=e638] [cursor=pointer]:
+          - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&pn=90&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&ie=utf-8&usm=1&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&topic_pn=
+          - generic [ref=e639]: "10"
+        - link "下一页" [ref=e640] [cursor=pointer]:
+          - /url: /s?wd=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&pn=10&oq=%E5%81%A5%E5%BA%B7%E4%B8%8E%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%20%E8%96%AA%E9%85%AC%20%E5%BE%85%E9%81%87&ie=utf-8&usm=1&rsv_pq=8e0ce4b1018434a9&rsv_t=9379%2B7LeCbDYJTPd%2BDS9Zmnm789kvCId0O4nunyA5K039g98snPBk3nfrgA&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e641]
+      - generic [ref=e644]:
+        - link "帮助" [ref=e645] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e646] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e647] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e648] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

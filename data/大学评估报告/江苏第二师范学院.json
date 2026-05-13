@@ -1,0 +1,45 @@
+{
+  "university_name": "江苏第二师范学院",
+  "short_name": "江苏二师 / JSNU",
+  "location": {
+    "province": "江苏",
+    "city": "南京",
+    "campuses": [
+      "草场门校区",
+      "石湫校区"
+    ]
+  },
+  "academic_standing": {
+    "national_first_class_majors": 5,
+    "key_disciplines": [
+      "教育学",
+      "中国语言文学",
+      "数学"
+    ],
+    "master_points_status": "立项建设中"
+  },
+  "student_quality": {
+    "jiangsu_history_rank": "Top 5%",
+    "jiangsu_physics_rank": "Top 22%",
+    "rural_teacher_program": true
+  },
+  "employment_outcomes": {
+    "education_industry_rate": "57.94%",
+    "further_study_rate": "36.10%",
+    "top_employers": [
+      "江苏省各区教育局",
+      "公办中小学"
+    ]
+  },
+  "evaluation_scores": {
+    "academic": 3.2,
+    "employment": 4.5,
+    "location": 4.3,
+    "brand": 4.0,
+    "overall": 3.76
+  },
+  "risk_factors": [
+    "校区偏远",
+    "非师范专业弱势"
+  ]
+}

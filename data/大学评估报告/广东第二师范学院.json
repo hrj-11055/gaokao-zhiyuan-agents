@@ -1,0 +1,49 @@
+{
+  "university_name": "广东第二师范学院",
+  "short_name": "广二师 / GDU2",
+  "established_year": 1955,
+  "location": {
+    "city": "广州市",
+    "districts": [
+      "海珠区",
+      "花都区"
+    ],
+    "city_gdp_2024": "3.04万亿元"
+  },
+  "academic_standing": {
+    "ranking_softscience_2025": 423,
+    "master_degree_status": "立项建设单位",
+    "key_disciplines": [
+      "教育学",
+      "数学",
+      "生态学"
+    ]
+  },
+  "admission_stats_2025_gd": {
+    "history_group_min_rank": 15230,
+    "physics_group_min_rank": 82100,
+    "special_programs": "地方教师专项计划"
+  },
+  "employment_profile": {
+    "overall_employment_rate": "86.4%",
+    "further_study_rate": "6.78%",
+    "primary_industry": "Education (53%)",
+    "avg_starting_salary": 5800
+  },
+  "campus_life": {
+    "dormitory_quality": {
+      "haizhu": "Low (Old facilities)",
+      "huadu": "High (Modern 4-person room)"
+    },
+    "transfer_major_difficulty": "Moderate"
+  },
+  "scores": {
+    "academic": 2.2,
+    "employment": 2.8,
+    "location": 3.8,
+    "globalization": 2.1,
+    "freedom": 3.0,
+    "brand": 3.2,
+    "weighted_total": 2.75
+  }
+}

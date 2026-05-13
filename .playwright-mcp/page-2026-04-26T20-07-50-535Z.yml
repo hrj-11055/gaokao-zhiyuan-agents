@@ -1,0 +1,371 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiks6brqIyUAxXLiCsGHc21MZoQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 汕头大学 2024 其他省份 录取分数线 投档线 汕头大学 2024 其他省份 录取分数线 投档线
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%25B1%2595%25E5%25A4%25B4%25E5%25A4%25A7%25E5%25AD%25A6%2B2024%2B%25E5%2585%25B6%25E4%25BB%2596%25E7%259C%2581%25E4%25BB%25BD%2B%25E5%25BD%2595%25E5%258F%2596%25E5%2588%2586%25E6%2595%25B0%25E7%25BA%25BF%2B%25E6%258A%2595%25E6%25A1%25A3%25E7%25BA%25BF&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&aep=1&ntc=1&sa=X&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ2J8OegQIEhAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&sa=X&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ0pQJegQIGBAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "视频" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sa=X&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQtKgLegQIFRAB
+              - generic [ref=e95]: 视频
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "图片" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sa=X&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQtKgLegQIFBAB
+              - generic [ref=e103]: 图片
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sa=X&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQs6gLegQIFhAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考" [level=2] [ref=e152]:
+          - generic [ref=e153]: 正在思考
+        - progressbar [ref=e154]
+      - main [ref=e156]:
+        - generic [ref=e160]:
+          - generic [ref=e163]:
+            - heading "网页搜索结果" [level=2] [ref=e164]
+            - generic [ref=e165]:
+              - generic [ref=e168]:
+                - link "多少分能上汕头大学（附2024年投档分数线） 大学生必备网 https://www.dxsbb.com › news" [ref=e170] [cursor=pointer]:
+                  - /url: https://www.dxsbb.com/news/89978.html
+                  - heading "多少分能上汕头大学（附2024年投档分数线）" [level=3] [ref=e171]
+                  - generic [ref=e176]:
+                    - generic [ref=e178]: 大学生必备网
+                    - generic [ref=e180]: https://www.dxsbb.com › news
+                - button "关于这条结果的详细信息" [ref=e181] [cursor=pointer]:
+                  - img [ref=e184]
+              - generic [ref=e187]:
+                - generic [ref=e188]: 2025年5月20日 —
+                - generic [ref=e189]:
+                  - text: 2、
+                  - emphasis [ref=e190]: 汕头大学投档分数线
+                  - text: （
+                  - emphasis [ref=e191]: 其他省份
+                  - text: ） ;
+                  - emphasis [ref=e192]: "2024"
+                  - text: ", 上海, 本科,"
+                  - emphasis [ref=e193]: 汕头大学
+                  - text: ", 78701 ;"
+                  - emphasis [ref=e194]: "2024"
+                  - text: ", 北京, 本科, 4420"
+                  - emphasis [ref=e195]: 汕头大学
+                  - text: ", 01 ..."
+          - generic [ref=e199]:
+            - generic [ref=e202]:
+              - link "汕头大学公布2024年广东省投档线物理类550分历史类542分 教育在线 https://guangdong.eol.cn › 202407 › t20240719_2625070" [ref=e204] [cursor=pointer]:
+                - /url: https://guangdong.eol.cn/gdgd/202407/t20240719_2625070.shtml
+                - heading "汕头大学公布2024年广东省投档线物理类550分历史类542分" [level=3] [ref=e205]
+                - generic [ref=e207]:
+                  - img [ref=e211]
+                  - generic [ref=e213]:
+                    - generic [ref=e215]: 教育在线
+                    - generic [ref=e217]: https://guangdong.eol.cn › 202407 › t20240719_2625070
+              - button "关于这条结果的详细信息" [ref=e218] [cursor=pointer]:
+                - img [ref=e221]
+            - generic [ref=e224]:
+              - generic [ref=e225]: 2024年7月19日 —
+              - generic [ref=e226]:
+                - text: 中国教育在线在
+                - emphasis [ref=e227]: 汕头大学
+                - text: 了解到，学校在
+                - emphasis [ref=e228]: "2024"
+                - text: 年普通高考本科批次普通类最低
+                - emphasis [ref=e229]: 投档
+                - text: 分为：物理类550分、历史类542分。汕大在省内生源充足，招生继续保持良好态势。
+          - generic [ref=e233]:
+            - generic [ref=e236]:
+              - link "2025汕头大学录取分数线（含2023-2024历年） 大学生必备网 https://www.dxsbb.com › news" [ref=e238] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/33903.html
+                - heading "2025汕头大学录取分数线（含2023-2024历年）" [level=3] [ref=e239]
+                - generic [ref=e244]:
+                  - generic [ref=e246]: 大学生必备网
+                  - generic [ref=e248]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e249] [cursor=pointer]:
+                - img [ref=e252]
+            - generic [ref=e255]:
+              - generic [ref=e256]: 2026年4月10日 —
+              - generic [ref=e257]:
+                - emphasis [ref=e258]: 其他
+                - text: 各省各类型各专业
+                - emphasis [ref=e259]: 录取分数线
+                - text: ：https://zs.stu.edu.cn/bkzn/lnfs.htm. 2、
+                - emphasis [ref=e260]: 2024汕头大学录取分数线
+                - text: .
+                - emphasis [ref=e261]: 2024汕头大学
+                - text: 在广东录取情况. 年度,
+                - emphasis [ref=e262]: 省份
+                - text: ", 专业名称 ..."
+          - generic [ref=e266]:
+            - generic [ref=e269]:
+              - link "2024年汕头大学在广东省普通本科批录取分数线 - 高考- 教育在线 中国教育在线高考 https://gaokao.eol.cn › 202408 › t20240820_2629252" [ref=e271] [cursor=pointer]:
+                - /url: https://gaokao.eol.cn/guang_dong/dongtai/202408/t20240820_2629252.shtml
+                - heading "2024年汕头大学在广东省普通本科批录取分数线 - 高考- 教育在线" [level=3] [ref=e272]
+                - generic [ref=e277]:
+                  - generic [ref=e279]: 中国教育在线高考
+                  - generic [ref=e281]: https://gaokao.eol.cn › 202408 › t20240820_2629252
+              - button "关于这条结果的详细信息" [ref=e282] [cursor=pointer]:
+                - img [ref=e285]
+            - generic [ref=e288]:
+              - generic [ref=e289]: 2024年8月20日 —
+              - generic [ref=e290]:
+                - emphasis [ref=e291]: "2024"
+                - text: 年
+                - emphasis [ref=e292]: 汕头大学
+                - text: 在广东省普通本科批
+                - emphasis [ref=e293]: 录取分数线
+                - text: 出炉，以下是各专业组录取人数、分数线及位次情况。 科类, 院校名称, 专业组代码, 计划数,
+                - emphasis [ref=e294]: 投档
+                - text: 人数,
+                - emphasis [ref=e295]: 投档
+                - text: 最低 ...
+          - generic [ref=e299]:
+            - generic [ref=e302]:
+              - link "汕头大学：汕大2024年广东省本科批次投档线公布！ 高考志愿填报 https://www.gaokao.cn › school › newsdetail" [ref=e304] [cursor=pointer]:
+                - /url: https://www.gaokao.cn/school/283/newsdetail/68021/216063
+                - heading "汕头大学：汕大2024年广东省本科批次投档线公布！" [level=3] [ref=e305]
+                - generic [ref=e307]:
+                  - img [ref=e311]
+                  - generic [ref=e313]:
+                    - generic [ref=e315]: 高考志愿填报
+                    - generic [ref=e317]: https://www.gaokao.cn › school › newsdetail
+              - button "关于这条结果的详细信息" [ref=e318] [cursor=pointer]:
+                - img [ref=e321]
+            - generic [ref=e325]:
+              - text: 今年，校本部普通历史类2个专业组
+              - emphasis [ref=e326]: 投档线
+              - text: 分别为201组542分（排位17624）、202组544分（排位16784），最低排位分别比去年提升870位和1710位。排位1.5万名以内的考生403人，同比2023 ...
+          - generic [ref=e330]:
+            - generic [ref=e333]:
+              - link "汕头大学2024年广东高考招生专业录取分数线分析！ 知乎 https://zhuanlan.zhihu.com › ..." [ref=e335] [cursor=pointer]:
+                - /url: https://zhuanlan.zhihu.com/p/1906643017013637509
+                - heading "汕头大学2024年广东高考招生专业录取分数线分析！" [level=3] [ref=e336]
+                - generic [ref=e341]:
+                  - generic [ref=e343]: 知乎
+                  - generic [ref=e345]: https://zhuanlan.zhihu.com › ...
+              - button "关于这条结果的详细信息" [ref=e346] [cursor=pointer]:
+                - img [ref=e349]
+            - generic [ref=e352]:
+              - generic [ref=e353]: 2025年5月16日 —
+              - generic [ref=e354]:
+                - emphasis [ref=e355]: 汕头大学2024
+                - text: 年广东高考招生专业
+                - emphasis [ref=e356]: 录取分数线
+                - text: 分析！
+                - emphasis [ref=e357]: 汕头大学
+                - text: 是1981年经国务院批准成立的广东省省属综合性大学，是教育部、广东省、李嘉诚基金会三方共 ...
+            - generic [ref=e359]: 缺少字词： 其他 ‎投档 ‎线
+          - generic [ref=e363]:
+            - generic [ref=e366]:
+              - link "汕头大学：引入先进课程体系为学生提供出国交流机会 新华网 http://www.news.cn › edu › 20240528" [ref=e368] [cursor=pointer]:
+                - /url: http://www.news.cn/edu/20240528/613454a989f44e07bc1e2db781494adc/c.html
+                - heading "汕头大学：引入先进课程体系为学生提供出国交流机会" [level=3] [ref=e369]
+                - generic [ref=e374]:
+                  - generic [ref=e376]: 新华网
+                  - generic [ref=e378]: http://www.news.cn › edu › 20240528
+              - button "关于这条结果的详细信息" [ref=e379] [cursor=pointer]:
+                - img [ref=e382]
+            - generic [ref=e385]:
+              - generic [ref=e386]: 2024年5月28日 —
+              - generic [ref=e387]:
+                - text: 我校执行各省的
+                - emphasis [ref=e388]: 投档
+                - text: 方式，对进档考生在专业
+                - emphasis [ref=e389]: 录取
+                - text: 方面，按照“
+                - emphasis [ref=e390]: 分数
+                - text: 优先”原则，即根据考生总成绩从高到低顺序
+                - emphasis [ref=e391]: 录取
+                - text: ，优先安排高分考生的第一专业志愿，若该 ...
+            - generic [ref=e393]:
+              - text: 缺少字词： 其他 ‎| 必须包含：
+              - link "其他" [ref=e394] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%22%E5%85%B6%E4%BB%96%22+%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sa=X&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ5t4CegQILBAB
+          - generic [ref=e399]:
+            - heading "相关问题" [level=2] [ref=e401]
+            - generic [ref=e402]:
+              - button "汕头大学2024年录取分数线？" [ref=e408] [cursor=pointer]:
+                - generic [ref=e410]: 汕头大学2024年录取分数线？
+                - img [ref=e413]
+              - button "汕头大学为什么不是211？" [ref=e422] [cursor=pointer]:
+                - generic [ref=e424]: 汕头大学为什么不是211？
+                - img [ref=e427]
+              - button "高考630分什么水平？" [ref=e436] [cursor=pointer]:
+                - generic [ref=e438]: 高考630分什么水平？
+                - img [ref=e441]
+              - button "汕头大学是一本还是二本？" [ref=e450] [cursor=pointer]:
+                - generic [ref=e452]: 汕头大学是一本还是二本？
+                - img [ref=e455]
+          - generic [ref=e460]:
+            - heading "网页搜索结果" [level=2] [ref=e461]
+            - generic [ref=e462]:
+              - generic [ref=e465]:
+                - link "抄作业！2024广东考生600分、500分、400分、300分能上 ... 高考直通车App https://app.gaokaozhitongche.com › news" [ref=e467] [cursor=pointer]:
+                  - /url: https://app.gaokaozhitongche.com/news/h/D2VmVV6w
+                  - heading "抄作业！2024广东考生600分、500分、400分、300分能上 ..." [level=3] [ref=e468]
+                  - generic [ref=e473]:
+                    - generic [ref=e475]: 高考直通车App
+                    - generic [ref=e477]: https://app.gaokaozhitongche.com › news
+                - button "关于这条结果的详细信息" [ref=e478] [cursor=pointer]:
+                  - img [ref=e481]
+              - generic [ref=e484]:
+                - generic [ref=e485]: 2024年7月2日 —
+                - generic [ref=e486]:
+                  - text: 经省招生委员会研究决定，广东省
+                  - emphasis [ref=e487]: "2024"
+                  - text: 年普通高校招生各批次
+                  - emphasis [ref=e488]: 录取
+                  - text: 最低
+                  - emphasis [ref=e489]: 分数线
+                  - text: 如下： ... 大学、
+                  - emphasis [ref=e490]: 汕头大学
+                  - text: 等省重点院校。 图片 在510分~539分区间的同学，这 ...
+          - generic [ref=e494]:
+            - generic [ref=e497]:
+              - link "权威发布丨汕头大学2024年广东省投档线正式公布 高考志愿填报 https://www.gaokao.cn › school › newsdetail" [ref=e499] [cursor=pointer]:
+                - /url: https://www.gaokao.cn/school/283/newsdetail/68021/216046
+                - heading "权威发布丨汕头大学2024年广东省投档线正式公布" [level=3] [ref=e500]
+                - generic [ref=e502]:
+                  - img [ref=e506]
+                  - generic [ref=e508]:
+                    - generic [ref=e510]: 高考志愿填报
+                    - generic [ref=e512]: https://www.gaokao.cn › school › newsdetail
+              - button "关于这条结果的详细信息" [ref=e513] [cursor=pointer]:
+                - img [ref=e516]
+            - generic [ref=e520]:
+              - text: 权威发布丨
+              - emphasis [ref=e521]: 汕头大学2024
+              - text: 年广东省
+              - emphasis [ref=e522]: 投档线
+              - text: 正式公布：7月19日广东省
+              - emphasis [ref=e523]: "2024"
+              - text: 年普通高考本科批次正式投档汕大在省内生源充足招生继续保持良好态势
+              - emphasis [ref=e524]: 汕头大学2024
+              - text: 年本科招生计划 ...
+          - generic [ref=e528]:
+            - generic [ref=e531]:
+              - link "广东发布高考录取分数线6月28日起填报志愿 深圳政府在线 https://www.sz.gov.cn › zwdt › content › post_11391810" [ref=e533] [cursor=pointer]:
+                - /url: https://www.sz.gov.cn/cn/xxgk/zfxxgj/zwdt/content/post_11391810.html
+                - heading "广东发布高考录取分数线6月28日起填报志愿" [level=3] [ref=e534]
+                - generic [ref=e539]:
+                  - generic [ref=e541]: 深圳政府在线
+                  - generic [ref=e543]: https://www.sz.gov.cn › zwdt › content › post_11391810
+              - button "关于这条结果的详细信息" [ref=e544] [cursor=pointer]:
+                - img [ref=e547]
+            - generic [ref=e550]:
+              - generic [ref=e551]: 2024年6月26日 —
+              - generic [ref=e552]:
+                - text: 发布会上，广东省教育考试院院长欧阳谦发布广东省
+                - emphasis [ref=e553]: "2024"
+                - text: 年普通高校招生
+                - emphasis [ref=e554]: 录取
+                - text: 最低
+                - emphasis [ref=e555]: 分数线
+                - text: ：本科院校普通类历史总分428分，普通类物理总分442分；专科院校普通类历史 ...
+        - navigation [ref=e558]:
+          - heading "网页导航" [level=1] [ref=e559]
+          - text: "1"
+          - link "Page 2" [ref=e562] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sca_esv=164079556523993e&ei=lXDuaeSUMMuRruEPzevG0Qk&start=10&sa=N&sstk=Af77f_cBEYrPVgDF7yxvJXOH34Okvc9qbnDlAUt2V73Ur3uS10LDTJYknJAFHEAcnym3MDSf5xPuUauF8mb8UGnW6NQH3xy1xEsUzQ&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ8tMDegQIIhAE
+            - text: "2"
+          - link "Page 3" [ref=e564] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sca_esv=164079556523993e&ei=lXDuaeSUMMuRruEPzevG0Qk&start=20&sa=N&sstk=Af77f_cBEYrPVgDF7yxvJXOH34Okvc9qbnDlAUt2V73Ur3uS10LDTJYknJAFHEAcnym3MDSf5xPuUauF8mb8UGnW6NQH3xy1xEsUzQ&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ8tMDegQIIhAG
+            - text: "3"
+          - link "Page 4" [ref=e566] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sca_esv=164079556523993e&ei=lXDuaeSUMMuRruEPzevG0Qk&start=30&sa=N&sstk=Af77f_cBEYrPVgDF7yxvJXOH34Okvc9qbnDlAUt2V73Ur3uS10LDTJYknJAFHEAcnym3MDSf5xPuUauF8mb8UGnW6NQH3xy1xEsUzQ&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ8tMDegQIIhAI
+            - text: "4"
+          - link "Page 5" [ref=e568] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sca_esv=164079556523993e&ei=lXDuaeSUMMuRruEPzevG0Qk&start=40&sa=N&sstk=Af77f_cBEYrPVgDF7yxvJXOH34Okvc9qbnDlAUt2V73Ur3uS10LDTJYknJAFHEAcnym3MDSf5xPuUauF8mb8UGnW6NQH3xy1xEsUzQ&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ8tMDegQIIhAK
+            - text: "5"
+          - link "Page 6" [ref=e570] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sca_esv=164079556523993e&ei=lXDuaeSUMMuRruEPzevG0Qk&start=50&sa=N&sstk=Af77f_cBEYrPVgDF7yxvJXOH34Okvc9qbnDlAUt2V73Ur3uS10LDTJYknJAFHEAcnym3MDSf5xPuUauF8mb8UGnW6NQH3xy1xEsUzQ&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ8tMDegQIIhAM
+            - text: "6"
+          - link "Page 7" [ref=e572] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sca_esv=164079556523993e&ei=lXDuaeSUMMuRruEPzevG0Qk&start=60&sa=N&sstk=Af77f_cBEYrPVgDF7yxvJXOH34Okvc9qbnDlAUt2V73Ur3uS10LDTJYknJAFHEAcnym3MDSf5xPuUauF8mb8UGnW6NQH3xy1xEsUzQ&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ8tMDegQIIhAO
+            - text: "7"
+          - link "Page 8" [ref=e574] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sca_esv=164079556523993e&ei=lXDuaeSUMMuRruEPzevG0Qk&start=70&sa=N&sstk=Af77f_cBEYrPVgDF7yxvJXOH34Okvc9qbnDlAUt2V73Ur3uS10LDTJYknJAFHEAcnym3MDSf5xPuUauF8mb8UGnW6NQH3xy1xEsUzQ&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ8tMDegQIIhAQ
+            - text: "8"
+          - heading "下一页" [level=2] [ref=e576]:
+            - link "下一页" [ref=e577] [cursor=pointer]:
+              - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E5%85%B6%E4%BB%96%E7%9C%81%E4%BB%BD+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E6%8A%95%E6%A1%A3%E7%BA%BF&sca_esv=164079556523993e&ei=lXDuaeSUMMuRruEPzevG0Qk&start=10&sa=N&sstk=Af77f_cBEYrPVgDF7yxvJXOH34Okvc9qbnDlAUt2V73Ur3uS10LDTJYknJAFHEAcnym3MDSf5xPuUauF8mb8UGnW6NQH3xy1xEsUzQ&ved=2ahUKEwiks6brqIyUAxXLiCsGHc21MZoQ8NMDegQIIhAS
+              - generic [ref=e579]: 下一页
+        - navigation
+    - contentinfo [ref=e580]:
+      - heading "页脚链接" [level=1] [ref=e581]
+      - generic [ref=e585]:
+        - generic [ref=e589]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e591] [cursor=pointer]:
+            - generic [ref=e592]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e594]:
+              - text: "-"
+              - generic [ref=e595]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e597] [cursor=pointer]: 更新位置信息
+        - generic [ref=e600]:
+          - link "帮助" [ref=e601] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e602] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e603] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e604] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

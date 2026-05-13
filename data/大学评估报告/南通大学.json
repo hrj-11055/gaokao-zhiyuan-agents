@@ -1,0 +1,44 @@
+{
+  "university_name": "南通大学",
+  "short_name": "NTU / 通大",
+  "established_year": 1912,
+  "location": {
+    "province": "江苏省",
+    "city": "南通市",
+    "city_gdp_2023": "11813亿元"
+  },
+  "academic_standing": {
+    "esi_top_1_percent_count": 9,
+    "state_key_lab_count": 1,
+    "academician_count": 1,
+    "key_disciplines": [
+      "临床医学",
+      "神经科学",
+      "基础医学",
+      "纺织工程"
+    ]
+  },
+  "admission_difficulty": {
+    "jiangsu_physics_rank_avg": 80000,
+    "jiangsu_history_rank_avg": 19000,
+    "medical_major_premium": "High"
+  },
+  "employment_stats": {
+    "further_study_rate": "16.70%",
+    "primary_employment_sectors": [
+      "Healthcare",
+      "Manufacturing",
+      "Education"
+    ],
+    "top_employer": "Affiliated Hospital of Nantong University"
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.3,
+    "graduate_value": 3.6,
+    "location_advantage": 4.0,
+    "globalization": 2.9,
+    "student_freedom": 3.0,
+    "brand_asset": 3.7,
+    "overall_weighted_score": 3.48
+  }
+}

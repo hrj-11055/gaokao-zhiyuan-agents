@@ -1,0 +1,5 @@
+- generic [ref=e2]:
+  - heading "出错了" [level=2] [ref=e4]
+  - generic [ref=e5]: 404 Not Found (没有找到访问的页面)
+  - link "返回首页" [ref=e6] [cursor=pointer]:
+    - /url: /

@@ -1,0 +1,51 @@
+{
+  "university_name": "河南大学",
+  "english_name": "Henan University",
+  "abbreviation": "HENU",
+  "location": {
+    "main_campuses": [
+      "郑州龙子湖校区",
+      "开封明伦校区",
+      "开封金明校区"
+    ],
+    "province": "河南",
+    "city_gdp_zhengzhou": "13617亿元 (2024)"
+  },
+  "academic_status": {
+    "double_first_class": true,
+    "key_discipline": "生物学",
+    "national_key_labs": 3,
+    "esi_top_1_percent_count": 9
+  },
+  "student_quality": {
+    "henan_rank_history_liberal_arts": 18500,
+    "henan_rank_history_science": 82000,
+    "competition_level": "High"
+  },
+  "employment_and_further_study": {
+    "further_study_rate_total": "34.01%",
+    "domestic_study_rate": "29.93%",
+    "overseas_study_rate": "4.08%",
+    "top_employers": [
+      "中国建筑",
+      "华为",
+      "河南省教育系统",
+      "国家电网"
+    ],
+    "starting_salary_median": 5800
+  },
+  "evaluation_scores": {
+    "academic_capital": 4.0,
+    "graduate_value": 3.5,
+    "location_potential": 3.8,
+    "globalization": 3.5,
+    "student_empowerment": 3.4,
+    "brand_asset": 4.3,
+    "weighted_total_score": 3.77
+  },
+  "risk_factors": [
+    "文物保护压力",
+    "双城办学资源分散",
+    "工科转型期阵痛"
+  ]
+}

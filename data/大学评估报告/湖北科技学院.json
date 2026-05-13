@@ -1,0 +1,42 @@
+{
+  "university_name": "湖北科技学院",
+  "short_name": "湖科 / HUST",
+  "location": {
+    "province": "湖北省",
+    "city": "咸宁市",
+    "campus": [
+      "温泉校区",
+      "咸安校区"
+    ]
+  },
+  "academic_standing": {
+    "soft_ranking_2025": 381,
+    "key_disciplines": [
+      "临床医学",
+      "药学",
+      "核技术及应用"
+    ],
+    "state_key_labs": 0,
+    "provincial_key_labs": 2
+  },
+  "admission_stats": {
+    "avg_physics_score_hb": 524,
+    "avg_history_score_hb": 512,
+    "medical_premium": "High"
+  },
+  "employment": {
+    "overall_employment_rate": "93.5%",
+    "further_study_rate": "18.5%",
+    "top_industry": "Healthcare",
+    "median_starting_salary": 4800
+  },
+  "risk_factors": [
+    "Academic Integrity History",
+    "Geographic Limitation"
+  ],
+  "tags": [
+    "Medical Focus",
+    "Nuclear Engineering",
+    "Wuhan Metropolitan Area"
+  ]
+}

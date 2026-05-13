@@ -1,0 +1,44 @@
+{
+  "university_name": "中国消防救援学院",
+  "short_name": "消院 / CFRI",
+  "tags": [
+    "部属高校",
+    "提前批",
+    "行政编制",
+    "半军事化"
+  ],
+  "academic": {
+    "key_disciplines": [
+      "消防指挥",
+      "消防工程",
+      "火灾勘查"
+    ],
+    "lab_count": 3,
+    "faculty_strength": "实战派为主，外聘院士指导"
+  },
+  "admission": {
+    "avg_score_above_line": "50-80分",
+    "physical_requirement": "极高",
+    "gender_ratio": "男多女少 (约 20:1)"
+  },
+  "employment": {
+    "primary_destination": "国家综合性消防救援队伍",
+    "employment_rate": "96%+",
+    "starting_salary_range": "7500-9000 CNY",
+    "career_path": "初级指挥员 -> 中级指挥员"
+  },
+  "location": {
+    "city": "北京",
+    "district": "昌平",
+    "advantage": "靠近部委，实战资源丰富"
+  },
+  "scores": {
+    "academic_capital": 3.2,
+    "graduate_value": 4.8,
+    "location_power": 4.2,
+    "globalization": 2.5,
+    "student_freedom": 1.5,
+    "brand_asset": 4.0,
+    "overall_weighted_score": 3.76
+  }
+}

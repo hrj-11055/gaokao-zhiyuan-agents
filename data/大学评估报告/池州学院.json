@@ -1,0 +1,36 @@
+{
+  "university_name": "池州学院",
+  "short_name": "CZU",
+  "location": {
+    "province": "安徽省",
+    "city": "池州市",
+    "tier": "三线城市"
+  },
+  "academic_profile": {
+    "master_point_status": "重点立项建设单位",
+    "key_disciplines": [
+      "中国史",
+      "计算机科学与技术",
+      "微电子科学与工程"
+    ],
+    "a_class_disciplines": 0
+  },
+  "admission_data_2025": {
+    "anhui_liberal_arts_rank": 30517,
+    "anhui_science_rank": 147025
+  },
+  "employment_stats": {
+    "further_study_rate": "7.15%",
+    "starting_salary_median": 6300,
+    "top_employer_sectors": [
+      "半导体",
+      "制造业",
+      "教育"
+    ]
+  },
+  "evaluation": {
+    "comprehensive_score": 2.27,
+    "star_rating": "★★★☆☆",
+    "recommendation_index": "高 (针对务实型考生)"
+  }
+}

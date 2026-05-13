@@ -1,0 +1,43 @@
+{
+  "university_name": "沈阳农业大学",
+  "short_name": "沈农",
+  "location": {
+    "province": "辽宁",
+    "city": "沈阳",
+    "district": "沈河区"
+  },
+  "academic_ranking": {
+    "soft_science_2025": 171,
+    "key_disciplines": [
+      "园艺学",
+      "农业工程",
+      "作物学"
+    ]
+  },
+  "faculty": {
+    "total_academicians": 2,
+    "doctoral_supervisors": 200
+  },
+  "student_life": {
+    "dormitory_rating": "B-",
+    "canteen_rating": "A+",
+    "campus_vibe": "Pragmatic"
+  },
+  "employment_stats": {
+    "further_study_rate": "31.85%",
+    "key_employers": [
+      "Muyuan",
+      "Beidahuang",
+      "Governmental Selection"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 4.2,
+    "employment_value": 3.6,
+    "location_potential": 3.5,
+    "globalization": 2.8,
+    "student_freedom": 3.8,
+    "brand_asset": 3.7,
+    "weighted_total": 3.71
+  }
+}

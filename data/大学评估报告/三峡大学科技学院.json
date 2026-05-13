@@ -1,0 +1,52 @@
+{
+  "university_name": "三峡大学科技学院",
+  "short_name": "三科",
+  "location": {
+    "province": "湖北",
+    "city": "宜昌",
+    "district": "点军区",
+    "city_tier": "3",
+    "city_gdp_2024": "6022亿元"
+  },
+  "academic": {
+    "type": "理工类",
+    "level": "独立学院（转设中）",
+    "parent_university": "三峡大学",
+    "provincial_first_class_majors": [
+      "电气工程及其自动化",
+      "水利水电工程",
+      "土木工程"
+    ],
+    "key_disciplines": [
+      "电力系统",
+      "水利工程",
+      "临床医学"
+    ]
+  },
+  "admission_stats": {
+    "avg_score_physics_hubei": 486,
+    "avg_score_history_hubei": 468,
+    "competition_level": "Moderate"
+  },
+  "employment": {
+    "overall_rate": "90.46%",
+    "major_employers": [
+      "State Grid Corporation of China",
+      "China Southern Power Grid",
+      "PowerChina",
+      "Energy China"
+    ],
+    "further_study_rate": "8.12%",
+    "median_salary": 5200
+  },
+  "campus_life": {
+    "new_campus_status": "Fully Operational (2024)",
+    "dormitory_standard": "4-person, Elevator, AC, Private Bathroom",
+    "transfer_status": "Ongoing (to Private Undergraduate)"
+  },
+  "evaluation": {
+    "comprehensive_score": 3.06,
+    "industry_reputation": "High (Power & Water Conservancy)",
+    "brand_risk": "Medium (due to transfer)"
+  }
+}

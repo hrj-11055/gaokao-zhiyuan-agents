@@ -1,0 +1,353 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 汕头大学 保送生 阳光高考 2024 2025 人数 外语类 汕头大学 保送生 阳光高考 2024 2025 人数 外语类
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%25B1%2595%25E5%25A4%25B4%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E4%25BF%259D%25E9%2580%2581%25E7%2594%259F%2B%25E9%2598%25B3%25E5%2585%2589%25E9%25AB%2598%25E8%2580%2583%2B2024%2B2025%2B%25E4%25BA%25BA%25E6%2595%25B0%2B%25E5%25A4%2596%25E8%25AF%25AD%25E7%25B1%25BB&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E9%98%B3%E5%85%89%E9%AB%98%E8%80%83+2024+2025+%E4%BA%BA%E6%95%B0+%E5%A4%96%E8%AF%AD%E7%B1%BB&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igY4PNvvZR3kjyXs3_Y2qrhNiEORlc-yOz9ZXNn_D2KBB9To_bk3ccv1NfNL9D7y1uc2D45SV0ulTUO_twiZxDhCGibsEA&aep=1&ntc=1&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQ2J8OegQIEhAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E9%98%B3%E5%85%89%E9%AB%98%E8%80%83+2024+2025+%E4%BA%BA%E6%95%B0+%E5%A4%96%E8%AF%AD%E7%B1%BB&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igY4PNvvZR3kjyXs3_Y2qrhNiEORlc-yOz9ZXNn_D2KBB9To_bk3ccv1NfNL9D7y1uc2D45SV0ulTUO_twiZxDhCGibsEA&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQ0pQJegQIGBAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "购物" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igY4PNvvZR3kjyXs3_Y2qrhNiEORlc-yOz9ZXNn_D2KBB9To_bk3ccv1NfNL9D7y1uc2D45SV0ulTUO_twiZxDhCGibsEA&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E9%98%B3%E5%85%89%E9%AB%98%E8%80%83+2024+2025+%E4%BA%BA%E6%95%B0+%E5%A4%96%E8%AF%AD%E7%B1%BB&ved=1t:220175&ictx=111
+              - generic [ref=e95]: 购物
+          - listitem [ref=e96]:
+            - link "图片" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igY4PNvvZR3kjyXs3_Y2qrhNiEORlc-yOz9ZXNn_D2KBB9To_bk3ccv1NfNL9D7y1uc2D45SV0ulTUO_twiZxDhCGibsEA&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E9%98%B3%E5%85%89%E9%AB%98%E8%80%83+2024+2025+%E4%BA%BA%E6%95%B0+%E5%A4%96%E8%AF%AD%E7%B1%BB&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQtKgLegQIFhAB
+              - generic [ref=e99]: 图片
+          - listitem [ref=e100]:
+            - link "短视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igY4PNvvZR3kjyXs3_Y2qrhNiEORlc-yOz9ZXNn_D2KBB9To_bk3ccv1NfNL9D7y1uc2D45SV0ulTUO_twiZxDhCGibsEA&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E9%98%B3%E5%85%89%E9%AB%98%E8%80%83+2024+2025+%E4%BA%BA%E6%95%B0+%E5%A4%96%E8%AF%AD%E7%B1%BB&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQs6gLegQIFRAB
+              - generic [ref=e103]: 短视频
+          - listitem [ref=e104]:
+            - link "视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igY4PNvvZR3kjyXs3_Y2qrhNiEORlc-yOz9ZXNn_D2KBB9To_bk3ccv1NfNL9D7y1uc2D45SV0ulTUO_twiZxDhCGibsEA&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E9%98%B3%E5%85%89%E9%AB%98%E8%80%83+2024+2025+%E4%BA%BA%E6%95%B0+%E5%A4%96%E8%AF%AD%E7%B1%BB&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQtKgLegQIFBAB
+              - generic [ref=e107]: 视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考" [level=2] [ref=e152]:
+          - generic [ref=e153]: 正在思考
+        - progressbar [ref=e154]
+      - main [ref=e156]:
+        - generic [ref=e160]:
+          - generic [ref=e163]:
+            - heading "网页搜索结果" [level=2] [ref=e164]
+            - generic [ref=e165]:
+              - generic [ref=e168]:
+                - link "保送生名单 - 阳光高考- 学信网 阳光高考 https://gaokao.chsi.com.cn › wap › mdgs › bssindex" [ref=e170] [cursor=pointer]:
+                  - /url: https://gaokao.chsi.com.cn/wap/mdgs/bssindex/
+                  - heading "保送生名单 - 阳光高考- 学信网" [level=3] [ref=e171]
+                  - generic [ref=e176]:
+                    - generic [ref=e178]: 阳光高考
+                    - generic [ref=e180]: https://gaokao.chsi.com.cn › wap › mdgs › bssindex
+                - button "关于这条结果的详细信息" [ref=e181] [cursor=pointer]:
+                  - img [ref=e184]
+              - generic [ref=e188]:
+                - text: 本站公示各类名单，包括：
+                - emphasis [ref=e189]: 保送生
+                - text: 资格名单、
+                - emphasis [ref=e190]: 保送生
+                - text: 拟录取名单、艺术特长生名单、高水平运动员名单、自主选拔名单。省级优秀学生和
+                - emphasis [ref=e191]: 外国语
+                - text: 学校推荐
+                - emphasis [ref=e192]: 保送生
+                - text: 名单由省级招办提供 ...
+          - generic [ref=e196]:
+            - generic [ref=e199]:
+              - link "名单公示_阳光高考 - 学信网 阳光高考 https://gaokao.chsi.com.cn › mdgs › bsszgmd › listjx" [ref=e201] [cursor=pointer]:
+                - /url: https://gaokao.chsi.com.cn/wap/mdgs/bsszgmd/listjx/
+                - heading "名单公示_阳光高考 - 学信网" [level=3] [ref=e202]
+                - generic [ref=e207]:
+                  - generic [ref=e209]: 阳光高考
+                  - generic [ref=e211]: https://gaokao.chsi.com.cn › mdgs › bsszgmd › listjx
+              - button "关于这条结果的详细信息" [ref=e212] [cursor=pointer]:
+                - img [ref=e215]
+            - generic [ref=e219]:
+              - text: 本站公示各类名单，包括：
+              - emphasis [ref=e220]: 保送生
+              - text: 资格名单、
+              - emphasis [ref=e221]: 保送生
+              - text: 拟录取名单、艺术特长生名单、高水平运动员名单、自主选拔名单。省级优秀学生和
+              - emphasis [ref=e222]: 外国语
+              - text: 学校推荐
+              - emphasis [ref=e223]: 保送生
+              - text: 名单由省级招办提供 ...
+            - generic [ref=e225]: 缺少字词： 汕头 ‎大学 ‎人数
+          - generic [ref=e229]:
+            - generic [ref=e232]:
+              - link "汕头大学2025年招生计划（汇总） - 52艺考网 52ikao.com https://www.52ikao.com › h-nd-46342" [ref=e234] [cursor=pointer]:
+                - /url: https://www.52ikao.com/h-nd-46342.html?m21090pageno=1067
+                - heading "汕头大学2025年招生计划（汇总） - 52艺考网" [level=3] [ref=e235]
+                - generic [ref=e240]:
+                  - generic [ref=e242]: 52ikao.com
+                  - generic [ref=e244]: https://www.52ikao.com › h-nd-46342
+              - button "关于这条结果的详细信息" [ref=e245] [cursor=pointer]:
+                - img [ref=e248]
+            - generic [ref=e252]:
+              - text: 一、报名1．符合普通高校年度招生工作规定中报名条件者均可报考。 2．各省（区、市）应在2009年1月1日前完成本地区艺术类考生的
+              - emphasis [ref=e253]: 高考
+              - text: 报名工作。 二、计划编制3．独立设置本科艺术 ...
+          - generic [ref=e257]:
+            - generic [ref=e260]:
+              - link "山东高考分数线一段二段什么意思 掌上高考 https://m.gaokao.cn › ..." [ref=e262] [cursor=pointer]:
+                - /url: https://m.gaokao.cn/zd/10594
+                - heading "山东高考分数线一段二段什么意思" [level=3] [ref=e263]
+                - generic [ref=e268]:
+                  - generic [ref=e270]: 掌上高考
+                  - generic [ref=e272]: https://m.gaokao.cn › ...
+              - button "关于这条结果的详细信息" [ref=e273] [cursor=pointer]:
+                - img [ref=e276]
+            - generic [ref=e280]:
+              - emphasis [ref=e281]: "2025"
+              - text: "-12-22"
+              - emphasis [ref=e282]: "2025"
+              - text: 年
+              - emphasis [ref=e283]: 汕头大学
+              - text: 医学院在四川省有招生计划，其中口腔医学专业招生 ... 东南大学2022年
+              - emphasis [ref=e284]: 外语类保送生
+              - text: 招生简章 · 太原旅游职业学院2021年单独招生章程.
+              - emphasis [ref=e285]: 高考
+              - text: ...
+          - generic [ref=e289]:
+            - generic [ref=e292]:
+              - link "老域名站群资源- NameSilo价格过期域名 Google https://sites.google.com › iia.xintaitong.com › namesilo..." [ref=e294] [cursor=pointer]:
+                - /url: https://sites.google.com/iia.xintaitong.com/9yfjel/namesilo%E4%BB%B7%E6%A0%BC%E8%BF%87%E6%9C%9F%E5%9F%9F%E5%90%8D
+                - heading "老域名站群资源- NameSilo价格过期域名" [level=3] [ref=e295]
+                - generic [ref=e300]:
+                  - generic [ref=e302]: Google
+                  - generic [ref=e304]: https://sites.google.com › iia.xintaitong.com › namesilo...
+              - button "关于这条结果的详细信息" [ref=e305] [cursor=pointer]:
+                - img [ref=e308]
+            - generic [ref=e311]: 在寻找高价值过期域名？**NameSilo价格过期域名**是您的理想选择！NameSilo提供大量优质过期域名，价格透明、操作便捷，助您轻松入手高流量、高权重的域名资源。
+          - generic [ref=e315]:
+            - generic [ref=e318]:
+              - link "抗投诉域名批量管理- 域名投资适合团队吗 Google https://sites.google.com › hhx.rehearsalk.com › 域名投..." [ref=e320] [cursor=pointer]:
+                - /url: https://sites.google.com/hhx.rehearsalk.com/8a4kdq/%E5%9F%9F%E5%90%8D%E6%8A%95%E8%B5%84%E9%80%82%E5%90%88%E5%9B%A2%E9%98%9F%E5%90%97
+                - heading "抗投诉域名批量管理- 域名投资适合团队吗" [level=3] [ref=e321]
+                - generic [ref=e326]:
+                  - generic [ref=e328]: Google
+                  - generic [ref=e330]: https://sites.google.com › hhx.rehearsalk.com › 域名投...
+              - button "关于这条结果的详细信息" [ref=e331] [cursor=pointer]:
+                - img [ref=e334]
+            - generic [ref=e337]: 对于团队而言，域名投资不仅能实现资源共享、风险共担，还能提升整体运营效率。通过合理规划与分工，团队可以更高效地筛选优质域名、进行交易和管理。此外，域名投资具有较高的 ...
+          - generic [ref=e341]:
+            - generic [ref=e344]:
+              - link "汕头大学2025年招收澳门保送生简章 52ikao.com http://www.52ikao.com › h-nd-42856" [ref=e346] [cursor=pointer]:
+                - /url: http://www.52ikao.com/h-nd-42856.html?m563pageno=3
+                - heading "汕头大学2025年招收澳门保送生简章" [level=3] [ref=e347]
+                - generic [ref=e352]:
+                  - generic [ref=e354]: 52ikao.com
+                  - generic [ref=e356]: http://www.52ikao.com › h-nd-42856
+              - button "关于这条结果的详细信息" [ref=e357] [cursor=pointer]:
+                - img [ref=e360]
+            - generic [ref=e364]:
+              - text: 我校根据《上海
+              - emphasis [ref=e365]: 外国语大学
+              - text: 2026年
+              - emphasis [ref=e366]: 保送生
+              - text: 招生简章》，依据考生综合考核总成绩，不分文理科类或选考科目，分考试语种择优录取，各考试语种录取分数线为：考试语种录取分数线英语 ...
+          - generic [ref=e370]:
+            - generic [ref=e373]:
+              - link "汕头大学2026年招收澳门保送生简章 52ikao.com https://www.52ikao.com › h-nd-50838" [ref=e375] [cursor=pointer]:
+                - /url: https://www.52ikao.com/h-nd-50838.html?m21090pageno=2
+                - heading "汕头大学2026年招收澳门保送生简章" [level=3] [ref=e376]
+                - generic [ref=e381]:
+                  - generic [ref=e383]: 52ikao.com
+                  - generic [ref=e385]: https://www.52ikao.com › h-nd-50838
+              - button "关于这条结果的详细信息" [ref=e386] [cursor=pointer]:
+                - img [ref=e389]
+            - generic [ref=e393]:
+              - text: 我校根据《上海
+              - emphasis [ref=e394]: 外国语大学
+              - text: 2026年
+              - emphasis [ref=e395]: 保送生
+              - text: 招生简章》，依据考生综合考核总成绩，不分文理科类或选考科目，分考试语种择优录取，各考试语种录取分数线为：考试语种录取分数线英语 ...
+          - generic [ref=e399]:
+            - generic [ref=e402]:
+              - link "汕头大学2023年招生专业选考科目要求 52ikao.com http://www.52ikao.com › h-nd-32910" [ref=e404] [cursor=pointer]:
+                - /url: http://www.52ikao.com/h-nd-32910.html?m566pageno=67
+                - heading "汕头大学2023年招生专业选考科目要求" [level=3] [ref=e405]
+                - generic [ref=e410]:
+                  - generic [ref=e412]: 52ikao.com
+                  - generic [ref=e414]: http://www.52ikao.com › h-nd-32910
+              - button "关于这条结果的详细信息" [ref=e415] [cursor=pointer]:
+                - img [ref=e418]
+            - generic [ref=e422]:
+              - text: 上海
+              - emphasis [ref=e423]: 外国语大学
+              - text: 2026年
+              - emphasis [ref=e424]: 保送生
+              - text: 综合考核录取分数线2026年上海
+              - emphasis [ref=e425]: 外国语大学保送生
+              - text: 综合考核成绩与结果已公布，考生可于1月27日前登录教育部
+              - emphasis [ref=e426]: 阳光高考
+              - text: 报名平台查看成绩与结果，总成绩 ...
+          - generic [ref=e430]:
+            - heading "图片" [level=2] [ref=e434]
+            - generic [ref=e438]:
+              - generic [ref=e442] [cursor=pointer]:
+                - link "信息公开网 汕头大学":
+                  - /url: https://info.stu.edu.cn/
+                - button "信息公开网" [ref=e444]:
+                  - img "信息公开网" [ref=e446]
+                - generic [ref=e448]:
+                  - generic [ref=e450]: 信息公开网
+                  - generic [ref=e451]:
+                    - generic [ref=e458]: 汕头大学
+                    - button "关于这条结果的详细信息" [ref=e461]:
+                      - img [ref=e464]
+              - generic [ref=e469] [cursor=pointer]:
+                - link "2025汕头大学招生计划-各专业招生人数是多少_大学生必备网 大学生必备网":
+                  - /url: https://www.dxsbb.com/news/101830.html
+                - button "2025汕头大学招生计划-各专业招生人数是多少_大学生必备网" [ref=e471]:
+                  - img "2025汕头大学招生计划-各专业招生人数是多少_大学生必备网" [ref=e473]
+                - generic [ref=e475]:
+                  - generic [ref=e477]: 2025汕头大学招生计划-各专业招生人数是多少_大学生必备网
+                  - generic [ref=e478]:
+                    - generic [ref=e485]: 大学生必备网
+                    - button "关于这条结果的详细信息" [ref=e488]:
+                      - img [ref=e491]
+              - generic [ref=e496] [cursor=pointer]:
+                - link "新华网】2024新华网高考情报局｜汕头大学：引入先进课程体系为 ... 汕头大学":
+                  - /url: https://www.stu.edu.cn/info/1088/16236.htm
+                - button "新华网】2024新华网高考情报局｜汕头大学：引入先进课程体系为 ..." [ref=e498]:
+                  - img "新华网】2024新华网高考情报局｜汕头大学：引入先进课程体系为 ..." [ref=e500]
+                - generic [ref=e502]:
+                  - generic [ref=e504]: 新华网】2024新华网高考情报局｜汕头大学：引入先进课程体系为 ...
+                  - generic [ref=e505]:
+                    - generic [ref=e512]: 汕头大学
+                    - button "关于这条结果的详细信息" [ref=e515]:
+                      - img [ref=e518]
+            - button "显示更多图片" [ref=e521] [cursor=pointer]:
+              - separator [ref=e522]
+              - generic [ref=e523]:
+                - generic [ref=e524]: 显示更多图片
+                - img [ref=e526]
+        - generic [ref=e529]:
+          - generic [ref=e534]:
+            - heading "用户还搜索了" [level=2] [ref=e536]
+            - generic [ref=e538]:
+              - generic [ref=e539]:
+                - link "阳光高考网" [ref=e543] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E9%98%B3%E5%85%89%E9%AB%98%E8%80%83%E7%BD%91&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQ1QJ6BAgmEAE
+                  - generic [ref=e544]:
+                    - generic [ref=e549]: 阳光高考网
+                    - img [ref=e553]
+                - link "阳光高考特殊类型招生报名平台" [ref=e558] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E9%98%B3%E5%85%89%E9%AB%98%E8%80%83%E7%89%B9%E6%AE%8A%E7%B1%BB%E5%9E%8B%E6%8B%9B%E7%94%9F%E6%8A%A5%E5%90%8D%E5%B9%B3%E5%8F%B0&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQ1QJ6BAhAEAE
+                  - generic [ref=e559]:
+                    - generic [ref=e564]: 阳光高考特殊类型招生报名平台
+                    - img [ref=e568]
+                - link "河南阳光高考" [ref=e573] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%B2%B3%E5%8D%97%E9%98%B3%E5%85%89%E9%AB%98%E8%80%83&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQ1QJ6BAg-EAE
+                  - generic [ref=e574]:
+                    - generic [ref=e579]: 河南阳光高考
+                    - img [ref=e583]
+                - link "江西高考分数线2025" [ref=e588] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%B1%9F%E8%A5%BF%E9%AB%98%E8%80%83%E5%88%86%E6%95%B0%E7%BA%BF2025&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQ1QJ6BAg4EAE
+                  - generic [ref=e589]:
+                    - generic [ref=e594]: 江西高考分数线2025
+                    - img [ref=e598]
+              - generic [ref=e600]:
+                - link "高考院校查询工具" [ref=e604] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E9%AB%98%E8%80%83%E9%99%A2%E6%A0%A1%E6%9F%A5%E8%AF%A2%E5%B7%A5%E5%85%B7&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQ1QJ6BAgwEAE
+                  - generic [ref=e605]:
+                    - generic [ref=e610]: 高考院校查询工具
+                    - img [ref=e614]
+                - link "2026保送" [ref=e619] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=2026%E4%BF%9D%E9%80%81&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQ1QJ6BAgvEAE
+                  - generic [ref=e620]:
+                    - generic [ref=e625]: 2026保送
+                    - img [ref=e629]
+                - link "高考录取名册" [ref=e634] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E9%AB%98%E8%80%83%E5%BD%95%E5%8F%96%E5%90%8D%E5%86%8C&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQ1QJ6BAgtEAE
+                  - generic [ref=e635]:
+                    - generic [ref=e640]: 高考录取名册
+                    - img [ref=e644]
+                - link "高考志愿填报免费" [ref=e649] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E9%AB%98%E8%80%83%E5%BF%97%E6%84%BF%E5%A1%AB%E6%8A%A5%E5%85%8D%E8%B4%B9&sa=X&ved=2ahUKEwjl2pqUqYyUAxX8sSsGHWxtB1UQ1QJ6BAgnEAE
+                  - generic [ref=e650]:
+                    - generic [ref=e655]: 高考志愿填报免费
+                    - img [ref=e659]
+          - generic [ref=e661]:
+            - heading "关于过滤结果的声明" [level=2] [ref=e662]
+            - paragraph [ref=e664]:
+              - generic [ref=e665]:
+                - text: 为了向您显示相关程度最高的结果，我们省略了一些与已显示的 9 条结果极为相似的条目。
+                - text: 如有需要，您可以
+                - link "重新搜索以显示省略的结果" [ref=e666] [cursor=pointer]:
+                  - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E9%98%B3%E5%85%89%E9%AB%98%E8%80%83+2024+2025+%E4%BA%BA%E6%95%B0+%E5%A4%96%E8%AF%AD%E7%B1%BB&sca_esv=164079556523993e&filter=0
+                - text: 。
+          - navigation
+        - navigation
+    - contentinfo [ref=e667]:
+      - heading "页脚链接" [level=1] [ref=e668]
+      - generic [ref=e672]:
+        - generic [ref=e676]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e678] [cursor=pointer]:
+            - generic [ref=e679]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e681]:
+              - text: "-"
+              - generic [ref=e682]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e684] [cursor=pointer]: 更新位置信息
+        - generic [ref=e687]:
+          - link "帮助" [ref=e688] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e689] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e690] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e691] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

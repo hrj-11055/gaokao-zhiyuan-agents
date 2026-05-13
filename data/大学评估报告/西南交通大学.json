@@ -1,0 +1,55 @@
+{
+  "university_name": "西南交通大学",
+  "short_name": "SWJTU",
+  "location": {
+    "province": "四川",
+    "city": "成都",
+    "campuses": [
+      "犀浦",
+      "九里",
+      "峨眉"
+    ]
+  },
+  "academic_standing": {
+    "double_first_class": true,
+    "project_211": true,
+    "a_plus_subjects": [
+      "交通运输工程"
+    ],
+    "a_subjects": [
+      "土木工程"
+    ],
+    "a_minus_subjects": [
+      "机械工程",
+      "电气工程",
+      "管理科学与工程"
+    ]
+  },
+  "research_power": {
+    "state_key_labs": 1,
+    "national_engineering_centers": 2,
+    "academician_count": 6
+  },
+  "employment_stats": {
+    "overall_employment_rate": "95%+",
+    "state_owned_enterprise_ratio": "67%",
+    "further_study_rate": "33.3%",
+    "top_employers": [
+      "国铁集团",
+      "中国中铁",
+      "中国铁建",
+      "中国中车",
+      "华为"
+    ]
+  },
+  "admission_guide": {
+    "avg_percentile_required_science": "Top 3%",
+    "avg_percentile_required_liberal_arts": "Top 0.5%",
+    "special_programs": [
+      "詹天佑班",
+      "茅以升班",
+      "利兹学院"
+    ]
+  },
+  "comprehensive_score": 4.44
+}

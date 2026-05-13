@@ -1,0 +1,565 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 康复医疗行业 市场规模 2024 2025 千亿 CAGR
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E5%8D%83%E4%BA%BF+CAGR&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2213752419109268445750%22%2C%22ori_lid%22%3A%2213752419109268445750%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=beda6851023d5a36&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E5%8D%83%E4%BA%BF+CAGR
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E5%8D%83%E4%BA%BF+CAGR
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=beda6851023d5a36&ie=utf-8&wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E5%8D%83%E4%BA%BF+CAGR&rsv_spt=7&rsv_bp=1&f=8&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E5%8D%83%E4%BA%BF+CAGR&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E5%8D%83%E4%BA%BF+CAGR
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E5%8D%83%E4%BA%BF+CAGR
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E5%8D%83%E4%BA%BF+CAGR
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+2024+2025+%E5%8D%83%E4%BA%BF+CAGR
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "   换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 枪击发生时特朗普旁的华裔女记者是谁 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 厨师锅里吐口水后继续出餐 店长回应 13 母亲躺医院长椅儿子一手垫头一手轻拍 14 “早上6点半 杭州东站全是孩子” 15 财务造假“不敢不能不想”时代来了" [ref=e69]:
+              - cell "   换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 枪击发生时特朗普旁的华裔女记者是谁 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 厨师锅里吐口水后继续出餐 店长回应 13 母亲躺医院长椅儿子一手垫头一手轻拍 14 “早上6点半 杭州东站全是孩子” 15 财务造假“不敢不能不想”时代来了" [ref=e70]:
+                - generic [ref=e75]:
+                  - generic "百度热搜" [ref=e76]:
+                    - link " " [ref=e77] [cursor=pointer]:
+                      - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                      - generic [ref=e78]: 
+                      - generic [ref=e79]: 
+                    - link " 换一换" [ref=e81] [cursor=pointer]:
+                      - /url: javascript:void(0);
+                      - generic [ref=e82]: 
+                      - text: 换一换
+                  - generic [ref=e83]:
+                    - generic [ref=e84] [cursor=pointer]: 热搜榜
+                    - generic [ref=e85] [cursor=pointer]: 民生榜
+                    - generic [ref=e86] [cursor=pointer]: 财经榜
+                  - generic [ref=e88]:
+                    - generic [ref=e90]:
+                      - generic [ref=e92]: 
+                      - link "“一分部署 九分落实”" [ref=e93] [cursor=pointer]:
+                        - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=f1ddzsxe1mE61NWdPoAtVI6VeTq807qNy2EgLrg2GLDbqqZuaW6WcsPIQVU&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                    - generic [ref=e95]:
+                      - generic [ref=e96]: "1"
+                      - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e97] [cursor=pointer]:
+                        - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=f1ddzsxe1mE61NWdPoAtVI6VeTq807qNy2EgLrg2GLDbqqZuaW6WcsPIQVU&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e98]: 热
+                    - generic [ref=e100]:
+                      - generic [ref=e101]: "2"
+                      - link "中国迎来身份证集中换证高峰" [ref=e102] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=f1ddzsxe1mE61NWdPoAtVI6VeTq807qNy2EgLrg2GLDbqqZuaW6WcsPIQVU&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e103]: 新
+                    - generic [ref=e105]:
+                      - generic [ref=e106]: "3"
+                      - link "为什么外国人越来越爱中国车" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=f1ddzsxe1mE61NWdPoAtVI6VeTq807qNy2EgLrg2GLDbqqZuaW6WcsPIQVU&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                    - generic [ref=e109]:
+                      - generic [ref=e110]: "4"
+                      - link "欠条十年不催不要过期失效" [ref=e111] [cursor=pointer]:
+                        - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=f1ddzsxe1mE61NWdPoAtVI6VeTq807qNy2EgLrg2GLDbqqZuaW6WcsPIQVU&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e112]: 热
+                    - generic [ref=e114]:
+                      - generic [ref=e115]: "5"
+                      - link "网红蔬菜价格大涨30倍" [ref=e116] [cursor=pointer]:
+                        - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=f1ddzsxe1mE61NWdPoAtVI6VeTq807qNy2EgLrg2GLDbqqZuaW6WcsPIQVU&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e117]: 新
+                    - generic [ref=e119]:
+                      - generic [ref=e120]: "6"
+                      - link "人类马拉松首次跑进2小时" [ref=e121] [cursor=pointer]:
+                        - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=e9a2AscL0R2RXqBS%2FFW1MqeACUXbdMhWJB3mn7%2BB6dznsMea0O5ejxs6ziY&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e122]: 热
+                    - generic [ref=e124]:
+                      - generic [ref=e125]: "7"
+                      - link "巅峰德比！赵心童战胜丁俊晖" [ref=e126] [cursor=pointer]:
+                        - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=e9a2AscL0R2RXqBS%2FFW1MqeACUXbdMhWJB3mn7%2BB6dznsMea0O5ejxs6ziY&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                    - generic [ref=e128]:
+                      - generic [ref=e129]: "8"
+                      - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e130] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=e9a2AscL0R2RXqBS%2FFW1MqeACUXbdMhWJB3mn7%2BB6dznsMea0O5ejxs6ziY&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                    - generic [ref=e132]:
+                      - generic [ref=e133]: "9"
+                      - link "高市政府越过“最后一根红线”" [ref=e134] [cursor=pointer]:
+                        - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=e9a2AscL0R2RXqBS%2FFW1MqeACUXbdMhWJB3mn7%2BB6dznsMea0O5ejxs6ziY&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                    - generic [ref=e136]:
+                      - generic [ref=e137]: "10"
+                      - link "伊朗外长向巴基斯坦递交停战条件" [ref=e138] [cursor=pointer]:
+                        - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=e9a2AscL0R2RXqBS%2FFW1MqeACUXbdMhWJB3mn7%2BB6dznsMea0O5ejxs6ziY&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                    - generic [ref=e140]:
+                      - generic [ref=e141]: "11"
+                      - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e142] [cursor=pointer]:
+                        - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=e9a2AscL0R2RXqBS%2FFW1MqeACUXbdMhWJB3mn7%2BB6dznsMea0O5ejxs6ziY&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                    - generic [ref=e144]:
+                      - generic [ref=e145]: "12"
+                      - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e146] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=e9a2AscL0R2RXqBS%2FFW1MqeACUXbdMhWJB3mn7%2BB6dznsMea0O5ejxs6ziY&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                    - generic [ref=e148]:
+                      - generic [ref=e149]: "13"
+                      - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e150] [cursor=pointer]:
+                        - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=e9a2AscL0R2RXqBS%2FFW1MqeACUXbdMhWJB3mn7%2BB6dznsMea0O5ejxs6ziY&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                    - generic [ref=e152]:
+                      - generic [ref=e153]: "14"
+                      - link "“早上6点半 杭州东站全是孩子”" [ref=e154] [cursor=pointer]:
+                        - /url: /s?wd=%E2%80%9C%E6%97%A9%E4%B8%8A6%E7%82%B9%E5%8D%8A%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%E5%85%A8%E6%98%AF%E5%AD%A9%E5%AD%90%E2%80%9D&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=e9a2AscL0R2RXqBS%2FFW1MqeACUXbdMhWJB3mn7%2BB6dznsMea0O5ejxs6ziY&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                    - generic [ref=e156]:
+                      - generic [ref=e157]: "15"
+                      - link "财务造假“不敢不能不想”时代来了" [ref=e158] [cursor=pointer]:
+                        - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=e9a2AscL0R2RXqBS%2FFW1MqeACUXbdMhWJB3mn7%2BB6dznsMea0O5ejxs6ziY&rqid=beda6851023d5a36&rsf=ac89c8d39e9a16d121771de84e824657_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e159]:
+          - generic [ref=e163]:
+            - heading "2025年中国康复医疗行业市场深度调查报告:产业链、市场规模、医院数量..." [level=3] [ref=e166]:
+              - link "2025年中国康复医疗行业市场深度调查报告:产业链、市场规模、医院数量..." [ref=e167] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=QwwywlftD4CcEKJSKK8Uc1iaAkyqFSd9WkjcCfeej_nG6WAoCwkMsW8d1ffam1u2iH080hSvkO5EUFc_YOqOfiW4K6AWoEXWKXPpN3CGNiC
+                - paragraph [ref=e170]:
+                  - generic [ref=e173]:
+                    - emphasis [ref=e174]: "2025"
+                    - text: 年中国
+                    - emphasis [ref=e175]: 康复医疗行业市场
+                    - text: 深度调查报告:产业链、
+                    - emphasis [ref=e176]: 市场规模
+                    - text: 、医院数量...
+            - generic [ref=e177]:
+              - link [ref=e179] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=QwwywlftD4CcEKJSKK8Uc1iaAkyqFSd9WkjcCfeej_nG6WAoCwkMsW8d1ffam1u2iH080hSvkO5EUFc_YOqOfiW4K6AWoEXWKXPpN3CGNiC
+              - generic [ref=e184]:
+                - generic [ref=e186]: "1个回答 - 回答时间: 2026年3月4日"
+                - generic [ref=e191]:
+                  - text: "最佳答案:"
+                  - generic [ref=e192]:
+                    - emphasis [ref=e193]: "2025"
+                    - text: 年中国
+                    - emphasis [ref=e194]: 康复医疗行业
+                    - text: 市场呈现快速增长态势，产业链涵盖上游设备与耗材、中游服务机构及下游支付方，
+                    - emphasis [ref=e195]: 市场规模
+                    - text: 从2015年的271亿元增至2023年的1032亿元，康复医院数量持续增加且民营机构占比提升，市场竞争格局分散但头部企业份额逐步集中。一、产业链分析上游：主要包括康复医疗器械与耗材供应商。康复医疗器械涵盖...
+                - link "更多关于康复医疗行业 市场规模 2024 2025 千亿 CAGR的问题>>" [ref=e199] [cursor=pointer]:
+                  - /url: http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5
+                - link "百度知道" [ref=e204] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=QwwywlftD4CcEKJSKK8Uc1iaAkyqFSd9WkjcCfeej_nG6WAoCwkMsW8d1ffam1u2iH080hSvkO5EUFc_YOqOfiW4K6AWoEXWKXPpN3CGNiC
+                  - generic [ref=e205]: 百度知道
+                  - generic [ref=e207]: 
+          - generic [ref=e211]:
+            - heading "2025年中国康复医疗行业市场规模、医院数量及市场竞争格局_财富号..." [level=3] [ref=e214]:
+              - link "2025年中国康复医疗行业市场规模、医院数量及市场竞争格局_财富号..." [ref=e215] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=36Qa0cqkIaJow6H6UY8n7bPylaAZYY-EI9SoURJEm4m1GBzAziR4zvnuPQz19PP15kJ_NtQGyY1HJmCWrvvQv7jgGLc1CVqxAHbjEhv6TTe
+                - paragraph [ref=e218]:
+                  - generic [ref=e221]:
+                    - emphasis [ref=e222]: "2025"
+                    - text: 年中国
+                    - emphasis [ref=e223]: 康复医疗行业市场规模
+                    - text: 、医院数量及市场竞争格局_财富号...
+            - generic [ref=e224]:
+              - link [ref=e226] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=36Qa0cqkIaJow6H6UY8n7bPylaAZYY-EI9SoURJEm4m1GBzAziR4zvnuPQz19PP15kJ_NtQGyY1HJmCWrvvQv7jgGLc1CVqxAHbjEhv6TTe
+              - generic [ref=e231]:
+                - generic [ref=e236]:
+                  - text: 2025年7月23日
+                  - generic [ref=e237]:
+                    - text: 随着老龄人口数增长、疾病谱变化及医疗支付能力提升持续驱动康复医疗需求释放,中国
+                    - emphasis [ref=e238]: 康复医疗行业市场规模
+                    - text: 快速上涨,从2015年的271亿元上涨至2023年的1032亿元,年复合增长率为18.19%,目前国内行业中民营康复医疗服务机构优势凸出且有效适配市场缺口,有望成为行业发展中坚力量。 本文节选自华经产业研究院发布的《
+                    - emphasis [ref=e239]: "2025"
+                    - text: 年中国康复...
+                - link "东方财富网" [ref=e244] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=36Qa0cqkIaJow6H6UY8n7bPylaAZYY-EI9SoURJEm4m1GBzAziR4zvnuPQz19PP15kJ_NtQGyY1HJmCWrvvQv7jgGLc1CVqxAHbjEhv6TTe
+                  - generic [ref=e245]: 东方财富网
+                  - generic [ref=e247]: 
+          - generic [ref=e251]:
+            - heading "康复医疗行业分析报告 2025年康复医疗行业发展前景及规模分析" [level=3] [ref=e254]:
+              - link "康复医疗行业分析报告 2025年康复医疗行业发展前景及规模分析" [ref=e255] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=QwwywlftD4CcEKJSKK8UcA7f9nd7gDDF39QrRinJ1sA46EbllNKyk73ZFU3BMNJMSL_K9uTx9fKWxof_X89OQK
+                - paragraph [ref=e258]:
+                  - generic [ref=e261]:
+                    - emphasis [ref=e262]: 康复医疗行业
+                    - text: 分析报告
+                    - emphasis [ref=e263]: "2025"
+                    - text: 年康复医疗行业发展前景及
+                    - emphasis [ref=e264]: 规模
+                    - text: 分析
+            - generic [ref=e269]:
+              - text: 2025年10月27日
+              - generic [ref=e270]:
+                - text: 中国康复医疗产业市场规模 据智研瞻产业研究院统计显示,2020年中国
+                - emphasis [ref=e271]: 康复医疗行业市场规模
+                - text: 853.82亿元,
+                - emphasis [ref=e272]: "2024"
+                - text: 年中国康复医疗行业市场规模1646.66亿元,同比增长13.78%。2020-
+                - emphasis [ref=e273]: "2025"
+                - text: "年中国康复医疗行业市场规模如下: 图表:2020-2025年中国康复医疗行业市场规模 数据来源:智研瞻产业研究院整理 中国康复医疗产业影响因素分析 我国康复产业..."
+            - link "智研瞻产业研究院" [ref=e278] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=QwwywlftD4CcEKJSKK8UcA7f9nd7gDDF39QrRinJ1sA46EbllNKyk73ZFU3BMNJMSL_K9uTx9fKWxof_X89OQK
+              - generic [ref=e279]: 智研瞻产业研究院
+              - generic [ref=e281]: 
+          - generic [ref=e285]:
+            - heading "2024年中国康复医疗行业发展现状分析 2025年医疗卫生机构康复服务..." [level=3] [ref=e288]:
+              - link "2024年中国康复医疗行业发展现状分析 2025年医疗卫生机构康复服务..." [ref=e289] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8Sb1xwMp5ZjE4CzkekMwYYaDw-WcgIpiFu4xOKdv5tPJBYWnXKbQtJ2MF6in9DRxXa
+                - paragraph [ref=e292]:
+                  - generic [ref=e295]:
+                    - emphasis [ref=e296]: "2024"
+                    - text: 年中国
+                    - emphasis [ref=e297]: 康复医疗行业
+                    - text: 发展现状分析
+                    - emphasis [ref=e298]: "2025"
+                    - text: 年医疗卫生机构康复服务...
+            - generic [ref=e299]:
+              - link [ref=e301] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8Sb1xwMp5ZjE4CzkekMwYYaDw-WcgIpiFu4xOKdv5tPJBYWnXKbQtJ2MF6in9DRxXa
+              - generic [ref=e306]:
+                - generic [ref=e311]:
+                  - text: 2024年8月20日
+                  - generic [ref=e312]:
+                    - text: 毕马威根据历年《中国卫生健康统计年鉴》康复专科医院收入与诊疗人次，通过数学模型分析，利用统计学模型对历年康复医院收入、门诊人次和住院人数等数据进行回归分析，通过曲线拟合估算了
+                    - emphasis [ref=e313]: 康复医疗
+                    - text: 服务
+                    - emphasis [ref=e314]: 市场
+                    - text: 整体收入水平。由此预估出我国医疗卫生机构康复服务总收入
+                    - emphasis [ref=e315]: 规模
+                    - text: 在
+                    - emphasis [ref=e316]: "2025"
+                    - text: 年将突破2200亿元。更多本
+                    - emphasis [ref=e317]: 行业
+                    - text: 研究分析详见前瞻产业研究院...
+                - link "头像  新浪财经" [ref=e322] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8Sb1xwMp5ZjE4CzkekMwYYaDw-WcgIpiFu4xOKdv5tPJBYWnXKbQtJ2MF6in9DRxXa
+                  - generic [ref=e323]:
+                    - img "头像" [ref=e325]
+                    - generic [ref=e327]: 
+                  - generic [ref=e328]: 新浪财经
+                  - generic [ref=e330]: 
+          - generic [ref=e332]:
+            - generic [ref=e333]: 大家还在搜
+            - generic [ref=e334]:
+              - link "中国医疗器械行业发展报告" [ref=e335] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%8C%BB%E7%96%97%E5%99%A8%E6%A2%B0%E8%A1%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E6%8A%A5%E5%91%8A&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=2ea6WoxyzOEoJeLHJy0egTIY0VsTTUnFggx1OQJbayx7HhwH%2FUMr8sb%2BwNU&rsf=101633403&rsv_dl=0_prs_28608_1
+                - generic [ref=e337]: 中国医疗器械行业发展报告
+              - link "康复医院建设标准2023" [ref=e338] [cursor=pointer]:
+                - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E9%99%A2%E5%BB%BA%E8%AE%BE%E6%A0%87%E5%87%862023&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=2ea6WoxyzOEoJeLHJy0egTIY0VsTTUnFggx1OQJbayx7HhwH%2FUMr8sb%2BwNU&rsf=101636803&rsv_dl=0_prs_28608_2
+                - generic [ref=e340]: 康复医院建设标准2023
+              - link "中国高端医疗设备现状" [ref=e341] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E9%AB%98%E7%AB%AF%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E7%8E%B0%E7%8A%B6&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=2ea6WoxyzOEoJeLHJy0egTIY0VsTTUnFggx1OQJbayx7HhwH%2FUMr8sb%2BwNU&rsf=101636803&rsv_dl=0_prs_28608_3
+                - generic [ref=e343]: 中国高端医疗设备现状
+              - link "康复产业市场现状" [ref=e344] [cursor=pointer]:
+                - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E4%BA%A7%E4%B8%9A%E5%B8%82%E5%9C%BA%E7%8E%B0%E7%8A%B6&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=2ea6WoxyzOEoJeLHJy0egTIY0VsTTUnFggx1OQJbayx7HhwH%2FUMr8sb%2BwNU&rsf=101633403&rsv_dl=0_prs_28608_4
+                - generic [ref=e346]: 康复产业市场现状
+              - link "医药行业市场规模" [ref=e347] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=2ea6WoxyzOEoJeLHJy0egTIY0VsTTUnFggx1OQJbayx7HhwH%2FUMr8sb%2BwNU&rsf=101631202&rsv_dl=0_prs_28608_5
+                - generic [ref=e349]: 医药行业市场规模
+              - link "康复治疗行业现状及发展趋势" [ref=e350] [cursor=pointer]:
+                - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E6%B2%BB%E7%96%97%E8%A1%8C%E4%B8%9A%E7%8E%B0%E7%8A%B6%E5%8F%8A%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF&ie=utf-8&rsv_pq=beda6851023d5a36&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&rsv_t=2ea6WoxyzOEoJeLHJy0egTIY0VsTTUnFggx1OQJbayx7HhwH%2FUMr8sb%2BwNU&rsf=101636803&rsv_dl=0_prs_28608_6
+                - generic [ref=e352]: 康复治疗行业现状及发展趋势
+          - generic [ref=e356]:
+            - heading "康复医疗行业分析报告 2025年康复医疗行业发展前景及规模分析" [level=3] [ref=e359]:
+              - link "康复医疗行业分析报告 2025年康复医疗行业发展前景及规模分析" [ref=e360] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8Sb1xwMp5ZjE4CzkekMwYYd8WcsqLDR5kI-R_V2FSDmOAWFh3n8yTxhvJWiK0oH1gq
+                - paragraph [ref=e363]:
+                  - generic [ref=e366]:
+                    - emphasis [ref=e367]: 康复医疗行业
+                    - text: 分析报告
+                    - emphasis [ref=e368]: "2025"
+                    - text: 年康复医疗行业发展前景及
+                    - emphasis [ref=e369]: 规模
+                    - text: 分析
+            - generic [ref=e370]:
+              - link [ref=e372] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8Sb1xwMp5ZjE4CzkekMwYYd8WcsqLDR5kI-R_V2FSDmOAWFh3n8yTxhvJWiK0oH1gq
+              - generic [ref=e377]:
+                - generic [ref=e382]:
+                  - text: 2025年10月28日
+                  - generic [ref=e383]:
+                    - text: 中国康复医疗产业市场规模 据智研瞻产业研究院统计显示，2020年中国
+                    - emphasis [ref=e384]: 康复医疗行业市场规模
+                    - text: 853.82亿元，
+                    - emphasis [ref=e385]: "2024"
+                    - text: 年中国康复医疗行业市场规模1646.66亿元，同比增长13.78%。2020-
+                    - emphasis [ref=e386]: "2025"
+                    - text: 年中国康复医疗行业市场规模如下：图表：2020-2025年中国康复医疗行业市场规模 数据来源：智研瞻产业研究院整理 中国康复医疗产业影响因素分析 我国...
+                - link "头像 智研瞻产业研究院" [ref=e391] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8Sb1xwMp5ZjE4CzkekMwYYd8WcsqLDR5kI-R_V2FSDmOAWFh3n8yTxhvJWiK0oH1gq
+                  - img "头像" [ref=e394]
+                  - generic [ref=e395]: 智研瞻产业研究院
+                  - generic [ref=e397]: 
+          - generic [ref=e401]:
+            - heading "2025康复医疗产业:银发浪潮下的千亿蓝海与科技革命_中研普华_中研网" [level=3] [ref=e404]:
+              - link "2025康复医疗产业:银发浪潮下的千亿蓝海与科技革命_中研普华_中研网" [ref=e405] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8UyeO-P3cIXkvelZHlWQuqEl7Z-AGAnXl7Xvqp0MUNJh1Qr8hycpB3ZM13JzGio6FK
+                - paragraph [ref=e408]:
+                  - generic [ref=e411]:
+                    - emphasis [ref=e412]: 2025康复医疗
+                    - text: 产业:银发浪潮下的
+                    - emphasis [ref=e413]: 千亿
+                    - text: 蓝海与科技革命_中研普华_中研网
+            - generic [ref=e418]:
+              - text: 2025年5月7日
+              - generic [ref=e419]:
+                - text: 根据中研普华产业研究院发布的《
+                - emphasis [ref=e420]: "2025"
+                - text: "-2030年"
+                - emphasis [ref=e421]: 康复医疗
+                - text: 产业深度调研及未来发展现状趋势预测报告》显示,
+                - emphasis [ref=e422]: "2024"
+                - text: 年我国康复医疗服务
+                - emphasis [ref=e423]: 市场规模
+                - text: 已达1200亿元,较2019年增长2.3倍,但人均康复费用仅为美国的1/8,巨大缺口孕育着史诗级机遇。 一、产业现状:政策红利与未满足需求碰撞出的超级赛道 ...
+            - link "中研网" [ref=e428] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8UyeO-P3cIXkvelZHlWQuqEl7Z-AGAnXl7Xvqp0MUNJh1Qr8hycpB3ZM13JzGio6FK
+              - generic [ref=e429]: 中研网
+              - generic [ref=e431]: 
+          - generic [ref=e435]:
+            - heading "预见2024:2024年中国康复医疗行业市场规模、竞争格局及发展趋势..." [level=3] [ref=e438]:
+              - link "预见2024:2024年中国康复医疗行业市场规模、竞争格局及发展趋势..." [ref=e439] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=FKRTqJYO9AOsmztErzNcKynwoB_0ZRoXj_hAWmbhk963ZTHMFuTpZqrBIbujay81cdSvgYYNAGR5mqwavL56KzbfWuvFgDPxebq7c_xEeDa
+                - paragraph [ref=e442]:
+                  - generic [ref=e445]:
+                    - text: 预见
+                    - emphasis [ref=e446]: "2024"
+                    - text: :2024年中国
+                    - emphasis [ref=e447]: 康复医疗行业市场规模
+                    - text: 、竞争格局及发展趋势...
+            - generic [ref=e452]:
+              - text: 2024年8月30日
+              - generic [ref=e453]:
+                - emphasis [ref=e454]: 行业
+                - text: 发展前景及趋势预测 1、
+                - emphasis [ref=e455]: "2025"
+                - text: 年我国医疗卫生机构康复服务总收入
+                - emphasis [ref=e456]: 规模
+                - text: 预计将突破2200亿元 毕马威根据历年《中国卫生健康统计年鉴》康复专科医院收入与诊疗人次,通过数学模型分析,利用统计学模型对历年康复医院收入、门诊人次和住院人数等数据进行回归分析,通过曲线拟合估算了
+                - emphasis [ref=e457]: 康复医疗
+                - text: 服务
+                - emphasis [ref=e458]: 市场
+                - text: 整体收入水平。由此预估出我国医疗卫...
+            - generic [ref=e459]:
+              - link [ref=e461] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=FKRTqJYO9AOsmztErzNcKynwoB_0ZRoXj_hAWmbhk963ZTHMFuTpZqrBIbujay81cdSvgYYNAGR5mqwavL56KzbfWuvFgDPxebq7c_xEeDa
+              - link [ref=e465] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=FKRTqJYO9AOsmztErzNcKynwoB_0ZRoXj_hAWmbhk963ZTHMFuTpZqrBIbujay81cdSvgYYNAGR5mqwavL56KzbfWuvFgDPxebq7c_xEeDa
+              - link [ref=e469] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=FKRTqJYO9AOsmztErzNcKynwoB_0ZRoXj_hAWmbhk963ZTHMFuTpZqrBIbujay81cdSvgYYNAGR5mqwavL56KzbfWuvFgDPxebq7c_xEeDa
+              - link "14" [ref=e473] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=FKRTqJYO9AOsmztErzNcKynwoB_0ZRoXj_hAWmbhk963ZTHMFuTpZqrBIbujay81cdSvgYYNAGR5mqwavL56KzbfWuvFgDPxebq7c_xEeDa
+                - generic [ref=e476]:
+                  - generic [ref=e477]: 
+                  - text: "14"
+            - link "前瞻产业研究院" [ref=e482] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=FKRTqJYO9AOsmztErzNcKynwoB_0ZRoXj_hAWmbhk963ZTHMFuTpZqrBIbujay81cdSvgYYNAGR5mqwavL56KzbfWuvFgDPxebq7c_xEeDa
+              - generic [ref=e483]: 前瞻产业研究院
+              - generic [ref=e485]: 
+          - generic [ref=e495]:
+            - heading "康复市场欲超2000亿!需求高缺口大,为什么依旧这么难?" [level=3] [ref=e498]:
+              - link "康复市场欲超2000亿!需求高缺口大,为什么依旧这么难?" [ref=e499] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8N3rmAGTkT5SLhOOpRcAzcHAqkcvvN30EmgKRSNCbu-q3jEkGDq1PZ0Oli8tVrXwQiPqYcDMfCW7YMw1vaXeLW6Kj3yxEi-nRbNI1J2HTDuGNBCDwUCfcwfP6C0Vk3wVQ6fHf-blmIbPJJzlB-3yT7SpHamULljEcu3Fa07yK3bSheS_fLKbeeeDgv7haUQlQgz0jhPho375pYY4EMHBB7v9RHgEwXrB0ziiNMptg4VJ7XU7zFZ94dJrEAHrVA-k6_
+                - paragraph [ref=e502]:
+                  - generic [ref=e505]:
+                    - emphasis [ref=e506]: 康复市场
+                    - text: 欲超2000亿!需求高缺口大,为什么依旧这么难?
+            - generic [ref=e507]:
+              - link [ref=e509] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8N3rmAGTkT5SLhOOpRcAzcHAqkcvvN30EmgKRSNCbu-q3jEkGDq1PZ0Oli8tVrXwQiPqYcDMfCW7YMw1vaXeLW6Kj3yxEi-nRbNI1J2HTDuGNBCDwUCfcwfP6C0Vk3wVQ6fHf-blmIbPJJzlB-3yT7SpHamULljEcu3Fa07yK3bSheS_fLKbeeeDgv7haUQlQgz0jhPho375pYY4EMHBB7v9RHgEwXrB0ziiNMptg4VJ7XU7zFZ94dJrEAHrVA-k6_
+              - generic [ref=e514]:
+                - generic [ref=e519]:
+                  - text: 2024年9月5日
+                  - generic [ref=e520]:
+                    - text: 华经产业研究院统计显示,中国康复医疗市场服务总消费金额由2011年的109亿元增至2018年的583亿元,
+                    - emphasis [ref=e521]: CAGR
+                    - text: 26.9%,预计康复医疗服务的
+                    - emphasis [ref=e522]: 市场规模
+                    - text: 2021年将达到1032亿元、
+                    - emphasis [ref=e523]: "2025"
+                    - text: 年将达到2207亿元,
+                    - emphasis [ref=e524]: 康复医疗千亿
+                    - text: 市场亟待挖掘。 虽然政策支持下
+                    - emphasis [ref=e525]: 康复行业
+                    - text: 前景一片向好,但实际...
+                - link "微信公众平台" [ref=e530] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8N3rmAGTkT5SLhOOpRcAzcHAqkcvvN30EmgKRSNCbu-q3jEkGDq1PZ0Oli8tVrXwQiPqYcDMfCW7YMw1vaXeLW6Kj3yxEi-nRbNI1J2HTDuGNBCDwUCfcwfP6C0Vk3wVQ6fHf-blmIbPJJzlB-3yT7SpHamULljEcu3Fa07yK3bSheS_fLKbeeeDgv7haUQlQgz0jhPho375pYY4EMHBB7v9RHgEwXrB0ziiNMptg4VJ7XU7zFZ94dJrEAHrVA-k6_
+                  - generic [ref=e531]: 微信公众平台
+                  - generic [ref=e533]: 
+          - generic [ref=e537]:
+            - heading "康复医疗一触即发,市场规模或超2000亿?" [level=3] [ref=e540]:
+              - link "康复医疗一触即发,市场规模或超2000亿?" [ref=e541] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8Sb1xwMp5ZjE4CzkekMwYYdbrSrkVEOSsM0CgzkZf2Om7m5Q0JIBbbvpRXO5qOf-Xa
+                - paragraph [ref=e544]:
+                  - generic [ref=e547]:
+                    - emphasis [ref=e548]: 康复医疗
+                    - text: 一触即发,
+                    - emphasis [ref=e549]: 市场规模
+                    - text: 或超2000亿?
+            - generic [ref=e550]:
+              - link [ref=e552] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8Sb1xwMp5ZjE4CzkekMwYYdbrSrkVEOSsM0CgzkZf2Om7m5Q0JIBbbvpRXO5qOf-Xa
+              - generic [ref=e557]:
+                - generic [ref=e562]:
+                  - text: 2024年7月5日
+                  - generic [ref=e563]:
+                    - text: 从《柳叶刀》的统计数据来看，中国已成为全球康复需求最大的国家，约4.6亿人。近几年，中国
+                    - emphasis [ref=e564]: 康复医疗行业
+                    - text: 正乘着社会发展的快车，迎来爆发式增长的新阶段，
+                    - emphasis [ref=e565]: 市场规模
+                    - text: 年复合增长率达到27.1%，有望于
+                    - emphasis [ref=e566]: "2025"
+                    - text: 年超过2200亿。现阶段，我国约有1/3的人可能在患病或受伤期间接受并受益于康复治疗。从政策层面来看，不仅增加了...
+                - link "头像 康博嘉云诊所" [ref=e571] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8Sb1xwMp5ZjE4CzkekMwYYdbrSrkVEOSsM0CgzkZf2Om7m5Q0JIBbbvpRXO5qOf-Xa
+                  - img "头像" [ref=e574]
+                  - generic [ref=e575]: 康博嘉云诊所
+                  - generic [ref=e577]: 
+          - generic [ref=e581]:
+            - heading "市场规模达2686亿!2025年,抖音在这一医疗领域将有大动作" [level=3] [ref=e584]:
+              - link "市场规模达2686亿!2025年,抖音在这一医疗领域将有大动作" [ref=e585] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8SieN3TNk4SssJJL0G16VjAckzqnPqeDl8JGDxydQ2hIDx3mIcCBPLCm4kI-qIcov9NsflEqnPAjv4tSM28sWUK
+                - paragraph [ref=e588]:
+                  - generic [ref=e591]:
+                    - emphasis [ref=e592]: 市场规模
+                    - text: 达2686亿!
+                    - emphasis [ref=e593]: "2025"
+                    - text: 年,抖音在这一
+                    - emphasis [ref=e594]: 医疗
+                    - text: 领域将有大动作
+            - generic [ref=e595]:
+              - link [ref=e597] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8SieN3TNk4SssJJL0G16VjAckzqnPqeDl8JGDxydQ2hIDx3mIcCBPLCm4kI-qIcov9NsflEqnPAjv4tSM28sWUK
+              - generic [ref=e602]:
+                - generic [ref=e607]:
+                  - text: 2025年1月7日
+                  - generic [ref=e608]:
+                    - text: 在多方的合力推动下，我国
+                    - emphasis [ref=e609]: 康复医疗行业
+                    - text: 正迅猛增长，根据艾瑞咨询数据，预计至
+                    - emphasis [ref=e610]: "2025"
+                    - text: 年康复医疗服务的
+                    - emphasis [ref=e611]: 市场规模
+                    - text: 将增长至2686亿元，2020-2025年
+                    - emphasis [ref=e612]: CAGR
+                    - text: 达26.1%。但与庞大的康复需求形成鲜明对比的是我国目前康复服务能力的不足，尚处于起步阶段，供需缺口显著。此次布局康复医疗，抖音有望凭借其庞大的用户群体和先进的数字化能力...
+                - link "头像 诊锁界" [ref=e617] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=EKH7j2oPFWl4Gy8pkidZ8SieN3TNk4SssJJL0G16VjAckzqnPqeDl8JGDxydQ2hIDx3mIcCBPLCm4kI-qIcov9NsflEqnPAjv4tSM28sWUK
+                  - img "头像" [ref=e620]
+                  - generic [ref=e621]: 诊锁界
+                  - generic [ref=e623]: 
+        - generic [ref=e626]:
+          - generic [ref=e627]: 相关搜索
+          - table [ref=e628]:
+            - rowgroup [ref=e629]:
+              - row "中国医疗器械行业发展报告 康复医院建设标准2023" [ref=e630]:
+                - cell "中国医疗器械行业发展报告" [ref=e631]:
+                  - link "中国医疗器械行业发展报告" [ref=e632] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%8C%BB%E7%96%97%E5%99%A8%E6%A2%B0%E8%A1%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E6%8A%A5%E5%91%8A&rsf=101633403&rsp=0&f=1&rs_src=0&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&rsv_dl=brs_28338_1
+                    - generic [ref=e634]: 中国医疗器械行业发展报告
+                - cell "康复医院建设标准2023" [ref=e635]:
+                  - link "康复医院建设标准2023" [ref=e636] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E9%99%A2%E5%BB%BA%E8%AE%BE%E6%A0%87%E5%87%862023&rsf=101636803&rsp=1&f=1&rs_src=0&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&rsv_dl=brs_28338_2
+                    - generic [ref=e638]: 康复医院建设标准2023
+              - row "中国高端医疗设备现状 康复产业市场现状" [ref=e639]:
+                - cell "中国高端医疗设备现状" [ref=e640]:
+                  - link "中国高端医疗设备现状" [ref=e641] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E9%AB%98%E7%AB%AF%E5%8C%BB%E7%96%97%E8%AE%BE%E5%A4%87%E7%8E%B0%E7%8A%B6&rsf=101636803&rsp=2&f=1&rs_src=0&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&rsv_dl=brs_28338_3
+                    - generic [ref=e643]: 中国高端医疗设备现状
+                - cell "康复产业市场现状" [ref=e644]:
+                  - link "康复产业市场现状" [ref=e645] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E4%BA%A7%E4%B8%9A%E5%B8%82%E5%9C%BA%E7%8E%B0%E7%8A%B6&rsf=101633403&rsp=3&f=1&rs_src=0&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&rsv_dl=brs_28338_4
+                    - generic [ref=e647]: 康复产业市场现状
+              - row "医药行业市场规模 康复治疗行业现状及发展趋势" [ref=e648]:
+                - cell "医药行业市场规模" [ref=e649]:
+                  - link "医药行业市场规模" [ref=e650] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E8%8D%AF%E8%A1%8C%E4%B8%9A%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1&rsf=101631202&rsp=4&f=1&rs_src=0&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&rsv_dl=brs_28338_5
+                    - generic [ref=e652]: 医药行业市场规模
+                - cell "康复治疗行业现状及发展趋势" [ref=e653]:
+                  - link "康复治疗行业现状及发展趋势" [ref=e654] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E6%B2%BB%E7%96%97%E8%A1%8C%E4%B8%9A%E7%8E%B0%E7%8A%B6%E5%8F%8A%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF&rsf=101636803&rsp=5&f=1&rs_src=0&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&rsv_dl=brs_28338_6
+                    - generic [ref=e656]: 康复治疗行业现状及发展趋势
+              - row "医疗行业市场分析报告 康复医疗市场前景如何" [ref=e657]:
+                - cell "医疗行业市场分析报告" [ref=e658]:
+                  - link "医疗行业市场分析报告" [ref=e659] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A&rsf=101631202&rsp=6&f=1&rs_src=0&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&rsv_dl=brs_28338_7
+                    - generic [ref=e661]: 医疗行业市场分析报告
+                - cell "康复医疗市场前景如何" [ref=e662]:
+                  - link "康复医疗市场前景如何" [ref=e663] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E5%B8%82%E5%9C%BA%E5%89%8D%E6%99%AF%E5%A6%82%E4%BD%95&rsf=101636803&rsp=7&f=1&rs_src=0&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&rsv_dl=brs_28338_8
+                    - generic [ref=e665]: 康复医疗市场前景如何
+              - row "康复行业发展现状 智慧医疗市场规模" [ref=e666]:
+                - cell "康复行业发展现状" [ref=e667]:
+                  - link "康复行业发展现状" [ref=e668] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E8%A1%8C%E4%B8%9A%E5%8F%91%E5%B1%95%E7%8E%B0%E7%8A%B6&rsf=101633403&rsp=8&f=1&rs_src=0&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&rsv_dl=brs_28338_9
+                    - generic [ref=e670]: 康复行业发展现状
+                - cell "智慧医疗市场规模" [ref=e671]:
+                  - link "智慧医疗市场规模" [ref=e672] [cursor=pointer]:
+                    - /url: /s?wd=%E6%99%BA%E6%85%A7%E5%8C%BB%E7%96%97%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1&rsf=101631202&rsp=9&f=1&rs_src=0&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&rsv_dl=brs_28338_10
+                    - generic [ref=e674]: 智慧医疗市场规模
+      - generic [ref=e677]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e678]:
+          - generic [ref=e679]: "1"
+        - link "2" [ref=e680] [cursor=pointer]:
+          - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&pn=10&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&ie=utf-8&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&topic_pn=
+          - generic [ref=e681]: "2"
+        - link "3" [ref=e682] [cursor=pointer]:
+          - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&pn=20&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&ie=utf-8&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&topic_pn=
+          - generic [ref=e683]: "3"
+        - link "4" [ref=e684] [cursor=pointer]:
+          - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&pn=30&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&ie=utf-8&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&topic_pn=
+          - generic [ref=e685]: "4"
+        - link "5" [ref=e686] [cursor=pointer]:
+          - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&pn=40&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&ie=utf-8&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&topic_pn=
+          - generic [ref=e687]: "5"
+        - link "6" [ref=e688] [cursor=pointer]:
+          - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&pn=50&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&ie=utf-8&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&topic_pn=
+          - generic [ref=e689]: "6"
+        - link "7" [ref=e690] [cursor=pointer]:
+          - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&pn=60&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&ie=utf-8&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&topic_pn=
+          - generic [ref=e691]: "7"
+        - link "8" [ref=e692] [cursor=pointer]:
+          - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&pn=70&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&ie=utf-8&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&topic_pn=
+          - generic [ref=e693]: "8"
+        - link "9" [ref=e694] [cursor=pointer]:
+          - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&pn=80&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&ie=utf-8&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&topic_pn=
+          - generic [ref=e695]: "9"
+        - link "10" [ref=e696] [cursor=pointer]:
+          - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&pn=90&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&ie=utf-8&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&topic_pn=
+          - generic [ref=e697]: "10"
+        - link "下一页" [ref=e698] [cursor=pointer]:
+          - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&pn=10&oq=%E5%BA%B7%E5%A4%8D%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%20%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1%202024%202025%20%E5%8D%83%E4%BA%BF%20CAGR&ie=utf-8&rsv_pq=beda6851023d5a36&rsv_t=6dc3K2itAJFD8FQVWtfxek3NvzhoiprZhifKtEOLOtG%2FDEpCcJplc%2FguhO4&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e699]
+      - generic [ref=e702]:
+        - link "帮助" [ref=e703] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e704] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e705] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e706] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

@@ -1,0 +1,50 @@
+{
+  "university_details": {
+    "name": "扬州大学广陵学院",
+    "short_name": "广陵学院",
+    "location": "江苏省扬州市",
+    "founding_year": 1998,
+    "type": "独立学院",
+    "parent_university": "扬州大学"
+  },
+  "academic_metrics": {
+    "key_disciplines": [
+      "机械设计制造及其自动化",
+      "土木工程",
+      "护理学",
+      "会计学"
+    ],
+    "faculty_senior_ratio": "45%+",
+    "shared_academician_count": 2
+  },
+  "admission_data_2025": {
+    "jiangsu_history_min_rank": 38960,
+    "jiangsu_physics_min_rank": 145600,
+    "competitiveness_level": "High (Independent College Tier 1)"
+  },
+  "career_outcomes": {
+    "further_study_rate": "13.5%",
+    "top_employment_region": "Yangtze River Delta",
+    "avg_starting_salary": 5500,
+    "major_employers": [
+      "State Construction",
+      "Hengli Group",
+      "Yangli Group"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.5,
+    "employment_value": 3.8,
+    "location_advantage": 3.6,
+    "globalization": 2.2,
+    "student_freedom": 3.5,
+    "brand_asset": 2.8,
+    "overall_weighted_score": 3.41
+  },
+  "risk_factors": [
+    {
+      "factor": "Institutional Transformation (Zhuan-she)",
+      "description": "Uncertainty regarding future public/private status and name change."
+    }
+  ]
+}

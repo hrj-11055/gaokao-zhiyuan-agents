@@ -1,0 +1,51 @@
+{
+  "university_name": "西华师范大学",
+  "short_name": "西华师大",
+  "location": {
+    "province": "四川",
+    "city": "南充",
+    "campus": [
+      "华凤校区",
+      "行署校区"
+    ]
+  },
+  "academic_standing": {
+    "fourth_round_evaluation": {
+      "B_minus": [
+        "政治学"
+      ],
+      "C_plus": [
+        "生态学"
+      ],
+      "C": [
+        "马克思主义理论",
+        "中国语言文学"
+      ],
+      "C_minus": [
+        "数学"
+      ]
+    },
+    "esi_top_1_percent": [
+      "化学",
+      "工程学",
+      "材料科学 [待核实]"
+    ]
+  },
+  "admission_competitiveness": {
+    "sichuan_liberal_arts_rank": 14500,
+    "sichuan_science_rank": 78500,
+    "difficulty_level": "Medium-High"
+  },
+  "career_outcomes": {
+    "further_study_rate": "25.62%",
+    "primary_industry": "Education",
+    "top_employer_type": "Public Schools",
+    "avg_starting_salary": 5500
+  },
+  "campus_life": {
+    "dormitory_quality": "High (Huafeng Campus)",
+    "study_vibe": "Extremely Intense",
+    "key_feature": "Kaoyan Base"
+  },
+  "comprehensive_score": 2.99
+}

@@ -1,0 +1,50 @@
+{
+  "university_name": "杭州职业技术大学",
+  "short_name": "杭职大 / HZVTC",
+  "location": {
+    "province": "浙江省",
+    "city": "杭州市",
+    "district": "钱塘区",
+    "address": "杭州下沙高教园区学源街118号"
+  },
+  "attributes": {
+    "type": "公办职业本科",
+    "level": "国家“双高计划”B档",
+    "founded_year": 1996,
+    "upgrade_year": 2025
+  },
+  "academic_strength": {
+    "national_key_majors": [
+      "电梯工程技术",
+      "服装设计与工艺",
+      "智能控制技术"
+    ],
+    "double_qualified_teacher_ratio": "85%+",
+    "national_talent_count": 11
+  },
+  "admission_data_2025": {
+    "zhejiang_general_score": 518,
+    "zhejiang_general_rank": 150933,
+    "competition_level": "High"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "98.2%",
+    "stay_in_hangzhou_rate": "75%",
+    "starting_salary_median": 5800,
+    "top_employers": [
+      "Otis",
+      "Geely",
+      "Dali China",
+      "Alibaba"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.2,
+    "graduate_value": 4.0,
+    "location_advantage": 4.5,
+    "globalization": 2.8,
+    "student_freedom": 3.2,
+    "brand_asset": 3.5,
+    "weighted_total_score": 3.63
+  }
+}

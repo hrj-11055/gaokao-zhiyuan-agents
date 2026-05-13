@@ -1,0 +1,49 @@
+{
+  "university_name": "上海财经大学",
+  "short_name": "SUFE",
+  "location": {
+    "city": "上海",
+    "districts": [
+      "杨浦区",
+      "虹口区"
+    ],
+    "positioning": "国际金融中心核心区"
+  },
+  "academic_standing": {
+    "double_first_class": true,
+    "a_plus_disciplines": [
+      "应用经济学",
+      "工商管理学"
+    ],
+    "a_disciplines": [
+      "理论经济学"
+    ],
+    "a_minus_disciplines": [
+      "统计学"
+    ]
+  },
+  "admission_competitiveness": {
+    "average_percentile": "Top 0.2%",
+    "difficulty_level": "Extreme"
+  },
+  "graduate_outcomes": {
+    "further_study_rate": "51.03%",
+    "top_employers": [
+      "中信证券",
+      "普华永道",
+      "华为",
+      "工商银行"
+    ],
+    "median_starting_salary": 10500,
+    "industry_focus": "Finance & Professional Services"
+  },
+  "campus_vibe": {
+    "keywords": [
+      "Pragmatic",
+      "Competitive",
+      "Elite"
+    ],
+    "transfer_success_rate": "83%"
+  },
+  "comprehensive_score": 4.6
+}

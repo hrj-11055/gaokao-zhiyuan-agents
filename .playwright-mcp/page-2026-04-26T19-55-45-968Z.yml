@@ -1,0 +1,520 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiF1IyQpoyUAxVLoysGHXFINygQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 暨南大学 2024 录取分数线 各省 位次 暨南大学 2024 录取分数线 各省 位次
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%259A%25A8%25E5%258D%2597%25E5%25A4%25A7%25E5%25AD%25A6%2B2024%2B%25E5%25BD%2595%25E5%258F%2596%25E5%2588%2586%25E6%2595%25B0%25E7%25BA%25BF%2B%25E5%2590%2584%25E7%259C%2581%2B%25E4%25BD%258D%25E6%25AC%25A1%26sei%3DvW3uafCZA6HEruEPtc6U0Ak&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI 模式" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&aep=1&ntc=1&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ2J8OegQIDBAI
+              - generic [ref=e82]: AI 模式
+          - listitem [ref=e83]:
+            - link "全部" [disabled] [ref=e84]:
+              - generic [ref=e86]: 全部
+          - listitem [ref=e87]:
+            - link "新闻" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ0pQJegQIFBAB
+              - generic [ref=e90]: 新闻
+          - listitem [ref=e91]:
+            - link "图片" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQtKgLegQIFRAB
+              - generic [ref=e94]: 图片
+          - listitem [ref=e95]:
+            - link "购物" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&ved=1t:220175&ictx=111
+              - generic [ref=e98]: 购物
+          - listitem [ref=e99]:
+            - link "视频" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQtKgLegQIExAB
+              - generic [ref=e102]: 视频
+          - listitem [ref=e103]:
+            - link "短视频" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQs6gLegQIEhAB
+              - generic [ref=e106]: 短视频
+          - listitem [ref=e107]:
+            - button "更多过滤条件" [ref=e108] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: 更多
+                  - img [ref=e113]
+        - button "工具" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: 工具
+            - img [ref=e121]
+    - heading "搜索结果" [level=1] [ref=e123]
+    - generic [ref=e128]:
+      - generic [ref=e147]:
+        - generic [ref=e152]:
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - img [ref=e156]
+              - heading "AI 概览" [level=2] [ref=e158]
+            - button "关于这条结果的详细信息" [ref=e162]:
+              - img [ref=e164]
+          - generic [ref=e185]:
+            - generic [ref=e188]:
+              - generic [ref=e189]:
+                - text: 暨南大学2024年在各省录取分数线因省份、科类、校区和专业组不同而差异较大。总体而言，该校作为国家“双一流”建设高校，录取分数较高。2024年部分省份（如云南、四川等）投档线理科多在570-580分以上，文科在580-620分以上，建议参考
+                - link "暨南大学招生办官方信息" [ref=e191] [cursor=pointer]:
+                  - /url: https://zsb.jnu.edu.cn/2023/0103/c4289a810339/page.htm
+                - text: 查询具体位次。
+                - button "大学生必备网（+2 个）- 查看相关链接" [ref=e194] [cursor=pointer]:
+                  - generic [ref=e195]:
+                    - img "大学生必备网" [ref=e196]
+                    - generic [ref=e197]:
+                      - generic [ref=e198]: 大学生必备网
+                      - generic [ref=e199]: "+2"
+              - heading "2024年部分省份暨南大学录取分数线（参考）" [level=3] [ref=e200]
+              - list [ref=e201]:
+                - listitem [ref=e202]:
+                  - generic [ref=e203]:
+                    - strong [ref=e204]: 江西：
+                    - text: 物理类投档线高分段多集中在 595-627分左右，包含多个校区组合。
+                - listitem [ref=e205]:
+                  - generic [ref=e206]:
+                    - strong [ref=e207]: 四川：
+                    - text: 理科一批投档线 571分，文科一批投档线 582分。
+                - listitem [ref=e208]:
+                  - generic [ref=e209]:
+                    - strong [ref=e210]: 云南：
+                    - text: 理科一批投档线 575分，文科一批投档线 618分。
+                - listitem [ref=e211]:
+                  - generic [ref=e212]:
+                    - strong [ref=e213]: 福建：
+                    - text: 历史类专业组录取分数在 600分左右。
+                - listitem [ref=e214]:
+                  - generic [ref=e215]:
+                    - strong [ref=e216]: 湖南：
+                    - text: 国家专项计划中，历史类约598分，物理类约597-610分。
+                - listitem [ref=e217]:
+                  - generic [ref=e218]:
+                    - strong [ref=e219]: 宁夏：
+                    - text: 理科一批投档线 493分。
+                  - button [ref=e222] [cursor=pointer]:
+                    - generic [ref=e223]:
+                      - img [ref=e224]
+                      - generic [ref=e225]:
+                        - generic [ref=e226]: 大学生必备网
+                        - generic [ref=e227]: "+4"
+              - heading [level=3] [ref=e228]: 录取位次说明
+              - generic [ref=e229]: 暨南大学主要专业录取的学生位次通常较高（省内前列），但由于招生校区（广州、珠海、深圳）和专业类型（普通、中外合作、国家专项）不同，具体位次需对应各省考试院公布的“一分一段”表。
+              - generic [ref=e230]:
+                - emphasis [ref=e231]:
+                  - text: 建议点击
+                  - link [ref=e233] [cursor=pointer]:
+                    - /url: https://www.gaokao.cn/school/106/provinceline
+                    - text: 掌上高考暨南大学专页
+                  - text: 查询您所在省份的详细录取位次
+                - text: 。
+                - button [ref=e236] [cursor=pointer]:
+                  - generic [ref=e237]:
+                    - img [ref=e238]
+                    - generic [ref=e240]: 高考志愿填报
+              - emphasis [ref=e242]: (注：以上数据来源于2024年录取数据汇总，具体数据请以暨南大学招生网最终公布的正式录取通知为准。)
+            - generic [ref=e249]:
+              - list [ref=e251]:
+                - listitem [ref=e252]:
+                  - generic [ref=e253]:
+                    - link "多少分能上暨南大学（附2024年投档分数线） - 大学生必备网. 在新标签页中打开。" [ref=e254] [cursor=pointer]:
+                      - /url: https://www.dxsbb.com/news/88535.html
+                    - generic [ref=e255]:
+                      - generic [ref=e257]:
+                        - generic [ref=e258]: 多少分能上暨南大学（附2024年投档分数线） - 大学生必备网
+                        - generic [ref=e259]: 2025年5月20日 — 2、暨南大学投档分数线（其他省份）. 传统高考省份 ; 年份, 省份, 科目, 批次, 院校名称, 投档线. 2024,
+                      - generic [ref=e261]:
+                        - generic [ref=e266]: 大学生必备网
+                        - button "关于这条结果" [ref=e268] [cursor=pointer]:
+                          - img [ref=e269]
+                - listitem [ref=e272]:
+                  - generic [ref=e273]:
+                    - link "暨南大学2024年在江西录取分数线. 在新标签页中打开。" [ref=e274] [cursor=pointer]:
+                      - /url: https://zsb.jnu.edu.cn/2025/0308/c33879a831340/page.htm#:~:text=%E6%89%B9%E6%AC%A1%E7%A7%91%E7%B1%BB%E6%A0%A1%E5%8C%BA%E5%AD%A6%E9%99%A2%E4%B8%93%E4%B8%9A%E5%BD%95%E5%8F%96%E4%BA%BA%E6%95%B0%E6%9C%80%E4%BD%8E%E5%88%86%E6%9C%80%E9%AB%98%E5%88%86%E5%B9%B3%E5%9D%87%E5%88%86%E6%9C%AC%E7%A7%91%2D%E5%9B%BD%E5%AE%B6%E4%B8%93%E9%A1%B9%E5%8E%86%E5%8F%B2%E7%B1%BB%E5%B9%BF%E5%B7%9E%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%E6%96%87%E5%AD%A6%E9%99%A2%E6%B1%89%E8%AF%AD%E8%A8%80%E6%96%87%E5%AD%A64602612607.25%20%E7%8F%A0%E6%B5%B7%E6%A0%A1%E5%8C%BA%E7%BF%BB%E8%AF%91%E5%AD%A6%E9%99%A2%E7%BF%BB%E8%AF%913599600599.33%20%E5%9B%BD%E9%99%85%E5%95%86%E5%AD%A6%E9%99%A2%E5%B7%A5%E5%95%86%E7%AE%A1%E7%90%86(%E7%8F%A0%E6%B5%B7)3600600600.00%20%E6%9C%AC%E7%A7%91%2D%E5%9B%BD%E5%AE%B6%E4%B8%93%E9%A1%B9%E5%8E%86%E5%8F%B2%E7%B1%BB%E6%B1%87%E6%80%BB10599612%E2%80%94%E2%80%94%E6%9C%AC%E7%A7%91%2D%E5%9B%BD%E5%AE%B6%E4%B8%93%E9%A1%B9%E7%89%A9%E7%90%86%E7%B1%BB%E5%B9%BF%E5%B7%9E%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E8%8D%AF%E5%AD%A6%E9%99%A2%E8%8D%AF%E5%AD%A63602603602.33%20%E5%B9%BF%E5%B7%9E%E7%9F%B3%E7%89%8C%E6%A0%A1%E5%8C%BA%E7%94%9F%E5%91%BD%E7%A7%91%E5%AD%A6%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2%E9%A3%9F%E5%93%81%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B3601603602.00%20%E7%8F%A0%E6%B5%B7%E6%A0%A1%E5%8C%BA%E6%99%BA%E8%83%BD%E7%A7%91%E5%AD%A6%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%AD%A6%E9%99%A2%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD2603606604.50%20%E6%9C%AC%E7%A7%91%2D%E5%9B%BD%E5%AE%B6%E4%B8%93%E9%A1%B9%E7%89%A9%E7%90%86%E7%B1%BB%E6%B1%87%E6%80%BB8601606%E2%80%94%E2%80%94%E6%9C%AC%E7%A7%91%E5%8E%86%E5%8F%B2%E7%B1%BB%E5%B9%BF%E5%B7%9E%E7%95%AA%E7%A6%BA%E6%A0%A1%E5%8C%BA%E7%AE%A1%E7%90%86%E5%AD%A6%E9%99%A2%E4%BC%9A%E8%AE%A1%E5%AD%A62608613610.50,%E7%BB%8F%E6%B5%8E%E5%AD%A6%E9%99%A2%E8%B4%A2%E6%94%BF%E5%AD%A62606606606.00%20%E7%BB%8F%E6%B5%8E%E5%AD%A6%E9%99%A2%E7%BB%8F%E6%B5%8E%E5%AD%A62605606605.50%20%E5%A4%96%E5%9B%BD%E8%AF%AD%E5%AD%A6%E9%99%A2%E6%B3%95%E8%AF%AD2601603602.00%20%E6%96%B0%E9%97%BB%E4%B8%8E%E4%BC%A0%E6%92%AD%E5%AD%A6%E9%99%A2%E5%B9%BF%E6%92%AD%E7%94%B5%E8%A7%86%E5%AD%A62603604603.50%20%E6%96%B0%E9%97%BB%E4%B8%8E%E4%BC%A0%E6%92%AD%E5%AD%A6%E9%99%A2%E5%B9%BF%E5%91%8A%E5%AD%A62603604603.50%20%E6%B7%B1%E5%9C%B3%E6%A0%A1%E5%8C%BA%E6%B7%B1%E5%9C%B3%E6%97%85%E6%B8%B8%E5%AD%A6%E9%99%A2%E7%94%B5%E5%AD%90%E5%95%86%E5%8A%A14602603602.25%20%E6%9C%AC%E7%A7%91%E5%8E%86%E5%8F%B2%E7%B1%BB%E6%B1%87%E6%80%BB18601613%E2%80%94%E2%80%94
+                    - generic [ref=e275]:
+                      - generic [ref=e277]:
+                        - generic [ref=e278]: 暨南大学2024年在江西录取分数线
+                        - generic [ref=e279]: 2025年3月8日 — 批次科类校区学院专业录取人数最低分最高分平均分本科-国家专项历史类广州石牌校区文学院汉语言文学4602612607.25...
+                      - generic [ref=e280]:
+                        - generic [ref=e285]: 暨南大学招生办公室
+                        - button [ref=e287] [cursor=pointer]:
+                          - img [ref=e288]
+                - listitem [ref=e291]:
+                  - generic [ref=e292]:
+                    - link [ref=e293] [cursor=pointer]:
+                      - /url: https://zsb.jnu.edu.cn/2016/1206/c3468a93231/page.htm
+                    - generic [ref=e294]:
+                      - generic [ref=e296]:
+                        - generic [ref=e297]: 暨南大学历年录取分数情况查询
+                        - generic [ref=e298]: 2026年3月6日 — 2016年 · 2016年. 2017年, 文科 · 理科 · 2017年 · 2017年. 2018年, 文科 · 理...
+                      - generic [ref=e300]:
+                        - generic [ref=e305]: 暨南大学招生办公室
+                        - button [ref=e307] [cursor=pointer]:
+                          - img [ref=e308]
+              - button [ref=e312] [cursor=pointer]:
+                - generic [ref=e313]: 全部显示
+        - button "显示更多 AI 概览" [ref=e317]:
+          - generic [ref=e319] [cursor=pointer]:
+            - generic [ref=e320]: 展开
+            - img [ref=e322]
+      - main [ref=e325]:
+        - generic [ref=e329]:
+          - generic [ref=e332]:
+            - heading "网页搜索结果" [level=2] [ref=e333]
+            - generic [ref=e334]:
+              - generic [ref=e337]:
+                - link "暨南大学2024年在各省普通高考录取分数线 暨南大学招生办公室 https://zsb.jnu.edu.cn › page" [ref=e339] [cursor=pointer]:
+                  - /url: https://zsb.jnu.edu.cn/2023/0103/c4289a810339/page.htm
+                  - heading "暨南大学2024年在各省普通高考录取分数线" [level=3] [ref=e340]
+                  - generic [ref=e342]:
+                    - img [ref=e346]
+                    - generic [ref=e348]:
+                      - generic [ref=e350]: 暨南大学招生办公室
+                      - generic [ref=e352]: https://zsb.jnu.edu.cn › page
+                - button "关于这条结果的详细信息" [ref=e353] [cursor=pointer]:
+                  - img [ref=e356]
+              - generic [ref=e360]:
+                - emphasis [ref=e361]: 暨南大学2024
+                - text: 年在
+                - emphasis [ref=e362]: 各省
+                - text: 普通高考
+                - emphasis [ref=e363]: 录取分数线
+                - text: . 发布时间：2025-03-09 浏览次数：194725. 请点击下方省份名称查看对应省份
+                - emphasis [ref=e364]: "2024"
+                - text: 年
+                - emphasis [ref=e365]: 录取分数线
+                - text: ...
+          - generic [ref=e369]:
+            - generic [ref=e372]:
+              - link "暨南大学2024年各批次录取分数线概览：最低396分可录取 dakao100.com https://www.dakao100.com › article_48900" [ref=e374] [cursor=pointer]:
+                - /url: https://www.dakao100.com/article_48900.html
+                - heading "暨南大学2024年各批次录取分数线概览：最低396分可录取" [level=3] [ref=e375]
+                - generic [ref=e380]:
+                  - generic [ref=e382]: dakao100.com
+                  - generic [ref=e384]: https://www.dakao100.com › article_48900
+              - button "关于这条结果的详细信息" [ref=e385] [cursor=pointer]:
+                - img [ref=e388]
+            - generic [ref=e391]:
+              - generic [ref=e392]: 2025年7月24日 —
+              - generic [ref=e393]:
+                - emphasis [ref=e394]: 暨南大学2024
+                - text: 年各批次
+                - emphasis [ref=e395]: 录取分数线
+                - text: 因省份而有所不同。在广东，物理类(普通类)最低录取分数为583分，历史类(普通类)最低录取分数为582分;在上海，最低录取 ...
+          - generic [ref=e399]:
+            - generic [ref=e402]:
+              - link "2025暨南大学录取分数线（含2023-2024历年） 大学生必备网 https://www.dxsbb.com › news" [ref=e404] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/33881.html
+                - heading "2025暨南大学录取分数线（含2023-2024历年）" [level=3] [ref=e405]
+                - generic [ref=e410]:
+                  - generic [ref=e412]: 大学生必备网
+                  - generic [ref=e414]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e415] [cursor=pointer]:
+                - img [ref=e418]
+            - generic [ref=e421]:
+              - generic [ref=e422]: 2026年4月10日 —
+              - generic [ref=e423]:
+                - text: 本文为大家整理的是
+                - emphasis [ref=e424]: 暨南大学
+                - text: 2023-2025年
+                - emphasis [ref=e425]: 录取分数线
+                - text: ，希望对大家有所帮助，如有异议，还请以
+                - emphasis [ref=e426]: 各省
+                - text: 市教育考试院和学校公布的信息为准。一、2025
+                - emphasis [ref=e427]: 暨南大学
+                - text: 录取 ...
+          - generic [ref=e431]:
+            - generic [ref=e434]:
+              - link "暨南大学历年录取分数情况查询 暨南大学招生办公室 https://zsb.jnu.edu.cn › page" [ref=e436] [cursor=pointer]:
+                - /url: https://zsb.jnu.edu.cn/2016/1206/c3468a93231/page.htm
+                - heading "暨南大学历年录取分数情况查询" [level=3] [ref=e437]
+                - generic [ref=e439]:
+                  - img [ref=e443]
+                  - generic [ref=e445]:
+                    - generic [ref=e447]: 暨南大学招生办公室
+                    - generic [ref=e449]: https://zsb.jnu.edu.cn › page
+              - button "关于这条结果的详细信息" [ref=e450] [cursor=pointer]:
+                - img [ref=e453]
+            - generic [ref=e456]:
+              - generic [ref=e457]: 2026年3月6日 —
+              - generic [ref=e458]:
+                - text: 2022年
+                - emphasis [ref=e459]: 各省
+                - text: 普通类专业
+                - emphasis [ref=e460]: 录取
+                - text: 分 · 2022年艺体类 · 2023年
+                - emphasis [ref=e461]: 各省
+                - text: 普通类专业
+                - emphasis [ref=e462]: 录取
+                - text: 分 · 2023年艺体类 ·
+                - emphasis [ref=e463]: "2024"
+                - text: 年
+                - emphasis [ref=e464]: 各省
+                - text: 普通类专业
+                - emphasis [ref=e465]: 录取
+                - text: 分 ·
+                - emphasis [ref=e466]: "2024"
+                - text: 年艺体类 · 2025年
+                - emphasis [ref=e467]: 各省
+                - text: ...
+          - generic [ref=e471]:
+            - generic [ref=e474]:
+              - link "暨南大学2024年在湖南录取分数线 暨南大学招生办公室 https://zsb.jnu.edu.cn › page" [ref=e476] [cursor=pointer]:
+                - /url: https://zsb.jnu.edu.cn/2025/0308/c33879a831337/page.htm
+                - heading "暨南大学2024年在湖南录取分数线" [level=3] [ref=e477]
+                - generic [ref=e479]:
+                  - img [ref=e483]
+                  - generic [ref=e485]:
+                    - generic [ref=e487]: 暨南大学招生办公室
+                    - generic [ref=e489]: https://zsb.jnu.edu.cn › page
+              - button "关于这条结果的详细信息" [ref=e490] [cursor=pointer]:
+                - img [ref=e493]
+            - generic [ref=e496]:
+              - generic [ref=e497]: 2025年3月8日 —
+              - generic [ref=e498]:
+                - emphasis [ref=e499]: 暨南大学2024
+                - text: 年在湖南
+                - emphasis [ref=e500]: 录取分数线
+                - text: ; 本科批(普通)-国家专项普通类(首选历史) 汇总 ; 本科批(普通)- 国家专项, 普通类(首选物理), 广州番禺校区 ; 本科批(普通)-
+            - generic [ref=e502]:
+              - text: 缺少字词： 各省 ‎| 必须包含：
+              - link "各省" [ref=e503] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%22%E5%90%84%E7%9C%81%22+%E4%BD%8D%E6%AC%A1&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ5t4CegQIKhAB
+          - generic [ref=e507]:
+            - generic [ref=e510]:
+              - link "暨南大学历年分数线汇总 高考志愿填报 https://www.gaokao.cn › school › provinceline" [ref=e512] [cursor=pointer]:
+                - /url: https://www.gaokao.cn/school/106/provinceline
+                - heading "暨南大学历年分数线汇总" [level=3] [ref=e513]
+                - generic [ref=e515]:
+                  - img [ref=e519]
+                  - generic [ref=e521]:
+                    - generic [ref=e523]: 高考志愿填报
+                    - generic [ref=e525]: https://www.gaokao.cn › school › provinceline
+              - button "关于这条结果的详细信息" [ref=e526] [cursor=pointer]:
+                - img [ref=e529]
+            - generic [ref=e533]:
+              - text: 掌上高考为您提供
+              - emphasis [ref=e534]: 暨南大学
+              - text: ：2023、
+              - emphasis [ref=e535]: "2024"
+              - text: 、2025、2026，历年
+              - emphasis [ref=e536]: 录取分数线
+              - text: ，文科理科录取
+              - emphasis [ref=e537]: 位次
+              - text: 。
+              - emphasis [ref=e538]: 各省
+              - text: 历年高考，初试/复试考上
+              - emphasis [ref=e539]: 暨南大学
+              - text: 本科录取分数最低
+              - emphasis [ref=e540]: 位次
+              - text: 汇总。
+          - generic [ref=e544]:
+            - generic [ref=e547]:
+              - link "暨南大学全国各省高考录取分数线汇总（2026年参考） 6617.com https://www.6617.com › ..." [ref=e549] [cursor=pointer]:
+                - /url: https://www.6617.com/p_229247769.html
+                - heading "暨南大学全国各省高考录取分数线汇总（2026年参考）" [level=3] [ref=e550]
+                - generic [ref=e555]:
+                  - generic [ref=e557]: 6617.com
+                  - generic [ref=e559]: https://www.6617.com › ...
+              - button "关于这条结果的详细信息" [ref=e560] [cursor=pointer]:
+                - img [ref=e563]
+            - generic [ref=e566]:
+              - generic [ref=e567]: 2026年3月23日 —
+              - generic [ref=e568]:
+                - emphasis [ref=e569]: 暨南大学
+                - text: 在全国
+                - emphasis [ref=e570]: 各省
+                - text: 各科目的
+                - emphasis [ref=e571]: 录取分数线
+                - text: 有所差异，请大家直接参考下表： ; 福建, 历史, 本科批, 专业组:70 0, 600 ; 江西, 物理, 本科批, 第504组, 595 ...
+          - generic [ref=e575]:
+            - generic [ref=e578]:
+              - link "多少分能上暨南大学（附2024年投档分数线） 大学生必备网 https://www.dxsbb.com › news" [ref=e580] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/88535.html
+                - heading "多少分能上暨南大学（附2024年投档分数线）" [level=3] [ref=e581]
+                - generic [ref=e586]:
+                  - generic [ref=e588]: 大学生必备网
+                  - generic [ref=e590]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e591] [cursor=pointer]:
+                - img [ref=e594]
+            - generic [ref=e597]:
+              - generic [ref=e598]: 2025年5月20日 —
+              - generic [ref=e599]:
+                - text: 2、
+                - emphasis [ref=e600]: 暨南大学
+                - text: 投档
+                - emphasis [ref=e601]: 分数线
+                - text: （其他省份） ;
+                - emphasis [ref=e602]: "2024"
+                - text: ", 云南, 文科, 本科一批, 4402"
+                - emphasis [ref=e603]: 暨南大学
+                - text: ;
+                - emphasis [ref=e604]: "2024"
+                - text: ", 四川, 理科, 本科一批, 0353"
+                - emphasis [ref=e605]: 暨南大学
+                - text: ;
+                - emphasis [ref=e606]: "2024"
+                - text: ", 四川, 文科, 本科一批 ..."
+          - generic [ref=e610]:
+            - generic [ref=e613]:
+              - link "暨南大学2024年在江西录取分数线 暨南大学招生办公室 https://zsb.jnu.edu.cn › page" [ref=e615] [cursor=pointer]:
+                - /url: https://zsb.jnu.edu.cn/2025/0308/c33879a831340/page.htm
+                - heading "暨南大学2024年在江西录取分数线" [level=3] [ref=e616]
+                - generic [ref=e618]:
+                  - img [ref=e622]
+                  - generic [ref=e624]:
+                    - generic [ref=e626]: 暨南大学招生办公室
+                    - generic [ref=e628]: https://zsb.jnu.edu.cn › page
+              - button "关于这条结果的详细信息" [ref=e629] [cursor=pointer]:
+                - img [ref=e632]
+            - generic [ref=e635]:
+              - generic [ref=e636]: 2025年3月8日 —
+              - generic [ref=e637]:
+                - text: 批次, 科类, 校区, 学院, 专业,
+                - emphasis [ref=e638]: 录取
+                - text: 人数, 最低分, 最高分, 平均分. 本科-国家专项, 历史类, 广州石牌校区, 文学院, 汉语言文学, 4, 602, 612, 607.25.
+            - generic [ref=e640]:
+              - text: 缺少字词： 各省 ‎| 必须包含：
+              - link "各省" [ref=e641] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%22%E5%90%84%E7%9C%81%22+%E4%BD%8D%E6%AC%A1&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ5t4CegQIShAB
+          - generic [ref=e645]:
+            - generic [ref=e648]:
+              - link "暨南大学2024年各专业在西南地区各省（市）录取分数线 高考直通车App https://app.gaokaozhitongche.com › lGQpvKmg" [ref=e650] [cursor=pointer]:
+                - /url: https://app.gaokaozhitongche.com/newsguide/h/lGQpvKmg
+                - heading "暨南大学2024年各专业在西南地区各省（市）录取分数线" [level=3] [ref=e651]
+                - generic [ref=e656]:
+                  - generic [ref=e658]: 高考直通车App
+                  - generic [ref=e660]: https://app.gaokaozhitongche.com › lGQpvKmg
+              - button "关于这条结果的详细信息" [ref=e661] [cursor=pointer]:
+                - img [ref=e664]
+            - generic [ref=e667]:
+              - generic [ref=e668]: 2025年2月22日 —
+              - generic [ref=e669]:
+                - emphasis [ref=e670]: 暨南大学2024
+                - text: 年各专业在西南地区
+                - emphasis [ref=e671]: 各省
+                - text: （市）
+                - emphasis [ref=e672]: 录取分数线
+                - text: "-高考直通车."
+        - generic [ref=e674]:
+          - generic [ref=e679]:
+            - heading "用户还搜索了" [level=2] [ref=e681]
+            - generic [ref=e683]:
+              - generic [ref=e684]:
+                - link "暨南大学历年分数线" [ref=e688] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%8E%86%E5%B9%B4%E5%88%86%E6%95%B0%E7%BA%BF&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ1QJ6BAgzEAE
+                  - generic [ref=e689]:
+                    - generic [ref=e694]: 暨南大学历年分数线
+                    - img [ref=e698]
+                - link "暨南大学华侨招生" [ref=e703] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%8D%8E%E4%BE%A8%E6%8B%9B%E7%94%9F&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ1QJ6BAg9EAE
+                  - generic [ref=e704]:
+                    - generic [ref=e709]: 暨南大学华侨招生
+                    - img [ref=e713]
+                - link "暨南大学dse分数" [ref=e718] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6dse%E5%88%86%E6%95%B0&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ1QJ6BAg1EAE
+                  - generic [ref=e719]:
+                    - generic [ref=e724]: 暨南大学dse分数
+                    - img [ref=e728]
+                - link "深圳大学分数线" [ref=e733] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%88%86%E6%95%B0%E7%BA%BF&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ1QJ6BAg6EAE
+                  - generic [ref=e734]:
+                    - generic [ref=e739]: 深圳大学分数线
+                    - img [ref=e743]
+              - generic [ref=e745]:
+                - link "深圳大学广东分数线" [ref=e749] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6%E5%B9%BF%E4%B8%9C%E5%88%86%E6%95%B0%E7%BA%BF&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ1QJ6BAg8EAE
+                  - generic [ref=e750]:
+                    - generic [ref=e755]: 深圳大学广东分数线
+                    - img [ref=e759]
+                - link "暨南大学官网" [ref=e764] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%AE%98%E7%BD%91&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ1QJ6BAg7EAE
+                  - generic [ref=e765]:
+                    - generic [ref=e770]: 暨南大学官网
+                    - img [ref=e774]
+                - link "暨南大学本科" [ref=e779] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%9C%AC%E7%A7%91&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ1QJ6BAg2EAE
+                  - generic [ref=e780]:
+                    - generic [ref=e785]: 暨南大学本科
+                    - img [ref=e789]
+                - link "暨南大学港澳台招生" [ref=e794] [cursor=pointer]:
+                  - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%B8%AF%E6%BE%B3%E5%8F%B0%E6%8B%9B%E7%94%9F&sa=X&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ1QJ6BAg0EAE
+                  - generic [ref=e795]:
+                    - generic [ref=e800]: 暨南大学港澳台招生
+                    - img [ref=e804]
+          - navigation [ref=e806]:
+            - heading "网页导航" [level=1] [ref=e807]
+            - text: "1"
+            - link "Page 2" [ref=e810] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sca_esv=164079556523993e&ei=vW3uacWBKMvGruEP8ZDdwQI&start=10&sa=N&sstk=Af77f_ced27h5LVuwNMrYO7pVe6rjOhoBcHCjsBY2PKCnbphMDGsWC_Yzt2qUa_1UsOk7nkEP9RiZsJQrr36-f-b6cz2UxaAuIe77A&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ8tMDegQILBAE
+              - text: "2"
+            - link "Page 3" [ref=e812] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sca_esv=164079556523993e&ei=vW3uacWBKMvGruEP8ZDdwQI&start=20&sa=N&sstk=Af77f_ced27h5LVuwNMrYO7pVe6rjOhoBcHCjsBY2PKCnbphMDGsWC_Yzt2qUa_1UsOk7nkEP9RiZsJQrr36-f-b6cz2UxaAuIe77A&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ8tMDegQILBAG
+              - text: "3"
+            - link "Page 4" [ref=e814] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sca_esv=164079556523993e&ei=vW3uacWBKMvGruEP8ZDdwQI&start=30&sa=N&sstk=Af77f_ced27h5LVuwNMrYO7pVe6rjOhoBcHCjsBY2PKCnbphMDGsWC_Yzt2qUa_1UsOk7nkEP9RiZsJQrr36-f-b6cz2UxaAuIe77A&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ8tMDegQILBAI
+              - text: "4"
+            - link "Page 5" [ref=e816] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sca_esv=164079556523993e&ei=vW3uacWBKMvGruEP8ZDdwQI&start=40&sa=N&sstk=Af77f_ced27h5LVuwNMrYO7pVe6rjOhoBcHCjsBY2PKCnbphMDGsWC_Yzt2qUa_1UsOk7nkEP9RiZsJQrr36-f-b6cz2UxaAuIe77A&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ8tMDegQILBAK
+              - text: "5"
+            - link "Page 6" [ref=e818] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sca_esv=164079556523993e&ei=vW3uacWBKMvGruEP8ZDdwQI&start=50&sa=N&sstk=Af77f_ced27h5LVuwNMrYO7pVe6rjOhoBcHCjsBY2PKCnbphMDGsWC_Yzt2qUa_1UsOk7nkEP9RiZsJQrr36-f-b6cz2UxaAuIe77A&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ8tMDegQILBAM
+              - text: "6"
+            - link "Page 7" [ref=e820] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sca_esv=164079556523993e&ei=vW3uacWBKMvGruEP8ZDdwQI&start=60&sa=N&sstk=Af77f_ced27h5LVuwNMrYO7pVe6rjOhoBcHCjsBY2PKCnbphMDGsWC_Yzt2qUa_1UsOk7nkEP9RiZsJQrr36-f-b6cz2UxaAuIe77A&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ8tMDegQILBAO
+              - text: "7"
+            - heading "下一页" [level=2] [ref=e822]:
+              - link "下一页" [ref=e823] [cursor=pointer]:
+                - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2024+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF+%E5%90%84%E7%9C%81+%E4%BD%8D%E6%AC%A1&sca_esv=164079556523993e&ei=vW3uacWBKMvGruEP8ZDdwQI&start=10&sa=N&sstk=Af77f_ced27h5LVuwNMrYO7pVe6rjOhoBcHCjsBY2PKCnbphMDGsWC_Yzt2qUa_1UsOk7nkEP9RiZsJQrr36-f-b6cz2UxaAuIe77A&ved=2ahUKEwiF1IyQpoyUAxVLoysGHXFINygQ8NMDegQILBAQ
+                - generic [ref=e825]: 下一页
+        - navigation
+    - contentinfo [ref=e826]:
+      - heading "页脚链接" [level=1] [ref=e827]
+      - generic [ref=e831]:
+        - generic [ref=e835]:
+          - button "02186 麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e837] [cursor=pointer]:
+            - generic [ref=e838]: 02186 麻萨诸塞州
+            - generic [ref=e840]:
+              - text: "-"
+              - generic [ref=e841]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e843] [cursor=pointer]: 更新位置信息
+        - generic [ref=e846]:
+          - link "帮助" [ref=e847] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e848] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e849] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e850] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

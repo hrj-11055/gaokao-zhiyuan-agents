@@ -1,0 +1,43 @@
+{
+  "university_info": {
+    "name": "湖北大学",
+    "abbreviation": "HUBU",
+    "location": "武汉",
+    "type": "综合性省属重点大学",
+    "motto": "日思日睿，笃志笃行"
+  },
+  "academic_stats": {
+    "esi_top_1_percent": 6,
+    "state_key_labs": 1,
+    "phd_programs": 9,
+    "master_programs": 31,
+    "top_disciplines": [
+      "Biology",
+      "Materials Science",
+      "Theoretical Economics",
+      "Chinese Literature"
+    ]
+  },
+  "admission_profile": {
+    "hubei_rank_history": 7403,
+    "henan_rank_history": 7978,
+    "competitiveness_level": "High"
+  },
+  "employment_stats": {
+    "further_study_rate": "31.4%",
+    "double_first_class_rate": "59.15%",
+    "top_employer_sectors": [
+      "Education",
+      "Manufacturing",
+      "IT"
+    ],
+    "median_starting_salary": 6200
+  },
+  "evaluation_scores": {
+    "academic": 3.6,
+    "employment": 3.5,
+    "location": 4.5,
+    "brand": 4.0,
+    "overall": 3.715
+  }
+}

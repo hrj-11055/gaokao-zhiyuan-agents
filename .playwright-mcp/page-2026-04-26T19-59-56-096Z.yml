@@ -1,0 +1,1046 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "首页" [ref=e7] [cursor=pointer]:
+          - /url: //www.bilibili.com
+          - img [ref=e8]
+          - generic [ref=e10]:
+            - generic [ref=e11]: 首页
+            - img [ref=e12]
+      - listitem [ref=e15]:
+        - link "番剧" [ref=e16] [cursor=pointer]:
+          - /url: //www.bilibili.com/anime/
+      - listitem [ref=e17]:
+        - link "直播" [ref=e18] [cursor=pointer]:
+          - /url: //live.bilibili.com
+      - listitem [ref=e19]:
+        - link "游戏中心" [ref=e20] [cursor=pointer]:
+          - /url: //game.bilibili.com/platform
+      - listitem [ref=e21]:
+        - link "会员购" [ref=e22] [cursor=pointer]:
+          - /url: //show.bilibili.com/platform/home.html?msource=pc_web
+      - listitem [ref=e23]:
+        - link "漫画" [ref=e24] [cursor=pointer]:
+          - /url: //manga.bilibili.com?from=bill_top_mnav
+      - listitem [ref=e25]:
+        - link "赛事" [ref=e26] [cursor=pointer]:
+          - /url: //www.bilibili.com/match/home/
+      - listitem
+    - list [ref=e27]:
+      - listitem [ref=e28] [cursor=pointer]:
+        - listitem [ref=e29]:
+          - generic [ref=e31]: 登录
+          - generic [ref=e34]:
+            - paragraph [ref=e35]: 登录后你可以：
+            - generic [ref=e36]:
+              - generic [ref=e37]:
+                - img [ref=e38]
+                - generic [ref=e42]: 免费看高清视频
+              - generic [ref=e43]:
+                - img [ref=e44]
+                - generic [ref=e47]: 多端同步播放记录
+              - generic [ref=e48]:
+                - img [ref=e49]
+                - generic [ref=e55]: 发表弹幕/评论
+              - generic [ref=e56]:
+                - img [ref=e57]
+                - generic [ref=e60]: 热门番剧影视看不停
+            - generic [ref=e61]: 立即登录 立即登录
+            - generic [ref=e62]: 首次使用？ 点我注册
+      - listitem [ref=e63] [cursor=pointer]:
+        - listitem [ref=e65]:
+          - link [ref=e66]:
+            - /url: //account.bilibili.com/big
+            - img [ref=e67]
+      - listitem [ref=e71] [cursor=pointer]:
+        - img [ref=e73]
+      - listitem [ref=e76] [cursor=pointer]:
+        - img [ref=e78]
+      - listitem [ref=e84] [cursor=pointer]:
+        - img [ref=e86]
+      - listitem [ref=e89] [cursor=pointer]:
+        - img [ref=e91]
+      - listitem [ref=e93] [cursor=pointer]:
+        - img [ref=e95]
+      - listitem [ref=e99] [cursor=pointer]:
+        - listitem [ref=e100]:
+          - img [ref=e103]
+  - generic [ref=e108]:
+    - generic [ref=e109]:
+      - generic [ref=e113]:
+        - img [ref=e114]
+        - img [ref=e117] [cursor=pointer]
+        - textbox "输入关键字搜索" [ref=e119]: 暨南大学官方
+        - button "搜索" [ref=e120] [cursor=pointer]
+      - navigation [ref=e123]:
+        - list [ref=e124]:
+          - listitem [ref=e125]:
+            - generic [ref=e127] [cursor=pointer]: 综合
+          - listitem [ref=e128]:
+            - generic [ref=e129] [cursor=pointer]:
+              - generic [ref=e130]: 视频
+              - generic [ref=e131]: 99+
+          - listitem [ref=e132]:
+            - generic [ref=e133] [cursor=pointer]:
+              - generic [ref=e134]: 番剧
+              - generic [ref=e135]: "0"
+          - listitem [ref=e136]:
+            - generic [ref=e137] [cursor=pointer]:
+              - generic [ref=e138]: 影视
+              - generic [ref=e139]: "0"
+          - listitem [ref=e140]:
+            - generic [ref=e141] [cursor=pointer]:
+              - generic [ref=e142]: 直播
+              - generic [ref=e143]: "0"
+          - listitem [ref=e144]:
+            - generic [ref=e145] [cursor=pointer]:
+              - generic [ref=e146]: 专栏
+              - generic [ref=e147]: 99+
+          - listitem [ref=e148]:
+            - generic [ref=e149] [cursor=pointer]:
+              - generic [ref=e150]: 用户
+              - generic [ref=e151]: "0"
+      - separator [ref=e153]
+      - generic [ref=e156]:
+        - generic [ref=e157]:
+          - button "综合排序" [ref=e158] [cursor=pointer]
+          - button "最多播放" [ref=e159] [cursor=pointer]
+          - button "最新发布" [ref=e160] [cursor=pointer]
+          - button "最多弹幕" [ref=e161] [cursor=pointer]
+          - button "最多收藏" [ref=e162] [cursor=pointer]
+        - button "更多筛选" [ref=e163] [cursor=pointer]:
+          - text: 更多筛选
+          - img [ref=e164]
+    - generic [ref=e169]:
+      - generic [ref=e171]:
+        - generic [ref=e174]:
+          - link "暨南大学最新版官方宣传片 1.3万 2 13:31" [ref=e175] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1F54y1y7dt/
+            - generic [ref=e176]:
+              - img "暨南大学最新版官方宣传片" [ref=e179]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 1.3万
+                    - generic:
+                      - img
+                      - generic: "2"
+                  - generic: 13:31
+          - generic [ref=e181]:
+            - link "暨南大学最新版官方宣传片" [ref=e182] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1F54y1y7dt/
+              - heading "暨南大学最新版官方宣传片" [level=3] [ref=e183]:
+                - emphasis [ref=e184]: 暨南大学
+                - text: 最新版
+                - emphasis [ref=e185]: 官方
+                - text: 宣传片
+            - link "喝奶茶の熊猫 · 2020-09-18" [ref=e187] [cursor=pointer]:
+              - /url: //space.bilibili.com/5314134
+              - img [ref=e188]
+              - generic [ref=e192]: 喝奶茶の熊猫
+              - generic [ref=e193]: · 2020-09-18
+        - generic [ref=e196]:
+          - link "RoomTour | 211大学宿舍真实风貌！暨南大学什么水平？ 10.6万 42 06:04" [ref=e197] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1MX4y1W7sh/
+            - generic [ref=e198]:
+              - img "RoomTour | 211大学宿舍真实风貌！暨南大学什么水平？" [ref=e201]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 10.6万
+                    - generic:
+                      - img
+                      - generic: "42"
+                  - generic: 06:04
+          - generic [ref=e203]:
+            - link "RoomTour | 211大学宿舍真实风貌！暨南大学什么水平？" [ref=e204] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1MX4y1W7sh/
+              - heading "RoomTour | 211大学宿舍真实风貌！暨南大学什么水平？" [level=3] [ref=e205]:
+                - text: RoomTour | 211
+                - emphasis [ref=e206]: 大学
+                - text: 宿舍真实风貌！
+                - emphasis [ref=e207]: 暨南大学
+                - text: 什么水平？
+            - link "老汤与扎扎 · 2023-07-02" [ref=e209] [cursor=pointer]:
+              - /url: //space.bilibili.com/24717777
+              - img [ref=e210]
+              - generic [ref=e214]: 老汤与扎扎
+              - generic [ref=e215]: · 2023-07-02
+        - generic [ref=e218]:
+          - link "暨南大学：高性价比好大学推荐，真实录取全貌概览 16 0 01:12" [ref=e219] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1yPd1BkEfd/
+            - generic [ref=e220]:
+              - img "暨南大学：高性价比好大学推荐，真实录取全貌概览" [ref=e223]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "16"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 01:12
+          - generic [ref=e225]:
+            - link "暨南大学：高性价比好大学推荐，真实录取全貌概览" [ref=e226] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1yPd1BkEfd/
+              - heading "暨南大学：高性价比好大学推荐，真实录取全貌概览" [level=3] [ref=e227]:
+                - emphasis [ref=e228]: 暨南大学
+                - text: ：高性价比好
+                - emphasis [ref=e229]: 大学
+                - text: 推荐，真实录取全貌概览
+            - link "李太爽 · 04-21" [ref=e231] [cursor=pointer]:
+              - /url: //space.bilibili.com/66546621
+              - img [ref=e232]
+              - generic [ref=e236]: 李太爽
+              - generic [ref=e237]: · 04-21
+        - generic [ref=e240]:
+          - link "199秒！震撼！暨南大学三地五校区航拍大片 1.5万 20 03:20" [ref=e241] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1yU4y1r7QW/
+            - generic [ref=e242]:
+              - img "199秒！震撼！暨南大学三地五校区航拍大片" [ref=e245]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 1.5万
+                    - generic:
+                      - img
+                      - generic: "20"
+                  - generic: 03:20
+          - generic [ref=e247]:
+            - link "199秒！震撼！暨南大学三地五校区航拍大片" [ref=e248] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1yU4y1r7QW/
+              - heading "199秒！震撼！暨南大学三地五校区航拍大片" [level=3] [ref=e249]:
+                - text: 199秒！震撼！
+                - emphasis [ref=e250]: 暨南大学
+                - text: 三地五校区航拍大片
+            - link "飞行幻想家 · 2022-08-21" [ref=e252] [cursor=pointer]:
+              - /url: //space.bilibili.com/352085125
+              - img [ref=e253]
+              - generic [ref=e257]: 飞行幻想家
+              - generic [ref=e258]: · 2022-08-21
+        - generic [ref=e261]:
+          - link "【党史故事百校讲述】听暨南大学讲述！这位暨南英模，值得我们铭记! 4541 2 03:11" [ref=e262] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1LA411L7q4/
+            - generic [ref=e263]:
+              - img "【党史故事百校讲述】听暨南大学讲述！这位暨南英模，值得我们铭记!" [ref=e266]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "4541"
+                    - generic:
+                      - img
+                      - generic: "2"
+                  - generic: 03:11
+          - generic [ref=e268]:
+            - link "【党史故事百校讲述】听暨南大学讲述！这位暨南英模，值得我们铭记!" [ref=e269] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1LA411L7q4/
+              - heading "【党史故事百校讲述】听暨南大学讲述！这位暨南英模，值得我们铭记!" [level=3] [ref=e270]:
+                - text: 【党史故事百校讲述】听
+                - emphasis [ref=e271]: 暨南大学
+                - text: 讲述！这位
+                - emphasis [ref=e272]: 暨南
+                - text: 英模，值得我们铭记!
+            - link "中国大学生在线 · 2021-04-15" [ref=e274] [cursor=pointer]:
+              - /url: //space.bilibili.com/471900918
+              - img [ref=e275]
+              - generic [ref=e279]: 中国大学生在线
+              - generic [ref=e280]: · 2021-04-15
+        - generic [ref=e283]:
+          - link "暨南大学建校115周年宣传片：传承 504 0 07:51" [ref=e284] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1Qx4y1p7jz/
+            - generic [ref=e285]:
+              - img "暨南大学建校115周年宣传片：传承" [ref=e288]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "504"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 07:51
+          - generic [ref=e290]:
+            - link "暨南大学建校115周年宣传片：传承" [ref=e291] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1Qx4y1p7jz/
+              - heading "暨南大学建校115周年宣传片：传承" [level=3] [ref=e292]:
+                - emphasis [ref=e293]: 暨南大学
+                - text: 建校115周年宣传片：传承
+            - link "创龙教仪 · 2024-05-14" [ref=e295] [cursor=pointer]:
+              - /url: //space.bilibili.com/1567344093
+              - img [ref=e296]
+              - generic [ref=e300]: 创龙教仪
+              - generic [ref=e301]: · 2024-05-14
+        - generic [ref=e304]:
+          - link "“真的是港澳台保底大学吗？”- 暨南大学评测 17.3万 1170 11:12" [ref=e305] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1Co4y127xu/
+            - generic [ref=e306]:
+              - img "“真的是港澳台保底大学吗？”- 暨南大学评测" [ref=e309]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 17.3万
+                    - generic:
+                      - img
+                      - generic: "1170"
+                  - generic: 11:12
+          - generic [ref=e311]:
+            - link "“真的是港澳台保底大学吗？”- 暨南大学评测" [ref=e312] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1Co4y127xu/
+              - heading "“真的是港澳台保底大学吗？”- 暨南大学评测" [level=3] [ref=e313]:
+                - text: “真的是港澳台保底
+                - emphasis [ref=e314]: 大学
+                - text: 吗？”-
+                - emphasis [ref=e315]: 暨南大学
+                - text: 评测
+            - link "大学万事屋 · 2021-05-08" [ref=e317] [cursor=pointer]:
+              - /url: //space.bilibili.com/8130699
+              - img [ref=e318]
+              - generic [ref=e322]: 大学万事屋
+              - generic [ref=e323]: · 2021-05-08
+        - generic [ref=e326]:
+          - link "暨南大学110周年官方宣传片（2016） 1.2万 43 14:13" [ref=e327] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1pb411Y7H4/
+            - generic [ref=e328]:
+              - img "暨南大学110周年官方宣传片（2016）" [ref=e331]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 1.2万
+                    - generic:
+                      - img
+                      - generic: "43"
+                  - generic: 14:13
+          - generic [ref=e333]:
+            - link "暨南大学110周年官方宣传片（2016）" [ref=e334] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1pb411Y7H4/
+              - heading "暨南大学110周年官方宣传片（2016）" [level=3] [ref=e335]:
+                - emphasis [ref=e336]: 暨南大学
+                - text: 110周年
+                - emphasis [ref=e337]: 官方
+                - text: 宣传片（2016）
+            - link "夜猫队长Matt · 2019-02-20" [ref=e339] [cursor=pointer]:
+              - /url: //space.bilibili.com/253837926
+              - img [ref=e340]
+              - generic [ref=e344]: 夜猫队长Matt
+              - generic [ref=e345]: · 2019-02-20
+        - generic [ref=e348]:
+          - link "太美了！暨南大学114周年校庆宣传片发布 9834 0 01:55" [ref=e349] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1mA411x7Ug/
+            - generic [ref=e350]:
+              - img "太美了！暨南大学114周年校庆宣传片发布" [ref=e353]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "9834"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 01:55
+          - generic [ref=e355]:
+            - link "太美了！暨南大学114周年校庆宣传片发布" [ref=e356] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1mA411x7Ug/
+              - heading "太美了！暨南大学114周年校庆宣传片发布" [level=3] [ref=e357]:
+                - text: 太美了！
+                - emphasis [ref=e358]: 暨南大学
+                - text: 114周年校庆宣传片发布
+            - link "大学生研究所 · 2020-12-01" [ref=e360] [cursor=pointer]:
+              - /url: //space.bilibili.com/89847689
+              - img [ref=e361]
+              - generic [ref=e365]: 大学生研究所
+              - generic [ref=e366]: · 2020-12-01
+        - generic [ref=e369]:
+          - link "孩子500多分想去暨南大学，张：我TM还想娶杨幂呢 2.2万 15 07:24" [ref=e370] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1ZZ421K7Ku/
+            - generic [ref=e371]:
+              - img "孩子500多分想去暨南大学，张：我TM还想娶杨幂呢" [ref=e374]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 2.2万
+                    - generic:
+                      - img
+                      - generic: "15"
+                  - generic: 07:24
+          - generic [ref=e376]:
+            - link "孩子500多分想去暨南大学，张：我TM还想娶杨幂呢" [ref=e377] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1ZZ421K7Ku/
+              - heading "孩子500多分想去暨南大学，张：我TM还想娶杨幂呢" [level=3] [ref=e378]:
+                - text: 孩子500多分想去
+                - emphasis [ref=e379]: 暨南大学
+                - text: ，张：我TM还想娶杨幂呢
+            - link "张雪峰高考讲座 · 2024-07-03" [ref=e381] [cursor=pointer]:
+              - /url: //space.bilibili.com/694728656
+              - img [ref=e382]
+              - generic [ref=e386]: 张雪峰高考讲座
+              - generic [ref=e387]: · 2024-07-03
+        - generic [ref=e390]:
+          - link "暨南大学时光机影视协会-《恰恰》｜大学生自制微电影-我男朋友每天只能睡床底... 789 0 27:49" [ref=e391] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV16S421X76n/
+            - generic [ref=e392]:
+              - img "暨南大学时光机影视协会-《恰恰》｜大学生自制微电影-我男朋友每天只能睡床底..." [ref=e395]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "789"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 27:49
+          - generic [ref=e397]:
+            - link "暨南大学时光机影视协会-《恰恰》｜大学生自制微电影-我男朋友每天只能睡床底..." [ref=e398] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV16S421X76n/
+              - heading "暨南大学时光机影视协会-《恰恰》｜大学生自制微电影-我男朋友每天只能睡床底..." [level=3] [ref=e399]:
+                - emphasis [ref=e400]: 暨南大学
+                - text: 时光机影视协会-《恰恰》｜
+                - emphasis [ref=e401]: 大学
+                - text: 生自制微电影-我男朋友每天只能睡床底...
+            - link "JNU时光机影视协会 · 2024-07-31" [ref=e403] [cursor=pointer]:
+              - /url: //space.bilibili.com/410070794
+              - img [ref=e404]
+              - generic [ref=e408]: JNU时光机影视协会
+              - generic [ref=e409]: · 2024-07-31
+        - generic [ref=e412]:
+          - link "一天曝光一个神人学校第11期暨南大学 4.8万 21 02:24" [ref=e413] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1qfDcBbE2k/
+            - generic [ref=e414]:
+              - img "一天曝光一个神人学校第11期暨南大学" [ref=e417]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 4.8万
+                    - generic:
+                      - img
+                      - generic: "21"
+                  - generic: 02:24
+          - generic [ref=e419]:
+            - link "一天曝光一个神人学校第11期暨南大学" [ref=e420] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1qfDcBbE2k/
+              - heading "一天曝光一个神人学校第11期暨南大学" [level=3] [ref=e421]:
+                - text: 一天曝光一个神人学校第11期
+                - emphasis [ref=e422]: 暨南大学
+            - link "某神人b站号 · 04-06" [ref=e424] [cursor=pointer]:
+              - /url: //space.bilibili.com/662916620
+              - img [ref=e425]
+              - generic [ref=e429]: 某神人b站号
+              - generic [ref=e430]: · 04-06
+        - generic [ref=e433]:
+          - link "【暨南大学非官方圣诞特别节目】一起来看流星雨沙雕英文翻拍 快乐presentation——图个开心8！ 2305 18 12:19" [ref=e434] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1bJ411W7qz/
+            - generic [ref=e435]:
+              - img "【暨南大学非官方圣诞特别节目】一起来看流星雨沙雕英文翻拍 快乐presentation——图个开心8！" [ref=e438]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "2305"
+                    - generic:
+                      - img
+                      - generic: "18"
+                  - generic: 12:19
+          - generic [ref=e440]:
+            - link "【暨南大学非官方圣诞特别节目】一起来看流星雨沙雕英文翻拍 快乐presentation——图个开心8！" [ref=e441] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1bJ411W7qz/
+              - heading "【暨南大学非官方圣诞特别节目】一起来看流星雨沙雕英文翻拍 快乐presentation——图个开心8！" [level=3] [ref=e442]:
+                - text: 【
+                - emphasis [ref=e443]: 暨南大学
+                - text: 非
+                - emphasis [ref=e444]: 官方
+                - text: 圣诞特别节目】一起来看流星雨沙雕英文翻拍 快乐presentation——图个开心8！
+            - link "我也会有自己的月亮 · 2019-12-25" [ref=e446] [cursor=pointer]:
+              - /url: //space.bilibili.com/74314248
+              - img [ref=e447]
+              - generic [ref=e451]: 我也会有自己的月亮
+              - generic [ref=e452]: · 2019-12-25
+        - generic [ref=e455]:
+          - link "66、一个视频带你认识——暨南大学 341 0 03:32" [ref=e456] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV11jDTBpEx9/
+            - generic [ref=e457]:
+              - img "66、一个视频带你认识——暨南大学" [ref=e460]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "341"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 03:32
+          - generic [ref=e462]:
+            - link "66、一个视频带你认识——暨南大学" [ref=e463] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV11jDTBpEx9/
+              - heading "66、一个视频带你认识——暨南大学" [level=3] [ref=e464]:
+                - text: 66、一个视频带你认识——
+                - emphasis [ref=e465]: 暨南大学
+            - link "渡骞 · 04-08" [ref=e467] [cursor=pointer]:
+              - /url: //space.bilibili.com/524990578
+              - img [ref=e468]
+              - generic [ref=e472]: 渡骞
+              - generic [ref=e473]: · 04-08
+        - generic [ref=e476]:
+          - link "暨南大学宣传片 477 0 07:51" [ref=e477] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1Cb42187vj/
+            - generic [ref=e478]:
+              - img "暨南大学宣传片" [ref=e481]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "477"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 07:51
+          - generic [ref=e483]:
+            - link "暨南大学宣传片" [ref=e484] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1Cb42187vj/
+              - heading "暨南大学宣传片" [level=3] [ref=e485]:
+                - emphasis [ref=e486]: 暨南大学
+                - text: 宣传片
+            - link "孔焯威 · 2024-05-03" [ref=e488] [cursor=pointer]:
+              - /url: //space.bilibili.com/1793980602
+              - img [ref=e489]
+              - generic [ref=e493]: 孔焯威
+              - generic [ref=e494]: · 2024-05-03
+        - generic [ref=e497]:
+          - link "【广工与暨大学子深度交流】高考第二站——暨南大学 9477 8 09:47" [ref=e498] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1yW4y1S7xD/
+            - generic [ref=e499]:
+              - img "【广工与暨大学子深度交流】高考第二站——暨南大学" [ref=e502]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "9477"
+                    - generic:
+                      - img
+                      - generic: "8"
+                  - generic: 09:47
+          - generic [ref=e504]:
+            - link "【广工与暨大学子深度交流】高考第二站——暨南大学" [ref=e505] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1yW4y1S7xD/
+              - heading "【广工与暨大学子深度交流】高考第二站——暨南大学" [level=3] [ref=e506]:
+                - text: 【广工与暨大学子深度交流】高考第二站——
+                - emphasis [ref=e507]: 暨南大学
+            - link "今天学了什么呢 · 2023-06-21" [ref=e509] [cursor=pointer]:
+              - /url: //space.bilibili.com/456006173
+              - img [ref=e510]
+              - generic [ref=e514]: 今天学了什么呢
+              - generic [ref=e515]: · 2023-06-21
+        - generic [ref=e518]:
+          - link "暨南大学亲民版简介宣传片，高考录取分数排名，专业明细 3474 2 01:12" [ref=e519] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1qT41187U8/
+            - generic [ref=e520]:
+              - img "暨南大学亲民版简介宣传片，高考录取分数排名，专业明细" [ref=e523]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "3474"
+                    - generic:
+                      - img
+                      - generic: "2"
+                  - generic: 01:12
+          - generic [ref=e525]:
+            - link "暨南大学亲民版简介宣传片，高考录取分数排名，专业明细" [ref=e526] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1qT41187U8/
+              - heading "暨南大学亲民版简介宣传片，高考录取分数排名，专业明细" [level=3] [ref=e527]:
+                - emphasis [ref=e528]: 暨南大学
+                - text: 亲民版简介宣传片，高考录取分数排名，专业明细
+            - link "白岩岩白2001 · 2023-04-27" [ref=e530] [cursor=pointer]:
+              - /url: //space.bilibili.com/345391563
+              - img [ref=e531]
+              - generic [ref=e535]: 白岩岩白2001
+              - generic [ref=e536]: · 2023-04-27
+        - generic [ref=e539]:
+          - link "暨南大学招生宣传片 5856 2 03:01" [ref=e540] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1Ky4y1n7Wy/
+            - generic [ref=e541]:
+              - img "暨南大学招生宣传片" [ref=e544]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "5856"
+                    - generic:
+                      - img
+                      - generic: "2"
+                  - generic: 03:01
+          - generic [ref=e546]:
+            - link "暨南大学招生宣传片" [ref=e547] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1Ky4y1n7Wy/
+              - heading "暨南大学招生宣传片" [level=3] [ref=e548]:
+                - emphasis [ref=e549]: 暨南大学
+                - text: 招生宣传片
+            - link "lamblamblamb1 · 2021-01-28" [ref=e551] [cursor=pointer]:
+              - /url: //space.bilibili.com/450143714
+              - img [ref=e552]
+              - generic [ref=e556]: lamblamblamb1
+              - generic [ref=e557]: · 2021-01-28
+        - generic [ref=e560]:
+          - link "可莉邀请你报考暨南大学 ！ 2万 16 01:57" [ref=e561] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1934y1W7TP/
+            - generic [ref=e562]:
+              - img "可莉邀请你报考暨南大学 ！" [ref=e565]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 2万
+                    - generic:
+                      - img
+                      - generic: "16"
+                  - generic: 01:57
+          - generic [ref=e567]:
+            - link "可莉邀请你报考暨南大学 ！" [ref=e568] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1934y1W7TP/
+              - heading "可莉邀请你报考暨南大学 ！" [level=3] [ref=e569]:
+                - text: 可莉邀请你报考
+                - emphasis [ref=e570]: 暨南大学
+                - text: ！
+            - link "文小小鸿 · 2022-06-26" [ref=e572] [cursor=pointer]:
+              - /url: //space.bilibili.com/243924352
+              - img [ref=e573]
+              - generic [ref=e577]: 文小小鸿
+              - generic [ref=e578]: · 2022-06-26
+        - generic [ref=e581]:
+          - link "暨南大学3分钟 1032 3 02:47" [ref=e582] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1VY4y1V78e/
+            - generic [ref=e583]:
+              - img "暨南大学3分钟" [ref=e586]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "1032"
+                    - generic:
+                      - img
+                      - generic: "3"
+                  - generic: 02:47
+          - generic [ref=e588]:
+            - link "暨南大学3分钟" [ref=e589] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1VY4y1V78e/
+              - heading "暨南大学3分钟" [level=3] [ref=e590]:
+                - emphasis [ref=e591]: 暨南大学
+                - text: 3分钟
+            - link "暨南大学高级研修班 · 2022-06-01" [ref=e593] [cursor=pointer]:
+              - /url: //space.bilibili.com/2022988155
+              - img [ref=e594]
+              - generic [ref=e598]: 暨南大学高级研修班
+              - generic [ref=e599]: · 2022-06-01
+        - generic [ref=e602]:
+          - link "带你第一视角逛暨南大学 4963 5 24:54" [ref=e603] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1XG8PzREZy/
+            - generic [ref=e604]:
+              - img "带你第一视角逛暨南大学" [ref=e607]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "4963"
+                    - generic:
+                      - img
+                      - generic: "5"
+                  - generic: 24:54
+          - generic [ref=e609]:
+            - link "带你第一视角逛暨南大学" [ref=e610] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1XG8PzREZy/
+              - heading "带你第一视角逛暨南大学" [level=3] [ref=e611]:
+                - text: 带你第一视角逛
+                - emphasis [ref=e612]: 暨南大学
+            - link "仿偟 · 2025-07-24" [ref=e614] [cursor=pointer]:
+              - /url: //space.bilibili.com/7649379
+              - img [ref=e615]
+              - generic [ref=e619]: 仿偟
+              - generic [ref=e620]: · 2025-07-24
+        - generic [ref=e623]:
+          - link "暨南大学招生宣传片2022 2633 0 04:26" [ref=e624] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV11R4y187t5/
+            - generic [ref=e625]:
+              - img "暨南大学招生宣传片2022" [ref=e628]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "2633"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 04:26
+          - generic [ref=e630]:
+            - link "暨南大学招生宣传片2022" [ref=e631] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV11R4y187t5/
+              - heading "暨南大学招生宣传片2022" [level=3] [ref=e632]:
+                - emphasis [ref=e633]: 暨南大学
+                - text: 招生宣传片2022
+            - link "开心-小麻花 · 2023-01-25" [ref=e635] [cursor=pointer]:
+              - /url: //space.bilibili.com/508849890
+              - img [ref=e636]
+              - generic [ref=e640]: 开心-小麻花
+              - generic [ref=e641]: · 2023-01-25
+        - generic [ref=e644]:
+          - link "华侨高等学府：暨南大学 911 0 00:56" [ref=e645] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1994kz8EN1/
+            - generic [ref=e646]:
+              - img "华侨高等学府：暨南大学" [ref=e649]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "911"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 00:56
+          - generic [ref=e651]:
+            - link "华侨高等学府：暨南大学" [ref=e652] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1994kz8EN1/
+              - heading "华侨高等学府：暨南大学" [level=3] [ref=e653]:
+                - text: 华侨高等学府：
+                - emphasis [ref=e654]: 暨南大学
+            - link "Top-school · 2025-10-19" [ref=e656] [cursor=pointer]:
+              - /url: //space.bilibili.com/91826530
+              - img [ref=e657]
+              - generic [ref=e661]: Top-school
+              - generic [ref=e662]: · 2025-10-19
+        - generic [ref=e665]:
+          - link "暨南大学27考研择校建议分数分析+备考暨南相关内容+寒假如何备考来年能直接碾压80%的考研人？ 3673 0 01:28:16" [ref=e666] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1srcMznEWk/
+            - generic [ref=e667]:
+              - img "暨南大学27考研择校建议分数分析+备考暨南相关内容+寒假如何备考来年能直接碾压80%的考研人？" [ref=e670]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "3673"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 01:28:16
+          - generic [ref=e672]:
+            - link "暨南大学27考研择校建议分数分析+备考暨南相关内容+寒假如何备考来年能直接碾压80%的考研人？" [ref=e673] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1srcMznEWk/
+              - heading "暨南大学27考研择校建议分数分析+备考暨南相关内容+寒假如何备考来年能直接碾压80%的考研人？" [level=3] [ref=e674]:
+                - emphasis [ref=e675]: 暨南大学
+                - text: 27考研择校建议分数分析+备考
+                - emphasis [ref=e676]: 暨南
+                - text: 相关内容+寒假如何备考来年能直接碾压80%的考研人？
+            - link "暨南贝贝学长带你上岸 · 02-09" [ref=e678] [cursor=pointer]:
+              - /url: //space.bilibili.com/3690977233472410
+              - img [ref=e679]
+              - generic [ref=e683]: 暨南贝贝学长带你上岸
+              - generic [ref=e684]: · 02-09
+        - generic [ref=e687]:
+          - link "暨南大学石牌校区居然长这样，围着教学楼转一圈大开眼界 5925 2 04:12" [ref=e688] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1pp4y1K78S/
+            - generic [ref=e689]:
+              - img "暨南大学石牌校区居然长这样，围着教学楼转一圈大开眼界" [ref=e692]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "5925"
+                    - generic:
+                      - img
+                      - generic: "2"
+                  - generic: 04:12
+          - generic [ref=e694]:
+            - link "暨南大学石牌校区居然长这样，围着教学楼转一圈大开眼界" [ref=e695] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1pp4y1K78S/
+              - heading "暨南大学石牌校区居然长这样，围着教学楼转一圈大开眼界" [level=3] [ref=e696]:
+                - emphasis [ref=e697]: 暨南大学
+                - text: 石牌校区居然长这样，围着教学楼转一圈大开眼界
+            - link "三十一路车 · 2023-08-22" [ref=e699] [cursor=pointer]:
+              - /url: //space.bilibili.com/524596182
+              - img [ref=e700]
+              - generic [ref=e704]: 三十一路车
+              - generic [ref=e705]: · 2023-08-22
+        - generic [ref=e708]:
+          - link "夯爆了！暨南大学27光电考研834专业课140分到底是如何学的？ 174 0 01:02:06" [ref=e709] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1L5QxB8Eos/
+            - generic [ref=e710]:
+              - img "夯爆了！暨南大学27光电考研834专业课140分到底是如何学的？" [ref=e713]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "174"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 01:02:06
+          - generic [ref=e715]:
+            - link "夯爆了！暨南大学27光电考研834专业课140分到底是如何学的？" [ref=e716] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1L5QxB8Eos/
+              - heading "夯爆了！暨南大学27光电考研834专业课140分到底是如何学的？" [level=3] [ref=e717]:
+                - text: 夯爆了！
+                - emphasis [ref=e718]: 暨南大学
+                - text: 27光电考研834专业课140分到底是如何学的？
+            - link "暨南贝贝学长带你上岸 · 04-13" [ref=e720] [cursor=pointer]:
+              - /url: //space.bilibili.com/3690977233472410
+              - img [ref=e721]
+              - generic [ref=e725]: 暨南贝贝学长带你上岸
+              - generic [ref=e726]: · 04-13
+        - generic [ref=e729]:
+          - link "【全程回放】暨南大学建校115周年校庆文艺晚会 2071 0 02:16:27" [ref=e730] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1gg411T7m9/
+            - generic [ref=e731]:
+              - img "【全程回放】暨南大学建校115周年校庆文艺晚会" [ref=e734]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "2071"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 02:16:27
+          - generic [ref=e736]:
+            - link "【全程回放】暨南大学建校115周年校庆文艺晚会" [ref=e737] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1gg411T7m9/
+              - heading "【全程回放】暨南大学建校115周年校庆文艺晚会" [level=3] [ref=e738]:
+                - text: 【全程回放】
+                - emphasis [ref=e739]: 暨南大学
+                - text: 建校115周年校庆文艺晚会
+            - link "珠紫铁道 · 2021-11-14" [ref=e741] [cursor=pointer]:
+              - /url: //space.bilibili.com/209577568
+              - img [ref=e742]
+              - generic [ref=e746]: 珠紫铁道
+              - generic [ref=e747]: · 2021-11-14
+        - generic [ref=e750]:
+          - link "暨南大学这所211是不是被大家看扁了？ 614 0 06:05" [ref=e751] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1tZirBHEWL/
+            - generic [ref=e752]:
+              - img "暨南大学这所211是不是被大家看扁了？" [ref=e755]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "614"
+                    - generic:
+                      - img
+                      - generic: "0"
+                  - generic: 06:05
+          - generic [ref=e757]:
+            - link "暨南大学这所211是不是被大家看扁了？" [ref=e758] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1tZirBHEWL/
+              - heading "暨南大学这所211是不是被大家看扁了？" [level=3] [ref=e759]:
+                - emphasis [ref=e760]: 暨南大学
+                - text: 这所211是不是被大家看扁了？
+            - link "杨老师深圳升学指南 · 01-04" [ref=e762] [cursor=pointer]:
+              - /url: //space.bilibili.com/261148293
+              - img [ref=e763]
+              - generic [ref=e767]: 杨老师深圳升学指南
+              - generic [ref=e768]: · 01-04
+        - generic [ref=e771]:
+          - link "【校歌】暨南大学校歌 1.2万 11 02:26" [ref=e772] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1N441117Jf/
+            - generic [ref=e773]:
+              - img "【校歌】暨南大学校歌" [ref=e776]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: 1.2万
+                    - generic:
+                      - img
+                      - generic: "11"
+                  - generic: 02:26
+          - generic [ref=e778]:
+            - link "【校歌】暨南大学校歌" [ref=e779] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV1N441117Jf/
+              - heading "【校歌】暨南大学校歌" [level=3] [ref=e780]:
+                - text: 【校歌】
+                - emphasis [ref=e781]: 暨南大学
+                - text: 校歌
+            - link "辉夜Amoy · 2019-09-06" [ref=e783] [cursor=pointer]:
+              - /url: //space.bilibili.com/1775986
+              - img [ref=e784]
+              - generic [ref=e788]: 辉夜Amoy
+              - generic [ref=e789]: · 2019-09-06
+        - generic [ref=e792]:
+          - link "来看社恐拍25届暨南大学录取通知书开箱 1245 2 05:18" [ref=e793] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV12V8nzFE7g/
+            - generic [ref=e794]:
+              - img "来看社恐拍25届暨南大学录取通知书开箱" [ref=e797]
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "1245"
+                    - generic:
+                      - img
+                      - generic: "2"
+                  - generic: 05:18
+          - generic [ref=e799]:
+            - link "来看社恐拍25届暨南大学录取通知书开箱" [ref=e800] [cursor=pointer]:
+              - /url: //www.bilibili.com/video/BV12V8nzFE7g/
+              - heading "来看社恐拍25届暨南大学录取通知书开箱" [level=3] [ref=e801]:
+                - text: 来看社恐拍25届
+                - emphasis [ref=e802]: 暨南大学
+                - text: 录取通知书开箱
+            - link "落梦awa · 2025-07-29" [ref=e804] [cursor=pointer]:
+              - /url: //space.bilibili.com/651927738
+              - img [ref=e805]
+              - generic [ref=e809]: 落梦awa
+              - generic [ref=e810]: · 2025-07-29
+      - generic [ref=e813]:
+        - button "上一页" [disabled] [ref=e814]
+        - button "1" [ref=e815] [cursor=pointer]
+        - button "2" [ref=e816] [cursor=pointer]
+        - button "3" [ref=e817] [cursor=pointer]
+        - button "4" [ref=e818] [cursor=pointer]
+        - button "5" [ref=e819] [cursor=pointer]
+        - button "6" [ref=e820] [cursor=pointer]
+        - button "7" [ref=e821] [cursor=pointer]
+        - generic [ref=e822]: ...
+        - button "34" [ref=e823] [cursor=pointer]
+        - button "下一页" [ref=e824] [cursor=pointer]
+  - generic [ref=e829]:
+    - generic [ref=e830]:
+      - generic [ref=e831]:
+        - generic [ref=e832]: bilibili
+        - generic [ref=e833]:
+          - link "关于我们" [ref=e834] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/aboutUs.html
+          - link "联系我们" [ref=e835] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/contact.html
+          - link "用户协议" [ref=e836] [cursor=pointer]:
+            - /url: //www.bilibili.com/protocal/licence.html
+          - link "加入我们" [ref=e837] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/join.html
+          - link "隐私协议" [ref=e838] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/privacy-pc.html
+          - link "bilibili认证" [ref=e839] [cursor=pointer]:
+            - /url: //account.bilibili.com/account/official/home
+          - link "Investor Relations" [ref=e840] [cursor=pointer]:
+            - /url: //ir.bilibili.com/
+      - generic [ref=e841]:
+        - generic [ref=e842]: 传送门
+        - generic [ref=e843]:
+          - link "协议汇总" [ref=e844] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/topic/activity-cn8bxPLzz.html
+          - link "活动中心" [ref=e845] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/activity-list.html
+          - link "活动专题页" [ref=e846] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/topic_list.html
+          - link "侵权申诉" [ref=e847] [cursor=pointer]:
+            - /url: //www.bilibili.com/v/copyright/intro/
+          - link "帮助中心" [ref=e848] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/help.html
+          - link "社区中心" [ref=e849] [cursor=pointer]:
+            - /url: https://www.bilibili.com/blackboard/activity-5zJxM3spoS.html
+          - link "壁纸站" [ref=e850] [cursor=pointer]:
+            - /url: //space.bilibili.com/6823116#/album
+          - link "广告合作" [ref=e851] [cursor=pointer]:
+            - /url: //e.bilibili.com/
+          - link "名人堂" [ref=e852] [cursor=pointer]:
+            - /url: //www.bilibili.com/blackboard/activity-S1jfy69Jz.html
+          - link "MCN管理中心" [ref=e853] [cursor=pointer]:
+            - /url: //mcn.bilibili.com/studio/mcn/entry
+          - link "高级弹幕" [ref=e854] [cursor=pointer]:
+            - /url: //www.bilibili.com/video/BV1Xx411c7cH/
+          - link "品牌号官网" [ref=e855] [cursor=pointer]:
+            - /url: //b.bilibili.com/
+      - generic [ref=e856]:
+        - link "下载APP" [ref=e858] [cursor=pointer]:
+          - /url: //app.bilibili.com/
+          - img [ref=e860]
+          - paragraph [ref=e862]: 下载APP
+        - link "公益" [ref=e864] [cursor=pointer]:
+          - /url: //love.bilibili.com/
+          - img [ref=e866]
+          - paragraph [ref=e871]: 公益
+        - link "官方微博" [ref=e873] [cursor=pointer]:
+          - /url: //weibo.com/bilibiliweb
+          - img [ref=e875]
+          - paragraph [ref=e877]: 官方微博
+        - generic [ref=e879]:
+          - img [ref=e881]
+          - paragraph [ref=e883]: 官方微信
+    - generic [ref=e886]:
+      - generic [ref=e887]:
+        - link "营业执照" [ref=e888] [cursor=pointer]:
+          - /url: //i0.hdslb.com/bfs/activity-plat/static/20240516/9ccf041718e5d6d6dfaebc91b85c791c/gd85E6tDco.jpg
+        - text: 信息网络传播视听节目许可证：0910417
+        - link "网络文化经营许可证 沪网文【2025】0258-085号" [ref=e889] [cursor=pointer]:
+          - /url: //i0.hdslb.com/bfs/activity-plat/static/20260209/3b3c5705bda98d50983f6f47df360fef/K4t52YryBV.jpeg
+        - text: 广播电视节目制作经营许可证：（沪）字第01248号增值电信业务经营许可证 沪B2-20100043
+      - generic [ref=e890]:
+        - link "互联网ICP备案：沪ICP备13002172号-3" [ref=e891] [cursor=pointer]:
+          - /url: //beian.miit.gov.cn/
+        - link "出版物经营许可证 沪批字第U6699 号" [ref=e892] [cursor=pointer]:
+          - /url: //i0.hdslb.com/bfs/activity-plat/static/20240516/9ccf041718e5d6d6dfaebc91b85c791c/4ainzbFKao.jpg
+        - text: 互联网药品信息服务资格证 沪-非经营性-2022-0011营业性演出许可证 沪市文演（经）00-2253 |
+      - generic [ref=e893]:
+        - link "不良信息举报邮箱：help@bilibili.com" [ref=e894] [cursor=pointer]:
+          - /url: mailto:help@bilibili.com
+        - link "涉未成年举报邮箱：teenprotect@bilibili.com" [ref=e895] [cursor=pointer]:
+          - /url: mailto:teenprotect@bilibili.com
+        - text: 不良信息举报电话：4006262233转3
+        - link "上海互联网举报中心 |" [ref=e897] [cursor=pointer]:
+          - /url: http://www.shjbzx.cn/
+        - link "12345政务服务便民热线 |" [ref=e898] [cursor=pointer]:
+          - /url: http://www.sh12345.gov.cn/
+      - generic [ref=e899]:
+        - link "沪公网安备31011002002436号 |" [ref=e901] [cursor=pointer]:
+          - /url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011002002436
+        - link "儿童色情信息举报专区 |" [ref=e902] [cursor=pointer]:
+          - /url: mailto:userreport@bilibili.com
+        - link "扫黄打非举报" [ref=e903] [cursor=pointer]:
+          - /url: https://bzpt.shdf.gov.cn/www/shouye/gzfw/wsjb/index.shtml
+      - generic [ref=e904]:
+        - link "网信算备310110764385705230011号" [ref=e905] [cursor=pointer]:
+          - /url: https://beian.cac.gov.cn/api/static/fileUpload/principalOrithm/additional/user_699bbd78-36f4-459c-aeb0-bf98a2a562d8_6185ea2c-c84c-404a-9280-c5465af05948.pdf
+        - link "网信算备310110764385702230013号" [ref=e906] [cursor=pointer]:
+          - /url: https://beian.cac.gov.cn/api/static/fileUpload/principalOrithm/additional/user_699bbd78-36f4-459c-aeb0-bf98a2a562d8_e03e6855-76a6-43fb-b799-d090e7fce25d.pdf
+      - generic [ref=e907]:
+        - text: 网上有害信息举报专区：
+        - link "中国互联网违法和不良信息举报中心" [ref=e909] [cursor=pointer]:
+          - /url: https://www.12377.cn/
+        - text: 亲爱的市民朋友，上海警方反诈劝阻电话"96110"系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。
+      - generic [ref=e910]: 公司名称：上海宽娱数码科技有限公司 |公司地址：上海市杨浦区政立路489号 |电话：021-25099888
+    - generic [ref=e911]:
+      - img [ref=e912]
+      - img [ref=e913]
+      - img [ref=e914]

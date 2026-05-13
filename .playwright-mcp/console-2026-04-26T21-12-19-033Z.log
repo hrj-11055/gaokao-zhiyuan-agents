@@ -1,0 +1,29 @@
+[     278ms] [WARNING] A parser-blocking, cross site (i.e. different eTLD+1) script, https://api.map.baidu.com/getscript?v=2.0&ak=WkGSwQR2Gx8tyFtHigd2JIrWW2clBQZX&services=&t=20260311112242, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details. @ https://api.map.baidu.com/api?v=2.0&ak=WkGSwQR2Gx8tyFtHigd2JIrWW2clBQZX&s=1:0
+[     278ms] [WARNING] A parser-blocking, cross site (i.e. different eTLD+1) script, https://api.map.baidu.com/getscript?v=2.0&ak=WkGSwQR2Gx8tyFtHigd2JIrWW2clBQZX&services=&t=20260311112242, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details. @ https://api.map.baidu.com/api?v=2.0&ak=WkGSwQR2Gx8tyFtHigd2JIrWW2clBQZX&s=1:0
+[     341ms] [LOG] 
+        %c
+        N年前，高考改变了你的人生。
+
+        N年后，你有一个机会，用代码帮助别人用高考改变人生。
+
+        朋友，都看到这里了，不妨来试试，成就他人的梦想，码出自己的未来。
+
+         color:blue;font-weight:bold; @ https://www.gaokao.cn/static/js/2026_04_24_15_13.1ac31fadd650f4f8b1e2.143.chunk.js:0
+[     467ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-gkcx.gaokao.cn/www/2.0/json/ads_origin_group/pc_scoreline.json?a=www.gaokao.cn:0
+[     468ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/scoreline/rank.json?a=www.gaokao.cn:0
+[     522ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/scoreline/pc_special.json?a=www.gaokao.cn:0
+[     522ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/scoreline/video/list.json?a=www.gaokao.cn:0
+[     522ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/image/scoreline.json?a=www.gaokao.cn:0
+[     523ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-gkcx.gaokao.cn/www/2.0/json/live/v2/school/scoreline/info.json?a=www.gaokao.cn:0
+[     523ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-gkcx.gaokao.cn/www/2.0/json/cartoonset/pc/scoreline.json?a=www.gaokao.cn:0
+[     523ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-gkcx.gaokao.cn/www/2.0/json/short/exact/scoreline.json?a=www.gaokao.cn:0
+[     523ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-gkcx.gaokao.cn/www/2.0/json/commenttop/scoreline.json?a=www.gaokao.cn:0
+[     600ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-answer.eol.cn/html/www/data/board/scoreline.json?a=www.gaokao.cn:0
+[     601ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/department/scoreline.json?a=www.gaokao.cn:0
+[     601ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/scoreline/pc_jobdetail.json?a=www.gaokao.cn:0
+[     602ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/qiangji/school/scoreline/info.json?a=www.gaokao.cn:0
+[     602ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/scoreline/info.json?a=www.gaokao.cn:0
+[     638ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/award/scoreline.json?a=www.gaokao.cn:0
+[     639ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/facilities/scoreline.json?a=www.gaokao.cn:0
+[     642ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/poi/scoreline.json?a=www.gaokao.cn:0
+[     642ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static-data.gaokao.cn/www/2.0/school/image/scoreline.json?a=www.gaokao.cn:0

@@ -1,0 +1,47 @@
+{
+  "university_name": "宜宾学院",
+  "english_name": "Yibin University",
+  "location": {
+    "province": "四川省",
+    "city": "宜宾市",
+    "district": "临港经开区 / 翠屏区"
+  },
+  "academic_level": {
+    "is_master_granting": true,
+    "first_year_of_master": 2024,
+    "key_labs": [
+      "四川省固态发酵资源利用重点实验室",
+      "智能终端四川省重点实验室"
+    ]
+  },
+  "recruitment": {
+    "average_rank_sc_liberal_arts": 28500,
+    "average_rank_sc_science": 120000,
+    "hot_majors": [
+      "电子信息工程",
+      "小学教育",
+      "新能源材料与器件"
+    ]
+  },
+  "employment": {
+    "major_employers": [
+      "五粮液集团",
+      "宁德时代",
+      "极米科技"
+    ],
+    "further_study_rate": "12.5%",
+    "local_employment_rate": ">50%"
+  },
+  "campus_life": {
+    "new_campus_rating": "Excellent",
+    "old_campus_rating": "Average",
+    "dormitory_standard": "4-person, AC, Independent Bathroom"
+  },
+  "evaluation_scores": {
+    "overall": 3.2,
+    "academic": 2.5,
+    "employment": 3.5,
+    "location": 4.2,
+    "brand": 3.8
+  }
+}

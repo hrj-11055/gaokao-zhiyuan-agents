@@ -1,0 +1,65 @@
+{
+  "university_name": "山东建筑大学",
+  "short_name": "山建大 / SDJZU",
+  "location": {
+    "province": "山东",
+    "city": "济南",
+    "district": "历城区",
+    "campus": [
+      "雪山校区",
+      "和平校区"
+    ]
+  },
+  "academic": {
+    "tags": [
+      "省部共建",
+      "行业特色校",
+      "山东省属重点"
+    ],
+    "key_disciplines": [
+      "建筑学",
+      "土木工程",
+      "城乡规划",
+      "工程造价"
+    ],
+    "fourth_round_evaluation": {
+      "B_plus": [
+        "建筑学",
+        "土木工程",
+        "城乡规划"
+      ],
+      "B_minus": [
+        "管理科学与工程"
+      ]
+    },
+    "academician_count": {
+      "full_time": 0,
+      "double_appointed": 5
+    }
+  },
+  "admission_quality": {
+    "shandong_rank_avg": 95000,
+    "civil_engineering_drop_risk": "High",
+    "cs_electrical_demand": "Very High"
+  },
+  "employment": {
+    "further_study_rate": "26.61%",
+    "state_owned_enterprise_rate": "36.37%",
+    "top_employers": [
+      "中国建筑",
+      "中国铁建",
+      "中国交建",
+      "山东路桥"
+    ],
+    "starting_salary_median": 6200
+  },
+  "scores": {
+    "academic_capital": 3.2,
+    "graduate_value": 3.5,
+    "location_advantage": 3.8,
+    "globalization": 2.8,
+    "student_empowerment": 3.4,
+    "brand_asset": 3.6,
+    "overall_weighted_score": 3.39
+  }
+}

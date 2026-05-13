@@ -1,0 +1,538 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 医疗保险专业 工资待遇 起薪 2024 2025
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87+%E8%B5%B7%E8%96%AA+2024+2025&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2211014727317526179366%22%2C%22ori_lid%22%3A%2211014727317526179366%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=98dc2c2302f06e26&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87+%E8%B5%B7%E8%96%AA+2024+2025
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87+%E8%B5%B7%E8%96%AA+2024+2025
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=98dc2c2302f06e26&ie=utf-8&wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87+%E8%B5%B7%E8%96%AA+2024+2025&rsv_spt=7&rsv_bp=1&f=8&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87+%E8%B5%B7%E8%96%AA+2024+2025&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87+%E8%B5%B7%E8%96%AA+2024+2025
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87+%E8%B5%B7%E8%96%AA+2024+2025
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87+%E8%B5%B7%E8%96%AA+2024+2025
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A+%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87+%E8%B5%B7%E8%96%AA+2024+2025
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  医疗保险专业好就业吗  医师薪酬最新消息公布  2024年医师薪资会下降吗  2024医务人员薪酬改革方案  2024年医务人员待遇  医疗保险有什么待遇    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e69]:
+              - cell "相关搜索  医疗保险专业好就业吗  医师薪酬最新消息公布  2024年医师薪资会下降吗  2024医务人员薪酬改革方案  2024年医务人员待遇  医疗保险有什么待遇    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 医疗保险专业好就业吗" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%E5%A5%BD%E5%B0%B1%E4%B8%9A%E5%90%97&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b600KprmSKk9Ij5kQS8IEbn1tzJVu94WxmM8jjwkJSS9009LyOFFneFXdC4&rfqid=98dc2c2302f06e26&rsv_dl=0_prs_28616_1&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsf=101633403
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 医疗保险专业好就业吗
+                      - link " 医师薪酬最新消息公布" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E5%B8%88%E8%96%AA%E9%85%AC%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF%E5%85%AC%E5%B8%83&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b600KprmSKk9Ij5kQS8IEbn1tzJVu94WxmM8jjwkJSS9009LyOFFneFXdC4&rfqid=98dc2c2302f06e26&rsv_dl=0_prs_28616_2&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsf=101636803
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 医师薪酬最新消息公布
+                      - link " 2024年医师薪资会下降吗" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=2024%E5%B9%B4%E5%8C%BB%E5%B8%88%E8%96%AA%E8%B5%84%E4%BC%9A%E4%B8%8B%E9%99%8D%E5%90%97&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b600KprmSKk9Ij5kQS8IEbn1tzJVu94WxmM8jjwkJSS9009LyOFFneFXdC4&rfqid=98dc2c2302f06e26&rsv_dl=0_prs_28616_3&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsf=101636803
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 2024年医师薪资会下降吗
+                      - link " 2024医务人员薪酬改革方案" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=2024%E5%8C%BB%E5%8A%A1%E4%BA%BA%E5%91%98%E8%96%AA%E9%85%AC%E6%94%B9%E9%9D%A9%E6%96%B9%E6%A1%88&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b600KprmSKk9Ij5kQS8IEbn1tzJVu94WxmM8jjwkJSS9009LyOFFneFXdC4&rfqid=98dc2c2302f06e26&rsv_dl=0_prs_28616_4&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsf=101636803
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 2024医务人员薪酬改革方案
+                      - link " 2024年医务人员待遇" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=2024%E5%B9%B4%E5%8C%BB%E5%8A%A1%E4%BA%BA%E5%91%98%E5%BE%85%E9%81%87&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b600KprmSKk9Ij5kQS8IEbn1tzJVu94WxmM8jjwkJSS9009LyOFFneFXdC4&rfqid=98dc2c2302f06e26&rsv_dl=0_prs_28616_5&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsf=101636803
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 2024年医务人员待遇
+                      - link " 医疗保险有什么待遇" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E6%9C%89%E4%BB%80%E4%B9%88%E5%BE%85%E9%81%87&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b600KprmSKk9Ij5kQS8IEbn1tzJVu94WxmM8jjwkJSS9009LyOFFneFXdC4&rfqid=98dc2c2302f06e26&rsv_dl=0_prs_28616_6&rq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsf=101633403
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 医疗保险有什么待遇
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=0b88XApNgVuJFESJGnJBTalvbxsqradnizr%2FVEaKBPa6nYX%2BlHNIQ8C0D8A&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=0b88XApNgVuJFESJGnJBTalvbxsqradnizr%2FVEaKBPa6nYX%2BlHNIQ8C0D8A&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=0b88XApNgVuJFESJGnJBTalvbxsqradnizr%2FVEaKBPa6nYX%2BlHNIQ8C0D8A&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=0b88XApNgVuJFESJGnJBTalvbxsqradnizr%2FVEaKBPa6nYX%2BlHNIQ8C0D8A&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "“早上6点半 杭州东站全是孩子”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E6%97%A9%E4%B8%8A6%E7%82%B9%E5%8D%8A%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%E5%85%A8%E6%98%AF%E5%AD%A9%E5%AD%90%E2%80%9D&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "高市政府越过“最后一根红线”" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "女性多和好友聚会能“续命”" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=b56cepNRAkgpnAeRHQOi1DA9gKMjbNXh6SwShrFX1lpZsQabnQenTq3itS8&rqid=98dc2c2302f06e26&rsf=1172365bdebd71399982887aba5fb30b_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e209]:
+            - generic [ref=e211]:
+              - img [ref=e214]
+              - generic:
+                - generic: 
+            - generic [ref=e219]:
+              - generic [ref=e220]: 问题分析中
+              - img [ref=e222]
+          - generic [ref=e246]:
+            - heading "市人社局市医保局市税务局关于公布2024年度全市职工平均工资及..." [level=3] [ref=e249]:
+              - link "市人社局市医保局市税务局关于公布2024年度全市职工平均工资及..." [ref=e250] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Jo8VMcHlitmgBTeIWYUnbotxFNZmjV-dUF-u7hFhbHaDPwgNlXhQr5k6GO8W1rmraF3x-57gl1qAQISZZ62mBIR7PzGvmFgvNutq80M1-AS4Gvhpqs2RPeMMWsQ-YF6hegcpGYA-ip0iuvbxfuBT3a
+                - paragraph [ref=e253]:
+                  - generic [ref=e256]:
+                    - text: 市人社局市
+                    - emphasis [ref=e257]: 医保
+                    - text: 局市税务局关于公布
+                    - emphasis [ref=e258]: "2024"
+                    - text: 年度全市职工平均
+                    - emphasis [ref=e259]: 工资
+                    - text: 及...
+            - generic [ref=e264]:
+              - text: 2025年9月18日
+              - generic [ref=e265]:
+                - emphasis [ref=e266]: "2025"
+                - text: 年度工伤
+                - emphasis [ref=e267]: 保险
+                - text: 和防暑降温费、高温津贴、中班津贴、夜班津贴等福利
+                - emphasis [ref=e268]: 待遇
+                - text: 标准,按本市职工月平均
+                - emphasis [ref=e269]: 工资
+                - text: 8540元计算,自
+                - emphasis [ref=e270]: "2025"
+                - text: 年1月1日起执行。具体标准见《
+                - emphasis [ref=e271]: "2025"
+                - text: 年度相关
+                - emphasis [ref=e272]: 待遇
+                - text: 简表》。 三、缴纳社会
+                - emphasis [ref=e273]: 保险
+                - text: 费基数及有关标准 (一)用人单位及其职工缴纳职工基本养老、职工基本
+                - emphasis [ref=e274]: 医疗
+                - text: (含生育
+                - emphasis [ref=e275]: 保险
+                - text: )、失业、工伤
+                - emphasis [ref=e276]: 保险
+                - text: 费基数最低和最
+            - link "头像 天津市人力资源和社会保障局" [ref=e281] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Jo8VMcHlitmgBTeIWYUnbotxFNZmjV-dUF-u7hFhbHaDPwgNlXhQr5k6GO8W1rmraF3x-57gl1qAQISZZ62mBIR7PzGvmFgvNutq80M1-AS4Gvhpqs2RPeMMWsQ-YF6hegcpGYA-ip0iuvbxfuBT3a
+              - img "头像" [ref=e284]
+              - generic [ref=e285]: 天津市人力资源和社会保障局
+              - generic [ref=e287]: 
+          - generic [ref=e291]:
+            - heading "关于做好2025业务年度职工基本医疗保险费缴费工资申报工作的通知" [level=3] [ref=e294]:
+              - link "关于做好2025业务年度职工基本医疗保险费缴费工资申报工作的通知" [ref=e295] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HWNzMW8rSI2lckm06OIkdaBsoAuL7hjBC2LWDLi3tMBEkjb7YwXLfiV0uxveQQGvqegV7ejG8yCodFNTA_d4oMs5biIGhMHagKBlIrRhWPdlebQi436xLploTogmr3hYztb6QX8Q6Ttz2PNi0feAkupn9BN6Hjpso0QGM2q4apW8gDEpgjiwIGpk4DM1TVOs4Qm8eeU1vdz20_u16GU8wM_D1-RAHzzAzBXzbe84XJwFEDao7DkBRtkQvkQhJijSf9K5IubosprdrZCqAJsxkK
+                - paragraph [ref=e298]:
+                  - generic [ref=e301]:
+                    - text: 关于做好
+                    - emphasis [ref=e302]: "2025"
+                    - text: 业务年度职工基本
+                    - emphasis [ref=e303]: 医疗保险
+                    - text: 费缴费
+                    - emphasis [ref=e304]: 工资
+                    - text: 申报工作的通知
+            - generic [ref=e309]:
+              - text: 2025年6月30日
+              - generic [ref=e310]:
+                - text: 一、职工基本医疗保险费2025业务年度缴费基数上下限
+                - emphasis [ref=e311]: 2024年自治区全口径城镇单位就业人员月平均工资为8179元
+                - text: 。2025业务年度自治区职工基本医疗保险费月缴费基数下限为6543元(8179元的80%)、上限为24537元(8179元的300%)。用人单位所申报职工工...
+            - link "微信公众平台" [ref=e316] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=HWNzMW8rSI2lckm06OIkdaBsoAuL7hjBC2LWDLi3tMBEkjb7YwXLfiV0uxveQQGvqegV7ejG8yCodFNTA_d4oMs5biIGhMHagKBlIrRhWPdlebQi436xLploTogmr3hYztb6QX8Q6Ttz2PNi0feAkupn9BN6Hjpso0QGM2q4apW8gDEpgjiwIGpk4DM1TVOs4Qm8eeU1vdz20_u16GU8wM_D1-RAHzzAzBXzbe84XJwFEDao7DkBRtkQvkQhJijSf9K5IubosprdrZCqAJsxkK
+              - generic [ref=e317]: 微信公众平台
+              - generic [ref=e319]: 
+          - generic [ref=e323]:
+            - heading "2024年度全市职工平均工资及2025年度工资福利待遇标准公布" [level=3] [ref=e326]:
+              - link "2024年度全市职工平均工资及2025年度工资福利待遇标准公布" [ref=e327] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=HWNzMW8rSI2lckm06OIkdaBsoAuL7hjBC2LWDLi3tMAlEs93EcvJkfmC7Yg19NICzcMpAhb7xohPdAMG0PqFWmwYYzzypVDeu89p8ts82Jay-_HQ9Wp5Ukg8YpGYIZr8ESuxr2EX-L0PK6FS8OUbHxiyoJrxSn2qHK165JiKo3OAEHFLDt1B-7-CxsPMOXxM96ym_F_3HVRP5oNcdLie1Kqzq8CzPQ1gxuRJ5N-bfE-k5A69gANzTnMGYBFKQNHOR5-X00tIy5reZXqXJPTXqq
+                - paragraph [ref=e330]:
+                  - generic [ref=e333]:
+                    - emphasis [ref=e334]: "2024"
+                    - text: 年度全市职工平均
+                    - emphasis [ref=e335]: 工资
+                    - text: 及
+                    - emphasis [ref=e336]: "2025"
+                    - text: 年度工资福利
+                    - emphasis [ref=e337]: 待遇
+                    - text: 标准公布
+            - generic [ref=e342]:
+              - text: 2025年9月22日
+              - generic [ref=e343]:
+                - text: 2025年度工伤保险和防暑降温费、高温津贴、中班津贴、夜班津贴等福利待遇标准,
+                - emphasis [ref=e344]: 按本市职工月平均工资8540元计算,自2025年1月1日起执行
+                - text: 。具体标准见《2025年度相关待遇简表》。 三、缴纳社会保险费基数及有关标准 (一)用人单位及其职工缴纳职工基本养老...
+            - link "头像 就业云超市" [ref=e349] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=HWNzMW8rSI2lckm06OIkdaBsoAuL7hjBC2LWDLi3tMAlEs93EcvJkfmC7Yg19NICzcMpAhb7xohPdAMG0PqFWmwYYzzypVDeu89p8ts82Jay-_HQ9Wp5Ukg8YpGYIZr8ESuxr2EX-L0PK6FS8OUbHxiyoJrxSn2qHK165JiKo3OAEHFLDt1B-7-CxsPMOXxM96ym_F_3HVRP5oNcdLie1Kqzq8CzPQ1gxuRJ5N-bfE-k5A69gANzTnMGYBFKQNHOR5-X00tIy5reZXqXJPTXqq
+              - img "头像" [ref=e352]
+              - generic [ref=e353]: 就业云超市
+              - generic [ref=e355]: 
+          - generic [ref=e359]:
+            - heading "国家医疗保障局 通知公告 中国医疗保险研究会2025年度招聘公告" [level=3] [ref=e362]:
+              - link "国家医疗保障局 通知公告 中国医疗保险研究会2025年度招聘公告" [ref=e363] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Jo8VMcHlitmgBTeIWYUnbd2oISyhB1FreYd-RMT_F8SVZdeDtuO4fEVrUIFuN4GKLhElkJzH3wMJtKUHqbyADdJJJKyAdLknpslbXRk4w3W
+                - paragraph [ref=e366]:
+                  - generic [ref=e369]:
+                    - text: 国家医疗保障局 通知公告 中国
+                    - emphasis [ref=e370]: 医疗保险
+                    - text: 研究会
+                    - emphasis [ref=e371]: "2025"
+                    - text: 年度招聘公告
+            - generic [ref=e372]:
+              - link [ref=e374] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Jo8VMcHlitmgBTeIWYUnbd2oISyhB1FreYd-RMT_F8SVZdeDtuO4fEVrUIFuN4GKLhElkJzH3wMJtKUHqbyADdJJJKyAdLknpslbXRk4w3W
+              - generic [ref=e379]:
+                - generic [ref=e384]:
+                  - text: 2025年6月24日
+                  - generic [ref=e385]:
+                    - text: (一)
+                    - emphasis [ref=e386]: 薪资待遇
+                    - text: 1.工资奖金:基本工资+科研绩效+政策性补贴; 2.福利待遇:按国家规定办理五险一金,在职教育、团建培训、年度体检、工会福利等; 3.假期:带薪年假、探亲假、婚假及国家规定的其他所有满足条件的法定假期。 (二)工作地点 北京市西城区阜成门外大街甲28号京润大厦 联系人:冯老师 联系电话:010-50947536 ...
+                - link "头像 国家医疗保障局" [ref=e391] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=Jo8VMcHlitmgBTeIWYUnbd2oISyhB1FreYd-RMT_F8SVZdeDtuO4fEVrUIFuN4GKLhElkJzH3wMJtKUHqbyADdJJJKyAdLknpslbXRk4w3W
+                  - img "头像" [ref=e394]
+                  - generic [ref=e395]: 国家医疗保障局
+                  - generic [ref=e397]: 
+          - generic [ref=e401]:
+            - heading "...业务年度(2024年7月—2025年6月)职工基本医疗保险费缴费工资..." [level=3] [ref=e404]:
+              - link "...业务年度(2024年7月—2025年6月)职工基本医疗保险费缴费工资..." [ref=e405] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Fty1IsvVOw40eagZ5DSiN0B7cPsx3MnG_XFTQ7fgMbCzeG1aAGBQc7H3i0tmYufeXBPl8PgGY1PQlpgXx_E3VgdSU9pO1hBCCZZ1JnxkC8YePX6b5x9lpV6Zh2NM6TQkIFEMRIObYmde23v5iplgdK
+                - paragraph [ref=e408]:
+                  - generic [ref=e411]:
+                    - text: ...业务年度(
+                    - emphasis [ref=e412]: "2024"
+                    - text: 年7月—
+                    - emphasis [ref=e413]: "2025"
+                    - text: 年6月)职工基本
+                    - emphasis [ref=e414]: 医疗保险
+                    - text: 费缴费
+                    - emphasis [ref=e415]: 工资
+                    - text: ...
+            - generic [ref=e420]:
+              - text: 2024年6月27日
+              - generic [ref=e421]:
+                - emphasis [ref=e422]: "2024"
+                - text: 年7月1日至
+                - emphasis [ref=e423]: "2025"
+                - text: 年6月30日。 (三)申报口径 用人单位以申报当月在职职工为对象,缴费
+                - emphasis [ref=e424]: 工资
+                - text: 以职工本人2023年7月-2024年6月的月平均工资作为申报2024业务年度职工基本
+                - emphasis [ref=e425]: 医疗保险
+                - text: 费缴费工资的依据。2024年7月及以后新入职人员,以
+                - emphasis [ref=e426]: 起薪
+                - text: 月工资作为申报2024业务年度的缴费工资。
+            - link "头像 开鲁县人民政府门户网站" [ref=e431] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Fty1IsvVOw40eagZ5DSiN0B7cPsx3MnG_XFTQ7fgMbCzeG1aAGBQc7H3i0tmYufeXBPl8PgGY1PQlpgXx_E3VgdSU9pO1hBCCZZ1JnxkC8YePX6b5x9lpV6Zh2NM6TQkIFEMRIObYmde23v5iplgdK
+              - img "头像" [ref=e434]
+              - generic [ref=e435]: 开鲁县人民政府门户网站
+              - generic [ref=e437]: 
+          - generic [ref=e439]:
+            - generic [ref=e440]: 大家还在搜
+            - generic [ref=e441]:
+              - link "医疗保险专业好就业吗" [ref=e442] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%E5%A5%BD%E5%B0%B1%E4%B8%9A%E5%90%97&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=a2e4ZIBkHtjRBdKzRtytX%2F%2FYwudAw38q9o4OHth2LAmIrhUvhKq78afEKHw&rsf=101633403&rsv_dl=0_prs_28608_1
+                - generic [ref=e444]: 医疗保险专业好就业吗
+              - link "医师薪酬最新消息公布" [ref=e445] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E5%B8%88%E8%96%AA%E9%85%AC%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF%E5%85%AC%E5%B8%83&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=a2e4ZIBkHtjRBdKzRtytX%2F%2FYwudAw38q9o4OHth2LAmIrhUvhKq78afEKHw&rsf=101636803&rsv_dl=0_prs_28608_2
+                - generic [ref=e447]: 医师薪酬最新消息公布
+              - link "2024年医师薪资会下降吗" [ref=e448] [cursor=pointer]:
+                - /url: /s?wd=2024%E5%B9%B4%E5%8C%BB%E5%B8%88%E8%96%AA%E8%B5%84%E4%BC%9A%E4%B8%8B%E9%99%8D%E5%90%97&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=a2e4ZIBkHtjRBdKzRtytX%2F%2FYwudAw38q9o4OHth2LAmIrhUvhKq78afEKHw&rsf=101636803&rsv_dl=0_prs_28608_3
+                - generic [ref=e450]: 2024年医师薪资会下降吗
+              - link "2024医务人员薪酬改革方案" [ref=e451] [cursor=pointer]:
+                - /url: /s?wd=2024%E5%8C%BB%E5%8A%A1%E4%BA%BA%E5%91%98%E8%96%AA%E9%85%AC%E6%94%B9%E9%9D%A9%E6%96%B9%E6%A1%88&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=a2e4ZIBkHtjRBdKzRtytX%2F%2FYwudAw38q9o4OHth2LAmIrhUvhKq78afEKHw&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e453]: 2024医务人员薪酬改革方案
+              - link "2024年医务人员待遇" [ref=e454] [cursor=pointer]:
+                - /url: /s?wd=2024%E5%B9%B4%E5%8C%BB%E5%8A%A1%E4%BA%BA%E5%91%98%E5%BE%85%E9%81%87&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=a2e4ZIBkHtjRBdKzRtytX%2F%2FYwudAw38q9o4OHth2LAmIrhUvhKq78afEKHw&rsf=101636803&rsv_dl=0_prs_28608_5
+                - generic [ref=e456]: 2024年医务人员待遇
+              - link "医疗保险有什么待遇" [ref=e457] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E6%9C%89%E4%BB%80%E4%B9%88%E5%BE%85%E9%81%87&usm=2&ie=utf-8&rsv_pq=98dc2c2302f06e26&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&rsv_t=a2e4ZIBkHtjRBdKzRtytX%2F%2FYwudAw38q9o4OHth2LAmIrhUvhKq78afEKHw&rsf=101633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e459]: 医疗保险有什么待遇
+          - generic [ref=e463]:
+            - heading "(云医保函〔2024〕419号)关于2025年职工基本医疗保险和生育保险..." [level=3] [ref=e466]:
+              - link "(云医保函〔2024〕419号)关于2025年职工基本医疗保险和生育保险..." [ref=e467] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Npws41X1SZk80Fbr7Jam2MRGGPYCbTiIe_oxakHvu1XQpFaZh7KXs6gVH3TZbIm7XAvEgCIG0yNVcunYD94EinM4JYvs5J5lSL_qbGP7rf_
+                - paragraph [ref=e470]:
+                  - generic [ref=e473]:
+                    - text: (云
+                    - emphasis [ref=e474]: 医保
+                    - text: 函〔
+                    - emphasis [ref=e475]: "2024"
+                    - text: 〕419号)关于
+                    - emphasis [ref=e476]: "2025"
+                    - text: 年职工基本
+                    - emphasis [ref=e477]: 医疗保险
+                    - text: 和生育保险...
+            - generic [ref=e482]:
+              - text: 2024年12月6日
+              - generic [ref=e483]:
+                - text: (一)职工基本
+                - emphasis [ref=e484]: 医疗保险2025
+                - text: 年度
+                - emphasis [ref=e485]: 医保
+                - text: 统筹基金最高支付限额553116元。(本市上上年度城镇单位在岗职工年平均
+                - emphasis [ref=e486]: 工资
+                - text: 的6倍。) (二)职工医保普通门诊共济统筹年度最高支付限额1844元;与市内定点医疗机构“定额包干”付费标准为553元。(职工医保普通门诊统筹年度最高支付限额为本市上上年度城镇在岗职工年平均工资的2%;“定额包干...
+            - link "头像 云浮市人民政府" [ref=e491] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Npws41X1SZk80Fbr7Jam2MRGGPYCbTiIe_oxakHvu1XQpFaZh7KXs6gVH3TZbIm7XAvEgCIG0yNVcunYD94EinM4JYvs5J5lSL_qbGP7rf_
+              - img "头像" [ref=e494]
+              - generic [ref=e495]: 云浮市人民政府
+              - generic [ref=e497]: 
+          - generic [ref=e501]:
+            - heading "2025年医保新规出炉 开启健康保障新篇章-今日鞍山-鞍山市人民政府" [level=3] [ref=e504]:
+              - link "2025年医保新规出炉 开启健康保障新篇章-今日鞍山-鞍山市人民政府" [ref=e505] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Npws41X1SZk80Fbr7Jam2UBVzsFp-fU5rFa7lzzULb7cb97gpJgGz6tjAzRFf1iNm2rUcuI513DX1Uzs9r5fesWGOMYJLlO3E8pzv2yJi6y
+                - paragraph [ref=e508]:
+                  - generic [ref=e511]:
+                    - emphasis [ref=e512]: "2025"
+                    - text: 年
+                    - emphasis [ref=e513]: 医保
+                    - text: 新规出炉 开启健康保障新篇章-今日鞍山-鞍山市人民政府
+            - generic [ref=e518]:
+              - text: 2025年1月10日
+              - generic [ref=e519]:
+                - text: 根据《关于调整我市基本
+                - emphasis [ref=e520]: 医疗保险
+                - text: 参保筹资和
+                - emphasis [ref=e521]: 待遇
+                - text: 保障政策的通知》(鞍
+                - emphasis [ref=e522]: 医保
+                - text: 发〔
+                - emphasis [ref=e523]: "2024"
+                - text: 〕11号),自
+                - emphasis [ref=e524]: "2025"
+                - text: 年起,我市职工医保缴费年度由原来的按社保年度于每年的7月调整一次改为按自然年度执行,即每年1月1日至12月31日为一个缴费年度。同时,统一规范缴费基数:职工以本人上年度月平均
+                - emphasis [ref=e525]: 工资
+                - text: 为缴费基数,新招用职工以
+                - emphasis [ref=e526]: 起薪
+                - text: 当月工资...
+            - link "头像 鞍山市人民政府" [ref=e531] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Npws41X1SZk80Fbr7Jam2UBVzsFp-fU5rFa7lzzULb7cb97gpJgGz6tjAzRFf1iNm2rUcuI513DX1Uzs9r5fesWGOMYJLlO3E8pzv2yJi6y
+              - img "头像" [ref=e534]
+              - generic [ref=e535]: 鞍山市人民政府
+              - generic [ref=e537]: 
+          - generic [ref=e541]:
+            - heading "关于规范2025年度职工医疗保险(含生育保险)缴费基数的通知 - 永修..." [level=3] [ref=e544]:
+              - link "关于规范2025年度职工医疗保险(含生育保险)缴费基数的通知 - 永修..." [ref=e545] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=eOcLYvybymnAcMsuU0ETlX8CUKPxWx-os2pKfEuKsRd988JVY8xqZS_JMRGSnG7tahhXhZYR4ZXFUA84ewRSQ0xYxkD3rU9iQ_a5IxbQEys1bdrA6dKgSWuPg3pwIFR1qvSf-VzOdVjUKL670BBs9a
+                - paragraph [ref=e548]:
+                  - generic [ref=e551]:
+                    - text: 关于规范
+                    - emphasis [ref=e552]: "2025"
+                    - text: 年度职工
+                    - emphasis [ref=e553]: 医疗保险
+                    - text: (含生育保险)缴费基数的通知 - 永修...
+            - generic [ref=e558]:
+              - text: 2025年12月23日
+              - generic [ref=e559]:
+                - text: 1.缴费基数标准。根据市统计局提供的九江市
+                - emphasis [ref=e560]: "2024"
+                - text: 年度城镇非私营单位、城镇私营单位的从业人数和平均
+                - emphasis [ref=e561]: 工资
+                - text: ",经加权平均计算,九江市2024年度全口径城镇单位从业人员平均工资为74115元(月平均工资为6176元)。"
+                - emphasis [ref=e562]: "2025"
+                - text: 年度的九江市职工基本
+                - emphasis [ref=e563]: 医疗保险
+                - text: (含生育保险)和大病保险以九江市2024年度全口径城镇单位就业人员平均工资为缴费基数,...
+            - link "头像 中国永修" [ref=e568] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=eOcLYvybymnAcMsuU0ETlX8CUKPxWx-os2pKfEuKsRd988JVY8xqZS_JMRGSnG7tahhXhZYR4ZXFUA84ewRSQ0xYxkD3rU9iQ_a5IxbQEys1bdrA6dKgSWuPg3pwIFR1qvSf-VzOdVjUKL670BBs9a
+              - img "头像" [ref=e571]
+              - generic [ref=e572]: 中国永修
+              - generic [ref=e574]: 
+        - generic [ref=e577]:
+          - generic [ref=e578]: 相关搜索
+          - table [ref=e579]:
+            - rowgroup [ref=e580]:
+              - row "医疗保险专业好就业吗 2024年医师薪资会下降吗" [ref=e581]:
+                - cell "医疗保险专业好就业吗" [ref=e582]:
+                  - link "医疗保险专业好就业吗" [ref=e583] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%E5%A5%BD%E5%B0%B1%E4%B8%9A%E5%90%97&rsf=101633403&rsp=0&f=1&rs_src=0&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&rsv_dl=brs_28338_1
+                    - generic [ref=e585]: 医疗保险专业好就业吗
+                - cell "2024年医师薪资会下降吗" [ref=e586]:
+                  - link "2024年医师薪资会下降吗" [ref=e587] [cursor=pointer]:
+                    - /url: /s?wd=2024%E5%B9%B4%E5%8C%BB%E5%B8%88%E8%96%AA%E8%B5%84%E4%BC%9A%E4%B8%8B%E9%99%8D%E5%90%97&rsf=101636803&rsp=1&f=1&rs_src=0&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&rsv_dl=brs_28338_2
+                    - generic [ref=e589]: 2024年医师薪资会下降吗
+              - row "2024医务人员薪酬改革方案 医疗保险有什么待遇" [ref=e590]:
+                - cell "2024医务人员薪酬改革方案" [ref=e591]:
+                  - link "2024医务人员薪酬改革方案" [ref=e592] [cursor=pointer]:
+                    - /url: /s?wd=2024%E5%8C%BB%E5%8A%A1%E4%BA%BA%E5%91%98%E8%96%AA%E9%85%AC%E6%94%B9%E9%9D%A9%E6%96%B9%E6%A1%88&rsf=101636803&rsp=2&f=1&rs_src=0&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&rsv_dl=brs_28338_3
+                    - generic [ref=e594]: 2024医务人员薪酬改革方案
+                - cell "医疗保险有什么待遇" [ref=e595]:
+                  - link "医疗保险有什么待遇" [ref=e596] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E6%9C%89%E4%BB%80%E4%B9%88%E5%BE%85%E9%81%87&rsf=101633403&rsp=3&f=1&rs_src=0&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&rsv_dl=brs_28338_4
+                    - generic [ref=e598]: 医疗保险有什么待遇
+              - row "医师薪酬最新消息公布 2024年医务人员待遇" [ref=e599]:
+                - cell "医师薪酬最新消息公布" [ref=e600]:
+                  - link "医师薪酬最新消息公布" [ref=e601] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E5%B8%88%E8%96%AA%E9%85%AC%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF%E5%85%AC%E5%B8%83&rsf=101636803&rsp=4&f=1&rs_src=0&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&rsv_dl=brs_28338_5
+                    - generic [ref=e603]: 医师薪酬最新消息公布
+                - cell "2024年医务人员待遇" [ref=e604]:
+                  - link "2024年医务人员待遇" [ref=e605] [cursor=pointer]:
+                    - /url: /s?wd=2024%E5%B9%B4%E5%8C%BB%E5%8A%A1%E4%BA%BA%E5%91%98%E5%BE%85%E9%81%87&rsf=101636803&rsp=5&f=1&rs_src=0&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&rsv_dl=brs_28338_6
+                    - generic [ref=e607]: 2024年医务人员待遇
+              - row "月薪2万医保多少 医生工资待遇一览表2023" [ref=e608]:
+                - cell "月薪2万医保多少" [ref=e609]:
+                  - link "月薪2万医保多少" [ref=e610] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9C%88%E8%96%AA2%E4%B8%87%E5%8C%BB%E4%BF%9D%E5%A4%9A%E5%B0%91&rsf=101633403&rsp=6&f=1&rs_src=0&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&rsv_dl=brs_28338_7
+                    - generic [ref=e612]: 月薪2万医保多少
+                - cell "医生工资待遇一览表2023" [ref=e613]:
+                  - link "医生工资待遇一览表2023" [ref=e614] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%94%9F%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%E4%B8%80%E8%A7%88%E8%A1%A82023&rsf=101636803&rsp=7&f=1&rs_src=0&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&rsv_dl=brs_28338_8
+                    - generic [ref=e616]: 医生工资待遇一览表2023
+              - row "医疗行业薪资白皮书 医疗保险待遇" [ref=e617]:
+                - cell "医疗行业薪资白皮书" [ref=e618]:
+                  - link "医疗行业薪资白皮书" [ref=e619] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A%E8%96%AA%E8%B5%84%E7%99%BD%E7%9A%AE%E4%B9%A6&rsf=101636803&rsp=8&f=1&rs_src=0&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&rsv_dl=brs_28338_9
+                    - generic [ref=e621]: 医疗行业薪资白皮书
+                - cell "医疗保险待遇" [ref=e622]:
+                  - link "医疗保险待遇" [ref=e623] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E5%BE%85%E9%81%87&rsf=101633403&rsp=9&f=1&rs_src=0&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&rsv_dl=brs_28338_10
+                    - generic [ref=e625]: 医疗保险待遇
+      - generic [ref=e628]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e629]:
+          - generic [ref=e630]: "1"
+        - link "2" [ref=e631] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&pn=10&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&ie=utf-8&usm=2&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&topic_pn=
+          - generic [ref=e632]: "2"
+        - link "3" [ref=e633] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&pn=20&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&ie=utf-8&usm=2&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&topic_pn=
+          - generic [ref=e634]: "3"
+        - link "4" [ref=e635] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&pn=30&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&ie=utf-8&usm=2&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&topic_pn=
+          - generic [ref=e636]: "4"
+        - link "5" [ref=e637] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&pn=40&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&ie=utf-8&usm=2&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&topic_pn=
+          - generic [ref=e638]: "5"
+        - link "6" [ref=e639] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&pn=50&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&ie=utf-8&usm=2&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&topic_pn=
+          - generic [ref=e640]: "6"
+        - link "7" [ref=e641] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&pn=60&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&ie=utf-8&usm=2&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&topic_pn=
+          - generic [ref=e642]: "7"
+        - link "8" [ref=e643] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&pn=70&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&ie=utf-8&usm=2&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&topic_pn=
+          - generic [ref=e644]: "8"
+        - link "9" [ref=e645] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&pn=80&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&ie=utf-8&usm=2&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&topic_pn=
+          - generic [ref=e646]: "9"
+        - link "10" [ref=e647] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&pn=90&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&ie=utf-8&usm=2&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&topic_pn=
+          - generic [ref=e648]: "10"
+        - link "下一页" [ref=e649] [cursor=pointer]:
+          - /url: /s?wd=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&pn=10&oq=%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E4%B8%93%E4%B8%9A%20%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87%20%E8%B5%B7%E8%96%AA%202024%202025&ie=utf-8&usm=2&rsv_pq=98dc2c2302f06e26&rsv_t=6526DEW60RPSUDmvCvQHTWFoK9FmrEqhjfrDS2fpO%2BRUJSjDdKE%2Ffa7TVuI&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e650]
+      - generic [ref=e653]:
+        - link "帮助" [ref=e654] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e655] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e656] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e657] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

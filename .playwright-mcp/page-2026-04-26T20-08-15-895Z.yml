@@ -1,0 +1,399 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4QPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 汕头大学 2024 毕业生 就业质量报告 深造率 就业率 汕头大学 2024 毕业生 就业质量报告 深造率 就业率
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%25B1%2595%25E5%25A4%25B4%25E5%25A4%25A7%25E5%25AD%25A6%2B2024%2B%25E6%25AF%2595%25E4%25B8%259A%25E7%2594%259F%2B%25E5%25B0%25B1%25E4%25B8%259A%25E8%25B4%25A8%25E9%2587%258F%25E6%258A%25A5%25E5%2591%258A%2B%25E6%25B7%25B1%25E9%2580%25A0%25E7%258E%2587%2B%25E5%25B0%25B1%25E4%25B8%259A%25E7%258E%2587&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&aep=1&ntc=1&sa=X&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4Q2J8OegQIEBAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&sa=X&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4Q0pQJegQIFxAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&sa=X&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4QtKgLegQIFRAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "短视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&sa=X&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4Qs6gLegQIExAB
+              - generic [ref=e103]: 短视频
+          - listitem [ref=e104]:
+            - link "视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&sa=X&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4QtKgLegQIEhAB
+              - generic [ref=e107]: 视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - main [ref=e130]:
+      - generic [ref=e134]:
+        - generic [ref=e137]:
+          - heading "网页搜索结果" [level=2] [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e142]:
+              - link "汕头大学2024 届毕业生就业质量报告 汕头大学 http://gdcpic.stu.edu.cn › UploadFiles › accessory" [ref=e144] [cursor=pointer]:
+                - /url: http://gdcpic.stu.edu.cn/UploadFiles/accessory/20250224/133848363179379499.pdf
+                - heading "汕头大学2024 届毕业生就业质量报告" [level=3] [ref=e145]
+                - generic [ref=e147]:
+                  - img [ref=e151]
+                  - generic [ref=e153]:
+                    - generic [ref=e155]: 汕头大学
+                    - generic [ref=e157]: http://gdcpic.stu.edu.cn › UploadFiles › accessory
+              - generic [ref=e158]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e159] [cursor=pointer]:
+                - img [ref=e162]
+            - generic [ref=e164]:
+              - generic [ref=e165]:
+                - generic [ref=e166]: 2025年2月24日 —
+                - generic [ref=e167]:
+                  - text: 我校
+                  - emphasis [ref=e168]: "2024"
+                  - text: 届
+                  - emphasis [ref=e169]: 毕业生
+                  - text: 多数在经济发达地区
+                  - emphasis [ref=e170]: 就业
+                  - text: （见图1、表2），. 尤其是珠三角地区，占到已
+                  - emphasis [ref=e171]: 就业毕业生
+                  - text: 数的46.64%，潮汕地区.
+                  - emphasis [ref=e172]: 就业
+                  - text: 占27.18%，加上广东省其他城市
+                  - emphasis [ref=e173]: 就业
+                  - text: 的 ...
+              - generic [ref=e174]: 12 页
+        - generic [ref=e185]:
+          - heading "正在思考" [level=2] [ref=e189]:
+            - generic [ref=e190]: 正在思考
+          - progressbar [ref=e191]
+        - generic [ref=e195]:
+          - heading "网页搜索结果" [level=2] [ref=e196]
+          - generic [ref=e197]:
+            - generic [ref=e200]:
+              - link "2024 届毕业生就业质量年度报告 汕头大学医学院 https://www.med.stu.edu.cn › upload_files › file" [ref=e202] [cursor=pointer]:
+                - /url: https://www.med.stu.edu.cn/upload_files/file/20250214/1739512160574010.pdf
+                - heading "2024 届毕业生就业质量年度报告" [level=3] [ref=e203]
+                - generic [ref=e208]:
+                  - generic [ref=e210]: 汕头大学医学院
+                  - generic [ref=e212]: https://www.med.stu.edu.cn › upload_files › file
+              - generic [ref=e213]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e214] [cursor=pointer]:
+                - img [ref=e217]
+            - generic [ref=e219]:
+              - generic [ref=e221]:
+                - emphasis [ref=e222]: 报告
+                - text: 内容包括学院概况、
+                - emphasis [ref=e223]: 毕业生
+                - text: 的基本情况、
+                - emphasis [ref=e224]: 就业
+                - text: 工作、就. 业
+                - emphasis [ref=e225]: 质量
+                - text: 相关分析、毕业去向发展趋势分析、
+                - emphasis [ref=e226]: 就业
+                - text: 对教育教学的反馈等六. 部分，
+                - emphasis [ref=e227]: 报告
+                - text: 数据来源于广东省大学生
+                - emphasis [ref=e228]: 就业
+                - text: 创业 ...
+              - generic [ref=e229]: 56 页
+        - generic [ref=e233]:
+          - generic [ref=e236]:
+            - link "汕头大学简介&深造、就业：2023-2024学年本科教学质量报告 高考直通车App https://app.gaokaozhitongche.com › newsguide" [ref=e238] [cursor=pointer]:
+              - /url: https://app.gaokaozhitongche.com/newsguide/h/5gm711YN
+              - heading "汕头大学简介&深造、就业：2023-2024学年本科教学质量报告" [level=3] [ref=e239]
+              - generic [ref=e244]:
+                - generic [ref=e246]: 高考直通车App
+                - generic [ref=e248]: https://app.gaokaozhitongche.com › newsguide
+            - button "关于这条结果的详细信息" [ref=e249] [cursor=pointer]:
+              - img [ref=e252]
+          - generic [ref=e255]:
+            - generic [ref=e256]: 2025年4月8日 —
+            - generic [ref=e257]:
+              - text: 截至
+              - emphasis [ref=e258]: "2024"
+              - text: 年8 月31 日，学校应届本科
+              - emphasis [ref=e259]: 毕业生
+              - text: 总体
+              - emphasis [ref=e260]: 就业率
+              - text: 达84.40%。
+              - emphasis [ref=e261]: 毕业生
+              - text: 最主要的毕业去向是升学，占36.04%。升学901 人，占30.42%，其中出国（境） 留学137 人 ...
+        - generic [ref=e265]:
+          - generic [ref=e268]:
+            - link "汕头大学2024届毕业生就业质量报告 华禹教育网 http://www.huaue.com › ..." [ref=e270] [cursor=pointer]:
+              - /url: http://www.huaue.com/jy2025/2025225214910.htm
+              - heading "汕头大学2024届毕业生就业质量报告" [level=3] [ref=e271]
+              - generic [ref=e276]:
+                - generic [ref=e278]: 华禹教育网
+                - generic [ref=e280]: http://www.huaue.com › ...
+            - button "关于这条结果的详细信息" [ref=e281] [cursor=pointer]:
+              - img [ref=e284]
+          - generic [ref=e287]:
+            - generic [ref=e288]: 2025年2月25日 —
+            - generic [ref=e289]:
+              - emphasis [ref=e290]: 汕头大学2024
+              - text: 届
+              - emphasis [ref=e291]: 毕业生就业质量报告
+              - text: . http://www.huaue.com 2025年2月25日来源：
+              - emphasis [ref=e292]: 汕头大学
+              - text: .
+              - emphasis [ref=e293]: 汕头大学2024
+              - text: 届
+              - emphasis [ref=e294]: 毕业生就业质量报告
+              - text: （点击查看）.
+          - generic [ref=e296]: 缺少字词： 深造 ‎率
+        - generic [ref=e300]:
+          - generic [ref=e303]:
+            - link "汕头大学2024届毕业生就业质量报告 北京高考在线 https://www.gaokzx.com › gaokao" [ref=e305] [cursor=pointer]:
+              - /url: https://www.gaokzx.com/gk/gaokao/141097.html
+              - heading "汕头大学2024届毕业生就业质量报告" [level=3] [ref=e306]
+              - generic [ref=e311]:
+                - generic [ref=e313]: 北京高考在线
+                - generic [ref=e315]: https://www.gaokzx.com › gaokao
+            - button "关于这条结果的详细信息" [ref=e316] [cursor=pointer]:
+              - img [ref=e319]
+          - generic [ref=e322]:
+            - generic [ref=e323]: 2025年5月28日 —
+            - generic [ref=e324]:
+              - emphasis [ref=e325]: 汕头大学2024届毕业生去向落实率同比2023届实现增
+              - text: 长，毕业生就业稳中有升；毕业生升学人数占毕业生总数的23.66%（以下简称升学率），其中本科毕业生30.42%，毕业 ...
+          - generic [ref=e327]:
+            - text: 缺少字词： 深造 ‎| 必须包含：
+            - link "深造" [ref=e328] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%22%E6%B7%B1%E9%80%A0%22+%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&sa=X&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4Q5t4CegQIOBAB
+        - generic [ref=e332]:
+          - generic [ref=e335]:
+            - link "汕头大学简介&深造、就业：2023-2024学年本科教学质量报告 新东方 https://liuxue.xdf.cn › blog › wanglijun20 › blog" [ref=e337] [cursor=pointer]:
+              - /url: https://liuxue.xdf.cn/blog/wanglijun20/blog/5658069.shtml
+              - heading "汕头大学简介&深造、就业：2023-2024学年本科教学质量报告" [level=3] [ref=e338]
+              - generic [ref=e343]:
+                - generic [ref=e345]: 新东方
+                - generic [ref=e347]: https://liuxue.xdf.cn › blog › wanglijun20 › blog
+            - button "关于这条结果的详细信息" [ref=e348] [cursor=pointer]:
+              - img [ref=e351]
+          - generic [ref=e354]:
+            - generic [ref=e355]: 2025年4月11日 —
+            - generic [ref=e356]:
+              - text: 截至
+              - emphasis [ref=e357]: "2024"
+              - text: 年8 月31 日，学校应届本科
+              - emphasis [ref=e358]: 毕业生
+              - text: 总体
+              - emphasis [ref=e359]: 就业率
+              - text: 达84.40%。
+              - emphasis [ref=e360]: 毕业生
+              - text: 最主要的毕业去向是录取梦校，占36.04%。录取梦校901 人，占30.42%，其中出国（境） 留学 ...
+        - generic [ref=e364]:
+          - generic [ref=e367]:
+            - link "毕业生规模 - 信息公开网- 汕头大学 汕头大学 https://info.stu.edu.cn › jxzl1 › bysgm" [ref=e369] [cursor=pointer]:
+              - /url: https://info.stu.edu.cn/jxzl1/bysgm.htm
+              - heading "毕业生规模 - 信息公开网- 汕头大学" [level=3] [ref=e370]
+              - generic [ref=e372]:
+                - img [ref=e376]
+                - generic [ref=e378]:
+                  - generic [ref=e380]: 汕头大学
+                  - generic [ref=e382]: https://info.stu.edu.cn › jxzl1 › bysgm
+            - button "关于这条结果的详细信息" [ref=e383] [cursor=pointer]:
+              - img [ref=e386]
+          - generic [ref=e390]:
+            - text: "当前位置: 首页 · 教学质量 ·"
+            - emphasis [ref=e391]: 毕业生
+            - text: 规模 ·
+            - emphasis [ref=e392]: 汕头大学
+            - text: 2023届
+            - emphasis [ref=e393]: 毕业生就业质量报告
+            - text: .
+            - emphasis [ref=e394]: "2024"
+            - text: "-09-24 ·"
+            - emphasis [ref=e395]: 汕头大学
+            - text: 2022届
+            - emphasis [ref=e396]: 毕业生就业质量报告
+            - text: .
+            - emphasis [ref=e397]: "2024"
+            - text: "-09-24 ·"
+            - emphasis [ref=e398]: 汕头大学
+            - text: 2021届
+            - emphasis [ref=e399]: 毕业生就业
+            - text: ...
+          - generic [ref=e401]: 缺少字词： 深造 ‎率
+        - generic [ref=e405]:
+          - generic [ref=e408]:
+            - link "汕头大学就业率及就业前景怎么样 大学生必备网 https://www.dxsbb.com › news" [ref=e410] [cursor=pointer]:
+              - /url: https://www.dxsbb.com/news/99281.html
+              - heading "汕头大学就业率及就业前景怎么样" [level=3] [ref=e411]
+              - generic [ref=e416]:
+                - generic [ref=e418]: 大学生必备网
+                - generic [ref=e420]: https://www.dxsbb.com › news
+            - button "关于这条结果的详细信息" [ref=e421] [cursor=pointer]:
+              - img [ref=e424]
+          - generic [ref=e427]:
+            - generic [ref=e428]: 2025年2月8日 —
+            - generic [ref=e429]:
+              - text: 1、
+              - emphasis [ref=e430]: "2024"
+              - text: 届
+              - emphasis [ref=e431]: 汕头大学就业率
+              - text: . 截至
+              - emphasis [ref=e432]: "2024"
+              - text: 年8月31日，学校应届本科
+              - emphasis [ref=e433]: 毕业生
+              - text: 总体
+              - emphasis [ref=e434]: 就业率
+              - text: 达84.40% · 2、2023届
+              - emphasis [ref=e435]: 汕头大学就业率
+              - text: . 截至2023年8月31日，学校应届本科
+              - emphasis [ref=e436]: 毕业生
+              - text: ...
+          - generic [ref=e438]:
+            - text: 缺少字词： 深造 ‎| 必须包含：
+            - link "深造" [ref=e439] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%22%E6%B7%B1%E9%80%A0%22+%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&sa=X&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4Q5t4CegQILxAB
+        - generic [ref=e443]:
+          - generic [ref=e446]:
+            - link "汕头大学2023届毕业生- 就业质量报告 汕头大学 http://info.stu.edu.cn › __local" [ref=e448] [cursor=pointer]:
+              - /url: http://info.stu.edu.cn/__local/4/95/DA/E2627A49EC8F8FA5C4CFD013BF6_C870F4AA_271204.pdf
+              - heading "汕头大学2023届毕业生- 就业质量报告" [level=3] [ref=e449]
+              - generic [ref=e451]:
+                - img [ref=e455]
+                - generic [ref=e457]:
+                  - generic [ref=e459]: 汕头大学
+                  - generic [ref=e461]: http://info.stu.edu.cn › __local
+            - generic [ref=e462]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e463] [cursor=pointer]:
+              - img [ref=e466]
+          - generic [ref=e470]:
+            - emphasis [ref=e471]: 毕业生就业
+            - text: 基本情况.... .. 1. (一)
+            - emphasis [ref=e472]: 毕业生
+            - text: 规模... 1. (二)
+            - emphasis [ref=e473]: 毕业生
+            - text: ... (一)
+            - emphasis [ref=e474]: 毕业生深造
+            - text: 情况.... ... 21. (二) 签约重点用人单位情况.... 22. (三) 专业对口率情况.... ...
+        - generic [ref=e479]:
+          - heading "相关问题" [level=2] [ref=e481]
+          - generic [ref=e482]:
+            - button "汕头大学 什么水平？" [ref=e488] [cursor=pointer]:
+              - generic [ref=e490]: 汕头大学 什么水平？
+              - img [ref=e493]
+            - button "汕头大学为什么不是211？" [ref=e502] [cursor=pointer]:
+              - generic [ref=e504]: 汕头大学为什么不是211？
+              - img [ref=e507]
+            - button "汕头大学是重点大学吗？" [ref=e516] [cursor=pointer]:
+              - generic [ref=e518]: 汕头大学是重点大学吗？
+              - img [ref=e521]
+            - button "汕头大学 985 211？" [ref=e530] [cursor=pointer]:
+              - generic [ref=e532]: 汕头大学 985 211？
+              - img [ref=e535]
+        - generic [ref=e540]:
+          - heading "网页搜索结果" [level=2] [ref=e541]
+          - generic [ref=e542]:
+            - generic [ref=e545]:
+              - link "2024 年毕业生就业质量年度报告 6617.com https://pdf.6617.com › employment › report" [ref=e547] [cursor=pointer]:
+                - /url: https://pdf.6617.com/employment/report/20250411/28e051d60fd6f560.pdf
+                - heading "2024 年毕业生就业质量年度报告" [level=3] [ref=e548]
+                - generic [ref=e550]:
+                  - img [ref=e554]
+                  - generic [ref=e556]:
+                    - generic [ref=e558]: 6617.com
+                    - generic [ref=e560]: https://pdf.6617.com › employment › report
+              - generic [ref=e561]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e562] [cursor=pointer]:
+                - img [ref=e565]
+            - generic [ref=e568]:
+              - generic [ref=e569]: 2024年12月10日 —
+              - generic [ref=e570]:
+                - emphasis [ref=e571]: 我校2024 届毕业生就业专业对口率为82.83
+                - text: "%，其中专业对口率较高的三 ... 表1-4 2024 届毕业生各学院升学深造情况分布（国内升学）. 学院. 升学人数."
+      - navigation [ref=e574]:
+        - heading "网页导航" [level=1] [ref=e575]
+        - text: "1"
+        - link "Page 2" [ref=e578] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&sca_esv=164079556523993e&ei=rnDuafHLNI2zruEP2t7l8AM&start=10&sa=N&sstk=Af77f_e-WNfX2RHq_a2OhZxkverk3U5dtfUvAkRMO4bPRrS3qhBCXMdQo44go7RxpbhKynFZw_xDh713hdxmXtZuHRCRP1weo5im6w&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4Q8tMDegQIIRAE
+          - text: "2"
+        - link "Page 3" [ref=e580] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&sca_esv=164079556523993e&ei=rnDuafHLNI2zruEP2t7l8AM&start=20&sa=N&sstk=Af77f_e-WNfX2RHq_a2OhZxkverk3U5dtfUvAkRMO4bPRrS3qhBCXMdQo44go7RxpbhKynFZw_xDh713hdxmXtZuHRCRP1weo5im6w&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4Q8tMDegQIIRAG
+          - text: "3"
+        - link "Page 4" [ref=e582] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&sca_esv=164079556523993e&ei=rnDuafHLNI2zruEP2t7l8AM&start=30&sa=N&sstk=Af77f_e-WNfX2RHq_a2OhZxkverk3U5dtfUvAkRMO4bPRrS3qhBCXMdQo44go7RxpbhKynFZw_xDh713hdxmXtZuHRCRP1weo5im6w&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4Q8tMDegQIIRAI
+          - text: "4"
+        - heading "下一页" [level=2] [ref=e584]:
+          - link "下一页" [ref=e585] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+2024+%E6%AF%95%E4%B8%9A%E7%94%9F+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E5%B0%B1%E4%B8%9A%E7%8E%87&sca_esv=164079556523993e&ei=rnDuafHLNI2zruEP2t7l8AM&start=10&sa=N&sstk=Af77f_e-WNfX2RHq_a2OhZxkverk3U5dtfUvAkRMO4bPRrS3qhBCXMdQo44go7RxpbhKynFZw_xDh713hdxmXtZuHRCRP1weo5im6w&ved=2ahUKEwjx2qD3qIyUAxWNmSsGHVpvGT4Q8NMDegQIIRAK
+            - generic [ref=e587]: 下一页
+      - navigation
+    - contentinfo [ref=e588]:
+      - heading "页脚链接" [level=1] [ref=e589]
+      - generic [ref=e593]:
+        - generic [ref=e597]:
+          - button "Hyde Park, 波士顿麻萨诸塞州 - 根据您的活动记录" [ref=e599] [cursor=pointer]:
+            - generic [ref=e600]: Hyde Park, 波士顿麻萨诸塞州
+            - generic [ref=e602]:
+              - text: "-"
+              - generic [ref=e603]: 根据您的活动记录
+          - text: "-"
+          - button "更新位置信息" [ref=e605] [cursor=pointer]: 更新位置信息
+        - generic [ref=e608]:
+          - link "帮助" [ref=e609] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e610] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e611] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e612] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

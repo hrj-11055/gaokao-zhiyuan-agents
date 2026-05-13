@@ -1,0 +1,38 @@
+{
+  "university_name": "聊城大学",
+  "short_name": "LCU / 聊大",
+  "location": {
+    "province": "山东省",
+    "city": "聊城市",
+    "tier": "三线城市"
+  },
+  "academic_stats": {
+    "esi_top_1_percent": [
+      "化学",
+      "工程学",
+      "材料科学",
+      "计算机科学"
+    ],
+    "national_research_centers": 1,
+    "key_disciplines": [
+      "区域国别学",
+      "化学",
+      "教育学"
+    ]
+  },
+  "student_outcomes": {
+    "further_study_rate": "28.32%",
+    "top_employer_sectors": [
+      "教育",
+      "制造业",
+      "公共管理"
+    ],
+    "average_starting_salary": 5200
+  },
+  "campus_features": {
+    "signature_sport": "龙舟",
+    "cultural_icon": "季羡林",
+    "vibe": "勤奋、务实、考研导向"
+  },
+  "overall_rating": 3.39
+}

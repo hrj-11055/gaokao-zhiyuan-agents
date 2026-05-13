@@ -1,0 +1,50 @@
+{
+  "university_name": "山东中医药大学",
+  "short_name": "山中医 / SDUTCM",
+  "location": {
+    "province": "山东",
+    "city": "济南",
+    "district": "长清区 / 槐荫区"
+  },
+  "academic_ranking": {
+    "ruanke_tcm_rank": 9,
+    "comprehensive_rank": 202
+  },
+  "core_disciplines": [
+    {
+      "name": "中医学",
+      "level": "B+",
+      "is_peak": true
+    },
+    {
+      "name": "中药学",
+      "level": "B+",
+      "is_peak": false
+    },
+    {
+      "name": "中西医结合",
+      "level": "B",
+      "is_peak": false
+    }
+  ],
+  "faculty_assets": {
+    "national_tcm_masters": 4,
+    "qihuang_scholars": 6,
+    "provincial_masters": 42
+  },
+  "student_life": {
+    "dormitory": "6人为主，空调暖气齐全",
+    "special_tradition": "太极拳必修",
+    "canteen_feature": "中医药膳"
+  },
+  "employment_stats": {
+    "further_study_rate": "35.7%",
+    "avg_starting_salary": 5725,
+    "top_employers": [
+      "山东省中医院",
+      "齐鲁制药",
+      "华润三九"
+    ]
+  },
+  "evaluation_score": 3.84
+}

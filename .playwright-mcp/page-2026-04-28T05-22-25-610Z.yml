@@ -1,0 +1,613 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38QPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 文物保护与修复专业 就业前景 薪酬 大学排名 文物保护与修复专业 就业前景 薪酬 大学排名
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%2596%2587%25E7%2589%25A9%25E4%25BF%259D%25E6%258A%25A4%25E4%25B8%258E%25E4%25BF%25AE%25E5%25A4%258D%25E4%25B8%2593%25E4%25B8%259A%2B%25E5%25B0%25B1%25E4%25B8%259A%25E5%2589%258D%25E6%2599%25AF%2B%25E8%2596%25AA%25E9%2585%25AC%2B%25E5%25A4%25A7%25E5%25AD%25A6%25E6%258E%2592%25E5%2590%258D%26hl%3Dzh-CN&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&aep=1&ntc=1&sa=X&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q2J8OegQIEhAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&sa=X&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q0pQJegQIGBAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "购物" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&ved=1t:220175&ictx=111
+              - generic [ref=e95]: 购物
+          - listitem [ref=e96]:
+            - link "图片" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38QtKgLegQIFRAB
+              - generic [ref=e99]: 图片
+          - listitem [ref=e100]:
+            - link "短视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Qs6gLegQIFxAB
+              - generic [ref=e103]: 短视频
+          - listitem [ref=e104]:
+            - link "视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38QtKgLegQIFBAB
+              - generic [ref=e107]: 视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - generic [ref=e153]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - img [ref=e157]
+              - heading "AI 概览" [level=2] [ref=e159]
+            - button "关于这条结果的详细信息" [ref=e163]:
+              - img [ref=e165]
+          - generic [ref=e186]:
+            - generic [ref=e189]:
+              - generic [ref=e190]: 文物保护与修复专业是一门将文、理、艺、工交叉结合的学科，就业前景伴随国家对文化遗产保护的重视而日益广阔。以下是根据2025-2026年数据整理的专业详析：
+              - heading "一、 就业前景与方向" [level=3] [ref=e191]
+              - generic [ref=e193]:
+                - text: 随着我国文博事业的发展，该专业毕业生不再局限于传统的博物馆修复岗位，呈现出“技术+艺术”复合型人才需求增长的趋势。
+                - button "百度百科 - 查看相关链接" [ref=e196] [cursor=pointer]:
+                  - generic [ref=e197]:
+                    - img "百度百科" [ref=e198]
+                    - generic [ref=e200]: 百度百科
+              - list [ref=e202]:
+                - listitem [ref=e203]:
+                  - generic [ref=e204]:
+                    - strong [ref=e205]: 就业方向：
+                    - text: 博物馆、文物考古研究所、文物保护中心、文创企业、艺术品拍卖行、古建筑修复工程公司等。
+                - listitem [ref=e206]:
+                  - generic [ref=e207]:
+                    - strong [ref=e208]: 主要岗位：
+                    - text: 文物修复师（书画、陶瓷、金属等）、文物保护技术员、文物保护规划师、古建筑设计师。
+                - listitem [ref=e209]:
+                  - generic [ref=e210]:
+                    - strong [ref=e211]: 地区分布：
+                    - text: 北京、浙江、西安、山东等文博资源丰富的地区需求量较大。
+                  - button [ref=e214] [cursor=pointer]:
+                    - generic [ref=e215]:
+                      - img [ref=e216]
+                      - generic [ref=e218]: 职友集
+              - heading [level=3] [ref=e220]: 二、 薪酬待遇
+              - generic [ref=e222]: 文物保护与修复专业毕业生的薪酬水平受经验、技能等级和所在地区影响。
+              - list [ref=e224]:
+                - listitem [ref=e225]:
+                  - generic [ref=e226]:
+                    - strong [ref=e227]: 整体薪资：
+                    - text: 多数岗位月薪在
+                    - strong [ref=e228]:
+                      - generic [ref=e231]:
+                        - generic [ref=e232]:
+                          - img
+                          - img [ref=e233]:
+                            - generic [ref=e234]: 𝟔
+                        - generic [ref=e235]:
+                          - img
+                          - img [ref=e236]:
+                            - generic [ref=e237]: ","
+                        - generic [ref=e238]:
+                          - img
+                          - img [ref=e239]:
+                            - generic [ref=e240]: 𝟎
+                            - generic [ref=e241]: 𝟎
+                            - generic [ref=e242]: 𝟎
+                        - generic [ref=e243]:
+                          - img
+                          - img [ref=e244]:
+                            - generic [ref=e245]: −
+                            - generic [ref=e246]: 𝟏
+                            - generic [ref=e247]: 𝟎
+                        - generic [ref=e248]:
+                          - img
+                          - img [ref=e249]:
+                            - generic [ref=e250]: ","
+                        - generic [ref=e251]:
+                          - img
+                          - img [ref=e252]:
+                            - generic [ref=e253]: 𝟎
+                            - generic [ref=e254]: 𝟎
+                            - generic [ref=e255]: 𝟎
+                      - text: 元
+                    - text: 之间，该区间岗位占比超过一半。
+                - listitem [ref=e256]:
+                  - generic [ref=e257]:
+                    - strong [ref=e258]: 高级人才：
+                    - text: 拥有高水平修复技能、丰富经验的专业修复师，薪酬水平较高，尤其是在一线城市。
+                  - button [ref=e261] [cursor=pointer]:
+                    - generic [ref=e262]:
+                      - img [ref=e263]
+                      - generic [ref=e265]: 职友集
+              - heading [level=3] [ref=e267]: 三、 大学排名 (2025-2026年参考)
+              - generic [ref=e269]: 根据校友会和掌上高考2025-2026年发布的数据，该专业全国院校排名梯队如下：
+              - heading [level=3] [ref=e271]: 1. 研究型高校排名（前5名）
+              - list [ref=e273]:
+                - listitem [ref=e274]:
+                  - generic [ref=e275]:
+                    - strong [ref=e276]:
+                      - link [ref=e278] [cursor=pointer]:
+                        - /url: https://www.google.com/search?q=%E4%B8%AD%E5%9B%BD%E7%BE%8E%E6%9C%AF%E5%AD%A6%E9%99%A2&hl=zh-CN&mstk=AUtExfA4RVxYDZv5Tiw7MM2bbuj6GfIAdDm3JBzlh1tNQ74dyZMQ-PkeK-_9jrkvMcg876U95ol_GTiaT1ArA6q0uhXaBvdSwq8nJr7LZCO_EvCw8e-OFFVQ_zqkdUSuPhQeHKc&csui=3&ved=2ahUKEwjNj6LU5o-UAxVNjCsGHe8AMqwQgK4QegQICxAC
+                        - text: 中国美术学院
+                    - text: (A+，全国前二)
+                - listitem [ref=e279]:
+                  - generic [ref=e280]:
+                    - strong [ref=e281]:
+                      - link [ref=e283] [cursor=pointer]:
+                        - /url: https://www.google.com/search?q=%E5%B9%BF%E5%B7%9E%E7%BE%8E%E6%9C%AF%E5%AD%A6%E9%99%A2&hl=zh-CN&mstk=AUtExfA4RVxYDZv5Tiw7MM2bbuj6GfIAdDm3JBzlh1tNQ74dyZMQ-PkeK-_9jrkvMcg876U95ol_GTiaT1ArA6q0uhXaBvdSwq8nJr7LZCO_EvCw8e-OFFVQ_zqkdUSuPhQeHKc&csui=3&ved=2ahUKEwjNj6LU5o-UAxVNjCsGHe8AMqwQgK4QegQICxAE
+                        - text: 广州美术学院
+                    - text: (A+)
+                - listitem [ref=e284]:
+                  - generic [ref=e285]:
+                    - strong [ref=e286]:
+                      - link [ref=e288] [cursor=pointer]:
+                        - /url: https://www.google.com/search?q=%E5%8D%97%E4%BA%AC%E8%89%BA%E6%9C%AF%E5%AD%A6%E9%99%A2&hl=zh-CN&mstk=AUtExfA4RVxYDZv5Tiw7MM2bbuj6GfIAdDm3JBzlh1tNQ74dyZMQ-PkeK-_9jrkvMcg876U95ol_GTiaT1ArA6q0uhXaBvdSwq8nJr7LZCO_EvCw8e-OFFVQ_zqkdUSuPhQeHKc&csui=3&ved=2ahUKEwjNj6LU5o-UAxVNjCsGHe8AMqwQgK4QegQICxAG
+                        - text: 南京艺术学院
+                    - text: (B+)
+                - listitem [ref=e289]:
+                  - generic [ref=e290]:
+                    - strong [ref=e291]:
+                      - link [ref=e293] [cursor=pointer]:
+                        - /url: https://www.google.com/search?q=%E4%B8%AD%E5%A4%AE%E7%BE%8E%E6%9C%AF%E5%AD%A6%E9%99%A2&hl=zh-CN&mstk=AUtExfA4RVxYDZv5Tiw7MM2bbuj6GfIAdDm3JBzlh1tNQ74dyZMQ-PkeK-_9jrkvMcg876U95ol_GTiaT1ArA6q0uhXaBvdSwq8nJr7LZCO_EvCw8e-OFFVQ_zqkdUSuPhQeHKc&csui=3&ved=2ahUKEwjNj6LU5o-UAxVNjCsGHe8AMqwQgK4QegQICxAI
+                        - text: 中央美术学院
+                    - text: (A+，B+评级)
+                - listitem [ref=e294]:
+                  - strong [ref=e296]:
+                    - link [ref=e298] [cursor=pointer]:
+                      - /url: https://www.google.com/search?q=%E5%A4%AA%E5%8E%9F%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6&hl=zh-CN&mstk=AUtExfA4RVxYDZv5Tiw7MM2bbuj6GfIAdDm3JBzlh1tNQ74dyZMQ-PkeK-_9jrkvMcg876U95ol_GTiaT1ArA6q0uhXaBvdSwq8nJr7LZCO_EvCw8e-OFFVQ_zqkdUSuPhQeHKc&csui=3&ved=2ahUKEwjNj6LU5o-UAxVNjCsGHe8AMqwQgK4QegQICxAK
+                      - text: 太原理工大学
+                  - button [ref=e301] [cursor=pointer]:
+                    - generic [ref=e302]:
+                      - img [ref=e303]
+                      - generic [ref=e304]:
+                        - generic [ref=e305]: www.chinaxy.com
+                        - generic [ref=e306]: "+1"
+              - heading [level=3] [ref=e308]: 2. 其他顶尖专业院校
+              - list [ref=e310]:
+                - listitem [ref=e311]:
+                  - strong [ref=e313]: 鲁迅美术学院
+                - listitem [ref=e314]:
+                  - strong [ref=e316]: 西安美术学院
+                - listitem [ref=e317]:
+                  - strong [ref=e319]: 天津美术学院
+                - listitem [ref=e320]:
+                  - strong [ref=e322]: 山东艺术学院
+                  - button [ref=e325] [cursor=pointer]:
+                    - generic [ref=e326]:
+                      - img [ref=e327]
+                      - generic [ref=e329]: 高考志愿填报
+              - heading [level=3] [ref=e331]: 3. 应用型高校排名（前5名）
+              - list [ref=e333]:
+                - listitem [ref=e334]:
+                  - strong [ref=e336]:
+                    - link [ref=e338] [cursor=pointer]:
+                      - /url: https://www.google.com/search?q=%E4%B8%8A%E6%B5%B7%E8%A7%86%E8%A7%89%E8%89%BA%E6%9C%AF%E5%AD%A6%E9%99%A2&hl=zh-CN&mstk=AUtExfA4RVxYDZv5Tiw7MM2bbuj6GfIAdDm3JBzlh1tNQ74dyZMQ-PkeK-_9jrkvMcg876U95ol_GTiaT1ArA6q0uhXaBvdSwq8nJr7LZCO_EvCw8e-OFFVQ_zqkdUSuPhQeHKc&csui=3&ved=2ahUKEwjNj6LU5o-UAxVNjCsGHe8AMqwQgK4QegQIDxAC
+                      - text: 上海视觉艺术学院
+                - listitem [ref=e339]:
+                  - strong [ref=e341]:
+                    - link [ref=e343] [cursor=pointer]:
+                      - /url: https://www.google.com/search?q=%E5%AE%89%E9%98%B3%E5%AD%A6%E9%99%A2&hl=zh-CN&mstk=AUtExfA4RVxYDZv5Tiw7MM2bbuj6GfIAdDm3JBzlh1tNQ74dyZMQ-PkeK-_9jrkvMcg876U95ol_GTiaT1ArA6q0uhXaBvdSwq8nJr7LZCO_EvCw8e-OFFVQ_zqkdUSuPhQeHKc&csui=3&ved=2ahUKEwjNj6LU5o-UAxVNjCsGHe8AMqwQgK4QegQIDxAE
+                      - text: 安阳学院
+                - listitem [ref=e344]:
+                  - strong [ref=e346]:
+                    - link [ref=e348] [cursor=pointer]:
+                      - /url: https://www.google.com/search?q=%E9%9D%92%E5%B2%9B%E7%94%B5%E5%BD%B1%E5%AD%A6%E9%99%A2&hl=zh-CN&mstk=AUtExfA4RVxYDZv5Tiw7MM2bbuj6GfIAdDm3JBzlh1tNQ74dyZMQ-PkeK-_9jrkvMcg876U95ol_GTiaT1ArA6q0uhXaBvdSwq8nJr7LZCO_EvCw8e-OFFVQ_zqkdUSuPhQeHKc&csui=3&ved=2ahUKEwjNj6LU5o-UAxVNjCsGHe8AMqwQgK4QegQIDxAG
+                      - text: 青岛电影学院
+                - listitem [ref=e349]:
+                  - strong [ref=e351]:
+                    - link [ref=e353] [cursor=pointer]:
+                      - /url: https://www.google.com/search?q=%E6%B2%B3%E5%8C%97%E4%B8%9C%E6%96%B9%E5%AD%A6%E9%99%A2&hl=zh-CN&mstk=AUtExfA4RVxYDZv5Tiw7MM2bbuj6GfIAdDm3JBzlh1tNQ74dyZMQ-PkeK-_9jrkvMcg876U95ol_GTiaT1ArA6q0uhXaBvdSwq8nJr7LZCO_EvCw8e-OFFVQ_zqkdUSuPhQeHKc&csui=3&ved=2ahUKEwjNj6LU5o-UAxVNjCsGHe8AMqwQgK4QegQIDxAI
+                      - text: 河北东方学院
+                - listitem [ref=e354]:
+                  - strong [ref=e356]:
+                    - link [ref=e358] [cursor=pointer]:
+                      - /url: https://www.google.com/search?q=%E5%A4%A7%E8%BF%9E%E8%89%BA%E6%9C%AF%E5%AD%A6%E9%99%A2&hl=zh-CN&mstk=AUtExfA4RVxYDZv5Tiw7MM2bbuj6GfIAdDm3JBzlh1tNQ74dyZMQ-PkeK-_9jrkvMcg876U95ol_GTiaT1ArA6q0uhXaBvdSwq8nJr7LZCO_EvCw8e-OFFVQ_zqkdUSuPhQeHKc&csui=3&ved=2ahUKEwjNj6LU5o-UAxVNjCsGHe8AMqwQgK4QegQIDxAK
+                      - text: 大连艺术学院
+                  - button [ref=e361] [cursor=pointer]:
+                    - generic [ref=e362]:
+                      - img [ref=e363]
+                      - generic [ref=e365]: www.chinaxy.com
+              - heading [level=3] [ref=e367]: 四、 专业建议
+              - generic [ref=e369]:
+                - text: 该专业对从业者的动手能力、细心程度以及对历史艺术的敏感度要求极高。建议在校期间不仅要学习理论知识，更要多参与实际的修复项目，提升自身技术。
+                - button [ref=e372] [cursor=pointer]:
+                  - generic [ref=e373]:
+                    - img [ref=e374]
+                    - generic [ref=e376]: 百度百科
+            - generic [ref=e383]:
+              - list [ref=e385]:
+                - listitem [ref=e386]:
+                  - generic [ref=e387]:
+                    - link "文物保护技术专业就业方向及前景（工资待遇排名）. 在新标签页中打开。" [ref=e388] [cursor=pointer]:
+                      - /url: https://edu.jobui.com/m/major/wenwubaohu/
+                    - generic [ref=e389]:
+                      - generic [ref=e391]:
+                        - generic [ref=e392]: 文物保护技术专业就业方向及前景（工资待遇排名）
+                        - generic [ref=e393]: 文物保护技术专业有前途吗？据统计，历史学类共9个专业，文物保护技术专业在历史学类中排名第6，在历史学类大类9个专业中，就...
+                      - generic [ref=e394]:
+                        - generic [ref=e399]: 职友集
+                        - button "关于这条结果" [ref=e401] [cursor=pointer]:
+                          - img [ref=e402]
+                - listitem [ref=e405]:
+                  - generic [ref=e406]:
+                    - link "校友会2025中国大学文物保护与修复专业排名（应用型）. 在新标签页中打开。" [ref=e407] [cursor=pointer]:
+                      - /url: http://www.chinaxy.com/2022index/news/mynews.jsp?information_id=18298
+                    - generic [ref=e408]:
+                      - generic [ref=e410]:
+                        - generic [ref=e411]: 校友会2025中国大学文物保护与修复专业排名（应用型）
+                        - generic [ref=e412]: 为了给2025年高考考生选择报考文物保护与修复专业提供权威参考，2025年3月，全国第三方大学评价机构艾瑞深校友会网(C...
+                      - generic [ref=e413]:
+                        - generic [ref=e418]: www.chinaxy.com
+                        - button [ref=e420] [cursor=pointer]:
+                          - img [ref=e421]
+                - listitem [ref=e424]:
+                  - generic [ref=e425]:
+                    - link [ref=e426] [cursor=pointer]:
+                      - /url: https://www.gaokao.cn/gk-mb/30/8443-0
+                    - generic [ref=e427]:
+                      - generic [ref=e429]:
+                        - generic [ref=e430]: 全国开设文物保护与修复专业的大学排名_2026年更新 - 掌上高考
+                        - generic [ref=e431]: 2026年3月16日 — 一、全国文物保护与修复专业排名前10的大学有：. 排名第1：中国美术学院；. 排名第2：中央美术学院；. 排名第3：南京...
+                      - generic [ref=e432]:
+                        - generic [ref=e437]: 高考志愿填报
+                        - button [ref=e439] [cursor=pointer]:
+                          - img [ref=e440]
+              - button [ref=e444] [cursor=pointer]:
+                - generic [ref=e445]: 全部显示
+        - button "显示更多 AI 概览" [ref=e449]:
+          - generic [ref=e451] [cursor=pointer]:
+            - generic [ref=e452]: 展开
+            - img [ref=e454]
+      - main [ref=e457]:
+        - generic [ref=e461]:
+          - generic [ref=e464]:
+            - heading "网页搜索结果" [level=2] [ref=e465]
+            - generic [ref=e466]:
+              - generic [ref=e469]:
+                - link "权威发布|2023软科中国大学专业排名|文物保护与修复 软科 https://www.shanghairanking.cn › rankings › bcmr" [ref=e471] [cursor=pointer]:
+                  - /url: https://www.shanghairanking.cn/rankings/bcmr/2023/130409T
+                  - heading "权威发布|2023软科中国大学专业排名|文物保护与修复" [level=3] [ref=e472]
+                  - generic [ref=e474]:
+                    - img [ref=e478]
+                    - generic [ref=e480]:
+                      - generic [ref=e482]: 软科
+                      - generic [ref=e484]: https://www.shanghairanking.cn › rankings › bcmr
+                - button "关于这条结果的详细信息" [ref=e485] [cursor=pointer]:
+                  - img [ref=e488]
+              - generic [ref=e492]:
+                - text: ... 高校的6万个本科专业点进行动态监测式评价。
+                - emphasis [ref=e493]: 文物保护与修复专业
+                - text: 在本次2021软科中国
+                - emphasis [ref=e494]: 大学
+                - text: 专业
+                - emphasis [ref=e495]: 排名
+                - text: 中，上榜院校数7，其中中国美术学院
+                - emphasis [ref=e496]: 大学
+                - text: 该专业 ... 专业
+                - emphasis [ref=e497]: 就业
+                - text: . A+. 专业条件. 双 ...
+              - generic [ref=e499]:
+                - text: 缺少字词： 薪酬 ‎| 必须包含：
+                - link "薪酬" [ref=e500] [cursor=pointer]:
+                  - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%22%E8%96%AA%E9%85%AC%22+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q5t4CegQIHxAB
+          - generic [ref=e504]:
+            - generic [ref=e507]:
+              - link "2025年文物保护与修复专业最好的大学排名及分数线表 高考100 https://www.gk100.com › read_891585043368" [ref=e509] [cursor=pointer]:
+                - /url: https://www.gk100.com/read_891585043368.htm
+                - heading "2025年文物保护与修复专业最好的大学排名及分数线表" [level=3] [ref=e510]
+                - generic [ref=e515]:
+                  - generic [ref=e517]: 高考100
+                  - generic [ref=e519]: https://www.gk100.com › read_891585043368
+              - button "关于这条结果的详细信息" [ref=e520] [cursor=pointer]:
+                - img [ref=e523]
+            - generic [ref=e526]:
+              - generic [ref=e527]: 2026年4月17日 —
+              - generic [ref=e528]:
+                - text: 一、文物保护与修复最好的大学排名 ...
+                - emphasis [ref=e529]: 中国美术学院、中央美术学院
+                - text: 。 ... 南京艺术学院、广州美术学院、山东艺术学院。 ... 西安美术学院、上海视觉艺术学院、 ...
+          - generic [ref=e533]:
+            - generic [ref=e536]:
+              - link "全国开设文物保护与修复专业的大学排名_2026年更新 高考志愿填报 https://www.gaokao.cn › gk-mb" [ref=e538] [cursor=pointer]:
+                - /url: https://www.gaokao.cn/gk-mb/30/8443-0
+                - heading "全国开设文物保护与修复专业的大学排名_2026年更新" [level=3] [ref=e539]
+                - generic [ref=e541]:
+                  - img [ref=e545]
+                  - generic [ref=e547]:
+                    - generic [ref=e549]: 高考志愿填报
+                    - generic [ref=e551]: https://www.gaokao.cn › gk-mb
+              - button "关于这条结果的详细信息" [ref=e552] [cursor=pointer]:
+                - img [ref=e555]
+            - generic [ref=e558]:
+              - generic [ref=e559]: 2026年3月16日 —
+              - generic [ref=e560]:
+                - text: 一、全国
+                - emphasis [ref=e561]: 文物保护与修复专业排名
+                - text: 前10的
+                - emphasis [ref=e562]: 大学
+                - text: 有：.
+                - emphasis [ref=e563]: 排名
+                - text: 第1：中国美术学院；.
+                - emphasis [ref=e564]: 排名
+                - text: 第2：中央美术学院；.
+                - emphasis [ref=e565]: 排名
+                - text: 第3：南京艺术学院；.
+                - emphasis [ref=e566]: 排名
+                - text: 第4：鲁迅美术学院；.
+            - generic [ref=e568]:
+              - text: 缺少字词： 薪酬 ‎| 必须包含：
+              - link "薪酬" [ref=e569] [cursor=pointer]:
+                - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%22%E8%96%AA%E9%85%AC%22+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q5t4CegQIIBAB
+          - generic [ref=e573]:
+            - generic [ref=e576]:
+              - link "2024年文物保护与修复专业大学排名及评级结果 中国大学排行榜「CNUR」 https://www.cnur.com › major" [ref=e578] [cursor=pointer]:
+                - /url: https://www.cnur.com/major/2153.html
+                - heading "2024年文物保护与修复专业大学排名及评级结果" [level=3] [ref=e579]
+                - generic [ref=e584]:
+                  - generic [ref=e586]: 中国大学排行榜「CNUR」
+                  - generic [ref=e588]: https://www.cnur.com › major
+              - button "关于这条结果的详细信息" [ref=e589] [cursor=pointer]:
+                - img [ref=e592]
+            - generic [ref=e595]:
+              - generic [ref=e596]: 2024年9月5日 —
+              - generic [ref=e597]:
+                - text: 2024年ABC中国
+                - emphasis [ref=e598]: 大学文物保护与修复专业排名
+                - text: 结果揭晓，共8所院校上榜。中国美术学院、广州美术学院位列前二，评级结果为A+；中央美术学院、南京艺术学院 ...
+            - generic [ref=e600]: 缺少字词： 前景 ‎薪酬
+          - generic [ref=e604]:
+            - generic [ref=e607]:
+              - link "文物保护与修复专业大学排名 大学生必备网 https://www.dxsbb.com › news" [ref=e609] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/70782.html
+                - heading "文物保护与修复专业大学排名" [level=3] [ref=e610]
+                - generic [ref=e615]:
+                  - generic [ref=e617]: 大学生必备网
+                  - generic [ref=e619]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e620] [cursor=pointer]:
+                - img [ref=e623]
+            - generic [ref=e626]:
+              - generic [ref=e627]: 2025年5月4日 —
+              - generic [ref=e628]:
+                - text: 2、
+                - emphasis [ref=e629]: 文物保护与修复专业
+                - text: 是省级一流本科专业的
+                - emphasis [ref=e630]: 大学
+                - text: ; 1, 中央美术学院, 文物保护与修复 ; 2, 南京艺术学院, 文物保护与修复 ; 3, 上海视觉艺术学院, 文物保护与 ...
+            - generic [ref=e632]:
+              - text: 缺少字词： 薪酬 ‎| 必须包含：
+              - link "薪酬" [ref=e633] [cursor=pointer]:
+                - /url: /search?sca_esv=0cca01a4919f5b01&hl=zh-CN&q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%22%E8%96%AA%E9%85%AC%22+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q5t4CegQIOBAB
+          - generic [ref=e637]:
+            - generic [ref=e640]:
+              - link "校友会2025中国大学文物保护与修复专业排名（应用型） chinaxy.com http://www.chinaxy.com › news › mynews" [ref=e642] [cursor=pointer]:
+                - /url: http://www.chinaxy.com/2022index/news/mynews.jsp?information_id=18298
+                - heading "校友会2025中国大学文物保护与修复专业排名（应用型）" [level=3] [ref=e643]
+                - generic [ref=e645]:
+                  - img [ref=e649]
+                  - generic [ref=e651]:
+                    - generic [ref=e653]: chinaxy.com
+                    - generic [ref=e655]: http://www.chinaxy.com › news › mynews
+              - button "关于这条结果的详细信息" [ref=e656] [cursor=pointer]:
+                - img [ref=e659]
+            - generic [ref=e663]:
+              - text: 榜单显示，中国美术学院、广州美术学院、南京艺术学院、中央美术学院、太原理工
+              - emphasis [ref=e664]: 大学
+              - text: 挺进2025中国
+              - emphasis [ref=e665]: 大学文物保护与修复专业排名
+              - text: （研究型）前5强。 上海视觉艺术学院、安阳学院、 ...
+          - generic [ref=e670]:
+            - heading "相关问题" [level=2] [ref=e672]
+            - generic [ref=e673]:
+              - button "中山大学最好的专业？" [ref=e679] [cursor=pointer]:
+                - generic [ref=e681]: 中山大学最好的专业？
+                - img [ref=e684]
+              - button "中国美术学院是985 211吗？" [ref=e693] [cursor=pointer]:
+                - generic [ref=e695]: 中国美术学院是985 211吗？
+                - img [ref=e698]
+              - button "清华最好的专业？" [ref=e707] [cursor=pointer]:
+                - generic [ref=e709]: 清华最好的专业？
+                - img [ref=e712]
+              - button "世界四大美院是哪四所?" [ref=e721] [cursor=pointer]:
+                - generic [ref=e723]: 世界四大美院是哪四所?
+                - img [ref=e726]
+          - generic [ref=e731]:
+            - heading "网页搜索结果" [level=2] [ref=e732]
+            - generic [ref=e733]:
+              - generic [ref=e736]:
+                - link "文物保护技术专业就业方向及前景（工资待遇排名） 职友集 https://edu.jobui.com › major › wenwubaohu" [ref=e738] [cursor=pointer]:
+                  - /url: https://edu.jobui.com/m/major/wenwubaohu/
+                  - heading "文物保护技术专业就业方向及前景（工资待遇排名）" [level=3] [ref=e739]
+                  - generic [ref=e744]:
+                    - generic [ref=e746]: 职友集
+                    - generic [ref=e748]: https://edu.jobui.com › major › wenwubaohu
+                - button "关于这条结果的详细信息" [ref=e749] [cursor=pointer]:
+                  - img [ref=e752]
+              - generic [ref=e756]:
+                - emphasis [ref=e757]: 文物保护
+                - text: 技术
+                - emphasis [ref=e758]: 专业
+                - text: 有前途吗？据统计，历史学类共9个
+                - emphasis [ref=e759]: 专业
+                - text: ，
+                - emphasis [ref=e760]: 文物保护
+                - text: 技术
+                - emphasis [ref=e761]: 专业
+                - text: 在历史学类中
+                - emphasis [ref=e762]: 排名
+                - text: 第6，在历史学类大类9个
+                - emphasis [ref=e763]: 专业
+                - text: 中，
+                - emphasis [ref=e764]: 就业排名
+                - text: 第6。
+                - emphasis [ref=e765]: 排名
+                - text: 越前，说明比较好
+                - emphasis [ref=e766]: 就业
+                - text: 。
+          - generic [ref=e770]:
+            - generic [ref=e773]:
+              - link "张雪峰谈文物修复专业-有文物修复专业的大学排名 - 圆梦小灯塔 6617.com https://www.6617.com › ..." [ref=e775] [cursor=pointer]:
+                - /url: https://www.6617.com/p_1510036970.html
+                - heading "张雪峰谈文物修复专业-有文物修复专业的大学排名 - 圆梦小灯塔" [level=3] [ref=e776]
+                - generic [ref=e781]:
+                  - generic [ref=e783]: 6617.com
+                  - generic [ref=e785]: https://www.6617.com › ...
+              - button "关于这条结果的详细信息" [ref=e786] [cursor=pointer]:
+                - img [ref=e789]
+            - generic [ref=e792]:
+              - generic [ref=e793]: 2025年9月29日 —
+              - generic [ref=e794]:
+                - emphasis [ref=e795]: 1, 中国美术学院, 文物保护与修复
+                - text: ; 2, 中央美术学院, 文物保护与修复 ; 3, 南京艺术学院, 文物保护与修复 ; 4, 广州美术学院, 文物保护与修复 ...
+          - generic [ref=e799]:
+            - generic [ref=e802]:
+              - link "文化遗产专业就业前景方向及平均薪资是多少热度大学排名 ... 蝶变志愿 https://www.diebian.net › gaokao" [ref=e804] [cursor=pointer]:
+                - /url: https://www.diebian.net/gaokao/111401.html
+                - heading "文化遗产专业就业前景方向及平均薪资是多少热度大学排名 ..." [level=3] [ref=e805]
+                - generic [ref=e810]:
+                  - generic [ref=e812]: 蝶变志愿
+                  - generic [ref=e814]: https://www.diebian.net › gaokao
+              - button "关于这条结果的详细信息" [ref=e815] [cursor=pointer]:
+                - img [ref=e818]
+            - generic [ref=e821]:
+              - generic [ref=e822]: 2026年2月10日 —
+              - generic [ref=e823]:
+                - text: 文化遗产
+                - emphasis [ref=e824]: 专业
+                - text: 排名前10名的大学有：首都师范
+                - emphasis [ref=e825]: 大学
+                - text: （
+                - emphasis [ref=e826]: 排名
+                - text: 第1）、南京农业
+                - emphasis [ref=e827]: 大学
+                - text: （
+                - emphasis [ref=e828]: 排名
+                - text: 第2）、湖北
+                - emphasis [ref=e829]: 大学
+                - text: （
+                - emphasis [ref=e830]: 排名
+                - text: 第3）、淮北师范
+                - emphasis [ref=e831]: 大学
+                - text: （
+                - emphasis [ref=e832]: 排名
+                - text: 第4）、景德镇陶瓷
+                - emphasis [ref=e833]: 大学
+                - text: （
+                - emphasis [ref=e834]: 排名
+                - text: 第5）、 ...
+          - generic [ref=e838]:
+            - generic [ref=e841]:
+              - link "权威发布|2023软科中国大学专业排名|文物与博物馆学 软科 https://www.shanghairanking.cn › rankings › bcmr" [ref=e843] [cursor=pointer]:
+                - /url: https://www.shanghairanking.cn/rankings/bcmr/2023/060104
+                - heading "权威发布|2023软科中国大学专业排名|文物与博物馆学" [level=3] [ref=e844]
+                - generic [ref=e846]:
+                  - img [ref=e850]
+                  - generic [ref=e852]:
+                    - generic [ref=e854]: 软科
+                    - generic [ref=e856]: https://www.shanghairanking.cn › rankings › bcmr
+              - button "关于这条结果的详细信息" [ref=e857] [cursor=pointer]:
+                - img [ref=e860]
+            - generic [ref=e864]:
+              - emphasis [ref=e865]: 排名
+              - text: 采用独具特色的学校-学科-
+              - emphasis [ref=e866]: 专业
+              - text: 三层次
+              - emphasis [ref=e867]: 专业
+              - text: 竞争力评价框架，设置学校条件、学科支撑、
+              - emphasis [ref=e868]: 专业
+              - text: 生源、
+              - emphasis [ref=e869]: 专业就业
+              - text: 、
+              - emphasis [ref=e870]: 专业
+              - text: 条件5个指标类别和27项指标，对1200多所高校的6万个本科
+              - emphasis [ref=e871]: 专业
+              - text: ...
+            - generic [ref=e873]: 缺少字词： 保护 ‎修复 ‎薪酬
+        - navigation [ref=e876]:
+          - heading "网页导航" [level=1] [ref=e877]
+          - text: "1"
+          - link "Page 2" [ref=e880] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=DkTwaY7SNumVmLQP16S8-Ac&start=10&sa=N&sstk=Af77f_fGwV287N0SxK33wP5u5dTKdUd8RHwGP3JavC7wn1cKTMFS-0Y9biQ818v4UnsznEmNiqPsqCt84C2HARzX8sdC5oYJ-49Hww&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q8tMDegQIJBAE
+            - text: "2"
+          - link "Page 3" [ref=e882] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=DkTwaY7SNumVmLQP16S8-Ac&start=20&sa=N&sstk=Af77f_fGwV287N0SxK33wP5u5dTKdUd8RHwGP3JavC7wn1cKTMFS-0Y9biQ818v4UnsznEmNiqPsqCt84C2HARzX8sdC5oYJ-49Hww&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q8tMDegQIJBAG
+            - text: "3"
+          - link "Page 4" [ref=e884] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=DkTwaY7SNumVmLQP16S8-Ac&start=30&sa=N&sstk=Af77f_fGwV287N0SxK33wP5u5dTKdUd8RHwGP3JavC7wn1cKTMFS-0Y9biQ818v4UnsznEmNiqPsqCt84C2HARzX8sdC5oYJ-49Hww&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q8tMDegQIJBAI
+            - text: "4"
+          - link "Page 5" [ref=e886] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=DkTwaY7SNumVmLQP16S8-Ac&start=40&sa=N&sstk=Af77f_fGwV287N0SxK33wP5u5dTKdUd8RHwGP3JavC7wn1cKTMFS-0Y9biQ818v4UnsznEmNiqPsqCt84C2HARzX8sdC5oYJ-49Hww&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q8tMDegQIJBAK
+            - text: "5"
+          - link "Page 6" [ref=e888] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=DkTwaY7SNumVmLQP16S8-Ac&start=50&sa=N&sstk=Af77f_fGwV287N0SxK33wP5u5dTKdUd8RHwGP3JavC7wn1cKTMFS-0Y9biQ818v4UnsznEmNiqPsqCt84C2HARzX8sdC5oYJ-49Hww&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q8tMDegQIJBAM
+            - text: "6"
+          - link "Page 7" [ref=e890] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=DkTwaY7SNumVmLQP16S8-Ac&start=60&sa=N&sstk=Af77f_fGwV287N0SxK33wP5u5dTKdUd8RHwGP3JavC7wn1cKTMFS-0Y9biQ818v4UnsznEmNiqPsqCt84C2HARzX8sdC5oYJ-49Hww&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q8tMDegQIJBAO
+            - text: "7"
+          - link "Page 8" [ref=e892] [cursor=pointer]:
+            - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=DkTwaY7SNumVmLQP16S8-Ac&start=70&sa=N&sstk=Af77f_fGwV287N0SxK33wP5u5dTKdUd8RHwGP3JavC7wn1cKTMFS-0Y9biQ818v4UnsznEmNiqPsqCt84C2HARzX8sdC5oYJ-49Hww&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q8tMDegQIJBAQ
+            - text: "8"
+          - heading "下一页" [level=2] [ref=e894]:
+            - link "下一页" [ref=e895] [cursor=pointer]:
+              - /url: /search?q=%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E4%B8%8E%E4%BF%AE%E5%A4%8D%E4%B8%93%E4%B8%9A+%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF+%E8%96%AA%E9%85%AC+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sca_esv=0cca01a4919f5b01&hl=zh-CN&ei=DkTwaY7SNumVmLQP16S8-Ac&start=10&sa=N&sstk=Af77f_fGwV287N0SxK33wP5u5dTKdUd8RHwGP3JavC7wn1cKTMFS-0Y9biQ818v4UnsznEmNiqPsqCt84C2HARzX8sdC5oYJ-49Hww&ved=2ahUKEwiOkfHT5o-UAxXpCoYAHVcSD38Q8NMDegQIJBAS
+              - generic [ref=e897]: 下一页
+        - navigation
+    - contentinfo [ref=e898]:
+      - heading "页脚链接" [level=1] [ref=e899]
+      - generic [ref=e903]:
+        - generic [ref=e907]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e909] [cursor=pointer]:
+            - generic [ref=e910]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e912]:
+              - text: "-"
+              - generic [ref=e913]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e915] [cursor=pointer]: 更新位置信息
+        - generic [ref=e918]:
+          - link "帮助" [ref=e919] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e920] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e921] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e922] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

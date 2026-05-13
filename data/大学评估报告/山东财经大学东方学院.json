@@ -1,0 +1,50 @@
+{
+  "university_name": "山东财经大学东方学院",
+  "short_name": "山财大东方",
+  "established_year": 2005,
+  "location": {
+    "province": "山东省",
+    "city": "泰安市",
+    "district": "高新区",
+    "city_gdp_2023": "3323.9亿元"
+  },
+  "academic": {
+    "type": "独立学院",
+    "parent_university": "山东财经大学",
+    "key_majors": [
+      "会计学",
+      "金融学",
+      "审计学"
+    ],
+    "a_plus_count": 0,
+    "academician_count": 0,
+    "provincial_first_class_majors": 1
+  },
+  "admission": {
+    "sd_rank_2024_avg": 280000,
+    "difficulty_level": "Medium-Low"
+  },
+  "employment": {
+    "grad_school_rate": "15.5%",
+    "major_related_employment": "72%",
+    "starting_salary_avg": 4500,
+    "top_employers": [
+      "山东黄金",
+      "农商银行",
+      "会计师事务所"
+    ]
+  },
+  "risks": {
+    "transition_status": "Pending",
+    "major_risk": "Uncertainty of future university name and nature"
+  },
+  "scores": {
+    "academic_capital": 1.8,
+    "graduate_value": 2.6,
+    "location_power": 2.4,
+    "globalization": 2.1,
+    "student_empowerment": 2.8,
+    "brand_asset": 2.3,
+    "comprehensive_score": 2.26
+  }
+}

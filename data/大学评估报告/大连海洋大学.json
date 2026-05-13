@@ -1,0 +1,57 @@
+{
+  "university_full_name": "大连海洋大学",
+  "abbreviation": "DLOU / 大海大",
+  "location": {
+    "province": "辽宁省",
+    "city": "大连市",
+    "main_campuses": [
+      "黄海校区 (黑石礁)",
+      "渤海校区 (瓦房店)",
+      "瓦房店校区"
+    ]
+  },
+  "academic_standing": {
+    "key_disciplines": [
+      {
+        "name": "水产",
+        "level": "A+",
+        "type": "National Top"
+      },
+      {
+        "name": "海洋科学",
+        "level": "B-",
+        "type": "Supporting"
+      },
+      {
+        "name": "食品科学与工程",
+        "level": "B",
+        "type": "Advantage"
+      }
+    ],
+    "national_platforms": [
+      "国家海洋食品工程技术研究中心",
+      "海洋食品加工与安全控制全国重点实验室"
+    ]
+  },
+  "admission_index": {
+    "difficulty_level": "Medium",
+    "avg_percentile_liaoning_physics": "Top 25%",
+    "avg_percentile_liaoning_history": "Top 8%"
+  },
+  "career_outcomes": {
+    "further_study_rate": "32.69%",
+    "top_employers": [
+      "正大集团",
+      "中远海运",
+      "海关总署",
+      "中国水产总公司"
+    ],
+    "median_starting_salary": 5500
+  },
+  "risk_factors": [
+    "Management integrity risks (historical)",
+    "Geographic isolation of Bohai Campus",
+    "Infrastructure aging in main campus"
+  ],
+  "comprehensive_score": 3.37
+}

@@ -1,0 +1,33 @@
+{
+  "university_name": "鲁迅美术学院",
+  "academic": {
+    "a_plus_count": 0,
+    "a_count": 1,
+    "a_minus_count": 0,
+    "academician_count": 0,
+    "key_disciplines": [
+      "美术学",
+      "设计学"
+    ]
+  },
+  "employment": {
+    "domestic_further_study_rate": "12.5%",
+    "overseas_further_study_rate": "8.2%",
+    "starting_salary": 6200,
+    "top_employers": [
+      "字节跳动",
+      "腾讯",
+      "网易"
+    ]
+  },
+  "location": {
+    "city": "沈阳/大连",
+    "city_gdp": "8122亿元/8752亿元"
+  },
+  "scores": {
+    "comprehensive_score": 3.9,
+    "academic_score": 4.5,
+    "employment_score": 3.8,
+    "brand_score": 4.2
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "university_name": "北京邮电大学",
+  "short_name": "BUPT",
+  "location": {
+    "city": "北京",
+    "districts": [
+      "海淀区",
+      "昌平区"
+    ],
+    "city_gdp_2024": "43760亿元"
+  },
+  "academic_standing": {
+    "double_first_class": true,
+    "a_plus_disciplines": [
+      "信息与通信工程"
+    ],
+    "a_disciplines": [
+      "计算机科学与技术",
+      "电子科学与技术"
+    ],
+    "a_minus_disciplines": [
+      "软件工程"
+    ],
+    "state_key_labs": 2
+  },
+  "student_quality": {
+    "average_percentile_rank": "Top 0.2% - 0.5%",
+    "elite_program": "元班"
+  },
+  "employment_outcomes": {
+    "overall_further_study_rate": "65.61%",
+    "domestic_study_rate": "50.73%",
+    "overseas_study_rate": "14.88%",
+    "median_starting_salary": 11500,
+    "top_employers": [
+      "华为",
+      "中国移动",
+      "腾讯",
+      "字节跳动",
+      "阿里巴巴"
+    ]
+  },
+  "campus_life": {
+    "transfer_policy": "Open but competitive",
+    "male_female_ratio": "约 2:1",
+    "infrastructure_rating": 4.5
+  },
+  "overall_evaluation": {
+    "score": 4.59,
+    "recommendation_index": 5.0,
+    "risk_factors": [
+      "Industry cycle sensitivity",
+      "High internal competition"
+    ]
+  }
+}

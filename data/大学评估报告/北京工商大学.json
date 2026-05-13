@@ -1,0 +1,53 @@
+{
+  "university_info": {
+    "name": "北京工商大学",
+    "abbreviation": "BTBU",
+    "location": [
+      "北京海淀",
+      "北京房山"
+    ],
+    "type": "北京市属重点大学",
+    "tags": [
+      "商科强校",
+      "食品特色",
+      "双非领头羊"
+    ]
+  },
+  "academic_assets": {
+    "key_disciplines": {
+      "food_science": "A/A+",
+      "applied_economics": "B+",
+      "business_administration": "B"
+    },
+    "leading_figures": [
+      {
+        "name": "孙宝国",
+        "title": "中国工程院院士",
+        "field": "食品科学/香料"
+      }
+    ],
+    "national_platforms": 3
+  },
+  "admission_stats": {
+    "avg_rank_beijing": "Top 20%",
+    "avg_rank_outside": "Top 5-8%",
+    "competition_level": "High"
+  },
+  "career_outcomes": {
+    "further_study_rate": "47.65%",
+    "top_employers": [
+      "ICBC",
+      "PwC",
+      "COFCO",
+      "JD.com"
+    ],
+    "avg_starting_salary": 8200,
+    "salary_5y_median": 14500
+  },
+  "campus_life": {
+    "dormitory_rating": 4.5,
+    "food_rating": 4.8,
+    "location_advantage": "Extreme"
+  },
+  "comprehensive_score": 3.95
+}

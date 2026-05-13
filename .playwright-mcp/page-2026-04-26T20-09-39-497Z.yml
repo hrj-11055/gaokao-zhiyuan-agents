@@ -1,0 +1,308 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwi7gqGfqYyUAxXUAoYAHS6YH9gQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 汕头大学 B站 bilibili 抖音 douyin 官方账号 粉丝 汕头大学 B站 bilibili 抖音 douyin 官方账号 粉丝
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%25B1%2595%25E5%25A4%25B4%25E5%25A4%25A7%25E5%25AD%25A6%2BB%25E7%25AB%2599%2Bbilibili%2B%25E6%258A%2596%25E9%259F%25B3%2Bdouyin%2B%25E5%25AE%2598%25E6%2596%25B9%25E8%25B4%25A6%25E5%258F%25B7%2B%25E7%25B2%2589%25E4%25B8%259D&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+douyin+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGDgILuWBSpe5rO3Tp-0yuQMz_tiMinFMa8ibPQuW8ZQehhnCo3IXHUlGROup3UJVdIg5_5sgxIimjLs6McqJ78OAjJv95YpelDF3C4pJeyJdrG3BlnpDWwQeKcLpKEfv7gr5tDatYa50AzNTpmM4EThy5-b87Rj2P4VXQcEbKmRzSziaFg&aep=1&ntc=1&sa=X&ved=2ahUKEwi7gqGfqYyUAxXUAoYAHS6YH9gQ2J8OegQIERAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "视频" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGDgILuWBSpe5rO3Tp-0yuQMz_tiMinFMa8ibPQuW8ZQehhnCo3IXHUlGROup3UJVdIg5_5sgxIimjLs6McqJ78OAjJv95YpelDF3C4pJeyJdrG3BlnpDWwQeKcLpKEfv7gr5tDatYa50AzNTpmM4EThy5-b87Rj2P4VXQcEbKmRzSziaFg&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+douyin+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D&sa=X&ved=2ahUKEwi7gqGfqYyUAxXUAoYAHS6YH9gQtKgLegQIFxAB
+              - generic [ref=e91]: 视频
+          - listitem [ref=e92]:
+            - link "新闻" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+douyin+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGDgILuWBSpe5rO3Tp-0yuQMz_tiMinFMa8ibPQuW8ZQehhnCo3IXHUlGROup3UJVdIg5_5sgxIimjLs6McqJ78OAjJv95YpelDF3C4pJeyJdrG3BlnpDWwQeKcLpKEfv7gr5tDatYa50AzNTpmM4EThy5-b87Rj2P4VXQcEbKmRzSziaFg&sa=X&ved=2ahUKEwi7gqGfqYyUAxXUAoYAHS6YH9gQ0pQJegQIExAB
+              - generic [ref=e95]: 新闻
+          - listitem [ref=e96]:
+            - link "图片" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGDgILuWBSpe5rO3Tp-0yuQMz_tiMinFMa8ibPQuW8ZQehhnCo3IXHUlGROup3UJVdIg5_5sgxIimjLs6McqJ78OAjJv95YpelDF3C4pJeyJdrG3BlnpDWwQeKcLpKEfv7gr5tDatYa50AzNTpmM4EThy5-b87Rj2P4VXQcEbKmRzSziaFg&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+douyin+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D&sa=X&ved=2ahUKEwi7gqGfqYyUAxXUAoYAHS6YH9gQtKgLegQIFBAB
+              - generic [ref=e99]: 图片
+          - listitem [ref=e100]:
+            - link "购物" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGDgILuWBSpe5rO3Tp-0yuQMz_tiMinFMa8ibPQuW8ZQehhnCo3IXHUlGROup3UJVdIg5_5sgxIimjLs6McqJ78OAjJv95YpelDF3C4pJeyJdrG3BlnpDWwQeKcLpKEfv7gr5tDatYa50AzNTpmM4EThy5-b87Rj2P4VXQcEbKmRzSziaFg&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+douyin+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D&ved=1t:220175&ictx=111
+              - generic [ref=e103]: 购物
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGDgILuWBSpe5rO3Tp-0yuQMz_tiMinFMa8ibPQuW8ZQehhnCo3IXHUlGROup3UJVdIg5_5sgxIimjLs6McqJ78OAjJv95YpelDF3C4pJeyJdrG3BlnpDWwQeKcLpKEfv7gr5tDatYa50AzNTpmM4EThy5-b87Rj2P4VXQcEbKmRzSziaFg&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+douyin+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D&sa=X&ved=2ahUKEwi7gqGfqYyUAxXUAoYAHS6YH9gQs6gLegQIFhAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - main [ref=e130]:
+      - generic [ref=e134]:
+        - generic [ref=e137]:
+          - heading "网页搜索结果" [level=2] [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e142]:
+              - link "b站女主播排行榜 抖音 https://www.douyin.com › search › b站女主播排行榜" [ref=e144] [cursor=pointer]:
+                - /url: https://www.douyin.com/search/b%E7%AB%99%E5%A5%B3%E4%B8%BB%E6%92%AD%E6%8E%92%E8%A1%8C%E6%A6%9C
+                - heading "b站女主播排行榜" [level=3] [ref=e145]
+                - generic [ref=e150]:
+                  - generic [ref=e152]: 抖音
+                  - generic [ref=e154]: https://www.douyin.com › search › b站女主播排行榜
+              - button "关于这条结果的详细信息" [ref=e155] [cursor=pointer]:
+                - img [ref=e158]
+            - generic [ref=e161]:
+              - generic [ref=e162]: 2026年4月1日 —
+              - generic [ref=e163]:
+                - text: 您在查找
+                - emphasis [ref=e164]: b站
+                - text: 女主播排行榜吗？
+                - emphasis [ref=e165]: 抖音
+                - text: 综合搜索帮你找到更多相关视频、图文、直播内容，支持在线观看。更有海量高清视频、相关直播、用户，满足您的在线观看 ...
+        - generic [ref=e176]:
+          - heading "正在思考" [level=2] [ref=e180]:
+            - generic [ref=e181]: 正在思考
+          - progressbar [ref=e182]
+        - generic [ref=e186]:
+          - heading "网页搜索结果" [level=2] [ref=e187]
+          - generic [ref=e188]:
+            - generic [ref=e191]:
+              - link "1 Hugging Face https://huggingface.co › openbmb › commit" [ref=e193] [cursor=pointer]:
+                - /url: https://huggingface.co/openbmb/cpm-bee-1b/commit/bd72a61dd7a59086ed7456f1dfcaa995c8ec58a3.diff
+                - heading "1" [level=3] [ref=e194]
+                - generic [ref=e199]:
+                  - generic [ref=e201]: Hugging Face
+                  - generic [ref=e203]: https://huggingface.co › openbmb › commit
+              - button "关于这条结果的详细信息" [ref=e204] [cursor=pointer]:
+                - img [ref=e207]
+            - generic [ref=e211]:
+              - text: ...
+              - emphasis [ref=e212]: b
+              - text: "/config.json @@ -0,0 +1,15 @@ +{ + \"vocab_size\": 86583, + \"dim_model\": 4096 ... 抖+护+壳+志+块+扭+声+把+报+拟+却+抒+劫+芙+芜+苇+芽+花+芹+芥+芬+苍+芳+ ..."
+        - generic [ref=e216]:
+          - generic [ref=e219]:
+            - link "用户情感可视化分析-vici_wei_天池notebook-阿里云天池 阿里云天池 https://tianchi.aliyun.com › notebook" [ref=e221] [cursor=pointer]:
+              - /url: https://tianchi.aliyun.com/notebook/366899
+              - heading "用户情感可视化分析-vici_wei_天池notebook-阿里云天池" [level=3] [ref=e222]
+              - generic [ref=e227]:
+                - generic [ref=e229]: 阿里云天池
+                - generic [ref=e231]: https://tianchi.aliyun.com › notebook
+            - button "关于这条结果的详细信息" [ref=e232] [cursor=pointer]:
+              - img [ref=e235]
+          - generic [ref=e238]:
+            - generic [ref=e239]: 2022年4月18日 —
+            - text: 天池实验室中的：用户情感可视化分析-vici_wei实验介绍及.
+        - generic [ref=e243]:
+          - generic [ref=e246]:
+            - link "土象电池Normal Sisters - ximalaya.c... ximalaya.com https://www.ximalaya.com › album" [ref=e248] [cursor=pointer]:
+              - /url: https://www.ximalaya.com/album/45666589.xml
+              - heading "土象电池Normal Sisters - ximalaya.c..." [level=3] [ref=e249]
+              - generic [ref=e254]:
+                - generic [ref=e256]: ximalaya.com
+                - generic [ref=e258]: https://www.ximalaya.com › album
+            - button "关于这条结果的详细信息" [ref=e259] [cursor=pointer]:
+              - img [ref=e262]
+          - generic [ref=e265]: ... 抖肘（每天1–2分钟）：快速抖肘，开胸顺气，疏肝最强小动作. 29：13 利用一切碎片化时间拉伸肝胆经. 血虚（重点：温和动、不耗气、助升发） • 慢走/公园散步（20分钟 ...
+        - generic [ref=e269]:
+          - generic [ref=e272]:
+            - link "simnet_vocab.txt bcebos.com https://bj.bcebos.com › paddlenlp › data › simnet_vocab" [ref=e274] [cursor=pointer]:
+              - /url: https://bj.bcebos.com/paddlenlp/data/simnet_vocab.txt
+              - heading "simnet_vocab.txt" [level=3] [ref=e275]
+              - generic [ref=e277]:
+                - img [ref=e281]
+                - generic [ref=e283]:
+                  - generic [ref=e285]: bcebos.com
+                  - generic [ref=e287]: https://bj.bcebos.com › paddlenlp › data › simnet_vocab
+            - button "关于这条结果的详细信息" [ref=e288] [cursor=pointer]:
+              - img [ref=e291]
+          - generic [ref=e295]:
+            - text: ...
+            - emphasis [ref=e296]: B
+            - text: 轮双月殿碳六烯酸QGraphicsView 宋美修万泽杭州凤凰网迷迷qt4.8 干枝中国矿大滨江社区lettering 法律职业资格考试雨洪千金不换Musik 速战Vita 主合kama FUEL 具身原上 ...
+        - generic [ref=e300]:
+          - heading "图片" [level=2] [ref=e304]
+          - generic [ref=e308]:
+            - generic [ref=e312] [cursor=pointer]:
+              - link "哔哩哔哩涨粉b站1000粉丝自助下单网| Podcast Episode on RSS.com RSS.com":
+                - /url: https://rss.com/podcasts/2025-mcn-top/2170952/
+              - button "哔哩哔哩涨粉b站1000粉丝自助下单网| Podcast Episode on RSS.com" [ref=e314]:
+                - img "哔哩哔哩涨粉b站1000粉丝自助下单网| Podcast Episode on RSS.com" [ref=e316]
+              - generic [ref=e318]:
+                - generic [ref=e320]: 哔哩哔哩涨粉b站1000粉丝自助下单网| Podcast Episode on RSS.com
+                - generic [ref=e321]:
+                  - generic [ref=e328]: RSS.com
+                  - button "关于这条结果的详细信息" [ref=e331]:
+                    - img [ref=e334]
+            - generic [ref=e339] [cursor=pointer]:
+              - link "B站快涨视频分享与B站协议粉结合自动化平台提升视频播放与粉丝 ... Firstory":
+                - /url: https://open.firstory.me/story/cmnrcbe8o03sb01ts6q2n5mbp
+              - button "B站快涨视频分享与B站协议粉结合自动化平台提升视频播放与粉丝 ..." [ref=e341]:
+                - img "B站快涨视频分享与B站协议粉结合自动化平台提升视频播放与粉丝 ..." [ref=e343]
+              - generic [ref=e345]:
+                - generic [ref=e347]: B站快涨视频分享与B站协议粉结合自动化平台提升视频播放与粉丝 ...
+                - generic [ref=e348]:
+                  - generic [ref=e355]: Firstory
+                  - button "关于这条结果的详细信息" [ref=e358]:
+                    - img [ref=e361]
+            - generic [ref=e366] [cursor=pointer]:
+              - link "投稿 Instagram":
+                - /url: https://www.instagram.com/p/DUSKWidjRMi/
+              - button "投稿" [ref=e368]:
+                - img "投稿" [ref=e370]
+              - generic [ref=e372]:
+                - generic [ref=e374]: 投稿
+                - generic [ref=e375]:
+                  - generic [ref=e382]: Instagram
+                  - button "关于这条结果的详细信息" [ref=e385]:
+                    - img [ref=e388]
+          - button "显示更多图片" [ref=e391] [cursor=pointer]:
+            - separator [ref=e392]
+            - generic [ref=e393]:
+              - generic [ref=e394]: 显示更多图片
+              - img [ref=e396]
+        - generic [ref=e400]:
+          - heading "网页搜索结果" [level=2] [ref=e401]
+          - generic [ref=e402]:
+            - generic [ref=e405]:
+              - link "手机轰炸/ 在线轰炸机网页版/短信轰在线轰炸免费/可以留电话的 ... hgltmn.cn https://nj541.hgltmn.cn" [ref=e407] [cursor=pointer]:
+                - /url: https://nj541.hgltmn.cn/
+                - heading "手机轰炸/ 在线轰炸机网页版/短信轰在线轰炸免费/可以留电话的 ..." [level=3] [ref=e408]
+                - generic [ref=e413]:
+                  - generic [ref=e415]: hgltmn.cn
+                  - generic [ref=e417]: https://nj541.hgltmn.cn
+              - button "关于这条结果的详细信息" [ref=e418] [cursor=pointer]:
+                - img [ref=e421]
+            - generic [ref=e425]:
+              - emphasis [ref=e426]: douyin
+              - text: / 第三步：选择账号类型企业认证：适用于注册普通企业账号政府认证 ... 审核通过后，企业
+              - emphasis [ref=e427]: 官方账号
+              - text: 需绑定相关
+              - emphasis [ref=e428]: 抖音
+              - text: 账号才能使用。 使用企业
+              - emphasis [ref=e429]: 官方账号
+              - text: 时，应 ...
+        - generic [ref=e433]:
+          - generic [ref=e436]:
+            - link "行动党尚未针对张雪忠国民制宪事件发表评论，不过根据主席 ... Facebook · Benderaku 国语骑射 Bannerman Castle 5年前" [ref=e438] [cursor=pointer]:
+              - /url: https://www.facebook.com/groups/1551237448366625/posts/1583957901761246/
+              - heading "行动党尚未针对张雪忠国民制宪事件发表评论，不过根据主席 ..." [level=3] [ref=e439]
+              - generic [ref=e444]:
+                - generic [ref=e446]: Facebook · Benderaku 国语骑射 Bannerman Castle
+                - generic [ref=e448]: 5年前
+            - button "关于这条结果的详细信息" [ref=e449] [cursor=pointer]:
+              - img [ref=e452]
+          - generic [ref=e455]: 行动党尚未针对张雪忠国民制宪事件发表评论，不过根据主席陈国伟和秘书长林冠英所撰写的“一带一路”漫画序言，我们可以推测：该党不认为中国需要有一部由 ...
+        - generic [ref=e459]:
+          - generic [ref=e462]:
+            - link "冲浪文学选集 Internet Archive https://ia601307.us.archive.org › items › 冲浪文..." [ref=e464] [cursor=pointer]:
+              - /url: https://ia601307.us.archive.org/20/items/chonglangwenxuexuanji/%E5%86%B2%E6%B5%AA%E6%96%87%E5%AD%A6%E9%80%89%E9%9B%86.pdf
+              - heading "冲浪文学选集" [level=3] [ref=e465]
+              - generic [ref=e470]:
+                - generic [ref=e472]: Internet Archive
+                - generic [ref=e474]: https://ia601307.us.archive.org › items › 冲浪文...
+            - generic [ref=e475]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e476] [cursor=pointer]:
+              - img [ref=e479]
+          - generic [ref=e481]:
+            - generic [ref=e483]:
+              - text: 支那猪
+              - emphasis [ref=e484]: 抖音
+              - text: 快手奶头乐，24小时狂轰滥炸鼓励内卷，全民一天游戏限制俩小时。 贴吧头条： 大家不努力工作八十国联军就要卷土重来了。 警察成立一支劳动纠察队，挨家挨户 ...
+            - generic [ref=e485]: 515 页
+        - generic [ref=e489]:
+          - generic [ref=e492]:
+            - link "女被c 扒衣服视频草莓视频官方版 - CRM客户管理系统 yueyuankeji.com https://yueyuankeji.com › contact › city" [ref=e494] [cursor=pointer]:
+              - /url: https://yueyuankeji.com/contact/?/city/20260420/186754.htm
+              - heading "女被c 扒衣服视频草莓视频官方版 - CRM客户管理系统" [level=3] [ref=e495]
+              - generic [ref=e497]:
+                - img [ref=e501]
+                - generic [ref=e503]:
+                  - generic [ref=e505]: yueyuankeji.com
+                  - generic [ref=e507]: https://yueyuankeji.com › contact › city
+            - button "关于这条结果的详细信息" [ref=e508] [cursor=pointer]:
+              - img [ref=e511]
+          - generic [ref=e514]:
+            - generic [ref=e515]: 7天前 —
+            - generic [ref=e516]:
+              - text: "### 6."
+              - emphasis [ref=e517]: B站
+              - text: （
+              - emphasis [ref=e518]: Bilibili
+              - text: ）
+              - emphasis [ref=e519]: B站
+              - text: 是一个以二次元文化为主的视频平台，同时也拥有众多高质量成品短视频。在
+              - emphasis [ref=e520]: B站
+              - text: APP中，点击“视频”分类，即可找到各类热门短视频。
+      - navigation [ref=e523]:
+        - heading "网页导航" [level=1] [ref=e524]
+        - text: "1"
+        - link "Page 2" [ref=e527] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+douyin+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D&sca_esv=164079556523993e&ei=AnHuabv5LdSFmLQPrrD-wA0&start=10&sa=N&sstk=Af77f_cIYW55Xx5hfW4FsrjItasPVV3-IhL67zIzANcfxrbjDZW31OYhx8ZnKXCRsebdmIMUwy56qL8E7bc7s04jQnEdN_y0T4IqVw&ved=2ahUKEwi7gqGfqYyUAxXUAoYAHS6YH9gQ8tMDegQIIRAE
+          - text: "2"
+        - link "Page 3" [ref=e529] [cursor=pointer]:
+          - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+douyin+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D&sca_esv=164079556523993e&ei=AnHuabv5LdSFmLQPrrD-wA0&start=20&sa=N&sstk=Af77f_cIYW55Xx5hfW4FsrjItasPVV3-IhL67zIzANcfxrbjDZW31OYhx8ZnKXCRsebdmIMUwy56qL8E7bc7s04jQnEdN_y0T4IqVw&ved=2ahUKEwi7gqGfqYyUAxXUAoYAHS6YH9gQ8tMDegQIIRAG
+          - text: "3"
+        - heading "下一页" [level=2] [ref=e531]:
+          - link "下一页" [ref=e532] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+douyin+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D&sca_esv=164079556523993e&ei=AnHuabv5LdSFmLQPrrD-wA0&start=10&sa=N&sstk=Af77f_cIYW55Xx5hfW4FsrjItasPVV3-IhL67zIzANcfxrbjDZW31OYhx8ZnKXCRsebdmIMUwy56qL8E7bc7s04jQnEdN_y0T4IqVw&ved=2ahUKEwi7gqGfqYyUAxXUAoYAHS6YH9gQ8NMDegQIIRAI
+            - generic [ref=e534]: 下一页
+      - navigation
+    - contentinfo [ref=e535]:
+      - heading "页脚链接" [level=1] [ref=e536]
+      - generic [ref=e540]:
+        - generic [ref=e544]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e546] [cursor=pointer]:
+            - generic [ref=e547]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e549]:
+              - text: "-"
+              - generic [ref=e550]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e552] [cursor=pointer]: 更新位置信息
+        - generic [ref=e555]:
+          - link "帮助" [ref=e556] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e557] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e558] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e559] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

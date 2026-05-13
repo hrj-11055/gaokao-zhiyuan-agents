@@ -1,0 +1,52 @@
+{
+  "university_details": {
+    "name": "青岛农业大学海都学院",
+    "short_name": "海都学院",
+    "future_name": "青岛工程学院",
+    "location": {
+      "current": "烟台莱阳",
+      "planned": "青岛"
+    },
+    "type": "民办本科（独立学院转设中）"
+  },
+  "academic_metrics": {
+    "a_plus_count": 0,
+    "a_count": 0,
+    "a_minus_count": 0,
+    "key_disciplines": [
+      "农学",
+      "食品科学与工程",
+      "动物医学"
+    ],
+    "academician_count": 0
+  },
+  "student_competitiveness": {
+    "shandong_rank_physics_2024": 285120,
+    "shandong_rank_history_2024": 115430,
+    "admission_difficulty": "Low-Medium"
+  },
+  "career_outcomes": {
+    "domestic_further_study_rate": "18.5%",
+    "overseas_further_study_rate": "1.2%",
+    "starting_salary_median": 4500,
+    "top_employers": [
+      "鲁花集团",
+      "新希望六和",
+      "海尔集团"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.1,
+    "graduate_value": 3.2,
+    "location_potential": 2.8,
+    "globalization": 2.3,
+    "student_empowerment": 2.5,
+    "brand_asset": 2.7,
+    "overall_weighted_score": 2.64
+  },
+  "risk_factors": [
+    "Campus relocation uncertainty",
+    "Brand dilution after decoupling from parent university",
+    "Aging infrastructure in old campus"
+  ]
+}

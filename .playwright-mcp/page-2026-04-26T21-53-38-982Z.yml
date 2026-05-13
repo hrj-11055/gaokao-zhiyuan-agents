@@ -1,0 +1,420 @@
+- generic [ref=e8]:
+  - generic [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e16]:
+        - textbox "查大学、查专业、问报考" [ref=e17]
+        - button "搜索" [ref=e18] [cursor=pointer]
+        - list
+      - generic [ref=e19]:
+        - generic [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: 北京
+          - text: "[切换]"
+          - generic [ref=e23]:
+            - generic [ref=e24]: 北京
+            - generic [ref=e25]: 天津
+            - generic [ref=e26]: 河北
+            - generic [ref=e27]: 山西
+            - generic [ref=e28]: 内蒙古
+            - generic [ref=e29]: 辽宁
+            - generic [ref=e30]: 吉林
+            - generic [ref=e31]: 黑龙江
+            - generic [ref=e32]: 上海
+            - generic [ref=e33]: 江苏
+            - generic [ref=e34]: 浙江
+            - generic [ref=e35]: 安徽
+            - generic [ref=e36]: 福建
+            - generic [ref=e37]: 江西
+            - generic [ref=e38]: 山东
+            - generic [ref=e39]: 河南
+            - generic [ref=e40]: 湖北
+            - generic [ref=e41]: 湖南
+            - generic [ref=e42]: 广东
+            - generic [ref=e43]: 广西
+            - generic [ref=e44]: 海南
+            - generic [ref=e45]: 重庆
+            - generic [ref=e46]: 四川
+            - generic [ref=e47]: 贵州
+            - generic [ref=e48]: 云南
+            - generic [ref=e49]: 西藏
+            - generic [ref=e50]: 陕西
+            - generic [ref=e51]: 甘肃
+            - generic [ref=e52]: 青海
+            - generic [ref=e53]: 宁夏
+            - generic [ref=e54]: 新疆
+        - generic [ref=e57] [cursor=pointer]: 登录/注册
+        - generic [ref=e59] [cursor=pointer]: 下载APP
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - textbox "查大学，查专业，查资讯" [ref=e65]
+          - button "搜索" [ref=e66] [cursor=pointer]
+        - generic [ref=e67]:
+          - generic [ref=e68] [cursor=pointer]: 查大学
+          - generic [ref=e69] [cursor=pointer]: 查专业
+          - generic [ref=e70] [cursor=pointer]: 志愿填报
+          - generic [ref=e71] [cursor=pointer]: 高考工具箱
+      - generic [ref=e72]:
+        - generic [ref=e73] [cursor=pointer]:
+          - generic [ref=e74]: 北京
+          - emphasis [ref=e75]: "[切换]"
+          - generic [ref=e77]:
+            - generic [ref=e78]: 北京
+            - generic [ref=e79]: 天津
+            - generic [ref=e80]: 河北
+            - generic [ref=e81]: 山西
+            - generic [ref=e82]: 内蒙古
+            - generic [ref=e83]: 辽宁
+            - generic [ref=e84]: 吉林
+            - generic [ref=e85]: 黑龙江
+            - generic [ref=e86]: 上海
+            - generic [ref=e87]: 江苏
+            - generic [ref=e88]: 浙江
+            - generic [ref=e89]: 安徽
+            - generic [ref=e90]: 福建
+            - generic [ref=e91]: 江西
+            - generic [ref=e92]: 山东
+            - generic [ref=e93]: 河南
+            - generic [ref=e94]: 湖北
+            - generic [ref=e95]: 湖南
+            - generic [ref=e96]: 广东
+            - generic [ref=e97]: 广西
+            - generic [ref=e98]: 海南
+            - generic [ref=e99]: 重庆
+            - generic [ref=e100]: 四川
+            - generic [ref=e101]: 贵州
+            - generic [ref=e102]: 云南
+            - generic [ref=e103]: 西藏
+            - generic [ref=e104]: 陕西
+            - generic [ref=e105]: 甘肃
+            - generic [ref=e106]: 青海
+            - generic [ref=e107]: 宁夏
+            - generic [ref=e108]: 新疆
+        - generic [ref=e111] [cursor=pointer]: 登录/注册
+      - generic [ref=e113] [cursor=pointer]: 下载APP
+    - generic [ref=e116]:
+      - generic [ref=e118] [cursor=pointer]: 首页
+      - generic [ref=e120] [cursor=pointer]: 查大学
+      - generic [ref=e122] [cursor=pointer]: 查专业
+      - generic [ref=e124] [cursor=pointer]: 志愿填报
+      - generic [ref=e126] [cursor=pointer]: 智能选大学
+      - generic [ref=e128] [cursor=pointer]: 高考直播
+      - generic [ref=e129] [cursor=pointer]:
+        - generic [ref=e130]:
+          - generic [ref=e131]: 大咖讲志愿
+          - generic [ref=e132]: 
+        - list:
+          - listitem [ref=e133]:
+            - link "大咖讲志愿" [ref=e134]:
+              - /url: /master-talk-volunt
+          - listitem [ref=e135]:
+            - link "名师教提分" [ref=e136]:
+              - /url: /master-talk-score
+      - generic [ref=e137] [cursor=pointer]:
+        - generic [ref=e138]:
+          - generic [ref=e139]: 艺考专区
+          - generic [ref=e140]: 
+        - list:
+          - listitem [ref=e141]:
+            - link "强基计划" [ref=e142]:
+              - /url: /qjjh
+              - generic [ref=e143]: 
+              - text: 强基计划
+          - listitem [ref=e144]:
+            - link "艺考专区" [ref=e145]:
+              - /url: /art
+              - generic [ref=e146]: 
+              - text: 艺考专区
+          - listitem [ref=e147]:
+            - link "高职单招" [ref=e148]:
+              - /url: /gaozhi?singlecode=75001
+              - generic [ref=e149]: 
+              - text: 高职单招
+          - listitem [ref=e150]:
+            - link "自主招生" [ref=e151]:
+              - /url: /gaozhi?singlecode=75003
+              - generic [ref=e152]: 
+              - text: 自主招生
+          - text: 
+  - generic [ref=e155]:
+    - generic [ref=e157]:
+      - generic [ref=e158]:
+        - generic [ref=e159] [cursor=pointer]: 高考资讯
+        - generic [ref=e160]: ">"
+        - generic [ref=e161] [cursor=pointer]: 高考报考
+        - generic [ref=e162]: ">"
+        - generic [ref=e163] [cursor=pointer]: 志愿填报
+        - generic [ref=e164]: ">"
+        - generic [ref=e165] [cursor=pointer]: 详情
+      - generic [ref=e166]:
+        - generic [ref=e167]:
+          - heading "智能影像工程专业就业方向有哪些？就业前景如何？" [level=1] [ref=e168]
+          - generic [ref=e169]:
+            - generic [ref=e170]: 来源：掌上高考
+            - emphasis [ref=e171]:
+              - link "2024-12-12 09:04:51" [ref=e172] [cursor=pointer]:
+                - /url: https://m.gaokao.cn/gk/40298
+                - generic [ref=e173]: 
+                - text: 2024-12-12 09:04:51
+              - generic [ref=e174]:
+                - generic [ref=e175]: 
+                - text: 1.8w
+        - generic [ref=e176]:
+          - heading "输入分数，看你能报哪些大学" [level=3] [ref=e177]
+          - generic [ref=e178]:
+            - textbox [active] [ref=e179]
+            - generic [ref=e180]: 分
+          - button "测一测" [ref=e181] [cursor=pointer]
+        - generic [ref=e183]:
+          - heading "一、智能影像工程专业就业方向有哪些？" [level=2] [ref=e184]
+          - paragraph [ref=e185]:
+            - strong [ref=e186]: 智能影像工程专业毕业生可以在多个行业中找到就业机会
+            - text: ，包括人工智能、机器视觉、医疗影像、媒体与娱乐等领域。下面将详细介绍智能影像工程专业的就业方向。
+          - paragraph [ref=e187]:
+            - strong [ref=e188]: 1、人工智能领域
+          - paragraph [ref=e189]: 随着人工智能技术的飞速发展，智能影像工程专业毕业生在人工智能领域中有着广阔的就业机会，这是近年来很多人都看好的有发展潜力的领域。他们可以充分发挥自己的专业技能，从事图像识别与分类、目标检测与跟踪、图像生成与合成等方面的研究和开发工作。在自动驾驶领域，毕业生可以参与开发车辆感知系统，通过图像处理和计算机视觉技术实现车辆自主导航和环境感知。在人脸识别、语音识别等领域也需要有图像处理和模式识别背景的专业人才。
+          - paragraph [ref=e190]:
+            - strong [ref=e191]: 2、机器视觉领域
+          - paragraph [ref=e192]: 机器视觉是智能影像工程专业的重要应用领域之一。毕业生可以在机器视觉领域从事图像处理算法的研究与开发工作。他们可以参与开发基于图像处理技术的自动检测、测量和分析系统，如工业检测、机器人视觉、无人机视觉等。在工业制造领域，毕业生可以利用图像处理技术实现产品质量检测和缺陷分析，提高生产效率和产品质量，提高公司的效益。
+          - paragraph [ref=e193]:
+            - strong [ref=e194]: 3、医疗影像领域
+          - paragraph [ref=e195]: 医疗影像是智能影像工程专业的另一个重要就业方向。毕业生可以在医疗设备厂商、医院或科研机构从事医学影像处理和分析方面的工作。他们可以参与开发基于图像处理和模式识别技术的医学图像诊断系统，如肿瘤检测、骨骼分析等。随着人口老龄化趋势加剧，智能影像工程专业毕业生还可以参与开发智能化辅助诊断系统，简化就医流程，提供更精准和高效的医学服务。
+          - paragraph [ref=e196]:
+            - strong [ref=e197]: 4、媒体与娱乐领域
+          - paragraph [ref=e198]: 在媒体与娱乐行业中，智能影像工程专业毕业生可以从事虚拟现实（VR）和增强现实（AR）等方面的工作。他们可以参与开发基于图像处理技术的虚拟现实应用，如游戏、电影特效等。智能影像工程专业毕业生还可以在动画制作、影视后期制作等领域中发挥自己的才华。
+          - paragraph [ref=e199]:
+            - strong [ref=e200]: 5、科研与教育领域
+          - paragraph [ref=e201]: 智能影像工程专业毕业生也可以选择从事科研与教育工作。他们可以在大学、研究机构或企业的研发部门从事图像处理算法的研究和开发工作，推动该领域的技术进步。同时，他们还可以担任相关专业的教师，培养更多具备图像处理和模式识别背景的人才。
+          - heading "二、智能影像工程就业前景如何？" [level=2] [ref=e202]
+          - paragraph [ref=e203]:
+            - strong [ref=e205]: ‌智能影像工程专业的就业前景总体较为乐观‌。
+            - text: 该专业的毕业生就业面较宽，可以选择医疗卫生机构、医学影像设备的生产或经营单位、医学影像设备的技术培训机构等。具体岗位包括人工智能辅助诊断、智能成像设备开发、医疗机器人开发、智能检查、智能质控和智能优化流程等方面的辅助研发、技术培训、临床应用培训等工作‌。
+          - paragraph [ref=e206]: 此外，智能影像工程专业的毕业生薪酬也较为可观。一般来说，刚毕业生的薪资在4010元左右，毕业2年后月薪约为8388元左右，毕业5年后月薪约为10819元左右。随着工作年限和经验的增加，薪酬会不断提高‌。
+      - generic [ref=e208]:
+        - button "展开全文" [ref=e209] [cursor=pointer]:
+          - generic [ref=e210]: 
+          - text: 展开全文
+        - button "下载原文" [ref=e211] [cursor=pointer]:
+          - generic [ref=e212]: 
+          - text: 下载原文
+      - generic [ref=e215]:
+        - generic [ref=e216]:
+          - heading "- 测一测你能上什么大学 -" [level=3] [ref=e217]
+          - generic [ref=e219] [cursor=pointer]:
+            - text: 北京
+            - 'generic "icon: caret-down" [ref=e220]':
+              - img [ref=e221]
+        - generic [ref=e225]:
+          - generic [ref=e226] [cursor=pointer]: 物理
+          - generic [ref=e227] [cursor=pointer]: 化学
+          - generic [ref=e228] [cursor=pointer]: 生物
+          - generic [ref=e229]: 政治
+          - generic [ref=e230]: 历史
+          - generic [ref=e231]: 地理
+        - generic [ref=e232]:
+          - textbox "输入成绩" [ref=e233]
+          - generic [ref=e234]: 分
+        - button "测一测能上的大学" [ref=e235] [cursor=pointer]
+      - generic [ref=e237]:
+        - generic [ref=e238]: 相关推荐
+        - generic [ref=e239] [cursor=pointer]:
+          - generic [ref=e240]: 湖北咸宁职业技术学院怎么样？宿舍条件怎么样？
+          - generic [ref=e241]: 一、湖北咸宁职业技术学院怎么样咸宁职业技术学院，作为一所由五校合并而成的综合性公办高职院校，历经多年发展，已成为集智能制造、会计、健康管理等多元化实训基地于一体的教育高地。学院不仅紧跟国家政策导向，成
+        - generic [ref=e242] [cursor=pointer]:
+          - generic [ref=e243]: 内蒙古工业职业学院怎么样？宿舍条件？
+          - generic [ref=e244]: 一、内蒙古工业职业学院怎么样内蒙古工业职业学院，原名内蒙古轩元职业学院，是一所经过内蒙古自治区人民政府正式批准（内政字〔2009〕91号）并由国家教育部备案（教发函[2010]71号）的全日制普通高等
+        - generic [ref=e245] [cursor=pointer]:
+          - generic [ref=e246]: 南宁高考分数线高吗？满分多少分？
+          - generic [ref=e247]: 一、南宁高考分数线高吗？答案：不算特别高南宁市的高考分数线在不同类别中有所不同。本科第一批次的理工类和文史类的录取最低控制分数线分别为502分和545分。本科第二批次的理工类录取最低控制分数线为333
+        - generic [ref=e248] [cursor=pointer]:
+          - generic [ref=e249]: 广州行政职业技术学院怎么样？学费多少？
+          - generic [ref=e250]: 一、广州行政职业技术学院怎么样？广东行政职业学院是一所经广东省人民政府批准成立的公办高职院校。学院于2003年5月由广东省行政管理干部学院和南方成人经贸学院合并组建而成，并于2020年6月划转至广东省
+        - generic [ref=e251] [cursor=pointer]:
+          - generic [ref=e252]: 江苏省淮阴中等专业学校怎么样？江苏省淮阴中等专业学校有哪些专业？
+          - generic [ref=e253]: 一、我是标题1答：江苏省淮阴中等专业学校是一所不做的中专职业学校，学校的师资和教育理念都是相当不错的，就业率是百分之一百。江苏省淮阴中等专业学校是1983年省政府批准兴办的全日制普通中专校。新校区坐落
+    - generic [ref=e254]:
+      - iframe [ref=e256]:
+        - generic [ref=f3e5]:
+          - generic [ref=f3e6]:
+            - generic [ref=f3e7]:
+              - generic [ref=f3e8]: 省份
+              - combobox [ref=f3e13] [cursor=pointer]:
+                - generic "北京" [ref=f3e15]
+                - 'generic "icon: down" [ref=f3e17]':
+                  - img [ref=f3e18]
+            - generic [ref=f3e20]:
+              - generic [ref=f3e21]: 类型
+              - generic [ref=f3e25]:
+                - generic [ref=f3e26] [cursor=pointer]:
+                  - radio "本科" [checked] [ref=f3e28]
+                  - generic [ref=f3e30]: 本科
+                - generic [ref=f3e31] [cursor=pointer]:
+                  - radio "专科" [ref=f3e33]
+                  - generic [ref=f3e35]: 专科
+          - generic [ref=f3e36]:
+            - generic [ref=f3e37]: 科目
+            - generic [ref=f3e41]:
+              - generic [ref=f3e42] [cursor=pointer]:
+                - checkbox "物" [ref=f3e44]
+                - generic [ref=f3e46]: 物
+              - generic [ref=f3e47] [cursor=pointer]:
+                - checkbox "化" [ref=f3e49]
+                - generic [ref=f3e51]: 化
+              - generic [ref=f3e52] [cursor=pointer]:
+                - checkbox "生" [ref=f3e54]
+                - generic [ref=f3e56]: 生
+              - generic [ref=f3e57] [cursor=pointer]:
+                - checkbox "政" [ref=f3e59]
+                - generic [ref=f3e61]: 政
+              - generic [ref=f3e62] [cursor=pointer]:
+                - checkbox "史" [ref=f3e64]
+                - generic [ref=f3e66]: 史
+              - generic [ref=f3e67] [cursor=pointer]:
+                - checkbox "地" [ref=f3e69]
+                - generic [ref=f3e71]: 地
+          - generic [ref=f3e72]:
+            - generic [ref=f3e73]:
+              - textbox "分数" [ref=f3e80]
+              - textbox "位次" [ref=f3e87]
+            - button "志愿填报" [ref=f3e88] [cursor=pointer]:
+              - generic: 志愿填报
+      - generic [ref=e258]:
+        - generic [ref=e259]: 推荐高校
+        - list [ref=e262]:
+          - listitem "东北大学秦皇岛分校" [ref=e263] [cursor=pointer]:
+            - generic [ref=e264]: "01"
+            - img "东北大学秦皇岛分校" [ref=e265]
+            - generic [ref=e266]:
+              - generic [ref=e267]: 东北大学秦皇岛分校
+              - generic [ref=e268]: 历年分数
+          - listitem "西南交通大学希望学院" [ref=e269] [cursor=pointer]:
+            - generic [ref=e270]: "02"
+            - img "西南交通大学希望学院" [ref=e271]
+            - generic [ref=e273]: 西南交通大学希望学院
+          - listitem "西昌学院" [ref=e274] [cursor=pointer]:
+            - generic [ref=e275]: "03"
+            - img "西昌学院" [ref=e276]
+            - generic [ref=e278]: 西昌学院
+          - listitem "河北大学" [ref=e279] [cursor=pointer]:
+            - generic [ref=e280]: "04"
+            - img "河北大学" [ref=e281]
+            - generic [ref=e283]: 河北大学
+          - listitem "武昌首义学院" [ref=e284] [cursor=pointer]:
+            - generic [ref=e285]: "05"
+            - img "武昌首义学院" [ref=e286]
+            - generic [ref=e288]: 武昌首义学院
+          - listitem "武汉商学院" [ref=e289] [cursor=pointer]:
+            - generic [ref=e290]: "06"
+            - img "武汉商学院" [ref=e291]
+            - generic [ref=e293]: 武汉商学院
+          - listitem "康复大学" [ref=e294] [cursor=pointer]:
+            - generic [ref=e295]: "07"
+            - img "康复大学" [ref=e296]
+            - generic [ref=e298]: 康复大学
+          - listitem "华中农业大学" [ref=e299] [cursor=pointer]:
+            - generic [ref=e300]: "08"
+            - img "华中农业大学" [ref=e301]
+            - generic [ref=e303]: 华中农业大学
+          - listitem "信阳师范大学" [ref=e304] [cursor=pointer]:
+            - generic [ref=e305]: "09"
+            - img "信阳师范大学" [ref=e306]
+            - generic [ref=e308]: 信阳师范大学
+          - listitem "成都东软学院" [ref=e309] [cursor=pointer]:
+            - generic [ref=e310]: "10"
+            - img "成都东软学院" [ref=e311]
+            - generic [ref=e313]: 成都东软学院
+          - listitem "浙江工商大学" [ref=e314] [cursor=pointer]:
+            - generic [ref=e315]: "11"
+            - img "浙江工商大学" [ref=e316]
+            - generic [ref=e318]: 浙江工商大学
+          - listitem "石河子大学" [ref=e319] [cursor=pointer]:
+            - generic [ref=e320]: "12"
+            - img "石河子大学" [ref=e321]
+            - generic [ref=e323]: 石河子大学
+          - listitem "河南工程学院" [ref=e324] [cursor=pointer]:
+            - generic [ref=e325]: "13"
+            - img "河南工程学院" [ref=e326]
+            - generic [ref=e328]: 河南工程学院
+          - listitem "阿坝师范学院" [ref=e329] [cursor=pointer]:
+            - generic [ref=e330]: "14"
+            - img "阿坝师范学院" [ref=e331]
+            - generic [ref=e333]: 阿坝师范学院
+          - listitem "四川文理学院" [ref=e334] [cursor=pointer]:
+            - generic [ref=e335]: "15"
+            - img "四川文理学院" [ref=e336]
+            - generic [ref=e338]: 四川文理学院
+          - listitem "武汉学院" [ref=e339] [cursor=pointer]:
+            - generic [ref=e340]: "16"
+            - img "武汉学院" [ref=e341]
+            - generic [ref=e343]: 武汉学院
+          - listitem "张家口学院" [ref=e344] [cursor=pointer]:
+            - generic [ref=e345]: "17"
+            - img "张家口学院" [ref=e346]
+            - generic [ref=e348]: 张家口学院
+          - listitem "保山学院" [ref=e349] [cursor=pointer]:
+            - generic [ref=e350]: "18"
+            - img "保山学院" [ref=e351]
+            - generic [ref=e353]: 保山学院
+          - listitem "海南医科大学西英格兰学院" [ref=e354] [cursor=pointer]:
+            - generic [ref=e355]: "19"
+            - img "海南医科大学西英格兰学院" [ref=e356]
+            - generic [ref=e358]: 海南医科大学西英格兰学院
+          - listitem "西北师范大学" [ref=e359] [cursor=pointer]:
+            - generic [ref=e360]: "20"
+            - img "西北师范大学" [ref=e361]
+            - generic [ref=e363]: 西北师范大学
+  - generic [ref=e364]:
+    - generic [ref=e365]:
+      - generic [ref=e366]:
+        - heading "系统使用说明" [level=3] [ref=e367]
+        - link [ref=e368] [cursor=pointer]:
+          - /url: https://mnzy.gaokao.cn/?channelCode=pcbrand
+      - paragraph [ref=e369]: 1、本查询系统的信息仅供参考，具体数据请以学校官网或考试院公布为准。
+      - paragraph [ref=e370]: 2、本站数据未经授权严禁转载，违者将依法追究责任。
+      - paragraph [ref=e371]:
+        - text: 3、如有任何疑问，可发送邮件至：
+        - link "lijin@eol.cn" [ref=e372] [cursor=pointer]:
+          - /url: mailto:lijin@eol.cn
+        - text: ，或点击【意见反馈】反馈于我们
+        - emphasis [ref=e373]: ，或联系【在线客服】
+        - text: 。
+      - paragraph [ref=e374]: 4、志愿填报服务客服专线：400-0678-211，高校合作或其他商务客服电话：400-6330-111。
+    - generic [ref=e375]:
+      - generic [ref=e376]:
+        - img [ref=e377]
+        - paragraph [ref=e378]: 掌上高考公众号
+      - generic [ref=e379]:
+        - img [ref=e380]
+        - paragraph [ref=e381]: 掌上高考APP
+  - generic [ref=e383]:
+    - generic [ref=e386]:
+      - paragraph [ref=e389] [cursor=pointer]: 志愿填报
+      - paragraph [ref=e392] [cursor=pointer]: 名师教提分
+      - paragraph [ref=e395] [cursor=pointer]: 高考小智
+      - paragraph [ref=e398] [cursor=pointer]: 高考社群
+      - paragraph [ref=e401] [cursor=pointer]: 院校排行
+      - paragraph [ref=e404] [cursor=pointer]: 一分一段
+      - paragraph [ref=e407] [cursor=pointer]: 省控线
+      - paragraph [ref=e410] [cursor=pointer]: 高考直播
+      - paragraph [ref=e413] [cursor=pointer]: 高考作文
+      - paragraph [ref=e416] [cursor=pointer]: 高考真题
+      - paragraph [ref=e419] [cursor=pointer]: 高考估分
+      - paragraph [ref=e422] [cursor=pointer]: 专家指导课
+    - link "查看更多" [ref=e423] [cursor=pointer]:
+      - /url: /quanzhidao
+    - generic [ref=e424] [cursor=pointer]: 
+    - generic [ref=e425] [cursor=pointer]: 
+    - generic [ref=e426]:
+      - generic [ref=e427] [cursor=pointer]: 
+      - button "animation" [ref=e429] [cursor=pointer]:
+        - img [ref=e430]
+  - generic [ref=e444]:
+    - paragraph [ref=e445]:
+      - link "京B2-20213236" [ref=e447] [cursor=pointer]:
+        - /url: https://www.zhijiao.cn/static/media/zhengshu.a82cc2ae.jpeg
+      - link "|京ICP备2020046552号 |" [ref=e449] [cursor=pointer]:
+        - /url: https://beian.miit.gov.cn/
+      - link "京公网安备 11010802037859号" [ref=e451] [cursor=pointer]:
+        - /url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802037859
+        - img [ref=e452]
+        - text: 京公网安备 11010802037859号
+    - paragraph [ref=e453]: "版权所有: 中教智网（北京）信息技术有限公司"

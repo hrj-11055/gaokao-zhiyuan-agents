@@ -1,0 +1,40 @@
+{
+  "university_name": "宁波职业技术大学",
+  "short_name": "宁职大",
+  "location": {
+    "province": "浙江",
+    "city": "宁波",
+    "district": "北仑区"
+  },
+  "status": {
+    "is_vocational_undergraduate": true,
+    "double_high_plan": "A档",
+    "former_name": "宁波职业技术学院"
+  },
+  "academic_strength": {
+    "national_key_groups": [
+      "应用化工技术",
+      "模具设计与制造"
+    ],
+    "academician_count": 1,
+    "double_teacher_ratio": "90%+"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "98.72%",
+    "stay_in_ningbo_rate": "65%",
+    "starting_salary_median": 5800
+  },
+  "admission_level": {
+    "zhejiang_rank_median": 160000,
+    "competitive_index": "High"
+  },
+  "evaluation_scores": {
+    "academic_capital": 4.2,
+    "employment_value": 4.5,
+    "location_advantage": 4.9,
+    "global_capability": 4.0,
+    "student_empowerment": 3.5,
+    "brand_asset": 3.8,
+    "total_weighted_score": 4.3
+  }
+}

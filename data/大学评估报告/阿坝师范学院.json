@@ -1,0 +1,48 @@
+{
+  "university_name": "阿坝师范学院",
+  "short_name": "阿师院",
+  "location": {
+    "province": "四川省",
+    "city": "阿坝藏族羌族自治州",
+    "district": "汶川县水磨镇",
+    "feature": "5A级景区校园"
+  },
+  "tags": [
+    "省属公办本科",
+    "师范类",
+    "民族文化特色",
+    "抗震救灾英雄集体"
+  ],
+  "academic_status": {
+    "master_points": 0,
+    "master_construction_unit": true,
+    "key_disciplines": [
+      "教育学",
+      "民族学",
+      "艺术学"
+    ]
+  },
+  "admission_data_2024": {
+    "liberal_arts_line_diff": 42,
+    "science_line_diff": 55,
+    "competitive_majors": [
+      "小学教育",
+      "汉语言文学"
+    ]
+  },
+  "employment_stats": {
+    "overall_rate": "91.2%",
+    "main_industry": "基础教育",
+    "avg_starting_salary": 4200,
+    "further_study_rate": "8.5%"
+  },
+  "evaluation_scores": {
+    "academic": 1.8,
+    "employment": 2.8,
+    "location": 2.2,
+    "globalization": 2.4,
+    "freedom": 2.8,
+    "brand": 3.5,
+    "total_weighted": 2.44
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "university_name": "西南医科大学",
+  "short_name": "SWMU / 西南医大",
+  "location": {
+    "province": "四川省",
+    "city": "泸州市",
+    "campuses": [
+      "城北校区",
+      "忠山校区"
+    ]
+  },
+  "academic_standing": {
+    "esi_top_1_percent_subjects": [
+      "Clinical Medicine",
+      "Pharmacology & Toxicology",
+      "Biology & Biochemistry",
+      "Molecular Biology & Genetics",
+      "Chemistry",
+      "Immunology",
+      "Neuroscience & Behavior"
+    ],
+    "phd_programs": 3,
+    "key_labs": [
+      "代谢性血管疾病四川省重点实验室"
+    ]
+  },
+  "admission_stats": {
+    "avg_score_margin_sichuan_science": "80-100 points above provincial line",
+    "competitiveness_index": "High for Medical majors"
+  },
+  "employment_outcomes": {
+    "further_study_rate": "30.1%",
+    "major_employer_sectors": [
+      "Public Hospitals",
+      "Pharmaceutical Industry"
+    ],
+    "avg_starting_salary": 6100,
+    "5_year_salary_projection": 11400
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.2,
+    "graduate_value": 3.8,
+    "location_potential": 3.4,
+    "globalization": 2.8,
+    "student_empowerment": 3.5,
+    "brand_asset": 3.6,
+    "weighted_total": 3.43
+  }
+}

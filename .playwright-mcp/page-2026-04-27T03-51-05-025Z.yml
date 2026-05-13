@@ -1,0 +1,218 @@
+- generic [ref=e2]:
+  - region "跳到主要内容":
+    - link "跳到主要内容" [ref=e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - navigation "主导航" [ref=e4]:
+    - generic [ref=e5]:
+      - link "DeepSeek API 文档 Logo DeepSeek API 文档" [ref=e7] [cursor=pointer]:
+        - /url: /zh-cn/
+        - img "DeepSeek API 文档 Logo" [ref=e9]
+        - generic [ref=e10]: DeepSeek API 文档
+      - generic [ref=e11]:
+        - button "中文（中国）" [ref=e13] [cursor=pointer]:
+          - img [ref=e14]
+          - text: 中文（中国）
+        - link "DeepSeek Platform" [ref=e16] [cursor=pointer]:
+          - /url: https://platform.deepseek.com/
+          - text: DeepSeek Platform
+          - img [ref=e17]
+        - button "切换浅色/暗黑模式（当前为浅色模式）" [ref=e20] [cursor=pointer]:
+          - img [ref=e21]
+  - generic [ref=e25]:
+    - complementary [ref=e26]:
+      - navigation "文档侧边栏" [ref=e29]:
+        - list [ref=e30]:
+          - listitem [ref=e31]:
+            - link "快速开始" [expanded] [ref=e33] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e34]:
+              - listitem [ref=e35]:
+                - link "首次调用 API" [ref=e36] [cursor=pointer]:
+                  - /url: /zh-cn/
+              - listitem [ref=e37]:
+                - link "模型 & 价格" [ref=e38] [cursor=pointer]:
+                  - /url: /zh-cn/quick_start/pricing
+              - listitem [ref=e39]:
+                - link "Token 用量计算" [ref=e40] [cursor=pointer]:
+                  - /url: /zh-cn/quick_start/token_usage
+              - listitem [ref=e41]:
+                - link "限速" [ref=e42] [cursor=pointer]:
+                  - /url: /zh-cn/quick_start/rate_limit
+              - listitem [ref=e43]:
+                - link "错误码" [ref=e44] [cursor=pointer]:
+                  - /url: /zh-cn/quick_start/error_codes
+          - listitem [ref=e45]:
+            - link "API 指南" [expanded] [ref=e47] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e48]:
+              - listitem [ref=e49]:
+                - link "思考模式" [ref=e50] [cursor=pointer]:
+                  - /url: /zh-cn/guides/thinking_mode
+              - listitem [ref=e51]:
+                - link "多轮对话" [ref=e52] [cursor=pointer]:
+                  - /url: /zh-cn/guides/multi_round_chat
+              - listitem [ref=e53]:
+                - link "对话前缀续写（Beta）" [ref=e54] [cursor=pointer]:
+                  - /url: /zh-cn/guides/chat_prefix_completion
+              - listitem [ref=e55]:
+                - link "FIM 补全（Beta）" [ref=e56] [cursor=pointer]:
+                  - /url: /zh-cn/guides/fim_completion
+              - listitem [ref=e57]:
+                - link "JSON Output" [ref=e58] [cursor=pointer]:
+                  - /url: /zh-cn/guides/json_mode
+              - listitem [ref=e59]:
+                - link "Tool Calls" [ref=e60] [cursor=pointer]:
+                  - /url: /zh-cn/guides/tool_calls
+              - listitem [ref=e61]:
+                - link "上下文硬盘缓存" [ref=e62] [cursor=pointer]:
+                  - /url: /zh-cn/guides/kv_cache
+              - listitem [ref=e63]:
+                - link "接入 AI 工具" [ref=e64] [cursor=pointer]:
+                  - /url: /zh-cn/guides/coding_agents
+              - listitem [ref=e65]:
+                - link "Anthropic API" [ref=e66] [cursor=pointer]:
+                  - /url: /zh-cn/guides/anthropic_api
+          - listitem [ref=e67]:
+            - link "API 文档" [ref=e69] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e70]:
+            - link "新闻" [ref=e72] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e73]:
+            - link "其它资源" [ref=e75] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e76]:
+            - link "常见问题" [ref=e77] [cursor=pointer]:
+              - /url: /zh-cn/faq
+          - listitem [ref=e78]:
+            - link "更新日志" [ref=e79] [cursor=pointer]:
+              - /url: /zh-cn/updates
+    - main [ref=e80]:
+      - generic [ref=e82]:
+        - generic [ref=e84]:
+          - article [ref=e85]:
+            - navigation "页面路��径" [ref=e86]:
+              - list [ref=e87]:
+                - listitem [ref=e88]:
+                  - link "主页面" [ref=e89] [cursor=pointer]:
+                    - /url: /zh-cn/
+                    - img [ref=e90]
+                - listitem [ref=e92]:
+                  - generic [ref=e93]: 快速开始
+                - listitem [ref=e94]:
+                  - generic [ref=e95]: 首次调用 API
+            - generic [ref=e98]:
+              - heading "首次调用 API" [level=1] [ref=e99]
+              - paragraph [ref=e100]: DeepSeek API 使用与 OpenAI/Anthropic 兼容的 API 格式，通过修改配置，您可以使用 OpenAI/Anthropic SDK 来访问 DeepSeek API，或使用与 OpenAI/Anthropic API 兼容的软件。
+              - table [ref=e101]:
+                - rowgroup [ref=e102]:
+                  - row "PARAM VALUE" [ref=e103]:
+                    - columnheader "PARAM" [ref=e104]
+                    - columnheader "VALUE" [ref=e105]
+                - rowgroup [ref=e106]:
+                  - row "base_url (OpenAI) https://api.deepseek.com" [ref=e107]:
+                    - cell "base_url (OpenAI)" [ref=e108]
+                    - cell "https://api.deepseek.com" [ref=e109]:
+                      - code [ref=e110]: https://api.deepseek.com
+                  - row "base_url (Anthropic) https://api.deepseek.com/anthropic" [ref=e111]:
+                    - cell "base_url (Anthropic)" [ref=e112]
+                    - cell "https://api.deepseek.com/anthropic" [ref=e113]:
+                      - code [ref=e114]: https://api.deepseek.com/anthropic
+                  - row "api_key apply for an API key" [ref=e115]:
+                    - cell "api_key" [ref=e116]
+                    - cell "apply for an API key" [ref=e117]:
+                      - text: apply for an
+                      - link "API key" [ref=e118] [cursor=pointer]:
+                        - /url: https://platform.deepseek.com/api_keys
+                  - row "model* deepseek-v4-flash deepseek-v4-pro deepseek-chat (将于 2026/07/24 弃用) deepseek-reasoner (将于 2026/07/24 弃用)" [ref=e119]:
+                    - cell "model*" [ref=e120]:
+                      - text: model
+                      - superscript [ref=e121]: "*"
+                    - cell "deepseek-v4-flash deepseek-v4-pro deepseek-chat (将于 2026/07/24 弃用) deepseek-reasoner (将于 2026/07/24 弃用)" [ref=e122]:
+                      - code [ref=e123]: deepseek-v4-flash
+                      - code [ref=e124]: deepseek-v4-pro
+                      - code [ref=e125]: deepseek-chat
+                      - text: (将于 2026/07/24 弃用)
+                      - code [ref=e126]: deepseek-reasoner
+                      - text: (将于 2026/07/24 弃用)
+              - paragraph [ref=e128]: "* deepseek-chat 与 deepseek-reasoner 两个模型名将于 2026/07/24 弃用。出于兼容考虑，二者分别对应 deepseek-v4-flash 的非思考与思考模式。"
+              - heading "调用对话 API调用对话 API的直接链接" [level=2] [ref=e129]:
+                - text: 调用对话 API
+                - link "调用对话 API的直接链接" [ref=e130] [cursor=pointer]:
+                  - /url: "#调用对话-api"
+                  - text: "#"
+              - paragraph [ref=e131]: 在创建 API key 之后，你可以使用以下样例脚本，通过 OpenAI API 格式来访问 DeepSeek 模型。样例为非流式输出，您可以将 stream 设置为 true 来使用流式输出。
+              - paragraph [ref=e132]:
+                - text: Anthropic API 格式的访问样例，请参考
+                - link "Anthropic API" [ref=e133] [cursor=pointer]:
+                  - /url: /zh-cn/guides/anthropic_api
+                - text: 。
+              - generic [ref=e134]:
+                - tablist [ref=e135]:
+                  - tab "curl" [selected] [ref=e136] [cursor=pointer]
+                  - tab "python" [ref=e137] [cursor=pointer]
+                  - tab "nodejs" [ref=e138] [cursor=pointer]
+                - tabpanel [ref=e140]:
+                  - generic [ref=e142]:
+                    - code [ref=e144]:
+                      - generic [ref=e145]: curl https://api.deepseek.com/chat/completions \
+                      - generic [ref=e146]: "-H \"Content-Type: application/json\" \\"
+                      - generic [ref=e147]: "-H \"Authorization: Bearer ${DEEPSEEK_API_KEY}\" \\"
+                      - generic [ref=e148]: "-d '{"
+                      - generic [ref=e149]: "\"model\": \"deepseek-v4-pro\","
+                      - generic [ref=e150]: "\"messages\": ["
+                      - generic [ref=e151]: "{\"role\": \"system\", \"content\": \"You are a helpful assistant.\"},"
+                      - generic [ref=e152]: "{\"role\": \"user\", \"content\": \"Hello!\"}"
+                      - generic [ref=e153]: "],"
+                      - generic [ref=e154]: "\"thinking\": {\"type\": \"enabled\"},"
+                      - generic [ref=e155]: "\"reasoning_effort\": \"high\","
+                      - generic [ref=e156]: "\"stream\": false"
+                      - generic [ref=e157]: "}'"
+                    - button "复制代码到剪贴板" [ref=e159] [cursor=pointer]:
+                      - generic [ref=e160]:
+                        - img [ref=e161]
+                        - img [ref=e163]
+          - navigation "文件选项卡" [ref=e166]:
+            - link "下一页 模型 & 价格 »" [ref=e167] [cursor=pointer]:
+              - /url: /zh-cn/quick_start/pricing
+              - generic [ref=e168]: 下一页
+              - generic [ref=e169]: 模型 & 价格 »
+        - list [ref=e172]:
+          - listitem [ref=e173]:
+            - link "调用对话 API" [ref=e174] [cursor=pointer]:
+              - /url: "#调用对话-api"
+  - contentinfo [ref=e175]:
+    - generic [ref=e176]:
+      - generic [ref=e177]:
+        - generic [ref=e178]:
+          - generic [ref=e179]: 微信公众号
+          - list [ref=e180]:
+            - listitem [ref=e181]:
+              - img "WeChat QRcode" [ref=e182]
+        - generic [ref=e183]:
+          - generic [ref=e184]: 社区
+          - list [ref=e185]:
+            - listitem [ref=e186]:
+              - link "邮箱" [ref=e187] [cursor=pointer]:
+                - /url: mailto:api-service@deepseek.com
+                - text: 邮箱
+                - img [ref=e188]
+            - listitem [ref=e190]:
+              - link "Discord" [ref=e191] [cursor=pointer]:
+                - /url: https://discord.gg/Tc7c45Zzu5
+                - text: Discord
+                - img [ref=e192]
+            - listitem [ref=e194]:
+              - link "Twitter" [ref=e195] [cursor=pointer]:
+                - /url: https://twitter.com/deepseek_ai
+                - text: Twitter
+                - img [ref=e196]
+        - generic [ref=e198]:
+          - generic [ref=e199]: 更多
+          - list [ref=e200]:
+            - listitem [ref=e201]:
+              - link "GitHub" [ref=e202] [cursor=pointer]:
+                - /url: https://github.com/deepseek-ai
+                - text: GitHub
+                - img [ref=e203]
+      - generic [ref=e206]: Copyright © 2025 DeepSeek, Inc.

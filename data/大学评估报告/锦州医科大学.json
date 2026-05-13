@@ -1,0 +1,43 @@
+{
+  "university_name": "锦州医科大学",
+  "short_name": "锦医大",
+  "location": {
+    "province": "辽宁",
+    "city": "锦州",
+    "tier": "四线城市"
+  },
+  "academic_standing": {
+    "esi_top_1_percent": [
+      "Clinical Medicine",
+      "Pharmacology & Toxicology"
+    ],
+    "doctoral_points": [
+      "Basic Medicine",
+      "Clinical Medicine",
+      "Pharmacy"
+    ],
+    "soft_ranking_medical": 34
+  },
+  "admission_profile": {
+    "difficulty_level": "Moderate to High",
+    "popular_majors": [
+      "Clinical Medicine",
+      "Stomatology"
+    ],
+    "average_rank_liaoning_physics": 66000
+  },
+  "career_outcomes": {
+    "further_study_rate": "23.11%",
+    "primary_employment_sector": "Healthcare Units",
+    "regional_influence": "Western Liaoning (Liaoxi)"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.8,
+    "graduate_value": 3.4,
+    "location_potential": 2.4,
+    "globalization": 2.5,
+    "student_empowerment": 2.3,
+    "brand_asset": 3.2,
+    "overall_weighted_score": 2.9
+  }
+}

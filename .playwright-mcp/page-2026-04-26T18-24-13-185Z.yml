@@ -1,0 +1,475 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 中医康复学 就业率 薪酬 起薪 2024
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2211908424417382549206%22%2C%22ori_lid%22%3A%2211908424417382549206%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=a54338ea00acc6d6&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=a54338ea00acc6d6&ie=utf-8&wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024&rsv_spt=7&rsv_bp=1&f=8&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E7%8E%87+%E8%96%AA%E9%85%AC+%E8%B5%B7%E8%96%AA+2024
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  中医康复技术就业现状  中医康复学就业  中医康复学的就业怎么样  中医康复专业好就业吗  中医康复治疗学的就业前景  康复专业就业前景如何薪资待遇高    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 枪击发生时特朗普旁的华裔女记者是谁 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 厨师锅里吐口水后继续出餐 店长回应 14 男子从内地偷运51公斤盒饭回澳门被查 15 财务造假“不敢不能不想”时代来了" [ref=e69]:
+              - cell "相关搜索  中医康复技术就业现状  中医康复学就业  中医康复学的就业怎么样  中医康复专业好就业吗  中医康复治疗学的就业前景  康复专业就业前景如何薪资待遇高    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 枪击发生时特朗普旁的华裔女记者是谁 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 厨师锅里吐口水后继续出餐 店长回应 14 男子从内地偷运51公斤盒饭回澳门被查 15 财务造假“不敢不能不想”时代来了" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 中医康复技术就业现状" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E6%8A%80%E6%9C%AF%E5%B0%B1%E4%B8%9A%E7%8E%B0%E7%8A%B6&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=8f1a219FvTFNw10rEwNA1fJmFx9Jja%2BXdswbwJ8xZge0x90vVNdmAmtgw8g&rfqid=a54338ea00acc6d6&rsv_dl=0_prs_28616_1&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsf=101636803
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 中医康复技术就业现状
+                      - link " 中医康复学就业" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%E5%B0%B1%E4%B8%9A&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=8f1a219FvTFNw10rEwNA1fJmFx9Jja%2BXdswbwJ8xZge0x90vVNdmAmtgw8g&rfqid=a54338ea00acc6d6&rsv_dl=0_prs_28616_2&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 中医康复学就业
+                      - link " 中医康复学的就业怎么样" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%E7%9A%84%E5%B0%B1%E4%B8%9A%E6%80%8E%E4%B9%88%E6%A0%B7&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=8f1a219FvTFNw10rEwNA1fJmFx9Jja%2BXdswbwJ8xZge0x90vVNdmAmtgw8g&rfqid=a54338ea00acc6d6&rsv_dl=0_prs_28616_3&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsf=101633403
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 中医康复学的就业怎么样
+                      - link " 中医康复专业好就业吗" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E4%B8%93%E4%B8%9A%E5%A5%BD%E5%B0%B1%E4%B8%9A%E5%90%97&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=8f1a219FvTFNw10rEwNA1fJmFx9Jja%2BXdswbwJ8xZge0x90vVNdmAmtgw8g&rfqid=a54338ea00acc6d6&rsv_dl=0_prs_28616_4&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsf=101633403
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 中医康复专业好就业吗
+                      - link " 中医康复治疗学的就业前景" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E6%B2%BB%E7%96%97%E5%AD%A6%E7%9A%84%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=8f1a219FvTFNw10rEwNA1fJmFx9Jja%2BXdswbwJ8xZge0x90vVNdmAmtgw8g&rfqid=a54338ea00acc6d6&rsv_dl=0_prs_28616_5&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsf=101633403
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 中医康复治疗学的就业前景
+                      - link " 康复专业就业前景如何薪资待遇高" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E4%B8%93%E4%B8%9A%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E5%A6%82%E4%BD%95%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%E9%AB%98&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=37c1tTVOTKRPhmgx7SHdM6EXnkXFam10yMwYkIywv5kiWPwT1rK%2FodYQX6Q&rfqid=a54338ea00acc6d6&rsv_dl=0_prs_28616_6&rq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsf=101636803
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 康复专业就业前景如何薪资待遇高
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=37c1tTVOTKRPhmgx7SHdM6EXnkXFam10yMwYkIywv5kiWPwT1rK%2FodYQX6Q&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=37c1tTVOTKRPhmgx7SHdM6EXnkXFam10yMwYkIywv5kiWPwT1rK%2FodYQX6Q&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=37c1tTVOTKRPhmgx7SHdM6EXnkXFam10yMwYkIywv5kiWPwT1rK%2FodYQX6Q&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=37c1tTVOTKRPhmgx7SHdM6EXnkXFam10yMwYkIywv5kiWPwT1rK%2FodYQX6Q&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=37c1tTVOTKRPhmgx7SHdM6EXnkXFam10yMwYkIywv5kiWPwT1rK%2FodYQX6Q&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=37c1tTVOTKRPhmgx7SHdM6EXnkXFam10yMwYkIywv5kiWPwT1rK%2FodYQX6Q&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=37c1tTVOTKRPhmgx7SHdM6EXnkXFam10yMwYkIywv5kiWPwT1rK%2FodYQX6Q&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=3e4ehloeazFzws5B%2FMnGJ1lkOtTMLeV8aXypMQu4xxT1OW6S5a1k2qmgXMw&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=3e4ehloeazFzws5B%2FMnGJ1lkOtTMLeV8aXypMQu4xxT1OW6S5a1k2qmgXMw&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "高市政府越过“最后一根红线”" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=3e4ehloeazFzws5B%2FMnGJ1lkOtTMLeV8aXypMQu4xxT1OW6S5a1k2qmgXMw&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=3e4ehloeazFzws5B%2FMnGJ1lkOtTMLeV8aXypMQu4xxT1OW6S5a1k2qmgXMw&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=3e4ehloeazFzws5B%2FMnGJ1lkOtTMLeV8aXypMQu4xxT1OW6S5a1k2qmgXMw&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=3e4ehloeazFzws5B%2FMnGJ1lkOtTMLeV8aXypMQu4xxT1OW6S5a1k2qmgXMw&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=3e4ehloeazFzws5B%2FMnGJ1lkOtTMLeV8aXypMQu4xxT1OW6S5a1k2qmgXMw&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "男子从内地偷运51公斤盒饭回澳门被查" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E7%94%B7%E5%AD%90%E4%BB%8E%E5%86%85%E5%9C%B0%E5%81%B7%E8%BF%9051%E5%85%AC%E6%96%A4%E7%9B%92%E9%A5%AD%E5%9B%9E%E6%BE%B3%E9%97%A8%E8%A2%AB%E6%9F%A5&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=3e4ehloeazFzws5B%2FMnGJ1lkOtTMLeV8aXypMQu4xxT1OW6S5a1k2qmgXMw&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=d465j%2BESlS3pZ4Z38UUuMqqnYVzUzBz1jMO%2BvfWHesxAeXlkcUB8w3X%2Bp4s&rqid=a54338ea00acc6d6&rsf=a1014b839252086a8c17f4684c551952_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e209]:
+            - generic [ref=e211]:
+              - img [ref=e214]
+              - generic:
+                - generic: 
+            - generic [ref=e220]: 问题分析中
+          - generic [ref=e233]:
+            - heading "中医康复学就业真实情况" [level=3] [ref=e236]:
+              - link "中医康复学就业真实情况" [ref=e237] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=3ZnwT4xDNKL4oLCqjGGfGTfFDuEpiWTgELeI0ssxd9nE2__mfnOiZlLYbo07dnE9zXGNbLT2uP2elZe4OD1iZbbYt7aoQxeMO6ZDyfHd4SZfSy56KQs-GnCOgJmUR4qErCiPzrBfyxEu_UoAP8lgWqa8bYtVynbo4hcqPAMcUGRDPKsGHdOJZmSi0qQFLkE2sGVAgyQ3QFQ-bNpm8aPncuRkheFoy0pRX2nG1_S3aJ-s1rm_Bwp46Smcn9wHpxFHNJ4YGkbQmXJEXqgZqbosRqsX1Uy7g2vX9InrlEekJuSinu9MlxPS1RvwJac5Xjrw-bZAo-7SkD6RLPU-X2plUO5z7TczUUhS-4TcIdJHT-W
+                - paragraph [ref=e240]:
+                  - generic [ref=e243]:
+                    - emphasis [ref=e244]: 中医康复学就业
+                    - text: 真实情况
+            - generic [ref=e249]:
+              - text: 2025年7月10日
+              - generic [ref=e250]:
+                - text: 中医康复学专业就业前景乐观,
+                - emphasis [ref=e251]: 2024年平均起薪达6000元
+                - text: ",毕业生就业率超92%,就业方向覆盖医疗机构,康复中心及健康管理企业等多元领域. == 行业需求与政策红利 随着《\"十四五\"中医药发展规划》的推进,中医康复学成为医疗健康行业的重点发展方向. 全国范围内三甲医院中医康复科室增设..."
+            - link "头像 知了爱学" [ref=e256] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=3ZnwT4xDNKL4oLCqjGGfGTfFDuEpiWTgELeI0ssxd9nE2__mfnOiZlLYbo07dnE9zXGNbLT2uP2elZe4OD1iZbbYt7aoQxeMO6ZDyfHd4SZfSy56KQs-GnCOgJmUR4qErCiPzrBfyxEu_UoAP8lgWqa8bYtVynbo4hcqPAMcUGRDPKsGHdOJZmSi0qQFLkE2sGVAgyQ3QFQ-bNpm8aPncuRkheFoy0pRX2nG1_S3aJ-s1rm_Bwp46Smcn9wHpxFHNJ4YGkbQmXJEXqgZqbosRqsX1Uy7g2vX9InrlEekJuSinu9MlxPS1RvwJac5Xjrw-bZAo-7SkD6RLPU-X2plUO5z7TczUUhS-4TcIdJHT-W
+              - img "头像" [ref=e259]
+              - generic [ref=e260]: 知了爱学
+              - generic [ref=e262]: 
+          - generic [ref=e266]:
+            - heading "中医康复学就业前景 - 职友集" [level=3] [ref=e269]:
+              - link "中医康复学就业前景 - 职友集" [ref=e270] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EFC1JmYHgPHzwn1bOmYUuLGZXgKZF2OOrSSpi105R38R2Aaq0q7TNcU7LfCVYUYDTq2qE3HknelC_U3LSBrvK_
+                - paragraph [ref=e273]:
+                  - generic [ref=e276]:
+                    - emphasis [ref=e277]: 中医康复学就业
+                    - text: 前景 - 职友集
+            - generic [ref=e282]:
+              - text: 2026年3月19日
+              - generic [ref=e283]:
+                - text: 中医康复学招聘工资收入一般多少钱一个月?
+                - emphasis [ref=e284]: 66.6%岗位拿￥2-8K/月,年薪￥2-10W,2025年较2024增长了31%。 按学历统计,大专工资￥2.5K
+                - text: 。 按经验,5-10年工资￥12.5K。 就业前景怎么样?市场需求:2025年招聘职位132个,占全国0.001%。 地区分布主要集中在南昌,衡阳。 就业单位:医院占32.4%,医疗健康占28.3%,中医药...
+            - link "头像 职友集" [ref=e289] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=EFC1JmYHgPHzwn1bOmYUuLGZXgKZF2OOrSSpi105R38R2Aaq0q7TNcU7LfCVYUYDTq2qE3HknelC_U3LSBrvK_
+              - img "头像" [ref=e292]
+              - generic [ref=e293]: 职友集
+              - generic [ref=e295]: 
+          - generic [ref=e297]:
+            - generic [ref=e298]: 大家还在搜
+            - generic [ref=e299]:
+              - link "中医康复技术就业现状" [ref=e300] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E6%8A%80%E6%9C%AF%E5%B0%B1%E4%B8%9A%E7%8E%B0%E7%8A%B6&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=172cdPgPX4wjJO46O%2B62JId7tJP4yyN1mMEnnCtl%2B3WO200peZZuFCdEoJw&rsf=101636803&rsv_dl=0_prs_28608_1
+                - generic [ref=e302]: 中医康复技术就业现状
+              - link "中医康复学就业" [ref=e303] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%E5%B0%B1%E4%B8%9A&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=ca1e5fHsS0Sb6qNFGB7KaNtQPdFW6nqROvjpKkXsyyjuK8gNq%2BemnWUb2k0&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e305]: 中医康复学就业
+              - link "中医康复学的就业怎么样" [ref=e306] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%E7%9A%84%E5%B0%B1%E4%B8%9A%E6%80%8E%E4%B9%88%E6%A0%B7&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=ca1e5fHsS0Sb6qNFGB7KaNtQPdFW6nqROvjpKkXsyyjuK8gNq%2BemnWUb2k0&rsf=101633403&rsv_dl=0_prs_28608_3
+                - generic [ref=e308]: 中医康复学的就业怎么样
+              - link "中医康复专业好就业吗" [ref=e309] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E4%B8%93%E4%B8%9A%E5%A5%BD%E5%B0%B1%E4%B8%9A%E5%90%97&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=ca1e5fHsS0Sb6qNFGB7KaNtQPdFW6nqROvjpKkXsyyjuK8gNq%2BemnWUb2k0&rsf=101633403&rsv_dl=0_prs_28608_4
+                - generic [ref=e311]: 中医康复专业好就业吗
+              - link "中医康复治疗学的就业前景" [ref=e312] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E6%B2%BB%E7%96%97%E5%AD%A6%E7%9A%84%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=ca1e5fHsS0Sb6qNFGB7KaNtQPdFW6nqROvjpKkXsyyjuK8gNq%2BemnWUb2k0&rsf=101633403&rsv_dl=0_prs_28608_5
+                - generic [ref=e314]: 中医康复治疗学的就业前景
+              - link "康复专业就业前景如何薪资待遇高" [ref=e315] [cursor=pointer]:
+                - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E4%B8%93%E4%B8%9A%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E5%A6%82%E4%BD%95%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%E9%AB%98&usm=1&ie=utf-8&rsv_pq=a54338ea00acc6d6&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&rsv_t=ca1e5fHsS0Sb6qNFGB7KaNtQPdFW6nqROvjpKkXsyyjuK8gNq%2BemnWUb2k0&rsf=101636803&rsv_dl=0_prs_28608_6
+                - generic [ref=e317]: 康复专业就业前景如何薪资待遇高
+          - generic [ref=e321]:
+            - heading "中医康复技术真实就业情况 - 百度知道" [level=3] [ref=e324]:
+              - link "中医康复技术真实就业情况 - 百度知道" [ref=e325] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Q2a_dpvCyIoWBtNaqqwkQV9eFg67PAksEyNE4ht-Sn_HVt9xOy3VrWvaKq2-0BwDNlp6TIGwmGnpUjEIMKECq0GbaHNFMAhgN_tCFBCPAsS
+                - paragraph [ref=e328]:
+                  - generic [ref=e331]:
+                    - emphasis [ref=e332]: 中医康复
+                    - text: 技术真实
+                    - emphasis [ref=e333]: 就业
+                    - text: 情况 - 百度知道
+            - generic [ref=e335]: "1个回答 - 回答时间: 2025年9月2日"
+            - generic [ref=e340]:
+              - text: "最佳答案:"
+              - generic [ref=e341]:
+                - text: 中医康复学专业就业前景较好，
+                - emphasis [ref=e342]: 2024年平均起薪达到6000元
+                - text: ，毕业生就业率超过92%。就业方向：医疗机构：约50%的毕业生进入三甲医院或社区医院，从事中医康复诊疗、物理治疗等工作。康复中心及健康管理企业：约30%的毕业生选择进入民营机构与康养企业，岗位侧重技术应用与客户服务。科研与教育领域：部分毕业生参与...
+            - link "更多关于中医康复学 就业率 薪酬 起薪 2024的问题>>" [ref=e346] [cursor=pointer]:
+              - /url: http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5
+            - link "百度知道" [ref=e351] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Q2a_dpvCyIoWBtNaqqwkQV9eFg67PAksEyNE4ht-Sn_HVt9xOy3VrWvaKq2-0BwDNlp6TIGwmGnpUjEIMKECq0GbaHNFMAhgN_tCFBCPAsS
+              - generic [ref=e352]: 百度知道
+              - generic [ref=e354]: 
+          - generic [ref=e358]:
+            - heading "中医康复学硕士含金量" [level=3] [ref=e361]:
+              - link "中医康复学硕士含金量" [ref=e362] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=3ZnwT4xDNKL4oLCqjGGfGTfFDuEpiWTgELeI0ssxd9nE2__mfnOiZlLYbo07dnE9zXGNbLT2uP2elZe4OD1iZbbYt7aoQxeMO6ZDyfHd4SZfSy56KQs-GnCOgJmUR4qE7vNDC40Gcer1yLzIdiuZAIsAMfWQy7_yhw3nyk4VaKezeiRM7FXLYFbQgLAn5e4sIgDtgemU3e91F-hX6qYQdDBVZlNyDpGojlWAx5nrD4q9MyVZK5AaXCku6LK9gwxQCdKPSt99aVQqcPolu9O37zwcgIbvc-ObxUg6bZzfhByvbnuT3Cqsd2XEpBYG4pNLHrArecJ9tgZXUbu89Fgtm0lQdg_pM0g5VGl2-HKGbcm
+                - paragraph [ref=e365]:
+                  - generic [ref=e368]:
+                    - emphasis [ref=e369]: 中医康复学
+                    - text: 硕士含金量
+            - generic [ref=e374]:
+              - text: 2025年8月13日
+              - generic [ref=e375]:
+                - text: 就业竞争力与薪资水平
+                - emphasis [ref=e376]: 公立医院岗位 三甲医院康复科中医师起薪约1.5万—2.5万元/月
+                - text: ",职称晋升后年薪可达30万元以上,岗位竞争比约为1:5(2024年卫健委数据)。 高端康复机构 脑卒中康复中心、运动损伤诊所等技术骨干年薪25万—40万元,京津冀地区此类岗位占比超65%,且人才缺口年均增..."
+            - link "头像 知了爱学" [ref=e381] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=3ZnwT4xDNKL4oLCqjGGfGTfFDuEpiWTgELeI0ssxd9nE2__mfnOiZlLYbo07dnE9zXGNbLT2uP2elZe4OD1iZbbYt7aoQxeMO6ZDyfHd4SZfSy56KQs-GnCOgJmUR4qE7vNDC40Gcer1yLzIdiuZAIsAMfWQy7_yhw3nyk4VaKezeiRM7FXLYFbQgLAn5e4sIgDtgemU3e91F-hX6qYQdDBVZlNyDpGojlWAx5nrD4q9MyVZK5AaXCku6LK9gwxQCdKPSt99aVQqcPolu9O37zwcgIbvc-ObxUg6bZzfhByvbnuT3Cqsd2XEpBYG4pNLHrArecJ9tgZXUbu89Fgtm0lQdg_pM0g5VGl2-HKGbcm
+              - img "头像" [ref=e384]
+              - generic [ref=e385]: 知了爱学
+              - generic [ref=e387]: 
+          - generic [ref=e391]:
+            - heading "中医康复学专业就业方向及前景(工资待遇排名) - 职友集" [level=3] [ref=e394]:
+              - link "中医康复学专业就业方向及前景(工资待遇排名) - 职友集" [ref=e395] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=dMThSjOSo8Ll6tOzW38PIEHLYL2PfySbijP_FqxHmyFezWQe6VW7hqE0qZAjkC7mSwMH6YXC7lKMcR_2socyCa
+                - paragraph [ref=e398]:
+                  - generic [ref=e401]:
+                    - emphasis [ref=e402]: 中医康复学
+                    - text: 专业
+                    - emphasis [ref=e403]: 就业
+                    - text: 方向及前景(
+                    - emphasis [ref=e404]: 工资
+                    - text: 待遇排名) - 职友集
+            - generic [ref=e409]:
+              - text: 2026年4月12日
+              - generic [ref=e410]:
+                - emphasis [ref=e411]: "2024"
+                - text: :下降2% 2023:增长2% 2022:下降8% 历年
+                - emphasis [ref=e412]: 工资
+                - text: "变化 8.7K20208.1K20217.4K20227.6K20237.5K2024*** ?2025*** ?2026 说明:"
+                - emphasis [ref=e413]: 中医康复学
+                - text: 专业今年工资怎么样? 数据统计依赖于各大平台发布的公开数据,系统稳定性会影响客观性,仅供参考。
+                - emphasis [ref=e414]: 就业
+                - text: 前景(历年职位需求变化) ...
+            - link "职友集" [ref=e419] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=dMThSjOSo8Ll6tOzW38PIEHLYL2PfySbijP_FqxHmyFezWQe6VW7hqE0qZAjkC7mSwMH6YXC7lKMcR_2socyCa
+              - generic [ref=e420]: 职友集
+              - generic [ref=e422]: 
+          - generic [ref=e426]:
+            - heading "验证码验证" [level=3] [ref=e429]:
+              - link "验证码验证" [ref=e430] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=dMThSjOSo8Ll6tOzW38PI0hYvYgtpUP3_Ebg7kBHPF5jEZDR683cNi9-CKcYq8jqmi2ZS0SabYyVDiFz7waxKuE40Yt45C-bK2vcKQUGosC
+                - paragraph [ref=e433]:
+                  - generic [ref=e436]: 验证码验证
+            - generic [ref=e441]: "2026年4月16日系统检测到访问异常 为保障账户安全,请输入下方验证码完成验证: 验证码(点击图片可刷新) 提交验证"
+            - link "头像 职友集" [ref=e446] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=dMThSjOSo8Ll6tOzW38PI0hYvYgtpUP3_Ebg7kBHPF5jEZDR683cNi9-CKcYq8jqmi2ZS0SabYyVDiFz7waxKuE40Yt45C-bK2vcKQUGosC
+              - img "头像" [ref=e449]
+              - generic [ref=e450]: 职友集
+              - generic [ref=e452]: 
+          - generic [ref=e456]:
+            - heading "中医康复治疗技术学薪资 - 百度知道" [level=3] [ref=e459]:
+              - link "中医康复治疗技术学薪资 - 百度知道" [ref=e460] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Q2a_dpvCyIoWBtNaqqwkQV9eFg67PAksEyNE4ht-Sn_HVt9xOy3VrWvaKq2-0BwDg3Wf6U1Y3iHvW7o1VbpG2sOBDVqHj8RLISJ0FwN6zLW
+                - paragraph [ref=e463]:
+                  - generic [ref=e466]:
+                    - emphasis [ref=e467]: 中医康复
+                    - text: 治疗技术
+                    - emphasis [ref=e468]: 学薪资
+                    - text: "- 百度知道"
+            - generic [ref=e470]: "1个回答 - 回答时间: 2025年8月16日"
+            - generic [ref=e475]:
+              - text: "最佳答案:"
+              - generic [ref=e476]:
+                - emphasis [ref=e477]: 中医康复学
+                - text: 专业
+                - emphasis [ref=e478]: 薪资
+                - text: 情况：
+                - emphasis [ref=e479]: "2024"
+                - text: 年中医康复学专业毕业生的平均月薪约为6000元。在一线城市，部分岗位的
+                - emphasis [ref=e480]: 起薪
+                - text: 可达8000元。考取中医执业医师资格证后，薪资普遍上涨30%-50%。临床经验丰富的康复师，年薪可达15万-20万元。康复治疗学专业薪资情况：应届毕业生平均起薪是7300元，高于所有专业的平均起薪6000元。工作...
+            - link "更多关于中医康复学 就业率 薪酬 起薪 2024的问题>>" [ref=e484] [cursor=pointer]:
+              - /url: http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5
+            - link "百度知道" [ref=e489] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=Q2a_dpvCyIoWBtNaqqwkQV9eFg67PAksEyNE4ht-Sn_HVt9xOy3VrWvaKq2-0BwDg3Wf6U1Y3iHvW7o1VbpG2sOBDVqHj8RLISJ0FwN6zLW
+              - generic [ref=e490]: 百度知道
+              - generic [ref=e492]: 
+          - generic [ref=e496]:
+            - heading "康复治疗学是“最差专业”?就业数据颠覆你的认知!" [level=3] [ref=e499]:
+              - link "康复治疗学是“最差专业”?就业数据颠覆你的认知!" [ref=e500] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EFC1JmYHgPHzwn1bOmYUuO6Was0XaPGYSOYrYJXydV0V_yVyOK7iaMV4VoKJK2m_s0ieC_I5m8JDd8tD9so95wnlv7ZWlG4OPmaOvgCb6ka
+                - paragraph [ref=e503]:
+                  - generic [ref=e506]:
+                    - emphasis [ref=e507]: 康复
+                    - text: 治疗学是“最差专业”?
+                    - emphasis [ref=e508]: 就业
+                    - text: 数据颠覆你的认知!
+            - generic [ref=e509]:
+              - link [ref=e511] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EFC1JmYHgPHzwn1bOmYUuO6Was0XaPGYSOYrYJXydV0V_yVyOK7iaMV4VoKJK2m_s0ieC_I5m8JDd8tD9so95wnlv7ZWlG4OPmaOvgCb6ka
+              - generic [ref=e516]:
+                - generic [ref=e521]:
+                  - text: 2025年7月18日
+                  - generic [ref=e522]:
+                    - text: 教育部
+                    - emphasis [ref=e523]: "2024"
+                    - text: 年数据显示，
+                    - emphasis [ref=e524]: 康复
+                    - text: 治疗
+                    - emphasis [ref=e525]: 学就业率
+                    - text: 达83%87%，显著高于历史学（76%）等文科专业。通过
+                    - emphasis [ref=e526]: 中医
+                    - text: 院校毕业生案例佐证就业难度低，同时指出民营机构社保不规范等局部问题，强调这并非行业主流现象。
+                    - emphasis [ref=e527]: 薪资
+                    - text: 对比：中位数略低，但高端岗位爆发力强 2024届毕业生月薪中位数5800元，虽略低于本科平均水平，但一线城市公立医院可达...
+                - link "头像 往托5" [ref=e532] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=EFC1JmYHgPHzwn1bOmYUuO6Was0XaPGYSOYrYJXydV0V_yVyOK7iaMV4VoKJK2m_s0ieC_I5m8JDd8tD9so95wnlv7ZWlG4OPmaOvgCb6ka
+                  - img "头像" [ref=e535]
+                  - generic [ref=e536]: 往托5
+                  - generic [ref=e538]: 
+        - generic [ref=e541]:
+          - generic [ref=e542]: 相关搜索
+          - table [ref=e543]:
+            - rowgroup [ref=e544]:
+              - row "中医康复学就业 中医康复学的就业怎么样" [ref=e545]:
+                - cell "中医康复学就业" [ref=e546]:
+                  - link "中医康复学就业" [ref=e547] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%E5%B0%B1%E4%B8%9A&rsf=101633403&rsp=0&f=1&rs_src=0&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&rsv_dl=brs_28338_1
+                    - generic [ref=e549]: 中医康复学就业
+                - cell "中医康复学的就业怎么样" [ref=e550]:
+                  - link "中医康复学的就业怎么样" [ref=e551] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%E7%9A%84%E5%B0%B1%E4%B8%9A%E6%80%8E%E4%B9%88%E6%A0%B7&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&rsv_dl=brs_28338_2
+                    - generic [ref=e553]: 中医康复学的就业怎么样
+              - row "中医康复技术就业现状 中医康复治疗学的就业前景" [ref=e554]:
+                - cell "中医康复技术就业现状" [ref=e555]:
+                  - link "中医康复技术就业现状" [ref=e556] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E6%8A%80%E6%9C%AF%E5%B0%B1%E4%B8%9A%E7%8E%B0%E7%8A%B6&rsf=101636803&rsp=2&f=1&rs_src=0&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&rsv_dl=brs_28338_3
+                    - generic [ref=e558]: 中医康复技术就业现状
+                - cell "中医康复治疗学的就业前景" [ref=e559]:
+                  - link "中医康复治疗学的就业前景" [ref=e560] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E6%B2%BB%E7%96%97%E5%AD%A6%E7%9A%84%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF&rsf=101633403&rsp=3&f=1&rs_src=0&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&rsv_dl=brs_28338_4
+                    - generic [ref=e562]: 中医康复治疗学的就业前景
+              - row "中医康复专业好就业吗 中医康复保健就业前景怎么样" [ref=e563]:
+                - cell "中医康复专业好就业吗" [ref=e564]:
+                  - link "中医康复专业好就业吗" [ref=e565] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E4%B8%93%E4%B8%9A%E5%A5%BD%E5%B0%B1%E4%B8%9A%E5%90%97&rsf=101633403&rsp=4&f=1&rs_src=0&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&rsv_dl=brs_28338_5
+                    - generic [ref=e567]: 中医康复专业好就业吗
+                - cell "中医康复保健就业前景怎么样" [ref=e568]:
+                  - link "中医康复保健就业前景怎么样" [ref=e569] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E4%BF%9D%E5%81%A5%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E6%80%8E%E4%B9%88%E6%A0%B7&rsf=101636803&rsp=5&f=1&rs_src=0&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&rsv_dl=brs_28338_6
+                    - generic [ref=e571]: 中医康复保健就业前景怎么样
+              - row "康复专业就业前景如何薪资待遇高 目前中医康复学前景" [ref=e572]:
+                - cell "康复专业就业前景如何薪资待遇高" [ref=e573]:
+                  - link "康复专业就业前景如何薪资待遇高" [ref=e574] [cursor=pointer]:
+                    - /url: /s?wd=%E5%BA%B7%E5%A4%8D%E4%B8%93%E4%B8%9A%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E5%A6%82%E4%BD%95%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%E9%AB%98&rsf=101636803&rsp=6&f=1&rs_src=0&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&rsv_dl=brs_28338_7
+                    - generic [ref=e576]: 康复专业就业前景如何薪资待遇高
+                - cell "目前中医康复学前景" [ref=e577]:
+                  - link "目前中医康复学前景" [ref=e578] [cursor=pointer]:
+                    - /url: /s?wd=%E7%9B%AE%E5%89%8D%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%E5%89%8D%E6%99%AF&rsf=101633403&rsp=7&f=1&rs_src=0&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&rsv_dl=brs_28338_8
+                    - generic [ref=e580]: 目前中医康复学前景
+              - row "中医康复专业就业前景分析 中医康复技术学就业前景" [ref=e581]:
+                - cell "中医康复专业就业前景分析" [ref=e582]:
+                  - link "中医康复专业就业前景分析" [ref=e583] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E4%B8%93%E4%B8%9A%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E5%88%86%E6%9E%90&rsf=101633403&rsp=8&f=1&rs_src=0&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&rsv_dl=brs_28338_9
+                    - generic [ref=e585]: 中医康复专业就业前景分析
+                - cell "中医康复技术学就业前景" [ref=e586]:
+                  - link "中医康复技术学就业前景" [ref=e587] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E6%8A%80%E6%9C%AF%E5%AD%A6%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF&rsf=101636803&rsp=9&f=1&rs_src=0&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&rsv_dl=brs_28338_10
+                    - generic [ref=e589]: 中医康复技术学就业前景
+      - generic [ref=e592]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e593]:
+          - generic [ref=e594]: "1"
+        - link "2" [ref=e595] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&pn=10&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&ie=utf-8&usm=1&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&topic_pn=
+          - generic [ref=e596]: "2"
+        - link "3" [ref=e597] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&pn=20&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&ie=utf-8&usm=1&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&topic_pn=
+          - generic [ref=e598]: "3"
+        - link "4" [ref=e599] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&pn=30&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&ie=utf-8&usm=1&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&topic_pn=
+          - generic [ref=e600]: "4"
+        - link "5" [ref=e601] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&pn=40&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&ie=utf-8&usm=1&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&topic_pn=
+          - generic [ref=e602]: "5"
+        - link "6" [ref=e603] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&pn=50&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&ie=utf-8&usm=1&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&topic_pn=
+          - generic [ref=e604]: "6"
+        - link "7" [ref=e605] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&pn=60&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&ie=utf-8&usm=1&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&topic_pn=
+          - generic [ref=e606]: "7"
+        - link "8" [ref=e607] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&pn=70&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&ie=utf-8&usm=1&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&topic_pn=
+          - generic [ref=e608]: "8"
+        - link "9" [ref=e609] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&pn=80&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&ie=utf-8&usm=1&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&topic_pn=
+          - generic [ref=e610]: "9"
+        - link "10" [ref=e611] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&pn=90&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&ie=utf-8&usm=1&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&topic_pn=
+          - generic [ref=e612]: "10"
+        - link "下一页" [ref=e613] [cursor=pointer]:
+          - /url: /s?wd=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&pn=10&oq=%E4%B8%AD%E5%8C%BB%E5%BA%B7%E5%A4%8D%E5%AD%A6%20%E5%B0%B1%E4%B8%9A%E7%8E%87%20%E8%96%AA%E9%85%AC%20%E8%B5%B7%E8%96%AA%202024&ie=utf-8&usm=1&rsv_pq=a54338ea00acc6d6&rsv_t=6889Seti4Uo2SDLv4n8PET1lo2OrojcyoO70S1zCdb23isb2qaMYJWIoGF8&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e614]
+      - generic [ref=e617]:
+        - link "帮助" [ref=e618] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e619] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e620] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e621] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

@@ -1,0 +1,41 @@
+{
+  "university_name": "广州美术学院",
+  "abbreviation": "GAFA",
+  "location": {
+    "city": "广州",
+    "campuses": [
+      "大学城校区",
+      "昌岗校区",
+      "佛山校区"
+    ]
+  },
+  "academic_standing": {
+    "discipline_evaluation": {
+      "design_science": "A+",
+      "fine_arts": "A-",
+      "art_theory": "B+"
+    },
+    "key_achievements": [
+      "北京冬奥会冰墩墩设计团队"
+    ]
+  },
+  "admission_stats": {
+    "art_exam_pass_rate": "3%-5%",
+    "average_culture_score_premium": "100+ points above provincial line"
+  },
+  "employment_data": {
+    "employment_rate": "90%+",
+    "top_industries": [
+      "Gaming",
+      "Industrial Design",
+      "Architecture"
+    ],
+    "starting_salary_median": 8000,
+    "freelance_rate": "30.12%"
+  },
+  "brand_identity": {
+    "signature_event": "GAFA Show (Graduation Exhibition)",
+    "cultural_tag": "Pragmatic Cantonese Art Education"
+  },
+  "comprehensive_score": 4.55
+}

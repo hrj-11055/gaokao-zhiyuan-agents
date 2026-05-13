@@ -1,0 +1,39 @@
+{
+  "university_name": "齐鲁理工学院",
+  "short_name": "QIT / 齐鲁理工",
+  "established_year": 2005,
+  "location": {
+    "main_campus": "济南市经十东路",
+    "branch_campus": "曲阜市",
+    "city_level": "新一线 / 省会"
+  },
+  "academic_standing": {
+    "ruanke_rank": 2,
+    "national_first_class_majors": [
+      "机械设计制造及其自动化",
+      "计算机科学与技术",
+      "护理学"
+    ],
+    "provincial_key_labs": 10
+  },
+  "admission_profile": {
+    "shandong_average_rank_liberal_arts": 115000,
+    "shandong_average_rank_science": 297000,
+    "competition_level": "High (Private Category)"
+  },
+  "career_outcomes": {
+    "employment_rate": "93.5%",
+    "further_study_rate": "13.7%",
+    "top_employers": [
+      "海尔",
+      "浪潮",
+      "山东能源"
+    ],
+    "avg_starting_salary": 4850
+  },
+  "campus_vibe": {
+    "management_style": "Strict / Semi-military",
+    "culture_theme": "Confucian Culture",
+    "student_satisfaction_hardware": 4.5
+  }
+}

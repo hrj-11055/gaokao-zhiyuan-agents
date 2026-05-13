@@ -1,0 +1,42 @@
+{
+  "university_name": "华南理工大学",
+  "short_name": "SCUT",
+  "location": {
+    "city": "广州",
+    "campuses": [
+      "五山校区",
+      "大学城校区",
+      "广州国际校区"
+    ]
+  },
+  "academic_stats": {
+    "a_plus_disciplines": [
+      "轻工技术与工程",
+      "食品科学与工程"
+    ],
+    "esi_top_1_over_10000": [
+      "工程学"
+    ],
+    "academician_count": 46
+  },
+  "admission_highlights": {
+    "policy_2025": "专业志愿100%满足",
+    "guangdong_physics_rank_2025": 12000
+  },
+  "employment_stats": {
+    "further_study_rate": "46.26%",
+    "major_employers": [
+      "华为",
+      "比亚迪",
+      "腾讯",
+      "广汽"
+    ],
+    "avg_starting_salary_estimate": "10000"
+  },
+  "evaluation_scores": {
+    "academic_capital": 4.7,
+    "employment_value": 4.8,
+    "location_advantage": 4.9,
+    "overall_weighted_score": 4.705
+  }
+}

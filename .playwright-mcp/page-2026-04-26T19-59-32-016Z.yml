@@ -1,0 +1,351 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjcltL9poyUAxWvtysGHSpKI3YQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 暨南大学 bilibili 粉丝 官方账号 暨南大学 bilibili 粉丝 官方账号
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%259A%25A8%25E5%258D%2597%25E5%25A4%25A7%25E5%25AD%25A6%2Bbilibili%2B%25E7%25B2%2589%25E4%25B8%259D%2B%25E5%25AE%2598%25E6%2596%25B9%25E8%25B4%25A6%25E5%258F%25B7&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&aep=1&ntc=1&sa=X&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ2J8OegQIDBAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "视频" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sa=X&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQtKgLegQIEBAB
+              - generic [ref=e91]: 视频
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sa=X&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQtKgLegQIERAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "新闻" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&sa=X&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ0pQJegQIExAB
+              - generic [ref=e103]: 新闻
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sa=X&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQs6gLegQIDxAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - main [ref=e130]:
+      - generic [ref=e134]:
+        - generic [ref=e137]:
+          - heading "网页搜索结果" [level=2] [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e142]:
+              - link "暨南大学新闻传播学院 Bilibili https://space.bilibili.com › ..." [ref=e144] [cursor=pointer]:
+                - /url: https://space.bilibili.com/1333012669/
+                - heading "暨南大学新闻传播学院" [level=3] [ref=e145]
+                - generic [ref=e147]:
+                  - img [ref=e151]
+                  - generic [ref=e153]:
+                    - generic [ref=e155]: Bilibili
+                    - generic [ref=e157]: https://space.bilibili.com › ...
+              - button "关于这条结果的详细信息" [ref=e158] [cursor=pointer]:
+                - img [ref=e161]
+            - generic [ref=e165]:
+              - text: 哔哩哔哩
+              - emphasis [ref=e166]: 暨南大学
+              - text: 新闻传播学院的个人空间，提供
+              - emphasis [ref=e167]: 暨南大学
+              - text: 新闻传播学院分享的视频、音频、文章、动态、收藏等内容，关注
+              - emphasis [ref=e168]: 暨南大学
+              - text: 新闻传播学院
+              - emphasis [ref=e169]: 账号
+              - text: ，第一时间了解UP注动态。
+        - generic [ref=e174]:
+          - heading "相关问题" [level=2] [ref=e176]
+          - generic [ref=e177]:
+            - button "暨南大学最好的专业？" [ref=e183] [cursor=pointer]:
+              - generic [ref=e185]: 暨南大学最好的专业？
+              - img [ref=e188]
+            - button "B站怎么看粉丝？" [ref=e197] [cursor=pointer]:
+              - generic [ref=e199]: B站怎么看粉丝？
+              - img [ref=e202]
+            - button "一个手机号可以注册几个B站账号？" [ref=e211] [cursor=pointer]:
+              - generic [ref=e213]: 一个手机号可以注册几个B站账号？
+              - img [ref=e216]
+            - button "哔哩哔哩100万播放量多少钱？" [ref=e225] [cursor=pointer]:
+              - generic [ref=e227]: 哔哩哔哩100万播放量多少钱？
+              - img [ref=e230]
+        - generic [ref=e235]:
+          - heading "网页搜索结果" [level=2] [ref=e236]
+          - generic [ref=e237]:
+            - generic [ref=e240]:
+              - link "暨南大学艺术学院 Bilibili https://space.bilibili.com › ..." [ref=e242] [cursor=pointer]:
+                - /url: https://space.bilibili.com/1764739710/
+                - heading "暨南大学艺术学院" [level=3] [ref=e243]
+                - generic [ref=e245]:
+                  - img [ref=e249]
+                  - generic [ref=e251]:
+                    - generic [ref=e253]: Bilibili
+                    - generic [ref=e255]: https://space.bilibili.com › ...
+              - button "关于这条结果的详细信息" [ref=e256] [cursor=pointer]:
+                - img [ref=e259]
+            - generic [ref=e263]:
+              - text: 哔哩哔哩
+              - emphasis [ref=e264]: 暨南大学
+              - text: 艺术学院的个人空间，提供
+              - emphasis [ref=e265]: 暨南大学
+              - text: 艺术学院分享的视频、音频、文章、动态、收藏等内容，关注
+              - emphasis [ref=e266]: 暨南大学
+              - text: 艺术学院
+              - emphasis [ref=e267]: 账号
+              - text: ，第一时间了解UP注动态。
+        - generic [ref=e271]:
+          - generic [ref=e274]:
+            - link "暨南大学国际学院 Bilibili https://space.bilibili.com › ..." [ref=e276] [cursor=pointer]:
+              - /url: https://space.bilibili.com/346054034/
+              - heading "暨南大学国际学院" [level=3] [ref=e277]
+              - generic [ref=e279]:
+                - img [ref=e283]
+                - generic [ref=e285]:
+                  - generic [ref=e287]: Bilibili
+                  - generic [ref=e289]: https://space.bilibili.com › ...
+            - button "关于这条结果的详细信息" [ref=e290] [cursor=pointer]:
+              - img [ref=e293]
+          - generic [ref=e297]:
+            - text: 哔哩哔哩
+            - emphasis [ref=e298]: 暨南大学
+            - text: 国际学院的个人空间，提供
+            - emphasis [ref=e299]: 暨南大学
+            - text: 国际学院分享的视频、音频、文章、动态、收藏等内容，关注
+            - emphasis [ref=e300]: 暨南大学
+            - text: 国际学院
+            - emphasis [ref=e301]: 账号
+            - text: ，第一时间了解UP注动态。。
+          - generic [ref=e303]:
+            - text: 缺少字词： 账号 ‎| 必须包含：
+            - link "账号" [ref=e304] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9+%22%E8%B4%A6%E5%8F%B7%22&sa=X&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ5t4CegQIJBAB
+        - generic [ref=e308]:
+          - generic [ref=e311]:
+            - link "最新榜单！暨大经济学院居前六 暨南大学经济学院 https://ec.jnu.edu.cn › page" [ref=e313] [cursor=pointer]:
+              - /url: https://ec.jnu.edu.cn/2022/0725/c24917a711925/page.htm
+              - heading "最新榜单！暨大经济学院居前六" [level=3] [ref=e314]
+              - generic [ref=e319]:
+                - generic [ref=e321]: 暨南大学经济学院
+                - generic [ref=e323]: https://ec.jnu.edu.cn › page
+            - button "关于这条结果的详细信息" [ref=e324] [cursor=pointer]:
+              - img [ref=e327]
+          - generic [ref=e330]:
+            - generic [ref=e331]: 2022年7月25日 —
+            - generic [ref=e332]:
+              - text: ...
+              - emphasis [ref=e333]: 粉丝
+              - text: ... 经济学院联合暨大各
+              - emphasis [ref=e334]: 官方账号
+              - text: . 在公众号、视频号、
+              - emphasis [ref=e335]: bilibili
+              - text: 等平台. 发布2022年原创招生宣传片.
+        - generic [ref=e339]:
+          - generic [ref=e342]:
+            - link "暨南大学来了一位特别的新生！ Bilibili https://www.bilibili.com › video" [ref=e344] [cursor=pointer]:
+              - /url: https://www.bilibili.com/video/BV1dFp1z8EXv/
+              - heading "暨南大学来了一位特别的新生！" [level=3] [ref=e345]
+              - generic [ref=e350]:
+                - generic [ref=e352]: Bilibili
+                - generic [ref=e354]: https://www.bilibili.com › video
+            - button "关于这条结果的详细信息" [ref=e355] [cursor=pointer]:
+              - img [ref=e358]
+          - generic [ref=e362]:
+            - emphasis [ref=e363]: bilibili
+            - text: 官网. 下载App. 打开App，流畅又高清.
+            - emphasis [ref=e364]: 暨南大学
+            - text: 来了一位特别的新生 ... 联合国现场秒变
+            - emphasis [ref=e365]: 粉丝
+            - text: 见面会. 9193 1. 00:11. App. 硬核“追星”！联合国现场秒变
+            - emphasis [ref=e366]: 粉丝
+            - text: 见面 ...
+          - generic [ref=e368]:
+            - text: 缺少字词： 账号 ‎| 必须包含：
+            - link "账号" [ref=e369] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9+%22%E8%B4%A6%E5%8F%B7%22&sa=X&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ5t4CegQITBAB
+        - generic [ref=e373]:
+          - generic [ref=e376]:
+            - link "新国辩全国大学生新生赛活动规则 Bilibili https://www.bilibili.com › blackboard › era" [ref=e378] [cursor=pointer]:
+              - /url: https://www.bilibili.com/blackboard/era/nloo6rpCSSi0OALn.html
+              - heading "新国辩全国大学生新生赛活动规则" [level=3] [ref=e379]
+              - generic [ref=e384]:
+                - generic [ref=e386]: Bilibili
+                - generic [ref=e388]: https://www.bilibili.com › blackboard › era
+            - button "关于这条结果的详细信息" [ref=e389] [cursor=pointer]:
+              - img [ref=e392]
+          - generic [ref=e396]:
+            - text: 1. 观赛要求：在活动期间，通过
+            - emphasis [ref=e397]: bilibili
+            - text: 站内活动页或本次合作高校辩论队的B站
+            - emphasis [ref=e398]: 官方账号
+            - text: 观看赛事直播或赛事录播视频（具体入口以活动页面信息为准）。 2. 时长要求：累计有效观赛 ...
+        - generic [ref=e402]:
+          - generic [ref=e405]:
+            - link "2022暨大跨专业电影创作上岸分享经验贴 知乎专栏 https://zhuanlan.zhihu.com › ..." [ref=e407] [cursor=pointer]:
+              - /url: https://zhuanlan.zhihu.com/p/493203090
+              - heading "2022暨大跨专业电影创作上岸分享经验贴" [level=3] [ref=e408]
+              - generic [ref=e413]:
+                - generic [ref=e415]: 知乎专栏
+                - generic [ref=e417]: https://zhuanlan.zhihu.com › ...
+            - button "关于这条结果的详细信息" [ref=e418] [cursor=pointer]:
+              - img [ref=e421]
+          - generic [ref=e424]:
+            - generic [ref=e425]: 2022年4月5日 —
+            - generic [ref=e426]:
+              - text: ...
+              - emphasis [ref=e427]: 粉丝
+              - text: 都过百万，既然有那么大的名气，那么质量不言而喻！ 而我之 ...
+              - emphasis [ref=e428]: 暨南大学
+              - text: 电影专业基础的知识正如其名称一样，真的比较基础、简单。它主要 ...
+        - generic [ref=e432]:
+          - generic [ref=e435]:
+            - link "搜索 Caixin.com https://search.caixin.com › newsearch › caixinsearch" [ref=e437] [cursor=pointer]:
+              - /url: https://search.caixin.com/newsearch/caixinsearch?keyword=263%E4%BC%81%E4%B8%9A%E9%82%AE%E7%AE%B1%E7%99%BB%E5%BD%95%E7%99%BB%E5%BD%95%E5%85%A5%E5%8F%A3%E5%AE%98%E7%BD%91
+              - heading "搜索" [level=3] [ref=e438]
+              - generic [ref=e440]:
+                - img [ref=e444]
+                - generic [ref=e446]:
+                  - generic [ref=e448]: Caixin.com
+                  - generic [ref=e450]: https://search.caixin.com › newsearch › caixinsearch
+            - button "关于这条结果的详细信息" [ref=e451] [cursor=pointer]:
+              - img [ref=e454]
+          - generic [ref=e458]:
+            - text: 财新闻｜跳水奥运冠军全红婵拟被保送
+            - emphasis [ref=e459]: 暨南大学
+            - text: · 考研成绩5个查询通道： 1.研招网 ... 2.学信网查询： 具体操作步骤：①关注学信网公众号；②绑定学信网
+            - emphasis [ref=e460]: 账号
+            - text: ；③进入网址查分。
+        - generic [ref=e464]:
+          - generic [ref=e467]:
+            - link "东盟观察丨Labubu引爆东南亚市场，中国潮玩如何应对出海 ... 21财经 https://www.21jingji.com › article › herald" [ref=e469] [cursor=pointer]:
+              - /url: https://www.21jingji.com/article/20250225/herald/9f3a4ce6ee6b2b542f018ed85eb9530a.html
+              - heading "东盟观察丨Labubu引爆东南亚市场，中国潮玩如何应对出海 ..." [level=3] [ref=e470]
+              - generic [ref=e475]:
+                - generic [ref=e477]: 21财经
+                - generic [ref=e479]: https://www.21jingji.com › article › herald
+            - button "关于这条结果的详细信息" [ref=e480] [cursor=pointer]:
+              - img [ref=e483]
+          - generic [ref=e486]:
+            - generic [ref=e487]: 2025年2月25日 —
+            - generic [ref=e488]:
+              - emphasis [ref=e489]: 暨南大学
+              - text: 国际关系学院/华侨华人研究院副研究员、印尼研究中心副主任潘玥在印尼和马来西亚研学期间就见证了Labubu的火爆。在她展示的图片中，无论是路边 ...
+        - generic [ref=e493]:
+          - generic [ref=e496]:
+            - link "讲好世界故事事繁功倍 - ERC 山东大学 http://ercdm.sdu.edu.cn › __local" [ref=e498] [cursor=pointer]:
+              - /url: http://ercdm.sdu.edu.cn/__local/A/C2/66/AC7C76DD97B7E27DC540ADED71A_51BD3F9F_8FE280.pdf
+              - heading "讲好世界故事事繁功倍 - ERC" [level=3] [ref=e499]
+              - generic [ref=e501]:
+                - img [ref=e505]
+                - generic [ref=e507]:
+                  - generic [ref=e509]: 山东大学
+                  - generic [ref=e511]: http://ercdm.sdu.edu.cn › __local
+            - generic [ref=e512]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e513] [cursor=pointer]:
+              - img [ref=e516]
+          - generic [ref=e518]:
+            - generic [ref=e519]:
+              - generic [ref=e520]: 2024年6月27日 —
+              - generic [ref=e521]:
+                - text: 闻姐”的抖音
+                - emphasis [ref=e522]: 账号粉丝
+                - text: 数已达2536. 万，累计获赞高达8 亿，在“破圈 ... 科闻歌、
+                - emphasis [ref=e523]: 暨南大学
+                - text: 、深圳大学、浙. 江理工大学、深圳职业技术大学等. 头部大 ...
+            - generic [ref=e524]: 96 页
+      - navigation [ref=e527]:
+        - heading "网页导航" [level=1] [ref=e528]
+        - text: "1"
+        - link "Page 2" [ref=e531] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sca_esv=164079556523993e&ei=o27uaZy5F6_vruEPqpSNsQc&start=10&sa=N&sstk=Af77f_cCyc1EqFDtd16nDNK_jnZDzJmzrqRsn8eEhl6rwoM44fJMa5gDuDSwW_tZyeQTvQawKc23LQOtFPN82OkUk1c3hhafJ_rv6A&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ8tMDegQIMhAE
+          - text: "2"
+        - link "Page 3" [ref=e533] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sca_esv=164079556523993e&ei=o27uaZy5F6_vruEPqpSNsQc&start=20&sa=N&sstk=Af77f_cCyc1EqFDtd16nDNK_jnZDzJmzrqRsn8eEhl6rwoM44fJMa5gDuDSwW_tZyeQTvQawKc23LQOtFPN82OkUk1c3hhafJ_rv6A&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ8tMDegQIMhAG
+          - text: "3"
+        - link "Page 4" [ref=e535] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sca_esv=164079556523993e&ei=o27uaZy5F6_vruEPqpSNsQc&start=30&sa=N&sstk=Af77f_cCyc1EqFDtd16nDNK_jnZDzJmzrqRsn8eEhl6rwoM44fJMa5gDuDSwW_tZyeQTvQawKc23LQOtFPN82OkUk1c3hhafJ_rv6A&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ8tMDegQIMhAI
+          - text: "4"
+        - link "Page 5" [ref=e537] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sca_esv=164079556523993e&ei=o27uaZy5F6_vruEPqpSNsQc&start=40&sa=N&sstk=Af77f_cCyc1EqFDtd16nDNK_jnZDzJmzrqRsn8eEhl6rwoM44fJMa5gDuDSwW_tZyeQTvQawKc23LQOtFPN82OkUk1c3hhafJ_rv6A&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ8tMDegQIMhAK
+          - text: "5"
+        - link "Page 6" [ref=e539] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sca_esv=164079556523993e&ei=o27uaZy5F6_vruEPqpSNsQc&start=50&sa=N&sstk=Af77f_cCyc1EqFDtd16nDNK_jnZDzJmzrqRsn8eEhl6rwoM44fJMa5gDuDSwW_tZyeQTvQawKc23LQOtFPN82OkUk1c3hhafJ_rv6A&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ8tMDegQIMhAM
+          - text: "6"
+        - link "Page 7" [ref=e541] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sca_esv=164079556523993e&ei=o27uaZy5F6_vruEPqpSNsQc&start=60&sa=N&sstk=Af77f_cCyc1EqFDtd16nDNK_jnZDzJmzrqRsn8eEhl6rwoM44fJMa5gDuDSwW_tZyeQTvQawKc23LQOtFPN82OkUk1c3hhafJ_rv6A&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ8tMDegQIMhAO
+          - text: "7"
+        - link "Page 8" [ref=e543] [cursor=pointer]:
+          - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sca_esv=164079556523993e&ei=o27uaZy5F6_vruEPqpSNsQc&start=70&sa=N&sstk=Af77f_cCyc1EqFDtd16nDNK_jnZDzJmzrqRsn8eEhl6rwoM44fJMa5gDuDSwW_tZyeQTvQawKc23LQOtFPN82OkUk1c3hhafJ_rv6A&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ8tMDegQIMhAQ
+          - text: "8"
+        - heading "下一页" [level=2] [ref=e545]:
+          - link "下一页" [ref=e546] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+bilibili+%E7%B2%89%E4%B8%9D+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7&sca_esv=164079556523993e&ei=o27uaZy5F6_vruEPqpSNsQc&start=10&sa=N&sstk=Af77f_cCyc1EqFDtd16nDNK_jnZDzJmzrqRsn8eEhl6rwoM44fJMa5gDuDSwW_tZyeQTvQawKc23LQOtFPN82OkUk1c3hhafJ_rv6A&ved=2ahUKEwjcltL9poyUAxWvtysGHSpKI3YQ8NMDegQIMhAS
+            - generic [ref=e548]: 下一页
+      - navigation
+    - contentinfo [ref=e549]:
+      - heading "页脚链接" [level=1] [ref=e550]
+      - generic [ref=e554]:
+        - generic [ref=e558]:
+          - button "Hyde Park, 波士顿麻萨诸塞州 - 根据您的活动记录" [ref=e560] [cursor=pointer]:
+            - generic [ref=e561]: Hyde Park, 波士顿麻萨诸塞州
+            - generic [ref=e563]:
+              - text: "-"
+              - generic [ref=e564]: 根据您的活动记录
+          - text: "-"
+          - button "更新位置信息" [ref=e566] [cursor=pointer]: 更新位置信息
+        - generic [ref=e569]:
+          - link "帮助" [ref=e570] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e571] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e572] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e573] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

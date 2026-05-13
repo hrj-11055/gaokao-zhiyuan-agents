@@ -1,0 +1,57 @@
+{
+  "university_details": {
+    "name": "中原科技学院",
+    "former_name": "河南师范大学新联学院",
+    "type": "Private Undergraduate",
+    "campuses": [
+      "Zhengzhou",
+      "Xuchang"
+    ],
+    "ranking": {
+      "shanghai_ranking_private": 38,
+      "alumni_association_private": 45
+    }
+  },
+  "academic_assets": {
+    "provincial_first_class_majors": [
+      "Mechanical Design Manufacturing and Automation",
+      "English",
+      "Chinese Language and Literature",
+      "Pre-school Education",
+      "International Economics and Trade",
+      "Tourism Management"
+    ],
+    "key_platforms": [
+      "Henan Private Education Research Center"
+    ]
+  },
+  "admission_stats_2025_henan": {
+    "history_group": {
+      "min_score": 495,
+      "min_rank": 67131,
+      "score_above_cutoff": 24
+    },
+    "physics_group": {
+      "min_score": 444,
+      "min_rank": 317514,
+      "score_above_cutoff": 17
+    }
+  },
+  "career_outcomes": {
+    "further_study_rate": "12.5%",
+    "employment_rate_estimated": "80%+",
+    "top_sectors": [
+      "Education",
+      "Manufacturing",
+      "IT"
+    ],
+    "median_starting_salary": 4200
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.5,
+    "employment_value": 3.2,
+    "location_potential": 3.5,
+    "brand_assets": 3.6,
+    "overall_weighted_score": 2.955
+  }
+}

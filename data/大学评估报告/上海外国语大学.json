@@ -1,0 +1,43 @@
+{
+  "university_name": "上海外国语大学",
+  "short_name": "SISU",
+  "location": {
+    "city": "上海",
+    "districts": [
+      "虹口区",
+      "松江区"
+    ],
+    "gdp_contribution": "国际经济/金融/贸易中心"
+  },
+  "academic_standing": {
+    "double_first_class": true,
+    "key_disciplines": [
+      "外国语言文学",
+      "政治学",
+      "工商管理"
+    ],
+    "a_plus_count": 1,
+    "giit_status": "AIIC最高评级"
+  },
+  "employment_stats": {
+    "starting_salary_median": 9500,
+    "top_employers": [
+      "外交部",
+      "华为",
+      "普华永道",
+      "字节跳动"
+    ],
+    "further_study_rate": "54%",
+    "overseas_study_top_destinations": [
+      "UK",
+      "USA",
+      "HK"
+    ]
+  },
+  "student_life": {
+    "gender_ratio": "1:3",
+    "campus_vibe": "International, Sophisticated",
+    "transfer_policy_flexibility": "Medium-High"
+  },
+  "comprehensive_score": 4.5
+}

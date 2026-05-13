@@ -1,0 +1,41 @@
+{
+  "university_name": "廊坊师范学院",
+  "english_name": "Langfang Normal University",
+  "location": {
+    "province": "河北省",
+    "city": "廊坊市",
+    "campuses": [
+      "廊坊校区(本部)",
+      "空港校区(固安)"
+    ]
+  },
+  "academic_level": {
+    "master_degree_status": "立项建设中",
+    "key_disciplines": [
+      "汉语言文学",
+      "教育学",
+      "化学",
+      "生物科学"
+    ],
+    "national_featured_major": "汉语言文学"
+  },
+  "admission_stats": {
+    "hebei_history_rank_2025": 21450,
+    "hebei_physics_rank_2025": 105400,
+    "competition_level": "Moderate"
+  },
+  "employment_outcomes": {
+    "further_study_rate": "15.0%",
+    "primary_employer_type": "Basic Education",
+    "median_starting_salary": 4200
+  },
+  "campus_life": {
+    "dormitory_condition": "Old (Main), Modern (Airport)",
+    "study_atmosphere": "Very Intense (Postgraduate Exam Oriented)"
+  },
+  "comprehensive_evaluation": {
+    "score": 2.72,
+    "ranking_shanghai": 471,
+    "recommendation_index": 3.5
+  }
+}

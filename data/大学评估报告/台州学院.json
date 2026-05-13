@@ -1,0 +1,47 @@
+{
+  "university_name": "台州学院",
+  "english_name": "Taizhou University",
+  "location": {
+    "province": "浙江省",
+    "city": "台州",
+    "campuses": [
+      "椒江校区",
+      "临海校区"
+    ]
+  },
+  "academic_stats": {
+    "master_degree_points": 17,
+    "esi_top_1_percent": [
+      "Chemistry",
+      "Materials Science",
+      "Environment/Ecology",
+      "Clinical Medicine"
+    ],
+    "key_labs_provincial": 3,
+    "faculty_with_phd_ratio": "约 50%"
+  },
+  "admission_competitiveness": {
+    "zhejiang_min_rank_2025": 138390,
+    "top_majors": [
+      "Clinical Medicine",
+      "Chinese Language & Literature",
+      "Electrical Engineering"
+    ],
+    "admission_difficulty_index": 3.5
+  },
+  "employment_outcomes": {
+    "overall_employment_rate": ">97%",
+    "further_study_rate": "20.6%",
+    "local_retention_rate": "55%",
+    "key_employers": [
+      "Geely",
+      "Huahai Pharmaceutical",
+      "Jack Technology"
+    ]
+  },
+  "strategic_positioning": {
+    "core_identity": "High-level Applied University",
+    "future_goal": "Taizhou University (Renaming)",
+    "industrial_synergy_score": 4.5
+  }
+}

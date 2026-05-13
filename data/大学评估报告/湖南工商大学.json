@@ -1,0 +1,47 @@
+{
+  "university_name": "湖南工商大学",
+  "short_name": "HUTB",
+  "location": {
+    "province": "湖南",
+    "city": "长沙",
+    "district": "岳麓区"
+  },
+  "academic_profile": {
+    "key_disciplines": [
+      "管理科学与工程",
+      "工商管理",
+      "应用经济学"
+    ],
+    "academician_count": 1,
+    "top_ranking_discipline": "Management Science and Engineering (B+)",
+    "research_platforms": [
+      "湘江实验室",
+      "国家基础科学中心"
+    ]
+  },
+  "admission_stats": {
+    "hunan_history_rank": 8500,
+    "hunan_physics_rank": 62000,
+    "selectivity": "High (Provincial)"
+  },
+  "career_outcomes": {
+    "employment_rate": "89.5%",
+    "further_study_rate": "18.5%",
+    "top_employers": [
+      "Big Four Banks",
+      "Huawei",
+      "Sany Heavy Industry"
+    ],
+    "median_starting_salary": 6200
+  },
+  "campus_culture": {
+    "management_style": "Strict/Administrative",
+    "key_events": "Greeting Gate Incident (2021)",
+    "student_vibe": "Pragmatic/Disciplined"
+  },
+  "overall_evaluation": {
+    "score": 3.585,
+    "recommendation_index": 4.2,
+    "risk_level": "Low-Medium"
+  }
+}

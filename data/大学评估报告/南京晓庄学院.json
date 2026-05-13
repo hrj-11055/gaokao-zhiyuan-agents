@@ -1,0 +1,50 @@
+{
+  "university_name": "南京晓庄学院",
+  "short_name": "晓庄",
+  "location": {
+    "province": "江苏",
+    "city": "南京",
+    "districts": [
+      "江宁区",
+      "建邺区"
+    ],
+    "city_gdp_2023": "1.75万亿元"
+  },
+  "academic_profile": {
+    "level": "省属公办本科",
+    "master_degree_authorization": true,
+    "phd_degree_authorization": false,
+    "national_first_class_majors": 9,
+    "key_disciplines": [
+      "教育学",
+      "心理学",
+      "中国语言文学"
+    ]
+  },
+  "admission_data_2024_jiangsu": {
+    "history_group_min_rank": 14850,
+    "physics_group_min_rank": 84862,
+    "competition_level": "High for Teacher Training"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "约95%",
+    "teacher_training_ratio": "55%-60%",
+    "avg_starting_salary": 5600,
+    "top_employer_type": "Public Schools (Nanjing)"
+  },
+  "brand_assets": {
+    "founder": "陶行知",
+    "core_spirit": "教学做合一",
+    "reputation": "南京中小学教师的摇篮",
+    "risk_factor": "2023 Management Scandal"
+  },
+  "scores": {
+    "academic": 2.4,
+    "employment": 3.1,
+    "location": 4.2,
+    "globalization": 2.8,
+    "freedom": 3.2,
+    "brand": 3.0,
+    "weighted_total": 3.02
+  }
+}

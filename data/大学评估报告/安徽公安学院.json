@@ -1,0 +1,47 @@
+{
+  "university_name": "安徽公安学院",
+  "short_name": "Anhui Police College",
+  "location": {
+    "province": "安徽省",
+    "city": "合肥市",
+    "campus": "巢湖校区"
+  },
+  "attributes": {
+    "level": "普通本科",
+    "type": "公安类",
+    "authority": "安徽省公安厅",
+    "founded_year": 1958,
+    "upgrade_to_undergraduate": 2024
+  },
+  "academic_stats": {
+    "a_plus_count": 0,
+    "a_count": 0,
+    "master_degree_points": 0,
+    "key_majors": [
+      "侦查学",
+      "治安学",
+      "刑事科学技术",
+      "网络安全与执法"
+    ]
+  },
+  "admission_data_2025_est": {
+    "history_group_male": 547,
+    "history_group_female": 601,
+    "physics_group_male": 547,
+    "physics_group_female": 593
+  },
+  "employment_stats": {
+    "police_entry_rate_target": "90%+",
+    "primary_employer": "安徽省各级公安机关",
+    "establishment_type": "行政编制（公务员）"
+  },
+  "evaluation_scores": {
+    "academic": 2.1,
+    "employment": 4.8,
+    "location": 3.9,
+    "globalization": 1.5,
+    "freedom": 1.8,
+    "brand": 3.8,
+    "comprehensive": 3.28
+  }
+}

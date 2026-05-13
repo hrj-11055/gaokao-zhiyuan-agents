@@ -1,0 +1,346 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 暨南大学 争议 负面新闻 整改 投诉 暨南大学 争议 负面新闻 整改 投诉
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%259A%25A8%25E5%258D%2597%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E4%25BA%2589%25E8%25AE%25AE%2B%25E8%25B4%259F%25E9%259D%25A2%25E6%2596%25B0%25E9%2597%25BB%2B%25E6%2595%25B4%25E6%2594%25B9%2B%25E6%258A%2595%25E8%25AF%2589&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&aep=1&ntc=1&sa=X&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQ2J8OegQIDxAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&sa=X&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQ0pQJegQIFRAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&sa=X&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQtKgLegQIEhAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "视频" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&sa=X&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQtKgLegQIExAB
+              - generic [ref=e99]: 视频
+          - listitem [ref=e100]:
+            - link "购物" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&ved=1t:220175&ictx=111
+              - generic [ref=e103]: 购物
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuofUIqyDkfrqQ-ML4SLuVr3qOdAvi3LT2Ijjt_Vmo-b-CtAKK-y6FxwsQrytTVnhflPyOcjYhQaDexq0uSXLlmHEjDUDtoy6Bxl4edzSi8ka4bAXFEPEH5NUfJJW-hjFFLjb9jmo_F4sIUInba3cGxfVgwOuw&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&sa=X&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQs6gLegQIFhAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考 正在搜索 再多想一会儿" [level=2] [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e155]: 正在思考
+            - generic [ref=e157]: 正在搜索
+            - generic [ref=e167]: 再多想一会儿
+        - progressbar [ref=e169]
+      - main [ref=e211]:
+        - generic [ref=e215]:
+          - generic [ref=e218]:
+            - heading "网页搜索结果" [level=2] [ref=e219]
+            - generic [ref=e220]:
+              - generic [ref=e223]:
+                - link "职工投诉 - 工会- 暨南大学 暨南大学 https://gh.jnu.edu.cn › list" [ref=e225] [cursor=pointer]:
+                  - /url: https://gh.jnu.edu.cn/15029/list.htm
+                  - heading "职工投诉 - 工会- 暨南大学" [level=3] [ref=e226]
+                  - generic [ref=e231]:
+                    - generic [ref=e233]: 暨南大学
+                    - generic [ref=e235]: https://gh.jnu.edu.cn › list
+                - button "关于这条结果的详细信息" [ref=e236] [cursor=pointer]:
+                  - img [ref=e239]
+              - generic [ref=e243]:
+                - text: 尊敬的
+                - emphasis [ref=e244]: 投诉
+                - text: 人： 感谢您对工会工作的关心和支持，为了安全、保密，实现我们与您的双向交流，请您用Email与我们联系，我们的Email地址是：ogh@jnu.edu.cn。
+              - generic [ref=e246]: 缺少字词： 争议 ‎负面 ‎新闻 ‎整改
+          - generic [ref=e251]:
+            - heading "相关问题" [level=2] [ref=e253]
+            - generic [ref=e254]:
+              - button "暨南大学最好的专业？" [ref=e260] [cursor=pointer]:
+                - generic [ref=e262]: 暨南大学最好的专业？
+                - img [ref=e265]
+              - button "暨南大學是不是985？" [ref=e274] [cursor=pointer]:
+                - generic [ref=e276]: 暨南大學是不是985？
+                - img [ref=e279]
+              - button "暨南大学世界排名？" [ref=e288] [cursor=pointer]:
+                - generic [ref=e290]: 暨南大学世界排名？
+                - img [ref=e293]
+              - button "暨南大学校长是谁？" [ref=e302] [cursor=pointer]:
+                - generic [ref=e304]: 暨南大学校长是谁？
+                - img [ref=e307]
+          - generic [ref=e312]:
+            - heading "网页搜索结果" [level=2] [ref=e313]
+            - generic [ref=e314]:
+              - generic [ref=e317]:
+                - link "非全日制研究生就业遭歧视？“隐性利益”大于争议 手机新浪网 https://m.cj.sina.cn › page" [ref=e319] [cursor=pointer]:
+                  - /url: https://m.cj.sina.cn/page/aHR0cDovL2ZpbmFuY2Uuc2luYS5jb20uY24vY2hpbmEvMjAxOS0xMC0wOC9kb2MtaWljZXp1ZXYwODI3OTcxLnNodG1sP2NyZWY9Y2o?from=redirect
+                  - heading "非全日制研究生就业遭歧视？“隐性利益”大于争议" [level=3] [ref=e320]
+                  - generic [ref=e322]:
+                    - img [ref=e326]
+                    - generic [ref=e328]:
+                      - generic [ref=e330]: 手机新浪网
+                      - generic [ref=e332]: https://m.cj.sina.cn › page
+                - button "关于这条结果的详细信息" [ref=e333] [cursor=pointer]:
+                  - img [ref=e336]
+              - generic [ref=e340]:
+                - text: 目前，
+                - emphasis [ref=e341]: 暨南大学
+                - text: 、广州大学、华南师范大学、山东大学等多所高校在招生简章中明确规定非全日制研究生只招定向类别。这些大学的做法与桐桐的想法一致，她认为，最好的解决办法 ...
+          - generic [ref=e345]:
+            - generic [ref=e348]:
+              - link "工作动态-深圳市互联网违法和不良信息举报办公室 深圳政府在线 https://szwljb.sz.gov.cn › gzdt › index_7" [ref=e350] [cursor=pointer]:
+                - /url: https://szwljb.sz.gov.cn/gzdt/index_7.html
+                - heading "工作动态-深圳市互联网违法和不良信息举报办公室" [level=3] [ref=e351]
+                - generic [ref=e353]:
+                  - img [ref=e357]
+                  - generic [ref=e359]:
+                    - generic [ref=e361]: 深圳政府在线
+                    - generic [ref=e363]: https://szwljb.sz.gov.cn › gzdt › index_7
+              - button "关于这条结果的详细信息" [ref=e364] [cursor=pointer]:
+                - img [ref=e367]
+            - generic [ref=e371]:
+              - text: 工作中发现，“时**安”“李**干”“乌**冰”等“粉头”账号频繁侮辱谩骂运动员、教练员，设置所谓“唯粉”标准鼓动“捧一踩一”，有些还打着“维权”等旗号恶意批量举报
+              - emphasis [ref=e372]: 投诉
+              - text: ，甚至组织扰乱 ...
+          - generic [ref=e376]:
+            - generic [ref=e379]:
+              - link "中国反垄断年度执法报告（2020） 上海市发展和改革委员会 https://fgw.sh.gov.cn › cmsres" [ref=e381] [cursor=pointer]:
+                - /url: https://fgw.sh.gov.cn/cmsres/28/284956891e3d43d182dff7cf6dd207b5/de28576190923c9ccdc6183d023f4ac1.pdf
+                - heading "中国反垄断年度执法报告（2020）" [level=3] [ref=e382]
+                - generic [ref=e387]:
+                  - generic [ref=e389]: 上海市发展和改革委员会
+                  - generic [ref=e391]: https://fgw.sh.gov.cn › cmsres
+              - generic [ref=e392]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e393] [cursor=pointer]:
+                - img [ref=e396]
+            - generic [ref=e398]:
+              - generic [ref=e400]:
+                - text: 委托
+                - emphasis [ref=e401]: 暨南大学
+                - text: 、深圳大学对地方性法规、省. 政府文件清理情况开展第三方评估，初步认定5 个地方性法规、11 个省政府文. 件存在公平竞争问题，目前正在按程序督促相关部门 ...
+              - generic [ref=e402]: 267 页
+          - generic [ref=e406]:
+            - generic [ref=e409]:
+              - link "论坛 - 河南省 hnsbb.gov.cn http://www.hnsbb.gov.cn › hnsbb › upload" [ref=e411] [cursor=pointer]:
+                - /url: http://www.hnsbb.gov.cn/sitesources/hnsbb/upload/202304/20230428154330686.pdf
+                - heading "论坛 - 河南省" [level=3] [ref=e412]
+                - generic [ref=e417]:
+                  - generic [ref=e419]: hnsbb.gov.cn
+                  - generic [ref=e421]: http://www.hnsbb.gov.cn › hnsbb › upload
+              - generic [ref=e422]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e423] [cursor=pointer]:
+                - img [ref=e426]
+            - generic [ref=e429]:
+              - generic [ref=e430]: 2023年2月25日 —
+              - generic [ref=e431]:
+                - text: 作者简介：卢文刚（1971— ），山东东明人，
+                - emphasis [ref=e432]: 暨南大学
+                - text: 副教授、研究生导师、博士研究生，
+                - emphasis [ref=e433]: 暨南大学
+                - text: 粤港澳大湾. 区应急管理教育促进会会长，广东省智库—
+                - emphasis [ref=e434]: 暨南大学
+                - text: ...
+          - generic [ref=e438]:
+            - generic [ref=e441]:
+              - link "目錄 HKEXnews https://www.hkexnews.hk › listconews › sehk" [ref=e443] [cursor=pointer]:
+                - /url: https://www.hkexnews.hk/listedco/listconews/sehk/2026/0413/2026041300378.pdf
+                - heading "目錄" [level=3] [ref=e444]
+                - generic [ref=e449]:
+                  - generic [ref=e451]: HKEXnews
+                  - generic [ref=e453]: https://www.hkexnews.hk › listconews › sehk
+              - generic [ref=e454]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e455] [cursor=pointer]:
+                - img [ref=e458]
+            - generic [ref=e461]:
+              - generic [ref=e462]: 2026年3月19日 —
+              - generic [ref=e463]:
+                - text: ... (
+                - emphasis [ref=e464]: 暨南大學
+                - text: ) in June. 2001 and a bachelor's degree in international ...
+                - emphasis [ref=e465]: 整改
+                - text: . 要求，改進後仍不能滿足要. 求的則被列為淘汰類供應商，. 終止合作 ...
+          - generic [ref=e469]:
+            - generic [ref=e472]:
+              - link "欧盟或将对Facebook启动反垄断调查，指控其“自我优待 ... 21财经 https://m.21jingji.com › article › herald" [ref=e474] [cursor=pointer]:
+                - /url: https://m.21jingji.com/article/20210601/herald/c3b740f0f367fadcd4c3008e044afbb6_zaker.html
+                - heading "欧盟或将对Facebook启动反垄断调查，指控其“自我优待 ..." [level=3] [ref=e475]
+                - generic [ref=e480]:
+                  - generic [ref=e482]: 21财经
+                  - generic [ref=e484]: https://m.21jingji.com › article › herald
+              - button "关于这条结果的详细信息" [ref=e485] [cursor=pointer]:
+                - img [ref=e488]
+            - generic [ref=e491]:
+              - generic [ref=e492]: 2021年6月1日 —
+              - generic [ref=e493]:
+                - emphasis [ref=e494]: 暨南大学
+                - text: 法学院副教授仲春在接受21世纪经济报道记者采访时表示，如果欧盟的调查正式实施，正是回应了当下具有全球性热度的平台自我优待问题，有利于 ...
+          - generic [ref=e498]:
+            - generic [ref=e501]:
+              - link "专业共进生生不息 厦门建发股份有限公司 https://www.chinacnd.com › upfiles › policy" [ref=e503] [cursor=pointer]:
+                - /url: https://www.chinacnd.com/upfiles/policy/202512/1766135597283.pdf
+                - heading "专业共进生生不息" [level=3] [ref=e504]
+                - generic [ref=e506]:
+                  - img [ref=e510]
+                  - generic [ref=e512]:
+                    - generic [ref=e514]: 厦门建发股份有限公司
+                    - generic [ref=e516]: https://www.chinacnd.com › upfiles › policy
+              - generic [ref=e517]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e518] [cursor=pointer]:
+                - img [ref=e521]
+            - generic [ref=e525]:
+              - text: ...
+              - emphasis [ref=e526]: 暨南大学
+              - text: 、南开大学、中央财经大学、对外经济贸易大 ...
+              - emphasis [ref=e527]: 整改
+              - text: 建议并督促
+              - emphasis [ref=e528]: 整改
+              - text: 落实，. 以不断提升风险管控水平 ... 遵守国际贸易规则、财产权益保护、
+              - emphasis [ref=e529]: 投诉
+              - text: 机制与
+              - emphasis [ref=e530]: 投诉
+              - text: 人 ...
+          - generic [ref=e534]:
+            - generic [ref=e537]:
+              - link "全国政协举办邀请海外侨胞列席全国政协全体会议十周年纪念活动 暨南大学 https://lib.jnu.edu.cn › link" [ref=e539] [cursor=pointer]:
+                - /url: https://lib.jnu.edu.cn/link/1902/2
+                - heading "全国政协举办邀请海外侨胞列席全国政协全体会议十周年纪念活动" [level=3] [ref=e540]
+                - generic [ref=e545]:
+                  - generic [ref=e547]: 暨南大学
+                  - generic [ref=e549]: https://lib.jnu.edu.cn › link
+              - generic [ref=e550]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e551] [cursor=pointer]:
+                - img [ref=e554]
+            - generic [ref=e557]:
+              - generic [ref=e558]: 2025年9月21日 —
+              - generic [ref=e559]:
+                - text: 皇后区法拉盛28 日就. 发生一起严重家暴案，父母疑似管教过当遭
+                - emphasis [ref=e560]: 投诉
+                - text: ，被警方逮捕。 ... (中新网7 月1 日电据
+                - emphasis [ref=e561]: 暨南大学
+                - text: 网站消息). 马儒沛：全国84 个华侨农场发展 ...
+          - generic [ref=e565]:
+            - generic [ref=e568]:
+              - link "目录 厦门人大 https://www.xmrd.gov.cn › xwzx › qwfb" [ref=e570] [cursor=pointer]:
+                - /url: https://www.xmrd.gov.cn/xwzx/qwfb/201711/P020241017338480786003.pdf
+                - heading "目录" [level=3] [ref=e571]
+                - generic [ref=e573]:
+                  - img [ref=e577]
+                  - generic [ref=e579]:
+                    - generic [ref=e581]: 厦门人大
+                    - generic [ref=e583]: https://www.xmrd.gov.cn › xwzx › qwfb
+              - generic [ref=e584]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e585] [cursor=pointer]:
+                - img [ref=e588]
+            - generic [ref=e592]:
+              - text: 如在原已建设有深圳大学、
+              - emphasis [ref=e593]: 暨南大学
+              - text: 深圳旅游学院、南开大学深 ...
+              - emphasis [ref=e594]: 整改
+              - text: 要求。各部门要充分用好审计成果 ... 会、劳动
+              - emphasis [ref=e595]: 争议
+              - text: 仲裁院共建的劳动
+              - emphasis [ref=e596]: 争议
+              - text: 调裁审一体化机制 ...
+        - navigation [ref=e599]:
+          - heading "网页导航" [level=1] [ref=e600]
+          - text: "1"
+          - link "Page 2" [ref=e603] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&sca_esv=164079556523993e&ei=GG7uaZnKPOm7ruEPtrq74QM&start=10&sa=N&sstk=Af77f_eV0fvBA6ZURQmmRyJkRzYN3OHXkAqpDPI6BZacfY16LW-T0yXWkj9DW4mVWbH6NDsM27SGmW1QzO8UazXBeVJ4O8aEC97B9Q&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQ8tMDegQIKxAE
+            - text: "2"
+          - link "Page 3" [ref=e605] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&sca_esv=164079556523993e&ei=GG7uaZnKPOm7ruEPtrq74QM&start=20&sa=N&sstk=Af77f_eV0fvBA6ZURQmmRyJkRzYN3OHXkAqpDPI6BZacfY16LW-T0yXWkj9DW4mVWbH6NDsM27SGmW1QzO8UazXBeVJ4O8aEC97B9Q&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQ8tMDegQIKxAG
+            - text: "3"
+          - link "Page 4" [ref=e607] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&sca_esv=164079556523993e&ei=GG7uaZnKPOm7ruEPtrq74QM&start=30&sa=N&sstk=Af77f_eV0fvBA6ZURQmmRyJkRzYN3OHXkAqpDPI6BZacfY16LW-T0yXWkj9DW4mVWbH6NDsM27SGmW1QzO8UazXBeVJ4O8aEC97B9Q&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQ8tMDegQIKxAI
+            - text: "4"
+          - link "Page 5" [ref=e609] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&sca_esv=164079556523993e&ei=GG7uaZnKPOm7ruEPtrq74QM&start=40&sa=N&sstk=Af77f_eV0fvBA6ZURQmmRyJkRzYN3OHXkAqpDPI6BZacfY16LW-T0yXWkj9DW4mVWbH6NDsM27SGmW1QzO8UazXBeVJ4O8aEC97B9Q&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQ8tMDegQIKxAK
+            - text: "5"
+          - link "Page 6" [ref=e611] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&sca_esv=164079556523993e&ei=GG7uaZnKPOm7ruEPtrq74QM&start=50&sa=N&sstk=Af77f_eV0fvBA6ZURQmmRyJkRzYN3OHXkAqpDPI6BZacfY16LW-T0yXWkj9DW4mVWbH6NDsM27SGmW1QzO8UazXBeVJ4O8aEC97B9Q&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQ8tMDegQIKxAM
+            - text: "6"
+          - heading "下一页" [level=2] [ref=e613]:
+            - link "下一页" [ref=e614] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E6%8A%95%E8%AF%89&sca_esv=164079556523993e&ei=GG7uaZnKPOm7ruEPtrq74QM&start=10&sa=N&sstk=Af77f_eV0fvBA6ZURQmmRyJkRzYN3OHXkAqpDPI6BZacfY16LW-T0yXWkj9DW4mVWbH6NDsM27SGmW1QzO8UazXBeVJ4O8aEC97B9Q&ved=2ahUKEwiZttO7poyUAxXpnSsGHTbdLjwQ8NMDegQIKxAO
+              - generic [ref=e616]: 下一页
+        - navigation
+    - contentinfo [ref=e617]:
+      - heading "页脚链接" [level=1] [ref=e618]
+      - generic [ref=e622]:
+        - generic [ref=e626]:
+          - button "Hyde Park, 波士顿麻萨诸塞州 - 根据您的活动记录" [ref=e628] [cursor=pointer]:
+            - generic [ref=e629]: Hyde Park, 波士顿麻萨诸塞州
+            - generic [ref=e631]:
+              - text: "-"
+              - generic [ref=e632]: 根据您的活动记录
+          - text: "-"
+          - button "更新位置信息" [ref=e634] [cursor=pointer]: 更新位置信息
+        - generic [ref=e637]:
+          - link "帮助" [ref=e638] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e639] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e640] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e641] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

@@ -1,0 +1,45 @@
+{
+  "university_name": "绵阳城市学院",
+  "short_name": "绵城院",
+  "nature": "民办普通本科",
+  "location": {
+    "province": "四川",
+    "city": "绵阳",
+    "campuses": [
+      "安州校区",
+      "游仙校区"
+    ]
+  },
+  "academic": {
+    "key_disciplines": [
+      "测绘工程",
+      "土木工程",
+      "财务管理"
+    ],
+    "a_plus_count": 0,
+    "academician_count": 0,
+    "double_teacher_ratio": "42%"
+  },
+  "admission": {
+    "sc_physic_line_2024": 459,
+    "sc_history_line_2024": 468,
+    "difficulty_level": "Low"
+  },
+  "employment": {
+    "further_study_rate": "5.2%",
+    "starting_salary_median": 4200,
+    "top_employers": [
+      "中建集团",
+      "长虹电子",
+      "九洲电器"
+    ]
+  },
+  "facilities": {
+    "dormitory_rating": "Excellent (Anzhou Campus)",
+    "canteen_rating": "Good"
+  },
+  "evaluation": {
+    "comprehensive_score": 2.38,
+    "tag": "应用型民办本科标杆"
+  }
+}

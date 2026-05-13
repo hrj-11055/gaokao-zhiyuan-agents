@@ -1,0 +1,40 @@
+{
+  "university_name": "淮阴师范学院",
+  "short_name": "淮师",
+  "location": {
+    "province": "江苏省",
+    "city": "淮安市",
+    "campus": [
+      "长江路校区",
+      "交通路校区"
+    ]
+  },
+  "academic_level": {
+    "master_points": 17,
+    "esi_top_1_percent": [
+      "Mathematics",
+      "Chemistry",
+      "Engineering Science"
+    ],
+    "key_disciplines_provincial": 7
+  },
+  "student_profile": {
+    "gender_ratio": "约 3:7 (男:女)",
+    "main_source": "江苏省苏北地区",
+    "study_style": "Pragmatic and Hard-working"
+  },
+  "employment_stats": {
+    "further_study_rate": "11.53%",
+    "teacher_recruitment_rate": "High",
+    "median_salary_5y": 8500
+  },
+  "evaluation_scores": {
+    "academic": 2.8,
+    "employment": 3.2,
+    "location": 2.9,
+    "globalization": 2.2,
+    "freedom": 2.5,
+    "brand": 3.3,
+    "overall": 2.92
+  }
+}

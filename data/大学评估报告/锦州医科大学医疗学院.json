@@ -1,0 +1,46 @@
+{
+  "university_name": "锦州医科大学医疗学院",
+  "short_name": "锦医大医疗",
+  "location": {
+    "province": "辽宁省",
+    "city": "锦州市",
+    "city_gdp_2023": "1322亿元",
+    "city_tier": "三线"
+  },
+  "academic": {
+    "nature": "民办独立学院",
+    "a_plus_count": 0,
+    "a_count": 0,
+    "a_minus_count": 0,
+    "key_disciplines": [
+      "临床医学",
+      "口腔医学",
+      "护理学"
+    ],
+    "academician_count": 0
+  },
+  "admission": {
+    "liaoning_physics_2024_min_score": 395,
+    "liaoning_physics_2024_max_specialty": "口腔医学(507)",
+    "competitiveness_index": "中等偏上(医学类溢价)"
+  },
+  "employment": {
+    "domestic_further_study_rate": "12.5%",
+    "overseas_further_study_rate": "<1%",
+    "starting_salary_median": 4200,
+    "primary_employer_type": "民营医院/基层医疗机构"
+  },
+  "evaluation": {
+    "comprehensive_score": 1.99,
+    "strengths": [
+      "医学专业准入性强",
+      "依托母体资源",
+      "辽西医疗中心区位"
+    ],
+    "weaknesses": [
+      "民办学历受限",
+      "科研平台缺失",
+      "转设前景不明"
+    ]
+  }
+}

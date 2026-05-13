@@ -1,0 +1,131 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - link "GuGuData logo" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "GuGuData logo" [ref=e8]
+        - list [ref=e11]:
+          - listitem [ref=e12]:
+            - link "首页" [ref=e13] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e14]:
+            - link "数据服务" [ref=e15] [cursor=pointer]:
+              - /url: /api/all/9/0/9/0/不限
+          - listitem [ref=e16]:
+            - link "MCP服务" [ref=e17] [cursor=pointer]:
+              - /url: /mcp
+          - listitem [ref=e18]:
+            - link "开发者中心" [ref=e19] [cursor=pointer]:
+              - /url: /portal/
+          - listitem [ref=e20]:
+            - link "接口状态" [ref=e21] [cursor=pointer]:
+              - /url: /status
+          - listitem [ref=e22]:
+            - link "联系我们" [ref=e23] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e24]:
+            - link "接口文档 " [ref=e25] [cursor=pointer]:
+              - /url: https://doc.gugudata.com
+              - text: 接口文档
+              - generic [ref=e26]: 
+          - listitem [ref=e27]:
+            - link "工程服务 " [ref=e28] [cursor=pointer]:
+              - /url: https://engineering.gugudata.com
+              - text: 工程服务
+              - generic [ref=e29]: 
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - generic [ref=e33]: 
+          - listitem [ref=e34]:
+            - link "登录" [ref=e35] [cursor=pointer]:
+              - /url: /signin
+          - listitem [ref=e36]: /
+          - listitem [ref=e37]:
+            - link "注册" [ref=e38] [cursor=pointer]:
+              - /url: /signup
+  - generic [ref=e39]:
+    - generic [ref=e41]:
+      - generic [ref=e42]: 
+      - text: API 接口数据预览 /
+      - link "教育高考" [ref=e43] [cursor=pointer]:
+        - /url: /api/metadata/9/0/9/0
+      - text: /
+      - link "历年高考高校录取分数线" [ref=e44] [cursor=pointer]:
+        - /url: /api/details/ceecollegeline
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - text: 预览接口 API 请求地址
+        - link "https://api.gugudata.com/metadata/ceecollegeline/demo" [ref=e47] [cursor=pointer]:
+          - /url: https://api.gugudata.com/metadata/ceecollegeline/demo
+      - tablist [ref=e48]:
+        - listitem [ref=e49]:
+          - link " 以代码形式查看" [ref=e50]:
+            - /url: javascript:void(0)
+            - generic [ref=e51]: 
+            - text: 以代码形式查看
+        - listitem [ref=e52] [cursor=pointer]:
+          - link " 以 JSON Tree 形式查看" [ref=e53]:
+            - /url: javascript:void(0)
+            - generic [ref=e54]: 
+            - text: 以 JSON Tree 形式查看
+    - generic [ref=e55]:
+      - generic [ref=e56]: 数据预览接口响应
+      - generic [ref=e57]: "请求响应时间: 162.1125ms"
+      - code [ref=e59]: "{ \"DataStatus\": { \"RequestParameter\": \"searchType=COLLEGENAME&keyword=北京大学&pageIndex=1&pageSize=10&year=2025&keywordStrict=false&enrollProvince=&sort=highestscore|desc\", \"StatusCode\": 100, \"StatusDescription\": \"请求成功。\", \"ResponseDateTime\": \"2026-05-08 17:19:20.261\", \"DataTotalCount\": 148 }, \"Data\": [ { \"DataId\": \"5fb7a29ed52bb7212852fec1e6cfe8f4\", \"Province\": \"内蒙古\", \"CollegeName\": \"北京大学\", \"SchoolUUID\": \"19c934df19ce1a96e0f7dc295b8dbce0\", \"Year\": 2025, \"HighestScore\": \"712\", \"AverageScore\": \"-\", \"LowestScore\": \"694\", \"LowestRank\": \"47\", \"ProvincialControlLine\": \"375\", \"EnrollmentType\": \"普通类\", \"SelectionLevel\": \"不限\", \"AdmissionBatch\": \"本科批\", \"TypeName\": \"物理类\", \"SchoolType\": \"公办\", \"SchoolInCity\": \"北京市\", \"CourseSelection\": \"首选物理，再选化学\", \"CourseSelectionName\": \"（002）\", \"CoverImage\": \"https://static.gugudata.com/f6099924acec11eb926b001a7dda7111.jpg\", \"Is985\": true, \"Is211\": true, \"IsDualClass\": true, \"SubjectGroup\": \"（002）\", \"DataUpdatedFrom\": \"\" }, { \"DataId\": \"8c7d382dc0ac35f519cb7c989290964e\", \"Province\": \"吉林\", \"CollegeName\": \"北京大学\", \"SchoolUUID\": \"19c934df19ce1a96e0f7dc295b8dbce0\", \"Year\": 2025, \"HighestScore\": \"708\", \"AverageScore\": \"-\", \"LowestScore\": \"694\", \"LowestRank\": \"49\", \"ProvincialControlLine\": \"340\", \"EnrollmentType\": \"普通类\", \"SelectionLevel\": \"不限\", \"AdmissionBatch\": \"本科批\", \"TypeName\": \"物理类\", \"SchoolType\": \"公办\", \"SchoolInCity\": \"北京市\", \"CourseSelection\": \"首选物理，再选化学\", \"CourseSelectionName\": \"（007）\", \"CoverImage\": \"https://static.gugudata.com/f6099924acec11eb926b001a7dda7111.jpg\", \"Is985\": true, \"Is211\": true, \"IsDualClass\": true, \"SubjectGroup\": \"（007）\", \"DataUpdatedFrom\": \"\" }, { \"DataId\": \"627a8654b2917174734c3f0192d9dc0a\", \"Province\": \"吉林\", \"CollegeName\": \"北京大学\", \"SchoolUUID\": \"19c934df19ce1a96e0f7dc295b8dbce0\", \"Year\": 2025, \"HighestScore\": \"697\", \"AverageScore\": \"-\", \"LowestScore\": \"666\", \"LowestRank\": \"29\", \"ProvincialControlLine\": \"384\", \"EnrollmentType\": \"普通类\", \"SelectionLevel\": \"不限\", \"AdmissionBatch\": \"本科批\", \"TypeName\": \"历史类\", \"SchoolType\": \"公办\", \"SchoolInCity\": \"北京市\", \"CourseSelection\": \"首选历史，再选不限\", \"CourseSelectionName\": \"（006）\", \"CoverImage\": \"https://static.gugudata.com/f6099924acec11eb926b001a7dda7111.jpg\", \"Is985\": true, \"Is211\": true, \"IsDualClass\": true, \"SubjectGroup\": \"（006）\", \"DataUpdatedFrom\": \"\" }, { \"DataId\": \"83ae7ee62cbffe85038e947d1fdfabed\", \"Province\": \"新疆\", \"CollegeName\": \"北京大学\", \"SchoolUUID\": \"19c934df19ce1a96e0f7dc295b8dbce0\", \"Year\": 2025, \"HighestScore\": \"691\", \"AverageScore\": \"672\", \"LowestScore\": \"666\", \"LowestRank\": \"30\", \"ProvincialControlLine\": \"421\", \"EnrollmentType\": \"普通类\", \"SelectionLevel\": \"不限\", \"AdmissionBatch\": \"本科一批\", \"TypeName\": \"理科\", \"SchoolType\": \"公办\", \"SchoolInCity\": \"北京市\", \"CourseSelection\": \"\", \"CourseSelectionName\": \"\", \"CoverImage\": \"https://static.gugudata.com/f6099924acec11eb926b001a7dda7111.jpg\", \"Is985\": true, \"Is211\": true, \"IsDualClass\": true, \"SubjectGroup\": \"\", \"DataUpdatedFrom\": \"\" }, { \"DataId\": \"168de0824db857cadbb81a6d2877f9db\", \"Province\": \"内蒙古\", \"CollegeName\": \"北京大学\", \"SchoolUUID\": \"19c934df19ce1a96e0f7dc295b8dbce0\", \"Year\": 2025, \"HighestScore\": \"690\", \"AverageScore\": \"-\", \"LowestScore\": \"675\", \"LowestRank\": \"-\", \"ProvincialControlLine\": \"418\", \"EnrollmentType\": \"普通类\", \"SelectionLevel\": \"不限\", \"AdmissionBatch\": \"本科批\", \"TypeName\": \"历史类\", \"SchoolType\": \"公办\", \"SchoolInCity\": \"北京市\", \"CourseSelection\": \"首选历史，再选不限\", \"CourseSelectionName\": \"（001）\", \"CoverImage\": \"https://static.gugudata.com/f6099924acec11eb926b001a7dda7111.jpg\", \"Is985\": true, \"Is211\": true, \"IsDualClass\": true, \"SubjectGroup\": \"（001）\", \"DataUpdatedFrom\": \"\" }, { \"DataId\": \"9169b63ce023827615a1ec7395bf5ab6\", \"Province\": \"新疆\", \"CollegeName\": \"北京大学\", \"SchoolUUID\": \"19c934df19ce1a96e0f7dc295b8dbce0\", \"Year\": 2025, \"HighestScore\": \"689\", \"AverageScore\": \"679\", \"LowestScore\": \"670\", \"LowestRank\": \"9\", \"ProvincialControlLine\": \"486\", \"EnrollmentType\": \"新疆高中班\", \"SelectionLevel\": \"不限\", \"AdmissionBatch\": \"本科一批\", \"TypeName\": \"理科\", \"SchoolType\": \"公办\", \"SchoolInCity\": \"北京市\", \"CourseSelection\": \"\", \"CourseSelectionName\": \"\", \"CoverImage\": \"https://static.gugudata.com/f6099924acec11eb926b001a7dda7111.jpg\", \"Is985\": true, \"Is211\": true, \"IsDualClass\": true, \"SubjectGroup\": \"\", \"DataUpdatedFrom\": \"\" }, { \"DataId\": \"0df05821ab63165f8e5ce79ae0827f2f\", \"Province\": \"内蒙古\", \"CollegeName\": \"北京大学\", \"SchoolUUID\": \"19c934df19ce1a96e0f7dc295b8dbce0\", \"Year\": 2025, \"HighestScore\": \"687\", \"AverageScore\": \"-\", \"LowestScore\": \"687\", \"LowestRank\": \"90\", \"ProvincialControlLine\": \"-\", \"EnrollmentType\": \"高校专项计划\", \"SelectionLevel\": \"不限\", \"AdmissionBatch\": \"本科提前批B段\", \"TypeName\": \"物理类\", \"SchoolType\": \"公办\", \"SchoolInCity\": \"北京市\", \"CourseSelection\": \"首选物理，再选化学\", \"CourseSelectionName\": \"（006）\", \"CoverImage\": \"https://static.gugudata.com/f6099924acec11eb926b001a7dda7111.jpg\", \"Is985\": true, \"Is211\": true, \"IsDualClass\": true, \"SubjectGroup\": \"（006）\", \"DataUpdatedFrom\": \"\" }, { \"DataId\": \"0f39c2523a92d627f19c1209cb7a12bd\", \"Province\": \"内蒙古\", \"CollegeName\": \"北京大学\", \"SchoolUUID\": \"19c934df19ce1a96e0f7dc295b8dbce0\", \"Year\": 2025, \"HighestScore\": \"682\", \"AverageScore\": \"-\", \"LowestScore\": \"681\", \"LowestRank\": \"167\", \"ProvincialControlLine\": \"-\", \"EnrollmentType\": \"国家专项计划\", \"SelectionLevel\": \"不限\", \"AdmissionBatch\": \"本科提前批C段\", \"TypeName\": \"物理类\", \"SchoolType\": \"公办\", \"SchoolInCity\": \"北京市\", \"CourseSelection\": \"首选物理，再选化学\", \"CourseSelectionName\": \"（008）\", \"CoverImage\": \"https://static.gugudata.com/f6099924acec11eb926b001a7dda7111.jpg\", \"Is985\": true, \"Is211\": true, \"IsDualClass\": true, \"SubjectGroup\": \"（008）\", \"DataUpdatedFrom\": \"\" }, { \"DataId\": \"be46c253e71eae1d1412e0b8602fd109\", \"Province\": \"内蒙古\", \"CollegeName\": \"北京大学\", \"SchoolUUID\": \"19c934df19ce1a96e0f7dc295b8dbce0\", \"Year\": 2025, \"HighestScore\": \"681\", \"AverageScore\": \"-\", \"LowestScore\": \"680\", \"LowestRank\": \"190\", \"ProvincialControlLine\": \"-\", \"EnrollmentType\": \"国家专项计划\", \"SelectionLevel\": \"不限\", \"AdmissionBatch\": \"本科提前批C段\", \"TypeName\": \"物理类\", \"SchoolType\": \"公办\", \"SchoolInCity\": \"北京市\", \"CourseSelection\": \"首选物理，再选不限\", \"CourseSelectionName\": \"（009）\", \"CoverImage\": \"https://static.gugudata.com/f6099924acec11eb926b001a7dda7111.jpg\", \"Is985\": true, \"Is211\": true, \"IsDualClass\": true, \"SubjectGroup\": \"（009）\", \"DataUpdatedFrom\": \"\" }, { \"DataId\": \"8c2adc6406796261d1cbde01aefa5a81\", \"Province\": \"吉林\", \"CollegeName\": \"北京大学\", \"SchoolUUID\": \"19c934df19ce1a96e0f7dc295b8dbce0\", \"Year\": 2025, \"HighestScore\": \"672\", \"AverageScore\": \"-\", \"LowestScore\": \"672\", \"LowestRank\": \"312\", \"ProvincialControlLine\": \"-\", \"EnrollmentType\": \"高校专项计划\", \"SelectionLevel\": \"不限\", \"AdmissionBatch\": \"提前批B段\", \"TypeName\": \"物理类\", \"SchoolType\": \"公办\", \"SchoolInCity\": \"北京市\", \"CourseSelection\": \"首选物理，再选化学\", \"CourseSelectionName\": \"（005）\", \"CoverImage\": \"https://static.gugudata.com/f6099924acec11eb926b001a7dda7111.jpg\", \"Is985\": true, \"Is211\": true, \"IsDualClass\": true, \"SubjectGroup\": \"（005）\", \"DataUpdatedFrom\": \"\" } ] }"
+  - generic [ref=e60]:
+    - generic [ref=e63]:
+      - generic [ref=e65]:
+        - paragraph [ref=e66]: 关于我们
+        - list [ref=e67]:
+          - listitem [ref=e68]:
+            - link "关于咕咕数据" [ref=e69] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e70]:
+            - link "用户协议" [ref=e71] [cursor=pointer]:
+              - /url: /license
+          - listitem [ref=e72]:
+            - link "免责声明" [ref=e73] [cursor=pointer]:
+              - /url: /disclaimer
+          - listitem [ref=e74]:
+            - link "联系我们" [ref=e75] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e77]:
+        - paragraph [ref=e78]: 商业 API
+        - list [ref=e79]:
+          - listitem [ref=e80]:
+            - link "新闻 / 资讯" [ref=e81] [cursor=pointer]:
+              - /url: /api/news/9/0/9/0
+          - listitem [ref=e82]:
+            - link "金融 / 分析" [ref=e83] [cursor=pointer]:
+              - /url: /api/finance/9/0/9/0
+          - listitem [ref=e84]:
+            - link "位置 / 坐标" [ref=e85] [cursor=pointer]:
+              - /url: /api/location/9/0/9/0
+          - listitem [ref=e86]:
+            - link "更多服务..." [ref=e87] [cursor=pointer]:
+              - /url: /api/all/9/0/9/0/不限
+      - generic [ref=e89]:
+        - paragraph [ref=e90]: 帮助中心
+        - list [ref=e91]:
+          - listitem [ref=e92]:
+            - link "接口文档" [ref=e93] [cursor=pointer]:
+              - /url: https://doc.gugudata.com/
+          - listitem [ref=e94]:
+            - link "API / DEMO" [ref=e95] [cursor=pointer]:
+              - /url: /api/details/stockcnrealtime#anchor_code
+          - listitem [ref=e96]:
+            - link "常见问题" [ref=e97] [cursor=pointer]:
+              - /url: /api/details/stockcnrealtime#anchor_qa
+          - listitem [ref=e98]:
+            - link "接入示例代码" [ref=e99] [cursor=pointer]:
+              - /url: /api/details/stockcnrealtime#anchor_code
+    - paragraph [ref=e103]:
+      - text: Copyright © 2015-2026
+      - link "江苏满数数据科技有限公司" [ref=e104] [cursor=pointer]:
+        - /url: https://www.gugudata.com
+      - text: . All rights reserved.
+      - link "苏ICP备2022035649号" [ref=e106] [cursor=pointer]:
+        - /url: http://beian.miit.gov.cn/
+  - text: 
+  - img [ref=e111] [cursor=pointer]

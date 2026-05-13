@@ -1,0 +1,40 @@
+{
+  "university_name": "齐鲁师范学院",
+  "short_name": "齐鲁师院 / QLNU",
+  "location": {
+    "province": "山东",
+    "city": "济南",
+    "district": "章丘区 / 历下区"
+  },
+  "academic_level": {
+    "is_985": false,
+    "is_211": false,
+    "is_double_first_class": false,
+    "master_point_status": "建设中 / 申硕单位",
+    "key_disciplines": [
+      "教育学",
+      "生物学",
+      "数学"
+    ]
+  },
+  "admission_data": {
+    "avg_rank_shandong_liberal": 120000,
+    "avg_rank_shandong_science": 180000,
+    "competitive_index": "中等偏上"
+  },
+  "employment_stats": {
+    "further_study_rate": "15.76%",
+    "teacher_industry_ratio": "45%",
+    "avg_starting_salary": 4500
+  },
+  "campus_vibe": {
+    "keywords": [
+      "考研",
+      "务实",
+      "传统",
+      "师范"
+    ],
+    "student_satisfaction": 3.8
+  },
+  "comprehensive_score": 2.49
+}

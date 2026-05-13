@@ -2,6 +2,10 @@ require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const { generateReport, saveReport, REPORTS_DIR } = require('./lib/report-builder')
+const redis = require('./lib/redis')
+const { textToSpeech } = require('./lib/tts')
+const fs = require('fs').promises
+const path = require('path')
 
 const app = express()
 const DIFY_API_URL = process.env.DIFY_API_URL || 'http://127.0.0.1:8080'
@@ -45,8 +49,28 @@ app.use(cors({
 }))
 app.use(express.json({ limit: JSON_BODY_LIMIT }))
 
-function rateLimit(req, res, next) {
+async function rateLimit(req, res, next) {
   const key = (req.body && req.body.user) || req.ip || 'unknown'
+  
+  // Redis 模式优先
+  if (redis) {
+    const redisKey = `ratelimit:${key}`
+    try {
+      const current = await redis.incr(redisKey)
+      if (current === 1) {
+        await redis.expire(redisKey, Math.floor(RATE_LIMIT_WINDOW_MS / 1000))
+      }
+      if (current > RATE_LIMIT_MAX) {
+        return res.status(429).json({ error: '请求太频繁，请稍后再试' })
+      }
+      return next()
+    } catch (err) {
+      console.error('Redis RateLimit Error:', err.message)
+      // 报错则降级到内存模式继续执行
+    }
+  }
+
+  // 内存降级模式
   const now = Date.now()
   const bucket = rateLimitBuckets.get(key) || { count: 0, resetAt: now + RATE_LIMIT_WINDOW_MS }
 
@@ -345,6 +369,49 @@ app.post('/api/chat/stream', async (req, res) => {
 // 静态报告文件
 app.use('/reports', express.static(REPORTS_DIR))
 
+// TTS 语音合成接口
+app.post('/api/tts', async (req, res) => {
+  const { text } = req.body
+  if (!text) {
+    return res.status(400).json({ error: 'text is required' })
+  }
+
+  try {
+    const audioBuffer = await textToSpeech(text.slice(0, 2000)) // 放宽至 2000 字，覆盖长回复
+    res.setHeader('Content-Type', 'audio/mpeg')
+    res.send(audioBuffer)
+  } catch (err) {
+    console.error('TTS Error:', err.message)
+    res.status(500).json({ error: '语音合成失败' })
+  }
+})
+
+// 对话反馈接口
+app.post('/api/chat/feedback', async (req, res) => {
+  const { messageId, rating, query, answer } = req.body
+  if (!rating) {
+    return res.status(400).json({ error: 'rating is required' })
+  }
+
+  const logEntry = {
+    timestamp: new Date().toISOString(),
+    messageId,
+    rating, // 1 为点赞, -1 为踩
+    query,
+    answer
+  }
+
+  try {
+    const logPath = path.join(__dirname, 'logs', 'feedback.jsonl')
+    await fs.mkdir(path.dirname(logPath), { recursive: true })
+    await fs.appendFile(logPath, JSON.stringify(logEntry) + '\n')
+    res.json({ status: 'ok' })
+  } catch (err) {
+    console.error('Feedback Log Error:', err.message)
+    res.status(500).json({ error: '反馈提交失败' })
+  }
+})
+
 // 报告生成端点
 app.post('/api/report/generate', async (req, res) => {
   const { userId, profile, questionnaire, conversationId } = req.body || {}
@@ -353,13 +420,24 @@ app.post('/api/report/generate', async (req, res) => {
     return res.status(400).json({ error: 'userId is required' })
   }
 
-  const lastAt = reportCooldowns.get(userId) || 0
-  if (Date.now() - lastAt < REPORT_COOLDOWN_MS) {
-    const waitSec = Math.ceil((REPORT_COOLDOWN_MS - (Date.now() - lastAt)) / 1000)
-    return res.status(429).json({ error: `请 ${waitSec} 秒后再试` })
+  const cooldownKey = `cooldown:report:${userId}`
+  
+  if (redis) {
+    try {
+      const ttl = await redis.ttl(cooldownKey)
+      if (ttl > 0) {
+        return res.status(429).json({ error: `请 ${ttl} 秒后再试` })
+      }
+    } catch (err) {
+      console.error('Redis Cooldown Check Error:', err.message)
+    }
+  } else {
+    const lastAt = reportCooldowns.get(userId) || 0
+    if (Date.now() - lastAt < REPORT_COOLDOWN_MS) {
+      const waitSec = Math.ceil((REPORT_COOLDOWN_MS - (Date.now() - lastAt)) / 1000)
+      return res.status(429).json({ error: `请 ${waitSec} 秒后再试` })
+    }
   }
-
-  reportCooldowns.set(userId, Date.now())
 
   try {
     const html = await generateReport({
@@ -371,11 +449,21 @@ app.post('/api/report/generate', async (req, res) => {
     })
 
     const filename = await saveReport(userId, html)
+    
+    // 设置冷却
+    if (redis) {
+      await redis.set(cooldownKey, '1', 'EX', Math.floor(REPORT_COOLDOWN_MS / 1000)).catch(e => {
+        console.error('Redis Cooldown Set Error:', e.message)
+      })
+    } else {
+      reportCooldowns.set(userId, Date.now())
+    }
+
     const baseUrl = process.env.REPORT_BASE_URL || `http://localhost:${PORT}`
     res.json({ url: `${baseUrl}/reports/${filename}` })
   } catch (err) {
     console.error('Report generation error:', err.message)
-    reportCooldowns.delete(userId)
+    if (!redis) reportCooldowns.delete(userId)
     res.status(500).json({ error: err.message || '报告生成失败，请稍后重试' })
   }
 })

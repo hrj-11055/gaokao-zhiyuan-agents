@@ -1,0 +1,45 @@
+{
+  "university_name": "西安医学院",
+  "short_name": "西医",
+  "location": {
+    "province": "陕西",
+    "city": "西安",
+    "campus": [
+      "未央校区",
+      "含光校区",
+      "高新校区"
+    ]
+  },
+  "academic_level": {
+    "master_degree_granting": true,
+    "doctoral_degree_granting": false,
+    "esi_top_1_percent": [
+      "Clinical Medicine",
+      "Pharmacology & Toxicology"
+    ],
+    "key_laboratories": [
+      "陕西省缺血性心血管疾病重点实验室",
+      "陕西省脑疾病防治重点实验室"
+    ]
+  },
+  "admission_competitiveness": {
+    "overall_difficulty": "Medium-High",
+    "top_major": "Clinical Medicine",
+    "henan_physics_2024_min_score": 600
+  },
+  "employment_stats": {
+    "medical_industry_rate": "72%",
+    "further_study_rate": "24.5%",
+    "primary_employer_type": "Public Hospitals"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.8,
+    "graduate_value": 3.2,
+    "location_advantage": 3.8,
+    "globalization": 2.5,
+    "student_freedom": 2.6,
+    "brand_asset": 3.1,
+    "weighted_total": 3.06
+  },
+  "one_sentence_recommendation": "最适合分数在一本线附近、目标明确为陕西省内基层或二三线城市公立医院就业的务实型考生。"
+}

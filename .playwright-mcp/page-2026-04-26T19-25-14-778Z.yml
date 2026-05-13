@@ -1,0 +1,512 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 药物经济与管理 开设院校 中国药科大学 沈阳药科大学 温州医科大学 学科评估
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2217283747482087001580%22%2C%22ori_lid%22%3A%2217283747482087001580%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=efdc34c301590dec&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=efdc34c301590dec&ie=utf-8&wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_spt=7&rsv_bp=1&f=8&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6+%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  药学专业第五轮学科评估  沈阳药科大学一流学科  第四轮学科评估药学学科排名  沈阳药科大学药学全国排名  沈阳药科大学临床药学就业前景  沈阳药科大学 学科评估    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 高市政府越过“最后一根红线” 9 厨师锅里吐口水后继续出餐 店长回应 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 枪击发生时特朗普旁的华裔女记者是谁 14 A股一季度最赚钱公司曝光 15 女性多和好友聚会能“续命”" [ref=e69]:
+              - cell "相关搜索  药学专业第五轮学科评估  沈阳药科大学一流学科  第四轮学科评估药学学科排名  沈阳药科大学药学全国排名  沈阳药科大学临床药学就业前景  沈阳药科大学 学科评估    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 高市政府越过“最后一根红线” 9 厨师锅里吐口水后继续出餐 店长回应 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 枪击发生时特朗普旁的华裔女记者是谁 14 A股一季度最赚钱公司曝光 15 女性多和好友聚会能“续命”" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 药学专业第五轮学科评估" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%AC%AC%E4%BA%94%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=9ab8XF4g%2FsKQNj3tdYXXJRScVqWiMMLbIfMPRLH9NQxb0JDox1JBQZxZPYI&rfqid=efdc34c301590dec&rsv_dl=0_prs_28616_1&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101636803
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 药学专业第五轮学科评估
+                      - link " 沈阳药科大学一流学科" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E4%B8%80%E6%B5%81%E5%AD%A6%E7%A7%91&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=9ab8XF4g%2FsKQNj3tdYXXJRScVqWiMMLbIfMPRLH9NQxb0JDox1JBQZxZPYI&rfqid=efdc34c301590dec&rsv_dl=0_prs_28616_2&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 沈阳药科大学一流学科
+                      - link " 第四轮学科评估药学学科排名" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E8%8D%AF%E5%AD%A6%E5%AD%A6%E7%A7%91%E6%8E%92%E5%90%8D&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=9ab8XF4g%2FsKQNj3tdYXXJRScVqWiMMLbIfMPRLH9NQxb0JDox1JBQZxZPYI&rfqid=efdc34c301590dec&rsv_dl=0_prs_28616_3&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101636803
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 第四轮学科评估药学学科排名
+                      - link " 沈阳药科大学药学全国排名" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E8%8D%AF%E5%AD%A6%E5%85%A8%E5%9B%BD%E6%8E%92%E5%90%8D&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=9ab8XF4g%2FsKQNj3tdYXXJRScVqWiMMLbIfMPRLH9NQxb0JDox1JBQZxZPYI&rfqid=efdc34c301590dec&rsv_dl=0_prs_28616_4&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101636803
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 沈阳药科大学药学全国排名
+                      - link " 沈阳药科大学临床药学就业前景" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E4%B8%B4%E5%BA%8A%E8%8D%AF%E5%AD%A6%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=9ab8XF4g%2FsKQNj3tdYXXJRScVqWiMMLbIfMPRLH9NQxb0JDox1JBQZxZPYI&rfqid=efdc34c301590dec&rsv_dl=0_prs_28616_5&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101636803
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 沈阳药科大学临床药学就业前景
+                      - link " 沈阳药科大学 学科评估" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rfqid=efdc34c301590dec&rsv_dl=0_prs_28616_6&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101633403
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 沈阳药科大学 学科评估
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "高市政府越过“最后一根红线”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "A股一季度最赚钱公司曝光" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=A%E8%82%A1%E4%B8%80%E5%AD%A3%E5%BA%A6%E6%9C%80%E8%B5%9A%E9%92%B1%E5%85%AC%E5%8F%B8%E6%9B%9D%E5%85%89&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "女性多和好友聚会能“续命”" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=fe4ebmtGMvPuQ0dizLzmiL6Z1HA1RDDabawHW5o0R1vlmLKb1EdAVzWoLhI&rqid=efdc34c301590dec&rsf=332ea555d0a905bb46da11970178570c_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e208]:
+            - heading "首页-沈阳药科大学教学质量保障与评估中心" [level=3] [ref=e211]:
+              - link "首页-沈阳药科大学教学质量保障与评估中心" [ref=e212] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=XRi1uogUvxkfm5QFPrI1mrHEdH4hbPVFof7s7Tzha7AxgtMN8NFn2-WY09VQVJ0ptrPqcX5JilQV7VJ9nDdudq
+                - paragraph [ref=e215]:
+                  - generic [ref=e218]:
+                    - text: 首页-
+                    - emphasis [ref=e219]: 沈阳药科大学
+                    - text: 教学质量保障
+                    - emphasis [ref=e220]: 与评估
+                    - text: 中心
+            - generic [ref=e226]:
+              - text: 各单位,各部门:为扎实推进学校审核评估整改工作,现请各单位根据《
+              - emphasis [ref=e227]: 沈阳药科大学
+              - text: 本科教育教学审核评估整改方案》(沈药大校字〔2025〕1... 17 2025-09 关于确认审核评估整改方案的通知 各相关单位:学校已于9月15日收到辽宁省教育厅下发的本科教育教学工作审核评估报告,近期需要提交评估整改方案.为确保整改工作精
+            - link "jxzl.syphu.edu.cn/pgrz/shpg/s...ht..." [ref=e232] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=XRi1uogUvxkfm5QFPrI1mrHEdH4hbPVFof7s7Tzha7AxgtMN8NFn2-WY09VQVJ0ptrPqcX5JilQV7VJ9nDdudq
+              - generic [ref=e233]: jxzl.syphu.edu.cn/pgrz/shpg/s...ht...
+              - generic [ref=e235]: 
+          - generic [ref=e239]:
+            - heading "全国开设药物经济与管理专业的大学排名_2025年更新 - 掌上高考" [level=3] [ref=e242]:
+              - link "全国开设药物经济与管理专业的大学排名_2025年更新 - 掌上高考" [ref=e243] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=7LjIH5F4Xu4TIk6BxZqqtChPen6-hBqLWKsk6t7PvUQ7ceRShwKvfHjUhnGblU39
+                - paragraph [ref=e246]:
+                  - generic [ref=e249]:
+                    - text: 全国
+                    - emphasis [ref=e250]: 开设药物经济与管理
+                    - text: 专业的
+                    - emphasis [ref=e251]: 大学
+                    - text: 排名_2025年更新 - 掌上高考
+            - generic [ref=e256]:
+              - text: 2025年5月15日
+              - generic [ref=e257]:
+                - text: 一、全国
+                - emphasis [ref=e258]: 药物经济与管理
+                - text: "专业排名前3的大学有: 排名第1:"
+                - emphasis [ref=e259]: 中国药科大学
+                - text: "; 排名第2:"
+                - emphasis [ref=e260]: 温州医科大学
+                - text: "; 排名第3:山东中医药大学; 二、全国药物经济与管理专业大学排名榜(2025年最新) 三、药物经济与管理专业简介: 本专业培养能适应我国医药经济与健康产业发展需要,掌握药物经济学、"
+                - emphasis [ref=e261]: 药品管理
+                - text: 、药品政策相关的基本知识,熟悉药物...
+            - link "掌上高考" [ref=e266] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=7LjIH5F4Xu4TIk6BxZqqtChPen6-hBqLWKsk6t7PvUQ7ceRShwKvfHjUhnGblU39
+              - generic [ref=e267]: 掌上高考
+              - generic [ref=e269]: 
+          - generic [ref=e273]:
+            - heading "全国哪些大学有药物经济与管理专业_2026年更新 - 掌上高考" [level=3] [ref=e276]:
+              - link "全国哪些大学有药物经济与管理专业_2026年更新 - 掌上高考" [ref=e277] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=7LjIH5F4Xu4TIk6BxZqqtChPen6-hBqLWKsk6t7PvURYIxbkFpi6YWztNalNfq-g
+                - paragraph [ref=e280]:
+                  - generic [ref=e283]:
+                    - text: 全国哪些
+                    - emphasis [ref=e284]: 大学
+                    - text: 有
+                    - emphasis [ref=e285]: 药物经济与管理
+                    - text: 专业_2026年更新 - 掌上高考
+            - generic [ref=e286]:
+              - link [ref=e288] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=7LjIH5F4Xu4TIk6BxZqqtChPen6-hBqLWKsk6t7PvURYIxbkFpi6YWztNalNfq-g
+              - generic [ref=e293]:
+                - generic [ref=e298]:
+                  - text: 2026年2月6日
+                  - generic [ref=e299]:
+                    - text: "三、药物经济与管理专业简介: 四、"
+                    - emphasis [ref=e300]: 开设药物经济与管理
+                    - text: "的院校推荐: 1.山东中医药大学 山东中医药大学原为山东中医学院,创建于1958年,是新中国早期建立的中医药高等学府之一。1978年被确定为全国重点建设的中医院校,1981年成为山东省重点高校,1986年获得博士学位授予点,1996年更名为山东中医药大学。2007年学校主体搬迁至..."
+                - link "掌上高考" [ref=e305] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=7LjIH5F4Xu4TIk6BxZqqtChPen6-hBqLWKsk6t7PvURYIxbkFpi6YWztNalNfq-g
+                  - generic [ref=e306]: 掌上高考
+                  - generic [ref=e308]: 
+          - generic [ref=e310]:
+            - generic [ref=e311]: 大家还在搜
+            - generic [ref=e312]:
+              - link "药学专业第五轮学科评估" [ref=e313] [cursor=pointer]:
+                - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%AC%AC%E4%BA%94%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=f3a9C0wT4lYLivn%2BmbjmLu5E%2FhF926aVCLfl8Rnvo%2Fu32RjAnFNLpW0boQk&rsf=101636803&rsv_dl=0_prs_28608_1
+                - generic [ref=e315]: 药学专业第五轮学科评估
+              - link "沈阳药科大学一流学科" [ref=e316] [cursor=pointer]:
+                - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E4%B8%80%E6%B5%81%E5%AD%A6%E7%A7%91&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=f3a9C0wT4lYLivn%2BmbjmLu5E%2FhF926aVCLfl8Rnvo%2Fu32RjAnFNLpW0boQk&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e318]: 沈阳药科大学一流学科
+              - link "第四轮学科评估药学学科排名" [ref=e319] [cursor=pointer]:
+                - /url: /s?wd=%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E8%8D%AF%E5%AD%A6%E5%AD%A6%E7%A7%91%E6%8E%92%E5%90%8D&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=7feccdMp6JuvXSH%2F7ftI18IcvFvjJjqS8b%2FfJoLopPK0o1Pvt0OcHnjFyps&rsf=101636803&rsv_dl=0_prs_28608_3
+                - generic [ref=e321]: 第四轮学科评估药学学科排名
+              - link "沈阳药科大学药学全国排名" [ref=e322] [cursor=pointer]:
+                - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E8%8D%AF%E5%AD%A6%E5%85%A8%E5%9B%BD%E6%8E%92%E5%90%8D&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=7feccdMp6JuvXSH%2F7ftI18IcvFvjJjqS8b%2FfJoLopPK0o1Pvt0OcHnjFyps&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e324]: 沈阳药科大学药学全国排名
+              - link "沈阳药科大学临床药学就业前景" [ref=e325] [cursor=pointer]:
+                - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E4%B8%B4%E5%BA%8A%E8%8D%AF%E5%AD%A6%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=7feccdMp6JuvXSH%2F7ftI18IcvFvjJjqS8b%2FfJoLopPK0o1Pvt0OcHnjFyps&rsf=101636803&rsv_dl=0_prs_28608_5
+                - generic [ref=e327]: 沈阳药科大学临床药学就业前景
+              - link "沈阳药科大学 学科评估" [ref=e328] [cursor=pointer]:
+                - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&usm=1&ie=utf-8&rsv_pq=efdc34c301590dec&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsv_t=7feccdMp6JuvXSH%2F7ftI18IcvFvjJjqS8b%2FfJoLopPK0o1Pvt0OcHnjFyps&rsf=101633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e330]: 沈阳药科大学 学科评估
+          - generic [ref=e334]:
+            - heading "药物经济与管理专业大学排名及分数线!前三强含211、省重点-高考100" [level=3] [ref=e337]:
+              - link "药物经济与管理专业大学排名及分数线!前三强含211、省重点-高考100" [ref=e338] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=XRi1uogUvxkfm5QFPrI1my1yHZP9lAKFVuCHf2RtberHu19meGUCxjBXPKX1FbDkgkUy6b_SH8NDEfM0rUs0Ia
+                - paragraph [ref=e341]:
+                  - generic [ref=e344]:
+                    - emphasis [ref=e345]: 药物经济与管理
+                    - text: 专业
+                    - emphasis [ref=e346]: 大学
+                    - text: 排名及分数线!前三强含211、省重点-高考100
+            - generic [ref=e347]:
+              - link [ref=e349] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=XRi1uogUvxkfm5QFPrI1my1yHZP9lAKFVuCHf2RtberHu19meGUCxjBXPKX1FbDkgkUy6b_SH8NDEfM0rUs0Ia
+              - generic [ref=e354]:
+                - generic [ref=e359]:
+                  - text: 2026年2月14日
+                  - generic [ref=e360]:
+                    - text: 第0名:山东中医药大学、
+                    - emphasis [ref=e361]: 温州医科大学
+                    - text: 、
+                    - emphasis [ref=e362]: 中国药科大学
+                    - emphasis [ref=e363]: 药物经济与管理
+                    - text: 专业排名全国第一、最好的大学是山东中医药大学。山东中医药大学是省重点院校,有对应的硕士点、博士点。 值得一提的是,药物经济与管理专业排名前三的大学未包含国内顶尖名校“清华北大”。 从学校层次看,药物经济与管理专业排名前三强的大学中有1所...
+                - link "高考100网" [ref=e368] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=XRi1uogUvxkfm5QFPrI1my1yHZP9lAKFVuCHf2RtberHu19meGUCxjBXPKX1FbDkgkUy6b_SH8NDEfM0rUs0Ia
+                  - generic [ref=e369]: 高考100网
+                  - generic [ref=e371]: 
+          - generic [ref=e375]:
+            - heading "开设医药经济管理专业的高校 - 百度知道" [level=3] [ref=e378]:
+              - link "开设医药经济管理专业的高校 - 百度知道" [ref=e379] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=TODngFI76uX0_33zp0FKBQUG6nxEYgGYOkC-3pDLfL0dBpDUblM-R2HrQYE150WxGUlpKnPiQJDFW_EOQ3DrazpOZawTJueo04UifvUKHJ7
+                - paragraph [ref=e382]:
+                  - generic [ref=e385]:
+                    - emphasis [ref=e386]: 开设医药经济管理
+                    - text: 专业的
+                    - emphasis [ref=e387]: 高校
+                    - text: "- 百度知道"
+            - generic [ref=e389]: "1个回答 - 回答时间: 2026年4月18日"
+            - generic [ref=e394]:
+              - text: "最佳答案:"
+              - generic [ref=e395]:
+                - text: 截至2026年，开设“
+                - emphasis [ref=e396]: 药物经济与管理
+                - text: ”专业（与医药经济管理相关）的高校主要包括
+                - emphasis [ref=e397]: 中国药科大学
+                - text: 、
+                - emphasis [ref=e398]: 温州医科大学
+                - text: 和山东中医药大学。以下是具体信息：中国药科大学该校国际医药商学院下设“药物经济与管理”专业，学科建设体系完善，拥有药物经济学学术博士学位授权点及专业博士学位授权点（药学-管理药学）。其培养...
+            - link "更多关于药物经济与管理 开设院校 中国药科大学 沈阳药科大学 温州医科大学 学科评估的问题>>" [ref=e402] [cursor=pointer]:
+              - /url: http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5
+            - link "百度知道" [ref=e407] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=TODngFI76uX0_33zp0FKBQUG6nxEYgGYOkC-3pDLfL0dBpDUblM-R2HrQYE150WxGUlpKnPiQJDFW_EOQ3DrazpOZawTJueo04UifvUKHJ7
+              - generic [ref=e408]: 百度知道
+              - generic [ref=e410]: 
+          - generic [ref=e414]:
+            - heading "2026开设药物经济与管理专业有哪些大学及排名 全国共计2所_高三网" [level=3] [ref=e417]:
+              - link "2026开设药物经济与管理专业有哪些大学及排名 全国共计2所_高三网" [ref=e418] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=DgKSlEq-PgZJM6Vtb39ql0WGDWB4wWODVWr4W_NSYCnoy8bNzc53HX5uubvOvsp37y6qShNneoswg5P6XiJthK
+                - paragraph [ref=e421]:
+                  - generic [ref=e424]:
+                    - text: "2026"
+                    - emphasis [ref=e425]: 开设药物经济与管理
+                    - text: 专业有哪些
+                    - emphasis [ref=e426]: 大学
+                    - text: 及排名 全国共计2所_高三网
+            - generic [ref=e431]:
+              - text: 2025年11月6日
+              - generic [ref=e432]:
+                - text: "2"
+                - emphasis [ref=e433]: 开设药物经济与管理
+                - text: 专业大学简介
+                - emphasis [ref=e434]: 中国药科大学
+                - text: 中国药科大学坐落于古都南京,始建于1936年,是我国历史上第一所由国家创办的药学高等学府。学校为教育部直属、国家“211工程”和“985工程优势学科创新平台”建设高校,2017年成为国家“双一流”建设高校,是一所以药学为特色的多科性、研究型大学,其中以药学、中药学学科...
+            - link "高三网" [ref=e439] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=DgKSlEq-PgZJM6Vtb39ql0WGDWB4wWODVWr4W_NSYCnoy8bNzc53HX5uubvOvsp37y6qShNneoswg5P6XiJthK
+              - generic [ref=e440]: 高三网
+              - generic [ref=e442]: 
+          - generic [ref=e446]:
+            - heading "我院成功获批全国首批“药物经济与管理”专业 -卫生管理学院" [level=3] [ref=e449]:
+              - link "我院成功获批全国首批“药物经济与管理”专业 -卫生管理学院" [ref=e450] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=T3jAz0Mcx-sKkhLimy8slujeOTQq505-CdBt2AEVhnJ4oD10blMGGwx_8abjB11aX9F6e4pNRmlVliHLsvPQ9K
+                - paragraph [ref=e453]:
+                  - generic [ref=e456]:
+                    - text: 我院成功获批全国首批“
+                    - emphasis [ref=e457]: 药物经济与管理
+                    - text: ”专业 -卫生管理学院
+            - generic [ref=e462]:
+              - text: 2025年4月23日
+              - generic [ref=e463]:
+                - text: 2025年4月22日,教育部正式发布2024年度普通高等学校本科专业备案和审批结果,我院成功获批“
+                - emphasis [ref=e464]: 药物经济与管理
+                - text: ”新专业,我校也成为全国首批开设该专业的三所高校之一(另两所为
+                - emphasis [ref=e465]: 中国药科大学
+                - text: 、
+                - emphasis [ref=e466]: 温州医科大学
+                - text: )。这一突破标志着学院在深化新医科建设、推动中医
+                - emphasis [ref=e467]: 药学科
+                - text: 与现代管理科学交叉融合方面迈出重要一步,也为学院学科布局优化...
+            - link "头像 山东中医药大学管理学院" [ref=e472] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=T3jAz0Mcx-sKkhLimy8slujeOTQq505-CdBt2AEVhnJ4oD10blMGGwx_8abjB11aX9F6e4pNRmlVliHLsvPQ9K
+              - img "头像" [ref=e475]
+              - generic [ref=e476]: 山东中医药大学管理学院
+              - generic [ref=e478]: 
+          - generic [ref=e482]:
+            - heading "药物经济与管理专业大学排名" [level=3] [ref=e485]:
+              - link "药物经济与管理专业大学排名" [ref=e486] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=T3jAz0Mcx-sKkhLimy8sl6xlb2aCAtaiHpeAHeI1cl0DrOkCVklPGo7ESLLtJ_GtUoKkuixtYI1K5hW1drmRb6Ez4bY9lTqBd1g3UfPWn661DgZPRgjPqc3E537Tb1WgoR5KcTtuaQidK0xHMfbvqeywKjqqV0xZPG3XTGH-_8ks4b67RsD1ba68XOzOAMXRNJhTyvISvSy97yMWMC149nHsiR6-QjzzcGIZD-vCeq1eJLcR8f2IykjCD2X82SQxC3j1TyWH2OWYfh1EKJaFWGyJwg7iujmnCnc4xP2LVhou2r1wr1AiS0Qk3BJKlO5shGSvfdDvF3yJk9dtHOhAC_
+                - paragraph [ref=e489]:
+                  - generic [ref=e492]:
+                    - emphasis [ref=e493]: 药物经济与管理
+                    - text: 专业
+                    - emphasis [ref=e494]: 大学
+                    - text: 排名
+            - generic [ref=e499]:
+              - text: 2025年7月6日
+              - generic [ref=e500]:
+                - text: ==2024年
+                - emphasis [ref=e501]: 药物经济与管理
+                - text: "专业(药事管理方向)全国排名前七的高校依次为:"
+                - emphasis [ref=e502]: 中国药科大学
+                - text: 、
+                - emphasis [ref=e503]: 沈阳药科大学
+                - text: 、南京中医药大学、北京中医药大学、广东药科大学、贵州
+                - emphasis [ref=e504]: 医科大学
+                - text: 、湖北中医药大学==。这一排名基于软科榜单数据,综合考量专业实力、教学特色及就业质量,为考生提供权威参考。 一、...
+            - link "头像 知了爱学" [ref=e509] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=T3jAz0Mcx-sKkhLimy8sl6xlb2aCAtaiHpeAHeI1cl0DrOkCVklPGo7ESLLtJ_GtUoKkuixtYI1K5hW1drmRb6Ez4bY9lTqBd1g3UfPWn661DgZPRgjPqc3E537Tb1WgoR5KcTtuaQidK0xHMfbvqeywKjqqV0xZPG3XTGH-_8ks4b67RsD1ba68XOzOAMXRNJhTyvISvSy97yMWMC149nHsiR6-QjzzcGIZD-vCeq1eJLcR8f2IykjCD2X82SQxC3j1TyWH2OWYfh1EKJaFWGyJwg7iujmnCnc4xP2LVhou2r1wr1AiS0Qk3BJKlO5shGSvfdDvF3yJk9dtHOhAC_
+              - img "头像" [ref=e512]
+              - generic [ref=e513]: 知了爱学
+              - generic [ref=e515]: 
+          - generic [ref=e519]:
+            - heading "温州医科大学药物经济与管理专业" [level=3] [ref=e522]:
+              - link "温州医科大学药物经济与管理专业" [ref=e523] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=T3jAz0Mcx-sKkhLimy8sl6xlb2aCAtaiHpeAHeI1cl0DrOkCVklPGo7ESLLtJ_GtUoKkuixtYI1K5hW1drmRb6Ez4bY9lTqBd1g3UfPWn661DgZPRgjPqc3E537Tb1Wgrvf7yq7piokq8p3y6lAu1v9eTKmSjNAotrjOFNRJCYPL7JeACOsth9oihCWaTlBCIeX-PqXwOL3OfaD_r9vNadUznGX-3GDpf5_33kitqaTaUc7S2fiTIyy9w1_9eAYT9JtsQR-yXgjfPNiotg9EWWGO3S1TEgGHEF9yj00ED5C8-0D6RTUc0IfNzWf1e2153HLMq15kPASusDigIuMMuq
+                - paragraph [ref=e526]:
+                  - generic [ref=e529]:
+                    - emphasis [ref=e530]: 温州医科大学药物经济与管理
+                    - text: 专业
+            - generic [ref=e535]:
+              - text: 2025年7月31日
+              - generic [ref=e536]:
+                - emphasis [ref=e537]: 温州医科大学
+                - text: 是全国首批开设该专业的高校,与
+                - emphasis [ref=e538]: 中国药科大学
+                - text: 、山东中医药大学共同布点,响应国家医药数字化转型与健康产业升级需求。 培养目标与核心能力 聚焦==药品全生命周期管理==,培养具备医药技术评估、卫生政策分析和医疗资源配置能力的复合型人才。学生将掌握
+                - emphasis [ref=e539]: 药物经济
+                - text: 学理论...
+            - link "头像 知了爱学" [ref=e544] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=T3jAz0Mcx-sKkhLimy8sl6xlb2aCAtaiHpeAHeI1cl0DrOkCVklPGo7ESLLtJ_GtUoKkuixtYI1K5hW1drmRb6Ez4bY9lTqBd1g3UfPWn661DgZPRgjPqc3E537Tb1Wgrvf7yq7piokq8p3y6lAu1v9eTKmSjNAotrjOFNRJCYPL7JeACOsth9oihCWaTlBCIeX-PqXwOL3OfaD_r9vNadUznGX-3GDpf5_33kitqaTaUc7S2fiTIyy9w1_9eAYT9JtsQR-yXgjfPNiotg9EWWGO3S1TEgGHEF9yj00ED5C8-0D6RTUc0IfNzWf1e2153HLMq15kPASusDigIuMMuq
+              - img "头像" [ref=e547]
+              - generic [ref=e548]: 知了爱学
+              - generic [ref=e550]: 
+        - generic [ref=e553]:
+          - generic [ref=e554]: 相关搜索
+          - table [ref=e555]:
+            - rowgroup [ref=e556]:
+              - row "药学专业第五轮学科评估 药学专业第四轮评估排名" [ref=e557]:
+                - cell "药学专业第五轮学科评估" [ref=e558]:
+                  - link "药学专业第五轮学科评估" [ref=e559] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%AC%AC%E4%BA%94%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101636803&rsp=0&f=1&rs_src=0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&rsv_dl=brs_28338_1
+                    - generic [ref=e561]: 药学专业第五轮学科评估
+                - cell "药学专业第四轮评估排名" [ref=e562]:
+                  - link "药学专业第四轮评估排名" [ref=e563] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E4%B8%93%E4%B8%9A%E7%AC%AC%E5%9B%9B%E8%BD%AE%E8%AF%84%E4%BC%B0%E6%8E%92%E5%90%8D&rsf=101636803&rsp=1&f=1&rs_src=0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&rsv_dl=brs_28338_2
+                    - generic [ref=e565]: 药学专业第四轮评估排名
+              - row "沈阳药科大学一流学科 制药工程第四轮学科评估结果" [ref=e566]:
+                - cell "沈阳药科大学一流学科" [ref=e567]:
+                  - link "沈阳药科大学一流学科" [ref=e568] [cursor=pointer]:
+                    - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E4%B8%80%E6%B5%81%E5%AD%A6%E7%A7%91&rsf=101633403&rsp=2&f=1&rs_src=0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&rsv_dl=brs_28338_3
+                    - generic [ref=e570]: 沈阳药科大学一流学科
+                - cell "制药工程第四轮学科评估结果" [ref=e571]:
+                  - link "制药工程第四轮学科评估结果" [ref=e572] [cursor=pointer]:
+                    - /url: /s?wd=%E5%88%B6%E8%8D%AF%E5%B7%A5%E7%A8%8B%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E7%BB%93%E6%9E%9C&rsf=101636803&rsp=3&f=1&rs_src=0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&rsv_dl=brs_28338_4
+                    - generic [ref=e574]: 制药工程第四轮学科评估结果
+              - row "中国药科大学学科评估结果 沈阳药科大学 学科评估" [ref=e575]:
+                - cell "中国药科大学学科评估结果" [ref=e576]:
+                  - link "中国药科大学学科评估结果" [ref=e577] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E7%BB%93%E6%9E%9C&rsf=101633403&rsp=4&f=1&rs_src=0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&rsv_dl=brs_28338_5
+                    - generic [ref=e579]: 中国药科大学学科评估结果
+                - cell "沈阳药科大学 学科评估" [ref=e580]:
+                  - link "沈阳药科大学 学科评估" [ref=e581] [cursor=pointer]:
+                    - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&rsv_dl=brs_28338_6
+                    - generic [ref=e583]: 沈阳药科大学 学科评估
+              - row "药学第五轮学科评估完整名单 沈阳药科大学药学全国排名" [ref=e584]:
+                - cell "药学第五轮学科评估完整名单" [ref=e585]:
+                  - link "药学第五轮学科评估完整名单" [ref=e586] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E7%AC%AC%E4%BA%94%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E5%AE%8C%E6%95%B4%E5%90%8D%E5%8D%95&rsf=101636803&rsp=6&f=1&rs_src=0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&rsv_dl=brs_28338_7
+                    - generic [ref=e588]: 药学第五轮学科评估完整名单
+                - cell "沈阳药科大学药学全国排名" [ref=e589]:
+                  - link "沈阳药科大学药学全国排名" [ref=e590] [cursor=pointer]:
+                    - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E8%8D%AF%E5%AD%A6%E5%85%A8%E5%9B%BD%E6%8E%92%E5%90%8D&rsf=101636803&rsp=7&f=1&rs_src=0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&rsv_dl=brs_28338_8
+                    - generic [ref=e592]: 沈阳药科大学药学全国排名
+              - row "中国药科大学第四轮学科评估 沈阳药科大学临床药学就业前景" [ref=e593]:
+                - cell "中国药科大学第四轮学科评估" [ref=e594]:
+                  - link "中国药科大学第四轮学科评估" [ref=e595] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101633403&rsp=8&f=1&rs_src=0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&rsv_dl=brs_28338_9
+                    - generic [ref=e597]: 中国药科大学第四轮学科评估
+                - cell "沈阳药科大学临床药学就业前景" [ref=e598]:
+                  - link "沈阳药科大学临床药学就业前景" [ref=e599] [cursor=pointer]:
+                    - /url: /s?wd=%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%E4%B8%B4%E5%BA%8A%E8%8D%AF%E5%AD%A6%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF&rsf=101636803&rsp=9&f=1&rs_src=0&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&rsv_dl=brs_28338_10
+                    - generic [ref=e601]: 沈阳药科大学临床药学就业前景
+      - generic [ref=e604]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e605]:
+          - generic [ref=e606]: "1"
+        - link "2" [ref=e607] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&pn=10&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&ie=utf-8&usm=1&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&topic_pn=
+          - generic [ref=e608]: "2"
+        - link "3" [ref=e609] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&pn=20&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&ie=utf-8&usm=1&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&topic_pn=
+          - generic [ref=e610]: "3"
+        - link "4" [ref=e611] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&pn=30&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&ie=utf-8&usm=1&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&topic_pn=
+          - generic [ref=e612]: "4"
+        - link "5" [ref=e613] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&pn=40&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&ie=utf-8&usm=1&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&topic_pn=
+          - generic [ref=e614]: "5"
+        - link "6" [ref=e615] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&pn=50&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&ie=utf-8&usm=1&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&topic_pn=
+          - generic [ref=e616]: "6"
+        - link "7" [ref=e617] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&pn=60&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&ie=utf-8&usm=1&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&topic_pn=
+          - generic [ref=e618]: "7"
+        - link "8" [ref=e619] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&pn=70&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&ie=utf-8&usm=1&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&topic_pn=
+          - generic [ref=e620]: "8"
+        - link "9" [ref=e621] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&pn=80&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&ie=utf-8&usm=1&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&topic_pn=
+          - generic [ref=e622]: "9"
+        - link "10" [ref=e623] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&pn=90&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&ie=utf-8&usm=1&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&topic_pn=
+          - generic [ref=e624]: "10"
+        - link "下一页" [ref=e625] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&pn=10&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%20%E4%B8%AD%E5%9B%BD%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B2%88%E9%98%B3%E8%8D%AF%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E6%B8%A9%E5%B7%9E%E5%8C%BB%E7%A7%91%E5%A4%A7%E5%AD%A6%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&ie=utf-8&usm=1&rsv_pq=efdc34c301590dec&rsv_t=fffbrhFhPdLUZpSLXN1mwDtIhQh5m4SlScQTuuxYSL3bxvrjtEI0mo99gLI&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e626]
+      - generic [ref=e629]:
+        - link "帮助" [ref=e630] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e631] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e632] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e633] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

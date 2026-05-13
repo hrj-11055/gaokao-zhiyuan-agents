@@ -1,0 +1,8 @@
+- generic [ref=e1]:
+  - img [ref=e3]
+  - generic [ref=e4]: 提示：访问地址无效，12783找不到对应的栏目！
+  - generic [ref=e5]:
+    - link "首页" [ref=e7] [cursor=pointer]:
+      - /url: "#"
+    - link "关闭此页" [ref=e9] [cursor=pointer]:
+      - /url: "#"

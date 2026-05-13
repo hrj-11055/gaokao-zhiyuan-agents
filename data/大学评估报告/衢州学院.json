@@ -1,0 +1,32 @@
+{
+  "university_name": "Quzhou University",
+  "chinese_name": "衢州学院",
+  "location": "浙江省衢州市",
+  "type": "公办全日制普通本科",
+  "academic_level": {
+    "master_degree_granting": true,
+    "key_disciplines": [
+      "Chemical Engineering",
+      "Mechanical Engineering",
+      "Materials Science"
+    ],
+    "academician_count": 1
+  },
+  "admission_stats": {
+    "zhejiang_rank_2025_min": 70447,
+    "zhejiang_rank_2025_max": 138378,
+    "trend": "Rising"
+  },
+  "employment_stats": {
+    "further_study_rate": "14.04%",
+    "major_industry": "Manufacturing",
+    "top_employer": "Juhua Group",
+    "starting_salary_avg": 5800
+  },
+  "campus_life": {
+    "dormitory_rating": "4/5",
+    "food_rating": "4.5/5",
+    "transfer_policy_flexibility": "High"
+  },
+  "overall_score": 3.23
+}

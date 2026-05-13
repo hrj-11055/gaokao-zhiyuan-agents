@@ -1,0 +1,54 @@
+{
+  "university_name": "福州大学",
+  "short_name": "FZU",
+  "location": {
+    "province": "福建",
+    "city": "福州",
+    "campus": [
+      "旗山校区",
+      "怡山校区",
+      "铜盘校区",
+      "厦门工艺美院"
+    ]
+  },
+  "academic_standing": {
+    "double_first_class": true,
+    "project_211": true,
+    "esi_top_1_permille": [
+      "化学",
+      "工程学",
+      "材料科学"
+    ],
+    "a_minus_disciplines": [
+      "化学"
+    ]
+  },
+  "key_metrics": {
+    "undergraduate_count": 25000,
+    "postgraduate_count": 15000,
+    "further_study_rate": "38.6%",
+    "employment_rate": "95%+"
+  },
+  "industry_connections": {
+    "strategic_partners": [
+      "宁德时代",
+      "国家电网",
+      "华为"
+    ],
+    "dominant_sectors": [
+      "新能源",
+      "电气工程",
+      "电子信息",
+      "化工"
+    ]
+  },
+  "evaluation_scores": {
+    "academic": 4.1,
+    "employment": 4.2,
+    "location": 4.3,
+    "globalization": 3.6,
+    "student_experience": 3.8,
+    "brand_value": 3.9,
+    "overall_weighted_score": 4.08
+  }
+}

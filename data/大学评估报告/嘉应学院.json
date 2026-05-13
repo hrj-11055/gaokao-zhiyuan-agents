@@ -1,0 +1,37 @@
+{
+  "university_name": "嘉应学院",
+  "short_name": "JYU / 嘉大",
+  "location": {
+    "province": "广东",
+    "city": "梅州",
+    "tier": "三线以下"
+  },
+  "academic_level": {
+    "master_degree_granting_unit": true,
+    "key_disciplines_provincial": 7,
+    "top_disciplines": [
+      "客家学",
+      "体育学(足球)",
+      "农业资源与环境"
+    ]
+  },
+  "admission_stats": {
+    "history_group_rank_avg": 45000,
+    "physics_group_rank_avg": 165000
+  },
+  "employment_profile": {
+    "primary_industry": "Education",
+    "public_sector_rate": "43.07%",
+    "further_study_rate": "16.70%",
+    "alumni_network_strength": "High (East Guangdong)"
+  },
+  "campus_life": {
+    "dormitory_quality": "Mixed",
+    "food_rating": "Excellent",
+    "cultural_identity": "Hakka / Football"
+  },
+  "overall_evaluation": {
+    "score": 2.48,
+    "recommendation_index": "High for pragmatic students"
+  }
+}

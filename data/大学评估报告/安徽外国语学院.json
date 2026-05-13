@@ -1,0 +1,47 @@
+{
+  "university_name": "安徽外国语学院",
+  "short_name": "AISU / 安外",
+  "location": {
+    "province": "安徽",
+    "city": "合肥",
+    "district": "肥西县紫蓬山"
+  },
+  "academic_level": {
+    "type": "民办本科",
+    "master_status": "硕士学位授予立项建设单位",
+    "key_disciplines": [
+      "外国语言文学",
+      "应用经济学"
+    ]
+  },
+  "admission_data": {
+    "avg_rank_liberal_arts": 45000,
+    "avg_rank_science": 190000,
+    "difficulty_level": "Moderate-Low"
+  },
+  "employment_stats": {
+    "employment_rate": "94.2%",
+    "avg_starting_salary": 5200,
+    "top_industry": "Cross-border E-commerce"
+  },
+  "campus_features": {
+    "architectural_style": "European Castle",
+    "vibe": "Active / International"
+  },
+  "risk_assessment": {
+    "major_risks": [
+      "High tuition fees",
+      "Remote location",
+      "Administrative oversight (Medical)"
+    ]
+  },
+  "scores": {
+    "comprehensive_score": 2.79,
+    "academic_capital": 2.1,
+    "graduate_value": 2.8,
+    "location_potential": 3.2,
+    "global_capability": 3.5,
+    "student_empowerment": 3.0,
+    "brand_asset": 3.4
+  }
+}

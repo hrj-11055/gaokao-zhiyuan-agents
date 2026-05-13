@@ -1,0 +1,332 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: site:jnu.edu.cn 毕业生就业质量报告 site:jnu.edu.cn 毕业生就业质量报告
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3Dsite:jnu.edu.cn%2B%25E6%25AF%2595%25E4%25B8%259A%25E7%2594%259F%25E5%25B0%25B1%25E4%25B8%259A%25E8%25B4%25A8%25E9%2587%258F%25E6%258A%25A5%25E5%2591%258A&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGvygM6sIam3D8eQBqs50rx6FFQlRCq3efnjMArc-DNgO9KB_o7gURyx_j3Tx48gEz3Nnpu2IJeB7VNgFkPy8YyfPFcWOu8WFZTag-GR1YMbSRyhDThLGsw10uUKL4UBXQiGBiCVSbMYlLIklK_VEQxhxnQGnA&aep=1&ntc=1&sa=X&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ2J8OegQIEhAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGvygM6sIam3D8eQBqs50rx6FFQlRCq3efnjMArc-DNgO9KB_o7gURyx_j3Tx48gEz3Nnpu2IJeB7VNgFkPy8YyfPFcWOu8WFZTag-GR1YMbSRyhDThLGsw10uUKL4UBXQiGBiCVSbMYlLIklK_VEQxhxnQGnA&sa=X&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ0pQJegQIFBAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "视频" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGvygM6sIam3D8eQBqs50rx6FFQlRCq3efnjMArc-DNgO9KB_o7gURyx_j3Tx48gEz3Nnpu2IJeB7VNgFkPy8YyfPFcWOu8WFZTag-GR1YMbSRyhDThLGsw10uUKL4UBXQiGBiCVSbMYlLIklK_VEQxhxnQGnA&q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sa=X&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQtKgLegQIFRAB
+              - generic [ref=e95]: 视频
+          - listitem [ref=e96]:
+            - link "图片" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGvygM6sIam3D8eQBqs50rx6FFQlRCq3efnjMArc-DNgO9KB_o7gURyx_j3Tx48gEz3Nnpu2IJeB7VNgFkPy8YyfPFcWOu8WFZTag-GR1YMbSRyhDThLGsw10uUKL4UBXQiGBiCVSbMYlLIklK_VEQxhxnQGnA&q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sa=X&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQtKgLegQIFhAB
+              - generic [ref=e99]: 图片
+          - listitem [ref=e100]:
+            - link "购物" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGvygM6sIam3D8eQBqs50rx6FFQlRCq3efnjMArc-DNgO9KB_o7gURyx_j3Tx48gEz3Nnpu2IJeB7VNgFkPy8YyfPFcWOu8WFZTag-GR1YMbSRyhDThLGsw10uUKL4UBXQiGBiCVSbMYlLIklK_VEQxhxnQGnA&q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&ved=1t:220175&ictx=111
+              - generic [ref=e103]: 购物
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGvygM6sIam3D8eQBqs50rx6FFQlRCq3efnjMArc-DNgO9KB_o7gURyx_j3Tx48gEz3Nnpu2IJeB7VNgFkPy8YyfPFcWOu8WFZTag-GR1YMbSRyhDThLGsw10uUKL4UBXQiGBiCVSbMYlLIklK_VEQxhxnQGnA&q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sa=X&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQs6gLegQIGBAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - main [ref=e130]:
+      - generic [ref=e134]:
+        - generic [ref=e137]:
+          - heading "网页搜索结果" [level=2] [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e142]:
+              - link "毕业生就业质量年度报告 - 信息公开- 暨南大学 暨南大学 https://xxgk.jnu.edu.cn › list" [ref=e144] [cursor=pointer]:
+                - /url: https://xxgk.jnu.edu.cn/7604/list.htm
+                - heading "毕业生就业质量年度报告 - 信息公开- 暨南大学" [level=3] [ref=e145]
+                - generic [ref=e147]:
+                  - img [ref=e151]
+                  - generic [ref=e153]:
+                    - generic [ref=e155]: 暨南大学
+                    - generic [ref=e157]: https://xxgk.jnu.edu.cn › list
+              - button "关于这条结果的详细信息" [ref=e158] [cursor=pointer]:
+                - img [ref=e161]
+            - generic [ref=e165]:
+              - emphasis [ref=e166]: 2022年暨南大学毕业生就业质量年度报告
+              - text: · 暨南大学2020年毕业生就业质量年度报告 · 暨南大学2019年毕业生就业质量年度报告 · 暨南大学2016年毕业生就业质量年度报告 · 暨南大学 ...
+        - generic [ref=e170]:
+          - generic [ref=e173]:
+            - link "暨南大学2021年毕业生就业质量年度报告 - 信息公开 暨南大学 https://xxgk.jnu.edu.cn › page" [ref=e175] [cursor=pointer]:
+              - /url: https://xxgk.jnu.edu.cn/2022/0622/c7604a706763/page.htm
+              - heading "暨南大学2021年毕业生就业质量年度报告 - 信息公开" [level=3] [ref=e176]
+              - generic [ref=e178]:
+                - img [ref=e182]
+                - generic [ref=e184]:
+                  - generic [ref=e186]: 暨南大学
+                  - generic [ref=e188]: https://xxgk.jnu.edu.cn › page
+            - button "关于这条结果的详细信息" [ref=e189] [cursor=pointer]:
+              - img [ref=e192]
+          - generic [ref=e196]:
+            - emphasis [ref=e197]: 暨南大学2021年毕业生就业质量年度报告
+            - text: ". 暨南大学2021年毕业生就业质量年度报告.pdf. 受理部门: 暨南大学信息公开办公室: 电话：85220016: 邮箱：Oxxk@jnu.edu.cn."
+        - generic [ref=e201]:
+          - generic [ref=e204]:
+            - link "毕业生就业质量年度报告 - 信息公开- 暨南大学 暨南大学 https://xxgk.jnu.edu.cn › _upload › article › files" [ref=e206] [cursor=pointer]:
+              - /url: https://xxgk.jnu.edu.cn/_upload/article/files/d0/2e/b349fab04d8aac80f3c86eaa6ba6/ca0b7e6a-1ad4-4fa8-b5c6-82a06c3e3c84.pdf
+              - heading "毕业生就业质量年度报告 - 信息公开- 暨南大学" [level=3] [ref=e207]
+              - generic [ref=e209]:
+                - img [ref=e213]
+                - generic [ref=e215]:
+                  - generic [ref=e217]: 暨南大学
+                  - generic [ref=e219]: https://xxgk.jnu.edu.cn › _upload › article › files
+            - generic [ref=e220]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e221] [cursor=pointer]:
+              - img [ref=e224]
+          - generic [ref=e226]:
+            - generic [ref=e228]:
+              - text: 2. 第三方专业机构麦可思所实施的应届
+              - emphasis [ref=e229]: 毕业生
+              - text: 培养
+              - emphasis [ref=e230]: 质量
+              - text: 评价项目，调查面向2020. 届本科、硕士、博士
+              - emphasis [ref=e231]: 毕业生
+              - text: ，分别回收问卷3025 份、1424 份、119 份，主要涵盖就. 业特点、
+              - emphasis [ref=e232]: 就业
+              - text: ...
+            - generic [ref=e233]: 108 页
+        - generic [ref=e237]:
+          - generic [ref=e240]:
+            - link "2022年暨南大学毕业生就业质量年度报告 - 信息公开 暨南大学 https://xxgk.jnu.edu.cn › page" [ref=e242] [cursor=pointer]:
+              - /url: https://xxgk.jnu.edu.cn/2023/0224/c7604a736721/page.htm
+              - heading "2022年暨南大学毕业生就业质量年度报告 - 信息公开" [level=3] [ref=e243]
+              - generic [ref=e245]:
+                - img [ref=e249]
+                - generic [ref=e251]:
+                  - generic [ref=e253]: 暨南大学
+                  - generic [ref=e255]: https://xxgk.jnu.edu.cn › page
+            - button "关于这条结果的详细信息" [ref=e256] [cursor=pointer]:
+              - img [ref=e259]
+          - generic [ref=e263]:
+            - emphasis [ref=e264]: 2022年暨南大学毕业生就业质量年度报告
+            - text: ". 2022年暨南大学毕业生就业质量年度报告.pdf. 受理部门: 暨南大学信息公开办公室: 电话：85220016: 邮箱：Oxxk@jnu.edu.cn."
+        - generic [ref=e268]:
+          - generic [ref=e271]:
+            - link "毕业生就业质量年度报告 暨南大学 https://xxgk.jnu.edu.cn › _upload › article › files" [ref=e273] [cursor=pointer]:
+              - /url: https://xxgk.jnu.edu.cn/_upload/article/files/93/6e/4a549c57484a8c1c8e4d567cd3ed/33dd0736-aa90-461b-9bcc-5e3aa5f9d06a.pdf
+              - heading "毕业生就业质量年度报告" [level=3] [ref=e274]
+              - generic [ref=e276]:
+                - img [ref=e280]
+                - generic [ref=e282]:
+                  - generic [ref=e284]: 暨南大学
+                  - generic [ref=e286]: https://xxgk.jnu.edu.cn › _upload › article › files
+            - generic [ref=e287]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e288] [cursor=pointer]:
+              - img [ref=e291]
+          - generic [ref=e293]:
+            - generic [ref=e295]:
+              - emphasis [ref=e296]: 毕业生
+              - text: 调研数据：调查面向全校2021 届
+              - emphasis [ref=e297]: 毕业生
+              - text: ，. 共回收本科有效问卷2289 份，回收硕士有效问卷1392. 份，回收博士问卷114 份，主要涵盖
+              - emphasis [ref=e298]: 就业
+              - text: 特点、
+              - emphasis [ref=e299]: 就业
+              - text: . 相关分析、
+              - emphasis [ref=e300]: 就业
+              - text: 对教育 ...
+            - generic [ref=e301]: 74 页
+        - generic [ref=e305]:
+          - generic [ref=e308]:
+            - link "目录 - 信息公开- 暨南大学 暨南大学 https://xxgk.jnu.edu.cn › _upload › article › files" [ref=e310] [cursor=pointer]:
+              - /url: https://xxgk.jnu.edu.cn/_upload/article/files/5c/4d/e69060a54c64b596bb4a47627f8a/cec3f5eb-e8ec-4c42-89b2-dfd64be902ba.pdf
+              - heading "目录 - 信息公开- 暨南大学" [level=3] [ref=e311]
+              - generic [ref=e313]:
+                - img [ref=e317]
+                - generic [ref=e319]:
+                  - generic [ref=e321]: 暨南大学
+                  - generic [ref=e323]: https://xxgk.jnu.edu.cn › _upload › article › files
+            - generic [ref=e324]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e325] [cursor=pointer]:
+              - img [ref=e328]
+          - generic [ref=e330]:
+            - generic [ref=e332]:
+              - text: 就业. 基本情况. Page 17.
+              - emphasis [ref=e333]: 2022 年毕业生就业质量年度报告
+              - text: . 11. 第一章就业基本情况. 本章从毕业生规模与结构、毕业去向落实率、就业流向几个方面对暨南大学毕. 业生就业 ...
+            - generic [ref=e334]: 79 页
+        - generic [ref=e338]:
+          - generic [ref=e341]:
+            - link "本科教学质量报告 - 信息公开- 暨南大学 暨南大学 https://xxgk.jnu.edu.cn › list" [ref=e343] [cursor=pointer]:
+              - /url: https://xxgk.jnu.edu.cn/7606/list.htm
+              - heading "本科教学质量报告 - 信息公开- 暨南大学" [level=3] [ref=e344]
+              - generic [ref=e346]:
+                - img [ref=e350]
+                - generic [ref=e352]:
+                  - generic [ref=e354]: 暨南大学
+                  - generic [ref=e356]: https://xxgk.jnu.edu.cn › list
+            - button "关于这条结果的详细信息" [ref=e357] [cursor=pointer]:
+              - img [ref=e360]
+          - generic [ref=e363]:
+            - generic [ref=e364]: 2024年12月20日 —
+            - generic [ref=e365]:
+              - text: ... 质量. 基本数据 · 专业设置 · 课程设置 · 学生就业 ·
+              - emphasis [ref=e366]: 毕业生就业质量年度报告
+              - text: · 艺术教育发展年度报告 · 本科教学质量报告. >学生管理. 学籍管理办法 ...
+        - generic [ref=e370]:
+          - generic [ref=e373]:
+            - link "关于发布《2022年暨南大学毕业生就业质量年度报告》的公告 暨南大学 https://career.jnu.edu.cn › page" [ref=e375] [cursor=pointer]:
+              - /url: https://career.jnu.edu.cn/2022/1231/c28885a734171/page.htm
+              - heading "关于发布《2022年暨南大学毕业生就业质量年度报告》的公告" [level=3] [ref=e376]
+              - generic [ref=e381]:
+                - generic [ref=e383]: 暨南大学
+                - generic [ref=e385]: https://career.jnu.edu.cn › page
+            - button "关于这条结果的详细信息" [ref=e386] [cursor=pointer]:
+              - img [ref=e389]
+          - generic [ref=e392]:
+            - generic [ref=e393]: 2022年12月31日 —
+            - generic [ref=e394]:
+              - text: 现公布《2022年暨南大学
+              - emphasis [ref=e395]: 毕业生就业质量
+              - text: 年度
+              - emphasis [ref=e396]: 报告
+              - text: 》，感谢所有一直以来关心关爱暨南学子成长成才的社会各界，感谢为学校学生
+              - emphasis [ref=e397]: 就业
+              - text: 工作付出辛勤劳动的老师和同学 ...
+        - generic [ref=e401]:
+          - generic [ref=e404]:
+            - link "就业质量报告 暨南大学伯明翰大学联合学院 https://birmingham.jnu.edu.cn › list" [ref=e406] [cursor=pointer]:
+              - /url: https://birmingham.jnu.edu.cn/37957/list.htm
+              - heading "就业质量报告" [level=3] [ref=e407]
+              - generic [ref=e412]:
+                - generic [ref=e414]: 暨南大学伯明翰大学联合学院
+                - generic [ref=e416]: https://birmingham.jnu.edu.cn › list
+            - button "关于这条结果的详细信息" [ref=e417] [cursor=pointer]:
+              - img [ref=e420]
+          - generic [ref=e424]:
+            - text: 首轮告捷！2023届
+            - emphasis [ref=e425]: 毕业生
+            - text: 首波
+            - emphasis [ref=e426]: 就业
+            - text: 喜报来啦！ · 暨伯喜讯| “双一流”和出国（境）深造率创新高！2022届暨伯学子表现抢眼 · 暨伯喜讯| 暨伯学院2021届学子海外升学首战报捷！
+        - generic [ref=e430]:
+          - generic [ref=e433]:
+            - link "2018 年度毕业生就业质量报告 - 信息公开- 暨南大学 暨南大学 https://xxgk.jnu.edu.cn › _upload › article › files" [ref=e435] [cursor=pointer]:
+              - /url: https://xxgk.jnu.edu.cn/_upload/article/files/c2/22/22976f3044719592944da9635f17/8cc2f192-1dd5-4839-b702-9370e9681156.pdf
+              - heading "2018 年度毕业生就业质量报告 - 信息公开- 暨南大学" [level=3] [ref=e436]
+              - generic [ref=e438]:
+                - img [ref=e442]
+                - generic [ref=e444]:
+                  - generic [ref=e446]: 暨南大学
+                  - generic [ref=e448]: https://xxgk.jnu.edu.cn › _upload › article › files
+            - generic [ref=e449]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e450] [cursor=pointer]:
+              - img [ref=e453]
+          - generic [ref=e455]:
+            - generic [ref=e457]:
+              - text: 各类
+              - emphasis [ref=e458]: 就业
+              - text: 创业指导、教育、实践活动的有效开展进一步提高了学生的职业发展. 能力，完善了学生职业发展教育和
+              - emphasis [ref=e459]: 就业
+              - text: 创业支持体系。 三、畅通
+              - emphasis [ref=e460]: 毕业生就业
+              - text: 渠道，拓宽学生实习实践和 ...
+            - generic [ref=e461]: 86 页
+      - navigation [ref=e464]:
+        - heading "网页导航" [level=1] [ref=e465]
+        - text: "1"
+        - link "Page 2" [ref=e468] [cursor=pointer]:
+          - /url: /search?q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sca_esv=164079556523993e&ei=i27uaYGeIL6MmLQPgdetsAg&start=10&sa=N&sstk=Af77f_efWHu-_Mx6EIcNVYhfxFGZdZ1mt55Pui_pRm4W2FoM_aEQJytiRABZD3Ciak1h54oeHaDhBEwWlC3bSdHr6RQ5YXF3EXqETg&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ8tMDegQIKxAE
+          - text: "2"
+        - link "Page 3" [ref=e470] [cursor=pointer]:
+          - /url: /search?q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sca_esv=164079556523993e&ei=i27uaYGeIL6MmLQPgdetsAg&start=20&sa=N&sstk=Af77f_efWHu-_Mx6EIcNVYhfxFGZdZ1mt55Pui_pRm4W2FoM_aEQJytiRABZD3Ciak1h54oeHaDhBEwWlC3bSdHr6RQ5YXF3EXqETg&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ8tMDegQIKxAG
+          - text: "3"
+        - link "Page 4" [ref=e472] [cursor=pointer]:
+          - /url: /search?q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sca_esv=164079556523993e&ei=i27uaYGeIL6MmLQPgdetsAg&start=30&sa=N&sstk=Af77f_efWHu-_Mx6EIcNVYhfxFGZdZ1mt55Pui_pRm4W2FoM_aEQJytiRABZD3Ciak1h54oeHaDhBEwWlC3bSdHr6RQ5YXF3EXqETg&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ8tMDegQIKxAI
+          - text: "4"
+        - link "Page 5" [ref=e474] [cursor=pointer]:
+          - /url: /search?q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sca_esv=164079556523993e&ei=i27uaYGeIL6MmLQPgdetsAg&start=40&sa=N&sstk=Af77f_efWHu-_Mx6EIcNVYhfxFGZdZ1mt55Pui_pRm4W2FoM_aEQJytiRABZD3Ciak1h54oeHaDhBEwWlC3bSdHr6RQ5YXF3EXqETg&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ8tMDegQIKxAK
+          - text: "5"
+        - link "Page 6" [ref=e476] [cursor=pointer]:
+          - /url: /search?q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sca_esv=164079556523993e&ei=i27uaYGeIL6MmLQPgdetsAg&start=50&sa=N&sstk=Af77f_efWHu-_Mx6EIcNVYhfxFGZdZ1mt55Pui_pRm4W2FoM_aEQJytiRABZD3Ciak1h54oeHaDhBEwWlC3bSdHr6RQ5YXF3EXqETg&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ8tMDegQIKxAM
+          - text: "6"
+        - link "Page 7" [ref=e478] [cursor=pointer]:
+          - /url: /search?q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sca_esv=164079556523993e&ei=i27uaYGeIL6MmLQPgdetsAg&start=60&sa=N&sstk=Af77f_efWHu-_Mx6EIcNVYhfxFGZdZ1mt55Pui_pRm4W2FoM_aEQJytiRABZD3Ciak1h54oeHaDhBEwWlC3bSdHr6RQ5YXF3EXqETg&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ8tMDegQIKxAO
+          - text: "7"
+        - link "Page 8" [ref=e480] [cursor=pointer]:
+          - /url: /search?q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sca_esv=164079556523993e&ei=i27uaYGeIL6MmLQPgdetsAg&start=70&sa=N&sstk=Af77f_efWHu-_Mx6EIcNVYhfxFGZdZ1mt55Pui_pRm4W2FoM_aEQJytiRABZD3Ciak1h54oeHaDhBEwWlC3bSdHr6RQ5YXF3EXqETg&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ8tMDegQIKxAQ
+          - text: "8"
+        - link "Page 9" [ref=e482] [cursor=pointer]:
+          - /url: /search?q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sca_esv=164079556523993e&ei=i27uaYGeIL6MmLQPgdetsAg&start=80&sa=N&sstk=Af77f_efWHu-_Mx6EIcNVYhfxFGZdZ1mt55Pui_pRm4W2FoM_aEQJytiRABZD3Ciak1h54oeHaDhBEwWlC3bSdHr6RQ5YXF3EXqETg&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ8tMDegQIKxAS
+          - text: "9"
+        - heading "下一页" [level=2] [ref=e484]:
+          - link "下一页" [ref=e485] [cursor=pointer]:
+            - /url: /search?q=site:jnu.edu.cn+%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A&sca_esv=164079556523993e&ei=i27uaYGeIL6MmLQPgdetsAg&start=10&sa=N&sstk=Af77f_efWHu-_Mx6EIcNVYhfxFGZdZ1mt55Pui_pRm4W2FoM_aEQJytiRABZD3Ciak1h54oeHaDhBEwWlC3bSdHr6RQ5YXF3EXqETg&ved=2ahUKEwjBj6LypoyUAxU-BoYAHYFrC4YQ8NMDegQIKxAU
+            - generic [ref=e487]: 下一页
+      - navigation
+    - contentinfo [ref=e488]:
+      - heading "页脚链接" [level=1] [ref=e489]
+      - generic [ref=e493]:
+        - generic [ref=e497]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e499] [cursor=pointer]:
+            - generic [ref=e500]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e502]:
+              - text: "-"
+              - generic [ref=e503]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e505] [cursor=pointer]: 更新位置信息
+        - generic [ref=e508]:
+          - link "帮助" [ref=e509] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e510] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e511] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e512] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

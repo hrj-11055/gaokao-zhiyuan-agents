@@ -1,0 +1,44 @@
+{
+  "university_name": "香港科技大学（广州）",
+  "abbreviation": "HKUST(GZ)",
+  "established_year": 2022,
+  "location": {
+    "city": "广州",
+    "district": "南沙",
+    "region": "粤港澳大湾区"
+  },
+  "academic_structure": {
+    "type": "Hub-based",
+    "hubs": [
+      "Function",
+      "Information",
+      "Systems",
+      "Society"
+    ],
+    "faculty_top_2_percent_count": 48
+  },
+  "admission_stats": {
+    "2025_guangdong_phys_rank": 1425,
+    "2024_guangdong_phys_rank": 7500,
+    "major_selection_policy": "100% Free choice at Year 2"
+  },
+  "employment_and_further_study": {
+    "msc_starting_salary_median": 16930,
+    "top_employers": [
+      "Huawei",
+      "Tencent",
+      "DJI",
+      "Pony.ai"
+    ],
+    "special_policy": "IANG Visa Eligible"
+  },
+  "quantitative_scores": {
+    "academic_capital": 4.7,
+    "employment_value": 4.6,
+    "location_potential": 4.8,
+    "globalization": 4.7,
+    "student_empowerment": 4.9,
+    "brand_asset": 4.3,
+    "overall_weighted_score": 4.66
+  }
+}

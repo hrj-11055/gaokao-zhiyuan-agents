@@ -1,0 +1,349 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjsg42Ds4yUAxXrtisGHZYhHiQQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 中山大学 保送生 录取名单 2024 2025 人数 中山大学 保送生 录取名单 2024 2025 人数
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E4%25B8%25AD%25E5%25B1%25B1%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E4%25BF%259D%25E9%2580%2581%25E7%2594%259F%2B%25E5%25BD%2595%25E5%258F%2596%25E5%2590%258D%25E5%258D%2595%2B2024%2B2025%2B%25E4%25BA%25BA%25E6%2595%25B0&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2024+2025+%E4%BA%BA%E6%95%B0&sca_esv=50e2bf8f38455036&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&aep=1&ntc=1&sa=X&ved=2ahUKEwjsg42Ds4yUAxXrtisGHZYhHiQQ2J8OegQIEBAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2024+2025+%E4%BA%BA%E6%95%B0&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&sa=X&ved=2ahUKEwjsg42Ds4yUAxXrtisGHZYhHiQQ0pQJegQIEhAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "购物" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2024+2025+%E4%BA%BA%E6%95%B0&ved=1t:220175&ictx=111
+              - generic [ref=e95]: 购物
+          - listitem [ref=e96]:
+            - link "图片" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2024+2025+%E4%BA%BA%E6%95%B0&sa=X&ved=2ahUKEwjsg42Ds4yUAxXrtisGHZYhHiQQtKgLegQIFBAB
+              - generic [ref=e99]: 图片
+          - listitem [ref=e100]:
+            - link "视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2024+2025+%E4%BA%BA%E6%95%B0&sa=X&ved=2ahUKEwjsg42Ds4yUAxXrtisGHZYhHiQQtKgLegQIFhAB
+              - generic [ref=e103]: 视频
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovh-KRi85amxh51BfPpc3nkZiS5qYq0CI5mOCkS0Gk8XsMIh-lNVYyvfWitiGXloSFUioOtd4ibEjTC1uwHS90zYYKJCFmhiF8Vd7AHK5triUp-rbRdO_s3hqdxT2wAvxaS2MAdqcLL3TstOZkwVHO1xsJ1vA&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2024+2025+%E4%BA%BA%E6%95%B0&sa=X&ved=2ahUKEwjsg42Ds4yUAxXrtisGHZYhHiQQs6gLegQIFRAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - generic [ref=e151]:
+          - generic [ref=e153]:
+            - generic [ref=e155]:
+              - generic [ref=e156]:
+                - img [ref=e157]
+                - heading "AI 概览" [level=2] [ref=e159]
+              - button "关于这条结果的详细信息" [ref=e163]:
+                - img [ref=e165]
+            - generic [ref=e191]:
+              - text: 中山大学2024年保送生（主要为外国语中学优秀学生）拟录取16人，2025年外语类保送生拟录取10人，录取类型包含奥赛国家集训队和外国语中学优秀学生。此外，学校面向澳门地区通常设有专项保送（名额较多，约百余人）。录取名单主要在中山大学本科招生网及相关升学平台公布。
+              - button "北京高考在线（+3 个）- 查看相关链接" [disabled] [ref=e194]:
+                - generic [ref=e195]:
+                  - img "北京高考在线" [ref=e196]
+                  - generic [ref=e197]:
+                    - generic [ref=e198]: 北京高考在线
+                    - generic [ref=e199]: "+3"
+          - progressbar [ref=e205]
+        - button "显示更多 AI 概览" [ref=e229]:
+          - generic [ref=e231] [cursor=pointer]:
+            - generic [ref=e232]: 展开
+            - img [ref=e234]
+      - main [ref=e237]:
+        - generic [ref=e241]:
+          - generic [ref=e244]:
+            - heading "网页搜索结果" [level=2] [ref=e245]
+            - generic [ref=e246]:
+              - generic [ref=e249]:
+                - link "中山大学2024年保送生拟录取名单 北京高考在线 https://www.gaokzx.com › jianzhang" [ref=e251] [cursor=pointer]:
+                  - /url: https://www.gaokzx.com/gk/jianzhang/122357.html
+                  - heading "中山大学2024年保送生拟录取名单" [level=3] [ref=e252]
+                  - generic [ref=e257]:
+                    - generic [ref=e259]: 北京高考在线
+                    - generic [ref=e261]: https://www.gaokzx.com › jianzhang
+                - button "关于这条结果的详细信息" [ref=e262] [cursor=pointer]:
+                  - img [ref=e265]
+              - generic [ref=e269]:
+                - emphasis [ref=e270]: 中山大学2024
+                - text: 年
+                - emphasis [ref=e271]: 保送生
+                - text: 拟
+                - emphasis [ref=e272]: 录取名单
+                - text: 公布，
+                - emphasis [ref=e273]: 中山大学
+                - text: 拟录取16名学生，本文整理了相关内容，供考生参考。 近日，
+                - emphasis [ref=e274]: 中山大学2024
+                - text: 年
+                - emphasis [ref=e275]: 保送生
+                - text: 拟
+                - emphasis [ref=e276]: 录取名单
+                - text: 公布，其中包含外国语中学 ...
+          - generic [ref=e281]:
+            - heading "相关问题" [level=2] [ref=e283]
+            - generic [ref=e284]:
+              - button "中山大学最好的专业？" [ref=e290] [cursor=pointer]:
+                - generic [ref=e292]: 中山大学最好的专业？
+                - img [ref=e295]
+              - button "中山大学招生人数？" [ref=e304] [cursor=pointer]:
+                - generic [ref=e306]: 中山大学招生人数？
+                - img [ref=e309]
+              - button "中山大学 一流学科？" [ref=e318] [cursor=pointer]:
+                - generic [ref=e320]: 中山大学 一流学科？
+                - img [ref=e323]
+              - button "中山大学什么水平？" [ref=e332] [cursor=pointer]:
+                - generic [ref=e334]: 中山大学什么水平？
+                - img [ref=e337]
+          - generic [ref=e342]:
+            - heading "网页搜索结果" [level=2] [ref=e343]
+            - generic [ref=e344]:
+              - generic [ref=e347]:
+                - link "3084人！超六成院系扩招！中山大学2025年保研情况出炉！ 自主选拔在线 https://www.zizzs.com › guangdongxingaokao" [ref=e349] [cursor=pointer]:
+                  - /url: https://www.zizzs.com/gk/guangdongxingaokao/183756.html
+                  - heading "3084人！超六成院系扩招！中山大学2025年保研情况出炉！" [level=3] [ref=e350]
+                  - generic [ref=e355]:
+                    - generic [ref=e357]: 自主选拔在线
+                    - generic [ref=e359]: https://www.zizzs.com › guangdongxingaokao
+                - button "关于这条结果的详细信息" [ref=e360] [cursor=pointer]:
+                  - img [ref=e363]
+              - generic [ref=e366]:
+                - generic [ref=e367]: 2024年11月4日 —
+                - generic [ref=e368]:
+                  - emphasis [ref=e369]: 中山大学2025
+                  - text: 年有77个招生单位招收硕士推免生，其中拟
+                  - emphasis [ref=e370]: 录取人数
+                  - text: 最多的是计算机学院，拟
+                  - emphasis [ref=e371]: 录取
+                  - text: 227人；其次是
+                  - emphasis [ref=e372]: 中山大学
+                  - text: 附属第一医院，拟
+                  - emphasis [ref=e373]: 录取
+                  - text: 101人；岭南学院拟
+                  - emphasis [ref=e374]: 录取
+                  - text: 推 ...
+              - generic [ref=e376]:
+                - text: 缺少字词： 保送 ‎| 必须包含：
+                - link "保送" [ref=e377] [cursor=pointer]:
+                  - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%22%E4%BF%9D%E9%80%81%22+%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2024+2025+%E4%BA%BA%E6%95%B0&sa=X&ved=2ahUKEwjsg42Ds4yUAxXrtisGHZYhHiQQ5t4CegQIQxAB
+          - generic [ref=e381]:
+            - generic [ref=e384]:
+              - link "中山大学2025年外语类保送生招生简章 高考直通车App https://app.gaokaozhitongche.com › newsguide" [ref=e386] [cursor=pointer]:
+                - /url: https://app.gaokaozhitongche.com/newsguide/h/vGVJ4MDG
+                - heading "中山大学2025年外语类保送生招生简章" [level=3] [ref=e387]
+                - generic [ref=e392]:
+                  - generic [ref=e394]: 高考直通车App
+                  - generic [ref=e396]: https://app.gaokaozhitongche.com › newsguide
+              - button "关于这条结果的详细信息" [ref=e397] [cursor=pointer]:
+                - img [ref=e400]
+            - generic [ref=e403]:
+              - generic [ref=e404]: 2024年12月27日 —
+              - generic [ref=e405]:
+                - text: 学生于
+                - emphasis [ref=e406]: "2025"
+                - text: 年1月9日登录报名系统查询初审结果，通过资格审查的学生应于
+                - emphasis [ref=e407]: "2025"
+                - text: 年1月14日登录报名平台自行打印准考证。 二 ...
+          - generic [ref=e411]:
+            - generic [ref=e414]:
+              - link "中山大学2025年外语类保送生招生简章 掌上高考 https://m.gaokao.cn › school › newsdetail" [ref=e416] [cursor=pointer]:
+                - /url: https://m.gaokao.cn/school/104/newsdetail/68000/216467
+                - heading "中山大学2025年外语类保送生招生简章" [level=3] [ref=e417]
+                - generic [ref=e422]:
+                  - generic [ref=e424]: 掌上高考
+                  - generic [ref=e426]: https://m.gaokao.cn › school › newsdetail
+              - button "关于这条结果的详细信息" [ref=e427] [cursor=pointer]:
+                - img [ref=e430]
+            - generic [ref=e434]:
+              - text: 学生于
+              - emphasis [ref=e435]: "2025"
+              - text: 年1月9日登录报名系统查询初审结果，通过资格审查的学生应于
+              - emphasis [ref=e436]: "2025"
+              - text: 年1月14日登录报名平台自行打印准考证。 二、测试 ...
+          - generic [ref=e440]:
+            - generic [ref=e443]:
+              - link "2025中山大学录取规则及投档比例 大学生必备网 https://www.dxsbb.com › news" [ref=e445] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/108157.html
+                - heading "2025中山大学录取规则及投档比例" [level=3] [ref=e446]
+                - generic [ref=e451]:
+                  - generic [ref=e453]: 大学生必备网
+                  - generic [ref=e455]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e456] [cursor=pointer]:
+                - img [ref=e459]
+            - generic [ref=e462]:
+              - generic [ref=e463]: 2025年6月3日 —
+              - generic [ref=e464]:
+                - text: 本文为大家整理的是
+                - emphasis [ref=e465]: 2025中山大学录取
+                - text: 规则，主要包含投档比例、专业分配、调剂规则、身体要求等信息，以下是详细内容，供大家参考，如有变动，以学校最新 ...
+          - generic [ref=e469]:
+            - generic [ref=e472]:
+              - link "2026年招收澳門保送生之普通高校名單 教育及青年發展局 https://appl2.dsedj.gov.mo › UPublic › EnrollmentBrief" [ref=e474] [cursor=pointer]:
+                - /url: https://appl2.dsedj.gov.mo/ChinaUEnrollment/UPublic/EnrollmentBrief.jsp
+                - heading "2026年招收澳門保送生之普通高校名單" [level=3] [ref=e475]
+                - generic [ref=e480]:
+                  - generic [ref=e482]: 教育及青年發展局
+                  - generic [ref=e484]: https://appl2.dsedj.gov.mo › UPublic › EnrollmentBrief
+              - button "关于这条结果的详细信息" [ref=e485] [cursor=pointer]:
+                - img [ref=e488]
+            - generic [ref=e492]:
+              - text: 面试, 連結. 88, 广东省,
+              - emphasis [ref=e493]: 中山大学
+              - text: ", 130, 笔试, 笔试（语数英）：考查语文、数学 ... 各专业"
+              - emphasis [ref=e494]: 录取人数
+              - text: 不超过3人。 連結. 124, 甘肃省, 兰州大学, 2, 面试, 連結. 125, 云南省 ...
+          - generic [ref=e498]:
+            - generic [ref=e501]:
+              - link "中山大学2025年外语类保送生拟录取名单 自主选拔在线 https://www.zizzs.com › qiangjijihua" [ref=e503] [cursor=pointer]:
+                - /url: https://www.zizzs.com/gk/qiangjijihua/200052.html
+                - heading "中山大学2025年外语类保送生拟录取名单" [level=3] [ref=e504]
+                - generic [ref=e509]:
+                  - generic [ref=e511]: 自主选拔在线
+                  - generic [ref=e513]: https://www.zizzs.com › qiangjijihua
+              - button "关于这条结果的详细信息" [ref=e514] [cursor=pointer]:
+                - img [ref=e517]
+            - generic [ref=e520]:
+              - generic [ref=e521]: 2025年5月16日 —
+              - generic [ref=e522]:
+                - text: 经严格选拔与综合评审，
+                - emphasis [ref=e523]: 中山大学2025
+                - text: 年外语类
+                - emphasis [ref=e524]: 保送生
+                - text: 拟录取工作已顺利结束。现正式公布拟
+                - emphasis [ref=e525]: 录取名单
+                - text: ，共有10名优秀考生脱颖而出，成功入选。
+          - generic [ref=e529]:
+            - generic [ref=e532]:
+              - link "中山大学2024 年澳门保送生招生简章 Scribd https://www.scribd.com › document › 中山大学" [ref=e534] [cursor=pointer]:
+                - /url: https://www.scribd.com/document/759051108/%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6
+                - heading "中山大学2024 年澳门保送生招生简章" [level=3] [ref=e535]
+                - generic [ref=e540]:
+                  - generic [ref=e542]: Scribd
+                  - generic [ref=e544]: https://www.scribd.com › document › 中山大学
+              - button "关于这条结果的详细信息" [ref=e545] [cursor=pointer]:
+                - img [ref=e548]
+            - generic [ref=e552]:
+              - text: 4．凡具有
+              - emphasis [ref=e553]: 中山大学
+              - text: 正式学籍的学生，在规定修业期限内，完成规定的课程修读 ...
+              - emphasis [ref=e554]: "2024"
+              - text: 年中國內地普通高校聯合招收澳門
+              - emphasis [ref=e555]: 保送生
+              - text: 總
+              - emphasis [ref=e556]: 錄取名單
+              - text: . 62 pages.
+              - emphasis [ref=e557]: "2024"
+              - text: 年中國內地 ...
+          - generic [ref=e561]:
+            - generic [ref=e564]:
+              - link "中山大学- 2025年面向港澳台僑招生简章 chinaschool.com.cn https://www.chinaschool.com.cn › 19_guangdong › ho..." [ref=e566] [cursor=pointer]:
+                - /url: https://www.chinaschool.com.cn/o_abc/19_guangdong/home_19_guangdong_a_1.html
+                - heading "中山大学- 2025年面向港澳台僑招生简章" [level=3] [ref=e567]
+                - generic [ref=e572]:
+                  - generic [ref=e574]: chinaschool.com.cn
+                  - generic [ref=e576]: https://www.chinaschool.com.cn › 19_guangdong › ho...
+              - button "关于这条结果的详细信息" [ref=e577] [cursor=pointer]:
+                - img [ref=e580]
+            - generic [ref=e584]:
+              - text: 1．招生计划：130名。 2．招生专业：详见《
+              - emphasis [ref=e585]: 中山大学2025
+              - text: 年澳门
+              - emphasis [ref=e586]: 保送生
+              - text: 招生专业表》（附件）。 三、保送条件.
+          - generic [ref=e590]:
+            - generic [ref=e593]:
+              - link "2025中山大学招收澳门保送生的人数 抖音 https://www.douyin.com › search › 2025中山大学招收..." [ref=e595] [cursor=pointer]:
+                - /url: https://www.douyin.com/search/2025%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6%E6%8B%9B%E6%94%B6%E6%BE%B3%E9%97%A8%E4%BF%9D%E9%80%81%E7%94%9F%E7%9A%84%E4%BA%BA%E6%95%B0
+                - heading "2025中山大学招收澳门保送生的人数" [level=3] [ref=e596]
+                - generic [ref=e601]:
+                  - generic [ref=e603]: 抖音
+                  - generic [ref=e605]: https://www.douyin.com › search › 2025中山大学招收...
+              - button "关于这条结果的详细信息" [ref=e606] [cursor=pointer]:
+                - img [ref=e609]
+            - generic [ref=e613]:
+              - emphasis [ref=e614]: 中山大学2025录取名单
+              - text: 公布！
+              - emphasis [ref=e615]: 中山大学2025
+              - text: 综合评价
+              - emphasis [ref=e616]: 录取名单
+              - text: "公布，共有495名广东考生被录取！ #广东高考#2025高考#高考录取#中山大学#综合评价. 刚刚！"
+              - emphasis [ref=e617]: 中山大学2025录取名单
+              - text: 公布！
+        - generic [ref=e619]:
+          - generic [ref=e620]:
+            - heading "关于过滤结果的声明" [level=2] [ref=e621]
+            - paragraph [ref=e623]:
+              - generic [ref=e624]:
+                - text: 为了向您显示相关程度最高的结果，我们省略了一些与已显示的 10 条结果极为相似的条目。
+                - text: 如有需要，您可以
+                - link "重新搜索以显示省略的结果" [ref=e625] [cursor=pointer]:
+                  - /url: /search?q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+2024+2025+%E4%BA%BA%E6%95%B0&sca_esv=50e2bf8f38455036&filter=0
+                - text: 。
+          - navigation
+        - navigation
+    - contentinfo [ref=e626]:
+      - heading "页脚链接" [level=1] [ref=e627]
+      - generic [ref=e631]:
+        - generic [ref=e635]:
+          - button "Hyde Park, 波士顿麻萨诸塞州 - 根据您的活动记录" [ref=e637] [cursor=pointer]:
+            - generic [ref=e638]: Hyde Park, 波士顿麻萨诸塞州
+            - generic [ref=e640]:
+              - text: "-"
+              - generic [ref=e641]: 根据您的活动记录
+          - text: "-"
+          - button "更新位置信息" [ref=e643] [cursor=pointer]: 更新位置信息
+        - generic [ref=e646]:
+          - link "帮助" [ref=e647] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e648] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e649] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e650] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

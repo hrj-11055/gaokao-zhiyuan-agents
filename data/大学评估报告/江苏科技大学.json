@@ -1,0 +1,57 @@
+{
+  "university_name": "江苏科技大学",
+  "short_name": "JUST",
+  "location": {
+    "province": "江苏",
+    "city": "镇江",
+    "campus": [
+      "长山校区",
+      "梦溪校区",
+      "张家港校区"
+    ]
+  },
+  "academic_ranking": {
+    "shanghai_ranking_2025": 144,
+    "esi_top_1_percent_disciplines": 6
+  },
+  "core_disciplines": [
+    {
+      "name": "船舶与海洋工程",
+      "level": "C+"
+    },
+    {
+      "name": "材料科学与工程",
+      "level": "B-"
+    },
+    {
+      "name": "管理科学与工程",
+      "level": "B-"
+    }
+  ],
+  "employment_stats": {
+    "overall_employment_rate": "93.88%",
+    "further_study_rate": "28.5%",
+    "major_employers": [
+      "CSSC",
+      "招商局重工",
+      "中远海运"
+    ],
+    "avg_starting_salary": 6199
+  },
+  "risk_factors": [
+    {
+      "type": "Academic Integrity",
+      "event": "2025 Chief Scientist Scandal",
+      "status": "Under Rectification"
+    }
+  ],
+  "evaluation_scores": {
+    "academic_capital": 3.2,
+    "employment_value": 3.6,
+    "location_advantage": 3.8,
+    "globalization": 3.1,
+    "student_empowerment": 3.4,
+    "brand_asset": 3.1,
+    "weighted_total_score": 3.4
+  }
+}

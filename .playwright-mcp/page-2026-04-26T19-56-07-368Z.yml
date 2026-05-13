@@ -1,0 +1,2072 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]: 欢迎访问大学生必备网！
+    - generic [ref=e5]:
+      - link "我要纠错" [ref=e6] [cursor=pointer]:
+        - /url: /about/contact.html
+      - link "加入收藏" [ref=e7] [cursor=pointer]:
+        - /url: javascript:void(0);
+  - generic [ref=e9]:
+    - link "大学生必备网" [ref=e11] [cursor=pointer]:
+      - /url: /
+      - img "大学生必备网" [ref=e12]
+    - generic [ref=e14]:
+      - textbox [ref=e15]: 请输入要搜索的内容
+      - button "搜索" [ref=e16] [cursor=pointer]
+  - generic [ref=e18]:
+    - list:
+      - listitem [ref=e19]:
+        - link "首页" [ref=e20] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e21]:
+        - link "高考动态" [ref=e22] [cursor=pointer]:
+          - /url: /news/list_97.html
+      - listitem [ref=e23]:
+        - link "高考分数" [ref=e24] [cursor=pointer]:
+          - /url: /news/list_180.html
+      - listitem [ref=e25]:
+        - link "一分一段" [ref=e26] [cursor=pointer]:
+          - /url: /news/list_223.html
+      - listitem [ref=e27]:
+        - link "投档分数" [ref=e28] [cursor=pointer]:
+          - /url: /news/list_1001.html
+      - listitem [ref=e29]:
+        - link "志愿填报" [ref=e30] [cursor=pointer]:
+          - /url: /news/list_822.html
+      - listitem [ref=e31]:
+        - link "大学名单" [ref=e32] [cursor=pointer]:
+          - /url: /news/list_88.html
+      - listitem [ref=e33]:
+        - link "大学排名" [ref=e34] [cursor=pointer]:
+          - /url: /news/list_75.html
+      - listitem [ref=e35]:
+        - link "985" [ref=e36] [cursor=pointer]:
+          - /url: /news/list_652.html
+      - listitem [ref=e37]:
+        - link "211" [ref=e38] [cursor=pointer]:
+          - /url: /news/list_651.html
+      - listitem [ref=e39]:
+        - link "双一流" [ref=e40] [cursor=pointer]:
+          - /url: /news/list_178.html
+      - listitem [ref=e41]:
+        - link "双高计划" [ref=e42] [cursor=pointer]:
+          - /url: /news/list_642.html
+      - listitem [ref=e43]:
+        - link "选科查询" [ref=e44] [cursor=pointer]:
+          - /url: /news/list_620.html
+      - listitem [ref=e45]:
+        - link "学科评估" [ref=e46] [cursor=pointer]:
+          - /url: /news/list_712.html
+      - listitem [ref=e47]:
+        - link "院 校 库" [ref=e48] [cursor=pointer]:
+          - /url: /news/list_192.html
+      - listitem [ref=e49]:
+        - link "专 业 库" [ref=e50] [cursor=pointer]:
+          - /url: /news/list_76.html
+  - generic [ref=e51]:
+    - text: 当前位置：
+    - link "首页" [ref=e52] [cursor=pointer]:
+      - /url: /
+    - text: ">"
+    - link "院校库" [ref=e53] [cursor=pointer]:
+      - /url: /news/list_192.html
+    - text: ">"
+    - link "录取分数" [ref=e54] [cursor=pointer]:
+      - /url: /news/list_168.html
+    - text: ">"
+    - link "投档分数" [ref=e55] [cursor=pointer]:
+      - /url: /news/list_1248.html
+    - text: ">"
+    - link "暨南大学" [ref=e56] [cursor=pointer]:
+      - /url: /school/暨南大学.html
+  - generic [ref=e57]:
+    - generic:
+      - generic [ref=e58] [cursor=pointer]: 学校概况
+      - generic [ref=e59] [cursor=pointer]: 普通高考
+      - generic [ref=e60] [cursor=pointer]: 中外专业
+      - generic [ref=e61] [cursor=pointer]: 艺术专业
+      - list [ref=e63]:
+        - listitem [ref=e64]:
+          - link "学校介绍" [ref=e65] [cursor=pointer]:
+            - /url: /news/8212.html
+        - listitem [ref=e66]:
+          - link "985-211" [ref=e67] [cursor=pointer]:
+            - /url: /news/32811.html
+        - listitem [ref=e68]:
+          - link "双一流吗" [ref=e69] [cursor=pointer]:
+            - /url: /news/43490.html
+        - listitem [ref=e70]:
+          - link "公办民办" [ref=e71] [cursor=pointer]:
+            - /url: /news/56935.html
+        - listitem [ref=e72]:
+          - link "就业情况" [ref=e73] [cursor=pointer]:
+            - /url: /news/13948.html
+        - listitem [ref=e74]:
+          - link "学校地址" [ref=e75] [cursor=pointer]:
+            - /url: /news/99145.html
+  - iframe [ref=e78]:
+    - generic [ref=f3e2]:
+      - link "暨南大学研究生学费一年要多少钱" [ref=f3e3] [cursor=pointer]:
+        - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1Y3m1mzuARsnvcsuWD4nWcsFh_qFRc4FRR1FRfvFRwDFRmYFRwAFRnYFRPAFRcYFRm1FRfkFRDLFRc3FRwaFRcsFRnYFRfLFRf1FRcdFRwjFRfkFRDLFRfsFRD1FRfkFRDLFRcLFRfkFhkdpvbqniuVmLKV5HDknjb1FMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnW04nhmkmW01uARvnW9WFMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqn10zP1nLPzuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gR1njcLn1TLFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHd-uhFWnAw9n0&besl=6&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=363&img_typ=0&itm=0&lu_idc=gz&lukid=1&lus=2092f1b003de628c&lust=69ee6dd6&luwtr=14343664898204701735&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=0&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%F4%DF%C4%CF%B4%F3%D1%A7%D1%D0%BE%BF%C9%FA%D1%A7%B7%D1%D2%BB%C4%EA%D2%AA%B6%E0%C9%D9%C7%AE&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+      - link "收玉石的方式" [ref=f3e4] [cursor=pointer]:
+        - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1Y3m1mzuARsnvcsuWD4nWcsFh_qFRf1FRmkFRPKFR7AFRn3FRRLFRFKFRP7FRfsFRP7FRc1FRn4FhkdpvbqnBuVmLKV5HnknHmhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYznjbzuW7BnjPbuHmzrAnhTLwGujYdFMfqIZKWUA-WpvNbndqCmzuYujY1njcLn1TLFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHnsnWT1P1ThIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5yR1mymsuWR4&besl=6&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=267&img_typ=0&itm=0&lu_idc=gz&lukid=2&lus=2092f1b003de628c&lust=69ee6dd6&luwtr=2270729806294448136&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=0&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%CA%D5%D3%F1%CA%AF%B5%C4%B7%BD%CA%BD&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+      - link "四轮观光车电动车价格" [ref=f3e5] [cursor=pointer]:
+        - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1Y3m1mzuARsnvcsuWD4nWcsFh_qFRPaFRnYFRnzFRfvFRcdFRRLFRcvFR7AFRc4FRwaFRc4FRRzFRc1FRcdFhkdpvbqnzuVmLKV5Hf1nWThTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYznjbzuW7BnjPbuHmzrAnhTLwGujYdFMfqIZKWUA-WpvNbndqCmzuYujY1njcLn1TLFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHnsnWT1P1ThIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5HTYrHczPhm3&besl=6&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=323&img_typ=0&itm=0&lu_idc=gz&lukid=3&lus=2092f1b003de628c&lust=69ee6dd6&luwtr=15503016246261176069&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=0&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%CB%C4%C2%D6%B9%DB%B9%E2%B3%B5%B5%E7%B6%AF%B3%B5%BC%DB%B8%F1&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+      - link "数字化管理系统" [ref=f3e6] [cursor=pointer]:
+        - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1Y3m1mzuARsnvcsuWD4nWcsFh_qFRn1FRwaFRfkFRD4FRckFRm4FRc1FRnLFRFjFRf1FRn1FRPaFRcLFRfkFRcvFRRsFRn4FRf4FhkdpvbqPauVmLKV5HD1nHRsFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnW04nhmkmW01uARvnW9WFMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqn10zP1nLPzuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gR1njcLn1TLFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYdrH6Lm1--n6&besl=6&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=626&img_typ=0&itm=0&lu_idc=gz&lukid=4&lus=2092f1b003de628c&lust=69ee6dd6&luwtr=6468857026566885701&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=0&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%CA%FD%D7%D6%BB%AF%B9%DC%C0%ED%CF%B5%CD%B3&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+      - link "什么是数字化" [ref=f3e7] [cursor=pointer]:
+        - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1Y3m1mzuARsnvcsuWD4nWcsFh_qFRPKFRuDFRfLFRfvFRFaFR7AFRfLFR7KFRfsFRPDFhkdpvbqPiuVmLKV5HRknW6hTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYznjbzuW7BnjPbuHmzrAnhTLwGujYdFMfqIZKWUA-WpvNbndqCmzuYujY1njcLn1TLFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHnsnWT1P1ThIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5Hf3PW0Yujm3&besl=6&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=234&img_typ=0&itm=0&lu_idc=gz&lukid=5&lus=2092f1b003de628c&lust=69ee6dd6&luwtr=2292025809206491647&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=0&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%CA%B2%C3%B4%CA%C7%CA%FD%D7%D6%BB%AF&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+      - link "科学管理训练营" [ref=f3e8] [cursor=pointer]:
+        - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1Y3m1mzuARsnvcsuWD4nWcsFh_qFRfkFRcdFRnkFRcLFRf1FR7KFRcLFRRzFRckFRfdFRPKFRFDFhkdpvbqPBuVmLKV5HfzrHnhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYznjbzuW7BnjPbuHmzrAnhTLwGujYdFMfqIZKWUA-WpvNbndqCmzuYujY1njcLn1TLFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHnsnWT1P1ThIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5ywhPARzrARd&besl=6&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=6&lus=2092f1b003de628c&lust=69ee6dd6&luwtr=6181938298547160694&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=139&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%BF%C6%D1%A7%B9%DC%C0%ED%D1%B5%C1%B7%D3%AA&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+      - generic [ref=f3e9]:
+        - link [ref=f3e10] [cursor=pointer]:
+          - /url: https://union.baidu.com
+          - img [ref=f3e11]
+        - link [ref=f3e13] [cursor=pointer]:
+          - /url: javascript:;
+          - img [ref=f3e14]
+  - generic:
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - heading "多少分能上暨南大学（附2024年投档分数线）" [level=1] [ref=e81]
+        - generic [ref=e82]: 更新：2025-5-20 19:20:54 发布：大学生必备网
+        - generic [ref=e83]:
+          - paragraph [ref=e84]:
+            - img "多少分能上暨南大学（附2024年投档分数线）" [ref=e85]
+          - paragraph [ref=e86]:
+            - text: 每年都有很多考生和家长想知道多少分能上暨南大学，本文为大家整理了暨南大学2024年在全国各省市投档
+            - link "分数线" [ref=e87] [cursor=pointer]:
+              - /url: /news/list_180.html
+            - text: ，包含新
+            - link "高考" [ref=e88] [cursor=pointer]:
+              - /url: /
+            - text: 和老高考地区，希望对大家有所帮助。如有异议，还请以各省市教育考试院和学校公布的信息为准。
+          - paragraph [ref=e89]: 说明：通常来说，投档分数线每年是会变动的，但是分数对应的位次通常变化不大。
+          - heading "1、暨南大学投档分数线（广东）" [level=2] [ref=e90]:
+            - text: 1、暨南大学投档分数线（
+            - link "广东" [ref=e91] [cursor=pointer]:
+              - /url: /news/list_101.html
+            - text: ）
+          - table [ref=e93]:
+            - rowgroup [ref=e94]:
+              - row "年份 省份 科类 批次 院校名称 专业组 投档线 备注" [ref=e95]:
+                - cell "年份" [ref=e96]
+                - cell "省份" [ref=e97]
+                - cell "科类" [ref=e98]
+                - cell "批次" [ref=e99]
+                - cell "院校名称" [ref=e100]
+                - cell "专业组" [ref=e101]
+                - cell "投档线" [ref=e102]
+                - cell "备注" [ref=e103]
+              - row "2024 广东 物理 本科 10559暨南大学 221 597" [ref=e104]:
+                - cell "2024" [ref=e105]
+                - cell "广东" [ref=e106]
+                - cell "物理" [ref=e107]
+                - cell "本科" [ref=e108]:
+                  - link "本科" [ref=e109] [cursor=pointer]:
+                    - /url: /news/list_133.html
+                - cell "10559暨南大学" [ref=e110]
+                - cell "221" [ref=e111]
+                - cell "597" [ref=e112]
+                - cell [ref=e113]
+              - row "2024 广东 物理 本科 10559暨南大学 220 595" [ref=e114]:
+                - cell "2024" [ref=e115]
+                - cell "广东" [ref=e116]
+                - cell "物理" [ref=e117]
+                - cell "本科" [ref=e118]
+                - cell "10559暨南大学" [ref=e119]
+                - cell "220" [ref=e120]
+                - cell "595" [ref=e121]
+                - cell [ref=e122]
+              - row "2024 广东 物理 本科 10559暨南大学 206 593" [ref=e123]:
+                - cell "2024" [ref=e124]
+                - cell "广东" [ref=e125]
+                - cell "物理" [ref=e126]
+                - cell "本科" [ref=e127]
+                - cell "10559暨南大学" [ref=e128]
+                - cell "206" [ref=e129]
+                - cell "593" [ref=e130]
+                - cell [ref=e131]
+              - row "2024 广东 物理 本科 10559暨南大学 208 591" [ref=e132]:
+                - cell "2024" [ref=e133]
+                - cell "广东" [ref=e134]
+                - cell "物理" [ref=e135]
+                - cell "本科" [ref=e136]
+                - cell "10559暨南大学" [ref=e137]
+                - cell "208" [ref=e138]
+                - cell "591" [ref=e139]
+                - cell [ref=e140]
+              - row "2024 广东 物理 本科 10559暨南大学 222 590" [ref=e141]:
+                - cell "2024" [ref=e142]
+                - cell "广东" [ref=e143]
+                - cell "物理" [ref=e144]
+                - cell "本科" [ref=e145]
+                - cell "10559暨南大学" [ref=e146]
+                - cell "222" [ref=e147]
+                - cell "590" [ref=e148]
+                - cell [ref=e149]
+              - row "2024 广东 物理 本科 10559暨南大学 203 584" [ref=e150]:
+                - cell "2024" [ref=e151]
+                - cell "广东" [ref=e152]
+                - cell "物理" [ref=e153]
+                - cell "本科" [ref=e154]
+                - cell "10559暨南大学" [ref=e155]
+                - cell "203" [ref=e156]
+                - cell "584" [ref=e157]
+                - cell [ref=e158]
+              - row "2024 广东 物理 本科 10559暨南大学 205 583" [ref=e159]:
+                - cell "2024" [ref=e160]
+                - cell "广东" [ref=e161]
+                - cell "物理" [ref=e162]
+                - cell "本科" [ref=e163]
+                - cell "10559暨南大学" [ref=e164]
+                - cell "205" [ref=e165]
+                - cell "583" [ref=e166]
+                - cell [ref=e167]
+              - row "2024 广东 历史 本科 10559暨南大学 202 596" [ref=e168]:
+                - cell "2024" [ref=e169]
+                - cell "广东" [ref=e170]
+                - cell "历史" [ref=e171]
+                - cell "本科" [ref=e172]
+                - cell "10559暨南大学" [ref=e173]
+                - cell "202" [ref=e174]
+                - cell "596" [ref=e175]
+                - cell [ref=e176]
+              - row "2024 广东 历史 本科 10559暨南大学 218 593" [ref=e177]:
+                - cell "2024" [ref=e178]
+                - cell "广东" [ref=e179]
+                - cell "历史" [ref=e180]
+                - cell "本科" [ref=e181]
+                - cell "10559暨南大学" [ref=e182]
+                - cell "218" [ref=e183]
+                - cell "593" [ref=e184]
+                - cell [ref=e185]
+              - row "2024 广东 历史 本科 10559暨南大学 217 587" [ref=e186]:
+                - cell "2024" [ref=e187]
+                - cell "广东" [ref=e188]
+                - cell "历史" [ref=e189]
+                - cell "本科" [ref=e190]
+                - cell "10559暨南大学" [ref=e191]
+                - cell "217" [ref=e192]
+                - cell "587" [ref=e193]
+                - cell [ref=e194]
+              - row "2024 广东 历史 本科 10559暨南大学 201 582" [ref=e195]:
+                - cell "2024" [ref=e196]
+                - cell "广东" [ref=e197]
+                - cell "历史" [ref=e198]
+                - cell "本科" [ref=e199]
+                - cell "10559暨南大学" [ref=e200]
+                - cell "201" [ref=e201]
+                - cell "582" [ref=e202]
+                - cell [ref=e203]
+              - row "2024 广东 历史 本科 10559暨南大学 216 580 艺术类" [ref=e204]:
+                - cell "2024" [ref=e205]
+                - cell "广东" [ref=e206]
+                - cell "历史" [ref=e207]
+                - cell "本科" [ref=e208]
+                - cell "10559暨南大学" [ref=e209]
+                - cell "216" [ref=e210]
+                - cell "580" [ref=e211]
+                - cell "艺术类" [ref=e212]:
+                  - link "艺术" [ref=e213] [cursor=pointer]:
+                    - /url: /news/list_204.html
+                  - text: 类
+              - row "2023 广东 物理 本科 10559暨南大学 227 629" [ref=e214]:
+                - cell "2023" [ref=e215]
+                - cell "广东" [ref=e216]
+                - cell "物理" [ref=e217]
+                - cell "本科" [ref=e218]
+                - cell "10559暨南大学" [ref=e219]
+                - cell "227" [ref=e220]
+                - cell "629" [ref=e221]
+                - cell [ref=e222]
+              - row "2023 广东 物理 本科 10559暨南大学 226 624" [ref=e223]:
+                - cell "2023" [ref=e224]
+                - cell "广东" [ref=e225]
+                - cell "物理" [ref=e226]
+                - cell "本科" [ref=e227]
+                - cell "10559暨南大学" [ref=e228]
+                - cell "226" [ref=e229]
+                - cell "624" [ref=e230]
+                - cell [ref=e231]
+              - row "2023 广东 物理 本科 10559暨南大学 228 623" [ref=e232]:
+                - cell "2023" [ref=e233]
+                - cell "广东" [ref=e234]
+                - cell "物理" [ref=e235]
+                - cell "本科" [ref=e236]
+                - cell "10559暨南大学" [ref=e237]
+                - cell "228" [ref=e238]
+                - cell "623" [ref=e239]
+                - cell [ref=e240]
+              - row "2023 广东 物理 本科 10559暨南大学 225 620" [ref=e241]:
+                - cell "2023" [ref=e242]
+                - cell "广东" [ref=e243]
+                - cell "物理" [ref=e244]
+                - cell "本科" [ref=e245]
+                - cell "10559暨南大学" [ref=e246]
+                - cell "225" [ref=e247]
+                - cell "620" [ref=e248]
+                - cell [ref=e249]
+              - row "2023 广东 物理 本科 10559暨南大学 204 609" [ref=e250]:
+                - cell "2023" [ref=e251]
+                - cell "广东" [ref=e252]
+                - cell "物理" [ref=e253]
+                - cell "本科" [ref=e254]
+                - cell "10559暨南大学" [ref=e255]
+                - cell "204" [ref=e256]
+                - cell "609" [ref=e257]
+                - cell [ref=e258]
+              - row "2023 广东 物理 本科 10559暨南大学 213 605" [ref=e259]:
+                - cell "2023" [ref=e260]
+                - cell "广东" [ref=e261]
+                - cell "物理" [ref=e262]
+                - cell "本科" [ref=e263]
+                - cell "10559暨南大学" [ref=e264]
+                - cell "213" [ref=e265]
+                - cell "605" [ref=e266]
+                - cell [ref=e267]
+              - row "2023 广东 物理 本科 10559暨南大学 206 603" [ref=e268]:
+                - cell "2023" [ref=e269]
+                - cell "广东" [ref=e270]
+                - cell "物理" [ref=e271]
+                - cell "本科" [ref=e272]
+                - cell "10559暨南大学" [ref=e273]
+                - cell "206" [ref=e274]
+                - cell "603" [ref=e275]
+                - cell [ref=e276]
+              - row "2023 广东 物理 本科 10559暨南大学 220 603" [ref=e277]:
+                - cell "2023" [ref=e278]
+                - cell "广东" [ref=e279]
+                - cell "物理" [ref=e280]
+                - cell "本科" [ref=e281]
+                - cell "10559暨南大学" [ref=e282]
+                - cell "220" [ref=e283]
+                - cell "603" [ref=e284]
+                - cell [ref=e285]
+              - row "2023 广东 物理 本科 10559暨南大学 205 602" [ref=e286]:
+                - cell "2023" [ref=e287]
+                - cell "广东" [ref=e288]
+                - cell "物理" [ref=e289]
+                - cell "本科" [ref=e290]
+                - cell "10559暨南大学" [ref=e291]
+                - cell "205" [ref=e292]
+                - cell "602" [ref=e293]
+                - cell [ref=e294]
+              - row "2023 广东 物理 本科 10559暨南大学 203 586" [ref=e295]:
+                - cell "2023" [ref=e296]
+                - cell "广东" [ref=e297]
+                - cell "物理" [ref=e298]
+                - cell "本科" [ref=e299]
+                - cell "10559暨南大学" [ref=e300]
+                - cell "203" [ref=e301]
+                - cell "586" [ref=e302]
+                - cell [ref=e303]
+              - row "2023 广东 历史 本科 10559暨南大学 224 613" [ref=e304]:
+                - cell "2023" [ref=e305]
+                - cell "广东" [ref=e306]
+                - cell "历史" [ref=e307]
+                - cell "本科" [ref=e308]
+                - cell "10559暨南大学" [ref=e309]
+                - cell "224" [ref=e310]
+                - cell "613" [ref=e311]
+                - cell [ref=e312]
+              - row "2023 广东 历史 本科 10559暨南大学 223 609" [ref=e313]:
+                - cell "2023" [ref=e314]
+                - cell "广东" [ref=e315]
+                - cell "历史" [ref=e316]
+                - cell "本科" [ref=e317]
+                - cell "10559暨南大学" [ref=e318]
+                - cell "223" [ref=e319]
+                - cell "609" [ref=e320]
+                - cell [ref=e321]
+              - row "2023 广东 历史 本科 10559暨南大学 221 606" [ref=e322]:
+                - cell "2023" [ref=e323]
+                - cell "广东" [ref=e324]
+                - cell "历史" [ref=e325]
+                - cell "本科" [ref=e326]
+                - cell "10559暨南大学" [ref=e327]
+                - cell "221" [ref=e328]
+                - cell "606" [ref=e329]
+                - cell [ref=e330]
+              - row "2023 广东 历史 本科 10559暨南大学 222 602" [ref=e331]:
+                - cell "2023" [ref=e332]
+                - cell "广东" [ref=e333]
+                - cell "历史" [ref=e334]
+                - cell "本科" [ref=e335]
+                - cell "10559暨南大学" [ref=e336]
+                - cell "222" [ref=e337]
+                - cell "602" [ref=e338]
+                - cell [ref=e339]
+              - row "2023 广东 历史 本科 10559暨南大学 202 601" [ref=e340]:
+                - cell "2023" [ref=e341]
+                - cell "广东" [ref=e342]
+                - cell "历史" [ref=e343]
+                - cell "本科" [ref=e344]
+                - cell "10559暨南大学" [ref=e345]
+                - cell "202" [ref=e346]
+                - cell "601" [ref=e347]
+                - cell [ref=e348]
+              - row "2023 广东 历史 本科 10559暨南大学 201 592" [ref=e349]:
+                - cell "2023" [ref=e350]
+                - cell "广东" [ref=e351]
+                - cell "历史" [ref=e352]
+                - cell "本科" [ref=e353]
+                - cell "10559暨南大学" [ref=e354]
+                - cell "201" [ref=e355]
+                - cell "592" [ref=e356]
+                - cell [ref=e357]
+              - row "2022 广东 物理 本科 10559暨南大学 209 608" [ref=e358]:
+                - cell "2022" [ref=e359]
+                - cell "广东" [ref=e360]
+                - cell "物理" [ref=e361]
+                - cell "本科" [ref=e362]
+                - cell "10559暨南大学" [ref=e363]
+                - cell "209" [ref=e364]
+                - cell "608" [ref=e365]
+                - cell [ref=e366]
+              - row "2022 广东 物理 本科 10559暨南大学 206 606" [ref=e367]:
+                - cell "2022" [ref=e368]
+                - cell "广东" [ref=e369]
+                - cell "物理" [ref=e370]
+                - cell "本科" [ref=e371]
+                - cell "10559暨南大学" [ref=e372]
+                - cell "206" [ref=e373]
+                - cell "606" [ref=e374]
+                - cell [ref=e375]
+              - row "2022 广东 物理 本科 10559暨南大学 212 603" [ref=e376]:
+                - cell "2022" [ref=e377]
+                - cell "广东" [ref=e378]
+                - cell "物理" [ref=e379]
+                - cell "本科" [ref=e380]
+                - cell "10559暨南大学" [ref=e381]
+                - cell "212" [ref=e382]
+                - cell "603" [ref=e383]
+                - cell [ref=e384]
+              - row "2022 广东 物理 本科 10559暨南大学 207 602" [ref=e385]:
+                - cell "2022" [ref=e386]
+                - cell "广东" [ref=e387]
+                - cell "物理" [ref=e388]
+                - cell "本科" [ref=e389]
+                - cell "10559暨南大学" [ref=e390]
+                - cell "207" [ref=e391]
+                - cell "602" [ref=e392]
+                - cell [ref=e393]
+              - row "2022 广东 物理 本科 10559暨南大学 211 600" [ref=e394]:
+                - cell "2022" [ref=e395]
+                - cell "广东" [ref=e396]
+                - cell "物理" [ref=e397]
+                - cell "本科" [ref=e398]
+                - cell "10559暨南大学" [ref=e399]
+                - cell "211" [ref=e400]:
+                  - link "211" [ref=e401] [cursor=pointer]:
+                    - /url: /news/list_194.html
+                - cell "600" [ref=e402]
+                - cell [ref=e403]
+              - row "2022 广东 物理 本科 10559暨南大学 208 598" [ref=e404]:
+                - cell "2022" [ref=e405]
+                - cell "广东" [ref=e406]
+                - cell "物理" [ref=e407]
+                - cell "本科" [ref=e408]
+                - cell "10559暨南大学" [ref=e409]
+                - cell "208" [ref=e410]
+                - cell "598" [ref=e411]
+                - cell [ref=e412]
+              - row "2022 广东 物理 本科 10559暨南大学 210 598" [ref=e413]:
+                - cell "2022" [ref=e414]
+                - cell "广东" [ref=e415]
+                - cell "物理" [ref=e416]
+                - cell "本科" [ref=e417]
+                - cell "10559暨南大学" [ref=e418]
+                - cell "210" [ref=e419]
+                - cell "598" [ref=e420]
+                - cell [ref=e421]
+              - row "2022 广东 物理 本科 10559暨南大学 213 596" [ref=e422]:
+                - cell "2022" [ref=e423]
+                - cell "广东" [ref=e424]
+                - cell "物理" [ref=e425]
+                - cell "本科" [ref=e426]
+                - cell "10559暨南大学" [ref=e427]
+                - cell "213" [ref=e428]
+                - cell "596" [ref=e429]
+                - cell [ref=e430]
+              - row "2022 广东 历史 本科 10559暨南大学 201 589" [ref=e431]:
+                - cell "2022" [ref=e432]
+                - cell "广东" [ref=e433]
+                - cell "历史" [ref=e434]
+                - cell "本科" [ref=e435]
+                - cell "10559暨南大学" [ref=e436]
+                - cell "201" [ref=e437]
+                - cell "589" [ref=e438]
+                - cell [ref=e439]
+              - row "2022 广东 历史 本科 10559暨南大学 202 587" [ref=e440]:
+                - cell "2022" [ref=e441]
+                - cell "广东" [ref=e442]
+                - cell "历史" [ref=e443]
+                - cell "本科" [ref=e444]
+                - cell "10559暨南大学" [ref=e445]
+                - cell "202" [ref=e446]
+                - cell "587" [ref=e447]
+                - cell [ref=e448]
+              - row "2022 广东 历史 本科 10559暨南大学 203 583" [ref=e449]:
+                - cell "2022" [ref=e450]
+                - cell "广东" [ref=e451]
+                - cell "历史" [ref=e452]
+                - cell "本科" [ref=e453]
+                - cell "10559暨南大学" [ref=e454]
+                - cell "203" [ref=e455]
+                - cell "583" [ref=e456]
+                - cell [ref=e457]
+              - row "2022 广东 历史 本科 10559暨南大学 204 579" [ref=e458]:
+                - cell "2022" [ref=e459]
+                - cell "广东" [ref=e460]
+                - cell "历史" [ref=e461]
+                - cell "本科" [ref=e462]
+                - cell "10559暨南大学" [ref=e463]
+                - cell "204" [ref=e464]
+                - cell "579" [ref=e465]
+                - cell [ref=e466]
+          - heading "2、暨南大学投档分数线（其他省份）" [level=2] [ref=e467]
+          - paragraph [ref=e468]: 传统高考省份
+          - table [ref=e470]:
+            - rowgroup [ref=e471]:
+              - row "年份 省份 科目 批次 院校名称 投档线" [ref=e472]:
+                - cell "年份" [ref=e473]
+                - cell "省份" [ref=e474]
+                - cell "科目" [ref=e475]
+                - cell "批次" [ref=e476]
+                - cell "院校名称" [ref=e477]
+                - cell "投档线" [ref=e478]
+              - row "2024 云南 理科 本科一批 4402暨南大学 575" [ref=e479]:
+                - cell "2024" [ref=e480]
+                - cell "云南" [ref=e481]:
+                  - link "云南" [ref=e482] [cursor=pointer]:
+                    - /url: /news/list_118.html
+                - cell "理科" [ref=e483]
+                - cell "本科一批" [ref=e484]
+                - cell "4402暨南大学" [ref=e485]
+                - cell "575" [ref=e486]
+              - row "2024 云南 文科 本科一批 4402暨南大学 618" [ref=e487]:
+                - cell "2024" [ref=e488]
+                - cell "云南" [ref=e489]
+                - cell "文科" [ref=e490]
+                - cell "本科一批" [ref=e491]
+                - cell "4402暨南大学" [ref=e492]
+                - cell "618" [ref=e493]
+              - row "2024 四川 理科 本科一批 0353暨南大学 571" [ref=e494]:
+                - cell "2024" [ref=e495]
+                - cell "四川" [ref=e496]:
+                  - link "四川" [ref=e497] [cursor=pointer]:
+                    - /url: /news/list_109.html
+                - cell "理科" [ref=e498]
+                - cell "本科一批" [ref=e499]
+                - cell "0353暨南大学" [ref=e500]
+                - cell "571" [ref=e501]
+              - row "2024 四川 文科 本科一批 0353暨南大学 582" [ref=e502]:
+                - cell "2024" [ref=e503]
+                - cell "四川" [ref=e504]
+                - cell "文科" [ref=e505]
+                - cell "本科一批" [ref=e506]
+                - cell "0353暨南大学" [ref=e507]
+                - cell "582" [ref=e508]
+              - row "2024 四川 文科 本科一批 7101暨南大学 564" [ref=e509]:
+                - cell "2024" [ref=e510]
+                - cell "四川" [ref=e511]
+                - cell "文科" [ref=e512]
+                - cell "本科一批" [ref=e513]
+                - cell "7101暨南大学" [ref=e514]
+                - cell "564" [ref=e515]
+              - row "2024 宁夏 理科 本科一批 4410暨南大学 493" [ref=e516]:
+                - cell "2024" [ref=e517]
+                - cell "宁夏" [ref=e518]:
+                  - link "宁夏" [ref=e519] [cursor=pointer]:
+                    - /url: /news/list_126.html
+                - cell "理科" [ref=e520]
+                - cell "本科一批" [ref=e521]
+                - cell "4410暨南大学" [ref=e522]
+                - cell "493" [ref=e523]
+              - row "2024 宁夏 文科 本科一批 4410暨南大学 550" [ref=e524]:
+                - cell "2024" [ref=e525]
+                - cell "宁夏" [ref=e526]
+                - cell "文科" [ref=e527]
+                - cell "本科一批" [ref=e528]
+                - cell "4410暨南大学" [ref=e529]
+                - cell "550" [ref=e530]
+              - row "2024 山西 理科 本科一批A类 2349暨南大学 588" [ref=e531]:
+                - cell "2024" [ref=e532]
+                - cell "山西" [ref=e533]:
+                  - link "山西" [ref=e534] [cursor=pointer]:
+                    - /url: /news/list_114.html
+                - cell "理科" [ref=e535]
+                - cell "本科一批A类" [ref=e536]
+                - cell "2349暨南大学" [ref=e537]
+                - cell "588" [ref=e538]
+              - row "2024 山西 文科 本科一批A类 2349暨南大学 565" [ref=e539]:
+                - cell "2024" [ref=e540]
+                - cell "山西" [ref=e541]
+                - cell "文科" [ref=e542]
+                - cell "本科一批A类" [ref=e543]
+                - cell "2349暨南大学" [ref=e544]
+                - cell "565" [ref=e545]
+              - row "2024 陕西 理科 本科一批 6002暨南大学 590" [ref=e546]:
+                - cell "2024" [ref=e547]
+                - cell "陕西" [ref=e548]:
+                  - link "陕西" [ref=e549] [cursor=pointer]:
+                    - /url: /news/list_108.html
+                - cell "理科" [ref=e550]
+                - cell "本科一批" [ref=e551]
+                - cell "6002暨南大学" [ref=e552]
+                - cell "590" [ref=e553]
+              - row "2024 陕西 理科 本科一批 9875暨南大学 476" [ref=e554]:
+                - cell "2024" [ref=e555]
+                - cell "陕西" [ref=e556]
+                - cell "理科" [ref=e557]
+                - cell "本科一批" [ref=e558]
+                - cell "9875暨南大学" [ref=e559]
+                - cell "476" [ref=e560]
+              - row "2024 陕西 文科 本科一批 6002暨南大学 553" [ref=e561]:
+                - cell "2024" [ref=e562]
+                - cell "陕西" [ref=e563]
+                - cell "文科" [ref=e564]
+                - cell "本科一批" [ref=e565]
+                - cell "6002暨南大学" [ref=e566]
+                - cell "553" [ref=e567]
+              - row "2024 陕西 文科 本科一批 9875暨南大学 508" [ref=e568]:
+                - cell "2024" [ref=e569]
+                - cell "陕西" [ref=e570]
+                - cell "文科" [ref=e571]
+                - cell "本科一批" [ref=e572]
+                - cell "9875暨南大学" [ref=e573]
+                - cell "508" [ref=e574]
+          - paragraph [ref=e575]: 新高考省份（3+3模式）
+          - table [ref=e577]:
+            - rowgroup [ref=e578]:
+              - row "年份 省份 批次 院校名称 专业组 投档线" [ref=e579]:
+                - cell "年份" [ref=e580]
+                - cell "省份" [ref=e581]
+                - cell "批次" [ref=e582]
+                - cell "院校名称" [ref=e583]
+                - cell "专业组" [ref=e584]
+                - cell "投档线" [ref=e585]
+              - row "2024 上海 本科 暨南大学 77301 540" [ref=e586]:
+                - cell "2024" [ref=e587]
+                - cell "上海" [ref=e588]:
+                  - link "上海" [ref=e589] [cursor=pointer]:
+                    - /url: /news/list_116.html
+                - cell "本科" [ref=e590]
+                - cell "暨南大学" [ref=e591]
+                - cell "77301" [ref=e592]
+                - cell "540" [ref=e593]
+              - row "2024 上海 本科 暨南大学 77302 539" [ref=e594]:
+                - cell "2024" [ref=e595]
+                - cell "上海" [ref=e596]
+                - cell "本科" [ref=e597]
+                - cell "暨南大学" [ref=e598]
+                - cell "77302" [ref=e599]
+                - cell "539" [ref=e600]
+              - row "2024 上海 本科 暨南大学 77303 534" [ref=e601]:
+                - cell "2024" [ref=e602]
+                - cell "上海" [ref=e603]
+                - cell "本科" [ref=e604]
+                - cell "暨南大学" [ref=e605]
+                - cell "77303" [ref=e606]
+                - cell "534" [ref=e607]
+              - row "2024 北京 本科 4412暨南大学 02 610" [ref=e608]:
+                - cell "2024" [ref=e609]
+                - cell "北京" [ref=e610]:
+                  - link "北京" [ref=e611] [cursor=pointer]:
+                    - /url: /news/list_98.html
+                - cell "本科" [ref=e612]
+                - cell "4412暨南大学" [ref=e613]
+                - cell "02" [ref=e614]
+                - cell "610" [ref=e615]
+              - row "2024 北京 本科 4412暨南大学 01 605" [ref=e616]:
+                - cell "2024" [ref=e617]
+                - cell "北京" [ref=e618]
+                - cell "本科" [ref=e619]
+                - cell "4412暨南大学" [ref=e620]
+                - cell "01" [ref=e621]
+                - cell "605" [ref=e622]
+              - row "2024 天津 本科A段 暨南大学 065301 623" [ref=e623]:
+                - cell "2024" [ref=e624]
+                - cell "天津" [ref=e625]:
+                  - link "天津" [ref=e626] [cursor=pointer]:
+                    - /url: /news/list_120.html
+                - cell "本科A段" [ref=e627]
+                - cell "暨南大学" [ref=e628]
+                - cell "065301" [ref=e629]
+                - cell "623" [ref=e630]
+              - row "2024 天津 本科A段 暨南大学 065302 614" [ref=e631]:
+                - cell "2024" [ref=e632]
+                - cell "天津" [ref=e633]
+                - cell "本科A段" [ref=e634]
+                - cell "暨南大学" [ref=e635]
+                - cell "065302" [ref=e636]
+                - cell "614" [ref=e637]
+              - row "2024 天津 本科A段 暨南大学 065303 608" [ref=e638]:
+                - cell "2024" [ref=e639]
+                - cell "天津" [ref=e640]
+                - cell "本科A段" [ref=e641]
+                - cell "暨南大学" [ref=e642]
+                - cell "065303" [ref=e643]
+                - cell "608" [ref=e644]
+          - paragraph [ref=e645]: 新高考省份（3+1+2模式）
+          - table [ref=e647]:
+            - rowgroup [ref=e648]:
+              - row "年份 省份 科类 批次 院校名称 专业组 投档线 备注" [ref=e649]:
+                - cell "年份" [ref=e650]
+                - cell "省份" [ref=e651]
+                - cell "科类" [ref=e652]
+                - cell "批次" [ref=e653]
+                - cell "院校名称" [ref=e654]
+                - cell "专业组" [ref=e655]
+                - cell "投档线" [ref=e656]
+                - cell "备注" [ref=e657]
+              - row "2024 安徽 物理 本科 1803暨南大学 007专业组 627" [ref=e658]:
+                - cell "2024" [ref=e659]
+                - cell "安徽" [ref=e660]:
+                  - link "安徽" [ref=e661] [cursor=pointer]:
+                    - /url: /news/list_106.html
+                - cell "物理" [ref=e662]
+                - cell "本科" [ref=e663]
+                - cell "1803暨南大学" [ref=e664]
+                - cell "007专业组" [ref=e665]
+                - cell "627" [ref=e666]
+                - cell [ref=e667]
+              - row "2024 安徽 物理 本科 1803暨南大学 008专业组 623" [ref=e668]:
+                - cell "2024" [ref=e669]
+                - cell "安徽" [ref=e670]
+                - cell "物理" [ref=e671]
+                - cell "本科" [ref=e672]
+                - cell "1803暨南大学" [ref=e673]
+                - cell "008专业组" [ref=e674]
+                - cell "623" [ref=e675]
+                - cell [ref=e676]
+              - row "2024 安徽 物理 本科 1803暨南大学 004专业组 611" [ref=e677]:
+                - cell "2024" [ref=e678]
+                - cell "安徽" [ref=e679]
+                - cell "物理" [ref=e680]
+                - cell "本科" [ref=e681]
+                - cell "1803暨南大学" [ref=e682]
+                - cell "004专业组" [ref=e683]
+                - cell "611" [ref=e684]
+                - cell [ref=e685]
+              - row "2024 安徽 物理 本科 1803暨南大学 003专业组 596" [ref=e686]:
+                - cell "2024" [ref=e687]
+                - cell "安徽" [ref=e688]
+                - cell "物理" [ref=e689]
+                - cell "本科" [ref=e690]
+                - cell "1803暨南大学" [ref=e691]
+                - cell "003专业组" [ref=e692]
+                - cell "596" [ref=e693]
+                - cell [ref=e694]
+              - row "2024 安徽 历史 本科 1803暨南大学 002专业组 606" [ref=e695]:
+                - cell "2024" [ref=e696]
+                - cell "安徽" [ref=e697]
+                - cell "历史" [ref=e698]
+                - cell "本科" [ref=e699]
+                - cell "1803暨南大学" [ref=e700]
+                - cell "002专业组" [ref=e701]
+                - cell "606" [ref=e702]
+                - cell [ref=e703]
+              - row "2024 安徽 历史 本科 1803暨南大学 003专业组 604" [ref=e704]:
+                - cell "2024" [ref=e705]
+                - cell "安徽" [ref=e706]
+                - cell "历史" [ref=e707]
+                - cell "本科" [ref=e708]
+                - cell "1803暨南大学" [ref=e709]
+                - cell "003专业组" [ref=e710]
+                - cell "604" [ref=e711]
+                - cell [ref=e712]
+              - row "2024 安徽 历史 本科 1804暨南大学 001专业组 601 艺术类专业" [ref=e713]:
+                - cell "2024" [ref=e714]
+                - cell "安徽" [ref=e715]
+                - cell "历史" [ref=e716]
+                - cell "本科" [ref=e717]
+                - cell "1804暨南大学" [ref=e718]
+                - cell "001专业组" [ref=e719]
+                - cell "601" [ref=e720]
+                - cell "艺术类专业" [ref=e721]
+              - row "2024 广西 物理 本科 10559暨南大学 104 605" [ref=e722]:
+                - cell "2024" [ref=e723]
+                - cell "广西" [ref=e724]:
+                  - link "广西" [ref=e725] [cursor=pointer]:
+                    - /url: /news/list_115.html
+                - cell "物理" [ref=e726]
+                - cell "本科" [ref=e727]
+                - cell "10559暨南大学" [ref=e728]
+                - cell "104" [ref=e729]
+                - cell "605" [ref=e730]
+                - cell [ref=e731]
+              - row "2024 广西 物理 本科 10559暨南大学 106 603" [ref=e732]:
+                - cell "2024" [ref=e733]
+                - cell "广西" [ref=e734]
+                - cell "物理" [ref=e735]
+                - cell "本科" [ref=e736]
+                - cell "10559暨南大学" [ref=e737]
+                - cell "106" [ref=e738]
+                - cell "603" [ref=e739]
+                - cell [ref=e740]
+              - row "2024 广西 物理 本科 10559暨南大学 103 587" [ref=e741]:
+                - cell "2024" [ref=e742]
+                - cell "广西" [ref=e743]
+                - cell "物理" [ref=e744]
+                - cell "本科" [ref=e745]
+                - cell "10559暨南大学" [ref=e746]
+                - cell "103" [ref=e747]
+                - cell "587" [ref=e748]
+                - cell [ref=e749]
+              - row "2024 广西 物理 本科 10559暨南大学 105 582" [ref=e750]:
+                - cell "2024" [ref=e751]
+                - cell "广西" [ref=e752]
+                - cell "物理" [ref=e753]
+                - cell "本科" [ref=e754]
+                - cell "10559暨南大学" [ref=e755]
+                - cell "105" [ref=e756]
+                - cell "582" [ref=e757]
+                - cell [ref=e758]
+              - row "2024 广西 物理 本科 10559暨南大学 502 532" [ref=e759]:
+                - cell "2024" [ref=e760]
+                - cell "广西" [ref=e761]
+                - cell "物理" [ref=e762]
+                - cell "本科" [ref=e763]
+                - cell "10559暨南大学" [ref=e764]
+                - cell "502" [ref=e765]
+                - cell "532" [ref=e766]
+                - cell [ref=e767]
+              - row "2024 广西 历史 本科 10559暨南大学 101 600" [ref=e768]:
+                - cell "2024" [ref=e769]
+                - cell "广西" [ref=e770]
+                - cell "历史" [ref=e771]
+                - cell "本科" [ref=e772]
+                - cell "10559暨南大学" [ref=e773]
+                - cell "101" [ref=e774]
+                - cell "600" [ref=e775]
+                - cell [ref=e776]
+              - row "2024 广西 历史 本科 10559暨南大学 102 588" [ref=e777]:
+                - cell "2024" [ref=e778]
+                - cell "广西" [ref=e779]
+                - cell "历史" [ref=e780]
+                - cell "本科" [ref=e781]
+                - cell "10559暨南大学" [ref=e782]
+                - cell "102" [ref=e783]
+                - cell "588" [ref=e784]
+                - cell [ref=e785]
+              - row "2024 广西 历史 本科 10559暨南大学 501 572" [ref=e786]:
+                - cell "2024" [ref=e787]
+                - cell "广西" [ref=e788]
+                - cell "历史" [ref=e789]
+                - cell "本科" [ref=e790]
+                - cell "10559暨南大学" [ref=e791]
+                - cell "501" [ref=e792]
+                - cell "572" [ref=e793]
+                - cell [ref=e794]
+              - row "2024 江苏 物理 本科 5407暨南大学 04专业组 627" [ref=e795]:
+                - cell "2024" [ref=e796]
+                - cell "江苏" [ref=e797]:
+                  - link "江苏" [ref=e798] [cursor=pointer]:
+                    - /url: /news/list_99.html
+                - cell "物理" [ref=e799]
+                - cell "本科" [ref=e800]
+                - cell "5407暨南大学" [ref=e801]
+                - cell "04专业组" [ref=e802]
+                - cell "627" [ref=e803]
+                - cell [ref=e804]
+              - row "2024 江苏 物理 本科 5407暨南大学 03专业组 598" [ref=e805]:
+                - cell "2024" [ref=e806]
+                - cell "江苏" [ref=e807]
+                - cell "物理" [ref=e808]
+                - cell "本科" [ref=e809]
+                - cell "5407暨南大学" [ref=e810]
+                - cell "03专业组" [ref=e811]
+                - cell "598" [ref=e812]
+                - cell [ref=e813]
+              - row "2024 江苏 物理 本科 5407暨南大学 02专业组 588" [ref=e814]:
+                - cell "2024" [ref=e815]
+                - cell "江苏" [ref=e816]
+                - cell "物理" [ref=e817]
+                - cell "本科" [ref=e818]
+                - cell "5407暨南大学" [ref=e819]
+                - cell "02专业组" [ref=e820]
+                - cell "588" [ref=e821]
+                - cell [ref=e822]
+              - row "2024 江苏 历史 本科 5407暨南大学 01专业组 589" [ref=e823]:
+                - cell "2024" [ref=e824]
+                - cell "江苏" [ref=e825]
+                - cell "历史" [ref=e826]
+                - cell "本科" [ref=e827]
+                - cell "5407暨南大学" [ref=e828]
+                - cell "01专业组" [ref=e829]
+                - cell "589" [ref=e830]
+                - cell [ref=e831]
+              - row "2024 江西 物理 本科 1664暨南大学 504第504组 618" [ref=e832]:
+                - cell "2024" [ref=e833]
+                - cell "江西" [ref=e834]:
+                  - link "江西" [ref=e835] [cursor=pointer]:
+                    - /url: /news/list_111.html
+                - cell "物理" [ref=e836]
+                - cell "本科" [ref=e837]
+                - cell "1664暨南大学" [ref=e838]
+                - cell "504第504组" [ref=e839]
+                - cell "618" [ref=e840]
+                - cell [ref=e841]
+              - row "2024 江西 物理 本科 1664暨南大学 503第503组 607" [ref=e842]:
+                - cell "2024" [ref=e843]
+                - cell "江西" [ref=e844]
+                - cell "物理" [ref=e845]
+                - cell "本科" [ref=e846]
+                - cell "1664暨南大学" [ref=e847]
+                - cell "503第503组" [ref=e848]
+                - cell "607" [ref=e849]
+                - cell [ref=e850]
+              - row "2024 江西 物理 本科 1664暨南大学 561第561组（国家专项） 601" [ref=e851]:
+                - cell "2024" [ref=e852]
+                - cell "江西" [ref=e853]
+                - cell "物理" [ref=e854]
+                - cell "本科" [ref=e855]
+                - cell "1664暨南大学" [ref=e856]
+                - cell "561第561组（国家专项）" [ref=e857]
+                - cell "601" [ref=e858]
+                - cell [ref=e859]
+              - row "2024 江西 物理 本科 1664暨南大学 501第501组 598" [ref=e860]:
+                - cell "2024" [ref=e861]
+                - cell "江西" [ref=e862]
+                - cell "物理" [ref=e863]
+                - cell "本科" [ref=e864]
+                - cell "1664暨南大学" [ref=e865]
+                - cell "501第501组" [ref=e866]
+                - cell "598" [ref=e867]
+                - cell [ref=e868]
+              - row "2024 江西 物理 本科 1664暨南大学 505第505组 592" [ref=e869]:
+                - cell "2024" [ref=e870]
+                - cell "江西" [ref=e871]
+                - cell "物理" [ref=e872]
+                - cell "本科" [ref=e873]
+                - cell "1664暨南大学" [ref=e874]
+                - cell "505第505组" [ref=e875]
+                - cell "592" [ref=e876]
+                - cell [ref=e877]
+              - row "2024 江西 物理 本科 1664暨南大学 502第502组 586" [ref=e878]:
+                - cell "2024" [ref=e879]
+                - cell "江西" [ref=e880]
+                - cell "物理" [ref=e881]
+                - cell "本科" [ref=e882]
+                - cell "1664暨南大学" [ref=e883]
+                - cell "502第502组" [ref=e884]
+                - cell "586" [ref=e885]
+                - cell [ref=e886]
+              - row "2024 江西 历史 本科 1664暨南大学 101第101组 601" [ref=e887]:
+                - cell "2024" [ref=e888]
+                - cell "江西" [ref=e889]
+                - cell "历史" [ref=e890]
+                - cell "本科" [ref=e891]
+                - cell "1664暨南大学" [ref=e892]
+                - cell "101第101组" [ref=e893]
+                - cell "601" [ref=e894]
+                - cell [ref=e895]
+              - row "2024 江西 历史 本科 1664暨南大学 161第161组（国家专项） 599" [ref=e896]:
+                - cell "2024" [ref=e897]
+                - cell "江西" [ref=e898]
+                - cell "历史" [ref=e899]
+                - cell "本科" [ref=e900]
+                - cell "1664暨南大学" [ref=e901]
+                - cell "161第161组（国家专项）" [ref=e902]
+                - cell "599" [ref=e903]
+                - cell [ref=e904]
+              - row "2024 湖北 物理 本科 暨南大学 A16308 618" [ref=e905]:
+                - cell "2024" [ref=e906]
+                - cell "湖北" [ref=e907]:
+                  - link "湖北" [ref=e908] [cursor=pointer]:
+                    - /url: /news/list_103.html
+                - cell "物理" [ref=e909]
+                - cell "本科" [ref=e910]
+                - cell "暨南大学" [ref=e911]
+                - cell "A16308" [ref=e912]
+                - cell "618" [ref=e913]
+                - cell [ref=e914]
+              - row "2024 湖北 物理 本科 暨南大学 A16307 610" [ref=e915]:
+                - cell "2024" [ref=e916]
+                - cell "湖北" [ref=e917]
+                - cell "物理" [ref=e918]
+                - cell "本科" [ref=e919]
+                - cell "暨南大学" [ref=e920]
+                - cell "A16307" [ref=e921]
+                - cell "610" [ref=e922]
+                - cell [ref=e923]
+              - row "2024 湖北 物理 本科 暨南大学 A16304 599" [ref=e924]:
+                - cell "2024" [ref=e925]
+                - cell "湖北" [ref=e926]
+                - cell "物理" [ref=e927]
+                - cell "本科" [ref=e928]
+                - cell "暨南大学" [ref=e929]
+                - cell "A16304" [ref=e930]
+                - cell "599" [ref=e931]
+                - cell [ref=e932]
+              - row "2024 湖北 物理 本科 暨南大学 A16309 599" [ref=e933]:
+                - cell "2024" [ref=e934]
+                - cell "湖北" [ref=e935]
+                - cell "物理" [ref=e936]
+                - cell "本科" [ref=e937]
+                - cell "暨南大学" [ref=e938]
+                - cell "A16309" [ref=e939]
+                - cell "599" [ref=e940]
+                - cell [ref=e941]
+              - row "2024 湖北 物理 本科 暨南大学 A16305 592" [ref=e942]:
+                - cell "2024" [ref=e943]
+                - cell "湖北" [ref=e944]
+                - cell "物理" [ref=e945]
+                - cell "本科" [ref=e946]
+                - cell "暨南大学" [ref=e947]
+                - cell "A16305" [ref=e948]
+                - cell "592" [ref=e949]
+                - cell [ref=e950]
+              - row "2024 湖北 历史 本科 暨南大学 A16301 590" [ref=e951]:
+                - cell "2024" [ref=e952]
+                - cell "湖北" [ref=e953]
+                - cell "历史" [ref=e954]
+                - cell "本科" [ref=e955]
+                - cell "暨南大学" [ref=e956]
+                - cell "A16301" [ref=e957]
+                - cell "590" [ref=e958]
+                - cell [ref=e959]
+              - row "2024 湖北 历史 本科 暨南大学 A16303 589" [ref=e960]:
+                - cell "2024" [ref=e961]
+                - cell "湖北" [ref=e962]
+                - cell "历史" [ref=e963]
+                - cell "本科" [ref=e964]
+                - cell "暨南大学" [ref=e965]
+                - cell "A16303" [ref=e966]
+                - cell "589" [ref=e967]
+                - cell [ref=e968]
+              - row "2024 湖南 物理 本科 4403暨南大学 114第114组 623" [ref=e969]:
+                - cell "2024" [ref=e970]
+                - cell "湖南" [ref=e971]:
+                  - link "湖南" [ref=e972] [cursor=pointer]:
+                    - /url: /news/list_104.html
+                - cell "物理" [ref=e973]
+                - cell "本科" [ref=e974]
+                - cell "4403暨南大学" [ref=e975]
+                - cell "114第114组" [ref=e976]
+                - cell "623" [ref=e977]
+                - cell [ref=e978]
+              - row "2024 湖南 物理 本科 4403暨南大学 113第113组 612" [ref=e979]:
+                - cell "2024" [ref=e980]
+                - cell "湖南" [ref=e981]
+                - cell "物理" [ref=e982]
+                - cell "本科" [ref=e983]
+                - cell "4403暨南大学" [ref=e984]
+                - cell "113第113组" [ref=e985]
+                - cell "612" [ref=e986]
+                - cell [ref=e987]
+              - row "2024 湖南 物理 本科 4403暨南大学 111第111组 601" [ref=e988]:
+                - cell "2024" [ref=e989]
+                - cell "湖南" [ref=e990]
+                - cell "物理" [ref=e991]
+                - cell "本科" [ref=e992]
+                - cell "4403暨南大学" [ref=e993]
+                - cell "111第111组" [ref=e994]
+                - cell "601" [ref=e995]
+                - cell [ref=e996]
+              - row "2024 湖南 物理 本科 4403暨南大学 317第317组（国家专项） 597" [ref=e997]:
+                - cell "2024" [ref=e998]
+                - cell "湖南" [ref=e999]
+                - cell "物理" [ref=e1000]
+                - cell "本科" [ref=e1001]
+                - cell "4403暨南大学" [ref=e1002]
+                - cell "317第317组（国家专项）" [ref=e1003]
+                - cell "597" [ref=e1004]
+                - cell [ref=e1005]
+              - row "2024 湖南 物理 本科 4403暨南大学 316第316组（国家专项） 596" [ref=e1006]:
+                - cell "2024" [ref=e1007]
+                - cell "湖南" [ref=e1008]
+                - cell "物理" [ref=e1009]
+                - cell "本科" [ref=e1010]
+                - cell "4403暨南大学" [ref=e1011]
+                - cell "316第316组（国家专项）" [ref=e1012]
+                - cell "596" [ref=e1013]
+                - cell [ref=e1014]
+              - row "2024 湖南 物理 本科 4403暨南大学 212第212组（中外合作办学或国际项目） 588 外语成绩不低于120分" [ref=e1015]:
+                - cell "2024" [ref=e1016]
+                - cell "湖南" [ref=e1017]
+                - cell "物理" [ref=e1018]
+                - cell "本科" [ref=e1019]
+                - cell "4403暨南大学" [ref=e1020]
+                - cell "212第212组（中外合作办学或国际项目）" [ref=e1021]
+                - cell "588" [ref=e1022]
+                - cell "外语成绩不低于120分" [ref=e1023]
+              - row "2024 湖南 物理 本科 4403暨南大学 215第215组（中外合作办学或国际项目） 584 外语成绩不低于120分" [ref=e1024]:
+                - cell "2024" [ref=e1025]
+                - cell "湖南" [ref=e1026]
+                - cell "物理" [ref=e1027]
+                - cell "本科" [ref=e1028]
+                - cell "4403暨南大学" [ref=e1029]
+                - cell "215第215组（中外合作办学或国际项目）" [ref=e1030]
+                - cell "584" [ref=e1031]
+                - cell "外语成绩不低于120分" [ref=e1032]
+              - row "2024 湖南 历史 本科 4403暨南大学 106第106组 598" [ref=e1033]:
+                - cell "2024" [ref=e1034]
+                - cell "湖南" [ref=e1035]
+                - cell "历史" [ref=e1036]
+                - cell "本科" [ref=e1037]
+                - cell "4403暨南大学" [ref=e1038]
+                - cell "106第106组" [ref=e1039]
+                - cell "598" [ref=e1040]
+                - cell [ref=e1041]
+              - row "2024 湖南 历史 本科 4403暨南大学 107第107组 598" [ref=e1042]:
+                - cell "2024" [ref=e1043]
+                - cell "湖南" [ref=e1044]
+                - cell "历史" [ref=e1045]
+                - cell "本科" [ref=e1046]
+                - cell "4403暨南大学" [ref=e1047]
+                - cell "107第107组" [ref=e1048]
+                - cell "598" [ref=e1049]
+                - cell [ref=e1050]
+              - row "2024 湖南 历史 本科 4403暨南大学 309第309组（国家专项） 598" [ref=e1051]:
+                - cell "2024" [ref=e1052]
+                - cell "湖南" [ref=e1053]
+                - cell "历史" [ref=e1054]
+                - cell "本科" [ref=e1055]
+                - cell "4403暨南大学" [ref=e1056]
+                - cell "309第309组（国家专项）" [ref=e1057]
+                - cell "598" [ref=e1058]
+                - cell [ref=e1059]
+              - row "2024 湖南 历史 本科 4403暨南大学 Y08第Y08组（艺术专业（不组织专业考试）） 566" [ref=e1060]:
+                - cell "2024" [ref=e1061]
+                - cell "湖南" [ref=e1062]
+                - cell "历史" [ref=e1063]
+                - cell "本科" [ref=e1064]
+                - cell "4403暨南大学" [ref=e1065]
+                - cell "Y08第Y08组（艺术专业（不组织专业考试））" [ref=e1066]
+                - cell "566" [ref=e1067]
+                - cell [ref=e1068]
+              - row "2024 甘肃 物理 本科C段 2996暨南大学 008 603" [ref=e1069]:
+                - cell "2024" [ref=e1070]
+                - cell "甘肃" [ref=e1071]:
+                  - link "甘肃" [ref=e1072] [cursor=pointer]:
+                    - /url: /news/list_123.html
+                - cell "物理" [ref=e1073]
+                - cell "本科C段" [ref=e1074]
+                - cell "2996暨南大学" [ref=e1075]
+                - cell "008" [ref=e1076]
+                - cell "603" [ref=e1077]
+                - cell [ref=e1078]
+              - row "2024 甘肃 物理 本科C段 2996暨南大学 007 593" [ref=e1079]:
+                - cell "2024" [ref=e1080]
+                - cell "甘肃" [ref=e1081]
+                - cell "物理" [ref=e1082]
+                - cell "本科C段" [ref=e1083]
+                - cell "2996暨南大学" [ref=e1084]
+                - cell "007" [ref=e1085]
+                - cell "593" [ref=e1086]
+                - cell [ref=e1087]
+              - row "2024 甘肃 物理 本科C段 2996暨南大学 005 555" [ref=e1088]:
+                - cell "2024" [ref=e1089]
+                - cell "甘肃" [ref=e1090]
+                - cell "物理" [ref=e1091]
+                - cell "本科C段" [ref=e1092]
+                - cell "2996暨南大学" [ref=e1093]
+                - cell "005" [ref=e1094]
+                - cell "555" [ref=e1095]
+                - cell [ref=e1096]
+              - row "2024 甘肃 历史 本科C段 2996暨南大学 002 581" [ref=e1097]:
+                - cell "2024" [ref=e1098]
+                - cell "甘肃" [ref=e1099]
+                - cell "历史" [ref=e1100]
+                - cell "本科C段" [ref=e1101]
+                - cell "2996暨南大学" [ref=e1102]
+                - cell "002" [ref=e1103]
+                - cell "581" [ref=e1104]
+                - cell [ref=e1105]
+              - row "2024 甘肃 历史 本科C段 2996暨南大学 003 566" [ref=e1106]:
+                - cell "2024" [ref=e1107]
+                - cell "甘肃" [ref=e1108]
+                - cell "历史" [ref=e1109]
+                - cell "本科C段" [ref=e1110]
+                - cell "2996暨南大学" [ref=e1111]
+                - cell "003" [ref=e1112]
+                - cell "566" [ref=e1113]
+                - cell [ref=e1114]
+              - row "2024 福建 物理 本科 2820暨南大学 500选考化学 616" [ref=e1115]:
+                - cell "2024" [ref=e1116]
+                - cell "福建" [ref=e1117]:
+                  - link "福建" [ref=e1118] [cursor=pointer]:
+                    - /url: /news/list_112.html
+                - cell "物理" [ref=e1119]
+                - cell "本科" [ref=e1120]
+                - cell "2820暨南大学" [ref=e1121]
+                - cell "500选考化学" [ref=e1122]
+                - cell "616" [ref=e1123]
+                - cell [ref=e1124]
+              - row "2024 福建 物理 本科 2820暨南大学 999不限选考科目 609" [ref=e1125]:
+                - cell "2024" [ref=e1126]
+                - cell "福建" [ref=e1127]
+                - cell "物理" [ref=e1128]
+                - cell "本科" [ref=e1129]
+                - cell "2820暨南大学" [ref=e1130]
+                - cell "999不限选考科目" [ref=e1131]
+                - cell "609" [ref=e1132]
+                - cell [ref=e1133]
+              - row "2024 福建 历史 本科 2820暨南大学 999不限选考科目 589" [ref=e1134]:
+                - cell "2024" [ref=e1135]
+                - cell "福建" [ref=e1136]
+                - cell "历史" [ref=e1137]
+                - cell "本科" [ref=e1138]
+                - cell "2820暨南大学" [ref=e1139]
+                - cell "999不限选考科目" [ref=e1140]
+                - cell "589" [ref=e1141]
+                - cell [ref=e1142]
+              - row "2024 黑龙江 物理 本科 2033暨南大学 007第007组 614" [ref=e1143]:
+                - cell "2024" [ref=e1144]
+                - cell "黑龙江" [ref=e1145]:
+                  - link "黑龙江" [ref=e1146] [cursor=pointer]:
+                    - /url: /news/list_113.html
+                - cell "物理" [ref=e1147]
+                - cell "本科" [ref=e1148]
+                - cell "2033暨南大学" [ref=e1149]
+                - cell "007第007组" [ref=e1150]
+                - cell "614" [ref=e1151]
+                - cell [ref=e1152]
+              - row "2024 黑龙江 物理 本科 2033暨南大学 006第006组 592" [ref=e1153]:
+                - cell "2024" [ref=e1154]
+                - cell "黑龙江" [ref=e1155]
+                - cell "物理" [ref=e1156]
+                - cell "本科" [ref=e1157]
+                - cell "2033暨南大学" [ref=e1158]
+                - cell "006第006组" [ref=e1159]
+                - cell "592" [ref=e1160]
+                - cell [ref=e1161]
+              - row "2024 黑龙江 物理 本科 2033暨南大学 005第005组 578" [ref=e1162]:
+                - cell "2024" [ref=e1163]
+                - cell "黑龙江" [ref=e1164]
+                - cell "物理" [ref=e1165]
+                - cell "本科" [ref=e1166]
+                - cell "2033暨南大学" [ref=e1167]
+                - cell "005第005组" [ref=e1168]
+                - cell "578" [ref=e1169]
+                - cell [ref=e1170]
+              - row "2024 黑龙江 历史 本科 2033暨南大学 003第003组 604" [ref=e1171]:
+                - cell "2024" [ref=e1172]
+                - cell "黑龙江" [ref=e1173]
+                - cell "历史" [ref=e1174]
+                - cell "本科" [ref=e1175]
+                - cell "2033暨南大学" [ref=e1176]
+                - cell "003第003组" [ref=e1177]
+                - cell "604" [ref=e1178]
+                - cell [ref=e1179]
+              - row "2024 黑龙江 历史 本科 2033暨南大学 002第002组 581" [ref=e1180]:
+                - cell "2024" [ref=e1181]
+                - cell "黑龙江" [ref=e1182]
+                - cell "历史" [ref=e1183]
+                - cell "本科" [ref=e1184]
+                - cell "2033暨南大学" [ref=e1185]
+                - cell "002第002组" [ref=e1186]
+                - cell "581" [ref=e1187]
+                - cell [ref=e1188]
+          - paragraph [ref=e1189]:
+            - text: 暨南大学（Jinan University）简称“暨大”，是直属中央统战部领导，教育部、中央统战部、广东省三方共建大学；是国家“
+            - link "双一流" [ref=e1190] [cursor=pointer]:
+              - /url: /news/list_178.html
+            - text: ” ，国家“211工程”、“
+            - link "985" [ref=e1191] [cursor=pointer]:
+              - /url: /news/list_195.html
+            - text: 平台”重点建设高校；入选国家“111计划”、“2011计划”、卓越医生教育培养计划、卓越法律人才教育培养计划、国家
+            - link "大学生" [ref=e1192] [cursor=pointer]:
+              - /url: /
+            - text: 创新性实验计划、国家级大学生创新
+            - link "创业" [ref=e1193] [cursor=pointer]:
+              - /url: /news/list_36.html
+            - text: 训练计划、教育部人文社会科学重点研究基地、国家大学生文化素质教育基地、国家对外汉语教学基地、国务院侨办华文教育基地、国家建设高水平大学公派
+            - link "研究生" [ref=e1194] [cursor=pointer]:
+              - /url: /news/list_41.html
+            - text: 项目、新工科研究与实践项目、中国政府奖学金来华留学生接收院校、全国首批深化创新创业教育改革示范高校；为粤港澳大湾区物流与供应链创新联盟理事单位；是全国首批试行学分制的高校。
+          - paragraph [ref=e1195]: 学校的前身是1906年清政府创立于南京的暨南学堂。后迁至上海，1927年更名为国立暨南大学。抗日战争期间，迁址福建建阳。1946年迁回上海，1949年8月合并于复旦大学、交通大学等高校。新中国成立后，暨南大学于1958年在广州重建，“文革”期间一度停办，1978年在广州复办。
+        - generic [ref=e1196]:
+          - text: 标签：
+          - link "暨南大学" [ref=e1197] [cursor=pointer]:
+            - /url: /news/?list_mark-%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6.html
+      - button "阅读全文" [ref=e1199] [cursor=pointer]
+      - iframe [ref=e1202]:
+        - generic [ref=f4e2]:
+          - generic [ref=f4e4]:
+            - link "定制服务方案" [ref=f4e5] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qmLFVFRPAFRcdFRPDFRc1FhkdpvbqniuVmLKV5HnkPjDhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5H0kuWc4mWIW&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=1&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=2158506206152816004&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%B6%A8%D6%C6%B7%FE%CE%F1%B7%BD%B0%B8&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+            - link "注销企业" [ref=f4e6] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRfLFRDzFRPAFRuKFRc4FR7aFRPaFRF7FhkdpvbqnBuVmLKV5Hn1n1mhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5HN9ujNhmvcs&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=396&img_typ=0&itm=0&lu_idc=gz&lukid=2&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=18072842877013259206&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%D7%A2%CF%FA%C6%F3%D2%B5&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 注销企业
+            - link "三维全景图" [ref=f4e8] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRn3FRuDFRP7FR7jFRn3FR7aFRF7FRcsFhkdpvbqnzuVmLKV5HcYrjchTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5HuWP1F-n1cs&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=625&img_typ=0&itm=0&lu_idc=gz&lukid=3&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=694236093019201307&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%C8%FD%CE%AC%C8%AB%BE%B0%CD%BC&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 三维全景图
+            - link "私人服务器" [ref=f4e10] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRPaFRFDFRcLFRu7FRcLFRDzFRczFRFjFRPDFRm3FhkdpvbqPauVmLKV5Hnzn16hTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5HcYPhNBrH7h&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=1088&img_typ=0&itm=0&lu_idc=gz&lukid=4&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=828547056692316540&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%CB%BD%C8%CB%B7%FE%CE%F1%C6%F7&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 私人服务器
+            - link "资产管理系统" [ref=f4e12] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRfLFRPKFRczFRuKFRc4FRwjFRnsFRNDFRPAFRcdFRPDFRc1FhkdpvbqPiuVmLKV5HmkrjThTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5H7BmHfsrym3&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=476&img_typ=0&itm=0&lu_idc=gz&lukid=5&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=2379858053732474586&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%D7%CA%B2%FA%B9%DC%C0%ED%CF%B5%CD%B3&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 资产管理系统
+            - link "三日深度游" [ref=f4e14] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRRvFRnYFRfYFRcYFRnzFRn1FRf1FRP7FRnzFRcLFRPAFRwAFRc4FRDdFRnzFRfYFhkdpvbqPBuVmLKV5HnLP10hTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5yDdPANWrjnY&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=6&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=756472759480048727&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%C8%FD%C8%D5%C9%EE%B6%C8%D3%CE&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+            - link "摄影点位指南" [ref=f4e15] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRfdFRndFRFjFRfzFRFDFRRLFRnzFRn1FRf1FRP7FRfLFRN7FRFjFRfkFRPKFRckFRFjFRRYFhkdpvbqPzuVmLKV5HD3PWDhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5HPhnH9-ryub&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=7&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=2188434432089009937&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%C9%E3%D3%B0%B5%E3%CE%BB%D6%B8%C4%CF&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 摄影点位指南
+            - link "数据可视化利器" [ref=f4e17] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qR7KRFRnYFRD1FRcsFRRdFhkdpvbqrauVmLKV5HRLnWDhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5yDzryPbnWc4&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=8&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=7883553825836648060&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%CA%FD%BE%DD%BF%C9%CA%D3%BB%AF%C0%FB%C6%F7&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 数据可视化利器
+            - link "新大鱼吃小鱼" [ref=f4e19] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRcYFRm1FRf1FRR1FRc1FRfYFRfsFRDkFRf1FRR1FRcdFRDdFRFaFRuKFRcsFRRvFhkdpvbqriuVmLKV5HRknW6hTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5y7-njIhn1DY&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=24&img_typ=0&itm=0&lu_idc=gz&lukid=9&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=2381092324578932255&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%D0%C2%B4%F3%D3%E3%B3%D4%D0%A1%D3%E3&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 新大鱼吃小鱼
+            - link "封闭式学校管理" [ref=f4e21] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRn4FRN7FRwaFRwKFRfYFRnvFRcvFRDdFRfkFRDLFRfsFRD1FRfkFRDLFRcLFRfkFhkdpvbqnH0hUyPsUHY3Pjm1FMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHY4uHnkmHFBPs&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=309&img_typ=0&itm=0&lu_idc=gz&lukid=10&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=7491707486785541923&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%B7%E2%B1%D5%CA%BD%D1%A7%D0%A3%B9%DC%C0%ED&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 封闭式学校管理
+            - link "数据分析方法" [ref=f4e23] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRPKFRuDFRF7FRwDFRcLFRfvFRP7FRmvFRnvFRFDFRPjFRD3FhkdpvbqnHDhUyPsUHYdP1fYFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYvnvPWP1D1P0&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=481&img_typ=0&itm=0&lu_idc=gz&lukid=11&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=2248387159217089957&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%CA%FD%BE%DD%B7%D6%CE%F6%B7%BD%B7%A8&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+            - link "环保分离技术" [ref=f4e24] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRc4FRPjFRfzFRFKFRc3FRn4FRPKFR7KFRcLFRfvFRnsFRNaFRFaFRuKFhkdpvbqnHchUyPsUHY1n1mLFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYYnynsnvn4n6&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=12&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=2344865718015064943&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%BB%B7%B1%A3%B7%D6%C0%EB%BC%BC%CA%F5&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 环保分离技术
+            - link "火柴人战争" [ref=f4e26] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRFaFRmsFRczFRmkFRn3FRPaFRfdFRFDFRfdFRm4FRcYFR7aFRnvFRRvFhkdpvbqnHnhUyPsUHYdPHfhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5ycLuH9-rjKb&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=58&img_typ=0&itm=0&lu_idc=gz&lukid=13&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=725763094356725210&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%BB%F0%B2%F1%C8%CB%D5%BD%D5%F9&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 火柴人战争
+            - link "重庆出发船票" [ref=f4e28] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRc1FRDYFRFDFR7DFRn3FRuDFRPAFRFAFRf1FRP7FRnzFRfvFRnzFRn1FRf1FRP7FRFjFRwaFRc3FRmkFRckFRNDFhkdpvbqnHfhUyPsUHY1P1DvFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHY1rjbLmHTsns&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=14&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=2135131701114352713&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%D6%D8%C7%EC%B3%F6%B7%A2%B4%AC%C6%B1&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 重庆出发船票
+            - link "智能决策引擎" [ref=f4e30] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qfdFPFRc4FRwjFRnsFRNDFRPAFRcdFRPDFRc1FhkdpvbqnHRhUyPsUHY3njTkFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHdWuhDvPhmknf&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=626&img_typ=0&itm=0&lu_idc=gz&lukid=15&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=2304089144431061323&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%D6%C7%C4%DC%BE%F6%B2%DF%D2%FD%C7%E6&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 智能决策引擎
+            - link "电工短期培训班" [ref=f4e32] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRcdFRRLFRnvFRm3FRfLFRfYFRcvFR7AFRFaFR7AFRcvFRPjFRnvFRwKFRndFRRsFRfkFRcdFRcsFRRsFhkdpvbqnHmhUyPsUHYYnjnLFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHd-rj-Bnyfzu0&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=438&img_typ=0&itm=0&lu_idc=gz&lukid=16&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=7491525101008504312&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%B5%E7%B9%A4%B6%CC%C6%DA%C5%E0%D1%B5%B0%E0&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+            - link "旋转接头" [ref=f4e33] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRfsFRuDFRfLFR7KFRFDFRf1FRPDFRcLFhkdpvbqnHThUyPsUHYYnjRvFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYzuh79uHPWr0&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=1575&img_typ=0&itm=0&lu_idc=gz&lukid=17&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=12310587179319284669&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%D0%FD%D7%AA%BD%D3%CD%B7&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 旋转接头
+            - link "直供高效旋耕机" [ref=f4e35] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRndFRD4FRf1FRn1FRfsFRDkFRfsFRPDFRczFRmkFRf1FRPDFRfsFRuDFRc3FRuaFRFaFRuKFhkdpvbqnH6hUyPsUHYzPHc1FMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHd9m1fdmHNhns&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=18&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=7753626657529517503&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%D6%B1%B9%A9%B8%DF%D0%A7%D0%FD%B8%FB%BB%FA&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 直供高效旋耕机
+            - link "天天台球" [ref=f4e37] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRPjFRNjFRPjFRNjFRPjFRD3FRnLFRmzFhkdpvbqnHbhUyPsUHYLnHmhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujY1mhc1mH0YPAPbPAF-njwhFMPYpyfqnHRkFMfqIZKWUA-WpvNbndqCmzuYujYvP1cLrjTdFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWmhIZRqIHmLnWT3P1RhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5HczryDzmW-h&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=133&img_typ=0&itm=0&lu_idc=gz&lukid=19&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=17063273453190621388&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%CC%EC%CC%EC%CC%A8%C7%F2&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 天天台球
+            - link "海外留学" [ref=f4e39] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRFKFRD1FRPDFRRzFRnkFRmYFRfkFRDLFhkdpvbqnW0hUyPsUHYznj0kPBuk5Hb4njndnjc3gvPsTBuzmWYsFMF15HDhTvN_UANzgv-b5HDhTv-b5HPBmWP9njfYmvfYmhRsPAmhTLwGujYkPHDhIjdYTAP_pyPouyf1gv9WFMwb5HmLnWT3P1RhIAYqnHn4nWfsPBuYUgnqnHTLP1c1n1nvPBuYIHddPWTzP16LPiud5y9YIZK1FHPKFHFAFHFAILILFHF7uZ91mhc-nbNWUvYhIWYzFhbqPyDLn1f3nvc&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=1283&img_typ=0&itm=0&lu_idc=gz&lukid=20&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=16342898644872197313&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%BA%A3%CD%E2%C1%F4%D1%A7&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 海外留学
+            - link "实时行情追踪" [ref=f4e41] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRFaFRnvFRFDFRmsFRnvFRwKFRFaFRmdFRFAFR7KFRFaFRDLFRFDFRFaFRfzFRfLFRnvFRFDFRPjFRD3FhkdpvbqnWDhUyPsUHY1PWfkFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHY3Pj-Wm1w-r0&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=21&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=2459121546875544738&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%CA%B5%CA%B1%D0%D0%C7%E9%D7%B7%D7%D9&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+            - link "儿童乐园设备厂家" [ref=f4e42] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRcvFRm4FRPDFR7AFRf1FRP7FRnsFRfvFRc1FRDkFRc1FRDLFRFjFRfzFRn4FRR3FRckFRc3FhkdpvbqnWchUyPsUHYkrjRYFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYLmW9BP10kuf&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=341&img_typ=0&itm=0&lu_idc=gz&lukid=22&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=5912861051614355412&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%B6%F9%CD%AF%C0%D6%D4%B0%C9%E8%B1%B8%B3%A7%BC%D2&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 儿童乐园设备厂家
+            - link "运动场塑胶地面" [ref=f4e44] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRPaFRwjFRFDFRFKFRcdFRf3FRn1FRRvFRPKFRD4FRc4FRDYFRfLFRmvFRcLFRD3FhkdpvbqnWnhUyPsUHYznWcdFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYduhR3PHndnf&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=362&img_typ=0&itm=0&lu_idc=gz&lukid=23&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=7410872276863801757&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%D4%CB%B6%AF%B3%A1%CB%DC%BD%BA%B5%D8%C3%E6&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 运动场塑胶地面
+            - link "企业风控专家" [ref=f4e46] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRc1FRn4FRcvFRFjFRnzFRn4FRPKFRDvFRPKFRnzFRP7FRmkFRPaFRm4FhkdpvbqnWfhUyPsUHY1P1TLFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHdhnWRkmWm1n6&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=24&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=2206684328180576179&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%C6%F3%D2%B5%B7%E7%BF%D8%D7%A8%BC%D2&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 企业风控专家
+            - link "小型中压空压机" [ref=f4e48] [cursor=pointer]:
+              - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYuhRsPAFWujfYmHKBn1PBFh_qFRFAFRfdFRfkFRc4FRFaFRuKFRnzFRwDFRc3FRPaFRPKFRFDFRFAFRfdFRfkFRc4FRFaFRuKFhkdpvbqnWRhUyPsUHY1rH64FMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqnvFBnvDsPjwWujwBuH0YuBu1IA-b5HDdniuY5gwsmvkGmvV-ujPxpAnhIAfqPWTzP16LPiuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mvFMwd5gRvP1cLrjTdFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYvrAFbmvu-Ps&besl=-1&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075_200078&fr=4&fv=0&haacp=341&img_typ=0&itm=0&lu_idc=gz&lukid=25&lus=3bb3a044cd4be04f&lust=69ee6dd6&luwtr=8008959719056003313&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=70002&tpl=searchRecBox&tsf=dtp:1&tt_sign=%D0%A1%D0%CD%D6%D0%D1%B9%BF%D5%D1%B9%BB%FA&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+              - text: 小型中压空压机
+          - generic [ref=f4e50]:
+            - link [ref=f4e51] [cursor=pointer]:
+              - /url: https://union.baidu.com
+              - img [ref=f4e52]
+            - link [ref=f4e54] [cursor=pointer]:
+              - /url: javascript:;
+              - img [ref=f4e55]
+      - generic [ref=e1203]:
+        - heading "相关推荐 更多" [level=2] [ref=e1204]:
+          - text: 相关推荐
+          - link "更多" [ref=e1206] [cursor=pointer]:
+            - /url: /school/暨南大学.html
+        - list:
+          - listitem [ref=e1207]:
+            - link "暨南大学怎么样 好不好 2025-6-15":
+              - /url: /news/8212.html
+              - img [ref=e1209] [cursor=pointer]
+              - generic [ref=e1210] [cursor=pointer]:
+                - heading "暨南大学怎么样 好不好" [level=3] [ref=e1211]
+                - paragraph [ref=e1212]: 2025-6-15
+          - listitem [ref=e1213]:
+            - link "暨南大学是985还是211大学？ 2025-6-10":
+              - /url: /news/32811.html
+              - img [ref=e1215] [cursor=pointer]
+              - generic [ref=e1216] [cursor=pointer]:
+                - heading "暨南大学是985还是211大学？" [level=3] [ref=e1217]
+                - paragraph [ref=e1218]: 2025-6-10
+          - listitem [ref=e1219]:
+            - link "暨南大学是双一流大学吗？ 2025-6-15":
+              - /url: /news/43490.html
+              - img [ref=e1221] [cursor=pointer]
+              - generic [ref=e1222] [cursor=pointer]:
+                - heading "暨南大学是双一流大学吗？" [level=3] [ref=e1223]
+                - paragraph [ref=e1224]: 2025-6-15
+          - listitem [ref=e1225]:
+            - link "暨南大学是公办还是民办大学？ 2025-6-15":
+              - /url: /news/56935.html
+              - img [ref=e1227] [cursor=pointer]
+              - generic [ref=e1228] [cursor=pointer]:
+                - heading "暨南大学是公办还是民办大学？" [level=3] [ref=e1229]
+                - paragraph [ref=e1230]: 2025-6-15
+          - listitem [ref=e1231]:
+            - generic [ref=e1232]:
+              - emphasis
+              - iframe [ref=e1233]:
+                - generic [ref=f5e2]:
+                  - generic [ref=f5e5] [cursor=pointer]:
+                    - img [ref=f5e8]
+                    - generic [ref=f5e9]:
+                      - generic [ref=f5e11]: 研究生大学排名
+                      - generic [ref=f5e12]: 大学研究生排名
+                      - generic [ref=f5e13]: 2.5万阅读
+                  - generic [ref=f5e14]:
+                    - link:
+                      - /url: https://union.baidu.com
+                      - img [ref=f5e15] [cursor=pointer]
+                    - link:
+                      - /url: javascript:;
+                      - img [ref=f5e17] [cursor=pointer]
+          - listitem [ref=e1234]:
+            - link "暨南大学就业率及就业前景怎么样 2023-1-4":
+              - /url: /news/13948.html
+              - img [ref=e1236] [cursor=pointer]
+              - generic [ref=e1237] [cursor=pointer]:
+                - heading "暨南大学就业率及就业前景怎么样" [level=3] [ref=e1238]
+                - paragraph [ref=e1239]: 2023-1-4
+          - listitem [ref=e1240]:
+            - link "暨南大学地址在哪里，哪个城市，哪个区？ 2025-3-1":
+              - /url: /news/99145.html
+              - img [ref=e1242] [cursor=pointer]
+              - generic [ref=e1243] [cursor=pointer]:
+                - heading "暨南大学地址在哪里，哪个城市，哪个区？" [level=3] [ref=e1244]
+                - paragraph [ref=e1245]: 2025-3-1
+          - listitem [ref=e1246]:
+            - link "2025年暨南大学招生章程 2025-6-3":
+              - /url: /news/55006.html
+              - img [ref=e1248] [cursor=pointer]
+              - generic [ref=e1249] [cursor=pointer]:
+                - heading "2025年暨南大学招生章程" [level=3] [ref=e1250]
+                - paragraph [ref=e1251]: 2025-6-3
+          - listitem [ref=e1252]:
+            - link "暨南大学有哪些专业？ 2025-3-27":
+              - /url: /news/9120.html
+              - img [ref=e1254] [cursor=pointer]
+              - generic [ref=e1255] [cursor=pointer]:
+                - heading "暨南大学有哪些专业？" [level=3] [ref=e1256]
+                - paragraph [ref=e1257]: 2025-3-27
+          - listitem [ref=e1258]:
+            - iframe [ref=e1260]:
+              - generic [ref=f6e2]:
+                - generic [ref=f6e5] [cursor=pointer]:
+                  - img [ref=f6e8]
+                  - generic [ref=f6e9]:
+                    - generic [ref=f6e11]: 全国高中排名前100的高中学校竟然是这家？
+                    - generic [ref=f6e12]: 国内高中排名前100的高中有哪些
+                    - generic [ref=f6e13]: 2.9万阅读
+                - generic [ref=f6e14]:
+                  - link:
+                    - /url: https://union.baidu.com
+                    - img [ref=f6e15] [cursor=pointer]
+                  - link:
+                    - /url: javascript:;
+                    - img [ref=f6e17] [cursor=pointer]
+          - listitem [ref=e1261]:
+            - link "暨南大学双一流学科名单有哪些（1个） 2025-6-18":
+              - /url: /news/43468.html
+              - img [ref=e1263] [cursor=pointer]
+              - generic [ref=e1264] [cursor=pointer]:
+                - heading "暨南大学双一流学科名单有哪些（1个）" [level=3] [ref=e1265]
+                - paragraph [ref=e1266]: 2025-6-18
+          - listitem [ref=e1267]:
+            - link "暨南大学学科评估结果排名 2025-6-10":
+              - /url: /news/73161.html
+              - img [ref=e1269] [cursor=pointer]
+              - generic [ref=e1270] [cursor=pointer]:
+                - heading "暨南大学学科评估结果排名" [level=3] [ref=e1271]
+                - paragraph [ref=e1272]: 2025-6-10
+          - listitem [ref=e1273]:
+            - link "暨南大学一流本科专业建设点名单（国家级+省级） 2025-3-18":
+              - /url: /news/69501.html
+              - img [ref=e1275] [cursor=pointer]
+              - generic [ref=e1276] [cursor=pointer]:
+                - heading "暨南大学一流本科专业建设点名单（国家级+省级）" [level=3] [ref=e1277]
+                - paragraph [ref=e1278]: 2025-3-18
+          - listitem [ref=e1279]:
+            - link "暨南大学特色专业有哪些（附名单） 2025-2-25":
+              - /url: /news/114711.html
+              - img [ref=e1281] [cursor=pointer]
+              - generic [ref=e1282] [cursor=pointer]:
+                - heading "暨南大学特色专业有哪些（附名单）" [level=3] [ref=e1283]
+                - paragraph [ref=e1284]: 2025-2-25
+          - listitem [ref=e1285]:
+            - iframe [ref=e1287]:
+              - generic [ref=f7e2]:
+                - generic [ref=f7e5] [cursor=pointer]:
+                  - img [ref=f7e8]
+                  - generic [ref=f7e9]:
+                    - generic [ref=f7e11]: 研究生大学排名
+                    - generic [ref=f7e12]: 大学研究生排名
+                    - generic [ref=f7e13]: 2.5万阅读
+                - generic [ref=f7e14]:
+                  - link:
+                    - /url: https://union.baidu.com
+                    - img [ref=f7e15] [cursor=pointer]
+                  - link:
+                    - /url: javascript:;
+                    - img [ref=f7e17] [cursor=pointer]
+          - listitem [ref=e1288]:
+            - link "暨南大学招生计划-各专业招生人数是多少 2025-5-8":
+              - /url: /news/101829.html
+              - img [ref=e1290] [cursor=pointer]
+              - generic [ref=e1291] [cursor=pointer]:
+                - heading "暨南大学招生计划-各专业招生人数是多少" [level=3] [ref=e1292]
+                - paragraph [ref=e1293]: 2025-5-8
+          - listitem [ref=e1294]:
+            - link "2024暨南大学录取分数线（含2022-2023历年） 2025-4-22":
+              - /url: /news/33881.html
+              - img [ref=e1296] [cursor=pointer]
+              - generic [ref=e1297] [cursor=pointer]:
+                - heading "2024暨南大学录取分数线（含2022-2023历年）" [level=3] [ref=e1298]
+                - paragraph [ref=e1299]: 2025-4-22
+          - listitem [ref=e1300]:
+            - link "2025暨南大学录取规则及投档比例 2025-6-3":
+              - /url: /news/108158.html
+              - img [ref=e1302] [cursor=pointer]
+              - generic [ref=e1303] [cursor=pointer]:
+                - heading "2025暨南大学录取规则及投档比例" [level=3] [ref=e1304]
+                - paragraph [ref=e1305]: 2025-6-3
+          - listitem [ref=e1306]:
+            - link "2025暨南大学学费多少钱一年-各专业收费标准 2025-6-3":
+              - /url: /news/52744.html
+              - img [ref=e1308] [cursor=pointer]
+              - generic [ref=e1309] [cursor=pointer]:
+                - heading "2025暨南大学学费多少钱一年-各专业收费标准" [level=3] [ref=e1310]
+                - paragraph [ref=e1311]: 2025-6-3
+          - listitem [ref=e1312]:
+            - link "暨南大学奖学金有哪些，一般多少钱? 2025-3-24":
+              - /url: /news/47569.html
+              - img [ref=e1314] [cursor=pointer]
+              - generic [ref=e1315] [cursor=pointer]:
+                - heading "暨南大学奖学金有哪些，一般多少钱?" [level=3] [ref=e1316]
+                - paragraph [ref=e1317]: 2025-3-24
+          - listitem [ref=e1318]:
+            - link "2024暨南大学中外合作办学招生简章 2024-7-23":
+              - /url: /news/122239.html
+              - img [ref=e1320] [cursor=pointer]
+              - generic [ref=e1321] [cursor=pointer]:
+                - heading "2024暨南大学中外合作办学招生简章" [level=3] [ref=e1322]
+                - paragraph [ref=e1323]: 2024-7-23
+          - listitem [ref=e1324]:
+            - link "暨南大学中外合作办学专业有哪些？ 2025-6-3":
+              - /url: /news/105788.html
+              - img [ref=e1326] [cursor=pointer]
+              - generic [ref=e1327] [cursor=pointer]:
+                - heading "暨南大学中外合作办学专业有哪些？" [level=3] [ref=e1328]
+                - paragraph [ref=e1329]: 2025-6-3
+          - listitem [ref=e1330]:
+            - link "暨南大学中外合作办学招生计划-各专业招生人数是多少 2025-5-18":
+              - /url: /news/109244.html
+              - img [ref=e1332] [cursor=pointer]
+              - generic [ref=e1333] [cursor=pointer]:
+                - heading "暨南大学中外合作办学招生计划-各专业招生人数是多少" [level=3] [ref=e1334]
+                - paragraph [ref=e1335]: 2025-5-18
+          - listitem [ref=e1336]:
+            - link "2024暨南大学中外合作办学分数线（含2022-2023历年） 2025-4-22":
+              - /url: /news/79982.html
+              - img [ref=e1338] [cursor=pointer]
+              - generic [ref=e1339] [cursor=pointer]:
+                - heading "2024暨南大学中外合作办学分数线（含2022-2023历年）" [level=3] [ref=e1340]
+                - paragraph [ref=e1341]: 2025-4-22
+          - listitem [ref=e1342]:
+            - link "2025暨南大学中外合作办学学费多少钱一年-各专业收费标准 2025-6-3":
+              - /url: /news/104738.html
+              - img [ref=e1344] [cursor=pointer]
+              - generic [ref=e1345] [cursor=pointer]:
+                - heading "2025暨南大学中外合作办学学费多少钱一年-各专业收费标准" [level=3] [ref=e1346]
+                - paragraph [ref=e1347]: 2025-6-3
+          - listitem [ref=e1348]:
+            - link "2025年暨南大学艺术类招生简章 2025-6-11":
+              - /url: /news/100713.html
+              - img [ref=e1350] [cursor=pointer]
+              - generic [ref=e1351] [cursor=pointer]:
+                - heading "2025年暨南大学艺术类招生简章" [level=3] [ref=e1352]
+                - paragraph [ref=e1353]: 2025-6-11
+          - listitem [ref=e1354]:
+            - link "暨南大学艺术类专业有哪些？ 2025-6-11":
+              - /url: /news/119717.html
+              - img [ref=e1356] [cursor=pointer]
+              - generic [ref=e1357] [cursor=pointer]:
+                - heading "暨南大学艺术类专业有哪些？" [level=3] [ref=e1358]
+                - paragraph [ref=e1359]: 2025-6-11
+          - listitem [ref=e1360]:
+            - link "2025暨南大学艺术类招生计划-各专业招生人数是多少 2025-6-11":
+              - /url: /news/73788.html
+              - img [ref=e1362] [cursor=pointer]
+              - generic [ref=e1363] [cursor=pointer]:
+                - heading "2025暨南大学艺术类招生计划-各专业招生人数是多少" [level=3] [ref=e1364]
+                - paragraph [ref=e1365]: 2025-6-11
+          - listitem [ref=e1366]:
+            - link "2024暨南大学艺术类录取分数线（含2022-2023历年） 2025-4-22":
+              - /url: /news/90900.html
+              - img [ref=e1368] [cursor=pointer]
+              - generic [ref=e1369] [cursor=pointer]:
+                - heading "2024暨南大学艺术类录取分数线（含2022-2023历年）" [level=3] [ref=e1370]
+                - paragraph [ref=e1371]: 2025-4-22
+          - listitem [ref=e1372]:
+            - link "2025暨南大学艺术类录取规则 2025-6-3":
+              - /url: /news/120992.html
+              - img [ref=e1374] [cursor=pointer]
+              - generic [ref=e1375] [cursor=pointer]:
+                - heading "2025暨南大学艺术类录取规则" [level=3] [ref=e1376]
+                - paragraph [ref=e1377]: 2025-6-3
+          - listitem [ref=e1378]:
+            - link "2025暨南大学艺术类学费多少钱一年-各专业收费标准 2025-6-3":
+              - /url: /news/118572.html
+              - img [ref=e1380] [cursor=pointer]
+              - generic [ref=e1381] [cursor=pointer]:
+                - heading "2025暨南大学艺术类学费多少钱一年-各专业收费标准" [level=3] [ref=e1382]
+                - paragraph [ref=e1383]: 2025-6-3
+      - generic [ref=e1384]:
+        - generic [ref=e1385]:
+          - text: 上一篇：
+          - link "多少分能上汕头大学（附2024年投档分数线）" [ref=e1386] [cursor=pointer]:
+            - /url: /news/89978.html
+          - link "前往列表" [ref=e1388] [cursor=pointer]:
+            - /url: /news/list_1248.html
+        - generic [ref=e1389]:
+          - text: 下一篇：
+          - link "多少分能上中山大学（附2024年投档分数线）" [ref=e1390] [cursor=pointer]:
+            - /url: /news/89976.html
+          - link "前往首页" [ref=e1392] [cursor=pointer]:
+            - /url: /
+    - generic [ref=e1393]:
+      - generic [ref=e1394]:
+        - heading "高考动态" [level=2] [ref=e1395]
+        - list [ref=e1396]:
+          - listitem [ref=e1397]:
+            - link "高考改革" [ref=e1398] [cursor=pointer]:
+              - /url: /news/list_181.html
+          - listitem [ref=e1399]:
+            - link "高考报名" [ref=e1400] [cursor=pointer]:
+              - /url: /news/list_449.html
+          - listitem [ref=e1401]:
+            - link "高考时间" [ref=e1402] [cursor=pointer]:
+              - /url: /news/list_888.html
+          - listitem [ref=e1403]:
+            - link "高考科目" [ref=e1404] [cursor=pointer]:
+              - /url: /news/list_174.html
+          - listitem [ref=e1405]:
+            - link "高考总分" [ref=e1406] [cursor=pointer]:
+              - /url: /news/list_220.html
+          - listitem [ref=e1407]:
+            - link "高考作文" [ref=e1408] [cursor=pointer]:
+              - /url: /news/list_457.html
+          - listitem [ref=e1409]:
+            - link "成绩查询" [ref=e1410] [cursor=pointer]:
+              - /url: /news/list_821.html
+          - listitem [ref=e1411]:
+            - link "志愿填报" [ref=e1412] [cursor=pointer]:
+              - /url: /news/list_822.html
+          - listitem [ref=e1413]:
+            - link "高考分数" [ref=e1414] [cursor=pointer]:
+              - /url: /news/list_180.html
+          - listitem [ref=e1415]:
+            - link "一分一段" [ref=e1416] [cursor=pointer]:
+              - /url: /news/list_223.html
+          - listitem [ref=e1417]:
+            - link "投档分数" [ref=e1418] [cursor=pointer]:
+              - /url: /news/list_1001.html
+          - listitem [ref=e1419]:
+            - link "录取查询" [ref=e1420] [cursor=pointer]:
+              - /url: /news/list_553.html
+      - generic [ref=e1421]:
+        - heading "大学名单" [level=2] [ref=e1422]
+        - list [ref=e1423]:
+          - listitem [ref=e1424]:
+            - link "985大学" [ref=e1425] [cursor=pointer]:
+              - /url: /news/list_652.html
+          - listitem [ref=e1426]:
+            - link "211大学" [ref=e1427] [cursor=pointer]:
+              - /url: /news/list_651.html
+          - listitem [ref=e1428]:
+            - link "双 一 流" [ref=e1429] [cursor=pointer]:
+              - /url: /news/list_178.html
+          - listitem [ref=e1430]:
+            - link "双高计划" [ref=e1431] [cursor=pointer]:
+              - /url: /news/list_642.html
+          - listitem [ref=e1432]:
+            - link "本科大学" [ref=e1433] [cursor=pointer]:
+              - /url: /news/list_158.html
+          - listitem [ref=e1434]:
+            - link "专科大学" [ref=e1435] [cursor=pointer]:
+              - /url: /news/list_159.html
+          - listitem [ref=e1436]:
+            - link "公办大学" [ref=e1437] [cursor=pointer]:
+              - /url: /news/list_189.html
+          - listitem [ref=e1438]:
+            - link "民办大学" [ref=e1439] [cursor=pointer]:
+              - /url: /news/list_190.html
+          - listitem [ref=e1440]:
+            - link "公办本科" [ref=e1441] [cursor=pointer]:
+              - /url: /news/list_547.html
+          - listitem [ref=e1442]:
+            - link "公办专科" [ref=e1443] [cursor=pointer]:
+              - /url: /news/list_459.html
+          - listitem [ref=e1444]:
+            - link "民办本科" [ref=e1445] [cursor=pointer]:
+              - /url: /news/list_548.html
+          - listitem [ref=e1446]:
+            - link "民办专科" [ref=e1447] [cursor=pointer]:
+              - /url: /news/list_460.html
+      - iframe [ref=e1450]:
+        - generic [ref=f8e2]:
+          - link "暨南大学研究生学费一年要多少钱" [ref=f8e3] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRc4FRR1FRfvFRwDFRmYFRwAFRnYFRPAFRcYFRm1FRfkFRDLFRc3FRwaFRcsFRnYFRfLFRf1FRcdFRwjFRfkFRDLFRfsFRD1FRfkFRDLFRcLFRfkFhkdpvbqniuVmLKV5HDkPH6LFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqPHc4m1wBuj0YPHD4n1N-nBu1IA-b5HRhIjdYTAP_pyPouyf1gv9WFMwb5HmknWbYnH6hIAYqnHn4nWfsPBuYUgnqnHTLP1c1n1nvPzuYIHddPWDzrHfkraud5y9YIZK1FHPKFHFAFHFAILILFHF7uZ91mhc-nbNWUvYhIWYzFhbqP1nkPHndryD&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=363&img_typ=0&itm=0&lu_idc=gz&lukid=1&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=14343664898204701735&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=0&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%F4%DF%C4%CF%B4%F3%D1%A7%D1%D0%BE%BF%C9%FA%D1%A7%B7%D1%D2%BB%C4%EA%D2%AA%B6%E0%C9%D9%C7%AE&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "随叫随到吊装服务" [ref=f8e4] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRcdFRmdFRFaFRuKFRc1FRmvFRfLFRRzFRcdFRRLFRFaFRcsFhkdpvbqnBuVmLKV5HRzPjThTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYdnW-WPAFbnjfdnHb1PyRzFMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqPWDzrHfkrauYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRvnHc4PjD3FMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYzuH0suWF9uf&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=2&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=8230945824126162258&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%CB%E6%BD%D0%CB%E6%B5%BD%B5%F5%D7%B0%B7%FE%CE%F1&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "智慧农业" [ref=f8e5] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRfvFRnLFRFaFRwaFRndFRD4FRfzFRcdFRFDFRRzFRF7FRmvFRcLFRFDFRcsFRc3FRc4FRD4FRf1FRDvFRn4FRPjFhkdpvbqnzuVmLKV5HRYPWDhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYdnW-WPAFbnjfdnHb1PyRzFMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqPWDzrHfkrauYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRvnHc4PjD3FMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHd-uAFhnHc4rf&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=352&img_typ=0&itm=0&lu_idc=gz&lukid=3&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=15833468639938521541&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%D6%C7%BB%DB%C5%A9%D2%B5&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "逆流冷却塔" [ref=f8e6] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRnYFRRvFRnkFRmLFRnsFRRYFRn3FRcYFRPaFRu7FhkdpvbqPauVmLKV5HDYn1fhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYdnW-WPAFbnjfdnHb1PyRzFMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqPWDzrHfkrauYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRvnHc4PjD3FMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYYnAcduhfYuf&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=341&img_typ=0&itm=0&lu_idc=gz&lukid=4&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=693442949971305084&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%C4%E6%C1%F7%C0%E4%C8%B4%CB%FE&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "注销企业" [ref=f8e7] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRfLFRDzFRPAFRuKFRc4FR7aFRPaFRF7FhkdpvbqPiuVmLKV5HfkPWRhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYdnW-WPAFbnjfdnHb1PyRzFMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqPWDzrHfkrauYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRvnHc4PjD3FMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYsnjbYrjTsms&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=396&img_typ=0&itm=0&lu_idc=gz&lukid=5&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=18072842877013259206&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%D7%A2%CF%FA%C6%F3%D2%B5&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "种植中药材加盟" [ref=f8e8] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRfvFRfsFRfzFRD4FRczFRnYFRfvFRfvFRfvFRczFRFKFRPAFRfLFRmLFRc4FR7aFRPaFRF7FhkdpvbqPBuVmLKV5Hn3rjmhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYdnW-WPAFbnjfdnHb1PyRzFMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqPWDzrHfkrauYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRvnHc4PjD3FMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYdmhmsuWm3ns&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=65&img_typ=0&itm=0&lu_idc=gz&lukid=6&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=6752316802540691606&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%D6%D6%D6%B2%D6%D0%D2%A9%B2%C4%BC%D3%C3%CB&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "恐龙传奇" [ref=f8e9] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRcYFR7aFRnvFRRvFRPaFRFDFRcLFRu7FhkdpvbqPzuVmLKV5H64rHDhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYdnW-WPAFbnjfdnHb1PyRzFMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqPWDzrHfkrauYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRvnHc4PjD3FMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYdnHf4Pj-bns&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=144&img_typ=0&itm=0&lu_idc=gz&lukid=7&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=18068959299686017972&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%BF%D6%C1%FA%B4%AB%C6%E6&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "今日黄金价格" [ref=f8e10] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRFaFRnvFRFDFRmsFRFjFRwaFRc3FRmkFRFDFRmkFRn3FRfdFhkdpvbqrauVmLKV5Hc1rH6hTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYdnW-WPAFbnjfdnHb1PyRzFMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqPWDzrHfkrauYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRvnHc4PjD3FMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHY1uWmLm1ckPs&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=36&img_typ=0&itm=0&lu_idc=gz&lukid=8&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=2241494518585073181&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%BD%F1%C8%D5%BB%C6%BD%F0%BC%DB%B8%F1&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "高压均质机" [ref=f8e11] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRc1FR7jFRc3FRwAFRfkFRc4FRF7FRm4FRfvFRPKFRFaFRuKFhkdpvbqriuVmLKV5HnkPjThTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYdnW-WPAFbnjfdnHb1PyRzFMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqPWDzrHfkrauYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRvnHc4PjD3FMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHY1m1I9nhwBmf&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=383&img_typ=0&itm=0&lu_idc=gz&lukid=9&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=745317071310009986&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%B8%DF%D1%B9%BE%F9%D6%CA%BB%FA&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "红警下载" [ref=f8e12] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRFKFRNjFRn4FR7aFRF7FR7AFRFDFRRYnBNariNanBNafiNjwaNariNAfiNDPBNKwiNafBNDPau_IyVG5HDsFhdWTAYqnWmvnBuk5Hb4njndnjc3gvPsTBuzmWYsFMF15HDhTvN_UANzgv-b5HDhTv-b5HRzrynYmhfsPjRkrHnduHchTLwGujYdFMfqIZKWUA-WpvNbndqCmzuYujYvnHc4PjD3FMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWThIZRqIHmknWbYnH6hIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5HPWrjRkuhDY&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=45&img_typ=0&itm=0&lu_idc=gz&lukid=10&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=12663819489458307791&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%BA%EC%BE%AF%CF%C2%D4%D8&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "办公室装潢" [ref=f8e13] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1d-nWndnHbYPyfsPAc4m1RzFh_qFRcsFRNjFRc4FR7aFRPKFRfzFRfLFRcsFRfsFRw7FRc4FR7aFRPaFRF7FhkdpvbqnHDhUyPsUHYznj61FMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqPHc4m1wBuj0YPHD4n1N-nBu1IA-b5HRhIjdYTAP_pyPouyf1gv9WFMwb5HmknWbYnH6hIAYqnHn4nWfsPBuYUgnqnHTLP1c1n1nvPzuYIHddPWDzrHfkraud5y9YIZK1FHPKFHFAFHFAILILFHF7uZ91mhc-nbNWUvYhIWYzFhbqrHRvmvmkPHD&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=208&img_typ=0&itm=0&lu_idc=gz&lukid=11&lus=529c4bd0451935e2&lust=69ee6dd7&luwtr=692727068955576528&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=0&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%B0%EC%B9%AB%CA%D2%D7%B0%E4%EA&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - generic [ref=f8e14]:
+            - link [ref=f8e15] [cursor=pointer]:
+              - /url: https://union.baidu.com
+              - img [ref=f8e16]
+            - link [ref=f8e18] [cursor=pointer]:
+              - /url: javascript:;
+              - img [ref=f8e19]
+      - generic [ref=e1451]:
+        - heading "院 校 库" [level=2] [ref=e1452]
+        - list [ref=e1453]:
+          - listitem [ref=e1454]:
+            - link "院校概况" [ref=e1455] [cursor=pointer]:
+              - /url: /news/list_721.html
+          - listitem [ref=e1456]:
+            - link "招生章程" [ref=e1457] [cursor=pointer]:
+              - /url: /news/list_720.html
+          - listitem [ref=e1458]:
+            - link "招生专业" [ref=e1459] [cursor=pointer]:
+              - /url: /news/list_744.html
+          - listitem [ref=e1460]:
+            - link "重点专业" [ref=e1461] [cursor=pointer]:
+              - /url: /news/list_818.html
+          - listitem [ref=e1462]:
+            - link "招生计划" [ref=e1463] [cursor=pointer]:
+              - /url: /news/list_823.html
+          - listitem [ref=e1464]:
+            - link "录取分数" [ref=e1465] [cursor=pointer]:
+              - /url: /news/list_168.html
+          - listitem [ref=e1466]:
+            - link "录取规则" [ref=e1467] [cursor=pointer]:
+              - /url: /news/list_565.html
+          - listitem [ref=e1468]:
+            - link "就业情况" [ref=e1469] [cursor=pointer]:
+              - /url: /news/list_815.html
+          - listitem [ref=e1470]:
+            - link "收费标准" [ref=e1471] [cursor=pointer]:
+              - /url: /news/list_722.html
+          - listitem [ref=e1472]:
+            - link "奖助学金" [ref=e1473] [cursor=pointer]:
+              - /url: /news/list_813.html
+          - listitem [ref=e1474]:
+            - link "宿舍条件" [ref=e1475] [cursor=pointer]:
+              - /url: /news/list_814.html
+          - listitem [ref=e1476]:
+            - link "学校地址" [ref=e1477] [cursor=pointer]:
+              - /url: /news/list_817.html
+      - generic [ref=e1478]:
+        - heading "专 业 库" [level=2] [ref=e1479]
+        - list [ref=e1480]:
+          - listitem [ref=e1481]:
+            - link "本科专业" [ref=e1482] [cursor=pointer]:
+              - /url: /news/list_96.html
+          - listitem [ref=e1483]:
+            - link "专科专业" [ref=e1484] [cursor=pointer]:
+              - /url: /news/list_240.html
+          - listitem [ref=e1485]:
+            - link "女生专业" [ref=e1486] [cursor=pointer]:
+              - /url: /news/list_452.html
+          - listitem [ref=e1487]:
+            - link "男生专业" [ref=e1488] [cursor=pointer]:
+              - /url: /news/list_453.html
+          - listitem [ref=e1489]:
+            - link "热门专业" [ref=e1490] [cursor=pointer]:
+              - /url: /news/list_454.html
+          - listitem [ref=e1491]:
+            - link "专业介绍" [ref=e1492] [cursor=pointer]:
+              - /url: /news/list_160.html
+          - listitem [ref=e1493]:
+            - link "开设院校" [ref=e1494] [cursor=pointer]:
+              - /url: /news/list_650.html
+          - listitem [ref=e1495]:
+            - link "专业就业" [ref=e1496] [cursor=pointer]:
+              - /url: /news/list_90.html
+          - listitem [ref=e1497]:
+            - link "学科评估" [ref=e1498] [cursor=pointer]:
+              - /url: /news/list_712.html
+          - listitem [ref=e1499]:
+            - link "专业认证" [ref=e1500] [cursor=pointer]:
+              - /url: /news/list_857.html
+          - listitem [ref=e1501]:
+            - link "特色专业" [ref=e1502] [cursor=pointer]:
+              - /url: /news/list_955.html
+          - listitem [ref=e1503]:
+            - link "专业排名" [ref=e1504] [cursor=pointer]:
+              - /url: /news/list_162.html
+      - iframe [ref=e1507]:
+        - generic [ref=f9e2]:
+          - link "小型中压空压机" [ref=f9e3] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1dbnvFhPvDzny7-uWcLn1fLFh_qFRFAFRfdFRfkFRc4FRFaFRuKFRnzFRwDFRc3FRPaFRPKFRFDFRFAFRfdFRfkFRc4FRFaFRuKFhkdpvbqniuVmLKV5Hm3P1fhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYYP1T1uWF9uHckPv7Buhf1FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHfsrjfknBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkPj03PjDzFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHdhPHfzPHRzP6&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=341&img_typ=0&itm=0&lu_idc=gz&lukid=1&lus=4773f2ae217abfd3&lust=69ee6dd7&luwtr=8008959719056003313&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=50039&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%D0%A1%D0%CD%D6%D0%D1%B9%BF%D5%D1%B9%BB%FA&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "暨南大学研究生学费一年要多少钱" [ref=f9e4] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1dbnvFhPvDzny7-uWcLn1fLFh_qFRc4FRR1FRfvFRwDFRmYFRwAFRnYFRPAFRcYFRm1FRfkFRDLFRc3FRwaFRcsFRnYFRfLFRf1FRcdFRwjFRfkFRDLFRfsFRD1FRfkFRDLFRcLFRfkFhkdpvbqnBuVmLKV5HD1P1bvFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqPjTLnvmzmyRznHI9mhubnzu1IA-b5HRhIjdYTAP_pyPouyf1gv9WFMwb5HDYnj6YnHchIAYqnHn4nWfsPBuYUgnqnHTLP1c1n1nvPzuYIHddnHfsrjfknBud5y9YIZK1FHPKFHFAFHFAILILFHF7uZ91mhc-nbNWUvYhIWYzFhbqrHu-mWTLuHb&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=363&img_typ=0&itm=0&lu_idc=gz&lukid=2&lus=4773f2ae217abfd3&lust=69ee6dd7&luwtr=14343664898204701735&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=0&sr=84&ssp2=1&sti=50039&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%F4%DF%C4%CF%B4%F3%D1%A7%D1%D0%BE%BF%C9%FA%D1%A7%B7%D1%D2%BB%C4%EA%D2%AA%B6%E0%C9%D9%C7%AE&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "注销企业" [ref=f9e5] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1dbnvFhPvDzny7-uWcLn1fLFh_qFRfLFRDzFRPAFRuKFRc4FR7aFRPaFRF7FhkdpvbqnzuVmLKV5HR3n10hTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYYP1T1uWF9uHckPv7Buhf1FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHfsrjfknBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkPj03PjDzFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHdBuAmkuAPWP0&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=396&img_typ=0&itm=0&lu_idc=gz&lukid=3&lus=4773f2ae217abfd3&lust=69ee6dd7&luwtr=18072842877013259206&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=50039&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%D7%A2%CF%FA%C6%F3%D2%B5&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "数据整合助决策" [ref=f9e6] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1dbnvFhPvDzny7-uWcLn1fLFh_qFRczFRN7FRnzFRn1FRc4FRwjFRnsFRNDFRnvFRFDFRPjFRD3FhkdpvbqPauVmLKV5HDkrjbzFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfqPjTLnvmzmyRznHI9mhubnzu1IA-b5HRhIjdYTAP_pyPouyf1gv9WFMwb5HDYnj6YnHchIAYqnHn4nWfsPBuYUgnqnHTLP1c1n1nvPzuYIHddnHfsrjfknBud5y9YIZK1FHPKFHFAFHFAILILFHF7uZ91mhc-nbNWUvYhIWYzFhbqmhfknHcsPyn&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=4&lus=4773f2ae217abfd3&lust=69ee6dd7&luwtr=7329901368396769574&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=50039&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%CA%FD%BE%DD%D5%FB%BA%CF%D6%FA%BE%F6%B2%DF&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "三日深度游" [ref=f9e7] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1dbnvFhPvDzny7-uWcLn1fLFh_qFRRvFRnYFRfYFRcYFRnzFRn1FRf1FRP7FRnzFRcLFRPAFRwAFRc4FRDdFRnzFRfYFhkdpvbqPiuVmLKV5HfLP1RhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYYP1T1uWF9uHckPv7Buhf1FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHfsrjfknBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkPj03PjDzFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHdBnAD3PAwbr0&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=5&lus=4773f2ae217abfd3&lust=69ee6dd7&luwtr=756472759480048727&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=50039&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%C8%FD%C8%D5%C9%EE%B6%C8%D3%CE&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "今日黄金价格" [ref=f9e8] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1dbnvFhPvDzny7-uWcLn1fLFh_qFRFaFRnvFRFDFRmsFRFjFRwaFRc3FRmkFRFDFRmkFRn3FRfdFhkdpvbqPBuVmLKV5Hn4PHmhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYYP1T1uWF9uHckPv7Buhf1FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHfsrjfknBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkPj03PjDzFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYknAwBPH7bn0&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=36&img_typ=0&itm=0&lu_idc=gz&lukid=6&lus=4773f2ae217abfd3&lust=69ee6dd7&luwtr=2241494518585073181&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=50039&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%BD%F1%C8%D5%BB%C6%BD%F0%BC%DB%B8%F1&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "高压均质机" [ref=f9e9] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1dbnvFhPvDzny7-uWcLn1fLFh_qFRc1FR7jFRc3FRwAFRfkFRc4FRF7FRm4FRfvFRPKFRFaFRuKFhkdpvbqPzuVmLKV5HfkrHThTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYYP1T1uWF9uHckPv7Buhf1FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHfsrjfknBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkPj03PjDzFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYYuj6zmycvP0&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=383&img_typ=0&itm=0&lu_idc=gz&lukid=7&lus=4773f2ae217abfd3&lust=69ee6dd7&luwtr=745317071310009986&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=50039&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%B8%DF%D1%B9%BE%F9%D6%CA%BB%FA&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "数据可视化利器" [ref=f9e10] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1dbnvFhPvDzny7-uWcLn1fLFh_qR7KRFRnYFRD1FRcsFRRdFhkdpvbqrauVmLKV5Hb4PjThTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYYP1T1uWF9uHckPv7Buhf1FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHfsrjfknBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkPj03PjDzFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYYrHmYnHmvuf&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=8&lus=4773f2ae217abfd3&lust=69ee6dd7&luwtr=7883553825836648060&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=50039&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%CA%FD%BE%DD%BF%C9%CA%D3%BB%AF%C0%FB%C6%F7&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "封闭式学校管理" [ref=f9e11] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1dbnvFhPvDzny7-uWcLn1fLFh_qFRn4FRN7FRwaFRwKFRfYFRnvFRcvFRDdFRfkFRDLFRfsFRD1FRfkFRDLFRcLFRfkFhkdpvbqriuVmLKV5H6krjThTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujYYP1T1uWF9uHckPv7Buhf1FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHfsrjfknBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkPj03PjDzFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHdBrjR3PH0dn0&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=309&img_typ=0&itm=0&lu_idc=gz&lukid=9&lus=4773f2ae217abfd3&lust=69ee6dd7&luwtr=7491707486785541923&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=50039&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%B7%E2%B1%D5%CA%BD%D1%A7%D0%A3%B9%DC%C0%ED&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "智能决策引擎" [ref=f9e12] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1dbnvFhPvDzny7-uWcLn1fLFh_qfdFPFRc4FRwjFRnsFRNDFRPAFRcdFRPDFRc1FhkdpvbqnH0hUyPsUHYknHT3Pzuk5Hb4njndnjc3gvPsTBuzmWYsFMF15HDhTvN_UANzgv-b5HDhTv-b5HfLP1Phnh7-nWDLmyFhujnhTLwGujYdFMfqIZKWUA-WpvNbndqCmzuYujYkPj03PjDzFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWThIZRqIHDYnj6YnHchIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5HTYm1Dsuycz&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=626&img_typ=0&itm=0&lu_idc=gz&lukid=10&lus=4773f2ae217abfd3&lust=69ee6dd7&luwtr=2304089144431061323&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=50039&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%D6%C7%C4%DC%BE%F6%B2%DF%D2%FD%C7%E6&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - generic [ref=f9e13]:
+            - link [ref=f9e14] [cursor=pointer]:
+              - /url: https://union.baidu.com
+              - img [ref=f9e15]
+            - link [ref=f9e17] [cursor=pointer]:
+              - /url: javascript:;
+              - img [ref=f9e18]
+      - generic [ref=e1508]:
+        - heading "各省高考" [level=2] [ref=e1509]
+        - list [ref=e1510]:
+          - listitem [ref=e1511]:
+            - link "全国高考" [ref=e1512] [cursor=pointer]:
+              - /url: /news/list_97.html
+          - listitem [ref=e1513]:
+            - link "江苏高考" [ref=e1514] [cursor=pointer]:
+              - /url: /news/list_99.html
+          - listitem [ref=e1515]:
+            - link "浙江高考" [ref=e1516] [cursor=pointer]:
+              - /url: /news/list_110.html
+          - listitem [ref=e1517]:
+            - link "山东高考" [ref=e1518] [cursor=pointer]:
+              - /url: /news/list_100.html
+          - listitem [ref=e1519]:
+            - link "福建高考" [ref=e1520] [cursor=pointer]:
+              - /url: /news/list_112.html
+          - listitem [ref=e1521]:
+            - link "湖北高考" [ref=e1522] [cursor=pointer]:
+              - /url: /news/list_103.html
+          - listitem [ref=e1523]:
+            - link "湖南高考" [ref=e1524] [cursor=pointer]:
+              - /url: /news/list_104.html
+          - listitem [ref=e1525]:
+            - link "安徽高考" [ref=e1526] [cursor=pointer]:
+              - /url: /news/list_106.html
+          - listitem [ref=e1527]:
+            - link "江西高考" [ref=e1528] [cursor=pointer]:
+              - /url: /news/list_111.html
+          - listitem [ref=e1529]:
+            - link "河北高考" [ref=e1530] [cursor=pointer]:
+              - /url: /news/list_105.html
+          - listitem [ref=e1531]:
+            - link "辽宁高考" [ref=e1532] [cursor=pointer]:
+              - /url: /news/list_107.html
+          - listitem [ref=e1533]:
+            - link "吉林高考" [ref=e1534] [cursor=pointer]:
+              - /url: /news/list_119.html
+          - listitem [ref=e1535]:
+            - link "黑 龙 江" [ref=e1536] [cursor=pointer]:
+              - /url: /news/list_113.html
+          - listitem [ref=e1537]:
+            - link "河南高考" [ref=e1538] [cursor=pointer]:
+              - /url: /news/list_102.html
+          - listitem [ref=e1539]:
+            - link "陕西高考" [ref=e1540] [cursor=pointer]:
+              - /url: /news/list_108.html
+          - listitem [ref=e1541]:
+            - link "山西高考" [ref=e1542] [cursor=pointer]:
+              - /url: /news/list_114.html
+          - listitem [ref=e1543]:
+            - link "甘肃高考" [ref=e1544] [cursor=pointer]:
+              - /url: /news/list_123.html
+          - listitem [ref=e1545]:
+            - link "四川高考" [ref=e1546] [cursor=pointer]:
+              - /url: /news/list_109.html
+          - listitem [ref=e1547]:
+            - link "贵州高考" [ref=e1548] [cursor=pointer]:
+              - /url: /news/list_121.html
+          - listitem [ref=e1549]:
+            - link "云南高考" [ref=e1550] [cursor=pointer]:
+              - /url: /news/list_118.html
+          - listitem [ref=e1551]:
+            - link "青海高考" [ref=e1552] [cursor=pointer]:
+              - /url: /news/list_127.html
+          - listitem [ref=e1553]:
+            - link "广东高考" [ref=e1554] [cursor=pointer]:
+              - /url: /news/list_101.html
+          - listitem [ref=e1555]:
+            - link "广西高考" [ref=e1556] [cursor=pointer]:
+              - /url: /news/list_115.html
+          - listitem [ref=e1557]:
+            - link "海南高考" [ref=e1558] [cursor=pointer]:
+              - /url: /news/list_125.html
+          - listitem [ref=e1559]:
+            - link "宁夏高考" [ref=e1560] [cursor=pointer]:
+              - /url: /news/list_126.html
+          - listitem [ref=e1561]:
+            - link "北京高考" [ref=e1562] [cursor=pointer]:
+              - /url: /news/list_98.html
+          - listitem [ref=e1563]:
+            - link "上海高考" [ref=e1564] [cursor=pointer]:
+              - /url: /news/list_116.html
+          - listitem [ref=e1565]:
+            - link "天津高考" [ref=e1566] [cursor=pointer]:
+              - /url: /news/list_120.html
+          - listitem [ref=e1567]:
+            - link "重庆高考" [ref=e1568] [cursor=pointer]:
+              - /url: /news/list_117.html
+          - listitem [ref=e1569]:
+            - link "新疆高考" [ref=e1570] [cursor=pointer]:
+              - /url: /news/list_124.html
+          - listitem [ref=e1571]:
+            - link "西藏高考" [ref=e1572] [cursor=pointer]:
+              - /url: /news/list_128.html
+          - listitem [ref=e1573]:
+            - link "内 蒙 古" [ref=e1574] [cursor=pointer]:
+              - /url: /news/list_122.html
+      - generic [ref=e1575]:
+        - heading "特殊类型" [level=2] [ref=e1576]
+        - list [ref=e1577]:
+          - listitem [ref=e1578]:
+            - link "强基计划" [ref=e1579] [cursor=pointer]:
+              - /url: /news/list_156.html
+          - listitem [ref=e1580]:
+            - link "艺术高考" [ref=e1581] [cursor=pointer]:
+              - /url: /news/list_171.html
+          - listitem [ref=e1582]:
+            - link "体育高考" [ref=e1583] [cursor=pointer]:
+              - /url: /news/list_172.html
+          - listitem [ref=e1584]:
+            - link "高职单招" [ref=e1585] [cursor=pointer]:
+              - /url: /news/list_209.html
+      - iframe [ref=e1588]:
+        - generic [ref=f10e2]:
+          - link "暨南大学研究生学费一年要多少钱" [ref=f10e3] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRc4FRR1FRfvFRwDFRmYFRwAFRnYFRPAFRcYFRm1FRfkFRDLFRc3FRwaFRcsFRnYFRfLFRf1FRcdFRwjFRfkFRDLFRfsFRD1FRfkFRDLFRcLFRfkFhkdpvbqniuVmLKV5HcsnHDzFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfquWD3nj-Wn10dPWR3PyfYriu1IA-b5HRhIjdYTAP_pyPouyf1gv9WFMwb5HD1n1R4njmhIAYqnHn4nWfsPBuYUgnqnHTLP1c1n1nvPzuYIHddnHn1PHbsPBud5y9YIZK1FHPKFHFAFHFAILILFHF7uZ91mhc-nbNWUvYhIWYzFhbquWb1Pjc4Pjb&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=363&img_typ=0&itm=0&lu_idc=gz&lukid=1&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=14343664898204701735&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=0&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%F4%DF%C4%CF%B4%F3%D1%A7%D1%D0%BE%BF%C9%FA%D1%A7%B7%D1%D2%BB%C4%EA%D2%AA%B6%E0%C9%D9%C7%AE&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "深度游香港" [ref=f10e4] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRPAFRR1FRc3FRwaFRnzFRn1FRf1FRP7FRPDFRndFRcvFRRsFRn4FRf4FRnLFR77FhkdpvbqnBuVmLKV5HDYnHnsFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfquWD3nj-Wn10dPWR3PyfYriu1IA-b5HRhIjdYTAP_pyPouyf1gv9WFMwb5HD1n1R4njmhIAYqnHn4nWfsPBuYUgnqnHTLP1c1n1nvPzuYIHddnHn1PHbsPBud5y9YIZK1FHPKFHFAFHFAILILFHF7uZ91mhc-nbNWUvYhIWYzFhbqujT3uWTzuj6&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=181&img_typ=0&itm=0&lu_idc=gz&lukid=2&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=829680241117269479&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%C9%EE%B6%C8%D3%CE%CF%E3%B8%DB&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "高清影院" [ref=f10e5] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRPaFRFDFRn3FRPaFRf1FRcsFRfYFRFKFRFjFRfzFRPDFRDdFRf1FRcsFRfYFRFKFhkdpvbqnzuVmLKV5HDvPjRhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujdhnH6sryn1njRvPH6dujf4FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHn1PHbsPBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkn1ndrH0vFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHdWPAPhmHKbnf&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=88&img_typ=0&itm=0&lu_idc=gz&lukid=3&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=16557448539552395475&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%B8%DF%C7%E5%D3%B0%D4%BA&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "附近家政电话" [ref=f10e6] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRc3FRFDFRFDFRujFRFjFRfzFRfdFRu7FRcLFRu7FRP7FRmkFRc4FR7aFRPaFRF7FRcdFRRLFRFaFRcsFRFKFRndFRnzFRNaFhkdpvbqPauVmLKV5HfzrHThTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujdhnH6sryn1njRvPH6dujf4FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHn1PHbsPBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkn1ndrH0vFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYvm1P-Pjcsns&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=248&img_typ=0&itm=0&lu_idc=gz&lukid=4&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=2286661343234864735&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%B8%BD%BD%FC%BC%D2%D5%FE%B5%E7%BB%B0&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "新大鱼吃小鱼" [ref=f10e7] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRcYFRm1FRf1FRR1FRc1FRfYFRfsFRDkFRf1FRR1FRcdFRDdFRFaFRuKFRcsFRRvFhkdpvbqPiuVmLKV5H6sPjchTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujdhnH6sryn1njRvPH6dujf4FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHn1PHbsPBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkn1ndrH0vFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHdhnAu9PjFWrf&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=24&img_typ=0&itm=0&lu_idc=gz&lukid=5&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=2381092324578932255&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%D0%C2%B4%F3%D3%E3%B3%D4%D0%A1%D3%E3&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "数据分析报表" [ref=f10e8] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRPKFRuDFRF7FRwDFRcLFRfvFRP7FRmvFRPDFRm3FhkdpvbqPBuVmLKV5HnkPHT1FMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfquWD3nj-Wn10dPWR3PyfYriu1IA-b5HRhIjdYTAP_pyPouyf1gv9WFMwb5HD1n1R4njmhIAYqnHn4nWfsPBuYUgnqnHTLP1c1n1nvPzuYIHddnHn1PHbsPBud5y9YIZK1FHPKFHFAFHFAILILFHF7uZ91mhc-nbNWUvYhIWYzFhbqrHKWujD1m1b&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=447&img_typ=0&itm=0&lu_idc=gz&lukid=6&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=2202188099207565712&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%CA%FD%BE%DD%B7%D6%CE%F6%B1%A8%B1%ED&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "办公室装潢" [ref=f10e9] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRcsFRNjFRc4FR7aFRPKFRfzFRfLFRcsFRfsFRw7FRc4FR7aFRPaFRF7FhkdpvbqPzuVmLKV5HndPHDhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujdhnH6sryn1njRvPH6dujf4FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHn1PHbsPBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkn1ndrH0vFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHYsPAfknvfkP0&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=208&img_typ=0&itm=0&lu_idc=gz&lukid=7&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=692727068955576528&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%B0%EC%B9%AB%CA%D2%D7%B0%E4%EA&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "工业机器人" [ref=f10e10] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRc4FRDYFRfzFRcdFRFaFRuKFRnvFRmLFRn3FRPaFRc1FRDLFRFjFRfzFhkdpvbqrauVmLKV5HDsnWmkFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfquWD3nj-Wn10dPWR3PyfYriu1IA-b5HRhIjdYTAP_pyPouyf1gv9WFMwb5HD1n1R4njmhIAYqnHn4nWfsPBuYUgnqnHTLP1c1n1nvPzuYIHddnHn1PHbsPBud5y9YIZK1FHPKFHFAFHFAILILFHF7uZ91mhc-nbNWUvYhIWYzFhbqnyckujf1P1b&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=662&img_typ=0&itm=0&lu_idc=gz&lukid=8&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=838609992878381069&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%B9%A4%D2%B5%BB%FA%C6%F7%C8%CB&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "高压均质机" [ref=f10e11] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRc1FR7jFRc3FRwAFRfkFRc4FRF7FRm4FRfvFRPKFRFaFRuKFhkdpvbqriuVmLKV5HmvnWRhTHY4rH01PH0zr7qWTZchThcqnauzT1YkFMP-UAk-T-qGujYkFMPGujdhnH6sryn1njRvPH6dujf4FMPYpyfqPiuY5gwsmvkGmvV-ujPxpAnhIAfqnHn1PHbsPBuYUHYkn1bzPj0vFMwVT1YkP1TLnWn1n1mLFMwd5gRkn1ndrH0vFMRqpZwYTZn-nYD-nbm-nbuLILT-nbNbXZPBmBRzwyPEUiuv5HchpHdWrARYPyc3u6&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=383&img_typ=0&itm=0&lu_idc=gz&lukid=9&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=745317071310009986&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%B8%DF%D1%B9%BE%F9%D6%CA%BB%FA&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "今日黄金回收" [ref=f10e12] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRFaFRnvFRFDFRmsFRFDFRmkFRn3FRfdFRFjFRwaFRc3FRmkFRFaFRf3FRPKFRfdFhkdpvbqnH0hUyPsUHYvrjmYFMDqrHbsn1RsnW9xmLKzFMFB5H0hTMnqniu1uyk_ugFxpyfqniu1pyfquWD3nj-Wn10dPWR3PyfYriu1IA-b5HRhIjdYTAP_pyPouyf1gv9WFMwb5HD1n1R4njmhIAYqnHn4nWfsPBuYUgnqnHTLP1c1n1nvPzuYIHddnHn1PHbsPBud5y9YIZK1FHPKFHFAFHFAILILFHF7uZ91mhc-nbNWUvYhIWYzFhbqPhn4nAnLnHn&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=248&img_typ=0&itm=0&lu_idc=gz&lukid=10&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=2378192439854337857&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%BD%F1%C8%D5%BB%C6%BD%F0%BB%D8%CA%D5&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - link "制作标书公司" [ref=f10e13] [cursor=pointer]:
+            - /url: https://cpro.baidu.com/cpro/ui/uijs.php?en=mywWUA71T1YsFh7sT7qGujYsFhPC5H0huAbqrauGTdq9TZ0qnauJp1YYrHNbPH6dPWnsryn3nAmkFh_qFRfLFRD3FRfzFRcdFRckFRNKFRPKFRR4FRfvFRnvFRfLFRmLFRc4FR7aFRPaFRF7FhkdpvbqnHDhUyPsUHYknjnkPzuk5Hb4njndnjc3gvPsTBuzmWYsFMF15HDhTvN_UANzgv-b5HDhTv-b5ymkrj04m1nsPHmdrjNbPjbhTLwGujYdFMfqIZKWUA-WpvNbndqCmzuYujYkn1ndrH0vFMwV5HD1rHcYnjmhIAd15HDLP1Tzn1n1PWThIZRqIHD1n1R4njmhIHdCIZwsTzR1fiRzwBRzwMILIzRzwyw3TvFBFHF7mvqVFMmqnBuG5yD1mvfknhNb&besl=0&c=news&cf=1&ctag=6-0&cvrq=0&device_id_v2=DB00ACD874D02673584D91E64372A273&efc=0&expid=200028_200075&fr=4&fv=0&haacp=359&img_typ=0&itm=0&lu_idc=gz&lukid=11&lus=f1809c3056585d49&lust=69ee6dd7&luwtr=2346437393030086216&mscf=0&n=10&nttp=1&p=baidu&pbs=215363&rcl=11&sce=7&sig=100&sr=84&ssp2=1&sti=61108&tpl=baiduCustSTagLinkUnitFlexEqualExp&tsf=dtp:1&tt_sign=%D6%C6%D7%F7%B1%EA%CA%E9%B9%AB%CB%BE&tt_src=0&tu_type=0&u=%2Fnews%2F88535%2Ehtml&uicf=lurecv&urlid=0&eot=1
+          - generic [ref=f10e14]:
+            - link [ref=f10e15] [cursor=pointer]:
+              - /url: https://union.baidu.com
+              - img [ref=f10e16]
+            - link [ref=f10e18] [cursor=pointer]:
+              - /url: javascript:;
+              - img [ref=f10e19]
+      - generic [ref=e1589]:
+        - heading "热门推荐" [level=2] [ref=e1590]
+        - list [ref=e1591]:
+          - listitem [ref=e1592]:
+            - link "多少分能上中山大学（附2024年投档分数线） 多少分能上中山大学（附2024年投档分数线） 2025-5-20":
+              - /url: /news/89976.html
+              - img "多少分能上中山大学（附2024年投档分数线）" [ref=e1594] [cursor=pointer]
+              - generic [ref=e1595] [cursor=pointer]:
+                - heading "多少分能上中山大学（附2024年投档分数线）" [level=3] [ref=e1596]
+                - paragraph [ref=e1597]: 2025-5-20
+          - listitem [ref=e1598]:
+            - link "多少分能上华南理工大学（附2024年投档分数线） 多少分能上华南理工大学（附2024年投档分数线） 2025-5-20":
+              - /url: /news/88548.html
+              - img "多少分能上华南理工大学（附2024年投档分数线）" [ref=e1600] [cursor=pointer]
+              - generic [ref=e1601] [cursor=pointer]:
+                - heading "多少分能上华南理工大学（附2024年投档分数线）" [level=3] [ref=e1602]
+                - paragraph [ref=e1603]: 2025-5-20
+          - listitem [ref=e1604]:
+            - link "多少分能上广东海洋大学（附2024年投档分数线） 多少分能上广东海洋大学（附2024年投档分数线） 2025-5-20":
+              - /url: /news/96844.html
+              - img "多少分能上广东海洋大学（附2024年投档分数线）" [ref=e1606] [cursor=pointer]
+              - generic [ref=e1607] [cursor=pointer]:
+                - heading "多少分能上广东海洋大学（附2024年投档分数线）" [level=3] [ref=e1608]
+                - paragraph [ref=e1609]: 2025-5-20
+          - listitem [ref=e1610]:
+            - link "多少分能上华南农业大学（附2024年投档分数线） 多少分能上华南农业大学（附2024年投档分数线） 2025-5-20":
+              - /url: /news/89981.html
+              - img "多少分能上华南农业大学（附2024年投档分数线）" [ref=e1612] [cursor=pointer]
+              - generic [ref=e1613] [cursor=pointer]:
+                - heading "多少分能上华南农业大学（附2024年投档分数线）" [level=3] [ref=e1614]
+                - paragraph [ref=e1615]: 2025-5-20
+          - listitem [ref=e1616]:
+            - link "多少分能上华南师范大学（附2024年投档分数线） 多少分能上华南师范大学（附2024年投档分数线） 2025-5-20":
+              - /url: /news/96930.html
+              - img "多少分能上华南师范大学（附2024年投档分数线）" [ref=e1618] [cursor=pointer]
+              - generic [ref=e1619] [cursor=pointer]:
+                - heading "多少分能上华南师范大学（附2024年投档分数线）" [level=3] [ref=e1620]
+                - paragraph [ref=e1621]: 2025-5-20
+          - listitem [ref=e1622]:
+            - link "多少分能上韶关学院（附2024年投档分数线） 多少分能上韶关学院（附2024年投档分数线） 2025-5-20":
+              - /url: /news/97924.html
+              - img "多少分能上韶关学院（附2024年投档分数线）" [ref=e1624] [cursor=pointer]
+              - generic [ref=e1625] [cursor=pointer]:
+                - heading "多少分能上韶关学院（附2024年投档分数线）" [level=3] [ref=e1626]
+                - paragraph [ref=e1627]: 2025-5-20
+          - listitem [ref=e1628]:
+            - link "多少分能上广东医科大学（附2024年投档分数线） 多少分能上广东医科大学（附2024年投档分数线） 2025-5-20":
+              - /url: /news/89986.html
+              - img "多少分能上广东医科大学（附2024年投档分数线）" [ref=e1630] [cursor=pointer]
+              - generic [ref=e1631] [cursor=pointer]:
+                - heading "多少分能上广东医科大学（附2024年投档分数线）" [level=3] [ref=e1632]
+                - paragraph [ref=e1633]: 2025-5-20
+          - listitem [ref=e1634]:
+            - link "多少分能上广州医科大学（附2024年投档分数线） 多少分能上广州医科大学（附2024年投档分数线） 2025-5-20":
+              - /url: /news/96906.html
+              - img "多少分能上广州医科大学（附2024年投档分数线）" [ref=e1636] [cursor=pointer]
+              - generic [ref=e1637] [cursor=pointer]:
+                - heading "多少分能上广州医科大学（附2024年投档分数线）" [level=3] [ref=e1638]
+                - paragraph [ref=e1639]: 2025-5-20
+          - listitem [ref=e1640]:
+            - link "多少分能上广东药科大学（附2024年投档分数线） 多少分能上广东药科大学（附2024年投档分数线） 2025-5-20":
+              - /url: /news/90006.html
+              - img "多少分能上广东药科大学（附2024年投档分数线）" [ref=e1642] [cursor=pointer]
+              - generic [ref=e1643] [cursor=pointer]:
+                - heading "多少分能上广东药科大学（附2024年投档分数线）" [level=3] [ref=e1644]
+                - paragraph [ref=e1645]: 2025-5-20
+          - listitem [ref=e1646]:
+            - link "多少分能上惠州学院（附2024年投档分数线） 多少分能上惠州学院（附2024年投档分数线） 2025-5-20":
+              - /url: /news/90047.html
+              - img "多少分能上惠州学院（附2024年投档分数线）" [ref=e1648] [cursor=pointer]
+              - generic [ref=e1649] [cursor=pointer]:
+                - heading "多少分能上惠州学院（附2024年投档分数线）" [level=3] [ref=e1650]
+                - paragraph [ref=e1651]: 2025-5-20
+  - paragraph [ref=e1654]:
+    - text: Copyright © 大学生必备网
+    - link "联系我们" [ref=e1655] [cursor=pointer]:
+      - /url: /about/contact.html
+  - link [ref=e1657] [cursor=pointer]:
+    - /url: javascript:window.scrollTo(0, 0);

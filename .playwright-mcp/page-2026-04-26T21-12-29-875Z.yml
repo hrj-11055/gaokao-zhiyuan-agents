@@ -1,0 +1,168 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: site:gaokao100.com 暨南大学 2025 录取分数线
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=site%3Agaokao100.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2210851447117774149066%22%2C%22ori_lid%22%3A%2210851447117774149066%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=969815a901dd55ca&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=site%3Agaokao100.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=site%3Agaokao100.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=969815a901dd55ca&ie=utf-8&wd=site%3Agaokao100.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsv_spt=7&rsv_bp=1&f=8&oq=site%3Agaokao100.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=site%3Agaokao100.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3Dsite%3Agaokao100.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=site%3Agaokao100.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=site%3Agaokao100.com+%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+2025+%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - generic [ref=e71] [cursor=pointer]: 清除
+            - generic [ref=e74] [cursor=pointer]: 时间不限
+            - generic [ref=e76] [cursor=pointer]: 所有网页和文件
+            - generic [ref=e78] [cursor=pointer]: gaokao100.com
+          - generic [ref=e80]: 百度为您找到以下结果
+        - table [ref=e82]:
+          - rowgroup [ref=e83]:
+            - row "相关搜索  2023高考暨南大学录取分数线  暨南大学2021年录取分数线是多少  2021年多少分能考上暨南大学  暨南大学编导专业录取分数线  暨南大学国际学院录取分数线  暨南大学美术类录取分数线" [ref=e84]:
+              - cell "相关搜索  2023高考暨南大学录取分数线  暨南大学2021年录取分数线是多少  2021年多少分能考上暨南大学  暨南大学编导专业录取分数线  暨南大学国际学院录取分数线  暨南大学美术类录取分数线" [ref=e85]:
+                - generic [ref=e92]:
+                  - generic [ref=e94]: 相关搜索
+                  - generic [ref=e95]:
+                    - link " 2023高考暨南大学录取分数线" [ref=e98] [cursor=pointer]:
+                      - /url: /s?wd=2023%E9%AB%98%E8%80%83%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&ie=utf-8&rsv_pq=969815a901dd55ca&oq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsv_t=afaatU6VY%2Fc8cR%2F1ane6nJW3A0Gmh5SfJMg4QmMJ69fckg1V6i4%2Fgveb%2BlI&rfqid=969815a901dd55ca&rsv_dl=0_prs_28616_1&rq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101636803
+                      - generic [ref=e99]:
+                        - generic [ref=e100]: 
+                        - generic [ref=e101]: 2023高考暨南大学录取分数线
+                    - link " 暨南大学2021年录取分数线是多少" [ref=e104] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62021%E5%B9%B4%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%E6%98%AF%E5%A4%9A%E5%B0%91&ie=utf-8&rsv_pq=969815a901dd55ca&oq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsv_t=afaatU6VY%2Fc8cR%2F1ane6nJW3A0Gmh5SfJMg4QmMJ69fckg1V6i4%2Fgveb%2BlI&rfqid=969815a901dd55ca&rsv_dl=0_prs_28616_2&rq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101633403
+                      - generic [ref=e105]:
+                        - generic [ref=e106]: 
+                        - generic [ref=e107]: 暨南大学2021年录取分数线是多少
+                    - link " 2021年多少分能考上暨南大学" [ref=e110] [cursor=pointer]:
+                      - /url: /s?wd=2021%E5%B9%B4%E5%A4%9A%E5%B0%91%E5%88%86%E8%83%BD%E8%80%83%E4%B8%8A%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6&ie=utf-8&rsv_pq=969815a901dd55ca&oq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsv_t=809fYXvkeXd84hdCRpJUdOe3CgY0sVJb7P9CoD%2FJP%2F3W9FUZ2hRjAJbMUl4&rfqid=969815a901dd55ca&rsv_dl=0_prs_28616_3&rq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101633403
+                      - generic [ref=e111]:
+                        - generic [ref=e112]: 
+                        - generic [ref=e113]: 2021年多少分能考上暨南大学
+                    - link " 暨南大学编导专业录取分数线" [ref=e116] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BC%96%E5%AF%BC%E4%B8%93%E4%B8%9A%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&ie=utf-8&rsv_pq=969815a901dd55ca&oq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsv_t=809fYXvkeXd84hdCRpJUdOe3CgY0sVJb7P9CoD%2FJP%2F3W9FUZ2hRjAJbMUl4&rfqid=969815a901dd55ca&rsv_dl=0_prs_28616_4&rq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202
+                      - generic [ref=e117]:
+                        - generic [ref=e118]: 
+                        - generic [ref=e119]: 暨南大学编导专业录取分数线
+                    - link " 暨南大学国际学院录取分数线" [ref=e122] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%9B%BD%E9%99%85%E5%AD%A6%E9%99%A2%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&ie=utf-8&rsv_pq=969815a901dd55ca&oq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsv_t=809fYXvkeXd84hdCRpJUdOe3CgY0sVJb7P9CoD%2FJP%2F3W9FUZ2hRjAJbMUl4&rfqid=969815a901dd55ca&rsv_dl=0_prs_28616_5&rq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202
+                      - generic [ref=e123]:
+                        - generic [ref=e124]: 
+                        - generic [ref=e125]: 暨南大学国际学院录取分数线
+                    - link " 暨南大学美术类录取分数线" [ref=e128] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BE%8E%E6%9C%AF%E7%B1%BB%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&ie=utf-8&rsv_pq=969815a901dd55ca&oq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsv_t=809fYXvkeXd84hdCRpJUdOe3CgY0sVJb7P9CoD%2FJP%2F3W9FUZ2hRjAJbMUl4&rfqid=969815a901dd55ca&rsv_dl=0_prs_28616_6&rq=site%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202
+                      - generic [ref=e129]:
+                        - generic [ref=e130]: 
+                        - generic [ref=e131]: 暨南大学美术类录取分数线
+        - generic [ref=e132]:
+          - generic [ref=e133]:
+            - paragraph [ref=e134]: 抱歉，未找到相关结果。
+            - generic [ref=e135]: 温馨提示：
+            - list [ref=e136]:
+              - listitem [ref=e137]: 请检查您的输入是否正确
+              - listitem [ref=e138]:
+                - text: 如网页未收录或者新站未收录，请
+                - link "提交网址" [ref=e139] [cursor=pointer]:
+                  - /url: http://zhanzhang.baidu.com/sitesubmit/index?sitename=http%3A%2F%2Fsite%3Agaokao100.com%20%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%202025%20%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF
+                - text: 给我们
+              - listitem [ref=e140]:
+                - text: 如有任何意见或建议，请及时
+                - link "反馈给我们" [ref=e141] [cursor=pointer]:
+                  - /url: http://help.baidu.com/newadd?prod_id=1&category=4
+          - generic [ref=e144]:
+            - generic [ref=e145]: 相关搜索
+            - table [ref=e146]:
+              - rowgroup [ref=e147]:
+                - row "2023高考暨南大学录取分数线 2021年多少分能考上暨南大学" [ref=e148]:
+                  - cell "2023高考暨南大学录取分数线" [ref=e149]:
+                    - link "2023高考暨南大学录取分数线" [ref=e150] [cursor=pointer]:
+                      - /url: /s?wd=2023%E9%AB%98%E8%80%83%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101636803&rsp=0&f=1&rs_src=0&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0&rsv_dl=brs_28338_1
+                      - generic [ref=e152]: 2023高考暨南大学录取分数线
+                  - cell "2021年多少分能考上暨南大学" [ref=e153]:
+                    - link "2021年多少分能考上暨南大学" [ref=e154] [cursor=pointer]:
+                      - /url: /s?wd=2021%E5%B9%B4%E5%A4%9A%E5%B0%91%E5%88%86%E8%83%BD%E8%80%83%E4%B8%8A%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0&rsv_dl=brs_28338_2
+                      - generic [ref=e156]: 2021年多少分能考上暨南大学
+                - row "暨南大学2021年录取分数线是多少 暨南大学美术类录取分数线" [ref=e157]:
+                  - cell "暨南大学2021年录取分数线是多少" [ref=e158]:
+                    - link "暨南大学2021年录取分数线是多少" [ref=e159] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62021%E5%B9%B4%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF%E6%98%AF%E5%A4%9A%E5%B0%91&rsf=101633403&rsp=2&f=1&rs_src=0&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0&rsv_dl=brs_28338_3
+                      - generic [ref=e161]: 暨南大学2021年录取分数线是多少
+                  - cell "暨南大学美术类录取分数线" [ref=e162]:
+                    - link "暨南大学美术类录取分数线" [ref=e163] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BE%8E%E6%9C%AF%E7%B1%BB%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202&rsp=3&f=1&rs_src=0&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0&rsv_dl=brs_28338_4
+                      - generic [ref=e165]: 暨南大学美术类录取分数线
+                - row "暨南大学国际学院录取分数线 暨南大学编导专业录取分数线" [ref=e166]:
+                  - cell "暨南大学国际学院录取分数线" [ref=e167]:
+                    - link "暨南大学国际学院录取分数线" [ref=e168] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%9B%BD%E9%99%85%E5%AD%A6%E9%99%A2%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202&rsp=4&f=1&rs_src=0&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0&rsv_dl=brs_28338_5
+                      - generic [ref=e170]: 暨南大学国际学院录取分数线
+                  - cell "暨南大学编导专业录取分数线" [ref=e171]:
+                    - link "暨南大学编导专业录取分数线" [ref=e172] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%BC%96%E5%AF%BC%E4%B8%93%E4%B8%9A%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202&rsp=5&f=1&rs_src=0&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0&rsv_dl=brs_28338_6
+                      - generic [ref=e174]: 暨南大学编导专业录取分数线
+                - row "暨南大学2022分数线 暨南大学辽宁录取分数线" [ref=e175]:
+                  - cell "暨南大学2022分数线" [ref=e176]:
+                    - link "暨南大学2022分数线" [ref=e177] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62022%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101636803&rsp=6&f=1&rs_src=0&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0&rsv_dl=brs_28338_7
+                      - generic [ref=e179]: 暨南大学2022分数线
+                  - cell "暨南大学辽宁录取分数线" [ref=e180]:
+                    - link "暨南大学辽宁录取分数线" [ref=e181] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E8%BE%BD%E5%AE%81%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202&rsp=7&f=1&rs_src=0&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0&rsv_dl=brs_28338_8
+                      - generic [ref=e183]: 暨南大学辽宁录取分数线
+                - row "暨南大学在江西录取分数线 暨南大学河南录取分数线" [ref=e184]:
+                  - cell "暨南大学在江西录取分数线" [ref=e185]:
+                    - link "暨南大学在江西录取分数线" [ref=e186] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%9C%A8%E6%B1%9F%E8%A5%BF%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202&rsp=8&f=1&rs_src=0&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0&rsv_dl=brs_28338_9
+                      - generic [ref=e188]: 暨南大学在江西录取分数线
+                  - cell "暨南大学河南录取分数线" [ref=e189]:
+                    - link "暨南大学河南录取分数线" [ref=e190] [cursor=pointer]:
+                      - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%B2%B3%E5%8D%97%E5%BD%95%E5%8F%96%E5%88%86%E6%95%B0%E7%BA%BF&rsf=100631202&rsp=9&f=1&rs_src=0&rsv_pq=969815a901dd55ca&rsv_t=a2838WzFZcQfmBgN8f7cP4Nc5S2e3obD3pWsN8Wvyikap4Ty0cQW82tQFf0&rsv_dl=brs_28338_10
+                      - generic [ref=e192]: 暨南大学河南录取分数线
+      - generic [ref=e194]:
+        - link "帮助" [ref=e195] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e196] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e197] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e198] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

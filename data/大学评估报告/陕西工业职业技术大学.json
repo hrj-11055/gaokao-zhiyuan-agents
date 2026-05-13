@@ -1,0 +1,44 @@
+{
+  "university_full_name": "陕西工业职业技术大学",
+  "short_name": "陕工大 / SXPU",
+  "location": {
+    "province": "陕西",
+    "city": "咸阳/西安",
+    "campus": [
+      "渭城校区",
+      "经开校区"
+    ]
+  },
+  "status": {
+    "is_vocational_undergraduate": true,
+    "double_high_plan": "A档",
+    "ranking_national_polytechnic": 1
+  },
+  "academic_strength": {
+    "core_disciplines": [
+      "机械制造",
+      "材料成型",
+      "电气自动化"
+    ],
+    "national_teaching_masters": 5,
+    "national_technical_experts": 12
+  },
+  "employment_stats": {
+    "overall_employment_rate": "97.8%",
+    "major_employer_sectors": [
+      "军工",
+      "装备制造",
+      "新能源汽车"
+    ],
+    "average_starting_salary": 5800,
+    "top_employers": [
+      "中航工业",
+      "中国中铁",
+      "比亚迪"
+    ]
+  },
+  "admission_guide": {
+    "recommended_score_range": "二本线附近",
+    "competitive_edge": "极高的就业对口率与国企入职率"
+  }
+}

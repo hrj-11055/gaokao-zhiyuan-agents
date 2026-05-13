@@ -1,0 +1,52 @@
+{
+  "university_name": "泉州师范学院",
+  "short_name": "泉师",
+  "location": {
+    "province": "福建",
+    "city": "泉州",
+    "district": "丰泽区（东海校区）",
+    "city_gdp_level": "1.2万亿"
+  },
+  "academic_standing": {
+    "esi_top_1_percent": [
+      "Chemistry",
+      "Engineering"
+    ],
+    "key_disciplines": [
+      "Music and Dance",
+      "Education",
+      "Chinese Literature"
+    ],
+    "master_points": 37,
+    "doctor_points": 0
+  },
+  "admission_competitiveness": {
+    "fujian_rank_history": "Top 8.5%",
+    "fujian_rank_physics": "Top 28.5%",
+    "overall_difficulty": "Medium-High"
+  },
+  "employment_outcomes": {
+    "primary_employment_rate": "90.88%",
+    "further_study_rate": "14%",
+    "avg_starting_salary": 5200,
+    "top_employer_sectors": [
+      "Education",
+      "Manufacturing",
+      "IT"
+    ]
+  },
+  "campus_life": {
+    "dormitory_quality": "High (Sea View)",
+    "food_rating": "High (Minnan Cuisine)",
+    "student_freedom": "High"
+  },
+  "scores": {
+    "academic": 2.8,
+    "employment": 3.2,
+    "location": 4.2,
+    "globalization": 3.5,
+    "freedom": 3.4,
+    "brand": 3.0,
+    "weighted_total": 3.25
+  }
+}

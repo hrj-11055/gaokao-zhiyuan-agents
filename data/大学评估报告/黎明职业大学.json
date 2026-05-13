@@ -1,0 +1,45 @@
+{
+  "university_name": "黎明职业大学",
+  "short_name": "黎大",
+  "location": {
+    "province": "福建",
+    "city": "泉州",
+    "districts": [
+      "丰泽区",
+      "洛江区"
+    ]
+  },
+  "status": {
+    "is_double_high": true,
+    "double_high_level": "B档",
+    "is_vocational_undergraduate": true,
+    "upgrade_year": 2025
+  },
+  "academic_strength": {
+    "national_key_majors": [
+      "高分子材料加工技术",
+      "智能控制技术",
+      "鞋类设计与工艺"
+    ],
+    "faculty": {
+      "double_qualified_ratio": "90%+",
+      "high_level_talents": 160
+    }
+  },
+  "admission_data_2025_est": {
+    "physics_group_min_score": 479,
+    "history_group_min_score": 475,
+    "competitiveness": "Very High"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "98.59%",
+    "local_retention_rate": "65%",
+    "top_employers": [
+      "Anta",
+      "Jomoo",
+      "Hengan",
+      "Huawei"
+    ]
+  },
+  "comprehensive_score": 4.32
+}

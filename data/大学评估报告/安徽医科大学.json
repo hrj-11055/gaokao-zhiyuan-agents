@@ -1,0 +1,37 @@
+{
+  "university_name": "安徽医科大学",
+  "short_name": "安医大",
+  "location": {
+    "province": "安徽",
+    "city": "合肥",
+    "campuses": [
+      "梅山路校区",
+      "翡翠路校区",
+      "新医科中心(肥西)"
+    ]
+  },
+  "academic_stats": {
+    "esi_top_1_percent_count": 12,
+    "esi_top_1_permille_count": 2,
+    "key_disciplines": [
+      "公共卫生与预防医学",
+      "药学",
+      "临床医学"
+    ],
+    "academician_count": 1
+  },
+  "admission_stats": {
+    "anhui_physics_clinical_5plus3_rank": 11000,
+    "anhui_physics_clinical_5year_rank": 22000,
+    "overall_difficulty": "High"
+  },
+  "employment_stats": {
+    "further_study_rate": "42.77%",
+    "medical_industry_ratio": "70%",
+    "top_employer": "安徽医科大学第一附属医院"
+  },
+  "evaluation": {
+    "comprehensive_score": 3.98,
+    "tagline": "安徽医疗系统的定海神针"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "university_name": "宿州学院",
+  "short_name": "宿院",
+  "location": {
+    "province": "安徽省",
+    "city": "宿州市",
+    "region_type": "长三角一体化节点城市"
+  },
+  "academic_profile": {
+    "key_disciplines": [
+      "地质资源与地质工程",
+      "计算机应用技术",
+      "机械工程"
+    ],
+    "peak_disciplines_count": 3,
+    "master_degree_status": "硕士学位授予立项建设单位"
+  },
+  "admission_data": {
+    "anhui_physics_rank_2025": 144858,
+    "anhui_history_rank_2025": 30069,
+    "out_of_province_attraction": "Medium-Low"
+  },
+  "career_outcomes": {
+    "kaoyan_rate": "25%-30%",
+    "top_employers": [
+      "中煤矿建",
+      "华为云",
+      "奇瑞汽车"
+    ],
+    "average_starting_salary": 5000
+  },
+  "campus_life": {
+    "dormitory_condition": "6-person, AC, Shared Bath",
+    "vibe": "Pragmatic, Exam-oriented"
+  },
+  "comprehensive_evaluation": {
+    "score": 2.725,
+    "recommendation_index": "High for pragmatic students"
+  }
+}

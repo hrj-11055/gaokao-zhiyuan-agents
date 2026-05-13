@@ -1,0 +1,505 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 药物经济与管理 就业方向 薪资待遇 深造率 2025
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91+%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87+%E6%B7%B1%E9%80%A0%E7%8E%87+2025&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2213417842578535542137%22%2C%22ori_lid%22%3A%2213417842578535542137%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=ba35c0bc01b8ed79&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91+%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87+%E6%B7%B1%E9%80%A0%E7%8E%87+2025
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91+%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87+%E6%B7%B1%E9%80%A0%E7%8E%87+2025
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=ba35c0bc01b8ed79&ie=utf-8&wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91+%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87+%E6%B7%B1%E9%80%A0%E7%8E%87+2025&rsv_spt=7&rsv_bp=1&f=8&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91+%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87+%E6%B7%B1%E9%80%A0%E7%8E%87+2025&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91+%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87+%E6%B7%B1%E9%80%A0%E7%8E%87+2025
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91+%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87+%E6%B7%B1%E9%80%A0%E7%8E%87+2025
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91+%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87+%E6%B7%B1%E9%80%A0%E7%8E%87+2025
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86+%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91+%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87+%E6%B7%B1%E9%80%A0%E7%8E%87+2025
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  药学专业就业前景和就业方向  药物经济学就业方向  药品经营与管理的就业方向  药物经济与管理专业大学排名  药物经济学硕士就业  药物经济学研究生就业怎么样    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 高市政府越过“最后一根红线” 9 厨师锅里吐口水后继续出餐 店长回应 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 枪击发生时特朗普旁的华裔女记者是谁 14 A股一季度最赚钱公司曝光 15 女性多和好友聚会能“续命”" [ref=e69]:
+              - cell "相关搜索  药学专业就业前景和就业方向  药物经济学就业方向  药品经营与管理的就业方向  药物经济与管理专业大学排名  药物经济学硕士就业  药物经济学研究生就业怎么样    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 高市政府越过“最后一根红线” 9 厨师锅里吐口水后继续出餐 店长回应 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 枪击发生时特朗普旁的华裔女记者是谁 14 A股一季度最赚钱公司曝光 15 女性多和好友聚会能“续命”" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 药学专业就业前景和就业方向" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E5%92%8C%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=3d84vwTxGm3Tkc6kdgUH4bofTIvG2DiEo8uirvJee%2FRgv3U1ZKsVs4EehYQ&rfqid=ba35c0bc01b8ed79&rsv_dl=0_prs_28616_1&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsf=101636803
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 药学专业就业前景和就业方向
+                      - link " 药物经济学就业方向" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=3d84vwTxGm3Tkc6kdgUH4bofTIvG2DiEo8uirvJee%2FRgv3U1ZKsVs4EehYQ&rfqid=ba35c0bc01b8ed79&rsv_dl=0_prs_28616_2&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 药物经济学就业方向
+                      - link " 药品经营与管理的就业方向" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=%E8%8D%AF%E5%93%81%E7%BB%8F%E8%90%A5%E4%B8%8E%E7%AE%A1%E7%90%86%E7%9A%84%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=92eeomBlixZU0cgPoA1hNWcYznQ%2B1syBJIaRp%2BkIGuJ4nUwI6uhRRbittrU&rfqid=ba35c0bc01b8ed79&rsv_dl=0_prs_28616_3&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsf=101636803
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 药品经营与管理的就业方向
+                      - link " 药物经济与管理专业大学排名" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%E4%B8%93%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=92eeomBlixZU0cgPoA1hNWcYznQ%2B1syBJIaRp%2BkIGuJ4nUwI6uhRRbittrU&rfqid=ba35c0bc01b8ed79&rsv_dl=0_prs_28616_4&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsf=101636803
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 药物经济与管理专业大学排名
+                      - link " 药物经济学硕士就业" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%A1%95%E5%A3%AB%E5%B0%B1%E4%B8%9A&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=92eeomBlixZU0cgPoA1hNWcYznQ%2B1syBJIaRp%2BkIGuJ4nUwI6uhRRbittrU&rfqid=ba35c0bc01b8ed79&rsv_dl=0_prs_28616_5&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsf=101633403
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 药物经济学硕士就业
+                      - link " 药物经济学研究生就业怎么样" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E5%B0%B1%E4%B8%9A%E6%80%8E%E4%B9%88%E6%A0%B7&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=92eeomBlixZU0cgPoA1hNWcYznQ%2B1syBJIaRp%2BkIGuJ4nUwI6uhRRbittrU&rfqid=ba35c0bc01b8ed79&rsv_dl=0_prs_28616_6&rq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsf=101633403
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 药物经济学研究生就业怎么样
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=92eeomBlixZU0cgPoA1hNWcYznQ%2B1syBJIaRp%2BkIGuJ4nUwI6uhRRbittrU&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=92eeomBlixZU0cgPoA1hNWcYznQ%2B1syBJIaRp%2BkIGuJ4nUwI6uhRRbittrU&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=92eeomBlixZU0cgPoA1hNWcYznQ%2B1syBJIaRp%2BkIGuJ4nUwI6uhRRbittrU&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=92eeomBlixZU0cgPoA1hNWcYznQ%2B1syBJIaRp%2BkIGuJ4nUwI6uhRRbittrU&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=92eeomBlixZU0cgPoA1hNWcYznQ%2B1syBJIaRp%2BkIGuJ4nUwI6uhRRbittrU&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=92eeomBlixZU0cgPoA1hNWcYznQ%2B1syBJIaRp%2BkIGuJ4nUwI6uhRRbittrU&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=691fmnOzI8oBkWJBUES85Ianjq%2BHogEMtEVZbfeiWtDqKfl4fe5pkL0slzk&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=691fmnOzI8oBkWJBUES85Ianjq%2BHogEMtEVZbfeiWtDqKfl4fe5pkL0slzk&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "高市政府越过“最后一根红线”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=691fmnOzI8oBkWJBUES85Ianjq%2BHogEMtEVZbfeiWtDqKfl4fe5pkL0slzk&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=691fmnOzI8oBkWJBUES85Ianjq%2BHogEMtEVZbfeiWtDqKfl4fe5pkL0slzk&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=691fmnOzI8oBkWJBUES85Ianjq%2BHogEMtEVZbfeiWtDqKfl4fe5pkL0slzk&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=691fmnOzI8oBkWJBUES85Ianjq%2BHogEMtEVZbfeiWtDqKfl4fe5pkL0slzk&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=691fmnOzI8oBkWJBUES85Ianjq%2BHogEMtEVZbfeiWtDqKfl4fe5pkL0slzk&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=691fmnOzI8oBkWJBUES85Ianjq%2BHogEMtEVZbfeiWtDqKfl4fe5pkL0slzk&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "A股一季度最赚钱公司曝光" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=A%E8%82%A1%E4%B8%80%E5%AD%A3%E5%BA%A6%E6%9C%80%E8%B5%9A%E9%92%B1%E5%85%AC%E5%8F%B8%E6%9B%9D%E5%85%89&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=691fmnOzI8oBkWJBUES85Ianjq%2BHogEMtEVZbfeiWtDqKfl4fe5pkL0slzk&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "女性多和好友聚会能“续命”" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=691fmnOzI8oBkWJBUES85Ianjq%2BHogEMtEVZbfeiWtDqKfl4fe5pkL0slzk&rqid=ba35c0bc01b8ed79&rsf=295bd80bfb9cc5f47b985b7fa01a2d12_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e209]:
+            - generic [ref=e211]:
+              - img [ref=e214]
+              - generic:
+                - generic: 
+            - generic [ref=e219]:
+              - generic [ref=e220]: 问题分析中
+              - img [ref=e222]
+          - generic [ref=e246]:
+            - heading "2025年药物经济学专业国内发展的怎么样了? - 知乎" [level=3] [ref=e249]:
+              - link "2025年药物经济学专业国内发展的怎么样了? - 知乎" [ref=e250] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=QHIFg8HOquIy08OhUUiah_A6MAepjpqax2AKj4WFgkRSo20qwwvwAfydEdjHXenbOBhyLRj155o2Ze-jSTLSCq
+                - paragraph [ref=e253]:
+                  - generic [ref=e256]:
+                    - emphasis [ref=e257]: "2025"
+                    - text: 年
+                    - emphasis [ref=e258]: 药物经济
+                    - text: 学专业国内发展的怎么样了? - 知乎
+            - generic [ref=e263]:
+              - text: 2025年12月14日
+              - generic [ref=e264]:
+                - text: 未来五年人才缺口预计达12-20万，就业
+                - emphasis [ref=e265]: 率
+                - text: 超95%，应届生起薪比普通专业高30% 就业方向广：医保局、药企市场准入部、医院药事科、咨询机构等都抢着要 三、应用场景全面开花 医保谈判：帮 "灵魂砍价" 更科学，2025年国谈新增114种药，50种是一类创新药 药企研发：新药早期就做经济性评估，避免研发出来 "性价比不达标
+            - link "头像 知乎" [ref=e270] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=QHIFg8HOquIy08OhUUiah_A6MAepjpqax2AKj4WFgkRSo20qwwvwAfydEdjHXenbOBhyLRj155o2Ze-jSTLSCq
+              - img "头像" [ref=e273]
+              - generic [ref=e274]: 知乎
+              - generic [ref=e276]: 
+          - generic [ref=e280]:
+            - heading "药物经济与管理专业 2025 解读:懂药又懂钱,药企抢着要,本科起薪..." [level=3] [ref=e283]:
+              - link "药物经济与管理专业 2025 解读:懂药又懂钱,药企抢着要,本科起薪..." [ref=e284] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=l-ThVtMXu1t9lIyTs0-QDDXVncwvqTuOqlVxX4lDkzV7yWJ3cLDm2DczZyhoXDeGvfde2iLpvYvei6va1uMtWK
+                - paragraph [ref=e287]:
+                  - generic [ref=e290]:
+                    - emphasis [ref=e291]: 药物经济与管理
+                    - text: 专业
+                    - emphasis [ref=e292]: "2025"
+                    - text: 解读:懂药又懂钱,药企抢着要,本科起薪...
+            - generic [ref=e297]:
+              - text: 2025年11月3日
+              - generic [ref=e298]:
+                - text: 点击查看“
+                - emphasis [ref=e299]: 药物经济与管理
+                - text: ”专业--就业分析 三、毕业能去哪?就业面广,
+                - emphasis [ref=e300]: 薪资
+                - text: 稳步增长 这个专业的
+                - emphasis [ref=e301]: 就业方向
+                - text: "比较多元,覆盖医药行业多个环节,应届生找对口工作不算难,但薪资不会像传言中那么夸张,更看重长期发展。 主要去向有这么几类: 药企核心部门:创新药企的研发部需要人做 “药物经济评估”,判断研发项目值不值得投;..."
+            - link "蜻蜓志愿" [ref=e306] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=l-ThVtMXu1t9lIyTs0-QDDXVncwvqTuOqlVxX4lDkzV7yWJ3cLDm2DczZyhoXDeGvfde2iLpvYvei6va1uMtWK
+              - generic [ref=e307]: 蜻蜓志愿
+              - generic [ref=e309]: 
+          - generic [ref=e313]:
+            - heading "药物经济与管理专业就业方向及前景!附2025大学分数线-高考100" [level=3] [ref=e316]:
+              - link "药物经济与管理专业就业方向及前景!附2025大学分数线-高考100" [ref=e317] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=l-ThVtMXu1t9lIyTs0-QDDXVncwvqTuOqlVxX4lDkzUB-CGSmr12mAHkSvpvHVF9XJTuIe1zkrEdk_xETIjYF_
+                - paragraph [ref=e320]:
+                  - generic [ref=e323]:
+                    - emphasis [ref=e324]: 药物经济与管理
+                    - text: 专业
+                    - emphasis [ref=e325]: 就业方向
+                    - text: 及前景!附
+                    - emphasis [ref=e326]: "2025"
+                    - text: 大学分数线-高考100
+            - generic [ref=e327]:
+              - link [ref=e329] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=l-ThVtMXu1t9lIyTs0-QDDXVncwvqTuOqlVxX4lDkzUB-CGSmr12mAHkSvpvHVF9XJTuIe1zkrEdk_xETIjYF_
+              - generic [ref=e334]:
+                - generic [ref=e339]:
+                  - text: 2026年2月28日
+                  - generic [ref=e340]:
+                    - text: 2、
+                    - emphasis [ref=e341]: 药物经济与管理
+                    - text: 主要
+                    - emphasis [ref=e342]: 就业方向
+                    - text: (1)医药企业市场与决策方向:在制药、医疗器械等企业从事市场分析、药品定价策略、药物经济学评价及产品上市后研究,为新产品研发和营销策略提供数据支持。 (2)卫生政策与健康管理方向:进入政府卫生部门、医保机构或国际组织(如WHO),参与医保政策制定、药品目录调整、卫生技术评估及公共卫生...
+                - link "高考100网" [ref=e347] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=l-ThVtMXu1t9lIyTs0-QDDXVncwvqTuOqlVxX4lDkzUB-CGSmr12mAHkSvpvHVF9XJTuIe1zkrEdk_xETIjYF_
+                  - generic [ref=e348]: 高考100网
+                  - generic [ref=e350]: 
+          - generic [ref=e352]:
+            - generic [ref=e353]: 大家还在搜
+            - generic [ref=e354]:
+              - link "药学专业就业前景和就业方向" [ref=e355] [cursor=pointer]:
+                - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E5%92%8C%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=4aaa95HaUABcYtkSJ%2BwHOQ3l3qqe%2F5uHoAYfEKoZPMNpXGNQedwMLlaydVg&rsf=101636803&rsv_dl=0_prs_28608_1
+                - generic [ref=e357]: 药学专业就业前景和就业方向
+              - link "药物经济学就业方向" [ref=e358] [cursor=pointer]:
+                - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=4aaa95HaUABcYtkSJ%2BwHOQ3l3qqe%2F5uHoAYfEKoZPMNpXGNQedwMLlaydVg&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e360]: 药物经济学就业方向
+              - link "药品经营与管理的就业方向" [ref=e361] [cursor=pointer]:
+                - /url: /s?wd=%E8%8D%AF%E5%93%81%E7%BB%8F%E8%90%A5%E4%B8%8E%E7%AE%A1%E7%90%86%E7%9A%84%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=4aaa95HaUABcYtkSJ%2BwHOQ3l3qqe%2F5uHoAYfEKoZPMNpXGNQedwMLlaydVg&rsf=101636803&rsv_dl=0_prs_28608_3
+                - generic [ref=e363]: 药品经营与管理的就业方向
+              - link "药物经济与管理专业大学排名" [ref=e364] [cursor=pointer]:
+                - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%E4%B8%93%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=4aaa95HaUABcYtkSJ%2BwHOQ3l3qqe%2F5uHoAYfEKoZPMNpXGNQedwMLlaydVg&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e366]: 药物经济与管理专业大学排名
+              - link "药物经济学硕士就业" [ref=e367] [cursor=pointer]:
+                - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%A1%95%E5%A3%AB%E5%B0%B1%E4%B8%9A&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=4aaa95HaUABcYtkSJ%2BwHOQ3l3qqe%2F5uHoAYfEKoZPMNpXGNQedwMLlaydVg&rsf=101633403&rsv_dl=0_prs_28608_5
+                - generic [ref=e369]: 药物经济学硕士就业
+              - link "药物经济学研究生就业怎么样" [ref=e370] [cursor=pointer]:
+                - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E5%B0%B1%E4%B8%9A%E6%80%8E%E4%B9%88%E6%A0%B7&usm=2&ie=utf-8&rsv_pq=ba35c0bc01b8ed79&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&rsv_t=2517JI8uBM3XY%2BIxBPJt3MPap9oJhhf0er4rHq493NNRlnC8btwab3u%2Fg%2B4&rsf=101633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e372]: 药物经济学研究生就业怎么样
+          - generic [ref=e376]:
+            - heading "药品经营与管理专业好就业吗" [level=3] [ref=e379]:
+              - link "药品经营与管理专业好就业吗" [ref=e380] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=AEiMIIvxg2jEWv8nHqReGU5thlg-8yAt2OmnjdBSG8nqGejobLnN7Sc4QCv-fzxschugIBZJvIPbZ9o5OmhlWHhyzOzKm-OKELq4_kW6er-APKi5W8FG3nwENqdQxdJJ5h1-RK0_5RooRgHVxci7YOWqoVEefnqxjIKY1UUNMXX7IIbAHE8mOLQJy29RJfGMNMbORtpwC4g1poSwa6K0VigWBMirAN9TnaukbMDHNd-8uQTPjvoArUG2MeKkWiK7vB54GJPZ4TXzqoMpVpvhihYS-NxzKoSlMkmeJc6l_xjUYJhXoDsvqPoeItbkk8RmS0Bb9sAWAxDgvqe7doq2da
+                - paragraph [ref=e383]:
+                  - generic [ref=e386]:
+                    - emphasis [ref=e387]: 药品
+                    - text: 经营
+                    - emphasis [ref=e388]: 与管理
+                    - text: 专业好
+                    - emphasis [ref=e389]: 就业
+                    - text: 吗
+            - generic [ref=e394]:
+              - text: 2025年7月3日
+              - generic [ref=e395]:
+                - text: ==药品经营与管理专业就业前景良好,
+                - emphasis [ref=e396]: 2025年毕业生半年内就业率稳定在89%-92%,核心岗位集中在医药流通、零售及药企营销领域,起薪4500-8000元/月==
+                - text: 行业需求持续增长 医药卫生领域数字化转型与政策利好推动就业市场扩容。据2025年数据,全国医药流通领域存在18万人才缺口,质量管理、...
+            - link "头像 知了爱学" [ref=e401] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=AEiMIIvxg2jEWv8nHqReGU5thlg-8yAt2OmnjdBSG8nqGejobLnN7Sc4QCv-fzxschugIBZJvIPbZ9o5OmhlWHhyzOzKm-OKELq4_kW6er-APKi5W8FG3nwENqdQxdJJ5h1-RK0_5RooRgHVxci7YOWqoVEefnqxjIKY1UUNMXX7IIbAHE8mOLQJy29RJfGMNMbORtpwC4g1poSwa6K0VigWBMirAN9TnaukbMDHNd-8uQTPjvoArUG2MeKkWiK7vB54GJPZ4TXzqoMpVpvhihYS-NxzKoSlMkmeJc6l_xjUYJhXoDsvqPoeItbkk8RmS0Bb9sAWAxDgvqe7doq2da
+              - img "头像" [ref=e404]
+              - generic [ref=e405]: 知了爱学
+              - generic [ref=e407]: 
+          - generic [ref=e411]:
+            - heading "2026药物经济与管理专业就业前景及方向:毕业后好找工作吗?-高考100" [level=3] [ref=e414]:
+              - link "2026药物经济与管理专业就业前景及方向:毕业后好找工作吗?-高考100" [ref=e415] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=l-ThVtMXu1t9lIyTs0-QDDXVncwvqTuOqlVxX4lDkzUB-CGSmr12mAHkSvpvHVF9zx57sEs-wWOaB6tkMDeiHK
+                - paragraph [ref=e418]:
+                  - generic [ref=e421]:
+                    - text: "2026"
+                    - emphasis [ref=e422]: 药物经济与管理
+                    - text: 专业
+                    - emphasis [ref=e423]: 就业
+                    - text: 前景及
+                    - emphasis [ref=e424]: 方向
+                    - text: :毕业后好找工作吗?-高考100
+            - generic [ref=e429]:
+              - text: 2026年2月28日
+              - generic [ref=e430]:
+                - emphasis [ref=e431]: 药物经济与管理
+                - text: 专业就业前景可观,
+                - emphasis [ref=e432]: 就业方向
+                - text: "包括制药企业:从事药品全生命周期管理;医药经营与销售:从事医药批发、零售企业担任药品采购、销售、物流管理等;医疗机构与药房:"
+                - emphasis [ref=e433]: 药品管理
+                - text: 员、药房运营人员等;医药行政管理部门:药品注册、监管、政策研究等;医药咨询与研究机构:市场分析、药物经济学评价、行业政策研究;医疗保险与相关...
+            - link "高考100网" [ref=e438] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=l-ThVtMXu1t9lIyTs0-QDDXVncwvqTuOqlVxX4lDkzUB-CGSmr12mAHkSvpvHVF9zx57sEs-wWOaB6tkMDeiHK
+              - generic [ref=e439]: 高考100网
+              - generic [ref=e441]: 
+          - generic [ref=e445]:
+            - heading "“钱”景与“前景”双丰收!药物经济与管理:医药行业的“黄金赛道..." [level=3] [ref=e448]:
+              - link "“钱”景与“前景”双丰收!药物经济与管理:医药行业的“黄金赛道..." [ref=e449] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=V9AM9tITMXniKOpXQ5QKsImR0g92lnGZnZ-2pScE6Fn1et0u5GCy3uZ1i8Ha5xIMKZumO6iCokIgS09na8_J-ycMzUZTwTZhGJ5WTD3_02W
+                - paragraph [ref=e452]:
+                  - generic [ref=e455]:
+                    - text: “钱”景与“前景”双丰收!
+                    - emphasis [ref=e456]: 药物经济与管理
+                    - text: :医药行业的“黄金赛道...
+            - generic [ref=e457]:
+              - link [ref=e459] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=V9AM9tITMXniKOpXQ5QKsImR0g92lnGZnZ-2pScE6Fn1et0u5GCy3uZ1i8Ha5xIMKZumO6iCokIgS09na8_J-ycMzUZTwTZhGJ5WTD3_02W
+              - generic [ref=e464]:
+                - generic [ref=e469]:
+                  - text: 2025年11月15日
+                  - generic [ref=e470]:
+                    - emphasis [ref=e471]: 药物经济与管理
+                    - text: 专业，正是为这一需求量身定制的“跨界学科”，它融合了药学、经济学、管理学三大领域，培养能在医药企业、政府部门、医疗机构、咨询机构等场景中，用“数据+政策”解决实际问题的“多面手”。从
+                    - emphasis [ref=e472]: 就业
+                    - text: 市场看，该专业毕业生
+                    - emphasis [ref=e473]: 薪资
+                    - text: 普遍高于普通药学专业，一线城市起薪可达15-25万/年，且职业晋升路径清晰（如...
+                - link "头像 职场张扬" [ref=e478] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=V9AM9tITMXniKOpXQ5QKsImR0g92lnGZnZ-2pScE6Fn1et0u5GCy3uZ1i8Ha5xIMKZumO6iCokIgS09na8_J-ycMzUZTwTZhGJ5WTD3_02W
+                  - img "头像" [ref=e481]
+                  - generic [ref=e482]: 职场张扬
+                  - generic [ref=e484]: 
+          - generic [ref=e488]:
+            - heading "新医科风口专业盘点:就业率超95%,考编有优势,告别临床内卷" [level=3] [ref=e491]:
+              - link "新医科风口专业盘点:就业率超95%,考编有优势,告别临床内卷" [ref=e492] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=V9AM9tITMXniKOpXQ5QKsImR0g92lnGZnZ-2pScE6FpIUVtRsBPXfkcDCWAweVhCAw9eo-gM92qnYVNdEYskr83WLKmsZiIZYyACbUPyCqC
+                - paragraph [ref=e495]:
+                  - generic [ref=e498]:
+                    - text: "新医科风口专业盘点:"
+                    - emphasis [ref=e499]: 就业率
+                    - text: 超95%,考编有优势,告别临床内卷
+            - generic [ref=e500]:
+              - link [ref=e502] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=V9AM9tITMXniKOpXQ5QKsImR0g92lnGZnZ-2pScE6FpIUVtRsBPXfkcDCWAweVhCAw9eo-gM92qnYVNdEYskr83WLKmsZiIZYyACbUPyCqC
+              - generic [ref=e507]:
+                - generic [ref=e512]:
+                  - text: 2026年2月4日
+                  - generic [ref=e513]:
+                    - emphasis [ref=e514]: 就业
+                    - text: 优势：体制内优势：医保局、商业保险机构核心岗位，
+                    - emphasis [ref=e515]: "2025"
+                    - text: 年国家医保局扩招30%；竞争压力：某省会城市医保局岗位报录比1:12，远低于临床岗的1:87；
+                    - emphasis [ref=e516]: 薪资
+                    - text: 结构：基本
+                    - emphasis [ref=e517]: 工资
+                    - text: +绩效奖金（占比35%），硕士入职年薪18-25万。5.
+                    - emphasis [ref=e518]: 药物经济与管理
+                    - text: 培养定位：医药产业战略管理人才，平衡药物研发成本与市场效益。核心课程：药物...
+                - link "头像 青云跃龙门" [ref=e523] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=V9AM9tITMXniKOpXQ5QKsImR0g92lnGZnZ-2pScE6FpIUVtRsBPXfkcDCWAweVhCAw9eo-gM92qnYVNdEYskr83WLKmsZiIZYyACbUPyCqC
+                  - img "头像" [ref=e526]
+                  - generic [ref=e527]: 青云跃龙门
+                  - generic [ref=e529]: 
+          - generic [ref=e533]:
+            - heading "药物经济与管理:这个新专业正在定义医药行业的未来" [level=3] [ref=e536]:
+              - link "药物经济与管理:这个新专业正在定义医药行业的未来" [ref=e537] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=V9AM9tITMXniKOpXQ5QKsHRS9iR07Stc_3jmi5yn_R42ihR_F2iEaI_LsUSs9oarWaqmobIi_ahYfTfqsJ8Nla
+                - paragraph [ref=e540]:
+                  - generic [ref=e543]:
+                    - emphasis [ref=e544]: 药物经济与管理
+                    - text: :这个新专业正在定义医药行业的未来
+            - generic [ref=e545]:
+              - link [ref=e547] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=V9AM9tITMXniKOpXQ5QKsHRS9iR07Stc_3jmi5yn_R42ihR_F2iEaI_LsUSs9oarWaqmobIi_ahYfTfqsJ8Nla
+              - generic [ref=e552]:
+                - generic [ref=e557]:
+                  - text: 2025年11月15日
+                  - generic [ref=e558]:
+                    - emphasis [ref=e559]: 药物经济与管理
+                    - text: 专业的
+                    - emphasis [ref=e560]: 就业
+                    - text: 前景广阔，这主要得益于政策、市场与技术三方面的共同驱动。政策红利持续释放 医保改革深化：随着DRG/DIP 2.0版
+                    - emphasis [ref=e561]: "2025"
+                    - text: 年在全国落地，医院医保科、病案科等相关部门编制扩容30%，新增岗位约2.4万个。国家战略支持：2024年7月出台的《全链条支持创新药发展实施方案》直接将“临床研究专职人才”...
+                - link "头像  学予明天" [ref=e566] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=V9AM9tITMXniKOpXQ5QKsHRS9iR07Stc_3jmi5yn_R42ihR_F2iEaI_LsUSs9oarWaqmobIi_ahYfTfqsJ8Nla
+                  - generic [ref=e567]:
+                    - img "头像" [ref=e569]
+                    - generic [ref=e571]: 
+                  - generic [ref=e572]: 学予明天
+                  - generic [ref=e574]: 
+        - generic [ref=e577]:
+          - generic [ref=e578]: 相关搜索
+          - table [ref=e579]:
+            - rowgroup [ref=e580]:
+              - row "药学专业就业前景和就业方向 药物经济学就业方向" [ref=e581]:
+                - cell "药学专业就业前景和就业方向" [ref=e582]:
+                  - link "药学专业就业前景和就业方向" [ref=e583] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E5%92%8C%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&rsf=101636803&rsp=0&f=1&rs_src=0&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&rsv_dl=brs_28338_1
+                    - generic [ref=e585]: 药学专业就业前景和就业方向
+                - cell "药物经济学就业方向" [ref=e586]:
+                  - link "药物经济学就业方向" [ref=e587] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&rsv_dl=brs_28338_2
+                    - generic [ref=e589]: 药物经济学就业方向
+              - row "药物经济与管理专业大学排名 药物经济学硕士就业" [ref=e590]:
+                - cell "药物经济与管理专业大学排名" [ref=e591]:
+                  - link "药物经济与管理专业大学排名" [ref=e592] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%E4%B8%93%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&rsf=101636803&rsp=2&f=1&rs_src=0&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&rsv_dl=brs_28338_3
+                    - generic [ref=e594]: 药物经济与管理专业大学排名
+                - cell "药物经济学硕士就业" [ref=e595]:
+                  - link "药物经济学硕士就业" [ref=e596] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%A1%95%E5%A3%AB%E5%B0%B1%E4%B8%9A&rsf=101633403&rsp=3&f=1&rs_src=0&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&rsv_dl=brs_28338_4
+                    - generic [ref=e598]: 药物经济学硕士就业
+              - row "药品经营与管理的就业方向 药物经济学研究生就业怎么样" [ref=e599]:
+                - cell "药品经营与管理的就业方向" [ref=e600]:
+                  - link "药品经营与管理的就业方向" [ref=e601] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E5%93%81%E7%BB%8F%E8%90%A5%E4%B8%8E%E7%AE%A1%E7%90%86%E7%9A%84%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91&rsf=101636803&rsp=4&f=1&rs_src=0&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&rsv_dl=brs_28338_5
+                    - generic [ref=e603]: 药品经营与管理的就业方向
+                - cell "药物经济学研究生就业怎么样" [ref=e604]:
+                  - link "药物经济学研究生就业怎么样" [ref=e605] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E5%B0%B1%E4%B8%9A%E6%80%8E%E4%B9%88%E6%A0%B7&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&rsv_dl=brs_28338_6
+                    - generic [ref=e607]: 药物经济学研究生就业怎么样
+              - row "药学就业方向及待遇 药学就业前景和待遇" [ref=e608]:
+                - cell "药学就业方向及待遇" [ref=e609]:
+                  - link "药学就业方向及待遇" [ref=e610] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%E5%8F%8A%E5%BE%85%E9%81%87&rsf=101633403&rsp=6&f=1&rs_src=0&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&rsv_dl=brs_28338_7
+                    - generic [ref=e612]: 药学就业方向及待遇
+                - cell "药学就业前景和待遇" [ref=e613]:
+                  - link "药学就业前景和待遇" [ref=e614] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E5%AD%A6%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E5%92%8C%E5%BE%85%E9%81%87&rsf=101633403&rsp=7&f=1&rs_src=0&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&rsv_dl=brs_28338_8
+                    - generic [ref=e616]: 药学就业前景和待遇
+              - row "制药学专业就业前景工资待遇 药物分析和临床药学哪个好就业" [ref=e617]:
+                - cell "制药学专业就业前景工资待遇" [ref=e618]:
+                  - link "制药学专业就业前景工资待遇" [ref=e619] [cursor=pointer]:
+                    - /url: /s?wd=%E5%88%B6%E8%8D%AF%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E5%B7%A5%E8%B5%84%E5%BE%85%E9%81%87&rsf=101633403&rsp=8&f=1&rs_src=0&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&rsv_dl=brs_28338_9
+                    - generic [ref=e621]: 制药学专业就业前景工资待遇
+                - cell "药物分析和临床药学哪个好就业" [ref=e622]:
+                  - link "药物分析和临床药学哪个好就业" [ref=e623] [cursor=pointer]:
+                    - /url: /s?wd=%E8%8D%AF%E7%89%A9%E5%88%86%E6%9E%90%E5%92%8C%E4%B8%B4%E5%BA%8A%E8%8D%AF%E5%AD%A6%E5%93%AA%E4%B8%AA%E5%A5%BD%E5%B0%B1%E4%B8%9A&rsf=101636803&rsp=9&f=1&rs_src=0&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&rsv_dl=brs_28338_10
+                    - generic [ref=e625]: 药物分析和临床药学哪个好就业
+      - generic [ref=e628]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e629]:
+          - generic [ref=e630]: "1"
+        - link "2" [ref=e631] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&pn=10&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&ie=utf-8&usm=2&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&topic_pn=
+          - generic [ref=e632]: "2"
+        - link "3" [ref=e633] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&pn=20&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&ie=utf-8&usm=2&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&topic_pn=
+          - generic [ref=e634]: "3"
+        - link "4" [ref=e635] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&pn=30&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&ie=utf-8&usm=2&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&topic_pn=
+          - generic [ref=e636]: "4"
+        - link "5" [ref=e637] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&pn=40&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&ie=utf-8&usm=2&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&topic_pn=
+          - generic [ref=e638]: "5"
+        - link "6" [ref=e639] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&pn=50&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&ie=utf-8&usm=2&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&topic_pn=
+          - generic [ref=e640]: "6"
+        - link "7" [ref=e641] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&pn=60&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&ie=utf-8&usm=2&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&topic_pn=
+          - generic [ref=e642]: "7"
+        - link "8" [ref=e643] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&pn=70&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&ie=utf-8&usm=2&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&topic_pn=
+          - generic [ref=e644]: "8"
+        - link "9" [ref=e645] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&pn=80&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&ie=utf-8&usm=2&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&topic_pn=
+          - generic [ref=e646]: "9"
+        - link "10" [ref=e647] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&pn=90&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&ie=utf-8&usm=2&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&topic_pn=
+          - generic [ref=e648]: "10"
+        - link "下一页" [ref=e649] [cursor=pointer]:
+          - /url: /s?wd=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&pn=10&oq=%E8%8D%AF%E7%89%A9%E7%BB%8F%E6%B5%8E%E4%B8%8E%E7%AE%A1%E7%90%86%20%E5%B0%B1%E4%B8%9A%E6%96%B9%E5%90%91%20%E8%96%AA%E8%B5%84%E5%BE%85%E9%81%87%20%E6%B7%B1%E9%80%A0%E7%8E%87%202025&ie=utf-8&usm=2&rsv_pq=ba35c0bc01b8ed79&rsv_t=3dc258iLhA3F63kBVdHMvog7xryDyDeuJtwh1hkJ0dkvDMhJLk6qXruL4Ug&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e650]
+      - generic [ref=e653]:
+        - link "帮助" [ref=e654] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e655] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e656] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e657] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

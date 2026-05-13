@@ -1,0 +1,641 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "首页" [ref=e5] [cursor=pointer]:
+          - /url: https://www.dakao100.com
+        - link "热点" [ref=e6] [cursor=pointer]:
+          - /url: https://www.dakao100.com/hot
+      - generic [ref=e8]:
+        - textbox "搜索院校/专业/资讯…" [ref=e9]
+        - button [ref=e10] [cursor=pointer]:
+          - img [ref=e11]
+  - complementary [ref=e13]:
+    - link "大考100" [ref=e15] [cursor=pointer]:
+      - /url: https://www.dakao100.com
+    - generic [ref=e16]:
+      - link "高考动态" [ref=e17] [cursor=pointer]:
+        - /url: https://www.dakao100.com/category_1.html
+        - generic [ref=e18]: 高考动态
+      - link "各省高考" [ref=e19] [cursor=pointer]:
+        - /url: https://www.dakao100.com/category_5.html
+        - generic [ref=e20]: 各省高考
+      - link "志愿填报" [ref=e21] [cursor=pointer]:
+        - /url: https://www.dakao100.com/category_6.html
+        - generic [ref=e22]: 志愿填报
+      - link "大学名单" [ref=e23] [cursor=pointer]:
+        - /url: https://www.dakao100.com/category_7.html
+        - generic [ref=e24]: 大学名单
+      - link "大学排名" [ref=e25] [cursor=pointer]:
+        - /url: https://www.dakao100.com/category_8.html
+        - generic [ref=e26]: 大学排名
+      - link "学科专业" [ref=e27] [cursor=pointer]:
+        - /url: https://www.dakao100.com/category_10.html
+        - generic [ref=e28]: 学科专业
+      - link "特殊类型" [ref=e29] [cursor=pointer]:
+        - /url: https://www.dakao100.com/category_11.html
+        - generic [ref=e30]: 特殊类型
+      - generic [ref=e33]:
+        - generic [ref=e34]: 输入分数，看能上的大学
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e39] [cursor=pointer]: 四川
+            - generic [ref=e43] [cursor=pointer]: 物理/化学/生物
+          - textbox "输入你的模考成绩" [ref=e46]
+          - generic [ref=e47] [cursor=pointer]: 点击查看 >
+  - generic [ref=e48]:
+    - generic [ref=e49]:
+      - link "首页" [ref=e50] [cursor=pointer]:
+        - /url: https://www.dakao100.com
+      - text: ">"
+      - link "志愿填报" [ref=e51] [cursor=pointer]:
+        - /url: https://www.dakao100.com/category_6.html
+      - text: "> 正文"
+    - generic [ref=e52]:
+      - heading "暨南大学2024年各批次录取分数线概览：最低396分可录取，较上年高出51分" [level=1] [ref=e53]
+      - generic [ref=e54]:
+        - text: 李老师
+        - time [ref=e55]: 2025-07-24 13:06:43
+      - article [ref=e56]:
+        - paragraph [ref=e57]: 暨南大学2024年各批次录取分数线因省份而有所不同。在广东，物理类(普通类)最低录取分数为583分，历史类(普通类)最低录取分数为582分;在上海，最低录取分数为534分;在云南，理科(普通类)最低录取分数为575分，文科(普通类)最低录取分数为599分;在内蒙古，理科(普通类)最低录取分数为525分，文科(普通类)最低录取分数为538分;在北京，最低录取分数为605分;在吉林，物理类(普通类)最低录取分数为562分，历史类(普通类)最低录取分数为573分。2024年，暨南大学设有国家/地方专项，提前批（本科），新高考(3+3模式)一段和本科批招生计划。以下是暨南大学2024年各省最低录取分数线的汇总，供大家参考查阅。
+        - paragraph [ref=e58]
+        - paragraph [ref=e59]:
+          - strong [ref=e60]: 一、暨南大学2024年各批次最低录取分数
+        - paragraph [ref=e61]: 2024年，暨南大学在不同省份的录取分数线因招生批次和地区差异而有所不同。以下是该校在部分省份的录取分数线汇总：
+        - paragraph [ref=e62]:
+          - text: 1、国家/地方专项
+          - text: 云南：理科(599分),文科(599分)。
+          - text: 安徽：物理类(600分),历史类(613分)。
+          - text: 新疆：理科(432分),文科(494分)。
+        - paragraph [ref=e63]:
+          - text: 2、提前批（本科）
+          - text: 内蒙古：理科(525分),文科(538分)。
+          - text: 河北：物理类(588分),历史类(619分)。
+          - text: 重庆：物理类(595分),历史类(575分)。
+        - paragraph [ref=e64]:
+          - text: 3、新高考(3+3模式)一段
+          - text: 山东：综合(578分)。
+          - text: 浙江：综合(636分)。
+        - paragraph [ref=e65]:
+          - text: 4、本科批
+          - text: 上海：综合(534分)。
+          - text: 云南：理科(575分),文科(618分)。
+          - text: 内蒙古：理科(548分),文科(538分)。
+          - text: 北京：综合(605分)。
+          - text: 吉林：物理类(483分),历史类(502分)。
+          - text: 四川：理科(571分),文科(564分)。
+          - text: 天津：综合(608分)。
+          - text: 宁夏：理科(493分),文科(550分)。
+          - text: 安徽：物理类(596分),历史类(601分)。
+          - text: 山西：理科(588分),文科(565分)。
+          - text: 广东：物理类(583分),历史类(580分)。
+          - text: 广西：物理类(532分),历史类(572分)。
+          - text: 新疆：理科(396分),文科(434分)。
+          - text: 江苏：物理类(588分),历史类(589分)。
+          - text: 江西：物理类(586分),历史类(599分)。
+          - text: 河北：物理类(580分),历史类(605分)。
+          - text: 河南：理科(584分),文科(561分)。
+          - text: 海南：综合(677分)。
+          - text: 湖北：物理类(592分),历史类(585分)。
+          - text: 湖南：物理类(584分),历史类(598分)。
+          - text: 甘肃：物理类(555分),历史类(493分)。
+          - text: 福建：物理类(600分),历史类(589分)。
+          - text: 贵州：物理类(573分),历史类(557分)。
+          - text: 辽宁：物理类(597分),历史类(579分)。
+          - text: 重庆：物理类(589分),历史类(576分)。
+          - text: 陕西：理科(480分),文科(508分)。
+          - text: 青海：理科(461分),文科(487分)。
+          - text: 黑龙江：物理类(578分),历史类(581分)。
+        - paragraph [ref=e66]:
+          - strong [ref=e67]: 二、暨南大学专业设置
+        - paragraph [ref=e68]: 暨南大学共开设83个专业，10个专业门类。为学生提供了丰富多样的选择。以下是该校开设专业列表：
+        - table [ref=e69]:
+          - rowgroup [ref=e70]:
+            - row "专业名 层次 (门类) 学制" [ref=e71]:
+              - columnheader "专业名" [ref=e72]
+              - columnheader "层次 (门类)" [ref=e73]:
+                - text: 层次
+                - text: (门类)
+              - columnheader "学制" [ref=e74]
+          - rowgroup [ref=e75]:
+            - row "经济统计学 本科 经济学 四年" [ref=e76]:
+              - cell "经济统计学" [ref=e77]
+              - cell "本科 经济学" [ref=e78]:
+                - text: 本科
+                - generic [ref=e79]: 经济学
+              - cell "四年" [ref=e80]
+            - row "金融学 本科 经济学 四年" [ref=e81]:
+              - cell "金融学" [ref=e82]
+              - cell "本科 经济学" [ref=e83]:
+                - text: 本科
+                - generic [ref=e84]: 经济学
+              - cell "四年" [ref=e85]
+            - row "国际经济与贸易 本科 经济学 四年" [ref=e86]:
+              - cell "国际经济与贸易" [ref=e87]
+              - cell "本科 经济学" [ref=e88]:
+                - text: 本科
+                - generic [ref=e89]: 经济学
+              - cell "四年" [ref=e90]
+            - row "汉语言文学 本科 文学 四年" [ref=e91]:
+              - cell "汉语言文学" [ref=e92]
+              - cell "本科 文学" [ref=e93]:
+                - text: 本科
+                - generic [ref=e94]: 文学
+              - cell "四年" [ref=e95]
+            - row "新闻学 本科 文学 四年" [ref=e96]:
+              - cell "新闻学" [ref=e97]
+              - cell "本科 文学" [ref=e98]:
+                - text: 本科
+                - generic [ref=e99]: 文学
+              - cell "四年" [ref=e100]
+            - row "生物技术 本科 理学 四年" [ref=e101]:
+              - cell "生物技术" [ref=e102]
+              - cell "本科 理学" [ref=e103]:
+                - text: 本科
+                - generic [ref=e104]: 理学
+              - cell "四年" [ref=e105]
+            - row "电子信息工程 本科 工学 四年" [ref=e106]:
+              - cell "电子信息工程" [ref=e107]
+              - cell "本科 工学" [ref=e108]:
+                - text: 本科
+                - generic [ref=e109]: 工学
+              - cell "四年" [ref=e110]
+            - row "临床医学 本科 医学 五年" [ref=e111]:
+              - cell "临床医学" [ref=e112]
+              - cell "本科 医学" [ref=e113]:
+                - text: 本科
+                - generic [ref=e114]: 医学
+              - cell "五年" [ref=e115]
+            - row "财政学 本科 经济学 四年" [ref=e116]:
+              - cell "财政学" [ref=e117]
+              - cell "本科 经济学" [ref=e118]:
+                - text: 本科
+                - generic [ref=e119]: 经济学
+              - cell "四年" [ref=e120]
+            - row "税收学 本科 经济学 四年" [ref=e121]:
+              - cell "税收学" [ref=e122]
+              - cell "本科 经济学" [ref=e123]:
+                - text: 本科
+                - generic [ref=e124]: 经济学
+              - cell "四年" [ref=e125]
+            - row "金融科技 本科 经济学 四年" [ref=e126]:
+              - cell "金融科技" [ref=e127]
+              - cell "本科 经济学" [ref=e128]:
+                - text: 本科
+                - generic [ref=e129]: 经济学
+              - cell "四年" [ref=e130]
+            - row "金融工程 本科 经济学 四年" [ref=e131]:
+              - cell "金融工程" [ref=e132]
+              - cell "本科 经济学" [ref=e133]:
+                - text: 本科
+                - generic [ref=e134]: 经济学
+              - cell "四年" [ref=e135]
+            - row "法学 本科 法学 四年" [ref=e136]:
+              - cell "法学" [ref=e137]
+              - cell "本科 法学" [ref=e138]:
+                - text: 本科
+                - generic [ref=e139]: 法学
+              - cell "四年" [ref=e140]
+            - row "知识产权 本科 法学 四年" [ref=e141]:
+              - cell "知识产权" [ref=e142]
+              - cell "本科 法学" [ref=e143]:
+                - text: 本科
+                - generic [ref=e144]: 法学
+              - cell "四年" [ref=e145]
+            - row "国际事务与国际关系 本科 法学 四年" [ref=e146]:
+              - cell "国际事务与国际关系" [ref=e147]
+              - cell "本科 法学" [ref=e148]:
+                - text: 本科
+                - generic [ref=e149]: 法学
+              - cell "四年" [ref=e150]
+            - row "国际政治 本科 法学 四年" [ref=e151]:
+              - cell "国际政治" [ref=e152]
+              - cell "本科 法学" [ref=e153]:
+                - text: 本科
+                - generic [ref=e154]: 法学
+              - cell "四年" [ref=e155]
+            - row "马克思主义理论 本科 法学 四年" [ref=e156]:
+              - cell "马克思主义理论" [ref=e157]
+              - cell "本科 法学" [ref=e158]:
+                - text: 本科
+                - generic [ref=e159]: 法学
+              - cell "四年" [ref=e160]
+            - row "华文教育 本科 教育学 四年" [ref=e161]:
+              - cell "华文教育" [ref=e162]
+              - cell "本科 教育学" [ref=e163]:
+                - text: 本科
+                - generic [ref=e164]: 教育学
+              - cell "四年" [ref=e165]
+            - row "运动训练 本科 教育学 四年" [ref=e166]:
+              - cell "运动训练" [ref=e167]
+              - cell "本科 教育学" [ref=e168]:
+                - text: 本科
+                - generic [ref=e169]: 教育学
+              - cell "四年" [ref=e170]
+            - row "汉语国际教育 本科 文学 四年" [ref=e171]:
+              - cell "汉语国际教育" [ref=e172]
+              - cell "本科 文学" [ref=e173]:
+                - text: 本科
+                - generic [ref=e174]: 文学
+              - cell "四年" [ref=e175]
+            - row "汉语言 本科 文学 四年" [ref=e176]:
+              - cell "汉语言" [ref=e177]
+              - cell "本科 文学" [ref=e178]:
+                - text: 本科
+                - generic [ref=e179]: 文学
+              - cell "四年" [ref=e180]
+            - row "商务英语 本科 文学 四年" [ref=e181]:
+              - cell "商务英语" [ref=e182]
+              - cell "本科 文学" [ref=e183]:
+                - text: 本科
+                - generic [ref=e184]: 文学
+              - cell "四年" [ref=e185]
+            - row "法语 本科 文学 四年" [ref=e186]:
+              - cell "法语" [ref=e187]
+              - cell "本科 文学" [ref=e188]:
+                - text: 本科
+                - generic [ref=e189]: 文学
+              - cell "四年" [ref=e190]
+            - row "日语 本科 文学 四年" [ref=e191]:
+              - cell "日语" [ref=e192]
+              - cell "本科 文学" [ref=e193]:
+                - text: 本科
+                - generic [ref=e194]: 文学
+              - cell "四年" [ref=e195]
+            - row "英语 本科 文学 四年" [ref=e196]:
+              - cell "英语" [ref=e197]
+              - cell "本科 文学" [ref=e198]:
+                - text: 本科
+                - generic [ref=e199]: 文学
+              - cell "四年" [ref=e200]
+            - row "日语 （翻译方向） 本科 文学 四年" [ref=e201]:
+              - cell "日语 （翻译方向）" [ref=e202]:
+                - text: 日语
+                - text: （翻译方向）
+              - cell "本科 文学" [ref=e203]:
+                - text: 本科
+                - generic [ref=e204]: 文学
+              - cell "四年" [ref=e205]
+            - row "西班牙语 本科 文学 四年" [ref=e206]:
+              - cell "西班牙语" [ref=e207]
+              - cell "本科 文学" [ref=e208]:
+                - text: 本科
+                - generic [ref=e209]: 文学
+              - cell "四年" [ref=e210]
+            - row "广告学 本科 文学 四年" [ref=e211]:
+              - cell "广告学" [ref=e212]
+              - cell "本科 文学" [ref=e213]:
+                - text: 本科
+                - generic [ref=e214]: 文学
+              - cell "四年" [ref=e215]
+            - row "网络与新媒体 本科 文学 四年" [ref=e216]:
+              - cell "网络与新媒体" [ref=e217]
+              - cell "本科 文学" [ref=e218]:
+                - text: 本科
+                - generic [ref=e219]: 文学
+              - cell "四年" [ref=e220]
+            - row "国际新闻与传播 本科 文学 四年" [ref=e221]:
+              - cell "国际新闻与传播" [ref=e222]
+              - cell "本科 文学" [ref=e223]:
+                - text: 本科
+                - generic [ref=e224]: 文学
+              - cell "四年" [ref=e225]
+            - row "历史学 本科 历史学 四年" [ref=e226]:
+              - cell "历史学" [ref=e227]
+              - cell "本科 历史学" [ref=e228]:
+                - text: 本科
+                - generic [ref=e229]: 历史学
+              - cell "四年" [ref=e230]
+            - row "数学与应用数学 本科 理学 四年" [ref=e231]:
+              - cell "数学与应用数学" [ref=e232]
+              - cell "本科 理学" [ref=e233]:
+                - text: 本科
+                - generic [ref=e234]: 理学
+              - cell "四年" [ref=e235]
+            - row "信息与计算科学 本科 理学 四年" [ref=e236]:
+              - cell "信息与计算科学" [ref=e237]
+              - cell "本科 理学" [ref=e238]:
+                - text: 本科
+                - generic [ref=e239]: 理学
+              - cell "四年" [ref=e240]
+            - row "应用物理学 本科 理学 四年" [ref=e241]:
+              - cell "应用物理学" [ref=e242]
+              - cell "本科 理学" [ref=e243]:
+                - text: 本科
+                - generic [ref=e244]: 理学
+              - cell "四年" [ref=e245]
+            - row "应用化学 本科 理学 四年" [ref=e246]:
+              - cell "应用化学" [ref=e247]
+              - cell "本科 理学" [ref=e248]:
+                - text: 本科
+                - generic [ref=e249]: 理学
+              - cell "四年" [ref=e250]
+            - row "化学 本科 理学 四年" [ref=e251]:
+              - cell "化学" [ref=e252]
+              - cell "本科 理学" [ref=e253]:
+                - text: 本科
+                - generic [ref=e254]: 理学
+              - cell "四年" [ref=e255]
+            - row "生态学 本科 理学 四年" [ref=e256]:
+              - cell "生态学" [ref=e257]
+              - cell "本科 理学" [ref=e258]:
+                - text: 本科
+                - generic [ref=e259]: 理学
+              - cell "四年" [ref=e260]
+            - row "生物科学 本科 理学 四年" [ref=e261]:
+              - cell "生物科学" [ref=e262]
+              - cell "本科 理学" [ref=e263]:
+                - text: 本科
+                - generic [ref=e264]: 理学
+              - cell "四年" [ref=e265]
+            - row "材料科学与工程 本科 工学 四年" [ref=e266]:
+              - cell "材料科学与工程" [ref=e267]
+              - cell "本科 工学" [ref=e268]:
+                - text: 本科
+                - generic [ref=e269]: 工学
+              - cell "四年" [ref=e270]
+            - row "电气工程及其自动化 本科 工学 四年" [ref=e271]:
+              - cell "电气工程及其自动化" [ref=e272]
+              - cell "本科 工学" [ref=e273]:
+                - text: 本科
+                - generic [ref=e274]: 工学
+              - cell "四年" [ref=e275]
+            - row "光电信息科学与工程 本科 工学 四年" [ref=e276]:
+              - cell "光电信息科学与工程" [ref=e277]
+              - cell "本科 工学" [ref=e278]:
+                - text: 本科
+                - generic [ref=e279]: 工学
+              - cell "四年" [ref=e280]
+            - row "电子科学与技术 本科 工学 四年" [ref=e281]:
+              - cell "电子科学与技术" [ref=e282]
+              - cell "本科 工学" [ref=e283]:
+                - text: 本科
+                - generic [ref=e284]: 工学
+              - cell "四年" [ref=e285]
+            - row "人工智能 本科 工学 四年" [ref=e286]:
+              - cell "人工智能" [ref=e287]
+              - cell "本科 工学" [ref=e288]:
+                - text: 本科
+                - generic [ref=e289]: 工学
+              - cell "四年" [ref=e290]
+            - row "自动化 本科 工学 四年" [ref=e291]:
+              - cell "自动化" [ref=e292]
+              - cell "本科 工学" [ref=e293]:
+                - text: 本科
+                - generic [ref=e294]: 工学
+              - cell "四年" [ref=e295]
+            - row "网络空间安全 本科 工学 四年" [ref=e296]:
+              - cell "网络空间安全" [ref=e297]
+              - cell "本科 工学" [ref=e298]:
+                - text: 本科
+                - generic [ref=e299]: 工学
+              - cell "四年" [ref=e300]
+            - row "计算机科学与技术 本科 工学 四年" [ref=e301]:
+              - cell "计算机科学与技术" [ref=e302]
+              - cell "本科 工学" [ref=e303]:
+                - text: 本科
+                - generic [ref=e304]: 工学
+              - cell "四年" [ref=e305]
+            - row "软件工程 本科 工学 四年" [ref=e306]:
+              - cell "软件工程" [ref=e307]
+              - cell "本科 工学" [ref=e308]:
+                - text: 本科
+                - generic [ref=e309]: 工学
+              - cell "四年" [ref=e310]
+            - row "物联网工程 本科 工学 四年" [ref=e311]:
+              - cell "物联网工程" [ref=e312]
+              - cell "本科 工学" [ref=e313]:
+                - text: 本科
+                - generic [ref=e314]: 工学
+              - cell "四年" [ref=e315]
+            - row "信息安全 本科 工学 四年" [ref=e316]:
+              - cell "信息安全" [ref=e317]
+              - cell "本科 工学" [ref=e318]:
+                - text: 本科
+                - generic [ref=e319]: 工学
+              - cell "四年" [ref=e320]
+            - row "土木工程 本科 工学 五年" [ref=e321]:
+              - cell "土木工程" [ref=e322]
+              - cell "本科 工学" [ref=e323]:
+                - text: 本科
+                - generic [ref=e324]: 工学
+              - cell "五年" [ref=e325]
+            - row "包装工程 本科 工学 四年" [ref=e326]:
+              - cell "包装工程" [ref=e327]
+              - cell "本科 工学" [ref=e328]:
+                - text: 本科
+                - generic [ref=e329]: 工学
+              - cell "四年" [ref=e330]
+            - row "环境科学与工程 本科 工学 四年" [ref=e331]:
+              - cell "环境科学与工程" [ref=e332]
+              - cell "本科 工学" [ref=e333]:
+                - text: 本科
+                - generic [ref=e334]: 工学
+              - cell "四年" [ref=e335]
+            - row "生物医学工程 本科 工学 四年" [ref=e336]:
+              - cell "生物医学工程" [ref=e337]
+              - cell "本科 工学" [ref=e338]:
+                - text: 本科
+                - generic [ref=e339]: 工学
+              - cell "四年" [ref=e340]
+            - row "食品科学与工程 本科 工学 四年" [ref=e341]:
+              - cell "食品科学与工程" [ref=e342]
+              - cell "本科 工学" [ref=e343]:
+                - text: 本科
+                - generic [ref=e344]: 工学
+              - cell "四年" [ref=e345]
+            - row "食品营养与健康 本科 工学 四年" [ref=e346]:
+              - cell "食品营养与健康" [ref=e347]
+              - cell "本科 工学" [ref=e348]:
+                - text: 本科
+                - generic [ref=e349]: 工学
+              - cell "四年" [ref=e350]
+            - row "建筑学 本科 工学 五年" [ref=e351]:
+              - cell "建筑学" [ref=e352]
+              - cell "本科 工学" [ref=e353]:
+                - text: 本科
+                - generic [ref=e354]: 工学
+              - cell "五年" [ref=e355]
+            - row "风景园林 本科 工学 四年" [ref=e356]:
+              - cell "风景园林" [ref=e357]
+              - cell "本科 工学" [ref=e358]:
+                - text: 本科
+                - generic [ref=e359]: 工学
+              - cell "四年" [ref=e360]
+            - row "生物制药 本科 工学 四年" [ref=e361]:
+              - cell "生物制药" [ref=e362]
+              - cell "本科 工学" [ref=e363]:
+                - text: 本科
+                - generic [ref=e364]: 工学
+              - cell "四年" [ref=e365]
+            - row "口腔医学 本科 医学 五年" [ref=e366]:
+              - cell "口腔医学" [ref=e367]
+              - cell "本科 医学" [ref=e368]:
+                - text: 本科
+                - generic [ref=e369]: 医学
+              - cell "五年" [ref=e370]
+            - row "预防医学 本科 医学 五年" [ref=e371]:
+              - cell "预防医学" [ref=e372]
+              - cell "本科 医学" [ref=e373]:
+                - text: 本科
+                - generic [ref=e374]: 医学
+              - cell "五年" [ref=e375]
+            - row "中医学 本科 医学 五年" [ref=e376]:
+              - cell "中医学" [ref=e377]
+              - cell "本科 医学" [ref=e378]:
+                - text: 本科
+                - generic [ref=e379]: 医学
+              - cell "五年" [ref=e380]
+            - row "药学 本科 医学 四年" [ref=e381]:
+              - cell "药学" [ref=e382]
+              - cell "本科 医学" [ref=e383]:
+                - text: 本科
+                - generic [ref=e384]: 医学
+              - cell "四年" [ref=e385]
+            - row "中药学 本科 医学 四年" [ref=e386]:
+              - cell "中药学" [ref=e387]
+              - cell "本科 医学" [ref=e388]:
+                - text: 本科
+                - generic [ref=e389]: 医学
+              - cell "四年" [ref=e390]
+            - row "护理学 本科 医学 四年" [ref=e391]:
+              - cell "护理学" [ref=e392]
+              - cell "本科 医学" [ref=e393]:
+                - text: 本科
+                - generic [ref=e394]: 医学
+              - cell "四年" [ref=e395]
+            - row "信息管理与信息系统 本科 管理学 四年" [ref=e396]:
+              - cell "信息管理与信息系统" [ref=e397]
+              - cell "本科 管理学" [ref=e398]:
+                - text: 本科
+                - generic [ref=e399]: 管理学
+              - cell "四年" [ref=e400]
+            - row "应急管理 本科 管理学 四年" [ref=e401]:
+              - cell "应急管理" [ref=e402]
+              - cell "本科 管理学" [ref=e403]:
+                - text: 本科
+                - generic [ref=e404]: 管理学
+              - cell "四年" [ref=e405]
+            - row "财务管理 本科 管理学 四年" [ref=e406]:
+              - cell "财务管理" [ref=e407]
+              - cell "本科 管理学" [ref=e408]:
+                - text: 本科
+                - generic [ref=e409]: 管理学
+              - cell "四年" [ref=e410]
+            - row "工商管理 本科 管理学 四年" [ref=e411]:
+              - cell "工商管理" [ref=e412]
+              - cell "本科 管理学" [ref=e413]:
+                - text: 本科
+                - generic [ref=e414]: 管理学
+              - cell "四年" [ref=e415]
+            - row "会计学 本科 管理学 四年" [ref=e416]:
+              - cell "会计学" [ref=e417]
+              - cell "本科 管理学" [ref=e418]:
+                - text: 本科
+                - generic [ref=e419]: 管理学
+              - cell "四年" [ref=e420]
+            - row "市场营销 本科 管理学 四年" [ref=e421]:
+              - cell "市场营销" [ref=e422]
+              - cell "本科 管理学" [ref=e423]:
+                - text: 本科
+                - generic [ref=e424]: 管理学
+              - cell "四年" [ref=e425]
+            - row "文化产业管理 本科 管理学 四年" [ref=e426]:
+              - cell "文化产业管理" [ref=e427]
+              - cell "本科 管理学" [ref=e428]:
+                - text: 本科
+                - generic [ref=e429]: 管理学
+              - cell "四年" [ref=e430]
+            - row "国际商务 本科 管理学 四年" [ref=e431]:
+              - cell "国际商务" [ref=e432]
+              - cell "本科 管理学" [ref=e433]:
+                - text: 本科
+                - generic [ref=e434]: 管理学
+              - cell "四年" [ref=e435]
+            - row "行政管理 本科 管理学 四年" [ref=e436]:
+              - cell "行政管理" [ref=e437]
+              - cell "本科 管理学" [ref=e438]:
+                - text: 本科
+                - generic [ref=e439]: 管理学
+              - cell "四年" [ref=e440]
+            - row "工业工程 本科 管理学 四年" [ref=e441]:
+              - cell "工业工程" [ref=e442]
+              - cell "本科 管理学" [ref=e443]:
+                - text: 本科
+                - generic [ref=e444]: 管理学
+              - cell "四年" [ref=e445]
+            - row "电子商务 本科 管理学 四年" [ref=e446]:
+              - cell "电子商务" [ref=e447]
+              - cell "本科 管理学" [ref=e448]:
+                - text: 本科
+                - generic [ref=e449]: 管理学
+              - cell "四年" [ref=e450]
+            - row "旅游管理 本科 管理学 四年" [ref=e451]:
+              - cell "旅游管理" [ref=e452]
+              - cell "本科 管理学" [ref=e453]:
+                - text: 本科
+                - generic [ref=e454]: 管理学
+              - cell "四年" [ref=e455]
+            - row "酒店管理 本科 管理学 四年" [ref=e456]:
+              - cell "酒店管理" [ref=e457]
+              - cell "本科 管理学" [ref=e458]:
+                - text: 本科
+                - generic [ref=e459]: 管理学
+              - cell "四年" [ref=e460]
+            - row "戏剧影视文学 本科 艺术学 四年" [ref=e461]:
+              - cell "戏剧影视文学" [ref=e462]
+              - cell "本科 艺术学" [ref=e463]:
+                - text: 本科
+                - generic [ref=e464]: 艺术学
+              - cell "四年" [ref=e465]
+            - row "动画 本科 艺术学 四年" [ref=e466]:
+              - cell "动画" [ref=e467]
+              - cell "本科 艺术学" [ref=e468]:
+                - text: 本科
+                - generic [ref=e469]: 艺术学
+              - cell "四年" [ref=e470]
+            - row "戏剧影视导演 本科 艺术学 四年" [ref=e471]:
+              - cell "戏剧影视导演" [ref=e472]
+              - cell "本科 艺术学" [ref=e473]:
+                - text: 本科
+                - generic [ref=e474]: 艺术学
+              - cell "四年" [ref=e475]
+            - row "播音与主持艺术 本科 艺术学 四年" [ref=e476]:
+              - cell "播音与主持艺术" [ref=e477]
+              - cell "本科 艺术学" [ref=e478]:
+                - text: 本科
+                - generic [ref=e479]: 艺术学
+              - cell "四年" [ref=e480]
+            - row "录音艺术 本科 艺术学 四年" [ref=e481]:
+              - cell "录音艺术" [ref=e482]
+              - cell "本科 艺术学" [ref=e483]:
+                - text: 本科
+                - generic [ref=e484]: 艺术学
+              - cell "四年" [ref=e485]
+            - row "书法学 本科 艺术学 四年" [ref=e486]:
+              - cell "书法学" [ref=e487]
+              - cell "本科 艺术学" [ref=e488]:
+                - text: 本科
+                - generic [ref=e489]: 艺术学
+              - cell "四年" [ref=e490]
+        - generic [ref=e493]:
+          - generic [ref=e494]:
+            - generic [ref=e495]: 输入分数，看能上的大学
+            - generic [ref=e496]: 独创：大数据推荐 + 专家精选
+          - generic [ref=e497]:
+            - generic [ref=e498]:
+              - generic [ref=e501] [cursor=pointer]: 广东
+              - generic [ref=e503]:
+                - generic [ref=e506] [cursor=pointer]: 政/史/地
+                - generic [ref=e509] [cursor=pointer]: 物/化/生
+            - generic [ref=e512]:
+              - textbox "输入你的模考成绩" [ref=e513]
+              - generic [ref=e514] [cursor=pointer]: 一键查看 >
+    - generic [ref=e515]:
+      - paragraph [ref=e516]: 版权所有
+      - paragraph [ref=e517]:
+        - text: Copyright©ICP备案号：
+        - link "沪ICP备2024047421号" [ref=e518] [cursor=pointer]:
+          - /url: https://beian.miit.gov.cn
+        - link "沪公网安备31011702889045号" [ref=e519] [cursor=pointer]:
+          - /url: https://beian.mps.gov.cn/#/query/webSearch

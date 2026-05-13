@@ -1,0 +1,538 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 2024年全国医疗保障事业发展统计公报 参保人数 基金收入
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e27] [cursor=pointer]
+                - generic [ref=e30]:
+                  - img [ref=e34] [cursor=pointer]
+                  - img [ref=e39] [cursor=pointer]
+              - button "百度一下" [ref=e43] [cursor=pointer]
+      - generic [ref=e45]:
+        - link "百度首页" [ref=e46] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e47] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e48] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e51]:
+      - link [ref=e52] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5+%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0+%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2211694243349063172338%22%2C%22ori_lid%22%3A%2211694243349063172338%22%7D
+        - img [ref=e53]
+      - generic [ref=e54]: 网页
+      - link "图片" [ref=e55] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=a24a4c5e01e280f2&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5+%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0+%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5
+      - link "资讯" [ref=e56] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5+%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0+%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5
+      - link "视频" [ref=e57] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=a24a4c5e01e280f2&ie=utf-8&wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5+%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0+%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_spt=7&rsv_bp=1&f=8&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5+%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0+%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4
+      - link "笔记" [ref=e58] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5+%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0+%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5
+      - link "地图" [ref=e59] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5+%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0+%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5
+      - link "贴吧" [ref=e60] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5+%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0+%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5
+      - link "文库" [ref=e61] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5+%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0+%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5
+      - link "更多" [ref=e62] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e63] [cursor=pointer]: 搜索工具
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "相关搜索  医保新政策2024年最新文件  中国医疗保障发展报告(2021)  2023年全国诊疗人数  2024年医疗行业  2023年全国的医疗费用是多少  2019年我国基本医疗保险覆盖人数    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e69]:
+              - cell "相关搜索  医保新政策2024年最新文件  中国医疗保障发展报告(2021)  2023年全国诊疗人数  2024年医疗行业  2023年全国的医疗费用是多少  2019年我国基本医疗保险覆盖人数    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 “早上6点半 杭州东站全是孩子” 9 高市政府越过“最后一根红线” 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 母亲躺医院长椅儿子一手垫头一手轻拍 13 女性多和好友聚会能“续命” 14 财务造假“不敢不能不想”时代来了 15 枪击发生时特朗普旁的华裔女记者是谁" [ref=e70]:
+                - generic [ref=e71]:
+                  - generic [ref=e77]:
+                    - generic [ref=e79]: 相关搜索
+                    - generic [ref=e80]:
+                      - link " 医保新政策2024年最新文件" [ref=e83] [cursor=pointer]:
+                        - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E6%96%B0%E6%94%BF%E7%AD%962024%E5%B9%B4%E6%9C%80%E6%96%B0%E6%96%87%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=8bfeX0GZmTDv18hEUJK8DmlM22rpJt3ghjjwLaRrqX0uk%2BHJ1pfs9Fj%2B65A&rfqid=a24a4c5e01e280f2&rsv_dl=0_prs_28616_1&rq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsf=101636803
+                        - generic [ref=e84]:
+                          - generic [ref=e85]: 
+                          - generic [ref=e86]: 医保新政策2024年最新文件
+                      - link " 中国医疗保障发展报告(2021)" [ref=e89] [cursor=pointer]:
+                        - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E5%8F%91%E5%B1%95%E6%8A%A5%E5%91%8A(2021)&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=8bfeX0GZmTDv18hEUJK8DmlM22rpJt3ghjjwLaRrqX0uk%2BHJ1pfs9Fj%2B65A&rfqid=a24a4c5e01e280f2&rsv_dl=0_prs_28616_2&rq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsf=101633403
+                        - generic [ref=e90]:
+                          - generic [ref=e91]: 
+                          - generic [ref=e92]: 中国医疗保障发展报告(2021)
+                      - link " 2023年全国诊疗人数" [ref=e95] [cursor=pointer]:
+                        - /url: /s?wd=2023%E5%B9%B4%E5%85%A8%E5%9B%BD%E8%AF%8A%E7%96%97%E4%BA%BA%E6%95%B0&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=8bfeX0GZmTDv18hEUJK8DmlM22rpJt3ghjjwLaRrqX0uk%2BHJ1pfs9Fj%2B65A&rfqid=a24a4c5e01e280f2&rsv_dl=0_prs_28616_3&rq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsf=101636803
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: 
+                          - generic [ref=e98]: 2023年全国诊疗人数
+                      - link " 2024年医疗行业" [ref=e101] [cursor=pointer]:
+                        - /url: /s?wd=2024%E5%B9%B4%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=8bfeX0GZmTDv18hEUJK8DmlM22rpJt3ghjjwLaRrqX0uk%2BHJ1pfs9Fj%2B65A&rfqid=a24a4c5e01e280f2&rsv_dl=0_prs_28616_4&rq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsf=101636803
+                        - generic [ref=e102]:
+                          - generic [ref=e103]: 
+                          - generic [ref=e104]: 2024年医疗行业
+                      - link " 2023年全国的医疗费用是多少" [ref=e107] [cursor=pointer]:
+                        - /url: /s?wd=2023%E5%B9%B4%E5%85%A8%E5%9B%BD%E7%9A%84%E5%8C%BB%E7%96%97%E8%B4%B9%E7%94%A8%E6%98%AF%E5%A4%9A%E5%B0%91&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rfqid=a24a4c5e01e280f2&rsv_dl=0_prs_28616_5&rq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsf=101636803
+                        - generic [ref=e108]:
+                          - generic [ref=e109]: 
+                          - generic [ref=e110]: 2023年全国的医疗费用是多少
+                      - link " 2019年我国基本医疗保险覆盖人数" [ref=e113] [cursor=pointer]:
+                        - /url: /s?wd=2019%E5%B9%B4%E6%88%91%E5%9B%BD%E5%9F%BA%E6%9C%AC%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E8%A6%86%E7%9B%96%E4%BA%BA%E6%95%B0&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rfqid=a24a4c5e01e280f2&rsv_dl=0_prs_28616_6&rq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsf=100633403
+                        - generic [ref=e114]:
+                          - generic [ref=e115]: 
+                          - generic [ref=e116]: 2019年我国基本医疗保险覆盖人数
+                  - generic [ref=e120]:
+                    - generic "百度热搜" [ref=e121]:
+                      - link " " [ref=e122] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e123]: 
+                        - generic [ref=e124]: 
+                      - link " 换一换" [ref=e126] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e127]: 
+                        - text: 换一换
+                    - generic [ref=e128]:
+                      - generic [ref=e129] [cursor=pointer]: 热搜榜
+                      - generic [ref=e130] [cursor=pointer]: 民生榜
+                      - generic [ref=e131] [cursor=pointer]: 财经榜
+                    - generic [ref=e133]:
+                      - generic [ref=e135]:
+                        - generic [ref=e137]: 
+                        - link "“一分部署 九分落实”" [ref=e138] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e140]:
+                        - generic [ref=e141]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e142] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e143]: 热
+                      - generic [ref=e145]:
+                        - generic [ref=e146]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e147] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e148]: 新
+                      - generic [ref=e150]:
+                        - generic [ref=e151]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e152] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e154]:
+                        - generic [ref=e155]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e156] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e157]: 热
+                      - generic [ref=e159]:
+                        - generic [ref=e160]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e161] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e162]: 新
+                      - generic [ref=e164]:
+                        - generic [ref=e165]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e166] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e167]: 热
+                      - generic [ref=e169]:
+                        - generic [ref=e170]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e171] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: "8"
+                        - link "“早上6点半 杭州东站全是孩子”" [ref=e175] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E6%97%A9%E4%B8%8A6%E7%82%B9%E5%8D%8A%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%E5%85%A8%E6%98%AF%E5%AD%A9%E5%AD%90%E2%80%9D&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e177]:
+                        - generic [ref=e178]: "9"
+                        - link "高市政府越过“最后一根红线”" [ref=e179] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e181]:
+                        - generic [ref=e182]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e183] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e187] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e189]:
+                        - generic [ref=e190]: "12"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e191] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e193]:
+                        - generic [ref=e194]: "13"
+                        - link "女性多和好友聚会能“续命”" [ref=e195] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "14"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e199] [cursor=pointer]:
+                          - /url: /s?wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e201]:
+                        - generic [ref=e202]: "15"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e203] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=84b2VIvaxnL9sV1tF3BDeTAphK6WLpDj4K4WQHastGhAwieUXkXRnd94nBw&rqid=a24a4c5e01e280f2&rsf=7e1c123655c4be9abdd86725590e4a15_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e204]:
+          - generic [ref=e209]:
+            - generic [ref=e211]:
+              - img [ref=e214]
+              - generic:
+                - generic: 
+            - generic [ref=e219]:
+              - generic [ref=e220]: 问题分析中
+              - img [ref=e222]
+          - generic [ref=e246]:
+            - generic [ref=e248]:
+              - link "官方" [ref=e250] [cursor=pointer]:
+                - /url: https://aiqicha.baidu.com/feedback/official?from=baidu&type=gw
+                - generic [ref=e251]: 官方
+              - heading "国家医疗保障局 统计数据 2024年全国医疗保障事业发展统计公报" [level=3] [ref=e252]:
+                - link "国家医疗保障局 统计数据 2024年全国医疗保障事业发展统计公报" [ref=e253] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9Kpxvbw1-0yClZ6nmBCW8uosoPmFcHCwZF4wjorVm6UPBfQ3i7plEshavRynb_RltK
+                  - paragraph [ref=e256]:
+                    - generic [ref=e259]:
+                      - emphasis [ref=e260]: 国家医疗保障
+                      - text: 局 统计数据
+                      - emphasis [ref=e261]: 2024年全国医疗保障事业发展统计公报
+            - generic [ref=e262]:
+              - link [ref=e264] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9Kpxvbw1-0yClZ6nmBCW8uosoPmFcHCwZF4wjorVm6UPBfQ3i7plEshavRynb_RltK
+              - generic [ref=e269]:
+                - generic [ref=e274]:
+                  - text: 2025年7月14日
+                  - generic [ref=e275]:
+                    - text: 截至
+                    - emphasis [ref=e276]: "2024"
+                    - text: 年底,
+                    - emphasis [ref=e277]: 全国
+                    - text: 基本
+                    - emphasis [ref=e278]: 医疗
+                    - text: 保险(以下简称基本医保)
+                    - emphasis [ref=e279]: 参保
+                    - text: 132662.08万人,
+                    - emphasis [ref=e280]: 参保
+                    - text: 率巩固在95%。
+                    - emphasis [ref=e281]: 2024年全国
+                    - text: 基本
+                    - emphasis [ref=e282]: 医疗
+                    - text: 保险(含生育保险)
+                    - emphasis [ref=e283]: 基金总收入
+                    - text: 34913.37亿元,基金总支出29764.03亿元。统筹基金当期结存4639.17亿元,累计结存38628.52亿元。 (一)职工基本
+                    - emphasis [ref=e284]: 医疗
+                    - text: 保险 1.
+                    - emphasis [ref=e285]: 参保人数
+                    - text: 。截至2024年底,职工医保参保379
+                - link "头像 国家医疗保障局" [ref=e290] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9Kpxvbw1-0yClZ6nmBCW8uosoPmFcHCwZF4wjorVm6UPBfQ3i7plEshavRynb_RltK
+                  - img "头像" [ref=e293]
+                  - generic [ref=e294]: 国家医疗保障局
+                  - generic [ref=e296]: 
+          - generic [ref=e298]:
+            - heading "2024年全国医疗保障事业发展统计公报(2025年发布的统计... - 百度百科" [level=3] [ref=e299]:
+              - link "2024年全国医疗保障事业发展统计公报(2025年发布的统计... - 百度百科" [ref=e300] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=YZURdp77FOXeGf0_0Q6nSJeQ9FoW8_HtZCinfF6kKJqHBBUF0vL4dhoQQAymVCTDt1VY9rDslBViOMLKpCpyRh-tcupx9_ArC9cpbHeKa9nX19qCtj5jC52Qmpjxr2z3dshifIhsYQHOHITEiSBuQKkBvWrkjEohWvNIT3uOm71ecjggPEs6XKZneuq-Iaa-VjfHN2qw04lKsLi8BRTo2T2tbrIU4gqAkhExqyqeB7pTMUVTTlERyrksWeLg0zWy
+                - paragraph [ref=e303]:
+                  - generic [ref=e305]:
+                    - emphasis [ref=e306]: 2024年全国医疗保障事业发展统计公报
+                    - text: (2025年发布的统计... - 百度百科
+            - generic [ref=e310]:
+              - generic [ref=e316] [cursor=pointer]: 
+              - generic [ref=e318]:
+                - paragraph [ref=e322]:
+                  - generic [ref=e324]:
+                    - text: 基金运行方面，
+                    - emphasis [ref=e325]: 2024年长期护理保险基金收入244.15亿元
+                    - text: ，基金支出131.08亿元，结存率为46.3%。服务供给方面，长期护理保险定点服务机构8837家，较上年增长9.4%；护理服务人员29.28万人，较上年减少3.3%。公报全文 2024年全国医疗保障事业发展统计公报 2024年，国家医保局坚持以...
+                  - generic [ref=e327]:
+                    - link "详情" [ref=e328] [cursor=pointer]:
+                      - /url: http://www.baidu.com/link?url=YZURdp77FOXeGf0_0Q6nSJeQ9FoW8_HtZCinfF6kKJqHBBUF0vL4dhoQQAymVCTDt1VY9rDslBViOMLKpCpyRh-tcupx9_ArC9cpbHeKa9nX19qCtj5jC52Qmpjxr2z3dshifIhsYQHOHITEiSBuQKkBvWrkjEohWvNIT3uOm71ecjggPEs6XKZneuq-Iaa-VjfHN2qw04lKsLi8BRTo2T2tbrIU4gqAkhExqyqeB7pTMUVTTlERyrksWeLg0zWy
+                    - link "" [ref=e329] [cursor=pointer]:
+                      - /url: http://www.baidu.com/link?url=YZURdp77FOXeGf0_0Q6nSJeQ9FoW8_HtZCinfF6kKJqHBBUF0vL4dhoQQAymVCTDt1VY9rDslBViOMLKpCpyRh-tcupx9_ArC9cpbHeKa9nX19qCtj5jC52Qmpjxr2z3dshifIhsYQHOHITEiSBuQKkBvWrkjEohWvNIT3uOm71ecjggPEs6XKZneuq-Iaa-VjfHN2qw04lKsLi8BRTo2T2tbrIU4gqAkhExqyqeB7pTMUVTTlERyrksWeLg0zWy
+                      - generic [ref=e330]: 
+                - generic [ref=e333]:
+                  - link "发布背景" [ref=e335] [cursor=pointer]:
+                    - /url: http://www.baidu.com/link?url=oqbRhstdOCwKqAEKXCLQFuCyMC5Na_aKVOlTiQXfQ2RK0YnBfdF-UquGqhVmqK81PzfZyBiYwSWf4AWay4eMPMqcLo0zbViTgVlyMZkBVVV4eb0g9bhX1MbKVP01bXB_z-lWYuRwESriO1gXR2rpCVdli9LtJwaAPlTH_27UZzdWk7zuihT7Fv6m8kundutOw6XcXjTba67n8PW5dLkyHPLRBefRX1p6Npco7R7sVfDr0p4-nojEOJtBAB0QBazWTyMYmBvRzECyeAR4PoiHkq
+                    - generic [ref=e336]: 发布背景
+                  - link "核心数据概览" [ref=e338] [cursor=pointer]:
+                    - /url: http://www.baidu.com/link?url=oqbRhstdOCwKqAEKXCLQFuCyMC5Na_aKVOlTiQXfQ2RK0YnBfdF-UquGqhVmqK81PzfZyBiYwSWf4AWay4eMPMqcLo0zbViTgVlyMZkBVVV4eb0g9bhX1MbKVP01bXB_z-lWYuRwESriO1gXR2rpCVdli9LtJwaAPlTH_27UZzdWk7zuihT7Fv6m8kundutOw6XcXjTba67n8PW5dLkyHPLRBefRX1p6Npco7R7sVfDr0p4-nojEOJtBAB0QBazWxLNxQjKDzTetc2KyRenUwa
+                    - generic [ref=e339]: 核心数据概览
+                  - link "基本医疗保险运行情况" [ref=e341] [cursor=pointer]:
+                    - /url: http://www.baidu.com/link?url=oqbRhstdOCwKqAEKXCLQFuCyMC5Na_aKVOlTiQXfQ2RK0YnBfdF-UquGqhVmqK81PzfZyBiYwSWf4AWay4eMPMqcLo0zbViTgVlyMZkBVVV4eb0g9bhX1MbKVP01bXB_z-lWYuRwESriO1gXR2rpCVdli9LtJwaAPlTH_27UZzdWk7zuihT7Fv6m8kundutOw6XcXjTba67n8PW5dLkyHPLRBefRX1p6Npco7R7sVfDr0p4-nojEOJtBAB0QBazW9wcsjVhkmV7HGIYF7y-smq
+                    - generic [ref=e342]: 基本医疗保险运行情况
+                  - link "生育保险制度保障情况" [ref=e344] [cursor=pointer]:
+                    - /url: http://www.baidu.com/link?url=oqbRhstdOCwKqAEKXCLQFuCyMC5Na_aKVOlTiQXfQ2RK0YnBfdF-UquGqhVmqK81PzfZyBiYwSWf4AWay4eMPMqcLo0zbViTgVlyMZkBVVV4eb0g9bhX1MbKVP01bXB_z-lWYuRwESriO1gXR2rpCVdli9LtJwaAPlTH_27UZzdWk7zuihT7Fv6m8kundutOw6XcXjTba67n8PW5dLkyHPLRBefRX1p6Npco7R7sVfDr0p4-nojEOJtBAB0QBazWYkbk2DQ2rmYwsYOIrXvGqq
+                    - generic [ref=e345]: 生育保险制度保障情况
+            - generic [ref=e346]:
+              - link "百度百科" [ref=e349] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=YZURdp77FOXeGf0_0Q6nSJeQ9FoW8_HtZCinfF6kKJqHBBUF0vL4dhoQQAymVCTDt1VY9rDslBViOMLKpCpyRh-tcupx9_ArC9cpbHeKa9nX19qCtj5jC52Qmpjxr2z3dshifIhsYQHOHITEiSBuQKkBvWrkjEohWvNIT3uOm71ecjggPEs6XKZneuq-Iaa-VjfHN2qw04lKsLi8BRTo2T2tbrIU4gqAkhExqyqeB7pTMUVTTlERyrksWeLg0zWy
+                - generic [ref=e350]: 百度百科
+              - generic [ref=e352] [cursor=pointer]: 
+          - generic [ref=e356]:
+            - heading "刚刚!国家医保局发布2024年全国医疗保障事业发展统计公报" [level=3] [ref=e359]:
+              - link "刚刚!国家医保局发布2024年全国医疗保障事业发展统计公报" [ref=e360] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9XEPNworq9i5GUcueeTpJZMzBxFKHQ4sEfEuCgNrElKa7tLP7Nqw301Qu9UAmBokIvat2V6Kb7Hkif7nYimZakJl58fvJW75vViRFxjux5D0JDM9v-E_RnaeLDXLCopO-68OGkYYUSRtKTf5Elhv6wY096KxPCMciy8ZSR88hPX-2RNaKMCaLECjgzVRR4ooVZpUZZv5ONOprPsgTQkRMBiI8fbyHaqQkmIEe6_BZz5pZ85EbK0VxOOsE6j4R8XVoa
+                - paragraph [ref=e363]:
+                  - generic [ref=e366]:
+                    - text: 刚刚!
+                    - emphasis [ref=e367]: 国家医保
+                    - text: 局发布
+                    - emphasis [ref=e368]: 2024年全国医疗保障事业发展统计公报
+            - generic [ref=e373]:
+              - text: 2025年7月14日
+              - generic [ref=e374]:
+                - text: 截至2024年底,全国基本医疗保险(以下简称基本医保)参保132662.08万人,参保率巩固在95%。
+                - emphasis [ref=e375]: 2024年全国基本医疗保险(含生育保险)基金总收入34913.37亿元
+                - text: ",基金总支出29764.03亿元。统筹基金当期结存4639.17亿元,累计结存38628.52亿元。 (一)职工基本医疗保险 1.参..."
+            - generic [ref=e376]:
+              - link [ref=e378] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9XEPNworq9i5GUcueeTpJZMzBxFKHQ4sEfEuCgNrElKa7tLP7Nqw301Qu9UAmBokIvat2V6Kb7Hkif7nYimZakJl58fvJW75vViRFxjux5D0JDM9v-E_RnaeLDXLCopO-68OGkYYUSRtKTf5Elhv6wY096KxPCMciy8ZSR88hPX-2RNaKMCaLECjgzVRR4ooVZpUZZv5ONOprPsgTQkRMBiI8fbyHaqQkmIEe6_BZz5pZ85EbK0VxOOsE6j4R8XVoa
+              - link [ref=e382] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9XEPNworq9i5GUcueeTpJZMzBxFKHQ4sEfEuCgNrElKa7tLP7Nqw301Qu9UAmBokIvat2V6Kb7Hkif7nYimZakJl58fvJW75vViRFxjux5D0JDM9v-E_RnaeLDXLCopO-68OGkYYUSRtKTf5Elhv6wY096KxPCMciy8ZSR88hPX-2RNaKMCaLECjgzVRR4ooVZpUZZv5ONOprPsgTQkRMBiI8fbyHaqQkmIEe6_BZz5pZ85EbK0VxOOsE6j4R8XVoa
+              - link [ref=e386] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9XEPNworq9i5GUcueeTpJZMzBxFKHQ4sEfEuCgNrElKa7tLP7Nqw301Qu9UAmBokIvat2V6Kb7Hkif7nYimZakJl58fvJW75vViRFxjux5D0JDM9v-E_RnaeLDXLCopO-68OGkYYUSRtKTf5Elhv6wY096KxPCMciy8ZSR88hPX-2RNaKMCaLECjgzVRR4ooVZpUZZv5ONOprPsgTQkRMBiI8fbyHaqQkmIEe6_BZz5pZ85EbK0VxOOsE6j4R8XVoa
+              - link "15" [ref=e390] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9XEPNworq9i5GUcueeTpJZMzBxFKHQ4sEfEuCgNrElKa7tLP7Nqw301Qu9UAmBokIvat2V6Kb7Hkif7nYimZakJl58fvJW75vViRFxjux5D0JDM9v-E_RnaeLDXLCopO-68OGkYYUSRtKTf5Elhv6wY096KxPCMciy8ZSR88hPX-2RNaKMCaLECjgzVRR4ooVZpUZZv5ONOprPsgTQkRMBiI8fbyHaqQkmIEe6_BZz5pZ85EbK0VxOOsE6j4R8XVoa
+                - generic [ref=e393]:
+                  - generic [ref=e394]: 
+                  - text: "15"
+            - link "微信公众平台" [ref=e399] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9XEPNworq9i5GUcueeTpJZMzBxFKHQ4sEfEuCgNrElKa7tLP7Nqw301Qu9UAmBokIvat2V6Kb7Hkif7nYimZakJl58fvJW75vViRFxjux5D0JDM9v-E_RnaeLDXLCopO-68OGkYYUSRtKTf5Elhv6wY096KxPCMciy8ZSR88hPX-2RNaKMCaLECjgzVRR4ooVZpUZZv5ONOprPsgTQkRMBiI8fbyHaqQkmIEe6_BZz5pZ85EbK0VxOOsE6j4R8XVoa
+              - generic [ref=e400]: 微信公众平台
+              - generic [ref=e402]: 
+          - generic [ref=e406]:
+            - heading "国家医保局发布2024年度统计公报 基本医保参保率稳定在95%以上..." [level=3] [ref=e409]:
+              - link "国家医保局发布2024年度统计公报 基本医保参保率稳定在95%以上..." [ref=e410] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=hScZ7iJIrkhWKXxgdZ1LozXU_r7pMmkzom6y_nTpub09fCWwZfhDl2qpp3XyRy4_fJOgwqSojMRYd5f8h8KeIj5iinyzDF0ZVJD0hwfJmny
+                - paragraph [ref=e413]:
+                  - generic [ref=e416]:
+                    - emphasis [ref=e417]: 国家医保
+                    - text: 局发布
+                    - emphasis [ref=e418]: "2024"
+                    - text: 年度
+                    - emphasis [ref=e419]: 统计公报
+                    - text: 基本
+                    - emphasis [ref=e420]: 医保参保
+                    - text: 率稳定在95%以上...
+            - generic [ref=e425]:
+              - text: 2025年7月15日
+              - generic [ref=e426]:
+                - text: 公报显示,截至去年底,全国基本医疗保险参保约13.27亿人,参保率稳定在95%以上。
+                - emphasis [ref=e427]: 去年全国基本医疗保险基金总收入34913.37亿元
+                - text: ",基金总支出29764.03亿元。 截至去年底,职工医保参保37948.34万人,城乡居民基本医疗保险参保94713.73万人。 待遇享受方面,去年职工参保人员待遇享受人次为53.08亿人次,同比增长9.9%;职工医保参保人员次均..."
+            - generic [ref=e429]:
+              - link "头像 中国政府网" [ref=e432] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=hScZ7iJIrkhWKXxgdZ1LozXU_r7pMmkzom6y_nTpub09fCWwZfhDl2qpp3XyRy4_fJOgwqSojMRYd5f8h8KeIj5iinyzDF0ZVJD0hwfJmny
+                - img "头像" [ref=e435]
+                - generic [ref=e436]: 中国政府网
+                - generic [ref=e438]: 
+              - generic [ref=e440]: 党政机关
+          - generic [ref=e442]:
+            - generic [ref=e443]: 大家还在搜
+            - generic [ref=e444]:
+              - link "医保新政策2024年最新文件" [ref=e445] [cursor=pointer]:
+                - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E6%96%B0%E6%94%BF%E7%AD%962024%E5%B9%B4%E6%9C%80%E6%96%B0%E6%96%87%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=3a88DKYCJJVqvHd2TmHzhfYX3LzyRPFP1cyzDL0Mm%2FS2WP1M1UisbAvNpoM&rsf=101636803&rsv_dl=0_prs_28608_1
+                - generic [ref=e447]: 医保新政策2024年最新文件
+              - link "中国医疗保障发展报告(2021)" [ref=e448] [cursor=pointer]:
+                - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E5%8F%91%E5%B1%95%E6%8A%A5%E5%91%8A(2021)&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=3a88DKYCJJVqvHd2TmHzhfYX3LzyRPFP1cyzDL0Mm%2FS2WP1M1UisbAvNpoM&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e450]: 中国医疗保障发展报告(2021)
+              - link "2023年全国诊疗人数" [ref=e451] [cursor=pointer]:
+                - /url: /s?wd=2023%E5%B9%B4%E5%85%A8%E5%9B%BD%E8%AF%8A%E7%96%97%E4%BA%BA%E6%95%B0&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=3a88DKYCJJVqvHd2TmHzhfYX3LzyRPFP1cyzDL0Mm%2FS2WP1M1UisbAvNpoM&rsf=101636803&rsv_dl=0_prs_28608_3
+                - generic [ref=e453]: 2023年全国诊疗人数
+              - link "2024年医疗行业" [ref=e454] [cursor=pointer]:
+                - /url: /s?wd=2024%E5%B9%B4%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=3a88DKYCJJVqvHd2TmHzhfYX3LzyRPFP1cyzDL0Mm%2FS2WP1M1UisbAvNpoM&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e456]: 2024年医疗行业
+              - link "2023年全国的医疗费用是多少" [ref=e457] [cursor=pointer]:
+                - /url: /s?wd=2023%E5%B9%B4%E5%85%A8%E5%9B%BD%E7%9A%84%E5%8C%BB%E7%96%97%E8%B4%B9%E7%94%A8%E6%98%AF%E5%A4%9A%E5%B0%91&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=3a88DKYCJJVqvHd2TmHzhfYX3LzyRPFP1cyzDL0Mm%2FS2WP1M1UisbAvNpoM&rsf=101636803&rsv_dl=0_prs_28608_5
+                - generic [ref=e459]: 2023年全国的医疗费用是多少
+              - link "2019年我国基本医疗保险覆盖人数" [ref=e460] [cursor=pointer]:
+                - /url: /s?wd=2019%E5%B9%B4%E6%88%91%E5%9B%BD%E5%9F%BA%E6%9C%AC%E5%8C%BB%E7%96%97%E4%BF%9D%E9%99%A9%E8%A6%86%E7%9B%96%E4%BA%BA%E6%95%B0&usm=2&ie=utf-8&rsv_pq=a24a4c5e01e280f2&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&rsv_t=3a88DKYCJJVqvHd2TmHzhfYX3LzyRPFP1cyzDL0Mm%2FS2WP1M1UisbAvNpoM&rsf=100633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e462]: 2019年我国基本医疗保险覆盖人数
+          - generic [ref=e466]:
+            - heading "2025年医疗保障事业发展统计快报__中国政府网" [level=3] [ref=e469]:
+              - link "2025年医疗保障事业发展统计快报__中国政府网" [ref=e470] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ePhQgt7ELARRVPNxrnaW8r3-aoYO9nBrS3hJJ3oN6eQo_pqHbrrsrHzWiKOFSWIhfyrP8Hot0Gdw7lH_zz0OkK
+                - paragraph [ref=e473]:
+                  - generic [ref=e476]:
+                    - text: 2025年
+                    - emphasis [ref=e477]: 医疗保障事业发展统计
+                    - text: 快报__
+                    - emphasis [ref=e478]: 中国
+                    - text: 政府网
+            - generic [ref=e483]:
+              - text: 2026年3月16日
+              - generic [ref=e484]:
+                - emphasis [ref=e485]: 职工基本医疗保险基金(含生育保险)收入24646.71亿元,其中统筹基金收入18317.66亿元
+                - text: ;基金支出19352.31亿元,其中统筹基金支出13574.17亿元。 城乡居民基本医疗保险基金收入11226.40亿元,支出10657.07亿元。 (三)待遇享受情况[1] 2025年享受门诊待遇72.15亿人次,同比增长25.51%,其中职工享受门诊待遇38.49亿人次,同比增长30.28%;居民...
+            - link "头像 中国政府网" [ref=e490] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=ePhQgt7ELARRVPNxrnaW8r3-aoYO9nBrS3hJJ3oN6eQo_pqHbrrsrHzWiKOFSWIhfyrP8Hot0Gdw7lH_zz0OkK
+              - img "头像" [ref=e493]
+              - generic [ref=e494]: 中国政府网
+              - generic [ref=e496]: 
+          - generic [ref=e500]:
+            - heading "2024年国家医保基金总收入3.49万亿元,参保率95%" [level=3] [ref=e503]:
+              - link "2024年国家医保基金总收入3.49万亿元,参保率95%" [ref=e504] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9UesmBxiEkVPMJJW3iYCymvpPVP-BEYPZPdZqZ7HosNRs_UDYhvwXZzXFNU6q2EUA3X9UxoTAjcXAxKN-ZtHj4K
+                - paragraph [ref=e507]:
+                  - generic [ref=e510]:
+                    - emphasis [ref=e511]: 2024年国家医保基金总收入
+                    - text: 3.49万亿元,
+                    - emphasis [ref=e512]: 参保
+                    - text: 率95%
+            - generic [ref=e517]:
+              - text: 2025年7月14日
+              - generic [ref=e518]:
+                - text: 7月14日，国家医保局发布《2024年全国医疗保障事业发展统计公报》，截至2024年底，全国基本医疗保险参保人数达13.27亿人，参保率稳定在95%，基金运行安全稳健。全年基本医保（含生育保险）
+                - emphasis [ref=e519]: 基金总收入34913.37亿元
+                - text: ，总支出29764.03亿元，累计结存38628.52亿元。公报显示，2024年职工医保参保人数达3.79亿人，较上年...
+            - link "头像  北京日报客户端" [ref=e524] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9UesmBxiEkVPMJJW3iYCymvpPVP-BEYPZPdZqZ7HosNRs_UDYhvwXZzXFNU6q2EUA3X9UxoTAjcXAxKN-ZtHj4K
+              - generic [ref=e525]:
+                - img "头像" [ref=e527]
+                - generic [ref=e529]: 
+              - generic [ref=e530]: 北京日报客户端
+              - generic [ref=e532]: 
+          - generic [ref=e536]:
+            - heading "截至2024年底我国基本医疗保险参保人数达13.26亿人" [level=3] [ref=e539]:
+              - link "截至2024年底我国基本医疗保险参保人数达13.26亿人" [ref=e540] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9UesmBxiEkVPMJJW3iYCymvQFuofIUFN6GuJ9s9mdKKWeQ8Xmc2hvK_AR9CRcG5IBGA-2u5k60yu-aIWAdKrQU3
+                - paragraph [ref=e543]:
+                  - generic [ref=e546]:
+                    - text: 截至
+                    - emphasis [ref=e547]: "2024"
+                    - text: 年底我国基本
+                    - emphasis [ref=e548]: 医疗
+                    - text: 保险
+                    - emphasis [ref=e549]: 参保人数
+                    - text: 达13.26亿人
+            - generic [ref=e554]:
+              - text: 2025年3月21日
+              - generic [ref=e555]:
+                - text: 中新网3月21日电
+                - emphasis [ref=e556]: 国家医疗保障
+                - text: 局21日在官网发布《
+                - emphasis [ref=e557]: 2024年医疗保障事业发展统计
+                - text: 快报》，全文如下：一、基本医疗保险稳健运行 (一)参保人员情况 截至2024年底，基本医疗保险
+                - emphasis [ref=e558]: 参保人数
+                - text: 达132637.83万人，参保质量持续提升，参保结构更加优化，参保率巩固在95%。(二)
+                - emphasis [ref=e559]: 基金
+                - text: 收支情况 2024年，基本医疗保险基金(含生育保险)总...
+            - link "头像  中国新闻网" [ref=e564] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=ik-GVf9cEcPnVjpXAKpe9UesmBxiEkVPMJJW3iYCymvQFuofIUFN6GuJ9s9mdKKWeQ8Xmc2hvK_AR9CRcG5IBGA-2u5k60yu-aIWAdKrQU3
+              - generic [ref=e565]:
+                - img "头像" [ref=e567]
+                - generic [ref=e569]: 
+              - generic [ref=e570]: 中国新闻网
+              - generic [ref=e572]: 
+          - generic [ref=e576]:
+            - heading "2025年医疗保障事业发展统计快报_上海医保" [level=3] [ref=e579]:
+              - link "2025年医疗保障事业发展统计快报_上海医保" [ref=e580] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=EAiDTTPRTnu4Jy3ekPCPhZXwiWmQhuydzH0zjfoXqxJ9fPnVAuVShYUL1bBrkKAoZ46GMbsiAGAsoOqytIiuKDaVWOAnIzmM0y4eK_unD9JZztX6Jrp8vhhJ4xWTNrGV
+                - paragraph [ref=e583]:
+                  - generic [ref=e586]:
+                    - text: 2025年
+                    - emphasis [ref=e587]: 医疗保障事业发展统计
+                    - text: 快报_上海医保
+            - generic [ref=e592]:
+              - text: 2026年3月16日
+              - generic [ref=e593]:
+                - text: (一)参保人员情况 截至2025年底,基本医疗保险参保人数达133068.14万人,同比增加406万人,参保率巩固在95%。职工医保参保38856.07万人,居民医保参保94212.08万人,参保结构更加优化。 (二)基金收支情况 2025年,基本医疗保险基金(含生育保险)
+                - emphasis [ref=e594]: 总收入、总支出分别为35873.11亿元、30009.38亿元
+                - text: 。
+            - link "头像 上海市医疗保障局" [ref=e599] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=EAiDTTPRTnu4Jy3ekPCPhZXwiWmQhuydzH0zjfoXqxJ9fPnVAuVShYUL1bBrkKAoZ46GMbsiAGAsoOqytIiuKDaVWOAnIzmM0y4eK_unD9JZztX6Jrp8vhhJ4xWTNrGV
+              - img "头像" [ref=e602]
+              - generic [ref=e603]: 上海市医疗保障局
+              - generic [ref=e605]: 
+        - generic [ref=e608]:
+          - generic [ref=e609]: 相关搜索
+          - table [ref=e610]:
+            - rowgroup [ref=e611]:
+              - row "医保新政策2024年最新文件 中国医疗保障发展报告(2021)" [ref=e612]:
+                - cell "医保新政策2024年最新文件" [ref=e613]:
+                  - link "医保新政策2024年最新文件" [ref=e614] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E4%BF%9D%E6%96%B0%E6%94%BF%E7%AD%962024%E5%B9%B4%E6%9C%80%E6%96%B0%E6%96%87%E4%BB%B6&rsf=101636803&rsp=0&f=1&rs_src=0&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&rsv_dl=brs_28338_1
+                    - generic [ref=e616]: 医保新政策2024年最新文件
+                - cell "中国医疗保障发展报告(2021)" [ref=e617]:
+                  - link "中国医疗保障发展报告(2021)" [ref=e618] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E5%8F%91%E5%B1%95%E6%8A%A5%E5%91%8A%282021%29&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&rsv_dl=brs_28338_2
+                    - generic [ref=e620]: 中国医疗保障发展报告(2021)
+              - row "2023年全国诊疗人数 2024年医疗行业" [ref=e621]:
+                - cell "2023年全国诊疗人数" [ref=e622]:
+                  - link "2023年全国诊疗人数" [ref=e623] [cursor=pointer]:
+                    - /url: /s?wd=2023%E5%B9%B4%E5%85%A8%E5%9B%BD%E8%AF%8A%E7%96%97%E4%BA%BA%E6%95%B0&rsf=101636803&rsp=2&f=1&rs_src=0&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&rsv_dl=brs_28338_3
+                    - generic [ref=e625]: 2023年全国诊疗人数
+                - cell "2024年医疗行业" [ref=e626]:
+                  - link "2024年医疗行业" [ref=e627] [cursor=pointer]:
+                    - /url: /s?wd=2024%E5%B9%B4%E5%8C%BB%E7%96%97%E8%A1%8C%E4%B8%9A&rsf=101636803&rsp=3&f=1&rs_src=0&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&rsv_dl=brs_28338_4
+                    - generic [ref=e629]: 2024年医疗行业
+              - row "2023年全国的医疗费用是多少 中国每年医保投入" [ref=e630]:
+                - cell "2023年全国的医疗费用是多少" [ref=e631]:
+                  - link "2023年全国的医疗费用是多少" [ref=e632] [cursor=pointer]:
+                    - /url: /s?wd=2023%E5%B9%B4%E5%85%A8%E5%9B%BD%E7%9A%84%E5%8C%BB%E7%96%97%E8%B4%B9%E7%94%A8%E6%98%AF%E5%A4%9A%E5%B0%91&rsf=101636803&rsp=4&f=1&rs_src=0&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&rsv_dl=brs_28338_5
+                    - generic [ref=e634]: 2023年全国的医疗费用是多少
+                - cell "中国每年医保投入" [ref=e635]:
+                  - link "中国每年医保投入" [ref=e636] [cursor=pointer]:
+                    - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E6%AF%8F%E5%B9%B4%E5%8C%BB%E4%BF%9D%E6%8A%95%E5%85%A5&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&rsv_dl=brs_28338_6
+                    - generic [ref=e638]: 中国每年医保投入
+              - row "2020年中国医疗投入 2024首都医学发展基金" [ref=e639]:
+                - cell "2020年中国医疗投入" [ref=e640]:
+                  - link "2020年中国医疗投入" [ref=e641] [cursor=pointer]:
+                    - /url: /s?wd=2020%E5%B9%B4%E4%B8%AD%E5%9B%BD%E5%8C%BB%E7%96%97%E6%8A%95%E5%85%A5&rsf=100633403&rsp=6&f=1&rs_src=0&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&rsv_dl=brs_28338_7
+                    - generic [ref=e643]: 2020年中国医疗投入
+                - cell "2024首都医学发展基金" [ref=e644]:
+                  - link "2024首都医学发展基金" [ref=e645] [cursor=pointer]:
+                    - /url: /s?wd=2024%E9%A6%96%E9%83%BD%E5%8C%BB%E5%AD%A6%E5%8F%91%E5%B1%95%E5%9F%BA%E9%87%91&rsf=100636803&rsp=7&f=1&rs_src=0&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&rsv_dl=brs_28338_8
+                    - generic [ref=e647]: 2024首都医学发展基金
+              - row "国家医保目录2024 2023年就医人数" [ref=e648]:
+                - cell "国家医保目录2024" [ref=e649]:
+                  - link "国家医保目录2024" [ref=e650] [cursor=pointer]:
+                    - /url: /s?wd=%E5%9B%BD%E5%AE%B6%E5%8C%BB%E4%BF%9D%E7%9B%AE%E5%BD%952024&rsf=100636803&rsp=8&f=1&rs_src=0&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&rsv_dl=brs_28338_9
+                    - generic [ref=e652]: 国家医保目录2024
+                - cell "2023年就医人数" [ref=e653]:
+                  - link "2023年就医人数" [ref=e654] [cursor=pointer]:
+                    - /url: /s?wd=2023%E5%B9%B4%E5%B0%B1%E5%8C%BB%E4%BA%BA%E6%95%B0&rsf=100636803&rsp=9&f=1&rs_src=0&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&rsv_dl=brs_28338_10
+                    - generic [ref=e656]: 2023年就医人数
+      - generic [ref=e659]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e660]:
+          - generic [ref=e661]: "1"
+        - link "2" [ref=e662] [cursor=pointer]:
+          - /url: /s?wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&pn=10&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&ie=utf-8&usm=2&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&topic_pn=
+          - generic [ref=e663]: "2"
+        - link "3" [ref=e664] [cursor=pointer]:
+          - /url: /s?wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&pn=20&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&ie=utf-8&usm=2&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&topic_pn=
+          - generic [ref=e665]: "3"
+        - link "4" [ref=e666] [cursor=pointer]:
+          - /url: /s?wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&pn=30&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&ie=utf-8&usm=2&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&topic_pn=
+          - generic [ref=e667]: "4"
+        - link "5" [ref=e668] [cursor=pointer]:
+          - /url: /s?wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&pn=40&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&ie=utf-8&usm=2&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&topic_pn=
+          - generic [ref=e669]: "5"
+        - link "6" [ref=e670] [cursor=pointer]:
+          - /url: /s?wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&pn=50&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&ie=utf-8&usm=2&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&topic_pn=
+          - generic [ref=e671]: "6"
+        - link "7" [ref=e672] [cursor=pointer]:
+          - /url: /s?wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&pn=60&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&ie=utf-8&usm=2&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&topic_pn=
+          - generic [ref=e673]: "7"
+        - link "8" [ref=e674] [cursor=pointer]:
+          - /url: /s?wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&pn=70&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&ie=utf-8&usm=2&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&topic_pn=
+          - generic [ref=e675]: "8"
+        - link "9" [ref=e676] [cursor=pointer]:
+          - /url: /s?wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&pn=80&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&ie=utf-8&usm=2&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&topic_pn=
+          - generic [ref=e677]: "9"
+        - link "10" [ref=e678] [cursor=pointer]:
+          - /url: /s?wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&pn=90&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&ie=utf-8&usm=2&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&topic_pn=
+          - generic [ref=e679]: "10"
+        - link "下一页" [ref=e680] [cursor=pointer]:
+          - /url: /s?wd=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&pn=10&oq=2024%E5%B9%B4%E5%85%A8%E5%9B%BD%E5%8C%BB%E7%96%97%E4%BF%9D%E9%9A%9C%E4%BA%8B%E4%B8%9A%E5%8F%91%E5%B1%95%E7%BB%9F%E8%AE%A1%E5%85%AC%E6%8A%A5%20%E5%8F%82%E4%BF%9D%E4%BA%BA%E6%95%B0%20%E5%9F%BA%E9%87%91%E6%94%B6%E5%85%A5&ie=utf-8&usm=2&rsv_pq=a24a4c5e01e280f2&rsv_t=311c3YtjMNnHolQj80rmuB0kkkb1brW5cRd1qJvkzaazbo7TKG9rOdJkYc4&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e681]
+      - generic [ref=e684]:
+        - link "帮助" [ref=e685] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e686] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e687] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e688] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

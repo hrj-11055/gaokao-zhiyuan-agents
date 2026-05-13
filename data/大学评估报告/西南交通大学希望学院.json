@@ -1,0 +1,45 @@
+{
+  "university_info": {
+    "name": "西南交通大学希望学院",
+    "type": "民办独立学院",
+    "location": "四川省成都市金堂县",
+    "founding_year": 2009,
+    "parent_university": "西南交通大学",
+    "investor": "华西希望集团"
+  },
+  "academic_strength": {
+    "top_majors": [
+      "交通运输",
+      "铁道工程",
+      "土木工程",
+      "电气工程及其自动化"
+    ],
+    "faculty_structure": {
+      "senior_title_ratio": "35%",
+      "double_teacher_ratio": "60%"
+    }
+  },
+  "employment_data": {
+    "overall_employment_rate": "94.5%",
+    "railway_industry_ratio": "45%",
+    "starting_salary_median": 4800,
+    "top_employers": [
+      "中国铁路成都局",
+      "中国中铁",
+      "成都地铁"
+    ]
+  },
+  "admission_stats": {
+    "sichuan_liberal_arts_rank": 68230,
+    "sichuan_science_rank": 207063
+  },
+  "evaluation_scores": {
+    "academic": 2.5,
+    "employment": 3.5,
+    "location": 3.2,
+    "globalization": 2.2,
+    "student_freedom": 3.0,
+    "brand_value": 3.5,
+    "weighted_average": 3.0
+  }
+}

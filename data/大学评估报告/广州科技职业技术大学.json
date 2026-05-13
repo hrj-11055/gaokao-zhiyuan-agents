@@ -1,0 +1,47 @@
+{
+  "university_details": {
+    "name": "广州科技职业技术大学",
+    "short_name": "广科大 / GZUST",
+    "type": "民办职业本科",
+    "location": {
+      "main_campus": "广州市增城区",
+      "branch_campus": "茂名市"
+    },
+    "rankings": {
+      "ruanke_private_vocational": 15,
+      "alumni_association_vocational": 37
+    }
+  },
+  "academic_assets": {
+    "key_majors": [
+      "数字印刷工程",
+      "自动化技术",
+      "建筑工程"
+    ],
+    "academician_workstations": 1,
+    "double_qualified_teacher_ratio": "50%+"
+  },
+  "student_competitiveness": {
+    "guangdong_physics_line_2025": 436,
+    "guangdong_history_line_2025": 475,
+    "admission_difficulty_level": "Low to Moderate"
+  },
+  "employment_outcomes": {
+    "employment_rate": "88.46%",
+    "median_starting_salary": 4600,
+    "top_employer_sectors": [
+      "Advanced Manufacturing",
+      "ICT",
+      "Modern Services"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 1.8,
+    "employment_value": 2.6,
+    "location_advantage": 4.0,
+    "globalization": 2.5,
+    "student_empowerment": 3.0,
+    "brand_asset": 3.0,
+    "weighted_average_score": 2.62
+  }
+}

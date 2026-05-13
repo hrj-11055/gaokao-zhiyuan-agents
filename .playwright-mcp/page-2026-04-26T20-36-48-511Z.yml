@@ -1,0 +1,544 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 藏药学 开设院校 学科评估 排名 2024 藏药学 开设院校 学科评估 排名 2024
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E8%2597%258F%25E8%258D%25AF%25E5%25AD%25A6%2B%25E5%25BC%2580%25E8%25AE%25BE%25E9%2599%25A2%25E6%25A0%25A1%2B%25E5%25AD%25A6%25E7%25A7%2591%25E8%25AF%2584%25E4%25BC%25B0%2B%25E6%258E%2592%25E5%2590%258D%2B2024&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI 模式" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&sca_esv=50e2bf8f38455036&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&aep=1&ntc=1&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ2J8OegQIEhAI
+              - generic [ref=e82]: AI 模式
+          - listitem [ref=e83]:
+            - link "全部" [disabled] [ref=e84]:
+              - generic [ref=e86]: 全部
+          - listitem [ref=e87]:
+            - link "新闻" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ0pQJegQIGBAB
+              - generic [ref=e90]: 新闻
+          - listitem [ref=e91]:
+            - link "购物" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&ved=1t:220175&ictx=111
+              - generic [ref=e94]: 购物
+          - listitem [ref=e95]:
+            - link "图片" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQtKgLegQIFhAB
+              - generic [ref=e98]: 图片
+          - listitem [ref=e99]:
+            - link "短视频" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQs6gLegQIFRAB
+              - generic [ref=e102]: 短视频
+          - listitem [ref=e103]:
+            - link "视频" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgEUJ9Nd1U38zz5FUnCs6igb-RUWw7xn3MONBB--KnWNAhGsKalV3PfvZK3Qk-h2x4SzCx56iQRX4zrOjXDm3V00eo7MUXcZiuth-bGE7v9NAzkle2g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQtKgLegQIFBAB
+              - generic [ref=e106]: 视频
+          - listitem [ref=e107]:
+            - button "更多过滤条件" [ref=e108] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: 更多
+                  - img [ref=e113]
+        - button "工具" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: 工具
+            - img [ref=e121]
+    - heading "搜索结果" [level=1] [ref=e123]
+    - generic [ref=e128]:
+      - generic [ref=e147]:
+        - generic [ref=e152]:
+          - generic [ref=e154]:
+            - generic [ref=e155]:
+              - img [ref=e156]
+              - heading "AI 概览" [level=2] [ref=e158]
+            - button "关于这条结果的详细信息" [ref=e162]:
+              - img [ref=e164]
+          - generic [ref=e185]:
+            - generic [ref=e188]:
+              - generic [ref=e189]: 2024年藏药学专业主要开设在西南、西北地区的中医药大学、民族大学及综合性大学。西藏藏医药大学、成都中医药大学、青海大学等在藏药学教学与研究方面具有优势。
+              - generic [ref=e190]: 以下是根据校友会2024中国大学藏药学专业排名（研究型）及相关学科评估得出的信息：
+              - heading "一、 2024开设藏药学的主要院校及排名" [level=3] [ref=e191]
+              - generic [ref=e192]:
+                - text: 在2024年校友会中国大学藏药学专业排名中，相关院校排名情况如下：
+                - button [ref=e195] [cursor=pointer]:
+                  - generic [ref=e196]:
+                    - img [ref=e197]
+                    - generic [ref=e198]:
+                      - generic [ref=e199]: www.chinaxy.com
+                      - generic [ref=e200]: "+2"
+              - list [ref=e201]:
+                - listitem [ref=e202]:
+                  - generic [ref=e203]:
+                    - strong [ref=e204]: 西藏藏医药大学
+                    - text: ：位列校友会2024中国大学藏药学专业排名首位（五星级/5☆，A++），中国一流专业、世界知名专业。
+                - listitem [ref=e205]:
+                  - generic [ref=e206]:
+                    - strong [ref=e207]: 成都中医药大学
+                    - text: ：藏药学专业办学实力较强，位列2024年A+等级，名列前茅。
+                - listitem [ref=e208]:
+                  - generic [ref=e209]:
+                    - strong [ref=e210]: 青海大学
+                    - text: ：省属重点建设大学，开设藏药学专业。
+                - listitem [ref=e211]:
+                  - generic [ref=e212]:
+                    - strong [ref=e213]: 青海民族大学
+                    - text: ：设有藏医药学院。
+                - listitem [ref=e214]:
+                  - generic [ref=e215]:
+                    - strong [ref=e216]: 甘肃中医药大学
+                    - text: ：具有一定的藏医药研究背景。
+                - listitem [ref=e217]:
+                  - generic [ref=e218]:
+                    - strong [ref=e219]: 西南民族大学
+                    - text: ：综合性民族院校。
+                  - button [ref=e222] [cursor=pointer]:
+                    - generic [ref=e223]:
+                      - img [ref=e224]
+                      - generic [ref=e225]:
+                        - generic [ref=e226]: www.chinaxy.com
+                        - generic [ref=e227]: "+2"
+              - heading [level=3] [ref=e228]: 二、 学科评估与办学水平
+              - generic [ref=e229]: 藏药学专业通常隶属于中药学类。
+              - list [ref=e230]:
+                - listitem [ref=e231]:
+                  - generic [ref=e232]:
+                    - strong [ref=e233]: 国家特色专业/高水平学科
+                    - text: ：西藏藏医药大学在藏药学科体系建设方面最为完善，相关学科处于行业领先水平。
+                - listitem [ref=e234]:
+                  - generic [ref=e235]:
+                    - strong [ref=e236]: 中药学学科评估
+                    - text: ：藏药学教学通常依托中药学一级学科。成都中医药大学等中医药院校在中药学学科的评估中表现优秀，通常具有B+或以上等级。
+                  - button [ref=e239] [cursor=pointer]:
+                    - generic [ref=e240]:
+                      - img [ref=e241]
+                      - generic [ref=e242]:
+                        - generic [ref=e243]: www.chinaxy.com
+                        - generic [ref=e244]: "+1"
+              - heading [level=3] [ref=e245]: 三、 2024专业评价
+              - list [ref=e246]:
+                - listitem [ref=e247]:
+                  - generic [ref=e248]:
+                    - strong [ref=e249]: 核心高校
+                    - text: ：西藏藏医药大学不仅藏药学专业实力最强，其藏医学、藏药学均获得较高四星级学科评级（4☆，中国高水平学科）。
+                - listitem [ref=e250]:
+                  - generic [ref=e251]:
+                    - strong [ref=e252]: 培养模式
+                    - text: ：以上院校多采取本硕博一体化或特色教学，结合临床藏药学研究与教学，以成都中医药大学、西藏藏医药大学为核心的院校在藏药学专业评级中通常列入A+等级。
+                  - button [ref=e255] [cursor=pointer]:
+                    - generic [ref=e256]:
+                      - img [ref=e257]
+                      - generic [ref=e258]:
+                        - generic [ref=e259]: 中国大学排行榜「CNUR」
+                        - generic [ref=e260]: "+1"
+              - emphasis [ref=e262]: 注意：以上专业排名与评估结果基于校友会（Cuaa.Net）和ABC中国大学排名2024年发布的数据，建议考生结合国家教育部第四轮或第五轮学科评估结果、各院校招生计划综合考量。
+            - generic [ref=e269]:
+              - list [ref=e271]:
+                - listitem [ref=e272]:
+                  - generic [ref=e273]:
+                    - link "校友会2024中国大学藏药学专业排名（研究型）. 在新标签页中打开。" [ref=e274] [cursor=pointer]:
+                      - /url: http://www.chinaxy.com/2022index/news/news.jsp?information_id=13009
+                    - generic [ref=e275]:
+                      - generic [ref=e277]:
+                        - generic [ref=e278]: 校友会2024中国大学藏药学专业排名（研究型）
+                        - generic [ref=e279]: 在最新校友会2024中国大学藏药学专业排名（研究型）中，西藏藏医药大学（5☆，A++）办学实力最强，最具核心竞争力，高居...
+                      - generic [ref=e281]:
+                        - generic [ref=e286]: www.chinaxy.com
+                        - button "关于这条结果" [ref=e288] [cursor=pointer]:
+                          - img [ref=e289]
+                - listitem [ref=e292]:
+                  - generic [ref=e293]:
+                    - link "2024年藏药学专业大学排名及评级结果. 在新标签页中打开。" [ref=e294] [cursor=pointer]:
+                      - /url: https://www.cnur.com/major/2013.html
+                    - generic [ref=e295]:
+                      - generic [ref=e297]:
+                        - generic [ref=e298]: 2024年藏药学专业大学排名及评级结果
+                        - generic [ref=e299]: 2024年9月4日 — 2024年ABC中国大学藏药学专业排名结果揭晓，共3所院校上榜。西藏藏医药大学、成都中医药大学位列前二，评级结果为A+。...
+                      - generic [ref=e300]:
+                        - generic [ref=e305]: 中国大学排行榜「CNUR」
+                        - button [ref=e307] [cursor=pointer]:
+                          - img [ref=e308]
+                - listitem [ref=e311]:
+                  - generic [ref=e312]:
+                    - link [ref=e313] [cursor=pointer]:
+                      - /url: http://www.chinaxy.com/2022index/news/news.jsp?information_id=13206
+                    - generic [ref=e314]:
+                      - generic [ref=e316]:
+                        - generic [ref=e317]: 校友会2024中国大学中药学类专业排名，西藏藏医药大学
+                        - generic [ref=e318]: 榜单显示， 在校友会2024中国大学藏药学专业排名（研究型）中，西藏藏医药大学荣获2024中国五星级专业（5☆），入选世...
+                      - generic [ref=e320]:
+                        - generic [ref=e325]: www.chinaxy.com
+                        - button [ref=e327] [cursor=pointer]:
+                          - img [ref=e328]
+              - button [ref=e332] [cursor=pointer]:
+                - generic [ref=e333]: 全部显示
+        - button "显示更多 AI 概览" [ref=e337]:
+          - generic [ref=e339] [cursor=pointer]:
+            - generic [ref=e340]: 展开
+            - img [ref=e342]
+      - main [ref=e345]:
+        - generic [ref=e349]:
+          - generic [ref=e352]:
+            - heading "网页搜索结果" [level=2] [ref=e353]
+            - generic [ref=e354]:
+              - generic [ref=e357]:
+                - link "2024年藏药学专业大学排名及评级结果 中国大学排行榜「CNUR」 https://www.cnur.com › major" [ref=e359] [cursor=pointer]:
+                  - /url: https://www.cnur.com/major/2013.html
+                  - heading "2024年藏药学专业大学排名及评级结果" [level=3] [ref=e360]
+                  - generic [ref=e365]:
+                    - generic [ref=e367]: 中国大学排行榜「CNUR」
+                    - generic [ref=e369]: https://www.cnur.com › major
+                - button "关于这条结果的详细信息" [ref=e370] [cursor=pointer]:
+                  - img [ref=e373]
+              - generic [ref=e376]:
+                - generic [ref=e377]: 2024年9月4日 —
+                - generic [ref=e378]:
+                  - emphasis [ref=e379]: "2024"
+                  - text: 年ABC中国大学
+                  - emphasis [ref=e380]: 藏药学
+                  - text: 专业
+                  - emphasis [ref=e381]: 排名
+                  - text: 结果揭晓，共3所
+                  - emphasis [ref=e382]: 院校
+                  - text: 上榜。西藏藏医药大学、成都中医药大学位列前二，评级结果为A+。 具体名单如下，图片可点击下方链接 ...
+              - generic [ref=e384]: 缺少字词： 开设 ‎评估
+          - generic [ref=e388]:
+            - generic [ref=e391]:
+              - link "校友会2024西藏藏医药大学学科排名，中药学居西藏第一 校友会中国大学排名 http://cur.cuaa.net › news › news" [ref=e393] [cursor=pointer]:
+                - /url: http://cur.cuaa.net/2022index/news/news.jsp?information_id=15112
+                - heading "校友会2024西藏藏医药大学学科排名，中药学居西藏第一" [level=3] [ref=e394]
+                - generic [ref=e396]:
+                  - img [ref=e400]
+                  - generic [ref=e402]:
+                    - generic [ref=e404]: 校友会中国大学排名
+                    - generic [ref=e406]: http://cur.cuaa.net › news › news
+              - button "关于这条结果的详细信息" [ref=e407] [cursor=pointer]:
+                - img [ref=e410]
+            - generic [ref=e414]:
+              - text: 在校友会
+              - emphasis [ref=e415]: "2024"
+              - text: 西藏藏医药大学
+              - emphasis [ref=e416]: 学科排名
+              - text: 中， 中
+              - emphasis [ref=e417]: 药学
+              - text: 荣获中国四星级
+              - emphasis [ref=e418]: 学科
+              - text: （4☆）、中国高水平
+              - emphasis [ref=e419]: 学科
+              - text: ；位居西藏高校第1名，位列全国第12名，居全国前20%。
+          - generic [ref=e423]:
+            - generic [ref=e426]:
+              - link "校友会2024中国大学藏药学专业排名（研究型） chinaxy.com http://www.chinaxy.com › news › news" [ref=e428] [cursor=pointer]:
+                - /url: http://www.chinaxy.com/2022index/news/news.jsp?information_id=13009
+                - heading "校友会2024中国大学藏药学专业排名（研究型）" [level=3] [ref=e429]
+                - generic [ref=e431]:
+                  - img [ref=e435]
+                  - generic [ref=e437]:
+                    - generic [ref=e439]: chinaxy.com
+                    - generic [ref=e441]: http://www.chinaxy.com › news › news
+              - button "关于这条结果的详细信息" [ref=e442] [cursor=pointer]:
+                - img [ref=e445]
+            - generic [ref=e449]:
+              - text: 在最新校友会
+              - emphasis [ref=e450]: "2024"
+              - text: 中国大学
+              - emphasis [ref=e451]: 藏药学
+              - text: 专业
+              - emphasis [ref=e452]: 排名
+              - text: （研究型）中，西藏藏医药大学（5☆，A++）办学实力最强，最具核心竞争力，高居校友会
+              - emphasis [ref=e453]: "2024"
+              - text: 中国大学
+              - emphasis [ref=e454]: 藏药学
+              - text: 专业
+              - emphasis [ref=e455]: 排名
+              - text: （研究型）首位。成都中医药 ...
+            - generic [ref=e457]: 缺少字词： 开设 ‎评估
+          - generic [ref=e462]:
+            - heading "相关问题" [level=2] [ref=e464]
+            - generic [ref=e465]:
+              - button "美国大学药学排名？" [ref=e471] [cursor=pointer]:
+                - generic [ref=e473]: 美国大学药学排名？
+                - img [ref=e476]
+              - button "中国药科大学排名？" [ref=e485] [cursor=pointer]:
+                - generic [ref=e487]: 中国药科大学排名？
+                - img [ref=e490]
+              - button "中国医药大学排名？" [ref=e499] [cursor=pointer]:
+                - generic [ref=e501]: 中国医药大学排名？
+                - img [ref=e504]
+              - button "中国大学中药学学科排名前十的大学有哪些?" [ref=e513] [cursor=pointer]:
+                - generic [ref=e515]: 中国大学中药学学科排名前十的大学有哪些?
+                - img [ref=e518]
+          - generic [ref=e523]:
+            - heading "网页搜索结果" [level=2] [ref=e524]
+            - generic [ref=e525]:
+              - generic [ref=e528]:
+                - link "澳门开设藏药学专业的大学排名_2026年更新 掌上高考 https://m.gaokao.cn › gk-mb" [ref=e530] [cursor=pointer]:
+                  - /url: https://m.gaokao.cn/gk-mb/30/1229-82
+                  - heading "澳门开设藏药学专业的大学排名_2026年更新" [level=3] [ref=e531]
+                  - generic [ref=e536]:
+                    - generic [ref=e538]: 掌上高考
+                    - generic [ref=e540]: https://m.gaokao.cn › gk-mb
+                - button "关于这条结果的详细信息" [ref=e541] [cursor=pointer]:
+                  - img [ref=e544]
+              - generic [ref=e548]:
+                - text: 二、
+                - emphasis [ref=e549]: 开设藏药学
+                - text: 的
+                - emphasis [ref=e550]: 院校
+                - text: 推荐： · 1.青海民族大学. 政治建校，历史光荣。 · 2.甘肃中医药大学 · 3.西南民族大学 · 4.西藏藏医药大学 · 5.青海大学.
+          - generic [ref=e554]:
+            - generic [ref=e557]:
+              - link "2024年ABC中国大学本科专业排名目录 中国大学排行榜「CNUR」 https://www.cnur.com › major" [ref=e559] [cursor=pointer]:
+                - /url: https://www.cnur.com/major/2172.html
+                - heading "2024年ABC中国大学本科专业排名目录" [level=3] [ref=e560]
+                - generic [ref=e565]:
+                  - generic [ref=e567]: 中国大学排行榜「CNUR」
+                  - generic [ref=e569]: https://www.cnur.com › major
+              - button "关于这条结果的详细信息" [ref=e570] [cursor=pointer]:
+                - img [ref=e573]
+            - generic [ref=e576]:
+              - generic [ref=e577]: 2024年9月19日 —
+              - generic [ref=e578]:
+                - emphasis [ref=e579]: "2024"
+                - text: 年ABC中国大学专业
+                - emphasis [ref=e580]: 排名
+                - text: 结果于3月份开始陆续完成发布，涉及565个普通本科专业(除特殊类别、
+                - emphasis [ref=e581]: 开设院校
+                - text: 少于4个的专业外均覆盖)，评级结果C+等级及以上专业点 ...
+          - generic [ref=e585]:
+            - generic [ref=e588]:
+              - link "藏药学- 了解专业 51选校 http://plan.51xuanxiao.com › Specialty › SpecialtyDetail" [ref=e590] [cursor=pointer]:
+                - /url: http://plan.51xuanxiao.com/Specialty/SpecialtyDetail?specialtyId=02cDVajtwAQ=
+                - heading "藏药学- 了解专业" [level=3] [ref=e591]
+                - generic [ref=e596]:
+                  - generic [ref=e598]: 51选校
+                  - generic [ref=e600]: http://plan.51xuanxiao.com › Specialty › SpecialtyDetail
+              - button "关于这条结果的详细信息" [ref=e601] [cursor=pointer]:
+                - img [ref=e604]
+            - generic [ref=e608]:
+              - emphasis [ref=e609]: 开设院校
+              - text: ： · 成都中医药大学 医药(公立) 双一流. 专业
+              - emphasis [ref=e610]: 排名
+              - text: 第1 名/ 综合指数33.93.
+              - emphasis [ref=e611]: 学科评估
+              - text: B+ · 青海大学 综合(公立) 211,双一流. 专业
+              - emphasis [ref=e612]: 排名
+              - text: "---."
+              - emphasis [ref=e613]: 学科评估
+              - text: "--- · 青海民族大学 ..."
+          - generic [ref=e617]:
+            - generic [ref=e620]:
+              - link "校友会2024中国大学中药学类专业排名，西藏藏医药大学 chinaxy.com http://www.chinaxy.com › news › news" [ref=e622] [cursor=pointer]:
+                - /url: http://www.chinaxy.com/2022index/news/news.jsp?information_id=13206
+                - heading "校友会2024中国大学中药学类专业排名，西藏藏医药大学" [level=3] [ref=e623]
+                - generic [ref=e625]:
+                  - img [ref=e629]
+                  - generic [ref=e631]:
+                    - generic [ref=e633]: chinaxy.com
+                    - generic [ref=e635]: http://www.chinaxy.com › news › news
+              - button "关于这条结果的详细信息" [ref=e636] [cursor=pointer]:
+                - img [ref=e639]
+            - generic [ref=e643]:
+              - text: 榜单显示， 在校友会
+              - emphasis [ref=e644]: "2024"
+              - text: 中国大学
+              - emphasis [ref=e645]: 藏药学
+              - text: 专业
+              - emphasis [ref=e646]: 排名
+              - text: （研究型）中，西藏藏医药大学荣获
+              - emphasis [ref=e647]: "2024"
+              - text: 中国五星级专业（5☆），入选世界知名专业、中国一流专业行列，名列首位。
+            - generic [ref=e649]: 缺少字词： 开设 ‎评估
+          - generic [ref=e653]:
+            - generic [ref=e656]:
+              - link "专科排名- 专题：高职院校及专业排行榜 中国科教评价网 http://www.nseac.com › html" [ref=e658] [cursor=pointer]:
+                - /url: http://www.nseac.com/html/26/
+                - heading "专科排名- 专题：高职院校及专业排行榜" [level=3] [ref=e659]
+                - generic [ref=e664]:
+                  - generic [ref=e666]: 中国科教评价网
+                  - generic [ref=e668]: http://www.nseac.com › html
+              - button "关于这条结果的详细信息" [ref=e669] [cursor=pointer]:
+                - img [ref=e672]
+            - generic [ref=e676]:
+              - text: 金平果2025高职
+              - emphasis [ref=e677]: 院校
+              - text: 评价范围以教育部公布的《
+              - emphasis [ref=e678]: "2024"
+              - text: 年全国高等学校名单》为依据，结合学校的实际招生情况，确定高职
+              - emphasis [ref=e679]: 院校
+              - text: 评价对象为1611所，其中高职高专1560所、职业本科大学51 ...
+          - generic [ref=e683]:
+            - generic [ref=e686]:
+              - link "中药学专业属于什么大类哪个门类 大学生必备网 https://www.dxsbb.com › news" [ref=e688] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/145048.html
+                - heading "中药学专业属于什么大类哪个门类" [level=3] [ref=e689]
+                - generic [ref=e694]:
+                  - generic [ref=e696]: 大学生必备网
+                  - generic [ref=e698]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e699] [cursor=pointer]:
+                - img [ref=e702]
+            - generic [ref=e705]:
+              - generic [ref=e706]: 2025年4月28日 —
+              - generic [ref=e707]:
+                - text: 另外中药学类专业下还有中药资源与开发、
+                - emphasis [ref=e708]: 藏药学
+                - text: 、蒙药学、中药制药、中草药栽培与鉴定等专业，以下附上了中药学类专业名单及专业代码一览表，供大家参考。
+          - generic [ref=e712]:
+            - heading "图片" [level=2] [ref=e716]
+            - generic [ref=e720]:
+              - generic [ref=e724] [cursor=pointer]:
+                - link "Untitled 中国药科大学":
+                  - /url: http://www.cpu.edu.cn/_upload/article/files/f4/a7/88911a5c4d3abf84a64a878dfadf/38a9eb1b-a763-4172-885d-5066fe6dc5d1.pdf
+                - button "Untitled" [ref=e726]:
+                  - img "Untitled" [ref=e728]
+                - generic [ref=e730]:
+                  - generic [ref=e732]: Untitled
+                  - generic [ref=e733]:
+                    - generic [ref=e740]: 中国药科大学
+                    - button "关于这条结果的详细信息" [ref=e743]:
+                      - img [ref=e746]
+              - generic [ref=e751] [cursor=pointer]:
+                - link "校友会2024西藏藏医药大学学科排名，中药学居西藏第一—大学360度 ... 大学排名":
+                  - /url: http://www.chinaxy.com/2022index/news/news.jsp?information_id=15112
+                - button "校友会2024西藏藏医药大学学科排名，中药学居西藏第一—大学360度 ..." [ref=e753]:
+                  - img "校友会2024西藏藏医药大学学科排名，中药学居西藏第一—大学360度 ..." [ref=e755]
+                - generic [ref=e757]:
+                  - generic [ref=e759]: 校友会2024西藏藏医药大学学科排名，中药学居西藏第一—大学360度 ...
+                  - generic [ref=e760]:
+                    - generic [ref=e767]: 大学排名
+                    - button "关于这条结果的详细信息" [ref=e770]:
+                      - img [ref=e773]
+              - generic [ref=e778] [cursor=pointer]:
+                - link "校友会2024年中国大学中药学类专业排名，西藏藏医药大学、河北中 ... 大学排名":
+                  - /url: http://www.chinaxy.com/2022index/news/news.jsp?information_id=14637
+                - button "校友会2024年中国大学中药学类专业排名，西藏藏医药大学、河北中 ..." [ref=e780]:
+                  - img "校友会2024年中国大学中药学类专业排名，西藏藏医药大学、河北中 ..." [ref=e782]
+                - generic [ref=e784]:
+                  - generic [ref=e786]: 校友会2024年中国大学中药学类专业排名，西藏藏医药大学、河北中 ...
+                  - generic [ref=e787]:
+                    - generic [ref=e794]: 大学排名
+                    - button "关于这条结果的详细信息" [ref=e797]:
+                      - img [ref=e800]
+            - button "显示更多图片" [ref=e803] [cursor=pointer]:
+              - separator [ref=e804]
+              - generic [ref=e805]:
+                - generic [ref=e806]: 显示更多图片
+                - img [ref=e808]
+        - generic [ref=e811]:
+          - generic [ref=e816]:
+            - heading "用户还搜索了" [level=2] [ref=e818]
+            - generic [ref=e820]:
+              - generic [ref=e821]:
+                - link "中国大学专业排名2024" [ref=e825] [cursor=pointer]:
+                  - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E4%B8%93%E4%B8%9A%E6%8E%92%E5%90%8D2024&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ1QJ6BAglEAE
+                  - generic [ref=e826]:
+                    - generic [ref=e831]: 中国大学专业排名2024
+                    - img [ref=e835]
+                - link "中国大学专业排名2025" [ref=e840] [cursor=pointer]:
+                  - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E4%B8%93%E4%B8%9A%E6%8E%92%E5%90%8D2025&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ1QJ6BAg_EAE
+                  - generic [ref=e841]:
+                    - generic [ref=e846]: 中国大学专业排名2025
+                    - img [ref=e850]
+                - link "中国大学学科排名" [ref=e855] [cursor=pointer]:
+                  - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E5%AD%A6%E7%A7%91%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ1QJ6BAg8EAE
+                  - generic [ref=e856]:
+                    - generic [ref=e861]: 中国大学学科排名
+                    - img [ref=e865]
+                - link "软科排名2024" [ref=e870] [cursor=pointer]:
+                  - /url: /search?sca_esv=50e2bf8f38455036&q=%E8%BD%AF%E7%A7%91%E6%8E%92%E5%90%8D2024&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ1QJ6BAg2EAE
+                  - generic [ref=e871]:
+                    - generic [ref=e876]: 软科排名2024
+                    - img [ref=e880]
+              - generic [ref=e882]:
+                - link "中国大学世界排名2024" [ref=e886] [cursor=pointer]:
+                  - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E4%B8%96%E7%95%8C%E6%8E%92%E5%90%8D2024&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ1QJ6BAgwEAE
+                  - generic [ref=e887]:
+                    - generic [ref=e892]: 中国大学世界排名2024
+                    - img [ref=e896]
+                - link "中国大学排名" [ref=e901] [cursor=pointer]:
+                  - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ1QJ6BAgvEAE
+                  - generic [ref=e902]:
+                    - generic [ref=e907]: 中国大学排名
+                    - img [ref=e911]
+                - link "2025年abc中国大学专业排名" [ref=e916] [cursor=pointer]:
+                  - /url: /search?sca_esv=50e2bf8f38455036&q=2025%E5%B9%B4abc%E4%B8%AD%E5%9B%BD%E5%A4%A7%E5%AD%A6%E4%B8%93%E4%B8%9A%E6%8E%92%E5%90%8D&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ1QJ6BAgtEAE
+                  - generic [ref=e917]:
+                    - generic [ref=e922]: 2025年abc中国大学专业排名
+                    - img [ref=e926]
+                - link "中国医学院排名2024" [ref=e931] [cursor=pointer]:
+                  - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%9B%BD%E5%8C%BB%E5%AD%A6%E9%99%A2%E6%8E%92%E5%90%8D2024&sa=X&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ1QJ6BAgrEAE
+                  - generic [ref=e932]:
+                    - generic [ref=e937]: 中国医学院排名2024
+                    - img [ref=e941]
+          - navigation [ref=e943]:
+            - heading "网页导航" [level=1] [ref=e944]
+            - text: "1"
+            - link "Page 2" [ref=e947] [cursor=pointer]:
+              - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&sca_esv=50e2bf8f38455036&ei=XHfuacOAHdui2roP_be60A8&start=10&sa=N&sstk=Af77f_fOQdy_scs_G59MY66dZFGmWyYQHy1cF9gVkSSRA2iCMUWhGNSgMTBg-CcLMNzBrj70ywwpPvL4PdZWnHIxJW6NGTI868fkbA&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ8tMDegQIQRAE
+              - text: "2"
+            - link "Page 3" [ref=e949] [cursor=pointer]:
+              - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&sca_esv=50e2bf8f38455036&ei=XHfuacOAHdui2roP_be60A8&start=20&sa=N&sstk=Af77f_fOQdy_scs_G59MY66dZFGmWyYQHy1cF9gVkSSRA2iCMUWhGNSgMTBg-CcLMNzBrj70ywwpPvL4PdZWnHIxJW6NGTI868fkbA&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ8tMDegQIQRAG
+              - text: "3"
+            - link "Page 4" [ref=e951] [cursor=pointer]:
+              - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&sca_esv=50e2bf8f38455036&ei=XHfuacOAHdui2roP_be60A8&start=30&sa=N&sstk=Af77f_fOQdy_scs_G59MY66dZFGmWyYQHy1cF9gVkSSRA2iCMUWhGNSgMTBg-CcLMNzBrj70ywwpPvL4PdZWnHIxJW6NGTI868fkbA&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ8tMDegQIQRAI
+              - text: "4"
+            - link "Page 5" [ref=e953] [cursor=pointer]:
+              - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&sca_esv=50e2bf8f38455036&ei=XHfuacOAHdui2roP_be60A8&start=40&sa=N&sstk=Af77f_fOQdy_scs_G59MY66dZFGmWyYQHy1cF9gVkSSRA2iCMUWhGNSgMTBg-CcLMNzBrj70ywwpPvL4PdZWnHIxJW6NGTI868fkbA&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ8tMDegQIQRAK
+              - text: "5"
+            - link "Page 6" [ref=e955] [cursor=pointer]:
+              - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&sca_esv=50e2bf8f38455036&ei=XHfuacOAHdui2roP_be60A8&start=50&sa=N&sstk=Af77f_fOQdy_scs_G59MY66dZFGmWyYQHy1cF9gVkSSRA2iCMUWhGNSgMTBg-CcLMNzBrj70ywwpPvL4PdZWnHIxJW6NGTI868fkbA&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ8tMDegQIQRAM
+              - text: "6"
+            - heading "下一页" [level=2] [ref=e957]:
+              - link "下一页" [ref=e958] [cursor=pointer]:
+                - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E6%8E%92%E5%90%8D+2024&sca_esv=50e2bf8f38455036&ei=XHfuacOAHdui2roP_be60A8&start=10&sa=N&sstk=Af77f_fOQdy_scs_G59MY66dZFGmWyYQHy1cF9gVkSSRA2iCMUWhGNSgMTBg-CcLMNzBrj70ywwpPvL4PdZWnHIxJW6NGTI868fkbA&ved=2ahUKEwjDnrumr4yUAxVbkVYBHf2bDvoQ8NMDegQIQRAO
+                - generic [ref=e960]: 下一页
+        - navigation
+    - contentinfo [ref=e961]:
+      - heading "页脚链接" [level=1] [ref=e962]
+      - generic [ref=e966]:
+        - generic [ref=e970]:
+          - button "Hyde Park, 波士顿麻萨诸塞州 - 根据您的活动记录" [ref=e972] [cursor=pointer]:
+            - generic [ref=e973]: Hyde Park, 波士顿麻萨诸塞州
+            - generic [ref=e975]:
+              - text: "-"
+              - generic [ref=e976]: 根据您的活动记录
+          - text: "-"
+          - button "更新位置信息" [ref=e978] [cursor=pointer]: 更新位置信息
+        - generic [ref=e981]:
+          - link "帮助" [ref=e982] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e983] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e984] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e985] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

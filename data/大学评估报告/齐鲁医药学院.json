@@ -1,0 +1,38 @@
+{
+  "university_name": "齐鲁医药学院",
+  "short_name": "齐鲁医",
+  "location": {
+    "province": "山东省",
+    "city": "淄博市",
+    "district": "周村区"
+  },
+  "attributes": {
+    "type": "医药类",
+    "nature": "民办 (国企举办)",
+    "level": "本科"
+  },
+  "academic_stats": {
+    "master_points": 0,
+    "provincial_first_class_majors": 5,
+    "key_disciplines": [
+      "临床医学",
+      "护理学",
+      "药学"
+    ]
+  },
+  "admission_data_2024": {
+    "shandong_cutoff": 465,
+    "shandong_rank": 275000
+  },
+  "employment_stats": {
+    "further_study_rate": "26.1%",
+    "avg_starting_salary": 4800,
+    "top_employer_type": "基层医疗机构/医药企业"
+  },
+  "risk_factors": [
+    "High tuition fees",
+    "Management corruption history",
+    "Lack of postgraduate programs"
+  ],
+  "overall_score": 2.42
+}

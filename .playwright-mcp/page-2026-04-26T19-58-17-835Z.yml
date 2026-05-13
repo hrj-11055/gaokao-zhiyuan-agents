@@ -1,0 +1,354 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 暨南大学 B站 bilibili 抖音 微博 官方账号 粉丝数 暨南大学 B站 bilibili 抖音 微博 官方账号 粉丝数
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%259A%25A8%25E5%258D%2597%25E5%25A4%25A7%25E5%25AD%25A6%2BB%25E7%25AB%2599%2Bbilibili%2B%25E6%258A%2596%25E9%259F%25B3%2B%25E5%25BE%25AE%25E5%258D%259A%2B%25E5%25AE%2598%25E6%2596%25B9%25E8%25B4%25A6%25E5%258F%25B7%2B%25E7%25B2%2589%25E4%25B8%259D%25E6%2595%25B0&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&aep=1&ntc=1&sa=X&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ2J8OegQIEBAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "视频" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sa=X&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQtKgLegQIFxAB
+              - generic [ref=e91]: 视频
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sa=X&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQtKgLegQIFRAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "新闻" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&sa=X&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ0pQJegQIFBAB
+              - generic [ref=e103]: 新闻
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVmuVjtSOGTq3fLDGUek6XGKo13LUUyhoDbwTfe2m14a8DqyfGQtFtVCxunno11FZVOquSllZMR3YMFZCBKAh1p4lKS-tsXqKbGhfgG2SvDvUUiLC-HDmwmPiAmprfE4aRCaHZdnGrpaEYvhl-XFt7nNnG8eXre-3YuNHI46ON9ntZEqGdf40QjucBJZ4Yni46FQH5gQ&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sa=X&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQs6gLegQIFhAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在搜索 再多想一会儿" [level=2] [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e155]: 正在搜索
+            - generic [ref=e165]: 再多想一会儿
+        - progressbar [ref=e167]
+      - main [ref=e209]:
+        - generic [ref=e213]:
+          - generic [ref=e216]:
+            - heading "网页搜索结果" [level=2] [ref=e217]
+            - generic [ref=e218]:
+              - generic [ref=e221]:
+                - link "中国千万粉丝量的博主总数及具体名单 知乎专栏 https://zhuanlan.zhihu.com › ..." [ref=e223] [cursor=pointer]:
+                  - /url: https://zhuanlan.zhihu.com/p/1908585262625302237
+                  - heading "中国千万粉丝量的博主总数及具体名单" [level=3] [ref=e224]
+                  - generic [ref=e229]:
+                    - generic [ref=e231]: 知乎专栏
+                    - generic [ref=e233]: https://zhuanlan.zhihu.com › ...
+                - button "关于这条结果的详细信息" [ref=e234] [cursor=pointer]:
+                  - img [ref=e237]
+              - generic [ref=e240]:
+                - generic [ref=e241]: 2025年5月21日 —
+                - generic [ref=e242]:
+                  - emphasis [ref=e243]: B站
+                  - text: 上的千万粉丝UP主较少，截至2025年4月，具有千万粉丝级别的UP主有27个。其中
+                  - emphasis [ref=e244]: 粉丝数
+                  - text: 排名前十的是：. @哔哩哔哩漫画- 4530.38万粉丝（
+                  - emphasis [ref=e245]: 官方
+                  - text: ）; @哔哩哔哩 ...
+              - generic [ref=e247]: 缺少字词： 暨南 ‎大学
+          - generic [ref=e252]:
+            - heading "相关问题" [level=2] [ref=e254]
+            - generic [ref=e255]:
+              - button "B站up主粉丝数？" [ref=e261] [cursor=pointer]:
+                - generic [ref=e263]: B站up主粉丝数？
+                - img [ref=e266]
+              - button "微博谁粉丝最多？" [ref=e275] [cursor=pointer]:
+                - generic [ref=e277]: 微博谁粉丝最多？
+                - img [ref=e280]
+              - button "中国抖音粉丝最多的是谁？" [ref=e289] [cursor=pointer]:
+                - generic [ref=e291]: 中国抖音粉丝最多的是谁？
+                - img [ref=e294]
+              - button "王一博微博粉丝量？" [ref=e303] [cursor=pointer]:
+                - generic [ref=e305]: 王一博微博粉丝量？
+                - img [ref=e308]
+          - generic [ref=e313]:
+            - heading "网页搜索结果" [level=2] [ref=e314]
+            - generic [ref=e315]:
+              - generic [ref=e318]:
+                - link "2020媒体融合传播指数发布会--传媒 人民网研究院 http://yjy.people.com.cn › ..." [ref=e320] [cursor=pointer]:
+                  - /url: http://yjy.people.com.cn/GB/437397/index.html
+                  - heading "2020媒体融合传播指数发布会--传媒" [level=3] [ref=e321]
+                  - generic [ref=e323]:
+                    - img [ref=e327]
+                    - generic [ref=e329]:
+                      - generic [ref=e331]: 人民网研究院
+                      - generic [ref=e333]: http://yjy.people.com.cn › ...
+                - button "关于这条结果的详细信息" [ref=e334] [cursor=pointer]:
+                  - img [ref=e337]
+              - generic [ref=e341]:
+                - text: 2020年，各类媒体在聚合视频客户端的
+                - emphasis [ref=e342]: 粉丝
+                - text: 量增长明显、用户
+                - emphasis [ref=e343]: 数量
+                - text: 多。报纸、广播频率、电视台在
+                - emphasis [ref=e344]: 抖音
+                - text: 平台共计开通了577个
+                - emphasis [ref=e345]: 账号
+                - text: ，平均
+                - emphasis [ref=e346]: 粉丝
+                - text: 量增长率分别为161%、228%、47%。三类媒体 ...
+          - generic [ref=e350]:
+            - generic [ref=e353]:
+              - link "基于大数据分析的网络舆论场中戏曲文化“跨圈”传播研究 甘肃省图书馆 http://dbase.gslib.com.cn › docview" [ref=e355] [cursor=pointer]:
+                - /url: http://dbase.gslib.com.cn:8000/DRCNet.Mirror.Documents.Web/docview.aspx?DocID=7518212&leafID=28102
+                - heading "基于大数据分析的网络舆论场中戏曲文化“跨圈”传播研究" [level=3] [ref=e356]
+                - generic [ref=e358]:
+                  - img [ref=e362]
+                  - generic [ref=e364]:
+                    - generic [ref=e366]: 甘肃省图书馆
+                    - generic [ref=e368]: http://dbase.gslib.com.cn › docview
+              - button "关于这条结果的详细信息" [ref=e369] [cursor=pointer]:
+                - img [ref=e372]
+            - generic [ref=e375]:
+              - generic [ref=e376]: 2024年8月22日 —
+              - generic [ref=e377]:
+                - text: 研究发现，明星
+                - emphasis [ref=e378]: 粉丝
+                - text: 群体是戏曲文化传播的主力军，遵循流量逻辑；媒体机构是引领者，基于文化逻辑来提取戏曲背后的文化价值；营销号和意见领袖是戏曲文化的 ...
+          - generic [ref=e382]:
+            - generic [ref=e385]:
+              - 'link "作为递进式社会融合的可见性: B 站残障UP 主的媒介实践 新闻与传播评论 http://xwcbpl.whu.edu.cn › file" [ref=e387] [cursor=pointer]':
+                - /url: http://xwcbpl.whu.edu.cn/d/file/p/2024/11-03/9b02a5ee81b5961133d2a25bd6bb6a55.pdf
+                - 'heading "作为递进式社会融合的可见性: B 站残障UP 主的媒介实践" [level=3] [ref=e388]'
+                - generic [ref=e390]:
+                  - img [ref=e394]
+                  - generic [ref=e396]:
+                    - generic [ref=e398]: 新闻与传播评论
+                    - generic [ref=e400]: http://xwcbpl.whu.edu.cn › file
+              - generic [ref=e401]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e402] [cursor=pointer]:
+                - img [ref=e405]
+            - generic [ref=e408]:
+              - generic [ref=e409]: 2024年11月6日 —
+              - generic [ref=e410]:
+                - text: 笔者所制定的筛选标准并没有将残障类别和
+                - emphasis [ref=e411]: 粉丝数量
+                - text: 纳入其. 中,主要原因有以下两点:一方面,不对残障类别进行特定的区分,目的是在进行研究时尽可能丰富. 样本 ...
+          - generic [ref=e415]:
+            - generic [ref=e418]:
+              - link "第十二届全国体育科学大会论文录取结果 scimall.org.cn https://acad-upload.scimall.org.cn › id189_KRXI" [ref=e420] [cursor=pointer]:
+                - /url: https://acad-upload.scimall.org.cn/csss/cms/attachments/id189_KRXI.pdf?attname=%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80%E5%88%9D%E6%81%8B%E5%8A%A8%E6%BC%ABQyiugZ-%E8%AF%B1%E5%A5%B8%E7%BB%8F%E5%8E%86-%E3%8A%99%EF%B8%8F%E7%BD%91%E5%9D%80av86.tv%E3%8A%99%EF%B8%8F-%E4%B9%A1%E6%9D%91%E5%B0%8F%E8%AF%B4%E6%88%91%E7%9A%84%E5%B0%8F%E5%A7%A8mfMknRzh-%E9%A3%8E%E9%AA%9A%E4%B8%88%E6%AF%8D%E5%A8%98%E4%B9%B1%E4%BC%A6-%E2%98%80%EF%B8%8F%E2%96%9B%E7%BD%91%E7%AB%99av86.tv%E2%96%9F%E2%98%80%EF%B8%8F-%E8%9C%9C%E6%A1%83%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E7%86%9F8wYvtGPQ-%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%A5%B6%E9%A5%A5%E6%B8%B4%E9%AA%9A%E5%A6%87
+                - heading "第十二届全国体育科学大会论文录取结果" [level=3] [ref=e421]
+                - generic [ref=e423]:
+                  - img [ref=e427]
+                  - generic [ref=e429]:
+                    - generic [ref=e431]: scimall.org.cn
+                    - generic [ref=e433]: https://acad-upload.scimall.org.cn › id189_KRXI
+              - generic [ref=e434]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e435] [cursor=pointer]:
+                - img [ref=e438]
+            - generic [ref=e441]: 21001. 马园艳，吴彦孔，聂应军. 武汉体育学院体育科技学院. 新冠肺炎爆发期我国居民身体锻炼对其心理健康的促进效果分析. 专题口头报告. 体育社会科学.
+          - generic [ref=e445]:
+            - generic [ref=e448]:
+              - link "中国新媒体研究报告2019 中国记协 http://www.zgjx.cn › zgjxstatics › zgxwyjbg" [ref=e450] [cursor=pointer]:
+                - /url: http://www.zgjx.cn/zgjxstatics/2020zt/zgxwyjbg.pdf
+                - heading "中国新媒体研究报告2019" [level=3] [ref=e451]
+                - generic [ref=e456]:
+                  - generic [ref=e458]: 中国记协
+                  - generic [ref=e460]: http://www.zgjx.cn › zgjxstatics › zgxwyjbg
+              - generic [ref=e461]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e462] [cursor=pointer]:
+                - img [ref=e465]
+            - generic [ref=e467]:
+              - generic [ref=e469]:
+                - text: “学习直播”. （#study with me#）作为内容新品类已经成为
+                - emphasis [ref=e470]: B站
+                - text: 的特色品牌，据
+                - emphasis [ref=e471]: B站官方
+                - text: 数. 据，2018年共有103万次学习类直播开播，累积时长达146万小时，已晋升为.
+                - emphasis [ref=e472]: B站
+                - text: 直播时长最长的 ...
+              - generic [ref=e473]: 151 页
+          - generic [ref=e477]:
+            - generic [ref=e480]:
+              - link "文明蒙恬（广州）集团股份有限公司公开转让说明书 上海东方财富证券投资咨询有限公司 https://pdf.dfcfw.com › pdf › H2_AN202312151..." [ref=e482] [cursor=pointer]:
+                - /url: https://pdf.dfcfw.com/pdf/H2_AN202312151614283640_1.pdf?1702663063000.pdf
+                - heading "文明蒙恬（广州）集团股份有限公司公开转让说明书" [level=3] [ref=e483]
+                - generic [ref=e488]:
+                  - generic [ref=e490]: 上海东方财富证券投资咨询有限公司
+                  - generic [ref=e492]: https://pdf.dfcfw.com › pdf › H2_AN202312151...
+              - generic [ref=e493]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e494] [cursor=pointer]:
+                - img [ref=e497]
+            - generic [ref=e499]:
+              - generic [ref=e500]:
+                - generic [ref=e501]: 2024年1月1日 —
+                - generic [ref=e502]:
+                  - text: 月至2001 年1 月任
+                  - emphasis [ref=e503]: 暨南大学
+                  - text: 经济学院讲师；2001 年1 月至2014 年8 月 ... 年3 月，
+                  - emphasis [ref=e504]: 抖音
+                  - text: 、快手、哔哩哔哩、小红书的活跃用户规模分别达到6.71 亿人 ...
+              - generic [ref=e505]: 259 页
+          - generic [ref=e509]:
+            - generic [ref=e512]:
+              - link "破纪录的十五运会，释放“体育+”三重经济信号 21财经 https://www.21jingji.com › article › herald" [ref=e514] [cursor=pointer]:
+                - /url: https://www.21jingji.com/article/20251126/herald/e6b6c23dc3344b606f237abfdf8ef664.html
+                - heading "破纪录的十五运会，释放“体育+”三重经济信号" [level=3] [ref=e515]
+                - generic [ref=e520]:
+                  - generic [ref=e522]: 21财经
+                  - generic [ref=e524]: https://www.21jingji.com › article › herald
+              - button "关于这条结果的详细信息" [ref=e525] [cursor=pointer]:
+                - img [ref=e528]
+            - generic [ref=e531]:
+              - generic [ref=e532]: 2025年11月26日 —
+              - text: “体育+科技”释放科技与产业互促双强信号。以体育作为超级应用场景，通过人形机器人、AI、自动驾驶等前沿技术的赛场验证，加速产业规模化落地，推动科技创新 ...
+          - generic [ref=e536]:
+            - generic [ref=e539]:
+              - link "https://huggingface.co/AlienKevin/bart-canto-mando... Hugging Face https://huggingface.co › main › CyberCan" [ref=e541] [cursor=pointer]:
+                - /url: https://huggingface.co/AlienKevin/bart-canto-mando-bing-300K-typo/resolve/main/CyberCan.dict?download=true
+                - heading "https://huggingface.co/AlienKevin/bart-canto-mando..." [level=3] [ref=e542]
+                - generic [ref=e547]:
+                  - generic [ref=e549]: Hugging Face
+                  - generic [ref=e551]: https://huggingface.co › main › CyberCan
+              - generic [ref=e552]:
+                - generic [ref=e553]: ·
+                - link "转为简体网页" [ref=e554] [cursor=pointer]:
+                  - /url: https://huggingface.co/AlienKevin/bart-canto-mando-bing-300K-typo/resolve/main/CyberCan.dict?download=true
+              - button "关于这条结果的详细信息" [ref=e555] [cursor=pointer]:
+                - img [ref=e558]
+            - generic [ref=e562]:
+              - text: ... 站199315 客戶199257 對我199060 唔少198982 機構198888 佔198734 維持198676 揸 ...
+              - emphasis [ref=e563]: 官方
+              - text: 192854 3月192416 推介192372 關注192012 做緊191991 整個191928 買家 ...
+          - generic [ref=e567]:
+            - generic [ref=e570]:
+              - link "小组分工 深圳大学传播学院 https://cmc.szu.edu.cn › __local" [ref=e572] [cursor=pointer]:
+                - /url: https://cmc.szu.edu.cn/__local/E/3F/16/E8CCD2342BA3E7AF39BC72D5AFE_08800C3F_685549.pdf
+                - heading "小组分工" [level=3] [ref=e573]
+                - generic [ref=e578]:
+                  - generic [ref=e580]: 深圳大学传播学院
+                  - generic [ref=e582]: https://cmc.szu.edu.cn › __local
+              - generic [ref=e583]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e584] [cursor=pointer]:
+                - img [ref=e587]
+            - generic [ref=e591]:
+              - text: 章，
+              - emphasis [ref=e592]: 粉丝数量
+              - text: 为223，总阅读次数达到20980，阅读人. 数为12282；视频号与
+              - emphasis [ref=e593]: 抖音
+              - text: 平台共发布4条视频，总播. 放量达到38293次。项目受到了来自部分家长、教师、. 大学生群体的 ...
+        - navigation [ref=e596]:
+          - heading "网页导航" [level=1] [ref=e597]
+          - text: "1"
+          - link "Page 2" [ref=e600] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&ei=V27uaYueK5romLQP39CVMA&start=10&sa=N&sstk=Af77f_faISUOAVt5HU_PSsEWSK5XvR_6PD-J85ZYbGnIDhRSsvEI-J3CskO8uud1WK3DcK5qA726t3lXkK7fFow347YOpPdB2xyB5w&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ8tMDegQIRxAE
+            - text: "2"
+          - link "Page 3" [ref=e602] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&ei=V27uaYueK5romLQP39CVMA&start=20&sa=N&sstk=Af77f_faISUOAVt5HU_PSsEWSK5XvR_6PD-J85ZYbGnIDhRSsvEI-J3CskO8uud1WK3DcK5qA726t3lXkK7fFow347YOpPdB2xyB5w&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ8tMDegQIRxAG
+            - text: "3"
+          - link "Page 4" [ref=e604] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&ei=V27uaYueK5romLQP39CVMA&start=30&sa=N&sstk=Af77f_faISUOAVt5HU_PSsEWSK5XvR_6PD-J85ZYbGnIDhRSsvEI-J3CskO8uud1WK3DcK5qA726t3lXkK7fFow347YOpPdB2xyB5w&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ8tMDegQIRxAI
+            - text: "4"
+          - link "Page 5" [ref=e606] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&ei=V27uaYueK5romLQP39CVMA&start=40&sa=N&sstk=Af77f_faISUOAVt5HU_PSsEWSK5XvR_6PD-J85ZYbGnIDhRSsvEI-J3CskO8uud1WK3DcK5qA726t3lXkK7fFow347YOpPdB2xyB5w&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ8tMDegQIRxAK
+            - text: "5"
+          - link "Page 6" [ref=e608] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&ei=V27uaYueK5romLQP39CVMA&start=50&sa=N&sstk=Af77f_faISUOAVt5HU_PSsEWSK5XvR_6PD-J85ZYbGnIDhRSsvEI-J3CskO8uud1WK3DcK5qA726t3lXkK7fFow347YOpPdB2xyB5w&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ8tMDegQIRxAM
+            - text: "6"
+          - link "Page 7" [ref=e610] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&ei=V27uaYueK5romLQP39CVMA&start=60&sa=N&sstk=Af77f_faISUOAVt5HU_PSsEWSK5XvR_6PD-J85ZYbGnIDhRSsvEI-J3CskO8uud1WK3DcK5qA726t3lXkK7fFow347YOpPdB2xyB5w&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ8tMDegQIRxAO
+            - text: "7"
+          - link "Page 8" [ref=e612] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&ei=V27uaYueK5romLQP39CVMA&start=70&sa=N&sstk=Af77f_faISUOAVt5HU_PSsEWSK5XvR_6PD-J85ZYbGnIDhRSsvEI-J3CskO8uud1WK3DcK5qA726t3lXkK7fFow347YOpPdB2xyB5w&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ8tMDegQIRxAQ
+            - text: "8"
+          - link "Page 9" [ref=e614] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&ei=V27uaYueK5romLQP39CVMA&start=80&sa=N&sstk=Af77f_faISUOAVt5HU_PSsEWSK5XvR_6PD-J85ZYbGnIDhRSsvEI-J3CskO8uud1WK3DcK5qA726t3lXkK7fFow347YOpPdB2xyB5w&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ8tMDegQIRxAS
+            - text: "9"
+          - link "Page 10" [ref=e616] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&ei=V27uaYueK5romLQP39CVMA&start=90&sa=N&sstk=Af77f_faISUOAVt5HU_PSsEWSK5XvR_6PD-J85ZYbGnIDhRSsvEI-J3CskO8uud1WK3DcK5qA726t3lXkK7fFow347YOpPdB2xyB5w&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ8tMDegQIRxAU
+            - text: "10"
+          - heading "下一页" [level=2] [ref=e618]:
+            - link "下一页" [ref=e619] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+B%E7%AB%99+bilibili+%E6%8A%96%E9%9F%B3+%E5%BE%AE%E5%8D%9A+%E5%AE%98%E6%96%B9%E8%B4%A6%E5%8F%B7+%E7%B2%89%E4%B8%9D%E6%95%B0&sca_esv=164079556523993e&ei=V27uaYueK5romLQP39CVMA&start=10&sa=N&sstk=Af77f_faISUOAVt5HU_PSsEWSK5XvR_6PD-J85ZYbGnIDhRSsvEI-J3CskO8uud1WK3DcK5qA726t3lXkK7fFow347YOpPdB2xyB5w&ved=2ahUKEwjLpcfZpoyUAxUaNIYAHV9oBQYQ8NMDegQIRxAW
+              - generic [ref=e621]: 下一页
+        - navigation
+    - contentinfo [ref=e622]:
+      - heading "页脚链接" [level=1] [ref=e623]
+      - generic [ref=e627]:
+        - generic [ref=e631]:
+          - button "Hyde Park, 波士顿麻萨诸塞州 - 根据您的活动记录" [ref=e633] [cursor=pointer]:
+            - generic [ref=e634]: Hyde Park, 波士顿麻萨诸塞州
+            - generic [ref=e636]:
+              - text: "-"
+              - generic [ref=e637]: 根据您的活动记录
+          - text: "-"
+          - button "更新位置信息" [ref=e639] [cursor=pointer]: 更新位置信息
+        - generic [ref=e642]:
+          - link "帮助" [ref=e643] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e644] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e645] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e646] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

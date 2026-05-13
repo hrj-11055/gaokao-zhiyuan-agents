@@ -1,0 +1,43 @@
+{
+  "university_name": "淮北师范大学",
+  "short_name": "淮师大 / CHNU",
+  "location": {
+    "province": "安徽省",
+    "city": "淮北市",
+    "campus": [
+      "相山校区",
+      "滨湖校区"
+    ]
+  },
+  "academic_standing": {
+    "esi_top_1_percent": [
+      "Chemistry",
+      "Materials Science",
+      "Environment/Ecology"
+    ],
+    "key_labs": [
+      "绿色和精准合成化学及应用教育部重点实验室"
+    ],
+    "doctorate_status": "博士学位授予立项建设单位"
+  },
+  "admission_stats": {
+    "avg_rank_anhui_liberal_arts": "18000",
+    "avg_rank_anhui_science": "145000",
+    "competitiveness": "Medium-High"
+  },
+  "career_outcomes": {
+    "further_study_rate": "17.19%",
+    "top_employment_sector": "Basic Education (45%)",
+    "avg_starting_salary": 4800,
+    "kaoyan_reputation": "Very High"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.8,
+    "graduate_value": 2.9,
+    "location_potential": 2.2,
+    "globalization": 2.0,
+    "student_empowerment": 3.2,
+    "brand_asset": 3.0,
+    "overall_weighted_score": 2.7
+  }
+}

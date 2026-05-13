@@ -1,0 +1,362 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 藏医药 市场规模 行业前景 增长率 2024 2025 藏医药 市场规模 行业前景 增长率 2024 2025
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E8%2597%258F%25E5%258C%25BB%25E8%258D%25AF%2B%25E5%25B8%2582%25E5%259C%25BA%25E8%25A7%2584%25E6%25A8%25A1%2B%25E8%25A1%258C%25E4%25B8%259A%25E5%2589%258D%25E6%2599%25AF%2B%25E5%25A2%259E%25E9%2595%25BF%25E7%258E%2587%2B2024%2B2025&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sca_esv=50e2bf8f38455036&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&aep=1&ntc=1&sa=X&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ2J8OegQIEhAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&sa=X&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ0pQJegQIGBAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sa=X&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQtKgLegQIFxAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sa=X&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQtKgLegQIFhAB
+              - generic [ref=e103]: 视频
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuoXgo2PB_GD83jrZk0kQzeqDupJ6tc57_6OdN_MKM5GiLMIaQhXGxb-DV3Bj630OvYbM-Q4j8a-0-EV4Y6ENjYaw45o5SnHljP5pHk2ktLj927gWt9ZrGGfWNugxDzwfWHpKTO-y86HmwUS-wJjhF-K1xGu1Q&q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sa=X&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQs6gLegQIFBAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考 正在搜索 再多想一会儿" [level=2] [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e155]: 正在思考
+            - generic [ref=e157]: 正在搜索
+            - generic [ref=e167]: 再多想一会儿
+        - progressbar [ref=e169]
+      - main [ref=e211]:
+        - generic [ref=e215]:
+          - generic [ref=e218]:
+            - heading "网页搜索结果" [level=2] [ref=e219]
+            - generic [ref=e220]:
+              - generic [ref=e223]:
+                - link "2025年中国藏药市场发展现状和前景预测报告 格隆汇 https://m.gelonghui.com › ..." [ref=e225] [cursor=pointer]:
+                  - /url: https://m.gelonghui.com/p/1693092
+                  - heading "2025年中国藏药市场发展现状和前景预测报告" [level=3] [ref=e226]
+                  - generic [ref=e231]:
+                    - generic [ref=e233]: 格隆汇
+                    - generic [ref=e235]: https://m.gelonghui.com › ...
+                - button "关于这条结果的详细信息" [ref=e236] [cursor=pointer]:
+                  - img [ref=e239]
+              - generic [ref=e243]:
+                - text: 据QYR最新调研，
+                - emphasis [ref=e244]: "2024"
+                - text: 年中国藏药
+                - emphasis [ref=e245]: 市场
+                - text: 销售收入达到了万元，预计2031年可以达到万元，
+                - emphasis [ref=e246]: "2025"
+                - text: "-2031期间年复合"
+                - emphasis [ref=e247]: 增长率
+                - text: (CAGR)为%。本研究项目旨在梳理藏药领域产品系列，洞悉
+                - emphasis [ref=e248]: 行业
+                - text: ...
+          - generic [ref=e252]:
+            - generic [ref=e255]:
+              - link "藏药市场规模、份额及分析2035 年报告 Global Market Statistics https://www.globalmarketstatistics.com › ... › 医疗保健" [ref=e257] [cursor=pointer]:
+                - /url: https://www.globalmarketstatistics.com/zh/market-reports/tibetan-medicine-market-15630
+                - heading "藏药市场规模、份额及分析2035 年报告" [level=3] [ref=e258]
+                - generic [ref=e263]:
+                  - generic [ref=e265]: Global Market Statistics
+                  - generic [ref=e267]: https://www.globalmarketstatistics.com › ... › 医疗保健
+              - button "关于这条结果的详细信息" [ref=e268] [cursor=pointer]:
+                - img [ref=e271]
+            - generic [ref=e275]:
+              - text: 预计2026年藏药
+              - emphasis [ref=e276]: 市场规模
+              - text: 为193847万美元，到2035年预计将达到873670万美元，复合年
+              - emphasis [ref=e277]: 增长率
+              - text: 为14.9%。
+          - generic [ref=e281]:
+            - generic [ref=e284]:
+              - link "2025年版中国藏药行业深度调研及市场前景分析报告 产业调研网 https://pdfs.cir.cn › 藏药未来发展趋势_2052193" [ref=e286] [cursor=pointer]:
+                - /url: https://pdfs.cir.cn/YiYaoBaoJian/93/%E8%97%8F%E8%8D%AF%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E8%B6%8B%E5%8A%BF_2052193.pdf
+                - heading "2025年版中国藏药行业深度调研及市场前景分析报告" [level=3] [ref=e287]
+                - generic [ref=e292]:
+                  - generic [ref=e294]: 产业调研网
+                  - generic [ref=e296]: https://pdfs.cir.cn › 藏药未来发展趋势_2052193
+              - generic [ref=e297]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e298] [cursor=pointer]:
+                - img [ref=e301]
+            - generic [ref=e303]:
+              - generic [ref=e305]:
+                - text: 藏药是我国少数民族传统
+                - emphasis [ref=e306]: 医药
+                - text: 的重要组成部分，近年来随着国家对民族
+                - emphasis [ref=e307]: 医药
+                - text: 政策的支持和民众对传. 统疗法认知的提升，其
+                - emphasis [ref=e308]: 市场
+                - text: 影响力逐渐增强。目前，藏药产业正朝着标准化、 ...
+              - generic [ref=e309]: 8 页
+          - generic [ref=e313]:
+            - generic [ref=e316]:
+              - link "藏药市场规模及增长预测[2035] Business Research Insights https://www.businessresearchinsights.com › tibetan-med..." [ref=e318] [cursor=pointer]:
+                - /url: https://www.businessresearchinsights.com/zh/market-reports/tibetan-medicine-market-106358
+                - heading "藏药市场规模及增长预测[2035]" [level=3] [ref=e319]
+                - generic [ref=e324]:
+                  - generic [ref=e326]: Business Research Insights
+                  - generic [ref=e328]: https://www.businessresearchinsights.com › tibetan-med...
+              - button "关于这条结果的详细信息" [ref=e329] [cursor=pointer]:
+                - img [ref=e332]
+            - generic [ref=e335]:
+              - generic [ref=e336]: 2026年4月6日 —
+              - generic [ref=e337]:
+                - text: 2026年全球藏药
+                - emphasis [ref=e338]: 市场
+                - text: 价值约为31.9亿美元，预计到2035年将达到176.9亿美元。2026年至2035年复合年
+                - emphasis [ref=e339]: 增长率
+                - text: （CAGR）约为20.95%。
+          - generic [ref=e343]:
+            - generic [ref=e346]:
+              - link "布局2025 年医药反转围绕三大逻辑 上海东方财富证券投资咨询有限公司 https://pdf.dfcfw.com › pdf › H3_AP2024112616..." [ref=e348] [cursor=pointer]:
+                - /url: https://pdf.dfcfw.com/pdf/H3_AP202411261641067460_1.pdf?1732631022000.pdf
+                - heading "布局2025 年医药反转围绕三大逻辑" [level=3] [ref=e349]
+                - generic [ref=e354]:
+                  - generic [ref=e356]: 上海东方财富证券投资咨询有限公司
+                  - generic [ref=e358]: https://pdf.dfcfw.com › pdf › H3_AP2024112616...
+              - generic [ref=e359]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e360] [cursor=pointer]:
+                - img [ref=e363]
+            - generic [ref=e365]:
+              - generic [ref=e366]:
+                - generic [ref=e367]: 2024年11月26日 —
+                - generic [ref=e368]:
+                  - text: ... 市场尚有很大的
+                  - emphasis [ref=e369]: 增长
+                  - text: 空间。从长远来看，价格降低有利. 于刺激流感疫苗市场需求的
+                  - emphasis [ref=e370]: 增长
+                  - text: ，进一步提升流感疫苗接种率，扩大
+                  - emphasis [ref=e371]: 市场规模
+                  - text: ，带来以价. 换量的市场机遇。
+              - generic [ref=e372]: 50 页
+          - generic [ref=e376]:
+            - generic [ref=e379]:
+              - link "从传统走向现代的全面升级 西藏自治区人民政府 https://www.xizang.gov.cn › bmkx › t20251223_515413" [ref=e381] [cursor=pointer]:
+                - /url: https://www.xizang.gov.cn/xwzx_406/bmkx/202512/t20251223_515413.html
+                - heading "从传统走向现代的全面升级" [level=3] [ref=e382]
+                - generic [ref=e387]:
+                  - generic [ref=e389]: 西藏自治区人民政府
+                  - generic [ref=e391]: https://www.xizang.gov.cn › bmkx › t20251223_515413
+              - button "关于这条结果的详细信息" [ref=e392] [cursor=pointer]:
+                - img [ref=e395]
+            - generic [ref=e398]:
+              - generic [ref=e399]: 2025年12月23日 —
+              - generic [ref=e400]:
+                - text: 作为自治区着力打造的“九大产业”之一，
+                - emphasis [ref=e401]: 藏医药
+                - text: 产业在“十四五”期间驶入高质量发展快车道。
+                - emphasis [ref=e402]: "2025"
+                - text: 年前11个月，全区藏药生产总值已达33.18亿元。今年，随着一系列 ...
+          - generic [ref=e406]:
+            - generic [ref=e409]:
+              - link "公司公告_西藏药业：2024年年度报告 ... 新浪网 http://money.finance.sina.com.cn › vCB_AllBulletinDetail" [ref=e411] [cursor=pointer]:
+                - /url: http://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=600211&id=10784395
+                - heading "公司公告_西藏药业：2024年年度报告 ..." [level=3] [ref=e412]
+                - generic [ref=e417]:
+                  - generic [ref=e419]: 新浪网
+                  - generic [ref=e421]: http://money.finance.sina.com.cn › vCB_AllBulletinDetail
+              - button "关于这条结果的详细信息" [ref=e422] [cursor=pointer]:
+                - img [ref=e425]
+            - generic [ref=e428]:
+              - generic [ref=e429]: 2025年3月15日 —
+              - generic [ref=e430]:
+                - text: 总之，当下
+                - emphasis [ref=e431]: 医药行业
+                - text: 在科技创新驱动、
+                - emphasis [ref=e432]: 市场
+                - text: 需求扩张、政策支持引导下，呈现出蓬勃发展且竞争激烈的态势。同时
+                - emphasis [ref=e433]: "2024"
+                - text: 年
+                - emphasis [ref=e434]: 医药行业
+                - text: 继续深化改革，以提升健康 ...
+          - generic [ref=e438]:
+            - generic [ref=e441]:
+              - link "2024-2030年中国藏药行业市场全景监测及投资前景展望报告 华经产业研究院 https://m.huaon.com › channel › medicines" [ref=e443] [cursor=pointer]:
+                - /url: https://m.huaon.com/channel/medicines/1004080.html
+                - heading "2024-2030年中国藏药行业市场全景监测及投资前景展望报告" [level=3] [ref=e444]
+                - generic [ref=e449]:
+                  - generic [ref=e451]: 华经产业研究院
+                  - generic [ref=e453]: https://m.huaon.com › channel › medicines
+              - button "关于这条结果的详细信息" [ref=e454] [cursor=pointer]:
+                - img [ref=e457]
+            - generic [ref=e461]:
+              - emphasis [ref=e462]: "2025"
+              - text: "-2031年中国藏药"
+              - emphasis [ref=e463]: 行业市场
+              - text: 深度分析及投资规划建议报告，主要包括
+              - emphasis [ref=e464]: 市场
+              - text: 发展状况分析、主要生产区域分析、主要生产企业经营分析、发展
+              - emphasis [ref=e465]: 前景
+              - text: 及策略分析等内容。
+          - generic [ref=e469]:
+            - generic [ref=e472]:
+              - link "中国藏药市场竞争态势及前景规模分析报告2025-2030年 zyzyyjy.com http://www.zyzyyjy.com › baogao" [ref=e474] [cursor=pointer]:
+                - /url: http://www.zyzyyjy.com/baogao/443134.html
+                - heading "中国藏药市场竞争态势及前景规模分析报告2025-2030年" [level=3] [ref=e475]
+                - generic [ref=e477]:
+                  - img [ref=e481]
+                  - generic [ref=e483]:
+                    - generic [ref=e485]: zyzyyjy.com
+                    - generic [ref=e487]: http://www.zyzyyjy.com › baogao
+              - button "关于这条结果的详细信息" [ref=e488] [cursor=pointer]:
+                - img [ref=e491]
+            - generic [ref=e495]:
+              - text: "【报告名称】: 中国藏药"
+              - emphasis [ref=e496]: 市场
+              - text: 竞争态势及
+              - emphasis [ref=e497]: 前景规模
+              - text: 分析报告
+              - emphasis [ref=e498]: "2025"
+              - text: "-2030年 ; 【关键字】: 藏药"
+              - emphasis [ref=e499]: 行业
+              - text: "报告 ; 【出版日期】:"
+              - emphasis [ref=e500]: "2024"
+              - text: "年11月 ; 【交付方式】: EMIL电子版或特快专递 ; 【报告 ..."
+          - generic [ref=e504]:
+            - generic [ref=e507]:
+              - link "医药2025 ISI https://aigc.idigital.com.cn › djyanbao › 【中邮证..." [ref=e509] [cursor=pointer]:
+                - /url: https://aigc.idigital.com.cn/djyanbao/%E3%80%90%E4%B8%AD%E9%82%AE%E8%AF%81%E5%88%B8%E3%80%91%E5%8C%BB%E8%8D%AF2025%EF%BC%9A%E4%BB%B7%E5%80%BC%E6%B4%BC%E5%9C%B0%EF%BC%8C%E6%88%90%E9%95%BF%E5%85%88%E8%A1%8C-2024-11-17.pdf
+                - heading "医药2025" [level=3] [ref=e510]
+                - generic [ref=e512]:
+                  - img [ref=e516]
+                  - generic [ref=e518]:
+                    - generic [ref=e520]: ISI
+                    - generic [ref=e522]: https://aigc.idigital.com.cn › djyanbao › 【中邮证...
+              - generic [ref=e523]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e524] [cursor=pointer]:
+                - img [ref=e527]
+            - generic [ref=e529]:
+              - generic [ref=e530]:
+                - generic [ref=e531]: 2024年11月17日 —
+                - generic [ref=e532]:
+                  - text: ...
+                  - emphasis [ref=e533]: "2025"
+                  - text: 年，中国分子诊断
+                  - emphasis [ref=e534]: 市场规模
+                  - text: 复合
+                  - emphasis [ref=e535]: 增长率
+                  - text: 高达26.3%，.
+                  - emphasis [ref=e536]: "2025"
+                  - text: 年
+                  - emphasis [ref=e537]: 市场规模
+                  - text: 有望达319亿元，市场
+                  - emphasis [ref=e538]: 前景
+                  - text: 广阔。 ... ，
+                  - emphasis [ref=e539]: "2024"
+                  - text: 年前三季度公司收入呈现出稳定增长的趋势 ...
+              - generic [ref=e540]: 84 页
+        - navigation [ref=e543]:
+          - heading "网页导航" [level=1] [ref=e544]
+          - text: "1"
+          - link "Page 2" [ref=e547] [cursor=pointer]:
+            - /url: /search?q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sca_esv=50e2bf8f38455036&ei=aXfuafjXCqze2roPpuKOwAE&start=10&sa=N&sstk=Af77f_fnpso3Rsx_TvfJn4shSCYOcnIUzhgYu6kLbdKWo1yTUmsYvV-ldB0opQBdytUMJdlt61LT61rI6xKlRl6kWeUgIzx_239SoA&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ8tMDegQIIhAE
+            - text: "2"
+          - link "Page 3" [ref=e549] [cursor=pointer]:
+            - /url: /search?q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sca_esv=50e2bf8f38455036&ei=aXfuafjXCqze2roPpuKOwAE&start=20&sa=N&sstk=Af77f_fnpso3Rsx_TvfJn4shSCYOcnIUzhgYu6kLbdKWo1yTUmsYvV-ldB0opQBdytUMJdlt61LT61rI6xKlRl6kWeUgIzx_239SoA&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ8tMDegQIIhAG
+            - text: "3"
+          - link "Page 4" [ref=e551] [cursor=pointer]:
+            - /url: /search?q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sca_esv=50e2bf8f38455036&ei=aXfuafjXCqze2roPpuKOwAE&start=30&sa=N&sstk=Af77f_fnpso3Rsx_TvfJn4shSCYOcnIUzhgYu6kLbdKWo1yTUmsYvV-ldB0opQBdytUMJdlt61LT61rI6xKlRl6kWeUgIzx_239SoA&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ8tMDegQIIhAI
+            - text: "4"
+          - link "Page 5" [ref=e553] [cursor=pointer]:
+            - /url: /search?q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sca_esv=50e2bf8f38455036&ei=aXfuafjXCqze2roPpuKOwAE&start=40&sa=N&sstk=Af77f_fnpso3Rsx_TvfJn4shSCYOcnIUzhgYu6kLbdKWo1yTUmsYvV-ldB0opQBdytUMJdlt61LT61rI6xKlRl6kWeUgIzx_239SoA&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ8tMDegQIIhAK
+            - text: "5"
+          - link "Page 6" [ref=e555] [cursor=pointer]:
+            - /url: /search?q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sca_esv=50e2bf8f38455036&ei=aXfuafjXCqze2roPpuKOwAE&start=50&sa=N&sstk=Af77f_fnpso3Rsx_TvfJn4shSCYOcnIUzhgYu6kLbdKWo1yTUmsYvV-ldB0opQBdytUMJdlt61LT61rI6xKlRl6kWeUgIzx_239SoA&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ8tMDegQIIhAM
+            - text: "6"
+          - link "Page 7" [ref=e557] [cursor=pointer]:
+            - /url: /search?q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sca_esv=50e2bf8f38455036&ei=aXfuafjXCqze2roPpuKOwAE&start=60&sa=N&sstk=Af77f_fnpso3Rsx_TvfJn4shSCYOcnIUzhgYu6kLbdKWo1yTUmsYvV-ldB0opQBdytUMJdlt61LT61rI6xKlRl6kWeUgIzx_239SoA&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ8tMDegQIIhAO
+            - text: "7"
+          - link "Page 8" [ref=e559] [cursor=pointer]:
+            - /url: /search?q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sca_esv=50e2bf8f38455036&ei=aXfuafjXCqze2roPpuKOwAE&start=70&sa=N&sstk=Af77f_fnpso3Rsx_TvfJn4shSCYOcnIUzhgYu6kLbdKWo1yTUmsYvV-ldB0opQBdytUMJdlt61LT61rI6xKlRl6kWeUgIzx_239SoA&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ8tMDegQIIhAQ
+            - text: "8"
+          - link "Page 9" [ref=e561] [cursor=pointer]:
+            - /url: /search?q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sca_esv=50e2bf8f38455036&ei=aXfuafjXCqze2roPpuKOwAE&start=80&sa=N&sstk=Af77f_fnpso3Rsx_TvfJn4shSCYOcnIUzhgYu6kLbdKWo1yTUmsYvV-ldB0opQBdytUMJdlt61LT61rI6xKlRl6kWeUgIzx_239SoA&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ8tMDegQIIhAS
+            - text: "9"
+          - heading "下一页" [level=2] [ref=e563]:
+            - link "下一页" [ref=e564] [cursor=pointer]:
+              - /url: /search?q=%E8%97%8F%E5%8C%BB%E8%8D%AF+%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1+%E8%A1%8C%E4%B8%9A%E5%89%8D%E6%99%AF+%E5%A2%9E%E9%95%BF%E7%8E%87+2024+2025&sca_esv=50e2bf8f38455036&ei=aXfuafjXCqze2roPpuKOwAE&start=10&sa=N&sstk=Af77f_fnpso3Rsx_TvfJn4shSCYOcnIUzhgYu6kLbdKWo1yTUmsYvV-ldB0opQBdytUMJdlt61LT61rI6xKlRl6kWeUgIzx_239SoA&ved=2ahUKEwi4sMKsr4yUAxUsr1YBHSaxAxgQ8NMDegQIIhAU
+              - generic [ref=e566]: 下一页
+        - navigation
+    - contentinfo [ref=e567]:
+      - heading "页脚链接" [level=1] [ref=e568]
+      - generic [ref=e572]:
+        - generic [ref=e576]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e578] [cursor=pointer]:
+            - generic [ref=e579]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e581]:
+              - text: "-"
+              - generic [ref=e582]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e584] [cursor=pointer]: 更新位置信息
+        - generic [ref=e587]:
+          - link "帮助" [ref=e588] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e589] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e590] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e591] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

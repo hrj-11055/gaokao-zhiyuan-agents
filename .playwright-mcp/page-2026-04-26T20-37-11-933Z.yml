@@ -1,0 +1,345 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiLo_Wyr4yUAxXpklYBHfJ9G38QPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 藏药学 执业药师 职业发展 考研 深造 转行 藏药学 执业药师 职业发展 考研 深造 转行
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E8%2597%258F%25E8%258D%25AF%25E5%25AD%25A6%2B%25E6%2589%25A7%25E4%25B8%259A%25E8%258D%25AF%25E5%25B8%2588%2B%25E8%2581%258C%25E4%25B8%259A%25E5%258F%2591%25E5%25B1%2595%2B%25E8%2580%2583%25E7%25A0%2594%2B%25E6%25B7%25B1%25E9%2580%25A0%2B%25E8%25BD%25AC%25E8%25A1%258C&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88+%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0+%E8%BD%AC%E8%A1%8C&sca_esv=50e2bf8f38455036&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVtSi6kM5ZjADb03gRVWnenf8qL71mitOjDmTARHl1NdU3YeRZeTMiNwvGrj5A6YnrTNi4y9QVHWynj0UQWxktERyGYLkrL_e2jQ5HXEabUAIEMdWmWZaK_9JMz1gpgp4Ry221xwSHBvGBwP7axQtQXDoYydFHtzwGj4hygVQgrIP5DV9wqnCx7WQjaOLUX-MpUdOH9g&aep=1&ntc=1&sa=X&ved=2ahUKEwiLo_Wyr4yUAxXpklYBHfJ9G38Q2J8OegQIDRAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "购物" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVtSi6kM5ZjADb03gRVWnenf8qL71mitOjDmTARHl1NdU3YeRZeTMiNwvGrj5A6YnrTNi4y9QVHWynj0UQWxktERyGYLkrL_e2jQ5HXEabUAIEMdWmWZaK_9JMz1gpgp4Ry221xwSHBvGBwP7axQtQXDoYydFHtzwGj4hygVQgrIP5DV9wqnCx7WQjaOLUX-MpUdOH9g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88+%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0+%E8%BD%AC%E8%A1%8C&ved=1t:220175&ictx=111
+              - generic [ref=e91]: 购物
+          - listitem [ref=e92]:
+            - link "视频" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVtSi6kM5ZjADb03gRVWnenf8qL71mitOjDmTARHl1NdU3YeRZeTMiNwvGrj5A6YnrTNi4y9QVHWynj0UQWxktERyGYLkrL_e2jQ5HXEabUAIEMdWmWZaK_9JMz1gpgp4Ry221xwSHBvGBwP7axQtQXDoYydFHtzwGj4hygVQgrIP5DV9wqnCx7WQjaOLUX-MpUdOH9g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88+%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0+%E8%BD%AC%E8%A1%8C&sa=X&ved=2ahUKEwiLo_Wyr4yUAxXpklYBHfJ9G38QtKgLegQIEhAB
+              - generic [ref=e95]: 视频
+          - listitem [ref=e96]:
+            - link "图片" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVtSi6kM5ZjADb03gRVWnenf8qL71mitOjDmTARHl1NdU3YeRZeTMiNwvGrj5A6YnrTNi4y9QVHWynj0UQWxktERyGYLkrL_e2jQ5HXEabUAIEMdWmWZaK_9JMz1gpgp4Ry221xwSHBvGBwP7axQtQXDoYydFHtzwGj4hygVQgrIP5DV9wqnCx7WQjaOLUX-MpUdOH9g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88+%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0+%E8%BD%AC%E8%A1%8C&sa=X&ved=2ahUKEwiLo_Wyr4yUAxXpklYBHfJ9G38QtKgLegQIExAB
+              - generic [ref=e99]: 图片
+          - listitem [ref=e100]:
+            - link "新闻" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88+%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0+%E8%BD%AC%E8%A1%8C&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVtSi6kM5ZjADb03gRVWnenf8qL71mitOjDmTARHl1NdU3YeRZeTMiNwvGrj5A6YnrTNi4y9QVHWynj0UQWxktERyGYLkrL_e2jQ5HXEabUAIEMdWmWZaK_9JMz1gpgp4Ry221xwSHBvGBwP7axQtQXDoYydFHtzwGj4hygVQgrIP5DV9wqnCx7WQjaOLUX-MpUdOH9g&sa=X&ved=2ahUKEwiLo_Wyr4yUAxXpklYBHfJ9G38Q0pQJegQIEBAB
+              - generic [ref=e103]: 新闻
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVtSi6kM5ZjADb03gRVWnenf8qL71mitOjDmTARHl1NdU3YeRZeTMiNwvGrj5A6YnrTNi4y9QVHWynj0UQWxktERyGYLkrL_e2jQ5HXEabUAIEMdWmWZaK_9JMz1gpgp4Ry221xwSHBvGBwP7axQtQXDoYydFHtzwGj4hygVQgrIP5DV9wqnCx7WQjaOLUX-MpUdOH9g&q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88+%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0+%E8%BD%AC%E8%A1%8C&sa=X&ved=2ahUKEwiLo_Wyr4yUAxXpklYBHfJ9G38Qs6gLegQIDxAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - main [ref=e130]:
+      - generic [ref=e134]:
+        - generic [ref=e137]:
+          - heading "网页搜索结果" [level=2] [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e142]:
+              - link "执业药师这个职业，未来的发展前景如何？ 知乎专栏 https://zhuanlan.zhihu.com › ..." [ref=e144] [cursor=pointer]:
+                - /url: https://zhuanlan.zhihu.com/p/605921290
+                - heading "执业药师这个职业，未来的发展前景如何？" [level=3] [ref=e145]
+                - generic [ref=e150]:
+                  - generic [ref=e152]: 知乎专栏
+                  - generic [ref=e154]: https://zhuanlan.zhihu.com › ...
+              - button "关于这条结果的详细信息" [ref=e155] [cursor=pointer]:
+                - img [ref=e158]
+            - generic [ref=e162]:
+              - emphasis [ref=e163]: 执业药师
+              - text: 这个
+              - emphasis [ref=e164]: 职业
+              - text: ，未来的
+              - emphasis [ref=e165]: 发展
+              - text: 前景如何？ 艺多不压身！ 从古至今，医学行业都是刚需行业，只要有人群的地方，就需要有医学的存在。而
+              - emphasis [ref=e166]: 执业药师
+              - text: 证是
+              - emphasis [ref=e167]: 药学
+              - text: 行业唯一的执业 ...
+        - generic [ref=e172]:
+          - heading "相关问题" [level=2] [ref=e174]
+          - generic [ref=e175]:
+            - button "执业药师通过率？" [ref=e181] [cursor=pointer]:
+              - generic [ref=e183]: 执业药师通过率？
+              - img [ref=e186]
+            - button "药学专业的毕业生有哪些就业方向?" [ref=e195] [cursor=pointer]:
+              - generic [ref=e197]: 药学专业的毕业生有哪些就业方向?
+              - img [ref=e200]
+            - button "执业药师考试内容？" [ref=e209] [cursor=pointer]:
+              - generic [ref=e211]: 执业药师考试内容？
+              - img [ref=e214]
+            - button "药师的职称有哪些?" [ref=e223] [cursor=pointer]:
+              - generic [ref=e225]: 药师的职称有哪些?
+              - img [ref=e228]
+        - generic [ref=e233]:
+          - heading "网页搜索结果" [level=2] [ref=e234]
+          - generic [ref=e235]:
+            - generic [ref=e238]:
+              - link "中药学好就业吗?前景及就业方向规划分析 - 秦学伊顿教育 秦学教育 https://xj.qinxue100.com › news" [ref=e240] [cursor=pointer]:
+                - /url: https://xj.qinxue100.com/news/gk/201710/31978.html
+                - heading "中药学好就业吗?前景及就业方向规划分析 - 秦学伊顿教育" [level=3] [ref=e241]
+                - generic [ref=e246]:
+                  - generic [ref=e248]: 秦学教育
+                  - generic [ref=e250]: https://xj.qinxue100.com › news
+              - button "关于这条结果的详细信息" [ref=e251] [cursor=pointer]:
+                - img [ref=e254]
+            - generic [ref=e257]:
+              - generic [ref=e258]: 2017年10月12日 —
+              - generic [ref=e259]:
+                - text: 3.药师中
+                - emphasis [ref=e260]: 药学
+                - text: 的学生可以在毕业之后考取
+                - emphasis [ref=e261]: 执业药师
+                - text: 资格证，到医院或药房当药师，从事药房配方、医院制剂制备等工作。 4.科研教学人员 ...
+        - generic [ref=e265]:
+          - generic [ref=e268]:
+            - link "中药学专业，要求学生有足够的兴趣和耐心 搜狐网 https://m.sohu.com › ..." [ref=e270] [cursor=pointer]:
+              - /url: https://m.sohu.com/n/434871009/?pvid=000115_3w
+              - heading "中药学专业，要求学生有足够的兴趣和耐心" [level=3] [ref=e271]
+              - generic [ref=e276]:
+                - generic [ref=e278]: 搜狐网
+                - generic [ref=e280]: https://m.sohu.com › ...
+            - button "关于这条结果的详细信息" [ref=e281] [cursor=pointer]:
+              - img [ref=e284]
+          - generic [ref=e287]:
+            - generic [ref=e288]: 2016年1月18日 —
+            - generic [ref=e289]:
+              - text: ... 工作。 3.药师中
+              - emphasis [ref=e290]: 药学
+              - text: 的学生可以在毕业之后考取
+              - emphasis [ref=e291]: 执业药师
+              - text: 资格证，到医院或药房当药师，从事药房配方、医院制剂制备等工作。 4.科研教学人员还可以去相关 ...
+        - generic [ref=e295]:
+          - generic [ref=e298]:
+            - link "國防藥學教育百週年紀念專刊PDF 國防醫學大學 https://wwwndmc.ndmutsgh.edu.tw › web › file_up" [ref=e300] [cursor=pointer]:
+              - /url: https://wwwndmc.ndmutsgh.edu.tw/files/web/192/file_up/100006/14855/%E5%9C%8B%E9%98%B2%E8%97%A5%E5%AD%B8%E6%95%99%E8%82%B2%E7%99%BE%E9%80%B1%E5%B9%B4%E7%B4%80%E5%BF%B5%E5%B0%88%E5%88%8A.pdf
+              - heading "國防藥學教育百週年紀念專刊PDF" [level=3] [ref=e301]
+              - generic [ref=e306]:
+                - generic [ref=e308]: 國防醫學大學
+                - generic [ref=e310]: https://wwwndmc.ndmutsgh.edu.tw › web › file_up
+            - generic [ref=e311]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e312] [cursor=pointer]:
+              - img [ref=e315]
+          - generic [ref=e317]:
+            - generic [ref=e319]:
+              - text: 大學
+              - emphasis [ref=e320]: 藥學
+              - text: 系擔任藥事管理學教學工作。在藥品. 及醫療器材之管理諸庫儲溫溼度及 ... 在美國
+              - emphasis [ref=e321]: 執業
+              - text: 多年，
+              - emphasis [ref=e322]: 藥師
+              - text: 工作和責任雖繁重，. 我仍樂見美國奉行醫藥分業和臨床
+              - emphasis [ref=e323]: 藥學
+              - text: 邁 ...
+            - generic [ref=e324]: 220 页
+        - generic [ref=e328]:
+          - generic [ref=e331]:
+            - link "守望・ 薪火 - 档案馆- 成都中医药大学 成都中医药大学档案馆 https://archives.cdutcm.edu.cn › upload › file › 守..." [ref=e333] [cursor=pointer]:
+              - /url: https://archives.cdutcm.edu.cn/static/upload/file/20250513/%E5%AE%88%E6%9C%9B.pdf
+              - heading "守望・ 薪火 - 档案馆- 成都中医药大学" [level=3] [ref=e334]
+              - generic [ref=e339]:
+                - generic [ref=e341]: 成都中医药大学档案馆
+                - generic [ref=e343]: https://archives.cdutcm.edu.cn › upload › file › 守...
+            - generic [ref=e344]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e345] [cursor=pointer]:
+              - img [ref=e348]
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - generic [ref=e352]: 2025年5月12日 —
+              - generic [ref=e353]:
+                - text: 他对中
+                - emphasis [ref=e354]: 药学
+                - text: 的
+                - emphasis [ref=e355]: 发展
+                - text: 有深入研究。他认为，几千年来中
+                - emphasis [ref=e356]: 药学
+                - text: 的核心是临床效用，. 其特色是注重整体效应，理法方药环环相扣。为探索当今中
+                - emphasis [ref=e357]: 药学
+                - text: 自身
+                - emphasis [ref=e358]: 发展
+                - text: 的途. 径 ...
+            - generic [ref=e359]: 323 页
+        - generic [ref=e363]:
+          - generic [ref=e366]:
+            - link "烟台大学2018-2019 学年专业人才培养状况报告 山东教育厅 http://edu.shandong.gov.cn › download › downfile" [ref=e368] [cursor=pointer]:
+              - /url: http://edu.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=aba9c90c7a574fb6baea4b2c696c39ae.pdf
+              - heading "烟台大学2018-2019 学年专业人才培养状况报告" [level=3] [ref=e369]
+              - generic [ref=e371]:
+                - img [ref=e375]
+                - generic [ref=e377]:
+                  - generic [ref=e379]: 山东教育厅
+                  - generic [ref=e381]: http://edu.shandong.gov.cn › download › downfile
+            - generic [ref=e382]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e383] [cursor=pointer]:
+              - img [ref=e386]
+          - generic [ref=e390]:
+            - text: 提高学习兴趣，引导学生
+            - emphasis [ref=e391]: 考研深造
+            - text: ； 通过组织各种科技与创新能力竞赛，培养. 学生的创新思维和综合能力，重点突出工程实践能力的培养，适应社会
+            - emphasis [ref=e392]: 发展
+            - text: 对人. 才培养的需求 ...
+        - generic [ref=e396]:
+          - generic [ref=e399]:
+            - link "却很少有人劝退安全，食品、药学、医学这些付出回报严重 ... 小桔灯网 https://www.bbs.iivd.net › thread-79880-1-1" [ref=e401] [cursor=pointer]:
+              - /url: https://www.bbs.iivd.net/thread-79880-1-1.html
+              - heading "却很少有人劝退安全，食品、药学、医学这些付出回报严重 ..." [level=3] [ref=e402]
+              - generic [ref=e404]:
+                - img [ref=e408]
+                - generic [ref=e410]:
+                  - generic [ref=e412]: 小桔灯网
+                  - generic [ref=e414]: https://www.bbs.iivd.net › thread-79880-1-1
+            - button "关于这条结果的详细信息" [ref=e415] [cursor=pointer]:
+              - img [ref=e418]
+          - generic [ref=e422]:
+            - text: ...
+            - emphasis [ref=e423]: 深造
+            - text: 之后就好找工作了” 3，你起早摸黑努力1年，终于考上了研，997搬砖3年，硕士找 ...
+            - emphasis [ref=e424]: 药学
+            - text: 有
+            - emphasis [ref=e425]: 药师
+            - text: 资格证。这是保证其专业有效性的证，有证往往意味着学历有那么一 ...
+        - generic [ref=e429]:
+          - generic [ref=e432]:
+            - link "下載完整版啟思文集 HKU Li Ka Shing Faculty of Medicine https://www.med.hku.hk › ..." [ref=e434] [cursor=pointer]:
+              - /url: https://www.med.hku.hk/85caduceus/Caduceus_full%20version.pdf
+              - heading "下載完整版啟思文集" [level=3] [ref=e435]
+              - generic [ref=e440]:
+                - generic [ref=e442]: HKU Li Ka Shing Faculty of Medicine
+                - generic [ref=e444]: https://www.med.hku.hk › ...
+            - generic [ref=e445]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e446] [cursor=pointer]:
+              - img [ref=e449]
+          - generic [ref=e451]:
+            - generic [ref=e453]:
+              - text: 一曰：
+              - emphasis [ref=e454]: 藥學
+              - text: 有兩多，藥多，蓋常用的藥有教，不用的又有，甚至禁用. 了的又有，服乎？單「反羊吊」藥就有廿五種，驚未？ 副作用多，藥無大小，皆有副用作若干，甚至一些 ...
+            - generic [ref=e455]: 635 页
+        - generic [ref=e459]:
+          - generic [ref=e462]:
+            - link "就沒有下一代的成長 國立政治大學法學院 https://www.law.nccu.edu.tw › 政大法訊02_跨頁_" [ref=e464] [cursor=pointer]:
+              - /url: https://www.law.nccu.edu.tw/xhr/announcements/file/5ed07c6adca3a33a1100003e/%E6%94%BF%E5%A4%A7%E6%B3%95%E8%A8%8A02_%E8%B7%A8%E9%A0%81_.pdf
+              - heading "就沒有下一代的成長" [level=3] [ref=e465]
+              - generic [ref=e470]:
+                - generic [ref=e472]: 國立政治大學法學院
+                - generic [ref=e474]: https://www.law.nccu.edu.tw › 政大法訊02_跨頁_
+            - generic [ref=e475]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e476] [cursor=pointer]:
+              - img [ref=e479]
+          - generic [ref=e482]:
+            - generic [ref=e483]: 2018年5月2日 —
+            - generic [ref=e484]:
+              - text: 有的學長從小立志念法律，. 有的學姊工作十年才
+              - emphasis [ref=e485]: 轉行
+              - text: 念法律，. 有的人一直在 ... 他說，初
+              - emphasis [ref=e486]: 執業
+              - text: 時台灣資本市場
+              - emphasis [ref=e487]: 發展
+              - text: 剛起步，許多. 法律制度都需要靠 ...
+        - generic [ref=e491]:
+          - generic [ref=e494]:
+            - link "《神仙湖畔》建校10周年专刊_1 香港中文大学（深圳） https://www.cuhk.edu.cn › sites › files" [ref=e496] [cursor=pointer]:
+              - /url: https://www.cuhk.edu.cn/sites/webmaster.prod1.dpsite04.cuhk.edu.cn/files/2024-03/%E3%80%8A%E7%A5%9E%E4%BB%99%E6%B9%96%E7%95%94%E3%80%8B%E5%BB%BA%E6%A0%A110%E5%91%A8%E5%B9%B4%E4%B8%93%E5%88%8A_1.pdf
+              - heading "《神仙湖畔》建校10周年专刊_1" [level=3] [ref=e497]
+              - generic [ref=e502]:
+                - generic [ref=e504]: 香港中文大学（深圳）
+                - generic [ref=e506]: https://www.cuhk.edu.cn › sites › files
+            - generic [ref=e507]:
+              - generic:
+                - generic: PDF
+            - button "关于这条结果的详细信息" [ref=e508] [cursor=pointer]:
+              - img [ref=e511]
+          - generic [ref=e513]:
+            - generic [ref=e514]:
+              - generic [ref=e515]: 2024年3月21日 —
+              - generic [ref=e516]:
+                - text: 国家
+                - emphasis [ref=e517]: 执业药师
+                - text: 考试。在中文医疗场景上，华佗GPT 比国际知名的GPT-4 ... 职业规划与发展处搭建完善的职业教育. 体系，积极培养专业的
+                - emphasis [ref=e518]: 职业发展
+                - text: 团队 ...
+            - generic [ref=e519]: 69 页
+      - navigation [ref=e522]:
+        - heading "网页导航" [level=1] [ref=e523]
+        - text: "1"
+        - link "Page 2" [ref=e526] [cursor=pointer]:
+          - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88+%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0+%E8%BD%AC%E8%A1%8C&sca_esv=50e2bf8f38455036&ei=dnfuaYuQJOml2roP8vvt-Ac&start=10&sa=N&sstk=Af77f_eU8JGsCZhQyCifOcQ0vqpyZFAr1IPftIoPrT_f0taEgngnBNLVDqAg3I9xSYXwgNTUGxx0wz8cSjevalmzFXnwFqiupHfbtQ&ved=2ahUKEwiLo_Wyr4yUAxXpklYBHfJ9G38Q8tMDegQIMRAE
+          - text: "2"
+        - heading "下一页" [level=2] [ref=e528]:
+          - link "下一页" [ref=e529] [cursor=pointer]:
+            - /url: /search?q=%E8%97%8F%E8%8D%AF%E5%AD%A6+%E6%89%A7%E4%B8%9A%E8%8D%AF%E5%B8%88+%E8%81%8C%E4%B8%9A%E5%8F%91%E5%B1%95+%E8%80%83%E7%A0%94+%E6%B7%B1%E9%80%A0+%E8%BD%AC%E8%A1%8C&sca_esv=50e2bf8f38455036&ei=dnfuaYuQJOml2roP8vvt-Ac&start=10&sa=N&sstk=Af77f_eU8JGsCZhQyCifOcQ0vqpyZFAr1IPftIoPrT_f0taEgngnBNLVDqAg3I9xSYXwgNTUGxx0wz8cSjevalmzFXnwFqiupHfbtQ&ved=2ahUKEwiLo_Wyr4yUAxXpklYBHfJ9G38Q8NMDegQIMRAG
+            - generic [ref=e531]: 下一页
+      - navigation
+    - contentinfo [ref=e532]:
+      - heading "页脚链接" [level=1] [ref=e533]
+      - generic [ref=e537]:
+        - generic [ref=e541]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e543] [cursor=pointer]:
+            - generic [ref=e544]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e546]:
+              - text: "-"
+              - generic [ref=e547]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e549] [cursor=pointer]: 更新位置信息
+        - generic [ref=e552]:
+          - link "帮助" [ref=e553] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e554] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e555] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e556] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

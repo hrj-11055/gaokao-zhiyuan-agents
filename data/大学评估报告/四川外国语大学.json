@@ -1,0 +1,36 @@
+{
+  "university_name": "四川外国语大学",
+  "short_name": "SISU / 川外",
+  "location": {
+    "city": "重庆",
+    "district": "沙坪坝区",
+    "feature": "歌乐山下，内陆开放高地"
+  },
+  "academic_standing": {
+    "key_discipline": "外国语言文学 (A-)",
+    "language_count": 22,
+    "doctorate_points": 1
+  },
+  "student_profile": {
+    "gender_ratio": "约 1:4 (男:女)",
+    "source_region": "西南地区为主",
+    "average_score_percentile": "前 2% - 8%"
+  },
+  "employment_stats": {
+    "further_study_total": "24.5%",
+    "top_employers": [
+      "华为",
+      "字节跳动",
+      "外交部",
+      "各大银行"
+    ],
+    "median_salary_5y": 10500
+  },
+  "evaluation_scores": {
+    "academic": 3.8,
+    "employment": 3.5,
+    "globalization": 4.2,
+    "location_advantage": 3.7,
+    "comprehensive_score": 3.74
+  }
+}

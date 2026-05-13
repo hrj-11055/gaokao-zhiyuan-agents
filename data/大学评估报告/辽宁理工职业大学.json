@@ -1,0 +1,44 @@
+{
+  "university_name": "辽宁理工职业大学",
+  "short_name": "辽理工职大",
+  "attributes": {
+    "type": "民办职业本科",
+    "location": "辽宁省锦州市",
+    "first_batch_pilot": true
+  },
+  "academic_stats": {
+    "key_majors": [
+      "机械设计制造及自动化",
+      "自动化技术与应用",
+      "现代物流管理"
+    ],
+    "double_qualified_teacher_ratio": ">50%",
+    "national_pilot_projects": [
+      "1+X证书制度",
+      "现代学徒制"
+    ]
+  },
+  "admission_data_2024": {
+    "liaoning_physics_cutoff": 375,
+    "liaoning_history_cutoff": 425,
+    "hebei_physics_cutoff": 448
+  },
+  "employment_stats": {
+    "primary_industry": "制造业",
+    "starting_salary_median": 4500,
+    "top_employers": [
+      "辽宁忠旺",
+      "锦州石化",
+      "京东物流"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.5,
+    "graduate_value": 3.2,
+    "location_advantage": 3.5,
+    "globalization": 1.5,
+    "student_freedom": 3.0,
+    "brand_asset": 3.8,
+    "weighted_total": 2.92
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "university_name": "上海师范大学天华学院",
+  "short_name": "天华学院",
+  "location": {
+    "city": "上海",
+    "district": "嘉定区",
+    "address": "上海市嘉定区胜辛北路1661号"
+  },
+  "academic_stats": {
+    "provincial_first_class_majors": 14,
+    "key_disciplines": [
+      "学前教育",
+      "康复治疗学",
+      "汽车服务工程"
+    ],
+    "faculty_with_masters_degree_plus": "85%+"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "95.78%",
+    "overseas_study_rate": "5.5%",
+    "top_industry": "教育"
+  },
+  "financial_cost": {
+    "average_tuition": "48,000 - 80,000 RMB/Year",
+    "accommodation_fee": "3,000 - 5,000 RMB/Year"
+  },
+  "evaluation_scores": {
+    "academic": 2.2,
+    "employment": 3.2,
+    "location": 4.2,
+    "globalization": 4.5,
+    "freedom": 2.8,
+    "brand": 3.5,
+    "total_weighted_score": 3.19
+  }
+}

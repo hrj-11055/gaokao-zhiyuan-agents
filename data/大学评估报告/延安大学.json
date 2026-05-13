@@ -1,0 +1,53 @@
+{
+  "university_name": "延安大学",
+  "short_name": "YAU",
+  "location": {
+    "province": "陕西省",
+    "city": "延安市",
+    "city_gdp_2023": "2231亿元",
+    "city_rank": "全国130-140名区间"
+  },
+  "academic_level": {
+    "doctorate_points": 2,
+    "master_points": 18,
+    "key_disciplines": [
+      "马克思主义理论",
+      "政治学",
+      "临床医学"
+    ],
+    "esi_top_1_percent": [
+      "临床医学"
+    ],
+    "academician_workstations": 7
+  },
+  "admission_data_2024": {
+    "shaanxi_liberal_arts_rank": 11468,
+    "shaanxi_science_rank": 55619,
+    "competitive_index": "中等偏上"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "84%",
+    "further_study_rate": "16.70%",
+    "starting_salary_median": 5200,
+    "top_employer_sectors": [
+      "医疗卫生",
+      "教育",
+      "能源化工",
+      "公职系统"
+    ]
+  },
+  "campus_life": {
+    "new_campus_condition": "优越",
+    "dormitory_standard": "4人间/空调/独卫",
+    "transfer_policy_flexibility": "高"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.5,
+    "graduate_value": 2.8,
+    "location_potential": 2.4,
+    "globalization": 2.0,
+    "student_empowerment": 3.2,
+    "brand_asset": 3.0,
+    "weighted_total_score": 2.61
+  }
+}

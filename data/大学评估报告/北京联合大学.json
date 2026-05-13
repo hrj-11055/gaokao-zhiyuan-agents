@@ -1,0 +1,45 @@
+{
+  "university_info": {
+    "name": "北京联合大学",
+    "english_name": "Beijing Union University",
+    "location": "北京",
+    "type": "公办综合性大学",
+    "level": "博士学位授予单位"
+  },
+  "academic_stats": {
+    "doctoral_points": 1,
+    "master_points": 10,
+    "key_disciplines": [
+      "软件工程",
+      "工商管理",
+      "旅游管理",
+      "特殊教育"
+    ],
+    "academician_workstations": 2
+  },
+  "admission_data_2024": {
+    "beijing_min_score_phys": 500,
+    "beijing_min_score_hist": 509,
+    "hebei_min_score_phys": 523,
+    "hebei_min_score_hist": 585
+  },
+  "employment_stats": {
+    "stay_in_beijing_rate": "80%+",
+    "further_study_rate_total": "16.54%",
+    "top_employers": [
+      "首旅集团",
+      "京东方",
+      "中国建筑",
+      "北京银行"
+    ]
+  },
+  "evaluation_scores": {
+    "academic": 3.2,
+    "employment": 3.8,
+    "location": 4.8,
+    "globalization": 3.5,
+    "student_freedom": 3.0,
+    "brand": 3.2,
+    "overall_weighted": 3.64
+  }
+}

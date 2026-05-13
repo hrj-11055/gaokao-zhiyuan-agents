@@ -1,0 +1,38 @@
+{
+  "university_name": "滁州学院",
+  "short_name": "Chuzhou University / CZU",
+  "location": {
+    "province": "安徽",
+    "city": "滁州",
+    "region_advantage": "南京都市圈核心成员"
+  },
+  "academic": {
+    "key_disciplines": [
+      "地理信息科学",
+      "计算机科学与技术",
+      "应用化学"
+    ],
+    "master_points_status": "立项建设中",
+    "national_first_class_majors": 2
+  },
+  "recruitment": {
+    "avg_rank_anhui_liberal": 26000,
+    "avg_rank_anhui_science": 125000,
+    "competition_level": "Moderate"
+  },
+  "employment": {
+    "further_study_rate": "18.5%",
+    "top_industry": "Photovoltaic & Manufacturing",
+    "starting_salary_median": 5200,
+    "top_employer": "Longi Green Energy"
+  },
+  "scores": {
+    "academic_capital": 2.5,
+    "graduate_value": 3.2,
+    "location_industry": 4.2,
+    "globalization": 1.8,
+    "student_empowerment": 2.8,
+    "brand_asset": 2.6,
+    "comprehensive_score": 2.92
+  }
+}

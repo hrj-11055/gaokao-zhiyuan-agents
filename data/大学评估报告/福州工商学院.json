@@ -1,0 +1,55 @@
+{
+  "university_name": "福州工商学院",
+  "short_name": "福工商 / FZBTU",
+  "established_year": 2002,
+  "location": {
+    "province": "福建",
+    "city": "福州",
+    "district": "永泰葛岭",
+    "environment": "山水校园/天然氧吧"
+  },
+  "academic": {
+    "type": "民办应用型本科",
+    "key_majors": [
+      "工商管理",
+      "财务管理",
+      "广告学",
+      "计算机科学与技术"
+    ],
+    "master_points": 0,
+    "doctor_points": 0,
+    "faculty_structure": {
+      "double_qualified_ratio": "50%+",
+      "source": "母体外聘+自有培养"
+    }
+  },
+  "admission_level": {
+    "average_score_margin": "本科线上 10-30 分",
+    "competitiveness": "中等偏下",
+    "major_flexibility": "极高（转专业宽松）"
+  },
+  "employment": {
+    "initial_employment_rate": "90%+",
+    "further_study_rate": "1.11%",
+    "starting_salary_median": 5000,
+    "top_industries": [
+      "现代服务业",
+      "数字经济",
+      "建筑工程"
+    ]
+  },
+  "facilities": {
+    "dormitory_rating": "A+",
+    "library_rating": "A",
+    "campus_vibe": "Resort-style"
+  },
+  "comprehensive_scores": {
+    "academic_capital": 1.8,
+    "graduate_value": 2.2,
+    "location_power": 2.8,
+    "globalization": 2.0,
+    "student_empowerment": 3.2,
+    "brand_asset": 2.5,
+    "total_weighted_score": 2.23
+  }
+}

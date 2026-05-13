@@ -1,0 +1,47 @@
+{
+  "university_name": "广州大学",
+  "english_name": "Guangzhou University",
+  "location": {
+    "city": "广州",
+    "region": "粤港澳大湾区",
+    "campuses": [
+      "大学城",
+      "桂花岗",
+      "黄埔"
+    ]
+  },
+  "academic_stats": {
+    "academician_count": 6,
+    "esi_top_1_percent_count": 8,
+    "key_disciplines": [
+      "土木工程",
+      "网络空间安全",
+      "统计学",
+      "数学"
+    ],
+    "national_lab_count": 1
+  },
+  "admission_profile": {
+    "guangdong_physics_group_rank": "28000",
+    "guangdong_history_group_rank": "8400",
+    "special_policy": "填满6个志愿零调剂"
+  },
+  "employment_outcomes": {
+    "further_study_rate_total": "35% (含出国)",
+    "local_employment_rate": ">70%",
+    "top_employers": [
+      "华为",
+      "腾讯",
+      "中建筑",
+      "广汽"
+    ],
+    "starting_salary_median": 7800
+  },
+  "evaluation_scores": {
+    "academic_capital": 4.0,
+    "employment_value": 4.2,
+    "location_advantage": 4.7,
+    "student_freedom": 4.3,
+    "comprehensive_score": 4.13
+  }
+}

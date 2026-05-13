@@ -1,0 +1,43 @@
+{
+  "university_info": {
+    "name": "中国科学技术大学",
+    "abbreviation": "USTC",
+    "location": "安徽合肥",
+    "type": "研究型大学",
+    "affiliation": "中国科学院"
+  },
+  "academic_strength": {
+    "a_plus_disciplines": [
+      "物理学",
+      "化学",
+      "天文学",
+      "地球物理学",
+      "科学技术史",
+      "核科学与技术",
+      "安全科学与工程"
+    ],
+    "academician_count": 105,
+    "national_labs": 2
+  },
+  "student_quality": {
+    "admission_rank_percentile": "Top 0.1%",
+    "major_transfer_freedom": "100%",
+    "junior_class_program": "Yes"
+  },
+  "career_outcomes": {
+    "further_study_rate": "92.27%",
+    "domestic_study_rate": "74.01%",
+    "overseas_study_rate": "18.26%",
+    "avg_starting_salary_monthly": 11500
+  },
+  "city_synergy": {
+    "city": "Hefei",
+    "strategic_industries": [
+      "Quantum Computing",
+      "AI",
+      "New Energy"
+    ],
+    "city_gdp_2024": "1.27 Trillion RMB"
+  },
+  "overall_score": 4.81
+}

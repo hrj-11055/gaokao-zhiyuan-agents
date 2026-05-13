@@ -1,0 +1,56 @@
+{
+  "university_name": "江苏大学京江学院",
+  "short_name": "京江学院",
+  "location": {
+    "province": "江苏省",
+    "city": "镇江市",
+    "district": "丹徒区",
+    "city_level": "三线城市",
+    "gdp_2024": "5540.01亿元"
+  },
+  "academic_profile": {
+    "parent_university": "江苏大学",
+    "key_disciplines": [
+      "机械工程",
+      "车辆工程",
+      "临床医学",
+      "护理学",
+      "会计学"
+    ],
+    "top_discipline_rank": "母体农业工程 A-",
+    "first_class_provinicial_majors": 5
+  },
+  "admission_data": {
+    "jiangsu_physics_rank_avg": 155000,
+    "jiangsu_history_rank_avg": 50000,
+    "difficulty_level": "Moderate High"
+  },
+  "career_outcomes": {
+    "employment_rate": "91.2%",
+    "further_study_rate": "12.5%",
+    "avg_starting_salary": 5800,
+    "top_employer_sectors": [
+      "智能制造",
+      "医疗卫生",
+      "金融服务"
+    ]
+  },
+  "campus_life": {
+    "dormitory_quality": "Excellent",
+    "study_vibe": "Strong (Kaoyan focused)",
+    "transfer_major_difficulty": "Medium"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.4,
+    "graduate_value": 2.8,
+    "location_potential": 3.2,
+    "global_capability": 2.2,
+    "student_empowerment": 2.8,
+    "brand_asset": 2.7,
+    "weighted_total_score": 2.67
+  },
+  "risk_factors": [
+    "Independent college transition policy",
+    "Resource decoupling from parent university"
+  ]
+}

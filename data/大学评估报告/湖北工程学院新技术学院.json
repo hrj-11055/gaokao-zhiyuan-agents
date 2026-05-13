@@ -1,0 +1,42 @@
+{
+  "university_name": "湖北工程学院新技术学院",
+  "short_name": "湖工新技",
+  "location": {
+    "province": "湖北省",
+    "city": "孝感市",
+    "address": "湖北省孝感市学院路158号"
+  },
+  "academic": {
+    "level": "民办独立学院",
+    "key_majors": [
+      "计算机科学与技术",
+      "机械设计制造及其自动化",
+      "土木工程"
+    ],
+    "provincial_first_class_majors": 1,
+    "academician_count": 0
+  },
+  "admission": {
+    "hubei_history_cutoff_2024": 467,
+    "hubei_physics_cutoff_2024": 452,
+    "difficulty_level": "Low-Medium"
+  },
+  "employment": {
+    "overall_employment_rate": "92.49%",
+    "further_study_rate": "8.5%",
+    "median_starting_salary": 5100,
+    "top_employer_sectors": [
+      "Manufacturing",
+      "Construction",
+      "IT Services"
+    ]
+  },
+  "evaluation": {
+    "comprehensive_score": 2.245,
+    "vibe_tags": [
+      "Practical",
+      "Postgraduate-oriented",
+      "Local-focused"
+    ]
+  }
+}

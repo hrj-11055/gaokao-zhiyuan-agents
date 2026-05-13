@@ -1,0 +1,16 @@
+[    1781ms] [WARNING] A parser-blocking, cross site (i.e. different eTLD+1) script, https://s4.cnzz.com/stat.php?id=1279298074, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details. @ https://app.gaokaozhitongche.com/news/h/L2l85k02:65
+[    1781ms] [WARNING] A parser-blocking, cross site (i.e. different eTLD+1) script, https://s4.cnzz.com/stat.php?id=1279298074, is invoked via document.write. The network request for this script MAY be blocked by the browser in this or a future page load due to poor network connectivity. If blocked in this page load, it will be confirmed in a subsequent console message. See https://www.chromestatus.com/feature/5718547946799104 for more details. @ https://app.gaokaozhitongche.com/news/h/L2l85k02:65
+[    4158ms] [LOG] [] @ https://app.gaokaozhitongche.com/static/js/pdf-review/index.js:349
+[    4158ms] [LOG] [] @ https://app.gaokaozhitongche.com/static/js/pdf-review/index.js:350
+[    4160ms] [LOG] 走进来了呀。。 {config: , ready: , error: , checkJsApi: , onMenuShareTimeline: } @ https://app.gaokaozhitongche.com/static/js/utils/weixin.js:39
+[    4161ms] [LOG] 0 @ https://app.gaokaozhitongche.com/static/js/utils/tool.js?v=2024092516:186
+[    4161ms] [LOG] 2 @ https://app.gaokaozhitongche.com/static/js/utils/tool.js?v=2024092516:193
+[    4166ms] [LOG] array[randomStr] 高 考 直 通 车 @ https://app.gaokaozhitongche.com/news/h/L2l85k02:394
+[    4166ms] [LOG] content [section, p, section, p, p, div#poll_box, input#user_id, input#is_admin, div#pdf-view, div.show-qrcode, div#gradient.gradient] 11 @ https://app.gaokaozhitongche.com/news/h/L2l85k02:395
+[    4166ms] [LOG] JSHandle@node @ https://app.gaokaozhitongche.com/news/h/L2l85k02:397
+[    4172ms] [LOG] {splash_ad: Object, hot_splash_ad: Object, home_list_ad: Object, circle_list_ad: Object, room_list_ad: Object} @ https://app.gaokaozhitongche.com/news/h/L2l85k02:2520
+[    4260ms] [LOG] 微信配置成功 {code: 0, msg: 操作成功, data: Object} @ https://app.gaokaozhitongche.com/static/js/utils/weixin.js:13
+[    4398ms] [LOG] U-Link loadSolution success:  {appkey: 5176b23c56240bf2d400e5e1, type: scheme, wakeupUrl: gkztc://gaokaozhitongche.com/gkztcmy/um?_ukid=3bbe…ongche.com%2Fnews%2Fh%2FL2l85k02&_bizType_=ushare, downloadUrl: https://itunes.apple.com/cn/app/itunes-u/id580462823, clipboardToken: } @ https://g.alicdn.com/jssdk/u-link/index.min.js:0
+[    6002ms] [LOG] {data: Array(0), ret: false, code: 100133, msg: Invalid placement id} @ https://app.gaokaozhitongche.com/news/h/L2l85k02:2640
+[    6002ms] [LOG] 成功3 @ https://app.gaokaozhitongche.com/news/h/L2l85k02:2641
+[    6250ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://app.gaokaozhitongche.com/news/h/L2l85k02:0

@@ -1,0 +1,858 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5]:
+        - link "GuGuData logo" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "GuGuData logo" [ref=e8]
+        - list [ref=e11]:
+          - listitem [ref=e12]:
+            - link "首页" [ref=e13] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e14]:
+            - link "数据服务" [ref=e15] [cursor=pointer]:
+              - /url: /api/all/9/0/9/0/不限
+          - listitem [ref=e16]:
+            - link "MCP服务" [ref=e17] [cursor=pointer]:
+              - /url: /mcp
+          - listitem [ref=e18]:
+            - link "开发者中心" [ref=e19] [cursor=pointer]:
+              - /url: /portal/
+          - listitem [ref=e20]:
+            - link "接口状态" [ref=e21] [cursor=pointer]:
+              - /url: /status
+          - listitem [ref=e22]:
+            - link "联系我们" [ref=e23] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e24]:
+            - link "接口文档 " [ref=e25] [cursor=pointer]:
+              - /url: https://doc.gugudata.com
+              - text: 接口文档
+              - generic [ref=e26]: 
+          - listitem [ref=e27]:
+            - link "工程服务 " [ref=e28] [cursor=pointer]:
+              - /url: https://engineering.gugudata.com
+              - text: 工程服务
+              - generic [ref=e29]: 
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - generic [ref=e33]: 
+          - listitem [ref=e34]:
+            - link "登录" [ref=e35] [cursor=pointer]:
+              - /url: /signin
+          - listitem [ref=e36]: /
+          - listitem [ref=e37]:
+            - link "注册" [ref=e38] [cursor=pointer]:
+              - /url: /signup
+  - generic [ref=e40]:
+    - navigation "Breadcrumb" [ref=e41]:
+      - list [ref=e42]:
+        - listitem [ref=e43]:
+          - link "首页" [ref=e44] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e45]:
+          - generic [ref=e46]: ›
+        - listitem [ref=e47]:
+          - link "数据服务" [ref=e48] [cursor=pointer]:
+            - /url: /api/all/9/0/9/0/不限
+        - listitem [ref=e49]:
+          - generic [ref=e50]: ›
+        - listitem [ref=e51]:
+          - link "教育/高考" [ref=e52] [cursor=pointer]:
+            - /url: /api/metadata/9/0/9/0
+        - listitem [ref=e53]:
+          - generic [ref=e54]: ›
+        - listitem [ref=e55]:
+          - generic "历年高考高校录取分数线" [ref=e56]
+    - generic [ref=e57]:
+      - img "Logo" [ref=e59]
+      - heading "稳定提供服务 10 年 历年高考高校录取分数线" [level=1] [ref=e61]:
+        - img "稳定提供服务 10 年" [ref=e62]
+        - text: 历年高考高校录取分数线
+      - list [ref=e63]:
+        - listitem [ref=e64]:
+          - generic [ref=e65]: 
+          - link "教育/高考" [ref=e66] [cursor=pointer]:
+            - /url: /api/metadata/9/0/9/0
+        - listitem [ref=e67]:
+          - generic [ref=e68]: 
+          - text: 高校在各省录取分数线
+        - listitem [ref=e69]:
+          - generic [ref=e70]: 
+          - text: 高校全量数据 / 可按省或高校查询
+        - listitem [ref=e71]:
+          - generic [ref=e72]: 
+          - link "基础数据" [ref=e73] [cursor=pointer]:
+            - /url: /api/all/9/0/9/0/基础数据
+          - text: /
+          - link "高校高考" [ref=e74] [cursor=pointer]:
+            - /url: /api/all/9/0/9/0/高校高考
+        - listitem [ref=e75]:
+          - generic [ref=e76]: 
+          - text: 数据校验更新于 9 小时前
+      - generic [ref=e77]:
+        - link " 3999元/年 限时折扣 1999元/年 立即购买" [ref=e78] [cursor=pointer]:
+          - /url: /order/ceecollegeline
+          - generic [ref=e79]:
+            - generic [ref=e80]: 
+            - text: 3999元/年
+            - generic [ref=e81]:
+              - text: 限时折扣
+              - strong [ref=e82]: 1999元/年
+            - text: 立即购买
+        - link "接口数据预览" [ref=e83] [cursor=pointer]:
+          - /url: /preview/ceecollegeline
+          - generic [ref=e84]: 
+          - text: 接口数据预览
+  - list [ref=e88]:
+    - listitem [ref=e89]:
+      - link "API 功能" [ref=e90]:
+        - /url: "#anchor_feature"
+    - listitem [ref=e91]:
+      - link "API 文档" [ref=e92] [cursor=pointer]:
+        - /url: "#anchor_api"
+    - listitem [ref=e93]:
+      - link "接口状态码" [ref=e94] [cursor=pointer]:
+        - /url: "#anchor_systemcode"
+    - listitem [ref=e95]:
+      - link "请求示例代码" [ref=e96] [cursor=pointer]:
+        - /url: "#anchor_code"
+    - listitem [ref=e97]:
+      - link "更多请求示例与预览数据 新功能图标" [ref=e98] [cursor=pointer]:
+        - /url: "#demos"
+        - text: 更多请求示例与预览数据
+        - img "新功能图标" [ref=e99]
+    - listitem [ref=e100]:
+      - link "常见问题 Q&A" [ref=e101] [cursor=pointer]:
+        - /url: "#anchor_qa"
+    - listitem [ref=e102]:
+      - link "服务协议" [ref=e103] [cursor=pointer]:
+        - /url: "#anchor_agreement"
+    - listitem [ref=e104]:
+      - link "技术支持" [ref=e105] [cursor=pointer]:
+        - /url: "#anchor_contact"
+  - generic [ref=e108]:
+    - list [ref=e109]:
+      - listitem [ref=e110]:
+        - generic [ref=e112]: 
+        - generic [ref=e113]:
+          - heading "API 功能" [level=2] [ref=e114]
+          - list [ref=e115]:
+            - listitem [ref=e116]: 2026 年数据即将更新；
+            - listitem [ref=e117]: 全国所有高校在全国各省的详细录取数据，从 2015 年至 2025 年；
+            - listitem [ref=e118]: 百万级别已校对历史数据；
+            - listitem [ref=e119]: 多种查询条件便于多维度分析；
+            - listitem [ref=e120]: 数据持续自动更新与维护；
+            - listitem [ref=e121]: 毫秒级查询性能；
+            - listitem [ref=e122]: 全接口支持 HTTPS（TLS v1.0 / v1.1 / v1.2 / v1.3）；
+            - listitem [ref=e123]: 全面兼容 Apple ATS；
+            - listitem [ref=e124]: 全国多节点 CDN 部署；
+            - listitem [ref=e125]: 接口极速响应，多台服务器构建 API 接口负载均衡。
+            - listitem [ref=e126]:
+              - link "接口调用状态与状态监控" [ref=e127] [cursor=pointer]:
+                - /url: /status
+      - listitem [ref=e128]:
+        - generic [ref=e130]: 
+        - generic [ref=e131]:
+          - heading "API 文档" [level=2] [ref=e132]
+          - paragraph [ref=e133]:
+            - strong [ref=e134]: "接口地址:"
+            - text: https://api.gugudata.com/metadata/ceecollegeline
+          - paragraph [ref=e135]:
+            - strong [ref=e136]: "返回格式:"
+            - text: application/json; charset=utf-8
+          - paragraph [ref=e137]:
+            - strong [ref=e138]: "请求方式:"
+            - text: GET
+          - paragraph [ref=e139]:
+            - strong [ref=e140]: "请求协议:"
+            - text: HTTPS
+          - paragraph [ref=e141]:
+            - strong [ref=e142]: "请求示例:"
+            - text: https://api.gugudata.com/metadata/ceecollegeline?appkey=APPKEY&searchtype=&keyword=&pageindex=1&pagesize=10&year=&min=&type=&keywordstrict=false&enrollprovince=&batchname=&collegeprovincename=&enrollmenttype=&schooluuid=&sort=&minrange=0
+          - paragraph [ref=e143]:
+            - strong [ref=e144]: "数据预览:"
+            - link "https://www.gugudata.com/preview/ceecollegeline" [ref=e146] [cursor=pointer]:
+              - /url: /preview/ceecollegeline
+          - paragraph [ref=e147]:
+            - strong [ref=e148]: "接口测试:"
+            - link "https://api.gugudata.com/metadata/ceecollegeline/demo" [ref=e150] [cursor=pointer]:
+              - /url: https://api.gugudata.com/metadata/ceecollegeline/demo
+          - paragraph [ref=e151]:
+            - strong [ref=e152]: "OpenAPI:"
+            - link "https://www.gugudata.com/openapi/gugudata.openapi.3.1.json" [ref=e154] [cursor=pointer]:
+              - /url: https://www.gugudata.com/openapi/gugudata.openapi.3.1.json
+          - paragraph [ref=e156]: 请求参数（GET 请求方式可参见下方示例代码）
+          - table [ref=e157]:
+            - rowgroup [ref=e158]:
+              - row "参数名 参数类型 是否必须 默认值 备注" [ref=e159]:
+                - columnheader "参数名" [ref=e160]
+                - columnheader "参数类型" [ref=e161]
+                - columnheader "是否必须" [ref=e162]
+                - columnheader "默认值" [ref=e163]
+                - columnheader "备注" [ref=e164]
+            - rowgroup [ref=e165]:
+              - row "appkey string 是 APPKEY 付费后获取的 APPKEY" [ref=e166]:
+                - cell "appkey" [ref=e167]
+                - cell "string" [ref=e168]
+                - cell "是" [ref=e169]
+                - cell "APPKEY" [ref=e170]
+                - cell "付费后获取的 APPKEY" [ref=e171]
+              - row "searchtype string 是 查询条件类型，支持录取省份以及高校名称查询，参数值分别为：PROVINCENAME 或 COLLEGENAME" [ref=e172]:
+                - cell "searchtype" [ref=e173]
+                - cell "string" [ref=e174]
+                - cell "是" [ref=e175]
+                - cell [ref=e176]
+                - cell "查询条件类型，支持录取省份以及高校名称查询，参数值分别为：PROVINCENAME 或 COLLEGENAME" [ref=e177]
+              - row "keyword string 是 录取省份或高校名称，高校名称支持模糊查询。searchtype=PROVINCENAME，此参数值传递录取省份；searchtype=COLLEGENAME，此参数值传递高校名称。招生省份枚举：上海|云南|内蒙古|北京|台湾|吉林|四川|天津|宁夏|安徽|山东|山西|广东|广西|新疆|江苏|江西|河北|河南|浙江|海南|湖北|湖南|澳门|甘肃|福建|西藏|贵州|辽宁|重庆|陕西|青海|香港|黑龙江" [ref=e178]:
+                - cell "keyword" [ref=e179]
+                - cell "string" [ref=e180]
+                - cell "是" [ref=e181]
+                - cell [ref=e182]
+                - cell "录取省份或高校名称，高校名称支持模糊查询。searchtype=PROVINCENAME，此参数值传递录取省份；searchtype=COLLEGENAME，此参数值传递高校名称。招生省份枚举：上海|云南|内蒙古|北京|台湾|吉林|四川|天津|宁夏|安徽|山东|山西|广东|广西|新疆|江苏|江西|河北|河南|浙江|海南|湖北|湖南|澳门|甘肃|福建|西藏|贵州|辽宁|重庆|陕西|青海|香港|黑龙江" [ref=e183]
+              - row "pageindex integer 是 1 分页参数，第几页" [ref=e184]:
+                - cell "pageindex" [ref=e185]
+                - cell "integer" [ref=e186]
+                - cell "是" [ref=e187]
+                - cell "1" [ref=e188]
+                - cell "分页参数，第几页" [ref=e189]
+              - row "pagesize integer 是 10 分页参数，每页总条数，取值范围在 1 ~ 20 之间（含）" [ref=e190]:
+                - cell "pagesize" [ref=e191]
+                - cell "integer" [ref=e192]
+                - cell "是" [ref=e193]
+                - cell "10" [ref=e194]
+                - cell "分页参数，每页总条数，取值范围在 1 ~ 20 之间（含）" [ref=e195]
+              - row "year integer 是 查询的录取年份，如 2020、2021、2022、2023、2024、2025。参数默认值为 0：即获取所有年份的录取数据" [ref=e196]:
+                - cell "year" [ref=e197]
+                - cell "integer" [ref=e198]
+                - cell "是" [ref=e199]
+                - cell [ref=e200]
+                - cell "查询的录取年份，如 2020、2021、2022、2023、2024、2025。参数默认值为 0：即获取所有年份的录取数据" [ref=e201]
+              - row "min integer 否 录取最低分查询条件，筛选出最低分小于等于查询条件的值" [ref=e202]:
+                - cell "min" [ref=e203]
+                - cell "integer" [ref=e204]
+                - cell "否" [ref=e205]
+                - cell [ref=e206]
+                - cell "录取最低分查询条件，筛选出最低分小于等于查询条件的值" [ref=e207]
+              - row "type string 否 传递的参数值可选为：3+证书|体育文|体育理|体育类|体育类（历史）|体育类（物理）|其他艺术|农学类|医学类|历史类|学考|学考文|学考理|幼师类|建筑类|文科|旅游类|汉授体育|汉授编导|汉授美术|汉授音乐|汽驾类|烹饪类|牧医类|物理类|理科|综合|美工设计类|艺术文|艺术理|艺术类|艺术类（历史）|艺术类（物理）|蒙授体育|蒙授其他艺术|蒙授文科|蒙授理科|蒙授美术|蒙授音乐|蒙牧医类|计算机类|财会类" [ref=e208]:
+                - cell "type" [ref=e209]
+                - cell "string" [ref=e210]
+                - cell "否" [ref=e211]
+                - cell [ref=e212]
+                - cell "传递的参数值可选为：3+证书|体育文|体育理|体育类|体育类（历史）|体育类（物理）|其他艺术|农学类|医学类|历史类|学考|学考文|学考理|幼师类|建筑类|文科|旅游类|汉授体育|汉授编导|汉授美术|汉授音乐|汽驾类|烹饪类|牧医类|物理类|理科|综合|美工设计类|艺术文|艺术理|艺术类|艺术类（历史）|艺术类（物理）|蒙授体育|蒙授其他艺术|蒙授文科|蒙授理科|蒙授美术|蒙授音乐|蒙牧医类|计算机类|财会类" [ref=e213]
+              - row "keywordstrict string 否 false 控制 keyword 参数在查询高校名称时是否进行模糊查询，true 为精确匹配，默认值为 false 进行模糊查询" [ref=e214]:
+                - cell "keywordstrict" [ref=e215]
+                - cell "string" [ref=e216]
+                - cell "否" [ref=e217]
+                - cell "false" [ref=e218]
+                - cell "控制 keyword 参数在查询高校名称时是否进行模糊查询，true 为精确匹配，默认值为 false 进行模糊查询" [ref=e219]
+              - row "enrollprovince string 否 用于 searchtype=COLLEGENAME 时，附加一个招生省份的条件，如查询北京大学在江苏的录取数据，那么该值传递 “江苏” 即可" [ref=e220]:
+                - cell "enrollprovince" [ref=e221]
+                - cell "string" [ref=e222]
+                - cell "否" [ref=e223]
+                - cell [ref=e224]
+                - cell "用于 searchtype=COLLEGENAME 时，附加一个招生省份的条件，如查询北京大学在江苏的录取数据，那么该值传递 “江苏” 即可" [ref=e225]
+              - row "batchname string 否 录取批次参数，可使用英文逗号分隔传递多个值。可选枚举值：专科批|专科批A段|专科批B段|专科批F段|专科提前批|专科提前批A段|专科特殊类型批|专科特殊类型批次K段|专项计划批|体育本科提前批|体育类本科批|国家专项计划|国家专项计划本科一批|国家专项计划本科二批|国家专项计划本科批|国家及地方专项、南疆单列、对口援疆计划本科一批次|地方专项计划本科批|地方农村专项计划批|平行录取一段|平行录取三段|平行录取二段|提前一批本科|提前专项批|提前批|提前批A段|提前批B段|提前批第一批本科|提前本科批|普通本科批|普通类一段|普通类二段|普通类平行录取|普通类提前批|本科A批|本科A段|本科B批|本科一批|本科一批A1段|本科一批A段|本科一批B段|本科一批H段|本科一批I段|本科一批U段|本科一批预科|本科一段|本科三批|本科三批A段|本科三批B段|本科专项计划批|本科二批|本科二批A段|本科二批B段|本科二批C段|本科二批K段|本科二批及预科|本科二段|本科批|本科批A段|本科批B段|本科批C段|本科批一段|本科提前批|本科提前批A段|本科提前批B段|本科提前批C|本科提前批C段|本科提前批艺术本科第二批|本科提前批艺术类|本科提前批艺术类A段|本科提前批艺术类第1小批|本科提前批（非军检）|本科第一批提前批|本科综合评价批|本科艺术甲批平行段|第一批|第二批第二段|艺本一批|艺术本科A段|艺术本科批B段|艺术本科提前批|艺术类专科批|艺术类本科A段|艺术类本科批|艺术类本科提前批|艺术类本科提前批B段|艺术类第一批|艺术类（本科二批B段）|蒙授本科一批|蒙授本科二批|蒙授高职高专|零志愿批次|零批次|高分优先投档批|高校专项计划|高校专项计划批次|高校专项计划本科批|高职（专科）批Q段|高职（专科）批R段" [ref=e226]:
+                - cell "batchname" [ref=e227]
+                - cell "string" [ref=e228]
+                - cell "否" [ref=e229]
+                - cell [ref=e230]
+                - cell "录取批次参数，可使用英文逗号分隔传递多个值。可选枚举值：专科批|专科批A段|专科批B段|专科批F段|专科提前批|专科提前批A段|专科特殊类型批|专科特殊类型批次K段|专项计划批|体育本科提前批|体育类本科批|国家专项计划|国家专项计划本科一批|国家专项计划本科二批|国家专项计划本科批|国家及地方专项、南疆单列、对口援疆计划本科一批次|地方专项计划本科批|地方农村专项计划批|平行录取一段|平行录取三段|平行录取二段|提前一批本科|提前专项批|提前批|提前批A段|提前批B段|提前批第一批本科|提前本科批|普通本科批|普通类一段|普通类二段|普通类平行录取|普通类提前批|本科A批|本科A段|本科B批|本科一批|本科一批A1段|本科一批A段|本科一批B段|本科一批H段|本科一批I段|本科一批U段|本科一批预科|本科一段|本科三批|本科三批A段|本科三批B段|本科专项计划批|本科二批|本科二批A段|本科二批B段|本科二批C段|本科二批K段|本科二批及预科|本科二段|本科批|本科批A段|本科批B段|本科批C段|本科批一段|本科提前批|本科提前批A段|本科提前批B段|本科提前批C|本科提前批C段|本科提前批艺术本科第二批|本科提前批艺术类|本科提前批艺术类A段|本科提前批艺术类第1小批|本科提前批（非军检）|本科第一批提前批|本科综合评价批|本科艺术甲批平行段|第一批|第二批第二段|艺本一批|艺术本科A段|艺术本科批B段|艺术本科提前批|艺术类专科批|艺术类本科A段|艺术类本科批|艺术类本科提前批|艺术类本科提前批B段|艺术类第一批|艺术类（本科二批B段）|蒙授本科一批|蒙授本科二批|蒙授高职高专|零志愿批次|零批次|高分优先投档批|高校专项计划|高校专项计划批次|高校专项计划本科批|高职（专科）批Q段|高职（专科）批R段" [ref=e231]
+              - row "collegeprovincename string 否 学院所属省份筛选，如获取所有江苏省高校的录取分数线，那么该值传递 “江苏” 即可，院校省份枚举：上海|云南|内蒙古|北京|吉林|四川|天津|宁夏|安徽|山东|山西|广东|广西|新疆|江苏|江西|河北|河南|浙江|海南|湖北|湖南|甘肃|福建|西藏|贵州|辽宁|重庆|陕西|青海|香港|黑龙江" [ref=e232]:
+                - cell "collegeprovincename" [ref=e233]
+                - cell "string" [ref=e234]
+                - cell "否" [ref=e235]
+                - cell [ref=e236]
+                - cell "学院所属省份筛选，如获取所有江苏省高校的录取分数线，那么该值传递 “江苏” 即可，院校省份枚举：上海|云南|内蒙古|北京|吉林|四川|天津|宁夏|安徽|山东|山西|广东|广西|新疆|江苏|江西|河北|河南|浙江|海南|湖北|湖南|甘肃|福建|西藏|贵州|辽宁|重庆|陕西|青海|香港|黑龙江" [ref=e237]
+              - row "enrollmenttype string 否 招生类型筛选，如：普通类" [ref=e238]:
+                - cell "enrollmenttype" [ref=e239]
+                - cell "string" [ref=e240]
+                - cell "否" [ref=e241]
+                - cell [ref=e242]
+                - cell "招生类型筛选，如：普通类" [ref=e243]
+              - row "schooluuid string 否 咕咕数据平台高校唯一 ID，此唯一 ID 可与 全国大学高校基础信息、历年高考专业录取分数线 等接口中的 SchoolUUID 进行唯一匹配" [ref=e244]:
+                - cell "schooluuid" [ref=e245]
+                - cell "string" [ref=e246]
+                - cell "否" [ref=e247]
+                - cell [ref=e248]
+                - cell "咕咕数据平台高校唯一 ID，此唯一 ID 可与 全国大学高校基础信息、历年高考专业录取分数线 等接口中的 SchoolUUID 进行唯一匹配" [ref=e249]:
+                  - text: 咕咕数据平台高校唯一 ID，此唯一 ID 可与
+                  - link "全国大学高校基础信息" [ref=e250] [cursor=pointer]:
+                    - /url: https://www.gugudata.com/api/details/college
+                  - text: 、
+                  - link "历年高考专业录取分数线" [ref=e251] [cursor=pointer]:
+                    - /url: https://www.gugudata.com/api/details/ceemajorline
+                  - text: 等接口中的 SchoolUUID 进行唯一匹配
+              - row "sort string 否 排序控制，格式为字段+排序类型（asc、desc），支持参数 HighestScore|desc,AverageScore|desc,LowestScore|desc,LowestRank|desc,ProvincialControlLine|desc,EnrollmentType|desc,SelectionLevel|desc" [ref=e252]:
+                - cell "sort" [ref=e253]
+                - cell "string" [ref=e254]
+                - cell "否" [ref=e255]
+                - cell [ref=e256]
+                - cell "排序控制，格式为字段+排序类型（asc、desc），支持参数 HighestScore|desc,AverageScore|desc,LowestScore|desc,LowestRank|desc,ProvincialControlLine|desc,EnrollmentType|desc,SelectionLevel|desc" [ref=e257]
+              - row "minrange string 否 0 录取最低分区间查询条件，使用逗号分隔，左右都为闭区间，格式为：500,700" [ref=e258]:
+                - cell "minrange" [ref=e259]
+                - cell "string" [ref=e260]
+                - cell "否" [ref=e261]
+                - cell "0" [ref=e262]
+                - cell "录取最低分区间查询条件，使用逗号分隔，左右都为闭区间，格式为：500,700" [ref=e263]
+          - paragraph [ref=e265]: 返回参数
+          - table [ref=e266]:
+            - rowgroup [ref=e267]:
+              - row "参数名 参数类型 备注" [ref=e268]:
+                - columnheader "参数名" [ref=e269]
+                - columnheader "参数类型" [ref=e270]
+                - columnheader "备注" [ref=e271]
+            - rowgroup [ref=e272]:
+              - row "DataStatus.StatusCode integer 接口返回状态码" [ref=e273]:
+                - cell "DataStatus.StatusCode" [ref=e274]
+                - cell "integer" [ref=e275]
+                - cell "接口返回状态码" [ref=e276]
+              - row "DataStatus.StatusDescription string 接口返回状态说明" [ref=e277]:
+                - cell "DataStatus.StatusDescription" [ref=e278]
+                - cell "string" [ref=e279]
+                - cell "接口返回状态说明" [ref=e280]
+              - row "DataStatus.ResponseDateTime string 接口数据返回时间" [ref=e281]:
+                - cell "DataStatus.ResponseDateTime" [ref=e282]
+                - cell "string" [ref=e283]
+                - cell "接口数据返回时间" [ref=e284]
+              - row "DataStatus.DataTotalCount integer 此条件下的总数据量，一般用于分页计算" [ref=e285]:
+                - cell "DataStatus.DataTotalCount" [ref=e286]
+                - cell "integer" [ref=e287]
+                - cell "此条件下的总数据量，一般用于分页计算" [ref=e288]
+              - row "DataStatus.RequestParameter string 请求参数，一般用于调试" [ref=e289]:
+                - cell "DataStatus.RequestParameter" [ref=e290]
+                - cell "string" [ref=e291]
+                - cell "请求参数，一般用于调试" [ref=e292]
+              - row "Data.Province string 招生的省份" [ref=e293]:
+                - cell "Data.Province" [ref=e294]
+                - cell "string" [ref=e295]
+                - cell "招生的省份" [ref=e296]
+              - row "Data.SchoolUUID string 咕咕数据平台高校唯一 ID，此唯一 ID 可与 全国大学高校基础信息、历年高考专业录取分数线 等接口中的 SchoolUUID 进行唯一匹配" [ref=e297]:
+                - cell "Data.SchoolUUID" [ref=e298]
+                - cell "string" [ref=e299]
+                - cell "咕咕数据平台高校唯一 ID，此唯一 ID 可与 全国大学高校基础信息、历年高考专业录取分数线 等接口中的 SchoolUUID 进行唯一匹配" [ref=e300]:
+                  - text: 咕咕数据平台高校唯一 ID，此唯一 ID 可与
+                  - link "全国大学高校基础信息" [ref=e301] [cursor=pointer]:
+                    - /url: https://www.gugudata.com/api/details/college
+                  - text: 、
+                  - link "历年高考专业录取分数线" [ref=e302] [cursor=pointer]:
+                    - /url: https://www.gugudata.com/api/details/ceemajorline
+                  - text: 等接口中的 SchoolUUID 进行唯一匹配
+              - row "Data.CollegeName string 高校名称" [ref=e303]:
+                - cell "Data.CollegeName" [ref=e304]
+                - cell "string" [ref=e305]
+                - cell "高校名称" [ref=e306]
+              - row "Data.Year integer 招生年份" [ref=e307]:
+                - cell "Data.Year" [ref=e308]
+                - cell "integer" [ref=e309]
+                - cell "招生年份" [ref=e310]
+              - row "Data.HighestScore string 录取最高分" [ref=e311]:
+                - cell "Data.HighestScore" [ref=e312]
+                - cell "string" [ref=e313]
+                - cell "录取最高分" [ref=e314]
+              - row "Data.AverageScore string 录取平均分" [ref=e315]:
+                - cell "Data.AverageScore" [ref=e316]
+                - cell "string" [ref=e317]
+                - cell "录取平均分" [ref=e318]
+              - row "Data.LowestScore string 录取最低分" [ref=e319]:
+                - cell "Data.LowestScore" [ref=e320]
+                - cell "string" [ref=e321]
+                - cell "录取最低分" [ref=e322]
+              - row "Data.LowestRank string 录取最低位次" [ref=e323]:
+                - cell "Data.LowestRank" [ref=e324]
+                - cell "string" [ref=e325]
+                - cell "录取最低位次" [ref=e326]
+              - row "Data.ProvincialControlLine string 录取省控线" [ref=e327]:
+                - cell "Data.ProvincialControlLine" [ref=e328]
+                - cell "string" [ref=e329]
+                - cell "录取省控线" [ref=e330]
+              - row "Data.EnrollmentType string 招生类型" [ref=e331]:
+                - cell "Data.EnrollmentType" [ref=e332]
+                - cell "string" [ref=e333]
+                - cell "招生类型" [ref=e334]
+              - row "Data.SelectionLevel string 选测等级（特定省）" [ref=e335]:
+                - cell "Data.SelectionLevel" [ref=e336]
+                - cell "string" [ref=e337]
+                - cell "选测等级（特定省）" [ref=e338]
+              - row "Data.AdmissionBatch string 录取批次。枚举值为：专科批|本科二批|本科一批|本科批|本科三批|本科二批A段|本科提前批|本科批A段|本科一批A段|平行录取二段|本科二批B段|国家专项计划本科批|专科批A段|本科二批C段|平行录取一段|本科二批及预科|普通类一段|本科一批B段|本科三批A段|平行录取三段|本科A批|本科一段|本科批B段|本科二批K段|蒙授高职高专|本科一批I段|普通类二段|本科B批|专科提前批|本科提前批A段|地方专项计划本科批|本科二段|本科一批A1段|国家专项计划本科一批|本科一批预科|本科提前批B段|蒙授本科一批|本科提前批（非军检）|蒙授本科二批|普通类提前批|国家专项计划本科二批|地方农村专项计划批|零批次|高校专项计划本科批|本科三批B段|提前专项批|专科批B段|本科综合评价批|高分优先投档批|普通本科批" [ref=e339]:
+                - cell "Data.AdmissionBatch" [ref=e340]
+                - cell "string" [ref=e341]
+                - cell "录取批次。枚举值为：专科批|本科二批|本科一批|本科批|本科三批|本科二批A段|本科提前批|本科批A段|本科一批A段|平行录取二段|本科二批B段|国家专项计划本科批|专科批A段|本科二批C段|平行录取一段|本科二批及预科|普通类一段|本科一批B段|本科三批A段|平行录取三段|本科A批|本科一段|本科批B段|本科二批K段|蒙授高职高专|本科一批I段|普通类二段|本科B批|专科提前批|本科提前批A段|地方专项计划本科批|本科二段|本科一批A1段|国家专项计划本科一批|本科一批预科|本科提前批B段|蒙授本科一批|本科提前批（非军检）|蒙授本科二批|普通类提前批|国家专项计划本科二批|地方农村专项计划批|零批次|高校专项计划本科批|本科三批B段|提前专项批|专科批B段|本科综合评价批|高分优先投档批|普通本科批" [ref=e342]
+              - row "Data.TypeName string 文科、理科或综合。枚举值为：理科|文科|综合|艺术类|体育类|体育理|蒙授理科|艺术文|体育文|汉授美术|蒙授文科|学考文|学考理|艺术理|汉授音乐|汉授体育|其他艺术|汉授编导|蒙授音乐|蒙授体育|蒙授美术|旅游类|计算机类|3+证书|蒙授其他艺术|农学类|财会类|牧医类|蒙牧医类|美工设计类|汽驾类|幼师类|建筑类|烹饪类" [ref=e343]:
+                - cell "Data.TypeName" [ref=e344]
+                - cell "string" [ref=e345]
+                - cell "文科、理科或综合。枚举值为：理科|文科|综合|艺术类|体育类|体育理|蒙授理科|艺术文|体育文|汉授美术|蒙授文科|学考文|学考理|艺术理|汉授音乐|汉授体育|其他艺术|汉授编导|蒙授音乐|蒙授体育|蒙授美术|旅游类|计算机类|3+证书|蒙授其他艺术|农学类|财会类|牧医类|蒙牧医类|美工设计类|汽驾类|幼师类|建筑类|烹饪类" [ref=e346]
+              - row "Data.CourseSelection string 选科要求" [ref=e347]:
+                - cell "Data.CourseSelection" [ref=e348]
+                - cell "string" [ref=e349]
+                - cell "选科要求" [ref=e350]
+              - row "Data.CourseSelectionName string 专业组" [ref=e351]:
+                - cell "Data.CourseSelectionName" [ref=e352]
+                - cell "string" [ref=e353]
+                - cell "专业组" [ref=e354]
+              - row "Data.SchoolType string 学校类型，如公办、民办" [ref=e355]:
+                - cell "Data.SchoolType" [ref=e356]
+                - cell "string" [ref=e357]
+                - cell "学校类型，如公办、民办" [ref=e358]
+              - row "Data.SchoolInCity string 高校所在的城市" [ref=e359]:
+                - cell "Data.SchoolInCity" [ref=e360]
+                - cell "string" [ref=e361]
+                - cell "高校所在的城市" [ref=e362]
+              - row "Data.Is985 boolean 是否为 985 院校" [ref=e363]:
+                - cell "Data.Is985" [ref=e364]
+                - cell "boolean" [ref=e365]
+                - cell "是否为 985 院校" [ref=e366]
+              - row "Data.Is211 boolean 是否为 211 院校" [ref=e367]:
+                - cell "Data.Is211" [ref=e368]
+                - cell "boolean" [ref=e369]
+                - cell "是否为 211 院校" [ref=e370]
+              - row "Data.IsDualClass boolean 是否为双一流院校" [ref=e371]:
+                - cell "Data.IsDualClass" [ref=e372]
+                - cell "boolean" [ref=e373]
+                - cell "是否为双一流院校" [ref=e374]
+              - row "Data.CoverImage string 高校 logo" [ref=e375]:
+                - cell "Data.CoverImage" [ref=e376]
+                - cell "string" [ref=e377]
+                - cell "高校 logo" [ref=e378]
+          - paragraph [ref=e380]: 相关接口
+          - generic [ref=e382]:
+            - heading "历年高考高校录取分数线-查询参数枚举 GET /metadata/ceecollegeline/enums" [level=3] [ref=e383]
+            - paragraph [ref=e384]: 返回 type、batchName、enrollmentType、collegeProvinceName 的枚举集合。
+            - paragraph [ref=e385]:
+              - strong [ref=e386]: "请求方式:"
+              - text: GET
+              - strong [ref=e387]: "资源路径:"
+              - text: /metadata/ceecollegeline/enums
+            - paragraph [ref=e389]: 请求参数
+            - table [ref=e390]:
+              - rowgroup [ref=e391]:
+                - row "参数名 参数类型 是否必须 备注" [ref=e392]:
+                  - columnheader "参数名" [ref=e393]
+                  - columnheader "参数类型" [ref=e394]
+                  - columnheader "是否必须" [ref=e395]
+                  - columnheader "备注" [ref=e396]
+              - rowgroup [ref=e397]:
+                - row "appkey string 是 付费后获取的 APPKEY。仅购买了对应主接口的 APPKEY 可调用。" [ref=e398]:
+                  - cell "appkey" [ref=e399]
+                  - cell "string" [ref=e400]
+                  - cell "是" [ref=e401]
+                  - cell "付费后获取的 APPKEY。仅购买了对应主接口的 APPKEY 可调用。" [ref=e402]
+                - row "year integer 是 年份，如 2025。" [ref=e403]:
+                  - cell "year" [ref=e404]
+                  - cell "integer" [ref=e405]
+                  - cell "是" [ref=e406]
+                  - cell "年份，如 2025。" [ref=e407]
+                - row "provinceName string 是 省份名称，如 上海、上海市。" [ref=e408]:
+                  - cell "provinceName" [ref=e409]
+                  - cell "string" [ref=e410]
+                  - cell "是" [ref=e411]
+                  - cell "省份名称，如 上海、上海市。" [ref=e412]
+            - paragraph [ref=e414]: 响应示例
+            - generic [ref=e415]:
+              - code [ref=e416]: "[ { \"Key\": \"DataStatus\", \"Value\": [ { \"Key\": \"RequestParameter\", \"Value\": \"year=2025\\u0026provinceName=上海\" }, { \"Key\": \"StatusCode\", \"Value\": 100 }, { \"Key\": \"StatusDescription\", \"Value\": \"请求成功。\" }, { \"Key\": \"ResponseDateTime\", \"Value\": \"2026-03-19 00:12:03.315\" }, { \"Key\": \"DataTotalCount\", \"Value\": 54 } ] }, { \"Key\": \"Data\", \"Value\": [ { \"Key\": \"type\", \"Value\": [ \"综合\" ] }, { \"Key\": \"batchName\", \"Value\": [ \"专科批\", \"地方农村专项计划批次\", \"本科批\", \"本科提前批\", \"综合评价批次\", \"零志愿批次\" ] }, { \"Key\": \"enrollmentType\", \"Value\": [ \"中外合作办学\", \"公安专业,女\", \"公安专业,男\", \"国家公费师范生\", \"地方农村专项计划\", \"女\", \"女生\", \"威海校区\", \"定向计划\", \"护理类\" ] }, { \"Key\": \"collegeProvinceName\", \"Value\": [ \"上海\", \"云南\", \"内蒙古\", \"北京\", \"吉林\", \"四川\", \"天津\", \"宁夏\", \"安徽\", \"山东\" ] } ] } ]"
+              - button "Copy" [ref=e417] [cursor=pointer]
+      - listitem [ref=e418]:
+        - generic [ref=e420]: 
+        - generic [ref=e421]:
+          - heading "接口 HTTP 响应标准状态码" [level=2] [ref=e422]
+          - table [ref=e423]:
+            - rowgroup [ref=e424]:
+              - row "状态码 状态码解释 备注" [ref=e425]:
+                - columnheader "状态码" [ref=e426]
+                - columnheader "状态码解释" [ref=e427]
+                - columnheader "备注" [ref=e428]
+            - rowgroup [ref=e429]:
+              - row "200 接口正常响应 请求成功，业务状态请结合响应体中的自定义业务码判断。" [ref=e430]:
+                - cell "200" [ref=e431]
+                - cell "接口正常响应" [ref=e432]
+                - cell "请求成功，业务状态请结合响应体中的自定义业务码判断。" [ref=e433]
+              - row "400 请求参数错误 请求参数缺失、格式错误或参数组合不合法。" [ref=e434]:
+                - cell "400" [ref=e435]
+                - cell "请求参数错误" [ref=e436]
+                - cell "请求参数缺失、格式错误或参数组合不合法。" [ref=e437]
+              - row "401 鉴权失败 缺少 appkey 或 appkey 无效。" [ref=e438]:
+                - cell "401" [ref=e439]
+                - cell "鉴权失败" [ref=e440]
+                - cell "缺少 appkey 或 appkey 无效。" [ref=e441]
+              - row "403 无权限访问 订单到期、权限不足或接口额度不可用。" [ref=e442]:
+                - cell "403" [ref=e443]
+                - cell "无权限访问" [ref=e444]
+                - cell "订单到期、权限不足或接口额度不可用。" [ref=e445]
+              - row "404 资源不存在 请求路径不存在。" [ref=e446]:
+                - cell "404" [ref=e447]
+                - cell "资源不存在" [ref=e448]
+                - cell "请求路径不存在。" [ref=e449]
+              - row "405 请求方法不允许 当前路径不支持该 HTTP 方法。" [ref=e450]:
+                - cell "405" [ref=e451]
+                - cell "请求方法不允许" [ref=e452]
+                - cell "当前路径不支持该 HTTP 方法。" [ref=e453]
+              - row "415 请求内容类型不支持 上传或请求体的内容类型不符合接口要求。" [ref=e454]:
+                - cell "415" [ref=e455]
+                - cell "请求内容类型不支持" [ref=e456]
+                - cell "上传或请求体的内容类型不符合接口要求。" [ref=e457]
+              - row "429 请求频率受限 一般建议同一个 IP 每秒请求不超过 5 次 (QPS<=5)，我们不限制同一个 key 的请求总次数，但当单位时间内同一个 IP 请求次数过多，或 AI CDN 判定为恶意抓取数据、流量攻击等异常时，CDN 会返回此状态码，请适当降低请求频率。如有特殊大并发请求场景需求，可联系我们添加白名单处理。" [ref=e458]:
+                - cell "429" [ref=e459]
+                - cell "请求频率受限" [ref=e460]
+                - cell "一般建议同一个 IP 每秒请求不超过 5 次 (QPS<=5)，我们不限制同一个 key 的请求总次数，但当单位时间内同一个 IP 请求次数过多，或 AI CDN 判定为恶意抓取数据、流量攻击等异常时，CDN 会返回此状态码，请适当降低请求频率。如有特殊大并发请求场景需求，可联系我们添加白名单处理。" [ref=e461]
+              - row "500 服务内部错误 服务端处理异常，请稍后重试。" [ref=e462]:
+                - cell "500" [ref=e463]
+                - cell "服务内部错误" [ref=e464]
+                - cell "服务端处理异常，请稍后重试。" [ref=e465]
+              - row "502 上游依赖错误 上游依赖服务不可用或返回异常。" [ref=e466]:
+                - cell "502" [ref=e467]
+                - cell "上游依赖错误" [ref=e468]
+                - cell "上游依赖服务不可用或返回异常。" [ref=e469]
+      - listitem [ref=e470]:
+        - generic [ref=e472]: 
+        - generic [ref=e473]:
+          - heading "接口自定义状态码" [level=2] [ref=e474]
+          - table [ref=e475]:
+            - rowgroup [ref=e476]:
+              - row "自定义状态码 自定义状态码解释 备注" [ref=e477]:
+                - columnheader "自定义状态码" [ref=e478]
+                - columnheader "自定义状态码解释" [ref=e479]
+                - columnheader "备注" [ref=e480]
+            - rowgroup [ref=e481]:
+              - row "100 正常返回" [ref=e482]:
+                - cell "100" [ref=e483]
+                - cell "正常返回" [ref=e484]
+                - cell [ref=e485]
+              - row "101 参数错误" [ref=e486]:
+                - cell "101" [ref=e487]
+                - cell "参数错误" [ref=e488]
+                - cell [ref=e489]
+              - row "102 请求频率受限 一般建议同一个 IP 每秒请求不超过 5 次 (QPS<=5)，我们不限制同一个 key 的请求总次数，但当单位时间内同一个 IP 请求次数过多，或 AI CDN 判定为恶意抓取数据、流量攻击等异常时，CDN 会返回此状态码，请适当降低请求频率。如有特殊大并发请求场景需求，可联系我们添加白名单处理。" [ref=e490]:
+                - cell "102" [ref=e491]
+                - cell "请求频率受限" [ref=e492]
+                - cell "一般建议同一个 IP 每秒请求不超过 5 次 (QPS<=5)，我们不限制同一个 key 的请求总次数，但当单位时间内同一个 IP 请求次数过多，或 AI CDN 判定为恶意抓取数据、流量攻击等异常时，CDN 会返回此状态码，请适当降低请求频率。如有特殊大并发请求场景需求，可联系我们添加白名单处理。" [ref=e493]
+              - row "103 账号欠费" [ref=e494]:
+                - cell "103" [ref=e495]
+                - cell "账号欠费" [ref=e496]
+                - cell [ref=e497]
+              - row "104 APPKEY 错误 请检查传递的 APPKEY 是否为开发者中心获取到的值" [ref=e498]:
+                - cell "104" [ref=e499]
+                - cell "APPKEY 错误" [ref=e500]
+                - cell "请检查传递的 APPKEY 是否为开发者中心获取到的值" [ref=e501]
+              - row "110 接口响应错误" [ref=e502]:
+                - cell "110" [ref=e503]
+                - cell "接口响应错误" [ref=e504]
+                - cell [ref=e505]
+      - listitem [ref=e506]:
+        - generic [ref=e507]:
+          - generic [ref=e508]: 
+          - generic [ref=e509]: 请求示例代码
+        - generic [ref=e510]:
+          - list [ref=e511]:
+            - listitem [ref=e512]:
+              - link "cURL" [expanded] [ref=e513]:
+                - /url: "#curl"
+            - listitem [ref=e514]:
+              - link "C" [ref=e515] [cursor=pointer]:
+                - /url: "#c"
+            - listitem [ref=e516]:
+              - link "C#" [ref=e517] [cursor=pointer]:
+                - /url: "#csharp"
+            - listitem [ref=e518]:
+              - link "Go" [ref=e519] [cursor=pointer]:
+                - /url: "#go"
+            - listitem [ref=e520]:
+              - link "Java" [ref=e521] [cursor=pointer]:
+                - /url: "#java"
+            - listitem [ref=e522]:
+              - link "jQuery" [ref=e523] [cursor=pointer]:
+                - /url: "#jquery"
+            - listitem [ref=e524]:
+              - link "JavaScript Fetch" [ref=e525] [cursor=pointer]:
+                - /url: "#fetch"
+            - listitem [ref=e526]:
+              - link "Node.js" [ref=e527] [cursor=pointer]:
+                - /url: "#nodejs"
+            - listitem [ref=e528]:
+              - link "Objective-C" [ref=e529] [cursor=pointer]:
+                - /url: "#objectivec"
+            - listitem [ref=e530]:
+              - link "PHP" [ref=e531] [cursor=pointer]:
+                - /url: "#php"
+            - listitem [ref=e532]:
+              - link "Python" [ref=e533] [cursor=pointer]:
+                - /url: "#python"
+            - listitem [ref=e534]:
+              - link "Ruby" [ref=e535] [cursor=pointer]:
+                - /url: "#ruby"
+            - listitem [ref=e536]:
+              - link "Swift" [ref=e537] [cursor=pointer]:
+                - /url: "#swift"
+          - generic "cURL" [ref=e539]:
+            - generic [ref=e540]:
+              - code [ref=e541]: curl --location --request GET 'https://api.gugudata.com/metadata/ceecollegeline?appkey=APPKEY&searchtype=&keyword=&pageindex=1&pagesize=10&year=&min=&type=&keywordstrict=false&enrollprovince=&batchname=&collegeprovincename=&enrollmenttype=&schooluuid=&sort=&minrange=0'
+              - button "Copy" [ref=e542] [cursor=pointer]
+          - generic [ref=e543]:
+            - link "在 Postman 中测试运行" [ref=e544] [cursor=pointer]:
+              - /url: https://www.postman.com/gugudata/gugudata-official/collection/1163860-ee114343-4622-4a54-a39b-994173c27dac/?action=share&creator=1163860&active-environment=1163860-a95b31ef-324f-43db-b2fc-faa41f45bd35
+              - generic [ref=e545]: 
+              - text: 在 Postman 中测试运行
+            - link "在 Apifox 中测试运行" [ref=e546] [cursor=pointer]:
+              - /url: https://doc.gugudata.com/
+              - img [ref=e547]
+              - text: 在 Apifox 中测试运行
+            - link "打开 LLM 页面" [ref=e548] [cursor=pointer]:
+              - /url: /api/details/ceecollegeline/llm
+              - generic [ref=e549]: 
+              - text: 打开 LLM 页面
+            - button "复制 LLM.md" [ref=e550] [cursor=pointer]:
+              - generic [ref=e551]: 
+              - text: 复制 LLM.md
+      - listitem [ref=e552]:
+        - generic [ref=e554]: 
+        - generic [ref=e555]:
+          - heading "更多请求示例与预览数据" [level=2] [ref=e556]
+          - list [ref=e557]:
+            - listitem [ref=e558]:
+              - paragraph [ref=e559]:
+                - text: "-"
+                - link "高校分数线：枚举参数（2025 上海）" [ref=e560] [cursor=pointer]:
+                  - /url: /preview/69bad99d7f5e8071ced4a245
+            - listitem [ref=e561]:
+              - paragraph [ref=e562]:
+                - text: "-"
+                - link "高校分数线：复旦大学 2025 年上海严格匹配" [ref=e563] [cursor=pointer]:
+                  - /url: /preview/69bad99c7f5e8071ced4a244
+            - listitem [ref=e564]:
+              - paragraph [ref=e565]:
+                - text: "-"
+                - link "高校分数线：按省份查询上海 2025 年录取线" [ref=e566] [cursor=pointer]:
+                  - /url: /preview/69bad99c7f5e8071ced4a243
+            - listitem [ref=e567]:
+              - paragraph [ref=e568]:
+                - text: "-"
+                - link "高校分数线：同济大学 2025 年上海录取线" [ref=e569] [cursor=pointer]:
+                  - /url: /preview/69bad99c7f5e8071ced4a242
+            - listitem [ref=e570]:
+              - paragraph [ref=e571]:
+                - text: "-"
+                - link "高校分数线：北京大学 2025 年上海录取线" [ref=e572] [cursor=pointer]:
+                  - /url: /preview/69bad99c7f5e8071ced4a241
+            - listitem [ref=e573]:
+              - paragraph [ref=e574]:
+                - text: "-"
+                - link "中南大学 2024 年在江西省的招生分数线" [ref=e575] [cursor=pointer]:
+                  - /url: /preview/6763da0b095da4a00b0d0a64
+      - listitem [ref=e576]:
+        - generic [ref=e578]: 
+        - generic [ref=e579]:
+          - heading "常见问题 Q&A" [level=2] [ref=e580]
+          - list [ref=e581]:
+            - listitem [ref=e582]:
+              - paragraph [ref=e583]: "Q: 数据请求有缓存吗？"
+              - paragraph [ref=e584]: "A: 我们为所有数据请求提供实时响应。对于定期更新的数据，我们在其更新周期内实施缓存策略，以优化性能。"
+            - listitem [ref=e585]:
+              - paragraph [ref=e586]: "Q: 如何保证请求时 key 的安全性？"
+              - paragraph [ref=e587]: "A: 我们建议将对 API 的请求操作放置在您的应用程序后端。这样，前端请求只与您的后端服务交互，确保了更高的安全性和易于维护的架构。"
+            - listitem [ref=e588]:
+              - paragraph [ref=e589]: "Q: 接口可以用于哪些开发语言？"
+              - paragraph [ref=e590]: "A: 我们的接口支持所有能进行网络请求的开发语言，便于在各类项目中快速整合数据。"
+            - listitem [ref=e591]:
+              - paragraph [ref=e592]: "Q: 接口的性能可以保证吗？"
+              - paragraph [ref=e593]: "A: 我们的接口后台使用与商业级项目相同的架构，保证了稳定且高效的性能。您可以通过访问测试接口了解更多性能信息。"
+      - listitem [ref=e594]:
+        - generic [ref=e596]: 
+        - generic [ref=e597]:
+          - heading "服务协议以及服务免责声明" [level=2] [ref=e598]
+          - paragraph [ref=e601]:
+            - text: 用户应当充分阅读
+            - link "服务协议" [ref=e602] [cursor=pointer]:
+              - /url: /license.aspx
+            - text: 以及
+            - link "服务免责声明" [ref=e603] [cursor=pointer]:
+              - /url: /disclaimer.aspx
+            - text: ，用户购买与使用咕咕数据 API 服务亦视为接受本协议。
+      - listitem [ref=e604]:
+        - generic [ref=e606]: 
+        - generic [ref=e607]:
+          - heading "技术支持" [level=2] [ref=e608]
+          - list [ref=e609]:
+            - listitem [ref=e610]:
+              - strong [ref=e611]: "技术支持邮箱:"
+              - text: support@gugudata.com
+            - listitem [ref=e612]:
+              - strong [ref=e613]: "微信客服:"
+              - link "客服链接" [ref=e614] [cursor=pointer]:
+                - /url: https://work.weixin.qq.com/kfid/kfcf9a60a6afe3337b7
+    - generic [ref=e615]:
+      - link "购买数据调用" [ref=e616] [cursor=pointer]:
+        - /url: /order/ceecollegeline
+        - generic [ref=e617]: 
+        - text: 购买数据调用
+      - link "邮件咨询 (7*24小时)" [ref=e618] [cursor=pointer]:
+        - /url: mailto:support@gugudata.com
+        - generic [ref=e619]: 
+        - text: 邮件咨询 (7*24小时)
+      - link " 微信客服联系 (工作日)" [ref=e620] [cursor=pointer]:
+        - /url: https://work.weixin.qq.com/kfid/kfcf9a60a6afe3337b7
+        - generic [ref=e621]: 
+        - text: 微信客服联系 (工作日)
+  - generic [ref=e622]:
+    - heading "业务相关接口推荐" [level=1] [ref=e625]
+    - generic [ref=e626]:
+      - generic [ref=e628]:
+        - generic [ref=e629]:
+          - link "高校评分实时分析与推荐" [ref=e631] [cursor=pointer]:
+            - /url: /api/details/college-score
+            - img "高校评分实时分析与推荐" [ref=e632]
+          - link "高校评分实时分析与推荐" [ref=e634] [cursor=pointer]:
+            - /url: /api/details/college-score
+          - list [ref=e635]:
+            - listitem [ref=e636]:
+              - generic [ref=e638]: 
+              - text: 基于多维度指标对大学进行综合评分与分析
+            - listitem [ref=e639]:
+              - generic [ref=e641]: 
+              - text: 多维度评估 / 专业推荐
+            - listitem [ref=e642]:
+              - generic [ref=e644]: 
+              - text: 1999元/年
+              - generic [ref=e645]:
+                - text: 限时折扣
+                - strong [ref=e646]: 999元/年
+          - generic [ref=e647]:
+            - link "查看详情" [ref=e648] [cursor=pointer]:
+              - /url: /api/details/college-score
+            - generic [ref=e649]: 数据校验更新于 7 小时前
+        - img "50% 折扣" [ref=e651]
+      - generic [ref=e653]:
+        - generic [ref=e654]:
+          - link "全国中学基础信息" [ref=e656] [cursor=pointer]:
+            - /url: /api/details/middleschool
+            - img "全国中学基础信息" [ref=e657]
+          - generic [ref=e658]:
+            - img "稳定提供服务 10 年" [ref=e659]
+            - link "全国中学基础信息" [ref=e660] [cursor=pointer]:
+              - /url: /api/details/middleschool
+          - list [ref=e661]:
+            - listitem [ref=e662]:
+              - generic [ref=e664]: 
+              - text: 提供全国初级高级中学基础数据
+            - listitem [ref=e665]:
+              - generic [ref=e667]: 
+              - text: 定时更新 / 多维度筛选
+            - listitem [ref=e668]:
+              - generic [ref=e670]: 
+              - text: 1499元/年
+              - generic [ref=e671]:
+                - text: 限时折扣
+                - strong [ref=e672]: 499元/年
+          - generic [ref=e673]:
+            - link "查看详情" [ref=e674] [cursor=pointer]:
+              - /url: /api/details/middleschool
+            - generic [ref=e675]: 数据校验更新于 5 小时前
+        - img "30% 折扣" [ref=e677]
+      - generic [ref=e679]:
+        - generic [ref=e680]:
+          - link "全国大学高校基础信息" [ref=e682] [cursor=pointer]:
+            - /url: /api/details/college
+            - img "全国大学高校基础信息" [ref=e683]
+          - generic [ref=e684]:
+            - img "稳定提供服务 10 年" [ref=e685]
+            - link "全国大学高校基础信息" [ref=e686] [cursor=pointer]:
+              - /url: /api/details/college
+          - list [ref=e687]:
+            - listitem [ref=e688]:
+              - generic [ref=e690]: 
+              - text: 提供全国大学高校基础信息
+            - listitem [ref=e691]:
+              - generic [ref=e693]: 
+              - text: 每周定时更新 / 高校各类属性
+            - listitem [ref=e694]:
+              - generic [ref=e696]: 
+              - text: 1999元/年
+              - generic [ref=e697]:
+                - text: 限时折扣
+                - strong [ref=e698]: 999元/年
+          - generic [ref=e699]:
+            - link "查看详情" [ref=e700] [cursor=pointer]:
+              - /url: /api/details/college
+            - generic [ref=e701]: 数据校验更新于 6 小时前
+        - img "50% 折扣" [ref=e703]
+      - generic [ref=e705]:
+        - generic [ref=e706]:
+          - link "全国大学高校专业数据" [ref=e708] [cursor=pointer]:
+            - /url: /api/details/ceemajor
+            - img "全国大学高校专业数据" [ref=e709]
+          - generic [ref=e710]:
+            - img "稳定提供服务 10 年" [ref=e711]
+            - link "全国大学高校专业数据" [ref=e712] [cursor=pointer]:
+              - /url: /api/details/ceemajor
+          - list [ref=e713]:
+            - listitem [ref=e714]:
+              - generic [ref=e716]: 
+              - text: 大学专业多维基础数据
+            - listitem [ref=e717]:
+              - generic [ref=e719]: 
+              - text: 持续更新 / 各类专业属性
+            - listitem [ref=e720]:
+              - generic [ref=e722]: 
+              - text: 2999元/年
+              - generic [ref=e723]:
+                - text: 限时折扣
+                - strong [ref=e724]: 999元/年
+          - generic [ref=e725]:
+            - link "查看详情" [ref=e726] [cursor=pointer]:
+              - /url: /api/details/ceemajor
+            - generic [ref=e727]: 数据校验更新于 9 小时前
+        - img "30% 折扣" [ref=e729]
+  - generic [ref=e730]:
+    - generic [ref=e733]:
+      - generic [ref=e735]:
+        - paragraph [ref=e736]: 关于我们
+        - list [ref=e737]:
+          - listitem [ref=e738]:
+            - link "关于咕咕数据" [ref=e739] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e740]:
+            - link "用户协议" [ref=e741] [cursor=pointer]:
+              - /url: /license
+          - listitem [ref=e742]:
+            - link "免责声明" [ref=e743] [cursor=pointer]:
+              - /url: /disclaimer
+          - listitem [ref=e744]:
+            - link "联系我们" [ref=e745] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e747]:
+        - paragraph [ref=e748]: 商业 API
+        - list [ref=e749]:
+          - listitem [ref=e750]:
+            - link "新闻 / 资讯" [ref=e751] [cursor=pointer]:
+              - /url: /api/news/9/0/9/0
+          - listitem [ref=e752]:
+            - link "金融 / 分析" [ref=e753] [cursor=pointer]:
+              - /url: /api/finance/9/0/9/0
+          - listitem [ref=e754]:
+            - link "位置 / 坐标" [ref=e755] [cursor=pointer]:
+              - /url: /api/location/9/0/9/0
+          - listitem [ref=e756]:
+            - link "更多服务..." [ref=e757] [cursor=pointer]:
+              - /url: /api/all/9/0/9/0/不限
+      - generic [ref=e759]:
+        - paragraph [ref=e760]: 帮助中心
+        - list [ref=e761]:
+          - listitem [ref=e762]:
+            - link "接口文档" [ref=e763] [cursor=pointer]:
+              - /url: https://doc.gugudata.com/
+          - listitem [ref=e764]:
+            - link "API / DEMO" [ref=e765] [cursor=pointer]:
+              - /url: /api/details/stockcnrealtime#anchor_code
+          - listitem [ref=e766]:
+            - link "常见问题" [ref=e767] [cursor=pointer]:
+              - /url: /api/details/stockcnrealtime#anchor_qa
+          - listitem [ref=e768]:
+            - link "接入示例代码" [ref=e769] [cursor=pointer]:
+              - /url: /api/details/stockcnrealtime#anchor_code
+    - paragraph [ref=e773]:
+      - text: Copyright © 2015-2026
+      - link "江苏满数数据科技有限公司" [ref=e774] [cursor=pointer]:
+        - /url: https://www.gugudata.com
+      - text: . All rights reserved.
+      - link "苏ICP备2022035649号" [ref=e776] [cursor=pointer]:
+        - /url: http://beian.miit.gov.cn/
+  - text: 
+  - img [ref=e781] [cursor=pointer]

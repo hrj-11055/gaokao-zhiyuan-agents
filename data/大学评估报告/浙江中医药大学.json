@@ -1,0 +1,44 @@
+{
+  "university_name": "浙江中医药大学",
+  "short_name": "ZCMU",
+  "location": {
+    "province": "浙江",
+    "city": "杭州",
+    "districts": [
+      "滨江区",
+      "富阳区"
+    ]
+  },
+  "academic_level": {
+    "type": "省属重点建设高校",
+    "esi_top_1_percent_count": 4,
+    "key_disciplines": [
+      "中医学",
+      "中药学",
+      "中西医结合"
+    ]
+  },
+  "admission_stats": {
+    "avg_rank_zhejiang_physic": 42000,
+    "avg_rank_zhejiang_history": 28500,
+    "selectivity": "High"
+  },
+  "employment_stats": {
+    "overall_employment_rate": "94.2%",
+    "further_study_rate": "38.85%",
+    "top_employers_type": [
+      "Public Hospitals",
+      "Biotech Firms"
+    ]
+  },
+  "campus_life": {
+    "accommodation_rating": "Medium (Binwen) / High (Fuchun)",
+    "academic_pressure": "Very High",
+    "signature_food": "Medicinal Diet (药膳)"
+  },
+  "comprehensive_evaluation": {
+    "score": 4.13,
+    "recommendation_index": 4.5,
+    "one_sentence_summary": "The leading TCM institution in East China with strong clinical resources and industry synergy."
+  }
+}

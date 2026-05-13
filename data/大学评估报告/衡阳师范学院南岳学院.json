@@ -1,0 +1,45 @@
+{
+  "university_name": "衡阳师范学院南岳学院",
+  "short_name": "南岳学院",
+  "location": {
+    "province": "湖南省",
+    "city": "衡阳市",
+    "district_old": "雁峰区",
+    "district_new": "珠晖区"
+  },
+  "academic_stats": {
+    "provincial_first_class_majors": [
+      "美术学"
+    ],
+    "key_majors": [
+      "汉语言文学",
+      "英语",
+      "计算机科学与技术"
+    ],
+    "faculty_total": 277,
+    "master_degree_ratio": "85%+"
+  },
+  "admission_data_2024": {
+    "hunan_history_rank": 42883,
+    "hunan_physics_rank": 101735,
+    "guangdong_history_rank": 40796
+  },
+  "employment_outcomes": {
+    "postgraduate_rate_2024": "约 2.8%",
+    "teacher_recruitment_ratio": "约 45%",
+    "top_destination": "珠三角民办教育机构",
+    "avg_starting_salary": 4500
+  },
+  "transformation_status": {
+    "is_independent": true,
+    "target_name": "湖南科技师范学院",
+    "stage": "转设推进中"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.8,
+    "graduate_value": 3.5,
+    "location_potential": 3.2,
+    "brand_asset": 3.2,
+    "overall_weighted_score": 3.04
+  }
+}

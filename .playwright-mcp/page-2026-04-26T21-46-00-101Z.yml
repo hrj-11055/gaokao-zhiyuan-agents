@@ -1,0 +1,532 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e144]:
+        - link "百度首页" [ref=e145] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e146] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e147] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F&sms=5
+      - generic [ref=e23]:
+        - generic:
+          - link "到百度首页" [ref=e148] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e149]
+          - generic [ref=e152]:
+            - textbox [ref=e154]: 智能医学工程 大学排名 学科评估 开设院校 2024 2025
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - img [ref=e159] [cursor=pointer]
+                - img [ref=e169] [cursor=pointer]
+                - generic [ref=e172]:
+                  - img [ref=e176] [cursor=pointer]
+                  - img [ref=e181] [cursor=pointer]
+              - button "百度一下" [ref=e185] [cursor=pointer]
+    - generic [ref=e881]:
+      - link [ref=e882] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+2024+2025&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2214119747510121376396%22%2C%22ori_lid%22%3A%2214119747510121376396%22%7D
+        - img [ref=e883]
+      - generic [ref=e884]: 网页
+      - link "图片" [ref=e885] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=c3f36b8d02fdaa8c&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+2024+2025
+      - link "资讯" [ref=e886] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+2024+2025
+      - link "视频" [ref=e887] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=c3f36b8d02fdaa8c&ie=utf-8&wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+2024+2025&rsv_spt=7&rsv_bp=1&f=8&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+2024+2025&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw
+      - link "笔记" [ref=e888] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+2024+2025
+      - link "地图" [ref=e889] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+2024+2025
+      - link "贴吧" [ref=e890] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+2024+2025
+      - link "文库" [ref=e891] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B+%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D+%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+2024+2025
+      - link "更多" [ref=e892] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e893] [cursor=pointer]: 搜索工具
+    - generic [ref=e202]:
+      - generic [ref=e894]:
+        - table [ref=e896]:
+          - rowgroup [ref=e897]:
+            - row "相关搜索  大学专业有哪些  生物医学工程学科评估排名第五轮  智能医学工程专业大学排名  智能制造工程学科评估排名  智能医学工程开设院校  医学类第四轮学科评估结果    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 女性多和好友聚会能“续命” 9 母亲躺医院长椅儿子一手垫头一手轻拍 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 高市政府越过“最后一根红线” 13 “早上6点半 杭州东站全是孩子” 14 厨师锅里吐口水后继续出餐 店长回应 15 财务造假“不敢不能不想”时代来了" [ref=e898]:
+              - cell "相关搜索  大学专业有哪些  生物医学工程学科评估排名第五轮  智能医学工程专业大学排名  智能制造工程学科评估排名  智能医学工程开设院校  医学类第四轮学科评估结果    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 女性多和好友聚会能“续命” 9 母亲躺医院长椅儿子一手垫头一手轻拍 10 伊朗外长向巴基斯坦递交停战条件 11 黄鳝被喂避孕药是传了30年的谣言 12 高市政府越过“最后一根红线” 13 “早上6点半 杭州东站全是孩子” 14 厨师锅里吐口水后继续出餐 店长回应 15 财务造假“不敢不能不想”时代来了" [ref=e899]:
+                - generic [ref=e900]:
+                  - generic [ref=e906]:
+                    - generic [ref=e908]: 相关搜索
+                    - generic [ref=e909]:
+                      - link " 大学专业有哪些" [ref=e912] [cursor=pointer]:
+                        - /url: /s?rsv_idx=1&wd=%E5%A4%A7%E5%AD%A6%E4%B8%93%E4%B8%9A%E6%9C%89%E5%93%AA%E4%BA%9B&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=febe5IlnoF0UAfInGsAylPDAQR4ahQC5Catdm%2F%2B23odZ01iWoXVafuvJyXU&rfqid=c3f36b8d02fdaa8c&rsv_dl=0_prs_28616_1&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsf=101631202
+                        - generic [ref=e913]:
+                          - generic [ref=e914]: 
+                          - generic [ref=e915]: 大学专业有哪些
+                      - link " 生物医学工程学科评估排名第五轮" [ref=e918] [cursor=pointer]:
+                        - /url: /s?rsv_idx=1&wd=%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E6%8E%92%E5%90%8D%E7%AC%AC%E4%BA%94%E8%BD%AE&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=febe5IlnoF0UAfInGsAylPDAQR4ahQC5Catdm%2F%2B23odZ01iWoXVafuvJyXU&rfqid=c3f36b8d02fdaa8c&rsv_dl=0_prs_28616_2&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsf=101636803
+                        - generic [ref=e919]:
+                          - generic [ref=e920]: 
+                          - generic [ref=e921]: 生物医学工程学科评估排名第五轮
+                      - link " 智能医学工程专业大学排名" [ref=e924] [cursor=pointer]:
+                        - /url: /s?rsv_idx=1&wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=febe5IlnoF0UAfInGsAylPDAQR4ahQC5Catdm%2F%2B23odZ01iWoXVafuvJyXU&rfqid=c3f36b8d02fdaa8c&rsv_dl=0_prs_28616_3&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsf=101633403
+                        - generic [ref=e925]:
+                          - generic [ref=e926]: 
+                          - generic [ref=e927]: 智能医学工程专业大学排名
+                      - link " 智能制造工程学科评估排名" [ref=e930] [cursor=pointer]:
+                        - /url: /s?rsv_idx=1&wd=%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0%E5%B7%A5%E7%A8%8B%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E6%8E%92%E5%90%8D&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=febe5IlnoF0UAfInGsAylPDAQR4ahQC5Catdm%2F%2B23odZ01iWoXVafuvJyXU&rfqid=c3f36b8d02fdaa8c&rsv_dl=0_prs_28616_4&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsf=101636803
+                        - generic [ref=e931]:
+                          - generic [ref=e932]: 
+                          - generic [ref=e933]: 智能制造工程学科评估排名
+                      - link " 智能医学工程开设院校" [ref=e936] [cursor=pointer]:
+                        - /url: /s?rsv_idx=1&wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=febe5IlnoF0UAfInGsAylPDAQR4ahQC5Catdm%2F%2B23odZ01iWoXVafuvJyXU&rfqid=c3f36b8d02fdaa8c&rsv_dl=0_prs_28616_5&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsf=101636803
+                        - generic [ref=e937]:
+                          - generic [ref=e938]: 
+                          - generic [ref=e939]: 智能医学工程开设院校
+                      - link " 医学类第四轮学科评估结果" [ref=e942] [cursor=pointer]:
+                        - /url: /s?rsv_idx=1&wd=%E5%8C%BB%E5%AD%A6%E7%B1%BB%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E7%BB%93%E6%9E%9C&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=febe5IlnoF0UAfInGsAylPDAQR4ahQC5Catdm%2F%2B23odZ01iWoXVafuvJyXU&rfqid=c3f36b8d02fdaa8c&rsv_dl=0_prs_28616_6&rq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsf=101633403
+                        - generic [ref=e943]:
+                          - generic [ref=e944]: 
+                          - generic [ref=e945]: 医学类第四轮学科评估结果
+                  - generic [ref=e949]:
+                    - generic "百度热搜" [ref=e950]:
+                      - link " " [ref=e951] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e952]: 
+                        - generic [ref=e953]: 
+                      - link " 换一换" [ref=e955] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e956]: 
+                        - text: 换一换
+                    - generic [ref=e957]:
+                      - generic [ref=e958] [cursor=pointer]: 热搜榜
+                      - generic [ref=e959] [cursor=pointer]: 民生榜
+                      - generic [ref=e960] [cursor=pointer]: 财经榜
+                    - generic [ref=e962]:
+                      - generic [ref=e964]:
+                        - generic [ref=e966]: 
+                        - link "“一分部署 九分落实”" [ref=e967] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e969]:
+                        - generic [ref=e970]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e971] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e972]: 热
+                      - generic [ref=e974]:
+                        - generic [ref=e975]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e976] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e977]: 新
+                      - generic [ref=e979]:
+                        - generic [ref=e980]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e981] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e983]:
+                        - generic [ref=e984]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e985] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e986]: 热
+                      - generic [ref=e988]:
+                        - generic [ref=e989]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e990] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e991]: 新
+                      - generic [ref=e993]:
+                        - generic [ref=e994]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e995] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e996]: 热
+                      - generic [ref=e998]:
+                        - generic [ref=e999]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e1000] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e1002]:
+                        - generic [ref=e1003]: "8"
+                        - link "女性多和好友聚会能“续命”" [ref=e1004] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e1006]:
+                        - generic [ref=e1007]: "9"
+                        - link "母亲躺医院长椅儿子一手垫头一手轻拍" [ref=e1008] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E6%AF%8D%E4%BA%B2%E8%BA%BA%E5%8C%BB%E9%99%A2%E9%95%BF%E6%A4%85%E5%84%BF%E5%AD%90%E4%B8%80%E6%89%8B%E5%9E%AB%E5%A4%B4%E4%B8%80%E6%89%8B%E8%BD%BB%E6%8B%8D&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e1010]:
+                        - generic [ref=e1011]: "10"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e1012] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e1014]:
+                        - generic [ref=e1015]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e1016] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e1018]:
+                        - generic [ref=e1019]: "12"
+                        - link "高市政府越过“最后一根红线”" [ref=e1020] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e1022]:
+                        - generic [ref=e1023]: "13"
+                        - link "“早上6点半 杭州东站全是孩子”" [ref=e1024] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E2%80%9C%E6%97%A9%E4%B8%8A6%E7%82%B9%E5%8D%8A%20%E6%9D%AD%E5%B7%9E%E4%B8%9C%E7%AB%99%E5%85%A8%E6%98%AF%E5%AD%A9%E5%AD%90%E2%80%9D&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e1026]:
+                        - generic [ref=e1027]: "14"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e1028] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e1030]:
+                        - generic [ref=e1031]: "15"
+                        - link "财务造假“不敢不能不想”时代来了" [ref=e1032] [cursor=pointer]:
+                          - /url: /s?rsv_idx=1&wd=%E8%B4%A2%E5%8A%A1%E9%80%A0%E5%81%87%E2%80%9C%E4%B8%8D%E6%95%A2%E4%B8%8D%E8%83%BD%E4%B8%8D%E6%83%B3%E2%80%9D%E6%97%B6%E4%BB%A3%E6%9D%A5%E4%BA%86&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=d4efAW%2BO6%2Fc78LGIaBB0X8GZRFZf628Bo7pQVYWQzy%2FiRjLPqfN6ZEPktOo&rqid=c3f36b8d02fdaa8c&rsf=46e56ca73a512388ef6ea70423a0373c_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e1033]:
+          - generic [ref=e1038]:
+            - generic [ref=e1040]:
+              - img [ref=e1043]
+              - generic:
+                - generic: 
+            - generic [ref=e1048]:
+              - generic [ref=e1049]: 问题分析中
+              - img [ref=e1051]
+          - generic [ref=e1075]:
+            - heading "高校智能医学工程专业排行榜 2025全国84所高校智能医学工程专业..." [level=3] [ref=e1078]:
+              - link "高校智能医学工程专业排行榜 2025全国84所高校智能医学工程专业..." [ref=e1079] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=uyHY0oGCFo7lDzojsZTHLMlw-5JWtI3ItHpXhHoOHM3oFTZC0WY2PpRVkhLGcXC-vt8u3uNtj4WTWS1GDjuelZ6E5Q19TSe4MetEmxcdpFktO4-Ah9ygoVoe5XhL-6-AJaQQ6qTsvTYCT4Z7NConDIXxoRt7OXoiIrigxlAfMBic3a0kj1dDSRcrKl_btMp2kDFWtGNb1C-NF1FyaalUDa4BZoIJRr9h08Ijx3wG-xkD9c0RApDDBWXEIpudmcBX0CVzwQWSGRFkm2Eysdf_t_
+                - paragraph [ref=e1082]:
+                  - generic [ref=e1085]:
+                    - emphasis [ref=e1086]: 高校智能医学工程
+                    - text: 专业
+                    - emphasis [ref=e1087]: 排行榜
+                    - emphasis [ref=e1088]: "2025"
+                    - text: 全国84所高校智能医学工程专业...
+            - generic [ref=e1093]:
+              - text: 2025年6月5日
+              - generic [ref=e1094]:
+                - emphasis [ref=e1095]: "2025"
+                - text: 年6月5日,由全国高校人工智能与大数据创新联盟、华算人工智能研究院调查研究制作的2025全国84所高校智能医学工程教育教学综合实力排行榜对外发布。 智能医学工程是指以现代医学与生物学理论为基础,融合先进的脑认知、大数据、云计算、机器学...
+            - generic [ref=e1096]:
+              - link [ref=e1098] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=uyHY0oGCFo7lDzojsZTHLMlw-5JWtI3ItHpXhHoOHM3oFTZC0WY2PpRVkhLGcXC-vt8u3uNtj4WTWS1GDjuelZ6E5Q19TSe4MetEmxcdpFktO4-Ah9ygoVoe5XhL-6-AJaQQ6qTsvTYCT4Z7NConDIXxoRt7OXoiIrigxlAfMBic3a0kj1dDSRcrKl_btMp2kDFWtGNb1C-NF1FyaalUDa4BZoIJRr9h08Ijx3wG-xkD9c0RApDDBWXEIpudmcBX0CVzwQWSGRFkm2Eysdf_t_
+              - link [ref=e1102] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=uyHY0oGCFo7lDzojsZTHLMlw-5JWtI3ItHpXhHoOHM3oFTZC0WY2PpRVkhLGcXC-vt8u3uNtj4WTWS1GDjuelZ6E5Q19TSe4MetEmxcdpFktO4-Ah9ygoVoe5XhL-6-AJaQQ6qTsvTYCT4Z7NConDIXxoRt7OXoiIrigxlAfMBic3a0kj1dDSRcrKl_btMp2kDFWtGNb1C-NF1FyaalUDa4BZoIJRr9h08Ijx3wG-xkD9c0RApDDBWXEIpudmcBX0CVzwQWSGRFkm2Eysdf_t_
+              - link [ref=e1106] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=uyHY0oGCFo7lDzojsZTHLMlw-5JWtI3ItHpXhHoOHM3oFTZC0WY2PpRVkhLGcXC-vt8u3uNtj4WTWS1GDjuelZ6E5Q19TSe4MetEmxcdpFktO4-Ah9ygoVoe5XhL-6-AJaQQ6qTsvTYCT4Z7NConDIXxoRt7OXoiIrigxlAfMBic3a0kj1dDSRcrKl_btMp2kDFWtGNb1C-NF1FyaalUDa4BZoIJRr9h08Ijx3wG-xkD9c0RApDDBWXEIpudmcBX0CVzwQWSGRFkm2Eysdf_t_
+              - link "9" [ref=e1110] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=uyHY0oGCFo7lDzojsZTHLMlw-5JWtI3ItHpXhHoOHM3oFTZC0WY2PpRVkhLGcXC-vt8u3uNtj4WTWS1GDjuelZ6E5Q19TSe4MetEmxcdpFktO4-Ah9ygoVoe5XhL-6-AJaQQ6qTsvTYCT4Z7NConDIXxoRt7OXoiIrigxlAfMBic3a0kj1dDSRcrKl_btMp2kDFWtGNb1C-NF1FyaalUDa4BZoIJRr9h08Ijx3wG-xkD9c0RApDDBWXEIpudmcBX0CVzwQWSGRFkm2Eysdf_t_
+                - generic [ref=e1113]:
+                  - generic [ref=e1114]: 
+                  - text: "9"
+            - link "微信公众平台" [ref=e1119] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=uyHY0oGCFo7lDzojsZTHLMlw-5JWtI3ItHpXhHoOHM3oFTZC0WY2PpRVkhLGcXC-vt8u3uNtj4WTWS1GDjuelZ6E5Q19TSe4MetEmxcdpFktO4-Ah9ygoVoe5XhL-6-AJaQQ6qTsvTYCT4Z7NConDIXxoRt7OXoiIrigxlAfMBic3a0kj1dDSRcrKl_btMp2kDFWtGNb1C-NF1FyaalUDa4BZoIJRr9h08Ijx3wG-xkD9c0RApDDBWXEIpudmcBX0CVzwQWSGRFkm2Eysdf_t_
+              - generic [ref=e1120]: 微信公众平台
+              - generic [ref=e1122]: 
+          - generic [ref=e1126]:
+            - heading "智能医学工程专业全国大学排名:含最好的10所本科名校(2026年参考..." [level=3] [ref=e1129]:
+              - link "智能医学工程专业全国大学排名:含最好的10所本科名校(2026年参考..." [ref=e1130] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=H1ldb58mJPuH72a47_hAYc-bU8HTGMKlOlE0zs-_B81lH5NhGKwXMjef3me_obIqlUFTkMK9pqbDk8WgLVXLfq
+                - paragraph [ref=e1133]:
+                  - generic [ref=e1136]:
+                    - emphasis [ref=e1137]: 智能医学工程
+                    - text: 专业全国
+                    - emphasis [ref=e1138]: 大学排名
+                    - text: :含最好的10所本科名校(2026年参考...
+            - generic [ref=e1139]:
+              - link [ref=e1141] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=H1ldb58mJPuH72a47_hAYc-bU8HTGMKlOlE0zs-_B81lH5NhGKwXMjef3me_obIqlUFTkMK9pqbDk8WgLVXLfq
+              - generic [ref=e1146]:
+                - generic [ref=e1151]:
+                  - text: 2026年2月23日
+                  - generic [ref=e1152]:
+                    - emphasis [ref=e1153]: "2025"
+                    - text: 年
+                    - emphasis [ref=e1154]: 智能医学工程
+                    - text: 专业全国
+                    - emphasis [ref=e1155]: 大学排名
+                    - text: 中,排名第一的是天津大学,被软科榜单评为:智能医学工程专业实力最强的本科院校。本文将展示智能医学工程专业上榜软科榜单的42所
+                    - emphasis [ref=e1156]: 院校排名
+                    - text: 以及等级评分,供2026年想读智能医学工程专业的同学们参考! 一、2025年智能医学工程专业全国大学排名 根据软科榜单可知,智能医学工程专业全国排名前十...
+                - link "高考100网" [ref=e1161] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=H1ldb58mJPuH72a47_hAYc-bU8HTGMKlOlE0zs-_B81lH5NhGKwXMjef3me_obIqlUFTkMK9pqbDk8WgLVXLfq
+                  - generic [ref=e1162]: 高考100网
+                  - generic [ref=e1164]: 
+          - generic [ref=e1168]:
+            - heading "智能医学工程十大名校-智能医学工程排名100强-高考100" [level=3] [ref=e1171]:
+              - link "智能医学工程十大名校-智能医学工程排名100强-高考100" [ref=e1172] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Ffw7ACI7pYNvjDs56vPPdsrCXzsku-ghl6bfkyKLzF92nL9fhzIFVop6PkOkrAJEQ9HDTiH_TLDXxyahNHGNxq
+                - paragraph [ref=e1175]:
+                  - generic [ref=e1178]:
+                    - text: 智能医学工程十大名校-
+                    - emphasis [ref=e1179]: 智能医学工程排名
+                    - text: 100强-高考100
+            - generic [ref=e1180]:
+              - link [ref=e1182] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=Ffw7ACI7pYNvjDs56vPPdsrCXzsku-ghl6bfkyKLzF92nL9fhzIFVop6PkOkrAJEQ9HDTiH_TLDXxyahNHGNxq
+              - generic [ref=e1187]:
+                - generic [ref=e1192]:
+                  - text: 2026年4月12日
+                  - generic [ref=e1193]:
+                    - emphasis [ref=e1194]: 第五名:重庆大学,等级评估为A 第六名:山东大学,等级评估为A 第七名:天津医科大学,等级评估为A
+                    - text: 第八名:哈尔滨工业大学,等级评估为A 第九名:南方科技大学,等级评估为B+ 第十名:西安电子科技大学,等级评估为B+ 二、智能医学工程排名100强 根据软科2025中国大学智能医学工程专业排名来看,智能医学工程上榜院校数量共...
+                - link "高考100网" [ref=e1199] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=Ffw7ACI7pYNvjDs56vPPdsrCXzsku-ghl6bfkyKLzF92nL9fhzIFVop6PkOkrAJEQ9HDTiH_TLDXxyahNHGNxq
+                  - generic [ref=e1200]: 高考100网
+                  - generic [ref=e1202]: 
+          - generic [ref=e1206]:
+            - heading "校友会2025中国大学智能医学工程专业排名,山西医科大学、山东大学..." [level=3] [ref=e1209]:
+              - link "校友会2025中国大学智能医学工程专业排名,山西医科大学、山东大学..." [ref=e1210] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=uyHY0oGCFo7lDzojsZTHLMlw-5JWtI3ItHpXhHoOHM4qHFN5msfqVO3ExuxJQWSYE08yv9sEQQvlzoB9VosHWuh0hSC5axDB6t85MksA_9rEoTMhQiB_r96WbDxfn6sSbZD_pqIRSG8GrWfO6bP1quveSAh-QSYKO42R_ivnOFpNAzi7DZqZWeMHpbTo8FvVwXGpMuZCk8HdMs7NG4z_uOiz9UApL97bnd6VnpDZ5u6Rbk8voIJ5e8VF6qV6KmOfeUzb2CCNtEkCiSKk7UoH3_
+                - paragraph [ref=e1213]:
+                  - generic [ref=e1216]:
+                    - text: 校友会
+                    - emphasis [ref=e1217]: "2025"
+                    - text: 中国
+                    - emphasis [ref=e1218]: 大学智能医学工程
+                    - text: 专业
+                    - emphasis [ref=e1219]: 排名
+                    - text: ",山西医科大学、山东大学..."
+            - generic [ref=e1220]:
+              - link [ref=e1222] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=uyHY0oGCFo7lDzojsZTHLMlw-5JWtI3ItHpXhHoOHM4qHFN5msfqVO3ExuxJQWSYE08yv9sEQQvlzoB9VosHWuh0hSC5axDB6t85MksA_9rEoTMhQiB_r96WbDxfn6sSbZD_pqIRSG8GrWfO6bP1quveSAh-QSYKO42R_ivnOFpNAzi7DZqZWeMHpbTo8FvVwXGpMuZCk8HdMs7NG4z_uOiz9UApL97bnd6VnpDZ5u6Rbk8voIJ5e8VF6qV6KmOfeUzb2CCNtEkCiSKk7UoH3_
+              - generic [ref=e1227]:
+                - generic [ref=e1232]:
+                  - text: 2025年3月28日
+                  - generic [ref=e1233]:
+                    - text: 榜单显示,
+                    - emphasis [ref=e1234]: 山西医科大学、山东大学、天津大学、天津医科大学、南方科技大学高居2025中国大学智能医学工程专业排名(研究型)前5强
+                    - text: 。 辽宁何氏医学院、深圳技术大学、沈阳城市学院、赣南医科大学、桂林医学院挺进2025中国大学智能医学工程专业排名(应...
+                - link "微信公众平台" [ref=e1239] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=uyHY0oGCFo7lDzojsZTHLMlw-5JWtI3ItHpXhHoOHM4qHFN5msfqVO3ExuxJQWSYE08yv9sEQQvlzoB9VosHWuh0hSC5axDB6t85MksA_9rEoTMhQiB_r96WbDxfn6sSbZD_pqIRSG8GrWfO6bP1quveSAh-QSYKO42R_ivnOFpNAzi7DZqZWeMHpbTo8FvVwXGpMuZCk8HdMs7NG4z_uOiz9UApL97bnd6VnpDZ5u6Rbk8voIJ5e8VF6qV6KmOfeUzb2CCNtEkCiSKk7UoH3_
+                  - generic [ref=e1240]: 微信公众平台
+                  - generic [ref=e1242]: 
+          - generic [ref=e1246]:
+            - heading "智能医学工程全国大学排名" [level=3] [ref=e1249]:
+              - link "智能医学工程全国大学排名" [ref=e1250] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=H734-4--m25ZtmurxgnzCDsRgd_n-_TrARg03bXqBbbzMzpAfPVzpEidwGFdxBZ758zF5SB_TIa5Fp_aFwDXlNS-lfKWhtNmbAmmth__UvL4dTKTMyqBPMIa5V8ua_Mx7HmnTj6sU8M-gXLYCbvr3DdidopoN6k48JDcNXycI39C2nQ67TerdopzAscvuMQjIOptRk7zxMp0R18_izvMmbKx5UKVIvLHreQSNIhDJlBrk6YEqBgx-5gxKcgQqNpU2zU2KYC6qAqyVsxylPvDSHVhgTwvaOKUfzkk9luTzQmf0Crf-j8Z8xU-6VfvmDEiCIqcAY4RmEHxqaHmD972Tq
+                - paragraph [ref=e1253]:
+                  - generic [ref=e1256]:
+                    - emphasis [ref=e1257]: 智能医学工程
+                    - text: 全国
+                    - emphasis [ref=e1258]: 大学排名
+            - generic [ref=e1263]:
+              - text: 2025年7月31日
+              - generic [ref=e1264]:
+                - text: ==顶尖院校(A+级)==
+                - emphasis [ref=e1265]: 天津大学(排名第1) 东南大学(排名第2) 山东大学(排名第3)
+                - text: 这三所高校在医学人工智能、智能诊疗系统等研究领域具有突出优势,科研资源和产业合作实力领先。 ==头部院校(A级)== 华中科技大学 北京航空航天大学 哈尔滨工业大学 北京邮电大学 以跨学科融合...
+            - link "头像 知了爱学" [ref=e1270] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=H734-4--m25ZtmurxgnzCDsRgd_n-_TrARg03bXqBbbzMzpAfPVzpEidwGFdxBZ758zF5SB_TIa5Fp_aFwDXlNS-lfKWhtNmbAmmth__UvL4dTKTMyqBPMIa5V8ua_Mx7HmnTj6sU8M-gXLYCbvr3DdidopoN6k48JDcNXycI39C2nQ67TerdopzAscvuMQjIOptRk7zxMp0R18_izvMmbKx5UKVIvLHreQSNIhDJlBrk6YEqBgx-5gxKcgQqNpU2zU2KYC6qAqyVsxylPvDSHVhgTwvaOKUfzkk9luTzQmf0Crf-j8Z8xU-6VfvmDEiCIqcAY4RmEHxqaHmD972Tq
+              - img "头像" [ref=e1273]
+              - generic [ref=e1274]: 知了爱学
+              - generic [ref=e1276]: 
+          - generic [ref=e1278]:
+            - generic [ref=e1279]: 大家还在搜
+            - generic [ref=e1280]:
+              - link "大学专业有哪些" [ref=e1281] [cursor=pointer]:
+                - /url: /s?rsv_idx=1&wd=%E5%A4%A7%E5%AD%A6%E4%B8%93%E4%B8%9A%E6%9C%89%E5%93%AA%E4%BA%9B&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=b0faXUIzuUF2nd1f2G5OMbkadd%2BGvfVzwSGI1g1b1svuVo%2Bxh36FNhA%2BhU0&rsf=101631202&rsv_dl=0_prs_28608_1
+                - generic [ref=e1283]: 大学专业有哪些
+              - link "生物医学工程学科评估排名第五轮" [ref=e1284] [cursor=pointer]:
+                - /url: /s?rsv_idx=1&wd=%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E6%8E%92%E5%90%8D%E7%AC%AC%E4%BA%94%E8%BD%AE&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=b0faXUIzuUF2nd1f2G5OMbkadd%2BGvfVzwSGI1g1b1svuVo%2Bxh36FNhA%2BhU0&rsf=101636803&rsv_dl=0_prs_28608_2
+                - generic [ref=e1286]: 生物医学工程学科评估排名第五轮
+              - link "智能医学工程专业大学排名" [ref=e1287] [cursor=pointer]:
+                - /url: /s?rsv_idx=1&wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=b0faXUIzuUF2nd1f2G5OMbkadd%2BGvfVzwSGI1g1b1svuVo%2Bxh36FNhA%2BhU0&rsf=101633403&rsv_dl=0_prs_28608_3
+                - generic [ref=e1289]: 智能医学工程专业大学排名
+              - link "智能制造工程学科评估排名" [ref=e1290] [cursor=pointer]:
+                - /url: /s?rsv_idx=1&wd=%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0%E5%B7%A5%E7%A8%8B%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E6%8E%92%E5%90%8D&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=b0faXUIzuUF2nd1f2G5OMbkadd%2BGvfVzwSGI1g1b1svuVo%2Bxh36FNhA%2BhU0&rsf=101636803&rsv_dl=0_prs_28608_4
+                - generic [ref=e1292]: 智能制造工程学科评估排名
+              - link "智能医学工程开设院校" [ref=e1293] [cursor=pointer]:
+                - /url: /s?rsv_idx=1&wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=b0faXUIzuUF2nd1f2G5OMbkadd%2BGvfVzwSGI1g1b1svuVo%2Bxh36FNhA%2BhU0&rsf=101636803&rsv_dl=0_prs_28608_5
+                - generic [ref=e1295]: 智能医学工程开设院校
+              - link "医学类第四轮学科评估结果" [ref=e1296] [cursor=pointer]:
+                - /url: /s?rsv_idx=1&wd=%E5%8C%BB%E5%AD%A6%E7%B1%BB%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E7%BB%93%E6%9E%9C&fenlei=256&usm=2&ie=utf-8&rsv_pq=c3f36b8d02fdaa8c&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&rsv_t=b0faXUIzuUF2nd1f2G5OMbkadd%2BGvfVzwSGI1g1b1svuVo%2Bxh36FNhA%2BhU0&rsf=101633403&rsv_dl=0_prs_28608_6
+                - generic [ref=e1298]: 医学类第四轮学科评估结果
+          - generic [ref=e1302]:
+            - heading "智能医学工程专业最好的大学排名(2025年最新院校榜单)-新高考网" [level=3] [ref=e1305]:
+              - link "智能医学工程专业最好的大学排名(2025年最新院校榜单)-新高考网" [ref=e1306] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=umrQ0R_kRpEmUWgJ4YIQhn0Ax_V13ISqAJ8Je0ROVaX8HuffcqFE9PpZPE5VYQev
+                - paragraph [ref=e1309]:
+                  - generic [ref=e1312]:
+                    - emphasis [ref=e1313]: 智能医学工程
+                    - text: 专业最好的
+                    - emphasis [ref=e1314]: 大学排名
+                    - text: (
+                    - emphasis [ref=e1315]: "2025"
+                    - text: 年最新
+                    - emphasis [ref=e1316]: 院校
+                    - text: 榜单)-新高考网
+            - generic [ref=e1317]:
+              - link [ref=e1319] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=umrQ0R_kRpEmUWgJ4YIQhn0Ax_V13ISqAJ8Je0ROVaX8HuffcqFE9PpZPE5VYQev
+              - generic [ref=e1324]:
+                - generic [ref=e1329]:
+                  - text: 2025年6月20日
+                  - generic [ref=e1330]:
+                    - emphasis [ref=e1331]: "2025"
+                    - text: 年
+                    - emphasis [ref=e1332]: 智能医学工程
+                    - text: 专业哪个
+                    - emphasis [ref=e1333]: 学校
+                    - text: 最好,有哪些
+                    - emphasis [ref=e1334]: 排名
+                    - text: 比较好的
+                    - emphasis [ref=e1335]: 大学
+                    - text: 呢? 智能医学工程专业排名前10名的大学有:北京航空航天大学(排名第1)、南开大学(排名第2)、华中科技大学(排名第3)、哈尔滨工业大学(排名第4)、天津大学(排名第5)、西安电子科技大学(排名第6)、山东大学(排名第7)、东北大学(排名第8)、天津医科大学(...
+                - link "新高考网" [ref=e1340] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=umrQ0R_kRpEmUWgJ4YIQhn0Ax_V13ISqAJ8Je0ROVaX8HuffcqFE9PpZPE5VYQev
+                  - generic [ref=e1341]: 新高考网
+                  - generic [ref=e1343]: 
+          - generic [ref=e1347]:
+            - heading "校友会2025中国大学智能医学工程专业排名,山西医科大学、山东大学、辽..." [level=3] [ref=e1350]:
+              - link "校友会2025中国大学智能医学工程专业排名,山西医科大学、山东大学、辽..." [ref=e1351] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=h9wiJM8-Na6Pvbylxcx2Iu-PATDrSU5XLMG2WmtZhpjQute4L36xAxUBBhOlajI4F6UPQ47y1seFA2SUHmA-ua
+                - paragraph [ref=e1354]:
+                  - generic [ref=e1357]:
+                    - text: 校友会
+                    - emphasis [ref=e1358]: "2025"
+                    - text: 中国
+                    - emphasis [ref=e1359]: 大学智能医学工程
+                    - text: 专业
+                    - emphasis [ref=e1360]: 排名
+                    - text: ",山西医科大学、山东大学、辽..."
+            - generic [ref=e1365]:
+              - text: 2025年3月29日
+              - generic [ref=e1366]:
+                - text: 专业提供权威参考,
+                - emphasis [ref=e1367]: "2025"
+                - text: 年3月,全国第三方大学评价机构 艾瑞深校友会网 (http://Cuaa.net)最新发布校友会2025中国大学一流专业
+                - emphasis [ref=e1368]: 排名
+                - text: 、2025中国
+                - emphasis [ref=e1369]: 大学智能医学工程
+                - text: 专业排名,全国共1308所本科
+                - emphasis [ref=e1370]: 高校
+                - text: 的近6万个本科专业上榜。榜单显示,山西医科大学、山东大学、天津大学、天津医科大学、南方科技大学高居2025中国大学智能医学工程专业...
+            - generic [ref=e1371]:
+              - link [ref=e1372] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=h9wiJM8-Na6Pvbylxcx2Iu-PATDrSU5XLMG2WmtZhpjQute4L36xAxUBBhOlajI4F6UPQ47y1seFA2SUHmA-ua
+              - link [ref=e1376] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=h9wiJM8-Na6Pvbylxcx2Iu-PATDrSU5XLMG2WmtZhpjQute4L36xAxUBBhOlajI4F6UPQ47y1seFA2SUHmA-ua
+              - link [ref=e1380] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=h9wiJM8-Na6Pvbylxcx2Iu-PATDrSU5XLMG2WmtZhpjQute4L36xAxUBBhOlajI4F6UPQ47y1seFA2SUHmA-ua
+              - link [ref=e1384] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=h9wiJM8-Na6Pvbylxcx2Iu-PATDrSU5XLMG2WmtZhpjQute4L36xAxUBBhOlajI4F6UPQ47y1seFA2SUHmA-ua
+              - link "6" [ref=e1388] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=h9wiJM8-Na6Pvbylxcx2Iu-PATDrSU5XLMG2WmtZhpjQute4L36xAxUBBhOlajI4F6UPQ47y1seFA2SUHmA-ua
+                - generic [ref=e1393]:
+                  - generic [ref=e1394]: 
+                  - text: "6"
+            - link "头像 知乎" [ref=e1399] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=h9wiJM8-Na6Pvbylxcx2Iu-PATDrSU5XLMG2WmtZhpjQute4L36xAxUBBhOlajI4F6UPQ47y1seFA2SUHmA-ua
+              - img "头像" [ref=e1402]
+              - generic [ref=e1403]: 知乎
+              - generic [ref=e1405]: 
+          - generic [ref=e1409]:
+            - heading "2024智能医学工程专业怎么样-开设院校-就业方向-大学排名-大学生..." [level=3] [ref=e1412]:
+              - link "2024智能医学工程专业怎么样-开设院校-就业方向-大学排名-大学生..." [ref=e1413] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=H734-4--m25ZtmurxgnzCDlTVpdOYokcQQp0Rx0cJ3iHmX9t1sOYT7i-_Ft93yQw6x4vaiuF8OeYz6oYqgAov3nMb11W0rY2vgb0hh7czlBV6epF1RkYfJft50V7WAGB
+                - paragraph [ref=e1416]:
+                  - generic [ref=e1419]:
+                    - emphasis [ref=e1420]: 2024智能医学工程
+                    - text: 专业怎么样-
+                    - emphasis [ref=e1421]: 开设院校
+                    - text: "-就业方向-"
+                    - emphasis [ref=e1422]: 大学排名
+                    - text: "-大学生..."
+            - generic [ref=e1427]:
+              - text: 2025年6月7日
+              - generic [ref=e1428]:
+                - text: 本页面为大家整理的是
+                - emphasis [ref=e1429]: 智能医学工程
+                - text: 专业介绍、
+                - emphasis [ref=e1430]: 开设院校
+                - text: 、就业方向、选科要求、
+                - emphasis [ref=e1431]: 大学排名
+                - text: 、特色专业等信息,希望对大家有所帮助,如有不同,请以学校官网公布的信息为准。
+            - link "大学生必备网" [ref=e1436] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=H734-4--m25ZtmurxgnzCDlTVpdOYokcQQp0Rx0cJ3iHmX9t1sOYT7i-_Ft93yQw6x4vaiuF8OeYz6oYqgAov3nMb11W0rY2vgb0hh7czlBV6epF1RkYfJft50V7WAGB
+              - generic [ref=e1437]: 大学生必备网
+              - generic [ref=e1439]: 
+        - generic [ref=e1442]:
+          - generic [ref=e1443]: 相关搜索
+          - table [ref=e1444]:
+            - rowgroup [ref=e1445]:
+              - row "大学专业有哪些 生物医学工程学科评估排名第五轮" [ref=e1446]:
+                - cell "大学专业有哪些" [ref=e1447]:
+                  - link "大学专业有哪些" [ref=e1448] [cursor=pointer]:
+                    - /url: /s?wd=%E5%A4%A7%E5%AD%A6%E4%B8%93%E4%B8%9A%E6%9C%89%E5%93%AA%E4%BA%9B&rsf=101631202&rsp=0&f=1&rs_src=0&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&rsv_dl=brs_28338_1
+                    - generic [ref=e1450]: 大学专业有哪些
+                - cell "生物医学工程学科评估排名第五轮" [ref=e1451]:
+                  - link "生物医学工程学科评估排名第五轮" [ref=e1452] [cursor=pointer]:
+                    - /url: /s?wd=%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E6%8E%92%E5%90%8D%E7%AC%AC%E4%BA%94%E8%BD%AE&rsf=101636803&rsp=1&f=1&rs_src=0&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&rsv_dl=brs_28338_2
+                    - generic [ref=e1454]: 生物医学工程学科评估排名第五轮
+              - row "智能医学工程专业大学排名 智能制造工程学科评估排名" [ref=e1455]:
+                - cell "智能医学工程专业大学排名" [ref=e1456]:
+                  - link "智能医学工程专业大学排名" [ref=e1457] [cursor=pointer]:
+                    - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E4%B8%93%E4%B8%9A%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D&rsf=101633403&rsp=2&f=1&rs_src=0&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&rsv_dl=brs_28338_3
+                    - generic [ref=e1459]: 智能医学工程专业大学排名
+                - cell "智能制造工程学科评估排名" [ref=e1460]:
+                  - link "智能制造工程学科评估排名" [ref=e1461] [cursor=pointer]:
+                    - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0%E5%B7%A5%E7%A8%8B%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E6%8E%92%E5%90%8D&rsf=101636803&rsp=3&f=1&rs_src=0&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&rsv_dl=brs_28338_4
+                    - generic [ref=e1463]: 智能制造工程学科评估排名
+              - row "智能医学工程开设院校 医学类第四轮学科评估结果" [ref=e1464]:
+                - cell "智能医学工程开设院校" [ref=e1465]:
+                  - link "智能医学工程开设院校" [ref=e1466] [cursor=pointer]:
+                    - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1&rsf=101636803&rsp=4&f=1&rs_src=0&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&rsv_dl=brs_28338_5
+                    - generic [ref=e1468]: 智能医学工程开设院校
+                - cell "医学类第四轮学科评估结果" [ref=e1469]:
+                  - link "医学类第四轮学科评估结果" [ref=e1470] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E5%AD%A6%E7%B1%BB%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E7%BB%93%E6%9E%9C&rsf=101633403&rsp=5&f=1&rs_src=0&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&rsv_dl=brs_28338_6
+                    - generic [ref=e1472]: 医学类第四轮学科评估结果
+              - row "医学专业学科评估排名 生物医学工程 学科评估" [ref=e1473]:
+                - cell "医学专业学科评估排名" [ref=e1474]:
+                  - link "医学专业学科评估排名" [ref=e1475] [cursor=pointer]:
+                    - /url: /s?wd=%E5%8C%BB%E5%AD%A6%E4%B8%93%E4%B8%9A%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E6%8E%92%E5%90%8D&rsf=101636803&rsp=6&f=1&rs_src=0&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&rsv_dl=brs_28338_7
+                    - generic [ref=e1477]: 医学专业学科评估排名
+                - cell "生物医学工程 学科评估" [ref=e1478]:
+                  - link "生物医学工程 学科评估" [ref=e1479] [cursor=pointer]:
+                    - /url: /s?wd=%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0&rsf=101633403&rsp=7&f=1&rs_src=0&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&rsv_dl=brs_28338_8
+                    - generic [ref=e1481]: 生物医学工程 学科评估
+              - row "生物医学工程第四轮学科评估结果 第五轮临床医学学科评估结果" [ref=e1482]:
+                - cell "生物医学工程第四轮学科评估结果" [ref=e1483]:
+                  - link "生物医学工程第四轮学科评估结果" [ref=e1484] [cursor=pointer]:
+                    - /url: /s?wd=%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%E7%AC%AC%E5%9B%9B%E8%BD%AE%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E7%BB%93%E6%9E%9C&rsf=101633403&rsp=8&f=1&rs_src=0&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&rsv_dl=brs_28338_9
+                    - generic [ref=e1486]: 生物医学工程第四轮学科评估结果
+                - cell "第五轮临床医学学科评估结果" [ref=e1487]:
+                  - link "第五轮临床医学学科评估结果" [ref=e1488] [cursor=pointer]:
+                    - /url: /s?wd=%E7%AC%AC%E4%BA%94%E8%BD%AE%E4%B8%B4%E5%BA%8A%E5%8C%BB%E5%AD%A6%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%E7%BB%93%E6%9E%9C&rsf=101633403&rsp=9&f=1&rs_src=0&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&rsv_dl=brs_28338_10
+                    - generic [ref=e1490]: 第五轮临床医学学科评估结果
+      - generic [ref=e1493]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e1494]:
+          - generic [ref=e1495]: "1"
+        - link "2" [ref=e1496] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&pn=10&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&topic_pn=
+          - generic [ref=e1497]: "2"
+        - link "3" [ref=e1498] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&pn=20&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&topic_pn=
+          - generic [ref=e1499]: "3"
+        - link "4" [ref=e1500] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&pn=30&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&topic_pn=
+          - generic [ref=e1501]: "4"
+        - link "5" [ref=e1502] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&pn=40&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&topic_pn=
+          - generic [ref=e1503]: "5"
+        - link "6" [ref=e1504] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&pn=50&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&topic_pn=
+          - generic [ref=e1505]: "6"
+        - link "7" [ref=e1506] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&pn=60&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&topic_pn=
+          - generic [ref=e1507]: "7"
+        - link "8" [ref=e1508] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&pn=70&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&topic_pn=
+          - generic [ref=e1509]: "8"
+        - link "9" [ref=e1510] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&pn=80&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&topic_pn=
+          - generic [ref=e1511]: "9"
+        - link "10" [ref=e1512] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&pn=90&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&topic_pn=
+          - generic [ref=e1513]: "10"
+        - link "下一页" [ref=e1514] [cursor=pointer]:
+          - /url: /s?wd=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&pn=10&oq=%E6%99%BA%E8%83%BD%E5%8C%BB%E5%AD%A6%E5%B7%A5%E7%A8%8B%20%E5%A4%A7%E5%AD%A6%E6%8E%92%E5%90%8D%20%E5%AD%A6%E7%A7%91%E8%AF%84%E4%BC%B0%20%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1%202024%202025&ie=utf-8&usm=2&fenlei=256&rsv_idx=1&rsv_pq=c3f36b8d02fdaa8c&rsv_t=73e7BIoARBsWJVO2I9RetrM7vwNtmAI1FEZDvold4y2UMyVso1z1GMZOmpw&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e1515]
+      - generic [ref=e1518]:
+        - link "帮助" [ref=e1519] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e1520] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e1521] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e1522] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

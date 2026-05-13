@@ -1,0 +1,45 @@
+{
+  "university_name": "首钢工学院",
+  "short_name": "SGIT",
+  "location": {
+    "province": "北京",
+    "district": "石景山区",
+    "proximity_to_industry": "极高（首钢园）"
+  },
+  "academic_profile": {
+    "type": "公办应用型本科",
+    "undergraduate_majors_count": 6,
+    "key_disciplines": [
+      "自动化",
+      "机械设计制造及其自动化",
+      "环境工程",
+      "冶金工程"
+    ],
+    "academician_count": 0
+  },
+  "admission_stats": {
+    "beijing_undergraduate_line_2025": 447,
+    "hebei_vocational_line_2025_physics": 475,
+    "popularity_trend": "上升"
+  },
+  "employment_outcomes": {
+    "overall_employment_rate": ">95%",
+    "major_employer": "首钢集团",
+    "starting_salary_median": 4800,
+    "further_study_rate": "12%"
+  },
+  "campus_life": {
+    "dormitory_standard": "6人间/空调",
+    "signature_food": "首钢大包子",
+    "vibe": "硬核工业/务实"
+  },
+  "evaluation_scores": {
+    "academic": 1.8,
+    "employment": 3.8,
+    "location": 4.5,
+    "globalization": 1.5,
+    "student_empowerment": 2.8,
+    "brand_asset": 3.0,
+    "comprehensive_weighted_score": 3.04
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "university_name": "宝鸡文理学院",
+  "short_name": "宝文理 / BUAS",
+  "location": {
+    "province": "陕西省",
+    "city": "宝鸡市",
+    "campuses": [
+      "高新校区",
+      "石鼓校区"
+    ]
+  },
+  "academic_standing": {
+    "esi_top_1_percent": [
+      "Chemistry",
+      "Materials Science"
+    ],
+    "master_degree_points": 9,
+    "key_labs": [
+      "陕西省植物化学重点实验室",
+      "陕西省先进材料与技术重点实验室"
+    ]
+  },
+  "admission_profile": {
+    "avg_score_margin_shaanxi_liberal": 60,
+    "avg_score_margin_shaanxi_science": 50,
+    "student_source_primary": "Shaanxi Province"
+  },
+  "employment_stats": {
+    "primary_industry": "Education",
+    "secondary_industry": "Manufacturing (Titanium)",
+    "avg_starting_salary": 4600,
+    "further_study_rate": "16.5%"
+  },
+  "strategic_goal": "Renaming to Baoji University",
+  "overall_rating": 2.66
+}

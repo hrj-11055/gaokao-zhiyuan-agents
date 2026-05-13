@@ -1,0 +1,54 @@
+- generic [ref=e3]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - link "知乎" [ref=e7] [cursor=pointer]:
+        - /url: https://www.zhihu.com
+        - img [ref=e8]
+      - generic [ref=e13]:
+        - navigation [ref=e14]:
+          - link "关注" [ref=e15] [cursor=pointer]:
+            - /url: https://www.zhihu.com/signin?next=%2Ffollow
+            - generic [ref=e16]: 关注
+          - link "推荐" [ref=e17] [cursor=pointer]:
+            - /url: https://www.zhihu.com/signin?next=%2F
+            - generic [ref=e18]: 推荐
+          - link "热榜" [ref=e19] [cursor=pointer]:
+            - /url: https://www.zhihu.com/signin?next=%2Fhot
+            - generic [ref=e20]: 热榜
+          - link "专栏" [ref=e21] [cursor=pointer]:
+            - /url: https://www.zhihu.com/signin?next=%2Fcolumn-square
+            - generic [ref=e22]: 专栏
+          - link "圈子 New" [ref=e23] [cursor=pointer]:
+            - /url: https://www.zhihu.com/signin?next=%2Fring-feeds
+            - generic [ref=e24]:
+              - text: 圈子
+              - generic [ref=e25]: New
+          - link "付费咨询" [ref=e27] [cursor=pointer]:
+            - /url: https://www.zhihu.com/consult
+            - generic [ref=e28]: 付费咨询
+          - link "知学堂" [ref=e29] [cursor=pointer]:
+            - /url: https://www.zhihu.com/education/learning
+            - generic [ref=e30]: 知学堂
+        - generic [ref=e31]:
+          - search [ref=e32]:
+            - generic [ref=e36]:
+              - combobox "搜索" [ref=e37]
+              - button "搜索" [ref=e38] [cursor=pointer]:
+                - img [ref=e40]
+            - link "直答" [ref=e42] [cursor=pointer]:
+              - /url: https://zhida.zhihu.com/
+              - img [ref=e43]
+              - text: 直答
+          - generic [ref=e46]:
+            - generic [ref=e48] [cursor=pointer]: 切换模式
+            - button "登录/注册" [ref=e50] [cursor=pointer]
+  - generic [ref=e52]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - heading "你似乎来到了没有知识存在的荒原" [level=1] [ref=e55]
+        - paragraph [ref=e56]: 5 秒后自动跳转至知乎首页
+        - link "去往首页" [ref=e57] [cursor=pointer]:
+          - /url: https://www.zhihu.com
+      - img "page error" [ref=e59]
+    - button "建议反馈" [ref=e62] [cursor=pointer]:
+      - img "建议反馈" [ref=e63]

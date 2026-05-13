@@ -1,0 +1,44 @@
+{
+  "university_name": "蚌埠学院",
+  "short_name": "BBC",
+  "location": {
+    "province": "安徽省",
+    "city": "蚌埠市",
+    "district": "龙子湖区"
+  },
+  "academic_level": {
+    "type": "省属普通本科",
+    "is_master_unit_candidate": true,
+    "key_disciplines": [
+      "材料与化工",
+      "生物与医药",
+      "机械"
+    ]
+  },
+  "admission_data_2024": {
+    "ah_liberal_arts_rank": 29756,
+    "ah_science_rank": 141051
+  },
+  "employment_stats": {
+    "overall_employment_rate": "91.5%",
+    "further_study_rate": "10.2%",
+    "top_employer_industries": [
+      "制造业",
+      "IT",
+      "教育"
+    ]
+  },
+  "campus_life": {
+    "dormitory_condition": "空调、独卫、6人间为主",
+    "vibe": "务实、考研导向"
+  },
+  "evaluation_scores": {
+    "academic": 2.1,
+    "employment": 2.6,
+    "location": 2.8,
+    "globalization": 2.2,
+    "freedom": 3.1,
+    "brand": 2.5,
+    "weighted_total": 2.46
+  }
+}

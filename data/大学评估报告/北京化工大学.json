@@ -1,0 +1,44 @@
+{
+  "university_name": "北京化工大学",
+  "short_name": "BUCT",
+  "location": {
+    "city": "北京",
+    "districts": [
+      "昌平区",
+      "朝阳区"
+    ],
+    "city_gdp_2023": "43760亿元"
+  },
+  "academic_standing": {
+    "project_211": true,
+    "double_first_class": true,
+    "a_plus_disciplines": 1,
+    "a_minus_disciplines": 1,
+    "total_academicians": 14
+  },
+  "student_quality": {
+    "average_percentile_rank": "Top 1% - 5% (varies by province)",
+    "liberal_arts_acceptance": "Limited but high quality"
+  },
+  "employment_and_further_study": {
+    "total_further_study_rate": "62.79%",
+    "domestic_study_rate": "46.62%",
+    "overseas_study_rate": "16.17%",
+    "top_employers": [
+      "Sinopec",
+      "CNPC",
+      "Huawei",
+      "BYD"
+    ],
+    "estimated_starting_salary": 7200
+  },
+  "campus_life": {
+    "transfer_major_difficulty": "Moderate",
+    "dormitory_quality": "High (Changping Campus)",
+    "academic_pressure": "High"
+  },
+  "overall_evaluation": {
+    "score": 4.19,
+    "recommendation_index": "High for STEM students"
+  }
+}

@@ -1,0 +1,517 @@
+- generic [active] [ref=e1]:
+  - link "欢迎进入 百度一下，你就知道，盲人用户进入读屏幕模式请按快捷键Ctrl加Alt加R；阅读详细操作说明请按快捷键Ctrl加Alt加问号键。":
+    - /url: javascript:void(0)
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic:
+          - link "到百度首页" [ref=e6] [cursor=pointer]:
+            - /url: /
+            - img "到百度首页" [ref=e7]
+          - generic [ref=e10]:
+            - textbox [ref=e12]: 暨南大学 保送生 2024 2023 录取名单 人数
+            - generic [ref=e14]:
+              - generic [ref=e15]:
+                - img [ref=e17] [cursor=pointer]
+                - img [ref=e646] [cursor=pointer]
+                - generic [ref=e20]:
+                  - img [ref=e24] [cursor=pointer]
+                  - img [ref=e29] [cursor=pointer]
+              - button "百度一下" [ref=e33] [cursor=pointer]
+      - generic [ref=e34]:
+        - link "百度首页" [ref=e35] [cursor=pointer]:
+          - /url: /
+        - link "设置" [ref=e36] [cursor=pointer]:
+          - /url: javascript:;
+        - link "登录" [ref=e37] [cursor=pointer]:
+          - /url: https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F
+    - generic [ref=e40]:
+      - link [ref=e41] [cursor=pointer]:
+        - /url: https://chat.baidu.com/search?word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+2024+2023+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+%E4%BA%BA%E6%95%B0&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&pd=csaitab&setype=csaitab&extParamsJson=%7B%22enter_type%22%3A%22search_a_tab%22%2C%22sa%22%3A%22vs_tab%22%2C%22apagelid%22%3A%2213352239955271711055%22%2C%22ori_lid%22%3A%2213352239955271711055%22%7D
+        - img [ref=e42]
+      - generic [ref=e43]: 网页
+      - link "图片" [ref=e44] [cursor=pointer]:
+        - /url: http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&lid=b94caf7f01bf794f&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+2024+2023+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+%E4%BA%BA%E6%95%B0
+      - link "资讯" [ref=e45] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&ie=utf-8&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+2024+2023+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+%E4%BA%BA%E6%95%B0
+      - link "视频" [ref=e46] [cursor=pointer]:
+        - /url: /sf/vsearch?pd=video&tn=vsearch&lid=b94caf7f01bf794f&ie=utf-8&wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+2024+2023+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+%E4%BA%BA%E6%95%B0&rsv_spt=7&rsv_bp=1&f=8&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+2024+2023+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+%E4%BA%BA%E6%95%B0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ
+      - link "笔记" [ref=e47] [cursor=pointer]:
+        - /url: https://www.baidu.com/s?pd=note&rpf=pc&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+2024+2023+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+%E4%BA%BA%E6%95%B0
+      - link "地图" [ref=e48] [cursor=pointer]:
+        - /url: https://map.baidu.com/?newmap=1&ie=utf-8&from=pstab&s=s%26wd%3D%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+2024+2023+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+%E4%BA%BA%E6%95%B0
+      - link "贴吧" [ref=e49] [cursor=pointer]:
+        - /url: http://tieba.baidu.com/f?fr=wwwt&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&kw=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+2024+2023+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+%E4%BA%BA%E6%95%B0
+      - link "文库" [ref=e50] [cursor=pointer]:
+        - /url: http://wenku.baidu.com/search?lm=0&od=0&ie=utf-8&dyTabStr=MTIsMCwzLDEsMiwxMyw3LDYsNSw5&word=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E4%BF%9D%E9%80%81%E7%94%9F+2024+2023+%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95+%E4%BA%BA%E6%95%B0
+      - link "更多" [ref=e51] [cursor=pointer]:
+        - /url: http://www.baidu.com/more/
+      - generic [ref=e52] [cursor=pointer]: 搜索工具
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - table [ref=e56]:
+          - rowgroup [ref=e57]:
+            - row "相关搜索  暨南大学研究生分数线  暨南大学香港保送生  暨南大学2021推免人数  暨南大学保送名额  暨南大学推免生公示  暨南大学博士招生简章2020    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 厨师锅里吐口水后继续出餐 店长回应 9 伊朗外长向巴基斯坦递交停战条件 10 枪击发生时特朗普旁的华裔女记者是谁 11 黄鳝被喂避孕药是传了30年的谣言 12 A股一季度最赚钱公司曝光 13 女性多和好友聚会能“续命” 14 男子杀害岳父后潜逃33年终落网 15 高市政府越过“最后一根红线”" [ref=e58]:
+              - cell "相关搜索  暨南大学研究生分数线  暨南大学香港保送生  暨南大学2021推免人数  暨南大学保送名额  暨南大学推免生公示  暨南大学博士招生简章2020    换一换 热搜榜 民生榜 财经榜  “一分部署 九分落实” 1 巴基斯坦总统爱不释手：想把它带回家 热 2 中国迎来身份证集中换证高峰 新 3 为什么外国人越来越爱中国车 4 欠条十年不催不要过期失效 热 5 网红蔬菜价格大涨30倍 新 6 人类马拉松首次跑进2小时 热 7 巅峰德比！赵心童战胜丁俊晖 8 厨师锅里吐口水后继续出餐 店长回应 9 伊朗外长向巴基斯坦递交停战条件 10 枪击发生时特朗普旁的华裔女记者是谁 11 黄鳝被喂避孕药是传了30年的谣言 12 A股一季度最赚钱公司曝光 13 女性多和好友聚会能“续命” 14 男子杀害岳父后潜逃33年终落网 15 高市政府越过“最后一根红线”" [ref=e59]:
+                - generic [ref=e60]:
+                  - generic [ref=e66]:
+                    - generic [ref=e68]: 相关搜索
+                    - generic [ref=e69]:
+                      - link " 暨南大学研究生分数线" [ref=e72] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E5%88%86%E6%95%B0%E7%BA%BF&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rfqid=b94caf7f01bf794f&rsv_dl=0_prs_28616_1&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsf=101631202
+                        - generic [ref=e73]:
+                          - generic [ref=e74]: 
+                          - generic [ref=e75]: 暨南大学研究生分数线
+                      - link " 暨南大学香港保送生" [ref=e78] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E9%A6%99%E6%B8%AF%E4%BF%9D%E9%80%81%E7%94%9F&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rfqid=b94caf7f01bf794f&rsv_dl=0_prs_28616_2&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsf=101633403
+                        - generic [ref=e79]:
+                          - generic [ref=e80]: 
+                          - generic [ref=e81]: 暨南大学香港保送生
+                      - link " 暨南大学2021推免人数" [ref=e84] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62021%E6%8E%A8%E5%85%8D%E4%BA%BA%E6%95%B0&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rfqid=b94caf7f01bf794f&rsv_dl=0_prs_28616_3&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsf=101633403
+                        - generic [ref=e85]:
+                          - generic [ref=e86]: 
+                          - generic [ref=e87]: 暨南大学2021推免人数
+                      - link " 暨南大学保送名额" [ref=e90] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E4%BF%9D%E9%80%81%E5%90%8D%E9%A2%9D&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rfqid=b94caf7f01bf794f&rsv_dl=0_prs_28616_4&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsf=101631202
+                        - generic [ref=e91]:
+                          - generic [ref=e92]: 
+                          - generic [ref=e93]: 暨南大学保送名额
+                      - link " 暨南大学推免生公示" [ref=e96] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%8E%A8%E5%85%8D%E7%94%9F%E5%85%AC%E7%A4%BA&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rfqid=b94caf7f01bf794f&rsv_dl=0_prs_28616_5&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsf=101633403
+                        - generic [ref=e97]:
+                          - generic [ref=e98]: 
+                          - generic [ref=e99]: 暨南大学推免生公示
+                      - link " 暨南大学博士招生简章2020" [ref=e102] [cursor=pointer]:
+                        - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%8D%9A%E5%A3%AB%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A02020&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rfqid=b94caf7f01bf794f&rsv_dl=0_prs_28616_6&rq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsf=101631202
+                        - generic [ref=e103]:
+                          - generic [ref=e104]: 
+                          - generic [ref=e105]: 暨南大学博士招生简章2020
+                  - generic [ref=e109]:
+                    - generic "百度热搜" [ref=e110]:
+                      - link " " [ref=e111] [cursor=pointer]:
+                        - /url: https://top.baidu.com/board?platform=pc&sa=pcindex_a_right
+                        - generic [ref=e112]: 
+                        - generic [ref=e113]: 
+                      - link " 换一换" [ref=e115] [cursor=pointer]:
+                        - /url: javascript:void(0);
+                        - generic [ref=e116]: 
+                        - text: 换一换
+                    - generic [ref=e117]:
+                      - generic [ref=e118] [cursor=pointer]: 热搜榜
+                      - generic [ref=e119] [cursor=pointer]: 民生榜
+                      - generic [ref=e120] [cursor=pointer]: 财经榜
+                    - generic [ref=e122]:
+                      - generic [ref=e124]:
+                        - generic [ref=e126]: 
+                        - link "“一分部署 九分落实”" [ref=e127] [cursor=pointer]:
+                          - /url: /s?wd=%E2%80%9C%E4%B8%80%E5%88%86%E9%83%A8%E7%BD%B2%20%E4%B9%9D%E5%88%86%E8%90%BD%E5%AE%9E%E2%80%9D&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_1&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e129]:
+                        - generic [ref=e130]: "1"
+                        - link "巴基斯坦总统爱不释手：想把它带回家" [ref=e131] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E6%80%BB%E7%BB%9F%E7%88%B1%E4%B8%8D%E9%87%8A%E6%89%8B%EF%BC%9A%E6%83%B3%E6%8A%8A%E5%AE%83%E5%B8%A6%E5%9B%9E%E5%AE%B6&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_2&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e132]: 热
+                      - generic [ref=e134]:
+                        - generic [ref=e135]: "2"
+                        - link "中国迎来身份证集中换证高峰" [ref=e136] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%AD%E5%9B%BD%E8%BF%8E%E6%9D%A5%E8%BA%AB%E4%BB%BD%E8%AF%81%E9%9B%86%E4%B8%AD%E6%8D%A2%E8%AF%81%E9%AB%98%E5%B3%B0&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_3&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e137]: 新
+                      - generic [ref=e139]:
+                        - generic [ref=e140]: "3"
+                        - link "为什么外国人越来越爱中国车" [ref=e141] [cursor=pointer]:
+                          - /url: /s?wd=%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%96%E5%9B%BD%E4%BA%BA%E8%B6%8A%E6%9D%A5%E8%B6%8A%E7%88%B1%E4%B8%AD%E5%9B%BD%E8%BD%A6&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_4&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e143]:
+                        - generic [ref=e144]: "4"
+                        - link "欠条十年不催不要过期失效" [ref=e145] [cursor=pointer]:
+                          - /url: /s?wd=%E6%AC%A0%E6%9D%A1%E5%8D%81%E5%B9%B4%E4%B8%8D%E5%82%AC%E4%B8%8D%E8%A6%81%E8%BF%87%E6%9C%9F%E5%A4%B1%E6%95%88&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=a8bcYk5H9dlYWKiV75LA15MSqX8UlnD%2FL3u%2BzxfAZwf0f9HxeBiyL1sucEk&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_5&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e146]: 热
+                      - generic [ref=e148]:
+                        - generic [ref=e149]: "5"
+                        - link "网红蔬菜价格大涨30倍" [ref=e150] [cursor=pointer]:
+                          - /url: /s?wd=%E7%BD%91%E7%BA%A2%E8%94%AC%E8%8F%9C%E4%BB%B7%E6%A0%BC%E5%A4%A7%E6%B6%A830%E5%80%8D&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_6&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e151]: 新
+                      - generic [ref=e153]:
+                        - generic [ref=e154]: "6"
+                        - link "人类马拉松首次跑进2小时" [ref=e155] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BA%BA%E7%B1%BB%E9%A9%AC%E6%8B%89%E6%9D%BE%E9%A6%96%E6%AC%A1%E8%B7%91%E8%BF%9B2%E5%B0%8F%E6%97%B6&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_7&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                        - generic [ref=e156]: 热
+                      - generic [ref=e158]:
+                        - generic [ref=e159]: "7"
+                        - link "巅峰德比！赵心童战胜丁俊晖" [ref=e160] [cursor=pointer]:
+                          - /url: /s?wd=%E5%B7%85%E5%B3%B0%E5%BE%B7%E6%AF%94%EF%BC%81%E8%B5%B5%E5%BF%83%E7%AB%A5%E6%88%98%E8%83%9C%E4%B8%81%E4%BF%8A%E6%99%96&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_8&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e162]:
+                        - generic [ref=e163]: "8"
+                        - link "厨师锅里吐口水后继续出餐 店长回应" [ref=e164] [cursor=pointer]:
+                          - /url: /s?wd=%E5%8E%A8%E5%B8%88%E9%94%85%E9%87%8C%E5%90%90%E5%8F%A3%E6%B0%B4%E5%90%8E%E7%BB%A7%E7%BB%AD%E5%87%BA%E9%A4%90%20%E5%BA%97%E9%95%BF%E5%9B%9E%E5%BA%94&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_9&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e166]:
+                        - generic [ref=e167]: "9"
+                        - link "伊朗外长向巴基斯坦递交停战条件" [ref=e168] [cursor=pointer]:
+                          - /url: /s?wd=%E4%BC%8A%E6%9C%97%E5%A4%96%E9%95%BF%E5%90%91%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E9%80%92%E4%BA%A4%E5%81%9C%E6%88%98%E6%9D%A1%E4%BB%B6&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_10&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e170]:
+                        - generic [ref=e171]: "10"
+                        - link "枪击发生时特朗普旁的华裔女记者是谁" [ref=e172] [cursor=pointer]:
+                          - /url: /s?wd=%E6%9E%AA%E5%87%BB%E5%8F%91%E7%94%9F%E6%97%B6%E7%89%B9%E6%9C%97%E6%99%AE%E6%97%81%E7%9A%84%E5%8D%8E%E8%A3%94%E5%A5%B3%E8%AE%B0%E8%80%85%E6%98%AF%E8%B0%81&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_11&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e174]:
+                        - generic [ref=e175]: "11"
+                        - link "黄鳝被喂避孕药是传了30年的谣言" [ref=e176] [cursor=pointer]:
+                          - /url: /s?wd=%E9%BB%84%E9%B3%9D%E8%A2%AB%E5%96%82%E9%81%BF%E5%AD%95%E8%8D%AF%E6%98%AF%E4%BC%A0%E4%BA%8630%E5%B9%B4%E7%9A%84%E8%B0%A3%E8%A8%80&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_12&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e178]:
+                        - generic [ref=e179]: "12"
+                        - link "A股一季度最赚钱公司曝光" [ref=e180] [cursor=pointer]:
+                          - /url: /s?wd=A%E8%82%A1%E4%B8%80%E5%AD%A3%E5%BA%A6%E6%9C%80%E8%B5%9A%E9%92%B1%E5%85%AC%E5%8F%B8%E6%9B%9D%E5%85%89&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_13&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e182]:
+                        - generic [ref=e183]: "13"
+                        - link "女性多和好友聚会能“续命”" [ref=e184] [cursor=pointer]:
+                          - /url: /s?wd=%E5%A5%B3%E6%80%A7%E5%A4%9A%E5%92%8C%E5%A5%BD%E5%8F%8B%E8%81%9A%E4%BC%9A%E8%83%BD%E2%80%9C%E7%BB%AD%E5%91%BD%E2%80%9D&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_14&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e186]:
+                        - generic [ref=e187]: "14"
+                        - link "男子杀害岳父后潜逃33年终落网" [ref=e188] [cursor=pointer]:
+                          - /url: /s?wd=%E7%94%B7%E5%AD%90%E6%9D%80%E5%AE%B3%E5%B2%B3%E7%88%B6%E5%90%8E%E6%BD%9C%E9%80%8333%E5%B9%B4%E7%BB%88%E8%90%BD%E7%BD%91&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_1_15_15&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+                      - generic [ref=e190]:
+                        - generic [ref=e191]: "15"
+                        - link "高市政府越过“最后一根红线”" [ref=e192] [cursor=pointer]:
+                          - /url: /s?wd=%E9%AB%98%E5%B8%82%E6%94%BF%E5%BA%9C%E8%B6%8A%E8%BF%87%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E6%A0%B9%E7%BA%A2%E7%BA%BF%E2%80%9D&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=b7c2OVGvEeDpEKAcRAB1xWC8IYVUCCcvG3wbwKibU5HKK%2FlUycVU9VWgHb4&rqid=b94caf7f01bf794f&rsf=f2813fa43b84b44ea8b3a2fe1e10eb85_16_30_16&rsv_dl=0_right_fyb_pchot_20811&sa=0_right_fyb_pchot_20811
+        - generic [ref=e193]:
+          - generic [ref=e198]:
+            - generic [ref=e200]:
+              - img [ref=e203]
+              - generic:
+                - generic: 
+            - generic [ref=e208]:
+              - generic [ref=e209]: 问题分析中
+              - img [ref=e651]
+          - generic [ref=e222]:
+            - generic [ref=e224]:
+              - link "官方" [ref=e226] [cursor=pointer]:
+                - /url: https://aiqicha.baidu.com/feedback/official?from=baidu&type=gw
+                - generic [ref=e227]: 官方
+              - heading "2024年暨南大学接收推免生情况及统考指标一览表" [level=3] [ref=e228]:
+                - link "2024年暨南大学接收推免生情况及统考指标一览表" [ref=e229] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc5XoiuRkM3rfTlnqrpoeaxa0qr21Xgbn5Br3vSdq3KoaeObJXc9dfM6sPmzJ4xJpda
+                  - paragraph [ref=e232]:
+                    - generic [ref=e235]:
+                      - emphasis [ref=e236]: "2024"
+                      - text: 年
+                      - emphasis [ref=e237]: 暨南大学
+                      - text: 接收推免生情况及统考指标一览表
+            - generic [ref=e242]: 2023年10月20日74095
+            - link "头像 暨南大学研招网" [ref=e247] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc5XoiuRkM3rfTlnqrpoeaxa0qr21Xgbn5Br3vSdq3KoaeObJXc9dfM6sPmzJ4xJpda
+              - img "头像" [ref=e250]
+              - generic [ref=e251]: 暨南大学研招网
+              - generic [ref=e253]: 
+          - generic [ref=e257]:
+            - heading "暨南大学2024保研数据,5人被保送到北京大学" [level=3] [ref=e260]:
+              - link "暨南大学2024保研数据,5人被保送到北京大学" [ref=e261] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc-8f4lqzAwKhkpldrqNuVC3iEelkTDFzTYELcpZDkblTnTpvIPMA8a3Y5CuiMYoQ-CBh29ayt85PPD_lY13e93q
+                - paragraph [ref=e264]:
+                  - generic [ref=e267]:
+                    - emphasis [ref=e268]: 暨南大学2024
+                    - text: 保研数据,5人被
+                    - emphasis [ref=e269]: 保送
+                    - text: 到北京大学
+            - generic [ref=e270]:
+              - link [ref=e272] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc-8f4lqzAwKhkpldrqNuVC3iEelkTDFzTYELcpZDkblTnTpvIPMA8a3Y5CuiMYoQ-CBh29ayt85PPD_lY13e93q
+              - generic [ref=e277]:
+                - generic [ref=e282]:
+                  - text: 2023年11月3日
+                  - generic [ref=e283]:
+                    - text: 分学院来看，
+                    - emphasis [ref=e284]: 暨南大学的中医学院2024届本科生总人数有21人
+                    - text: ，保送研究生人数有五人，药学院保送研究生人数有14，人文学院有24人，新闻与传播学院有27人，外国语学院有十人。人文学院有15人，口腔医学院有七人，经济学院有27人。最后来简单分析一下，这些学生可能会被保送到哪些学校，根据目前统计到的数据来看，暨南...
+                - link "头像 升学小口袋信息技术咨询" [ref=e289] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc-8f4lqzAwKhkpldrqNuVC3iEelkTDFzTYELcpZDkblTnTpvIPMA8a3Y5CuiMYoQ-CBh29ayt85PPD_lY13e93q
+                  - img "头像" [ref=e292]
+                  - generic [ref=e293]: 升学小口袋信息技术咨询
+                  - generic [ref=e295]: 
+          - generic [ref=e299]:
+            - heading "关于暨南大学2025年优秀运动员保送拟录取名单的公示通知" [level=3] [ref=e302]:
+              - link "关于暨南大学2025年优秀运动员保送拟录取名单的公示通知" [ref=e303] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=JJsWGYHz0wVelDbOesllJU0uU_YMeVnuIbdIbpDhAs7VNEVJOEJlW0KGxLUFi6gqVzwEUnq6RBgzcg3zggW8f1VYFpwzYSWAkiSXW--KM8SFIEjXA4JYMXamxEJ1DqaI
+                - paragraph [ref=e306]:
+                  - generic [ref=e309]:
+                    - text: 关于
+                    - emphasis [ref=e310]: 暨南大学
+                    - text: 2025年优秀运动员
+                    - emphasis [ref=e311]: 保送
+                    - text: 拟
+                    - emphasis [ref=e312]: 录取名单
+                    - text: 的公示通知
+            - generic [ref=e317]:
+              - text: 6天前
+              - generic [ref=e318]:
+                - emphasis [ref=e319]: 暨南大学
+                - text: 近期开展了优秀运动员
+                - emphasis [ref=e320]: 保送生
+                - text: 的选拔工作 坚持 公平 公正 公开 原则 经过层层筛选 拟
+                - emphasis [ref=e321]: 录取名单
+                - text: 已出炉 公示期为2月24日至28日 有异议的可通过邮箱或电话反映哦 特别值得一提的是 跳水天才全红婵也在公示名单中 这位2007年出生的广东湛江女孩 在
+                - emphasis [ref=e322]: "2024"
+                - text: 年巴黎奥运会上斩获三金 ...
+            - generic [ref=e323]:
+              - link [ref=e325] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=JJsWGYHz0wVelDbOesllJU0uU_YMeVnuIbdIbpDhAs7VNEVJOEJlW0KGxLUFi6gqVzwEUnq6RBgzcg3zggW8f1VYFpwzYSWAkiSXW--KM8SFIEjXA4JYMXamxEJ1DqaI
+              - link [ref=e329] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=JJsWGYHz0wVelDbOesllJU0uU_YMeVnuIbdIbpDhAs7VNEVJOEJlW0KGxLUFi6gqVzwEUnq6RBgzcg3zggW8f1VYFpwzYSWAkiSXW--KM8SFIEjXA4JYMXamxEJ1DqaI
+              - link [ref=e333] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=JJsWGYHz0wVelDbOesllJU0uU_YMeVnuIbdIbpDhAs7VNEVJOEJlW0KGxLUFi6gqVzwEUnq6RBgzcg3zggW8f1VYFpwzYSWAkiSXW--KM8SFIEjXA4JYMXamxEJ1DqaI
+              - link "4" [ref=e337] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=JJsWGYHz0wVelDbOesllJU0uU_YMeVnuIbdIbpDhAs7VNEVJOEJlW0KGxLUFi6gqVzwEUnq6RBgzcg3zggW8f1VYFpwzYSWAkiSXW--KM8SFIEjXA4JYMXamxEJ1DqaI
+                - generic [ref=e340]:
+                  - generic [ref=e341]: 
+                  - text: "4"
+            - link "word.baidu.com/noteview/95c93d3735..." [ref=e346] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=JJsWGYHz0wVelDbOesllJU0uU_YMeVnuIbdIbpDhAs7VNEVJOEJlW0KGxLUFi6gqVzwEUnq6RBgzcg3zggW8f1VYFpwzYSWAkiSXW--KM8SFIEjXA4JYMXamxEJ1DqaI
+              - generic [ref=e347]: word.baidu.com/noteview/95c93d3735...
+              - generic [ref=e349]: 
+          - generic [ref=e353]:
+            - heading "暨南大學2024年在澳門招收保送生的規定" [level=3] [ref=e356]:
+              - link "暨南大學2024年在澳門招收保送生的規定" [ref=e357] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc5fZuvSIooP0bBbIn6XTp3BxDb1W_Lt0pebPajF7k6qRDIQgBhMoRnjq9CbgF_pFVa
+                - paragraph [ref=e360]:
+                  - generic [ref=e363]:
+                    - emphasis [ref=e364]: 暨南
+                    - text: 大學
+                    - emphasis [ref=e365]: "2024"
+                    - text: 年在澳門招收
+                    - emphasis [ref=e366]: 保送生
+                    - text: 的規定
+            - generic [ref=e371]:
+              - text: 2023年10月30日
+              - generic [ref=e372]:
+                - text: 三、
+                - emphasis [ref=e373]: 保送生
+                - text: 於
+                - emphasis [ref=e374]: "2023"
+                - text: 年11月1—10日,在網上(https://lxlz.jnu.edu.cn/)提交報名資訊,生成表格後列印1張。同時填寫好紙質登記表(見附件),“高中階段學習成績”一欄要注明全級人數、文(理)科人數、文(理)科名次,參加澳門各類活動(科技、文藝、體育、社會公益等)獲最高獎項者請提供證書副本(A4紙尺寸)。經中學校...
+            - link "暨南大学招生办公室" [ref=e379] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc5fZuvSIooP0bBbIn6XTp3BxDb1W_Lt0pebPajF7k6qRDIQgBhMoRnjq9CbgF_pFVa
+              - generic [ref=e380]: 暨南大学招生办公室
+              - generic [ref=e382]: 
+          - generic [ref=e384]:
+            - generic [ref=e385]: 大家还在搜
+            - generic [ref=e386]:
+              - link "暨南大学研究生分数线" [ref=e387] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E5%88%86%E6%95%B0%E7%BA%BF&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=0dbafMrsYwx2lraw88hN%2BT0HVMM6yZozmyICIPAcEq7h0NFWryPLq%2BkHP0Y&rsf=101631202&rsv_dl=0_prs_28608_1
+                - generic [ref=e389]: 暨南大学研究生分数线
+              - link "暨南大学香港保送生" [ref=e390] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E9%A6%99%E6%B8%AF%E4%BF%9D%E9%80%81%E7%94%9F&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=0dbafMrsYwx2lraw88hN%2BT0HVMM6yZozmyICIPAcEq7h0NFWryPLq%2BkHP0Y&rsf=101633403&rsv_dl=0_prs_28608_2
+                - generic [ref=e392]: 暨南大学香港保送生
+              - link "暨南大学2021推免人数" [ref=e393] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62021%E6%8E%A8%E5%85%8D%E4%BA%BA%E6%95%B0&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=0dbafMrsYwx2lraw88hN%2BT0HVMM6yZozmyICIPAcEq7h0NFWryPLq%2BkHP0Y&rsf=101633403&rsv_dl=0_prs_28608_3
+                - generic [ref=e395]: 暨南大学2021推免人数
+              - link "暨南大学保送名额" [ref=e396] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E4%BF%9D%E9%80%81%E5%90%8D%E9%A2%9D&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=0dbafMrsYwx2lraw88hN%2BT0HVMM6yZozmyICIPAcEq7h0NFWryPLq%2BkHP0Y&rsf=101631202&rsv_dl=0_prs_28608_4
+                - generic [ref=e398]: 暨南大学保送名额
+              - link "暨南大学推免生公示" [ref=e399] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%8E%A8%E5%85%8D%E7%94%9F%E5%85%AC%E7%A4%BA&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=0dbafMrsYwx2lraw88hN%2BT0HVMM6yZozmyICIPAcEq7h0NFWryPLq%2BkHP0Y&rsf=101633403&rsv_dl=0_prs_28608_5
+                - generic [ref=e401]: 暨南大学推免生公示
+              - link "暨南大学博士招生简章2020" [ref=e402] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E5%8D%9A%E5%A3%AB%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A02020&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=0dbafMrsYwx2lraw88hN%2BT0HVMM6yZozmyICIPAcEq7h0NFWryPLq%2BkHP0Y&rsf=101631202&rsv_dl=0_prs_28608_6
+                - generic [ref=e404]: 暨南大学博士招生简章2020
+              - link "暨南大学2018保送生" [ref=e405] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62018%E4%BF%9D%E9%80%81%E7%94%9F&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=0dbafMrsYwx2lraw88hN%2BT0HVMM6yZozmyICIPAcEq7h0NFWryPLq%2BkHP0Y&rsf=101631202&rsv_dl=0_prs_28608_7
+                - generic [ref=e407]: 暨南大学2018保送生
+              - link "暨南大学保送生招生简章" [ref=e408] [cursor=pointer]:
+                - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E4%BF%9D%E9%80%81%E7%94%9F%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A0&usm=2&ie=utf-8&rsv_pq=b94caf7f01bf794f&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&rsv_t=0dbafMrsYwx2lraw88hN%2BT0HVMM6yZozmyICIPAcEq7h0NFWryPLq%2BkHP0Y&rsf=101631202&rsv_dl=0_prs_28608_8
+                - generic [ref=e410]: 暨南大学保送生招生简章
+          - generic [ref=e414]:
+            - heading "关于公布2023年暨南大学香港保送生批次录取结果的通知" [level=3] [ref=e417]:
+              - link "关于公布2023年暨南大学香港保送生批次录取结果的通知" [ref=e418] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc5fZuvSIooP0bBbIn6XTp34xuVDIk0z41YSEYCYerepjMzS8qQC4TeGvQ4e09OOhma
+                - paragraph [ref=e421]:
+                  - generic [ref=e424]:
+                    - text: 关于公布
+                    - emphasis [ref=e425]: "2023"
+                    - text: 年
+                    - emphasis [ref=e426]: 暨南大学
+                    - text: 香港
+                    - emphasis [ref=e427]: 保送生
+                    - text: 批次
+                    - emphasis [ref=e428]: 录取
+                    - text: 结果的通知
+            - generic [ref=e433]:
+              - text: 2023年3月15日
+              - generic [ref=e434]:
+                - emphasis [ref=e435]: "2023"
+                - text: 年
+                - emphasis [ref=e436]: 暨南大学
+                - text: 招收香港
+                - emphasis [ref=e437]: 保送生
+                - text: 的
+                - emphasis [ref=e438]: 录取
+                - text: 工作已顺利结束。参加香港保送生计划的学生可通过两校联招报名系统(lxlz.jnu.edu.cn)查询录取结果。 凡有填报艺术、体育类专业的考生,需参加艺术、体育类专业的术科考核,请参考艺术体育类专业的招生简章(见文末相关简章)。术科考核结果将在5月公布。此类考生的最终录取结果,将在...
+            - link "暨南大学招生办公室" [ref=e443] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc5fZuvSIooP0bBbIn6XTp34xuVDIk0z41YSEYCYerepjMzS8qQC4TeGvQ4e09OOhma
+              - generic [ref=e444]: 暨南大学招生办公室
+              - generic [ref=e446]: 
+          - generic [ref=e450]:
+            - heading "暨南大学公布全红婵与吴嘉诚的保送录取名单" [level=3] [ref=e453]:
+              - link "暨南大学公布全红婵与吴嘉诚的保送录取名单" [ref=e454] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc-8f4lqzAwKhkpldrqNuVCAcxVF9D6MkFatRqiDyqbLbjJbgxjNZgw2rX-rtQWoBFdtxVaL1iXI2SlZJAHDft2q
+                - paragraph [ref=e457]:
+                  - generic [ref=e460]:
+                    - emphasis [ref=e461]: 暨南大学
+                    - text: 公布全红婵与吴嘉诚的
+                    - emphasis [ref=e462]: 保送录取名单
+            - generic [ref=e463]:
+              - link [ref=e465] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc-8f4lqzAwKhkpldrqNuVCAcxVF9D6MkFatRqiDyqbLbjJbgxjNZgw2rX-rtQWoBFdtxVaL1iXI2SlZJAHDft2q
+              - generic [ref=e470]:
+                - generic [ref=e475]:
+                  - text: 2025年2月25日
+                  - generic [ref=e476]:
+                    - text: 今日，
+                    - emphasis [ref=e477]: 暨南大学
+                    - text: 官方网站公布了2025年优秀运动员保送拟
+                    - emphasis [ref=e478]: 录取名单
+                    - text: 的通知。经过严格审核，全红婵、吴嘉诚两位优秀运动员已成功通过暨南大学的保送录取。此次公示依据《体育总局办公厅关于做好2025年高校保送录取优秀运动员有关事宜的通知》和《暨南大学2025年优秀运动员
+                    - emphasis [ref=e479]: 保送生
+                    - text: 招生简章》的相关规定，旨在确保招生过程的公开透明。在...
+                - link "头像 与寂寞无关" [ref=e484] [cursor=pointer]:
+                  - /url: http://www.baidu.com/link?url=81i4aY2HAcQwtgCcz5WQc-8f4lqzAwKhkpldrqNuVCAcxVF9D6MkFatRqiDyqbLbjJbgxjNZgw2rX-rtQWoBFdtxVaL1iXI2SlZJAHDft2q
+                  - img "头像" [ref=e487]
+                  - generic [ref=e488]: 与寂寞无关
+                  - generic [ref=e490]: 
+          - generic [ref=e494]:
+            - heading "暨南大學2024年在香港招收保送生的規定" [level=3] [ref=e497]:
+              - link "暨南大學2024年在香港招收保送生的規定" [ref=e498] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=O6IJOHyQyvY6Ba3U_Kfzta4sgROSUWW7GVYeSxF8QaxiqG5tJgt3VmowTYZu83sKfbUafFUeQDY-7-G0-_Y154lsK249awVYYCatfd9L9-O
+                - paragraph [ref=e501]:
+                  - generic [ref=e504]:
+                    - emphasis [ref=e505]: 暨南
+                    - text: 大學
+                    - emphasis [ref=e506]: "2024"
+                    - text: 年在香港招收
+                    - emphasis [ref=e507]: 保送生
+                    - text: 的規定
+            - generic [ref=e512]:
+              - text: 2023年11月28日
+              - generic [ref=e513]:
+                - text: "六、放榜時間:"
+                - emphasis [ref=e514]: "2024"
+                - text: "年3月15日前在網上公佈,考生可用註冊賬號及密碼自行登入報名系統查詢。 聯絡我們:"
+                - emphasis [ref=e515]: 暨南
+                - text: 大學網址:https://www.jnu.edu.cn 招生信息網:https://zsb.jnu.edu.cn 兩校聯招報名、查詢網址:https://lxlz.jnu.edu.cn 暨南大學本科生招生辦公室 ...
+            - link "暨南大学驻香港办事处" [ref=e520] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=O6IJOHyQyvY6Ba3U_Kfzta4sgROSUWW7GVYeSxF8QaxiqG5tJgt3VmowTYZu83sKfbUafFUeQDY-7-G0-_Y154lsK249awVYYCatfd9L9-O
+              - generic [ref=e521]: 暨南大学驻香港办事处
+              - generic [ref=e523]: 
+          - generic [ref=e527]:
+            - heading "关于拟推荐2024届本科毕业生免初试攻读研究生名单(普通类)的公示" [level=3] [ref=e530]:
+              - link "关于拟推荐2024届本科毕业生免初试攻读研究生名单(普通类)的公示" [ref=e531] [cursor=pointer]:
+                - /url: http://www.baidu.com/link?url=tpq_uyU_Ejn3TjgpGHltTFLd423Skuadzs9xtfy4XrZJWh3K9bfYfw6b-GSBGBiJ3icS3sh-FcJVTtYtGMwY0-ebHJ51sajwkNjcG-TTY2e
+                - paragraph [ref=e534]:
+                  - generic [ref=e537]:
+                    - text: 关于拟推荐
+                    - emphasis [ref=e538]: "2024"
+                    - text: 届本科毕业生免初试攻读研究
+                    - emphasis [ref=e539]: 生名单
+                    - text: (普通类)的公示
+            - generic [ref=e544]:
+              - text: 2023年9月5日
+              - generic [ref=e545]:
+                - text: 根据《
+                - emphasis [ref=e546]: 暨南大学
+                - text: 人文学院“普通类”免试攻读研究生遴选工作实施细则》规定,本次排序实行百分制综合评价,按综合评分排序,尽量保证推免指标在各专业间平均分配。当学校有追加指标时,按照以上推荐排序执行,不再重复公示。 公示时间从
+                - emphasis [ref=e547]: "2023"
+                - text: 年9月4日至2023年9月6日,如有异议,请在公示期内以书面形式反映,反映情况须签署真实...
+            - link "暨南大学人文学院" [ref=e552] [cursor=pointer]:
+              - /url: http://www.baidu.com/link?url=tpq_uyU_Ejn3TjgpGHltTFLd423Skuadzs9xtfy4XrZJWh3K9bfYfw6b-GSBGBiJ3icS3sh-FcJVTtYtGMwY0-ebHJ51sajwkNjcG-TTY2e
+              - generic [ref=e553]: 暨南大学人文学院
+              - generic [ref=e555]: 
+        - generic [ref=e558]:
+          - generic [ref=e559]: 相关搜索
+          - table [ref=e560]:
+            - rowgroup [ref=e561]:
+              - row "暨南大学研究生分数线 暨南大学香港保送生" [ref=e562]:
+                - cell "暨南大学研究生分数线" [ref=e563]:
+                  - link "暨南大学研究生分数线" [ref=e564] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E7%A0%94%E7%A9%B6%E7%94%9F%E5%88%86%E6%95%B0%E7%BA%BF&rsf=101631202&rsp=0&f=1&rs_src=0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&rsv_dl=brs_28338_1
+                    - generic [ref=e566]: 暨南大学研究生分数线
+                - cell "暨南大学香港保送生" [ref=e567]:
+                  - link "暨南大学香港保送生" [ref=e568] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E9%A6%99%E6%B8%AF%E4%BF%9D%E9%80%81%E7%94%9F&rsf=101633403&rsp=1&f=1&rs_src=0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&rsv_dl=brs_28338_2
+                    - generic [ref=e570]: 暨南大学香港保送生
+              - row "暨南大学保送名额 暨南大学推免生公示" [ref=e571]:
+                - cell "暨南大学保送名额" [ref=e572]:
+                  - link "暨南大学保送名额" [ref=e573] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E4%BF%9D%E9%80%81%E5%90%8D%E9%A2%9D&rsf=101631202&rsp=2&f=1&rs_src=0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&rsv_dl=brs_28338_3
+                    - generic [ref=e575]: 暨南大学保送名额
+                - cell "暨南大学推免生公示" [ref=e576]:
+                  - link "暨南大学推免生公示" [ref=e577] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%8E%A8%E5%85%8D%E7%94%9F%E5%85%AC%E7%A4%BA&rsf=101633403&rsp=3&f=1&rs_src=0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&rsv_dl=brs_28338_4
+                    - generic [ref=e579]: 暨南大学推免生公示
+              - row "暨南大学推免生的比例 如何被暨南大学保送" [ref=e580]:
+                - cell "暨南大学推免生的比例" [ref=e581]:
+                  - link "暨南大学推免生的比例" [ref=e582] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%8E%A8%E5%85%8D%E7%94%9F%E7%9A%84%E6%AF%94%E4%BE%8B&rsf=101633403&rsp=4&f=1&rs_src=0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&rsv_dl=brs_28338_5
+                    - generic [ref=e584]: 暨南大学推免生的比例
+                - cell "如何被暨南大学保送" [ref=e585]:
+                  - link "如何被暨南大学保送" [ref=e586] [cursor=pointer]:
+                    - /url: /s?wd=%E5%A6%82%E4%BD%95%E8%A2%AB%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E4%BF%9D%E9%80%81&rsf=101631202&rsp=5&f=1&rs_src=0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&rsv_dl=brs_28338_6
+                    - generic [ref=e588]: 如何被暨南大学保送
+              - row "暨南大学接收推免生名单 暨南大学2+3保研" [ref=e589]:
+                - cell "暨南大学接收推免生名单" [ref=e590]:
+                  - link "暨南大学接收推免生名单" [ref=e591] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E6%8E%A5%E6%94%B6%E6%8E%A8%E5%85%8D%E7%94%9F%E5%90%8D%E5%8D%95&rsf=101633403&rsp=6&f=1&rs_src=0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&rsv_dl=brs_28338_7
+                    - generic [ref=e593]: 暨南大学接收推免生名单
+                - cell "暨南大学2+3保研" [ref=e594]:
+                  - link "暨南大学2+3保研" [ref=e595] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62%2B3%E4%BF%9D%E7%A0%94&rsf=101633403&rsp=7&f=1&rs_src=0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&rsv_dl=brs_28338_8
+                    - generic [ref=e597]: 暨南大学2+3保研
+              - row "暨南大学保送生招生简章 暨南大学2021推免人数" [ref=e598]:
+                - cell "暨南大学保送生招生简章" [ref=e599]:
+                  - link "暨南大学保送生招生简章" [ref=e600] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%E4%BF%9D%E9%80%81%E7%94%9F%E6%8B%9B%E7%94%9F%E7%AE%80%E7%AB%A0&rsf=101631202&rsp=8&f=1&rs_src=0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&rsv_dl=brs_28338_9
+                    - generic [ref=e602]: 暨南大学保送生招生简章
+                - cell "暨南大学2021推免人数" [ref=e603]:
+                  - link "暨南大学2021推免人数" [ref=e604] [cursor=pointer]:
+                    - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A62021%E6%8E%A8%E5%85%8D%E4%BA%BA%E6%95%B0&rsf=101633403&rsp=9&f=1&rs_src=0&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&rsv_dl=brs_28338_10
+                    - generic [ref=e606]: 暨南大学2021推免人数
+      - generic [ref=e609]:
+        - link "上一页":
+          - /url: ""
+          - img "上一页"
+        - strong [ref=e610]:
+          - generic [ref=e611]: "1"
+        - link "2" [ref=e612] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&pn=10&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&ie=utf-8&usm=2&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&topic_pn=
+          - generic [ref=e613]: "2"
+        - link "3" [ref=e614] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&pn=20&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&ie=utf-8&usm=2&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&topic_pn=
+          - generic [ref=e615]: "3"
+        - link "4" [ref=e616] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&pn=30&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&ie=utf-8&usm=2&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&topic_pn=
+          - generic [ref=e617]: "4"
+        - link "5" [ref=e618] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&pn=40&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&ie=utf-8&usm=2&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&topic_pn=
+          - generic [ref=e619]: "5"
+        - link "6" [ref=e620] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&pn=50&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&ie=utf-8&usm=2&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&topic_pn=
+          - generic [ref=e621]: "6"
+        - link "7" [ref=e622] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&pn=60&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&ie=utf-8&usm=2&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&topic_pn=
+          - generic [ref=e623]: "7"
+        - link "8" [ref=e624] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&pn=70&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&ie=utf-8&usm=2&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&topic_pn=
+          - generic [ref=e625]: "8"
+        - link "9" [ref=e626] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&pn=80&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&ie=utf-8&usm=2&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&topic_pn=
+          - generic [ref=e627]: "9"
+        - link "10" [ref=e628] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&pn=90&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&ie=utf-8&usm=2&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&topic_pn=
+          - generic [ref=e629]: "10"
+        - link "下一页" [ref=e630] [cursor=pointer]:
+          - /url: /s?wd=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&pn=10&oq=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6%20%E4%BF%9D%E9%80%81%E7%94%9F%202024%202023%20%E5%BD%95%E5%8F%96%E5%90%8D%E5%8D%95%20%E4%BA%BA%E6%95%B0&ie=utf-8&usm=2&rsv_pq=b94caf7f01bf794f&rsv_t=bba38cf%2Fx9JIbz%2F0WqRKCbTUpYRiUp%2FG592WZXTFWVjZiDYTsM0HWZWyPaQ&topic_pn=&rsv_page=1
+          - img "下一页" [ref=e631]
+      - generic [ref=e634]:
+        - link "帮助" [ref=e635] [cursor=pointer]:
+          - /url: https://help.baidu.com/question?prod_id=1
+        - link "举报" [ref=e636] [cursor=pointer]:
+          - /url: https://help.baidu.com/jubao?source=search
+        - link "用户反馈" [ref=e637] [cursor=pointer]:
+          - /url: javascript:;
+        - link "企业推广" [ref=e638] [cursor=pointer]:
+          - /url: https://e.baidu.com/lp/search/?refer=1298

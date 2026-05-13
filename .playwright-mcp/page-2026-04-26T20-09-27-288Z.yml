@@ -1,0 +1,277 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjjrZmZqYyUAxVmnCsGHTtxE8gQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 汕头大学 争议 负面新闻 整改 被通报 汕头大学 争议 负面新闻 整改 被通报
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%25B1%2595%25E5%25A4%25B4%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E4%25BA%2589%25E8%25AE%25AE%2B%25E8%25B4%259F%25E9%259D%25A2%25E6%2596%25B0%25E9%2597%25BB%2B%25E6%2595%25B4%25E6%2594%25B9%2B%25E8%25A2%25AB%25E9%2580%259A%25E6%258A%25A5&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E8%A2%AB%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&aep=1&ntc=1&sa=X&ved=2ahUKEwjjrZmZqYyUAxVmnCsGHTtxE8gQ2J8OegQIERAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E8%A2%AB%E9%80%9A%E6%8A%A5&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&sa=X&ved=2ahUKEwjjrZmZqYyUAxVmnCsGHTtxE8gQ0pQJegQIFxAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "视频" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E8%A2%AB%E9%80%9A%E6%8A%A5&sa=X&ved=2ahUKEwjjrZmZqYyUAxVmnCsGHTtxE8gQtKgLegQIFhAB
+              - generic [ref=e95]: 视频
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E8%A2%AB%E9%80%9A%E6%8A%A5&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "图片" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E8%A2%AB%E9%80%9A%E6%8A%A5&sa=X&ved=2ahUKEwjjrZmZqYyUAxVmnCsGHTtxE8gQtKgLegQIFBAB
+              - generic [ref=e103]: 图片
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONTshNMjE5PZCaAuOHwFZmwGt85OiAswUWVTEAzQ6xQey42klZ3hKc3TBxFr4UBW357GCuFwxVWIYbjObc-mEYlxqxX7PgVJJVJc5covb38G3lh5WbsR0WOeLfxJ3WkdZblz3OpZpHwicSNVXOXuSxgnAbUQputyejqIHbxkI6yK2AVFp8gw&q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E8%A2%AB%E9%80%9A%E6%8A%A5&sa=X&ved=2ahUKEwjjrZmZqYyUAxVmnCsGHTtxE8gQs6gLegQIFRAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考" [level=2] [ref=e152]:
+          - generic [ref=e153]: 正在思考
+        - progressbar [ref=e154]
+      - main [ref=e156]:
+        - generic [ref=e160]:
+          - generic [ref=e163]:
+            - heading "网页搜索结果" [level=2] [ref=e164]
+            - generic [ref=e165]:
+              - generic [ref=e168]:
+                - link "普通高等学校学生管理规定 汕头大学教务处 https://jwc.stu.edu.cn › __local" [ref=e170] [cursor=pointer]:
+                  - /url: https://jwc.stu.edu.cn/__local/5/F0/8E/56D7973A1BF0E520ACB094273AE_AB6D580E_B7AB6.pdf
+                  - heading "普通高等学校学生管理规定" [level=3] [ref=e171]
+                  - generic [ref=e176]:
+                    - generic [ref=e178]: 汕头大学教务处
+                    - generic [ref=e180]: https://jwc.stu.edu.cn › __local
+                - generic [ref=e181]:
+                  - generic:
+                    - generic: PDF
+                - button "关于这条结果的详细信息" [ref=e182] [cursor=pointer]:
+                  - img [ref=e185]
+              - generic [ref=e189]:
+                - text: 普通高等学校学生管理规定. 1. 高等学校学生行为准则. 18. 学生伤害事故处理办法. 19. 广东省家庭经济困难学生认定工作指导意见. 27.
+                - emphasis [ref=e190]: 汕头大学
+                - text: 本科生管理规定.
+          - generic [ref=e195]:
+            - heading "相关问题" [level=2] [ref=e197]
+            - generic [ref=e198]:
+              - button "汕头大学为什么不是211？" [ref=e204] [cursor=pointer]:
+                - generic [ref=e206]: 汕头大学为什么不是211？
+                - img [ref=e209]
+              - button "汕头大学是一本还是二本？" [ref=e218] [cursor=pointer]:
+                - generic [ref=e220]: 汕头大学是一本还是二本？
+                - img [ref=e223]
+          - generic [ref=e228]:
+            - heading "网页搜索结果" [level=2] [ref=e229]
+            - generic [ref=e230]:
+              - generic [ref=e233]:
+                - link "汕头：90%以上行政复议案件实现“案结事了” ThePaper.cn https://www.thepaper.cn › newsDetail_forward_23541429" [ref=e235] [cursor=pointer]:
+                  - /url: https://www.thepaper.cn/newsDetail_forward_23541429
+                  - heading "汕头：90%以上行政复议案件实现“案结事了”" [level=3] [ref=e236]
+                  - generic [ref=e241]:
+                    - generic [ref=e243]: ThePaper.cn
+                    - generic [ref=e245]: https://www.thepaper.cn › newsDetail_forward_23541429
+                - button "关于这条结果的详细信息" [ref=e246] [cursor=pointer]:
+                  - img [ref=e249]
+              - generic [ref=e252]:
+                - generic [ref=e253]: 2023年6月19日 —
+                - generic [ref=e254]:
+                  - text: 据悉，自2021年6月
+                  - emphasis [ref=e255]: 汕头
+                  - text: 市行政复议体制实施改革以来，
+                  - emphasis [ref=e256]: 汕头
+                  - text: 进一步畅通行政复议申请渠道，群众企业申请行政复议更加便捷，全市行政复议申请和受理数量逐年增长， ...
+          - generic [ref=e260]:
+            - generic [ref=e263]:
+              - link "https://blog.google/search/?query=日本交易平台%20Java%20... blog.google https://blog.google › search › 搭建 › 部署 › 包网一条龙" [ref=e265] [cursor=pointer]:
+                - /url: https://blog.google/search/?query=%E6%97%A5%E6%9C%AC%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%20Java%20%E6%BA%90%E7%A0%81TG@gameapi25%E6%BA%90%E7%A0%81/%E6%90%AD%E5%BB%BA/%E9%83%A8%E7%BD%B2/%E5%8C%85%E7%BD%91%E4%B8%80%E6%9D%A1%E9%BE%99
+                - heading "https://blog.google/search/?query=日本交易平台%20Java%20..." [level=3] [ref=e266]
+                - generic [ref=e271]:
+                  - generic [ref=e273]: blog.google
+                  - generic [ref=e275]: https://blog.google › search › 搭建 › 部署 › 包网一条龙
+              - button "关于这条结果的详细信息" [ref=e276] [cursor=pointer]:
+                - img [ref=e279]
+            - generic [ref=e281]:
+              - generic [ref=e282]: 没有此网页的信息。
+              - link "了解原因" [ref=e284] [cursor=pointer]:
+                - /url: https://support.google.com/webmasters/answer/7489871?hl=zh
+          - generic [ref=e288]:
+            - generic [ref=e291]:
+              - link "汕头市人民政府关于修改《汕头经济特区既有住宅增设电梯 ... 中华人民共和国司法部 https://www.moj.gov.cn › sfbgw › flfggz › flfggzdfzwgz" [ref=e293] [cursor=pointer]:
+                - /url: https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzdfzwgz/201701/t20170122_141620.html
+                - heading "汕头市人民政府关于修改《汕头经济特区既有住宅增设电梯 ..." [level=3] [ref=e294]
+                - generic [ref=e299]:
+                  - generic [ref=e301]: 中华人民共和国司法部
+                  - generic [ref=e303]: https://www.moj.gov.cn › sfbgw › flfggz › flfggzdfzwgz
+              - button "关于这条结果的详细信息" [ref=e304] [cursor=pointer]:
+                - img [ref=e307]
+            - generic [ref=e310]:
+              - generic [ref=e311]: 2017年1月22日 —
+              - text: 为了贯彻落实市委市政府决定，营造法制化、国际化、便利化营商环境，根据《关于开展规章和规范性文件清理工作的通知》（汕府办传〔2016〕68号）、《关于 ...
+          - generic [ref=e315]:
+            - generic [ref=e318]:
+              - link "19岁女孩挪用1700万打赏主播：款项能否追回？各方责任 ... 手机网易网 https://www.163.com › article" [ref=e320] [cursor=pointer]:
+                - /url: https://www.163.com/dy/article/KR40SJNI05568W0A.html
+                - heading "19岁女孩挪用1700万打赏主播：款项能否追回？各方责任 ..." [level=3] [ref=e321]
+                - generic [ref=e326]:
+                  - generic [ref=e328]: 手机网易网
+                  - generic [ref=e330]: https://www.163.com › article
+              - button "关于这条结果的详细信息" [ref=e331] [cursor=pointer]:
+                - img [ref=e334]
+            - generic [ref=e337]:
+              - generic [ref=e338]: 5天前 —
+              - text: “因此，本案1700万元能否追回，关键在于刑事程序中对'打赏是否构成善意取得'的认定，以及法院是否支持向平台追缴赃款，这需要司法机关综合考量平台是否履行了 ...
+          - generic [ref=e342]:
+            - generic [ref=e345]:
+              - link "邻座的怪同学电影下载百度云 Li Cheng Uk Government Primary School https://www.lcu.edu.hk › qHlaCnuL" [ref=e347] [cursor=pointer]:
+                - /url: https://www.lcu.edu.hk/kVqAOj/theshyXuK/qHlaCnuL.doc
+                - heading "邻座的怪同学电影下载百度云" [level=3] [ref=e348]
+                - generic [ref=e353]:
+                  - generic [ref=e355]: Li Cheng Uk Government Primary School
+                  - generic [ref=e357]: https://www.lcu.edu.hk › qHlaCnuL
+              - generic [ref=e358]:
+                - generic [ref=e359]: ·
+                - link "转为简体网页" [ref=e360] [cursor=pointer]:
+                  - /url: https://www.lcu.edu.hk/kVqAOj/theshyXuK/qHlaCnuL.doc
+              - button "关于这条结果的详细信息" [ref=e361] [cursor=pointer]:
+                - img [ref=e364]
+            - generic [ref=e367]: 刚才(才)落(落)幕(幕)的十二(二)届全国人民代(代)表大(大)会(會)常委会第二十一(一)次会(會)展任(任)命了全(全)国人民代(代)表大(大)会相关专门(門)委员会副主任委(委) ...
+          - generic [ref=e371]:
+            - generic [ref=e374]:
+              - link "Sign in - Google Accounts Google https://sites.google.com › iia.xintaitong.com" [ref=e376] [cursor=pointer]:
+                - /url: https://sites.google.com/iia.xintaitong.com/vu37qyx
+                - heading "Sign in - Google Accounts" [level=3] [ref=e377]
+                - generic [ref=e382]:
+                  - generic [ref=e384]: Google
+                  - generic [ref=e386]: https://sites.google.com › iia.xintaitong.com
+              - generic [ref=e387]:
+                - generic [ref=e388]: ·
+                - link "翻译此页" [ref=e389] [cursor=pointer]:
+                  - /url: https://sites.google.com/iia.xintaitong.com/vu37qyx
+              - button "关于这条结果的详细信息" [ref=e390] [cursor=pointer]:
+                - img [ref=e393]
+            - generic [ref=e396]: Not your computer? Use Guest mode to sign in privately. Learn more about using Guest mode. Next. Create account. For my personal use; For work or my ...
+          - generic [ref=e400]:
+            - generic [ref=e403]:
+              - link "People who like \"google精准获客代做[TG@yuantou2048] ... Vimeo https://vimeo.com › likes" [ref=e405] [cursor=pointer]:
+                - /url: https://vimeo.com/1159705294/likes
+                - heading "People who like \"google精准获客代做[TG@yuantou2048] ..." [level=3] [ref=e406]
+                - generic [ref=e411]:
+                  - generic [ref=e413]: Vimeo
+                  - generic [ref=e415]: https://vimeo.com › likes
+              - button "关于这条结果的详细信息" [ref=e416] [cursor=pointer]:
+                - img [ref=e419]
+            - generic [ref=e422]: Join the web's most supportive community of creators and get high-quality tools for hosting, sharing, and streaming videos in gorgeous HD with no ads.
+          - generic [ref=e426]:
+            - generic [ref=e429]:
+              - link "《bt下载联盟论坛》app地址最新 中華基督教會基智中學 https://keichi.edu.hk › appisoUiQJDe" [ref=e431] [cursor=pointer]:
+                - /url: https://keichi.edu.hk/appisoUiQJDe/index.asp
+                - heading "《bt下载联盟论坛》app地址最新" [level=3] [ref=e432]
+                - generic [ref=e437]:
+                  - generic [ref=e439]: 中華基督教會基智中學
+                  - generic [ref=e441]: https://keichi.edu.hk › appisoUiQJDe
+              - generic [ref=e442]:
+                - generic [ref=e443]: ·
+                - link "转为简体网页" [ref=e444] [cursor=pointer]:
+                  - /url: https://keichi.edu.hk/appisoUiQJDe/index.asp
+              - button "关于这条结果的详细信息" [ref=e445] [cursor=pointer]:
+                - img [ref=e448]
+            - generic [ref=e451]: 据知情人士称，私募股权企业黑石集团已经答应以6.75亿美元现金将文思海辉发售给中国海航bt下载联盟论坛集团旗下一家科技企业。截至现下，该企业的融资总金额达到达3800 ...
+          - generic [ref=e455]:
+            - generic [ref=e458]:
+              - link "职业教育政策汇编（2018-2022） 达州职业技术学院 https://www.dzvtc.edu.cn › documents" [ref=e460] [cursor=pointer]:
+                - /url: https://www.dzvtc.edu.cn/documents/25505/2097100/13c1392b21144bf3859ba3fb3e7ffff2.pdf
+                - heading "职业教育政策汇编（2018-2022）" [level=3] [ref=e461]
+                - generic [ref=e466]:
+                  - generic [ref=e468]: 达州职业技术学院
+                  - generic [ref=e470]: https://www.dzvtc.edu.cn › documents
+              - generic [ref=e471]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e472] [cursor=pointer]:
+                - img [ref=e475]
+            - generic [ref=e477]:
+              - generic [ref=e478]: Page 1. 1. 职业教育政策汇编（2018-2022）. 目录. 1. 国务院关于印发《推行终身职业技能培训制度的意见》.
+              - generic [ref=e479]: 838 页
+        - navigation [ref=e482]:
+          - heading "网页导航" [level=1] [ref=e483]
+          - text: "1"
+          - link "Page 2" [ref=e486] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E8%A2%AB%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=9nDuaePaAua4ruEPu-LNwAw&start=10&sa=N&sstk=Af77f_fMkKrP7_5iGpRsGAEpCfmuhrdrp96Fij8lktB82RAfnEjLAIa7yPbTHJ5cRf8LQXi54RADyvBRIAB6M0r2H4899gVALNBsHw&ved=2ahUKEwjjrZmZqYyUAxVmnCsGHTtxE8gQ8tMDegQIPRAE
+            - text: "2"
+          - link "Page 3" [ref=e488] [cursor=pointer]:
+            - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E8%A2%AB%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=9nDuaePaAua4ruEPu-LNwAw&start=20&sa=N&sstk=Af77f_fMkKrP7_5iGpRsGAEpCfmuhrdrp96Fij8lktB82RAfnEjLAIa7yPbTHJ5cRf8LQXi54RADyvBRIAB6M0r2H4899gVALNBsHw&ved=2ahUKEwjjrZmZqYyUAxVmnCsGHTtxE8gQ8tMDegQIPRAG
+            - text: "3"
+          - heading "下一页" [level=2] [ref=e490]:
+            - link "下一页" [ref=e491] [cursor=pointer]:
+              - /url: /search?q=%E6%B1%95%E5%A4%B4%E5%A4%A7%E5%AD%A6+%E4%BA%89%E8%AE%AE+%E8%B4%9F%E9%9D%A2%E6%96%B0%E9%97%BB+%E6%95%B4%E6%94%B9+%E8%A2%AB%E9%80%9A%E6%8A%A5&sca_esv=164079556523993e&ei=9nDuaePaAua4ruEPu-LNwAw&start=10&sa=N&sstk=Af77f_fMkKrP7_5iGpRsGAEpCfmuhrdrp96Fij8lktB82RAfnEjLAIa7yPbTHJ5cRf8LQXi54RADyvBRIAB6M0r2H4899gVALNBsHw&ved=2ahUKEwjjrZmZqYyUAxVmnCsGHTtxE8gQ8NMDegQIPRAI
+              - generic [ref=e493]: 下一页
+        - navigation
+    - contentinfo [ref=e494]:
+      - heading "页脚链接" [level=1] [ref=e495]
+      - generic [ref=e499]:
+        - generic [ref=e503]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e505] [cursor=pointer]:
+            - generic [ref=e506]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e508]:
+              - text: "-"
+              - generic [ref=e509]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e511] [cursor=pointer]: 更新位置信息
+        - generic [ref=e514]:
+          - link "帮助" [ref=e515] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e516] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e517] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e518] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

@@ -1,0 +1,64 @@
+{
+  "university_name": "浙江农林大学",
+  "short_name": "ZAFU / 浙农林",
+  "location": {
+    "province": "浙江",
+    "city": "杭州",
+    "district": "临安",
+    "city_tier": "New First-tier",
+    "city_gdp_2024": "20059亿元"
+  },
+  "academic_standing": {
+    "soft科_rank": 150,
+    "key_disciplines": [
+      {
+        "name": "林学",
+        "level": "A-"
+      },
+      {
+        "name": "风景园林学",
+        "level": "B+"
+      },
+      {
+        "name": "农业资源与环境",
+        "level": "B"
+      }
+    ],
+    "national_key_labs": [
+      "森林食物资源挖掘与利用全国重点实验室"
+    ],
+    "academician_count": 3
+  },
+  "admission_stats": {
+    "zhejiang_min_rank_2025": 96779,
+    "special_programs": [
+      "三位一体",
+      "基层农技定向",
+      "基层林技定向"
+    ],
+    "competition_level": "Medium-High"
+  },
+  "employment_outcomes": {
+    "further_study_rate": "25.47%",
+    "top_employers": [
+      "浙江省林业系统",
+      "园林设计院",
+      "阿里巴巴",
+      "正大集团"
+    ],
+    "avg_starting_salary": 6199,
+    "retention_in_province": "75%"
+  },
+  "campus_vibe": {
+    "tags": [
+      "Ecological",
+      "Pragmatic",
+      "Botanical Garden"
+    ],
+    "star_canteen_dish": "5-cent dishes",
+    "risk_points": [
+      "Location distance from city center"
+    ]
+  },
+  "comprehensive_score": 3.715
+}

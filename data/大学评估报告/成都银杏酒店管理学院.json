@@ -1,0 +1,58 @@
+{
+  "university_name": "成都银杏酒店管理学院",
+  "short_name": "银杏学院 / Gingko College",
+  "location": {
+    "province": "四川",
+    "main_city": "成都",
+    "campuses": [
+      "郫都校区",
+      "宜宾校区"
+    ]
+  },
+  "academic_level": {
+    "type": "民办应用型本科",
+    "master_degree_status": "立项建设单位",
+    "key_majors": [
+      {
+        "name": "酒店管理",
+        "level": "国家级一流本科专业"
+      },
+      {
+        "name": "旅游管理",
+        "level": "省级一流本科专业"
+      },
+      {
+        "name": "休闲体育",
+        "level": "省级一流本科专业"
+      }
+    ]
+  },
+  "admission_stats": {
+    "avg_score_above_cutoff_liberal": 15,
+    "avg_score_above_cutoff_science": 10,
+    "competitiveness_index": "中等偏上"
+  },
+  "employment_outcomes": {
+    "employment_rate": "89.46%",
+    "top_employer_sectors": [
+      "高端酒店",
+      "文旅产业",
+      "现代服务业"
+    ],
+    "starting_salary_avg": 5500,
+    "international_mobility": "高"
+  },
+  "brand_value": {
+    "alumni_association_rank": 25,
+    "industry_reputation": "极高",
+    "tags": [
+      "职业化",
+      "实操强",
+      "行业深耕"
+    ]
+  },
+  "risk_assessment": {
+    "tuition_level": "较高",
+    "industry_dependency": "高"
+  }
+}

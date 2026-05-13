@@ -1,0 +1,48 @@
+{
+  "university_name": "德州学院",
+  "english_name": "Dezhou University",
+  "location": {
+    "province": "山东省",
+    "city": "德州市",
+    "region_type": "京津冀协同发展示范区"
+  },
+  "academic_stats": {
+    "provincial_key_disciplines": [
+      "生物学",
+      "物理学",
+      "纺织工程"
+    ],
+    "master_degree_granting_units": 1,
+    "doctoral_degree_granting_units": 0,
+    "academician_count": 1,
+    "phd_teacher_ratio": "35%"
+  },
+  "admission_stats": {
+    "average_rank_shandong": 240000,
+    "teacher_training_rank_avg": 70000
+  },
+  "employment_stats": {
+    "further_study_rate": "24.5%",
+    "top_5_employers": [
+      "歌尔股份",
+      "海信集团",
+      "德州百货",
+      "公立中小学",
+      "地方税务局"
+    ],
+    "starting_salary_median": 4800
+  },
+  "rankings": {
+    "shanghai_ranking_2024": 393,
+    "alumni_association_2024": 364
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.3,
+    "graduate_value": 2.6,
+    "location_potential": 2.5,
+    "globalization": 2.1,
+    "student_empowerment": 2.7,
+    "brand_asset": 2.4,
+    "weighted_total_score": 2.44
+  }
+}

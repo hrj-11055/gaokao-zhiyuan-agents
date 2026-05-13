@@ -1,0 +1,384 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwjC3LCPs4yUAxWOnysGHU9vNCMQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 中山大学 毕业生 薪酬 排名 起薪 麦可思 2024 中山大学 毕业生 薪酬 排名 起薪 麦可思 2024
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E4%25B8%25AD%25E5%25B1%25B1%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E6%25AF%2595%25E4%25B8%259A%25E7%2594%259F%2B%25E8%2596%25AA%25E9%2585%25AC%2B%25E6%258E%2592%25E5%2590%258D%2B%25E8%25B5%25B7%25E8%2596%25AA%2B%25E9%25BA%25A6%25E5%258F%25AF%25E6%2580%259D%2B2024&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E6%8E%92%E5%90%8D+%E8%B5%B7%E8%96%AA+%E9%BA%A6%E5%8F%AF%E6%80%9D+2024&sca_esv=50e2bf8f38455036&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&aep=1&ntc=1&sa=X&ved=2ahUKEwjC3LCPs4yUAxWOnysGHU9vNCMQ2J8OegQIERAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E6%8E%92%E5%90%8D+%E8%B5%B7%E8%96%AA+%E9%BA%A6%E5%8F%AF%E6%80%9D+2024&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&sa=X&ved=2ahUKEwjC3LCPs4yUAxWOnysGHU9vNCMQ0pQJegQIExAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "图片" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E6%8E%92%E5%90%8D+%E8%B5%B7%E8%96%AA+%E9%BA%A6%E5%8F%AF%E6%80%9D+2024&sa=X&ved=2ahUKEwjC3LCPs4yUAxWOnysGHU9vNCMQtKgLegQIFxAB
+              - generic [ref=e95]: 图片
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E6%8E%92%E5%90%8D+%E8%B5%B7%E8%96%AA+%E9%BA%A6%E5%8F%AF%E6%80%9D+2024&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "短视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E6%8E%92%E5%90%8D+%E8%B5%B7%E8%96%AA+%E9%BA%A6%E5%8F%AF%E6%80%9D+2024&sa=X&ved=2ahUKEwjC3LCPs4yUAxWOnysGHU9vNCMQs6gLegQIFBAB
+              - generic [ref=e103]: 短视频
+          - listitem [ref=e104]:
+            - link "视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=50e2bf8f38455036&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONThzuZ3Y2Cbge6N8GD-jNeuol704-JjZb7yTlRAG3-1IOFdo7IrvDNBU8dyg6fn72hNReZmcg7iIcTYOmfnJ3qm_r2UmZNlIkLs4owNm1G371b38yzkzW3hCxMGbViB2AgFXGjkQxtqUZe6YGCXquQdvkNWpeL2wfVVHT_4GlENidBGIa9A&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E6%8E%92%E5%90%8D+%E8%B5%B7%E8%96%AA+%E9%BA%A6%E5%8F%AF%E6%80%9D+2024&sa=X&ved=2ahUKEwjC3LCPs4yUAxWOnysGHU9vNCMQtKgLegQIFRAB
+              - generic [ref=e107]: 视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考" [level=2] [ref=e152]:
+          - generic [ref=e153]: 正在思考
+        - progressbar [ref=e154]
+      - main [ref=e156]:
+        - generic [ref=e160]:
+          - generic [ref=e163]:
+            - heading "网页搜索结果" [level=2] [ref=e164]
+            - generic [ref=e165]:
+              - generic [ref=e168]:
+                - link "2024高校毕业生薪酬排行榜发布：这才是90%大学生的工资 ... 知乎专栏 https://zhuanlan.zhihu.com › ..." [ref=e170] [cursor=pointer]:
+                  - /url: https://zhuanlan.zhihu.com/p/714913590
+                  - heading "2024高校毕业生薪酬排行榜发布：这才是90%大学生的工资 ..." [level=3] [ref=e171]
+                  - generic [ref=e176]:
+                    - generic [ref=e178]: 知乎专栏
+                    - generic [ref=e180]: https://zhuanlan.zhihu.com › ...
+                - button "关于这条结果的详细信息" [ref=e181] [cursor=pointer]:
+                  - img [ref=e184]
+              - generic [ref=e187]:
+                - generic [ref=e188]: 2024年8月16日 —
+                - generic [ref=e189]:
+                  - emphasis [ref=e190]: "2024"
+                  - text: 年全国高校
+                  - emphasis [ref=e191]: 毕业生薪酬
+                  - text: 排行榜TOP200（数据来源：中国
+                  - emphasis [ref=e192]: 薪酬
+                  - text: 网）. 从平均
+                  - emphasis [ref=e193]: 薪酬
+                  - text: 来看，
+                  - emphasis [ref=e194]: 毕业生
+                  - text: 平均月薪能超过11000元的高校有50所；
+                  - emphasis [ref=e195]: 毕业生
+                  - text: 平均月薪超过10000元的院 ...
+              - generic [ref=e197]: 缺少字词： 麦 ‎思
+          - generic [ref=e202]:
+            - heading "相关问题" [level=2] [ref=e204]
+            - generic [ref=e205]:
+              - button "中国大学毕业生平均工资？" [ref=e211] [cursor=pointer]:
+                - generic [ref=e213]: 中国大学毕业生平均工资？
+                - img [ref=e216]
+              - button "大学与中学文凭 月薪平均差多少？" [ref=e225] [cursor=pointer]:
+                - generic [ref=e227]: 大学与中学文凭 月薪平均差多少？
+                - img [ref=e230]
+              - button "中国月收入两万是什么水平？" [ref=e239] [cursor=pointer]:
+                - generic [ref=e241]: 中国月收入两万是什么水平？
+                - img [ref=e244]
+              - button "上海大学毕业生平均工资？" [ref=e253] [cursor=pointer]:
+                - generic [ref=e255]: 上海大学毕业生平均工资？
+                - img [ref=e258]
+          - generic [ref=e263]:
+            - heading "网页搜索结果" [level=2] [ref=e264]
+            - generic [ref=e265]:
+              - generic [ref=e268]:
+                - link "2024年全国高校毕业生薪酬排名揭晓！第一花落谁家？谁又是 ... qb-jy.com http://qb-jy.com › new_5" [ref=e270] [cursor=pointer]:
+                  - /url: http://qb-jy.com/?new_5/121.html
+                  - heading "2024年全国高校毕业生薪酬排名揭晓！第一花落谁家？谁又是 ..." [level=3] [ref=e271]
+                  - generic [ref=e276]:
+                    - generic [ref=e278]: qb-jy.com
+                    - generic [ref=e280]: http://qb-jy.com › new_5
+                - button "关于这条结果的详细信息" [ref=e281] [cursor=pointer]:
+                  - img [ref=e284]
+              - generic [ref=e287]:
+                - generic [ref=e288]: 2024年9月13日 —
+                - generic [ref=e289]:
+                  - text: 根据平均
+                  - emphasis [ref=e290]: 薪酬
+                  - text: 数据，月薪超过11000元的高等学府共计50所；月薪超过10000元的教育机构则有73所。清华
+                  - emphasis [ref=e291]: 大学
+                  - text: 以13221元的平均月薪位居榜首，而西南财经
+                  - emphasis [ref=e292]: 大学
+                  - text: 以8665元 ...
+          - generic [ref=e296]:
+            - generic [ref=e299]:
+              - link "2024年中国大学生薪酬排行发布，来看你的学校上榜没？ 搜狐网 https://www.sohu.com › 搜狐文章页 › 留学大巴车" [ref=e301] [cursor=pointer]:
+                - /url: https://www.sohu.com/a/831209366_120574888
+                - heading "2024年中国大学生薪酬排行发布，来看你的学校上榜没？" [level=3] [ref=e302]
+                - generic [ref=e307]:
+                  - generic [ref=e309]: 搜狐网
+                  - generic [ref=e311]: https://www.sohu.com › 搜狐文章页 › 留学大巴车
+              - button "关于这条结果的详细信息" [ref=e312] [cursor=pointer]:
+                - img [ref=e315]
+            - generic [ref=e318]:
+              - generic [ref=e319]: 2024年11月28日 —
+              - generic [ref=e320]:
+                - text: 根据中国
+                - emphasis [ref=e321]: 薪酬
+                - text: 网发布的《
+                - emphasis [ref=e322]: "2024"
+                - text: 年全国高校
+                - emphasis [ref=e323]: 毕业生薪酬
+                - text: 排行榜TOP200》，清华
+                - emphasis [ref=e324]: 大学
+                - text: 以13221元的成绩位居榜首，上海交通
+                - emphasis [ref=e325]: 大学
+                - text: 紧随其后，2023届平均月薪达13002元，其次是 ...
+            - generic [ref=e327]: 缺少字词： 麦 ‎思
+          - generic [ref=e331]:
+            - generic [ref=e334]:
+              - link "2024毕业生薪酬排行榜发布！哪些人有“钱”景 电子工程专辑 https://www.eet-china.com › ..." [ref=e336] [cursor=pointer]:
+                - /url: https://www.eet-china.com/mp/a339400.html
+                - heading "2024毕业生薪酬排行榜发布！哪些人有“钱”景" [level=3] [ref=e337]
+                - generic [ref=e342]:
+                  - generic [ref=e344]: 电子工程专辑
+                  - generic [ref=e346]: https://www.eet-china.com › ...
+              - button "关于这条结果的详细信息" [ref=e347] [cursor=pointer]:
+                - img [ref=e350]
+            - generic [ref=e353]:
+              - generic [ref=e354]: 2024年8月15日 —
+              - generic [ref=e355]:
+                - text: 《
+                - emphasis [ref=e356]: "2024"
+                - text: 年全国高校
+                - emphasis [ref=e357]: 毕业生薪酬
+                - text: 排行榜TOP200》采用全国各高校上年度
+                - emphasis [ref=e358]: 毕业生
+                - text: 进入用人单位满一年的
+                - emphasis [ref=e359]: 薪酬
+                - text: 数据，包括基础工资、奖金和补贴等年度总收入。该数据来源 ...
+            - generic [ref=e361]:
+              - text: 缺少字词： 麦 ‎| 必须包含：
+              - link "麦" [ref=e362] [cursor=pointer]:
+                - /url: /search?sca_esv=50e2bf8f38455036&q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E6%8E%92%E5%90%8D+%E8%B5%B7%E8%96%AA+%22%E9%BA%A6%22+%E5%8F%AF%E6%80%9D+2024&sa=X&ved=2ahUKEwjC3LCPs4yUAxWOnysGHU9vNCMQ5t4CegQIRRAB
+          - generic [ref=e366]:
+            - generic [ref=e369]:
+              - link "【长三角日报】2024综合类大学毕业生薪酬百强排名出炉 上观新闻 https://www.jfdaily.com › news › detail" [ref=e371] [cursor=pointer]:
+                - /url: https://www.jfdaily.com/news/detail?id=869922
+                - heading "【长三角日报】2024综合类大学毕业生薪酬百强排名出炉" [level=3] [ref=e372]
+                - generic [ref=e377]:
+                  - generic [ref=e379]: 上观新闻
+                  - generic [ref=e381]: https://www.jfdaily.com › news › detail
+              - button "关于这条结果的详细信息" [ref=e382] [cursor=pointer]:
+                - img [ref=e385]
+            - generic [ref=e388]:
+              - generic [ref=e389]: 2025年3月4日 —
+              - generic [ref=e390]:
+                - text: 近日，中国
+                - emphasis [ref=e391]: 薪酬
+                - text: 网发布《
+                - emphasis [ref=e392]: "2024"
+                - text: 年综合类
+                - emphasis [ref=e393]: 大学
+                - text: 平均
+                - emphasis [ref=e394]: 薪酬
+                - text: 榜》。在最新的
+                - emphasis [ref=e395]: 薪酬
+                - text: 排行榜上，武汉
+                - emphasis [ref=e396]: 大学
+                - text: 以9542.73元的平均月薪高居榜首，紧随其后的是中南
+                - emphasis [ref=e397]: 大学
+                - text: 与浙江
+                - emphasis [ref=e398]: 大学
+                - text: ...
+            - generic [ref=e400]: 缺少字词： 中山 ‎麦 ‎思
+          - generic [ref=e404]:
+            - generic [ref=e407]:
+              - link "2024毕业生薪酬排行榜发布！ 智源社区 https://hub.baai.ac.cn › view" [ref=e409] [cursor=pointer]:
+                - /url: https://hub.baai.ac.cn/view/38933
+                - heading "2024毕业生薪酬排行榜发布！" [level=3] [ref=e410]
+                - generic [ref=e415]:
+                  - generic [ref=e417]: 智源社区
+                  - generic [ref=e419]: https://hub.baai.ac.cn › view
+              - button "关于这条结果的详细信息" [ref=e420] [cursor=pointer]:
+                - img [ref=e423]
+            - generic [ref=e426]:
+              - generic [ref=e427]: 2024年7月29日 —
+              - generic [ref=e428]:
+                - text: 《
+                - emphasis [ref=e429]: "2024"
+                - text: 年全国高校
+                - emphasis [ref=e430]: 毕业生薪酬
+                - text: 排行榜TOP200》采用全国各高校上年度
+                - emphasis [ref=e431]: 毕业生
+                - text: 进入用人单位满一年的
+                - emphasis [ref=e432]: 薪酬
+                - text: 数据，包括基础工资、奖金和补贴等年度总收入。该数据来源 ...
+            - generic [ref=e434]: 缺少字词： 麦 ‎思
+          - generic [ref=e438]:
+            - generic [ref=e441]:
+              - link "大学生下一个就业高地在哪里 - 中国青年报 中国青年报 https://zqb.cyol.com › html" [ref=e443] [cursor=pointer]:
+                - /url: https://zqb.cyol.com/html/2015-01/16/nw.D110000zgqnb_20150116_1-04.htm
+                - heading "大学生下一个就业高地在哪里 - 中国青年报" [level=3] [ref=e444]
+                - generic [ref=e449]:
+                  - generic [ref=e451]: 中国青年报
+                  - generic [ref=e453]: https://zqb.cyol.com › html
+              - button "关于这条结果的详细信息" [ref=e454] [cursor=pointer]:
+                - img [ref=e457]
+            - generic [ref=e460]:
+              - generic [ref=e461]: 2015年1月16日 —
+              - generic [ref=e462]:
+                - text: 大体看来，本科
+                - emphasis [ref=e463]: 毕业生
+                - text: 与研究生的月薪差距在1000元左右。湖南
+                - emphasis [ref=e464]: 大学
+                - text: 本科
+                - emphasis [ref=e465]: 毕业生
+                - text: 平均月薪4145.1元，研究生则为5355.15元；厦门
+                - emphasis [ref=e466]: 大学
+                - text: 本科
+                - emphasis [ref=e467]: 毕业生
+                - text: 平均月薪为5037.2元， ...
+          - generic [ref=e471]:
+            - generic [ref=e474]:
+              - link "2024年高校毕业生薪酬排行榜出炉！哪些专业比较受欢迎？ 知乎 https://zhuanlan.zhihu.com › ..." [ref=e476] [cursor=pointer]:
+                - /url: https://zhuanlan.zhihu.com/p/708390660
+                - heading "2024年高校毕业生薪酬排行榜出炉！哪些专业比较受欢迎？" [level=3] [ref=e477]
+                - generic [ref=e482]:
+                  - generic [ref=e484]: 知乎
+                  - generic [ref=e486]: https://zhuanlan.zhihu.com › ...
+              - button "关于这条结果的详细信息" [ref=e487] [cursor=pointer]:
+                - img [ref=e490]
+            - generic [ref=e493]:
+              - generic [ref=e494]: 2024年7月12日 —
+              - generic [ref=e495]:
+                - text: ⭐从平均
+                - emphasis [ref=e496]: 薪酬
+                - text: 来看，
+                - emphasis [ref=e497]: 毕业生
+                - text: 平均月薪能超过11000元的高校有50所；
+                - emphasis [ref=e498]: 毕业生
+                - text: 平均月薪超过10000元的院校有73所。
+                - emphasis [ref=e499]: 毕业生
+                - text: 平均月薪最高为清华
+                - emphasis [ref=e500]: 大学
+                - text: 13221元，毕业 ...
+            - generic [ref=e502]: 缺少字词： 起 ‎麦 ‎思
+          - generic [ref=e506]:
+            - generic [ref=e509]:
+              - link "哪些院校毕业收入高？2024高校毕业生薪酬排行榜公布 自主选拔在线 https://www.zizzs.com › guangdongxingaokao" [ref=e511] [cursor=pointer]:
+                - /url: https://www.zizzs.com/gk/guangdongxingaokao/169903.html
+                - heading "哪些院校毕业收入高？2024高校毕业生薪酬排行榜公布" [level=3] [ref=e512]
+                - generic [ref=e517]:
+                  - generic [ref=e519]: 自主选拔在线
+                  - generic [ref=e521]: https://www.zizzs.com › guangdongxingaokao
+              - button "关于这条结果的详细信息" [ref=e522] [cursor=pointer]:
+                - img [ref=e525]
+            - generic [ref=e528]:
+              - generic [ref=e529]: 2024年7月9日 —
+              - generic [ref=e530]:
+                - text: 从平均
+                - emphasis [ref=e531]: 薪酬
+                - text: 来看，
+                - emphasis [ref=e532]: 毕业生
+                - text: 平均月薪能超过11000元的高校有50所；
+                - emphasis [ref=e533]: 毕业生
+                - text: 平均月薪超过10000元的院校有73所。
+                - emphasis [ref=e534]: 毕业生
+                - text: 平均月薪最高为清华
+                - emphasis [ref=e535]: 大学
+                - text: 13221元，
+                - emphasis [ref=e536]: 毕业生
+                - text: 平均月薪 ...
+            - generic [ref=e538]: 缺少字词： 麦 ‎思
+          - generic [ref=e542]:
+            - generic [ref=e545]:
+              - link "本科毕业平均薪酬发布，这5大专业身价暴涨！ 搜狐网 https://www.sohu.com › 搜狐文章页 › 湖北新文道考研" [ref=e547] [cursor=pointer]:
+                - /url: https://www.sohu.com/a/792797961_121045859
+                - heading "本科毕业平均薪酬发布，这5大专业身价暴涨！" [level=3] [ref=e548]
+                - generic [ref=e553]:
+                  - generic [ref=e555]: 搜狐网
+                  - generic [ref=e557]: https://www.sohu.com › 搜狐文章页 › 湖北新文道考研
+              - button "关于这条结果的详细信息" [ref=e558] [cursor=pointer]:
+                - img [ref=e561]
+            - generic [ref=e564]:
+              - generic [ref=e565]: 2024年7月12日 —
+              - generic [ref=e566]:
+                - text: 近期，据中国
+                - emphasis [ref=e567]: 薪酬
+                - text: 网《
+                - emphasis [ref=e568]: "2024"
+                - text: 全国高校
+                - emphasis [ref=e569]: 毕业生薪酬
+                - text: 指数
+                - emphasis [ref=e570]: 排名
+                - text: TOP200》显示：
+                - emphasis [ref=e571]: 毕业生
+                - text: 月薪能超过10000元的高校有73所，分散在国内300多个城市地区，200多个行业领域。
+        - navigation [ref=e574]:
+          - heading "网页导航" [level=1] [ref=e575]
+          - text: "1"
+          - link "Page 2" [ref=e578] [cursor=pointer]:
+            - /url: /search?q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E6%8E%92%E5%90%8D+%E8%B5%B7%E8%96%AA+%E9%BA%A6%E5%8F%AF%E6%80%9D+2024&sca_esv=50e2bf8f38455036&ei=XXvuaYK6MY6_ruEPz97RmQI&start=10&sa=N&sstk=Af77f_fy29CSa-ldBBK5hSRzcSyZbTZ-lpPnuGl_8H4d3eF8KO2ATwqa35zzNo9nfWw0U5rJ1NYwjhNrssgQ-Ydd01Gw3Bp7FFf2ZA&ved=2ahUKEwjC3LCPs4yUAxWOnysGHU9vNCMQ8tMDegQIShAE
+            - text: "2"
+          - heading "下一页" [level=2] [ref=e580]:
+            - link "下一页" [ref=e581] [cursor=pointer]:
+              - /url: /search?q=%E4%B8%AD%E5%B1%B1%E5%A4%A7%E5%AD%A6+%E6%AF%95%E4%B8%9A%E7%94%9F+%E8%96%AA%E9%85%AC+%E6%8E%92%E5%90%8D+%E8%B5%B7%E8%96%AA+%E9%BA%A6%E5%8F%AF%E6%80%9D+2024&sca_esv=50e2bf8f38455036&ei=XXvuaYK6MY6_ruEPz97RmQI&start=10&sa=N&sstk=Af77f_fy29CSa-ldBBK5hSRzcSyZbTZ-lpPnuGl_8H4d3eF8KO2ATwqa35zzNo9nfWw0U5rJ1NYwjhNrssgQ-Ydd01Gw3Bp7FFf2ZA&ved=2ahUKEwjC3LCPs4yUAxWOnysGHU9vNCMQ8NMDegQIShAG
+              - generic [ref=e583]: 下一页
+        - navigation
+    - contentinfo [ref=e584]:
+      - heading "页脚链接" [level=1] [ref=e585]
+      - generic [ref=e589]:
+        - generic [ref=e593]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e595] [cursor=pointer]:
+            - generic [ref=e596]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e598]:
+              - text: "-"
+              - generic [ref=e599]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e601] [cursor=pointer]: 更新位置信息
+        - generic [ref=e604]:
+          - link "帮助" [ref=e605] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e606] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e607] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e608] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

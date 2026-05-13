@@ -1,0 +1,698 @@
+- generic [ref=e10]:
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e18]:
+        - textbox "查大学、查专业、问报考" [ref=e19]
+        - button "搜索" [ref=e20] [cursor=pointer]
+        - list
+      - generic [ref=e21]:
+        - generic [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: 北京
+          - text: "[切换]"
+          - generic [ref=e25]:
+            - generic [ref=e26]: 北京
+            - generic [ref=e27]: 天津
+            - generic [ref=e28]: 河北
+            - generic [ref=e29]: 山西
+            - generic [ref=e30]: 内蒙古
+            - generic [ref=e31]: 辽宁
+            - generic [ref=e32]: 吉林
+            - generic [ref=e33]: 黑龙江
+            - generic [ref=e34]: 上海
+            - generic [ref=e35]: 江苏
+            - generic [ref=e36]: 浙江
+            - generic [ref=e37]: 安徽
+            - generic [ref=e38]: 福建
+            - generic [ref=e39]: 江西
+            - generic [ref=e40]: 山东
+            - generic [ref=e41]: 河南
+            - generic [ref=e42]: 湖北
+            - generic [ref=e43]: 湖南
+            - generic [ref=e44]: 广东
+            - generic [ref=e45]: 广西
+            - generic [ref=e46]: 海南
+            - generic [ref=e47]: 重庆
+            - generic [ref=e48]: 四川
+            - generic [ref=e49]: 贵州
+            - generic [ref=e50]: 云南
+            - generic [ref=e51]: 西藏
+            - generic [ref=e52]: 陕西
+            - generic [ref=e53]: 甘肃
+            - generic [ref=e54]: 青海
+            - generic [ref=e55]: 宁夏
+            - generic [ref=e56]: 新疆
+        - generic [ref=e59] [cursor=pointer]: 登录/注册
+        - generic [ref=e61] [cursor=pointer]: 下载APP
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - generic [ref=e66]:
+          - textbox "查大学，查专业，查资讯" [active] [ref=e67]: 汕头大学
+          - button "搜索" [ref=e68] [cursor=pointer]
+        - generic [ref=e69]:
+          - generic [ref=e70] [cursor=pointer]: 查大学
+          - generic [ref=e71] [cursor=pointer]: 查专业
+          - generic [ref=e72] [cursor=pointer]: 志愿填报
+          - generic [ref=e73] [cursor=pointer]: 高考工具箱
+      - generic [ref=e74]:
+        - generic [ref=e75] [cursor=pointer]:
+          - generic [ref=e76]: 北京
+          - emphasis [ref=e77]: "[切换]"
+          - generic [ref=e79]:
+            - generic [ref=e80]: 北京
+            - generic [ref=e81]: 天津
+            - generic [ref=e82]: 河北
+            - generic [ref=e83]: 山西
+            - generic [ref=e84]: 内蒙古
+            - generic [ref=e85]: 辽宁
+            - generic [ref=e86]: 吉林
+            - generic [ref=e87]: 黑龙江
+            - generic [ref=e88]: 上海
+            - generic [ref=e89]: 江苏
+            - generic [ref=e90]: 浙江
+            - generic [ref=e91]: 安徽
+            - generic [ref=e92]: 福建
+            - generic [ref=e93]: 江西
+            - generic [ref=e94]: 山东
+            - generic [ref=e95]: 河南
+            - generic [ref=e96]: 湖北
+            - generic [ref=e97]: 湖南
+            - generic [ref=e98]: 广东
+            - generic [ref=e99]: 广西
+            - generic [ref=e100]: 海南
+            - generic [ref=e101]: 重庆
+            - generic [ref=e102]: 四川
+            - generic [ref=e103]: 贵州
+            - generic [ref=e104]: 云南
+            - generic [ref=e105]: 西藏
+            - generic [ref=e106]: 陕西
+            - generic [ref=e107]: 甘肃
+            - generic [ref=e108]: 青海
+            - generic [ref=e109]: 宁夏
+            - generic [ref=e110]: 新疆
+        - generic [ref=e113] [cursor=pointer]: 登录/注册
+      - generic [ref=e115] [cursor=pointer]: 下载APP
+    - generic [ref=e118]:
+      - generic [ref=e120] [cursor=pointer]: 首页
+      - generic [ref=e122] [cursor=pointer]: 查大学
+      - generic [ref=e124] [cursor=pointer]: 查专业
+      - generic [ref=e126] [cursor=pointer]: 志愿填报
+      - generic [ref=e128] [cursor=pointer]: 智能选大学
+      - generic [ref=e130] [cursor=pointer]: 高考直播
+      - generic [ref=e131] [cursor=pointer]:
+        - generic [ref=e132]:
+          - generic [ref=e133]: 大咖讲志愿
+          - generic [ref=e134]: 
+        - list:
+          - listitem [ref=e135]:
+            - link "大咖讲志愿" [ref=e136]:
+              - /url: /master-talk-volunt
+          - listitem [ref=e137]:
+            - link "名师教提分" [ref=e138]:
+              - /url: /master-talk-score
+      - generic [ref=e139] [cursor=pointer]:
+        - generic [ref=e140]:
+          - generic [ref=e141]: 艺考专区
+          - generic [ref=e142]: 
+        - list:
+          - listitem [ref=e143]:
+            - link "强基计划" [ref=e144]:
+              - /url: /qjjh
+              - generic [ref=e145]: 
+              - text: 强基计划
+          - listitem [ref=e146]:
+            - link "艺考专区" [ref=e147]:
+              - /url: /art
+              - generic [ref=e148]: 
+              - text: 艺考专区
+          - listitem [ref=e149]:
+            - link "高职单招" [ref=e150]:
+              - /url: /gaozhi?singlecode=75001
+              - generic [ref=e151]: 
+              - text: 高职单招
+          - listitem [ref=e152]:
+            - link "自主招生" [ref=e153]:
+              - /url: /gaozhi?singlecode=75003
+              - generic [ref=e154]: 
+              - text: 自主招生
+          - text: 
+  - generic [ref=e158]:
+    - generic [ref=e159]:
+      - generic [ref=e160]:
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - generic:
+                - link "掌上高考":
+                  - /url: https://www.gaokao.cn/qjjh-jz
+                  - img "掌上高考"
+              - generic:
+                - link "掌上高考":
+                  - /url: https://gaokao.eol.cn/e_html/gk/2026/2026qyxkzb/index-pc.html
+                  - img "掌上高考"
+              - generic:
+                - link "掌上高考":
+                  - /url: https://mp.weixin.qq.com/s/69W8fXXWty_Q72UJIr6VfA
+                  - img "掌上高考"
+              - generic:
+                - link "掌上高考":
+                  - /url: https://www.gaokao.cn/qjjh-jz
+                  - img "掌上高考"
+              - link "掌上高考" [ref=e780] [cursor=pointer]:
+                - /url: https://gaokao.eol.cn/e_html/gk/2026/2026qyxkzb/index-pc.html
+                - img "掌上高考" [ref=e781]
+            - generic [ref=e167]:
+              - button "Go to slide 1" [ref=e168] [cursor=pointer]
+              - button "Go to slide 2" [ref=e169] [cursor=pointer]
+              - button "Go to slide 3" [ref=e170] [cursor=pointer]
+          - generic [ref=e172] [cursor=pointer]: 
+          - generic [ref=e174] [cursor=pointer]: 
+        - generic [ref=e177]:
+          - generic [ref=e178]:
+            - generic [ref=e179]: 模拟报志愿
+            - generic [ref=e181]:
+              - generic [ref=e182] [cursor=pointer]:
+                - radio "普通类" [checked] [ref=e184]
+                - text: 普通类
+              - generic [ref=e186] [cursor=pointer]:
+                - radio "艺术类" [ref=e188]
+                - text: 艺术类
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - generic [ref=e193]:
+                - text: 选科
+                - generic [ref=e194]: （6选3）
+              - generic [ref=e198]:
+                - generic [ref=e199] [cursor=pointer]:
+                  - radio "本科" [checked] [ref=e201]
+                  - text: 本科
+                - generic [ref=e203] [cursor=pointer]:
+                  - radio "专科" [ref=e205]
+                  - text: 专科
+            - generic [ref=e207]:
+              - generic [ref=e208] [cursor=pointer]: 物理
+              - generic [ref=e209] [cursor=pointer]: 化学
+              - generic [ref=e210] [cursor=pointer]: 生物
+              - generic [ref=e211] [cursor=pointer]: 政治
+              - generic [ref=e212] [cursor=pointer]: 历史
+              - generic [ref=e213] [cursor=pointer]: 地理
+            - generic [ref=e214]: 分数
+            - generic [ref=e215]:
+              - generic [ref=e217]:
+                - generic [ref=e219]: 
+                - textbox "输入分数" [ref=e220]
+                - generic [ref=e221]: 分
+              - generic [ref=e223]:
+                - generic [ref=e225]: 
+                - textbox "输入位次" [ref=e226]
+                - generic [ref=e227]: 位
+            - generic [ref=e229]:
+              - generic:
+                - generic:
+                  - generic [ref=e233]:
+                    - paragraph [ref=e234]
+                    - paragraph [ref=e235]
+                  - generic [ref=e236]:
+                    - paragraph [ref=e237]: 上方输入分数
+                    - paragraph [ref=e238]: 查看适合您的院校
+              - generic [ref=e239]:
+                - generic [ref=e240]: 推荐院校
+                - generic [ref=e241]:
+                  - paragraph [ref=e242]:
+                    - generic [ref=e243]: "--"
+                    - text: 可冲击
+                  - paragraph [ref=e244]:
+                    - generic [ref=e245]: "--"
+                    - text: 较稳妥
+                  - paragraph [ref=e246]:
+                    - generic [ref=e247]: "--"
+                    - text: 可保底
+            - generic [ref=e249] [cursor=pointer]: 智能推荐大学
+      - generic [ref=e250]:
+        - link "艺考专区" [ref=e252] [cursor=pointer]:
+          - /url: /art
+          - generic [ref=e253]: 艺考专区
+        - link "高考小智" [ref=e255] [cursor=pointer]:
+          - /url: /chat
+          - generic [ref=e256]: 高考小智
+        - link "招生计划" [ref=e258] [cursor=pointer]:
+          - /url: /plan
+          - generic [ref=e259]: 招生计划
+        - link "国际本科" [ref=e261] [cursor=pointer]:
+          - /url: /sqa-hnd
+          - generic [ref=e262]: 国际本科
+        - link "名校名卷" [ref=e264] [cursor=pointer]:
+          - /url: /exampaper
+          - generic [ref=e265]: 名校名卷
+        - link "院校排行" [ref=e267] [cursor=pointer]:
+          - /url: /colleges/rank
+          - generic [ref=e268]: 院校排行
+        - link "高考工具箱" [ref=e270] [cursor=pointer]:
+          - /url: /quanzhidao
+          - generic [ref=e271]: 高考工具箱
+    - generic [ref=e272]:
+      - generic [ref=e273]:
+        - generic [ref=e276] [cursor=pointer]: 中国农业大学2026年强基计划招生简章
+        - generic [ref=e277]:
+          - generic [ref=e278] [cursor=pointer]: 南京大学2026年强基计划招生简章
+          - generic [ref=e279] [cursor=pointer]: 中国人民大学2026年强基计划招生简章
+          - generic [ref=e280] [cursor=pointer]: 北京：2026年普通高等学校体育专业考试温馨提示
+          - generic [ref=e281] [cursor=pointer]: 北京2026年高招体检3月2日至3月31日进行
+      - generic [ref=e282]:
+        - generic [ref=e284] [cursor=pointer]:
+          - paragraph [ref=e285]: 掌上高考APP
+          - paragraph [ref=e286]:
+            - text: 点击进入
+            - generic [ref=e287]: 
+        - generic [ref=e290] [cursor=pointer]:
+          - paragraph [ref=e291]: 名师教提分
+          - paragraph [ref=e292]:
+            - text: 点击进入
+            - generic [ref=e293]: 
+        - generic [ref=e296] [cursor=pointer]:
+          - paragraph [ref=e297]: 北京志愿填报
+          - paragraph [ref=e298]:
+            - text: 点击进入
+            - generic [ref=e299]: 
+        - generic [ref=e302] [cursor=pointer]:
+          - paragraph [ref=e303]: 咨询招办
+          - paragraph [ref=e304]:
+            - text: 点击进入
+            - generic [ref=e305]: 
+    - generic [ref=e308]:
+      - generic [ref=e309]:
+        - generic [ref=e310]: 热门院校
+        - generic [ref=e311] [cursor=pointer]:
+          - text: 换一换
+          - 'generic "icon: undo" [ref=e312]':
+            - img [ref=e313]
+      - generic [ref=e315]:
+        - generic [ref=e316] [cursor=pointer]: 北京本科院校
+        - generic [ref=e317] [cursor=pointer]: 北京专科院校
+        - generic [ref=e318] [cursor=pointer]: 省外本科院校
+        - generic [ref=e319] [cursor=pointer]: 省外专科院校
+      - generic [ref=e320]:
+        - generic "北京石油化工学院" [ref=e322] [cursor=pointer]:
+          - heading "北京石油化工学院" [level=3] [ref=e323]
+          - generic [ref=e324]:
+            - generic [ref=e325]: 综合类
+            - generic [ref=e326]: 公办
+        - generic [ref=e328]:
+          - generic "中国传媒大学" [ref=e329] [cursor=pointer]:
+            - generic [ref=e331]:
+              - heading "中国传媒大学" [level=3] [ref=e332]
+              - generic [ref=e333]:
+                - generic [ref=e334]: 综合类
+                - generic [ref=e335]:
+                  - text: 查看院校
+                  - generic [ref=e336]: 
+          - generic "首都师范大学" [ref=e337] [cursor=pointer]:
+            - generic [ref=e339]:
+              - heading "首都师范大学" [level=3] [ref=e340]
+              - generic [ref=e341]:
+                - generic [ref=e342]: 师范类
+                - generic [ref=e343]:
+                  - text: 查看院校
+                  - generic [ref=e344]: 
+          - generic "北京工商大学" [ref=e345] [cursor=pointer]:
+            - generic [ref=e347]:
+              - heading "北京工商大学" [level=3] [ref=e348]
+              - generic [ref=e349]:
+                - generic [ref=e350]: 财经类
+                - generic [ref=e351]:
+                  - text: 查看院校
+                  - generic [ref=e352]: 
+          - generic "北京第二外国语学院" [ref=e353] [cursor=pointer]:
+            - generic [ref=e355]:
+              - heading "北京第二外国语学院" [level=3] [ref=e356]
+              - generic [ref=e357]:
+                - generic [ref=e358]: 语言类
+                - generic [ref=e359]:
+                  - text: 查看院校
+                  - generic [ref=e360]: 
+          - generic "北方工业大学" [ref=e361] [cursor=pointer]:
+            - generic [ref=e363]:
+              - heading "北方工业大学" [level=3] [ref=e364]
+              - generic [ref=e365]:
+                - generic [ref=e366]: 理工类
+                - generic [ref=e367]:
+                  - text: 查看院校
+                  - generic [ref=e368]: 
+          - generic "中国劳动关系学院" [ref=e369] [cursor=pointer]:
+            - generic [ref=e371]:
+              - heading "中国劳动关系学院" [level=3] [ref=e372]
+              - generic [ref=e373]:
+                - generic [ref=e374]: 政法类
+                - generic [ref=e375]:
+                  - text: 查看院校
+                  - generic [ref=e376]: 
+          - generic "北京联合大学" [ref=e377] [cursor=pointer]:
+            - generic [ref=e379]:
+              - heading "北京联合大学" [level=3] [ref=e380]
+              - generic [ref=e381]:
+                - generic [ref=e382]: 综合类
+                - generic [ref=e383]:
+                  - text: 查看院校
+                  - generic [ref=e384]: 
+          - generic "中华女子学院" [ref=e385] [cursor=pointer]:
+            - generic [ref=e387]:
+              - heading "中华女子学院" [level=3] [ref=e388]
+              - generic [ref=e389]:
+                - generic [ref=e390]: 语言类
+                - generic [ref=e391]:
+                  - text: 查看院校
+                  - generic [ref=e392]: 
+          - generic "中国社会科学院大学" [ref=e393] [cursor=pointer]:
+            - generic [ref=e395]:
+              - heading "中国社会科学院大学" [level=3] [ref=e396]
+              - generic [ref=e397]:
+                - generic [ref=e398]: 综合类
+                - generic [ref=e399]:
+                  - text: 查看院校
+                  - generic [ref=e400]: 
+    - generic [ref=e401]:
+      - generic [ref=e402]:
+        - generic [ref=e403]:
+          - generic [ref=e404]:
+            - text: 热门专业
+            - generic [ref=e405]:
+              - generic [ref=e406] [cursor=pointer]: 本科
+              - generic [ref=e407] [cursor=pointer]: 专科
+          - generic [ref=e408] [cursor=pointer]:
+            - text: 更多
+            - generic [ref=e409]: 
+        - generic [ref=e410]:
+          - generic "计算机专业" [ref=e412] [cursor=pointer]:
+            - heading "计算机专业" [level=3] [ref=e413]
+            - generic [ref=e414]: 电子科技大学
+          - generic [ref=e415]:
+            - generic "金融学专业" [ref=e416] [cursor=pointer]:
+              - heading "金融学专业" [level=3] [ref=e417]
+              - generic [ref=e418]: 中央财经大学
+            - generic "软件专业" [ref=e419] [cursor=pointer]:
+              - heading "软件专业" [level=3] [ref=e420]
+              - generic [ref=e421]: 上海交通大学
+            - generic "医学类专业" [ref=e422] [cursor=pointer]:
+              - heading "医学类专业" [level=3] [ref=e423]
+              - generic [ref=e424]: 复旦大学
+            - generic "师范类专业" [ref=e425] [cursor=pointer]:
+              - heading "师范类专业" [level=3] [ref=e426]
+              - generic [ref=e427]: 北京师范大学
+      - generic [ref=e428]:
+        - generic [ref=e429]:
+          - generic [ref=e430]: 报考专题
+          - generic [ref=e431] [cursor=pointer]:
+            - text: 更多
+            - generic [ref=e432]: 
+        - generic [ref=e433]:
+          - link [ref=e434] [cursor=pointer]:
+            - /url: https://www.gaokao.cn/QuanZhiDao/voluntary
+            - img [ref=e435]
+          - link [ref=e436] [cursor=pointer]:
+            - /url: https://www.gaokao.cn/QuanZhiDao/regulations
+            - img [ref=e437]
+          - link [ref=e438] [cursor=pointer]:
+            - /url: https://www.gaokao.cn/QuanZhiDao/entrance
+            - img [ref=e439]
+          - link [ref=e440] [cursor=pointer]:
+            - /url: https://www.gaokao.cn/QuanZhiDao/doubleclass
+            - img [ref=e441]
+          - link [ref=e442] [cursor=pointer]:
+            - /url: https://www.gaokao.cn/QuanZhiDao/admission
+            - img [ref=e443]
+          - link [ref=e444] [cursor=pointer]:
+            - /url: https://gaokao.eol.cn/ystc/tytcs/
+            - img [ref=e445]
+          - link [ref=e446] [cursor=pointer]:
+            - /url: https://gaokao.eol.cn/ystc/ystcs/
+            - img [ref=e447]
+          - link [ref=e448] [cursor=pointer]:
+            - /url: https://www.eol.cn/e_html/gk/zhuanxiang/index.shtml
+            - img [ref=e449]
+          - link [ref=e450] [cursor=pointer]:
+            - /url: https://www.zhijiao.cn/gaozhi
+            - img [ref=e451]
+    - generic [ref=e453]:
+      - generic [ref=e455]: 校园风光
+      - generic [ref=e456]:
+        - generic [ref=e459] [cursor=pointer]:
+          - img [ref=e460]
+          - generic [ref=e461]: 海口经济学院
+        - generic [ref=e464] [cursor=pointer]:
+          - img [ref=e465]
+          - generic [ref=e466]: 燕京理工学院
+        - generic [ref=e469] [cursor=pointer]:
+          - img [ref=e470]
+          - generic [ref=e471]: 广西电力职业技术学院
+        - generic [ref=e474] [cursor=pointer]:
+          - img [ref=e475]
+          - generic [ref=e476]: 长江工程职业技术学院
+        - generic [ref=e479] [cursor=pointer]:
+          - img [ref=e480]
+          - generic [ref=e481]: 山西水利职业技术学院
+        - generic [ref=e484] [cursor=pointer]:
+          - img [ref=e485]
+          - generic [ref=e486]: 鹤壁职业技术学院
+        - generic [ref=e489] [cursor=pointer]:
+          - img [ref=e490]
+          - generic [ref=e491]: 云南现代职业技术学院
+        - generic [ref=e494] [cursor=pointer]:
+          - img [ref=e495]
+          - generic [ref=e496]: 昆明幼儿师范高等专科学校
+    - generic [ref=e497]:
+      - generic [ref=e498]:
+        - generic [ref=e499]:
+          - generic [ref=e500]:
+            - generic [ref=e501] [cursor=pointer]: 北京
+            - generic [ref=e502] [cursor=pointer]: 高考推荐
+            - generic [ref=e503] [cursor=pointer]: 高校资讯
+            - generic [ref=e504] [cursor=pointer]: 专业解读
+            - generic [ref=e505] [cursor=pointer]: 志愿填报
+          - generic [ref=e506] [cursor=pointer]:
+            - text: 更换一批
+            - 'generic "icon: undo" [ref=e507]':
+              - img [ref=e508]
+        - generic [ref=e510]:
+          - generic [ref=e511]:
+            - generic [ref=e512] [cursor=pointer]:
+              - generic [ref=e513]: 中国农业大学2026年强基计划招生简章
+              - paragraph [ref=e514]:
+                - generic [ref=e515]:
+                  - generic [ref=e516]: 
+                  - text: 掌上高考
+                - generic [ref=e517]:
+                  - generic [ref=e518]: 
+                  - text: 2026-04-10 09:20:25
+            - generic [ref=e519] [cursor=pointer]:
+              - generic [ref=e520]: 南京大学2026年强基计划招生简章
+              - paragraph [ref=e521]:
+                - generic [ref=e522]:
+                  - generic [ref=e523]: 
+                  - text: 掌上高考
+                - generic [ref=e524]:
+                  - generic [ref=e525]: 
+                  - text: 2026-04-10 09:19:18
+            - generic [ref=e526] [cursor=pointer]:
+              - generic [ref=e527]: 中国人民大学2026年强基计划招生简章
+              - paragraph [ref=e528]:
+                - generic [ref=e529]:
+                  - generic [ref=e530]: 
+                  - text: 掌上高考
+                - generic [ref=e531]:
+                  - generic [ref=e532]: 
+                  - text: 2026-04-10 09:19:01
+            - generic [ref=e533] [cursor=pointer]:
+              - generic [ref=e534]: 北京：2026年普通高等学校体育专业考试温馨提示
+              - paragraph [ref=e535]:
+                - generic [ref=e536]:
+                  - generic [ref=e537]: 
+                  - text: 掌上高考
+                - generic [ref=e538]:
+                  - generic [ref=e539]: 
+                  - text: 2026-04-01 09:39:05
+            - generic [ref=e540] [cursor=pointer]:
+              - generic [ref=e541]: 北京2026年高招体检3月2日至3月31日进行
+              - paragraph [ref=e542]:
+                - generic [ref=e543]:
+                  - generic [ref=e544]: 
+                  - text: 掌上高考
+                - generic [ref=e545]:
+                  - generic [ref=e546]: 
+                  - text: 2026-02-12 10:18:04
+          - button "查看更多" [ref=e547] [cursor=pointer]
+      - generic [ref=e548]:
+        - generic [ref=e549]:
+          - generic [ref=e550]: 院校热度
+          - generic [ref=e551]:
+            - generic [ref=e552] [cursor=pointer]: 本科
+            - generic [ref=e553] [cursor=pointer]: 专科
+        - generic [ref=e554]:
+          - generic [ref=e555]:
+            - generic [ref=e556] [cursor=pointer]:
+              - generic [ref=e557]: "1"
+              - img [ref=e559]
+              - generic [ref=e560]: 厦门大学
+              - generic [ref=e561]: 5613w
+            - generic [ref=e562] [cursor=pointer]:
+              - generic [ref=e563]: "2"
+              - img [ref=e565]
+              - generic [ref=e566]: 四川大学
+              - generic [ref=e567]: 4793w
+            - generic [ref=e568] [cursor=pointer]:
+              - generic [ref=e569]: "3"
+              - img [ref=e571]
+              - generic [ref=e572]: 武汉大学
+              - generic [ref=e573]: 3954w
+            - generic [ref=e574] [cursor=pointer]:
+              - generic [ref=e575]: "4"
+              - img [ref=e577]
+              - generic [ref=e578]: 中山大学
+              - generic [ref=e579]: 3795w
+            - generic [ref=e580] [cursor=pointer]:
+              - generic [ref=e581]: "5"
+              - img [ref=e583]
+              - generic [ref=e584]: 南京大学
+              - generic [ref=e585]: 3363w
+            - generic [ref=e586] [cursor=pointer]:
+              - generic [ref=e587]: "6"
+              - img [ref=e589]
+              - generic [ref=e590]: 西南大学
+              - generic [ref=e591]: 3360w
+            - generic [ref=e592] [cursor=pointer]:
+              - generic [ref=e593]: "7"
+              - img [ref=e595]
+              - generic [ref=e596]: 中南大学
+              - generic [ref=e597]: 3310w
+            - generic [ref=e598] [cursor=pointer]:
+              - generic [ref=e599]: "8"
+              - img [ref=e601]
+              - generic [ref=e602]: 电子科技大学
+              - generic [ref=e603]: 3130w
+            - generic [ref=e604] [cursor=pointer]:
+              - generic [ref=e605]: "9"
+              - img [ref=e607]
+              - generic [ref=e608]: 清华大学
+              - generic [ref=e609]: 3067w
+            - generic [ref=e610] [cursor=pointer]:
+              - generic [ref=e611]: "10"
+              - img [ref=e613]
+              - generic [ref=e614]: 山东大学
+              - generic [ref=e615]: 2995w
+          - button "查看更多院校" [ref=e616] [cursor=pointer]
+    - generic [ref=e617]:
+      - generic [ref=e618]:
+        - generic [ref=e619]:
+          - generic [ref=e620] [cursor=pointer]: 名师教提分
+          - generic [ref=e621] [cursor=pointer]: 大咖讲志愿
+        - generic [ref=e622] [cursor=pointer]:
+          - text: 更多
+          - generic [ref=e623]: 
+      - generic [ref=e624]:
+        - generic [ref=e628] [cursor=pointer]:
+          - generic [ref=e629]: 预制菜！高考政治经济大题最细讲解！秒杀！
+          - generic [ref=e630]:
+            - generic [ref=e632]: FredTao高考政治
+            - generic [ref=e633]:
+              - generic [ref=e634]: 
+              - text: 1.6W
+        - generic [ref=e638] [cursor=pointer]:
+          - generic [ref=e639]: 30分钟整理高中历史选必一第3课第1框终极5大考点，突破防自学！
+          - generic [ref=e640]:
+            - generic [ref=e642]: 刘勖雯-政史地
+            - generic [ref=e643]:
+              - generic [ref=e644]: 
+              - text: 1.7W
+        - generic [ref=e648] [cursor=pointer]:
+          - generic [ref=e649]: 高考政治经济最难的点：减税降费，彻底搞懂
+          - generic [ref=e650]:
+            - generic [ref=e652]: FredTao高考政治
+            - generic [ref=e653]:
+              - generic [ref=e654]: 
+              - text: 1.8W
+        - generic [ref=e658] [cursor=pointer]:
+          - generic [ref=e659]: 高考政治经济大题万能套路，看这一个视频就够了！
+          - generic [ref=e660]:
+            - generic [ref=e662]: FredTao高考政治
+            - generic [ref=e663]:
+              - generic [ref=e664]: 
+              - text: 1.7W
+        - generic [ref=e668] [cursor=pointer]:
+          - generic [ref=e669]: 高考政治经济大题怎么做？重塑做题观！2025山东青岛一模
+          - generic [ref=e670]:
+            - generic [ref=e672]: FredTao高考政治
+            - generic [ref=e673]:
+              - generic [ref=e674]: 
+              - text: 1.7W
+  - generic [ref=e677]:
+    - generic [ref=e678]:
+      - generic [ref=e679]:
+        - heading "系统使用说明" [level=3] [ref=e680]
+        - link [ref=e681] [cursor=pointer]:
+          - /url: https://mnzy.gaokao.cn/?channelCode=pcbrand
+      - paragraph [ref=e682]: 1、本查询系统的信息仅供参考，具体数据请以学校官网或考试院公布为准。
+      - paragraph [ref=e683]: 2、本站数据未经授权严禁转载，违者将依法追究责任。
+      - paragraph [ref=e684]:
+        - text: 3、如有任何疑问，可发送邮件至：
+        - link "lijin@eol.cn" [ref=e685] [cursor=pointer]:
+          - /url: mailto:lijin@eol.cn
+        - text: ，或点击【意见反馈】反馈于我们
+        - emphasis [ref=e686]: ，或联系【在线客服】
+        - text: 。
+      - paragraph [ref=e687]: 4、志愿填报服务客服专线：400-0678-211，高校合作或其他商务客服电话：400-6330-111。
+      - paragraph [ref=e688]:
+        - text: 友情链接：
+        - link "EOL教育在线" [ref=e689] [cursor=pointer]:
+          - /url: https://www.eol.cn/
+        - link "高考频道" [ref=e690] [cursor=pointer]:
+          - /url: https://gaokao.eol.cn/
+        - link "掌上考研" [ref=e691] [cursor=pointer]:
+          - /url: https://www.kaoyan.cn/
+        - link "考研频道" [ref=e692] [cursor=pointer]:
+          - /url: https://kaoyan.eol.cn/
+        - link "职教网" [ref=e693] [cursor=pointer]:
+          - /url: https://www.zhijiao.cn/
+        - link "掌上培训" [ref=e694] [cursor=pointer]:
+          - /url: https://www.gaokao.cn/px/
+        - link "就业桥" [ref=e695] [cursor=pointer]:
+          - /url: https://www.jiuyeqiao.cn/
+        - link "数智云服" [ref=e696] [cursor=pointer]:
+          - /url: https://yun.eol.cn/
+    - generic [ref=e697]:
+      - generic [ref=e698]:
+        - img [ref=e699]
+        - paragraph [ref=e700]: 掌上高考公众号
+      - generic [ref=e701]:
+        - img [ref=e702]
+        - paragraph [ref=e703]: 掌上高考APP
+  - generic [ref=e705]:
+    - generic [ref=e708]:
+      - paragraph [ref=e711] [cursor=pointer]: 志愿填报
+      - paragraph [ref=e714] [cursor=pointer]: 名师教提分
+      - paragraph [ref=e717] [cursor=pointer]: 高考小智
+      - paragraph [ref=e720] [cursor=pointer]: 高考社群
+      - paragraph [ref=e723] [cursor=pointer]: 院校排行
+      - paragraph [ref=e726] [cursor=pointer]: 一分一段
+      - paragraph [ref=e729] [cursor=pointer]: 省控线
+      - paragraph [ref=e732] [cursor=pointer]: 高考直播
+      - paragraph [ref=e735] [cursor=pointer]: 高考作文
+      - paragraph [ref=e738] [cursor=pointer]: 高考真题
+      - paragraph [ref=e741] [cursor=pointer]: 高考估分
+      - paragraph [ref=e744] [cursor=pointer]: 专家指导课
+    - link "查看更多" [ref=e745] [cursor=pointer]:
+      - /url: /quanzhidao
+    - generic [ref=e746] [cursor=pointer]: 
+    - generic [ref=e747] [cursor=pointer]: 
+    - generic [ref=e748]:
+      - generic [ref=e749] [cursor=pointer]: 
+      - button "animation" [ref=e751] [cursor=pointer]:
+        - img [ref=e752]
+  - generic [ref=e766]:
+    - paragraph [ref=e767]:
+      - link "京B2-20213236" [ref=e769] [cursor=pointer]:
+        - /url: https://www.zhijiao.cn/static/media/zhengshu.a82cc2ae.jpeg
+      - link "|京ICP备2020046552号 |" [ref=e771] [cursor=pointer]:
+        - /url: https://beian.miit.gov.cn/
+      - link "京公网安备 11010802037859号" [ref=e773] [cursor=pointer]:
+        - /url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802037859
+        - img [ref=e774]
+        - text: 京公网安备 11010802037859号
+    - paragraph [ref=e775]: "版权所有: 中教智网（北京）信息技术有限公司"

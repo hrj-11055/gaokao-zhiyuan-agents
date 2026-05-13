@@ -1,0 +1,46 @@
+{
+  "university_name": "北京金融科技学院",
+  "short_name": "BIF",
+  "location": {
+    "city": "北京",
+    "district": "通州区",
+    "address": "北京市通州区宋庄镇南路甲1号"
+  },
+  "academic_level": {
+    "type": "民办普通本科",
+    "key_status": [
+      "北京市硕士学位授予立项建设单位",
+      "AACSB会员单位"
+    ],
+    "top_majors": [
+      "金融学",
+      "会计学",
+      "金融工程",
+      "国际商务"
+    ]
+  },
+  "student_performance": {
+    "overall_further_study_rate": "75.15%",
+    "overseas_study_rate": "47.68%",
+    "qs_top_50_admission_rate": "60.28%"
+  },
+  "financial_cost": {
+    "average_tuition_per_year": 79800,
+    "accommodation_fee": 8000,
+    "total_four_year_estimate": 400000
+  },
+  "campus_vibe": {
+    "dormitory_rating": "5星",
+    "international_atmosphere": "极高",
+    "major_change_policy": "零门槛"
+  },
+  "comprehensive_score": {
+    "academic": 2.2,
+    "employment": 4.2,
+    "location": 4.5,
+    "globalization": 4.6,
+    "student_freedom": 4.3,
+    "brand": 3.5,
+    "final_weighted_score": 3.63
+  }
+}

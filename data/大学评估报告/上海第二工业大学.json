@@ -1,0 +1,43 @@
+{
+  "university_name": "上海第二工业大学",
+  "short_name": "SSPU / 二工大",
+  "location": {
+    "city": "上海",
+    "district": "浦东新区金桥",
+    "industrial_zone": "金桥出口加工区"
+  },
+  "academic_stats": {
+    "c_plus_disciplines": 1,
+    "c_disciplines": 1,
+    "c_minus_disciplines": 1,
+    "academician_count": 3,
+    "key_labs": [
+      "上海先进热功能材料工程技术研究中心",
+      "上海市电子废弃物资源化协同创新中心"
+    ]
+  },
+  "admission_profile": {
+    "avg_percentile_science": "Top 10-15% (Out-of-province)",
+    "avg_percentile_shanghai": "Top 50%",
+    "competitiveness": "Medium-High"
+  },
+  "employment_outcomes": {
+    "employment_rate": "98.2%",
+    "further_study_rate": "16.7% (Total)",
+    "median_starting_salary": 7200,
+    "top_employer_sectors": [
+      "Intelligent Manufacturing",
+      "Semiconductors",
+      "Logistics"
+    ]
+  },
+  "scores": {
+    "academic_capital": 2.8,
+    "employment_value": 3.8,
+    "location_advantage": 4.7,
+    "global_exposure": 3.2,
+    "student_empowerment": 3.5,
+    "brand_asset": 3.4,
+    "weighted_total": 3.53
+  }
+}

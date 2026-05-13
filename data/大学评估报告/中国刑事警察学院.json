@@ -1,0 +1,44 @@
+{
+  "university_name": "中国刑事警察学院",
+  "short_name": "刑警学院 / CCPU",
+  "location": {
+    "province": "辽宁省",
+    "city": "沈阳市",
+    "address": "塔湾街83号"
+  },
+  "academic_stats": {
+    "a_plus_disciplines": [
+      "刑事科学技术",
+      "经济犯罪侦查",
+      "警犬技术",
+      "网络安全与执法"
+    ],
+    "a_disciplines": [
+      "侦查学"
+    ],
+    "national_key_labs": 3
+  },
+  "admission_profile": {
+    "difficulty_level": "Extreme",
+    "gender_ratio_restriction": "Female < 15%",
+    "key_batches": [
+      "Advance Batch"
+    ]
+  },
+  "employment_stats": {
+    "police_entry_rate": ">95%",
+    "primary_employer": "Public Security Organs",
+    "average_starting_salary": "7500-9000 RMB"
+  },
+  "campus_life": {
+    "management_style": "Semi-military",
+    "core_value": "Loyalty, Integrity, Diligence, Valor"
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.8,
+    "graduate_value": 4.9,
+    "location_potential": 3.5,
+    "brand_asset": 4.5,
+    "overall_weighted_score": 3.965
+  }
+}

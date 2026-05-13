@@ -1,0 +1,133 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e6]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: https://www.jobui.com
+          - emphasis [ref=e8]
+        - generic [ref=e9]:
+          - generic [ref=e10]: 职场数据点评
+          - generic [ref=e11]: 让职场人少走弯路
+      - link "公司" [ref=e12] [cursor=pointer]:
+        - /url: https://www.jobui.com
+      - link "工资" [ref=e13] [cursor=pointer]:
+        - /url: https://www.jobui.com/salary/
+      - link "行业" [ref=e14] [cursor=pointer]:
+        - /url: https://www.jobui.com/salary/industry/
+      - link "专业" [ref=e15] [cursor=pointer]:
+        - /url: https://edu.jobui.com/major/
+      - link "工作" [ref=e16] [cursor=pointer]:
+        - /url: https://www.jobui.com/jobs/
+      - link "排行榜" [ref=e17] [cursor=pointer]:
+        - /url: https://www.jobui.com/rank/company/view/
+      - link "找客户" [ref=e18] [cursor=pointer]:
+        - /url: https://www.jobui.com
+        - text: 找客户
+      - emphasis [ref=e21] [cursor=pointer]
+      - generic [ref=e22]:
+        - generic [ref=e23] [cursor=pointer]:
+          - text: 工作
+          - emphasis [ref=e24]: "|"
+          - emphasis [ref=e25]
+        - generic [ref=e26]:
+          - textbox "输入职位或专业关键词" [ref=e27]
+          - button "Submit" [ref=e28] [cursor=pointer]
+    - generic [ref=e29]:
+      - generic [ref=e30] [cursor=pointer]: 购买VIP
+      - link "登录/注册" [ref=e32] [cursor=pointer]:
+        - /url: javascript:;
+  - generic [ref=e35]:
+    - generic [ref=e36]: 你查找的页面已被删除
+    - generic [ref=e37]: 请自行选择你的需求
+    - generic [ref=e38]:
+      - link "搜索公司" [ref=e39] [cursor=pointer]:
+        - /url: https://www.jobui.com
+      - link "找客户" [ref=e40] [cursor=pointer]:
+        - /url: https://www.jobui.com/100w/
+      - link "查工资" [ref=e41] [cursor=pointer]:
+        - /url: https://www.jobui.com/salary/
+  - generic [ref=e43]:
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - term [ref=e46]: 关于
+        - definition [ref=e47]:
+          - link "关于我们" [ref=e48] [cursor=pointer]:
+            - /url: http://about.jobui.com/?type=index
+        - definition [ref=e49]:
+          - link "联系我们" [ref=e50] [cursor=pointer]:
+            - /url: http://about.jobui.com/?type=contact_jobui
+        - definition [ref=e51]:
+          - link "加入我们" [ref=e52] [cursor=pointer]:
+            - /url: //www.jobui.com/company/109916/jobs/
+        - definition [ref=e53]:
+          - link "开放收录" [ref=e54] [cursor=pointer]:
+            - /url: http://about.jobui.com/?type=open
+        - definition [ref=e55]:
+          - link "用户反馈" [ref=e56] [cursor=pointer]:
+            - /url: javascript:;
+      - generic [ref=e57]:
+        - term [ref=e58]: 选公司
+        - definition [ref=e59]:
+          - link "公司搜索" [ref=e60] [cursor=pointer]:
+            - /url: //www.jobui.com
+        - definition [ref=e61]:
+          - link "公司排行榜" [ref=e62] [cursor=pointer]:
+            - /url: //www.jobui.com/rank/company/view/
+        - definition [ref=e63]:
+          - link "找客户" [ref=e64] [cursor=pointer]:
+            - /url: //www.jobui.com/100w/
+        - definition [ref=e65]:
+          - link "500强招聘" [ref=e66] [cursor=pointer]:
+            - /url: //www.jobui.com/s/500qiang/
+        - definition [ref=e67]:
+          - link "酷公司" [ref=e68] [cursor=pointer]:
+            - /url: //www.jobui.com/cmp/album/
+      - generic [ref=e69]:
+        - term [ref=e70]: 找工作
+        - definition [ref=e71]:
+          - link "搜索职位" [ref=e72] [cursor=pointer]:
+            - /url: //www.jobui.com/jobs/
+        - definition [ref=e73]:
+          - link "应届生招聘" [ref=e74] [cursor=pointer]:
+            - /url: //www.jobui.com/yingjiesheng/
+        - definition [ref=e75]:
+          - link "兼职招聘" [ref=e76] [cursor=pointer]:
+            - /url: //www.jobui.com/jianzhi/
+        - definition [ref=e77]:
+          - link "实习生招聘" [ref=e78] [cursor=pointer]:
+            - /url: //www.jobui.com/shixisheng/
+        - definition [ref=e79]:
+          - link "暑假工招聘" [ref=e80] [cursor=pointer]:
+            - /url: //www.jobui.com/shujiagong/
+      - generic [ref=e81]:
+        - term [ref=e82]: 查工资
+        - definition [ref=e83]:
+          - link "薪酬搜索" [ref=e84] [cursor=pointer]:
+            - /url: //www.jobui.com/salary/
+        - term [ref=e85]: 看趋势
+        - definition [ref=e86]:
+          - link "大学生就业形势分析" [ref=e87] [cursor=pointer]:
+            - /url: //edu.jobui.com/major/
+      - generic [ref=e88]:
+        - term [ref=e89]: 职业指导/交流
+        - definition [ref=e90]:
+          - link "职场法规" [ref=e91] [cursor=pointer]:
+            - /url: //www.jobui.com/s/zhichangfalv/
+          - text: /
+          - link "安全求职" [ref=e92] [cursor=pointer]:
+            - /url: //www.jobui.com/s/anquanqiuzhi/
+        - definition [ref=e93]:
+          - link "粤ICP备05102490号-1" [ref=e94] [cursor=pointer]:
+            - /url: http://beian.miit.gov.cn
+          - link "粤公网安备 44010602001261号" [ref=e96] [cursor=pointer]:
+            - /url: http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602001261
+            - img [ref=e97]
+            - paragraph [ref=e98]: 粤公网安备 44010602001261号
+    - generic [ref=e100]:
+      - img [ref=e102]
+      - paragraph [ref=e103]: 职友集不提供APP，请关注公众号
+  - generic [ref=e105]:
+    - generic [ref=e107]:  联系客服
+    - generic [ref=e109]:  关注微信
+    - generic [ref=e111]:  小程序
+    - generic [ref=e112]:  返回顶部

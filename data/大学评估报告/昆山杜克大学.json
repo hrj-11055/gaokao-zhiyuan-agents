@@ -1,0 +1,44 @@
+{
+  "university_name": "昆山杜克大学",
+  "short_name": "DKU",
+  "location": {
+    "province": "江苏",
+    "city": "昆山",
+    "economic_status": "全国县级市第一"
+  },
+  "academic_metrics": {
+    "world_ranking_reference": "Duke University (QS #7)",
+    "faculty_international_ratio": "60%+",
+    "key_research_centers": [
+      "Global Health",
+      "Environment",
+      "Computational Image"
+    ]
+  },
+  "admission_data": {
+    "mode": "5-3-2 Comprehensive Evaluation",
+    "average_acceptance_rate": "<8%",
+    "top_provinces": [
+      "Jiangsu",
+      "Beijing",
+      "Shanghai",
+      "Zhejiang"
+    ]
+  },
+  "career_outcomes": {
+    "further_study_rate": "89.3%",
+    "top_10_university_rate": "25%",
+    "top_50_university_rate": "80%",
+    "major_employers": [
+      "McKinsey",
+      "Amazon",
+      "Morgan Stanley",
+      "Tencent"
+    ]
+  },
+  "financial_cost": {
+    "tuition_per_year": "190,000 CNY",
+    "scholarship_availability": "High"
+  },
+  "overall_score": 4.53
+}

@@ -1,0 +1,43 @@
+{
+  "university_name": "武汉晴川学院",
+  "short_name": "QCU",
+  "location": {
+    "province": "湖北",
+    "city": "武汉",
+    "district": "江夏区（光谷中华科技产业园）"
+  },
+  "academic_profile": {
+    "key_disciplines": [
+      "电子与通信工程",
+      "计算机技术",
+      "信息与通信工程"
+    ],
+    "special_academies": [
+      "北斗学院",
+      "人工智能产业学院"
+    ],
+    "academician_involvement": "刘经南（首席顾问）"
+  },
+  "admission_data_2025_est": {
+    "hubei_history_min_score": 455,
+    "hubei_physics_min_score": 426
+  },
+  "employment_stats": {
+    "overall_employment_rate": "92.5%",
+    "further_study_rate": "12.3%",
+    "avg_starting_salary": 5200,
+    "top_employer_industry": "ICT/光电子"
+  },
+  "campus_life": {
+    "dormitory_standard": "4人间的空调热水独卫",
+    "signature_sport": "赛艇",
+    "management_style": "三早一晚（针对新生）"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.5,
+    "employment_value": 2.8,
+    "location_advantage": 4.2,
+    "brand_asset": 3.2,
+    "comprehensive_weighted_score": 2.91
+  }
+}

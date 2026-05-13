@@ -1,0 +1,56 @@
+{
+  "university_name": "中央戏剧学院",
+  "short_name": "中戏 / CAD",
+  "location": {
+    "city": "北京",
+    "districts": [
+      "东城区",
+      "昌平区"
+    ],
+    "city_status": "全国文化中心"
+  },
+  "academic_standing": {
+    "double_first_class": true,
+    "a_plus_disciplines": [
+      "戏剧与影视学"
+    ],
+    "a_minus_disciplines": [
+      "艺术学理论"
+    ],
+    "national_key_disciplines": 2
+  },
+  "admission_difficulty": {
+    "art_exam_ratio": "约 92:1",
+    "culture_score_percentile": "前 1.5% - 2.5%",
+    "overall_difficulty": "Extreme"
+  },
+  "employment_outcomes": {
+    "top_employers": [
+      "中国国家话剧院",
+      "北京人民艺术剧院",
+      "中央电视台",
+      "头部影视公司"
+    ],
+    "starting_salary_median": 7000,
+    "five_year_salary_estimate": "250,000 - 400,000 CNY",
+    "industry_dominance": "High"
+  },
+  "campus_vibe": {
+    "key_phrase": "戏比天大",
+    "management_style": "Strict/Traditional",
+    "student_freedom": "Low"
+  },
+  "risk_factors": {
+    "recent_scandals": "Systemic corruption in leadership (2025)",
+    "reputation_impact": "Moderate/Temporary"
+  },
+  "scores": {
+    "academic": 4.8,
+    "employment": 4.5,
+    "location": 4.9,
+    "globalization": 4.2,
+    "freedom": 2.8,
+    "brand": 5.0,
+    "comprehensive_weighted_score": 4.59
+  }
+}

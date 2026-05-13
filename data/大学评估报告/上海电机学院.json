@@ -1,0 +1,31 @@
+{
+  "university_name": "上海电机学院",
+  "academic": {
+    "a_plus_count": 0,
+    "a_count": 0,
+    "a_minus_count": 0,
+    "academician_count": 0,
+    "master_degree_points": 11
+  },
+  "employment": {
+    "domestic_further_study_rate": "15.2%",
+    "overseas_further_study_rate": "3.5%",
+    "starting_salary": 7200,
+    "top_employers": [
+      "Tesla",
+      "SAIC",
+      "State Grid",
+      "COMAC"
+    ]
+  },
+  "location": {
+    "city": "上海",
+    "district": "浦东临港",
+    "city_gdp": "4.72万亿元"
+  },
+  "scores": {
+    "comprehensive_score": 3.59,
+    "employment_score": 4.2,
+    "location_score": 4.5
+  }
+}

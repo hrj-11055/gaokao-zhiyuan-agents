@@ -1,0 +1,44 @@
+{
+  "university_name": "辽宁师范大学",
+  "short_name": "辽师大 / LNNU",
+  "location": {
+    "province": "辽宁省",
+    "city": "大连市",
+    "campuses": [
+      "黄河路校区",
+      "西山校区"
+    ]
+  },
+  "academic_level": {
+    "type": "省属重点大学",
+    "key_disciplines": [
+      "教育学",
+      "心理学",
+      "地理学",
+      "马克思主义理论"
+    ],
+    "doctorate_points": "一级学科博士点 9 个"
+  },
+  "admission_data": {
+    "liaoning_history_rank": "Top 6000",
+    "liaoning_physics_rank": "Top 40000"
+  },
+  "employment_stats": {
+    "further_study_rate": "61.36%",
+    "primary_industry": "基础教育 (45%)",
+    "median_salary": 5200
+  },
+  "globalization": {
+    "aacsb_accredited": true,
+    "key_partner": "Missouri State University"
+  },
+  "scores": {
+    "academic": 3.2,
+    "employment": 3.8,
+    "location": 3.5,
+    "global": 3.6,
+    "empowerment": 3.2,
+    "brand": 3.7,
+    "overall": 3.52
+  }
+}

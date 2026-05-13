@@ -1,0 +1,33 @@
+{
+  "university_name": "西湖大学",
+  "short_name": "Westlake",
+  "location": {
+    "city": "杭州",
+    "district": "西湖区",
+    "campus": "云谷校区、之江校区"
+  },
+  "academic_stats": {
+    "schools": [
+      "生命科学学院",
+      "理学院",
+      "工学院"
+    ],
+    "national_key_labs": 1,
+    "pi_count": 200,
+    "academician_count": 10
+  },
+  "admission_data_2025": {
+    "henan_rank": 1917,
+    "chongqing_rank": 516,
+    "zhejiang_rank_est": 3000
+  },
+  "student_life": {
+    "teaching_language": "English",
+    "dorm_type": "Single room in 4-person suite",
+    "overseas_exchange": "100%"
+  },
+  "evaluation": {
+    "comprehensive_score": 5.23,
+    "recommendation": "适合立志科研、英语极佳、自我驱动力强的顶尖学生"
+  }
+}

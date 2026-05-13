@@ -1,0 +1,40 @@
+{
+  "university_name": "无锡职业技术大学",
+  "short_name": "锡职大 / WXIT",
+  "location": {
+    "province": "江苏",
+    "city": "无锡",
+    "district": "滨湖区",
+    "economic_zone": "长三角"
+  },
+  "status": {
+    "type": "公办职业本科",
+    "double_high_plan": "A档",
+    "entity_list": true
+  },
+  "academic": {
+    "core_groups": [
+      "机械制造及自动化",
+      "物联网应用技术"
+    ],
+    "faculty_phd_ratio": "约30%",
+    "dual_teacher_ratio": "90%+"
+  },
+  "employment": {
+    "major_employers": [
+      "施耐德",
+      "红豆",
+      "汇川技术",
+      "无锡地铁"
+    ],
+    "starting_salary_avg": 5500,
+    "local_retention_rate": ">60%"
+  },
+  "scores": {
+    "academic_capital": 4.2,
+    "employment_value": 4.5,
+    "location_power": 4.8,
+    "brand_asset": 4.5,
+    "overall_weighted_score": 4.32
+  }
+}

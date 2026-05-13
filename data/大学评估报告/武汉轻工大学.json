@@ -1,0 +1,52 @@
+{
+  "university_info": {
+    "name": "武汉轻工大学",
+    "short_name": "WHPU / 轻工大",
+    "location": "湖北省武汉市",
+    "tags": [
+      "省属重点",
+      "粮食行业特色",
+      "博士授权单位"
+    ],
+    "rankings": {
+      "ruanke_2025": 246,
+      "xyh_2025": 138
+    }
+  },
+  "academic_strength": {
+    "key_disciplines": [
+      "食品科学与工程",
+      "畜牧学",
+      "农业资源与环境"
+    ],
+    "doctorate_points": 1,
+    "national_platforms": 2
+  },
+  "student_life": {
+    "campus": [
+      "金银湖校区",
+      "常青校区"
+    ],
+    "dormitory_rating": "4星 (金银湖)",
+    "canteen_rating": "5星"
+  },
+  "career_prospects": {
+    "further_study_rate": "24.5%",
+    "top_employers": [
+      "中粮",
+      "中储粮",
+      "益海嘉里",
+      "正大"
+    ],
+    "industry_focus": "大食品、大健康、粮油加工"
+  },
+  "evaluation_scores": {
+    "academic": 3.5,
+    "employment": 3.4,
+    "location": 4.2,
+    "globalization": 2.8,
+    "freedom": 3.6,
+    "brand": 3.2,
+    "weighted_total": 3.48
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "university_name": "郑州工程技术学院",
+  "short_name": "郑工/ZZIT",
+  "former_name": "中州大学",
+  "location": {
+    "province": "河南",
+    "city": "郑州",
+    "districts": [
+      "惠济区",
+      "金水区"
+    ]
+  },
+  "academic_level": {
+    "type": "公办全日制普通本科",
+    "master_points_status": "立项建设单位",
+    "key_disciplines": [
+      "机械工程",
+      "控制科学与工程",
+      "特殊教育学"
+    ]
+  },
+  "admission_data_2025_est": {
+    "henan_liberal_arts_rank": 42105,
+    "henan_science_rank": 175267
+  },
+  "employment_stats": {
+    "overall_employment_rate": ">90%",
+    "major_industries": [
+      "制造业",
+      "建筑业",
+      "教育"
+    ],
+    "avg_starting_salary": 4200,
+    "local_retention_rate": "约 70%"
+  },
+  "risk_factors": [
+    {
+      "type": "Governance",
+      "description": "原党委书记周春辉违纪违法事件",
+      "status": "Ongoing rectification"
+    }
+  ],
+  "comprehensive_score": 2.64
+}

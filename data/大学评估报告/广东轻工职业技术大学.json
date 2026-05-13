@@ -1,0 +1,55 @@
+{
+  "university_details": {
+    "name": "广东轻工职业技术大学",
+    "short_name": "广轻大 / GDPU",
+    "established": 1933,
+    "type": "公办职业本科",
+    "location": [
+      "广州市海珠区",
+      "广州市天河区",
+      "佛山市南海区"
+    ]
+  },
+  "academic_stats": {
+    "double_high_plan": "B类",
+    "key_disciplines": [
+      "精细化工技术",
+      "工业软件开发",
+      "现代物流管理",
+      "工业设计"
+    ],
+    "faculty": {
+      "academician_dual_聘": 2,
+      "national_teaching_masters": 4,
+      "technical_experts_national": 12
+    }
+  },
+  "admission_data_2025_est": {
+    "guangdong_physics_rank": 98000,
+    "guangdong_history_rank": 52000,
+    "competition_level": "High"
+  },
+  "employment_outcomes": {
+    "employment_rate": ">95%",
+    "median_starting_salary": 6200,
+    "top_employers": [
+      "Huawei",
+      "Midea",
+      "Gree",
+      "Liby",
+      "SF Express"
+    ],
+    "further_study_rate": "8.5%"
+  },
+  "rankings": {
+    "shanghai_ranking_vocational": 4,
+    "cuaa_ranking_vocational": 3
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.8,
+    "employment_value": 4.5,
+    "location_advantage": 4.8,
+    "brand_asset": 4.2,
+    "overall_weighted_score": 4.17
+  }
+}

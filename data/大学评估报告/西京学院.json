@@ -1,0 +1,48 @@
+{
+  "university_name": "西京学院",
+  "short_name": "Xijing University",
+  "location": {
+    "province": "陕西",
+    "city": "西安",
+    "district": "长安区"
+  },
+  "academic_stats": {
+    "master_degree_points": 11,
+    "esi_top_1_percent": [
+      "Engineering Science"
+    ],
+    "key_laboratories": [
+      "陕西省可控中子源工程技术研究中心",
+      "陕西省混凝土结构安全与耐久性重点实验室"
+    ],
+    "faculty_phd_ratio": "25%-30%"
+  },
+  "admission_data": {
+    "shaanxi_liberal_arts_2025_rank": 38500,
+    "shaanxi_science_2025_rank": 105000,
+    "competitiveness_level": "High (Private Category)"
+  },
+  "employment_data": {
+    "further_study_rate": "16.68%",
+    "top_employers": [
+      "BYD",
+      "China Railway",
+      "Shaanxi Construction"
+    ],
+    "starting_salary_median": 5200
+  },
+  "campus_life": {
+    "management_style": "Semi-military / Strict",
+    "dormitory_rating": "5-star",
+    "transfer_policy_flexibility": "High"
+  },
+  "evaluation_scores": {
+    "academic_capital": 2.9,
+    "graduate_value": 2.6,
+    "location_synergy": 3.2,
+    "globalization": 1.8,
+    "student_empowerment": 2.3,
+    "brand_assets": 3.6,
+    "weighted_total": 2.785
+  }
+}

@@ -1,0 +1,371 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 智能影像工程 开设院校 全部 2025 本科 智能影像工程 开设院校 全部 2025 本科
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%2599%25BA%25E8%2583%25BD%25E5%25BD%25B1%25E5%2583%258F%25E5%25B7%25A5%25E7%25A8%258B%2B%25E5%25BC%2580%25E8%25AE%25BE%25E9%2599%25A2%25E6%25A0%25A1%2B%25E5%2585%25A8%25E9%2583%25A8%2B2025%2B%25E6%259C%25AC%25E7%25A7%2591&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRFAHRudGXXtMURBnbYcH0Rl1U7YK1X5LGuuLuAH_OETuHFRw6AfBva6n1Yee6iNKAw7G0q0nCjYZmRmXDwauPxFX30hqayBZ-BHaaKvzzHm4rFJEwA&aep=1&ntc=1&sa=X&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ2J8OegQIEBAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "图片" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRFAHRudGXXtMURBnbYcH0Rl1U7YK1X5LGuuLuAH_OETuHFRw6AfBva6n1Yee6iNKAw7G0q0nCjYZmRmXDwauPxFX30hqayBZ-BHaaKvzzHm4rFJEwA&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sa=X&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQtKgLegQIFhAB
+              - generic [ref=e91]: 图片
+          - listitem [ref=e92]:
+            - link "新闻" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRFAHRudGXXtMURBnbYcH0Rl1U7YK1X5LGuuLuAH_OETuHFRw6AfBva6n1Yee6iNKAw7G0q0nCjYZmRmXDwauPxFX30hqayBZ-BHaaKvzzHm4rFJEwA&sa=X&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ0pQJegQIFRAB
+              - generic [ref=e95]: 新闻
+          - listitem [ref=e96]:
+            - link "购物" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRFAHRudGXXtMURBnbYcH0Rl1U7YK1X5LGuuLuAH_OETuHFRw6AfBva6n1Yee6iNKAw7G0q0nCjYZmRmXDwauPxFX30hqayBZ-BHaaKvzzHm4rFJEwA&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&ved=1t:220175&ictx=111
+              - generic [ref=e99]: 购物
+          - listitem [ref=e100]:
+            - link "视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRFAHRudGXXtMURBnbYcH0Rl1U7YK1X5LGuuLuAH_OETuHFRw6AfBva6n1Yee6iNKAw7G0q0nCjYZmRmXDwauPxFX30hqayBZ-BHaaKvzzHm4rFJEwA&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sa=X&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQtKgLegQIEhAB
+              - generic [ref=e103]: 视频
+          - listitem [ref=e104]:
+            - link "短视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=f626b95a298d7988&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVNvV7jKtLqzLZ63dd2zPtrmgI7Q-S_UNmpLgK_HfmL3EsrMQmilneQWIE4eEekfJGpeqVnk5Wfwt_LUhvpnUNRFAHRudGXXtMURBnbYcH0Rl1U7YK1X5LGuuLuAH_OETuHFRw6AfBva6n1Yee6iNKAw7G0q0nCjYZmRmXDwauPxFX30hqayBZ-BHaaKvzzHm4rFJEwA&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sa=X&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQs6gLegQIExAB
+              - generic [ref=e107]: 短视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - heading "正在思考 正在搜索 再多想一会儿" [level=2] [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e155]: 正在思考
+            - generic [ref=e157]: 正在搜索
+            - generic [ref=e167]: 再多想一会儿
+        - progressbar [ref=e169]
+      - main [ref=e211]:
+        - generic [ref=e215]:
+          - generic [ref=e218]:
+            - heading "网页搜索结果" [level=2] [ref=e219]
+            - generic [ref=e220]:
+              - generic [ref=e223]:
+                - link "2025年智能影像工程专业大学排名及评级结果 中国大学排行榜「CNUR」 https://www.cnur.com › major" [ref=e225] [cursor=pointer]:
+                  - /url: https://www.cnur.com/major/3057.html
+                  - heading "2025年智能影像工程专业大学排名及评级结果" [level=3] [ref=e226]
+                  - generic [ref=e231]:
+                    - generic [ref=e233]: 中国大学排行榜「CNUR」
+                    - generic [ref=e235]: https://www.cnur.com › major
+                - button "关于这条结果的详细信息" [ref=e236] [cursor=pointer]:
+                  - img [ref=e239]
+              - generic [ref=e242]:
+                - generic [ref=e243]: 2025年6月7日 —
+                - generic [ref=e244]:
+                  - emphasis [ref=e245]: 智能影像工程
+                  - text: 专业B类及以上高校共5所。
+                  - emphasis [ref=e246]: "2025"
+                  - text: 年
+                  - emphasis [ref=e247]: 智能影像工程
+                  - text: 专业排名前列的
+                  - emphasis [ref=e248]: 院校
+                  - text: 分别为：贵州医科大学（A+，前二）、聊城大学（A+，前二）、新乡医学院（B， ...
+          - generic [ref=e252]:
+            - generic [ref=e255]:
+              - link "智能影像工程专业开设院校 深圳本地宝 https://sz.bendibao.com › edu › zhuanye › school" [ref=e257] [cursor=pointer]:
+                - /url: https://sz.bendibao.com/edu/zhuanye/school.php?id=4521&&xueli=benke
+                - heading "智能影像工程专业开设院校" [level=3] [ref=e258]
+                - generic [ref=e263]:
+                  - generic [ref=e265]: 深圳本地宝
+                  - generic [ref=e267]: https://sz.bendibao.com › edu › zhuanye › school
+              - button "关于这条结果的详细信息" [ref=e268] [cursor=pointer]:
+                - img [ref=e271]
+            - generic [ref=e275]:
+              - emphasis [ref=e276]: 全部本科
+              - text: 专科. 学校性质.
+              - emphasis [ref=e277]: 全部
+              - text: 公办民办. 主管部门类别.
+              - emphasis [ref=e278]: 全部
+              - text: 教育部其他部委地方军委. 学校特性.
+              - emphasis [ref=e279]: 全部
+              - text: 985211双一流. 共找到11 所符合条件的学校.
+              - emphasis [ref=e280]: 智能影像工程
+              - text: 专业
+              - emphasis [ref=e281]: 院校
+              - text: 名单.
+          - generic [ref=e285]:
+            - generic [ref=e288]:
+              - link "开设智能影像工程专业的大学名单一览表 大学生必备网 https://www.dxsbb.com › news" [ref=e290] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/113639.html
+                - heading "开设智能影像工程专业的大学名单一览表" [level=3] [ref=e291]
+                - generic [ref=e296]:
+                  - generic [ref=e298]: 大学生必备网
+                  - generic [ref=e300]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e301] [cursor=pointer]:
+                - img [ref=e304]
+            - generic [ref=e307]:
+              - generic [ref=e308]: 2025年5月15日 —
+              - generic [ref=e309]:
+                - text: 全国
+                - emphasis [ref=e310]: 开设智能影像工程
+                - text: 专业的大学有牡丹江医学院、上海健康医学院、浙江万里学院、滨州医学院、聊城大学、齐鲁理工学院、新乡医学院、贵州医科大学等， ...
+          - generic [ref=e314]:
+            - generic [ref=e317]:
+              - link "全国开设智能影像工程专业的大学排名_2026年更新 高考志愿填报 https://www.gaokao.cn › gk-mb" [ref=e319] [cursor=pointer]:
+                - /url: https://www.gaokao.cn/gk-mb/30/8822-0
+                - heading "全国开设智能影像工程专业的大学排名_2026年更新" [level=3] [ref=e320]
+                - generic [ref=e322]:
+                  - img [ref=e326]
+                  - generic [ref=e328]:
+                    - generic [ref=e330]: 高考志愿填报
+                    - generic [ref=e332]: https://www.gaokao.cn › gk-mb
+              - button "关于这条结果的详细信息" [ref=e333] [cursor=pointer]:
+                - img [ref=e336]
+            - generic [ref=e340]:
+              - text: 一、全国
+              - emphasis [ref=e341]: 智能影像工程
+              - text: 专业排名前10的大学有：. 排名第1：河南医药大学；. 排名第2：贵州医科大学；. 排名第3：上海健康医学院；. 排名第4：山东医药大学；.
+          - generic [ref=e345]:
+            - generic [ref=e348]:
+              - link "校友会2025中国大学智能影像工程专业排名（应用型） 校友会中国大学排名 http://www.cuaa.net › news › mynews" [ref=e350] [cursor=pointer]:
+                - /url: http://www.cuaa.net/2022index/news/mynews.jsp?information_id=18253
+                - heading "校友会2025中国大学智能影像工程专业排名（应用型）" [level=3] [ref=e351]
+                - generic [ref=e353]:
+                  - img [ref=e357]
+                  - generic [ref=e359]:
+                    - generic [ref=e361]: 校友会中国大学排名
+                    - generic [ref=e363]: http://www.cuaa.net › news › mynews
+              - button "关于这条结果的详细信息" [ref=e364] [cursor=pointer]:
+                - img [ref=e367]
+            - generic [ref=e371]:
+              - text: ...
+              - emphasis [ref=e372]: 智能影像工程
+              - text: 专业排名，全国共1308所
+              - emphasis [ref=e373]: 本科
+              - text: 高校的近6万个
+              - emphasis [ref=e374]: 本科
+              - text: 专业上榜。榜单显示， 齐鲁理工学院、上海健康医学院雄居
+              - emphasis [ref=e375]: "2025"
+              - text: 中国大学
+              - emphasis [ref=e376]: 智能影像工程
+              - text: 专业排名（应用型）前5强。
+            - generic [ref=e378]:
+              - text: 缺少字词： 开设 ‎| 必须包含：
+              - link "开设" [ref=e379] [cursor=pointer]:
+                - /url: /search?sca_esv=f626b95a298d7988&q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%22%E5%BC%80%E8%AE%BE%22+%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sa=X&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ5t4CegQIOxAB
+          - generic [ref=e384]:
+            - heading "相关问题" [level=2] [ref=e386]
+            - generic [ref=e387]:
+              - button "2025年新增了哪些本科专业?" [ref=e393] [cursor=pointer]:
+                - generic [ref=e395]: 2025年新增了哪些本科专业?
+                - img [ref=e398]
+              - button "视觉传达设计大学排名？" [ref=e407] [cursor=pointer]:
+                - generic [ref=e409]: 视觉传达设计大学排名？
+                - img [ref=e412]
+              - button "视觉传达设计系有哪些学校？" [ref=e421] [cursor=pointer]:
+                - generic [ref=e423]: 视觉传达设计系有哪些学校？
+                - img [ref=e426]
+          - generic [ref=e431]:
+            - heading "网页搜索结果" [level=2] [ref=e432]
+            - generic [ref=e433]:
+              - generic [ref=e436]:
+                - link "2026年高考必看：新增29个本科专业最全解读 - 山东高考 gaokao.pub https://www.gaokao.pub › information" [ref=e438] [cursor=pointer]:
+                  - /url: https://www.gaokao.pub/index.php?route=information%2Finformation&information_id=675
+                  - heading "2026年高考必看：新增29个本科专业最全解读 - 山东高考" [level=3] [ref=e439]
+                  - generic [ref=e444]:
+                    - generic [ref=e446]: gaokao.pub
+                    - generic [ref=e448]: https://www.gaokao.pub › information
+                - button "关于这条结果的详细信息" [ref=e449] [cursor=pointer]:
+                  - img [ref=e452]
+              - generic [ref=e455]:
+                - generic [ref=e456]: 2026年4月4日 —
+                - generic [ref=e457]:
+                  - text: 重点
+                  - emphasis [ref=e458]: 院校
+                  - text: （500-600分） ·
+                  - emphasis [ref=e459]: 智能
+                  - text: 视听
+                  - emphasis [ref=e460]: 工程
+                  - text: ：北邮、南邮 · 工业软件：华中科大、西安电子科大 · 游戏艺术设计：中国传媒大学、四川美院.
+          - generic [ref=e464]:
+            - generic [ref=e467]:
+              - link "2025年阳光高考招办访谈 阳光高考 https://gaokao.chsi.com.cn › gkzt › zbft" [ref=e469] [cursor=pointer]:
+                - /url: https://gaokao.chsi.com.cn/gkzt/zbft
+                - heading "2025年阳光高考招办访谈" [level=3] [ref=e470]
+                - generic [ref=e475]:
+                  - generic [ref=e477]: 阳光高考
+                  - generic [ref=e479]: https://gaokao.chsi.com.cn › gkzt › zbft
+              - button "关于这条结果的详细信息" [ref=e480] [cursor=pointer]:
+                - img [ref=e483]
+            - generic [ref=e487]:
+              - emphasis [ref=e488]: "2025"
+              - text: 年深圳大学普通
+              - emphasis [ref=e489]: 本科
+              - text: 招生总计划7060人，面向全国31个省（自治区、直辖市）及港澳台侨招生。
+              - emphasis [ref=e490]: "2025"
+              - text: 年，深圳大学新增人工
+              - emphasis [ref=e491]: 智能
+              - text: 学院、
+              - emphasis [ref=e492]: 智能
+              - text: 感知
+              - emphasis [ref=e493]: 工程
+              - text: 专业招生，新增1个院士 ...
+          - generic [ref=e497]:
+            - generic [ref=e500]:
+              - link "2025今年新增29个本科专业名单 大学生必备网 https://www.dxsbb.com › news" [ref=e502] [cursor=pointer]:
+                - /url: https://www.dxsbb.com/news/115918.html
+                - heading "2025今年新增29个本科专业名单" [level=3] [ref=e503]
+                - generic [ref=e508]:
+                  - generic [ref=e510]: 大学生必备网
+                  - generic [ref=e512]: https://www.dxsbb.com › news
+              - button "关于这条结果的详细信息" [ref=e513] [cursor=pointer]:
+                - img [ref=e516]
+            - generic [ref=e519]:
+              - generic [ref=e520]: 2025年4月22日 —
+              - generic [ref=e521]:
+                - text: 对于
+                - emphasis [ref=e522]: "2025"
+                - text: 年高考生来说，今年新增了人工
+                - emphasis [ref=e523]: 智能
+                - text: 教育、婴幼儿发展与健康管理、航空运动、区域国别学、海洋科学与技术、
+                - emphasis [ref=e524]: 智能
+                - text: 视听
+                - emphasis [ref=e525]: 工程
+                - text: 、工业软件、时空信息 ...
+          - generic [ref=e529]:
+            - generic [ref=e532]:
+              - link "智能影像工程专业全国院校排行榜 掌上高考 https://m.gaokao.cn › ..." [ref=e534] [cursor=pointer]:
+                - /url: https://m.gaokao.cn/zd/201424
+                - heading "智能影像工程专业全国院校排行榜" [level=3] [ref=e535]
+                - generic [ref=e540]:
+                  - generic [ref=e542]: 掌上高考
+                  - generic [ref=e544]: https://m.gaokao.cn › ...
+              - button "关于这条结果的详细信息" [ref=e545] [cursor=pointer]:
+                - img [ref=e548]
+            - generic [ref=e552]:
+              - emphasis [ref=e553]: 智能影像工程
+              - text: 专业排名前3的
+              - emphasis [ref=e554]: 院校
+              - text: 分别为：贵州医科大学、上海健康医学院、新乡医学院，这3所
+              - emphasis [ref=e555]: 院校
+              - text: 的专业实力都不错，同时专业分数线也不低。根据软科2023中国大学专业排名， ...
+          - generic [ref=e559]:
+            - generic [ref=e562]:
+              - link "2025年近40所高校本科招生政策重磅公布 自主选拔在线 https://www.zizzs.com › gaokao" [ref=e564] [cursor=pointer]:
+                - /url: https://www.zizzs.com/gk/gaokao/201358.html
+                - heading "2025年近40所高校本科招生政策重磅公布" [level=3] [ref=e565]
+                - generic [ref=e570]:
+                  - generic [ref=e572]: 自主选拔在线
+                  - generic [ref=e574]: https://www.zizzs.com › gaokao
+              - button "关于这条结果的详细信息" [ref=e575] [cursor=pointer]:
+                - img [ref=e578]
+            - generic [ref=e581]:
+              - generic [ref=e582]: 2025年6月8日 —
+              - generic [ref=e583]:
+                - text: 聚焦前沿科技和国家战略需求，在
+                - emphasis [ref=e584]: 智能
+                - text: 媒体、
+                - emphasis [ref=e585]: 智能
+                - text: 交互等交叉学科领域，增设
+                - emphasis [ref=e586]: 智能影像
+                - text: 艺术、
+                - emphasis [ref=e587]: 智能
+                - text: 视听
+                - emphasis [ref=e588]: 工程
+                - text: 、
+                - emphasis [ref=e589]: 智能工程
+                - text: 与创意设计三个新专业。三个新增专业都是
+                - emphasis [ref=e590]: "2025"
+                - text: ...
+        - navigation [ref=e593]:
+          - heading "网页导航" [level=1] [ref=e594]
+          - text: "1"
+          - link "Page 2" [ref=e597] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&ei=eonuaYAi-Ybs1g-a4rww&start=10&sa=N&sstk=Af77f_fBdgCSRH_NTFkLiIKz2JZRywCVKKTVJIoMpAIMinsXrywD75AvI4RRU0wqkcdjUu3AeNKjn7y4O3JW53JSlwHsUcVIDX6erg&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ8tMDegQIIBAE
+            - text: "2"
+          - link "Page 3" [ref=e599] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&ei=eonuaYAi-Ybs1g-a4rww&start=20&sa=N&sstk=Af77f_fBdgCSRH_NTFkLiIKz2JZRywCVKKTVJIoMpAIMinsXrywD75AvI4RRU0wqkcdjUu3AeNKjn7y4O3JW53JSlwHsUcVIDX6erg&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ8tMDegQIIBAG
+            - text: "3"
+          - link "Page 4" [ref=e601] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&ei=eonuaYAi-Ybs1g-a4rww&start=30&sa=N&sstk=Af77f_fBdgCSRH_NTFkLiIKz2JZRywCVKKTVJIoMpAIMinsXrywD75AvI4RRU0wqkcdjUu3AeNKjn7y4O3JW53JSlwHsUcVIDX6erg&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ8tMDegQIIBAI
+            - text: "4"
+          - link "Page 5" [ref=e603] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&ei=eonuaYAi-Ybs1g-a4rww&start=40&sa=N&sstk=Af77f_fBdgCSRH_NTFkLiIKz2JZRywCVKKTVJIoMpAIMinsXrywD75AvI4RRU0wqkcdjUu3AeNKjn7y4O3JW53JSlwHsUcVIDX6erg&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ8tMDegQIIBAK
+            - text: "5"
+          - link "Page 6" [ref=e605] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&ei=eonuaYAi-Ybs1g-a4rww&start=50&sa=N&sstk=Af77f_fBdgCSRH_NTFkLiIKz2JZRywCVKKTVJIoMpAIMinsXrywD75AvI4RRU0wqkcdjUu3AeNKjn7y4O3JW53JSlwHsUcVIDX6erg&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ8tMDegQIIBAM
+            - text: "6"
+          - link "Page 7" [ref=e607] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&ei=eonuaYAi-Ybs1g-a4rww&start=60&sa=N&sstk=Af77f_fBdgCSRH_NTFkLiIKz2JZRywCVKKTVJIoMpAIMinsXrywD75AvI4RRU0wqkcdjUu3AeNKjn7y4O3JW53JSlwHsUcVIDX6erg&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ8tMDegQIIBAO
+            - text: "7"
+          - link "Page 8" [ref=e609] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&ei=eonuaYAi-Ybs1g-a4rww&start=70&sa=N&sstk=Af77f_fBdgCSRH_NTFkLiIKz2JZRywCVKKTVJIoMpAIMinsXrywD75AvI4RRU0wqkcdjUu3AeNKjn7y4O3JW53JSlwHsUcVIDX6erg&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ8tMDegQIIBAQ
+            - text: "8"
+          - link "Page 9" [ref=e611] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&ei=eonuaYAi-Ybs1g-a4rww&start=80&sa=N&sstk=Af77f_fBdgCSRH_NTFkLiIKz2JZRywCVKKTVJIoMpAIMinsXrywD75AvI4RRU0wqkcdjUu3AeNKjn7y4O3JW53JSlwHsUcVIDX6erg&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ8tMDegQIIBAS
+            - text: "9"
+          - link "Page 10" [ref=e613] [cursor=pointer]:
+            - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&ei=eonuaYAi-Ybs1g-a4rww&start=90&sa=N&sstk=Af77f_fBdgCSRH_NTFkLiIKz2JZRywCVKKTVJIoMpAIMinsXrywD75AvI4RRU0wqkcdjUu3AeNKjn7y4O3JW53JSlwHsUcVIDX6erg&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ8tMDegQIIBAU
+            - text: "10"
+          - heading "下一页" [level=2] [ref=e615]:
+            - link "下一页" [ref=e616] [cursor=pointer]:
+              - /url: /search?q=%E6%99%BA%E8%83%BD%E5%BD%B1%E5%83%8F%E5%B7%A5%E7%A8%8B+%E5%BC%80%E8%AE%BE%E9%99%A2%E6%A0%A1+%E5%85%A8%E9%83%A8+2025+%E6%9C%AC%E7%A7%91&sca_esv=f626b95a298d7988&ei=eonuaYAi-Ybs1g-a4rww&start=10&sa=N&sstk=Af77f_fBdgCSRH_NTFkLiIKz2JZRywCVKKTVJIoMpAIMinsXrywD75AvI4RRU0wqkcdjUu3AeNKjn7y4O3JW53JSlwHsUcVIDX6erg&ved=2ahUKEwiAx-fJwIyUAxV5A9sEHRoxDwYQ8NMDegQIIBAW
+              - generic [ref=e618]: 下一页
+        - navigation
+    - contentinfo [ref=e619]:
+      - heading "页脚链接" [level=1] [ref=e620]
+      - generic [ref=e624]:
+        - generic [ref=e628]:
+          - button "Hyde Park, 米尔顿麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e630] [cursor=pointer]:
+            - generic [ref=e631]: Hyde Park, 米尔顿麻萨诸塞州
+            - generic [ref=e633]:
+              - text: "-"
+              - generic [ref=e634]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e636] [cursor=pointer]: 更新位置信息
+        - generic [ref=e639]:
+          - link "帮助" [ref=e640] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e641] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e642] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e643] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

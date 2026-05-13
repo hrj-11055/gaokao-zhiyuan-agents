@@ -1,0 +1,44 @@
+{
+  "university_name": "湘潭大学兴湘学院",
+  "short_name": "兴湘学院",
+  "location": {
+    "province": "湖南省",
+    "city": "湘潭市",
+    "district": "雨湖区",
+    "address": "湘潭市雨湖区羊牯塘"
+  },
+  "academic_stats": {
+    "parent_university": "湘潭大学",
+    "parent_status": "Double First-Class",
+    "a_minus_disciplines": 1,
+    "senior_title_ratio": "44.97%",
+    "postgraduate_degree_ratio": "99.33%"
+  },
+  "admission_info": {
+    "status": "Stopped general undergraduate enrollment",
+    "current_focus": "Junior to Senior College (Zhuan Sheng Ben)",
+    "historical_rank_percentile": "Top 20% in Hunan"
+  },
+  "employment_stats": {
+    "average_starting_salary": 5200,
+    "further_study_rate": "15%-20%",
+    "top_employers": [
+      "Sany Heavy Industry",
+      "Zoomlion",
+      "Geely Auto",
+      "State Grid"
+    ]
+  },
+  "campus_life": {
+    "dormitory": [
+      "Qinhu Apartment",
+      "Jinhui Apartment"
+    ],
+    "signature_food": "Xingxiang Buffet",
+    "academic_vibe": "High pressure / Kaoyan-oriented"
+  },
+  "evaluation": {
+    "comprehensive_score": 2.93,
+    "recommendation_index": "High for Zhuan Sheng Ben students"
+  }
+}

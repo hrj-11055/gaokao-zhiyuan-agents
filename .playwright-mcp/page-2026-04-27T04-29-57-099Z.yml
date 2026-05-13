@@ -1,0 +1,261 @@
+- generic [ref=e2]:
+  - region "跳到主要内容":
+    - link "跳到主要内容" [ref=e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - navigation "主导航" [ref=e4]:
+    - generic [ref=e5]:
+      - link "DeepSeek API 文档 Logo DeepSeek API 文档" [ref=e7] [cursor=pointer]:
+        - /url: /zh-cn/
+        - img "DeepSeek API 文档 Logo" [ref=e9]
+        - generic [ref=e10]: DeepSeek API 文档
+      - generic [ref=e11]:
+        - button "中文（中国）" [ref=e13] [cursor=pointer]:
+          - img [ref=e14]
+          - text: 中文（中国）
+        - link "DeepSeek Platform" [ref=e16] [cursor=pointer]:
+          - /url: https://platform.deepseek.com/
+          - text: DeepSeek Platform
+          - img [ref=e17]
+        - button "切换浅色/暗黑模式（当前为浅色模式）" [ref=e20] [cursor=pointer]:
+          - img [ref=e21]
+  - generic [ref=e25]:
+    - complementary [ref=e26]:
+      - navigation "文档侧边栏" [ref=e29]:
+        - list [ref=e30]:
+          - listitem [ref=e31]:
+            - link "快速开始" [expanded] [ref=e33] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e34]:
+              - listitem [ref=e35]:
+                - link "首次调用 API" [ref=e36] [cursor=pointer]:
+                  - /url: /zh-cn/
+              - listitem [ref=e37]:
+                - link "模型 & 价格" [ref=e38] [cursor=pointer]:
+                  - /url: /zh-cn/quick_start/pricing
+              - listitem [ref=e39]:
+                - link "Token 用量计算" [ref=e40] [cursor=pointer]:
+                  - /url: /zh-cn/quick_start/token_usage
+              - listitem [ref=e41]:
+                - link "限速" [ref=e42] [cursor=pointer]:
+                  - /url: /zh-cn/quick_start/rate_limit
+              - listitem [ref=e43]:
+                - link "错误码" [ref=e44] [cursor=pointer]:
+                  - /url: /zh-cn/quick_start/error_codes
+          - listitem [ref=e45]:
+            - link "API 指南" [expanded] [ref=e47] [cursor=pointer]:
+              - /url: "#"
+            - list [ref=e48]:
+              - listitem [ref=e49]:
+                - link "思考模式" [ref=e50] [cursor=pointer]:
+                  - /url: /zh-cn/guides/thinking_mode
+              - listitem [ref=e51]:
+                - link "多轮对话" [ref=e52] [cursor=pointer]:
+                  - /url: /zh-cn/guides/multi_round_chat
+              - listitem [ref=e53]:
+                - link "对话前缀续写（Beta）" [ref=e54] [cursor=pointer]:
+                  - /url: /zh-cn/guides/chat_prefix_completion
+              - listitem [ref=e55]:
+                - link "FIM 补全（Beta）" [ref=e56] [cursor=pointer]:
+                  - /url: /zh-cn/guides/fim_completion
+              - listitem [ref=e57]:
+                - link "JSON Output" [ref=e58] [cursor=pointer]:
+                  - /url: /zh-cn/guides/json_mode
+              - listitem [ref=e59]:
+                - link "Tool Calls" [ref=e60] [cursor=pointer]:
+                  - /url: /zh-cn/guides/tool_calls
+              - listitem [ref=e61]:
+                - link "上下文硬盘缓存" [ref=e62] [cursor=pointer]:
+                  - /url: /zh-cn/guides/kv_cache
+              - listitem [ref=e63]:
+                - link "接入 AI 工具" [ref=e64] [cursor=pointer]:
+                  - /url: /zh-cn/guides/coding_agents
+              - listitem [ref=e65]:
+                - link "Anthropic API" [ref=e66] [cursor=pointer]:
+                  - /url: /zh-cn/guides/anthropic_api
+          - listitem [ref=e67]:
+            - link "API 文档" [ref=e69] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e70]:
+            - link "新闻" [ref=e72] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e73]:
+            - link "其它资源" [ref=e75] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e76]:
+            - link "常见问题" [ref=e77] [cursor=pointer]:
+              - /url: /zh-cn/faq
+          - listitem [ref=e78]:
+            - link "更新日志" [ref=e79] [cursor=pointer]:
+              - /url: /zh-cn/updates
+    - main [ref=e80]:
+      - generic [ref=e210]:
+        - generic [ref=e212]:
+          - article [ref=e213]:
+            - navigation "页面路径" [ref=e214]:
+              - list [ref=e215]:
+                - listitem [ref=e216]:
+                  - link "主页面" [ref=e217] [cursor=pointer]:
+                    - /url: /zh-cn/
+                    - img [ref=e218]
+                - listitem [ref=e220]:
+                  - generic [ref=e221]: 快速开始
+                - listitem [ref=e222]:
+                  - generic [ref=e223]: 模型 & 价格
+            - generic [ref=e226]:
+              - heading "模型 & 价格" [level=1] [ref=e227]
+              - paragraph [ref=e228]: 下表所列模型价格以“百万 tokens”为单位。Token 是模型用来表示自然语言文本的的最小单位，可以是一个词、一个数字或一个标点符号等。我们将根据模型输入和输出的总 token 数进行计量计费。
+              - separator [ref=e229]
+              - heading "模型细节模型细节的直接链接" [level=2] [ref=e230]:
+                - text: 模型细节
+                - link "模型细节的直接链接" [ref=e231] [cursor=pointer]:
+                  - /url: "#模型细节"
+                  - text: "#"
+              - table [ref=e234]:
+                - row "模型 deepseek-v4-flash(1) deepseek-v4-pro" [ref=e235]:
+                  - cell "模型" [ref=e236]
+                  - cell "deepseek-v4-flash(1)" [ref=e237]:
+                    - text: deepseek-v4-flash
+                    - superscript [ref=e238]: (1)
+                  - cell "deepseek-v4-pro" [ref=e239]
+                - row "BASE URL (OpenAI 格式) https://api.deepseek.com" [ref=e240]:
+                  - cell "BASE URL (OpenAI 格式)" [ref=e241]
+                  - cell "https://api.deepseek.com" [ref=e242]:
+                    - link "https://api.deepseek.com" [ref=e243] [cursor=pointer]:
+                      - /url: https://api.deepseek.com
+                - row "BASE URL (Anthropic 格式) https://api.deepseek.com/anthropic" [ref=e244]:
+                  - cell "BASE URL (Anthropic 格式)" [ref=e245]
+                  - cell "https://api.deepseek.com/anthropic" [ref=e246]:
+                    - link "https://api.deepseek.com/anthropic" [ref=e247] [cursor=pointer]:
+                      - /url: https://api.deepseek.com/anthropic
+                - row "模型版本 DeepSeek-V4-Flash DeepSeek-V4-Pro" [ref=e248]:
+                  - cell "模型版本" [ref=e249]
+                  - cell "DeepSeek-V4-Flash" [ref=e250]
+                  - cell "DeepSeek-V4-Pro" [ref=e251]
+                - row "思考模式 支持非思考与思考模式（默认） 切换方式详见思考模式" [ref=e252]:
+                  - cell "思考模式" [ref=e253]
+                  - cell "支持非思考与思考模式（默认） 切换方式详见思考模式" [ref=e254]:
+                    - text: 支持非思考与思考模式（默认）
+                    - text: 切换方式详见
+                    - link "思考模式" [ref=e255] [cursor=pointer]:
+                      - /url: /zh-cn/guides/thinking_mode
+                - row "上下文长度 1M" [ref=e256]:
+                  - cell "上下文长度" [ref=e257]
+                  - cell "1M" [ref=e258]
+                - row "输出长度 最大 384K" [ref=e259]:
+                  - cell "输出长度" [ref=e260]
+                  - cell "最大 384K" [ref=e261]
+                - row "功能 Json Output 支持 支持" [ref=e262]:
+                  - cell "功能" [ref=e263]
+                  - cell "Json Output" [ref=e264]:
+                    - link "Json Output" [ref=e265] [cursor=pointer]:
+                      - /url: /zh-cn/guides/json_mode
+                  - cell "支持" [ref=e266]
+                  - cell "支持" [ref=e267]
+                - row "Tool Calls 支持 支持" [ref=e268]:
+                  - cell "Tool Calls" [ref=e269]:
+                    - link "Tool Calls" [ref=e270] [cursor=pointer]:
+                      - /url: /zh-cn/guides/tool_calls
+                  - cell "支持" [ref=e271]
+                  - cell "支持" [ref=e272]
+                - row "对话前缀续写（Beta） 支持 支持" [ref=e273]:
+                  - cell "对话前缀续写（Beta）" [ref=e274]:
+                    - link "对话前缀续写（Beta）" [ref=e275] [cursor=pointer]:
+                      - /url: /zh-cn/guides/chat_prefix_completion
+                  - cell "支持" [ref=e276]
+                  - cell "支持" [ref=e277]
+                - row "FIM 补全（Beta） 仅非思考模式支持 仅非思考模式支持" [ref=e278]:
+                  - cell "FIM 补全（Beta）" [ref=e279]:
+                    - link "FIM 补全（Beta）" [ref=e280] [cursor=pointer]:
+                      - /url: /zh-cn/guides/fim_completion
+                  - cell "仅非思考模式支持" [ref=e281]
+                  - cell "仅非思考模式支持" [ref=e282]
+                - row "价格 百万tokens输入（缓存命中）(2) 0.02元 0.025元（限时2.5折(3)）0.1元" [ref=e283]:
+                  - cell "价格" [ref=e284]
+                  - cell "百万tokens输入（缓存命中）(2)" [ref=e285]:
+                    - text: 百万tokens输入（缓存命中）
+                    - superscript [ref=e286]: (2)
+                  - cell "0.02元" [ref=e287]
+                  - cell "0.025元（限时2.5折(3)）0.1元" [ref=e288]:
+                    - text: 0.025元（限时2.5折
+                    - superscript [ref=e289]: (3)
+                    - text: ）
+                    - deletion [ref=e290]: 0.1元
+                - row "百万tokens输入（缓存未命中） 1元 3元（限时2.5折(3)）12元" [ref=e291]:
+                  - cell "百万tokens输入（缓存未命中）" [ref=e292]
+                  - cell "1元" [ref=e293]
+                  - cell "3元（限时2.5折(3)）12元" [ref=e294]:
+                    - text: 3元（限时2.5折
+                    - superscript [ref=e295]: (3)
+                    - text: ）
+                    - deletion [ref=e296]: 12元
+                - row "百万tokens输出 2元 6元（限时2.5折(3)）24元" [ref=e297]:
+                  - cell "百万tokens输出" [ref=e298]
+                  - cell "2元" [ref=e299]
+                  - cell "6元（限时2.5折(3)）24元" [ref=e300]:
+                    - text: 6元（限时2.5折
+                    - superscript [ref=e301]: (3)
+                    - text: ）
+                    - deletion [ref=e302]: 24元
+              - paragraph [ref=e303]:
+                - text: (1) deepseek-chat 与 deepseek-reasoner 两个模型名将于日后弃用。出于兼容考虑，二者分别对应 deepseek-v4-flash 的非思考与思考模式。
+                - text: (2) 全系列模型，输入缓存命中的价格已降至首发价格的 1/10。
+                - text: (3) 当前 deepseek-v4-pro 模型限时 2.5 折，优惠期至北京时间 2026/05/05 23:59。
+              - separator [ref=e304]
+              - heading "扣费规则扣费规则的直接链接" [level=2] [ref=e305]:
+                - text: 扣费规则
+                - link "扣费规则的直接链接" [ref=e306] [cursor=pointer]:
+                  - /url: "#扣费规则"
+                  - text: "#"
+              - paragraph [ref=e307]: 扣减费用 = token 消耗量 × 模型单价，对应的费用将直接从充值余额或赠送余额中进行扣减。 当充值余额与赠送余额同时存在时，优先扣减赠送余额。
+              - paragraph [ref=e308]: 产品价格可能发生变动，DeepSeek 保留修改价格的权利。请您依据实际用量按需充值，定期查看此页面以获知最新价格信息。
+          - navigation "文件选项卡" [ref=e310]:
+            - link "上一页 « 首次调用 API" [ref=e311] [cursor=pointer]:
+              - /url: /zh-cn/
+              - generic [ref=e312]: 上一页
+              - generic [ref=e313]: « 首次调用 API
+            - link "下一页 Token 用量计算 »" [ref=e314] [cursor=pointer]:
+              - /url: /zh-cn/quick_start/token_usage
+              - generic [ref=e315]: 下一页
+              - generic [ref=e316]: Token 用量计算 »
+        - list [ref=e319]:
+          - listitem [ref=e320]:
+            - link "模型细节" [ref=e321] [cursor=pointer]:
+              - /url: "#模型细节"
+          - listitem [ref=e322]:
+            - link "扣费规则" [ref=e323] [cursor=pointer]:
+              - /url: "#扣费规则"
+  - contentinfo [ref=e175]:
+    - generic [ref=e176]:
+      - generic [ref=e177]:
+        - generic [ref=e178]:
+          - generic [ref=e179]: 微信公众号
+          - list [ref=e180]:
+            - listitem [ref=e181]:
+              - img "WeChat QRcode" [ref=e182]
+        - generic [ref=e183]:
+          - generic [ref=e184]: 社区
+          - list [ref=e185]:
+            - listitem [ref=e186]:
+              - link "邮箱" [ref=e187] [cursor=pointer]:
+                - /url: mailto:api-service@deepseek.com
+                - text: 邮箱
+                - img [ref=e188]
+            - listitem [ref=e190]:
+              - link "Discord" [ref=e191] [cursor=pointer]:
+                - /url: https://discord.gg/Tc7c45Zzu5
+                - text: Discord
+                - img [ref=e192]
+            - listitem [ref=e194]:
+              - link "Twitter" [ref=e195] [cursor=pointer]:
+                - /url: https://twitter.com/deepseek_ai
+                - text: Twitter
+                - img [ref=e196]
+        - generic [ref=e198]:
+          - generic [ref=e199]: 更多
+          - list [ref=e200]:
+            - listitem [ref=e201]:
+              - link "GitHub" [ref=e202] [cursor=pointer]:
+                - /url: https://github.com/deepseek-ai
+                - text: GitHub
+                - img [ref=e203]
+      - generic [ref=e206]: Copyright © 2025 DeepSeek, Inc.

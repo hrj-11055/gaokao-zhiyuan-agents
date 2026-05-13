@@ -1,0 +1,42 @@
+{
+  "university_name": "东莞理工学院",
+  "short_name": "DGUT / 莞工",
+  "location": {
+    "city": "东莞市",
+    "districts": [
+      "松山湖校区",
+      "莞城校区"
+    ],
+    "city_gdp_2023": "11438亿元"
+  },
+  "academic_stats": {
+    "esi_top_1_percent": 6,
+    "shanghai_ranking_world_subjects": 11,
+    "master_degree_points": "一级学科硕士点11个",
+    "doctor_degree_points": "立项建设单位（冲刺中）"
+  },
+  "employment_stats": {
+    "overall_employment_rate": ">90%",
+    "median_starting_salary": 6700,
+    "top_employers": [
+      "华为",
+      "比亚迪",
+      "VIVO",
+      "中国电信"
+    ],
+    "further_study_rate": "13.59% (含境内外)"
+  },
+  "admission_stats_2024": {
+    "guangdong_physics_group_min_rank": 62720,
+    "guangdong_history_group_min_rank": 30716
+  },
+  "evaluation_scores": {
+    "academic_capital": 3.2,
+    "employment_value": 4.2,
+    "location_advantage": 4.8,
+    "globalization": 3.5,
+    "student_freedom": 3.6,
+    "brand_asset": 3.5,
+    "weighted_total_score": 3.82
+  }
+}

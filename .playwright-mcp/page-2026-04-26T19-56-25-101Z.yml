@@ -1,0 +1,497 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "跳到主要内容" [ref=e2] [cursor=pointer]
+      - link "无障碍功能帮助" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=zh-CN
+      - link "无障碍功能反馈" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Google 首页" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=zh-CN&sa=X&ved=0ahUKEwiFlOajpoyUAxX4GoYAHahnAscQPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "搜索" [ref=e26]: 暨南大学 就业质量报告 深造率 毕业去向 2024 PDF 暨南大学 就业质量报告 深造率 毕业去向 2024 PDF
+            - generic [ref=e27]:
+              - button "清除" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "按语音搜索" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "按图搜索" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "搜索" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e46]:
+      - button "设置" [ref=e48] [cursor=pointer]:
+        - img [ref=e51]
+      - generic [ref=e54]:
+        - button "Google 应用" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+        - link "登录" [ref=e61] [cursor=pointer]:
+          - /url: https://accounts.google.com/ServiceLogin?hl=zh-CN&passive=true&continue=https://www.google.com/search%3Fq%3D%25E6%259A%25A8%25E5%258D%2597%25E5%25A4%25A7%25E5%25AD%25A6%2B%25E5%25B0%25B1%25E4%25B8%259A%25E8%25B4%25A8%25E9%2587%258F%25E6%258A%25A5%25E5%2591%258A%2B%25E6%25B7%25B1%25E9%2580%25A0%25E7%258E%2587%2B%25E6%25AF%2595%25E4%25B8%259A%25E5%258E%25BB%25E5%2590%2591%2B2024%2BPDF&ec=futura_srp_og_si_72236_p
+  - generic [ref=e63]:
+    - navigation [ref=e69]:
+      - generic [ref=e75]:
+        - list [ref=e76]:
+          - listitem [ref=e77]:
+            - link "AI 模式" [ref=e80] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&sca_esv=164079556523993e&udm=50&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgA_Oa6DZgh8pFpzK3p2OJsymU17GR6Xikc9IgiJewSHn_6KB_zmO_ALfElD9Yn7XnUpr8WtvmDwEouVOttKcs6PEDWkUw6YiF-1n5pkSaVb6DZESzg&aep=1&ntc=1&sa=X&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQ2J8OegQIEBAI
+              - generic [ref=e83]: AI 模式
+          - listitem [ref=e84]:
+            - link "全部" [disabled] [ref=e85]:
+              - generic [ref=e87]: 全部
+          - listitem [ref=e88]:
+            - link "新闻" [ref=e89] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&tbm=nws&source=lnms&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgA_Oa6DZgh8pFpzK3p2OJsymU17GR6Xikc9IgiJewSHn_6KB_zmO_ALfElD9Yn7XnUpr8WtvmDwEouVOttKcs6PEDWkUw6YiF-1n5pkSaVb6DZESzg&sa=X&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQ0pQJegQIFhAB
+              - generic [ref=e91]: 新闻
+          - listitem [ref=e92]:
+            - link "购物" [ref=e93] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=28&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgA_Oa6DZgh8pFpzK3p2OJsymU17GR6Xikc9IgiJewSHn_6KB_zmO_ALfElD9Yn7XnUpr8WtvmDwEouVOttKcs6PEDWkUw6YiF-1n5pkSaVb6DZESzg&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&ved=1t:220175&ictx=111
+              - generic [ref=e95]: 购物
+          - listitem [ref=e96]:
+            - link "图片" [ref=e97] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=2&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgA_Oa6DZgh8pFpzK3p2OJsymU17GR6Xikc9IgiJewSHn_6KB_zmO_ALfElD9Yn7XnUpr8WtvmDwEouVOttKcs6PEDWkUw6YiF-1n5pkSaVb6DZESzg&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&sa=X&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQtKgLegQIFBAB
+              - generic [ref=e99]: 图片
+          - listitem [ref=e100]:
+            - link "短视频" [ref=e101] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=39&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgA_Oa6DZgh8pFpzK3p2OJsymU17GR6Xikc9IgiJewSHn_6KB_zmO_ALfElD9Yn7XnUpr8WtvmDwEouVOttKcs6PEDWkUw6YiF-1n5pkSaVb6DZESzg&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&sa=X&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQs6gLegQIExAB
+              - generic [ref=e103]: 短视频
+          - listitem [ref=e104]:
+            - link "视频" [ref=e105] [cursor=pointer]:
+              - /url: /search?sca_esv=164079556523993e&udm=7&fbs=ADc_l-Z6XGGbkKmpylZqg2J7ZOuVrl2pKVsOrAGyrx9IK5ONToDeo-Yyg731TxMHV5aXaovd5ek5pddgsIEhgQulRIKBGAKhlBNTkIfkeGEasO8vgA_Oa6DZgh8pFpzK3p2OJsymU17GR6Xikc9IgiJewSHn_6KB_zmO_ALfElD9Yn7XnUpr8WtvmDwEouVOttKcs6PEDWkUw6YiF-1n5pkSaVb6DZESzg&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&sa=X&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQtKgLegQIEhAB
+              - generic [ref=e107]: 视频
+          - listitem [ref=e108]:
+            - button "更多过滤条件" [ref=e109] [cursor=pointer]:
+              - generic "更多过滤条件" [ref=e110]:
+                - generic [ref=e111]:
+                  - generic [ref=e112]: 更多
+                  - img [ref=e114]
+        - button "工具" [ref=e117] [cursor=pointer]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: 工具
+            - img [ref=e122]
+    - heading "搜索结果" [level=1] [ref=e124]
+    - generic [ref=e129]:
+      - generic [ref=e148]:
+        - generic [ref=e151]:
+          - generic [ref=e153]:
+            - generic [ref=e155]:
+              - generic [ref=e156]:
+                - img [ref=e157]
+                - heading "AI 概览" [level=2] [ref=e159]
+              - button "关于这条结果的详细信息" [ref=e163]:
+                - img [ref=e165]
+            - generic [ref=e190]:
+              - generic [ref=e191]:
+                - text: 基于暨南大学信息公开网和往年就业质量报告习惯，截至2026年4月，
+                - strong [ref=e192]: 2024届毕业生就业质量年度报告
+                - text: 通常在毕业当年的年底（12月）或次年年初发布。
+              - generic [ref=e193]:
+                - text: 根据搜索结果中可获取的最新信息（如2023届报告趋势和往年数据），暨南大学就业质量处于高位。若需查找官方PDF，建议直接访问：
+                - strong [ref=e194]: 暨南大学信息公开网 - 毕业生就业质量年度报告栏目
+                - text: 。
+                - button "暨南大学 - 查看相关链接" [disabled] [ref=e197]:
+                  - generic [ref=e198]:
+                    - img "暨南大学" [ref=e199]
+                    - generic [ref=e201]: 暨南大学
+          - progressbar [ref=e207]
+        - button "显示更多 AI 概览" [ref=e231]:
+          - generic [ref=e233] [cursor=pointer]:
+            - generic [ref=e234]: 展开
+            - img [ref=e236]
+      - main [ref=e239]:
+        - generic [ref=e243]:
+          - generic [ref=e246]:
+            - heading "网页搜索结果" [level=2] [ref=e247]
+            - generic [ref=e248]:
+              - generic [ref=e251]:
+                - link "毕业生就业质量年度报告 - 信息公开- 暨南大学 暨南大学 https://xxgk.jnu.edu.cn › list" [ref=e253] [cursor=pointer]:
+                  - /url: https://xxgk.jnu.edu.cn/7604/list.htm
+                  - heading "毕业生就业质量年度报告 - 信息公开- 暨南大学" [level=3] [ref=e254]
+                  - generic [ref=e256]:
+                    - img [ref=e260]
+                    - generic [ref=e262]:
+                      - generic [ref=e264]: 暨南大学
+                      - generic [ref=e266]: https://xxgk.jnu.edu.cn › list
+                - button "关于这条结果的详细信息" [ref=e267] [cursor=pointer]:
+                  - img [ref=e270]
+              - generic [ref=e274]:
+                - text: 2022年
+                - emphasis [ref=e275]: 暨南大学毕业
+                - text: 生
+                - emphasis [ref=e276]: 就业质量
+                - text: 年度
+                - emphasis [ref=e277]: 报告
+                - text: 2023-02-24 ·
+                - emphasis [ref=e278]: 暨南大学
+                - text: 2020年
+                - emphasis [ref=e279]: 毕业
+                - text: 生
+                - emphasis [ref=e280]: 就业质量
+                - text: 年度
+                - emphasis [ref=e281]: 报告
+                - text: 2022-06-23 ·
+                - emphasis [ref=e282]: 暨南大学
+                - text: 2019年
+                - emphasis [ref=e283]: 毕业
+                - text: 生
+                - emphasis [ref=e284]: 就业质量
+                - text: 年度
+                - emphasis [ref=e285]: 报告
+                - text: 2022-06-23 ·
+                - emphasis [ref=e286]: 暨南大学
+                - text: 2016年 ...
+              - generic [ref=e288]: 缺少字词： 深造 ‎率 ‎PDF
+          - generic [ref=e293]:
+            - heading "相关问题" [level=2] [ref=e295]
+            - generic [ref=e296]:
+              - button "暨南大学最好的专业？" [ref=e302] [cursor=pointer]:
+                - generic [ref=e304]: 暨南大学最好的专业？
+                - img [ref=e307]
+              - button "暨南大学是985还是211？" [ref=e316] [cursor=pointer]:
+                - generic [ref=e318]: 暨南大学是985还是211？
+                - img [ref=e321]
+              - button "暨南大学教授工资？" [ref=e330] [cursor=pointer]:
+                - generic [ref=e332]: 暨南大学教授工资？
+                - img [ref=e335]
+              - button "暨南大学全球排名？" [ref=e344] [cursor=pointer]:
+                - generic [ref=e346]: 暨南大学全球排名？
+                - img [ref=e349]
+          - generic [ref=e354]:
+            - heading "网页搜索结果" [level=2] [ref=e355]
+            - generic [ref=e356]:
+              - generic [ref=e359]:
+                - link "暨南大学 高考100 https://pdf.gk100.com › employment › report" [ref=e361] [cursor=pointer]:
+                  - /url: https://pdf.gk100.com/employment/report/2023/20250412/38781849fd355c74.pdf
+                  - heading "暨南大学" [level=3] [ref=e362]
+                  - generic [ref=e364]:
+                    - img [ref=e368]
+                    - generic [ref=e370]:
+                      - generic [ref=e372]: 高考100
+                      - generic [ref=e374]: https://pdf.gk100.com › employment › report
+                - generic [ref=e375]:
+                  - generic:
+                    - generic: PDF
+                - button "关于这条结果的详细信息" [ref=e376] [cursor=pointer]:
+                  - img [ref=e379]
+              - generic [ref=e381]:
+                - generic [ref=e382]:
+                  - generic [ref=e383]: 2025年4月12日 —
+                  - generic [ref=e384]:
+                    - text: 加强
+                    - emphasis [ref=e385]: 就业
+                    - text: 数据统计分析工作，编制
+                    - emphasis [ref=e386]: 毕业
+                    - text: 生
+                    - emphasis [ref=e387]: 就业质量
+                    - text: . 年度
+                    - emphasis [ref=e388]: 报告
+                    - text: ，能够系统反映学校
+                    - emphasis [ref=e389]: 就业
+                    - text: 工作实际情况，展示教育教学成果，并为后续人. 才培养的持续改进提供数据支撑 ...
+                - generic [ref=e390]: 75 页
+          - generic [ref=e394]:
+            - generic [ref=e397]:
+              - link "目录 - 信息公开- 暨南大学 暨南大学 https://xxgk.jnu.edu.cn › _upload › article › files" [ref=e399] [cursor=pointer]:
+                - /url: https://xxgk.jnu.edu.cn/_upload/article/files/5c/4d/e69060a54c64b596bb4a47627f8a/cec3f5eb-e8ec-4c42-89b2-dfd64be902ba.pdf
+                - heading "目录 - 信息公开- 暨南大学" [level=3] [ref=e400]
+                - generic [ref=e402]:
+                  - img [ref=e406]
+                  - generic [ref=e408]:
+                    - generic [ref=e410]: 暨南大学
+                    - generic [ref=e412]: https://xxgk.jnu.edu.cn › _upload › article › files
+              - generic [ref=e413]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e414] [cursor=pointer]:
+                - img [ref=e417]
+            - generic [ref=e419]:
+              - generic [ref=e421]:
+                - emphasis [ref=e422]: 暨南大学
+                - text: . 10.
+                - emphasis [ref=e423]: 就业
+                - text: . 基本情况. Page 17. 2022 年毕业生
+                - emphasis [ref=e424]: 就业质量
+                - text: 年度
+                - emphasis [ref=e425]: 报告
+                - text: . 11. 第一章
+                - emphasis [ref=e426]: 就业
+                - text: 基本情况. 本章从毕业生规模与结构、
+                - emphasis [ref=e427]: 毕业去向
+                - text: 落实率、
+                - emphasis [ref=e428]: 就业
+                - text: 流向几个方面对
+                - emphasis [ref=e429]: 暨南大学
+                - text: ...
+              - generic [ref=e430]: 79 页
+            - generic [ref=e432]:
+              - text: 缺少字词： 2024 ‎| 必须包含：
+              - link "2024" [ref=e433] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+%222024%22+PDF&sa=X&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQ5t4CegQIRRAB
+          - generic [ref=e437]:
+            - generic [ref=e440]:
+              - link "2024届毕业生年度就业质量报告 jysd.com https://static.jysd.com › wku › ueditor › file › 521..." [ref=e442] [cursor=pointer]:
+                - /url: https://static.jysd.com/wku/ueditor/file/20250220/5218_2024%E5%B1%8A%E6%AF%95%E4%B8%9A%E7%94%9F%E5%B9%B4%E5%BA%A6%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A.pdf
+                - heading "2024届毕业生年度就业质量报告" [level=3] [ref=e443]
+                - generic [ref=e445]:
+                  - img [ref=e449]
+                  - generic [ref=e451]:
+                    - generic [ref=e453]: jysd.com
+                    - generic [ref=e455]: https://static.jysd.com › wku › ueditor › file › 521...
+              - generic [ref=e456]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e457] [cursor=pointer]:
+                - img [ref=e460]
+            - generic [ref=e462]:
+              - generic [ref=e464]:
+                - emphasis [ref=e465]: "2024"
+                - text: 届本科
+                - emphasis [ref=e466]: 毕业
+                - text: 生中继续升学人数占总人数的75.15%,升学
+                - emphasis [ref=e467]: 深造
+                - text: 比例保持高位;直接
+                - emphasis [ref=e468]: 就业
+                - text: 人数占总
+                - emphasis [ref=e469]: 毕业
+                - text: 生人. 数的14.24%,从事自由职业的比例为1.21% (图2-1)。我 ...
+              - generic [ref=e470]: 24 页
+          - generic [ref=e474]:
+            - generic [ref=e477]:
+              - link "毕业生就业质量年度报告 - 信息公开- 暨南大学 暨南大学 https://xxgk.jnu.edu.cn › _upload › article › files" [ref=e479] [cursor=pointer]:
+                - /url: https://xxgk.jnu.edu.cn/_upload/article/files/d0/2e/b349fab04d8aac80f3c86eaa6ba6/ca0b7e6a-1ad4-4fa8-b5c6-82a06c3e3c84.pdf
+                - heading "毕业生就业质量年度报告 - 信息公开- 暨南大学" [level=3] [ref=e480]
+                - generic [ref=e482]:
+                  - img [ref=e486]
+                  - generic [ref=e488]:
+                    - generic [ref=e490]: 暨南大学
+                    - generic [ref=e492]: https://xxgk.jnu.edu.cn › _upload › article › files
+              - generic [ref=e493]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e494] [cursor=pointer]:
+                - img [ref=e497]
+            - generic [ref=e499]:
+              - generic [ref=e501]:
+                - text: 数据来源：
+                - emphasis [ref=e502]: 暨南大学
+                - text: 数据。 二
+                - emphasis [ref=e503]: 毕业
+                - text: 生
+                - emphasis [ref=e504]: 就业
+                - text: 率及
+                - emphasis [ref=e505]: 去向
+                - text: .
+                - emphasis [ref=e506]: 就业
+                - text: 率反映了
+                - emphasis [ref=e507]: 毕业
+                - text: 生
+                - emphasis [ref=e508]: 毕业
+                - text: 的落实情况，按照教育部公布的高校
+                - emphasis [ref=e509]: 毕业
+                - text: 生
+                - emphasis [ref=e510]: 就业
+                - text: 率的. 计算公式为：.
+                - emphasis [ref=e511]: 毕业
+                - text: 生
+                - emphasis [ref=e512]: 就业
+                - text: 率=（已
+                - emphasis [ref=e513]: 就业毕业
+                - text: 生 ...
+              - generic [ref=e514]: 108 页
+            - generic [ref=e516]:
+              - text: 缺少字词： 2024 ‎| 必须包含：
+              - link "2024" [ref=e517] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+%222024%22+PDF&sa=X&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQ5t4CegQIQxAB
+          - generic [ref=e521]:
+            - generic [ref=e524]:
+              - link "报考指南 北京印刷学院 https://zhaosheng.bigc.edu.cn › docs › 2024-06" [ref=e526] [cursor=pointer]:
+                - /url: https://zhaosheng.bigc.edu.cn/docs/2024-06/e161825b401f48e394e6c7c69e9db165.pdf
+                - heading "报考指南" [level=3] [ref=e527]
+                - generic [ref=e529]:
+                  - img [ref=e533]
+                  - generic [ref=e535]:
+                    - generic [ref=e537]: 北京印刷学院
+                    - generic [ref=e539]: https://zhaosheng.bigc.edu.cn › docs › 2024-06
+              - generic [ref=e540]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e541] [cursor=pointer]:
+                - img [ref=e544]
+            - generic [ref=e548]:
+              - emphasis [ref=e549]: 毕业
+              - text: 生主要
+              - emphasis [ref=e550]: 就业去向
+              - text: 为文化与创意产业相关的科研. 机构、教育及企业，包括空间 ... 工业设计专业
+              - emphasis [ref=e551]: 毕业
+              - text: 生
+              - emphasis [ref=e552]: 就业
+              - text: 率年均96% 以上，专业契. 合度100%。继续
+              - emphasis [ref=e553]: 深造
+              - text: 包括英国伦敦 ...
+          - generic [ref=e557]:
+            - generic [ref=e560]:
+              - link "目录 长沙学院 http://www.ccsu.cn › 5.29.2024.pdf" [ref=e562] [cursor=pointer]:
+                - /url: http://www.ccsu.cn/5.29.2024.pdf
+                - heading "目录" [level=3] [ref=e563]
+                - generic [ref=e568]:
+                  - generic [ref=e570]: 长沙学院
+                  - generic [ref=e572]: http://www.ccsu.cn › 5.29.2024.pdf
+              - generic [ref=e573]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e574] [cursor=pointer]:
+                - img [ref=e577]
+            - generic [ref=e579]:
+              - generic [ref=e581]:
+                - text: 应届本科
+                - emphasis [ref=e582]: 毕业
+                - text: 生初次
+                - emphasis [ref=e583]: 就业
+                - text: 率88.43%，分专业
+                - emphasis [ref=e584]: 毕业
+                - text: 生
+                - emphasis [ref=e585]: 就业
+                - text: 率见附表9. 附表9 分专业
+                - emphasis [ref=e586]: 毕业
+                - text: 生
+                - emphasis [ref=e587]: 去向
+                - text: 落实率. 专业代码. 专业名称.
+                - emphasis [ref=e588]: 毕业
+                - text: 人数.
+                - emphasis [ref=e589]: 去向
+                - text: 落实人数.
+                - emphasis [ref=e590]: 去向
+                - text: 落实率. 030101K. 法学.
+              - generic [ref=e591]: 55 页
+          - generic [ref=e595]:
+            - generic [ref=e598]:
+              - link "学位授权点建设年度报告 - 研究生院 上海海洋大学 https://yjs.shou.edu.cn › _upload › article › files" [ref=e600] [cursor=pointer]:
+                - /url: https://yjs.shou.edu.cn/_upload/article/files/3d/44/0f1fa84349cfac2def726a4d9d3e/125b7a3e-7a46-4afe-bba7-14ce3493b3cf.pdf
+                - heading "学位授权点建设年度报告 - 研究生院" [level=3] [ref=e601]
+                - generic [ref=e606]:
+                  - generic [ref=e608]: 上海海洋大学
+                  - generic [ref=e610]: https://yjs.shou.edu.cn › _upload › article › files
+              - generic [ref=e611]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e612] [cursor=pointer]:
+                - img [ref=e615]
+            - generic [ref=e619]:
+              - text: "2"
+              - emphasis [ref=e620]: 毕业
+              - text: 研究生
+              - emphasis [ref=e621]: 就业
+              - text: 率、
+              - emphasis [ref=e622]: 就业去向
+              - text: 分析、
+              - emphasis [ref=e623]: 就业
+              - text: 与专业契合度调查. （1）
+              - emphasis [ref=e624]: 就业
+              - text: 率：
+              - emphasis [ref=e625]: "2024"
+              - text: 届生态学专业研究生
+              - emphasis [ref=e626]: 毕业
+              - text: 生共计34 人，合同
+              - emphasis [ref=e627]: 就业
+              - text: . 31 人、自由职业1 人、升学4 人，
+              - emphasis [ref=e628]: 就业
+              - text: 率100%。
+          - generic [ref=e632]:
+            - generic [ref=e635]:
+              - link "搜索 香港中文大学（深圳） https://www.cuhk.edu.cn › zh-hans › search" [ref=e637] [cursor=pointer]:
+                - /url: https://www.cuhk.edu.cn/zh-hans/search?keywords=%E6%B8%B8%E6%88%8Fddos%E6%94%BB%E5%87%BB%E9%98%B2%E5%BE%A1%E2%AD%90110011.cc%E2%AD%90ddos%E9%81%AD%E6%94%BB%E5%87%BB%E5%B9%B6%E6%8A%A5%E6%A1%88iaefr%E2%AD%90110011.cc%E2%AD%90ddos%E6%94%BB%E5%87%BB%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9Cuq44v%E4%B8%8D%E6%98%AFddos%E6%94%BB%E5%87%BB%E5%B7%A5%E5%85%B742bxxddos%E6%94%BB%E5%87%BB%E7%AD%96%E7%95%A5bifz1&sort_by=created&sort_order=DESC&page=99
+                - heading "搜索" [level=3] [ref=e638]
+                - generic [ref=e643]:
+                  - generic [ref=e645]: 香港中文大学（深圳）
+                  - generic [ref=e647]: https://www.cuhk.edu.cn › zh-hans › search
+              - button "关于这条结果的详细信息" [ref=e648] [cursor=pointer]:
+                - img [ref=e651]
+            - generic [ref=e655]:
+              - text: ...
+              - emphasis [ref=e656]: 毕业
+              - text: 生
+              - emphasis [ref=e657]: 就业质量报告
+              - text: 。面对全球日趋激烈的竞争环境与技术变革挑战，本届
+              - emphasis [ref=e658]: 毕业
+              - text: 生以稳健的姿态和卓越的表现，交出了一份高质量的答卷。他们在
+              - emphasis [ref=e659]: 去向
+              - text: 落实率、名校
+              - emphasis [ref=e660]: 深造
+              - text: 质量、就业 ...
+          - generic [ref=e664]:
+            - generic [ref=e667]:
+              - link "宁波大学2024 届毕业生就业质量年度报告 6617.com https://pdf.6617.com › employment › report › 2024" [ref=e669] [cursor=pointer]:
+                - /url: https://pdf.6617.com/employment/report/2024/20250412/cfee75889953e95a.pdf
+                - heading "宁波大学2024 届毕业生就业质量年度报告" [level=3] [ref=e670]
+                - generic [ref=e672]:
+                  - img [ref=e676]
+                  - generic [ref=e678]:
+                    - generic [ref=e680]: 6617.com
+                    - generic [ref=e682]: https://pdf.6617.com › employment › report › 2024
+              - generic [ref=e683]:
+                - generic:
+                  - generic: PDF
+              - button "关于这条结果的详细信息" [ref=e684] [cursor=pointer]:
+                - img [ref=e687]
+            - generic [ref=e689]:
+              - generic [ref=e690]:
+                - generic [ref=e691]: 2025年4月12日 —
+                - generic [ref=e692]:
+                  - text: 截至
+                  - emphasis [ref=e693]: "2024"
+                  - text: 年10 月31 日，
+                  - emphasis [ref=e694]: "2024"
+                  - text: 届毕业生共7737 人，已落实去. 向7469 人，
+                  - emphasis [ref=e695]: 毕业去向
+                  - text: 落实率约为96.54%，其中毕业本科生
+                  - emphasis [ref=e696]: 毕业去向
+                  - text: . 落实率95.95%，毕业研究生（含硕博 ...
+              - generic [ref=e697]: 13 页
+            - generic [ref=e699]:
+              - text: 缺少字词： 暨南 ‎| 必须包含：
+              - link "暨南" [ref=e700] [cursor=pointer]:
+                - /url: /search?sca_esv=164079556523993e&q=%22%E6%9A%A8%E5%8D%97%22+%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&sa=X&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQ5t4CegQIRBAB
+        - navigation [ref=e703]:
+          - heading "网页导航" [level=1] [ref=e704]
+          - text: "1"
+          - link "Page 2" [ref=e707] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&sca_esv=164079556523993e&ei=5m3uaYWJO_i1mLQPqM-JuAw&start=10&sa=N&sstk=Af77f_dK19ctqY6ZEzqGUjsKCz2pOReeVkB5SgcmEayFK5XvgEnVaM0nXhGCOej015qBD1Lw8T39reSyVxnD4vdSTK4u1VsMED20DA&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQ8tMDegQIRhAE
+            - text: "2"
+          - link "Page 3" [ref=e709] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&sca_esv=164079556523993e&ei=5m3uaYWJO_i1mLQPqM-JuAw&start=20&sa=N&sstk=Af77f_dK19ctqY6ZEzqGUjsKCz2pOReeVkB5SgcmEayFK5XvgEnVaM0nXhGCOej015qBD1Lw8T39reSyVxnD4vdSTK4u1VsMED20DA&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQ8tMDegQIRhAG
+            - text: "3"
+          - link "Page 4" [ref=e711] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&sca_esv=164079556523993e&ei=5m3uaYWJO_i1mLQPqM-JuAw&start=30&sa=N&sstk=Af77f_dK19ctqY6ZEzqGUjsKCz2pOReeVkB5SgcmEayFK5XvgEnVaM0nXhGCOej015qBD1Lw8T39reSyVxnD4vdSTK4u1VsMED20DA&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQ8tMDegQIRhAI
+            - text: "4"
+          - link "Page 5" [ref=e713] [cursor=pointer]:
+            - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&sca_esv=164079556523993e&ei=5m3uaYWJO_i1mLQPqM-JuAw&start=40&sa=N&sstk=Af77f_dK19ctqY6ZEzqGUjsKCz2pOReeVkB5SgcmEayFK5XvgEnVaM0nXhGCOej015qBD1Lw8T39reSyVxnD4vdSTK4u1VsMED20DA&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQ8tMDegQIRhAK
+            - text: "5"
+          - heading "下一页" [level=2] [ref=e715]:
+            - link "下一页" [ref=e716] [cursor=pointer]:
+              - /url: /search?q=%E6%9A%A8%E5%8D%97%E5%A4%A7%E5%AD%A6+%E5%B0%B1%E4%B8%9A%E8%B4%A8%E9%87%8F%E6%8A%A5%E5%91%8A+%E6%B7%B1%E9%80%A0%E7%8E%87+%E6%AF%95%E4%B8%9A%E5%8E%BB%E5%90%91+2024+PDF&sca_esv=164079556523993e&ei=5m3uaYWJO_i1mLQPqM-JuAw&start=10&sa=N&sstk=Af77f_dK19ctqY6ZEzqGUjsKCz2pOReeVkB5SgcmEayFK5XvgEnVaM0nXhGCOej015qBD1Lw8T39reSyVxnD4vdSTK4u1VsMED20DA&ved=2ahUKEwiFlOajpoyUAxX4GoYAHahnAscQ8NMDegQIRhAM
+              - generic [ref=e718]: 下一页
+        - navigation
+    - contentinfo [ref=e719]:
+      - heading "页脚链接" [level=1] [ref=e720]
+      - generic [ref=e724]:
+        - generic [ref=e728]:
+          - button "02186 麻萨诸塞州 - 是根据您的 IP 地址推断出来的" [ref=e730] [cursor=pointer]:
+            - generic [ref=e731]: 02186 麻萨诸塞州
+            - generic [ref=e733]:
+              - text: "-"
+              - generic [ref=e734]: 是根据您的 IP 地址推断出来的
+          - text: "-"
+          - button "更新位置信息" [ref=e736] [cursor=pointer]: 更新位置信息
+        - generic [ref=e739]:
+          - link "帮助" [ref=e740] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=zh-CN&fg=1
+          - link "发送反馈" [ref=e741] [cursor=pointer]:
+            - /url: "#"
+          - link "隐私权" [ref=e742] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=zh-CN&fg=1
+          - link "条款" [ref=e743] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=zh-CN&fg=1

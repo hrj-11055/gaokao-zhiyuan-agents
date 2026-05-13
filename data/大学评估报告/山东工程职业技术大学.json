@@ -1,0 +1,42 @@
+{
+  "university_name": "山东工程职业技术大学",
+  "short_name": "山东工程",
+  "location": {
+    "province": "山东",
+    "city": "济南",
+    "district": "章丘区/高新区"
+  },
+  "identity": {
+    "type": "民办职业本科",
+    "is_pilot": true,
+    "ranking_ruanke_vocational": 9
+  },
+  "academic_stats": {
+    "a_plus_count": 0,
+    "provincial_first_class_majors": 1,
+    "double_qualified_teacher_ratio": "80%+"
+  },
+  "admission_data_2024": {
+    "shandong_general_score": 462,
+    "shandong_general_rank": 265412
+  },
+  "employment_stats": {
+    "overall_employment_rate": "95%+",
+    "median_starting_salary": 4650,
+    "further_study_rate": "6.8%",
+    "top_employer_sectors": [
+      "智能制造",
+      "建筑工程",
+      "信息技术"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 1.8,
+    "graduate_value": 2.9,
+    "location_advantage": 3.6,
+    "globalization": 1.5,
+    "student_freedom": 2.8,
+    "brand_asset": 3.3,
+    "weighted_total_score": 2.57
+  }
+}

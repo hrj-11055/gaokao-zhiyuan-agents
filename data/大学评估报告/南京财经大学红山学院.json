@@ -1,0 +1,44 @@
+{
+  "university_details": {
+    "name": "南京财经大学红山学院",
+    "short_name": "南财红山",
+    "location": "南京市高淳区",
+    "type": "独立学院",
+    "founding_year": 1999
+  },
+  "academic_score": {
+    "overall": 2.75,
+    "academic_capital": 2.2,
+    "employment_value": 3.1,
+    "location_advantage": 2.8,
+    "globalization": 2.4,
+    "student_freedom": 3.5,
+    "brand_asset": 3.2
+  },
+  "top_majors": [
+    "会计学",
+    "金融学",
+    "审计学",
+    "国际经济与贸易"
+  ],
+  "employment_stats": {
+    "employment_rate": "99.02%",
+    "further_study_rate": "15.9% (含出国)",
+    "avg_starting_salary": 4300,
+    "top_employer_sectors": [
+      "金融业",
+      "租赁和商务服务业",
+      "批发和零售业"
+    ]
+  },
+  "campus_life": {
+    "dormitory_standard": "4人间/电梯/空调/独卫",
+    "transportation": "地铁S9号线连接主城",
+    "culture_tag": "务实考证导向"
+  },
+  "risk_factors": [
+    "转设路径不确定性",
+    "地理位置偏远",
+    "财经行业岗位结构性调整"
+  ]
+}

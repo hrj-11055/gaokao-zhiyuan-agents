@@ -1,0 +1,39 @@
+{
+  "university_name": "南京工业大学",
+  "short_name": "Nanjing Tech",
+  "location": {
+    "province": "江苏",
+    "city": "南京",
+    "district": "江北新区"
+  },
+  "academic_level": {
+    "key_disciplines": [
+      "化学工程与技术",
+      "材料科学与工程",
+      "安全科学与工程"
+    ],
+    "a_class_disciplines": 1,
+    "national_lab_count": 9,
+    "academician_count": 15
+  },
+  "admission_stats": {
+    "jiangsu_physics_rank_2025_est": 35000,
+    "jiangsu_history_rank_2025_est": 15000,
+    "competition_level": "High"
+  },
+  "career_outcomes": {
+    "further_study_rate": "34.53%",
+    "top_employers": [
+      "中石化",
+      "中国建筑",
+      "华为",
+      "万华化学"
+    ],
+    "avg_starting_salary": 6500
+  },
+  "student_experience": {
+    "transfer_policy": "Zero Threshold",
+    "campus_vibe": "Forest/Academic",
+    "comprehensive_score": 4.18
+  }
+}

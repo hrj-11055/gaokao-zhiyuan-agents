@@ -1,0 +1,38 @@
+{
+  "university_name": "三峡大学",
+  "short_name": "CTGU / 三大",
+  "location": {
+    "province": "湖北省",
+    "city": "宜昌市",
+    "city_gdp_2024": "6191.12亿元"
+  },
+  "academic_stats": {
+    "doctoral_programs": 4,
+    "postdoctoral_stations": 4,
+    "b_level_disciplines": [
+      "电气工程",
+      "土木工程",
+      "水利工程"
+    ],
+    "academician_count": 1
+  },
+  "employment_stats": {
+    "overall_further_study_rate": "28.3%",
+    "national_grid_recruitment_rank": "全国前3",
+    "starting_salary_median": 6500,
+    "top_employers": [
+      "国家电网",
+      "中国三峡集团",
+      "中国电建"
+    ]
+  },
+  "admission_difficulty": {
+    "electrical_engineering_premium": "30-50 points above baseline",
+    "overall_selectivity": "Top 10%-15% in major provinces"
+  },
+  "risk_factors": [
+    "International student management issues",
+    "High competition for top-tier majors"
+  ],
+  "comprehensive_score": 3.5
+}

@@ -1,0 +1,50 @@
+{
+  "university_info": {
+    "name": "安徽新华学院",
+    "type": "民办本科",
+    "location": "安徽省合肥市高新区",
+    "established": 2000,
+    "ranking": {
+      "ruanke_private": 19,
+      "xyh_private": 12
+    }
+  },
+  "academic_assets": {
+    "master_degree_status": "立项建设中",
+    "key_disciplines": [
+      "计算机科学与技术",
+      "动画",
+      "药学",
+      "网络工程"
+    ],
+    "postdoctoral_workstation": true,
+    "faculty": {
+      "total": 1400,
+      "master_phd_ratio": "90%+"
+    }
+  },
+  "student_quality": {
+    "avg_admission_score_anhui_history": 485,
+    "avg_admission_score_anhui_physics": 438,
+    "source_region_primary": "Anhui"
+  },
+  "career_outcomes": {
+    "employment_rate": "90%+",
+    "postgraduate_rate": "4.43%",
+    "top_employers": [
+      "BYD",
+      "BOE",
+      "iFLYTEK"
+    ],
+    "avg_starting_salary": 5200
+  },
+  "campus_life": {
+    "management_style": "Strict",
+    "dormitory_condition": "4-6 persons, AC, Private Bathroom",
+    "location_advantage": "High-tech Zone Core"
+  },
+  "due_diligence_score": {
+    "total_score": 3.07,
+    "recommendation_level": "B+ (Highly Recommended for Private Tier)"
+  }
+}

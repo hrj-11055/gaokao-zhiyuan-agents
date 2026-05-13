@@ -1,0 +1,35 @@
+{
+  "university_name": "泰州学院",
+  "academic": {
+    "a_plus_count": 0,
+    "a_count": 0,
+    "a_minus_count": 0,
+    "academician_count": 0,
+    "provincial_first_class_majors": [
+      "小学教育",
+      "生物技术",
+      "汉语言文学",
+      "数学与应用数学"
+    ]
+  },
+  "employment": {
+    "domestic_further_study_rate": "8.97%",
+    "overseas_further_study_rate": "0.5%",
+    "starting_salary_median": 5200,
+    "primary_employer_sector": "Education & Healthcare"
+  },
+  "location": {
+    "city": "泰州",
+    "city_gdp": "6731亿元",
+    "city_rank": 42
+  },
+  "scores": {
+    "academic_capital": 2.2,
+    "employment_value": 2.8,
+    "location_potential": 3.5,
+    "globalization": 1.8,
+    "student_empowerment": 3.0,
+    "brand_asset": 2.5,
+    "comprehensive_score": 2.61
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "university_name": "长沙理工大学城南学院",
+  "short_name": "长理城南",
+  "location": {
+    "province": "湖南",
+    "city": "长沙",
+    "campus": "金盆岭校区",
+    "city_level": "新一线"
+  },
+  "academic": {
+    "parent_university": "长沙理工大学",
+    "key_disciplines": [
+      "电气工程",
+      "土木工程",
+      "交通运输",
+      "水利工程"
+    ],
+    "academician_count": 1,
+    "faculty_quality": "深度共享校本部师资"
+  },
+  "admission": {
+    "difficulty_level": "中等偏上",
+    "avg_score_hunan_physics": 457,
+    "avg_score_hunan_history": 476
+  },
+  "employment": {
+    "primary_industries": [
+      "电力供应",
+      "建筑施工",
+      "交通运输"
+    ],
+    "top_employers": [
+      "国家电网",
+      "中国建筑",
+      "中国铁建"
+    ],
+    "starting_salary_avg": 5200,
+    "further_study_rate": "6.79%"
+  },
+  "evaluation": {
+    "comprehensive_score": 3.28,
+    "advantage": "行业背景深厚，就业渠道稳定",
+    "risk": "转设政策不确定性"
+  }
+}

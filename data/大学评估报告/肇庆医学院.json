@@ -1,0 +1,49 @@
+{
+  "university_name": "肇庆医学院",
+  "short_name": "肇医",
+  "established_year": "1958 (2024年升本)",
+  "location": {
+    "province": "广东省",
+    "city": "肇庆市",
+    "campus": [
+      "新区校区",
+      "鼎湖校区",
+      "端州校区"
+    ]
+  },
+  "academic": {
+    "type": "公办医药类本科",
+    "key_disciplines": [
+      "临床医学",
+      "护理学",
+      "药学"
+    ],
+    "a_plus_count": 0,
+    "academician_count": 0,
+    "master_points": 0
+  },
+  "admission_2024": {
+    "physics_group_min_score": 490,
+    "history_group_min_score": 447,
+    "competitive_index": "中等偏上"
+  },
+  "employment": {
+    "overall_employment_rate": "96.35%",
+    "major_alignment_rate": "极高",
+    "primary_employer_type": "基层医疗卫生机构"
+  },
+  "evaluation": {
+    "comprehensive_score": 2.81,
+    "recommendation_phrase": "大湾区基层医疗人才的务实之选",
+    "strengths": [
+      "行业认可度高",
+      "新区硬件优越",
+      "公办学费低廉"
+    ],
+    "weaknesses": [
+      "科研底子薄",
+      "国际化程度低",
+      "暂无硕士点"
+    ]
+  }
+}

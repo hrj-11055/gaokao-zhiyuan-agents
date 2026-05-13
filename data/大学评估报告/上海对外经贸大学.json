@@ -1,0 +1,60 @@
+{
+  "university_name": "上海对外经贸大学",
+  "short_name": "SUIBE / 上经贸大",
+  "location": {
+    "city": "上海",
+    "districts": [
+      "松江区",
+      "长宁区"
+    ],
+    "city_gdp_2024": "4.72万亿元"
+  },
+  "academic_standing": {
+    "key_disciplines": [
+      "应用经济学",
+      "工商管理",
+      "外国语言文学"
+    ],
+    "wto_chair_program": true,
+    "fourth_round_evaluation": {
+      "B+": [
+        "应用经济学",
+        "工商管理"
+      ],
+      "B": [
+        "外国语言文学"
+      ],
+      "B-": [
+        "统计学"
+      ]
+    }
+  },
+  "admission_competitiveness": {
+    "difficulty_level": "高",
+    "target_student_profile": "务实、英语强、目标明确",
+    "average_percentile_required": "Top 1% - 5% (依据省份不同)"
+  },
+  "career_outcomes": {
+    "major_employers": [
+      "PwC",
+      "EY",
+      "KPMG",
+      "Deloitte",
+      "Big Four Banks"
+    ],
+    "further_study_rate": "34.5% (Total)",
+    "starting_salary_median": 9000,
+    "top_industry": "Financial Services & Professional Consulting"
+  },
+  "quantitative_score": {
+    "overall_score": 4.38,
+    "dimensions": {
+      "academic": 3.8,
+      "employment": 4.7,
+      "location": 4.9,
+      "globalization": 4.6,
+      "student_freedom": 4.0,
+      "brand": 4.3
+    }
+  }
+}

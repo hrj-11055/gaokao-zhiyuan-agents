@@ -1,0 +1,60 @@
+{
+  "university_name": "广东警官学院",
+  "short_name": "广警",
+  "location": {
+    "province": "广东",
+    "city": "广州",
+    "campuses": [
+      "嘉禾校区",
+      "滨江校区"
+    ]
+  },
+  "attributes": {
+    "is_police_college": true,
+    "is_double_first_class": false,
+    "has_master_degree_grant": false,
+    "management_style": "Semi-military"
+  },
+  "academic_strength": {
+    "national_key_majors": [
+      "刑事侦查"
+    ],
+    "provincial_key_majors": [
+      "治安学",
+      "经济犯罪侦查",
+      "网络安全与执法"
+    ],
+    "subject_ranking": "Top in Guangdong Police Education"
+  },
+  "admission_analysis": {
+    "difficulty_level": "High (especially for females)",
+    "gender_ratio_restriction": "Approximately 85:15 (Male:Female)",
+    "special_requirements": [
+      "Political Review",
+      "Physical Test",
+      "Interview"
+    ]
+  },
+  "employment_outcomes": {
+    "primary_exam": "Public Security Joint Examination",
+    "employment_rate_police": ">90%",
+    "major_employers": [
+      "Guangdong Provincial Public Security Department",
+      "Local Public Security Bureaus"
+    ],
+    "average_starting_salary_range": "150,000 - 220,000 CNY (Pearl River Delta)"
+  },
+  "comprehensive_evaluation": {
+    "score": 3.57,
+    "pros": [
+      "High job security",
+      "Strong alumni network in GD",
+      "Practical training"
+    ],
+    "cons": [
+      "Strict management",
+      "Limited academic depth",
+      "Low freedom"
+    ]
+  }
+}

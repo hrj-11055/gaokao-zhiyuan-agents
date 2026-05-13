@@ -1,0 +1,48 @@
+{
+  "university_name": "苏州大学",
+  "short_name": "Soochow University / SUDA",
+  "location": {
+    "province": "江苏",
+    "city": "苏州",
+    "campus_count": 3
+  },
+  "academic_stats": {
+    "double_first_class": true,
+    "a_plus_disciplines": [
+      "特种医学"
+    ],
+    "a_minus_disciplines": [
+      "设计学",
+      "软件工程",
+      "纺织科学与工程",
+      "药学"
+    ],
+    "esi_top_1_permille": 5,
+    "academician_count": 9
+  },
+  "student_quality": {
+    "jiangsu_physics_rank_2024": 12000,
+    "jiangsu_history_rank_2024": 3500,
+    "postgraduate_recommendation_rate": "18.5%"
+  },
+  "employment_stats": {
+    "further_study_total": "45.54%",
+    "domestic_study": "36.46%",
+    "overseas_study": "9.08%",
+    "median_starting_salary": 7200,
+    "top_employer_sectors": [
+      "医疗卫生",
+      "电子信息",
+      "生物医药"
+    ]
+  },
+  "evaluation_scores": {
+    "academic_capital": 4.3,
+    "employment_value": 4.4,
+    "location_advantage": 4.9,
+    "global_vision": 4.1,
+    "student_freedom": 3.9,
+    "brand_asset": 4.2,
+    "overall_weighted_score": 4.37
+  }
+}
