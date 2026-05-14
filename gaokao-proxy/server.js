@@ -366,7 +366,42 @@ app.post('/api/chat/stream', async (req, res) => {
   }
 })
 
-// 静态报告文件
+// 引入 PDF 生成器
+const { generatePdfFromHtml } = require('./lib/pdf-generator')
+
+// 静态报告文件 (拦截 .pdf 并在需要时生成)
+app.get('/reports/:filename', async (req, res, next) => {
+  const { filename } = req.params
+  if (filename.endsWith('.pdf')) {
+    const pdfPath = path.join(REPORTS_DIR, filename)
+    
+    // 如果 PDF 已经存在，则放行给 express.static 处理
+    try {
+      await fs.access(pdfPath)
+      return next()
+    } catch {
+      // PDF 不存在，查找对应的 HTML
+    }
+    
+    const htmlFilename = filename.replace('.pdf', '.html')
+    const htmlPath = path.join(REPORTS_DIR, htmlFilename)
+    
+    try {
+      await fs.access(htmlPath)
+      // HTML 存在，生成 PDF
+      console.log(`Generating PDF for ${htmlFilename}...`)
+      await generatePdfFromHtml(htmlPath, pdfPath)
+      console.log(`PDF generated: ${pdfPath}`)
+      // 生成完毕后放行给 express.static
+      return next()
+    } catch (err) {
+      console.error(`HTML not found or PDF generation failed for ${filename}:`, err.message)
+      // 如果 HTML 也不存在或生成失败，也放行（会报 404）
+      return next()
+    }
+  }
+  next()
+})
 app.use('/reports', express.static(REPORTS_DIR))
 
 // TTS 语音合成接口
@@ -377,7 +412,7 @@ app.post('/api/tts', async (req, res) => {
   }
 
   try {
-    const audioBuffer = await textToSpeech(text.slice(0, 2000)) // 放宽至 2000 字，覆盖长回复
+    const audioBuffer = await textToSpeech(text.slice(0, 1000)) // 调整为 1000 字限制
     res.setHeader('Content-Type', 'audio/mpeg')
     res.send(audioBuffer)
   } catch (err) {
@@ -414,10 +449,18 @@ app.post('/api/chat/feedback', async (req, res) => {
 
 // 报告生成端点
 app.post('/api/report/generate', async (req, res) => {
-  const { userId, profile, questionnaire, conversationId } = req.body || {}
+  const { userId, profile, questionnaire, assessments, conversationId } = req.body || {}
 
   if (!userId || typeof userId !== 'string' || userId.length > 128) {
     return res.status(400).json({ error: 'userId is required' })
+  }
+
+  const questionCount = Object.values(questionnaire || {})
+    .filter(v => v !== '' && !(Array.isArray(v) && v.length === 0)).length
+  const mbtiCompleted = Boolean(assessments?.mbti?.completed)
+  const hollandCompleted = Boolean(assessments?.holland?.completed)
+  if (questionCount < 22 || !mbtiCompleted || !hollandCompleted) {
+    return res.status(400).json({ error: '请先完成全部 3 项测评后再生成综合报告' })
   }
 
   const cooldownKey = `cooldown:report:${userId}`
@@ -443,6 +486,7 @@ app.post('/api/report/generate', async (req, res) => {
     const html = await generateReport({
       profile: profile || {},
       questionnaire: questionnaire || {},
+      assessments: assessments || {},
       conversationId: conversationId || '',
       difyApiUrl: DIFY_API_URL,
       difyApiKey: DIFY_API_KEY,

@@ -2,6 +2,16 @@ import { ref, onMounted } from 'vue'
 import { sendMessageStream } from '../../api/dify.js'
 import { useChatStore } from '../../stores/chat.js'
 import { useUserStore } from '../../stores/user.js'
+import { buildProfileInputs, loadUserProfile } from '../../utils/storage.js'
+
+function getProfileInputsKey(inputs) {
+  return JSON.stringify({
+    province: inputs.province || '',
+    category: inputs.category || '',
+    score: inputs.score || '',
+    rank: inputs.rank || ''
+  })
+}
 
 export function useChat() {
   const chatStore = useChatStore()
@@ -23,6 +33,17 @@ export function useChat() {
   function sendQuery(text, callbacks = {}) {
     lastQuery = text
     const { onScrollToBottom } = callbacks
+    const freshProfile = loadUserProfile()
+    const profileInputs = buildProfileInputs(freshProfile)
+    const profileInputsKey = getProfileInputsKey(profileInputs)
+    userStore.profile = freshProfile
+
+    if (chatStore.conversationId && chatStore.profileInputsKey !== profileInputsKey) {
+      chatStore.conversationId = ''
+    }
+    if (chatStore.profileInputsKey !== profileInputsKey) {
+      chatStore.setProfileInputsKey(profileInputsKey)
+    }
 
     // 添加用户消息
     const lastMsg = chatStore.messages[chatStore.messages.length - 1]
@@ -42,7 +63,7 @@ export function useChat() {
       query: text,
       conversationId: chatStore.conversationId,
       user: userStore.userId,
-      inputs: userStore.profileInputs,
+      inputs: profileInputs,
       onChunk(answerChunk, convId, msgId) {
         // 更新最后一条 AI 消息的内容
         const last = chatStore.messages[chatStore.messages.length - 1]

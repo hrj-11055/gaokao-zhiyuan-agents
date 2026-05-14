@@ -1,5 +1,25 @@
 <template>
   <view class="holland-page">
+    <!-- 介绍页 -->
+    <view v-if="showIntro" class="intro-container">
+      <view class="intro-card">
+        <view class="intro-icon">🎯</view>
+        <text class="intro-title">霍兰德职业兴趣测试</text>
+        <text class="intro-desc">霍兰德职业兴趣测试通过评估你对不同活动的偏好，将你的职业兴趣分为六大类型（RIASEC），帮助你匹配最适合的专业和职业方向。</text>
+        
+        <view class="intro-tips">
+          <text class="tips-title">💡 答题建议：</text>
+          <text class="tips-text">1. 请凭直觉快速选择，尽量不要犹豫。</text>
+          <text class="tips-text">2. 忽略该活动带来的高收入或社会地位，只需考虑是否感兴趣。</text>
+          <text class="tips-text">3. 答案没有好坏对错之分，最真实的你就是最好的你。</text>
+        </view>
+        
+        <button class="start-btn" @click="startTest">开始测试</button>
+      </view>
+    </view>
+
+    <!-- 测试内容 -->
+    <block v-else>
     <!-- 进度条 -->
     <view class="progress-bar-wrap">
       <view class="progress-info">
@@ -38,6 +58,7 @@
       <view v-if="currentIndex < HOLLAND_QUESTIONS.length - 1" class="nav-btn next-btn" :class="{ disabled: answers[currentQuestion.id] === undefined }" @click="next">下一题</view>
       <view v-else class="nav-btn finish-btn" :class="{ disabled: answers[currentQuestion.id] === undefined }" @click="finish">查看结果</view>
     </view>
+    </block>
   </view>
 </template>
 
@@ -47,6 +68,7 @@ import { onShow } from '@dcloudio/uni-app'
 import { HOLLAND_QUESTIONS, calculateHollandCode } from '../../data/holland-questions.js'
 import { loadAssessments, saveHollandProgress, saveHollandResult } from '../../utils/storage.js'
 
+const showIntro = ref(true)
 const currentIndex = ref(0)
 const answers = ref({})
 
@@ -83,6 +105,10 @@ onShow(() => {
   }
 })
 
+function startTest() {
+  showIntro.value = false
+}
+
 function selectOption(optionIndex) {
   answers.value[currentQuestion.value.id] = optionIndex
 
@@ -92,6 +118,13 @@ function selectOption(optionIndex) {
     optionIndex
   }))
   saveHollandProgress(currentIndex.value, answersArray)
+
+  // 自动跳转到下一题
+  if (currentIndex.value < HOLLAND_QUESTIONS.length - 1) {
+    setTimeout(() => {
+      currentIndex.value++
+    }, 300)
+  }
 }
 
 function prev() {
@@ -169,6 +202,91 @@ function submitResult() {
   padding: 32rpx;
   padding-bottom: 180rpx;
   box-sizing: border-box;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64rpx - 180rpx);
+}
+
+.intro-card {
+  background: $bg-white;
+  border-radius: $radius-xl;
+  padding: 60rpx 40rpx;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.intro-icon {
+  font-size: 96rpx;
+  margin-bottom: 32rpx;
+}
+
+.intro-title {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: 24rpx;
+  text-align: center;
+}
+
+.intro-desc {
+  font-size: 28rpx;
+  color: $text-secondary;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 48rpx;
+}
+
+.intro-tips {
+  background: $bg-input;
+  border-radius: $radius-lg;
+  padding: 32rpx;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 60rpx;
+}
+
+.tips-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: $text-primary;
+  margin-bottom: 16rpx;
+  display: block;
+}
+
+.tips-text {
+  font-size: 26rpx;
+  color: $text-secondary;
+  line-height: 1.8;
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.start-btn {
+  width: 100%;
+  height: 88rpx;
+  background: linear-gradient(135deg, $brand-primary, $brand-primary-dark);
+  color: #fff;
+  border-radius: $radius-full;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.start-btn::after {
+  border: none;
+}
+.start-btn:active {
+  opacity: 0.9;
 }
 
 .progress-bar-wrap {

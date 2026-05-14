@@ -35,6 +35,7 @@ class GeminiReportQualityTests(unittest.TestCase):
             "## 模块六：综合评估与量化评分",
             "## 模块七：报考建议",
             "## 模块八：原始数据汇总",
+            "## 模块九：结构化数据导出",
             "## Google 搜索来源",
             body,
         ])
@@ -45,7 +46,7 @@ class GeminiReportQualityTests(unittest.TestCase):
         self.assertEqual(4, run_univ_eval_gemini.count_cjk_chars(text))
 
     def test_short_visible_chinese_report_fails_quality(self):
-        text = self.make_report("短报告" * 1000)
+        text = self.make_report("短报告" * 500)
 
         result = run_univ_eval_gemini.validate_report_text(text)
 
@@ -67,7 +68,7 @@ class GeminiReportQualityTests(unittest.TestCase):
             "city": "广州市",
             "remark": "",
         }
-        short_report = self.make_report("短报告" * 1000)
+        short_report = self.make_report("短报告" * 500)
         expanded_report = self.make_report("合格正文" * 1600)
 
         with tempfile.TemporaryDirectory() as tmp:
@@ -114,7 +115,7 @@ class GeminiReportQualityTests(unittest.TestCase):
             "city": "广州市",
             "remark": "",
         }
-        short_report = self.make_report("短报告" * 1000)
+        short_report = self.make_report("短报告" * 500)
 
         with tempfile.TemporaryDirectory() as tmp:
             output_dir = Path(tmp)

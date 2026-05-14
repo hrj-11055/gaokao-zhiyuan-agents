@@ -159,7 +159,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
-import { loadUserProfile, saveUserProfile, isProfileComplete, loadAssessments, loadQuestionnaire, getCompletedAssessmentsCount } from '../../utils/storage.js'
+import { loadUserProfile, saveUserProfile, isProfileComplete, loadAssessments, loadQuestionnaire } from '../../utils/storage.js'
 
 const provinces = [
   '北京', '天津', '河北', '山西', '内蒙古', '辽宁', '吉林', '黑龙江',
@@ -187,7 +187,13 @@ const allAssessmentsCompleted = computed(() => {
   )
 })
 
-const completedCount = computed(() => getCompletedAssessmentsCount())
+const completedCount = computed(() => {
+  let count = 0
+  if (questionnaireCompleted.value) count++
+  if (assessments.value.mbti.completed) count++
+  if (assessments.value.holland.completed) count++
+  return count
+})
 
 const reportSubtitle = computed(() => {
   if (allAssessmentsCompleted.value) {

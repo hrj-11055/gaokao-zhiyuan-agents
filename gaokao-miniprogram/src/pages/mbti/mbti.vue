@@ -1,5 +1,25 @@
 <template>
   <view class="page">
+    <!-- 介绍页 -->
+    <view v-if="showIntro" class="intro-container">
+      <view class="intro-card">
+        <view class="intro-icon">🧠</view>
+        <text class="intro-title">MBTI 性格测试</text>
+        <text class="intro-desc">本测试旨在帮助你了解自己的性格倾向（如外向/内向、实感/直觉等），从而找到更符合自己性格特质的职业方向。</text>
+        
+        <view class="intro-tips">
+          <text class="tips-title">💡 答题建议：</text>
+          <text class="tips-text">1. 请根据你的第一直觉作答，不要过多犹豫。</text>
+          <text class="tips-text">2. 答案没有对错之分，最真实的你就是最好的你。</text>
+          <text class="tips-text">3. 如果两个选项都符合或都不符合，请选择更倾向的那一个。</text>
+        </view>
+        
+        <button class="start-btn" @click="startTest">开始测试</button>
+      </view>
+    </view>
+
+    <!-- 测试内容 -->
+    <block v-else>
     <!-- 进度条 -->
     <view class="progress-bar-wrap">
       <view class="progress-info">
@@ -57,6 +77,7 @@
         <text class="btn-text">查看结果</text>
       </view>
     </view>
+    </block>
   </view>
 </template>
 
@@ -66,6 +87,7 @@ import { onShow } from '@dcloudio/uni-app'
 import { MBTI_QUESTIONS, calculateMbtiType } from '../../utils/mbti-questions.js'
 import { loadAssessments, saveMbtiProgress, saveMbtiResult } from '../../utils/storage.js'
 
+const showIntro = ref(true)
 const currentIndex = ref(0)
 const answers = ref({})
 
@@ -99,6 +121,10 @@ onShow(() => {
     answers.value = savedAnswers
   }
 })
+
+function startTest() {
+  showIntro.value = false
+}
 
 function getDimensionText(dimension) {
   const texts = {
@@ -190,6 +216,91 @@ function finish() {
   background: $bg-page;
   padding: 24rpx 32rpx 200rpx;
   box-sizing: border-box;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64rpx - 200rpx);
+}
+
+.intro-card {
+  background: $bg-white;
+  border-radius: $radius-xl;
+  padding: 60rpx 40rpx;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.intro-icon {
+  font-size: 96rpx;
+  margin-bottom: 32rpx;
+}
+
+.intro-title {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: 24rpx;
+  text-align: center;
+}
+
+.intro-desc {
+  font-size: 28rpx;
+  color: $text-secondary;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 48rpx;
+}
+
+.intro-tips {
+  background: $bg-input;
+  border-radius: $radius-lg;
+  padding: 32rpx;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 60rpx;
+}
+
+.tips-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: $text-primary;
+  margin-bottom: 16rpx;
+  display: block;
+}
+
+.tips-text {
+  font-size: 26rpx;
+  color: $text-secondary;
+  line-height: 1.8;
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.start-btn {
+  width: 100%;
+  height: 88rpx;
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  color: #fff;
+  border-radius: $radius-full;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.start-btn::after {
+  border: none;
+}
+.start-btn:active {
+  opacity: 0.9;
 }
 
 .progress-bar-wrap {

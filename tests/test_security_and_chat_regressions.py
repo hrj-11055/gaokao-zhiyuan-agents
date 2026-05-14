@@ -26,11 +26,11 @@ class SecurityAndChatRegressionTests(unittest.TestCase):
         self.assertEqual([], sorted(set(offenders)))
 
     def test_chat_error_handler_uses_ref_value_length(self):
-        chat_path = ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "chat.vue"
+        chat_path = ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "useChat.js"
         text = chat_path.read_text(encoding="utf-8")
 
         self.assertNotIn("messages.value[messages.length - 1]", text)
-        self.assertIn("messages.value[messages.value.length - 1]", text)
+        self.assertIn("chatStore.messages[chatStore.messages.length - 1]", text)
 
     def test_miniprogram_api_base_is_build_configurable(self):
         api_path = ROOT / "gaokao-miniprogram" / "src" / "api" / "dify.js"
@@ -38,6 +38,15 @@ class SecurityAndChatRegressionTests(unittest.TestCase):
 
         self.assertIn("import.meta.env.VITE_API_BASE", text)
         self.assertNotIn("const API_BASE = 'http://localhost:3001'", text)
+        self.assertNotIn("aicoming.com.cn", text)
+
+    def test_report_api_base_uses_same_live_proxy(self):
+        report_path = ROOT / "gaokao-miniprogram" / "src" / "pages" / "report" / "report.vue"
+        text = report_path.read_text(encoding="utf-8")
+
+        self.assertIn("import.meta.env.VITE_API_BASE", text)
+        self.assertIn("http://47.113.125.147", text)
+        self.assertNotIn("aicoming.com.cn", text)
 
     def test_chat_bubble_renders_markdown_as_rich_text(self):
         bubble_path = ROOT / "gaokao-miniprogram" / "src" / "components" / "ChatBubble.vue"

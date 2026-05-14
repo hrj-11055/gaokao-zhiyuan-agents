@@ -1,7 +1,7 @@
 // gaokao-miniprogram/src/api/dify.js
 
-// 后端代理地址：本地开发默认 localhost，正式构建用 VITE_API_BASE 注入备案 HTTPS 域名。
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:3001'
+// 后端代理地址：47.113.125.147 当前反代到 gaokao-proxy，支持聊天、报告生成和报告静态访问。
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://47.113.125.147'
 
 /**
  * 持久 UTF-8 解码器
@@ -54,31 +54,30 @@ export class SSEParser {
   }
 
   processBlock(block) {
-    const dataLines = []
     const lines = block.split('\n')
+    let dataText = ''
 
     for (const line of lines) {
       if (line.startsWith('data:')) {
-        dataLines.push(line.slice(5).trimStart())
+        const content = line.slice(5).trimStart()
+        if (content === '[DONE]') continue
+        dataText += (dataText ? '\n' : '') + content
       }
     }
 
-    if (dataLines.length === 0) return
-
-    const dataText = dataLines.join('\n')
-    if (dataText === '[DONE]') return
+    if (!dataText) return
 
     try {
       const data = JSON.parse(dataText)
-      if (data.event === 'message') {
+      if (data.event === 'message' || data.event === 'agent_message') {
         this.onMessage(data)
-      } else if (data.event === 'message_end') {
+      } else if (data.event === 'message_end' || data.event === 'workflow_finished') {
         this.onEnd(data)
       } else if (data.event === 'error') {
         this.onError(data)
       }
-    } catch {
-      // 忽略解析失败的块
+    } catch (e) {
+      console.error('SSE JSON Parse Error:', e, 'Data:', dataText)
     }
   }
 }
@@ -137,7 +136,7 @@ export function sendMessageStream({ query, conversationId, user, inputs = {}, on
       parser.flush()
     },
     fail(err) {
-      onError('网络请求失败，请检查网络后重试')
+      onError(err.errMsg || '网络请求失败，请检查网络后重试')
     }
   })
 

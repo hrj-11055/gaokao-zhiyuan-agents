@@ -1,3 +1,4 @@
+import re
 import subprocess
 import tempfile
 import textwrap
@@ -12,9 +13,10 @@ class SSEParserTests(unittest.TestCase):
     def run_node_parser_test(self, test_body: str):
         source_path = ROOT / "gaokao-miniprogram" / "src" / "api" / "dify.js"
         source = source_path.read_text(encoding="utf-8")
-        source = source.replace(
-            "const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:3001'",
+        source = re.sub(
+            r"const API_BASE = import\.meta\.env\.VITE_API_BASE \|\| '[^']+'",
             "const API_BASE = 'http://localhost:3001'",
+            source,
         )
 
         with tempfile.TemporaryDirectory() as tmp:

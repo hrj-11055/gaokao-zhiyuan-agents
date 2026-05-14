@@ -1,5 +1,25 @@
 <template>
   <view class="page">
+    <!-- 介绍页 -->
+    <view v-if="showIntro" class="intro-container">
+      <view class="intro-card">
+        <view class="intro-icon">📋</view>
+        <text class="intro-title">五环问卷测评</text>
+        <text class="intro-desc">通过 22 道题目的深度评估，全方位了解你的学习风格、学业现状、家庭背景、能力特质和职业期望。</text>
+        
+        <view class="intro-tips">
+          <text class="tips-title">💡 答题建议：</text>
+          <text class="tips-text">1. 请根据你目前的真实情况作答，不要有所顾虑。</text>
+          <text class="tips-text">2. 部分题目可以多选，请仔细阅读题目要求。</text>
+          <text class="tips-text">3. 答题过程中尽量顺从第一直觉，完成所有题目后继续完成其余测评。</text>
+        </view>
+        
+        <button class="start-btn" @click="startTest">开始测试</button>
+      </view>
+    </view>
+
+    <!-- 测试内容 -->
+    <block v-else>
     <!-- 进度条 -->
     <view class="progress-bar-wrap">
       <view class="progress-info">
@@ -54,10 +74,7 @@
       <view v-else class="nav-btn next-btn" @click="next">完成</view>
     </view>
 
-    <!-- 生成报告悬浮按钮 -->
-    <view class="generate-btn" @click="onGenerate">
-      <text class="generate-text">生成报告</text>
-    </view>
+    </block>
   </view>
 </template>
 
@@ -150,6 +167,7 @@ const RING_START_INDEX = (() => {
   return index
 })()
 
+const showIntro = ref(true)
 const currentIndex = ref(0)
 const answers = ref({})
 
@@ -163,6 +181,10 @@ onShow(() => {
   const saved = loadQuestionnaire()
   answers.value = saved.answers || {}
 })
+
+function startTest() {
+  showIntro.value = false
+}
 
 function isSelected(id, opt) {
   const val = answers.value[id]
@@ -202,7 +224,7 @@ function next() {
   if (currentIndex.value < QUESTIONS.length - 1) {
     currentIndex.value++
   } else {
-    onGenerate()
+    finishQuestionnaire()
   }
 }
 
@@ -210,8 +232,28 @@ function goToRing(ringId) {
   currentIndex.value = RING_START_INDEX[ringId]
 }
 
-function onGenerate() {
-  uni.navigateTo({ url: '/pages/report/report' })
+function finishQuestionnaire() {
+  if (completedCount.value < QUESTIONS.length) {
+    uni.showToast({
+      title: `还有 ${QUESTIONS.length - completedCount.value} 题未完成`,
+      icon: 'none'
+    })
+    return
+  }
+
+  uni.showModal({
+    title: '五环问卷已完成',
+    content: '请继续完成 MBTI 和霍兰德测评。三项测评全部完成后，可在首页或我的页面生成综合报告。',
+    confirmText: '去测评中心',
+    cancelText: '返回首页',
+    success: (res) => {
+      if (res.confirm) {
+        uni.switchTab({ url: '/pages/assessments/assessments' })
+      } else {
+        uni.switchTab({ url: '/pages/index/index' })
+      }
+    }
+  })
 }
 </script>
 
@@ -221,6 +263,91 @@ function onGenerate() {
   background: $bg-page;
   padding: 24rpx 32rpx 200rpx;
   box-sizing: border-box;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 48rpx - 200rpx);
+}
+
+.intro-card {
+  background: $bg-white;
+  border-radius: $radius-xl;
+  padding: 60rpx 40rpx;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.intro-icon {
+  font-size: 96rpx;
+  margin-bottom: 32rpx;
+}
+
+.intro-title {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: 24rpx;
+  text-align: center;
+}
+
+.intro-desc {
+  font-size: 28rpx;
+  color: $text-secondary;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 48rpx;
+}
+
+.intro-tips {
+  background: $bg-input;
+  border-radius: $radius-lg;
+  padding: 32rpx;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 60rpx;
+}
+
+.tips-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: $text-primary;
+  margin-bottom: 16rpx;
+  display: block;
+}
+
+.tips-text {
+  font-size: 26rpx;
+  color: $text-secondary;
+  line-height: 1.8;
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.start-btn {
+  width: 100%;
+  height: 88rpx;
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  color: #fff;
+  border-radius: $radius-full;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.start-btn::after {
+  border: none;
+}
+.start-btn:active {
+  opacity: 0.9;
 }
 
 .progress-bar-wrap {
@@ -356,7 +483,7 @@ function onGenerate() {
 
 .footer {
   position: fixed;
-  bottom: calc(120rpx + env(safe-area-inset-bottom));
+  bottom: calc(32rpx + env(safe-area-inset-bottom));
   left: 32rpx;
   right: 32rpx;
   display: flex;
@@ -389,23 +516,4 @@ function onGenerate() {
   opacity: 0.4;
 }
 
-.generate-btn {
-  position: fixed;
-  bottom: calc(32rpx + env(safe-area-inset-bottom));
-  left: 32rpx;
-  right: 32rpx;
-  height: 88rpx;
-  background: linear-gradient(135deg, #7c3aed, #6d28d9);
-  border-radius: $radius-full;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8rpx 24rpx rgba(124, 58, 237, 0.4);
-}
-
-.generate-text {
-  color: #fff;
-  font-size: 32rpx;
-  font-weight: 700;
-}
 </style>

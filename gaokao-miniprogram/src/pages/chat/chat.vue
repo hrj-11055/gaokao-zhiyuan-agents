@@ -27,7 +27,7 @@
           class="retry-bar"
         >
           <text class="retry-hint">回复未完整</text>
-          <view class="retry-btn" @click="onRetry">重新生成</view>
+          <view class="retry-btn" @click="handleRetry">重新生成</view>
         </view>
       </template>
 
@@ -44,12 +44,12 @@
         placeholder-class="input-placeholder"
         :disabled="isStreaming"
         confirm-type="send"
-        @confirm="onSend"
+        @confirm="handleSend"
       />
       <view
         class="send-btn"
         :class="{ 'send-btn-active': inputText.trim() && !isStreaming }"
-        @click="onSend"
+        @click="handleSend"
       >
         <text class="send-icon">↑</text>
       </view>
@@ -58,29 +58,21 @@
 </template>
 
 <script setup>
-import { ref, nextTick } from 'vue'
+import { ref, computed, nextTick } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import ChatBubble from '../../components/ChatBubble.vue'
 import QuickQuestions from '../../components/QuickQuestions.vue'
-import { sendMessageStream } from '../../api/dify.js'
-import { getUserId, loadHistory, saveHistory, appendMessage, loadUserProfile, buildProfileInputs } from '../../utils/storage.js'
+import { useChat } from './useChat.js'
 
 const welcomeMsg = '同学你好！我是峰哥咨询参考，你的 AI 志愿填报助手。有什么想问的？分数、学校、专业，都可以聊 👋'
 
-const messages = ref([])
-const inputText = ref('')
-const isStreaming = ref(false)
 const scrollTop = ref(0)
-const conversationId = ref('')
-
-let currentAbort = null
-let lastQuery = ''
+const { chatStore, inputText, isStreaming, onSend, onRetry } = useChat()
+const messages = computed(() => chatStore.messages)
 
 // 页面显示时恢复历史
 onShow(() => {
-  const history = loadHistory()
-  conversationId.value = history.conversationId
-  messages.value = history.messages
+  chatStore.loadHistory()
 })
 
 // 滚动到底部
@@ -94,89 +86,15 @@ function scrollToBottom() {
 }
 
 // 快捷问题点击
-function onQuickSelect(question) {
+const onQuickSelect = (question) => {
   inputText.value = question
-  onSend()
+  handleSend()
 }
 
-// 发送消息
-function onSend() {
-  const text = inputText.value.trim()
-  if (!text || isStreaming.value) return
-  sendQuery(text)
-}
+// 代理回调
+const handleSend = () => onSend({ onScrollToBottom: scrollToBottom })
+const handleRetry = () => onRetry({ onScrollToBottom: scrollToBottom })
 
-// 重试：移除上一条截断的 AI 消息，重新发送
-function onRetry() {
-  if (!lastQuery || isStreaming.value) return
-  const msgs = messages.value
-  if (msgs.length > 0 && msgs[msgs.length - 1].role === 'ai') {
-    messages.value = msgs.slice(0, -1)
-  }
-  sendQuery(lastQuery)
-}
-
-function sendQuery(text) {
-  lastQuery = text
-
-  // 添加用户消息（重试时不重复添加）
-  const lastMsg = messages.value[messages.value.length - 1]
-  if (!lastMsg || lastMsg.role !== 'user' || lastMsg.content !== text) {
-    messages.value = appendMessage(conversationId.value, { role: 'user', content: text })
-    inputText.value = ''
-  }
-  scrollToBottom()
-
-  // 添加空的 AI 消息占位
-  messages.value = [...messages.value, { role: 'ai', content: '', timestamp: Date.now() }]
-  isStreaming.value = true
-  scrollToBottom()
-
-  currentAbort = sendMessageStream({
-    query: text,
-    conversationId: conversationId.value,
-    user: getUserId(),
-    inputs: buildProfileInputs(loadUserProfile()),
-    onChunk(answerChunk, convId, msgId) {
-      const last = messages.value[messages.value.length - 1]
-      if (last && last.role === 'ai') {
-        last.content += answerChunk
-        if (msgId) last.messageId = msgId
-        messages.value = [...messages.value]
-      }
-      if (convId && !conversationId.value) {
-        conversationId.value = convId
-      }
-    },
-    onEnd({ conversationId: convId, messageId: msgId }) {
-      isStreaming.value = false
-      if (convId) conversationId.value = convId
-      const last = messages.value[messages.value.length - 1]
-      if (last && last.role === 'ai' && msgId) {
-        last.messageId = msgId
-      }
-      const msgs = messages.value.filter(m => m.content.length > 0)
-      saveHistory(conversationId.value, msgs)
-      scrollToBottom()
-    },
-    onError(errMsg) {
-      isStreaming.value = false
-      const last = messages.value[messages.value.length - 1]
-      if (!last || last.role !== 'ai') return
-
-      if (last.content.length > 0) {
-        // 流中途截断：保留已有内容，标记为可重试
-        last.truncated = true
-        messages.value = [...messages.value]
-      } else {
-        // 未收到任何内容就失败：显示错误文字
-        last.content = errMsg || '出了点问题，请稍后重试'
-        messages.value = [...messages.value]
-      }
-      scrollToBottom()
-    }
-  })
-}
 </script>
 
 <style lang="scss" scoped>

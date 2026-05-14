@@ -148,19 +148,13 @@ function getStatusText(type) {
 }
 
 function goQuestionnaire() {
-  if (assessments.value.questionnaire.completedCount >= 22) {
-    // 已完成，跳转到结果页
-    uni.navigateTo({ url: '/pages/questionnaire/result' })
-  } else {
-    // 未完成，跳转到问卷页
-    uni.navigateTo({ url: '/pages/questionnaire/questionnaire' })
-  }
+  uni.navigateTo({ url: '/pages/questionnaire/questionnaire' })
 }
 
 function goMbti() {
   if (assessments.value.mbti.completed) {
     // 已完成，跳转到结果页
-    uni.navigateTo({ url: '/pages/mbti/result' })
+    uni.navigateTo({ url: '/pages/mbti/mbti-result' })
   } else {
     // 未完成，跳转到测评页
     uni.navigateTo({ url: '/pages/mbti/mbti' })
@@ -170,7 +164,7 @@ function goMbti() {
 function goHolland() {
   if (assessments.value.holland.completed) {
     // 已完成，跳转到结果页
-    uni.navigateTo({ url: '/pages/holland/result' })
+    uni.navigateTo({ url: '/pages/holland/holland-result' })
   } else {
     // 未完成，跳转到测评页
     uni.navigateTo({ url: '/pages/holland/holland' })

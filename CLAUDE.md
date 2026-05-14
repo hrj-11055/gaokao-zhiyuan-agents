@@ -102,7 +102,7 @@ UniApp 小程序（Vue 3 + Vite + Sass）→ 编译为微信小程序
 ├── src/components/         ChatBubble、QuickQuestions
 ├── src/utils/storage.js    聊天记录持久化 + 用户 ID
         │
-        ├── gaokao-proxy（Express，端口 3001）
+        ├── gaokao-proxy（Express，端口 3001；本地代码包含报告接口）
         │   ├── POST /api/chat             阻塞式
         │   ├── POST /api/chat/stream      SSE 流式转发
         │   ├── POST /api/report/generate  综合报告生成（DeepSeek）
@@ -110,19 +110,63 @@ UniApp 小程序（Vue 3 + Vite + Sass）→ 编译为微信小程序
         │   ├── GET  /api/health           健康检查
         │   └── 限流 / CORS / Token 鉴权 / 超时控制 / Redis 冷却
         │
-        └── 阿里云 2C4G 服务器（8.135.37.159）
-            ├── Dify 社区版 v1.13.3（Docker）— Chatflow + RAG
-            ├── PostgreSQL — 分数线结构化数据
-            ├── Flask API（gaokao-api）— 分数查询接口
-            └── Nginx + HTTPS（aicoming.cn）
-                    │
-                    ├── DeepSeek-V3（主力对话，Dify 插件）
-                    └── 智谱 / 其他（备选模型，Dify 插件）
+        ├── 腾讯云服务器（159.75.110.157）
+        │   ├── Dify 社区版 v1.13.3（Docker）— Chatflow + RAG
+        │   ├── PostgreSQL / Redis / pgvector — Dify 数据层
+        │   ├── gaokao-api 容器 — 分数查询接口（5001->5000）
+        │   └── DeepSeek / 智谱插件
+        │
+        └── 阿里云服务器（47.113.125.147）
+            ├── gaokao-proxy（PM2，端口 3001）
+            ├── Nginx 反代 /api/chat、/api/report、/reports
+            └── 综合报告 HTML 静态托管
 ```
 
 - **对话传输**：小程序 `wx.request({ enableChunked: true })` → gaokao-proxy → Dify API（SSE），手动解析 ArrayBuffer
 - **小程序配置**：WeChat AppID `wx52fc7943bf6e76aa`，环境变量 `VITE_API_BASE` 控制代理地址（默认 `http://localhost:3001`）
 - **数据源**：掌上高考 API（`api.zjzw.cn`）、教育部公开数据
+
+### 线上接口真实状态（2026-05-14 实测）
+
+当前 `gaokao-miniprogram/.env` 和代码默认值都指向：
+
+```bash
+VITE_API_BASE=http://47.113.125.147
+```
+
+47 服务器是小程序唯一 API Base，已通过 Nginx 暴露当前 `gaokao-proxy`，接口状态如下：
+
+```bash
+GET  http://47.113.125.147/api/health          # 200 {"status":"ok"}
+POST http://47.113.125.147/api/chat            # 200，聊天代理可用
+POST http://47.113.125.147/api/report/generate # 200，返回 http://47.113.125.147/reports/<file>.html
+GET  http://47.113.125.147/reports/<file>.html # 200，报告 HTML 可访问
+```
+
+159 服务器是 Dify/数据服务器，不是小程序 API Base：
+
+```bash
+GET  http://159.75.110.157:8080                # Dify 控制台入口
+HEAD http://159.75.110.157/v1                  # X-Version: 1.13.3, X-Env: PRODUCTION
+ssh -i /Users/MarkHuang/.ssh/gaokao-new_ed25519 ubuntu@159.75.110.157
+```
+
+因此报告页出现“生成失败 / 服务暂时不可用”时，先确认小程序是否仍编译到了错误的 `VITE_API_BASE=http://159.75.110.157`。当前必须使用 `VITE_API_BASE=http://47.113.125.147`。本地 `gaokao-proxy/server.js` 和 47 服务器 `/opt/gaokao-proxy/server.js` 已有报告接口，并配置了 `DIFY_API_URL=http://159.75.110.157`、`DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL`、`REPORT_BASE_URL`、`REPORTS_DIR` 等环境变量。
+
+`47.113.125.147` 的真实状态（使用 `/Users/MarkHuang/Downloads/mark123-.pem` 实测）：
+
+```bash
+ssh -i /Users/MarkHuang/Downloads/mark123-.pem root@47.113.125.147 # 可登录
+```
+
+- 服务器内运行 `/opt/gaokao-proxy/server.js`，PM2 进程名 `gaokao-proxy`，监听 `3001`。
+- `/opt/gaokao-proxy/.env` 中 `DIFY_API_URL=http://159.75.110.157`、`PORT=3001`、`REPORT_BASE_URL=http://47.113.125.147`、`DIFY_API_KEY`、`DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL`、`REPORTS_DIR` 均已设置。
+- 服务器本机 `GET http://127.0.0.1:3001/api/health` 返回 `200 {"status":"ok"}`。
+- 服务器本机 `POST http://127.0.0.1:3001/api/report/generate` 可返回报告 URL，例如 `http://aicoming.com.cn/reports/debug-1778672764911.html`。
+- 2026-05-13 已修正公网 Nginx：`server_name 47.113.125.147` 下 `/api/health`、`/api/chat`、`/api/report`、`/reports` 反代到 `127.0.0.1:3001`；原通用 `/api/` 仍保留给 3002。
+- 2026-05-13 已将 `/opt/gaokao-proxy/.env` 的 `REPORT_BASE_URL` 改为 `http://47.113.125.147` 并重启 PM2，报告接口现在返回 IP 链接而不是被 ICP 拦截的 `aicoming.com.cn` 链接。
+- 2026-05-14 已确认 47 本机 `POST http://127.0.0.1:3001/api/chat` 返回 Dify `advanced-chat` 响应，说明 47 的 proxy 当前实际连到 159 Dify。
+- 2026-05-14 已确认 159 上 Dify Docker 栈运行，`curl -I http://159.75.110.157/v1` 返回 `X-Version: 1.13.3`，并且 `gaokao-api` 容器暴露 `0.0.0.0:5001->5000`。从 159 本机 `curl http://127.0.0.1:5001/api/health` 返回 `{"records":35978,"status":"ok"}`；如 47 到分数 API 异常，优先检查 47 `.env` 中 `SCORE_API_URL` 和 159 端口暴露，而不是默认相信当前 `:5000` 配置。
 
 ### 小程序开发命令
 
@@ -206,6 +250,8 @@ ssh ubuntu@159.75.110.157  # Dify 服务器（腾讯云），PostgreSQL + Flask 
 
 Dify 控制台：`http://159.75.110.157:8080`。插件仅保留 deepseek + zhipuai。
 
+注意：`root@47.113.125.147` 使用 `/Users/MarkHuang/Downloads/mark123-.pem` 可登录。`ubuntu@159.75.110.157` 使用 `/Users/MarkHuang/.ssh/gaokao-new_ed25519` 可登录；2026-05-14 已用该 key 确认 Dify Docker 栈和 `gaokao-api` 容器运行。
+
 ## 报告生成功能
 
 ```bash
@@ -213,6 +259,8 @@ Dify 控制台：`http://159.75.110.157:8080`。插件仅保留 deepseek + zhipu
 POST /api/report/generate  # 生成 HTML 报告，返回可分享链接
 GET  /reports/:filename    # 静态托管生成的报告文件
 ```
+
+部署注意：该接口已确认在 `47.113.125.147` 的 `/opt/gaokao-proxy` 内部和公网 IP 路由上可用。修改小程序报告页前，先用 `curl -X POST "$VITE_API_BASE/api/report/generate"` 验证公网目标是否已返回非 404。
 
 报告生成使用 `lib/report-builder.js`，数据源：
 - 个人信息（`profile`）：省份、科目、分数、位次

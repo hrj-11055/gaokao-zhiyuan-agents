@@ -1,5 +1,7 @@
 # 峰哥报考参谋 — MVP 对话页设计文档
 
+> Historical snapshot. Host facts in this file may be stale. Current live chain: mini program -> `47.113.125.147` gaokao-proxy -> `159.75.110.157` Dify. See `docs/deployment/current-live-chain.md`.
+
 > 日期：2026-04-27 | 状态：待实施
 > 产品：峰哥报考参谋（微信小程序）
 
@@ -24,7 +26,7 @@ MVP 阶段只实现 **首页 + AI 对话页**，不包含测评填表和综合�
 |----|------|------|
 | 前端 | UniApp（Vue 3） | 后续可扩展到 H5 |
 | 后端 | Node.js Express 代理 | 保护 API Key，转发 SSE |
-| AI | Dify 社区版 + DeepSeek | 已部署在 8.135.37.159 |
+| AI | Dify 社区版 + DeepSeek | 当前部署在 159.75.110.157 |
 | 部署 | Nginx HTTPS + Node | 已有备案域名 |
 
 ---
@@ -98,7 +100,7 @@ MVP 阶段只实现 **首页 + AI 对话页**，不包含测评填表和综合�
 └──────────────┬──────────────────────┘
                │ HTTPS
 ┌──────────────▼──────────────────────┐
-│   Node.js 代理（部署在 8.135.37.159）│
+│   Node.js 代理（部署在 47.113.125.147）│
 │                                     │
 │   /api/chat          → 转发到 Dify  │
 │   /api/chat/stream   → SSE 转发     │
@@ -219,7 +221,7 @@ Node: 注入 API Key → 转发到 Dify → pipe SSE 响应
 
 > 具体域名待确认。部署流程如下：
 
-1. 将备案域名解析到 8.135.37.159
+1. 将备案域名解析到当前 gaokao-proxy 入口（47.113.125.147 或其备案域名）
 2. Nginx 配置 HTTPS（Let's Encrypt 证书）
 3. Nginx 反向代理 `/api/*` 到 Node 代理端口
 4. 微信小程序后台配置合法域名（request 合法域名）

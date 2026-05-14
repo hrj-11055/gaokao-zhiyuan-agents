@@ -80,25 +80,21 @@ let audioContext = null
 // 语音播放
 async function onToggleAudio() {
   if (isPlaying.value) {
-    console.log('[TTS] Stopping playback')
     stopAudio()
     return
   }
 
   // 1. 优先使用缓存
   if (localAudioPath.value) {
-    console.log('[TTS] Playing from cache:', localAudioPath.value)
     playLocalFile(localAudioPath.value)
     return
   }
 
   const cleanText = props.content.replace(/[#*`]/g, '').slice(0, 500)
-  console.log('[TTS] Starting synthesis for:', cleanText.slice(0, 20) + '...')
 
   try {
     uni.showLoading({ title: '语音合成中...', mask: true })
     const arrayBuffer = await fetchTTSAudio(cleanText)
-    console.log('[TTS] Received ArrayBuffer, size:', arrayBuffer.byteLength)
     uni.hideLoading()
 
     if (arrayBuffer.byteLength < 100) {
@@ -109,7 +105,6 @@ async function onToggleAudio() {
     const filePath = `${wx.env.USER_DATA_PATH}/tts_${props.messageId || Date.now()}.mp3`
     
     fs.writeFileSync(filePath, arrayBuffer, 'binary')
-    console.log('[TTS] Saved to cache:', filePath)
     
     localAudioPath.value = filePath // 存入缓存
     playLocalFile(filePath)
@@ -130,11 +125,9 @@ function playLocalFile(path) {
   audioContext.src = path
   
   audioContext.onPlay(() => { 
-    console.log('[TTS] Audio playing')
     isPlaying.value = true 
   })
   audioContext.onEnded(() => { 
-    console.log('[TTS] Audio ended')
     isPlaying.value = false 
   })
   audioContext.onError((res) => {
@@ -170,7 +163,6 @@ async function onFeedback(val) {
   
   // 先更新 UI 提升响应感
   feedback.value = val
-  console.log('[Feedback] User rated:', val, 'MsgID:', props.messageId)
   
   try {
     const success = await sendFeedback({

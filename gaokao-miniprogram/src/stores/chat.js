@@ -6,7 +6,8 @@ export const useChatStore = defineStore('chat', {
   state: () => ({
     conversationId: '',
     messages: [],
-    updatedAt: 0
+    updatedAt: 0,
+    profileInputsKey: ''
   }),
   
   actions: {
@@ -18,6 +19,7 @@ export const useChatStore = defineStore('chat', {
           this.conversationId = parsed.conversationId || ''
           this.messages = parsed.messages || []
           this.updatedAt = parsed.updatedAt || 0
+          this.profileInputsKey = parsed.profileInputsKey || ''
         } catch {
           this.clearHistory()
         }
@@ -28,7 +30,8 @@ export const useChatStore = defineStore('chat', {
       const data = JSON.stringify({
         conversationId: this.conversationId,
         messages: this.messages,
-        updatedAt: Date.now()
+        updatedAt: Date.now(),
+        profileInputsKey: this.profileInputsKey
       })
       uni.setStorageSync(STORAGE_KEY, data)
     },
@@ -43,10 +46,16 @@ export const useChatStore = defineStore('chat', {
       this.saveHistory()
     },
 
+    setProfileInputsKey(key) {
+      this.profileInputsKey = key
+      this.saveHistory()
+    },
+
     clearHistory() {
       this.conversationId = ''
       this.messages = []
       this.updatedAt = 0
+      this.profileInputsKey = ''
       uni.removeStorageSync(STORAGE_KEY)
     }
   }

@@ -3,6 +3,7 @@
 const STORAGE_KEY = 'chat_history'
 const USER_ID_KEY = 'user_id'
 const USER_PROFILE_KEY = 'user_profile'
+const REPORT_KEY = 'user_report'
 
 /**
  * 获取或创建用户 ID（本地生成，无需微信登录）
@@ -64,6 +65,20 @@ export function appendMessage(conversationId, message) {
  */
 export function clearHistory() {
   uni.removeStorageSync(STORAGE_KEY)
+}
+
+/**
+ * 清空本地保存的用户数据。
+ */
+export function clearAllLocalData() {
+  [
+    STORAGE_KEY,
+    USER_ID_KEY,
+    USER_PROFILE_KEY,
+    QUESTIONNAIRE_KEY,
+    ASSESSMENTS_KEY,
+    REPORT_KEY
+  ].forEach((key) => uni.removeStorageSync(key))
 }
 
 function toIntOrEmpty(value) {
@@ -147,6 +162,15 @@ export function buildProfileInputs(profile) {
 }
 
 const QUESTIONNAIRE_KEY = 'questionnaire'
+const ASSESSMENTS_KEY = 'assessments'
+
+function normalizeQuestionnaire(questionnaire = {}) {
+  return {
+    answers: typeof questionnaire.answers === 'object' && questionnaire.answers !== null ? questionnaire.answers : {},
+    completedCount: Number(questionnaire.completedCount) || 0,
+    updatedAt: questionnaire.updatedAt || 0
+  }
+}
 
 /**
  * 保存问卷草稿（随时调用，允许部分填写）
@@ -154,11 +178,18 @@ const QUESTIONNAIRE_KEY = 'questionnaire'
  */
 export function saveQuestionnaire(answers) {
   const completed = Object.values(answers).filter(v => v !== '' && !(Array.isArray(v) && v.length === 0)).length
-  uni.setStorageSync(QUESTIONNAIRE_KEY, JSON.stringify({
+  const questionnaire = {
     answers,
     completedCount: completed,
     updatedAt: Date.now()
-  }))
+  }
+  uni.setStorageSync(QUESTIONNAIRE_KEY, JSON.stringify(questionnaire))
+
+  const assessments = loadAssessments()
+  saveAssessments({
+    ...assessments,
+    questionnaire
+  })
 }
 
 /**
@@ -169,15 +200,13 @@ export function loadQuestionnaire() {
   const data = uni.getStorageSync(QUESTIONNAIRE_KEY)
   if (!data) return { answers: {}, completedCount: 0, updatedAt: 0 }
   try {
-    return JSON.parse(data)
+    return normalizeQuestionnaire(JSON.parse(data))
   } catch {
     return { answers: {}, completedCount: 0, updatedAt: 0 }
   }
 }
 
 // ==================== 测评模块存储 ====================
-
-const ASSESSMENTS_KEY = 'assessments'
 
 /**
  * 规范化 MBTI 测评数据
@@ -230,10 +259,7 @@ function normalizeAssessments(data = {}) {
   return {
     mbti: normalizeMbti(data.mbti),
     holland: normalizeHolland(data.holland),
-    questionnaire: {
-      answers: typeof data.questionnaire?.answers === 'object' ? data.questionnaire.answers : {},
-      completedCount: Number(data.questionnaire?.completedCount) || 0
-    },
+    questionnaire: normalizeQuestionnaire(data.questionnaire),
     updatedAt: data.updatedAt || 0
   }
 }
@@ -253,14 +279,19 @@ export function saveAssessments(assessments) {
  * @returns {object} 规范化后的测评数据
  */
 export function loadAssessments() {
+  const questionnaire = loadQuestionnaire()
   const data = uni.getStorageSync(ASSESSMENTS_KEY)
   if (!data) {
-    return normalizeAssessments({ updatedAt: 0 })
+    return normalizeAssessments({ questionnaire, updatedAt: 0 })
   }
   try {
-    return normalizeAssessments(JSON.parse(data))
+    const assessments = normalizeAssessments(JSON.parse(data))
+    if (questionnaire.completedCount > assessments.questionnaire.completedCount) {
+      assessments.questionnaire = questionnaire
+    }
+    return assessments
   } catch {
-    return normalizeAssessments({ updatedAt: 0 })
+    return normalizeAssessments({ questionnaire, updatedAt: 0 })
   }
 }
 

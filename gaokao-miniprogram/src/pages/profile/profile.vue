@@ -85,7 +85,12 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
-import { loadAssessments, loadQuestionnaire, getCompletedAssessmentsCount } from '../../utils/storage.js'
+import {
+  clearAllLocalData,
+  loadAssessments,
+  loadQuestionnaire,
+  getCompletedAssessmentsCount
+} from '../../utils/storage.js'
 
 const assessments = ref({
   mbti: { completed: false, type: '', completedAt: 0 },
@@ -166,7 +171,7 @@ function goQuestionnaire() {
 
 function goMbti() {
   if (isMbtiComplete.value) {
-    uni.navigateTo({ url: '/pages/mbti/result' })
+    uni.navigateTo({ url: '/pages/mbti/mbti-result' })
   } else {
     uni.navigateTo({ url: '/pages/mbti/mbti' })
   }
@@ -174,7 +179,7 @@ function goMbti() {
 
 function goHolland() {
   if (isHollandComplete.value) {
-    uni.navigateTo({ url: '/pages/holland/result' })
+    uni.navigateTo({ url: '/pages/holland/holland-result' })
   } else {
     uni.navigateTo({ url: '/pages/holland/holland' })
   }
@@ -188,10 +193,11 @@ function clearData() {
     confirmColor: '#F97316',
     success: (res) => {
       if (res.confirm) {
-        // TODO: 实现清除数据逻辑
+        clearAllLocalData()
+        loadData()
         uni.showToast({
-          title: '功能开发中',
-          icon: 'none'
+          title: '已清除',
+          icon: 'success'
         })
       }
     }

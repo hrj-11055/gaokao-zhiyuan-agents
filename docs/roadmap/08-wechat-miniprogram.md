@@ -11,7 +11,7 @@
 ### 架构
 
 ```
-微信小程序 → 云开发/自有后端 → Dify API（http://8.135.37.159:8080）
+微信小程序 → gaokao-proxy（http://47.113.125.147）→ Dify API（http://159.75.110.157）
 ```
 
 ### 技术选型
@@ -20,7 +20,7 @@
 |----|------|------|
 | 前端 | 微信小程序原生 / UniApp | 推荐 UniApp，方便后续扩展到 H5 |
 | 后端 | Dify API 直连 | 小程序直接调用 Dify Chat API |
-| 部署 | 服务器 8.135.37.159 | 已有 Dify 实例 |
+| 部署 | Dify 服务器 159.75.110.157；gaokao-proxy 服务器 47.113.125.147 | 当前线上拆分部署 |
 
 ### 小程序核心页面
 
@@ -33,7 +33,7 @@
 ```javascript
 // 小程序中调用 Dify Chat API
 const response = await wx.request({
-  url: 'http://8.135.37.159:8080/v1/chat-messages',
+  url: 'http://47.113.125.147/api/chat/stream',
   method: 'POST',
   header: {
     'Authorization': 'Bearer app-xxx',
@@ -51,7 +51,7 @@ const response = await wx.request({
 
 ### 关键注意点
 
-1. **域名备案**：小程序要求后端域名已备案。8.135.37.159 是阿里云服务器，需要：
+1. **域名备案**：小程序要求后端域名已备案。当前小程序后端入口是 `47.113.125.147` 的 `gaokao-proxy`，需要：
    - 绑定已备案域名
    - 在小程序后台配置合法域名
    - 或使用微信云开发做中转

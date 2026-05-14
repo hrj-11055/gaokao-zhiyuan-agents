@@ -15,6 +15,7 @@
       <view class="success-icon">📊</view>
       <text class="state-title">报告已生成</text>
       <text class="state-sub">{{ sourceDesc }}</text>
+      <text class="state-time" v-if="reportStore.generatedAt">生成时间：{{ formatTime(reportStore.generatedAt) }}</text>
 
       <view class="divider" />
 
@@ -26,9 +27,13 @@
         <text class="content-item">✓ 综合志愿方案</text>
       </view>
 
-      <view class="primary-btn" @click="copyLink">复制报告链接</view>
-      <view class="secondary-btn" @click="openInBrowser">在浏览器中查看</view>
-      <text class="hint-text">链接长期有效，可转发给家长查看</text>
+      <view class="primary-btn" @click="openInBrowser">查看报告</view>
+      <view class="secondary-btn" @click="downloadPdf">下载 PDF</view>
+      <view class="secondary-btn" @click="copyLink">复制链接给家长</view>
+      
+      <view class="regenerate-text" @click="generate(true)">
+        <text>重新生成报告 (将消耗 AI 额度)</text>
+      </view>
     </view>
 
     <!-- 失败 -->
@@ -36,51 +41,87 @@
       <view class="error-icon">⚠️</view>
       <text class="state-title">生成失败</text>
       <text class="state-sub">{{ errorMsg }}</text>
-      <view class="primary-btn" @click="generate">重试</view>
+      <view class="primary-btn" @click="generate(true)">重试</view>
     </view>
   </view>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { loadUserProfile, loadQuestionnaire, loadHistory, getUserId } from '../../utils/storage.js'
+import { useUserStore } from '../../stores/user.js'
+import { useChatStore } from '../../stores/chat.js'
+import { useAssessmentStore } from '../../stores/assessment.js'
+import { useReportStore } from '../../stores/report.js'
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:3001'
+const API_BASE = import.meta.env.VITE_API_BASE || 'http://47.113.125.147'
 
 const status = ref('loading')
-const reportUrl = ref('')
 const errorMsg = ref('')
 
+const userStore = useUserStore()
+const chatStore = useChatStore()
+const assessmentStore = useAssessmentStore()
+const reportStore = useReportStore()
+
 const sourceDesc = computed(() => {
-  const { completedCount } = loadQuestionnaire()
-  const { conversationId } = loadHistory()
+  const completedCount = assessmentStore.questionnaire?.completedCount || 0
+  const conversationId = chatStore.conversationId
   const parts = []
   if (completedCount > 0) parts.push(`${completedCount} 道问卷`)
+  if (assessmentStore.mbti?.completed && assessmentStore.mbti?.type) parts.push(`MBTI ${assessmentStore.mbti.type}`)
+  if (assessmentStore.holland?.completed && assessmentStore.holland?.code) parts.push(`霍兰德 ${assessmentStore.holland.code}`)
   if (conversationId) parts.push('AI 对话记录')
   return parts.length > 0 ? `基于 ${parts.join(' + ')} 生成` : '基于考生基本信息生成'
 })
 
 onMounted(() => {
-  generate()
+  userStore.loadProfile()
+  if (!userStore.userId) userStore.initUserId()
+  chatStore.loadHistory()
+  assessmentStore.loadAll()
+  reportStore.loadReport()
+
+  if (!assessmentStore.isAllCompleted) {
+    status.value = 'error'
+    errorMsg.value = `请先完成全部 3 项测评（当前 ${assessmentStore.completedCount}/3）`
+    return
+  }
+
+  if (reportStore.url) {
+    status.value = 'done'
+  } else {
+    generate()
+  }
 })
 
-async function generate() {
+async function generate(force = false) {
+  if (!assessmentStore.isAllCompleted) {
+    status.value = 'error'
+    errorMsg.value = `请先完成全部 3 项测评（当前 ${assessmentStore.completedCount}/3）`
+    return
+  }
+
+  if (!force && reportStore.url) {
+    status.value = 'done'
+    return
+  }
+  
   status.value = 'loading'
   errorMsg.value = ''
-
-  const profile = loadUserProfile()
-  const { answers } = loadQuestionnaire()
-  const { conversationId } = loadHistory()
 
   try {
     const res = await uni.request({
       url: `${API_BASE}/api/report/generate`,
       method: 'POST',
       data: {
-        userId: getUserId(),
-        profile,
-        questionnaire: answers || {},
-        conversationId: conversationId || '',
+        userId: userStore.userId,
+        profile: userStore.profile,
+        questionnaire: assessmentStore.questionnaire?.answers || {},
+        assessments: {
+          mbti: assessmentStore.mbti,
+          holland: assessmentStore.holland,
+        },
+        conversationId: chatStore.conversationId || '',
       },
       header: { 'Content-Type': 'application/json' },
       timeout: 120000,
@@ -90,25 +131,62 @@ async function generate() {
       throw new Error(res.data?.error || '服务暂时不可用')
     }
 
-    reportUrl.value = res.data.url
+    reportStore.saveReport(res.data.url)
     status.value = 'done'
   } catch (err) {
     status.value = 'error'
-    errorMsg.value = err.message || '网络请求失败，请检查网络后重试'
+    errorMsg.value = err.message || err.errMsg || '网络请求失败，请检查网络后重试'
   }
 }
 
 function copyLink() {
   uni.setClipboardData({
-    data: reportUrl.value,
+    data: reportStore.url,
     success: () => uni.showToast({ title: '链接已复制', icon: 'success' })
   })
 }
 
 function openInBrowser() {
   uni.navigateTo({
-    url: `/pages/report-view/report-view?url=${encodeURIComponent(reportUrl.value)}`
+    url: `/pages/report-view/report-view?url=${encodeURIComponent(reportStore.url)}`
   })
+}
+
+function downloadPdf() {
+  if (!reportStore.url) return
+  
+  uni.showLoading({ title: 'PDF 生成中...' })
+  const pdfUrl = reportStore.url.replace('.html', '.pdf')
+  
+  uni.downloadFile({
+    url: pdfUrl,
+    success: (res) => {
+      if (res.statusCode === 200) {
+        uni.openDocument({
+          filePath: res.tempFilePath,
+          showMenu: true,
+          success: () => uni.hideLoading(),
+          fail: (err) => {
+            uni.hideLoading()
+            uni.showToast({ title: '打开 PDF 失败', icon: 'none' })
+          }
+        })
+      } else {
+        uni.hideLoading()
+        uni.showToast({ title: '下载失败，请稍后重试', icon: 'none' })
+      }
+    },
+    fail: () => {
+      uni.hideLoading()
+      uni.showToast({ title: '网络请求失败', icon: 'none' })
+    }
+  })
+}
+
+function formatTime(ts) {
+  if (!ts) return ''
+  const date = new Date(ts)
+  return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')} ${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`
 }
 </script>
 
@@ -150,6 +228,13 @@ function openInBrowser() {
   font-size: 26rpx;
   color: $text-muted;
   text-align: center;
+  margin-bottom: 8rpx;
+}
+
+.state-time {
+  font-size: 24rpx;
+  color: #9CA3AF;
+  text-align: center;
   margin-bottom: 32rpx;
 }
 
@@ -159,6 +244,7 @@ function openInBrowser() {
   background: $border-light;
   border-radius: $radius-full;
   overflow: hidden;
+  margin-top: 24rpx;
 }
 
 .loading-fill {
@@ -223,9 +309,11 @@ function openInBrowser() {
   margin-bottom: 24rpx;
 }
 
-.hint-text {
-  font-size: 24rpx;
-  color: $text-muted;
-  text-align: center;
+.regenerate-text {
+  font-size: 26rpx;
+  color: #9CA3AF;
+  text-decoration: underline;
+  margin-top: 16rpx;
+  padding: 10rpx;
 }
 </style>

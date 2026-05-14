@@ -1,3 +1,4 @@
+import re
 import subprocess
 import tempfile
 import textwrap
@@ -72,9 +73,10 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
 
     def test_dify_stream_request_includes_profile_inputs(self):
         source = (ROOT / "gaokao-miniprogram" / "src" / "api" / "dify.js").read_text(encoding="utf-8")
-        source = source.replace(
-            "const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:3001'",
+        source = re.sub(
+            r"const API_BASE = import\.meta\.env\.VITE_API_BASE \|\| '[^']+'",
             "const API_BASE = 'http://localhost:3001'",
+            source,
         )
 
         self.run_node_test(
@@ -110,6 +112,25 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
             })
             """,
         )
+
+    def test_chat_send_uses_fresh_stored_profile_inputs(self):
+        text = (ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "useChat.js").read_text(encoding="utf-8")
+
+        self.assertIn("loadUserProfile", text)
+        self.assertIn("buildProfileInputs", text)
+        self.assertIn("const freshProfile = loadUserProfile()", text)
+        self.assertIn("const profileInputs = buildProfileInputs(freshProfile)", text)
+        self.assertIn("inputs: profileInputs", text)
+
+    def test_chat_resets_dify_conversation_when_profile_inputs_change(self):
+        chat_store = (ROOT / "gaokao-miniprogram" / "src" / "stores" / "chat.js").read_text(encoding="utf-8")
+        use_chat = (ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "useChat.js").read_text(encoding="utf-8")
+
+        self.assertIn("profileInputsKey", chat_store)
+        self.assertIn("setProfileInputsKey", chat_store)
+        self.assertIn("const profileInputsKey = getProfileInputsKey(profileInputs)", use_chat)
+        self.assertIn("chatStore.conversationId = ''", use_chat)
+        self.assertIn("chatStore.setProfileInputsKey(profileInputsKey)", use_chat)
 
     def test_proxy_forwards_chat_inputs_to_dify(self):
         text = (ROOT / "gaokao-proxy" / "server.js").read_text(encoding="utf-8")

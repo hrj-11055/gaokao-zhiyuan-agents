@@ -3,7 +3,30 @@
 </template>
 
 <script setup>
-const pages = getCurrentPages()
-const page = pages[pages.length - 1]
-const url = decodeURIComponent(page.options?.url || '')
+import { ref } from 'vue'
+import { onLoad, onShareAppMessage, onShareTimeline } from '@dcloudio/uni-app'
+
+const url = ref('')
+
+onLoad((options) => {
+  if (options.url) {
+    url.value = decodeURIComponent(options.url)
+  }
+})
+
+// 允许分享给微信好友
+onShareAppMessage(() => {
+  return {
+    title: '我的高考志愿综合评估报告',
+    path: `/pages/report-view/report-view?url=${encodeURIComponent(url.value)}`,
+  }
+})
+
+// 允许分享到朋友圈
+onShareTimeline(() => {
+  return {
+    title: '我的高考志愿综合评估报告',
+    query: `url=${encodeURIComponent(url.value)}`,
+  }
+})
 </script>
