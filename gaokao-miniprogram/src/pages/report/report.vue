@@ -10,6 +10,28 @@
       </view>
     </view>
 
+    <!-- 会员锁定 -->
+    <view v-else-if="status === 'locked'" class="state-card locked-card">
+      <view class="lock-icon">🔒</view>
+      <text class="state-title">解锁深度填报会员</text>
+      <text class="state-sub">{{ errorMsg || '综合志愿报告、大学深度研究、PDF 下载和家长分享需要会员权益' }}</text>
+
+      <view class="unlock-price">
+        <text class="unlock-price-main">¥29 一次性解锁</text>
+        <text class="unlock-price-sub">也可以邀请 3 人免费解锁</text>
+      </view>
+
+      <view class="content-list locked-benefits">
+        <text class="content-item">✓ 大学深度研究</text>
+        <text class="content-item">✓ 综合志愿报告</text>
+        <text class="content-item">✓ PDF 下载</text>
+        <text class="content-item">✓ 家长分享链接</text>
+      </view>
+
+      <view class="primary-btn" @click="unlockAndGenerate">解锁并生成报告</view>
+      <view class="secondary-btn" @click="goInvite">邀请 3 人免费解锁</view>
+    </view>
+
     <!-- 成功 -->
     <view v-else-if="status === 'done'" class="state-card">
       <view class="success-icon">📊</view>
@@ -52,6 +74,7 @@ import { useUserStore } from '../../stores/user.js'
 import { useChatStore } from '../../stores/chat.js'
 import { useAssessmentStore } from '../../stores/assessment.js'
 import { useReportStore } from '../../stores/report.js'
+import { useMembershipStore } from '../../stores/membership.js'
 
 const API_BASE = import.meta.env.VITE_API_BASE || 'http://47.113.125.147'
 
@@ -62,6 +85,7 @@ const userStore = useUserStore()
 const chatStore = useChatStore()
 const assessmentStore = useAssessmentStore()
 const reportStore = useReportStore()
+const membershipStore = useMembershipStore()
 
 const sourceDesc = computed(() => {
   const completedCount = assessmentStore.questionnaire?.completedCount || 0
@@ -74,7 +98,7 @@ const sourceDesc = computed(() => {
   return parts.length > 0 ? `基于 ${parts.join(' + ')} 生成` : '基于考生基本信息生成'
 })
 
-onMounted(() => {
+onMounted(async () => {
   userStore.loadProfile()
   if (!userStore.userId) userStore.initUserId()
   chatStore.loadHistory()
@@ -84,6 +108,20 @@ onMounted(() => {
   if (!assessmentStore.isAllCompleted) {
     status.value = 'error'
     errorMsg.value = `请先完成全部 3 项测评（当前 ${assessmentStore.completedCount}/3）`
+    return
+  }
+
+  try {
+    await membershipStore.loadStatus()
+  } catch (err) {
+    status.value = 'locked'
+    errorMsg.value = err.message || err.errMsg || '请先登录微信身份后解锁会员权益'
+    return
+  }
+
+  if (!membershipStore.isActive) {
+    status.value = 'locked'
+    errorMsg.value = '综合志愿报告属于会员权益，付费或邀请 3 位新用户后即可生成'
     return
   }
 
@@ -105,6 +143,12 @@ async function generate(force = false) {
     status.value = 'done'
     return
   }
+
+  if (!membershipStore.isActive) {
+    status.value = 'locked'
+    errorMsg.value = '综合志愿报告属于会员权益，付费或邀请 3 位新用户后即可生成'
+    return
+  }
   
   status.value = 'loading'
   errorMsg.value = ''
@@ -123,9 +167,18 @@ async function generate(force = false) {
         },
         conversationId: chatStore.conversationId || '',
       },
-      header: { 'Content-Type': 'application/json' },
+      header: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${membershipStore.sessionToken}`,
+      },
       timeout: 120000,
     })
+
+    if (res.statusCode === 402 || res.data?.code === 'MEMBERSHIP_REQUIRED') {
+      status.value = 'locked'
+      errorMsg.value = res.data?.error || '请先解锁会员后生成报告'
+      return
+    }
 
     if (res.statusCode !== 200 || !res.data?.url) {
       throw new Error(res.data?.error || '服务暂时不可用')
@@ -137,6 +190,32 @@ async function generate(force = false) {
     status.value = 'error'
     errorMsg.value = err.message || err.errMsg || '网络请求失败，请检查网络后重试'
   }
+}
+
+async function unlockAndGenerate() {
+  try {
+    uni.showLoading({ title: '发起支付...' })
+    await membershipStore.createPayment()
+    await membershipStore.loadStatus()
+    uni.hideLoading()
+    if (membershipStore.isActive) {
+      await generate(true)
+    } else {
+      status.value = 'locked'
+      errorMsg.value = '支付确认中，请稍后刷新后生成报告'
+    }
+  } catch (err) {
+    uni.hideLoading()
+    uni.showToast({
+      title: err.message || err.errMsg || '暂时无法发起支付',
+      icon: 'none',
+      duration: 2200,
+    })
+  }
+}
+
+function goInvite() {
+  uni.switchTab({ url: '/pages/profile/profile' })
 }
 
 function copyLink() {
@@ -212,7 +291,7 @@ function formatTime(ts) {
   box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.08);
 }
 
-.loading-icon, .success-icon, .error-icon {
+.loading-icon, .success-icon, .error-icon, .lock-icon {
   font-size: 80rpx;
   margin-bottom: 24rpx;
 }
@@ -280,10 +359,51 @@ function formatTime(ts) {
   color: $text-secondary;
 }
 
+.locked-card {
+  align-items: stretch;
+}
+
+.locked-card .lock-icon,
+.locked-card .state-title,
+.locked-card .state-sub {
+  align-self: center;
+}
+
+.unlock-price {
+  width: 100%;
+  background: #FFF7ED;
+  border-radius: $radius-lg;
+  padding: 24rpx;
+  box-sizing: border-box;
+  margin: 28rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unlock-price-main {
+  font-size: 40rpx;
+  font-weight: 800;
+  color: $brand-primary;
+  margin-bottom: 8rpx;
+}
+
+.unlock-price-sub {
+  font-size: 24rpx;
+  color: $text-secondary;
+}
+
+.locked-benefits {
+  background: #F9FAFB;
+  border-radius: $radius-lg;
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
 .primary-btn {
   width: 100%;
   height: 88rpx;
-  background: #7c3aed;
+  background: $brand-primary;
   border-radius: $radius-full;
   display: flex;
   align-items: center;
@@ -298,12 +418,12 @@ function formatTime(ts) {
   width: 100%;
   height: 88rpx;
   background: $bg-white;
-  border: 2rpx solid #7c3aed;
+  border: 2rpx solid $brand-primary;
   border-radius: $radius-full;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #7c3aed;
+  color: $brand-primary;
   font-size: 32rpx;
   font-weight: 600;
   margin-bottom: 24rpx;

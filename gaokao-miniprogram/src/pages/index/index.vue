@@ -158,8 +158,9 @@
 
 <script setup>
 import { computed, ref } from 'vue'
-import { onShow } from '@dcloudio/uni-app'
+import { onLoad, onShow } from '@dcloudio/uni-app'
 import { loadUserProfile, saveUserProfile, isProfileComplete, loadAssessments, loadQuestionnaire } from '../../utils/storage.js'
+import { useMembershipStore } from '../../stores/membership.js'
 
 const provinces = [
   '北京', '天津', '河北', '山西', '内蒙古', '辽宁', '吉林', '黑龙江',
@@ -173,6 +174,7 @@ const profile = ref(loadUserProfile())
 const saveStatus = ref('自动保存')
 const assessments = ref(loadAssessments())
 const questionnaire = ref(loadQuestionnaire())
+const membershipStore = useMembershipStore()
 
 const provinceIndex = computed(() => Math.max(0, provinces.indexOf(profile.value.province)))
 const categoryIndex = computed(() => Math.max(0, categories.indexOf(profile.value.category)))
@@ -202,10 +204,18 @@ const reportSubtitle = computed(() => {
   return `还差 ${3 - completedCount.value} 个测评完成`
 })
 
+onLoad((options = {}) => {
+  if (options.inviterId) {
+    membershipStore.setInviterId(options.inviterId)
+  }
+  membershipStore.login().catch(() => {})
+})
+
 onShow(() => {
   profile.value = loadUserProfile()
   assessments.value = loadAssessments()
   questionnaire.value = loadQuestionnaire()
+  membershipStore.loadStatus().catch(() => {})
 })
 
 function goQuestionnaire() {
@@ -238,6 +248,9 @@ function goChat() {
 function persistProfile(nextProfile) {
   profile.value = saveUserProfile(nextProfile)
   saveStatus.value = '已自动保存'
+  if (isProfileComplete(profile.value)) {
+    membershipStore.markProfileCompleted(profile.value).catch(() => {})
+  }
 }
 
 function onProvinceChange(event) {

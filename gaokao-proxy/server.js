@@ -4,6 +4,10 @@ const cors = require('cors')
 const { generateReport, saveReport, REPORTS_DIR } = require('./lib/report-builder')
 const redis = require('./lib/redis')
 const { textToSpeech } = require('./lib/tts')
+const { createCommerceStore } = require('./lib/commerce-store')
+const { signSessionToken, verifySessionToken } = require('./lib/session-token')
+const { exchangeCodeForSession } = require('./lib/wechat-auth')
+const { createJsapiPayment, parseWechatPayNotify } = require('./lib/wechat-pay')
 const fs = require('fs').promises
 const path = require('path')
 
@@ -18,6 +22,7 @@ const RATE_LIMIT_WINDOW_MS = Number(process.env.RATE_LIMIT_WINDOW_MS || 60000)
 const RATE_LIMIT_MAX = Number(process.env.RATE_LIMIT_MAX || 30)
 const MAX_QUERY_LENGTH = Number(process.env.MAX_QUERY_LENGTH || 2000)
 const PROXY_API_TOKEN = process.env.PROXY_API_TOKEN || ''
+const COMMERCE_SESSION_SECRET = process.env.COMMERCE_SESSION_SECRET || process.env.JWT_SECRET || 'local-commerce-session-secret'
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || '')
   .split(',')
   .map((origin) => origin.trim())
@@ -28,6 +33,7 @@ const reportCooldowns = new Map()
 const REPORT_COOLDOWN_MS = 10 * 60 * 1000
 const THINK_OPEN = '<think>'
 const THINK_CLOSE = '</think>'
+const commerceStore = createCommerceStore()
 
 if (!DIFY_API_KEY) {
   console.error('ERROR: DIFY_API_KEY is not set in .env')
@@ -47,7 +53,12 @@ app.use(cors({
     callback(new Error('Origin not allowed'))
   }
 }))
-app.use(express.json({ limit: JSON_BODY_LIMIT }))
+app.use(express.json({
+  limit: JSON_BODY_LIMIT,
+  verify: (req, res, buf) => {
+    req.rawBody = buf.toString('utf8')
+  },
+}))
 
 async function rateLimit(req, res, next) {
   const key = (req.body && req.body.user) || req.ip || 'unknown'
@@ -99,6 +110,40 @@ function requireProxyToken(req, res, next) {
     return res.status(401).json({ error: '未授权请求' })
   }
 
+  next()
+}
+
+function getBearerToken(req) {
+  const auth = req.get('authorization') || ''
+  if (!auth.startsWith('Bearer ')) return ''
+  return auth.slice('Bearer '.length).trim()
+}
+
+function requireCommerceAuth(req, res, next) {
+  try {
+    const token = getBearerToken(req)
+    const payload = verifySessionToken(token, COMMERCE_SESSION_SECRET)
+    if (!payload.userId || !payload.openid) {
+      return res.status(401).json({ error: '请先登录微信身份' })
+    }
+    req.commerceAuth = payload
+    next()
+  } catch {
+    res.status(401).json({ error: '请先登录微信身份' })
+  }
+}
+
+function requireMembershipForReports(req, res, next) {
+  const membership = commerceStore.getMembershipStatus(req.commerceAuth.userId)
+  if (membership.status !== 'active') {
+    return res.status(402).json({
+      error: '请先解锁深度填报会员',
+      code: 'MEMBERSHIP_REQUIRED',
+      priceCents: Number(process.env.MEMBERSHIP_PRICE_CENTS || 2900),
+      invite: membership.invite,
+    })
+  }
+  req.membership = membership
   next()
 }
 
@@ -207,6 +252,111 @@ app.use('/api/chat', requireProxyToken, validateChatRequest, rateLimit)
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' })
+})
+
+app.post('/api/auth/wechat-login', async (req, res) => {
+  const { code, inviterId = '' } = req.body || {}
+  try {
+    const session = await exchangeCodeForSession({ code })
+    const user = commerceStore.upsertWechatUser({
+      openid: session.openid,
+      unionid: session.unionid || '',
+      inviterId,
+    })
+    const membership = commerceStore.getMembershipStatus(user.userId)
+    const sessionToken = signSessionToken({
+      userId: user.userId,
+      openid: user.openid,
+    }, COMMERCE_SESSION_SECRET)
+
+    res.json({
+      userId: user.userId,
+      sessionToken,
+      membership,
+      invite: membership.invite,
+    })
+  } catch (err) {
+    console.error('WeChat login error:', err.message)
+    res.status(502).json({ error: err.message || '微信登录失败' })
+  }
+})
+
+app.get('/api/membership/status', requireCommerceAuth, (req, res) => {
+  res.json(commerceStore.getMembershipStatus(req.commerceAuth.userId))
+})
+
+app.post('/api/profile/complete', requireCommerceAuth, (req, res) => {
+  try {
+    const result = commerceStore.completeProfile(req.commerceAuth.userId)
+    res.json({
+      status: 'ok',
+      inviteCounted: result.inviteCounted,
+      membership: result.membership,
+    })
+  } catch (err) {
+    res.status(400).json({ error: err.message || '保存用户资料失败' })
+  }
+})
+
+app.post('/api/payment/create', requireCommerceAuth, async (req, res) => {
+  const membership = commerceStore.getMembershipStatus(req.commerceAuth.userId)
+  if (membership.status === 'active') {
+    return res.json({ alreadyUnlocked: true, membership })
+  }
+
+  try {
+    const order = commerceStore.createPaymentOrder(req.commerceAuth.userId)
+    const paymentResult = await createJsapiPayment({
+      order,
+      openid: req.commerceAuth.openid,
+      description: '深度填报会员',
+    })
+    commerceStore.attachPrepayId(order.orderId, paymentResult.prepayId)
+    res.json({
+      orderId: order.orderId,
+      payment: paymentResult.payment,
+    })
+  } catch (err) {
+    const status = err.code === 'WECHAT_PAY_NOT_CONFIGURED' ? 503 : 502
+    res.status(status).json({ error: err.message || '微信支付下单失败', code: err.code || 'WECHAT_PAY_FAILED' })
+  }
+})
+
+app.get('/api/payment/order/:orderId', requireCommerceAuth, (req, res) => {
+  const order = commerceStore.getOrder(req.params.orderId)
+  if (!order || order.userId !== req.commerceAuth.userId) {
+    return res.status(404).json({ error: '订单不存在' })
+  }
+  res.json({
+    order,
+    membership: commerceStore.getMembershipStatus(req.commerceAuth.userId),
+  })
+})
+
+app.post('/api/payment/wechat/notify', async (req, res) => {
+  try {
+    const notify = parseWechatPayNotify(req.body, {
+      headers: req.headers,
+      rawBody: req.rawBody || '',
+    })
+    const resource = notify.resource || notify
+    const outTradeNo = resource.out_trade_no || notify.out_trade_no
+    const transactionId = resource.transaction_id || notify.transaction_id || ''
+    const tradeState = resource.trade_state || notify.trade_state || 'SUCCESS'
+
+    if (!outTradeNo) {
+      return res.status(400).json({ code: 'FAIL', message: 'out_trade_no is required' })
+    }
+    if (tradeState !== 'SUCCESS') {
+      return res.json({ code: 'SUCCESS', message: 'ignored' })
+    }
+
+    commerceStore.markOrderPaid(outTradeNo, transactionId, notify)
+    res.json({ code: 'SUCCESS', message: '成功' })
+  } catch (err) {
+    console.error('WeChat pay notify error:', err.message)
+    res.status(500).json({ code: 'FAIL', message: err.message || '支付通知处理失败' })
+  }
 })
 
 // Blocking mode
@@ -448,12 +598,10 @@ app.post('/api/chat/feedback', async (req, res) => {
 })
 
 // 报告生成端点
-app.post('/api/report/generate', async (req, res) => {
+app.post('/api/report/generate', requireCommerceAuth, requireMembershipForReports, async (req, res) => {
   const { userId, profile, questionnaire, assessments, conversationId } = req.body || {}
 
-  if (!userId || typeof userId !== 'string' || userId.length > 128) {
-    return res.status(400).json({ error: 'userId is required' })
-  }
+  const reportUserId = req.commerceAuth.userId || userId
 
   const questionCount = Object.values(questionnaire || {})
     .filter(v => v !== '' && !(Array.isArray(v) && v.length === 0)).length
@@ -463,7 +611,7 @@ app.post('/api/report/generate', async (req, res) => {
     return res.status(400).json({ error: '请先完成全部 3 项测评后再生成综合报告' })
   }
 
-  const cooldownKey = `cooldown:report:${userId}`
+  const cooldownKey = `cooldown:report:${reportUserId}`
   
   if (redis) {
     try {
@@ -475,7 +623,7 @@ app.post('/api/report/generate', async (req, res) => {
       console.error('Redis Cooldown Check Error:', err.message)
     }
   } else {
-    const lastAt = reportCooldowns.get(userId) || 0
+    const lastAt = reportCooldowns.get(reportUserId) || 0
     if (Date.now() - lastAt < REPORT_COOLDOWN_MS) {
       const waitSec = Math.ceil((REPORT_COOLDOWN_MS - (Date.now() - lastAt)) / 1000)
       return res.status(429).json({ error: `请 ${waitSec} 秒后再试` })
@@ -492,7 +640,7 @@ app.post('/api/report/generate', async (req, res) => {
       difyApiKey: DIFY_API_KEY,
     })
 
-    const filename = await saveReport(userId, html)
+    const filename = await saveReport(reportUserId, html)
     
     // 设置冷却
     if (redis) {
@@ -500,14 +648,14 @@ app.post('/api/report/generate', async (req, res) => {
         console.error('Redis Cooldown Set Error:', e.message)
       })
     } else {
-      reportCooldowns.set(userId, Date.now())
+      reportCooldowns.set(reportUserId, Date.now())
     }
 
     const baseUrl = process.env.REPORT_BASE_URL || `http://localhost:${PORT}`
     res.json({ url: `${baseUrl}/reports/${filename}` })
   } catch (err) {
     console.error('Report generation error:', err.message)
-    if (!redis) reportCooldowns.delete(userId)
+    if (!redis) reportCooldowns.delete(reportUserId)
     res.status(500).json({ error: err.message || '报告生成失败，请稍后重试' })
   }
 })
