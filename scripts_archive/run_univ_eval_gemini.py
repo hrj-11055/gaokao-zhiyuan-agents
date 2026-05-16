@@ -13,6 +13,29 @@
   python3 run_univ_eval_gemini.py --list 广东省             # 列出该省本科院校
 """
 
+# ── SSL 修复（macOS LibreSSL 兼容）────────────────────────────
+import ssl
+import ssl
+try:
+    # 尝试使用更宽松的 SSL 上下文
+    ssl._create_default_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+
+# 尝试设置最低 TLS 版本
+try:
+    import ssl
+    old_context = ssl._create_default_https_context
+    def new_context():
+        context = old_context()
+        context.minimum_version = ssl.TLSVersion.TLSv1_2
+        context.check_hostname = False
+        context.verify_mode = ssl.CERT_NONE
+        return context
+    ssl._create_default_https_context = new_context
+except Exception:
+    pass
+
 import csv
 import json
 import os
@@ -31,7 +54,7 @@ OUTPUT_DIR = BASE_DIR / "data" / "大学评估报告"
 DELAY_SECONDS = 5
 TIMEOUT_SECONDS = 600  # 10 分钟，Flash 较快
 
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3-flash-preview")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 GEMINI_MAX_OUTPUT_TOKENS = int(os.environ.get("GEMINI_MAX_OUTPUT_TOKENS", "32768"))
 GEMINI_API_RETRIES = int(os.environ.get("GEMINI_API_RETRIES", "2"))
 GEMINI_API_RETRY_DELAY_SECONDS = float(os.environ.get("GEMINI_API_RETRY_DELAY_SECONDS", "3"))

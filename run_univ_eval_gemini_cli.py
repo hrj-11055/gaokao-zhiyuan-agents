@@ -43,7 +43,10 @@ REQUIRED_MODULES = []  # 放宽模块检查，依赖字数
 
 # CLI 调用配置
 GEMINI_CLI = os.environ.get("GEMINI_CLI", "gemini")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.1-pro-preview")
+if GEMINI_CLI == "1":
+    GEMINI_CLI = "gemini"
+
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "")  # 默认为空，使用 CLI 默认值
 GEMINI_MAX_TOKENS = int(os.environ.get("GEMINI_MAX_TOKENS", "32768"))
 
 
@@ -152,14 +155,15 @@ def save_progress(pfile: Path, done: set):
 def run_one(prompt: str) -> str:
     """调用 gemini CLI 生成报告"""
     # 构建 gemini CLI 命令
-    # -p 接收提示词字符串，-m 指定模型，-o json 输出格式
+    # -p 接收提示词字符串，-o text 输出格式
     cmd = [
         GEMINI_CLI,
         "-p", prompt,
-        "-m", GEMINI_MODEL,
         "-o", "text",
-        # "--approval-mode", "yolo",  # 自动批准所有操作
+        "--yolo",  # 自动批准所有操作
     ]
+    if GEMINI_MODEL:
+        cmd.extend(["-m", GEMINI_MODEL])
 
     result = subprocess.run(
         cmd,
