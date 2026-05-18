@@ -72,7 +72,7 @@ async function fetchUnivReports(profile) {
 
   let recommendations = []
   try {
-    const url = `${SCORE_API_URL}/api/scores/recommend?province=${encodeURIComponent(province)}&score=${score}&category=${encodeURIComponent(category || '')}&year=2024&limit=15`
+    const url = `${SCORE_API_URL}/api/scores/recommend?province=${encodeURIComponent(province)}&score=${score}&category=${encodeURIComponent(category || '')}&year=2025&limit=15`
     const res = await fetch(url, { signal: AbortSignal.timeout(5000) })
     if (res.ok) {
       const data = await res.json()

@@ -235,7 +235,7 @@ def match_schools():
         province = request.args.get('province')
         score = int(request.args.get('score', 0))
         category = request.args.get('category', '物理类')
-        year = int(request.args.get('year', 2024))
+        year = int(request.args.get('year', 2025))
         limit = min(int(request.args.get('limit', 10)), 50)
 
         if not province or score == 0:
@@ -351,7 +351,7 @@ def match_schools():
 def get_school_scores(school_name, province):
     """查询学校在某省的专业分数线"""
     try:
-        year = int(request.args.get('year', 2024))
+        year = int(request.args.get('year', 2025))
 
         if USE_JSON:
             data = load_local_data()
@@ -403,7 +403,7 @@ def get_majors_by_keyword(keyword):
     """按专业关键词查询学校分数线"""
     try:
         province = request.args.get('province')
-        year = int(request.args.get('year', 2024))
+        year = int(request.args.get('year', 2025))
         limit = min(int(request.args.get('limit', 20)), 100)
 
         if USE_JSON:
@@ -476,7 +476,7 @@ def recommend():
         province = request.args.get('province')
         score = int(request.args.get('score', 0))
         category = request.args.get('category', '物理类')
-        year = int(request.args.get('year', 2024))
+        year = int(request.args.get('year', 2025))
         limit = min(int(request.args.get('limit', 10)), 50)
 
         if not province or score == 0:
