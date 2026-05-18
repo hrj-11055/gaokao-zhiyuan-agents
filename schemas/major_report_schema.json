@@ -1,0 +1,609 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "专业评估报告数据结构",
+  "description": "基于8模块专业评估报告的标准化JSON Schema，支持分层存储和按需加载",
+  "type": "object",
+  "required": ["meta", "layer1_overview", "layer2_core", "layer3_detail"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "description": "元数据信息",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Schema版本号"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "生成时间"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "更新时间"
+        },
+        "data_sources": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "数据来源列表"
+        }
+      }
+    },
+    "layer1_overview": {
+      "type": "object",
+      "description": "Layer 1: 概览数据（List页卡片显示）",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "专业代码",
+          "pattern": "^\\d{6}$"
+        },
+        "name": {
+          "type": "string",
+          "description": "专业名称"
+        },
+        "category": {
+          "type": "string",
+          "description": "学科门类"
+        },
+        "match_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "匹配度分数（0-100）"
+        },
+        "recommendation_level": {
+          "type": "string",
+          "enum": ["green", "yellow", "red"],
+          "description": "推荐等级：绿灯/黄灯/红灯"
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "一句话简介"
+        },
+        "radar": {
+          "type": "object",
+          "description": "六维雷达图数据",
+          "properties": {
+            "market_return": {"type": "number", "minimum": 0, "maximum": 5},
+            "industry_outlook": {"type": "number", "minimum": 0, "maximum": 5},
+            "future_adaptability": {"type": "number", "minimum": 0, "maximum": 5},
+            "career_path": {"type": "number", "minimum": 0, "maximum": 5},
+            "education_resources": {"type": "number", "minimum": 0, "maximum": 5},
+            "discipline_core": {"type": "number", "minimum": 0, "maximum": 5}
+          }
+        },
+        "weighted_score": {
+          "type": "number",
+          "description": "加权总分"
+        }
+      },
+      "required": ["code", "name", "category", "recommendation_level", "summary", "radar", "weighted_score"]
+    },
+    "layer2_core": {
+      "type": "object",
+      "description": "Layer 2: 核心数据（详情页首屏）",
+      "properties": {
+        "employment": {
+          "type": "object",
+          "description": "就业数据",
+          "properties": {
+            "rate": {"type": "string", "description": "就业率，如 '92%'"},
+            "alignment_rate": {"type": "string", "description": "专业对口率"},
+            "starting_salary": {"type": "string", "description": "起薪范围"},
+            "salary_5yr": {"type": "string", "description": "五年薪酬范围"},
+            "further_study_rate": {"type": "string", "description": "深造率"}
+          }
+        },
+        "industry": {
+          "type": "object",
+          "description": "产业数据",
+          "properties": {
+            "stage": {"type": "string", "enum": ["导入期", "成长期", "成熟期", "衰退期"]},
+            "cagr": {"type": "string", "description": "复合年增长率"},
+            "strategy_relevance": {
+              "type": "string",
+              "enum": ["核心关联", "强关联", "弱关联", "无关联"],
+              "description": "国家战略关联度"
+            },
+            "supply_demand": {
+              "type": "string",
+              "enum": ["供不应求", "供需平衡", "供过于求"],
+              "description": "供需关系"
+            }
+          }
+        },
+        "ai_risk": {
+          "type": "object",
+          "description": "AI替代风险",
+          "properties": {
+            "level": {"type": "string", "enum": ["低风险", "中低风险", "中等风险", "高风险"]},
+            "reason": {"type": "string", "description": "风险评估理由"}
+          }
+        },
+        "top_universities": {
+          "type": "array",
+          "description": "推荐院校列表",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "tier": {"type": "string", "enum": ["S", "A", "B", "C"]},
+              "score_range": {"type": "string"}
+            }
+          }
+        },
+        "career_paths": {
+          "type": "array",
+          "description": "职业路径",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {"type": "string"},
+              "description": {"type": "string"},
+              "salary_range": {"type": "string"},
+              "probability": {"type": "string"}
+            }
+          }
+        },
+        "study_cost": {
+          "type": "object",
+          "description": "培养成本",
+          "properties": {
+            "level": {"type": "string", "enum": ["低成本", "中等成本", "高成本"]},
+            "description": {"type": "string"}
+          }
+        }
+      },
+      "required": ["employment", "industry", "ai_risk"]
+    },
+    "layer3_detail": {
+      "type": "object",
+      "description": "Layer 3: 详细数据（展开后显示）",
+      "properties": {
+        "module1_image": {
+          "type": "object",
+          "description": "模块一：专业画像与总评",
+          "properties": {
+            "ai_summary": {"type": "string"},
+            "six_dimension_table": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "dimension": {"type": "string"},
+                  "score": {"type": "number"},
+                  "weight": {"type": "string"},
+                  "weighted": {"type": "number"}
+                }
+              }
+            }
+          }
+        },
+        "module2_six_dimensions": {
+          "type": "object",
+          "description": "模块二：六维量化评估",
+          "properties": {
+            "dimension1_market": {
+              "type": "object",
+              "properties": {
+                "title": {"type": "string"},
+                "standards": {
+                  "type": "object",
+                  "properties": {
+                    "employment": {
+                      "type": "object",
+                      "properties": {
+                        "label": {"type": "string"},
+                        "data": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "year": {"type": "string"},
+                              "rate": {"type": "string"},
+                              "alignment": {"type": "string"},
+                              "source": {"type": "string"}
+                            }
+                          }
+                        },
+                        "note": {"type": "string"}
+                      }
+                    },
+                    "salary": {
+                      "type": "object",
+                      "properties": {
+                        "label": {"type": "string"},
+                        "data": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "indicator": {"type": "string"},
+                              "range": {"type": "string"},
+                              "source": {"type": "string"}
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "supply_demand": {
+                      "type": "object",
+                      "properties": {
+                        "status": {"type": "string"},
+                        "note": {"type": "string"}
+                      }
+                    },
+                    "location": {
+                      "type": "object",
+                      "properties": {
+                        "status": {"type": "string"},
+                        "cities": {
+                          "type": "array",
+                          "items": {"type": "string"}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "dimension2_industry": {
+              "type": "object",
+              "properties": {
+                "title": {"type": "string"},
+                "standards": {
+                  "type": "object",
+                  "properties": {
+                    "industry_stage": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": {"type": "string"},
+                          "stage": {"type": "string"},
+                          "basis": {"type": "string"}
+                        }
+                      }
+                    },
+                    "growth_potential": {
+                      "type": "object",
+                      "properties": {
+                        "status": {"type": "string"},
+                        "cagr": {"type": "string"},
+                        "source": {"type": "string"}
+                      }
+                    },
+                    "strategy_relevance": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"},
+                        "note": {"type": "string"}
+                      }
+                    },
+                    "chain_position": {
+                      "type": "object",
+                      "properties": {
+                        "position": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "dimension3_future": {
+              "type": "object",
+              "properties": {
+                "title": {"type": "string"},
+                "standards": {
+                  "type": "object",
+                  "properties": {
+                    "ai_risk": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"},
+                        "reason": {"type": "string"}
+                      }
+                    },
+                    "knowledge_iteration": {
+                      "type": "object",
+                      "properties": {
+                        "speed": {"type": "string"},
+                        "note": {"type": "string"}
+                      }
+                    },
+                    "skill_transferability": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"},
+                        "core_skills": {
+                          "type": "array",
+                          "items": {"type": "string"}
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "dimension4_path": {
+              "type": "object",
+              "properties": {
+                "title": {"type": "string"},
+                "standards": {
+                  "type": "object",
+                  "properties": {
+                    "further_study": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"},
+                        "rate": {"type": "string"},
+                        "note": {"type": "string"}
+                      }
+                    },
+                    "entry_barrier": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"},
+                        "certificates": {"type": "array", "items": {"type": "string"}},
+                        "pass_rate": {"type": "string"}
+                      }
+                    },
+                    "flexibility": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"},
+                        "directions": {
+                          "type": "array",
+                          "items": {"type": "string"}
+                        }
+                      }
+                    },
+                    "diversity": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"},
+                        "note": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "dimension5_education": {
+              "type": "object",
+              "properties": {
+                "title": {"type": "string"},
+                "standards": {
+                  "type": "object",
+                  "properties": {
+                    "resource_concentration": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"},
+                        "a_class_universities": {"type": "number"},
+                        "top_schools": {
+                          "type": "array",
+                          "items": {"type": "string"}
+                        }
+                      }
+                    },
+                    "training_cost": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"},
+                        "note": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "dimension6_discipline": {
+              "type": "object",
+              "properties": {
+                "title": {"type": "string"},
+                "standards": {
+                  "type": "object",
+                  "properties": {
+                    "thinking_training": {
+                      "type": "object",
+                      "properties": {
+                        "value": {"type": "string"},
+                        "core_skills": {
+                          "type": "array",
+                          "items": {"type": "string"}
+                        }
+                      }
+                    },
+                    "theoretical_foundation": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"}
+                      }
+                    },
+                    "academic_reputation": {
+                      "type": "object",
+                      "properties": {
+                        "level": {"type": "string"},
+                        "note": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "module3_university_tiers": {
+          "type": "object",
+          "description": "模块三：院校分档与定位",
+          "properties": {
+            "tier_S": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "S档院校"
+            },
+            "tier_A": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "A档院校"
+            },
+            "tier_B": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "B档院校"
+            },
+            "tier_C_note": {
+              "type": "string",
+              "description": "C档说明"
+            },
+            "selection_advice": {
+              "type": "string",
+              "description": "选校建议"
+            }
+          }
+        },
+        "module4_comparison": {
+          "type": "object",
+          "description": "模块四：横向对决台",
+          "properties": {
+            "vs_major": {
+              "type": "string",
+              "description": "对比专业名称"
+            },
+            "comparison_table": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "dimension": {"type": "string"},
+                  "self": {"type": "string"},
+                  "other": {"type": "string"}
+                }
+              }
+            },
+            "core_difference": {
+              "type": "string",
+              "description": "核心差异说明"
+            }
+          }
+        },
+        "module5_career_paths": {
+          "type": "object",
+          "description": "模块五：职业路径图",
+          "properties": {
+            "paths": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {"type": "string"},
+                  "route": {
+                    "type": "array",
+                    "items": {"type": "string"}
+                  },
+                  "salary_range": {"type": "string"},
+                  "probability": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "module6_fun_cards": {
+          "type": "object",
+          "description": "模块六：反差与揭秘趣味卡片",
+          "properties": {
+            "stereotype_vs_reality": {
+              "type": "object",
+              "properties": {
+                "you_think": {"type": "string"},
+                "reality": {"type": "string"}
+              }
+            },
+            "quick_test": {
+              "type": "object",
+              "properties": {
+                "scenario": {"type": "string"},
+                "option_A": {"type": "string"},
+                "option_B": {"type": "string"},
+                "match_A": {"type": "string"},
+                "match_B": {"type": "string"}
+              }
+            }
+          }
+        },
+        "module7_personality_tags": {
+          "type": "object",
+          "description": "模块七：专业气质人格标签",
+          "properties": {
+            "tags": {
+              "type": "array",
+              "items": {"type": "string"}
+            },
+            "scenario_test": {
+              "type": "object",
+              "properties": {
+                "question": {"type": "string"},
+                "option_A": {"type": "string"},
+                "option_B": {"type": "string"},
+                "match_A": {"type": "string"},
+                "match_B": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "layer4_supplement": {
+      "type": "object",
+      "description": "Layer 4: 补充数据（折叠区）",
+      "properties": {
+        "module8_raw_data": {
+          "type": "object",
+          "description": "模块八：原始数据支撑",
+          "properties": {
+            "employment_data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "indicator": {"type": "string"},
+                  "range": {"type": "string"},
+                  "source": {"type": "string"},
+                  "credibility": {"type": "string"}
+                }
+              }
+            },
+            "salary_data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "indicator": {"type": "string"},
+                  "range": {"type": "string"},
+                  "source": {"type": "string"},
+                  "credibility": {"type": "string"}
+                }
+              }
+            },
+            "industry_data": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "indicator": {"type": "string"},
+                  "value": {"type": "string"},
+                  "source": {"type": "string"},
+                  "credibility": {"type": "string"}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

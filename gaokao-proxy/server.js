@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const { generateReport, saveReport, REPORTS_DIR } = require('./lib/report-builder')
+const { createReportRoutes } = require('./lib/report-routes')
 const redis = require('./lib/redis')
 const { textToSpeech } = require('./lib/tts')
 const { createCommerceStore } = require('./lib/commerce-store')
@@ -34,6 +35,7 @@ const REPORT_COOLDOWN_MS = 10 * 60 * 1000
 const THINK_OPEN = '<think>'
 const THINK_CLOSE = '</think>'
 const commerceStore = createCommerceStore()
+const reportRoutes = createReportRoutes(true) // Full access for authenticated proxy
 
 if (!DIFY_API_KEY) {
   console.error('ERROR: DIFY_API_KEY is not set in .env')
@@ -253,6 +255,14 @@ app.use('/api/chat', requireProxyToken, validateChatRequest, rateLimit)
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' })
 })
+
+// Report query API
+app.get('/api/reports/health', reportRoutes.healthCheck)
+app.get('/api/reports/stats', reportRoutes.getStats)
+app.get('/api/reports/majors', reportRoutes.listMajors)
+app.get('/api/reports/majors/:code', reportRoutes.getMajor)
+app.get('/api/reports/universities', reportRoutes.listUniversities)
+app.get('/api/reports/universities/:name', reportRoutes.getUniversity)
 
 app.post('/api/auth/wechat-login', async (req, res) => {
   const { code, inviterId = '' } = req.body || {}

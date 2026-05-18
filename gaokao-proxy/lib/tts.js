@@ -5,12 +5,15 @@ const util = require('util');
 
 const gzip = util.promisify(zlib.gzip);
 
-const APPID = process.env.VOLC_TTS_APPID || "3933647087";
-const TOKEN = process.env.VOLC_TTS_TOKEN || "1AX3n-Z-QU9X2nBJT3s9IN7dzFV-TK42";
+const APPID = process.env.VOLC_TTS_APPID;
+const TOKEN = process.env.VOLC_TTS_TOKEN;
 const WS_URL = "wss://openspeech.bytedance.com/api/v1/tts/ws_binary";
 const VOICE_TYPE = "zh_female_yingyujiaoxue_uranus_bigtts";
 
 async function textToSpeech(text) {
+  if (!APPID || !TOKEN) {
+    throw new Error('VOLC_TTS_APPID and VOLC_TTS_TOKEN must be set');
+  }
   return new Promise((resolve, reject) => {
     const ws = new WebSocket(WS_URL, {
       headers: { "Authorization": `Bearer; ${TOKEN}` }

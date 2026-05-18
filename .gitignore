@@ -5,3 +5,5 @@ dist/
 gaokao-proxy/.env
 gaokao-miniprogram/.env
 *.log
+scores.json
+_import_scores_json.sql

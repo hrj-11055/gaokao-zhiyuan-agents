@@ -1,7 +1,7 @@
 'use strict'
 
-const SCORE_API_URL = process.env.SCORE_API_URL || 'http://159.75.110.157:5000'
-const CONTENT_API_URL = process.env.CONTENT_API_URL || 'http://localhost:3002' // 模拟的内容服务地址
+const SCORE_API_URL = process.env.SCORE_API_URL || 'http://159.75.110.157/score-api'
+const pg = require('./pg')
 
 // 兴趣领域 → 专业门类代码前缀
 const INTEREST_TO_CODES = {
@@ -26,7 +26,7 @@ const INDUSTRY_TO_CODES = {
 }
 
 /**
- * 获取专业报告内容
+ * 获取专业报告内容（从 PostgreSQL）
  */
 async function fetchMajorReports(questionnaire) {
   const interests = Array.isArray(questionnaire.q15) ? questionnaire.q15 : []
@@ -38,27 +38,33 @@ async function fetchMajorReports(questionnaire) {
 
   if (codes.size === 0) return []
 
-  const requestedCodes = Array.from(codes)
-  
   try {
-    // 假设未来有个内容接口，可以根据门类代码批量拉取专业报告
-    const url = `${CONTENT_API_URL}/api/reports/majors?codes=${requestedCodes.join(',')}`
-    const res = await fetch(url, { signal: AbortSignal.timeout(5000) })
-    if (res.ok) {
-      const data = await res.json()
-      return (data.reports || []).map(r => `### 专业：${r.majorName}\n${r.content.slice(0, 3000)}`)
-    }
-    // 如果接口不可用，我们优雅兜底
-    console.warn(`[Mock] Content API not ready: ${url}. Gracefully falling back.`)
-    return [] 
+    const codePrefixes = Array.from(codes)
+    const placeholders = codePrefixes.map((_, i) => `$${i + 1}`).join(', ')
+    const likeConditions = codePrefixes.map((_, i) => `code LIKE $${i + 1}`).join(' OR ')
+    const values = codePrefixes.map(c => `${c}%`)
+
+    const result = await pg.query(
+      `SELECT code, name, data->'layer1_overview'->>'summary' AS summary,
+              data->'layer3_detail'->'module1_image'->>'raw_content' AS module1
+       FROM majors WHERE ${likeConditions}
+       ORDER BY (data->'layer1_overview'->>'weighted_score')::float DESC NULLS LAST
+       LIMIT 20`,
+      values
+    )
+
+    return result.rows.map(r => {
+      const content = r.module1 || r.summary || ''
+      return `### 专业：${r.name}（${r.code}）\n${content.slice(0, 3000)}`
+    })
   } catch (err) {
-    console.warn('Content API failed or missing, gracefully degraded:', err.message)
+    console.warn('fetchMajorReports failed:', err.message)
     return []
   }
 }
 
 /**
- * 获取院校推荐和大学报告内容
+ * 获取院校推荐和大学报告内容（从 PostgreSQL）
  */
 async function fetchUnivReports(profile) {
   const { province, score, category } = profile || {}
@@ -66,7 +72,7 @@ async function fetchUnivReports(profile) {
 
   let recommendations = []
   try {
-    const url = `${SCORE_API_URL}/api/recommend?province=${encodeURIComponent(province)}&score=${score}&category=${encodeURIComponent(category || '')}&year=2024&limit=15`
+    const url = `${SCORE_API_URL}/api/scores/recommend?province=${encodeURIComponent(province)}&score=${score}&category=${encodeURIComponent(category || '')}&year=2024&limit=15`
     const res = await fetch(url, { signal: AbortSignal.timeout(5000) })
     if (res.ok) {
       const data = await res.json()
@@ -82,17 +88,21 @@ async function fetchUnivReports(profile) {
 
   let reports = []
   try {
-    // 假设未来有个内容接口，可以根据学校名称批量拉取大学报告
-    const url = `${CONTENT_API_URL}/api/reports/universities?names=${encodeURIComponent(univNames.join(','))}`
-    const res = await fetch(url, { signal: AbortSignal.timeout(5000) })
-    if (res.ok) {
-      const data = await res.json()
-      reports = (data.reports || []).map(r => `### 院校深度研究资料：${r.schoolName}\n${r.content.slice(0, 3000)}`)
-    } else {
-      console.warn(`[Mock] Content API not ready: ${url}. Gracefully falling back.`)
-    }
+    const placeholders = univNames.map((_, i) => `$${i + 1}`).join(', ')
+    const result = await pg.query(
+      `SELECT name,
+              data->'layer1_overview'->>'summary' AS summary,
+              data->'layer3_detail'->'module1_academic_capital'->>'raw_content' AS module1
+       FROM universities WHERE name IN (${placeholders})`,
+      univNames
+    )
+
+    reports = result.rows.map(r => {
+      const content = r.module1 || r.summary || ''
+      return `### 院校深度研究资料：${r.name}\n${content.slice(0, 3000)}`
+    })
   } catch (err) {
-    console.warn('Content API failed or missing, gracefully degraded:', err.message)
+    console.warn('fetchUnivReports DB failed:', err.message)
   }
 
   return {

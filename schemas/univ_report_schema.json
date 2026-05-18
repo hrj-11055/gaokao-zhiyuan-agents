@@ -1,0 +1,580 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "院校评估报告数据结构",
+  "description": "基于9模块院校评估报告的标准化JSON Schema，支持分层存储和按需加载",
+  "type": "object",
+  "required": ["meta", "layer1_overview", "layer2_core", "layer3_detail"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "description": "元数据信息",
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Schema版本号"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "生成时间"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "更新时间"
+        },
+        "data_sources": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "数据来源列表"
+        }
+      }
+    },
+    "layer1_overview": {
+      "type": "object",
+      "description": "Layer 1: 概览数据（List页卡片显示）",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "院校名称"
+        },
+        "english_name": {
+          "type": "string",
+          "description": "英文名称"
+        },
+        "former_name": {
+          "type": "string",
+          "description": "曾用名"
+        },
+        "location": {
+          "type": "string",
+          "description": "所在地"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["双一流", "211", "985", "中外合作办学", "民办", "公办", "独立学院"],
+          "description": "院校类型"
+        },
+        "philosophy": {
+          "type": "string",
+          "description": "办学理念/特色"
+        },
+        "match_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "匹配度分数（0-100）"
+        },
+        "recommendation_level": {
+          "type": "string",
+          "enum": ["green", "yellow", "red"],
+          "description": "推荐等级：绿灯/黄灯/红灯"
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 200,
+          "description": "一句话简介"
+        },
+        "radar": {
+          "type": "object",
+          "description": "六维评分图数据",
+          "properties": {
+            "academic_capital": {"type": "number", "minimum": 0, "maximum": 5, "description": "学术资本"},
+            "graduate_value": {"type": "number", "minimum": 0, "maximum": 5, "description": "毕业生价值实现"},
+            "location_advantage": {"type": "number", "minimum": 0, "maximum": 5, "description": "区位与产业势能"},
+            "globalization": {"type": "number", "minimum": 0, "maximum": 5, "description": "全球化能力"},
+            "student_empowerment": {"type": "number", "minimum": 0, "maximum": 5, "description": "学生赋权与自由度"},
+            "brand_asset": {"type": "number", "minimum": 0, "maximum": 5, "description": "品牌资产与文化印记"}
+          }
+        },
+        "weighted_score": {
+          "type": "number",
+          "description": "加权总分"
+        },
+        "one_sentence_recommend": {
+          "type": "string",
+          "description": "一句话推荐"
+        }
+      },
+      "required": ["name", "location", "type", "recommendation_level", "summary", "radar", "weighted_score"]
+    },
+    "layer2_core": {
+      "type": "object",
+      "description": "Layer 2: 核心数据（详情页首屏）",
+      "properties": {
+        "academic_strength": {
+          "type": "object",
+          "description": "学术实力",
+          "properties": {
+            "esi_top_1_percent": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "ESI全球前1%学科"
+            },
+            "national_first_class_majors": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "国家级一流本科专业"
+            },
+            "academician_count": {
+              "type": "number",
+              "description": "院士人数"
+            },
+            "teaching_language": {
+              "type": "string",
+              "description": "教学语言"
+            },
+            "student_teacher_ratio": {
+              "type": "string",
+              "description": "生师比，如 '1:12'"
+            }
+          }
+        },
+        "admission_data": {
+          "type": "object",
+          "description": "录取数据",
+          "properties": {
+            "guangdong_history_rank": {
+              "type": "number",
+              "description": "广东历史组录取位次"
+            },
+            "guangdong_physics_rank": {
+              "type": "number",
+              "description": "广东物理组录取位次"
+            },
+            "comp_eval_ratio": {
+              "type": "string",
+              "description": "综合评价比例，如 '6:3:1'"
+            },
+            "tuition_fee": {
+              "type": "string",
+              "description": "年均学费"
+            }
+          }
+        },
+        "graduate_outcomes": {
+          "type": "object",
+          "description": "毕业生去向",
+          "properties": {
+            "further_study_rate": {
+              "type": "string",
+              "description": "深造率"
+            },
+            "qs_top_100_admission_rate": {
+              "type": "string",
+              "description": "QS前100录取率"
+            },
+            "starting_salary_median": {
+              "type": "number",
+              "description": "起薪中位数"
+            },
+            "top_destinations": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "主要深造目的地"
+            },
+            "top_employers": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "主要雇主"
+            }
+          }
+        },
+        "location_advantage": {
+          "type": "object",
+          "description": "区位优势",
+          "properties": {
+            "city": {"type": "string"},
+            "region": {"type": "string"},
+            "industrial_clusters": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "周边产业集群"
+            },
+            "policy_benefits": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "政策红利"
+            }
+          }
+        },
+        "comparison_peers": {
+          "type": "array",
+          "description": "对比院校",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "similarity": {"type": "string"},
+              "key_difference": {"type": "string"}
+            }
+          }
+        },
+        "risks": {
+          "type": "array",
+          "description": "风险点",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": {"type": "string"},
+              "description": {"type": "string"}
+            }
+          }
+        }
+      },
+      "required": ["academic_strength", "admission_data", "graduate_outcomes"]
+    },
+    "layer3_detail": {
+      "type": "object",
+      "description": "Layer 3: 详细数据（展开后显示）",
+      "properties": {
+        "module1_academic_capital": {
+          "type": "object",
+          "description": "模块一：学术资本（权重30%）",
+          "properties": {
+            "discipline_pyramid": {
+              "type": "array",
+              "description": "学科金字塔",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {"type": "string"},
+                  "level": {"type": "string"},
+                  "category": {"type": "string"},
+                  "advantage": {"type": "string"}
+                }
+              }
+            },
+            "top_talent": {
+              "type": "array",
+              "description": "顶尖智力资产",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "category": {"type": "string"},
+                  "count": {"type": "number"},
+                  "impact": {"type": "string"}
+                }
+              }
+            },
+            "research_platforms": {
+              "type": "array",
+              "description": "科研平台",
+              "items": {"type": "string"}
+            },
+            "admission_mode": {
+              "type": "object",
+              "description": "招生模式",
+              "properties": {
+                "mode": {"type": "string"},
+                "breakdown": {"type": "string"},
+                "description": {"type": "string"}
+              }
+            }
+          }
+        },
+        "module2_student_competitiveness": {
+          "type": "object",
+          "description": "模块二：生源竞争力（权重10%）",
+          "properties": {
+            "history_group": {
+              "type": "array",
+              "description": "历史组录取数据",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "province": {"type": "string"},
+                  "score": {"type": "number"},
+                  "rank": {"type": "number"},
+                  "competition": {"type": "string"},
+                  "trend": {"type": "string"}
+                }
+              }
+            },
+            "physics_group": {
+              "type": "array",
+              "description": "物理组录取数据",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "province": {"type": "string"},
+                  "score": {"type": "number"},
+                  "rank": {"type": "number"},
+                  "competition": {"type": "string"},
+                  "trend": {"type": "string"}
+                }
+              }
+            },
+            "student_profile": {
+              "type": "object",
+              "description": "生源画像",
+              "properties": {
+                "characteristics": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                },
+                "family_background": {"type": "string"}
+              }
+            }
+          }
+        },
+        "module3_graduate_value": {
+          "type": "object",
+          "description": "模块三：毕业生价值实现（权重30%）",
+          "properties": {
+            "further_analysis": {
+              "type": "object",
+              "description": "深造质量分析",
+              "properties": {
+                "total_rate": {"type": "string"},
+                "destinations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "destination": {"type": "string"},
+                      "percentage": {"type": "string"},
+                      "schools": {
+                        "type": "array",
+                        "items": {"type": "string"}
+                      }
+                    }
+                  }
+                },
+                "advantages": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                }
+              }
+            },
+            "employment_analysis": {
+              "type": "object",
+              "description": "就业去向分析",
+              "properties": {
+                "direct_employment_rate": {"type": "string"},
+                "industries": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "industry": {"type": "string"},
+                      "percentage": {"type": "string"},
+                      "employers": {
+                        "type": "array",
+                        "items": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "salary_analysis": {
+              "type": "object",
+              "description": "薪酬竞争力",
+              "properties": {
+                "starting_salary_median": {"type": "string"},
+                "comparison": {"type": "string"}
+              }
+            },
+            "alumni_network": {
+              "type": "string",
+              "description": "校友网络与长期价值"
+            }
+          }
+        },
+        "module4_location_industry": {
+          "type": "object",
+          "description": "模块四：区位与产业势能（权重15%）",
+          "properties": {
+            "location_analysis": {
+              "type": "object",
+              "description": "地理位置分析",
+              "properties": {
+                "city": {"type": "string"},
+                "area": {"type": "string"},
+                "geographic_advantage": {"type": "string"}
+              }
+            },
+            "industrial_environment": {
+              "type": "object",
+              "description": "产业环境",
+              "properties": {
+                "key_industries": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                },
+                "leading_companies": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                }
+              }
+            },
+            "strategic_benefits": {
+              "type": "object",
+              "description": "战略红利",
+              "properties": {
+                "policy_support": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                },
+                "cross_border_coop": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "module5_campus_ecosystem": {
+          "type": "object",
+          "description": "模块五：校园生态与品牌（权重10%）",
+          "properties": {
+            "educational_philosophy": {
+              "type": "object",
+              "description": "教育理念",
+              "properties": {
+                "core_concept": {"type": "string"},
+                "implementation": {
+                  "type": "array",
+                  "items": {"type": "string"}
+                }
+              }
+            },
+            "infrastructure": {
+              "type": "object",
+              "description": "基础设施",
+              "properties": {
+                "dormitory": {"type": "string"},
+                "library": {"type": "string"},
+                "dining": {"type": "string"}
+              }
+            },
+            "brand_assets": {
+              "type": "object",
+              "description": "品牌资产",
+              "properties": {
+                "rankings": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "source": {"type": "string"},
+                      "rank": {"type": "string"}
+                    }
+                  }
+                },
+                "reputation": {"type": "string"}
+              }
+            },
+            "risk_challenges": {
+              "type": "array",
+              "description": "风险点与挑战",
+              "items": {"type": "string"}
+            }
+          }
+        },
+        "module6_comprehensive_evaluation": {
+          "type": "object",
+          "description": "模块六：综合评估与量化评分",
+          "properties": {
+            "six_dimension_table": {
+              "type": "array",
+              "description": "六维评分表",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "dimension": {"type": "string"},
+                  "basis": {"type": "string"},
+                  "score": {"type": "number"},
+                  "weight": {"type": "string"},
+                  "weighted": {"type": "number"}
+                }
+              }
+            },
+            "executive_summary": {
+              "type": "string",
+              "description": "执行摘要"
+            },
+            "one_sentence_recommend": {
+              "type": "string",
+              "description": "一句话推荐"
+            },
+            "horizontal_comparison": {
+              "type": "array",
+              "description": "横向对比",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "target": {"type": "string"},
+                  "difference": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "module7_culture_cards": {
+          "type": "object",
+          "description": "模块七：文化揭秘卡片",
+          "properties": {
+            "stereotype_vs_reality": {
+              "type": "object",
+              "properties": {
+                "public_impression": {"type": "string"},
+                "reality": {"type": "string"}
+              }
+            },
+            "cultural_symbols": {
+              "type": "array",
+              "description": "标志性文化符号",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "symbol": {"type": "string"},
+                  "description": {"type": "string"}
+                }
+              }
+            },
+            "temperament_tags": {
+              "type": "array",
+              "description": "气质标签云",
+              "items": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "layer4_supplement": {
+      "type": "object",
+      "description": "Layer 4: 补充数据（折叠区）",
+      "properties": {
+        "module8_raw_data": {
+          "type": "object",
+          "description": "模块八：原始数据汇总",
+          "properties": {
+            "core_data": {
+              "type": "object",
+              "description": "核心数据一览",
+              "additionalProperties": true
+            },
+            "data_sources": {
+              "type": "array",
+              "description": "数据来源说明",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "category": {"type": "string"},
+                  "source": {"type": "string"}
+                }
+              }
+            }
+          }
+        },
+        "module9_structured_export": {
+          "type": "object",
+          "description": "模块九：结构化数据导出（JSON）",
+          "additionalProperties": true
+        }
+      }
+    }
+  }
+}
