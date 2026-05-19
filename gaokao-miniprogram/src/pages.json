@@ -86,6 +86,14 @@
         "navigationBarBackgroundColor": "#FFFFFF",
         "navigationBarTextStyle": "black"
       }
+    },
+    {
+      "path": "pages/privacy/privacy",
+      "style": {
+        "navigationBarTitleText": "隐私保护指引",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
     }
   ],
   "globalStyle": {

@@ -9,6 +9,7 @@ const { createCommerceStore } = require('./lib/commerce-store')
 const { signSessionToken, verifySessionToken } = require('./lib/session-token')
 const { exchangeCodeForSession } = require('./lib/wechat-auth')
 const { createJsapiPayment, parseWechatPayNotify } = require('./lib/wechat-pay')
+const { msgSecCheck } = require('./lib/content-security')
 const fs = require('fs').promises
 const path = require('path')
 
@@ -163,6 +164,41 @@ function validateChatRequest(req, res, next) {
   next()
 }
 
+async function checkContentSecurity(req, res, next) {
+  const { query } = req.body || {}
+
+  const token = getBearerToken(req)
+  let openid = ''
+
+  if (token) {
+    try {
+      const payload = verifySessionToken(token, COMMERCE_SESSION_SECRET)
+      openid = payload.openid || ''
+    } catch {
+      // Not authenticated, skip content check
+    }
+  }
+
+  if (!openid || !query) {
+    return next()
+  }
+
+  try {
+    const result = await msgSecCheck({ openid, content: query, scene: 5 })
+    if (!result.pass) {
+      return res.status(400).json({
+        error: '消息内容不符合规范，请修改后重新发送',
+        code: 'CONTENT_REJECTED',
+        label: result.label,
+      })
+    }
+    next()
+  } catch (err) {
+    console.error('Content security check failed:', err.message)
+    next()
+  }
+}
+
 function removeThinkBlocks(text) {
   if (typeof text !== 'string' || !text.includes(THINK_OPEN)) {
     return text
@@ -249,7 +285,7 @@ function createThinkStripper() {
   }
 }
 
-app.use('/api/chat', requireProxyToken, validateChatRequest, rateLimit)
+app.use('/api/chat', requireProxyToken, validateChatRequest, rateLimit, checkContentSecurity)
 
 // Health check
 app.get('/api/health', (req, res) => {

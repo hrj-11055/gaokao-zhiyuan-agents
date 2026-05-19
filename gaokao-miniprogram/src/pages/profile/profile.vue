@@ -128,12 +128,17 @@
           <text class="setting-title">清除数据</text>
           <text class="setting-arrow">›</text>
         </view>
+        <view class="setting-item" @click="goPrivacy">
+          <text class="setting-title">隐私保护指引</text>
+          <text class="setting-arrow">›</text>
+        </view>
       </view>
     </view>
 
     <!-- 底部提示 -->
     <view class="footer-hint">
       <text class="hint-text">数据仅供参考，请以各省考试院公布信息为准</text>
+      <text class="privacy-link" @click="goPrivacy">《隐私保护指引》</text>
     </view>
   </view>
 </template>
@@ -294,6 +299,10 @@ function goHolland() {
   } else {
     uni.navigateTo({ url: '/pages/holland/holland' })
   }
+}
+
+function goPrivacy() {
+  uni.navigateTo({ url: '/pages/privacy/privacy' })
 }
 
 function clearData() {
@@ -711,5 +720,12 @@ onShareAppMessage(() => ({
 .hint-text {
   font-size: 22rpx;
   color: $text-muted;
+}
+
+.privacy-link {
+  display: block;
+  font-size: 22rpx;
+  color: $brand-primary;
+  margin-top: 8rpx;
 }
 </style>

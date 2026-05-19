@@ -3,6 +3,8 @@
 // 后端代理地址：47.113.125.147 当前反代到 gaokao-proxy，支持聊天、报告生成和报告静态访问。
 const API_BASE = import.meta.env.VITE_API_BASE || 'http://47.113.125.147'
 
+import { getStoredSession } from './membership.js'
+
 /**
  * 持久 UTF-8 解码器
  * 微信 chunk 边界可能切在中文字符中间，必须复用同一个 TextDecoder。
@@ -115,6 +117,7 @@ export function sendMessageStream({ query, conversationId, user, inputs = {}, on
   )
 
   // #ifdef MP-WEIXIN
+  const session = getStoredSession()
   const requestTask = uni.request({
     url: `${API_BASE}/api/chat/stream`,
     method: 'POST',
@@ -124,7 +127,10 @@ export function sendMessageStream({ query, conversationId, user, inputs = {}, on
       user,
       inputs
     },
-    header: { 'Content-Type': 'application/json' },
+    header: {
+      'Content-Type': 'application/json',
+      ...(session.sessionToken ? { Authorization: `Bearer ${session.sessionToken}` } : {}),
+    },
     enableChunked: true,
     success(res) {
       if (res.statusCode && res.statusCode !== 200) {
@@ -158,6 +164,7 @@ export function sendMessageStream({ query, conversationId, user, inputs = {}, on
  * @returns {Promise<{ answer: string, conversationId: string, messageId: string }>}
  */
 export async function sendMessageBlocking({ query, conversationId, user, inputs = {} }) {
+  const session = getStoredSession()
   const response = await uni.request({
     url: `${API_BASE}/api/chat`,
     method: 'POST',
@@ -167,7 +174,10 @@ export async function sendMessageBlocking({ query, conversationId, user, inputs 
       user,
       inputs
     },
-    header: { 'Content-Type': 'application/json' }
+    header: {
+      'Content-Type': 'application/json',
+      ...(session.sessionToken ? { Authorization: `Bearer ${session.sessionToken}` } : {}),
+    }
   })
 
   if (response.statusCode !== 200) {

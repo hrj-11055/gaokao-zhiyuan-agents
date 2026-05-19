@@ -152,6 +152,7 @@
     <!-- 免责声明 -->
     <view class="disclaimer">
       <text class="disclaimer-text">⚠️ 数据仅供参考，请以各省考试院公布信息为准</text>
+      <text class="privacy-link" @click="goPrivacy">《隐私保护指引》</text>
     </view>
   </view>
 </template>
@@ -239,6 +240,10 @@ function goReport() {
     return
   }
   uni.navigateTo({ url: '/pages/report/report' })
+}
+
+function goPrivacy() {
+  uni.navigateTo({ url: '/pages/privacy/privacy' })
 }
 
 function goChat() {
@@ -606,6 +611,13 @@ function onSmartFill() {
 .disclaimer-text {
   font-size: 22rpx;
   color: $text-muted;
+}
+
+.privacy-link {
+  display: block;
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 8rpx;
 }
 
 .report-entry {
