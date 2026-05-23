@@ -52,6 +52,8 @@ class ReportBuilderTests(unittest.TestCase):
             assert.equal(html.includes('gaokao-report-print-fix'), true)
             assert.equal(html.includes('@page'), true)
             assert.equal(html.includes('page-break'), true)
+            assert.equal(html.includes('font-size: 11pt'), true)
+            assert.equal(html.includes('font-size: 14px !important'), true)
             assert.equal(html.includes('AI 总评'), false)
             assert.equal(html.includes('作为AI'), false)
             assert.equal(html.includes('顾问结论'), true)

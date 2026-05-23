@@ -34,6 +34,9 @@ class ReportQualityImprovementTests(unittest.TestCase):
             "家长先看结论",
             "志愿执行清单",
             "每条建议必须包含：动作、原因、核验材料",
+            "综合报告正文总字数不少于 4500 字",
+            "每个 Tab 至少 650 字",
+            "字体可以适当小一些",
             "不要使用“AI 总评”",
             "少用空泛形容词",
         ]:
@@ -73,6 +76,8 @@ class ReportQualityImprovementTests(unittest.TestCase):
             assert.equal(html.includes('class="toc"'), true)
             assert.equal(html.includes('page-break-before'), true)
             assert.equal(html.includes('highlight-box'), true)
+            assert.equal(html.includes('font-size: 14px'), true)
+            assert.equal(html.includes('font-size: 26px'), true)
         """)
 
     def test_miniprogram_deep_report_cards_expose_actionable_summary(self):

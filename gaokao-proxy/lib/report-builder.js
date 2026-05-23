@@ -181,16 +181,16 @@ function injectResponsivePatch(html) {
         .header h1,
         .header-gradient h1,
         .hero h1 {
-          font-size: 28px !important;
+          font-size: 26px !important;
           line-height: 1.25 !important;
           letter-spacing: 0 !important;
         }
         h2 {
-          font-size: 22px !important;
+          font-size: 20px !important;
           line-height: 1.35 !important;
         }
         h3 {
-          font-size: 18px !important;
+          font-size: 17px !important;
           line-height: 1.4 !important;
         }
         .tab-nav {
@@ -240,7 +240,7 @@ function injectResponsivePatch(html) {
         li,
         td,
         th {
-          font-size: 15px !important;
+          font-size: 14px !important;
           line-height: 1.7 !important;
         }
         canvas {
@@ -292,7 +292,7 @@ function injectPrintPatch(html) {
           color: #111827 !important;
         }
         body {
-          font-size: 12pt;
+          font-size: 11pt;
           line-height: 1.65;
         }
         h1, h2, h3 {

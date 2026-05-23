@@ -194,6 +194,7 @@ function buildDeepReportHtml({ type, report }) {
       color: #1f2933;
       font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
       line-height: 1.75;
+      font-size: 14px;
     }
     .page {
       max-width: 860px;
@@ -211,7 +212,7 @@ function buildDeepReportHtml({ type, report }) {
     h1 {
       margin: 10px 0 12px;
       color: #111827;
-      font-size: 30px;
+      font-size: 26px;
       line-height: 1.25;
     }
     .meta {
@@ -220,7 +221,7 @@ function buildDeepReportHtml({ type, report }) {
       flex-wrap: wrap;
       margin-bottom: 30px;
       color: #52616f;
-      font-size: 14px;
+      font-size: 12px;
     }
     .pill {
       border: 1px solid #e5e7eb;
@@ -230,7 +231,7 @@ function buildDeepReportHtml({ type, report }) {
     .summary-title {
       margin: 22px 0 12px;
       color: #92400e;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 800;
     }
     .summary-card-row {
