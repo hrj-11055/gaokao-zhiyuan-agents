@@ -24,26 +24,21 @@ python3 run_major_eval.py --status                  # 查看所有门类进度�
 ### 院校评估报告
 
 ```bash
-# Claude Code CLI 版（需 open-websearch MCP，直接在终端运行，不要在 Claude Code 会话中嵌套调用）
-python3 run_univ_eval.py 广东省                     # 跑广东省所有本科院校
-python3 run_univ_eval.py 广东省 --public-only       # 只跑公办院校
-python3 run_univ_eval.py 广东省 --limit 3           # 只跑前 3 所（测试用）
-python3 run_univ_eval.py 广东省 --only 中山大学 华南理工大学  # 只跑指定大学
-python3 run_univ_eval.py --status                   # 查看各省进度总览
-python3 run_univ_eval.py --list 广东省              # 列出该省本科院校
+# Gemini CLI 版（当前主力，需 GEMINI_API_KEY 环境变量，直接在终端运行）
+python3 run_univ_eval_gemini_cli.py 广东省          # 跑广东省所有本科院校
+python3 run_univ_eval_gemini_cli.py 广东省 --limit 3 # 只跑前 3 所（测试用）
 
-# Gemini API 版（更快，需 GEMINI_API_KEY 环境变量）
-python3 run_univ_eval_gemini.py 广东省              # 同上参数
+# 旧版已归档到 scripts_archive/：run_univ_eval.py, run_univ_eval_cli.py, run_univ_eval_claude.py, run_univ_eval_gemini.py
 ```
 
-提示词模板：`跑大学提示词-v4.txt`（最新版，run_univ_eval.py 使用），`跑大学提示词-v3.txt`（run_univ_eval_claude.py），`跑大学提示词-v2.txt`（run_univ_eval_gemini.py / run_univ_eval_cli.py）
+提示词模板：`跑大学提示词-v4.txt`（最新版），`跑大学提示词-v2.txt`（Gemini 版）
 
 ### 质检与合并
 
 ```bash
 python3 check_reports.py                 # 默认检查 data/专业评估报告/（8 模块完整性 + 字数）
 python3 check_reports.py --min-chars 3000
-python3 consolidate_reports.py           # 合并进度/报告
+python3 scripts/data_quality_check.py --all           # 全面数据质量检查（JSON/数据库）
 ```
 
 ### 爬取与上传
@@ -81,6 +76,32 @@ python3 data/generate_score_sql.py --stats           # 生成 SQL（--import 通
 #        /api/schools/<name>/scores, /api/major/<keyword>/scores
 ```
 
+### 报告数据库（PostgreSQL on 159）
+
+```bash
+# 数据库结构：scripts/db_schema.sql
+# 数据导入脚本：scripts/import_reports_to_pg.py
+
+# 导入报告数据（需要 PG_PASSWORD 环境变量）
+PG_PASSWORD=xxx python3 scripts/import_reports_to_pg.py                  # 导入全部
+PG_PASSWORD=xxx python3 scripts/import_reports_to_pg.py --check-only     # 质量检查
+PG_PASSWORD=xxx python3 scripts/import_reports_to_pg.py --skip-universities  # 只导入专业
+
+# 报告查询 API（gaokao-proxy 内置，通过 PG_* 环境变量连接数据库）
+# 端点：
+#   GET /api/reports/health              数据库连接状态
+#   GET /api/reports/stats               专业/院校统计
+#   GET /api/reports/majors              专业列表（支持 search/category/level/min_score/page/page_size）
+#   GET /api/reports/majors/:code        单个专业详情
+#   GET /api/reports/universities        院校列表（支持 search/province/type/level/min_score/page/page_size）
+#   GET /api/reports/universities/:name  单个院校详情
+
+# API 测试
+bash scripts/test_report_api.sh http://127.0.0.1:3099
+```
+
+数据库连接：gaokao_db @ docker-db_postgres-1（159 服务器 Docker 内），772 条专业 + 956 条院校，通过 SSH 隧道导入。
+
 ### 测试
 
 ```bash
@@ -108,6 +129,13 @@ UniApp 小程序（Vue 3 + Vite + Sass）→ 编译为微信小程序
         │   ├── POST /api/report/generate  综合报告生成（DeepSeek）
         │   ├── GET  /reports/:file        静态报告托管
         │   ├── GET  /api/health           健康检查
+        │   ├── GET  /api/reports/*        报告查询（专业/院校，直连 PostgreSQL）
+        │   ├── POST /api/auth/wechat-login 微信登录
+        │   ├── GET  /api/membership/status 会员状态查询
+        │   ├── POST /api/payment/create   微信支付下单
+        │   ├── POST /api/payment/wechat/notify 支付回调
+        │   ├── POST /api/tts              语音合成
+        │   ├── POST /api/chat/feedback    对话反馈
         │   └── 限流 / CORS / Token 鉴权 / 超时控制 / Redis 冷却
         │
         ├── 腾讯云服务器（159.75.110.157）
@@ -194,7 +222,11 @@ npm start                  # 生产
 - **超时**：`REQUEST_TIMEOUT_MS`（默认 30s）、`STREAM_TIMEOUT_MS`（默认 120s）
 - **限流**：`RATE_LIMIT_WINDOW_MS`、`RATE_LIMIT_MAX`、`MAX_QUERY_LENGTH`
 - **报告生成**：`DEEPSEEK_API_KEY`、`REPORT_BASE_URL`、`REPORTS_DIR`
-- **数据路径**：`MAJOR_REPORTS_DIR`、`UNIV_REPORTS_DIR`、`SCORE_API_URL`
+- **数据路径**：`MAJOR_REPORTS_DIR`、`UNIV_REPORTS_DIR`（已废弃，报告改为 PG 直查）、`SCORE_API_URL`
+- **报告数据库**：`PG_HOST`、`PG_PORT`、`PG_DATABASE`、`PG_USER`、`PG_PASSWORD`
+- **Redis**：`REDIS_HOST`、`REDIS_PORT`、`REDIS_PASSWORD`
+- **TTS**：`VOLC_TTS_APPID`、`VOLC_TTS_TOKEN`（必须设置，无默认值）
+- **会话**：`COMMERCE_SESSION_SECRET`、`JWT_SECRET`
 
 ## Dify 知识库结构
 
@@ -212,10 +244,13 @@ npm start                  # 生产
 - `data/本科专业目录_2025.csv` — 教育部专业目录，839 条本科专业（CSV 编码 UTF-8 BOM，列：学科门类代码,学科门类,专业类代码,专业类,专业代码,专业名称,备注）
 - `高等院校名单.csv` — 全国高等学校名单（列：序号,学校名称,学校标识码,主管部门,所在地,办学层次,备注）— 院校评估脚本的数据源
 - `data/专业评估报告/` — 专业深度研究报告（`{专业代码}_{专业名称}.md`），含 `_progress_*.json` 进度文件
+- `data/专业评估报告_json_v2/` — 专业报告结构化 JSON（773 条，4 层结构，完整保留原文）
 - `data/大学评估报告/` — 院校评估报告（`{大学名称}.md`），含 `_progress_*.json` / `_progress_gemini_*.json` 进度文件
+- `data/大学评估报告_json_v2/` — 院校报告结构化 JSON（956 条，4 层结构，完整保留原文）
 - `data/knowledge-base/` — Dify 知识库源文件
 - `data/test-runs/` — 手动测试记录
 - `data/_import_scores.sql` — 分数线 SQL 导入文件（~14MB，由 generate_score_sql.py 生成）
+- `scripts/db_schema.sql` — 报告数据库 Schema（PostgreSQL，159 服务器 gaokao_db）
 
 ## 核心文档索引
 
@@ -287,6 +322,7 @@ GET  /reports/:filename    # 静态托管生成的报告文件
 | `dotenv` | 环境变量 |
 | `ioredis` | Redis 客户端（报告生成冷却） |
 | `@google/generative-ai` | Gemini API（报告生成备选） |
+| `pg` | PostgreSQL 客户端（报告数据查询） |
 
 ## 注意事项
 
@@ -294,8 +330,8 @@ GET  /reports/:filename    # 静态托管生成的报告文件
 - Gemini 版院校评估需 `GEMINI_API_KEY` 环境变量
 - 爬取脚本使用 `ssl._create_unverified_context()` 跳过 SSL 验证（掌上高考 API 限制）
 - `run_major_eval.py` 每条报告自带 5 秒延迟，避免 API 限流
-- 历史遗留脚本（`run_edu_eval.py`、`run_edu_eval_v2.py`、`run_edu_majors.py`、`run_law_majors.py`）为早期单门类版本，已被 `run_major_eval.py` 替代
-- 历史遗留院校评估脚本（`run_univ_eval_cli.py`、`run_univ_eval_claude.py`）为中间版本，已被 `run_univ_eval.py`（v4 提示词）和 `run_univ_eval_gemini.py` 替代
+- 历史遗留脚本（`run_edu_eval.py`、`run_edu_eval_v2.py`、`run_edu_majors.py`、`run_law_majors.py`）为早期单门类版本，已归档到 `scripts_archive/`
+- 历史遗留院校评估脚本（`run_univ_eval.py`、`run_univ_eval_cli.py`、`run_univ_eval_claude.py`、`run_univ_eval_gemini.py`）已归档到 `scripts_archive/`，当前主力为 `run_univ_eval_gemini_cli.py`
 - 历史遗留爬取脚本（`crawl_scores.py` v1-v4、`crawl_scores.sh`）已被 `crawl_scores_v5.py` 替代
 - 历史遗留上传脚本（`upload_kb1_to_dify.py`、`upload_kb1_v2.py`、`upload_kb2_to_dify.py`）已被 `upload_to_dify.py` 替代
 
