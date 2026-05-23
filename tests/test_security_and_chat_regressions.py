@@ -33,33 +33,37 @@ class SecurityAndChatRegressionTests(unittest.TestCase):
         self.assertIn("chatStore.messages[chatStore.messages.length - 1]", text)
 
     def test_miniprogram_api_base_is_build_configurable(self):
-        api_path = ROOT / "gaokao-miniprogram" / "src" / "api" / "dify.js"
-        text = api_path.read_text(encoding="utf-8")
+        config_path = ROOT / "gaokao-miniprogram" / "src" / "config.js"
+        text = config_path.read_text(encoding="utf-8")
 
         self.assertIn("import.meta.env.VITE_API_BASE", text)
         self.assertNotIn("const API_BASE = 'http://localhost:3001'", text)
         self.assertNotIn("aicoming.com.cn", text)
 
     def test_report_api_base_uses_same_live_proxy(self):
+        config_path = ROOT / "gaokao-miniprogram" / "src" / "config.js"
         report_path = ROOT / "gaokao-miniprogram" / "src" / "pages" / "report" / "report.vue"
-        text = report_path.read_text(encoding="utf-8")
+        text = config_path.read_text(encoding="utf-8")
+        report_text = report_path.read_text(encoding="utf-8")
 
         self.assertIn("import.meta.env.VITE_API_BASE", text)
         self.assertIn("http://47.113.125.147", text)
+        self.assertIn("requestBackend", report_text)
         self.assertNotIn("aicoming.com.cn", text)
 
     def test_chat_bubble_renders_markdown_as_rich_text(self):
         bubble_path = ROOT / "gaokao-miniprogram" / "src" / "components" / "ChatBubble.vue"
         text = bubble_path.read_text(encoding="utf-8")
 
-        self.assertIn("<rich-text :nodes=\"contentHtml\"", text)
+        self.assertIn(":nodes=\"contentHtml\"", text)
         self.assertIn("markdownToRichTextHtml", text)
 
     def test_proxy_has_basic_abuse_and_stream_cleanup_guards(self):
         server_path = ROOT / "gaokao-proxy" / "server.js"
         text = server_path.read_text(encoding="utf-8")
 
-        self.assertIn("express.json({ limit:", text)
+        self.assertIn("express.json({", text)
+        self.assertIn("limit: JSON_BODY_LIMIT", text)
         self.assertIn("rateLimit", text)
         self.assertIn("res.on('close'", text)
         self.assertNotIn("req.on('close'", text)

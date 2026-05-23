@@ -2,6 +2,12 @@
 
 const SCORE_API_URL = process.env.SCORE_API_URL || 'http://159.75.110.157/score-api'
 const pg = require('./pg')
+const { extractFullContent } = require('./deep-report-pdf')
+const {
+  fetchReportDetail,
+  hasReportDataApi,
+  listReports,
+} = require('./report-data-client')
 
 // 兴趣领域 → 专业门类代码前缀
 const INTEREST_TO_CODES = {
@@ -38,6 +44,34 @@ async function fetchMajorReports(questionnaire) {
 
   if (codes.size === 0) return []
 
+  if (hasReportDataApi()) {
+    try {
+      const rowsByCode = new Map()
+      for (const prefix of codes) {
+        const data = await listReports('major', {
+          category: prefix,
+          page_size: 20,
+          full: 1,
+        })
+        ;(data.data || []).forEach((row) => {
+          if (row.code && !rowsByCode.has(row.code)) {
+            rowsByCode.set(row.code, row)
+          }
+        })
+      }
+
+      return Array.from(rowsByCode.values())
+        .slice(0, 20)
+        .map((row) => {
+          const content = extractFullContent(row) || row.summary || ''
+          return `### 专业：${row.name}（${row.code}）\n${content.slice(0, 3500)}`
+        })
+        .filter(Boolean)
+    } catch (err) {
+      console.warn('fetchMajorReports data API failed:', err.message)
+    }
+  }
+
   try {
     const codePrefixes = Array.from(codes)
     const placeholders = codePrefixes.map((_, i) => `$${i + 1}`).join(', ')
@@ -72,11 +106,11 @@ async function fetchUnivReports(profile) {
 
   let recommendations = []
   try {
-    const url = `${SCORE_API_URL}/api/scores/recommend?province=${encodeURIComponent(province)}&score=${score}&category=${encodeURIComponent(category || '')}&year=2025&limit=15`
+    const url = `${SCORE_API_URL.replace(/\/+$/, '')}/api/recommend?province=${encodeURIComponent(province)}&score=${score}&category=${encodeURIComponent(category || '')}&year=2025&limit=15`
     const res = await fetch(url, { signal: AbortSignal.timeout(5000) })
     if (res.ok) {
       const data = await res.json()
-      recommendations = data.recommendations || []
+      recommendations = data.recommendations || data.schools || []
     }
   } catch (err) {
     console.warn('Score API failed:', err.message)
@@ -84,7 +118,27 @@ async function fetchUnivReports(profile) {
 
   if (recommendations.length === 0) return { recommendations: [], reports: [] }
 
-  const univNames = recommendations.slice(0, 5).map(r => r.school_name || r.name).filter(Boolean)
+  const univNames = recommendations.slice(0, 5).map(r => r.school_name || r.name || r.school).filter(Boolean)
+
+  if (hasReportDataApi()) {
+    const reports = []
+    for (const name of univNames) {
+      try {
+        const row = await fetchReportDetail('university', name, { full: true })
+        const content = extractFullContent(row) || row.summary || ''
+        if (content) {
+          reports.push(`### 院校深度研究资料：${row.name || name}\n${content.slice(0, 3500)}`)
+        }
+      } catch (err) {
+        console.warn(`fetchUnivReports data API failed for ${name}:`, err.message)
+      }
+    }
+
+    return {
+      recommendations: recommendations.slice(0, 10),
+      reports,
+    }
+  }
 
   let reports = []
   try {

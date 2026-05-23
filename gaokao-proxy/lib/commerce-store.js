@@ -35,6 +35,14 @@ function toOrder(row) {
   }
 }
 
+function toIntOrEmpty(value) {
+  if (value === '' || value === null || value === undefined) {
+    return ''
+  }
+  const number = Number(value)
+  return Number.isFinite(number) ? Math.trunc(number) : ''
+}
+
 function createCommerceStore({
   dbPath = process.env.COMMERCE_DB_PATH || path.join(__dirname, '..', 'data', 'gaokao-commerce.sqlite'),
   now = () => Date.now(),
@@ -59,6 +67,7 @@ function createCommerceStore({
       avatar_url TEXT,
       invited_by_user_id TEXT,
       profile_completed_at INTEGER,
+      profile_json TEXT,
       created_at INTEGER NOT NULL,
       updated_at INTEGER NOT NULL
     );
@@ -94,6 +103,11 @@ function createCommerceStore({
       raw_notify TEXT
     );
   `)
+
+  const userColumns = db.prepare('PRAGMA table_info(users)').all().map((column) => column.name)
+  if (!userColumns.includes('profile_json')) {
+    db.exec('ALTER TABLE users ADD COLUMN profile_json TEXT')
+  }
 
   const getUserById = db.prepare('SELECT * FROM users WHERE id = ?')
   const getUserByOpenid = db.prepare('SELECT * FROM users WHERE openid = ?')
@@ -150,6 +164,13 @@ function createCommerceStore({
     UPDATE users
     SET profile_completed_at = COALESCE(profile_completed_at, @completedAt),
         updated_at = @completedAt
+    WHERE id = @userId
+  `)
+  const saveUserProfile = db.prepare(`
+    UPDATE users
+    SET profile_json = @profileJson,
+        profile_completed_at = COALESCE(profile_completed_at, @updatedAt),
+        updated_at = @updatedAt
     WHERE id = @userId
   `)
   const insertOrder = db.prepare(`
@@ -209,6 +230,46 @@ function createCommerceStore({
         requiredCount: inviteRequired,
       },
       features: activeFeatures(active),
+    }
+  }
+
+  function normalizeProfile(profile = {}, timestamp = now()) {
+    const score = toIntOrEmpty(profile.score)
+    const rank = toIntOrEmpty(profile.rank)
+    return {
+      province: typeof profile.province === 'string' ? profile.province.trim() : '',
+      category: typeof profile.category === 'string' ? profile.category.trim() : '',
+      score,
+      rank,
+      family_resources: typeof profile.family_resources === 'string' ? profile.family_resources.trim() : '',
+      interest_subjects: typeof profile.interest_subjects === 'string' ? profile.interest_subjects.trim() : '',
+      region_preference: typeof profile.region_preference === 'string' ? profile.region_preference.trim() : '',
+      career_goal: typeof profile.career_goal === 'string' ? profile.career_goal.trim() : '',
+      updatedAt: timestamp,
+    }
+  }
+
+  function validateProfile(profile) {
+    if (!profile.province) {
+      throw new Error('province is required')
+    }
+    if (!['物理类', '历史类'].includes(profile.category)) {
+      throw new Error('category is invalid')
+    }
+    if (typeof profile.score !== 'number' || profile.score < 0 || profile.score > 750) {
+      throw new Error('score is invalid')
+    }
+  }
+
+  function parseProfile(row) {
+    if (!row || !row.profile_json) {
+      return normalizeProfile({ updatedAt: 0 }, 0)
+    }
+    try {
+      const profile = JSON.parse(row.profile_json)
+      return normalizeProfile(profile, profile.updatedAt || row.updated_at || 0)
+    } catch {
+      return normalizeProfile({ updatedAt: 0 }, 0)
     }
   }
 
@@ -333,6 +394,21 @@ function createCommerceStore({
   return {
     upsertWechatUser: upsertWechatUserTx,
     completeProfile: completeProfileTx,
+    saveProfile(userId, profile) {
+      const row = getUserById.get(userId)
+      if (!row) throw new Error('user not found')
+      const normalized = normalizeProfile(profile)
+      validateProfile(normalized)
+      saveUserProfile.run({
+        userId,
+        profileJson: JSON.stringify(normalized),
+        updatedAt: normalized.updatedAt,
+      })
+      return normalized
+    },
+    getProfile(userId) {
+      return parseProfile(getUserById.get(userId))
+    },
     getMembershipStatus,
     activateMembership,
     createPaymentOrder,

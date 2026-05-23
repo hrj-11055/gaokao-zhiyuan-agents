@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const uuid = require('uuid');
+const crypto = require('crypto');
 const zlib = require('zlib');
 const util = require('util');
 
@@ -20,7 +20,7 @@ async function textToSpeech(text) {
     });
 
     const audioChunks = [];
-    const requestId = uuid.v4();
+    const requestId = crypto.randomUUID();
 
     ws.on('open', async () => {
       try {

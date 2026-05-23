@@ -13,9 +13,15 @@ class SSEParserTests(unittest.TestCase):
     def run_node_parser_test(self, test_body: str):
         source_path = ROOT / "gaokao-miniprogram" / "src" / "api" / "dify.js"
         source = source_path.read_text(encoding="utf-8")
+        source = re.sub(r"import \{ API_BASE \} from '../config\.js'\n", "const API_BASE = 'http://localhost:3001'\n", source)
         source = re.sub(
-            r"const API_BASE = import\.meta\.env\.VITE_API_BASE \|\| '[^']+'",
-            "const API_BASE = 'http://localhost:3001'",
+            r"import \{ isWechatCloudContainerEnabled, requestBackend \} from './backend\.js'\n",
+            "const isWechatCloudContainerEnabled = () => false\nconst requestBackend = () => Promise.reject(new Error('unused'))\n",
+            source,
+        )
+        source = re.sub(
+            r"import \{ getStoredSession \} from './membership\.js'\n",
+            "const getStoredSession = () => ({ userId: '', sessionToken: '' })\n",
             source,
         )
 

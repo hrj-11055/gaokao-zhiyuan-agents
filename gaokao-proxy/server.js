@@ -2,7 +2,10 @@ require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const { generateReport, saveReport, REPORTS_DIR } = require('./lib/report-builder')
+const { generatePdfFromHtml } = require('./lib/pdf-generator')
 const { createReportRoutes } = require('./lib/report-routes')
+const { fetchReportDetail } = require('./lib/report-data-client')
+const { buildDeepReportHtml, generateDeepReportPdf } = require('./lib/deep-report-pdf')
 const redis = require('./lib/redis')
 const { textToSpeech } = require('./lib/tts')
 const { createCommerceStore } = require('./lib/commerce-store')
@@ -10,6 +13,7 @@ const { signSessionToken, verifySessionToken } = require('./lib/session-token')
 const { exchangeCodeForSession } = require('./lib/wechat-auth')
 const { createJsapiPayment, parseWechatPayNotify } = require('./lib/wechat-pay')
 const { msgSecCheck } = require('./lib/content-security')
+const { buildProfileGateAnswer } = require('./lib/profile-followup-gate')
 const fs = require('fs').promises
 const path = require('path')
 
@@ -25,6 +29,15 @@ const RATE_LIMIT_MAX = Number(process.env.RATE_LIMIT_MAX || 30)
 const MAX_QUERY_LENGTH = Number(process.env.MAX_QUERY_LENGTH || 2000)
 const PROXY_API_TOKEN = process.env.PROXY_API_TOKEN || ''
 const COMMERCE_SESSION_SECRET = process.env.COMMERCE_SESSION_SECRET || process.env.JWT_SECRET || 'local-commerce-session-secret'
+const LIMITED_FREE_UNLOCK_ENABLED = process.env.LIMITED_FREE_UNLOCK_ENABLED !== 'false'
+const QUESTIONNAIRE_REQUIRED_COUNT = 21
+const QUESTIONNAIRE_ACTIVE_IDS = [
+  'q1', 'q2', 'q3', 'q4', 'q5',
+  'q6', 'q7', 'q8',
+  'q10', 'q11', 'q12', 'q13',
+  'q14', 'q15', 'q16',
+  'q17', 'q18', 'q19', 'q20', 'q21', 'q22'
+]
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || '')
   .split(',')
   .map((origin) => origin.trim())
@@ -36,7 +49,7 @@ const REPORT_COOLDOWN_MS = 10 * 60 * 1000
 const THINK_OPEN = '<think>'
 const THINK_CLOSE = '</think>'
 const commerceStore = createCommerceStore()
-const reportRoutes = createReportRoutes(true) // Full access for authenticated proxy
+const reportRoutes = createReportRoutes(false)
 
 if (!DIFY_API_KEY) {
   console.error('ERROR: DIFY_API_KEY is not set in .env')
@@ -136,6 +149,15 @@ function requireCommerceAuth(req, res, next) {
   }
 }
 
+function getOptionalCommerceAuth(req) {
+  try {
+    const token = getBearerToken(req)
+    return verifySessionToken(token, COMMERCE_SESSION_SECRET)
+  } catch {
+    return null
+  }
+}
+
 function requireMembershipForReports(req, res, next) {
   const membership = commerceStore.getMembershipStatus(req.commerceAuth.userId)
   if (membership.status !== 'active') {
@@ -196,6 +218,55 @@ async function checkContentSecurity(req, res, next) {
   } catch (err) {
     console.error('Content security check failed:', err.message)
     next()
+  }
+}
+
+function sanitizeProfileInputs(inputs = {}) {
+  const clean = {}
+  if (typeof inputs.province === 'string' && inputs.province.trim()) {
+    clean.province = inputs.province.trim()
+  }
+  if (typeof inputs.category === 'string' && inputs.category.trim()) {
+    clean.category = inputs.category.trim()
+  }
+  if (inputs.score !== undefined && inputs.score !== '') {
+    const score = Number(inputs.score)
+    if (Number.isFinite(score)) {
+      clean.score = String(Math.trunc(score))
+    }
+  }
+  if (inputs.rank !== undefined && inputs.rank !== '') {
+    const rank = Number(inputs.rank)
+    if (Number.isFinite(rank) && rank > 0) {
+      clean.rank = String(Math.trunc(rank))
+    }
+  }
+  ;['family_resources', 'interest_subjects', 'region_preference', 'career_goal'].forEach((key) => {
+    if (typeof inputs[key] === 'string' && inputs[key].trim()) {
+      clean[key] = inputs[key].trim()
+    }
+  })
+  return clean
+}
+
+function buildProfileInputs(profile = {}) {
+  const inputs = {}
+  if (profile.province) inputs.province = profile.province
+  if (profile.category) inputs.category = profile.category
+  if (typeof profile.score === 'number') inputs.score = String(profile.score)
+  if (typeof profile.rank === 'number' && profile.rank > 0) inputs.rank = String(profile.rank)
+  ;['family_resources', 'interest_subjects', 'region_preference', 'career_goal'].forEach((key) => {
+    if (profile[key]) inputs[key] = profile[key]
+  })
+  return inputs
+}
+
+function mergeProfileInputs(req, requestInputs = {}) {
+  const auth = req.commerceAuth || getOptionalCommerceAuth(req)
+  const serverProfile = auth?.userId ? commerceStore.getProfile(auth.userId) : {}
+  return {
+    ...buildProfileInputs(serverProfile),
+    ...sanitizeProfileInputs(requestInputs),
   }
 }
 
@@ -300,6 +371,35 @@ app.get('/api/reports/majors/:code', reportRoutes.getMajor)
 app.get('/api/reports/universities', reportRoutes.listUniversities)
 app.get('/api/reports/universities/:name', reportRoutes.getUniversity)
 
+app.get('/api/reports/deep/pdf', requireCommerceAuth, requireMembershipForReports, async (req, res) => {
+  const { type = '', id = '' } = req.query || {}
+  if (!type || !id) {
+    res.status(400).json({ error: 'type and id are required' })
+    return
+  }
+
+  try {
+    const report = await fetchReportDetail(type, id, { full: true })
+    buildDeepReportHtml({ type, report })
+    const { filename, pdfPath, title } = await generateDeepReportPdf({
+      type,
+      report,
+      outputDir: path.join(REPORTS_DIR, 'deep-reports'),
+    })
+
+    res.setHeader('Content-Type', 'application/pdf')
+    res.setHeader(
+      'Content-Disposition',
+      `attachment; filename*=UTF-8''${encodeURIComponent(`${title}-${filename}`)}`
+    )
+    res.sendFile(pdfPath)
+  } catch (err) {
+    console.error('Deep report PDF error:', err.message)
+    const status = err.status === 404 ? 404 : 500
+    res.status(status).json({ error: err.status === 404 ? '报告不存在' : '深度报告 PDF 生成失败' })
+  }
+})
+
 app.post('/api/auth/wechat-login', async (req, res) => {
   const { code, inviterId = '' } = req.body || {}
   try {
@@ -331,6 +431,23 @@ app.get('/api/membership/status', requireCommerceAuth, (req, res) => {
   res.json(commerceStore.getMembershipStatus(req.commerceAuth.userId))
 })
 
+app.post('/api/membership/limited-free-unlock', requireCommerceAuth, (req, res) => {
+  if (!LIMITED_FREE_UNLOCK_ENABLED) {
+    res.status(403).json({ error: '限时免费入口已关闭' })
+    return
+  }
+
+  try {
+    const membership = commerceStore.activateMembership(req.commerceAuth.userId, 'limited_free')
+    res.json({
+      status: 'ok',
+      membership,
+    })
+  } catch (err) {
+    res.status(400).json({ error: err.message || '限时免费解锁失败' })
+  }
+})
+
 app.post('/api/profile/complete', requireCommerceAuth, (req, res) => {
   try {
     const result = commerceStore.completeProfile(req.commerceAuth.userId)
@@ -342,6 +459,28 @@ app.post('/api/profile/complete', requireCommerceAuth, (req, res) => {
   } catch (err) {
     res.status(400).json({ error: err.message || '保存用户资料失败' })
   }
+})
+
+app.post('/api/profile', requireCommerceAuth, (req, res) => {
+  try {
+    const profile = commerceStore.saveProfile(req.commerceAuth.userId, req.body?.profile || {})
+    const completion = commerceStore.completeProfile(req.commerceAuth.userId)
+    res.json({
+      status: 'ok',
+      profile,
+      inviteCounted: completion.inviteCounted,
+      membership: completion.membership,
+    })
+  } catch (err) {
+    res.status(400).json({ error: err.message || '保存用户资料失败' })
+  }
+})
+
+app.get('/api/profile', requireCommerceAuth, (req, res) => {
+  res.json({
+    profile: commerceStore.getProfile(req.commerceAuth.userId),
+    membership: commerceStore.getMembershipStatus(req.commerceAuth.userId),
+  })
 })
 
 app.post('/api/payment/create', requireCommerceAuth, async (req, res) => {
@@ -412,6 +551,15 @@ app.post('/api/chat', async (req, res) => {
 
   try {
     const { query, conversation_id = '', user, inputs = {} } = req.body
+    const finalInputs = mergeProfileInputs(req, inputs)
+    const gateAnswer = buildProfileGateAnswer({
+      query,
+      inputs: finalInputs,
+      conversationId: conversation_id,
+    })
+    if (gateAnswer) {
+      return res.json(gateAnswer)
+    }
 
     const response = await fetch(`${DIFY_API_URL}/v1/chat-messages`, {
       method: 'POST',
@@ -420,7 +568,7 @@ app.post('/api/chat', async (req, res) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        inputs,
+        inputs: finalInputs,
         query,
         response_mode: 'blocking',
         conversation_id,
@@ -464,6 +612,36 @@ app.post('/api/chat/stream', async (req, res) => {
 
   try {
     const { query, conversation_id = '', user, inputs = {} } = req.body
+    const finalInputs = mergeProfileInputs(req, inputs)
+    const gateAnswer = buildProfileGateAnswer({
+      query,
+      inputs: finalInputs,
+      conversationId: conversation_id,
+    })
+    if (gateAnswer) {
+      res.setHeader('Content-Type', 'text/event-stream')
+      res.setHeader('Cache-Control', 'no-cache')
+      res.setHeader('Connection', 'keep-alive')
+      res.setHeader('X-Accel-Buffering', 'no')
+      if (typeof res.flushHeaders === 'function') {
+        res.flushHeaders()
+      }
+      res.write(`data: ${JSON.stringify({
+        event: 'message',
+        answer: gateAnswer.answer,
+        conversation_id: gateAnswer.conversation_id,
+        message_id: gateAnswer.message_id,
+        metadata: gateAnswer.metadata,
+      })}\n\n`)
+      res.write(`data: ${JSON.stringify({
+        event: 'message_end',
+        conversation_id: gateAnswer.conversation_id,
+        message_id: gateAnswer.message_id,
+        metadata: gateAnswer.metadata,
+      })}\n\n`)
+      res.end()
+      return
+    }
 
     const response = await fetch(`${DIFY_API_URL}/v1/chat-messages`, {
       method: 'POST',
@@ -472,7 +650,7 @@ app.post('/api/chat/stream', async (req, res) => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        inputs,
+        inputs: finalInputs,
         query,
         response_mode: 'streaming',
         conversation_id,
@@ -516,6 +694,9 @@ app.post('/api/chat/stream', async (req, res) => {
         const data = JSON.parse(dataText)
         if (typeof data.answer === 'string') {
           data.answer = thinkStripper.strip(data.answer)
+          if ((data.event === 'message' || data.event === 'agent_message') && data.answer === '') {
+            return ''
+          }
         }
         return `${lines.filter((line) => !line.startsWith('data:')).join('\n')}\ndata: ${JSON.stringify(removeThinkBlocksDeep(data))}\n\n`
       } catch {
@@ -539,7 +720,10 @@ app.post('/api/chat/stream', async (req, res) => {
           const blocks = sseBuffer.split('\n\n')
           sseBuffer = blocks.pop()
           for (const block of blocks) {
-            res.write(transformSseBlock(block))
+            const transformed = transformSseBlock(block)
+            if (transformed) {
+              res.write(transformed)
+            }
           }
         }
       }
@@ -561,9 +745,6 @@ app.post('/api/chat/stream', async (req, res) => {
     clearTimeout(timeout)
   }
 })
-
-// 引入 PDF 生成器
-const { generatePdfFromHtml } = require('./lib/pdf-generator')
 
 // 静态报告文件 (拦截 .pdf 并在需要时生成)
 app.get('/reports/:filename', async (req, res, next) => {
@@ -592,8 +773,7 @@ app.get('/reports/:filename', async (req, res, next) => {
       return next()
     } catch (err) {
       console.error(`HTML not found or PDF generation failed for ${filename}:`, err.message)
-      // 如果 HTML 也不存在或生成失败，也放行（会报 404）
-      return next()
+      return res.status(404).json({ error: 'PDF 未生成成功，请重新生成报告' })
     }
   }
   next()
@@ -649,11 +829,11 @@ app.post('/api/report/generate', requireCommerceAuth, requireMembershipForReport
 
   const reportUserId = req.commerceAuth.userId || userId
 
-  const questionCount = Object.values(questionnaire || {})
+  const questionCount = QUESTIONNAIRE_ACTIVE_IDS.map(id => questionnaire?.[id])
     .filter(v => v !== '' && !(Array.isArray(v) && v.length === 0)).length
   const mbtiCompleted = Boolean(assessments?.mbti?.completed)
   const hollandCompleted = Boolean(assessments?.holland?.completed)
-  if (questionCount < 22 || !mbtiCompleted || !hollandCompleted) {
+  if (questionCount < QUESTIONNAIRE_REQUIRED_COUNT || !mbtiCompleted || !hollandCompleted) {
     return res.status(400).json({ error: '请先完成全部 3 项测评后再生成综合报告' })
   }
 

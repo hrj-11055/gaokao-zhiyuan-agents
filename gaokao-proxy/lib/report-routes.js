@@ -1,6 +1,13 @@
 'use strict'
 
 const { query, checkConnection } = require('./pg')
+const {
+  fetchReportDetail,
+  fetchReportHealth,
+  fetchReportStats,
+  hasReportDataApi,
+  listReports,
+} = require('./report-data-client')
 
 const DEFAULT_PAGE_SIZE = 20
 const MAX_PAGE_SIZE = 100
@@ -93,11 +100,23 @@ function stripPaidFieldsUniv(row, hasFullAccess) {
   }
 }
 
+function queryForAccess(params, hasFullAccess) {
+  if (hasFullAccess) return params
+  const safe = { ...params }
+  delete safe.full
+  return safe
+}
+
 function createReportRoutes(hasFullAccess) {
   return {
     // GET /api/reports/majors?search=&category=&level=&min_score=&page=&page_size=
     async listMajors(req, res) {
       try {
+        if (hasReportDataApi()) {
+          res.json(await listReports('major', queryForAccess(req.query, hasFullAccess)))
+          return
+        }
+
         const { page, pageSize, offset } = parsePagination(req.query)
         const { conditions, values, idx } = buildMajorWhere(req.query)
 
@@ -136,6 +155,11 @@ function createReportRoutes(hasFullAccess) {
     // GET /api/reports/majors/:code
     async getMajor(req, res) {
       try {
+        if (hasReportDataApi()) {
+          res.json(await fetchReportDetail('major', req.params.code, { full: hasFullAccess }))
+          return
+        }
+
         const { code } = req.params
         const result = await query(
           'SELECT code, name, category, data FROM majors WHERE code = $1',
@@ -154,6 +178,11 @@ function createReportRoutes(hasFullAccess) {
     // GET /api/reports/universities?search=&province=&type=&level=&min_score=&page=&page_size=
     async listUniversities(req, res) {
       try {
+        if (hasReportDataApi()) {
+          res.json(await listReports('university', queryForAccess(req.query, hasFullAccess)))
+          return
+        }
+
         const { page, pageSize, offset } = parsePagination(req.query)
         const { conditions, values, idx } = buildUnivWhere(req.query)
 
@@ -192,6 +221,11 @@ function createReportRoutes(hasFullAccess) {
     // GET /api/reports/universities/:name
     async getUniversity(req, res) {
       try {
+        if (hasReportDataApi()) {
+          res.json(await fetchReportDetail('university', req.params.name, { full: hasFullAccess }))
+          return
+        }
+
         const name = decodeURIComponent(req.params.name)
         const result = await query(
           'SELECT name, province, univ_type, data FROM universities WHERE name = $1',
@@ -210,6 +244,11 @@ function createReportRoutes(hasFullAccess) {
     // GET /api/reports/stats
     async getStats(_req, res) {
       try {
+        if (hasReportDataApi()) {
+          res.json(await fetchReportStats())
+          return
+        }
+
         const result = await query('SELECT * FROM stats_overview')
         const stats = {}
         for (const row of result.rows) {
@@ -230,6 +269,21 @@ function createReportRoutes(hasFullAccess) {
 
     // GET /api/reports/health
     async healthCheck(_req, res) {
+      if (hasReportDataApi()) {
+        try {
+          res.json(await fetchReportHealth())
+          return
+        } catch (err) {
+          res.json({
+            status: 'degraded',
+            postgres: 'disconnected',
+            data_api: 'failed',
+            error: err.message,
+          })
+          return
+        }
+      }
+
       const pgOk = await checkConnection()
       res.json({
         status: pgOk ? 'ok' : 'degraded',

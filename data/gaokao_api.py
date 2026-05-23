@@ -16,10 +16,16 @@
   GET /api/schools/<name>/scores     - 查询指定院校分数线
   GET /api/schools/<name>/min-scores - 查询指定院校各省最低录取分（院校级）
   GET /api/major/<keyword>/scores    - 按专业关键词查询
+  GET /api/reports/health            - 报告库健康检查
+  GET /api/reports/majors            - 查询专业深度报告
+  GET /api/reports/majors/<code>     - 查询单个专业深度报告
+  GET /api/reports/universities      - 查询大学深度报告
+  GET /api/reports/universities/<name> - 查询单个大学深度报告
 """
 
 import os
 import psycopg2
+from functools import wraps
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
@@ -34,8 +40,18 @@ PG_CONFIG = {
     "dbname": os.environ.get("PG_DB", "gaokao"),
 }
 
+REPORT_API_TOKEN = os.environ.get("REPORT_API_TOKEN", "")
+REPORT_PG_CONFIG = {
+    "host": os.environ.get("REPORT_PG_HOST", os.environ.get("PG_HOST", "localhost")),
+    "port": int(os.environ.get("REPORT_PG_PORT", os.environ.get("PG_PORT", "5432"))),
+    "user": os.environ.get("REPORT_PG_USER", os.environ.get("PG_USER", "postgres")),
+    "password": os.environ.get("REPORT_PG_PASSWORD", os.environ.get("PG_PASSWORD", "postgres")),
+    "dbname": os.environ.get("REPORT_PG_DB", "gaokao_db"),
+}
+
 # 全局连接
 _conn = None
+_report_conn = None
 
 
 def query(sql, params=None):
@@ -55,6 +71,145 @@ def query(sql, params=None):
     except Exception:
         _conn = None
         raise
+
+
+def report_query(sql, params=None):
+    global _report_conn
+    try:
+        if _report_conn is None or _report_conn.closed:
+            _report_conn = psycopg2.connect(**REPORT_PG_CONFIG)
+        with _report_conn.cursor() as cur:
+            cur.execute(sql, params)
+            if cur.description:
+                cols = [desc[0] for desc in cur.description]
+                rows = [dict(zip(cols, row)) for row in cur.fetchall()]
+                _report_conn.rollback()
+                return rows
+            _report_conn.rollback()
+            return []
+    except Exception:
+        _report_conn = None
+        raise
+
+
+def require_report_token(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        if REPORT_API_TOKEN and request.headers.get("X-Report-Token") != REPORT_API_TOKEN:
+            return jsonify({"error": "unauthorized"}), 401
+        return func(*args, **kwargs)
+
+    return wrapper
+
+
+def parse_pagination_args():
+    page = max(1, request.args.get("page", 1, type=int))
+    page_size = min(100, max(1, request.args.get("page_size", 20, type=int)))
+    return page, page_size, (page - 1) * page_size
+
+
+def wants_full_report():
+    return request.args.get("full", "").lower() in ("1", "true", "yes")
+
+
+def report_summary(data):
+    if not isinstance(data, dict):
+        return ""
+    layer2 = data.get("layer2_core") or {}
+    if isinstance(layer2, dict) and layer2.get("summary"):
+        return layer2["summary"]
+    layer1 = data.get("layer1_overview") or {}
+    if isinstance(layer1, dict) and layer1.get("summary"):
+        return layer1["summary"]
+    layer4 = data.get("layer4_supplement") or {}
+    if isinstance(layer4, dict) and layer4.get("full_raw_content"):
+        return layer4["full_raw_content"][:260]
+    return ""
+
+
+def public_major(row):
+    data = row.get("data") or {}
+    return {
+        "code": row.get("code"),
+        "name": row.get("name"),
+        "category": row.get("category"),
+        "overview": data.get("layer1_overview") if isinstance(data, dict) else None,
+        "summary": report_summary(data),
+        "word_count": row.get("word_count") or 0,
+        "available_pdf": (row.get("word_count") or 0) >= 5000,
+    }
+
+
+def public_university(row):
+    data = row.get("data") or {}
+    return {
+        "name": row.get("name"),
+        "province": row.get("province"),
+        "univ_type": row.get("univ_type"),
+        "overview": data.get("layer1_overview") if isinstance(data, dict) else None,
+        "summary": report_summary(data),
+        "word_count": row.get("word_count") or 0,
+        "available_pdf": (row.get("word_count") or 0) >= 5000,
+    }
+
+
+def build_major_where():
+    conditions = []
+    params = []
+
+    category = request.args.get("category", "")
+    if category:
+        conditions.append("category LIKE %s")
+        params.append(f"{category}%")
+
+    level = request.args.get("level", "")
+    if level:
+        conditions.append("(data->'layer1_overview'->>'recommendation_level') = %s")
+        params.append(level)
+
+    search = request.args.get("search", "")
+    if search:
+        conditions.append("(name ILIKE %s OR code ILIKE %s)")
+        params.extend([f"%{search}%", f"%{search}%"])
+
+    min_score = request.args.get("min_score", type=float)
+    if min_score is not None:
+        conditions.append("NULLIF(data->'layer1_overview'->>'weighted_score', '')::float >= %s")
+        params.append(min_score)
+
+    return conditions, params
+
+
+def build_university_where():
+    conditions = []
+    params = []
+
+    province = request.args.get("province", "")
+    if province:
+        conditions.append("province LIKE %s")
+        params.append(f"%{province}%")
+
+    univ_type = request.args.get("type", "")
+    if univ_type:
+        conditions.append("univ_type = %s")
+        params.append(univ_type)
+
+    level = request.args.get("level", "")
+    if level:
+        conditions.append("(data->'layer1_overview'->>'recommendation_level') = %s")
+        params.append(level)
+
+    search = request.args.get("search", "")
+    if search:
+        conditions.append("name ILIKE %s")
+        params.append(f"%{search}%")
+
+    min_score = request.args.get("min_score", type=float)
+    if min_score is not None:
+        conditions.append("NULLIF(data->'layer1_overview'->>'weighted_score', '')::float >= %s")
+        params.append(min_score)
+
+    return conditions, params
 
 
 # ============================================================
@@ -417,6 +572,122 @@ def major_scores(keyword):
     """.format(where=where)
     rows = query(sql, params + [limit])
     return jsonify({"total": len(rows), "data": rows})
+
+
+@app.route("/api/reports/health")
+@require_report_token
+def reports_health():
+    try:
+        majors = report_query("SELECT COUNT(*) AS total FROM majors")[0]["total"]
+        universities = report_query("SELECT COUNT(*) AS total FROM universities")[0]["total"]
+        return jsonify({
+            "status": "ok",
+            "postgres": "connected",
+            "majors": majors,
+            "universities": universities,
+        })
+    except Exception as e:
+        return jsonify({
+            "status": "degraded",
+            "postgres": "disconnected",
+            "message": str(e),
+        }), 500
+
+
+@app.route("/api/reports/stats")
+@require_report_token
+def reports_stats():
+    rows = report_query("SELECT * FROM stats_overview")
+    stats = {}
+    for row in rows:
+        stats[row["table_name"]] = {
+            "total": int(row["total_count"]),
+            "green": int(row["green_count"]),
+            "yellow": int(row["yellow_count"]),
+            "red": int(row["red_count"]),
+            "avg_score": float(row["avg_score"] or 0),
+        }
+    return jsonify(stats)
+
+
+@app.route("/api/reports/majors")
+@require_report_token
+def reports_majors():
+    page, page_size, offset = parse_pagination_args()
+    conditions, params = build_major_where()
+    where = "WHERE " + " AND ".join(conditions) if conditions else ""
+
+    total = report_query(f"SELECT COUNT(*) AS total FROM majors {where}", params)[0]["total"]
+    rows = report_query(
+        f"""
+        SELECT code, name, category, data, word_count
+        FROM majors {where}
+        ORDER BY NULLIF(data->'layer1_overview'->>'weighted_score', '')::float DESC NULLS LAST
+        LIMIT %s OFFSET %s
+        """,
+        params + [page_size, offset],
+    )
+
+    data = rows if wants_full_report() else [public_major(row) for row in rows]
+    return jsonify({
+        "total": int(total),
+        "page": page,
+        "page_size": page_size,
+        "data": data,
+    })
+
+
+@app.route("/api/reports/majors/<code>")
+@require_report_token
+def reports_major_detail(code):
+    rows = report_query(
+        "SELECT code, name, category, data, word_count FROM majors WHERE code = %s",
+        [code],
+    )
+    if not rows:
+        return jsonify({"error": "专业不存在"}), 404
+    row = rows[0]
+    return jsonify(row if wants_full_report() else public_major(row))
+
+
+@app.route("/api/reports/universities")
+@require_report_token
+def reports_universities():
+    page, page_size, offset = parse_pagination_args()
+    conditions, params = build_university_where()
+    where = "WHERE " + " AND ".join(conditions) if conditions else ""
+
+    total = report_query(f"SELECT COUNT(*) AS total FROM universities {where}", params)[0]["total"]
+    rows = report_query(
+        f"""
+        SELECT name, province, univ_type, data, word_count
+        FROM universities {where}
+        ORDER BY NULLIF(data->'layer1_overview'->>'weighted_score', '')::float DESC NULLS LAST
+        LIMIT %s OFFSET %s
+        """,
+        params + [page_size, offset],
+    )
+
+    data = rows if wants_full_report() else [public_university(row) for row in rows]
+    return jsonify({
+        "total": int(total),
+        "page": page,
+        "page_size": page_size,
+        "data": data,
+    })
+
+
+@app.route("/api/reports/universities/<path:name>")
+@require_report_token
+def reports_university_detail(name):
+    rows = report_query(
+        "SELECT name, province, univ_type, data, word_count FROM universities WHERE name = %s",
+        [name],
+    )
+    if not rows:
+        return jsonify({"error": "院校不存在"}), 404
+    row = rows[0]
+    return jsonify(row if wants_full_report() else public_university(row))
 
 
 if __name__ == "__main__":

@@ -307,11 +307,34 @@ def main():
     if not args:
         print("用法: python3 run_major_eval.py <门类代码> [--retry] [--only 代码1 代码2 ...]")
         print("      python3 run_major_eval.py --status")
+        print("      python3 run_major_eval.py --start <起始门类代码> --end <结束门类代码> [--retry]")
         print()
         print("门类代码:")
         for code, name in CATEGORY_MAP.items():
             print(f"  {code}  {name}")
         sys.exit(0)
+
+    retry_mode = "--retry" in args
+
+    if "--start" in args and "--end" in args:
+        start_idx = args.index("--start")
+        start_category = args[start_idx + 1]
+        end_idx = args.index("--end")
+        end_category = args[end_idx + 1]
+
+        category_codes_to_run = []
+        for code in sorted(CATEGORY_MAP.keys()):
+            if start_category <= code <= end_category:
+                category_codes_to_run.append(code)
+
+        if not category_codes_to_run:
+            print(f"错误: 指定的门类范围 '{start_category}' 到 '{end_category}' 无效或没有包含任何门类。")
+            sys.exit(1)
+
+        for category_code in category_codes_to_run:
+            print(f"\n--- 正在处理门类: {CATEGORY_MAP.get(category_code, category_code)} ({category_code}) ---\n")
+            run_category(category_code, None, retry_mode)
+        return
 
     if args[0] == "--status":
         show_status()
@@ -322,7 +345,7 @@ def main():
         print(f"错误: 未知门类代码 '{category_code}'")
         sys.exit(1)
 
-    retry_mode = "--retry" in args
+
     only_codes = None
     if "--only" in args:
         idx = args.index("--only")

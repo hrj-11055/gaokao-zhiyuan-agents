@@ -36,6 +36,8 @@ class MembershipServerContractTests(unittest.TestCase):
         self.assertIn("app.post('/api/auth/wechat-login'", text)
         self.assertIn("app.get('/api/membership/status'", text)
         self.assertIn("app.post('/api/profile/complete'", text)
+        self.assertIn("app.post('/api/membership/limited-free-unlock'", text)
+        self.assertIn("activateMembership(req.commerceAuth.userId, 'limited_free')", text)
         self.assertIn("app.post('/api/payment/create'", text)
         self.assertIn("app.get('/api/payment/order/:orderId'", text)
         self.assertIn("app.post('/api/payment/wechat/notify'", text)
