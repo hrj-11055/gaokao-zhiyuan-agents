@@ -1,18 +1,31 @@
 <template>
   <view class="mbti-result-page">
+    <!-- 炫彩背景氛围粒子 -->
+    <view class="cyber-glow-bg-indigo" />
+    <view class="cyber-glow-bg-orange" />
+
     <!-- 未完成提示 -->
     <view v-if="!result" class="empty-state">
-      <text class="empty-icon">📋</text>
+      <view class="empty-icon-outer">
+        <view class="empty-icon-glow" />
+        <view class="empty-icon">📋</view>
+      </view>
       <text class="empty-title">尚未完成测评</text>
       <text class="empty-desc">请先完成 MBTI 性格测试</text>
-      <button class="primary-btn" @click="goBack">返回测评</button>
+      <button class="primary-btn" @click="goBack">前往测试</button>
     </view>
 
     <!-- 结果内容 -->
     <view v-else class="result-content">
       <!-- 结果头部 - 渐变背景 -->
       <view class="result-header">
-        <view class="type-badge">{{ result.type }}</view>
+        <view class="header-glow" />
+        <view v-if="resultVersion" class="version-label" :class="resultVersion">
+          <text class="version-label-text">{{ resultVersion === 'basic' ? '⚡ 精简版测评' : '🔬 完整版测评' }}</text>
+        </view>
+        <view class="type-badge-wrap">
+          <view class="type-badge">{{ result.type }}</view>
+        </view>
         <text class="type-name">{{ typeInfo?.name || '' }}</text>
         <view class="type-tags">
           <text v-for="(tag, index) in typeInfo?.tags" :key="index" class="tag">{{ tag }}</text>
@@ -22,7 +35,10 @@
       <!-- 维度得分 -->
       <view class="section">
         <view class="section-header">
-          <text class="section-title">维度得分</text>
+          <view class="section-title-wrap">
+            <view class="title-dot" />
+            <text class="section-title">性格维度结果</text>
+          </view>
         </view>
         <view class="dimensions-list">
           <view v-for="(dim, key) in dimensions" :key="key" class="dimension-item">
@@ -34,13 +50,23 @@
                 {{ dim.rightLabel }}
               </text>
             </view>
-            <view class="score-bar">
-              <view class="bar-fill left" :style="{ width: getLeftPercent(dim.left, dim.right) + '%' }"></view>
-              <view class="bar-fill right" :style="{ width: getRightPercent(dim.left, dim.right) + '%' }"></view>
+            <view class="score-bar-wrap">
+              <view class="score-bar">
+                <view class="bar-fill left" :style="{ width: getLeftPercent(dim.left, dim.right) + '%' }">
+                  <view class="bar-glow-dot left" />
+                </view>
+                <view class="bar-fill right" :style="{ width: getRightPercent(dim.left, dim.right) + '%' }">
+                  <view class="bar-glow-dot right" />
+                </view>
+              </view>
             </view>
             <view class="score-values">
-              <text class="score-value left">{{ result.scores[dim.left] }}</text>
-              <text class="score-value right">{{ result.scores[dim.right] }}</text>
+              <text class="score-value left" :class="{ active: result.scores[dim.left] >= result.scores[dim.right] }">
+                {{ getLeftPercent(dim.left, dim.right) }}%
+              </text>
+              <text class="score-value right" :class="{ active: result.scores[dim.right] > result.scores[dim.left] }">
+                {{ getRightPercent(dim.left, dim.right) }}%
+              </text>
             </view>
           </view>
         </view>
@@ -49,11 +75,16 @@
       <!-- 性格特征 -->
       <view class="section">
         <view class="section-header">
-          <text class="section-title">性格特征</text>
+          <view class="section-title-wrap">
+            <view class="title-dot" />
+            <text class="section-title">性格特征</text>
+          </view>
         </view>
         <view class="traits-list">
           <view v-for="(trait, index) in typeInfo?.traits" :key="index" class="trait-item">
-            <text class="trait-bullet">•</text>
+            <view class="trait-bullet-outer">
+              <view class="trait-bullet" />
+            </view>
             <text class="trait-text">{{ trait }}</text>
           </view>
         </view>
@@ -62,7 +93,10 @@
       <!-- 适合职业方向 -->
       <view class="section">
         <view class="section-header">
-          <text class="section-title">适合职业方向</text>
+          <view class="section-title-wrap">
+            <view class="title-dot" />
+            <text class="section-title">适合关注的职业方向</text>
+          </view>
         </view>
         <view class="careers-grid">
           <text v-for="(career, index) in typeInfo?.careers" :key="index" class="career-tag">
@@ -74,34 +108,50 @@
       <!-- 专业推荐 -->
       <view class="section">
         <view class="section-header">
-          <text class="section-title">专业推荐</text>
+          <view class="section-title-wrap">
+            <view class="title-dot" />
+            <text class="section-title">可优先了解的专业</text>
+          </view>
         </view>
         <view class="majors-list">
           <view v-for="(major, index) in typeInfo?.majors" :key="index" class="major-card" @click="viewMajorDetail(major)">
             <view class="major-header">
               <text class="major-name">{{ major }}</text>
-              <text class="major-stars">{{ getStars(index) }}</text>
+              <view class="major-stars">
+                <text v-for="s in 5" :key="s" class="star-char" :class="{ filled: s <= (5 - Math.floor(index / 2)) }">★</text>
+              </view>
             </view>
             <text class="major-desc">{{ getMajorDesc(major) }}</text>
-            <text class="major-link">查看详情 ›</text>
+            <view class="major-footer">
+              <text class="major-link">查看专业详情</text>
+              <view class="arrow-icon">➔</view>
+            </view>
           </view>
         </view>
       </view>
 
-      <!-- 底部按钮 -->
-      <view class="footer-actions">
-        <button class="retry-btn" @click="handleRetry">重新测试</button>
+      <!-- 底部操作区域 -->
+      <view class="footer-bar">
+        <view class="footer-blur" />
+        <view class="footer-btns">
+          <button v-if="resultVersion === 'basic'" class="upgrade-btn" @click="handleUpgrade">🔬 升级到完整版 (48题)</button>
+          <button class="retry-btn" @click="handleRetry">重新测试</button>
+        </view>
       </view>
     </view>
 
     <!-- 确认弹窗 -->
     <view v-if="showConfirmModal" class="modal-overlay" @click="closeModal">
       <view class="modal-content" @click.stop>
-        <text class="modal-title">确认重新测试？</text>
-        <text class="modal-desc">重新测试将覆盖当前结果，确定要开始吗？</text>
+        <view class="modal-header">
+          <view class="modal-warning-glow" />
+          <view class="modal-icon">⚠️</view>
+        </view>
+        <text class="modal-title">重新进行 MBTI 测试？</text>
+        <text class="modal-desc">重新测试会清除当前 MBTI 结果和答题进度，确认后需要重新作答。</text>
         <view class="modal-actions">
-          <button class="modal-btn cancel" @click="closeModal">取消</button>
-          <button class="modal-btn confirm" @click="confirmRetry">确认</button>
+          <button class="modal-btn cancel" @click="closeModal">取消返回</button>
+          <button class="modal-btn confirm" @click="confirmRetry">确认重置</button>
         </view>
       </view>
     </view>
@@ -115,6 +165,7 @@ import { loadAssessments, saveAssessments } from '../../utils/storage.js'
 import { MBTI_TYPE_DESCRIPTIONS } from '../../data/mbti-questions.js'
 
 const result = ref(null)
+const resultVersion = ref('')
 const showConfirmModal = ref(false)
 
 // 维度配置
@@ -139,8 +190,10 @@ function loadResult() {
       type: assessments.mbti.type,
       scores: assessments.mbti.scores
     }
+    resultVersion.value = assessments.mbti.version || 'full'
   } else {
     result.value = null
+    resultVersion.value = ''
   }
 }
 
@@ -227,12 +280,10 @@ function getMajorDesc(major) {
 
 // 查看专业详情
 function viewMajorDetail(major) {
-  uni.showToast({
-    title: '即将跳转至专业详情',
-    icon: 'none'
+  const params = encodeURIComponent(major)
+  uni.navigateTo({
+    url: `/pages/major-detail/major-detail?name=${params}&source=mbti&type=${result.value.type}`
   })
-  // TODO: 跳转到专业详情页
-  // uni.navigateTo({ url: `/pages/major/detail?name=${major}` })
 }
 
 // 返回测评页
@@ -250,12 +301,32 @@ function closeModal() {
   showConfirmModal.value = false
 }
 
+// 升级到完整版
+function handleUpgrade() {
+  // 清除结果，保留版本为 full
+  const assessments = loadAssessments()
+  assessments.mbti = {
+    completed: false,
+    version: 'full',
+    type: '',
+    scores: { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 },
+    answers: [],
+    questionIndex: 0,
+    completedAt: 0
+  }
+  saveAssessments(assessments)
+  uni.redirectTo({
+    url: '/pages/mbti/mbti'
+  })
+}
+
 // 确认重新测试
 function confirmRetry() {
   // 清除 MBTI 结果
   const assessments = loadAssessments()
   assessments.mbti = {
     completed: false,
+    version: '',
     type: '',
     scores: { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 },
     answers: [],
@@ -285,8 +356,36 @@ onShow(() => {
 <style lang="scss" scoped>
 .mbti-result-page {
   min-height: 100vh;
-  background: $bg-page;
-  padding-bottom: 120rpx;
+  background:
+    radial-gradient(90% 45% at 20% 0%, rgba(37, 99, 235, 0.07) 0%, rgba(37, 99, 235, 0) 62%),
+    linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
+  padding: 32rpx;
+  padding-top: calc(32rpx + env(safe-area-inset-top));
+  padding-bottom: calc(180rpx + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.cyber-glow-bg-indigo {
+  position: absolute;
+  width: 600rpx;
+  height: 600rpx;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
+  top: -100rpx;
+  right: -100rpx;
+  pointer-events: none;
+  z-index: 1;
+}
+.cyber-glow-bg-orange {
+  position: absolute;
+  width: 600rpx;
+  height: 600rpx;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.035) 0%, rgba(0, 0, 0, 0) 70%);
+  bottom: 200rpx;
+  left: -200rpx;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .empty-state {
@@ -296,114 +395,185 @@ onShow(() => {
   justify-content: center;
   min-height: 80vh;
   padding: 40rpx;
+  z-index: 10;
 }
 
-.empty-icon {
-  font-size: 120rpx;
-  margin-bottom: 24rpx;
-}
-
-.empty-title {
-  font-size: 36rpx;
-  font-weight: 600;
-  color: $text-primary;
-  margin-bottom: 12rpx;
-}
-
-.empty-desc {
-  font-size: 28rpx;
-  color: $text-secondary;
+.empty-icon-outer {
+  position: relative;
+  width: 200rpx;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 40rpx;
 }
 
+.empty-icon {
+  font-size: 110rpx;
+  z-index: 2;
+}
+
+.empty-icon-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 102, 241, 0.25);
+  border-radius: 50%;
+  filter: blur(24rpx);
+  z-index: 1;
+}
+
+.empty-title {
+  font-size: 38rpx;
+  font-weight: 800;
+  color: $text-primary;
+  margin-bottom: 16rpx;
+}
+
+.empty-desc {
+  font-size: 26rpx;
+  color: $text-secondary;
+  margin-bottom: 64rpx;
+}
+
 .primary-btn {
-  background: linear-gradient(135deg, $brand-primary, $brand-primary-dark);
+  width: 320rpx;
+  height: 88rpx;
+  background: $grad-royal;
   color: #fff;
-  border: none;
   border-radius: $radius-full;
-  padding: 24rpx 64rpx;
   font-size: 28rpx;
-  font-weight: 600;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8rpx 24rpx rgba(99, 102, 241, 0.3);
+  border: none;
 }
 
 .result-content {
-  padding: 32rpx;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 32rpx;
 }
 
 // 结果头部
 .result-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  @include glass-panel;
+  position: relative;
   border-radius: $radius-xl;
-  padding: 48rpx 32rpx;
+  padding: 64rpx 40rpx;
   text-align: center;
-  margin-bottom: 32rpx;
+  overflow: hidden;
+}
+
+.header-glow {
+  position: absolute;
+  top: -150rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350rpx;
+  height: 350rpx;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.14) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(20rpx);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.type-badge-wrap {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 24rpx;
+  z-index: 2;
 }
 
 .type-badge {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.25);
-  border: 2rpx solid rgba(255, 255, 255, 0.4);
+  background: $grad-royal;
+  border: none;
   border-radius: $radius-lg;
-  padding: 12rpx 32rpx;
-  font-size: 48rpx;
-  font-weight: 700;
+  padding: 16rpx 48rpx;
+  font-size: 54rpx;
+  font-weight: 900;
   color: #fff;
-  letter-spacing: 4rpx;
-  margin-bottom: 16rpx;
+  letter-spacing: 0;
+  box-shadow: 0 10rpx 24rpx rgba(37, 99, 235, 0.20);
 }
 
 .type-name {
   display: block;
-  font-size: 40rpx;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 24rpx;
+  font-size: 38rpx;
+  font-weight: 800;
+  color: $text-primary;
+  margin-bottom: 28rpx;
+  z-index: 2;
+  position: relative;
 }
 
 .type-tags {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12rpx;
+  gap: 16rpx;
+  z-index: 2;
+  position: relative;
 }
 
 .tag {
-  background: rgba(255, 255, 255, 0.2);
+  background: #EFF6FF;
+  border: 1px solid rgba(37, 99, 235, 0.16);
   border-radius: $radius-full;
-  padding: 8rpx 20rpx;
-  font-size: 24rpx;
-  color: #fff;
+  padding: 8rpx 24rpx;
+  font-size: 23rpx;
+  color: $text-secondary;
 }
 
 // 通用区块
 .section {
-  background: $bg-white;
+  @include glass-panel;
+  background: rgba(255, 255, 255, 0.96);
   border-radius: $radius-xl;
-  padding: 32rpx;
-  margin-bottom: 24rpx;
+  padding: 40rpx 36rpx;
 }
 
 .section-header {
-  margin-bottom: 24rpx;
+  margin-bottom: 36rpx;
+}
+
+.section-title-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.title-dot {
+  width: 8rpx;
+  height: 24rpx;
+  background: $brand-primary;
+  border-radius: $radius-full;
+  margin-right: 16rpx;
 }
 
 .section-title {
-  font-size: 32rpx;
-  font-weight: 600;
+  font-size: 30rpx;
+  font-weight: 800;
   color: $text-primary;
+  letter-spacing: 0;
 }
 
 // 维度得分
 .dimensions-list {
   display: flex;
   flex-direction: column;
-  gap: 32rpx;
+  gap: 36rpx;
 }
 
 .dimension-item {
   display: flex;
   flex-direction: column;
-  gap: 12rpx;
+  gap: 16rpx;
 }
 
 .dimension-labels {
@@ -414,18 +584,22 @@ onShow(() => {
 .dim-label {
   font-size: 26rpx;
   color: $text-secondary;
-  font-weight: 500;
-  transition: color 0.3s;
+  font-weight: 600;
+  transition: all 0.3s;
 }
 
 .dim-label.active {
   color: $brand-primary;
-  font-weight: 600;
+}
+
+.score-bar-wrap {
+  position: relative;
 }
 
 .score-bar {
-  height: 24rpx;
+  height: 20rpx;
   background: $bg-input;
+  border: 1px solid $border-light;
   border-radius: $radius-full;
   overflow: hidden;
   display: flex;
@@ -434,15 +608,36 @@ onShow(() => {
 
 .bar-fill {
   height: 100%;
-  transition: width 0.5s ease;
+  transition: width 0.6s ease;
+  position: relative;
 }
 
 .bar-fill.left {
-  background: linear-gradient(90deg, $brand-primary, $brand-primary-light);
+  background: $grad-royal;
+  border-radius: $radius-full 0 0 $radius-full;
 }
 
 .bar-fill.right {
-  background: linear-gradient(90deg, #F59E0B, #FBBF24);
+  background: $grad-accent;
+  border-radius: 0 $radius-full $radius-full 0;
+}
+
+.bar-glow-dot {
+  position: absolute;
+  top: 0;
+  width: 6rpx;
+  height: 100%;
+  background: #fff;
+  filter: blur(2rpx);
+  opacity: 0.9;
+}
+
+.bar-glow-dot.left {
+  right: 0;
+}
+
+.bar-glow-dot.right {
+  left: 0;
 }
 
 .score-values {
@@ -451,39 +646,49 @@ onShow(() => {
 }
 
 .score-value {
-  font-size: 24rpx;
+  font-size: 23rpx;
   color: $text-muted;
+  font-weight: 500;
 }
 
 .score-value.active {
   color: $text-primary;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 // 性格特征
 .traits-list {
   display: flex;
   flex-direction: column;
-  gap: 16rpx;
+  gap: 20rpx;
 }
 
 .trait-item {
   display: flex;
   align-items: flex-start;
-  gap: 12rpx;
+  gap: 20rpx;
+}
+
+.trait-bullet-outer {
+  margin-top: 14rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .trait-bullet {
-  font-size: 32rpx;
-  color: $brand-primary;
-  line-height: 1.4;
+  width: 10rpx;
+  height: 10rpx;
+  background: $brand-primary;
+  border-radius: 50%;
 }
 
 .trait-text {
   flex: 1;
-  font-size: 28rpx;
+  font-size: 27rpx;
   color: $text-primary;
   line-height: 1.6;
+  font-weight: 500;
 }
 
 // 职业方向
@@ -494,26 +699,31 @@ onShow(() => {
 }
 
 .career-tag {
-  background: $bg-input;
+  background: #F8FAFC;
+  border: 1px solid $border-light;
   border-radius: $radius-lg;
-  padding: 12rpx 24rpx;
+  padding: 14rpx 28rpx;
   font-size: 26rpx;
   color: $text-primary;
+  font-weight: 600;
 }
 
 // 专业推荐
 .majors-list {
   display: flex;
   flex-direction: column;
-  gap: 16rpx;
+  gap: 24rpx;
 }
 
 .major-card {
-  background: $bg-page;
+  @include glass-panel;
+  background: #FFFFFF;
+  border: 1px solid $border-light;
   border-radius: $radius-lg;
-  padding: 24rpx;
+  padding: 32rpx;
   position: relative;
   overflow: hidden;
+  transition: all 0.25s;
 
   &::before {
     content: '';
@@ -522,7 +732,13 @@ onShow(() => {
     top: 0;
     bottom: 0;
     width: 6rpx;
-    background: linear-gradient(180deg, $brand-primary, $brand-primary-dark);
+    background: $grad-royal;
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.98);
+    border-color: rgba(99, 102, 241, 0.3);
   }
 }
 
@@ -530,64 +746,122 @@ onShow(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12rpx;
+  margin-bottom: 16rpx;
 }
 
 .major-name {
-  font-size: 28rpx;
-  font-weight: 600;
+  font-size: 29rpx;
+  font-weight: 800;
   color: $text-primary;
 }
 
 .major-stars {
-  font-size: 24rpx;
-  color: #F59E0B;
+  display: flex;
+  gap: 4rpx;
+}
+
+.star-char {
+  font-size: 23rpx;
+  color: #CBD5E1;
+}
+
+.star-char.filled {
+  color: #FBBF24;
 }
 
 .major-desc {
   display: block;
   font-size: 24rpx;
   color: $text-secondary;
-  line-height: 1.5;
-  margin-bottom: 12rpx;
+  line-height: 1.6;
+  margin-bottom: 24rpx;
+}
+
+.major-footer {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
 }
 
 .major-link {
-  font-size: 24rpx;
+  font-size: 23rpx;
   color: $brand-primary;
+  font-weight: 700;
 }
 
-// 底部按钮
-.footer-actions {
+.arrow-icon {
+  font-size: 20rpx;
+  color: $brand-primary;
+  transition: transform 0.2s;
+
+  .major-card:active & {
+    transform: translateX(6rpx);
+  }
+}
+
+// 底部悬浮按钮
+.footer-bar {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: $bg-white;
-  padding: 24rpx 32rpx;
-  padding-bottom: calc(24rpx + env(safe-area-inset-bottom));
-  box-shadow: 0 -4rpx 16rpx rgba(0, 0, 0, 0.05);
+  height: calc(120rpx + env(safe-area-inset-bottom));
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid $border-light;
+  z-index: 1;
+}
+
+.footer-btns {
+  position: relative;
+  padding: 0 32rpx;
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 2;
 }
 
 .retry-btn {
   width: 100%;
-  background: $bg-input;
+  height: 84rpx;
+  background: rgba(255, 255, 255, 0.04);
   color: $text-primary;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: $radius-full;
-  padding: 28rpx;
   font-size: 28rpx;
-  font-weight: 600;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+
+  &:active {
+    transform: scale(0.98);
+    background: rgba(255, 255, 255, 0.08);
+  }
 }
 
-// 弹窗
+// 弹出确认窗
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(5, 7, 16, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -595,52 +869,155 @@ onShow(() => {
 }
 
 .modal-content {
-  background: $bg-white;
+  @include glass-panel;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid $border-light;
   border-radius: $radius-xl;
-  padding: 40rpx 32rpx;
-  width: 560rpx;
+  padding: 56rpx 40rpx;
+  width: 580rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+}
+
+.modal-header {
+  position: relative;
+  width: 120rpx;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28rpx;
+}
+
+.modal-icon {
+  font-size: 64rpx;
+  z-index: 2;
+}
+
+.modal-warning-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(249, 115, 22, 0.25);
+  border-radius: 50%;
+  filter: blur(16rpx);
+  z-index: 1;
 }
 
 .modal-title {
-  font-size: 32rpx;
-  font-weight: 600;
+  font-size: 34rpx;
+  font-weight: 800;
   color: $text-primary;
-  margin-bottom: 16rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
 }
 
 .modal-desc {
-  font-size: 26rpx;
+  font-size: 25rpx;
   color: $text-secondary;
   text-align: center;
-  line-height: 1.6;
-  margin-bottom: 32rpx;
+  line-height: 1.7;
+  margin-bottom: 48rpx;
 }
 
 .modal-actions {
   display: flex;
-  gap: 16rpx;
+  gap: 20rpx;
   width: 100%;
 }
 
 .modal-btn {
   flex: 1;
-  border: none;
+  height: 84rpx;
   border-radius: $radius-full;
-  padding: 24rpx;
-  font-size: 28rpx;
-  font-weight: 600;
+  font-size: 27rpx;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: all 0.2s;
+
+  &:active {
+    transform: scale(0.97);
+  }
 }
 
 .modal-btn.cancel {
-  background: $bg-input;
+  background: #F8FAFC;
   color: $text-primary;
+  border: 1px solid $border-light;
 }
 
 .modal-btn.confirm {
-  background: linear-gradient(135deg, $brand-primary, $brand-primary-dark);
+  background: $grad-accent;
   color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6rpx 16rpx rgba(249, 115, 22, 0.35);
+}
+
+// 版本标签
+.version-label {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rpx 24rpx;
+  border-radius: $radius-full;
+  margin-bottom: 20rpx;
+
+  &.basic {
+    background: rgba(249, 115, 22, 0.12);
+    border: 1px solid rgba(249, 115, 22, 0.3);
+  }
+
+  &.full {
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+  }
+}
+
+.version-label-text {
+  font-size: 22rpx;
+  font-weight: 700;
+  letter-spacing: 0;
+
+  .basic & {
+    color: #FB923C;
+  }
+
+  .full & {
+    color: #34D399;
+  }
+}
+
+// 升级按钮
+.upgrade-btn {
+  width: 100%;
+  height: 84rpx;
+  background: $grad-royal;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: $radius-full;
+  font-size: 28rpx;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6rpx 16rpx rgba(99, 102, 241, 0.3);
+  margin-bottom: 16rpx;
+  transition: all 0.2s;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+.upgrade-btn::after {
+  border: none;
 }
 </style>

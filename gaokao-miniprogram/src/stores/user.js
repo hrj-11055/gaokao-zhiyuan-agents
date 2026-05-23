@@ -1,25 +1,8 @@
 import { defineStore } from 'pinia'
+import { normalizeUserProfile } from '../utils/storage.js'
 
 const USER_ID_KEY = 'user_id'
 const USER_PROFILE_KEY = 'user_profile'
-
-function toIntOrEmpty(value) {
-  if (value === '' || value === null || value === undefined) {
-    return ''
-  }
-  const number = Number(value)
-  return Number.isFinite(number) ? Math.trunc(number) : ''
-}
-
-function normalizeUserProfile(profile = {}) {
-  return {
-    province: typeof profile.province === 'string' ? profile.province : '',
-    category: typeof profile.category === 'string' ? profile.category : '',
-    score: toIntOrEmpty(profile.score),
-    rank: toIntOrEmpty(profile.rank),
-    updatedAt: profile.updatedAt === undefined ? Date.now() : profile.updatedAt
-  }
-}
 
 export const useUserStore = defineStore('user', {
   state: () => ({
@@ -46,6 +29,10 @@ export const useUserStore = defineStore('user', {
       if (p.category) inputs.category = p.category
       if (typeof p.score === 'number') inputs.score = String(p.score)
       if (typeof p.rank === 'number' && p.rank > 0) inputs.rank = String(p.rank)
+      if (p.family_resources) inputs.family_resources = p.family_resources
+      if (p.interest_subjects) inputs.interest_subjects = p.interest_subjects
+      if (p.region_preference) inputs.region_preference = p.region_preference
+      if (p.career_goal) inputs.career_goal = p.career_goal
       return inputs
     }
   },

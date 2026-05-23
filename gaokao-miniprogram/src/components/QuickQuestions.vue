@@ -12,14 +12,28 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
+
 defineEmits(['select'])
 
-const questions = [
-  '我广东省物理类580分能上什么学校？',
-  '计算机还值得报吗？',
-  '法学就业怎么样？',
-  '怎么专业最适合 INTP'
-]
+const props = defineProps({
+  profile: {
+    type: Object,
+    default: () => ({})
+  }
+})
+
+const questions = computed(() => {
+  const province = props.profile?.province || '广东'
+  const category = props.profile?.category || '物理类'
+  const score = props.profile?.score || '580'
+  return [
+    `我${province}${category}${score}分能考虑哪些学校？`,
+    '这个分数段怎么安排冲稳保？',
+    '计算机、法学和师范怎么取舍？',
+    '如果不确定专业，应该先排除哪些方向？'
+  ]
+})
 </script>
 
 <style lang="scss" scoped>
@@ -32,13 +46,13 @@ const questions = [
 
 .quick-chip {
   background: $bg-white;
-  border: 2rpx solid $brand-primary;
+  border: 1px solid rgba(37, 99, 235, 0.18);
   border-radius: $radius-full;
   padding: 12rpx 28rpx;
 }
 
 .quick-text {
   font-size: 26rpx;
-  color: $brand-primary;
+  color: $brand-violet;
 }
 </style>

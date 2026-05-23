@@ -40,6 +40,14 @@
       }
     },
     {
+      "path": "pages/deep-report-download/deep-report-download",
+      "style": {
+        "navigationBarTitleText": "深度报告下载",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
       "path": "pages/assessments/assessments",
       "style": {
         "navigationBarTitleText": "测评",
@@ -94,8 +102,17 @@
         "navigationBarBackgroundColor": "#FFFFFF",
         "navigationBarTextStyle": "black"
       }
+    },
+    {
+      "path": "pages/major-detail/major-detail",
+      "style": {
+        "navigationBarTitleText": "专业详情",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "navigationBarTextStyle": "black"
+      }
     }
   ],
+  "subPackages": [],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "峰哥咨询参考",

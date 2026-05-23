@@ -89,15 +89,23 @@ function toIntOrEmpty(value) {
   return Number.isFinite(number) ? Math.trunc(number) : ''
 }
 
+function toTrimmedString(value) {
+  return typeof value === 'string' ? value.trim() : ''
+}
+
 /**
  * 规范化考生信息，字段顺序固定为：省份、科目、分数、位次。
  */
 export function normalizeUserProfile(profile = {}) {
   return {
-    province: typeof profile.province === 'string' ? profile.province : '',
-    category: typeof profile.category === 'string' ? profile.category : '',
+    province: toTrimmedString(profile.province),
+    category: toTrimmedString(profile.category),
     score: toIntOrEmpty(profile.score),
     rank: toIntOrEmpty(profile.rank),
+    family_resources: toTrimmedString(profile.family_resources),
+    interest_subjects: toTrimmedString(profile.interest_subjects),
+    region_preference: toTrimmedString(profile.region_preference),
+    career_goal: toTrimmedString(profile.career_goal),
     updatedAt: profile.updatedAt === undefined ? Date.now() : profile.updatedAt
   }
 }
@@ -158,16 +166,54 @@ export function buildProfileInputs(profile) {
   if (typeof data.rank === 'number' && data.rank > 0) {
     inputs.rank = String(data.rank)
   }
+  if (data.family_resources) {
+    inputs.family_resources = data.family_resources
+  }
+  if (data.interest_subjects) {
+    inputs.interest_subjects = data.interest_subjects
+  }
+  if (data.region_preference) {
+    inputs.region_preference = data.region_preference
+  }
+  if (data.career_goal) {
+    inputs.career_goal = data.career_goal
+  }
   return inputs
 }
 
 const QUESTIONNAIRE_KEY = 'questionnaire'
 const ASSESSMENTS_KEY = 'assessments'
+export const QUESTIONNAIRE_REQUIRED_COUNT = 21
+const QUESTIONNAIRE_ACTIVE_IDS = new Set([
+  'q1', 'q2', 'q3', 'q4', 'q5',
+  'q6', 'q7', 'q8',
+  'q10', 'q11', 'q12', 'q13',
+  'q14', 'q15', 'q16',
+  'q17', 'q18', 'q19', 'q20', 'q21', 'q22'
+])
+
+function isFilledAnswer(value) {
+  return value !== '' && value !== undefined && value !== null && !(Array.isArray(value) && value.length === 0)
+}
+
+function sanitizeQuestionnaireAnswers(answers = {}) {
+  if (typeof answers !== 'object' || answers === null) {
+    return {}
+  }
+  return Object.fromEntries(
+    Object.entries(answers).filter(([id, value]) => QUESTIONNAIRE_ACTIVE_IDS.has(id) && isFilledAnswer(value))
+  )
+}
+
+function countQuestionnaireAnswers(answers = {}) {
+  return Object.keys(sanitizeQuestionnaireAnswers(answers)).length
+}
 
 function normalizeQuestionnaire(questionnaire = {}) {
+  const answers = sanitizeQuestionnaireAnswers(questionnaire.answers)
   return {
-    answers: typeof questionnaire.answers === 'object' && questionnaire.answers !== null ? questionnaire.answers : {},
-    completedCount: Number(questionnaire.completedCount) || 0,
+    answers,
+    completedCount: countQuestionnaireAnswers(answers),
     updatedAt: questionnaire.updatedAt || 0
   }
 }
@@ -177,10 +223,10 @@ function normalizeQuestionnaire(questionnaire = {}) {
  * @param {{ [id: string]: string | string[] }} answers
  */
 export function saveQuestionnaire(answers) {
-  const completed = Object.values(answers).filter(v => v !== '' && !(Array.isArray(v) && v.length === 0)).length
+  const normalizedAnswers = sanitizeQuestionnaireAnswers(answers)
   const questionnaire = {
-    answers,
-    completedCount: completed,
+    answers: normalizedAnswers,
+    completedCount: countQuestionnaireAnswers(normalizedAnswers),
     updatedAt: Date.now()
   }
   uni.setStorageSync(QUESTIONNAIRE_KEY, JSON.stringify(questionnaire))
@@ -214,6 +260,7 @@ export function loadQuestionnaire() {
 function normalizeMbti(mbti = {}) {
   return {
     completed: Boolean(mbti.completed),
+    version: mbti.version === 'basic' ? 'basic' : (mbti.completed ? 'full' : (mbti.version || '')),
     type: typeof mbti.type === 'string' ? mbti.type : '',
     scores: {
       E: Number(mbti.scores?.E) || 0,
@@ -237,6 +284,7 @@ function normalizeMbti(mbti = {}) {
 function normalizeHolland(holland = {}) {
   return {
     completed: Boolean(holland.completed),
+    version: holland.version === 'basic' ? 'basic' : (holland.completed ? 'full' : (holland.version || '')),
     code: typeof holland.code === 'string' ? holland.code : '',
     scores: {
       R: Number(holland.scores?.R) || 0,
@@ -330,13 +378,14 @@ export function saveHollandResult(result) {
  * @param {number} questionIndex - 当前题目索引
  * @param {Array} answers - 已保存的答案
  */
-export function saveMbtiProgress(questionIndex, answers = []) {
+export function saveMbtiProgress(questionIndex, answers = [], version = '') {
   const assessments = loadAssessments()
   assessments.mbti = normalizeMbti({
     ...assessments.mbti,
     completed: false,
     questionIndex,
-    answers
+    answers,
+    version: version || assessments.mbti.version
   })
   return saveAssessments(assessments)
 }
@@ -346,13 +395,14 @@ export function saveMbtiProgress(questionIndex, answers = []) {
  * @param {number} questionIndex - 当前题目索引
  * @param {Array} answers - 已保存的答案
  */
-export function saveHollandProgress(questionIndex, answers = []) {
+export function saveHollandProgress(questionIndex, answers = [], version = '') {
   const assessments = loadAssessments()
   assessments.holland = normalizeHolland({
     ...assessments.holland,
     completed: false,
     questionIndex,
-    answers
+    answers,
+    version: version || assessments.holland.version
   })
   return saveAssessments(assessments)
 }
@@ -366,7 +416,7 @@ export function getCompletedAssessmentsCount() {
   let count = 0
   if (assessments.mbti.completed) count++
   if (assessments.holland.completed) count++
-  if (assessments.questionnaire.completedCount >= 22) count++
+  if (assessments.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT) count++
   return count
 }
 
@@ -379,6 +429,6 @@ export function isAllAssessmentsCompleted() {
   return (
     assessments.mbti.completed &&
     assessments.holland.completed &&
-    assessments.questionnaire.completedCount >= 22
+    assessments.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT
   )
 }

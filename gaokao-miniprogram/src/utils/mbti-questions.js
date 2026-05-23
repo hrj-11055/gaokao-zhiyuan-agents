@@ -442,14 +442,23 @@ export const MBTI_QUESTIONS = [
 ]
 
 /**
- * 计算 MBTI 类型
+ * MBTI 精简版题库（16 题，每维度 4 题）
+ * 从完整版 48 题中精选最具区分度的题目
+ */
+export const MBTI_QUESTIONS_BASIC = MBTI_QUESTIONS.filter(q =>
+  [1, 5, 8, 12, 13, 17, 22, 24, 25, 28, 32, 36, 37, 40, 44, 48].includes(q.id)
+)
+
+/**
+ * 通用 MBTI 类型计算函数（支持任意题目子集）
  * @param {Object} answers - 答案对象 { questionId: 'A' | 'B' }
+ * @param {Array} questions - 题目数组（完整版或精简版）
  * @returns {Object} { type: 'INTJ', scores: { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 } }
  */
-export function calculateMbtiType(answers) {
+export function calculateMbtiTypeFromQuestions(answers, questions) {
   const scores = { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 }
 
-  MBTI_QUESTIONS.forEach(q => {
+  questions.forEach(q => {
     const answer = answers[q.id]
     if (answer === 'A') {
       scores[q.valueA]++
@@ -466,6 +475,15 @@ export function calculateMbtiType(answers) {
   ].join('')
 
   return { type, scores }
+}
+
+/**
+ * 计算 MBTI 类型（完整版，向后兼容）
+ * @param {Object} answers - 答案对象 { questionId: 'A' | 'B' }
+ * @returns {Object} { type: 'INTJ', scores: { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 } }
+ */
+export function calculateMbtiType(answers) {
+  return calculateMbtiTypeFromQuestions(answers, MBTI_QUESTIONS)
 }
 
 /**

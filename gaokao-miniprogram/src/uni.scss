@@ -1,33 +1,77 @@
-// 品牌色
-$brand-primary: #F97316;
-$brand-primary-light: #FDBA74;
-$brand-primary-dark: #EA580C;
-$brand-gradient-start: #FFF7ED;
-$brand-gradient-end: #FEF3C7;
+// 峰哥咨询参考 - 全局清爽学业咨询视觉代币
 
-// 文字色
-$text-primary: #1F2937;
-$text-secondary: #4B5563;
-$text-muted: #9CA3AF;
+// ==========================================
+// 1. 品牌配色
+// ==========================================
+$brand-primary: #EA580C;
+$brand-primary-light: #F97316;
+$brand-primary-dark: #C2410C;
+$brand-violet: #2563EB;
+$brand-violet-dark: #1E3A8A;
 
-// 背景色
-$bg-page: #F9FAFB;
-$bg-white: #FFFFFF;
-$bg-input: #F3F4F6;
+$brand-gradient-start: #F8FAFC;
+$brand-gradient-end: #EFF6FF;
+$grad-accent: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
+$grad-royal: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+$grad-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(248, 250, 252, 0.92) 100%);
+$grad-vip: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+$grad-success: linear-gradient(135deg, #059669 0%, #047857 100%);
+$grad-border: linear-gradient(135deg, rgba(37, 99, 235, 0.10) 0%, rgba(249, 115, 22, 0.10) 100%);
 
-// 边框
-$border-light: #E5E7EB;
+// ==========================================
+// 2. 文字配色
+// ==========================================
+$text-primary: #0F172A;
+$text-secondary: #475569;
+$text-muted: #94A3B8;
 
-// 圆角
-$radius-sm: 8rpx;
-$radius-md: 16rpx;
-$radius-lg: 24rpx;
+// ==========================================
+// 3. 背景与面板配色
+// ==========================================
+$bg-page: #F8FAFC;
+$bg-white: rgba(255, 255, 255, 0.96);
+$bg-input: #F1F5F9;
+
+// ==========================================
+// 4. 边框
+// ==========================================
+$border-light: rgba(15, 23, 42, 0.08);
+$border-glow: rgba(37, 99, 235, 0.16);
+
+// ==========================================
+// 5. 圆角系统
+// ==========================================
+$radius-xs: 8rpx;
+$radius-sm: 12rpx;
+$radius-md: 20rpx;
+$radius-lg: 28rpx;
 $radius-xl: 32rpx;
-$radius-full: 999rpx;
+$radius-full: 9999rpx;
 
-// 间距
-$spacing-xs: 8rpx;
-$spacing-sm: 16rpx;
-$spacing-md: 24rpx;
-$spacing-lg: 32rpx;
-$spacing-xl: 48rpx;
+// ==========================================
+// 6. 间距系统
+// ==========================================
+$spacing-xs: 12rpx;
+$spacing-sm: 20rpx;
+$spacing-md: 32rpx;
+$spacing-lg: 40rpx;
+$spacing-xl: 56rpx;
+
+// ==========================================
+// 7. 全局样式混合器
+// ==========================================
+@mixin glass-panel {
+  background: $bg-white;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 12rpx 36rpx -18rpx rgba(15, 23, 42, 0.16);
+}
+
+@mixin text-glow {
+  text-shadow: none;
+}
+
+@mixin neon-shadow {
+  box-shadow: 0 12rpx 32rpx rgba(15, 23, 42, 0.08);
+}

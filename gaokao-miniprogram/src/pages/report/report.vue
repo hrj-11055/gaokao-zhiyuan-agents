@@ -1,10 +1,19 @@
 <template>
-  <view class="page">
+  <view class="report-page">
+    <!-- 炫彩背景氛围粒子 -->
+    <view class="cyber-glow-bg-violet" />
+    <view class="cyber-glow-bg-orange" />
+
     <!-- 生成中 -->
-    <view v-if="status === 'loading'" class="state-card">
-      <view class="loading-icon">⏳</view>
-      <text class="state-title">AI 正在生成报告</text>
-      <text class="state-sub">分析问卷 + 对话记录，约需 15-30 秒</text>
+    <view v-if="status === 'loading'" class="state-card loading-card">
+      <view class="spinner-container">
+        <view class="cyber-spinner-outer" />
+        <view class="cyber-spinner-inner" />
+        <view class="spinner-icon">⚡</view>
+      </view>
+      <text class="state-title">正在生成志愿参考报告</text>
+      <text class="state-sub">正在整合考生信息、测评结果与对话记录</text>
+      <text class="state-sub-tip">通常需要 15-30 秒，请保持页面打开。</text>
       <view class="loading-bar">
         <view class="loading-fill" />
       </view>
@@ -12,71 +21,107 @@
 
     <!-- 会员锁定 -->
     <view v-else-if="status === 'locked'" class="state-card locked-card">
-      <view class="lock-icon">🔒</view>
-      <text class="state-title">解锁深度填报会员</text>
-      <text class="state-sub">{{ errorMsg || '综合志愿报告、大学深度研究、PDF 下载和家长分享需要会员权益' }}</text>
+      <view class="lock-icon-outer">
+        <view class="lock-glow" />
+        <view class="lock-icon">🔒</view>
+      </view>
+      <text class="state-title">解锁综合志愿报告</text>
+      <text class="state-sub">{{ errorMsg || '生成可给家长一起查看的完整志愿参考报告' }}</text>
 
       <view class="unlock-price">
         <text class="unlock-price-main">¥29 一次性解锁</text>
-        <text class="unlock-price-sub">也可以邀请 3 人免费解锁</text>
+        <text class="unlock-price-sub">也可邀请 3 位新用户填写基础信息后免费解锁</text>
       </view>
 
-      <view class="content-list locked-benefits">
-        <text class="content-item">✓ 大学深度研究</text>
-        <text class="content-item">✓ 综合志愿报告</text>
-        <text class="content-item">✓ PDF 下载</text>
-        <text class="content-item">✓ 家长分享链接</text>
+      <view class="benefits-panel">
+        <view class="benefit-item">
+          <view class="benefit-bullet">✦</view>
+          <text class="benefit-text">院校定位、优势专业与填报风险梳理</text>
+        </view>
+        <view class="benefit-item">
+          <view class="benefit-bullet">✦</view>
+          <text class="benefit-text">结合测评结果分析适合和应回避的方向</text>
+        </view>
+        <view class="benefit-item">
+          <view class="benefit-bullet">✦</view>
+          <text class="benefit-text">支持网页查看、PDF 下载和家庭讨论</text>
+        </view>
+        <view class="benefit-item">
+          <view class="benefit-bullet">✦</view>
+          <text class="benefit-text">报告链接可复制给家长共同查看</text>
+        </view>
       </view>
 
-      <view class="primary-btn" @click="unlockAndGenerate">解锁并生成报告</view>
-      <view class="secondary-btn" @click="goInvite">邀请 3 人免费解锁</view>
+      <view class="actions-area">
+        <button class="primary-action-btn" @click="unlockAndGenerate">{{ paymentActionText }}</button>
+        <button class="secondary-action-btn" @click="goInvite">邀请 3 名好友免费解锁</button>
+      </view>
     </view>
 
     <!-- 成功 -->
-    <view v-else-if="status === 'done'" class="state-card">
-      <view class="success-icon">📊</view>
-      <text class="state-title">报告已生成</text>
+    <view v-else-if="status === 'done'" class="state-card success-card">
+      <view class="success-icon-outer">
+        <view class="success-glow" />
+        <view class="success-icon">🏆</view>
+      </view>
+      <text class="state-title">志愿参考报告已生成</text>
       <text class="state-sub">{{ sourceDesc }}</text>
       <text class="state-time" v-if="reportStore.generatedAt">生成时间：{{ formatTime(reportStore.generatedAt) }}</text>
 
       <view class="divider" />
 
-      <view class="content-list">
-        <text class="content-item">✓ 个人特质分析（五环框架）</text>
-        <text class="content-item">✓ 专业匹配分析</text>
-        <text class="content-item">✓ 专业深度研究</text>
-        <text class="content-item">✓ 院校推荐（冲稳保）</text>
-        <text class="content-item">✓ 综合志愿方案</text>
+      <view class="benefits-panel success-panel">
+        <view class="benefit-item">
+          <view class="benefit-bullet success">✓</view>
+          <text class="benefit-text">五环学业特质已纳入分析</text>
+        </view>
+        <view class="benefit-item">
+          <view class="benefit-bullet success">✓</view>
+          <text class="benefit-text">专业方向匹配建议已生成</text>
+        </view>
+        <view class="benefit-item">
+          <view class="benefit-bullet success">✓</view>
+          <text class="benefit-text">院校梯度和风险提示已整理</text>
+        </view>
+        <view class="benefit-item">
+          <view class="benefit-bullet success">✓</view>
+          <text class="benefit-text">可继续下载院校/专业深度 PDF</text>
+        </view>
       </view>
 
-      <view class="primary-btn" @click="openInBrowser">查看报告</view>
-      <view class="secondary-btn" @click="downloadPdf">下载 PDF</view>
-      <view class="secondary-btn" @click="copyLink">复制链接给家长</view>
-      
-      <view class="regenerate-text" @click="generate(true)">
-        <text>重新生成报告 (将消耗 AI 额度)</text>
+      <view class="actions-area">
+        <button class="primary-action-btn success-btn" @click="openInBrowser">查看报告</button>
+        <button class="secondary-action-btn" @click="downloadPdf">下载 PDF</button>
+        <button class="secondary-action-btn" @click="openDeepReportDownload">下载学校/专业深度 PDF</button>
+        <button class="secondary-action-btn" @click="copyLink">复制链接发给家长</button>
+      </view>
+
+      <view class="regenerate-text-wrap" @click="generate(true)">
+        <text class="regenerate-link">重新生成报告</text>
       </view>
     </view>
 
     <!-- 失败 -->
-    <view v-else-if="status === 'error'" class="state-card">
-      <view class="error-icon">⚠️</view>
-      <text class="state-title">生成失败</text>
+    <view v-else-if="status === 'error'" class="state-card error-card">
+      <view class="error-icon-outer">
+        <view class="error-glow" />
+        <view class="error-icon">⚠️</view>
+      </view>
+      <text class="state-title">报告生成失败</text>
       <text class="state-sub">{{ errorMsg }}</text>
-      <view class="primary-btn" @click="generate(true)">重试</view>
+      <button class="primary-action-btn error-btn" @click="generate(true)">重试生成</button>
     </view>
   </view>
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { requestBackend } from '../../api/backend.js'
 import { useUserStore } from '../../stores/user.js'
 import { useChatStore } from '../../stores/chat.js'
 import { useAssessmentStore } from '../../stores/assessment.js'
 import { useReportStore } from '../../stores/report.js'
 import { useMembershipStore } from '../../stores/membership.js'
-
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://47.113.125.147'
 
 const status = ref('loading')
 const errorMsg = ref('')
@@ -97,6 +142,10 @@ const sourceDesc = computed(() => {
   if (conversationId) parts.push('AI 对话记录')
   return parts.length > 0 ? `基于 ${parts.join(' + ')} 生成` : '基于考生基本信息生成'
 })
+
+const paymentActionText = computed(() =>
+  errorMsg.value && errorMsg.value.includes('支付暂未接入') ? '支付接入后可开通' : '¥29 解锁并生成报告'
+)
 
 onMounted(async () => {
   userStore.loadProfile()
@@ -149,13 +198,13 @@ async function generate(force = false) {
     errorMsg.value = '综合志愿报告属于会员权益，付费或邀请 3 位新用户后即可生成'
     return
   }
-  
+
   status.value = 'loading'
   errorMsg.value = ''
 
   try {
-    const res = await uni.request({
-      url: `${API_BASE}/api/report/generate`,
+    const res = await requestBackend({
+      path: '/api/report/generate',
       method: 'POST',
       data: {
         userId: userStore.userId,
@@ -206,8 +255,13 @@ async function unlockAndGenerate() {
     }
   } catch (err) {
     uni.hideLoading()
+    const message = err.message || err.errMsg || ''
+    if (message.includes('请求失败') || message.includes('fail')) {
+      errorMsg.value = '支付暂未接入或支付参数未配置，当前不能通过付费解锁生成报告'
+      status.value = 'locked'
+    }
     uni.showToast({
-      title: err.message || err.errMsg || '暂时无法发起支付',
+      title: errorMsg.value || message || '暂时无法发起支付',
       icon: 'none',
       duration: 2200,
     })
@@ -231,16 +285,30 @@ function openInBrowser() {
   })
 }
 
+function openDeepReportDownload() {
+  uni.navigateTo({
+    url: '/pages/deep-report-download/deep-report-download'
+  })
+}
+
+function getHeaderValue(headers, name) {
+  if (!headers) return ''
+  const lowerName = name.toLowerCase()
+  const key = Object.keys(headers).find(item => item.toLowerCase() === lowerName)
+  return key ? String(headers[key]) : ''
+}
+
 function downloadPdf() {
   if (!reportStore.url) return
-  
+
   uni.showLoading({ title: 'PDF 生成中...' })
   const pdfUrl = reportStore.url.replace('.html', '.pdf')
-  
+
   uni.downloadFile({
     url: pdfUrl,
     success: (res) => {
-      if (res.statusCode === 200) {
+      const contentType = getHeaderValue(res.header, 'content-type')
+      if (res.statusCode === 200 && contentType.includes('application/pdf')) {
         uni.openDocument({
           filePath: res.tempFilePath,
           showMenu: true,
@@ -252,7 +320,7 @@ function downloadPdf() {
         })
       } else {
         uni.hideLoading()
-        uni.showToast({ title: '下载失败，请稍后重试', icon: 'none' })
+        uni.showToast({ title: 'PDF 未生成成功，请重新生成报告', icon: 'none' })
       }
     },
     fail: () => {
@@ -270,121 +338,220 @@ function formatTime(ts) {
 </script>
 
 <style lang="scss" scoped>
-.page {
+.report-page {
   min-height: 100vh;
-  background: $bg-page;
+  background:
+    radial-gradient(90% 45% at 12% 0%, rgba(37, 99, 235, 0.07) 0%, rgba(37, 99, 235, 0) 64%),
+    linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 48rpx 32rpx;
   box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.cyber-glow-bg-violet {
+  position: fixed;
+  top: -10%;
+  left: -20%;
+  width: 600rpx;
+  height: 600rpx;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.cyber-glow-bg-orange {
+  position: fixed;
+  bottom: -10%;
+  right: -20%;
+  width: 600rpx;
+  height: 600rpx;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .state-card {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  background: $bg-white;
+  @include glass-panel;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(15, 23, 42, 0.08);
   border-radius: $radius-xl;
-  padding: 64rpx 40rpx 48rpx;
+  padding: 56rpx 36rpx;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
 }
 
-.loading-icon, .success-icon, .error-icon, .lock-icon {
-  font-size: 80rpx;
-  margin-bottom: 24rpx;
+.spinner-container {
+  position: relative;
+  width: 160rpx;
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40rpx;
+}
+
+.cyber-spinner-outer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 4rpx solid transparent;
+  border-top-color: $brand-primary;
+  border-bottom-color: $brand-violet;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+.cyber-spinner-inner {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border: 2rpx solid transparent;
+  border-left-color: rgba(37, 99, 235, 0.16);
+  border-right-color: rgba(255, 107, 0, 0.2);
+  border-radius: 50%;
+  animation: spin-reverse 1.2s linear infinite;
+}
+
+.spinner-icon {
+  font-size: 56rpx;
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
 }
 
 .state-title {
-  font-size: 36rpx;
-  font-weight: 700;
+  font-size: 38rpx;
+  font-weight: 800;
   color: $text-primary;
-  margin-bottom: 12rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+  letter-spacing: 0;
 }
 
 .state-sub {
   font-size: 26rpx;
-  color: $text-muted;
+  color: $text-secondary;
   text-align: center;
+  line-height: 1.5;
   margin-bottom: 8rpx;
 }
 
-.state-time {
-  font-size: 24rpx;
-  color: #9CA3AF;
+.state-sub-tip {
+  font-size: 23rpx;
+  color: $text-muted;
   text-align: center;
   margin-bottom: 32rpx;
 }
 
 .loading-bar {
   width: 100%;
-  height: 8rpx;
-  background: $border-light;
+  height: 10rpx;
+  background: $bg-input;
   border-radius: $radius-full;
   overflow: hidden;
-  margin-top: 24rpx;
+  border: 1px solid $border-light;
 }
 
 .loading-fill {
-  height: 8rpx;
-  background: #7c3aed;
+  height: 100%;
+  background: linear-gradient(90deg, $brand-violet, $brand-primary);
   border-radius: $radius-full;
   animation: loading-slide 2s ease-in-out infinite;
-  width: 40%;
+  width: 45%;
 }
 
 @keyframes loading-slide {
   0% { transform: translateX(-100%); }
-  100% { transform: translateX(300%); }
+  100% { transform: translateX(250%); }
 }
 
-.divider {
-  width: 100%;
-  height: 2rpx;
-  background: $border-light;
-  margin: 8rpx 0 28rpx;
-}
-
-.content-list {
-  width: 100%;
+.lock-icon-outer, .success-icon-outer, .error-icon-outer {
+  position: relative;
+  width: 160rpx;
+  height: 160rpx;
   display: flex;
-  flex-direction: column;
-  gap: 12rpx;
-  margin-bottom: 40rpx;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32rpx;
 }
 
-.content-item {
-  font-size: 28rpx;
-  color: $text-secondary;
+.lock-glow {
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  background: rgba(249, 115, 22, 0.14);
+  border-radius: 50%;
+  filter: blur(16rpx);
+  z-index: 1;
 }
 
-.locked-card {
-  align-items: stretch;
+.success-glow {
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  background: rgba(37, 99, 235, 0.14);
+  border-radius: 50%;
+  filter: blur(16rpx);
+  z-index: 1;
 }
 
-.locked-card .lock-icon,
-.locked-card .state-title,
-.locked-card .state-sub {
-  align-self: center;
+.error-glow {
+  position: absolute;
+  width: 120rpx;
+  height: 120rpx;
+  background: rgba(239, 68, 68, 0.14);
+  border-radius: 50%;
+  filter: blur(16rpx);
+  z-index: 1;
+}
+
+.lock-icon, .success-icon, .error-icon {
+  font-size: 72rpx;
+  z-index: 2;
 }
 
 .unlock-price {
   width: 100%;
-  background: #FFF7ED;
+  background: rgba(249, 115, 22, 0.06);
+  border: 1px solid rgba(249, 115, 22, 0.15);
   border-radius: $radius-lg;
-  padding: 24rpx;
+  padding: 32rpx 24rpx;
   box-sizing: border-box;
-  margin: 28rpx 0;
+  margin: 32rpx 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: none;
 }
 
 .unlock-price-main {
   font-size: 40rpx;
   font-weight: 800;
-  color: $brand-primary;
+  color: #FF8F3D;
   margin-bottom: 8rpx;
 }
 
@@ -393,47 +560,145 @@ function formatTime(ts) {
   color: $text-secondary;
 }
 
-.locked-benefits {
-  background: #F9FAFB;
+.benefits-panel {
+  width: 100%;
+  background: #F8FAFC;
+  border: 1px solid $border-light;
   border-radius: $radius-lg;
-  padding: 24rpx;
+  padding: 32rpx;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+  margin-bottom: 48rpx;
 }
 
-.primary-btn {
-  width: 100%;
-  height: 88rpx;
-  background: $brand-primary;
-  border-radius: $radius-full;
+.benefit-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 32rpx;
-  font-weight: 600;
-  margin-bottom: 20rpx;
+  gap: 16rpx;
 }
 
-.secondary-btn {
-  width: 100%;
-  height: 88rpx;
-  background: $bg-white;
-  border: 2rpx solid $brand-primary;
-  border-radius: $radius-full;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $brand-primary;
-  font-size: 32rpx;
-  font-weight: 600;
-  margin-bottom: 24rpx;
-}
-
-.regenerate-text {
+.benefit-bullet {
   font-size: 26rpx;
-  color: #9CA3AF;
+  font-weight: 800;
+  color: $brand-primary-light;
+}
+
+.benefit-bullet.success {
+  color: #34D399;
+}
+
+.benefit-text {
+  font-size: 27rpx;
+  color: $text-primary;
+  font-weight: 500;
+}
+
+.actions-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.primary-action-btn {
+  width: 100%;
+  height: 90rpx;
+  background: linear-gradient(135deg, #FF6B00 0%, #EA580C 100%);
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 800;
+  border-radius: $radius-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 8rpx 24rpx rgba(249, 115, 22, 0.24);
+  transition: all 0.2s;
+
+  &::after {
+    border: none;
+  }
+
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 4rpx 12rpx rgba(249, 115, 22, 0.2);
+  }
+}
+
+.secondary-action-btn {
+  width: 100%;
+  height: 90rpx;
+  background: #F8FAFC;
+  color: $text-primary;
+  font-size: 30rpx;
+  font-weight: 700;
+  border-radius: $radius-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $border-light;
+  transition: all 0.2s;
+
+  &::after {
+    border: none;
+  }
+
+  &:active {
+    transform: scale(0.98);
+    background: #EFF6FF;
+  }
+}
+
+.success-card {
+  .primary-action-btn.success-btn {
+    background: linear-gradient(135deg, $brand-violet 0%, #4F46E5 100%);
+    box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.24);
+
+    &:active {
+      box-shadow: 0 4rpx 12rpx rgba(99, 102, 241, 0.2);
+    }
+  }
+}
+
+.state-time {
+  font-size: 24rpx;
+  color: $text-muted;
+  margin-top: 8rpx;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: $border-light;
+  margin: 32rpx 0;
+}
+
+.regenerate-text-wrap {
+  margin-top: 32rpx;
+  padding: 16rpx;
+}
+
+.regenerate-link {
+  font-size: 25rpx;
+  color: $text-muted;
   text-decoration: underline;
-  margin-top: 16rpx;
-  padding: 10rpx;
+  font-weight: 500;
+
+  &:active {
+    color: $text-secondary;
+  }
+}
+
+.error-card {
+  .primary-action-btn.error-btn {
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+    box-shadow: 0 8rpx 24rpx rgba(239, 68, 68, 0.3);
+
+    &:active {
+      box-shadow: 0 4rpx 12rpx rgba(239, 68, 68, 0.2);
+    }
+  }
 }
 </style>

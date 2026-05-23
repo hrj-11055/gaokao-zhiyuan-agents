@@ -16,6 +16,7 @@ class MembershipMiniprogramContractTests(unittest.TestCase):
             "loginWithWechat",
             "fetchMembershipStatus",
             "markProfileComplete",
+            "activateLimitedFreeMembership",
             "createMembershipPayment",
             "fetchPaymentOrder",
             "getStoredSession",
@@ -25,6 +26,7 @@ class MembershipMiniprogramContractTests(unittest.TestCase):
         self.assertIn("/api/auth/wechat-login", text)
         self.assertIn("/api/membership/status", text)
         self.assertIn("/api/profile/complete", text)
+        self.assertIn("/api/membership/limited-free-unlock", text)
         self.assertIn("/api/payment/create", text)
         self.assertIn("/api/payment/order/", text)
 
@@ -39,6 +41,7 @@ class MembershipMiniprogramContractTests(unittest.TestCase):
         self.assertIn("async login", text)
         self.assertIn("async loadStatus", text)
         self.assertIn("async markProfileCompleted", text)
+        self.assertIn("async activateLimitedFree", text)
         self.assertIn("async createPayment", text)
         self.assertIn("async pollOrder", text)
         self.assertIn("uni.requestPayment", text)

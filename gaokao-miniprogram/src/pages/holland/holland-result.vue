@@ -1,81 +1,134 @@
 <template>
   <view class="holland-result-page">
-    <!-- 结果头部 -->
-    <view class="result-header">
-      <view class="code-badge">{{ result.code }}</view>
-      <text class="type-name">{{ typeInfo.name }}</text>
-      <view class="tag-list">
-        <view v-for="(tag, idx) in typeInfo.tags" :key="idx" class="tag">
-          {{ tag }}
+    <!-- 炫彩背景氛围粒子 -->
+    <view class="cyber-glow-bg-orange" />
+    <view class="cyber-glow-bg-violet" />
+
+    <!-- 结果内容 -->
+    <view class="result-content">
+      <!-- 结果头部 - 玻璃面板与炫金渐变 -->
+      <view class="result-header">
+        <view class="header-glow" />
+        <view v-if="resultVersion" class="version-label" :class="resultVersion">
+          <text class="version-label-text">{{ resultVersion === 'basic' ? '⚡ 精简版测评' : '🔬 完整版测评' }}</text>
+        </view>
+        <view class="code-badge-wrap">
+          <view class="code-badge">{{ result.code }}</view>
+        </view>
+        <text class="type-name">{{ typeInfo.name }}</text>
+        <view class="type-tags">
+          <text v-for="(tag, idx) in typeInfo.tags" :key="idx" class="tag">{{ tag }}</text>
         </view>
       </view>
-    </view>
 
-    <!-- 维度得分 -->
-    <view class="section">
-      <view class="section-title">维度得分</view>
-      <view class="dimensions-list">
-        <view v-for="dim in sortedDimensions" :key="dim.type" class="dimension-item">
-          <view class="dimension-header">
-            <text class="dimension-label">{{ dim.label }}</text>
-            <text class="dimension-score">{{ dim.score }}分</text>
+      <!-- 维度得分 -->
+      <view class="section">
+        <view class="section-header">
+          <view class="section-title-wrap">
+            <view class="title-dot" />
+            <text class="section-title">RIASEC 六维兴趣结果</text>
           </view>
-          <view class="score-bar">
-            <view class="score-fill" :style="{ width: getPercent(dim.score) }"></view>
+        </view>
+        <view class="dimensions-list">
+          <view v-for="dim in sortedDimensions" :key="dim.type" class="dimension-item" :class="'dim-' + dim.type.toLowerCase()">
+            <view class="dimension-header">
+              <view class="dim-label-wrap">
+                <view class="dim-bullet" />
+                <text class="dimension-label">{{ dim.label }} ({{ dim.type }})</text>
+              </view>
+              <text class="dimension-score">{{ dim.score }} 分</text>
+            </view>
+            <view class="score-bar-wrap">
+              <view class="score-bar">
+                <view class="score-fill" :style="{ width: getPercent(dim.score) }">
+                  <view class="score-glow-dot" />
+                </view>
+              </view>
+            </view>
           </view>
         </view>
       </view>
-    </view>
 
-    <!-- 性格特征 -->
-    <view class="section">
-      <view class="section-title">性格特征</view>
-      <view class="traits-list">
-        <view v-for="(trait, idx) in typeInfo.traits" :key="idx" class="trait-item">
-          <view class="trait-bullet"></view>
-          <text class="trait-text">{{ trait }}</text>
-        </view>
-      </view>
-    </view>
-
-    <!-- 适合职业方向 -->
-    <view class="section">
-      <view class="section-title">适合职业方向</view>
-      <view class="careers-list">
-        <view v-for="(career, idx) in typeInfo.careers" :key="idx" class="career-tag">
-          {{ career }}
-        </view>
-      </view>
-    </view>
-
-    <!-- 专业推荐 -->
-    <view class="section">
-      <view class="section-title">专业推荐</view>
-      <view class="majors-list">
-        <view v-for="(major, idx) in typeInfo.majors" :key="idx" class="major-item" @click="viewMajorDetail(major)">
-          <view class="major-header">
-            <text class="major-name">{{ major }}</text>
-            <view class="major-stars">{{ getStars(idx + 1) }}</view>
+      <!-- 性格特征 -->
+      <view class="section">
+        <view class="section-header">
+          <view class="section-title-wrap">
+            <view class="title-dot" />
+            <text class="section-title">主要兴趣特征</text>
           </view>
-          <text class="major-desc">{{ getMajorDesc(major) }}</text>
+        </view>
+        <view class="traits-list">
+          <view v-for="(trait, idx) in typeInfo.traits" :key="idx" class="trait-item">
+            <view class="trait-bullet-outer">
+              <view class="trait-bullet" />
+            </view>
+            <text class="trait-text">{{ trait }}</text>
+          </view>
         </view>
       </view>
-    </view>
 
-    <!-- 底部按钮 -->
-    <view class="footer-actions">
-      <button class="retry-btn" @click="retry">重新测试</button>
+      <!-- 适合职业方向 -->
+      <view class="section">
+        <view class="section-header">
+          <view class="section-title-wrap">
+            <view class="title-dot" />
+            <text class="section-title">适合关注的职业方向</text>
+          </view>
+        </view>
+        <view class="careers-grid">
+          <text v-for="(career, idx) in typeInfo.careers" :key="idx" class="career-tag">
+            {{ career }}
+          </text>
+        </view>
+      </view>
+
+      <!-- 专业推荐 -->
+      <view class="section">
+        <view class="section-header">
+          <view class="section-title-wrap">
+            <view class="title-dot" />
+            <text class="section-title">可优先了解的专业</text>
+          </view>
+        </view>
+        <view class="majors-list">
+          <view v-for="(major, idx) in typeInfo.majors" :key="idx" class="major-card" @click="viewMajorDetail(major)">
+            <view class="major-header">
+              <text class="major-name">{{ major }}</text>
+              <view class="major-stars">
+                <text v-for="s in 5" :key="s" class="star-char" :class="{ filled: s <= (5 - Math.floor(idx / 2)) }">★</text>
+              </view>
+            </view>
+            <text class="major-desc">{{ getMajorDesc(major) }}</text>
+            <view class="major-footer">
+              <text class="major-link">查看专业详情</text>
+              <view class="arrow-icon">➔</view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 底部按钮 -->
+      <view class="footer-bar">
+        <view class="footer-blur" />
+        <view class="footer-btns">
+          <button v-if="resultVersion === 'basic'" class="upgrade-btn" @click="handleUpgrade">🔬 升级到完整版 (60题)</button>
+          <button class="retry-btn" @click="retry">重新测试</button>
+        </view>
+      </view>
     </view>
 
     <!-- 确认弹窗 -->
-    <view v-if="showConfirm" class="confirm-modal" @click="showConfirm = false">
-      <view class="confirm-content" @click.stop>
-        <view class="confirm-icon">⚠️</view>
-        <text class="confirm-title">确认重新测试？</text>
-        <text class="confirm-desc">重新测试将清除当前结果，需要重新回答所有问题</text>
-        <view class="confirm-actions">
-          <button class="confirm-btn cancel" @click="showConfirm = false">取消</button>
-          <button class="confirm-btn confirm" @click="confirmRetry">确认重测</button>
+    <view v-if="showConfirm" class="modal-overlay" @click="showConfirm = false">
+      <view class="modal-content" @click.stop>
+        <view class="modal-header">
+          <view class="modal-warning-glow" />
+          <view class="modal-icon">⚠️</view>
+        </view>
+        <text class="modal-title">重新进行职业兴趣测试？</text>
+        <text class="modal-desc">重新测试会清除当前霍兰德结果和答题进度，确认后需要重新作答。</text>
+        <view class="modal-actions">
+          <button class="modal-btn cancel" @click="showConfirm = false">取消返回</button>
+          <button class="modal-btn confirm" @click="confirmRetry">确认重设</button>
         </view>
       </view>
     </view>
@@ -85,13 +138,14 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
-import { loadAssessments } from '../../utils/storage.js'
+import { loadAssessments, saveAssessments } from '../../utils/storage.js'
 import { HOLLAND_TYPE_DESCRIPTIONS, HOLLAND_TYPE_LABELS } from '../../data/holland-questions.js'
 
 const result = ref({
   code: '',
   scores: { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 }
 })
+const resultVersion = ref('')
 
 const showConfirm = ref(false)
 
@@ -138,13 +192,6 @@ function getPercent(score) {
   return Math.min((score / maxScore) * 100, 100) + '%'
 }
 
-// 获取星级评价
-function getStars(index) {
-  if (index <= 2) return '★★★★★'
-  if (index <= 4) return '★★★★☆'
-  return '★★★☆☆'
-}
-
 // 获取专业描述
 function getMajorDesc(major) {
   const descs = {
@@ -154,7 +201,7 @@ function getMajorDesc(major) {
     '产品设计': '从创意到产品的完整设计流程',
     '康复治疗学': '通过技术手段帮助患者康复',
     '生物医学工程': '工程技术在医学领域的应用',
-    '风景园林': ' outdoor 空间规划与景观设计',
+    '风景园林': '户外空间规划与景观设计',
     '环境设计': '创造宜居的生活与工作环境',
     '工商管理': '企业管理与商业运作综合学科',
     '项目管理': '高效达成目标的管理方法',
@@ -168,12 +215,10 @@ function getMajorDesc(major) {
 
 // 查看专业详情
 function viewMajorDetail(major) {
-  uni.showToast({
-    title: `查看${major}详情`,
-    icon: 'none'
+  const params = encodeURIComponent(major)
+  uni.navigateTo({
+    url: `/pages/major-detail/major-detail?name=${params}&source=holland&type=${result.value.code}`
   })
-  // TODO: 跳转到专业详情页
-  // uni.navigateTo({ url: `/pages/major/detail?name=${major}` })
 }
 
 // 重新测试
@@ -184,6 +229,24 @@ function retry() {
 // 确认重测
 function confirmRetry() {
   showConfirm.value = false
+  uni.redirectTo({
+    url: '/pages/holland/holland'
+  })
+}
+
+// 升级到完整版
+function handleUpgrade() {
+  const assessments = loadAssessments()
+  assessments.holland = {
+    completed: false,
+    version: 'full',
+    code: '',
+    scores: { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 },
+    answers: [],
+    questionIndex: 0,
+    completedAt: 0
+  }
+  saveAssessments(assessments)
   uni.redirectTo({
     url: '/pages/holland/holland'
   })
@@ -208,6 +271,7 @@ onShow(() => {
     code: assessments.holland.code,
     scores: assessments.holland.scores
   }
+  resultVersion.value = assessments.holland.version || 'full'
   uni.setNavigationBarTitle({
     title: '霍兰德测评结果'
   })
@@ -217,80 +281,160 @@ onShow(() => {
 <style lang="scss" scoped>
 .holland-result-page {
   min-height: 100vh;
-  background: $bg-page;
+  background:
+    radial-gradient(90% 45% at 20% 0%, rgba(37, 99, 235, 0.07) 0%, rgba(37, 99, 235, 0) 62%),
+    linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
   padding: 32rpx;
-  padding-bottom: 120rpx;
+  padding-bottom: calc(160rpx + env(safe-area-inset-bottom));
   box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.cyber-glow-bg-orange {
+  position: fixed;
+  top: -10%;
+  right: -20%;
+  width: 600rpx;
+  height: 600rpx;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.04) 0%, rgba(0, 0, 0, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.cyber-glow-bg-violet {
+  position: fixed;
+  bottom: -10%;
+  left: -20%;
+  width: 600rpx;
+  height: 600rpx;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.result-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
 }
 
 .result-header {
-  background: linear-gradient(135deg, $brand-gradient-start, $brand-gradient-end);
+  @include glass-panel;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid $border-light;
   border-radius: $radius-xl;
-  padding: 48rpx 32rpx;
+  padding: 56rpx 32rpx;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250rpx;
+    height: 250rpx;
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    filter: blur(20px);
+    z-index: 0;
+  }
+}
+
+.code-badge-wrap {
+  display: inline-block;
+  padding: 6rpx;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.4) 0%, rgba(99, 102, 241, 0.1) 100%);
+  border-radius: $radius-lg;
+  box-shadow: 0 10rpx 24rpx rgba(249, 115, 22, 0.18);
   margin-bottom: 24rpx;
+  z-index: 1;
 }
 
 .code-badge {
-  display: inline-block;
-  background: linear-gradient(135deg, $brand-primary, $brand-primary-dark);
+  background: linear-gradient(135deg, #FF6B00 0%, #EA580C 100%);
   color: #fff;
   font-size: 56rpx;
-  font-weight: 700;
+  font-weight: 800;
   padding: 16rpx 48rpx;
-  border-radius: $radius-lg;
-  margin-bottom: 16rpx;
-  letter-spacing: 8rpx;
+  border-radius: calc($radius-lg - 6rpx);
+  letter-spacing: 0;
 }
 
 .type-name {
   display: block;
-  font-size: 36rpx;
-  font-weight: 600;
+  font-size: 38rpx;
+  font-weight: 800;
   color: $text-primary;
   margin-bottom: 20rpx;
+  z-index: 1;
 }
 
-.tag-list {
+.type-tags {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12rpx;
+  z-index: 1;
 }
 
 .tag {
-  background: rgba(249, 115, 22, 0.15);
-  color: $brand-primary-dark;
+  background: rgba(249, 115, 22, 0.1);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+  color: $brand-primary-light;
   font-size: 24rpx;
   padding: 8rpx 20rpx;
   border-radius: $radius-full;
+  font-weight: 600;
 }
 
 .section {
-  background: $bg-white;
+  @include glass-panel;
+  background: rgba(255, 255, 255, 0.96);
   border-radius: $radius-xl;
-  padding: 32rpx;
-  margin-bottom: 16rpx;
+  padding: 40rpx 32rpx;
+}
+
+.section-header {
+  margin-bottom: 32rpx;
+}
+
+.section-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.title-dot {
+  width: 8rpx;
+  height: 28rpx;
+  background: $grad-accent;
+  border-radius: $radius-full;
 }
 
 .section-title {
   font-size: 32rpx;
-  font-weight: 600;
+  font-weight: 800;
   color: $text-primary;
-  margin-bottom: 24rpx;
 }
 
 // 维度得分
 .dimensions-list {
   display: flex;
   flex-direction: column;
-  gap: 20rpx;
+  gap: 28rpx;
 }
 
 .dimension-item {
   display: flex;
   flex-direction: column;
-  gap: 8rpx;
+  gap: 12rpx;
 }
 
 .dimension-header {
@@ -299,16 +443,32 @@ onShow(() => {
   align-items: center;
 }
 
+.dim-label-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+}
+
+.dim-bullet {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+}
+
 .dimension-label {
-  font-size: 28rpx;
-  font-weight: 500;
-  color: $text-secondary;
+  font-size: 27rpx;
+  font-weight: 700;
+  color: $text-primary;
 }
 
 .dimension-score {
   font-size: 26rpx;
-  font-weight: 600;
-  color: $brand-primary;
+  font-weight: 800;
+}
+
+.score-bar-wrap {
+  position: relative;
+  width: 100%;
 }
 
 .score-bar {
@@ -316,142 +476,283 @@ onShow(() => {
   background: $bg-input;
   border-radius: $radius-full;
   overflow: hidden;
+  position: relative;
+  border: 1px solid $border-light;
 }
 
 .score-fill {
   height: 100%;
-  background: linear-gradient(90deg, $brand-primary-light, $brand-primary);
   border-radius: $radius-full;
-  transition: width 0.3s ease;
+  transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.score-glow-dot {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6rpx;
+  height: 100%;
+  background: #fff;
+  filter: blur(2rpx);
+  opacity: 0.9;
+}
+
+// R 实际型 - 橙色
+.dim-r {
+  .dim-bullet { background: #FF6B00; }
+  .dimension-score { color: #FF8F3D; }
+  .score-fill { background: linear-gradient(90deg, rgba(255, 107, 0, 0.2), #FF6B00); }
+}
+
+// I 研究型 - 蓝色
+.dim-i {
+  .dim-bullet { background: #3B82F6; }
+  .dimension-score { color: #60A5FA; }
+  .score-fill { background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), #3B82F6); }
+}
+
+// A 艺术型 - 粉色
+.dim-a {
+  .dim-bullet { background: #EC4899; }
+  .dimension-score { color: #F472B6; }
+  .score-fill { background: linear-gradient(90deg, rgba(236, 72, 153, 0.2), #EC4899); }
+}
+
+// S 社会型 - 绿色
+.dim-s {
+  .dim-bullet { background: #10B981; }
+  .dimension-score { color: #34D399; }
+  .score-fill { background: linear-gradient(90deg, rgba(16, 185, 129, 0.2), #10B981); }
+}
+
+// E 企业型 - 金黄
+.dim-e {
+  .dim-bullet { background: #F59E0B; }
+  .dimension-score { color: #FBBF24; }
+  .score-fill { background: linear-gradient(90deg, rgba(245, 158, 11, 0.2), #F59E0B); }
+}
+
+// C 传统型 - 紫色
+.dim-c {
+  .dim-bullet { background: #8B5CF6; }
+  .dimension-score { color: #A78BFA; }
+  .score-fill { background: linear-gradient(90deg, rgba(139, 92, 246, 0.2), #8B5CF6); }
 }
 
 // 性格特征
 .traits-list {
   display: flex;
   flex-direction: column;
-  gap: 16rpx;
+  gap: 20rpx;
 }
 
 .trait-item {
   display: flex;
   align-items: flex-start;
-  gap: 12rpx;
+  gap: 20rpx;
+}
+
+.trait-bullet-outer {
+  margin-top: 14rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .trait-bullet {
-  width: 12rpx;
-  height: 12rpx;
+  width: 10rpx;
+  height: 10rpx;
   background: $brand-primary;
   border-radius: 50%;
-  margin-top: 10rpx;
-  flex-shrink: 0;
 }
 
 .trait-text {
   flex: 1;
-  font-size: 28rpx;
+  font-size: 27rpx;
+  color: $text-primary;
   line-height: 1.6;
-  color: $text-secondary;
+  font-weight: 500;
 }
 
-// 职业方向
-.careers-list {
+// 适合职业方向
+.careers-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 16rpx;
 }
 
 .career-tag {
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(249, 115, 22, 0.05));
-  border: 1rpx solid rgba(249, 115, 22, 0.2);
-  color: $brand-primary-dark;
+  background: #F8FAFC;
+  border: 1px solid $border-light;
+  border-radius: $radius-lg;
+  padding: 14rpx 28rpx;
   font-size: 26rpx;
-  padding: 12rpx 24rpx;
-  border-radius: $radius-md;
+  color: $text-primary;
+  font-weight: 600;
 }
 
 // 专业推荐
 .majors-list {
   display: flex;
   flex-direction: column;
-  gap: 16rpx;
+  gap: 24rpx;
 }
 
-.major-item {
-  background: $bg-page;
-  border-radius: $radius-md;
-  padding: 20rpx;
-  border: 1rpx solid $border-light;
+.major-card {
+  @include glass-panel;
+  background: #FFFFFF;
+  border: 1px solid $border-light;
+  border-radius: $radius-lg;
+  padding: 32rpx;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6rpx;
+    background: $grad-accent;
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.98);
+    border-color: rgba(249, 115, 22, 0.3);
+  }
 }
 
 .major-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8rpx;
+  margin-bottom: 16rpx;
 }
 
 .major-name {
-  font-size: 28rpx;
-  font-weight: 500;
+  font-size: 29rpx;
+  font-weight: 800;
   color: $text-primary;
 }
 
 .major-stars {
-  font-size: 24rpx;
+  display: flex;
+  gap: 4rpx;
+}
+
+.star-char {
+  font-size: 23rpx;
+  color: #CBD5E1;
+}
+
+.star-char.filled {
   color: #FBBF24;
 }
 
 .major-desc {
+  display: block;
   font-size: 24rpx;
-  color: $text-muted;
-  line-height: 1.5;
+  color: $text-secondary;
+  line-height: 1.6;
+  margin-bottom: 24rpx;
 }
 
-// 底部按钮
-.footer-actions {
+.major-footer {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.major-link {
+  font-size: 23rpx;
+  color: $brand-primary-light;
+  font-weight: 700;
+}
+
+.arrow-icon {
+  font-size: 20rpx;
+  color: $brand-primary-light;
+  transition: transform 0.2s;
+
+  .major-card:active & {
+    transform: translateX(6rpx);
+  }
+}
+
+// 底部悬浮按钮
+.footer-bar {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: $bg-white;
-  padding: 20rpx 32rpx;
-  padding-bottom: calc(20rpx + env(safe-area-inset-bottom));
-  box-shadow: 0 -4rpx 20rpx rgba(0, 0, 0, 0.05);
+  height: calc(120rpx + env(safe-area-inset-bottom));
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid $border-light;
+  z-index: 1;
+}
+
+.footer-btns {
+  position: relative;
+  padding: 0 32rpx;
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 2;
 }
 
 .retry-btn {
   width: 100%;
-  height: 88rpx;
-  background: linear-gradient(135deg, $brand-primary, $brand-primary-dark);
-  color: #fff;
-  font-size: 32rpx;
-  font-weight: 600;
-  border: none;
-  border-radius: $radius-lg;
+  height: 84rpx;
+  background: #F8FAFC;
+  color: $text-primary;
+  border: 1px solid $border-light;
+  border-radius: $radius-full;
+  font-size: 28rpx;
+  font-weight: 700;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+
+  &:active {
+    transform: scale(0.98);
+    background: rgba(255, 255, 255, 0.08);
+  }
 }
 
-.retry-btn::after {
-  border: none;
-}
-
-// 确认弹窗
-.confirm-modal {
+// 弹出确认窗
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(5, 7, 16, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
 }
 
+.modal-content,
 .confirm-content {
   background: $bg-white;
   border-radius: $radius-xl;
@@ -460,11 +761,13 @@ onShow(() => {
   text-align: center;
 }
 
+.modal-icon,
 .confirm-icon {
   font-size: 80rpx;
   margin-bottom: 16rpx;
 }
 
+.modal-title,
 .confirm-title {
   display: block;
   font-size: 32rpx;
@@ -473,6 +776,7 @@ onShow(() => {
   margin-bottom: 12rpx;
 }
 
+.modal-desc,
 .confirm-desc {
   display: block;
   font-size: 26rpx;
@@ -481,11 +785,13 @@ onShow(() => {
   margin-bottom: 32rpx;
 }
 
+.modal-actions,
 .confirm-actions {
   display: flex;
   gap: 16rpx;
 }
 
+.modal-btn,
 .confirm-btn {
   flex: 1;
   height: 80rpx;
@@ -495,17 +801,81 @@ onShow(() => {
   border-radius: $radius-md;
 }
 
+.modal-btn::after,
 .confirm-btn::after {
   border: none;
 }
 
+.modal-btn.cancel,
 .confirm-btn.cancel {
   background: $bg-input;
   color: $text-secondary;
 }
 
+.modal-btn.confirm,
 .confirm-btn.confirm {
   background: linear-gradient(135deg, $brand-primary, $brand-primary-dark);
   color: #fff;
+}
+
+// 版本标签
+.version-label {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rpx 24rpx;
+  border-radius: $radius-full;
+  margin-bottom: 20rpx;
+
+  &.basic {
+    background: rgba(249, 115, 22, 0.12);
+    border: 1px solid rgba(249, 115, 22, 0.3);
+  }
+
+  &.full {
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+  }
+}
+
+.version-label-text {
+  font-size: 22rpx;
+  font-weight: 700;
+  letter-spacing: 0;
+
+  .basic & {
+    color: #FB923C;
+  }
+
+  .full & {
+    color: #34D399;
+  }
+}
+
+// 升级按钮
+.upgrade-btn {
+  width: 100%;
+  height: 84rpx;
+  background: linear-gradient(135deg, $brand-primary, $brand-primary-dark);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: $radius-full;
+  font-size: 28rpx;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6rpx 16rpx rgba(249, 115, 22, 0.3);
+  margin-bottom: 16rpx;
+  transition: all 0.2s;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+.upgrade-btn::after {
+  border: none;
 }
 </style>

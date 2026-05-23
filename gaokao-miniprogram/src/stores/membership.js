@@ -1,11 +1,14 @@
 import { defineStore } from 'pinia'
 import {
+  activateLimitedFreeMembership,
   createMembershipPayment,
   fetchMembershipStatus,
   fetchPaymentOrder,
+  fetchUserProfileFromServer,
   getStoredSession,
   loginWithWechat,
   markProfileComplete,
+  saveUserProfileToServer,
 } from '../api/membership.js'
 
 const INVITER_KEY = 'membership_inviter_id'
@@ -114,6 +117,27 @@ export const useMembershipStore = defineStore('membership', {
     async markProfileCompleted() {
       await this.ensureLogin()
       const data = await markProfileComplete(this.sessionToken)
+      this.applyStatus(data.membership || data)
+      return data
+    },
+
+    async activateLimitedFree() {
+      await this.ensureLogin()
+      const data = await activateLimitedFreeMembership(this.sessionToken)
+      this.applyStatus(data.membership || data)
+      return data
+    },
+
+    async syncProfile(profile) {
+      await this.ensureLogin()
+      const data = await saveUserProfileToServer(profile, this.sessionToken)
+      this.applyStatus(data.membership || data)
+      return data
+    },
+
+    async fetchProfile() {
+      await this.ensureLogin()
+      const data = await fetchUserProfileFromServer(this.sessionToken)
       this.applyStatus(data.membership || data)
       return data
     },

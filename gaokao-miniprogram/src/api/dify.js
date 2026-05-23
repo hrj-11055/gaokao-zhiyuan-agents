@@ -1,8 +1,6 @@
 // gaokao-miniprogram/src/api/dify.js
-
-// 后端代理地址：47.113.125.147 当前反代到 gaokao-proxy，支持聊天、报告生成和报告静态访问。
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://47.113.125.147'
-
+import { API_BASE } from '../config.js'
+import { isWechatCloudContainerEnabled, requestBackend } from './backend.js'
 import { getStoredSession } from './membership.js'
 
 /**
@@ -98,6 +96,32 @@ export class SSEParser {
  * @returns {{ abort: Function }} 可调用 abort() 取消请求
  */
 export function sendMessageStream({ query, conversationId, user, inputs = {}, onChunk, onEnd, onError }) {
+  if (isWechatCloudContainerEnabled()) {
+    let aborted = false
+    sendMessageBlocking({ query, conversationId, user, inputs })
+      .then((data) => {
+        if (aborted) return
+        if (data.answer) {
+          onChunk(data.answer, data.conversationId, data.messageId)
+        }
+        onEnd({
+          conversationId: data.conversationId,
+          messageId: data.messageId,
+        })
+      })
+      .catch((err) => {
+        if (!aborted) {
+          onError(err.message || 'AI 回复出错')
+        }
+      })
+
+    return {
+      abort: () => {
+        aborted = true
+      },
+    }
+  }
+
   const chunkDecoder = new Utf8StreamDecoder()
   const parser = new SSEParser(
     (data) => {
@@ -165,8 +189,8 @@ export function sendMessageStream({ query, conversationId, user, inputs = {}, on
  */
 export async function sendMessageBlocking({ query, conversationId, user, inputs = {} }) {
   const session = getStoredSession()
-  const response = await uni.request({
-    url: `${API_BASE}/api/chat`,
+  const response = await requestBackend({
+    path: '/api/chat',
     method: 'POST',
     data: {
       query,
@@ -195,8 +219,8 @@ export async function sendMessageBlocking({ query, conversationId, user, inputs 
  * 发送对话反馈（点赞/点踩）
  */
 export async function sendFeedback({ messageId, rating, query, answer }) {
-  const response = await uni.request({
-    url: `${API_BASE}/api/chat/feedback`,
+  const response = await requestBackend({
+    path: '/api/chat/feedback',
     method: 'POST',
     data: { messageId, rating, query, answer },
     header: { 'Content-Type': 'application/json' }
@@ -209,8 +233,8 @@ export async function sendFeedback({ messageId, rating, query, answer }) {
  * 返回音频的 ArrayBuffer
  */
 export async function fetchTTSAudio(text) {
-  const response = await uni.request({
-    url: `${API_BASE}/api/tts`,
+  const response = await requestBackend({
+    path: '/api/tts',
     method: 'POST',
     data: { text },
     responseType: 'arraybuffer',

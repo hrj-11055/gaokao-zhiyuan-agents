@@ -1,32 +1,16 @@
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://47.113.125.147'
+import { requestBackendData } from './backend.js'
 
 const SESSION_KEY = 'membership_session'
 
 function request({ url, method = 'GET', data, token }) {
-  return new Promise((resolve, reject) => {
-    uni.request({
-      url: `${API_BASE}${url}`,
-      method,
-      data,
-      header: {
-        'Content-Type': 'application/json',
-        ...(token ? { Authorization: `Bearer ${token}` } : {}),
-      },
-      success(res) {
-        if (res.statusCode >= 200 && res.statusCode < 300) {
-          resolve(res.data)
-          return
-        }
-        const err = new Error(res.data?.error || '请求失败')
-        err.statusCode = res.statusCode
-        err.code = res.data?.code || ''
-        err.data = res.data
-        reject(err)
-      },
-      fail(err) {
-        reject(new Error(err.errMsg || '网络请求失败'))
-      },
-    })
+  return requestBackendData({
+    path: url,
+    method,
+    data,
+    header: {
+      'Content-Type': 'application/json',
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    },
   })
 }
 
@@ -98,6 +82,31 @@ export function markProfileComplete(sessionToken = getStoredSession().sessionTok
     url: '/api/profile/complete',
     method: 'POST',
     data: {},
+    token: sessionToken,
+  })
+}
+
+export function activateLimitedFreeMembership(sessionToken = getStoredSession().sessionToken) {
+  return request({
+    url: '/api/membership/limited-free-unlock',
+    method: 'POST',
+    data: {},
+    token: sessionToken,
+  })
+}
+
+export function saveUserProfileToServer(profile, sessionToken = getStoredSession().sessionToken) {
+  return request({
+    url: '/api/profile',
+    method: 'POST',
+    data: { profile },
+    token: sessionToken,
+  })
+}
+
+export function fetchUserProfileFromServer(sessionToken = getStoredSession().sessionToken) {
+  return request({
+    url: '/api/profile',
     token: sessionToken,
   })
 }

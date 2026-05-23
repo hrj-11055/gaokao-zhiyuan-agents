@@ -1,79 +1,93 @@
 <template>
   <view class="page">
+    <!-- 炫彩背景氛围粒子 -->
+    <view class="cyber-glow-bg-indigo" />
+    <view class="cyber-glow-bg-orange" />
+
     <!-- 介绍页 -->
     <view v-if="showIntro" class="intro-container">
       <view class="intro-card">
-        <view class="intro-icon">📋</view>
-        <text class="intro-title">五环问卷测评</text>
-        <text class="intro-desc">通过 22 道题目的深度评估，全方位了解你的学习风格、学业现状、家庭背景、能力特质和职业期望。</text>
+        <view class="intro-icon-outer">
+          <view class="intro-icon-glow" />
+          <view class="intro-icon">📋</view>
+        </view>
+        <text class="intro-title">五环学业特质测评</text>
+        <text class="intro-desc">通过 21 道题了解学习方式、学业现状、家庭期待、能力特质和职业偏好，后续报告会参考这些信息。</text>
         
         <view class="intro-tips">
-          <text class="tips-title">💡 答题建议：</text>
-          <text class="tips-text">1. 请根据你目前的真实情况作答，不要有所顾虑。</text>
-          <text class="tips-text">2. 部分题目可以多选，请仔细阅读题目要求。</text>
-          <text class="tips-text">3. 答题过程中尽量顺从第一直觉，完成所有题目后继续完成其余测评。</text>
+          <text class="tips-title">答题建议：</text>
+          <text class="tips-text">1. 请按真实情况作答，不需要选择“看起来更好”的答案。</text>
+          <text class="tips-text">2. 选项没有对错，只用于帮助报告理解你的实际处境。</text>
+          <text class="tips-text">3. 答题进度会自动保存，退出后可继续完成。</text>
         </view>
         
-        <button class="start-btn" @click="startTest">开始测试</button>
+        <button class="start-btn" @click="startTest">开始答题</button>
       </view>
     </view>
 
     <!-- 测试内容 -->
     <block v-else>
-    <!-- 进度条 -->
-    <view class="progress-bar-wrap">
-      <view class="progress-info">
-        <text class="progress-text">已完成 {{ completedCount }}/{{ QUESTIONS.length }} 题</text>
-        <text class="progress-pct">{{ Math.round(completedCount / QUESTIONS.length * 100) }}%</text>
-      </view>
-      <view class="progress-track">
-        <view class="progress-fill" :style="{ width: (completedCount / 22 * 100) + '%' }" />
-      </view>
-    </view>
-
-    <!-- 环选项卡 -->
-    <scroll-view class="ring-tabs" scroll-x>
-      <view
-        v-for="ring in rings"
-        :key="ring.id"
-        class="ring-tab"
-        :class="{ 'ring-tab-active': currentRing === ring.id }"
-        @click="goToRing(ring.id)"
-      >
-        第{{ ring.label }}环
-      </view>
-    </scroll-view>
-
-    <!-- 当前题目 -->
-    <view class="question-card">
-      <text class="ring-label">第{{ currentQ.ringName }}环 · {{ currentQ.ringDisplayName }}</text>
-      <text class="question-text">{{ currentQ.text }}</text>
-      <text v-if="currentQ.maxSelect" class="max-select-hint">最多选 {{ currentQ.maxSelect }} 个</text>
-
-      <!-- 选项列表 -->
-      <view class="options-list">
-        <view
-          v-for="opt in currentQ.options"
-          :key="opt"
-          class="option-item"
-          :class="isSelected(currentQ.id, opt) ? 'option-selected' : ''"
-          @click="toggleOption(currentQ.id, opt, currentQ.type, currentQ.maxSelect)"
-        >
-          <view class="option-check">
-            <text v-if="isSelected(currentQ.id, opt)" class="check-icon">✓</text>
+      <!-- 头部进度条 -->
+      <view class="progress-bar-wrap">
+        <view class="progress-info">
+          <text class="progress-text">已完成 {{ completedCount }} / {{ QUESTIONS.length }} 题</text>
+          <text class="progress-pct">{{ Math.round(completedCount / QUESTIONS.length * 100) }}%</text>
+        </view>
+        <view class="progress-track">
+          <view class="progress-fill" :style="{ width: (completedCount / QUESTIONS.length * 100) + '%' }">
+            <view class="progress-fill-glow" />
           </view>
-          <text class="option-text">{{ opt }}</text>
         </view>
       </view>
-    </view>
 
-    <!-- 底部按钮 -->
-    <view class="footer">
-      <view class="nav-btn prev-btn" :class="{ disabled: currentIndex === 0 }" @click="prev">上一题</view>
-      <view v-if="currentIndex < QUESTIONS.length - 1" class="nav-btn next-btn" @click="next">下一题</view>
-      <view v-else class="nav-btn next-btn" @click="next">完成</view>
-    </view>
+      <!-- 五环雷达选项卡 -->
+      <scroll-view class="ring-tabs" scroll-x>
+        <view
+          v-for="ring in rings"
+          :key="ring.id"
+          class="ring-tab"
+          :class="{ 'ring-tab-active': currentRing === ring.id }"
+          @click="goToRing(ring.id)"
+        >
+          第 {{ ring.label }} 环
+        </view>
+      </scroll-view>
 
+      <!-- 题目卡片 -->
+      <view class="question-card">
+        <view class="ring-header">
+          <text class="ring-label">第{{ currentQ.ringName }}环 · {{ currentQ.ringDisplayName }}维度</text>
+          <view class="dimension-pulse-dot" />
+        </view>
+        <text class="question-text">{{ currentQ.text }}</text>
+        <text v-if="currentQ.maxSelect" class="max-select-hint">💡 多选题：最多可选 {{ currentQ.maxSelect }} 项</text>
+
+        <!-- 选项列表 -->
+        <view class="options-list">
+          <view
+            v-for="opt in currentQ.options"
+            :key="opt"
+            class="option-item"
+            :class="{ 'option-selected': isSelected(currentQ.id, opt) }"
+            @click="toggleOption(currentQ.id, opt, currentQ.type, currentQ.maxSelect)"
+          >
+            <view class="option-check">
+              <view v-if="isSelected(currentQ.id, opt)" class="check-dot" />
+            </view>
+            <text class="option-text">{{ opt }}</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 悬浮底部控制条 -->
+      <view class="footer-bar">
+        <view class="footer-blur" />
+        <view class="footer-btns">
+          <view class="nav-btn prev-btn" :class="{ disabled: currentIndex === 0 }" @click="prev">上一题</view>
+          <view v-if="currentIndex < QUESTIONS.length - 1" class="nav-btn next-btn" :class="{ disabled: !isCurrentAnswered }" @click="next">下一题</view>
+          <view v-else class="nav-btn finish-btn" :class="{ disabled: !isCurrentAnswered }" @click="next">完成测评</view>
+        </view>
+      </view>
     </block>
   </view>
 </template>
@@ -108,9 +122,6 @@ const QUESTIONS = [
   { id: 'q8', ring: 2, ringName: '第二', ringDisplayName: '学业现状', type: 'single',
     text: '你当前的主要压力来源？',
     options: ['来自同学竞争', '来自父母期望', '来自自我高要求', '备考本身的压力'] },
-  { id: 'q9', ring: 2, ringName: '第二', ringDisplayName: '学业现状', type: 'single',
-    text: '你的成绩在班级大概位置？',
-    options: ['前 10%', '前 30%', '中等水平', '偏后'] },
   { id: 'q10', ring: 3, ringName: '第三', ringDisplayName: '家庭背景', type: 'single',
     text: '父母的职业背景？',
     options: ['体制内（公务员/教师/医生）', '企业职员', '自营生意', '其他'] },
@@ -170,16 +181,21 @@ const RING_START_INDEX = (() => {
 const showIntro = ref(true)
 const currentIndex = ref(0)
 const answers = ref({})
+const QUESTION_IDS = new Set(QUESTIONS.map((question) => question.id))
 
 const currentQ = computed(() => QUESTIONS[currentIndex.value])
 const currentRing = computed(() => currentQ.value.ring)
+const isCurrentAnswered = computed(() => isAnswered(currentQ.value))
 const completedCount = computed(() =>
-  Object.entries(answers.value).filter(([, v]) => v !== '' && !(Array.isArray(v) && v.length === 0)).length
+  QUESTIONS.filter(isAnswered).length
 )
 
 onShow(() => {
   const saved = loadQuestionnaire()
-  answers.value = saved.answers || {}
+  answers.value = sanitizeAnswers(saved.answers)
+  if (Object.keys(answers.value).length !== Object.keys(saved.answers || {}).length) {
+    saveQuestionnaire(answers.value)
+  }
 })
 
 function startTest() {
@@ -192,12 +208,21 @@ function isSelected(id, opt) {
   return Array.isArray(val) ? val.includes(opt) : val === opt
 }
 
+function sanitizeAnswers(savedAnswers = {}) {
+  if (typeof savedAnswers !== 'object' || savedAnswers === null) {
+    return {}
+  }
+  return Object.fromEntries(
+    Object.entries(savedAnswers).filter(([id]) => QUESTION_IDS.has(id))
+  )
+}
+
 function toggleOption(id, opt, type, maxSelect) {
   if (type === 'single') {
     answers.value = { ...answers.value, [id]: opt }
     saveQuestionnaire(answers.value)
     if (currentIndex.value < QUESTIONS.length - 1) {
-      setTimeout(() => { currentIndex.value++ }, 200)
+      setTimeout(() => { currentIndex.value++ }, 250)
     }
     return
   }
@@ -221,6 +246,14 @@ function prev() {
 }
 
 function next() {
+  if (!isCurrentAnswered.value) {
+    uni.showToast({
+      title: '请先选择本题答案',
+      icon: 'none'
+    })
+    return
+  }
+
   if (currentIndex.value < QUESTIONS.length - 1) {
     currentIndex.value++
   } else {
@@ -232,73 +265,129 @@ function goToRing(ringId) {
   currentIndex.value = RING_START_INDEX[ringId]
 }
 
+function isAnswered(question) {
+  const value = answers.value[question.id]
+  return value !== '' && value !== undefined && value !== null && !(Array.isArray(value) && value.length === 0)
+}
+
+function getFirstUnansweredIndex() {
+  return QUESTIONS.findIndex((question) => !isAnswered(question))
+}
+
 function finishQuestionnaire() {
-  if (completedCount.value < QUESTIONS.length) {
+  const firstUnansweredIndex = getFirstUnansweredIndex()
+  if (firstUnansweredIndex !== -1) {
+    currentIndex.value = firstUnansweredIndex
     uni.showToast({
-      title: `还有 ${QUESTIONS.length - completedCount.value} 题未完成`,
+      title: `已跳到第 ${firstUnansweredIndex + 1} 题`,
       icon: 'none'
     })
     return
   }
 
-  uni.showModal({
-    title: '五环问卷已完成',
-    content: '请继续完成 MBTI 和霍兰德测评。三项测评全部完成后，可在首页或我的页面生成综合报告。',
-    confirmText: '去测评中心',
-    cancelText: '返回首页',
-    success: (res) => {
-      if (res.confirm) {
-        uni.switchTab({ url: '/pages/assessments/assessments' })
-      } else {
-        uni.switchTab({ url: '/pages/index/index' })
-      }
-    }
+  uni.showToast({
+    title: '五环测评已完成',
+    icon: 'success',
+    duration: 500
   })
+  setTimeout(() => {
+    uni.switchTab({ url: '/pages/assessments/assessments' })
+  }, 500)
 }
 </script>
 
 <style lang="scss" scoped>
 .page {
   min-height: 100vh;
-  background: $bg-page;
-  padding: 24rpx 32rpx 200rpx;
+  background:
+    radial-gradient(90% 45% at 20% 0%, rgba(37, 99, 235, 0.07) 0%, rgba(37, 99, 235, 0) 62%),
+    linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
+  padding: 32rpx;
+  padding-top: calc(32rpx + env(safe-area-inset-top));
+  padding-bottom: calc(180rpx + env(safe-area-inset-bottom));
   box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
 }
 
+.cyber-glow-bg-indigo {
+  position: absolute;
+  width: 550rpx;
+  height: 550rpx;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
+  top: -150rpx;
+  right: -150rpx;
+  pointer-events: none;
+}
+.cyber-glow-bg-orange {
+  position: absolute;
+  width: 550rpx;
+  height: 550rpx;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.035) 0%, rgba(0, 0, 0, 0) 70%);
+  bottom: 100rpx;
+  left: -150rpx;
+  pointer-events: none;
+}
+
+// 介绍页
 .intro-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 48rpx - 200rpx);
+  min-height: calc(100vh - 120rpx);
+  z-index: 10;
 }
 
 .intro-card {
-  background: $bg-white;
+  @include glass-panel;
   border-radius: $radius-xl;
-  padding: 60rpx 40rpx;
-  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.08);
+  padding: 64rpx 40rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  z-index: 10;
+}
+
+.intro-icon-outer {
+  position: relative;
+  width: 160rpx;
+  height: 160rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36rpx;
 }
 
 .intro-icon {
-  font-size: 96rpx;
-  margin-bottom: 32rpx;
+  font-size: 100rpx;
+  z-index: 2;
+}
+
+.intro-icon-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(37, 99, 235, 0.12);
+  border-radius: 50%;
+  filter: blur(20rpx);
+  z-index: 1;
 }
 
 .intro-title {
-  font-size: 40rpx;
-  font-weight: 700;
+  font-size: 42rpx;
+  font-weight: 800;
   color: $text-primary;
   margin-bottom: 24rpx;
+  letter-spacing: 0;
   text-align: center;
 }
 
 .intro-desc {
-  font-size: 28rpx;
+  font-size: 27rpx;
   color: $text-secondary;
   line-height: 1.6;
   text-align: center;
@@ -306,7 +395,8 @@ function finishQuestionnaire() {
 }
 
 .intro-tips {
-  background: $bg-input;
+  background: rgba(248, 250, 252, 0.92);
+  border: 1px solid rgba(79, 70, 229, 0.08);
   border-radius: $radius-lg;
   padding: 32rpx;
   width: 100%;
@@ -315,15 +405,15 @@ function finishQuestionnaire() {
 }
 
 .tips-title {
-  font-size: 28rpx;
-  font-weight: 600;
-  color: $text-primary;
+  font-size: 27rpx;
+  font-weight: 700;
+  color: $brand-primary;
   margin-bottom: 16rpx;
   display: block;
 }
 
 .tips-text {
-  font-size: 26rpx;
+  font-size: 24rpx;
   color: $text-secondary;
   line-height: 1.8;
   display: block;
@@ -332,188 +422,278 @@ function finishQuestionnaire() {
 
 .start-btn {
   width: 100%;
-  height: 88rpx;
-  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  height: 96rpx;
+  background: $grad-royal;
   color: #fff;
   border-radius: $radius-full;
   font-size: 32rpx;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
+  box-shadow: 0 8rpx 24rpx rgba(99, 102, 241, 0.35);
+  transition: transform 0.1s;
+
+  &:active {
+    transform: scale(0.98);
+  }
 }
 .start-btn::after {
   border: none;
 }
-.start-btn:active {
-  opacity: 0.9;
-}
 
+// 头部进度条
 .progress-bar-wrap {
-  margin-bottom: 24rpx;
+  margin-bottom: 32rpx;
+  z-index: 10;
 }
 
 .progress-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8rpx;
+  margin-bottom: 12rpx;
 }
 
 .progress-text, .progress-pct {
-  font-size: 24rpx;
-  color: $text-muted;
+  font-size: 23rpx;
+  color: $text-secondary;
+  font-weight: 500;
 }
 
 .progress-track {
-  background: $border-light;
+  background: rgba(226, 232, 240, 0.9);
+  border: 1px solid rgba(79, 70, 229, 0.08);
   border-radius: $radius-full;
-  height: 8rpx;
+  height: 12rpx;
 }
 
 .progress-fill {
-  background: #7c3aed;
+  background: $grad-royal;
   border-radius: $radius-full;
-  height: 8rpx;
-  transition: width 0.3s;
+  height: 12rpx;
+  transition: width 0.3s ease;
+  position: relative;
 }
 
+.progress-fill-glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16rpx;
+  height: 100%;
+  background: #fff;
+  filter: blur(2rpx);
+  opacity: 0.8;
+}
+
+// 五环选项卡
 .ring-tabs {
   white-space: nowrap;
-  margin-bottom: 24rpx;
+  margin-bottom: 32rpx;
+  z-index: 10;
 }
 
 .ring-tab {
   display: inline-block;
-  padding: 8rpx 24rpx;
+  padding: 10rpx 32rpx;
   border-radius: $radius-full;
-  font-size: 24rpx;
-  color: $text-muted;
-  background: $bg-white;
-  margin-right: 12rpx;
-  border: 2rpx solid $border-light;
+  font-size: 23rpx;
+  font-weight: 600;
+  color: $text-secondary;
+  background: rgba(255, 255, 255, 0.82);
+  margin-right: 16rpx;
+  border: 1px solid rgba(79, 70, 229, 0.08);
+  transition: all 0.2s;
 }
 
 .ring-tab-active {
-  background: #7c3aed;
+  background: $grad-royal;
   color: #fff;
-  border-color: #7c3aed;
+  border-color: rgba(99, 102, 241, 0.3);
+  box-shadow: 0 4rpx 16rpx rgba(99, 102, 241, 0.3);
 }
 
+// 题目卡片
 .question-card {
-  background: $bg-white;
+  @include glass-panel;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(79, 70, 229, 0.10);
   border-radius: $radius-xl;
-  padding: 40rpx 32rpx;
-  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.06);
+  padding: 48rpx 36rpx;
+  z-index: 10;
+}
+
+.ring-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
 }
 
 .ring-label {
-  font-size: 22rpx;
-  color: #7c3aed;
-  font-weight: 600;
-  display: block;
-  margin-bottom: 12rpx;
+  font-size: 23rpx;
+  color: $brand-violet;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.dimension-pulse-dot {
+  width: 8rpx;
+  height: 8rpx;
+  background-color: $brand-violet;
+  border-radius: 50%;
+  margin-left: 12rpx;
 }
 
 .question-text {
-  font-size: 32rpx;
-  font-weight: 700;
+  font-size: 34rpx;
+  font-weight: 800;
   color: $text-primary;
   display: block;
-  margin-bottom: 8rpx;
+  margin-bottom: 12rpx;
   line-height: 1.5;
 }
 
 .max-select-hint {
   font-size: 22rpx;
-  color: $text-muted;
+  color: #F59E0B;
   display: block;
-  margin-bottom: 24rpx;
+  margin-bottom: 32rpx;
+  font-weight: 500;
 }
 
 .options-list {
-  margin-top: 24rpx;
+  margin-top: 32rpx;
   display: flex;
   flex-direction: column;
-  gap: 16rpx;
+  gap: 20rpx;
 }
 
 .option-item {
   display: flex;
   align-items: center;
-  gap: 20rpx;
-  padding: 20rpx 24rpx;
+  gap: 24rpx;
+  padding: 28rpx 28rpx;
   border-radius: $radius-lg;
-  border: 2rpx solid $border-light;
-  background: $bg-page;
+  border: 1px solid rgba(79, 70, 229, 0.10);
+  background: rgba(248, 250, 252, 0.96);
+  transition: all 0.25s;
+
+  &:active {
+    transform: scale(0.98);
+  }
 }
 
 .option-selected {
-  border-color: #7c3aed;
-  background: #f5f3ff;
+  border-color: rgba(99, 102, 241, 0.5);
+  background: rgba(79, 70, 229, 0.10);
+  box-shadow: inset 0 0 20rpx rgba(99, 102, 241, 0.10);
 }
 
 .option-check {
-  width: 36rpx;
-  height: 36rpx;
+  width: 40rpx;
+  height: 40rpx;
   border-radius: 50%;
-  border: 2rpx solid $border-light;
-  background: $bg-white;
+  border: 1px solid rgba(79, 70, 229, 0.22);
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: all 0.2s;
 
   .option-selected & {
-    background: #7c3aed;
-    border-color: #7c3aed;
+    background: $brand-violet;
+    border-color: $brand-violet;
   }
 }
 
-.check-icon {
-  color: #fff;
-  font-size: 20rpx;
+.check-dot {
+  width: 14rpx;
+  height: 14rpx;
+  border-radius: 50%;
+  background: #fff;
 }
 
 .option-text {
   font-size: 28rpx;
   color: $text-primary;
-  line-height: 1.4;
+  line-height: 1.5;
+  font-weight: 500;
 }
 
-.footer {
+// 底部悬浮控制条
+.footer-bar {
   position: fixed;
-  bottom: calc(32rpx + env(safe-area-inset-bottom));
-  left: 32rpx;
-  right: 32rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(120rpx + env(safe-area-inset-bottom));
+  z-index: 50;
   display: flex;
-  gap: 16rpx;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(248, 250, 252, 0.92);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(79, 70, 229, 0.08);
+  z-index: 1;
+}
+
+.footer-btns {
+  position: relative;
+  display: flex;
+  gap: 20rpx;
+  padding: 0 32rpx;
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 2;
 }
 
 .nav-btn {
   flex: 1;
-  height: 80rpx;
+  height: 84rpx;
   border-radius: $radius-full;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30rpx;
-  font-weight: 600;
+  font-size: 28rpx;
+  font-weight: 700;
+  transition: all 0.2s;
+
+  &:active:not(.disabled) {
+    transform: scale(0.97);
+  }
 }
 
 .prev-btn {
-  background: $bg-white;
-  color: $text-secondary;
-  border: 2rpx solid $border-light;
+  background: rgba(255, 255, 255, 0.9);
+  color: $text-primary;
+  border: 1px solid rgba(79, 70, 229, 0.10);
 }
 
 .next-btn {
-  background: #7c3aed;
+  background: $grad-royal;
   color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6rpx 16rpx rgba(99, 102, 241, 0.3);
+}
+
+.finish-btn {
+  background: $grad-accent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 6rpx 16rpx rgba(249, 115, 22, 0.3);
 }
 
 .disabled {
-  opacity: 0.4;
+  opacity: 0.3;
 }
-
 </style>

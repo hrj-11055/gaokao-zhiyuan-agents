@@ -934,12 +934,20 @@ export const HOLLAND_TYPE_LABELS = {
 }
 
 /**
- * 计算霍兰德职业兴趣代码
+ * 霍兰德精简版题库（12 题，每类型 2 题）
+ * 从完整版 60 题中精选最核心的题目
+ */
+export const HOLLAND_QUESTIONS_BASIC = HOLLAND_QUESTIONS.filter(q =>
+  [1, 2, 11, 13, 21, 22, 31, 32, 41, 42, 51, 52].includes(q.id)
+)
+
+/**
+ * 通用霍兰德职业兴趣代码计算函数（支持任意题目子集）
  * @param {Object} answers - 答案对象，格式为 { questionId: optionIndex }
- *                          其中 questionId 是题目 ID (1-60)，optionIndex 是选项索引 (0-3)
+ * @param {Array} questions - 题目数组（完整版或精简版）
  * @returns {Object} { code: 'RIA', scores: { R: 35, I: 32, A: 28, S: 25, E: 20, C: 18 } }
  */
-export function calculateHollandCode(answers) {
+export function calculateHollandCodeFromQuestions(answers, questions) {
   // 初始化各类型分数
   const scores = {
     R: 0,
@@ -952,7 +960,7 @@ export function calculateHollandCode(answers) {
 
   // 计算每个类型的总分
   // 答案索引0-3对应分数1-4 (索引+1)
-  HOLLAND_QUESTIONS.forEach(q => {
+  questions.forEach(q => {
     const answer = answers[q.id]
     if (answer !== undefined && answer >= 0 && answer <= 3) {
       scores[q.type] += (answer + 1)
@@ -972,6 +980,15 @@ export function calculateHollandCode(answers) {
     code,
     scores
   }
+}
+
+/**
+ * 计算霍兰德职业兴趣代码（完整版，向后兼容）
+ * @param {Object} answers - 答案对象，格式为 { questionId: optionIndex }
+ * @returns {Object} { code: 'RIA', scores: { R: 35, I: 32, A: 28, S: 25, E: 20, C: 18 } }
+ */
+export function calculateHollandCode(answers) {
+  return calculateHollandCodeFromQuestions(answers, HOLLAND_QUESTIONS)
 }
 
 /**

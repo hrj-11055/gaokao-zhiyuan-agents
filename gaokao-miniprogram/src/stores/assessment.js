@@ -2,6 +2,36 @@ import { defineStore } from 'pinia'
 
 const ASSESSMENTS_KEY = 'assessments'
 const QUESTIONNAIRE_KEY = 'questionnaire'
+const QUESTIONNAIRE_REQUIRED_COUNT = 21
+const QUESTIONNAIRE_ACTIVE_IDS = new Set([
+  'q1', 'q2', 'q3', 'q4', 'q5',
+  'q6', 'q7', 'q8',
+  'q10', 'q11', 'q12', 'q13',
+  'q14', 'q15', 'q16',
+  'q17', 'q18', 'q19', 'q20', 'q21', 'q22'
+])
+
+function isFilledAnswer(value) {
+  return value !== '' && value !== undefined && value !== null && !(Array.isArray(value) && value.length === 0)
+}
+
+function sanitizeQuestionnaireAnswers(answers = {}) {
+  if (typeof answers !== 'object' || answers === null) {
+    return {}
+  }
+  return Object.fromEntries(
+    Object.entries(answers).filter(([id, value]) => QUESTIONNAIRE_ACTIVE_IDS.has(id) && isFilledAnswer(value))
+  )
+}
+
+function normalizeQuestionnaire(questionnaire = {}) {
+  const answers = sanitizeQuestionnaireAnswers(questionnaire.answers)
+  return {
+    answers,
+    completedCount: Math.min(Object.keys(answers).length, QUESTIONNAIRE_REQUIRED_COUNT),
+    updatedAt: questionnaire.updatedAt || 0
+  }
+}
 
 function normalizeMbti(mbti = {}) {
   return {
@@ -58,7 +88,7 @@ export const useAssessmentStore = defineStore('assessment', {
       let count = 0
       if (state.mbti.completed) count++
       if (state.holland.completed) count++
-      if (state.questionnaire.completedCount >= 22) count++
+      if (state.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT) count++
       return count
     },
     isAllCompleted(state) {
@@ -72,7 +102,7 @@ export const useAssessmentStore = defineStore('assessment', {
       const qData = uni.getStorageSync(QUESTIONNAIRE_KEY)
       if (qData) {
         try {
-          this.questionnaire = JSON.parse(qData)
+          this.questionnaire = normalizeQuestionnaire(JSON.parse(qData))
         } catch {}
       }
 
@@ -83,7 +113,7 @@ export const useAssessmentStore = defineStore('assessment', {
           this.mbti = normalizeMbti(parsed.mbti)
           this.holland = normalizeHolland(parsed.holland)
           if (parsed.questionnaire) {
-             this.questionnaire = { ...this.questionnaire, ...parsed.questionnaire }
+             this.questionnaire = normalizeQuestionnaire({ ...this.questionnaire, ...parsed.questionnaire })
           }
         } catch {}
       }
@@ -100,10 +130,10 @@ export const useAssessmentStore = defineStore('assessment', {
     },
 
     saveQuestionnaire(answers) {
-      const completed = Object.values(answers).filter(v => v !== '' && !(Array.isArray(v) && v.length === 0)).length
+      const normalizedAnswers = sanitizeQuestionnaireAnswers(answers)
       this.questionnaire = {
-        answers,
-        completedCount: completed,
+        answers: normalizedAnswers,
+        completedCount: Math.min(Object.keys(normalizedAnswers).length, QUESTIONNAIRE_REQUIRED_COUNT),
         updatedAt: Date.now()
       }
       uni.setStorageSync(QUESTIONNAIRE_KEY, JSON.stringify(this.questionnaire))

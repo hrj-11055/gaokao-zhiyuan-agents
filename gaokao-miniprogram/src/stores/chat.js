@@ -7,7 +7,9 @@ export const useChatStore = defineStore('chat', {
     conversationId: '',
     messages: [],
     updatedAt: 0,
-    profileInputsKey: ''
+    profileInputsKey: '',
+    pendingProfileField: '',
+    pendingRecommendationQuery: ''
   }),
   
   actions: {
@@ -20,6 +22,8 @@ export const useChatStore = defineStore('chat', {
           this.messages = parsed.messages || []
           this.updatedAt = parsed.updatedAt || 0
           this.profileInputsKey = parsed.profileInputsKey || ''
+          this.pendingProfileField = parsed.pendingProfileField || ''
+          this.pendingRecommendationQuery = parsed.pendingRecommendationQuery || ''
         } catch {
           this.clearHistory()
         }
@@ -31,7 +35,9 @@ export const useChatStore = defineStore('chat', {
         conversationId: this.conversationId,
         messages: this.messages,
         updatedAt: Date.now(),
-        profileInputsKey: this.profileInputsKey
+        profileInputsKey: this.profileInputsKey,
+        pendingProfileField: this.pendingProfileField,
+        pendingRecommendationQuery: this.pendingRecommendationQuery
       })
       uni.setStorageSync(STORAGE_KEY, data)
     },
@@ -51,11 +57,25 @@ export const useChatStore = defineStore('chat', {
       this.saveHistory()
     },
 
+    setProfileFollowup(field, recommendationQuery) {
+      this.pendingProfileField = field || ''
+      this.pendingRecommendationQuery = recommendationQuery || ''
+      this.saveHistory()
+    },
+
+    clearProfileFollowup() {
+      this.pendingProfileField = ''
+      this.pendingRecommendationQuery = ''
+      this.saveHistory()
+    },
+
     clearHistory() {
       this.conversationId = ''
       this.messages = []
       this.updatedAt = 0
       this.profileInputsKey = ''
+      this.pendingProfileField = ''
+      this.pendingRecommendationQuery = ''
       uni.removeStorageSync(STORAGE_KEY)
     }
   }

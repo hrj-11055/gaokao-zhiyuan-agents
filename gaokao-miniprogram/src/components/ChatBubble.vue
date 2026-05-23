@@ -1,42 +1,46 @@
 <template>
   <view class="bubble-wrap" :class="[`bubble-${type}`]">
-    <!-- AI 头像 -->
-    <view v-if="type === 'ai'" class="avatar">
-      <text class="avatar-text">峰</text>
+    <!-- AI 炫彩头像 -->
+    <view v-if="type === 'ai'" class="avatar-outer">
+      <view class="avatar-glow" />
+      <view class="avatar">
+        <text class="avatar-text">峰</text>
+      </view>
     </view>
 
     <!-- 气泡内容容器 -->
     <view class="bubble-container">
       <view class="bubble" :class="[`bubble-${type}-inner`]">
         <view class="bubble-text" :class="{ 'text-streaming': isStreaming }">
-          <rich-text :nodes="contentHtml" />
+          <text v-if="showStreamingPlaceholder" class="streaming-placeholder">正在分析...</text>
+          <rich-text v-else :nodes="contentHtml" />
           <text v-if="isStreaming" class="cursor" />
         </view>
-        <text v-if="type === 'ai'" class="ai-label">AI 生成 · 仅供参考</text>
+        <text v-if="type === 'ai'" class="ai-label">AI 志愿咨询结果仅供参考，请结合官方信息核对</text>
       </view>
 
-      <!-- 操作栏 (仅 AI 回复显示) -->
+      <!-- AI 回复操作栏 -->
       <view v-if="type === 'ai' && !isStreaming" class="actions-bar">
         <view class="action-btn" :class="{ 'playing': isPlaying }" @click="onToggleAudio">
           <text class="action-icon">{{ isPlaying ? '⏸' : '🔊' }}</text>
-          <text class="action-text">{{ isPlaying ? '停止' : '朗读' }}</text>
+          <text class="action-text">{{ isPlaying ? '停止朗读' : '朗读' }}</text>
         </view>
         <view class="action-divider" />
         <view class="action-btn" @click="onCopy">
           <text class="action-icon">📋</text>
-          <text class="action-text">复制</text>
+          <text class="action-text">复制内容</text>
         </view>
         <view class="spacer" />
         
-        <!-- 反馈成功后的状态 -->
-        <text v-if="feedback !== 0" class="feedback-thanks">感谢评价</text>
+        <!-- 反馈状态 -->
+        <text v-if="feedback !== 0" class="feedback-thanks">已收到反馈</text>
         
         <template v-else>
           <view class="action-btn feedback-btn" @click="onFeedback(1)">
-            <text class="action-icon">👍</text>
+            <text class="action-icon-fb">👍</text>
           </view>
           <view class="action-btn feedback-btn" @click="onFeedback(-1)">
-            <text class="action-icon">👎</text>
+            <text class="action-icon-fb">👎</text>
           </view>
         </template>
       </view>
@@ -70,11 +74,14 @@ const props = defineProps({
 })
 
 const contentHtml = computed(() => markdownToRichTextHtml(props.content))
+const showStreamingPlaceholder = computed(() =>
+  props.type === 'ai' && props.isStreaming && !String(props.content || '').trim()
+)
 
 // 状态管理
 const isPlaying = ref(false)
 const feedback = ref(0) // 0: 无, 1: 点赞, -1: 点踩
-const localAudioPath = ref('') // 新增：缓存本地音频路径
+const localAudioPath = ref('') // 缓存本地音频路径
 let audioContext = null
 
 // 语音播放
@@ -93,7 +100,7 @@ async function onToggleAudio() {
   const cleanText = props.content.replace(/[#*`]/g, '').slice(0, 500)
 
   try {
-    uni.showLoading({ title: '语音合成中...', mask: true })
+    uni.showLoading({ title: 'AI 语音合成中...', mask: true })
     const arrayBuffer = await fetchTTSAudio(cleanText)
     uni.hideLoading()
 
@@ -119,6 +126,7 @@ async function onToggleAudio() {
 function playLocalFile(path) {
   if (audioContext) {
     audioContext.destroy()
+    audioContext = null
   }
   
   audioContext = uni.createInnerAudioContext()
@@ -143,8 +151,10 @@ function playLocalFile(path) {
 function stopAudio() {
   if (audioContext) {
     audioContext.stop()
-    isPlaying.value = false
+    audioContext.destroy()
+    audioContext = null
   }
+  isPlaying.value = false
 }
 
 // 复制
@@ -189,8 +199,8 @@ onUnmounted(() => {
 .bubble-wrap {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 32rpx;
-  padding: 0 24rpx;
+  margin-bottom: 36rpx;
+  padding: 0 32rpx;
 }
 
 .bubble-user {
@@ -201,48 +211,79 @@ onUnmounted(() => {
   justify-content: flex-start;
 }
 
-.avatar {
-  width: 64rpx;
-  height: 64rpx;
-  background: $brand-primary;
-  border-radius: $radius-md;
+.avatar-outer {
+  position: relative;
+  width: 76rpx;
+  height: 76rpx;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 20rpx;
   flex-shrink: 0;
-  margin-right: 16rpx;
+}
+
+.avatar {
+  width: 68rpx;
+  height: 68rpx;
+  background: $grad-royal;
+  border-radius: $radius-sm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4rpx 16rpx rgba(99, 102, 241, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 2;
 }
 
 .avatar-text {
   color: #fff;
-  font-size: 28rpx;
-  font-weight: bold;
+  font-size: 30rpx;
+  font-weight: 900;
+}
+
+.avatar-glow {
+  position: absolute;
+  top: -4rpx;
+  left: -4rpx;
+  right: -4rpx;
+  bottom: -4rpx;
+  background: rgba(37, 99, 235, 0.16);
+  border-radius: 22rpx;
+  filter: blur(8rpx);
+  z-index: 1;
 }
 
 .bubble-container {
   display: flex;
   flex-direction: column;
-  max-width: 75%;
+  max-width: 80%;
 }
 
 .bubble {
-  padding: 20rpx 28rpx;
+  padding: 24rpx 32rpx;
   line-height: 1.6;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .bubble-user-inner {
-  background: $brand-primary;
-  border-radius: $radius-lg 4rpx $radius-lg $radius-lg;
+  background: $grad-royal;
+  border-radius: $radius-md $radius-xs $radius-md $radius-md;
+  box-shadow: 0 8rpx 22rpx rgba(37, 99, 235, 0.20);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .bubble-ai-inner {
-  background: $bg-white;
-  border-radius: 4rpx $radius-lg $radius-lg $radius-lg;
-  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: $radius-xs $radius-md $radius-md $radius-md;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 8rpx 32rpx rgba(15, 23, 42, 0.03);
 }
 
 .bubble-text {
-  font-size: 30rpx;
+  font-size: 29rpx;
   word-break: break-word;
 }
 
@@ -254,46 +295,55 @@ onUnmounted(() => {
   color: $text-primary;
 }
 
+.streaming-placeholder {
+  color: $text-secondary;
+}
+
 .cursor {
   display: inline-block;
-  width: 4rpx;
-  height: 32rpx;
+  width: 6rpx;
+  height: 34rpx;
   background: $brand-primary;
   vertical-align: text-bottom;
-  margin-left: 4rpx;
+  margin-left: 8rpx;
   animation: blink 1s step-end infinite;
 }
 
 .ai-label {
   display: block;
-  font-size: 22rpx;
+  font-size: 21rpx;
   color: $text-muted;
-  margin-top: 8rpx;
+  margin-top: 14rpx;
+  border-top: 1px solid rgba(15, 23, 42, 0.05);
+  padding-top: 10rpx;
 }
 
 .actions-bar {
   display: flex;
   align-items: center;
-  margin-top: 12rpx;
-  padding: 4rpx 8rpx;
+  margin-top: 14rpx;
+  padding: 4rpx 10rpx;
   min-height: 48rpx;
 }
 
 .action-btn {
   display: flex;
   align-items: center;
-  gap: 6rpx;
-  padding: 8rpx 16rpx;
-  border-radius: $radius-sm;
-  background: rgba(0,0,0,0.02);
-  margin-right: 8rpx;
+  gap: 8rpx;
+  padding: 8rpx 20rpx;
+  border-radius: $radius-xs;
+  background: rgba(15, 23, 42, 0.02);
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  margin-right: 12rpx;
+  transition: all 0.2s;
 
   &:active {
-    background: rgba(0,0,0,0.05);
+    background: rgba(15, 23, 42, 0.05);
   }
   
   &.playing {
-    background: rgba($brand-primary, 0.1);
+    background: rgba(255, 107, 0, 0.08);
+    border-color: rgba(255, 107, 0, 0.2);
     .action-icon, .action-text {
       color: $brand-primary;
     }
@@ -302,19 +352,20 @@ onUnmounted(() => {
 
 .action-icon {
   font-size: 24rpx;
-  color: $text-muted;
+  color: $text-secondary;
 }
 
 .action-text {
-  font-size: 22rpx;
-  color: $text-muted;
+  font-size: 21rpx;
+  color: $text-secondary;
+  font-weight: 500;
 }
 
 .action-divider {
   width: 2rpx;
   height: 20rpx;
-  background: $border-light;
-  margin: 0 8rpx;
+  background: rgba(15, 23, 42, 0.08);
+  margin: 0 10rpx;
 }
 
 .spacer {
@@ -323,14 +374,19 @@ onUnmounted(() => {
 
 .feedback-btn {
   margin-right: 0;
-  margin-left: 8rpx;
-  background: none;
-  padding: 8rpx;
+  margin-left: 12rpx;
+  background: rgba(15, 23, 42, 0.02);
+  padding: 8rpx 12rpx;
+}
+
+.action-icon-fb {
+  font-size: 24rpx;
 }
 
 .feedback-thanks {
-  font-size: 22rpx;
+  font-size: 21rpx;
   color: $brand-primary;
+  font-weight: 700;
   animation: fadeIn 0.3s ease;
 }
 
