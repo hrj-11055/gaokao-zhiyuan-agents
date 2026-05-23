@@ -23,6 +23,11 @@ class MembershipPagesTests(unittest.TestCase):
             "openMembership",
             "shareInvite",
             "membershipStore.effectiveInviteCount",
+            "paymentUnavailableText",
+            "copyInviteLink",
+            "refreshMembershipStatus",
+            "备案中，先邀请解锁",
+            "邀请进度已刷新",
         ]:
             self.assertIn(snippet, text)
 
@@ -41,6 +46,21 @@ class MembershipPagesTests(unittest.TestCase):
             "paymentActionText",
             "邀请 3 名好友免费解锁",
             "useMembershipStore",
+            "PAYMENT_ENABLED",
+            "支付功能正在备案配置中",
+            "goInvite",
+        ]:
+            self.assertIn(snippet, text)
+
+    def test_report_page_blocks_pdf_download_until_https_domain_is_ready(self):
+        text = self.read("gaokao-miniprogram/src/pages/report/report.vue")
+
+        for snippet in [
+            "PDF_DOWNLOAD_ENABLED",
+            "PDF 下载正在等待 HTTPS 合法域名配置",
+            "downloadUnavailableText",
+            "uni.showModal",
+            "if (!PDF_DOWNLOAD_ENABLED)",
         ]:
             self.assertIn(snippet, text)
 

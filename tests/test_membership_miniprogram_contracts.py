@@ -45,6 +45,8 @@ class MembershipMiniprogramContractTests(unittest.TestCase):
         self.assertIn("async createPayment", text)
         self.assertIn("async pollOrder", text)
         self.assertIn("uni.requestPayment", text)
+        self.assertIn("paymentUnavailableText", text)
+        self.assertIn("isPaymentEnabled", text)
 
     def test_index_captures_inviter_and_marks_profile_complete(self):
         text = self.read("gaokao-miniprogram/src/pages/index/index.vue")

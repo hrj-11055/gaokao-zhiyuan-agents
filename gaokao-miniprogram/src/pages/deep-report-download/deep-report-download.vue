@@ -81,7 +81,7 @@
 
 <script setup>
 import { computed, onMounted, ref } from 'vue'
-import { API_BASE } from '../../config.js'
+import { API_BASE, PDF_DOWNLOAD_ENABLED } from '../../config.js'
 import { requestBackendData } from '../../api/backend.js'
 import { useMembershipStore } from '../../stores/membership.js'
 
@@ -223,6 +223,16 @@ async function ensureMembership() {
 }
 
 async function downloadDeepPdf(item) {
+  if (!PDF_DOWNLOAD_ENABLED) {
+    uni.showModal({
+      title: 'PDF 下载暂未开放',
+      content: 'PDF 下载正在等待 HTTPS 合法域名配置，备案完成前可先查看报告库是否入库。',
+      confirmText: '知道了',
+      showCancel: false,
+    })
+    return
+  }
+
   try {
     await ensureMembership()
   } catch (err) {

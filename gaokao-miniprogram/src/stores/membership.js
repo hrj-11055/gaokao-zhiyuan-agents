@@ -10,6 +10,7 @@ import {
   markProfileComplete,
   saveUserProfileToServer,
 } from '../api/membership.js'
+import { PAYMENT_ENABLED } from '../config.js'
 
 const INVITER_KEY = 'membership_inviter_id'
 
@@ -65,6 +66,12 @@ export const useMembershipStore = defineStore('membership', {
     },
     inviteProgressText(state) {
       return `${state.effectiveInviteCount}/${state.requiredInviteCount}`
+    },
+    isPaymentEnabled() {
+      return PAYMENT_ENABLED
+    },
+    paymentUnavailableText() {
+      return '支付功能正在备案配置中，请先邀请 3 位同学免费解锁。'
     },
   },
 
@@ -143,6 +150,9 @@ export const useMembershipStore = defineStore('membership', {
     },
 
     async createPayment() {
+      if (!PAYMENT_ENABLED) {
+        throw new Error(this.paymentUnavailableText)
+      }
       await this.ensureLogin()
       const data = await createMembershipPayment(this.sessionToken)
       if (data.alreadyUnlocked) {

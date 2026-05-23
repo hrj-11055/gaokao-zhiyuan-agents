@@ -13,3 +13,10 @@ export const API_BASE = import.meta.env.VITE_API_BASE || 'http://47.113.125.147'
 export const WECHAT_CLOUD_ENV = import.meta.env.VITE_WECHAT_CLOUD_ENV || 'cloud1-d9gnnxnx79feadfae'
 export const WECHAT_CLOUD_SERVICE = import.meta.env.VITE_WECHAT_CLOUD_SERVICE || 'flask-xsun'
 export const USE_WECHAT_CLOUD_CONTAINER = import.meta.env.VITE_USE_WECHAT_CLOUD_CONTAINER === 'true'
+
+/**
+ * 上线能力开关
+ * 支付和小程序 PDF 下载依赖微信支付、HTTPS 合法域名和备案配置，默认关闭。
+ */
+export const PAYMENT_ENABLED = import.meta.env.VITE_PAYMENT_ENABLED === 'true'
+export const PDF_DOWNLOAD_ENABLED = import.meta.env.VITE_PDF_DOWNLOAD_ENABLED === 'true'

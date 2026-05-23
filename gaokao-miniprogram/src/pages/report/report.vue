@@ -145,6 +145,7 @@ import { useChatStore } from '../../stores/chat.js'
 import { useAssessmentStore } from '../../stores/assessment.js'
 import { useReportStore } from '../../stores/report.js'
 import { useMembershipStore } from '../../stores/membership.js'
+import { PAYMENT_ENABLED, PDF_DOWNLOAD_ENABLED } from '../../config.js'
 
 const status = ref('loading')
 const errorMsg = ref('')
@@ -154,6 +155,8 @@ const chatStore = useChatStore()
 const assessmentStore = useAssessmentStore()
 const reportStore = useReportStore()
 const membershipStore = useMembershipStore()
+const paymentUnavailableText = '支付功能正在备案配置中，请先邀请 3 位同学免费解锁。'
+const downloadUnavailableText = 'PDF 下载正在等待 HTTPS 合法域名配置，备案完成前请先查看在线报告。'
 
 const sourceDesc = computed(() => {
   const completedCount = assessmentStore.questionnaire?.completedCount || 0
@@ -166,9 +169,10 @@ const sourceDesc = computed(() => {
   return parts.length > 0 ? `基于 ${parts.join(' + ')} 生成` : '基于考生基本信息生成'
 })
 
-const paymentActionText = computed(() =>
-  errorMsg.value && errorMsg.value.includes('支付暂未接入') ? '支付接入后可开通' : '¥29 解锁并生成报告'
-)
+const paymentActionText = computed(() => {
+  if (!PAYMENT_ENABLED) return '支付备案中，先邀请解锁'
+  return errorMsg.value && errorMsg.value.includes('支付暂未接入') ? '支付接入后可开通' : '¥29 解锁并生成报告'
+})
 
 onMounted(async () => {
   userStore.loadProfile()
@@ -265,6 +269,19 @@ async function generate(force = false) {
 }
 
 async function unlockAndGenerate() {
+  if (!PAYMENT_ENABLED) {
+    uni.showModal({
+      title: '支付暂未开放',
+      content: paymentUnavailableText,
+      confirmText: '去邀请',
+      cancelText: '知道了',
+      success: (res) => {
+        if (res.confirm) goInvite()
+      },
+    })
+    return
+  }
+
   try {
     uni.showLoading({ title: '发起支付...' })
     await membershipStore.createPayment()
@@ -331,6 +348,19 @@ function getHeaderValue(headers, name) {
 
 function downloadPdf() {
   if (!reportStore.url) return
+
+  if (!PDF_DOWNLOAD_ENABLED) {
+    uni.showModal({
+      title: 'PDF 下载暂未开放',
+      content: downloadUnavailableText,
+      confirmText: '查看报告',
+      cancelText: '知道了',
+      success: (res) => {
+        if (res.confirm) openInBrowser()
+      },
+    })
+    return
+  }
 
   uni.showLoading({ title: 'PDF 生成中...' })
   const pdfUrl = reportStore.url.replace('.html', '.pdf')

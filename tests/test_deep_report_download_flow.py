@@ -77,6 +77,9 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         self.assertIn("请至少输入 2 个字", download_page)
         self.assertIn("uni.showModal", download_page)
         self.assertIn("uni.switchTab({ url: '/pages/profile/profile' })", download_page)
+        self.assertIn("PDF_DOWNLOAD_ENABLED", download_page)
+        self.assertIn("PDF 下载正在等待 HTTPS 合法域名配置", download_page)
+        self.assertIn("if (!PDF_DOWNLOAD_ENABLED)", download_page)
 
     def test_gaokao_api_exposes_token_protected_report_endpoints(self):
         api = self.read("data/gaokao_api.py")

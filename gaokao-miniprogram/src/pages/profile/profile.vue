@@ -39,6 +39,9 @@
         </view>
         <text class="invite-hint-text">邀请 3 位同学免费开通</text>
       </view>
+      <text v-if="!membershipStore.isActive && !membershipStore.isPaymentEnabled" class="payment-notice">
+        {{ paymentUnavailableText }}
+      </text>
 
       <!-- 核心权益 -->
       <view class="benefit-grid">
@@ -87,10 +90,16 @@
 
       <view class="membership-actions">
         <button class="membership-btn primary" @click="openMembership">
-          {{ membershipStore.isActive ? '已开通会员权益' : '¥29 解锁综合报告' }}
+          {{ membershipActionText }}
         </button>
         <button class="membership-btn secondary" open-type="share" @click="shareInvite">
           邀请好友免费解锁
+        </button>
+        <button class="membership-btn secondary" @click="copyInviteLink">
+          复制邀请链接
+        </button>
+        <button class="membership-btn ghost" @click="refreshMembershipStatus">
+          刷新邀请进度
         </button>
       </view>
     </view>
@@ -220,6 +229,13 @@ const membershipSubtitle = computed(() => {
   if (membershipStore.isActive) return '已解锁全部权益'
   return '解锁深度研究、志愿报告与多端协同'
 })
+const paymentUnavailableText = computed(() => membershipStore.paymentUnavailableText)
+const membershipActionText = computed(() => {
+  if (membershipStore.isActive) return '已开通会员权益'
+  if (!membershipStore.isPaymentEnabled) return '备案中，先邀请解锁'
+  return '¥29 解锁综合报告'
+})
+const invitePath = computed(() => `/pages/index/index?inviterId=${membershipStore.userId || ''}`)
 const reportCardDesc = computed(() => {
   if (!canGenerateReport.value) return '请先完成全部 3 项测评'
   if (!membershipStore.isActive) return '解锁会员后即可生成完整报告'
@@ -289,6 +305,19 @@ async function openMembership() {
     return
   }
 
+  if (!membershipStore.isPaymentEnabled) {
+    uni.showModal({
+      title: '支付暂未开放',
+      content: paymentUnavailableText.value,
+      confirmText: '复制邀请',
+      cancelText: '知道了',
+      success: (res) => {
+        if (res.confirm) copyInviteLink()
+      },
+    })
+    return
+  }
+
   try {
     uni.showLoading({ title: '安全通道接入中...', mask: true })
     await membershipStore.createPayment()
@@ -313,6 +342,31 @@ function shareInvite() {
     title: '请点击右上角三个点分享给同学',
     icon: 'none',
   })
+}
+
+function copyInviteLink() {
+  uni.setClipboardData({
+    data: invitePath.value,
+    success: () => uni.showToast({ title: '邀请链接已复制', icon: 'success' }),
+  })
+}
+
+async function refreshMembershipStatus() {
+  try {
+    uni.showLoading({ title: '刷新中...' })
+    await membershipStore.loadStatus()
+    uni.hideLoading()
+    uni.showToast({
+      title: membershipStore.isActive ? '已解锁会员' : '邀请进度已刷新',
+      icon: membershipStore.isActive ? 'success' : 'none',
+    })
+  } catch (err) {
+    uni.hideLoading()
+    uni.showToast({
+      title: err.message || err.errMsg || '刷新失败，请稍后再试',
+      icon: 'none',
+    })
+  }
 }
 
 function goQuestionnaire() {
@@ -374,7 +428,7 @@ onShow(() => {
 
 onShareAppMessage(() => ({
   title: '邀请你一起生成高考志愿参考报告',
-  path: `/pages/index/index?inviterId=${membershipStore.userId || ''}`,
+  path: invitePath.value,
 }))
 </script>
 
@@ -587,6 +641,18 @@ onShareAppMessage(() => ({
   border: 1px solid rgba(245, 158, 11, 0.15);
 }
 
+.payment-notice {
+  display: block;
+  margin: -10rpx 0 24rpx;
+  padding: 18rpx 20rpx;
+  border-radius: $radius-md;
+  background: rgba(37, 99, 235, 0.06);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  color: $text-secondary;
+  font-size: 24rpx;
+  line-height: 1.45;
+}
+
 .benefit-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -680,11 +746,13 @@ onShareAppMessage(() => ({
 
 .membership-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 16rpx;
 }
 
 .membership-btn {
-  flex: 1;
+  flex: 1 1 calc(50% - 8rpx);
+  min-width: 0;
   height: 84rpx;
   border-radius: $radius-full;
   display: flex;
@@ -717,6 +785,12 @@ onShareAppMessage(() => ({
   background: rgba(255, 255, 255, 0.8);
   color: #B45309;
   border: 1px solid rgba(217, 119, 6, 0.25);
+}
+
+.membership-btn.ghost {
+  background: #F8FAFC;
+  color: $text-secondary;
+  border: 1px solid $border-light;
 }
 
 .report-card {
