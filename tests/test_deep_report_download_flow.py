@@ -73,6 +73,10 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         self.assertIn("Bearer ${membershipStore.sessionToken}", download_page)
         self.assertIn("application/pdf", download_page)
         self.assertIn("5000 字以上完整报告", download_page)
+        self.assertIn("暂未找到可下载报告", download_page)
+        self.assertIn("请至少输入 2 个字", download_page)
+        self.assertIn("uni.showModal", download_page)
+        self.assertIn("uni.switchTab({ url: '/pages/profile/profile' })", download_page)
 
     def test_gaokao_api_exposes_token_protected_report_endpoints(self):
         api = self.read("data/gaokao_api.py")

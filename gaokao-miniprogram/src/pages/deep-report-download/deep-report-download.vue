@@ -29,6 +29,26 @@
       <button class="search-btn" @click="searchReports">搜索</button>
     </view>
 
+    <view class="helper-row">
+      <text class="helper-label">{{ mode === 'university' ? '常搜学校' : '常搜专业' }}</text>
+      <button
+        v-for="item in exampleKeywords"
+        :key="item"
+        class="example-chip"
+        @click="searchExample(item)"
+      >
+        {{ item }}
+      </button>
+    </view>
+
+    <view class="access-card" :class="{ active: membershipStore.isActive }">
+      <text class="access-title">{{ membershipStore.isActive ? '会员权益已开通' : '下载 PDF 需要会员权益' }}</text>
+      <text class="access-desc">
+        {{ membershipStore.isActive ? '可直接下载 5000 字以上完整报告。' : '可先搜索查看报告是否入库，下载完整 PDF 时再开通。' }}
+      </text>
+      <button v-if="!membershipStore.isActive" class="access-btn" @click="goMembership">去开通</button>
+    </view>
+
     <view v-if="loading" class="state-block">
       <text>正在查询报告库...</text>
     </view>
@@ -47,8 +67,13 @@
         <button class="download-btn" @click="downloadDeepPdf(item)">下载 PDF</button>
       </view>
 
-      <view v-if="results.length === 0" class="state-block">
-        <text>输入学校或专业名称后查询可下载报告。</text>
+      <view v-if="results.length === 0" class="empty-panel">
+        <text class="empty-title">{{ emptyTitle }}</text>
+        <text class="empty-desc">{{ emptyDesc }}</text>
+        <view class="empty-actions">
+          <button class="empty-action" @click="searchExample(exampleKeywords[0])">{{ exampleKeywords[0] }}</button>
+          <button class="empty-action secondary" @click="switchMode(otherMode)">{{ otherModeLabel }}</button>
+        </view>
       </view>
     </view>
   </view>
@@ -70,10 +95,33 @@ const keyword = ref('')
 const results = ref([])
 const loading = ref(false)
 const errorMsg = ref('')
+const hasSearched = ref(false)
 
 const membershipStore = useMembershipStore()
 
 const collection = computed(() => mode.value === 'major' ? 'majors' : 'universities')
+const otherMode = computed(() => mode.value === 'major' ? 'university' : 'major')
+const otherModeLabel = computed(() => mode.value === 'major' ? '搜大学报告' : '搜专业报告')
+const exampleKeywords = computed(() => (
+  mode.value === 'major'
+    ? ['计算机', '临床医学', '法学']
+    : ['中山大学', '华南理工大学', '深圳大学']
+))
+
+const emptyTitle = computed(() => {
+  if (!hasSearched.value) return '先搜索学校或专业'
+  if (!keyword.value) return '输入关键词后查看报告'
+  return '暂未找到可下载报告'
+})
+
+const emptyDesc = computed(() => {
+  if (!hasSearched.value || !keyword.value) {
+    return mode.value === 'major'
+      ? '可输入专业名称或专业代码，系统会匹配 5000 字以上完整报告。'
+      : '可输入学校全称或关键词，系统会匹配 5000 字以上完整报告。'
+  }
+  return '换一个更完整的名称试试，或切换到另一类报告继续查询。'
+})
 
 onMounted(async () => {
   try {
@@ -90,6 +138,12 @@ function switchMode(nextMode) {
   keyword.value = ''
   results.value = []
   errorMsg.value = ''
+  hasSearched.value = false
+  searchReports()
+}
+
+function searchExample(nextKeyword) {
+  keyword.value = nextKeyword
   searchReports()
 }
 
@@ -122,12 +176,21 @@ function getHeaderValue(headers, name) {
 }
 
 async function searchReports() {
+  const query = keyword.value.trim()
+  if (query.length === 1) {
+    hasSearched.value = true
+    results.value = []
+    errorMsg.value = '请至少输入 2 个字，学校可输入全称，专业可输入专业名称关键词。'
+    return
+  }
+
   loading.value = true
   errorMsg.value = ''
+  hasSearched.value = true
   try {
     const params = [`page_size=20`]
-    if (keyword.value) {
-      params.push(`search=${encodeURIComponent(keyword.value)}`)
+    if (query) {
+      params.push(`search=${encodeURIComponent(query)}`)
     }
     const data = await requestBackendData({
       path: `/api/reports/${collection.value}?${params.join('&')}`,
@@ -163,10 +226,14 @@ async function downloadDeepPdf(item) {
   try {
     await ensureMembership()
   } catch (err) {
-    uni.showToast({
-      title: err.message || '请先开通会员',
-      icon: 'none',
-      duration: 2200,
+    uni.showModal({
+      title: '需要会员权益',
+      content: err.message || '请先开通会员后下载完整 PDF。',
+      confirmText: '去开通',
+      cancelText: '先看看',
+      success: (res) => {
+        if (res.confirm) goMembership()
+      },
     })
     return
   }
@@ -199,6 +266,10 @@ async function downloadDeepPdf(item) {
       uni.showToast({ title: '网络请求失败', icon: 'none' })
     },
   })
+}
+
+function goMembership() {
+  uni.switchTab({ url: '/pages/profile/profile' })
 }
 </script>
 
@@ -266,6 +337,75 @@ async function downloadDeepPdf(item) {
   display: flex;
   gap: 14rpx;
   margin-bottom: 28rpx;
+}
+
+.helper-row {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+
+.helper-label {
+  color: $text-muted;
+  font-size: 24rpx;
+}
+
+.example-chip {
+  height: 54rpx;
+  padding: 0 20rpx;
+  border-radius: 999rpx;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid $border-light;
+  color: $text-secondary;
+  font-size: 24rpx;
+  line-height: 54rpx;
+}
+
+.access-card {
+  @include glass-panel;
+  border-radius: $radius-lg;
+  padding: 22rpx 24rpx;
+  margin-bottom: 24rpx;
+  background: rgba(255, 247, 237, 0.86);
+  border-color: rgba(249, 115, 22, 0.18);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 18rpx;
+  row-gap: 8rpx;
+  align-items: center;
+}
+
+.access-card.active {
+  background: rgba(236, 253, 245, 0.88);
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.access-title {
+  color: $text-primary;
+  font-size: 28rpx;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.access-desc {
+  color: $text-secondary;
+  font-size: 24rpx;
+  line-height: 1.5;
+}
+
+.access-btn {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  min-width: 132rpx;
+  height: 62rpx;
+  border-radius: 999rpx;
+  background: #f97316;
+  color: #fff;
+  font-size: 24rpx;
+  font-weight: 800;
+  line-height: 62rpx;
 }
 
 .search-input {
@@ -353,5 +493,50 @@ async function downloadDeepPdf(item) {
 
 .state-block.error {
   color: #dc2626;
+}
+
+.empty-panel {
+  @include glass-panel;
+  border-radius: $radius-xl;
+  padding: 42rpx 30rpx;
+  background: rgba(255, 255, 255, 0.96);
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+  text-align: left;
+}
+
+.empty-title {
+  color: $text-primary;
+  font-size: 30rpx;
+  font-weight: 850;
+}
+
+.empty-desc {
+  color: $text-secondary;
+  font-size: 26rpx;
+  line-height: 1.65;
+}
+
+.empty-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14rpx;
+  margin-top: 8rpx;
+}
+
+.empty-action {
+  height: 70rpx;
+  border-radius: $radius-lg;
+  background: $grad-royal;
+  color: #fff;
+  font-size: 25rpx;
+  font-weight: 800;
+}
+
+.empty-action.secondary {
+  background: rgba(248, 250, 252, 0.96);
+  color: $text-primary;
+  border: 1px solid $border-light;
 }
 </style>
