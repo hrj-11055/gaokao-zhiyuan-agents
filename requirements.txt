@@ -1,0 +1,6 @@
+beautifulsoup4
+websockets
+Flask
+Flask-Cors
+psycopg2-binary # Using psycopg2-binary for easier installation, can be replaced with psycopg2 if C extensions are needed.
+pytest
