@@ -7,3 +7,11 @@ gaokao-miniprogram/.env
 *.log
 scores.json
 _import_scores_json.sql
+
+# Temporary and generated files
+tmp/
+logs/
+data/test_json/
+.firecrawl/
+*.pyc
+__pycache__/

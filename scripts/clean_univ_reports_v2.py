@@ -71,56 +71,84 @@ class UnivReportParser:
         stem = re.sub(r'^\d+_', '', stem)
         return stem
 
-    def extract_module_content(self, content: str, module_title: str) -> str:
-        """提取指定模块的原始内容"""
-        # 移除标题中的括号部分进行匹配
-        base_title = re.sub(r'[（(].*?[）)]', '', module_title)
-        # 使用简单的正则：匹配从标题到下一个"## 模块"或文件结尾
-        pattern = rf'## {re.escape(base_title)}[^\n]*\s*\n(.*?)(?=## 模块|\Z)'
-        match = re.search(pattern, content, re.DOTALL)
-        if match:
-            return self.clean_text(match.group(1))
-        return ""
+    # 模块编号 → (key, keywords)
+    MODULE_MAP = {
+        1: ('module1_academic_capital', ['学术资本', '学术实力', '学术资源']),
+        2: ('module2_student_competitiveness', ['生源竞争力', '生源质量', '入学门槛']),
+        3: ('module3_graduate_value', ['毕业生价值', '就业价值', '毕业价值']),
+        4: ('module4_location_industry', ['区位', '产业', '全球化', '城市']),
+        5: ('module5_campus_ecosystem', ['校园生态', '校园生活', '生活品质', '品牌']),
+        6: ('module6_comprehensive_evaluation', ['综合评估', '量化评分', '总分', '加权']),
+        7: ('module7_culture_cards', ['文化揭秘', '避坑', '生存指南', '气质标签', '报考指南', '校园真相']),
+        8: ('module8_raw_data', ['原始数据', '数据汇总', '数据支撑']),
+        9: ('module9_structured_export', ['结构化数据', '数据导出', '结构化导出']),
+    }
+
+    # 中文数字 → 阿拉伯数字
+    CN_NUM = {'一': 1, '二': 2, '三': 3, '四': 4, '五': 5, '六': 6, '七': 7, '八': 8, '九': 9}
+
+    def _heading_to_module_num(self, heading: str) -> int:
+        """从标题文本推断模块编号（1-9），返回 0 表示无法识别"""
+        # 策略1: "模块X" / "模块X：" / "第X模块"
+        m = re.search(r'模块([一二三四五六七八九\d])', heading)
+        if m:
+            cn = m.group(1)
+            return self.CN_NUM.get(cn, int(cn) if cn.isdigit() else 0)
+
+        # 策略2: "第X章" / "第X部分"
+        m = re.search(r'第([一二三四五六七八九\d])[章部分]', heading)
+        if m:
+            cn = m.group(1)
+            return self.CN_NUM.get(cn, int(cn) if cn.isdigit() else 0)
+
+        # 策略3: "X、" (中文数字顿号)
+        m = re.match(r'([一二三四五六七八九])、', heading.strip())
+        if m:
+            return self.CN_NUM.get(m.group(1), 0)
+
+        # 策略4: 数字开头 "1." / "1、"
+        m = re.match(r'(\d)[.、．]', heading.strip())
+        if m:
+            return int(m.group(1))
+
+        # 策略5: 关键词匹配
+        for num, (_, keywords) in self.MODULE_MAP.items():
+            for kw in keywords:
+                if kw in heading:
+                    return num
+
+        return 0
 
     def parse_all_modules(self, content: str) -> Dict[str, str]:
-        """提取所有9个模块的原始内容"""
+        """提取所有模块的原始内容，支持多种标题格式（## 和 ###）"""
         modules = {}
-        module_list = [
-            '模块一：学术资本',
-            '模块二：生源竞争力',
-            '模块三：毕业生价值实现',
-            '模块四：区位与产业势能',
-            '模块五：校园生态',
-            '模块五：校园生态与生活品质',
-            '模块六：综合评估与量化评分',
-            '模块七：文化揭秘',
-            '模块七：文化揭秘与避坑指南',
-            '模块八：原始数据汇总',
-            '模块九：结构化数据导出'
-        ]
 
-        for module in module_list:
-            raw_content = self.extract_module_content(content, module)
-            if raw_content:
-                key_map = {
-                    '模块一：学术资本': 'module1_academic_capital',
-                    '模块二：生源竞争力': 'module2_student_competitiveness',
-                    '模块三：毕业生价值实现': 'module3_graduate_value',
-                    '模块四：区位与产业势能': 'module4_location_industry',
-                    '模块五：校园生态': 'module5_campus_ecosystem',
-                    '模块五：校园生态与生活品质': 'module5_campus_ecosystem',
-                    '模块六：综合评估与量化评分': 'module6_comprehensive_evaluation',
-                    '模块七：文化揭秘': 'module7_culture_cards',
-                    '模块七：文化揭秘与避坑指南': 'module7_culture_cards',
-                    '模块八：原始数据汇总': 'module8_raw_data',
-                    '模块九：结构化数据导出': 'module9_structured_export'
-                }
-                key = key_map.get(module, module.lower().replace(' ', '_').replace('：', '_'))
-                modules[key] = {
-                    'title': module,
-                    'raw_content': raw_content
-                }
+        # 按 ## 或 ### 分割所有章节
+        sections = re.split(r'\n(?=##?#? )', content)
 
+        parsed = []  # (module_num, title, raw_content)
+        for section in sections:
+            # 提取标题行（## 或 ###）
+            m = re.match(r'#{2,3}\s+(.+)', section)
+            if not m:
+                continue
+            heading = m.group(1).strip()
+            # 提取内容（去掉标题行本身）
+            body = re.sub(r'^#{2,3}\s+[^\n]*\n', '', section, count=1)
+            body = self.clean_text(body)
+
+            num = self._heading_to_module_num(heading)
+            if num > 0 and body:
+                parsed.append((num, heading, body))
+
+        # 对同一模块编号取最长的内容（处理重复标题）
+        best = {}
+        for num, title, body in parsed:
+            key, _ = self.MODULE_MAP[num]
+            if key not in best or len(body) > len(best[key]['raw_content']):
+                best[key] = {'title': title, 'raw_content': body}
+
+        modules.update(best)
         return modules
 
     def parse_six_dimension_table(self, content: str) -> Dict:
@@ -281,12 +309,15 @@ class UnivReportParser:
 
         name = self.parse_univ_name(filepath)
 
-        # 提取模块六（综合评估）
-        module6_raw = self.extract_module_content(content, '模块六：综合评估与量化评分')
-        weighted_score = self.parse_weighted_score(module6_raw)
-
-        # 提取所有模块
+        # 提取所有模块（新的统一方法）
         all_modules = self.parse_all_modules(content)
+
+        # 提取模块六（综合评估）用于评分
+        module6_raw = all_modules.get('module6_comprehensive_evaluation', {}).get('raw_content', '')
+        weighted_score = self.parse_weighted_score(module6_raw)
+        # 如果模块六没提取到，从全文尝试
+        if weighted_score == 0.0:
+            weighted_score = self.parse_weighted_score(content)
 
         # 构建结构化数据
         result = {
@@ -312,35 +343,35 @@ class UnivReportParser:
             },
             'layer3_detail': {
                 'module1_academic_capital': {
-                    'title': '模块一：学术资本',
+                    'title': all_modules.get('module1_academic_capital', {}).get('title', '模块一：学术资本'),
                     'raw_content': all_modules.get('module1_academic_capital', {}).get('raw_content', '')
                 },
                 'module2_student_competitiveness': {
-                    'title': '模块二：生源竞争力',
+                    'title': all_modules.get('module2_student_competitiveness', {}).get('title', '模块二：生源竞争力'),
                     'raw_content': all_modules.get('module2_student_competitiveness', {}).get('raw_content', '')
                 },
                 'module3_graduate_value': {
-                    'title': '模块三：毕业生价值实现',
+                    'title': all_modules.get('module3_graduate_value', {}).get('title', '模块三：毕业生价值实现'),
                     'raw_content': all_modules.get('module3_graduate_value', {}).get('raw_content', '')
                 },
                 'module4_location_industry': {
-                    'title': '模块四：区位与产业势能',
+                    'title': all_modules.get('module4_location_industry', {}).get('title', '模块四：区位与产业势能'),
                     'raw_content': all_modules.get('module4_location_industry', {}).get('raw_content', '')
                 },
                 'module5_campus_ecosystem': {
-                    'title': '模块五：校园生态',
+                    'title': all_modules.get('module5_campus_ecosystem', {}).get('title', '模块五：校园生态'),
                     'raw_content': all_modules.get('module5_campus_ecosystem', {}).get('raw_content', '')
                 },
                 'module6_comprehensive_evaluation': {
-                    'title': '模块六：综合评估与量化评分',
+                    'title': all_modules.get('module6_comprehensive_evaluation', {}).get('title', '模块六：综合评估与量化评分'),
                     'raw_content': module6_raw
                 },
                 'module7_culture_cards': {
-                    'title': '模块七：文化揭秘与避坑指南',
+                    'title': all_modules.get('module7_culture_cards', {}).get('title', '模块七：文化揭秘与避坑指南'),
                     'raw_content': all_modules.get('module7_culture_cards', {}).get('raw_content', '')
                 },
                 'module8_raw_data': {
-                    'title': '模块八：原始数据汇总',
+                    'title': all_modules.get('module8_raw_data', {}).get('title', '模块八：原始数据汇总'),
                     'raw_content': all_modules.get('module8_raw_data', {}).get('raw_content', '')
                 }
             },

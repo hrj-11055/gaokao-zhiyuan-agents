@@ -348,7 +348,9 @@ def run_province(
 
     template = load_template()
     existing = get_existing_reports()
-    univs = load_universities(province, public_only, only_names, limit, existing)
+    # retry_mode 下不预过滤，以便检查质量
+    load_filter = existing if not retry_mode else None
+    univs = load_universities(province, public_only, only_names, limit, load_filter)
     done = load_progress(pfile)
 
     if retry_mode:
