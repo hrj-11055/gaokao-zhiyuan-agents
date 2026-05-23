@@ -59,6 +59,37 @@ function extractFullContent(report) {
   return [summary, overview].filter(Boolean).join('\n\n')
 }
 
+function recommendationLabel(value) {
+  const normalized = String(value || '').toLowerCase()
+  if (normalized.includes('green') || normalized.includes('推荐')) return '建议重点关注'
+  if (normalized.includes('yellow') || normalized.includes('谨慎')) return '需要核验后再定'
+  if (normalized.includes('red') || normalized.includes('不推荐')) return '风险较高'
+  return '待结合分数核验'
+}
+
+function buildSummaryCards(report) {
+  const data = report?.data || {}
+  const overview = data.layer1_overview || {}
+  const core = data.layer2_core || {}
+  return [
+    {
+      label: '推荐判断',
+      value: recommendationLabel(overview.recommendation_level),
+      detail: overview.summary || report.summary || '先看分数位次、培养方案和就业质量报告。',
+    },
+    {
+      label: '重点结论',
+      value: overview.weighted_score ? `${overview.weighted_score} 分` : '需核验',
+      detail: core.summary || '把优势、风险和下一步动作放在同一页核对。',
+    },
+    {
+      label: '行动建议',
+      value: '先核验再下载',
+      detail: '下载前先确认名称匹配，下载后重点看课程、就业、升学和风险章节。',
+    },
+  ]
+}
+
 function renderMarkdownish(text) {
   const lines = String(text || '').replace(/\r\n/g, '\n').split('\n')
   const html = []
@@ -122,12 +153,33 @@ function renderMarkdownish(text) {
   return html.join('\n')
 }
 
+function renderSectionContent(section) {
+  const title = String(section?.title || '').trim()
+  let content = String(section?.content || '').replace(/\r\n/g, '\n')
+  if (title) {
+    const lines = content.split('\n')
+    const firstNonEmptyIndex = lines.findIndex(line => line.trim())
+    if (firstNonEmptyIndex >= 0) {
+      const first = lines[firstNonEmptyIndex].trim().replace(/^#{1,4}\s+/, '').trim()
+      if (first === title) {
+        lines.splice(firstNonEmptyIndex, 1)
+        content = lines.join('\n')
+      }
+    }
+  }
+  return renderMarkdownish(content)
+}
+
 function buildDeepReportHtml({ type, report }) {
   const normalizedType = normalizeType(type)
   const title = reportTitle(normalizedType, report)
   const label = normalizedType === 'major' ? '专业深度评估' : '大学深度研究'
   const wordCount = Number(report.word_count || 0)
-  const fullContent = extractFullContent(report)
+  const rawSections = extractRawSections(report?.data || {})
+  const sections = rawSections.length > 0
+    ? rawSections
+    : [{ title: '完整研究内容', content: extractFullContent(report) }]
+  const summaryCards = buildSummaryCards(report)
 
   return `<!doctype html>
 <html lang="zh-CN">
@@ -138,7 +190,7 @@ function buildDeepReportHtml({ type, report }) {
   <style>
     body {
       margin: 0;
-      background: #f7f7f5;
+      background: #fff;
       color: #1f2933;
       font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
       line-height: 1.75;
@@ -174,6 +226,69 @@ function buildDeepReportHtml({ type, report }) {
       border: 1px solid #e5e7eb;
       border-radius: 999px;
       padding: 4px 10px;
+    }
+    .summary-title {
+      margin: 22px 0 12px;
+      color: #92400e;
+      font-size: 15px;
+      font-weight: 800;
+    }
+    .summary-card-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 0 0 24px;
+    }
+    .summary-card {
+      border: 1px solid #fed7aa;
+      border-radius: 12px;
+      background: #fff7ed;
+      padding: 12px;
+    }
+    .summary-card-label {
+      color: #9a3412;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .summary-card-value {
+      display: block;
+      margin: 5px 0;
+      color: #111827;
+      font-size: 16px;
+      font-weight: 800;
+    }
+    .summary-card-detail {
+      color: #4b5563;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+    .highlight-box {
+      margin: 18px 0 24px;
+      padding: 14px 16px;
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      background: #eff6ff;
+      color: #1e3a8a;
+    }
+    .toc {
+      margin: 18px 0 28px;
+      padding: 16px 18px;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      background: #f9fafb;
+    }
+    .toc-title {
+      margin-bottom: 8px;
+      font-weight: 800;
+      color: #111827;
+    }
+    .toc ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .report-section {
+      page-break-before: always;
+      break-before: page;
     }
     h2, h3, h4 {
       color: #111827;
@@ -211,6 +326,11 @@ function buildDeepReportHtml({ type, report }) {
       color: #7c2d12;
       font-size: 14px;
     }
+    @media (max-width: 720px) {
+      .summary-card-row {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
@@ -222,7 +342,25 @@ function buildDeepReportHtml({ type, report }) {
       <span class="pill">数据库报告字数：${wordCount || '待统计'}</span>
       <span class="pill">生成时间：${escapeHtml(new Date().toISOString().slice(0, 10))}</span>
     </div>
-    ${renderMarkdownish(fullContent)}
+    <div class="summary-title">摘要卡片</div>
+    <section class="summary-card-row">
+      ${summaryCards.map(card => `<article class="summary-card">
+        <span class="summary-card-label">${escapeHtml(card.label)}</span>
+        <strong class="summary-card-value">${escapeHtml(card.value)}</strong>
+        <div class="summary-card-detail">${escapeHtml(card.detail)}</div>
+      </article>`).join('\n')}
+    </section>
+    <div class="highlight-box"><strong>重点结论：</strong>${escapeHtml(summaryCards[1]?.detail || summaryCards[0]?.detail || '先核验关键数据，再进入长文细读。')}</div>
+    <nav class="toc">
+      <div class="toc-title">目录</div>
+      <ol>
+        ${sections.map((section, index) => `<li>${escapeHtml(section.title || `章节 ${index + 1}`)}</li>`).join('\n')}
+      </ol>
+    </nav>
+    ${sections.map((section) => `<section class="report-section page-break">
+      <h2>${escapeHtml(section.title || '研究章节')}</h2>
+      ${renderSectionContent(section)}
+    </section>`).join('\n')}
     <div class="notice">本 PDF 来自已入库的${escapeHtml(label)}数据，用于志愿填报决策参考。录取规则、招生计划和就业数据以学校与考试院最新发布为准。</div>
   </main>
 </body>
@@ -255,10 +393,12 @@ async function generateDeepReportPdf({ type, report, outputDir }) {
 
 module.exports = {
   buildDeepReportHtml,
+  buildSummaryCards,
   escapeHtml,
   extractFullContent,
   generateDeepReportPdf,
   renderMarkdownish,
+  renderSectionContent,
   reportTitle,
   safePdfFilename,
 }

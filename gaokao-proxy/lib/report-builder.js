@@ -6,8 +6,10 @@ const buildPrompt = require('./prompts/report-template')
 const { fetchMajorReports, fetchUnivReports, fetchDifyMessages } = require('./data-api')
 
 const REPORTS_DIR = process.env.REPORTS_DIR || path.join(__dirname, '../reports')
+const REPORT_DRAFTS_DIR = process.env.REPORT_DRAFTS_DIR || path.join(REPORTS_DIR, 'drafts')
 const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-v4-pro'
 const RESPONSIVE_PATCH_ID = 'gaokao-report-responsive-fix'
+const PRINT_PATCH_ID = 'gaokao-report-print-fix'
 
 async function generateReport({ profile, questionnaire, assessments, conversationId, difyApiUrl, difyApiKey }) {
   if (!process.env.DEEPSEEK_API_KEY) {
@@ -53,16 +55,46 @@ async function generateReport({ profile, questionnaire, assessments, conversatio
 
 async function saveReport(userId, html) {
   await fs.mkdir(REPORTS_DIR, { recursive: true })
-  const filename = `${userId}-${Date.now()}.html`
+  const filename = `${safeReportUserId(userId)}-${Date.now()}.html`
   await fs.writeFile(path.join(REPORTS_DIR, filename), normalizeReportHtml(html), 'utf8')
   return filename
 }
 
+async function saveReportDraft(userId, draft = {}) {
+  await fs.mkdir(REPORT_DRAFTS_DIR, { recursive: true })
+  const draftId = `${safeReportUserId(userId)}-${Date.now()}`
+  const payload = {
+    draftId,
+    userId: safeReportUserId(userId),
+    savedAt: new Date().toISOString(),
+    ...draft,
+  }
+  await fs.writeFile(path.join(REPORT_DRAFTS_DIR, `${draftId}.json`), JSON.stringify(payload, null, 2), 'utf8')
+  return draftId
+}
+
+function safeReportUserId(userId) {
+  return String(userId || 'anonymous')
+    .replace(/[^a-zA-Z0-9_-]/g, '_')
+    .slice(0, 80) || 'anonymous'
+}
+
 function normalizeReportHtml(rawHtml) {
   let html = extractHtmlDocument(String(rawHtml || ''))
+  html = humanizeReportCopy(html)
   html = ensureViewportMeta(html)
   html = injectResponsivePatch(html)
+  html = injectPrintPatch(html)
   return html
+}
+
+function humanizeReportCopy(html) {
+  return String(html || '')
+    .replace(/AI\s*总评/g, '顾问结论')
+    .replace(/AI\s*对话记录/g, '咨询对话记录')
+    .replace(/大模型认为/g, '建议判断')
+    .replace(/作为\s*AI[，,]?\s*/g, '')
+    .replace(/作为一个?\s*AI[，,]?\s*/g, '')
 }
 
 function extractHtmlDocument(rawHtml) {
@@ -225,10 +257,73 @@ function injectResponsivePatch(html) {
   return `${css}\n${html}`
 }
 
+function injectPrintPatch(html) {
+  if (html.includes(`id="${PRINT_PATCH_ID}"`) || html.includes(`id='${PRINT_PATCH_ID}'`)) {
+    return html
+  }
+
+  const css = `
+    <style id="${PRINT_PATCH_ID}">
+      @page {
+        size: A4;
+        margin: 16mm 14mm 18mm;
+      }
+      .report-toc,
+      .toc {
+        break-after: page;
+        page-break-after: always;
+      }
+      .page-break {
+        break-before: page;
+        page-break-before: always;
+      }
+      .highlight,
+      .highlight-box,
+      .key-point,
+      .action-list {
+        background: #fff7ed;
+        border: 1px solid #fed7aa;
+        border-radius: 10px;
+        padding: 12px 14px;
+      }
+      @media print {
+        html, body {
+          background: #fff !important;
+          color: #111827 !important;
+        }
+        body {
+          font-size: 12pt;
+          line-height: 1.65;
+        }
+        h1, h2, h3 {
+          break-after: avoid;
+          page-break-after: avoid;
+        }
+        p, li, table, .card, .section {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    </style>`
+
+  if (/<\/head>/i.test(html)) {
+    return html.replace(/<\/head>/i, `${css}\n</head>`)
+  }
+
+  return `${css}\n${html}`
+}
+
 module.exports = {
   generateReport,
   saveReport,
+  saveReportDraft,
   REPORTS_DIR,
+  REPORT_DRAFTS_DIR,
   normalizeReportHtml,
   extractHtmlDocument,
+  humanizeReportCopy,
 }

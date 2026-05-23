@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
-const { generateReport, saveReport, REPORTS_DIR } = require('./lib/report-builder')
+const { generateReport, saveReport, saveReportDraft, REPORTS_DIR } = require('./lib/report-builder')
 const { generatePdfFromHtml } = require('./lib/pdf-generator')
 const { createReportRoutes } = require('./lib/report-routes')
 const { fetchReportDetail } = require('./lib/report-data-client')
@@ -882,7 +882,22 @@ app.post('/api/report/generate', requireCommerceAuth, requireMembershipForReport
   } catch (err) {
     console.error('Report generation error:', err.message)
     if (!redis) reportCooldowns.delete(reportUserId)
-    res.status(500).json({ error: err.message || '报告生成失败，请稍后重试' })
+    let draftId = ''
+    try {
+      draftId = await saveReportDraft(reportUserId, {
+        profile: profile || {},
+        questionnaire: questionnaire || {},
+        assessments: assessments || {},
+        conversationId: conversationId || '',
+        error: err.message || '报告生成失败',
+      })
+    } catch (draftErr) {
+      console.error('Report draft save error:', draftErr.message)
+    }
+    res.status(500).json({
+      error: err.message || '报告生成失败，请稍后重试',
+      draftId,
+    })
   }
 })
 

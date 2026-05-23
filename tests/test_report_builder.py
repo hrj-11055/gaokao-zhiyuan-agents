@@ -44,6 +44,19 @@ class ReportBuilderTests(unittest.TestCase):
             assert.equal(html.includes('@media (max-width: 640px)'), true)
         """)
 
+    def test_normalize_adds_print_layout_and_removes_ai_flavored_labels(self):
+        self.run_node_test(r"""
+            const raw = '<html><head><title>x</title></head><body><h2>AI 总评</h2><p>作为AI，我建议先了解更多信息。</p><div class="highlight">重点</div></body></html>'
+            const html = normalizeReportHtml(raw)
+
+            assert.equal(html.includes('gaokao-report-print-fix'), true)
+            assert.equal(html.includes('@page'), true)
+            assert.equal(html.includes('page-break'), true)
+            assert.equal(html.includes('AI 总评'), false)
+            assert.equal(html.includes('作为AI'), false)
+            assert.equal(html.includes('顾问结论'), true)
+        """)
+
 
 if __name__ == "__main__":
     unittest.main()

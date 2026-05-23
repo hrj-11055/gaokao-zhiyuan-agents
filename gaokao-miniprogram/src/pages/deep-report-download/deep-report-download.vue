@@ -62,6 +62,21 @@
         <view class="result-main">
           <text class="item-title">{{ itemTitle(item) }}</text>
           <text class="item-meta">{{ itemMeta(item) }}</text>
+          <view class="summary-card-row">
+            <text
+              v-for="badge in decisionBadges(item)"
+              :key="badge"
+              class="summary-chip"
+            >
+              {{ badge }}
+            </text>
+          </view>
+          <view class="takeaway-panel">
+            <text class="takeaway-title">重点摘要</text>
+            <text class="takeaway-text">{{ summaryTakeaways(item).summary }}</text>
+            <text class="takeaway-title action">行动建议</text>
+            <text class="takeaway-text">{{ summaryTakeaways(item).action }}</text>
+          </view>
           <text class="item-summary">{{ item.summary || '该报告已入库，可下载完整 PDF 查看。' }}</text>
         </view>
         <button class="download-btn" @click="downloadDeepPdf(item)">下载 PDF</button>
@@ -166,6 +181,37 @@ function itemMeta(item) {
   if (item.word_count) parts.push(`${item.word_count} 字`)
   parts.push('5000 字以上完整报告')
   return parts.join(' · ')
+}
+
+function overviewOf(item) {
+  return item.overview || item.data?.layer1_overview || {}
+}
+
+function decisionBadges(item) {
+  const overview = overviewOf(item)
+  const badges = []
+  const level = String(overview.recommendation_level || '').toLowerCase()
+  if (level.includes('green') || level.includes('推荐')) {
+    badges.push('建议重点关注')
+  } else if (level.includes('yellow') || level.includes('谨慎')) {
+    badges.push('需要核验后再定')
+  } else if (level.includes('red') || level.includes('不推荐')) {
+    badges.push('风险较高')
+  } else {
+    badges.push('先看摘要再下载')
+  }
+  if (overview.weighted_score) badges.push(`评分 ${overview.weighted_score}`)
+  if (item.word_count) badges.push(`${item.word_count} 字`)
+  return badges
+}
+
+function summaryTakeaways(item) {
+  const overview = overviewOf(item)
+  const summary = item.summary || overview.summary || '该报告已入库，建议先确认名称匹配，再下载完整 PDF 看细节。'
+  const action = mode.value === 'major'
+    ? '先核验培养方案、课程难度、升学比例和近三年就业质量报告。'
+    : '先核验招生章程、专业组限制、近三年位次和转专业规则。'
+  return { summary, action }
 }
 
 function getHeaderValue(headers, name) {
@@ -474,6 +520,49 @@ function goMembership() {
   color: #f97316;
   font-size: 24rpx;
   line-height: 1.45;
+}
+
+.summary-card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+}
+
+.summary-chip {
+  padding: 8rpx 14rpx;
+  border-radius: 999rpx;
+  background: rgba(37, 99, 235, 0.07);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
+  font-size: 22rpx;
+  font-weight: 750;
+}
+
+.takeaway-panel {
+  padding: 18rpx 20rpx;
+  border-radius: $radius-md;
+  background: #F8FAFC;
+  border: 1px solid $border-light;
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.takeaway-title {
+  color: $text-primary;
+  font-size: 24rpx;
+  font-weight: 850;
+}
+
+.takeaway-title.action {
+  margin-top: 6rpx;
+  color: #b45309;
+}
+
+.takeaway-text {
+  color: $text-secondary;
+  font-size: 24rpx;
+  line-height: 1.55;
 }
 
 .item-summary {

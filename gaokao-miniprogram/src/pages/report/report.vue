@@ -132,6 +132,7 @@
       </view>
       <text class="state-title">报告生成失败</text>
       <text class="state-sub">{{ errorMsg }}</text>
+      <text v-if="draftId" class="state-sub-tip">已保留草稿：{{ draftId }}，可直接重试生成，无需重新填写资料。</text>
       <button class="primary-action-btn error-btn" @click="generate(true)">重试生成</button>
     </view>
   </view>
@@ -149,6 +150,7 @@ import { PAYMENT_ENABLED, PDF_DOWNLOAD_ENABLED } from '../../config.js'
 
 const status = ref('loading')
 const errorMsg = ref('')
+const draftId = ref('')
 
 const userStore = useUserStore()
 const chatStore = useChatStore()
@@ -228,6 +230,7 @@ async function generate(force = false) {
 
   status.value = 'loading'
   errorMsg.value = ''
+  draftId.value = ''
 
   try {
     const res = await requestBackend({
@@ -257,6 +260,7 @@ async function generate(force = false) {
     }
 
     if (res.statusCode !== 200 || !res.data?.url) {
+      if (res.data?.draftId) draftId.value = res.data.draftId
       throw new Error(res.data?.error || '服务暂时不可用')
     }
 
