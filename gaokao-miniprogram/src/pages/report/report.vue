@@ -19,6 +19,29 @@
       </view>
     </view>
 
+    <!-- 测评未完成 -->
+    <view v-else-if="status === 'assessment'" class="state-card action-card">
+      <view class="error-icon-outer">
+        <view class="error-glow" />
+        <view class="error-icon">📋</view>
+      </view>
+      <text class="state-title">先完成测评再生成报告</text>
+      <text class="state-sub">{{ errorMsg }}</text>
+      <view class="requirement-panel">
+        <view class="requirement-row">
+          <text class="requirement-label">完成进度</text>
+          <text class="requirement-value">{{ assessmentStore.completedCount }}/3</text>
+        </view>
+        <view class="requirement-track">
+          <view class="requirement-fill" :style="{ width: `${Math.round((assessmentStore.completedCount / 3) * 100)}%` }" />
+        </view>
+      </view>
+      <view class="actions-area">
+        <button class="primary-action-btn" @click="goAssessments">去完成测评</button>
+        <button class="secondary-action-btn" @click="goHome">返回首页</button>
+      </view>
+    </view>
+
     <!-- 会员锁定 -->
     <view v-else-if="status === 'locked'" class="state-card locked-card">
       <view class="lock-icon-outer">
@@ -155,7 +178,7 @@ onMounted(async () => {
   reportStore.loadReport()
 
   if (!assessmentStore.isAllCompleted) {
-    status.value = 'error'
+    status.value = 'assessment'
     errorMsg.value = `请先完成全部 3 项测评（当前 ${assessmentStore.completedCount}/3）`
     return
   }
@@ -183,7 +206,7 @@ onMounted(async () => {
 
 async function generate(force = false) {
   if (!assessmentStore.isAllCompleted) {
-    status.value = 'error'
+    status.value = 'assessment'
     errorMsg.value = `请先完成全部 3 项测评（当前 ${assessmentStore.completedCount}/3）`
     return
   }
@@ -270,6 +293,14 @@ async function unlockAndGenerate() {
 
 function goInvite() {
   uni.switchTab({ url: '/pages/profile/profile' })
+}
+
+function goAssessments() {
+  uni.switchTab({ url: '/pages/assessments/assessments' })
+}
+
+function goHome() {
+  uni.switchTab({ url: '/pages/index/index' })
 }
 
 function copyLink() {
@@ -700,5 +731,53 @@ function formatTime(ts) {
       box-shadow: 0 4rpx 12rpx rgba(239, 68, 68, 0.2);
     }
   }
+}
+
+.action-card {
+  .primary-action-btn {
+    background: $grad-royal;
+  }
+}
+
+.requirement-panel {
+  width: 100%;
+  margin-top: 28rpx;
+  padding: 24rpx;
+  border-radius: $radius-lg;
+  background: rgba(248, 250, 252, 0.94);
+  border: 1px solid $border-light;
+  box-sizing: border-box;
+}
+
+.requirement-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14rpx;
+}
+
+.requirement-label {
+  color: $text-secondary;
+  font-size: 25rpx;
+}
+
+.requirement-value {
+  color: $text-primary;
+  font-size: 27rpx;
+  font-weight: 850;
+}
+
+.requirement-track {
+  width: 100%;
+  height: 14rpx;
+  border-radius: 999rpx;
+  background: rgba(226, 232, 240, 0.92);
+  overflow: hidden;
+}
+
+.requirement-fill {
+  height: 100%;
+  border-radius: 999rpx;
+  background: linear-gradient(135deg, $brand-violet 0%, #f97316 100%);
 }
 </style>

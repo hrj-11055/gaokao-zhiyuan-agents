@@ -31,6 +31,9 @@ class MembershipPagesTests(unittest.TestCase):
 
         for snippet in [
             "membershipStore.loadStatus",
+            "status === 'assessment'",
+            "去完成测评",
+            "uni.switchTab({ url: '/pages/assessments/assessments' })",
             "status === 'locked'",
             "MEMBERSHIP_REQUIRED",
             "Authorization",
