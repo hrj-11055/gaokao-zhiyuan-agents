@@ -221,6 +221,11 @@ function toggleOption(id, opt, type, maxSelect) {
   if (type === 'single') {
     answers.value = { ...answers.value, [id]: opt }
     saveQuestionnaire(answers.value)
+    // 如果所有题都已答完，直接完成
+    if (getFirstUnansweredIndex() === -1) {
+      setTimeout(completeAndReturn, 250)
+      return
+    }
     if (currentIndex.value < QUESTIONS.length - 1) {
       setTimeout(() => { currentIndex.value++ }, 250)
     }
@@ -274,7 +279,18 @@ function getFirstUnansweredIndex() {
   return QUESTIONS.findIndex((question) => !isAnswered(question))
 }
 
-function finishQuestionnaire() {
+  function completeAndReturn() {
+    uni.showToast({
+      title: '五环测评已完成',
+      icon: 'success',
+      duration: 500
+    })
+    setTimeout(() => {
+      uni.switchTab({ url: '/pages/index/index' })
+    }, 500)
+  }
+
+  function finishQuestionnaire() {
   const firstUnansweredIndex = getFirstUnansweredIndex()
   if (firstUnansweredIndex !== -1) {
     currentIndex.value = firstUnansweredIndex
@@ -291,7 +307,7 @@ function finishQuestionnaire() {
     duration: 500
   })
   setTimeout(() => {
-    uni.switchTab({ url: '/pages/assessments/assessments' })
+    uni.switchTab({ url: '/pages/index/index' })
   }, 500)
 }
 </script>
