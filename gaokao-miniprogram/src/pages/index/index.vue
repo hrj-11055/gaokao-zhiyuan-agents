@@ -128,14 +128,75 @@
       <text class="disclaimer-text">结果仅供志愿填报参考，请以各省教育考试院和高校官方信息为准。</text>
       <text class="privacy-link" @click="goPrivacy">《隐私保护指引》</text>
     </view>
+
+    <!-- profile sheet mask -->
+    <view v-if="showProfileSheet" class="sheet-mask" @click="closeProfileSheet" />
+
+    <!-- profile bottom sheet -->
+    <view v-if="showProfileSheet" class="sheet">
+      <view class="sheet-header">
+        <text class="sheet-title">填写基础信息</text>
+        <text class="sheet-close" @click="closeProfileSheet">✕</text>
+      </view>
+
+      <!-- province picker -->
+      <view class="sheet-field">
+        <text class="sheet-label">📍 目标省份</text>
+        <picker :range="provinces" @change="onProvinceChange">
+          <text class="sheet-value">{{ draft.province || '点击选择' }}</text>
+        </picker>
+      </view>
+
+      <!-- category picker -->
+      <view class="sheet-field">
+        <text class="sheet-label">📚 考生科目</text>
+        <picker :range="categories" @change="onCategoryChange">
+          <text class="sheet-value">{{ draft.category || '点击选择' }}</text>
+        </picker>
+      </view>
+
+      <!-- score input -->
+      <view class="sheet-field">
+        <text class="sheet-label">⚡ 高考分数</text>
+        <input
+          class="sheet-input"
+          type="number"
+          :value="draft.score"
+          maxlength="3"
+          placeholder="输入分数"
+          placeholder-class="sheet-value"
+          @input="onDraftScoreInput"
+        />
+      </view>
+
+      <!-- rank input -->
+      <view class="sheet-field">
+        <text class="sheet-label">🎯 全省位次（选填）</text>
+        <input
+          class="sheet-input"
+          type="number"
+          :value="draft.rank"
+          maxlength="8"
+          placeholder="输入位次"
+          placeholder-class="sheet-value"
+          @input="onDraftRankInput"
+        />
+      </view>
+
+      <!-- save button -->
+      <view class="sheet-save" :class="{ disabled: !sheetReady }" @click="saveProfileSheet">
+        <text style="color: inherit; font-weight: inherit; font-size: inherit;">保存</text>
+      </view>
+    </view>
   </view>
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
 import { onLoad, onShow } from '@dcloudio/uni-app'
 import { useHomeProgress, StepStatus } from '../../composables/useHomeProgress.js'
 import { useMembershipStore } from '../../stores/membership.js'
+import { saveUserProfile, loadUserProfile, isProfileComplete } from '../../utils/storage.js'
 
 const {
   profile,
@@ -273,8 +334,68 @@ const nextAssessmentCtaText = computed(() => {
 // ---------- navigation ----------
 
 function onClickStep1() {
-  // placeholder — Task 2.3 will add a bottom sheet
-  uni.showToast({ title: '请先点击步骤 1', icon: 'none' })
+  openProfileSheet()
+}
+
+// ---------- profile sheet ----------
+
+const provinces = [
+  '北京', '天津', '河北', '山西', '内蒙古', '辽宁', '吉林', '黑龙江',
+  '上海', '江苏', '浙江', '安徽', '福建', '江西', '山东', '河南',
+  '湖北', '湖南', '广东', '广西', '海南', '重庆', '四川', '贵州',
+  '云南', '西藏', '陕西', '甘肃', '青海', '宁夏', '新疆'
+]
+const categories = ['物理类', '历史类']
+
+const showProfileSheet = ref(false)
+const draft = ref({ province: '', category: '', score: '', rank: '' })
+
+const provinceIndex = computed(() => provinces.indexOf(draft.value.province))
+const categoryIndex = computed(() => categories.indexOf(draft.value.category))
+const sheetReady = computed(() => isProfileComplete(draft.value))
+
+function openProfileSheet() {
+  const saved = loadUserProfile()
+  draft.value = {
+    province: saved.province || '',
+    category: saved.category || '',
+    score: saved.score !== '' ? String(saved.score) : '',
+    rank: saved.rank !== '' ? String(saved.rank) : ''
+  }
+  showProfileSheet.value = true
+}
+
+function closeProfileSheet() {
+  showProfileSheet.value = false
+}
+
+function onProvinceChange(e) {
+  draft.value.province = provinces[e.detail.value] || ''
+}
+
+function onCategoryChange(e) {
+  draft.value.category = categories[e.detail.value] || ''
+}
+
+function onDraftScoreInput(e) {
+  draft.value.score = e.detail.value
+}
+
+function onDraftRankInput(e) {
+  draft.value.rank = e.detail.value
+}
+
+function saveProfileSheet() {
+  if (!sheetReady.value) return
+  saveUserProfile({
+    province: draft.value.province,
+    category: draft.value.category,
+    score: draft.value.score,
+    rank: draft.value.rank
+  })
+  closeProfileSheet()
+  refresh()
+  uni.showToast({ title: '保存成功', icon: 'success' })
 }
 
 function onClickStep2() {
@@ -332,6 +453,14 @@ onLoad((options = {}) => {
 onShow(() => {
   refresh()
   membershipStore.loadStatus().catch(() => {})
+})
+
+onMounted(() => {
+  uni.$on('open-profile-sheet', openProfileSheet)
+})
+
+onUnmounted(() => {
+  uni.$off('open-profile-sheet', openProfileSheet)
 })
 </script>
 
@@ -724,5 +853,89 @@ onShow(() => {
   font-weight: 600;
   margin-top: 14rpx;
   text-decoration: underline;
+}
+
+// ---------- profile sheet ----------
+
+.sheet-mask {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.45);
+  z-index: 99;
+}
+
+.sheet {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border-radius: 28rpx 28rpx 0 0;
+  padding: 28rpx 32rpx 60rpx;
+  z-index: 100;
+  box-shadow: 0 -8rpx 24rpx rgba(17, 24, 39, 0.1);
+}
+
+.sheet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22rpx;
+}
+
+.sheet-title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #111827;
+}
+
+.sheet-close {
+  font-size: 36rpx;
+  color: #9ca3af;
+  padding: 4rpx 12rpx;
+}
+
+.sheet-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #f3f4f6;
+}
+
+.sheet-label {
+  font-size: 26rpx;
+  color: #374151;
+}
+
+.sheet-value {
+  font-size: 26rpx;
+  color: #111827;
+  font-weight: 500;
+}
+
+.sheet-input {
+  font-size: 26rpx;
+  color: #111827;
+  text-align: right;
+  width: 280rpx;
+}
+
+.sheet-save {
+  margin-top: 24rpx;
+  padding: 26rpx;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30rpx;
+  border-radius: 18rpx;
+  box-shadow: 0 6rpx 16rpx rgba(249, 115, 22, 0.3);
+
+  &.disabled {
+    background: #e5e7eb;
+    color: #9ca3af;
+    box-shadow: none;
+  }
 }
 </style>
