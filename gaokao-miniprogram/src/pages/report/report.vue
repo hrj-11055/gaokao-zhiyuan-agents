@@ -1,676 +1,678 @@
 <template>
   <view class="report-page">
-    <!-- 炫彩背景氛围粒子 -->
-    <view class="cyber-glow-bg-violet" />
-    <view class="cyber-glow-bg-orange" />
+    <!-- subtle background glow -->
+    <view class="bg-glow-soft" />
 
-    <!-- 生成中 -->
-    <view v-if="status === 'loading'" class="state-card loading-card">
-      <view class="spinner-container">
-        <view class="cyber-spinner-outer" />
-        <view class="cyber-spinner-inner" />
-        <view class="spinner-icon">⚡</view>
+    <view class="page-title">我的志愿报告</view>
+
+    <!-- ============================================================ -->
+    <!-- State A / B : Locked / Ready hero card (no active membership) -->
+    <!-- ============================================================ -->
+    <view v-if="!membershipStore.isActive && !generating" class="lock-hero" :class="{ ready: allAssessmentsDone }">
+      <!-- golden glow accent -->
+      <view class="hero-glow" />
+
+      <!-- badge -->
+      <view v-if="!allAssessmentsDone" class="hero-badge incomplete">
+        <text class="hero-badge-text">还差 {{ 3 - completedAssessments }} 项测评</text>
       </view>
-      <text class="state-title">正在生成志愿参考报告</text>
-      <text class="state-sub">正在整合考生信息、测评结果与对话记录</text>
-      <text class="state-sub-tip">通常需要 15-30 秒，请保持页面打开。</text>
+      <view v-else class="hero-badge done">
+        <text class="hero-badge-text">&#10003; 资料已就绪</text>
+      </view>
+
+      <text class="hero-title">综合志愿参考报告</text>
+      <text class="hero-sub">
+        {{
+          allAssessmentsDone
+            ? '全部测评完成，可立即生成专属报告'
+            : '完成测评后，为您量身定制志愿参考方案'
+        }}
+      </text>
+      <text class="hero-price">&#165;29</text>
+    </view>
+
+    <!-- ============================================================ -->
+    <!-- B: Unlock options (assessments done but unpaid)              -->
+    <!-- ============================================================ -->
+    <view v-if="allAssessmentsDone && !membershipStore.isActive && !generating" class="unlock-options">
+      <view class="unlock-card primary" @click="onPayWithWechat">
+        <view class="unlock-card-icon">&#128179;</view>
+        <text class="unlock-card-title">立即支付</text>
+        <text class="unlock-card-price">&#165;29</text>
+        <text class="unlock-card-hint">一次性解锁</text>
+      </view>
+      <view class="unlock-card invite" @click="onInviteFriends">
+        <view class="unlock-card-icon">&#128101;</view>
+        <text class="unlock-card-title">邀请免费解锁</text>
+        <view class="invite-dots">
+          <view
+            v-for="i in 3"
+            :key="i"
+            class="invite-dot"
+            :class="{ filled: i <= membershipStore.effectiveInviteCount }"
+          />
+        </view>
+        <text class="unlock-card-hint">{{ membershipStore.effectiveInviteCount }}/3</text>
+      </view>
+    </view>
+
+    <!-- ============================================================ -->
+    <!-- A: Invite bar (assessments NOT done)                         -->
+    <!-- ============================================================ -->
+    <view v-if="!allAssessmentsDone && !membershipStore.isActive && !generating" class="invite-bar">
+      <view class="invite-progress-row">
+        <view
+          v-for="i in 3"
+          :key="i"
+          class="invite-step-dot"
+          :class="{
+            filled: i <= completedAssessments,
+            active: i === completedAssessments + 1,
+          }"
+        />
+      </view>
+      <text class="invite-bar-label">完成 {{ completedAssessments }}/3 项测评即可生成报告</text>
+      <button class="invite-bar-cta" open-type="share">分享给同学</button>
+    </view>
+
+    <!-- ============================================================ -->
+    <!-- A/B: 8-module preview grid                                   -->
+    <!-- ============================================================ -->
+    <view v-if="!membershipStore.isActive && !generating" class="preview-section">
+      <text class="section-label">报告里有什么</text>
+      <view class="preview-grid">
+        <view v-for="(mod, idx) in modules" :key="idx" class="preview-item">
+          <text class="preview-icon">{{ moduleIcons[idx] }}</text>
+          <text class="preview-name">{{ mod }}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- ============================================================ -->
+    <!-- C: Active membership — ready but no report yet               -->
+    <!-- ============================================================ -->
+    <view v-if="membershipStore.isActive && !latestReport && !generating" class="ready-card">
+      <view class="ready-glow" />
+      <text class="ready-icon">&#128203;</text>
+      <text class="ready-title">报告已就绪</text>
+      <text class="ready-sub">所有资料准备完毕，点击立即生成您的专属志愿报告</text>
+      <button class="ready-cta" @click="onGenerate">立即生成报告</button>
+    </view>
+
+    <!-- ============================================================ -->
+    <!-- Generating spinner                                           -->
+    <!-- ============================================================ -->
+    <view v-if="generating" class="loading-card">
+      <view class="spinner-ring">
+        <view class="spinner-circle" />
+      </view>
+      <text class="loading-title">正在生成志愿报告</text>
+      <text class="loading-sub">正在整合考生信息、测评结果与对话记录</text>
+      <text class="loading-tip">通常需要 1-2 分钟，请保持页面打开</text>
       <view class="loading-bar">
         <view class="loading-fill" />
       </view>
     </view>
 
-    <!-- 测评未完成 -->
-    <view v-else-if="status === 'assessment'" class="state-card action-card">
-      <view class="error-icon-outer">
-        <view class="error-glow" />
-        <view class="error-icon">📋</view>
-      </view>
-      <text class="state-title">先完成测评再生成报告</text>
-      <text class="state-sub">{{ errorMsg }}</text>
-      <view class="requirement-panel">
-        <view class="requirement-row">
-          <text class="requirement-label">完成进度</text>
-          <text class="requirement-value">{{ assessmentStore.completedCount }}/3</text>
-        </view>
-        <view class="requirement-track">
-          <view class="requirement-fill" :style="{ width: `${Math.round((assessmentStore.completedCount / 3) * 100)}%` }" />
-        </view>
-      </view>
-      <view class="actions-area">
-        <button class="primary-action-btn" @click="goAssessments">去完成测评</button>
-        <button class="secondary-action-btn" @click="goHome">返回首页</button>
+    <!-- ============================================================ -->
+    <!-- C: Unlocked — latest report card                             -->
+    <!-- ============================================================ -->
+    <view v-if="membershipStore.isActive && latestReport && !generating" class="latest-card">
+      <view class="latest-glow" />
+      <text class="latest-label">最新报告</text>
+      <text class="latest-title">综合志愿参考报告</text>
+      <text class="latest-time" v-if="latestReport.generatedAt">{{ formatTime(latestReport.generatedAt) }}</text>
+      <view class="latest-actions">
+        <button class="latest-btn primary" @click="openLatest">在线查看</button>
+        <button class="latest-btn secondary" @click="shareLatest">分享给家长</button>
       </view>
     </view>
 
-    <!-- 会员锁定 -->
-    <view v-else-if="status === 'locked'" class="state-card locked-card">
-      <view class="lock-icon-outer">
-        <view class="lock-glow" />
-        <view class="lock-icon">🔒</view>
-      </view>
-      <text class="state-title">解锁综合志愿报告</text>
-      <text class="state-sub">{{ errorMsg || '生成可给家长一起查看的完整志愿参考报告' }}</text>
-
-      <view class="unlock-price">
-        <text class="unlock-price-main">¥29 一次性解锁</text>
-        <text class="unlock-price-sub">也可邀请 3 位新用户填写基础信息后免费解锁</text>
-      </view>
-
-      <view class="benefits-panel">
-        <view class="benefit-item">
-          <view class="benefit-bullet">✦</view>
-          <text class="benefit-text">院校定位、优势专业与填报风险梳理</text>
+    <!-- ============================================================ -->
+    <!-- C: History list                                              -->
+    <!-- ============================================================ -->
+    <view v-if="membershipStore.isActive && history.length > 0 && !generating" class="history-section">
+      <text class="section-label">历史报告</text>
+      <view v-for="(item, idx) in history" :key="idx" class="history-card" @click="openHistory(item)">
+        <text class="history-icon">&#128196;</text>
+        <view class="history-info">
+          <text class="history-title">综合志愿报告</text>
+          <text class="history-time">{{ formatTime(item.generatedAt) }}</text>
         </view>
-        <view class="benefit-item">
-          <view class="benefit-bullet">✦</view>
-          <text class="benefit-text">结合测评结果分析适合和应回避的方向</text>
-        </view>
-        <view class="benefit-item">
-          <view class="benefit-bullet">✦</view>
-          <text class="benefit-text">支持网页查看、PDF 下载和家庭讨论</text>
-        </view>
-        <view class="benefit-item">
-          <view class="benefit-bullet">✦</view>
-          <text class="benefit-text">报告链接可复制给家长共同查看</text>
-        </view>
+        <text class="history-arrow">&#8250;</text>
       </view>
-
-      <view class="actions-area">
-        <button class="primary-action-btn" @click="unlockAndGenerate">{{ paymentActionText }}</button>
-        <button class="secondary-action-btn" @click="goInvite">邀请 3 名好友免费解锁</button>
+      <view class="regenerate-card" @click="onRegenerate">
+        <text class="regenerate-plus">+</text>
+        <text class="regenerate-text">重新生成报告</text>
       </view>
-    </view>
-
-    <!-- 成功 -->
-    <view v-else-if="status === 'done'" class="state-card success-card">
-      <view class="success-icon-outer">
-        <view class="success-glow" />
-        <view class="success-icon">🏆</view>
-      </view>
-      <text class="state-title">志愿参考报告已生成</text>
-      <text class="state-sub">{{ sourceDesc }}</text>
-      <text class="state-time" v-if="reportStore.generatedAt">生成时间：{{ formatTime(reportStore.generatedAt) }}</text>
-
-      <view class="divider" />
-
-      <view class="benefits-panel success-panel">
-        <view class="benefit-item">
-          <view class="benefit-bullet success">✓</view>
-          <text class="benefit-text">五环学业特质已纳入分析</text>
-        </view>
-        <view class="benefit-item">
-          <view class="benefit-bullet success">✓</view>
-          <text class="benefit-text">专业方向匹配建议已生成</text>
-        </view>
-        <view class="benefit-item">
-          <view class="benefit-bullet success">✓</view>
-          <text class="benefit-text">院校梯度和风险提示已整理</text>
-        </view>
-        <view class="benefit-item">
-          <view class="benefit-bullet success">✓</view>
-          <text class="benefit-text">可继续下载院校/专业深度 PDF</text>
-        </view>
-      </view>
-
-      <view class="actions-area">
-        <button class="primary-action-btn success-btn" @click="openInBrowser">查看报告</button>
-        <button class="secondary-action-btn" @click="downloadPdf">下载 PDF</button>
-        <button class="secondary-action-btn" @click="openDeepReportDownload">下载学校/专业深度 PDF</button>
-        <button class="secondary-action-btn" @click="copyLink">复制链接发给家长</button>
-      </view>
-
-      <view class="regenerate-text-wrap" @click="generate(true)">
-        <text class="regenerate-link">重新生成报告</text>
-      </view>
-    </view>
-
-    <!-- 失败 -->
-    <view v-else-if="status === 'error'" class="state-card error-card">
-      <view class="error-icon-outer">
-        <view class="error-glow" />
-        <view class="error-icon">⚠️</view>
-      </view>
-      <text class="state-title">报告生成失败</text>
-      <text class="state-sub">{{ errorMsg }}</text>
-      <text v-if="draftId" class="state-sub-tip">已保留草稿：{{ draftId }}，可直接重试生成，无需重新填写资料。</text>
-      <button class="primary-action-btn error-btn" @click="generate(true)">重试生成</button>
     </view>
   </view>
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import { requestBackend } from '../../api/backend.js'
-import { useUserStore } from '../../stores/user.js'
-import { useChatStore } from '../../stores/chat.js'
-import { useAssessmentStore } from '../../stores/assessment.js'
-import { useReportStore } from '../../stores/report.js'
+import { ref, onMounted } from 'vue'
 import { useMembershipStore } from '../../stores/membership.js'
-import { PAYMENT_ENABLED, PDF_DOWNLOAD_ENABLED } from '../../config.js'
+import { useHomeProgress } from '../../composables/useHomeProgress.js'
+import { generateReport } from '../../api/report.js'
+import { loadUserProfile, loadReport, saveReport } from '../../utils/storage.js'
 
-const status = ref('loading')
-const errorMsg = ref('')
-const draftId = ref('')
+// ---------------------------------------------------------------------------
+// Stores & composables
+// ---------------------------------------------------------------------------
 
-const userStore = useUserStore()
-const chatStore = useChatStore()
-const assessmentStore = useAssessmentStore()
-const reportStore = useReportStore()
 const membershipStore = useMembershipStore()
-const paymentUnavailableText = '支付功能正在备案配置中，请先邀请 3 位同学免费解锁。'
-const downloadUnavailableText = 'PDF 下载正在等待 HTTPS 合法域名配置，备案完成前请先查看在线报告。'
+const {
+  questionnaireDone,
+  mbtiDone,
+  hollandDone,
+  step3Done: allAssessmentsDone,
+  step3Count: completedAssessments,
+  refresh: refreshProgress,
+} = useHomeProgress()
 
-const sourceDesc = computed(() => {
-  const completedCount = assessmentStore.questionnaire?.completedCount || 0
-  const conversationId = chatStore.conversationId
-  const parts = []
-  if (completedCount > 0) parts.push(`${completedCount} 道问卷`)
-  if (assessmentStore.mbti?.completed && assessmentStore.mbti?.type) parts.push(`MBTI ${assessmentStore.mbti.type}`)
-  if (assessmentStore.holland?.completed && assessmentStore.holland?.code) parts.push(`霍兰德 ${assessmentStore.holland.code}`)
-  if (conversationId) parts.push('AI 对话记录')
-  return parts.length > 0 ? `基于 ${parts.join(' + ')} 生成` : '基于考生基本信息生成'
-})
+// ---------------------------------------------------------------------------
+// Module data
+// ---------------------------------------------------------------------------
 
-const paymentActionText = computed(() => {
-  if (!PAYMENT_ENABLED) return '支付备案中，先邀请解锁'
-  return errorMsg.value && errorMsg.value.includes('支付暂未接入') ? '支付接入后可开通' : '¥29 解锁并生成报告'
-})
+const modules = [
+  '院校定位分析',
+  '专业匹配建议',
+  '分数策略',
+  '风险提示',
+  'MBTI 匹配解读',
+  '霍兰德兴趣对应',
+  '专业冷热分析',
+  '志愿组合建议',
+]
+
+const moduleIcons = ['🏛️', '🎯', '📊', '⚠️', '🧠', '🔍', '🔥', '📋']
+
+// ---------------------------------------------------------------------------
+// Reactive state
+// ---------------------------------------------------------------------------
+
+const generating = ref(false)
+const latestReport = ref(null)
+const history = ref([])
+
+// ---------------------------------------------------------------------------
+// Lifecycle
+// ---------------------------------------------------------------------------
 
 onMounted(async () => {
-  userStore.loadProfile()
-  if (!userStore.userId) userStore.initUserId()
-  chatStore.loadHistory()
-  assessmentStore.loadAll()
-  reportStore.loadReport()
-
-  if (!assessmentStore.isAllCompleted) {
-    status.value = 'assessment'
-    errorMsg.value = `请先完成全部 3 项测评（当前 ${assessmentStore.completedCount}/3）`
-    return
-  }
-
+  refreshProgress()
+  loadExistingReports()
   try {
     await membershipStore.loadStatus()
-  } catch (err) {
-    status.value = 'locked'
-    errorMsg.value = err.message || err.errMsg || '请先登录微信身份后解锁会员权益'
-    return
-  }
-
-  if (!membershipStore.isActive) {
-    status.value = 'locked'
-    errorMsg.value = '综合志愿报告属于会员权益，付费或邀请 3 位新用户后即可生成'
-    return
-  }
-
-  if (reportStore.url) {
-    status.value = 'done'
-  } else {
-    generate()
+  } catch {
+    // membership status fetch failed — stays inactive
   }
 })
 
-async function generate(force = false) {
-  if (!assessmentStore.isAllCompleted) {
-    status.value = 'assessment'
-    errorMsg.value = `请先完成全部 3 项测评（当前 ${assessmentStore.completedCount}/3）`
-    return
-  }
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
 
-  if (!force && reportStore.url) {
-    status.value = 'done'
-    return
-  }
-
-  if (!membershipStore.isActive) {
-    status.value = 'locked'
-    errorMsg.value = '综合志愿报告属于会员权益，付费或邀请 3 位新用户后即可生成'
-    return
-  }
-
-  status.value = 'loading'
-  errorMsg.value = ''
-  draftId.value = ''
-
-  try {
-    const res = await requestBackend({
-      path: '/api/report/generate',
-      method: 'POST',
-      data: {
-        userId: userStore.userId,
-        profile: userStore.profile,
-        questionnaire: assessmentStore.questionnaire?.answers || {},
-        assessments: {
-          mbti: assessmentStore.mbti,
-          holland: assessmentStore.holland,
-        },
-        conversationId: chatStore.conversationId || '',
-      },
-      header: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${membershipStore.sessionToken}`,
-      },
-      timeout: 120000,
-    })
-
-    if (res.statusCode === 402 || res.data?.code === 'MEMBERSHIP_REQUIRED') {
-      status.value = 'locked'
-      errorMsg.value = res.data?.error || '请先解锁会员后生成报告'
-      return
+function loadExistingReports() {
+  const data = loadReport()
+  if (data) {
+    if (data.url) {
+      latestReport.value = data
     }
-
-    if (res.statusCode !== 200 || !res.data?.url) {
-      if (res.data?.draftId) draftId.value = res.data.draftId
-      throw new Error(res.data?.error || '服务暂时不可用')
+    if (Array.isArray(data.history) && data.history.length > 0) {
+      history.value = data.history
     }
-
-    reportStore.saveReport(res.data.url)
-    status.value = 'done'
-  } catch (err) {
-    status.value = 'error'
-    errorMsg.value = err.message || err.errMsg || '网络请求失败，请检查网络后重试'
   }
 }
 
-async function unlockAndGenerate() {
-  if (!PAYMENT_ENABLED) {
-    uni.showModal({
-      title: '支付暂未开放',
-      content: paymentUnavailableText,
-      confirmText: '去邀请',
-      cancelText: '知道了',
-      success: (res) => {
-        if (res.confirm) goInvite()
-      },
-    })
-    return
+function persistReports() {
+  const data = {
+    ...(latestReport.value || {}),
+    history: history.value,
   }
-
-  try {
-    uni.showLoading({ title: '发起支付...' })
-    await membershipStore.createPayment()
-    await membershipStore.loadStatus()
-    uni.hideLoading()
-    if (membershipStore.isActive) {
-      await generate(true)
-    } else {
-      status.value = 'locked'
-      errorMsg.value = '支付确认中，请稍后刷新后生成报告'
-    }
-  } catch (err) {
-    uni.hideLoading()
-    const message = err.message || err.errMsg || ''
-    if (message.includes('请求失败') || message.includes('fail')) {
-      errorMsg.value = '支付暂未接入或支付参数未配置，当前不能通过付费解锁生成报告'
-      status.value = 'locked'
-    }
-    uni.showToast({
-      title: errorMsg.value || message || '暂时无法发起支付',
-      icon: 'none',
-      duration: 2200,
-    })
-  }
-}
-
-function goInvite() {
-  uni.switchTab({ url: '/pages/profile/profile' })
-}
-
-function goAssessments() {
-  uni.switchTab({ url: '/pages/assessments/assessments' })
-}
-
-function goHome() {
-  uni.switchTab({ url: '/pages/index/index' })
-}
-
-function copyLink() {
-  uni.setClipboardData({
-    data: reportStore.url,
-    success: () => uni.showToast({ title: '链接已复制', icon: 'success' })
-  })
-}
-
-function openInBrowser() {
-  uni.navigateTo({
-    url: `/pages/report-view/report-view?url=${encodeURIComponent(reportStore.url)}`
-  })
-}
-
-function openDeepReportDownload() {
-  uni.navigateTo({
-    url: '/pages/deep-report-download/deep-report-download'
-  })
-}
-
-function getHeaderValue(headers, name) {
-  if (!headers) return ''
-  const lowerName = name.toLowerCase()
-  const key = Object.keys(headers).find(item => item.toLowerCase() === lowerName)
-  return key ? String(headers[key]) : ''
-}
-
-function downloadPdf() {
-  if (!reportStore.url) return
-
-  if (!PDF_DOWNLOAD_ENABLED) {
-    uni.showModal({
-      title: 'PDF 下载暂未开放',
-      content: downloadUnavailableText,
-      confirmText: '查看报告',
-      cancelText: '知道了',
-      success: (res) => {
-        if (res.confirm) openInBrowser()
-      },
-    })
-    return
-  }
-
-  uni.showLoading({ title: 'PDF 生成中...' })
-  const pdfUrl = reportStore.url.replace('.html', '.pdf')
-
-  uni.downloadFile({
-    url: pdfUrl,
-    success: (res) => {
-      const contentType = getHeaderValue(res.header, 'content-type')
-      if (res.statusCode === 200 && contentType.includes('application/pdf')) {
-        uni.openDocument({
-          filePath: res.tempFilePath,
-          showMenu: true,
-          success: () => uni.hideLoading(),
-          fail: (err) => {
-            uni.hideLoading()
-            uni.showToast({ title: '打开 PDF 失败', icon: 'none' })
-          }
-        })
-      } else {
-        uni.hideLoading()
-        uni.showToast({ title: 'PDF 未生成成功，请重新生成报告', icon: 'none' })
-      }
-    },
-    fail: () => {
-      uni.hideLoading()
-      uni.showToast({ title: '网络请求失败', icon: 'none' })
-    }
-  })
+  saveReport(data)
 }
 
 function formatTime(ts) {
   if (!ts) return ''
-  const date = new Date(ts)
-  return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')} ${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`
+  const d = new Date(ts)
+  const pad = (n) => String(n).padStart(2, '0')
+  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`
+}
+
+// ---------------------------------------------------------------------------
+// Actions
+// ---------------------------------------------------------------------------
+
+async function onGenerate() {
+  generating.value = true
+  try {
+    const profile = loadUserProfile()
+    const result = await generateReport({
+      profile,
+      userId: membershipStore.userId,
+      conversationId: '',
+      questionnaire: {},
+      assessments: {},
+    })
+    const reportEntry = {
+      url: result.url,
+      generatedAt: result.generatedAt || Date.now(),
+    }
+    // push old latest into history
+    if (latestReport.value?.url) {
+      history.value.unshift({ ...latestReport.value })
+    }
+    latestReport.value = reportEntry
+    persistReports()
+  } catch (err) {
+    uni.showToast({ title: err.message || '生成失败', icon: 'none', duration: 2500 })
+  } finally {
+    generating.value = false
+  }
+}
+
+function onRegenerate() {
+  uni.showModal({
+    title: '重新生成',
+    content: '确定要重新生成报告吗？当前报告将归入历史。',
+    confirmText: '确定',
+    cancelText: '取消',
+    success: (res) => {
+      if (res.confirm) onGenerate()
+    },
+  })
+}
+
+function openLatest() {
+  if (!latestReport.value?.url) return
+  uni.navigateTo({
+    url: `/pages/report-view/report-view?url=${encodeURIComponent(latestReport.value.url)}`,
+  })
+}
+
+function openHistory(item) {
+  if (!item?.url) return
+  uni.navigateTo({
+    url: `/pages/report-view/report-view?url=${encodeURIComponent(item.url)}`,
+  })
+}
+
+function onPayWithWechat() {
+  membershipStore.openMembership?.()
+  // Fallback: if openMembership is not defined, try createPayment
+  if (!membershipStore.openMembership) {
+    membershipStore.createPayment?.().then(() => {
+      membershipStore.loadStatus()
+    }).catch((err) => {
+      uni.showToast({ title: err.message || '支付暂时不可用', icon: 'none' })
+    })
+  }
+}
+
+function shareLatest() {
+  if (!latestReport.value?.url) return
+  uni.setClipboardData({
+    data: latestReport.value.url,
+    success: () => uni.showToast({ title: '链接已复制', icon: 'success' }),
+  })
+}
+
+function onInviteFriends() {
+  uni.showToast({ title: '请用右上角 ··· 分享', icon: 'none', duration: 2000 })
 }
 </script>
 
 <style lang="scss" scoped>
+// ===========================================================================
+// Page
+// ===========================================================================
+
 .report-page {
   min-height: 100vh;
-  background:
-    radial-gradient(90% 45% at 12% 0%, rgba(37, 99, 235, 0.07) 0%, rgba(37, 99, 235, 0) 64%),
-    linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 48rpx 32rpx;
+  background: linear-gradient(180deg, #f3f4f6 0%, #ffffff 100%);
+  padding: 0 32rpx 64rpx;
   box-sizing: border-box;
   position: relative;
-  overflow-x: hidden;
 }
 
-.cyber-glow-bg-violet {
+.bg-glow-soft {
   position: fixed;
-  top: -10%;
-  left: -20%;
-  width: 600rpx;
-  height: 600rpx;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
+  top: -15%;
+  left: -10%;
+  width: 500rpx;
+  height: 500rpx;
+  background: radial-gradient(circle, rgba(49, 46, 129, 0.06) 0%, transparent 70%);
   z-index: 0;
   pointer-events: none;
 }
 
-.cyber-glow-bg-orange {
-  position: fixed;
-  bottom: -10%;
-  right: -20%;
-  width: 600rpx;
-  height: 600rpx;
-  background: radial-gradient(circle, rgba(249, 115, 22, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
-}
-
-.state-card {
+.page-title {
   position: relative;
   z-index: 1;
-  width: 100%;
-  @include glass-panel;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid rgba(15, 23, 42, 0.08);
+  font-size: 40rpx;
+  font-weight: 800;
+  color: $text-primary;
+  padding: 48rpx 0 12rpx;
+}
+
+// ===========================================================================
+// Lock hero (State A / B)
+// ===========================================================================
+
+.lock-hero {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #1e1b4b, #312e81, #4338ca);
   border-radius: $radius-xl;
-  padding: 56rpx 36rpx;
-  box-sizing: border-box;
+  padding: 52rpx 36rpx 44rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 0.3s;
+
+  &.ready {
+    background: linear-gradient(135deg, #312e81, #5b21b6);
+  }
 }
 
-.spinner-container {
+.hero-glow {
+  position: absolute;
+  top: -60rpx;
+  right: -60rpx;
+  width: 320rpx;
+  height: 320rpx;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-badge {
   position: relative;
-  width: 160rpx;
-  height: 160rpx;
+  display: inline-flex;
+  align-items: center;
+  padding: 8rpx 24rpx;
+  border-radius: $radius-full;
+  margin-bottom: 28rpx;
+
+  &.incomplete {
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  &.done {
+    background: rgba(34, 197, 94, 0.2);
+  }
+}
+
+.hero-badge-text {
+  font-size: 24rpx;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-title {
+  font-size: 38rpx;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12rpx;
+  text-align: center;
+}
+
+.hero-sub {
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 24rpx;
+}
+
+.hero-price {
+  font-size: 48rpx;
+  font-weight: 900;
+  color: #fbbf24;
+}
+
+// ===========================================================================
+// Unlock options (State B)
+// ===========================================================================
+
+.unlock-options {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 20rpx;
+  margin-top: 24rpx;
+}
+
+.unlock-card {
+  flex: 1;
+  border-radius: $radius-lg;
+  padding: 32rpx 24rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2rpx solid transparent;
+  transition: transform 0.15s;
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &.primary {
+    background: linear-gradient(135deg, #fff7ed, #ffedd5);
+    border-color: #fb923c;
+  }
+
+  &.invite {
+    background: rgba(255, 255, 255, 0.96);
+    border-color: $border-light;
+    box-shadow: 0 8rpx 24rpx -12rpx rgba(15, 23, 42, 0.1);
+  }
+}
+
+.unlock-card-icon {
+  font-size: 48rpx;
+  margin-bottom: 12rpx;
+}
+
+.unlock-card-title {
+  font-size: 28rpx;
+  font-weight: 800;
+  color: $text-primary;
+  margin-bottom: 6rpx;
+}
+
+.unlock-card-price {
+  font-size: 36rpx;
+  font-weight: 900;
+  color: #ea580c;
+  margin-bottom: 4rpx;
+}
+
+.unlock-card-hint {
+  font-size: 22rpx;
+  color: $text-muted;
+}
+
+.invite-dots {
+  display: flex;
+  gap: 12rpx;
+  margin-bottom: 8rpx;
+}
+
+.invite-dot {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background: #e2e8f0;
+  transition: background 0.2s;
+
+  &.filled {
+    background: $brand-primary;
+  }
+}
+
+// ===========================================================================
+// Invite bar (State A only)
+// ===========================================================================
+
+.invite-bar {
+  position: relative;
+  z-index: 1;
+  @include glass-panel;
+  border-radius: $radius-xl;
+  padding: 32rpx 28rpx;
+  margin-top: 24rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.invite-progress-row {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 16rpx;
+}
+
+.invite-step-dot {
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 50%;
+  background: #e2e8f0;
+  transition: all 0.2s;
+
+  &.filled {
+    background: $brand-violet;
+  }
+
+  &.active {
+    background: #a5b4fc;
+    box-shadow: 0 0 0 6rpx rgba(37, 99, 235, 0.15);
+  }
+}
+
+.invite-bar-label {
+  font-size: 24rpx;
+  color: $text-secondary;
+  margin-bottom: 20rpx;
+}
+
+.invite-bar-cta {
+  width: 100%;
+  height: 80rpx;
+  background: linear-gradient(135deg, $brand-violet, #4338ca);
+  color: #fff;
+  font-size: 28rpx;
+  font-weight: 700;
+  border-radius: $radius-full;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40rpx;
+  border: none;
+
+  &::after {
+    border: none;
+  }
 }
 
-.cyber-spinner-outer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 4rpx solid transparent;
-  border-top-color: $brand-primary;
-  border-bottom-color: $brand-violet;
-  border-radius: 50%;
-  animation: spin 1.5s linear infinite;
+// ===========================================================================
+// 8-module preview
+// ===========================================================================
+
+.preview-section {
+  position: relative;
+  z-index: 1;
+  margin-top: 32rpx;
 }
 
-.cyber-spinner-inner {
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  border: 2rpx solid transparent;
-  border-left-color: rgba(37, 99, 235, 0.16);
-  border-right-color: rgba(255, 107, 0, 0.2);
-  border-radius: 50%;
-  animation: spin-reverse 1.2s linear infinite;
-}
-
-.spinner-icon {
-  font-size: 56rpx;
-  animation: pulse-glow 1.5s ease-in-out infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@keyframes spin-reverse {
-  0% { transform: rotate(360deg); }
-  100% { transform: rotate(0deg); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.06); }
-}
-
-.state-title {
-  font-size: 38rpx;
-  font-weight: 800;
+.section-label {
+  font-size: 28rpx;
+  font-weight: 700;
   color: $text-primary;
   margin-bottom: 20rpx;
-  text-align: center;
-  letter-spacing: 0;
 }
 
-.state-sub {
+.preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+}
+
+.preview-item {
+  width: calc(25% - 12rpx);
+  @include glass-panel;
+  border-radius: $radius-md;
+  padding: 20rpx 8rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.preview-icon {
+  font-size: 36rpx;
+}
+
+.preview-name {
+  font-size: 20rpx;
+  font-weight: 600;
+  color: $text-secondary;
+  text-align: center;
+  line-height: 1.3;
+}
+
+// ===========================================================================
+// Ready card (C — no report yet)
+// ===========================================================================
+
+.ready-card {
+  position: relative;
+  z-index: 1;
+  @include glass-panel;
+  border-radius: $radius-xl;
+  padding: 52rpx 36rpx;
+  margin-top: 24rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.ready-glow {
+  position: absolute;
+  bottom: -60rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300rpx;
+  height: 200rpx;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ready-icon {
+  font-size: 64rpx;
+  margin-bottom: 20rpx;
+}
+
+.ready-title {
+  font-size: 36rpx;
+  font-weight: 800;
+  color: $text-primary;
+  margin-bottom: 10rpx;
+}
+
+.ready-sub {
   font-size: 26rpx;
   color: $text-secondary;
   text-align: center;
   line-height: 1.5;
-  margin-bottom: 8rpx;
-}
-
-.state-sub-tip {
-  font-size: 23rpx;
-  color: $text-muted;
-  text-align: center;
   margin-bottom: 32rpx;
 }
 
-.loading-bar {
-  width: 100%;
-  height: 10rpx;
-  background: $bg-input;
-  border-radius: $radius-full;
-  overflow: hidden;
-  border: 1px solid $border-light;
-}
-
-.loading-fill {
-  height: 100%;
-  background: linear-gradient(90deg, $brand-violet, $brand-primary);
-  border-radius: $radius-full;
-  animation: loading-slide 2s ease-in-out infinite;
-  width: 45%;
-}
-
-@keyframes loading-slide {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(250%); }
-}
-
-.lock-icon-outer, .success-icon-outer, .error-icon-outer {
-  position: relative;
-  width: 160rpx;
-  height: 160rpx;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 32rpx;
-}
-
-.lock-glow {
-  position: absolute;
-  width: 120rpx;
-  height: 120rpx;
-  background: rgba(249, 115, 22, 0.14);
-  border-radius: 50%;
-  filter: blur(16rpx);
-  z-index: 1;
-}
-
-.success-glow {
-  position: absolute;
-  width: 120rpx;
-  height: 120rpx;
-  background: rgba(37, 99, 235, 0.14);
-  border-radius: 50%;
-  filter: blur(16rpx);
-  z-index: 1;
-}
-
-.error-glow {
-  position: absolute;
-  width: 120rpx;
-  height: 120rpx;
-  background: rgba(239, 68, 68, 0.14);
-  border-radius: 50%;
-  filter: blur(16rpx);
-  z-index: 1;
-}
-
-.lock-icon, .success-icon, .error-icon {
-  font-size: 72rpx;
-  z-index: 2;
-}
-
-.unlock-price {
-  width: 100%;
-  background: rgba(249, 115, 22, 0.06);
-  border: 1px solid rgba(249, 115, 22, 0.15);
-  border-radius: $radius-lg;
-  padding: 32rpx 24rpx;
-  box-sizing: border-box;
-  margin: 32rpx 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: none;
-}
-
-.unlock-price-main {
-  font-size: 40rpx;
-  font-weight: 800;
-  color: #FF8F3D;
-  margin-bottom: 8rpx;
-}
-
-.unlock-price-sub {
-  font-size: 24rpx;
-  color: $text-secondary;
-}
-
-.benefits-panel {
-  width: 100%;
-  background: #F8FAFC;
-  border: 1px solid $border-light;
-  border-radius: $radius-lg;
-  padding: 32rpx;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 20rpx;
-  margin-bottom: 48rpx;
-}
-
-.benefit-item {
-  display: flex;
-  align-items: center;
-  gap: 16rpx;
-}
-
-.benefit-bullet {
-  font-size: 26rpx;
-  font-weight: 800;
-  color: $brand-primary-light;
-}
-
-.benefit-bullet.success {
-  color: #34D399;
-}
-
-.benefit-text {
-  font-size: 27rpx;
-  color: $text-primary;
-  font-weight: 500;
-}
-
-.actions-area {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20rpx;
-}
-
-.primary-action-btn {
+.ready-cta {
   width: 100%;
   height: 90rpx;
-  background: linear-gradient(135deg, #FF6B00 0%, #EA580C 100%);
+  background: linear-gradient(135deg, #f97316, #ea580c);
   color: #fff;
   font-size: 30rpx;
   font-weight: 800;
@@ -680,7 +682,6 @@ function formatTime(ts) {
   justify-content: center;
   border: none;
   box-shadow: 0 8rpx 24rpx rgba(249, 115, 22, 0.24);
-  transition: all 0.2s;
 
   &::after {
     border: none;
@@ -688,130 +689,247 @@ function formatTime(ts) {
 
   &:active {
     transform: scale(0.98);
-    box-shadow: 0 4rpx 12rpx rgba(249, 115, 22, 0.2);
   }
 }
 
-.secondary-action-btn {
+// ===========================================================================
+// Generating (loading)
+// ===========================================================================
+
+.loading-card {
+  position: relative;
+  z-index: 1;
+  @include glass-panel;
+  border-radius: $radius-xl;
+  padding: 64rpx 36rpx 48rpx;
+  margin-top: 24rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spinner-ring {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  margin-bottom: 32rpx;
+}
+
+.spinner-circle {
   width: 100%;
-  height: 90rpx;
-  background: #F8FAFC;
+  height: 100%;
+  border: 6rpx solid #e2e8f0;
+  border-top-color: $brand-violet;
+  border-right-color: $brand-primary-light;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-title {
+  font-size: 34rpx;
+  font-weight: 800;
   color: $text-primary;
-  font-size: 30rpx;
-  font-weight: 700;
-  border-radius: $radius-full;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid $border-light;
-  transition: all 0.2s;
-
-  &::after {
-    border: none;
-  }
-
-  &:active {
-    transform: scale(0.98);
-    background: #EFF6FF;
-  }
+  margin-bottom: 12rpx;
 }
 
-.success-card {
-  .primary-action-btn.success-btn {
-    background: linear-gradient(135deg, $brand-violet 0%, #4F46E5 100%);
-    box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.24);
-
-    &:active {
-      box-shadow: 0 4rpx 12rpx rgba(99, 102, 241, 0.2);
-    }
-  }
-}
-
-.state-time {
-  font-size: 24rpx;
-  color: $text-muted;
-  margin-top: 8rpx;
-}
-
-.divider {
-  width: 100%;
-  height: 1px;
-  background: $border-light;
-  margin: 32rpx 0;
-}
-
-.regenerate-text-wrap {
-  margin-top: 32rpx;
-  padding: 16rpx;
-}
-
-.regenerate-link {
-  font-size: 25rpx;
-  color: $text-muted;
-  text-decoration: underline;
-  font-weight: 500;
-
-  &:active {
-    color: $text-secondary;
-  }
-}
-
-.error-card {
-  .primary-action-btn.error-btn {
-    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
-    box-shadow: 0 8rpx 24rpx rgba(239, 68, 68, 0.3);
-
-    &:active {
-      box-shadow: 0 4rpx 12rpx rgba(239, 68, 68, 0.2);
-    }
-  }
-}
-
-.action-card {
-  .primary-action-btn {
-    background: $grad-royal;
-  }
-}
-
-.requirement-panel {
-  width: 100%;
-  margin-top: 28rpx;
-  padding: 24rpx;
-  border-radius: $radius-lg;
-  background: rgba(248, 250, 252, 0.94);
-  border: 1px solid $border-light;
-  box-sizing: border-box;
-}
-
-.requirement-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 14rpx;
-}
-
-.requirement-label {
+.loading-sub {
+  font-size: 26rpx;
   color: $text-secondary;
-  font-size: 25rpx;
+  text-align: center;
+  margin-bottom: 8rpx;
 }
 
-.requirement-value {
-  color: $text-primary;
-  font-size: 27rpx;
-  font-weight: 850;
+.loading-tip {
+  font-size: 22rpx;
+  color: $text-muted;
+  text-align: center;
+  margin-bottom: 32rpx;
 }
 
-.requirement-track {
+.loading-bar {
   width: 100%;
-  height: 14rpx;
-  border-radius: 999rpx;
-  background: rgba(226, 232, 240, 0.92);
+  height: 8rpx;
+  background: #f1f5f9;
+  border-radius: $radius-full;
   overflow: hidden;
 }
 
-.requirement-fill {
+.loading-fill {
   height: 100%;
-  border-radius: 999rpx;
-  background: linear-gradient(135deg, $brand-violet 0%, #f97316 100%);
+  width: 40%;
+  background: linear-gradient(90deg, $brand-violet, $brand-primary-light);
+  border-radius: $radius-full;
+  animation: loading-slide 2s ease-in-out infinite;
+}
+
+@keyframes loading-slide {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(280%); }
+}
+
+// ===========================================================================
+// Latest report card (C — unlocked)
+// ===========================================================================
+
+.latest-card {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  border-radius: $radius-xl;
+  padding: 44rpx 36rpx;
+  margin-top: 24rpx;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.latest-glow {
+  position: absolute;
+  top: -40rpx;
+  right: -40rpx;
+  width: 240rpx;
+  height: 240rpx;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.latest-label {
+  font-size: 22rpx;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8rpx;
+}
+
+.latest-title {
+  font-size: 34rpx;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 4rpx;
+}
+
+.latest-time {
+  font-size: 22rpx;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 28rpx;
+}
+
+.latest-actions {
+  display: flex;
+  gap: 16rpx;
+}
+
+.latest-btn {
+  flex: 1;
+  height: 76rpx;
+  border-radius: $radius-full;
+  font-size: 28rpx;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+
+  &::after {
+    border: none;
+  }
+
+  &.primary {
+    background: #fff;
+    color: #ea580c;
+  }
+
+  &.secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+
+  &:active {
+    opacity: 0.85;
+  }
+}
+
+// ===========================================================================
+// History section
+// ===========================================================================
+
+.history-section {
+  position: relative;
+  z-index: 1;
+  margin-top: 40rpx;
+}
+
+.history-card {
+  @include glass-panel;
+  border-radius: $radius-lg;
+  padding: 28rpx 24rpx;
+  margin-bottom: 16rpx;
+  display: flex;
+  align-items: center;
+  transition: transform 0.12s;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.history-icon {
+  font-size: 40rpx;
+  margin-right: 20rpx;
+}
+
+.history-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-title {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: $text-primary;
+}
+
+.history-time {
+  font-size: 22rpx;
+  color: $text-muted;
+  margin-top: 4rpx;
+}
+
+.history-arrow {
+  font-size: 36rpx;
+  color: $text-muted;
+}
+
+.regenerate-card {
+  margin-top: 16rpx;
+  border: 2rpx dashed #fb923c;
+  border-radius: $radius-lg;
+  padding: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rpx;
+  transition: background 0.15s;
+
+  &:active {
+    background: rgba(249, 115, 22, 0.06);
+  }
+}
+
+.regenerate-plus {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: $brand-primary;
+}
+
+.regenerate-text {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: $brand-primary;
 }
 </style>

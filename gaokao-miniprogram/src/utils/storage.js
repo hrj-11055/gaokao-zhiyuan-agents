@@ -252,6 +252,28 @@ export function loadQuestionnaire() {
   }
 }
 
+// ==================== 报告存储 ====================
+
+/**
+ * 保存报告数据到本地
+ * @param {object} data - { url, generatedAt, ... }
+ */
+export function saveReport(data) {
+  try { uni.setStorageSync(REPORT_KEY, JSON.stringify(data)) } catch { /* ignore */ }
+}
+
+/**
+ * 读取本地报告数据
+ * @returns {object|null}
+ */
+export function loadReport() {
+  try {
+    const raw = uni.getStorageSync(REPORT_KEY)
+    if (!raw) return null
+    return typeof raw === 'string' ? JSON.parse(raw) : raw
+  } catch { return null }
+}
+
 // ==================== 测评模块存储 ====================
 
 /**
