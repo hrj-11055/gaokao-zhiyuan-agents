@@ -13,25 +13,27 @@ class MembershipPagesTests(unittest.TestCase):
         text = self.read("gaokao-miniprogram/src/pages/profile/profile.vue")
 
         for snippet in [
-            "报告未解锁",
-            "VIP · 报告已解锁",
-            "考生信息",
-            "我的咨询记录",
-            "我的测评结果",
+            "尊享 VIP",
+            "未解锁",
+            "志愿填报 VIP",
+            "咨询记录",
+            "我的测评",
             "邀请好友",
-            "VIP 权益",
-            "邀请进度",
-            "会员邀请码",
+            "修改档案",
+            "投诉建议",
             "剩余下载次数",
             "useMembershipStore",
             "membershipStore.loadStatus",
             "onShareAppMessage",
             "inviterId=${membershipStore.userId",
+            "CUSTOMER_WECHAT_ID",
+            "复制微信号",
         ]:
             self.assertIn(snippet, text)
+        self.assertIn("HRJ-11055", self.read("gaokao-miniprogram/src/config.js"))
 
         home = self.read("gaokao-miniprogram/src/pages/index/index.vue")
-        self.assertIn("邀请 5 人免费", home)
+        self.assertIn("邀请 5 位同学免费获取", home)
         self.assertNotIn("邀请 3 人免费", home)
 
     def test_report_page_has_membership_lock_and_auth_header(self):
@@ -41,17 +43,15 @@ class MembershipPagesTests(unittest.TestCase):
         for snippet in [
             "membershipStore.loadStatus",
             "allAssessmentsDone",
-            "unlock-options",
             "onPayWithWechat",
-            "unlockTrialAndGenerate",
             "loadQuestionnaire",
             "loadAssessments",
             "loadHistory",
             "questionnaire.answers",
             "sessionToken: membershipStore.sessionToken",
             "已保留草稿",
-            "VIP 报告权益",
-            "解锁完整志愿报告",
+            "生成完整志愿报告需要 VIP",
+            "开通后可生成综合报告",
             "邀请 5 位新用户",
             "输入会员邀请码",
             "showUnlockSheet",
@@ -60,6 +60,8 @@ class MembershipPagesTests(unittest.TestCase):
             "院校深度研究报告",
             "专业研究报告",
             "剩余下载次数",
+            "onShareAppMessage",
+            "inviterId=${membershipStore.userId",
         ]:
             self.assertIn(snippet, text)
 
@@ -75,19 +77,15 @@ class MembershipPagesTests(unittest.TestCase):
         self.assertIn("通常需要 1-2 分钟", text)
         self.assertNotIn("通常需要 15-30 秒", text)
 
-    def test_report_page_exposes_trial_unlock_only_as_non_release_guarded_flow(self):
+    def test_trial_unlock_is_store_guarded_and_not_exposed_on_report_page(self):
         text = self.read("gaokao-miniprogram/src/pages/report/report.vue")
         store = self.read("gaokao-miniprogram/src/stores/membership.js")
         api = self.read("gaokao-miniprogram/src/api/membership.js")
 
-        for snippet in [
-            "体验版解锁并生成",
-            "showTrialUnlock",
-            "membershipStore.canUseTrialUnlock",
-            "activateLimitedFree",
-        ]:
-            self.assertIn(snippet, text)
-
+        self.assertNotIn("体验版解锁并生成", text)
+        self.assertNotIn("showTrialUnlock", text)
+        self.assertNotIn("membershipStore.canUseTrialUnlock", text)
+        self.assertIn("activateLimitedFree", store)
         self.assertIn("isTestMiniProgramEnv", store)
         self.assertIn("envVersion", api)
         self.assertIn("develop", api)

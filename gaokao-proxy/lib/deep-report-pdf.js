@@ -330,8 +330,16 @@ function buildDeepReportHtml({ type, report }) {
       padding-left: 20px;
     }
     .report-section {
-      page-break-before: always;
-      break-before: page;
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid #e5e7eb;
+      page-break-before: auto;
+      break-before: auto;
+    }
+    .report-section:first-of-type {
+      margin-top: 18px;
+      padding-top: 0;
+      border-top: 0;
     }
     h2, h3, h4 {
       color: #111827;

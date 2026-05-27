@@ -23,14 +23,14 @@ flowchart TD
     end
 
     subgraph AIDataLayer["智能体与数据服务层 (AI & Data Layer - Server 159)"]
-        Dify["Dify AI 智能体工作流\n(Docker Port 8080)\nDeepSeek-V3 / Gemini 模型"]
+        Dify["Dify AI 智能体工作流\n(Docker Port 8080)\nDify 后台配置模型"]
         GaokaoApi["gaokao-api 分数接口\n(Docker Port 5001->5000)"]
         Postgres["PostgreSQL 数据库\n(表: majors, universities, stats_overview)"]
     end
 
     subgraph ExternalServices["外部依赖服务 (External Services)"]
         WxPay["微信支付 JSAPI\n(官方支付下单/通知接口)"]
-        DeepSeekAPI["DeepSeek / Gemini API\n(报告直接跑批调用)"]
+        DeepSeekAPI["DeepSeek Chat Completions\n(综合报告模型: deepseek-v4-pro)"]
         WeChatAuth["微信登录授权 API\n(jscode2session)"]
     end
 
@@ -61,7 +61,7 @@ flowchart TD
    - 对接 Dify 智能体进行 SSE 流式数据管道转发，并实时**拦截、过滤并剔除 `<think>...</think>` 思维链**，保证极佳的用户阅读体验。
    - 实现用户测评档案收集与完整性强校验（当前 21 道有效问卷题 + MBTI + Holland），利用 Puppeteer 懒加载生成 PDF，并冷却频繁请求。
    - 直接读取 PostgreSQL 中的结构化专业/院校三级深度评估数据，对免费用户脱敏脱密，对付费用户完整呈现。
-3. **Dify 引擎 (Dify Engine)**：运行于 `159.75.110.157`，提供流式 RAG 问答及专业逻辑工作流，集成 DeepSeek 和 Gemini 语言模型，保障高考咨询政策的权威解答。
+3. **Dify 引擎 (Dify Engine)**：运行于 `159.75.110.157`，提供流式 RAG 问答及专业逻辑工作流。Dify 的具体对话模型以 Dify 后台配置为准；综合报告不走 Dify 模型，而是由 47 上的 `gaokao-proxy` 直连 DeepSeek Chat Completions，目标模型为 `deepseek-v4-pro`。
 4. **数据引擎 (gaokao-api & Postgres)**：PostgreSQL 内含高价值数据表 `majors`（专业评估数据）、`universities`（院校评估数据）和 `stats_overview`（全盘评估数据统计）。`gaokao-api` 在 Dify 后端容器中运行，提供分数线与录取规则支持。
 
 ---
@@ -430,7 +430,7 @@ python3 data/upload_to_dify.py
       "order": {
         "orderId": "ORD20260520140228392",
         "userId": "usr_789abcde123456",
-        "priceCents": 2900,
+        "priceCents": 1990,
         "status": "paid",
         "prepayId": "wx2014022839281203ef9281a0e100329031",
         "transactionId": "4200000109202605203928120389",
@@ -536,20 +536,6 @@ python3 data/upload_to_dify.py
       "status": "ok"
     }
     ```
-
-#### ④ 语音合成 TTS 接口
-*   **请求路由**：`POST /api/tts`
-*   **请求 Body**：
-    ```json
-    {
-      "text": "高考志愿填报首选计算机专业，你需要特别注意两个盲区..."
-    }
-    ```
-*   **成功响应 (200 OK)**：
-    *   `Content-Type: audio/mpeg`
-    *   返回音频二进制 MP3 文件流。
-
----
 
 ### 3.4 测评数据查询与报告生成接口 (Evaluation & Report Generation)
 
@@ -720,7 +706,7 @@ python3 data/upload_to_dify.py
     {
       "error": "请先解锁深度填报会员以开启个性化报告生成功能",
       "code": "MEMBERSHIP_REQUIRED",
-      "priceCents": 2900,
+      "priceCents": 1990,
       "invite": {
         "code": "usr_789abcde123456",
         "count": 1,
@@ -741,9 +727,8 @@ python3 data/upload_to_dify.py
 
 #### ① 生成在线阅读短链
 *   **请求路由**：`POST /api/reports/deep/view-token`
-*   **请求说明**：会员在小程序中换取 10 分钟有效的在线 HTML 阅读链接。在线阅读不消耗 PDF 下载额度；PDF 下载才消耗额度。
+*   **请求说明**：小程序可免费换取 10 分钟有效的在线 HTML 阅读链接。在线阅读不消耗 PDF 下载额度；PDF 下载才需要会员并消耗额度。
 *   **请求 Header**：
-    *   `Authorization: Bearer <sessionToken> (必需)`
     *   `Content-Type: application/json`
 *   **请求 Body 参数**：
     ```json
@@ -774,7 +759,7 @@ python3 data/upload_to_dify.py
     {
       "error": "请先解锁深度填报会员以下载深度研究报告",
       "code": "MEMBERSHIP_REQUIRED",
-      "priceCents": 2900,
+      "priceCents": 1990,
       "invite": {
         "code": "usr_789abcde123456",
         "count": 1,

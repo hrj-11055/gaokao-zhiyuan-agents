@@ -3,6 +3,7 @@
 > 排期：Week 4-5（05/07 - 05/16）
 > 前置依赖：Phase 3.2 多轮对话优化、Phase 3.3 安全护栏
 > 阻塞任务：Phase 5.1 使用统计、Phase 5.2 省份扩展
+> 状态：历史路线图。当前线上 API 入口、HTTPS、会员/PDF 事实以 `docs/deployment/current-live-chain.md` 为准。
 
 ---
 
@@ -11,7 +12,7 @@
 ### 架构
 
 ```
-微信小程序 → gaokao-proxy（http://47.113.125.147）→ Dify API（http://159.75.110.157）
+微信小程序 → gaokao-proxy（https://gaokao.aicoming.cn）→ Dify API（http://159.75.110.157）
 ```
 
 ### 技术选型
@@ -20,7 +21,7 @@
 |----|------|------|
 | 前端 | 微信小程序原生 / UniApp | 推荐 UniApp，方便后续扩展到 H5 |
 | 后端 | Dify API 直连 | 小程序直接调用 Dify Chat API |
-| 部署 | Dify 服务器 159.75.110.157；gaokao-proxy 服务器 47.113.125.147 | 当前线上拆分部署 |
+| 部署 | 小程序入口 `https://gaokao.aicoming.cn`；gaokao-proxy 服务器 47.113.125.147；Dify/gaokao-api 服务器 159.75.110.157 | 当前线上拆分部署 |
 
 ### 小程序核心页面
 
@@ -33,7 +34,7 @@
 ```javascript
 // 小程序中调用 Dify Chat API
 const response = await wx.request({
-  url: 'http://47.113.125.147/api/chat/stream',
+  url: 'https://gaokao.aicoming.cn/api/chat/stream',
   method: 'POST',
   header: {
     'Authorization': 'Bearer app-xxx',
@@ -51,7 +52,7 @@ const response = await wx.request({
 
 ### 关键注意点
 
-1. **域名备案**：小程序要求后端域名已备案。当前小程序后端入口是 `47.113.125.147` 的 `gaokao-proxy`，需要：
+1. **域名备案**：小程序要求后端域名已备案。当前小程序后端入口是 `https://gaokao.aicoming.cn` 的 `gaokao-proxy`，需要：
    - 绑定已备案域名
    - 在小程序后台配置合法域名
    - 或使用微信云开发做中转

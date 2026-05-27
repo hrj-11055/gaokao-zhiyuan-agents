@@ -71,7 +71,7 @@ function createCommerceStore({
   now = () => Date.now(),
   idFactory = defaultIdFactory,
   inviteRequired = Number(process.env.MEMBERSHIP_INVITE_REQUIRED || 5),
-  priceCents = Number(process.env.MEMBERSHIP_PRICE_CENTS || 2900),
+  priceCents = Number(process.env.MEMBERSHIP_PRICE_CENTS || 1990),
   deepReportDownloadLimit = Number(process.env.MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT || 10),
   vipCodes = process.env.MEMBERSHIP_VIP_CODES || '',
   paymentOrderTtlMs = Number(process.env.PAYMENT_ORDER_TTL_MS || 30 * 60 * 1000),

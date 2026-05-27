@@ -33,12 +33,10 @@ class ReportQualityImprovementTests(unittest.TestCase):
         for snippet in [
             "家长先看结论",
             "志愿执行清单",
-            "每条建议必须包含：动作、原因、核验材料",
-            "综合报告正文总字数不少于 4500 字",
-            "每个 Tab 至少 650 字",
-            "字体可以适当小一些",
+            "每条建议必须包含动作、原因、核验材料",
+            "家长核验动作",
             "不要使用“AI 总评”",
-            "少用空泛形容词",
+            "顾问结论",
         ]:
             self.assertIn(snippet, prompt)
 
@@ -87,7 +85,8 @@ class ReportQualityImprovementTests(unittest.TestCase):
         server = self.read("gaokao-proxy/server.js")
 
         for snippet in [
-            "gaokao-report-cjk-font-fix",
+            "pdf-print-report",
+            "@media print",
             "Noto Sans CJK SC",
             "WenQuanYi Micro Hei",
         ]:
@@ -108,7 +107,7 @@ class ReportQualityImprovementTests(unittest.TestCase):
         builder = self.read("gaokao-proxy/lib/report-builder.js")
 
         self.assertIn("REPORT_GENERATION_TIMEOUT_MS", builder)
-        self.assertIn("REPORT_GENERATION_TIMEOUT_MS || 170000", builder)
+        self.assertIn("REPORT_GENERATION_TIMEOUT_MS || 600000", builder)
 
     def test_miniprogram_deep_report_cards_expose_actionable_summary(self):
         page = self.read("gaokao-miniprogram/src/pages/deep-report-download/deep-report-download.vue")

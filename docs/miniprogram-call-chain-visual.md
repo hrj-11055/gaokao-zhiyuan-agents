@@ -2,7 +2,7 @@
 
 > 适用范围：`gaokao-miniprogram`、`gaokao-proxy`、Dify、分数线 API、报告 PostgreSQL/SQLite 数据。
 > 核心结论：小程序不直接访问 Dify 和数据库；所有业务请求先进入后端网关，再由网关决定转发 Dify、查 PostgreSQL/SQLite、调用微信服务、调用 DeepSeek 或读取静态报告。
-> 本次公开接口校验：`http://47.113.125.147/api/health` 返回 `{"status":"ok"}`；`http://159.75.110.157/v1` 返回 Dify `X-Version: 1.13.3`、`X-Env: PRODUCTION`。未在本次重新 SSH 检查 PM2/Nginx/容器内部端口。
+> 本次公开接口校验：`https://gaokao.aicoming.cn/api/health` 返回 `{"status":"ok"}`；公开综合报告 PDF 返回 `application/pdf`；会员 token 下深度 PDF 返回 `application/pdf`；`http://159.75.110.157/v1` 返回 Dify `X-Version: 1.13.3`、`X-Env: PRODUCTION`。
 
 ## 1. 当前线上拓扑
 
@@ -17,8 +17,7 @@ flowchart LR
   end
 
   subgraph Entry["后端入口"]
-    Http["HTTP 直连\nAPI_BASE=http://47.113.125.147"]
-    Cloud["微信云托管可选入口\nwx.cloud.callContainer"]
+    Http["HTTPS 直连\nAPI_BASE=https://gaokao.aicoming.cn"]
   end
 
   subgraph Proxy47["47.113.125.147 / gaokao-proxy"]
@@ -30,7 +29,6 @@ flowchart LR
     ReportGen["报告生成\n/api/report/generate"]
     ReportQuery["报告库查询\n/api/reports/*"]
     StaticReports["静态 HTML/PDF\n/reports/*.html|pdf"]
-    TTS["TTS\n/api/tts"]
   end
 
   subgraph Server159["159.75.110.157"]
@@ -44,7 +42,6 @@ flowchart LR
     WechatAuth["微信 jscode2session"]
     WechatPay["微信支付 JSAPI/回调"]
     DeepSeek["DeepSeek Chat Completions\n综合报告生成"]
-    VolcTTS["火山/外部 TTS 服务"]
   end
 
   Profile --> Http
@@ -52,12 +49,8 @@ flowchart LR
   Assess --> Report
   Report --> Http
   Member --> Http
-  Profile -.->|可选| Cloud
-  Chat -.->|云托管启用时阻塞模式| Cloud
-  Report -.->|可选| Cloud
 
   Http --> Nginx --> Express
-  Cloud --> Express
 
   Express --> Auth --> WechatAuth
   Express --> Commerce
@@ -68,7 +61,6 @@ flowchart LR
   ReportGen --> Dify
   ReportGen --> DeepSeek
   ReportGen --> StaticReports
-  Express --> TTS --> VolcTTS
   Express --> WechatPay
   Dify --> GaokaoApi
   Dify --> DifyStack
@@ -78,20 +70,17 @@ flowchart LR
 
 | 前端文件 | 作用 | 后端入口 |
 |---|---|---|
-| `gaokao-miniprogram/src/config.js` | 定义 `API_BASE`、微信云托管环境、服务名 | 默认 `http://47.113.125.147` |
-| `gaokao-miniprogram/src/api/backend.js` | 统一请求封装，决定走 HTTP 还是 `wx.cloud.callContainer` | `requestBackend()` / `requestBackendData()` |
-| `gaokao-miniprogram/src/api/dify.js` | 聊天、SSE、反馈、TTS | `/api/chat/stream`、`/api/chat`、`/api/chat/feedback`、`/api/tts` |
+| `gaokao-miniprogram/src/config.js` | 定义 `API_BASE` 和上线能力开关 | 默认 `https://gaokao.aicoming.cn` |
+| `gaokao-miniprogram/src/api/backend.js` | 统一请求封装，所有业务请求走 HTTPS API | `requestBackend()` / `requestBackendData()` |
+| `gaokao-miniprogram/src/api/dify.js` | 聊天、SSE、反馈 | `/api/chat/stream`、`/api/chat`、`/api/chat/feedback` |
 | `gaokao-miniprogram/src/api/membership.js` | 微信登录、会员、档案、支付 | `/api/auth/wechat-login`、`/api/profile`、`/api/payment/*` |
 | `gaokao-miniprogram/src/pages/report/report.vue` | 综合报告生成 | `/api/report/generate` |
 
 ```mermaid
 flowchart TD
   UI["Vue 页面 / Pinia Store"] --> Backend["api/backend.js\nrequestBackend"]
-  Backend --> Decision{"微信云托管可用?"}
-  Decision -->|"是"| Container["wx.cloud.callContainer\npath 原样透传"]
-  Decision -->|"否"| Http["uni.request\nurl = API_BASE + path"]
-  Container --> Proxy["gaokao-proxy"]
-  Http --> Proxy
+  Backend --> Http["uni.request\nurl = API_BASE + path"]
+  Http --> Proxy["47 gaokao-proxy"]
 ```
 
 ## 3. 小程序核心业务链路
@@ -396,24 +385,28 @@ erDiagram
 | 登录 | `POST /api/auth/wechat-login` | code 换 openid，签 sessionToken | 微信登录、SQLite | `userId/sessionToken/membership` |
 | 档案保存 | `POST /api/profile` | 校验并保存 profile | SQLite | `profile/membership` |
 | 会员状态 | `GET /api/membership/status` | token 校验，读会员状态 | SQLite | `status/features/invite` |
+| 会员邀请码 | `POST /api/membership/redeem-code` | 优先校验 SQLite `vip_invite_codes`，兼容少量 `MEMBERSHIP_VIP_CODES` 环境变量码，激活会员 | SQLite | `membership` |
+| 限时免费 | `POST /api/membership/limited-free-unlock` | 按 `LIMITED_FREE_UNLOCK_ENABLED` 控制一键解锁 | SQLite | `membership` |
 | 支付下单 | `POST /api/payment/create` | 创建订单，发起 JSAPI | SQLite、微信支付 | `orderId/payment` |
 | 支付回调 | `POST /api/payment/wechat/notify` | 验签/解密/激活会员 | 微信支付、SQLite | `{ code: "SUCCESS" }` |
 | AI 阻塞问答 | `POST /api/chat` | 限流、合并档案、转发 Dify、去 `<think>` | Dify | 完整 answer |
 | AI 流式问答 | `POST /api/chat/stream` | SSE 转发、流式去 `<think>` | Dify | SSE answer chunks |
 | 对话反馈 | `POST /api/chat/feedback` | 写入 JSONL 日志 | 文件系统 | `{ status: "ok" }` |
-| TTS | `POST /api/tts` | 截断文本并合成音频 | TTS 服务 | MP3 二进制 |
 | 报告生成 | `POST /api/report/generate` | 会员/测评/冷却校验，聚合资料，生成 HTML | SQLite、PostgreSQL、gaokao-api、Dify、DeepSeek | `{ url }` |
 | 静态报告 | `GET /reports/:filename` | 返回 HTML；PDF 不存在时懒生成 | 文件系统、PDF 生成器 | HTML/PDF |
 | 报告查询 | `GET /api/reports/*` | 查询 majors/universities/stats | PostgreSQL | 报告 JSON |
+| 专业组合洞察 | `GET /api/reports/major-insights` | 按专业名称聚合结构化信息 | PostgreSQL | `data[]` |
+| 深度在线阅读 | `POST /api/reports/deep/view-token` -> `GET /reports/deep/view/:token` | 免费生成短期签名链接并渲染 HTML 阅读器 | PostgreSQL、HTML 渲染器 | 可搜索 HTML |
+| 深度 PDF | `GET /api/reports/deep/pdf` | 会员/额度校验，生成学校或专业 PDF | SQLite、PostgreSQL、PDF 生成器 | `application/pdf` |
 
 ## 6. 关键运行时事实与注意点
 
-1. 当前小程序公网 API 基准地址应是 `http://47.113.125.147`，不是 `159.75.110.157`。
+1. 当前小程序公网 API 基准地址应是 `https://gaokao.aicoming.cn`，不是 `159.75.110.157`，也不是旧的 `http://47.113.125.147`。
 2. `159.75.110.157` 是 Dify、Dify 依赖栈、`gaokao-api` 与报告 PostgreSQL 数据的核心服务器。
-3. `8.135.37.159` 只作为历史旧服务器，不应再作为当前 Dify、代理或报告地址。
-4. 47 的 `gaokao-proxy` 会把 `/api/chat` 和 `/api/chat/stream` 转发到 `${DIFY_API_URL}/v1/chat-messages`；因此 `DIFY_API_URL` 不应重复带 `/v1`。
-5. 报告生成依赖多段链路：会员状态、测评完整性、PostgreSQL、分数 API、Dify 历史消息、DeepSeek。排障时应先判断失败发生在哪一段。
-6. 分数 API 的 live 网络暴露曾经存在端口疑点：159 内部健康检查是 `127.0.0.1:5001/api/health`，但 47 到 159 的 `SCORE_API_URL` 需要按当前部署再次实测。
+3. 47 的 `gaokao-proxy` 会把 `/api/chat` 和 `/api/chat/stream` 转发到 `${DIFY_API_URL}/v1/chat-messages`；因此 `DIFY_API_URL` 不应重复带 `/v1`。
+4. 报告生成依赖多段链路：会员状态、测评完整性、PostgreSQL、分数 API、Dify 历史消息、DeepSeek。排障时应先判断失败发生在哪一段。
+5. 深度报告在线阅读用短期签名链接，不消耗 PDF 下载额度；PDF 下载仍消耗 `MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT`。
+6. 分数 API 的 live 入口是 159 Nginx 反代 `http://159.75.110.157/score-api`；直接公开访问 `:5000` 或 `:5001` 失败时，不等于 47 到分数 API 链路失败。
 
 ## 7. 排障入口图
 

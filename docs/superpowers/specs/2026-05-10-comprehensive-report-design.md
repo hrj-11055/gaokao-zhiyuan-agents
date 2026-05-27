@@ -1,6 +1,7 @@
 # 综合志愿报告生成功能设计
 
 > 日期：2026-05-10 | 状态：已确认
+> 当前实现提示：这是设计快照。当前线上入口、会员门槛、PDF 和分数 API 事实以 `docs/deployment/current-live-chain.md` 为准；综合报告已改为会员态生成，公开 URL 使用 `https://gaokao.aicoming.cn/reports/<file>.html`。
 
 ## 概述
 
@@ -114,7 +115,7 @@ Gemini Flash API
    - 读取对应文件内容作为上下文
 4. 拼接 prompt（profile + 问卷 + 对话摘要 + 专业/院校报告原文），调 Gemini Flash API
 5. 把响应 HTML 写入 `/var/www/reports/{userId}-{timestamp}.html`
-6. 返回 `{ "url": "http://47.113.125.147/reports/{filename}" }`
+6. 返回 `{ "url": "https://gaokao.aicoming.cn/reports/{filename}" }`
 
 **超时：** 120s（含文件读取 + Gemini 生成，上下文较长）
 
@@ -130,7 +131,7 @@ Gemini Flash API
 
 **Response：**
 ```json
-{ "url": "http://47.113.125.147/reports/user_xxx-1715000000.html" }
+{ "url": "https://gaokao.aicoming.cn/reports/user_xxx-1715000000.html" }
 ```
 
 **proxy `.env` 新增变量：**
@@ -138,7 +139,7 @@ Gemini Flash API
 - `REPORTS_DIR` — 生成报告存放目录（默认 `/var/www/reports`）
 - `MAJOR_REPORTS_DIR` — 专业评估报告目录（默认 `/opt/gaokao-data/专业评估报告`）
 - `UNIV_REPORTS_DIR` — 院校评估报告目录（默认 `/opt/gaokao-data/大学评估报告`）
-- `SCORE_API_URL` — Flask 分数推荐 API 地址（默认 `http://159.75.110.157:5000`）
+- `SCORE_API_URL` — Flask 分数推荐 API 地址（当前 `http://159.75.110.157/score-api`）
 
 ### Nginx 配置（`/reports/` 静态托管，添加到 proxy 服务器 nginx 配置）
 ```nginx

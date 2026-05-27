@@ -11,7 +11,7 @@
 - 数据导入：当前需要放进去的数据已完成导入。
 - PDF 下载：公开综合 PDF 和会员态深度 PDF 已处理并验证过。
 - 微信支付开发：已打通，1 元测试支付已真机成功。
-- 当前待处理：邀请码生成/核销、支付异常与回调兜底、正式 29 元复测、支付后报告/PDF 全链路补测。
+- 当前待处理：邀请码生成/核销、支付异常与回调兜底、正式 19.9 元复测、支付后报告/PDF 全链路补测。
 
 ## 任务 1：邀请码生成与核销工具
 
@@ -100,24 +100,24 @@
 - 把 47 服务器 `/opt/gaokao-proxy/.env` 改回：
 
 ```bash
-MEMBERSHIP_PRICE_CENTS=2900
+MEMBERSHIP_PRICE_CENTS=1990
 LIMITED_FREE_UNLOCK_ENABLED=false
 ```
 
 - 把小程序 `.env` 改回：
 
 ```bash
-VITE_MEMBERSHIP_PRICE_LABEL=¥29
+VITE_MEMBERSHIP_PRICE_LABEL=¥19.9
 VITE_PAYMENT_ENABLED=true
 ```
 
 - 重新构建并上传体验版。
-- 使用新测试账号完成 29 元真实支付。
+- 使用新测试账号完成 19.9 元真实支付。
 
 ### 验收标准
 
-- 微信收银台显示 29 元。
-- 线上最近一笔订单 `amount_cents=2900`，`status=paid`。
+- 微信收银台显示 19.9 元。
+- 线上最近一笔订单 `amount_cents=1990`，`status=paid`。
 - 对应会员 `status=active`，`source=payment`。
 - 小程序不再出现 `¥1 测试价`。
 
@@ -139,7 +139,7 @@ git commit -m "fix(payment): harden payment callbacks and vip code operations"
 
 ### 验收标准
 
-- 文档中明确区分“1 元测试已过”和“29 元正式复测是否已过”。
+- 文档中明确区分“1 元测试已过”和“19.9 元正式复测是否已过”。
 - 不提交 `.env`、证书、私钥、真实密钥。
 - `git status` 中没有误加入的敏感文件。
 

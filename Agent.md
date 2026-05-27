@@ -9,3 +9,6 @@ Current live-service source of truth:
 - Archived old migration docs: `docs/archive/2026-05-stale-migration/`
 - Current chain doc: `docs/deployment/current-live-chain.md`
 
+## WeChat Mini Program Development Rule
+- **Dev Mode (`npm run dev:mp-weixin`)**: ALWAYS use this mode for coding, UI iteration, and active development. It enables hot reloading (real-time frontend changes) and Source Map debugging.
+- **Build Mode (`npm run build:mp-weixin`)**: ONLY use this for final production builds, uploading to WeChat, or release testing. It lacks file-watching and hot-reload.

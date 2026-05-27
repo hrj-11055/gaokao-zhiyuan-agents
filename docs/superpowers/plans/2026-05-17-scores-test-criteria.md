@@ -1,5 +1,7 @@
 # 录取分数线数据架构 - 测试评估指标
 
+> 当前实现提示：这是分数线测试规划快照。当前 live 测试入口是 `http://159.75.110.157/score-api`，不要使用公开 `:5000` 或 `:5001` 判断 47 到分数 API 的健康状态。
+
 ## 一、验收标准概览
 
 | 模块 | 指标 | 目标值 | 测试方法 |
@@ -181,7 +183,7 @@ brew install wrk
 
 # 测试分数匹配接口
 wrk -t4 -c100 -d30s --latency \
-  "http://159.75.110.157:5000/api/scores/match?province=广东&score=600&category=物理类"
+  "http://159.75.110.157/score-api/api/scores/match?province=广东&score=600&category=物理类"
 
 # 验收标准:
 # Latency avg < 200ms

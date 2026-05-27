@@ -65,11 +65,13 @@ class QuestionnaireFlowTests(unittest.TestCase):
         self.assertIn("const firstUnansweredIndex = getFirstUnansweredIndex()", text)
         self.assertIn("currentIndex.value = firstUnansweredIndex", text)
 
-    def test_finish_returns_to_assessments_tab_without_confirmation_modal(self):
+    def test_finish_stays_on_questionnaire_page_without_confirmation_modal(self):
         text = self.read("gaokao-miniprogram/src/pages/questionnaire/questionnaire.vue")
 
         self.assertNotIn("uni.showModal", text)
-        self.assertIn("uni.switchTab({ url: '/pages/assessments/assessments' })", text)
+        self.assertIn("title: '问卷完成，开始性格测试！'", text)
+        self.assertIn("title: '全部测评已完成！'", text)
+        self.assertNotIn("uni.switchTab({ url: '/pages/assessments/assessments' })", text)
 
     def test_questionnaire_next_requires_current_answer(self):
         text = self.read("gaokao-miniprogram/src/pages/questionnaire/questionnaire.vue")
@@ -117,11 +119,11 @@ class QuestionnaireFlowTests(unittest.TestCase):
             ],
             "gaokao-miniprogram/src/pages/index/index.vue": [
                 "QUESTIONNAIRE_REQUIRED_COUNT",
-                "`已答 ${questionnaire.completedCount} / ${QUESTIONNAIRE_REQUIRED_COUNT} 题`",
+                "`已答 ${questionnaire.completedCount} / ${QUESTIONNAIRE_REQUIRED_COUNT}`",
             ],
             "gaokao-miniprogram/src/pages/profile/profile.vue": [
                 "QUESTIONNAIRE_REQUIRED_COUNT",
-                "`已记录 ${questionnaire.value.completedCount} / ${QUESTIONNAIRE_REQUIRED_COUNT} 题`",
+                "questionnaire.value.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT",
             ],
             "gaokao-miniprogram/src/pages/assessments/assessments.vue": [
                 "QUESTIONNAIRE_REQUIRED_COUNT",

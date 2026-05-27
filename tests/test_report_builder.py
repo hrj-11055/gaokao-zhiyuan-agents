@@ -18,7 +18,11 @@ class ReportBuilderTests(unittest.TestCase):
             test_path.write_text(
                 textwrap.dedent(f"""
                     const assert = require('node:assert/strict')
-                    const {{ normalizeReportHtml, extractHtmlDocument }} = require('{ROOT / "gaokao-proxy" / "lib" / "report-builder.js"}')
+                    const {{
+                      buildFinalHtml,
+                      humanizeReportCopy,
+                      normalizeReportHtml,
+                    }} = require('{ROOT / "gaokao-proxy" / "lib" / "report-builder.js"}')
 
                     {test_body}
                 """),
@@ -27,59 +31,59 @@ class ReportBuilderTests(unittest.TestCase):
 
             subprocess.run(["node", str(test_path)], check=True, text=True, capture_output=True)
 
-    def test_extracts_html_from_markdown_fence_and_drops_intro(self):
+    def test_build_final_html_contains_static_print_report(self):
         self.run_node_test(r"""
-            const raw = '以下是报告。\n```html\n<!DOCTYPE html>\n<html><head><title>x</title></head><body>ok</body></html>\n```'
-            const html = extractHtmlDocument(raw)
+            const content = JSON.stringify({
+              conclusions: ['先稳层次，再看专业适配。'],
+              modules: [
+                {
+                  id: 'tab1',
+                  title: '总览',
+                  summary: '摘要',
+                  blocks: [{ type: 'text', title: '判断', content: '正文内容' }]
+                },
+                {
+                  id: 'tab2',
+                  title: '测评画像',
+                  blocks: [{ type: 'list', title: '方向', items: ['计算机类', '电子信息类'] }]
+                }
+              ]
+            })
+            const html = buildFinalHtml(content, { province: '广东', category: '物理类', score: 600 }, {
+              holland: { scores: { R: 20, I: 30, A: 10, S: 25, E: 15, C: 22 } }
+            })
 
-            assert.equal(html.startsWith('<!DOCTYPE html>'), true)
-            assert.equal(html.includes('以下是报告'), false)
-            assert.equal(html.includes('```'), false)
+            assert.equal(html.includes('class="pdf-print-report"'), true)
+            assert.equal(html.includes('@media print'), true)
+            assert.equal(html.includes('家长先看结论'), true)
+            assert.equal(html.includes('先稳层次，再看专业适配。'), true)
+            assert.equal(html.includes('测评画像'), true)
+            assert.equal(html.includes('霍兰德职业兴趣图谱'), true)
         """)
 
-    def test_normalize_injects_viewport_and_mobile_patch(self):
+    def test_normalize_and_humanize_report_copy_remove_ai_flavored_labels(self):
         self.run_node_test(r"""
-            const raw = '<html><head><title>x</title></head><body><div class="grid-2">ok</div></body></html>'
+            const raw = '<h2>AI 总评</h2><p>作为AI，我建议先了解更多信息。</p><p>大模型认为需要谨慎。</p>'
             const html = normalizeReportHtml(raw)
+            const copy = humanizeReportCopy(raw)
 
-            assert.equal(html.includes('name="viewport"'), true)
-            assert.equal(html.includes('gaokao-report-responsive-fix'), true)
-            assert.equal(html.includes('@media (max-width: 640px)'), true)
-        """)
-
-    def test_normalize_adds_print_layout_and_removes_ai_flavored_labels(self):
-        self.run_node_test(r"""
-            const raw = '<html><head><title>x</title></head><body><h2>AI 总评</h2><p>作为AI，我建议先了解更多信息。</p><div class="highlight">重点</div></body></html>'
-            const html = normalizeReportHtml(raw)
-
-            assert.equal(html.includes('gaokao-report-print-fix'), true)
-            assert.equal(html.includes('@page'), true)
-            assert.equal(html.includes('page-break'), true)
-            assert.equal(html.includes('font-size: 11pt'), true)
-            assert.equal(html.includes('font-size: 14px !important'), true)
             assert.equal(html.includes('AI 总评'), false)
             assert.equal(html.includes('作为AI'), false)
-            assert.equal(html.includes('顾问结论'), true)
+            assert.equal(html.includes('大模型认为'), false)
+            assert.equal(copy.includes('顾问结论'), true)
+            assert.equal(copy.includes('建议判断'), true)
         """)
 
-    def test_pdf_print_layout_expands_all_tabbed_report_sections(self):
-        self.run_node_test(r"""
-            const raw = '<html><head><title>x</title><style>.tab-pane{display:none}.tab-pane.active{display:block}</style></head><body><div id="tab1" class="tab-pane active">自我评估</div><div id="tab2" class="tab-pane">个人特质</div><div id="tab6" class="tab-content">综合决策</div></body></html>'
-            const html = normalizeReportHtml(raw)
-
-            assert.equal(html.includes('.tab-pane,'), true)
-            assert.equal(html.includes('.tab-content,'), true)
-            assert.equal(html.includes('display: block !important;'), true)
-            assert.equal(html.includes('break-before: page;'), true)
-        """)
-
-    def test_pdf_generator_runtime_style_expands_legacy_tabbed_reports(self):
+    def test_pdf_generator_runtime_style_uses_print_layout_v4(self):
         text = self.read("gaokao-proxy/lib/pdf-generator.js")
 
-        self.assertIn("const PDF_GENERATOR_VERSION = 'tab-print-v3'", text)
+        self.assertIn("const PDF_GENERATOR_VERSION = 'print-layout-v4'", text)
+        self.assertIn("await page.emulateMediaType('print')", text)
+        self.assertIn("preferCSSPageSize: true", text)
         self.assertIn(".tab-pane,", text)
         self.assertIn(".tab-content,", text)
         self.assertIn("display: block !important;", text)
+        self.assertIn("#app [style*=\"display: none\"]", text)
 
 
 if __name__ == "__main__":

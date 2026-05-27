@@ -1,6 +1,6 @@
 # Current Live Service Chain
 
-> Last verified: 2026-05-26
+> Last verified: 2026-05-28
 > Purpose: this is the source of truth for current live routing. Use this before older migration, roadmap, or prompt documents.
 
 ## Server Roles
@@ -60,7 +60,7 @@ Available public routes:
 - `GET https://gaokao.aicoming.cn/reports/<file>.pdf`
 - `GET https://gaokao.aicoming.cn/api/reports/health`
 - `GET https://gaokao.aicoming.cn/api/reports/major-insights?names=<major1,major2>`
-- `POST https://gaokao.aicoming.cn/api/reports/deep/view-token` with an active member session token; returns a short-lived online reader URL
+- `POST https://gaokao.aicoming.cn/api/reports/deep/view-token` returns a short-lived online reader URL without requiring membership
 - `GET https://gaokao.aicoming.cn/reports/deep/view/<signed-token>` returns the rendered HTML reader while the token is valid
 - `GET https://gaokao.aicoming.cn/api/reports/deep/pdf?type=major&id=<code>` with an active member session token
 
@@ -86,10 +86,11 @@ Important score API note: `gaokao-api` is exposed inside 159 as `0.0.0.0:5001->5
 Current membership defaults in code and docs:
 
 ```bash
-MEMBERSHIP_PRICE_CENTS=2900
+MEMBERSHIP_PRICE_CENTS=1990
 MEMBERSHIP_INVITE_REQUIRED=5
 MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT=10
 MEMBERSHIP_VIP_CODES=<comma-separated launch/test codes>
+DEEPSEEK_MODEL=deepseek-v4-pro
 DEEP_REPORT_VIEW_TOKEN_TTL_MS=600000
 VITE_PDF_DOWNLOAD_ENABLED=true
 ```
@@ -97,7 +98,8 @@ VITE_PDF_DOWNLOAD_ENABLED=true
 Payment test note:
 
 - 2026-05-26: 1 yuan WeChat Pay smoke test succeeded on 47 with temporary `MEMBERSHIP_PRICE_CENTS=100`; the paid order became `status=paid` and membership became `source=payment`.
-- Before release, restore `MEMBERSHIP_PRICE_CENTS=2900`, set the mini-program price label back to `¥29`, rebuild/upload the mini program, and re-run one 29 yuan payment smoke test.
+- Before release, restore `MEMBERSHIP_PRICE_CENTS=1990`, set the mini-program price label to `¥19.9`, rebuild/upload the mini program, and re-run one 19.9 yuan payment smoke test.
+- 2026-05-28 SSH check: 47 `/opt/gaokao-proxy/.env` still showed `MEMBERSHIP_PRICE_CENTS=100` and `DEEPSEEK_MODEL=deepseek-chat`. Treat this as a release blocker until the server env is updated and PM2 is restarted.
 
 ### 159 Dify
 
@@ -190,10 +192,10 @@ Online deep report reading is separate from PDF download:
 
 ```bash
 POST https://gaokao.aicoming.cn/api/reports/deep/view-token
-# with active member Bearer token: {"url":"https://gaokao.aicoming.cn/reports/deep/view/<signed-token>","expiresIn":600}
+# no membership required: {"url":"https://gaokao.aicoming.cn/reports/deep/view/<signed-token>","expiresIn":600}
 ```
 
-The reader URL renders a searchable HTML report and does not consume `MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT`. PDF download remains the offline/export action and consumes one quota.
+The reader URL renders a searchable HTML report for free and does not consume `MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT`. PDF download remains the offline/export action and consumes one quota.
 
 Mini-program builds that should expose PDF download need:
 

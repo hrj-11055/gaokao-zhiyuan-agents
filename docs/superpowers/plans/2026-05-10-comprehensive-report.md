@@ -1,6 +1,7 @@
 # Comprehensive Report Generation Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> Current implementation note: this is a historical execution plan. The live implementation now uses `https://gaokao.aicoming.cn`, member-gated report generation, PostgreSQL report data, DeepSeek report generation, and `SCORE_API_URL=http://159.75.110.157/score-api`. Use `docs/deployment/current-live-chain.md` before following any host or env value in this file.
 
 **Goal:** 新增综合志愿报告生成功能：用户填写五环问卷（22 题）+ AI 对话记录作为数据源，调 Gemini Flash 生成个人化 HTML 报告，托管为可分享链接。
 
@@ -932,7 +933,7 @@ const UNIV_REPORTS_DIR = process.env.UNIV_REPORTS_DIR ||
   path.join(__dirname, '../../data/大学评估报告')
 const REPORTS_DIR = process.env.REPORTS_DIR ||
   path.join(__dirname, '../reports')
-const SCORE_API_URL = process.env.SCORE_API_URL || 'http://159.75.110.157:5000'
+const SCORE_API_URL = process.env.SCORE_API_URL || 'http://159.75.110.157/score-api'
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.0-flash'
 
 // 兴趣领域 → 专业门类代码前缀
@@ -1226,11 +1227,11 @@ git commit -m "feat: add /api/report/generate endpoint and /reports static servi
 # Report generation (Gemini)
 # GEMINI_API_KEY=your-gemini-api-key
 # GEMINI_MODEL=gemini-2.0-flash
-# REPORT_BASE_URL=http://47.113.125.147:3001
+# REPORT_BASE_URL=https://gaokao.aicoming.cn
 # REPORTS_DIR=/var/www/reports
 # MAJOR_REPORTS_DIR=/opt/gaokao-data/专业评估报告
 # UNIV_REPORTS_DIR=/opt/gaokao-data/大学评估报告
-# SCORE_API_URL=http://159.75.110.157:5000
+# SCORE_API_URL=http://159.75.110.157/score-api
 ```
 
 - [ ] **Step 2: Commit**

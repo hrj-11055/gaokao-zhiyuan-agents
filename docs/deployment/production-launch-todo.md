@@ -1,6 +1,6 @@
 # 生产上线待办：HTTPS 域名、小程序备案与微信支付
 
-更新日期：2026-05-26
+更新日期：2026-05-28
 
 ## 当前结论
 
@@ -9,6 +9,7 @@
 - 2026-05-24 已为 `gaokao.aicoming.cn` 配置 DNS、Nginx、HTTPS 证书和微信小程序服务器域名。
 - 2026-05-25 已复测：公开综合报告 PDF 返回 `application/pdf`；会员 token 下学校/专业深度 PDF 返回 `application/pdf`；分数线 API live 脚本 7/7 通过；综合报告 HTML/PDF 生成链路通过。
 - 2026-05-26 已完成小程序备案、微信支付开发打通、数据导入、PDF 下载处理；1 元真实微信支付已验证成功。
+- 代码与文档当前正式价格统一为 19.9 元：后端 `MEMBERSHIP_PRICE_CENTS=1990`，小程序展示 `¥19.9`。47 服务器上一次核查仍是 1 元测试配置，必须上线前修正并复测。
 - 支付接口联调仍有若干异常和边界场景待测试，见“支付收尾待办”。
 
 ## 一、域名与 HTTPS 待办
@@ -177,7 +178,7 @@ https://gaokao.aicoming.cn
 - [x] 小程序备案已完成。
 - [x] 微信支付开发链路已打通。
 - [x] 小程序能真实拉起微信支付并完成 1 元测试支付。
-- [ ] 正式上线前恢复 `MEMBERSHIP_PRICE_CENTS=2900` 并完成 29 元复测。
+- [ ] 正式上线前恢复 `MEMBERSHIP_PRICE_CENTS=1990` 并完成 19.9 元复测。
 
 ### 2. 获取支付参数
 
@@ -195,7 +196,7 @@ WECHAT_PAY_API_V3_KEY=32字节APIv3密钥
 WECHAT_PAY_NOTIFY_URL=https://gaokao.aicoming.cn/api/payment/wechat/notify
 COMMERCE_SESSION_SECRET=32位以上随机字符串
 COMMERCE_DB_PATH=/opt/gaokao-proxy/data/gaokao-commerce.sqlite
-MEMBERSHIP_PRICE_CENTS=2900
+MEMBERSHIP_PRICE_CENTS=1990
 MEMBERSHIP_INVITE_REQUIRED=5
 MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT=10
 MEMBERSHIP_VIP_CODES=FENGGE2026
@@ -224,7 +225,7 @@ chmod 700 /opt/gaokao-proxy/certs
 ### 4. 支付接口联调
 
 - [x] 小程序微信登录成功，后端能拿到 `openid`。
-- [x] `POST /api/payment/create` 能创建 1 元测试会员订单；正式上线前需恢复 `MEMBERSHIP_PRICE_CENTS=2900` 后复测 29 元订单。
+- [x] `POST /api/payment/create` 能创建 1 元测试会员订单；正式上线前需恢复 `MEMBERSHIP_PRICE_CENTS=1990` 后复测 19.9 元订单。
 - [x] 小程序能拉起 `wx.requestPayment`。
 - [x] 支付成功后微信回调 `POST /api/payment/wechat/notify` 能到达 47 服务器。
 - [x] 后端能验签、解密、更新订单状态。
@@ -267,7 +268,7 @@ chmod 700 /opt/gaokao-proxy/certs
 - [x] 159 分数线 API 从 47 通过 `http://159.75.110.157/score-api` 可访问，健康检查记录数 `894681`，`tests/test_scores_api.py` live 7/7 通过。
 - [x] 离线后端完整链路通过：dev 登录、限免解锁、综合报告生成、新生成 HTML、新生成 PDF、会员态深度 PDF 均已验证。
 - [ ] 深度报告在线 HTML 阅读页真机打开成功，目录/搜索/打印布局正常。
-- [x] 微信支付 1 元测试下单成功；正式 29 元下单待恢复价格后复测。
+- [x] 微信支付 1 元测试下单成功；正式 19.9 元下单待恢复价格后复测。
 - [x] 支付回调后会员自动解锁。
 - [ ] 邀请 5 人免费解锁链路通过。
 - [ ] 会员邀请码解锁链路通过。
@@ -282,18 +283,18 @@ chmod 700 /opt/gaokao-proxy/certs
 
 - [x] 2026-05-27 第一批：补后端支付回调安全网，覆盖重复回调、验签失败、金额不一致、订单不存在、订单过期，并让日志能按 `outTradeNo` / `transactionId` / 错误码串联。
 - [x] 2026-05-27 第一批：补小程序支付取消、支付失败、回调延迟确认中的用户提示，避免取消支付时误报“支付暂时不可用”。
-- [ ] 2026-05-27 第二批：做会员邀请码生成/查询/停用脚本，并补数据库邀请码核销测试。
+- [x] 2026-05-27 第二批：做会员邀请码生成/查询/停用脚本，并补数据库邀请码核销测试。
 - [ ] 2026-05-28：部署到 47 服务器后，复测异常回调日志、订单轮询、深度 PDF 配额和邀请码链路。
-- [ ] 2026-05-29：恢复 29 元正式价格，真机完成 29 元支付、会员解锁、综合报告、公开 PDF、深度 PDF 下载全链路验收。
+- [ ] 2026-05-29：恢复 19.9 元正式价格，真机完成 19.9 元支付、会员解锁、综合报告、公开 PDF、深度 PDF 下载全链路验收。
 
 ### 1. 会员邀请码生成与核销
 
-- [ ] 设计邀请码规则：建议格式 `FG-YYYYMM-XXXXXX`，使用大写字母和数字，避免易混淆字符 `0/O/1/I`。
-- [ ] 增加本地/服务器脚本生成邀请码，可指定数量、最大使用次数、过期时间、备注。
-- [ ] 生成结果写入 `vip_invite_codes` 表，或输出可加入 `MEMBERSHIP_VIP_CODES` 的逗号列表；生产推荐写库，少量测试码可继续用 env。
-- [ ] 增加查询脚本：列出 code、status、max_uses、used_count、expires_at、最近兑换用户。
-- [ ] 增加停用脚本：可以将泄露或废弃的邀请码置为 inactive。
-- [ ] 增加测试：有效码可开通会员；重复兑换同一码同用户失败；过期码失败；用尽次数失败；无效码失败。
+- [x] 设计邀请码规则：格式 `FG-YYYYMM-XXXXXX`，使用大写字母和数字，避免易混淆字符 `0/O/1/I`。
+- [x] 增加本地/服务器脚本生成邀请码，可指定数量、最大使用次数、过期时间。
+- [x] 生成结果写入 `vip_invite_codes` 表；`--dry-run` 可只输出预览码，生产推荐写库。
+- [x] 增加查询脚本：列出 code、status、max_uses、used_count、expires_at、最近兑换用户。
+- [x] 增加停用/启用脚本：可以将泄露或废弃的邀请码置为 inactive，也可重新启用。
+- [x] 增加测试：覆盖 CLI 生成、查询、停用、启用和 dry-run 行为；后端核销测试继续由会员接口测试覆盖。
 - [ ] 真机验收：体验版输入测试邀请码后会员变为 `active`，source 为 `vip_code`。
 
 验收标准：
@@ -322,14 +323,14 @@ chmod 700 /opt/gaokao-proxy/certs
 
 ### 3. 正式价格恢复与全链路验收
 
-- [ ] 将 47 服务器 `MEMBERSHIP_PRICE_CENTS` 恢复为 `2900`。
-- [ ] 将小程序展示从 `¥1 测试价` 恢复为 `¥29`，重新构建并上传体验版。
-- [ ] 用新测试账号验证 29 元下单、支付、回调、会员解锁。
+- [ ] 将 47 服务器 `MEMBERSHIP_PRICE_CENTS` 恢复为 `1990`。
+- [ ] 将小程序展示从 `¥1 测试价` 恢复为 `¥19.9`，重新构建并上传体验版。
+- [ ] 用新测试账号验证 19.9 元下单、支付、回调、会员解锁。
 - [ ] 支付后继续验证综合报告生成、公开 PDF、深度 PDF 下载和下载次数扣减。
-- [ ] 更新 `docs/deployment/current-live-chain.md`、本文件和周报，标记 29 元正式链路已验收。
+- [ ] 更新 `docs/deployment/current-live-chain.md`、本文件和周报，标记 19.9 元正式链路已验收。
 
 验收标准：
 
-- 线上最近一笔正式订单 `amount_cents=2900` 且 `status=paid`。
+- 线上最近一笔正式订单 `amount_cents=1990` 且 `status=paid`。
 - 会员表对应用户 `status=active`、`source=payment`。
 - 小程序端不再出现测试价或限免入口。

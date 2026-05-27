@@ -16,7 +16,7 @@
 ## 2. 技术架构
 - **前端**: UniApp (Vue 3 + Vite + Sass)，编译为微信小程序 (`gaokao-miniprogram/`)。
 - **后端代理**: Node.js Express (`gaokao-proxy/`)，负责请求转发、SSE 流式解析、限流及安全校验。
-- **AI 引擎**: Dify (Docker 部署)，集成 DeepSeek-V3、Gemini、Claude 等模型。
+- **AI 引擎**: Dify (Docker 部署) 负责对话/RAG；综合报告由 `gaokao-proxy` 直连 DeepSeek Chat Completions，当前目标模型为 `deepseek-v4-pro`。
 - **数据层**: PostgreSQL (分数线数据) + Dify 知识库 (Markdown 语料)。
 - **评估工具**: Python 3 脚本，用于自动化跑批生成专业/院校深度报告。
 
@@ -70,6 +70,9 @@ cd gaokao-proxy && npm run dev
 ```
 
 ## 5. 开发规范
+- **小程序编译与调试模式（核心差异与选择）**：
+  - **本地日常开发 / UI 迭代优化**：**必须**使用开发模式 `npm run dev:mp-weixin`。此模式下，UniApp 会开启监听（Watch）并以开发分区 `dist/dev/mp-weixin` 输出，支持**保存后自动热更新 (Hot Reload)** 和精准的 **Source Map** 调试，严禁在迭代时使用 build 分区。
+  - **生产环境推送 / 上传微信审核**：**仅**在需要推送版本、提交微信审核时运行 `npm run build:mp-weixin`，它会单次打包并深度压缩优化至 `dist/build/mp-weixin`，移除 Source Map 并将体积压缩至最小。
 - **Python**: 优先使用标准库。函数/变量使用 `snake_case`。路径操作使用 `pathlib`。
 - **报告格式**: 专业报告命名为 `{专业代码}_{专业名称}.md`。必须符合 8 大模块输出要求。
 - **SSE 通信**: 小程序与代理之间通过 SSE (Server-Sent Events) 实现流式对话。
@@ -80,4 +83,4 @@ cd gaokao-proxy && npm run dev
 - **W4 核心**: MVP 端到端联调，实现「个人信息表单 -> 报告生成 -> 报告展示」闭环。
 
 ---
-*注：本文件由 Gemini CLI 根据项目分析自动生成，更新于 2026-05-01。*
+*注：本文件由 Gemini CLI 根据项目分析自动生成，更新于 2026-05-27。*

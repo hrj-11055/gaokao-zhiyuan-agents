@@ -4,6 +4,12 @@
 
 本项目的"漂移"指数据、Schema、代码、文件管理在多轮迭代中产生的不一致问题。本文档定义漂移类型、检测方法、修复流程和预防措施。
 
+当前执行口径：
+
+- 线上链路、服务器角色和运行时环境变量以 `docs/deployment/current-live-chain.md` 为准。
+- 上线待办和验收状态以 `docs/deployment/production-launch-todo.md` 与 `docs/deployment/mvp-next-todo-2026-05-28.md` 为准。
+- `docs/superpowers/plans/*`、`docs/superpowers/specs/*`、旧迁移清单和旧提示词只作历史追溯；执行前必须先核对上述 source-of-truth 文档。
+
 ---
 
 ## 一、漂移类型定义
@@ -56,9 +62,8 @@
 
 | 问题 | 文件 |
 |------|------|
-| TTS APPID/TOKEN 硬编码为 fallback 默认值 | `lib/tts.js:8-9` |
-| SCORE_API_URL 默认端口 5000（实际需 5001 或 Nginx 代理） | `lib/data-api.js:3` |
-| DEEPSEEK_MODEL 默认 `deepseek-v4-pro`，example 写 `deepseek-chat` | `lib/report-builder.js` vs `.env.example` |
+| SCORE_API_URL 曾被误判为端口 5000/5001；当前 47 应使用 159 Nginx 路由 `http://159.75.110.157/score-api` | `lib/data-api.js:3` |
+| 47 服务器 `.env` 仍可能残留 `DEEPSEEK_MODEL=deepseek-chat` 或 `MEMBERSHIP_PRICE_CENTS=100`，而代码和 example 已更新为 `deepseek-v4-pro` / `1990` | `/opt/gaokao-proxy/.env` vs `gaokao-proxy/.env.example` |
 | CLAUDE.md 引用 `run_univ_eval.py` 但该脚本已归档 | `CLAUDE.md` |
 
 ### 4. 文件管理漂移

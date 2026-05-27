@@ -1,14 +1,14 @@
 # “我的”页会员、邀请与微信支付设计
 
-> 日期：2026-05-14 | 状态：已确认  
-> 范围：小程序“我的”页重构、¥29 一次性会员、邀请 3 人解锁、微信支付、报告生成付费拦截、付费宣传内容。
+> 历史文档：本文保留 2026-05-14 的设计决策背景，只供追溯，不作为当前上线执行依据。当前上线配置以 `docs/deployment/current-live-chain.md`、`docs/deployment/production-launch-todo.md`、`docs/deployment/mvp-next-todo-2026-05-28.md` 和 `gaokao-proxy/.env.example` 为准。
+> 当前实现提示：正式会员价已改为 `¥19.9` / `MEMBERSHIP_PRICE_CENTS=1990`；邀请门槛为 5 人；已新增会员邀请码和深度 PDF 下载额度。
 
 ## 已确认决策
 
 - 页面方向：`我的` 页面采用“会员权益中心型”。
-- 价格：`¥29` 一次性解锁。
+- 价格：`¥19.9` 一次性解锁。
 - 权益归属：绑定当前微信用户，长期有效。
-- 免费解锁：邀请 `3` 位新用户填写基本信息后自动解锁。
+- 免费解锁：邀请 `5` 位新用户填写基本信息后自动解锁。
 - 有效邀请：被邀请用户首次完成基本信息保存即计数，单个被邀请微信用户只能贡献一次。
 - 付费权益：大学深度研究、综合志愿报告生成、PDF 下载、家长分享链接。
 - 报告限制：`/api/report/generate` 生成前必须校验权益，未解锁不得生成付费报告。
@@ -20,8 +20,8 @@
 `gaokao-miniprogram/src/pages/profile/profile.vue` 从“测评记录页”升级为会员中心，页面顺序如下：
 
 1. 用户头部：头像、产品名、当前会员状态。
-2. 会员卡：展示“深度填报会员”、`¥29 一次性解锁`、核心权益和主按钮。
-3. 邀请卡：展示 `有效邀请数/3`、进度条、分享按钮、邀请规则说明。
+2. 会员卡：展示“深度填报会员”、`¥19.9 一次性解锁`、核心权益和主按钮。
+3. 邀请卡：展示 `有效邀请数/5`、进度条、分享按钮、邀请规则说明。
 4. 付费权益列表：大学深度研究、综合报告生成、PDF 下载、家长分享。
 5. 综合志愿报告入口：保留当前测评完成度；未解锁时显示“待解锁”，已解锁时显示“可生成”。
 6. 测评记录：保留五环问卷、MBTI、霍兰德记录。
@@ -55,15 +55,15 @@
 
 按钮文案：
 
-- 主按钮：`¥29 立即解锁`
-- 邀请按钮：`邀请 3 人免费解锁`
+- 主按钮：`¥19.9 立即解锁`
+- 邀请按钮：`邀请 5 人免费解锁`
 - 报告拦截按钮：`解锁并生成报告`
 - 支付确认中：`正在确认支付结果`
 - 已解锁：`已解锁，生成报告`
 
 邀请说明：
 
-> 邀请新用户填写基本信息后，计为 1 个有效邀请。累计 3 个有效邀请，即可免费解锁 ¥29 深度填报会员。
+> 邀请新用户填写基本信息后，计为 1 个有效邀请。累计 5 个有效邀请，即可免费解锁 ¥19.9 深度填报会员。
 
 风险提示：
 
@@ -76,7 +76,7 @@
 ├── wx.login 获取 code
 ├── /api/auth/wechat-login 换取 openid 侧用户身份
 ├── /api/membership/status 获取权益与邀请进度
-├── /api/payment/create 创建 ¥29 微信支付订单
+├── /api/payment/create 创建 ¥19.9 微信支付订单
 ├── wx.requestPayment 拉起支付
 ├── /api/payment/order/:id 查询订单确认结果
 └── /api/report/generate 已解锁后生成报告
@@ -149,7 +149,7 @@ id                  TEXT PRIMARY KEY
 user_id              TEXT NOT NULL
 out_trade_no         TEXT UNIQUE NOT NULL
 transaction_id       TEXT
-amount_cents         INTEGER NOT NULL  -- 2900
+amount_cents         INTEGER NOT NULL  -- 1990
 status               TEXT NOT NULL     -- created | paying | paid | closed | failed
 prepay_id            TEXT
 paid_at              INTEGER
@@ -212,12 +212,12 @@ raw_notify           TEXT
 
 ### `POST /api/payment/create`
 
-创建 `¥29` 微信支付 JSAPI 订单。
+创建 `¥19.9` 微信支付 JSAPI 订单。
 
 后端职责：
 
 1. 若用户已解锁，直接返回当前会员状态，不重复下单。
-2. 创建本地订单，金额固定 `2900` 分。
+2. 创建本地订单，金额固定 `1990` 分。
 3. 调微信支付 API v3 JSAPI 下单拿 `prepay_id`。
 4. 生成前端 `wx.requestPayment` 所需参数：`timeStamp`、`nonceStr`、`package`、`signType=RSA`、`paySign`。
 
@@ -241,7 +241,7 @@ raw_notify           TEXT
 微信支付回调地址。后端验签并解密通知体后：
 
 1. 根据 `out_trade_no` 找订单。
-2. 金额必须等于 `2900` 分。
+2. 金额必须等于 `1990` 分。
 3. 微信交易状态为成功时把订单改为 `paid`。
 4. 写入 `memberships`，`source=payment`。
 5. 返回微信支付要求的成功响应。
@@ -264,7 +264,7 @@ raw_notify           TEXT
 {
   "error": "请先解锁深度填报会员",
   "code": "MEMBERSHIP_REQUIRED",
-  "priceCents": 2900,
+  "priceCents": 1990,
   "invite": { "effectiveCount": 1, "requiredCount": 3 }
 }
 ```
@@ -284,8 +284,8 @@ WECHAT_PAY_PUBLIC_KEY_PATH=
 WECHAT_PAY_API_V3_KEY=
 WECHAT_PAY_NOTIFY_URL=
 COMMERCE_DB_PATH=/opt/gaokao-proxy/data/gaokao-commerce.sqlite
-MEMBERSHIP_PRICE_CENTS=2900
-MEMBERSHIP_INVITE_REQUIRED=3
+MEMBERSHIP_PRICE_CENTS=1990
+MEMBERSHIP_INVITE_REQUIRED=5
 ```
 
 正式支付要求 `notify_url` 使用公网 HTTPS 域名，并填入 `WECHAT_PAY_NOTIFY_URL`。当前 `47.113.125.147` 的 HTTP 地址可以用于报告访问，但微信支付回调上线前需要准备合规域名和 HTTPS。
@@ -345,11 +345,11 @@ MEMBERSHIP_INVITE_REQUIRED=3
 
 ## 验收标准
 
-- “我的”页展示会员卡、¥29、权益列表、邀请进度和测评记录。
+- “我的”页展示会员卡、¥19.9、权益列表、邀请进度和测评记录。
 - 未解锁用户完成 3 项测评后进入报告页，会看到付费拦截，不会调用报告生成。
 - 已解锁用户可以生成报告，并可下载 PDF、复制链接。
 - 支付下单返回 `wx.requestPayment` 参数，支付回调成功后会员状态变为 active。
-- 邀请 3 个新用户填写基本信息后，邀请人会员状态自动变为 active。
+- 邀请 5 个新用户填写基本信息后，邀请人会员状态自动变为 active。
 - 清除本地数据后，同一微信用户重新进入仍可恢复会员状态。
 - `/api/report/generate` 对未解锁后端用户返回 `402 MEMBERSHIP_REQUIRED`。
 - 邀请去重有效：同一被邀请用户不会重复计数。

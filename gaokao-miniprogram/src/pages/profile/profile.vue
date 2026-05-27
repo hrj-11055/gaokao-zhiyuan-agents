@@ -1,118 +1,105 @@
 <template>
   <view class="profile-page">
-    <!-- subtle orange glow at top -->
-    <view class="bg-glow-soft" />
+    <view class="bg-glow-blue" />
 
-    <!-- Header: avatar + name + ID + VIP pill -->
-    <view class="me-header">
-      <view class="avatar-wrap">
-        <view class="avatar">
-          <text class="avatar-text">峰</text>
+    <!-- Header: Avatar + Student ID Card -->
+    <view class="student-id-card glass-panel">
+      <view class="card-top">
+        <view class="avatar-wrap">
+          <view class="avatar">
+            <text class="avatar-text">峰</text>
+          </view>
+        </view>
+        <view class="user-info">
+          <text class="user-name">志愿同学</text>
+          <view class="id-wrap">
+            <text class="user-id">ID: {{ shortUserId }}</text>
+          </view>
+        </view>
+        <view class="vip-badge" :class="{ active: membershipStore.isActive }">
+          {{ membershipStore.isActive ? '尊享 VIP' : '未解锁' }}
         </view>
       </view>
-      <text class="user-name">志愿同学</text>
-      <text class="user-id">ID: {{ shortUserId }}</text>
-      <view class="vip-pill" :class="{ active: membershipStore.isActive }">
-        <text class="vip-text">{{ membershipStore.isActive ? 'VIP · 报告已解锁' : '报告未解锁' }}</text>
+
+      <view class="card-bottom">
+        <view class="info-field" @click="goEditProfile">
+          <text class="info-value">{{ profile.province || '--' }}</text>
+          <text class="info-label">省份</text>
+        </view>
+        <view class="info-divider"></view>
+        <view class="info-field" @click="goEditProfile">
+          <text class="info-value">{{ profile.category || '--' }}</text>
+          <text class="info-label">科目</text>
+        </view>
+        <view class="info-divider"></view>
+        <view class="info-field" @click="goEditProfile">
+          <text class="info-value highlight">{{ profile.score || '--' }}</text>
+          <text class="info-label">分数</text>
+        </view>
       </view>
     </view>
 
+    <!-- VIP Status Card -->
     <view class="vip-status-card" :class="{ active: membershipStore.isActive }">
       <view class="vip-status-header">
-        <text class="vip-status-title">VIP 权益</text>
+        <text class="vip-status-title">志愿填报 VIP</text>
         <text class="vip-status-badge">{{ membershipStore.isActive ? '已开通' : '未开通' }}</text>
       </view>
       <text class="vip-status-desc">
-        {{
-          membershipStore.isActive
-            ? `剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
-            : `邀请进度 ${membershipStore.inviteProgressText} · 会员邀请码在报告页输入`
-        }}
+        {{ membershipStore.isActive
+           ? `剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
+           : `量身定制推荐院校与志愿 · ${membershipStore.inviteProgressText}` }}
       </text>
       <view class="vip-status-actions">
-        <button class="vip-action" @click="goReport">去报告页</button>
-        <button class="vip-action secondary" open-type="share">邀请好友</button>
+        <button class="vip-action primary" @click="goReport">
+          {{ membershipStore.isActive ? '查看报告' : '立即开通' }}
+        </button>
+        <button v-if="!membershipStore.isActive" class="vip-action outline" open-type="share">邀请好友</button>
       </view>
     </view>
 
-    <!-- Exam info card -->
-    <view class="info-card">
-      <view class="info-card-header">
-        <text class="info-label">考生信息</text>
-        <view class="info-edit" @click="goEditProfile">
-          <text class="info-edit-text">编辑</text>
-          <text class="info-edit-arrow">›</text>
+    <!-- Common Features Grid -->
+    <view class="menu-section">
+      <text class="section-title">常用功能</text>
+      <view class="grid-menu">
+        <view class="grid-item" @click="goChat">
+          <view class="grid-icon bg-blue"><text class="emoji">💬</text></view>
+          <text class="grid-label">咨询记录</text>
         </view>
-      </view>
-      <view class="info-grid">
-        <view class="info-field">
-          <text class="info-field-value">{{ profile.province || '未填写' }}</text>
-          <text class="info-field-label">省份</text>
+        <view class="grid-item" @click="goAssessments">
+          <view class="grid-icon bg-orange">
+             <text class="emoji">🧠</text>
+             <view v-if="assessmentCount > 0" class="badge">{{ assessmentCount }}/3</view>
+          </view>
+          <text class="grid-label">我的测评</text>
         </view>
-        <view class="info-field">
-          <text class="info-field-value">{{ profile.category || '未填写' }}</text>
-          <text class="info-field-label">科目</text>
+        <view class="grid-item" @click="onShare">
+          <view class="grid-icon bg-green"><text class="emoji">👥</text></view>
+          <text class="grid-label">邀请好友</text>
         </view>
-        <view class="info-field">
-          <text class="info-field-value">{{ profile.score || '未填写' }}</text>
-          <text class="info-field-label">分数</text>
+        <view class="grid-item" @click="goEditProfile">
+          <view class="grid-icon bg-purple"><text class="emoji">📝</text></view>
+          <text class="grid-label">修改档案</text>
         </view>
       </view>
     </view>
 
-    <!-- Business menu -->
-    <view class="menu-list">
-      <view class="menu-item" @click="goChat">
-        <view class="menu-icon-wrap">
-          <text class="menu-icon-emoji">💬</text>
+    <!-- Settings Grid -->
+    <view class="menu-section">
+      <text class="section-title">设置</text>
+      <view class="grid-menu cols-4">
+        <view class="grid-item" @click="goFeedback">
+          <view class="grid-icon basic"><text class="emoji">💌</text></view>
+          <text class="grid-label">投诉建议</text>
         </view>
-        <text class="menu-label">我的咨询记录</text>
-        <text class="menu-arrow">›</text>
-      </view>
-      <view class="menu-item" @click="goAssessments">
-        <view class="menu-icon-wrap">
-          <text class="menu-icon-emoji">🧠</text>
+        <view class="grid-item" @click="goAbout">
+          <view class="grid-icon basic"><text class="emoji">ⓘ</text></view>
+          <text class="grid-label">关于我们</text>
         </view>
-        <view class="menu-label-wrap">
-          <text class="menu-label">我的测评结果</text>
-          <text class="menu-helper">{{ questionnaireProgressText }}</text>
+        <view class="grid-item" @click="goPrivacy">
+          <view class="grid-icon basic"><text class="emoji">🔒</text></view>
+          <text class="grid-label">隐私政策</text>
         </view>
-        <view v-if="assessmentCount > 0" class="menu-badge">
-          <text class="menu-badge-text">{{ assessmentCount }}/3</text>
-        </view>
-        <text v-else class="menu-arrow">›</text>
-      </view>
-      <view class="menu-item" @click="onShare">
-        <view class="menu-icon-wrap">
-          <text class="menu-icon-emoji">👥</text>
-        </view>
-        <text class="menu-label">邀请好友</text>
-        <text class="menu-arrow">›</text>
-      </view>
-    </view>
-
-    <!-- System menu -->
-    <view class="menu-list">
-      <view class="menu-item" @click="goPrivacy">
-        <view class="menu-icon-wrap">
-          <text class="menu-icon-emoji">🔒</text>
-        </view>
-        <text class="menu-label">隐私保护</text>
-        <text class="menu-arrow">›</text>
-      </view>
-      <view class="menu-item" @click="goFeedback">
-        <view class="menu-icon-wrap">
-          <text class="menu-icon-emoji">💌</text>
-        </view>
-        <text class="menu-label">反馈/客服</text>
-        <text class="menu-arrow">›</text>
-      </view>
-      <view class="menu-item" @click="goAbout">
-        <view class="menu-icon-wrap">
-          <text class="menu-icon-emoji">ⓘ</text>
-        </view>
-        <text class="menu-label">关于峰哥</text>
-        <text class="menu-arrow">›</text>
       </view>
     </view>
 
@@ -126,6 +113,7 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { onShow, onShareAppMessage } from '@dcloudio/uni-app'
+import { CUSTOMER_WECHAT_ID } from '../../config.js'
 import { useMembershipStore } from '../../stores/membership.js'
 import { loadUserProfile, loadAssessments, loadQuestionnaire, QUESTIONNAIRE_REQUIRED_COUNT } from '../../utils/storage.js'
 
@@ -144,11 +132,6 @@ const assessmentCount = computed(() => {
   return n
 })
 
-const questionnaireProgressText = computed(() => {
-  if (questionnaire.value.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT) return '五环测评已完成'
-  return `已记录 ${questionnaire.value.completedCount} / ${QUESTIONNAIRE_REQUIRED_COUNT} 题`
-})
-
 // Navigation
 function goEditProfile() {
   uni.switchTab({ url: '/pages/index/index' })
@@ -156,11 +139,11 @@ function goEditProfile() {
 }
 
 function goChat() {
-  uni.navigateTo({ url: '/pages/chat/chat' })
+  uni.switchTab({ url: '/pages/chat/chat' })
 }
 
 function goAssessments() {
-  uni.navigateTo({ url: '/pages/assessments/assessments' })
+  uni.switchTab({ url: '/pages/report/report' })
 }
 
 function goReport() {
@@ -172,7 +155,21 @@ function goPrivacy() {
 }
 
 function goFeedback() {
-  uni.showToast({ title: '功能开发中', icon: 'none' })
+  uni.showModal({
+    title: '投诉建议',
+    content: `请添加客服微信 ${CUSTOMER_WECHAT_ID}，发送付款截图、用户 ID 或问题截图，我们会继续跟进。`,
+    confirmText: '复制微信号',
+    cancelText: '关闭',
+    success(res) {
+      if (!res.confirm) return
+      uni.setClipboardData({
+        data: CUSTOMER_WECHAT_ID,
+        success() {
+          uni.showToast({ title: '微信号已复制', icon: 'none' })
+        },
+      })
+    },
+  })
 }
 
 function goAbout() {
@@ -199,103 +196,167 @@ onShareAppMessage(() => ({
 <style lang="scss" scoped>
 .profile-page {
   min-height: 100vh;
-  background: linear-gradient(180deg, #fff7ed 0%, #f9fafb 60%);
+  background: $bg-page;
   padding: 0 32rpx;
+  padding-top: calc(80rpx + env(safe-area-inset-top));
   padding-bottom: calc(48rpx + env(safe-area-inset-bottom));
   box-sizing: border-box;
   position: relative;
   overflow-x: hidden;
 }
 
-.bg-glow-soft {
+.bg-glow-blue {
   position: absolute;
   top: -200rpx;
   left: 50%;
   transform: translateX(-50%);
-  width: 600rpx;
-  height: 600rpx;
-  background: radial-gradient(circle, rgba(249, 115, 22, 0.08) 0%, rgba(249, 115, 22, 0) 65%);
+  width: 700rpx;
+  height: 700rpx;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, rgba(37, 99, 235, 0) 65%);
   pointer-events: none;
 }
 
-/* ---- Header ---- */
-.me-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 48rpx;
-  padding-bottom: 40rpx;
+/* ---- Student ID Card ---- */
+.glass-panel {
+  @include glass-panel;
+}
+
+.student-id-card {
+  border-radius: $radius-xl;
+  padding: 32rpx;
+  margin-bottom: 24rpx;
   position: relative;
   z-index: 2;
+  transition: transform 0.2s;
+
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32rpx;
+  position: relative;
 }
 
 .avatar-wrap {
-  margin-bottom: 20rpx;
+  margin-right: 24rpx;
 }
 
 .avatar {
-  width: 112rpx;
-  height: 112rpx;
-  background: linear-gradient(135deg, #f97316, #ea580c);
+  width: 100rpx;
+  height: 100rpx;
+  background: $grad-primary;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8rpx 24rpx rgba(234, 88, 12, 0.25);
+  box-shadow: 0 8rpx 20rpx rgba(37, 99, 235, 0.25);
 }
 
 .avatar-text {
   color: #fff;
-  font-size: 48rpx;
-  font-weight: bold;
+  font-size: 40rpx;
+  font-weight: 800;
+}
+
+.user-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .user-name {
-  font-size: 36rpx;
+  font-size: 34rpx;
   font-weight: 800;
   color: $text-primary;
   margin-bottom: 8rpx;
 }
 
+.id-wrap {
+  display: flex;
+  align-items: center;
+}
+
 .user-id {
   font-size: 24rpx;
   color: $text-muted;
-  margin-bottom: 16rpx;
+  background: rgba(15, 23, 42, 0.04);
+  padding: 4rpx 12rpx;
+  border-radius: $radius-sm;
 }
 
-.vip-pill {
-  padding: 8rpx 24rpx;
+.vip-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8rpx 20rpx;
   border-radius: $radius-full;
-  background: #e5e7eb;
-
-  &.active {
-    background: linear-gradient(90deg, #fbbf24, #f59e0b);
-  }
-}
-
-.vip-text {
+  background: #F1F5F9;
+  color: $text-secondary;
   font-size: 22rpx;
   font-weight: 700;
-  color: #6b7280;
 
-  .vip-pill.active & {
-    color: #78350f;
+  &.active {
+    background: linear-gradient(90deg, #F59E0B, #F97316);
+    color: #fff;
+    box-shadow: 0 4rpx 12rpx rgba(249, 115, 22, 0.3);
   }
 }
 
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F1F5F9;
+  border-radius: $radius-md;
+  padding: 24rpx 32rpx;
+}
+
+.info-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-value {
+  font-size: 32rpx;
+  font-weight: 800;
+  color: $text-primary;
+  margin-bottom: 6rpx;
+
+  &.highlight {
+    color: $brand-primary;
+  }
+}
+
+.info-label {
+  font-size: 22rpx;
+  color: $text-muted;
+}
+
+.info-divider {
+  width: 1px;
+  height: 48rpx;
+  background: #E2E8F0;
+}
+
+/* ---- VIP Card ---- */
 .vip-status-card {
-  background: #fff;
+  background: $grad-vip;
   border-radius: $radius-lg;
-  padding: 28rpx;
-  margin-bottom: 24rpx;
-  border: 1px solid rgba(249, 115, 22, 0.16);
-  box-shadow: 0 4rpx 16rpx rgba(15, 23, 42, 0.04);
+  padding: 32rpx;
+  margin-bottom: 32rpx;
   position: relative;
   z-index: 2;
+  box-shadow: 0 8rpx 24rpx rgba(15, 23, 42, 0.15);
 
   &.active {
-    border-color: rgba(16, 185, 129, 0.24);
-    background: #f0fdf4;
+    background: linear-gradient(135deg, #1E3A8A 0%, #1D4ED8 100%);
   }
 }
 
@@ -303,225 +364,152 @@ onShareAppMessage(() => ({
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16rpx;
   margin-bottom: 12rpx;
 }
 
 .vip-status-title {
-  font-size: 30rpx;
-  font-weight: 850;
-  color: $text-primary;
+  font-size: 32rpx;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
 .vip-status-badge {
   padding: 6rpx 16rpx;
   border-radius: $radius-full;
-  background: #ffedd5;
-  color: #9a3412;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
   font-size: 22rpx;
   font-weight: 800;
 
   .vip-status-card.active & {
-    background: #dcfce7;
-    color: #166534;
+    background: #F59E0B;
+    color: #fff;
   }
 }
 
 .vip-status-desc {
   display: block;
   font-size: 24rpx;
-  color: $text-secondary;
-  line-height: 1.55;
-  margin-bottom: 20rpx;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  margin-bottom: 24rpx;
 }
 
 .vip-status-actions {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14rpx;
-}
-
-.vip-action {
-  height: 68rpx;
-  border-radius: $radius-md;
-  background: #f97316;
-  color: #fff;
-  font-size: 25rpx;
-  font-weight: 800;
-  line-height: 68rpx;
-  border: none;
-
-  &::after {
-    border: none;
-  }
-
-  &.secondary {
-    background: #f8fafc;
-    color: $text-primary;
-    border: 1px solid $border-light;
-  }
-}
-
-/* ---- Info card ---- */
-.info-card {
-  background: #fff;
-  border-radius: $radius-lg;
-  padding: 28rpx 28rpx 24rpx;
-  margin-bottom: 24rpx;
-  border: 1px solid $border-light;
-  box-shadow: 0 4rpx 16rpx rgba(15, 23, 42, 0.04);
-  position: relative;
-  z-index: 2;
-}
-
-.info-card-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20rpx;
-}
-
-.info-label {
-  font-size: 28rpx;
-  font-weight: 700;
-  color: $text-primary;
-}
-
-.info-edit {
-  display: flex;
-  align-items: center;
-  gap: 4rpx;
-}
-
-.info-edit-text {
-  font-size: 26rpx;
-  color: $brand-primary;
-  font-weight: 600;
-}
-
-.info-edit-arrow {
-  font-size: 32rpx;
-  color: $brand-primary;
-  font-weight: 600;
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 16rpx;
 }
 
-.info-field {
-  background: #fafafa;
-  border-radius: $radius-sm;
-  padding: 20rpx 16rpx;
+.vip-action {
+  flex: 1;
+  height: 72rpx;
+  border-radius: $radius-full;
+  font-size: 26rpx;
+  font-weight: 800;
+  line-height: 72rpx;
+  margin: 0;
+
+  &::after { border: none; }
+
+  &.primary {
+    background: $grad-accent;
+    color: #fff;
+  }
+
+  &.outline {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+/* ---- Menu Sections ---- */
+.menu-section {
+  margin-bottom: 32rpx;
+}
+
+.section-title {
+  display: block;
+  font-size: 30rpx;
+  font-weight: 800;
+  color: $text-primary;
+  margin-bottom: 20rpx;
+  padding-left: 8rpx;
+}
+
+.grid-menu {
+  background: #fff;
+  border-radius: $radius-lg;
+  padding: 24rpx;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16rpx;
+  box-shadow: 0 4rpx 16rpx rgba(15, 23, 42, 0.04);
+  border: 1px solid $border-light;
+
+  &.cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grid-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8rpx;
-}
-
-.info-field-value {
-  font-size: 28rpx;
-  font-weight: 700;
-  color: $text-primary;
-}
-
-.info-field-label {
-  font-size: 22rpx;
-  color: $text-muted;
-}
-
-/* ---- Menu list ---- */
-.menu-list {
-  background: #fff;
-  border-radius: $radius-lg;
-  margin-bottom: 24rpx;
-  border: 1px solid $border-light;
-  box-shadow: 0 4rpx 16rpx rgba(15, 23, 42, 0.04);
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-}
-
-.menu-item {
-  display: flex;
-  align-items: center;
-  padding: 28rpx 28rpx;
-  border-bottom: 1px solid $border-light;
+  padding: 20rpx 0;
+  border-radius: $radius-md;
   transition: background-color 0.15s;
 
-  &:last-child {
-    border-bottom: none;
-  }
-
   &:active {
-    background: rgba(15, 23, 42, 0.02);
+    background: #F8FAFC;
   }
 }
 
-.menu-icon-wrap {
-  width: 48rpx;
-  height: 48rpx;
-  background: #f3f4f6;
-  border-radius: 50%;
+.grid-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 30%; // slightly rounded square
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20rpx;
-  flex-shrink: 0;
+  margin-bottom: 16rpx;
+  position: relative;
+
+  &.bg-blue { background: #DBEAFE; }
+  &.bg-orange { background: #FFEDD5; }
+  &.bg-green { background: #D1FAE5; }
+  &.bg-purple { background: #F3E8FF; }
+  &.basic { background: #F1F5F9; }
 }
 
-.menu-icon-emoji {
+.emoji {
+  font-size: 36rpx;
+}
+
+.badge {
+  position: absolute;
+  top: -8rpx;
+  right: -12rpx;
+  background: #EF4444;
+  color: #fff;
+  font-size: 20rpx;
+  font-weight: 800;
+  padding: 2rpx 10rpx;
+  border-radius: $radius-full;
+  border: 4rpx solid #fff;
+}
+
+.grid-label {
   font-size: 24rpx;
-}
-
-.menu-label {
-  flex: 1;
-  font-size: 29rpx;
   font-weight: 600;
   color: $text-primary;
-}
-
-.menu-label-wrap {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 6rpx;
-  min-width: 0;
-
-  .menu-label {
-    flex: none;
-  }
-}
-
-.menu-helper {
-  font-size: 22rpx;
-  color: $text-muted;
-  line-height: 1.35;
-}
-
-.menu-arrow {
-  font-size: 36rpx;
-  color: $text-muted;
-}
-
-.menu-badge {
-  background: #fef3c7;
-  padding: 4rpx 16rpx;
-  border-radius: $radius-full;
-
-  .menu-badge-text {
-    font-size: 22rpx;
-    font-weight: 700;
-    color: #92400e;
-  }
 }
 
 /* ---- Footer ---- */
 .footer {
   text-align: center;
-  padding: 40rpx 0 24rpx;
+  padding: 32rpx 0;
 }
 
 .footer-text {

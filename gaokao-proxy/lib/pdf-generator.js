@@ -3,7 +3,7 @@ const puppeteer = require('puppeteer')
 const fs = require('fs').promises
 const path = require('path')
 
-const PDF_GENERATOR_VERSION = 'tab-print-v3'
+const PDF_GENERATOR_VERSION = 'print-layout-v4'
 const CJK_FONT_STACK = '"Noto Sans CJK SC", "Source Han Sans SC", "WenQuanYi Micro Hei", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Color Emoji", Arial, sans-serif'
 const TAB_PRINT_PATCH_CSS = `
   .tabs,
@@ -28,8 +28,27 @@ const TAB_PRINT_PATCH_CSS = `
   .tab-content:not(:first-child),
   [role="tabpanel"]:not(:first-child),
   [id^="tab"]:not(:first-child) {
-    break-before: page;
-    page-break-before: always;
+    break-before: auto;
+    page-break-before: auto;
+  }
+  .sticky,
+  .fixed,
+  .hide-scrollbar,
+  [class*="blur-3xl"],
+  [data-lucide] {
+    display: none !important;
+  }
+  .glass-card,
+  .rounded-2xl,
+  .shadow-xl,
+  .shadow-md,
+  .shadow-sm {
+    box-shadow: none !important;
+    border-radius: 8px !important;
+  }
+  #app [style*="display: none"],
+  #app [style*="display:none"] {
+    display: block !important;
   }
 `
 
@@ -68,12 +87,18 @@ async function generatePdfFromHtml(htmlFilePath, pdfFilePath) {
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     })
     const page = await browser.newPage()
+    await page.setViewport({ width: 1240, height: 1754, deviceScaleFactor: 1 })
     
     // Load the HTML file
     const fileUrl = `file://${htmlFilePath}`
     await page.goto(fileUrl, { waitUntil: 'networkidle0' })
+    await page.emulateMediaType('print')
     await page.addStyleTag({
       content: `
+        @page {
+          size: A4;
+          margin: 14mm 13mm;
+        }
         html,
         body,
         body *:not(code):not(pre) {
@@ -83,6 +108,9 @@ async function generatePdfFromHtml(htmlFilePath, pdfFilePath) {
         body {
           -webkit-print-color-adjust: exact;
           print-color-adjust: exact;
+        }
+        body {
+          background: #fff !important;
         }
         ${TAB_PRINT_PATCH_CSS}
       `
@@ -97,12 +125,13 @@ async function generatePdfFromHtml(htmlFilePath, pdfFilePath) {
     await page.pdf({
       path: pdfFilePath,
       format: 'A4',
+      preferCSSPageSize: true,
       printBackground: true,
       margin: {
-        top: '20px',
-        bottom: '20px',
-        left: '20px',
-        right: '20px'
+        top: '0',
+        bottom: '0',
+        left: '0',
+        right: '0'
       }
     })
     const htmlStat = await fs.stat(htmlFilePath)

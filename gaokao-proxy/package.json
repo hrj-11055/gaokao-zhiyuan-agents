@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "vip-codes": "node scripts/manage-vip-codes.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -15,7 +16,6 @@
     "ioredis": "^5.10.1",
     "pg": "^8.20.0",
     "puppeteer": "^24.43.1",
-    "uuid": "^14.0.0",
-    "ws": "^8.20.1"
+    "uuid": "^14.0.0"
   }
 }

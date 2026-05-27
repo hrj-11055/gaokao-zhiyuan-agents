@@ -130,11 +130,16 @@ UniApp 小程序（Vue 3 + Vite + Sass）→ 编译为微信小程序
         │   ├── GET  /reports/:file        静态报告托管
         │   ├── GET  /api/health           健康检查
         │   ├── GET  /api/reports/*        报告查询（专业/院校，直连 PostgreSQL）
+        │   ├── GET  /api/reports/major-insights 专业组合洞察
+        │   ├── POST /api/reports/deep/view-token 会员深度 HTML 阅读短链
+        │   ├── GET  /api/reports/deep/pdf 会员深度 PDF 下载
         │   ├── POST /api/auth/wechat-login 微信登录
+        │   ├── POST /api/profile          保存用户档案
         │   ├── GET  /api/membership/status 会员状态查询
+        │   ├── POST /api/membership/redeem-code 会员邀请码兑换
+        │   ├── POST /api/membership/limited-free-unlock 限时免费解锁
         │   ├── POST /api/payment/create   微信支付下单
         │   ├── POST /api/payment/wechat/notify 支付回调
-        │   ├── POST /api/tts              语音合成
         │   ├── POST /api/chat/feedback    对话反馈
         │   └── 限流 / CORS / Token 鉴权 / 超时控制 / Redis 冷却
         │
@@ -146,29 +151,33 @@ UniApp 小程序（Vue 3 + Vite + Sass）→ 编译为微信小程序
         │
         └── 阿里云服务器（47.113.125.147）
             ├── gaokao-proxy（PM2，端口 3001）
-            ├── Nginx 反代 /api/chat、/api/report、/reports
-            └── 综合报告 HTML 静态托管
+            ├── Nginx 反代 https://gaokao.aicoming.cn 的 /api/*、/reports/*
+            └── 综合报告 HTML/PDF 与深度报告 PDF 静态托管
 ```
 
 - **对话传输**：小程序 `wx.request({ enableChunked: true })` → gaokao-proxy → Dify API（SSE），手动解析 ArrayBuffer
-- **小程序配置**：WeChat AppID `wx52fc7943bf6e76aa`，环境变量 `VITE_API_BASE` 控制代理地址（默认 `http://localhost:3001`）
+- **小程序配置**：WeChat AppID `wx52fc7943bf6e76aa`，环境变量 `VITE_API_BASE` 控制代理地址（生产默认 `https://gaokao.aicoming.cn`）
 - **数据源**：掌上高考 API（`api.zjzw.cn`）、教育部公开数据
 
-### 线上接口真实状态（2026-05-14 实测）
+### 线上接口真实状态（2026-05-25 实测）
 
 当前 `gaokao-miniprogram/.env` 和代码默认值都指向：
 
 ```bash
-VITE_API_BASE=http://47.113.125.147
+VITE_API_BASE=https://gaokao.aicoming.cn
+VITE_PDF_DOWNLOAD_ENABLED=true
 ```
 
-47 服务器是小程序唯一 API Base，已通过 Nginx 暴露当前 `gaokao-proxy`，接口状态如下：
+47 服务器是小程序唯一 API Base，已通过 Nginx 和 HTTPS 域名暴露当前 `gaokao-proxy`，接口状态如下：
 
 ```bash
-GET  http://47.113.125.147/api/health          # 200 {"status":"ok"}
-POST http://47.113.125.147/api/chat            # 200，聊天代理可用
-POST http://47.113.125.147/api/report/generate # 200，返回 http://47.113.125.147/reports/<file>.html
-GET  http://47.113.125.147/reports/<file>.html # 200，报告 HTML 可访问
+GET  https://gaokao.aicoming.cn/api/health          # 200 {"status":"ok"}
+POST https://gaokao.aicoming.cn/api/chat            # 200，聊天代理可用
+POST https://gaokao.aicoming.cn/api/report/generate # 会员 token 下返回 https://gaokao.aicoming.cn/reports/<file>.html
+GET  https://gaokao.aicoming.cn/reports/<file>.html # 200，报告 HTML 可访问
+GET  https://gaokao.aicoming.cn/reports/<file>.pdf  # 200 application/pdf
+POST https://gaokao.aicoming.cn/api/reports/deep/view-token # 免费返回在线阅读短链，不消耗 PDF 额度
+GET  https://gaokao.aicoming.cn/api/reports/deep/pdf?type=major&id=080901 # 会员 token 下 200 application/pdf；无 token 为 401
 ```
 
 159 服务器是 Dify/数据服务器，不是小程序 API Base：
@@ -179,7 +188,7 @@ HEAD http://159.75.110.157/v1                  # X-Version: 1.13.3, X-Env: PRODU
 ssh -i /Users/MarkHuang/.ssh/gaokao-new_ed25519 ubuntu@159.75.110.157
 ```
 
-因此报告页出现“生成失败 / 服务暂时不可用”时，先确认小程序是否仍编译到了错误的 `VITE_API_BASE=http://159.75.110.157`。当前必须使用 `VITE_API_BASE=http://47.113.125.147`。本地 `gaokao-proxy/server.js` 和 47 服务器 `/opt/gaokao-proxy/server.js` 已有报告接口，并配置了 `DIFY_API_URL=http://159.75.110.157`、`DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL`、`REPORT_BASE_URL`、`REPORTS_DIR` 等环境变量。
+因此报告页出现“生成失败 / 服务暂时不可用”时，先确认小程序是否仍编译到了错误的 `VITE_API_BASE=http://159.75.110.157` 或旧的 `http://47.113.125.147`。当前必须使用 `VITE_API_BASE=https://gaokao.aicoming.cn`。本地 `gaokao-proxy/server.js` 和 47 服务器 `/opt/gaokao-proxy/server.js` 已有报告接口，并配置了 `DIFY_API_URL=http://159.75.110.157`、`SCORE_API_URL=http://159.75.110.157/score-api`、`DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL`、`REPORT_BASE_URL=https://gaokao.aicoming.cn`、`REPORTS_DIR` 等环境变量；当前发布口径要求 `DEEPSEEK_MODEL=deepseek-v4-pro`、`MEMBERSHIP_PRICE_CENTS=1990`。
 
 `47.113.125.147` 的真实状态（使用 `/Users/MarkHuang/Downloads/mark123-.pem` 实测）：
 
@@ -188,13 +197,12 @@ ssh -i /Users/MarkHuang/Downloads/mark123-.pem root@47.113.125.147 # 可登录
 ```
 
 - 服务器内运行 `/opt/gaokao-proxy/server.js`，PM2 进程名 `gaokao-proxy`，监听 `3001`。
-- `/opt/gaokao-proxy/.env` 中 `DIFY_API_URL=http://159.75.110.157`、`PORT=3001`、`REPORT_BASE_URL=http://47.113.125.147`、`DIFY_API_KEY`、`DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL`、`REPORTS_DIR` 均已设置。
+- `/opt/gaokao-proxy/.env` 中 `DIFY_API_URL=http://159.75.110.157`、`SCORE_API_URL=http://159.75.110.157/score-api`、`PORT=3001`、`REPORT_BASE_URL=https://gaokao.aicoming.cn`、`DIFY_API_KEY`、`DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL`、`REPORTS_DIR` 均已设置；2026-05-28 核查发现 47 仍残留 `MEMBERSHIP_PRICE_CENTS=100` 与 `DEEPSEEK_MODEL=deepseek-chat`，上线前必须改为 `1990` 和 `deepseek-v4-pro` 并重启 PM2。
 - 服务器本机 `GET http://127.0.0.1:3001/api/health` 返回 `200 {"status":"ok"}`。
-- 服务器本机 `POST http://127.0.0.1:3001/api/report/generate` 可返回报告 URL，例如 `http://aicoming.com.cn/reports/debug-1778672764911.html`。
-- 2026-05-13 已修正公网 Nginx：`server_name 47.113.125.147` 下 `/api/health`、`/api/chat`、`/api/report`、`/reports` 反代到 `127.0.0.1:3001`；原通用 `/api/` 仍保留给 3002。
-- 2026-05-13 已将 `/opt/gaokao-proxy/.env` 的 `REPORT_BASE_URL` 改为 `http://47.113.125.147` 并重启 PM2，报告接口现在返回 IP 链接而不是被 ICP 拦截的 `aicoming.com.cn` 链接。
-- 2026-05-14 已确认 47 本机 `POST http://127.0.0.1:3001/api/chat` 返回 Dify `advanced-chat` 响应，说明 47 的 proxy 当前实际连到 159 Dify。
-- 2026-05-14 已确认 159 上 Dify Docker 栈运行，`curl -I http://159.75.110.157/v1` 返回 `X-Version: 1.13.3`，并且 `gaokao-api` 容器暴露 `0.0.0.0:5001->5000`。从 159 本机 `curl http://127.0.0.1:5001/api/health` 返回 `{"records":35978,"status":"ok"}`；如 47 到分数 API 异常，优先检查 47 `.env` 中 `SCORE_API_URL` 和 159 端口暴露，而不是默认相信当前 `:5000` 配置。
+- 2026-05-24/25 已切换公网 Nginx 到 `gaokao.aicoming.cn`，HTTP 自动跳转 HTTPS，`/api/chat`、`/api/report`、`/api/reports`、`/reports` 均反代或托管到 `127.0.0.1:3001`。
+- 2026-05-25 已确认公开综合报告 PDF 返回 `application/pdf`，会员 token 下学校/专业深度 PDF 返回 `application/pdf`。
+- 2026-05-25 已确认 47 本机 `POST http://127.0.0.1:3001/api/chat` 返回 Dify `advanced-chat` 响应，说明 47 的 proxy 当前实际连到 159 Dify。
+- 2026-05-25 已确认 159 上 Dify Docker 栈运行，`curl -I http://159.75.110.157/v1` 返回 `X-Version: 1.13.3`，并且 `gaokao-api` 容器暴露 `0.0.0.0:5001->5000`。从 159 本机 `curl http://127.0.0.1:5001/api/health` 返回 `{"records":894681,"status":"ok"}`；47 到分数 API 使用 `SCORE_API_URL=http://159.75.110.157/score-api`，不要再用公开 `:5000` 或 `:5001` 当作健康判断。
 
 ### 小程序开发命令
 
@@ -225,7 +233,6 @@ npm start                  # 生产
 - **数据路径**：`MAJOR_REPORTS_DIR`、`UNIV_REPORTS_DIR`（已废弃，报告改为 PG 直查）、`SCORE_API_URL`
 - **报告数据库**：`PG_HOST`、`PG_PORT`、`PG_DATABASE`、`PG_USER`、`PG_PASSWORD`
 - **Redis**：`REDIS_HOST`、`REDIS_PORT`、`REDIS_PASSWORD`
-- **TTS**：`VOLC_TTS_APPID`、`VOLC_TTS_TOKEN`（必须设置，无默认值）
 - **会话**：`COMMERCE_SESSION_SECRET`、`JWT_SECRET`
 
 ## Dify 知识库结构
@@ -292,16 +299,18 @@ Dify 控制台：`http://159.75.110.157:8080`。插件仅保留 deepseek + zhipu
 ```bash
 # 综合志愿报告（小程序 → gaokao-proxy → DeepSeek API）
 POST /api/report/generate  # 生成 HTML 报告，返回可分享链接
-GET  /reports/:filename    # 静态托管生成的报告文件
+GET  /reports/:filename    # 静态托管生成的 HTML/PDF 文件
+POST /api/reports/deep/view-token # 会员换取短期在线阅读链接，不消耗下载额度
+GET  /api/reports/deep/pdf # 会员下载学校/专业深度 PDF，消耗下载额度
 ```
 
-部署注意：该接口已确认在 `47.113.125.147` 的 `/opt/gaokao-proxy` 内部和公网 IP 路由上可用。修改小程序报告页前，先用 `curl -X POST "$VITE_API_BASE/api/report/generate"` 验证公网目标是否已返回非 404。
+部署注意：该接口已确认在 `47.113.125.147` 的 `/opt/gaokao-proxy` 内部和公网域名 `https://gaokao.aicoming.cn` 路由上可用。修改小程序报告页前，先用 `curl -X POST "$VITE_API_BASE/api/report/generate"` 验证公网目标是否已返回非 404。
 
 报告生成使用 `lib/report-builder.js`，数据源：
 - 个人信息（`profile`）：省份、科目、分数、位次
-- 问卷答案（`questionnaire`）：五环 22 题
+- 问卷答案（`questionnaire`）：当前 21 道有效题 + MBTI + Holland 完成状态
 - 对话历史：通过 `conversationId` 调 Dify API 拉取
-- 专业/院校报告：从 `MAJOR_REPORTS_DIR` / `UNIV_REPORTS_DIR` 匹配读取
+- 专业/院校报告：优先从 159 PostgreSQL 报告库查询，深度 PDF 通过 `/api/reports/deep/pdf` 生成和下载
 
 ## Python 依赖
 
@@ -323,6 +332,15 @@ GET  /reports/:filename    # 静态托管生成的报告文件
 | `ioredis` | Redis 客户端（报告生成冷却） |
 | `@google/generative-ai` | Gemini API（报告生成备选） |
 | `pg` | PostgreSQL 客户端（报告数据查询） |
+
+## 进行中的任务
+
+| 任务 | 状态 | 文件 |
+|------|------|------|
+| 小程序 UI/IA 改版 | 进行中 | `TASK-ui-redesign.md` |
+
+> 回到任务时先读对应的 TASK 文件，里面有一句话描述、当前进度、下一步、关键决策。
+> 新建任务时用 `TASK-TEMPLATE.md` 作模板。
 
 ## 注意事项
 

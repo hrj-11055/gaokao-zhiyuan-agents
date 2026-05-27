@@ -13,4 +13,5 @@ export const API_BASE = import.meta.env.VITE_API_BASE || 'https://gaokao.aicomin
 export const PAYMENT_ENABLED = import.meta.env.VITE_PAYMENT_ENABLED !== 'false'
 export const PDF_DOWNLOAD_ENABLED = import.meta.env.VITE_PDF_DOWNLOAD_ENABLED === 'true'
 export const WECHAT_LOGIN_MOCK = import.meta.env.VITE_WECHAT_LOGIN_MOCK === 'true'
-export const MEMBERSHIP_PRICE_LABEL = import.meta.env.VITE_MEMBERSHIP_PRICE_LABEL || '¥29'
+export const MEMBERSHIP_PRICE_LABEL = import.meta.env.VITE_MEMBERSHIP_PRICE_LABEL || '¥19.9'
+export const CUSTOMER_WECHAT_ID = import.meta.env.VITE_CUSTOMER_WECHAT_ID || 'HRJ-11055'

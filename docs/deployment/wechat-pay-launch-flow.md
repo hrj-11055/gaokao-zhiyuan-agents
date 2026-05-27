@@ -1,12 +1,12 @@
 # 微信小程序支付上线流程
 
-更新日期：2026-05-26
+更新日期：2026-05-28
 
 ## 目标
 
 在 3 天内把“深度填报会员”小程序支付链路推进到可交付上线状态：
 
-- 用户可在小程序内用微信支付 29 元解锁会员。
+- 用户可在小程序内用微信支付 19.9 元解锁会员。
 - 用户邀请 5 位新用户完成基础资料后可免费解锁。
 - 用户输入后台配置的会员邀请码后可直接解锁会员。
 - 大学/专业深度研究在线阅读、综合志愿报告、PDF 下载、家长分享必须由后端会员状态控制。
@@ -28,10 +28,10 @@
 - 微信支付开发链路已打通，1 元测试支付已真机验证成功。
 - 后端订单状态能变为 `paid`，会员状态能自动变为 `active/payment`。
 - 商品名确认：`深圳元说咨询`。
-- 价格确认：`29 元一次性全部解锁`，不再做 `9.9 元只解锁大学`。
+- 价格确认：`19.9 元一次性全部解锁`，不再做 `9.9 元只解锁大学`。
 - 有效期确认：永久有效。
 - 域名方案确认：使用已备案域名 `https://gaokao.aicoming.cn` 指向 47 服务器的 `gaokao-proxy`。
-- 剩余重点：邀请码生成/核销、支付异常与回调兜底、正式 29 元复测。
+- 剩余重点：将邀请码管理脚本部署到 47 并真机核销、支付异常与回调兜底复测、正式 19.9 元复测。
 
 ## 概念澄清
 
@@ -150,12 +150,12 @@ https://api.example.com/api/payment/wechat/notify
 仍需完成：
 
 - 支付异常场景和回调边界测试。
-- 邀请码生成/核销流程。
-- 恢复 29 元正式价格后复测。
+- 邀请码管理脚本已完成；还需要部署到 47 并跑真机核销流程。
+- 恢复 19.9 元正式价格后复测。
 
 ### 当前建议
 
-继续走 `https://gaokao.aicoming.cn`。这条链路已经覆盖小程序合法域名、报告 PDF 下载、会员态深度 PDF、分数 API 反代和 1 元真机支付验收；剩余工作集中在邀请码生成/核销、支付异常回调兜底和恢复 29 元正式价格后的复测。
+继续走 `https://gaokao.aicoming.cn`。这条链路已经覆盖小程序合法域名、报告 PDF 下载、会员态深度 PDF、分数 API 反代和 1 元真机支付验收；剩余工作集中在部署邀请码管理脚本并真机核销、支付异常回调兜底和恢复 19.9 元正式价格后的复测。
 
 ## 我们当前项目的后端配置模板
 
@@ -164,7 +164,7 @@ https://api.example.com/api/payment/wechat/notify
 ```bash
 COMMERCE_DB_PATH=/opt/gaokao-proxy/data/gaokao-commerce.sqlite
 COMMERCE_SESSION_SECRET=请生成一个长随机字符串
-MEMBERSHIP_PRICE_CENTS=2900
+MEMBERSHIP_PRICE_CENTS=1990
 MEMBERSHIP_INVITE_REQUIRED=5
 MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT=10
 MEMBERSHIP_VIP_CODES=FENGGE2026
@@ -213,7 +213,7 @@ WECHAT_PAY_NOTIFY_URL=https://gaokao.aicoming.cn/api/payment/wechat/notify
 - [x] 支付成功后 5-10 秒内会员自动解锁。
 - [x] 后端订单、会员状态和小程序页面状态一致。
 
-2026-05-26 记录：本轮为 1 元测试支付，后端 `MEMBERSHIP_PRICE_CENTS=100`；正式发布前需要恢复 `2900` 并再跑一次 29 元订单。
+2026-05-26 记录：本轮为 1 元测试支付，后端 `MEMBERSHIP_PRICE_CENTS=100`；正式发布前需要恢复 `1990` 并再跑一次 19.9 元订单。
 
 ### Day 3：上线验收和兜底
 
@@ -234,7 +234,7 @@ WECHAT_PAY_NOTIFY_URL=https://gaokao.aicoming.cn/api/payment/wechat/notify
 
 ## 待确认问题
 
-1. 正式 29 元复测安排在哪个测试账号上执行？
+1. 正式 19.9 元复测安排在哪个测试账号上执行？
 2. 邀请码需要面向哪些渠道发放：内部测试、种子用户、合作老师、售后补偿？
 3. 邀请码是否需要一次性码、多人码、过期时间和备注字段？
 4. 支付异常日志是否需要接入外部告警，还是先用 PM2/Nginx 日志排查？
@@ -242,7 +242,7 @@ WECHAT_PAY_NOTIFY_URL=https://gaokao.aicoming.cn/api/payment/wechat/notify
 ## 已确认问题
 
 1. 商品名：`深圳元说咨询`。
-2. 价格：`29 元一次性全部解锁`。
+2. 价格：`19.9 元一次性全部解锁`。
 3. 有效期：永久有效。
 4. 暂不做 `9.9 元只解锁大学`。
 5. 域名方案：使用 `https://gaokao.aicoming.cn` 指向 47 服务器。

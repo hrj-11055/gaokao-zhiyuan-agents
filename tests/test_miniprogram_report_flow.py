@@ -21,7 +21,7 @@ class MiniprogramReportFlowTests(unittest.TestCase):
         self.assertIn("Boolean(report.value?.url)", progress)
         self.assertIn("if (reportDone.value) return StepStatus.DONE", progress)
         self.assertNotIn("if (membershipStore.isActive) return StepStatus.DONE", index)
-        self.assertIn("已解锁，点击生成报告", index)
+        self.assertIn("会员特权已解锁，一键生成", index)
 
     def test_report_generation_submits_stored_assessments_and_bearer_token(self):
         page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
