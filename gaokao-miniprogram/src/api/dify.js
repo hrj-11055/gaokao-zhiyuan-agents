@@ -1,23 +1,147 @@
 // gaokao-miniprogram/src/api/dify.js
 import { API_BASE } from '../config.js'
-import { isWechatCloudContainerEnabled, requestBackend } from './backend.js'
+import { requestBackend } from './backend.js'
 import { getStoredSession } from './membership.js'
+
+const CHAT_RESPONSE_TIMEOUT_MS = 180000
+
+export function isTruncatedSseEvent(data = {}) {
+  const finishReason =
+    data.finish_reason ||
+    data.metadata?.finish_reason ||
+    data.metadata?.usage?.finish_reason ||
+    data.data?.process_data?.finish_reason ||
+    data.data?.outputs?.usage?.finish_reason ||
+    data.data?.outputs?.finish_reason
+
+  return Boolean(
+    data.truncated ||
+    data.metadata?.proxy_truncated ||
+    data.data?.truncated ||
+    String(finishReason || '').toLowerCase() === 'length'
+  )
+}
 
 /**
  * 持久 UTF-8 解码器
- * 微信 chunk 边界可能切在中文字符中间，必须复用同一个 TextDecoder。
+ * 微信 chunk 边界可能切在中文字符中间，必须保留未完成的 UTF-8 字节。
  */
 export class Utf8StreamDecoder {
   constructor() {
-    this.decoder = new TextDecoder('utf-8')
+    this.decoder = typeof TextDecoder !== 'undefined' ? new TextDecoder('utf-8') : null
+    this.pendingBytes = []
+  }
+
+  normalizeBytes(buffer) {
+    if (!buffer) return []
+    if (buffer instanceof ArrayBuffer) return Array.from(new Uint8Array(buffer))
+    if (ArrayBuffer.isView(buffer)) {
+      return Array.from(new Uint8Array(buffer.buffer, buffer.byteOffset, buffer.byteLength))
+    }
+    return Array.from(buffer)
+  }
+
+  decodeCodePoint(codePoint) {
+    if (codePoint <= 0xFFFF) return String.fromCharCode(codePoint)
+    const offset = codePoint - 0x10000
+    return String.fromCharCode(0xD800 + (offset >> 10), 0xDC00 + (offset & 0x3FF))
+  }
+
+  isContinuation(byte) {
+    return byte >= 0x80 && byte <= 0xBF
+  }
+
+  decodeWithFallback(buffer, flush = false) {
+    const bytes = this.pendingBytes.concat(this.normalizeBytes(buffer))
+    this.pendingBytes = []
+
+    let output = ''
+    let index = 0
+
+    while (index < bytes.length) {
+      const first = bytes[index]
+
+      if (first <= 0x7F) {
+        output += String.fromCharCode(first)
+        index += 1
+        continue
+      }
+
+      let needed = 0
+      if (first >= 0xC2 && first <= 0xDF) {
+        needed = 2
+      } else if (first >= 0xE0 && first <= 0xEF) {
+        needed = 3
+      } else if (first >= 0xF0 && first <= 0xF4) {
+        needed = 4
+      } else {
+        output += '\uFFFD'
+        index += 1
+        continue
+      }
+
+      if (index + needed > bytes.length) {
+        if (!flush) {
+          this.pendingBytes = bytes.slice(index)
+          break
+        }
+        output += '\uFFFD'
+        index += 1
+        continue
+      }
+
+      const second = bytes[index + 1]
+      const third = bytes[index + 2]
+      const fourth = bytes[index + 3]
+      let valid = this.isContinuation(second)
+
+      if (needed === 3) {
+        valid = valid && this.isContinuation(third)
+        if (first === 0xE0) valid = valid && second >= 0xA0
+        if (first === 0xED) valid = valid && second <= 0x9F
+      }
+
+      if (needed === 4) {
+        valid = valid && this.isContinuation(third) && this.isContinuation(fourth)
+        if (first === 0xF0) valid = valid && second >= 0x90
+        if (first === 0xF4) valid = valid && second <= 0x8F
+      }
+
+      if (!valid) {
+        output += '\uFFFD'
+        index += 1
+        continue
+      }
+
+      if (needed === 2) {
+        output += String.fromCharCode(((first & 0x1F) << 6) | (second & 0x3F))
+      } else if (needed === 3) {
+        output += String.fromCharCode(
+          ((first & 0x0F) << 12) | ((second & 0x3F) << 6) | (third & 0x3F)
+        )
+      } else {
+        output += this.decodeCodePoint(
+          ((first & 0x07) << 18) | ((second & 0x3F) << 12) | ((third & 0x3F) << 6) | (fourth & 0x3F)
+        )
+      }
+      index += needed
+    }
+
+    return output
   }
 
   decode(buffer) {
-    return this.decoder.decode(buffer, { stream: true })
+    if (this.decoder) {
+      return this.decoder.decode(buffer, { stream: true })
+    }
+    return this.decodeWithFallback(buffer, false)
   }
 
   flush() {
-    return this.decoder.decode()
+    if (this.decoder) {
+      return this.decoder.decode()
+    }
+    return this.decodeWithFallback([], true)
   }
 }
 
@@ -31,6 +155,8 @@ export class SSEParser {
     this.onMessage = onMessage
     this.onEnd = onEnd
     this.onError = onError
+    this.seenMessage = false
+    this.seenEnd = false
   }
 
   feed(chunkText) {
@@ -45,11 +171,15 @@ export class SSEParser {
     }
   }
 
-  flush() {
+  flush(options = {}) {
     const block = this.buffer.replace(/\r\n/g, '\n').trim()
     this.buffer = ''
     if (block) {
       this.processBlock(block)
+    }
+    if (options.markIncomplete && this.seenMessage && !this.seenEnd) {
+      this.seenEnd = true
+      this.onEnd({ truncated: true })
     }
   }
 
@@ -70,8 +200,10 @@ export class SSEParser {
     try {
       const data = JSON.parse(dataText)
       if (data.event === 'message' || data.event === 'agent_message') {
+        this.seenMessage = true
         this.onMessage(data)
       } else if (data.event === 'message_end' || data.event === 'workflow_finished') {
+        this.seenEnd = true
         this.onEnd(data)
       } else if (data.event === 'error') {
         this.onError(data)
@@ -96,32 +228,6 @@ export class SSEParser {
  * @returns {{ abort: Function }} 可调用 abort() 取消请求
  */
 export function sendMessageStream({ query, conversationId, user, inputs = {}, onChunk, onEnd, onError }) {
-  if (isWechatCloudContainerEnabled()) {
-    let aborted = false
-    sendMessageBlocking({ query, conversationId, user, inputs })
-      .then((data) => {
-        if (aborted) return
-        if (data.answer) {
-          onChunk(data.answer, data.conversationId, data.messageId)
-        }
-        onEnd({
-          conversationId: data.conversationId,
-          messageId: data.messageId,
-        })
-      })
-      .catch((err) => {
-        if (!aborted) {
-          onError(err.message || 'AI 回复出错')
-        }
-      })
-
-    return {
-      abort: () => {
-        aborted = true
-      },
-    }
-  }
-
   const chunkDecoder = new Utf8StreamDecoder()
   const parser = new SSEParser(
     (data) => {
@@ -132,7 +238,8 @@ export function sendMessageStream({ query, conversationId, user, inputs = {}, on
     (data) => {
       onEnd({
         conversationId: data.conversation_id,
-        messageId: data.message_id
+        messageId: data.message_id,
+        truncated: isTruncatedSseEvent(data)
       })
     },
     (data) => {
@@ -145,6 +252,7 @@ export function sendMessageStream({ query, conversationId, user, inputs = {}, on
   const requestTask = uni.request({
     url: `${API_BASE}/api/chat/stream`,
     method: 'POST',
+    timeout: CHAT_RESPONSE_TIMEOUT_MS,
     data: {
       query,
       conversation_id: conversationId || '',
@@ -163,7 +271,7 @@ export function sendMessageStream({ query, conversationId, user, inputs = {}, on
       }
       const tail = chunkDecoder.flush()
       if (tail) parser.feed(tail)
-      parser.flush()
+      parser.flush({ markIncomplete: true })
     },
     fail(err) {
       onError(err.errMsg || '网络请求失败，请检查网络后重试')
@@ -198,6 +306,7 @@ export async function sendMessageBlocking({ query, conversationId, user, inputs 
       user,
       inputs
     },
+    timeout: CHAT_RESPONSE_TIMEOUT_MS,
     header: {
       'Content-Type': 'application/json',
       ...(session.sessionToken ? { Authorization: `Bearer ${session.sessionToken}` } : {}),
@@ -211,7 +320,8 @@ export async function sendMessageBlocking({ query, conversationId, user, inputs 
   return {
     answer: response.data.answer,
     conversationId: response.data.conversation_id,
-    messageId: response.data.message_id
+    messageId: response.data.message_id,
+    truncated: isTruncatedSseEvent(response.data),
   }
 }
 

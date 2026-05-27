@@ -67,6 +67,29 @@ function recommendationLabel(value) {
   return '待结合分数核验'
 }
 
+function renderInline(text) {
+  return escapeHtml(text)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+}
+
+function renderTable(tableLines) {
+  const rows = tableLines
+    .map((line) => line.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(cell => cell.trim()))
+    .filter((cells) => cells.length > 0)
+
+  if (rows.length === 0) return ''
+
+  const isDivider = (cells) => cells.every(cell => /^:?-{3,}:?$/.test(cell))
+  const header = rows[0]
+  const bodyRows = rows.slice(isDivider(rows[1] || []) ? 2 : 1)
+
+  return `<div class="table-scroll"><table>
+    <thead><tr>${header.map(cell => `<th>${renderInline(cell)}</th>`).join('')}</tr></thead>
+    <tbody>${bodyRows.map(row => `<tr>${row.map(cell => `<td>${renderInline(cell)}</td>`).join('')}</tr>`).join('\n')}</tbody>
+  </table></div>`
+}
+
 function buildSummaryCards(report) {
   const data = report?.data || {}
   const overview = data.layer1_overview || {}
@@ -93,19 +116,19 @@ function buildSummaryCards(report) {
 function renderMarkdownish(text) {
   const lines = String(text || '').replace(/\r\n/g, '\n').split('\n')
   const html = []
-  let listOpen = false
+  let listOpen = ''
   let tableLines = []
 
   const flushList = () => {
     if (listOpen) {
-      html.push('</ul>')
-      listOpen = false
+      html.push(`</${listOpen}>`)
+      listOpen = ''
     }
   }
 
   const flushTable = () => {
     if (tableLines.length > 0) {
-      html.push(`<pre class="table-block">${escapeHtml(tableLines.join('\n'))}</pre>`)
+      html.push(renderTable(tableLines))
       tableLines = []
     }
   }
@@ -130,22 +153,41 @@ function renderMarkdownish(text) {
     if (heading) {
       flushList()
       const level = Math.min(heading[1].length + 1, 4)
-      html.push(`<h${level}>${escapeHtml(heading[2])}</h${level}>`)
+      html.push(`<h${level}>${renderInline(heading[2])}</h${level}>`)
       continue
     }
 
     const bullet = line.match(/^[-*]\s+(.+)$/)
     if (bullet) {
-      if (!listOpen) {
+      if (listOpen !== 'ul') {
+        flushList()
         html.push('<ul>')
-        listOpen = true
+        listOpen = 'ul'
       }
-      html.push(`<li>${escapeHtml(bullet[1])}</li>`)
+      html.push(`<li>${renderInline(bullet[1])}</li>`)
+      continue
+    }
+
+    const ordered = line.match(/^\d+[.)]\s+(.+)$/)
+    if (ordered) {
+      if (listOpen !== 'ol') {
+        flushList()
+        html.push('<ol>')
+        listOpen = 'ol'
+      }
+      html.push(`<li>${renderInline(ordered[1])}</li>`)
+      continue
+    }
+
+    const quote = line.match(/^>\s+(.+)$/)
+    if (quote) {
+      flushList()
+      html.push(`<blockquote>${renderInline(quote[1])}</blockquote>`)
       continue
     }
 
     flushList()
-    html.push(`<p>${escapeHtml(line)}</p>`)
+    html.push(`<p>${renderInline(line)}</p>`)
   }
 
   flushList()
@@ -192,7 +234,7 @@ function buildDeepReportHtml({ type, report }) {
       margin: 0;
       background: #fff;
       color: #1f2933;
-      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-family: "Noto Sans CJK SC", "Source Han Sans SC", "WenQuanYi Micro Hei", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Color Emoji", Arial, sans-serif;
       line-height: 1.75;
       font-size: 14px;
     }
@@ -318,6 +360,27 @@ function buildDeepReportHtml({ type, report }) {
       font-size: 12px;
       line-height: 1.55;
     }
+    .table-scroll {
+      overflow-x: auto;
+      margin: 14px 0;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    th, td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #e5e7eb;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #fff7ed;
+      color: #9a3412;
+    }
     .notice {
       margin-top: 30px;
       padding: 14px 16px;
@@ -368,6 +431,532 @@ function buildDeepReportHtml({ type, report }) {
 </html>`
 }
 
+function buildDeepReportReaderHtml({ type, report }) {
+  const normalizedType = normalizeType(type)
+  const title = reportTitle(normalizedType, report)
+  const label = normalizedType === 'major' ? '专业深度评估' : '大学深度研究'
+  const wordCount = Number(report.word_count || 0)
+  const rawSections = extractRawSections(report?.data || {})
+  const sections = (rawSections.length > 0
+    ? rawSections
+    : [{ title: '完整研究内容', content: extractFullContent(report) }]
+  ).map((section, index) => ({
+    ...section,
+    id: `section-${index + 1}`,
+  }))
+  const summaryCards = buildSummaryCards(report)
+  const generatedDate = new Date().toISOString().slice(0, 10)
+
+  return `<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${escapeHtml(title)} - 在线阅读</title>
+  <style>
+    :root {
+      --paper: #fffdf8;
+      --ink: #172033;
+      --muted: #667085;
+      --line: #e8dfd0;
+      --blue: #2563eb;
+      --green: #0f766e;
+      --amber: #d97706;
+      --rose: #be123c;
+      --soft-blue: #eff6ff;
+      --soft-amber: #fff7ed;
+      --soft-green: #ecfdf5;
+      --shadow: 0 20px 60px rgba(23, 32, 51, 0.12);
+    }
+    * { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+      background: #f5f1ea;
+    }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, rgba(255, 253, 248, 0.3), rgba(245, 241, 234, 0.98)),
+        repeating-linear-gradient(90deg, rgba(23, 32, 51, 0.025) 0, rgba(23, 32, 51, 0.025) 1px, transparent 1px, transparent 96px);
+      font-family: "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", serif;
+      line-height: 1.82;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    .reader-hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 320px;
+      padding: 48px clamp(20px, 5vw, 72px) 34px;
+      color: #fff;
+      background:
+        linear-gradient(132deg, rgba(21, 32, 54, 0.96), rgba(25, 82, 93, 0.92) 54%, rgba(146, 64, 14, 0.9)),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cpath d='M0 80h160M80 0v160' stroke='rgba(255,255,255,.12)' stroke-width='1'/%3E%3Ccircle cx='80' cy='80' r='38' fill='none' stroke='rgba(255,255,255,.12)'/%3E%3C/svg%3E");
+    }
+    .hero-inner {
+      position: relative;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #fde68a;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+    }
+    .kicker::before {
+      content: "";
+      width: 26px;
+      height: 2px;
+      background: #fde68a;
+    }
+    h1 {
+      max-width: 920px;
+      margin: 18px 0 18px;
+      font-size: clamp(32px, 5vw, 60px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .hero-note {
+      max-width: 760px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 16px;
+      margin: 0;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      font-size: 13px;
+    }
+    .reader-shell {
+      display: grid;
+      grid-template-columns: minmax(230px, 300px) minmax(0, 1fr);
+      gap: 28px;
+      max-width: 1180px;
+      margin: -34px auto 80px;
+      padding: 0 clamp(16px, 4vw, 36px);
+      position: relative;
+      z-index: 2;
+    }
+    .side-panel {
+      position: sticky;
+      top: 16px;
+      align-self: start;
+      padding: 18px;
+      border: 1px solid rgba(232, 223, 208, 0.92);
+      border-radius: 18px;
+      background: rgba(255, 253, 248, 0.94);
+      box-shadow: var(--shadow);
+    }
+    .search-box {
+      display: grid;
+      gap: 10px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .search-row {
+      display: flex;
+      gap: 8px;
+    }
+    input[type="search"] {
+      width: 100%;
+      min-width: 0;
+      height: 42px;
+      border: 1px solid #d7cbbb;
+      border-radius: 12px;
+      background: #fff;
+      color: var(--ink);
+      padding: 0 12px;
+      font-size: 15px;
+      outline: none;
+    }
+    input[type="search"]:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    }
+    .tool-btn {
+      height: 42px;
+      border: 0;
+      border-radius: 12px;
+      padding: 0 12px;
+      color: #fff;
+      background: var(--ink);
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .tool-btn.secondary {
+      color: var(--ink);
+      background: #efe7da;
+    }
+    .search-count {
+      color: var(--muted);
+      font-size: 13px;
+      min-height: 20px;
+    }
+    .toc-title {
+      margin: 16px 0 8px;
+      color: var(--amber);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+    }
+    .toc-list {
+      display: grid;
+      gap: 4px;
+      max-height: 54vh;
+      overflow: auto;
+      padding-right: 4px;
+    }
+    .toc-link {
+      display: block;
+      padding: 8px 10px;
+      border-radius: 10px;
+      color: #344054;
+      font-size: 14px;
+      line-height: 1.35;
+    }
+    .toc-link:hover {
+      background: var(--soft-blue);
+      color: #1d4ed8;
+    }
+    .reader-main {
+      min-width: 0;
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .summary-card {
+      min-height: 150px;
+      padding: 18px;
+      border: 1px solid rgba(232, 223, 208, 0.98);
+      border-radius: 18px;
+      background: rgba(255, 253, 248, 0.96);
+      box-shadow: 0 12px 36px rgba(23, 32, 51, 0.08);
+    }
+    .summary-card:nth-child(1) { border-top: 4px solid var(--green); }
+    .summary-card:nth-child(2) { border-top: 4px solid var(--blue); }
+    .summary-card:nth-child(3) { border-top: 4px solid var(--amber); }
+    .summary-label {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .summary-value {
+      display: block;
+      margin: 8px 0;
+      color: var(--ink);
+      font-size: 22px;
+      line-height: 1.25;
+      font-weight: 900;
+    }
+    .summary-detail {
+      color: #475467;
+      font-size: 14px;
+      line-height: 1.65;
+      margin: 0;
+    }
+    .reader-section {
+      margin-top: 18px;
+      padding: clamp(22px, 4vw, 38px);
+      border: 1px solid rgba(232, 223, 208, 0.98);
+      border-radius: 22px;
+      background: var(--paper);
+      box-shadow: 0 12px 36px rgba(23, 32, 51, 0.07);
+      scroll-margin-top: 18px;
+    }
+    .section-index {
+      color: var(--amber);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+    }
+    h2 {
+      margin: 8px 0 20px;
+      color: var(--ink);
+      font-size: clamp(24px, 3vw, 36px);
+      line-height: 1.22;
+      letter-spacing: 0;
+    }
+    .section-content h3,
+    .section-content h4 {
+      margin: 26px 0 10px;
+      color: #1d2939;
+      line-height: 1.35;
+    }
+    .section-content p {
+      margin: 11px 0;
+      color: #344054;
+      text-align: justify;
+      word-break: break-word;
+    }
+    .section-content ul,
+    .section-content ol {
+      padding-left: 24px;
+      color: #344054;
+    }
+    .section-content li {
+      margin: 7px 0;
+    }
+    blockquote {
+      margin: 16px 0;
+      padding: 12px 16px;
+      border-left: 4px solid var(--blue);
+      background: var(--soft-blue);
+      color: #1e3a8a;
+      border-radius: 0 12px 12px 0;
+    }
+    code {
+      padding: 2px 5px;
+      border-radius: 6px;
+      background: #f2eadc;
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 0.92em;
+    }
+    .table-scroll {
+      overflow-x: auto;
+      margin: 18px 0;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 620px;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #efe7da;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: #7c2d12;
+      background: var(--soft-amber);
+      font-weight: 900;
+    }
+    mark {
+      padding: 1px 3px;
+      border-radius: 5px;
+      background: #fde68a;
+      color: #111827;
+    }
+    mark.active {
+      background: var(--rose);
+      color: #fff;
+    }
+    .notice {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border: 1px solid #bfdbfe;
+      border-radius: 16px;
+      background: rgba(239, 246, 255, 0.88);
+      color: #1e3a8a;
+      font-size: 14px;
+    }
+    @media (max-width: 860px) {
+      .reader-hero {
+        min-height: auto;
+        padding: 34px 20px 50px;
+      }
+      .reader-shell {
+        display: block;
+        margin-top: -30px;
+        padding: 0 12px 56px;
+      }
+      .side-panel {
+        position: relative;
+        top: auto;
+        margin-bottom: 14px;
+        border-radius: 18px;
+      }
+      .toc-list {
+        display: flex;
+        gap: 8px;
+        max-height: none;
+        overflow-x: auto;
+        padding-bottom: 4px;
+      }
+      .toc-link {
+        flex: 0 0 auto;
+        max-width: 210px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+      .reader-section {
+        border-radius: 18px;
+      }
+    }
+    @media print {
+      .side-panel { display: none; }
+      .reader-shell {
+        display: block;
+        margin: 0;
+        max-width: none;
+      }
+      .reader-hero {
+        color: var(--ink);
+        background: #fff;
+        min-height: 0;
+      }
+      .hero-note,
+      .hero-pill,
+      .kicker { color: var(--ink); }
+      .reader-section,
+      .summary-card {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="reader-hero">
+    <div class="hero-inner">
+      <div class="kicker">${escapeHtml(label)}</div>
+      <h1>${escapeHtml(title)}</h1>
+      <p class="hero-note">${escapeHtml(summaryCards[0]?.detail || '围绕适配度、风险点和下一步核验动作阅读这份深度报告。')}</p>
+      <div class="hero-meta">
+        <span class="hero-pill">在线阅读</span>
+        <span class="hero-pill">${wordCount || '待统计'} 字</span>
+        <span class="hero-pill">生成时间 ${escapeHtml(generatedDate)}</span>
+      </div>
+    </div>
+  </header>
+  <div class="reader-shell">
+    <aside class="side-panel">
+      <div class="search-box">
+        <div class="search-row">
+          <input id="reportSearch" type="search" placeholder="查找关键词" autocomplete="off">
+          <button id="searchClear" class="tool-btn secondary" type="button">清除</button>
+        </div>
+        <div class="search-row">
+          <button id="searchPrev" class="tool-btn secondary" type="button">上一个</button>
+          <button id="searchNext" class="tool-btn" type="button">下一个</button>
+        </div>
+        <div id="searchCount" class="search-count"></div>
+        <button class="tool-btn secondary" type="button" onclick="window.print()">打印</button>
+      </div>
+      <div class="toc-title">目录</div>
+      <nav class="toc-list">
+        ${sections.map((section, index) => `<a class="toc-link" href="#${escapeHtml(section.id)}">${index + 1}. ${escapeHtml(section.title || `章节 ${index + 1}`)}</a>`).join('\n')}
+      </nav>
+    </aside>
+    <main class="reader-main">
+      <section class="summary-grid" aria-label="摘要">
+        ${summaryCards.map(card => `<article class="summary-card">
+          <span class="summary-label">${escapeHtml(card.label)}</span>
+          <strong class="summary-value">${escapeHtml(card.value)}</strong>
+          <p class="summary-detail">${escapeHtml(card.detail)}</p>
+        </article>`).join('\n')}
+      </section>
+      ${sections.map((section, index) => `<section id="${escapeHtml(section.id)}" class="reader-section">
+        <div class="section-index">CHAPTER ${String(index + 1).padStart(2, '0')}</div>
+        <h2>${escapeHtml(section.title || `章节 ${index + 1}`)}</h2>
+        <div class="section-content">${renderSectionContent(section)}</div>
+      </section>`).join('\n')}
+      <div class="notice">本报告来自已入库的${escapeHtml(label)}数据，用于志愿填报决策参考。招生计划、录取规则和就业数据以学校与考试院最新发布为准。</div>
+    </main>
+  </div>
+  <script>
+    (function () {
+      var input = document.getElementById('reportSearch')
+      var count = document.getElementById('searchCount')
+      var prev = document.getElementById('searchPrev')
+      var next = document.getElementById('searchNext')
+      var clear = document.getElementById('searchClear')
+      var containers = Array.prototype.slice.call(document.querySelectorAll('.section-content'))
+      var marks = []
+      var active = -1
+
+      containers.forEach(function (node) {
+        node.setAttribute('data-original-html', node.innerHTML)
+      })
+
+      function escapeRegExp(value) {
+        return String(value).replace(/[-/\\\\^$*+?.()|[\\]{}]/g, '\\\\$&')
+      }
+
+      function reset() {
+        containers.forEach(function (node) {
+          node.innerHTML = node.getAttribute('data-original-html') || ''
+        })
+        marks = []
+        active = -1
+      }
+
+      function setActive(index) {
+        marks.forEach(function (mark) { mark.classList.remove('active') })
+        if (!marks.length) return
+        active = (index + marks.length) % marks.length
+        marks[active].classList.add('active')
+        marks[active].scrollIntoView({ block: 'center', behavior: 'smooth' })
+        count.textContent = (active + 1) + ' / ' + marks.length
+      }
+
+      function search() {
+        reset()
+        var keyword = input.value.trim()
+        if (!keyword) {
+          count.textContent = ''
+          return
+        }
+        var pattern = new RegExp(escapeRegExp(keyword), 'gi')
+        containers.forEach(function (node) {
+          node.innerHTML = (node.getAttribute('data-original-html') || '').replace(pattern, function (match) {
+            return '<mark>' + match + '</mark>'
+          })
+        })
+        marks = Array.prototype.slice.call(document.querySelectorAll('mark'))
+        if (!marks.length) {
+          count.textContent = '未找到'
+          return
+        }
+        setActive(0)
+      }
+
+      input.addEventListener('input', search)
+      clear.addEventListener('click', function () {
+        input.value = ''
+        reset()
+        count.textContent = ''
+        input.focus()
+      })
+      prev.addEventListener('click', function () { if (marks.length) setActive(active - 1) })
+      next.addEventListener('click', function () { if (marks.length) setActive(active + 1) })
+    })()
+  </script>
+</body>
+</html>`
+}
+
 function safePdfFilename(type, report) {
   const normalizedType = normalizeType(type)
   const id = normalizedType === 'major' ? report.code : report.name
@@ -394,6 +983,7 @@ async function generateDeepReportPdf({ type, report, outputDir }) {
 
 module.exports = {
   buildDeepReportHtml,
+  buildDeepReportReaderHtml,
   buildSummaryCards,
   escapeHtml,
   extractFullContent,

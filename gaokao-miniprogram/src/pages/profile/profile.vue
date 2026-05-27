@@ -17,6 +17,24 @@
       </view>
     </view>
 
+    <view class="vip-status-card" :class="{ active: membershipStore.isActive }">
+      <view class="vip-status-header">
+        <text class="vip-status-title">VIP 权益</text>
+        <text class="vip-status-badge">{{ membershipStore.isActive ? '已开通' : '未开通' }}</text>
+      </view>
+      <text class="vip-status-desc">
+        {{
+          membershipStore.isActive
+            ? `剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
+            : `邀请进度 ${membershipStore.inviteProgressText} · 会员邀请码在报告页输入`
+        }}
+      </text>
+      <view class="vip-status-actions">
+        <button class="vip-action" @click="goReport">去报告页</button>
+        <button class="vip-action secondary" open-type="share">邀请好友</button>
+      </view>
+    </view>
+
     <!-- Exam info card -->
     <view class="info-card">
       <view class="info-card-header">
@@ -55,7 +73,10 @@
         <view class="menu-icon-wrap">
           <text class="menu-icon-emoji">🧠</text>
         </view>
-        <text class="menu-label">我的测评结果</text>
+        <view class="menu-label-wrap">
+          <text class="menu-label">我的测评结果</text>
+          <text class="menu-helper">{{ questionnaireProgressText }}</text>
+        </view>
         <view v-if="assessmentCount > 0" class="menu-badge">
           <text class="menu-badge-text">{{ assessmentCount }}/3</text>
         </view>
@@ -123,6 +144,11 @@ const assessmentCount = computed(() => {
   return n
 })
 
+const questionnaireProgressText = computed(() => {
+  if (questionnaire.value.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT) return '五环测评已完成'
+  return `已记录 ${questionnaire.value.completedCount} / ${QUESTIONNAIRE_REQUIRED_COUNT} 题`
+})
+
 // Navigation
 function goEditProfile() {
   uni.switchTab({ url: '/pages/index/index' })
@@ -135,6 +161,10 @@ function goChat() {
 
 function goAssessments() {
   uni.navigateTo({ url: '/pages/assessments/assessments' })
+}
+
+function goReport() {
+  uni.switchTab({ url: '/pages/report/report' })
 }
 
 function goPrivacy() {
@@ -250,6 +280,85 @@ onShareAppMessage(() => ({
 
   .vip-pill.active & {
     color: #78350f;
+  }
+}
+
+.vip-status-card {
+  background: #fff;
+  border-radius: $radius-lg;
+  padding: 28rpx;
+  margin-bottom: 24rpx;
+  border: 1px solid rgba(249, 115, 22, 0.16);
+  box-shadow: 0 4rpx 16rpx rgba(15, 23, 42, 0.04);
+  position: relative;
+  z-index: 2;
+
+  &.active {
+    border-color: rgba(16, 185, 129, 0.24);
+    background: #f0fdf4;
+  }
+}
+
+.vip-status-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+  margin-bottom: 12rpx;
+}
+
+.vip-status-title {
+  font-size: 30rpx;
+  font-weight: 850;
+  color: $text-primary;
+}
+
+.vip-status-badge {
+  padding: 6rpx 16rpx;
+  border-radius: $radius-full;
+  background: #ffedd5;
+  color: #9a3412;
+  font-size: 22rpx;
+  font-weight: 800;
+
+  .vip-status-card.active & {
+    background: #dcfce7;
+    color: #166534;
+  }
+}
+
+.vip-status-desc {
+  display: block;
+  font-size: 24rpx;
+  color: $text-secondary;
+  line-height: 1.55;
+  margin-bottom: 20rpx;
+}
+
+.vip-status-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14rpx;
+}
+
+.vip-action {
+  height: 68rpx;
+  border-radius: $radius-md;
+  background: #f97316;
+  color: #fff;
+  font-size: 25rpx;
+  font-weight: 800;
+  line-height: 68rpx;
+  border: none;
+
+  &::after {
+    border: none;
+  }
+
+  &.secondary {
+    background: #f8fafc;
+    color: $text-primary;
+    border: 1px solid $border-light;
   }
 }
 
@@ -372,6 +481,24 @@ onShareAppMessage(() => ({
   font-size: 29rpx;
   font-weight: 600;
   color: $text-primary;
+}
+
+.menu-label-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+  min-width: 0;
+
+  .menu-label {
+    flex: none;
+  }
+}
+
+.menu-helper {
+  font-size: 22rpx;
+  color: $text-muted;
+  line-height: 1.35;
 }
 
 .menu-arrow {

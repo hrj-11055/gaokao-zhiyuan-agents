@@ -4,7 +4,7 @@
     <view v-if="type === 'ai'" class="avatar-outer">
       <view class="avatar-glow" />
       <view class="avatar">
-        <text class="avatar-text">峰</text>
+        <text class="avatar-text">🤖</text>
       </view>
     </view>
 
@@ -225,20 +225,18 @@ onUnmounted(() => {
 .avatar {
   width: 68rpx;
   height: 68rpx;
-  background: $grad-royal;
-  border-radius: $radius-sm;
+  background: linear-gradient(135deg, #14B8A6, #8B5CF6); /* Teal to Purple */
+  border-radius: $radius-full;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4rpx 16rpx rgba(99, 102, 241, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4rpx 16rpx rgba(139, 92, 246, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.9);
   z-index: 2;
 }
 
 .avatar-text {
-  color: #fff;
-  font-size: 30rpx;
-  font-weight: 900;
+  font-size: 38rpx; /* Emoji size */
 }
 
 .avatar-glow {
@@ -247,8 +245,8 @@ onUnmounted(() => {
   left: -4rpx;
   right: -4rpx;
   bottom: -4rpx;
-  background: rgba(37, 99, 235, 0.16);
-  border-radius: 22rpx;
+  background: rgba(139, 92, 246, 0.2);
+  border-radius: 50%;
   filter: blur(8rpx);
   z-index: 1;
 }
@@ -267,19 +265,19 @@ onUnmounted(() => {
 }
 
 .bubble-user-inner {
-  background: $grad-royal;
+  background: linear-gradient(135deg, #2DD4BF, #8B5CF6);
   border-radius: $radius-md $radius-xs $radius-md $radius-md;
-  box-shadow: 0 8rpx 22rpx rgba(37, 99, 235, 0.20);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8rpx 22rpx rgba(139, 92, 246, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .bubble-ai-inner {
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-radius: $radius-xs $radius-md $radius-md $radius-md;
-  border: 1px solid rgba(15, 23, 42, 0.06);
-  box-shadow: 0 8rpx 32rpx rgba(15, 23, 42, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8rpx 32rpx rgba(15, 23, 42, 0.04);
 }
 
 .bubble-text {

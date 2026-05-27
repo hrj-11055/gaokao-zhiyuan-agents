@@ -2,21 +2,15 @@
 
 /**
  * 统一后端服务基准 API 地址
- * 非微信小程序环境或关闭云托管调用时，使用公网代理 IP 兜底。
+ * 当前 MVP 统一使用已备案 HTTPS 域名进入 47 服务器 gaokao-proxy。
  */
-export const API_BASE = import.meta.env.VITE_API_BASE || 'http://47.113.125.147'
-
-/**
- * 微信云开发/云托管配置
- * 当前真机测试默认走 47 gaokao-proxy。只有显式配置为 true 时才走云托管。
- */
-export const WECHAT_CLOUD_ENV = import.meta.env.VITE_WECHAT_CLOUD_ENV || 'cloud1-d9gnnxnx79feadfae'
-export const WECHAT_CLOUD_SERVICE = import.meta.env.VITE_WECHAT_CLOUD_SERVICE || 'flask-xsun'
-export const USE_WECHAT_CLOUD_CONTAINER = import.meta.env.VITE_USE_WECHAT_CLOUD_CONTAINER === 'true'
+export const API_BASE = import.meta.env.VITE_API_BASE || 'https://gaokao.aicoming.cn'
 
 /**
  * 上线能力开关
- * 支付和小程序 PDF 下载依赖微信支付、HTTPS 合法域名和备案配置，默认关闭。
+ * 支付依赖微信支付配置；PDF 下载依赖 HTTPS 合法域名、会员状态和构建开关。
  */
-export const PAYMENT_ENABLED = import.meta.env.VITE_PAYMENT_ENABLED === 'true'
+export const PAYMENT_ENABLED = import.meta.env.VITE_PAYMENT_ENABLED !== 'false'
 export const PDF_DOWNLOAD_ENABLED = import.meta.env.VITE_PDF_DOWNLOAD_ENABLED === 'true'
+export const WECHAT_LOGIN_MOCK = import.meta.env.VITE_WECHAT_LOGIN_MOCK === 'true'
+export const MEMBERSHIP_PRICE_LABEL = import.meta.env.VITE_MEMBERSHIP_PRICE_LABEL || '¥29'

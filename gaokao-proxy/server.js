@@ -2,10 +2,12 @@ require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const { generateReport, saveReport, saveReportDraft, REPORTS_DIR } = require('./lib/report-builder')
-const { generatePdfFromHtml } = require('./lib/pdf-generator')
+const { generatePdfFromHtml, isGeneratedPdfFresh } = require('./lib/pdf-generator')
 const { createReportRoutes } = require('./lib/report-routes')
-const { fetchReportDetail } = require('./lib/report-data-client')
-const { buildDeepReportHtml, generateDeepReportPdf } = require('./lib/deep-report-pdf')
+const { fetchReportDetail, normalizeType } = require('./lib/report-data-client')
+const { buildDeepReportHtml, buildDeepReportReaderHtml, generateDeepReportPdf } = require('./lib/deep-report-pdf')
+const { createDeepReportViewToken, verifyDeepReportViewToken } = require('./lib/deep-report-view-token')
+const { getMajorInsights, parseNames } = require('./lib/major-insights')
 const redis = require('./lib/redis')
 const { textToSpeech } = require('./lib/tts')
 const { createCommerceStore } = require('./lib/commerce-store')
@@ -13,7 +15,7 @@ const { signSessionToken, verifySessionToken } = require('./lib/session-token')
 const { exchangeCodeForSession } = require('./lib/wechat-auth')
 const { createJsapiPayment, parseWechatPayNotify } = require('./lib/wechat-pay')
 const { msgSecCheck } = require('./lib/content-security')
-const { buildProfileGateAnswer } = require('./lib/profile-followup-gate')
+const { buildProfileGateAnswer, buildRecommendationGuidedQuery } = require('./lib/profile-followup-gate')
 const fs = require('fs').promises
 const path = require('path')
 
@@ -22,14 +24,15 @@ const DIFY_API_URL = process.env.DIFY_API_URL || 'http://127.0.0.1:8080'
 const DIFY_API_KEY = process.env.DIFY_API_KEY
 const PORT = process.env.PORT || 3001
 const JSON_BODY_LIMIT = process.env.JSON_BODY_LIMIT || '32kb'
-const REQUEST_TIMEOUT_MS = Number(process.env.REQUEST_TIMEOUT_MS || 30000)
-const STREAM_TIMEOUT_MS = Number(process.env.STREAM_TIMEOUT_MS || 120000)
+const REQUEST_TIMEOUT_MS = Number(process.env.REQUEST_TIMEOUT_MS || 120000)
+const STREAM_TIMEOUT_MS = Number(process.env.STREAM_TIMEOUT_MS || 180000)
 const RATE_LIMIT_WINDOW_MS = Number(process.env.RATE_LIMIT_WINDOW_MS || 60000)
 const RATE_LIMIT_MAX = Number(process.env.RATE_LIMIT_MAX || 30)
 const MAX_QUERY_LENGTH = Number(process.env.MAX_QUERY_LENGTH || 2000)
 const PROXY_API_TOKEN = process.env.PROXY_API_TOKEN || ''
 const COMMERCE_SESSION_SECRET = process.env.COMMERCE_SESSION_SECRET || process.env.JWT_SECRET || 'local-commerce-session-secret'
 const LIMITED_FREE_UNLOCK_ENABLED = process.env.LIMITED_FREE_UNLOCK_ENABLED !== 'false'
+const DEEP_REPORT_VIEW_TOKEN_TTL_MS = Number(process.env.DEEP_REPORT_VIEW_TOKEN_TTL_MS || 10 * 60 * 1000)
 const QUESTIONNAIRE_REQUIRED_COUNT = 21
 const QUESTIONNAIRE_ACTIVE_IDS = [
   'q1', 'q2', 'q3', 'q4', 'q5',
@@ -166,6 +169,7 @@ function requireMembershipForReports(req, res, next) {
       code: 'MEMBERSHIP_REQUIRED',
       priceCents: Number(process.env.MEMBERSHIP_PRICE_CENTS || 2900),
       invite: membership.invite,
+      downloadQuota: membership.downloadQuota,
     })
   }
   req.membership = membership
@@ -296,6 +300,31 @@ function removeThinkBlocksDeep(value) {
   return value
 }
 
+function hasLengthFinishReason(data = {}) {
+  const finishReason =
+    data.finish_reason ||
+    data.metadata?.finish_reason ||
+    data.metadata?.usage?.finish_reason ||
+    data.data?.process_data?.finish_reason ||
+    data.data?.outputs?.usage?.finish_reason ||
+    data.data?.outputs?.finish_reason
+
+  return String(finishReason || '').toLowerCase() === 'length'
+}
+
+function markProxyTruncated(data = {}) {
+  data.truncated = true
+  data.metadata = {
+    ...(data.metadata || {}),
+    proxy_truncated: true,
+    finish_reason: 'length',
+  }
+  if (data.data && typeof data.data === 'object') {
+    data.data.truncated = true
+  }
+  return data
+}
+
 function markerPrefixSuffixLength(text, marker) {
   const max = Math.min(text.length, marker.length - 1)
   for (let length = max; length > 0; length -= 1) {
@@ -371,10 +400,63 @@ app.get('/api/reports/majors/:code', reportRoutes.getMajor)
 app.get('/api/reports/universities', reportRoutes.listUniversities)
 app.get('/api/reports/universities/:name', reportRoutes.getUniversity)
 
+app.get('/api/reports/major-insights', async (req, res) => {
+  const names = parseNames(req.query.names)
+  if (names.length === 0) {
+    res.status(400).json({ error: 'names is required' })
+    return
+  }
+
+  try {
+    res.json({ data: await getMajorInsights(names) })
+  } catch (err) {
+    console.error('Major insights error:', err.message)
+    res.status(500).json({ error: '专业结构化信息查询失败' })
+  }
+})
+
+app.post('/api/reports/deep/view-token', requireCommerceAuth, requireMembershipForReports, (req, res) => {
+  const { type = '', id = '' } = req.body || {}
+  if (!type || !id) {
+    res.status(400).json({ error: 'type and id are required' })
+    return
+  }
+
+  try {
+    const normalizedType = normalizeType(type)
+    const token = createDeepReportViewToken({
+      userId: req.commerceAuth.userId,
+      type: normalizedType,
+      id,
+    }, COMMERCE_SESSION_SECRET, { ttlMs: DEEP_REPORT_VIEW_TOKEN_TTL_MS })
+    const baseUrl = process.env.REPORT_BASE_URL || `http://localhost:${PORT}`
+    res.json({
+      url: `${baseUrl}/reports/deep/view/${encodeURIComponent(token)}`,
+      expiresIn: Math.floor(DEEP_REPORT_VIEW_TOKEN_TTL_MS / 1000),
+    })
+  } catch (err) {
+    res.status(400).json({ error: err.message || '生成阅读链接失败' })
+  }
+})
+
 app.get('/api/reports/deep/pdf', requireCommerceAuth, requireMembershipForReports, async (req, res) => {
   const { type = '', id = '' } = req.query || {}
   if (!type || !id) {
     res.status(400).json({ error: 'type and id are required' })
+    return
+  }
+
+  const quotaCheck = commerceStore.canDownloadDeepReport(req.commerceAuth.userId)
+  if (!quotaCheck.allowed) {
+    const statusCode = quotaCheck.code === 'DOWNLOAD_QUOTA_EXHAUSTED' ? 429 : 402
+    res.status(statusCode).json({
+      code: quotaCheck.code,
+      error: quotaCheck.code === 'DOWNLOAD_QUOTA_EXHAUSTED'
+        ? '深度报告下载次数已用完'
+        : '请先解锁深度填报会员',
+      membership: quotaCheck.membership,
+      downloadQuota: quotaCheck.membership?.downloadQuota,
+    })
     return
   }
 
@@ -392,11 +474,48 @@ app.get('/api/reports/deep/pdf', requireCommerceAuth, requireMembershipForReport
       'Content-Disposition',
       `attachment; filename*=UTF-8''${encodeURIComponent(`${title}-${filename}`)}`
     )
+    const membership = commerceStore.recordDeepReportDownload({
+      userId: req.commerceAuth.userId,
+      reportType: type,
+      reportId: id,
+      filename,
+    })
+    res.setHeader('X-Deep-Report-Downloads-Remaining', String(membership.downloadQuota.remaining))
     res.sendFile(pdfPath)
   } catch (err) {
     console.error('Deep report PDF error:', err.message)
+    if (err.code === 'DOWNLOAD_QUOTA_EXHAUSTED') {
+      return res.status(429).json({
+        code: 'DOWNLOAD_QUOTA_EXHAUSTED',
+        error: '深度报告下载次数已用完',
+        membership: err.membership,
+        downloadQuota: err.membership?.downloadQuota,
+      })
+    }
     const status = err.status === 404 ? 404 : 500
     res.status(status).json({ error: err.status === 404 ? '报告不存在' : '深度报告 PDF 生成失败' })
+  }
+})
+
+app.get('/reports/deep/view/:token', async (req, res) => {
+  try {
+    const payload = verifyDeepReportViewToken(req.params.token, COMMERCE_SESSION_SECRET)
+    const membership = commerceStore.getMembershipStatus(payload.userId)
+    if (membership.status !== 'active') {
+      res.status(403).send('<!doctype html><meta charset="utf-8"><title>会员已失效</title><body style="font-family:sans-serif;padding:32px">请重新回到小程序开通会员后查看。</body>')
+      return
+    }
+
+    const type = normalizeType(payload.type)
+    const report = await fetchReportDetail(type, payload.id, { full: true })
+    const html = buildDeepReportReaderHtml({ type, report })
+    res.setHeader('Content-Type', 'text/html; charset=utf-8')
+    res.setHeader('Cache-Control', 'no-store')
+    res.setHeader('X-Robots-Tag', 'noindex, nofollow')
+    res.send(html)
+  } catch (err) {
+    console.error('Deep report reader error:', err.message)
+    res.status(401).send('<!doctype html><meta charset="utf-8"><title>阅读链接已失效</title><body style="font-family:sans-serif;padding:32px">阅读链接已失效，请回到小程序重新打开报告。</body>')
   }
 })
 
@@ -429,6 +548,21 @@ app.post('/api/auth/wechat-login', async (req, res) => {
 
 app.get('/api/membership/status', requireCommerceAuth, (req, res) => {
   res.json(commerceStore.getMembershipStatus(req.commerceAuth.userId))
+})
+
+app.post('/api/membership/redeem-code', requireCommerceAuth, (req, res) => {
+  try {
+    const result = commerceStore.redeemVipCode(req.commerceAuth.userId, req.body?.code || '')
+    res.json({
+      code: 'VIP_CODE_REDEEMED',
+      membership: result.membership,
+    })
+  } catch (err) {
+    res.status(400).json({
+      code: 'VIP_CODE_INVALID',
+      error: err.message || '会员邀请码兑换失败',
+    })
+  }
 })
 
 app.post('/api/membership/limited-free-unlock', requireCommerceAuth, (req, res) => {
@@ -519,6 +653,7 @@ app.get('/api/payment/order/:orderId', requireCommerceAuth, (req, res) => {
 })
 
 app.post('/api/payment/wechat/notify', async (req, res) => {
+  let notifyLogContext = {}
   try {
     const notify = parseWechatPayNotify(req.body, {
       headers: req.headers,
@@ -528,6 +663,7 @@ app.post('/api/payment/wechat/notify', async (req, res) => {
     const outTradeNo = resource.out_trade_no || notify.out_trade_no
     const transactionId = resource.transaction_id || notify.transaction_id || ''
     const tradeState = resource.trade_state || notify.trade_state || 'SUCCESS'
+    notifyLogContext = { outTradeNo, transactionId, tradeState }
 
     if (!outTradeNo) {
       return res.status(400).json({ code: 'FAIL', message: 'out_trade_no is required' })
@@ -539,8 +675,16 @@ app.post('/api/payment/wechat/notify', async (req, res) => {
     commerceStore.markOrderPaid(outTradeNo, transactionId, notify)
     res.json({ code: 'SUCCESS', message: '成功' })
   } catch (err) {
-    console.error('WeChat pay notify error:', err.message)
-    res.status(500).json({ code: 'FAIL', message: err.message || '支付通知处理失败' })
+    console.error('WeChat pay notify error:', {
+      ...notifyLogContext,
+      errorCode: err.code || 'WECHAT_PAY_NOTIFY_FAILED',
+      message: err.message,
+    })
+    res.status(500).json({
+      code: 'FAIL',
+      message: err.message || '支付通知处理失败',
+      errorCode: err.code || 'WECHAT_PAY_NOTIFY_FAILED',
+    })
   }
 })
 
@@ -560,6 +704,7 @@ app.post('/api/chat', async (req, res) => {
     if (gateAnswer) {
       return res.json(gateAnswer)
     }
+    const guidedQuery = buildRecommendationGuidedQuery(query)
 
     const response = await fetch(`${DIFY_API_URL}/v1/chat-messages`, {
       method: 'POST',
@@ -569,7 +714,7 @@ app.post('/api/chat', async (req, res) => {
       },
       body: JSON.stringify({
         inputs: finalInputs,
-        query,
+        query: guidedQuery,
         response_mode: 'blocking',
         conversation_id,
         user
@@ -586,6 +731,9 @@ app.post('/api/chat', async (req, res) => {
     const data = await response.json()
     if (typeof data.answer === 'string') {
       data.answer = removeThinkBlocks(data.answer)
+    }
+    if (hasLengthFinishReason(data)) {
+      markProxyTruncated(data)
     }
     res.json(data)
   } catch (err) {
@@ -642,6 +790,7 @@ app.post('/api/chat/stream', async (req, res) => {
       res.end()
       return
     }
+    const guidedQuery = buildRecommendationGuidedQuery(query)
 
     const response = await fetch(`${DIFY_API_URL}/v1/chat-messages`, {
       method: 'POST',
@@ -651,7 +800,7 @@ app.post('/api/chat/stream', async (req, res) => {
       },
       body: JSON.stringify({
         inputs: finalInputs,
-        query,
+        query: guidedQuery,
         response_mode: 'streaming',
         conversation_id,
         user
@@ -677,6 +826,7 @@ app.post('/api/chat/stream', async (req, res) => {
     const decoder = new TextDecoder()
     const thinkStripper = createThinkStripper()
     let sseBuffer = ''
+    let upstreamLengthTruncated = false
 
     const transformSseBlock = (block) => {
       const lines = block.split('\n')
@@ -692,11 +842,17 @@ app.post('/api/chat/stream', async (req, res) => {
 
       try {
         const data = JSON.parse(dataText)
+        if (hasLengthFinishReason(data)) {
+          upstreamLengthTruncated = true
+        }
         if (typeof data.answer === 'string') {
           data.answer = thinkStripper.strip(data.answer)
           if ((data.event === 'message' || data.event === 'agent_message') && data.answer === '') {
             return ''
           }
+        }
+        if (upstreamLengthTruncated && (data.event === 'message_end' || data.event === 'workflow_finished')) {
+          markProxyTruncated(data)
         }
         return `${lines.filter((line) => !line.startsWith('data:')).join('\n')}\ndata: ${JSON.stringify(removeThinkBlocksDeep(data))}\n\n`
       } catch {
@@ -734,6 +890,12 @@ app.post('/api/chat/stream', async (req, res) => {
     if (err.name === 'AbortError' || clientClosed) {
       if (!res.headersSent && !res.destroyed) {
         res.status(504).json({ error: 'AI 思考时间有点长，请稍后再试' })
+      } else if (!res.destroyed && !clientClosed) {
+        res.write(`data: ${JSON.stringify({
+          event: 'error',
+          message: 'AI 回复时间超过 3 分钟，请点重新生成获取完整建议。',
+        })}\n\n`)
+        res.end()
       }
       return
     }
@@ -746,23 +908,41 @@ app.post('/api/chat/stream', async (req, res) => {
   }
 })
 
+// 深度报告的中间 HTML/PDF 文件不允许绕过会员鉴权直接访问。
+app.use('/reports/deep-reports', (req, res) => {
+  res.status(404).json({ error: '报告不存在或链接已失效' })
+})
+
 // 静态报告文件 (拦截 .pdf 并在需要时生成)
 app.get('/reports/:filename', async (req, res, next) => {
   const { filename } = req.params
   if (filename.endsWith('.pdf')) {
     const pdfPath = path.join(REPORTS_DIR, filename)
-    
-    // 如果 PDF 已经存在，则放行给 express.static 处理
-    try {
-      await fs.access(pdfPath)
-      return next()
-    } catch {
-      // PDF 不存在，查找对应的 HTML
-    }
-    
     const htmlFilename = filename.replace('.pdf', '.html')
     const htmlPath = path.join(REPORTS_DIR, htmlFilename)
-    
+
+    // 如果 PDF 已经存在且由当前生成器版本生成，则放行给 express.static 处理。
+    // 旧 PDF 没有字体元数据时会重新生成，避免继续给真机返回中文方块乱码文件。
+    try {
+      await fs.access(pdfPath)
+      try {
+        await fs.access(htmlPath)
+        if (await isGeneratedPdfFresh(pdfPath, htmlPath)) {
+          return next()
+        }
+        console.log(`PDF is stale, regenerating ${filename}...`)
+      } catch (err) {
+        if (err && err.code === 'ENOENT') {
+          return next()
+        }
+        throw err
+      }
+    } catch (err) {
+      if (err && err.code !== 'ENOENT') {
+        console.error(`PDF freshness check failed for ${filename}:`, err.message)
+      }
+    }
+
     try {
       await fs.access(htmlPath)
       // HTML 存在，生成 PDF

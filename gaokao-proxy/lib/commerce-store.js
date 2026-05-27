@@ -6,6 +6,11 @@ function defaultIdFactory(prefix) {
   return `${prefix}_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`
 }
 
+function createWechatOutTradeNo(timestamp) {
+  const suffix = Math.random().toString(36).slice(2, 12)
+  return `GK${timestamp}${suffix}`.slice(0, 32)
+}
+
 function toUser(row) {
   if (!row) return null
   return {
@@ -43,13 +48,39 @@ function toIntOrEmpty(value) {
   return Number.isFinite(number) ? Math.trunc(number) : ''
 }
 
+function normalizeVipCode(code) {
+  return String(code || '').trim().toUpperCase()
+}
+
+function createCommerceError(message, code) {
+  const err = new Error(message)
+  err.code = code
+  return err
+}
+
+function extractNotifyAmountCents(rawNotify = {}) {
+  const resource = rawNotify.resource || rawNotify
+  const total = resource?.amount?.total
+  if (total === undefined || total === null || total === '') return null
+  const amount = Number(total)
+  return Number.isFinite(amount) ? Math.trunc(amount) : null
+}
+
 function createCommerceStore({
   dbPath = process.env.COMMERCE_DB_PATH || path.join(__dirname, '..', 'data', 'gaokao-commerce.sqlite'),
   now = () => Date.now(),
   idFactory = defaultIdFactory,
-  inviteRequired = Number(process.env.MEMBERSHIP_INVITE_REQUIRED || 3),
+  inviteRequired = Number(process.env.MEMBERSHIP_INVITE_REQUIRED || 5),
   priceCents = Number(process.env.MEMBERSHIP_PRICE_CENTS || 2900),
+  deepReportDownloadLimit = Number(process.env.MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT || 10),
+  vipCodes = process.env.MEMBERSHIP_VIP_CODES || '',
+  paymentOrderTtlMs = Number(process.env.PAYMENT_ORDER_TTL_MS || 30 * 60 * 1000),
 } = {}) {
+  const configuredVipCodes = (Array.isArray(vipCodes) ? vipCodes : String(vipCodes || '').split(','))
+    .map(normalizeVipCode)
+    .filter(Boolean)
+  const orderTtlMs = Number.isFinite(paymentOrderTtlMs) ? paymentOrderTtlMs : 30 * 60 * 1000
+
   if (dbPath !== ':memory:') {
     fs.mkdirSync(path.dirname(dbPath), { recursive: true })
   }
@@ -101,6 +132,32 @@ function createCommerceStore({
       created_at INTEGER NOT NULL,
       updated_at INTEGER NOT NULL,
       raw_notify TEXT
+    );
+
+    CREATE TABLE IF NOT EXISTS vip_invite_codes (
+      code TEXT PRIMARY KEY,
+      status TEXT NOT NULL,
+      max_uses INTEGER,
+      used_count INTEGER NOT NULL DEFAULT 0,
+      created_at INTEGER NOT NULL,
+      expires_at INTEGER
+    );
+
+    CREATE TABLE IF NOT EXISTS vip_code_redemptions (
+      id TEXT PRIMARY KEY,
+      code TEXT NOT NULL,
+      user_id TEXT NOT NULL,
+      redeemed_at INTEGER NOT NULL,
+      UNIQUE(code, user_id)
+    );
+
+    CREATE TABLE IF NOT EXISTS deep_report_downloads (
+      id TEXT PRIMARY KEY,
+      user_id TEXT NOT NULL,
+      report_type TEXT NOT NULL,
+      report_id TEXT NOT NULL,
+      filename TEXT NOT NULL,
+      created_at INTEGER NOT NULL
     );
   `)
 
@@ -193,6 +250,13 @@ function createCommerceStore({
         raw_notify = @rawNotify
     WHERE out_trade_no = @outTradeNo
   `)
+  const markOrderStatus = db.prepare(`
+    UPDATE payment_orders
+    SET status = @status,
+        updated_at = @updatedAt,
+        raw_notify = COALESCE(@rawNotify, raw_notify)
+    WHERE id = @orderId
+  `)
   const attachPrepay = db.prepare(`
     UPDATE payment_orders
     SET prepay_id = @prepayId,
@@ -200,6 +264,50 @@ function createCommerceStore({
         updated_at = @updatedAt
     WHERE id = @orderId
   `)
+  const upsertVipCode = db.prepare(`
+    INSERT INTO vip_invite_codes (code, status, max_uses, used_count, created_at, expires_at)
+    VALUES (@code, 'active', NULL, 0, @createdAt, NULL)
+    ON CONFLICT(code) DO UPDATE SET status = 'active'
+  `)
+  const getVipCode = db.prepare('SELECT * FROM vip_invite_codes WHERE code = ?')
+  const insertVipRedemption = db.prepare(`
+    INSERT INTO vip_code_redemptions (id, code, user_id, redeemed_at)
+    VALUES (@id, @code, @userId, @redeemedAt)
+  `)
+  const incrementVipCodeUse = db.prepare(`
+    UPDATE vip_invite_codes
+    SET used_count = used_count + 1
+    WHERE code = @code
+  `)
+  const countDeepReportDownloads = db.prepare(`
+    SELECT COUNT(*) AS count
+    FROM deep_report_downloads
+    WHERE user_id = ?
+  `)
+  const insertDeepReportDownload = db.prepare(`
+    INSERT INTO deep_report_downloads (
+      id, user_id, report_type, report_id, filename, created_at
+    ) VALUES (
+      @id, @userId, @reportType, @reportId, @filename, @createdAt
+    )
+  `)
+
+  for (const code of configuredVipCodes) {
+    upsertVipCode.run({ code, createdAt: now() })
+  }
+
+  function expireStaleOrder(row) {
+    if (!row || !['created', 'paying'].includes(row.status)) return row
+    const timestamp = now()
+    if (timestamp - row.created_at <= orderTtlMs) return row
+    markOrderStatus.run({
+      orderId: row.id,
+      status: 'expired',
+      updatedAt: timestamp,
+      rawNotify: null,
+    })
+    return getOrderById.get(row.id)
+  }
 
   function activeFeatures(active) {
     return {
@@ -220,6 +328,8 @@ function createCommerceStore({
   function getMembershipStatus(userId) {
     const membership = getMembership.get(userId)
     const effectiveCount = countEffectiveInvites.get(userId)?.count || 0
+    const usedDownloads = countDeepReportDownloads.get(userId)?.count || 0
+    const downloadLimit = Number.isFinite(deepReportDownloadLimit) ? deepReportDownloadLimit : 10
     const active = membership?.status === 'active'
     return {
       status: active ? 'active' : 'inactive',
@@ -228,6 +338,11 @@ function createCommerceStore({
       invite: {
         effectiveCount,
         requiredCount: inviteRequired,
+      },
+      downloadQuota: {
+        used: usedDownloads,
+        limit: downloadLimit,
+        remaining: Math.max(0, downloadLimit - usedDownloads),
       },
       features: activeFeatures(active),
     }
@@ -355,7 +470,7 @@ function createCommerceStore({
 
     const timestamp = now()
     const orderId = idFactory('ord')
-    const outTradeNo = `${orderId}_${timestamp}`
+    const outTradeNo = createWechatOutTradeNo(timestamp)
     insertOrder.run({
       id: orderId,
       userId,
@@ -373,12 +488,9 @@ function createCommerceStore({
     return toOrder(getOrderById.get(orderId))
   }
 
-  const markOrderPaidTx = db.transaction((outTradeNo, transactionId = '', rawNotify = {}) => {
-    const order = getOrderByTradeNo.get(outTradeNo)
-    if (!order) throw new Error('order not found')
-
+  const applyOrderPaidTx = db.transaction((order, transactionId = '', rawNotify = {}) => {
     markPaid.run({
-      outTradeNo,
+      outTradeNo: order.out_trade_no,
       transactionId,
       paidAt: now(),
       rawNotify: JSON.stringify(rawNotify || {}),
@@ -388,8 +500,101 @@ function createCommerceStore({
       source: 'payment',
       unlockedAt: now(),
     })
-    return toOrder(getOrderByTradeNo.get(outTradeNo))
+    return toOrder(getOrderByTradeNo.get(order.out_trade_no))
   })
+
+  function markOrderPaid(outTradeNo, transactionId = '', rawNotify = {}) {
+    const order = getOrderByTradeNo.get(outTradeNo)
+    if (!order) throw createCommerceError('订单不存在', 'ORDER_NOT_FOUND')
+    if (order.status === 'paid') return toOrder(order)
+
+    const notifyAmountCents = extractNotifyAmountCents(rawNotify)
+    if (notifyAmountCents !== null && notifyAmountCents !== order.amount_cents) {
+      markOrderStatus.run({
+        orderId: order.id,
+        status: 'abnormal',
+        updatedAt: now(),
+        rawNotify: JSON.stringify(rawNotify || {}),
+      })
+      throw createCommerceError(
+        `支付回调金额不一致：订单 ${order.amount_cents}，回调 ${notifyAmountCents}`,
+        'PAYMENT_AMOUNT_MISMATCH'
+      )
+    }
+
+    return applyOrderPaidTx(order, transactionId, rawNotify)
+  }
+
+  const redeemVipCodeTx = db.transaction((userId, rawCode) => {
+    const row = getUserById.get(userId)
+    if (!row) throw new Error('user not found')
+
+    const code = normalizeVipCode(rawCode)
+    if (!code) throw new Error('请输入会员邀请码')
+
+    const codeRow = getVipCode.get(code)
+    if (!codeRow || codeRow.status !== 'active') {
+      throw new Error('会员邀请码无效')
+    }
+    if (codeRow.expires_at && codeRow.expires_at < now()) {
+      throw new Error('会员邀请码已过期')
+    }
+    if (codeRow.max_uses && codeRow.used_count >= codeRow.max_uses) {
+      throw new Error('会员邀请码已用完')
+    }
+
+    const redeemedAt = now()
+    try {
+      insertVipRedemption.run({
+        id: idFactory('vipred'),
+        code,
+        userId,
+        redeemedAt,
+      })
+    } catch (err) {
+      if (err.code === 'SQLITE_CONSTRAINT_UNIQUE' || String(err.message || '').includes('UNIQUE')) {
+        throw new Error('该会员邀请码已经使用过')
+      }
+      throw err
+    }
+
+    incrementVipCodeUse.run({ code })
+    upsertMembership.run({ userId, source: 'vip_code', unlockedAt: redeemedAt })
+
+    return { status: 'ok', membership: getMembershipStatus(userId) }
+  })
+
+  function canDownloadDeepReport(userId) {
+    const membership = getMembershipStatus(userId)
+    if (membership.status !== 'active') {
+      return { allowed: false, code: 'MEMBERSHIP_REQUIRED', membership }
+    }
+    if (membership.downloadQuota.remaining <= 0) {
+      return { allowed: false, code: 'DOWNLOAD_QUOTA_EXHAUSTED', membership }
+    }
+    return { allowed: true, membership }
+  }
+
+  function recordDeepReportDownload({ userId, reportType, reportId, filename }) {
+    const check = canDownloadDeepReport(userId)
+    if (!check.allowed) {
+      const error = new Error(check.code === 'DOWNLOAD_QUOTA_EXHAUSTED' ? '深度报告下载次数已用完' : '请先开通会员')
+      error.code = check.code
+      error.membership = check.membership
+      throw error
+    }
+
+    insertDeepReportDownload.run({
+      id: idFactory('drdl'),
+      userId,
+      reportType: String(reportType || ''),
+      reportId: String(reportId || ''),
+      filename: String(filename || ''),
+      createdAt: now(),
+    })
+
+    return getMembershipStatus(userId)
+  }
 
   return {
     upsertWechatUser: upsertWechatUserTx,
@@ -411,14 +616,17 @@ function createCommerceStore({
     },
     getMembershipStatus,
     activateMembership,
+    redeemVipCode: redeemVipCodeTx,
+    canDownloadDeepReport,
+    recordDeepReportDownload,
     createPaymentOrder,
     attachPrepayId,
-    markOrderPaid: markOrderPaidTx,
+    markOrderPaid,
     getOrder(orderId) {
-      return toOrder(getOrderById.get(orderId))
+      return toOrder(expireStaleOrder(getOrderById.get(orderId)))
     },
     getOrderByTradeNo(outTradeNo) {
-      return toOrder(getOrderByTradeNo.get(outTradeNo))
+      return toOrder(expireStaleOrder(getOrderByTradeNo.get(outTradeNo)))
     },
     close() {
       db.close()

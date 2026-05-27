@@ -1,14 +1,16 @@
 # 微信小程序支付上线流程
 
-更新日期：2026-05-17
+更新日期：2026-05-26
 
 ## 目标
 
 在 3 天内把“深度填报会员”小程序支付链路推进到可交付上线状态：
 
 - 用户可在小程序内用微信支付 29 元解锁会员。
-- 用户邀请 3 位新用户完成基础资料后可免费解锁。
-- 大学深度研究、综合志愿报告、PDF 下载、家长分享必须由后端会员状态控制。
+- 用户邀请 5 位新用户完成基础资料后可免费解锁。
+- 用户输入后台配置的会员邀请码后可直接解锁会员。
+- 大学/专业深度研究在线阅读、综合志愿报告、PDF 下载、家长分享必须由后端会员状态控制。
+- 深度报告在线阅读不限次数；PDF 下载继续按深度报告下载额度控制。
 - 支付成功后，微信支付回调能可靠解锁会员。
 
 ## 当前代码已具备的能力
@@ -16,19 +18,20 @@
 - 后端已有会员、邀请、支付订单表和接口。
 - 后端已有微信登录、JSAPI 下单、支付回调解密、报告生成付费校验。
 - 小程序已有会员 API、会员 store、“我的”会员中心、报告页付费锁定态。
-- 需要补齐真实微信小程序和微信支付商户配置，再部署到公网服务。
+- 真实微信小程序、微信支付商户配置和公网 HTTPS 服务已经完成首轮联调；下一步重点是异常场景、邀请码和正式价格复测。
 
 ## 当前业务决策和账号状态
 
-截至 2026-05-17：
+截至 2026-05-26：
 
-- 小程序基本信息已填写，正在进行小程序备案。
-- 微信支付商户号尚未注册。
-- 小程序 AppID 和微信支付商户号尚未绑定。
+- 小程序备案已完成。
+- 微信支付开发链路已打通，1 元测试支付已真机验证成功。
+- 后端订单状态能变为 `paid`，会员状态能自动变为 `active/payment`。
 - 商品名确认：`深圳元说咨询`。
 - 价格确认：`29 元一次性全部解锁`，不再做 `9.9 元只解锁大学`。
 - 有效期确认：永久有效。
-- 域名方案确认：使用微信云托管提供的 HTTPS 域名，不再优先走阿里云域名备案路径。
+- 域名方案确认：使用已备案域名 `https://gaokao.aicoming.cn` 指向 47 服务器的 `gaokao-proxy`。
+- 剩余重点：邀请码生成/核销、支付异常与回调兜底、正式 29 元复测。
 
 ## 概念澄清
 
@@ -40,7 +43,7 @@
 
 2. 小程序备案
    - 这是小程序上线发布侧的备案要求。
-   - 你现在正在做的是这一项。
+   - 当前已完成。
 
 3. 微信支付商户号
    - 这是收款账户和支付结算主体。
@@ -48,8 +51,7 @@
 
 4. 后端 HTTPS 域名
    - 这是小程序请求后端接口和微信支付回调通知使用的公网地址。
-   - 如果继续使用当前 `gaokao-proxy` 后端，需要一个 HTTPS 域名指向后端服务。
-   - 如果完全改用微信云开发/云托管，则可以使用微信云提供的 HTTPS 域名，但后端部署形态要相应调整。
+   - 当前统一使用 `https://gaokao.aicoming.cn` 指向 47 服务器的 `gaokao-proxy`。
 
 ## 需要准备的微信支付参数
 
@@ -129,60 +131,31 @@
 https://api.example.com/api/payment/wechat/notify
 ```
 
-填入 `WECHAT_PAY_NOTIFY_URL`。如果当前只有 IP HTTP 服务，需要先准备域名和 HTTPS 证书，否则微信支付正式回调无法稳定上线。
+填入 `WECHAT_PAY_NOTIFY_URL`。当前项目已使用 `https://gaokao.aicoming.cn/api/payment/wechat/notify` 作为支付回调地址；如果未来迁移服务，仍必须保持公网 HTTPS 回调可访问。
 
 ## HTTPS 域名方案判断
 
-### 方案 A：使用微信云托管 HTTPS 域名（当前选定）
+### 当前方案：继续使用 47 服务器 + `gaokao.aicoming.cn` HTTPS 域名
 
-适合当前 3 天上线目标。当前项目已经有 `gaokao-proxy` Express 后端，报告生成、会员、支付订单都在这个服务里。改为微信云托管后，后端仍然保留 Express 形态，但部署到云托管容器，由云托管提供公网 HTTPS 访问地址。
+这是当前线上路径。`gaokao-proxy` 仍部署在 `47.113.125.147`，由 Nginx 暴露 `https://gaokao.aicoming.cn`，小程序 `VITE_API_BASE` 使用该域名，支付回调地址使用 `https://gaokao.aicoming.cn/api/payment/wechat/notify`。
 
-需要做：
+已完成：
 
-- 开通微信云开发/云托管环境。
-- 创建云托管服务，例如 `gaokao-proxy`。
-- 将当前 `gaokao-proxy` 后端以 Node/Express 服务部署到云托管。
-- 配置云托管环境变量，包括 Dify/DeepSeek、报告路径、会员支付、微信支付参数。
-- 获取云托管提供的 HTTPS 访问地址。
-- 支付回调地址设置为：`https://云托管域名/api/payment/wechat/notify`。
-- 小程序调用方式二选一：
-  - 短期最小改动：继续使用 `uni.request`，把 `VITE_API_BASE` 改成云托管 HTTPS 地址。
-  - 云托管原生方式：改造 API 层为 `wx.cloud.callContainer`，通过 `X-WX-SERVICE` 调用云托管服务。
+- DNS A 记录指向 `47.113.125.147`。
+- HTTPS 证书和 HTTP 到 HTTPS 跳转已配置。
+- 小程序 request/downloadFile 合法域名已配置。
+- 公共 health、综合报告 HTML/PDF、会员态深度 PDF、分数 API 反代均已离线验收。
+- 1 元测试支付已真机验收成功。
 
-风险：
+仍需完成：
 
-- 云托管容器文件系统和本地服务器不同，SQLite 数据库和报告 HTML/PDF 输出要确认是否可持久化。
-- 当前报告生成依赖本地数据目录，部署前要确认数据文件是否随容器一起打包，或者迁到云存储/数据库。
-- 微信支付回调必须使用公网 HTTPS URL，不能只依赖小程序端 `callContainer`。
-
-### 方案 B：继续使用现有服务器，配置阿里云域名
-
-这是备选方案。需要一个已备案域名、HTTPS 证书、DNS、Nginx。`aicoming.com.cn` 当前第三方查询结果显示未备案，所以暂不作为 3 天上线主方案。
-
-需要做：
-
-- 找到已备案域名，或完成新域名 ICP 备案。
-- 配置子域名、HTTPS 证书、Nginx 反代。
-- 小程序后台配置 request 合法域名。
-- 后端 `.env` 设置：
-  - `REPORT_BASE_URL=https://api.example.com`
-  - `WECHAT_PAY_NOTIFY_URL=https://api.example.com/api/payment/wechat/notify`
-  - 小程序 `VITE_API_BASE=https://api.example.com`
-
-风险：
-
-- 新域名备案通常不适合 3 天排期。
-- 需要额外维护服务器 HTTPS、证书续期和 Nginx。
+- 支付异常场景和回调边界测试。
+- 邀请码生成/核销流程。
+- 恢复 29 元正式价格后复测。
 
 ### 当前建议
 
-为了 3 天内交付上线，优先走方案 A：微信云托管 HTTPS 域名。
-
-实施策略：
-
-- Day 1 先部署一个最小云托管版 `gaokao-proxy`，确认 `/api/health`、`/api/auth/wechat-login`、`/api/payment/create` 可访问。
-- 如果 SQLite 或报告输出在云托管持久化上出现风险，短期改为云数据库/云存储，或者临时保留现有服务器作为报告生成服务，由云托管做支付与会员网关。
-- 支付回调统一使用云托管 HTTPS 地址。
+继续走 `https://gaokao.aicoming.cn`。这条链路已经覆盖小程序合法域名、报告 PDF 下载、会员态深度 PDF、分数 API 反代和 1 元真机支付验收；剩余工作集中在邀请码生成/核销、支付异常回调兜底和恢复 29 元正式价格后的复测。
 
 ## 我们当前项目的后端配置模板
 
@@ -192,7 +165,9 @@ https://api.example.com/api/payment/wechat/notify
 COMMERCE_DB_PATH=/opt/gaokao-proxy/data/gaokao-commerce.sqlite
 COMMERCE_SESSION_SECRET=请生成一个长随机字符串
 MEMBERSHIP_PRICE_CENTS=2900
-MEMBERSHIP_INVITE_REQUIRED=3
+MEMBERSHIP_INVITE_REQUIRED=5
+MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT=10
+MEMBERSHIP_VIP_CODES=FENGGE2026
 
 WECHAT_APPID=小程序AppID
 WECHAT_SECRET=小程序AppSecret
@@ -202,49 +177,54 @@ WECHAT_PAY_PRIVATE_KEY_PATH=/opt/gaokao-proxy/certs/apiclient_key.pem
 WECHAT_PAY_PUBLIC_KEY_ID=微信支付公钥ID
 WECHAT_PAY_PUBLIC_KEY_PATH=/opt/gaokao-proxy/certs/wechatpay_public_key.pem
 WECHAT_PAY_API_V3_KEY=APIv3密钥
-WECHAT_PAY_NOTIFY_URL=https://云托管域名/api/payment/wechat/notify
+WECHAT_PAY_NOTIFY_URL=https://gaokao.aicoming.cn/api/payment/wechat/notify
 ```
 
 ## 3 天上线排期
 
 ### Day 1：账号、证书、域名和配置
 
-- 确认小程序 AppID、AppSecret、认证状态。
-- 确认或开通微信支付商户号。
-- 完成小程序 AppID 与商户号绑定。
-- 生成商户 API 证书和 API v3 密钥。
-- 准备 HTTPS 域名和回调地址。
-- 把证书、私钥、公钥安全上传到服务器。
-- 在测试环境 `.env` 配置全部参数。
+- [x] 确认小程序 AppID、AppSecret、认证状态。
+- [x] 确认或开通微信支付商户号。
+- [x] 完成小程序 AppID 与商户号绑定。
+- [x] 生成商户 API 证书和 API v3 密钥。
+- [x] 准备 HTTPS 域名和回调地址。
+- [x] 把证书、私钥、公钥安全上传到服务器。
+- [x] 在测试环境 `.env` 配置全部参数。
 
 交付标准：
 
-- 后端能成功调用微信 `jscode2session` 换取 `openid`。
-- 后端能成功调用 JSAPI 下单接口拿到 `prepay_id`。
+- [x] 后端能成功调用微信 `jscode2session` 换取 `openid`。
+- [x] 后端能成功调用 JSAPI 下单接口拿到 `prepay_id`。
 
 ### Day 2：联调支付和会员解锁
 
-- 小程序真机发起会员支付。
-- 验证 `uni.requestPayment` 能拉起微信支付。
-- 支付成功后验证微信回调到达后端。
-- 验证订单状态变为 `paid`。
-- 验证会员状态变为 `active`。
-- 验证报告生成接口未登录/未付费返回 401/402。
-- 验证付费后可生成综合报告。
+- [x] 小程序真机发起会员支付。
+- [x] 验证 `uni.requestPayment` 能拉起微信支付。
+- [x] 支付成功后验证微信回调到达后端。
+- [x] 验证订单状态变为 `paid`。
+- [x] 验证会员状态变为 `active`。
+- [ ] 验证报告生成接口未登录/未付费返回 401/402。
+- [ ] 验证付费后可生成综合报告。
+- [ ] 验证付费后可打开深度报告在线阅读页，且不减少 PDF 下载额度。
 
 交付标准：
 
-- 支付成功后 5-10 秒内会员自动解锁。
-- 后端订单、会员状态和小程序页面状态一致。
+- [x] 支付成功后 5-10 秒内会员自动解锁。
+- [x] 后端订单、会员状态和小程序页面状态一致。
+
+2026-05-26 记录：本轮为 1 元测试支付，后端 `MEMBERSHIP_PRICE_CENTS=100`；正式发布前需要恢复 `2900` 并再跑一次 29 元订单。
 
 ### Day 3：上线验收和兜底
 
-- 配置正式环境参数。
-- 小程序体验版全链路验收。
-- 检查错误提示、支付取消、支付失败、重复支付、重复回调。
-- 检查邀请 3 人解锁流程。
-- 检查报告生成、PDF 下载、家长分享。
-- 准备上线回滚方案和问题排查清单。
+- [ ] 配置正式环境参数。
+- [ ] 小程序体验版全链路验收。
+- [ ] 检查错误提示、支付取消、支付失败、重复支付、重复回调。
+- [ ] 检查邀请 5 人解锁流程。
+- [ ] 检查会员邀请码解锁流程。
+- [ ] 检查学校/专业深度 PDF 下载次数耗尽提示。
+- [ ] 检查报告生成、PDF 下载、家长分享。
+- [ ] 准备上线回滚方案和问题排查清单。
 
 交付标准：
 
@@ -254,14 +234,10 @@ WECHAT_PAY_NOTIFY_URL=https://云托管域名/api/payment/wechat/notify
 
 ## 待确认问题
 
-1. 小程序是否已经通过微信认证，还是目前只有小程序备案在进行中？
-2. 微信支付商户号准备以哪个主体注册：公司、个体工商户，还是其他主体？
-3. 小程序主体和未来商户号主体是否一致？
-4. `ai.com.cn` 是否已经完成 ICP 备案？是否确定这个域名拼写就是 `ai.com.cn`？
-5. 微信云托管环境 ID 是什么？
-6. 云托管服务名是否确定为 `gaokao-proxy`？
-7. 是否先走最小改动 `uni.request + 云托管 HTTPS 域名`，还是直接改成 `wx.cloud.callContainer`？
-8. 是否需要开发测试期启用 `WECHAT_LOGIN_MOCK=1`，等商户号和证书齐全后再切真实微信登录？
+1. 正式 29 元复测安排在哪个测试账号上执行？
+2. 邀请码需要面向哪些渠道发放：内部测试、种子用户、合作老师、售后补偿？
+3. 邀请码是否需要一次性码、多人码、过期时间和备注字段？
+4. 支付异常日志是否需要接入外部告警，还是先用 PM2/Nginx 日志排查？
 
 ## 已确认问题
 
@@ -269,7 +245,9 @@ WECHAT_PAY_NOTIFY_URL=https://云托管域名/api/payment/wechat/notify
 2. 价格：`29 元一次性全部解锁`。
 3. 有效期：永久有效。
 4. 暂不做 `9.9 元只解锁大学`。
-5. 域名方案：使用微信云托管提供的 HTTPS 域名。
+5. 域名方案：使用 `https://gaokao.aicoming.cn` 指向 47 服务器。
+6. 小程序备案：已完成。
+7. 微信支付开发：1 元测试支付已打通。
 
 ## 参考文档
 

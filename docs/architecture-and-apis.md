@@ -12,7 +12,7 @@
 ```mermaid
 flowchart TD
     subgraph ClientLayer["客户端层 (Client Layer)"]
-        MP["微信小程序\n(UniApp Vue 3 / Pinia)\nAPI: 47.113.125.147"]
+        MP["微信小程序\n(UniApp Vue 3 / Pinia)\nAPI: https://gaokao.aicoming.cn"]
     end
 
     subgraph GatewayLayer["网关与代理层 (Gateway & Proxy Layer - Server 47)"]
@@ -49,7 +49,7 @@ flowchart TD
 
     %% 网关到 159 服务器
     Proxy -->|RAG 对话 DIFY_API_URL| Dify
-    Proxy -.->|Gaokao 分数线查询 (SUSPECT)| GaokaoApi
+    Proxy -.->|Gaokao 分数线查询\nSCORE_API_URL=/score-api| GaokaoApi
     Proxy -->|直接读取专业/院校评估数据| Postgres
 ```
 
@@ -59,7 +59,7 @@ flowchart TD
    - 微信登录 Code 换取 OpenID，分发受秘钥保护的 JWT `sessionToken`。
    - 微信支付 JSAPI 统一下单，签名分发，接收官方异步支付回调并更新会员状态。
    - 对接 Dify 智能体进行 SSE 流式数据管道转发，并实时**拦截、过滤并剔除 `<think>...</think>` 思维链**，保证极佳的用户阅读体验。
-   - 实现用户测评档案收集与完整性强校验（不少于 22 道题及两项测评），利用 Puppeteer 懒加载生成 PDF，并冷却频繁请求。
+   - 实现用户测评档案收集与完整性强校验（当前 21 道有效问卷题 + MBTI + Holland），利用 Puppeteer 懒加载生成 PDF，并冷却频繁请求。
    - 直接读取 PostgreSQL 中的结构化专业/院校三级深度评估数据，对免费用户脱敏脱密，对付费用户完整呈现。
 3. **Dify 引擎 (Dify Engine)**：运行于 `159.75.110.157`，提供流式 RAG 问答及专业逻辑工作流，集成 DeepSeek 和 Gemini 语言模型，保障高考咨询政策的权威解答。
 4. **数据引擎 (gaokao-api & Postgres)**：PostgreSQL 内含高价值数据表 `majors`（专业评估数据）、`universities`（院校评估数据）和 `stats_overview`（全盘评估数据统计）。`gaokao-api` 在 Dify 后端容器中运行，提供分数线与录取规则支持。
@@ -85,10 +85,10 @@ npm install
 ```
 
 #### 第二步：环境变量与基础配置
-确保基础路径配置文件 [gaokao-miniprogram/src/config.js](file:///Users/MarkHuang/Desktop/高考志愿填报项目/gaokao-miniprogram/src/config.js) 的 IP 或域名指向业务网关：
+确保基础路径配置文件 [gaokao-miniprogram/src/config.js](file:///Users/MarkHuang/Desktop/高考志愿填报项目/gaokao-miniprogram/src/config.js) 和 `.env` 的域名指向业务网关：
 ```javascript
-// 开发环境指向本地代理，生产环境指向公网代理服务器
-export const API_BASE = 'http://47.113.125.147' // 或本地 http://127.0.0.1:3001
+// 未显式配置时，默认指向已备案 HTTPS 网关
+export const API_BASE = import.meta.env.VITE_API_BASE || 'https://gaokao.aicoming.cn'
 ```
 
 #### 第三步：启动微信小程序本地开发构建
@@ -125,8 +125,9 @@ npm install
 在 `gaokao-proxy/` 目录下创建并编辑私密环境变量文件 `.env`：
 ```env
 # 核心智能体与大盘 API 配置
-DIFY_API_URL=http://159.75.110.157:8080
+DIFY_API_URL=http://159.75.110.157
 DIFY_API_KEY=app-YOUR_DIFY_API_KEY_HERE
+SCORE_API_URL=http://159.75.110.157/score-api
 
 # 业务数据库配置
 PG_HOST=159.75.110.157
@@ -137,15 +138,21 @@ PG_PASSWORD=YOUR_DB_PASSWORD_HERE
 
 # 微信授权及支付参数 (生产上线用)
 WECHAT_APPID=wx_your_appid
-WECHAT_MCHID=your_mch_id
-WECHAT_API_V3_KEY=your_apiv3_secret_key
-WECHAT_CERT_SERIAL=your_mch_cert_serial_number
-WECHAT_PRIVATE_KEY_PATH=/path/to/apiclient_key.pem
+WECHAT_MCH_ID=your_mch_id
+WECHAT_PAY_API_V3_KEY=your_apiv3_secret_key
+WECHAT_PAY_SERIAL_NO=your_mch_cert_serial_number
+WECHAT_PAY_PUBLIC_KEY_ID=PUB_KEY_ID_xxxxxxxxx
+WECHAT_PAY_PUBLIC_KEY_PATH=/opt/gaokao-proxy/certs/wechatpay_public_key.pem
+WECHAT_PAY_PRIVATE_KEY_PATH=/opt/gaokao-proxy/certs/apiclient_key.pem
 
 # 基础运行时配置
 PORT=3001
 JWT_SECRET=your-jwt-auth-session-secret-key
-REPORT_BASE_URL=http://47.113.125.147
+REPORT_BASE_URL=https://gaokao.aicoming.cn
+WECHAT_PAY_NOTIFY_URL=https://gaokao.aicoming.cn/api/payment/wechat/notify
+MEMBERSHIP_INVITE_REQUIRED=5
+MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT=10
+MEMBERSHIP_VIP_CODES=FENGGE2026
 ```
 
 #### 第三步：运行后端网关
@@ -243,14 +250,19 @@ python3 data/upload_to_dify.py
           "code": "usr_789abcde123456",
           "count": 0,
           "unlocked": false,
-          "required": 3
+          "required": 5
+        },
+        "downloadQuota": {
+          "limit": 10,
+          "used": 0,
+          "remaining": 10
         }
       },
       "invite": {
         "code": "usr_789abcde123456",
         "count": 0,
         "unlocked": false,
-        "required": 3
+        "required": 5
       }
     }
     ```
@@ -260,16 +272,21 @@ python3 data/upload_to_dify.py
 *   **请求 Header**：
     *   `Authorization: Bearer eyJhbGciOiJIUzI1Ni... (必需)`
 *   **成功响应 (200 OK)**：
-    *   **已激活会员（付费解锁或邀请满 3 人解锁）**：
+    *   **已激活会员（付费解锁、邀请满 5 人解锁或会员邀请码解锁）**：
         ```json
         {
           "status": "active",
           "expiresAt": "2027-05-20T08:11:59.000Z",
           "invite": {
             "code": "usr_789abcde123456",
-            "count": 3,
+            "count": 5,
             "unlocked": true,
-            "required": 3
+            "required": 5
+          },
+          "downloadQuota": {
+            "limit": 10,
+            "used": 1,
+            "remaining": 9
           }
         }
         ```
@@ -282,7 +299,12 @@ python3 data/upload_to_dify.py
             "code": "usr_789abcde123456",
             "count": 1,
             "unlocked": false,
-            "required": 3
+            "required": 5
+          },
+          "downloadQuota": {
+            "limit": 10,
+            "used": 0,
+            "remaining": 10
           }
         }
         ```
@@ -305,11 +327,58 @@ python3 data/upload_to_dify.py
           "code": "usr_789abcde123456",
           "count": 2,
           "unlocked": false,
-          "required": 3
+          "required": 5
+        },
+        "downloadQuota": {
+          "limit": 10,
+          "used": 0,
+          "remaining": 10
         }
       }
     }
     ```
+
+#### ④ 兑换会员邀请码
+*   **请求路由**：`POST /api/membership/redeem-code`
+*   **请求说明**：用户在报告页输入后台配置的会员邀请码后，直接解锁 VIP 报告权益。邀请码大小写不敏感，后端会做去空格和大写归一化。
+*   **请求 Header**：
+    *   `Authorization: Bearer <sessionToken> (必需)`
+    *   `Content-Type: application/json`
+*   **请求 Body 参数**：
+    ```json
+    {
+      "code": "FENGGE2026"
+    }
+    ```
+*   **成功响应 (200 OK)**：
+    ```json
+    {
+      "code": "VIP_CODE_REDEEMED",
+      "membership": {
+        "status": "active",
+        "expiresAt": "2027-05-20T08:11:59.000Z",
+        "invite": {
+          "code": "usr_789abcde123456",
+          "count": 0,
+          "unlocked": false,
+          "required": 5
+        },
+        "downloadQuota": {
+          "limit": 10,
+          "used": 0,
+          "remaining": 10
+        }
+      }
+    }
+    ```
+*   **邀请码无效或已兑换响应 (400 Bad Request)**：
+    ```json
+    {
+      "error": "会员邀请码无效",
+      "code": "VIP_CODE_INVALID"
+    }
+    ```
+    重复兑换时当前实现同样返回 `400`，`error` 文案会说明“该会员邀请码已兑换”。
 
 ---
 
@@ -631,7 +700,7 @@ python3 data/upload_to_dify.py
 *   **成功响应 (200 OK)**：
     ```json
     {
-      "url": "http://47.113.125.147/reports/usr_789abcde123456_20260520-17792377.html"
+      "url": "https://gaokao.aicoming.cn/reports/usr_789abcde123456_20260520-17792377.html"
     }
     ```
 *   **测评未做完响应 (400 Bad Request)**：
@@ -656,14 +725,85 @@ python3 data/upload_to_dify.py
         "code": "usr_789abcde123456",
         "count": 1,
         "unlocked": false,
-        "required": 3
+        "required": 5
+      },
+      "downloadQuota": {
+        "limit": 10,
+        "used": 0,
+        "remaining": 10
       }
     }
     ```
 
 ---
 
-### 3.5 全盘评估状态数据统计接口 (System Stats)
+### 3.5 学校/专业深度报告阅读与 PDF 下载接口 (Deep Report Reader & PDF Download)
+
+#### ① 生成在线阅读短链
+*   **请求路由**：`POST /api/reports/deep/view-token`
+*   **请求说明**：会员在小程序中换取 10 分钟有效的在线 HTML 阅读链接。在线阅读不消耗 PDF 下载额度；PDF 下载才消耗额度。
+*   **请求 Header**：
+    *   `Authorization: Bearer <sessionToken> (必需)`
+    *   `Content-Type: application/json`
+*   **请求 Body 参数**：
+    ```json
+    {
+      "type": "major",
+      "id": "080901"
+    }
+    ```
+*   **成功响应 (200 OK)**：
+    ```json
+    {
+      "url": "https://gaokao.aicoming.cn/reports/deep/view/<signed-token>",
+      "expiresIn": 600
+    }
+    ```
+*   **在线阅读页**：`GET /reports/deep/view/<signed-token>` 返回已渲染 HTML，包含目录、摘要卡片、正文排版、页面内搜索、高亮和打印。
+
+#### ② 下载学校或专业深度研究 PDF
+*   **请求路由**：`GET /api/reports/deep/pdf?type=major&id=080901`
+*   **请求说明**：会员可下载学校深度研究报告和专业研究报告，下载成功会消耗 1 次深度 PDF 下载额度。
+*   **请求 Header**：
+    *   `Authorization: Bearer <sessionToken> (必需)`
+*   **成功响应 (200 OK)**：
+    *   响应体为 `application/pdf`。
+    *   Header `X-Deep-Report-Downloads-Remaining` 返回本次下载后的剩余次数。
+*   **非会员阻拦响应 (402 Payment Required)**：
+    ```json
+    {
+      "error": "请先解锁深度填报会员以下载深度研究报告",
+      "code": "MEMBERSHIP_REQUIRED",
+      "priceCents": 2900,
+      "invite": {
+        "code": "usr_789abcde123456",
+        "count": 1,
+        "unlocked": false,
+        "required": 5
+      },
+      "downloadQuota": {
+        "limit": 10,
+        "used": 0,
+        "remaining": 10
+      }
+    }
+    ```
+*   **下载次数耗尽响应 (429 Too Many Requests)**：
+    ```json
+    {
+      "error": "深度报告下载次数已用完",
+      "code": "DOWNLOAD_QUOTA_EXHAUSTED",
+      "downloadQuota": {
+        "limit": 10,
+        "used": 10,
+        "remaining": 0
+      }
+    }
+    ```
+
+---
+
+### 3.6 全盘评估状态数据统计接口 (System Stats)
 
 #### ① 获取当前系统评估绿黄红灯数量大盘指标
 *   **请求路由**：`GET /api/reports/stats`

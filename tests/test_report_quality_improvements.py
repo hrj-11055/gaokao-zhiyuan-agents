@@ -78,7 +78,37 @@ class ReportQualityImprovementTests(unittest.TestCase):
             assert.equal(html.includes('highlight-box'), true)
             assert.equal(html.includes('font-size: 14px'), true)
             assert.equal(html.includes('font-size: 26px'), true)
+            assert.equal(html.includes('Noto Sans CJK SC'), true)
         """)
+
+    def test_report_pdf_generation_forces_cjk_fonts_and_regenerates_old_pdfs(self):
+        builder = self.read("gaokao-proxy/lib/report-builder.js")
+        pdf_generator = self.read("gaokao-proxy/lib/pdf-generator.js")
+        server = self.read("gaokao-proxy/server.js")
+
+        for snippet in [
+            "gaokao-report-cjk-font-fix",
+            "Noto Sans CJK SC",
+            "WenQuanYi Micro Hei",
+        ]:
+            self.assertIn(snippet, builder)
+
+        for snippet in [
+            "PDF_GENERATOR_VERSION",
+            "document.fonts.ready",
+            "isGeneratedPdfFresh",
+            "Noto Sans CJK SC",
+        ]:
+            self.assertIn(snippet, pdf_generator)
+
+        self.assertIn("isGeneratedPdfFresh", server)
+        self.assertIn("PDF is stale", server)
+
+    def test_report_generation_timeout_matches_real_wait_time(self):
+        builder = self.read("gaokao-proxy/lib/report-builder.js")
+
+        self.assertIn("REPORT_GENERATION_TIMEOUT_MS", builder)
+        self.assertIn("REPORT_GENERATION_TIMEOUT_MS || 170000", builder)
 
     def test_miniprogram_deep_report_cards_expose_actionable_summary(self):
         page = self.read("gaokao-miniprogram/src/pages/deep-report-download/deep-report-download.vue")

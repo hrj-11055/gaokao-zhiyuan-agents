@@ -1,131 +1,125 @@
 <template>
   <view class="page">
-    <!-- subtle radial gradient overlay -->
-    <view class="bg-glow-soft" />
+    <view class="bg-glow-teal" />
+    <view class="bg-glow-purple" />
 
-    <!-- brand -->
     <view class="brand">
-      <image class="brand-logo" src="/static/logo.png" mode="aspectFit" />
-      <text class="brand-name">峰哥咨询参考</text>
+      <view class="brand-top">
+        <image class="brand-logo" src="/static/logo.png" mode="aspectFit" />
+        <text class="brand-name">高考志愿通</text>
+      </view>
       <text class="brand-greeting">{{ greetingText }}</text>
     </view>
 
-    <!-- progress card -->
-    <view class="progress-card">
-      <view class="progress-header">
-        <text class="progress-title">我的志愿报告</text>
-        <text class="progress-fraction">{{ completedSteps }}/4 步</text>
-      </view>
-      <view class="progress-bar-track">
-        <view
-          class="progress-bar-fill"
-          :class="{ ready: isReady }"
-          :style="{ width: progressPercent + '%' }"
-        />
-      </view>
-      <text class="progress-hint">{{ progressHint }}</text>
+    <!-- 总体进度 -->
+    <view class="progress-section">
+      <text class="progress-title">你的升学之路</text>
+      <text class="progress-fraction">{{ completedSteps }}/4 步</text>
     </view>
 
-    <!-- step 1 -->
-    <view
-      class="step-card"
-      :class="step1ClassObj"
-      @click="onClickStep1"
-    >
-      <view class="step-icon" :class="step1ClassObj">
-        <text class="step-icon-text">{{ step1IconText }}</text>
+    <view class="timeline-container">
+      <view class="timeline-line">
+        <view class="timeline-progress" :style="{ height: progressPercent + '%' }"></view>
       </view>
-      <view class="step-body">
-        <text class="step-title">填写基础信息</text>
-        <text class="step-desc" :class="step1ClassObj">{{ step1DescText }}</text>
-      </view>
-      <text v-if="statusFor(1) === StepStatus.ACTIVE" class="step-arrow">›</text>
-    </view>
 
-    <!-- step 2 -->
-    <view
-      class="step-card"
-      :class="step2ClassObj"
-      @click="onClickStep2"
-    >
-      <view class="step-icon" :class="step2ClassObj">
-        <text class="step-icon-text">{{ step2IconText }}</text>
-      </view>
-      <view class="step-body">
-        <text class="step-title">和峰哥聊聊志愿</text>
-        <text class="step-desc" :class="step2ClassObj">{{ step2DescText }}</text>
-      </view>
-      <text v-if="statusFor(2) === StepStatus.ACTIVE" class="step-arrow">›</text>
-    </view>
-
-    <!-- step 3 -->
-    <view
-      class="step-card"
-      :class="[step3ClassObj, { expanded: statusFor(3) === StepStatus.ACTIVE }]"
-      @click="onClickStep3"
-    >
-      <view class="step-row-top">
-        <view class="step-icon" :class="step3ClassObj">
-          <text class="step-icon-text">{{ step3IconText }}</text>
+      <!-- step 1 -->
+      <view class="timeline-item" @click="onClickStep1">
+        <view class="timeline-dot" :class="step1ClassObj">
+          <text v-if="statusFor(1) === StepStatus.DONE" class="dot-icon">✓</text>
         </view>
-        <view class="step-body">
-          <text class="step-title">完成 3 项测评</text>
-          <text class="step-desc" :class="step3ClassObj">{{ step3DescText }}</text>
+        <view class="step-card glass-card" :class="step1ClassObj">
+          <view class="step-header">
+            <text class="step-title">1. 完善个人信息</text>
+            <view v-if="statusFor(1) === StepStatus.DONE" class="status-badge done">✓ 已完成</view>
+          </view>
+          <text class="step-desc">{{ step1DescText }}</text>
         </view>
-        <text v-if="statusFor(3) === StepStatus.ACTIVE" class="step-arrow">›</text>
       </view>
 
-      <!-- expanded assessment chips (only when active) -->
-      <view v-if="statusFor(3) === StepStatus.ACTIVE" class="step-expanded">
-        <view class="chips-row">
-          <view class="chip" :class="{ done: questionnaireDone }">
-            <text class="chip-text">五环 {{ chipStatus('questionnaire') }}</text>
+      <!-- step 2 -->
+      <view class="timeline-item" @click="onClickStep2">
+        <view class="timeline-dot" :class="step2ClassObj">
+          <text v-if="statusFor(2) === StepStatus.DONE" class="dot-icon">✓</text>
+        </view>
+        <view class="step-card glass-card ai-card" :class="step2ClassObj">
+          <view class="ai-card-content">
+            <view class="ai-info">
+              <text class="step-title">2. 与 AI 助手交流</text>
+              <text class="step-desc">{{ step2DescText }}</text>
+            </view>
+            <view class="ai-avatar-wrapper">
+              <view class="ai-avatar-glow"></view>
+              <view class="ai-avatar">🤖</view>
+            </view>
           </view>
-          <view class="chip" :class="{ done: mbtiDone }">
-            <text class="chip-text">MBTI {{ chipStatus('mbti') }}</text>
-          </view>
-          <view class="chip" :class="{ done: hollandDone }">
-            <text class="chip-text">霍兰德 {{ chipStatus('holland') }}</text>
+          <view v-if="statusFor(2) === StepStatus.ACTIVE" class="cta-btn">
+            <text class="cta-btn-text">开始对话</text>
           </view>
         </view>
-        <view v-if="nextAssessment" class="cta-btn" @click.stop="onContinueAssessment">
-          <text class="cta-btn-text">{{ nextAssessmentCtaText }}</text>
+      </view>
+
+      <!-- step 3 -->
+      <view class="timeline-item" @click="onClickStep3">
+        <view class="timeline-dot" :class="step3ClassObj">
+          <text v-if="statusFor(3) === StepStatus.DONE" class="dot-icon">✓</text>
+        </view>
+        <view class="step-card glass-card" :class="[step3ClassObj, { expanded: statusFor(3) === StepStatus.ACTIVE }]">
+          <view class="step-header">
+            <text class="step-title">3. 完成背景测试</text>
+            <view v-if="statusFor(3) === StepStatus.DONE" class="status-badge done">✓ 已完成</view>
+            <view v-else-if="statusFor(3) === StepStatus.LOCKED" class="status-badge locked">待解锁</view>
+          </view>
+          <text class="step-desc">{{ step3DescText }}</text>
+
+          <view v-if="statusFor(3) === StepStatus.ACTIVE" class="step-expanded">
+            <view class="chips-row">
+              <view class="chip" :class="{ done: questionnaireDone }">
+                <text class="chip-text">五环 {{ questionnaireDone ? '✓' : `已答 ${questionnaire.completedCount} / ${QUESTIONNAIRE_REQUIRED_COUNT} 题` }}</text>
+              </view>
+              <view class="chip" :class="{ done: mbtiDone }">
+                <text class="chip-text">MBTI {{ chipStatus('mbti') }}</text>
+              </view>
+              <view class="chip" :class="{ done: hollandDone }">
+                <text class="chip-text">霍兰德 {{ chipStatus('holland') }}</text>
+              </view>
+            </view>
+            <view v-if="nextAssessment" class="cta-btn sm" @click.stop="onContinueAssessment">
+              <text class="cta-btn-text">{{ nextAssessmentCtaText }}</text>
+            </view>
+          </view>
         </view>
       </view>
-    </view>
 
-    <!-- step 4 -->
-    <view
-      class="step-card"
-      :class="step4ClassObj"
-      @click="onClickStep4"
-    >
-      <view class="step-icon" :class="step4ClassObj">
-        <text class="step-icon-text">{{ step4IconText }}</text>
+      <!-- step 4 -->
+      <view class="timeline-item" @click="onClickStep4">
+        <view class="timeline-dot" :class="step4ClassObj">
+          <text v-if="step4Status === StepStatus.DONE" class="dot-icon">✓</text>
+          <text v-else-if="step4Status === StepStatus.LOCKED" class="dot-icon locked">🔒</text>
+        </view>
+        <view class="step-card glass-card" :class="step4ClassObj">
+          <view class="step-header">
+            <text class="step-title">4. 生成专属报告</text>
+            <view v-if="step4Status === StepStatus.DONE" class="status-badge done">✓ 已生成</view>
+          </view>
+          <text class="step-desc">{{ step4DescText }}</text>
+          
+          <!-- report hero embedded in step 4 -->
+          <view v-if="step3Done && !membershipStore.isActive && step4Status !== StepStatus.DONE" class="report-hero" @click.stop="goReport">
+            <view class="hero-content">
+              <text class="hero-price">{{ MEMBERSHIP_PRICE_LABEL }}</text>
+              <text class="hero-label">一次解锁</text>
+            </view>
+            <view class="hero-cta">
+              <text class="hero-cta-text">立即生成</text>
+            </view>
+          </view>
+        </view>
       </view>
-      <view class="step-body">
-        <text class="step-title">生成志愿报告</text>
-        <text class="step-desc" :class="step4ClassObj">{{ step4DescText }}</text>
-      </view>
-      <text v-if="step4Status === StepStatus.ACTIVE" class="step-arrow">›</text>
-    </view>
-
-    <!-- report hero (only when step3Done && !member) -->
-    <view v-if="step3Done && !membershipStore.isActive" class="report-hero" @click="goReport">
-      <view class="hero-glow" />
-      <view class="hero-content">
-        <text class="hero-price">¥29</text>
-        <text class="hero-label">一次解锁</text>
-      </view>
-      <view class="hero-cta">
-        <text class="hero-cta-text">立即生成报告</text>
-      </view>
-      <text class="hero-invite-hint">邀请 3 人免费</text>
     </view>
 
     <!-- disclaimer -->
     <view class="disclaimer">
-      <text class="disclaimer-text">结果仅供志愿填报参考，请以各省教育考试院和高校官方信息为准。</text>
+      <text class="disclaimer-text">结果仅供参考，请结合官方信息为准</text>
       <text class="privacy-link" @click="goPrivacy">《隐私保护指引》</text>
     </view>
 
@@ -135,11 +129,10 @@
     <!-- profile bottom sheet -->
     <view v-if="showProfileSheet" class="sheet">
       <view class="sheet-header">
-        <text class="sheet-title">填写基础信息</text>
+        <text class="sheet-title">完善个人信息</text>
         <text class="sheet-close" @click="closeProfileSheet">✕</text>
       </view>
 
-      <!-- province picker -->
       <view class="sheet-field">
         <text class="sheet-label">📍 目标省份</text>
         <picker :range="provinces" @change="onProvinceChange">
@@ -147,7 +140,6 @@
         </picker>
       </view>
 
-      <!-- category picker -->
       <view class="sheet-field">
         <text class="sheet-label">📚 考生科目</text>
         <picker :range="categories" @change="onCategoryChange">
@@ -155,37 +147,18 @@
         </picker>
       </view>
 
-      <!-- score input -->
       <view class="sheet-field">
         <text class="sheet-label">⚡ 高考分数</text>
-        <input
-          class="sheet-input"
-          type="number"
-          :value="draft.score"
-          maxlength="3"
-          placeholder="输入分数"
-          placeholder-class="sheet-value"
-          @input="onDraftScoreInput"
-        />
+        <input class="sheet-input" type="number" :value="draft.score" maxlength="3" placeholder="输入分数" placeholder-class="sheet-value" @input="onDraftScoreInput" />
       </view>
 
-      <!-- rank input -->
       <view class="sheet-field">
         <text class="sheet-label">🎯 全省位次（选填）</text>
-        <input
-          class="sheet-input"
-          type="number"
-          :value="draft.rank"
-          maxlength="8"
-          placeholder="输入位次"
-          placeholder-class="sheet-value"
-          @input="onDraftRankInput"
-        />
+        <input class="sheet-input" type="number" :value="draft.rank" maxlength="8" placeholder="输入位次" placeholder-class="sheet-value" @input="onDraftRankInput" />
       </view>
 
-      <!-- save button -->
       <view class="sheet-save" :class="{ disabled: !sheetReady }" @click="saveProfileSheet">
-        <text style="color: inherit; font-weight: inherit; font-size: inherit;">保存</text>
+        <text style="color: inherit; font-weight: inherit; font-size: inherit;">保存并继续</text>
       </view>
     </view>
   </view>
@@ -196,7 +169,13 @@ import { computed, ref, onMounted, onUnmounted } from 'vue'
 import { onLoad, onShow } from '@dcloudio/uni-app'
 import { useHomeProgress, StepStatus } from '../../composables/useHomeProgress.js'
 import { useMembershipStore } from '../../stores/membership.js'
-import { saveUserProfile, loadUserProfile, isProfileComplete } from '../../utils/storage.js'
+import { MEMBERSHIP_PRICE_LABEL } from '../../config.js'
+import {
+  saveUserProfile,
+  loadUserProfile,
+  isProfileComplete,
+  QUESTIONNAIRE_REQUIRED_COUNT,
+} from '../../utils/storage.js'
 
 const {
   profile,
@@ -208,6 +187,7 @@ const {
   step1Done,
   step2Done,
   step3Done,
+  reportDone,
   questionnaireDone,
   mbtiDone,
   hollandDone,
@@ -226,7 +206,8 @@ const greetingText = computed(() => {
   const base = `${p.province || ''} · ${p.category || ''} · ${p.score || ''}分`
   if (!step2Done.value) return `${base} · 已完成 ${completedSteps.value}/4`
   if (!step3Done.value) return `${base} · 已完成 ${completedSteps.value}/4`
-  return `${base} · 已就绪`
+  if (!reportDone.value) return `${base} · 待生成报告`
+  return `${base} · 报告已生成`
 })
 
 // ---------- progress ----------
@@ -236,7 +217,8 @@ const progressPercent = computed(() => Math.min(100, (completedSteps.value / 4) 
 const progressHint = computed(() => {
   if (completedSteps.value === 0) return '从第 1 步开始'
   if (!step3Done.value) return `还差 ${4 - completedSteps.value} 步`
-  return '准备就绪'
+  if (!reportDone.value) return '资料已就绪，下一步生成报告'
+  return '报告已生成'
 })
 
 const isReady = computed(() => step3Done.value)
@@ -299,9 +281,7 @@ const step3DescText = computed(() => {
 
 // step 4
 const step4Status = computed(() => {
-  if (!step3Done.value) return StepStatus.LOCKED
-  if (membershipStore.isActive) return StepStatus.DONE
-  return StepStatus.ACTIVE
+  return statusFor(4)
 })
 const step4ClassObj = computed(() => classForStatus(step4Status.value))
 const step4IconText = computed(() => {
@@ -310,7 +290,8 @@ const step4IconText = computed(() => {
 })
 const step4DescText = computed(() => {
   if (step4Status.value === StepStatus.DONE) return '报告已生成'
-  return '¥29 一次解锁 · 邀请 3 人免费'
+  if (membershipStore.isActive) return '已解锁，点击生成报告'
+  return `${MEMBERSHIP_PRICE_LABEL} 一次解锁 · 邀请 5 人免费`
 })
 
 // ---------- chip status ----------
@@ -387,11 +368,15 @@ function onDraftRankInput(e) {
 
 function saveProfileSheet() {
   if (!sheetReady.value) return
-  saveUserProfile({
+  const saved = saveUserProfile({
     province: draft.value.province,
     category: draft.value.category,
     score: draft.value.score,
     rank: draft.value.rank
+  })
+  profile.value = saved
+  membershipStore.syncProfile(profile.value).catch(() => {
+    membershipStore.markProfileCompleted().catch(() => {})
   })
   closeProfileSheet()
   refresh()

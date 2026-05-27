@@ -114,14 +114,28 @@
           </view>
         </view>
         <view class="majors-list">
-          <view v-for="(major, index) in typeInfo?.majors" :key="index" class="major-card" @click="viewMajorDetail(major)">
+          <view v-for="(major, index) in majorCards" :key="major.name" class="major-card" @click="viewMajorDetail(major.name)">
             <view class="major-header">
-              <text class="major-name">{{ major }}</text>
+              <text class="major-name">{{ major.name }}</text>
               <view class="major-stars">
                 <text v-for="s in 5" :key="s" class="star-char" :class="{ filled: s <= (5 - Math.floor(index / 2)) }">★</text>
               </view>
             </view>
-            <text class="major-desc">{{ getMajorDesc(major) }}</text>
+            <text class="major-desc">{{ major.insight?.summary || getMajorDesc(major.name) }}</text>
+            <view v-if="major.insight" class="major-insights">
+              <view class="major-insight-row">
+                <text class="major-insight-label">核心课程</text>
+                <text class="major-insight-text">{{ formatList(major.insight.courses) }}</text>
+              </view>
+              <view class="major-insight-row">
+                <text class="major-insight-label">能力要求</text>
+                <text class="major-insight-text">{{ formatList(major.insight.abilities) }}</text>
+              </view>
+              <view class="major-insight-row">
+                <text class="major-insight-label">薪资参考</text>
+                <text class="major-insight-text">{{ major.insight.salarySummary }}</text>
+              </view>
+            </view>
             <view class="major-footer">
               <text class="major-link">查看专业详情</text>
               <view class="arrow-icon">➔</view>
@@ -163,10 +177,12 @@ import { ref, computed, onMounted } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import { loadAssessments, saveAssessments } from '../../utils/storage.js'
 import { MBTI_TYPE_DESCRIPTIONS } from '../../data/mbti-questions.js'
+import { fetchMajorInsights } from '../../api/majorInsights.js'
 
 const result = ref(null)
 const resultVersion = ref('')
 const showConfirmModal = ref(false)
+const majorInsights = ref({})
 
 // 维度配置
 const dimensions = {
@@ -182,6 +198,13 @@ const typeInfo = computed(() => {
   return MBTI_TYPE_DESCRIPTIONS[result.value.type] || null
 })
 
+const majorCards = computed(() => {
+  return (typeInfo.value?.majors || []).map((name) => ({
+    name,
+    insight: majorInsights.value[name] || null,
+  }))
+})
+
 // 加载结果
 function loadResult() {
   const assessments = loadAssessments()
@@ -195,6 +218,27 @@ function loadResult() {
     result.value = null
     resultVersion.value = ''
   }
+}
+
+async function loadMajorInsightsForResult() {
+  const names = typeInfo.value?.majors || []
+  if (names.length === 0) {
+    majorInsights.value = {}
+    return
+  }
+
+  try {
+    const insights = await fetchMajorInsights(names)
+    majorInsights.value = Object.fromEntries(
+      insights.map((item) => [item.requestedName || item.name, item])
+    )
+  } catch {
+    majorInsights.value = {}
+  }
+}
+
+function formatList(items = []) {
+  return items.slice(0, 4).join('、')
 }
 
 // 计算左侧百分比
@@ -343,6 +387,7 @@ function confirmRetry() {
 
 onMounted(() => {
   loadResult()
+  loadMajorInsightsForResult()
   uni.setNavigationBarTitle({
     title: 'MBTI 测评结果'
   })
@@ -350,6 +395,7 @@ onMounted(() => {
 
 onShow(() => {
   loadResult()
+  loadMajorInsightsForResult()
 })
 </script>
 
@@ -775,6 +821,38 @@ onShow(() => {
   color: $text-secondary;
   line-height: 1.6;
   margin-bottom: 24rpx;
+}
+
+.major-insights {
+  background: #F8FAFC;
+  border: 1px solid $border-light;
+  border-radius: $radius-md;
+  padding: 18rpx 20rpx;
+  margin-bottom: 24rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.major-insight-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16rpx;
+}
+
+.major-insight-label {
+  width: 104rpx;
+  flex-shrink: 0;
+  font-size: 22rpx;
+  font-weight: 800;
+  color: $brand-primary;
+}
+
+.major-insight-text {
+  flex: 1;
+  font-size: 22rpx;
+  color: $text-secondary;
+  line-height: 1.45;
 }
 
 .major-footer {

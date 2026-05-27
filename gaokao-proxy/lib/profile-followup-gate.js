@@ -51,8 +51,22 @@ function buildProfileGateAnswer({ query = '', inputs = {}, conversationId = '' }
   }
 }
 
+function buildRecommendationGuidedQuery(query = '') {
+  if (!isRecommendationIntent(query)) return query
+
+  return [
+    '先回答用户原问题，不要先反问。',
+    '最多 3 个学校/专业组合，总字数控制在 600 字以内；宁可少列，也必须完整收尾，不能在句中结束。',
+    '若给出院校、专业或志愿推荐，每个关键推荐必须包含：为什么推荐、风险点、下一步。',
+    '信息仍偏泛时，也要先基于已知省份、科类、分数给方向判断，再只追问一个最关键缺口。',
+    '',
+    `用户原问题：${query}`,
+  ].join('\n')
+}
+
 module.exports = {
   buildProfileGateAnswer,
+  buildRecommendationGuidedQuery,
   getNextCoreProfileFollowup,
   isRecommendationIntent,
 }

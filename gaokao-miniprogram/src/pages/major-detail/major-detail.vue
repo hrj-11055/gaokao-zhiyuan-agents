@@ -39,6 +39,28 @@
         </view>
       </view>
 
+      <!-- 专业结构化信息 -->
+      <view v-if="majorInsight" class="section">
+        <view class="section-header">
+          <view class="section-title-wrap">
+            <view class="title-dot" :class="source" />
+            <text class="section-title">专业学习重点</text>
+          </view>
+        </view>
+        <view class="insight-block">
+          <text class="insight-label">核心课程</text>
+          <text class="insight-text">{{ formatList(majorInsight.courses) }}</text>
+        </view>
+        <view class="insight-block">
+          <text class="insight-label">能力要求</text>
+          <text class="insight-text">{{ formatList(majorInsight.abilities) }}</text>
+        </view>
+        <view class="insight-block">
+          <text class="insight-label">薪资参考</text>
+          <text class="insight-text">{{ majorInsight.salarySummary }}</text>
+        </view>
+      </view>
+
       <!-- 相关职业方向 -->
       <view class="section">
         <view class="section-header">
@@ -84,10 +106,12 @@
 import { ref, computed, onMounted } from 'vue'
 import { MBTI_TYPE_DESCRIPTIONS } from '../../data/mbti-questions.js'
 import { HOLLAND_TYPE_DESCRIPTIONS } from '../../data/holland-questions.js'
+import { fetchMajorInsights } from '../../api/majorInsights.js'
 
 const majorName = ref('')
 const source = ref('mbti')
 const typeCode = ref('')
+const majorInsight = ref(null)
 
 // 专业描述映射（合并 MBTI 和 Holland 的 descMap）
 const majorDescMap = {
@@ -154,7 +178,11 @@ const majorDescMap = {
   '质量管理工程': '确保产品与服务质量的体系',
 }
 
-const majorDesc = computed(() => majorDescMap[majorName.value] || '适合该性格类型的热门专业方向')
+const majorDesc = computed(() => (
+  majorInsight.value?.summary ||
+  majorDescMap[majorName.value] ||
+  '适合该性格类型的热门专业方向'
+))
 
 // 获取类型信息
 const typeInfo = computed(() => {
@@ -189,6 +217,20 @@ function goBack() {
   uni.navigateBack()
 }
 
+function formatList(items = []) {
+  return items.slice(0, 4).join('、')
+}
+
+async function loadMajorInsight() {
+  if (!majorName.value) return
+  try {
+    const insights = await fetchMajorInsights([majorName.value])
+    majorInsight.value = insights[0] || null
+  } catch {
+    majorInsight.value = null
+  }
+}
+
 onMounted(() => {
   const pages = getCurrentPages()
   const currentPage = pages[pages.length - 1]
@@ -200,6 +242,7 @@ onMounted(() => {
   uni.setNavigationBarTitle({
     title: majorName.value || '专业详情'
   })
+  loadMajorInsight()
 })
 </script>
 
@@ -431,6 +474,33 @@ onMounted(() => {
   color: $text-primary;
   line-height: 1.6;
   font-weight: 500;
+}
+
+.insight-block {
+  background: #F8FAFC;
+  border: 1px solid $border-light;
+  border-radius: $radius-md;
+  padding: 22rpx 24rpx;
+  margin-bottom: 16rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.insight-label {
+  font-size: 24rpx;
+  font-weight: 800;
+  color: $text-primary;
+}
+
+.insight-text {
+  font-size: 26rpx;
+  color: $text-secondary;
+  line-height: 1.55;
 }
 
 .careers-grid {

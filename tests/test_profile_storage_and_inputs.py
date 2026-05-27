@@ -96,19 +96,13 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
     def test_dify_stream_request_includes_profile_inputs(self):
         source = (ROOT / "gaokao-miniprogram" / "src" / "api" / "dify.js").read_text(encoding="utf-8")
         source = re.sub(
-            r"import \{\s*API_BASE,\s*USE_WECHAT_CLOUD_CONTAINER,\s*WECHAT_CLOUD_ENV,\s*WECHAT_CLOUD_SERVICE,\s*\} from '../config\.js'",
-            "const API_BASE = 'http://localhost:3001'",
-            source,
-            flags=re.MULTILINE,
-        )
-        source = re.sub(
             r"import \{ API_BASE \} from '../config\.js'",
             "const API_BASE = 'http://localhost:3001'",
             source,
         )
         source = re.sub(
-            r"import \{ isWechatCloudContainerEnabled, requestBackend \} from './backend\.js'",
-            "function isWechatCloudContainerEnabled() { return false }\nasync function requestBackend() { return { statusCode: 200, data: {} } }",
+            r"import \{ requestBackend \} from './backend\.js'",
+            "async function requestBackend() { return { statusCode: 200, data: {} } }",
             source,
         )
         source = re.sub(
@@ -156,7 +150,7 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
 
         self.run_node_test(
             source,
-            "import { getNextCoreProfileFollowup, getNextPersonalProfileFollowup, isCoreProfileField, isRecommendationIntent, mergeFollowupAnswer } from './module.mjs'",
+            "import { containsProfileFollowupQuestion, getNextCoreProfileFollowup, getNextPersonalProfileFollowup, isCoreProfileField, isRecommendationIntent, mergeFollowupAnswer, mergeProfileFactsFromText } from './module.mjs'",
             """
             assert.equal(isRecommendationIntent('帮我推荐几所稳妥的学校'), true)
             assert.equal(isRecommendationIntent('你好'), false)
@@ -178,6 +172,17 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
             const family = getNextPersonalProfileFollowup({ province: '广东', category: '物理类', score: '600' })
             assert.equal(family.field, 'family_resources')
             assert.equal(/兴趣|地域|考研|考公/.test(family.question), false)
+            assert.equal(
+              containsProfileFollowupQuestion(
+                '我再问一个关键问题：家里预算和资源大概是什么情况？比如能不能接受民办/中外合作，父母行业有没有能帮你实习就业的方向。',
+                family
+              ),
+              true
+            )
+            assert.equal(
+              containsProfileFollowupQuestion('先按已知分数给你一个冲稳保方向，不补充问题。', family),
+              false
+            )
 
             const interest = getNextPersonalProfileFollowup({
               province: '广东',
@@ -195,6 +200,10 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
               interest_subjects: '喜欢数学和计算机'
             })
             assert.equal(region.field, 'region_preference')
+            assert.equal(
+              containsProfileFollowupQuestion('城市有没有硬要求？是优先省内，还是可以去外省？', region),
+              true
+            )
 
             const goal = getNextPersonalProfileFollowup({
               province: '广东',
@@ -226,8 +235,28 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
               mergeFollowupAnswer({}, 'career_goal', '优先高薪，能接受考研'),
               { career_goal: '优先高薪，能接受考研' }
             )
+
+            assert.deepEqual(
+              mergeProfileFactsFromText({}, '我是广东考生，物理类，考了580分').profile,
+              { province: '广东', category: '物理类', score: 580 }
+            )
+            assert.deepEqual(
+              mergeProfileFactsFromText({ province: '广东', category: '物理类', score: 610 }, '我改成历史类，我考了580').profile,
+              { province: '广东', category: '历史类', score: 580 }
+            )
+            assert.deepEqual(
+              mergeProfileFactsFromText({ province: '广东', category: '物理类', score: 610 }, '位次32000').profile,
+              { province: '广东', category: '物理类', score: 610, rank: 32000 }
+            )
             """,
         )
+
+    def test_chat_automatically_updates_profile_from_user_message(self):
+        use_chat = (ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "useChat.js").read_text(encoding="utf-8")
+
+        self.assertIn("mergeProfileFactsFromText", use_chat)
+        self.assertIn("applyProfileFactsFromText(text", use_chat)
+        self.assertIn("syncProfileWhenReady(updatedProfile)", use_chat)
 
     def test_proxy_profile_gate_returns_one_question_before_dify(self):
         gate_path = str(ROOT / "gaokao-proxy" / "lib" / "profile-followup-gate.js")
@@ -272,7 +301,9 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
         self.assertIn("buildProfileInputs", text)
         self.assertIn("getNextCoreProfileFollowup", text)
         self.assertIn("getNextPersonalProfileFollowup", text)
+        self.assertIn("containsProfileFollowupQuestion", text)
         self.assertIn("appendPostAnswerFollowup", text)
+        self.assertIn("AI 正文已经问过同一个画像问题", text)
         self.assertIn("isCoreProfileField", text)
         self.assertIn("pendingProfileField", text)
         self.assertIn("pendingRecommendationQuery", text)
@@ -312,6 +343,27 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
         self.assertIn("inputs = {}", text)
         self.assertIn("inputs: finalInputs", text)
         self.assertIn("buildProfileGateAnswer", text)
+        self.assertIn("buildRecommendationGuidedQuery", text)
+        self.assertIn("query: guidedQuery", text)
+
+    def test_proxy_guides_recommendation_answers_to_include_reason_risk_next_step(self):
+        gate_path = str(ROOT / "gaokao-proxy" / "lib" / "profile-followup-gate.js")
+        script = f"""
+        const assert = require('node:assert/strict')
+        const {{ buildRecommendationGuidedQuery }} = require({json.dumps(gate_path)})
+
+        assert.equal(buildRecommendationGuidedQuery('你好'), '你好')
+
+        const guided = buildRecommendationGuidedQuery('帮我推荐几所学校')
+        assert.match(guided, /为什么推荐/)
+        assert.match(guided, /风险点/)
+        assert.match(guided, /下一步/)
+        assert.match(guided, /先回答/)
+        assert.match(guided, /最多 3 个/)
+        assert.match(guided, /必须完整收尾/)
+        """
+
+        self.run_node_script(script)
 
     def test_commerce_store_saves_and_loads_normalized_profile(self):
         store_path = str(ROOT / "gaokao-proxy" / "lib" / "commerce-store.js")

@@ -24,11 +24,17 @@
       <text class="hero-sub">
         {{
           allAssessmentsDone
-            ? '全部测评完成，可立即生成专属报告'
-            : '完成测评后，为您量身定制志愿参考方案'
+            ? '资料已就绪，解锁后可生成完整报告并下载深度研究资料'
+            : '完成测评后，可生成综合报告并查看院校/专业深度资料'
         }}
       </text>
-      <text class="hero-price">&#165;29</text>
+      <view class="vip-benefit-list">
+        <text class="vip-benefit">综合志愿报告</text>
+        <text class="vip-benefit">院校深度 PDF</text>
+        <text class="vip-benefit">专业研究 PDF</text>
+        <text class="vip-benefit">家长分享</text>
+      </view>
+      <text class="hero-price">VIP 报告权益 · {{ MEMBERSHIP_PRICE_LABEL }}</text>
     </view>
 
     <!-- ============================================================ -->
@@ -37,23 +43,33 @@
     <view v-if="allAssessmentsDone && !membershipStore.isActive && !generating" class="unlock-options">
       <view class="unlock-card primary" @click="onPayWithWechat">
         <view class="unlock-card-icon">&#128179;</view>
-        <text class="unlock-card-title">立即支付</text>
-        <text class="unlock-card-price">&#165;29</text>
-        <text class="unlock-card-hint">一次性解锁</text>
+        <text class="unlock-card-title">解锁完整志愿报告</text>
+        <text class="unlock-card-price">{{ MEMBERSHIP_PRICE_LABEL }}</text>
+        <text class="unlock-card-hint">报告生成 + 深度 PDF 下载</text>
       </view>
       <view class="unlock-card invite" @click="onInviteFriends">
         <view class="unlock-card-icon">&#128101;</view>
-        <text class="unlock-card-title">邀请免费解锁</text>
+        <text class="unlock-card-title">邀请 5 位新用户</text>
         <view class="invite-dots">
           <view
-            v-for="i in 3"
+            v-for="i in membershipStore.requiredInviteCount"
             :key="i"
             class="invite-dot"
             :class="{ filled: i <= membershipStore.effectiveInviteCount }"
           />
         </view>
-        <text class="unlock-card-hint">{{ membershipStore.effectiveInviteCount }}/3</text>
+        <text class="unlock-card-hint">{{ membershipStore.inviteProgressText }}</text>
       </view>
+      <view class="unlock-card code" @click="openUnlockSheet('code')">
+        <view class="unlock-card-icon">&#127915;</view>
+        <text class="unlock-card-title">输入会员邀请码</text>
+        <text class="unlock-card-hint">已有邀请码可直接开通</text>
+      </view>
+    </view>
+
+    <view v-if="showTrialUnlock" class="trial-unlock-card" @click="unlockTrialAndGenerate">
+      <text class="trial-unlock-title">体验版解锁并生成</text>
+      <text class="trial-unlock-desc">仅开发版/体验版可用，用于真机检查报告样式与稳定性</text>
     </view>
 
     <!-- ============================================================ -->
@@ -128,6 +144,23 @@
       </view>
     </view>
 
+    <view v-if="membershipStore.isActive && latestReport && !generating" class="deep-report-package">
+      <view class="package-header">
+        <text class="package-title">深度资料包</text>
+        <text class="package-quota">剩余下载次数 {{ membershipStore.downloadQuota.remaining }}/{{ membershipStore.downloadQuota.limit }}</text>
+      </view>
+      <view class="package-grid">
+        <view class="package-item" @click="goDeepReportDownload('university')">
+          <text class="package-name">院校深度研究报告</text>
+          <text class="package-desc">查看学校定位、转专业、就业与风险</text>
+        </view>
+        <view class="package-item" @click="goDeepReportDownload('major')">
+          <text class="package-name">专业研究报告</text>
+          <text class="package-desc">查看课程难度、就业方向和适配风险</text>
+        </view>
+      </view>
+    </view>
+
     <!-- ============================================================ -->
     <!-- C: History list                                              -->
     <!-- ============================================================ -->
@@ -146,15 +179,38 @@
         <text class="regenerate-text">重新生成报告</text>
       </view>
     </view>
+
+    <view v-if="showUnlockSheet" class="unlock-sheet-mask" @click="closeUnlockSheet">
+      <view class="unlock-sheet" @click.stop>
+        <text class="sheet-title">生成完整志愿报告需要 VIP</text>
+        <text class="sheet-desc">开通后可生成综合报告，并下载院校深度研究报告、专业研究报告。</text>
+        <button class="sheet-primary" @click="onPayWithWechat">{{ MEMBERSHIP_PRICE_LABEL }} 开通 VIP</button>
+        <button class="sheet-secondary" open-type="share">邀请 5 位新用户解锁</button>
+        <view class="code-row">
+          <input v-model.trim="unlockCode" class="code-input" placeholder="输入会员邀请码" />
+          <button class="code-btn" @click="redeemCodeFromSheet">兑换</button>
+        </view>
+      </view>
+    </view>
   </view>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { computed, ref, onMounted } from 'vue'
+import { onShow } from '@dcloudio/uni-app'
 import { useMembershipStore } from '../../stores/membership.js'
 import { useHomeProgress } from '../../composables/useHomeProgress.js'
+import { MEMBERSHIP_PRICE_LABEL } from '../../config.js'
 import { generateReport } from '../../api/report.js'
-import { loadUserProfile, loadReport, saveReport } from '../../utils/storage.js'
+import {
+  loadAssessments,
+  loadHistory,
+  loadQuestionnaire,
+  loadUserProfile,
+  loadReport,
+  saveReport,
+  QUESTIONNAIRE_REQUIRED_COUNT,
+} from '../../utils/storage.js'
 
 // ---------------------------------------------------------------------------
 // Stores & composables
@@ -194,19 +250,26 @@ const moduleIcons = ['🏛️', '🎯', '📊', '⚠️', '🧠', '🔍', '🔥'
 const generating = ref(false)
 const latestReport = ref(null)
 const history = ref([])
+const showUnlockSheet = ref(false)
+const unlockCode = ref('')
+const unlockSheetReason = ref('')
+const showTrialUnlock = computed(() => (
+  allAssessmentsDone.value &&
+  !membershipStore.isActive &&
+  membershipStore.canUseTrialUnlock &&
+  !generating.value
+))
 
 // ---------------------------------------------------------------------------
 // Lifecycle
 // ---------------------------------------------------------------------------
 
 onMounted(async () => {
-  refreshProgress()
-  loadExistingReports()
-  try {
-    await membershipStore.loadStatus()
-  } catch {
-    // membership status fetch failed — stays inactive
-  }
+  await refreshPageState()
+})
+
+onShow(() => {
+  refreshPageState()
 })
 
 // ---------------------------------------------------------------------------
@@ -215,6 +278,8 @@ onMounted(async () => {
 
 function loadExistingReports() {
   const data = loadReport()
+  latestReport.value = null
+  history.value = []
   if (data) {
     if (data.url) {
       latestReport.value = data
@@ -233,6 +298,16 @@ function persistReports() {
   saveReport(data)
 }
 
+async function refreshPageState() {
+  refreshProgress()
+  loadExistingReports()
+  try {
+    await membershipStore.loadStatus()
+  } catch {
+    // membership status fetch failed — stays inactive
+  }
+}
+
 function formatTime(ts) {
   if (!ts) return ''
   const d = new Date(ts)
@@ -240,20 +315,69 @@ function formatTime(ts) {
   return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`
 }
 
+function openUnlockSheet(reason = 'generate') {
+  unlockSheetReason.value = reason
+  showUnlockSheet.value = true
+}
+
+function closeUnlockSheet() {
+  showUnlockSheet.value = false
+  unlockCode.value = ''
+}
+
+async function redeemCodeFromSheet() {
+  try {
+    await membershipStore.redeemCode(unlockCode.value)
+    await membershipStore.loadStatus()
+    closeUnlockSheet()
+    uni.showToast({ title: 'VIP 已开通', icon: 'success' })
+  } catch (err) {
+    uni.showToast({ title: err.message || '邀请码无效', icon: 'none' })
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Actions
 // ---------------------------------------------------------------------------
 
 async function onGenerate() {
+  if (!allAssessmentsDone.value) {
+    uni.switchTab({ url: '/pages/assessments/assessments' })
+    return
+  }
+
   generating.value = true
   try {
+    await membershipStore.ensureLogin()
+    if (!membershipStore.isActive) {
+      await membershipStore.loadStatus()
+    }
+    if (!membershipStore.isActive) {
+      openUnlockSheet('generate')
+      return
+    }
+
     const profile = loadUserProfile()
+    const questionnaire = loadQuestionnaire()
+    const assessments = loadAssessments()
+    const chatHistory = loadHistory()
+    const questionnaireAnswers = questionnaire.answers || {}
+
+    if (
+      questionnaire.completedCount < QUESTIONNAIRE_REQUIRED_COUNT ||
+      !assessments.mbti?.completed ||
+      !assessments.holland?.completed
+    ) {
+      throw new Error('请先完成全部 3 项测评后再生成综合报告')
+    }
+
     const result = await generateReport({
       profile,
       userId: membershipStore.userId,
-      conversationId: '',
-      questionnaire: {},
-      assessments: {},
+      sessionToken: membershipStore.sessionToken,
+      conversationId: chatHistory.conversationId || '',
+      questionnaire: questionnaireAnswers,
+      assessments,
     })
     const reportEntry = {
       url: result.url,
@@ -266,7 +390,22 @@ async function onGenerate() {
     latestReport.value = reportEntry
     persistReports()
   } catch (err) {
-    uni.showToast({ title: err.message || '生成失败', icon: 'none', duration: 2500 })
+    const message = err.data?.draftId
+      ? '生成失败，已保留草稿，可稍后重试'
+      : (err.message || '生成失败')
+    uni.showToast({ title: message, icon: 'none', duration: 2500 })
+  } finally {
+    generating.value = false
+  }
+}
+
+async function unlockTrialAndGenerate() {
+  generating.value = true
+  try {
+    await membershipStore.activateLimitedFree()
+    await onGenerate()
+  } catch (err) {
+    uni.showToast({ title: err.message || '体验版解锁失败', icon: 'none', duration: 2500 })
   } finally {
     generating.value = false
   }
@@ -298,15 +437,13 @@ function openHistory(item) {
   })
 }
 
-function onPayWithWechat() {
-  membershipStore.openMembership?.()
-  // Fallback: if openMembership is not defined, try createPayment
-  if (!membershipStore.openMembership) {
-    membershipStore.createPayment?.().then(() => {
-      membershipStore.loadStatus()
-    }).catch((err) => {
-      uni.showToast({ title: err.message || '支付暂时不可用', icon: 'none' })
-    })
+async function onPayWithWechat() {
+  try {
+    await membershipStore.openMembership()
+    await membershipStore.loadStatus()
+    closeUnlockSheet()
+  } catch (err) {
+    uni.showToast({ title: err.message || '支付暂时不可用', icon: 'none' })
   }
 }
 
@@ -320,6 +457,12 @@ function shareLatest() {
 
 function onInviteFriends() {
   uni.showToast({ title: '请用右上角 ··· 分享', icon: 'none', duration: 2000 })
+}
+
+function goDeepReportDownload(mode = 'university') {
+  uni.navigateTo({
+    url: `/pages/deep-report-download/deep-report-download?mode=${encodeURIComponent(mode)}`,
+  })
 }
 </script>
 
@@ -427,9 +570,26 @@ function onInviteFriends() {
 }
 
 .hero-price {
-  font-size: 48rpx;
+  font-size: 34rpx;
   font-weight: 900;
   color: #fbbf24;
+}
+
+.vip-benefit-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12rpx;
+  margin-bottom: 24rpx;
+}
+
+.vip-benefit {
+  padding: 8rpx 16rpx;
+  border-radius: $radius-sm;
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 22rpx;
+  font-weight: 700;
 }
 
 // ===========================================================================
@@ -440,12 +600,14 @@ function onInviteFriends() {
   position: relative;
   z-index: 1;
   display: flex;
+  flex-wrap: wrap;
   gap: 20rpx;
   margin-top: 24rpx;
 }
 
 .unlock-card {
-  flex: 1;
+  flex: 1 1 200rpx;
+  min-width: 0;
   border-radius: $radius-lg;
   padding: 32rpx 24rpx;
   display: flex;
@@ -468,6 +630,37 @@ function onInviteFriends() {
     border-color: $border-light;
     box-shadow: 0 8rpx 24rpx -12rpx rgba(15, 23, 42, 0.1);
   }
+
+  &.code {
+    flex-basis: 100%;
+    background: #f8fafc;
+    border-color: rgba(15, 23, 42, 0.08);
+  }
+}
+
+.trial-unlock-card {
+  position: relative;
+  z-index: 1;
+  background: #fff7ed;
+  border: 1px solid rgba(249, 115, 22, 0.24);
+  border-radius: $radius-lg;
+  padding: 24rpx 28rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.trial-unlock-title {
+  font-size: 28rpx;
+  font-weight: 800;
+  color: #9a3412;
+}
+
+.trial-unlock-desc {
+  font-size: 23rpx;
+  color: #9a3412;
+  line-height: 1.45;
 }
 
 .unlock-card-icon {
@@ -854,6 +1047,76 @@ function onInviteFriends() {
 }
 
 // ===========================================================================
+// Deep report package
+// ===========================================================================
+
+.deep-report-package {
+  position: relative;
+  z-index: 1;
+  margin-top: 24rpx;
+  padding: 28rpx;
+  border-radius: $radius-lg;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 10rpx 24rpx rgba(15, 23, 42, 0.05);
+}
+
+.package-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+  margin-bottom: 20rpx;
+}
+
+.package-title {
+  font-size: 30rpx;
+  font-weight: 800;
+  color: $text-primary;
+}
+
+.package-quota {
+  font-size: 22rpx;
+  font-weight: 700;
+  color: #0f766e;
+  background: rgba(20, 184, 166, 0.1);
+  border-radius: $radius-sm;
+  padding: 6rpx 12rpx;
+}
+
+.package-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.package-item {
+  padding: 24rpx;
+  border-radius: $radius-md;
+  background: #f8fafc;
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+
+  &:active {
+    background: #f1f5f9;
+  }
+}
+
+.package-name {
+  font-size: 28rpx;
+  font-weight: 800;
+  color: $text-primary;
+}
+
+.package-desc {
+  font-size: 23rpx;
+  color: $text-secondary;
+  line-height: 1.45;
+}
+
+// ===========================================================================
 // History section
 // ===========================================================================
 
@@ -931,5 +1194,95 @@ function onInviteFriends() {
   font-size: 28rpx;
   font-weight: 700;
   color: $brand-primary;
+}
+
+// ===========================================================================
+// Unlock sheet
+// ===========================================================================
+
+.unlock-sheet-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  background: rgba(15, 23, 42, 0.48);
+  display: flex;
+  align-items: flex-end;
+  padding: 28rpx;
+  box-sizing: border-box;
+}
+
+.unlock-sheet {
+  width: 100%;
+  border-radius: $radius-lg;
+  background: #fff;
+  padding: 34rpx 28rpx calc(34rpx + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+}
+
+.sheet-title {
+  font-size: 34rpx;
+  font-weight: 900;
+  color: $text-primary;
+}
+
+.sheet-desc {
+  font-size: 25rpx;
+  color: $text-secondary;
+  line-height: 1.5;
+}
+
+.sheet-primary,
+.sheet-secondary,
+.code-btn {
+  border: none;
+  border-radius: $radius-md;
+  height: 84rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  font-weight: 800;
+
+  &::after {
+    border: none;
+  }
+}
+
+.sheet-primary {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #fff;
+}
+
+.sheet-secondary {
+  background: #f8fafc;
+  color: $text-primary;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.code-row {
+  display: flex;
+  gap: 12rpx;
+}
+
+.code-input {
+  flex: 1;
+  min-width: 0;
+  height: 84rpx;
+  border-radius: $radius-md;
+  background: #f8fafc;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  color: $text-primary;
+}
+
+.code-btn {
+  width: 132rpx;
+  background: #111827;
+  color: #fff;
 }
 </style>

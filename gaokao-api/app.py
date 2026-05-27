@@ -459,6 +459,7 @@ def get_majors_by_keyword(keyword):
         return jsonify({'error': str(e)}), 500
 
 
+@app.route('/api/recommend', methods=['GET'])
 @app.route('/api/scores/recommend', methods=['GET'])
 def recommend():
     """

@@ -46,14 +46,14 @@ function buildAuthorization({ method, urlPath, body, timestamp, nonce, env = pro
   const privateKey = readPrivateKey(env)
   const message = `${method}\n${urlPath}\n${timestamp}\n${nonce}\n${body}\n`
   const signature = signWithPrivateKey(message, privateKey)
-  return [
-    'WECHATPAY2-SHA256-RSA2048',
+  const params = [
     `mchid="${env.WECHAT_MCH_ID}"`,
     `nonce_str="${nonce}"`,
     `signature="${signature}"`,
     `timestamp="${timestamp}"`,
     `serial_no="${env.WECHAT_PAY_SERIAL_NO}"`,
-  ].join(' ')
+  ].join(',')
+  return `WECHATPAY2-SHA256-RSA2048 ${params}`
 }
 
 function buildFrontendPayParams({ appId = process.env.WECHAT_APPID, prepayId, privateKey = readPrivateKey() }) {
@@ -136,6 +136,7 @@ async function createJsapiPayment({ order, openid, description = '深度填报�
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
+      ...(env.WECHAT_PAY_PUBLIC_KEY_ID ? { 'Wechatpay-Serial': env.WECHAT_PAY_PUBLIC_KEY_ID } : {}),
       Authorization: buildAuthorization({ method: 'POST', urlPath, body, timestamp, nonce, env }),
     },
     body,
@@ -167,6 +168,7 @@ function parseWechatPayNotify(body, { headers = {}, rawBody = '', env = process.
 
 module.exports = {
   assertWechatPayConfig,
+  buildAuthorization,
   buildFrontendPayParams,
   createJsapiPayment,
   decryptWechatPayResource,

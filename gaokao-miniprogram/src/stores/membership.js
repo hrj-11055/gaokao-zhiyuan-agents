@@ -6,8 +6,10 @@ import {
   fetchPaymentOrder,
   fetchUserProfileFromServer,
   getStoredSession,
+  isTestMiniProgramEnv,
   loginWithWechat,
   markProfileComplete,
+  redeemMembershipCode,
   saveUserProfileToServer,
 } from '../api/membership.js'
 import { PAYMENT_ENABLED } from '../config.js'
@@ -20,12 +22,18 @@ function wait(ms) {
 
 function normalizeStatus(data = {}) {
   const invite = data.invite || {}
+  const quota = data.downloadQuota || data.membership?.downloadQuota || {}
   return {
     status: data.status || data.membership?.status || 'inactive',
     source: data.source || data.membership?.source || '',
     unlockedAt: data.unlockedAt || data.membership?.unlockedAt || 0,
     effectiveInviteCount: Number(invite.effectiveCount ?? data.membership?.invite?.effectiveCount ?? 0),
-    requiredInviteCount: Number(invite.requiredCount ?? data.membership?.invite?.requiredCount ?? 3),
+    requiredInviteCount: Number(invite.requiredCount ?? data.membership?.invite?.requiredCount ?? 5),
+    downloadQuota: {
+      used: Number(quota.used ?? 0),
+      limit: Number(quota.limit ?? 10),
+      remaining: Number(quota.remaining ?? quota.limit ?? 10),
+    },
     features: data.features || data.membership?.features || {
       universityResearch: false,
       comprehensiveReport: false,
@@ -33,6 +41,31 @@ function normalizeStatus(data = {}) {
       familyShare: false,
     },
   }
+}
+
+function createPaymentFlowError(message, code, details = {}) {
+  const err = new Error(message)
+  err.code = code
+  Object.assign(err, details)
+  return err
+}
+
+export function normalizeRequestPaymentError(err = {}) {
+  const message = String(err.errMsg || err.message || '')
+  if (/cancel|取消/i.test(message)) {
+    return createPaymentFlowError('支付已取消', 'PAYMENT_CANCELLED', { originalError: err })
+  }
+  return createPaymentFlowError('支付失败，请稍后重试', 'PAYMENT_FAILED', { originalError: err })
+}
+
+export function createPendingPaymentError(orderId = '', orderStatus = '') {
+  if (orderStatus === 'expired') {
+    return createPaymentFlowError('支付超时，请重新发起支付', 'PAYMENT_EXPIRED', { orderId, orderStatus })
+  }
+  return createPaymentFlowError('支付结果确认中，请稍后刷新会员状态', 'PAYMENT_PENDING', {
+    orderId,
+    orderStatus,
+  })
 }
 
 export const useMembershipStore = defineStore('membership', {
@@ -45,7 +78,12 @@ export const useMembershipStore = defineStore('membership', {
       source: '',
       unlockedAt: 0,
       effectiveInviteCount: 0,
-      requiredInviteCount: 3,
+      requiredInviteCount: 5,
+      downloadQuota: {
+        used: 0,
+        limit: 10,
+        remaining: 10,
+      },
       features: {
         universityResearch: false,
         comprehensiveReport: false,
@@ -67,11 +105,18 @@ export const useMembershipStore = defineStore('membership', {
     inviteProgressText(state) {
       return `${state.effectiveInviteCount}/${state.requiredInviteCount}`
     },
+    inviteUnlockText(state) {
+      if (state.requiredInviteCount === 5) return '请先邀请 5 位同学免费解锁'
+      return `请先邀请 ${state.requiredInviteCount} 位同学免费解锁`
+    },
     isPaymentEnabled() {
       return PAYMENT_ENABLED
     },
+    canUseTrialUnlock() {
+      return isTestMiniProgramEnv() && !PAYMENT_ENABLED
+    },
     paymentUnavailableText() {
-      return '支付功能正在备案配置中，请先邀请 3 位同学免费解锁。'
+      return '当前构建未启用微信支付，请重新上传支付测试版。'
     },
   },
 
@@ -83,6 +128,7 @@ export const useMembershipStore = defineStore('membership', {
       this.unlockedAt = status.unlockedAt
       this.effectiveInviteCount = status.effectiveInviteCount
       this.requiredInviteCount = status.requiredInviteCount
+      this.downloadQuota = status.downloadQuota
       this.features = status.features
     },
 
@@ -135,6 +181,13 @@ export const useMembershipStore = defineStore('membership', {
       return data
     },
 
+    async redeemCode(code) {
+      await this.ensureLogin()
+      const data = await redeemMembershipCode(code, this.sessionToken)
+      this.applyStatus(data.membership || data)
+      return data
+    },
+
     async syncProfile(profile) {
       await this.ensureLogin()
       const data = await saveUserProfileToServer(profile, this.sessionToken)
@@ -160,14 +213,26 @@ export const useMembershipStore = defineStore('membership', {
         return data
       }
       this.lastOrderId = data.orderId || ''
-      await new Promise((resolve, reject) => {
-        uni.requestPayment({
-          ...data.payment,
-          success: resolve,
-          fail: reject,
+      try {
+        await new Promise((resolve, reject) => {
+          uni.requestPayment({
+            ...data.payment,
+            success: resolve,
+            fail: reject,
+          })
         })
-      })
-      return this.pollOrderUntilSettled(this.lastOrderId)
+      } catch (err) {
+        throw normalizeRequestPaymentError(err)
+      }
+      const settled = await this.pollOrderUntilSettled(this.lastOrderId)
+      if (!this.isActive && this.lastOrderStatus !== 'paid') {
+        throw createPendingPaymentError(this.lastOrderId, this.lastOrderStatus)
+      }
+      return settled
+    },
+
+    async openMembership() {
+      return this.createPayment()
     },
 
     async pollOrder(orderId = this.lastOrderId) {

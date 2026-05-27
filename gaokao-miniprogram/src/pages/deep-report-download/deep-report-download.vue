@@ -1,9 +1,9 @@
 <template>
   <view class="download-page">
     <view class="page-header">
-      <text class="eyebrow">PDF 报告库</text>
-      <text class="title">深度报告下载</text>
-      <text class="subtitle">选择学校或专业，下载数据库中 5000 字以上完整报告。</text>
+      <text class="eyebrow">深度报告库</text>
+      <text class="title">在线阅读与下载</text>
+      <text class="subtitle">选择学校或专业，先在线阅读精排版报告；需要离线保存时再下载 PDF。</text>
     </view>
 
     <view class="mode-tabs">
@@ -44,7 +44,11 @@
     <view class="access-card" :class="{ active: membershipStore.isActive }">
       <text class="access-title">{{ membershipStore.isActive ? '会员权益已开通' : '下载 PDF 需要会员权益' }}</text>
       <text class="access-desc">
-        {{ membershipStore.isActive ? '可直接下载 5000 字以上完整报告。' : '可先搜索查看报告是否入库，下载完整 PDF 时再开通。' }}
+        {{
+          membershipStore.isActive
+            ? `在线阅读不限次数，PDF 剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
+            : '可先搜索查看报告是否入库，在线阅读或下载完整报告时再开通。'
+        }}
       </text>
       <button v-if="!membershipStore.isActive" class="access-btn" @click="goMembership">去开通</button>
     </view>
@@ -77,9 +81,12 @@
             <text class="takeaway-title action">行动建议</text>
             <text class="takeaway-text">{{ summaryTakeaways(item).action }}</text>
           </view>
-          <text class="item-summary">{{ item.summary || '该报告已入库，可下载完整 PDF 查看。' }}</text>
+          <text class="item-summary">{{ item.summary || '该报告已入库，可在线阅读或下载完整 PDF 查看。' }}</text>
         </view>
-        <button class="download-btn" @click="downloadDeepPdf(item)">下载 PDF</button>
+        <view class="item-actions">
+          <button class="read-btn" @click="openDeepReport(item)">在线阅读</button>
+          <button class="download-btn" @click="downloadDeepPdf(item)">下载 PDF</button>
+        </view>
       </view>
 
       <view v-if="results.length === 0" class="empty-panel">
@@ -96,6 +103,7 @@
 
 <script setup>
 import { computed, onMounted, ref } from 'vue'
+import { onLoad } from '@dcloudio/uni-app'
 import { API_BASE, PDF_DOWNLOAD_ENABLED } from '../../config.js'
 import { requestBackendData } from '../../api/backend.js'
 import { useMembershipStore } from '../../stores/membership.js'
@@ -136,6 +144,12 @@ const emptyDesc = computed(() => {
       : '可输入学校全称或关键词，系统会匹配 5000 字以上完整报告。'
   }
   return '换一个更完整的名称试试，或切换到另一类报告继续查询。'
+})
+
+onLoad((options = {}) => {
+  if (options.mode === 'major' || options.mode === 'university') {
+    mode.value = options.mode
+  }
 })
 
 onMounted(async () => {
@@ -253,18 +267,73 @@ async function searchReports() {
 }
 
 function deepPdfUrl(item) {
-  const type = mode.value === 'major' ? 'major' : 'university'
-  const id = mode.value === 'major' ? item.code : item.name
+  const { type, id } = reportIdentity(item)
   return `${API_BASE}/api/reports/deep/pdf?type=${encodeURIComponent(type)}&id=${encodeURIComponent(id || '')}`
 }
 
-async function ensureMembership() {
+function reportIdentity(item) {
+  return {
+    type: mode.value === 'major' ? 'major' : 'university',
+    id: mode.value === 'major' ? item.code : item.name,
+  }
+}
+
+async function ensureMembership({ requireDownloadQuota = false } = {}) {
   await membershipStore.loadStatus()
   if (!membershipStore.isActive) {
     throw new Error('完整深度报告属于付费权益，请先开通会员')
   }
   if (!membershipStore.sessionToken) {
-    throw new Error('请先完成微信登录后再下载')
+    throw new Error('请先完成微信登录后再查看完整报告')
+  }
+  if (requireDownloadQuota && membershipStore.downloadQuota.remaining <= 0) {
+    const error = new Error('深度报告下载次数已用完')
+    error.code = 'DOWNLOAD_QUOTA_EXHAUSTED'
+    throw error
+  }
+}
+
+async function openDeepReport(item) {
+  try {
+    await ensureMembership()
+  } catch (err) {
+    uni.showModal({
+      title: '需要会员权益',
+      content: err.message || '请先开通会员后在线阅读完整报告。',
+      confirmText: '去开通',
+      cancelText: '先看看',
+      success: (res) => {
+        if (res.confirm) goMembership()
+      },
+    })
+    return
+  }
+
+  const { type, id } = reportIdentity(item)
+  if (!id) {
+    uni.showToast({ title: '报告标识缺失', icon: 'none' })
+    return
+  }
+
+  uni.showLoading({ title: '打开报告...' })
+  try {
+    const data = await requestBackendData({
+      path: '/api/reports/deep/view-token',
+      method: 'POST',
+      data: { type, id },
+      header: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${membershipStore.sessionToken}`,
+      },
+      timeout: 15000,
+    })
+    uni.hideLoading()
+    uni.navigateTo({
+      url: `/pages/report-view/report-view?url=${encodeURIComponent(data.url)}`,
+    })
+  } catch (err) {
+    uni.hideLoading()
+    uni.showToast({ title: err.message || '阅读链接生成失败', icon: 'none' })
   }
 }
 
@@ -272,7 +341,7 @@ async function downloadDeepPdf(item) {
   if (!PDF_DOWNLOAD_ENABLED) {
     uni.showModal({
       title: 'PDF 下载暂未开放',
-      content: 'PDF 下载正在等待 HTTPS 合法域名配置，备案完成前可先查看报告库是否入库。',
+      content: 'PDF 下载未在当前小程序构建中开启，请用 VITE_PDF_DOWNLOAD_ENABLED=true 重新构建体验版。',
       confirmText: '知道了',
       showCancel: false,
     })
@@ -280,10 +349,10 @@ async function downloadDeepPdf(item) {
   }
 
   try {
-    await ensureMembership()
+    await ensureMembership({ requireDownloadQuota: true })
   } catch (err) {
     uni.showModal({
-      title: '需要会员权益',
+      title: err.code === 'DOWNLOAD_QUOTA_EXHAUSTED' ? '下载次数已用完' : '需要会员权益',
       content: err.message || '请先开通会员后下载完整 PDF。',
       confirmText: '去开通',
       cancelText: '先看看',
@@ -306,7 +375,10 @@ async function downloadDeepPdf(item) {
         uni.openDocument({
           filePath: res.tempFilePath,
           showMenu: true,
-          success: () => uni.hideLoading(),
+          success: async () => {
+            await membershipStore.loadStatus().catch(() => {})
+            uni.hideLoading()
+          },
           fail: () => {
             uni.hideLoading()
             uni.showToast({ title: '打开 PDF 失败', icon: 'none' })
@@ -314,7 +386,11 @@ async function downloadDeepPdf(item) {
         })
       } else {
         uni.hideLoading()
-        uni.showToast({ title: 'PDF 生成失败，请稍后重试', icon: 'none' })
+        if (res.statusCode === 429) {
+          uni.showToast({ title: '深度报告下载次数已用完', icon: 'none' })
+        } else {
+          uni.showToast({ title: 'PDF 生成失败，请稍后重试', icon: 'none' })
+        }
       }
     },
     fail: () => {
@@ -571,14 +647,29 @@ function goMembership() {
   line-height: 1.7;
 }
 
+.item-actions {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 14rpx;
+}
+
+.read-btn,
 .download-btn {
-  width: 100%;
   height: 78rpx;
   border-radius: $radius-lg;
-  background: $grad-royal;
-  color: #fff;
   font-size: 28rpx;
   font-weight: 800;
+}
+
+.read-btn {
+  background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%);
+  color: #fff;
+}
+
+.download-btn {
+  background: rgba(255, 255, 255, 0.96);
+  color: #1d4ed8;
+  border: 1px solid rgba(37, 99, 235, 0.18);
 }
 
 .state-block {

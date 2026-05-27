@@ -48,6 +48,21 @@ class MembershipMiniprogramContractTests(unittest.TestCase):
         self.assertIn("paymentUnavailableText", text)
         self.assertIn("isPaymentEnabled", text)
 
+    def test_membership_store_normalizes_payment_exceptions(self):
+        text = self.read("gaokao-miniprogram/src/stores/membership.js")
+
+        for snippet in [
+            "normalizeRequestPaymentError",
+            "PAYMENT_CANCELLED",
+            "支付已取消",
+            "PAYMENT_FAILED",
+            "支付失败，请稍后重试",
+            "PAYMENT_PENDING",
+            "支付结果确认中，请稍后刷新会员状态",
+            "createPendingPaymentError",
+        ]:
+            self.assertIn(snippet, text)
+
     def test_index_captures_inviter_and_marks_profile_complete(self):
         text = self.read("gaokao-miniprogram/src/pages/index/index.vue")
 
@@ -55,7 +70,7 @@ class MembershipMiniprogramContractTests(unittest.TestCase):
         self.assertIn("useMembershipStore", text)
         self.assertIn("membershipStore.setInviterId", text)
         self.assertIn("membershipStore.markProfileCompleted", text)
-        self.assertIn("isProfileComplete(profile.value)", text)
+        self.assertIn("isProfileComplete(draft.value)", text)
 
 
 if __name__ == "__main__":

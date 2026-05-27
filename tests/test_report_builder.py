@@ -9,6 +9,9 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ReportBuilderTests(unittest.TestCase):
+    def read(self, relpath):
+        return (ROOT / relpath).read_text(encoding="utf-8")
+
     def run_node_test(self, test_body: str):
         with tempfile.TemporaryDirectory() as tmp:
             test_path = Path(tmp) / "test.js"
@@ -58,6 +61,25 @@ class ReportBuilderTests(unittest.TestCase):
             assert.equal(html.includes('作为AI'), false)
             assert.equal(html.includes('顾问结论'), true)
         """)
+
+    def test_pdf_print_layout_expands_all_tabbed_report_sections(self):
+        self.run_node_test(r"""
+            const raw = '<html><head><title>x</title><style>.tab-pane{display:none}.tab-pane.active{display:block}</style></head><body><div id="tab1" class="tab-pane active">自我评估</div><div id="tab2" class="tab-pane">个人特质</div><div id="tab6" class="tab-content">综合决策</div></body></html>'
+            const html = normalizeReportHtml(raw)
+
+            assert.equal(html.includes('.tab-pane,'), true)
+            assert.equal(html.includes('.tab-content,'), true)
+            assert.equal(html.includes('display: block !important;'), true)
+            assert.equal(html.includes('break-before: page;'), true)
+        """)
+
+    def test_pdf_generator_runtime_style_expands_legacy_tabbed_reports(self):
+        text = self.read("gaokao-proxy/lib/pdf-generator.js")
+
+        self.assertIn("const PDF_GENERATOR_VERSION = 'tab-print-v3'", text)
+        self.assertIn(".tab-pane,", text)
+        self.assertIn(".tab-content,", text)
+        self.assertIn("display: block !important;", text)
 
 
 if __name__ == "__main__":

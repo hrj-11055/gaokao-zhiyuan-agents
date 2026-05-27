@@ -1,6 +1,8 @@
 import { requestBackendData } from './backend.js'
+import { WECHAT_LOGIN_MOCK } from '../config.js'
 
 const SESSION_KEY = 'membership_session'
+const TEST_ENV_VERSIONS = new Set(['develop', 'trial'])
 
 function request({ url, method = 'GET', data, token }) {
   return requestBackendData({
@@ -14,18 +16,61 @@ function request({ url, method = 'GET', data, token }) {
   })
 }
 
+function createDevLoginCode() {
+  return `dev_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`
+}
+
+export function getMiniProgramEnvVersion() {
+  // #ifdef MP-WEIXIN
+  try {
+    if (typeof wx !== 'undefined' && wx.getAccountInfoSync) {
+      return wx.getAccountInfoSync()?.miniProgram?.envVersion || ''
+    }
+  } catch {
+    return ''
+  }
+  // #endif
+
+  return ''
+}
+
+export function isTestMiniProgramEnv() {
+  return TEST_ENV_VERSIONS.has(getMiniProgramEnvVersion())
+}
+
+function canUseDevLoginFallback() {
+  return WECHAT_LOGIN_MOCK || isTestMiniProgramEnv()
+}
+
 function getLoginCode() {
   return new Promise((resolve, reject) => {
+    if (WECHAT_LOGIN_MOCK) {
+      resolve(createDevLoginCode())
+      return
+    }
+
     if (!uni.login) {
-      resolve(`dev_${Date.now()}`)
+      resolve(createDevLoginCode())
       return
     }
     uni.login({
       provider: 'weixin',
       success(res) {
-        resolve(res.code || `dev_${Date.now()}`)
+        if (res.code) {
+          resolve(res.code)
+          return
+        }
+        if (canUseDevLoginFallback()) {
+          resolve(createDevLoginCode())
+          return
+        }
+        reject(new Error('微信登录未返回 code'))
       },
       fail(err) {
+        if (canUseDevLoginFallback()) {
+          resolve(createDevLoginCode())
+          return
+        }
         reject(new Error(err.errMsg || '微信登录失败'))
       },
     })
@@ -91,6 +136,15 @@ export function activateLimitedFreeMembership(sessionToken = getStoredSession().
     url: '/api/membership/limited-free-unlock',
     method: 'POST',
     data: {},
+    token: sessionToken,
+  })
+}
+
+export function redeemMembershipCode(code, sessionToken = getStoredSession().sessionToken) {
+  return request({
+    url: '/api/membership/redeem-code',
+    method: 'POST',
+    data: { code },
     token: sessionToken,
   })
 }

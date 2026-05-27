@@ -10,6 +10,7 @@ import {
   loadQuestionnaire,
   isProfileComplete,
   loadHistory,
+  loadReport,
   QUESTIONNAIRE_REQUIRED_COUNT,
 } from '../utils/storage.js'
 
@@ -48,6 +49,7 @@ export function useHomeProgress() {
   const history = ref(loadHistory())
   const questionnaire = ref(loadQuestionnaire())
   const assessments = ref(loadAssessments())
+  const report = ref(loadReport())
 
   // ---- re-read all storage ----
 
@@ -56,6 +58,7 @@ export function useHomeProgress() {
     history.value = loadHistory()
     questionnaire.value = loadQuestionnaire()
     assessments.value = loadAssessments()
+    report.value = loadReport()
   }
 
   // ---- step 1: profile ----
@@ -86,6 +89,10 @@ export function useHomeProgress() {
 
   const step3Done = computed(() => step3Count.value >= 3)
 
+  // ---- step 4: generated report ----
+
+  const reportDone = computed(() => Boolean(report.value?.url))
+
   // ---- aggregate ----
 
   const completedSteps = computed(() => {
@@ -93,7 +100,8 @@ export function useHomeProgress() {
     if (step1Done.value) n++
     if (step2Done.value) n++
     if (step3Done.value) n++
-    return n // 0-3; step 4 is tracked separately
+    if (reportDone.value) n++
+    return n
   })
 
   /**
@@ -121,7 +129,8 @@ export function useHomeProgress() {
         return step3Done.value ? StepStatus.DONE : StepStatus.ACTIVE
       case 4:
         if (!step3Done.value) return StepStatus.LOCKED
-        return StepStatus.ACTIVE // done-ness checked by caller via membership store
+        if (reportDone.value) return StepStatus.DONE
+        return StepStatus.ACTIVE
       default:
         return StepStatus.LOCKED
     }
@@ -133,11 +142,13 @@ export function useHomeProgress() {
     history,
     questionnaire,
     assessments,
+    report,
 
     // step-level booleans
     step1Done,
     step2Done,
     step3Done,
+    reportDone,
 
     // assessment-level booleans
     questionnaireDone,

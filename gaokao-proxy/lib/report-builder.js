@@ -8,6 +8,9 @@ const { fetchMajorReports, fetchUnivReports, fetchDifyMessages } = require('./da
 const REPORTS_DIR = process.env.REPORTS_DIR || path.join(__dirname, '../reports')
 const REPORT_DRAFTS_DIR = process.env.REPORT_DRAFTS_DIR || path.join(REPORTS_DIR, 'drafts')
 const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-v4-pro'
+const REPORT_GENERATION_TIMEOUT_MS = Number(process.env.REPORT_GENERATION_TIMEOUT_MS || 170000)
+const CJK_FONT_STACK = '"Noto Sans CJK SC", "Source Han Sans SC", "WenQuanYi Micro Hei", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Color Emoji", Arial, sans-serif'
+const CJK_FONT_PATCH_ID = 'gaokao-report-cjk-font-fix'
 const RESPONSIVE_PATCH_ID = 'gaokao-report-responsive-fix'
 const PRINT_PATCH_ID = 'gaokao-report-print-fix'
 
@@ -37,7 +40,7 @@ async function generateReport({ profile, questionnaire, assessments, conversatio
         max_tokens: 32768,
         temperature: 0.7,
       }),
-      signal: AbortSignal.timeout(110000),
+      signal: AbortSignal.timeout(REPORT_GENERATION_TIMEOUT_MS),
     })
 
     if (!res.ok) {
@@ -83,6 +86,7 @@ function normalizeReportHtml(rawHtml) {
   let html = extractHtmlDocument(String(rawHtml || ''))
   html = humanizeReportCopy(html)
   html = ensureViewportMeta(html)
+  html = injectCjkFontPatch(html)
   html = injectResponsivePatch(html)
   html = injectPrintPatch(html)
   return html
@@ -127,6 +131,42 @@ function ensureViewportMeta(html) {
     /<head([^>]*)>/i,
     '<head$1>\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">'
   )
+}
+
+function injectCjkFontPatch(html) {
+  if (html.includes(`id="${CJK_FONT_PATCH_ID}"`) || html.includes(`id='${CJK_FONT_PATCH_ID}'`)) {
+    return html
+  }
+
+  const css = `
+    <style id="${CJK_FONT_PATCH_ID}">
+      :root {
+        --gaokao-cjk-font: ${CJK_FONT_STACK};
+      }
+      html,
+      body,
+      body *:not(code):not(pre) {
+        font-family: var(--gaokao-cjk-font) !important;
+      }
+      html,
+      body {
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+      @media print {
+        html,
+        body {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+      }
+    </style>`
+
+  if (/<\/head>/i.test(html)) {
+    return html.replace(/<\/head>/i, `${css}\n</head>`)
+  }
+
+  return `${css}\n${html}`
 }
 
 function injectResponsivePatch(html) {
@@ -295,6 +335,31 @@ function injectPrintPatch(html) {
           font-size: 11pt;
           line-height: 1.65;
         }
+        .tabs,
+        .tab-nav,
+        .tab-buttons {
+          display: none !important;
+        }
+        .tab-pane,
+        .tab-panel,
+        .tab-content,
+        [role="tabpanel"],
+        [id^="tab"] {
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          height: auto !important;
+          max-height: none !important;
+          overflow: visible !important;
+        }
+        .tab-pane:not(:first-child),
+        .tab-panel:not(:first-child),
+        .tab-content:not(:first-child),
+        [role="tabpanel"]:not(:first-child),
+        [id^="tab"]:not(:first-child) {
+          break-before: page;
+          page-break-before: always;
+        }
         h1, h2, h3 {
           break-after: avoid;
           page-break-after: avoid;
@@ -326,4 +391,5 @@ module.exports = {
   normalizeReportHtml,
   extractHtmlDocument,
   humanizeReportCopy,
+  injectCjkFontPatch,
 }

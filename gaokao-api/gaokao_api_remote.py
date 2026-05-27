@@ -345,6 +345,74 @@ def search_scores():
     return jsonify({"total": total, "limit": limit, "offset": offset, "data": rows})
 
 
+@app.route("/api/scores/match")
+def score_match():
+    """
+    Compatibility endpoint for Dify score_match tools.
+
+    Returns the documented 冲/稳/保 shape while reusing the live scores table.
+    """
+    province = request.args.get("province", "")
+    score = request.args.get("score", type=int)
+    category = request.args.get("category", "")
+    year = request.args.get("year", 2024, type=int)
+    limit = min(request.args.get("limit", 10, type=int), 50)
+
+    if not province or not score or not category:
+        return jsonify({"error": "province, score, category are required"}), 400
+
+    province_clean = province.replace("省", "").replace("市", "").replace("自治区", "").replace("特别行政区", "").strip()
+
+    rows = query("""
+        SELECT s.school_name as school_name, s.major_name, s.min_score, s.min_rank,
+               s.avg_score, s.batch, s.category
+        FROM scores s
+        WHERE s.province_name = %s
+          AND s.year = %s
+          AND s.category = %s
+          AND s.min_score BETWEEN %s AND %s
+          AND s.min_score IS NOT NULL
+        ORDER BY s.min_score DESC
+        LIMIT %s
+    """, [province_clean, year, category, score - 30, score + 30, 1000])
+
+    schools = {}
+    for row in rows:
+        school = row["school_name"]
+        if school not in schools:
+            schools[school] = {
+                "school_name": school,
+                "majors": [],
+                "max_score": row["min_score"],
+                "min_score": row["min_score"],
+            }
+        schools[school]["majors"].append(row["major_name"])
+        schools[school]["max_score"] = max(schools[school]["max_score"], row["min_score"])
+        schools[school]["min_score"] = min(schools[school]["min_score"], row["min_score"])
+
+    for school in schools.values():
+        school["majors"] = "; ".join(school["majors"][:10])
+
+    rush = [s for s in schools.values() if score + 10 <= s["min_score"] <= score + 30]
+    stable = [s for s in schools.values() if score - 10 <= s["min_score"] <= score + 10]
+    safe = [s for s in schools.values() if score - 30 <= s["min_score"] <= score - 10]
+
+    rush.sort(key=lambda x: x["min_score"], reverse=True)
+    stable.sort(key=lambda x: x["min_score"], reverse=True)
+    safe.sort(key=lambda x: x["min_score"], reverse=True)
+
+    return jsonify({
+        "province": province,
+        "score": score,
+        "category": category,
+        "year": year,
+        "冲": rush[:limit],
+        "稳": stable[:limit],
+        "保": safe[:limit],
+    })
+
+
+@app.route("/api/scores/recommend")
 @app.route("/api/recommend")
 def recommend():
     """
@@ -438,6 +506,37 @@ def recommend():
     })
 
 
+@app.route("/api/scores/schools/<name>/provinces/<province>")
+def school_scores_by_province(name, province):
+    """Compatibility endpoint for documented school score lookups."""
+    year = request.args.get("year", type=int)
+    category = request.args.get("category", "")
+    limit = min(request.args.get("limit", 100, type=int), 500)
+
+    province_clean = province.replace("省", "").replace("市", "").replace("自治区", "").replace("特别行政区", "").strip()
+    conditions = ["s.school_name LIKE %s", "s.province_name = %s"]
+    params = [f"%{name}%", province_clean]
+
+    if year:
+        conditions.append("s.year = %s")
+        params.append(year)
+    if category:
+        conditions.append("s.category = %s")
+        params.append(category)
+
+    where = " AND ".join(conditions)
+    sql = """
+        SELECT s.school_name, s.province_name, s.year, s.batch,
+               s.category, s.major_name, s.min_score, s.min_rank, s.avg_score
+        FROM scores s
+        WHERE {where}
+        ORDER BY s.year DESC, s.min_score DESC
+        LIMIT %s
+    """.format(where=where)
+    rows = query(sql, params + [limit])
+    return jsonify({"school": name, "province": province, "total": len(rows), "majors": rows})
+
+
 @app.route("/api/schools/<name>/scores")
 def school_scores(name):
     """查询指定院校的分数线"""
@@ -529,6 +628,7 @@ def school_min_scores(name):
     })
 
 
+@app.route("/api/scores/majors/<keyword>")
 @app.route("/api/major/<keyword>/scores")
 def major_scores(keyword):
     """按专业关键词查询分数线"""

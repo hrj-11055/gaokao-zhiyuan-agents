@@ -58,6 +58,13 @@ class QuestionnaireFlowTests(unittest.TestCase):
         self.assertIn("saveQuestionnaire(answers.value)", single_branch.group("body"))
         self.assertIn("setTimeout(() => { currentIndex.value++ }", single_branch.group("body"))
 
+    def test_last_single_choice_runs_completion_check_for_missing_answers(self):
+        text = self.read("gaokao-miniprogram/src/pages/questionnaire/questionnaire.vue")
+
+        self.assertIn("setTimeout(finishQuestionnaire, 250)", text)
+        self.assertIn("const firstUnansweredIndex = getFirstUnansweredIndex()", text)
+        self.assertIn("currentIndex.value = firstUnansweredIndex", text)
+
     def test_finish_returns_to_assessments_tab_without_confirmation_modal(self):
         text = self.read("gaokao-miniprogram/src/pages/questionnaire/questionnaire.vue")
 

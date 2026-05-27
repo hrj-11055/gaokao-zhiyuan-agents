@@ -66,9 +66,14 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         report_page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
         download_page = self.read("gaokao-miniprogram/src/pages/deep-report-download/deep-report-download.vue")
 
-        self.assertIn("openDeepReportDownload", report_page)
-        self.assertIn("application/pdf", report_page)
+        self.assertIn("goDeepReportDownload", report_page)
+        self.assertIn("/pages/deep-report-download/deep-report-download", report_page)
         self.assertIn("/api/reports/deep/pdf", download_page)
+        self.assertIn("/api/reports/deep/view-token", download_page)
+        self.assertIn("openDeepReport", download_page)
+        self.assertIn("在线阅读", download_page)
+        self.assertIn("在线阅读不限次数", download_page)
+        self.assertIn("/pages/report-view/report-view", download_page)
         self.assertIn("Authorization", download_page)
         self.assertIn("Bearer ${membershipStore.sessionToken}", download_page)
         self.assertIn("application/pdf", download_page)
@@ -78,8 +83,17 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         self.assertIn("uni.showModal", download_page)
         self.assertIn("uni.switchTab({ url: '/pages/profile/profile' })", download_page)
         self.assertIn("PDF_DOWNLOAD_ENABLED", download_page)
-        self.assertIn("PDF 下载正在等待 HTTPS 合法域名配置", download_page)
+        self.assertIn("PDF 下载未在当前小程序构建中开启", download_page)
         self.assertIn("if (!PDF_DOWNLOAD_ENABLED)", download_page)
+        self.assertIn("downloadQuota", download_page)
+        self.assertIn("剩余下载次数", download_page)
+        self.assertIn("DOWNLOAD_QUOTA_EXHAUSTED", download_page)
+        self.assertIn("深度报告下载次数已用完", download_page)
+        self.assertIn("onLoad", download_page)
+
+        report_view_page = self.read("gaokao-miniprogram/src/pages/report-view/report-view.vue")
+        self.assertIn("/reports/deep/view/", report_view_page)
+        self.assertIn("/pages/deep-report-download/deep-report-download", report_view_page)
 
     def test_gaokao_api_exposes_token_protected_report_endpoints(self):
         api = self.read("data/gaokao_api.py")
@@ -102,10 +116,45 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         prompt = self.read("gaokao-proxy/lib/prompts/report-template.js")
 
         self.assertIn("/api/reports/deep/pdf", server)
+        self.assertIn("/api/reports/deep/view-token", server)
+        self.assertIn("/reports/deep/view/:token", server)
+        self.assertIn("createDeepReportViewToken", server)
+        self.assertIn("verifyDeepReportViewToken", server)
+        self.assertIn("buildDeepReportReaderHtml", server)
+        self.assertIn("/reports/deep-reports", server)
         self.assertIn("requireMembershipForReports", server)
+        self.assertIn("commerceStore.canDownloadDeepReport", server)
+        self.assertIn("DOWNLOAD_QUOTA_EXHAUSTED", server)
+        self.assertIn("commerceStore.recordDeepReportDownload", server)
         self.assertIn("buildDeepReportHtml", server)
         self.assertIn("完整 5000 字以上 PDF", prompt)
         self.assertIn("深度报告下载页", prompt)
+
+    def test_deep_report_view_token_is_signed_and_expires(self):
+        script = textwrap.dedent(
+            """
+            const assert = require('assert')
+            const {
+              createDeepReportViewToken,
+              verifyDeepReportViewToken,
+            } = require('./gaokao-proxy/lib/deep-report-view-token')
+
+            const token = createDeepReportViewToken({
+              userId: 'usr_1',
+              type: 'major',
+              id: '080901',
+            }, 'secret', { ttlMs: 1000, now: () => 10000 })
+
+            const payload = verifyDeepReportViewToken(token, 'secret', { now: () => 10500 })
+            assert.equal(payload.userId, 'usr_1')
+            assert.equal(payload.type, 'major')
+            assert.equal(payload.id, '080901')
+
+            assert.throws(() => verifyDeepReportViewToken(token, 'wrong', { now: () => 10500 }))
+            assert.throws(() => verifyDeepReportViewToken(token, 'secret', { now: () => 12000 }))
+            """
+        )
+        subprocess.run(["node", "-e", script], cwd=ROOT, check=True)
 
 
 if __name__ == "__main__":

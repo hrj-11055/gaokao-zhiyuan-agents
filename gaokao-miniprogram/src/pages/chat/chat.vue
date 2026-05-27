@@ -1,8 +1,8 @@
 <template>
   <view class="chat-page">
     <!-- 炫彩背景氛围粒子 -->
-    <view class="cyber-glow-bg-indigo" />
-    <view class="cyber-glow-bg-orange" />
+    <view class="cyber-glow-bg-teal" />
+    <view class="cyber-glow-bg-purple" />
 
     <!-- 对话区域 -->
     <scroll-view
@@ -37,20 +37,22 @@
 
       <!-- 消息列表 -->
       <template v-for="(msg, index) in messages" :key="index">
-        <ChatBubble
-          :type="msg.role"
-          :content="msg.content"
-          :messageId="msg.messageId"
-          :isStreaming="isStreaming && index === messages.length - 1 && msg.role === 'ai'"
-        />
-        <!-- 截断重试提示：AI 消息回复中途被截断时显示 -->
-        <view
-          v-if="msg.role === 'ai' && msg.truncated && index === messages.length - 1"
-          class="retry-bar"
-        >
-          <text class="retry-hint">这次回复不完整</text>
-          <view class="retry-btn" @click="handleRetry">
-            <text class="retry-btn-text">重新生成</text>
+        <view :id="`message-${index}`" class="message-anchor">
+          <ChatBubble
+            :type="msg.role"
+            :content="msg.content"
+            :messageId="msg.messageId"
+            :isStreaming="isStreaming && index === messages.length - 1 && msg.role === 'ai'"
+          />
+          <!-- 截断重试提示：AI 消息回复中途被截断时显示 -->
+          <view
+            v-if="msg.role === 'ai' && msg.truncated && index === messages.length - 1"
+            class="retry-bar"
+          >
+            <text class="retry-hint">这次回复不完整</text>
+            <view class="retry-btn" @click="handleRetry">
+              <text class="retry-btn-text">重新生成</text>
+            </view>
           </view>
         </view>
       </template>
@@ -124,6 +126,25 @@ function scrollToBottom() {
   })
 }
 
+function focusUserMessage(index) {
+  nextTick(() => {
+    setTimeout(() => {
+      const query = uni.createSelectorQuery()
+      query.select('.chat-scroll').boundingClientRect()
+      query.select('.chat-scroll').scrollOffset()
+      query.select(`#message-${index}`).boundingClientRect()
+      query.exec((res) => {
+        const [containerRect, scrollOffset, messageRect] = res || []
+        if (!containerRect || !scrollOffset || !messageRect) return
+
+        const desiredTop = containerRect.height * 0.52
+        const nextScrollTop = scrollOffset.scrollTop + messageRect.top - containerRect.top - desiredTop
+        scrollTop.value = Math.max(0, nextScrollTop)
+      })
+    }, 80)
+  })
+}
+
 // 快捷问题点击
 const onQuickSelect = (question) => {
   inputText.value = question
@@ -136,9 +157,23 @@ const handleSend = () => {
     uni.showToast({ title: '请先补全省份、科类和分数', icon: 'none' })
     return
   }
-  onSend({ onScrollToBottom: scrollToBottom })
+  onSend({
+    onScrollToBottom: scrollToBottom,
+    onUserMessageAppended: focusUserMessage,
+    onAiResponseStarted: () => {},
+    onProfileUpdated: (updatedProfile) => {
+      profile.value = updatedProfile
+    },
+  })
 }
-const handleRetry = () => onRetry({ onScrollToBottom: scrollToBottom })
+const handleRetry = () => onRetry({
+  onScrollToBottom: scrollToBottom,
+  onUserMessageAppended: focusUserMessage,
+  onAiResponseStarted: () => {},
+  onProfileUpdated: (updatedProfile) => {
+    profile.value = updatedProfile
+  },
+})
 
 function goHome() {
   uni.switchTab({ url: '/pages/index/index' })
@@ -146,41 +181,54 @@ function goHome() {
 
 </script>
 
+<style lang="scss">
+page {
+  height: 100%;
+  overflow: hidden;
+}
+</style>
+
 <style lang="scss" scoped>
 .chat-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  background:
-    radial-gradient(80% 45% at 20% 0%, rgba(37, 99, 235, 0.07) 0%, rgba(37, 99, 235, 0) 62%),
-    linear-gradient(180deg, #F8FAFC 0%, #EEF6FF 100%);
+  height: 100%;
+  min-height: 0;
+  background: linear-gradient(180deg, #E0F2FE 0%, #F3E8FF 100%);
   position: relative;
   overflow: hidden;
 }
 
-.cyber-glow-bg-indigo {
+.cyber-glow-bg-teal {
   position: absolute;
-  width: 500rpx;
-  height: 500rpx;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+  width: 600rpx;
+  height: 600rpx;
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
   top: -100rpx;
   left: -150rpx;
   pointer-events: none;
 }
-.cyber-glow-bg-orange {
+.cyber-glow-bg-purple {
   position: absolute;
-  width: 500rpx;
-  height: 500rpx;
-  background: radial-gradient(circle, rgba(249, 115, 22, 0.025) 0%, rgba(255, 255, 255, 0) 70%);
-  bottom: 200rpx;
+  width: 600rpx;
+  height: 600rpx;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+  bottom: 100rpx;
   right: -150rpx;
   pointer-events: none;
 }
 
 .chat-scroll {
   flex: 1;
+  height: 0;
+  min-height: 0;
   padding-top: 24rpx;
+  box-sizing: border-box;
   z-index: 10;
+}
+
+.message-anchor {
+  position: relative;
 }
 
 .profile-strip {
@@ -270,6 +318,7 @@ function goHome() {
 .input-bar {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 20rpx;
   padding: 24rpx 32rpx;
   padding-bottom: calc(24rpx + env(safe-area-inset-bottom));

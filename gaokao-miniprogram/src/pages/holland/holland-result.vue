@@ -91,14 +91,28 @@
           </view>
         </view>
         <view class="majors-list">
-          <view v-for="(major, idx) in typeInfo.majors" :key="idx" class="major-card" @click="viewMajorDetail(major)">
+          <view v-for="(major, idx) in majorCards" :key="major.name" class="major-card" @click="viewMajorDetail(major.name)">
             <view class="major-header">
-              <text class="major-name">{{ major }}</text>
+              <text class="major-name">{{ major.name }}</text>
               <view class="major-stars">
                 <text v-for="s in 5" :key="s" class="star-char" :class="{ filled: s <= (5 - Math.floor(idx / 2)) }">★</text>
               </view>
             </view>
-            <text class="major-desc">{{ getMajorDesc(major) }}</text>
+            <text class="major-desc">{{ major.insight?.summary || getMajorDesc(major.name) }}</text>
+            <view v-if="major.insight" class="major-insights">
+              <view class="major-insight-row">
+                <text class="major-insight-label">核心课程</text>
+                <text class="major-insight-text">{{ formatList(major.insight.courses) }}</text>
+              </view>
+              <view class="major-insight-row">
+                <text class="major-insight-label">能力要求</text>
+                <text class="major-insight-text">{{ formatList(major.insight.abilities) }}</text>
+              </view>
+              <view class="major-insight-row">
+                <text class="major-insight-label">薪资参考</text>
+                <text class="major-insight-text">{{ major.insight.salarySummary }}</text>
+              </view>
+            </view>
             <view class="major-footer">
               <text class="major-link">查看专业详情</text>
               <view class="arrow-icon">➔</view>
@@ -140,12 +154,14 @@ import { ref, computed } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import { loadAssessments, saveAssessments } from '../../utils/storage.js'
 import { HOLLAND_TYPE_DESCRIPTIONS, HOLLAND_TYPE_LABELS } from '../../data/holland-questions.js'
+import { fetchMajorInsights } from '../../api/majorInsights.js'
 
 const result = ref({
   code: '',
   scores: { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 }
 })
 const resultVersion = ref('')
+const majorInsights = ref({})
 
 const showConfirm = ref(false)
 
@@ -186,6 +202,13 @@ const typeInfo = computed(() => {
   }
 })
 
+const majorCards = computed(() => {
+  return (typeInfo.value.majors || []).map((name) => ({
+    name,
+    insight: majorInsights.value[name] || null,
+  }))
+})
+
 // 获取百分比
 function getPercent(score) {
   const maxScore = 40 // 每个类型最高40分（10题×4分）
@@ -211,6 +234,27 @@ function getMajorDesc(major) {
     '教育学': '教学理论与教育实践的结合'
   }
   return descs[major] || '相关专业课程，适合该兴趣类型发展'
+}
+
+async function loadMajorInsightsForResult() {
+  const names = typeInfo.value.majors || []
+  if (names.length === 0 || !result.value.code) {
+    majorInsights.value = {}
+    return
+  }
+
+  try {
+    const insights = await fetchMajorInsights(names)
+    majorInsights.value = Object.fromEntries(
+      insights.map((item) => [item.requestedName || item.name, item])
+    )
+  } catch {
+    majorInsights.value = {}
+  }
+}
+
+function formatList(items = []) {
+  return items.slice(0, 4).join('、')
 }
 
 // 查看专业详情
@@ -272,6 +316,7 @@ onShow(() => {
     scores: assessments.holland.scores
   }
   resultVersion.value = assessments.holland.version || 'full'
+  loadMajorInsightsForResult()
   uni.setNavigationBarTitle({
     title: '霍兰德测评结果'
   })
@@ -659,6 +704,38 @@ onShow(() => {
   color: $text-secondary;
   line-height: 1.6;
   margin-bottom: 24rpx;
+}
+
+.major-insights {
+  background: #F8FAFC;
+  border: 1px solid $border-light;
+  border-radius: $radius-md;
+  padding: 18rpx 20rpx;
+  margin-bottom: 24rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+}
+
+.major-insight-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16rpx;
+}
+
+.major-insight-label {
+  width: 104rpx;
+  flex-shrink: 0;
+  font-size: 22rpx;
+  font-weight: 800;
+  color: $brand-primary-light;
+}
+
+.major-insight-text {
+  flex: 1;
+  font-size: 22rpx;
+  color: $text-secondary;
+  line-height: 1.45;
 }
 
 .major-footer {

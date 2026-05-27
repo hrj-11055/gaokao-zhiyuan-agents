@@ -10,11 +10,13 @@ import {
   saveUserProfile
 } from '../../utils/storage.js'
 import {
+  containsProfileFollowupQuestion,
   getNextCoreProfileFollowup,
   getNextPersonalProfileFollowup,
   isCoreProfileField,
   isRecommendationIntent,
-  mergeFollowupAnswer
+  mergeFollowupAnswer,
+  mergeProfileFactsFromText
 } from './profileFollowup.js'
 
 function getProfileInputsKey(inputs) {
@@ -72,16 +74,39 @@ export function useChat() {
     return { freshProfile, profileInputs }
   }
 
+  function applyProfileFactsFromText(text, callbacks = {}) {
+    const { profile, fields } = mergeProfileFactsFromText(loadUserProfile(), text)
+    if (!fields.length) return loadUserProfile()
+
+    const updatedProfile = saveUserProfile(profile)
+    userStore.profile = updatedProfile
+    syncProfileWhenReady(updatedProfile)
+    if (callbacks.onProfileUpdated) callbacks.onProfileUpdated(updatedProfile)
+    return updatedProfile
+  }
+
   function appendUserMessage(text, callbacks = {}) {
     const lastMsg = chatStore.messages[chatStore.messages.length - 1]
+    let messageIndex = chatStore.messages.length - 1
     if (!lastMsg || lastMsg.role !== 'user' || lastMsg.content !== text) {
       chatStore.appendMessage({ role: 'user', content: text })
+      messageIndex = chatStore.messages.length - 1
       inputText.value = ''
     }
-    scroll(callbacks)
+    if (callbacks.onUserMessageAppended) {
+      callbacks.onUserMessageAppended(messageIndex)
+    } else {
+      scroll(callbacks)
+    }
   }
 
   function appendFollowupQuestion(followup, recommendationQuery, callbacks = {}) {
+    const last = chatStore.messages[chatStore.messages.length - 1]
+    if (last && last.role === 'ai' && containsProfileFollowupQuestion(last.content, followup)) {
+      // AI 正文已经问过同一个画像问题，只记录待填写字段，避免再追加一条重复气泡。
+      chatStore.setProfileFollowup(followup.field, recommendationQuery)
+      return
+    }
     chatStore.appendMessage({ role: 'ai', content: followup.question })
     chatStore.setProfileFollowup(followup.field, recommendationQuery)
     scroll(callbacks)
@@ -102,12 +127,16 @@ export function useChat() {
   }
 
   function sendToDify(text, callbacks = {}, profileInputs = buildProfileInputs(loadUserProfile()), options = {}) {
-    const { onScrollToBottom } = callbacks
+    const { onAiResponseStarted, onScrollToBottom } = callbacks
     const { askPostAnswerFollowup = false } = options
 
     chatStore.appendMessage({ role: 'ai', content: '' })
     isStreaming.value = true
-    if (onScrollToBottom) onScrollToBottom()
+    if (onAiResponseStarted) {
+      onAiResponseStarted()
+    } else if (onScrollToBottom) {
+      onScrollToBottom()
+    }
 
     currentAbort = sendMessageStream({
       query: text,
@@ -128,18 +157,27 @@ export function useChat() {
           chatStore.setConversationId(convId)
         }
       },
-      onEnd(data) {
+      onEnd(data = {}) {
         isStreaming.value = false
         if (data.conversationId && !chatStore.conversationId) {
            chatStore.setConversationId(data.conversationId)
         }
         const last = chatStore.messages[chatStore.messages.length - 1]
-        if (last && last.role === 'ai' && !String(last.content || '').trim()) {
-          last.content = '这次没有收到有效回复，请稍后重试。'
-          last.truncated = true
+        if (last && last.role === 'ai') {
+          if (data.truncated) {
+            last.truncated = true
+            const content = String(last.content || '').trim()
+            if (content && !content.includes('本次回复中途断开')) {
+              last.content = `${content}\n\n（本次回复中途断开，请点“重新生成”获取完整建议。）`
+            }
+          }
+          if (!String(last.content || '').trim()) {
+            last.content = data.truncated ? '这次回复中途断开了，请点重新生成获取完整建议。' : '这次没有收到有效回复，请稍后重试。'
+            last.truncated = true
+          }
         }
         chatStore.saveHistory()
-        if (askPostAnswerFollowup) {
+        if (askPostAnswerFollowup && !data.truncated) {
           appendPostAnswerFollowup(callbacks)
         }
       },
@@ -148,8 +186,11 @@ export function useChat() {
         const last = chatStore.messages[chatStore.messages.length - 1]
         if (last && last.role === 'ai') {
            last.truncated = true // 标记失败/截断，方便 UI 渲染重试按钮
-           if (!String(last.content || '').trim()) {
+           const content = String(last.content || '').trim()
+           if (!content) {
              last.content = err || '生成失败，请重试'
+           } else if (!content.includes('本次回复中途断开')) {
+             last.content = `${content}\n\n（本次回复中途断开，请点“重新生成”获取完整建议。）`
            }
         }
         chatStore.saveHistory()
@@ -166,11 +207,14 @@ export function useChat() {
 
     if (chatStore.pendingProfileField) {
       appendUserMessage(text, callbacks)
-      const updatedProfile = saveUserProfile(
-        mergeFollowupAnswer(loadUserProfile(), chatStore.pendingProfileField, text)
-      )
+      const mergedProfile = mergeProfileFactsFromText(
+        mergeFollowupAnswer(loadUserProfile(), chatStore.pendingProfileField, text),
+        text
+      ).profile
+      const updatedProfile = saveUserProfile(mergedProfile)
       userStore.profile = updatedProfile
       syncProfileWhenReady(updatedProfile)
+      if (callbacks.onProfileUpdated) callbacks.onProfileUpdated(updatedProfile)
 
       const profileInputs = buildProfileInputs(updatedProfile)
       const pendingField = chatStore.pendingProfileField
@@ -197,8 +241,9 @@ export function useChat() {
       return
     }
 
-    const { profileInputs } = prepareProfile()
     appendUserMessage(text, callbacks)
+    applyProfileFactsFromText(text, callbacks)
+    const { profileInputs } = prepareProfile()
 
     if (isRecommendationIntent(text)) {
       const followup = getNextCoreProfileFollowup(profileInputs)
