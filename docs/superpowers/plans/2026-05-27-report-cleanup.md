@@ -187,30 +187,22 @@ git commit -m "feat(cleanup): implement regex-based JSON extraction"
 
 ---
 
-### Task 4: Implement LLM Cleaning (Gemini 2.5 Flash)
+### Task 4: Implement LLM Cleaning (Gemini CLI)
 
 **Files:**
 - Modify: `scripts/clean_university_reports.py`
 
-- [ ] **Step 1: Add the Gemini cleaning function**
+- [ ] **Step 1: Add the Gemini CLI cleaning function**
 
 ```python
 # Add imports at the top
+import subprocess
 import time
-from google import genai
-from google.genai import types
 
 # Add function before main()
 def clean_markdown_with_llm(text: str) -> str:
-    """Uses Gemini to remove uncertainty markers while preserving flow."""
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-         logger.warning("GEMINI_API_KEY not set. Skipping LLM cleaning.")
-         return text
-         
-    client = genai.Client()
-    
-    prompt = """你是一个专业的文字编辑。请帮我清洗以下 Markdown 报告中的临时标记。
+    """Uses Gemini CLI to remove uncertainty markers while preserving flow."""
+    prompt = f"""你是一个专业的文字编辑。请帮我清洗以下 Markdown 报告中的临时标记。
 1. 删除所有类似 `[待核实]`, `[未检索到]`, `未确定`, `[部分待核实]` 等表示数据不确定的标签词汇。
 2. 如果删除标记导致句子不通顺（例如表格中的某项仅剩一个单独的括号，或“来源：”后无内容），请做语义顺滑处理（如改为“暂无数据”或直接删除该行无意义内容）。
 3. 绝对不能修改原文的其他实质性内容、核心数据和 Markdown 格式结构（表格必须保持对齐）。
@@ -218,21 +210,30 @@ def clean_markdown_with_llm(text: str) -> str:
 只返回清洗后的Markdown文本，不要有任何额外的解释或开头语。
 
 待处理文本如下：
+{text}
 """
     
-    # We might need to handle large files. Gemini 2.5 Flash context window is huge (1M+), 
-    # so we can send the whole file, but it's good practice to set safety settings.
     try:
-        response = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=[prompt, text],
-            config=types.GenerateContentConfig(
-                 temperature=0.1, # Low temperature for consistent editing
-            )
+        # Save prompt to a temporary file
+        temp_prompt_file = "tmp_clean_prompt.txt"
+        with open(temp_prompt_file, "w", encoding="utf-8") as f:
+            f.write(prompt)
+
+        # Call Gemini CLI
+        result = subprocess.run(
+            ["gemini", "ask", f"@{temp_prompt_file}", "--model", "gemini-2.5-flash"],
+            capture_output=True,
+            text=True,
+            check=True
         )
-        if response.text:
+        
+        # Clean up temp file
+        if os.path.exists(temp_prompt_file):
+            os.remove(temp_prompt_file)
+
+        if result.stdout:
              # Remove markdown codeblock wrappers if the model adds them
-             cleaned_text = response.text.strip()
+             cleaned_text = result.stdout.strip()
              if cleaned_text.startswith("```markdown"):
                   cleaned_text = cleaned_text[11:]
              if cleaned_text.startswith("```"):
@@ -241,10 +242,13 @@ def clean_markdown_with_llm(text: str) -> str:
                   cleaned_text = cleaned_text[:-3]
              return cleaned_text.strip()
         else:
-             logger.error("LLM returned empty response.")
+             logger.error("Gemini CLI returned empty response.")
              return text
+    except subprocess.CalledProcessError as e:
+         logger.error(f"Gemini CLI Error: {e.stderr}")
+         return text
     except Exception as e:
-         logger.error(f"LLM API Error: {e}")
+         logger.error(f"Unexpected Error: {e}")
          return text
 ```
 
