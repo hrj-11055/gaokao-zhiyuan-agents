@@ -26,7 +26,7 @@
     {
       "path": "pages/report/report",
       "style": {
-        "navigationBarTitleText": "我的志愿报告",
+        "navigationBarTitleText": "测评与报告",
         "navigationBarBackgroundColor": "#FFFFFF",
         "navigationBarTextStyle": "black"
       }
@@ -66,7 +66,7 @@
     {
       "path": "pages/mbti/mbti",
       "style": {
-        "navigationBarTitleText": "MBTI 性格测试",
+        "navigationBarTitleText": "性格测试",
         "navigationBarBackgroundColor": "#FFFFFF",
         "navigationBarTextStyle": "black"
       }
@@ -74,7 +74,7 @@
     {
       "path": "pages/mbti/mbti-result",
       "style": {
-        "navigationBarTitleText": "MBTI 测试结果",
+        "navigationBarTitleText": "性格测试结果",
         "navigationBarBackgroundColor": "#FFFFFF",
         "navigationBarTextStyle": "black"
       }
