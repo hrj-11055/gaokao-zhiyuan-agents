@@ -115,6 +115,44 @@ Report naming and content emphasis should adapt:
 
 No-score reports should recommend majors and planning paths, not specific school positioning. Estimated-score reports may discuss school tier and rough positioning, with clear recalibration language.
 
+## Report Prompt Strategy
+
+The comprehensive report prompt must branch by profile score state. This is a quality requirement, not just a UI label change.
+
+Official score prompt:
+
+- Time context may assume the family is in the official-score志愿填报阶段.
+- It may use score/rank, score-line data, and the structured reach/match/safety candidate pool.
+- Tab 5 may recommend and compare specific schools from the structured candidate pool only.
+- Conclusions should prioritize school positioning, major fit, risk reminders, and志愿执行清单.
+
+Estimated score prompt:
+
+- Time context should say the score is estimated, not official.
+- It may use score-line data for rough tier and reach/match/safety thinking, but every school-tier conclusion must be framed as estimated positioning.
+- It must include a recalibration section: what to update after official score/rank release, what risks could change, and how parents should re-run the report.
+- It must not present estimated-score school advice as an admission promise.
+
+No-score early planning prompt:
+
+- Time context should be early planning, not official-score填报.
+- It must not ask the model to produce precise reach/match/safety school ranking.
+- It should keep the report useful by emphasizing major direction, child profile, ability gaps, learning path, course selection or subject-strength strategy, target score bands, and parent action items.
+- Tab 5 should change from specific university ranking to `院校层次认知与后续校准策略`: explain how to evaluate school tiers later, what data to collect, and when to return after score/rank is known.
+- If no structured candidate pool exists, this is expected and should not be treated as a report weakness.
+
+The implementation should avoid one generic prompt that tries to cover all cases with conditional sentences. A small prompt-classification helper should choose the report mode first, then assemble mode-specific instructions. The shared parts can stay common: JSON schema, assessment summaries, major-research materials, tone, length requirements, and family-readable action plan.
+
+Prompt classification inputs should include:
+
+- `score_type`: `official`, `estimated`, or empty.
+- `planning_mode`: `score` or `early`.
+- `score`: numeric score when available.
+- `score_range`: optional estimated score range for early planning.
+- `grade` or `identity`: optional parent/student stage signal.
+
+Backward compatibility: existing profiles with only `score` should be treated as official-score profiles unless the user marks the score as estimated.
+
 ## Parent Experience Map
 
 Entry:
@@ -162,6 +200,42 @@ Likely frontend touchpoints:
 - `gaokao-miniprogram/src/pages/holland/holland-result.vue`: low-presence next-step bar.
 - `gaokao-miniprogram/src/pages/profile/profile.vue`: profile summary should show score type or early planning state instead of assuming a score.
 
+Likely backend touchpoints:
+
+- `gaokao-proxy/lib/prompts/report-template.js`: split report prompt assembly by report mode. The current prompt assumes official-score season and must not be reused unchanged for no-score early planning.
+- `gaokao-proxy/lib/report-builder.js`: pass normalized profile mode and score type into prompt construction; keep report quality gates active for all modes.
+- `gaokao-proxy/lib/data-api.js`: keep score-based university recommendation fetches tied to a score. No-score early planning should not fail or degrade just because no university candidate pool exists.
+- `gaokao-proxy/lib/commerce-store.js` and profile routes: persist the new profile fields so report generation sees the selected mode.
+
+## Testing Requirements
+
+This change must ship with tests because it changes both gating logic and report quality.
+
+Frontend and profile tests:
+
+- Update profile storage tests so official score, estimated score, and early planning profiles normalize and load correctly.
+- Test that official and estimated score profiles require province, category, and score.
+- Test that early planning profiles can be complete with province and category only.
+- Test that chat/report gates use the new completion logic instead of hard-coding score as mandatory.
+- Test that report page readiness uses the same four-step model as the homepage.
+
+Prompt and report tests:
+
+- Add unit tests for report prompt classification: official score, estimated score, no-score early planning, and legacy score-only profile.
+- Add prompt-content tests:
+  - Official score prompt includes school-positioning and structured candidate-pool rules.
+  - Estimated score prompt includes estimated-positioning language and official-score recalibration instructions.
+  - No-score prompt includes professional planning, ability-gap, and parent-action instructions, and does not require specific school ranking or reach/match/safety candidate output.
+- Add a regression test that the no-score prompt does not use the current official-score-only framing: `出分后、集中填报志愿的关键阶段`.
+- Add a regression test that Tab 5 behavior changes by mode: school ranking for official/estimated score, calibration strategy for no-score early planning.
+- Keep existing report quality gates for module length, JSON schema, parent-readable action plans, and non-AI tone.
+
+Manual QA:
+
+- Walk through an official-score Grade 12 user and confirm the report generation button, unlock copy, loading text, and final report label match school positioning.
+- Walk through an estimated-score user before official score release and confirm the report repeatedly says estimated positioning and recalibration.
+- Walk through a no-score Grade 10/11 parent and confirm the report can generate, recommends majors, and avoids precise school-positioning promises.
+
 ## Non-Goals
 
 - Do not create a separate homepage for parents.
@@ -178,3 +252,6 @@ Likely frontend touchpoints:
 - The homepage workbench feels light and appears in the first screen.
 - Assessment result pages tell users the next step without overwhelming the result content.
 - Report readiness uses the same four-step model as the homepage.
+- Comprehensive report prompts differ by official score, estimated score, and no-score early planning mode.
+- No-score reports recommend majors and planning actions without precise school positioning.
+- Automated tests cover the new profile completion rules and prompt mode differences.
