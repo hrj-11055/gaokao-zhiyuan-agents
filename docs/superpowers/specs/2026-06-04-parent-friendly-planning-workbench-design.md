@@ -15,7 +15,7 @@ The product should not split the homepage into separate modes. It should keep on
 The product remains a Gaokao advising reference tool, but it supports three score states:
 
 - Official score: used for school positioning, major recommendations, risk reminders, and report generation.
-- Estimated score: used for estimated positioning. The report may discuss school tiers and rough reach/match/safety direction, but must remind users to recalibrate after official score and rank are available.
+- Estimated score: used as a rough positioning reference. The report may discuss school tiers and broad reach/match/safety direction, but it should not behave like a score-prediction product. Small score deviations are acceptable; the report value should come from higher-quality major, fit, risk, and action analysis.
 - No score: used for early planning. The report must not promise precise school positioning. It should focus on major direction, student profile, ability gaps, learning path, score goals, and parent action items.
 
 This keeps the overall process close to the Grade 12 flow while avoiding over-claiming when score data is missing.
@@ -53,7 +53,7 @@ Score or estimated score mode:
 - Score type selector: official score or estimated score.
 - Score field.
 - Rank field, optional.
-- Copy should say that estimated-score reports need recalibration after official score/rank are released.
+- Copy should clearly mark estimated-score reports as rough-positioning references. It should mention later official-score/rank calibration once, but avoid making score accuracy feel like the main product value.
 
 Early planning mode:
 
@@ -113,7 +113,7 @@ Report naming and content emphasis should adapt:
 - Estimated score: `预估定位报告`.
 - No score: `专业规划报告`.
 
-No-score reports should recommend majors and planning paths, not specific school positioning. Estimated-score reports may discuss school tier and rough positioning, with clear recalibration language.
+No-score reports should recommend majors and planning paths, not specific school positioning. Estimated-score reports may discuss school tier and rough positioning, with clear but lightweight estimated-score framing.
 
 ## Report Prompt Strategy
 
@@ -129,8 +129,9 @@ Official score prompt:
 Estimated score prompt:
 
 - Time context should say the score is estimated, not official.
-- It may use score-line data for rough tier and reach/match/safety thinking, but every school-tier conclusion must be framed as estimated positioning.
-- It must include a recalibration section: what to update after official score/rank release, what risks could change, and how parents should re-run the report.
+- It may use score-line data for rough tier and reach/match/safety thinking, but school-tier conclusions should be framed as approximate references, not exact predictions.
+- It should include one clear calibration note or section: what to update after official score/rank release and how parents should use the report then. It should not repeatedly interrupt the report with calibration warnings.
+- It should tolerate reasonable estimated-score error and keep the core analysis focused on major fit, child profile, family constraints, risk judgment, and action quality.
 - It must not present estimated-score school advice as an admission promise.
 
 No-score early planning prompt:
@@ -224,7 +225,7 @@ Prompt and report tests:
 - Add unit tests for report prompt classification: official score, estimated score, no-score early planning, and legacy score-only profile.
 - Add prompt-content tests:
   - Official score prompt includes school-positioning and structured candidate-pool rules.
-  - Estimated score prompt includes estimated-positioning language and official-score recalibration instructions.
+  - Estimated score prompt includes approximate-positioning language, a lightweight official-score calibration note, and higher-quality major/action analysis requirements.
   - No-score prompt includes professional planning, ability-gap, and parent-action instructions, and does not require specific school ranking or reach/match/safety candidate output.
 - Add a regression test that the no-score prompt does not use the current official-score-only framing: `出分后、集中填报志愿的关键阶段`.
 - Add a regression test that Tab 5 behavior changes by mode: school ranking for official/estimated score, calibration strategy for no-score early planning.
@@ -233,7 +234,7 @@ Prompt and report tests:
 Manual QA:
 
 - Walk through an official-score Grade 12 user and confirm the report generation button, unlock copy, loading text, and final report label match school positioning.
-- Walk through an estimated-score user before official score release and confirm the report repeatedly says estimated positioning and recalibration.
+- Walk through an estimated-score user before official score release and confirm the report clearly marks the score as estimated without over-emphasizing score precision or repeated calibration warnings.
 - Walk through a no-score Grade 10/11 parent and confirm the report can generate, recommends majors, and avoids precise school-positioning promises.
 
 ## Non-Goals
