@@ -1,5 +1,6 @@
 import { ref, onMounted } from 'vue'
 import { sendMessageStream } from '../../api/dify.js'
+import pinia from '../../stores'
 import { useChatStore } from '../../stores/chat.js'
 import { useMembershipStore } from '../../stores/membership.js'
 import { useUserStore } from '../../stores/user.js'
@@ -13,6 +14,7 @@ import {
   containsProfileFollowupQuestion,
   getNextCoreProfileFollowup,
   getNextPersonalProfileFollowup,
+  getNextRecommendationProfileFollowup,
   isCoreProfileField,
   isRecommendationIntent,
   mergeFollowupAnswer,
@@ -33,9 +35,9 @@ function getProfileInputsKey(inputs) {
 }
 
 export function useChat() {
-  const chatStore = useChatStore()
-  const membershipStore = useMembershipStore()
-  const userStore = useUserStore()
+  const chatStore = useChatStore(pinia)
+  const membershipStore = useMembershipStore(pinia)
+  const userStore = useUserStore(pinia)
 
   const isStreaming = ref(false)
   const inputText = ref('')
@@ -112,10 +114,10 @@ export function useChat() {
     scroll(callbacks)
   }
 
-  function appendPostAnswerFollowup(callbacks = {}) {
+  function appendPostAnswerFollowup(callbacks = {}, recommendationQuery = '') {
     const followup = getNextPersonalProfileFollowup(buildProfileInputs(loadUserProfile()))
     if (!followup) return
-    appendFollowupQuestion(followup, '', callbacks)
+    appendFollowupQuestion(followup, recommendationQuery, callbacks)
   }
 
   function appendProfileAck(callbacks = {}) {
@@ -130,7 +132,7 @@ export function useChat() {
     const { onAiResponseStarted, onScrollToBottom } = callbacks
     const { askPostAnswerFollowup = false } = options
 
-    chatStore.appendMessage({ role: 'ai', content: '' })
+    chatStore.appendMessage({ role: 'ai', content: '', canRegenerate: true })
     isStreaming.value = true
     if (onAiResponseStarted) {
       onAiResponseStarted()
@@ -222,8 +224,19 @@ export function useChat() {
       chatStore.clearProfileFollowup()
 
       if (!isCoreProfileField(pendingField)) {
-        prepareProfile()
-        appendProfileAck(callbacks)
+        const prepared = prepareProfile()
+        if (pendingQuery && isRecommendationIntent(pendingQuery)) {
+          const recommendationFollowup = getNextRecommendationProfileFollowup(prepared.profileInputs)
+          if (recommendationFollowup) {
+            appendFollowupQuestion(recommendationFollowup, pendingQuery, callbacks)
+            return
+          }
+          sendToDify(pendingQuery, callbacks, prepared.profileInputs, {
+            askPostAnswerFollowup: false
+          })
+        } else {
+          appendProfileAck(callbacks)
+        }
         return
       }
 
@@ -235,8 +248,15 @@ export function useChat() {
       }
 
       const prepared = prepareProfile()
+      if (pendingQuery && isRecommendationIntent(pendingQuery)) {
+        const recommendationFollowup = getNextRecommendationProfileFollowup(prepared.profileInputs)
+        if (recommendationFollowup) {
+          appendFollowupQuestion(recommendationFollowup, pendingQuery, callbacks)
+          return
+        }
+      }
       sendToDify(pendingQuery, callbacks, prepared.profileInputs, {
-        askPostAnswerFollowup: isRecommendationIntent(pendingQuery)
+        askPostAnswerFollowup: false
       })
       return
     }
@@ -251,10 +271,15 @@ export function useChat() {
         appendFollowupQuestion(followup, text, callbacks)
         return
       }
+      const recommendationFollowup = getNextRecommendationProfileFollowup(profileInputs)
+      if (recommendationFollowup) {
+        appendFollowupQuestion(recommendationFollowup, text, callbacks)
+        return
+      }
     }
 
     sendToDify(text, callbacks, profileInputs, {
-      askPostAnswerFollowup: isRecommendationIntent(text)
+      askPostAnswerFollowup: false
     })
   }
 
@@ -269,16 +294,23 @@ export function useChat() {
   }
 
   function onRetry(callbacks) {
-    if (!lastQuery || isStreaming.value) return
+    if (isStreaming.value) return
+
+    const query = lastQuery || [...chatStore.messages].reverse().find((msg) => msg.role === 'user')?.content || ''
+    if (!query) {
+      uni.showToast({ title: '没有可重新生成的问题', icon: 'none' })
+      return
+    }
     
-    // 移除最后一条 AI 消息（失败的截断消息）
+    // 移除最后一条 AI 消息，保留前一条用户问题用于重新生成。
     const msgs = chatStore.messages
     if (msgs.length > 0 && msgs[msgs.length - 1].role === 'ai') {
       chatStore.messages.pop()
       chatStore.saveHistory()
     }
     
-    sendQuery(lastQuery, callbacks)
+    lastQuery = query
+    sendQuery(query, callbacks)
   }
 
   return {

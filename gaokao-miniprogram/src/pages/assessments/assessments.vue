@@ -7,7 +7,7 @@
     <!-- 页面标题 -->
     <view class="page-header">
       <text class="page-title">测评与报告准备</text>
-      <text class="page-subtitle">完成 3 项测评后，报告会更准确地结合学习方式、性格和职业兴趣。</text>
+      <text class="page-subtitle">完成 2 项测评后，报告会更准确地结合性格和职业兴趣。</text>
     </view>
 
     <!-- 进度统计仪表板 -->
@@ -22,45 +22,25 @@
             <view class="progress-fill-glow" />
           </view>
         </view>
-        <text class="progress-count-text">{{ completedCount }} / 3 项已完成</text>
+        <text class="progress-count-text">{{ completedCount }} / 2 项已完成</text>
       </view>
     </view>
 
     <!-- 测评卡片列表 -->
     <view class="assessments-list">
-      <!-- 五环问卷 -->
-      <view class="assessment-card" :class="{ completed: assessments.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT }" @click="goQuestionnaire">
-        <view class="card-icon" :class="{ completed: assessments.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT }">
-          <text class="icon-text">{{ assessments.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT ? '✓' : '1' }}</text>
-        </view>
-        <view class="card-content">
-          <view class="card-header-row">
-            <text class="card-title">五环特征综合评测</text>
-            <view class="status-badge" :class="{ completed: assessments.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT }">
-              <text class="status-text">{{ getStatusText('questionnaire') }}</text>
-            </view>
-          </view>
-          <text class="card-desc">21 维全面学习风格，记录学习方式、学业压力、家庭期待和目标偏好</text>
-          <text v-if="assessments.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT && assessments.questionnaire.completedCount > 0" class="completion-time">
-            同步完成于 {{ formatDate(assessments.questionnaire.updatedAt) }}
-          </text>
-        </view>
-        <text class="card-arrow">›</text>
-      </view>
-
-      <!-- MBTI 性格测试 -->
+      <!-- 性格测试 -->
       <view class="assessment-card" :class="{ completed: assessments.mbti.completed }" @click="goMbti">
         <view class="card-icon" :class="{ completed: assessments.mbti.completed }">
-          <text class="icon-text">{{ assessments.mbti.completed ? '✓' : '2' }}</text>
+          <text class="icon-text">{{ assessments.mbti.completed ? '✓' : '1' }}</text>
         </view>
         <view class="card-content">
           <view class="card-header-row">
-            <text class="card-title">MBTI 16型人格定位</text>
+            <text class="card-title">性格类型定位</text>
             <view class="status-badge" :class="{ completed: assessments.mbti.completed }">
               <text class="status-text">{{ getStatusText('mbti') }}</text>
             </view>
           </view>
-          <text class="card-desc">挖掘与生俱来的行为模式与最佳专业学习心智机制</text>
+          <text class="card-desc">了解沟通、信息处理、判断方式和生活节奏偏好</text>
           <text v-if="assessments.mbti.completed" class="completion-time">
             同步完成于 {{ formatDate(assessments.mbti.completedAt) }}
           </text>
@@ -77,7 +57,7 @@
       <!-- 霍兰德职业兴趣 -->
       <view class="assessment-card" :class="{ completed: assessments.holland.completed }" @click="goHolland">
         <view class="card-icon" :class="{ completed: assessments.holland.completed }">
-          <text class="icon-text">{{ assessments.holland.completed ? '✓' : '3' }}</text>
+          <text class="icon-text">{{ assessments.holland.completed ? '✓' : '2' }}</text>
         </view>
         <view class="card-content">
           <view class="card-header-row">
@@ -115,24 +95,22 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
-import { loadAssessments, QUESTIONNAIRE_REQUIRED_COUNT } from '../../utils/storage.js'
+import { loadAssessments } from '../../utils/storage.js'
 
 const assessments = ref({
   mbti: { completed: false, type: '', completedAt: 0 },
   holland: { completed: false, code: '', completedAt: 0 },
-  questionnaire: { completedCount: 0, updatedAt: 0 }
 })
 
 const completedCount = computed(() => {
   let count = 0
-  if (assessments.value.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT) count++
   if (assessments.value.mbti.completed) count++
   if (assessments.value.holland.completed) count++
   return count
 })
 
 const progressPercent = computed(() => {
-  return Math.round((completedCount.value / 3) * 100)
+  return Math.round((completedCount.value / 2) * 100)
 })
 
 function loadAssessmentsData() {
@@ -150,9 +128,6 @@ function formatDate(timestamp) {
 }
 
 function getStatusText(type) {
-  if (type === 'questionnaire') {
-    return assessments.value.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT ? '匹配成功' : '去评测'
-  }
   if (type === 'mbti') {
     return assessments.value.mbti.completed ? '已完成' : '去评测'
   }
@@ -160,10 +135,6 @@ function getStatusText(type) {
     return assessments.value.holland.completed ? '已完成' : '去评测'
   }
   return '去评测'
-}
-
-function goQuestionnaire() {
-  uni.navigateTo({ url: '/pages/questionnaire/questionnaire' })
 }
 
 function goMbti() {

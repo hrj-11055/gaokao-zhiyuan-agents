@@ -59,7 +59,7 @@ flowchart TD
    - 微信登录 Code 换取 OpenID，分发受秘钥保护的 JWT `sessionToken`。
    - 微信支付 JSAPI 统一下单，签名分发，接收官方异步支付回调并更新会员状态。
    - 对接 Dify 智能体进行 SSE 流式数据管道转发，并实时**拦截、过滤并剔除 `<think>...</think>` 思维链**，保证极佳的用户阅读体验。
-   - 实现用户测评档案收集与完整性强校验（当前 21 道有效问卷题 + MBTI + Holland），利用 Puppeteer 懒加载生成 PDF，并冷却频繁请求。
+   - 实现用户测评档案收集与完整性强校验（当前只要求 MBTI 结果摘要 + Holland RIASEC 指标），利用 Puppeteer 懒加载生成 PDF，并冷却频繁请求。五环问卷旧数据保留但不再参与综合报告。
    - 直接读取 PostgreSQL 中的结构化专业/院校三级深度评估数据，对免费用户脱敏脱密，对付费用户完整呈现。
 3. **Dify 引擎 (Dify Engine)**：运行于 `159.75.110.157`，提供流式 RAG 问答及专业逻辑工作流。Dify 的具体对话模型以 Dify 后台配置为准；综合报告不走 Dify 模型，而是由 47 上的 `gaokao-proxy` 直连 DeepSeek Chat Completions，目标模型为 `deepseek-v4-pro`。
 4. **数据引擎 (gaokao-api & Postgres)**：PostgreSQL 内含高价值数据表 `majors`（专业评估数据）、`universities`（院校评估数据）和 `stats_overview`（全盘评估数据统计）。`gaokao-api` 在 Dify 后端容器中运行，提供分数线与录取规则支持。
@@ -645,8 +645,8 @@ python3 data/upload_to_dify.py
 #### ⑤ 生成志愿填报综合决策评估报告 (HTML/PDF)
 *   **请求路由**：`POST /api/report/generate`
 *   **业务前置限制**：
-    1.  网关会严格检查 `questionnaire` 填答数量**不得少于 22 题**。
-    2.  `assessments.mbti.completed` 与 `assessments.holland.completed` 必须均为 `true`。
+    1.  `assessments.mbti.completed` 与 `assessments.holland.completed` 必须均为 `true`。
+    2.  五环问卷入口已关闭；旧 `questionnaire` 数据即使由旧客户端提交，也会被网关忽略，不进入报告 prompt 或专业资料抓取。
     3.  系统限制同一用户 **10分钟内仅能生成一次** 报告以防刷爆。
 *   **请求 Header**：
     *   `Authorization: Bearer <sessionToken> (必需)`
@@ -661,23 +661,33 @@ python3 data/upload_to_dify.py
         "score": 628,
         "rank": 7200
       },
-      "questionnaire": {
-        "q1": "A", "q2": "B", "q3": "A", "q4": "C", "q5": "B",
-        "q6": "A", "q7": "A", "q8": "B", "q9": "C", "q10": "A",
-        "q11": "B", "q12": "B", "q13": "A", "q14": "C", "q15": "B",
-        "q16": "A", "q17": "A", "q18": "B", "q19": "C", "q20": "A",
-        "q21": "A", "q22": "B"
-      },
       "assessments": {
         "mbti": {
           "completed": true,
-          "result": "INTJ",
-          "details": "逻辑严密，追求系统化设计，偏向幕后统筹策划"
+          "type": "INTJ",
+          "report": {
+            "name": "建筑师",
+            "tags": ["独立", "战略", "理性"],
+            "traits": ["富有想象力和战略性的思考者"],
+            "careers": ["软件架构师"],
+            "majors": ["计算机科学与技术"]
+          }
         },
         "holland": {
           "completed": true,
-          "result": "IRE",
-          "details": "具备强烈的探究特质、务实精神与进取态度"
+          "code": "RIA",
+          "scores": { "R": 20, "I": 30, "A": 10, "S": 25, "E": 15, "C": 22 },
+          "indicators": [
+            { "type": "I", "label": "研究型", "score": 30 },
+            { "type": "S", "label": "社会型", "score": 25 }
+          ],
+          "report": {
+            "name": "技术艺术型",
+            "tags": ["技术", "艺术", "动手"],
+            "traits": ["喜欢使用工具和技术手段进行创作"],
+            "careers": ["工业设计师"],
+            "majors": ["工业设计"]
+          }
         }
       },
       "conversationId": "conv_a81f3d2e9c182b83"
@@ -692,7 +702,7 @@ python3 data/upload_to_dify.py
 *   **测评未做完响应 (400 Bad Request)**：
     ```json
     {
-      "error": "请先完成全部 3 项测评后再生成综合报告"
+      "error": "请先完成性格测试和霍兰德职业兴趣测试后再生成综合报告"
     }
     ```
 *   **报告冷却限制中 (429 Too Many Requests)**：

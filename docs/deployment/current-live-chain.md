@@ -69,7 +69,7 @@ Available public routes:
 ```bash
 ssh -i /Users/MarkHuang/Downloads/mark123-.pem root@47.113.125.147
 cd /opt/gaokao-proxy
-grep -E '^(DIFY_API_URL|REPORT_BASE_URL|SCORE_API_URL|PORT)=' .env
+grep -E '^(DIFY_API_URL|REPORT_BASE_URL|SCORE_API_URL|SCORE_DATA_YEAR|PORT)=' .env
 ```
 
 Verified values:
@@ -79,6 +79,7 @@ DIFY_API_URL=http://159.75.110.157
 PORT=3001
 REPORT_BASE_URL=https://gaokao.aicoming.cn
 SCORE_API_URL=http://159.75.110.157/score-api
+SCORE_DATA_YEAR=2025
 ```
 
 Important score API note: `gaokao-api` is exposed inside 159 as `0.0.0.0:5001->5000`, but 47 should call it through the 159 Nginx route `http://159.75.110.157/score-api`. Direct public checks to `159.75.110.157:5000` and `159.75.110.157:5001` can fail even when `/score-api` is healthy. Verified score routes include `/api/health`, `/api/stats`, `/api/recommend`, `/api/scores/match`, `/api/scores/recommend`, `/api/scores/schools/<name>/provinces/<province>`, and `/api/scores/majors/<keyword>`.
@@ -91,6 +92,7 @@ MEMBERSHIP_INVITE_REQUIRED=5
 MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT=10
 MEMBERSHIP_VIP_CODES=<comma-separated launch/test codes>
 DEEPSEEK_MODEL=deepseek-v4-pro
+SCORE_DATA_YEAR=2025
 DEEP_REPORT_VIEW_TOKEN_TTL_MS=600000
 VITE_PDF_DOWNLOAD_ENABLED=true
 ```
@@ -98,8 +100,8 @@ VITE_PDF_DOWNLOAD_ENABLED=true
 Payment test note:
 
 - 2026-05-26: 1 yuan WeChat Pay smoke test succeeded on 47 with temporary `MEMBERSHIP_PRICE_CENTS=100`; the paid order became `status=paid` and membership became `source=payment`.
-- Before release, restore `MEMBERSHIP_PRICE_CENTS=1990`, set the mini-program price label to `¥19.9`, rebuild/upload the mini program, and re-run one 19.9 yuan payment smoke test.
-- 2026-05-28 SSH check: 47 `/opt/gaokao-proxy/.env` still showed `MEMBERSHIP_PRICE_CENTS=100` and `DEEPSEEK_MODEL=deepseek-chat`. Treat this as a release blocker until the server env is updated and PM2 is restarted.
+- 2026-05-28: 47 `/opt/gaokao-proxy/.env` was restored to `MEMBERSHIP_PRICE_CENTS=1990`, `DEEPSEEK_MODEL=deepseek-v4-pro`, and `WECHAT_LOGIN_MOCK=0`; `pm2 restart gaokao-proxy --update-env` completed and `/api/health` stayed `200`.
+- Before release, re-run one 19.9 yuan payment smoke test from a fresh WeChat account, then verify comprehensive report generation and PDF downloads.
 
 ### 159 Dify
 
@@ -151,8 +153,8 @@ curl http://127.0.0.1:5001/api/health
 
 1. Mini program calls `POST https://gaokao.aicoming.cn/api/report/generate`.
 2. Nginx on 47 routes to `127.0.0.1:3001`.
-3. `gaokao-proxy` validates `userId`, questionnaire completion, MBTI completion, and Holland completion.
-4. `gaokao-proxy` builds report context from local report data, optional Dify conversation history, and direct DeepSeek report generation.
+3. `gaokao-proxy` validates `userId`, membership/session state, MBTI completion, and Holland completion. Five-ring completion is no longer required.
+4. `gaokao-proxy` builds report context from compact MBTI/Holland assessment summaries, optional Dify conversation history, score/university data, and direct DeepSeek report generation. Existing five-ring questionnaire data is ignored.
 5. Generated HTML is saved under the reports directory on 47.
 6. Response returns `https://gaokao.aicoming.cn/reports/<file>.html`.
 

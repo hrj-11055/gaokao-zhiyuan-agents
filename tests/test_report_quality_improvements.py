@@ -31,10 +31,13 @@ class ReportQualityImprovementTests(unittest.TestCase):
         prompt = self.read("gaokao-proxy/lib/prompts/report-template.js")
 
         for snippet in [
+            "固定 HTML 模板",
             "家长先看结论",
             "志愿执行清单",
+            "每个模块的中文正文内容都必须不少于 1000 字",
             "每条建议必须包含动作、原因、核验材料",
             "家长核验动作",
+            "不要生成额外的目录页、Table 页或单独的表格页",
             "不要使用“AI 总评”",
             "顾问结论",
         ]:
@@ -105,9 +108,12 @@ class ReportQualityImprovementTests(unittest.TestCase):
 
     def test_report_generation_timeout_matches_real_wait_time(self):
         builder = self.read("gaokao-proxy/lib/report-builder.js")
+        client = self.read("gaokao-miniprogram/src/api/report.js")
 
         self.assertIn("REPORT_GENERATION_TIMEOUT_MS", builder)
         self.assertIn("REPORT_GENERATION_TIMEOUT_MS || 600000", builder)
+        # Client timeout should not be dramatically shorter than server timeout
+        self.assertIn("timeout: 300000", client)
 
     def test_miniprogram_deep_report_cards_expose_actionable_summary(self):
         page = self.read("gaokao-miniprogram/src/pages/deep-report-download/deep-report-download.vue")

@@ -42,12 +42,12 @@
     </view>
 
     <view class="access-card" :class="{ active: membershipStore.isActive }">
-      <text class="access-title">{{ membershipStore.isActive ? '会员权益已开通' : '下载 PDF 需要会员权益' }}</text>
+      <text class="access-title">{{ membershipStore.isActive ? '会员权益已开通' : '在线阅读免费，PDF 需要会员权益' }}</text>
       <text class="access-desc">
         {{
           membershipStore.isActive
             ? `在线阅读不限次数，PDF 剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
-            : '可先搜索查看报告是否入库，在线阅读或下载完整报告时再开通。'
+            : '在线阅读免费不限次数；需要离线保存或转发时，再开通会员下载完整 PDF。'
         }}
       </text>
       <button v-if="!membershipStore.isActive" class="access-btn" @click="goMembership">去开通</button>
@@ -106,6 +106,7 @@ import { computed, onMounted, ref } from 'vue'
 import { onLoad } from '@dcloudio/uni-app'
 import { API_BASE, PDF_DOWNLOAD_ENABLED } from '../../config.js'
 import { requestBackendData } from '../../api/backend.js'
+import pinia from '../../stores'
 import { useMembershipStore } from '../../stores/membership.js'
 
 const tabs = [
@@ -120,7 +121,7 @@ const loading = ref(false)
 const errorMsg = ref('')
 const hasSearched = ref(false)
 
-const membershipStore = useMembershipStore()
+const membershipStore = useMembershipStore(pinia)
 
 const collection = computed(() => mode.value === 'major' ? 'majors' : 'universities')
 const otherMode = computed(() => mode.value === 'major' ? 'university' : 'major')
@@ -154,7 +155,9 @@ onLoad((options = {}) => {
 
 onMounted(async () => {
   try {
-    await membershipStore.loadStatus()
+    if (membershipStore.sessionToken) {
+      await membershipStore.loadStatus()
+    }
   } catch {
     // 列表查询不强制登录；下载时再提示登录/开通。
   }
@@ -294,21 +297,6 @@ async function ensureMembership({ requireDownloadQuota = false } = {}) {
 }
 
 async function openDeepReport(item) {
-  try {
-    await ensureMembership()
-  } catch (err) {
-    uni.showModal({
-      title: '需要会员权益',
-      content: err.message || '请先开通会员后在线阅读完整报告。',
-      confirmText: '去开通',
-      cancelText: '先看看',
-      success: (res) => {
-        if (res.confirm) goMembership()
-      },
-    })
-    return
-  }
-
   const { type, id } = reportIdentity(item)
   if (!id) {
     uni.showToast({ title: '报告标识缺失', icon: 'none' })
@@ -323,7 +311,6 @@ async function openDeepReport(item) {
       data: { type, id },
       header: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${membershipStore.sessionToken}`,
       },
       timeout: 15000,
     })
@@ -423,7 +410,7 @@ function goMembership() {
 }
 
 .eyebrow {
-  color: #f97316;
+  color: $brand-primary;
   font-size: 22rpx;
   font-weight: 800;
   letter-spacing: 0;
@@ -533,7 +520,7 @@ function goMembership() {
   min-width: 132rpx;
   height: 62rpx;
   border-radius: 999rpx;
-  background: #f97316;
+  background: $brand-primary;
   color: #fff;
   font-size: 24rpx;
   font-weight: 800;
@@ -593,7 +580,7 @@ function goMembership() {
 }
 
 .item-meta {
-  color: #f97316;
+  color: $brand-primary;
   font-size: 24rpx;
   line-height: 1.45;
 }

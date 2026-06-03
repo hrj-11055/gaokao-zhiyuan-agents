@@ -37,6 +37,22 @@ class ScoreApiRouteContractTests(unittest.TestCase):
         self.assertIn("/api/scores/schools/<name>/provinces/<province>", routes)
         self.assertIn("/api/scores/majors/<keyword>", routes)
 
+    def test_score_category_normalizes_three_plus_three_provinces(self):
+        local = load_module("gaokao_api_app_category_contract", ROOT / "gaokao-api" / "app.py")
+        remote = load_module("gaokao_api_remote_category_contract", ROOT / "gaokao-api" / "gaokao_api_remote.py")
+        data_source = load_module("gaokao_data_api_category_contract", ROOT / "data" / "gaokao_api.py")
+
+        for module in (local, remote, data_source):
+            self.assertEqual("广西", module.normalize_province_name("广西壮族自治区"))
+            self.assertEqual("新疆", module.normalize_province_name("新疆维吾尔自治区"))
+            self.assertEqual("综合", module.normalize_score_category("山东", "物理类"))
+            self.assertEqual("综合", module.normalize_score_category("浙江省", "历史类"))
+            self.assertEqual("物理类", module.normalize_score_category("广东", "理科"))
+            self.assertEqual("历史类", module.normalize_score_category("广东", "文科"))
+            self.assertEqual(["综合"], module.score_category_aliases("山东", "物理类"))
+            self.assertEqual(["物理类", "理科"], module.score_category_aliases("四川", "理科"))
+            self.assertEqual(["历史类", "文科"], module.score_category_aliases("河南省", "历史类"))
+
 
 if __name__ == "__main__":
     unittest.main()

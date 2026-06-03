@@ -15,7 +15,7 @@ def require_env(name):
     return value
 
 
-DIFY_BASE = os.environ.get("DIFY_BASE", "http://8.135.37.159:8080")
+DIFY_BASE = os.environ.get("DIFY_BASE", "http://159.75.110.157")
 DATASET_TOKEN = require_env("DIFY_DATASET_TOKEN")
 KB1_DATASET_ID = "a6851f4b-4a6c-47af-a094-c37496560b81"
 KB1_FILE = os.path.join(os.path.dirname(__file__), "knowledge-base", "kb1-zhangxuefeng-corpus.md")

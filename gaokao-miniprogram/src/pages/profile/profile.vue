@@ -47,12 +47,19 @@
       </view>
       <text class="vip-status-desc">
         {{ membershipStore.isActive
-           ? `剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
-           : `量身定制推荐院校与志愿 · ${membershipStore.inviteProgressText}` }}
+           ? `权益已解锁 · 剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
+           : `${MEMBERSHIP_PRICE_LABEL} 解锁完整报告权益 · 有效邀请 ${membershipStore.inviteProgressText}` }}
       </text>
+      <view class="vip-benefit-list">
+        <text class="vip-benefit">完整志愿报告：学校/专业判断、风险提醒、下一步行动</text>
+        <text class="vip-benefit">院校/专业深度阅读：在线阅读不限次数</text>
+        <text class="vip-benefit">PDF 下载额度：当前 {{ membershipStore.downloadQuota.remaining }}/{{ membershipStore.downloadQuota.limit }}</text>
+        <text class="vip-benefit">支付后客服兜底：异常可联系 {{ CUSTOMER_WECHAT_ID }}</text>
+      </view>
+      <text v-if="!membershipStore.isActive" class="invite-rule">有效邀请：新用户通过你的分享进入，并完成省份、科类、分数基础资料才计数。</text>
       <view class="vip-status-actions">
-        <button class="vip-action primary" @click="goReport">
-          {{ membershipStore.isActive ? '查看报告' : '立即开通' }}
+        <button class="vip-action primary" @click="onMembershipAction">
+          {{ membershipStore.isActive ? '查看报告' : `${MEMBERSHIP_PRICE_LABEL} 解锁` }}
         </button>
         <button v-if="!membershipStore.isActive" class="vip-action outline" open-type="share">邀请好友</button>
       </view>
@@ -107,26 +114,51 @@
     <view class="footer">
       <text class="footer-text">峰哥咨询参考 · 报告仅供志愿填报参考</text>
     </view>
+
+    <view v-if="showContactSheet" class="contact-sheet-mask" @click="closeContactSheet">
+      <view class="contact-sheet" @click.stop>
+        <view class="contact-sheet-head">
+          <text class="contact-title">{{ contactSheetTitle }}</text>
+          <text class="contact-close" @click="closeContactSheet">×</text>
+        </view>
+        <text class="contact-desc">添加客服微信，发送付款截图、用户 ID 或问题截图，我们会继续跟进。</text>
+        <image
+          class="contact-qr"
+          :src="CUSTOMER_WECHAT_QR_IMAGE"
+          mode="aspectFit"
+          @click="previewCustomerWechatQr"
+        />
+        <text class="contact-tip">扫码上方二维码，或复制微信号添加好友。</text>
+        <view class="contact-id-row">
+          <text class="contact-id-label">微信号</text>
+          <text class="contact-id">{{ CUSTOMER_WECHAT_ID }}</text>
+        </view>
+        <view class="contact-actions">
+          <button class="contact-action primary" @click="copyCustomerWechatId">复制微信号</button>
+          <button class="contact-action secondary" @click="previewCustomerWechatQr">查看二维码</button>
+        </view>
+      </view>
+    </view>
   </view>
 </template>
 
 <script setup>
 import { computed, ref } from 'vue'
 import { onShow, onShareAppMessage } from '@dcloudio/uni-app'
-import { CUSTOMER_WECHAT_ID } from '../../config.js'
+import { CUSTOMER_WECHAT_ID, CUSTOMER_WECHAT_QR_IMAGE, MEMBERSHIP_PRICE_LABEL } from '../../config.js'
 import { useMembershipStore } from '../../stores/membership.js'
-import { loadUserProfile, loadAssessments, loadQuestionnaire, QUESTIONNAIRE_REQUIRED_COUNT } from '../../utils/storage.js'
+import { loadUserProfile, loadAssessments } from '../../utils/storage.js'
 
 const membershipStore = useMembershipStore()
 const profile = ref(loadUserProfile())
 const assessments = ref(loadAssessments())
-const questionnaire = ref(loadQuestionnaire())
+const showContactSheet = ref(false)
+const contactSheetTitle = ref('添加客服微信')
 
 const shortUserId = computed(() => (membershipStore.userId || 'CLOUD').slice(0, 8).toUpperCase())
 
 const assessmentCount = computed(() => {
   let n = 0
-  if (questionnaire.value.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT) n++
   if (assessments.value.mbti.completed) n++
   if (assessments.value.holland.completed) n++
   return n
@@ -150,40 +182,77 @@ function goReport() {
   uni.switchTab({ url: '/pages/report/report' })
 }
 
+async function onMembershipAction() {
+  if (membershipStore.isActive) {
+    goReport()
+    return
+  }
+  await onPayWithWechat()
+}
+
+async function onPayWithWechat() {
+  try {
+    await membershipStore.openMembership()
+    await membershipStore.loadStatus()
+    uni.showToast({ title: 'VIP 已开通', icon: 'success' })
+  } catch (err) {
+    const message = err.message || '支付暂时不可用'
+    uni.showModal({
+      title: err.code === 'PAYMENT_PENDING' ? '支付确认中' : '支付未完成',
+      content: `${message}\n\n如已付款但未解锁，请添加客服微信 ${CUSTOMER_WECHAT_ID} 处理。`,
+      confirmText: '联系客服',
+      cancelText: '关闭',
+      success(res) {
+        if (res.confirm) openContactSheet('联系客服')
+      },
+    })
+  }
+}
+
 function goPrivacy() {
   uni.navigateTo({ url: '/pages/privacy/privacy' })
 }
 
 function goFeedback() {
-  uni.showModal({
-    title: '投诉建议',
-    content: `请添加客服微信 ${CUSTOMER_WECHAT_ID}，发送付款截图、用户 ID 或问题截图，我们会继续跟进。`,
-    confirmText: '复制微信号',
-    cancelText: '关闭',
-    success(res) {
-      if (!res.confirm) return
-      uni.setClipboardData({
-        data: CUSTOMER_WECHAT_ID,
-        success() {
-          uni.showToast({ title: '微信号已复制', icon: 'none' })
-        },
-      })
-    },
-  })
+  openContactSheet('投诉建议')
 }
 
 function goAbout() {
-  uni.showToast({ title: '功能开发中', icon: 'none' })
+  openContactSheet('关于我们')
 }
 
 function onShare() {
   uni.showToast({ title: '请用右上角 ··· 分享', icon: 'none' })
 }
 
+function openContactSheet(title = '添加客服微信') {
+  contactSheetTitle.value = title
+  showContactSheet.value = true
+}
+
+function closeContactSheet() {
+  showContactSheet.value = false
+}
+
+function copyCustomerWechatId() {
+  uni.setClipboardData({
+    data: CUSTOMER_WECHAT_ID,
+    success() {
+      uni.showToast({ title: '微信号已复制', icon: 'none' })
+    },
+  })
+}
+
+function previewCustomerWechatQr() {
+  uni.previewImage({
+    urls: [CUSTOMER_WECHAT_QR_IMAGE],
+    current: CUSTOMER_WECHAT_QR_IMAGE,
+  })
+}
+
 onShow(() => {
   profile.value = loadUserProfile()
   assessments.value = loadAssessments()
-  questionnaire.value = loadQuestionnaire()
   membershipStore.loadStatus().catch(() => {})
 })
 
@@ -396,6 +465,31 @@ onShareAppMessage(() => ({
   margin-bottom: 24rpx;
 }
 
+.vip-benefit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+  margin-bottom: 18rpx;
+}
+
+.vip-benefit {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 22rpx;
+  line-height: 1.45;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: $radius-sm;
+  padding: 10rpx 14rpx;
+}
+
+.invite-rule {
+  display: block;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 22rpx;
+  line-height: 1.5;
+  margin-bottom: 20rpx;
+}
+
 .vip-status-actions {
   display: flex;
   gap: 16rpx;
@@ -516,5 +610,116 @@ onShareAppMessage(() => ({
   font-size: 22rpx;
   color: $text-muted;
   line-height: 1.5;
+}
+
+.contact-sheet-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.42);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.contact-sheet {
+  width: 100%;
+  background: #ffffff;
+  border-top-left-radius: $radius-xl;
+  border-top-right-radius: $radius-xl;
+  padding: 32rpx 32rpx calc(32rpx + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+}
+
+.contact-sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16rpx;
+}
+
+.contact-title {
+  color: $text-primary;
+  font-size: 34rpx;
+  font-weight: 900;
+}
+
+.contact-close {
+  color: $text-muted;
+  font-size: 44rpx;
+  line-height: 1;
+}
+
+.contact-desc,
+.contact-tip {
+  display: block;
+  color: $text-secondary;
+  font-size: 26rpx;
+  line-height: 1.5;
+}
+
+.contact-qr {
+  width: 420rpx;
+  height: 420rpx;
+  margin: 28rpx auto 18rpx;
+  display: block;
+  border-radius: $radius-md;
+  background: #ffffff;
+}
+
+.contact-tip {
+  text-align: center;
+  color: $text-muted;
+  margin-bottom: 24rpx;
+}
+
+.contact-id-row {
+  min-height: 76rpx;
+  border-radius: $radius-md;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24rpx;
+  margin-bottom: 24rpx;
+}
+
+.contact-id-label {
+  color: $text-secondary;
+  font-size: 26rpx;
+}
+
+.contact-id {
+  color: $text-primary;
+  font-size: 28rpx;
+  font-weight: 900;
+  letter-spacing: 1rpx;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 20rpx;
+}
+
+.contact-action {
+  flex: 1;
+  height: 78rpx;
+  line-height: 78rpx;
+  border-radius: $radius-full;
+  font-size: 28rpx;
+  font-weight: 800;
+  margin: 0;
+
+  &::after { border: none; }
+
+  &.primary {
+    background: $grad-accent;
+    color: #ffffff;
+  }
+
+  &.secondary {
+    background: #f1f5f9;
+    color: $text-secondary;
+  }
 }
 </style>

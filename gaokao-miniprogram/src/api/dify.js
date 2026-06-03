@@ -337,22 +337,3 @@ export async function sendFeedback({ messageId, rating, query, answer }) {
   })
   return response.statusCode === 200
 }
-
-/**
- * 语音合成请求
- * 返回音频的 ArrayBuffer
- */
-export async function fetchTTSAudio(text) {
-  const response = await requestBackend({
-    path: '/api/tts',
-    method: 'POST',
-    data: { text },
-    responseType: 'arraybuffer',
-    header: { 'Content-Type': 'application/json' }
-  })
-  
-  if (response.statusCode !== 200) {
-    throw new Error('语音合成失败')
-  }
-  return response.data
-}

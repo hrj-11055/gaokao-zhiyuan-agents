@@ -13,7 +13,7 @@
         <text class="major-desc">{{ majorDesc }}</text>
         <view class="source-tag-wrap">
           <view class="source-tag" :class="source">
-            {{ source === 'mbti' ? 'MBTI 性格参考' : '霍兰德兴趣参考' }}
+            {{ source === 'mbti' ? '性格测试参考' : '霍兰德兴趣参考' }}
           </view>
         </view>
       </view>
@@ -104,97 +104,32 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { MBTI_TYPE_DESCRIPTIONS } from '../../data/mbti-questions.js'
-import { HOLLAND_TYPE_DESCRIPTIONS } from '../../data/holland-questions.js'
+import { MBTI_RESULT_REPORTS } from '../../data/mbti-questions.js'
+import { HOLLAND_RESULT_REPORTS } from '../../data/holland-questions.js'
 import { fetchMajorInsights } from '../../api/majorInsights.js'
+import { getMajorLearningProfile, normalizeMajorName } from '../../data/major-learning-profiles.js'
 
 const majorName = ref('')
 const source = ref('mbti')
 const typeCode = ref('')
 const majorInsight = ref(null)
 
-// 专业描述映射（合并 MBTI 和 Holland 的 descMap）
-const majorDescMap = {
-  // MBTI 专业
-  '计算机科学与技术': '研究计算机系统、软件开发与人工智能',
-  '数学': '研究数量、结构、空间等基础概念',
-  '物理学': '研究物质、能量及其相互作用',
-  '哲学': '探讨存在、知识、价值等根本问题',
-  '经济学': '研究资源配置与经济运行规律',
-  '建筑学': '结合艺术与技术的建筑设计与规划',
-  '化学': '研究物质的组成、结构、性质与变化',
-  '生物学': '研究生命现象与生命活动规律',
-  '逻辑学': '研究思维形式与推理规律',
-  '工商管理': '企业管理与运营的综合学科',
-  '法学': '法律规范与法律制度的研究',
-  '金融学': '资音乐通与金融市场研究',
-  '国际关系': '国家间政治、经济关系研究',
-  '市场营销': '市场分析与营销策略研究',
-  '心理学': '人类心理与行为规律研究',
-  '社会学': '社会结构与社会变迁研究',
-  '教育学': '教育理论与教学实践研究',
-  '文学': '语言文学创作与鉴赏',
-  '社会工作': '社会服务与社会福利研究',
-  '公共管理': '公共事务与组织管理',
-  '新闻传播': '新闻传播理论与实务',
-  '设计学': '视觉传达与艺术设计',
-  '人力资源管理': '人才选拔与组织发展',
-  '公共关系': '组织形象与公众沟通',
-  '播音主持': '广播电视语言传播艺术',
-  '表演艺术': '舞台表演艺术研究',
-  '广告学': '广告策划与创意设计',
-  '会计学': '财务核算与审计监督',
-  '医学': '疾病预防与临床治疗',
-  '土木工程': '工程建设与结构设计',
-  '项目管理': '项目规划与执行管理',
-  '行政管理': '政府与公共组织管理',
-  '物流管理': '供应链与物流系统优化',
-  '军事学': '军事理论与国防建设',
-  '护理学': '护理理论与临床实践',
-  '图书馆学': '信息资源组织与管理',
-  '医学技术': '医学检验与辅助技术',
-  '酒店管理': '酒店运营与服务管理',
-  '旅游管理': '旅游资源开发与规划',
-  '机械工程': '机械系统设计与制造',
-  '航空技术': '航空器运行与维护',
-  '自动化': '自动控制系统研究',
-  '体育教育': '体育教学与运动训练',
-  '美术学': '美术创作与理论',
-  '音乐学': '音乐理论与演奏',
-  '服装设计': '服装艺术与工程设计',
-  '园林设计': '景观规划与植物配置',
-  '烹饪艺术': '烹饪技艺与餐饮管理',
-  '国际贸易': '跨国贸易与商务',
-  '艺术设计': '视觉艺术与设计实践',
-  '计算机科学': '计算机系统与软件研究',
-  // Holland 专业
-  '工业设计': '结合技术与艺术的交叉学科',
-  '服装设计与工程': '时尚创意与工程技术结合',
-  '产品设计': '从创意到产品的完整设计流程',
-  '康复治疗学': '通过技术手段帮助患者康复',
-  '生物医学工程': '工程技术在医学领域的应用',
-  '风景园林': '户外空间规划与景观设计',
-  '环境设计': '创造宜居的生活与工作环境',
-  '质量管理工程': '确保产品与服务质量的体系',
-}
-
 const majorDesc = computed(() => (
   majorInsight.value?.summary ||
-  majorDescMap[majorName.value] ||
-  '适合该性格类型的热门专业方向'
+  getMajorLearningProfile(majorName.value).summary
 ))
 
 // 获取类型信息
 const typeInfo = computed(() => {
   if (source.value === 'mbti') {
-    return MBTI_TYPE_DESCRIPTIONS[typeCode.value] || null
+    return MBTI_RESULT_REPORTS[typeCode.value] || null
   }
   // Holland: 先精确匹配，再前缀匹配
-  if (HOLLAND_TYPE_DESCRIPTIONS[typeCode.value]) {
-    return HOLLAND_TYPE_DESCRIPTIONS[typeCode.value]
+  if (HOLLAND_RESULT_REPORTS[typeCode.value]) {
+    return HOLLAND_RESULT_REPORTS[typeCode.value]
   }
   const prefix = typeCode.value.substring(0, 2)
-  for (const [key, value] of Object.entries(HOLLAND_TYPE_DESCRIPTIONS)) {
+  for (const [key, value] of Object.entries(HOLLAND_RESULT_REPORTS)) {
     if (key.startsWith(prefix)) return value
   }
   return null
@@ -224,10 +159,11 @@ function formatList(items = []) {
 async function loadMajorInsight() {
   if (!majorName.value) return
   try {
-    const insights = await fetchMajorInsights([majorName.value])
-    majorInsight.value = insights[0] || null
+    const officialName = normalizeMajorName(majorName.value)
+    const insights = await fetchMajorInsights([officialName])
+    majorInsight.value = getMajorLearningProfile(officialName, insights[0] || null)
   } catch {
-    majorInsight.value = null
+    majorInsight.value = getMajorLearningProfile(majorName.value)
   }
 }
 
@@ -235,7 +171,7 @@ onMounted(() => {
   const pages = getCurrentPages()
   const currentPage = pages[pages.length - 1]
   const options = currentPage.options || currentPage.$page?.options || {}
-  majorName.value = decodeURIComponent(options.name || '')
+  majorName.value = normalizeMajorName(decodeURIComponent(options.name || ''))
   source.value = options.source || 'mbti'
   typeCode.value = options.type || ''
 
@@ -604,7 +540,7 @@ onMounted(() => {
   }
 
   &.holland {
-    background: linear-gradient(135deg, #FF6B00 0%, #EA580C 100%);
+    background: $grad-primary;
     box-shadow: 0 6rpx 16rpx rgba(249, 115, 22, 0.3);
 
     &:active {

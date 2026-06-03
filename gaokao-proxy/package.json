@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "vip-codes": "node scripts/manage-vip-codes.js"
+    "vip-codes": "node scripts/manage-vip-codes.js",
+    "commerce-ops": "node scripts/commerce-ops.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

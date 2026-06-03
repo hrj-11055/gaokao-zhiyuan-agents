@@ -49,6 +49,8 @@ REPORT_PG_CONFIG = {
     "dbname": os.environ.get("REPORT_PG_DB", "gaokao_db"),
 }
 
+THREE_PLUS_THREE_PROVINCES = {"北京", "天津", "上海", "浙江", "山东", "海南"}
+
 # 全局连接
 _conn = None
 _report_conn = None
@@ -100,6 +102,57 @@ def require_report_token(func):
         return func(*args, **kwargs)
 
     return wrapper
+
+
+def normalize_province_name(province):
+    return (
+        str(province or "")
+        .replace("壮族自治区", "")
+        .replace("回族自治区", "")
+        .replace("维吾尔自治区", "")
+        .replace("省", "")
+        .replace("市", "")
+        .replace("自治区", "")
+        .replace("特别行政区", "")
+        .strip()
+    )
+
+
+def normalize_score_category(province, category):
+    province_clean = normalize_province_name(province)
+    category_clean = str(category or "").strip()
+    if province_clean in THREE_PLUS_THREE_PROVINCES and category_clean in ("物理类", "历史类", "理科", "文科", "综合"):
+        return "综合"
+    if category_clean == "理科":
+        return "物理类"
+    if category_clean == "文科":
+        return "历史类"
+    return category_clean
+
+
+def score_category_aliases(province, category):
+    province_clean = normalize_province_name(province)
+    category_clean = str(category or "").strip()
+    if province_clean in THREE_PLUS_THREE_PROVINCES and category_clean in ("物理类", "历史类", "理科", "文科", "综合"):
+        return ["综合"]
+    if category_clean in ("物理类", "理科"):
+        return ["物理类", "理科"]
+    if category_clean in ("历史类", "文科"):
+        return ["历史类", "文科"]
+    return [category_clean] if category_clean else []
+
+
+def add_category_condition(conditions, params, column, province, category):
+    aliases = score_category_aliases(province, category)
+    if not aliases:
+        return
+    if len(aliases) == 1:
+        conditions.append(f"{column} = %s")
+        params.append(aliases[0])
+        return
+    placeholders = ",".join(["%s"] * len(aliases))
+    conditions.append(f"{column} IN ({placeholders})")
+    params.extend(aliases)
 
 
 def parse_pagination_args():
@@ -269,10 +322,9 @@ def search_scores():
 
     province = request.args.get("province", "")
     if province:
-        if not province.endswith("省"):
-            province = province + "省"
-        conditions.append("p.name = %s")
-        params.append(province)
+        province_clean = normalize_province_name(province)
+        conditions.append("p.name LIKE %s")
+        params.append(f"%{province_clean}%")
 
     year = request.args.get("year", type=int)
     if year:
@@ -281,8 +333,7 @@ def search_scores():
 
     category = request.args.get("category", "")
     if category:
-        conditions.append("s.category = %s")
-        params.append(category)
+        add_category_condition(conditions, params, "s.category", province, category)
 
     batch = request.args.get("batch", "")
     if batch:
@@ -375,17 +426,15 @@ def recommend():
     if not province or not score or not category:
         return jsonify({"error": "province, score, category are required"}), 400
 
-    if not province.endswith("省"):
-        province = province + "省"
-
     conditions = [
-        "p.name = %s",
+        "p.name LIKE %s",
         "s.year = %s",
-        "s.category = %s",
         "s.min_score BETWEEN %s AND %s",
         "s.min_score IS NOT NULL",
     ]
-    params = [province, year, category, score - score_range, score + score_range]
+    province_clean = normalize_province_name(province)
+    params = [f"%{province_clean}%", year, score - score_range, score + score_range]
+    add_category_condition(conditions, params, "s.category", province_clean, category)
 
     if batch:
         conditions.append("s.batch = %s")
@@ -438,7 +487,7 @@ def recommend():
     )
 
     return jsonify({
-        "query": {"province": province, "score": score, "category": category, "year": year},
+        "query": {"province": province, "score": score, "category": category, "query_category": normalize_score_category(province, category), "year": year},
         "total_majors": len(rows),
         "total_schools": len(summary_list),
         "schools": summary_list,
@@ -458,16 +507,14 @@ def school_scores(name):
     params = [f"%{name}%"]
 
     if province:
-        if not province.endswith("省"):
-            province = province + "省"
-        conditions.append("p.name = %s")
-        params.append(province)
+        province_clean = normalize_province_name(province)
+        conditions.append("p.name LIKE %s")
+        params.append(f"%{province_clean}%")
     if year:
         conditions.append("s.year = %s")
         params.append(year)
     if category:
-        conditions.append("s.category = %s")
-        params.append(category)
+        add_category_condition(conditions, params, "s.category", province, category)
 
     where = " AND ".join(conditions)
     sql = """
@@ -504,8 +551,7 @@ def school_min_scores(name):
     params = [f"%{name}%", year]
 
     if category:
-        conditions.append("type_name = %s")
-        params.append(category)
+        add_category_condition(conditions, params, "type_name", "", category)
     if enrollment:
         conditions.append("enrollment_type = %s")
         params.append(enrollment)
@@ -551,10 +597,9 @@ def major_scores(keyword):
     params = [f"%{keyword}%"]
 
     if province:
-        if not province.endswith("省"):
-            province = province + "省"
-        conditions.append("p.name = %s")
-        params.append(province)
+        province_clean = normalize_province_name(province)
+        conditions.append("p.name LIKE %s")
+        params.append(f"%{province_clean}%")
     if year:
         conditions.append("s.year = %s")
         params.append(year)

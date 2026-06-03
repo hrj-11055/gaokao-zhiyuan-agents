@@ -24,6 +24,9 @@ class MembershipPagesTests(unittest.TestCase):
             "剩余下载次数",
             "useMembershipStore",
             "membershipStore.loadStatus",
+            "onMembershipAction",
+            "onPayWithWechat",
+            "membershipStore.openMembership",
             "onShareAppMessage",
             "inviterId=${membershipStore.userId",
             "CUSTOMER_WECHAT_ID",
@@ -36,6 +39,28 @@ class MembershipPagesTests(unittest.TestCase):
         self.assertIn("邀请 5 位同学免费获取", home)
         self.assertNotIn("邀请 3 人免费", home)
 
+    def test_profile_contact_buttons_show_wechat_and_qr_code(self):
+        text = self.read("gaokao-miniprogram/src/pages/profile/profile.vue")
+        config = self.read("gaokao-miniprogram/src/config.js")
+
+        for snippet in [
+            "CUSTOMER_WECHAT_ID",
+            "CUSTOMER_WECHAT_QR_IMAGE",
+            "showContactSheet",
+            "contact-sheet",
+            "copyCustomerWechatId",
+            "previewCustomerWechatQr",
+            "添加客服微信",
+            "微信号已复制",
+            "uni.previewImage",
+        ]:
+            self.assertIn(snippet, text)
+
+        self.assertNotIn("功能开发中", text)
+        self.assertIn("CUSTOMER_WECHAT_QR_IMAGE", config)
+        self.assertIn("/static/contact/wechat-qr.png", config)
+        self.assertTrue((ROOT / "gaokao-miniprogram/src/static/contact/wechat-qr.png").exists())
+
     def test_report_page_has_membership_lock_and_auth_header(self):
         text = self.read("gaokao-miniprogram/src/pages/report/report.vue")
         api = self.read("gaokao-miniprogram/src/api/report.js")
@@ -44,10 +69,8 @@ class MembershipPagesTests(unittest.TestCase):
             "membershipStore.loadStatus",
             "allAssessmentsDone",
             "onPayWithWechat",
-            "loadQuestionnaire",
-            "loadAssessments",
+            "buildReportAssessmentPayload",
             "loadHistory",
-            "questionnaire.answers",
             "sessionToken: membershipStore.sessionToken",
             "已保留草稿",
             "生成完整志愿报告需要 VIP",
@@ -70,7 +93,7 @@ class MembershipPagesTests(unittest.TestCase):
             "path: '/api/report/generate'",
             "Authorization",
             "Bearer ${sessionToken}",
-            "timeout: 180000",
+            "timeout: 300000",
         ]:
             self.assertIn(snippet, api)
 

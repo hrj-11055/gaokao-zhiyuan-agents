@@ -23,7 +23,7 @@ import sys
 KB_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "knowledge-base")
 SQL_OUTPUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_import_scores.sql")
 
-SERVER = "root@8.135.37.159"
+SERVER = os.environ.get("GAOKAO_API_SERVER", "ubuntu@159.75.110.157")
 
 PROVINCE_TYPES = {
     "河北": "3+1+2", "辽宁": "3+1+2", "江苏": "3+1+2", "福建": "3+1+2",

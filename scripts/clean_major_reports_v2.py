@@ -31,10 +31,99 @@ class MajorReportParser:
     def parse_code_and_name(self, filename: str) -> tuple:
         """从文件名解析专业代码和名称"""
         stem = Path(filename).stem
-        match = re.match(r'(\d{6}[TK]?)_(.+)', stem)
+        match = re.match(r'(\d{6}[A-Z]*)_(.+)', stem)
         if match:
             return match.group(1), match.group(2)
         return None, stem
+
+    CN_NUM = {'一': 1, '二': 2, '三': 3, '四': 4, '五': 5, '六': 6, '七': 7, '八': 8, '九': 9}
+
+    MODULE_TITLES = {
+        1: '模块一：专业画像与总评',
+        2: '模块二：六维量化评估',
+        3: '模块三：院校分档与定位',
+        4: '模块四：横向对决台',
+        5: '模块五：职业路径图',
+        6: '模块六：反差与揭秘趣味卡片',
+        7: '模块七：专业气质人格标签',
+        8: '模块八：原始数据支撑',
+    }
+
+    MODULE_KEYS = {
+        1: 'module1_image',
+        2: 'module2_six_dimensions',
+        3: 'module3_university_tiers',
+        4: 'module4_comparison',
+        5: 'module5_career_paths',
+        6: 'module6_fun_cards',
+        7: 'module7_personality_tags',
+        8: 'module8_raw_data',
+    }
+
+    def _heading_to_module_num(self, heading: str) -> int:
+        """从实际标题识别模块编号，兼容标题里的引号、括号和短标题变体。"""
+        text = heading.strip()
+        m = re.search(r'模块([一二三四五六七八九\d])', text)
+        if m:
+            token = m.group(1)
+            return self.CN_NUM.get(token, int(token) if token.isdigit() else 0)
+
+        m = re.search(r'第([一二三四五六七八九\d])[章部分]', text)
+        if m:
+            token = m.group(1)
+            return self.CN_NUM.get(token, int(token) if token.isdigit() else 0)
+
+        m = re.match(r'([一二三四五六七八九])、', text)
+        if m:
+            return self.CN_NUM.get(m.group(1), 0)
+
+        keyword_map = {
+            1: ['专业画像', '总评', '综合推荐标签'],
+            2: ['六维量化', '量化评估', '雷达'],
+            3: ['院校分档', '院校定位'],
+            4: ['横向对决', '横向比较', '跨专业对比'],
+            5: ['职业路径', '就业路径', '职业地图'],
+            6: ['反差', '揭秘', '趣味卡', '冷知识', '认知打脸'],
+            7: ['专业气质', '人格标签', '性格标签', '标签云', '适配度'],
+            8: ['原始数据', '数据支撑', '数据来源'],
+        }
+        for num, keywords in keyword_map.items():
+            if any(keyword in text for keyword in keywords):
+                return num
+        return 0
+
+    def extract_module_by_number(self, content: str, module_num: int) -> Dict[str, str]:
+        """按模块编号切正文，保留模块内的 ### 子标题。"""
+        headings = []
+        for match in re.finditer(r'(?m)^(#{1,4})\s+(.+?)\s*$', content):
+            title = match.group(2).strip()
+            num = self._heading_to_module_num(title)
+            if num:
+                headings.append({
+                    'num': num,
+                    'title': title,
+                    'start': match.start(),
+                    'body_start': match.end(),
+                    'level': len(match.group(1)),
+                })
+
+        for idx, heading in enumerate(headings):
+            if heading['num'] != module_num:
+                continue
+            end = len(content)
+            for next_heading in headings[idx + 1:]:
+                if next_heading['num'] != module_num and next_heading['level'] <= heading['level']:
+                    end = next_heading['start']
+                    break
+            return {
+                'title': heading['title'],
+                'raw_content': self.clean_text(content[heading['body_start']:end])
+            }
+
+        return {
+            'title': self.MODULE_TITLES.get(module_num, f'模块{module_num}'),
+            'raw_content': ''
+        }
 
     def extract_module_content(self, content: str, module_title: str) -> str:
         """提取指定模块的原始内容"""
@@ -48,41 +137,11 @@ class MajorReportParser:
         return ""
 
     def parse_all_modules(self, content: str) -> Dict[str, str]:
-        """提取所有9个模块的原始内容"""
-        modules = {}
-        module_list = [
-            '模块一：专业画像与总评',
-            '模块二：六维量化评估',
-            '模块三：院校分档与定位',
-            '模块四：横向对决台',
-            '模块五：职业路径图',
-            '模块六：反差与揭秘趣味卡片',
-            '模块七：专业气质人格标签',
-            '模块八：原始数据支撑'
-        ]
-
-        for module in module_list:
-            raw_content = self.extract_module_content(content, module)
-            if raw_content:
-                key = module.replace('模块', 'module').replace('：', '_').replace(' ', '_').lower()
-                # 简化键名
-                key_map = {
-                    '模块一：专业画像与总评': 'module1_image',
-                    '模块二：六维量化评估': 'module2_six_dimensions',
-                    '模块三：院校分档与定位': 'module3_university_tiers',
-                    '模块四：横向对决台': 'module4_comparison',
-                    '模块五：职业路径图': 'module5_career_paths',
-                    '模块六：反差与揭秘趣味卡片': 'module6_fun_cards',
-                    '模块七：专业气质人格标签': 'module7_personality_tags',
-                    '模块八：原始数据支撑': 'module8_raw_data'
-                }
-                key = key_map.get(module, key)
-                modules[key] = {
-                    'title': module,
-                    'raw_content': raw_content
-                }
-
-        return modules
+        """提取所有模块的原始内容，标题用实际报告标题，key 保持稳定。"""
+        return {
+            self.MODULE_KEYS[num]: self.extract_module_by_number(content, num)
+            for num in sorted(self.MODULE_KEYS)
+        }
 
     def parse_radar_table(self, content: str) -> Dict:
         """解析六维雷达图表"""
@@ -177,9 +236,9 @@ class MajorReportParser:
 
         code, name = self.parse_code_and_name(filepath)
 
-        # 提取所有模块的原始内容
-        module1_raw = self.extract_module_content(content, '模块一：专业画像与总评')
-        module2_raw = self.extract_module_content(content, '模块二：六维量化评估')
+        modules = self.parse_all_modules(content)
+        module1_raw = modules['module1_image']['raw_content']
+        module2_raw = modules['module2_six_dimensions']['raw_content']
 
         # 构建结构化数据
         result = {
@@ -204,38 +263,14 @@ class MajorReportParser:
                 'recommendation_level': self.parse_recommendation_level(module1_raw)
             },
             'layer3_detail': {
-                'module1_image': {
-                    'title': '模块一：专业画像与总评',
-                    'raw_content': module1_raw
-                },
-                'module2_six_dimensions': {
-                    'title': '模块二：六维量化评估',
-                    'raw_content': module2_raw
-                },
-                'module3_university_tiers': {
-                    'title': '模块三：院校分档与定位',
-                    'raw_content': self.extract_module_content(content, '模块三：院校分档与定位')
-                },
-                'module4_comparison': {
-                    'title': '模块四：横向对决台',
-                    'raw_content': self.extract_module_content(content, '模块四：横向对决台')
-                },
-                'module5_career_paths': {
-                    'title': '模块五：职业路径图',
-                    'raw_content': self.extract_module_content(content, '模块五：职业路径图')
-                },
-                'module6_fun_cards': {
-                    'title': '模块六：反差与揭秘趣味卡片',
-                    'raw_content': self.extract_module_content(content, '模块六：反差与揭秘趣味卡片')
-                },
-                'module7_personality_tags': {
-                    'title': '模块七：专业气质人格标签',
-                    'raw_content': self.extract_module_content(content, '模块七：专业气质人格标签')
-                },
-                'module8_raw_data': {
-                    'title': '模块八：原始数据支撑',
-                    'raw_content': self.extract_module_content(content, '模块八：原始数据支撑')
-                }
+                'module1_image': modules['module1_image'],
+                'module2_six_dimensions': modules['module2_six_dimensions'],
+                'module3_university_tiers': modules['module3_university_tiers'],
+                'module4_comparison': modules['module4_comparison'],
+                'module5_career_paths': modules['module5_career_paths'],
+                'module6_fun_cards': modules['module6_fun_cards'],
+                'module7_personality_tags': modules['module7_personality_tags'],
+                'module8_raw_data': modules['module8_raw_data']
             },
             'layer4_supplement': {
                 'full_raw_content': self.clean_text(content),

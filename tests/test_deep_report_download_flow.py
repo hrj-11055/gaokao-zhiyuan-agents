@@ -73,6 +73,7 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         self.assertIn("openDeepReport", download_page)
         self.assertIn("在线阅读", download_page)
         self.assertIn("在线阅读不限次数", download_page)
+        self.assertIn("在线阅读免费不限次数", download_page)
         self.assertIn("/pages/report-view/report-view", download_page)
         self.assertIn("Authorization", download_page)
         self.assertIn("Bearer ${membershipStore.sessionToken}", download_page)
@@ -90,6 +91,13 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         self.assertIn("DOWNLOAD_QUOTA_EXHAUSTED", download_page)
         self.assertIn("深度报告下载次数已用完", download_page)
         self.assertIn("onLoad", download_page)
+        self.assertIn("if (membershipStore.sessionToken)", download_page)
+
+        open_start = download_page.index("async function openDeepReport")
+        open_end = download_page.index("async function downloadDeepPdf")
+        open_section = download_page[open_start:open_end]
+        self.assertNotIn("ensureMembership", open_section)
+        self.assertNotIn("Authorization", open_section)
 
         report_view_page = self.read("gaokao-miniprogram/src/pages/report-view/report-view.vue")
         self.assertIn("/reports/deep/view/", report_view_page)
@@ -118,6 +126,8 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         self.assertIn("/api/reports/deep/pdf", server)
         self.assertIn("/api/reports/deep/view-token", server)
         self.assertIn("/reports/deep/view/:token", server)
+        self.assertIn("app.post('/api/reports/deep/view-token', (req, res)", server)
+        self.assertNotIn("app.post('/api/reports/deep/view-token', requireCommerceAuth", server)
         self.assertIn("createDeepReportViewToken", server)
         self.assertIn("verifyDeepReportViewToken", server)
         self.assertIn("buildDeepReportReaderHtml", server)
@@ -149,6 +159,15 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
             assert.equal(payload.userId, 'usr_1')
             assert.equal(payload.type, 'major')
             assert.equal(payload.id, '080901')
+
+            const publicToken = createDeepReportViewToken({
+              type: 'university',
+              id: '中山大学',
+            }, 'secret', { ttlMs: 1000, now: () => 10000 })
+            const publicPayload = verifyDeepReportViewToken(publicToken, 'secret', { now: () => 10500 })
+            assert.equal(publicPayload.userId, undefined)
+            assert.equal(publicPayload.type, 'university')
+            assert.equal(publicPayload.id, '中山大学')
 
             assert.throws(() => verifyDeepReportViewToken(token, 'wrong', { now: () => 10500 }))
             assert.throws(() => verifyDeepReportViewToken(token, 'secret', { now: () => 12000 }))

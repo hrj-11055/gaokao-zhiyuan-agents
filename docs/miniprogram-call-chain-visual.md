@@ -11,7 +11,7 @@ flowchart LR
   subgraph MP["微信小程序 / UniApp"]
     Profile["档案页\n省份/科类/分数/位次"]
     Chat["AI 咨询页\nSSE 流式对话"]
-    Assess["测评页\n问卷 + MBTI + Holland"]
+    Assess["测评页\nMBTI + Holland\n五环入口关闭"]
     Report["综合报告页\n生成/查看报告"]
     Member["我的页\n登录/会员/支付/邀请"]
   end
@@ -263,9 +263,9 @@ sequenceDiagram
 
   MP->>Proxy: POST /api/report/generate\nAuthorization Bearer token
   Proxy->>Commerce: 校验 sessionToken + 会员状态
-  Proxy->>Proxy: 校验问卷 >=22\nMBTI completed\nHolland completed
+  Proxy->>Proxy: 校验 MBTI completed\nHolland completed
   Proxy->>Proxy: 检查 10 分钟冷却
-  Proxy->>Pg: fetchMajorReports(questionnaire)
+  Proxy->>Pg: fetchMajorReports({})\n五环旧数据不参与
   Proxy->>Score: /api/scores/recommend
   Proxy->>Pg: fetchUnivReports(profile)
   Proxy->>Dify: /v1/messages?conversation_id=...
@@ -286,13 +286,18 @@ sequenceDiagram
     "score": 600,
     "rank": 8500
   },
-  "questionnaire": {
-    "q1": "A",
-    "q2": "B"
-  },
   "assessments": {
-    "mbti": { "completed": true, "result": "INTJ" },
-    "holland": { "completed": true, "result": "IRE" }
+    "mbti": {
+      "completed": true,
+      "type": "INTJ",
+      "report": { "name": "建筑师", "tags": ["独立", "战略"] }
+    },
+    "holland": {
+      "completed": true,
+      "code": "RIA",
+      "scores": { "R": 20, "I": 30, "A": 10, "S": 25, "E": 15, "C": 22 },
+      "indicators": [{ "type": "I", "label": "研究型", "score": 30 }]
+    }
   },
   "conversationId": "conv_xxx"
 }
@@ -302,11 +307,11 @@ sequenceDiagram
 
 | 素材 | 代码入口 | 数据来源 | 失败影响 |
 |---|---|---|---|
-| 专业深度资料 | `fetchMajorReports(questionnaire)` | PostgreSQL `majors` | 报告专业分析变浅 |
+| 专业深度资料 | `fetchMajorReports({})` | PostgreSQL `majors` | 五环旧数据不影响报告；无匹配时专业分析依赖模型与后续深度资料入口 |
 | 院校推荐 | `fetchUnivReports(profile)` | gaokao-api `/api/scores/recommend` | 院校推荐为空 |
 | 院校深度资料 | `fetchUnivReports(profile)` | PostgreSQL `universities` | 院校深度分析变浅 |
 | 历史对话 | `fetchDifyMessages(conversationId)` | Dify `/v1/messages` | 报告少了咨询上下文 |
-| 测评结果 | 小程序本地测评 store | questionnaire / MBTI / Holland | 不完整则直接拒绝生成 |
+| 测评结果 | 小程序本地测评 store | MBTI 结果摘要 / Holland code + scores + indicators | MBTI 或 Holland 未完成则直接拒绝生成 |
 | 最终 HTML | `generateReport()` | DeepSeek API | 生成失败 |
 
 ## 4. 报告库 PostgreSQL API
@@ -421,7 +426,7 @@ flowchart TD
   Check47Chat --> CheckDify["查 159: Dify /v1\nDIFY_API_KEY / workflow"]
 
   ReportFail -->|"是"| CheckMember["查 token + membership active"]
-  CheckMember --> CheckAssess["查问卷>=22 + MBTI/Holland completed"]
+  CheckMember --> CheckAssess["查 MBTI/Holland completed"]
   CheckAssess --> CheckReportDeps["查 PG / SCORE_API_URL / Dify messages / DeepSeek"]
 
   PayFail -->|"是"| CheckSQLite["查 SQLite users/memberships/payment_orders"]

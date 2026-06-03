@@ -3,6 +3,7 @@ import { defineStore } from 'pinia'
 const ASSESSMENTS_KEY = 'assessments'
 const QUESTIONNAIRE_KEY = 'questionnaire'
 const QUESTIONNAIRE_REQUIRED_COUNT = 21
+const ASSESSMENT_REQUIRED_COUNT = 2
 const QUESTIONNAIRE_ACTIVE_IDS = new Set([
   'q1', 'q2', 'q3', 'q4', 'q5',
   'q6', 'q7', 'q8',
@@ -88,11 +89,10 @@ export const useAssessmentStore = defineStore('assessment', {
       let count = 0
       if (state.mbti.completed) count++
       if (state.holland.completed) count++
-      if (state.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT) count++
       return count
     },
     isAllCompleted(state) {
-      return this.completedCount >= 3
+      return this.completedCount >= ASSESSMENT_REQUIRED_COUNT
     }
   },
 

@@ -107,31 +107,15 @@ class QuestionnaireFlowTests(unittest.TestCase):
                 with self.subTest(relpath=relpath, snippet=snippet):
                     self.assertIn(snippet, text)
 
-    def test_questionnaire_completion_threshold_is_21_after_question_removal(self):
+    def test_questionnaire_data_is_retained_but_not_required_for_report_readiness(self):
         expected_snippets = {
             "gaokao-miniprogram/src/utils/storage.js": [
                 "export const QUESTIONNAIRE_REQUIRED_COUNT = 21",
-                "completedCount >= QUESTIONNAIRE_REQUIRED_COUNT",
+                "export const ASSESSMENT_REQUIRED_COUNT = 2",
             ],
             "gaokao-miniprogram/src/stores/assessment.js": [
                 "const QUESTIONNAIRE_REQUIRED_COUNT = 21",
-                "completedCount >= QUESTIONNAIRE_REQUIRED_COUNT",
-            ],
-            "gaokao-miniprogram/src/pages/index/index.vue": [
-                "QUESTIONNAIRE_REQUIRED_COUNT",
-                "`已答 ${questionnaire.completedCount} / ${QUESTIONNAIRE_REQUIRED_COUNT}`",
-            ],
-            "gaokao-miniprogram/src/pages/profile/profile.vue": [
-                "QUESTIONNAIRE_REQUIRED_COUNT",
-                "questionnaire.value.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT",
-            ],
-            "gaokao-miniprogram/src/pages/assessments/assessments.vue": [
-                "QUESTIONNAIRE_REQUIRED_COUNT",
-                "21 维全面学习风格",
-            ],
-            "gaokao-proxy/server.js": [
-                "const QUESTIONNAIRE_REQUIRED_COUNT = 21",
-                "questionCount < QUESTIONNAIRE_REQUIRED_COUNT",
+                "const ASSESSMENT_REQUIRED_COUNT = 2",
             ],
         }
 
@@ -140,6 +124,19 @@ class QuestionnaireFlowTests(unittest.TestCase):
             for snippet in snippets:
                 with self.subTest(relpath=relpath, snippet=snippet):
                     self.assertIn(snippet, text)
+
+        for relpath in [
+            "gaokao-miniprogram/src/pages/index/index.vue",
+            "gaokao-miniprogram/src/pages/profile/profile.vue",
+            "gaokao-miniprogram/src/pages/assessments/assessments.vue",
+            "gaokao-miniprogram/src/composables/useHomeProgress.js",
+            "gaokao-proxy/server.js",
+        ]:
+            text = self.read(relpath)
+            with self.subTest(relpath=relpath):
+                self.assertNotIn("questionCount < QUESTIONNAIRE_REQUIRED_COUNT", text)
+                self.assertNotIn("completedCount >= QUESTIONNAIRE_REQUIRED_COUNT", text)
+                self.assertNotIn("QUESTIONNAIRE_REQUIRED_COUNT", text)
 
     def test_legacy_removed_question_is_not_counted_from_storage(self):
         self.run_storage_node_test("""

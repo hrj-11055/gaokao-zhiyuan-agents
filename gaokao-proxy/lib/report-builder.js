@@ -9,49 +9,91 @@ const REPORTS_DIR = process.env.REPORTS_DIR || path.join(__dirname, '../reports'
 const REPORT_DRAFTS_DIR = process.env.REPORT_DRAFTS_DIR || path.join(REPORTS_DIR, 'drafts')
 const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-v4-pro'
 const REPORT_GENERATION_TIMEOUT_MS = Number(process.env.REPORT_GENERATION_TIMEOUT_MS || 600000)
+const MIN_MODULE_CONTENT_CHARS = Number(process.env.REPORT_MIN_MODULE_CONTENT_CHARS || 1000)
+const REPORT_AUTO_EXPAND_SHORT_MODULES = process.env.REPORT_AUTO_EXPAND_SHORT_MODULES === 'true'
+const REPORT_ENFORCE_MODULE_LENGTH = process.env.REPORT_ENFORCE_MODULE_LENGTH === 'true'
 
-async function generateReport({ profile, questionnaire, assessments, conversationId, difyApiUrl, difyApiKey }) {
+async function generateReport({
+  profile,
+  assessments,
+  conversationId,
+  difyApiUrl,
+  difyApiKey,
+  skipExpansion = false,
+}) {
   if (!process.env.DEEPSEEK_API_KEY) {
     throw new Error('DEEPSEEK_API_KEY 环境变量未配置')
   }
 
   const [majorReports, univData, messages] = await Promise.all([
-    fetchMajorReports(questionnaire),
+    fetchMajorReports({}),
     fetchUnivReports(profile),
     fetchDifyMessages(conversationId, difyApiUrl, difyApiKey),
   ])
 
-  const prompt = buildPrompt(profile, questionnaire, messages, majorReports, univData, assessments)
+  const prompt = buildPrompt(profile, messages, majorReports, univData, assessments)
 
   try {
-    const res = await fetch('https://api.deepseek.com/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
-      },
-      body: JSON.stringify({
-        model: DEEPSEEK_MODEL,
-        messages: [{ role: 'user', content: prompt }],
-        max_tokens: 32768,
-        temperature: 0.7,
-        response_format: { type: 'json_object' }
-      }),
-      signal: AbortSignal.timeout(REPORT_GENERATION_TIMEOUT_MS),
-    })
+    const content = await requestDeepSeekJson(prompt)
+    let reportData = extractJsonFromContent(content)
+    let qualityIssues = getReportQualityIssues(reportData)
 
-    if (!res.ok) {
-      const err = await res.text()
-      throw new Error(`DeepSeek API error ${res.status}: ${err.slice(0, 200)}`)
+    if (qualityIssues.length > 0) {
+      console.warn('Report content below length target:', formatReportQualityIssues(qualityIssues))
     }
 
-    const data = await res.json()
-    const content = data.choices[0].message.content
-    return buildFinalHtml(content, profile, assessments)
+    if (qualityIssues.length > 0 && REPORT_AUTO_EXPAND_SHORT_MODULES && !skipExpansion) {
+      console.warn('Requesting report module expansion')
+      const expandedContent = await requestDeepSeekJson(buildReportExpansionPrompt(reportData, qualityIssues))
+      reportData = extractJsonFromContent(expandedContent)
+      qualityIssues = getReportQualityIssues(reportData)
+    }
+
+    if (qualityIssues.length > 0 && REPORT_ENFORCE_MODULE_LENGTH) {
+      const err = new Error(`报告内容未达到质量标准：${formatReportQualityIssues(qualityIssues)}`)
+      err.code = 'REPORT_CONTENT_TOO_SHORT'
+      throw err
+    }
+
+    return buildFinalHtml(reportData, profile, assessments)
   } catch (err) {
     console.error('DeepSeek generation failed:', err.message)
+    if (err.code === 'REPORT_CONTENT_TOO_SHORT') {
+      throw new Error('报告内容未达到质量标准，已保留草稿，请稍后重试')
+    }
     throw new Error('AI 报告生成失败，请稍后重试')
   }
+}
+
+async function requestDeepSeekJson(prompt) {
+  const res = await fetch('https://api.deepseek.com/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
+    },
+    body: JSON.stringify({
+      model: DEEPSEEK_MODEL,
+      messages: [{ role: 'user', content: prompt }],
+      max_tokens: 32768,
+      temperature: 0.7,
+      response_format: { type: 'json_object' }
+    }),
+    signal: AbortSignal.timeout(REPORT_GENERATION_TIMEOUT_MS),
+  })
+
+  if (!res.ok) {
+    const err = await res.text()
+    throw new Error(`DeepSeek API error ${res.status}: ${err.slice(0, 200)}`)
+  }
+
+  const data = await res.json()
+  const content = data?.choices?.[0]?.message?.content
+  if (!content) {
+    const reason = data?.choices?.[0]?.finish_reason || 'unknown'
+    throw new Error(`DeepSeek 返回空内容 (finish_reason: ${reason})`)
+  }
+  return content
 }
 
 async function saveReport(userId, html) {
@@ -93,8 +135,15 @@ function humanizeReportCopy(html) {
     .replace(/作为一个?\s*AI[，,]?\s*/g, '')
 }
 
-function buildHollandRadarSVG(scores = {}) {
-  const MAX_SCORE = 40
+function getHollandRadarMaxScore(version = '', scores = {}) {
+  if (version === 'basic') return 8
+  if (version === 'full') return 40
+  const values = Object.values(scores).map((score) => Number(score) || 0)
+  return values.length > 0 && Math.max(...values) <= 8 ? 8 : 40
+}
+
+function buildHollandRadarSVG(scores = {}, version = '') {
+  const maxScore = getHollandRadarMaxScore(version, scores)
   const cx = 100
   const cy = 100
   const radius = 65
@@ -105,8 +154,8 @@ function buildHollandRadarSVG(scores = {}) {
   let circlesSvg = ''
 
   order.forEach((key, i) => {
-    const score = Math.min(scores[key] || 0, MAX_SCORE)
-    const r = (score / MAX_SCORE) * radius
+    const score = Math.min(Number(scores[key]) || 0, maxScore)
+    const r = (score / maxScore) * radius
     const angle = (Math.PI / 180) * (i * 60 - 90)
     const x = cx + r * Math.cos(angle)
     const y = cy + r * Math.sin(angle)
@@ -166,15 +215,55 @@ function escapeHtml(value) {
     .replace(/'/g, '&#39;')
 }
 
-function renderPrintText(value) {
-  const paragraphs = String(value || '')
+function splitReadableParagraphs(value) {
+  const text = String(value || '')
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    .trim()
+
+  if (!text) return []
+
+  const labeledText = text.replace(/([。！？!?；;])(?=[^。！？!?；;：:\n]{2,24}[：:])/g, '$1\n\n')
+  const rawParts = labeledText
     .split(/\n{2,}/)
+    .flatMap((part) => part.split(/\n/))
     .map((part) => part.trim())
     .filter(Boolean)
-  if (paragraphs.length === 0) return ''
-  return paragraphs
-    .map((part) => `<p>${escapeHtml(part).replace(/\n/g, '<br>')}</p>`)
+
+  const paragraphs = []
+  for (const part of rawParts) {
+    const sentences = part.match(/[^。！？!?；;]+[。！？!?；;]?/g) || [part]
+    let current = ''
+    for (const sentence of sentences) {
+      const next = `${current}${sentence}`
+      if (current && next.length > 130) {
+        paragraphs.push(current.trim())
+        current = sentence
+      } else {
+        current = next
+      }
+    }
+    if (current.trim()) paragraphs.push(current.trim())
+  }
+
+  return paragraphs.length ? paragraphs : [text]
+}
+
+function renderInlineText(value) {
+  return escapeHtml(value)
+    .replace(/\*\*([^*]{1,80})\*\*/g, '<strong>$1</strong>')
+    .replace(/^([^：:。！？!?；;，,\s<][^：:。！？!?；;]{1,30}[：:])/, '<strong>$1</strong>')
+}
+
+function renderReadableText(value, paragraphClass = '') {
+  const classAttr = paragraphClass ? ` class="${escapeHtml(paragraphClass)}"` : ''
+  return splitReadableParagraphs(value)
+    .map((paragraph) => `<p${classAttr}>${renderInlineText(paragraph)}</p>`)
     .join('\n')
+}
+
+function renderPrintText(value) {
+  return renderReadableText(value, 'print-readable-text')
 }
 
 function renderPrintBlock(block = {}) {
@@ -237,7 +326,7 @@ function buildStaticPrintReport(data = {}, profile = {}, radarSvg = '') {
     </section>` : ''}
     ${modules.map((mod) => `<section class="print-module">
       <h2>${escapeHtml(mod.title || '报告章节')}</h2>
-      ${mod.summary ? `<p class="print-summary">${escapeHtml(mod.summary)}</p>` : ''}
+      ${mod.summary ? renderReadableText(mod.summary, 'print-summary print-readable-text') : ''}
       ${mod.id === 'tab2' && radarSvg ? `<div class="print-radar">${radarSvg}</div>` : ''}
       ${(Array.isArray(mod.blocks) ? mod.blocks : []).map(renderPrintBlock).join('\n')}
     </section>`).join('\n')}
@@ -258,20 +347,106 @@ function extractJsonFromContent(content) {
   }
 }
 
+function countReportContentChars(value) {
+  const text = String(value || '')
+  const cjkChars = text.match(/[\u3400-\u9FFF\uF900-\uFAFF]/g) || []
+  const latinWords = text
+    .replace(/[\u3400-\u9FFF\uF900-\uFAFF]/g, ' ')
+    .match(/[a-zA-Z0-9]+(?:[-_][a-zA-Z0-9]+)*/g) || []
+  return cjkChars.length + latinWords.length
+}
+
+function collectModuleContentText(mod = {}) {
+  const parts = []
+  if (mod.summary) parts.push(mod.summary)
+
+  for (const block of Array.isArray(mod.blocks) ? mod.blocks : []) {
+    if (block.type === 'text') {
+      parts.push(block.content || block.text || '')
+    } else if (block.type === 'list') {
+      parts.push(...(Array.isArray(block.items) ? block.items : []))
+    } else if (block.type === 'alert') {
+      parts.push(block.content || '')
+      parts.push(...(Array.isArray(block.items) ? block.items : []))
+    } else if (block.type === 'quote') {
+      parts.push(block.content || '')
+    }
+  }
+
+  return parts.join('\n')
+}
+
+function getReportQualityIssues(data = {}, minModuleChars = MIN_MODULE_CONTENT_CHARS) {
+  const modules = Array.isArray(data.modules) ? data.modules : []
+  const requiredIds = ['tab1', 'tab2', 'tab3', 'tab4', 'tab5', 'tab6']
+  const issues = []
+
+  for (const id of requiredIds) {
+    const mod = modules.find((item) => item && item.id === id)
+    if (!mod) {
+      issues.push({ id, title: id, chars: 0, min: minModuleChars, reason: 'missing' })
+      continue
+    }
+    const chars = countReportContentChars(collectModuleContentText(mod))
+    if (chars < minModuleChars) {
+      issues.push({
+        id,
+        title: mod.title || id,
+        chars,
+        min: minModuleChars,
+        reason: 'too_short',
+      })
+    }
+  }
+
+  return issues
+}
+
+function formatReportQualityIssues(issues = []) {
+  return issues
+    .map((issue) => `${issue.title || issue.id} ${issue.chars}/${issue.min}`)
+    .join('；')
+}
+
+function buildReportExpansionPrompt(reportData = {}, qualityIssues = []) {
+  return `你正在补全一份固定 HTML 模板的数据 JSON。服务端只会读取 JSON 内容并渲染固定模板，所以不要输出 HTML、CSS、Markdown 或解释说明。
+
+下面这些模块正文长度不足，需要扩写到每个模块不少于 ${MIN_MODULE_CONTENT_CHARS} 个中文正文字符。正文长度只计算 summary、text.content、list.items、alert.content、alert.items、quote.content，不计算标题、表头或短标签：
+${qualityIssues.map((issue) => `- ${issue.id} ${issue.title || ''}：当前 ${issue.chars}，最低 ${issue.min}`).join('\n')}
+
+扩写要求：
+- 返回完整合法 JSON 对象，必须保留 conclusions 和全部 6 个 modules。
+- 保留原来的 id、title、事实依据、分数线和风险判断，不要编造结构化院校推荐列表之外的学校。
+- 只扩写过短模块；已达标模块可以保持原意，但输出时仍要放回完整 JSON。
+- 每个过短模块至少补足 4 个实质分析 blocks，其中至少 2 个 text block 各不少于 250 字。
+- Tab 4 和 Tab 5 也必须作为综合报告正文写足，不要只写 500-800 字摘要；最后仍保留“完整 5000 字以上 PDF 已入库，需要到小程序‘深度报告下载页’付费后选择对应专业/学校下载”的提示。
+- 不要生成额外目录页、Table 页、独立表格页或模板代码。
+
+当前 JSON：
+${JSON.stringify(reportData)}`
+}
+
 function buildFinalHtml(content, profile, assessments) {
   let data
-  try {
-    data = extractJsonFromContent(content)
-  } catch (e) {
-    console.error('JSON Parse Failed. Fallback to raw string injection.', e.message)
+  if (typeof content === 'object' && content !== null) {
+    data = content
+  } else {
+    try {
+      data = extractJsonFromContent(String(content))
+    } catch (e) {
+      console.error('JSON Parse Failed. Fallback to raw string injection.', e.message)
+      data = null
+    }
+  }
+  if (!data || !Array.isArray(data.modules)) {
     data = {
       conclusions: ['大模型返回格式异常，分析可能未能正确结构化显示'],
-      modules: [{ id: 'tab1', title: '系统提示', blocks: [{ type: 'text', content: '生成的报告格式错误：' + e.message }] }]
+      modules: [{ id: 'tab1', title: '系统提示', blocks: [{ type: 'text', content: '生成的报告格式异常，请稍后重试' }] }],
     }
   }
 
   const hollandScores = assessments?.holland?.scores || {}
-  const radarSvg = buildHollandRadarSVG(hollandScores)
+  const radarSvg = buildHollandRadarSVG(hollandScores, assessments?.holland?.version)
   const staticPrintReport = buildStaticPrintReport(data, profile, radarSvg)
 
   return `<!DOCTYPE html>
@@ -314,15 +489,6 @@ function buildFinalHtml(content, profile, assessments) {
     .bg-gradient-primary {
       background-image: linear-gradient(135deg, #2563EB 0%, #4F46E5 100%);
     }
-    /* Hide scrollbar for tabs */
-    .hide-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .hide-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-
     [v-cloak] { display: none; }
     .pdf-print-report {
       display: none;
@@ -500,30 +666,33 @@ function buildFinalHtml(content, profile, assessments) {
       </ul>
     </div>
 
-    <!-- Tabs Navigation -->
-    <div class="sticky top-0 z-50 -mx-4 px-4 sm:mx-0 sm:px-0 mb-8 pt-2 pb-4 bg-[#F8FAFC]/90 backdrop-blur-md">
-      <div class="flex overflow-x-auto hide-scrollbar gap-2 sm:gap-3 py-1">
-        <button
-          v-for="mod in report.modules"
+    <!-- Chapter navigation: mobile-first, no tab switching -->
+    <div class="glass-card rounded-2xl p-5 md:p-6 mb-8">
+      <div class="text-xs font-bold tracking-[0.2em] text-slate-400 mb-4">章节导航</div>
+      <div class="grid gap-3">
+        <div
+          v-for="(mod, idx) in report.modules"
           :key="mod.id"
-          @click="activeTab = mod.id"
-          class="flex-shrink-0 px-5 py-2.5 rounded-full font-semibold text-sm transition-all duration-300 relative overflow-hidden"
-          :class="activeTab === mod.id ? 'text-white shadow-md shadow-blue-500/30' : 'text-slate-600 bg-white border border-slate-200 hover:bg-slate-50'"
+          class="flex items-center gap-3 rounded-xl bg-slate-50 border border-slate-100 px-4 py-3 cursor-pointer hover:bg-blue-50 hover:border-blue-100 transition-colors"
+          role="button"
+          @click="scrollToModule(mod.id)"
         >
-          <div v-if="activeTab === mod.id" class="absolute inset-0 bg-gradient-primary z-0"></div>
-          <span class="relative z-10">{{ mod.title }}</span>
-        </button>
+          <span class="flex-shrink-0 flex items-center justify-center w-7 h-7 rounded-full bg-blue-100 text-blue-700 font-bold text-sm">{{ idx + 1 }}</span>
+          <span class="text-slate-700 font-semibold text-[15px] leading-snug">{{ mod.title }}</span>
+        </div>
       </div>
     </div>
 
-    <!-- Tab Content -->
+    <!-- Continuous Chapter Content -->
     <div class="space-y-8">
-      <div v-for="mod in report.modules" :key="mod.id" v-show="activeTab === mod.id" class="animate-fade-in">
+      <section v-for="mod in report.modules" :key="mod.id" :id="'section-' + mod.id" class="animate-fade-in">
 
         <!-- Module Header -->
         <div class="mb-8 pl-3 border-l-4 border-blue-600">
           <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 mb-3 tracking-tight">{{ mod.title }}</h2>
-          <p v-if="mod.summary" class="text-slate-600 text-[15px] md:text-base leading-relaxed">{{ mod.summary }}</p>
+          <div v-if="mod.summary" class="readable-copy text-slate-600 text-[15px] md:text-base leading-relaxed">
+            <p v-for="(paragraph, pIdx) in readableParagraphs(mod.summary)" :key="pIdx" v-html="formatInlineText(paragraph)"></p>
+          </div>
         </div>
 
         <!-- Radar Chart for Tab 2 -->
@@ -541,7 +710,9 @@ function buildFinalHtml(content, profile, assessments) {
             <h3 v-if="block.title" class="text-lg font-bold text-slate-900 mb-4 flex items-center">
               <span class="w-1.5 h-4 bg-blue-500 rounded-full mr-2"></span>{{ block.title }}
             </h3>
-            <div class="text-slate-700 leading-relaxed text-[15px] md:text-base whitespace-pre-wrap">{{ block.content }}</div>
+            <div class="readable-copy text-slate-700 leading-relaxed text-[15px] md:text-base">
+              <p v-for="(paragraph, pIdx) in readableParagraphs(block.content || block.text)" :key="pIdx" v-html="formatInlineText(paragraph)"></p>
+            </div>
           </div>
 
           <!-- List Block -->
@@ -552,7 +723,7 @@ function buildFinalHtml(content, profile, assessments) {
             <ul class="space-y-4">
               <li v-for="(item, iIdx) in block.items" :key="iIdx" class="flex items-start bg-slate-50/50 p-3 rounded-xl border border-slate-100">
                 <i data-lucide="check-circle-2" class="w-5 h-5 mr-3 flex-shrink-0 text-indigo-500 mt-0.5"></i>
-                <span class="text-slate-700 leading-relaxed text-[15px] md:text-base">{{ item }}</span>
+                <span class="text-slate-700 leading-relaxed text-[15px] md:text-base" v-html="formatInlineText(item)"></span>
               </li>
             </ul>
           </div>
@@ -587,13 +758,15 @@ function buildFinalHtml(content, profile, assessments) {
                      'text-blue-900': !block.level || block.level === 'info'
                    }">{{ block.title || '提示' }}</h3>
             </div>
-            <p v-if="block.content" class="leading-relaxed mb-5 text-[15px] md:text-base"
+            <div v-if="block.content" class="readable-copy leading-relaxed mb-5 text-[15px] md:text-base"
                :class="{
                  'text-amber-800': block.level === 'warning',
                  'text-red-800': block.level === 'danger',
                  'text-emerald-800': block.level === 'success',
                  'text-blue-800': !block.level || block.level === 'info'
-               }">{{ block.content }}</p>
+               }">
+              <p v-for="(paragraph, pIdx) in readableParagraphs(block.content)" :key="pIdx" v-html="formatInlineText(paragraph)"></p>
+            </div>
             <ul v-if="block.items && block.items.length" class="space-y-3">
               <li v-for="(item, iIdx) in block.items" :key="iIdx" class="flex items-start">
                 <div class="w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0"
@@ -609,7 +782,7 @@ function buildFinalHtml(content, profile, assessments) {
                         'text-red-900': block.level === 'danger',
                         'text-emerald-900': block.level === 'success',
                         'text-blue-900': !block.level || block.level === 'info'
-                      }">{{ item }}</span>
+                      }" v-html="formatInlineText(item)"></span>
               </li>
             </ul>
           </div>
@@ -623,7 +796,9 @@ function buildFinalHtml(content, profile, assessments) {
               </div>
               <div>
                 <h4 class="text-orange-400 font-bold mb-2 tracking-wide text-sm md:text-base uppercase">{{ block.author || '顾问直言' }}</h4>
-                <p class="text-slate-200 text-lg md:text-xl leading-relaxed italic font-medium">"{{ block.content }}"</p>
+                <div class="readable-copy text-slate-200 text-lg md:text-xl leading-relaxed italic font-medium">
+                  <p v-for="(paragraph, pIdx) in readableParagraphs(block.content)" :key="pIdx">"<span v-html="formatInlineText(paragraph)"></span>"</p>
+                </div>
               </div>
             </div>
           </div>
@@ -650,12 +825,22 @@ function buildFinalHtml(content, profile, assessments) {
           </div>
 
         </div>
-      </div>
+      </section>
     </div>
 
   </div>
 
   <style>
+    .readable-copy p + p {
+      margin-top: 0.9rem;
+    }
+    .readable-copy strong {
+      color: #0f172a;
+      font-weight: 800;
+    }
+    .readable-copy.text-slate-200 strong {
+      color: #ffffff;
+    }
     .animate-fade-in {
       animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
@@ -670,7 +855,55 @@ function buildFinalHtml(content, profile, assessments) {
     const radarSvg = ${JSON.stringify(radarSvg || "")};
     const profile = ${JSON.stringify(JSON.stringify(profile || {})).replace(/</g, '\\u003c')};
 
-    const { createApp, ref, onMounted, nextTick, watch } = Vue;
+    const { createApp, ref, onMounted } = Vue;
+
+    function escapeHtmlClient(value) {
+      return String(value ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function readableParagraphs(value) {
+      const text = String(value || '')
+        .replace(/\\r\\n/g, '\\n')
+        .replace(/\\r/g, '\\n')
+        .trim();
+      if (!text) return [];
+
+      const labeledText = text.replace(/([。！？!?；;])(?=[^。！？!?；;：:\\n]{2,24}[：:])/g, '$1\\n\\n');
+      const rawParts = labeledText
+        .split(/\\n{2,}/)
+        .flatMap((part) => part.split(/\\n/))
+        .map((part) => part.trim())
+        .filter(Boolean);
+
+      const paragraphs = [];
+      rawParts.forEach((part) => {
+        const sentences = part.match(/[^。！？!?；;]+[。！？!?；;]?/g) || [part];
+        let current = '';
+        sentences.forEach((sentence) => {
+          const next = current + sentence;
+          if (current && next.length > 130) {
+            paragraphs.push(current.trim());
+            current = sentence;
+          } else {
+            current = next;
+          }
+        });
+        if (current.trim()) paragraphs.push(current.trim());
+      });
+
+      return paragraphs.length ? paragraphs : [text];
+    }
+
+    function formatInlineText(value) {
+      return escapeHtmlClient(value)
+        .replace(/\\*\\*([^*]{1,80})\\*\\*/g, '<strong>$1</strong>')
+        .replace(/^([^：:。！？!?；;，,\\s<][^：:。！？!?；;]{1,30}[：:])/, '<strong>$1</strong>');
+    }
 
     createApp({
       setup() {
@@ -687,7 +920,6 @@ function buildFinalHtml(content, profile, assessments) {
         } catch(e) {}
 
         const report = ref(parsedData);
-        const activeTab = ref(report.value.modules?.[0]?.id || 'tab1');
 
         onMounted(() => {
           if (window.lucide) {
@@ -695,19 +927,18 @@ function buildFinalHtml(content, profile, assessments) {
           }
         });
 
-        watch(activeTab, () => {
-          nextTick(() => {
-            if (window.lucide) {
-              window.lucide.createIcons();
-            }
-          });
-        });
+        function scrollToModule(id) {
+          const el = document.getElementById('section-' + id);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
 
         return {
           report,
-          activeTab,
           radarSvg,
-          profile: parsedProfile
+          profile: parsedProfile,
+          readableParagraphs,
+          formatInlineText,
+          scrollToModule
         }
       }
     }).mount('#app');
@@ -722,8 +953,16 @@ module.exports = {
   saveReportDraft,
   REPORTS_DIR,
   REPORT_DRAFTS_DIR,
+  MIN_MODULE_CONTENT_CHARS,
   normalizeReportHtml,
   humanizeReportCopy,
+  splitReadableParagraphs,
+  renderInlineText,
+  renderReadableText,
   buildHollandRadarSVG,
+  countReportContentChars,
+  collectModuleContentText,
+  getReportQualityIssues,
+  buildReportExpansionPrompt,
   buildFinalHtml
 }

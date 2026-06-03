@@ -56,6 +56,8 @@ CATEGORY_ALIASES = {
     '综合': ['综合'],
 }
 
+THREE_PLUS_THREE_PROVINCES = {'北京', '天津', '上海', '浙江', '山东', '海南'}
+
 # 本地数据缓存
 _local_data = None
 _local_data_by_province_year_cat = None
@@ -139,11 +141,57 @@ def release_db(conn):
 # DB 模式下科类查询也需归一化
 def _db_category_filter(category):
     """返回 SQL 查询的科类条件及参数"""
-    aliases = CATEGORY_ALIASES.get(category, [category])
+    aliases = score_category_aliases('', category)
     if len(aliases) == 1:
         return "category = %s", aliases
     placeholders = ','.join(['%s'] * len(aliases))
     return f"category IN ({placeholders})", aliases
+
+
+def normalize_province_name(province):
+    """把省份全称归一为分数库里的短名称。"""
+    return (
+        str(province or '')
+        .replace('壮族自治区', '')
+        .replace('回族自治区', '')
+        .replace('维吾尔自治区', '')
+        .replace('自治区', '')
+        .replace('特别行政区', '')
+        .replace('省', '')
+        .replace('市', '')
+        .strip()
+    )
+
+
+def normalize_score_category(province, category):
+    """按省份把用户科类归一为最常用展示科类。"""
+    province_name = normalize_province_name(province)
+    category_name = str(category or '').strip()
+    if province_name in THREE_PLUS_THREE_PROVINCES and category_name in ('物理类', '历史类', '理科', '文科'):
+        return '综合'
+    if category_name == '理科':
+        return '物理类'
+    if category_name == '文科':
+        return '历史类'
+    return category_name
+
+
+def score_category_aliases(province, category):
+    """返回查询分数库时可接受的科类别名。"""
+    province_name = normalize_province_name(province)
+    category_name = str(category or '').strip()
+    if province_name in THREE_PLUS_THREE_PROVINCES and category_name in ('物理类', '历史类', '理科', '文科', '综合'):
+        return ['综合']
+    if category_name in ('物理类', '理科'):
+        return ['物理类', '理科']
+    if category_name in ('历史类', '文科'):
+        return ['历史类', '文科']
+    return [category_name] if category_name else []
+
+
+def province_id_for_query(province):
+    province_name = normalize_province_name(province)
+    return PROVINCE_ID_MAP.get(province_name, province_name)
 
 
 # ============================================================
@@ -234,7 +282,8 @@ def match_schools():
     try:
         province = request.args.get('province')
         score = int(request.args.get('score', 0))
-        category = request.args.get('category', '物理类')
+        requested_category = request.args.get('category', '物理类')
+        category = normalize_score_category(province, requested_category)
         year = int(request.args.get('year', 2025))
         limit = min(int(request.args.get('limit', 10)), 50)
 
@@ -242,7 +291,7 @@ def match_schools():
             return jsonify({'error': '缺少必要参数: province, score'}), 400
 
         if USE_JSON:
-            filtered = _get_filtered_data(province, year, category)
+            filtered = _get_filtered_data(normalize_province_name(province), year, category)
 
             # 按学校分组
             schools = {}
@@ -255,11 +304,17 @@ def match_schools():
                         'school_name': school,
                         'majors': [],
                         'max_score': r['min_score'],
-                        'min_score': r['min_score']
+                        'min_score': r['min_score'],
+                        'min_rank': r.get('min_rank')
                     }
                 schools[school]['majors'].append(r['major_name'])
                 schools[school]['max_score'] = max(schools[school]['max_score'], r['min_score'])
-                schools[school]['min_score'] = min(schools[school]['min_score'], r['min_score'])
+                if r['min_score'] < schools[school]['min_score']:
+                    schools[school]['min_score'] = r['min_score']
+                    schools[school]['min_rank'] = r.get('min_rank')
+                elif r['min_score'] == schools[school]['min_score'] and r.get('min_rank'):
+                    ranks = [rank for rank in [schools[school].get('min_rank'), r.get('min_rank')] if rank]
+                    schools[school]['min_rank'] = min(ranks) if ranks else schools[school].get('min_rank')
 
             for s in schools.values():
                 s['majors'] = '; '.join(s['majors'][:10])
@@ -275,7 +330,8 @@ def match_schools():
             return jsonify({
                 'province': province,
                 'score': score,
-                'category': category,
+                'category': requested_category,
+                'query_category': category,
                 'year': year,
                 '冲': 冲[:limit],
                 '稳': 稳[:limit],
@@ -287,7 +343,7 @@ def match_schools():
             try:
                 cursor = conn.cursor(cursor_factory=RealDictCursor)
 
-                province_id = PROVINCE_ID_MAP.get(province, province)
+                province_id = province_id_for_query(province)
                 cat_cond, cat_params = _db_category_filter(category)
 
                 base_where = f"province_id = %s AND {cat_cond} AND year = %s AND min_score >= %s AND min_score <= %s"
@@ -295,7 +351,8 @@ def match_schools():
 
                 cursor.execute(f"""
                     SELECT DISTINCT school_name, STRING_AGG(major_name, '; ') as majors,
-                           MAX(min_score) as max_score, MIN(min_score) as min_score
+                           MAX(min_score) as max_score, MIN(min_score) as min_score,
+                           MIN(min_rank) as min_rank
                     FROM scores
                     WHERE {base_where}
                     GROUP BY school_name
@@ -307,7 +364,8 @@ def match_schools():
 
                 cursor.execute(f"""
                     SELECT DISTINCT school_name, STRING_AGG(major_name, '; ') as majors,
-                           MAX(min_score) as max_score, MIN(min_score) as min_score
+                           MAX(min_score) as max_score, MIN(min_score) as min_score,
+                           MIN(min_rank) as min_rank
                     FROM scores
                     WHERE {base_where}
                     GROUP BY school_name
@@ -319,7 +377,8 @@ def match_schools():
 
                 cursor.execute(f"""
                     SELECT DISTINCT school_name, STRING_AGG(major_name, '; ') as majors,
-                           MAX(min_score) as max_score, MIN(min_score) as min_score
+                           MAX(min_score) as max_score, MIN(min_score) as min_score,
+                           MIN(min_rank) as min_rank
                     FROM scores
                     WHERE {base_where}
                     GROUP BY school_name
@@ -334,7 +393,8 @@ def match_schools():
                 return jsonify({
                     'province': province,
                     'score': score,
-                    'category': category,
+                    'category': requested_category,
+                    'query_category': category,
                     'year': year,
                     '冲': [dict(r) for r in 冲],
                     '稳': [dict(r) for r in 稳],
@@ -358,7 +418,7 @@ def get_school_scores(school_name, province):
 
             majors = [r for r in data if
                       r['school_name'] == school_name and
-                      r['province_name'] == province and
+                      r['province_name'] == normalize_province_name(province) and
                       r['year'] == year]
 
             majors.sort(key=lambda x: (x.get('batch', '本科批'), -(x.get('min_score') or 0)))
@@ -380,7 +440,7 @@ def get_school_scores(school_name, province):
                     FROM scores
                     WHERE school_name = %s AND province_name = %s AND year = %s
                     ORDER BY batch, min_score DESC
-                """, (school_name, province, year))
+                """, (school_name, normalize_province_name(province), year))
 
                 majors = cursor.fetchall()
                 cursor.close()
@@ -414,7 +474,7 @@ def get_majors_by_keyword(keyword):
                        r['year'] == year]
 
             if province:
-                results = [r for r in results if r['province_name'] == province]
+                results = [r for r in results if r['province_name'] == normalize_province_name(province)]
 
             results.sort(key=lambda x: -(x.get('min_score') or 0))
 
@@ -435,7 +495,7 @@ def get_majors_by_keyword(keyword):
                         WHERE major_name LIKE %s AND province_name = %s AND year = %s
                         ORDER BY min_score DESC
                         LIMIT %s
-                    """, (f'%{keyword}%', province, year, limit))
+                    """, (f'%{keyword}%', normalize_province_name(province), year, limit))
                 else:
                     cursor.execute("""
                         SELECT school_name, province_name, major_name, min_score, min_rank
@@ -476,7 +536,8 @@ def recommend():
     try:
         province = request.args.get('province')
         score = int(request.args.get('score', 0))
-        category = request.args.get('category', '物理类')
+        requested_category = request.args.get('category', '物理类')
+        category = normalize_score_category(province, requested_category)
         year = int(request.args.get('year', 2025))
         limit = min(int(request.args.get('limit', 10)), 50)
 
@@ -484,7 +545,7 @@ def recommend():
             return jsonify({'error': '缺少必要参数'}), 400
 
         if USE_JSON:
-            filtered = _get_filtered_data(province, year, category)
+            filtered = _get_filtered_data(normalize_province_name(province), year, category)
 
             # 按学校分组
             schools = {}
@@ -533,7 +594,7 @@ def recommend():
             try:
                 cursor = conn.cursor(cursor_factory=RealDictCursor)
 
-                province_id = PROVINCE_ID_MAP.get(province, province)
+                province_id = province_id_for_query(province)
                 cat_cond, cat_params = _db_category_filter(category)
 
                 cursor.execute(f"""

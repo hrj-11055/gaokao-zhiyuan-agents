@@ -15,7 +15,7 @@
       <text class="section-title">二、我们收集的信息</text>
       <text class="section-text">为提供高考志愿填报咨询服务，我们会收集以下信息：</text>
       <text class="section-text">1. 基本信息：您主动填写的省份、考试科目（文/理/新高考）、高考分数、全省位次等志愿填报相关数据。</text>
-      <text class="section-text">2. 问卷答案：您在五环问卷、MBTI 性格测试、霍兰德职业兴趣测试中选择的项目。</text>
+      <text class="section-text">2. 测评结果：您在性格测试、霍兰德职业兴趣测试中生成的类型和指标。</text>
       <text class="section-text">3. 对话内容：您在 AI 对话中发送的问题及 AI 生成的回答。</text>
       <text class="section-text">4. 身份标识：微信 OpenID（用于区分用户身份，不包含您的微信昵称、头像等个人信息）。</text>
       <text class="section-text">5. 设备信息：我们会通过微信小程序框架获取必要的运行环境信息以保障服务稳定性。</text>
@@ -43,7 +43,6 @@
       <text class="section-text">为实现产品功能，我们会将部分数据传输给以下第三方服务：</text>
       <text class="section-text">1. Dify + DeepSeek：为您提供 AI 智能对话服务。您的聊天问题会被发送至 Dify 平台并调用 DeepSeek 大语言模型生成回答。</text>
       <text class="section-text">2. 微信支付：用于处理会员购买支付流程。支付信息由微信支付系统直接处理，我们不存储您的银行卡等支付敏感信息。</text>
-      <text class="section-text">3. 火山引擎：用于将 AI 回复文本转换为语音（TTS 功能）。</text>
       <text class="section-text">以上第三方服务均有各自的隐私政策，我们建议您查阅了解。</text>
     </view>
 

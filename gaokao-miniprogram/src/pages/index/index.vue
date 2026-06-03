@@ -22,6 +22,7 @@
         <text class="progress-frac">{{ completedSteps }}<text class="progress-total"> / 4 步</text></text>
       </view>
       <view class="progress-bar"><view class="progress-fill" :style="{ width: progressPercent + '%' }" /></view>
+      <text class="progress-guide">按顺序完成：基础资料 → AI 咨询 → 两项测评 → 完整报告</text>
     </view>
 
     <!-- 步骤 1: 基础信息 -->
@@ -44,11 +45,11 @@
       <text class="step-arrow">›</text>
     </view>
 
-    <!-- 步骤 3: 3 项测评（active 时展开） -->
+    <!-- 步骤 3: 2 项测评（active 时展开） -->
     <view v-if="step3Status !== 'active'" class="step" :class="step3ClassObj" @click="onClickStep3">
       <view class="step-icon">{{ step3IconText }}</view>
       <view class="step-body">
-        <text class="step-title">3 项性格测评</text>
+        <text class="step-title">2 项性格测评</text>
         <text class="step-desc">{{ step3DescText }}</text>
       </view>
       <text class="step-arrow">›</text>
@@ -57,15 +58,11 @@
       <view class="step-top-row">
         <view class="step-icon active-icon">3</view>
         <view class="step-body">
-          <text class="step-title">完成 3 项测评</text>
-          <text class="step-desc active-desc">让报告更准确 · 已完成 {{ step3Count }}/3</text>
+          <text class="step-title">完成 2 项测评</text>
+          <text class="step-desc active-desc">让报告更准确 · 已完成 {{ step3Count }}/2</text>
         </view>
       </view>
       <view class="chips">
-        <view class="chip" :class="{ done: questionnaireDone, next: nextAssessment === 'questionnaire' }">
-          <text class="chip-label">五环</text>
-          <text class="chip-status">{{ chipStatus('questionnaire') }}</text>
-        </view>
         <view class="chip" :class="{ done: mbtiDone, next: nextAssessment === 'mbti' }">
           <text class="chip-label">MBTI</text>
           <text class="chip-status">{{ chipStatus('mbti') }}</text>
@@ -91,17 +88,71 @@
     </view>
 
     <!-- 已就绪时底部的报告 hero -->
-    <view v-if="step3Done && !membershipStore.isActive" class="report-hero" @click="goReport">
+    <view v-if="step3Done && !membershipStore.isActive && !reportDone" class="report-hero" @click="goReport">
       <view class="report-hero-glow" />
       <view class="report-hero-content">
         <view class="report-hero-text">
-          <text class="report-hero-title">志愿报告已就绪</text>
-          <text class="report-hero-price"><text class="report-hero-currency">¥</text>29</text>
-          <text class="report-hero-sub">19.9 元一次解锁 · 或邀请 5 人免费 ({{ membershipStore.effectiveInviteCount }}/5)</text>
+          <text class="report-hero-title">完整志愿报告待解锁</text>
+          <text class="report-hero-price">{{ MEMBERSHIP_PRICE_LABEL }}</text>
+          <text class="report-hero-sub">完整报告 + 深度阅读 + PDF 下载额度</text>
+          <text class="report-hero-sub">邀请 5 位同学免费获取：新用户完成基础资料才计数 ({{ membershipStore.effectiveInviteCount }}/{{ membershipStore.requiredInviteCount }})</text>
         </view>
-        <text class="report-hero-icon">📋</text>
+        <text class="report-hero-icon">报告</text>
       </view>
-      <view class="report-hero-cta">立即生成报告 →</view>
+      <view class="report-hero-cta">查看权益并生成报告 →</view>
+    </view>
+
+    <view v-if="showProfileSheet" class="profile-sheet-mask" @click="closeProfileSheet">
+      <view class="profile-sheet" @click.stop>
+        <view class="profile-sheet-head">
+          <text class="profile-sheet-title">填写基础信息</text>
+          <text class="profile-sheet-close" @click="closeProfileSheet">×</text>
+        </view>
+        <text class="profile-sheet-desc">省份、科类和分数会决定推荐边界，也会作为有效邀请的计数条件。</text>
+
+        <view class="field-block">
+          <text class="field-label">省份</text>
+          <input v-model.trim="draft.province" class="field-input" placeholder="例如：广东" />
+        </view>
+
+        <view class="field-block">
+          <text class="field-label">科类</text>
+          <view class="segment">
+            <view
+              class="segment-option"
+              :class="{ active: draft.category === '物理类' }"
+              @click="selectCategory('物理类')"
+            >
+              <text class="segment-text">物理类</text>
+            </view>
+            <view
+              class="segment-option"
+              :class="{ active: draft.category === '历史类' }"
+              @click="selectCategory('历史类')"
+            >
+              <text class="segment-text">历史类</text>
+            </view>
+          </view>
+        </view>
+
+        <view class="field-row">
+          <view class="field-block half">
+            <text class="field-label">分数</text>
+            <input v-model.trim="draft.score" class="field-input" type="number" placeholder="例如：580" />
+          </view>
+          <view class="field-block half">
+            <text class="field-label">位次</text>
+            <input v-model.trim="draft.rank" class="field-input" type="number" placeholder="选填" />
+          </view>
+        </view>
+
+        <view class="field-block">
+          <text class="field-label">家庭预算或城市偏好</text>
+          <input v-model.trim="draft.family_resources" class="field-input" placeholder="选填，例如：预算敏感、优先广东" />
+        </view>
+
+        <button class="profile-save-btn" @click="saveProfileDraft">保存信息</button>
+      </view>
     </view>
 
     <!-- 免责声明 -->
@@ -113,10 +164,15 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-import { onLoad, onShow } from '@dcloudio/uni-app'
+import { computed, ref } from 'vue'
+import { onLoad, onShow, onUnload } from '@dcloudio/uni-app'
 import { useHomeProgress, StepStatus } from '../../composables/useHomeProgress.js'
 import { useMembershipStore } from '../../stores/membership.js'
+import { MEMBERSHIP_PRICE_LABEL } from '../../config.js'
+import {
+  isProfileComplete,
+  saveUserProfile,
+} from '../../utils/storage.js'
 
 const membershipStore = useMembershipStore()
 const {
@@ -126,25 +182,40 @@ const {
   step1Done,
   step2Done,
   step3Done,
+  reportDone,
   step3Count,
   completedSteps,
-  questionnaireDone,
   mbtiDone,
   hollandDone,
   chatRounds,
   nextAssessment,
 } = useHomeProgress()
 
+function createDraft(source = {}) {
+  return {
+    province: source.province || '',
+    category: source.category || '',
+    score: source.score === '' || source.score === undefined ? '' : String(source.score),
+    rank: source.rank === '' || source.rank === undefined ? '' : String(source.rank),
+    family_resources: source.family_resources || '',
+    interest_subjects: source.interest_subjects || '',
+    region_preference: source.region_preference || '',
+    career_goal: source.career_goal || '',
+  }
+}
+
+const showProfileSheet = ref(false)
+const draft = ref(createDraft(profile.value))
+
 // === 进度卡 ===
-const isReady = computed(() => step3Done.value)
+const isReady = computed(() => step3Done.value || reportDone.value)
 const progressPercent = computed(() => Math.round((completedSteps.value / 4) * 100))
 const progressHint = computed(() => {
   if (completedSteps.value === 0) return '从第 1 步开始'
-  if (completedSteps.value === 4) return '已生成报告'
+  if (reportDone.value) return '已生成报告'
   if (step3Done.value) return '准备就绪'
-  return `还差 ${4 - completedSteps.value - (membershipStore.isActive ? 0 : 0)} 步`
+  return `还差 ${4 - completedSteps.value} 步`
 })
-
 // === 招呼语 ===
 const greetingText = computed(() => {
   if (!step1Done.value) return '你好，先花 30 秒了解一下吧'
@@ -157,10 +228,7 @@ const greetingText = computed(() => {
 const step1Status = computed(() => statusFor(1))
 const step2Status = computed(() => statusFor(2))
 const step3Status = computed(() => statusFor(3))
-const step4Status = computed(() => {
-  if (!step3Done.value) return StepStatus.LOCKED
-  return membershipStore.isActive ? StepStatus.DONE : StepStatus.ACTIVE
-})
+const step4Status = computed(() => statusFor(4))
 
 function classObj(status) {
   return {
@@ -190,35 +258,34 @@ const step1DescText = computed(() => {
     const cat = profile.value.category ? profile.value.category : ''
     return `${profile.value.province} · ${cat} · ${profile.value.score}分`
   }
-  return '省份、科目、分数 · 30 秒'
+  return '省份、科类、分数决定推荐边界'
 })
 
 const step2DescText = computed(() => {
   if (step2Status.value === StepStatus.LOCKED) return '完成上一步后开始'
   if (step2Done.value) return `已聊 ${chatRounds.value} 轮 · 点击继续`
-  return 'AI 帮你理清楚专业方向'
+  return '先确认分数段、城市和家庭约束'
 })
 
 const step3DescText = computed(() => {
   if (step3Status.value === StepStatus.LOCKED) return '完成上一步后开始'
   if (step3Done.value) {
     const tags = []
-    if (questionnaireDone.value) tags.push('五环')
     if (mbtiDone.value) tags.push('MBTI')
     if (hollandDone.value) tags.push('霍兰德')
     return `${tags.join(' / ')} 已记录`
   }
-  return `让报告更准确 · 已完成 ${step3Count.value}/3`
+  return `补充分数之外的专业匹配依据 · 已完成 ${step3Count.value}/2`
 })
 
 const step4DescText = computed(() => {
   if (step4Status.value === StepStatus.LOCKED) return '完成测评后解锁'
-  if (membershipStore.isActive) return '已生成 · 点击查看'
-  return '¥19.9 一次解锁 · 邀请 5 人免费'
+  if (reportDone.value) return '报告已生成 · 点击查看'
+  if (membershipStore.isActive) return '会员特权已解锁，一键生成'
+  return `${MEMBERSHIP_PRICE_LABEL} 一次解锁 · 邀请 5 人免费`
 })
 
 function chipStatus(key) {
-  if (key === 'questionnaire') return questionnaireDone.value ? '✓' : nextAssessment.value === 'questionnaire' ? '→' : '—'
   if (key === 'mbti') return mbtiDone.value ? '✓' : nextAssessment.value === 'mbti' ? '→' : '—'
   if (key === 'holland') return hollandDone.value ? '✓' : nextAssessment.value === 'holland' ? '→' : '—'
   return '—'
@@ -226,10 +293,8 @@ function chipStatus(key) {
 
 const nextAssessmentCtaText = computed(() => {
   switch (nextAssessment.value) {
-    case 'questionnaire':
-      return '继续 五环测评 →'
     case 'mbti':
-      return '继续 MBTI 测评 →'
+      return '继续 性格类型定位 →'
     case 'holland':
       return '继续 霍兰德测评 →'
     default:
@@ -239,15 +304,14 @@ const nextAssessmentCtaText = computed(() => {
 
 // === 跳转处理 ===
 function onClickStep1() {
-  // 暂时跳到 questionnaire；正式的编辑表单将在 Task 2.4 加入
-  uni.navigateTo({ url: '/pages/questionnaire/questionnaire' })
+  openProfileSheet()
 }
 function onClickStep2() {
   if (step2Status.value === StepStatus.LOCKED) {
     uni.showToast({ title: '请先完成第 1 步', icon: 'none' })
     return
   }
-  uni.navigateTo({ url: '/pages/chat/chat' })
+  uni.switchTab({ url: '/pages/chat/chat' })
 }
 function onClickStep3() {
   if (step3Status.value === StepStatus.LOCKED) {
@@ -259,9 +323,6 @@ function onClickStep3() {
 }
 function onContinueAssessment() {
   switch (nextAssessment.value) {
-    case 'questionnaire':
-      uni.navigateTo({ url: '/pages/questionnaire/questionnaire' })
-      break
     case 'mbti':
       uni.navigateTo({ url: '/pages/mbti/mbti' })
       break
@@ -286,13 +347,43 @@ function goPrivacy() {
   uni.navigateTo({ url: '/pages/privacy/privacy' })
 }
 
+function openProfileSheet() {
+  draft.value = createDraft(profile.value)
+  showProfileSheet.value = true
+}
+
+function closeProfileSheet() {
+  showProfileSheet.value = false
+}
+
+function selectCategory(category) {
+  draft.value.category = category
+}
+
+async function saveProfileDraft() {
+  if (!isProfileComplete(draft.value)) {
+    uni.showToast({ title: '请补全省份、科类和分数', icon: 'none' })
+    return
+  }
+  saveUserProfile(draft.value)
+  refresh()
+  membershipStore.syncProfile(profile.value).catch(() => {})
+  membershipStore.markProfileCompleted().catch(() => {})
+  closeProfileSheet()
+  uni.showToast({ title: '基础信息已保存', icon: 'success' })
+}
+
 onLoad((options = {}) => {
   if (options.inviterId) membershipStore.setInviterId(options.inviterId)
   membershipStore.login().catch(() => {})
+  uni.$on('open-profile-sheet', openProfileSheet)
 })
 onShow(() => {
   refresh()
   membershipStore.loadStatus().catch(() => {})
+})
+onUnload(() => {
+  uni.$off('open-profile-sheet', openProfileSheet)
 })
 </script>
 
@@ -345,6 +436,7 @@ onShow(() => {
   transition: width 0.4s ease;
 }
 .progress-card.ready .progress-fill { background: linear-gradient(90deg, #10b981, #34d399); }
+.progress-guide { display: block; font-size: 21rpx; color: #6b7280; margin-top: 14rpx; line-height: 1.5; }
 
 /* === 步骤卡 === */
 .step {
@@ -417,13 +509,106 @@ onShow(() => {
 .report-hero-title { display: block; font-size: 26rpx; font-weight: 600; opacity: 0.92; }
 .report-hero-price { display: block; font-size: 52rpx; font-weight: 800; margin: 4rpx 0; }
 .report-hero-currency { font-size: 28rpx; font-weight: 600; opacity: 0.85; margin-right: 4rpx; }
-.report-hero-sub { display: block; font-size: 20rpx; opacity: 0.85; }
-.report-hero-icon { font-size: 56rpx; opacity: 0.95; }
+.report-hero-sub { display: block; font-size: 20rpx; opacity: 0.88; line-height: 1.5; }
+.report-hero-icon {
+  font-size: 24rpx; opacity: 0.95; font-weight: 800;
+  border: 2rpx solid rgba(255,255,255,0.55);
+  border-radius: 12rpx; padding: 10rpx 12rpx;
+}
 .report-hero-cta {
   margin-top: 18rpx; background: white; color: #c2410c;
   text-align: center; padding: 18rpx; border-radius: 14rpx;
   font-weight: 700; font-size: 28rpx;
 }
+
+/* === 基础信息弹窗 === */
+.profile-sheet-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(15, 23, 42, 0.42);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.profile-sheet {
+  width: 100%;
+  background: #ffffff;
+  border-top-left-radius: 24rpx;
+  border-top-right-radius: 24rpx;
+  padding: 32rpx 32rpx calc(34rpx + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+}
+.profile-sheet-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+.profile-sheet-title { font-size: 34rpx; font-weight: 800; color: #111827; }
+.profile-sheet-close { font-size: 44rpx; color: #9ca3af; line-height: 1; }
+.profile-sheet-desc {
+  display: block;
+  font-size: 24rpx;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 24rpx;
+}
+.field-row { display: flex; gap: 18rpx; }
+.field-block { margin-bottom: 20rpx; }
+.field-block.half { flex: 1; min-width: 0; }
+.field-label {
+  display: block;
+  font-size: 24rpx;
+  color: #374151;
+  font-weight: 700;
+  margin-bottom: 10rpx;
+}
+.field-input {
+  height: 78rpx;
+  background: #f9fafb;
+  border: 1rpx solid #e5e7eb;
+  border-radius: 12rpx;
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  color: #111827;
+  box-sizing: border-box;
+}
+.segment {
+  display: flex;
+  gap: 14rpx;
+}
+.segment-option {
+  flex: 1;
+  height: 76rpx;
+  border-radius: 12rpx;
+  background: #f9fafb;
+  border: 1rpx solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.segment-option.active {
+  background: #fff7ed;
+  border-color: #f97316;
+}
+.segment-text {
+  color: #6b7280;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.segment-option.active .segment-text { color: #ea580c; }
+.profile-save-btn {
+  height: 86rpx;
+  line-height: 86rpx;
+  border-radius: 14rpx;
+  background: linear-gradient(90deg, #f97316, #ea580c);
+  color: #ffffff;
+  font-size: 30rpx;
+  font-weight: 800;
+  margin-top: 10rpx;
+}
+.profile-save-btn::after { border: none; }
 
 /* === 免责声明 === */
 .disclaimer { margin-top: 40rpx; text-align: center; }

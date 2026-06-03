@@ -6,7 +6,7 @@ import os
 import urllib.request
 import ssl
 
-API_BASE = os.environ.get("DIFY_CHAT_API_URL", "http://8.135.37.159:8080/v1/chat-messages")
+API_BASE = os.environ.get("DIFY_CHAT_API_URL", "http://159.75.110.157/v1/chat-messages")
 API_KEY = os.environ.get("DIFY_APP_API_KEY")
 if not API_KEY:
     raise SystemExit("错误: 未设置环境变量 DIFY_APP_API_KEY")

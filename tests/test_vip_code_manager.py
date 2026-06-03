@@ -21,6 +21,11 @@ class VipCodeManagerTests(unittest.TestCase):
             cwd=ROOT,
         ).stdout
 
+    def test_help_flag_prints_usage_without_error_banner(self):
+        output = self.run_script("--help")
+        self.assertIn("Usage:", output)
+        self.assertNotIn("Unknown command", output)
+
     def test_cli_generates_lists_disables_and_redeems_database_codes(self):
         with tempfile.TemporaryDirectory() as tmp:
             db_path = str(Path(tmp) / "commerce.sqlite")

@@ -9,13 +9,27 @@ const { buildDeepReportHtml, buildDeepReportReaderHtml, generateDeepReportPdf } 
 const { createDeepReportViewToken, verifyDeepReportViewToken } = require('./lib/deep-report-view-token')
 const { getMajorInsights, parseNames } = require('./lib/major-insights')
 const redis = require('./lib/redis')
-const { textToSpeech } = require('./lib/tts')
 const { createCommerceStore } = require('./lib/commerce-store')
 const { signSessionToken, verifySessionToken } = require('./lib/session-token')
 const { exchangeCodeForSession } = require('./lib/wechat-auth')
 const { createJsapiPayment, parseWechatPayNotify } = require('./lib/wechat-pay')
 const { msgSecCheck } = require('./lib/content-security')
-const { buildProfileGateAnswer, buildRecommendationGuidedQuery } = require('./lib/profile-followup-gate')
+const {
+  buildDeepProfileGateAnswer,
+  buildProfileGateAnswer,
+  buildRecommendationGuidedQuery,
+  buildSchoolScoreGuidedQuery,
+  buildStarterGuidanceAnswer,
+  extractProfileInputsFromText,
+  extractSchoolScoreLookup,
+  formatScoreMatchContext,
+  formatSchoolScoreContext,
+  isRecommendationIntent,
+  isStarterGuidanceIntent,
+  normalizeScoreApiCategory,
+  shouldUseScoreContext,
+  classifyScoreQuestion,
+} = require('./lib/profile-followup-gate')
 const fs = require('fs').promises
 const path = require('path')
 
@@ -26,6 +40,8 @@ const PORT = process.env.PORT || 3001
 const JSON_BODY_LIMIT = process.env.JSON_BODY_LIMIT || '32kb'
 const REQUEST_TIMEOUT_MS = Number(process.env.REQUEST_TIMEOUT_MS || 120000)
 const STREAM_TIMEOUT_MS = Number(process.env.STREAM_TIMEOUT_MS || 180000)
+const SCORE_API_URL = process.env.SCORE_API_URL || 'http://159.75.110.157/score-api'
+const SCORE_DATA_YEAR = Number(process.env.SCORE_DATA_YEAR || 2025)
 const RATE_LIMIT_WINDOW_MS = Number(process.env.RATE_LIMIT_WINDOW_MS || 60000)
 const RATE_LIMIT_MAX = Number(process.env.RATE_LIMIT_MAX || 30)
 const MAX_QUERY_LENGTH = Number(process.env.MAX_QUERY_LENGTH || 2000)
@@ -33,14 +49,10 @@ const PROXY_API_TOKEN = process.env.PROXY_API_TOKEN || ''
 const COMMERCE_SESSION_SECRET = process.env.COMMERCE_SESSION_SECRET || process.env.JWT_SECRET || 'local-commerce-session-secret'
 const LIMITED_FREE_UNLOCK_ENABLED = process.env.LIMITED_FREE_UNLOCK_ENABLED !== 'false'
 const DEEP_REPORT_VIEW_TOKEN_TTL_MS = Number(process.env.DEEP_REPORT_VIEW_TOKEN_TTL_MS || 10 * 60 * 1000)
-const QUESTIONNAIRE_REQUIRED_COUNT = 21
-const QUESTIONNAIRE_ACTIVE_IDS = [
-  'q1', 'q2', 'q3', 'q4', 'q5',
-  'q6', 'q7', 'q8',
-  'q10', 'q11', 'q12', 'q13',
-  'q14', 'q15', 'q16',
-  'q17', 'q18', 'q19', 'q20', 'q21', 'q22'
-]
+
+function hasRequiredAssessmentResults(assessments = {}) {
+  return Boolean(assessments?.mbti?.completed && assessments?.holland?.completed)
+}
 const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || '')
   .split(',')
   .map((origin) => origin.trim())
@@ -49,6 +61,22 @@ const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS || '')
 const rateLimitBuckets = new Map()
 const reportCooldowns = new Map()
 const REPORT_COOLDOWN_MS = 10 * 60 * 1000
+
+const pregenTasks = new Map() // Map<userId, { taskId, status, url, error, startedAt, completedAt, promise }>
+const PREGEN_TTL_MS = 30 * 60 * 1000 // 30 minutes
+
+// Cleanup stale pre-generation tasks every 10 minutes
+setInterval(() => {
+  const now = Date.now()
+  for (const [key, task] of pregenTasks) {
+    if (task.completedAt && now - task.completedAt > PREGEN_TTL_MS) {
+      pregenTasks.delete(key)
+    } else if (!task.completedAt && now - task.startedAt > PREGEN_TTL_MS) {
+      pregenTasks.delete(key)
+    }
+  }
+}, 10 * 60 * 1000)
+
 const THINK_OPEN = '<think>'
 const THINK_CLOSE = '</think>'
 const commerceStore = createCommerceStore()
@@ -167,7 +195,7 @@ function requireMembershipForReports(req, res, next) {
     return res.status(402).json({
       error: '请先解锁深度填报会员',
       code: 'MEMBERSHIP_REQUIRED',
-      priceCents: Number(process.env.MEMBERSHIP_PRICE_CENTS || 2900),
+      priceCents: Number(process.env.MEMBERSHIP_PRICE_CENTS || 1990),
       invite: membership.invite,
       downloadQuota: membership.downloadQuota,
     })
@@ -223,6 +251,149 @@ async function checkContentSecurity(req, res, next) {
     console.error('Content security check failed:', err.message)
     next()
   }
+}
+
+async function fetchScoreMatchData(query, inputs = {}) {
+  if (classifyScoreQuestion(query) === 'general_advice') return null
+  if (!inputs.province || !inputs.category || !inputs.score) return null
+
+  const url = new URL(`${SCORE_API_URL.replace(/\/+$/, '')}/api/scores/match`)
+  url.searchParams.set('province', inputs.province)
+  url.searchParams.set('category', normalizeScoreApiCategory(inputs.province, inputs.category))
+  url.searchParams.set('score', String(inputs.score))
+  url.searchParams.set('year', String(SCORE_DATA_YEAR))
+  url.searchParams.set('limit', '5')
+
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(5000) })
+    if (!res.ok) {
+      console.warn('Score match API failed:', res.status, await res.text())
+      return null
+    }
+    return await res.json()
+  } catch (err) {
+    console.warn('Score match API error:', err.message)
+    return null
+  }
+}
+
+async function fetchScoreMatchContext(query, inputs = {}) {
+  const data = await fetchScoreMatchData(query, inputs)
+  if (!data) return ''
+  return formatScoreMatchContext(data, {
+    province: inputs.province,
+    category: inputs.category,
+    score: inputs.score,
+    year: SCORE_DATA_YEAR,
+  })
+}
+
+async function fetchSchoolScoreData(query, inputs = {}) {
+  const lookup = extractSchoolScoreLookup(query, inputs)
+  if (!lookup) return null
+
+  const url = new URL(`${SCORE_API_URL.replace(/\/+$/, '')}/api/scores/schools/${encodeURIComponent(lookup.schoolName)}/provinces/${encodeURIComponent(lookup.province)}`)
+  url.searchParams.set('year', String(SCORE_DATA_YEAR))
+  url.searchParams.set('limit', '10')
+  if (inputs.category) {
+    url.searchParams.set('category', normalizeScoreApiCategory(lookup.province, inputs.category))
+  }
+
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(5000) })
+    if (!res.ok) {
+      console.warn('School score API failed:', res.status, await res.text())
+      return null
+    }
+    const data = await res.json()
+    return {
+      data,
+      lookup: {
+        ...lookup,
+        year: SCORE_DATA_YEAR,
+      },
+    }
+  } catch (err) {
+    console.warn('School score API error:', err.message)
+    return null
+  }
+}
+
+async function fetchSchoolScoreContext(query, inputs = {}) {
+  const result = await fetchSchoolScoreData(query, inputs)
+  if (!result) return ''
+  return formatSchoolScoreContext(result.data, result.lookup)
+}
+
+function createProxyMessageId(prefix) {
+  return `${prefix}_${Date.now()}`
+}
+
+function buildDirectSchoolScoreAnswer(scoreData = {}, lookup = {}, inputs = {}) {
+  const rows = Array.isArray(scoreData.majors) ? scoreData.majors : []
+  const school = scoreData.school || scoreData.school_name || lookup.schoolName || ''
+  const province = scoreData.province || lookup.province || ''
+  const year = lookup.year || SCORE_DATA_YEAR
+  const lines = [`我直接按后端分数线查：${school}在${province}${year}年的专业录取数据。`]
+
+  if (rows.length === 0) {
+    lines.push('后端本次没有返回这所学校在该省的分数线，不能编造一个分数。')
+    return lines.join('\n')
+  }
+
+  rows.slice(0, 10).forEach((row, index) => {
+    const category = row.category ? `，${row.category}` : ''
+    const batch = row.batch ? `，${row.batch}` : ''
+    const rank = row.min_rank ? `，最低位次 ${row.min_rank}` : ''
+    const avg = row.avg_score ? `，平均分 ${row.avg_score}` : ''
+    lines.push(`${index + 1}. ${row.major_name || '未标明专业'}${category}${batch}：最低分 ${row.min_score || '未返回'}${rank}${avg}`)
+  })
+
+  if (inputs.score) {
+    const minScore = rows
+      .map((row) => Number(row.min_score))
+      .filter((score) => Number.isFinite(score))
+      .sort((a, b) => a - b)[0]
+    if (Number.isFinite(minScore)) {
+      const diff = Number(inputs.score) - minScore
+      lines.push('', diff >= 0
+        ? `按你现在 ${inputs.score} 分看，比这批返回专业的最低线高 ${diff} 分；还要继续核专业组和位次。`
+        : `按你现在 ${inputs.score} 分看，比这批返回专业的最低线低 ${Math.abs(diff)} 分，风险很高。`)
+    }
+  }
+
+  return lines.join('\n')
+}
+
+function buildDirectChatPayload(answer, conversationId, prefix, metadata = {}) {
+  return {
+    event: 'message',
+    answer,
+    conversation_id: conversationId || '',
+    message_id: createProxyMessageId(prefix),
+    metadata: {
+      proxy_direct: true,
+      ...metadata,
+    },
+  }
+}
+
+function sendDirectSse(res, payload) {
+  res.setHeader('Content-Type', 'text/event-stream')
+  res.setHeader('Cache-Control', 'no-cache')
+  res.setHeader('Connection', 'keep-alive')
+  res.setHeader('X-Accel-Buffering', 'no')
+  if (typeof res.flushHeaders === 'function') {
+    res.flushHeaders()
+  }
+  res.write(`data: ${JSON.stringify(payload)}\n\n`)
+  res.write(`data: ${JSON.stringify({
+    event: 'message_end',
+    conversation_id: payload.conversation_id,
+    message_id: payload.message_id,
+    metadata: payload.metadata,
+  })}\n\n`)
+  res.end()
 }
 
 function sanitizeProfileInputs(inputs = {}) {
@@ -415,7 +586,7 @@ app.get('/api/reports/major-insights', async (req, res) => {
   }
 })
 
-app.post('/api/reports/deep/view-token', requireCommerceAuth, requireMembershipForReports, (req, res) => {
+app.post('/api/reports/deep/view-token', (req, res) => {
   const { type = '', id = '' } = req.body || {}
   if (!type || !id) {
     res.status(400).json({ error: 'type and id are required' })
@@ -425,7 +596,6 @@ app.post('/api/reports/deep/view-token', requireCommerceAuth, requireMembershipF
   try {
     const normalizedType = normalizeType(type)
     const token = createDeepReportViewToken({
-      userId: req.commerceAuth.userId,
       type: normalizedType,
       id,
     }, COMMERCE_SESSION_SECRET, { ttlMs: DEEP_REPORT_VIEW_TOKEN_TTL_MS })
@@ -500,12 +670,6 @@ app.get('/api/reports/deep/pdf', requireCommerceAuth, requireMembershipForReport
 app.get('/reports/deep/view/:token', async (req, res) => {
   try {
     const payload = verifyDeepReportViewToken(req.params.token, COMMERCE_SESSION_SECRET)
-    const membership = commerceStore.getMembershipStatus(payload.userId)
-    if (membership.status !== 'active') {
-      res.status(403).send('<!doctype html><meta charset="utf-8"><title>会员已失效</title><body style="font-family:sans-serif;padding:32px">请重新回到小程序开通会员后查看。</body>')
-      return
-    }
-
     const type = normalizeType(payload.type)
     const report = await fetchReportDetail(type, payload.id, { full: true })
     const html = buildDeepReportReaderHtml({ type, report })
@@ -695,7 +859,10 @@ app.post('/api/chat', async (req, res) => {
 
   try {
     const { query, conversation_id = '', user, inputs = {} } = req.body
-    const finalInputs = mergeProfileInputs(req, inputs)
+    const finalInputs = mergeProfileInputs(req, {
+      ...inputs,
+      ...extractProfileInputsFromText(query),
+    })
     const gateAnswer = buildProfileGateAnswer({
       query,
       inputs: finalInputs,
@@ -704,7 +871,35 @@ app.post('/api/chat', async (req, res) => {
     if (gateAnswer) {
       return res.json(gateAnswer)
     }
-    const guidedQuery = buildRecommendationGuidedQuery(query)
+
+    if (isStarterGuidanceIntent(query)) {
+      return res.json(buildStarterGuidanceAnswer({
+        inputs: finalInputs,
+        conversationId: conversation_id,
+      }))
+    }
+
+    const deepGateAnswer = buildDeepProfileGateAnswer({
+      query,
+      inputs: finalInputs,
+      conversationId: conversation_id,
+    })
+    if (deepGateAnswer) {
+      return res.json(deepGateAnswer)
+    }
+
+    const schoolScoreResult = await fetchSchoolScoreData(query, finalInputs)
+    if (schoolScoreResult) {
+      const answer = buildDirectSchoolScoreAnswer(schoolScoreResult.data, schoolScoreResult.lookup, finalInputs)
+      return res.json(buildDirectChatPayload(answer, conversation_id, 'school_score', {
+        source: 'score-api',
+        score_lookup: true,
+        lookup: schoolScoreResult.lookup,
+      }))
+    }
+
+    const scoreContext = await fetchScoreMatchContext(query, finalInputs)
+    const guidedQuery = buildRecommendationGuidedQuery(query, { scoreContext, inputs: finalInputs })
 
     const response = await fetch(`${DIFY_API_URL}/v1/chat-messages`, {
       method: 'POST',
@@ -760,7 +955,10 @@ app.post('/api/chat/stream', async (req, res) => {
 
   try {
     const { query, conversation_id = '', user, inputs = {} } = req.body
-    const finalInputs = mergeProfileInputs(req, inputs)
+    const finalInputs = mergeProfileInputs(req, {
+      ...inputs,
+      ...extractProfileInputsFromText(query),
+    })
     const gateAnswer = buildProfileGateAnswer({
       query,
       inputs: finalInputs,
@@ -790,7 +988,38 @@ app.post('/api/chat/stream', async (req, res) => {
       res.end()
       return
     }
-    const guidedQuery = buildRecommendationGuidedQuery(query)
+
+    if (isStarterGuidanceIntent(query)) {
+      sendDirectSse(res, buildStarterGuidanceAnswer({
+        inputs: finalInputs,
+        conversationId: conversation_id,
+      }))
+      return
+    }
+
+    const deepGateAnswer = buildDeepProfileGateAnswer({
+      query,
+      inputs: finalInputs,
+      conversationId: conversation_id,
+    })
+    if (deepGateAnswer) {
+      sendDirectSse(res, buildDirectChatPayload(deepGateAnswer.answer, conversation_id, 'deep_profile_gate', deepGateAnswer.metadata))
+      return
+    }
+
+    const schoolScoreResult = await fetchSchoolScoreData(query, finalInputs)
+    if (schoolScoreResult) {
+      const answer = buildDirectSchoolScoreAnswer(schoolScoreResult.data, schoolScoreResult.lookup, finalInputs)
+      sendDirectSse(res, buildDirectChatPayload(answer, conversation_id, 'school_score', {
+        source: 'score-api',
+        score_lookup: true,
+        lookup: schoolScoreResult.lookup,
+      }))
+      return
+    }
+
+    const scoreContext = await fetchScoreMatchContext(query, finalInputs)
+    const guidedQuery = buildRecommendationGuidedQuery(query, { scoreContext, inputs: finalInputs })
 
     const response = await fetch(`${DIFY_API_URL}/v1/chat-messages`, {
       method: 'POST',
@@ -960,23 +1189,6 @@ app.get('/reports/:filename', async (req, res, next) => {
 })
 app.use('/reports', express.static(REPORTS_DIR))
 
-// TTS 语音合成接口
-app.post('/api/tts', async (req, res) => {
-  const { text } = req.body
-  if (!text) {
-    return res.status(400).json({ error: 'text is required' })
-  }
-
-  try {
-    const audioBuffer = await textToSpeech(text.slice(0, 1000)) // 调整为 1000 字限制
-    res.setHeader('Content-Type', 'audio/mpeg')
-    res.send(audioBuffer)
-  } catch (err) {
-    console.error('TTS Error:', err.message)
-    res.status(500).json({ error: '语音合成失败' })
-  }
-})
-
 // 对话反馈接口
 app.post('/api/chat/feedback', async (req, res) => {
   const { messageId, rating, query, answer } = req.body
@@ -1003,18 +1215,91 @@ app.post('/api/chat/feedback', async (req, res) => {
   }
 })
 
+// 报告预生成端点
+app.post('/api/report/pre-generate', requireCommerceAuth, async (req, res) => {
+  const { profile, assessments, conversationId } = req.body || {}
+  const reportUserId = req.commerceAuth.userId
+
+  // Validate required assessment summaries. Five-ring questionnaire data is retained but ignored.
+  if (!hasRequiredAssessmentResults(assessments)) {
+    return res.status(400).json({ error: '请先完成性格测试和霍兰德职业兴趣测试' })
+  }
+
+  // Check for existing pending/ready task
+  const existing = pregenTasks.get(reportUserId)
+  if (existing && existing.status === 'pending') {
+    return res.json({ taskId: existing.taskId, status: 'pending' })
+  }
+  if (existing && existing.status === 'ready') {
+    return res.json({ taskId: existing.taskId, status: 'ready', url: existing.url })
+  }
+
+  const taskId = `pregen_${reportUserId}_${Date.now()}`
+  const baseUrl = process.env.REPORT_BASE_URL || `http://localhost:${PORT}`
+
+  const promise = (async () => {
+    try {
+      const html = await generateReport({
+        profile: profile || {},
+        assessments: assessments || {},
+        conversationId: conversationId || '',
+        difyApiUrl: DIFY_API_URL,
+        difyApiKey: DIFY_API_KEY,
+        skipExpansion: true,
+      })
+      const filename = await saveReport(reportUserId, html)
+      const task = pregenTasks.get(reportUserId)
+      if (task && task.taskId === taskId) {
+        task.status = 'ready'
+        task.url = `${baseUrl}/reports/${filename}`
+        task.completedAt = Date.now()
+      }
+    } catch (err) {
+      console.error('Pre-generate report error:', err.message)
+      const task = pregenTasks.get(reportUserId)
+      if (task && task.taskId === taskId) {
+        task.status = 'failed'
+        task.error = err.message || '报告预生成失败'
+        task.completedAt = Date.now()
+      }
+    }
+  })()
+
+  pregenTasks.set(reportUserId, {
+    taskId,
+    status: 'pending',
+    url: null,
+    error: null,
+    startedAt: Date.now(),
+    completedAt: null,
+    promise,
+  })
+
+  res.json({ taskId, status: 'started' })
+})
+
+// 报告预生成状态查询
+app.get('/api/report/pre-generate/status', requireCommerceAuth, (req, res) => {
+  const task = pregenTasks.get(req.commerceAuth.userId)
+  if (!task) {
+    return res.json({ status: 'not_found' })
+  }
+  res.json({
+    taskId: task.taskId,
+    status: task.status,
+    url: task.url || undefined,
+    error: task.error || undefined,
+  })
+})
+
 // 报告生成端点
 app.post('/api/report/generate', requireCommerceAuth, requireMembershipForReports, async (req, res) => {
-  const { userId, profile, questionnaire, assessments, conversationId } = req.body || {}
+  const { userId, profile, assessments, conversationId, skipExpansion } = req.body || {}
 
   const reportUserId = req.commerceAuth.userId || userId
 
-  const questionCount = QUESTIONNAIRE_ACTIVE_IDS.map(id => questionnaire?.[id])
-    .filter(v => v !== '' && !(Array.isArray(v) && v.length === 0)).length
-  const mbtiCompleted = Boolean(assessments?.mbti?.completed)
-  const hollandCompleted = Boolean(assessments?.holland?.completed)
-  if (questionCount < QUESTIONNAIRE_REQUIRED_COUNT || !mbtiCompleted || !hollandCompleted) {
-    return res.status(400).json({ error: '请先完成全部 3 项测评后再生成综合报告' })
+  if (!hasRequiredAssessmentResults(assessments)) {
+    return res.status(400).json({ error: '请先完成性格测试和霍兰德职业兴趣测试后再生成综合报告' })
   }
 
   const cooldownKey = `cooldown:report:${reportUserId}`
@@ -1037,13 +1322,54 @@ app.post('/api/report/generate', requireCommerceAuth, requireMembershipForReport
   }
 
   try {
+    // Check pre-generated report cache
+    const pregenTask = pregenTasks.get(reportUserId)
+    if (pregenTask) {
+      if (pregenTask.status === 'ready' && pregenTask.url) {
+        pregenTasks.delete(reportUserId)
+        // 设置冷却
+        if (redis) {
+          await redis.set(cooldownKey, '1', 'EX', Math.floor(REPORT_COOLDOWN_MS / 1000)).catch(e => {
+            console.error('Redis Cooldown Set Error:', e.message)
+          })
+        } else {
+          reportCooldowns.set(reportUserId, Date.now())
+        }
+        return res.json({ url: pregenTask.url, generatedAt: pregenTask.completedAt })
+      }
+      if (pregenTask.status === 'pending' && pregenTask.promise) {
+        try {
+          await Promise.race([
+            pregenTask.promise,
+            new Promise((_, reject) => setTimeout(() => reject(new Error('pregen_timeout')), 170000)),
+          ])
+          const resolved = pregenTasks.get(reportUserId)
+          if (resolved && resolved.status === 'ready' && resolved.url) {
+            pregenTasks.delete(reportUserId)
+            // 设置冷却
+            if (redis) {
+              await redis.set(cooldownKey, '1', 'EX', Math.floor(REPORT_COOLDOWN_MS / 1000)).catch(e => {
+                console.error('Redis Cooldown Set Error:', e.message)
+              })
+            } else {
+              reportCooldowns.set(reportUserId, Date.now())
+            }
+            return res.json({ url: resolved.url, generatedAt: resolved.completedAt })
+          }
+        } catch (e) {
+          // Pre-gen timed out or failed, fall through to normal generation
+        }
+      }
+      pregenTasks.delete(reportUserId)
+    }
+
     const html = await generateReport({
       profile: profile || {},
-      questionnaire: questionnaire || {},
       assessments: assessments || {},
       conversationId: conversationId || '',
       difyApiUrl: DIFY_API_URL,
       difyApiKey: DIFY_API_KEY,
+      skipExpansion: Boolean(skipExpansion),
     })
 
     const filename = await saveReport(reportUserId, html)
@@ -1066,7 +1392,6 @@ app.post('/api/report/generate', requireCommerceAuth, requireMembershipForReport
     try {
       draftId = await saveReportDraft(reportUserId, {
         profile: profile || {},
-        questionnaire: questionnaire || {},
         assessments: assessments || {},
         conversationId: conversationId || '',
         error: err.message || '报告生成失败',

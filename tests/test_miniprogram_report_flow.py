@@ -26,20 +26,46 @@ class MiniprogramReportFlowTests(unittest.TestCase):
     def test_report_generation_submits_stored_assessments_and_bearer_token(self):
         page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
         api = self.read("gaokao-miniprogram/src/api/report.js")
+        pregen = self.read("gaokao-miniprogram/src/api/pregenerate.js")
 
         for snippet in [
-            "const questionnaire = loadQuestionnaire()",
-            "const assessments = loadAssessments()",
+            "const assessments = buildReportAssessmentPayload()",
             "const chatHistory = loadHistory()",
-            "questionnaire: questionnaireAnswers",
             "assessments,",
+            "skipExpansion: true",
             "conversationId: chatHistory.conversationId || ''",
             "sessionToken: membershipStore.sessionToken",
         ]:
             self.assertIn(snippet, page)
 
+        self.assertNotIn("questionnaire: questionnaireAnswers", page)
+        self.assertNotIn("questionnaire,", api)
+        self.assertNotIn("questionnaire:", api)
+        self.assertNotIn("questionnaire,", pregen)
+        self.assertNotIn("questionnaire:", pregen)
         self.assertIn("Authorization: `Bearer ${sessionToken}`", api)
         self.assertIn("path: '/api/report/generate'", api)
+        self.assertIn("skipExpansion,", api)
+        self.assertIn("skipExpansion: Boolean(skipExpansion)", api)
+
+    def test_report_flow_uses_two_assessments_and_hides_five_ring_entry(self):
+        progress = self.read("gaokao-miniprogram/src/composables/useHomeProgress.js")
+        report_page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
+        index_page = self.read("gaokao-miniprogram/src/pages/index/index.vue")
+        assessments_page = self.read("gaokao-miniprogram/src/pages/assessments/assessments.vue")
+
+        self.assertIn("const ASSESSMENT_REQUIRED_COUNT = 2", progress)
+        self.assertIn("const step3Done = computed(() => step3Count.value === ASSESSMENT_REQUIRED_COUNT)", progress)
+        self.assertNotIn("if (questionnaireDone.value) n++", progress)
+        self.assertNotIn("if (!questionnaireDone.value) return 'questionnaire'", progress)
+
+        for text in [report_page, index_page, assessments_page]:
+            self.assertNotIn("五环特征综合评测", text)
+            self.assertNotIn("/pages/questionnaire/questionnaire", text)
+            self.assertNotIn("3 项测评", text)
+
+        self.assertIn("{{ completedAssessments }} / 2 项测评已完成", report_page)
+        self.assertIn("{{ completedCount }} / 2 项已完成", assessments_page)
 
     def test_major_insights_extractor_reads_courses_abilities_and_salary(self):
         script = textwrap.dedent(f"""
@@ -72,6 +98,23 @@ class MiniprogramReportFlowTests(unittest.TestCase):
             path = Path(tmp) / "major-insight-test.js"
             path.write_text(script, encoding="utf-8")
             subprocess.run(["node", str(path)], check=True, capture_output=True, text=True)
+
+    def test_normal_generation_path_has_progress_animation(self):
+        page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
+        # Both paths should activate the fake progress bar
+        self.assertIn("startSlowProgress()", page)
+        self.assertIn("function startSlowProgress", page)
+
+    def test_count_user_messages_uses_messages_array_directly(self):
+        progress = self.read("gaokao-miniprogram/src/composables/useHomeProgress.js")
+        # Should NOT use Object.values() iteration
+        self.assertNotIn("Object.values(history)", progress)
+        self.assertIn("history.messages", progress)
+
+    def test_report_page_handles_429_cooldown_gracefully(self):
+        page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
+        self.assertIn("err.statusCode === 429", page)
+        self.assertIn("isCooldown", page)
 
 
 if __name__ == "__main__":

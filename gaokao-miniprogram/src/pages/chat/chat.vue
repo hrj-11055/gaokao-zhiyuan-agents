@@ -1,72 +1,85 @@
 <template>
   <view class="chat-page">
-    <!-- 炫彩背景氛围粒子 -->
-    <view class="cyber-glow-bg-teal" />
-    <view class="cyber-glow-bg-purple" />
+    <view class="chat-glow chat-glow-blue" />
+    <view class="chat-glow chat-glow-purple" />
 
-    <!-- 对话区域 -->
     <scroll-view
       class="chat-scroll"
       scroll-y
       :scroll-top="scrollTop"
       :scroll-with-animation="true"
     >
-      <view class="profile-strip">
-        <view class="profile-strip-main">
-          <text class="profile-strip-label">当前咨询档案</text>
-          <text class="profile-strip-value">{{ profileSummary }}</text>
+      <view class="scroll-content">
+        <ChatBubble type="ai" :content="welcomeMsg" :show-actions="false" />
+
+        <view v-if="!isProfileReady" class="profile-gate">
+          <text class="profile-gate-title">先补全基础资料</text>
+          <text class="profile-gate-desc">省份、科类和分数会影响院校层次、专业建议和风险判断。</text>
+          <view class="profile-gate-btn" @click="goCompleteProfile">
+            <text class="profile-gate-btn-text">去填写资料</text>
+          </view>
         </view>
-        <text class="profile-strip-action" @click="goHome">修改</text>
-      </view>
 
-      <view v-if="!isProfileReady" class="profile-gate">
-        <view class="profile-gate-copy">
-          <text class="profile-gate-title">先补全核心档案</text>
-          <text class="profile-gate-desc">省份、科类和分数会直接影响院校范围判断。补齐后再开始咨询，回答会更可靠。</text>
-        </view>
-        <view class="profile-gate-btn" @click="goHome">
-          <text class="profile-gate-btn-text">去首页补全</text>
-        </view>
-      </view>
-
-      <!-- AI 欢迎语 -->
-      <ChatBubble type="ai" :content="welcomeMsg" />
-
-      <!-- 快捷问题（仅首次显示，发送第一条消息后隐藏） -->
-      <QuickQuestions v-if="messages.length === 0 && isProfileReady" :profile="profile" @select="onQuickSelect" />
-
-      <!-- 消息列表 -->
-      <template v-for="(msg, index) in messages" :key="index">
-        <view :id="`message-${index}`" class="message-anchor">
-          <ChatBubble
-            :type="msg.role"
-            :content="msg.content"
-            :messageId="msg.messageId"
-            :isStreaming="isStreaming && index === messages.length - 1 && msg.role === 'ai'"
-          />
-          <!-- 截断重试提示：AI 消息回复中途被截断时显示 -->
-          <view
-            v-if="msg.role === 'ai' && msg.truncated && index === messages.length - 1"
-            class="retry-bar"
-          >
-            <text class="retry-hint">这次回复不完整</text>
-            <view class="retry-btn" @click="handleRetry">
-              <text class="retry-btn-text">重新生成</text>
+        <view v-if="showWelcomeSuggestions" class="suggestion-panel">
+          <text class="suggestion-title">建议下一问</text>
+          <view class="suggestion-list">
+            <view
+              v-for="chip in quickQuestions"
+              :key="chip"
+              class="suggestion-chip"
+              @click="onQuickSelect(chip)"
+            >
+              <text class="suggestion-chip-text">{{ chip }}</text>
             </view>
           </view>
         </view>
-      </template>
 
-      <!-- 底部间距 -->
-      <view style="height: 48rpx;" />
+        <template v-for="(msg, index) in messages" :key="index">
+          <view :id="`message-${index}`" class="message-anchor">
+            <ChatBubble
+              :type="msg.role"
+              :content="msg.content"
+              :messageId="msg.messageId"
+              :canRegenerate="canRegenerateMessage(msg, index)"
+              :isStreaming="isStreaming && index === messages.length - 1 && msg.role === 'ai'"
+              @regenerate="handleRetry"
+            />
+
+            <view
+              v-if="msg.role === 'ai' && msg.truncated && index === messages.length - 1"
+              class="retry-bar"
+            >
+              <text class="retry-hint">这次回复不完整</text>
+              <view class="retry-btn" @click="handleRetry">
+                <text class="retry-btn-text">重新生成</text>
+              </view>
+            </view>
+
+            <view v-if="shouldShowSuggestionsAfterMessage(msg, index)" class="suggestion-panel after-message">
+              <text class="suggestion-title">建议下一问</text>
+              <view class="suggestion-list">
+                <view
+                  v-for="chip in quickQuestions"
+                  :key="chip"
+                  class="suggestion-chip"
+                  @click="onQuickSelect(chip)"
+                >
+                  <text class="suggestion-chip-text">{{ chip }}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </template>
+
+        <view class="scroll-bottom-space" />
+      </view>
     </scroll-view>
 
-    <!-- 底部悬浮输入栏 -->
     <view class="input-bar">
       <input
         class="input-field"
         v-model="inputText"
-        :placeholder="chatInputPlaceholder"
+        :placeholder="inputPlaceholder"
         placeholder-class="input-placeholder"
         :disabled="isStreaming || !isProfileReady"
         confirm-type="send"
@@ -74,7 +87,7 @@
       />
       <view
         class="send-btn"
-        :class="{ 'send-btn-active': inputText.trim() && !isStreaming && isProfileReady }"
+        :class="{ active: inputText.trim() && !isStreaming && isProfileReady }"
         @click="handleSend"
       >
         <text class="send-icon">↑</text>
@@ -87,36 +100,29 @@
 import { ref, computed, nextTick } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import ChatBubble from '../../components/ChatBubble.vue'
-import QuickQuestions from '../../components/QuickQuestions.vue'
 import { useChat } from './useChat.js'
 import { isProfileComplete, loadUserProfile } from '../../utils/storage.js'
+import { buildCandidateQuestions } from './profileFollowup.js'
 
-const welcomeMsg = '你好，我会结合你的省份、科类和分数来回答。可以直接问院校范围、专业取舍、冲稳保思路，结果仅供志愿填报参考。'
+const welcomeMsg = '你不用先想出一个完美问题。我们先把分数、位次、专业方向和现实约束拆开看；我会尽量用分数线说话，也会直接提醒不值得赌的地方。'
 
 const scrollTop = ref(0)
 const profile = ref(loadUserProfile())
 const { chatStore, inputText, isStreaming, onSend, onRetry } = useChat()
 const messages = computed(() => chatStore.messages)
 const isProfileReady = computed(() => isProfileComplete(profile.value))
-const chatInputPlaceholder = computed(() =>
-  isProfileReady.value ? '向 AI 咨询师提问（如：物理580能上什么大学）...' : '请先补全省份、科类和分数'
-)
-const profileSummary = computed(() => {
-  const parts = []
-  if (profile.value.province) parts.push(profile.value.province)
-  if (profile.value.category) parts.push(profile.value.category)
-  if (profile.value.score) parts.push(`${profile.value.score}分`)
-  if (profile.value.rank) parts.push(`位次${profile.value.rank}`)
-  return parts.length ? parts.join(' · ') : '未填写基础信息，建议先回首页补全'
-})
+const quickQuestions = computed(() => buildCandidateQuestions(profile.value))
+const showWelcomeSuggestions = computed(() => messages.value.length === 0 && isProfileReady.value)
+const inputPlaceholder = computed(() => (
+  isProfileReady.value ? '写下你的纠结，或直接选上面的处境...' : '请先补全省份、科类和分数'
+))
+const hasUserMessage = computed(() => messages.value.some((msg) => msg.role === 'user'))
 
-// 页面显示时恢复历史
 onShow(() => {
   profile.value = loadUserProfile()
   chatStore.loadHistory()
 })
 
-// 滚动到底部
 function scrollToBottom() {
   nextTick(() => {
     scrollTop.value = scrollTop.value === 0 ? 1 : 0
@@ -145,14 +151,16 @@ function focusUserMessage(index) {
   })
 }
 
-// 快捷问题点击
-const onQuickSelect = (question) => {
+function onQuickSelect(question) {
+  if (!isProfileReady.value) {
+    goCompleteProfile()
+    return
+  }
   inputText.value = question
   handleSend()
 }
 
-// 代理回调
-const handleSend = () => {
+function handleSend() {
   if (!isProfileReady.value) {
     uni.showToast({ title: '请先补全省份、科类和分数', icon: 'none' })
     return
@@ -166,19 +174,40 @@ const handleSend = () => {
     },
   })
 }
-const handleRetry = () => onRetry({
-  onScrollToBottom: scrollToBottom,
-  onUserMessageAppended: focusUserMessage,
-  onAiResponseStarted: () => {},
-  onProfileUpdated: (updatedProfile) => {
-    profile.value = updatedProfile
-  },
-})
 
-function goHome() {
+function goCompleteProfile() {
   uni.switchTab({ url: '/pages/index/index' })
+  setTimeout(() => uni.$emit('open-profile-sheet'), 200)
 }
 
+function handleRetry() {
+  onRetry({
+    onScrollToBottom: scrollToBottom,
+    onUserMessageAppended: focusUserMessage,
+    onAiResponseStarted: () => {},
+    onProfileUpdated: (updatedProfile) => {
+      profile.value = updatedProfile
+    },
+  })
+}
+
+function canRegenerateMessage(msg, index) {
+  return Boolean(
+    msg.role === 'ai' &&
+    msg.canRegenerate &&
+    index === messages.value.length - 1 &&
+    hasUserMessage.value &&
+    !isStreaming.value
+  )
+}
+
+function shouldShowSuggestionsAfterMessage(msg, index) {
+  return Boolean(
+    msg.role === 'ai' &&
+    index === messages.value.length - 1 &&
+    !isStreaming.value
+  )
+}
 </script>
 
 <style lang="scss">
@@ -194,224 +223,227 @@ page {
   flex-direction: column;
   height: 100%;
   min-height: 0;
-  background: linear-gradient(180deg, #E0F2FE 0%, #F3E8FF 100%);
   position: relative;
   overflow: hidden;
+  background: linear-gradient(180deg, #e4f4ff 0%, #f3ecff 100%);
 }
 
-.cyber-glow-bg-teal {
+.chat-glow {
   position: absolute;
-  width: 600rpx;
-  height: 600rpx;
-  background: radial-gradient(circle, rgba(45, 212, 191, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
-  top: -100rpx;
-  left: -150rpx;
+  width: 620rpx;
+  height: 620rpx;
+  border-radius: 50%;
   pointer-events: none;
+  filter: blur(2rpx);
 }
-.cyber-glow-bg-purple {
-  position: absolute;
-  width: 600rpx;
-  height: 600rpx;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
-  bottom: 100rpx;
-  right: -150rpx;
-  pointer-events: none;
+
+.chat-glow-blue {
+  top: -140rpx;
+  left: -170rpx;
+  background: radial-gradient(circle, rgba(45, 212, 191, 0.2) 0%, rgba(255, 255, 255, 0) 68%);
+}
+
+.chat-glow-purple {
+  right: -170rpx;
+  bottom: 180rpx;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.17) 0%, rgba(255, 255, 255, 0) 68%);
 }
 
 .chat-scroll {
   flex: 1;
   height: 0;
   min-height: 0;
-  padding-top: 24rpx;
   box-sizing: border-box;
-  z-index: 10;
+  z-index: 2;
+}
+
+.scroll-content {
+  padding: 28rpx 0 0;
 }
 
 .message-anchor {
   position: relative;
 }
 
-.profile-strip {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20rpx;
-  margin: 0 32rpx 24rpx;
-  padding: 22rpx 26rpx;
-  border-radius: $radius-lg;
-  background: rgba(255, 255, 255, 0.94);
-  border: 1px solid $border-light;
-  box-shadow: 0 8rpx 28rpx rgba(15, 23, 42, 0.06);
-}
-
-.profile-strip-main {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-}
-
-.profile-strip-label {
-  font-size: 22rpx;
-  color: $text-muted;
-  margin-bottom: 6rpx;
-}
-
-.profile-strip-value {
-  font-size: 27rpx;
-  color: $text-primary;
-  font-weight: 700;
-  line-height: 1.35;
-}
-
-.profile-strip-action {
-  flex-shrink: 0;
-  color: $brand-violet;
-  font-size: 25rpx;
-  font-weight: 700;
-}
-
 .profile-gate {
-  margin: 0 32rpx 24rpx;
-  padding: 26rpx;
-  border-radius: $radius-lg;
-  background: #FFF7ED;
-  border: 1px solid rgba(249, 115, 22, 0.22);
-  display: flex;
-  flex-direction: column;
-  gap: 22rpx;
-  z-index: 10;
-}
-
-.profile-gate-copy {
-  display: flex;
-  flex-direction: column;
-  gap: 8rpx;
+  margin: -8rpx 32rpx 30rpx 128rpx;
+  padding: 24rpx;
+  border-radius: 18rpx;
+  background: rgba(255, 255, 255, 0.78);
+  border: 2rpx solid rgba(255, 255, 255, 0.82);
+  box-shadow: 0 10rpx 28rpx rgba(15, 23, 42, 0.05);
+  box-sizing: border-box;
 }
 
 .profile-gate-title {
-  font-size: 29rpx;
+  display: block;
+  color: #1f2937;
+  font-size: 28rpx;
   font-weight: 800;
-  color: $text-primary;
+  margin-bottom: 8rpx;
 }
 
 .profile-gate-desc {
+  display: block;
+  color: #64748b;
   font-size: 24rpx;
-  color: $text-secondary;
   line-height: 1.5;
+  margin-bottom: 18rpx;
 }
 
 .profile-gate-btn {
-  height: 72rpx;
-  border-radius: $radius-full;
-  background: $grad-accent;
+  height: 68rpx;
+  border-radius: 14rpx;
+  background: #2563eb;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .profile-gate-btn-text {
-  color: #fff;
-  font-size: 27rpx;
+  color: #ffffff;
+  font-size: 26rpx;
   font-weight: 800;
 }
 
-.input-bar {
+.suggestion-panel {
+  margin: -12rpx 32rpx 30rpx 128rpx;
+  padding: 18rpx 20rpx 20rpx;
+  border-radius: 18rpx;
+  background: rgba(255, 255, 255, 0.72);
+  border: 2rpx solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10rpx 28rpx rgba(15, 23, 42, 0.05);
+  box-sizing: border-box;
+}
+
+.suggestion-panel.after-message {
+  margin-top: -18rpx;
+}
+
+.suggestion-title {
+  display: block;
+  margin-bottom: 14rpx;
+  color: #8a94a6;
+  font-size: 22rpx;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.suggestion-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.suggestion-chip {
+  max-width: 100%;
+  border-radius: 999rpx;
+  padding: 10rpx 18rpx;
+  background: rgba(255, 255, 255, 0.86);
+  border: 2rpx solid rgba(37, 99, 235, 0.12);
+  box-sizing: border-box;
+}
+
+.suggestion-chip:active {
+  background: rgba(255, 247, 237, 0.95);
+  border-color: rgba(249, 115, 22, 0.28);
+}
+
+.suggestion-chip-text {
+  color: #4b5563;
+  font-size: 23rpx;
+  line-height: 1.35;
+}
+
+.retry-bar {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
+  gap: 18rpx;
+  padding: 0 32rpx 26rpx 128rpx;
+  box-sizing: border-box;
+}
+
+.retry-hint {
+  color: #8a94a6;
+  font-size: 23rpx;
+}
+
+.retry-btn {
+  height: 50rpx;
+  padding: 0 24rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid rgba(249, 115, 22, 0.22);
+  background: rgba(255, 247, 237, 0.78);
+  display: flex;
+  align-items: center;
+}
+
+.retry-btn-text {
+  color: #f97316;
+  font-size: 23rpx;
+  font-weight: 700;
+}
+
+.scroll-bottom-space {
+  height: 40rpx;
+}
+
+.input-bar {
+  z-index: 4;
+  display: flex;
+  align-items: center;
   gap: 20rpx;
   padding: 24rpx 32rpx;
   padding-bottom: calc(24rpx + env(safe-area-inset-bottom));
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-top: 1px solid rgba(15, 23, 42, 0.08);
-  z-index: 20;
-  box-shadow: 0 -12rpx 48rpx rgba(15, 23, 42, 0.04);
+  background: #ffffff;
+  border-top: 2rpx solid rgba(15, 23, 42, 0.06);
+  box-sizing: border-box;
 }
 
 .input-field {
   flex: 1;
-  background: rgba(241, 245, 249, 0.9);
-  border: 1px solid rgba(15, 23, 42, 0.06);
-  border-radius: $radius-full;
-  padding: 20rpx 36rpx;
+  min-width: 0;
+  height: 78rpx;
+  padding: 0 32rpx;
+  border-radius: 999rpx;
+  background: #f1f5f9;
+  color: #111827;
   font-size: 28rpx;
-  color: $text-primary;
-  transition: all 0.2s;
-
-  &:focus {
-    border-color: rgba(37, 99, 235, 0.25);
-    background: #fff;
-  }
+  box-sizing: border-box;
+  border: 2rpx solid #e2e8f0;
 }
 
 .input-placeholder {
-  color: $text-muted;
+  color: #8a94a6;
 }
 
 .send-btn {
-  width: 80rpx;
-  height: 80rpx;
-  background: #F1F5F9;
-  border: 1px solid $border-light;
+  width: 78rpx;
+  height: 78rpx;
   border-radius: 50%;
+  background: #f1f5f9;
+  border: 2rpx solid #e2e8f0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: all 0.2s;
-
-  &:active {
-    transform: scale(0.95);
-  }
+  box-sizing: border-box;
 }
 
-.send-btn-active {
-  background: $grad-accent;
-  border: none;
-  box-shadow: 0 8rpx 20rpx rgba(249, 115, 22, 0.24);
+.send-btn.active {
+  background: #f97316;
+  border-color: #f97316;
+  box-shadow: 0 8rpx 18rpx rgba(249, 115, 22, 0.22);
 }
 
 .send-icon {
-  color: $text-muted;
-  font-size: 38rpx;
-  font-weight: 900;
+  color: #9ca3af;
+  font-size: 40rpx;
+  line-height: 1;
+  font-weight: 800;
 }
 
-.send-btn-active .send-icon {
-  color: #fff;
-}
-
-// 重新生成提示条
-.retry-bar {
-  display: flex;
-  align-items: center;
-  gap: 20rpx;
-  padding: 8rpx 36rpx 24rpx;
-  z-index: 10;
-}
-
-.retry-hint {
-  font-size: 23rpx;
-  color: $text-muted;
-}
-
-.retry-btn {
-  background: #FFF7ED;
-  border: 1px solid rgba(255, 107, 0, 0.3);
-  padding: 8rpx 24rpx;
-  border-radius: $radius-full;
-  transition: all 0.2s;
-
-  &:active {
-    background: rgba(255, 107, 0, 0.1);
-  }
-}
-
-.retry-btn-text {
-  font-size: 22rpx;
-  color: $brand-primary;
-  font-weight: 700;
+.send-btn.active .send-icon {
+  color: #ffffff;
 }
 </style>

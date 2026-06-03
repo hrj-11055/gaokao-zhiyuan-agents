@@ -15,3 +15,4 @@ export const PDF_DOWNLOAD_ENABLED = import.meta.env.VITE_PDF_DOWNLOAD_ENABLED ==
 export const WECHAT_LOGIN_MOCK = import.meta.env.VITE_WECHAT_LOGIN_MOCK === 'true'
 export const MEMBERSHIP_PRICE_LABEL = import.meta.env.VITE_MEMBERSHIP_PRICE_LABEL || '¥19.9'
 export const CUSTOMER_WECHAT_ID = import.meta.env.VITE_CUSTOMER_WECHAT_ID || 'HRJ-11055'
+export const CUSTOMER_WECHAT_QR_IMAGE = import.meta.env.VITE_CUSTOMER_WECHAT_QR_IMAGE || '/static/contact/wechat-qr.png'

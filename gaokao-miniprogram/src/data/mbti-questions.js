@@ -658,6 +658,8 @@ export const MBTI_TYPE_DESCRIPTIONS = {
   }
 };
 
+export const MBTI_RESULT_REPORTS = MBTI_TYPE_DESCRIPTIONS;
+
 /**
  * 计算 MBTI 类型
  * @param {Object} answers - 答案对象，key 为 questionId，value 为 选项索引 (0 或 1)
@@ -700,5 +702,5 @@ export function calculateMbtiType(answers) {
  * @returns {Object} - { careers: [], majors: [], ...typeInfo }
  */
 export function getMbtiRecommendations(type) {
-  return MBTI_TYPE_DESCRIPTIONS[type] || null;
+  return MBTI_RESULT_REPORTS[type] || null;
 }

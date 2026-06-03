@@ -77,6 +77,16 @@ class MiniProgramMarkdownTests(unittest.TestCase):
             )
         """)
 
+    def test_agent_markdown_headings_lists_and_bold_render_as_rich_text_html(self):
+        self.run_node_test("""
+            const html = markdownToRichTextHtml('## 结论\\n- **冲**：A大学\\n- **稳**：B大学')
+
+            assert.match(html, /font-size: 33rpx/)
+            assert.match(html, /<ul/)
+            assert.match(html, /<strong style="font-weight: 700;">冲<\\/strong>/)
+            assert.match(html, /<strong style="font-weight: 700;">稳<\\/strong>/)
+        """)
+
 
 if __name__ == "__main__":
     unittest.main()

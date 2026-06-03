@@ -96,6 +96,11 @@
 import { ref, computed } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import { saveQuestionnaire, loadQuestionnaire } from '../../utils/storage.js'
+import { useReportPregen } from '../../composables/useReportPregen.js'
+import { useHomeProgress } from '../../composables/useHomeProgress.js'
+
+const { tryTriggerPregenerate } = useReportPregen()
+const { mbtiDone, hollandDone, refresh: refreshProgress } = useHomeProgress()
 
 const QUESTIONS = [
   { id: 'q1', ring: 1, ringName: '第一', ringDisplayName: '学习风格', type: 'single',
@@ -292,14 +297,44 @@ function finishQuestionnaire() {
     return
   }
 
-  uni.showToast({
-    title: '五环测评已完成',
-    icon: 'success',
-    duration: 500
-  })
-  setTimeout(() => {
-    uni.switchTab({ url: '/pages/assessments/assessments' })
-  }, 500)
+  // Trigger background pre-generation task
+  tryTriggerPregenerate()
+
+  // Refresh and check next uncompleted assessments
+  refreshProgress()
+
+  if (!mbtiDone.value) {
+    uni.showToast({
+      title: '问卷完成，开始性格测试！',
+      icon: 'success',
+      duration: 1500
+    })
+    setTimeout(() => {
+      uni.redirectTo({
+        url: '/pages/mbti/mbti'
+      })
+    }, 1500)
+  } else if (!hollandDone.value) {
+    uni.showToast({
+      title: '问卷完成，开始职业兴趣测试！',
+      icon: 'success',
+      duration: 1500
+    })
+    setTimeout(() => {
+      uni.redirectTo({
+        url: '/pages/holland/holland'
+      })
+    }, 1500)
+  } else {
+    uni.showToast({
+      title: '全部测评已完成！',
+      icon: 'success',
+      duration: 1500
+    })
+    setTimeout(() => {
+      uni.navigateBack()
+    }, 1500)
+  }
 }
 </script>
 

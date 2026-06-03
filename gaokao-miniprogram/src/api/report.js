@@ -15,11 +15,11 @@ function normalizeReportError(err) {
  */
 export async function generateReport({
   profile,
-  questionnaire,
   assessments,
   conversationId,
   userId,
   sessionToken,
+  skipExpansion,
 }) {
   try {
     const data = await requestBackendData({
@@ -28,15 +28,15 @@ export async function generateReport({
       data: {
         userId,
         profile,
-        questionnaire: questionnaire || {},
         assessments: assessments || {},
         conversationId: conversationId || '',
+        skipExpansion: Boolean(skipExpansion),
       },
       header: {
         'Content-Type': 'application/json',
         ...(sessionToken ? { Authorization: `Bearer ${sessionToken}` } : {}),
       },
-      timeout: 180000,
+      timeout: 300000,
     })
     return data
   } catch (err) {

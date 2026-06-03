@@ -14,7 +14,7 @@ def require_env(name):
     return value
 
 
-DIFY_BASE = os.environ.get("DIFY_BASE", "http://8.135.37.159:8080")
+DIFY_BASE = os.environ.get("DIFY_BASE", "http://159.75.110.157")
 # Dify Console 登录凭据
 EMAIL = require_env("DIFY_EMAIL")
 PASSWORD = require_env("DIFY_PASSWORD")

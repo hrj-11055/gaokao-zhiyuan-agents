@@ -11,22 +11,43 @@
         <view class="empty-icon">📋</view>
       </view>
       <text class="empty-title">尚未完成测评</text>
-      <text class="empty-desc">请先完成 MBTI 性格测试</text>
+      <text class="empty-desc">请先完成性格测试</text>
       <button class="primary-btn" @click="goBack">前往测试</button>
     </view>
 
     <!-- 结果内容 -->
     <view v-else class="result-content">
+      <view class="report-meta-card">
+        <view class="student-avatar">
+          <text class="student-avatar-text">峰</text>
+        </view>
+        <view class="student-meta">
+          <text class="student-id">{{ studentLabel }}</text>
+          <text class="student-date">{{ resultDate }}</text>
+        </view>
+        <view class="student-stats">
+          <text class="student-stat-label">用时</text>
+          <text class="student-stat-value">{{ durationLabel }}</text>
+        </view>
+      </view>
+
       <!-- 结果头部 - 渐变背景 -->
       <view class="result-header">
         <view class="header-glow" />
         <view v-if="resultVersion" class="version-label" :class="resultVersion">
           <text class="version-label-text">{{ resultVersion === 'basic' ? '⚡ 精简版测评' : '🔬 完整版测评' }}</text>
         </view>
-        <view class="type-badge-wrap">
-          <view class="type-badge">{{ result.type }}</view>
+        <text class="result-kicker">您的性格类型是：</text>
+        <view class="type-identity">
+          <view class="type-badge-wrap">
+            <view class="type-badge">{{ result.type }}</view>
+          </view>
+          <view class="type-copy">
+            <text class="type-name">{{ typeInfo?.name || '' }}</text>
+            <text class="type-subtitle">{{ typeSubtitle }}</text>
+          </view>
         </view>
-        <text class="type-name">{{ typeInfo?.name || '' }}</text>
+        <text class="type-summary">{{ typeSummary }}</text>
         <view class="type-tags">
           <text v-for="(tag, index) in typeInfo?.tags" :key="index" class="tag">{{ tag }}</text>
         </view>
@@ -70,17 +91,32 @@
             </view>
           </view>
         </view>
+        <view class="axis-notes">
+          <view v-for="item in dimensionInterpretations" :key="item.key" class="axis-note">
+            <view class="axis-dot" />
+            <text class="axis-note-text">{{ item.label }}：{{ item.text }}</text>
+          </view>
+        </view>
       </view>
 
       <!-- 性格特征 -->
-      <view class="section">
+      <view class="section feature-section">
         <view class="section-header">
           <view class="section-title-wrap">
             <view class="title-dot" />
-            <text class="section-title">性格特征</text>
+            <text class="section-title">具体性格特征</text>
           </view>
         </view>
-        <view class="traits-list">
+        <view class="feature-blocks">
+          <view v-for="section in featureSections" :key="section.title" class="feature-block">
+            <view class="feature-icon">{{ section.icon }}</view>
+            <view class="feature-copy">
+              <text class="feature-title">{{ section.title }}</text>
+              <text v-for="(item, index) in section.items" :key="index" class="feature-text">{{ index + 1 }}. {{ item }}</text>
+            </view>
+          </view>
+        </view>
+        <view class="traits-list compact">
           <view v-for="(trait, index) in typeInfo?.traits" :key="index" class="trait-item">
             <view class="trait-bullet-outer">
               <view class="trait-bullet" />
@@ -95,7 +131,7 @@
         <view class="section-header">
           <view class="section-title-wrap">
             <view class="title-dot" />
-            <text class="section-title">适合关注的职业方向</text>
+            <text class="section-title">典型职业方向</text>
           </view>
         </view>
         <view class="careers-grid">
@@ -110,8 +146,9 @@
         <view class="section-header">
           <view class="section-title-wrap">
             <view class="title-dot" />
-            <text class="section-title">可优先了解的专业</text>
+            <text class="section-title">专业推荐</text>
           </view>
+          <text class="section-subtitle">先看课程内容是否喜欢，再看院校和就业路径。</text>
         </view>
         <view class="majors-list">
           <view v-for="(major, index) in majorCards" :key="major.name" class="major-card" @click="viewMajorDetail(major.name)">
@@ -121,7 +158,7 @@
                 <text v-for="s in 5" :key="s" class="star-char" :class="{ filled: s <= (5 - Math.floor(index / 2)) }">★</text>
               </view>
             </view>
-            <text class="major-desc">{{ major.insight?.summary || getMajorDesc(major.name) }}</text>
+            <text class="major-desc">{{ major.insight.summary }}</text>
             <view v-if="major.insight" class="major-insights">
               <view class="major-insight-row">
                 <text class="major-insight-label">核心课程</text>
@@ -147,9 +184,14 @@
       <!-- 底部操作区域 -->
       <view class="footer-bar">
         <view class="footer-blur" />
-        <view class="footer-btns">
-          <button v-if="resultVersion === 'basic'" class="upgrade-btn" @click="handleUpgrade">🔬 升级到完整版 (48题)</button>
-          <button class="retry-btn" @click="handleRetry">重新测试</button>
+        <view class="footer-inner">
+          <text class="footer-progress">已完成 {{ resultVersion === 'basic' ? '精简版' : '完整版' }}性格测试 · {{ questionCount }}题</text>
+          <button v-if="resultVersion === 'basic' && !isSharedResult" class="upgrade-btn" @click="handleUpgrade">🔬 升级到完整版 (48题)</button>
+          <view class="footer-btns">
+            <button class="share-report-btn" open-type="share" data-share-kind="report">分享报告</button>
+            <button class="share-test-btn" open-type="share" data-share-kind="test">分享测试</button>
+          </view>
+          <button v-if="!isSharedResult" class="retry-link" @click="handleRetry">重新测试</button>
         </view>
       </view>
     </view>
@@ -161,8 +203,8 @@
           <view class="modal-warning-glow" />
           <view class="modal-icon">⚠️</view>
         </view>
-        <text class="modal-title">重新进行 MBTI 测试？</text>
-        <text class="modal-desc">重新测试会清除当前 MBTI 结果和答题进度，确认后需要重新作答。</text>
+        <text class="modal-title">重新进行性格测试？</text>
+        <text class="modal-desc">重新测试会清除当前性格测试结果和答题进度，确认后需要重新作答。</text>
         <view class="modal-actions">
           <button class="modal-btn cancel" @click="closeModal">取消返回</button>
           <button class="modal-btn confirm" @click="confirmRetry">确认重置</button>
@@ -174,15 +216,21 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { onShow } from '@dcloudio/uni-app'
-import { loadAssessments, saveAssessments } from '../../utils/storage.js'
-import { MBTI_TYPE_DESCRIPTIONS } from '../../data/mbti-questions.js'
+import { onLoad, onShow, onShareAppMessage, onShareTimeline } from '@dcloudio/uni-app'
+import { getUserId, loadAssessments, saveAssessments } from '../../utils/storage.js'
+import { MBTI_RESULT_REPORTS } from '../../data/mbti-questions.js'
 import { fetchMajorInsights } from '../../api/majorInsights.js'
+import { buildMajorCards, normalizeMajorName } from '../../data/major-learning-profiles.js'
+import { useReportPregen } from '../../composables/useReportPregen.js'
+
+const { tryTriggerPregenerate } = useReportPregen()
 
 const result = ref(null)
 const resultVersion = ref('')
 const showConfirmModal = ref(false)
 const majorInsights = ref({})
+const localUserId = ref('')
+const isSharedResult = ref(false)
 
 // 维度配置
 const dimensions = {
@@ -192,26 +240,155 @@ const dimensions = {
   JP: { left: 'J', right: 'P', leftLabel: '判断 (J)', rightLabel: '感知 (P)' }
 }
 
+const AXIS_LABELS = {
+  E: '外向',
+  I: '内向',
+  S: '实感',
+  N: '直觉',
+  T: '思考',
+  F: '情感',
+  J: '判断',
+  P: '感知',
+}
+
+const DIMENSION_EXPLANATIONS = {
+  E: { key: 'E', label: '外向-E（精力来源）', text: '更容易在交流、讨论和真实互动中被激活，适合有反馈的学习环境。' },
+  I: { key: 'I', label: '内向-I（精力来源）', text: '更喜欢独处整理思路，在安静、可控的环境中更容易进入深度学习。' },
+  S: { key: 'S', label: '实感-S（信息搜集）', text: '偏好具体事实、现实案例和可操作步骤，课程越落地越容易有成就感。' },
+  N: { key: 'N', label: '直觉-N（信息搜集）', text: '偏好概念框架、趋势判断和可能性探索，适合有想象空间的学科。' },
+  T: { key: 'T', label: '思考-T（决策方式）', text: '做决定时更看重逻辑、公平和客观标准，适合规则清晰、推理密集的训练。' },
+  F: { key: 'F', label: '情感-F（决策方式）', text: '做决定时会纳入价值感、关系和他人感受，适合人与服务场景更强的方向。' },
+  J: { key: 'J', label: '判断-J（生活态度）', text: '偏好计划、确定性和阶段目标，适合路径清晰、进度可控的学习方式。' },
+  P: { key: 'P', label: '感知-P（生活态度）', text: '偏好弹性、探索和临场调整，适合项目制、实践型和变化更快的场景。' },
+}
+
+const FEATURE_COPY = {
+  E: {
+    life: '从人群互动中恢复能量，适合多表达、多讨论、多展示的成长方式。',
+    work: '更容易在协作、沟通、销售、组织和公开表达场景里被看见。',
+  },
+  I: {
+    life: '需要稳定的独处时间恢复能量，陌生环境里通常先观察再投入。',
+    work: '适合需要专注、独立判断、深度研究或持续打磨的任务。',
+  },
+  S: {
+    learning: '喜欢课程有明确案例、实操步骤和可验证结果，实验、工程、护理、运营类训练会更有抓手。',
+    work: '擅长把抽象要求落到流程、细节和真实问题上。',
+  },
+  N: {
+    learning: '喜欢先理解框架和意义，再去吸收细节；理论、创意、策略和研究型课程更容易激发兴趣。',
+    work: '擅长发现趋势、提出新方案和连接不同领域的信息。',
+  },
+  T: {
+    learning: '会自然追问“证据是什么、逻辑是否成立”，适合结构严密、评价标准清楚的学科。',
+    work: '面对分歧时倾向先看规则和事实，适合分析、技术、法律、金融等需要客观判断的岗位。',
+  },
+  F: {
+    learning: '学习时会重视价值感和人的体验，能从真实个案、服务对象和社会意义中获得动力。',
+    work: '适合教育、咨询、传播、公共服务等需要同理心和关系经营的方向。',
+  },
+  J: {
+    life: '喜欢提前规划、按阶段推进，考试、证书和长期培养路径越清楚越能坚持。',
+    work: '适合目标明确、职责边界清晰、需要统筹和执行力的岗位。',
+  },
+  P: {
+    life: '喜欢保留选择空间，面对变化不容易慌，适合边做边优化的学习节奏。',
+    work: '适合现场问题处理、创意迭代、产品探索和需要快速应变的工作。',
+  },
+}
+
 // 类型信息
 const typeInfo = computed(() => {
   if (!result.value?.type) return null
-  return MBTI_TYPE_DESCRIPTIONS[result.value.type] || null
+  return MBTI_RESULT_REPORTS[result.value.type] || null
 })
 
+const dominantAxes = computed(() => ({
+  energy: getDominantKey('E', 'I'),
+  information: getDominantKey('S', 'N'),
+  decision: getDominantKey('T', 'F'),
+  lifestyle: getDominantKey('J', 'P'),
+}))
+
+const typeSubtitle = computed(() => {
+  const keys = Object.values(dominantAxes.value).filter(Boolean)
+  return keys.map((key) => AXIS_LABELS[key]).join(' · ')
+})
+
+const typeSummary = computed(() => {
+  const traits = typeInfo.value?.traits || []
+  if (traits.length === 0) return '这份结果用于判断学习方式、专业课程和未来职业场景是否匹配。'
+  return `${traits.slice(0, 2).join('，')}。建议把它作为选专业时的性格参考，而不是唯一结论。`
+})
+
+const dimensionInterpretations = computed(() => (
+  Object.values(dominantAxes.value)
+    .map((key) => DIMENSION_EXPLANATIONS[key])
+    .filter(Boolean)
+))
+
+const featureSections = computed(() => {
+  const axes = dominantAxes.value
+  return [
+    {
+      icon: '学',
+      title: '学习偏好上',
+      items: [
+        FEATURE_COPY[axes.information]?.learning,
+        FEATURE_COPY[axes.decision]?.learning,
+      ].filter(Boolean),
+    },
+    {
+      icon: '生',
+      title: '生活偏好上',
+      items: [
+        FEATURE_COPY[axes.energy]?.life,
+        FEATURE_COPY[axes.lifestyle]?.life,
+      ].filter(Boolean),
+    },
+    {
+      icon: '职',
+      title: '工作偏好上',
+      items: [
+        FEATURE_COPY[axes.decision]?.work,
+        FEATURE_COPY[axes.information]?.work,
+        FEATURE_COPY[axes.energy]?.work,
+        FEATURE_COPY[axes.lifestyle]?.work,
+      ].filter(Boolean).slice(0, 3),
+    },
+  ]
+})
+
+const shortUserId = computed(() => {
+  const raw = localUserId.value || 'SHARED'
+  return raw.replace(/^user_/, '').slice(0, 8).toUpperCase()
+})
+
+const studentLabel = computed(() => (isSharedResult.value ? '分享报告' : `学籍 ${shortUserId.value}`))
+
+const resultDate = computed(() => formatDate(result.value?.completedAt || Date.now()))
+
+const questionCount = computed(() => (resultVersion.value === 'basic' ? 16 : 48))
+
+const durationLabel = computed(() => (resultVersion.value === 'basic' ? '约3分钟' : '约10分钟'))
+
+const recommendedMajorNames = computed(() => (
+  buildMajorCards(typeInfo.value?.majors || []).map((major) => major.name)
+))
+
 const majorCards = computed(() => {
-  return (typeInfo.value?.majors || []).map((name) => ({
-    name,
-    insight: majorInsights.value[name] || null,
-  }))
+  return buildMajorCards(typeInfo.value?.majors || [], majorInsights.value)
 })
 
 // 加载结果
 function loadResult() {
+  localUserId.value = getUserId()
   const assessments = loadAssessments()
   if (assessments.mbti?.completed) {
     result.value = {
       type: assessments.mbti.type,
-      scores: assessments.mbti.scores
+      scores: assessments.mbti.scores,
+      completedAt: assessments.mbti.completedAt || Date.now(),
     }
     resultVersion.value = assessments.mbti.version || 'full'
   } else {
@@ -221,7 +398,7 @@ function loadResult() {
 }
 
 async function loadMajorInsightsForResult() {
-  const names = typeInfo.value?.majors || []
+  const names = recommendedMajorNames.value
   if (names.length === 0) {
     majorInsights.value = {}
     return
@@ -230,7 +407,10 @@ async function loadMajorInsightsForResult() {
   try {
     const insights = await fetchMajorInsights(names)
     majorInsights.value = Object.fromEntries(
-      insights.map((item) => [item.requestedName || item.name, item])
+      insights.flatMap((item) => [
+        [normalizeMajorName(item.requestedName || item.name), item],
+        [normalizeMajorName(item.name), item],
+      ])
     )
   } catch {
     majorInsights.value = {}
@@ -238,7 +418,70 @@ async function loadMajorInsightsForResult() {
 }
 
 function formatList(items = []) {
-  return items.slice(0, 4).join('、')
+  return items.slice(0, 6).join('、')
+}
+
+function getDominantKey(leftKey, rightKey) {
+  if (!result.value?.scores) return leftKey
+  return (result.value.scores[leftKey] || 0) >= (result.value.scores[rightKey] || 0) ? leftKey : rightKey
+}
+
+function formatDate(timestamp) {
+  const date = new Date(timestamp || Date.now())
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+  return `${year}.${month}.${day}`
+}
+
+function encodeScores(scores = {}) {
+  return ['E', 'I', 'S', 'N', 'T', 'F', 'J', 'P']
+    .map((key) => `${key}${Number(scores[key]) || 0}`)
+    .join('-')
+}
+
+function decodeScores(raw = '') {
+  const scores = { E: 0, I: 0, S: 0, N: 0, T: 0, F: 0, J: 0, P: 0 }
+  String(raw || '').split('-').forEach((item) => {
+    const match = item.match(/^([EISNTFJP])(\d+)$/)
+    if (match) scores[match[1]] = Number(match[2]) || 0
+  })
+  return scores
+}
+
+function safeDecode(value = '') {
+  try {
+    return decodeURIComponent(value)
+  } catch {
+    return String(value || '')
+  }
+}
+
+function loadSharedResult(options = {}) {
+  const type = String(options.type || '').toUpperCase()
+  if (!MBTI_RESULT_REPORTS[type]) return false
+  result.value = {
+    type,
+    scores: decodeScores(safeDecode(options.scores || '')),
+    completedAt: Number(options.at) || Date.now(),
+  }
+  resultVersion.value = options.version === 'basic' ? 'basic' : 'full'
+  localUserId.value = 'shared'
+  isSharedResult.value = true
+  loadMajorInsightsForResult()
+  return true
+}
+
+function buildSharedReportPath() {
+  if (!result.value?.type) return '/pages/mbti/mbti'
+  const params = [
+    'shared=1',
+    `type=${encodeURIComponent(result.value.type)}`,
+    `version=${encodeURIComponent(resultVersion.value || 'full')}`,
+    `scores=${encodeURIComponent(encodeScores(result.value.scores))}`,
+    `at=${encodeURIComponent(String(result.value.completedAt || Date.now()))}`,
+  ].join('&')
+  return `/pages/mbti/mbti-result?${params}`
 }
 
 // 计算左侧百分比
@@ -263,63 +506,6 @@ function getRightPercent(leftKey, rightKey) {
 function getStars(index) {
   const count = Math.max(1, 5 - Math.floor(index / 2))
   return '★'.repeat(count) + '☆'.repeat(5 - count)
-}
-
-// 专业描述（简化版）
-function getMajorDesc(major) {
-  const descMap = {
-    '计算机科学与技术': '研究计算机系统、软件开发与人工智能',
-    '数学': '研究数量、结构、空间等基础概念',
-    '物理学': '研究物质、能量及其相互作用',
-    '哲学': '探讨存在、知识、价值等根本问题',
-    '经济学': '研究资源配置与经济运行规律',
-    '建筑学': '结合艺术与技术的建筑设计与规划',
-    '化学': '研究物质的组成、结构、性质与变化',
-    '生物学': '研究生命现象与生命活动规律',
-    '逻辑学': '研究思维形式与推理规律',
-    '工商管理': '企业管理与运营的综合学科',
-    '法学': '法律规范与法律制度的研究',
-    '金融学': '资金融通与金融市场研究',
-    '国际关系': '国家间政治、经济关系研究',
-    '市场营销': '市场分析与营销策略研究',
-    '心理学': '人类心理与行为规律研究',
-    '社会学': '社会结构与社会变迁研究',
-    '教育学': '教育理论与教学实践研究',
-    '文学': '语言文学创作与鉴赏',
-    '社会工作': '社会服务与社会福利研究',
-    '公共管理': '公共事务与组织管理',
-    '新闻传播': '新闻传播理论与实务',
-    '设计学': '视觉传达与艺术设计',
-    '人力资源管理': '人才选拔与组织发展',
-    '公共关系': '组织形象与公众沟通',
-    '播音主持': '广播电视语言传播艺术',
-    '表演艺术': '舞台表演艺术研究',
-    '广告学': '广告策划与创意设计',
-    '会计学': '财务核算与审计监督',
-    '医学': '疾病预防与临床治疗',
-    '土木工程': '工程建设与结构设计',
-    '项目管理': '项目规划与执行管理',
-    '行政管理': '政府与公共组织管理',
-    '物流管理': '供应链与物流系统优化',
-    '军事学': '军事理论与国防建设',
-    '护理学': '护理理论与临床实践',
-    '图书馆学': '信息资源组织与管理',
-    '医学技术': '医学检验与辅助技术',
-    '酒店管理': '酒店运营与服务管理',
-    '旅游管理': '旅游资源开发与规划',
-    '机械工程': '机械系统设计与制造',
-    '航空技术': '航空器运行与维护',
-    '自动化': '自动控制系统研究',
-    '体育教育': '体育教学与运动训练',
-    '美术学': '美术创作与理论',
-    '音乐学': '音乐理论与演奏',
-    '服装设计': '服装艺术与工程设计',
-    '园林设计': '景观规划与植物配置',
-    '烹饪艺术': '烹饪技艺与餐饮管理',
-    '国际贸易': '跨国贸易与商务',
-    '艺术设计': '视觉艺术与设计实践'
-  }
-  return descMap[major] || '适合该性格类型的热门专业方向'
 }
 
 // 查看专业详情
@@ -385,18 +571,45 @@ function confirmRetry() {
   })
 }
 
+onLoad((options = {}) => {
+  loadSharedResult(options)
+})
+
 onMounted(() => {
-  loadResult()
-  loadMajorInsightsForResult()
+  if (!isSharedResult.value) {
+    loadResult()
+    loadMajorInsightsForResult()
+    tryTriggerPregenerate()
+  }
   uni.setNavigationBarTitle({
-    title: 'MBTI 测评结果'
+    title: '性格测试结果'
   })
 })
 
 onShow(() => {
+  if (isSharedResult.value) return
   loadResult()
   loadMajorInsightsForResult()
 })
+
+onShareAppMessage((res = {}) => {
+  const shareKind = res.target?.dataset?.shareKind
+  if (shareKind === 'test') {
+    return {
+      title: '做个性格测试，看看哪些专业更适合你',
+      path: '/pages/mbti/mbti',
+    }
+  }
+  return {
+    title: `我的性格测试报告：${result.value?.type || ''} ${typeInfo.value?.name || ''}`,
+    path: buildSharedReportPath(),
+  }
+})
+
+onShareTimeline(() => ({
+  title: `我的性格测试报告：${result.value?.type || ''} ${typeInfo.value?.name || ''}`,
+  query: buildSharedReportPath().split('?')[1] || '',
+}))
 </script>
 
 <style lang="scss" scoped>
@@ -407,7 +620,7 @@ onShow(() => {
     linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
   padding: 32rpx;
   padding-top: calc(32rpx + env(safe-area-inset-top));
-  padding-bottom: calc(180rpx + env(safe-area-inset-bottom));
+  padding-bottom: calc(260rpx + env(safe-area-inset-bottom));
   box-sizing: border-box;
   position: relative;
   overflow-x: hidden;
@@ -507,13 +720,79 @@ onShow(() => {
   gap: 32rpx;
 }
 
+.report-meta-card {
+  @include glass-panel;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: $radius-lg;
+  padding: 24rpx 28rpx;
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+}
+
+.student-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  background: #EFF6FF;
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.student-avatar-text {
+  font-size: 28rpx;
+  font-weight: 900;
+  color: $brand-primary;
+}
+
+.student-meta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+
+.student-id {
+  font-size: 27rpx;
+  font-weight: 800;
+  color: $text-primary;
+}
+
+.student-date {
+  font-size: 22rpx;
+  color: $text-muted;
+}
+
+.student-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6rpx;
+  flex-shrink: 0;
+}
+
+.student-stat-label {
+  font-size: 21rpx;
+  color: $text-muted;
+}
+
+.student-stat-value {
+  font-size: 25rpx;
+  font-weight: 800;
+  color: $text-primary;
+}
+
 // 结果头部
 .result-header {
   @include glass-panel;
   position: relative;
   border-radius: $radius-xl;
-  padding: 64rpx 40rpx;
-  text-align: center;
+  padding: 52rpx 40rpx 44rpx;
+  text-align: left;
   overflow: hidden;
 }
 
@@ -532,36 +811,75 @@ onShow(() => {
 
 .type-badge-wrap {
   position: relative;
-  display: inline-block;
-  margin-bottom: 24rpx;
   z-index: 2;
+  flex-shrink: 0;
 }
 
 .type-badge {
   background: $grad-royal;
   border: none;
   border-radius: $radius-lg;
-  padding: 16rpx 48rpx;
-  font-size: 54rpx;
+  padding: 18rpx 36rpx;
+  font-size: 58rpx;
   font-weight: 900;
   color: #fff;
   letter-spacing: 0;
   box-shadow: 0 10rpx 24rpx rgba(37, 99, 235, 0.20);
 }
 
+.result-kicker {
+  position: relative;
+  z-index: 2;
+  display: block;
+  font-size: 28rpx;
+  color: $text-secondary;
+  font-weight: 700;
+  margin-bottom: 22rpx;
+}
+
+.type-identity {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 24rpx;
+  margin-bottom: 24rpx;
+}
+
+.type-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+  min-width: 0;
+}
+
 .type-name {
   display: block;
-  font-size: 38rpx;
+  font-size: 36rpx;
   font-weight: 800;
   color: $text-primary;
-  margin-bottom: 28rpx;
   z-index: 2;
   position: relative;
 }
 
+.type-subtitle {
+  font-size: 23rpx;
+  font-weight: 700;
+  color: $brand-primary;
+}
+
+.type-summary {
+  position: relative;
+  z-index: 2;
+  display: block;
+  font-size: 26rpx;
+  color: $text-secondary;
+  line-height: 1.65;
+  margin-bottom: 28rpx;
+}
+
 .type-tags {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 16rpx;
   z-index: 2;
@@ -607,6 +925,14 @@ onShow(() => {
   font-weight: 800;
   color: $text-primary;
   letter-spacing: 0;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 23rpx;
+  color: $text-muted;
+  line-height: 1.5;
+  margin-top: 12rpx;
 }
 
 // 维度得分
@@ -702,11 +1028,98 @@ onShow(() => {
   font-weight: 700;
 }
 
+.axis-notes {
+  margin-top: 36rpx;
+  padding: 24rpx 24rpx;
+  background: #F8FAFC;
+  border: 1px solid $border-light;
+  border-radius: $radius-lg;
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+}
+
+.axis-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14rpx;
+}
+
+.axis-dot {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: $brand-primary;
+  margin-top: 14rpx;
+  flex-shrink: 0;
+}
+
+.axis-note-text {
+  flex: 1;
+  font-size: 24rpx;
+  color: $text-secondary;
+  line-height: 1.65;
+}
+
 // 性格特征
+.feature-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 30rpx;
+  margin-bottom: 34rpx;
+}
+
+.feature-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 20rpx;
+}
+
+.feature-icon {
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+  background: #EFF6FF;
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  color: $brand-primary;
+  font-size: 23rpx;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 4rpx;
+}
+
+.feature-copy {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10rpx;
+}
+
+.feature-title {
+  font-size: 27rpx;
+  font-weight: 800;
+  color: $text-primary;
+}
+
+.feature-text {
+  font-size: 25rpx;
+  color: $text-secondary;
+  line-height: 1.7;
+}
+
 .traits-list {
   display: flex;
   flex-direction: column;
   gap: 20rpx;
+}
+
+.traits-list.compact {
+  padding-top: 26rpx;
+  border-top: 1px solid $border-light;
 }
 
 .trait-item {
@@ -883,7 +1296,7 @@ onShow(() => {
   bottom: 0;
   left: 0;
   right: 0;
-  height: calc(120rpx + env(safe-area-inset-bottom));
+  min-height: calc(190rpx + env(safe-area-inset-bottom));
   z-index: 50;
   display: flex;
   flex-direction: column;
@@ -903,31 +1316,74 @@ onShow(() => {
   z-index: 1;
 }
 
-.footer-btns {
+.footer-inner {
   position: relative;
-  padding: 0 32rpx;
+  padding: 20rpx 32rpx 12rpx;
   padding-bottom: env(safe-area-inset-bottom);
   z-index: 2;
 }
 
-.retry-btn {
-  width: 100%;
+.footer-progress {
+  display: block;
+  text-align: center;
+  font-size: 23rpx;
+  color: $text-muted;
+  margin-bottom: 14rpx;
+}
+
+.footer-btns {
+  display: flex;
+  gap: 18rpx;
+}
+
+.share-report-btn,
+.share-test-btn {
+  flex: 1;
   height: 84rpx;
-  background: rgba(255, 255, 255, 0.04);
-  color: $text-primary;
-  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: $radius-full;
   font-size: 28rpx;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
   transition: all 0.2s;
 
   &:active {
     transform: scale(0.98);
-    background: rgba(255, 255, 255, 0.08);
   }
+}
+
+.share-report-btn {
+  background: #FFFFFF;
+  color: #EF4444;
+  border: 1px solid rgba(239, 68, 68, 0.28);
+}
+
+.share-test-btn {
+  background: $grad-primary;
+  color: #fff;
+  box-shadow: 0 8rpx 18rpx rgba(239, 68, 68, 0.24);
+}
+
+.share-report-btn::after,
+.share-test-btn::after,
+.retry-link::after,
+.upgrade-btn::after {
+  border: none;
+}
+
+.retry-link {
+  width: 100%;
+  height: 48rpx;
+  margin-top: 8rpx;
+  background: transparent;
+  color: $text-muted;
+  border: none;
+  font-size: 23rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 // 弹出确认窗
@@ -1077,18 +1533,18 @@ onShow(() => {
 // 升级按钮
 .upgrade-btn {
   width: 100%;
-  height: 84rpx;
+  height: 72rpx;
   background: $grad-royal;
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: $radius-full;
-  font-size: 28rpx;
+  font-size: 26rpx;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 6rpx 16rpx rgba(99, 102, 241, 0.3);
-  margin-bottom: 16rpx;
+  margin-bottom: 14rpx;
   transition: all 0.2s;
 
   &:active {

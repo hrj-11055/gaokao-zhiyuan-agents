@@ -1,148 +1,196 @@
 <template>
   <view class="report-page">
-    <view class="bg-glow-soft" />
-
-    <view class="page-title">{{ latestReport ? '我的志愿报告' : '测评与报告准备' }}</view>
-
-    <!-- 进度统计仪表板 -->
-    <view class="progress-section" v-if="!generating && !latestReport">
-      <view class="progress-header">
-        <text class="progress-title">报告准备度</text>
-        <text class="progress-count">{{ progressPercent }}%</text>
-      </view>
-      <view class="progress-bar-container">
-        <view class="progress-bar">
-          <view class="progress-fill" :style="{ width: progressPercent + '%' }">
-            <view class="progress-fill-glow" />
-          </view>
-        </view>
-        <text class="progress-count-text">{{ completedAssessments }} / 3 项测评已完成</text>
-      </view>
+    <view class="bg-glow-blue" />
+    <view class="header-banner">
+      <text class="page-title">{{ latestReport ? '测评与报告中心' : '测评与报告准备' }}</text>
     </view>
 
-    <!-- 测评卡片列表 -->
-    <view class="assessments-list" v-if="!generating && !latestReport">
-      <!-- 五环问卷 -->
-      <view class="assessment-card" :class="{ completed: questionnaireDone }" @click="goQuestionnaire">
-        <view class="card-icon" :class="{ completed: questionnaireDone }">
-          <text class="icon-text">{{ questionnaireDone ? '✓' : '1' }}</text>
+    <view class="main-content">
+      <!-- 进度统计仪表板 -->
+      <view class="progress-section" v-if="!generating && !latestReport">
+        <view class="progress-header">
+          <text class="progress-title">报告准备度</text>
+          <text class="progress-count">{{ progressPercent }}%</text>
         </view>
-        <view class="card-content">
-          <view class="card-header-row">
-            <text class="card-title">五环特征综合评测</text>
-            <view class="status-badge" :class="{ completed: questionnaireDone }">
-              <text class="status-text">{{ questionnaireDone ? '匹配成功' : '去评测' }}</text>
-            </view>
+        <view class="progress-bar-container">
+          <view class="progress-bar">
+            <view class="progress-fill" :style="{ width: progressPercent + '%' }"></view>
           </view>
-          <text class="card-desc">21 维全面学习风格，记录学习方式、目标偏好</text>
+          <text class="progress-count-text">{{ completedAssessments }} / 2 项测评已完成</text>
         </view>
-        <text class="card-arrow">›</text>
       </view>
 
-      <!-- 性格测试 -->
-      <view class="assessment-card" :class="{ completed: mbtiDone }" @click="goMbti">
-        <view class="card-icon" :class="{ completed: mbtiDone }">
-          <text class="icon-text">{{ mbtiDone ? '✓' : '2' }}</text>
+      <view class="requirements-section" v-if="!generating && !latestReport">
+        <text class="section-title">生成前准备</text>
+        <view class="requirement-item" :class="{ done: step1Done }" @click="goHomeProfile">
+          <text class="requirement-mark">{{ step1Done ? '✓' : '1' }}</text>
+          <view class="requirement-body">
+            <text class="requirement-title">基础资料</text>
+            <text class="requirement-desc">{{ profileStatusText }}</text>
+          </view>
         </view>
-        <view class="card-content">
-          <view class="card-header-row">
+        <view class="requirement-item" :class="{ done: step2Done }" @click="goChat">
+          <text class="requirement-mark">{{ step2Done ? '✓' : '2' }}</text>
+          <view class="requirement-body">
+            <text class="requirement-title">AI 咨询</text>
+            <text class="requirement-desc">{{ chatStatusText }}</text>
+          </view>
+        </view>
+        <view class="requirement-item" :class="{ done: allAssessmentsDone }">
+          <text class="requirement-mark">{{ allAssessmentsDone ? '✓' : '3' }}</text>
+          <view class="requirement-body">
+            <text class="requirement-title">两项测评</text>
+            <text class="requirement-desc">{{ assessmentStatusText }}</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 测评卡片列表 -->
+      <view class="assessments-list" v-if="!generating && !latestReport">
+        <text class="section-title">基础测评列表</text>
+
+        <view class="assessment-card" :class="{ completed: mbtiDone }" @click="goMbti" hover-class="card-hover">
+          <view class="card-icon-wrap" :class="{ completed: mbtiDone }">
+            <LucideIcon name="UserCheck" size="36rpx" :color="mbtiDone ? '#0052d9' : '#86909c'" />
+          </view>
+          <view class="card-content">
             <text class="card-title">性格类型定位</text>
-            <view class="status-badge" :class="{ completed: mbtiDone }">
-              <text class="status-text">{{ mbtiDone ? '已完成' : '去评测' }}</text>
+            <text class="card-desc">沟通、判断方式偏好</text>
+          </view>
+          <view class="status-badge" :class="{ completed: mbtiDone }">
+            {{ mbtiDone ? '已完成' : '去评测' }}
+          </view>
+        </view>
+
+        <view class="assessment-card" :class="{ completed: hollandDone }" @click="goHolland" hover-class="card-hover">
+          <view class="card-icon-wrap" :class="{ completed: hollandDone }">
+            <LucideIcon name="Compass" size="36rpx" :color="hollandDone ? '#0052d9' : '#86909c'" />
+          </view>
+          <view class="card-content">
+            <text class="card-title">职业兴趣矩阵</text>
+            <text class="card-desc">判断更适合的专业方向</text>
+          </view>
+          <view class="status-badge" :class="{ completed: hollandDone }">
+            {{ hollandDone ? '已完成' : '去评测' }}
+          </view>
+        </view>
+      </view>
+
+      <!-- 生成按钮区域 -->
+      <view v-if="!generating && !latestReport" class="generate-section">
+        <button
+          class="generate-btn"
+          :class="{ ready: allPrerequisitesDone }"
+          @click="onGenerateClick"
+        >
+          <text class="generate-btn-text">
+            {{ generateButtonText }}
+          </text>
+        </button>
+        <text v-if="generateHintText" class="generate-hint">{{ generateHintText }}</text>
+      </view>
+
+      <!-- 生成中加载 -->
+      <view v-if="generating" class="loading-card">
+        <view class="spinner-ring" />
+        <text class="loading-title">{{ progressTitle }}</text>
+        <text class="loading-sub">{{ progressSub }}</text>
+        <text class="loading-tip">{{ progressTip }}</text>
+        <view class="loading-bar">
+          <view v-if="isFakeProgressActive" class="fake-progress-fill" :style="{ width: fakeProgress + '%' }" />
+          <view v-else class="loading-fill" />
+        </view>
+        <text class="loading-percent" v-if="isFakeProgressActive">{{ fakeProgress }}%</text>
+      </view>
+
+      <!-- 生成完毕：综合报告大入口 -->
+      <template v-if="!generating && latestReport">
+        <view class="hero-card">
+          <view class="hero-deco-wrap">
+            <view class="hero-deco-1"></view>
+            <view class="hero-deco-2"></view>
+          </view>
+
+          <view class="hero-content">
+            <text class="hero-title">综合志愿参考报告</text>
+            <text class="hero-time" v-if="latestReport.generatedAt">{{ formatTime(latestReport.generatedAt) }}</text>
+            <button class="hero-btn" @click="openLatest" hover-class="hero-btn-hover">点击查看综合报告</button>
+          </view>
+        </view>
+
+        <view class="sub-actions">
+          <button class="sub-btn" @click="shareLatest" hover-class="sub-btn-hover">分享给家长</button>
+          <button class="sub-btn" @click="onRegenerate" hover-class="sub-btn-hover">重新生成</button>
+        </view>
+
+        <!-- 基础测评回顾 -->
+        <view class="section-container">
+          <text class="section-header">基础测评结果</text>
+          <view class="grid-2">
+            <view class="grid-card" @click="goMbti" hover-class="grid-card-hover">
+              <view class="grid-card-head">
+                <view class="icon-box">
+                  <LucideIcon name="UserCheck" size="28rpx" color="#0052d9" />
+                </view>
+                <text class="grid-card-title">性格测试</text>
+              </view>
+              <text class="grid-card-desc line-clamp-2">{{ mbtiDone ? '查看详细的性格特征解析' : '尚未评测，点击前往' }}</text>
+            </view>
+
+            <view class="grid-card" @click="goHolland" hover-class="grid-card-hover">
+              <view class="grid-card-head">
+                <view class="icon-box">
+                  <LucideIcon name="Compass" size="28rpx" color="#0052d9" />
+                </view>
+                <text class="grid-card-title">职业兴趣测评</text>
+              </view>
+              <text class="grid-card-desc line-clamp-2">{{ hollandDone ? '查看职业匹配与倾向报告' : '尚未评测，点击前往' }}</text>
+            </view>
+
+          </view>
+        </view>
+
+        <!-- VIP 深度包 -->
+        <view v-if="membershipStore.isActive" class="section-container deep-report-package">
+          <view class="section-header-row">
+            <text class="section-header">深度资料包</text>
+            <view class="quota-badge">剩余下载次数 {{ membershipStore.downloadQuota.remaining }}/{{ membershipStore.downloadQuota.limit }}</view>
+          </view>
+
+          <view class="grid-2">
+            <view class="grid-card deep-card" @click="goDeepReportDownload('university')" hover-class="grid-card-hover">
+              <view class="icon-box-large">
+                <LucideIcon name="Building2" size="32rpx" color="#0052d9" />
+              </view>
+              <text class="grid-card-title block-title">院校深度研究报告</text>
+              <text class="grid-card-desc line-clamp-2">查看定位、转专业与风险</text>
+            </view>
+
+            <view class="grid-card deep-card" @click="goDeepReportDownload('major')" hover-class="grid-card-hover">
+              <view class="icon-box-large">
+                <LucideIcon name="BookMarked" size="32rpx" color="#0052d9" />
+              </view>
+              <text class="grid-card-title block-title">专业研究报告</text>
+              <text class="grid-card-desc line-clamp-2">查看课程难度与就业方向</text>
             </view>
           </view>
-          <text class="card-desc">了解沟通、信息处理、判断方式和生活节奏偏好</text>
         </view>
-        <text class="card-arrow">›</text>
-      </view>
-
-      <!-- 霍兰德职业兴趣 -->
-      <view class="assessment-card" :class="{ completed: hollandDone }" @click="goHolland">
-        <view class="card-icon" :class="{ completed: hollandDone }">
-          <text class="icon-text">{{ hollandDone ? '✓' : '3' }}</text>
-        </view>
-        <view class="card-content">
-          <view class="card-header-row">
-            <text class="card-title">霍兰德 RIASEC 职业矩阵</text>
-            <view class="status-badge" :class="{ completed: hollandDone }">
-              <text class="status-text">{{ hollandDone ? '已完成' : '去评测' }}</text>
-            </view>
-          </view>
-          <text class="card-desc">从六类职业兴趣中判断更适合的专业方向</text>
-        </view>
-        <text class="card-arrow">›</text>
-      </view>
-    </view>
-
-    <!-- 生成按钮区域 -->
-    <view v-if="!generating && !latestReport" class="generate-section">
-      <button
-        class="generate-btn"
-        :class="{ ready: allAssessmentsDone }"
-        @click="onGenerateClick"
-      >
-        <text class="generate-btn-text">
-          {{ allAssessmentsDone ? '立即生成综合报告' : '需先完成上方 3 项测评' }}
-        </text>
-      </button>
-      <text v-if="!allAssessmentsDone" class="generate-hint">测评结果会用于补充“分数之外的信息”，帮助报告更准确。</text>
-      <text v-else-if="!membershipStore.isActive" class="generate-hint">生成完整报告需要使用 VIP 权限</text>
-    </view>
-
-    <!-- 生成中加载 -->
-    <view v-if="generating" class="loading-card">
-      <view class="spinner-ring">
-        <view class="spinner-circle" />
-      </view>
-      <text class="loading-title">{{ progressTitle }}</text>
-      <text class="loading-sub">{{ progressSub }}</text>
-      <text class="loading-tip">{{ progressTip }}</text>
-      <view class="loading-bar">
-        <view v-if="isFakeProgressActive" class="fake-progress-fill" :style="{ width: fakeProgress + '%' }" />
-        <view v-else class="loading-fill" />
-      </view>
-      <text class="loading-percent" v-if="isFakeProgressActive">{{ fakeProgress }}%</text>
-    </view>
-
-    <!-- 生成完毕：综合报告大入口 -->
-    <view v-if="!generating && latestReport" class="latest-card large-hero">
-      <view class="latest-glow" />
-      <text class="latest-label">你的专属方案</text>
-      <text class="latest-title">综合志愿参考报告</text>
-      <text class="latest-time" v-if="latestReport.generatedAt">{{ formatTime(latestReport.generatedAt) }}</text>
-
-      <button class="latest-btn primary giant" @click="openLatest">点击查看综合报告</button>
-
-      <view class="latest-actions">
-        <button class="latest-btn secondary" @click="shareLatest">分享给家长</button>
-        <button class="latest-btn secondary outline" @click="onRegenerate">重新生成</button>
-      </view>
-    </view>
-
-    <!-- VIP 深度包 (生成后显示) -->
-    <view v-if="membershipStore.isActive && latestReport && !generating" class="deep-report-package">
-      <view class="package-header">
-        <text class="package-title">深度资料包</text>
-        <text class="package-quota">剩余下载次数 {{ membershipStore.downloadQuota.remaining }}/{{ membershipStore.downloadQuota.limit }}</text>
-      </view>
-      <view class="package-grid">
-        <view class="package-item" @click="goDeepReportDownload('university')">
-          <text class="package-name">院校深度研究报告</text>
-          <text class="package-desc">查看学校定位、转专业、就业与风险</text>
-        </view>
-        <view class="package-item" @click="goDeepReportDownload('major')">
-          <text class="package-name">专业研究报告</text>
-          <text class="package-desc">查看课程难度、就业方向和适配风险</text>
-        </view>
-      </view>
+      </template>
     </view>
 
     <!-- 解锁弹窗 -->
     <view v-if="showUnlockSheet" class="unlock-sheet-mask" @click="closeUnlockSheet">
       <view class="unlock-sheet" @click.stop>
         <text class="sheet-title">生成完整志愿报告需要 VIP</text>
-        <text class="sheet-desc">开通后可生成综合报告，并下载院校深度研究报告、专业研究报告。</text>
-        <button class="sheet-primary" @click="onPayWithWechat">{{ MEMBERSHIP_PRICE_LABEL }} 开通 VIP</button>
+        <text class="sheet-desc">开通后可生成综合报告，并使用院校/专业深度阅读和 PDF 下载额度。</text>
+        <view class="sheet-benefits">
+          <text class="sheet-benefit">完整志愿报告：学校/专业判断、风险提醒、下一步行动</text>
+          <text class="sheet-benefit">深度阅读：院校和专业在线阅读不限次数</text>
+          <text class="sheet-benefit">PDF 下载：剩余额度 {{ membershipStore.downloadQuota.remaining }}/{{ membershipStore.downloadQuota.limit }}</text>
+          <text class="sheet-benefit">客服兜底：支付或报告异常可联系 {{ CUSTOMER_WECHAT_ID }}</text>
+        </view>
+        <text class="sheet-rule">邀请 5 位新用户解锁：新用户通过你的分享进入，并完成省份、科类、分数基础资料，才算有效邀请。当前 {{ membershipStore.effectiveInviteCount }}/{{ membershipStore.requiredInviteCount }}。</text>
+        <button class="sheet-primary" @click="onPayWithWechat">{{ MEMBERSHIP_PRICE_LABEL }} 解锁完整报告</button>
         <button class="sheet-secondary" open-type="share">邀请 5 位新用户解锁</button>
         <view class="code-row">
           <input v-model.trim="unlockCode" class="code-input" placeholder="输入会员邀请码" />
@@ -150,32 +198,34 @@
         </view>
       </view>
     </view>
-
   </view>
 </template>
 
 <script setup>
+
+
 import { computed, ref, onMounted } from 'vue'
+import LucideIcon from '../../components/LucideIcon.vue'
 import { onShareAppMessage, onShow } from '@dcloudio/uni-app'
+import pinia from '../../stores'
 import { useMembershipStore } from '../../stores/membership.js'
 import { useHomeProgress } from '../../composables/useHomeProgress.js'
-import { MEMBERSHIP_PRICE_LABEL } from '../../config.js'
+import { CUSTOMER_WECHAT_ID, MEMBERSHIP_PRICE_LABEL } from '../../config.js'
 import { generateReport } from '../../api/report.js'
 import { checkPregenerateStatus } from '../../api/pregenerate.js'
 import { useReportPregen } from '../../composables/useReportPregen.js'
+import { buildReportAssessmentPayload } from '../../utils/report-assessments.js'
 import {
-  loadAssessments,
   loadHistory,
-  loadQuestionnaire,
   loadUserProfile,
   loadReport,
   saveReport,
-  QUESTIONNAIRE_REQUIRED_COUNT,
 } from '../../utils/storage.js'
 
-const membershipStore = useMembershipStore()
+const membershipStore = useMembershipStore(pinia)
 const {
-  questionnaireDone,
+  step1Done,
+  step2Done,
   mbtiDone,
   hollandDone,
   step3Done: allAssessmentsDone,
@@ -184,7 +234,31 @@ const {
 } = useHomeProgress()
 
 const progressPercent = computed(() => {
-  return Math.round((completedAssessments.value / 3) * 100)
+  return Math.round((completedAssessments.value / 2) * 100)
+})
+const allPrerequisitesDone = computed(() => step1Done.value && step2Done.value && allAssessmentsDone.value)
+const profileStatusText = computed(() => (
+  step1Done.value ? '省份、科类和分数已记录' : '请先补全省份、科类和分数'
+))
+const chatStatusText = computed(() => (
+  step2Done.value ? '已完成至少 1 轮咨询' : '先聊 1 轮，让报告纳入现实约束'
+))
+const assessmentStatusText = computed(() => (
+  allAssessmentsDone.value ? '两项测评已完成' : `已完成 ${completedAssessments.value}/2`
+))
+const generateButtonText = computed(() => {
+  if (!step1Done.value) return '先补全基础资料'
+  if (!step2Done.value) return '先完成 1 轮 AI 咨询'
+  if (!allAssessmentsDone.value) return '需先完成上方 2 项测评'
+  if (!membershipStore.isActive) return `${MEMBERSHIP_PRICE_LABEL} 解锁完整报告`
+  return '立即生成综合报告'
+})
+const generateHintText = computed(() => {
+  if (!step1Done.value) return '基础资料决定学校层次和省份规则。'
+  if (!step2Done.value) return 'AI 咨询会补充城市、专业、预算和家庭约束。'
+  if (!allAssessmentsDone.value) return '测评结果会用于补充“分数之外的信息”，帮助报告更准确。'
+  if (!membershipStore.isActive) return '完整报告包含学校/专业判断、风险提醒、下一步行动和 PDF 权益。'
+  return '报告通常需要 1-2 分钟，请保持页面打开。'
 })
 
 const generating = ref(false)
@@ -276,10 +350,6 @@ async function redeemCodeFromSheet() {
   }
 }
 
-function goQuestionnaire() {
-  uni.navigateTo({ url: '/pages/questionnaire/questionnaire' })
-}
-
 function goMbti() {
   if (mbtiDone.value) {
     uni.navigateTo({ url: '/pages/mbti/mbti-result' })
@@ -297,8 +367,10 @@ function goHolland() {
 }
 
 async function onGenerateClick() {
-  if (!allAssessmentsDone.value) {
-    uni.showToast({ title: '请先完成上方 3 项测评', icon: 'none' })
+  const blocker = getReadinessBlocker()
+  if (blocker) {
+    uni.showToast({ title: blocker.toast, icon: 'none' })
+    if (blocker.action) blocker.action()
     return
   }
   onGenerate()
@@ -316,7 +388,7 @@ function runFakeProgressBar(cachedUrl) {
   setTimeout(() => {
     fakeProgress.value = 30
     progressTitle.value = '整合考生数据…'
-    progressSub.value = '计算学业现状五环数据与学科偏好...'
+    progressSub.value = '整合性格类型与职业兴趣指标...'
   }, 1000)
 
   // Step 2: 2.5s -> 60%
@@ -360,7 +432,39 @@ function runFakeProgressBar(cachedUrl) {
   }, 5500)
 }
 
+function startSlowProgress() {
+  isFakeProgressActive.value = true
+  fakeProgress.value = 0
+
+  const slowTimers = [
+    { delay: 2000, pct: 10, title: '正在收集考生资料…', sub: '整合基础信息与测评数据' },
+    { delay: 8000, pct: 25, title: 'AI 深度分析中…', sub: '匹配院校与专业方向' },
+    { delay: 20000, pct: 40, title: '正在生成志愿方案…', sub: '构建个性化推荐与风险分析' },
+    { delay: 40000, pct: 55, title: '深度分析中…', sub: '正在提炼核心建议与行动方案' },
+    { delay: 70000, pct: 70, title: '报告撰写中…', sub: '排版优化与内容整合' },
+    { delay: 100000, pct: 88, title: '即将完成…', sub: '正在保存报告结果' },
+  ]
+
+  slowTimers.forEach(({ delay, pct, title, sub }) => {
+    setTimeout(() => {
+      if (!generating.value) return
+      if (fakeProgress.value < pct) {
+        fakeProgress.value = pct
+        progressTitle.value = title
+        progressSub.value = sub
+      }
+    }, delay)
+  })
+}
+
 async function onGenerate() {
+  const blocker = getReadinessBlocker()
+  if (blocker) {
+    uni.showToast({ title: blocker.toast, icon: 'none' })
+    if (blocker.action) blocker.action()
+    return
+  }
+
   generating.value = true
 
   // Reset loader variables
@@ -398,18 +502,18 @@ async function onGenerate() {
 
     // Fallback to normal generation
     const profile = loadUserProfile()
-    const questionnaire = loadQuestionnaire()
-    const assessments = loadAssessments()
+    const assessments = buildReportAssessmentPayload()
     const chatHistory = loadHistory()
-    const questionnaireAnswers = questionnaire.answers || {}
+
+    startSlowProgress()
 
     const result = await generateReport({
       profile,
       userId: membershipStore.userId,
       sessionToken: membershipStore.sessionToken,
       conversationId: chatHistory.conversationId || '',
-      questionnaire: questionnaireAnswers,
       assessments,
+      skipExpansion: true,
     })
     const reportEntry = {
       url: result.url,
@@ -421,10 +525,20 @@ async function onGenerate() {
     latestReport.value = reportEntry
     persistReports()
   } catch (err) {
-    const message = err.data?.draftId
-      ? '生成失败，已保留草稿，可稍后重试'
-      : (err.message || '生成失败')
-    uni.showToast({ title: message, icon: 'none', duration: 2500 })
+    const isCooldown = err.statusCode === 429
+    if (isCooldown) {
+      uni.showToast({ title: err.data?.error || '请稍后再试', icon: 'none', duration: 3000 })
+      // Revert: restore latestReport if we just cleared it via onRegenerate
+      if (!latestReport.value?.url) {
+        const stored = loadReport()
+        if (stored?.url) latestReport.value = stored
+      }
+    } else {
+      const message = err.data?.draftId
+        ? '生成失败，已保留草稿，可稍后重试'
+        : (err.message || '生成失败')
+      showSupportModal('报告生成失败', `${message}\n\n请稍后重试；如仍失败，请联系客服并发送用户 ID、失败截图和发生时间。`)
+    }
   } finally {
     if (!isFakeProgressActive.value) {
       generating.value = false
@@ -459,8 +573,12 @@ async function onPayWithWechat() {
     await membershipStore.openMembership()
     await membershipStore.loadStatus()
     closeUnlockSheet()
+    uni.showToast({ title: '权益已解锁', icon: 'success' })
   } catch (err) {
-    uni.showToast({ title: err.message || '支付暂时不可用', icon: 'none' })
+    showSupportModal(
+      err.code === 'PAYMENT_PENDING' ? '支付确认中' : '支付未完成',
+      `${err.message || '支付暂时不可用'}\n\n如已付款但未解锁，请联系客服处理。`
+    )
   }
 }
 
@@ -477,49 +595,110 @@ function goDeepReportDownload(mode = 'university') {
     url: `/pages/deep-report-download/deep-report-download?mode=${encodeURIComponent(mode)}`,
   })
 }
+
+function getReadinessBlocker() {
+  if (!step1Done.value) {
+    return { toast: '请先补全基础资料', action: goHomeProfile }
+  }
+  if (!step2Done.value) {
+    return { toast: '请先完成 1 轮 AI 咨询', action: goChat }
+  }
+  if (!allAssessmentsDone.value) {
+    return { toast: '请先完成上方 2 项测评', action: null }
+  }
+  return null
+}
+
+function goHomeProfile() {
+  uni.switchTab({ url: '/pages/index/index' })
+  setTimeout(() => uni.$emit('open-profile-sheet'), 200)
+}
+
+function goChat() {
+  uni.switchTab({ url: '/pages/chat/chat' })
+}
+
+function showSupportModal(title, message) {
+  uni.showModal({
+    title,
+    content: `${message}\n\n客服微信：${CUSTOMER_WECHAT_ID}`,
+    confirmText: '复制微信',
+    cancelText: '关闭',
+    success(res) {
+      if (!res.confirm) return
+      uni.setClipboardData({
+        data: CUSTOMER_WECHAT_ID,
+        success: () => uni.showToast({ title: '微信号已复制', icon: 'none' }),
+      })
+    },
+  })
+}
+
+
 </script>
 
+
+<style lang="scss">
+page {
+  background-color: $bg-page;
+}
+</style>
+
 <style lang="scss" scoped>
+.bg-glow-blue {
+  position: absolute;
+  top: -100rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700rpx;
+  height: 700rpx;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.06) 0%, rgba(37, 99, 235, 0) 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
 .report-page {
   min-height: 100vh;
-  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
-  padding: 0 32rpx 64rpx;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow-x: hidden;
 }
 
-.bg-glow-soft {
-  position: fixed;
-  top: -15%;
-  left: -10%;
-  width: 500rpx;
-  height: 500rpx;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
-  z-index: 0;
-  pointer-events: none;
+.header-banner {
+  padding-top: 48rpx;
+  padding-bottom: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: rgba(248, 250, 252, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .page-title {
-  position: relative;
-  z-index: 1;
-  font-size: 40rpx;
+  font-size: 34rpx;
   font-weight: 800;
   color: $text-primary;
-  padding: 48rpx 0 24rpx;
+  letter-spacing: 1rpx;
+  padding-top: 8rpx;
 }
 
-/* ================== 进度统计 ================== */
-.progress-section {
+.main-content {
+  padding: 0 32rpx 48rpx 32rpx;
   position: relative;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.progress-section {
+  @include glass-panel;
   border-radius: $radius-xl;
-  padding: 36rpx;
-  margin-bottom: 24rpx;
-  box-shadow: 0 4rpx 20rpx rgba(15, 23, 42, 0.02);
+  padding: 32rpx;
+  margin-bottom: 32rpx;
+  margin-top: 16rpx;
 }
 
 .progress-header {
@@ -530,8 +709,8 @@ function goDeepReportDownload(mode = 'university') {
 }
 
 .progress-title {
-  font-size: 28rpx;
-  font-weight: 700;
+  font-size: 30rpx;
+  font-weight: 800;
   color: $text-primary;
 }
 
@@ -544,12 +723,12 @@ function goDeepReportDownload(mode = 'university') {
 .progress-bar-container {
   display: flex;
   flex-direction: column;
-  gap: 12rpx;
+  gap: 16rpx;
 }
 
 .progress-bar {
-  height: 16rpx;
-  background: #f1f5f9;
+  height: 12rpx;
+  background: $bg-input;
   border-radius: $radius-full;
   overflow: hidden;
 }
@@ -558,59 +737,112 @@ function goDeepReportDownload(mode = 'university') {
   height: 100%;
   background: $grad-primary;
   border-radius: $radius-full;
-  transition: width 0.4s cubic-bezier(0.1, 0.76, 0.55, 0.94);
-  position: relative;
-}
-
-.progress-fill-glow {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20rpx;
-  height: 100%;
-  background: #fff;
-  filter: blur(4rpx);
-  opacity: 0.5;
+  transition: width 0.4s ease;
 }
 
 .progress-count-text {
-  font-size: 22rpx;
-  color: $text-secondary;
+  font-size: 24rpx;
+  color: $text-muted;
 }
 
-/* ================== 测评卡片 ================== */
-.assessments-list {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 40rpx;
+.requirements-section {
+  margin-bottom: 32rpx;
+}
+
+.requirement-item {
+  background-color: #ffffff;
+  border: 1px solid #e3e8f0;
+  border-radius: 14rpx;
+  padding: 20rpx 24rpx;
+  display: flex;
+  align-items: center;
+  gap: 18rpx;
+  margin-bottom: 16rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.02);
+
+  &.done {
+    border-color: #86efac;
+    background-color: #f0fdf4;
+  }
+}
+
+.requirement-mark {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 12rpx;
+  background: #f1f5f9;
+  color: $text-muted;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24rpx;
+  font-weight: 800;
+  flex-shrink: 0;
+
+  .requirement-item.done & {
+    background: #dcfce7;
+    color: #16a34a;
+  }
+}
+
+.requirement-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.requirement-title {
+  display: block;
+  font-size: 26rpx;
+  color: $text-primary;
+  font-weight: 800;
+}
+
+.requirement-desc {
+  display: block;
+  font-size: 22rpx;
+  color: $text-muted;
+  line-height: 1.45;
+  margin-top: 4rpx;
+}
+
+.section-title, .section-header {
+  font-size: 32rpx;
+  font-weight: 800;
+  color: $text-primary;
+  margin-bottom: 24rpx;
+  display: block;
+  padding-left: 8rpx;
 }
 
 .assessment-card {
-  background: #fff;
-  border: 1px solid rgba(15, 23, 42, 0.06);
-  border-radius: $radius-xl;
-  padding: 32rpx 28rpx;
+  @include glass-panel;
+  border-radius: $radius-lg;
+  padding: 24rpx 32rpx;
   display: flex;
   align-items: center;
-  margin-bottom: 20rpx;
-  box-shadow: 0 4rpx 12rpx rgba(15, 23, 42, 0.02);
-  transition: transform 0.2s;
+  margin-bottom: 24rpx;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid transparent; // for active state
 
   &:active {
     transform: scale(0.98);
   }
 
   &.completed {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.04) 0%, #fff 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(240,253,244,0.6) 100%);
     border-color: rgba(16, 185, 129, 0.2);
   }
 }
 
-.card-icon {
-  width: 72rpx;
-  height: 72rpx;
-  background: #f1f5f9;
-  border-radius: $radius-md;
+.card-hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-icon-wrap {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: $bg-input;
+  border-radius: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -618,17 +850,7 @@ function goDeepReportDownload(mode = 'university') {
   flex-shrink: 0;
 
   &.completed {
-    background: $grad-success;
-  }
-}
-
-.icon-text {
-  font-size: 30rpx;
-  font-weight: 800;
-  color: $text-secondary;
-
-  .completed & {
-    color: #fff;
+    background-color: #D1FAE5;
   }
 }
 
@@ -636,116 +858,334 @@ function goDeepReportDownload(mode = 'university') {
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-.card-header-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 8rpx;
+  justify-content: center;
 }
 
 .card-title {
   font-size: 28rpx;
   font-weight: 700;
   color: $text-primary;
-}
-
-.status-badge {
-  padding: 4rpx 16rpx;
-  background: #f1f5f9;
-  border-radius: $radius-full;
-
-  &.completed {
-    background: rgba(16, 185, 129, 0.1);
-  }
-}
-
-.status-text {
-  font-size: 22rpx;
-  color: $text-secondary;
-  font-weight: 600;
-
-  .completed & {
-    color: #10b981;
-  }
+  margin-bottom: 8rpx;
 }
 
 .card-desc {
-  font-size: 22rpx;
-  color: $text-secondary;
-  line-height: 1.4;
+  font-size: 24rpx;
+  color: $text-muted;
 }
 
-.card-arrow {
-  font-size: 40rpx;
-  color: #cbd5e1;
-  margin-left: 16rpx;
+.status-badge {
+  font-size: 24rpx;
+  padding: 8rpx 16rpx;
+  background-color: $bg-input;
+  color: $text-muted;
+  border-radius: $radius-sm;
+  font-weight: 600;
+
+  &.completed {
+    background-color: transparent;
+    color: #059669;
+  }
 }
 
-/* ================== 生成按钮区域 ================== */
 .generate-section {
-  position: relative;
-  z-index: 1;
+  margin-top: 40rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20rpx;
 }
 
 .generate-btn {
   width: 100%;
-  height: 96rpx;
+  height: 88rpx;
   border-radius: $radius-full;
-  background: #e2e8f0;
+  background-color: $bg-input;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s;
+  margin: 0;
 
   &::after { border: none; }
 
   &.ready {
-    background: $grad-primary;
-    box-shadow: 0 8rpx 24rpx rgba(37, 99, 235, 0.3);
+    background: $grad-accent;
+    @include neon-shadow;
   }
 }
 
 .generate-btn-text {
-  font-size: 32rpx;
-  font-weight: 800;
-  color: #94a3b8;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: $text-muted;
 
   .ready & {
-    color: #fff;
+    color: #ffffff;
   }
 }
 
 .generate-hint {
-  font-size: 22rpx;
+  font-size: 24rpx;
   color: $text-muted;
-  margin-top: 20rpx;
-  text-align: center;
+  margin-top: 24rpx;
 }
 
-/* ================== 加载中 ================== */
-.loading-card {
-  position: relative;
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.95);
+.hero-card {
+  background: $grad-primary;
   border-radius: $radius-xl;
-  padding: 60rpx 40rpx;
+  padding: 48rpx 40rpx;
+  color: #ffffff;
+  margin-bottom: 40rpx;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12rpx 32rpx rgba(37, 99, 235, 0.25);
+  margin-top: 24rpx;
+}
+
+.hero-deco-wrap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 256rpx;
+  height: 256rpx;
+  opacity: 0.15;
+  pointer-events: none;
+  transform: translateX(32rpx);
+}
+
+.hero-deco-1 {
+  width: 256rpx;
+  height: 256rpx;
+  background-color: #ffffff;
+  border-radius: 40rpx;
+  transform: rotate(15deg) skewX(10deg);
+}
+
+.hero-deco-2 {
+  position: absolute;
+  left: -40rpx;
+  top: 20rpx;
+  width: 120rpx;
+  height: 32rpx;
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  transform: rotate(15deg);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-size: 46rpx;
+  font-weight: 900;
+  margin-bottom: 12rpx;
+  letter-spacing: 2rpx;
+  display: flex;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero-time {
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: monospace;
+  margin-bottom: 40rpx;
+}
+
+.hero-btn {
+  width: 100%;
+  height: 88rpx;
+  background: #ffffff;
+  color: $brand-primary-dark;
+  font-weight: 800;
+  font-size: 30rpx;
+  border-radius: $radius-full;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &::after { border: none; }
+}
+
+.hero-btn-hover {
+  background-color: #f8fafc;
+}
+
+.sub-actions {
+  display: flex;
+  gap: 24rpx;
+  margin-bottom: 48rpx;
+}
+
+.sub-btn {
+  flex: 1;
+  height: 80rpx;
+  border-radius: $radius-full;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  color: $text-secondary;
+  font-size: 28rpx;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  box-shadow: 0 2rpx 8rpx rgba(15, 23, 42, 0.02);
+  transition: background-color 0.2s;
+
+  &::after { border: none; }
+}
+
+.sub-btn-hover {
+  background-color: #f8fafc;
+}
+
+.section-container {
+  margin-bottom: 48rpx;
+}
+
+.section-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24rpx;
+  padding-left: 8rpx;
+}
+
+.section-header-row .section-header {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.quota-badge {
+  font-size: 24rpx;
+  padding: 6rpx 20rpx;
+  background-color: #DBEAFE;
+  color: $brand-primary-dark;
+  border-radius: $radius-full;
+  font-weight: 700;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24rpx;
+}
+
+.grid-card {
+  @include glass-panel;
+  border-radius: $radius-lg;
+  padding: 32rpx 24rpx;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.grid-card-hover {
+  background-color: #F8FAFC;
+}
+
+.grid-card-head {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  margin-bottom: 16rpx;
+}
+
+.icon-box {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DBEAFE;
+  flex-shrink: 0;
+}
+
+.icon-box-large {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DBEAFE;
+  margin-bottom: 24rpx;
+}
+
+.grid-card-title {
+  font-size: 28rpx;
+  font-weight: 800;
+  color: $text-primary;
+}
+
+.block-title {
+  display: block;
+  font-size: 30rpx;
+  margin-bottom: 12rpx;
+}
+
+.grid-card-desc {
+  font-size: 22rpx;
+  color: $text-muted;
+  line-height: 1.5;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.deep-report-package {
+  .grid-card {
+    background: $grad-vip;
+    border: none;
+    box-shadow: 0 8rpx 24rpx rgba(15, 23, 42, 0.15);
+  }
+
+  .grid-card-title {
+    color: #ffffff;
+  }
+
+  .grid-card-desc {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .icon-box-large {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* 生成中加载 */
+.loading-card {
+  @include glass-panel;
+  border-radius: $radius-xl;
+  padding: 64rpx 40rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 12rpx 48rpx rgba(15, 23, 42, 0.05);
-  margin-top: 40rpx;
+  margin-top: 24rpx;
 }
 
 .spinner-ring {
-  width: 100rpx;
-  height: 100rpx;
-  border: 8rpx solid #e0e7ff;
+  width: 72rpx;
+  height: 72rpx;
+  border: 6rpx solid $bg-input;
   border-top-color: $brand-primary;
   border-radius: 50%;
   animation: spin 1s linear infinite;
@@ -757,239 +1197,93 @@ function goDeepReportDownload(mode = 'university') {
 }
 
 .loading-title {
-  font-size: 32rpx;
+  font-size: 34rpx;
   font-weight: 800;
   color: $text-primary;
-  margin-bottom: 12rpx;
+  margin-bottom: 16rpx;
 }
 
 .loading-sub {
-  font-size: 24rpx;
+  font-size: 26rpx;
   color: $text-secondary;
   margin-bottom: 8rpx;
+  text-align: center;
 }
 
 .loading-tip {
-  font-size: 22rpx;
+  font-size: 24rpx;
   color: $text-muted;
   margin-bottom: 32rpx;
 }
 
 .loading-bar {
   width: 100%;
-  height: 8rpx;
-  background: #f1f5f9;
-  border-radius: 4rpx;
+  height: 12rpx;
+  background-color: $bg-input;
+  border-radius: $radius-full;
   overflow: hidden;
+  position: relative;
+  margin-bottom: 16rpx;
 }
 
 .loading-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
   width: 30%;
-  height: 100%;
   background: $grad-primary;
-  border-radius: 4rpx;
-  animation: loading-bar-anim 2s ease-in-out infinite alternate;
+  border-radius: $radius-full;
+  animation: load 2s infinite ease-in-out;
 }
 
 .fake-progress-fill {
-  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
   background: $grad-primary;
-  border-radius: 4rpx;
-  transition: width 0.3s ease-out;
+  border-radius: $radius-full;
+  transition: width 0.5s ease-in-out;
 }
 
 .loading-percent {
-  font-size: 28rpx;
-  color: #2563eb;
-  font-weight: bold;
-  margin-top: 16rpx;
-  display: block;
-  text-align: center;
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% { opacity: 0.6; }
-  50% { opacity: 1; }
-  100% { opacity: 0.6; }
-}
-
-@keyframes loading-bar-anim {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(330%); }
-}
-
-/* ================== 综合报告大入口 ================== */
-.latest-card {
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
-  border-radius: $radius-xl;
-  padding: 48rpx 36rpx;
-  margin-top: 24rpx;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 12rpx 32rpx rgba(37, 99, 235, 0.25);
-  overflow: hidden;
-}
-
-.latest-glow {
-  position: absolute;
-  top: -100rpx;
-  right: -100rpx;
-  width: 300rpx;
-  height: 300rpx;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
-}
-
-.latest-label {
   font-size: 24rpx;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 8rpx;
-}
-
-.latest-title {
-  font-size: 44rpx;
-  font-weight: 900;
-  color: #fff;
-  margin-bottom: 12rpx;
-}
-
-.latest-time {
-  font-size: 22rpx;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 40rpx;
-}
-
-.giant {
-  width: 100%;
-  height: 96rpx;
-  border-radius: $radius-full;
-  font-size: 32rpx;
-  font-weight: 800;
-  background: #fff;
   color: $brand-primary;
-  margin-bottom: 24rpx;
-  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
-}
-
-.latest-actions {
-  display: flex;
-  gap: 20rpx;
-  width: 100%;
-}
-
-.latest-btn {
-  &.secondary {
-    flex: 1;
-    height: 72rpx;
-    border-radius: $radius-full;
-    font-size: 26rpx;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.15);
-    color: #fff;
-
-    &.outline {
-      background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-  }
-}
-
-/* ================== 深度包 ================== */
-.deep-report-package {
-  position: relative;
-  z-index: 1;
-  background: #fff;
-  border-radius: $radius-xl;
-  padding: 32rpx;
-  margin-top: 32rpx;
-  box-shadow: 0 4rpx 20rpx rgba(15, 23, 42, 0.03);
-  border: 1px solid rgba(15, 23, 42, 0.04);
-}
-
-.package-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 24rpx;
-}
-
-.package-title {
-  font-size: 30rpx;
   font-weight: 800;
-  color: $text-primary;
 }
 
-.package-quota {
-  font-size: 24rpx;
-  font-weight: 600;
-  color: $brand-primary;
-  background: rgba(37, 99, 235, 0.1);
-  padding: 6rpx 16rpx;
-  border-radius: $radius-full;
+@keyframes load {
+  0% { left: -30%; width: 30%; }
+  50% { left: 30%; width: 50%; }
+  100% { left: 100%; width: 30%; }
 }
 
-.package-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16rpx;
-}
-
-.package-item {
-  background: #f8fafc;
-  border-radius: $radius-lg;
-  padding: 24rpx;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.15s;
-
-  &:active {
-    transform: scale(0.97);
-  }
-}
-
-.package-name {
-  font-size: 26rpx;
-  font-weight: 800;
-  color: $text-primary;
-  margin-bottom: 8rpx;
-}
-
-.package-desc {
-  font-size: 20rpx;
-  color: $text-secondary;
-  line-height: 1.4;
-}
-
-/* ================== 解锁弹窗 ================== */
+/* 解锁弹窗 */
 .unlock-sheet-mask {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(4px);
-  z-index: 100;
+  background: rgba(15, 23, 42, 0.42);
+  z-index: 1000;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 
 .unlock-sheet {
-  width: 100%;
-  background: #fff;
-  border-radius: 40rpx 40rpx 0 0;
-  padding: 48rpx 40rpx calc(48rpx + env(safe-area-inset-bottom));
+  background: #ffffff;
+  width: 620rpx;
+  border-radius: $radius-xl;
+  padding: 48rpx 40rpx;
   display: flex;
   flex-direction: column;
+  max-height: 86vh;
+  overflow: auto;
 }
 
 .sheet-title {
   font-size: 36rpx;
-  font-weight: 900;
+  font-weight: 800;
   color: $text-primary;
   margin-bottom: 16rpx;
 }
@@ -998,59 +1292,87 @@ function goDeepReportDownload(mode = 'university') {
   font-size: 26rpx;
   color: $text-secondary;
   line-height: 1.5;
-  margin-bottom: 40rpx;
-}
-
-.sheet-primary {
-  height: 90rpx;
-  border-radius: $radius-full;
-  background: $grad-primary;
-  color: #fff;
-  font-size: 30rpx;
-  font-weight: 800;
   margin-bottom: 24rpx;
 }
 
-.sheet-secondary {
-  height: 90rpx;
-  border-radius: $radius-full;
-  background: #f1f5f9;
+.sheet-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+  margin-bottom: 24rpx;
+}
+
+.sheet-benefit {
+  display: block;
+  font-size: 24rpx;
   color: $text-primary;
+  line-height: 1.5;
+  background: #f8fafc;
+  border-radius: $radius-sm;
+  padding: 14rpx 18rpx;
+}
+
+.sheet-rule {
+  display: block;
+  color: $text-muted;
+  font-size: 23rpx;
+  line-height: 1.55;
+  margin-bottom: 28rpx;
+}
+
+.sheet-primary {
+  background: $grad-primary;
+  color: #ffffff;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: $radius-full;
   font-size: 30rpx;
   font-weight: 700;
-  margin-bottom: 40rpx;
-  border: none;
+  margin-bottom: 24rpx;
+
+  &::after { border: none; }
+}
+
+.sheet-secondary {
+  background: #f1f5f9;
+  color: $text-secondary;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: $radius-full;
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-bottom: 32rpx;
+
   &::after { border: none; }
 }
 
 .code-row {
   display: flex;
   gap: 16rpx;
-  align-items: center;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+  padding-top: 32rpx;
 }
 
 .code-input {
   flex: 1;
-  height: 80rpx;
-  background: #f8fafc;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  border-radius: $radius-full;
-  padding: 0 32rpx;
+  height: 76rpx;
+  background: #f1f5f9;
+  border-radius: $radius-sm;
+  padding: 0 24rpx;
   font-size: 28rpx;
 }
 
 .code-btn {
-  width: 140rpx;
-  height: 80rpx;
-  background: #e2e8f0;
-  color: $text-primary;
-  font-size: 28rpx;
-  font-weight: 700;
-  border-radius: $radius-full;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 76rpx;
+  line-height: 76rpx;
   margin: 0;
+  background: $brand-primary;
+  color: #ffffff;
+  font-size: 28rpx;
+  font-weight: 600;
+  padding: 0 32rpx;
+  border-radius: $radius-sm;
+
   &::after { border: none; }
 }
 </style>

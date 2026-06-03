@@ -132,6 +132,12 @@
         "selectedIconPath": "static/tabbar/home-active.png"
       },
       {
+        "pagePath": "pages/chat/chat",
+        "text": "AI 咨询",
+        "iconPath": "static/tabbar/chat.png",
+        "selectedIconPath": "static/tabbar/chat-active.png"
+      },
+      {
         "pagePath": "pages/report/report",
         "text": "报告",
         "iconPath": "static/tabbar/assess.png",

@@ -11,7 +11,7 @@
           <view class="intro-icon-glow" />
           <view class="intro-icon">🧠</view>
         </view>
-        <text class="intro-title">MBTI 性格测试</text>
+        <text class="intro-title">性格测试</text>
         <text class="intro-desc">了解你在沟通、信息处理、判断方式和生活节奏上的偏好，作为专业选择时的参考。</text>
 
         <!-- 版本选择器 -->
@@ -61,7 +61,7 @@
       <!-- 头部进度条 -->
       <view class="progress-bar-wrap">
         <view class="progress-info">
-          <text class="progress-text">MBTI 测试 {{ currentIndex + 1 }} / {{ activeQuestions.length }} 题</text>
+          <text class="progress-text">性格测试 {{ currentIndex + 1 }} / {{ activeQuestions.length }} 题</text>
           <text class="progress-pct">{{ Math.round((currentIndex + 1) / activeQuestions.length * 100) }}%</text>
         </view>
         <view class="progress-track">
@@ -154,7 +154,7 @@ const isCurrentAnswered = computed(() => answers.value[currentQuestion.value.id]
 
 onMounted(() => {
   uni.setNavigationBarTitle({
-    title: 'MBTI 性格测试'
+    title: '性格测试'
   })
 })
 

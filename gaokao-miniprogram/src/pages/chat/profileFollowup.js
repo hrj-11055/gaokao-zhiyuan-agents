@@ -1,18 +1,9 @@
-const RECOMMENDATION_KEYWORDS = [
-  '推荐',
-  '冲',
-  '稳',
-  '保',
-  '学校',
-  '院校',
-  '大学',
-  '专业',
-  '志愿',
-  '填报',
-  '能上',
-  '报考',
-  '适合',
-  '录取',
+const RECOMMENDATION_PATTERNS = [
+  /推荐|冲稳保|冲|稳|保|能上|能报|报什么|报哪些|报考/u,
+  /适合.*(?:学校|院校|大学|层次|志愿)/u,
+  /志愿.*(?:怎么|如何|推荐|方案|填|报|冲|稳|保)/u,
+  /(?:怎么|如何).*志愿/u,
+  /填报.*(?:志愿|怎么|如何|推荐|方案|冲|稳|保)/u,
 ]
 
 const CORE_FOLLOWUP_STEPS = [
@@ -32,8 +23,12 @@ const CORE_FOLLOWUP_STEPS = [
 
 const PERSONAL_FOLLOWUP_STEPS = [
   {
+    field: 'rank',
+    question: '如果你已经查到全省位次，也发我一下；同分段录取判断看位次会更准。',
+  },
+  {
     field: 'family_resources',
-    question: '我先问一个家庭资源问题：家里预算和资源大概是什么情况？比如能不能接受民办或中外合作，父母行业有没有能帮你实习就业的方向。',
+    question: '我再问一个关键问题：家里预算和资源大概是什么情况？比如能不能接受民办或中外合作，父母行业有没有能帮你实习就业的方向。',
   },
   {
     field: 'interest_subjects',
@@ -49,7 +44,10 @@ const PERSONAL_FOLLOWUP_STEPS = [
   },
 ]
 
+const RECOMMENDATION_PROFILE_STEPS = PERSONAL_FOLLOWUP_STEPS.filter((step) => step.field !== 'rank')
+
 const PERSONAL_FOLLOWUP_ANCHORS = {
+  rank: ['全省位次', '同分段', '录取判断', '位次会更准'],
   family_resources: ['家庭资源', '家里预算', '民办', '中外合作', '父母行业', '实习就业'],
   interest_subjects: ['更喜欢哪类学科', '明确不想碰', '数学', '物理', '计算机', '医学'],
   region_preference: ['城市有没有硬要求', '优先省内', '可以去外省', '北方', '西南', '东北'],
@@ -141,7 +139,7 @@ function extractNumbers(text) {
 
 export function isRecommendationIntent(text) {
   const query = String(text || '')
-  return RECOMMENDATION_KEYWORDS.some((keyword) => query.includes(keyword))
+  return RECOMMENDATION_PATTERNS.some((pattern) => pattern.test(query))
 }
 
 export function isCoreProfileField(field) {
@@ -154,6 +152,16 @@ export function getNextCoreProfileFollowup(inputs = {}) {
 
 export function getNextPersonalProfileFollowup(inputs = {}) {
   return PERSONAL_FOLLOWUP_STEPS.find((step) => !hasValue(inputs[step.field])) || null
+}
+
+export function getNextRecommendationProfileFollowup(inputs = {}) {
+  return RECOMMENDATION_PROFILE_STEPS.find((step) => !hasValue(inputs[step.field])) || null
+}
+
+export function hasAnyPersonalProfileInput(inputs = {}) {
+  return PERSONAL_FOLLOWUP_STEPS
+    .filter((step) => step.field !== 'rank')
+    .some((step) => hasValue(inputs[step.field]))
 }
 
 export function mergeFollowupAnswer(profile = {}, field, answer) {
@@ -174,6 +182,14 @@ export function mergeFollowupAnswer(profile = {}, field, answer) {
       ...profile,
       ...(numbers[0] !== undefined ? { score: numbers[0] } : {}),
       ...(numbers[1] !== undefined ? { rank: numbers[1] } : {}),
+    }
+  }
+
+  if (field === 'rank') {
+    const numbers = extractNumbers(text)
+    return {
+      ...profile,
+      ...(numbers[0] !== undefined ? { rank: numbers[0] } : {}),
     }
   }
 
@@ -233,4 +249,41 @@ export function mergeProfileFactsFromText(profile = {}, text = '') {
     },
     fields: Object.keys(updates),
   }
+}
+
+export function buildCandidateQuestions(profile = {}) {
+  const province = normalizeProvince(profile.province)
+  const category = normalizeCategory(profile.category)
+  const score = profile.score !== undefined && profile.score !== '' ? Number(profile.score) : ''
+  const scoreText = Number.isFinite(score) ? `${score}分` : ''
+  const profileText = [province, category, scoreText].filter(Boolean).join('')
+
+  const questions = []
+  if (profileText) {
+    questions.push(`按我${profileText}，适合什么学校层次？`)
+  } else {
+    questions.push('我适合报考什么层次的学校？')
+  }
+
+  if (category === '物理类') {
+    questions.push('物理类更适合工科还是理科？')
+  } else if (category === '历史类') {
+    questions.push('历史类适合法学财经还是师范？')
+  } else {
+    questions.push('我应该优先看学校、专业还是城市？')
+  }
+
+  if (!hasValue(profile.family_resources)) {
+    questions.push('民办/中外合作要不要考虑？')
+  } else if (!hasValue(profile.interest_subjects)) {
+    questions.push('哪些专业方向不适合我盲目冲？')
+  } else if (!hasValue(profile.region_preference)) {
+    questions.push('省内和外省学校怎么权衡更务实？')
+  } else {
+    questions.push('哪些选择看起来体面但实际风险高？')
+  }
+
+  questions.push('我还需要补充哪些个人信息？')
+
+  return questions.slice(0, 4)
 }

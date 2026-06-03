@@ -28,16 +28,16 @@ function createDeepReportViewToken({ userId, type, id }, secret, {
   now = () => Date.now(),
 } = {}) {
   if (!secret) throw new Error('view token secret is required')
-  if (!userId || !type || !id) throw new Error('userId, type and id are required')
+  if (!type || !id) throw new Error('type and id are required')
 
   const payload = {
-    userId: String(userId),
     type: String(type),
     id: String(id),
     exp: now() + ttlMs,
     iat: now(),
     nonce: crypto.randomBytes(8).toString('hex'),
   }
+  if (userId) payload.userId = String(userId)
   const body = encode(payload)
   return `${body}.${sign(body, secret)}`
 }
@@ -59,7 +59,7 @@ function verifyDeepReportViewToken(token, secret, {
   if (!payload.exp || Number(payload.exp) < now()) {
     throw new Error('view token expired')
   }
-  if (!payload.userId || !payload.type || !payload.id) {
+  if (!payload.type || !payload.id) {
     throw new Error('invalid view token payload')
   }
   return payload

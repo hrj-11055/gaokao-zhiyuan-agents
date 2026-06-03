@@ -378,6 +378,57 @@ export const HOLLAND_QUESTIONS = [
   }
 ]
 
+export const HOLLAND_DIMENSION_TRAITS = {
+  R: {
+    name: '实用型(R)',
+    traits: [
+      '偏好从事需要体力和动手能力的工作',
+      '喜欢使用工具、机器进行操作或修理事物',
+      '性格务实、脚踏实地，追求具体可见的成果'
+    ]
+  },
+  I: {
+    name: '研究型(I)',
+    traits: [
+      '喜欢探索和思考，偏好逻辑分析和抽象概念',
+      '热衷于解决复杂问题，追求对事物的深入理解',
+      '通常具有较强的观察力和独立思考能力'
+    ]
+  },
+  A: {
+    name: '艺术型(A)',
+    traits: [
+      '喜欢创造性地表达想法，追求美感和个性化',
+      '偏好非结构化、灵活的工作环境，不喜欢严格的规则',
+      '情感丰富，对色彩、构图、音乐等有敏锐的感知'
+    ]
+  },
+  S: {
+    name: '社会型(S)',
+    traits: [
+      '喜欢与人互动，乐于助人和分享知识',
+      '偏好教育、咨询或服务他人的工作环境',
+      '具有强烈的社会责任感和出色的沟通协调能力'
+    ]
+  },
+  E: {
+    name: '企业型(E)',
+    traits: [
+      '喜欢领导和影响他人，追求商业成功和社会地位',
+      '勇于承担风险，偏好充满挑战和竞争的环境',
+      '具有出色的说服能力、组织策划能力和管理才能'
+    ]
+  },
+  C: {
+    name: '常规型(C)',
+    traits: [
+      '喜欢有条理、规范化的工作，注重细节和准确性',
+      '偏好数据管理、文秘和按部就班的流程性工作',
+      '性格稳重，做事严谨、自律，执行力强'
+    ]
+  }
+}
+
 /**
  * 霍兰德职业兴趣类型描述
  * 包含所有常见的三字母代码组合
@@ -933,6 +984,46 @@ export const HOLLAND_TYPE_LABELS = {
   C: '常规型'
 }
 
+const HOLLAND_RESULT_CODE_LETTERS = ['R', 'I', 'A', 'S', 'E', 'C']
+
+function findHollandReportTemplate(code) {
+  if (HOLLAND_TYPE_DESCRIPTIONS[code]) {
+    return HOLLAND_TYPE_DESCRIPTIONS[code]
+  }
+
+  const twoLetterCode = code.slice(0, 2)
+  const twoLetterMatch = Object.entries(HOLLAND_TYPE_DESCRIPTIONS)
+    .find(([key]) => key.startsWith(twoLetterCode))
+  if (twoLetterMatch) {
+    return twoLetterMatch[1]
+  }
+
+  const primaryMatch = Object.entries(HOLLAND_TYPE_DESCRIPTIONS)
+    .find(([key]) => key.startsWith(code[0]))
+  return primaryMatch?.[1] || HOLLAND_TYPE_DESCRIPTIONS.RIA
+}
+
+function buildHollandResultReports() {
+  const reports = {}
+  HOLLAND_RESULT_CODE_LETTERS.forEach((first) => {
+    HOLLAND_RESULT_CODE_LETTERS.forEach((second) => {
+      if (second === first) return
+      HOLLAND_RESULT_CODE_LETTERS.forEach((third) => {
+        if (third === first || third === second) return
+        const code = `${first}${second}${third}`
+        const template = findHollandReportTemplate(code)
+        reports[code] = {
+          ...template,
+          code,
+        }
+      })
+    })
+  })
+  return reports
+}
+
+export const HOLLAND_RESULT_REPORTS = buildHollandResultReports()
+
 /**
  * 霍兰德精简版题库（12 题，每类型 2 题）
  * 从完整版 60 题中精选最核心的题目
@@ -940,6 +1031,23 @@ export const HOLLAND_TYPE_LABELS = {
 export const HOLLAND_QUESTIONS_BASIC = HOLLAND_QUESTIONS.filter(q =>
   [1, 2, 11, 13, 21, 22, 31, 32, 41, 42, 51, 52].includes(q.id)
 )
+
+export function getHollandDimensionMaxScores(version = 'full') {
+  const questions = version === 'basic' ? HOLLAND_QUESTIONS_BASIC : HOLLAND_QUESTIONS
+  const maxScores = Object.fromEntries(HOLLAND_RESULT_CODE_LETTERS.map(type => [type, 0]))
+
+  questions.forEach(q => {
+    if (maxScores[q.type] !== undefined) {
+      maxScores[q.type] += 4
+    }
+  })
+
+  return maxScores
+}
+
+export function getHollandMaxScore(version = 'full') {
+  return Math.max(...Object.values(getHollandDimensionMaxScores(version)), 1)
+}
 
 /**
  * 通用霍兰德职业兴趣代码计算函数（支持任意题目子集）
@@ -998,13 +1106,13 @@ export function calculateHollandCode(answers) {
  */
 export function getHollandDescription(code) {
   // 如果精确匹配三字母代码
-  if (HOLLAND_TYPE_DESCRIPTIONS[code]) {
-    return HOLLAND_TYPE_DESCRIPTIONS[code]
+  if (HOLLAND_RESULT_REPORTS[code]) {
+    return HOLLAND_RESULT_REPORTS[code]
   }
 
   // 如果没有精确匹配，使用前两个字母匹配
   const twoLetterCode = code.substring(0, 2)
-  for (const [key, value] of Object.entries(HOLLAND_TYPE_DESCRIPTIONS)) {
+  for (const [key, value] of Object.entries(HOLLAND_RESULT_REPORTS)) {
     if (key.startsWith(twoLetterCode)) {
       return value
     }

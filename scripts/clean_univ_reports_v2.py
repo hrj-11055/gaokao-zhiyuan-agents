@@ -77,11 +77,23 @@ class UnivReportParser:
         2: ('module2_student_competitiveness', ['生源竞争力', '生源质量', '入学门槛']),
         3: ('module3_graduate_value', ['毕业生价值', '就业价值', '毕业价值']),
         4: ('module4_location_industry', ['区位', '产业', '全球化', '城市']),
-        5: ('module5_campus_ecosystem', ['校园生态', '校园生活', '生活品质', '品牌']),
-        6: ('module6_comprehensive_evaluation', ['综合评估', '量化评分', '总分', '加权']),
-        7: ('module7_culture_cards', ['文化揭秘', '避坑', '生存指南', '气质标签', '报考指南', '校园真相']),
-        8: ('module8_raw_data', ['原始数据', '数据汇总', '数据支撑']),
+        5: ('module5_campus_ecosystem', ['校园生态', '校园生活', '生活品质', '品牌', '宿舍', '转专业']),
+        6: ('module6_comprehensive_evaluation', ['综合评估', '量化评分', '六维', '总分', '加权', '总结评价', '执行摘要', '报考建议', '横向对比']),
+        7: ('module7_culture_cards', ['文化揭秘', '避坑', '生存指南', '气质标签', '报考指南', '校园真相', '刻板印象', '校园精神', '校园黑话', '风险提示']),
+        8: ('module8_raw_data', ['原始数据', '数据汇总', '数据支撑', '数据源', '数据来源', '未检索']),
         9: ('module9_structured_export', ['结构化数据', '数据导出', '结构化导出']),
+    }
+
+    MODULE_TITLES = {
+        1: '模块一：学术资本',
+        2: '模块二：生源竞争力',
+        3: '模块三：毕业生价值实现',
+        4: '模块四：区位与产业势能',
+        5: '模块五：校园生态',
+        6: '模块六：综合评估与量化评分',
+        7: '模块七：文化揭秘与避坑指南',
+        8: '模块八：原始数据汇总',
+        9: '模块九：结构化数据导出',
     }
 
     # 中文数字 → 阿拉伯数字
@@ -89,67 +101,77 @@ class UnivReportParser:
 
     def _heading_to_module_num(self, heading: str) -> int:
         """从标题文本推断模块编号（1-9），返回 0 表示无法识别"""
-        # 策略1: "模块X" / "模块X：" / "第X模块"
-        m = re.search(r'模块([一二三四五六七八九\d])', heading)
-        if m:
-            cn = m.group(1)
-            return self.CN_NUM.get(cn, int(cn) if cn.isdigit() else 0)
-
-        # 策略2: "第X章" / "第X部分"
-        m = re.search(r'第([一二三四五六七八九\d])[章部分]', heading)
-        if m:
-            cn = m.group(1)
-            return self.CN_NUM.get(cn, int(cn) if cn.isdigit() else 0)
-
-        # 策略3: "X、" (中文数字顿号)
-        m = re.match(r'([一二三四五六七八九])、', heading.strip())
-        if m:
-            return self.CN_NUM.get(m.group(1), 0)
-
-        # 策略4: 数字开头 "1." / "1、"
-        m = re.match(r'(\d)[.、．]', heading.strip())
-        if m:
-            return int(m.group(1))
-
-        # 策略5: 关键词匹配
+        # 策略1: 语义关键词优先，避免 "六、校园生态" 被硬按编号归到模块六
         for num, (_, keywords) in self.MODULE_MAP.items():
             for kw in keywords:
                 if kw in heading:
                     return num
 
+        # 策略2: "模块X" / "模块X：" / "第X模块"
+        m = re.search(r'模块([一二三四五六七八九\d])', heading)
+        if m:
+            cn = m.group(1)
+            return self.CN_NUM.get(cn, int(cn) if cn.isdigit() else 0)
+
+        # 策略3: "第X章" / "第X部分"
+        m = re.search(r'第([一二三四五六七八九\d])[章部分]', heading)
+        if m:
+            cn = m.group(1)
+            return self.CN_NUM.get(cn, int(cn) if cn.isdigit() else 0)
+
+        # 策略4: "X、" (中文数字顿号)
+        m = re.match(r'([一二三四五六七八九])、', heading.strip())
+        if m:
+            return self.CN_NUM.get(m.group(1), 0)
+
+        # 策略5: 数字开头 "1." / "1、" 或子标题 "1.1"
+        m = re.match(r'(\d)(?:[.、．]|\.\d+)', heading.strip())
+        if m:
+            return int(m.group(1))
+
         return 0
 
-    def parse_all_modules(self, content: str) -> Dict[str, str]:
-        """提取所有模块的原始内容，支持多种标题格式（## 和 ###）"""
-        modules = {}
+    def extract_module_by_number(self, content: str, module_num: int) -> Dict[str, str]:
+        """按实际标题切模块，保留模块内的子标题和正文。"""
+        headings = []
+        for match in re.finditer(r'(?m)^(#{1,4})\s+(.+?)\s*$', content):
+            title = match.group(2).strip()
+            num = self._heading_to_module_num(title)
+            if num:
+                headings.append({
+                    'num': num,
+                    'title': title,
+                    'start': match.start(),
+                    'body_start': match.end(),
+                    'level': len(match.group(1)),
+                })
 
-        # 按 ## 或 ### 分割所有章节
-        sections = re.split(r'\n(?=##?#? )', content)
-
-        parsed = []  # (module_num, title, raw_content)
-        for section in sections:
-            # 提取标题行（## 或 ###）
-            m = re.match(r'#{2,3}\s+(.+)', section)
-            if not m:
+        for idx, heading in enumerate(headings):
+            if heading['num'] != module_num:
                 continue
-            heading = m.group(1).strip()
-            # 提取内容（去掉标题行本身）
-            body = re.sub(r'^#{2,3}\s+[^\n]*\n', '', section, count=1)
-            body = self.clean_text(body)
 
-            num = self._heading_to_module_num(heading)
-            if num > 0 and body:
-                parsed.append((num, heading, body))
+            end = len(content)
+            for next_heading in headings[idx + 1:]:
+                if next_heading['num'] != module_num and next_heading['level'] <= heading['level']:
+                    end = next_heading['start']
+                    break
 
-        # 对同一模块编号取最长的内容（处理重复标题）
-        best = {}
-        for num, title, body in parsed:
-            key, _ = self.MODULE_MAP[num]
-            if key not in best or len(body) > len(best[key]['raw_content']):
-                best[key] = {'title': title, 'raw_content': body}
+            return {
+                'title': heading['title'],
+                'raw_content': self.clean_text(content[heading['body_start']:end])
+            }
 
-        modules.update(best)
-        return modules
+        return {
+            'title': self.MODULE_TITLES.get(module_num, f'模块{module_num}'),
+            'raw_content': ''
+        }
+
+    def parse_all_modules(self, content: str) -> Dict[str, str]:
+        """提取所有模块，标题用实际报告标题，key 保持稳定。"""
+        return {
+            self.MODULE_MAP[num][0]: self.extract_module_by_number(content, num)
+            for num in sorted(self.MODULE_MAP)
+        }
 
     def parse_six_dimension_table(self, content: str) -> Dict:
         """解析六维评分表"""
@@ -194,16 +216,51 @@ class UnivReportParser:
     def parse_one_sentence_recommend(self, content: str) -> str:
         """解析一句话推荐"""
         patterns = [
-            r'### 6\.3 一句话推荐\s*\n\*\*(.+?)\*\*',
-            r'### 6\.3 一句话推荐\s*\n(.+?)(?:\n\n|###|$)',
+            r'#{2,4}\s*\d+(?:\.\d+)?\s*一句话推荐\s*\n+\s*\*\*(.+?)\*\*',
+            r'#{2,4}\s*\d+(?:\.\d+)?\s*一句话推荐\s*\n+\s*(.+?)(?:\n\n|#{2,4}\s|$)',
+            r'一句话推荐[：:]\s*\*\*(.+?)\*\*',
             r'一句话推荐[：:]\s*\*(.+?)\*',
-            r'一句话推荐[：:]\s*(.+?)(?:\n\n|###|$)'
+            r'一句话推荐[：:]\s*(.+?)(?:\n\n|#{2,4}\s|$)',
+            r'一句话报考建议[：:]\s*(.+?)(?:\n\n|#{2,4}\s|$)',
+            r'核心报考建议[：:]\s*(.+?)(?:\n\n|#{2,4}\s|$)',
+            r'终极建议[：:]\s*(.+?)(?:\n\n|#{2,4}\s|$)',
         ]
         for pattern in patterns:
             match = re.search(pattern, content, re.DOTALL)
             if match:
-                return self.clean_text(match.group(1))
+                value = self.clean_text(match.group(1))
+                value = re.sub(r'^\s*[-*]\s*', '', value)
+                value = value.split('\n')[0].strip()
+                if value:
+                    return value
         return ""
+
+    def parse_summary_fallback(self, content: str, module6_raw: str = "") -> str:
+        """为列表摘要提供兜底，优先一句话推荐，其次总结章节/序言首段。"""
+        direct = self.parse_one_sentence_recommend(module6_raw) or self.parse_one_sentence_recommend(content)
+        if direct:
+            return direct[:260]
+
+        summary_patterns = [
+            r'#{2,4}\s*(?:第[七八九十]+章[:：]?)?总结评价[^\n]*\n+(.+?)(?:\n\n|#{2,4}\s|$)',
+            r'#{2,4}\s*(?:结论|总结|报考建议)[^\n]*\n+(.+?)(?:\n\n|#{2,4}\s|$)',
+            r'#{2,4}\s*(?:前言|序言)[^\n]*\n+(.+?)(?:\n\n|#{2,4}\s|$)',
+        ]
+        for pattern in summary_patterns:
+            match = re.search(pattern, content, re.DOTALL)
+            if match:
+                value = self.clean_text(match.group(1))
+                value = re.sub(r'[#>*`|]', '', value)
+                value = re.sub(r'\s+', ' ', value).strip()
+                if value:
+                    return value[:260]
+
+        paragraphs = [
+            self.clean_text(p)
+            for p in re.split(r'\n\s*\n', content)
+            if len(self.clean_text(p)) >= 80 and not p.lstrip().startswith('|')
+        ]
+        return re.sub(r'\s+', ' ', paragraphs[0]).strip()[:260] if paragraphs else ""
 
     def parse_location(self, content: str) -> str:
         """解析所在地"""
@@ -318,6 +375,7 @@ class UnivReportParser:
         # 如果模块六没提取到，从全文尝试
         if weighted_score == 0.0:
             weighted_score = self.parse_weighted_score(content)
+        summary = self.parse_summary_fallback(content, module6_raw)
 
         # 构建结构化数据
         result = {
@@ -333,13 +391,13 @@ class UnivReportParser:
                 'location': self.parse_location(content),
                 'type': self.parse_univ_type(name, content),
                 'recommendation_level': self.parse_recommendation_level(content, weighted_score),
-                'summary': self.parse_one_sentence_recommend(module6_raw),
+                'summary': summary,
                 'radar': self.parse_six_dimension_table(module6_raw),
                 'weighted_score': weighted_score,
-                'one_sentence_recommend': self.parse_one_sentence_recommend(module6_raw)
+                'one_sentence_recommend': summary
             },
             'layer2_core': {
-                'summary': self.parse_one_sentence_recommend(module6_raw)
+                'summary': summary
             },
             'layer3_detail': {
                 'module1_academic_capital': {

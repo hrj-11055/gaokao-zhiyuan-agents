@@ -15,7 +15,7 @@ def require_env(name):
     return value
 
 
-DIFY_BASE = os.environ.get("DIFY_BASE", "http://8.135.37.159:8080")
+DIFY_BASE = os.environ.get("DIFY_BASE", "http://159.75.110.157")
 EMAIL = require_env("DIFY_EMAIL")
 PASSWORD = require_env("DIFY_PASSWORD")
 KB1_DATASET_ID = "a6851f4b-4a6c-47af-a094-c37496560b81"

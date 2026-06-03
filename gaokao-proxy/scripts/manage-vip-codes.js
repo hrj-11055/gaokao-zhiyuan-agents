@@ -286,7 +286,7 @@ function setCodeStatus(options, status) {
 
 function main() {
   const { command, options } = parseArgs(process.argv.slice(2))
-  if (!command || options.help) usage(0)
+  if (!command || command === 'help' || command === '--help' || options.help) usage(0)
 
   switch (command) {
     case 'generate':

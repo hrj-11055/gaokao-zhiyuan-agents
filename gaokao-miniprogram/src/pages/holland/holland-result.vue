@@ -1,94 +1,108 @@
 <template>
   <view class="holland-result-page">
-    <!-- 炫彩背景氛围粒子 -->
-    <view class="cyber-glow-bg-orange" />
-    <view class="cyber-glow-bg-violet" />
+    <view class="page-bg" />
 
-    <!-- 结果内容 -->
     <view class="result-content">
-      <!-- 结果头部 - 玻璃面板与炫金渐变 -->
-      <view class="result-header">
-        <view class="header-glow" />
-        <view v-if="resultVersion" class="version-label" :class="resultVersion">
-          <text class="version-label-text">{{ resultVersion === 'basic' ? '⚡ 精简版测评' : '🔬 完整版测评' }}</text>
-        </view>
-        <view class="code-badge-wrap">
-          <view class="code-badge">{{ result.code }}</view>
-        </view>
-        <text class="type-name">{{ typeInfo.name }}</text>
-        <view class="type-tags">
-          <text v-for="(tag, idx) in typeInfo.tags" :key="idx" class="tag">{{ tag }}</text>
-        </view>
-      </view>
-
-      <!-- 维度得分 -->
-      <view class="section">
-        <view class="section-header">
-          <view class="section-title-wrap">
-            <view class="title-dot" />
-            <text class="section-title">RIASEC 六维兴趣结果</text>
+      <!-- 头部：核心结果卡片 -->
+      <view class="header-card">
+        <view class="brand-line" />
+        <view class="header-inner">
+          <view v-if="resultVersion" class="version-label" :class="resultVersion">
+            <text class="version-label-text">{{ resultVersion === 'basic' ? '⚡ 精简版测评' : '🔬 完整版测评' }}</text>
           </view>
-        </view>
-        <view class="dimensions-list">
-          <view v-for="dim in sortedDimensions" :key="dim.type" class="dimension-item" :class="'dim-' + dim.type.toLowerCase()">
-            <view class="dimension-header">
-              <view class="dim-label-wrap">
-                <view class="dim-bullet" />
-                <text class="dimension-label">{{ dim.label }} ({{ dim.type }})</text>
-              </view>
-              <text class="dimension-score">{{ dim.score }} 分</text>
-            </view>
-            <view class="score-bar-wrap">
-              <view class="score-bar">
-                <view class="score-fill" :style="{ width: getPercent(dim.score) }">
-                  <view class="score-glow-dot" />
-                </view>
-              </view>
-            </view>
+          
+          <view class="code-title-wrap">
+            <text class="code-title">{{ result.code }}</text>
+          </view>
+          <text class="type-name">{{ typeInfo.name }}</text>
+          
+          <view class="type-tags">
+            <text v-for="(tag, idx) in typeInfo.tags" :key="idx" class="tag">{{ tag }}</text>
           </view>
         </view>
       </view>
 
-      <!-- 性格特征 -->
+      <!-- 综合表现：雷达图与表格 -->
       <view class="section">
-        <view class="section-header">
-          <view class="section-title-wrap">
-            <view class="title-dot" />
-            <text class="section-title">主要兴趣特征</text>
+        <view class="section-header-center">
+          <text class="section-title">综合表现</text>
+        </view>
+        
+        <!-- 雷达图 -->
+        <view class="score-scale-tip">
+          <text class="scale-tip-text">{{ scoreScaleTip }}</text>
+        </view>
+        <view class="radar-container">
+          <image class="radar-chart" :src="radarChartUrl" mode="aspectFit" />
+        </view>
+
+        <!-- 数据表格 -->
+        <view class="data-table">
+          <view class="table-header">
+            <text class="th">兴趣维度</text>
+            <text class="th">原始得分</text>
+            <text class="th">本版满分</text>
+          </view>
+          <view class="table-row" v-for="dim in sortedDimensions" :key="dim.type">
+            <text class="td font-medium">{{ dim.label }}({{ dim.type }})</text>
+            <text class="td score-text">{{ dim.score }}</text>
+            <text class="td text-light">{{ dim.maxScoreText }}</text>
           </view>
         </view>
-        <view class="traits-list">
-          <view v-for="(trait, idx) in typeInfo.traits" :key="idx" class="trait-item">
-            <view class="trait-bullet-outer">
+      </view>
+
+      <!-- 多维特质分析 -->
+      <view class="section">
+        <view class="section-header-center">
+          <text class="section-title">特质分析</text>
+        </view>
+        
+        <!-- 单维度解析 -->
+        <view class="trait-group" v-for="dim in topDimensions" :key="dim.name">
+          <view class="trait-group-title">
+            <text class="trait-title-text">{{ dim.name }}</text>
+          </view>
+          <view class="trait-list">
+            <view class="trait-row" v-for="(t, idx) in dim.traits" :key="idx">
               <view class="trait-bullet" />
+              <text class="trait-text">{{ t }}</text>
             </view>
-            <text class="trait-text">{{ trait }}</text>
+          </view>
+        </view>
+        
+        <view class="trait-divider" />
+        
+        <!-- 综合解析 -->
+        <view class="trait-group">
+          <view class="trait-group-title">
+            <text class="trait-title-text highlight">整体综合特质</text>
+          </view>
+          <view class="trait-list">
+            <view class="trait-row" v-for="(t, idx) in typeInfo.traits" :key="idx">
+              <view class="trait-bullet highlight" />
+              <text class="trait-text">{{ t }}</text>
+            </view>
           </view>
         </view>
       </view>
 
-      <!-- 适合职业方向 -->
+      <!-- 职业方向推荐 -->
       <view class="section">
-        <view class="section-header">
-          <view class="section-title-wrap">
-            <view class="title-dot" />
-            <text class="section-title">适合关注的职业方向</text>
-          </view>
+        <view class="section-header-center">
+          <text class="section-title">职业方向推荐</text>
         </view>
-        <view class="careers-grid">
-          <text v-for="(career, idx) in typeInfo.careers" :key="idx" class="career-tag">
-            {{ career }}
-          </text>
+        <view class="career-list">
+          <view class="career-item" v-for="(career, idx) in typeInfo.careers" :key="idx">
+            <view class="career-dot" />
+            <text class="career-text">{{ career }}</text>
+          </view>
         </view>
       </view>
 
       <!-- 专业推荐 -->
       <view class="section">
-        <view class="section-header">
-          <view class="section-title-wrap">
-            <view class="title-dot" />
-            <text class="section-title">可优先了解的专业</text>
-          </view>
+        <view class="section-header-center">
+          <text class="section-title">专业推荐</text>
         </view>
         <view class="majors-list">
           <view v-for="(major, idx) in majorCards" :key="major.name" class="major-card" @click="viewMajorDetail(major.name)">
@@ -98,7 +112,7 @@
                 <text v-for="s in 5" :key="s" class="star-char" :class="{ filled: s <= (5 - Math.floor(idx / 2)) }">★</text>
               </view>
             </view>
-            <text class="major-desc">{{ major.insight?.summary || getMajorDesc(major.name) }}</text>
+            <text class="major-desc">{{ major.insight.summary }}</text>
             <view v-if="major.insight" class="major-insights">
               <view class="major-insight-row">
                 <text class="major-insight-label">核心课程</text>
@@ -113,15 +127,11 @@
                 <text class="major-insight-text">{{ major.insight.salarySummary }}</text>
               </view>
             </view>
-            <view class="major-footer">
-              <text class="major-link">查看专业详情</text>
-              <view class="arrow-icon">➔</view>
-            </view>
           </view>
         </view>
       </view>
 
-      <!-- 底部按钮 -->
+      <!-- 底部悬浮按钮 -->
       <view class="footer-bar">
         <view class="footer-blur" />
         <view class="footer-btns">
@@ -135,7 +145,6 @@
     <view v-if="showConfirm" class="modal-overlay" @click="showConfirm = false">
       <view class="modal-content" @click.stop>
         <view class="modal-header">
-          <view class="modal-warning-glow" />
           <view class="modal-icon">⚠️</view>
         </view>
         <text class="modal-title">重新进行职业兴趣测试？</text>
@@ -153,8 +162,18 @@
 import { ref, computed } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import { loadAssessments, saveAssessments } from '../../utils/storage.js'
-import { HOLLAND_TYPE_DESCRIPTIONS, HOLLAND_TYPE_LABELS } from '../../data/holland-questions.js'
+import {
+  HOLLAND_RESULT_REPORTS,
+  HOLLAND_TYPE_LABELS,
+  HOLLAND_DIMENSION_TRAITS,
+  getHollandDimensionMaxScores,
+  getHollandMaxScore
+} from '../../data/holland-questions.js'
 import { fetchMajorInsights } from '../../api/majorInsights.js'
+import { buildMajorCards, normalizeMajorName } from '../../data/major-learning-profiles.js'
+import { useReportPregen } from '../../composables/useReportPregen.js'
+
+const { tryTriggerPregenerate } = useReportPregen()
 
 const result = ref({
   code: '',
@@ -168,31 +187,133 @@ const showConfirm = ref(false)
 // 维度标签映射
 const dimensionLabels = HOLLAND_TYPE_LABELS
 
+const hollandDimensionMaxScores = computed(() => getHollandDimensionMaxScores(resultVersion.value))
+const hollandMaxScore = computed(() => getHollandMaxScore(resultVersion.value))
+const resultModeName = computed(() => resultVersion.value === 'basic' ? '精简版' : '完整版')
+const scoreScaleTip = computed(() => `${resultModeName.value}雷达图按本版满分 ${hollandMaxScore.value} 分绘制`)
+
 // 排序后的维度（按分数降序）
 const sortedDimensions = computed(() => {
   return Object.entries(result.value.scores)
     .map(([type, score]) => ({
       type,
       label: dimensionLabels[type],
-      score
+      score,
+      maxScore: hollandDimensionMaxScores.value[type] || hollandMaxScore.value,
+      maxScoreText: String(hollandDimensionMaxScores.value[type] || hollandMaxScore.value)
     }))
     .sort((a, b) => b.score - a.score)
+})
+
+// 获取前三个维度的单项解析
+const topDimensions = computed(() => {
+  const code = result.value.code || ''
+  const dims = []
+  for (let i = 0; i < code.length; i++) {
+    const letter = code[i]
+    if (HOLLAND_DIMENSION_TRAITS[letter]) {
+      dims.push(HOLLAND_DIMENSION_TRAITS[letter])
+    }
+  }
+  return dims
+})
+
+// 生成 SVG 雷达图 Data URI
+const radarChartUrl = computed(() => {
+  const scores = result.value.scores || {}
+  const cx = 120
+  const cy = 120
+  const radius = 82
+  const order = ['R', 'I', 'A', 'S', 'E', 'C']
+  const labels = ['实用型R', '研究型I', '艺术型A', '社会型S', '企业型E', '常规型C']
+  const maxScores = hollandDimensionMaxScores.value
+  const fallbackMaxScore = hollandMaxScore.value
+  
+  let dataPtsStr = ''
+  let circlesSvg = ''
+  let scoreLabelsSvg = ''
+  
+  order.forEach((key, i) => {
+    const maxScore = maxScores[key] || fallbackMaxScore
+    const score = Math.min(Number(scores[key]) || 0, maxScore)
+    const r = (score / maxScore) * radius
+    // 旋转-90度，让 R 在最上方
+    const angle = (Math.PI / 180) * (i * 60 - 90)
+    const x = cx + r * Math.cos(angle)
+    const y = cy + r * Math.sin(angle)
+    dataPtsStr += `${x},${y} `
+    circlesSvg += `<circle cx="${x}" cy="${y}" r="5.2" fill="#2563EB" stroke="#FFFFFF" stroke-width="2.4"/>`
+  })
+
+  // 背景网格
+  let gridSvg = ''
+  for(let step = 1; step <= 5; step++) {
+    const r = (step / 5) * radius
+    let pts = ''
+    order.forEach((_, i) => {
+      const angle = (Math.PI / 180) * (i * 60 - 90)
+      const x = cx + r * Math.cos(angle)
+      const y = cy + r * Math.sin(angle)
+      pts += `${x},${y} `
+    })
+    gridSvg += `<polygon points="${pts.trim()}" fill="${step === 5 ? '#F8FBFF' : 'none'}" stroke="#CBD5E1" stroke-width="${step === 5 ? 1.6 : 1.1}" stroke-dasharray="${step === 5 ? '0' : '4,4'}"/>`
+  }
+
+  // 辐射轴线
+  let axesSvg = ''
+  order.forEach((_, i) => {
+    const angle = (Math.PI / 180) * (i * 60 - 90)
+    const x = cx + radius * Math.cos(angle)
+    const y = cy + radius * Math.sin(angle)
+    axesSvg += `<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="#CBD5E1" stroke-width="1.2"/>`
+  })
+
+  // 标签
+  let labelsSvg = ''
+  order.forEach((key, i) => {
+    const label = labels[i]
+    const angle = (Math.PI / 180) * (i * 60 - 90)
+    const x = cx + (radius + 30) * Math.cos(angle)
+    const y = cy + (radius + 30) * Math.sin(angle)
+    
+    let anchor = "middle"
+    if (x > cx + 5) anchor = "start"
+    else if (x < cx - 5) anchor = "end"
+    
+    const isPrimary = result.value.code.includes(key)
+    const fill = isPrimary ? '#2563EB' : '#64748B'
+    const fontWeight = isPrimary ? 'bold' : 'normal'
+    const score = Math.min(Number(scores[key]) || 0, maxScores[key] || fallbackMaxScore)
+    const maxScore = maxScores[key] || fallbackMaxScore
+    
+    labelsSvg += `<text x="${x}" y="${y - 2}" font-size="12.5" font-weight="${fontWeight}" fill="${fill}" text-anchor="${anchor}">${label}</text>`
+    scoreLabelsSvg += `<text x="${x}" y="${y + 13}" font-size="10.5" font-weight="700" fill="${isPrimary ? '#2563EB' : '#94A3B8'}" text-anchor="${anchor}">${score}/${maxScore}</text>`
+  })
+
+  const svg = `<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+    ${gridSvg}
+    ${axesSvg}
+    <polygon points="${dataPtsStr.trim()}" fill="rgba(37, 99, 235, 0.28)" stroke="#2563EB" stroke-width="4" stroke-linejoin="round"/>
+    ${circlesSvg}
+    ${labelsSvg}
+    ${scoreLabelsSvg}
+  </svg>`
+
+  return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg)
 })
 
 // 类型信息
 const typeInfo = computed(() => {
   const code = result.value.code
-  if (HOLLAND_TYPE_DESCRIPTIONS[code]) {
-    return HOLLAND_TYPE_DESCRIPTIONS[code]
+  if (HOLLAND_RESULT_REPORTS[code]) {
+    return HOLLAND_RESULT_REPORTS[code]
   }
-  // 如果没有精确匹配，使用前两个字母匹配
   const twoLetterCode = code.substring(0, 2)
-  for (const [key, value] of Object.entries(HOLLAND_TYPE_DESCRIPTIONS)) {
+  for (const [key, value] of Object.entries(HOLLAND_RESULT_REPORTS)) {
     if (key.startsWith(twoLetterCode)) {
       return value
     }
   }
-  // 默认返回
   return {
     name: '职业兴趣类型',
     tags: ['职业', '兴趣', '探索'],
@@ -202,42 +323,16 @@ const typeInfo = computed(() => {
   }
 })
 
+const recommendedMajorNames = computed(() => (
+  buildMajorCards(typeInfo.value.majors || []).map((major) => major.name)
+))
+
 const majorCards = computed(() => {
-  return (typeInfo.value.majors || []).map((name) => ({
-    name,
-    insight: majorInsights.value[name] || null,
-  }))
+  return buildMajorCards(typeInfo.value.majors || [], majorInsights.value)
 })
 
-// 获取百分比
-function getPercent(score) {
-  const maxScore = 40 // 每个类型最高40分（10题×4分）
-  return Math.min((score / maxScore) * 100, 100) + '%'
-}
-
-// 获取专业描述
-function getMajorDesc(major) {
-  const descs = {
-    '工业设计': '结合技术与艺术的交叉学科',
-    '建筑学': '空间设计与建筑艺术的融合',
-    '服装设计与工程': '时尚创意与工程技术结合',
-    '产品设计': '从创意到产品的完整设计流程',
-    '康复治疗学': '通过技术手段帮助患者康复',
-    '生物医学工程': '工程技术在医学领域的应用',
-    '风景园林': '户外空间规划与景观设计',
-    '环境设计': '创造宜居的生活与工作环境',
-    '工商管理': '企业管理与商业运作综合学科',
-    '项目管理': '高效达成目标的管理方法',
-    '质量管理工程': '确保产品与服务质量的体系',
-    '心理学': '探索人类心理与行为规律',
-    '社会学': '研究社会结构与社会关系',
-    '教育学': '教学理论与教育实践的结合'
-  }
-  return descs[major] || '相关专业课程，适合该兴趣类型发展'
-}
-
 async function loadMajorInsightsForResult() {
-  const names = typeInfo.value.majors || []
+  const names = recommendedMajorNames.value
   if (names.length === 0 || !result.value.code) {
     majorInsights.value = {}
     return
@@ -246,7 +341,7 @@ async function loadMajorInsightsForResult() {
   try {
     const insights = await fetchMajorInsights(names)
     majorInsights.value = Object.fromEntries(
-      insights.map((item) => [item.requestedName || item.name, item])
+      insights.map((item) => [normalizeMajorName(item.requestedName || item.name), item])
     )
   } catch {
     majorInsights.value = {}
@@ -257,7 +352,6 @@ function formatList(items = []) {
   return items.slice(0, 4).join('、')
 }
 
-// 查看专业详情
 function viewMajorDetail(major) {
   const params = encodeURIComponent(major)
   uni.navigateTo({
@@ -265,20 +359,28 @@ function viewMajorDetail(major) {
   })
 }
 
-// 重新测试
 function retry() {
   showConfirm.value = true
 }
 
-// 确认重测
 function confirmRetry() {
+  const assessments = loadAssessments()
+  assessments.holland = {
+    completed: false,
+    version: '',
+    code: '',
+    scores: { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 },
+    answers: [],
+    questionIndex: 0,
+    completedAt: 0
+  }
+  saveAssessments(assessments)
   showConfirm.value = false
   uni.redirectTo({
     url: '/pages/holland/holland'
   })
 }
 
-// 升级到完整版
 function handleUpgrade() {
   const assessments = loadAssessments()
   assessments.holland = {
@@ -296,18 +398,12 @@ function handleUpgrade() {
   })
 }
 
-// 页面显示时检查并加载结果
 onShow(() => {
   const assessments = loadAssessments()
   if (!assessments.holland.completed) {
-    uni.showToast({
-      title: '请先完成测评',
-      icon: 'none'
-    })
+    uni.showToast({ title: '请先完成测评', icon: 'none' })
     setTimeout(() => {
-      uni.redirectTo({
-        url: '/pages/holland/holland'
-      })
+      uni.redirectTo({ url: '/pages/holland/holland' })
     }, 1500)
     return
   }
@@ -317,45 +413,26 @@ onShow(() => {
   }
   resultVersion.value = assessments.holland.version || 'full'
   loadMajorInsightsForResult()
-  uni.setNavigationBarTitle({
-    title: '霍兰德测评结果'
-  })
+  uni.setNavigationBarTitle({ title: '霍兰德测评结果' })
+  tryTriggerPregenerate()
 })
 </script>
 
 <style lang="scss" scoped>
 .holland-result-page {
   min-height: 100vh;
-  background:
-    radial-gradient(90% 45% at 20% 0%, rgba(37, 99, 235, 0.07) 0%, rgba(37, 99, 235, 0) 62%),
-    linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
+  background: #F4F7FA; // 参考图极简冷灰蓝背景
   padding: 32rpx;
   padding-bottom: calc(160rpx + env(safe-area-inset-bottom));
   box-sizing: border-box;
   position: relative;
-  overflow-x: hidden;
 }
 
-.cyber-glow-bg-orange {
+.page-bg {
   position: fixed;
-  top: -10%;
-  right: -20%;
-  width: 600rpx;
-  height: 600rpx;
-  background: radial-gradient(circle, rgba(249, 115, 22, 0.04) 0%, rgba(0, 0, 0, 0) 70%);
+  top: 0; left: 0; right: 0; height: 50vh;
+  background: linear-gradient(180deg, #EBF3FF 0%, #F4F7FA 100%);
   z-index: 0;
-  pointer-events: none;
-}
-
-.cyber-glow-bg-violet {
-  position: fixed;
-  bottom: -10%;
-  left: -20%;
-  width: 600rpx;
-  height: 600rpx;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
 }
 
 .result-content {
@@ -366,275 +443,278 @@ onShow(() => {
   gap: 24rpx;
 }
 
-.result-header {
-  @include glass-panel;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid $border-light;
+// 头部主卡片
+.header-card {
+  background: #FFFFFF;
   border-radius: $radius-xl;
-  padding: 56rpx 32rpx;
-  text-align: center;
+  box-shadow: 0 4rpx 20rpx rgba(37, 99, 235, 0.04);
   position: relative;
   overflow: hidden;
+  padding: 50rpx 40rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .header-glow {
+  .brand-line {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250rpx;
-    height: 250rpx;
-    background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
-    filter: blur(20px);
-    z-index: 0;
+    left: 0;
+    top: 40rpx;
+    bottom: 40rpx;
+    width: 8rpx;
+    background: $brand-primary;
+    border-radius: 0 8rpx 8rpx 0;
+  }
+  
+  .header-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.code-badge-wrap {
-  display: inline-block;
-  padding: 6rpx;
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.4) 0%, rgba(99, 102, 241, 0.1) 100%);
-  border-radius: $radius-lg;
-  box-shadow: 0 10rpx 24rpx rgba(249, 115, 22, 0.18);
-  margin-bottom: 24rpx;
-  z-index: 1;
+.code-title-wrap {
+  margin-bottom: 12rpx;
 }
 
-.code-badge {
-  background: linear-gradient(135deg, #FF6B00 0%, #EA580C 100%);
-  color: #fff;
-  font-size: 56rpx;
-  font-weight: 800;
-  padding: 16rpx 48rpx;
-  border-radius: calc($radius-lg - 6rpx);
-  letter-spacing: 0;
+.code-title {
+  font-size: 72rpx;
+  font-weight: 900;
+  color: $brand-primary;
+  letter-spacing: 2rpx;
+  font-family: 'SF Pro Display', -apple-system, sans-serif;
 }
 
 .type-name {
-  display: block;
-  font-size: 38rpx;
+  font-size: 34rpx;
   font-weight: 800;
   color: $text-primary;
-  margin-bottom: 20rpx;
-  z-index: 1;
+  margin-bottom: 24rpx;
 }
 
 .type-tags {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 12rpx;
-  z-index: 1;
+  justify-content: center;
+  gap: 16rpx;
 }
 
 .tag {
-  background: rgba(249, 115, 22, 0.1);
-  border: 1px solid rgba(249, 115, 22, 0.2);
-  color: $brand-primary-light;
+  background: rgba(37, 99, 235, 0.06);
+  color: $brand-primary;
   font-size: 24rpx;
-  padding: 8rpx 20rpx;
+  padding: 8rpx 24rpx;
   border-radius: $radius-full;
   font-weight: 600;
 }
 
+// 通用版块
 .section {
-  @include glass-panel;
-  background: rgba(255, 255, 255, 0.96);
+  background: #FFFFFF;
   border-radius: $radius-xl;
+  box-shadow: 0 4rpx 20rpx rgba(37, 99, 235, 0.04);
   padding: 40rpx 32rpx;
 }
 
-.section-header {
-  margin-bottom: 32rpx;
-}
-
-.section-title-wrap {
+.section-header-center {
   display: flex;
-  align-items: center;
-  gap: 16rpx;
-}
-
-.title-dot {
-  width: 8rpx;
-  height: 28rpx;
-  background: $grad-accent;
-  border-radius: $radius-full;
+  justify-content: center;
+  margin-bottom: 40rpx;
+  position: relative;
+  
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80rpx;
+    height: 1px;
+    background: #E2E8F0;
+  }
+  &::before { left: 80rpx; }
+  &::after { right: 80rpx; }
 }
 
 .section-title {
   font-size: 32rpx;
   font-weight: 800;
-  color: $text-primary;
+  color: #FFFFFF;
+  background: $brand-primary;
+  padding: 8rpx 40rpx;
+  border-radius: $radius-full;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4rpx 12rpx rgba(37, 99, 235, 0.2);
 }
 
-// 维度得分
-.dimensions-list {
+// 雷达图与表格
+.score-scale-tip {
   display: flex;
-  flex-direction: column;
-  gap: 28rpx;
+  justify-content: center;
+  margin: -8rpx 0 18rpx;
 }
 
-.dimension-item {
-  display: flex;
-  flex-direction: column;
-  gap: 12rpx;
-}
-
-.dimension-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.dim-label-wrap {
-  display: flex;
-  align-items: center;
-  gap: 12rpx;
-}
-
-.dim-bullet {
-  width: 10rpx;
-  height: 10rpx;
-  border-radius: 50%;
-}
-
-.dimension-label {
-  font-size: 27rpx;
+.scale-tip-text {
+  padding: 8rpx 20rpx;
+  border-radius: 999rpx;
+  background: #EFF6FF;
+  color: #2563EB;
+  font-size: 22rpx;
   font-weight: 700;
-  color: $text-primary;
+  border: 1px solid #DBEAFE;
 }
 
-.dimension-score {
-  font-size: 26rpx;
-  font-weight: 800;
-}
-
-.score-bar-wrap {
-  position: relative;
+.radar-container {
   width: 100%;
-}
-
-.score-bar {
-  height: 16rpx;
-  background: $bg-input;
-  border-radius: $radius-full;
-  overflow: hidden;
-  position: relative;
-  border: 1px solid $border-light;
-}
-
-.score-fill {
-  height: 100%;
-  border-radius: $radius-full;
-  transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  position: relative;
-}
-
-.score-glow-dot {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 6rpx;
-  height: 100%;
-  background: #fff;
-  filter: blur(2rpx);
-  opacity: 0.9;
-}
-
-// R 实际型 - 橙色
-.dim-r {
-  .dim-bullet { background: #FF6B00; }
-  .dimension-score { color: #FF8F3D; }
-  .score-fill { background: linear-gradient(90deg, rgba(255, 107, 0, 0.2), #FF6B00); }
-}
-
-// I 研究型 - 蓝色
-.dim-i {
-  .dim-bullet { background: #3B82F6; }
-  .dimension-score { color: #60A5FA; }
-  .score-fill { background: linear-gradient(90deg, rgba(59, 130, 246, 0.2), #3B82F6); }
-}
-
-// A 艺术型 - 粉色
-.dim-a {
-  .dim-bullet { background: #EC4899; }
-  .dimension-score { color: #F472B6; }
-  .score-fill { background: linear-gradient(90deg, rgba(236, 72, 153, 0.2), #EC4899); }
-}
-
-// S 社会型 - 绿色
-.dim-s {
-  .dim-bullet { background: #10B981; }
-  .dimension-score { color: #34D399; }
-  .score-fill { background: linear-gradient(90deg, rgba(16, 185, 129, 0.2), #10B981); }
-}
-
-// E 企业型 - 金黄
-.dim-e {
-  .dim-bullet { background: #F59E0B; }
-  .dimension-score { color: #FBBF24; }
-  .score-fill { background: linear-gradient(90deg, rgba(245, 158, 11, 0.2), #F59E0B); }
-}
-
-// C 传统型 - 紫色
-.dim-c {
-  .dim-bullet { background: #8B5CF6; }
-  .dimension-score { color: #A78BFA; }
-  .score-fill { background: linear-gradient(90deg, rgba(139, 92, 246, 0.2), #8B5CF6); }
-}
-
-// 性格特征
-.traits-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20rpx;
-}
-
-.trait-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20rpx;
-}
-
-.trait-bullet-outer {
-  margin-top: 14rpx;
+  height: 470rpx;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 32rpx;
+}
+
+.radar-chart {
+  width: 100%;
+  height: 100%;
+}
+
+.data-table {
+  width: 100%;
+  border: 1px solid #E2E8F0;
+  border-radius: $radius-lg;
+  overflow: hidden;
+}
+
+.table-header {
+  display: flex;
+  background: #F8FAFC;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.th {
+  flex: 1;
+  text-align: center;
+  padding: 16rpx 0;
+  font-size: 24rpx;
+  color: $text-secondary;
+  font-weight: 700;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid #F1F5F9;
+  &:last-child { border-bottom: none; }
+}
+
+.td {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+  font-size: 26rpx;
+  color: $text-primary;
+}
+
+.font-medium { font-weight: 600; }
+.text-light { color: #94A3B8; }
+.score-text { color: $brand-primary; font-weight: 700; }
+
+// 特质分析
+.trait-group {
+  margin-bottom: 32rpx;
+  &:last-child { margin-bottom: 0; }
+}
+
+.trait-group-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.trait-title-text {
+  font-size: 30rpx;
+  font-weight: 800;
+  color: $brand-primary;
+  position: relative;
+  padding-left: 20rpx;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6rpx;
+    height: 24rpx;
+    background: $brand-primary;
+    border-radius: 4rpx;
+  }
+
+  &.highlight { color: #F59E0B; }
+  &.highlight::before { background: #F59E0B; }
+}
+
+.trait-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+  padding-left: 20rpx;
+}
+
+.trait-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16rpx;
 }
 
 .trait-bullet {
   width: 10rpx;
   height: 10rpx;
-  background: $brand-primary;
   border-radius: 50%;
+  background: #94A3B8;
+  margin-top: 14rpx;
+  flex-shrink: 0;
+  &.highlight { background: #F59E0B; }
 }
 
 .trait-text {
-  flex: 1;
-  font-size: 27rpx;
+  font-size: 26rpx;
   color: $text-primary;
   line-height: 1.6;
-  font-weight: 500;
 }
 
-// 适合职业方向
-.careers-grid {
+.trait-divider {
+  height: 1px;
+  background: #E2E8F0;
+  margin: 32rpx 0;
+}
+
+// 职业推荐列表
+.career-list {
+  background: #F8FAFC;
+  border-radius: $radius-lg;
+  padding: 32rpx;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.career-item {
+  display: flex;
+  align-items: center;
   gap: 16rpx;
 }
 
-.career-tag {
-  background: #F8FAFC;
-  border: 1px solid $border-light;
-  border-radius: $radius-lg;
-  padding: 14rpx 28rpx;
-  font-size: 26rpx;
-  color: $text-primary;
+.career-dot {
+  width: 12rpx;
+  height: 12rpx;
+  border-radius: 50%;
+  background: $brand-primary;
+  opacity: 0.8;
+}
+
+.career-text {
+  font-size: 28rpx;
   font-weight: 600;
+  color: $text-primary;
 }
 
 // 专业推荐
@@ -645,9 +725,8 @@ onShow(() => {
 }
 
 .major-card {
-  @include glass-panel;
   background: #FFFFFF;
-  border: 1px solid $border-light;
+  border: 1px solid #E2E8F0;
   border-radius: $radius-lg;
   padding: 32rpx;
   position: relative;
@@ -661,13 +740,12 @@ onShow(() => {
     top: 0;
     bottom: 0;
     width: 6rpx;
-    background: $grad-accent;
-    opacity: 0.8;
+    background: #F59E0B;
   }
 
   &:active {
     transform: scale(0.98);
-    border-color: rgba(249, 115, 22, 0.3);
+    background: #F8FAFC;
   }
 }
 
@@ -679,7 +757,7 @@ onShow(() => {
 }
 
 .major-name {
-  font-size: 29rpx;
+  font-size: 32rpx;
   font-weight: 800;
   color: $text-primary;
 }
@@ -690,7 +768,7 @@ onShow(() => {
 }
 
 .star-char {
-  font-size: 23rpx;
+  font-size: 24rpx;
   color: #CBD5E1;
 }
 
@@ -708,13 +786,12 @@ onShow(() => {
 
 .major-insights {
   background: #F8FAFC;
-  border: 1px solid $border-light;
+  border: 1px solid #E2E8F0;
   border-radius: $radius-md;
-  padding: 18rpx 20rpx;
-  margin-bottom: 24rpx;
+  padding: 24rpx;
   display: flex;
   flex-direction: column;
-  gap: 12rpx;
+  gap: 16rpx;
 }
 
 .major-insight-row {
@@ -728,39 +805,17 @@ onShow(() => {
   flex-shrink: 0;
   font-size: 22rpx;
   font-weight: 800;
-  color: $brand-primary-light;
+  color: $brand-primary;
 }
 
 .major-insight-text {
   flex: 1;
   font-size: 22rpx;
   color: $text-secondary;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
-.major-footer {
-  display: flex;
-  align-items: center;
-  gap: 8rpx;
-}
-
-.major-link {
-  font-size: 23rpx;
-  color: $brand-primary-light;
-  font-weight: 700;
-}
-
-.arrow-icon {
-  font-size: 20rpx;
-  color: $brand-primary-light;
-  transition: transform 0.2s;
-
-  .major-card:active & {
-    transform: translateX(6rpx);
-  }
-}
-
-// 底部悬浮按钮
+// 底部悬浮按钮与弹窗
 .footer-bar {
   position: fixed;
   bottom: 0;
@@ -782,7 +837,7 @@ onShow(() => {
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-top: 1px solid $border-light;
+  border-top: 1px solid #E2E8F0;
   z-index: 1;
 }
 
@@ -796,9 +851,9 @@ onShow(() => {
 .retry-btn {
   width: 100%;
   height: 84rpx;
-  background: #F8FAFC;
+  background: #FFFFFF;
   color: $text-primary;
-  border: 1px solid $border-light;
+  border: 1px solid #E2E8F0;
   border-radius: $radius-full;
   font-size: 28rpx;
   font-weight: 700;
@@ -808,151 +863,68 @@ onShow(() => {
   transition: all 0.2s;
 
   &:active {
-    transform: scale(0.98);
-    background: rgba(255, 255, 255, 0.08);
+    background: #F1F5F9;
   }
 }
 
-// 弹出确认窗
+.retry-btn::after {
+  border: none;
+}
+
+.upgrade-btn {
+  width: 100%;
+  height: 84rpx;
+  background: $brand-primary;
+  color: #fff;
+  border-radius: $radius-full;
+  font-size: 28rpx;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+.upgrade-btn::after { border: none; }
+
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(5, 7, 16, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
 }
 
-.modal-content,
-.confirm-content {
-  background: $bg-white;
+.modal-content {
+  background: #fff;
   border-radius: $radius-xl;
   padding: 40rpx 32rpx;
   margin: 32rpx;
   text-align: center;
+  width: 80%;
 }
 
-.modal-icon,
-.confirm-icon {
-  font-size: 80rpx;
-  margin-bottom: 16rpx;
-}
+.modal-icon { font-size: 80rpx; margin-bottom: 16rpx; }
+.modal-title { display: block; font-size: 32rpx; font-weight: 600; color: $text-primary; margin-bottom: 12rpx; }
+.modal-desc { display: block; font-size: 26rpx; color: $text-secondary; line-height: 1.6; margin-bottom: 32rpx; }
+.modal-actions { display: flex; gap: 16rpx; }
+.modal-btn { flex: 1; height: 80rpx; font-size: 28rpx; border-radius: $radius-md; border: none; }
+.modal-btn::after { border: none; }
+.modal-btn.cancel { background: #F1F5F9; color: $text-secondary; }
+.modal-btn.confirm { background: $brand-primary; color: #fff; }
 
-.modal-title,
-.confirm-title {
-  display: block;
-  font-size: 32rpx;
-  font-weight: 600;
-  color: $text-primary;
-  margin-bottom: 12rpx;
-}
-
-.modal-desc,
-.confirm-desc {
-  display: block;
-  font-size: 26rpx;
-  color: $text-secondary;
-  line-height: 1.6;
-  margin-bottom: 32rpx;
-}
-
-.modal-actions,
-.confirm-actions {
-  display: flex;
-  gap: 16rpx;
-}
-
-.modal-btn,
-.confirm-btn {
-  flex: 1;
-  height: 80rpx;
-  font-size: 28rpx;
-  font-weight: 500;
-  border: none;
-  border-radius: $radius-md;
-}
-
-.modal-btn::after,
-.confirm-btn::after {
-  border: none;
-}
-
-.modal-btn.cancel,
-.confirm-btn.cancel {
-  background: $bg-input;
-  color: $text-secondary;
-}
-
-.modal-btn.confirm,
-.confirm-btn.confirm {
-  background: linear-gradient(135deg, $brand-primary, $brand-primary-dark);
-  color: #fff;
-}
-
-// 版本标签
 .version-label {
-  position: relative;
-  z-index: 2;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8rpx 24rpx;
+  padding: 6rpx 20rpx;
   border-radius: $radius-full;
-  margin-bottom: 20rpx;
-
-  &.basic {
-    background: rgba(249, 115, 22, 0.12);
-    border: 1px solid rgba(249, 115, 22, 0.3);
-  }
-
-  &.full {
-    background: rgba(16, 185, 129, 0.12);
-    border: 1px solid rgba(16, 185, 129, 0.3);
-  }
-}
-
-.version-label-text {
-  font-size: 22rpx;
-  font-weight: 700;
-  letter-spacing: 0;
-
-  .basic & {
-    color: #FB923C;
-  }
-
-  .full & {
-    color: #34D399;
-  }
-}
-
-// 升级按钮
-.upgrade-btn {
-  width: 100%;
-  height: 84rpx;
-  background: linear-gradient(135deg, $brand-primary, $brand-primary-dark);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: $radius-full;
-  font-size: 28rpx;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 6rpx 16rpx rgba(249, 115, 22, 0.3);
   margin-bottom: 16rpx;
-  transition: all 0.2s;
-
-  &:active {
-    transform: scale(0.98);
-  }
+  &.basic { background: rgba(249, 115, 22, 0.1); border: 1px solid rgba(249, 115, 22, 0.2); }
+  &.full { background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.2); }
 }
-.upgrade-btn::after {
-  border: none;
+.version-label-text {
+  font-size: 22rpx; font-weight: 700;
+  .basic & { color: #EA580C; }
+  .full & { color: #059669; }
 }
 </style>

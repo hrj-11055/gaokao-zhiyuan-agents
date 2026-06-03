@@ -98,6 +98,7 @@ function toTrimmedString(value) {
  */
 export function normalizeUserProfile(profile = {}) {
   return {
+    nickname: toTrimmedString(profile.nickname),
     province: toTrimmedString(profile.province),
     category: toTrimmedString(profile.category),
     score: toIntOrEmpty(profile.score),
@@ -184,6 +185,7 @@ export function buildProfileInputs(profile) {
 const QUESTIONNAIRE_KEY = 'questionnaire'
 const ASSESSMENTS_KEY = 'assessments'
 export const QUESTIONNAIRE_REQUIRED_COUNT = 21
+export const ASSESSMENT_REQUIRED_COUNT = 2
 const QUESTIONNAIRE_ACTIVE_IDS = new Set([
   'q1', 'q2', 'q3', 'q4', 'q5',
   'q6', 'q7', 'q8',
@@ -430,7 +432,7 @@ export function saveHollandProgress(questionIndex, answers = [], version = '') {
 }
 
 /**
- * 计算已完成测评数量（0-3）
+ * 计算已完成测评数量（0-2）。五环问卷数据保留但暂不参与报告生成。
  * @returns {number} 已完成的测评数量
  */
 export function getCompletedAssessmentsCount() {
@@ -438,7 +440,6 @@ export function getCompletedAssessmentsCount() {
   let count = 0
   if (assessments.mbti.completed) count++
   if (assessments.holland.completed) count++
-  if (assessments.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT) count++
   return count
 }
 
@@ -450,7 +451,6 @@ export function isAllAssessmentsCompleted() {
   const assessments = loadAssessments()
   return (
     assessments.mbti.completed &&
-    assessments.holland.completed &&
-    assessments.questionnaire.completedCount >= QUESTIONNAIRE_REQUIRED_COUNT
+    assessments.holland.completed
   )
 }
