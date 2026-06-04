@@ -7,11 +7,11 @@
       <view class="card-top">
         <view class="avatar-wrap">
           <view class="avatar">
-            <text class="avatar-text">峰</text>
+            <image class="avatar-image" :src="profileIdentity.avatar" mode="aspectFill" />
           </view>
         </view>
         <view class="user-info">
-          <text class="user-name">志愿同学</text>
+          <text class="user-name">{{ profileIdentity.nickname }}</text>
           <view class="id-wrap">
             <text class="user-id">ID: {{ shortUserId }}</text>
           </view>
@@ -147,9 +147,11 @@ import { computed, ref } from 'vue'
 import { onShow, onShareAppMessage } from '@dcloudio/uni-app'
 import { CUSTOMER_WECHAT_ID, CUSTOMER_WECHAT_QR_IMAGE, MEMBERSHIP_PRICE_LABEL } from '../../config.js'
 import { useMembershipStore } from '../../stores/membership.js'
+import { getOrCreateProfileIdentity } from '../../utils/profile-identity.js'
 import { getProfileReportMode, loadUserProfile, loadAssessments } from '../../utils/storage.js'
 
 const membershipStore = useMembershipStore()
+const profileIdentity = ref(getOrCreateProfileIdentity())
 const profile = ref(loadUserProfile())
 const assessments = ref(loadAssessments())
 const showContactSheet = ref(false)
@@ -266,6 +268,7 @@ function previewCustomerWechatQr() {
 }
 
 onShow(() => {
+  profileIdentity.value = getOrCreateProfileIdentity()
   profile.value = loadUserProfile()
   assessments.value = loadAssessments()
   membershipStore.loadStatus().catch(() => {})
@@ -332,18 +335,17 @@ onShareAppMessage(() => ({
 .avatar {
   width: 100rpx;
   height: 100rpx;
-  background: $grad-primary;
+  background: #fff;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8rpx 20rpx rgba(37, 99, 235, 0.25);
+  overflow: hidden;
+  border: 4rpx solid #fff;
+  box-shadow: 0 8rpx 20rpx rgba(249, 115, 22, 0.2);
 }
 
-.avatar-text {
-  color: #fff;
-  font-size: 40rpx;
-  font-weight: 800;
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .user-info {

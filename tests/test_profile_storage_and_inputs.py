@@ -143,6 +143,26 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
             """.replace("1710000000000", str(1710000000000)),
         )
 
+    def test_clear_all_local_data_removes_profile_identity(self):
+        source = (ROOT / "gaokao-miniprogram" / "src" / "utils" / "storage.js").read_text(encoding="utf-8")
+
+        self.run_node_test(
+            source,
+            "import { clearAllLocalData } from './module.mjs'",
+            """
+            const removedKeys = []
+            globalThis.uni = {
+              removeStorageSync(key) {
+                removedKeys.push(key)
+              }
+            }
+
+            clearAllLocalData()
+
+            assert.equal(removedKeys.includes('profile_identity'), true)
+            """,
+        )
+
     def test_dify_stream_request_includes_profile_inputs(self):
         source = (ROOT / "gaokao-miniprogram" / "src" / "api" / "dify.js").read_text(encoding="utf-8")
         source = re.sub(

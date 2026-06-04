@@ -3,6 +3,7 @@
 const STORAGE_KEY = 'chat_history'
 const USER_ID_KEY = 'user_id'
 const USER_PROFILE_KEY = 'user_profile'
+const PROFILE_IDENTITY_KEY = 'profile_identity'
 const REPORT_KEY = 'user_report'
 
 /**
@@ -75,6 +76,7 @@ export function clearAllLocalData() {
     STORAGE_KEY,
     USER_ID_KEY,
     USER_PROFILE_KEY,
+    PROFILE_IDENTITY_KEY,
     QUESTIONNAIRE_KEY,
     ASSESSMENTS_KEY,
     REPORT_KEY
