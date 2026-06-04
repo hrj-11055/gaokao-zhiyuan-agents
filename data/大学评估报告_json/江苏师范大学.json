@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.835467",
+    "updated_at": "2026-05-08T02:01:13.770642",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "江苏师范大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.2,
+      "graduate_value": 3.6,
+      "location_advantage": 3.4,
+      "globalization": 3.5,
+      "student_empowerment": 3.6,
+      "brand_asset": 3.4
+    },
+    "weighted_score": 3.42,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "扬州大学",
+        "similarity": "同类院校",
+        "key_difference": "扬州大学作为综合性大学，在农学、兽医及医学领域有压倒性优势，整体规模更大；但江苏师范大学在“师范”二字的纯度上更高，尤其在文史类基础教育人才培养上，苏北地区的认可度甚至略高于扬大。"
+      },
+      {
+        "name": "苏州科技大学",
+        "similarity": "同类院校",
+        "key_difference": "苏科大占据苏州的区位红利，在建筑、土木及电子信息等应用型工科上更受大厂青睐；而江苏师范大学则在学术底蕴、基础学科研究以及考研深造率上更胜一筹。"
+      },
+      {
+        "name": "南通大学",
+        "similarity": "同类院校",
+        "key_difference": "南通大学以医学见长，而江苏师范大学则以文理基础学科为核心。若目标是当老师，选江师大；若目标是进医院，选通大。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：江苏师范大学（JSNU）是江苏省人民政府与教育部共建的省属重点大学，也是淮海经济区规模最大、实力最强的综合性师范大学。其前身可追溯至 1952 年创办于无锡的江苏省转业军人文化师范学校，这种“军转师”的历史基因赋予了学校严谨、扎实的校风。\n\n**Ace（王牌优势）**：中国语言文学与统计学是其学科皇冠上的明珠，在第五轮学科评估中表现稳健。此外，学校在“中俄合作办学”领域深耕多年，拥有教育部批准的非独立法人中外合作办学机构——江苏师范大学圣彼得堡彼得大帝理工大学联合工程学院，这在同类地方师范院校中极具差异化竞争力。\n\n**Vibe（文化特质）**：典型的“考研型大学”与“编制导向型大学”。校园内学习氛围极度浓厚，图书馆与自习室的占座现象反映了学生强烈的向上流动欲望。受徐州地域文化影响，学校气质兼具北方的大气与江苏的细腻，学生群体普遍务实，对体制内就业有极高的认同感。\n\n**Risk（潜在风险）**：首先是地域性限制，虽然徐州是区域中心，但对于向往苏锡常及上海就业的学生来说，地理距离与校招资源仍是短板；其次是校园安全与舆情管理，2024 年发生的食堂暴力事件暴露了基层管理在突发冲突处理上的滞后性；最后是非师范类工科专业的存在感较弱，资源分配不均可能导致相关专业学生获得感较低。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "扬州大学",
+          "similarity": "同类院校",
+          "key_difference": "扬州大学作为综合性大学，在农学、兽医及医学领域有压倒性优势，整体规模更大；但江苏师范大学在“师范”二字的纯度上更高，尤其在文史类基础教育人才培养上，苏北地区的认可度甚至略高于扬大。"
+        },
+        {
+          "name": "苏州科技大学",
+          "similarity": "同类院校",
+          "key_difference": "苏科大占据苏州的区位红利，在建筑、土木及电子信息等应用型工科上更受大厂青睐；而江苏师范大学则在学术底蕴、基础学科研究以及考研深造率上更胜一筹。"
+        },
+        {
+          "name": "南通大学",
+          "similarity": "同类院校",
+          "key_difference": "南通大学以医学见长，而江苏师范大学则以文理基础学科为核心。若目标是当老师，选江师大；若目标是进医院，选通大。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

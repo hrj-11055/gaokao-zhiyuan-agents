@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.684311",
+    "updated_at": "2026-05-01T01:56:46.732507",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广东石油化工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.37,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "广工",
+        "similarity": "同类院校",
+        "key_difference": "广工是“全能型”选手，在所有工科领域几乎全面压制广油，但广油在“石油炼化”这一细分垂直领域，其校友资源和行业认可度可与广工平起平坐。"
+      },
+      {
+        "name": "东莞理工",
+        "similarity": "同类院校",
+        "key_difference": "东莞理工胜在区位和经费，生源质量更高；广油胜在行业底蕴，对于想进“三桶油”的学生来说，广油的性价比更高。"
+      }
+    ],
+    "risks": [
+      {
+        "category": "校园安全管理",
+        "description": "2020 年的化学品伤人事件是学校历史上的重大伤痛。此后，学校对实验室安全、危险化学品管理以及学生心理健康进行了“地毯式”整改。目前，广油的实验室安全标准已成为省内标杆。"
+      },
+      {
+        "category": "地域限制",
+        "description": "茂名虽然产业强，但城市吸引力弱于珠三角。部分学生在入学后会产生“心理落差”，导致大一期间的心理波动较大。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（身份）**：它是华南石化工业的“人才底座”，是一所典型的行业依附型大学。\n**Ace（王牌）**：无与伦比的石化产业链就业渗透率。\n**Vibe（氛围）**：务实、低调、甚至带有一点“机油味”的硬核理工感。\n**Risk（风险）**：学科单一性风险，以及在数字化转型中可能面临的传统工业路径依赖。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "广工",
+          "similarity": "同类院校",
+          "key_difference": "广工是“全能型”选手，在所有工科领域几乎全面压制广油，但广油在“石油炼化”这一细分垂直领域，其校友资源和行业认可度可与广工平起平坐。"
+        },
+        {
+          "name": "东莞理工",
+          "similarity": "同类院校",
+          "key_difference": "东莞理工胜在区位和经费，生源质量更高；广油胜在行业底蕴，对于想进“三桶油”的学生来说，广油的性价比更高。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

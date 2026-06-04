@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.195689",
+    "updated_at": "2026-04-24T23:32:19.926725",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070201",
+    "name": "物理学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "理科之王的\"万金油\"底色——数理建模能力顶尖，出路多元但极度依赖深造，本科直接就业需主动\"加点\"应用技能。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 4.0,
+      "discipline_core": 5.0
+    },
+    "weighted_score": 3.67
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "~30%",
+      "starting_salary": "5500–7500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "物理学的核心能力——第一性原理建模、复杂数学推导、实验设计与分析——属于 AI 难以替代的高层次认知技能。AI 可以加速计算模拟，但无法替代物理直觉和原创性理论构建。量子计算、凝聚态物理等前沿方向反而因 AI 辅助（如 AI for Science）加速发展，增加对物理人才的需求。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "理科之王的\"万金油\"底色——数理建模能力顶尖，出路多元但极度依赖深造，本科直接就业需主动\"加点\"应用技能。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "中国科学技术大学",
+        "南京大学",
+        "清华大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "上海交通大学",
+        "浙江大学",
+        "吉林大学",
+        "华中科技大学",
+        "中山大学",
+        "北京师范大学",
+        "南开大学",
+        "武汉大学",
+        "山东大学",
+        "兰州大学"
+      ],
+      "tier_B": [
+        "四川大学",
+        "大连理工大学",
+        "哈尔滨工业大学",
+        "西安交通大学",
+        "同济大学",
+        "华东师范大学",
+        "厦门大学",
+        "中南大学",
+        "西北大学",
+        "山西大学",
+        "华南师范大学",
+        "湖南师范大学",
+        "郑州大学"
+      ],
+      "tier_C_note": "各省属师范类大学（如浙江师范大学、河南师范大学、安徽师范大学等）、地方综合类大学物理系，共计约 150+ 所",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

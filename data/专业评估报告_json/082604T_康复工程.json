@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.981141",
+    "updated_at": "2026-04-25T22:40:47.991688",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082604T_康复工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "蓝海赛道里的\"冷门尖兵\"，产业爆发但专业极小众，全国仅 7 校开设，赌的是老龄化政策红利，前提是你扛得住医工交叉的课业压力。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.38
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–7,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "康复工程涉及硬件设计（假肢/矫形器实体制作与适配）、临床人际交互（患者功能评估与方案调整）、实物安装调试等高度依赖物理世界操作的环节，这些是 AI 难以替代的。但纯算法部分（如步态分析、信号处理）存在被 AI 工具辅助加速的趋势。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "蓝海赛道里的\"冷门尖兵\"，产业爆发但专业极小众，全国仅 7 校开设，赌的是老龄化政策红利，前提是你扛得住医工交叉的课业压力。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海理工大学（国内首创，省部级科研平台最多，软科 A+）"
+      ],
+      "tier_A": [
+        "济宁医学院（山东省首家，拥有省级工程研究中心，软科 A+）"
+      ],
+      "tier_B": [
+        "新乡学院",
+        "上海健康医学院"
+      ],
+      "tier_C_note": "豫北医学院、湖北商贸学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

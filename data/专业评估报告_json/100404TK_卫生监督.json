@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.941423",
+    "updated_at": "2026-04-27T01:33:38.427586",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100404TK_卫生监督",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"体制内窄门中的窄门，对口就业靠公考独木桥，名额少、院校少，考不上公务员就很尴尬。\"",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 3.1
+    },
+    "weighted_score": 2.8
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "卫生监督涉及现场执法检查、法规适用判断、行政处罚裁量等需要实地勘察和法律解释的工作，AI 可辅助文书处理和数据分析，但核心的执法判断和现场取证环节难以被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"体制内窄门中的窄门，对口就业靠公考独木桥，名额少、院校少，考不上公务员就很尴尬。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "华中科技大学（同济医学院）"
+      ],
+      "tier_A": [
+        "哈尔滨医科大学",
+        "南京医科大学",
+        "安徽医科大学"
+      ],
+      "tier_B": [
+        "重庆医科大学",
+        "河北医科大学",
+        "广西医科大学"
+      ],
+      "tier_C_note": "部分地方医学院校公共卫生学院下设方向",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

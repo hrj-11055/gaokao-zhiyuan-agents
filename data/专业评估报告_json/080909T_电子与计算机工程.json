@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.077518",
+    "updated_at": "2026-04-25T11:55:53.979868",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080909T_电子与计算机工程",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "硬件软件通吃的\"芯片+算法\"复合赛道，踩中半导体国产替代风口，但开设院校仅14所、资源高度集中，普通院校性价比存疑。",
+    "radar": {
+      "market_return": 4.3,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.2,
+      "career_path": 3.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.19
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "该专业核心技能为硬件电路设计、嵌入式系统开发、芯片架构设计等涉及物理世界与数字世界接口的工作，需要硬件调试经验和物理直觉，短期内AI难以完全替代。但部分验证测试、代码辅助工作已可被AI工具加速。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "硬件软件通吃的\"芯片+算法\"复合赛道，踩中半导体国产替代风口，但开设院校仅14所、资源高度集中，普通院校性价比存疑。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江大学",
+        "上海交通大学"
+      ],
+      "tier_A": [
+        "西南石油大学",
+        "北方工业大学"
+      ],
+      "tier_B": [
+        "汕头大学",
+        "沈阳工业大学"
+      ],
+      "tier_C_note": "重庆移通学院、广州软件学院、深圳北理莫斯科大学、武汉东湖学院、山西晋中理工学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

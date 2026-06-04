@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.102485",
+    "updated_at": "2026-04-25T06:58:42.840823",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080610TK_大功率半导体科学与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在\"芯片国产替代\"与\"双碳\"两大国家战略交汇点的窄门专业——行业极度缺人、薪酬诱人，但全国仅一所学校开设，赛道窄、门槛高，适合目标明确的硬核理工生。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.9
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "12,000–18,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "功率半导体器件设计涉及复杂的物理建模（热仿真、电磁场分析）、工艺优化（洁净室级别的制程参数调试）和可靠性测试，这些工作需要与物理实体高度交互，AI难以直接替代。但EDA工具辅助设计和AI辅助仿真的应用将提升效率，部分重复性设计工作可能被自动化。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在\"芯片国产替代\"与\"双碳\"两大国家战略交汇点的窄门专业——行业极度缺人、薪酬诱人，但全国仅一所学校开设，赛道窄、门槛高，适合目标明确的硬核理工生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业尚无成熟培养体系的高校）"
+      ],
+      "tier_A": [
+        "西南交通大学（唯一正式开设该本科专业的高校，软科排名第1，依托中车时代电气产教融合，轨道交通功率半导体领域全国领先）"
+      ],
+      "tier_B": [
+        "华南理工大学（可能开设相关招生计划，电力电子学科实力强）",
+        "电子科技大学（功率器件和半导体功能材料领域突出，微电子学科评估A+）",
+        "西安电子科技大学（宽禁带半导体研究领先）"
+      ],
+      "tier_C_note": "暂无更多开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

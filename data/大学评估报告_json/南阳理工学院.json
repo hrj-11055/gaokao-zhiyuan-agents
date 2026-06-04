@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.762848",
+    "updated_at": "2026-05-11T17:35:09.122518",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南阳理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.4,
+      "graduate_value": 2.8,
+      "location_advantage": 2.9,
+      "globalization": 2.2,
+      "student_empowerment": 3.2,
+      "brand_asset": 2.7
+    },
+    "weighted_score": 2.645,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南阳理工学院是一所位于河南省南阳市的公办全日制普通本科院校，其前身可追溯至 1987 年创办的南阳大学。学校目前定位为**高水平应用型理工大学**，是教育部“卓越工程师教育培养计划”试点高校。\n\n从战略定位来看，南阳理工学院成功避开了与省内综合性大学的同质化竞争，通过深耕“工科”与“中医药”两大特色领域，在豫西南地区构建了稳固的人才护城河。其软件学院和张仲景国医国药学院是学校的两大“金字招牌”。软件学院作为省级示范性软件职业技术学院，为长三角、珠三角输送了大量实战型 IT 人才；而国医国药学院则承袭了南阳作为“医圣”故里的文化底蕴，在基层中医人才培养方面具有不可替代性。\n\n然而，学校也面临着地方性院校的共同挑战：一是高层次领军人才（如院士、国家杰青）匮乏，导致在国家级重大科研项目上的突破难度较大；二是受限于南阳市的地理位置，对一线城市优质生源和顶尖博士人才的吸引力仍有待加强。近年来，学校通过获批硕士学位授予单位，实现了办学层次的跨越，正处于从“规模扩张”向“内涵提升”转型的关键期。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "硬核工科",
+        "仲景传人",
+        "不甘示弱",
+        "性价比之王",
+        "豫西南高地"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

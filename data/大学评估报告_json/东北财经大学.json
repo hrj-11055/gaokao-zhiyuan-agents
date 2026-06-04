@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.782514",
+    "updated_at": "2026-05-12T10:25:35.264578",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "东北财经大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.5,
+      "location_advantage": 3.5,
+      "globalization": 4.2,
+      "student_empowerment": 3.9,
+      "brand_asset": 4.4
+    },
+    "weighted_score": 4.2,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "中南财经政法大学/西南财经大学",
+        "similarity": "同类院校",
+        "key_difference": "东财在学科评估的顶端指标（A类学科数量）上甚至略优，但在政策红利（双一流、211）上处于劣势。这导致东财在保研率和部分体制内敲门砖上稍逊一筹，但在市场化程度高的领域（如四大、外企、民营金融机构），三者基本处于同一梯队。"
+      },
+      {
+        "name": "大连理工大学",
+        "similarity": "同类院校",
+        "key_difference": "作为同城老大哥，大工是理工类 985，而东财是专业类名校。在辽宁省内，两者的录取位次经常重叠。选择东财的学生通常是放弃了 985 的名头，转而追求财经专业的深度和行业垂直资源。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "中南财经政法大学/西南财经大学",
+          "similarity": "同类院校",
+          "key_difference": "东财在学科评估的顶端指标（A类学科数量）上甚至略优，但在政策红利（双一流、211）上处于劣势。这导致东财在保研率和部分体制内敲门砖上稍逊一筹，但在市场化程度高的领域（如四大、外企、民营金融机构），三者基本处于同一梯队。"
+        },
+        {
+          "name": "大连理工大学",
+          "similarity": "同类院校",
+          "key_difference": "作为同城老大哥，大工是理工类 985，而东财是专业类名校。在辽宁省内，两者的录取位次经常重叠。选择东财的学生通常是放弃了 985 的名头，转而追求财经专业的深度和行业垂直资源。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "考证达人",
+        "精致",
+        "职业化",
+        "海味",
+        "金融民工预备役",
+        "东北财经龙头",
+        "四大校友会"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

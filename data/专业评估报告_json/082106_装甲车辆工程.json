@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.013404",
+    "updated_at": "2026-04-25T20:41:19.188809",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082106",
+    "name": "装甲车辆工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "铸剑报国的窄门：国防刚需保就业，但院校极少、赛道极窄，适合家国情怀浓厚的理工硬核玩家。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.22
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "装甲车辆工程涉及大量实体系统设计（动力传动、防护结构、武器集成），需实物试验验证和复杂工程环境判断，AI难以替代。但设计制图、仿真模拟等环节已逐步被AI工具辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "铸剑报国的窄门：国防刚需保就业，但院校极少、赛道极窄，适合家国情怀浓厚的理工硬核玩家。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京理工大学",
+        "南京理工大学"
+      ],
+      "tier_A": [
+        "中北大学",
+        "陆军装甲兵学院（需军检）"
+      ],
+      "tier_B": [
+        "沈阳理工大学",
+        "重庆理工大学"
+      ],
+      "tier_C_note": "该专业全国仅约6所院校开设，无C档院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

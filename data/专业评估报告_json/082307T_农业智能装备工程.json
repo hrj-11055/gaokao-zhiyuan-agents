@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.070509",
+    "updated_at": "2026-04-25T21:37:31.464106",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082307T_农业智能装备工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "踩在\"智慧农业\"风口上的硬核工科，政策红利+人才缺口双驱动，但作为2019年新设专业，就业数据尚薄，课程跨度大，吃不了苦的慎入。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.82
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业本身就是 AI 的\"使用者\"而非\"被替代对象\"。核心技能包括农机控制系统设计、传感器融合、农业场景算法调优——这些需要物理世界与数字世界的深度结合，纯 AI 难以替代。但纯数据分析类岗位存在被 AI 工具辅助降本的可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "踩在\"智慧农业\"风口上的硬核工科，政策红利+人才缺口双驱动，但作为2019年新设专业，就业数据尚薄，课程跨度大，吃不了苦的慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学",
+        "西北农林科技大学"
+      ],
+      "tier_A": [
+        "南京农业大学",
+        "江苏大学",
+        "扬州大学",
+        "东北农业大学"
+      ],
+      "tier_B": [
+        "河南农业大学",
+        "福建农林大学",
+        "山东农业大学",
+        "吉林农业大学",
+        "甘肃农业大学",
+        "山东理工大学"
+      ],
+      "tier_C_note": "黑龙江八一农垦大学、安徽科技学院（安徽科技工程大学）、云南农业大学、山东农业工程学院等其余开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

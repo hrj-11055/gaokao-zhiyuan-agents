@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.905475",
+    "updated_at": "2026-05-12T11:41:59.685131",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "福建医科大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.5,
+      "location_advantage": 3.8,
+      "globalization": 3.2,
+      "student_empowerment": 2.5,
+      "brand_asset": 4.0
+    },
+    "weighted_score": 4.03,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "福建医科大学是一所典型的“区域强势医科大学”。它在福建省内拥有无可比拟的行政资源、临床资源和校友网络。对于立志在华南地区（尤其是福建省）从事医疗行业的考生而言，其性价比甚至超过部分偏远地区的 985/211 高校。\n\n**核心优势**：\n- **临床实力**：附属医院集群实力雄厚，临床教学经验丰富。\n- **就业保障**：省内三甲医院的“入场券”，校友资源遍布全省。\n- **学科能级**：ESI 排名持续攀升，学术影响力已达国际水平。\n\n**主要挑战**：\n- **身份焦虑**：非“双一流”身份在申请国家级重大项目和吸引顶级海归人才时仍有劣势。\n- **内卷文化**：极高的学业压力可能导致学生产生职业倦怠。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

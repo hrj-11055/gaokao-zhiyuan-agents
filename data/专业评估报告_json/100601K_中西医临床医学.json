@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.059434",
+    "updated_at": "2026-04-27T02:47:01.058282",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100601K_中西医临床医学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "两条腿走路但路比谁都窄——中西医双修意味着双倍课业、双倍考试，就业却被夹在\"西医不认、中医不够纯\"的尴尬地带，只有真正热爱临床并愿意深耕的人才能走通。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.32
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "临床诊疗（尤其是中医辨证论治的个体化思维）依赖丰富的临床经验和直觉判断，AI短期内难以完全替代。望闻问切中的脉诊、舌诊虽有AI辅助设备研发，但临床综合判断仍需医生。西医部分的手术操作、体格检查同样属于高人工依赖环节。AI更多扮演辅助诊断角色（如中医AI辅助诊断系统），而非替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "两条腿走路但路比谁都窄——中西医双修意味着双倍课业、双倍考试，就业却被夹在\"西医不认、中医不够纯\"的尴尬地带，只有真正热爱临床并愿意深耕的人才能走通。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京中医药大学",
+        "上海中医药大学"
+      ],
+      "tier_A": [
+        "复旦大学（上海医学院）",
+        "南京中医药大学",
+        "广州中医药大学",
+        "成都中医药大学"
+      ],
+      "tier_B": [
+        "天津中医药大学",
+        "湖南中医药大学",
+        "浙江中医药大学",
+        "黑龙江中医药大学",
+        "山东中医药大学",
+        "辽宁中医药大学",
+        "安徽中医药大学",
+        "华中科技大学（同济医学院）"
+      ],
+      "tier_C_note": "江西中医药大学、河南中医药大学、陕西中医药大学、甘肃中医药大学、云南中医药大学、贵州中医药大学、广西中医药大学、长春中医药大学、山西中医药大学等约30余所开设本专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.884807",
+    "updated_at": "2026-05-08T02:26:03.842521",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京晓庄学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.02,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "江苏师范大学",
+        "similarity": "同类院校",
+        "key_difference": "江苏师大（徐州）作为老牌省属重点，拥有博士点和更强的学术研究能力，在全国师范类排名中显著领先。然而，对于希望在"
+      },
+      {
+        "name": "淮阴/盐城师范",
+        "similarity": "同类院校",
+        "key_difference": "晓庄的录取分数线通常高于后两者，这主要得益于南京的区位优势。在教育资源获取、实习机会以及毕业后的留宁概率上，晓庄具有压倒性优势。"
+      },
+      {
+        "name": "南师大（中北学院）",
+        "similarity": "同类院校",
+        "key_difference": "虽然南师大品牌更响，但晓庄作为公办本科，在学费成本、考编认可度以及校本部资源支持上，通常优于独立学院。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南京晓庄学院是一所具有鲜明红色基因和深厚师范底蕴的省属公办本科院校。其核心竞争力紧紧围绕“基础教育”展开，被誉为“南京中小学教师的摇篮”。\n\n*   **Identity（核心定位）**：由伟大的人民教育家陶行知先生于1927年创办，是中国乡村师范教育的发祥地。目前已发展成为以教师教育为特色，多学科协调发展的综合性应用型大学。\n*   **Ace（王牌优势）**：小学教育与学前教育。这两个专业在江苏省内乃至全国都有较高的知名度。学校在南京市基础教育系统拥有极高的渗透率，大量校友担任南京各中小学的校长或骨干教师，这种“校友网络”是毕业生就业的隐形护城河。\n*   **Vibe（文化特质）**：秉承“教学做合一”的行知精神，校风淳朴务实。学生群体普遍具有较强的考编动力和实践能力。校园生活气息浓厚，方山校区的饮食文化在南京高校圈中享有盛誉。\n*   **Risk（潜在风险）**：学术天花板明显，虽然2024年获批硕士点，但与老牌师范大学相比，科研积淀和高层次人才储备仍有差距。此外，2023年发生的管理层师德失范事件对学校的社会声誉造成了一定程度的负面冲击，品牌修复仍需时间。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "江苏师范大学",
+          "similarity": "同类院校",
+          "key_difference": "江苏师大（徐州）作为老牌省属重点，拥有博士点和更强的学术研究能力，在全国师范类排名中显著领先。然而，对于希望在"
+        },
+        {
+          "name": "淮阴/盐城师范",
+          "similarity": "同类院校",
+          "key_difference": "晓庄的录取分数线通常高于后两者，这主要得益于南京的区位优势。在教育资源获取、实习机会以及毕业后的留宁概率上，晓庄具有压倒性优势。"
+        },
+        {
+          "name": "南师大（中北学院）",
+          "similarity": "同类院校",
+          "key_difference": "虽然南师大品牌更响，但晓庄作为公办本科，在学费成本、考编认可度以及校本部资源支持上，通常优于独立学院。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

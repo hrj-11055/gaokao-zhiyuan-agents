@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.216433",
+    "updated_at": "2026-04-27T12:51:23.125067",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120409T_公共关系学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"靠嘴吃饭的万金油，入行门槛低但上位靠资源，AI 正在重塑行业，复合能力才是护城河。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 4.4
+    },
+    "weighted_score": 3.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "公关行业中大量基础性工作（新闻稿撰写、媒体监测、数据整理、社交内容生成）已被 AIGC 工具替代。Muck Rack 2025 年报告显示 3/4 的公关专业人士已在工作中使用生成式 AI。Cision & PRWeek 2025 调研显示 67% 的受访者表示生成式 AI 已深度融入整体传播战略。专业能力单一的执行层从业者面临最大替代风险。但策略咨询、危机管理、利益相关方关系维护等需要\"人际信任\"的职能，AI 仍难以替代——PRPA 2026 调查明确指出\"AI 无法取代人际关系\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"靠嘴吃饭的万金油，入行门槛低但上位靠资源，AI 正在重塑行业，复合能力才是护城河。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中山大学",
+        "上海外国语大学",
+        "中国传媒大学"
+      ],
+      "tier_A": [
+        "东华大学",
+        "浙江传媒学院",
+        "复旦大学（新闻学院下设公关方向）",
+        "北京大学（新闻与传播学院公关方向）"
+      ],
+      "tier_B": [
+        "上海第二工业大学",
+        "南昌大学",
+        "山东管理学院",
+        "宜宾学院"
+      ],
+      "tier_C_note": "广州南方学院、广州新华学院、贵州医科大学神奇民族医药学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

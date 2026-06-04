@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.774819",
+    "updated_at": "2026-05-11T18:53:08.936934",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "黄山学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.47,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）：**\n黄山学院是一所以旅游、生态、徽文化为鲜明特色的省属全日制综合性应用型本科院校。其前身为 1977 年创建的徽州师范专科学校，历经四十余年的演变，已从单一的师范教育转型为涵盖工、管、文、经、教、艺等多学科的综合性大学。学校深度绑定“黄山”这一世界级 IP，在应用型人才培养上走出了一条“打黄山牌、做徽文章”的差异化道路。\n\n**Ace（王牌优势）：**\n旅游管理及相关学科在安徽省内乃至华东地区具有极高的行业认可度，是国家级特色专业。更为显著的优势在于其“考研红利”，近年来升学率稳步提升，部分理工科学院升学率突破 40%，在同类地方本科院校中处于领先水平，成为众多学子实现学历阶层跃迁的重要跳板。\n\n**Vibe（文化特质）：**\n校园内弥漫着典型的“务实型”与“考研型”氛围。受限于地理位置的相对静谧，学生群体表现出极高的勤奋度，图书馆与自习室的利用率极高。校园建筑融合了徽派风格，环境优美，但对于追求大都市繁华与高频实习机会的学生来说，可能会感到一定的“围城”感。\n\n**Risk（潜在风险）：**\n核心风险在于区位对高端产业吸引力的天然限制。黄山市作为旅游城市，其产业结构相对单一，高薪的互联网、金融等现代服务业岗位较少。这导致毕业生在本地就业的起薪普遍不高，且学科结构对传统行业（如旅游、林业、基础教育）依赖度较高，在面对新兴产业冲击时，学科转型的灵活性面临挑战。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

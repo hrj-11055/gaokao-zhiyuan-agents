@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.198773",
+    "updated_at": "2026-04-23T23:42:54.449017",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050259",
+    "name": "祖鲁语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "全国独苗专业，首届毕业生全数深造，绑定中南关系与一带一路，极小众但稀缺性极强，出路高度依赖复合能力。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 0.0
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "祖鲁语属极低资源语言（low-resource language），AI 翻译对祖鲁语的覆盖率和准确率远低于英法西等大语种。涉及南非/南部非洲的深度文化理解、商务谈判、外交交涉等场景，短期内 AI 无法替代人类。但随着大模型训练数据扩展，长期存在被压缩的风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国独苗专业，首届毕业生全数深造，绑定中南关系与一带一路，极小众但稀缺性极强，出路高度依赖复合能力。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（全国唯一专业点，北京市一流本科专业，非洲学院下设，2025校友会排名第一）"
+      ],
+      "tier_A": [
+        "无（仅北外一所开设）"
+      ],
+      "tier_B": [
+        "无"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

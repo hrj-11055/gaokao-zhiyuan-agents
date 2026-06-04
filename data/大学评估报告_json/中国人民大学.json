@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.653270",
+    "updated_at": "2026-05-09T13:47:18.068827",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中国人民大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.9,
+      "graduate_value": 4.8,
+      "location_advantage": 5.0,
+      "globalization": 4.5,
+      "student_empowerment": 4.0,
+      "brand_asset": 4.9
+    },
+    "weighted_score": 4.8,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "中国人民大学（RUC）作为中国共产党亲手创办的第一所新型正规大学，其在国家高等教育体系中的地位具有不可替代的政治高度与学术深度。在“双一流”建设背景下，人大不仅是人文社会科学的“国家队”，更是国家治理现代化、经济决策咨询的核心智库。\n\n从学术维度看，人大的经济学、法学、社会学、新闻学等学科长期处于国内垄断地位。这种优势并非仅仅体现在论文发表上，更体现在对国家法律制定、经济政策解读以及社会舆论引导的深度参与。对于学生而言，这意味着能够接触到最前沿的政策风向标和最具影响力的学术导师。\n\n在就业市场，人大毕业生展现出了极强的“体制内兼容性”与“金融圈统治力”。无论是中央选调生的录取人数，还是头部券商、公募基金的入职比例，人大均稳居全国前三。这种极高的就业确定性，使得人大在经济波动周期中表现出了极强的抗风险能力，成为高分考生追求“稳健回报”的首选。\n\n然而，人大的局限性同样明显。本部校区的空间局促限制了物理层面的校园体验，而学科结构的偏向（文强理弱）使得其在以理工科评价指标为主的国际大学排名中往往被低估。此外，极度务实的校园文化虽然造就了极强的职业竞争力，但也可能在一定程度上抑制了纯粹的学术浪漫主义。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "实事求是",
+        "经世致用",
+        "金融民工",
+        "选调之王",
+        "明德楼刷夜",
+        "人大鸡腿",
+        "中关村二高",
+        "红色精英"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

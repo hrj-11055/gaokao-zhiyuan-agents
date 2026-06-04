@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.890439",
+    "updated_at": "2026-04-23T01:10:06.445651",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050105",
+    "name": "古典文献学",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "\"冷到骨头里的文化铁人三项——啃甲骨、校古籍、熬博士，就业面比A4纸还窄，但遇上古籍数字化东风，能坐上最后的慢车。\"",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 2.5,
+      "future_adaptability": 3.2,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.8
+    },
+    "weighted_score": 2.65
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "古籍校勘、版本鉴定需要深厚的学术判断力和对版本源流的专家知识，AI 可辅助自动标点和 OCR 识别，但最终学术判断仍需人类专家。然而，AI 大幅提高单人的处理效率，可能减少初级岗位需求。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"冷到骨头里的文化铁人三项——啃甲骨、校古籍、熬博士，就业面比A4纸还窄，但遇上古籍数字化东风，能坐上最后的慢车。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "南京师范大学",
+        "陕西师范大学"
+      ],
+      "tier_B": [
+        "复旦大学（硕士/博士方向突出）",
+        "华东师范大学",
+        "上海师范大学",
+        "河北大学",
+        "金陵科技学院"
+      ],
+      "tier_C_note": "目前全国仅 7–9 所开设本科古典文献学专业，基本无\"一般院校\"开设此专业。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

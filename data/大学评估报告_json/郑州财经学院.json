@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.515680",
+    "updated_at": "2026-05-11T17:45:16.182236",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "郑州财经学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 1.5,
+      "graduate_value": 2.2,
+      "location_advantage": 4.2,
+      "globalization": 2.0,
+      "student_empowerment": 4.5,
+      "brand_asset": 3.2
+    },
+    "weighted_score": 2.49,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 189000,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：深耕中原的应用型民办财经本科，河南省民办高等教育的头部梯队。\n*   **Ace（王牌优势）**：极强的硬件服务意识与区位优势。航空港校区的投入使用，使其在物流、商贸等应用学科上具备极强的物理承载力。\n*   **Vibe（文化特质）**：务实、考证导向、生活舒适度高。这是一种典型的“就业型”校园氛围，不谈空洞理想，只谈职业技能。\n*   **Risk（潜在风险）**：学术底蕴薄弱，深造天花板较低。生源主要集中在省内，跨省就业竞争力有待验证。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实就业",
+        "硬件王者",
+        "港区新贵",
+        "考证大户",
+        "二本守门员",
+        "空调自由",
+        "郑州本地化"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

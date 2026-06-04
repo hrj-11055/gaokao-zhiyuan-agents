@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.730276",
+    "updated_at": "2026-05-11T16:01:33.866149",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "齐鲁师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 2.6,
+      "location_advantage": 3.5,
+      "globalization": 1.5,
+      "student_empowerment": 2.5,
+      "brand_asset": 2.4
+    },
+    "weighted_score": 2.49,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "齐鲁师范学院是一所典型的“小而精”的省属师范院校。它不具备冲击世界一流大学的科研实力，但在其专注的“基础教育人才培养”赛道上，表现出了极高的性价比。\n\n*   **核心优势**：地理位置处于省会济南，享受省级教育资源辐射；师范类专业积淀深厚，是山东省基层教师的重要来源；校园学风极好，适合目标明确的“考研党”和“考编党”。\n*   **核心劣势**：办学层次尚在本科，硕士点缺失导致学术天花板较低；非师范专业竞争力不足，就业面相对狭窄；校区位置偏远，校园生活相对单调。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

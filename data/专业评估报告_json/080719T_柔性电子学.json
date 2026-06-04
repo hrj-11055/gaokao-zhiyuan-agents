@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.970006",
+    "updated_at": "2026-04-25T10:39:31.757079",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080719T_柔性电子学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"踩在国家战略风口的前沿交叉学科，想象空间巨大但产业尚未成熟，高数理门槛+高深造依赖，只适合真心热爱科研硬核玩家。\"",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "10,000–18,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "柔性电子的核心工作涉及材料合成实验、微纳加工工艺开发、器件物理表征等高度依赖物理操作和创新实验的工作，AI 可辅助模拟和数据分析，但无法替代实验室中的材料制备和器件测试。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"踩在国家战略风口的前沿交叉学科，想象空间巨大但产业尚未成熟，高数理门槛+高深造依赖，只适合真心热爱科研硬核玩家。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西北工业大学（黄维院士领衔，全国首个柔性电子学博士点和本科专业，柔性电子研究院）"
+      ],
+      "tier_A": [
+        "南京邮电大学（A+ 评级，柔性电子未来技术学院，与华为",
+        "京东方合作紧密）",
+        "中山大学（综合性大学资源优势）"
+      ],
+      "tier_B": [
+        "南京工业大学（柔性电子学科布局早）",
+        "陕西科技大学（B 级排名上榜）"
+      ],
+      "tier_C_note": "江汉大学、闽江学院，以及其他近年新获批开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

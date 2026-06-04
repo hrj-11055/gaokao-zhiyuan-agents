@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.113533",
+    "updated_at": "2026-04-23T13:02:54.342504",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050247",
+    "name": "乌克兰语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "一把开东欧的\"窄钥匙\"，国家战略有需求但岗位极度稀缺，纯语言没出路，必须\"语言+X\"复合才行。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.6,
+      "career_path": 2.4,
+      "education_resources": 2.2,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 0.0
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "基础翻译、文本处理类工作已被机器翻译（DeepL、Google Translate 对乌克兰语支持已较成熟）大幅压缩。但高级谈判翻译、跨文化沟通、同声传译仍需人类。纯语言技能的护城河正在被 AI 快速侵蚀。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "一把开东欧的\"窄钥匙\"，国家战略有需求但岗位极度稀缺，纯语言没出路，必须\"语言+X\"复合才行。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（外交部定点培养）",
+        "上海外国语大学（软科 A+）"
+      ],
+      "tier_A": [
+        "西安外国语大学",
+        "天津外国语大学",
+        "四川外国语大学",
+        "大连外国语大学"
+      ],
+      "tier_B": [
+        "长春大学（地缘优势，毗邻俄语区）",
+        "吉林外国语大学"
+      ],
+      "tier_C_note": "本专业开设院校仅 8 所，无 C 档\"凑数\"院校。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

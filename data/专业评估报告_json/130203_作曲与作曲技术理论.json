@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.008439",
+    "updated_at": "2026-04-28T02:16:21.891267",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130203",
+    "name": "作曲与作曲技术理论",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "极少数天才的封神之路，普通人的就业死胡同——专业面极窄、岗位稀缺、AI 抢饭碗，唯有顶尖院校+真才华才有一线生机。",
+    "radar": {
+      "market_return": 1.5,
+      "industry_outlook": 2.2,
+      "future_adaptability": 2.0,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 2.23
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 音乐生成工具（Suno、Udio、Google MusicFX 等）已能快速生成具备一定水准的背景音乐、广告配乐、短视频音乐，直接威胁中低端商业作曲岗位。严肃音乐创作（学术作曲、艺术性强的电影配乐）短期内仍需人类创意主导，但 AI 辅助作曲工具也在压缩人工需求。和声学、曲式学、配器法等技术性工作最容易被 AI 替代，真正的\"原创性灵感\"是最后的护城河。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极少数天才的封神之路，普通人的就业死胡同——专业面极窄、岗位稀缺、AI 抢饭碗，唯有顶尖院校+真才华才有一线生机。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央音乐学院",
+        "上海音乐学院",
+        "中国音乐学院"
+      ],
+      "tier_A": [
+        "四川音乐学院",
+        "星海音乐学院",
+        "武汉音乐学院",
+        "西安音乐学院",
+        "天津音乐学院",
+        "沈阳音乐学院"
+      ],
+      "tier_B": [
+        "哈尔滨音乐学院",
+        "浙江音乐学院",
+        "南京艺术学院",
+        "广西艺术学院",
+        "云南艺术学院",
+        "内蒙古艺术学院"
+      ],
+      "tier_C_note": "各类综合性大学的音乐系/艺术学院（如山东艺术学院、吉林艺术学院等）、地方师范类院校的音乐学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

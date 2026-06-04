@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.647296",
+    "updated_at": "2026-05-11T12:27:04.235007",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "浙江理工大学科技与艺术学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.96,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "元培学院",
+        "similarity": "同类院校",
+        "key_difference": "科艺学院在“服装与艺术设计”这一垂直领域具有压倒性的品牌优势，且得益于母体“浙江理工大学”在行业内的深厚积淀，其校友网络在纺织服装圈层更具话语权。"
+      },
+      {
+        "name": "之江学院",
+        "similarity": "同类院校",
+        "key_difference": "之江学院在工科综合实力上略胜一筹，但科艺学院在“艺术+工科”的交叉领域（如服装设计与工程）更具特色，且其转专业政策的友好程度在省内几乎无出其右。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "浙江理工大学科技与艺术学院（以下简称“科艺学院”）是经教育部批准，由浙江理工大学与绍兴市上虞区人民政府共建的一所全日制本科独立学院。自 2000 年创办以来，该校经历了从杭州到绍兴上虞的异地迁建，目前已形成占地 500 余亩、设施现代化的独立校区。\n\n**核心竞争优势（Ace）**：\n1.  **“2% 逆袭通道”**：这是科艺学院最具吸引力的政策。每年选拔约 2% 的优秀大二学生转入浙江理工大学本部学习，毕业后发放浙江理工大学（公办）的毕业证书和学位证书。这为高考失手的学生提供了一个极具含金量的“跳板”。\n2.  **转专业“零门槛”**：学校实行极其灵活的转专业政策，学生在校期间有多次申请机会，且基本不设成绩门槛，这在省内高校中属于最高自由度梯队。\n3.  **产业耦合度极高**：依托母体在纺织服装领域的全国顶尖实力，学校在服装设计、艺术设计、纺织工程等专业上拥有天然的行业认可度，毕业生在长三角纺织服装产业链中具有极强的竞争力。\n\n**潜在风险与局限（Risk）**：\n1.  **深造率瓶颈**：作为应用型独立学院，其考研率和出国深造率显著低于公办本科，学术氛围相对务实，更偏向就业导向。\n2.  **学费成本**：作为独立学院，其学费通常在 2.5 万-3 万人民币/年，对于家庭经济条件有一定要求。\n3.  **地理位置的“围城”效应**：上虞校区虽然设施先进，但相对于杭州本部，其地理位置较为偏僻，学生在获取一线城市实习资源和文化资讯方面存在一定的物理距离。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "元培学院",
+          "similarity": "同类院校",
+          "key_difference": "科艺学院在“服装与艺术设计”这一垂直领域具有压倒性的品牌优势，且得益于母体“浙江理工大学”在行业内的深厚积淀，其校友网络在纺织服装圈层更具话语权。"
+        },
+        {
+          "name": "之江学院",
+          "similarity": "同类院校",
+          "key_difference": "之江学院在工科综合实力上略胜一筹，但科艺学院在“艺术+工科”的交叉领域（如服装设计与工程）更具特色，且其转专业政策的友好程度在省内几乎无出其右。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

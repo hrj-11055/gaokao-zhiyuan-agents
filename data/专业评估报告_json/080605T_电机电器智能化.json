@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.955342",
+    "updated_at": "2026-04-25T06:42:35.681553",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080605T_电机电器智能化",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "产业风口上的\"窄门专业\"：新能源+智能制造双轮驱动，赛道好但开课院校极少、资源集中度低，适合动手能力强的应用型人才。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 2.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.57
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业核心能力涉及硬件电路设计、电磁场分析、电机本体物理建模等\"硬核\"工程技能，这些需要物理世界的实验验证和工程经验积累，AI短期内难以替代。但部分重复性仿真分析和参数优化工作已被AI工具加速。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "产业风口上的\"窄门专业\"：新能源+智能制造双轮驱动，赛道好但开课院校极少、资源集中度低，适合动手能力强的应用型人才。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业无985/211院校开设）"
+      ],
+      "tier_A": [
+        "上海电机学院（行业标杆，依托上海电气集团，校企合作深度最强）"
+      ],
+      "tier_B": [
+        "塔里木大学",
+        "临沂大学"
+      ],
+      "tier_C_note": "辽宁理工学院、河北建筑工程学院、沈阳工业大学等其余开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

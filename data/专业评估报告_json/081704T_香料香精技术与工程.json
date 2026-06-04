@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.900834",
+    "updated_at": "2026-04-25T18:20:20.405233",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081704T_香料香精技术与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "闷声发香的隐秘赛道，全国仅6所高校开设，就业率近乎100%，但路径极窄——要么成为\"鼻子\"，要么重新选路。",
+    "radar": {
+      "market_return": 3.7,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.3
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "调香的核心技能——嗅觉感知、感官评价、创意配方设计——高度依赖人类感官经验和审美判断，短期内AI难以完全替代。但AI辅助调香（数据驱动配方优化、脑电波选香等技术）正在兴起，德之馨等企业已开始尝试智能调香，未来将改变工作方式但不太可能取代调香师本身。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "闷声发香的隐秘赛道，全国仅6所高校开设，就业率近乎100%，但路径极窄——要么成为\"鼻子\"，要么重新选路。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海应用技术大学"
+      ],
+      "tier_A": [
+        "北京工商大学"
+      ],
+      "tier_B": [
+        "河南农业大学",
+        "郑州轻工业大学"
+      ],
+      "tier_C_note": "云南农业大学、南昌工程学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

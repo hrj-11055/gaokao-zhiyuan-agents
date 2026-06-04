@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.742575",
+    "updated_at": "2026-05-08T01:57:05.795219",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中国药科大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.9,
+      "graduate_value": 4.6,
+      "location_advantage": 4.4,
+      "globalization": 4.0,
+      "student_empowerment": 3.6,
+      "brand_asset": 4.7
+    },
+    "weighted_score": 4.56,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "中国药科大学（China Pharmaceutical University, CPU）作为教育部直属、国家“双一流”建设的顶尖药学类高等学府，其在生物医药领域的地位相当于“清华之于工科”。学校不仅是药学基础研究的高地，更是中国医药工业人才的摇篮。在 2023-2026 年的评估周期内，药大成功应对了医药行业“集采”政策带来的产业转型压力，通过加强生物药、智能制药等新兴学科布局，进一步巩固了其学术护城河。\n\n**核心竞争力分析**：\n1.  **学科统治力**：药学学科在全国历次学科评估中始终保持 A+ 评级，其子学科（如药物化学、药剂学）的科研产出与转化能力处于国际第一梯队。\n2.  **行业渗透率**：中国大型制药企业的研发总监、总工程师及药监系统的中坚力量，约有 30%-40% 出自药大，这种“垂直领域统治力”是综合性大学难以企及的。\n3.  **科研平台能级**：拥有“多靶标天然药物全国重点实验室”，在天然药物来源的新药研发领域具有全球竞争力。\n\n**潜在挑战**：\n1.  **学科单一性风险**：尽管在药学领域无出其右，但在生命科学、临床医学等关联学科的广度上，面临复旦、上交、中山等综合性大学药学院的强力竞争。\n2.  **合规性压力**：2025 年初发生的分析测试中心受 FDA 警告事件，暴露出在国际化实验室管理规范（GLP/GMP）执行层面的细节漏洞，需长期整改。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "药界黄埔",
+        "实验狂魔",
+        "严谨到刻板",
+        "江宁黑天鹅",
+        "行业统治力",
+        "新药梦"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

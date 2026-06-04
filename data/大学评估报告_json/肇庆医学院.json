@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.655829",
+    "updated_at": "2026-05-01T02:19:06.232647",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "肇庆医学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 0.0,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "升本阵痛期",
+        "description": "从专科教学模式向本科科研教学模式转型，部分老教师的教学理念可能滞后。"
+      },
+      {
+        "category": "科研平台薄弱",
+        "description": "对于有志于从事高精尖医学研究的学生，该校目前的实验设备和课题资源可能无法满足需求。"
+      },
+      {
+        "category": "校区通勤成本",
+        "description": "三校区运行增加了行政成本，学生跨校区参加活动或办事存在不便。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "基层名校",
+        "新区豪宅宿舍",
+        "背书狂魔",
+        "公办保障",
+        "升本红利",
+        "大湾区康养摇篮"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.985754",
+    "updated_at": "2026-04-23T12:26:45.330601",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050241",
+    "name": "世界语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "全球最成功的人工语言，理念浪漫但就业极度狭窄，除非你立志成为世界语社群的\"传教士\"，否则慎选。",
+    "radar": {
+      "market_return": 1.4,
+      "industry_outlook": 1.5,
+      "future_adaptability": 2.0,
+      "career_path": 1.5,
+      "education_resources": 1.3,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 1.61
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "机器翻译技术（DeepL、Google Translate）已支持世界语翻译，基础笔译和口语翻译工作被 AI 替代的风险极高。世界语语法规则性极强（无例外），恰恰是最容易被 AI 掌握的语言类型。核心不可替代的是跨文化沟通中的\"人情味\"和社群运营能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全球最成功的人工语言，理念浪漫但就业极度狭窄，除非你立志成为世界语社群的\"传教士\"，否则慎选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国传媒大学（世界语本科专业历史最悠久的培养基地）"
+      ],
+      "tier_A": [
+        "北京语言大学（世界语选修课及研究资源丰富）",
+        "北京外国语大学（外国语言文学 A+ 学科，世界语相关研究）"
+      ],
+      "tier_B": [
+        "上海外国语大学",
+        "黑龙江大学（世界语教学传统较早）"
+      ],
+      "tier_C_note": "其他在外国语言文学学科下开设世界语课程或研究方向的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

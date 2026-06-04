@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.903662",
+    "updated_at": "2026-05-08T02:36:51.079014",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南通理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.6,
+      "graduate_value": 2.4,
+      "location_advantage": 4.0,
+      "globalization": 1.8,
+      "student_empowerment": 3.4,
+      "brand_asset": 3.0
+    },
+    "weighted_score": 2.75,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "长三角",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）：** 江苏省内以“专利产出”和“产教融合”为双轮驱动的领先应用型民办本科。\n*   **Ace（王牌优势）：** 极强的工程实践环境与专利转化意识。学校通过将科研压力转化为专利产出，成功在民办高校中树立了“技术领先”的形象。\n*   **Vibe（文化特质）：** 务实、略显刻板但充满活力。这是一种典型的“苏中式”勤奋，强调通过技能改变命运。\n*   **Risk（潜在风险）：** 随着出生率下降，民办高校的生源竞争将进入白热化。学校对建筑行业的依赖度较高，需警惕行业周期性波动带来的就业风险。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实工科",
+        "专利狂魔",
+        "南通本土",
+        "就业导向",
+        "准职业化管理",
+        "长三角跳板",
+        "建筑基因",
+        "海安新地标"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.966115",
+    "updated_at": "2026-04-28T12:39:32.548801",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130317T_数字演艺设计",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在\"演艺+数字\"交叉口的先锋专业，全国仅上戏开设，赛道蓝海但样本极少，高回报潜力与高风险并存。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.0,
+      "future_adaptability": 4.0,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 可辅助内容生成（如场景渲染、角色动画），但核心的创意策展、现场交互设计、多感官叙事编排等高度依赖人的审美判断和临场应变能力，短期内难以被完全替代。但中低端的数字内容制作岗位（如基础建模、贴图）面临较高 AI 替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在\"演艺+数字\"交叉口的先锋专业，全国仅上戏开设，赛道蓝海但样本极少，高回报潜力与高风险并存。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海戏剧学院（全国唯一开设院校，戏剧影视学顶尖学府）"
+      ],
+      "tier_A": [
+        "暂无（该专业仅上戏开设）"
+      ],
+      "tier_B": [
+        "暂无。预计未来 2–3 年内，中央戏剧学院",
+        "北京电影学院",
+        "中国传媒大学等可能跟进开设类似方向。"
+      ],
+      "tier_C_note": "暂无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

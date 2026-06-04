@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.973338",
+    "updated_at": "2026-04-22T00:44:28.368889",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040118T_婴幼儿发展与健康管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的\"带娃本科\"，人才缺口百万但薪资垫底，真心爱孩子才入行，想赚钱请绕道。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 2.2
+    },
+    "weighted_score": 3.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3500–5000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI在智慧托育中主要承担辅助角色（监控系统、发育评估、家园共育平台），但核心的婴幼儿照护、情感回应、个性化互动、安全管理等需要人类关怀与判断的工作难以被AI替代。山东女子学院教研室主任明确表示\"不会被AI取代\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的\"带娃本科\"，人才缺口百万但薪资垫底，真心爱孩子才入行，想赚钱请绕道。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（专业太新，无历史积淀和学科评估数据）"
+      ],
+      "tier_A": [
+        "山东女子学院（首批获批",
+        "教育学传统优势",
+        "教研室已组建）",
+        "陕西学前师范学院（首批获批",
+        "学前教育方向深耕）"
+      ],
+      "tier_B": [
+        "金华职业技术大学（校友会职业本科排名第一梯队）",
+        "广东工商职业技术大学（校友会职业本科排名第一）",
+        "贵阳康养职业大学（康养领域特色）"
+      ],
+      "tier_C_note": "未来即将开设该专业的普通师范类院校及地方本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

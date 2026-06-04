@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.930380",
+    "updated_at": "2026-05-09T18:06:55.561822",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海纽约大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 4.74,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [
+        "的科技"
+      ],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "上海纽约大学（NYU Shanghai）不仅是一所位于中国上海的高等学府，更是纽约大学（NYU）全球体系中三个具有学位授予权的门户校园之一。其核心定位是“世界一流研究型大学”，旨在打破传统教育的地域壁垒，培养具备跨文化沟通能力和全球视野的“世界公民”。\n\n在学术层面，上纽大彻底引进了纽约大学的学术标准和课程体系。其最大的王牌在于**无与伦比的全球流动性**。学生在校期间必须有 1-2 个学期在纽约大学全球体系内的 14 个校园或学习中心进行海外学习。这种“全球校园”的模式，使得毕业生在申请哈佛、耶鲁、牛津等顶尖名校时，其成绩单和教授推荐信具备与美本同等的认可度，甚至在多元文化背景上更具优势。\n\n从文化特质（Vibe）来看，上纽大是一个极度多元、高压且充满竞争的“小联合国”。这里没有传统意义上的“班级”概念，取而代之的是跨国籍的室友关系和频繁的跨学科小组讨论。这种环境对学生的英语能力、自主管理能力以及抗压能力提出了极高要求。\n\n然而，潜在风险（Risk）同样显著。首先是经济门槛，每年 20 万人民币以上的学费加上海外学习期间的生活费，对家庭财力有较高要求。其次，对于目标明确为国内考公、进入传统国企或体制内单位的学生来说，上纽大的培养模式与评价体系可能存在一定的“水土不服”，尽管其品牌在这些领域也在逐步提升。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

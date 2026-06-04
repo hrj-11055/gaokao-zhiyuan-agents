@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.933078",
+    "updated_at": "2026-04-26T13:18:53.873645",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090701",
+    "name": "草业科学",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "国家战略托底的\"种草\"冷门，政策红利明确但小众，适合愿意在西部草原深耕、不追求一线高薪的生态守护者。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.08
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "草原野外调查、草种选育实验、生态修复现场评估等核心工作依赖实地经验和生物多样性判断力，AI 难以替代。但草地遥感数据分析、草地资源模型预测等方向正被 AI 辅助化。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略托底的\"种草\"冷门，政策红利明确但小众，适合愿意在西部草原深耕、不追求一线高薪的生态守护者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "兰州大学",
+        "中国农业大学"
+      ],
+      "tier_A": [
+        "西北农林科技大学",
+        "内蒙古农业大学",
+        "甘肃农业大学",
+        "北京林业大学"
+      ],
+      "tier_B": [
+        "四川农业大学",
+        "南京农业大学",
+        "青海大学",
+        "新疆农业大学",
+        "宁夏大学",
+        "华南农业大学"
+      ],
+      "tier_C_note": "东北农业大学、云南农业大学、山西农业大学、贵州大学、扬州大学、湖南农业大学、河南农业大学、青岛农业大学、吉林农业大学、黑龙江八一农垦大学、西南民族大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

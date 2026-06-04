@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.176508",
+    "updated_at": "2026-04-25T19:02:49.683378",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081809T_轨道交通电气与控制",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "轨道交通的\"电力命脉\"，行业稳定但赛道极窄，全国仅4校开设，选错学校等于自断前程。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 3.0,
+      "future_adaptability": 3.0,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.19
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "轨道交通牵引供电、接触网系统的物理调试与维护高度依赖现场经验和动手能力；信号控制系统的安全认证流程（SIL4级）要求人类工程师参与验证，短期内AI难以完全替代。但智能调度算法优化、故障诊断等岗位将受到AI工具的辅助甚至部分替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "轨道交通的\"电力命脉\"，行业稳定但赛道极窄，全国仅4校开设，选错学校等于自断前程。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京交通大学",
+        "西南交通大学（注：西南交大未直接开设此本科专业，但其电气工程/交通运输工程方向为本专业最核心的考研深造院校，列入参考）"
+      ],
+      "tier_A": [
+        "山东交通学院（软科排名第一",
+        "ABC A+）",
+        "兰州交通大学（考研核心对口院校）"
+      ],
+      "tier_B": [
+        "西安交通工程学院（软科排名第二）",
+        "新疆工程学院"
+      ],
+      "tier_C_note": "华东交通大学（交通运输工程方向有特色优势）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.017646",
+    "updated_at": "2026-04-25T01:40:34.883966",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070904T_古生物学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "地球生命史的解码者，学术壁垒极高但市场口径极窄——全国年招不足百人，博士是标配，非真爱慎入。",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 2.5,
+      "future_adaptability": 3.0,
+      "career_path": 1.8,
+      "education_resources": 2.2,
+      "discipline_core": 4.8
+    },
+    "weighted_score": 2.41
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 已在化石自动识别领域取得进展（中科院南京古生物所团队实现约 86% 识别准确率，2024 年），但化石修复、野外发掘、地层剖面解读等核心工作高度依赖人手经验和空间判断，短期内不可被 AI 完全替代。AI 更可能作为辅助工具提升效率，而非取代研究者。来源：中科院古脊椎所《古生物学中的人工智能》（Earth-Science Reviews, 2024）；中国地质大学（武汉）\"元古大模型\"（2024 年 12 月）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "地球生命史的解码者，学术壁垒极高但市场口径极窄——全国年招不足百人，博士是标配，非真爱慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "南京大学"
+      ],
+      "tier_A": [
+        "中国地质大学（武汉）",
+        "中国地质大学（北京）",
+        "西北大学",
+        "中国科学院大学（中科院古脊椎所/南古所联培）"
+      ],
+      "tier_B": [
+        "吉林大学",
+        "成都理工大学",
+        "中国科学技术大学",
+        "沈阳师范大学"
+      ],
+      "tier_C_note": "河北地质大学、长江大学、东华理工大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

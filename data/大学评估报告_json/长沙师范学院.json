@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.731182",
+    "updated_at": "2026-05-09T18:55:19.862777",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "长沙师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 3.5,
+      "location_advantage": 4.5,
+      "globalization": 1.8,
+      "student_empowerment": 3.2,
+      "brand_asset": 4.2
+    },
+    "weighted_score": 3.325,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "湖南第一师范学院",
+        "similarity": "同类院校",
+        "key_difference": "一师范综合实力更强，已进入一本招生，小学教育是其王牌；长师则在学前教育领域更具专业深度。"
+      },
+      {
+        "name": "衡阳师范学院",
+        "similarity": "同类院校",
+        "key_difference": "衡师学科门类更全，更像传统的综合性师范；长师则更具艺术气息和现代感。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "长沙师范学院是一所“小而精、专而强”的应用型本科院校。它不以综合排名见长，却在“学前教育”这一垂直赛道上做到了极致。对于那些热爱教育事业、具备艺术天赋、追求职业稳定性的考生来说，这里是性价比极高的选择。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "湖南第一师范学院",
+          "similarity": "同类院校",
+          "key_difference": "一师范综合实力更强，已进入一本招生，小学教育是其王牌；长师则在学前教育领域更具专业深度。"
+        },
+        {
+          "name": "衡阳师范学院",
+          "similarity": "同类院校",
+          "key_difference": "衡师学科门类更全，更像传统的综合性师范；长师则更具艺术气息和现代感。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "学前教育领头羊",
+        "徐特立精神",
+        "红色基因",
+        "长沙网红城市",
+        "教资狂魔",
+        "艺术气息",
+        "多才多艺",
+        "务实就业"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

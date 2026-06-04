@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.626908",
+    "updated_at": "2026-05-12T11:04:52.187797",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "锦州医科大学医疗学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 1.5,
+      "graduate_value": 2.4,
+      "location_advantage": 2.1,
+      "globalization": 1.8,
+      "student_empowerment": 2.3,
+      "brand_asset": 2.0
+    },
+    "weighted_score": 1.99,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "转设不确定性",
+        "description": "这是悬在所有独立学院头上的达摩克利斯之剑。转设为民办普通本科还是与公办资源进一步剥离，将直接影响未来毕业证的含金量和学校的学费标准。目前该校转设进程相对缓慢，政策风险等级为`中等`。"
+      },
+      {
+        "category": "实习资源摊薄",
+        "description": "随着母体学校扩招及其他兄弟院校的竞争，优质三甲医院的实习名额竞争日趋激烈。医疗学院学生在实习科室分配、带教老师关注度上，有时会面临弱于母体学校学生的隐形差异。"
+      },
+      {
+        "category": "就业市场的学历歧视",
+        "description": "在医疗行业去产能和人才饱和的背景下，部分省级三甲医院在招聘简章中明确要求“全日制公办本科”，这对民办独立学院毕业生构成了直接的就业屏障。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "锦州医科大学医疗学院作为依托公办医科大学资源运行的民办医学类独立学院，其核心竞争力高度依赖于母体学校锦州医科大学的品牌背书与临床教学资源。在当前的医学教育生态中，该校扮演了“基层医疗人才蓄水池”的角色。其优势在于医学专业的行业准入基础扎实，尤其是临床医学和口腔医学专业，在执业医师资格考试的教学组织上具有成熟经验。\n\n然而，从学术资本角度看，该校作为民办本科，在国家级科研项目、高层次人才引进及学科评估中处于天然劣势。毕业生在就业市场面临明显的“学历分层”现象：虽然在基层医疗机构、民营医院及医药企业中具有较强的竞争力，但在进入一线城市三甲医院时，受限于民办独立学院的身份，往往面临较高的准入门槛。\n\n2023-2025年期间，学校正处于转设的关键窗口期。随着国家对独立学院转设要求的明确，该校未来的办学性质、更名方向以及与母体学校的资源剥离程度，将是影响其长期品牌价值的最大变量。目前的文化特质呈现出典型的“医学院式”高压学习氛围与民办院校灵活管理的混合体，学生群体表现出极强的考研驱动力，试图通过学历跃升来弥补本科起点的不足。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "考研基地",
+        "锦州烧烤",
+        "蓝色生死恋(教材)",
+        "执医通过率",
+        "民办医学领头羊",
+        "辽西医疗守望者",
+        "滨海风大",
+        "系统解剖学噩梦"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

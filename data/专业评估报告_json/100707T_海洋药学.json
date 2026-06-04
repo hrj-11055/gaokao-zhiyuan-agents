@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.025898",
+    "updated_at": "2026-04-27T03:16:57.467891",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100707T_海洋药学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "药学家族里的\"深海探险家\"——方向前沿、国家力推，但就业面极窄、高度依赖深造，适合真心热爱海洋科研的少数派。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.18
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "海洋药物研发需要天然产物提取、结构鉴定、活性筛选等复杂实验操作和跨学科判断，AI可辅助分子对接和虚拟筛选，但无法替代海洋生物采样、实验验证和药物发现过程中的直觉判断。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "药学家族里的\"深海探险家\"——方向前沿、国家力推，但就业面极窄、高度依赖深造，适合真心热爱海洋科研的少数派。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国药科大学（唯一 211/双一流，药学 A+，海洋药学方向国内最强）"
+      ],
+      "tier_A": [
+        "广东药科大学（华南药学重镇，海洋药学系统完善，与中科院南海海洋研究所深度合作）",
+        "广东医科大学"
+      ],
+      "tier_B": [
+        "海南医科大学（RBL培养模式特色，南海资源优势）",
+        "宁波大学（浙江省海洋经济政策支持）"
+      ],
+      "tier_C_note": "厦门医学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

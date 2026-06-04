@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.022012",
+    "updated_at": "2026-04-23T13:10:31.735821",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050249",
+    "name": "丹麦语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "北欧\"精准冷门牌\"，供需都极小，挂上风电航运能吃饭，纯靠语言则路越走越窄。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 2.6,
+      "future_adaptability": 2.5,
+      "career_path": 2.5,
+      "education_resources": 2.3,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 2.63
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI翻译工具（DeepL、Google Translate等）已能处理丹麦语基础翻译，会议口译、文件翻译等纯语言岗位正在被挤压。企业更倾向招聘\"语言+行业技能\"的复合型人才，纯语言能力作为护城河越来越浅。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "北欧\"精准冷门牌\"，供需都极小，挂上风电航运能吃饭，纯靠语言则路越走越窄。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学"
+      ],
+      "tier_A": [
+        "北京大学"
+      ],
+      "tier_B": [
+        "大连外国语大学"
+      ],
+      "tier_C_note": "中国人民大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.062859",
+    "updated_at": "2026-04-23T22:40:09.392050",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050256",
+    "name": "马耳他语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "全球仅30万人使用的欧盟\"遗产语言\"，稀缺性拉满但就业面窄到令人窒息，本质上是外交系统的定向通道，非体制内爱好者慎入。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 2.0,
+      "future_adaptability": 2.5,
+      "career_path": 2.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.3
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "马耳他语属于典型的\"低资源语言\"（low-resource language），全球使用人口仅约30万，训练语料极其匮乏。截至2025年，主流大模型对马耳他语的支持严重不足，AI翻译质量远不如英语、西班牙语等大语种。短期内（3–5年），马耳他语人工翻译仍不可替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全球仅30万人使用的欧盟\"遗产语言\"，稀缺性拉满但就业面窄到令人窒息，本质上是外交系统的定向通道，非体制内爱好者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（唯一开设院校，外国语言文学A+，教育部直属）"
+      ],
+      "tier_A": [
+        "无其他开设院校"
+      ],
+      "tier_B": [
+        "中国人民大学（可通过北外校际共享课程选修马耳他语，非正式开设）"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.122741",
+    "updated_at": "2026-04-28T03:53:46.762472",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130309",
+    "name": "播音与主持艺术",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "\"台上三分钟台下十年功的'声音经济'，名校光环极重，传统广电萎缩但新媒体打开新赛道，AI 语音合成正蚕食底层饭碗。\"",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.6,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.75
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 语音合成（TTS）、AI 虚拟主播、AI 配音技术已相当成熟，基础播报、配音、有声书朗读等低创意性任务正在被 AI 替代。高情感表达、即兴互动、人格化主持等能力短期不易被替代，但技术迭代速度不容忽视。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"台上三分钟台下十年功的'声音经济'，名校光环极重，传统广电萎缩但新媒体打开新赛道，AI 语音合成正蚕食底层饭碗。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国传媒大学"
+      ],
+      "tier_A": [
+        "浙江传媒学院",
+        "中央戏剧学院",
+        "上海戏剧学院",
+        "南京艺术学院",
+        "吉林艺术学院"
+      ],
+      "tier_B": [
+        "重庆大学",
+        "湖南大学",
+        "华东师范大学",
+        "武汉大学",
+        "四川师范大学",
+        "天津师范大学",
+        "中华女子学院",
+        "山东艺术学院",
+        "云南艺术学院"
+      ],
+      "tier_C_note": "全国超过 300 所开设该专业的普通本科院校，如各省属综合性大学、地方师范类院校等。对于分数在中等段的考生，C 档院校中优先选择有地方媒体资源或设有附属实习基地的院校。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.069605",
+    "updated_at": "2026-04-25T10:25:01.562715",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080715T_电信工程及管理",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "通信产业的核心基建人才，5G/6G浪潮中稀缺但极窄口径，全国仅7所院校开设——名校出身是入场券，普通院校慎入。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.8,
+      "career_path": 3.9,
+      "education_resources": 3.2,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.01
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI主要替代通信行业中的重复性网络优化、基础运维、督导类岗位（2025通讯行业薪酬白皮书显示此类岗位年薪仅19-23万元），而通信系统架构设计、射频工程、卫星互联网、6G标准制定等核心岗位难以被AI替代，且AI与通信融合（AI+网络优化）反而创造了新岗位需求。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "通信产业的核心基建人才，5G/6G浪潮中稀缺但极窄口径，全国仅7所院校开设——名校出身是入场券，普通院校慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京邮电大学（A+，全国第1，中外合作办学标杆，国家级一流专业建设点）"
+      ],
+      "tier_A": [
+        "南京邮电大学",
+        "西安邮电大学"
+      ],
+      "tier_B": [
+        "桂林电子科技大学（B+，电子通信传统强校）"
+      ],
+      "tier_C_note": "保定学院、山西应用科技学院、重庆移通学院、泰山科技学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

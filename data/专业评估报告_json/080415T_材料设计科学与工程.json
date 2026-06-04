@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.081826",
+    "updated_at": "2026-05-17T00:43:49.924811",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080415T_材料设计科学与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 4.5,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.57
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "10,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "10-12%",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "该专业本身就融合了AI、机器学习、数据挖掘等技能，核心能力包括计算材料学、高通量筛选、材料基因组工程等，属于\"AI+传统学科\"的升级方向，AI是其工具而非替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "北京航空航天大学",
+        "上海交通大学",
+        "浙江大学",
+        "西北工业大学（材料科学与工程A+或A级，且有计算材料学方向）"
+      ],
+      "tier_A": [
+        "北京科技大学",
+        "哈尔滨工业大学",
+        "北京理工大学",
+        "天津大学",
+        "中南大学",
+        "华南理工大学",
+        "四川大学",
+        "中国科学技术大学"
+      ],
+      "tier_B": [
+        "**上海大学**（材料设计科学与工程首创单位，依托材料基因组工程研究院）",
+        "武汉理工大学",
+        "东北大学",
+        "北京化工大学",
+        "西安交通大学"
+      ],
+      "tier_C_note": "其他开设材料类专业的普通本科院校",
+      "selection_advice": "优先选择设有材料基因组工程研究院/计算材料学研究方向的院校，传统材料强校（如清北航哈）更稳妥，上海大学在该细分专业上最有特色。"
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

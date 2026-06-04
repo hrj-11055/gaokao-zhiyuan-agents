@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.022457",
+    "updated_at": "2026-04-27T19:32:44.953999",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120215T_零售业管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "零售业的\"正规军\"学历，但行业重实战轻学历，电商冲击下传统零售萎缩，小众专业慎选。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.8,
+      "career_path": 2.8,
+      "education_resources": 2.0,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 2.75
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "零售业管理的核心技能（库存管理、商品陈列、门店运营、销售分析）正被 AI 和自动化系统快速替代——智能选品系统、自动补货算法、无人门店技术都在压缩传统管理岗位。仅消费者洞察、商业策略制定等高阶能力尚有壁垒。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "零售业的\"正规军\"学历，但行业重实战轻学历，电商冲击下传统零售萎缩，小众专业慎选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业尚无院校在零售业管理方向形成公认的顶尖优势）"
+      ],
+      "tier_A": [
+        "上海商学院（商科特色鲜明，零售业管理为其代表性专业之一）"
+      ],
+      "tier_B": [
+        "北京工商大学",
+        "广东财经大学",
+        "重庆工商大学"
+      ],
+      "tier_C_note": "其他开设该专业的普通本科院校（如部分地方财经类院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.570545",
+    "updated_at": "2026-05-11T17:18:19.448070",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "平顶山学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.52,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：平顶山学院是一所具有深厚行业背景的河南省属公立应用型本科高校。2024年是该校发展的里程碑之年，正式获批成为硕士学位授予单位，标志着学校从单纯的本科教学型向教学研究型转变。学校扎根于“鹰城”平顶山，形成了以工科为主、多学科协调发展的格局，尤其在服务地方支柱产业方面表现出极强的粘合度。\n*   **Ace（王牌优势）**：学校的“硬核”实力集中在电力装备、尼龙新材料及陶瓷艺术三大领域。依托平高集团、平煤神马集团等行业巨头，其电气工程、材料化学等专业的毕业生在省内乃至全国相关行业具有较高的认可度。此外，作为中原古陶瓷研究的重要基地，其陶瓷设计专业在艺术圈内小有名气，实现了文化传承与现代设计的有机结合。\n*   **Vibe（文化特质）**：校园气质呈现出一种“务实、勤奋、略显保守”的典型地方院校特征。由于地处非省会城市，学生普遍具有较强的危机感，考研、考编氛围极其浓厚。白龟湖畔的地理位置为校园增添了一丝灵动，但整体管理风格偏向稳健，学生在校内的生活节奏相对规律。\n*   **Risk（潜在风险）**：首要风险在于地理区位的局限性，平顶山作为资源型城市，对高层次人才的吸引力及毕业生的高薪岗位供给量有限。其次，校园基础设施的更新速度在部分老旧校区较慢，且在应对突发校园管理争议（如动物保护、学生权益诉求）时，公关与管理手段仍有提升空间。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

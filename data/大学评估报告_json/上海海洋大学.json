@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.888172",
+    "updated_at": "2026-05-09T17:37:22.454213",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海海洋大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.5,
+      "graduate_value": 4.0,
+      "location_advantage": 4.2,
+      "globalization": 3.8,
+      "student_empowerment": 3.6,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 4.12,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "上海海事大学",
+        "similarity": "同类院校",
+        "key_difference": "海事侧重“船、港、货”，海大侧重“鱼、水、海”。海事在航运金融、物流领域更强；海大在生物、食品、生态领域更胜一筹。"
+      },
+      {
+        "name": "中国海洋大学（985）",
+        "similarity": "同类院校",
+        "key_difference": "中海大是全才，海大是专才。在水产养殖这一细分领域，海大甚至能与中海大平分秋色。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "上海海事大学",
+          "similarity": "同类院校",
+          "key_difference": "海事侧重“船、港、货”，海大侧重“鱼、水、海”。海事在航运金融、物流领域更强；海大在生物、食品、生态领域更胜一筹。"
+        },
+        {
+          "name": "中国海洋大学（985）",
+          "similarity": "同类院校",
+          "key_difference": "中海大是全才，海大是专才。在水产养殖这一细分领域，海大甚至能与中海大平分秋色。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "勤朴忠实",
+        "临港风大",
+        "水产之王",
+        "双一流跳板",
+        "海鲜自由",
+        "务实",
+        "滴水湖畔",
+        "蓝色引擎"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

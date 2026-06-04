@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.566360",
+    "updated_at": "2026-05-11T17:47:45.329691",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "商丘工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.1,
+      "graduate_value": 2.3,
+      "location_advantage": 2.5,
+      "globalization": 1.8,
+      "student_empowerment": 2.6,
+      "brand_asset": 2.4
+    },
+    "weighted_score": 2.25,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "学费压力",
+        "description": "作为民办高校，学费通常在 1.5 万-2 万/年之间。对于豫东地区的农村家庭而言，这是一笔不小的开支。如果产出（就业起薪）不能达到预期，家庭的教育投资回报率将面临挑战。"
+      },
+      {
+        "category": "管理僵化风险",
+        "description": "过度的“高中化”管理可能压抑大学生的创造力。在社交媒体上，学生对学校管理细节的吐槽时有发生，如何平衡“规范”与“自由”是学校品牌建设的长期课题。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "商丘工学院作为豫东地区重要的民办本科院校，其发展历程缩影了中国民办高等教育从职业技能培训向应用型本科转型的全过程。学校前身为商丘科技职业学院，这种“职业基因”在当下的本科教育中转化为了极强的实训导向。在学术资本方面，虽然缺乏顶尖的科研产出和国家级学科，但其在机械、土木、护理等垂直领域的省级重点学科建设，精准对接了中原经济区建设对基层工程师和专业技术人才的需求。\n\n从生源与就业的闭环来看，商丘工学院表现出极强的“地域粘性”。其生源高度依赖河南省内，尤其是豫东地区的考生；而毕业生也大量回流至省内二三线城市的制造业、建筑业及医疗卫生系统。这种闭环虽然限制了学校的全国影响力，但在区域经济内形成了一定的品牌护城河。\n\n然而，学校面临的挑战同样显著。在高等教育普及化阶段，民办本科面临着公办本科下沉和高职院校向上竞争的双重压力。商丘工学院目前的深造率（考研率）处于较低水平，这在一定程度上反映了学生在学术进阶路径上的动力不足或资源匮乏。未来，学校需在产教融合的深度上进一步挖掘，避免陷入“高额学费、低端就业”的民办高校陷阱。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

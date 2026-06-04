@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.942850",
+    "updated_at": "2026-04-26T11:56:17.629011",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090404T_实验动物学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "生命科学的\"幕后基建\"，小众冷门但壁垒高，硕士起跳才够稳，入行前请先确认自己能接受天天和动物打交道。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 2.6
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "动物实验操作（手术、给药、解剖采样）和动物行为观察高度依赖手工技能和实物交互，AI 难以替代；但动物实验数据分析和报告撰写部分可被 AI 辅助。\"3R 原则\"（替代、减少、优化）推动下，部分简单实验正被计算机模拟替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "生命科学的\"幕后基建\"，小众冷门但壁垒高，硕士起跳才够稳，入行前请先确认自己能接受天天和动物打交道。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学（兽医学 A+，虽未单独开设该本科专业但为深造首选）",
+        "华中农业大学（兽医学 A+）"
+      ],
+      "tier_A": [
+        "扬州大学（实验动物学本科全国第 1，兽医学学科实力强）",
+        "山东第一医科大学（实验动物学本科全国第 2，依托省实验动物中心）"
+      ],
+      "tier_B": [
+        "华南农业大学",
+        "南京农业大学",
+        "吉林大学（兽医学方向实力强，研究生阶段可深耕实验动物方向）"
+      ],
+      "tier_C_note": "该专业为特设专业，仅上述院校开设，无 C 档。如选择动物医学/动物科学类专业在普通院校就读后，再通过考研进入实验动物方向，则大量农学类院校可作为跳板。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

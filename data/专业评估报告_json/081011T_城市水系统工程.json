@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.133760",
+    "updated_at": "2026-04-25T14:52:59.181146",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081011T_城市水系统工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "给排水的\"新瓶装旧酒\"升级版，万水务万亿赛道确定性高，但仅哈工大开设，选择面极窄，慎思。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.34
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "城市水系统涉及实地勘察、管网设计、工程决策等需要现场经验和多约束条件平衡的工作，AI可辅助数据分析和模型优化，但难以替代工程判断和现场协调。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "给排水的\"新瓶装旧酒\"升级版，万水务万亿赛道确定性高，但仅哈工大开设，选择面极窄，慎思。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工业大学（唯一开设校，给排水/环境工程全国顶尖）"
+      ],
+      "tier_A": [
+        "无（该专业无其他A档院校开设）"
+      ],
+      "tier_B": [
+        "长春科技学院（民办，吉林省）"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

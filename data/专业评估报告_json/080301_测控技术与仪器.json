@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.012997",
+    "updated_at": "2026-04-25T04:48:12.453077",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080301",
+    "name": "测控技术与仪器",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "工业界的\"眼睛与神经\"，万金油工科——口径宽、壁垒硬，但杂而不精的隐忧不可忽视，考研是分水岭。",
+    "radar": {
+      "market_return": 3.4,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 3.2,
+      "education_resources": 3.0,
+      "discipline_core": 2.0
+    },
+    "weighted_score": 3.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "测控专业的核心能力在于硬件设计、传感原理、信号处理与精密系统集成，涉及物理层面的测量与控制，AI 目前只能在数据分析与算法优化层面辅助，无法替代物理传感和硬件调试能力。但纯软件测试岗位面临较高 AI 替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "工业界的\"眼睛与神经\"，万金油工科——口径宽、壁垒硬，但杂而不精的隐忧不可忽视，考研是分水岭。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "哈尔滨工业大学",
+        "北京航空航天大学",
+        "天津大学"
+      ],
+      "tier_A": [
+        "上海交通大学",
+        "东南大学",
+        "电子科技大学",
+        "西安交通大学",
+        "华中科技大学",
+        "浙江大学",
+        "中北大学",
+        "北京理工大学"
+      ],
+      "tier_B": [
+        "合肥工业大学",
+        "中国计量大学",
+        "长春理工大学",
+        "南京理工大学",
+        "哈尔滨理工大学",
+        "桂林电子科技大学",
+        "南昌航空大学",
+        "江苏大学",
+        "辽宁大学"
+      ],
+      "tier_C_note": "中原工学院、沈阳工业大学、安徽理工大学、兰州交通大学、青岛理工大学、西安科技大学、昆明理工大学、天津理工大学、烟台南山学院、三亚学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

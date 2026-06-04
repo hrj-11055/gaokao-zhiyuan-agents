@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.174909",
+    "updated_at": "2026-04-25T02:13:17.208908",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "071201",
+    "name": "统计学",
+    "category": "理学",
+    "recommendation_level": "green",
+    "summary": "数据时代的\"硬通货\"专业，数学底子要求高、AI 时代反而更值钱，但本科阶段竞争力有限，读研几乎是标配。",
+    "radar": {
+      "market_return": 4.0,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.3,
+      "career_path": 3.5,
+      "education_resources": 4.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 4.17
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "~65%",
+      "starting_salary": "7000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 可以自动化数据清洗、基础统计描述、标准报表生成等重复性工作，但统计学的核心价值——因果推断、实验设计、模型选择与验证、业务洞察——高度依赖人类的领域知识和判断力。AI 大模型反而提升了统计学的高端需求（如大模型评估、AI 安全性验证都需要统计方法），但低端\"跑报表\"岗位确实面临被替代风险。刘军院士（清华大学统计与数据科学系主任）指出，当前大模型的\"预测下一个 Token\"模式存在瓶颈，统计学是推动 AI 迈向更高层次的关键学科。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "数据时代的\"硬通货\"专业，数学底子要求高、AI 时代反而更值钱，但本科阶段竞争力有限，读研几乎是标配。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "中国人民大学",
+        "厦门大学"
+      ],
+      "tier_A": [
+        "中国科学技术大学",
+        "复旦大学",
+        "华东师范大学",
+        "南开大学",
+        "北京师范大学",
+        "中央财经大学",
+        "西南财经大学",
+        "东北师范大学",
+        "上海财经大学",
+        "清华大学"
+      ],
+      "tier_B": [
+        "中山大学",
+        "西安交通大学",
+        "上海交通大学",
+        "北京理工大学",
+        "首都经济贸易大学",
+        "山东大学",
+        "武汉大学",
+        "东北财经大学",
+        "中南财经政法大学",
+        "华中科技大学",
+        "中南大学"
+      ],
+      "tier_C_note": "各省级财经类院校（如山西财经大学、云南财经大学、兰州财经大学等）、师范类院校（如福建师范大学、安徽师范大学等）、以及其余 100 余所开设统计学专业的普通本科院校。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

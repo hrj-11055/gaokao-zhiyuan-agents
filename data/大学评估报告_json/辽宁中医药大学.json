@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.577378",
+    "updated_at": "2026-05-12T10:08:14.761179",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "辽宁中医药大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.8,
+      "graduate_value": 3.4,
+      "location_advantage": 3.6,
+      "globalization": 2.2,
+      "student_empowerment": 2.4,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.42,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 5200,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "沈阳",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "国内执业",
+        "description": "完全无影响。毕业生参加国内执业医师考试、考研、就业均不受任何限制。\n  2. **海外执业**：对于计划前往美国、加拿大等国参加 USMLE 考试并获取行医执照的学生，会产生实质性阻碍。\n  3. **现状**：学校一直在积极沟通，且教育部已明确表态支持中医药院校的国际地位。但对于有明确出国行医计划的考生，需谨慎考虑。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "辽宁中医药大学是一所**优缺点极其鲜明**的典型行业类院校。\n\n- **Identity（核心定位）**：它是东北中医药人才的“孵化器”和“蓄水池”，承担着区域医疗保障和产业升级的双重使命。\n- **Ace（王牌优势）**：临床资源极其丰富。4 所直属附属医院和数十所教学医院，为学生提供了海量的临床上手机会。其“5+3”一体化专业是性价比极高的选择。\n- **Vibe（文化特质）**：一种“苦行僧”式的学术氛围。在这里，浪漫的大学生活是奢侈品，厚重的医学典籍和无尽的背诵才是常态。\n- **Risk（潜在风险）**：硬件设施的落后可能影响学生的心理预期；WDMS 事件虽然不影响国内发展，但锁死了部分高端国际化路径。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

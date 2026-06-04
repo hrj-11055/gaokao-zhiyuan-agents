@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.143269",
+    "updated_at": "2026-04-28T02:58:28.800631",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130211T_流行舞蹈",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "借奥运东风催生的新锐特设专业，天花板靠\"流量+编创\"，但碗靠\"教培\"，极度吃天赋和身体资本的青春饭。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 3.6,
+      "future_adaptability": 2.5,
+      "career_path": 2.4,
+      "education_resources": 2.8,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 2.71
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 可生成编舞方案（DanceNet 等）和虚拟舞者动作捕捉，替代部分编创和视觉呈现工作；但现场表演的情感感染力、即兴互动和\"人\"的现场魅力难以被 AI 替代。拥有动作捕捉技术技能者薪资溢价 40%（来源：gk100.com）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "借奥运东风催生的新锐特设专业，天花板靠\"流量+编创\"，但碗靠\"教培\"，极度吃天赋和身体资本的青春饭。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业 2023 年新设，尚无成熟培养体系和校友产出）"
+      ],
+      "tier_A": [
+        "武汉体育学院（软科排名第 1",
+        "A+）",
+        "西华大学（首批开设",
+        "软科 A+）"
+      ],
+      "tier_B": [
+        "天津体育学院（中国 Breaking 国家队训练基地背景）",
+        "上海视觉艺术学院（上海区位+艺术资源）",
+        "吉林体育学院"
+      ],
+      "tier_C_note": "天津传媒学院、沈阳城市学院、四川传媒学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

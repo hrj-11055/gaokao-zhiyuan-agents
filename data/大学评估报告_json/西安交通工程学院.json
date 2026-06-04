@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.609086",
+    "updated_at": "2026-05-10T00:13:27.438221",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西安交通工程学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 1.5,
+      "graduate_value": 3.8,
+      "location_advantage": 3.5,
+      "globalization": 1.2,
+      "student_empowerment": 2.5,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.65,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）：**\n西安交通工程学院是一所以轨道交通为鲜明特色的民办应用型本科高校。它在高等教育体系中的生态位非常明确：它不追求综合性的学术声誉，而是精准地对准了中国庞大的轨道交通产业链。学校的办学逻辑更接近于“行业定制化教育”，其所有的资源投入、专业设置和实训基地建设，均围绕着“铁路”与“城市轨道交通”这两个核心关键词展开。\n\n**Ace（王牌优势）：**\n该校最核心的竞争力在于其极强的行业垂直度。在民办本科院校普遍面临就业难的背景下，西安交通工程学院通过与中国铁路各大局（如西安局、兰州局、乌鲁木齐局等）以及各大城市地铁公司建立的长期稳定合作关系，为学生开辟了一条相对稳固的就业通道。其“订单班”模式和高度仿真的实训设施（如校园内的实训车站和真实机车），使得毕业生在进入企业后能够迅速上手，这种“即插即用”的属性深受用人单位欢迎。\n\n**Vibe（文化特质）：**\n校园文化带有明显的“半军事化”和“工程务实”色彩。由于未来就业岗位多在铁路一线，学校在管理上强调纪律性、准时性和操作的严谨性。学生群体中普遍存在一种“准铁路人”的自我认同，这种文化虽然在一定程度上限制了校园的文艺气息和思想活跃度，但极大地增强了学生在严苛工程环境下的适应能力。\n\n**Risk（潜在风险）：**\n首先是财务风险，作为民办高校，其学费水平远高于公办院校，对于部分农村家庭而言是不小的负担。其次是学科单一风险，学校的优势高度依赖轨道交通行业，一旦该行业进入基建饱和期或招聘政策发生重大调整（如提高学历门槛至公办本科），该校毕业生的竞争力将面临巨大挑战。此外，非铁路相关专业（如人文艺术类）在校内处于边缘地位，资源分配不均。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

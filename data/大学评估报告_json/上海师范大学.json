@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.901343",
+    "updated_at": "2026-05-09T17:42:36.016897",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海师范大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 4.06,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "上海",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "华东师范大学（985/211）",
+        "similarity": "同类院校",
+        "key_difference": "华师大侧重于学术研究和全国范围内的教育引领，录取分数极高；上师大则更接地气，深耕上海本地市场，对于分数够不上 985 但想留在上海从事教育行业的考生，上师大是更务实的选择。"
+      },
+      {
+        "name": "上海理工大学",
+        "similarity": "同类院校",
+        "key_difference": "上理大强在工程和应用技术，适合准程序员和工程师；上师大强在人文社科和艺术，适合准教师、媒体人和文职人员。两校在上海的认可度旗鼓相当，但赛道完全不同。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **核心定位**：上海师范大学是一所以师范教育为特色、文理基础扎实、艺术传媒见长的综合性高水平大学。它是上海基础教育师资的“主渠道”。\n*   **王牌优势**：在上海本地拥有极强的行业壁垒。如果你想在上海当老师，上师大的性价比和校友资源甚至在某些层面可以挑战华东师大。\n*   **文化特质**：兼具“师范生的严谨”与“上海人的精致”。校园生活丰富，都市感强。\n*   **潜在风险**：非师范类工科专业在就业市场上相对边缘化；奉贤校区的通勤成本对低年级学生是一个考验。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "华东师范大学（985/211）",
+          "similarity": "同类院校",
+          "key_difference": "华师大侧重于学术研究和全国范围内的教育引领，录取分数极高；上师大则更接地气，深耕上海本地市场，对于分数够不上 985 但想留在上海从事教育行业的考生，上师大是更务实的选择。"
+        },
+        {
+          "name": "上海理工大学",
+          "similarity": "同类院校",
+          "key_difference": "上理大强在工程和应用技术，适合准程序员和工程师；上师大强在人文社科和艺术，适合准教师、媒体人和文职人员。两校在上海的认可度旗鼓相当，但赛道完全不同。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

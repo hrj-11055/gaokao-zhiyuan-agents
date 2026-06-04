@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.075911",
+    "updated_at": "2026-04-25T17:50:49.969291",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081603T_非织造材料与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众但不可替代的工业\"隐形冠军\"——口罩纸尿裤背后的材料密码，行业刚需但圈外人几乎没听过，高对口就业但薪资天花板需靠技术突破。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 3.9
+    },
+    "weighted_score": 3.28
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "非织造材料研发涉及高分子化学配方、工艺参数调优、纤维结构设计等，需要大量实验验证和现场调试，AI 可辅助数据分析但难以替代实验室试错和产线调试环节。中低端质检等环节存在一定 AI 替代可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众但不可替代的工业\"隐形冠军\"——口罩纸尿裤背后的材料密码，行业刚需但圈外人几乎没听过，高对口就业但薪资天花板需靠技术突破。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东华大学（211/双一流，A+，行业绝对龙头）"
+      ],
+      "tier_A": [
+        "天津工业大学（双一流）",
+        "浙江理工大学",
+        "武汉纺织大学",
+        "苏州大学（211）"
+      ],
+      "tier_B": [
+        "南通大学",
+        "安徽工程大学",
+        "河南工程学院"
+      ],
+      "tier_C_note": "德州学院、湖南工程学院、新疆科技学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

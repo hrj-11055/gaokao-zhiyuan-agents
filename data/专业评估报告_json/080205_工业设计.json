@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.204659",
+    "updated_at": "2026-04-25T03:58:45.962895",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080205",
+    "name": "工业设计",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "理工与艺术的混血儿，踩在\"中国智造\"风口上，但底层设计师内卷严重，头部效应显著——进不了好学校好企业，容易沦为\"高级画图员\"。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.5,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.63
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 绘图工具（Midjourney、Stable Diffusion）已可替代 50-70% 的概念生成和渲染工作，设计周期缩短 60%+（Autodesk 数据）。但用户洞察、材料工艺决策、供应链协同、品牌策略等核心能力仍难以替代。设计师需从\"执行者\"转型为\"AI 调教师+决策者\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "理工与艺术的混血儿，踩在\"中国智造\"风口上，但底层设计师内卷严重，头部效应显著——进不了好学校好企业，容易沦为\"高级画图员\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "上海交通大学",
+        "浙江大学",
+        "湖南大学",
+        "同济大学"
+      ],
+      "tier_A": [
+        "北京理工大学",
+        "北京航空航天大学",
+        "西北工业大学",
+        "江南大学",
+        "华南理工大学",
+        "天津大学",
+        "西安交通大学",
+        "武汉理工大学"
+      ],
+      "tier_B": [
+        "北京工业大学",
+        "南京航空航天大学",
+        "华东理工大学",
+        "广东工业大学",
+        "浙江大学（工程师学院）",
+        "大连理工大学",
+        "重庆大学",
+        "合肥工业大学",
+        "四川大学",
+        "浙江大学宁波理工学院"
+      ],
+      "tier_C_note": "全国 217 所开设工业设计专业的普通本科院校，包括各省工业大学、理工大学、科技大学等。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

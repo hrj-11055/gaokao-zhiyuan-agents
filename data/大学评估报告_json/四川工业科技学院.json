@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.507869",
+    "updated_at": "2026-05-10T00:16:04.327374",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "四川工业科技学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 1.5,
+      "graduate_value": 1.8,
+      "location_advantage": 3.5,
+      "globalization": 1.5,
+      "student_empowerment": 3.2,
+      "brand_asset": 2.5
+    },
+    "weighted_score": 2.075,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "四川工业科技学院是一所典型的“产业驱动型”民办本科院校。其核心竞争力并非建立在学术研究或学科排名上，而是建立在与德阳市乃至成渝地区双城经济圈制造业的深度耦合上。学校的生存逻辑非常清晰：通过极低的入学门槛（本科线附近）吸纳生源，利用德阳作为“中国重大技术装备制造业基地”的区位优势，将学生转化为工业生产一线的应用型人才。\n\n从深度评估来看，该校在“学术资本”维度表现薄弱，缺乏国家级科研平台和顶尖学术带头人。然而，在“产教融合”维度，其表现优于同类民办院校。学校通过与吉利汽车、中国十九冶等大型企业建立订单班，解决了民办院校最核心的“就业出口”问题。对于不追求学术深造、家庭背景普通、希望通过掌握一门工业技术实现稳定就业的考生而言，该校具有较高的性价比。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬核工科",
+        "德阳重装",
+        "就业导向",
+        "转专业自由",
+        "务实主义",
+        "民办翘楚"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

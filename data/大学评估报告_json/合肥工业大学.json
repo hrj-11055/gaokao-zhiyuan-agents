@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.749701",
+    "updated_at": "2026-05-11T18:28:59.599005",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "合肥工业大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.4,
+      "location_advantage": 4.6,
+      "globalization": 3.2,
+      "student_empowerment": 3.6,
+      "brand_asset": 4.0
+    },
+    "weighted_score": 4.17,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "合肥工业大学（以下简称“合工大”）是一所典型的“低调强校”。作为教育部直属的“双一流”、“211工程”重点建设高校，它在长三角乃至全国的工业版图中占据着不可替代的地位。其核心竞争力在于**极高的行业垂直度**，尤其是在汽车工业领域，被誉为中国汽车工业的“黄埔军校”。\n\n从学术维度看，合工大并非以学科门类齐全见长，而是采取了“单点突破、以点带面”的策略。其管理科学与工程学科在第五轮学科评估中蝉联 A+，这在非 985 的 211 高校中极为罕见，充分证明了其在决策科学、大数据管理领域的国际竞争力。同时，机械、电气、自动化等传统工科保持了极高的教学质量和科研转化率。\n\n在就业维度，合工大展现出了极强的“抗周期性”。在近年来互联网行业波动、文科就业承压的背景下，合工大凭借与新能源汽车（比亚迪、蔚来、江淮）、电力系统（国家电网）、智能制造（华为、中兴）的深度绑定，毕业生起薪与就业率始终维持在高位。\n\n然而，学校也面临着明显的挑战。首先是“一校两地三校区”（合肥屯溪路、翡翠湖校区与宣城校区）的资源平衡问题，宣城校区在生源质量与资源获取上与本部仍存在细微落差。其次，学校的整体氛围偏向“硬核工科”，人文社科底蕴相对薄弱，对于追求多元化校园生活或综合素质发展的学生来说，可能会感到校园氛围过于枯燥。此外，2026 年发生的个别学术诚信事件也为学校的竞赛监管和学术风控敲响了警钟。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实到骨子里",
+        "工程师摇篮",
+        "新能源汽车黄埔",
+        "斛兵塘",
+        "红专并进",
+        "高强度实验报告"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,658 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generated_at": "2026-05-20T07:58:07.106192",
+    "updated_at": "2026-05-01T02:24:18.772421",
+    "source_file": "深圳信息职业技术大学.md",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "深圳信息职业技术大学",
+    "location": "{",
+    "type": "公办",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.5,
+      "location_advantage": 4.8,
+      "globalization": 3.5,
+      "student_empowerment": 4.0,
+      "brand_asset": 4.3
+    },
+    "weighted_score": 4.31,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "summary": ""
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {
+      "title": "1.1 学科金字塔 `[直接回答]`",
+      "raw_content": "作为职业本科大学，深信大不参与教育部普通本科的学科评估（A/B/C类），但其在职业教育领域的“双高计划”中处于顶尖位置。\n\n| 建设平台/学科 | 评估等级/地位 | 所属门类 |\n| :--- | :--- | :--- |\n| 软件技术专业群 | “双高计划”高水平专业群（A档） | 电子信息 |\n| 移动通信技术专业群 | “双高计划”高水平专业群 | 电子信息 |\n| 工程科学 | ESI全球排名前1% | 工学 |\n\n**学科强项集中领域**：\n深信大是全国首个工程学进入ESI前1%的高职院校。其学科布局高度聚焦“强芯铸魂”，在微电子、软件工程、人工智能、工业软件等领域拥有极强的技术转化能力，10个专业位列全国职业院校第一。"
+    },
+    "module2_student_competitiveness": {
+      "title": "2.2 理科/物理组录取数据",
+      "raw_content": "#### 2025 年物理组录取信息（预期/部分）\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 广东 | 428 | 240,563 | 前 35.2% |\n\n#### 2024 年物理组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 广东 | 467 | 207,517 | 前 30.1% |\n| 湖南 | 459 | 141,058 | 前 28.5% |\n\n**理科生源深度分析**：\n2024年是深信大本科招生元年，物理类投档线表现强劲，在广东超本科线25分，在湖南超本科线37分。这反映了市场对“职业本科”就业优势的高度认可。高分段考生主要奔着集成电路、软件工程等王牌专业而去。\n\n---"
+    },
+    "module3_graduate_value": {
+      "title": "3.2 就业去向全景 `[需搜索：搜索组 C]`",
+      "raw_content": "| 去向方向 | 占比 | 关键细节 |\n| :--- | :--- | :--- |\n| 企业就业 | 92% | 81.5% 扎根深圳，50% 服务于战新产业 |\n| 考公/选调 | < 2% | 职业本科在考公政策上仍处于磨合期 |\n| 国内深造 | 5% | 主要是专升本（针对往届专科生） |\n| 其他 | 1% | 创业或自由职业 |\n\n**顶级雇主 Top 5**：华为、腾讯、比亚迪、中兴通讯、深信服。"
+    },
+    "module4_location_industry": {
+      "title": "4.1 区位与产业势能",
+      "raw_content": "| 指标 | 数据 | 来源 |\n| :--- | :--- | :--- |\n| 所在城市 | 深圳 | — |\n| 最新年度 GDP | 3.46 万亿元 (2023) | 统计局 |\n| 全国城市 GDP 排名 | 第 3 名 | 统计局 |\n| 城市定位 | 全球科技创新中心、中国硅谷 | 官方定位 |\n\n**产业-学科共振分析**：\n\n| 城市支柱产业 | 耦合学科 | 耦合度 |\n| :--- | :--- | :--- |\n| 新一代信息技术 | 软件工程、通信工程 | `高度共振` |\n| 集成电路 | 集成电路工程技术 | `高度共振` |\n| 智能网联汽车 | 智能制造、嵌入式技术 | `中度耦合` |\n\n**耦合实例**：深信大与华为共建“华为ICT学院”，学生直接在校内考取华为HCIE顶级认证，毕业后直接进入华为生态链企业，实现“零距离”就业。"
+    },
+    "module5_campus_ecosystem": {
+      "title": "5.3 品牌资产与文化印记 `[需搜索：搜索组 G]`",
+      "raw_content": "| 指标 | 数据 | 数据来源 |\n| :--- | :--- | :--- |\n| 软科排名 | 高职专科第 1 名 | 2025 软科 |\n| 校友会排名 | 职业大学前列 | 校友会 2025 |\n| B 站官方粉丝 | 5.2 万 | B 站官网 |\n| 抖音官方粉丝 | 12.8 万 | 抖音官网 |\n| 社交媒体风格 | 活泼、硬核技术流、紧跟热点 | — |"
+    },
+    "module6_comprehensive_evaluation": {
+      "title": "6.1 六维评分表",
+      "raw_content": "| 评估维度 | 核心依据摘要 | 维度得分 | 权重 | 加权得分 |\n| :--- | :--- | :--- | :--- | :--- |\n| **学术资本** | “双高计划”A档（优等），ESI工程学全球1%，院士加盟，国家级平台密集 | 4.2 | 30% | 1.26 |\n| **毕业生价值实现** | 就业率 >98%，深度绑定华为/腾讯，起薪显著高于同类职本及部分双非本科 | 4.5 | 30% | 1.35 |\n| **区位与产业势能** | 坐落深圳龙岗，精准对接“20+8”产业集群，产教融合深度全国顶尖 | 4.8 | 15% | 0.72 |\n| **全球化能力** | 英国皇家工程院院士加盟，华为ICT国际认证中心，中外合作项目稳步推进 | 3.5 | 10% | 0.35 |\n| **学生赋权与自由度** | 转专业政策相对宽松，大运村宿舍硬件极佳，创新创业资源丰富 | 4.0 | 5% | 0.20 |\n| **品牌资产与文化印记** | 软科高职专科排名全国第1，职业本科新晋劲旅，B站/抖音活跃度高 | 4.3 | 10% | 0.43 |\n| **加权总分** | **职业本科赛道的“清华预备役”** | **100%** | | **4.31** |"
+    },
+    "module7_culture_cards": {
+      "title": "7.2 一句话校园精神测试",
+      "raw_content": "**问题**：周六晚上，你最可能出现在哪里？\n*   **A.** 操场散步，思考人生哲学。 → 点评：你可能走错学校了。\n*   **B.** 实训室，对着一块开发板死磕鸿蒙系统代码。 → 点评：纯正深信血统，未来大厂之星。"
+    },
+    "module8_raw_data": {
+      "title": "8.1 数据源汇总",
+      "raw_content": "| 数据项 | 引用来源 | 可信度 |\n| :--- | :--- | :--- |\n| 2024录取分数 | 广东省教育考试院、掌上高考 | 高 |\n| 就业率数据 | 2023届毕业生就业质量报告 | 高 |\n| 软科排名 | 软科官方发布 (2025) | 高 |\n| 院士加盟 | 中国新闻网 (2026.03) | 高 |"
+    }
+  },
+  "layer4_supplement": {
+    "full_raw_content": "# 深圳信息职业技术大学深度评估报告 (2023–2025)\n\n## 模块六：综合评估与量化评分 `[直接回答]`\n\n### 6.1 六维评分表\n\n| 评估维度 | 核心依据摘要 | 维度得分 | 权重 | 加权得分 |\n| :--- | :--- | :--- | :--- | :--- |\n| **学术资本** | “双高计划”A档（优等），ESI工程学全球1%，院士加盟，国家级平台密集 | 4.2 | 30% | 1.26 |\n| **毕业生价值实现** | 就业率 >98%，深度绑定华为/腾讯，起薪显著高于同类职本及部分双非本科 | 4.5 | 30% | 1.35 |\n| **区位与产业势能** | 坐落深圳龙岗，精准对接“20+8”产业集群，产教融合深度全国顶尖 | 4.8 | 15% | 0.72 |\n| **全球化能力** | 英国皇家工程院院士加盟，华为ICT国际认证中心，中外合作项目稳步推进 | 3.5 | 10% | 0.35 |\n| **学生赋权与自由度** | 转专业政策相对宽松，大运村宿舍硬件极佳，创新创业资源丰富 | 4.0 | 5% | 0.20 |\n| **品牌资产与文化印记** | 软科高职专科排名全国第1，职业本科新晋劲旅，B站/抖音活跃度高 | 4.3 | 10% | 0.43 |\n| **加权总分** | **职业本科赛道的“清华预备役”** | **100%** | | **4.31** |\n\n### 6.2 执行摘要\n\n*   **Identity（核心定位）**：中国职业教育的“天花板”，由深圳市政府举办、深度对接ICT产业的公办职业本科大学。\n*   **Ace（王牌优势）**：产教融合的极致化。与华为、腾讯、中国电子等巨头共建产业学院，学生在校即接触行业最前沿技术（如鸿蒙、信创、半导体）。\n*   **Vibe（文化特质）**：务实、高压、高回报。校园氛围介于“高级技师工厂”与“互联网大厂预备营”之间，学生普遍具备极强的动手能力。\n*   **Risk（潜在风险）**：社会对“职业本科”身份的认知仍有偏差；部分行政管理存在“高中化”倾向；宿舍曾有被征用争议。\n\n### 6.3 一句话推荐\n\n**最适合：** 分数在本科线上、追求高起薪、希望扎根深圳ICT行业、比起“学术研究”更喜欢“动手搞钱”的务实型考生。\n\n### 6.4 横向对比\n\n与**深圳职业技术大学（深职大）**对比：\n*   **优势**：深信大在“信息技术”垂直领域（软件、通信、微电子）的积淀更深，与华为的合作更为核心（拥有全国首家华为认证ICT学院支持中心）。\n*   **短板**：综合名气略逊于深职大，本科专业数量目前少于深职大（深信大首批5个，深职大已达15个），校园文化底蕴尚在追赶中。\n\n---\n\n## 模块一：学术资本（权重 30%）\n\n### 1.1 学科金字塔 `[直接回答]`\n\n作为职业本科大学，深信大不参与教育部普通本科的学科评估（A/B/C类），但其在职业教育领域的“双高计划”中处于顶尖位置。\n\n| 建设平台/学科 | 评估等级/地位 | 所属门类 |\n| :--- | :--- | :--- |\n| 软件技术专业群 | “双高计划”高水平专业群（A档） | 电子信息 |\n| 移动通信技术专业群 | “双高计划”高水平专业群 | 电子信息 |\n| 工程科学 | ESI全球排名前1% | 工学 |\n\n**学科强项集中领域**：\n深信大是全国首个工程学进入ESI前1%的高职院校。其学科布局高度聚焦“强芯铸魂”，在微电子、软件工程、人工智能、工业软件等领域拥有极强的技术转化能力，10个专业位列全国职业院校第一。\n\n### 1.2 顶尖智力资产 `[直接回答]`\n\n| 类别 | 人数 | 数据来源 |\n| :--- | :--- | :--- |\n| 中国科学院/工程院院士 | 2（柔性/特聘） | 学校官网 |\n| 海外/外籍院士 | 1 | 2026年3月新闻 |\n| **合计** | **3** | |\n\n**代表人物**：**Dragan A. Savić**，英国皇家工程院院士，水务与数字化转型领军人物。\n\n### 1.3 国家级科研平台 `[直接回答]`\n\n| 平台名称 | 级别/类型 | 主要研究方向 |\n| :--- | :--- | :--- |\n| 深信创新港 | 省级/校级核心平台 | 关键共性技术攻关 |\n| 深圳市电子信息产业技术研究院 | 市级平台 | 电子信息技术研发 |\n| 半导体先进制造产线 | 中试研发平台 | 集成电路制造与封测 |\n| 全国信息技术应用创新行业产教融合共同体 | 国家级（牵头） | 信创产业人才培养 |\n\n### 1.4 保送生与特殊招生 `[需搜索：搜索组 B]`\n\n| 年份 | 保送生总数 | 技能大赛类 | 竞赛类 | 其他 | 数据来源 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| 2025 | 约 15 | 15 | 0 | 0 | 招生办公示 |\n| 2024 | 12 | 12 | 0 | 0 | 官网录取名单 |\n| 2023 | 10 | 10 | 0 | 0 | 官网录取名单 |\n\n**录取难度评估**：`极高`。依据：保送生主要面向全国职业院校技能大赛一等奖获得者，属于“技能天才”的选拔。\n\n### 1.5 双学位与辅修项目 `[直接回答]`\n\n经检索，该校目前作为职业本科，主要推行“岗课赛证”融通培养模式，**未设立**传统意义上的跨校双学位项目，但拥有大量企业认证证书项目（如华为HCIE认证）。\n\n---\n\n## 模块二：生源竞争力 `[需搜索：搜索组 A]`\n\n### 2.1 文科/历史组录取数据\n\n#### 2025 年历史组录取信息（预期/部分）\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 广东 | 454 | 101,501 | 前 23.1% |\n\n#### 2024 年历史组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 广东 | 487 | 47,429 | 前 10.8% |\n\n**文科生源深度分析**：\n深信大作为理工类见长的学校，文科生源主要集中在商务英语、财经商贸等专业。2024年升本后，文科录取分数线在广东省内稳居本科线上，竞争位次较往年有显著提升。建议文科考生关注其跨境电商等与深圳产业结合紧密的专业。\n\n### 2.2 理科/物理组录取数据\n\n#### 2025 年物理组录取信息（预期/部分）\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 广东 | 428 | 240,563 | 前 35.2% |\n\n#### 2024 年物理组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 广东 | 467 | 207,517 | 前 30.1% |\n| 湖南 | 459 | 141,058 | 前 28.5% |\n\n**理科生源深度分析**：\n2024年是深信大本科招生元年，物理类投档线表现强劲，在广东超本科线25分，在湖南超本科线37分。这反映了市场对“职业本科”就业优势的高度认可。高分段考生主要奔着集成电路、软件工程等王牌专业而去。\n\n---\n\n## 模块三：毕业生价值实现（权重 30%）\n\n### 3.1 深造质量 `[需搜索：搜索组 C]`\n\n| 指标 | 数值 | 数据来源 |\n| :--- | :--- | :--- |\n| 本科毕业生总数 | 5,453 (2023届) | 就业质量报告 |\n| 国内深造率 | 约 5% (专升本/考研) |  |\n| 出国（境）深造率 | < 1% | 社区观点 |\n| 进入 QS 前 50 比例 | [未检索到] | — |\n| 最受欢迎海外深造地 | 香港、英国、澳洲 | 社区观点 |\n\n### 3.2 就业去向全景 `[需搜索：搜索组 C]`\n\n| 去向方向 | 占比 | 关键细节 |\n| :--- | :--- | :--- |\n| 企业就业 | 92% | 81.5% 扎根深圳，50% 服务于战新产业 |\n| 考公/选调 | < 2% | 职业本科在考公政策上仍处于磨合期 |\n| 国内深造 | 5% | 主要是专升本（针对往届专科生） |\n| 其他 | 1% | 创业或自由职业 |\n\n**顶级雇主 Top 5**：华为、腾讯、比亚迪、中兴通讯、深信服。\n\n### 3.3 薪酬竞争力 `[需搜索：搜索组 D]`\n\n| 指标 | 数值 | 数据来源 |\n| :--- | :--- | :--- |\n| 毕业起薪中位数 | 6,500 - 7,500 元/月 | 2024届技工/职教报告 |\n| 毕业 5 年薪酬中位数 | 12,000+ 元/月 | 麦可思调研 [社区观点] |\n| 同类高校薪酬水平 | `显著高于` | 依据：深圳ICT产业溢价及高对口就业率 |\n\n---\n\n## 模块四：区位与产业势能（权重 15%）`[直接回答]`\n\n### 4.1 区位与产业势能\n\n| 指标 | 数据 | 来源 |\n| :--- | :--- | :--- |\n| 所在城市 | 深圳 | — |\n| 最新年度 GDP | 3.46 万亿元 (2023) | 统计局 |\n| 全国城市 GDP 排名 | 第 3 名 | 统计局 |\n| 城市定位 | 全球科技创新中心、中国硅谷 | 官方定位 |\n\n**产业-学科共振分析**：\n\n| 城市支柱产业 | 耦合学科 | 耦合度 |\n| :--- | :--- | :--- |\n| 新一代信息技术 | 软件工程、通信工程 | `高度共振` |\n| 集成电路 | 集成电路工程技术 | `高度共振` |\n| 智能网联汽车 | 智能制造、嵌入式技术 | `中度耦合` |\n\n**耦合实例**：深信大与华为共建“华为ICT学院”，学生直接在校内考取华为HCIE顶级认证，毕业后直接进入华为生态链企业，实现“零距离”就业。\n\n### 4.2 全球化能力 `[直接回答]`\n\n| 指标 | 数据 |\n| :--- | :--- |\n| 实质性交换项目合作院校数 | 约 20 所 |\n| 其中 QS 前 100 院校 | 昆士兰大学（部分合作） |\n| 中外合作办学机构 | 无（主要为项目制合作） |\n| 高层次双学位项目 | 无 |\n\n---\n\n## 模块五：校园生态与品牌\n\n### 5.1 学生赋权与自由度 `[直接回答]`\n\n**转专业政策**：\n*   申请时间：大一第一学期末\n*   申请次数：1次\n*   成绩要求：通常要求专业排名前 15%-20%\n*   考核方式：`笔试+面试`\n*   成功率：约 60%（受热门专业名额限制）\n\n### 5.2 基础设施与生活品质 `[需搜索：搜索组 E]`\n\n*   **宿舍条件**：[社区观点] 宿舍是该校最大的招牌。由于校址原为2011年深圳大运会运动员村，宿舍标准极高。4-6人间，公寓式布局，带独立阳台、双卫、空调、电梯，被誉为“全广东最豪华宿舍之一”。\n*   **食堂评级**：[社区观点] 拥有多个大型食堂，如“大运食堂”。特色菜包括深井烧鹅、各类广式点心，价格受政府补贴，性价比极高。\n\n### 5.3 品牌资产与文化印记 `[需搜索：搜索组 G]`\n\n| 指标 | 数据 | 数据来源 |\n| :--- | :--- | :--- |\n| 软科排名 | 高职专科第 1 名 | 2025 软科 |\n| 校友会排名 | 职业大学前列 | 校友会 2025 |\n| B 站官方粉丝 | 5.2 万 | B 站官网 |\n| 抖音官方粉丝 | 12.8 万 | 抖音官网 |\n| 社交媒体风格 | 活泼、硬核技术流、紧跟热点 | — |\n\n### 5.4 学术氛围与社团生态 `[需搜索：搜索组 E]`\n\n*   **学术压力画像**：[社区观点] “比高中还累”。由于职业本科强调实操，学生课表排得很满，且有大量的实验课和考证压力。匿名学生原话：“在深信，你不是在考证，就是在去考证的路上。”\n*   **标志性社团**：机器人协会、红客联盟（网络安全）。\n\n### 5.5 特殊机遇窗口 `[直接回答]`\n\n| 项目名称 | 培养方向 | 选拔方式 | 核心优势 |\n| :--- | :--- | :--- | :--- |\n| 华为ICT学院实验班 | 华为全栈技术 | 入学二次选拔 | 华为资深工程师授课，直通生态链企业 |\n| 麒麟信创班 | 国产操作系统 | 择优录取 | 解决“卡脖子”技术，信创产业刚需 |\n\n### 5.6 已知风险点 `[需搜索：搜索组 F]`\n\n| 风险点 | 事件概要 | 后续处理 | 当前状况 |\n| :--- | :--- | :--- | :--- |\n| 宿舍征用争议 | 2022年曾因防疫需要征用学生宿舍引发学生抗议 | 学校道歉并提供补偿 | 已平息，目前管理更透明 |\n| 身份认同风险 | 职业本科在部分企业招聘中仍面临学历歧视 | 深圳市政府大力背书 | 正在改善，大厂认可度高 |\n\n---\n\n## 模块七：文化揭秘卡片 `[需搜索：搜索组 E]`\n\n### 7.1 刻板印象 vs 现实\n\n*   **公众眼中的深信大**：“考不上本科才去的专科学校。”\n*   **我们眼中的自己**：“深圳ICT产业的黄埔军校，宿舍比五星级酒店还舒服，毕业起薪秒杀普通一本。”\n\n### 7.2 一句话校园精神测试\n\n**问题**：周六晚上，你最可能出现在哪里？\n*   **A.** 操场散步，思考人生哲学。 → 点评：你可能走错学校了。\n*   **B.** 实训室，对着一块开发板死磕鸿蒙系统代码。 → 点评：纯正深信血统，未来大厂之星。\n\n### 7.3 气质标签云\n\n`[硬核实操]` `[大运村公寓]` `[华为全家桶]` `[搞钱要紧]` `[信创先锋]` `[卷王聚集地]`\n\n---\n\n## 模块八：原始数据汇总 `[直接回答]`\n\n### 8.1 数据源汇总\n\n| 数据项 | 引用来源 | 可信度 |\n| :--- | :--- | :--- |\n| 2024录取分数 | 广东省教育考试院、掌上高考 | 高 |\n| 就业率数据 | 2023届毕业生就业质量报告 | 高 |\n| 软科排名 | 软科官方发布 (2025) | 高 |\n| 院士加盟 | 中国新闻网 (2026.03) | 高 |\n\n### 8.2 未检索到数据清单\n\n*   **QS前50深造比例**：由于该校刚升本，且职业教育导向为就业，深造数据样本极少。\n*   **毕业5年薪酬确切数字**：职业本科毕业生尚未满5年（首届本科生2028年毕业），目前数据基于原专科毕业生调研。\n\n---\n\n## 模块九：结构化数据导出 (JSON) `[必须执行]`\n\n```json\n{\n  \"university_name\": \"深圳信息职业技术大学\",\n  \"academic\": {\n    \"a_plus_count\": 0,\n    \"a_count\": 0,\n    \"a_minus_count\": 0,\n    \"academician_count\": 3,\n    \"double_high_plan\": \"A档(优)\"\n  },\n  \"employment\": {\n    \"domestic_further_study_rate\": \"5%\",\n    \"overseas_further_study_rate\": \"<1%\",\n    \"starting_salary\": 7000,\n    \"top_employer\": \"华为\"\n  },\n  \"location\": {\n    \"city\": \"深圳\",\n    \"city_gdp\": \"3.46万亿元\"\n  },\n  \"scores\": {\n    \"comprehensive_score\": 4.31\n  },\n  \"rankings\": {\n    \"shanghai_ranking_vocational\": 1\n  }\n}\n```\n\n---\n## Google 搜索来源\n\n- [dxsbb.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZp6TWr5Owsw4cXS4UTN18fdHTVFQS1t7w8BLgePlVh-fdm4ysskmEikZQtomYw7tuPLuLWU76X5p5CAffkQjWxA_ynyIRtMiRXgf-GXSGfQqXp4fHXDp62FbZtJ46PiQ=)\n- [sz.gov.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGPGwRGGHVRo_9wMA0fnrMkOgW_OpaUwR8y8MLyiBdUCzq77exBZGSu4u0XL5aSLls7iR1-i9Me4CDkMixdB9lLZkQTAyj5lAfGQ2IRvZfHpFD9d35Rx4NTIVkWRGtu1NGYpiGV5AByjLMKk4iO7r5LCpUbAJvBnCR6sn78-ML_)\n- [dxsbb.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIFuTvaB4Z5wJDaLk2-fa_Mr94dRFIfB4sFYJNElesbMet8O7BuQ8VNIU22wAukPR6HStnAsCVcApS0EAD-jHHH6mIYAd4CHOsHbhSudo6WLFGMkDyjbWR__o6x6omwz0=)\n- [sz.gov.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFM5prljbqJzvt1-eI3c2ggpBual1zwwmWrevvPdN5GdjuYIl7jVB-p3Chq3_UL8iU9wuyXxRfl0546_FX0QE9wlwNUm-X_Rn6-BXXeQk_dSZVxjwuRVDUqUC8OrDcx6tZTPZ_YcznRnro60gZ2nh4lRxLuAEoTCGlU0k=)\n- [qq.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFu7YAZFz4dxTPTJE-sqWa6gW8Hhsn4sqew2a9bOsgxvKKp7fubxvfz7wgCEQiBAap46rRb_YRPBLSlEqo6u6LEmiKh4ohRbSf8wbc48aWRvRktAzDThBK4rJ2FOcchYFH_9SPCTO4=)\n- [163.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSZGQJk-tt0Qnn1unueWin_c5DepRXQRYMylcJQPjtLVpjOB1QX8AENCExapST3qv1RJklJ6WkwZygx1aw_lRe2oEKEE9nA1oeOdZy4GanXNRKbryW-plso7HGJAyZdKi_dFNfmaVTpv0aJxk2oRI=)\n- [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXw_icbxxBoLd8mbn6kxICd8OaYgfP1CnZq0Fnq1nw-MApwmUsqQrjmlCYSz46c2TVrQmA4qWFGVXE9fbt9VOVaMN4DHITV3vngNpwWFcK88Jr5R5IQxGimCS2yCDKwf8O6hoxdeeZfBryHrNrmvKReSanmzySsZrAApsa7iExDLX1gASkiNOrH2vFdhb-TailFOG5kx1Q9Xx6p5nS6utcD4F8xQWgcf6ulMz7-tKcxPJQ1Qg=)\n- [21jingji.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDBYmVEyVnRSSkeXtZWJvz9ks3xRkhaV571Li4WrN_S7R3VPugpPGLBcs6BlEpXNPSCtJYYgytoToEcfc74_14kD7e8dBlO29CtUUocOgEviZ4Dq0Szu4-eGK2RduXpY5cWlrrDJtVa0R4-vwdzXnJTx9WF2EI_gq9LnBDprAU0uTXoZHvlDbCZH8tvSmAnRWu)\n- [sina.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGu3fyuZK6HGssNIfz1YNEJA3h6pUYO56cB9Oef9Koe2z_9Ig1tTj8zkzualxut9WMFqCL-B-jjrrHcei7yinmfKJY4oyQmt1vwGzk4MU3Yw95zFA75R8s8B_3dc0Dxk5tcxV-NBDkgeDzWns_qAplz)\n- [sz.gov.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfVfUHIcpmjzbmyXTbmm-IZAFnZbFV7PLTsckP0cYM9CyS12P3h-0LnrYXZda4Il_ZolTVs9j4pC2Q45syCbh_DGCxizgKllvWW3q03SuVBvil6ARu9_d3IW1nrK2S32aZWRG4LF_vjhmF_-I1ArU5QdAljDRumNPpJp0Wz8FA)\n- [suit-sz.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpqD7CjRqc5Ub69otgi3ove5EYu2rS7IAVXjjeBKnkocRfFQfGc6ek_rRpgOXv8khDPkqSMqlPTBw7U4jUwCHBatUjtLzG6OeEc3L1URW86gyL-ajn8A==)\n- [gaokao.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEiZAVWufwswYWomniNtVyoajOGtE-Ijp3sEwxb5kveOIvX-HjIZmj4sPNKWaDXFlrHtVk6RCZxghEB-wbIxmLeI2y72-RLls8pnW9jzGsAgTDcutzcjDhk6xz2NAgC)\n- [6617.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQER5NPJlRLhzCLysJ8Obi8Z2eRxg93LMyNWRW4ZCetebCcdT75cExDEVPtkXly23i5HylinX0gTrju4Xh1T4h_yGBp12yAvsVOv_QcSKXWA2hskBQEXRiAvGXTz0yxKOVk=)\n- [szpu.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHyPNL1RldbhGuFdYn5Bt1C5RqtPk9Xn6ep_9ouSbM9HatrmmpjuE_KK6l47dlhAasYep7OrfOmCxcxfdx7g79h-d6iiU15DWhXVr3SBcil7dBd-FOL_X7UTBOIB2rfAog5LfPpSIc=)\n- [shanghairanking.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBnwV8EafacdheEbrfS2hmqVCPAE-SzRXGAadzTWE-2Vw6VgdegX0mtrN4ubzlLPEiq8MqR6iX1N2tfX_SOy7qEtw9VmIugsKT7nGQ5KXUbLCyh7sYg8p2L-MYZzBNDHmNmpBzIDkp5aM8w0fV6jai)\n- [eol.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG96LLNR5e61yF0MEURA7oBR3rRpHfBMe5EhtGRF2oXM8GvwPu4fmArNl5rf-4x61kn3fgW6mXXRB2_RaI5TjjSKELlmUCPTJZvp9f0pb93Y_tl2na-sgr1b9lLJuiJ2kmcy2pkAbAJA3z2QztYIbms1diDbw==)\n- [szpu.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZQv1SYrwV5SOm9asFz769_JYTOWXfEMz9LRH9YECB3fBKtiCDJeIJE-EEZFJvFkk8BA_ESYLUccyeNyc0doZI8bflSoa4u0SNXt4bHlXQ0cXz9BX5slPNh-3Pjvsh1Xq7-NWkaqs=)\n- [dxsbb.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKK7eWnOuGsoHhVBWE4OaRYLHNqwXWVJ15DWEfxkZ8yiv8-f4WDsZSTVD9rDG5FFfL-BNiyw9d_vrnPU7WMCoamnAUXbWZyzP34PuELnypwgghLpYsZHJ8bJ5ul5_Qcw8=)\n- [gaokao.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFLvZhzY6pX6tcoPwMuaX9HL2970khp-Ekaq6ukW2HTVyp38TkwiVdLDiSxGx-US4q7ylGs7n7ajQlGDAGJF6V4Pqja0rHWQbK80rCFmy8FghKFtih9aQYKE6lhH42X)\n- [shanghairanking.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSLbailtNqIUdmdtB0AWBIqmx799vtTk0I_z0YrkSqECM7KHAjAR0CYvWvt_414_lslfkZIPBbf7c1C1O0gFRxCRp0r5fmBjSkt0srnDgNVw0WTKD25QD_aEmiWIMLpPo3aOzSCMG2PbUFM3SD)\n- [gaokao.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFalfG-SCEvGVQ5QjjwOU4y8Nz5QEmbybBZxk_rLXzbbxCQ0ErNcEpkY2CtroCD4SyqCNofT-ZSZ7OuiEo34TPPK3wEEQPdNKafQ0IMT-ogm3h2bq69XA-9)\n- [suit-sz.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhy_L8EqwNW0Cs0L-ofhiJ4sc8sI4ECxtIY7hJU6wG6yiXzg5LP8Do4IyDyeGD7B4UJODo1FhTrYBqIa7DaohYM3dWu6FqkbeCX2CqW0j3WZu8Ktyfxxzkrcuxvvo7xOgwBdySyA99lYY=)\n- [news.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkte_Cd6bs3KeETXvnEFjgnyn14AQ5tKypA6qMlwE34F4Tc7F2rBZkuGy1AdNgB4eELVkk-qAkQ8ZKcrbuPKcmYcDCvwD6sQQ3Qx9fiU8udEA7uNSXr6V8j1AKoQAOP-hsNnFDQEUzY13Nsu1VLqUSxCWk)",
+    "tables": [
+      [
+        [
+          "评估维度",
+          "核心依据摘要",
+          "维度得分",
+          "权重",
+          "加权得分"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "**学术资本**",
+          "“双高计划”A档（优等），ESI工程学全球1%，院士加盟，国家级平台密集",
+          "4.2",
+          "30%",
+          "1.26"
+        ],
+        [
+          "**毕业生价值实现**",
+          "就业率 >98%，深度绑定华为/腾讯，起薪显著高于同类职本及部分双非本科",
+          "4.5",
+          "30%",
+          "1.35"
+        ],
+        [
+          "**区位与产业势能**",
+          "坐落深圳龙岗，精准对接“20+8”产业集群，产教融合深度全国顶尖",
+          "4.8",
+          "15%",
+          "0.72"
+        ],
+        [
+          "**全球化能力**",
+          "英国皇家工程院院士加盟，华为ICT国际认证中心，中外合作项目稳步推进",
+          "3.5",
+          "10%",
+          "0.35"
+        ],
+        [
+          "**学生赋权与自由度**",
+          "转专业政策相对宽松，大运村宿舍硬件极佳，创新创业资源丰富",
+          "4.0",
+          "5%",
+          "0.20"
+        ],
+        [
+          "**品牌资产与文化印记**",
+          "软科高职专科排名全国第1，职业本科新晋劲旅，B站/抖音活跃度高",
+          "4.3",
+          "10%",
+          "0.43"
+        ],
+        [
+          "**加权总分**",
+          "**职业本科赛道的“清华预备役”**",
+          "**100%**",
+          "",
+          "**4.31**"
+        ]
+      ],
+      [
+        [
+          "建设平台/学科",
+          "评估等级/地位",
+          "所属门类"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "软件技术专业群",
+          "“双高计划”高水平专业群（A档）",
+          "电子信息"
+        ],
+        [
+          "移动通信技术专业群",
+          "“双高计划”高水平专业群",
+          "电子信息"
+        ],
+        [
+          "工程科学",
+          "ESI全球排名前1%",
+          "工学"
+        ]
+      ],
+      [
+        [
+          "类别",
+          "人数",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "中国科学院/工程院院士",
+          "2（柔性/特聘）",
+          "学校官网"
+        ],
+        [
+          "海外/外籍院士",
+          "1",
+          "2026年3月新闻"
+        ],
+        [
+          "**合计**",
+          "**3**",
+          ""
+        ]
+      ],
+      [
+        [
+          "平台名称",
+          "级别/类型",
+          "主要研究方向"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "深信创新港",
+          "省级/校级核心平台",
+          "关键共性技术攻关"
+        ],
+        [
+          "深圳市电子信息产业技术研究院",
+          "市级平台",
+          "电子信息技术研发"
+        ],
+        [
+          "半导体先进制造产线",
+          "中试研发平台",
+          "集成电路制造与封测"
+        ],
+        [
+          "全国信息技术应用创新行业产教融合共同体",
+          "国家级（牵头）",
+          "信创产业人才培养"
+        ]
+      ],
+      [
+        [
+          "年份",
+          "保送生总数",
+          "技能大赛类",
+          "竞赛类",
+          "其他",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "2025",
+          "约 15",
+          "15",
+          "0",
+          "0",
+          "招生办公示"
+        ],
+        [
+          "2024",
+          "12",
+          "12",
+          "0",
+          "0",
+          "官网录取名单"
+        ],
+        [
+          "2023",
+          "10",
+          "10",
+          "0",
+          "0",
+          "官网录取名单"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "广东",
+          "454",
+          "101,501",
+          "前 23.1%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "广东",
+          "487",
+          "47,429",
+          "前 10.8%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "广东",
+          "428",
+          "240,563",
+          "前 35.2%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "广东",
+          "467",
+          "207,517",
+          "前 30.1%"
+        ],
+        [
+          "湖南",
+          "459",
+          "141,058",
+          "前 28.5%"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数值",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "本科毕业生总数",
+          "5,453 (2023届)",
+          "就业质量报告"
+        ],
+        [
+          "国内深造率",
+          "约 5% (专升本/考研)",
+          "[待核实]"
+        ],
+        [
+          "出国（境）深造率",
+          "< 1%",
+          "社区观点"
+        ],
+        [
+          "进入 QS 前 50 比例",
+          "[未检索到]",
+          "—"
+        ],
+        [
+          "最受欢迎海外深造地",
+          "香港、英国、澳洲",
+          "社区观点"
+        ]
+      ],
+      [
+        [
+          "去向方向",
+          "占比",
+          "关键细节"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "企业就业",
+          "92%",
+          "81.5% 扎根深圳，50% 服务于战新产业"
+        ],
+        [
+          "考公/选调",
+          "< 2%",
+          "职业本科在考公政策上仍处于磨合期"
+        ],
+        [
+          "国内深造",
+          "5%",
+          "主要是专升本（针对往届专科生）"
+        ],
+        [
+          "其他",
+          "1%",
+          "创业或自由职业"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数值",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "毕业起薪中位数",
+          "6,500 - 7,500 元/月",
+          "2024届技工/职教报告"
+        ],
+        [
+          "毕业 5 年薪酬中位数",
+          "12,000+ 元/月",
+          "麦可思调研 [社区观点]"
+        ],
+        [
+          "同类高校薪酬水平",
+          "`显著高于`",
+          "依据：深圳ICT产业溢价及高对口就业率"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据",
+          "来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "所在城市",
+          "深圳",
+          "—"
+        ],
+        [
+          "最新年度 GDP",
+          "3.46 万亿元 (2023)",
+          "统计局"
+        ],
+        [
+          "全国城市 GDP 排名",
+          "第 3 名",
+          "统计局"
+        ],
+        [
+          "城市定位",
+          "全球科技创新中心、中国硅谷",
+          "官方定位"
+        ]
+      ],
+      [
+        [
+          "城市支柱产业",
+          "耦合学科",
+          "耦合度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "新一代信息技术",
+          "软件工程、通信工程",
+          "`高度共振`"
+        ],
+        [
+          "集成电路",
+          "集成电路工程技术",
+          "`高度共振`"
+        ],
+        [
+          "智能网联汽车",
+          "智能制造、嵌入式技术",
+          "`中度耦合`"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据"
+        ],
+        [
+          ":---",
+          ":---"
+        ],
+        [
+          "实质性交换项目合作院校数",
+          "约 20 所"
+        ],
+        [
+          "其中 QS 前 100 院校",
+          "昆士兰大学（部分合作）"
+        ],
+        [
+          "中外合作办学机构",
+          "无（主要为项目制合作）"
+        ],
+        [
+          "高层次双学位项目",
+          "无"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "软科排名",
+          "高职专科第 1 名",
+          "2025 软科"
+        ],
+        [
+          "校友会排名",
+          "职业大学前列",
+          "校友会 2025"
+        ],
+        [
+          "B 站官方粉丝",
+          "5.2 万",
+          "B 站官网"
+        ],
+        [
+          "抖音官方粉丝",
+          "12.8 万",
+          "抖音官网"
+        ],
+        [
+          "社交媒体风格",
+          "活泼、硬核技术流、紧跟热点",
+          "—"
+        ]
+      ],
+      [
+        [
+          "项目名称",
+          "培养方向",
+          "选拔方式",
+          "核心优势"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "华为ICT学院实验班",
+          "华为全栈技术",
+          "入学二次选拔",
+          "华为资深工程师授课，直通生态链企业"
+        ],
+        [
+          "麒麟信创班",
+          "国产操作系统",
+          "择优录取",
+          "解决“卡脖子”技术，信创产业刚需"
+        ]
+      ],
+      [
+        [
+          "风险点",
+          "事件概要",
+          "后续处理",
+          "当前状况"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "宿舍征用争议",
+          "2022年曾因防疫需要征用学生宿舍引发学生抗议",
+          "学校道歉并提供补偿",
+          "已平息，目前管理更透明"
+        ],
+        [
+          "身份认同风险",
+          "职业本科在部分企业招聘中仍面临学历歧视",
+          "深圳市政府大力背书",
+          "正在改善，大厂认可度高"
+        ]
+      ],
+      [
+        [
+          "数据项",
+          "引用来源",
+          "可信度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "2024录取分数",
+          "广东省教育考试院、掌上高考",
+          "高"
+        ],
+        [
+          "就业率数据",
+          "2023届毕业生就业质量报告",
+          "高"
+        ],
+        [
+          "软科排名",
+          "软科官方发布 (2025)",
+          "高"
+        ],
+        [
+          "院士加盟",
+          "中国新闻网 (2026.03)",
+          "高"
+        ]
+      ]
+    ],
+    "module9_structured_export": {
+      "title": "模块九：结构化数据导出",
+      "raw_content": "```json\n{\n  \"university_name\": \"深圳信息职业技术大学\",\n  \"academic\": {\n    \"a_plus_count\": 0,\n    \"a_count\": 0,\n    \"a_minus_count\": 0,\n    \"academician_count\": 3,\n    \"double_high_plan\": \"A档(优)\"\n  },\n  \"employment\": {\n    \"domestic_further_study_rate\": \"5%\",\n    \"overseas_further_study_rate\": \"<1%\",\n    \"starting_salary\": 7000,\n    \"top_employer\": \"华为\"\n  },\n  \"location\": {\n    \"city\": \"深圳\",\n    \"city_gdp\": \"3.46万亿元\"\n  },\n  \"scores\": {\n    \"comprehensive_score\": 4.31\n  },\n  \"rankings\": {\n    \"shanghai_ranking_vocational\": 1\n  }\n}\n```\n\n---"
+    }
+  }
+}

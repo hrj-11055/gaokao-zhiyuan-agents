@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.610995",
+    "updated_at": "2026-05-01T01:16:21.786736",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "华南理工大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.7,
+      "graduate_value": 4.8,
+      "location_advantage": 4.9,
+      "globalization": 4.3,
+      "student_empowerment": 4.8,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 4.705,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "五山校区（老校区）",
+        "description": "- **氛围**：古木参天，红墙绿瓦，拥有浓厚的历史底蕴。\n   - **生活**：虽然部分宿舍较旧，但生活便利，校友资源集中。这里的“西区食堂”是无数华工人的味蕾记忆。"
+      },
+      {
+        "category": "大学城校区",
+        "description": "- **氛围**：现代、开放，与其他 9 所高校共享资源。\n   - **生活**：标准化的学生公寓，体育设施完备，适合跨校交流。"
+      },
+      {
+        "category": "广州国际校区（GIC）",
+        "description": "- **氛围**：全英环境，国际化程度极高，被誉为“不出国的留学”。\n   - **生活**：顶配宿舍（单人间/双人间）、智慧教室、国际化的餐饮，是华工未来的旗舰校区。\n\n### 5.3 “华南吃饭大学”的文化印记\n\n华工在社交媒体上有一个响亮的绰号——“华南吃饭大学”。这不仅是因为食堂多（五山校区就有 6 个以上大食堂），更是因为其饮食文化的多元与精致。\n\n- **特色美食**：中区食堂的早茶、西区食堂的烧鹅、北区食堂的砂锅粉，已经成为了华工的一种文化符号。\n- **务实文化**：这种对“吃”的重视，本质上反映了华工人“务实、不花哨”的生活态度。在华工，比起空谈理论，大家更愿意在食堂吃饱后回实验室继续“搬砖”。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "华南理工大学是一所**被低估的工科强校**。它没有部分综合性大学的浮躁，而是深耕工程应用领域，将学术研究与产业需求紧密结合。\n\n- **核心定位**：大湾区工业文明的摇篮，新工科改革的先行者。\n- **王牌优势**：轻工、食品、材料、建筑、计算机。\n- **文化特质**：务实、重商、高效、低调。\n- **风险点**：文理学科虽然在进步，但与顶尖综合性大学相比仍有差距；三校区运行带来的管理复杂性。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

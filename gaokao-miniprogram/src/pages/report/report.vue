@@ -215,6 +215,7 @@ import { generateReport } from '../../api/report.js'
 import { checkPregenerateStatus } from '../../api/pregenerate.js'
 import { useReportPregen } from '../../composables/useReportPregen.js'
 import { buildReportAssessmentPayload } from '../../utils/report-assessments.js'
+import { waitForPregeneratedReport } from '../../utils/report-pregen-wait.js'
 import {
   getProfileReportMode,
   loadHistory,
@@ -458,7 +459,9 @@ function startSlowProgress() {
     { delay: 20000, pct: 40, title: '正在生成志愿方案…', sub: '构建个性化推荐与风险分析' },
     { delay: 40000, pct: 55, title: '深度分析中…', sub: '正在提炼核心建议与行动方案' },
     { delay: 70000, pct: 70, title: '报告撰写中…', sub: '排版优化与内容整合' },
-    { delay: 100000, pct: 88, title: '即将完成…', sub: '正在保存报告结果' },
+    { delay: 100000, pct: 88, title: '即将完成…', sub: '正在等待 AI 返回报告结果' },
+    { delay: 170000, pct: 92, title: '仍在处理中…', sub: '复杂报告需要更久，请保持页面打开' },
+    { delay: 240000, pct: 96, title: '最后校验中…', sub: '正在等待服务端返回报告链接' },
   ]
 
   slowTimers.forEach(({ delay, pct, title, sub }) => {
@@ -470,6 +473,34 @@ function startSlowProgress() {
         progressSub.value = sub
       }
     }, delay)
+  })
+}
+
+function saveGeneratedReportResult(result) {
+  const reportEntry = {
+    url: result.url,
+    generatedAt: result.generatedAt || result.completedAt || Date.now(),
+  }
+  if (latestReport.value?.url) {
+    history.value.unshift({ ...latestReport.value })
+  }
+  latestReport.value = reportEntry
+  persistReports()
+  isFakeProgressActive.value = false
+}
+
+async function claimPregeneratedReport() {
+  const profile = loadUserProfile()
+  const assessments = buildReportAssessmentPayload()
+  const chatHistory = loadHistory()
+
+  return generateReport({
+    profile,
+    userId: membershipStore.userId,
+    sessionToken: membershipStore.sessionToken,
+    conversationId: chatHistory.conversationId || '',
+    assessments,
+    skipExpansion: true,
   })
 }
 
@@ -501,45 +532,48 @@ async function onGenerate() {
       return
     }
 
-    // Check pre-generation status
+    let slowProgressStarted = false
+
+    // Prefer the background task so WeChat does not hold a multi-minute request open.
     try {
-      const pregenStatus = await checkPregenerateStatus({
-        sessionToken: membershipStore.sessionToken,
-      })
-      if (pregenStatus && pregenStatus.status === 'ready' && pregenStatus.url) {
+      const pregenStatus = await tryTriggerPregenerate({ force: true })
+      if (pregenStatus?.status === 'ready' && pregenStatus.url) {
         console.log('[Pregen] Cache hit! Running fake progress bar UX.')
-        runFakeProgressBar(pregenStatus.url)
+        const claimedReport = await claimPregeneratedReport()
+        runFakeProgressBar(claimedReport.url)
         return
       }
-      console.log('[Pregen] Pre-generation status:', pregenStatus?.status || 'unknown')
+
+      if (pregenStatus?.status === 'started' || pregenStatus?.status === 'pending') {
+        startSlowProgress()
+        slowProgressStarted = true
+        const readyReport = await waitForPregeneratedReport({
+          checkStatus: () => checkPregenerateStatus({
+            sessionToken: membershipStore.sessionToken,
+          }),
+        })
+        if (readyReport?.url) {
+          const claimedReport = await claimPregeneratedReport()
+          saveGeneratedReportResult(claimedReport)
+          return
+        }
+      }
+
+      console.log('[Pregen] Falling back from status:', pregenStatus?.status || 'unknown')
     } catch (pregenErr) {
       console.warn('[Pregen] Failed to check pre-generate status:', pregenErr)
+      if (pregenErr.code === 'PREGEN_FAILED' || pregenErr.code === 'PREGEN_TIMEOUT') {
+        throw pregenErr
+      }
     }
 
-    // Fallback to normal generation
-    const profile = loadUserProfile()
-    const assessments = buildReportAssessmentPayload()
-    const chatHistory = loadHistory()
-
-    startSlowProgress()
-
-    const result = await generateReport({
-      profile,
-      userId: membershipStore.userId,
-      sessionToken: membershipStore.sessionToken,
-      conversationId: chatHistory.conversationId || '',
-      assessments,
-      skipExpansion: true,
-    })
-    const reportEntry = {
-      url: result.url,
-      generatedAt: result.generatedAt || Date.now(),
+    if (!slowProgressStarted) {
+      startSlowProgress()
     }
-    if (latestReport.value?.url) {
-      history.value.unshift({ ...latestReport.value })
-    }
-    latestReport.value = reportEntry
-    persistReports()
+
+    // Fallback to normal generation when no background task is available.
+    const result = await claimPregeneratedReport()
+    saveGeneratedReportResult(result)
   } catch (err) {
     const isCooldown = err.statusCode === 429
     if (isCooldown) {

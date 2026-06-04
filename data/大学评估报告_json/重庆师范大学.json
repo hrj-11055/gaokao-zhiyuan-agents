@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.458440",
+    "updated_at": "2026-05-12T13:08:18.514185",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "重庆师范大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 3.4,
+      "location_advantage": 4.0,
+      "globalization": 3.5,
+      "student_empowerment": 3.6,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.58,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 85000,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "西南大学 (211)",
+        "similarity": "同类院校",
+        "key_difference": "重师大在录取分数线上更具亲和力，虽然科研平台稍逊，但在重庆本地中小学的就业认可度上，重师大毕业生并不处于绝对劣势，且竞争压力相对较小。"
+      },
+      {
+        "name": "四川师范大学",
+        "similarity": "同类院校",
+        "key_difference": "两校实力旗鼓相当。川师大在文学、艺术领域略强，而重师大在数学、特殊教育及重庆本地资源对接上更具优势。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "重庆师范大学是一所**“下限极高，上限正在突破”**的省属重点大学。对于追求职业稳定性、希望在教育行业深耕的考生来说，它是西南地区最具性价比的选择之一。\n\n- **核心定位**：区域性教育人才培养高地。\n- **王牌优势**：数学、教育学、特殊教育、考古学。\n- **文化特质**：务实、包容、具有浓郁的人文关怀。\n- **潜在风险**：在非教育行业的品牌溢价有限；高层次科研成果产出仍需时间积淀。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "西南大学 (211)",
+          "similarity": "同类院校",
+          "key_difference": "重师大在录取分数线上更具亲和力，虽然科研平台稍逊，但在重庆本地中小学的就业认可度上，重师大毕业生并不处于绝对劣势，且竞争压力相对较小。"
+        },
+        {
+          "name": "四川师范大学",
+          "similarity": "同类院校",
+          "key_difference": "两校实力旗鼓相当。川师大在文学、艺术领域略强，而重师大在数学、特殊教育及重庆本地资源对接上更具优势。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

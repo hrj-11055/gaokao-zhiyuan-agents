@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.143666",
+    "updated_at": "2026-04-25T00:54:13.242929",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070604T_地球系统科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.32
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "地球系统科学的核心在于多圈层耦合模拟、野外实地观测、跨学科系统思维，这些高度依赖物理直觉和复杂系统理解能力，AI可辅助数值模拟和数据处理，但难以替代人类对复杂地球系统的科学判断和野外实证。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学（唯一开设该本科专业的高校，大气科学 C+但地球系统科学方向全国领先）"
+      ],
+      "tier_A": [
+        "北京大学（大气科学 A+）",
+        "南京信息工程大学（大气科学 A+，气象领域王牌）",
+        "中国科学院大学（大气科学 A+）"
+      ],
+      "tier_B": [
+        "南京大学（大气科学 B，地球科学综合实力强）",
+        "兰州大学（大气科学 B-，双一流学科）",
+        "天津大学（设地球系统科学学院，研究生层面）",
+        "中山大学（大气科学 C，但地学综合布局完善）"
+      ],
+      "tier_C_note": "该专业为特设专业（T类），目前无其他普通本科院校开设该专业名称。大气科学类其他专业在成都信息工程大学、中国海洋大学等院校开设。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

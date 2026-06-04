@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.043395",
+    "updated_at": "2026-04-28T01:10:01.331377",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120204",
+    "name": "财务管理",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "万金油但非金钥匙，入门易而出头难，AI 正在加速淘汰基础核算岗，唯有向\"财务+数据+业务\"复合型人才进化才有未来。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.8,
+      "career_path": 3.5,
+      "education_resources": 3.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.17
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~91.0%",
+      "alignment_rate": "",
+      "starting_salary": "5400–5800元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "基础核算、报表编制、发票识别等重复性规则化工作已被AI大规模替代（84%企业已应用AI财务工具），67%的财务人员对职业前景表示担忧（复旦大学蓝皮书）；但财务分析、风险管理、战略决策支持等需要专业判断的高阶能力仍难被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "万金油但非金钥匙，入门易而出头难，AI 正在加速淘汰基础核算岗，唯有向\"财务+数据+业务\"复合型人才进化才有未来。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "复旦大学",
+        "上海财经大学",
+        "厦门大学",
+        "北京大学"
+      ],
+      "tier_A": [
+        "南开大学",
+        "南京大学",
+        "西安交通大学",
+        "西南财经大学",
+        "中央财经大学",
+        "对外经济贸易大学",
+        "暨南大学",
+        "东北财经大学",
+        "重庆大学",
+        "中南财经政法大学",
+        "四川大学"
+      ],
+      "tier_B": [
+        "天津大学",
+        "华中科技大学",
+        "北京工商大学",
+        "江西财经大学",
+        "浙江工商大学",
+        "首都经济贸易大学",
+        "南京财经大学",
+        "广东财经大学",
+        "山东财经大学",
+        "上海对外经贸大学",
+        "重庆工商大学",
+        "河南财经政法大学"
+      ],
+      "tier_C_note": "全国约375所开设财务管理专业的本科院校中，除上述院校外的省属普通本科院校。该专业开设门槛较低、社会需求面广，C 档院校毕业生在地方企事业单位、中小企业仍有稳定就业空间。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

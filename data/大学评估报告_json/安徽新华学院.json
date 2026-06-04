@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.822391",
+    "updated_at": "2026-05-11T19:20:25.742826",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "安徽新华学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.5,
+      "graduate_value": 3.2,
+      "location_advantage": 4.2,
+      "globalization": 2.2,
+      "student_empowerment": 2.5,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.07,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "合肥",
+      "region": "",
+      "industrial_clusters": [
+        "阳光电源等顶尖科技"
+      ],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "安徽三联学院",
+        "similarity": "同类院校",
+        "key_difference": "新华学院在校园硬件、学科深度及考研氛围上略胜一筹；三联学院则在交通运输、安全工程等特定领域有其特色。"
+      },
+      {
+        "name": "安徽文达信息工程学院",
+        "similarity": "同类院校",
+        "key_difference": "新华学院的综合排名和品牌影响力更高，生源质量也普遍高出一个档次。"
+      },
+      {
+        "name": "公立二本（如滁州学院、宿州学院）",
+        "similarity": "同类院校",
+        "key_difference": "新华学院在校园环境和就业服务的灵活性上占优，但在学费成本、学术底蕴和体制内认可度上仍有差距。"
+      }
+    ],
+    "risks": [
+      {
+        "category": "学费压力",
+        "description": "作为民办高校，学费是其主要收入来源。近年来学费有小幅上涨趋势，对于经济条件一般的家庭而言，四年累计支出（含生活费）可能超过 15-20 万元。"
+      },
+      {
+        "category": "校园安全",
+        "description": "历史上曾出现过校园管理疏漏导致的偶发安全事件。虽然学校随后强化了人脸识别门禁和巡逻力度，但大规模校园的人员复杂性依然是管理难点。"
+      },
+      {
+        "category": "生师比挑战",
+        "description": "随着扩招，部分公共课存在大班教学现象，生师比一度接近 20:1，这在一定程度上影响了师生互动的深度。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **核心定位**：安徽新华学院是典型的“城市依托型”应用型民办本科。它成功地将自身的发展与合肥市的产业崛起绑定在一起。\n*   **核心优势**：地理位置无可挑剔，学科建设在民办院校中具有先发优势，尤其是硕士点立项建设为其未来的层次提升打开了空间。\n*   **主要短板**：科研原创力不足，师资结构中退休返聘比例较高，学费成本与学生获得的个性化关注度之间存在博弈。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "安徽三联学院",
+          "similarity": "同类院校",
+          "key_difference": "新华学院在校园硬件、学科深度及考研氛围上略胜一筹；三联学院则在交通运输、安全工程等特定领域有其特色。"
+        },
+        {
+          "name": "安徽文达信息工程学院",
+          "similarity": "同类院校",
+          "key_difference": "新华学院的综合排名和品牌影响力更高，生源质量也普遍高出一个档次。"
+        },
+        {
+          "name": "公立二本（如滁州学院、宿州学院）",
+          "similarity": "同类院校",
+          "key_difference": "新华学院在校园环境和就业服务的灵活性上占优，但在学费成本、学术底蕴和体制内认可度上仍有差距。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

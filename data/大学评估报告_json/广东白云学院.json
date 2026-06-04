@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.670061",
+    "updated_at": "2026-05-03T01:30:48.024200",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广东白云学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.1,
+      "graduate_value": 2.8,
+      "location_advantage": 4.2,
+      "globalization": 2.5,
+      "student_empowerment": 3.2,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 2.86,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "广东白云学院作为中国改革开放后较早建立的民办本科高校，其核心竞争力在于**“极度务实的应用型人才培养模式”**。在学术资本维度，虽然受限于民办体制，缺乏顶尖学术头衔和国家级重点实验室，但其在省级应用型学科建设上表现稳健。学校通过了 IEET 工程教育认证，这标志着其技术技能培养已与国际接轨。\n\n在毕业生价值实现方面，白云学院展现了极强的“即战力”。其 3400 多家校企合作企业构成的庞大网络，为学生提供了从实习到就业的无缝衔接。然而，高昂的学费与相对平庸的初始薪酬之间的矛盾，是该校目前面临的最大挑战。2024 年出现的千人弃学现象，本质上是中产及以下家庭在经济下行周期对“民办本科性价比”的重新审视。\n\n从区位角度看，白云学院占据了粤港澳大湾区的核心腹地。广州作为全球制造业和商贸中心，为学校的机械、物流、电商等专业提供了天然的实验场。学校的文化特质表现为一种“准职场化”的氛围，学生在校期间即接受大量的职业素养训练，这种特质使其在珠三角中小企业中拥有极高的品牌认可度。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "产教融合",
+        "珠三角打工人摇篮",
+        "学费刺客",
+        "北校区豪宅宿舍",
+        "务实主义",
+        "民办龙头",
+        "就业即战力"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

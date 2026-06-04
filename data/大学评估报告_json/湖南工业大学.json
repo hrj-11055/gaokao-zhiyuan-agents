@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.676480",
+    "updated_at": "2026-05-11T11:15:49.898971",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖南工业大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 3.3,
+      "location_advantage": 3.9,
+      "globalization": 2.9,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.7
+    },
+    "weighted_score": 3.47,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "湖南科技大学（湘潭）",
+        "similarity": "同类院校",
+        "key_difference": "两校同为省属重点工科院校。湘科大的优势在于矿业、机械等传统重工业，综合排名略高，基础学科积淀更深；而湖南工业大学在“包装”和“设计”这两个细分领域具有绝对的统治力。如果你追求综合名气，湘科大占优；如果你追求行业垂直深度，湖工大是唯一选择。"
+      },
+      {
+        "name": "长沙理工大学",
+        "similarity": "同类院校",
+        "key_difference": "长理工在电力、交通（路桥）领域拥有极强的行业背景，且占据长沙省会的区位优势，生源质量和平均起薪普遍高于湖工大。湖工大在录取分数线上通常比长理工低 10-20 分左右，对于分数稍逊但想读强势专业的学生来说，湖工大是极佳的“性价比之选”。"
+      },
+      {
+        "name": "北京印刷学院",
+        "similarity": "同类院校",
+        "key_difference": "北印占据北京区位，在出版印刷领域更强；湖工大则在包装结构、包装材料和工业设计上更具规模优势。两校在包装印刷行业内并称“南北双雄”。"
+      }
+    ],
+    "risks": [
+      {
+        "category": "校区差异",
+        "description": "河东校区（老校区）设施相对陈旧，虽然正在逐步改造，但与河西校区相比仍有差距。部分基础学科的学生可能仍需在老校区度过部分时光。"
+      },
+      {
+        "category": "就业地域局限",
+        "description": "虽然在行业内名气大，但在北方部分省份的非包装行业中，湖工大的品牌认知度有待提升。"
+      },
+      {
+        "category": "行政效率",
+        "description": "部分学生在社交媒体反映，学校的行政办事流程仍有优化空间，数字化校园建设需进一步加强。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "湖南科技大学（湘潭）",
+          "similarity": "同类院校",
+          "key_difference": "两校同为省属重点工科院校。湘科大的优势在于矿业、机械等传统重工业，综合排名略高，基础学科积淀更深；而湖南工业大学在“包装”和“设计”这两个细分领域具有绝对的统治力。如果你追求综合名气，湘科大占优；如果你追求行业垂直深度，湖工大是唯一选择。"
+        },
+        {
+          "name": "长沙理工大学",
+          "similarity": "同类院校",
+          "key_difference": "长理工在电力、交通（路桥）领域拥有极强的行业背景，且占据长沙省会的区位优势，生源质量和平均起薪普遍高于湖工大。湖工大在录取分数线上通常比长理工低 10-20 分左右，对于分数稍逊但想读强势专业的学生来说，湖工大是极佳的“性价比之选”。"
+        },
+        {
+          "name": "北京印刷学院",
+          "similarity": "同类院校",
+          "key_difference": "北印占据北京区位，在出版印刷领域更强；湖工大则在包装结构、包装材料和工业设计上更具规模优势。两校在包装印刷行业内并称“南北双雄”。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

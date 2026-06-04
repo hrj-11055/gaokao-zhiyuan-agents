@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.986149",
+    "updated_at": "2026-04-25T21:57:10.278135",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082405T_木结构建筑与材料",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "双碳风口下的冷门蓝海，政策红利充足但赛道极窄、院校仅 3 所，入了行不愁饭碗，但兜兜转转就这几条路。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.2,
+      "career_path": 2.5,
+      "education_resources": 2.2,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.08
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "木结构建筑涉及大量现场施工协调、材料触感判断与构造细节处理，AI 可辅助 BIM 建模和结构计算，但无法替代现场经验、手工工艺和跨专业协调能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "双碳风口下的冷门蓝海，政策红利充足但赛道极窄、院校仅 3 所，入了行不愁饭碗，但兜兜转转就这几条路。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京林业大学（双一流，林业工程 A+，本专业绝对龙头）"
+      ],
+      "tier_A": [
+        "中南林业科技大学（省重点，林业工程 C+，依托木材科学研究所等国家级平台）"
+      ],
+      "tier_B": [
+        "内蒙古农业大学（省重点，依托北方林业资源和蒙东木材加工产业）"
+      ],
+      "tier_C_note": "暂无（全国仅 3 所高校开设该专业）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

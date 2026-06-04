@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.470887",
+    "updated_at": "2026-05-09T18:48:57.749307",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖南警察学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 4.5,
+      "location_advantage": 3.8,
+      "globalization": 1.5,
+      "student_empowerment": 1.8,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 3.22,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "长沙",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "湖南警察学院（Hunan Police Academy）是一所极具行业特色的省属本科院校。其核心价值不在于学术研究的广度或国际排名的攀升，而在于其作为湖南省公安人才培养“蓄水池”的不可替代性。对于公安类专业学生而言，该校提供了一种近乎“准定向培养”的就业保障，通过公安联考进入公务员序列的比例在省内无出其右。\n\n然而，这种高保障是以牺牲个人自由度和学术多样性为代价的。学校实行严格的准军事化管理，从作息到着装，从内务到社交，均受到严密的纪律约束。此外，非公安专业与公安专业之间存在巨大的“价值断层”，前者在享受不到联考政策红利的情况下，面临着与普通综合性大学毕业生竞争的巨大压力，且在校内资源分配中处于相对边缘的地位。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "绝对忠诚",
+        "纪律严明",
+        "星沙记忆",
+        "藏青蓝",
+        "公安联考",
+        "体能达人",
+        "豆腐块",
+        "三湘卫士"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

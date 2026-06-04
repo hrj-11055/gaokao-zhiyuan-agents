@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.925497",
+    "updated_at": "2026-05-01T01:47:18.069591",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广州大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "如果你希望在粤港澳大湾区扎根，看重就业的“实惠”与“圈子”，且分数在省属重点线以上但未及顶尖 985，广州大学是性价比极高的选择。",
+    "radar": {
+      "academic_capital": 4.0,
+      "graduate_value": 4.2,
+      "location_advantage": 4.7,
+      "globalization": 3.6,
+      "student_empowerment": 4.3,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 4.13,
+    "one_sentence_recommend": "如果你希望在粤港澳大湾区扎根，看重就业的“实惠”与“圈子”，且分数在省属重点线以上但未及顶尖 985，广州大学是性价比极高的选择。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "深圳大学",
+        "similarity": "同类院校",
+        "key_difference": "深大更“壕”、更具创业氛围，国际排名更高；广大则在传统工科积淀、院士数量及“体制内”认可度上略占上风。"
+      },
+      {
+        "name": "广东工业大学",
+        "similarity": "同类院校",
+        "key_difference": "广工是纯粹的工科强校，在制造业联系紧密；广大则更加综合，文理平衡，且在城市中心区位上更具优势。"
+      },
+      {
+        "name": "暨南大学",
+        "similarity": "同类院校",
+        "key_difference": "暨大作为 211，在全国名气更大，国际生源多；广大在广州本地的基建、教育、政法系统资源并不逊色于暨大。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "- **Identity（核心定位）**：一所以国家中心城市命名的、处于高速上升期的广东省高水平重点建设综合性大学。它既有老牌公立大学的稳重，又有新兴特区大学的冲劲。\n- **Ace（王牌优势）**：土木工程（防震减灾）、网络空间安全（方班模式）、统计学。\n- **Vibe（文化特质）**：务实、包容、带有浓郁的岭南商业与技术融合气息。这里不崇尚空谈，更看重“解决问题的能力”。\n- **Risk（潜在风险）**：多校区运行带来的文化稀释；在“双一流”评选中面临激烈竞争，需持续保持高强度的科研产出。",
+      "one_sentence_recommend": "如果你希望在粤港澳大湾区扎根，看重就业的“实惠”与“圈子”，且分数在省属重点线以上但未及顶尖 985，广州大学是性价比极高的选择。",
+      "horizontal_comparison": [
+        {
+          "name": "深圳大学",
+          "similarity": "同类院校",
+          "key_difference": "深大更“壕”、更具创业氛围，国际排名更高；广大则在传统工科积淀、院士数量及“体制内”认可度上略占上风。"
+        },
+        {
+          "name": "广东工业大学",
+          "similarity": "同类院校",
+          "key_difference": "广工是纯粹的工科强校，在制造业联系紧密；广大则更加综合，文理平衡，且在城市中心区位上更具优势。"
+        },
+        {
+          "name": "暨南大学",
+          "similarity": "同类院校",
+          "key_difference": "暨大作为 211，在全国名气更大，国际生源多；广大在广州本地的基建、教育、政法系统资源并不逊色于暨大。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

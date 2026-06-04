@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.908582",
+    "updated_at": "2026-04-25T01:49:30.917038",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "071003",
+    "name": "生物信息学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.78
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "生物信息学本身就是\"用AI的人\"——核心技能是将生物学问题转化为数据分析方案，AI可以辅助代码生成和模型训练，但无法替代\"生物学问题定义→数据解析→实验设计验证\"的价值闭环。掌握深度学习+生物知识的复合型人才反而因AI而增值。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "清华大学",
+        "浙江大学",
+        "同济大学"
+      ],
+      "tier_A": [
+        "华中科技大学",
+        "中南大学",
+        "复旦大学",
+        "上海交通大学",
+        "哈尔滨工业大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "南方医科大学",
+        "天津医科大学",
+        "苏州大学",
+        "兰州大学",
+        "大连理工大学（盘锦校区）",
+        "华中农业大学",
+        "武汉大学",
+        "西安交通大学"
+      ],
+      "tier_C_note": "浙江理工大学、福建农林大学、重庆医科大学、云南大学等约 30 所开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

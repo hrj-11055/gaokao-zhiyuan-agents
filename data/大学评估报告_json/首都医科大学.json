@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.636210",
+    "updated_at": "2026-05-09T14:13:38.102770",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "首都医科大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.9,
+      "graduate_value": 4.8,
+      "location_advantage": 4.9,
+      "globalization": 3.6,
+      "student_empowerment": 3.0,
+      "brand_asset": 4.7
+    },
+    "weighted_score": 4.63,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "首都医科大学是一所“实力远超名号”的顶尖医学院校。它虽然没有 985/211 的头衔，但在医学界，尤其是临床医学领域，它是公认的巨头。其核心竞争力在于**无与伦比的临床资源**和**深厚的北京行业根基**。\n\n**优势（Strengths）**：\n- 临床医学学科实力全国顶尖，附属医院矩阵涵盖了多个国家级医学中心。\n- 毕业生在北京医疗系统的就业竞争力极强，校友资源遍布各大三甲医院。\n- 地处首都，科研经费充足，政策信息灵敏。\n\n**劣势（Weaknesses）**：\n- 校本部硬件设施陈旧，校园生活空间局促。\n- 非 985/211 身份在跨行业就业或部分省份的选调生选拔中可能存在劣势。\n- 学习压力极大，学生身心负担较重。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "极度务实",
+        "临床为王",
+        "白大褂方阵",
+        "北京医疗圈中心",
+        "考研卷王",
+        "通宵实验室",
+        "附属医院收割机"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.671835",
+    "updated_at": "2026-05-12T10:27:10.087883",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中国刑事警察学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.8,
+      "graduate_value": 4.9,
+      "location_advantage": 3.5,
+      "globalization": 2.8,
+      "student_empowerment": 2.0,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 3.965,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "中国刑事警察学院是一所**极度垂直、极度专业、极度稳定**的行业顶尖院校。它不适合追求“多元化大学生活”或“创业自由”的学生，但对于立志投身公安事业、追求职业安全感的考生来说，这里是性价比最高的选择。\n\n- **核心竞争力**：无可比拟的入警率与行业认可度。\n- **主要挑战**：学生需在青春期接受严格的纪律约束，牺牲部分个人自由。\n- **未来展望**：随着智慧警务的推进，学校在网络安全与大数据侦查领域的布局将决定其未来二十年的地位。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

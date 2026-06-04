@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.576674",
+    "updated_at": "2026-05-09T19:13:29.777353",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西南医科大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.2,
+      "graduate_value": 3.8,
+      "location_advantage": 3.4,
+      "globalization": 2.8,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.6
+    },
+    "weighted_score": 3.43,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：西南医科大学是西南地区极具性价比的省属重点医科大学，已发展成为川渝滇黔结合部的区域医疗教育高地。它不仅是一所教学型大学，更是区域内医疗资源的“母舰”，通过其庞大的附属医院集群，深度参与区域公共卫生治理。\n\n**Ace（王牌优势）**：临床医学、麻醉学、中西医结合临床等专业在行业内认可度极高。其附属医院集群（拥有3所直属三甲医院）提供了强大的临床实习与就业保障，这种“医教研一体化”的模式确保了学生在校期间就能接触到大量的临床病例，实操能力极强。\n\n**Vibe（文化特质）**：务实、低调且带有浓厚的“泸医”情怀。学术氛围受考研驱动极强，校园内随处可见背诵医学词汇的学生。这种“苦学”文化虽然压力较大，但也造就了毕业生在执业医师资格考试和规培考试中的高通过率。\n\n**Risk（潜在风险）**：非“双一流”身份是其最大的硬伤。在顶级三甲医院（如北上广深的头部医院）落户或招聘时，可能会面临第一学历的门槛限制。此外，地理位置位于三线城市泸州，虽然生活成本低，但对于追求一线城市多元化生活和顶级互联网/生物技术大厂实习机会的生源吸引力有限。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

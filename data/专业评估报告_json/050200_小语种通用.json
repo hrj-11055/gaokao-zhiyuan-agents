@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.010489",
+    "updated_at": "2026-05-13T10:42:48.845069",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050200",
+    "name": "小语种通用",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "\"‘一带一路’的开路先锋，高薪伴随高艰苦，是工具更是文化敲门砖；在 AI 冲击下，‘语言+专业’的复合型人才方能打破职业天花板。\"",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 2.5,
+      "career_path": 3.5,
+      "education_resources": 4.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.65
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~88.5%",
+      "alignment_rate": "~62%",
+      "starting_salary": "7,500–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "ChatGPT、DeepL 等大模型的涌现让文本翻译精度突飞猛进，纯语言翻译的价值归零，必须转型为“语言+业务”。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"‘一带一路’的开路先锋，高薪伴随高艰苦，是工具更是文化敲门砖；在 AI 冲击下，‘语言+专业’的复合型人才方能打破职业天花板。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学",
+        "上海外国语大学",
+        "北京大学",
+        "南京大学（综合实力最强，校友遍布外交部",
+        "商务部）。"
+      ],
+      "tier_A": [
+        "广东外语外贸大学",
+        "北京语言大学",
+        "复旦大学",
+        "中山大学",
+        "黑龙江大学（俄语优势）",
+        "延边大学（韩语优势）。"
+      ],
+      "tier_B": [
+        "大连外国语大学",
+        "四川外国语大学",
+        "西安外国语大学",
+        "天津外国语大学",
+        "浙江外国语学院。"
+      ],
+      "tier_C_note": "各省属师范院校的小语种专业、民办外语院校。",
+      "selection_advice": "> “语种决定下限，院校决定上限；优先选择北上广深及外语类强校，尽量选择有出国交换机会的项目。”"
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

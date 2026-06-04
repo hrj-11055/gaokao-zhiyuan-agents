@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.548979",
+    "updated_at": "2026-05-09T16:59:01.679183",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "安康学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.1,
+      "graduate_value": 2.4,
+      "location_advantage": 2.2,
+      "globalization": 1.8,
+      "student_empowerment": 2.5,
+      "brand_asset": 2.3
+    },
+    "weighted_score": 2.22,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "人才流失风险",
+        "description": "由于待遇和地理位置限制，中青年骨干教师流向西安、武汉等城市的趋势难以完全遏制。"
+      },
+      {
+        "category": "就业结构性矛盾",
+        "description": "虽然整体就业率高，但高质量就业（高薪、高技术岗位）占比仍需提升。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：安康学院是陕南地区唯一的省属全日制普通本科院校。其历史可追溯至 1958 年的安康大学，后历经安康师范专科学校等阶段，于 2006 年升格为本科。它是一所典型的“应用型地方大学”，其生存逻辑并非追求全球学术排名，而是深度嵌入秦巴山区的社会治理与产业结构中。\n\n**Ace（王牌优势）**：学校的绝对优势在于“农、教、工”的结合。特别是茶学、农学及教师教育。依托秦巴山区丰富的生物资源，学校在富硒产业研究、蚕桑技术推广领域具有区域垄断性优势。对于希望在陕南及周边地区发展的学生，安康学院提供的不仅是学历，更是进入当地教育、农业系统的“入场券”。\n\n**Vibe（文化特质）**：务实、低调、考公/考编氛围浓厚。由于地处非省会城市，校园生活呈现出一种典型的“小城大学”安逸感。学生群体普遍具有较强的基层适应能力，校园文化中带有浓厚的“秦巴精神”——吃苦耐劳，不尚浮华。\n\n**Risk（潜在风险）**：地理位置相对偏远，虽然西康高铁在建，但目前与省会西安的连接仍有一定时空距离。这导致高层次人才引进困难，学科带头人断层风险存在。此外，毕业生的起薪受限于区域经济水平，对于追求高薪、快节奏互联网生活的学生来说，这里可能显得过于沉静。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "生态",
+        "考公",
+        "富硒",
+        "汉江",
+        "慢节奏",
+        "基层脊梁",
+        "茶香"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

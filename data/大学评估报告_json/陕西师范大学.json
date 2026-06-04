@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.787537",
+    "updated_at": "2026-05-09T16:29:14.184483",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "陕西师范大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.0,
+      "graduate_value": 4.3,
+      "location_advantage": 3.8,
+      "globalization": 3.3,
+      "student_empowerment": 3.7,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 4.03,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "西安",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "陕西师范大学是一所**“职业指向极强、文化底蕴极深、社会责任感极重”**的顶尖师范大学。它不仅是西北地区基础教育的“定海神针”，更是全国教师教育体系中的重要一极。\n\n*   **核心优势**：在于其部属师范的身份带来的政策红利（如公费师范生）以及在文史哲、教育学领域的深厚积淀。\n*   **发展态势**：学校正在从传统的师范院校向“高水平研究型大学”转型，理学和应用学科的进步显著。\n*   **潜在挑战**：在非教育行业的品牌影响力有待加强，且在吸引顶尖工科人才方面面临综合性大学的激烈竞争。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "儒雅",
+        "务实",
+        "红烛精神",
+        "面食天堂",
+        "手写情怀",
+        "教育中坚",
+        "关中底蕴",
+        "学术重镇"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

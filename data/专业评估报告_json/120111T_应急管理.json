@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.105767",
+    "updated_at": "2026-04-28T00:56:07.848041",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120111T_应急管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的新专业，背靠万亿级安全应急产业，但学科尚在\"建基期\"，高度依赖考公与体制内路径，市场化就业面偏窄。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.36
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "应急管理核心工作涉及现场指挥决策、危机研判、跨部门协调等高度情境化的复杂任务，AI可以辅助数据分析与预警，但无法替代人在极端不确定性下的临场决策和责任承担。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的新专业，背靠万亿级安全应急产业，但学科尚在\"建基期\"，高度依赖考公与体制内路径，市场化就业面偏窄。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国科学技术大学（火灾科学方向顶尖）",
+        "中国矿业大学（安全学科传统王者）"
+      ],
+      "tier_A": [
+        "暨南大学（国内最早设应急管理学院之一）",
+        "武汉理工大学",
+        "中南大学",
+        "北京理工大学",
+        "重庆大学"
+      ],
+      "tier_B": [
+        "河南理工大学（安全工程特色）",
+        "西安科技大学",
+        "辽宁工程技术大学",
+        "华南理工大学",
+        "南京信息工程大学"
+      ],
+      "tier_C_note": "各地方综合类/理工类院校中开设该专业的院校，如防灾科技学院（现华北科技学院合并为应急管理大学[筹建中]）、河南工程学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

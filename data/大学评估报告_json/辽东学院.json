@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.865428",
+    "updated_at": "2026-05-12T10:45:13.908074",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "辽东学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.33,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "沈阳大学",
+        "similarity": "同类院校",
+        "key_difference": "沈阳大学占据省会优势，在资源获取和就业广度上胜出；但辽东学院在纺织、园艺等特定细分领域的专业深度上更具特色。"
+      },
+      {
+        "name": "鞍山师范学院",
+        "similarity": "同类院校",
+        "key_difference": "两者在师范教育上旗鼓相当，但辽东学院的工科背景（轻纺）使其毕业生在工业界有更多选择。"
+      },
+      {
+        "name": "大连工业大学",
+        "similarity": "同类院校",
+        "key_difference": "大连工大是辽东学院纺织学科的“上位替代”，若分数足够，大连工大是更优选；若分数在本科线上浮动，辽东学院是极佳的保底选择。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "辽东学院是一所典型的**“小而美、偏而精”**的应用型本科院校。它不具备冲击双一流的学术野心，但在服务地方经济、培养行业熟练人才方面表现出了极高的职业操守。\n\n*   **核心定位**：东北亚边境应用型人才培养基地。\n*   **王牌优势**：如果你想从事纺织服装行业，或者在辽东地区从事教育工作，这里提供的性价比极高。\n*   **潜在风险**：对于志在科研、追求一线城市高薪或希望在大厂就业的学生，该校的平台支撑力显得单薄。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "沈阳大学",
+          "similarity": "同类院校",
+          "key_difference": "沈阳大学占据省会优势，在资源获取和就业广度上胜出；但辽东学院在纺织、园艺等特定细分领域的专业深度上更具特色。"
+        },
+        {
+          "name": "鞍山师范学院",
+          "similarity": "同类院校",
+          "key_difference": "两者在师范教育上旗鼓相当，但辽东学院的工科背景（轻纺）使其毕业生在工业界有更多选择。"
+        },
+        {
+          "name": "大连工业大学",
+          "similarity": "同类院校",
+          "key_difference": "大连工大是辽东学院纺织学科的“上位替代”，若分数足够，大连工大是更优选；若分数在本科线上浮动，辽东学院是极佳的保底选择。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

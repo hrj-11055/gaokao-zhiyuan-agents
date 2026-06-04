@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.041617",
+    "updated_at": "2026-04-28T03:41:19.630158",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130306",
+    "name": "戏剧影视导演",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "\"站在监视器后面的梦，远比银幕上残酷。极低就业率、极端资源垄断，非名校非京沪慎入。\"",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.7,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.69
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 在剧本生成、分镜设计、视频生成（Sora、Runway、Kling 等工具）方面快速进步，大幅降低基础视频内容制作门槛。导演的核心价值（审美判断、团队领导、叙事把控）短期内难以替代，但大量中低端导演/编导岗位（广告片、短视频、企业宣传片）正在被 AI 工具挤压。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"站在监视器后面的梦，远比银幕上残酷。极低就业率、极端资源垄断，非名校非京沪慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京电影学院",
+        "中央戏剧学院"
+      ],
+      "tier_A": [
+        "中国传媒大学",
+        "上海戏剧学院",
+        "中国戏曲学院"
+      ],
+      "tier_B": [
+        "南京艺术学院",
+        "浙江传媒学院",
+        "山东艺术学院",
+        "云南艺术学院",
+        "吉林艺术学院",
+        "重庆大学（美视电影学院）",
+        "暨南大学"
+      ],
+      "tier_C_note": "全国各地方师范类院校、综合类大学中开设戏剧影视导演专业的院校（如四川音乐学院、广西艺术学院、辽宁大学等）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

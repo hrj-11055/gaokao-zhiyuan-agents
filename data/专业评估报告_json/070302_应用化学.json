@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.948155",
+    "updated_at": "2026-04-24T23:58:22.414669",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070302",
+    "name": "应用化学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "\"万金油中的硬核派——下可进厂做检测，上可攻新能源材料研发，但本科毕业多沦为'实验搬砖人'，深造才是翻盘关键。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 4.0,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.4
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "实验设计、合成路线规划、复杂仪器操作（HPLC、核磁共振等）需要高度动手能力和经验判断，短期内AI难以完全替代；但数据分析、文献检索、简单配方优化等环节已逐步被AI工具辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"万金油中的硬核派——下可进厂做检测，上可攻新能源材料研发，但本科毕业多沦为'实验搬砖人'，深造才是翻盘关键。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "复旦大学",
+        "天津大学",
+        "大连理工大学"
+      ],
+      "tier_A": [
+        "华东理工大学",
+        "北京化工大学",
+        "四川大学",
+        "华南理工大学",
+        "南京大学",
+        "哈尔滨工业大学",
+        "西安交通大学",
+        "中南大学",
+        "武汉大学",
+        "南开大学"
+      ],
+      "tier_B": [
+        "南京工业大学",
+        "浙江工业大学",
+        "兰州大学",
+        "中国石油大学（北京/华东）",
+        "青岛科技大学",
+        "武汉工程大学",
+        "西南石油大学",
+        "湖南大学",
+        "北京理工大学",
+        "西北大学",
+        "燕山大学",
+        "江南大学"
+      ],
+      "tier_C_note": "各省属重点院校如上海应用技术大学、沈阳化工大学、常州大学、武汉工程大学、广东工业大学等，全国共378所开设院校中约200所归入此档",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

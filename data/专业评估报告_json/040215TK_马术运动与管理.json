@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.033378",
+    "updated_at": "2026-04-22T01:43:06.028225",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040215TK_马术运动与管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众蓝海赛道，行业增速亮眼但体量有限，全国仅一所院校开设，入场门槛高、路径窄，非真爱慎入。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.6,
+      "future_adaptability": 3.8,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.2
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "马术运动核心技能依赖人与动物的实时互动——骑乘技术、马匹行为判断、身体协调与即时反应，这些是 AI 和机器人无法替代的实体操作技能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众蓝海赛道，行业增速亮眼但体量有限，全国仅一所院校开设，入场门槛高、路径窄，非真爱慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "武汉商学院（全国唯一开设该本科专业",
+        "中国马术协会共建\"中国马术学院\"",
+        "行业公认的\"中国马术界黄埔军校\"）"
+      ],
+      "tier_A": [
+        "北京体育大学（体育学 A+",
+        "211 工程院校，马术在运动训练专业下招生）",
+        "太原理工大学（211 工程院校，设有马术学院）",
+        "上海体育大学（体育学 A+，马术相关方向）"
+      ],
+      "tier_B": [
+        "青岛农业大学（马业科学专业，国际合作突出）",
+        "内蒙古农业大学（马业科学，地域优势明显）"
+      ],
+      "tier_C_note": "新疆克拉玛依职业技术学院（专科·马术方向）、和君职业学院（专科·马术运动与管理方向）等专科层次院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

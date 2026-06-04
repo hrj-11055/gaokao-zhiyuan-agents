@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.896700",
+    "updated_at": "2026-04-25T10:58:59.833429",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080802T_轨道交通信号与控制",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家轨道动脉的\"信号守护者\"，行业需求刚性、对口率极高、就业极稳，但地域锁定性强、薪资天花板中等，适合追求稳定的\"技术匠人\"。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.3,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.42
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "轨道交通信号涉及安全攸关系统（safety-critical system），设计、验证、认证环节需要人类工程师的深度参与和责任承担，AI 可以辅助但不替代安全审查与责任认定。列控系统软硬件开发、系统架构设计等核心技能不易被 AI 完全替代。AI 反而是该领域的赋能者——智能运维、预测性维护、自动驾驶等新技术催生了对复合型人才的需求。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家轨道动脉的\"信号守护者\"，行业需求刚性、对口率极高、就业极稳，但地域锁定性强、薪资天花板中等，适合追求稳定的\"技术匠人\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京交通大学",
+        "西南交通大学"
+      ],
+      "tier_A": [
+        "中南大学",
+        "南京理工大学",
+        "苏州大学"
+      ],
+      "tier_B": [
+        "华东交通大学",
+        "兰州交通大学",
+        "郑州大学",
+        "长沙理工大学",
+        "中北大学",
+        "石家庄铁道大学",
+        "大连交通大学",
+        "河南理工大学",
+        "河南工业大学"
+      ],
+      "tier_C_note": "上海工程技术大学、郑州轻工业大学、江苏师范大学、常州大学、北京联合大学、山东交通学院、湖北师范大学、临沂大学、宝鸡文理学院，以及沧州交通学院、南昌交通学院、大连科技学院等民办院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

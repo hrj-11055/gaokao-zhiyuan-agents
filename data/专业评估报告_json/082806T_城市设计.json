@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.941876",
+    "updated_at": "2026-04-26T00:16:26.846514",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082806T_城市设计",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "城市空间的\"总导演\"，跨界属性强，但踩着地产下行的尾巴入行，头部院校通吃、普通院校画图匠——能熬才吃得开。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.3,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.14
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础制图、规范审查、数据分析等重复性工作已开始被AI工具替代（如AI辅助生成方案、自动出图）；但城市设计的核心——空间策略判断、利益相关方协调、文化语境理解——涉及高度情境化决策，短期内难以被完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "城市空间的\"总导演\"，跨界属性强，但踩着地产下行的尾巴入行，头部院校通吃、普通院校画图匠——能熬才吃得开。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "同济大学（首个开设院校",
+        "建筑学A+",
+        "软科第1）",
+        "清华大学（建筑学A+",
+        "未来人居项目）",
+        "东南大学（建筑学A+）"
+      ],
+      "tier_A": [
+        "天津大学",
+        "中央美术学院",
+        "西安建筑科技大学",
+        "西南交通大学",
+        "华南理工大学"
+      ],
+      "tier_B": [
+        "上海大学",
+        "湖南大学",
+        "重庆大学",
+        "哈尔滨工业大学（深圳）",
+        "北京大学（城市规划与设计学院）"
+      ],
+      "tier_C_note": "内蒙古科技大学、合肥城市学院、湖南城市学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

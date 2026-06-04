@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.967395",
+    "updated_at": "2026-04-23T01:15:16.560235",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "050106T_应用语言学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "语言学的\"应用派\"，开校仅5所的稀缺专业；搭上NLP快车是唯一高薪出路，否则回归文科通用赛道。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.8,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "应用语言学的基础翻译、文本校对、语言标注等传统岗位正被大语言模型快速替代。搜狐科技报道指出\"AI刀锋下文科处于大衰落期\"。但若学生掌握NLP技术栈（Python、深度学习框架），可从\"被替代方\"转向\"AI训练方\"，形成一定防御。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "语言学的\"应用派\"，开校仅5所的稀缺专业；搭上NLP快车是唯一高薪出路，否则回归文科通用赛道。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学"
+      ],
+      "tier_A": [
+        "华侨大学"
+      ],
+      "tier_B": [
+        "赤峰学院",
+        "甘肃民族师范学院"
+      ],
+      "tier_C_note": "（目前仅有5所院校开设，上述已全部列出）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

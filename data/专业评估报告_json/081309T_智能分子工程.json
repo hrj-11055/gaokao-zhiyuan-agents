@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.203411",
+    "updated_at": "2026-04-25T16:40:47.527771",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081309T_智能分子工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "2025年全新专业，AI+分子科学前沿交叉，大连理工独家开设，前景璀璨但零届毕业生验证，属于\"高风险高回报\"的赌注型选择。",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 4.2,
+      "future_adaptability": 4.0,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.69
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "15,000–25,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "本专业本身就是\"用 AI 设计分子\"，AI 是核心工具而非替代者。实验验证环节（Make、Measure）依赖物理操作和仪器，短期内 AI 无法替代。但纯计算模拟方向（Model）的部分重复性工作可能被 AI 自动化。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "2025年全新专业，AI+分子科学前沿交叉，大连理工独家开设，前景璀璨但零届毕业生验证，属于\"高风险高回报\"的赌注型选择。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "大连理工大学（唯一开设院校，A 级学科，未来技术学院，院士领衔）"
+      ],
+      "tier_A": [
+        "天津大学（A+）",
+        "华东理工大学（A+）",
+        "清华大学（A）",
+        "浙江大学（A）",
+        "北京化工大学（A）"
+      ],
+      "tier_B": [
+        "南京工业大学（A）",
+        "中国科学院大学（A）",
+        "哈尔滨工业大学（A-）",
+        "华南理工大学（A-）",
+        "四川大学（A-）"
+      ],
+      "tier_C_note": "目前暂无。预计未来扩展时，南京理工大学、中国石油大学等 B+ 级化工院校可能加入。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

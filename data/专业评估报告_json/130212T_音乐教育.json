@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.032918",
+    "updated_at": "2026-04-28T03:02:16.440920",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130212T_音乐教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "音乐是灵魂的语言，但音乐教育是\"编制\"的语言——考编是终极归宿，出路窄但稳定，AI 暂时替代不了琴房里的手把手。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 2.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.6,
+      "education_resources": 3.2,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.89
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–5,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "音乐教育涉及大量肢体指导（手型、气息、姿势）、即时听觉反馈、情感表达引导和师生互动，这些是当前 AI 难以替代的核心环节。但乐理教学、视唱练耳基础训练等标准化内容已出现 AI 辅助工具。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "音乐是灵魂的语言，但音乐教育是\"编制\"的语言——考编是终极归宿，出路窄但稳定，AI 暂时替代不了琴房里的手把手。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央音乐学院",
+        "上海音乐学院",
+        "中国音乐学院"
+      ],
+      "tier_A": [
+        "北京师范大学",
+        "华东师范大学",
+        "南京艺术学院",
+        "武汉音乐学院",
+        "四川音乐学院",
+        "星海音乐学院",
+        "西安音乐学院",
+        "东北师范大学",
+        "华中师范大学"
+      ],
+      "tier_B": [
+        "首都师范大学",
+        "天津音乐学院",
+        "沈阳音乐学院",
+        "哈尔滨音乐学院",
+        "浙江音乐学院",
+        "南京师范大学",
+        "湖南师范大学",
+        "华南师范大学",
+        "西南大学",
+        "山东师范大学"
+      ],
+      "tier_C_note": "各省级师范类本科院校（如河南师范大学、安徽师范大学、广西师范大学等）、综合性大学音乐系（约 200+ 所院校开设音乐教育相关专业）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

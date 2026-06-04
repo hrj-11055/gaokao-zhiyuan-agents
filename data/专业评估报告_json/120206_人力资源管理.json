@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.203790",
+    "updated_at": "2026-04-27T18:36:51.051182",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120206",
+    "name": "人力资源管理",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "\"万金油专业，入门门槛低但天花板也清晰，HR 数字化浪潮下，懂业务懂数据的人才能脱颖而出。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.8,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.2
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "HR 领域的事务性工作（简历筛选、薪酬计算、基础问答）已被 AI 大量替代；但需要高情商和复杂判断的环节（组织诊断、人才发展、劳资谈判、文化建设）短期难以被 AI 替代。关键在于能否从\"事务型 HR\"转型为\"战略型 HR\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"万金油专业，入门门槛低但天花板也清晰，HR 数字化浪潮下，懂业务懂数据的人才能脱颖而出。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "北京大学",
+        "清华大学",
+        "复旦大学",
+        "上海交通大学",
+        "中山大学"
+      ],
+      "tier_A": [
+        "南开大学",
+        "南京大学",
+        "厦门大学",
+        "浙江大学",
+        "对外经济贸易大学",
+        "上海财经大学",
+        "西安交通大学",
+        "武汉大学",
+        "华中科技大学",
+        "北京师范大学"
+      ],
+      "tier_B": [
+        "华东师范大学",
+        "中南财经政法大学",
+        "西南财经大学",
+        "首都经济贸易大学",
+        "浙江工商大学",
+        "暨南大学",
+        "华南理工大学",
+        "山东大学",
+        "天津大学",
+        "四川大学"
+      ],
+      "tier_C_note": "各省属财经类院校、地方综合大学（如广东财经大学、河南财经政法大学、云南财经大学等）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

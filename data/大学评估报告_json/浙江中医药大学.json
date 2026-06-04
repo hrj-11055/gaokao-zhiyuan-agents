@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.471646",
+    "updated_at": "2026-05-11T11:20:43.836048",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "浙江中医药大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.0,
+      "graduate_value": 4.2,
+      "location_advantage": 4.7,
+      "globalization": 3.6,
+      "student_empowerment": 3.8,
+      "brand_asset": 4.1
+    },
+    "weighted_score": 4.13,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "滨江",
+      "region": "",
+      "industrial_clusters": [
+        "网易等科技"
+      ],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity (身份定位)**：浙江省属重点建设高校，全国排名前五的顶尖中医药学府，浙派中医的传承与创新中心。\n*   **Ace (核心王牌)**：中医学（5+3 一体化）、中药学、中西医结合。拥有强大的附属医院体系和省级科研平台。\n*   **Vibe (校园氛围)**：严谨、务实、略显沉重但充满希望。学生群体具有极强的考研动力和职业认同感。\n*   **Risk (潜在风险)**：医学类专业学业压力巨大，非医学类专业（如管理、英语）在综合就业市场中面临跨学科竞争压力。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

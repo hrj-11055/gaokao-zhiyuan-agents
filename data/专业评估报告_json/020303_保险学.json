@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.182254",
+    "updated_at": "2026-05-17T01:09:09.354682",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "020303",
+    "name": "保险学",
+    "category": "经济学",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.8,
+      "education_resources": 3.2,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.84
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~96.3%",
+      "alignment_rate": "",
+      "starting_salary": "8000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "精算、核保、理赔等核心岗位需要复杂判断和人际沟通，AI可辅助但难以完全替代；销售、客服等前端岗位替代风险较高。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "复旦大学",
+        "中国人民大学",
+        "南开大学"
+      ],
+      "tier_A": [
+        "上海财经大学",
+        "中央财经大学",
+        "西南财经大学",
+        "对外经济贸易大学",
+        "南京大学"
+      ],
+      "tier_B": [
+        "湖南大学",
+        "武汉大学",
+        "中山大学",
+        "厦门大学",
+        "山东大学"
+      ],
+      "tier_C_note": "其他开设保险学专业的本科院校（约 80 所）",
+      "selection_advice": "对于该专业，不同分数段考生的核心选校原则：高分段瞄准\"清北复人南\"五校，中分段重视财经类院校的地缘优势，低分段优先选择一线城市院校。"
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

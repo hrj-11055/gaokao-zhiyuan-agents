@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.917020",
+    "updated_at": "2026-04-27T19:05:46.676607",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120211T_劳动关系",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "HR界的\"小众精锐\"，体制内与工会系统对口性极强，但在市场化就业中存在感偏弱，适合有明确方向感的人。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.07
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "劳动关系涉及大量的谈判协商、人际沟通、制度设计和政策解读，这些\"高人际密度\"的工作场景在短期内被AI完全替代的可能性较低。但基础性合同审核、法规查询等常规任务已被AI工具侵蚀。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "HR界的\"小众精锐\"，体制内与工会系统对口性极强，但在市场化就业中存在感偏弱，适合有明确方向感的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学（劳动人事学院，国内无可争议的第一）"
+      ],
+      "tier_A": [
+        "首都经济贸易大学",
+        "中国劳动关系学院"
+      ],
+      "tier_B": [
+        "山东大学",
+        "浙江大学",
+        "中南财经政法大学",
+        "华东政法大学",
+        "西南政法大学"
+      ],
+      "tier_C_note": "各地方师范类院校、财经类院校中开设该专业的学校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

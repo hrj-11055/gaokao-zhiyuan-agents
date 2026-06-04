@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.135023",
+    "updated_at": "2026-04-28T02:26:33.096990",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130206",
+    "name": "舞蹈编导",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "\"台上一分钟台下十年功的艺术执念——天赋与资源双驱动，圈子极度封闭，非名校+非真爱慎入。\"",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 2.5,
+      "future_adaptability": 2.2,
+      "career_path": 2.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.21
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3,500–5,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "舞蹈编导的核心——身体表达、空间调度、情感编排——高度依赖人类身体经验和审美直觉，AI 难以替代。但 AI 辅助工具（动作生成、舞台设计、灯光编程）可能压缩部分辅助岗位。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"台上一分钟台下十年功的艺术执念——天赋与资源双驱动，圈子极度封闭，非名校+非真爱慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京舞蹈学院",
+        "中央民族大学"
+      ],
+      "tier_A": [
+        "上海戏剧学院",
+        "南京艺术学院",
+        "沈阳音乐学院",
+        "四川音乐学院",
+        "武汉音乐学院"
+      ],
+      "tier_B": [
+        "星海音乐学院",
+        "西安音乐学院",
+        "天津音乐学院",
+        "吉林艺术学院",
+        "山东艺术学院",
+        "云南艺术学院",
+        "广西艺术学院"
+      ],
+      "tier_C_note": "各省属综合类大学艺术学院（如湖南师范大学、西北师范大学、江西师范大学等），以及部分民办艺术院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

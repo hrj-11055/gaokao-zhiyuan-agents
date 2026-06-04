@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.850493",
+    "updated_at": "2026-05-08T03:13:41.098748",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京财经大学红山学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.75,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "金审学院",
+        "similarity": "同类院校",
+        "key_difference": "金审学院在审计、会计领域的垂直深度极高，且校区更靠近主城，实习便利度完胜。但红山学院在工商管理、贸易经济等综合财经领域的覆盖面更广，且新校区的居住体验远超金审。"
+      },
+      {
+        "name": "经贸学院",
+        "similarity": "同类院校",
+        "key_difference": "两者同属南财系，但红山学院在独立办学和校区建设上的投入更大，品牌独立性更强。经贸学院目前更多处于过渡状态，而红山学院已在高淳扎根，展现出更强的长期办学意图。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南京财经大学红山学院作为江苏省内知名的财经类独立学院，其核心竞争力紧密依附于母体——南京财经大学（简称“南财”）。在当前的教育生态中，红山学院扮演着“应用型财经人才孵化器”的角色。其生源质量在江苏省民办本科层次中长期处于领跑地位，这主要得益于“南财”这一金字招牌在长三角地区金融、财会行业的深厚影响力。\n\n从深度评估来看，学院正处于一个关键的转型期。2024年全面启用南京高淳校区，标志着学院正式告别了长期借用镇江桥头校区的“寄居”状态，拥有了独立的、高标准的物理空间。这种硬件的跨越式升级，显著提升了学生的校园生活品质，但也带来了地理位置上的挑战——高淳区距离南京市中心约80公里，这种“远郊效应”对学生的实习便利性和社会融入感产生了一定的负面压制。\n\n在学术层面，红山学院采取的是“名师+实务”的路线。大量核心课程由南财本部的资深教授授课，确保了教学质量的下限；同时，学院极度强化会计、审计、金融等专业的考证导向，使学生在就业市场上具备较强的“即战力”。然而，作为独立学院，其科研底蕴薄弱、高层次人才引进受限等硬伤依然存在。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "金审学院",
+          "similarity": "同类院校",
+          "key_difference": "金审学院在审计、会计领域的垂直深度极高，且校区更靠近主城，实习便利度完胜。但红山学院在工商管理、贸易经济等综合财经领域的覆盖面更广，且新校区的居住体验远超金审。"
+        },
+        {
+          "name": "经贸学院",
+          "similarity": "同类院校",
+          "key_difference": "两者同属南财系，但红山学院在独立办学和校区建设上的投入更大，品牌独立性更强。经贸学院目前更多处于过渡状态，而红山学院已在高淳扎根，展现出更强的长期办学意图。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "考证狂魔",
+        "高淳湖景",
+        "南财血统"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.922439",
+    "updated_at": "2026-05-17T00:56:41.286897",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "020108T_经济工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.69
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "15000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "数据分析、建模等基础技能易被AI替代，但项目决策、人际沟通、复杂系统协调等核心能力具有AI抗性。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业为新兴专业，尚未形成传统优势院校）"
+      ],
+      "tier_A": [
+        "重庆大学",
+        "郑州大学",
+        "合肥大学",
+        "上海工程技术大学"
+      ],
+      "tier_B": [
+        "[待补充院校列表]"
+      ],
+      "tier_C_note": "[待补充院校列表]",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

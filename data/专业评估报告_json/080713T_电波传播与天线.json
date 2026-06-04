@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.934395",
+    "updated_at": "2026-04-25T10:17:11.649693",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080713T_电波传播与天线",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "\"军工底色极浓的'隐形王者'，全国仅4所大学开设，6G与卫星互联网时代的高端入场券，但窄口径+高数理门槛意味着——不适合大多数人。\"",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 3.2,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 4.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "AI目前主要作为电磁仿真的辅助工具（如华为AI驱动射频天线设计、MindSpore电磁仿真方案），加速\"设计-仿真-验证\"流程，但射频/天线设计的核心——对电磁场物理规律的深层理解、边界条件判断、系统级权衡——仍高度依赖人类专家经验。AI是增强工具而非替代方案。来源：华为官网、搜狐科技、电子工程世界。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"军工底色极浓的'隐形王者'，全国仅4所大学开设，6G与卫星互联网时代的高端入场券，但窄口径+高数理门槛意味着——不适合大多数人。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "电子科技大学（国家一流本科专业，软科排名第1）",
+        "西安电子科技大学（校友会排名第1，国防紧缺专业特色鲜明）"
+      ],
+      "tier_A": [
+        "武汉大学"
+      ],
+      "tier_B": [
+        "天津理工大学"
+      ],
+      "tier_C_note": "该专业全国仅4所高校开设，无更多C档院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

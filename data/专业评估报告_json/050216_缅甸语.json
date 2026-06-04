@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.927878",
+    "updated_at": "2026-04-23T19:46:08.757046",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050216",
+    "name": "缅甸语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "稀缺语种的窄门博弈：一带一路政策红利下需求增长，但体量小、地域集中、AI冲击加剧，适合有战略耐心的少数派。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.02
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–9,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI翻译技术（DeepL、Google Translate、大模型实时翻译）对通用翻译场景冲击巨大。2024年调查显示超过3/4的翻译人员因AI收入减少（《中国社会科学网》）。但缅甸语作为极低资源语言（low-resource language），AI训练数据稀缺，短期内机器翻译质量远不如英语/日语等主流语种，存在一定的技术缓冲期。核心不可替代的场景包括：外交谈判、高风险合同翻译、驻外项目现场沟通——这些需要文化理解和即时判断力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "稀缺语种的窄门博弈：一带一路政策红利下需求增长，但体量小、地域集中、AI冲击加剧，适合有战略耐心的少数派。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "北京外国语大学"
+      ],
+      "tier_A": [
+        "广东外语外贸大学",
+        "云南民族大学（国家级特色专业）",
+        "云南大学（国家级一流本科专业建设点）"
+      ],
+      "tier_B": [
+        "广西民族大学",
+        "四川外国语大学",
+        "天津外国语大学",
+        "解放军国际关系学院"
+      ],
+      "tier_C_note": "云南师范大学、玉溪师范学院、红河学院、云南财经大学、大理大学、普洱学院、滇西科技师范学院、保山学院、贵州大学、广西外国语学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

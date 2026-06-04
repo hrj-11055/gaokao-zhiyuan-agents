@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.937597",
+    "updated_at": "2026-04-27T10:15:23.801396",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "101007",
+    "name": "卫生检验与检疫",
+    "category": "医学",
+    "recommendation_level": "yellow",
+    "summary": "公共卫生体系的\"隐形守门人\"，体制内就业稳定但市场化薪资偏低调，理科动手能力强者的务实之选。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.19
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "样品前处理、微生物培养、仪器操作等实验室核心技能依赖人工经验与精细操作，短期内难以被AI完全替代。但数据分析和报告撰写环节已有AI辅助工具介入。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "公共卫生体系的\"隐形守门人\"，体制内就业稳定但市场化薪资偏低调，理科动手能力强者的务实之选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "四川大学（华西公共卫生学院）",
+        "南京医科大学"
+      ],
+      "tier_A": [
+        "首都医科大学",
+        "温州医科大学",
+        "广东医科大学",
+        "山西医科大学",
+        "南华大学"
+      ],
+      "tier_B": [
+        "重庆医科大学",
+        "杭州师范大学",
+        "安徽医科大学",
+        "武汉科技大学",
+        "河北大学",
+        "成都医学院",
+        "福建医科大学"
+      ],
+      "tier_C_note": "全国约40余所地方医学院校，如皖南医学院、海南医学院、贵阳康养职业大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

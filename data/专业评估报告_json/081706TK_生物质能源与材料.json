@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.979011",
+    "updated_at": "2026-04-25T18:26:45.203110",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081706TK_生物质能源与材料",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"双碳风口下的绿色新赛道，政策红利拉满但产业尚未成熟，全国仅5校开设——小而精，赌的是未来。\"",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.2
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "生物质转化工艺优化、材料配方研发、实验设计与数据分析等核心工作高度依赖实体实验和工程经验判断，AI可辅助模拟但无法替代实验室操作和中试验证。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"双碳风口下的绿色新赛道，政策红利拉满但产业尚未成熟，全国仅5校开设——小而精，赌的是未来。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业设立时间太短，尚无院校形成绝对统治力）"
+      ],
+      "tier_A": [
+        "华南农业大学（ABC排名A+，设有生物质学院，学科体系最完善）",
+        "陕西科技大学（ABC排名A+，依托轻工传统优势）"
+      ],
+      "tier_B": [
+        "大连工业大学（ABC排名B类，轻工方向特色）",
+        "中南林业科技大学（林业工程背景，生物质资源学方向强）"
+      ],
+      "tier_C_note": "临沂大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

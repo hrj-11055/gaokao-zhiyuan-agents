@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.051499",
+    "updated_at": "2026-04-27T03:07:42.404904",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100705T_药物分析",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "药品质量的\"守门人\"，技术壁垒高、就业面窄但稳，吃的是细心和耐心的饭，适合沉得下心做实验的人。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "药物分析的核心工作涉及实验操作、色谱/质谱仪器使用、药典法规解读等，AI可辅助数据分析和报告生成，但实验室实操和法规合规判断仍需人工。然而，AI在光谱解析、杂质结构鉴定方面的能力正在快速提升，部分标准化分析工作面临自动化替代压力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "药品质量的\"守门人\"，技术壁垒高、就业面窄但稳，吃的是细心和耐心的饭，适合沉得下心做实验的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国药科大学",
+        "北京大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "沈阳药科大学",
+        "浙江大学",
+        "四川大学",
+        "山东大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "广东药科大学",
+        "浙江工业大学",
+        "南京医科大学",
+        "华中科技大学",
+        "武汉大学",
+        "中南大学"
+      ],
+      "tier_C_note": "各省属医药类院校及综合性大学的药学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

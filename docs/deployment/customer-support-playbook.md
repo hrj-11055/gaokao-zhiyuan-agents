@@ -220,7 +220,7 @@ npm run vip-codes -- show --code COMP-YYYYMM-XXXXXX
 排查重点：
 
 - `/api/report/generate` 是否返回 `draftId` 或具体错误。
-- DeepSeek 模型配置是否为 `deepseek-v4-pro`。
+- 报告生成模型配置是否为 `REPORT_DEEPSEEK_MODEL=deepseek-v4-flash`。
 - 用户两项测评（性格类型定位 + 霍兰德职业兴趣）和基础资料是否完整。
 - PM2 日志中同一时间是否有模型、PDF 或数据库错误。
 

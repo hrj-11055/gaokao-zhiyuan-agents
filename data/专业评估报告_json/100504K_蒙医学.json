@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.109269",
+    "updated_at": "2026-04-27T02:01:18.993312",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100504K_蒙医学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "极小众民族医学赛道，政策护城河极深但地域锁定严重，仅在内蒙古及周边有生存空间，\"路很窄但竞争也少\"。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.6,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.8
+    },
+    "weighted_score": 3.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3500–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "蒙医学的核心——望诊、触诊、脉诊等传统诊断手法，以及蒙医独特理论体系（三根学说、七素理论）高度依赖经验积累和人文互动，AI 在短期内完全无法替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极小众民族医学赛道，政策护城河极深但地域锁定严重，仅在内蒙古及周边有生存空间，\"路很窄但竞争也少\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "内蒙古医科大学"
+      ],
+      "tier_A": [
+        "内蒙古民族大学",
+        "青海大学"
+      ],
+      "tier_B": [
+        "成都中医药大学",
+        "赤峰学院"
+      ],
+      "tier_C_note": "暂无其他开设蒙医学本科专业的普通院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

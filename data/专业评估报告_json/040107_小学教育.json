@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.924865",
+    "updated_at": "2026-04-21T23:59:20.606601",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "040107",
+    "name": "小学教育",
+    "category": "教育学",
+    "recommendation_level": "yellow",
+    "summary": "\"铁饭碗里的'卷王'：入口宽松出口窄，考编才是生死线，出生率腰斩让天花板越压越低。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.0,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "小学教育高度依赖师生情感互动、儿童心理理解、即时情境判断和人格示范——这些都是AI难以替代的\"软技能\"。AI可以作为教学辅助工具（智能批改、个性化学习），但无法替代教师的育人角色。不过，若出生率持续下降导致班级合并，AI辅助可能减少教师编制总量需求。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"铁饭碗里的'卷王'：入口宽松出口窄，考编才是生死线，出生率腰斩让天花板越压越低。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京师范大学",
+        "华东师范大学"
+      ],
+      "tier_A": [
+        "东北师范大学",
+        "南京师范大学",
+        "华中师范大学",
+        "华南师范大学",
+        "首都师范大学",
+        "上海师范大学",
+        "浙江师范大学",
+        "湖南师范大学"
+      ],
+      "tier_B": [
+        "天津师范大学",
+        "杭州师范大学",
+        "安徽师范大学",
+        "重庆师范大学",
+        "河南师范大学",
+        "山东师范大学",
+        "四川师范大学",
+        "云南师范大学"
+      ],
+      "tier_C_note": "各地市级师范学院（如廊坊师范学院、绵阳师范学院、黔南民族师范学院等），全国开设小学教育的普通本科院校约200+所。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

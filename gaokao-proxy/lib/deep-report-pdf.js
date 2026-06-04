@@ -36,6 +36,10 @@ function extractRawSections(data = {}) {
     }
   })
 
+  if (sections.length > 0) {
+    return sections
+  }
+
   const layer4 = data.layer4_supplement || {}
   if (layer4.full_raw_content) {
     sections.push({
@@ -57,6 +61,14 @@ function extractFullContent(report) {
   const summary = data.layer2_core?.summary || report.summary || ''
   const overview = data.layer1_overview?.summary || report.overview?.summary || ''
   return [summary, overview].filter(Boolean).join('\n\n')
+}
+
+function visibleWordCount(report, sections) {
+  const count = sections.reduce(
+    (total, section) => total + Array.from(String(section?.content || '')).length,
+    0
+  )
+  return count || Number(report?.word_count || 0)
 }
 
 function recommendationLabel(value) {
@@ -216,11 +228,11 @@ function buildDeepReportHtml({ type, report }) {
   const normalizedType = normalizeType(type)
   const title = reportTitle(normalizedType, report)
   const label = normalizedType === 'major' ? '专业深度评估' : '大学深度研究'
-  const wordCount = Number(report.word_count || 0)
   const rawSections = extractRawSections(report?.data || {})
   const sections = rawSections.length > 0
     ? rawSections
     : [{ title: '完整研究内容', content: extractFullContent(report) }]
+  const wordCount = visibleWordCount(report, sections)
   const summaryCards = buildSummaryCards(report)
 
   return `<!doctype html>
@@ -443,7 +455,6 @@ function buildDeepReportReaderHtml({ type, report }) {
   const normalizedType = normalizeType(type)
   const title = reportTitle(normalizedType, report)
   const label = normalizedType === 'major' ? '专业深度评估' : '大学深度研究'
-  const wordCount = Number(report.word_count || 0)
   const rawSections = extractRawSections(report?.data || {})
   const sections = (rawSections.length > 0
     ? rawSections
@@ -452,6 +463,7 @@ function buildDeepReportReaderHtml({ type, report }) {
     ...section,
     id: `section-${index + 1}`,
   }))
+  const wordCount = visibleWordCount(report, sections)
   const summaryCards = buildSummaryCards(report)
   const generatedDate = new Date().toISOString().slice(0, 10)
 

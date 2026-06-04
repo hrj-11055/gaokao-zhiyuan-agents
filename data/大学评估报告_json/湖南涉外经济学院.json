@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.559761",
+    "updated_at": "2026-05-10T00:04:12.723892",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖南涉外经济学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 1.8,
+      "graduate_value": 2.4,
+      "location_advantage": 3.5,
+      "globalization": 3.2,
+      "student_empowerment": 3.0,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.54,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：湖南涉外经济学院（以下简称“涉外”）是中国民办高等教育领域的先行者与“老牌名校”。自 1996 年创建以来，它经历了从民办专科到本科、从家族式管理到集团化运营（宇华教育集团成员）的重大转变。学校目前已发展成为以财经、商贸、艺术为核心，多学科协调发展的应用型本科院校。其核心身份标签是“商业化”、“务实”与“高自由度”。\n\n**Ace（王牌优势）**：学校的金融学专业获批国家级一流本科专业建设点，这在民办高校中属于极少数的“硬核”突破。此外，国际化办学是其长期以来的差异化竞争优势，通过与英国切斯特大学、法国相关高校的深度合作，为学生提供了低门槛的出国深造通道。在省内，其商科毕业生的社交能力与实践上手速度在中小企业中拥有较好的口碑。\n\n**Vibe（文化特质）**：校园文化呈现出鲜明的“商业社会预演”特征。相比于公办院校的学术氛围，涉外更像是一个微型社会，学生群体表现出极强的社交活力和创业冲动。校园生活丰富，艺术类社团与体育特色项目（如高尔夫）提升了学校的品牌辨识度。然而，这种氛围也带来了一定的两极分化：目标明确的学生利用资源快速成长，而缺乏自律的学生则容易在相对宽松的环境中迷失。\n\n**Risk（潜在风险）**：首先是财务成本风险，作为民办院校，其学费逐年攀升，对于家庭经济压力较大的学生而言，投入产出比（ROI）需要精细计算。其次是生源质量的结构性矛盾，虽然录取分数在民办中领先，但整体仍处于本科底层，这对教学管理提出了巨大挑战。最后，近年来频发的师德师风事件及管理层变动，反映出集团化运作下人文关怀与行政效率之间的张力。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实主义",
+        "商业直觉",
+        "社交达人",
+        "长沙网红",
+        "高尔夫特色",
+        "国际化视野",
+        "创业摇篮"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

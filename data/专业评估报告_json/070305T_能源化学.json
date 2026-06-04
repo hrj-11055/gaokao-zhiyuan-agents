@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.169237",
+    "updated_at": "2026-04-25T00:09:07.766025",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070305T_能源化学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "新能源浪潮的\"底层码农\"——踩着双碳风口但市场极窄，本科不吃香，读研才是入场券。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.3,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.48
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~87%",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "能源化学核心工作（实验设计、材料合成、电化学测试、数据分析）高度依赖物理实验验证，AI可辅助分子模拟和数据分析，但无法替代实验室操作和化学合成过程。研究型岗位需原创性思维和实验直觉，AI短期内难以替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "新能源浪潮的\"底层码农\"——踩着双碳风口但市场极窄，本科不吃香，读研才是入场券。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "复旦大学",
+        "厦门大学"
+      ],
+      "tier_A": [
+        "北京化工大学"
+      ],
+      "tier_B": [
+        "河南大学",
+        "河南科技大学",
+        "温州大学"
+      ],
+      "tier_C_note": "青岛科技大学、山西师范大学、盐城工学院、山西电子科技学院、内蒙古科技大学包头师范学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

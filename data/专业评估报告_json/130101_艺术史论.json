@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.016374",
+    "updated_at": "2026-04-28T01:47:21.383991",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130101",
+    "name": "艺术史论",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "精英学术象牙塔，需要名校+深造双重加持才能\"上岸\"，普通人慎入的冷门贵族专业。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 2.8,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 3.8,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 2.74
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–5,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 图像生成和文本生成能力可辅助但不完全替代艺术史研究（需要原作考据、学术论证、策展叙事等深度人文判断）。但低端岗位（图库管理、基础文案、艺术资讯整合）面临 AI 替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "精英学术象牙塔，需要名校+深造双重加持才能\"上岸\"，普通人慎入的冷门贵族专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "清华大学",
+        "中央美术学院",
+        "中国美术学院"
+      ],
+      "tier_A": [
+        "南京艺术学院",
+        "东南大学",
+        "上海大学",
+        "四川美术学院",
+        "广州美术学院"
+      ],
+      "tier_B": [
+        "鲁迅美术学院",
+        "天津美术学院",
+        "湖北美术学院",
+        "西安美术学院",
+        "山东艺术学院",
+        "南京大学",
+        "浙江大学"
+      ],
+      "tier_C_note": "各地方综合性大学艺术学院、地方艺术院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

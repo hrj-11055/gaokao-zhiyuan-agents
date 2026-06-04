@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.813220",
+    "updated_at": "2026-05-09T18:17:51.786002",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖南农业大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 3.8,
+      "location_advantage": 4.0,
+      "globalization": 3.2,
+      "student_empowerment": 4.5,
+      "brand_asset": 4.8
+    },
+    "weighted_score": 4.025,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：中国南方最重要的农林科技人才培养基地，湖南省属高校的“领头羊”。\n*   **Ace（王牌优势）**：作物学、园艺学、畜牧学。如果你想在种业、养殖业有所建树，这里是全国性价比最高的选择之一。\n*   **Vibe（文化特质）**：极其务实，不尚空谈。这里没有名校的傲慢，只有对土地和技术的敬畏。\n*   **Risk（潜在风险）**：传统农科岗位的初期工作环境可能较为艰苦（如养殖场、试验田）；非优势学科（如文学、法学）在资源分配上处于边缘地位。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "袁隆平的种子",
+        "种业硅谷",
+        "红薯节",
+        "转专业自由",
+        "长沙性价比之王",
+        "务实派",
+        "岳麓山实验室"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

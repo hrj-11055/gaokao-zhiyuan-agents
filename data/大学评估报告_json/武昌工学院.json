@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.709738",
+    "updated_at": "2026-05-10T00:22:24.765864",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "武昌工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.5,
+      "graduate_value": 2.6,
+      "location_advantage": 4.0,
+      "globalization": 2.2,
+      "student_empowerment": 3.0,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.78,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "武昌工学院是一所典型的**应用型民办本科院校**。它成功地承接了原母体学校的工科底蕴，并在转设后通过市场化运作，在智能制造、土木建筑等领域形成了鲜明的办学特色。学校的优势在于其**极强的就业导向**和**优越的地理位置**，能够为学生提供从校园到工厂/工地的无缝对接。\n\n然而，作为民办高校，它也面临着天然的学术天花板。科研投入不足、高层次人才匮乏以及对学费收入的过度依赖，使其在面对公办高校下沉竞争时显得防御力不足。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬核工科",
+        "武汉光谷",
+        "考研逆袭",
+        "务实就业",
+        "民办标杆",
+        "生活便利"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

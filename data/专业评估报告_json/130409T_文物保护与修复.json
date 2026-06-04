@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.949145",
+    "updated_at": "2026-04-28T13:25:24.833082",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130409T_文物保护与修复",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "冷门中的冷门，2500万件文物等不到人修，但高薪岗位极度稀缺，需耐住寂寞、甘坐冷板凳的\"匠人型\"选手。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.08
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "文物修复的核心——手工操作（书画揭裱、青铜器焊接、陶瓷拼接等精细手工技艺）和基于经验的材料判断——极度依赖人类触觉感知和经验积累，AI 和机器人短期至中期内无法替代。AI 可辅助数字化扫描和方案模拟，但最终执行环节高度依赖人工。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "冷门中的冷门，2500万件文物等不到人修，但高薪岗位极度稀缺，需耐住寂寞、甘坐冷板凳的\"匠人型\"选手。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国美术学院",
+        "中央美术学院"
+      ],
+      "tier_A": [
+        "广州美术学院",
+        "南京艺术学院",
+        "鲁迅美术学院"
+      ],
+      "tier_B": [
+        "西安美术学院",
+        "天津美术学院",
+        "山东艺术学院",
+        "太原理工大学"
+      ],
+      "tier_C_note": "上海视觉艺术学院、安阳学院、青岛电影学院、河北东方学院、大连艺术学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

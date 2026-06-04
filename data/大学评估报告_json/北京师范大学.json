@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.897629",
+    "updated_at": "2026-05-09T14:18:53.875118",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "北京师范大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.9,
+      "graduate_value": 4.8,
+      "location_advantage": 4.8,
+      "globalization": 4.4,
+      "student_empowerment": 4.7,
+      "brand_asset": 4.9
+    },
+    "weighted_score": 4.795,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "- **Identity（核心定位）**：中国师范教育的珠穆朗玛峰，文理基础学科的学术重镇。\n- **Ace（王牌优势）**：教育、心理、中文、历史四大王牌学科全国顶尖；转专业政策极度友好；在北京拥有极强的社会资源。\n- **Vibe（文化特质）**：务实、内敛、人文关怀浓厚。这里没有清华的硬核竞争感，也没有北大的狂放不羁，更多的是一种“润物细无声”的沉稳。\n- **Risk（潜在风险）**：本部硬件设施老化，人均空间不足；非师范专业在某些偏见严重的行业（如纯金融投行）可能需要更多证明自己。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "学霸聚集地",
+        "转专业天堂",
+        "人文情怀",
+        "低调务实",
+        "教育黄埔",
+        "海淀小破大",
+        "脑科学高地",
+        "莫言的学校"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.089872",
+    "updated_at": "2026-04-25T18:55:44.071390",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081807T_救助与打捞工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "极度冷门的\"海上特种兵\"，全国年招不到 50 人，就业基本\"包分配\"进体制，但身体要求苛刻、几乎只招男生、行业天花板明显。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 3.8,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.24
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6800–8500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "海上救助打捞涉及深海作业、水下操作、应急处置等高度依赖实体操作的环节，AI 和机器人可辅助（如 ROV 水下机器人、AI 结构测绘），但完全替代人类现场决策和操作仍需数十年。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度冷门的\"海上特种兵\"，全国年招不到 50 人，就业基本\"包分配\"进体制，但身体要求苛刻、几乎只招男生、行业天花板明显。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "大连海事大学"
+      ],
+      "tier_A": [
+        "大连海洋大学"
+      ],
+      "tier_B": [
+        "无（民用院校仅上述两所开设）"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

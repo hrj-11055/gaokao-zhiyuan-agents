@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.994346",
+    "updated_at": "2026-04-22T12:01:04.877115",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "040103",
+    "name": "人文教育",
+    "category": "教育学",
+    "recommendation_level": "yellow",
+    "summary": "知识面广但针对性弱的小众师范专业，体制内靠考编上岸，体制外缺乏硬技能壁垒，适合真正热爱教育的\"通才型\"考生。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 2.8,
+      "future_adaptability": 3.2,
+      "career_path": 2.6,
+      "education_resources": 3.5,
+      "discipline_core": 3.6
+    },
+    "weighted_score": 2.85
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "人文教育核心工作涉及师生情感互动、价值观引导、课堂管理等人际交往场景，AI难以完全替代教师的情感联结功能；但基础知识讲授、作业批改等重复性工作面临AI辅助替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "知识面广但针对性弱的小众师范专业，体制内靠考编上岸，体制外缺乏硬技能壁垒，适合真正热爱教育的\"通才型\"考生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "（暂无——该专业缺乏顶尖名校布局，无985/211院校以人文教育为优势学科）"
+      ],
+      "tier_A": [
+        "浙江师范大学",
+        "宁波大学（双一流）",
+        "杭州师范大学"
+      ],
+      "tier_B": [
+        "长春师范大学（ABC排名A+）",
+        "楚雄师范学院（ABC排名A+）",
+        "鲁东大学",
+        "安庆师范大学"
+      ],
+      "tier_C_note": "太原师范学院、廊坊师范学院、怀化学院、信阳师范大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

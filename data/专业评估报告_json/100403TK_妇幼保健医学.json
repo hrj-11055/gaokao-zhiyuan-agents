@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.923628",
+    "updated_at": "2026-04-27T01:30:30.071815",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100403TK_妇幼保健医学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国仅6校开设的\"窄门专业\"，入行需过公卫执医，基层就业为主，薪酬偏低但体制内稳定性强。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 2.8,
+      "future_adaptability": 3.2,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.69
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3,000–5,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "妇幼保健涉及大量面对面的人际互动——孕产妇心理疏导、儿童发育评估、产后家访、社区健康教育等，均需要情感共情和现场判断力。但部分数据分析（如流行病学统计、体检报告解读）可能被AI工具辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅6校开设的\"窄门专业\"，入行需过公卫执医，基层就业为主，薪酬偏低但体制内稳定性强。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "（按一级学科公共卫生与预防医学实力选）华中科技大学",
+        "北京大学",
+        "复旦大学",
+        "南京医科大学"
+      ],
+      "tier_A": [
+        "安徽医科大学",
+        "河北医科大学"
+      ],
+      "tier_B": [
+        "广西医科大学",
+        "贵州医科大学"
+      ],
+      "tier_C_note": "长沙医学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

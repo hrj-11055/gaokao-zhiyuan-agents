@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.095490",
+    "updated_at": "2026-04-25T11:33:21.397609",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080903",
+    "name": "网络工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "数字世界的\"修路搭桥人\"，底层技能扎实但天花板取决于你是否能从\"拉网线\"进化到\"造架构\"。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.23
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–9,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础网络配置、故障排查、日志分析等重复性工作正被AIOps和自动化工具替代；但网络架构设计、安全攻防、复杂系统排障仍需人类判断力和创造力，短期不可替代。2024年华为认证已新增AI运维工程师方向，持证者首年薪资可达40万+。来源：申请方网络工程就业分析"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "数字世界的\"修路搭桥人\"，底层技能扎实但天花板取决于你是否能从\"拉网线\"进化到\"造架构\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "电子科技大学",
+        "北京邮电大学",
+        "西安电子科技大学"
+      ],
+      "tier_A": [
+        "华南理工大学",
+        "大连理工大学",
+        "南京邮电大学",
+        "重庆邮电大学",
+        "杭州电子科技大学",
+        "华中科技大学"
+      ],
+      "tier_B": [
+        "暨南大学",
+        "西南交通大学",
+        "哈尔滨工程大学",
+        "武汉理工大学",
+        "南京信息工程大学",
+        "桂林电子科技大学",
+        "成都信息工程大学"
+      ],
+      "tier_C_note": "全国278所开设院校中未列入上述档次的普通本科院校，如各地方理工类大学、师范类大学计算机学院等。对于中等分数段考生，C档院校中优选邮电类、电子类院校为佳。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

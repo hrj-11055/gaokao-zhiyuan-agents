@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.111828",
+    "updated_at": "2026-04-25T07:03:47.234793",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080702",
+    "name": "电子科学与技术",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "芯片国产化的核心引擎，技术壁垒高、薪资天花板高，但极吃数理功底和深造投入，名校光环加持明显。",
+    "radar": {
+      "market_return": 4.4,
+      "industry_outlook": 4.6,
+      "future_adaptability": 4.3,
+      "career_path": 3.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 4.29
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~95%",
+      "alignment_rate": "~78%",
+      "starting_salary": "7200–8600元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "芯片设计、半导体工艺开发、电磁场仿真等核心工作依赖物理规律和工程经验，AI可作为辅助工具（如EDA自动化），但无法替代底层物理建模和工艺创新。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "芯片国产化的核心引擎，技术壁垒高、薪资天花板高，但极吃数理功底和深造投入，名校光环加持明显。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "电子科技大学",
+        "西安电子科技大学",
+        "清华大学",
+        "北京大学",
+        "东南大学"
+      ],
+      "tier_A": [
+        "浙江大学",
+        "复旦大学",
+        "上海交通大学",
+        "南京大学",
+        "北京邮电大学",
+        "华中科技大学",
+        "西安交通大学",
+        "中国科学技术大学"
+      ],
+      "tier_B": [
+        "吉林大学",
+        "哈尔滨工业大学",
+        "北京理工大学",
+        "天津大学",
+        "西北工业大学",
+        "同济大学",
+        "武汉大学",
+        "北京航空航天大学",
+        "大连理工大学"
+      ],
+      "tier_C_note": "杭州电子科技大学、桂林电子科技大学、南京邮电大学、重庆邮电大学等电子信息特色院校，以及各省属综合性大学的电子科学与技术专业",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

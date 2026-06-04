@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.161994",
+    "updated_at": "2026-04-28T00:27:30.036695",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120106TK_保密管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家保密局\"定向培养\"的窄门专业，毕业直通体制内铁饭碗，但招生院校极少、路径高度锁定，不适合追求自由度的人。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 3.9,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.44
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "保密管理的核心工作涉及涉密信息管理、定密审查、安全策略制定、人员审查等，大量工作需要政治判断力和人为裁量，且涉密场景天然排斥AI工具介入。但基础的信息系统运维部分面临自动化替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家保密局\"定向培养\"的窄门专业，毕业直通体制内铁饭碗，但招生院校极少、路径高度锁定，不适合追求自由度的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "复旦大学",
+        "天津大学",
+        "中山大学"
+      ],
+      "tier_A": [
+        "北京交通大学",
+        "北京电子科技学院",
+        "战略支援部队信息工程大学"
+      ],
+      "tier_B": [
+        "杭州电子科技大学",
+        "中国海洋大学"
+      ],
+      "tier_C_note": "该专业无C档院校——全国仅8所高校开设，均有明确培养定位。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

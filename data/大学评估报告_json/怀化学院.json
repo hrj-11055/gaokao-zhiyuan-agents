@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.810340",
+    "updated_at": "2026-05-09T18:32:58.069616",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "怀化学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.59,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：怀化学院是湘西地区的“人才蓄水池”，它不生产学术大师，但大规模产出支撑基层运转的“社会齿轮”。\n*   **Ace（王牌优势）**：师范教育与艺术设计。其美术学院在湖南省内享有盛誉，毕业生在装饰设计、基础教育行业竞争力极强。\n*   **Vibe（文化特质）**：一种“坚韧的草根感”。学生普遍不浮躁，愿意从基层做起，这种气质在当前下行的就业环境中反而成了优势。\n*   **Risk（潜在风险）**：人才流失风险。随着周边城市（如常德、邵阳）高校的崛起，怀化学院在吸引高水平博士方面面临更激烈的竞争。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实主义",
+        "湘西门户",
+        "教资收割机",
+        "高铁大学",
+        "陆港先锋",
+        "艺术底蕴",
+        "拟更名"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

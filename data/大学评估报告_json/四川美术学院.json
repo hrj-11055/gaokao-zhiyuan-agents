@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.768768",
+    "updated_at": "2026-05-12T13:23:25.864695",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "四川美术学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.5,
+      "graduate_value": 4.0,
+      "location_advantage": 4.6,
+      "globalization": 3.6,
+      "student_empowerment": 4.2,
+      "brand_asset": 4.9
+    },
+    "weighted_score": 4.3,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "中央美术学院 (CAFA)",
+        "similarity": "同类院校",
+        "key_difference": "央美更具“庙堂之气”，强调国家叙事和学术正统；川美则更具“江湖之气”，强调个人表达和社会介入。"
+      },
+      {
+        "name": "中国美术学院 (CAA)",
+        "similarity": "同类院校",
+        "key_difference": "国美深耕东方学，极具文人气息；川美则更偏向当代性、实验性，视觉冲击力更强。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：中国西南艺术教育的“定海神针”，当代艺术创作的先锋高地。\n*   **Ace（王牌优势）**：油画、雕塑、工业设计。其油画系是“中国油画的摇篮”，工业设计是“西南工业的审美大脑”。\n*   **Vibe（文化特质）**：极度自由、野性、接地气。这里不培养温室里的花朵，只培养能在荒野中生长的艺术家。\n*   **Risk（潜在风险）**：艺术市场的波动对纯艺就业的影响；学术声誉在个别争议事件后的修复过程。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "中央美术学院 (CAFA)",
+          "similarity": "同类院校",
+          "key_difference": "央美更具“庙堂之气”，强调国家叙事和学术正统；川美则更具“江湖之气”，强调个人表达和社会介入。"
+        },
+        {
+          "name": "中国美术学院 (CAA)",
+          "similarity": "同类院校",
+          "key_difference": "国美深耕东方学，极具文人气息；川美则更偏向当代性、实验性，视觉冲击力更强。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "野性生长",
+        "废墟美学",
+        "赛博重庆",
+        "罗中立",
+        "涂鸦街",
+        "设计民工",
+        "艺术网红",
+        "自由意志",
+        "重口味",
+        "跨界"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

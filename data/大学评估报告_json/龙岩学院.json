@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.498391",
+    "updated_at": "2026-05-12T12:08:07.692415",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "龙岩学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.6,
+      "graduate_value": 2.9,
+      "location_advantage": 3.3,
+      "globalization": 2.4,
+      "student_empowerment": 3.1,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.82,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "三明学院",
+        "similarity": "同类院校",
+        "key_difference": "两校在办学规模和生源质量上长期处于同一梯队。但龙岩学院在 2024 年率先取得硕士点突破（马克思主义理论、机械、兽医），在办学层次上实现了关键性的“超车”。此外，龙岩学院背靠的产业资源（紫金矿业为全球矿业巨头）在资金支持和实习就业方面提供了比三明学院更强的支撑。"
+      },
+      {
+        "name": "宁德师范学院",
+        "similarity": "同类院校",
+        "key_difference": "宁德师范学院近年来受益于宁德时代（CATL）的崛起，在新能源相关学科上发展迅猛。相比之下，龙岩学院的优势在于传统制造业和现代农牧业，学科积淀更深，但在新兴产业的爆发力上略逊于宁德师范。"
+      },
+      {
+        "name": "武夷学院",
+        "similarity": "同类院校",
+        "key_difference": "武夷学院以旅游、茶学为特色，而龙岩学院的工科和农科属性更强。对于追求就业稳定性的学生而言，龙岩学院的机械和兽医专业在省内具有更强的不可替代性。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "龙岩学院（Longyan University）位于福建省龙岩市，是福建省属公办全日制普通本科高校。在 2023 年至 2025 年的评估周期内，该校迎来了建校史上最重要的里程碑——**2024 年正式获批为硕士学位授予单位**。这一转变标志着学校从单纯的本科教学型大学向教学研究型大学迈进。\n\n- **Identity（核心定位）**：深耕闽西、服务基层的应用型本科高校，是龙岩市唯一的本科院校。\n- **Ace（王牌优势）**：机械工程、兽医学、材料科学等学科与地方产业（如紫金矿业、龙净环保）结合极深，形成了“产教融合”的典型范式。\n- **Vibe（文化特质）**：根植闽西红土文化，具有强烈的艰苦奋斗色彩，学生群体普遍务实，校园氛围低调而不失进取。\n- **Risk（潜在风险）**：虽然实现了硕士点的突破，但高层次人才储备仍显不足，学科建设的深度和广度与省内顶尖高校相比仍有较大差距，且地理位置对省外高分生源的吸引力有限。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "三明学院",
+          "similarity": "同类院校",
+          "key_difference": "两校在办学规模和生源质量上长期处于同一梯队。但龙岩学院在 2024 年率先取得硕士点突破（马克思主义理论、机械、兽医），在办学层次上实现了关键性的“超车”。此外，龙岩学院背靠的产业资源（紫金矿业为全球矿业巨头）在资金支持和实习就业方面提供了比三明学院更强的支撑。"
+        },
+        {
+          "name": "宁德师范学院",
+          "similarity": "同类院校",
+          "key_difference": "宁德师范学院近年来受益于宁德时代（CATL）的崛起，在新能源相关学科上发展迅猛。相比之下，龙岩学院的优势在于传统制造业和现代农牧业，学科积淀更深，但在新兴产业的爆发力上略逊于宁德师范。"
+        },
+        {
+          "name": "武夷学院",
+          "similarity": "同类院校",
+          "key_difference": "武夷学院以旅游、茶学为特色，而龙岩学院的工科和农科属性更强。对于追求就业稳定性的学生而言，龙岩学院的机械和兽医专业在省内具有更强的不可替代性。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

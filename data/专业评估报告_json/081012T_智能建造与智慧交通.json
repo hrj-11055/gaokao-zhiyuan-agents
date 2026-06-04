@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.009321",
+    "updated_at": "2026-04-25T14:56:36.662205",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081012T_智能建造与智慧交通",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "土木交通的\"智能升级版\"，政策风口上人才缺口巨大，但2022年才设立，首批毕业生尚未出炉，一切皆为预期而非验证。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 4.0,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.68
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "虽然AI可辅助设计优化和数据分析，但核心工作涉及物理世界的现场施工管理、结构安全评估、交通系统运维，需要多源传感器数据融合与工程经验判断，完全替代可能性低。AI更多是赋能工具而非替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "土木交通的\"智能升级版\"，政策风口上人才缺口巨大，但2022年才设立，首批毕业生尚未出炉，一切皆为预期而非验证。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "山东大学（2025软科排名第1，齐鲁交通学院背书，\"智慧交通与智能建造\"微专业先行者）"
+      ],
+      "tier_A": [
+        "郑州大学（2023年由交通工程改建，师资24人含博导4人）",
+        "东北林业大学"
+      ],
+      "tier_B": [
+        "大连交通大学（依托轨道交通特色）",
+        "三明学院（福建省首批开设）",
+        "南华大学"
+      ],
+      "tier_C_note": "三江学院及其他近年新开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.532674",
+    "updated_at": "2026-05-09T16:33:35.235192",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "宝鸡文理学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.6,
+      "graduate_value": 2.7,
+      "location_advantage": 2.9,
+      "globalization": 2.2,
+      "student_empowerment": 2.8,
+      "brand_asset": 2.7
+    },
+    "weighted_score": 2.66,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "宝鸡文理学院作为陕西省属重点建设的本科院校，正处于从“学院”向“大学”转型的关键战略期。该校的历史底蕴深厚，最早可追溯至 1958 年创办的宝鸡大学，后历经多次合并与更名，形成了目前以师范教育为根基、理学与工学为两翼的学科布局。在学术表现上，学校展现出了极强的“单点突破”能力，其化学与材料科学依托地方产业优势，在 ESI 全球排名中表现亮眼，这在同类地方二本院校中实属罕见。\n\n从生源与就业的角度看，宝鸡文理学院是典型的“务实型”高校。其生源主要集中在陕西省内及周边省份，录取分数线在二本批次中具有较强的竞争力。毕业生去向呈现出明显的“双轨制”特征：一方面，师范类毕业生在关中地区乃至西北地区的基层教育系统中拥有极高的认可度；另一方面，非师范类毕业生，尤其是材料、机械类专业，与宝鸡当地的“中国钛谷”产业集群形成了紧密的供需对接。\n\n然而，学校的发展也面临着显著的外部挑战。首先是西安高校群的“虹吸效应”，导致高层次人才引进和优质生源获取面临巨大压力；其次是城市能级的限制，宝鸡作为三线城市，在信息流、资金流以及高端实习机会上与省会城市存在天然差距。更名“宝鸡大学”虽已列入规划并多次推进，但硬件设施的升级与学科结构的优化仍需时间沉淀。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

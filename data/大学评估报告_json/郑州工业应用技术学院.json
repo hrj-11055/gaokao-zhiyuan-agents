@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.796168",
+    "updated_at": "2026-05-11T17:42:44.447207",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "郑州工业应用技术学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.0,
+      "graduate_value": 2.6,
+      "location_advantage": 3.5,
+      "globalization": 1.5,
+      "student_empowerment": 2.2,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.44,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "考勤制度",
+        "description": "查寝、查课较为频繁，部分学院实行准军事化管理或晨跑制度。"
+      },
+      {
+        "category": "学风建设",
+        "description": "由于生源基础相对薄弱，学校通过严格的管理来保证教学秩序，这种“高中化”的大学生活虽然被部分学生吐槽，但在客观上保证了毕业率和就业率。\n\n### 5.2 基础设施与生活品质\n\n**校区分布：**\n- **东校区**：老校区，文化底蕴较深，设施相对陈旧但生活气息浓厚。\n- **西校区**：新校区，建筑风格现代，宿舍条件优越（多为四人间、独卫、空调、热水器齐全）。\n\n**生活配套：**\n- **食堂**：锦绣食府等食堂在学生中口碑尚可，价格亲民。\n- **周边环境**：新郑大学城消费水平低，校外小吃街、电影院等娱乐设施齐全，能够满足基本社交需求。\n\n### 5.3 品牌资产与文化印记\n\n| 排名机构 | 排名 | 评价 |\n|---------|------|------|\n| 校友会 2024 | 民办大学第 33 名 | 处于全国民办高校前列 |\n| 软科 2024 | 民办高校 60+ | 侧重于科研与生源质量评估 |\n\n**社会声誉：**\n在河南省内，提及“郑工学院”或“华信”，用人单位的第一反应通常是“好用、听话、踏实”。这种品牌印记虽然缺乏高端学术色彩，但在就业市场上却是一种极具价值的“实用主义标签”。\n\n### 5.4 已知风险点"
+      },
+      {
+        "category": "举办者变更的行政影响",
+        "description": "2026 年申请由中原华信商贸集团变更为中原华信控股集团，虽然属于内部行政调整，但需关注后续资金投入的持续性。"
+      },
+      {
+        "category": "学费压力",
+        "description": "作为民办高校，学费普遍在 15,000-18,000 元/年，对于农村家庭而言是一笔不小的开支。"
+      },
+      {
+        "category": "学历歧视风险",
+        "description": "在考公、考编及大型国企招聘中，民办本科身份偶尔会遭遇隐形门槛。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "郑州工业应用技术学院是一所典型的**“就业导向型”**民办本科。它成功地在中原腹地构建了一个以工科和医学为核心的教育生态系统。\n\n- **核心竞争力**：在于其与举办方产业（华信医疗）以及周边产业（港区制造）的深度绑定。这种绑定让学生在入校之初就拥有了清晰的职业画像。\n- **主要矛盾**：是学生日益增长的学历提升需求与学校相对薄弱的学术支撑能力之间的矛盾。\n- **未来展望**：随着硕士学位授予单位建设的推进，该校有望在未来 3-5 年内实现办学层次的质变。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "中原制造",
+        "华信医疗",
+        "港区后花园",
+        "考研逆袭",
+        "务实主义",
+        "新郑大学城"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

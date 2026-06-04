@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.640079",
+    "updated_at": "2026-05-09T19:06:19.474608",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "四川轻化工大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 3.2,
+      "location_advantage": 3.5,
+      "globalization": 2.5,
+      "student_empowerment": 3.0,
+      "brand_asset": 3.1
+    },
+    "weighted_score": 3.04,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "三江新",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "西华大学",
+        "similarity": "同类院校",
+        "key_difference": "西华大学地处成都，在综合声誉、地理位置和考公氛围上占优；但川轻化在"
+      },
+      {
+        "name": "成都理工大学",
+        "similarity": "同类院校",
+        "key_difference": "成都理工在资源勘查、地质等领域是国家队，且拥有“双一流”头衔；川轻化在录取分数上更具亲和力，且在食品酿造领域的专业性更强。"
+      },
+      {
+        "name": "西南科技大学",
+        "similarity": "同类院校",
+        "key_difference": "西南科大在国防科技和材料领域有优势，而川轻化则在民用轻化工领域深耕，两者的行业赛道基本不重叠。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "四川轻化工大学（以下简称“川轻化”）是一所典型的“行业特色型”省属重点大学。其核心竞争力并非源于综合排名或高端学术论文，而是源于其与中国白酒产业、盐化工产业以及新兴动力电池产业的深度“血缘”绑定。学校的历史可追溯至 1965 年华东化工学院（现华东理工大学）的部分内迁，这种“三线建设”的基因赋予了学校深厚的工科底蕴。\n\n在当前的就业环境下，川轻化展现出了极强的“抗周期性”。当互联网、金融等行业缩招时，以五粮液、泸州老窖为代表的白酒巨头，以及以宁德时代宜宾基地为代表的新能源产业，为该校毕业生提供了稳定的吸纳空间。学校的定位非常清晰：不追求全才，而是在细分赛道（如酿酒工程、过程装备）做到行业顶尖。\n\n然而，挑战同样明显。学校在省会成都缺乏实质性的主校区，这在一定程度上限制了其对高端人才（尤其是青年博士）的吸引力。同时，学科结构高度依赖传统制造业，在人工智能、量子计算等前沿领域的布局相对滞后。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "西华大学",
+          "similarity": "同类院校",
+          "key_difference": "西华大学地处成都，在综合声誉、地理位置和考公氛围上占优；但川轻化在"
+        },
+        {
+          "name": "成都理工大学",
+          "similarity": "同类院校",
+          "key_difference": "成都理工在资源勘查、地质等领域是国家队，且拥有“双一流”头衔；川轻化在录取分数上更具亲和力，且在食品酿造领域的专业性更强。"
+        },
+        {
+          "name": "西南科技大学",
+          "similarity": "同类院校",
+          "key_difference": "西南科大在国防科技和材料领域有优势，而川轻化则在民用轻化工领域深耕，两者的行业赛道基本不重叠。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.806093",
+    "updated_at": "2026-05-12T09:58:15.070707",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "大连海洋大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.37,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "大连海洋大学（Dalian Ocean University）作为中国北方地区唯一的海洋与水产特色多科性大学，其历史底蕴深厚，前身为大连水产学院，曾长期隶属于农业部。在当前的“双一流”建设背景下，虽然该校未入选国家级“双一流”名单，但其水产学科在教育部第四轮学科评估中获评 A+，与中国海洋大学、上海海洋大学并列全国顶尖。这一学术地位确保了其在北方黄渤海区域海洋资源开发、水产养殖及海洋食品加工领域的绝对话语权。\n\n从学校的整体生态来看，大连海洋大学呈现出明显的“行业特色院校”特征。其优势资源高度向水产、海洋科学、海洋工程等核心领域倾斜。对于学生而言，这意味着如果你选择了该校的王牌专业，你将获得极高的行业认可度和相对稳固的就业渠道；但如果你选择了非特色专业（如人文社科类），则可能面临资源支持力度不足、品牌溢价较低的尴尬。\n\n近年来，学校在校区建设和内部治理上面临一定挑战。瓦房店校区（渤海校区）与主校区（黄海校区）之间的资源分配、地理距离以及校园环境的差异，是学生群体中讨论热度最高的话题。同时，校级领导层的廉政风险事件在一定程度上影响了学校的社会声誉，但并未动摇其科研核心竞争力和行业基本盘。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

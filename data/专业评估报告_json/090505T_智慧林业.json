@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.160327",
+    "updated_at": "2026-04-26T13:01:32.977686",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090505T_智慧林业",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"林学+代码的交叉新物种，踩中双碳风口但市场极小，学会编程才是出路。\"",
+    "radar": {
+      "market_return": 2.7,
+      "industry_outlook": 3.9,
+      "future_adaptability": 3.4,
+      "career_path": 2.9,
+      "education_resources": 3.2,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.24
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "智慧林业核心工作涉及野外实地调查、多源数据融合分析、生态系统建模——这些任务需要跨领域综合判断（生态学+数据科学），且大量工作场景（森林深处、偏远山区）难以被纯 AI 系统完全替代。但基础数据处理和报告撰写部分存在被 AI 工具辅助/替代的风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"林学+代码的交叉新物种，踩中双碳风口但市场极小，学会编程才是出路。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京林业大学（A+，全国第 1，院士领衔）",
+        "东北林业大学（拔尖人才成栋班，985 优势学科平台）"
+      ],
+      "tier_A": [
+        "西北农林科技大学（A+，985 高校）",
+        "北京林业大学（母学科林学 A+，科研实力顶级，虽尚未独立开设但资源可共享）"
+      ],
+      "tier_B": [
+        "中南林业科技大学",
+        "福建农林大学",
+        "河南农业大学"
+      ],
+      "tier_C_note": "江西农业大学、西南林业大学、内蒙古农业大学、山东农业工程学院、湖北科技学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

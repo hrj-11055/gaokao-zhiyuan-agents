@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.996948",
+    "updated_at": "2026-04-25T05:46:44.736043",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080416T_复合材料成型工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"新材料赛道的隐形冠军，蹭着航空航天和新能源的政策红利起飞，但开设院校少、行业圈子窄，适合能耐住寂寞搞工艺的硬核工科生。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.3
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "复合材料成型工艺涉及大量物理参数调试（温度、压力、时间、纤维铺层角度）、缺陷检测和实操经验积累，其中产线实操和工艺调试环节短期难以被AI完全替代。但AI+太赫兹无损检测等智能检测方向正在融合，部分质量检测岗位存在被AI辅助替代的风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"新材料赛道的隐形冠军，蹭着航空航天和新能源的政策红利起飞，但开设院校少、行业圈子窄，适合能耐住寂寞搞工艺的硬核工科生。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工业大学",
+        "北京航空航天大学"
+      ],
+      "tier_A": [
+        "武汉理工大学",
+        "东华大学（注：东华开设的是\"复合材料与工程\"非成型工程，但方向最接近）"
+      ],
+      "tier_B": [
+        "上海第二工业大学（该专业校友会排名第一）",
+        "赣南师范大学"
+      ],
+      "tier_C_note": "其他开设复合材料成型工程的普通本科院校 [待核实完整名单]",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.930461",
+    "updated_at": "2026-04-23T19:51:31.588324",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050217",
+    "name": "马来语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "乘着\"一带一路\"东风的窄门专业，全国仅9所高校开设，毕业生供需紧张，但高度依赖东南亚地缘经济走势，市场容量天花板明显。",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 3.8,
+      "future_adaptability": 2.5,
+      "career_path": 2.6,
+      "education_resources": 2.4,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.17
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础翻译和文本处理正被AI工具（Google Translate、DeepL）快速蚕食，但涉及伊斯兰文化适配、商务谈判语境理解、同声传译等需要深层文化感知的场景，AI短期内难以替代。同时，马来语语料库规模远小于英/日语，AI马来语模型质量偏低，这在一定程度上保护了人力翻译市场。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "乘着\"一带一路\"东风的窄门专业，全国仅9所高校开设，毕业生供需紧张，但高度依赖东南亚地缘经济走势，市场容量天花板明显。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学",
+        "广东外语外贸大学"
+      ],
+      "tier_A": [
+        "中国传媒大学",
+        "广西民族大学"
+      ],
+      "tier_B": [
+        "天津外国语大学",
+        "四川外国语大学",
+        "云南大学",
+        "西安外国语大学"
+      ],
+      "tier_C_note": "成都外国语学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

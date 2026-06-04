@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.928800",
+    "updated_at": "2026-04-23T13:15:19.243176",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050250",
+    "name": "冰岛语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "超稀缺的北欧\"孤星语种\"，全国仅北外独家开设，岗位少而精，非顶尖院校+复合能力者慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.5,
+      "career_path": 2.2,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.9
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "冰岛语使用人口仅约35万，AI训练语料极度匮乏，通用翻译引擎（如Google翻译）对冰岛语支持薄弱，短期内AI难以替代人工翻译。但长文本通用翻译正在被AI蚕食。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "超稀缺的北欧\"孤星语种\"，全国仅北外独家开设，岗位少而精，非顶尖院校+复合能力者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（全国唯一开设冰岛语本科的高校，省级一流专业，95%赴冰岛大学交换率）"
+      ],
+      "tier_A": [
+        "北京大学（外国语言文学A+，北欧研究资源丰富）",
+        "上海外国语大学（外国语言文学A+）"
+      ],
+      "tier_B": [
+        "广东外语外贸大学",
+        "北京语言大学",
+        "黑龙江大学（北欧语言研究传统）"
+      ],
+      "tier_C_note": "暂无其他院校实际开设冰岛语本科专业",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

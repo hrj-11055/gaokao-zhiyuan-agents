@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.138746",
+    "updated_at": "2026-04-26T02:34:09.686424",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090101",
+    "name": "农学",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "国策加持、政策风口明确，但起薪偏低、地域依赖强，属于\"耐得住寂寞才等得到花开\"的长期主义专业。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.23
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "田间复杂环境下的实际操作判断（如病害诊断、土壤状态评估）、育种材料筛选的实验经验、基层农技推广中的人际沟通能力，均需要实地经验和直觉判断，AI短期内难以完全替代。但单纯的数据分析和文献综述类工作有被AI辅助的趋势。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国策加持、政策风口明确，但起薪偏低、地域依赖强，属于\"耐得住寂寞才等得到花开\"的长期主义专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学",
+        "南京农业大学"
+      ],
+      "tier_A": [
+        "浙江大学",
+        "华中农业大学",
+        "西北农林科技大学",
+        "华南农业大学",
+        "四川农业大学"
+      ],
+      "tier_B": [
+        "东北农业大学",
+        "沈阳农业大学",
+        "河南农业大学",
+        "湖南农业大学",
+        "山东农业大学",
+        "河北农业大学",
+        "福建农林大学",
+        "云南农业大学",
+        "广西大学"
+      ],
+      "tier_C_note": "全国77所开设农学专业的地方性本科院校，如青岛农业大学、江西农业大学、新疆农业大学、石河子大学、西南大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

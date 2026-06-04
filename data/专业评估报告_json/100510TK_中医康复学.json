@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.118213",
+    "updated_at": "2026-04-27T02:29:02.497941",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100510TK_中医康复学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "踩在老龄化风口上的小众赛道，能考执医证是核心优势，但全国仅 11 所院校开设、岗位供给极稀缺，适合笃定走中医康复路线的长期主义者。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.38
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "中医康复的核心工作——针灸手法、推拿触诊、个性化辨证施治——高度依赖手部精细操作和临床经验判断，AI/机器人短期内无法替代\"手感\"和\"患者互动\"。但标准化评估量表编制、康复方案设计辅助等环节可能被 AI 工具辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "踩在老龄化风口上的小众赛道，能考执医证是核心优势，但全国仅 11 所院校开设、岗位供给极稀缺，适合笃定走中医康复路线的长期主义者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京中医药大学",
+        "上海中医药大学"
+      ],
+      "tier_A": [
+        "南京中医药大学",
+        "浙江中医药大学",
+        "天津中医药大学"
+      ],
+      "tier_B": [
+        "成都中医药大学",
+        "湖南中医药大学",
+        "黑龙江中医药大学",
+        "广西中医药大学"
+      ],
+      "tier_C_note": "其余开设中医康复学的普通本科院校（全国共约 11 所）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.218630",
+    "updated_at": "2026-04-25T19:40:26.594418",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082001",
+    "name": "航空航天工程",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "造火箭造飞机的硬核工科，国家战略背书、就业稳如老狗，但高度依赖名校学历和深造读研，普通院校性价比低，\"航天梦\"得有实力托底。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 4.08
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~93%",
+      "alignment_rate": "",
+      "starting_salary": "10,000–14,700元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "航空航天工程涉及物理实验验证、复杂系统工程集成、极端环境适应性设计等高度依赖实体实践的环节，AI可辅助仿真和设计优化（生成式AI已缩短飞行器设计周期50%），但无法替代物理试验和工程决策。核心技能如气动分析、结构力学、推进系统设计短期不易被AI替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "造火箭造飞机的硬核工科，国家战略背书、就业稳如老狗，但高度依赖名校学历和深造读研，普通院校性价比低，\"航天梦\"得有实力托底。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京航空航天大学",
+        "西北工业大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_A": [
+        "南京航空航天大学",
+        "国防科技大学",
+        "清华大学",
+        "上海交通大学",
+        "北京理工大学"
+      ],
+      "tier_B": [
+        "北京大学",
+        "中山大学",
+        "电子科技大学",
+        "重庆大学",
+        "沈阳航空航天大学",
+        "南昌航空大学",
+        "中国民航大学"
+      ],
+      "tier_C_note": "北华航天工业学院、西安航空学院、桂林航天工业学院、郑州航空工业管理学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.056512",
+    "updated_at": "2026-04-25T18:36:53.657927",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081802",
+    "name": "交通工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "基建大国支撑的硬核工科，传统道桥设计增长放缓，但智慧交通转型正打开第二增长曲线——前提是你要扛得住数学和力学。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.3,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.3,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.26
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~88%",
+      "alignment_rate": "~60%",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "交通流仿真、信号优化、数据统计分析等重复性工作正被AI工具辅助甚至替代；但现场勘测、复杂道路线形设计、政策协调、多利益方博弈等需要人类判断的核心环节仍难以自动化。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "基建大国支撑的硬核工科，传统道桥设计增长放缓，但智慧交通转型正打开第二增长曲线——前提是你要扛得住数学和力学。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东南大学",
+        "西南交通大学",
+        "同济大学"
+      ],
+      "tier_A": [
+        "北京交通大学",
+        "北京航空航天大学",
+        "长安大学",
+        "哈尔滨工业大学",
+        "中南大学",
+        "武汉理工大学"
+      ],
+      "tier_B": [
+        "大连海事大学",
+        "长沙理工大学",
+        "重庆交通大学",
+        "兰州交通大学",
+        "华东交通大学",
+        "石家庄铁道大学",
+        "上海海事大学",
+        "南京航空航天大学"
+      ],
+      "tier_C_note": "各地方交通类院校及普通本科高校，如山东理工大学、青岛理工大学、大连交通大学、河南城建学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

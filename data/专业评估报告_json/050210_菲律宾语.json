@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.917451",
+    "updated_at": "2026-04-23T19:13:39.340312",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050210",
+    "name": "菲律宾语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "\"一带一路上的冷门利器，市场极小但竞争也极小，'语言+X'复合型人才是唯一出路，纯靠翻译活不下去。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 2.8,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "菲律宾语以他加禄语为基础，语法结构相对规则，AI翻译（如DeepL、Google Translate）对他加禄语的支持已日趋成熟。纯翻译岗位面临AI替代压力。但跨文化谈判、外派管理、情感情境沟通等场景仍需人类语言能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"一带一路上的冷门利器，市场极小但竞争也极小，'语言+X'复合型人才是唯一出路，纯靠翻译活不下去。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学"
+      ],
+      "tier_A": [
+        "北京外国语大学"
+      ],
+      "tier_B": [
+        "广东外语外贸大学",
+        "西安外国语大学"
+      ],
+      "tier_C_note": "湖南外国语职业学院（应用外语-菲律宾语专科层次）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

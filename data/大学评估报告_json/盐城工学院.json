@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.652329",
+    "updated_at": "2026-05-08T09:41:59.991756",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "盐城工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.03,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "常州工学院",
+        "similarity": "同类院校",
+        "key_difference": "两校同为地方工科院校。常州工学院得益于常州更密集的智能制造产业群，实习机会更近；但盐城工学院在学科层次（ESI排名、硕士点数量）和行业背景（原建材部直属）上略胜一筹，学术天花板更高。"
+      },
+      {
+        "name": "江苏科技大学（张家港校区/苏州理工）",
+        "similarity": "同类院校",
+        "key_difference": "江科大本部实力更强，但盐工院作为独立建制的公办本科，在校园资源完整度、校友网络集中度以及盐城本地的政商资源对接上，比异地校区更具优势。"
+      },
+      {
+        "name": "盐城师范学院",
+        "similarity": "同类院校",
+        "key_difference": "两校虽同处盐城，但“赛道”完全不同。盐师院侧重基础学科与教育人才培养，考编率高；盐工院侧重应用技术与工程实践，进厂、进院、进名企的比例更高。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "盐城工学院（Yancheng Institute of Technology）是一所典型的“行业背景深厚、地方支撑强劲”的应用型本科高校。作为原国家建材部直属院校，学校在材料、机械、土木等传统工科领域积淀了扎实的学术底蕴。在当前国家强调“新质生产力”与“制造业回归”的大背景下，盐城工学院凭借与盐城本地汽车、新能源、环保装备等千亿级产业集群的深度耦合，展现出远超其综合排名的就业韧性。\n\n从学术维度看，学校正处于从“教学型”向“教学研究型”转型的关键期。虽然目前尚未取得博士学位授予权，但已列入江苏省博士学位授予立项建设单位，且拥有4个ESI全球前1%学科，这在同类省属地方高校中表现突出。其学科建设逻辑清晰，即“守住建材老本行，开拓新能源新赛道”。\n\n从生源与就业维度看，盐城工学院是江苏省内物理组考生的“性价比之选”。其毕业生在长三角建筑行业、汽车产业链及电力系统具有较高的品牌辨识度。学校推行的“卓越工程师教育培养计划”使得学生在动手能力和工程实践上具有明显优势，这种“好用、耐用、务实”的毕业生画像，使其在就业市场上长期保持竞争力。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "常州工学院",
+          "similarity": "同类院校",
+          "key_difference": "两校同为地方工科院校。常州工学院得益于常州更密集的智能制造产业群，实习机会更近；但盐城工学院在学科层次（ESI排名、硕士点数量）和行业背景（原建材部直属）上略胜一筹，学术天花板更高。"
+        },
+        {
+          "name": "江苏科技大学（张家港校区/苏州理工）",
+          "similarity": "同类院校",
+          "key_difference": "江科大本部实力更强，但盐工院作为独立建制的公办本科，在校园资源完整度、校友网络集中度以及盐城本地的政商资源对接上，比异地校区更具优势。"
+        },
+        {
+          "name": "盐城师范学院",
+          "similarity": "同类院校",
+          "key_difference": "两校虽同处盐城，但“赛道”完全不同。盐师院侧重基础学科与教育人才培养，考编率高；盐工院侧重应用技术与工程实践，进厂、进院、进名企的比例更高。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

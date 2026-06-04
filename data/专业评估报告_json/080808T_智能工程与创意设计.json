@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.115354",
+    "updated_at": "2026-04-25T11:21:16.031813",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080808T_智能工程与创意设计",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "清华首创的\"工程+设计+AI\"交叉先锋，赛道新颖、天花板高，但全国仅10所院校开设、就业数据近乎空白，属于\"赌赛道\"型专业。",
+    "radar": {
+      "market_return": 3.3,
+      "industry_outlook": 4.2,
+      "future_adaptability": 4.0,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.6
+    },
+    "weighted_score": 3.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "核心技能为\"技术理解+创意审美+用户洞察\"的复合能力。AI可辅助建模和渲染（如Midjourney/Stable Diffusion），但无法替代对用户需求的深层理解、跨学科整合创新和工程实现中的判断力。具备AI工具应用能力的设计师反而会获得竞争优势。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "清华首创的\"工程+设计+AI\"交叉先锋，赛道新颖、天花板高，但全国仅10所院校开设、就业数据近乎空白，属于\"赌赛道\"型专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学（新雅书院CDIE，三院联合培养，国家级一流本科专业）"
+      ],
+      "tier_A": [
+        "中国传媒大学",
+        "广州美术学院"
+      ],
+      "tier_B": [
+        "北京服装学院",
+        "山东工艺美术学院"
+      ],
+      "tier_C_note": "成都锦城学院、郑州财经学院、河北传媒学院、绵阳城市学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

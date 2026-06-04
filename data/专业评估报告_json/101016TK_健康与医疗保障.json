@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.932647",
+    "updated_at": "2026-04-27T06:13:37.535934",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "101016TK_健康与医疗保障",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策催生的\"新医科\"交叉专业，背靠万亿大健康赛道，但首批招生仅两校、零届毕业生，就业数据完全空白，属于\"前景可期、确定性极低\"的试水型专业。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.28
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "医保政策设计与评估、保险精算与核保理赔、卫生经济分析等工作涉及复杂规则体系和人际协商，AI可辅助数据分析但不能替代政策决策和人际沟通。但部分数据录入、基础审核类岗位存在被AI替代的风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策催生的\"新医科\"交叉专业，背靠万亿大健康赛道，但首批招生仅两校、零届毕业生，就业数据完全空白，属于\"前景可期、确定性极低\"的试水型专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（专业尚未有学科评估或长期培养积累）"
+      ],
+      "tier_A": [
+        "重庆医科大学（医学底蕴深厚，临床医学实力强，附属医院资源丰富，地处直辖市医保体系较完善）"
+      ],
+      "tier_B": [
+        "黑龙江中医药大学（中医药特色，中西医结合医保领域有差异化优势）"
+      ],
+      "tier_C_note": "暂无（后续获批开设的普通本科院校可归入此档）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

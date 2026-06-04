@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.066630",
+    "updated_at": "2026-04-23T01:03:25.705200",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050103",
+    "name": "汉语国际教育",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "国际中文教育的旗帜专业，国家战略加持但市场化薪资偏低，硕士学历是分水岭，非名校+不深造者慎入。",
+    "radar": {
+      "market_return": 2.7,
+      "industry_outlook": 3.3,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 3.2,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 已能自动批改语法、纠正发音、生成学情分析（同济大学孙宜学教授，2025），但语言教学中的情感共鸣、跨文化理解、临场应变、文化浸润等核心环节 AI 无法替代。AI 定位为\"教师助手\"而非替代者，但低端、标准化的语言教学岗位确实面临 AI 工具挤压。来源：同济大学新闻网、光明网、中国社会科学网等 2024–2025 年多篇学术评论。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国际中文教育的旗帜专业，国家战略加持但市场化薪资偏低，硕士学历是分水岭，非名校+不深造者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京语言大学",
+        "华东师范大学"
+      ],
+      "tier_A": [
+        "山东大学",
+        "南京大学",
+        "武汉大学",
+        "四川大学",
+        "南开大学",
+        "暨南大学",
+        "首都师范大学",
+        "福建师范大学",
+        "中央民族大学",
+        "北京外国语大学",
+        "上海外国语大学"
+      ],
+      "tier_B": [
+        "苏州大学",
+        "河南大学",
+        "陕西师范大学",
+        "中国传媒大学",
+        "华中科技大学",
+        "上海师范大学",
+        "浙江师范大学",
+        "江西师范大学",
+        "广东外语外贸大学",
+        "广西民族大学",
+        "天津师范大学"
+      ],
+      "tier_C_note": "全国其余约 120+ 所开设汉语国际教育专业的普通本科院校（如各省级师范大学、地方综合性大学等）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

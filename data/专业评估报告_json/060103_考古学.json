@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.960690",
+    "updated_at": "2026-04-24T22:46:36.455531",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "060103",
+    "name": "考古学",
+    "category": "历史学",
+    "recommendation_level": "yellow",
+    "summary": "极度垂直的\"情怀专业\"，国家战略托底带来确定性，但薪资天花板低、深造刚性高，非真爱慎入。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 3.6,
+      "future_adaptability": 3.2,
+      "career_path": 2.6,
+      "education_resources": 3.0,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.03
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "~70%",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "田野考古的实体操作（发掘、地层辨识、器物修复）需要空间感知与动手能力，AI难以替代；但文献整理、初步分类、数据录入等辅助性工作可能被AI逐步接管。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度垂直的\"情怀专业\"，国家战略托底带来确定性，但薪资天花板低、深造刚性高，非真爱慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "西北大学",
+        "吉林大学"
+      ],
+      "tier_A": [
+        "四川大学",
+        "山东大学",
+        "南京大学",
+        "郑州大学"
+      ],
+      "tier_B": [
+        "浙江大学",
+        "武汉大学",
+        "复旦大学",
+        "中山大学",
+        "首都师范大学",
+        "中国社会科学院大学"
+      ],
+      "tier_C_note": "山西大学、西安文理学院、安徽大学、重庆师范大学、景德镇陶瓷大学等开设考古学相关专业的省属院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.702903",
+    "updated_at": "2026-05-11T18:22:10.892681",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "郑州健康学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.3,
+      "graduate_value": 3.0,
+      "location_advantage": 3.6,
+      "globalization": 2.0,
+      "student_empowerment": 2.5,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 2.81,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "郑州二七",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：河南民办医学教育的领航者，新晋应用型健康本科院校。\n*   **Ace（王牌优势）**：护理与康复专业具有极高的行业渗透率，实训设施国家级水平，就业渠道极其下沉且稳固。\n*   **Vibe（文化特质）**：务实、严谨、甚至略显枯燥。这是一所典型的“技能改变命运”的学校。\n*   **Risk（潜在风险）**：升本初期的教学质量波动；民办本科高昂学费与基层医疗相对较低起薪之间的矛盾；科研积淀薄弱可能影响未来硕士点申请。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "基层医护摇篮",
+        "康复界黑马",
+        "郑州马寨记忆",
+        "修武新地标",
+        "考证狂人",
+        "医德先行",
+        "升本逆袭"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

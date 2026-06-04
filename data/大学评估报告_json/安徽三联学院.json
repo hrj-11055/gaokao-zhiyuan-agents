@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.715993",
+    "updated_at": "2026-05-11T19:13:50.700458",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "安徽三联学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 3.8,
+      "location_advantage": 4.5,
+      "globalization": 2.0,
+      "student_empowerment": 3.2,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.215,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：一所以工科见长、产教深度融合的民办应用型本科。它不是学术殿堂，而是合肥工业体系的“高级技师与工程师摇篮”。\n*   **Ace（王牌优势）**：交通运输与电子信息。这两个专业不仅有省级一流头衔，更有国家级科研平台支撑，毕业生在长三角交通行业有极高的认可度。\n*   **Vibe（文化特质）**：极度务实。学校的一切活动几乎都围绕“就业”展开，校园氛围虽然缺乏一些浪漫主义色彩，但充满了对职业技能的尊重。\n*   **Risk（潜在风险）**：学术诚信监管需加强（如2026年通报的毕设抄袭事件）；双校区资源分配不均可能导致学生满意度分化。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

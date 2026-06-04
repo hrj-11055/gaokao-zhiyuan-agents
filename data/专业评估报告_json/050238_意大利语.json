@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.913796",
+    "updated_at": "2026-04-23T12:16:07.813807",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050238",
+    "name": "意大利语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "小众语种的\"窄门\"：就业赛道少但竞争也小，AI翻译冲击下，纯语言壁垒正在瓦解，\"语言+X\"复合能力才是活路。",
+    "radar": {
+      "market_return": 2.3,
+      "industry_outlook": 2.5,
+      "future_adaptability": 2.0,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI翻译工具（DeepL、Google Translate等）在意大利语等欧洲语言上的翻译质量已相当高，基础笔译和日常口译任务被替代风险大。高端同声传译、文学翻译、涉及文化细微差别的场景仍有不可替代性，但这些岗位极少。被誉为\"翻译界哈佛\"的美国明德大学蒙特雷国际研究学院已宣布逐步关停翻译研究生项目，侧面印证行业冲击。央视2025年1月专题报道指出，AI翻译软件的高效率正在深刻影响外语专业就业。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众语种的\"窄门\"：就业赛道少但竞争也小，AI翻译冲击下，纯语言壁垒正在瓦解，\"语言+X\"复合能力才是活路。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "北京外国语大学",
+        "上海外国语大学"
+      ],
+      "tier_A": [
+        "对外经济贸易大学",
+        "南开大学",
+        "广东外语外贸大学",
+        "中国传媒大学"
+      ],
+      "tier_B": [
+        "西安外国语大学",
+        "天津外国语大学",
+        "四川外国语大学",
+        "大连外国语大学",
+        "北京第二外国语学院"
+      ],
+      "tier_C_note": "浙江外国语学院、黑龙江大学、河北科技师范学院、吉林外国语大学、重庆外语外事学院、浙江越秀外国语学院、成都外国语学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

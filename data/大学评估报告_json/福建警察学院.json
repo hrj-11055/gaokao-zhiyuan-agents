@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.874270",
+    "updated_at": "2026-05-12T12:11:14.904120",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "福建警察学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.0,
+      "graduate_value": 4.8,
+      "location_advantage": 4.0,
+      "globalization": 1.5,
+      "student_empowerment": 1.5,
+      "brand_asset": 4.2
+    },
+    "weighted_score": 3.585,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "中国人民公安大学（公大）",
+        "similarity": "同类院校",
+        "key_difference": "公大是“警中清华”，面向全国分配，竞争更激烈，学术地位更高；闽警院则深耕福建，在省内基层的根基更深，对于想留在福建工作的考生，闽警院的“性价比”甚至更高。"
+      },
+      {
+        "name": "福建师范大学/福州大学",
+        "similarity": "同类院校",
+        "key_difference": "这两者提供的是多样化的大学生活和多路径的职业选择；闽警院提供的是单一但极度稳定的职业闭环。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "-   **Identity（核心定位）**：福建省公安系统的“人才蓄水池”与“智力后盾”。\n-   **Ace（王牌优势）**：无与伦比的就业确定性。在考公竞争白热化的今天，闽警院公安专业通过联考机制，为学生提供了一条通往公务员编制的“高速公路”。\n-   **Vibe（文化特质）**：硬核、纪律、奉献。校园生活是汗水与规矩的交织，适合渴望稳定、有正义感且能忍受单调生活的学生。\n-   **Risk（潜在风险）**：非公安专业的“边缘化”风险。如果未能进入公安类专业，该校的吸引力将大幅下降，学生需面临严酷的社会化竞争。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "中国人民公安大学（公大）",
+          "similarity": "同类院校",
+          "key_difference": "公大是“警中清华”，面向全国分配，竞争更激烈，学术地位更高；闽警院则深耕福建，在省内基层的根基更深，对于想留在福建工作的考生，闽警院的“性价比”甚至更高。"
+        },
+        {
+          "name": "福建师范大学/福州大学",
+          "similarity": "同类院校",
+          "key_difference": "这两者提供的是多样化的大学生活和多路径的职业选择；闽警院提供的是单一但极度稳定的职业闭环。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

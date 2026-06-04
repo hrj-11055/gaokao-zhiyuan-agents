@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.074627",
+    "updated_at": "2026-04-26T00:22:47.319659",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082901",
+    "name": "安全工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "政策刚需托底的\"安全底线\"专业，就业稳、证值钱，但工作环境偏苦、晋升靠考证，不是坐办公室的命。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.0,
+      "career_path": 3.5,
+      "education_resources": 3.3,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "现场安全巡查、事故调查、应急预案制定等核心工作需要实地判断和人际协调，AI可辅助监测预警但难以替代现场决策和安全执法。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策刚需托底的\"安全底线\"专业，就业稳、证值钱，但工作环境偏苦、晋升靠考证，不是坐办公室的命。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国科学技术大学",
+        "中国矿业大学",
+        "中南大学"
+      ],
+      "tier_A": [
+        "中国矿业大学（北京）",
+        "北京理工大学",
+        "北京科技大学",
+        "东北大学",
+        "重庆大学",
+        "武汉理工大学",
+        "南京工业大学",
+        "安徽理工大学",
+        "西安科技大学",
+        "河南理工大学",
+        "山东科技大学",
+        "太原理工大学"
+      ],
+      "tier_B": [
+        "中国地质大学（武汉）",
+        "中国石油大学（华东）",
+        "中北大学",
+        "南京理工大学",
+        "大连理工大学",
+        "华南理工大学",
+        "西南交通大学",
+        "福州大学",
+        "郑州大学",
+        "辽宁工程技术大学"
+      ],
+      "tier_C_note": "全国156所开设院校中未列入以上档位的普通本科院校，如华北科技学院、湖南工学院、黑龙江科技大学等地方应用型院校，在本地区就业仍有优势。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

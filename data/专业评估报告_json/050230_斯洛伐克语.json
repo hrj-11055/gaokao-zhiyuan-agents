@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.045140",
+    "updated_at": "2026-04-23T21:56:57.315731",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050230",
+    "name": "斯洛伐克语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "全国仅 2 校开设的\"极限小语种\"，中斯建交 75 周年带来战略机遇窗口，但岗位极度稀缺，建议用\"语言+\"双技能破局。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 2.5,
+      "future_adaptability": 2.8,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 2.6
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–9,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "基础翻译、文本处理类工作正被 AI（如 DeepL、ChatGPT 等）快速替代。斯洛伐克语虽属低资源语言（AI 训练数据少），AI 当前表现不如主流语种，但差距正在快速缩小。口译、外交谈判等高场景化工作短期仍需人工，但纯笔译岗位面临严峻冲击。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅 2 校开设的\"极限小语种\"，中斯建交 75 周年带来战略机遇窗口，但岗位极度稀缺，建议用\"语言+\"双技能破局。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学"
+      ],
+      "tier_A": [
+        "（无，全国仅 2 校开设）"
+      ],
+      "tier_B": [
+        "北京第二外国语学院"
+      ],
+      "tier_C_note": "（无其他开设院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

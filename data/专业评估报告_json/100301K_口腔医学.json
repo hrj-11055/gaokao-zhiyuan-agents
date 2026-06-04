@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.007140",
+    "updated_at": "2026-04-27T01:15:57.669232",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100301K_口腔医学",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "\"金牙银眼\"之首，高壁垒高回报，技术+手艺+经营三位一体的终身职业，但学制长、准入严，必须啃下执业医师证才能上岸。",
+    "radar": {
+      "market_return": 4.7,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.4,
+      "career_path": 4.2,
+      "education_resources": 3.8,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 4.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "口腔诊疗高度依赖精细手部操作（备牙、种植手术、正畸加力等），涉及复杂的三维空间判断和实时触觉反馈，AI 和机器人短期内无法替代。AI 可辅助影像诊断和方案设计，但核心操作环节仍需医生亲为。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"金牙银眼\"之首，高壁垒高回报，技术+手艺+经营三位一体的终身职业，但学制长、准入严，必须啃下执业医师证才能上岸。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "四川大学（华西口腔）",
+        "北京大学口腔医学院",
+        "上海交通大学（九院口腔）"
+      ],
+      "tier_A": [
+        "武汉大学（口腔医学院）",
+        "南京医科大学",
+        "中山大学（光华口腔）",
+        "首都医科大学（北京口腔医院）",
+        "浙江大学",
+        "中国医科大学",
+        "吉林大学（白求恩口腔）"
+      ],
+      "tier_B": [
+        "同济大学",
+        "西安交通大学",
+        "华中科技大学",
+        "哈尔滨医科大学",
+        "重庆医科大学",
+        "广西医科大学",
+        "昆明医科大学",
+        "遵义医科大学",
+        "滨州医学院",
+        "河北医科大学"
+      ],
+      "tier_C_note": "各省级医科大学、地方医学院中开设口腔医学的普通本科院校，如佳木斯大学、北华大学、桂林医学院等。对于分数在中等段的考生，省级医学院的口腔医学专业性价比较高。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.780843",
+    "updated_at": "2026-05-11T20:00:08.705015",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "安徽公安学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "最适合：",
+    "radar": {
+      "academic_capital": 2.1,
+      "graduate_value": 4.8,
+      "location_advantage": 3.9,
+      "globalization": 1.5,
+      "student_empowerment": 1.8,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.28,
+    "one_sentence_recommend": "最适合："
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "合肥",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "安徽公安学院作为 2024 年经教育部批准设置的新型全日制公安类普通本科院校，其前身是具有深厚行业底蕴的安徽公安职业学院。该校的设立填补了安徽省长期以来缺乏公安本科层次教育的空白。从核心定位来看，它是安徽省唯一一所公安类本科院校，直属于安徽省公安厅，其核心使命是为全省公安机关培养高素质的应用型警务人才。\n\n在当前就业市场波动较大的背景下，安徽公安学院展现出了极强的“抗周期性”。其王牌优势在于极高的“入警率”。通过参加公安机关面向公安院校公安专业毕业生的招录考试（简称“公安联考”），该校毕业生绝大多数能够直接进入公安系统编制，获得极高的职业确定性。这种“毕业即就业、就业即入编”的模式，使其在生源竞争中甚至能与部分 211 高校分庭抗礼。\n\n然而，作为一所新升本院校，其学术积淀和科研实力仍处于起步阶段。校园文化呈现出鲜明的“硬核、纪律、服从”特征，准军事化管理贯穿始终。对于追求学术自由或多元化校园生活的考生而言，这里可能存在较大的心理落差。但对于目标明确、渴望进入体制内的考生，该校无疑是安徽省内的最优选。",
+      "one_sentence_recommend": "最适合：",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "绝对忠诚",
+        "纪律高于一切",
+        "体能怪兽",
+        "编制信仰",
+        "安徽限定",
+        "藏青蓝情结",
+        "准军事化"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

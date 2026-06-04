@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.137931",
+    "updated_at": "2026-04-26T04:13:51.215793",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090304T_经济动物学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众中的小众，乡村振兴风口下的\"冷门硬核\"，能吃苦才有出路，深造是关键跳板。",
+    "radar": {
+      "market_return": 2.3,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.7
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "经济动物学的核心技能（实地养殖管理、动物行为观察、育种选配、疾病防控）高度依赖现场经验和动手能力，AI 难以直接替代。但饲料配方优化、数据分析等环节正被 AI 工具逐步渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众中的小众，乡村振兴风口下的\"冷门硬核\"，能吃苦才有出路，深造是关键跳板。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业无 985/211 院校开设）"
+      ],
+      "tier_A": [
+        "河南农业大学",
+        "吉林农业大学",
+        "山西农业大学"
+      ],
+      "tier_B": [
+        "暂无其他已知开设院校"
+      ],
+      "tier_C_note": "暂无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.913377",
+    "updated_at": "2026-04-25T22:13:16.831017",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082504",
+    "name": "环境生态工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的\"绿色工程师\"，赛道广阔但起薪偏低、成长周期长，需要学历+证书双重加持才能熬出头。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–6,700元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "现场调查、生态修复工程实施、野外采样等需要实地操作的核心技能难以被AI替代；但环评报告编制、环境数据分析、建模等文字和数据处理工作正被AI辅助工具加速渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的\"绿色工程师\"，赛道广阔但起薪偏低、成长周期长，需要学历+证书双重加持才能熬出头。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京师范大学",
+        "哈尔滨工业大学",
+        "华东师范大学",
+        "重庆大学"
+      ],
+      "tier_A": [
+        "大连理工大学",
+        "河海大学",
+        "厦门大学",
+        "中国海洋大学",
+        "四川大学",
+        "华中农业大学",
+        "中国地质大学(北京)"
+      ],
+      "tier_B": [
+        "广东工业大学（国家级一流本科专业建设点）",
+        "北京建筑大学",
+        "青岛理工大学",
+        "济南大学",
+        "南昌航空大学",
+        "四川农业大学",
+        "青海大学",
+        "内蒙古大学"
+      ],
+      "tier_C_note": "西华师范大学、湖南工业大学、淮北师范大学、山西师范大学、哈尔滨学院、武夷学院、红河学院、青海理工学院、衡水学院、河北环境工程学院、太原科技大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.978201",
+    "updated_at": "2026-04-28T12:08:19.866885",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130210T_音乐治疗",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "跨界蓝海但体量微小，全国仅6所本科开设，就业靠\"小池塘少鱼\"而非大需求，需热爱与勇气兼具。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.28
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "音乐治疗的核心在于人与人的情感联结、实时即兴音乐互动、非言语情感表达和身体在场感——这些要素高度依赖人类的共情能力与物理在场，AI在可预见的未来无法有效替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "跨界蓝海但体量微小，全国仅6所本科开设，就业靠\"小池塘少鱼\"而非大需求，需热爱与勇气兼具。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央音乐学院（研究生方向）",
+        "上海音乐学院（研究生方向）"
+      ],
+      "tier_A": [
+        "武汉音乐学院",
+        "四川音乐学院"
+      ],
+      "tier_B": [
+        "南京特殊教育师范学院",
+        "江西中医药大学"
+      ],
+      "tier_C_note": "长治医学院、湖南工商大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

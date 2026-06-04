@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.134649",
+    "updated_at": "2026-04-26T03:23:05.939702",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090114T_农药化肥",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "农田的\"弹药库\"，挂靠粮食安全国家战略，但全国仅两校开设、路径极窄，非铁了心扎根农资行业者慎入。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.5,
+      "career_path": 1.8,
+      "education_resources": 1.5,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 2.41
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "田间试验设计和执行、复杂化学配方优化、跨学科（化学+生物+土壤）综合判断等核心任务短期内难以被 AI 完全替代。但农药残留检测分析、配方计算等标准化工作面临自动化压力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "农田的\"弹药库\"，挂靠粮食安全国家战略，但全国仅两校开设、路径极窄，非铁了心扎根农资行业者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业尚无国家级重点学科支撑）"
+      ],
+      "tier_A": [
+        "吉林农业大学（吉林省一流建设专业，校友会排名全国第 1，A++档次）"
+      ],
+      "tier_B": [
+        "塔里木大学（校友会排名并列第 1，A++档次，立足新疆农业特色）"
+      ],
+      "tier_C_note": "暂无其他院校开设",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

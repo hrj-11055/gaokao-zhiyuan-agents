@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.890997",
+    "updated_at": "2026-04-21T01:24:20.219834",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030304T_女性学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国仅3校开设的极小众专业，政策东风正劲但就业面窄，极度依赖深造转型，适合有明确社会议题热爱的理想主义者。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.99
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "性别视角的田野调查、政策评估、社会调研中的质性分析（访谈、焦点小组）和跨文化沟通需要深度的人际互动和情境理解，AI短期内难以完全替代；但文献综述、数据统计、报告撰写等标准化学术产出环节面临AI辅助替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅3校开设的极小众专业，政策东风正劲但就业面窄，极度依赖深造转型，适合有明确社会议题热爱的理想主义者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（全国无顶尖高校以独立专业形式开设女性学本科）"
+      ],
+      "tier_A": [
+        "中华女子学院（国家级一流专业，国内首创，2006年首批招生，师资力量最集中）"
+      ],
+      "tier_B": [
+        "湖南女子学院（2024软科排名该专业全国第一）",
+        "山东女子学院"
+      ],
+      "tier_C_note": "无其他开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

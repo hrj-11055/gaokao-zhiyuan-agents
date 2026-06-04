@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.510957",
+    "updated_at": "2026-05-12T11:40:10.015590",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "集美大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.8,
+      "graduate_value": 4.0,
+      "location_advantage": 4.5,
+      "globalization": 4.0,
+      "student_empowerment": 3.2,
+      "brand_asset": 4.7
+    },
+    "weighted_score": 4.05,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "华侨大学",
+        "similarity": "同类院校",
+        "key_difference": "两校同为著名侨校。华侨大学在建筑、土木、机械等传统工科及文科多样性上略占优势，校区分布在泉州和厦门；集美大学则在海洋、航海、水产等领域拥有绝对统治力，且主校区全部位于厦门，区位优势更集中。"
+      },
+      {
+        "name": "福州大学",
+        "similarity": "同类院校",
+        "key_difference": "福州大学作为 211 高校，在整体学术平台和科研经费上优于集美大学；但在航海、水产等特定行业领域，集美大学的就业资源和行业认可度并不逊色，甚至在某些细分领域更强。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "集美大学是一所**Identity（核心定位）**极其鲜明的行业特色高校。它不仅是“海洋人才的摇篮”，更是“嘉庚精神的传承地”。其**Ace（王牌优势）**在于航海、水产学科在全国范围内的强力竞争力和在航运产业中的深厚根基。校园**Vibe（文化特质）**是古典建筑美学与现代纪律要求的完美融合。**Risk（潜在风险）**主要集中在非核心学科的平庸化以及特定专业的高强度管理压力。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "华侨大学",
+          "similarity": "同类院校",
+          "key_difference": "两校同为著名侨校。华侨大学在建筑、土木、机械等传统工科及文科多样性上略占优势，校区分布在泉州和厦门；集美大学则在海洋、航海、水产等领域拥有绝对统治力，且主校区全部位于厦门，区位优势更集中。"
+        },
+        {
+          "name": "福州大学",
+          "similarity": "同类院校",
+          "key_difference": "福州大学作为 211 高校，在整体学术平台和科研经费上优于集美大学；但在航海、水产等特定行业领域，集美大学的就业资源和行业认可度并不逊色，甚至在某些细分领域更强。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

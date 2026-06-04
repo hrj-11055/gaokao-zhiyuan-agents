@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.110126",
+    "updated_at": "2026-04-25T03:48:54.847265",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080202",
+    "name": "机械设计制造及其自动化",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "制造业的\"底盘专业\"，万金油不假但高薪靠跨界——新能源和智能制造是翻盘点，纯传统路线慎选。",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 4.5,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.93
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,500–8,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 生成式设计（Generative Design）正在渗透参数优化和基础制图环节，但系统级方案设计、多物理场耦合分析、制造工艺决策等需要深厚工程直觉和现场经验的核心技能不易被替代；AI 更多是赋能工具而非替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "制造业的\"底盘专业\"，万金油不假但高薪靠跨界——新能源和智能制造是翻盘点，纯传统路线慎选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "哈尔滨工业大学",
+        "上海交通大学",
+        "华中科技大学"
+      ],
+      "tier_A": [
+        "北京理工大学",
+        "天津大学",
+        "大连理工大学",
+        "浙江大学",
+        "西安交通大学",
+        "北京航空航天大学",
+        "吉林大学",
+        "同济大学",
+        "南京航空航天大学",
+        "湖南大学",
+        "中南大学",
+        "华南理工大学",
+        "重庆大学"
+      ],
+      "tier_B": [
+        "燕山大学（A-",
+        "机械类传统强校）",
+        "武汉理工大学",
+        "西南交通大学",
+        "江苏大学",
+        "合肥工业大学",
+        "广东工业大学",
+        "浙江工业大学",
+        "东北大学",
+        "山东大学"
+      ],
+      "tier_C_note": "全国约 468 所开设院校中除上述院校外的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

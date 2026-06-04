@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.147811",
+    "updated_at": "2026-04-25T23:43:49.398047",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082712T_白酒酿造工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "万亿酒海里的\"独苗\"专业，背靠茅台只此一家，行业天花板极高但路径极窄，下不了车间慎入。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 3.3,
+      "future_adaptability": 3.0,
+      "career_path": 3.2,
+      "education_resources": 2.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.26
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–9,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "白酒酿造的核心技能——微生物发酵调控、风味感官品评、窖池管理——高度依赖经验和感官，AI目前无法替代人类的味觉/嗅觉综合判断。但数据分析、工艺参数优化等环节正在被AI辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "万亿酒海里的\"独苗\"专业，背靠茅台只此一家，行业天花板极高但路径极窄，下不了车间慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业仅茅台学院开设，无法横向比较）"
+      ],
+      "tier_A": [
+        "茅台学院（全国唯一开设白酒酿造工程的本科院校，背靠茅台集团，产学研一体化）"
+      ],
+      "tier_B": [
+        "无"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

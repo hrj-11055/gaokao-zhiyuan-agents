@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.111021",
+    "updated_at": "2026-04-27T06:02:09.461759",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "101014TK_医工学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"站在医学与工程的十字路口，国家战略级稀缺人才，但专业太新、路径未明，属于'前景赌赢翻十倍，赌输转行也不亏'的高赔率赛道。\"",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 4.3,
+      "future_adaptability": 4.0,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.77
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "医工学培养的核心能力——理解临床场景中的真实需求并将其转化为工程方案——需要深度的人体交互经验、临床直觉和跨领域系统思维。AI可以辅助影像识别和数据分析，但无法替代\"走进手术室发现医生真正的痛点\"这一环节。同时，医疗行业的强监管属性（NMPA审批、临床试验规范）本身就是对抗自动化的天然壁垒。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"站在医学与工程的十字路口，国家战略级稀缺人才，但专业太新、路径未明，属于'前景赌赢翻十倍，赌输转行也不亏'的高赔率赛道。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学（ ）",
+        "上海交通大学医学院（ ）",
+        "华中科技大学同济医学院（ ）",
+        "浙江大学医学院（ ）"
+      ],
+      "tier_A": [
+        "东南大学（ ）",
+        "四川大学华西医学中心（ ）",
+        "复旦大学上海医学院（ ）",
+        "北京大学医学部（ ）",
+        "北京航空航天大学（ ）"
+      ],
+      "tier_B": [
+        "西安交通大学（ ）",
+        "中南大学湘雅医学院（ ）",
+        "同济大学医学院（ ）",
+        "电子科技大学（ ）",
+        "天津大学（ ）"
+      ],
+      "tier_C_note": "由于该专业为国家控制布点专业（K），普通院校获批开设的可能性较低。如未来开放更多名额，拥有较好医学院+工学院的省属重点大学可能成为C档候选。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.124823",
+    "updated_at": "2026-04-28T11:58:24.439502",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130205",
+    "name": "舞蹈学",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "\"以身体为乐器的艺术门类，教学路线稳但收入天花板低，表演路线绚丽但青春饭属性强，非名校+非天赋型选手慎重。\"",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 3.1,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 2.98
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "舞蹈的核心在于身体控制、情感表达、即兴创作和现场表演的不可替代性。AI 目前能在编舞辅助（动作生成）、教学辅助（动作捕捉纠错）方面发挥作用，但无法替代舞台上的真人表演和师生间的情感互动。中央民族大学舞蹈学院 2026 年成立\"人工智能联合实验室\"，方向为\"人机协同\"而非替代。预计到 2035 年 AI 将承担约 60% 的标准化教学任务，但艺术创造和情感传递仍依赖人类。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"以身体为乐器的艺术门类，教学路线稳但收入天花板低，表演路线绚丽但青春饭属性强，非名校+非天赋型选手慎重。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京舞蹈学院",
+        "中央音乐学院",
+        "上海音乐学院"
+      ],
+      "tier_A": [
+        "中央民族大学",
+        "北京师范大学",
+        "中国音乐学院",
+        "南京艺术学院",
+        "福建师范大学"
+      ],
+      "tier_B": [
+        "首都师范大学",
+        "陕西师范大学",
+        "浙江音乐学院",
+        "湖南师范大学",
+        "上海师范大学",
+        "山东师范大学",
+        "华南师范大学",
+        "武汉音乐学院",
+        "星海音乐学院",
+        "四川音乐学院"
+      ],
+      "tier_C_note": "全国约 110 所开设舞蹈学专业的普通本科院校，包括地方师范学院、综合性大学艺术学院等。对于中等分数段的艺考生，可关注本省师范大学或地方艺术类院校作为保底选择。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

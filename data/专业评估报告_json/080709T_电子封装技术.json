@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.963707",
+    "updated_at": "2026-04-25T07:32:39.826084",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080709T_电子封装技术",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "半导体产业链的\"隐形冠军\"——芯片落地的最后一公里，人才极度稀缺但开设院校仅16所，小众赛道的低配版\"芯片黄金入场券\"。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.8,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.07
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "电子封装涉及精密制造工艺开发、材料兼容性测试、热管理仿真等高度依赖物理实验和工程经验的环节，AI可辅助仿真和数据分析，但难以替代实际的工艺调试和失效分析工作。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "半导体产业链的\"隐形冠军\"——芯片落地的最后一公里，人才极度稀缺但开设院校仅16所，小众赛道的低配版\"芯片黄金入场券\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西安电子科技大学",
+        "哈尔滨工业大学",
+        "华中科技大学"
+      ],
+      "tier_A": [
+        "北京理工大学",
+        "桂林电子科技大学（国家级一流专业）",
+        "南昌航空大学"
+      ],
+      "tier_B": [
+        "江南大学",
+        "东南大学",
+        "上海交通大学",
+        "北京邮电大学"
+      ],
+      "tier_C_note": "厦门理工学院、上海电机学院、江苏科技大学苏州理工学院、上海工程技术大学、武夷学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.909469",
+    "updated_at": "2026-05-09T16:26:32.646108",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西北农林科技大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.5,
+      "graduate_value": 4.0,
+      "location_advantage": 2.5,
+      "globalization": 3.8,
+      "student_empowerment": 4.0,
+      "brand_asset": 4.2
+    },
+    "weighted_score": 3.93,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "中国农业大学（中农）",
+        "similarity": "同类院校",
+        "key_difference": "中农位于北京，区位优势无敌，学科实力略胜一筹，但录取分数线远高于西农。"
+      },
+      {
+        "name": "华中农业大学（华农）",
+        "similarity": "同类院校",
+        "key_difference": "华农位于武汉，城市资源更丰富，在生物技术和交叉学科上更具活力；西农的优势在于 985 身份带来的行政资源和保研政策优势。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "中国农业大学（中农）",
+          "similarity": "同类院校",
+          "key_difference": "中农位于北京，区位优势无敌，学科实力略胜一筹，但录取分数线远高于西农。"
+        },
+        {
+          "name": "华中农业大学（华农）",
+          "similarity": "同类院校",
+          "key_difference": "华农位于武汉，城市资源更丰富，在生物技术和交叉学科上更具活力；西农的优势在于 985 身份带来的行政资源和保研政策优势。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "诚朴勇毅",
+        "保研神校",
+        "杨凌种地大学",
+        "旱区科技硅谷",
+        "西农酸奶",
+        "选调生大户",
+        "硬核农学",
+        "性价比 985"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

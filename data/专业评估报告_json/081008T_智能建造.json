@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.072187",
+    "updated_at": "2026-04-25T14:42:15.019536",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081008T_智能建造",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "土木工程的\"数字化马甲\"，政策风口猛但课程体系尚未成熟，真才实学看院校——双强校冲，普通校慎。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.8,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.63
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "智能建造本身就是AI技术在建筑领域的应用落地，其核心价值在于\"用AI改造传统建造流程\"——BIM协同、施工现场物联网调度、建筑机器人编程与运维等，需要现场复杂环境下的工程判断力与跨系统集成能力，短期内不会被AI替代，反而是AI时代的受益者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "土木工程的\"数字化马甲\"，政策风口猛但课程体系尚未成熟，真才实学看院校——双强校冲，普通校慎。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "同济大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_A": [
+        "东南大学",
+        "重庆大学",
+        "大连理工大学",
+        "清华大学（大类招生）",
+        "武汉大学",
+        "华中科技大学"
+      ],
+      "tier_B": [
+        "西南交通大学",
+        "河海大学",
+        "南京航空航天大学",
+        "华南理工大学",
+        "中国矿业大学（北京）",
+        "湖南大学",
+        "天津大学",
+        "深圳大学"
+      ],
+      "tier_C_note": "苏州科技大学、青岛理工大学、长沙理工大学、西安建筑科技大学、安徽建筑大学、石家庄铁道大学、江西理工大学等约170所地方本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

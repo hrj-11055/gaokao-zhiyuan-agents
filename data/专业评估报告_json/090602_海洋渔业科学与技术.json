@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.900401",
+    "updated_at": "2026-04-26T13:08:09.349886",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090602",
+    "name": "海洋渔业科学与技术",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "国家战略加持的小众硬核专业，就业面窄但对口率极高，\"蓝色粮仓\"正从经验渔业走向智能渔业，想赚大钱得深造或转行，想端铁饭碗倒是一步到位。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.6,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.4,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "海洋渔业涉及大量野外调查、海上作业、生物样本采集等物理场景，AI 难以替代。但渔场选址优化、资源数据分析等环节正在被 AI 辅助，需警惕\"数据分析岗\"被压缩。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略加持的小众硬核专业，就业面窄但对口率极高，\"蓝色粮仓\"正从经验渔业走向智能渔业，想赚大钱得深造或转行，想端铁饭碗倒是一步到位。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国海洋大学（985，唯一捕捞学国家重点学科）",
+        "上海海洋大学（双一流，软科第 1）"
+      ],
+      "tier_A": [
+        "集美大学（国家级卓越农林计划）",
+        "广东海洋大学（华南渔业就业最强校）",
+        "浙江海洋大学",
+        "大连海洋大学"
+      ],
+      "tier_B": [
+        "海南热带海洋学院（热带海洋特色，应用型强）",
+        "烟台大学",
+        "潍坊学院"
+      ],
+      "tier_C_note": "其他新开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

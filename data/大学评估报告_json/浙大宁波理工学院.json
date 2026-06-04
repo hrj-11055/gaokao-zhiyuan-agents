@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.462410",
+    "updated_at": "2026-05-11T12:11:28.402117",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "浙大宁波理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 3.6,
+      "location_advantage": 4.5,
+      "globalization": 3.2,
+      "student_empowerment": 3.8,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 3.665,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "宁波工程学院",
+        "similarity": "同类院校",
+        "key_difference": "宁理在生源质量和学术资源（浙大背景）上领先，更适合看重品牌和深造的学生；宁工在部分传统行业（如化工、建筑）的本土根基更深，更适合希望在特定传统行业深耕的学生。"
+      },
+      {
+        "name": "浙江科技大学",
+        "similarity": "同类院校",
+        "key_difference": "宁理在宁波的产业耦合度更高，而浙科大在杭州的区位优势明显。两者在省内排名相近，但宁理的工科实验条件和生均经费往往更占优势。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：一所以工科为见长、深度依托浙江大学、服务于宁波地方经济的高水平应用型公办本科高校。\n*   **Ace（王牌优势）**：机械、计算机、自动化等工科专业，以及极高的就业性价比和“准浙大”的学术资源。\n*   **Vibe（文化特质）**：务实、进取、不尚空谈。校园文化深受宁波商帮文化影响，强调“知行合一”。\n*   **Risk（潜在风险）**：在全国范围内的知名度仍有待提升；在摆脱“独立学院”历史标签的过程中，仍需更多标志性的学术成果来证明自己。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "宁波工程学院",
+          "similarity": "同类院校",
+          "key_difference": "宁理在生源质量和学术资源（浙大背景）上领先，更适合看重品牌和深造的学生；宁工在部分传统行业（如化工、建筑）的本土根基更深，更适合希望在特定传统行业深耕的学生。"
+        },
+        {
+          "name": "浙江科技大学",
+          "similarity": "同类院校",
+          "key_difference": "宁理在宁波的产业耦合度更高，而浙科大在杭州的区位优势明显。两者在省内排名相近，但宁理的工科实验条件和生均经费往往更占优势。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实应用",
+        "求是基因",
+        "宁波制造",
+        "高性价比",
+        "考研大户",
+        "就业绿卡"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

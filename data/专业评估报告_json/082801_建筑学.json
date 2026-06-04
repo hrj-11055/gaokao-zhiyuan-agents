@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.020129",
+    "updated_at": "2026-04-25T23:55:17.522223",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082801",
+    "name": "建筑学",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "曾是高分学霸的艺术梦，如今撞上地产寒冬，五年苦读换来的可能是\"毕业即转行\"——除非你上的是老八校且真正热爱。",
+    "radar": {
+      "market_return": 2.9,
+      "industry_outlook": 2.6,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.0
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–8,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 已在方案生成、效果图渲染、BIM 参数化设计等环节大幅替代重复性工作（如 Autodesk Forma、Midjourney 辅助设计），但建筑创作的核心——空间想象力、人文关怀、多专业协调能力、与甲方/施工方的现场博弈——仍高度依赖人类判断。纯\"画图匠\"面临高风险，\"设计决策者\"则相对安全。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "曾是高分学霸的艺术梦，如今撞上地产寒冬，五年苦读换来的可能是\"毕业即转行\"——除非你上的是老八校且真正热爱。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "东南大学",
+        "同济大学"
+      ],
+      "tier_A": [
+        "天津大学",
+        "华南理工大学",
+        "哈尔滨工业大学（深圳）",
+        "重庆大学",
+        "浙江大学",
+        "南京大学"
+      ],
+      "tier_B": [
+        "西安建筑科技大学",
+        "华中科技大学",
+        "大连理工大学",
+        "湖南大学",
+        "武汉大学",
+        "四川大学",
+        "西南交通大学",
+        "北京建筑大学",
+        "深圳大学"
+      ],
+      "tier_C_note": "各省区域型建筑类院校及开设建筑学的综合类/工科类普通本科院校（如山东建筑大学、沈阳建筑大学、昆明理工大学等），全国约 200+ 所。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

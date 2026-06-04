@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.192446",
+    "updated_at": "2026-04-25T07:22:04.385592",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080706",
+    "name": "信息工程",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "万金油中的硬核玩家，软硬兼修口径宽，但\"样样通样样松\"是最大陷阱，吃终身学习的饭。",
+    "radar": {
+      "market_return": 4.1,
+      "industry_outlook": 4.4,
+      "future_adaptability": 3.9,
+      "career_path": 3.7,
+      "education_resources": 3.9,
+      "discipline_core": 4.3
+    },
+    "weighted_score": 4.09
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "信息工程的核心技能——信号处理算法设计、通信协议开发、嵌入式系统设计、射频电路分析——均涉及深层的物理建模与硬件-软件协同设计，这些领域的完全AI自动化仍需很长时间。但纯编码实现、基础测试类岗位存在被AI工具辅助替代的风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "万金油中的硬核玩家，软硬兼修口径宽，但\"样样通样样松\"是最大陷阱，吃终身学习的饭。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "上海交通大学",
+        "东南大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "西安电子科技大学",
+        "北京邮电大学",
+        "电子科技大学",
+        "西安交通大学",
+        "国防科技大学",
+        "华南理工大学"
+      ],
+      "tier_B": [
+        "南京航空航天大学",
+        "北京交通大学",
+        "西北工业大学",
+        "哈尔滨工业大学",
+        "北京理工大学",
+        "华中科技大学",
+        "南京邮电大学",
+        "重庆邮电大学",
+        "杭州电子科技大学"
+      ],
+      "tier_C_note": "各省属理工类大学及综合性大学中开设信息工程专业的普通本科院校（如上海大学、南京信息工程大学、成都理工大学等），这些院校在当地ICT产业链中仍有就业竞争力。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

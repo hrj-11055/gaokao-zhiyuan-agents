@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.163687",
+    "updated_at": "2026-04-25T04:11:49.000836",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080209T_机械工艺技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "制造业的\"地基工种\"，入行门槛低但想拿高薪必须拥抱智能升级或跨界转型，开课院校仅10所的小众特设专业。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–7500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础工艺编程、常规检测、简单制图等重复性工作正被AI和自动化系统替代，但现场问题诊断、工艺创新优化、跨学科系统集成等需要经验积累的复杂决策短期内AI难以完全取代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "制造业的\"地基工种\"，入行门槛低但想拿高薪必须拥抱智能升级或跨界转型，开课院校仅10所的小众特设专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "（该专业无传统意义上的顶尖院校，以下为综合实力与专业结合度最佳的院校）湖南师范大学（211工程+双一流）",
+        "天津职业技术师范大学（该专业发源地",
+        "国家级特色专业）"
+      ],
+      "tier_A": [
+        "昆明理工大学（软科A+评分）",
+        "黑龙江科技大学"
+      ],
+      "tier_B": [
+        "营口理工学院",
+        "辽宁科技大学",
+        "河北师范大学"
+      ],
+      "tier_C_note": "晋中学院等其余开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

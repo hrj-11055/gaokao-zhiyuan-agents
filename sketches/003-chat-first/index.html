@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>方案C：对话优先式 — 峰哥咨询参考</title>
+<style>
+@import url('../themes/tokens.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ── Phone Frame ── */
+.phone {
+  width: var(--phone-width);
+  height: var(--phone-height);
+  background: #F9FAFB;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.08);
+}
+
+/* ── Header ── */
+.header {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  padding-top: 44px; /* safe area */
+  background: #F9FAFB;
+  position: relative;
+  z-index: 10;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--border-light);
+}
+
+.header-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+}
+
+.header-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FBBF24, #F97316);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ── User Tags Bar ── */
+.tags-bar {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  background: #F9FAFB;
+  position: relative;
+  z-index: 10;
+}
+
+.tags-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: #fff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background 0.15s;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.tags-pill:hover {
+  background: #FFF7ED;
+}
+
+.tags-pill-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.tags-pill-icon {
+  font-size: 10px;
+  color: var(--text-muted);
+  transition: transform 0.2s;
+}
+
+.tags-pill.expanded .tags-pill-icon {
+  transform: rotate(180deg);
+}
+
+/* Tags expand panel */
+.tags-expand {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background: #fff;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  margin-top: 0;
+}
+
+.tags-expand.open {
+  max-height: 200px;
+  padding: 12px;
+  margin-top: 8px;
+  border-color: var(--border-light);
+}
+
+.tags-expand-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.tags-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tags-field label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.tags-field input {
+  font-size: 13px;
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  outline: none;
+  font-family: var(--font-body);
+  background: #F9FAFB;
+  transition: border-color 0.15s;
+}
+
+.tags-field input:focus {
+  border-color: var(--color-orange);
+}
+
+/* ── Chat Area ── */
+.chat-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.chat-area::-webkit-scrollbar {
+  display: none;
+}
+
+/* Messages */
+.message {
+  display: flex;
+  gap: 8px;
+  max-width: 88%;
+  animation: msgIn 0.25s ease-out;
+}
+
+@keyframes msgIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message.ai {
+  align-self: flex-start;
+}
+
+.message.user {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+/* Avatar */
+.msg-avatar {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.message.ai .msg-avatar {
+  background: linear-gradient(135deg, #FBBF24, #F97316);
+  color: #fff;
+}
+
+.message.user .msg-avatar {
+  background: linear-gradient(135deg, #60A5FA, #3B82F6);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Bubble */
+.msg-bubble {
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 10px 14px;
+  word-break: break-word;
+}
+
+.message.ai .msg-bubble {
+  background: #fff;
+  color: var(--text-primary);
+  border-radius: 4px 18px 18px 18px;
+}
+
+.message.user .msg-bubble {
+  background: linear-gradient(135deg, #FB923C, #F97316);
+  color: #fff;
+  border-radius: 18px 4px 18px 18px;
+}
+
+/* ── Quick Replies ── */
+.quick-replies {
+  flex-shrink: 0;
+  padding: 0 16px 8px;
+  background: #F9FAFB;
+  position: relative;
+  z-index: 10;
+}
+
+.quick-scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.quick-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.quick-btn {
+  flex-shrink: 0;
+  padding: 7px 14px;
+  background: #fff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.quick-btn:hover {
+  border-color: var(--color-orange);
+  color: var(--color-orange);
+  background: #FFF7ED;
+}
+
+.quick-btn:active {
+  transform: scale(0.96);
+}
+
+/* ── Floating Assessment Bubble ── */
+.assessment-bubble {
+  position: absolute;
+  bottom: 80px;
+  right: 12px;
+  background: #fff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 10px 14px;
+  cursor: pointer;
+  z-index: 20;
+  max-width: 230px;
+  transition: all 0.2s;
+  animation: floatIn 0.5s ease 1.5s both;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.assessment-bubble:hover {
+  border-color: var(--color-orange);
+}
+
+.assessment-bubble-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.assessment-bubble-text span {
+  color: var(--color-orange);
+  font-weight: 600;
+}
+
+/* ── Input Bar ── */
+.input-bar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  padding-bottom: 28px; /* safe area */
+  background: #F9FAFB;
+  border-top: 1px solid var(--border-light);
+  position: relative;
+  z-index: 20;
+}
+
+.input-field {
+  flex: 1;
+  height: 40px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-full);
+  padding: 0 16px;
+  font-size: 15px;
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input-field::placeholder {
+  color: var(--text-muted);
+}
+
+.input-field:focus {
+  border-color: var(--color-orange);
+}
+
+.send-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #FB923C, #F97316);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.12s, opacity 0.15s;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+}
+
+.send-btn:active {
+  transform: scale(0.92);
+}
+
+/* ── Typing Indicator ── */
+.typing {
+  display: none;
+  align-self: flex-start;
+  gap: 8px;
+  max-width: 88%;
+}
+
+.typing.show {
+  display: flex;
+}
+
+.typing .msg-bubble {
+  background: #fff;
+  border-radius: 4px 18px 18px 18px;
+  padding: 12px 18px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.typing-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  animation: typingBounce 1.2s infinite;
+}
+
+.typing-dot:nth-child(2) { animation-delay: 0.15s; }
+.typing-dot:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
+
+/* ── Utility ── */
+.hidden { display: none !important; }
+</style>
+</head>
+<body>
+
+<div class="phone">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-title">峰哥咨询</div>
+    <div class="header-avatar">M</div>
+  </div>
+
+  <!-- User Tags Bar -->
+  <div class="tags-bar">
+    <div class="tags-pill" id="tagsPill" onclick="toggleTags()">
+      <span class="tags-pill-text" id="tagsSummary">广东 · 物理类 · 580分 · 位次 23000</span>
+      <span class="tags-pill-icon">▾</span>
+    </div>
+    <div class="tags-expand" id="tagsExpand">
+      <div class="tags-expand-grid">
+        <div class="tags-field">
+          <label>省份</label>
+          <input type="text" value="广东" id="tagProvince" oninput="updateTags()" />
+        </div>
+        <div class="tags-field">
+          <label>科类</label>
+          <input type="text" value="物理类" id="tagCategory" oninput="updateTags()" />
+        </div>
+        <div class="tags-field">
+          <label>分数</label>
+          <input type="text" value="580分" id="tagScore" oninput="updateTags()" />
+        </div>
+        <div class="tags-field">
+          <label>位次</label>
+          <input type="text" value="位次 23000" id="tagRank" oninput="updateTags()" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chat Area -->
+  <div class="chat-area" id="chatArea">
+
+    <!-- AI Opening Message -->
+    <div class="message ai">
+      <div class="msg-avatar">🤖</div>
+      <div class="msg-bubble">你好 👋 我是你的高考志愿 AI 咨询师。在开始之前，我先了解一下你的情况——你在哪个省份参加高考？</div>
+    </div>
+
+    <!-- Simulated user reply -->
+    <div class="message user">
+      <div class="msg-avatar">M</div>
+      <div class="msg-bubble">广东省，物理类考生</div>
+    </div>
+
+    <!-- AI follow-up -->
+    <div class="message ai">
+      <div class="msg-avatar">🤖</div>
+      <div class="msg-bubble">好的！广东物理类。那你的高考分数是多少呢？这样我可以更精准地帮你筛选院校 🎯</div>
+    </div>
+
+    <!-- User answer -->
+    <div class="message user">
+      <div class="msg-avatar">M</div>
+      <div class="msg-bubble">580 分，位次大概 23000 左右</div>
+    </div>
+
+    <!-- AI response -->
+    <div class="message ai">
+      <div class="msg-avatar">🤖</div>
+      <div class="msg-bubble">已记录！你的基本情况：<b>广东 · 物理类 · 580分 · 位次 23000</b><br><br>基于这些信息，你可以问我：<br>• 这个分数能冲哪些 985/211？<br>• 稳妥院校有哪些推荐？<br>• 热门专业就业前景如何？<br><br>随时开聊 😊</div>
+    </div>
+
+    <!-- Typing indicator -->
+    <div class="typing" id="typingIndicator">
+      <div class="msg-avatar" style="background:linear-gradient(135deg,#FBBF24,#F97316);color:#fff;">🤖</div>
+      <div class="msg-bubble">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Quick Replies -->
+  <div class="quick-replies">
+    <div class="quick-scroll">
+      <button class="quick-btn" onclick="sendQuick(this)">580分能上什么大学</button>
+      <button class="quick-btn" onclick="sendQuick(this)">推荐适合我的专业</button>
+      <button class="quick-btn" onclick="sendQuick(this)">冲稳保怎么选</button>
+      <button class="quick-btn" onclick="sendQuick(this)">位次23000能冲211吗</button>
+    </div>
+  </div>
+
+  <!-- Assessment Bubble -->
+  <div class="assessment-bubble" onclick="sendQuick({textContent:'我想做测评'})">
+    <div class="assessment-bubble-text">还有 <span>2 个测评</span>可以帮你更精准 →</div>
+  </div>
+
+  <!-- Input Bar -->
+  <div class="input-bar">
+    <input
+      type="text"
+      class="input-field"
+      id="inputField"
+      placeholder="输入你的问题..."
+      autocomplete="off"
+    />
+    <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+    </button>
+  </div>
+
+</div>
+
+<script>
+// ── Tags Toggle ──
+const tagsPill = document.getElementById('tagsPill');
+const tagsExpand = document.getElementById('tagsExpand');
+
+function toggleTags() {
+  tagsPill.classList.toggle('expanded');
+  tagsExpand.classList.toggle('open');
+}
+
+function updateTags() {
+  const province = document.getElementById('tagProvince').value || '—';
+  const category = document.getElementById('tagCategory').value || '—';
+  const score = document.getElementById('tagScore').value || '—';
+  const rank = document.getElementById('tagRank').value || '—';
+  document.getElementById('tagsSummary').textContent = province + ' · ' + category + ' · ' + score + ' · ' + rank;
+}
+
+// ── Chat Logic ──
+const chatArea = document.getElementById('chatArea');
+const inputField = document.getElementById('inputField');
+const typingIndicator = document.getElementById('typingIndicator');
+
+// Simulated AI responses
+const aiReplies = [
+  '根据你的分数和位次，我帮你分析了几所院校。580 分在广东物理类属于中上水平，可以冲刺一些 211 院校，比如华南师范大学、暨南大学等。',
+  '以你的情况，我建议采用「冲稳保」策略：冲 2-3 所略高于位次的 211，稳 3-4 所匹配院校，保 2-3 所确定能上的学校。你想看看具体名单吗？',
+  '关于专业选择，结合物理类背景，推荐关注计算机、电子信息、自动化等方向。这些专业就业前景好，且与你的学科优势匹配。需要我详细分析某个专业吗？',
+  '位次 23000 左右在广东物理类是有机会上 211 的！建议关注一些非热门城市的 211 院校，录取概率会更高。我帮你查一下具体数据？',
+  '好的，我来帮你做一次全面的分析，包括院校推荐、专业匹配和志愿填报策略。请稍等… 📊',
+];
+
+let replyIndex = 0;
+
+function getAIReply() {
+  const reply = aiReplies[replyIndex % aiReplies.length];
+  replyIndex++;
+  return reply;
+}
+
+function createMessage(text, isUser) {
+  const msg = document.createElement('div');
+  msg.className = 'message ' + (isUser ? 'user' : 'ai');
+
+  const avatar = document.createElement('div');
+  avatar.className = 'msg-avatar';
+  avatar.textContent = isUser ? 'M' : '🤖';
+
+  const bubble = document.createElement('div');
+  bubble.className = 'msg-bubble';
+  bubble.textContent = text;
+
+  msg.appendChild(avatar);
+  msg.appendChild(bubble);
+  return msg;
+}
+
+function scrollToBottom() {
+  requestAnimationFrame(() => {
+    chatArea.scrollTop = chatArea.scrollHeight;
+  });
+}
+
+function sendMessage() {
+  const text = inputField.value.trim();
+  if (!text) return;
+
+  // Add user message
+  const userMsg = createMessage(text, true);
+  chatArea.insertBefore(userMsg, typingIndicator);
+  inputField.value = '';
+  scrollToBottom();
+
+  // Show typing indicator
+  typingIndicator.classList.add('show');
+  scrollToBottom();
+
+  // Simulate AI reply after delay
+  setTimeout(() => {
+    typingIndicator.classList.remove('show');
+
+    const aiMsg = createMessage(getAIReply(), false);
+    chatArea.insertBefore(aiMsg, typingIndicator);
+    scrollToBottom();
+  }, 1000 + Math.random() * 800);
+}
+
+function sendQuick(btn) {
+  const text = btn.textContent || btn;
+  inputField.value = text;
+  sendMessage();
+}
+
+// Enter key
+inputField.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter' && !e.isComposing) {
+    e.preventDefault();
+    sendMessage();
+  }
+});
+
+// Initial scroll to bottom
+scrollToBottom();
+</script>
+
+</body>
+</html>

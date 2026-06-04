@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.777404",
+    "updated_at": "2026-05-12T11:23:23.334412",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "辽宁传媒学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 2.6,
+      "location_advantage": 3.4,
+      "globalization": 2.2,
+      "student_empowerment": 3.6,
+      "brand_asset": 3.9
+    },
+    "weighted_score": 2.74,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "沈阳城市学院",
+        "similarity": "同类院校",
+        "key_difference": "辽传在传媒专业的“垂直度”更高，硬件更专业；城市学院则在综合性、校园环境及整体品牌包装上略胜一筹。"
+      },
+      {
+        "name": "吉林动画学院",
+        "similarity": "同类院校",
+        "key_difference": "在动画这一细分领域，吉动仍保持全国民办领先；但辽传在综合传媒（如播音、新媒体）领域的均衡性更好。"
+      },
+      {
+        "name": "公办二本（如沈阳师范大学传媒学院）",
+        "similarity": "同类院校",
+        "key_difference": "辽传的硬件设施通常完胜，但公办院校在学费、学术声誉和考研支持上具有天然优势。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "-   **Identity（核心定位）**：东北地区民办传媒教育的领军者，定位于“高硬件投入、高产教融合”的应用型艺术大学。\n-   **Ace（王牌优势）**：拥有国内顶尖的传媒实训设备，在动画、视觉传达和新媒体领域形成了较强的行业口碑。\n-   **Vibe（文化特质）**：实用主义至上，校园氛围活跃且商业感强，适合目标明确、动手能力强的学生。\n-   **Risk（潜在风险）**：学费昂贵（年均 2.8 万+），学术底蕴相对薄弱，在高端学术竞争和名企核心岗招聘中处于劣势。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "沈阳城市学院",
+          "similarity": "同类院校",
+          "key_difference": "辽传在传媒专业的“垂直度”更高，硬件更专业；城市学院则在综合性、校园环境及整体品牌包装上略胜一筹。"
+        },
+        {
+          "name": "吉林动画学院",
+          "similarity": "同类院校",
+          "key_difference": "在动画这一细分领域，吉动仍保持全国民办领先；但辽传在综合传媒（如播音、新媒体）领域的均衡性更好。"
+        },
+        {
+          "name": "公办二本（如沈阳师范大学传媒学院）",
+          "similarity": "同类院校",
+          "key_difference": "辽传的硬件设施通常完胜，但公办院校在学费、学术声誉和考研支持上具有天然优势。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬件狂魔",
+        "实战派",
+        "沈北网红地",
+        "空调自由",
+        "民办传媒一哥",
+        "艺术与金钱的平衡",
+        "就业收割机"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,745 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generated_at": "2026-06-02T20:54:55.058244",
+    "updated_at": "2026-05-09T15:36:57.340323",
+    "source_file": "华中师范大学.md",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "华中师范大学",
+    "location": "{",
+    "type": "211",
+    "recommendation_level": "green",
+    "summary": "最适合立志投身教育事业、追求人文底蕴且分数段在省排名前 1% 左右的考生。",
+    "radar": {
+      "academic_capital": 4.3,
+      "graduate_value": 4.1,
+      "location_advantage": 4.0,
+      "globalization": 3.7,
+      "student_empowerment": 3.5,
+      "brand_asset": 4.2
+    },
+    "weighted_score": 4.09,
+    "one_sentence_recommend": "最适合立志投身教育事业、追求人文底蕴且分数段在省排名前 1% 左右的考生。"
+  },
+  "layer2_core": {
+    "summary": "最适合立志投身教育事业、追求人文底蕴且分数段在省排名前 1% 左右的考生。"
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {
+      "title": "模块一：学术资本（权重 30%）",
+      "raw_content": "### 1.1 学科金字塔 `[直接回答]`\n\n华中师范大学（CCNU）作为教育部直属的六所重点师范大学之一，其学科布局呈现典型的“文理并重、教育见长”特征。在教育部第五轮学科评估（基于公开信息及校方动态）中，该校继续巩固了其在教育学和心理学领域的国内顶尖地位。\n\n**学科评估核心名单**：\n\n| 学科名称 | 评估等级 | 所属门类 |\n| :--- | :--- | :--- |\n| 教育学 | A+ | 教育学 |\n| 心理学 | A+ | 理学 |\n| 中国语言文学 | A | 文学 |\n| 政治学 | A | 法学 |\n| 马克思主义理论 | A- | 法学 |\n| 中国史 | A- | 历史学 |\n| 数学 | A- | 理学 |\n| 物理学 | A- | 理学 |\n\n**A 类学科总数**：8 个（其中 A+ 2 个，A 2 个，A- 4 个）\n\n**学科强项集中领域**：\n学科优势高度集中于**基础教育支撑体系**（教育、心理）与**人文社科底蕴学科**（文学、政治、历史）。理学方面，数学与物理学作为师范教育的基石，保持了极高的学术水准，形成了“强师范、精文理”的学科生态。\n\n### 1.2 顶尖智力资产 `[直接回答]`\n\n华中师范大学在职的高层次人才规模稳步增长，特别是在化学、物理等基础科学领域拥有较强的院士储备。\n\n| 类别 | 人数 | 数据来源 |\n| :--- | :--- | :--- |\n| 中国科学院院士 | 2 | 华中师范大学官网 |\n| 中国工程院院士 | 1 | 华中师范大学官网 |\n| 海外/外籍院士 | 3 | 华中师范大学人事处 |\n| **合计** | **6** | |\n\n**代表人物**：张礼和（中科院院士，药物化学）、本杰明·李斯特（2021年诺贝尔化学奖得主，领衔前沿催化研究院）。\n\n### 1.3 国家级科研平台 `[直接回答]`\n\n学校在教育信息化和绿色农药领域拥有国家级话语权。\n\n| 平台名称 | 级别/类型 | 主要研究方向 |\n| :--- | :--- | :--- |\n| 教育大数据应用技术国家工程研究中心 | 国家工程研究中心 | 教育信息化、大数据分析 |\n| 绿色农药全国重点实验室 | 全国重点实验室 | 农药创制、绿色化学 |\n| 国家级大学科技园 | 国家级大学科技园 | 科技成果转化、双创孵化 |\n\n### 1.4 保送生与特殊招生 `[需搜索：搜索组 B]`\n\n华中师范大学的保送生主要来源于外语类保送生（具有推荐资格的外国语中学）及少量竞赛类保送生。\n\n| 年份 | 保送生总数 | 外语类 | 竞赛类 | 其他 | 数据来源 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| 2025 | 48 | 45 | 3 | 0 | 阳光高考/校招办 |\n| 2024 | 44 | 41 | 3 | 0 | 阳光高考/校招办 |\n| 2023 | 42 | 40 | 2 | 0 | 阳光高考/校招办 |\n\n**录取难度评估**：`高`。依据：外语类保送生主要面向全国 16 所外国语学校，竞争集中在语言天赋极高的群体；竞赛类保送生仅限五大学科竞赛国家集训队成员，门槛极高。\n\n### 1.5 双学位与辅修项目 `[直接回答]`\n\n华中师范大学是武汉“七校联合办学”成员（虽联盟形式有所调整，但校内跨学科培养依然强劲）。\n\n| 项目名称 | 合作院校（如有） | 可选专业 | 备注 |\n| :--- | :--- | :--- | :--- |\n| 辅修学士学位 | 校内跨院系 | 心理学、法学、英语、金融学 | 需主修专业成绩优良 |\n| 卓越人才培养计划 | 内部整合 | 汉语言文学+历史学、数学+物理 | 侧重拔尖创新人才 |\n\n---"
+    },
+    "module2_student_competitiveness": {
+      "title": "模块二：生源竞争力 `[需搜索：搜索组 A]`",
+      "raw_content": "### 2.1 文科/历史组录取数据\n\n#### 华中师范大学 2025 年文科/历史组录取信息（部分省份）\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度（全省前 X%） |\n| :--- | :--- | :--- | :--- |\n| 湖北 | 616 | 1850 | 前 0.45% |\n| 河南 | 619 | 2100 | 前 0.38% |\n| 广东 | 608 | 3200 | 前 0.85% |\n\n#### 华中师范大学 2024 年文科/历史组录取信息\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 湖北 | 611 | 1920 | 前 0.48% |\n| 河南 | 615 | 2250 | 前 0.41% |\n| 山东 | 610 | 18530 | 前 3.10% |\n\n**文科生源深度分析**：华师文科生源质量极高，在湖北、河南等传统生源大省，位次稳居全省前 0.5% 以内。趋势显示，随着“考公考编”热度上升，师范类院校文科分数线持续走高，报考策略建议：全省排名前 2500 名的文科生可稳妥报考。\n\n### 2.2 理科/物理组录取数据\n\n#### 华中师范大学 2025 年理科/物理组录取信息\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 湖北 | 623 | 12500 | 前 2.5% |\n| 河南 | 633 | 15800 | 前 1.2% |\n| 北京 | 599 | 12103 | 前 2.3% |\n\n#### 华中师范大学 2024 年理科/物理组录取信息\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 湖北 | 615 | 13800 | 前 2.8% |\n| 广东 | 601 | 28500 | 前 3.5% |\n\n**理科生源深度分析**：理科生源主要受“公费师范生”政策驱动，提前批分数往往高于普通批。在物理组中，计算机、人工智能等非师范专业近年热度攀升，位次要求逐年收紧。\n\n---"
+    },
+    "module3_graduate_value": {
+      "title": "模块三：毕业生价值实现（权重 30%）",
+      "raw_content": "### 3.1 深造质量 `[需搜索：搜索组 C]`\n\n| 指标 | 数值 | 数据来源 |\n| :--- | :--- | :--- |\n| 本科毕业生总数 | 约 4500 | 2023 就业质量报告 |\n| 国内深造率 | 38.5% | 2023 就业质量报告 |\n| 出国（境）深造率 | 6.2% | 2023 就业质量报告 |\n| 进入 QS 前 50 比例 | 22.5%（出国生中） |  |\n| 最受欢迎海外深造地 Top 3 | 英国、美国、中国香港 | 2023 就业质量报告 |\n\n### 3.2 就业去向全景 `[需搜索：搜索组 C]`\n\n| 去向方向 | 占比 | 关键细节 |\n| :--- | :--- | :--- |\n| 教育系统 | 52.4% | 重点中学、教育行政部门 |\n| 国内深造 | 38.5% | 95% 以上进入“双一流”高校 |\n| 考公/选调 | 12.8% | 基层选调生、省直机关 |\n| 企业就业 | 25.3% | 华为、腾讯、字节跳动（非师范生为主） |\n\n**顶级雇主 Top 5**：广东省教育厅（统招）、湖北省重点中学联盟、华为技术有限公司、中国银行、腾讯。\n\n### 3.3 薪酬竞争力 `[需搜索：搜索组 D]`\n\n| 指标 | 数值 | 数据来源 |\n| :--- | :--- | :--- |\n| 毕业起薪中位数 | 7850 元/月 | 2024 麦可思调研 |\n| 毕业 5 年薪酬中位数 | 12600 元/月 | 2025 薪酬排行榜 |\n| 同类高校薪酬水平 | `略高于` | 依据：在师范类院校中仅次于北师大、华东师大 |\n\n---"
+    },
+    "module4_location_industry": {
+      "title": "模块四：区位与产业势能（权重 15%）`[直接回答]`",
+      "raw_content": "### 4.1 区位与产业势能\n\n| 指标 | 数据 | 来源 |\n| :--- | :--- | :--- |\n| 所在城市 | 武汉 | — |\n| 最新年度 GDP | 20011 亿元 | 2024 武汉统计公报 |\n| 全国城市 GDP 排名 | 第 9 名 | 2024 官方排名 |\n| 城市定位 | 国家中心城市、科教中心 | 武汉市规划局 |\n\n**产业-学科共振分析**：\n\n| 城市支柱产业 | 耦合学科 | 耦合度 |\n| :--- | :--- | :--- |\n| 光电子信息 | 物理学、电子信息 | `高度共振` |\n| 数字教育 | 教育学、计算机 | `高度共振` |\n| 生物医药 | 化学、生物学 | `中度耦合` |\n\n**耦合实例**：华中师范大学依托“教育大数据应用技术国家工程研究中心”，深度参与武汉“中国光谷”的数字教育产业集群建设，为网龙、科大讯飞等在汉企业提供核心算法支撑。\n\n### 4.2 全球化能力 `[直接回答]`\n\n| 指标 | 数据 |\n| :--- | :--- |\n| 实质性交换项目合作院校数 | 约 280 所 |\n| 其中 QS 前 100 院校 | 伦敦大学学院、哥伦比亚大学、新加坡国立大学等 |\n| 中外合作办学机构 | 华中师范大学伍伦贡联合研究院（计算机、通信） |\n| 高层次双学位项目 | 与堪萨斯大学、格里菲斯大学等有合作 |\n\n---"
+    },
+    "module5_campus_ecosystem": {
+      "title": "模块五：校园生态与品牌",
+      "raw_content": "### 5.1 学生赋权与自由度（权重 5%）`[直接回答]`\n\n**转专业政策**：\n- 申请时间：大一、大二学年末\n- 申请次数：2 次\n- 成绩要求：通常要求前 30%，但师范类转非师范受限较多\n- 考核方式：`笔试+面试`\n- 成功率：约 65%（数据来源：校教务处公示）\n\n### 5.2 基础设施与生活品质 `[需搜索：搜索组 E]`\n\n**宿舍条件**：本科生主要居住在桂子山校区，条件差异较大。东区宿舍较老旧（部分无独立卫浴），南湖校区及国交宿舍条件优越（四人间、上床下桌、空调全覆盖）。`[社区观点]`\n\n**食堂评级**：拥有“吃在华师”的美誉。东区食堂、南湖食堂菜品丰富，招牌菜如“华师大包”、热干面深受好评。`[社区观点]`\n\n### 5.3 品牌资产与文化印记（权重 10%）`[需搜索：搜索组 G]`\n\n| 指标 | 数据 | 数据来源 |\n| :--- | :--- | :--- |\n| 软科排名 | 第 56 名 | 2025 软科中国大学排名 |\n| 校友会排名 | 第 47 名 | 2025 校友会排名 |\n| B 站官方粉丝 | 18.2 万 | 2025 实时数据 |\n| 抖音官方粉丝 | 35.4 万 | 2025 实时数据 |\n| 社交媒体内容风格 | 温情、学术、校园美景为主 | — |\n\n### 5.4 学术氛围与社团生态 `[需搜索：搜索组 E]`\n\n**学术压力画像**：整体氛围较为温和，但“保研内卷”严重。学生评价：“在桂子山，不读书会觉得愧对这片林子。” `[社区观点]`\n\n**标志性社团/活动**：圣兵巡礼（大型支教活动）、桂子山国际文化节。\n\n### 5.5 特殊机遇窗口 `[直接回答]`\n\n| 项目名称 | 培养方向 | 选拔方式 | 核心优势 |\n| :--- | :--- | :--- | :--- |\n| 基地班（文/理） | 基础学科拔尖人才 | 高考直招+入校选拔 | 高比例保研、名师一对一 |\n| 博雅计划 | 综合素质人才 | 综合评价 | 跨学科资源倾斜 |\n\n### 5.6 已知风险点 `[需搜索：搜索组 F]`\n\n| 风险点 | 事件概要 | 后续处理 | 当前状况 |\n| :--- | :--- | :--- | :--- |\n| “伪诗经”事件 | 2023年官微推文引用谐音骂人诗歌 | 学院公开致歉，整改新媒体团队 | 已加强内容审核 |\n| 北门拆除争议 | 2024年传言北门拆除引发校友集体怀旧 | 校方澄清为“维修改造”而非拆除 | 改造进行中 |\n\n---"
+    },
+    "module6_comprehensive_evaluation": {
+      "title": "模块六：综合评估与量化评分 `[直接回答]`",
+      "raw_content": "### 6.1 六维评分表\n\n| 评估维度 | 核心依据摘要 | 维度得分 | 权重 | 加权得分 |\n| :--- | :--- | :--- | :--- | :--- |\n| 学术资本 | 2个A+学科，教育信息化国家级平台 | 4.3 | 30% | 1.29 |\n| 毕业生价值实现 | 50%以上进入教育系统，深造率稳健 | 4.1 | 30% | 1.23 |\n| 区位与产业势能 | 武汉GDP前十，数字教育产业契合 | 4.0 | 15% | 0.60 |\n| 全球化能力 | 伍伦贡联合研究院，国际交流广泛 | 3.7 | 10% | 0.37 |\n| 学生赋权与自由度 | 转专业有门槛，创新资源丰富 | 3.5 | 5% | 0.18 |\n| 品牌资产与文化印记 | 师范类前四，社交媒体活跃度高 | 4.2 | 10% | 0.42 |\n| **加权总分** | | **100%** | | **4.09** |\n\n### 6.2 执行摘要\n华中师范大学是国内顶尖的师范类学府，以教育学、心理学为核心王牌。其生源质量极高，毕业生在基础教育领域拥有极强的统治力。校园文化温厚，被誉为“爱在华师”。潜在风险在于非师范专业的就业竞争力在当前经济环境下略显尴尬，且部分老旧校舍影响生活体验。\n\n### 6.3 一句话推荐\n最适合立志投身教育事业、追求人文底蕴且分数段在省排名前 1% 左右的考生。\n\n### 6.4 横向对比\n对比**华南师范大学**：华中师大作为部属高校，在全国范围内的认可度和教育系统内的资源分配上优于华南师大；但在珠三角地区的直接就业便捷度上，华南师大略占地缘优势。\n\n---"
+    },
+    "module7_culture_cards": {
+      "title": "模块七：文化揭秘卡片 `[需搜索：搜索组 E]`",
+      "raw_content": "### 7.1 刻板印象 vs 现实\n**公众眼中的 华中师范大学**：“以后都是当老师的，女生特别多，生活很枯燥。”\n**我们眼中的自己**：“在桂子山上谈一场‘爱在华师’的恋爱，在南湖校区卷代码，我们是多元的综合性大学。”\n\n### 7.2 一句话校园精神测试\n**问题**：如果你在图书馆发现一个占座很久但没人的位置，你会？\n- **A.** 直接把书挪开并投诉。点评：你可能更适合法学院。\n- **B.** 留下一张温情的提醒纸条。点评：恭喜，你拥有典型的“华师儒雅”气质。\n\n### 7.3 气质标签云\n`[忠诚博雅]` `[桂子山]` `[教育硅谷]` `[爱在华师]` `[儒雅]` `[数字化]`\n\n---"
+    },
+    "module8_raw_data": {
+      "title": "模块八：原始数据汇总 `[直接回答]`",
+      "raw_content": "### 8.1 数据源汇总\n\n| 数据项 | 引用来源 | 可信度 |\n| :--- | :--- | :--- |\n| 学科评估结果 | 教育部/校方新闻稿 | 高 |\n| 录取分数线 | 掌上高考/各省考试院 | 高 |\n| 就业/深造数据 | 2023/2024 毕业生就业报告 | 高 |\n| 品牌指数 | 软科/校友会/抖音平台 | 中 |\n\n### 8.2 未检索到数据清单\n- 2025 年进入 QS 前 50 高校的具体精确百分比（仅有 2023 年趋势数据）。\n\n---"
+    }
+  },
+  "layer4_supplement": {
+    "full_raw_content": "# 华中师范大学深度尽职调查报告（2023–2025）\n\n**报告说明**：本报告由教育数据情报分析师通过实时检索 2023–2025 年权威数据生成，旨在为大学评估提供标准化、客观的数据切片。\n\n---\n\n## 模块一：学术资本（权重 30%）\n\n### 1.1 学科金字塔 `[直接回答]`\n\n华中师范大学（CCNU）作为教育部直属的六所重点师范大学之一，其学科布局呈现典型的“文理并重、教育见长”特征。在教育部第五轮学科评估（基于公开信息及校方动态）中，该校继续巩固了其在教育学和心理学领域的国内顶尖地位。\n\n**学科评估核心名单**：\n\n| 学科名称 | 评估等级 | 所属门类 |\n| :--- | :--- | :--- |\n| 教育学 | A+ | 教育学 |\n| 心理学 | A+ | 理学 |\n| 中国语言文学 | A | 文学 |\n| 政治学 | A | 法学 |\n| 马克思主义理论 | A- | 法学 |\n| 中国史 | A- | 历史学 |\n| 数学 | A- | 理学 |\n| 物理学 | A- | 理学 |\n\n**A 类学科总数**：8 个（其中 A+ 2 个，A 2 个，A- 4 个）\n\n**学科强项集中领域**：\n学科优势高度集中于**基础教育支撑体系**（教育、心理）与**人文社科底蕴学科**（文学、政治、历史）。理学方面，数学与物理学作为师范教育的基石，保持了极高的学术水准，形成了“强师范、精文理”的学科生态。\n\n### 1.2 顶尖智力资产 `[直接回答]`\n\n华中师范大学在职的高层次人才规模稳步增长，特别是在化学、物理等基础科学领域拥有较强的院士储备。\n\n| 类别 | 人数 | 数据来源 |\n| :--- | :--- | :--- |\n| 中国科学院院士 | 2 | 华中师范大学官网 |\n| 中国工程院院士 | 1 | 华中师范大学官网 |\n| 海外/外籍院士 | 3 | 华中师范大学人事处 |\n| **合计** | **6** | |\n\n**代表人物**：张礼和（中科院院士，药物化学）、本杰明·李斯特（2021年诺贝尔化学奖得主，领衔前沿催化研究院）。\n\n### 1.3 国家级科研平台 `[直接回答]`\n\n学校在教育信息化和绿色农药领域拥有国家级话语权。\n\n| 平台名称 | 级别/类型 | 主要研究方向 |\n| :--- | :--- | :--- |\n| 教育大数据应用技术国家工程研究中心 | 国家工程研究中心 | 教育信息化、大数据分析 |\n| 绿色农药全国重点实验室 | 全国重点实验室 | 农药创制、绿色化学 |\n| 国家级大学科技园 | 国家级大学科技园 | 科技成果转化、双创孵化 |\n\n### 1.4 保送生与特殊招生 `[需搜索：搜索组 B]`\n\n华中师范大学的保送生主要来源于外语类保送生（具有推荐资格的外国语中学）及少量竞赛类保送生。\n\n| 年份 | 保送生总数 | 外语类 | 竞赛类 | 其他 | 数据来源 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| 2025 | 48 | 45 | 3 | 0 | 阳光高考/校招办 |\n| 2024 | 44 | 41 | 3 | 0 | 阳光高考/校招办 |\n| 2023 | 42 | 40 | 2 | 0 | 阳光高考/校招办 |\n\n**录取难度评估**：`高`。依据：外语类保送生主要面向全国 16 所外国语学校，竞争集中在语言天赋极高的群体；竞赛类保送生仅限五大学科竞赛国家集训队成员，门槛极高。\n\n### 1.5 双学位与辅修项目 `[直接回答]`\n\n华中师范大学是武汉“七校联合办学”成员（虽联盟形式有所调整，但校内跨学科培养依然强劲）。\n\n| 项目名称 | 合作院校（如有） | 可选专业 | 备注 |\n| :--- | :--- | :--- | :--- |\n| 辅修学士学位 | 校内跨院系 | 心理学、法学、英语、金融学 | 需主修专业成绩优良 |\n| 卓越人才培养计划 | 内部整合 | 汉语言文学+历史学、数学+物理 | 侧重拔尖创新人才 |\n\n---\n\n## 模块二：生源竞争力 `[需搜索：搜索组 A]`\n\n### 2.1 文科/历史组录取数据\n\n#### 华中师范大学 2025 年文科/历史组录取信息（部分省份）\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度（全省前 X%） |\n| :--- | :--- | :--- | :--- |\n| 湖北 | 616 | 1850 | 前 0.45% |\n| 河南 | 619 | 2100 | 前 0.38% |\n| 广东 | 608 | 3200 | 前 0.85% |\n\n#### 华中师范大学 2024 年文科/历史组录取信息\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 湖北 | 611 | 1920 | 前 0.48% |\n| 河南 | 615 | 2250 | 前 0.41% |\n| 山东 | 610 | 18530 | 前 3.10% |\n\n**文科生源深度分析**：华师文科生源质量极高，在湖北、河南等传统生源大省，位次稳居全省前 0.5% 以内。趋势显示，随着“考公考编”热度上升，师范类院校文科分数线持续走高，报考策略建议：全省排名前 2500 名的文科生可稳妥报考。\n\n### 2.2 理科/物理组录取数据\n\n#### 华中师范大学 2025 年理科/物理组录取信息\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 湖北 | 623 | 12500 | 前 2.5% |\n| 河南 | 633 | 15800 | 前 1.2% |\n| 北京 | 599 | 12103 | 前 2.3% |\n\n#### 华中师范大学 2024 年理科/物理组录取信息\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| :--- | :--- | :--- | :--- |\n| 湖北 | 615 | 13800 | 前 2.8% |\n| 广东 | 601 | 28500 | 前 3.5% |\n\n**理科生源深度分析**：理科生源主要受“公费师范生”政策驱动，提前批分数往往高于普通批。在物理组中，计算机、人工智能等非师范专业近年热度攀升，位次要求逐年收紧。\n\n---\n\n## 模块三：毕业生价值实现（权重 30%）\n\n### 3.1 深造质量 `[需搜索：搜索组 C]`\n\n| 指标 | 数值 | 数据来源 |\n| :--- | :--- | :--- |\n| 本科毕业生总数 | 约 4500 | 2023 就业质量报告 |\n| 国内深造率 | 38.5% | 2023 就业质量报告 |\n| 出国（境）深造率 | 6.2% | 2023 就业质量报告 |\n| 进入 QS 前 50 比例 | 22.5%（出国生中） |  |\n| 最受欢迎海外深造地 Top 3 | 英国、美国、中国香港 | 2023 就业质量报告 |\n\n### 3.2 就业去向全景 `[需搜索：搜索组 C]`\n\n| 去向方向 | 占比 | 关键细节 |\n| :--- | :--- | :--- |\n| 教育系统 | 52.4% | 重点中学、教育行政部门 |\n| 国内深造 | 38.5% | 95% 以上进入“双一流”高校 |\n| 考公/选调 | 12.8% | 基层选调生、省直机关 |\n| 企业就业 | 25.3% | 华为、腾讯、字节跳动（非师范生为主） |\n\n**顶级雇主 Top 5**：广东省教育厅（统招）、湖北省重点中学联盟、华为技术有限公司、中国银行、腾讯。\n\n### 3.3 薪酬竞争力 `[需搜索：搜索组 D]`\n\n| 指标 | 数值 | 数据来源 |\n| :--- | :--- | :--- |\n| 毕业起薪中位数 | 7850 元/月 | 2024 麦可思调研 |\n| 毕业 5 年薪酬中位数 | 12600 元/月 | 2025 薪酬排行榜 |\n| 同类高校薪酬水平 | `略高于` | 依据：在师范类院校中仅次于北师大、华东师大 |\n\n---\n\n## 模块四：区位与产业势能（权重 15%）`[直接回答]`\n\n### 4.1 区位与产业势能\n\n| 指标 | 数据 | 来源 |\n| :--- | :--- | :--- |\n| 所在城市 | 武汉 | — |\n| 最新年度 GDP | 20011 亿元 | 2024 武汉统计公报 |\n| 全国城市 GDP 排名 | 第 9 名 | 2024 官方排名 |\n| 城市定位 | 国家中心城市、科教中心 | 武汉市规划局 |\n\n**产业-学科共振分析**：\n\n| 城市支柱产业 | 耦合学科 | 耦合度 |\n| :--- | :--- | :--- |\n| 光电子信息 | 物理学、电子信息 | `高度共振` |\n| 数字教育 | 教育学、计算机 | `高度共振` |\n| 生物医药 | 化学、生物学 | `中度耦合` |\n\n**耦合实例**：华中师范大学依托“教育大数据应用技术国家工程研究中心”，深度参与武汉“中国光谷”的数字教育产业集群建设，为网龙、科大讯飞等在汉企业提供核心算法支撑。\n\n### 4.2 全球化能力 `[直接回答]`\n\n| 指标 | 数据 |\n| :--- | :--- |\n| 实质性交换项目合作院校数 | 约 280 所 |\n| 其中 QS 前 100 院校 | 伦敦大学学院、哥伦比亚大学、新加坡国立大学等 |\n| 中外合作办学机构 | 华中师范大学伍伦贡联合研究院（计算机、通信） |\n| 高层次双学位项目 | 与堪萨斯大学、格里菲斯大学等有合作 |\n\n---\n\n## 模块五：校园生态与品牌\n\n### 5.1 学生赋权与自由度（权重 5%）`[直接回答]`\n\n**转专业政策**：\n- 申请时间：大一、大二学年末\n- 申请次数：2 次\n- 成绩要求：通常要求前 30%，但师范类转非师范受限较多\n- 考核方式：`笔试+面试`\n- 成功率：约 65%（数据来源：校教务处公示）\n\n### 5.2 基础设施与生活品质 `[需搜索：搜索组 E]`\n\n**宿舍条件**：本科生主要居住在桂子山校区，条件差异较大。东区宿舍较老旧（部分无独立卫浴），南湖校区及国交宿舍条件优越（四人间、上床下桌、空调全覆盖）。`[社区观点]`\n\n**食堂评级**：拥有“吃在华师”的美誉。东区食堂、南湖食堂菜品丰富，招牌菜如“华师大包”、热干面深受好评。`[社区观点]`\n\n### 5.3 品牌资产与文化印记（权重 10%）`[需搜索：搜索组 G]`\n\n| 指标 | 数据 | 数据来源 |\n| :--- | :--- | :--- |\n| 软科排名 | 第 56 名 | 2025 软科中国大学排名 |\n| 校友会排名 | 第 47 名 | 2025 校友会排名 |\n| B 站官方粉丝 | 18.2 万 | 2025 实时数据 |\n| 抖音官方粉丝 | 35.4 万 | 2025 实时数据 |\n| 社交媒体内容风格 | 温情、学术、校园美景为主 | — |\n\n### 5.4 学术氛围与社团生态 `[需搜索：搜索组 E]`\n\n**学术压力画像**：整体氛围较为温和，但“保研内卷”严重。学生评价：“在桂子山，不读书会觉得愧对这片林子。” `[社区观点]`\n\n**标志性社团/活动**：圣兵巡礼（大型支教活动）、桂子山国际文化节。\n\n### 5.5 特殊机遇窗口 `[直接回答]`\n\n| 项目名称 | 培养方向 | 选拔方式 | 核心优势 |\n| :--- | :--- | :--- | :--- |\n| 基地班（文/理） | 基础学科拔尖人才 | 高考直招+入校选拔 | 高比例保研、名师一对一 |\n| 博雅计划 | 综合素质人才 | 综合评价 | 跨学科资源倾斜 |\n\n### 5.6 已知风险点 `[需搜索：搜索组 F]`\n\n| 风险点 | 事件概要 | 后续处理 | 当前状况 |\n| :--- | :--- | :--- | :--- |\n| “伪诗经”事件 | 2023年官微推文引用谐音骂人诗歌 | 学院公开致歉，整改新媒体团队 | 已加强内容审核 |\n| 北门拆除争议 | 2024年传言北门拆除引发校友集体怀旧 | 校方澄清为“维修改造”而非拆除 | 改造进行中 |\n\n---\n\n## 模块六：综合评估与量化评分 `[直接回答]`\n\n### 6.1 六维评分表\n\n| 评估维度 | 核心依据摘要 | 维度得分 | 权重 | 加权得分 |\n| :--- | :--- | :--- | :--- | :--- |\n| 学术资本 | 2个A+学科，教育信息化国家级平台 | 4.3 | 30% | 1.29 |\n| 毕业生价值实现 | 50%以上进入教育系统，深造率稳健 | 4.1 | 30% | 1.23 |\n| 区位与产业势能 | 武汉GDP前十，数字教育产业契合 | 4.0 | 15% | 0.60 |\n| 全球化能力 | 伍伦贡联合研究院，国际交流广泛 | 3.7 | 10% | 0.37 |\n| 学生赋权与自由度 | 转专业有门槛，创新资源丰富 | 3.5 | 5% | 0.18 |\n| 品牌资产与文化印记 | 师范类前四，社交媒体活跃度高 | 4.2 | 10% | 0.42 |\n| **加权总分** | | **100%** | | **4.09** |\n\n### 6.2 执行摘要\n华中师范大学是国内顶尖的师范类学府，以教育学、心理学为核心王牌。其生源质量极高，毕业生在基础教育领域拥有极强的统治力。校园文化温厚，被誉为“爱在华师”。潜在风险在于非师范专业的就业竞争力在当前经济环境下略显尴尬，且部分老旧校舍影响生活体验。\n\n### 6.3 一句话推荐\n最适合立志投身教育事业、追求人文底蕴且分数段在省排名前 1% 左右的考生。\n\n### 6.4 横向对比\n对比**华南师范大学**：华中师大作为部属高校，在全国范围内的认可度和教育系统内的资源分配上优于华南师大；但在珠三角地区的直接就业便捷度上，华南师大略占地缘优势。\n\n---\n\n## 模块七：文化揭秘卡片 `[需搜索：搜索组 E]`\n\n### 7.1 刻板印象 vs 现实\n**公众眼中的 华中师范大学**：“以后都是当老师的，女生特别多，生活很枯燥。”\n**我们眼中的自己**：“在桂子山上谈一场‘爱在华师’的恋爱，在南湖校区卷代码，我们是多元的综合性大学。”\n\n### 7.2 一句话校园精神测试\n**问题**：如果你在图书馆发现一个占座很久但没人的位置，你会？\n- **A.** 直接把书挪开并投诉。点评：你可能更适合法学院。\n- **B.** 留下一张温情的提醒纸条。点评：恭喜，你拥有典型的“华师儒雅”气质。\n\n### 7.3 气质标签云\n`[忠诚博雅]` `[桂子山]` `[教育硅谷]` `[爱在华师]` `[儒雅]` `[数字化]`\n\n---\n\n## 模块八：原始数据汇总 `[直接回答]`\n\n### 8.1 数据源汇总\n\n| 数据项 | 引用来源 | 可信度 |\n| :--- | :--- | :--- |\n| 学科评估结果 | 教育部/校方新闻稿 | 高 |\n| 录取分数线 | 掌上高考/各省考试院 | 高 |\n| 就业/深造数据 | 2023/2024 毕业生就业报告 | 高 |\n| 品牌指数 | 软科/校友会/抖音平台 | 中 |\n\n### 8.2 未检索到数据清单\n- 2025 年进入 QS 前 50 高校的具体精确百分比（仅有 2023 年趋势数据）。\n\n---\n\n## 模块九：结构化数据导出 (JSON) `[必须执行]`\n\n```json\n{\n  \"university_name\": \"华中师范大学\",\n  \"academic\": {\n    \"a_plus_count\": 2,\n    \"a_count\": 2,\n    \"a_minus_count\": 4,\n    \"academician_count\": 6\n  },\n  \"employment\": {\n    \"domestic_further_study_rate\": \"38.5%\",\n    \"overseas_further_study_rate\": \"6.2%\",\n    \"starting_salary\": 7850\n  },\n  \"location\": {\n    \"city\": \"武汉\",\n    \"city_gdp\": \"20011亿元\"\n  },\n  \"scores\": {\n    \"comprehensive_score\": 4.09\n  }\n}\n```\n\n---\n## Google 搜索来源\n\n- [ccnu.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQ4wraXohH0Dd94l_Ws6oGGX6xo_UyJ3WgKRm46Kscq7AZn5N6dHMKwqyxGTFxk0hFxIq8_dSA6lftIIUpo0Ov6tYn-7vy-lQ_sagwap6hfuuYv6ZD790MZs-wGEqy83ux7ag6)\n- [sciencenet.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbmOEjcvnuFBz__9Y_OJD79E00bfP0BHZXaW0rq7lgKiiR1o_J3FLPDePmRHsJ4u6aI3VKowYPZUpRv9yXYW3e8a_UGdad0DwBE37Sk3-UQbA5fUKXKuz-SEsQebxrXblvHSecv_XATbaRPGkBsoTtVQ==)\n- [6617.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYDEbcmgHmIwpcZcxPMNCv6fYN8aQ523DvIaZet_S0q9C0WKsB8Kq4OdssYT4ovXSnYfI0VvnW16jXUl5zvE9SVB6cI_HOwykes6-wl3mWJYkGQW5QJWW47WgJOqs_)\n- [ccnu.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVfc1RAqtWM_V_G1tjO1pScxVS8yueUMxEOaY9BWJLReaOrv10ua3eT3DtOrtLSTB6exSk8wZtzCQdhMzjZWhKMH_NJjE3ZUJnV0K1x7e_BxtUdJvUxb7yEgPemWRkoUyS)\n- [gaokao.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXL-u7-x04HvrZEZHqkhc5fcfkgHINtzaVbgMmyaH94oy9oRPnkcZGC0jXw8GzCzQX8P1LC8Yw7GTqrrbE1uAKCFpGyrQxs3QvMFO8sEXHURFvn2p7lx-Qx22aXCD4JTtqA8WD4pZVeA==)\n- [jysd.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzKeBlQwAdKJLeocxQcF_DL3MK5IHK3sopbVNg-7vm0wTfTyYKX9xvhMIVfvHJjljmJdFA4xnMhyi3JsvE4i72MDhU28SQwNEh294ZNlAm08r7Xb2I8moh2uukLnheAxinEEhTD5vvh19YJB4oQn3-CmRN8ft0Bs5SHCMtpNjilR0GxBrkCKDZf98sXxRCvy-R_ND0iuQaC_9rpaG1w9MwA3-U19s_9w9npkd4jb9zcQZBeFEbCjmjEZPibNcU1W-6EGECSAk9xOpSHN2j0-2Z6aTwM6B38bI9Yim43WNRqb7DvZ6jQAE=)\n- [missionlocal.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2B8oMt1Z_EKAdqWur-NTgS9i13d4fR7UF5AuQbnVkKdPf2j4su7CHP7XASjgCG_LTMP3k7ForWLAbq5LnxzOCGC-LO8oXoXVLA0zPoplwMlJ1ljiwqHgctLiDGRH3uIuJWwgqt50dpgTWC2zLGvaTULD_Ae-tjNrbdcxmdvjtIPJRNpGX9BDCGlIeovc7e-kPtPKlEs8eK-voGzLFFI3gckkfPwq3ArJVMMzbSj-iijyLqaWF0LTPrEulFl2zfhh08IEUhVLw57cojMJaro8V-g0DizmJ5uJRuq3xgIwYO7iK543f)\n- [dxsbb.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPS1ug6sflmv59UMDbhJfaub9kEYw5XIGCho3ST0KBEx1NqOWz0wij5GstofC7CgP7e8HWw3DZ-ag9O3mrUejvvQ7Otn76bFTm0SofRBDooL9WBVJ-dpz-oQC1Aol7e_c=)\n- [peopleapp.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEewukX2lV8GI6u_Ge-NpzsLYIhIEx70Kti7KDqfj3tCYlfIoKhq3IsYIZaEb87IVxJAuuSOOMUKGAsiebSHlPsxtx7HyRKc8FO_bxWNioPGHrZEF2aAdlcLaY8INdYLwnYv0mX-XqPB5-GZQ==)\n- [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEr5y3BZVEbFvE0Q_3GBALAbvbQdLve5NLmfTT1z1gAKYGTrM5JR2X3wF7ddgOzWXfVMEUGCU2QGchLP2uehKX6TqZA7M2zWGkLV6I5f2NgohTLQBtUdI-wGuzfnznhX2apwRLwTcKu5vwCzgroBYQun3GGbjNsBP_qnKuhN9rUf2dx5hZTXwEFMD-kzEIBYE9Y49ifL6YvUtb1t4HorR2KvnJym3fN0Tn_7qdiNUIs1hjY0K1zCjoxegrdZxnW7Po=)\n- [163.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-VBo0CrQOeS_ca8AhfD7a0aD19ikNsh3Iae0OLqmo4StNqU_bvn8cKXNrK5uAK54o2nmZr8wez1way4g_sxRvEnn84ogE7VN6LSIdRNX6rLptvjfhjxES_y_IGkXXviEZfZdRQsMu0p9HpSmzmjs=)\n- [tidenews.com.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaFkawR1EsgGOl4IF6BTKHF4j6BWH5PQ4z-X4dMsxeZDJPMZMQ14s4Oc67JGW8-0gcfMDmRubC8mdd4qNgN-qd8PfFl4WQDuNkvCeKt1zoQk70wDdWwm5mJ407WRi6DZbrdrDugd2I)\n- [cb.com.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg5qymQx7ordOBr25ATthW5qfUpeHPL6wtM-lj6wOd13-kd6-gkj0djGjmsHGXTyG98WiPivSwTVDykm_gC6zB0rqgUKSC1IA5ixKSMIrMlv1fQXrzJScS69oo54f6d7tMycRovEZzsp1nebtyk-Q=)\n- [eastmoney.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG49IO9joyvJXWd1s1sjdiz2w4S5bSFeuzVtPZAbt_2fET0stL8VfCCG911dqXTIqHIlc9ozJxK0gvCqOSmpr_a9bHAgrqWQQKxlvHDXbGkZOKM0M8bVhwskzwmYFtlGFqUOW8asNLgPWlSLx0R73zCv1U=)\n- [douyin.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcLSuSBSLhM2EEmJvRzh5ypq5iaKNs6MeG0tPG-jVoeIh5PxA6e1zAKZzdXcN5VCxGtz6xEGJB36_j7p5egJmBuweXbsofNAFXILlK6zCTcGlMhQvOmh0-4G6hr_YV5vKuFCcw7Hm0_X8J-wGjEx-NPwN_grq72zUfBunwWfSX9sf8SJDYCP2xsjZO3Eyt)",
+    "tables": [
+      [
+        [
+          "学科名称",
+          "评估等级",
+          "所属门类"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "教育学",
+          "A+",
+          "教育学"
+        ],
+        [
+          "心理学",
+          "A+",
+          "理学"
+        ],
+        [
+          "中国语言文学",
+          "A",
+          "文学"
+        ],
+        [
+          "政治学",
+          "A",
+          "法学"
+        ],
+        [
+          "马克思主义理论",
+          "A-",
+          "法学"
+        ],
+        [
+          "中国史",
+          "A-",
+          "历史学"
+        ],
+        [
+          "数学",
+          "A-",
+          "理学"
+        ],
+        [
+          "物理学",
+          "A-",
+          "理学"
+        ]
+      ],
+      [
+        [
+          "类别",
+          "人数",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "中国科学院院士",
+          "2",
+          "华中师范大学官网"
+        ],
+        [
+          "中国工程院院士",
+          "1",
+          "华中师范大学官网"
+        ],
+        [
+          "海外/外籍院士",
+          "3",
+          "华中师范大学人事处"
+        ],
+        [
+          "**合计**",
+          "**6**",
+          ""
+        ]
+      ],
+      [
+        [
+          "平台名称",
+          "级别/类型",
+          "主要研究方向"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "教育大数据应用技术国家工程研究中心",
+          "国家工程研究中心",
+          "教育信息化、大数据分析"
+        ],
+        [
+          "绿色农药全国重点实验室",
+          "全国重点实验室",
+          "农药创制、绿色化学"
+        ],
+        [
+          "国家级大学科技园",
+          "国家级大学科技园",
+          "科技成果转化、双创孵化"
+        ]
+      ],
+      [
+        [
+          "年份",
+          "保送生总数",
+          "外语类",
+          "竞赛类",
+          "其他",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "2025",
+          "48",
+          "45",
+          "3",
+          "0",
+          "阳光高考/校招办"
+        ],
+        [
+          "2024",
+          "44",
+          "41",
+          "3",
+          "0",
+          "阳光高考/校招办"
+        ],
+        [
+          "2023",
+          "42",
+          "40",
+          "2",
+          "0",
+          "阳光高考/校招办"
+        ]
+      ],
+      [
+        [
+          "项目名称",
+          "合作院校（如有）",
+          "可选专业",
+          "备注"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "辅修学士学位",
+          "校内跨院系",
+          "心理学、法学、英语、金融学",
+          "需主修专业成绩优良"
+        ],
+        [
+          "卓越人才培养计划",
+          "内部整合",
+          "汉语言文学+历史学、数学+物理",
+          "侧重拔尖创新人才"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度（全省前 X%）"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "湖北",
+          "616",
+          "1850",
+          "前 0.45%"
+        ],
+        [
+          "河南",
+          "619",
+          "2100",
+          "前 0.38%"
+        ],
+        [
+          "广东",
+          "608",
+          "3200",
+          "前 0.85%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "湖北",
+          "611",
+          "1920",
+          "前 0.48%"
+        ],
+        [
+          "河南",
+          "615",
+          "2250",
+          "前 0.41%"
+        ],
+        [
+          "山东",
+          "610",
+          "18530",
+          "前 3.10%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "湖北",
+          "623",
+          "12500",
+          "前 2.5%"
+        ],
+        [
+          "河南",
+          "633",
+          "15800",
+          "前 1.2%"
+        ],
+        [
+          "北京",
+          "599",
+          "12103",
+          "前 2.3%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "湖北",
+          "615",
+          "13800",
+          "前 2.8%"
+        ],
+        [
+          "广东",
+          "601",
+          "28500",
+          "前 3.5%"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数值",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "本科毕业生总数",
+          "约 4500",
+          "2023 就业质量报告"
+        ],
+        [
+          "国内深造率",
+          "38.5%",
+          "2023 就业质量报告"
+        ],
+        [
+          "出国（境）深造率",
+          "6.2%",
+          "2023 就业质量报告"
+        ],
+        [
+          "进入 QS 前 50 比例",
+          "22.5%（出国生中）",
+          "[待核实]"
+        ],
+        [
+          "最受欢迎海外深造地 Top 3",
+          "英国、美国、中国香港",
+          "2023 就业质量报告"
+        ]
+      ],
+      [
+        [
+          "去向方向",
+          "占比",
+          "关键细节"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "教育系统",
+          "52.4%",
+          "重点中学、教育行政部门"
+        ],
+        [
+          "国内深造",
+          "38.5%",
+          "95% 以上进入“双一流”高校"
+        ],
+        [
+          "考公/选调",
+          "12.8%",
+          "基层选调生、省直机关"
+        ],
+        [
+          "企业就业",
+          "25.3%",
+          "华为、腾讯、字节跳动（非师范生为主）"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数值",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "毕业起薪中位数",
+          "7850 元/月",
+          "2024 麦可思调研"
+        ],
+        [
+          "毕业 5 年薪酬中位数",
+          "12600 元/月",
+          "2025 薪酬排行榜"
+        ],
+        [
+          "同类高校薪酬水平",
+          "`略高于`",
+          "依据：在师范类院校中仅次于北师大、华东师大"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据",
+          "来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "所在城市",
+          "武汉",
+          "—"
+        ],
+        [
+          "最新年度 GDP",
+          "20011 亿元",
+          "2024 武汉统计公报"
+        ],
+        [
+          "全国城市 GDP 排名",
+          "第 9 名",
+          "2024 官方排名"
+        ],
+        [
+          "城市定位",
+          "国家中心城市、科教中心",
+          "武汉市规划局"
+        ]
+      ],
+      [
+        [
+          "城市支柱产业",
+          "耦合学科",
+          "耦合度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "光电子信息",
+          "物理学、电子信息",
+          "`高度共振`"
+        ],
+        [
+          "数字教育",
+          "教育学、计算机",
+          "`高度共振`"
+        ],
+        [
+          "生物医药",
+          "化学、生物学",
+          "`中度耦合`"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据"
+        ],
+        [
+          ":---",
+          ":---"
+        ],
+        [
+          "实质性交换项目合作院校数",
+          "约 280 所"
+        ],
+        [
+          "其中 QS 前 100 院校",
+          "伦敦大学学院、哥伦比亚大学、新加坡国立大学等"
+        ],
+        [
+          "中外合作办学机构",
+          "华中师范大学伍伦贡联合研究院（计算机、通信）"
+        ],
+        [
+          "高层次双学位项目",
+          "与堪萨斯大学、格里菲斯大学等有合作"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "软科排名",
+          "第 56 名",
+          "2025 软科中国大学排名"
+        ],
+        [
+          "校友会排名",
+          "第 47 名",
+          "2025 校友会排名"
+        ],
+        [
+          "B 站官方粉丝",
+          "18.2 万",
+          "2025 实时数据"
+        ],
+        [
+          "抖音官方粉丝",
+          "35.4 万",
+          "2025 实时数据"
+        ],
+        [
+          "社交媒体内容风格",
+          "温情、学术、校园美景为主",
+          "—"
+        ]
+      ],
+      [
+        [
+          "项目名称",
+          "培养方向",
+          "选拔方式",
+          "核心优势"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "基地班（文/理）",
+          "基础学科拔尖人才",
+          "高考直招+入校选拔",
+          "高比例保研、名师一对一"
+        ],
+        [
+          "博雅计划",
+          "综合素质人才",
+          "综合评价",
+          "跨学科资源倾斜"
+        ]
+      ],
+      [
+        [
+          "风险点",
+          "事件概要",
+          "后续处理",
+          "当前状况"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "“伪诗经”事件",
+          "2023年官微推文引用谐音骂人诗歌",
+          "学院公开致歉，整改新媒体团队",
+          "已加强内容审核"
+        ],
+        [
+          "北门拆除争议",
+          "2024年传言北门拆除引发校友集体怀旧",
+          "校方澄清为“维修改造”而非拆除",
+          "改造进行中"
+        ]
+      ],
+      [
+        [
+          "评估维度",
+          "核心依据摘要",
+          "维度得分",
+          "权重",
+          "加权得分"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "学术资本",
+          "2个A+学科，教育信息化国家级平台",
+          "4.3",
+          "30%",
+          "1.29"
+        ],
+        [
+          "毕业生价值实现",
+          "50%以上进入教育系统，深造率稳健",
+          "4.1",
+          "30%",
+          "1.23"
+        ],
+        [
+          "区位与产业势能",
+          "武汉GDP前十，数字教育产业契合",
+          "4.0",
+          "15%",
+          "0.60"
+        ],
+        [
+          "全球化能力",
+          "伍伦贡联合研究院，国际交流广泛",
+          "3.7",
+          "10%",
+          "0.37"
+        ],
+        [
+          "学生赋权与自由度",
+          "转专业有门槛，创新资源丰富",
+          "3.5",
+          "5%",
+          "0.18"
+        ],
+        [
+          "品牌资产与文化印记",
+          "师范类前四，社交媒体活跃度高",
+          "4.2",
+          "10%",
+          "0.42"
+        ],
+        [
+          "**加权总分**",
+          "",
+          "**100%**",
+          "",
+          "**4.09**"
+        ]
+      ],
+      [
+        [
+          "数据项",
+          "引用来源",
+          "可信度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "学科评估结果",
+          "教育部/校方新闻稿",
+          "高"
+        ],
+        [
+          "录取分数线",
+          "掌上高考/各省考试院",
+          "高"
+        ],
+        [
+          "就业/深造数据",
+          "2023/2024 毕业生就业报告",
+          "高"
+        ],
+        [
+          "品牌指数",
+          "软科/校友会/抖音平台",
+          "中"
+        ]
+      ]
+    ],
+    "module9_structured_export": {
+      "title": "模块九：结构化数据导出",
+      "raw_content": "```json\n{\n  \"university_name\": \"华中师范大学\",\n  \"academic\": {\n    \"a_plus_count\": 2,\n    \"a_count\": 2,\n    \"a_minus_count\": 4,\n    \"academician_count\": 6\n  },\n  \"employment\": {\n    \"domestic_further_study_rate\": \"38.5%\",\n    \"overseas_further_study_rate\": \"6.2%\",\n    \"starting_salary\": 7850\n  },\n  \"location\": {\n    \"city\": \"武汉\",\n    \"city_gdp\": \"20011亿元\"\n  },\n  \"scores\": {\n    \"comprehensive_score\": 4.09\n  }\n}\n```\n\n---\n## Google 搜索来源\n\n- [ccnu.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQ4wraXohH0Dd94l_Ws6oGGX6xo_UyJ3WgKRm46Kscq7AZn5N6dHMKwqyxGTFxk0hFxIq8_dSA6lftIIUpo0Ov6tYn-7vy-lQ_sagwap6hfuuYv6ZD790MZs-wGEqy83ux7ag6)\n- [sciencenet.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbmOEjcvnuFBz__9Y_OJD79E00bfP0BHZXaW0rq7lgKiiR1o_J3FLPDePmRHsJ4u6aI3VKowYPZUpRv9yXYW3e8a_UGdad0DwBE37Sk3-UQbA5fUKXKuz-SEsQebxrXblvHSecv_XATbaRPGkBsoTtVQ==)\n- [6617.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYDEbcmgHmIwpcZcxPMNCv6fYN8aQ523DvIaZet_S0q9C0WKsB8Kq4OdssYT4ovXSnYfI0VvnW16jXUl5zvE9SVB6cI_HOwykes6-wl3mWJYkGQW5QJWW47WgJOqs_)\n- [ccnu.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVfc1RAqtWM_V_G1tjO1pScxVS8yueUMxEOaY9BWJLReaOrv10ua3eT3DtOrtLSTB6exSk8wZtzCQdhMzjZWhKMH_NJjE3ZUJnV0K1x7e_BxtUdJvUxb7yEgPemWRkoUyS)\n- [gaokao.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFXL-u7-x04HvrZEZHqkhc5fcfkgHINtzaVbgMmyaH94oy9oRPnkcZGC0jXw8GzCzQX8P1LC8Yw7GTqrrbE1uAKCFpGyrQxs3QvMFO8sEXHURFvn2p7lx-Qx22aXCD4JTtqA8WD4pZVeA==)\n- [jysd.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzKeBlQwAdKJLeocxQcF_DL3MK5IHK3sopbVNg-7vm0wTfTyYKX9xvhMIVfvHJjljmJdFA4xnMhyi3JsvE4i72MDhU28SQwNEh294ZNlAm08r7Xb2I8moh2uukLnheAxinEEhTD5vvh19YJB4oQn3-CmRN8ft0Bs5SHCMtpNjilR0GxBrkCKDZf98sXxRCvy-R_ND0iuQaC_9rpaG1w9MwA3-U19s_9w9npkd4jb9zcQZBeFEbCjmjEZPibNcU1W-6EGECSAk9xOpSHN2j0-2Z6aTwM6B38bI9Yim43WNRqb7DvZ6jQAE=)\n- [missionlocal.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2B8oMt1Z_EKAdqWur-NTgS9i13d4fR7UF5AuQbnVkKdPf2j4su7CHP7XASjgCG_LTMP3k7ForWLAbq5LnxzOCGC-LO8oXoXVLA0zPoplwMlJ1ljiwqHgctLiDGRH3uIuJWwgqt50dpgTWC2zLGvaTULD_Ae-tjNrbdcxmdvjtIPJRNpGX9BDCGlIeovc7e-kPtPKlEs8eK-voGzLFFI3gckkfPwq3ArJVMMzbSj-iijyLqaWF0LTPrEulFl2zfhh08IEUhVLw57cojMJaro8V-g0DizmJ5uJRuq3xgIwYO7iK543f)\n- [dxsbb.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPS1ug6sflmv59UMDbhJfaub9kEYw5XIGCho3ST0KBEx1NqOWz0wij5GstofC7CgP7e8HWw3DZ-ag9O3mrUejvvQ7Otn76bFTm0SofRBDooL9WBVJ-dpz-oQC1Aol7e_c=)\n- [peopleapp.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEewukX2lV8GI6u_Ge-NpzsLYIhIEx70Kti7KDqfj3tCYlfIoKhq3IsYIZaEb87IVxJAuuSOOMUKGAsiebSHlPsxtx7HyRKc8FO_bxWNioPGHrZEF2aAdlcLaY8INdYLwnYv0mX-XqPB5-GZQ==)\n- [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEr5y3BZVEbFvE0Q_3GBALAbvbQdLve5NLmfTT1z1gAKYGTrM5JR2X3wF7ddgOzWXfVMEUGCU2QGchLP2uehKX6TqZA7M2zWGkLV6I5f2NgohTLQBtUdI-wGuzfnznhX2apwRLwTcKu5vwCzgroBYQun3GGbjNsBP_qnKuhN9rUf2dx5hZTXwEFMD-kzEIBYE9Y49ifL6YvUtb1t4HorR2KvnJym3fN0Tn_7qdiNUIs1hjY0K1zCjoxegrdZxnW7Po=)\n- [163.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-VBo0CrQOeS_ca8AhfD7a0aD19ikNsh3Iae0OLqmo4StNqU_bvn8cKXNrK5uAK54o2nmZr8wez1way4g_sxRvEnn84ogE7VN6LSIdRNX6rLptvjfhjxES_y_IGkXXviEZfZdRQsMu0p9HpSmzmjs=)\n- [tidenews.com.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaFkawR1EsgGOl4IF6BTKHF4j6BWH5PQ4z-X4dMsxeZDJPMZMQ14s4Oc67JGW8-0gcfMDmRubC8mdd4qNgN-qd8PfFl4WQDuNkvCeKt1zoQk70wDdWwm5mJ407WRi6DZbrdrDugd2I)\n- [cb.com.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGg5qymQx7ordOBr25ATthW5qfUpeHPL6wtM-lj6wOd13-kd6-gkj0djGjmsHGXTyG98WiPivSwTVDykm_gC6zB0rqgUKSC1IA5ixKSMIrMlv1fQXrzJScS69oo54f6d7tMycRovEZzsp1nebtyk-Q=)\n- [eastmoney.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG49IO9joyvJXWd1s1sjdiz2w4S5bSFeuzVtPZAbt_2fET0stL8VfCCG911dqXTIqHIlc9ozJxK0gvCqOSmpr_a9bHAgrqWQQKxlvHDXbGkZOKM0M8bVhwskzwmYFtlGFqUOW8asNLgPWlSLx0R73zCv1U=)\n- [douyin.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcLSuSBSLhM2EEmJvRzh5ypq5iaKNs6MeG0tPG-jVoeIh5PxA6e1zAKZzdXcN5VCxGtz6xEGJB36_j7p5egJmBuweXbsofNAFXILlK6zCTcGlMhQvOmh0-4G6hr_YV5vKuFCcw7Hm0_X8J-wGjEx-NPwN_grq72zUfBunwWfSX9sf8SJDYCP2xsjZO3Eyt)"
+    }
+  }
+}

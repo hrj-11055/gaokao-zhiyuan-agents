@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.754368",
+    "updated_at": "2026-05-09T18:38:18.312921",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖南工商大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "如果你是一名分数在省重点线上、性格沉稳、目标明确且希望在财经或数智管理领域发展的学生，湖南工商大学是性价比极高的选择；但如果你极度追求校园生活的自由度与浪漫主义，请慎重考虑。",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 3.6,
+      "location_advantage": 4.0,
+      "globalization": 3.5,
+      "student_empowerment": 2.5,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.585,
+    "one_sentence_recommend": "如果你是一名分数在省重点线上、性格沉稳、目标明确且希望在财经或数智管理领域发展的学生，湖南工商大学是性价比极高的选择；但如果你极度追求校园生活的自由度与浪漫主义，请慎重考虑。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "湖南财经经济学院",
+        "similarity": "同类院校",
+        "key_difference": "湖南工商大学在学科层次（有博点）、科研平台（有院士、有省实验室）上具有代差优势。"
+      },
+      {
+        "name": "长沙理工大学",
+        "similarity": "同类院校",
+        "key_difference": "长理工在传统工科（电力、交通）底蕴深厚，而湖南工商在“数智化”和“商科交叉”领域更具前瞻性。"
+      },
+      {
+        "name": "省外同类院校（如浙江工商、广东财经）",
+        "similarity": "同类院校",
+        "key_difference": "湖南工商在科研头衔上更胜一筹，但在地理位置带来的商业实习资源上略逊于沿海院校。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "湖南工商大学是一所处于**高速上升期**的省属重点财经类大学。在陈晓红院士的带领下，学校通过“新商科+新工科”的差异化竞争战略，成功在强手如林的湖南高等教育版图中杀出重围。其核心优势在于**顶尖的科研平台（湘江实验室）**和**极高的行业认可度**。尽管在校园管理风格上存在争议，但其生源质量和就业质量的硬指标均显示出其已具备冲击“双一流”学科建设高校的潜力。",
+      "one_sentence_recommend": "如果你是一名分数在省重点线上、性格沉稳、目标明确且希望在财经或数智管理领域发展的学生，湖南工商大学是性价比极高的选择；但如果你极度追求校园生活的自由度与浪漫主义，请慎重考虑。",
+      "horizontal_comparison": [
+        {
+          "name": "湖南财经经济学院",
+          "similarity": "同类院校",
+          "key_difference": "湖南工商大学在学科层次（有博点）、科研平台（有院士、有省实验室）上具有代差优势。"
+        },
+        {
+          "name": "长沙理工大学",
+          "similarity": "同类院校",
+          "key_difference": "长理工在传统工科（电力、交通）底蕴深厚，而湖南工商在“数智化”和“商科交叉”领域更具前瞻性。"
+        },
+        {
+          "name": "省外同类院校（如浙江工商、广东财经）",
+          "similarity": "同类院校",
+          "key_difference": "湖南工商在科研头衔上更胜一筹，但在地理位置带来的商业实习资源上略逊于沿海院校。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

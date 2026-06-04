@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.494522",
+    "updated_at": "2026-05-09T19:41:34.287284",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "成都工业学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "如果你是一名理科生，希望在成都或川南地区扎根，目标是进入国家电网、京东方或大型制造企业成为一名高级工程师，且高考分数在省控线上 40-60 分左右，成都工业学院是性价比极高的选择。",
+    "radar": {},
+    "weighted_score": 2.89,
+    "one_sentence_recommend": "如果你是一名理科生，希望在成都或川南地区扎根，目标是进入国家电网、京东方或大型制造企业成为一名高级工程师，且高考分数在省控线上 40-60 分左右，成都工业学院是性价比极高的选择。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "申硕压力",
+        "description": "虽然在建设中，但尚未正式落地的硕士点让部分优秀生源流失。"
+      },
+      {
+        "category": "校区差异",
+        "description": "两个校区在资源分配、校园文化上存在一定隔阂，部分学生对被分配到宜宾校区持有保留意见（尽管硬件更好）。"
+      },
+      {
+        "category": "男女比例",
+        "description": "作为典型工科校，男女比例约为 7:3，校园社交氛围相对单一。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：成都工业学院是四川省人民政府举办、四川省教育厅主管的公办全日制普通本科学校。作为全国首批“应用科技大学改革试点战略研究”高校，它不仅是一所大学，更是四川工业文明的传承者。其前身可追溯至 1913 年的四川职业学校，这种“职业教育”基因在升本后转化为极强的“工程应用”属性。\n*   **Ace（王牌优势）**：学校最核心的竞争力在于其**“行业嵌入度”**。它不是在围墙里办学，而是将专业建在产业链上。机械、电子、自动化等传统强项与成都的电子信息产业、宜宾的锂电产业高度契合。对于追求“毕业即就业”的学生来说，成工院提供的不仅是文凭，更是进入大型制造业企业的入场券。\n*   **Vibe（文化特质）**：校园氛围呈现出一种**“新时代的工匠精神”**。这里没有太多虚浮的学术口号，更多的是实验室里的焊花和机床前的实操。学生气质普遍务实、低调，具有极强的抗压能力和动手能力。\n*   **Risk（潜在风险）**：**“学历天花板”**是目前最大的痛点。由于尚未正式获得硕士学位授予权（虽已列为重点建设单位），学生若想深造必须跨校考研，本校无法提供保研路径。此外，学校的文科类专业相对边缘化，资源分配不均。",
+      "one_sentence_recommend": "如果你是一名理科生，希望在成都或川南地区扎根，目标是进入国家电网、京东方或大型制造企业成为一名高级工程师，且高考分数在省控线上 40-60 分左右，成都工业学院是性价比极高的选择。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "硬核工科",
+        "成都高新区后花园",
+        "百年老校",
+        "就业稳健",
+        "宜宾新贵",
+        "工程师摇篮",
+        "低调",
+        "产教融合"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.957602",
+    "updated_at": "2026-04-25T18:07:52.898146",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081701",
+    "name": "轻化工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "传统轻工行业的\"技术蓝领\"，就业稳、天花板低，靠绿色转型和读研突围。",
+    "radar": {
+      "market_return": 3.1,
+      "industry_outlook": 2.9,
+      "future_adaptability": 3.0,
+      "career_path": 3.0,
+      "education_resources": 3.2,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.02
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 已在造纸行业应用于工艺参数优化和智能控制（如博依特科技将老师傅经验固化为工艺 AI 模型，偏差减少 1%），常规工艺调整岗面临替代压力；但新材料研发、配方设计、环保工艺创新等需要跨学科综合判断的岗位较难被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "传统轻工行业的\"技术蓝领\"，就业稳、天花板低，靠绿色转型和读研突围。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "华南理工大学（A+）",
+        "四川大学（A+）"
+      ],
+      "tier_A": [
+        "江南大学（A）",
+        "陕西科技大学（A）"
+      ],
+      "tier_B": [
+        "广西大学",
+        "齐鲁工业大学",
+        "天津科技大学",
+        "南京林业大学",
+        "东华大学",
+        "天津工业大学",
+        "浙江理工大学",
+        "华东理工大学"
+      ],
+      "tier_C_note": "大连工业大学、湖北工业大学、武汉纺织大学、苏州大学、西安工程大学、北京服装学院、昆明理工大学、东北林业大学、福建农林大学、四川轻化工大学、河南工程学院、湖南工程学院、新疆科技学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

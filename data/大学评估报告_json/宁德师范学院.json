@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.817174",
+    "updated_at": "2026-05-12T11:55:03.487392",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "宁德师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 3.5,
+      "location_advantage": 4.5,
+      "globalization": 1.8,
+      "student_empowerment": 3.2,
+      "brand_asset": 3.0
+    },
+    "weighted_score": 3.21,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 495,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "宁德师范学院是一所**被低估的、具有极强爆发力**的地方本科院校。它成功地走出了一条“师范底色+产业驱动”的特色化办学道路。\n\n**核心优势**：\n1.  **产业嵌入度**：学校与宁德时代等企业的深度融合，使其在理工科就业领域拥有了超越其排名的竞争力。\n2.  **地方资源垄断**：作为宁德唯一的本科院校，它在地方政府支持、基础教育资源占有上具有排他性优势。\n\n**面临挑战**：\n1.  **人才引进压力**：在与福州、厦门高校的人才争夺战中，宁德的城市吸引力仍需加强。\n2.  **学科平衡**：如何在保持理工科强势增长的同时，提升传统文史哲专业的社会竞争力，是学校需要思考的问题。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

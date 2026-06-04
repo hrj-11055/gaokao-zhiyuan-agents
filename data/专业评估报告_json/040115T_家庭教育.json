@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.012157",
+    "updated_at": "2026-04-22T00:33:19.565784",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040115T_家庭教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的新兴专业，市场缺口巨大但本科刚刚起步，属于\"先上车再看路\"的探索期——前景可期，但路径尚未成熟。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.6,
+      "career_path": 2.6,
+      "education_resources": 2.0,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.23
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–6,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "家庭教育指导的核心是\"人—人\"互动——解读家庭情感动态、建立信任关系、提供个性化养育建议——这些高度依赖共情能力、情境判断和人际沟通，属于 AI 难以替代的领域。但知识性内容输出（如育儿科普文章）存在被 AI 工具辅助/替代的风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的新兴专业，市场缺口巨大但本科刚刚起步，属于\"先上车再看路\"的探索期——前景可期，但路径尚未成熟。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业 2024 年才首次招生，尚无培养成果积累）"
+      ],
+      "tier_A": [
+        "中华女子学院（首家开设，依托性别/家庭研究传统）",
+        "北京师范大学（教育学 A+，家庭教育研究方向硕士/博士）",
+        "华东师范大学（教育学 A+，家庭教育研究中心）"
+      ],
+      "tier_B": [
+        "临沂大学（全国第二家本科，配备家庭教育研究院与实训平台）",
+        "重庆第二师范学院（西部首家，市妇联+市教委联合共建）",
+        "南京师范大学（教育学 A，家庭教育研究团队）"
+      ],
+      "tier_C_note": "该专业尚在扩展期，未来可能有更多师范类院校开设。目前三所院校均为师范/教育特色院校，无\"纯蹭热度\"的 C 档问题。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

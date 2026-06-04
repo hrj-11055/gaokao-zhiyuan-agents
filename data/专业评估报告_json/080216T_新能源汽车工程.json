@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.153195",
+    "updated_at": "2026-04-25T04:32:46.351847",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080216T_新能源汽车工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在电动车爆发的时代风口，行业缺人百万，但这个 2019 年才设立的新专业，教学质量参差不齐，选对学校比选对专业更重要。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 2.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.75
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "新能源汽车工程涉及大量硬件设计（电池Pack结构、热管理系统、电驱系统）、物理仿真（CAE/CFD）、台架试验等需要实物交互和工程经验的环节，AI短期内难以替代。但智能化方向（自动驾驶算法、智能座舱软件）的纯代码工作面临AI编程工具的辅助冲击。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在电动车爆发的时代风口，行业缺人百万，但这个 2019 年才设立的新专业，教学质量参差不齐，选对学校比选对专业更重要。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "（该专业暂无传统意义上的\"王者级\"院校，以下为机械/车辆工程实力雄厚且新能源方向突出的综合推荐）"
+      ],
+      "tier_A": [
+        "江苏大学（A+排名，汽车工程底蕴深厚）",
+        "广东工业大学（A+排名）",
+        "中北大学（A排名，车辆工程省级一流专业基础上转型）",
+        "安徽工业大学（A排名）",
+        "山东理工大学（A排名）",
+        "华东交通大学（A排名）",
+        "青岛理工大学（A排名，教育部新工科专业）"
+      ],
+      "tier_B": [
+        "江苏科技大学",
+        "西华大学",
+        "广西师范大学",
+        "辽宁工业大学",
+        "上海电机学院",
+        "湖北汽车工业学院（十堰，汽车产业地理优势）",
+        "天津职业技术师范大学"
+      ],
+      "tier_C_note": "盐城工学院、常州工学院、广东技术师范大学、广东科技学院、安阳工学院、三亚学院等约40余所院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

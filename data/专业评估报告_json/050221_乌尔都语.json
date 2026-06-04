@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.048078",
+    "updated_at": "2026-04-23T21:13:02.438902",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050221",
+    "name": "乌尔都语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "一带一路的\"稀缺语言密码\"，就业近乎100%，但岗位总量极小，赌的是国运也是个人运气。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.0,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "乌尔都语属于\"低资源语言\"，全球主流大模型对其支持严重不足，数字化语料稀缺，AI翻译在专业领域错误率较高（如工程合同中将\"钢铁\"误译为\"普通金属\"）。短期内高质量人工翻译不可替代。但长期来看，随着大模型多语言能力提升，通用翻译场景的替代风险将上升。来源：2025 WAIC小语种论坛报道、第一财经"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "一带一路的\"稀缺语言密码\"，就业近乎100%，但岗位总量极小，赌的是国运也是个人运气。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学（国内南亚研究重镇，师资最强，校友网络覆盖外交部",
+        "学术界）"
+      ],
+      "tier_A": [
+        "北京外国语大学",
+        "广东外语外贸大学"
+      ],
+      "tier_B": [
+        "中国传媒大学（传媒方向特色）",
+        "西安外国语大学",
+        "云南民族大学（南亚东南亚区位优势）"
+      ],
+      "tier_C_note": "新疆师范大学、塔里木大学（新疆区位优势，面向中巴走廊西端）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

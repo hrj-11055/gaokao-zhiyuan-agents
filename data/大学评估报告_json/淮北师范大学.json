@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.836187",
+    "updated_at": "2026-05-11T18:51:36.977325",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "淮北师范大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "对于希望通过“考研”改变出身、或立志在安徽省内教育系统深耕的务实型考生，淮北师范大学是性价比极高的选择。",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 2.9,
+      "location_advantage": 2.2,
+      "globalization": 2.0,
+      "student_empowerment": 3.2,
+      "brand_asset": 3.0
+    },
+    "weighted_score": 2.7,
+    "one_sentence_recommend": "对于希望通过“考研”改变出身、或立志在安徽省内教育系统深耕的务实型考生，淮北师范大学是性价比极高的选择。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）：** 淮北师范大学（Huaibei Normal University）是一所具有深厚红色基因与煤炭工业背景的省属重点师范大学。作为皖北地区高等教育的制高点，它不仅承担着为安徽基础教育输送师资的重任，更在化学、材料等理工领域形成了独特的科研高地。\n\n**Ace（王牌优势）：** 学校的学术尖兵高度集中在理学领域。化学、材料科学、环境/生态学三大专业集群已稳居 ESI 全球前 1%，这在同类地方师范院校中并不多见。此外，其师范类专业的“就业护城河”极深，安徽省内特别是皖北地区的中小学校长、骨干教师中，淮师大校友占比极高，形成了强大的行业校友网络。\n\n**Vibe（文化特质）：** “务实”与“拼搏”是其灵魂。由于地理位置相对偏僻，校园内干扰较少，形成了极其浓厚的考研文化。学生普遍具有极强的危机感和向上流动的动力，图书馆与自习室的利用率长期处于高位，被外界誉为“寒门学子实现学历跃迁的跳板”。\n\n**Risk（潜在风险）：** 最大的制约因素在于“区位困境”。淮北市作为资源枯竭型转型城市，对高端人才的吸引力和留存力弱于合肥、芜湖等城市。这导致学校在引进海外高层次人才时面临挑战，且非师范类专业学生在本地实习、就业的空间相对狭窄，毕业后多流向长三角其他城市。",
+      "one_sentence_recommend": "对于希望通过“考研”改变出身、或立志在安徽省内教育系统深耕的务实型考生，淮北师范大学是性价比极高的选择。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

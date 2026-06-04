@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.945777",
+    "updated_at": "2026-04-28T03:57:37.390577",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130310",
+    "name": "动画",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "视觉创造者的乐园，也是\"肝帝\"的修罗场。行业起飞但人才严重过剩，头部吃肉、底部喝汤，没有热爱和天赋别碰。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.8,
+      "future_adaptability": 2.8,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.06
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI视频生成（Sora、可灵、Runway等）正在快速侵蚀动画行业的中间执行环节。原画生成、中间画自动补间、动作捕捉+AI驱动等技术已大量应用。但创意策划、叙事构建、审美判断和导演能力短期内仍不可替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "视觉创造者的乐园，也是\"肝帝\"的修罗场。行业起飞但人才严重过剩，头部吃肉、底部喝汤，没有热爱和天赋别碰。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国传媒大学",
+        "北京电影学院"
+      ],
+      "tier_A": [
+        "吉林动画学院",
+        "南京艺术学院",
+        "浙江传媒学院",
+        "四川美术学院",
+        "广州美术学院",
+        "中央美术学院"
+      ],
+      "tier_B": [
+        "武汉理工大学",
+        "同济大学",
+        "西安美术学院",
+        "天津美术学院",
+        "鲁迅美术学院",
+        "湖北美术学院",
+        "山东工艺美术学院",
+        "上海大学（上海美术学院）",
+        "江南大学",
+        "华南农业大学"
+      ],
+      "tier_C_note": "各省属综合性大学中开设动画专业的普通本科院校，如：成都大学、重庆大学、哈尔滨师范大学、广西艺术学院等。全国开设动画专业的院校超过400所，大部分属于此档。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

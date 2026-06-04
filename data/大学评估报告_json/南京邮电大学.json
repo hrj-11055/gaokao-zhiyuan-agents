@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.641054",
+    "updated_at": "2026-05-08T09:39:32.963632",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京邮电大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.8,
+      "location_advantage": 4.5,
+      "globalization": 3.5,
+      "student_empowerment": 3.2,
+      "brand_asset": 4.0
+    },
+    "weighted_score": 4.285,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity (身份)**：中国 ICT 行业的“黄埔军校”，就业导向型高校的巅峰之作。\n*   **Ace (王牌)**：无与伦比的通信、电子、计算机学科群，以及深植于华为、运营商等巨头的校友网络。\n*   **Vibe (氛围)**：硬核、务实、高压。这里没有太多的风花雪月，更多的是代码、电路图和对未来的职业规划。\n*   **Risk (风险)**：对于追求自由、多元化发展的学生来说，南邮的管理可能显得过于压抑；同时需注意行业周期性波动对就业的影响。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬核理工",
+        "华为直供站",
+        "晨跑打卡",
+        "代码工厂",
+        "务实",
+        "高性价比",
+        "邮电情怀",
+        "长三角 IT 堡垒"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

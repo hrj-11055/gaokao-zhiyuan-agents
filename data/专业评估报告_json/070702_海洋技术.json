@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.173836",
+    "updated_at": "2026-04-25T01:00:40.637646",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070702",
+    "name": "海洋技术",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "国家战略风口上的小众硬核赛道，深海经济万亿蓝海已开，但就业高度集中在沿海、深造依赖性强，非沿海名校慎入。",
+    "radar": {
+      "market_return": 3.3,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.49
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "海洋技术的核心工作涉及海上实地测量、声呐/遥感设备操作、水下机器人在复杂海洋环境中的部署与维护，这些高度依赖物理世界感知和现场决策的环节难以被 AI 完全替代。但海洋数据处理、遥感图像分析等环节正被 AI 加速辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略风口上的小众硬核赛道，深海经济万亿蓝海已开，但就业高度集中在沿海、深造依赖性强，非沿海名校慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国海洋大学",
+        "厦门大学"
+      ],
+      "tier_A": [
+        "天津大学",
+        "同济大学",
+        "大连理工大学（盘锦校区）"
+      ],
+      "tier_B": [
+        "河海大学",
+        "上海海洋大学",
+        "南京信息工程大学",
+        "江苏海洋大学",
+        "浙江海洋大学",
+        "广东海洋大学",
+        "河北工业大学"
+      ],
+      "tier_C_note": "天津科技大学、浙江工业大学、南通大学杏林学院、泉州师范学院、海南热带海洋学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

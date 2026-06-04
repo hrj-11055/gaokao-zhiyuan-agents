@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.098185",
+    "updated_at": "2026-04-21T01:40:36.602149",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "030501",
+    "name": "科学社会主义",
+    "category": "法学",
+    "recommendation_level": "yellow",
+    "summary": "全国仅一所高校开设本科的\"象牙塔\"专业，政策东风虽在，但就业面极窄、极度依赖深造，非铁了心走体制路线者慎入。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 2.6,
+      "future_adaptability": 2.8,
+      "career_path": 1.8,
+      "education_resources": 2.0,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.44
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~75%",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "政治理论解读、政策分析、意识形态工作等核心职能高度依赖价值判断、政治敏感性和人际沟通，这些是当前AI难以替代的领域。但基础文献检索、材料撰写等辅助性工作已被AI部分替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅一所高校开设本科的\"象牙塔\"专业，政策东风虽在，但就业面极窄、极度依赖深造，非铁了心走体制路线者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学（研究生层面学科顶尖）",
+        "北京大学（马克思主义理论A+）"
+      ],
+      "tier_A": [
+        "山东大学（全国唯一开设科学社会主义本科专业的高校，华岗特色班，双一流建设学科方向）"
+      ],
+      "tier_B": [
+        "清华大学",
+        "武汉大学",
+        "东北师范大学（马克思主义理论一级学科A+，有研究生层面科学社会主义方向）"
+      ],
+      "tier_C_note": "无。该专业本科仅山东大学开设，其余均为研究生层面。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

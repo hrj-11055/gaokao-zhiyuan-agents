@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.104949",
+    "updated_at": "2026-04-28T13:10:12.869727",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130406T_中国画",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "传统国粹的浪漫修行，极少数人成为名家，多数人靠教培和跨界谋生，天赋与家境缺一不可。",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 2.4,
+      "future_adaptability": 2.8,
+      "career_path": 2.6,
+      "education_resources": 3.2,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 2.5
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3500–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "中国画的核心技能——笔墨韵味、章法构图、意境营造——具有高度的手工性和个人风格独特性，AI 目前能生成图像但无法替代传统笔墨的物理质感和艺术家的创造性表达。但 AI 绘画对中低端商业美术市场已产生冲击，挤压了部分变现空间。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "传统国粹的浪漫修行，极少数人成为名家，多数人靠教培和跨界谋生，天赋与家境缺一不可。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央美术学院",
+        "中国美术学院"
+      ],
+      "tier_A": [
+        "南京艺术学院",
+        "西安美术学院",
+        "天津美术学院",
+        "广州美术学院",
+        "四川美术学院",
+        "鲁迅美术学院",
+        "湖北美术学院"
+      ],
+      "tier_B": [
+        "清华大学（美术学院）",
+        "首都师范大学",
+        "上海大学（上海美术学院）",
+        "南京师范大学",
+        "华东师范大学",
+        "广西艺术学院",
+        "云南艺术学院",
+        "山东艺术学院"
+      ],
+      "tier_C_note": "各省属综合类大学中设有中国画方向的院校，如山东师范大学、西北师范大学、湖南师范大学、浙江师范大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

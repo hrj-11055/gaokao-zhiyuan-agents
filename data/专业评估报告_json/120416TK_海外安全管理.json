@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.132153",
+    "updated_at": "2026-04-27T13:26:15.430820",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120416TK_海外安全管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"一带一路催生的蓝海新贵，赛道窄但竞争小，然而专业太新、院校太少、师资尚在'边学边教'，赌的是国运而非个人能力。\"",
+    "radar": {
+      "market_return": 3.3,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 1.8,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.2
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "海外安全管理的核心是实地风险判断、跨文化沟通、危机现场处置、人际信任建立，这些高度依赖人的临场判断和社交智能，AI可在情报分析、数据风险评估环节辅助，但无法替代现场安全官的角色。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"一带一路催生的蓝海新贵，赛道窄但竞争小，然而专业太新、院校太少、师资尚在'边学边教'，赌的是国运而非个人能力。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业尚无顶尖高校开设，亦无学科评估A类支撑）"
+      ],
+      "tier_A": [
+        "中国人民警察大学（唯一公安部直属开设院校，准军事化管理，校友会排名A++）"
+      ],
+      "tier_B": [
+        "福建警察学院",
+        "陕西警察学院"
+      ],
+      "tier_C_note": "无（开设院校极少，无C档院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

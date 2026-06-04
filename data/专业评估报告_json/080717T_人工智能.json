@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.103711",
+    "updated_at": "2026-04-25T10:33:04.533205",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080717T_人工智能",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "站在时代风口的最前沿，高薪与高门槛并存，但技术迭代极快、名校依赖严重，非顶尖院校需慎重考虑\"学了个寂寞\"。",
+    "radar": {
+      "market_return": 4.5,
+      "industry_outlook": 4.8,
+      "future_adaptability": 4.0,
+      "career_path": 3.5,
+      "education_resources": 3.8,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 4.31
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "12,000–25,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 时代的悖论——创造 AI 的人也面临 AI 替代风险。底层代码编写、简单模型调参、数据处理等执行层工作正被 AI 工具（如 Copilot、Cursor）快速渗透；但核心算法创新、跨学科系统设计、技术战略决策等需要原创性思考的工作难以替代。风险呈\"两极分化\"特征：高端安全，低端高危。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在时代风口的最前沿，高薪与高门槛并存，但技术迭代极快、名校依赖严重，非顶尖院校需慎重考虑\"学了个寂寞\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "南京大学",
+        "中国科学技术大学",
+        "上海交通大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "北京大学",
+        "哈尔滨工业大学",
+        "西安交通大学",
+        "西安电子科技大学",
+        "电子科技大学",
+        "华中科技大学",
+        "复旦大学",
+        "北京邮电大学",
+        "中国人民大学",
+        "中南大学",
+        "北京理工大学",
+        "北京航空航天大学"
+      ],
+      "tier_B": [
+        "东南大学",
+        "四川大学",
+        "同济大学",
+        "山东大学",
+        "武汉大学",
+        "中山大学",
+        "华南理工大学",
+        "北京交通大学",
+        "南京航空航天大学",
+        "天津大学",
+        "南开大学",
+        "北京科技大学",
+        "东北大学",
+        "厦门大学",
+        "重庆大学",
+        "大连理工大学",
+        "湖南大学",
+        "深圳大学",
+        "杭州电子科技大学",
+        "重庆邮电大学",
+        "南京邮电大学"
+      ],
+      "tier_C_note": "全国其余约 340+ 所开设人工智能专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

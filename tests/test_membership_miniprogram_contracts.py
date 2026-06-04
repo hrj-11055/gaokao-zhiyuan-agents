@@ -44,7 +44,9 @@ class MembershipMiniprogramContractTests(unittest.TestCase):
         self.assertIn("async activateLimitedFree", text)
         self.assertIn("async createPayment", text)
         self.assertIn("async pollOrder", text)
-        self.assertIn("uni.requestPayment", text)
+        self.assertIn("wx.requestVirtualPayment", text)
+        self.assertIn("data.virtualPayment", text)
+        self.assertNotIn("uni.requestPayment", text)
         self.assertIn("paymentUnavailableText", text)
         self.assertIn("isPaymentEnabled", text)
 

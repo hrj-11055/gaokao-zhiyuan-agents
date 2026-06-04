@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.059011",
+    "updated_at": "2026-04-25T20:25:45.738071",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082101",
+    "name": "武器系统与工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "\"国防铁饭碗，行业壁垒高、就业稳、起薪不低，但绑定军工体系、政审严格、转行极难——爱国理工男的硬核之选。\"",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 2.8,
+      "career_path": 2.6,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.56
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "武器系统的物理实验验证、靶场测试、涉密系统设计等核心环节高度依赖人工经验和安全审查，AI 难以替代。但部分仿真建模、数据分析类工作可能被 AI 工具辅助增强。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"国防铁饭碗，行业壁垒高、就业稳、起薪不低，但绑定军工体系、政审严格、转行极难——爱国理工男的硬核之选。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京理工大学（985/双一流/A+）",
+        "南京理工大学（211/双一流/A+）"
+      ],
+      "tier_A": [
+        "西北工业大学（985/B）",
+        "中北大学（省部共建/B+，兵器学科传统强校）"
+      ],
+      "tier_B": [
+        "空军工程大学（B-）",
+        "火箭军工程大学（B-）",
+        "陆军工程大学（C+）",
+        "西安工业大学（B）",
+        "沈阳理工大学（C+）"
+      ],
+      "tier_C_note": "航天工程大学（C）、重庆理工大学（C-）、长春理工大学（C-）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

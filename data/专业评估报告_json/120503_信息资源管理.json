@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.199645",
+    "updated_at": "2026-04-27T20:36:42.427733",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120503",
+    "name": "信息资源管理",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "图书情报的\"数字化新衣\"，名字好听但内核偏传统，就业面窄、薪资平庸，适合求稳进体制的佛系选手。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.0,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.03
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "信息资源的分类、编目、检索等核心技能正是 AI 大模型的强项——自动分类、语义检索、知识图谱构建正在替代传统人工操作。档案馆、图书馆的基础编目工作面临 AI 替代压力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "图书情报的\"数字化新衣\"，名字好听但内核偏传统，就业面窄、薪资平庸，适合求稳进体制的佛系选手。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "武汉大学",
+        "南京大学",
+        "中国人民大学"
+      ],
+      "tier_A": [
+        "北京大学",
+        "中山大学",
+        "南开大学",
+        "吉林大学",
+        "黑龙江大学",
+        "华中师范大学"
+      ],
+      "tier_B": [
+        "郑州大学",
+        "湘潭大学",
+        "云南大学",
+        "福建师范大学",
+        "河北大学",
+        "西北大学",
+        "四川大学"
+      ],
+      "tier_C_note": "各省市师范大学、综合性大学中开设信息资源管理/图书情报相关专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

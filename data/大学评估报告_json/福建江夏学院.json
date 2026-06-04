@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.825455",
+    "updated_at": "2026-05-12T12:39:53.950803",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "福建江夏学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.98,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "福建商学院",
+        "similarity": "同类院校",
+        "key_difference": "江夏学院在办学积淀（尤其是合并前的干部学院背景）、校园规模、硕士点建设进度以及省内选调生政策地位上，均领先于福建商学院。"
+      },
+      {
+        "name": "闽江学院",
+        "similarity": "同类院校",
+        "key_difference": "闽江学院作为综合性大学，学科覆盖面更广，且拥有更高的城市知名度；但江夏学院在财经、法学等垂直领域的专业化程度和行业资源更为集中。"
+      },
+      {
+        "name": "省外同类财经校（如广东金融学院）",
+        "similarity": "同类院校",
+        "key_difference": "江夏学院在地域影响力上稍逊，但在福建省内的垄断性优势使其毕业生在本地就业市场上极具竞争力。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "福建江夏学院是一所典型的**“行业依存型”**应用型本科高校。它不以学术研究的广度见长，而以在特定行业（财经、政法）的深度渗透为核心竞争力。\n\n-   **核心定位**：福建省属公办财经政法类应用型本科，福建省硕士学位授予培育单位。\n-   **王牌优势**：拥有极强的行业校友网络，尤其在福建省内的银行、税务、法院及基层政府部门。\n-   **文化特质**：务实、就业导向、低调。\n-   **潜在风险**：硕士点规模尚小，对于追求纯学术深造的学生来说，平台上限明显；省外知名度有待提升。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "福建商学院",
+          "similarity": "同类院校",
+          "key_difference": "江夏学院在办学积淀（尤其是合并前的干部学院背景）、校园规模、硕士点建设进度以及省内选调生政策地位上，均领先于福建商学院。"
+        },
+        {
+          "name": "闽江学院",
+          "similarity": "同类院校",
+          "key_difference": "闽江学院作为综合性大学，学科覆盖面更广，且拥有更高的城市知名度；但江夏学院在财经、法学等垂直领域的专业化程度和行业资源更为集中。"
+        },
+        {
+          "name": "省外同类财经校（如广东金融学院）",
+          "similarity": "同类院校",
+          "key_difference": "江夏学院在地域影响力上稍逊，但在福建省内的垄断性优势使其毕业生在本地就业市场上极具竞争力。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实就业",
+        "财经底色",
+        "政法基因",
+        "选调生摇篮",
+        "闽台融合",
+        "大学城枢纽"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

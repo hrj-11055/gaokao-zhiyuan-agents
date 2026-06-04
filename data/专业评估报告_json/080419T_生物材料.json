@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.135410",
+    "updated_at": "2026-04-25T05:55:35.092248",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080419T_生物材料",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "坐在生物医学+新材料两大黄金赛道交叉口，前景诱人，但2023年才首次招生，尚无毕业生数据可循，本科直出竞争力存疑，深造几乎是刚需。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.69
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "生物材料研发涉及材料合成实验、生物相容性测试、动物实验等高度依赖实体操作和经验直觉的环节，AI可辅助数据分析和分子模拟，但无法替代实验室动手能力和临床验证过程。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "坐在生物医学+新材料两大黄金赛道交叉口，前景诱人，但2023年才首次招生，尚无毕业生数据可循，本科直出竞争力存疑，深造几乎是刚需。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "华南理工大学（国内首设，材料科学与工程学科实力顶尖，生物材料科研积累深厚，自1980年代即有生物材料方向研究生）"
+      ],
+      "tier_A": [
+        "暂无（专业开设院校过少，其余院校尚需时间积累）"
+      ],
+      "tier_B": [
+        "康复大学（2024年新设，医学康复特色鲜明，生物材料与康复器械方向有天然契合），井冈山大学（地方院校，材料学科有一定基础）"
+      ],
+      "tier_C_note": "齐鲁理工学院（民办院校，专业刚起步）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

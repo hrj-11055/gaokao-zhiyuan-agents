@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.930914",
+    "updated_at": "2026-04-23T18:46:19.553707",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050204",
+    "name": "法语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "通往法语世界的钥匙，非洲市场红利可期，但AI翻译正在蚕食低端岗位，非名校生需靠\"法语+\"复合技能破局。",
+    "radar": {
+      "market_return": 3.1,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.27
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI翻译（DeepSeek、豆包等大模型）在一般性文本翻译上已接近人工水平，基础翻译/笔译岗位正被快速替代。但高级口译、跨文化商务谈判、外交斡旋等需要人际感知和现场判断的场景仍难替代。北外教授王华树指出\"生成式AI正以革命性方式重构教育生态\"（来源：网易、央视教育频道）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "通往法语世界的钥匙，非洲市场红利可期，但AI翻译正在蚕食低端岗位，非名校生需靠\"法语+\"复合技能破局。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学",
+        "上海外国语大学",
+        "南京大学",
+        "北京大学"
+      ],
+      "tier_A": [
+        "武汉大学",
+        "复旦大学",
+        "广东外语外贸大学",
+        "浙江大学",
+        "北京语言大学",
+        "西安外国语大学",
+        "中国人民大学",
+        "北京师范大学",
+        "外交学院",
+        "对外经济贸易大学"
+      ],
+      "tier_B": [
+        "四川外国语大学",
+        "大连外国语大学",
+        "天津外国语大学",
+        "首都师范大学",
+        "华东师范大学",
+        "厦门大学",
+        "中山大学",
+        "中南财经政法大学",
+        "云南大学",
+        "广西民族大学"
+      ],
+      "tier_C_note": "全国约100+所普通本科院校开设法语专业，包括各省市师范类、综合类院校，如河北大学、济南大学、贵州师范大学等。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

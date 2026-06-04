@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.206691",
+    "updated_at": "2026-04-27T12:27:17.596319",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120403",
+    "name": "劳动与社会保障",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "体制内的\"铁饭碗\"专业，考公对口率极高，但体制外就业面窄、起薪偏低，非考公族慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 3.5,
+      "education_resources": 3.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.23
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "社保政策设计、劳动争议调解、制度公平性评估等核心工作需要制度理解力和人际判断力，AI可辅助数据处理和政策模拟，但难以替代\"制度设计+人文关怀\"的复合判断。不过，基层社保经办窗口岗、简单报销核算等事务性工作面临较高AI替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "体制内的\"铁饭碗\"专业，考公对口率极高，但体制外就业面窄、起薪偏低，非考公族慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "清华大学",
+        "北京大学"
+      ],
+      "tier_A": [
+        "浙江大学",
+        "武汉大学",
+        "南京大学",
+        "西安交通大学",
+        "四川大学",
+        "复旦大学",
+        "北京师范大学"
+      ],
+      "tier_B": [
+        "中南财经政法大学",
+        "上海财经大学",
+        "中央财经大学",
+        "首都经济贸易大学",
+        "华东师范大学",
+        "厦门大学",
+        "中山大学",
+        "华中科技大学",
+        "西南财经大学"
+      ],
+      "tier_C_note": "各省属重点综合大学及财经类院校，如江西财经大学、浙江工商大学、山东财经大学、天津财经大学、云南大学、广西大学等约80余所普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

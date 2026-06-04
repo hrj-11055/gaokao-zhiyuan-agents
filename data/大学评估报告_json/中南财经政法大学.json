@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.634039",
+    "updated_at": "2026-05-09T15:46:33.973277",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中南财经政法大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "如果你目标明确，渴望在金融、法律或财会领域获得一张硬核的“入场券”，且具备极强的抗压能力，中南财经政法大学是性价比最高的选择。",
+    "radar": {
+      "academic_capital": 4.6,
+      "graduate_value": 4.7,
+      "location_advantage": 4.3,
+      "globalization": 3.9,
+      "student_empowerment": 3.8,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 4.87,
+    "one_sentence_recommend": "如果你目标明确，渴望在金融、法律或财会领域获得一张硬核的“入场券”，且具备极强的抗压能力，中南财经政法大学是性价比最高的选择。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：中国财经政法教育的旗舰，兼具“五院四系”的法学深度与“四大财经”的经管广度。\n*   **Ace（王牌优势）**：法学与应用经济学的全国顶尖地位，以及由此衍生的在金融、法律、审计行业的统治级就业资源。\n*   **Vibe（文化特质）**：极度务实、就业导向、充满竞争。这里不是象牙塔，而是职业生涯的预演场。\n*   **Risk（潜在风险）**：校内竞争压力巨大（内卷严重），部分校区基础设施老化，体测等管理细节存在争议。",
+      "one_sentence_recommend": "如果你目标明确，渴望在金融、法律或财会领域获得一张硬核的“入场券”，且具备极强的抗压能力，中南财经政法大学是性价比最高的选择。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "精致务实",
+        "考证狂魔",
+        "南湖职业技术学院",
+        "经法管融通",
+        "华南校友圈",
+        "热干面灵魂",
+        "法考幸存者",
+        "CPA 预备役"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

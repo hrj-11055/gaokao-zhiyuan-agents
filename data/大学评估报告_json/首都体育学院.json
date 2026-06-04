@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.668625",
+    "updated_at": "2026-05-09T14:22:41.176660",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "首都体育学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.8,
+      "graduate_value": 3.5,
+      "location_advantage": 4.5,
+      "globalization": 3.7,
+      "student_empowerment": 3.2,
+      "brand_asset": 4.0
+    },
+    "weighted_score": 3.8,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "空间瓶颈",
+        "description": "本部校区难以承载日益增长的学生规模。目前学校正通过“一校多区”战略（如延庆校区、北校区）进行化解，但多校区运行带来的交通和管理成本是学生需要考虑的。"
+      },
+      {
+        "category": "非体育专业边缘化风险",
+        "description": "部分纯文科专业学生反映在校内资源分配中，竞技体育类专业更受重视。学校已意识到此问题，正在通过“体医工融合”项目将文科专业纳入科研体系。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "首都体育学院（CUPES）作为北京市属唯一的体育类高等学府，已成功从传统的“体育师范”转型为“高水平特色型大学”。其核心竞争力在于“体医工融合”的前瞻性布局，以及作为“北京国际奥林匹克学院”承办地的独特政治与文化地位。在学术层面，体育学 A- 的评级确保了其在全国体育院校中的第一梯队地位；在产业层面，学校深度嵌入北京冬奥遗产开发与智慧体育产业，为学生提供了极高的实战平台。\n\n然而，学校也面临明显的物理空间制约。本部校区面积较小，在一定程度上限制了大规模硬件设施的扩张。此外，非体育类专业（如新闻、管理）虽然具有体育垂直领域的深度，但在泛互联网或综合金融等大市场的横向竞争力仍需通过“体育+”的复合背景来强化。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

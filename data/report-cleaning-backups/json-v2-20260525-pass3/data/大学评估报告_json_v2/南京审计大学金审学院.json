@@ -1,0 +1,736 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generated_at": "2026-05-20T07:58:06.234245",
+    "updated_at": "2026-05-08T03:18:50.021548",
+    "source_file": "南京审计大学金审学院.md",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ],
+    "cleaning_version": "report-source-clean-v1"
+  },
+  "layer1_overview": {
+    "name": "南京审计大学金审学院",
+    "location": "南京仙林大学城",
+    "type": "公办",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 3.2,
+      "location_advantage": 4.2,
+      "globalization": 2.5,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.0
+    },
+    "weighted_score": 2.98,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "summary": ""
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {
+      "title": "1.1 学科金字塔",
+      "raw_content": "作为独立学院，南京审计大学金审学院不直接参与教育部的学科评估（A类学科通常仅授予公办重点大学）。其学科实力主要体现为“省级一流本科专业”建设。\n\n| 学科/专业名称 | 评估等级/级别 | 所属门类 |\n| --- | --- | --- |\n| 审计学 | 省级一流本科专业 | 管理学 |\n| 资产评估 | 省级一流本科专业 | 管理学 |\n| 会计学 | 校级重点学科 | 管理学 |\n| 金融学 | 校级重点学科 | 经济学 |\n\n**A 类学科总数**：0 个（注：独立学院不参与全国学科评估排名）\n\n**学科强项集中领域**：\n高度聚焦于“大审计”框架。依托母体南京审计大学的资源，金审学院在审计、会计、财务管理领域构建了完整的应用型人才培养体系。其教学大纲深度对接 CPA（注册会计师）和 ACCA（特许公认会计师）考证需求，具有极强的职业导向性。"
+    },
+    "module2_student_competitiveness": {
+      "title": "2.1 文科/历史组录取数据",
+      "raw_content": "#### 南京审计大学金审学院 2025 年文科/历史组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度（全省前 X%） |\n| --- | --- | --- | --- |\n| 江苏 | 525 |  |  |\n| 安徽 | 512 |  |  |\n\n#### 南京审计大学金审学院 2024 年文科/历史组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 江苏 | 509 | 38,215 | 约 10.5% |\n| 四川 | 499 | 42,105 | 约 18.2% |\n\n#### 南京审计大学金审学院 2023 年文科/历史组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 江苏 | 502 | 39,762 | 约 11.2% |\n\n**文科生源深度分析**：\n金审学院在江苏省内的历史组录取分数线长期维持在本科线上 30 分左右。由于其“审计”标签，吸引了大量希望通过民办本科跳板进入财经行业的考生。趋势显示，分数线逐年小幅攀升，反映出在就业压力增大的背景下，考生对专业确定性的追求超过了对学校公办性质的追求。"
+    },
+    "module3_graduate_value": {
+      "title": "3.2 就业去向全景",
+      "raw_content": "| 去向方向 | 占比 | 关键细节 |\n| --- | --- | --- |\n| 国内深造 | 12.4% | 主要流向南京审计大学、南京财经大学 |\n| 出国深造 | 3.5% | 集中在商科硕士项目 |\n| 考公/选调 | 8.2% | 审计局、税务局基层岗位 |\n| 企业就业 | 65.4% | 会计师事务所、银行、金融租赁 |\n| 其他 | 10.5% | 灵活就业、待就业 |\n\n**顶级雇主 Top 5**：\n1. 天健会计师事务所\n2. 立信会计师事务所\n3. 江苏银行\n4. 南京银行\n5. 顺丰速运（财务岗）"
+    },
+    "module4_location_industry": {
+      "title": "4.1 区位与产业势能",
+      "raw_content": "| 指标 | 数据 | 来源 |\n| --- | --- | --- |\n| 所在城市 | 南京市 | — |\n| 最新年度 GDP | 17,420 亿元 (2023) | 南京市统计局 |\n| 全国城市 GDP 排名 | 第 10 名 | 官方统计 |\n| 城市定位 | 长三角特大城市、东部地区重要金融中心 | 官方规划 |\n\n**产业-学科共振分析**：\n| 城市支柱产业 | 耦合学科 | 耦合度 |\n| --- | --- | --- |\n| 金融服务业 | 金融学、会计学 | 高度共振 |\n| 软件与信息服务 | 计算机、信息安全 | 中度耦合 |\n| 商务服务（审计） | 审计学 | 高度共振 |\n\n**耦合实例**：\n南京作为江苏省金融中心，拥有大量银行总部及会计师事务所分所。金审学院学生在仙林大学城即可通过校招进入位于建邺区金融城的机构实习，实现“校内学习-校外实习”的无缝对接。"
+    },
+    "module5_campus_ecosystem": {
+      "title": "5.3 品牌资产与文化印记",
+      "raw_content": "| 指标 | 数据 | 数据来源 |\n| --- | --- | --- |\n| 软科民办大学排名 | 第 30-50 名区间 | 软科 2024 |\n| 校友会独立学院排名 | 前 20 名 | 校友会 2025 |\n| B 站官方粉丝 | 0.8 万 | B 站 |\n| 抖音官方粉丝 | 2.1 万 | 抖音 |\n| 社交媒体内容风格 | 严谨、招生宣传导向 | — |"
+    },
+    "module6_comprehensive_evaluation": {
+      "title": "6.1 六维评分表",
+      "raw_content": "| 评估维度 | 核心依据摘要 | 维度得分 |\n| --- | --- | --- |\n| 学术资本 | 依托母体南审资源，审计学为省级一流专业，无A类学科 | 2.2 |\n| 毕业生价值实现 | 审计/会计就业认可度高，深造率约10%-15%，起薪中等 | 3.2 |\n| 区位与产业势能 | 位于南京仙林大学城，金融与审计产业耦合度极高 | 4.2 |\n| 全球化能力 | 共享母体国际审计资源，但独立项目较少 | 2.5 |\n| 学生赋权与自由度 | 转专业政策相对宽松，创新创业依托仙林大学城资源 | 3.5 |\n| 品牌资产与文化印记 | “小南审”标签效应显著，在民办财经类中排名靠前 | 3.0 |"
+    },
+    "module7_culture_cards": {
+      "title": "7.2 一句话校园精神测试",
+      "raw_content": "**问题**：周末早上 8 点，你最可能出现在哪里？\n- **A.** 仙林中心逛街。 → 点评：你可能选错学校了。\n- **B.** 图书馆刷《会计》真题。 → 点评：纯正金审人，事务所欢迎你。"
+    },
+    "module8_raw_data": {
+      "title": "8.1 数据源汇总",
+      "raw_content": "| 数据项 | 引用来源 | 可信度 |\n| --- | --- | --- |\n| 录取分数线 | 江苏省教育考试院 | 高 |\n| 就业率 | 2023 届毕业生就业质量报告 | 高 |\n| 宿舍/食堂 | 知乎/小红书学生评价 | 中 |\n| 转设进度 | 学校 2025 教职工大会纪要 | 高 |"
+    }
+  },
+  "layer4_supplement": {
+    "full_raw_content": "# 南京审计大学金审学院深度评估报告（2023–2025）\n\n## 模块六：综合评估与量化评分\n\n### 6.1 六维评分表\n\n| 评估维度 | 核心依据摘要 | 维度得分 |\n| --- | --- | --- |\n| 学术资本 | 依托母体南审资源，审计学为省级一流专业，无A类学科 | 2.2 |\n| 毕业生价值实现 | 审计/会计就业认可度高，深造率约10%-15%，起薪中等 | 3.2 |\n| 区位与产业势能 | 位于南京仙林大学城，金融与审计产业耦合度极高 | 4.2 |\n| 全球化能力 | 共享母体国际审计资源，但独立项目较少 | 2.5 |\n| 学生赋权与自由度 | 转专业政策相对宽松，创新创业依托仙林大学城资源 | 3.5 |\n| 品牌资产与文化印记 | “小南审”标签效应显著，在民办财经类中排名靠前 | 3.0 |\n\n### 6.2 执行摘要\n- **Identity（核心定位）**：依托国家审计署共建高校（南京审计大学）背景的财经类独立学院。\n- **Ace（王牌优势）**：审计学、会计学专业的行业认可度，在民办本科中具有极强的就业竞争优势。\n- **Vibe（文化特质）**：务实、考证导向、半军事化管理色彩（受母体影响）。\n- **Risk（潜在风险）**：正处于“转设”关键期，未来校名变更及办学性质调整存在不确定性。\n\n### 6.3 一句话推荐\n最适合高考分数在本科线上 30-50 分，目标明确为进入会计师事务所或银行系统的务实型考生。\n\n### 6.4 横向对比\n对比**南京财经大学红山学院**：金审学院在“审计”这一细分领域拥有绝对的品牌溢价，生源质量在江苏省内独立学院中长期稳居第一梯队；而红山学院在通用财经领域（如国贸、物流）分布更广。金审的短板在于学科单一性较强，且目前面临转设更名的品牌重塑压力。\n\n---\n\n## 模块一：学术资本\n\n### 1.1 学科金字塔\n\n作为独立学院，南京审计大学金审学院不直接参与教育部的学科评估（A类学科通常仅授予公办重点大学）。其学科实力主要体现为“省级一流本科专业”建设。\n\n| 学科/专业名称 | 评估等级/级别 | 所属门类 |\n| --- | --- | --- |\n| 审计学 | 省级一流本科专业 | 管理学 |\n| 资产评估 | 省级一流本科专业 | 管理学 |\n| 会计学 | 校级重点学科 | 管理学 |\n| 金融学 | 校级重点学科 | 经济学 |\n\n**A 类学科总数**：0 个（注：独立学院不参与全国学科评估排名）\n\n**学科强项集中领域**：\n高度聚焦于“大审计”框架。依托母体南京审计大学的资源，金审学院在审计、会计、财务管理领域构建了完整的应用型人才培养体系。其教学大纲深度对接 CPA（注册会计师）和 ACCA（特许公认会计师）考证需求，具有极强的职业导向性。\n\n### 1.2 顶尖智力资产\n\n金审学院的师资力量采取“自有+共享”模式，核心学术带头人多来自南京审计大学。\n\n| 类别 | 人数 | 数据来源 |\n| --- | --- | --- |\n| 中国科学院院士 | 0 | 学校官网 |\n| 中国工程院院士 | 0 | 学校官网 |\n| 海外/外籍院士 | 0 | 学校官网 |\n| **合计** | **0** |  |\n\n**代表人物**：，主要学术骨干为南京审计大学派驻的资深教授，负责审计学与会计学的教学督导。\n\n### 1.3 国家级科研平台\n\n| 平台名称 | 级别/类型 | 主要研究方向 |\n| --- | --- | --- |\n| 绿色金融与可持续发展研究院 | 省级合作平台 | 绿色金融、环境审计 |\n| [未检索到] | 国家级平台 | — |\n\n### 1.4 保送生与特殊招生\n\n| 年份 | 保送生总数 | 外语类 | 竞赛类 | 其他 | 数据来源 |\n| --- | --- | --- | --- | --- | --- |\n| 2025 | 0 | 0 | 0 | 0 | 阳光高考 |\n| 2024 | 0 | 0 | 0 | 0 | 阳光高考 |\n| 2023 | 0 | 0 | 0 | 0 | 阳光高考 |\n\n**录取难度评估**：较低。依据：独立学院目前不具备招收保送生、强基计划等特殊类型招生的资格，主要通过普通高考及江苏省“专转本”招生。\n\n### 1.5 双学位与辅修项目\n\n| 项目名称 | 合作院校（如有） | 可选专业 | 备注 |\n| --- | --- | --- | --- |\n| 微专业项目 | 校内 | 智能审计、大数据会计 | 侧重技能提升 |\n| 辅修专业 | 南京审计大学（部分共享） | 金融、法学 | 需跨校区申请 |\n\n---\n\n## 模块二：生源竞争力\n\n### 2.1 文科/历史组录取数据\n\n#### 南京审计大学金审学院 2025 年文科/历史组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度（全省前 X%） |\n| --- | --- | --- | --- |\n| 江苏 | 525 |  |  |\n| 安徽 | 512 |  |  |\n\n#### 南京审计大学金审学院 2024 年文科/历史组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 江苏 | 509 | 38,215 | 约 10.5% |\n| 四川 | 499 | 42,105 | 约 18.2% |\n\n#### 南京审计大学金审学院 2023 年文科/历史组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 江苏 | 502 | 39,762 | 约 11.2% |\n\n**文科生源深度分析**：\n金审学院在江苏省内的历史组录取分数线长期维持在本科线上 30 分左右。由于其“审计”标签，吸引了大量希望通过民办本科跳板进入财经行业的考生。趋势显示，分数线逐年小幅攀升，反映出在就业压力增大的背景下，考生对专业确定性的追求超过了对学校公办性质的追求。\n\n### 2.2 理科/物理组录取数据\n\n#### 南京审计大学金审学院 2025 年理科/物理组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 江苏 | 500 | 162,612 | 约 35.2% |\n\n#### 南京审计大学金审学院 2024 年理科/物理组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 江苏 | 505 | 158,421 | 约 34.8% |\n| 云南 | 442 | 89,210 | 约 25.1% |\n\n#### 南京审计大学金审学院 2023 年理科/物理组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 江苏 | 488 | 139,208 | 约 32.5% |\n\n**理科生源深度分析**：\n物理组考生在选择金审时，更多倾向于“计算机+审计”或“金融科技”方向。江苏省内位次相对稳定在 14万-16万名之间。对于理科生而言，该校是典型的“分尽其用”型选择，适合位次在中后段但希望获得财经专业背景的考生。\n\n---\n\n## 模块三：毕业生价值实现\n\n### 3.1 深造质量\n\n| 指标 | 数值 | 数据来源 |\n| --- | --- | --- |\n| 本科毕业生总数 | 2,748 人 | 2023 质量报告 |\n| 国内深造率 | 12.4% |  |\n| 出国（境）深造率 | 3.5% |  |\n| 进入 QS 前 50 比例 | < 1% | （社区反馈，需核验） |\n| 最受欢迎海外深造地 Top 3 | 英国、澳大利亚、香港 | （社区反馈，需核验） |\n\n### 3.2 就业去向全景\n\n| 去向方向 | 占比 | 关键细节 |\n| --- | --- | --- |\n| 国内深造 | 12.4% | 主要流向南京审计大学、南京财经大学 |\n| 出国深造 | 3.5% | 集中在商科硕士项目 |\n| 考公/选调 | 8.2% | 审计局、税务局基层岗位 |\n| 企业就业 | 65.4% | 会计师事务所、银行、金融租赁 |\n| 其他 | 10.5% | 灵活就业、待就业 |\n\n**顶级雇主 Top 5**：\n1. 天健会计师事务所\n2. 立信会计师事务所\n3. 江苏银行\n4. 南京银行\n5. 顺丰速运（财务岗）\n\n### 3.3 薪酬竞争力\n\n| 指标 | 数值 | 数据来源 |\n| --- | --- | --- |\n| 毕业起薪中位数 | 5,200 元/月 |  |\n| 毕业 5 年薪酬中位数 | 9,800 元/月 | （社区反馈，需核验） |\n| 同类高校薪酬水平 | 略高于 | 依据：审计专业溢价 |\n\n---\n\n## 模块四：区位与全球化\n\n### 4.1 区位与产业势能\n\n| 指标 | 数据 | 来源 |\n| --- | --- | --- |\n| 所在城市 | 南京市 | — |\n| 最新年度 GDP | 17,420 亿元 (2023) | 南京市统计局 |\n| 全国城市 GDP 排名 | 第 10 名 | 官方统计 |\n| 城市定位 | 长三角特大城市、东部地区重要金融中心 | 官方规划 |\n\n**产业-学科共振分析**：\n| 城市支柱产业 | 耦合学科 | 耦合度 |\n| --- | --- | --- |\n| 金融服务业 | 金融学、会计学 | 高度共振 |\n| 软件与信息服务 | 计算机、信息安全 | 中度耦合 |\n| 商务服务（审计） | 审计学 | 高度共振 |\n\n**耦合实例**：\n南京作为江苏省金融中心，拥有大量银行总部及会计师事务所分所。金审学院学生在仙林大学城即可通过校招进入位于建邺区金融城的机构实习，实现“校内学习-校外实习”的无缝对接。\n\n### 4.2 全球化能力\n\n| 指标 | 数据 |\n| --- | --- |\n| 实质性交换项目合作院校数 | 约 10 所 |\n| 其中 QS 前 100 院校 | 未检索到独立项目（多为母体共享） |\n| 中外合作办学机构 | 无 |\n| 高层次双学位项目 | ACCA 国际人才培养班 |\n\n---\n\n## 模块五：校园生态与品牌\n\n### 5.1 学生赋权与自由度\n\n**转专业政策**：\n- 申请时间：大一学年末\n- 申请次数：1 次\n- 成绩要求：通常要求前 30%\n- 考核方式：面试\n- 成功率：约 60%（数据来源：（社区反馈，需核验））\n\n### 5.2 基础设施与生活品质\n\n**宿舍条件**：\n位于仙林校区，标准四人间，配备空调、独立卫浴和热水器。宿舍楼下有自助洗衣房。相比于老校区，仙林的硬件设施在江苏独立学院中属于上乘。 （社区反馈，需核验）\n\n**食堂评级**：\n共享仙林大学城丰富的餐饮资源。校内食堂口味偏向苏帮菜与淮扬菜，价格适中。特色推荐：二楼的砂锅面和掉渣饼。 （社区反馈，需核验）\n\n### 5.3 品牌资产与文化印记\n\n| 指标 | 数据 | 数据来源 |\n| --- | --- | --- |\n| 软科民办大学排名 | 第 30-50 名区间 | 软科 2024 |\n| 校友会独立学院排名 | 前 20 名 | 校友会 2025 |\n| B 站官方粉丝 | 0.8 万 | B 站 |\n| 抖音官方粉丝 | 2.1 万 | 抖音 |\n| 社交媒体内容风格 | 严谨、招生宣传导向 | — |\n\n### 5.4 学术氛围与社团生态\n\n**学术压力画像**：\n压力主要来自“考证”。图书馆常年满座，尤其是 CPA 考试前夕。学生普遍反映：“在金审不考证等于没上大学。” （社区反馈，需核验）\n\n**标志性社团/活动**：\n审计文化节、模拟审计大赛。\n\n### 5.5 特殊机遇窗口\n\n| 项目名称 | 培养方向 | 选拔方式 | 核心优势 |\n| --- | --- | --- | --- |\n| ACCA 特色班 | 国际注册会计师 | 入学二次选拔 | 嵌入国际课程，部分科目免考 |\n\n### 5.6 已知风险点\n\n| 风险点 | 事件概要 | 后续处理 | 当前状况 |\n| --- | --- | --- | --- |\n| 转设不确定性 | 独立学院需脱离母体转设，校名可能变更 | 正在推进中 | 2025-2026 关键期 |\n| 招生欺诈风险 | 校外机构散布“保录包过”虚假信息 | 学校发布严正声明 | 官方持续辟谣 |\n\n---\n\n## 模块七：文化揭秘卡片\n\n### 7.1 刻板印象 vs 现实\n- **公众眼中的金审**：“花钱就能上的南审低配版。”\n- **我们眼中的自己**：“除了学费贵，考证压力和就业认可度其实不输普通公办。”\n\n### 7.2 一句话校园精神测试\n**问题**：周末早上 8 点，你最可能出现在哪里？\n- **A.** 仙林中心逛街。 → 点评：你可能选错学校了。\n- **B.** 图书馆刷《会计》真题。 → 点评：纯正金审人，事务所欢迎你。\n\n### 7.3 气质标签云\n[考证狂魔] [审计黄埔分号] [仙林名媛] [务实主义] [转设焦虑]\n\n---\n\n## 模块八：原始数据汇总\n\n### 8.1 数据源汇总\n| 数据项 | 引用来源 | 可信度 |\n| --- | --- | --- |\n| 录取分数线 | 江苏省教育考试院 | 高 |\n| 就业率 | 2023 届毕业生就业质量报告 | 高 |\n| 宿舍/食堂 | 知乎/小红书学生评价 | 中 |\n| 转设进度 | 学校 2025 教职工大会纪要 | 高 |\n\n### 8.2 未检索到数据清单\n- 2025 年确切的毕业生起薪中位数（标注为 ）\n- 具体的 QS 前 50 深造名单（标注为 [未检索到]）\n\n---\n\n## 模块九：结构化数据导出 (JSON)\n\n```json\n{\n\"university_name\": \"南京审计大学金审学院\",\n\"academic\": {\n\"a_plus_count\": 0,\n\"a_count\": 0,\n\"a_minus_count\": 0,\n\"academician_count\": 0,\n\"key_specialties\": [\"审计学\", \"资产评估\", \"会计学\"]\n},\n\"employment\": {\n\"domestic_further_study_rate\": \"12.4%\",\n\"overseas_further_study_rate\": \"3.5%\",\n\"starting_salary\": 5200,\n\"top_employers\": [\"天健\", \"立信\", \"江苏银行\"]\n},\n\"location\": {\n\"city\": \"南京\",\n\"city_gdp\": \"17420亿元\",\n\"district\": \"仙林大学城\"\n},\n\"scores\": {\n\"comprehensive_score\": 2.98,\n\"academic_capital\": 2.2,\n\"employment_value\": 3.2,\n\"location_advantage\": 4.2\n},\n\"risk_factor\": \"转设更名不确定性\"\n}\n```\n\n---\n## Google 搜索来源\n\n- [dxsbb.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHEMc-GXLidd0UvK-yDY0wkdl8VPWoMPm0Vu_dsKkVh3TwuAxUkR7j1jPxCxhiw4dbgRWhrvZzy0sIlguUNHXCUsiu3f9IvvJgJlkR_aC3ubFbAa2OUGz3ki_Gn7v87EQ==)\n- [gaokaozhitongche.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4Kysx_QK21mdGnm9hcczZPdboc7jKVgMCaJhQPBPJprjbI2rtizTUn61f1IzX6YpsH4X_CLq4K0WMs8534rcP1g20Bak331UFQzZUERW6DqEXL1r-FywwnLH3NtSyufpCY1ghwNKUiKfYVil8bzre)\n- [dxsbb.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhJc0tNhqt7KMJUSBYhxpOBLivv6ZM9wU2beEGZT6OjdeNKPw9Ti8OE_cP527l-nxKirYvFY20GwdOlLpjsQ6xK1SIDi5dpsclQFLy6maDilt6r-ZECIJgeju3oY4AOXr1)\n- [gaokao.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYX8wMkHmKoK2SKMXuOrIo3EzC90KB_GhyXuvQ4MAGZ9ffq3IhEo58PG8fQ--lY6H-5UTEdRIrdeCmJTnoB-91PHne9S_lIMbkk7zjmb25HVHNiVS8_p_0scCeiQ==)\n- [shanghairanking.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvU_N6ZkIZgEVL_qqZS5_EpvvAH0PhQ4ERQiwyzktYdUBfZGUACIcvjKZjytJLkVU4tJMZILEEElp-5Eo-4-appub9QIMrKxmnHApr08nn_0IvF6ypfsdOhzNfD6eaNvjY10CMry0GHERxy9wQzIMUViOipAYQm0oOdmDvuuc=)\n- [dxsbb.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrL13zFuVTAWkzbXePlWVUZ4v_12oO2V5ig_4h05MApeVzE6DrNMT3CIDX-49oG1NbxSWLiRwJJsG59HGVhGEIwBW6LdxsIRySNrlGaFdbW7ZIzo61RTWu5l42LnXGD04=)\n- [dxsbb.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGhzYHEnNYhEX1QCg6eNrqx8DcOuYHfjSCFwck5G0abRoRovkVHW-HmqjqKsxrIv9jm_LQGgTNzdrUlH4gFRgqwuZYnt_jE3eck4s5q_hpfDJV9ntbqji-6H7lZN7CQ1XQ=)\n- [cscse.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYxe1XonE-Mwzd1doqkoj8XHgsywtM4XnLbdPlOO7H76rmA4Ay42HwjxeCXusFTs_fyt8pIdikrWglN2mXZi8FG9kiSDUsrt3L1GkzmGK-w1epsWtYPzGSGeM9ccaulOyXqMwz91tSvUmEjcpfGx76W7IlFZDuhnkaPc4UWWMqMYw02D3XA6LtIjiWH-BNXXZW7hg=)\n- [shobserver.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdeVv3pwHJbWf3tAAd6lOWDFe9K1qA8QE8UwzX2ikEl36oTss23_8E6zEC3PqhvWUXnRq5BkzUo6qKCVBkmYwYs9X5Xa_sOiqKCv1AnBLDvVieksxfSdqeSQnUg1aoDy7b7H3Uo7l9Aqef6JFwcV8w7cEWiD2lluR275l71sKyq_80fXpWXE-NlV1HgkY=)\n- [nau.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLJCpA0FrYtEvIJ39deIfCeiW9QnWisMUMQSPRzVe9gOA7ghpw4X13gEGI1Bg-GZmlkBZkthJAcMEj12bJh1EU4jkhSYJPudiEJZAgAKL_fy-CqzBF5U3MpH-xOZZJ214eV1yotvdfY2rx72H9iygZDXBWyXs=)\n- [showxue.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEK1kDWA1yAwaaKnIenpX2Gx0NDJURMvSDX_xK_exltYxRih_9LfUvJQ2VqmCi7aWUJpoO5B1wf1rim3K0M2idO73pMMYV4p8ztuxvySJ6Ril6LKN4KqKppqxBQ6WH3SX-aiZn6fGfr2EP4)\n- [saskatchewan.ca](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcLWwNeUqMKQU2fhOpGWuppKL4gAoEdYGNczvJj_KwO05Dr9OPA7t5Hnn3i_aNINKUwChafzxAUmxHL8k3jGr2ctA0KBpAcJNQ4_K6Gk8-MyS_5p2uF0PlaxUQu7s=)\n- [gaokaozhitongche.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGNTsPW6q0Jg9gZ9HACuczl9Vp0R75NhIx_n-S1ddUdq8AA3_Aj7URbPZwDFM7L83F8xmKKTrgqlYdn5CsQ88tppfEfd7t359nUJ2fc_h6EriVs4GkVXl5hdgzwNrhrVadI2vA9D3fO7vAPGAYEWc6U)\n- [nau.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF73HPYXO29on_TTuyZVIwFtMTZyZB21DaV1Ak4Negsxp2ry3TWg-wWO67wRPqalUTCMenOUssTfGd8lw9i1qgxSFzhq3L9D_KSi2EvOGEfuvsZe7PuyeUumWy0WaJZF1FbQg==)\n- [6617.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYgGcc_npVliMZkgACLWDSynd-2JjgJOqK-wBcjLYaojA9Qv-404N1o5xmoypM_aEnaXVq_QjngZWIhZlXViySobr3yaU2ME84A6PMR8AHp-5Iywtay23ySYgv8GDJJA==)\n- [dxsbb.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG00zmHaSeJMAuiW26huodqRPXb-9nFf0RcmbwARj-7M4f52YP1zzJD275XGnpuO3xqtdS2AvwCoHBpvqYMPh1c85w1TMdc72mwDuTWWAX3n60CM71qZNgchXbrcQWPHCE=)\n- [dakao100.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8U7i1WXqNvx4w-Bqte93z3Q8rVaX0gXleNjD2c9LPjHAAcl8Ou9tB4KcQOiXijCC5ynGNM2Toh8pruweScpf3t8O0_OSkHF2xDXm9raYNIGN8PgdY2L9jfuL_UJrW1qZ8beKjtuI=)\n- [just.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGk-dTVsU1muFJ1pBw4haVzXGpPpxUD1k7RezM2fFAEBCT-9_bwwoIE3cvqz4zms-6sU6mITc6h4arZBDGEOefvqqW6livF3ZuTfybvA5EPtQLUtSRj6msFTaQsq2KHZHPVCM27vwAijjH8DxJeNTPKS6uvMQk=)\n- [ifeng.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8D--zivJ1wBsfWsC41t3Qv8dBWa8675yIO4TY_eNFWAzh6pZpl-hXpLN3VolchjQGCxq61DFlEgpSUd8j_KkqpqTLf697jYTWnRrT4SO-5nIDkxYSuUMmLGRrt4SnOIokYT_ki15qgal1fBOQNTgrNHthnY1YH-tbxvqzE-RQKeuCd9pxHFtjGcwN14wK5UIrv1bJ5AHRbcBotahn1jgGvMyXj0ET67E6r7pJoyARWkr6TGebrCuVcp1JivNAXLWA1IxIDlA=)\n- [shobserver.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlNP04pn_3R56E7_CTH0fmB_9TmhzAiiyL-Z3oBLW0oDGcUBZvYquosyD0NJPEI50K9BinIiP6EamDcpYmawoTTtkjigzADfwztTEnhECRVUlDNNDy0r3IeiKR3t7wpWZTtiIetOuK8Ur3BgFXwYGp7NUvuXSzNdLnzdyuDoMH79v119xvouUPDbXOCkw=)\n- [xhby.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_8ljf5TZirC6o8WmXHMDsOQ1UVmfgOsPwleD4dX3LsW6pY9EAa-9lFV4CWGx_CZBybOE49meGQU11zxZzsX52T0PRwZ6VuXyYTwjGx6EOYEmfJbU9mPzC7iLocSLQAs4PGKvrrtJHJVq3BAjGqlaydbw8qn0v)\n- [hzgrys.net](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEcVQ95qVUTclWmBo6rgoynp81rndkLHP5ot0j0deek-7bOTMJB_7tYGxxo5AGXiouyNJD-GBmUFmrDL2IjHis2w_3rZPwr1MY4UAqddHKzXG-BQOrPFsEvpiGadFSapahL)",
+    "tables": [
+      [
+        [
+          "评估维度",
+          "核心依据摘要",
+          "维度得分",
+          "权重",
+          "加权得分"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "学术资本",
+          "依托母体南审资源，审计学为省级一流专业，无A类学科",
+          "2.2",
+          "30%",
+          "0.66"
+        ],
+        [
+          "毕业生价值实现",
+          "审计/会计就业认可度高，深造率约10%-15%，起薪中等",
+          "3.2",
+          "30%",
+          "0.96"
+        ],
+        [
+          "区位与产业势能",
+          "位于南京仙林大学城，金融与审计产业耦合度极高",
+          "4.2",
+          "15%",
+          "0.63"
+        ],
+        [
+          "全球化能力",
+          "共享母体国际审计资源，但独立项目较少",
+          "2.5",
+          "10%",
+          "0.25"
+        ],
+        [
+          "学生赋权与自由度",
+          "转专业政策相对宽松，创新创业依托仙林大学城资源",
+          "3.5",
+          "5%",
+          "0.18"
+        ],
+        [
+          "品牌资产与文化印记",
+          "“小南审”标签效应显著，在民办财经类中排名靠前",
+          "3.0",
+          "10%",
+          "0.30"
+        ],
+        [
+          "**加权总分**",
+          "",
+          "**100%**",
+          "",
+          "**2.98**"
+        ]
+      ],
+      [
+        [
+          "学科/专业名称",
+          "评估等级/级别",
+          "所属门类"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "审计学",
+          "省级一流本科专业",
+          "管理学"
+        ],
+        [
+          "资产评估",
+          "省级一流本科专业",
+          "管理学"
+        ],
+        [
+          "会计学",
+          "校级重点学科",
+          "管理学"
+        ],
+        [
+          "金融学",
+          "校级重点学科",
+          "经济学"
+        ]
+      ],
+      [
+        [
+          "类别",
+          "人数",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "中国科学院院士",
+          "0",
+          "学校官网"
+        ],
+        [
+          "中国工程院院士",
+          "0",
+          "学校官网"
+        ],
+        [
+          "海外/外籍院士",
+          "0",
+          "学校官网"
+        ],
+        [
+          "**合计**",
+          "**0**",
+          ""
+        ]
+      ],
+      [
+        [
+          "平台名称",
+          "级别/类型",
+          "主要研究方向"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "绿色金融与可持续发展研究院",
+          "省级合作平台",
+          "绿色金融、环境审计"
+        ],
+        [
+          "[未检索到]",
+          "国家级平台",
+          "—"
+        ]
+      ],
+      [
+        [
+          "年份",
+          "保送生总数",
+          "外语类",
+          "竞赛类",
+          "其他",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "2025",
+          "0",
+          "0",
+          "0",
+          "0",
+          "阳光高考"
+        ],
+        [
+          "2024",
+          "0",
+          "0",
+          "0",
+          "0",
+          "阳光高考"
+        ],
+        [
+          "2023",
+          "0",
+          "0",
+          "0",
+          "0",
+          "阳光高考"
+        ]
+      ],
+      [
+        [
+          "项目名称",
+          "合作院校（如有）",
+          "可选专业",
+          "备注"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "微专业项目",
+          "校内",
+          "智能审计、大数据会计",
+          "侧重技能提升"
+        ],
+        [
+          "辅修专业",
+          "南京审计大学（部分共享）",
+          "金融、法学",
+          "需跨校区申请"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度（全省前 X%）"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "江苏",
+          "525",
+          "（需核验）",
+          "（需核验）"
+        ],
+        [
+          "安徽",
+          "512",
+          "（需核验）",
+          "（需核验）"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "江苏",
+          "509",
+          "38,215",
+          "约 10.5%"
+        ],
+        [
+          "四川",
+          "499",
+          "42,105",
+          "约 18.2%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "江苏",
+          "502",
+          "39,762",
+          "约 11.2%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "江苏",
+          "500",
+          "162,612",
+          "约 35.2%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "江苏",
+          "505",
+          "158,421",
+          "约 34.8%"
+        ],
+        [
+          "云南",
+          "442",
+          "89,210",
+          "约 25.1%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "江苏",
+          "488",
+          "139,208",
+          "约 32.5%"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数值",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "本科毕业生总数",
+          "2,748 人",
+          "2023 质量报告"
+        ],
+        [
+          "国内深造率",
+          "12.4%",
+          "（需核验）"
+        ],
+        [
+          "出国（境）深造率",
+          "3.5%",
+          "（需核验）"
+        ],
+        [
+          "进入 QS 前 50 比例",
+          "< 1%",
+          "（社区反馈，需核验）"
+        ],
+        [
+          "最受欢迎海外深造地 Top 3",
+          "英国、澳大利亚、香港",
+          "（社区反馈，需核验）"
+        ]
+      ],
+      [
+        [
+          "去向方向",
+          "占比",
+          "关键细节"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "国内深造",
+          "12.4%",
+          "主要流向南京审计大学、南京财经大学"
+        ],
+        [
+          "出国深造",
+          "3.5%",
+          "集中在商科硕士项目"
+        ],
+        [
+          "考公/选调",
+          "8.2%",
+          "审计局、税务局基层岗位"
+        ],
+        [
+          "企业就业",
+          "65.4%",
+          "会计师事务所、银行、金融租赁"
+        ],
+        [
+          "其他",
+          "10.5%",
+          "灵活就业、待就业"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数值",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "毕业起薪中位数",
+          "5,200 元/月",
+          "（需核验）"
+        ],
+        [
+          "毕业 5 年薪酬中位数",
+          "9,800 元/月",
+          "（社区反馈，需核验）"
+        ],
+        [
+          "同类高校薪酬水平",
+          "略高于",
+          "依据：审计专业溢价"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据",
+          "来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "所在城市",
+          "南京市",
+          "—"
+        ],
+        [
+          "最新年度 GDP",
+          "17,420 亿元 (2023)",
+          "南京市统计局"
+        ],
+        [
+          "全国城市 GDP 排名",
+          "第 10 名",
+          "官方统计"
+        ],
+        [
+          "城市定位",
+          "长三角特大城市、东部地区重要金融中心",
+          "官方规划"
+        ]
+      ],
+      [
+        [
+          "城市支柱产业",
+          "耦合学科",
+          "耦合度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "金融服务业",
+          "金融学、会计学",
+          "高度共振"
+        ],
+        [
+          "软件与信息服务",
+          "计算机、信息安全",
+          "中度耦合"
+        ],
+        [
+          "商务服务（审计）",
+          "审计学",
+          "高度共振"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据"
+        ],
+        [
+          ":---",
+          ":---"
+        ],
+        [
+          "实质性交换项目合作院校数",
+          "约 10 所"
+        ],
+        [
+          "其中 QS 前 100 院校",
+          "未检索到独立项目（多为母体共享）"
+        ],
+        [
+          "中外合作办学机构",
+          "无"
+        ],
+        [
+          "高层次双学位项目",
+          "ACCA 国际人才培养班"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "软科民办大学排名",
+          "第 30-50 名区间",
+          "软科 2024"
+        ],
+        [
+          "校友会独立学院排名",
+          "前 20 名",
+          "校友会 2025"
+        ],
+        [
+          "B 站官方粉丝",
+          "0.8 万",
+          "B 站"
+        ],
+        [
+          "抖音官方粉丝",
+          "2.1 万",
+          "抖音"
+        ],
+        [
+          "社交媒体内容风格",
+          "严谨、招生宣传导向",
+          "—"
+        ]
+      ],
+      [
+        [
+          "项目名称",
+          "培养方向",
+          "选拔方式",
+          "核心优势"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "ACCA 特色班",
+          "国际注册会计师",
+          "入学二次选拔",
+          "嵌入国际课程，部分科目免考"
+        ]
+      ],
+      [
+        [
+          "风险点",
+          "事件概要",
+          "后续处理",
+          "当前状况"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "转设不确定性",
+          "独立学院需脱离母体转设，校名可能变更",
+          "正在推进中",
+          "2025-2026 关键期"
+        ],
+        [
+          "招生欺诈风险",
+          "校外机构散布“保录包过”虚假信息",
+          "学校发布严正声明",
+          "官方持续辟谣"
+        ]
+      ],
+      [
+        [
+          "数据项",
+          "引用来源",
+          "可信度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "录取分数线",
+          "江苏省教育考试院",
+          "高"
+        ],
+        [
+          "就业率",
+          "2023 届毕业生就业质量报告",
+          "高"
+        ],
+        [
+          "宿舍/食堂",
+          "知乎/小红书学生评价",
+          "中"
+        ],
+        [
+          "转设进度",
+          "学校 2025 教职工大会纪要",
+          "高"
+        ]
+      ]
+    ],
+    "module9_structured_export": {
+      "title": "模块九：结构化数据导出",
+      "raw_content": "```json\n{\n\"university_name\": \"南京审计大学金审学院\",\n\"academic\": {\n\"a_plus_count\": 0,\n\"a_count\": 0,\n\"a_minus_count\": 0,\n\"academician_count\": 0,\n\"key_specialties\": [\"审计学\", \"资产评估\", \"会计学\"]\n},\n\"employment\": {\n\"domestic_further_study_rate\": \"12.4%\",\n\"overseas_further_study_rate\": \"3.5%\",\n\"starting_salary\": 5200,\n\"top_employers\": [\"天健\", \"立信\", \"江苏银行\"]\n},\n\"location\": {\n\"city\": \"南京\",\n\"city_gdp\": \"17420亿元\",\n\"district\": \"仙林大学城\"\n},\n\"scores\": {\n\"comprehensive_score\": 2.98,\n\"academic_capital\": 2.2,\n\"employment_value\": 3.2,\n\"location_advantage\": 4.2\n},\n\"risk_factor\": \"转设更名不确定性\"\n}\n```\n\n---"
+    }
+  }
+}

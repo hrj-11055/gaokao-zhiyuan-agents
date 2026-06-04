@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.944164",
+    "updated_at": "2026-04-27T01:24:39.987330",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "100402",
+    "name": "食品卫生与营养学",
+    "category": "医学",
+    "recommendation_level": "yellow",
+    "summary": "小众公共卫生类专业，扎根食品安全与临床营养，就业对口率中等偏低，薪资天花板不高，注册营养师证是关键跳板但通过率有限。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 2.8,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 2.91
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "临床营养需个体化评估和医患沟通，食品安全检测涉及实地采样和法规判断，AI 可辅助数据分析但难以替代人际互动和现场决策。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众公共卫生类专业，扎根食品安全与临床营养，就业对口率中等偏低，薪资天花板不高，注册营养师证是关键跳板但通过率有限。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "华中科技大学",
+        "中山大学",
+        "四川大学",
+        "南京医科大学",
+        "哈尔滨医科大学"
+      ],
+      "tier_B": [
+        "南方医科大学",
+        "浙江大学",
+        "山东大学",
+        "天津医科大学",
+        "安徽医科大学",
+        "重庆医科大学"
+      ],
+      "tier_C_note": "各省属医科大学、综合性大学公共卫生学院中开设此专业的院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -44,7 +44,7 @@ Mini program:
 - `POST https://gaokao.aicoming.cn/api/reports/deep/view-token` returns a short-lived online HTML reader URL without requiring membership; PDF download remains membership-gated.
 - `GET https://gaokao.aicoming.cn/api/reports/deep/pdf?type=major&id=080901` returns `application/pdf` when called with an active member session token; without a token it correctly returns `401`.
 - `root@47.113.125.147` is reachable with `/Users/MarkHuang/Downloads/mark123-.pem`.
-- On 47, `/opt/gaokao-proxy/.env` includes `DIFY_API_URL=http://159.75.110.157`, `PORT=3001`, `REPORT_BASE_URL=https://gaokao.aicoming.cn`, and `SCORE_API_URL=http://159.75.110.157/score-api`. Release-blocking envs to keep aligned are `MEMBERSHIP_PRICE_CENTS=1990` and `DEEPSEEK_MODEL=deepseek-v4-pro`.
+- On 47, `/opt/gaokao-proxy/.env` includes `DIFY_API_URL=http://159.75.110.157`, `PORT=3001`, `REPORT_BASE_URL=https://gaokao.aicoming.cn`, and `SCORE_API_URL=http://159.75.110.157/score-api`. Release-blocking envs to keep aligned are `MEMBERSHIP_PRICE_CENTS=1990` and `REPORT_DEEPSEEK_MODEL=deepseek-v4-flash`.
 - PM2 process `gaokao-proxy` runs `/opt/gaokao-proxy/server.js`; Nginx routes `/api/chat`, `/api/report`, and `/reports` to `127.0.0.1:3001`.
 
 159 Dify/data verified facts:

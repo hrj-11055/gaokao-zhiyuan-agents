@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.876475",
+    "updated_at": "2026-05-11T19:01:04.018844",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "宿州学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.5,
+      "graduate_value": 3.2,
+      "location_advantage": 2.8,
+      "globalization": 1.5,
+      "student_empowerment": 3.5,
+      "brand_asset": 2.7
+    },
+    "weighted_score": 2.725,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "宿州学院是一所典型的“深耕地方、服务产业”的应用型本科高校。它没有名牌大学的光环，但在皖北这片土地上，它精准地找到了自己的生态位。通过将传统地质学科与现代信息技术（云计算）双轮驱动，学校为学生提供了既能“下矿井”又能“上云端”的多元化发展路径。\n\n**核心优势：**\n1.  **考研护航：** 为志在深造的学生提供了极佳的制度支持和学习氛围。\n2.  **产教融合：** 云计算学院等特色二级学院，实现了人才培养与行业需求的零距离对接。\n3.  **性价比高：** 作为公办本科，学费生活费成本低，就业回报率稳定。\n\n**主要短板：**\n1.  **学科层次：** 硕士点数量仍需增加，学科影响力主要局限在省内。\n2.  **地理位置：** 对省外高分生源和顶尖师资的吸引力有待提升。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

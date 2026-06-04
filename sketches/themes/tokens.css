@@ -1,0 +1,35 @@
+:root {
+  /* Brand colors - from existing uni.scss */
+  --color-orange: #F97316;
+  --color-orange-dark: #EA580C;
+  --color-blue: #2563EB;
+  --color-blue-dark: #1D4ED8;
+
+  /* Text */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+
+  /* Backgrounds */
+  --bg-page: #F8FAFC;
+  --bg-card: rgba(255,255,255,0.96);
+  --bg-input: #F1F5F9;
+
+  /* Borders */
+  --border-light: rgba(15,23,42,0.08);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Font */
+  --font-body: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+
+  /* Phone frame */
+  --phone-width: 375px;
+  --phone-height: 812px;
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.914210",
+    "updated_at": "2026-05-17T00:56:39.806002",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082705",
+    "name": "酿酒工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 3.9,
+      "future_adaptability": 2.8,
+      "career_path": 3.5,
+      "education_resources": 3.2,
+      "discipline_core": 3.3
+    },
+    "weighted_score": 3.52
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "核心酿酒工艺（尤其是传统固态发酵、风味勾调）依赖经验积累和感官判断，AI难以完全替代；但部分检测分析岗位面临自动化冲击"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "江南大学",
+        "贵州大学"
+      ],
+      "tier_A": [
+        "北京工商大学",
+        "四川轻化工大学",
+        "齐鲁工业大学",
+        "陕西科技大学",
+        "湖南农业大学"
+      ],
+      "tier_B": [
+        "吉林农业大学",
+        "河北农业大学",
+        "吉首大学",
+        "西华大学",
+        "茅台学院"
+      ],
+      "tier_C_note": "[待补充其他开设该专业的普通本科院校]",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

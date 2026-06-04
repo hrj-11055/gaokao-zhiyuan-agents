@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.855081",
+    "updated_at": "2026-05-09T15:26:49.442372",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "武汉工程大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.2,
+      "graduate_value": 3.5,
+      "location_advantage": 4.5,
+      "globalization": 2.8,
+      "student_empowerment": 3.8,
+      "brand_asset": 3.4
+    },
+    "weighted_score": 3.5,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "武汉科技大学",
+        "similarity": "同类院校",
+        "key_difference": "武科大以冶金、机械见长，行政级别和综合排名略高，拥有更多的博士点和更强的综合实力。但武汉工程大学在化工、制药、磷资源利用等细分赛道具有压倒性优势。如果你目标是进入中石化、万华化学或医药巨头，WIT 的校友资源和行业认可度往往更胜一筹。"
+      },
+      {
+        "name": "湖北工业大学",
+        "similarity": "同类院校",
+        "key_difference": "湖工大更偏向轻工、艺术设计和机械电子，地理位置更靠近南湖。而武汉工程大学流芳校区位于光谷腹地，与高新企业的物理距离更近，产学研结合的活力更强，尤其在半导体配套化学品、光电材料等新兴领域，WIT 的转型速度极快。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：武汉工程大学（WIT）是一所以化工为鲜明特色的湖北省属重点建设高校。其前身为湖北化工石油学院，这种深厚的工业血统使其在磷化工、绿色化工及新材料领域拥有不可替代的地位。在当前的“双一流”建设梯队中，它是湖北省冲击下一轮国家“双一流”建设的有力竞争者。\n\n**Ace（王牌优势）**：学校在磷矿资源开发利用方面拥有国家级工程技术研究中心，这在省属高校中极为罕见。其化学工程与技术学科在第四轮学科评估中获评 B+，位列全国前 20%，甚至超越了部分 211 高校。这种“小而精”的学科爆发力，使其在精细化工、制药工程等垂直领域具备极强的行业话语权。\n\n**Vibe（文化特质）**：典型的“硬核工科”氛围。流芳校区作为主校区，现代化程度高，且由于地处光谷，学生受周边高新企业文化影响较深，务实、低调、强调动手能力是其核心标签。校园内考研风气极盛，被戏称为“流芳苦修院”。\n\n**Risk（潜在风险）**：首先是“非双”身份的限制。在顶级互联网大厂或金融机构的简历初筛中，WIT 的学生偶尔会遭遇“第一学历”歧视。其次，学科发展不平衡，文经管类专业虽然在省内有一定竞争力，但在全国范围内缺乏品牌溢价。此外，学校在高端人才引进（如全职院士）方面仍存在短板，这可能影响其在更高层次科研奖项上的突破。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "武汉科技大学",
+          "similarity": "同类院校",
+          "key_difference": "武科大以冶金、机械见长，行政级别和综合排名略高，拥有更多的博士点和更强的综合实力。但武汉工程大学在化工、制药、磷资源利用等细分赛道具有压倒性优势。如果你目标是进入中石化、万华化学或医药巨头，WIT 的校友资源和行业认可度往往更胜一筹。"
+        },
+        {
+          "name": "湖北工业大学",
+          "similarity": "同类院校",
+          "key_difference": "湖工大更偏向轻工、艺术设计和机械电子，地理位置更靠近南湖。而武汉工程大学流芳校区位于光谷腹地，与高新企业的物理距离更近，产学研结合的活力更强，尤其在半导体配套化学品、光电材料等新兴领域，WIT 的转型速度极快。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬核工科",
+        "磷化工霸主",
+        "光谷亲儿子",
+        "务实低调",
+        "流芳大饭店",
+        "考研卷王",
+        "万华管培生摇篮"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

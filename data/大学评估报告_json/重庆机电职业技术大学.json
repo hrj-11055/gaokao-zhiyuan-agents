@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.614541",
+    "updated_at": "2026-05-12T13:31:44.268832",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "重庆机电职业技术大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "最适合高考分数在本科线附近、务实且希望深耕制造业技术岗位，或有强烈意愿加入定向培养士官序列的理科考生。",
+    "radar": {
+      "academic_capital": 1.8,
+      "graduate_value": 3.2,
+      "location_advantage": 4.2,
+      "globalization": 1.5,
+      "student_empowerment": 3.0,
+      "brand_asset": 2.6
+    },
+    "weighted_score": 2.69,
+    "one_sentence_recommend": "最适合高考分数在本科线附近、务实且希望深耕制造业技术岗位，或有强烈意愿加入定向培养士官序列的理科考生。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "重庆科技职业学院（高职）",
+        "similarity": "同类院校",
+        "key_difference": "机电大学在学历层次上具有代差优势。作为本科院校，其毕业生在考公、考研及大型国企入职门槛上拥有“入场券”，这是普通高职无法比拟的。同时，机电大学的实训设备投入规模（如数控加工中心、工业机器人实验室）远超一般民办高职。"
+      },
+      {
+        "name": "重庆工程学院（普通民办本科）",
+        "similarity": "同类院校",
+        "key_difference": "重庆工程学院更偏向于 IT 与软件工程，而机电大学则在“硬核制造”领域根基更深。如果你倾向于代码和设计，前者更优；如果你倾向于智能制造、汽车工程或军工配套，机电大学的行业资源更具优势。"
+      },
+      {
+        "name": "重庆理工大学（公办本科）",
+        "similarity": "同类院校",
+        "key_difference": "机电大学在科研底蕴、生源质量及社会声誉上仍有显著差距。重庆理工大学作为老牌“兵工七子”成员，其学术资源和校友网络处于更高维度。机电大学更多是作为理工类公办本科落榜后的优质“技术替代方案”。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "重庆机电职业技术大学作为中国职业教育改革的“排头兵”，其核心价值在于打破了职业教育“止步于专科”的玻璃天花板。学校的前身是重庆机电职业技术学院，于 2018 年升格为本科层次职业学校，2019 年正式更名为大学。这一身份的转变，使其在民办高校序列中占据了独特的生态位：既拥有本科的学历背书，又保留了高职阶段极强的就业导向和产教融合基因。\n\n学校最显著的标签是“兵工背景”。由于历史渊源，学校与中国兵器工业集团等大型央企保持着长期的血缘联系，这不仅体现在其专业设置（如武器仓库管理、军用车辆维修等特色方向）上，更体现在其“定向培养士官”的特殊办学模式上。对于希望通过职业教育进入国防工业体系或军队系统的学生而言，该校具有极高的性价比。\n\n然而，作为一所民办职业本科，学校也面临着显著的挑战。首先是社会认知的滞后性，公众往往难以区分“职业本科”与“普通本科”的含金量差异，导致生源在跨省流动时面临一定的品牌折损。其次，在学术研究领域，由于职业本科更强调“双师型”教师队伍和应用技术转化，其在传统学术排名（如软科、校友会）中的表现并不占优，这对于追求学术深造的学生而言并非首选。",
+      "one_sentence_recommend": "最适合高考分数在本科线附近、务实且希望深耕制造业技术岗位，或有强烈意愿加入定向培养士官序列的理科考生。",
+      "horizontal_comparison": [
+        {
+          "name": "重庆科技职业学院（高职）",
+          "similarity": "同类院校",
+          "key_difference": "机电大学在学历层次上具有代差优势。作为本科院校，其毕业生在考公、考研及大型国企入职门槛上拥有“入场券”，这是普通高职无法比拟的。同时，机电大学的实训设备投入规模（如数控加工中心、工业机器人实验室）远超一般民办高职。"
+        },
+        {
+          "name": "重庆工程学院（普通民办本科）",
+          "similarity": "同类院校",
+          "key_difference": "重庆工程学院更偏向于 IT 与软件工程，而机电大学则在“硬核制造”领域根基更深。如果你倾向于代码和设计，前者更优；如果你倾向于智能制造、汽车工程或军工配套，机电大学的行业资源更具优势。"
+        },
+        {
+          "name": "重庆理工大学（公办本科）",
+          "similarity": "同类院校",
+          "key_difference": "机电大学在科研底蕴、生源质量及社会声誉上仍有显著差距。重庆理工大学作为老牌“兵工七子”成员，其学术资源和校友网络处于更高维度。机电大学更多是作为理工类公办本科落榜后的优质“技术替代方案”。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

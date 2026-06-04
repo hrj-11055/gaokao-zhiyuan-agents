@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.701886",
+    "updated_at": "2026-05-09T14:39:05.201649",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中国人民公安大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.8,
+      "location_advantage": 4.7,
+      "globalization": 3.5,
+      "student_empowerment": 2.0,
+      "brand_asset": 4.9
+    },
+    "weighted_score": 4.35,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "- **Identity（核心定位）**：中国人民公安大学（以下简称“公大”）不仅是公安部直属的唯一一所“双一流”建设高校，更是中国警察教育的最高学府。它在政法系统中的地位类似于清华、北大在学术界的地位，是国家安全战略人才培养的核心基地。\n- **Ace（王牌优势）**：其核心竞争力在于“极高的职业确定性”。通过公安联考（面向公安院校公安专业毕业生的招警考试），公大毕业生进入公安系统的比例长期维持在 90% 以上。这种“毕业即就业”的闭环体系，在当前就业形势下具有极强的吸引力。\n- **Vibe（文化特质）**：校园文化以“忠诚”为灵魂，实行严格的准军事化管理。从早操、点名到宿舍内务的“豆腐块”被子，纪律性贯穿始终。这种环境培养了学生极强的执行力和集体荣誉感，但也意味着学生必须放弃大部分普通大学生的“散漫自由”。\n- **Risk（潜在风险）**：政治审查（政审）是悬在每位学生头上的达摩克利斯之剑。不仅入学前要审，入警前更要严审，任何直系亲属的违法违纪记录都可能导致四年努力付诸东流。此外，准军事化管理对部分追求个性化发展的学生来说，可能存在较大的心理调适压力。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

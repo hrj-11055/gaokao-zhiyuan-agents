@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.075471",
+    "updated_at": "2026-04-22T00:55:47.945630",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "040203",
+    "name": "社会体育指导与管理",
+    "category": "教育学",
+    "recommendation_level": "yellow",
+    "summary": "乘着全民健身的东风，行业在膨胀但门槛太低、内卷严重，名校体育类底子是硬通货，普通院校毕业大概率沦为\"卖课健身教练\"。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.24
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–5,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "健身指导涉及大量肢体示范、即时纠正和情感激励等需要\"肉身在场\"的交互场景，AI 难以替代线下指导的核心体验；但标准化的训练计划编制、运动处方等部分工作可被 AI 辅助替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "乘着全民健身的东风，行业在膨胀但门槛太低、内卷严重，名校体育类底子是硬通货，普通院校毕业大概率沦为\"卖课健身教练\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海体育大学",
+        "北京体育大学",
+        "华东师范大学"
+      ],
+      "tier_A": [
+        "华南师范大学",
+        "天津体育学院",
+        "首都体育学院",
+        "福建师范大学",
+        "武汉体育学院",
+        "成都体育学院",
+        "山东大学",
+        "南京师范大学",
+        "广州体育学院",
+        "吉林大学"
+      ],
+      "tier_B": [
+        "山东体育学院",
+        "郑州大学",
+        "扬州大学",
+        "南京体育学院",
+        "沈阳体育学院",
+        "西安体育学院",
+        "哈尔滨体育学院",
+        "江西师范大学",
+        "湖南师范大学",
+        "集美大学",
+        "中国地质大学（武汉）",
+        "东北大学"
+      ],
+      "tier_C_note": "全国其余约 200 所开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

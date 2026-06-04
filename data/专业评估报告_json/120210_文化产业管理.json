@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.142448",
+    "updated_at": "2026-04-27T19:00:40.209720",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120210",
+    "name": "文化产业管理",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "文化产业的\"万金油\"——方向多但壁垒低，名校+城市=如虎添翼，普通院校≈自学成才。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.3,
+      "career_path": 2.8,
+      "education_resources": 3.2,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.19
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "文化产业管理的核心技能中，\"文化内容策划与创意构思\"和\"人际沟通与资源整合\"较难被 AI 替代，但\"市场调研与数据分析\"、\"文案撰写\"、\"基础运营\"等大量日常工作正在被 AIGC 工具快速侵蚀。AI 生成文案、AI 辅助设计、AI 驱动的精准营销已经在文化行业广泛应用。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "文化产业的\"万金油\"——方向多但壁垒低，名校+城市=如虎添翼，普通院校≈自学成才。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "清华大学",
+        "上海交通大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "中国传媒大学",
+        "山东大学",
+        "中国海洋大学",
+        "南京大学",
+        "浙江大学",
+        "同济大学",
+        "华东师范大学",
+        "中央财经大学",
+        "对外经济贸易大学"
+      ],
+      "tier_B": [
+        "云南大学",
+        "暨南大学",
+        "华南师范大学",
+        "上海对外经贸大学",
+        "中国戏曲学院",
+        "北京电影学院",
+        "浙江传媒学院",
+        "南京艺术学院",
+        "江西财经大学",
+        "安徽财经大学",
+        "湖南师范大学",
+        "西南大学"
+      ],
+      "tier_C_note": "各省地方综合大学及师范类院校，如商洛学院、邯郸学院、池州学院、新乡学院、平顶山学院等（全国超过 150 所开设该专业的院校中，大部分属于此档）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

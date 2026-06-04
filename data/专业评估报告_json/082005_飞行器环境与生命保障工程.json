@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.110573",
+    "updated_at": "2026-04-25T19:57:15.663588",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082005",
+    "name": "飞行器环境与生命保障工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "小众到全国仅3所大学开设的\"航天刚需专业\"，就业率近乎100%但选择极窄——上了这条船，就只能奔着航天去。",
+    "radar": {
+      "market_return": 4.0,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.5,
+      "career_path": 3.3,
+      "education_resources": 3.2,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.83
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业核心涉及传热学、流体力学、密闭空间环境控制的物理建模与实验验证，需要大量物理实验与工程直觉，AI 可辅助仿真计算但无法替代系统设计决策和物理试验验证。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众到全国仅3所大学开设的\"航天刚需专业\"，就业率近乎100%但选择极窄——上了这条船，就只能奔着航天去。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京航空航天大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_A": [
+        "南京航空航天大学"
+      ],
+      "tier_B": [
+        "无（全国仅 3 所开设）"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

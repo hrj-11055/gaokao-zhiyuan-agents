@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.899542",
+    "updated_at": "2026-04-25T17:12:14.588787",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081501",
+    "name": "采矿工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "煤海金矿的\"地下工程师\"，行业正迎智能化翻身仗，薪酬不低但环境硬核，能吃苦的理科生才是真命主。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.0,
+      "future_adaptability": 2.8,
+      "career_path": 3.5,
+      "education_resources": 3.2,
+      "discipline_core": 3.1
+    },
+    "weighted_score": 3.1
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "采矿工程涉及现场复杂地质条件判断、岩层力学分析与安全决策，这些核心能力短期内难以被AI完全替代。但AI正在深入渗透行业——2024年国家七部门联合发布智能矿山建设指导意见，AI在地质勘探、智能采掘、灾害预警等七大场景加速落地（《煤炭经济研究》2025年第2期）。一线重复性操作岗位（如井下综采、掘进）正在被机器人替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "煤海金矿的\"地下工程师\"，行业正迎智能化翻身仗，薪酬不低但环境硬核，能吃苦的理科生才是真命主。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国矿业大学",
+        "中南大学",
+        "中国矿业大学（北京）"
+      ],
+      "tier_A": [
+        "北京科技大学",
+        "东北大学",
+        "重庆大学",
+        "山东科技大学",
+        "河南理工大学"
+      ],
+      "tier_B": [
+        "太原理工大学",
+        "武汉理工大学",
+        "西安科技大学",
+        "安徽理工大学",
+        "福州大学（紫金模式特色）",
+        "昆明理工大学",
+        "内蒙古科技大学",
+        "新疆大学"
+      ],
+      "tier_C_note": "河北工程大学、华北理工大学、黑龙江科技大学、湖南科技大学、江西理工大学等地方性工科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

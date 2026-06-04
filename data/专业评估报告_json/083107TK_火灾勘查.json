@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.206275",
+    "updated_at": "2026-04-26T01:12:49.325785",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083107TK_火灾勘查",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国仅2所院校开设的\"冷门铁饭碗\"，消防领域的福尔摩斯，入行门槛极高但岗位极度稳定，适合抗压能力强、追求体制内确定性的考生。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "火灾现场勘查涉及复杂的物证采集、痕迹解读、询问证人和成因推理，这些需要现场判断力和跨学科综合分析能力，AI 可辅助图像识别和数据建模，但无法替代现场勘验和法律举证的核心环节。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅2所院校开设的\"冷门铁饭碗\"，消防领域的福尔摩斯，入行门槛极高但岗位极度稳定，适合抗压能力强、追求体制内确定性的考生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民警察大学（消防领域历史最悠久，前身为武警学院消防工程系，师资渊源可追溯到 1956 年）"
+      ],
+      "tier_A": [
+        "中国消防救援学院（应急管理部直属，我国第一所专门的消防救援本科院校）"
+      ],
+      "tier_B": [
+        "无（全国仅 2 所院校开设）"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

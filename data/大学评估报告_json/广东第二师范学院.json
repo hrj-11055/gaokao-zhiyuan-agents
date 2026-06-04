@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.819167",
+    "updated_at": "2026-05-01T02:05:00.047679",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广东第二师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.75,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "广东第二师范学院（以下简称“广二师”）是一所带有鲜明“行业补给站”色彩的省属公办本科院校。其核心竞争力并非源于高深的学术研究，而是源于其在广东省基础教育领域深耕多年形成的“校长培训”与“师资输送”双循环体系。\n\n从**Identity（核心定位）**来看，广二师是广东省属重点建设的、以教师教育为核心特色的应用型本科师范院校。它在 2010 年由广东教育学院改制而来，这种“成人教育/在职培训”的基因使其在处理基础教育实务、对接中小学需求方面具有天然的灵活性。\n\n从**Ace（王牌优势）**分析，该校在广东基础教育界拥有极高的行业渗透率。作为广东省规模最大的中小学校长培训基地，全省 80% 以上的中小学校长曾在此接受培训或进修。这种“校友即雇主”的隐性网络，为毕业生进入粤港澳大湾区公立学校体系提供了极强的背书。\n\n从**Vibe（文化特质）**观察，校园氛围务实、接地气，具有浓厚的“准教师”职业氛围。学生普遍表现出较强的考证驱动力和技能导向，校园生活呈现明显的双校区差异：海珠校区是“闹市中的老牌学府”，花都校区则是“郊区里的现代工坊”。\n\n从**Risk（潜在风险）**评估，办学层次尚处于硕士点立项建设阶段，学术研究深度有限，对于追求学术深造、志在科研的考生而言，平台支撑力不足。此外，海珠校区设施陈旧与花都校区地理位置偏远，构成了学生生活质量的主要矛盾点。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实到骨子里",
+        "准教师",
+        "考证狂人",
+        "广州塔邻居",
+        "花都拓荒者",
+        "校长校友圈",
+        "编制守望者"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

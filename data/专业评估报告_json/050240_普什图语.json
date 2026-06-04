@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.979417",
+    "updated_at": "2026-04-23T12:22:55.134191",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050240",
+    "name": "普什图语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极度稀缺的战略语种，\"一带一路\"专属赛道，体制内吃香但就业面极窄，非外交/安全志向者慎入。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.5,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.97
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "普什图语属低资源语言（low-resource language），AI 训练语料极度匮乏，方言差异大（东南部 Ghazni 口音等），短期内 AI 翻译无法达到可用水平。头部企业招聘已将方言识别能力列为必考项，溢价达 40%（来源：applysquare.com）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度稀缺的战略语种，\"一带一路\"专属赛道，体制内吃香但就业面极窄，非外交/安全志向者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（唯一完整本科培养体系，外交部定向招录核心院校）"
+      ],
+      "tier_A": [
+        "中国传媒大学（侧重国际传播方向，软科排名第一）"
+      ],
+      "tier_B": [
+        "云南民族大学（南亚语种特色，民族文化研究方向）"
+      ],
+      "tier_C_note": "无（全国仅 2–3 所院校开设，无 C 档）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

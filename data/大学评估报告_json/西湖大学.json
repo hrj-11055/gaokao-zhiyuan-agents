@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.779082",
+    "updated_at": "2026-05-11T13:04:24.104891",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西湖大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "公办",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.9,
+      "graduate_value": 4.5,
+      "location_advantage": 4.7,
+      "globalization": 4.9,
+      "student_empowerment": 4.8,
+      "brand_asset": 4.7
+    },
+    "weighted_score": 5.23,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "打破学科壁垒的书院生活",
+        "description": "在西湖大学，不同专业的学生混住在一起。物理系的学生可能与生物系的学生在宿舍客厅讨论量子纠生物学。这种跨学科的非正式交流，往往是创新灵感的来源。"
+      },
+      {
+        "category": "极高的师生比与导师制",
+        "description": "西湖大学的师生比远超传统名校。本科生不仅有学术导师（PI），还有书院导师。这种“全员育人”的模式，确保了每位学生的心理状态、学业进展都能得到及时关注。"
+      },
+      {
+        "category": "自由转专业：真正的兴趣导向",
+        "description": "学校提供大二末自由转专业的政策。由于学生基数小且资源充足，转专业几乎没有“名额限制”，这让学生能够真正根据自己的科学兴趣选择赛道。\n\n### 5.2 基础设施：硬核与美学的结合\n\n**云谷校区（Yungu Campus）**：\n-   **学术环（Academic Ring）**：这是校园设计的灵魂。一个巨大的环形建筑连接了理学院、工学院和生命科学学院，象征着学科交叉与融合。\n-   **神仙宿舍**：四人套间，每人拥有独立的卧室，确保了隐私；共享客厅则提供了社交空间。这种配置在国内高校中属于顶配。\n-   **24小时实验室文化**：在西湖大学，实验室是校园生活的中心。深夜的学术环依然灯火通明，这种勤奋、纯粹的学术氛围是西湖大学最动人的风景。\n\n### 5.3 品牌资产：社会力量办学的标杆\n\n西湖大学的品牌不仅属于学术界，更是一个社会现象。\n\n| 维度 | 表现 | 品牌价值 |\n| :--- | :--- | :--- |\n| 创始人影响力 | 施一公等顶尖科学家 | 极高的社会公信力与号召力 |\n| 捐赠文化 | 创始捐赠人制度 | 开创了中国社会力量办学的先河 |\n| 媒体形象 | 硬核、纯粹、未来感 | 吸引了大量向往科学的青少年 |\n\n**深度分析：**\n西湖大学的成功，在很大程度上依赖于其独特的“西湖教育基金会”。通过社会捐赠获取办学资金，这种模式让学校在行政上更加独立，在决策上更加灵活。西湖大学已成为中国高等教育改革的一面旗帜，其品牌价值中包含了公众对科学进步的渴望和对教育创新的期待。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "-   **Identity（核心定位）**：中国第一所由社会力量举办、国家重点支持的新型研究型大学，旨在培养未来的顶尖科学家。\n-   **Ace（王牌优势）**：顶级的科研资源配置与“小而精”的培养模式，本科生即可进入国家级实验室，师生比极高。\n-   **Vibe（文化特质）**：极度纯粹的学术导向，去行政化，鼓励跨学科碰撞的“学术乌托邦”。\n-   **Risk（潜在风险）**：办学历史短，本科毕业生尚未经受市场长期检验；全英文教学对语言能力和心理素质要求极高。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬核科研",
+        "全英文",
+        "神仙宿舍",
+        "PI制",
+        "施一公",
+        "小而精",
+        "学术自由",
+        "云谷校区",
+        "跨学科",
+        "科学家摇篮"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

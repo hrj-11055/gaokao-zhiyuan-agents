@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.906308",
+    "updated_at": "2026-05-12T11:17:40.470184",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "沈阳科技学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.32,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：沈阳科技学院是一所以工科为核心、多学科协调发展的民办应用型本科高校。其前身为沈阳化工大学科科学院，于 2016 年成功转设。学校深度植根于辽宁老工业基地，致力于培养适应地方经济振兴急需的一线工程师与技术管理人才。\n\n**Ace（王牌优势）**：化工与制药、机械制造等传统工科专业具有深厚的行业背景，这主要得益于其母体学校沈阳化工大学的学术基因。此外，校园硬件设施（尤其是高标准宿舍）在东北乃至全国同类院校中处于第一梯队，成为吸引生源的“硬核”名片。\n\n**Vibe（文化特质）**：务实、就业导向，具有典型的东北工业文化烙印。校园氛围相对朴实，学生群体表现出较强的动手能力和对一线生产环境的适应性。\n\n**Risk（潜在风险）**：学费水平逐年攀升（目前已接近 3 万元/年），对于东北地区普通家庭而言经济压力较大。同时，生源质量受限于民办属性，在考研深造和高端学术竞赛中的竞争力仍有待提升。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.186292",
+    "updated_at": "2026-04-28T03:37:52.990898",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130305",
+    "name": "广播电视编导",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "镁光灯后的\"全能工种\"，入行门槛低但出头极难，短视频重塑了行业逻辑——不会做自媒体的编导，终将被AI替代。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 2.8,
+      "future_adaptability": 3.0,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 5.0
+    },
+    "weighted_score": 2.95
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "Sora、Runway、可灵等AI视频生成工具已能完成基础分镜、剪辑、配音工作；AI脚本生成（GPT类）可替代部分文案策划；但高级叙事能力、现场调度、人际沟通和审美判断仍难以替代。中低端编导岗位面临直接替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "镁光灯后的\"全能工种\"，入行门槛低但出头极难，短视频重塑了行业逻辑——不会做自媒体的编导，终将被AI替代。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国传媒大学",
+        "北京电影学院",
+        "中央戏剧学院",
+        "上海戏剧学院"
+      ],
+      "tier_A": [
+        "北京师范大学",
+        "华东师范大学",
+        "南京艺术学院",
+        "浙江传媒学院",
+        "中国美术学院",
+        "吉林艺术学院"
+      ],
+      "tier_B": [
+        "重庆大学",
+        "西南大学",
+        "湖南师范大学",
+        "辽宁大学",
+        "山西传媒学院",
+        "武汉传媒学院",
+        "四川传媒学院",
+        "南京传媒学院（原中传南广）"
+      ],
+      "tier_C_note": "全国开设该专业的300余所普通本科院校，包括各省级师范学院、综合性大学艺术学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

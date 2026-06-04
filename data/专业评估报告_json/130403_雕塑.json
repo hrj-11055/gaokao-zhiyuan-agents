@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.940314",
+    "updated_at": "2026-04-28T12:55:48.911005",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130403",
+    "name": "雕塑",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "用双手和灵魂塑造世界的专业，精英路径极其陡峭，多数人需靠跨界与灵活就业维生，纯艺术之路是少数人的\"窄门荣耀\"。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 2.5,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 2.76
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "雕塑核心技能——空间造型能力、材料感知、手工技艺、审美判断——具有较强的具身性和不可数字化特征。3D 打印和 AI 辅助设计虽可部分替代建模环节，但原创性艺术构思和材料处理短期内难以被 AI 完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "用双手和灵魂塑造世界的专业，精英路径极其陡峭，多数人需靠跨界与灵活就业维生，纯艺术之路是少数人的\"窄门荣耀\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央美术学院",
+        "中国美术学院"
+      ],
+      "tier_A": [
+        "清华大学（美术学院）",
+        "广州美术学院",
+        "四川美术学院",
+        "鲁迅美术学院",
+        "西安美术学院",
+        "天津美术学院"
+      ],
+      "tier_B": [
+        "湖北美术学院",
+        "上海大学（上海美术学院）",
+        "南京艺术学院",
+        "广西艺术学院",
+        "云南艺术学院",
+        "山东艺术学院",
+        "景德镇陶瓷大学（陶瓷雕塑特色）"
+      ],
+      "tier_C_note": "各综合性大学的美术/艺术学院中开设雕塑方向的院校，如西南大学、湖南师范大学、西北师范大学等。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

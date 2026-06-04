@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.189841",
+    "updated_at": "2026-04-21T13:07:54.662244",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "040104",
+    "name": "教育技术学",
+    "category": "教育学",
+    "recommendation_level": "yellow",
+    "summary": "\"懂教育又懂技术的稀缺交叉型人才，但'双减'余震未消、就业红牌高悬，非名校+非技术路线者慎入。\"",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.08
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 对教育技术学的影响是双面的——简单的课件制作、基础教学设计可被 AIGC 部分替代，但懂教育理论又能驾驭 AI 工具的\"教育+技术\"复合型人才反而更稀缺。核心在于是否能从\"工具使用者\"进化为\"AI+教育产品设计者\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"懂教育又懂技术的稀缺交叉型人才，但'双减'余震未消、就业红牌高悬，非名校+非技术路线者慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京师范大学",
+        "华东师范大学"
+      ],
+      "tier_A": [
+        "华南师范大学",
+        "华中师范大学",
+        "东北师范大学",
+        "南京师范大学",
+        "陕西师范大学",
+        "西南大学"
+      ],
+      "tier_B": [
+        "浙江师范大学",
+        "首都师范大学",
+        "河南大学",
+        "杭州师范大学",
+        "山东师范大学",
+        "湖南师范大学",
+        "深圳大学",
+        "江西师范大学",
+        "广西师范大学",
+        "南京邮电大学"
+      ],
+      "tier_C_note": "天津师范大学、福建师范大学、江苏师范大学、四川师范大学、安徽师范大学、曲阜师范大学、湖北大学、云南师范大学、哈尔滨师范大学、西北师范大学等全国约 70 所普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

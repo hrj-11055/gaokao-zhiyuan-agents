@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.056912",
+    "updated_at": "2026-04-23T22:14:02.298013",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050233",
+    "name": "瑞典语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "北欧冷门语言的\"皇冠明珠\"，稀缺性极强但岗位极少，AI 翻译冲击下纯语言路线愈发艰难，\"语言+专业\"复合型才有出路。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.0,
+      "future_adaptability": 2.2,
+      "career_path": 2.3,
+      "education_resources": 2.0,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 翻译技术快速发展，全球多语种 AI 翻译市场规模预计达 120 亿美元，年复合增长率超 20%（2025 行业报告）。瑞典语作为高资源语言（北欧语言数字化程度高），AI 翻译覆盖较好，基础翻译和文本处理岗位受冲击显著。但高级别外交谈判、跨文化商业沟通中的\"人情味\"判断仍依赖人类。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "北欧冷门语言的\"皇冠明珠\"，稀缺性极强但岗位极少，AI 翻译冲击下纯语言路线愈发艰难，\"语言+专业\"复合型才有出路。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（外国语言文学 A+，国家级一流本科专业，校友会排名第一）"
+      ],
+      "tier_A": [
+        "上海外国语大学（外国语言文学 A+，校友会排名第二）"
+      ],
+      "tier_B": [
+        "战略支援部队信息工程大学（原解放军外国语学院，军队体系内培养）"
+      ],
+      "tier_C_note": "无（全国仅以上 3 所院校开设）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

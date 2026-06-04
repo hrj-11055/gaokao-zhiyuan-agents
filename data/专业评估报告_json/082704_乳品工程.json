@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.200022",
+    "updated_at": "2026-05-17T00:53:24.792776",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082704",
+    "name": "乳品工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.5
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "核心研发创新涉及产品配方、工艺优化等需要实践经验和食品安全责任判断，AI难以完全替代；但部分数据分析和检测工作可能被AI辅助"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东北农业大学",
+        "内蒙古农业大学"
+      ],
+      "tier_A": [
+        "陕西科技大学",
+        "河南科技大学"
+      ],
+      "tier_B": [
+        "黑龙江东方学院",
+        "扬州大学",
+        "河北农业大学",
+        "青海大学"
+      ],
+      "tier_C_note": "[暂无]",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

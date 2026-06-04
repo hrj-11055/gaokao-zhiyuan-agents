@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.887048",
+    "updated_at": "2026-04-22T01:33:46.261214",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040213T_运动能力开发",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "体育+数据科学的新兴交叉学科，全国仅 6 校开设，赛道小众但政策红利巨大，适合\"既能跑又能算\"的复合型选手。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.8,
+      "discipline_core": 3.6
+    },
+    "weighted_score": 3.39
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "运动能力开发融合人体运动测试、实地训练监控、个性化运动处方制定，核心工作涉及大量线下实操（体能测试、动作矫正、实时反馈），AI 可辅助数据分析但难以替代面对面的运动指导和人体评估。不过，纯数据分析岗位面临 AI 工具的替代压力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "体育+数据科学的新兴交叉学科，全国仅 6 校开设，赛道小众但政策红利巨大，适合\"既能跑又能算\"的复合型选手。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海体育大学（全国首创，双一流，A+ 体育学，拥有\"人类运动能力开发与保障\"上海市重点实验室）"
+      ],
+      "tier_A": [
+        "北京体育大学（211/双一流，A+ 体育学，虽尚未独立开设该专业但体育学实力最强，可报考近缘方向后深耕）",
+        "山东体育学院（全国第二家获批开设）"
+      ],
+      "tier_B": [
+        "长春大学（结合冰雪产业与特殊教育特色，差异化培养方向）",
+        "南京工业大学（2024 年培养方案中列为重点交叉学科方向）"
+      ],
+      "tier_C_note": "其余获批开设该专业的普通本科院校（截至 2024 年全国仅 6 所，剩余 1–2 所院校信息待更新）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

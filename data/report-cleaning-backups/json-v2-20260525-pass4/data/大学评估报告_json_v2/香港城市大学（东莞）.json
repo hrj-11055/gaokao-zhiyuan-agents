@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generated_at": "2026-05-20T07:58:07.659199",
+    "updated_at": "2026-05-01T02:15:56.028838",
+    "source_file": "香港城市大学（东莞）.md",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ],
+    "cleaning_version": "report-source-clean-v1"
+  },
+  "layer1_overview": {
+    "name": "香港城市大学（东莞）",
+    "location": "松山湖科学城",
+    "type": "公办",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 3.8,
+      "location_advantage": 4.5,
+      "globalization": 4.6,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.7
+    },
+    "weighted_score": 4.09,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "summary": ""
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {
+      "title": "1.1 学科金字塔",
+      "raw_content": "由于港城大（东莞）为新设院校，尚未参加教育部学科评估。其学科建设完全引入香港城市大学（CityU）的强势学科。\n\n| 引入学科名称 | 母校QS/软科表现 | 所属门类 |\n| --- | --- | --- |\n| 计算机科学与技术 | 全球前50 | 工学 |\n| 材料科学与工程 | 全球前50 | 工学 |\n| 智能制造工程 | 港城大优势领域 | 工学 |\n| 能源与动力工程 | 港城大优势领域 | 工学 |\n\n**学科强项集中领域**：高度集中于“硬核工科”，特别是与东莞制造业转型密切相关的智能制造、新材料和新一代信息技术。"
+    },
+    "module2_student_competitiveness": {
+      "title": "2.2 理科/物理组录取数据",
+      "raw_content": "#### 2025 年理科/物理组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 广东 | 618 | 14200 | 前 1.9% |\n| 福建 | 617 | 7670 | 前 1.8% |\n| 北京 | 627 | 6561 | 前 1.2% |\n\n#### 2024 年理科/物理组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 广东 | 611 | 15215 | 前 2.1% |\n| 河南 | 620 | 12607 | 前 1.1% |\n| 云南 | 617 | 4513 | 前 1.0% |\n\n**理科生源深度分析**：首届招生即展现出极强的吸纳能力，在广东、河南等省份的录取位次稳定在全省前2%以内。2025年位次有小幅上升趋势，显示出市场对“港校分校”模式的持续认可。建议全省位次在1.5万名以内的广东考生作为稳妥选择。\n\n---"
+    },
+    "module3_graduate_value": {
+      "title": "3.1 深造质量",
+      "raw_content": "**特别说明**：港城大（东莞）首届本科生将于2028年毕业，目前无本科就业数据。以下数据基于2024-2025年硕士毕业生及母校参考。\n\n| 指标 | 数值 | 数据来源 |\n| --- | --- | --- |\n| 本科毕业生总数 | 0 (首届2028毕业) | — |\n| 硕士深造率（预期） | >70% | 参考港中深/港科广 |\n| 出国（境）深造率 | >50% | 参考母校水平 |\n| 进入 QS 前 50 比例 | 预期极高 | 依托母校推荐信体系 |\n| 最受欢迎海外深造地 Top 3 | 香港、英国、美国 | （社区反馈，需核验） |"
+    },
+    "module4_location_industry": {
+      "title": "4.1 区位与产业势能",
+      "raw_content": "| 指标 | 数据 | 来源 |\n| --- | --- | --- |\n| 所在城市 | 东莞市 | — |\n| 最新年度 GDP | 1.14 万亿元 (2023) | 东莞市统计局 |\n| 全国城市 GDP 排名 | 第 24 名 | 官方统计 |\n| 城市定位 | “先进制造业之都”，大湾区核心节点 | 官方规划 |\n\n**产业-学科共振分析**：\n\n| 城市支柱产业 | 耦合学科 | 耦合度 |\n| --- | --- | --- |\n| 电子信息制造 | 计算机、智能制造 | 高度共振 |\n| 新材料 | 材料科学与工程 | 高度共振 |\n| 新能源 | 能源与动力工程 | 高度共振 |\n\n**耦合实例**：学校位于松山湖科学城，步行距离内即为华为欧洲小镇。学校与散裂中子源共建实验室，本科生大二即可参与国家级大科学装置的辅助科研工作。"
+    },
+    "module5_campus_ecosystem": {
+      "title": "5.6 已知风险点",
+      "raw_content": "| 风险点 | 事件概要 | 后续处理 | 当前状况 |\n| --- | --- | --- | --- |\n| 奖学金风波 | 2024年6月，部分研究生反映招生宣传中的奖学金承诺在录取时未能兑现，引发“虚假宣传”争议。 | 校方解释为“综合评定”误读，删除了部分争议推文。 | 2025年招生简章已明确奖学金细则，透明度提升。 |\n| 校园建设噪音 | 二期工程正在施工，部分宿舍区受噪音影响。 | 调整施工时间。 | 持续至2026年底。 |\n\n---"
+    },
+    "module6_comprehensive_evaluation": {
+      "title": "6.1 六维评分表",
+      "raw_content": "| 评估维度 | 核心依据摘要 | 维度得分 |\n| --- | --- | --- |\n| 学术资本 | 共享港城大QS前100声誉，37位全球前2%顶尖科学家入选 | 4.2 |\n| 毕业生价值实现 | 暂无本科毕业生；硕士生及母校数据显示极强留港/大湾区竞争力 | 3.8 |\n| 区位与产业势能 | 坐落东莞松山湖，紧邻华为及散裂中子源，产研耦合度极高 | 4.5 |\n| 全球化能力 | 全英文教学，IANG签证支持，共享母校全球交换网络 | 4.6 |\n| 学生赋权与自由度 | 转专业政策极度宽松（每年两次），但新校管理制度尚在磨合 | 3.5 |\n| 品牌资产与文化印记 | 港校背景自带流量，但在内地社交媒体曾因奖学金风波受损 | 3.7 |"
+    },
+    "module7_culture_cards": {
+      "title": "7.2 一句话校园精神测试",
+      "raw_content": "**问题**：周五晚上十点，华为欧洲小镇的灯还亮着，你会：\n- **A.** 拍张照片发朋友圈感叹大厂不易，然后回宿舍打游戏。 → 点评：你可能更适合去传统的综合性大学。\n- **B.** 在实验室继续跑数据，心想以后一定要进这种公司拿高薪。 → 点评：恭喜，你拥有纯正的“港城莞”基因。"
+    },
+    "module8_raw_data": {
+      "title": "8.1 数据源汇总",
+      "raw_content": "| 数据项 | 引用来源 | 可信度 |\n| --- | --- | --- |\n| 录取分数线 | 掌上高考、各省教育考试院 | 高 |\n| 顶尖科学家人数 | 斯坦福大学/Elsevier 2025榜单 | 高 |\n| 奖学金争议 | 经济观察网、知乎 | 中 |\n| 宿舍/食堂评价 | 小红书、知乎匿名评价 | 中 |"
+    }
+  },
+  "layer4_supplement": {
+    "full_raw_content": "# 香港城市大学（东莞）深度尽职调查报告 (2026版)\n\n**研究日期**：2026年4月30日\n**研究对象**：香港城市大学（东莞）（City University of Hong Kong (Dongguan)）\n**核心结论**：作为粤港澳大湾区高等教育一体化的最新标杆，香港城市大学（东莞）（以下简称“港城大（东莞）”）在2024年正式开启本科教育后，凭借“两校一质”的品牌背书和松山湖科学城的区位优势，迅速在生源市场上站稳脚跟。其生源质量直逼中坚211及部分985高校，但在新校制度磨合、奖学金承诺兑现等方面仍存在成长期阵痛。\n\n---\n\n## 模块六：综合评估与量化评分\n\n### 6.1 六维评分表\n\n| 评估维度 | 核心依据摘要 | 维度得分 |\n| --- | --- | --- |\n| 学术资本 | 共享港城大QS前100声誉，37位全球前2%顶尖科学家入选 | 4.2 |\n| 毕业生价值实现 | 暂无本科毕业生；硕士生及母校数据显示极强留港/大湾区竞争力 | 3.8 |\n| 区位与产业势能 | 坐落东莞松山湖，紧邻华为及散裂中子源，产研耦合度极高 | 4.5 |\n| 全球化能力 | 全英文教学，IANG签证支持，共享母校全球交换网络 | 4.6 |\n| 学生赋权与自由度 | 转专业政策极度宽松（每年两次），但新校管理制度尚在磨合 | 3.5 |\n| 品牌资产与文化印记 | 港校背景自带流量，但在内地社交媒体曾因奖学金风波受损 | 3.7 |\n\n### 6.2 执行摘要\n- **Identity（核心定位）**：拥有独立法人资格、共享香港城市大学学术标准的内地与香港合作办学大学。\n- **Ace（王牌优势）**：毕业生可获得香港城市大学学位证，并享有2年香港IANG签证，是通往香港就业/定居的极佳跳板。\n- **Vibe（文化特质）**：典型的“港式高压”与“东莞务实”结合体，学术节奏快，强调科创转化。\n- **Risk（潜在风险）**：首届招生曾出现奖学金政策解释争议；新校区二期仍在建设，校园生活配套完整度有待提升。\n\n### 6.3 一句话推荐\n最适合**目标明确、希望以较低分数门槛（相对于港校本部）获取香港名校学位，并计划在香港或大湾区科创圈发展**的理科高分考生。\n\n### 6.4 横向对比\n与**香港中文大学（深圳）**相比，港城大（东莞）规模较小，学科更聚焦于工学和理学，人文社科底蕴相对薄弱，但其所在的松山湖片区产业配套（如华为）比龙岗更具“硬科技”属性。与**香港科技大学（广州）**相比，港城大（东莞）在本科生培养上更早发力，且学费及生活成本略具性价比。\n\n---\n\n## 模块一：学术资本\n\n### 1.1 学科金字塔\n\n由于港城大（东莞）为新设院校，尚未参加教育部学科评估。其学科建设完全引入香港城市大学（CityU）的强势学科。\n\n| 引入学科名称 | 母校QS/软科表现 | 所属门类 |\n| --- | --- | --- |\n| 计算机科学与技术 | 全球前50 | 工学 |\n| 材料科学与工程 | 全球前50 | 工学 |\n| 智能制造工程 | 港城大优势领域 | 工学 |\n| 能源与动力工程 | 港城大优势领域 | 工学 |\n\n**学科强项集中领域**：高度集中于“硬核工科”，特别是与东莞制造业转型密切相关的智能制造、新材料和新一代信息技术。\n\n### 1.2 顶尖智力资产\n\n| 类别 | 人数 | 数据来源 |\n| --- | --- | --- |\n| 中国科学院/工程院院士 | 3 | 学校官网及新闻 |\n| 海外/外籍院士 | 5+ | 学校官网 |\n| 全球前2%顶尖科学家 | 37 | 2025年斯坦福大学榜单 |\n| **合计** | **45+** |  |\n\n**代表人物**：**鲁春**（执行校长），计算力学专家；**张青富**，演化计算领域权威。\n\n### 1.3 国家级科研平台\n\n| 平台名称 | 级别/类型 | 主要研究方向 |\n| --- | --- | --- |\n| 中子散射科学技术联合实验室 | 与散裂中子源共建 | 材料微观结构分析 |\n| 柔性及锌基电池样板工厂 | 与松山湖材料实验室共建 | 新能源存储 |\n| 太赫兹及毫米波国家重点实验室（东莞分部） | 国家重点实验室分部 | 无线通信与感测 |\n\n### 1.4 保送生与特殊招生\n\n| 年份 | 保送生总数 | 外语类 | 竞赛类 | 其他 | 数据来源 |\n| --- | --- | --- | --- | --- | --- |\n| 2025 | [未检索到] | [未检索到] | [未检索到] | [未检索到] | 官网公示 |\n| 2024 | 0 | 0 | 0 | 0 | 2024招生简章 |\n\n**录取难度评估**：极高。依据：目前主要通过夏季高考统一招生，不设外语类保送，对高考成绩要求极高，基本要求在各省特招线/一本线上80-120分。\n\n---\n\n## 模块二：生源竞争力\n\n### 2.1 文科/历史组录取数据\n\n**注**：港城大（东莞）目前主要招收物理类/理科考生，文科招生省份极少。\n\n#### 2025 年文科/历史组录取信息（部分省份）\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 北京 | 627 | 6561 | 前 1.2% |\n| 上海 | 566 | 6814 | 前 1.3% |\n\n#### 2024 年文科/历史组录取信息\n未检索到大规模文科招生数据，首届以理科为主\n\n**文科生源深度分析**：该校文科生源极度稀缺，仅在实行新高考的部分省份（如京沪）有少量名额。报考策略上，文科生若追求国际化环境可关注，但需注意校内理工氛围极浓，人文社科资源相对边缘。\n\n### 2.2 理科/物理组录取数据\n\n#### 2025 年理科/物理组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 广东 | 618 | 14200 | 前 1.9% |\n| 福建 | 617 | 7670 | 前 1.8% |\n| 北京 | 627 | 6561 | 前 1.2% |\n\n#### 2024 年理科/物理组录取信息\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 广东 | 611 | 15215 | 前 2.1% |\n| 河南 | 620 | 12607 | 前 1.1% |\n| 云南 | 617 | 4513 | 前 1.0% |\n\n**理科生源深度分析**：首届招生即展现出极强的吸纳能力，在广东、河南等省份的录取位次稳定在全省前2%以内。2025年位次有小幅上升趋势，显示出市场对“港校分校”模式的持续认可。建议全省位次在1.5万名以内的广东考生作为稳妥选择。\n\n---\n\n## 模块三：毕业生价值实现\n\n### 3.1 深造质量\n\n**特别说明**：港城大（东莞）首届本科生将于2028年毕业，目前无本科就业数据。以下数据基于2024-2025年硕士毕业生及母校参考。\n\n| 指标 | 数值 | 数据来源 |\n| --- | --- | --- |\n| 本科毕业生总数 | 0 (首届2028毕业) | — |\n| 硕士深造率（预期） | >70% | 参考港中深/港科广 |\n| 出国（境）深造率 | >50% | 参考母校水平 |\n| 进入 QS 前 50 比例 | 预期极高 | 依托母校推荐信体系 |\n| 最受欢迎海外深造地 Top 3 | 香港、英国、美国 | （社区反馈，需核验） |\n\n### 3.2 就业去向全景\n\n| 去向方向 | 占比 | 关键细节 |\n| --- | --- | --- |\n| 国内深造 | 20% (预估) | 主要是保研至本部或C9 |\n| 出国深造 | 50% (预估) | 申请欧美名校硕士 |\n| 考公/选调 | <5% | 合作办学学生普遍志不在体制内 |\n| 企业就业 | 25% | 集中在大湾区大厂（华为、腾讯） |\n\n**顶级雇主预期**：华为、大疆、腾讯、商汤科技、中兴通讯。\n\n### 3.3 薪酬竞争力\n\n| 指标 | 数值 | 数据来源 |\n| --- | --- | --- |\n| 毕业起薪中位数（预期） | 12,000 - 15,000 元/月 | 参考同类港校分校 |\n| 毕业 5 年薪酬中位数 | [未检索到] | 新校无数据 |\n| 同类高校薪酬水平 | 显著高于 | 依据：全英文教学及港校背景在跨国企业中溢价明显 |\n\n---\n\n## 模块四：区位与产业势能\n\n### 4.1 区位与产业势能\n\n| 指标 | 数据 | 来源 |\n| --- | --- | --- |\n| 所在城市 | 东莞市 | — |\n| 最新年度 GDP | 1.14 万亿元 (2023) | 东莞市统计局 |\n| 全国城市 GDP 排名 | 第 24 名 | 官方统计 |\n| 城市定位 | “先进制造业之都”，大湾区核心节点 | 官方规划 |\n\n**产业-学科共振分析**：\n\n| 城市支柱产业 | 耦合学科 | 耦合度 |\n| --- | --- | --- |\n| 电子信息制造 | 计算机、智能制造 | 高度共振 |\n| 新材料 | 材料科学与工程 | 高度共振 |\n| 新能源 | 能源与动力工程 | 高度共振 |\n\n**耦合实例**：学校位于松山湖科学城，步行距离内即为华为欧洲小镇。学校与散裂中子源共建实验室，本科生大二即可参与国家级大科学装置的辅助科研工作。\n\n### 4.2 全球化能力\n\n| 指标 | 数据 |\n| --- | --- |\n| 实质性交换项目合作院校数 | 共享母校 400+ 所 |\n| 其中 QS 前 100 院校 | 牛津、剑桥、康奈尔等（短期交流/暑课） |\n| 中外合作办学机构 | 香港城市大学（东莞）本身即是 |\n| 高层次双学位项目 | 港城大“3+1”或“4+0”学位模式 |\n\n---\n\n## 模块五：校园生态与品牌\n\n### 5.1 学生赋权与自由度\n\n**转专业政策**：\n- 申请时间：每学期末\n- 申请次数：最多 2 次\n- 成绩要求：通常要求 GPA 3.0 以上，但实际操作中名额较充裕\n- 考核方式：面试\n- 成功率：85% 以上（数据来源：（社区反馈，需核验））\n\n### 5.2 基础设施与生活品质\n\n**宿舍条件**：（社区反馈，需核验） 本科生宿舍为标准两人间，上床下桌，配有独立卫浴、阳台及滚筒洗衣机。宿舍楼下设有24小时共享空间。年费约1200元，性价比极高，被学生戏称为“松山湖五星级公寓”。\n\n**食堂评级**：（社区反馈，需核验） 食堂走精致路线，提供中式快餐、港式烧腊及西餐。招牌菜为“城大乳牛雪糕”（复刻本部）。整体评价：口味中上，价格略高于普通公办大学。\n\n### 5.3 品牌资产与文化印记\n\n| 指标 | 数据 | 数据来源 |\n| --- | --- | --- |\n| 软科世界大学排名（母校） | 第 99 名 (2025) | 软科官网 |\n| 校友会排名 | [未入榜] | 新校暂无 |\n| B 站官方粉丝 | 1.2 万 | B站官方号 |\n| 抖音官方粉丝 | 2.5 万 | 抖音官方号 |\n| 社交媒体内容风格 | 现代、科幻、高冷，强调实验室画面 | — |\n\n### 5.4 学术氛围与社团生态\n\n**学术压力画像**：（社区反馈，需核验） 压力极大。全英文授课对新生挑战巨大，且作业（Assignment）和项目（Project）密度极高。“在松山湖，你不仅要和华为的人一起加班，还要和城大的教授一起熬夜。”\n\n**标志性社团/活动**：机器人战队（依托智能制造专业）、HK Tech 300 创业大赛。\n\n### 5.6 已知风险点\n\n| 风险点 | 事件概要 | 后续处理 | 当前状况 |\n| --- | --- | --- | --- |\n| 奖学金风波 | 2024年6月，部分研究生反映招生宣传中的奖学金承诺在录取时未能兑现，引发“虚假宣传”争议。 | 校方解释为“综合评定”误读，删除了部分争议推文。 | 2025年招生简章已明确奖学金细则，透明度提升。 |\n| 校园建设噪音 | 二期工程正在施工，部分宿舍区受噪音影响。 | 调整施工时间。 | 持续至2026年底。 |\n\n---\n\n## 模块七：文化揭秘卡片\n\n### 7.1 刻板印象 vs 现实\n\n**公众眼中的 香港城市大学（东莞）**： \"东莞版的九龙塘，有钱就能上的港校分校。\"\n\n**我们眼中的自己**： \"松山湖卷王聚集地，拿着东莞的物价，修着香港的学分，做着改变世界的梦。\"\n\n### 7.2 一句话校园精神测试\n\n**问题**：周五晚上十点，华为欧洲小镇的灯还亮着，你会：\n- **A.** 拍张照片发朋友圈感叹大厂不易，然后回宿舍打游戏。 → 点评：你可能更适合去传统的综合性大学。\n- **B.** 在实验室继续跑数据，心想以后一定要进这种公司拿高薪。 → 点评：恭喜，你拥有纯正的“港城莞”基因。\n\n### 7.3 气质标签云\n\n[硬核工科] [松山湖] [IANG签证] [全英授课] [两校一质] [科创跳板]\n\n---\n\n## 模块八：原始数据汇总\n\n### 8.1 数据源汇总\n\n| 数据项 | 引用来源 | 可信度 |\n| --- | --- | --- |\n| 录取分数线 | 掌上高考、各省教育考试院 | 高 |\n| 顶尖科学家人数 | 斯坦福大学/Elsevier 2025榜单 | 高 |\n| 奖学金争议 | 经济观察网、知乎 | 中 |\n| 宿舍/食堂评价 | 小红书、知乎匿名评价 | 中 |\n\n### 8.2 未检索到数据清单\n- 2023年录取数据（因2024年才开始首届招生，2023年无本科数据）。\n- 毕业五年薪酬数据（新校无毕业生）。\n\n---\n\n## 模块九：结构化数据导出 (JSON) [必须执行]\n\n```json\n{\n\"university_name\": \"香港城市大学（东莞）\",\n\"academic\": {\n\"a_plus_count\": 0,\n\"a_count\": 0,\n\"a_minus_count\": 0,\n\"academician_count\": 8,\n\"top_2_percent_scientists\": 37\n},\n\"employment\": {\n\"domestic_further_study_rate\": \"20% (Projected)\",\n\"overseas_further_study_rate\": \"50% (Projected)\",\n\"starting_salary\": 13500,\n\"iang_visa_support\": true\n},\n\"location\": {\n\"city\": \"东莞\",\n\"district\": \"松山湖科学城\",\n\"city_gdp\": \"1.14万亿元\"\n},\n\"scores\": {\n\"comprehensive_score\": 4.09,\n\"academic_score\": 4.2,\n\"employment_score\": 3.8,\n\"location_score\": 4.5,\n\"globalization_score\": 4.6,\n\"student_empowerment_score\": 3.5,\n\"brand_score\": 3.7\n}\n}\n```\n\n---\n## Google 搜索来源\n\n- [6617.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHsDv3BbPaC8odF-mNcVsGSJfyt8Hu9m_htXUW8wM8Bo45Ta2YSkRFLr9GZ7XSJMIW2gCno4zad8iiAnqw2CT6NZhnz-RcRmdXGYvUH-HkvgC4IneCL8T5mHzzuMb5flhT7)\n- [gaokao.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyK1bkotWBMHKg88CEj2WjepXht23XpOV7hQVVB8VT3fjc9nJ07G5oV2h5Pdfv7Wb8JdrYviT8-aYStgcfkl1DQ8ixBP_5gxUWFZQOaZM_Ybrzyhi7q0aJTrkYvIJw)\n- [xuexi.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGyb6Tk9-mHb-8vLeJ4GEpYUzlQqfabxBKLTgRQE-Vf-qex9d5WM2_hVKuSZQD_A_OuGqlpurwKUIgH1t4Lx8XbWTg5mJbAscTrrY_LzQd0MrxY_ySzCGKEahx3kg7MCc0Hu9YXxVOn7qrRrIP4UAps03_USLtDismT58aQzIcdmpQcqC_FvwlkIV0dC3q1yrEZWSW4AzLnr14BKTVpIZwQc0Heh24bJuNvDcWGCewSYIj5fPsgDQcpd1SObxA2-an9Z0tevrDEPTg6RVIvP4dbPX72FV4CKLJwCXLqQGExfUT6Z0t6VoG3tLqNJcPEG-V-8PIfUGk6pvrjCe9IdBASHpsFKG0g89GPDY2Ti1M92ypCOuv-AIL_zAShzGLPerLW7O0mQR-OUleumvuLN0uo_cIK_XzI)\n- [zizzs.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF02m6fKxmN4OUFXtIYM576k94l4DB1f1fdBey_y9NHqi7nL2rtVxl3aH-yU6D6n72DCur9F_ZEUr-N0qWmAsxcrYprxmWzJA7fqkmJ8xnLAPhs9PU9LnUC073ysl4bNj_2HUb4Na8A2h-8gZ8Rwfvn0eM=)\n- [cityu-dg.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3TnbEOYXKEkMRuhEvQHrKF1a3Ju8HKsKyjUtK-QQg6_iVbma3nYyShpTFBYFDIlzbNRmjL5x5EymdkPbSpSEHBakU8KuXD9b2LcqX3anCsEyMmYnwRES4LPBhS1bgDPrx_dOAGcxJ3Q==)\n- [compassedu.hk](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHoH5JtlLmN_Fx_BDG-CUFP21lo7BYUrARbpyF6ksFCg7hVR3rvKH7fdvtWPmLw8l7uSrqNiMVGPYMfP3lBHpWvJAoduGNuclbvBlBc4avZOgeN1z7SYPHgjMzRCcpTTQ==)\n- [compassedu.hk](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVWg-0mNwzCiiU8vj2rTfPX9xXXfsM3OJrsqGVs6lO4b3C6pXjr7u0p-h6nkQaCF7jRzDIWFHT6uI4nnHj4rYJRCMegu3C9xnP1wYy5LVw0m8uaZIGMPcobZ6Ru1w=)\n- [gk100.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYrKM7VtYQQPsTxbDTeQbhsW1WI5MsepsVTQZYPasmWjwaWJ9osGKIDmhcMucW6ePfwgrE_WmwnpLp7YOk6CzMiKXPqbFMK6UUDkWUzDuw5BR3Ouqg0D0_gnlMc_59KQ==)\n- [ceigd.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEwyh2QKsmPLqtMOn7kpeYQ6s47hp-hONtznutFAfMO5lxNc9vH3kZuennYhmAaMEgbJwJDEVXqG__C4IQoq8BLPtcm7sXAVd8DgNU9Wk5FUXmjIItmDIdWRIt4k1eO1E541-eGDtNbP4P0W0Z9TE0=)\n- [stheadline.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYWus2WNgbqLYPTN9lkxIoyyntijMcD5qJwvQDgT7XIjBGL2863o14T_tM6Y9sF7vB2bUVTYsCJ7210J3sdNT_DjqJS3kkk5kvlvkY1k9-dF33SZBLbcCNncbbUrZvbN5GHp43hgNnYdfWIUD7NA==)\n- [eeo.com.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGkRFPRl4mWVGr3ge8qgeERdsP9XbVR7gJj3-Vj37kdgGAPbtD6-w0-5Hys6SLbivheVFxUHSDnlWKog7q4Naa32I7PKmHJLsGW_goYSPYPT2QV2WBFTDSeiFsgNkp7by7WI4g55pa6)\n- [cityu-dg.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtTBcWIEJcxgVFo9E_YMfAoBz4DGJ8FdjbMINnzk1CdpOGT-fp7QwqXYL-NcbrcxGDSL8yAXbRHKipZW_vjP8HCZS2YgZymvuVPQSTrIgl8d7pJi_9F40JcQsb_PTWfSv9H0A=)\n- [lxbird.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnJSbFYofH2BpElXn1sMnrAi9Ia_lVA1KMb8bm_poGo_6BMf-dWtJJHKmhv522oiWjbsK-gtc099K7WLO4jcDhI7k9Qp3a9gu1u8VKEYdNuRgqiPPqs7aPyMUnypySVN8nQQkAGrQ=)\n- [dakao100.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF7Lc5pd2Twy5cX6nr5Djj53wGPJa-4n5jEnGtcSl36prV56keXJEbJR90QbipAhilAsL4AH2ZQ37pd76AH5C5-U6JQ3jHJpc6sxtxGQ06eBRB1KAVthOqjRrukFe_SMkviriKlZQ0=)\n- [cityu-dg.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGThNge7cxnpu9lz67KyKNVsTyeNO1fz3Y6aQpSfTGE5v-PGiTEVEJZ5ERzOVdXzfIFPWiChFkQIebSbJuzAZIjbdznNwYjTZ15zT2L4Fxluu5SCK-oQdDvtIMxFO5eU_PYpS0oeh85Ag==)\n- [xdf.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHmK3J6zVnz6usubb1t-KSc07i5jrps1ezzkSpAcSa7GKbEAVQKOBuFq_9U1gWLY7Oylkde1EtKmRtNHfV0dOMOBLsU-iJ4qMQuMbhYznz7xgAtVLahIQNgU-LvscpK_QZZDiYSryDRCQ==)\n- [hk01.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE54F3tHFyjUhcujUFCOGsEU0bQOVptlArM34ZfUsZ7vnDSay1lYam7BgqdKbOLs9hgsj2MuxOVbGitJnZHg-SII9fC3VfCBb73Q5lljhefeJ2rGKayMoPF2Y2nQXuP9LwV9qWBdMKywjkdtdccKJCUHiBtMXNBJhDdHRbQIhIj_gGiR5zKymaHjCXMc0OnSbFyWl7oAOF7abicQlpK11l2TZFdvxLh5TRvyeeSDP9p5ykzcp7OhiypcUtCmm5sqRrm8u7RbHOZSLp_IaIsbWgpusjVp3qjZTuN-_4yfFEgilRoIyHCwXwk3jZzsGmVMmOmlIL9ZnlmyWoyxrLYrpkGO_Qofq7uKFsZX_NsX2-hkj_1H9zDi6_5VtQGfNRpFlDOf8e-s8Otn97SkJhXtsMUi_jcSr2DWCsbVFBr8tpnLsiPrd1U2PUgyLTccN1eioMDophdNj6-one_6lBbGeKghZtwc0A_fECMhCR1)\n- [sina.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpSZ5CYT9pDDQzQw4QdxLeNilCUFrjRk9Y_SpSgvl9V_sBQqZU7QTn_0wBrRQMUPO9Pbzc-5QLv8TgwN9Tf13mVQ7qqxKkDzNflzUS5V_CC2a82VS4xfZMjHon4497hz45MTIZXlUhsIbceNMZ6EBWB67MQ8C9-tSG98YWM3GEuVAC5QY=)\n- [cityu-dg.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHi9Q_jjtrmWSxDA2oTqoDcTWoQDGjarYtzfb1WhUaiOANwnfVd5CE3f39Z0xUdRJrVLdF0qirUU1Qo6Hki9R21wB9EB3WECFt-AyY2r1CMqzAh7q4f4UY0LBfic1PZYSndO7PolVkUmzcqmZ6x0o6K3Bd7TodE)",
+    "tables": [
+      [
+        [
+          "评估维度",
+          "核心依据摘要",
+          "维度得分",
+          "权重",
+          "加权得分"
+        ],
+        [
+          "---------",
+          "------------",
+          "---------",
+          "------",
+          "---------"
+        ],
+        [
+          "学术资本",
+          "共享港城大QS前100声誉，37位全球前2%顶尖科学家入选",
+          "4.2",
+          "30%",
+          "1.26"
+        ],
+        [
+          "毕业生价值实现",
+          "暂无本科毕业生；硕士生及母校数据显示极强留港/大湾区竞争力",
+          "3.8",
+          "30%",
+          "1.14"
+        ],
+        [
+          "区位与产业势能",
+          "坐落东莞松山湖，紧邻华为及散裂中子源，产研耦合度极高",
+          "4.5",
+          "15%",
+          "0.68"
+        ],
+        [
+          "全球化能力",
+          "全英文教学，IANG签证支持，共享母校全球交换网络",
+          "4.6",
+          "10%",
+          "0.46"
+        ],
+        [
+          "学生赋权与自由度",
+          "转专业政策极度宽松（每年两次），但新校管理制度尚在磨合",
+          "3.5",
+          "5%",
+          "0.18"
+        ],
+        [
+          "品牌资产与文化印记",
+          "港校背景自带流量，但在内地社交媒体曾因奖学金风波受损",
+          "3.7",
+          "10%",
+          "0.37"
+        ],
+        [
+          "**加权总分**",
+          "",
+          "**100%**",
+          "",
+          "**4.09**"
+        ]
+      ],
+      [
+        [
+          "引入学科名称",
+          "母校QS/软科表现",
+          "所属门类"
+        ],
+        [
+          "---------",
+          "---------",
+          "---------"
+        ],
+        [
+          "计算机科学与技术",
+          "全球前50",
+          "工学"
+        ],
+        [
+          "材料科学与工程",
+          "全球前50",
+          "工学"
+        ],
+        [
+          "智能制造工程",
+          "港城大优势领域",
+          "工学"
+        ],
+        [
+          "能源与动力工程",
+          "港城大优势领域",
+          "工学"
+        ]
+      ],
+      [
+        [
+          "类别",
+          "人数",
+          "数据来源"
+        ],
+        [
+          "------",
+          "------",
+          "---------"
+        ],
+        [
+          "中国科学院/工程院院士",
+          "3 （需核验）",
+          "学校官网及新闻"
+        ],
+        [
+          "海外/外籍院士",
+          "5+",
+          "学校官网"
+        ],
+        [
+          "全球前2%顶尖科学家",
+          "37",
+          "2025年斯坦福大学榜单"
+        ],
+        [
+          "**合计**",
+          "**45+**",
+          ""
+        ]
+      ],
+      [
+        [
+          "平台名称",
+          "级别/类型",
+          "主要研究方向"
+        ],
+        [
+          "---------",
+          "----------",
+          "------------"
+        ],
+        [
+          "中子散射科学技术联合实验室",
+          "与散裂中子源共建",
+          "材料微观结构分析"
+        ],
+        [
+          "柔性及锌基电池样板工厂",
+          "与松山湖材料实验室共建",
+          "新能源存储"
+        ],
+        [
+          "太赫兹及毫米波国家重点实验室（东莞分部）",
+          "国家重点实验室分部",
+          "无线通信与感测"
+        ]
+      ],
+      [
+        [
+          "年份",
+          "保送生总数",
+          "外语类",
+          "竞赛类",
+          "其他",
+          "数据来源"
+        ],
+        [
+          "------",
+          "----------",
+          "--------",
+          "--------",
+          "------",
+          "---------"
+        ],
+        [
+          "2025",
+          "未检索到",
+          "未检索到",
+          "未检索到",
+          "未检索到",
+          "官网公示"
+        ],
+        [
+          "2024",
+          "0",
+          "0",
+          "0",
+          "0",
+          "2024招生简章"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          "------",
+          "----------",
+          "---------",
+          "------------------------"
+        ],
+        [
+          "北京",
+          "627",
+          "6561",
+          "前 1.2%"
+        ],
+        [
+          "上海",
+          "566",
+          "6814",
+          "前 1.3%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          "------",
+          "----------",
+          "---------",
+          "------------------------"
+        ],
+        [
+          "广东",
+          "618",
+          "14200",
+          "前 1.9%"
+        ],
+        [
+          "福建",
+          "617",
+          "7670",
+          "前 1.8%"
+        ],
+        [
+          "北京",
+          "627",
+          "6561",
+          "前 1.2%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          "------",
+          "----------",
+          "---------",
+          "------------------------"
+        ],
+        [
+          "广东",
+          "611",
+          "15215",
+          "前 2.1%"
+        ],
+        [
+          "河南",
+          "620",
+          "12607",
+          "前 1.1%"
+        ],
+        [
+          "云南",
+          "617",
+          "4513",
+          "前 1.0%"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数值",
+          "数据来源"
+        ],
+        [
+          "------",
+          "------",
+          "---------"
+        ],
+        [
+          "本科毕业生总数",
+          "0 (首届2028毕业)",
+          "—"
+        ],
+        [
+          "硕士深造率（预期）",
+          ">70%",
+          "参考港中深/港科广"
+        ],
+        [
+          "出国（境）深造率",
+          ">50%",
+          "参考母校水平"
+        ],
+        [
+          "进入 QS 前 50 比例",
+          "预期极高",
+          "依托母校推荐信体系"
+        ],
+        [
+          "最受欢迎海外深造地 Top 3",
+          "香港、英国、美国",
+          "（社区反馈，需核验）"
+        ]
+      ],
+      [
+        [
+          "去向方向",
+          "占比",
+          "关键细节"
+        ],
+        [
+          "---------",
+          "------",
+          "---------"
+        ],
+        [
+          "国内深造",
+          "20% (预估)",
+          "主要是保研至本部或C9"
+        ],
+        [
+          "出国深造",
+          "50% (预估)",
+          "申请欧美名校硕士"
+        ],
+        [
+          "考公/选调",
+          "<5%",
+          "合作办学学生普遍志不在体制内"
+        ],
+        [
+          "企业就业",
+          "25%",
+          "集中在大湾区大厂（华为、腾讯）"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数值",
+          "数据来源"
+        ],
+        [
+          "------",
+          "------",
+          "---------"
+        ],
+        [
+          "毕业起薪中位数（预期）",
+          "12,000 - 15,000 元/月",
+          "参考同类港校分校"
+        ],
+        [
+          "毕业 5 年薪酬中位数",
+          "未检索到",
+          "新校无数据"
+        ],
+        [
+          "同类高校薪酬水平",
+          "显著高于",
+          "依据：全英文教学及港校背景在跨国企业中溢价明显"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据",
+          "来源"
+        ],
+        [
+          "------",
+          "------",
+          "------"
+        ],
+        [
+          "所在城市",
+          "东莞市",
+          "—"
+        ],
+        [
+          "最新年度 GDP",
+          "1.14 万亿元 (2023)",
+          "东莞市统计局"
+        ],
+        [
+          "全国城市 GDP 排名",
+          "第 24 名",
+          "官方统计"
+        ],
+        [
+          "城市定位",
+          "“先进制造业之都”，大湾区核心节点",
+          "官方规划"
+        ]
+      ],
+      [
+        [
+          "城市支柱产业",
+          "耦合学科",
+          "耦合度"
+        ],
+        [
+          "------------",
+          "---------",
+          "-------"
+        ],
+        [
+          "电子信息制造",
+          "计算机、智能制造",
+          "高度共振"
+        ],
+        [
+          "新材料",
+          "材料科学与工程",
+          "高度共振"
+        ],
+        [
+          "新能源",
+          "能源与动力工程",
+          "高度共振"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据"
+        ],
+        [
+          "------",
+          "------"
+        ],
+        [
+          "实质性交换项目合作院校数",
+          "共享母校 400+ 所"
+        ],
+        [
+          "其中 QS 前 100 院校",
+          "牛津、剑桥、康奈尔等（短期交流/暑课）"
+        ],
+        [
+          "中外合作办学机构",
+          "香港城市大学（东莞）本身即是"
+        ],
+        [
+          "高层次双学位项目",
+          "港城大“3+1”或“4+0”学位模式"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据",
+          "数据来源"
+        ],
+        [
+          "------",
+          "------",
+          "---------"
+        ],
+        [
+          "软科世界大学排名（母校）",
+          "第 99 名 (2025)",
+          "软科官网"
+        ],
+        [
+          "校友会排名",
+          "未入榜",
+          "新校暂无"
+        ],
+        [
+          "B 站官方粉丝",
+          "1.2 万",
+          "B站官方号"
+        ],
+        [
+          "抖音官方粉丝",
+          "2.5 万",
+          "抖音官方号"
+        ],
+        [
+          "社交媒体内容风格",
+          "现代、科幻、高冷，强调实验室画面",
+          "—"
+        ]
+      ],
+      [
+        [
+          "风险点",
+          "事件概要",
+          "后续处理",
+          "当前状况"
+        ],
+        [
+          "--------",
+          "---------",
+          "---------",
+          "---------"
+        ],
+        [
+          "奖学金风波",
+          "2024年6月，部分研究生反映招生宣传中的奖学金承诺在录取时未能兑现，引发“虚假宣传”争议。",
+          "校方解释为“综合评定”误读，删除了部分争议推文。",
+          "2025年招生简章已明确奖学金细则，透明度提升。"
+        ],
+        [
+          "校园建设噪音",
+          "二期工程正在施工，部分宿舍区受噪音影响。",
+          "调整施工时间。",
+          "持续至2026年底。"
+        ]
+      ],
+      [
+        [
+          "数据项",
+          "引用来源",
+          "可信度"
+        ],
+        [
+          "--------",
+          "---------",
+          "--------"
+        ],
+        [
+          "录取分数线",
+          "掌上高考、各省教育考试院",
+          "高"
+        ],
+        [
+          "顶尖科学家人数",
+          "斯坦福大学/Elsevier 2025榜单",
+          "高"
+        ],
+        [
+          "奖学金争议",
+          "经济观察网、知乎",
+          "中"
+        ],
+        [
+          "宿舍/食堂评价",
+          "小红书、知乎匿名评价",
+          "中"
+        ]
+      ]
+    ],
+    "module9_structured_export": {
+      "title": "模块九：结构化数据导出",
+      "raw_content": "```json\n{\n\"university_name\": \"香港城市大学（东莞）\",\n\"academic\": {\n\"a_plus_count\": 0,\n\"a_count\": 0,\n\"a_minus_count\": 0,\n\"academician_count\": 8,\n\"top_2_percent_scientists\": 37\n},\n\"employment\": {\n\"domestic_further_study_rate\": \"20% (Projected)\",\n\"overseas_further_study_rate\": \"50% (Projected)\",\n\"starting_salary\": 13500,\n\"iang_visa_support\": true\n},\n\"location\": {\n\"city\": \"东莞\",\n\"district\": \"松山湖科学城\",\n\"city_gdp\": \"1.14万亿元\"\n},\n\"scores\": {\n\"comprehensive_score\": 4.09,\n\"academic_score\": 4.2,\n\"employment_score\": 3.8,\n\"location_score\": 4.5,\n\"globalization_score\": 4.6,\n\"student_empowerment_score\": 3.5,\n\"brand_score\": 3.7\n}\n}\n```\n\n---"
+    }
+  }
+}

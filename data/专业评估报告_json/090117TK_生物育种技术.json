@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.204226",
+    "updated_at": "2026-04-26T03:32:17.781824",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090117TK_生物育种技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略级\"农业芯片\"，赛道确定但本科毕业即就业竞争力弱，不吃苦、不考研慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 3.9
+    },
+    "weighted_score": 3.37
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "育种决策需要大量田间实验数据、遗传学直觉和跨学科综合判断，AI 可辅助基因序列分析和表型预测（如 AlphaFold），但田间试验设计、品种选育的综合决策仍高度依赖人类经验，短期内难以完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略级\"农业芯片\"，赛道确定但本科毕业即就业竞争力弱，不吃苦、不考研慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "西南大学",
+        "南京农业大学",
+        "西北农林科技大学",
+        "华中农业大学"
+      ],
+      "tier_B": [
+        "东北农业大学",
+        "河南农业大学",
+        "华南农业大学",
+        "吉林大学",
+        "海南大学"
+      ],
+      "tier_C_note": "安徽农业大学、石河子大学、北京农学院、山东农业大学、福建农林大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

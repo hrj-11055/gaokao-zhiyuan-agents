@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.886528",
+    "updated_at": "2026-04-27T05:14:39.516835",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "101004",
+    "name": "眼视光学",
+    "category": "医学",
+    "recommendation_level": "yellow",
+    "summary": "近视大国的刚需技术岗，入行门槛低于临床，但天花板明显——想当眼科医生？那是隔壁眼视光医学的事。",
+    "radar": {
+      "market_return": 3.4,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.57
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础验光流程（电脑验光、自动屈光检测）已被设备自动化程度大幅提高，AI 辅助的屈光筛查技术正在发展，常规验光的替代风险不容忽视。但复杂视功能评估（双眼视功能、调节/集合异常分析）、个性化方案设计、角膜塑形镜验配等高阶工作仍需人工判断和经验积累。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "近视大国的刚需技术岗，入行门槛低于临床，但天花板明显——想当眼科医生？那是隔壁眼视光医学的事。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "温州医科大学"
+      ],
+      "tier_A": [
+        "天津医科大学",
+        "中山大学",
+        "首都医科大学",
+        "四川大学"
+      ],
+      "tier_B": [
+        "南京医科大学",
+        "复旦大学（眼耳鼻喉科医院）",
+        "哈尔滨医科大学",
+        "山东中医药大学",
+        "广州中医药大学"
+      ],
+      "tier_C_note": "各省级医科大学及地方院校中开设眼视光学的院校，如贵州医科大学、滨州医学院、湖北科技学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

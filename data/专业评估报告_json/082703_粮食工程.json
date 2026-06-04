@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.000992",
+    "updated_at": "2026-04-25T22:53:53.051012",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082703",
+    "name": "粮食工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "国之命脉的\"隐形金饭碗\"：就业稳、政策强，但开设院校少、起薪中等，耐得住寂寞才吃得开。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.12
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "粮食工程涉及大量实体操作（生产线调试、粮情监测、品质检测），核心工作需要在物理环境中进行；工艺优化与设备维护需要现场经验判断，短期内AI难以替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国之命脉的\"隐形金饭碗\"：就业稳、政策强，但开设院校少、起薪中等，耐得住寂寞才吃得开。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学（依托食品学科A+）",
+        "江南大学（食品学科全国第一）"
+      ],
+      "tier_A": [
+        "河南工业大学（软科粮食工程排名第1，\"亚洲粮院\"，行业口碑最强）",
+        "东北农业大学",
+        "南京财经大学",
+        "华南理工大学（食品学科A+）"
+      ],
+      "tier_B": [
+        "吉林农业大学",
+        "武汉轻工大学",
+        "江苏科技大学",
+        "中南林业科技大学",
+        "沈阳师范大学"
+      ],
+      "tier_C_note": "吉林工商学院、安徽科技学院、吉林农业科技学院、商洛学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.819743",
+    "updated_at": "2026-05-03T01:36:21.934448",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广州软件学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "211",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 1.9,
+      "graduate_value": 3.4,
+      "location_advantage": 3.6,
+      "globalization": 2.6,
+      "student_empowerment": 3.2,
+      "brand_asset": 3.3
+    },
+    "weighted_score": 2.88,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：广州软件学院是一所深耕大湾区、以“IT+数媒”为核心竞争力的应用型特质民办本科高校。其前身为中山大学南方学院的关联机构（原中大华软），在转设后保持了极强的行业垂直度。\n\n**Ace（王牌优势）**：学校在软件工程、网络工程及数字媒体技术领域拥有极高的行业认可度。其课程体系紧贴市场需求，毕业生在珠三角中小型 IT 企业及大型企业的技术外包部门中拥有极高的渗透率。校友网络在深圳、广州的互联网圈层中已形成一定的“小圈子”效应。\n\n**Vibe（文化特质）**：务实、技术导向、极客精神。校园内具有典型的“码农”社区文化，学生对新技术的追求往往超过对学术理论的钻研。学校管理风格相对开放，给予了学生较多的自我探索空间，尤其在计算机竞赛和项目实操方面氛围浓厚。\n\n**Risk（潜在风险）**：作为民办高校，学费成本（2.6万-3万/年）是家庭决策的重要考量因素。此外，尽管应用型教学出色，但学术科研底蕴相对薄弱，对于目标是学术研究或报考顶级名校研究生的学生来说，平台支撑力有限。师资队伍中年轻教师比例较高，高层次领军人才依赖外聘。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实主义",
+        "代码驱动",
+        "不断电",
+        "丝木棉",
+        "珠三角 IT 蓄水池",
+        "民办强校",
+        "极客文化",
+        "从化绿谷"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

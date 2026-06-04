@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.764678",
+    "updated_at": "2026-05-11T15:49:35.273749",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "齐鲁理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.6,
+      "graduate_value": 2.8,
+      "location_advantage": 3.2,
+      "globalization": 2.2,
+      "student_empowerment": 2.5,
+      "brand_asset": 3.7
+    },
+    "weighted_score": 2.815,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "齐鲁理工学院（Qilu Institute of Technology）作为山东省民办高等教育的排头兵，其核心定位是“高水平应用型本科高校”。在全国民办高校竞争格局中，该校凭借极高的科研投入强度和严谨的教学管理，长期稳居软科、校友会等主流排行榜的前三甲。其办学特色在于将“齐鲁文化”的儒家精神与现代“新工科”、“新医科”深度融合，形成了一套独特的育人体系。\n\n从学术维度看，学校在民办高校普遍薄弱的科研平台建设上取得了显著突破，拥有多个省级重点实验室和工程研究中心，这为其应用型人才培养提供了坚实的硬件支撑。在生源端，学校在山东省内的认可度极高，录取分数线常年领跑民办本科批次，甚至在部分省份触及公办本科线。\n\n然而，作为民办院校，其面临的挑战同样明显：一是学费成本与公办院校相比具有显著溢价，对家庭经济能力有一定要求；二是尽管在民办领域处于顶尖，但在面对头部公办院校时，其学术声望和资源获取能力仍存在天然天花板；三是“半军事化”或“严格管理”的风格在学生群体中评价两极分化，部分追求极度自由的学生可能存在适应困难。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "民办天花板",
+        "考研集中营",
+        "儒家管理",
+        "济南高新腹地",
+        "就业实战派",
+        "学费溢价"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

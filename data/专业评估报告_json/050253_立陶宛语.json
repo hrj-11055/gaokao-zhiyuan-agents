@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.103284",
+    "updated_at": "2026-04-23T22:34:48.733877",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050253",
+    "name": "立陶宛语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "波罗的海最冷门的\"活化石语言\"，全国年招生不足50人，就业全靠外交\"窄门\"和一带一路运气，AI翻译正在加速淘汰底层岗位。",
+    "radar": {
+      "market_return": 2.3,
+      "industry_outlook": 1.5,
+      "future_adaptability": 1.8,
+      "career_path": 1.5,
+      "education_resources": 2.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 1.95
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI翻译技术（DeepL、Google Translate等）已覆盖立陶宛语等欧盟官方语言，基础笔译、日常口译等低复杂度岗位正被快速替代。麦肯锡预测到2030年全球约30%的外语相关工作将被AI部分或完全替代。仅高端外交口译、文化深度翻译等极少数场景暂不可替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "波罗的海最冷门的\"活化石语言\"，全国年招生不足50人，就业全靠外交\"窄门\"和一带一路运气，AI翻译正在加速淘汰底层岗位。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（全国首个开设立陶宛语本科的高校，师资最全，欧语学院体系完善，外交部定点招录院校）"
+      ],
+      "tier_A": [
+        "北京第二外国语学院",
+        "上海外国语大学（上外虽未单独开设立陶宛语本科，但通过非通用语种项目可定向培养）"
+      ],
+      "tier_B": [
+        "广东外语外贸大学（亚非语言文化学院有波罗的海语言研究方向）",
+        "天津外国语大学（区域性外国语院校，有小语种培养经验）"
+      ],
+      "tier_C_note": "目前无其他高校开设立陶宛语本科专业，C档暂缺",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.660033",
+    "updated_at": "2026-05-10T00:20:41.685152",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "常德学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.61,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "湖南应用技术学院（同城民办）",
+        "similarity": "同类院校",
+        "key_difference": "常德学院的“国有”基因使其在政策支持、土地资源及校企合作深度上更具优势，且师范类专业的历史底蕴更深；湖南应用技术学院则在市场化运作、新兴专业（如直播电商）的反应速度上略胜一筹。"
+      },
+      {
+        "name": "湖南理工学院南湖学院（同类转设）",
+        "similarity": "同类院校",
+        "key_difference": "两者均处于转设后的关键期，但常德学院背靠的常德市工业基础（烟机、化工）比岳阳更具特定行业壁垒，为工科学生提供了更具差异化的就业路径。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：常德学院的前身是**湖南文理学院芙蓉学院**，于 2025 年正式完成转设。其独特性在于“国有民办非营利性”身份，由常德市属大型国企——常德市城投集团举办。这意味着它既拥有民办高校的运行灵活性，又具备公办背景的稳定性与资源获取能力。\n*   **Ace（王牌优势）**：学校与常德本地支柱产业（如烟草机械、智能制造、生物医药）形成了紧密的“产教融合”共同体。由于举办方是城投集团，学生在本地实习、就业以及参与市政重点项目的机会远超同类民办院校。此外，其师范类专业保留了原母体学校的优良传统，在湘西北地区教育界认可度极高。\n*   **Vibe（文化特质）**：校园文化呈现出一种“务实与宁静”的交织。受“桃花源”地域文化影响，学生心态相对稳健，不盲目追求一线城市的浮躁，更多聚焦于专业技能的打磨与本地优质就业机会的捕捉。\n*   **Risk（潜在风险）**：转设后的品牌重塑需要时间，社会对“常德学院”这一新名称的认知度尚待提高；同时，在脱离母体学校后，如何独立构建高水平的科研平台和研究生培养点是其面临的长期挑战。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "湖南应用技术学院（同城民办）",
+          "similarity": "同类院校",
+          "key_difference": "常德学院的“国有”基因使其在政策支持、土地资源及校企合作深度上更具优势，且师范类专业的历史底蕴更深；湖南应用技术学院则在市场化运作、新兴专业（如直播电商）的反应速度上略胜一筹。"
+        },
+        {
+          "name": "湖南理工学院南湖学院（同类转设）",
+          "similarity": "同类院校",
+          "key_difference": "两者均处于转设后的关键期，但常德学院背靠的常德市工业基础（烟机、化工）比岳阳更具特定行业壁垒，为工科学生提供了更具差异化的就业路径。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

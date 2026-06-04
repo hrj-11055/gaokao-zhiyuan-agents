@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.023293",
+    "updated_at": "2026-04-23T12:30:13.816710",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050242",
+    "name": "孟加拉语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极度稀缺的\"一带一路\"小语种，名额个位数、路径极窄，政策红利是唯一杠杆，没有外交部或央企offer就是赌局。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.2,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.08
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "AI 翻译（DeepSeek、百度翻译等）已支持 200+ 语种，常规文本翻译替代率持续上升；但孟加拉语作为低资源语言，训练数据稀缺，AI 翻译质量远不如英日韩等大语种，且高端口译、跨文化谈判、驻外事务协调等场景 AI 短期无法替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度稀缺的\"一带一路\"小语种，名额个位数、路径极窄，政策红利是唯一杠杆，没有外交部或央企offer就是赌局。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学"
+      ],
+      "tier_A": [
+        "广东外语外贸大学",
+        "中国传媒大学"
+      ],
+      "tier_B": [
+        "（暂无）"
+      ],
+      "tier_C_note": "（暂无）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

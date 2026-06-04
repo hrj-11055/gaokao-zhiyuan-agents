@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.937180",
+    "updated_at": "2026-04-27T12:22:17.721440",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120402",
+    "name": "行政管理",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "\"体制内的窄门，万金油的困局——考公是最大卖点，但65:1的国考录取比告诉你，这条路比你想的窄得多。\"",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.0,
+      "future_adaptability": 2.5,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.78
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "基础行政事务（文件处理、数据录入、信息汇总、会议安排、档案管理）是AI和RPA工具的主要替代对象。DeepSeek等大模型已开始应用于政府智能问答、政策推送和辅助行政管理场景（来源：北京大学《人工智能在数字政府建设中的应用》）。但政策分析、公共决策、人际协调和利益博弈等核心能力短期难以被AI替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"体制内的窄门，万金油的困局——考公是最大卖点，但65:1的国考录取比告诉你，这条路比你想的窄得多。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "北京大学",
+        "清华大学"
+      ],
+      "tier_A": [
+        "浙江大学",
+        "中山大学",
+        "武汉大学",
+        "复旦大学",
+        "上海交通大学",
+        "南京农业大学",
+        "北京师范大学",
+        "华中科技大学"
+      ],
+      "tier_B": [
+        "四川大学",
+        "西安交通大学",
+        "北京航空航天大学",
+        "南开大学",
+        "华东师范大学",
+        "厦门大学",
+        "吉林大学",
+        "中南大学",
+        "深圳大学（国家级一流本科专业建设点）"
+      ],
+      "tier_C_note": "全国约 270+ 所普通本科院校，如各省属师范类院校、综合类院校等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.734747",
+    "updated_at": "2026-05-03T01:57:20.976241",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广东理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 3.2,
+      "location_advantage": 3.8,
+      "globalization": 1.5,
+      "student_empowerment": 3.0,
+      "brand_asset": 2.6
+    },
+    "weighted_score": 2.75,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "学费压力",
+        "description": "作为民办高校，其学费每年在 2.8 万-3.5 万人民币之间，加上生活费，四年开销接近 20 万。对于农村家庭而言，这是一笔巨大的投资，回报周期较长。"
+      },
+      {
+        "category": "书本费与杂费争议",
+        "description": "社交平台上偶尔会出现关于“书本费退费慢”或“杂费收取不透明”的投诉。虽然学校多次澄清，但仍对品牌形象造成一定干扰。"
+      },
+      {
+        "category": "校区搬迁阵痛",
+        "description": "部分学生在大二或大三面临校区调整，通勤和环境适应问题曾引发小规模不满。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "广东理工学院是一所典型的**“就业导向型”**民办本科。它不追求高深的学术排名，而是精准地捕捉珠三角制造业对中基层技术管理人才的需求。\n\n-   **核心优势**：地理位置优越（紧邻广佛），专业设置与产业需求高度同步，就业渠道极其通畅。\n-   **核心劣势**：学费昂贵，学术声誉薄弱，生源基础相对落后。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

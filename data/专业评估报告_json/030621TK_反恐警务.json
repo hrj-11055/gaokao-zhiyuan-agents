@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.086917",
+    "updated_at": "2026-04-21T02:59:36.917210",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030621TK_反恐警务",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "国家安全的\"特种兵\"赛道，入警率高、职业铁饭碗，但高度绑定体制内路径，体能+政审双重硬门槛，抗压能力弱者慎入。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 4.0,
+      "career_path": 3.5,
+      "education_resources": 3.2,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.84
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "反恐警务涉及复杂场景判断、现场危机处置、人际博弈（审讯/谈判）、体能执行等高度依赖人类综合感知和决策的任务，AI 难以替代一线警务人员的实战角色。AI 更多作为辅助工具（情报大数据分析、人脸识别等），反而提升反恐警务人员的效能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家安全的\"特种兵\"赛道，入警率高、职业铁饭碗，但高度绑定体制内路径，体能+政审双重硬门槛，抗压能力弱者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民公安大学（双一流",
+        "公安部直属",
+        "综合实力最强）"
+      ],
+      "tier_A": [
+        "中国刑事警察学院（刑事侦查权威",
+        "校友会研究型排名第1）",
+        "中国人民警察大学（边防消防特色",
+        "校友会2026公安学类排名第1）"
+      ],
+      "tier_B": [
+        "云南警官学院（西南边疆禁毒反恐特色突出）",
+        "新疆警察学院（反恐地域前沿优势）"
+      ],
+      "tier_C_note": "河南警察学院、新疆政法学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.213035",
+    "updated_at": "2026-04-25T06:04:47.000878",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080422T_软物质科学与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国独一份的\"交叉学科明珠\"，挂在新材料万亿风口上，但只有一个学校开设、高度依赖深造，本科就业认知度几乎为零——赌的是未来，拼的是科研底色。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.43
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 正在变革材料研发范式（AI for Science），但软物质科学的核心在于跨学科知识整合（物理+化学+生物+工程）、复杂实验设计与结果解读，以及从微观到宏观的多尺度思维——这些高阶认知能力短期内难以被 AI 完全替代。AI 更可能成为该领域从业者的\"加速器\"而非\"替代者\"。（参考：国家自然科学基金委 2024 年资助项目\"AI赋能高分子材料研发\"、科学网 2025 年报道\"AI助力软材料开发\"）"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国独一份的\"交叉学科明珠\"，挂在新材料万亿风口上，但只有一个学校开设、高度依赖深造，本科就业认知度几乎为零——赌的是未来，拼的是科研底色。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "华南理工大学（全国唯一开设本科专业，U.S. News 高分子科学全球第 1，本硕博贯通培养）"
+      ],
+      "tier_A": [
+        "清华大学（材料学院下设软物质方向）",
+        "浙江大学（高分子科学与工程学系）",
+        "中国科学技术大学（高分子科学与工程系）",
+        "复旦大学（高分子科学系）"
+      ],
+      "tier_B": [
+        "北京大学（化学与分子工程学院软物质方向）",
+        "上海交通大学（材料学院高分子方向）",
+        "南京大学（化学化工学院）",
+        "苏州大学（软物质研究团队活跃）",
+        "四川大学（高分子科学与工程学院）"
+      ],
+      "tier_C_note": "目前无其他院校开设此本科专业。未来若有院校跟进开设，建议关注具有高分子/材料学科传统优势的 211 及省属重点高校。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

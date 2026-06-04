@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.112243",
+    "updated_at": "2026-04-28T00:17:43.178005",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120105",
+    "name": "工程造价",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "建筑行业的\"算账人\"，曾吃尽地产红利，如今行业下行+AI双杀，无证难立身，入行需三思。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 2.2,
+      "future_adaptability": 2.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 0.0
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "BIM（建筑信息模型）+ AI 算量技术正在快速替代传统手工算量工作，广联达、鲁班等软件已能自动完成80%以上的工程量计算。造价人员的基础\"算量\"技能被替代风险高，但\"计价策略\"\"索赔管理\"\"全过程成本管控\"等高阶技能短期不易被完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "建筑行业的\"算账人\"，曾吃尽地产红利，如今行业下行+AI双杀，无证难立身，入行需三思。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "同济大学",
+        "天津大学",
+        "清华大学（建设管理系）"
+      ],
+      "tier_A": [
+        "重庆大学",
+        "东南大学",
+        "华中科技大学",
+        "哈尔滨工业大学",
+        "大连理工大学",
+        "湖南大学",
+        "中南大学"
+      ],
+      "tier_B": [
+        "北京建筑大学",
+        "沈阳建筑大学",
+        "山东建筑大学",
+        "西安建筑科技大学",
+        "南京工业大学",
+        "深圳大学",
+        "西南交通大学",
+        "长安大学",
+        "武汉理工大学"
+      ],
+      "tier_C_note": "各省市地方建筑类院校、综合性大学的管理科学与工程类下开设工程造价方向的院校（如XX工学院、XX工程学院等）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

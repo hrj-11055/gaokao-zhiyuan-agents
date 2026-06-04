@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.199244",
+    "updated_at": "2026-04-25T23:32:24.738479",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082709T_食品安全与检测",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策催生的刚需赛道，稳饭碗但非金饭碗，起薪平平靠证书和经验翻盘，适合追求稳定而非暴富的人。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.8,
+      "discipline_core": 5.0
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "核心技能包括实验室操作（HPLC、GC-MS 等精密仪器操作）、微生物检测、现场抽检等，这些需要物理操作和专业判断，AI 可辅助数据分析但不能替代实验操作。但常规性数据分析、报告撰写环节面临 AI 自动化风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策催生的刚需赛道，稳饭碗但非金饭碗，起薪平平靠证书和经验翻盘，适合追求稳定而非暴富的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学",
+        "江南大学"
+      ],
+      "tier_A": [
+        "南昌大学",
+        "南京农业大学",
+        "浙江大学",
+        "华中农业大学",
+        "华南理工大学"
+      ],
+      "tier_B": [
+        "上海师范大学（食品安全与检测专业排名第 1）",
+        "湖北大学（排名第 2）",
+        "重庆工商大学（排名第 3）",
+        "汕头大学（排名第 6）"
+      ],
+      "tier_C_note": "西安文理学院（排名第 4）、新疆理工学院（排名第 5，400–500 分段考生可考虑）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

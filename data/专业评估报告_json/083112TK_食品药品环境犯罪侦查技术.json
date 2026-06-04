@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.931382",
+    "updated_at": "2026-04-26T01:30:49.798955",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083112TK_食品药品环境犯罪侦查技术",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "\"政策风口上的公安铁饭碗，入警率超九成，但专业极窄、毕业去向高度绑定体制内，想转行的别来。\"",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.1,
+      "future_adaptability": 3.5,
+      "career_path": 3.3,
+      "education_resources": 3.2,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.83
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "犯罪现场勘查、物证提取、案件审讯等需要实地操作和人际判断的工作环节极难被 AI 替代。但实验室检测分析（如色谱分析、光谱分析）中 AI 辅助能力正在增强，部分标准化检测流程可能被自动化。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"政策风口上的公安铁饭碗，入警率超九成，但专业极窄、毕业去向高度绑定体制内，想转行的别来。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京警察学院（全国首个开设该专业的院校，A+ 评级，师资和实验条件最成熟）",
+        "中国人民警察大学（公安部直属，A+ 评级，师资力量雄厚）"
+      ],
+      "tier_A": [
+        "四川警察学院（B+，西南地区食药环侦人才培养主力）"
+      ],
+      "tier_B": [
+        "福建警察学院（B）",
+        "江苏警官学院（B）",
+        "河南警察学院"
+      ],
+      "tier_C_note": "吉林警察学院、江西警察学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.038523",
+    "updated_at": "2026-04-27T18:53:37.798810",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120209",
+    "name": "物业管理",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "低门槛入行、高经验溢价的\"社区管家\"，行业空间大但起步苦、晋升慢，拼的是人情世故和资源整合，名校光环加成有限。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.4,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 2.2
+    },
+    "weighted_score": 2.87
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3500–5000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "物业管理的核心工作是人与人的沟通协调（业主关系、投诉处理、社区活动），以及突发事件的现场处置，这些高度依赖现场感和人际沟通的场景 AI 短期内难以替代。但巡检、安防监控、费用核算等标准化环节正在被 IoT + AI 替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "低门槛入行、高经验溢价的\"社区管家\"，行业空间大但起步苦、晋升慢，拼的是人情世故和资源整合，名校光环加成有限。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业无顶尖院校以物业管理闻名）"
+      ],
+      "tier_A": [
+        "北京林业大学",
+        "武汉理工大学",
+        "上海大学",
+        "华中师范大学"
+      ],
+      "tier_B": [
+        "山东青年政治学院",
+        "广州大学",
+        "重庆工商大学",
+        "南京林业大学",
+        "浙江树人学院",
+        "内蒙古财经大学"
+      ],
+      "tier_C_note": "全国约 80+ 所本科院校开设 ，多为地方应用型本科和独立学院，如武昌工学院、武汉华夏理工学院、福州外语外贸学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.707713",
+    "updated_at": "2026-05-09T14:28:07.823687",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中央财经大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.5,
+      "graduate_value": 4.9,
+      "location_advantage": 5.0,
+      "globalization": 4.3,
+      "student_empowerment": 3.7,
+      "brand_asset": 4.7
+    },
+    "weighted_score": 4.655,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：中国财经教育的排头兵，金融精英的孵化器。\n*   **Ace（王牌优势）**：无与伦比的行业认可度。在中财大，你获得的不仅是学位，更是一张进入中国金融核心圈层的门票。\n*   **Vibe（文化特质）**：专业、务实、高压。这里不适合寻找“诗和远方”，但非常适合打造“职业护城河”。\n*   **Risk（潜在风险）**：学科结构单一，抗风险能力较弱（如金融行业整体下行时）。此外，极度的竞争环境可能导致部分学生的心理压力过大。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "绩点为王",
+        "西装革履",
+        "实习狂魔",
+        "CPA/CFA",
+        "务实主义",
+        "金融街预备役",
+        "体育强校",
+        "龙马精神"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

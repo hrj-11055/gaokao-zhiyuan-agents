@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.823497",
+    "updated_at": "2026-05-12T10:59:39.914239",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "沈阳城市建设学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.5,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "沈阳城市建设学院（以下简称“沈阳城建”）是一所以建筑、土木为核心特色的应用型民办本科高校。其前身为沈阳建筑大学城市建设学院，于 2013 年经教育部批准转设为独立设置的普通本科高校。这种“名校血统”使其在创办初期便继承了沈阳建筑大学（建筑老八校及新八校之外的强力补充）的教学大纲、师资力量及深厚的行业校友资源。\n\n从学术定位来看，学校避开了综合性大学的全面竞争，精准切入“建筑全产业链”这一垂直赛道。在民办高校普遍面临生源危机的背景下，沈阳城建凭借极具视觉冲击力的“欧式城堡”校园环境和“准就业导向”的专业设置，在东北地区乃至华北地区维持了稳定的生源基本盘。然而，必须指出的是，随着中国房地产及基建行业进入存量时代，该校核心专业（土木工程、建筑学）的毕业生正面临前所未有的结构性挑战。\n\n在量化评分中，该校获得 2.50 分。这一分数反映了其在民办教育领域中属于“专业特色鲜明、硬件设施超前、但受限于行业周期”的典型代表。其学术资本得分较低，主要受限于民办体制下的科研产出与高层次人才引进瓶颈；而品牌资产得分较高，则归功于其成功的校园IP打造和在建筑施工企业中积累的良好口碑。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

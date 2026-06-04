@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.057760",
+    "updated_at": "2026-04-27T04:58:32.175218",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100901K_法医学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "医学里的\"冷门硬汉\"——体制内铁饭碗稳如磐石，但面对的是尸体而非患者，心理门槛高过分数线，非意志坚强者慎入。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.4,
+      "future_adaptability": 3.8,
+      "career_path": 2.6,
+      "education_resources": 3.0,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.32
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "法医学核心工作——尸体检验、伤情鉴定、毒物分析——需要极强的现场经验、跨学科综合判断和法律责任承担能力。AI 可辅助影像识别和 DNA 比对，但无法替代法医在现场做出具有法律效力的专业判断和出庭质证。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "医学里的\"冷门硬汉\"——体制内铁饭碗稳如磐石，但面对的是尸体而非患者，心理门槛高过分数线，非意志坚强者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "四川大学（华西）",
+        "中山大学",
+        "中国医科大学"
+      ],
+      "tier_A": [
+        "西安交通大学",
+        "华中科技大学",
+        "复旦大学",
+        "中南大学（湘雅）",
+        "南方医科大学"
+      ],
+      "tier_B": [
+        "昆明医科大学",
+        "河北医科大学",
+        "山西医科大学",
+        "重庆医科大学",
+        "南京医科大学",
+        "广东医科大学",
+        "贵阳医学院"
+      ],
+      "tier_C_note": "新乡医学院、赣南医科大学、内蒙古科技大学包头医学院等地方医学院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

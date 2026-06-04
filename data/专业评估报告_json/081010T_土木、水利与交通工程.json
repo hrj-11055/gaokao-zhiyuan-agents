@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.182680",
+    "updated_at": "2026-04-25T14:50:05.177865",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081010T_土木、水利与交通工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "三大基建赛道一锅端，浙大独办的\"新土木\"实验班，理论上复合无敌，实际上绑在基建大盘的过山车上，下行周期没人能幸免。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 2.6,
+      "future_adaptability": 3.4,
+      "career_path": 3.5,
+      "education_resources": 3.8,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.1
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–7,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI已在结构计算、图纸审查、工程量清单编制等环节替代人工（住建部2025年《智能建造技术导则》明确AI赋能方向），但现场施工管理、地质勘测判断、工程协调等需要多感官综合判断的任务短期内难以完全替代。BIM+AI融合方向反而是新机会。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "三大基建赛道一锅端，浙大独办的\"新土木\"实验班，理论上复合无敌，实际上绑在基建大盘的过山车上，下行周期没人能幸免。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江大学"
+      ],
+      "tier_A": [
+        "桂林理工大学"
+      ],
+      "tier_B": [
+        "青海大学"
+      ],
+      "tier_C_note": "青海理工学院、内江师范学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

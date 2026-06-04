@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.921657",
+    "updated_at": "2026-04-26T03:25:50.338515",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090115T_生物农药科学与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在绿色农业风口的\"窄门专业\"——赛道爆发、人才稀缺，但全国仅十几所高校开设，认知度低、招生极少，属于\"选对了就是蓝海，选错了就是冷门\"的典型信息差专业。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.57
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "微生物菌株筛选、发酵工艺优化、田间试验设计等核心工作依赖大量实验数据和经验判断，AI可辅助数据分析和配方模拟，但无法替代实验室操作和田间验证。生物体系复杂性极高，短期内难以被AI完全取代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在绿色农业风口的\"窄门专业\"——赛道爆发、人才稀缺，但全国仅十几所高校开设，认知度低、招生极少，属于\"选对了就是蓝海，选错了就是冷门\"的典型信息差专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学",
+        "南京农业大学",
+        "浙江大学（按植物保护学科评估，但未直接开设本专业）"
+      ],
+      "tier_A": [
+        "山西农业大学（本专业全国排名第一，植物保护 B+，最早开设该专业）",
+        "福建农林大学",
+        "华中农业大学"
+      ],
+      "tier_B": [
+        "青岛农业大学（2024年获批开设，植物保护 C+）",
+        "内蒙古农业大学",
+        "河南科技大学"
+      ],
+      "tier_C_note": "河南科技学院、山东农业工程学院 等近年新获批院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

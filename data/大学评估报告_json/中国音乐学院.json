@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.535587",
+    "updated_at": "2026-05-09T14:44:56.824460",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中国音乐学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 4.52,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "中国音乐学院是一所**极度专业化、资源高度集中、且具有强烈文化使命感**的顶尖艺术学府。它不仅为学生提供专业技能的训练，更提供了一个进入中国乃至全球最高端艺术圈层的入场券。\n\n**核心优势**：\n1.  **民族音乐领域的绝对霸权**：如果你想学习民乐或民族声乐，这里是全球不二之选。\n2.  **北京的资源杠杆**：地理位置带来的实践机会和行业接触点是其他城市无法比拟的。\n3.  **强大的校友背书**：在行业内，国音的身份往往意味着专业水平的“免检”。\n\n**主要挑战**：\n1.  **极高的竞争压力**：从入学的校考到在校的专业考核，竞争近乎残酷。\n2.  **文化课门槛提升**：对考生的综合素质提出了更高要求，单纯的“艺痴”已难以生存。\n3.  **专业壁垒**：由于专业性太强，学生如果想跨行发展，需要付出比综合性大学学生更多的努力。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

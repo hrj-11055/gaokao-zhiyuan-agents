@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.606963",
+    "updated_at": "2026-05-08T02:23:20.604336",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京工程学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "最适合：",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 4.5,
+      "location_advantage": 4.6,
+      "globalization": 3.2,
+      "student_empowerment": 3.8,
+      "brand_asset": 4.2
+    },
+    "weighted_score": 3.81,
+    "one_sentence_recommend": "最适合："
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：中国电力工业的“人才摇篮”，原机械部、电力部直属院校的血统传承者，全国应用型本科教育的领军高校。\n*   **Ace（王牌优势）**：电气工程及其自动化、智能电网信息工程。其毕业生进入国家电网的人数长期稳居全国前列，是行业内公认的“直供院校”。\n*   **Vibe（文化特质）**：务实、厚重、工程导向。校园氛围更接近“准职场”，学生普遍关注考公、进国企、技能竞赛及各类职业资格证书。\n*   **Risk（潜在风险）**：非“双一流”身份在部分对院校名气有硬性要求的互联网大厂（如阿里、腾讯）或顶级金融机构的简历筛选中可能处于劣势。此外，非核心专业的就业质量与王牌专业存在显著断层。",
+      "one_sentence_recommend": "最适合：",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "强电",
+        "国企直通车",
+        "江宁大学城",
+        "应用型标杆",
+        "低调",
+        "考证达人"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

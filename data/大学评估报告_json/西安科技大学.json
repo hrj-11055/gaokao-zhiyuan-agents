@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.726272",
+    "updated_at": "2026-05-09T16:19:30.976684",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西安科技大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "最适合那些：",
+    "radar": {},
+    "weighted_score": 3.51,
+    "one_sentence_recommend": "最适合那些："
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "西安理工大学",
+        "similarity": "同类院校",
+        "key_difference": "两校同为陕西省属理工强校。西安理工大学在水利水电、印刷包装及通用机械领域更具优势，学科覆盖面更广，更适合追求通用工科就业的学生；而西安科技大学在安全、采矿、地质等细分赛道具有“统治级”地位，行业壁垒极高。若目标是进入国家能源集团、陕煤集团等特定行业，西科大的性价比和校友资源远超西安理工。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：西安科技大学（XUST）是一所以“安全、能源、土木”为核心优势，由应急管理部与陕西省政府共建的特色高水平理工大学。作为原煤炭工业部直属的“老八校”之一，它不仅是西北地区能源工业的人才摇篮，更是国家安全生产与应急管理领域的重要智库。\n\n**Ace（王牌优势）**：学校在“安全科学与工程”学科上拥有全国顶尖的竞争力，在第五轮学科评估中实现了重大突破。其采矿工程、地质工程等传统优势专业，通过与大数据、人工智能的深度融合，已成功转型为“智能开采”等前沿领域。对于立志于进入能源、矿业及大型基建行业的学生而言，西科大提供的不仅是学历，更是进入行业核心圈层的“入场券”。\n\n**Vibe（文化特质）**：西科大的校园文化带有鲜明的“地矿油”底色——低调、务实、能吃苦。这种气质在临潼校区的骊山脚下得到了升华，学生普遍展现出较强的工程实践能力和抗压能力。虽然在外界看来略显“硬核”甚至“艰苦”，但在行业内部，这种“下得去、留得住、干得好”的评价是其毕业生最核心的竞争力。\n\n**Risk（潜在风险）**：2024 年发生的“按闹改分”舆情事件暴露出学校在基层教学管理和行政响应机制上的短板。虽然学校随后进行了严厉问责与整改，但这一事件对学校的社会声誉造成了一定冲击。此外，由于行业属性较强，部分传统专业的就业环境相对艰苦，对于追求“精致都市生活”的考生需谨慎评估。",
+      "one_sentence_recommend": "最适合那些：",
+      "horizontal_comparison": [
+        {
+          "name": "西安理工大学",
+          "similarity": "同类院校",
+          "key_difference": "两校同为陕西省属理工强校。西安理工大学在水利水电、印刷包装及通用机械领域更具优势，学科覆盖面更广，更适合追求通用工科就业的学生；而西安科技大学在安全、采矿、地质等细分赛道具有“统治级”地位，行业壁垒极高。若目标是进入国家能源集团、陕煤集团等特定行业，西科大的性价比和校友资源远超西安理工。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

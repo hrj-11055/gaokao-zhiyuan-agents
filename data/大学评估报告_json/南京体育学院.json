@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.828922",
+    "updated_at": "2026-05-08T02:09:10.496468",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京体育学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.0,
+      "graduate_value": 3.5,
+      "location_advantage": 4.5,
+      "globalization": 3.0,
+      "student_empowerment": 3.2,
+      "brand_asset": 4.8
+    },
+    "weighted_score": 3.87,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南京体育学院是一所**特色极度鲜明**的行业领军型高校。它不仅是一所大学，更是一个集教学、科研、训练于一体的竞技体育生态系统。其核心竞争力在于 A- 级的体育学科底蕴和无可比拟的冠军校友资源。\n\n**优势 (Strengths)**：\n- 顶级的行业地位与品牌声誉。\n- 位于南京，拥有极佳的产业耦合度。\n- 毕业生在体育教育和康复领域具有极强的竞争力。\n\n**劣势 (Weaknesses)**：\n- 学科结构单一，非体育类专业存在边缘化风险。\n- 国际化排名指标有待提升。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "冠军工厂",
+        "灵谷深处",
+        "体教融合",
+        "自律",
+        "荷尔蒙",
+        "民国风",
+        "硬核训练",
+        "长三角体育龙头"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

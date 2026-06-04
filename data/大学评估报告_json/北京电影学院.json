@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.496655",
+    "updated_at": "2026-05-09T14:50:45.949656",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "北京电影学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "211",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.8,
+      "graduate_value": 4.6,
+      "location_advantage": 5.0,
+      "globalization": 4.3,
+      "student_empowerment": 3.6,
+      "brand_asset": 5.0
+    },
+    "weighted_score": 4.68,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 25000,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "学术诚信与圈层固化",
+        "description": "作为一所高度依赖人脉和导师评价的学校，如何确保评价体系的公平性，防止“近亲繁殖”和圈层固化，是北影面临的长期挑战。"
+      },
+      {
+        "category": "技术冲击下的教学滞后",
+        "description": "虽然北影在技术研发上领先，但传统教学大纲如何快速响应 AIGC 等颠覆性技术，仍存在一定的时滞。"
+      },
+      {
+        "category": "心理压力与竞争焦虑",
+        "description": "在明星光环和成功学叙事的笼罩下，部分学生面临巨大的心理压力，尤其是非核心专业的学生容易产生“边缘化”感知。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "北京电影学院（BFA）不仅是一所高等学府，更是中国影视工业的“母体”与“标准制定者”。在 2023–2025 年的评估周期内，北影展现出了极强的学科统治力。其核心竞争力在于将深厚的学术积淀与前沿的工业实践完美融合。随着怀柔校区的全面启用，北影形成了“海淀科研教学+怀柔工业实践”的双核格局，进一步巩固了其在亚洲乃至世界电影教育领域的领先地位。\n\n从学术维度看，北影在教育部第五轮学科评估中继续保持顶尖水平，戏剧与影视学作为其“皇冠上的明珠”，不仅在理论研究上引领国内风气，更在技术标准（如 4K/8K 影像标准、虚拟拍摄技术）上拥有话语权。从就业维度看，虽然影视行业经历了一定程度的调整，但北影毕业生凭借极强的“圈层效应”和专业技能，依然占据了行业核心岗位的半壁江山。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "星光熠熠",
+        "专业至上",
+        "圈层文化",
+        "熬夜冠军",
+        "怀柔影都",
+        "技术流",
+        "死磕到底",
+        "作品身份证"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

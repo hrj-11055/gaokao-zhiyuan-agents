@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.039369",
+    "updated_at": "2026-04-26T00:33:17.297956",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082904T_安全生产监管",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的\"小众硬核\"专业，人才缺口38万但仅2校开设，入行靠证书而非学历，体制内外两重天。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "核心技能包括现场隐患辨识、事故调查分析、安全法规解读与执法文书制作，涉及大量现场踏勘、人际沟通和复杂情境判断，AI 可辅助数据分析和监测预警，但无法替代现场执法和事故调查中的人文判断与责任承担。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的\"小众硬核\"专业，人才缺口38万但仅2校开设，入行靠证书而非学历，体制内外两重天。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无院校开设本专业（安全工程方向推荐：中国矿业大学",
+        "中国科学技术大学）"
+      ],
+      "tier_A": [
+        "华北科技学院（应急管理部直属，安全领域行业背景深厚，2024年软科安全生产监管专业排名第1）"
+      ],
+      "tier_B": [
+        "北京石油化工学院（依托化工安全特色，2025年新增排名第1）"
+      ],
+      "tier_C_note": "暂无其他院校开设",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

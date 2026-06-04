@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.046460",
+    "updated_at": "2026-04-25T05:02:03.129204",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080402",
+    "name": "材料物理",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "曾经的\"天坑\"正在翻身——半导体和新能源让材料物理站上风口，但仍是典型的\"硕士起步、博士封顶\"厚积薄发型专业。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.53
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "材料物理核心涉及实验设计、材料表征（SEM/TEM/XRD）、性能优化等需要物理直觉和动手实验能力的环节，AI 可辅助材料模拟（材料信息学），但无法替代实验验证和工程判断。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "曾经的\"天坑\"正在翻身——半导体和新能源让材料物理站上风口，但仍是典型的\"硕士起步、博士封顶\"厚积薄发型专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国科学技术大学",
+        "清华大学",
+        "复旦大学",
+        "南京大学",
+        "上海交通大学"
+      ],
+      "tier_A": [
+        "哈尔滨工业大学",
+        "西北工业大学",
+        "北京航空航天大学",
+        "浙江大学",
+        "武汉大学",
+        "武汉理工大学",
+        "北京科技大学",
+        "西安交通大学"
+      ],
+      "tier_B": [
+        "天津大学",
+        "北京理工大学",
+        "中南大学",
+        "华南理工大学",
+        "四川大学",
+        "东北大学",
+        "北京化工大学",
+        "南京理工大学",
+        "东华大学"
+      ],
+      "tier_C_note": "中国民航大学、南京信息工程大学、天津理工大学、长春工业大学、上海应用技术大学、内蒙古工业大学、景德镇陶瓷大学、洛阳理工学院、安顺学院等。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

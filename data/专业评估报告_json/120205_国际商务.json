@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.965704",
+    "updated_at": "2026-04-27T18:31:17.816490",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120205",
+    "name": "国际商务",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "万金油的尴尬：名字高大上，实操靠英语，出路在跨境，没硬技能就是\"懂点外贸的打杂人\"。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 3.0,
+      "education_resources": 3.2,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.07
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5500–7500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 对国际贸易的冲击显著——外贸邮件自动生成、多语言翻译、报关单据自动化处理、市场数据分析等传统核心工作正被 AI 快速替代。保留优势在于：复杂商务谈判、跨文化关系维护、供应链突发问题处理等需要\"人\"的环节。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "万金油的尴尬：名字高大上，实操靠英语，出路在跨境，没硬技能就是\"懂点外贸的打杂人\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "对外经济贸易大学",
+        "北京大学（国际关系+经济交叉）",
+        "复旦大学",
+        "中国人民大学"
+      ],
+      "tier_A": [
+        "南开大学",
+        "厦门大学",
+        "上海财经大学",
+        "中山大学",
+        "浙江大学",
+        "武汉大学",
+        "中央财经大学"
+      ],
+      "tier_B": [
+        "上海对外经贸大学",
+        "广东外语外贸大学",
+        "浙江工商大学",
+        "山东大学（威海）",
+        "西南财经大学",
+        "中南财经政法大学",
+        "宁波大学",
+        "首都经济贸易大学",
+        "深圳大学"
+      ],
+      "tier_C_note": "各省属财经类院校及综合性大学的国际商务专业，如河北经贸大学、云南财经大学、贵州财经大学等。对于分数在中等段的考生，优先选择**沿海城市**或**跨境电商产业集聚区**（深圳、广州、杭州、宁波）的高校，地域优势比学校排名更实际。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

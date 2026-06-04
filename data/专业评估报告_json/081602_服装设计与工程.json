@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.180200",
+    "updated_at": "2026-04-25T17:46:36.497140",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081602",
+    "name": "服装设计与工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "工程与审美的交叉地带，产业升级中的\"刚需但低薪\"角色——懂AI和智能制造的人才有突围机会，其余人卷在设计助理红海里。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.0,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.2,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.0
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "AI已深度渗透服装行业——AI辅助制版（Style3D/CVPR 2025论文）、AI一键生成设计、虚拟试衣等技术正在替代基础制版和初稿设计工作。但服装人体工效学、面料物理性能、复杂工艺决策等需要物理直觉和工程经验的环节，AI短期内难以完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "工程与审美的交叉地带，产业升级中的\"刚需但低薪\"角色——懂AI和智能制造的人才有突围机会，其余人卷在设计助理红海里。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东华大学（211/双一流，学科评估A+，国内绝对第一）"
+      ],
+      "tier_A": [
+        "浙江理工大学（A+，CNUR前二）",
+        "江南大学（211，A级）",
+        "天津工业大学（双一流，A级）",
+        "苏州大学（211，A级）",
+        "北京服装学院（行业顶尖，B+但实际声誉极高）"
+      ],
+      "tier_B": [
+        "西安工程大学",
+        "武汉纺织大学",
+        "大连工业大学",
+        "青岛大学",
+        "上海工程技术大学",
+        "南通大学",
+        "闽江学院"
+      ],
+      "tier_C_note": "德州学院、陕西科技大学、中原工学院、惠州学院、温州大学、河北科技大学、安徽工程大学、江西服装学院、内蒙古工业大学、山东工艺美术学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

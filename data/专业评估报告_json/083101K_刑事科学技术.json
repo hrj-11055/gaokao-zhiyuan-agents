@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.107568",
+    "updated_at": "2026-04-26T00:51:21.705433",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083101K_刑事科学技术",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "穿白大褂的\"刑警\"，靠公安联考直通体制铁饭碗，入警率超九成，但政审体检一票否决，女生名额极少。",
+    "radar": {
+      "market_return": 4.0,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.0,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.66
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 可辅助图像增强、DNA 比对、指纹识别等环节，但犯罪现场勘查、物证关联分析、法庭出庭作证等需要人的判断力和法律素养，AI 难以完全替代。电子物证方向甚至因 AI 技术发展而需求增长。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "穿白大褂的\"刑警\"，靠公安联考直通体制铁饭碗，入警率超九成，但政审体检一票否决，女生名额极少。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国刑事警察学院",
+        "中国人民公安大学"
+      ],
+      "tier_A": [
+        "江苏警官学院",
+        "四川警察学院",
+        "福建警察学院",
+        "西南政法大学"
+      ],
+      "tier_B": [
+        "浙江警察学院",
+        "湖南警察学院",
+        "云南警官学院",
+        "广东警官学院",
+        "郑州警察学院",
+        "南京警察学院"
+      ],
+      "tier_C_note": "河南警察学院、湖北警官学院、吉林警察学院、贵州警察学院、江西警察学院、广西警察学院、山西警察学院、重庆警察学院、甘肃政法大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

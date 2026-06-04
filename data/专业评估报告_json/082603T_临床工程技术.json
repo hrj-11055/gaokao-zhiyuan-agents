@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.068765",
+    "updated_at": "2026-04-25T22:35:59.575022",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082603T_临床工程技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "医疗设备的\"全科医生\"，行业需求旺盛但全国仅一所院校开设，小众赛道机会与局限并存。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.54
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "临床工程师的核心工作涉及医疗设备的实地维护、故障排查、临床适配方案定制等高度依赖物理操作和现场判断的任务，AI可以辅助数据分析和预测性维护，但无法替代设备安装调试、辐射安全检测、ECMO管路定制等实操环节。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "医疗设备的\"全科医生\"，行业需求旺盛但全国仅一所院校开设，小众赛道机会与局限并存。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业开设时间短",
+        "层次单一）"
+      ],
+      "tier_A": [
+        "上海健康医学院（全国首创",
+        "唯一开设此专业的院校，校友会2025应用型排名第一）"
+      ],
+      "tier_B": [
+        "暂无"
+      ],
+      "tier_C_note": "暂无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

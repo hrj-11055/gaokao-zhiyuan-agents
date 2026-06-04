@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.018681",
+    "updated_at": "2026-04-26T01:09:46.657081",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083106TK_抢险救援指挥与技术",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "穿制服的\"逆行者\"培养基地——政策护航、铁饭碗兜底，但招生院校极少、体能门槛极高，且长期工作伴随高风险高压。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.72
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~95%",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "现场指挥决策、危险环境下的应急处置、人员搜救等核心工作需要极强的情境判断和身体执行力，AI 和机器人只能作为辅助工具（如无人机侦察），无法替代人类在复杂灾害现场的指挥决策。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "穿制服的\"逆行者\"培养基地——政策护航、铁饭碗兜底，但招生院校极少、体能门槛极高，且长期工作伴随高风险高压。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国消防救援学院（应急管理部直属，全国唯一消防救援本科院校）",
+        "中国人民警察大学（公安部直属）"
+      ],
+      "tier_A": [
+        "[无 — 该专业全国仅 2 所核心院校开设]"
+      ],
+      "tier_B": [
+        "[暂无 — 部分院校可能开设相近方向如\"应急技术与管理\"]"
+      ],
+      "tier_C_note": "[暂无 — 该专业为特设专业，招生院校极少]",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

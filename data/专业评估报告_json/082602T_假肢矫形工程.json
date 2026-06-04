@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.181457",
+    "updated_at": "2026-04-25T22:31:56.136364",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082602T_假肢矫形工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "医工交叉的\"隐形冠军\"，8500万残障人群撑起的刚需赛道，人才缺口超10万，但院校极少、路径窄，是耐得住寂寞者的长坡厚雪之选。",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 4.2,
+      "future_adaptability": 4.2,
+      "career_path": 3.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.75
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "假肢矫形工程的核心工作涉及面对面患者评估、精密手工取型/适配、个性化调试，这些高度依赖手感、空间感知和人际沟通的环节在可预见的未来极难被AI完全替代。AI更多是辅助工具（如辅助设计、数据分析）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "医工交叉的\"隐形冠军\"，8500万残障人群撑起的刚需赛道，人才缺口超10万，但院校极少、路径窄，是耐得住寂寞者的长坡厚雪之选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "首都医科大学"
+      ],
+      "tier_A": [
+        "徐州医科大学",
+        "滨州医学院"
+      ],
+      "tier_B": [
+        "赣南医科大学",
+        "昆明医科大学",
+        "上海理工大学",
+        "广州中医药大学"
+      ],
+      "tier_C_note": "豫北医学院等近年新开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

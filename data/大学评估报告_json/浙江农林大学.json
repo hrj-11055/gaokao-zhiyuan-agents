@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.593943",
+    "updated_at": "2026-05-11T11:16:43.239178",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "浙江农林大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.715,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "南京林业大学",
+        "similarity": "同类院校",
+        "key_difference": "南林作为双一流，在全国名气更大，但浙农林在浙江省内的资源整合能力（尤其是政府对接）更强。"
+      },
+      {
+        "name": "浙江工业大学",
+        "similarity": "同类院校",
+        "key_difference": "浙工大是综合性工科强校，但在风景园林、茶学、竹子研究等细分赛道，浙农林拥有绝对的“护城河”。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "浙江农林大学（ZAFU）作为浙江省唯一的省属重点农林类本科院校，已成功从传统的农业院校转型为以“生态文明”为核心标签的多科性大学。其核心竞争力在于**极高的行业垂直度**与**浙江省域政策的深度耦合**。在学术层面，学校以林学（A-）为塔尖，构建了涵盖风景园林、农业资源、生物医药等领域的生态学科群。\n\n从生源与就业来看，浙农林表现出强烈的“省内热、省外稳”特征。浙江省内考生对其认可度极高，尤其是“三位一体”和“基层定向”招生，几乎锁定了省内优质的基层农林后备力量。就业方面，毕业生在长三角地区的园林设计、生态修复、现代农业及相关管理部门具有极高的渗透率。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "南京林业大学",
+          "similarity": "同类院校",
+          "key_difference": "南林作为双一流，在全国名气更大，但浙农林在浙江省内的资源整合能力（尤其是政府对接）更强。"
+        },
+        {
+          "name": "浙江工业大学",
+          "similarity": "同类院校",
+          "key_difference": "浙工大是综合性工科强校，但在风景园林、茶学、竹子研究等细分赛道，浙农林拥有绝对的“护城河”。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "生态性",
+        "极度务实",
+        "长三角认可",
+        "5毛钱食堂",
+        "植物园校园",
+        "碳汇先锋",
+        "基层定向"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

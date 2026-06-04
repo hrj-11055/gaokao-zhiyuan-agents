@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.031347",
+    "updated_at": "2026-04-24T23:55:05.602198",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070301",
+    "name": "化学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "基础学科的\"老牌劲旅\"，正搭上新能源与新材料的时代快车，但本科阶段待遇偏低、深造几乎是必选项，非名校非硕博慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.37
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "~56%",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "化学的核心工作涉及实验操作、物质合成、分子设计等物理实体操作，AI目前主要用于辅助分子设计和数据分析（如Chem-R模型、ChemAgents多智能体系统），但无法替代实验室中的真实合成与验证。AI+化学正成为新趋势，化学人才若掌握AI工具反而更具竞争力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "基础学科的\"老牌劲旅\"，正搭上新能源与新材料的时代快车，但本科阶段待遇偏低、深造几乎是必选项，非名校非硕博慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "清华大学",
+        "中国科学技术大学",
+        "南京大学",
+        "中国科学院大学"
+      ],
+      "tier_A": [
+        "南开大学",
+        "复旦大学",
+        "吉林大学",
+        "厦门大学",
+        "上海交通大学",
+        "浙江大学",
+        "武汉大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "四川大学",
+        "湖南大学",
+        "福州大学",
+        "山东大学",
+        "兰州大学",
+        "华东理工大学",
+        "大连理工大学",
+        "北京化工大学",
+        "华中科技大学"
+      ],
+      "tier_C_note": "各省属师范大学（化学师范方向就业稳定）、省属综合性大学化工学院（如郑州大学、山西大学等本地就业有基础）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.849859",
+    "updated_at": "2026-05-11T19:10:26.766137",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "安徽建筑大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 3.2,
+      "location_advantage": 4.2,
+      "globalization": 2.5,
+      "student_empowerment": 4.5,
+      "brand_asset": 3.1
+    },
+    "weighted_score": 3.22,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "安工程",
+        "similarity": "同类院校",
+        "key_difference": "安建大在合肥的区位优势是压倒性的，且在建筑、规划领域的专业深度远超安工程；但在机械、纺织等领域，安工程更具特色。"
+      },
+      {
+        "name": "安理工",
+        "similarity": "同类院校",
+        "key_difference": "安理工拥有更多的博士点和更高的学术排名，但在合肥本地的行业渗透率和校友资源上，安建大在建筑圈的“主场优势”不可动摇。"
+      },
+      {
+        "name": "合肥大学",
+        "similarity": "同类院校",
+        "key_difference": "合肥大学（原合肥学院）近年来因更名和对德合作热度极高，但在土木、建筑等老牌工科的底蕴上，安建大依然保持着“老牌一本”的尊严。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "安徽建筑大学（以下简称“安建大”）是安徽省唯一一所以土建类学科为特色的省部共建高校。在学术版图中，它虽非“双一流”，但在区域性行业生态中占据了不可替代的生态位。学校的核心竞争力在于其深厚的行业积淀——在安徽省乃至长三角的建筑、规划、市政系统，安建大校友形成了庞大的“建大系”网络。\n\n从发展趋势看，安建大正处于“传统土建向智能制造/智慧城市”转型的关键期。虽然房地产行业的周期性调整对传统土建专业造成了一定冲击，但学校通过与南京信息工程大学的联合培养、加强人工智能与建筑学科的交叉，展现了较强的适应性。对于分数线在一本线附近、追求务实就业、或希望以合肥为职业起点、甚至计划通过转专业实现“专业逆袭”的考生而言，安建大是一个极具性价比的“保底”或“跳板”选择。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "安工程",
+          "similarity": "同类院校",
+          "key_difference": "安建大在合肥的区位优势是压倒性的，且在建筑、规划领域的专业深度远超安工程；但在机械、纺织等领域，安工程更具特色。"
+        },
+        {
+          "name": "安理工",
+          "similarity": "同类院校",
+          "key_difference": "安理工拥有更多的博士点和更高的学术排名，但在合肥本地的行业渗透率和校友资源上，安建大在建筑圈的“主场优势”不可动摇。"
+        },
+        {
+          "name": "合肥大学",
+          "similarity": "同类院校",
+          "key_difference": "合肥大学（原合肥学院）近年来因更名和对德合作热度极高，但在土木、建筑等老牌工科的底蕴上，安建大依然保持着“老牌一本”的尊严。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

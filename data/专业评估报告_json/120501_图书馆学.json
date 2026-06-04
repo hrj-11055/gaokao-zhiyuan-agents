@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.189384",
+    "updated_at": "2026-04-27T20:25:20.043178",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120501",
+    "name": "图书馆学",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "小众稳定赛道，体制内上岸率高，但天花板低、薪酬平庸，数字化转型中谋求蜕变的小语种专业。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 2.6,
+      "future_adaptability": 3.4,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.89
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "传统编目、分类标引、基础参考咨询等核心工作正在被AI（如GPT类大模型、自动分类系统）快速替代。但复杂信息需求分析、知识组织架构设计、文化遗产数字化管理等需要人文理解力和系统性思维的环节短期内不易被完全取代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众稳定赛道，体制内上岸率高，但天花板低、薪酬平庸，数字化转型中谋求蜕变的小语种专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "武汉大学",
+        "北京大学"
+      ],
+      "tier_A": [
+        "南京大学",
+        "中国人民大学",
+        "中山大学",
+        "南开大学",
+        "吉林大学"
+      ],
+      "tier_B": [
+        "黑龙江大学",
+        "湘潭大学",
+        "郑州大学",
+        "安徽大学",
+        "福建师范大学",
+        "西北大学",
+        "云南大学"
+      ],
+      "tier_C_note": "河北大学、山西大学、辽宁师范大学、山东理工大学等开设该专业的省属本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

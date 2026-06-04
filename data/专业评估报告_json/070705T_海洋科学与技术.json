@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.014679",
+    "updated_at": "2026-04-25T01:12:47.098569",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070705T_海洋科学与技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略背书的蓝海新专业，行业天花板高但市场极小，读研近乎标配，普通院校慎入。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.8,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.37
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,400–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "海洋科学涉及大量野外/海上实地观测、仪器操作、复杂自然系统判断，AI可辅助数据分析和建模，但难以替代海上作业、采样、实验设计等核心环节。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略背书的蓝海新专业，行业天花板高但市场极小，读研近乎标配，普通院校慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国海洋大学",
+        "厦门大学"
+      ],
+      "tier_A": [
+        "同济大学（首个获批海洋科学与技术专业）",
+        "上海交通大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "山东大学",
+        "天津大学",
+        "哈尔滨工程大学",
+        "华东师范大学",
+        "河海大学",
+        "浙江大学"
+      ],
+      "tier_C_note": "上海海洋大学、中国地质大学（武汉）、浙江海洋大学、海南大学、广东海洋大学、大连海洋大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

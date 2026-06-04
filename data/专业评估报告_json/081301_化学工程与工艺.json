@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.991384",
+    "updated_at": "2026-04-25T16:07:10.167388",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081301",
+    "name": "化学工程与工艺",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "\"万金油工科，传统化工求稳、新能源求变，但工作环境苦、本科天花板低，读研是分水岭。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.5,
+      "education_resources": 3.8,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.3
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 正在渗透化工领域（工艺建模、过程优化、故障预测），但化工核心工作依赖物理实验验证、设备操作经验、现场安全判断——这些是 AI 难以替代的\"具身智能\"环节。任其龙院士指出，AI 在化学工程中的应用更多是辅助工具，而非替代角色。来源：科学网 (sciencenet.cn) 2025 年报道"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"万金油工科，传统化工求稳、新能源求变，但工作环境苦、本科天花板低，读研是分水岭。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "天津大学",
+        "华东理工大学",
+        "清华大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "大连理工大学",
+        "北京化工大学",
+        "南京工业大学",
+        "哈尔滨工业大学",
+        "华南理工大学",
+        "四川大学",
+        "中国石油大学"
+      ],
+      "tier_B": [
+        "南京理工大学",
+        "浙江工业大学",
+        "北京理工大学",
+        "河北工业大学",
+        "太原理工大学",
+        "上海交通大学",
+        "东南大学",
+        "厦门大学",
+        "中南大学",
+        "武汉工程大学",
+        "青岛科技大学",
+        "湘潭大学"
+      ],
+      "tier_C_note": "辽宁石油化工大学、沈阳化工大学、东北石油大学、常州大学、安徽工业大学、济南大学、陕西科技大学、广东工业大学等全国约 300 所开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

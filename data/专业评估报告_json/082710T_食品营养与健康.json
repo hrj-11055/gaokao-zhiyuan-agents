@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.083671",
+    "updated_at": "2026-04-25T23:36:14.703139",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082710T_食品营养与健康",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "踩上大健康风口的工科新秀，行业爆发但岗位尚未成熟，名校深造是跃升关键，本科就业天花板明显。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.4,
+      "career_path": 3.2,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.32
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "食品感官评价、临床营养干预方案设计、人体营养状况评估等需要多维度综合判断和人际互动的核心技能较难被 AI 完全替代；但食品成分分析、基础数据计算等环节已被 AI 工具逐步辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "踩上大健康风口的工科新秀，行业爆发但岗位尚未成熟，名校深造是跃升关键，本科就业天花板明显。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学",
+        "华南理工大学",
+        "江南大学"
+      ],
+      "tier_A": [
+        "中国海洋大学",
+        "南京农业大学",
+        "西北农林科技大学",
+        "中国药科大学",
+        "陕西师范大学",
+        "华中农业大学",
+        "南昌大学"
+      ],
+      "tier_B": [
+        "北京工商大学",
+        "天津科技大学",
+        "四川农业大学",
+        "浙江工商大学",
+        "长沙理工大学",
+        "湖南农业大学",
+        "大连工业大学",
+        "沈阳农业大学",
+        "山东农业大学"
+      ],
+      "tier_C_note": "福建农林大学、江西中医药大学、云南农业大学、山西农业大学、黑龙江八一农垦大学等开设该专业的普通本科院校（全国约 62-82 所）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

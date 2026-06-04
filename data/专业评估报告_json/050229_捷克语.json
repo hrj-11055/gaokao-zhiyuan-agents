@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.016784",
+    "updated_at": "2026-04-23T21:51:22.380761",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050229",
+    "name": "捷克语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极小众语种，国家级外交岗位稀缺且稳定，但招生极少、就业面极窄，AI 翻译浪潮下纯语言能力已被大幅\"祛魅\"。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.5,
+      "career_path": 2.6,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.93
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "捷克语作为低资源语言，AI 翻译训练数据相对有限，短期内替代程度略低于英语等高频语种；但生成式 AI 进步极快，ChatGPT、DeepSeek 对捷克语翻译能力已大幅提升，纯语言技能的护城河正在快速消退。据央视网 2025 年报道，国内多所高校已停招或裁撤外语专业（济南大学停招朝鲜语、德语等 9 个专业，北京语言大学取消俄语/日语笔译方向）。翻译行业整体正经历\"断崖式坠落\"（来源：腾讯新闻、36 氪 2025）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极小众语种，国家级外交岗位稀缺且稳定，但招生极少、就业面极窄，AI 翻译浪潮下纯语言能力已被大幅\"祛魅\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（1954 年建专业，国家级一流本科专业，唯一硕士点）"
+      ],
+      "tier_A": [
+        "上海外国语大学（ABC 排名 A+，2024 年位列全国第一）"
+      ],
+      "tier_B": [
+        "广东外语外贸大学",
+        "北京第二外国语学院",
+        "四川外国语大学",
+        "大连外国语大学",
+        "天津外国语大学",
+        "西安外国语大学"
+      ],
+      "tier_C_note": "河北地质大学、吉林外国语大学（民办）、浙江越秀外国语学院（民办）、浙江外国语学院、北京体育大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

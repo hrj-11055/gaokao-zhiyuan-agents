@@ -22,6 +22,7 @@ class MembershipServerContractTests(unittest.TestCase):
     def test_wechat_helpers_export_login_and_payment_functions(self):
         auth_text = self.read("gaokao-proxy/lib/wechat-auth.js")
         pay_text = self.read("gaokao-proxy/lib/wechat-pay.js")
+        virtual_pay_text = self.read("gaokao-proxy/lib/wechat-virtual-pay.js")
 
         self.assertIn("async function exchangeCodeForSession", auth_text)
         self.assertIn("function assertWechatPayConfig", pay_text)
@@ -31,6 +32,61 @@ class MembershipServerContractTests(unittest.TestCase):
         self.assertIn("function decryptWechatPayResource", pay_text)
         self.assertIn("function verifyWechatPayNotifySignature", pay_text)
         self.assertIn("'Wechatpay-Serial'", pay_text)
+        self.assertIn("function createVirtualPayment", virtual_pay_text)
+        self.assertIn("function calcPaySig", virtual_pay_text)
+        self.assertIn("function calcUserSignature", virtual_pay_text)
+        self.assertIn("function parseWechatXmlMessage", virtual_pay_text)
+        self.assertIn("function parseVirtualPayGoodsNotify", virtual_pay_text)
+
+    def test_virtual_payment_signatures_follow_wechat_algorithm(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            test_path = Path(tmp) / "test.js"
+            test_path.write_text(
+                textwrap.dedent(f"""
+                    const assert = require('node:assert/strict')
+                    const {{
+                      calcPaySig,
+                      calcUserSignature,
+                      createVirtualPayment,
+                    }} = require('{ROOT / "gaokao-proxy" / "lib" / "wechat-virtual-pay.js"}')
+
+                    const signData = '{{"openid": "xxx", "user_ip": "127.0.0.1", "env": 0}}'
+                    assert.equal(
+                      calcPaySig('/xpay/query_user_balance', signData, '12345'),
+                      'c37809f27c6d7fd1837ad2500a04512b66b34fd793a39a385fade56dca89a4b5'
+                    )
+                    assert.equal(
+                      calcUserSignature(signData, '9hAb/NEYUlkaMBEsmFgzig=='),
+                      '089d9e8dc5d308977360c4b79ec600a93d736802802a807d634192328032f6c7'
+                    )
+
+                    const payment = createVirtualPayment({{
+                      order: {{
+                        orderId: 'ord_1',
+                        userId: 'u_1',
+                        outTradeNo: 'GK1778740000000abc',
+                        amountCents: 1990,
+                      }},
+                      sessionKey: 'session-key',
+                      env: {{
+                        WECHAT_VIRTUAL_PAY_ENV: '1',
+                        WECHAT_VIRTUAL_PAY_SANDBOX_APP_KEY: 'sandbox-key',
+                        WECHAT_VIRTUAL_PAY_OFFER_ID: '1450549807',
+                        WECHAT_VIRTUAL_PAY_PRODUCT_ID: 'vip_report_1990',
+                      }},
+                    }})
+                    const parsed = JSON.parse(payment.signData)
+                    assert.equal(payment.mode, 'short_series_goods')
+                    assert.equal(parsed.offerId, '1450549807')
+                    assert.equal(parsed.productId, 'vip_report_1990')
+                    assert.equal(parsed.goodsPrice, 1990)
+                    assert.equal(parsed.env, 1)
+                    assert.match(payment.paySig, /^[0-9a-f]{{64}}$/)
+                    assert.match(payment.signature, /^[0-9a-f]{{64}}$/)
+                """),
+                encoding="utf-8",
+            )
+            subprocess.run(["node", str(test_path)], check=True, text=True, capture_output=True)
 
     def test_wechat_pay_authorization_uses_comma_separated_v3_params(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -88,7 +144,56 @@ class MembershipServerContractTests(unittest.TestCase):
         self.assertIn("activateMembership(req.commerceAuth.userId, 'limited_free')", text)
         self.assertIn("app.post('/api/payment/create'", text)
         self.assertIn("app.get('/api/payment/order/:orderId'", text)
-        self.assertIn("app.post('/api/payment/wechat/notify'", text)
+        self.assertIn("app.post('/api/payment/virtual/notify'", text)
+        self.assertIn("app.get('/xpay/goods/deliver/notify'", text)
+        self.assertIn("'/xpay/goods/deliver/notify'", text)
+        self.assertIn("express.text", text)
+        self.assertIn("requireWechatMessageSignature", text)
+        self.assertIn("handleWechatMessageVerify", text)
+        self.assertIn("createVirtualPayment", text)
+        self.assertIn("parseVirtualPayGoodsNotify", text)
+
+    def test_virtual_payment_notify_parses_wechat_xml_payload(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            test_path = Path(tmp) / "test.js"
+            test_path.write_text(
+                textwrap.dedent(f"""
+                    const assert = require('node:assert/strict')
+                    const {{ parseVirtualPayGoodsNotify }} = require('{ROOT / "gaokao-proxy" / "lib" / "wechat-virtual-pay.js"}')
+
+                    const notify = parseVirtualPayGoodsNotify(`
+                      <xml>
+                        <ToUserName><![CDATA[gh_xxx]]></ToUserName>
+                        <FromUserName><![CDATA[official_openid]]></FromUserName>
+                        <CreateTime>1778740000</CreateTime>
+                        <MsgType><![CDATA[event]]></MsgType>
+                        <Event><![CDATA[xpay_goods_deliver_notify]]></Event>
+                        <OpenId><![CDATA[user_openid]]></OpenId>
+                        <OutTradeNo><![CDATA[GK1778740000000abc]]></OutTradeNo>
+                        <Env>0</Env>
+                        <WeChatPayInfo>
+                          <MchOrderNo><![CDATA[mch_order_1]]></MchOrderNo>
+                          <TransactionId><![CDATA[transaction_1]]></TransactionId>
+                          <PaidTime>1778740001</PaidTime>
+                        </WeChatPayInfo>
+                        <GoodsInfo>
+                          <ProductId><![CDATA[vip_report_1990]]></ProductId>
+                          <Quantity>1</Quantity>
+                          <OrigPrice>1990</OrigPrice>
+                          <ActualPrice>1990</ActualPrice>
+                          <Attach><![CDATA[{{"orderId":"ord_1"}}]]></Attach>
+                        </GoodsInfo>
+                      </xml>
+                    `)
+
+                    assert.equal(notify.outTradeNo, 'GK1778740000000abc')
+                    assert.equal(notify.transactionId, 'transaction_1')
+                    assert.equal(notify.productId, 'vip_report_1990')
+                    assert.equal(notify.amountCents, 1990)
+                """),
+                encoding="utf-8",
+            )
+            subprocess.run(["node", str(test_path)], check=True, text=True, capture_output=True)
 
     def test_payment_notify_logs_order_context_on_failures(self):
         text = self.read("gaokao-proxy/server.js")
@@ -97,9 +202,9 @@ class MembershipServerContractTests(unittest.TestCase):
             "notifyLogContext",
             "outTradeNo",
             "transactionId",
-            "tradeState",
+            "productId",
             "errorCode: err.code",
-            "WECHAT_PAY_NOTIFY_FAILED",
+            "WECHAT_VIRTUAL_PAY_NOTIFY_FAILED",
         ]:
             self.assertIn(snippet, text)
 
@@ -191,10 +296,13 @@ class MembershipServerContractTests(unittest.TestCase):
             "WECHAT_APPID",
             "PAYMENT_ORDER_TTL_MS",
             "WECHAT_SECRET",
-            "WECHAT_MCH_ID",
-            "WECHAT_PAY_SERIAL_NO",
-            "WECHAT_PAY_PRIVATE_KEY_PATH",
-            "WECHAT_PAY_NOTIFY_URL",
+            "WECHAT_MESSAGE_TOKEN",
+            "WECHAT_VIRTUAL_PAY_ENV",
+            "WECHAT_VIRTUAL_PAY_OFFER_ID",
+            "WECHAT_VIRTUAL_PAY_PRODUCT_ID",
+            "WECHAT_VIRTUAL_PAY_MODE",
+            "WECHAT_VIRTUAL_PAY_SANDBOX_APP_KEY",
+            "WECHAT_VIRTUAL_PAY_APP_KEY",
         ]:
             self.assertIn(key, text)
 

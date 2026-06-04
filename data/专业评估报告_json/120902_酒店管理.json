@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.974963",
+    "updated_at": "2026-04-27T21:55:09.336311",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120902",
+    "name": "酒店管理",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "服务行业的\"万金油\"，入门门槛低但天花板靠人脉与外语，起薪不高、熬资历才能出头，适合真正热爱且抗压的人。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.8,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 1.8
+    },
+    "weighted_score": 2.71
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "前台接待、基础客服、预订管理等标准化流程性工作正被 AI 客服和自助系统快速替代；但高端酒店中的个性化服务、情感连接、危机处理等\"人际温度\"能力短期内不易被 AI 完全取代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "服务行业的\"万金油\"，入门门槛低但天花板靠人脉与外语，起薪不高、熬资历才能出头，适合真正热爱且抗压的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中山大学",
+        "南开大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "厦门大学",
+        "北京第二外国语学院",
+        "云南大学",
+        "陕西师范大学",
+        "暨南大学"
+      ],
+      "tier_B": [
+        "桂林旅游学院",
+        "上海师范大学",
+        "浙江工商大学",
+        "华侨大学",
+        "海南大学",
+        "东北财经大学",
+        "天津商业大学",
+        "湖南师范大学"
+      ],
+      "tier_C_note": "各省市地方本科院校及旅游类院校，如郑州旅游职业学院（本科层次）、武汉商学院、成都银杏酒店管理学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

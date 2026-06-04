@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.162836",
+    "updated_at": "2026-04-21T02:15:51.271263",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030607TK_边防指挥",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"穿上制服就是一辈子的铁饭碗，但代价是扎根边疆、体能硬扛、路径极窄——为国安者，需以青春为注。\"",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 3.4,
+      "future_adaptability": 2.8,
+      "career_path": 2.6,
+      "education_resources": 2.8,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.24
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~95%",
+      "alignment_rate": "~85%",
+      "starting_salary": "8000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "边防指挥的核心工作涉及实地巡逻指挥、突发事件应急处置、人际博弈（如审查可疑人员），这些高度依赖现场判断和身体力行的任务AI难以替代。但基础性文书、监控分析等环节正被AI/自动化加速渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"穿上制服就是一辈子的铁饭碗，但代价是扎根边疆、体能硬扛、路径极窄——为国安者，需以青春为注。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民警察大学（公安部直属，前身为武警学院，边防指挥全国第一）"
+      ],
+      "tier_A": [
+        "中国人民公安大学，中国刑事警察学院"
+      ],
+      "tier_B": [
+        "云南警官学院（应用型第一，边境实训优势），新疆警察学院（地理优势），武警警官学院"
+      ],
+      "tier_C_note": "各省警察学院边防方向（如广西警察学院等边境省份警校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

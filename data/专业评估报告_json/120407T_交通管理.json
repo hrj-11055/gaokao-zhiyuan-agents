@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.006019",
+    "updated_at": "2026-04-27T12:43:08.766591",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120407T_交通管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"航运港口圈的窄门专业，全国仅13所高校开设，考公进海事局是王牌出路，但行业天花板受航运周期波动大，非航运热爱者慎入。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 3.0,
+      "education_resources": 3.8,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.16
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "航运调度、港口运营中的标准化流程（航线规划、配载计算、单证处理）正在被AI和自动化系统替代；但海事法规合规、航运商务谈判、港口政府关系等需要人际协调和法规判断的环节仍较难被AI替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"航运港口圈的窄门专业，全国仅13所高校开设，考公进海事局是王牌出路，但行业天花板受航运周期波动大，非航运热爱者慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "大连海事大学（211/双一流，交通运输部直属，\"航海家摇篮\"）"
+      ],
+      "tier_A": [
+        "上海海事大学",
+        "中国民航大学"
+      ],
+      "tier_B": [
+        "重庆交通大学",
+        "上海工程技术大学",
+        "中国民用航空飞行学院",
+        "浙江海洋大学"
+      ],
+      "tier_C_note": "内蒙古师范大学、山东交通学院、广州航海学院、北部湾大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

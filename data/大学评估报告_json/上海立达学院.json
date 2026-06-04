@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.723834",
+    "updated_at": "2026-05-10T00:00:33.406938",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海立达学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "最适合家庭经济条件优渥、有明确出国深造意向、且高考分数在本科线附近，希望在上海享受高品质校园生活并积累国际化视野的考生。",
+    "radar": {},
+    "weighted_score": 2.78,
+    "one_sentence_recommend": "最适合家庭经济条件优渥、有明确出国深造意向、且高考分数在本科线附近，希望在上海享受高品质校园生活并积累国际化视野的考生。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 88152,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "松江",
+      "region": "长三角",
+      "industrial_clusters": [
+        "虽然立达学生很难直接进入研发岗，但这些企业"
+      ],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "上海立达学院是一所典型的“新锐应用型”民办本科高校。在学术维度上，它与传统公办名校存在显著代差，但在“教育服务”与“校园体验”维度上，它通过差异化竞争策略，在上海民办教育市场占据了独特生态位。\n\n学校的核心竞争力在于其**极高的硬件投入**与**国际化升学通道**。对于高考分数在本科线附近、家庭经济条件较好、且不希望在传统枯燥的学术环境中度过四年的学生来说，立达提供了一个极具吸引力的“上海平台”。然而，高昂的学费（尤其是国际班）与相对薄弱的学术底蕴，要求报考者必须具备清晰的职业规划或深造目标，否则容易在优越的硬件环境中陷入“消费型学习”的误区。\n\n从长远来看，立达学院正在尝试从“颜值大学”向“产教融合大学”转型。通过与长三角 G60 科创走廊的深度耦合，其艺术设计与管理类专业的毕业生在上海本地的中小微文创、服务类企业中展现出了较强的适应性。",
+      "one_sentence_recommend": "最适合家庭经济条件优渥、有明确出国深造意向、且高考分数在本科线附近，希望在上海享受高品质校园生活并积累国际化视野的考生。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

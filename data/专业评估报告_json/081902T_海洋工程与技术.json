@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.970838",
+    "updated_at": "2026-04-25T19:20:42.765967",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081902T_海洋工程与技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略级\"冷门金矿\"：全国仅 10 校开设、人才缺口百万，但学科门槛高、地域限制强，非沿海名校慎入。",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~95%",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "海洋工程涉及大量现场勘测、极端环境作业、实物装备调试与维护，这些物理世界交互环节难以被 AI 替代。但设计制图、数据分析等环节正在被 AI 工具辅助加速。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略级\"冷门金矿\"：全国仅 10 校开设、人才缺口百万，但学科门槛高、地域限制强，非沿海名校慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江大学",
+        "中山大学"
+      ],
+      "tier_A": [
+        "西北工业大学",
+        "南方科技大学"
+      ],
+      "tier_B": [
+        "江苏科技大学",
+        "中国地质大学（北京）",
+        "浙江海洋大学"
+      ],
+      "tier_C_note": "海南大学、北部湾大学、其他开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

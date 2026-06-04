@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.137513",
+    "updated_at": "2026-04-26T04:01:24.906152",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090208TK_生态修复学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的新兵——赶上\"双碳\"与生态建设红利，但作为 2024 年才首招的全新专业，尚无毕业生验证，入局即\"小白鼠\"。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "生态修复涉及大量野外调查、实地采样、工程现场管理，以及复杂生态系统评估——这些需要多感官实地判断和跨学科综合决策，AI 难以完全替代。但数据分析建模、GIS 绘图、报告撰写等环节存在被 AI 辅助提效的可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的新兵——赶上\"双碳\"与生态建设红利，但作为 2024 年才首招的全新专业，尚无毕业生验证，入局即\"小白鼠\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江大学",
+        "中国科学院大学"
+      ],
+      "tier_A": [
+        "西北农林科技大学（985）",
+        "南京农业大学",
+        "北京大学",
+        "兰州大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "福建农林大学（软科 2025 生态修复学排名第 1）",
+        "南京林业大学（全国首次设立该专业）",
+        "东北师范大学",
+        "北京师范大学",
+        "厦门大学"
+      ],
+      "tier_C_note": "各省属农业大学、林业大学中开设生态学或环境科学相关专业的院校（如山东农业大学、中南林业科技大学、西南林业大学等），待后续更多院校获批开设后补充",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

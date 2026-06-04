@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.990478",
+    "updated_at": "2026-04-21T02:51:34.585036",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030619TK_移民管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"体制内的'金饭碗'，入警率超 90%，但专业极窄、院校极少、路径高度锁定——适合确定从警的考生，犹豫者慎入。\"",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.08
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "移民管理的核心工作涉及执法判断、人际交互（证件查验、案件调查）、跨境政策解读和现场突发处置，这些高度依赖人的判断力和执法权，AI 短期内无法替代。但证件鉴别、数据筛查等辅助性工作正被生物识别和大数据技术逐步替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"体制内的'金饭碗'，入警率超 90%，但专业极窄、院校极少、路径高度锁定——适合确定从警的考生，犹豫者慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民公安大学"
+      ],
+      "tier_A": [
+        "中国人民警察大学"
+      ],
+      "tier_B": [
+        "中国刑事警察学院"
+      ],
+      "tier_C_note": "暂无其他院校开设该专业",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

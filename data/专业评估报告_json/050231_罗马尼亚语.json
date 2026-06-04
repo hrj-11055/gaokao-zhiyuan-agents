@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.150695",
+    "updated_at": "2026-04-23T22:02:06.866132",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050231",
+    "name": "罗马尼亚语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极度冷门的小语种，稀缺是双刃剑——全国年毕不足200人，对口岗位少但竞争也少，一带一路带来增量，但AI翻译让纯语言路线越来越窄。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 2.8,
+      "future_adaptability": 1.8,
+      "career_path": 2.0,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.49
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "机器翻译（DeepL、Google Translate等）对罗曼语族语言的翻译质量快速提升。罗马尼亚语虽为小语种、训练数据较少，但 DeepSeek-V3、GPT-4 等大模型对罗马尼亚语的翻译能力已接近专业初级水平。纯文本翻译岗位首当其冲；同声传译、跨文化商务谈判等需即时判断和人际互动的岗位短期内仍不可替代，但总量极小。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度冷门的小语种，稀缺是双刃剑——全国年毕不足200人，对口岗位少但竞争也少，一带一路带来增量，但AI翻译让纯语言路线越来越窄。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学",
+        "上海外国语大学"
+      ],
+      "tier_A": [
+        "北京语言大学",
+        "北京第二外国语学院"
+      ],
+      "tier_B": [
+        "天津外国语大学",
+        "四川外国语大学",
+        "西安外国语大学"
+      ],
+      "tier_C_note": "河北经贸大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

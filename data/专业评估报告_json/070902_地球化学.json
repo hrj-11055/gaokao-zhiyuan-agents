@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.084067",
+    "updated_at": "2026-04-25T01:34:04.871065",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070902",
+    "name": "地球化学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "冷门中的冷门，矿产勘探的\"化学之眼\"，深造是标配，本科就业窄、圈子小但稳定，耐得住寂寞的人才能熬出头。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.8,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 5.8
+    },
+    "weighted_score": 2.98
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "野外地质采样、复杂地质条件下的综合判断、跨尺度地球化学数据解释等核心工作高度依赖经验和直觉，短期内难以被 AI 完全替代。但 AI 在数据处理、异常识别、成矿预测建模方面已成为辅助工具。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "冷门中的冷门，矿产勘探的\"化学之眼\"，深造是标配，本科就业窄、圈子小但稳定，耐得住寂寞的人才能熬出头。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国科学技术大学",
+        "北京大学"
+      ],
+      "tier_A": [
+        "中国地质大学（武汉）",
+        "南京大学",
+        "中国地质大学（北京）"
+      ],
+      "tier_B": [
+        "兰州大学",
+        "成都理工大学",
+        "长江大学"
+      ],
+      "tier_C_note": "桂林理工大学、东华理工大学、等其他开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

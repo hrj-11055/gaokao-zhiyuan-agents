@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.205879",
+    "updated_at": "2026-04-25T21:00:01.884764",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082203",
+    "name": "工程物理",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "硬核交叉学科的\"贵族\"：院校极少、壁垒极高、对口核能与半导体双赛道，但极度依赖名校光环与深造，非顶尖院校慎选。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.4,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.59
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "核反应堆物理设计、辐射防护计算、加速器运行调控、核安全评估等核心工作涉及复杂的物理建模和实验验证，高度依赖专业判断力和现场经验，AI 难以替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "硬核交叉学科的\"贵族\"：院校极少、壁垒极高、对口核能与半导体双赛道，但极度依赖名校光环与深造，非顶尖院校慎选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学（核科学 A+，工物系 1956 年建系，本硕博衔接培养，中国锦屏地下实验室），中国科学技术大学（核科学技术学院，同步辐射国家实验室）"
+      ],
+      "tier_A": [
+        "北京大学（技术物理系，核物理底蕴深厚），哈尔滨工程大学（核学院，源于\"哈军工\"核潜艇动力传承），西安交通大学（核科学与技术学科评估前列）"
+      ],
+      "tier_B": [
+        "上海交通大学（工程物理系，核工程方向），南华大学（核特色鲜明，地处湖南衡阳，核类人才培养重镇），四川大学（原子核科学技术研究所）"
+      ],
+      "tier_C_note": "兰州大学（核科学与技术学院，地处核工业基地甘肃），成都理工大学等少数开设该专业的地方院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

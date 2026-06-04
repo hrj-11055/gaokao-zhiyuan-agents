@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.068365",
+    "updated_at": "2026-04-25T06:54:41.008312",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080609T_电动载运工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "乘风\"双碳\"国家战略的超级交叉新工科，站在万亿新能源赛道风口，但作为2022年才设立的\"实验专业\"，首批学生尚未毕业，一切数据均为推演，属于高风险高回报的\"原始股\"。",
+    "radar": {
+      "market_return": 4.0,
+      "industry_outlook": 4.8,
+      "future_adaptability": 4.2,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.96
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "电动载运工程涉及硬件系统设计（电力电子、电机驱动、电池管理系统）、物理仿真和复杂工程集成，这些需要\"软硬结合\"的系统能力，AI短期内难以替代现场调试、物理验证和跨系统协同决策。但纯算法类岗位（如控制算法仿真）存在被AI辅助工具部分替代的风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "乘风\"双碳\"国家战略的超级交叉新工科，站在万亿新能源赛道风口，但作为2022年才设立的\"实验专业\"，首批学生尚未毕业，一切数据均为推演，属于高风险高回报的\"原始股\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东南大学（当前唯一开设，全国首设，A+交通运输工程 + A级电子科学与技术）"
+      ],
+      "tier_A": [
+        "清华大学（电气A+，预计未来可能开设相关方向）",
+        "华中科技大学（电气A+，强校背景）",
+        "西安交通大学（电气A+，西交电气底蕴深厚）",
+        "浙江大学（电气A+）"
+      ],
+      "tier_B": [
+        "北京交通大学（交通运输A-，轨道交通电动化方向特色鲜明）",
+        "同济大学（车辆工程/新能源汽车方向强势）",
+        "哈尔滨工业大学（电气A类，航天电动化特色）",
+        "重庆大学（电气A类，西部龙头）",
+        "湖南大学（电气A-，电驱动控制方向有积累）"
+      ],
+      "tier_C_note": "南京航空航天大学（航空电动化方向）、武汉理工大学（汽车工程特色）、西南交通大学（轨道交通传统强校）、大连海事大学（电动船舶方向）等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

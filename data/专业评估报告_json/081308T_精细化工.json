@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.894224",
+    "updated_at": "2026-04-25T16:35:57.626339",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081308T_精细化工",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众但硬核的\"化工里的精品店\"，产业大方向好但开设院校少、选择面窄，本科就业吃学历，硕士起跑才见真章。",
+    "radar": {
+      "market_return": 3.4,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.3,
+      "career_path": 3.2,
+      "education_resources": 2.8,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.52
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–7,900元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 正在加速进入化工领域（中科院 2025 年发布智能化工大模型 2.0，DeepSeek 等大模型应用于分子设计、实验优化），但精细化工核心的实验操作能力、配方调优经验、安全风险判断、工艺放大经验仍高度依赖人工。AI 更多是\"赋能工具\"而非替代——自动化实验平台仍需人类设定目标、判断异常、做出关键决策。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众但硬核的\"化工里的精品店\"，产业大方向好但开设院校少、选择面窄，本科就业吃学历，硕士起跑才见真章。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "天津大学",
+        "大连理工大学"
+      ],
+      "tier_A": [
+        "华东理工大学",
+        "太原理工大学"
+      ],
+      "tier_B": [
+        "合肥工业大学",
+        "辽宁石油化工大学"
+      ],
+      "tier_C_note": "临沂大学、广东石油化工学院、成都师范学院、肇庆学院、新疆工程学院、哈尔滨学院、烟台南山学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

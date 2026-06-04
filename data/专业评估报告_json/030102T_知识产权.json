@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.193836",
+    "updated_at": "2026-04-20T23:04:58.778229",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030102T_知识产权",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"站在法律与科技的交叉路口，行业增速近 20%，但法考+专代的'双证'壁垒极高，非理工背景者慎入。\"",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.54
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 可辅助专利检索和文书撰写（GPT-4 专利撰写效率提升 70%），但知识产权的核心价值在于法律判断、侵权分析、商业谈判和诉讼策略，这些高度依赖人类经验和伦理判断，短期内难以被完全替代。复合型知识产权人才（法律+技术+商业）的抗替代性更强。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"站在法律与科技的交叉路口，行业增速近 20%，但法考+专代的'双证'壁垒极高，非理工背景者慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "中国政法大学"
+      ],
+      "tier_A": [
+        "西南政法大学",
+        "华东政法大学",
+        "华南理工大学",
+        "暨南大学",
+        "湘潭大学",
+        "中南财经政法大学"
+      ],
+      "tier_B": [
+        "上海大学",
+        "重庆理工大学",
+        "浙江工业大学",
+        "苏州大学",
+        "厦门大学（知识产权研究院）",
+        "大连理工大学"
+      ],
+      "tier_C_note": "杭州师范大学、温州大学、山东科技大学、河南财经政法大学等开设知识产权本科的地方院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

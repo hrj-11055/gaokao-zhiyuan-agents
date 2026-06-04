@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.209521",
+    "updated_at": "2026-04-25T23:29:11.055281",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082708T_烹饪与营养教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "既能颠勺又懂营养的冷门工科，对口就业面窄、起薪偏低，但健康餐饮风口和政策红利给了它翻盘的机会。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 2.88
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "烹饪实操技能（刀工、火候、味觉判断）短期内难以被 AI 替代，但菜谱设计、营养配比计算等环节已可被 AI 工具辅助。餐饮管理中的排班、库存、营销等也在被自动化替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "既能颠勺又懂营养的冷门工科，对口就业面窄、起薪偏低，但健康餐饮风口和政策红利给了它翻盘的机会。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "扬州大学（旅游烹饪学院，国内烹饪教育的标杆，设有硕博点）"
+      ],
+      "tier_A": [
+        "哈尔滨商业大学",
+        "四川旅游学院"
+      ],
+      "tier_B": [
+        "武汉商学院",
+        "岭南师范学院",
+        "吉林工商学院",
+        "河南科技学院"
+      ],
+      "tier_C_note": "黄山学院、河北师范大学、昆明学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

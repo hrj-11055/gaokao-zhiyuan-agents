@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.004453",
+    "updated_at": "2026-04-27T05:09:44.293811",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "101003",
+    "name": "医学影像技术",
+    "category": "医学",
+    "recommendation_level": "yellow",
+    "summary": "医院里\"按下快门\"的人——就业稳、门槛低，但技术员天花板明显，想开片子你得选\"影像学\"而不是\"影像技术\"。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.26
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 影像诊断（AI 辅助阅片）发展迅猛，已能完成部分影像判读工作，但 AI 主要替代的是\"诊断\"环节而非\"操作\"环节——技师负责患者摆位、设备参数选择、图像采集，这些涉及人际互动和现场判断的工作短期内不易被替代。不过，自动化摆位技术和远程操控技术的进步可能在长期内压缩技师岗位需求。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "医院里\"按下快门\"的人——就业稳、门槛低，但技术员天花板明显，想开片子你得选\"影像学\"而不是\"影像技术\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "四川大学（华西）",
+        "首都医科大学",
+        "天津医科大学"
+      ],
+      "tier_A": [
+        "中国医科大学",
+        "重庆医科大学",
+        "南京医科大学",
+        "南方医科大学",
+        "哈尔滨医科大学",
+        "徐州医科大学",
+        "广州医科大学"
+      ],
+      "tier_B": [
+        "泰山医学院（现山东第一医科大学）",
+        "河北医科大学",
+        "山西医科大学",
+        "温州医科大学",
+        "蚌埠医学院（现蚌埠医科大学）",
+        "新乡医学院",
+        "桂林医学院"
+      ],
+      "tier_C_note": "各省地方医学院校（如遵义医科大学、西南医科大学、赣南医学院等）、部分综合性大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

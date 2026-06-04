@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.935802",
+    "updated_at": "2026-04-26T03:14:19.443696",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090112T_智慧农业",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "农业的未来赛道，政策风口正劲，但跨界课程重、首批毕业生才刚落地，数据真空期慎押注。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.6
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "智慧农业的核心是**用AI/物联网赋能农业**——设计传感器网络、搭建数据平台、做精准决策模型——这些正是AI要\"帮助\"的对象而非\"替代\"的对象。田间复杂场景的理解（土壤、气候、病虫害）需要人类经验+AI辅助，纯AI难以完全接管。但纯数据录入/简单监测岗位存在被自动化替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "农业的未来赛道，政策风口正劲，但跨界课程重、首批毕业生才刚落地，数据真空期慎押注。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京农业大学",
+        "西北农林科技大学",
+        "中国农业大学（关联学科A+，非直接开设）"
+      ],
+      "tier_A": [
+        "华中农业大学",
+        "西南大学",
+        "上海交通大学",
+        "扬州大学",
+        "河南农业大学"
+      ],
+      "tier_B": [
+        "东北农业大学",
+        "山东农业大学",
+        "湖南农业大学",
+        "四川农业大学",
+        "福建农林大学",
+        "河北农业大学",
+        "中山大学",
+        "吉林农业大学",
+        "浙江农林大学"
+      ],
+      "tier_C_note": "安徽科技学院、昆明学院、潍坊学院、昌吉学院、玉林师范学院、塔里木大学及全国其余约30所开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

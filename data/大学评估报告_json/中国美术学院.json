@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.854330",
+    "updated_at": "2026-05-11T11:42:47.188639",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中国美术学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 4.78,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "中国美术学院（CAA）不仅是中国第一所综合性国立高等艺术学府，更是当代中国视觉艺术创作与理论研究的策源地。作为联合国科教文组织唯一承认学历的中国美术类院校，国美在国际艺术教育版图中占据着不可替代的枢纽地位。\n\n从学术维度看，国美在第五轮学科评估中继续巩固了其“美术学”与“设计学”的双 A+ 霸主地位。其核心竞争力在于构建了“视觉艺术东方学”体系，成功将传统中国书画精神与当代跨媒体艺术实验相结合。学校不仅是艺术家的摇篮，更是文化战略的智库，深度参与了杭州亚运会、G20 峰会等国家级视觉形象设计。\n\n从市场维度看，国美毕业生在互联网大厂、创意产业及独立艺术领域表现卓越。随着良渚校区的全面启用，学校进一步强化了“艺术+科技”的战略布局，使其在数字经济时代的竞争力进一步下沉至工业设计、交互设计及人工智能艺术等前沿领域。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "先锋实验",
+        "哲匠精神",
+        "西湖底蕴",
+        "熬夜冠军",
+        "跨界玩家",
+        "审美霸权"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.064915",
+    "updated_at": "2026-04-25T04:21:35.595115",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080212T_汽车维修工程教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "新能源+职教双风口上的冷门专业，全国仅 7 校开设，就业率超 95%，但赛道极窄、社会认知度低。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.9,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 2.2,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.18
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 在汽车故障诊断领域已有应用（智能诊断系统、远程 OTA 升级可解决 60% 以上故障），但实际拆装、零部件更换、高压电系统操作等环节仍需人工完成。据搜狐报道，\"AR 眼镜指导技师完成复杂拆装，但关键时刻仍需要老师傅的手感来判断螺栓松紧度\"。教育方向（职校教师面对面授课、实操带教）同样难以被 AI 替代。整体而言，\"AI 辅助诊断 + 人工执行维修\"是未来主流模式，核心岗位被完全替代的风险较低。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "新能源+职教双风口上的冷门专业，全国仅 7 校开设，就业率超 95%，但赛道极窄、社会认知度低。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业无 985/211 院校开设）"
+      ],
+      "tier_A": [
+        "昆明理工大学",
+        "浙江师范大学",
+        "天津职业技术师范大学（双师基地特色）",
+        "河北师范大学（全国最早开设，1999 年）"
+      ],
+      "tier_B": [
+        "内蒙古农业大学"
+      ],
+      "tier_C_note": "哈尔滨剑桥学院、黄河交通学院、河北师范大学汇华学院、昆明理工大学津桥学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

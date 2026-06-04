@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.812036",
+    "updated_at": "2026-05-11T16:11:15.871130",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "山东农业工程学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.36,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "山东农业工程学院（SDAEU）是一所典型的“小而精”向“大而全”转型的省属公办应用型本科院校。其核心身份经历了从“农业管理干部学院”到“普通本科院校”的华丽转身，这决定了它在行政资源对接、农业政策理解以及基层人才培养上具有天然的血缘优势。\n\n在学术层面，学校目前处于“夯实基础”阶段。由于升本时间仅十二年，其学术积淀与老牌省属重点大学（如山东农业大学）相比仍有显著差距，主要表现为高层次科研成果较少、博士点缺失。然而，学校敏锐地捕捉到了“乡村振兴”与“智慧农业”的时代红利，通过在淄博建设高标准新校区，实现了硬件设施的跨越式升级。\n\n从就业与价值实现来看，该校毕业生展现出极强的“下沉能力”。在山东这个极度看重编制与稳定的省份，该校毕业生在基层农技站、乡镇公务员以及大型农业龙头企业中拥有较好的口碑。其王牌优势在于“农工融合”，即用工程技术手段解决农业实际问题，这使得其毕业生在就业市场上比纯农学或纯工科学生多了一层复合背景。\n\n潜在风险方面，学校曾因违规收费问题受到行政处罚，反映出在快速扩张过程中，内部治理与合规管理仍存在短板。此外，济南校区与淄博校区之间的资源分配、学生归属感差异也是未来发展的挑战。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "淄博新地标",
+        "农魂工骨",
+        "考研基地",
+        "乡村振兴合伙人",
+        "公办保底",
+        "低调"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

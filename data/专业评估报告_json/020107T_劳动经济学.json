@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.078658",
+    "updated_at": "2026-05-17T00:54:49.708557",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "020107T_劳动经济学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.37
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "基础的数据整理、报表生成等工作容易被AI替代，但需要人际沟通、复杂判断的劳动关系协调、薪酬体系设计等岗位相对安全。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学（应用经济学A+，劳动经济学全国顶尖）"
+      ],
+      "tier_A": [
+        "首都经济贸易大学",
+        "中国劳动关系学院",
+        "复旦大学（应用经济学A-）",
+        "南开大学（应用经济学A+）",
+        "上海财经大学（应用经济学A+）"
+      ],
+      "tier_B": [
+        "西南财经大学",
+        "对外经济贸易大学",
+        "厦门大学",
+        "中央财经大学（应用经济学A+，但劳动经济学非最强方向）"
+      ],
+      "tier_C_note": "各地方财经类院校、综合性大学经济学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

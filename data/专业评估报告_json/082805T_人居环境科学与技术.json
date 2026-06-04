@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.995207",
+    "updated_at": "2026-04-26T00:13:05.820249",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082805T_人居环境科学与技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "披着\"前沿交叉\"外衣的小众专业，全国仅 4 校开设，搭上了智慧城市的快车，但就业面窄、行业下行压力不容忽视。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 2.8,
+      "future_adaptability": 3.8,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 2.79
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础性工作（CAD 制图、环评报告模板撰写、数据整理）已被 AI 工具大幅渗透；但跨学科综合判断（城市空间规划、人居环境评估的实地调研与政策分析）仍依赖人类经验与现场感知，短期不易被完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "披着\"前沿交叉\"外衣的小众专业，全国仅 4 校开设，搭上了智慧城市的快车，但就业面窄、行业下行压力不容忽视。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西安交通大学（唯一 985 且 ABC A+ 排名第一）"
+      ],
+      "tier_A": [
+        "（暂无——开设院校过少，西安交大独一档）"
+      ],
+      "tier_B": [
+        "信阳学院（ABC A+ 排名第二，但为民办本科，含金量有限）"
+      ],
+      "tier_C_note": "滇池学院（独立学院）、河南财政金融学院（筹备/相关方向）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

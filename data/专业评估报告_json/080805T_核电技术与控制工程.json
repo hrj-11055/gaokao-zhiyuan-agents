@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.028838",
+    "updated_at": "2026-04-25T11:09:36.047590",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080805T_核电技术与控制工程",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "国家战略级\"窄门\"专业，行业需求刚性增长、就业确定性极高，但全国仅一所高校开设，地域与岗位选择面窄，适合铁了心扎根核电的人。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.8,
+      "future_adaptability": 3.8,
+      "career_path": 3.4,
+      "education_resources": 2.8,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.04
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,500–8,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "10-15%",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "核电站运行控制、安全保护系统设计、核安全评审等核心工作涉及高度专业化的工程知识和严格的安全法规体系，需要人类专业判断和责任承担，AI可作为辅助工具但无法替代决策主体。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略级\"窄门\"专业，行业需求刚性增长、就业确定性极高，但全国仅一所高校开设，地域与岗位选择面窄，适合铁了心扎根核电的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学（核工程与核技术A+）",
+        "中国科学技术大学（核工程与核技术A+）"
+      ],
+      "tier_A": [
+        "西安交通大学（核工程A）",
+        "哈尔滨工程大学（核工程B+，海军核动力背景）",
+        "上海交通大学（核工程方向）"
+      ],
+      "tier_B": [
+        "上海电力大学（本专业唯一开设校，行业对口性极强）",
+        "华北电力大学（核电方向特色）",
+        "东华理工大学（核技术特色）",
+        "南华大学（核工程特色）"
+      ],
+      "tier_C_note": "成都理工大学、西南科技大学等开设核工程相关专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

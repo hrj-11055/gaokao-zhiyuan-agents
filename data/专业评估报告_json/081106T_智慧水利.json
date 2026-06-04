@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.931807",
+    "updated_at": "2026-04-25T15:23:25.568387",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081106T_智慧水利",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "水利+AI的\"新物种\"，踩着国家数字孪生战略风口起飞，但专业太新、坑位太少，名校读研是标配，普通院校需慎重。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.78
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "智慧水利本身即是\"用AI改造水利\"的专业，从业者需要同时掌握水利工程原理和AI/数据分析技能，其核心职责是设计和优化AI系统，而非被AI替代。但纯数据采集和简单监测类岗位面临自动化替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "水利+AI的\"新物种\"，踩着国家数字孪生战略风口起飞，但专业太新、坑位太少，名校读研是标配，普通院校需慎重。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "河海大学",
+        "武汉大学"
+      ],
+      "tier_A": [
+        "西北农林科技大学（985）",
+        "天津大学（水利工程A+，尚未开设智慧水利但水利学科顶尖）",
+        "清华大学（水利工程A++，同理）"
+      ],
+      "tier_B": [
+        "三峡大学",
+        "南京信息工程大学",
+        "华北水利水电大学",
+        "重庆交通大学",
+        "河北工程大学"
+      ],
+      "tier_C_note": "石河子大学、南昌工程学院、扬州大学、浙江水利水电学院、天津农学院、新疆农业大学、新疆理工学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

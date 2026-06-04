@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.976582",
+    "updated_at": "2026-04-26T03:39:19.464321",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090202",
+    "name": "野生动物与自然保护区管理",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "守护野性生灵的冷门赛道，政策红利正在释放，但岗位极度稀缺、地域偏远、深造几乎是\"标配\"，没有热爱慎入。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.81
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "野外调查、物种识别、生态监测需要实地经验和感官判断，AI 可辅助数据分析（如红外相机图像识别），但无法替代野外现场决策和生态修复的在地实践。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "守护野性生灵的冷门赛道，政策红利正在释放，但岗位极度稀缺、地域偏远、深造几乎是\"标配\"，没有热爱慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京林业大学",
+        "东北林业大学"
+      ],
+      "tier_A": [
+        "华南农业大学",
+        "南京林业大学"
+      ],
+      "tier_B": [
+        "西南林业大学",
+        "西华师范大学",
+        "海南大学",
+        "江西农业大学"
+      ],
+      "tier_C_note": "盐城师范学院、吉林农业大学、吉林农业科技学院、贵州师范学院、西藏农牧大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

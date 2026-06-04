@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.944551",
+    "updated_at": "2026-04-23T19:56:40.749623",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050218",
+    "name": "蒙古语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "\"一带一路\"上的冷门赛道，中蒙贸易升温带来结构性机遇，但就业面极窄、地域高度集中，非蒙古族或无中蒙情结者慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.0,
+      "future_adaptability": 2.5,
+      "career_path": 2.5,
+      "education_resources": 3.2,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.84
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础文本翻译可被AI替代，但蒙古语训练数据稀缺，AI翻译质量远低于英语等大语种；口译、商务谈判、跨文化沟通等场景仍依赖人工。蒙古国2025年恢复传统蒙古文，短期内AI难以覆盖新旧文字体系转换需求。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"一带一路\"上的冷门赛道，中蒙贸易升温带来结构性机遇，但就业面极窄、地域高度集中，非蒙古族或无中蒙情结者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "北京外国语大学"
+      ],
+      "tier_A": [
+        "上海外国语大学",
+        "中央民族大学",
+        "内蒙古大学"
+      ],
+      "tier_B": [
+        "天津外国语大学",
+        "内蒙古师范大学",
+        "吉林外国语大学"
+      ],
+      "tier_C_note": "黑龙江外国语学院、赤峰学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

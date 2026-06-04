@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.916145",
+    "updated_at": "2026-04-25T04:38:37.863099",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080218T_智能交互设计",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "站在AI与设计的交叉路口，稀缺的复合型人才，行业爆发期红利巨大，但技术迭代极快，不进则退。",
+    "radar": {
+      "market_return": 4.3,
+      "industry_outlook": 4.7,
+      "future_adaptability": 4.0,
+      "career_path": 3.8,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 4.11
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "10,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "纯视觉执行层（切图、界面美化）已被AI大幅替代（2025年替代约35%初级美工需求），但智能交互设计的核心——用户研究、交互策略、复杂系统设计思维、跨设备多模态设计——需要深层人类洞察和创造性决策，AI短期内无法替代。行业形成\"杠铃型\"生态：AI满足80%基础需求，高级设计师走向更高维的决策与策略。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在AI与设计的交叉路口，稀缺的复合型人才，行业爆发期红利巨大，但技术迭代极快，不进则退。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西北工业大学",
+        "北京邮电大学"
+      ],
+      "tier_A": [
+        "北京交通大学",
+        "北京信息科技大学",
+        "南京艺术学院"
+      ],
+      "tier_B": [
+        "江苏师范大学",
+        "浙大宁波理工学院",
+        "广州美术学院",
+        "山东工艺美术学院"
+      ],
+      "tier_C_note": "西京学院、南京传媒学院、宁波工程学院、天津仁爱学院、哈尔滨理工大学、大连艺术学院、湖北文理学院理工学院、桂林信息科技学院、青岛黄海学院、哈尔滨石油学院、大连工业大学艺术与信息工程学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

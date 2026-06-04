@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.079504",
+    "updated_at": "2026-04-26T03:11:06.218284",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090111T_园艺教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国仅 2 校开设的\"园艺+教育\"跨界小众专业，政策东风强但就业面极窄，堪称\"面向编制的单行道\"。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.75
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "园艺实践操作（嫁接、修剪、栽培管理）涉及大量动手能力和环境感知，短期内不易被 AI 完全替代；教学互动中的师生关系和现场指导也具人文属性。但基础理论教学和栽培方案规划部分可能被 AI 工具辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅 2 校开设的\"园艺+教育\"跨界小众专业，政策东风强但就业面极窄，堪称\"面向编制的单行道\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业无顶尖院校布局）"
+      ],
+      "tier_A": [
+        "海南大学（全国唯一 211/双一流开设校，园艺学底蕴深厚，热带园艺特色鲜明）"
+      ],
+      "tier_B": [
+        "成都师范学院（师范底色，教育方向见长）"
+      ],
+      "tier_C_note": "无（全国仅 2 校开设）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

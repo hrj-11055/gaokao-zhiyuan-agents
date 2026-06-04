@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.912114",
+    "updated_at": "2026-04-25T01:31:08.281048",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070901",
+    "name": "地质学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "国家战略保底的\"冷门硬核\"，就业面极窄、深造率畸高，非名校+无读研打算者慎入。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.8,
+      "career_path": 2.3,
+      "education_resources": 3.0,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 2.87
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "遥感影像解译、地球物理数据处理、岩性自动识别等环节正被AI加速替代；但野外地质调查、复杂构造解析、矿产资源评价中的综合判断仍高度依赖人类专家经验。中国地质大学（北京）2025年已成立人工智能学院，推动\"地学+AI\"交叉培养，说明行业正处于AI重塑期。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略保底的\"冷门硬核\"，就业面极窄、深造率畸高，非名校+无读研打算者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京大学",
+        "中国地质大学（武汉）",
+        "中国地质大学（北京）",
+        "北京大学"
+      ],
+      "tier_A": [
+        "西北大学",
+        "吉林大学",
+        "中国科学技术大学",
+        "成都理工大学",
+        "中国石油大学"
+      ],
+      "tier_B": [
+        "中国矿业大学",
+        "浙江大学",
+        "合肥工业大学",
+        "中南大学",
+        "中山大学",
+        "兰州大学"
+      ],
+      "tier_C_note": "中国海洋大学、长安大学、山东科技大学、东华理工大学、河北地质大学、长江大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

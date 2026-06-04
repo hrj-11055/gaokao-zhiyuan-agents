@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.686114",
+    "updated_at": "2026-05-10T00:02:48.803169",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "首都师范大学科德学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.8,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：首都师范大学科德学院是一所以“艺术、传媒、国际化”为核心标签的高端民办本科独立学院。它在定位上避开了传统公办院校的学术型竞争，转而深耕“应用型艺术教育”与“海外升学通道”，目标客群精准指向家庭经济条件优渥、追求生活品质且有出国意愿的艺术类考生。\n*   **Ace（王牌优势）**：该校最核心的竞争力在于其“超五星级”的硬件设施与极具效率的“本硕直通”体系。精装宿舍、自动加热马桶等生活细节在社交媒体上形成了极强的口碑传播；而与英、美、澳等多国名校建立的 3+1、3+2 衔接项目，为高考成绩不理想但家庭财力雄厚的学生提供了一条通往 QS 世界排名前 200 高校的“黄金跳板”。\n*   **Vibe（文化特质）**：校园文化呈现出明显的“精英化”与“自由化”特征。由于学费门槛较高，学生群体消费能力强，校园氛围更接近于国外的 Liberal Arts College（文理学院），注重实践、社交与个性表达，而非单纯的死记硬背。\n*   **Risk（潜在风险）**：高昂的教育成本（学费+生活费年均支出可能突破 15 万人民币）是最大的门槛。此外，作为独立学院，其学历在考公、考编等体制内评价体系中，虽受国家承认，但在实际筛选中可能面临隐形歧视。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

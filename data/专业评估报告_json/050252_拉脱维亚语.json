@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.219023",
+    "updated_at": "2026-04-23T13:24:06.420055",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050252",
+    "name": "拉脱维亚语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "一年毕业不到百人的超冷门语种，借\"一带一路\"吃政策饭，但应用场景极窄，AI翻译崛起后，唯有\"语言+X\"才能活。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 2.0,
+      "future_adaptability": 1.5,
+      "career_path": 2.0,
+      "education_resources": 1.8,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 2.03
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "DeepL、Google翻译等AI工具已支持拉脱维亚语翻译，基础口译和笔译工作被替代风险高。但高规格外交场合的同声传译、文化语境下的深度翻译仍有不可替代性。然而，由于使用人口仅约200万人，拉脱维亚语属于\"低资源语言\"，大模型语料库有限，AI翻译质量短期内可能不及英语等大语种，但差距正在快速缩小。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "一年毕业不到百人的超冷门语种，借\"一带一路\"吃政策饭，但应用场景极窄，AI翻译崛起后，唯有\"语言+X\"才能活。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（全国唯一211层次开设院校，教学历史最长",
+        "资源最集中）"
+      ],
+      "tier_A": [
+        "北京第二外国语学院"
+      ],
+      "tier_B": [
+        "无"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

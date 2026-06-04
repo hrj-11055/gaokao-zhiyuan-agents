@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.174457",
+    "updated_at": "2026-04-23T00:54:33.859524",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050101",
+    "name": "汉语言文学",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "万金油但非万能药——体制内文字岗的\"硬通货\"，体制外则需自造壁垒，文科生里的\"卷王之王\"。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.8,
+      "career_path": 3.5,
+      "education_resources": 4.2,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.11
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~80.5%",
+      "alignment_rate": "",
+      "starting_salary": "4500–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "基础文字生成（公文、新闻稿、广告文案）已被 AI 大模型大幅替代；但深度文学创作、文化批判性分析、人文伦理判断、AI 语料训练与内容治理等高阶工作仍需人类，且北师大 2025 年推出\"汉语言文学+人工智能\"双学位，表明学科正主动适应。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "万金油但非万能药——体制内文字岗的\"硬通货\"，体制外则需自造壁垒，文科生里的\"卷王之王\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "北京师范大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "南京大学",
+        "中国人民大学",
+        "四川大学",
+        "华中师范大学",
+        "南开大学",
+        "陕西师范大学",
+        "暨南大学",
+        "南京师范大学",
+        "武汉大学",
+        "浙江大学"
+      ],
+      "tier_B": [
+        "华东师范大学",
+        "山东大学",
+        "中山大学",
+        "吉林大学",
+        "首都师范大学",
+        "福建师范大学",
+        "苏州大学",
+        "华南师范大学",
+        "西南大学",
+        "郑州大学"
+      ],
+      "tier_C_note": "全国 680+ 所开设该专业的普通本科院校（该专业开设门槛低、覆盖面极广，C 档院校数量庞大）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

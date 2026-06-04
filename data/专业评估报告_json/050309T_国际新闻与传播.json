@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.061480",
+    "updated_at": "2026-04-24T12:14:54.978917",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "050309T_国际新闻与传播",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略加持的\"精英赛道\"，但仅 24 校开设、高度依赖名校光环与外语能力，非名校+非语霸慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 3.2,
+      "education_resources": 3.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.2
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 已在新闻采编（自动写稿、翻译、摘要）、基础内容生成、多语种翻译等领域大规模应用，直接冲击该专业核心技能。但深度跨文化解读、现场报道、敏感议题判断、人际信任建立等能力短期内不易被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略加持的\"精英赛道\"，但仅 24 校开设、高度依赖名校光环与外语能力，非名校+非语霸慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "中国传媒大学"
+      ],
+      "tier_A": [
+        "厦门大学",
+        "上海外国语大学",
+        "北京外国语大学",
+        "暨南大学"
+      ],
+      "tier_B": [
+        "山东大学",
+        "外交学院",
+        "西南政法大学",
+        "对外经济贸易大学"
+      ],
+      "tier_C_note": "北京交通大学、汕头大学、大连外国语大学、海南大学及其余开设此专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

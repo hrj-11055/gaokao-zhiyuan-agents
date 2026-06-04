@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.142031",
+    "updated_at": "2026-04-23T21:21:23.680053",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050223",
+    "name": "越南语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "中越贸易连年破 2000 亿，小语种中的\"实用派\"——就业率极高但天花板明显，地域性强，吃的是\"一带一路\"的政策饭。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 2.8,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.21
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI翻译在中低端文本翻译场景（商务邮件、产品说明、日常沟通）已显著替代人工；越南语虽为低资源语言，AI训练数据不如英语丰富，但DeepL、Google Translate等平台越南语能力快速提升。仅高端商务谈判、政治外交翻译、文化语境处理仍有护城河。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "中越贸易连年破 2000 亿，小语种中的\"实用派\"——就业率极高但天花板明显，地域性强，吃的是\"一带一路\"的政策饭。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "北京外国语大学",
+        "上海外国语大学"
+      ],
+      "tier_A": [
+        "广东外语外贸大学",
+        "对外经济贸易大学",
+        "广西民族大学",
+        "云南民族大学"
+      ],
+      "tier_B": [
+        "广西大学",
+        "四川外国语大学",
+        "云南师范大学",
+        "云南大学",
+        "解放军战略支援部队信息工程大学"
+      ],
+      "tier_C_note": "红河学院、百色学院、成都外国语学院、广西外国语学院、广西民族大学相思湖学院、昆明城市学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

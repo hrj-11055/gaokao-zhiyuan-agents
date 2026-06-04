@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.169641",
+    "updated_at": "2026-04-27T12:35:10.010702",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120405",
+    "name": "城市管理",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "被误解为\"当城管\"的交叉学科，真正出路在体制内和智慧城市，名校深造率超 70%，普通院校就业压力大。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.3
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 在城市数据分析、交通优化、环境监测等标准化环节替代潜力较大（如阿里云发布\"人工智能+城市治理白皮书\"，华为联合北大发布城市治理数字化转型报告），但城市治理中的利益协调、政策博弈、公众沟通等需要人际交互和政治判断的环节难以被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "被误解为\"当城管\"的交叉学科，真正出路在体制内和智慧城市，名校深造率超 70%，普通院校就业压力大。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "中国人民大学"
+      ],
+      "tier_A": [
+        "电子科技大学",
+        "中央财经大学",
+        "南开大学",
+        "中南财经政法大学",
+        "重庆大学",
+        "湖南大学"
+      ],
+      "tier_B": [
+        "首都经济贸易大学",
+        "山东财经大学",
+        "苏州大学",
+        "浙江财经大学",
+        "东北大学",
+        "华东理工大学",
+        "暨南大学",
+        "云南大学"
+      ],
+      "tier_C_note": "青岛大学、桂林电子科技大学、山东建筑大学、湖南城市学院、天津城建大学、浙江农林大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

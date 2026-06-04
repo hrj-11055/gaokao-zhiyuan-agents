@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.858900",
+    "updated_at": "2026-05-09T17:46:53.148563",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海对外经贸大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.8,
+      "graduate_value": 4.7,
+      "location_advantage": 4.9,
+      "globalization": 4.6,
+      "student_empowerment": 4.0,
+      "brand_asset": 4.3
+    },
+    "weighted_score": 4.38,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "非“双一流”身份",
+        "description": "在某些极高端券商（如中金、中信）的校招名单中，或在部分省份的定向选调生招录中，非双一流身份可能成为一道隐形门槛。"
+      },
+      {
+        "category": "竞争压力",
+        "description": "由于学生普遍务实且就业导向明确，校园内的“内卷”氛围较浓，实习焦虑较普遍。"
+      },
+      {
+        "category": "学科单一",
+        "description": "作为纯财经院校，人文底蕴和理工科氛围相对薄弱，对于希望接受通识教育的学生来说，可能略显单调。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（身份）**：上海对外经贸大学是一所被低估的“实战型”财经名校。它虽然没有 211 的头衔，但在商科教育的细分领域（尤其是国际贸易和会计审计）拥有极高的专业壁垒。\n\n**Ace（王牌）**：其核心竞争力在于“职业化培养”。从课程设置到实习引导，全方位对接上海乃至全球的高端服务业需求。\n\n**Vibe（氛围）**：务实、精致、高效。这里的学生很早就脱离了象牙塔的稚气，以一种准职场人的姿态面对学业和竞争。\n\n**Risk（风险）**：最大的风险在于政策性门槛（如选调生、部分国企总部招聘）。此外，对于不适应高强度竞争和职场导向的学生，这里可能会显得过于压抑。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实主义",
+        "英语大拿",
+        "四大亲儿子",
+        "精致利己（褒义：极强的自我管理）",
+        "松江一哥",
+        "地铁 9 号线常客",
+        "PPT 战神"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

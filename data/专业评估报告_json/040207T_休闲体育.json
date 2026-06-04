@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.901773",
+    "updated_at": "2026-04-22T01:12:10.695992",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040207T_休闲体育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "乘着全民健身东风的朝阳赛道，但市场极度碎片化、岗位稀缺，体育天赋和人脉资源决定天花板。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 2.8,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.16
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "核心技能为体能指导、运动技术示范、线下活动组织与人际互动，AI 难以替代实体身体指导和高情感互动的场景。但赛事策划中的数据分析、方案生成等环节已开始被 AI 辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "乘着全民健身东风的朝阳赛道，但市场极度碎片化、岗位稀缺，体育天赋和人脉资源决定天花板。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京体育大学",
+        "上海体育大学"
+      ],
+      "tier_A": [
+        "武汉体育学院",
+        "首都体育学院",
+        "成都体育学院",
+        "广州体育学院",
+        "山东体育学院",
+        "吉林体育学院",
+        "南京体育学院"
+      ],
+      "tier_B": [
+        "深圳大学",
+        "安徽师范大学",
+        "沈阳体育学院",
+        "天津体育学院",
+        "常州大学",
+        "湖北大学",
+        "杭州师范大学",
+        "海南大学",
+        "贵州大学",
+        "曲阜师范大学",
+        "武汉商学院"
+      ],
+      "tier_C_note": "其余开设该专业的约70余所普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

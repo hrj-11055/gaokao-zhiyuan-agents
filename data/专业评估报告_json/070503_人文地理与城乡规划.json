@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.213923",
+    "updated_at": "2026-04-25T00:33:10.526693",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070503",
+    "name": "人文地理与城乡规划",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "\"城镇化的'空间翻译官'，政策红利犹存但行业已入存量时代，名校+GIS技能是破局关键，混文凭者慎入。\"",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.4,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.17
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础制图（CAD 出图）、数据整理、报告模板化写作等重复性工作已被 AI 工具显著渗透。但空间分析判断、多方利益协调、政策法规解读、实地调研与公众参与等核心工作仍需人类经验。掌握 GIS + Python + AI 工具的从业者将更具竞争力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"城镇化的'空间翻译官'，政策红利犹存但行业已入存量时代，名校+GIS技能是破局关键，混文凭者慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "北京师范大学",
+        "华东师范大学",
+        "南京大学",
+        "中山大学"
+      ],
+      "tier_A": [
+        "同济大学",
+        "清华大学",
+        "武汉大学",
+        "兰州大学",
+        "东北师范大学",
+        "华中师范大学",
+        "南京师范大学",
+        "华南师范大学",
+        "西北大学",
+        "陕西师范大学",
+        "河南大学"
+      ],
+      "tier_B": [
+        "湖南师范大学",
+        "广州大学",
+        "福建师范大学",
+        "云南师范大学",
+        "西北师范大学",
+        "山西大学",
+        "辽宁师范大学",
+        "哈尔滨师范大学",
+        "苏州科技大学",
+        "成都理工大学",
+        "贵州师范大学",
+        "首都师范大学"
+      ],
+      "tier_C_note": "衡阳师范学院、唐山师范学院、长春师范大学、赣南师范大学、山西师范大学、新疆农业大学、贵州理工学院、盐城师范学院等其余约 60+ 所普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

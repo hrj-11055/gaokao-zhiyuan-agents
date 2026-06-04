@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.741330",
+    "updated_at": "2026-05-10T01:11:39.597151",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "四川电影电视学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.1,
+      "graduate_value": 3.5,
+      "location_advantage": 4.2,
+      "globalization": 2.8,
+      "student_empowerment": 3.2,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.13,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "学费压力",
+        "description": "每年 1.5 万-2 万以上的学费，加上艺术类专业高昂的器材费、服装费，对家庭经济条件有一定要求。"
+      },
+      {
+        "category": "行业内卷",
+        "description": "传媒行业门槛正在提高，仅凭一张本科学历已难以在头部媒体立足。学生必须在校期间就积累大量的实战作品。"
+      },
+      {
+        "category": "学术底蕴",
+        "description": "相比于北影、中传等顶尖公办院校，川影在理论研究和学术声望上仍有较长路要走。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：四川电影电视学院（SFTU）是中国西部地区传媒教育的重镇，也是国内最早设立的民办影视艺术本科高校之一。其核心定位是“应用型传媒人才培养基地”，强调“入校即入行”的教育理念。\n\n**Ace（王牌优势）**：学校在播音主持、影视编导等传统传媒领域拥有深厚的积淀。其最大的竞争优势在于“行业渗透力”——在四川乃至全国的广播电视系统中，川影校友形成了强大的职业共同体。此外，学校对新媒体趋势的反应极快，是国内较早大规模布局短视频与直播电商实训的院校。\n\n**Vibe（文化特质）**：校园文化呈现出一种“时尚与务实并存”的特质。学生群体普遍具有较高的审美自觉和表达欲望，同时在“半工半读”的实训模式下，培养出了极强的抗压能力和项目执行力。\n\n**Risk（潜在风险）**：作为民办院校，其学费支出对普通家庭而言是一笔不小的投资。在学术层面，虽然应用型研究较强，但在高水平科研论文和国家级重大课题方面仍与公办顶尖艺术院校存在差距。此外，随着传媒行业进入存量竞争时代，非核心专业的就业压力正在显现。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

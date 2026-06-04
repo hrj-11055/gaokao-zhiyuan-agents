@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.736241",
+    "updated_at": "2026-05-11T13:55:40.264444",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "滨州医学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 3.4,
+      "location_advantage": 4.0,
+      "globalization": 2.8,
+      "student_empowerment": 2.5,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.46,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "滨州医学院（山东医药大学）正处于其校史上最重要的上升期。从“学院”到“大学”的更名，不仅是名称的改变，更是资源整合能力和生源吸引力的质变。学校以康复医学为差异化竞争点，以临床医学为核心支撑，构建了极具山东特色的医学教育模式。\n\n**核心优势**：\n1. **品牌红利**：更名后，学校在全国范围内的知名度将迅速打开，生源质量有望进一步提升。\n2. **区位红利**：烟台校区的持续投入使其在人才引进和产学研合作上占据先机。\n3. **特色红利**：在老龄化社会背景下，其康复医学的先发优势将转化为巨大的社会影响力和就业竞争力。\n\n**面临挑战**：\n1. **资源分散**：两地办学带来的行政成本和教学资源稀释问题依然存在。\n2. **竞争加剧**：在山东省内，面临山东第一医科大学、山东第二医科大学（原潍坊医学院）的直接竞争，如何在强手如林的医学教育市场中保持特色是关键。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

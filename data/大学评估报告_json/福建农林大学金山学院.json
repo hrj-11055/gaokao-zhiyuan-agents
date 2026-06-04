@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.913308",
+    "updated_at": "2026-05-12T12:48:45.285684",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "福建农林大学金山学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.1,
+      "graduate_value": 2.4,
+      "location_advantage": 3.5,
+      "globalization": 2.8,
+      "student_empowerment": 3.2,
+      "brand_asset": 2.5
+    },
+    "weighted_score": 2.57,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "至诚学院",
+        "similarity": "同类院校",
+        "key_difference": "至诚学院依托福大，在理工类、建筑类专业上更具硬实力，就业起薪普遍高于金山学院；但金山学院在生物、环境、园林等领域拥有绝对的垂直领域优势。"
+      },
+      {
+        "name": "协和学院",
+        "similarity": "同类院校",
+        "key_difference": "协和学院在人文社科、艺术传媒领域更具活力；金山学院则在学科的“硬核”程度（如实验科学）上略胜一筹。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "福建农林大学金山学院（以下简称“金山学院”）作为福建省内极具代表性的独立学院，其核心竞争力在于与母体学校福建农林大学（FAFU）的“深度共生”。这种共生不仅体现在地理位置上的重合（共享金山校区），更体现在师资力量、科研平台以及校园文化的高度渗透。对于考生而言，金山学院提供了一个以较低分数门槛获取省属重点大学教育资源的“窗口期”。\n\n然而，评估也揭示了学院面临的结构性挑战。在全国独立学院转设的大背景下，金山学院的未来归属（转为公办、民办或撤并）仍存在一定的不确定性，这在一定程度上影响了长期品牌资产的稳定性。此外，尽管学院在农林、食品等传统优势领域表现稳健，但在新兴工科与高端商科的自主建设上，仍显现出对母体路径依赖过强的特征，缺乏独立的学术话语权。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "至诚学院",
+          "similarity": "同类院校",
+          "key_difference": "至诚学院依托福大，在理工类、建筑类专业上更具硬实力，就业起薪普遍高于金山学院；但金山学院在生物、环境、园林等领域拥有绝对的垂直领域优势。"
+        },
+        {
+          "name": "协和学院",
+          "similarity": "同类院校",
+          "key_difference": "协和学院在人文社科、艺术传媒领域更具活力；金山学院则在学科的“硬核”程度（如实验科学）上略胜一筹。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

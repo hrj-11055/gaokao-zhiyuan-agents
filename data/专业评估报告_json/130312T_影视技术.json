@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.970431",
+    "updated_at": "2026-04-28T12:23:45.956575",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130312T_影视技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在AI与影视工业化的交叉路口，北电出品即高配，普通院校需靠作品说话，技术更新极快，终身学习是标配。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 1.6
+    },
+    "weighted_score": 3.22
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "AI已在影视后期领域深度渗透——自动剪辑、AI调色、一键抠像、智能渲染、AI分镜生成等功能已投入实际生产。字节跳动Seedance 2.0模型将特效成本从每秒3000元压缩至3元。粗剪、基础调色、素材筛选等低端技术岗位面临直接替代。但虚拟制片流程管理、人机协作\"转译\"等复合型岗位短期不可替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在AI与影视工业化的交叉路口，北电出品即高配，普通院校需靠作品说话，技术更新极快，终身学习是标配。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京电影学院"
+      ],
+      "tier_A": [
+        "河北传媒学院",
+        "南京传媒学院"
+      ],
+      "tier_B": [
+        "燕京理工学院",
+        "四川电影电视学院",
+        "四川传媒学院",
+        "青岛电影学院"
+      ],
+      "tier_C_note": "海口经济学院、河南开封科技传媒学院、西北大学现代学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

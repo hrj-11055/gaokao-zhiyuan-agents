@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.734238",
+    "updated_at": "2026-05-08T01:23:05.348333",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中国矿业大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.5,
+      "graduate_value": 4.2,
+      "location_advantage": 3.8,
+      "globalization": 3.5,
+      "student_empowerment": 3.7,
+      "brand_asset": 4.0
+    },
+    "weighted_score": 4.12,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "中国矿业大学（CUMT）作为教育部直属的全国重点大学，是国家“双一流”、“211 工程”重点建设高校。在当前的能源转型大背景下，矿大正经历从“传统采矿”向“智能开采、绿色能源、地下空间开发”的战略转型。其核心竞争力在于极高的行业垂直深度，尤其是在电力、煤炭、基建等国家战略支柱产业中，矿大校友形成了庞大的中高层网络，这种“行业护城河”是许多综合性 985 高校难以企及的。\n\n从学术维度看，矿大的矿业工程、安全科学与工程连续多年蝉联全国第一，其科研产出与国家能源安全紧密绑定。尽管地理位置位于非省会城市的徐州，但凭借徐州作为淮海经济区中心城市的崛起，以及工程机械产业（如徐工集团）的强力支撑，学校的产学研转化效率极高。\n\n然而，学校也面临着“行业标签过重”的挑战。在互联网、金融等通用型高薪领域，矿大的品牌溢价弱于同档次的综合性 211 高校。此外，随着国家“双碳”战略的推进，传统矿业学科的吸引力在部分省份的生源端出现波动，这迫使学校必须加速向新能源、人工智能等前沿领域渗透。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬核工科",
+        "国企摇篮",
+        "徐州之光",
+        "能源先锋",
+        "实干主义",
+        "南湖镜湖",
+        "暖气自由",
+        "地锅鸡灵魂",
+        "电力系统亲儿子",
+        "深地开发领航者"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

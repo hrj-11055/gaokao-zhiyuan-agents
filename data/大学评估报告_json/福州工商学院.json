@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.579259",
+    "updated_at": "2026-05-12T12:26:38.608276",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "福州工商学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.23,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "福州外语外贸学院",
+        "similarity": "同类院校",
+        "key_difference": "福外在民办大学排名中更高，国际化氛围和商科品牌更响亮，且校区更靠近长乐，交通相对便利；福州工商学院则在校园自然环境和部分工科专业的产教融合上具有差异化竞争力。"
+      },
+      {
+        "name": "阳光学院",
+        "similarity": "同类院校",
+        "key_difference": "阳光学院在数字化转型和直播电商等新兴领域动作更快，品牌营销更强；福州工商学院则保留了更多传统商科的稳健性，学风相对更安静。"
+      },
+      {
+        "name": "福建农林大学（母体）",
+        "similarity": "同类院校",
+        "key_difference": "转设后，福州工商学院在师资共享上已逐渐独立，虽然品牌溢价有所下降，但在办学自主权和市场响应速度上更加灵活。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "福州工商学院（原福建农林大学东方学院）是一所典型的从独立学院转设而来的民办应用型本科高校。在当前的中国高等教育版图中，该校代表了民办教育向“职业化、应用化、市场化”转型的典型路径。\n\n**核心定位（Identity）**：学校定位于服务福建省地方经济发展，特别是为福州及周边地区的现代服务业、数字经济和建筑产业培养一线应用型人才。其办学逻辑紧贴市场需求，学科设置具有明显的“商科+工科”双轮驱动特征。\n\n**王牌优势（Ace）**：\n1.  **硬件设施的“后发优势”**：由于校区建设较晚，其宿舍条件、图书馆设施及校园整体规划在福建省内民办院校中处于领先地位，被学生戏称为“葛岭度假村”。\n2.  **灵活的产教融合**：学校与宁德时代等省内龙头企业建立了实质性的校企合作关系，通过订单班等模式直接对接就业市场。\n3.  **宽松的转专业环境**：对于高考发挥失常或专业选择迷茫的学生，提供了较高的容错率。\n\n**文化特质（Vibe）**：务实、商业化、生活化。校园内学术压力相对较小，更多的是一种职业导向的氛围。学生群体普遍具有较强的社会实践意识，校园生活节奏在“避世”的自然环境中显得相对从容。\n\n**潜在风险（Risk）**：\n1.  **学术底蕴与深造瓶颈**：作为民办院校，科研积累薄弱，考研氛围和成功率远低于公办院校，不适合以学术研究为终极目标的考生。\n2.  **地理位置的“双刃剑”**：永泰葛岭校区虽然环境优美，但距离福州市中心较远，通勤成本高，学生在实习和接触城市资源方面存在天然屏障。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "福州外语外贸学院",
+          "similarity": "同类院校",
+          "key_difference": "福外在民办大学排名中更高，国际化氛围和商科品牌更响亮，且校区更靠近长乐，交通相对便利；福州工商学院则在校园自然环境和部分工科专业的产教融合上具有差异化竞争力。"
+        },
+        {
+          "name": "阳光学院",
+          "similarity": "同类院校",
+          "key_difference": "阳光学院在数字化转型和直播电商等新兴领域动作更快，品牌营销更强；福州工商学院则保留了更多传统商科的稳健性，学风相对更安静。"
+        },
+        {
+          "name": "福建农林大学（母体）",
+          "similarity": "同类院校",
+          "key_difference": "转设后，福州工商学院在师资共享上已逐渐独立，虽然品牌溢价有所下降，但在办学自主权和市场响应速度上更加灵活。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

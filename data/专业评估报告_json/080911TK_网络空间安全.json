@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.044225",
+    "updated_at": "2026-04-25T12:03:30.516316",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080911TK_网络空间安全",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "数字时代的\"守门人\"，政策刚需+330万人才缺口，但行业重实战轻学历，没两把刷子别来。",
+    "radar": {
+      "market_return": 4.0,
+      "industry_outlook": 4.4,
+      "future_adaptability": 4.2,
+      "career_path": 3.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.3
+    },
+    "weighted_score": 4.04
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "网络安全核心依赖攻防对抗中的创造性思维和系统级漏洞分析——攻击手法不断进化，防御需要\"人机协同\"而非\"人机替代\"。AI可以辅助扫描和自动化响应，但高级渗透测试、社会工程学防御、零日漏洞挖掘仍高度依赖人类专家。AI本身也带来了新的安全威胁（深度伪造、AI驱动钓鱼），反而扩大了网安人才需求。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "数字时代的\"守门人\"，政策刚需+330万人才缺口，但行业重实战轻学历，没两把刷子别来。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西安电子科技大学",
+        "清华大学（交叉信息院/网研院）",
+        "东南大学",
+        "华中科技大学"
+      ],
+      "tier_A": [
+        "北京邮电大学",
+        "电子科技大学",
+        "山东大学",
+        "北京航空航天大学",
+        "哈尔滨工业大学",
+        "武汉大学",
+        "暨南大学",
+        "西北工业大学",
+        "中山大学",
+        "四川大学"
+      ],
+      "tier_B": [
+        "吉林大学",
+        "北京理工大学",
+        "天津大学",
+        "厦门大学",
+        "西安交通大学",
+        "南京理工大学",
+        "杭州电子科技大学",
+        "重庆邮电大学",
+        "成都理工大学",
+        "桂林电子科技大学",
+        "西安邮电大学",
+        "国际关系学院",
+        "北京电子科技学院"
+      ],
+      "tier_C_note": "其余约80所开设该专业的普通本科院校。包括各省属综合性大学及理工类院校，如福建师范大学、湘潭大学、太原理工大学、江西财经大学、济南大学等。对于中等分数段考生，C档院校中行业特色鲜明的（如邮电类、电子类院校）仍值得关注。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

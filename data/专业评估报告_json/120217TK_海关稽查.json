@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.177746",
+    "updated_at": "2026-04-28T01:25:23.934435",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120217TK_海关稽查",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "海关系统的\"窄门窄路\"，全国仅极少数院校开设，就业高度绑定国考，上岸即上岸，落榜即失业。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "海关稽查的核心工作——现场核查、企业经营状况审查、走私行为研判——涉及大量人际博弈、实物检查和复杂情境判断，短期内难以被 AI 完全替代。但 AI/大数据技术正在深刻改变海关风控模式（智能审图、大数据风险建模），不会替代稽查人员，但会要求稽查人员具备数据分析能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "海关系统的\"窄门窄路\"，全国仅极少数院校开设，就业高度绑定国考，上岸即上岸，落榜即失业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海海关学院（海关总署直属，定向招录通道，不可替代的行业地位）"
+      ],
+      "tier_A": [
+        "（该专业为控制布点专业，全国仅极少数院校获批开设，S 档与 A 档几乎重合）"
+      ],
+      "tier_B": [
+        "（暂无其他独立开设该专业的知名院校）"
+      ],
+      "tier_C_note": "（该专业为国家控制布点，非教育部审批通过不得开设）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

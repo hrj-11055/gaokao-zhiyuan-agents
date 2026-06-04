@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.859571",
+    "updated_at": "2026-05-12T12:31:40.023555",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "厦门大学嘉庚学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.84,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Bilingual",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 6200,
+      "top_destinations": [],
+      "top_employers": [
+        "代表企业",
+        "字节跳动（厦门）",
+        "美图",
+        "厦门航空"
+      ]
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "学费压力",
+        "description": "每年 2 万至 3 万的学费，加上生活费，四年下来是一笔不小的开支。在经济下行压力下，家庭的支付能力成为影响生源的重要因素。"
+      },
+      {
+        "category": "安全管理",
+        "description": "2024 年底发生的校园安全争议，暴露了学校在处理突发学生矛盾和舆情应对上的短板。"
+      },
+      {
+        "category": "转设悬念",
+        "description": "作为尚未完成转设的知名独立学院，未来是回归母体、转为公办还是彻底民办，仍存在政策上的不确定性。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：中国独立学院的“天花板”，承袭厦大基因的高端应用型本科。\n*   **Ace（王牌优势）**：极高的深造转化率（尤其是申请海外名校）和近乎绝对的转专业自由。\n*   **Vibe（文化特质）**：自由、精致、务实。这里没有传统二本的沉闷，更多的是一种类似“博雅教育”的活力。\n*   **Risk（潜在风险）**：高昂的教育成本；地理位置的相对隔绝；转设政策带来的身份不确定性。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "转专业自由",
+        "海景房",
+        "考研黑马",
+        "厦大旁听生",
+        "精致利己(褒义)",
+        "漳州港岛民",
+        "国际化跳板"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

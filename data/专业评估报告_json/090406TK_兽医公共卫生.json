@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.925269",
+    "updated_at": "2026-04-26T12:19:30.271080",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090406TK_兽医公共卫生",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"小众交叉学科，坐享'人病兽防'国家战略红利，但仅13所院校开设、执业兽医通过率仅12.5%，是政策驱动型冷门赛道——出路稳但不宽。\"",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.38
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "现场流行病学调查、实验室病原检测、动物临床诊断、政策监管现场执法等核心工作高度依赖实地操作和人际沟通，AI短期内难以替代；但流行病学建模、数据分析等环节可能被AI辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"小众交叉学科，坐享'人病兽防'国家战略红利，但仅13所院校开设、执业兽医通过率仅12.5%，是政策驱动型冷门赛道——出路稳但不宽。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学（985/211，兽医学A+，国家兽药安全评价中心依托单位）",
+        "南京农业大学（211，兽医学A+）"
+      ],
+      "tier_A": [
+        "扬州大学",
+        "西南大学（荣昌校区）",
+        "华中农业大学（动物医学强校，相关方向招生）"
+      ],
+      "tier_B": [
+        "河南农业大学",
+        "山东农业大学",
+        "山西农业大学",
+        "甘肃农业大学",
+        "浙江农林大学",
+        "吉林农业大学"
+      ],
+      "tier_C_note": "该专业为特控专业，C档暂无明确院校。开设院校共约13所，均已列入上述分档。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

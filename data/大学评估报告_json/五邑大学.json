@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.770256",
+    "updated_at": "2026-05-01T01:53:41.015624",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "五邑大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "“如果你想在珠三角成为一名受人尊敬的工程师，且希望在大学期间获得扎实的技能训练，五邑大学是 530-550 分段（广东物理组）最具性价比的选择。”",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 3.3,
+      "location_advantage": 3.6,
+      "globalization": 3.4,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.1
+    },
+    "weighted_score": 3.19,
+    "one_sentence_recommend": "“如果你想在珠三角成为一名受人尊敬的工程师，且希望在大学期间获得扎实的技能训练，五邑大学是 530-550 分段（广东物理组）最具性价比的选择。”"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": [
+        "代表性企业"
+      ]
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "粤港澳大湾区",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "五邑大学是一所典型的**“产业驱动型”**高水平理工科大学。它不以高深莫测的理论研究见长，而以**“解决珠三角制造业最后一公里技术问题”**为己任。\n\n*   **核心定位：** 大湾区西岸工科人才的“蓄水池”与技术转化的“实验田”。\n*   **王牌优势：** 极高的就业性价比。对于分数在省控线附近的考生，五邑大学提供的不仅是本科学历，更是进入珠三角核心产业链的通行证。\n*   **文化特质：** 融合了侨乡的开放与工科生的务实，校园内充斥着“技术改变命运”的朴素价值观。\n*   **潜在风险：** 在全国范围内的知名度有待提升，学科层次的突破（申博）仍需时间。",
+      "one_sentence_recommend": "“如果你想在珠三角成为一名受人尊敬的工程师，且希望在大学期间获得扎实的技能训练，五邑大学是 530-550 分段（广东物理组）最具性价比的选择。”",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实主义",
+        "工程师红利",
+        "侨乡情怀",
+        "大湾区西岸",
+        "高性价比",
+        "低调潜行",
+        "产教融合"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

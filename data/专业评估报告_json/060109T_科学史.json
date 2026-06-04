@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.149465",
+    "updated_at": "2026-04-24T23:09:23.955784",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "060109T_科学史",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "文理跨界\"冷门绝学\"，极小众赛道——全国仅清华开设本科，深造刚需，对口岗位稀缺，适合做学术\"苦行僧\"。",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 2.0,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 3.8,
+      "discipline_core": 4.8
+    },
+    "weighted_score": 2.61
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "科学史研究需要深度的文本考证、历史语境理解和跨学科综合分析，涉及大量非结构化的人文判断，短期内AI难以完全替代。但科普写作、基础文献整理等辅助性工作存在被AI工具赋能/替代的可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "文理跨界\"冷门绝学\"，极小众赛道——全国仅清华开设本科，深造刚需，对口岗位稀缺，适合做学术\"苦行僧\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学（本科唯一开设，科学史系独立建制）",
+        "中国科学院自然科学史研究所（非高校，但为学术最高殿堂）"
+      ],
+      "tier_A": [
+        "中国科学技术大学（A+，科技考古特色）",
+        "北京科技大学（A+，冶金史/技术史特色）",
+        "北京大学（B，综合实力强）"
+      ],
+      "tier_B": [
+        "上海交通大学（B+，医学史方向特色）",
+        "内蒙古师范大学（B+，少数民族科技史特色）",
+        "西北大学（B）"
+      ],
+      "tier_C_note": "山西大学（B-）、南京信息工程大学（B-）、东华大学（C）、广西民族大学（C+）、首都师范大学（C-）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

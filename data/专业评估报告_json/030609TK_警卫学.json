@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.918329",
+    "updated_at": "2026-04-21T02:22:02.492261",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030609TK_警卫学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "极度垂直的体制内窄门：全国仅一所院校开设，仅招在职警察，入警即锁定\"铁饭碗\"，但普通人几乎无法直接报考。",
+    "radar": {
+      "market_return": 4.0,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 3.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "警卫学的核心技能——人身安全保护、现场应急处置、体能搏击、要人警卫战术——高度依赖人的物理存在和即时判断，AI可辅助情报分析和风险评估，但无法替代现场人力警卫。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度垂直的体制内窄门：全国仅一所院校开设，仅招在职警察，入警即锁定\"铁饭碗\"，但普通人几乎无法直接报考。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民警察大学（唯一开设院校，公安部直属，本硕一体）"
+      ],
+      "tier_A": [
+        "（无其他院校开设此专业）"
+      ],
+      "tier_B": [
+        "（无）"
+      ],
+      "tier_C_note": "（无）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

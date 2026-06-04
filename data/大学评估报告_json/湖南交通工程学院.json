@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.917778",
+    "updated_at": "2026-05-10T01:20:30.367871",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖南交通工程学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.3,
+      "graduate_value": 2.8,
+      "location_advantage": 3.5,
+      "globalization": 1.2,
+      "student_empowerment": 3.0,
+      "brand_asset": 2.6
+    },
+    "weighted_score": 2.585,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "学费压力",
+        "description": "作为民办高校，其学费每年在 22000-28000 元左右，对于农村家庭而言是不小的负担。"
+      },
+      {
+        "category": "师资流动性",
+        "description": "部分青年教师将该校作为跳槽公办院校的“跳板”，导致部分基础课程教学质量波动。"
+      },
+      {
+        "category": "社会认可度局限",
+        "description": "在湖南省外，该校的知名度较低，毕业生在大型国企校招中可能面临简历筛选压力。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity (身份)**：一所以轨道交通为核心特色、深耕湘南、辐射粤港澳大湾区的应用型民办本科院校。\n**Ace (王牌)**：极其出色的宿舍硬件条件；与铁路及制造业紧密挂钩的就业渠道；校长陈治亚带来的行业资源。\n**Vibe (氛围)**：务实、纪律导向、就业至上。这里不是学术研究的象牙塔，而是职业技能的孵化器。\n**Risk (风险)**：高昂的学费与相对薄弱的学术底蕴；在考研竞争中处于劣势；管理风格可能不适合追求极度自由的学生。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

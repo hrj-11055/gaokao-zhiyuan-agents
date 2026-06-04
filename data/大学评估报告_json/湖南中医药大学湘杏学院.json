@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.718408",
+    "updated_at": "2026-05-10T00:30:10.037479",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖南中医药大学湘杏学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.2,
+      "graduate_value": 3.4,
+      "location_advantage": 2.8,
+      "globalization": 1.5,
+      "student_empowerment": 2.4,
+      "brand_asset": 3.0
+    },
+    "weighted_score": 2.97,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "湖南医药学院（公办）",
+        "similarity": "同类院校",
+        "key_difference": "湘杏在学费上较高，但在中医药专业的学术深度和行业认可度上，凭借母体学校的支持，往往更具优势。"
+      },
+      {
+        "name": "长沙医学院（民办）",
+        "similarity": "同类院校",
+        "key_difference": "长沙医学院规模更大、地理位置更靠近长沙市区，但湘杏学院在“中医药”这一细分领域的专业性更强，学风相对更严谨。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "湖南医药学院（公办）",
+          "similarity": "同类院校",
+          "key_difference": "湘杏在学费上较高，但在中医药专业的学术深度和行业认可度上，凭借母体学校的支持，往往更具优势。"
+        },
+        {
+          "name": "长沙医学院（民办）",
+          "similarity": "同类院校",
+          "key_difference": "长沙医学院规模更大、地理位置更靠近长沙市区，但湘杏学院在“中医药”这一细分领域的专业性更强，学风相对更严谨。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

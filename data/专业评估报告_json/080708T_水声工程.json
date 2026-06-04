@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.903105",
+    "updated_at": "2026-04-25T07:29:36.685036",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080708T_水声工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略刚需的\"深蓝密码\"，供需极度失衡带来高确定性，但极窄赛道、高学历门槛和军工绑定意味着——非名校不选，不读研慎入。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 3.2,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.94
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–11,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "水声工程涉及复杂物理场建模（水下声传播受温度、盐度、深度等多因素影响）、实验验证（需出海测试）和涉密军工场景，AI 难以替代人类工程师在多约束条件下的系统设计和决策。但信号处理算法开发中，AI 辅助优化正在渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略刚需的\"深蓝密码\"，供需极度失衡带来高确定性，但极窄赛道、高学历门槛和军工绑定意味着——非名校不选，不读研慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工程大学",
+        "西北工业大学"
+      ],
+      "tier_A": [
+        "海军工程大学（军校）",
+        "江苏科技大学"
+      ],
+      "tier_B": [
+        "海军潜艇学院（军校）",
+        "厦门大学（海洋学科背景）"
+      ],
+      "tier_C_note": "江苏科技大学苏州理工学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.058606",
+    "updated_at": "2026-04-23T19:38:11.433759",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050215",
+    "name": "老挝语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "\"一带一路的冷门金矿——全国年毕业仅200人，中老铁路催生需求井喷，但就业面极窄，需'语言+专业'双修才走得远。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 2.8,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础翻译、文本处理等低复杂度任务已被AI大幅渗透，但涉及老挝政治文化背景理解、商务谈判中的即时口译、跨文化交际中的微妙语境把握等，AI短期内仍难以替代人类。且老挝语为低资源语言，训练数据远少于英/日/韩语，AI在该语种的表现显著弱于主流语种。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"一带一路的冷门金矿——全国年毕业仅200人，中老铁路催生需求井喷，但就业面极窄，需'语言+专业'双修才走得远。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学"
+      ],
+      "tier_A": [
+        "广东外语外贸大学",
+        "云南民族大学",
+        "广西民族大学"
+      ],
+      "tier_B": [
+        "云南大学",
+        "云南师范大学"
+      ],
+      "tier_C_note": "红河学院、昆明学院、广西外国语学院等地方应用型院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.000555",
+    "updated_at": "2026-04-25T15:18:48.098490",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081105T_水利科学与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家水网战略下的\"铁饭碗\"专业，稳定性强但地域性明显，名校加持下就业不愁，但非名校生需做好吃苦准备。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.2,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.37
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "水利工程的勘测规划、施工现场管理、流域调度决策等核心工作涉及复杂的空间分析、实地地质判断和多目标优化决策，难以被AI完全替代。但常规计算分析、制图等环节已被AI辅助工具侵蚀，需警惕\"不会用AI的工程师被会用AI的工程师替代\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家水网战略下的\"铁饭碗\"专业，稳定性强但地域性明显，名校加持下就业不愁，但非名校生需做好吃苦准备。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "河海大学"
+      ],
+      "tier_A": [
+        "武汉大学",
+        "天津大学",
+        "四川大学",
+        "大连理工大学"
+      ],
+      "tier_B": [
+        "中国农业大学",
+        "郑州大学",
+        "西安理工大学",
+        "华北水利水电大学",
+        "三峡大学",
+        "西北农林科技大学",
+        "长沙理工大学"
+      ],
+      "tier_C_note": "南昌大学、山东大学、华南理工大学、北京工业大学、山东科技大学等约20所开设水利科学与工程专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

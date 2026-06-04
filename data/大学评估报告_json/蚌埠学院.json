@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.683419",
+    "updated_at": "2026-05-11T19:17:15.496259",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "蚌埠学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.46,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 5200,
+      "top_destinations": [],
+      "top_employers": [
+        "代表性企业"
+      ]
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）：**\n蚌埠学院是一所以工为主、多学科协调发展的安徽省属普通本科高校。其前身可追溯至1982年创办的蚌埠联合大学，经过四十余年的演变，已从一所地方性专科院校成功转型为应用型本科院校。学校目前正处于“申硕”的关键攻坚期，其核心使命是为皖北地区乃至长三角区域的制造业、食品工业及现代服务业输送一线工程师和技术骨干。\n\n**Ace（王牌优势）：**\n学校的硬核竞争力在于其与蚌埠“中国玻璃谷”及“生物基材料基地”的深度绑定。机械设计制造、无机非金属材料工程、生物工程等专业不仅是省级特色专业，更在课程设置上直接对接中建材玻璃研究院、丰原集团等行业巨头。对于追求“毕业即就业”的理工科学生而言，这种产教融合的深度是许多同类院校难以企及的。\n\n**Vibe（文化特质）：**\n“务实”是蚌埠学院最鲜明的底色。由于生源多来自安徽省内，学生群体普遍具有吃苦耐劳、踏实肯干的特点。校园内考研氛围极度浓厚，图书馆与自习室的占座现象反映了学生通过学历提升改变命运的强烈渴望。这种氛围虽然略显沉重，但也为学生提供了一个相对纯粹的学习环境。\n\n**Risk（潜在风险）：**\n最大的风险在于学术天花板较低。目前尚未取得硕士学位授予权，这意味着顶尖科研资源的匮乏和高层次人才引进的难度。此外，学校在全国范围内的品牌溢价能力较弱，对于希望跨省就业或进入顶级互联网/金融大厂的学生来说，校招资源可能显得捉襟见肘。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实工科",
+        "考研跳板",
+        "硅基特色",
+        "皖北枢纽",
+        "性价比之选",
+        "地锅鸡之魂"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

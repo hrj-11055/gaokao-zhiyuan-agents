@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.205469",
+    "updated_at": "2026-04-21T02:01:39.094821",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030603K_边防管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "边防管理：穿上制服的\"国门守卫\"，就业确定性极高但路径高度单一，体制内铁饭碗与艰苦边远同在，非热爱边防事业者慎入。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.08
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "边防管理的核心工作涉及现场执法判断、涉外人际沟通、边境突发事件的临场处置决策，这些需要人类在场且涉及复杂情境判断的任务难以被 AI 完全替代。但证件识别、数据比对等标准化检查环节正在被自动化系统逐步替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "边防管理：穿上制服的\"国门守卫\"，就业确定性极高但路径高度单一，体制内铁饭碗与艰苦边远同在，非热爱边防事业者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民警察大学（国家级一流专业，A+，行业公认第一）"
+      ],
+      "tier_A": [
+        "中国人民公安大学",
+        "中南财经政法大学"
+      ],
+      "tier_B": [
+        "华东政法大学",
+        "云南警官学院",
+        "新疆警察学院",
+        "中国刑事警察学院"
+      ],
+      "tier_C_note": "甘肃政法大学、其他设有公安学类专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

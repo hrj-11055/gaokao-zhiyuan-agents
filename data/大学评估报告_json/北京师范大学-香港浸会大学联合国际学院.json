@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.720589",
+    "updated_at": "2026-05-01T02:08:56.346186",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "北京师范大学-香港浸会大学联合国际学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "最适合家庭经济条件优渥、目标明确为出国深造、且希望在内地提前适应国际化高强度教学模式的学子。",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 4.8,
+      "location_advantage": 4.2,
+      "globalization": 4.9,
+      "student_empowerment": 4.5,
+      "brand_asset": 4.3
+    },
+    "weighted_score": 4.27,
+    "one_sentence_recommend": "最适合家庭经济条件优渥、目标明确为出国深造、且希望在内地提前适应国际化高强度教学模式的学子。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "深圳北理莫斯科大学（SMBU）",
+        "similarity": "同类院校",
+        "key_difference": "BNBU 侧重商科、传媒及数据科学，属于典型的博雅教育，升学导向以欧美及港新名校为主，校园氛围更加开放多元；深北莫则侧重基础科学与俄语背景，具有浓厚的理工科研色彩和严谨的学术管理风格。"
+      },
+      {
+        "name": "西交利物浦大学（XJTLU）",
+        "similarity": "同类院校",
+        "key_difference": "两者同属中外合作办学第一梯队。西浦规模更大，理工科底蕴更深；BNBU 则在珠海占据大湾区地利，且因其“博雅”定位，生均教学资源投入和师生互动频率往往更高。"
+      },
+      {
+        "name": "传统 211 大学",
+        "similarity": "同类院校",
+        "key_difference": "BNBU 的优势在于语言环境和国际认可度，劣势在于国内保研率极低及考公考编的适配度相对较弱。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "北师香港浸会大学（BNBU，原UIC）是中国高等教育改革的先行者，作为首家内地与香港合办的博雅型大学，它在过去二十年间成功构建了一套成熟的国际化人才培养体系。其核心竞争力在于“名校跳板”属性，通过全英文教学、荣誉学士学位制度以及与国际接轨的 GPA 评价体系，为学生申请全球顶尖硕士项目提供了极高的成功率。\n\n从学术维度看，BNBU 并非传统的科研导向型大学，其资源更多向本科教学倾斜。虽然在 ESI 排名和国家级专业建设上已取得突破，但其真正的价值在于“博雅教育（Liberal Arts）”的落地，即培养具有跨学科视野、卓越沟通能力和国际竞争力的复合型人才。\n\n在校园文化上，BNBU 呈现出一种“高压与自由并存”的独特生态。全英文环境带来的学术压力（DDL 文化）与极度丰富的社团生活、全人教育课程形成了鲜明对比。对于目标明确、家庭经济条件较好且具备较强自我驱动力的学生而言，BNBU 提供了极高的投资回报率（ROI），尤其是在通往全球名校的路径上。",
+      "one_sentence_recommend": "最适合家庭经济条件优渥、目标明确为出国深造、且希望在内地提前适应国际化高强度教学模式的学子。",
+      "horizontal_comparison": [
+        {
+          "name": "深圳北理莫斯科大学（SMBU）",
+          "similarity": "同类院校",
+          "key_difference": "BNBU 侧重商科、传媒及数据科学，属于典型的博雅教育，升学导向以欧美及港新名校为主，校园氛围更加开放多元；深北莫则侧重基础科学与俄语背景，具有浓厚的理工科研色彩和严谨的学术管理风格。"
+        },
+        {
+          "name": "西交利物浦大学（XJTLU）",
+          "similarity": "同类院校",
+          "key_difference": "两者同属中外合作办学第一梯队。西浦规模更大，理工科底蕴更深；BNBU 则在珠海占据大湾区地利，且因其“博雅”定位，生均教学资源投入和师生互动频率往往更高。"
+        },
+        {
+          "name": "传统 211 大学",
+          "similarity": "同类院校",
+          "key_difference": "BNBU 的优势在于语言环境和国际认可度，劣势在于国内保研率极低及考公考编的适配度相对较弱。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "全英文",
+        "博雅教育",
+        "名校跳板",
+        "DDL 战友",
+        "苑舍情谊",
+        "国际视野",
+        "珠海豪宅",
+        "全人发展"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

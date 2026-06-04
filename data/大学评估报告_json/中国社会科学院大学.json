@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.912763",
+    "updated_at": "2026-05-09T15:17:14.129438",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中国社会科学院大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.9,
+      "graduate_value": 4.7,
+      "location_advantage": 4.2,
+      "globalization": 3.9,
+      "student_empowerment": 4.5,
+      "brand_asset": 4.6
+    },
+    "weighted_score": 4.59,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "中国人民大学",
+        "similarity": "同类院校",
+        "key_difference": "人大是“大而强”，校友网络遍布政商界，社会影响力更广；社科大是“小而精”，更像是一个学术研究所的本科部，师生比极低，学术训练更扎实。"
+      },
+      {
+        "name": "北京大学",
+        "similarity": "同类院校",
+        "key_difference": "北大人文社科带有强烈的自由主义和理想主义色彩；社科大则更偏向“经世致用”和“国家智库”导向，学术研究与国家治理结合得更紧密。"
+      }
+    ],
+    "risks": [
+      {
+        "category": "地理位置偏远",
+        "description": "良乡校区距离市中心约 40 公里，虽然有校车和地铁，但往返一次仍需 3-4 小时。这在一定程度上限制了学生的社交圈和校外实习的频率。"
+      },
+      {
+        "category": "社交圈层狭窄",
+        "description": "由于学校总人数少，社交圈相对闭塞。对于性格外向、渴望多元社交的学生来说，可能会感到压抑。"
+      },
+      {
+        "category": "学术导向的单一性",
+        "description": "如果学生入校后发现自己并不热爱学术，可能会在浓厚的学术氛围中感到迷茫和格格不入。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "中国人民大学",
+          "similarity": "同类院校",
+          "key_difference": "人大是“大而强”，校友网络遍布政商界，社会影响力更广；社科大是“小而精”，更像是一个学术研究所的本科部，师生比极低，学术训练更扎实。"
+        },
+        {
+          "name": "北京大学",
+          "similarity": "同类院校",
+          "key_difference": "北大人文社科带有强烈的自由主义和理想主义色彩；社科大则更偏向“经世致用”和“国家智库”导向，学术研究与国家治理结合得更紧密。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.489648",
+    "updated_at": "2026-05-12T11:03:19.837130",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "大连医科大学中山学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "最适合：",
+    "radar": {},
+    "weighted_score": 2.59,
+    "one_sentence_recommend": "最适合："
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "大连医科大学中山学院（以下简称“大医中山”）是一所以医学教育为核心、依托大连医科大学优质资源支撑的民办独立学院。在当前的教育生态中，它扮演着“医学行业准入门票提供者”的关键角色。对于那些高考分数未能触及公办医学院校，但又坚定希望从事医疗行业的考生而言，该校提供了一个通过高昂学费换取专业准入权的通道。\n\n**核心竞争力分析：**\n学校的王牌在于其“医学血统”的延续性。临床医学、口腔医学等核心专业在师资配置、教学大纲乃至实习医院的选择上，均深度共享了大连医科大学的积淀。这种“母体背书”使得其毕业生在参加执业医师资格考试时，具备了不亚于部分公办二本院校的通过率。\n\n**潜在风险与挑战：**\n高昂的学费（每年 2.6 万至 3 万人民币）与医疗行业漫长的回报周期形成了鲜明对比。此外，作为民办院校，其在考研保研、高端科研平台准入以及政府资源分配上存在天然劣势。近期发生的“毕业生摆摊”舆情事件，不仅反映了校方在危机公关上的生涩，更深层次地揭示了在当前就业环境下，民办医学生面临的职业理想与现实生存之间的剧烈冲突。",
+      "one_sentence_recommend": "最适合：",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

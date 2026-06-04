@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.187665",
+    "updated_at": "2026-04-25T05:33:25.071384",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080412T_功能材料",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "材料界的\"六边形战士\"，踩着新能源和半导体的风口起飞，但硕士起步、实验为王，吃不了科研苦的人慎碰。",
+    "radar": {
+      "market_return": 3.3,
+      "industry_outlook": 4.4,
+      "future_adaptability": 3.8,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.72
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "功能材料的核心——实验设计、材料合成工艺、性能表征与调控——需要大量物理实验和\"试错\"经验，AI材料基因组技术虽能加速筛选，但无法替代实验室操作、工艺直觉和跨尺度问题解决能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "材料界的\"六边形战士\"，踩着新能源和半导体的风口起飞，但硕士起步、实验为王，吃不了科研苦的人慎碰。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "天津大学",
+        "大连理工大学",
+        "华南理工大学",
+        "兰州大学"
+      ],
+      "tier_A": [
+        "北京化工大学",
+        "东华大学",
+        "安徽大学",
+        "苏州大学",
+        "中国计量大学"
+      ],
+      "tier_B": [
+        "湖南大学",
+        "哈尔滨工业大学",
+        "西北工业大学",
+        "南京理工大学",
+        "北京科技大学",
+        "长春理工大学",
+        "中国石油大学（北京）"
+      ],
+      "tier_C_note": "长沙学院（应用型排名第1，国家一流本科）、重庆科技大学、苏州科技大学、兰州理工大学、华北水利水电大学、天津农学院、黑龙江工程学院等约30所普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

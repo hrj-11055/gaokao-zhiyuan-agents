@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.146973",
+    "updated_at": "2026-04-28T13:05:51.221160",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130405T_书法学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众艺术赛道，天花板极高但地板也极低，极度依赖个人造诣与名校资源，\"情怀饭\"属性浓厚，非真爱且无功底者慎入。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 2.2,
+      "future_adaptability": 2.8,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 2.56
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "书法创作的核心——笔法、章法、气韵的个性化表达，以及书法审美教育中的人文感知，目前 AI 书法生成虽已有进展但尚未替代人类书法家的创作个性与教学互动。但书法教学辅助、碑帖数字化等环节已被 AI 渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众艺术赛道，天花板极高但地板也极低，极度依赖个人造诣与名校资源，\"情怀饭\"属性浓厚，非真爱且无功底者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央美术学院",
+        "中国美术学院"
+      ],
+      "tier_A": [
+        "南京艺术学院",
+        "北京师范大学",
+        "首都师范大学",
+        "华东师范大学",
+        "浙江大学",
+        "四川大学"
+      ],
+      "tier_B": [
+        "南京师范大学",
+        "上海师范大学",
+        "天津美术学院",
+        "广州美术学院",
+        "鲁迅美术学院",
+        "湖北美术学院",
+        "西安美术学院",
+        "山东艺术学院",
+        "曲阜师范大学",
+        "广西艺术学院"
+      ],
+      "tier_C_note": "全国约 150+ 所开设书法学本科的普通本科院校，包括各地方师范院校（如河北师范大学、河南大学、湖南第一师范学院等）、地方综合大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

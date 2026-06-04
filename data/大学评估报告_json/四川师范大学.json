@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.682896",
+    "updated_at": "2026-05-09T19:20:52.352323",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "四川师范大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.635,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "西华师范大学",
+        "similarity": "同类院校",
+        "key_difference": "川师大胜在“成都”二字。无论是生源质量、起薪还是视野，川师大均领先一个身位。西华师大则在学术纯粹度和考研率上偶有闪光。"
+      },
+      {
+        "name": "重庆师范大学",
+        "similarity": "同类院校",
+        "key_difference": "两者实力旗鼓相当，竞争主要在成渝两地展开。川师大在文学、数学底蕴上略深，重师则在地理、特殊教育上更具特色。"
+      },
+      {
+        "name": "成都大学",
+        "similarity": "同类院校",
+        "key_difference": "川师大是“老牌名门”，在人文社科领域有代差优势；成都大学是“新晋贵族”，资金投入大，在工科和国际化上追赶极快。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "西华师范大学",
+          "similarity": "同类院校",
+          "key_difference": "川师大胜在“成都”二字。无论是生源质量、起薪还是视野，川师大均领先一个身位。西华师大则在学术纯粹度和考研率上偶有闪光。"
+        },
+        {
+          "name": "重庆师范大学",
+          "similarity": "同类院校",
+          "key_difference": "两者实力旗鼓相当，竞争主要在成渝两地展开。川师大在文学、数学底蕴上略深，重师则在地理、特殊教育上更具特色。"
+        },
+        {
+          "name": "成都大学",
+          "similarity": "同类院校",
+          "key_difference": "川师大是“老牌名门”，在人文社科领域有代差优势；成都大学是“新晋贵族”，资金投入大，在工科和国际化上追赶极快。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

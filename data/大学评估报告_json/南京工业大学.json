@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.792196",
+    "updated_at": "2026-05-08T09:34:27.122488",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京工业大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "如果你渴望在硬核工科领域获得顶尖的科研训练，或者希望在长三角制造业拥有稳固的职业起点，同时又非常看重校园环境和转专业自由度，南京工业大学是 211 边缘分段最具性价比的选择。",
+    "radar": {
+      "academic_capital": 4.5,
+      "graduate_value": 4.0,
+      "location_advantage": 4.2,
+      "globalization": 3.6,
+      "student_empowerment": 4.8,
+      "brand_asset": 4.0
+    },
+    "weighted_score": 4.18,
+    "one_sentence_recommend": "如果你渴望在硬核工科领域获得顶尖的科研训练，或者希望在长三角制造业拥有稳固的职业起点，同时又非常看重校园环境和转专业自由度，南京工业大学是 211 边缘分段最具性价比的选择。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 19800,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 6800,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南京工业大学是一所被“非双一流”身份掩盖了部分光芒的硬核工科名校。它在学术研究上的产出能力已经达到了中流 985 的水平，而在就业市场的认可度上，尤其是在大化工和建筑领域，它拥有不亚于顶级 211 的话语权。\n\n**核心优势**：\n1. **科研溢价**：学生在本科阶段就有机会接触到国家级实验室和院士团队。\n2. **政策红利**：转专业自由度极高，容错率大。\n3. **行业深度**：在特定行业（化工、材料、安全）拥有极高的就业护城河。\n\n**潜在挑战**：\n1. **身份标签**：在极少数对“双一流”有硬性要求的选调生或顶级投行招聘中，可能面临第一轮筛选压力。\n2. **学科偏向**：人文社科类专业相对较弱，资源向工科倾斜明显。",
+      "one_sentence_recommend": "如果你渴望在硬核工科领域获得顶尖的科研训练，或者希望在长三角制造业拥有稳固的职业起点，同时又非常看重校园环境和转专业自由度，南京工业大学是 211 边缘分段最具性价比的选择。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

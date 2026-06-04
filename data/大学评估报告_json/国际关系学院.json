@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.738204",
+    "updated_at": "2026-05-09T23:57:26.978609",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "国际关系学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.8,
+      "graduate_value": 4.8,
+      "location_advantage": 4.9,
+      "globalization": 3.5,
+      "student_empowerment": 2.8,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 4.26,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "“双非”身份的尴尬",
+        "description": "在唯“名头”论的部分私企招聘中，国关常因非 985/211 而被算法自动过滤。虽然其实力远超很多 211，但在商业化就业市场中确实存在“品牌错位”。"
+      },
+      {
+        "category": "学科单一风险",
+        "description": "如果学生在校期间发现自己对政治、外语或安全领域完全不感兴趣，想要跨行转型的成本会比综合性大学高得多。"
+      },
+      {
+        "category": "心理压力",
+        "description": "严谨的管理和高密度的政治学习，对于部分追求个性表达的学生来说，可能会产生一定的心理压抑感。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "-   **Identity（身份）**：国际关系学院是一所具有深厚红色基因、服务国家战略需求的“小而精”部属高校。它不是传统意义上的综合性大学，而更像是一所培养高级涉外人才和安全专家的“精英学院”。\n-   **Ace（王牌）**：其核心王牌是**极高的政治信任度**和**深厚的行业资源**。在外交、安全、机要等领域，国关的文凭就是一张含金量极高的“入场券”。\n-   **Vibe（氛围）**：校园氛围严谨、低调且务实。这里的学生普遍具有较高的政治觉悟和清晰的职业规划，考公和进体制是主流价值观。\n-   **Risk（风险）**：最大的风险在于其“双非”身份在纯商业市场的认知度不足，以及小校园环境带来的生活体验局限。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

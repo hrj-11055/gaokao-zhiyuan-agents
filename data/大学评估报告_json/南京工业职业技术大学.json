@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.474899",
+    "updated_at": "2026-05-08T02:15:57.718083",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京工业职业技术大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 4.2,
+      "location_advantage": 4.5,
+      "globalization": 3.8,
+      "student_empowerment": 3.4,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 3.99,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南京工业职业技术大学（以下简称“南工职大”）在中国高等教育版图中占据着极其特殊的“生态位”。作为全国首家公办职业本科试点院校，它不仅是一所学校，更是中国职业教育改革的“试验田”与“风向标”。其核心竞争力在于打破了传统职业教育“低层次”的刻板印象，通过“本科层次+职业技能”的双重赋能，在高端制造业、智能制造领域构建了极高的行业壁垒。\n\n从学术维度看，虽然该校在传统SCI论文发表和博士点建设上与研究型大学有差距，但在“双高计划”及国家级教学成果奖上的表现堪称惊艳。其教学逻辑完全围绕“解决复杂工程问题”展开，这种极度务实的导向使得其毕业生在就业市场上展现出极强的“即战力”。\n\n在品牌资产方面，南工职大拥有“职教界清华”的美誉。这种品牌溢价不仅来源于其悠久的办学历史（由黄炎培先生创办），更来源于其在职业本科排名中长期稳居全国前三（多项排名第一）的统治地位。对于那些分数处于普通本科线上、不愿在平庸二本中虚度光阴、渴望掌握硬核技术的考生而言，南工职大提供了一条通往高端制造业工程师的“黄金赛道”。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

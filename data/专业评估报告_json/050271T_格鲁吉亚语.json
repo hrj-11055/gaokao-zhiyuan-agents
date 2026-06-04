@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.197438",
+    "updated_at": "2026-04-24T09:27:26.924227",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "050271T_格鲁吉亚语",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "2025年北外独家的\"一带一路\"战略语种，全国唯一专业点，极度稀缺但应用面极窄，适合有外交理想且耐得住寂寞的冒险者。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.5,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.97
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "语言能力本身为工具型技能，但叠加区域国别知识后可转化为跨文化沟通、商务谈判、外交协调等中高附加值角色。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "2025年北外独家的\"一带一路\"战略语种，全国唯一专业点，极度稀缺但应用面极窄，适合有外交理想且耐得住寂寞的冒险者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（全国唯一开设院校，外国语言文学A+学科，教育部直属\"双一流\"高校）"
+      ],
+      "tier_A": [
+        "暂无（该专业仅1所院校开设）"
+      ],
+      "tier_B": [
+        "上海外国语大学 [待确认是否已开设]",
+        "天津外国语大学 [待确认是否已开设]"
+      ],
+      "tier_C_note": "暂无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

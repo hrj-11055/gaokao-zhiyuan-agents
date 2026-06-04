@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.159070",
+    "updated_at": "2026-04-27T05:02:31.195522",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "101001",
+    "name": "医学检验技术",
+    "category": "医学",
+    "recommendation_level": "yellow",
+    "summary": "医院的\"幕后侦探\"，就业稳、门槛适中，但薪酬天花板不高，想拿高薪得靠转行或深造。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 2.7,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 3.6
+    },
+    "weighted_score": 3.18
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "常规血液分析、尿液分析、形态学初筛等标准化检验流程正在被自动化设备和 AI 图像识别替代。AI 在病理切片分析、微生物鉴定等领域已有成熟应用。但复杂检验判断、质量控制、特殊项目手工操作（如骨髓涂片、微生物培养鉴定）短期内仍依赖人工。整体而言，AI 将压缩初中级检验师的常规操作岗位需求。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "医院的\"幕后侦探\"，就业稳、门槛适中，但薪酬天花板不高，想拿高薪得靠转行或深造。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "重庆医科大学",
+        "上海交通大学医学院",
+        "北京大学医学部"
+      ],
+      "tier_A": [
+        "四川大学华西医学中心",
+        "华中科技大学同济医学院",
+        "中南大学湘雅医学院",
+        "中山大学中山医学院",
+        "首都医科大学",
+        "南方医科大学"
+      ],
+      "tier_B": [
+        "南京医科大学",
+        "哈尔滨医科大学",
+        "中国医科大学",
+        "天津医科大学",
+        "广州医科大学",
+        "温州医科大学",
+        "徐州医科大学",
+        "安徽医科大学"
+      ],
+      "tier_C_note": "各省属医学院校及地方综合性大学的医学检验技术专业，如各省中医药大学、各地方医学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

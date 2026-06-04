@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.990927",
+    "updated_at": "2026-04-28T01:38:06.392805",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120801",
+    "name": "电子商务",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "\"踩在万亿赛道上却难逃'万金油'标签，人人都能做电商，但做到头部的寥寥无几——拼的是数据嗅觉和运营硬功。\"",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "基础电商运营（商品上架、关键词优化、客服应答、基础数据分析）已被 AI 大量替代。AI 选品、AI 文案生成、AI 客服已经在大规模应用。仅有高端策略规划、供应链整合、品牌创意等方向抗风险能力较强。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"踩在万亿赛道上却难逃'万金油'标签，人人都能做电商，但做到头部的寥寥无几——拼的是数据嗅觉和运营硬功。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西安交通大学",
+        "武汉大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "对外经济贸易大学",
+        "杭州电子科技大学",
+        "华南理工大学",
+        "厦门大学",
+        "中山大学",
+        "南开大学",
+        "上海财经大学"
+      ],
+      "tier_B": [
+        "浙江工商大学",
+        "北京邮电大学",
+        "南京审计大学",
+        "天津财经大学",
+        "广东外语外贸大学",
+        "重庆大学",
+        "中南财经政法大学",
+        "西南财经大学",
+        "上海对外经贸大学",
+        "华侨大学"
+      ],
+      "tier_C_note": "各省财经类院校、理工类综合院校中开设电子商务专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

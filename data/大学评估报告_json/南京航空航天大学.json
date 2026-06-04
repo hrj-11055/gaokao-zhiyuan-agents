@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.661982",
+    "updated_at": "2026-05-08T09:30:02.243662",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京航空航天大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.7,
+      "graduate_value": 4.8,
+      "location_advantage": 4.5,
+      "globalization": 3.8,
+      "student_empowerment": 4.2,
+      "brand_asset": 4.6
+    },
+    "weighted_score": 4.575,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Bilingual",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 11800,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 9500,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "江宁开发",
+      "region": "长三角",
+      "industrial_clusters": [
+        "晨光集团"
+      ],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南京航空航天大学是一所典型的“行业领军型”大学。它在特定的航空航天、民航领域拥有近乎垄断的学术资源和就业渠道。对于那些志在投身大国重器研制、希望在国防工业系统稳健发展的学生来说，南航的价值甚至超过部分排名更高的综合性 985 大学。\n\n**核心优势**：\n-   **行业统治力**：在直升机、无人机、航空发动机等领域具有不可替代性。\n-   **就业稳定性**：国防系统和民航系统的“绿色通道”为毕业生提供了极高的职业安全感。\n-   **生活品质**：卓越的食堂和不断升级的硬件设施，提供了极佳的就学体验。\n\n**潜在风险**：\n-   **国际流动性受限**：受外部环境影响，部分涉密专业的学生在申请赴美签证时面临极高拒签率。\n-   **学科偏重**：文科及基础理科虽然有特色，但在资源分配上显然无法与核心工科相比。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "航空报国",
+        "硬核工科",
+        "南航大饭店",
+        "直升机之乡",
+        "唯实创新",
+        "大飞机梦",
+        "长空破浪",
+        "低空经济先锋"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

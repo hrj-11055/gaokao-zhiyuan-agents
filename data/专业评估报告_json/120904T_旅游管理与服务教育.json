@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.200407",
+    "updated_at": "2026-04-27T23:23:20.725612",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120904T_旅游管理与服务教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "旅游+教育的跨界特设专业，听起来\"万金油\"实则方向模糊，就业对口率偏低，需靠个人竞争力突围。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.8,
+      "career_path": 2.6,
+      "education_resources": 2.5,
+      "discipline_core": 2.2
+    },
+    "weighted_score": 2.7
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–5,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "10-12%",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "旅游线路规划、酒店客服、基础导游讲解、课程内容生成等核心工作正被AI工具逐步替代；但面对面的旅游体验服务和教育互动仍具不可替代性，因此非\"极高风险\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "旅游+教育的跨界特设专业，听起来\"万金油\"实则方向模糊，就业对口率偏低，需靠个人竞争力突围。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中山大学",
+        "南开大学"
+      ],
+      "tier_A": [
+        "云南大学",
+        "厦门大学",
+        "复旦大学",
+        "北京第二外国语学院",
+        "陕西师范大学"
+      ],
+      "tier_B": [
+        "华侨大学",
+        "湖南师范大学",
+        "华南师范大学",
+        "上海师范大学",
+        "桂林旅游学院",
+        "浙江旅游职业学院（本科层次）"
+      ],
+      "tier_C_note": "各地方师范学院、部分地方综合大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

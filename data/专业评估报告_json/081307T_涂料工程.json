@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.899040",
+    "updated_at": "2026-04-25T16:31:41.925148",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081307T_涂料工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国仅3校开设的超窄专业，对口就业不愁但路极窄，环保转型带来新机遇，传统溶剂型领域正在萎缩，选前想清楚\"一辈子做涂料\"能否接受。",
+    "radar": {
+      "market_return": 3.3,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.07
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "涂料配方设计依赖大量实验验证和经验积累，AI可辅助配方优化和性能预测，但实验室验证、涂装工艺调试、客户现场技术支持等环节需要人工操作和经验判断，短期内不易被完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅3校开设的超窄专业，对口就业不愁但路极窄，环保转型带来新机遇，传统溶剂型领域正在萎缩，选前想清楚\"一辈子做涂料\"能否接受。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业尚无985/211高校开设，无学科评估A类）"
+      ],
+      "tier_A": [
+        "上海工程技术大学（全国首家涂料工程本科，2018年获批，校企合作资源最丰富，地处上海涂料产业核心区）"
+      ],
+      "tier_B": [
+        "长春工业大学（2021年获批，拥有国家级联合工程实验室，校友会2025排名研究型第一）",
+        "江西科技师范大学（应用型培养特色）"
+      ],
+      "tier_C_note": "目前无其他院校开设",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

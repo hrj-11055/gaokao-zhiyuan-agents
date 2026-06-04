@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.108004",
+    "updated_at": "2026-04-25T06:51:13.292861",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080608TK_智慧能源工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在\"双碳\"风口上的超级交叉学科，吃着新能源最大红利，但2022年才设立、全国仅4校开设——敢赌先发优势，就得承受\"教材还在写、岗位还没定型\"的阵痛。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.7,
+      "future_adaptability": 4.2,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.87
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "该专业本身就是\"AI+能源\"的交叉产物，核心技能包括能源系统建模、物理约束下的优化设计、现场设备调试——AI能辅助数据分析，但无法替代对复杂能源系统的工程判断和物理直觉。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在\"双碳\"风口上的超级交叉学科，吃着新能源最大红利，但2022年才设立、全国仅4校开设——敢赌先发优势，就得承受\"教材还在写、岗位还没定型\"的阵痛。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海交通大学（国家电投联合学院，产学研深度绑定，保研率高）"
+      ],
+      "tier_A": [
+        "北京交通大学（电气工程底蕴深厚，智能电网方向强）",
+        "浙江大学（能源与环境系统工程智慧能源班，非独立专业但实力顶尖）"
+      ],
+      "tier_B": [
+        "武汉大学（电气与自动化学院，水利电力传统优势）",
+        "华北水利水电大学（水利水电特色鲜明）"
+      ],
+      "tier_C_note": "长江大学、黄淮学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

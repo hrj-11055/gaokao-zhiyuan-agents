@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.109672",
+    "updated_at": "2026-04-25T13:59:29.391233",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080916T_虚拟现实技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "元宇宙时代的\"入场券\"，技术前沿但行业尚处爬坡期，需名校+全栈能力双重加持，普通院校慎选。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.2,
+      "future_adaptability": 4.0,
+      "career_path": 2.8,
+      "education_resources": 2.8,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.53
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 可自动生成部分 3D 模型、贴图素材和基础场景（如 AI 生成虚拟环境），但涉及传感器交互设计、实时渲染优化、人机交互体验等核心环节仍需人类工程师。AI 对初级内容制作岗位冲击较大，对高级系统架构师影响较小。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "元宇宙时代的\"入场券\"，技术前沿但行业尚处爬坡期，需名校+全栈能力双重加持，普通院校慎选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京航空航天大学"
+      ],
+      "tier_A": [
+        "江西财经大学",
+        "华东交通大学"
+      ],
+      "tier_B": [
+        "江西理工大学",
+        "沈阳理工大学",
+        "安庆师范大学",
+        "南京信息工程大学",
+        "浙江传媒学院"
+      ],
+      "tier_C_note": "湖北理工学院、山西传媒学院、吉林动画学院、江西科技师范大学、南阳理工学院、成都东软学院、青岛电影学院、大连东软信息学院、江西科技学院、三亚学院、重庆移通学院、泰山科技学院、郑州工程技术学院、青岛农业大学海都学院、烟台科技学院、大连理工大学城市学院、重庆对外经贸学院 等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

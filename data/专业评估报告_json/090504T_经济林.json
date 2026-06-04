@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.151498",
+    "updated_at": "2026-04-26T12:55:49.769260",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090504T_经济林",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众冷门中的\"绿色金矿\"，政策红利强劲但就业面窄，靠碳汇交易翻身还需时间，适合真正热爱农林的学生。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.2,
+      "career_path": 2.6,
+      "education_resources": 2.4,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.11
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "经济林核心技能涉及户外实地调查、树种嫁接操作、田间试验管理等高度依赖实地经验和动手能力的环节，AI难以替代。但数据分析、病虫害图像识别等环节正在被AI渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众冷门中的\"绿色金矿\"，政策红利强劲但就业面窄，靠碳汇交易翻身还需时间，适合真正热爱农林的学生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京林业大学（林学A+，211/双一流，经济林软科第1）"
+      ],
+      "tier_A": [
+        "中南林业科技大学（经济林A+，全国首创该专业，师资最强26名博士专任教师）"
+      ],
+      "tier_B": [
+        "河南农业大学",
+        "西南林业大学"
+      ],
+      "tier_C_note": "河北农业大学、西北农林科技大学（985但林学非其王牌方向）等少量院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

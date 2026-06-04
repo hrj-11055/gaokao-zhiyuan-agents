@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.187216",
+    "updated_at": "2026-04-23T23:37:04.434498",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050258",
+    "name": "乌兹别克语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极度稀缺的\"一带一路\"冷门语种，全国年毕业生不足百人，供需严重失衡——但赛道极窄，不进央企/体制就得另谋出路。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 2.8,
+      "career_path": 2.0,
+      "education_resources": 2.5,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 翻译对通用语种（英日韩）冲击巨大（麦肯锡预测 2030 年全球 30% 外语相关工作将被 AI 部分替代），但乌兹别克语作为超低资源语种，当前 AI 翻译质量极差，短期内无法替代专业翻译。然而，随着大模型多语种能力扩展，中长期风险不可忽视。跨文化谈判、现场协调等\"人在场\"场景 AI 无法替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度稀缺的\"一带一路\"冷门语种，全国年毕业生不足百人，供需严重失衡——但赛道极窄，不进央企/体制就得另谋出路。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（全国首个开设，A+ 外语学科，外交部人才摇篮）"
+      ],
+      "tier_A": [
+        "上海外国语大学（A+ 外语学科，国际资源丰富）"
+      ],
+      "tier_B": [
+        "西安外国语大学（西北区位优势，对接中亚前沿）"
+      ],
+      "tier_C_note": "暂无其他开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

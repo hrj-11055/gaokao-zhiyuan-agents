@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.101224",
+    "updated_at": "2026-04-26T13:05:01.861497",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090601",
+    "name": "水产养殖学",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "\"养鱼养虾也能搞出高科技，行业刚需但地域偏、起步慢，耐得住寂寞的人才能熬出头。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "水产养殖的核心工作涉及现场环境判断（水质监测、病害识别、养殖操作），需要结合生物学知识和实地经验的综合判断力，AI可辅助数据分析和自动投喂，但难以替代现场决策和操作。智慧渔业反而增加了对\"懂养殖+懂数据\"复合型人才的需求。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"养鱼养虾也能搞出高科技，行业刚需但地域偏、起步慢，耐得住寂寞的人才能熬出头。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国海洋大学（A+",
+        "双一流）",
+        "上海海洋大学（A+",
+        "双一流）"
+      ],
+      "tier_A": [
+        "华中农业大学（B+）",
+        "大连海洋大学（B）",
+        "宁波大学（B）",
+        "南京农业大学（B-）",
+        "广东海洋大学（B-）"
+      ],
+      "tier_B": [
+        "集美大学（C+）",
+        "浙江海洋大学（C+）",
+        "西南大学（荣昌校区，C）",
+        "海南大学（C-）",
+        "天津农学院（C）",
+        "湖南农业大学（C-）"
+      ],
+      "tier_C_note": "四川农业大学、华南农业大学、福建农林大学、青岛农业大学、烟台大学、江苏海洋大学、浙江万里学院、湖南文理学院等约30余所普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

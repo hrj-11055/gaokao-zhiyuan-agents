@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.984100",
+    "updated_at": "2026-04-27T01:02:37.846715",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100205TK_精神医学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "严重紧缺的\"蓝海科室\"，就业确定性极高，但成长路径漫长——5年本科+3年规培+执医考试是最低门槛，耐不住寂寞者慎入。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.6,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.86
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "精神疾病的诊断高度依赖医患面谈、观察和长期关系建立，涉及复杂情感判断和人际互动，AI 可辅助筛查和数据分析但难以替代人类医生的临床判断和共情能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "严重紧缺的\"蓝海科室\"，就业确定性极高，但成长路径漫长——5年本科+3年规培+执医考试是最低门槛，耐不住寂寞者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中南大学（湘雅医学院）"
+      ],
+      "tier_A": [
+        "南京医科大学",
+        "中国医科大学",
+        "广州医科大学",
+        "首都医科大学",
+        "南方医科大学"
+      ],
+      "tier_B": [
+        "重庆医科大学",
+        "温州医科大学",
+        "河北医科大学",
+        "安徽医科大学",
+        "哈尔滨医科大学",
+        "山西医科大学",
+        "大连医科大学"
+      ],
+      "tier_C_note": "齐齐哈尔医学院、济宁医学院、徐州医科大学、新乡医学院、蚌埠医科大学、汕头大学、广西医科大学等全国约 38 所开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

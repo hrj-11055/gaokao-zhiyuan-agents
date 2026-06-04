@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.908913",
+    "updated_at": "2026-05-09T18:36:00.065068",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖南科技学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.55,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "湖南人文科技学院（娄底）",
+        "similarity": "同类院校",
+        "key_difference": "两校同为地方性应用型本科。湖南科技学院在软科排名（416 vs 454）上略胜一筹，尤其在国家级一流专业的数量和质量上表现更优。永州的文化底蕴（理学、书法）为该校人文专业提供了更好的软实力支撑。"
+      },
+      {
+        "name": "湖南理工学院（岳阳）",
+        "similarity": "同类院校",
+        "key_difference": "湖南理工学院凭借靠近长江和长沙的区位优势，在理工类学科建设上领先；而湖南科技学院则在师范教育和对粤港澳大湾区的产业对接上展现出差异化竞争力。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "- **Identity（核心定位）**：湖南省属全日制普通本科院校，前身为零陵师范高等专科学校，是湘南地区重要的师范与应用型人才培养基地。\n- **Ace（王牌优势）**：英语、计算机、电子信息工程、日语 4 个专业入选国家级一流本科专业建设点。在湘南地区，其师范类毕业生拥有极高的行业准入认可度。\n- **Vibe（文化特质）**：务实、内敛、带有浓厚的“考研/考编”氛围。校园受永州周敦颐“理学文化”熏陶，学术压力适中，生活节奏相对缓慢。\n- **Risk（潜在风险）**：地理位置位于非省会城市（永州），对一线城市高层次人才的吸引力有限；硕士学位授权点虽在积极筹建，但目前仍以本科教育为主，学术天花板效应客观存在。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "湖南人文科技学院（娄底）",
+          "similarity": "同类院校",
+          "key_difference": "两校同为地方性应用型本科。湖南科技学院在软科排名（416 vs 454）上略胜一筹，尤其在国家级一流专业的数量和质量上表现更优。永州的文化底蕴（理学、书法）为该校人文专业提供了更好的软实力支撑。"
+        },
+        {
+          "name": "湖南理工学院（岳阳）",
+          "similarity": "同类院校",
+          "key_difference": "湖南理工学院凭借靠近长江和长沙的区位优势，在理工类学科建设上领先；而湖南科技学院则在师范教育和对粤港澳大湾区的产业对接上展现出差异化竞争力。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

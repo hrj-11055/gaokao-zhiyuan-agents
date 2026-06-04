@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.162400",
+    "updated_at": "2026-04-23T19:32:44.932456",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050214",
+    "name": "柬埔寨语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "小众中的小众——\"一带一路\"东风下的赛道利基玩家，岗位极稀缺但竞争也极低，只适合真正对东南亚有热情的人。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.5,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.01
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 翻译技术已覆盖主流语种并向小语种扩展。2024 年大语言模型在翻译行业应用渗透率达 97.1%（中国翻译协会数据），常规笔译、文件翻译场景被 AI 大量替代。但高端同声传译、外交谈判口译、跨文化沟通等场景仍依赖人类；且柬埔寨语属南亚语系低资源语言，AI 训练数据相对不足，替代速度可能慢于英语等主流语种。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众中的小众——\"一带一路\"东风下的赛道利基玩家，岗位极稀缺但竞争也极低，只适合真正对东南亚有热情的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（1961 年创建，全国最早，外交部人才主要输出地）",
+        "广东外语外贸大学（A+，广东省一流专业，招生规模最大）"
+      ],
+      "tier_A": [
+        "上海外国语大学（2022 年新设，依托外国语言文学 A+ 学科）",
+        "云南民族大学（东南亚语种传统强校）",
+        "云南大学"
+      ],
+      "tier_B": [
+        "广西民族大学（东盟语种特色，地域优势）",
+        "天津外国语大学",
+        "云南师范大学"
+      ],
+      "tier_C_note": "红河学院、广西外国语学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

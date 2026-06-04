@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.129666",
+    "updated_at": "2026-04-21T02:28:16.495525",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030611TK_犯罪学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "公务员铁饭碗的\"窄门中的窄门\"，入警率近100%但招生极严，考上就是铁饭碗，考不上就什么都不是。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.8,
+      "discipline_core": 0.8
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~98.6%",
+      "alignment_rate": "~90%",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "犯罪学核心涉及犯罪原因分析、犯罪心理评估、刑事政策制定等需要人文理解和价值判断的复杂决策，AI可辅助犯罪预测建模和数据挖掘，但无法替代人类对犯罪动机的深层理解、审讯中的微妙判断以及矫治中的情感干预。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "公务员铁饭碗的\"窄门中的窄门\"，入警率近100%但招生极严，考上就是铁饭碗，考不上就什么都不是。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民公安大学"
+      ],
+      "tier_A": [
+        "中国刑事警察学院",
+        "中国人民警察大学"
+      ],
+      "tier_B": [
+        "广西警察学院",
+        "辽宁警察学院",
+        "广东警官学院",
+        "山东警察学院"
+      ],
+      "tier_C_note": "湖南警察学院、四川警察学院、云南警官学院等各省属公安院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

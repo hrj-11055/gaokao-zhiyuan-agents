@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.082871",
+    "updated_at": "2026-04-25T10:06:38.974077",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080710T_集成电路设计与集成系统",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "\"造芯时代的硬核王牌，国家战略全力护航，薪资碾压八成工科，但门槛高到本硕连读才算'入门'，普通人慎碰。\"",
+    "radar": {
+      "market_return": 4.7,
+      "industry_outlook": 4.8,
+      "future_adaptability": 4.5,
+      "career_path": 3.8,
+      "education_resources": 4.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 4.52
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "15,000–25,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "芯片设计涉及物理层电路实现、工艺约束优化、流片验证等高度依赖人类工程师经验和创造力的环节，EDA 工具虽然借助 AI 辅助（如 AI 驱动的布局布线），但核心架构设计、模拟电路调优等不可被 AI 替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"造芯时代的硬核王牌，国家战略全力护航，薪资碾压八成工科，但门槛高到本硕连读才算'入门'，普通人慎碰。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "北京大学",
+        "西安电子科技大学",
+        "电子科技大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "东南大学",
+        "华中科技大学",
+        "北京航空航天大学",
+        "南京大学",
+        "浙江大学",
+        "上海交通大学",
+        "中国科学技术大学",
+        "大连理工大学",
+        "华南理工大学",
+        "西北工业大学",
+        "天津大学",
+        "北京邮电大学"
+      ],
+      "tier_B": [
+        "杭州电子科技大学",
+        "南京邮电大学",
+        "哈尔滨工业大学",
+        "厦门大学",
+        "合肥工业大学",
+        "吉林大学",
+        "重庆大学",
+        "西安邮电大学",
+        "湖南大学",
+        "福州大学",
+        "山东大学"
+      ],
+      "tier_C_note": "中北大学、山东科技大学、天津理工大学、济南大学、青岛大学、湖北工业大学、齐鲁工业大学、安徽理工大学，以及其他开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

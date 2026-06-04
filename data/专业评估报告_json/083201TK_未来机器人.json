@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.146141",
+    "updated_at": "2026-04-26T01:34:22.393638",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083201TK_未来机器人",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "极少数院校开设的\"精英试验田\"，背靠国家战略与万亿赛道，但培养方案仍在迭代中，适合顶级理工学霸\"押注未来\"。",
+    "radar": {
+      "market_return": 4.4,
+      "industry_outlook": 4.8,
+      "future_adaptability": 4.5,
+      "career_path": 3.6,
+      "education_resources": 4.2,
+      "discipline_core": 4.3
+    },
+    "weighted_score": 4.42
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "机器人专业本身是AI技术的\"使用者\"和\"载体创造者\"，核心技能包括运动控制算法、传感器融合、嵌入式系统设计、机械结构创新等，均需要物理世界的工程实现能力，AI无法替代实体机器人的设计与集成。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极少数院校开设的\"精英试验田\"，背靠国家战略与万亿赛道，但培养方案仍在迭代中，适合顶级理工学霸\"押注未来\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东南大学（未来机器人专业首创院校，A+机械工程，全国首批未来技术学院）",
+        "哈尔滨工业大学（A+机械工程，机器人技术与系统国家重点实验室）",
+        "清华大学（A+机械工程）"
+      ],
+      "tier_A": [
+        "上海交通大学（A+机械工程）",
+        "华中科技大学（A+机械工程）",
+        "北京航空航天大学（A+仪器科学，机器人方向强势）",
+        "浙江大学（A+机械工程）",
+        "北京理工大学（A-机械工程）"
+      ],
+      "tier_B": [
+        "天津大学（A机械工程）",
+        "西安交通大学（A机械工程）",
+        "大连理工大学（A机械工程）",
+        "华南理工大学（A-机械工程）",
+        "电子科技大学（A+电子科学，机器人智能方向）",
+        "南京理工大学（A-机械工程）"
+      ],
+      "tier_C_note": "武汉理工大学、广东工业大学（B+控制科学，粤港机器人学院）、山东科技大学、西南交通大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

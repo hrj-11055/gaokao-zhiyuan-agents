@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.012559",
+    "updated_at": "2026-04-25T05:30:15.738590",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080411T_焊接技术与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "高端制造的\"钢铁裁缝\"，壁垒高、越老越香，但头部资源极度集中，非名校需靠实力突围。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.5,
+      "education_resources": 3.3,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.7
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI和机器人焊接主要替代的是重复性、标准化的手工焊接操作，而高级焊接工程师的核心价值在于复杂工艺设计、非标结构焊接方案制定、缺陷分析与质量体系构建——这些需要\"工艺诀窍\"和临场决断能力的岗位难以被AI完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "高端制造的\"钢铁裁缝\"，壁垒高、越老越香，但头部资源极度集中，非名校需靠实力突围。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工业大学（含威海校区）"
+      ],
+      "tier_A": [
+        "北京工业大学",
+        "江苏科技大学",
+        "南昌航空大学",
+        "兰州理工大学",
+        "大连交通大学"
+      ],
+      "tier_B": [
+        "西安石油大学",
+        "沈阳工业大学",
+        "安徽工业大学",
+        "西南石油大学",
+        "南京工业大学",
+        "重庆理工大学",
+        "天津大学（材料加工方向）"
+      ],
+      "tier_C_note": "辽宁工业大学、黑龙江科技大学、太原科技大学、长春工程学院、广东石油化工学院、佳木斯大学、营口理工学院、山西科技学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

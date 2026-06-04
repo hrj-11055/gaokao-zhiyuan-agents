@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.485664",
+    "updated_at": "2026-05-11T15:21:28.793042",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "聊城大学东昌学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "对于那些分数在一段线附近、希望通过考研改变命运、或者想在山东制造业领域深耕的务实型考生，东昌学院是目前性价比极高的“潜力股”。",
+    "radar": {
+      "academic_capital": 2.0,
+      "graduate_value": 2.5,
+      "location_advantage": 2.3,
+      "globalization": 1.5,
+      "student_empowerment": 3.0,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.28,
+    "one_sentence_recommend": "对于那些分数在一段线附近、希望通过考研改变命运、或者想在山东制造业领域深耕的务实型考生，东昌学院是目前性价比极高的“潜力股”。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "聊城大学",
+        "similarity": "同类院校",
+        "key_difference": "东昌学院在科研平台和保研资格上完全处于劣势，但在宿舍硬件和对二段线考生的包容度上更具优势。"
+      },
+      {
+        "name": "山东石油化工学院",
+        "similarity": "同类院校",
+        "key_difference": "两者均属于转设成功的理工类高校，东昌学院在地理位置上更靠近中原腹地，生源结构更偏向鲁西和豫北。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "聊城大学东昌学院是一所正处于“蝶变”前夜的应用型本科高校。其核心竞争力在于：**极高的考研性价比、与地方产业深度绑定的工科专业、以及新校区带来的优质生活体验。** 随着转设为“聊城理工学院”的进程推进，该校正摆脱独立学院的附属地位，向一所独立的、以工科为主的省属应用型大学迈进。",
+      "one_sentence_recommend": "对于那些分数在一段线附近、希望通过考研改变命运、或者想在山东制造业领域深耕的务实型考生，东昌学院是目前性价比极高的“潜力股”。",
+      "horizontal_comparison": [
+        {
+          "name": "聊城大学",
+          "similarity": "同类院校",
+          "key_difference": "东昌学院在科研平台和保研资格上完全处于劣势，但在宿舍硬件和对二段线考生的包容度上更具优势。"
+        },
+        {
+          "name": "山东石油化工学院",
+          "similarity": "同类院校",
+          "key_difference": "两者均属于转设成功的理工类高校，东昌学院在地理位置上更靠近中原腹地，生源结构更偏向鲁西和豫北。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "考研工厂",
+        "理工转设",
+        "鲁西制造业摇篮",
+        "新校区天花板",
+        "务实主义",
+        "考公大户"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

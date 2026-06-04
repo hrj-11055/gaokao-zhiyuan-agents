@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.866768",
+    "updated_at": "2026-05-12T12:03:05.363011",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "厦门理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "“如果你目标明确地想在闽南地区从事工程技术或实务管理工作，且分数够不上 211，厦门理工是你的最优解。”",
+    "radar": {},
+    "weighted_score": 3.68,
+    "one_sentence_recommend": "“如果你目标明确地想在闽南地区从事工程技术或实务管理工作，且分数够不上 211，厦门理工是你的最优解。”"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "集美大学",
+        "similarity": "同类院校",
+        "key_difference": "集美大学拥有更深的历史底蕴和博士点，综合排名更高，在航海、水产等领域有垄断地位。但厦门理工在"
+      },
+      {
+        "name": "福建理工大学",
+        "similarity": "同类院校",
+        "key_difference": "两者同为应用型转型标杆。福建理工（原福建工程学院）在建筑、土木领域底蕴深厚；而厦门理工则在"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "厦门理工学院（XMUT）是福建省乃至全国应用型本科转型的典型样本。其核心竞争力并非源于高深的学术理论研究，而在于其与厦门市“4+4+6”现代产业体系的深度共生关系。学校在机械、自动化、电子信息等传统工科领域拥有极强的行业渗透力，同时在数字创意、软件工程等新兴领域快速扩张。\n\n**核心优势（Ace）**：极高的“就业性价比”。对于分数线在省控线上方一定区间的考生，XMUT 提供了进入厦门高新企业（如戴尔、联芯、三安光电）的最短路径。\n**核心风险（Risk）**：更名“大学”的进程虽已进入关键期，但学科评估的深度不足（缺乏博士点）仍是其长期发展的短板。此外，随着厦门生活成本的上升，毕业生留厦的经济压力也在增大。",
+      "one_sentence_recommend": "“如果你目标明确地想在闽南地区从事工程技术或实务管理工作，且分数够不上 211，厦门理工是你的最优解。”",
+      "horizontal_comparison": [
+        {
+          "name": "集美大学",
+          "similarity": "同类院校",
+          "key_difference": "集美大学拥有更深的历史底蕴和博士点，综合排名更高，在航海、水产等领域有垄断地位。但厦门理工在"
+        },
+        {
+          "name": "福建理工大学",
+          "similarity": "同类院校",
+          "key_difference": "两者同为应用型转型标杆。福建理工（原福建工程学院）在建筑、土木领域底蕴深厚；而厦门理工则在"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

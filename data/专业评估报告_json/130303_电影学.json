@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.097195",
+    "updated_at": "2026-04-28T12:20:02.666016",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130303",
+    "name": "电影学",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "光环璀璨但极度内卷的\"造梦工程\"，顶尖院校毕业生通吃行业资源，普通人可能沦为\"影视民工\"，AI 正加速洗牌低端岗位。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.5,
+      "career_path": 2.6,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.94
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–9,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 已在分镜绘制、口型同步、虚拟场景生成、剧本辅助分析等环节大量应用。光线传媒王长田预计 AI 将提升 30% 制作效率、降低 25% 成本。群演、基础特效师、初级编剧等岗位面临直接替代风险。但核心创意决策、情感表达、人文洞察等仍不可替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "光环璀璨但极度内卷的\"造梦工程\"，顶尖院校毕业生通吃行业资源，普通人可能沦为\"影视民工\"，AI 正加速洗牌低端岗位。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京电影学院",
+        "中央戏剧学院",
+        "中国传媒大学",
+        "北京师范大学",
+        "上海戏剧学院"
+      ],
+      "tier_A": [
+        "中国戏曲学院",
+        "上海大学",
+        "南京艺术学院",
+        "中国美术学院",
+        "厦门大学",
+        "北京大学（艺术学院电影方向）"
+      ],
+      "tier_B": [
+        "山东艺术学院",
+        "山西师范大学",
+        "南京师范大学",
+        "重庆大学",
+        "西南大学",
+        "武汉大学",
+        "复旦大学",
+        "南京传媒学院",
+        "四川传媒学院"
+      ],
+      "tier_C_note": "中南财经政法大学、山西传媒学院、首都师范大学科德学院、安徽艺术学院、西北大学现代学院、青岛电影学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

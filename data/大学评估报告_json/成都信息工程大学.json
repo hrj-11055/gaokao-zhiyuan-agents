@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.602667",
+    "updated_at": "2026-05-09T19:04:48.297547",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "成都信息工程大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.8,
+      "graduate_value": 4.2,
+      "location_advantage": 4.5,
+      "globalization": 3.0,
+      "student_empowerment": 3.5,
+      "brand_asset": 4.0
+    },
+    "weighted_score": 3.96,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "成都理工大学",
+        "similarity": "同类院校",
+        "key_difference": "成都理工是“双一流”，名气更大，地质、石油专业更强；但成信大在"
+      },
+      {
+        "name": "南京信息工程大学",
+        "similarity": "同类院校",
+        "key_difference": "南信大是“双一流”，大气科学全国第一；成信大在气象领域稍逊，但在"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：一所以气象为基石、信息技术为羽翼的行业特色理工大学。\n*   **Ace（王牌优势）**：大气科学的行业垄断地位，以及电子信息类专业在西南地区的极高性价比。\n*   **Vibe（文化特质）**：极度务实，甚至带有一定的“工厂感”。学生以技术立身，不尚空谈。\n*   **Risk（潜在风险）**：非“双一流”身份在某些顶级金融机构或选调生招录中可能受限；2025 年的投标违规事件反映出行政管理上的瑕疵。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "成都理工大学",
+          "similarity": "同类院校",
+          "key_difference": "成都理工是“双一流”，名气更大，地质、石油专业更强；但成信大在"
+        },
+        {
+          "name": "南京信息工程大学",
+          "similarity": "同类院校",
+          "key_difference": "南信大是“双一流”，大气科学全国第一；成信大在气象领域稍逊，但在"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

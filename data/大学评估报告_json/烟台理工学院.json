@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.767500",
+    "updated_at": "2026-05-11T15:19:10.199710",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "烟台理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.39,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "烟台",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）：** 烟台理工学院是一所由原烟台大学文经学院转设而来的全日制民办普通本科高校。其核心身份是“公办基因的民办化延续”，在管理模式、师资构成及学科建设上深度承袭了烟台大学的底蕴，是山东省内民办高等教育的重要组成部分。\n\n**Ace（王牌优势）：** 学校的竞争优势在于其“考研文化”与“区位红利”。依托原烟台大学的教学规范，其法学、会计、机械等专业的教学质量在同类院校中口碑较好。同时，学校坐落于烟台市莱山区，周边高校林立，学术氛围与城市生活配套远超位于偏远郊区的同类民办院校。\n\n**Vibe（文化特质）：** 典型的“务实胶东学风”。学生群体中考研意愿极强，图书馆与自习室的利用率极高。这种氛围在某种程度上弥补了民办院校科研资源的不足，形成了一种以“学历提升”为导向的校园生态。\n\n**Risk（潜在风险）：** 基础设施的滞后与民办体制下的成本压力是主要矛盾。2025 年夏季引发关注的“宿舍空调安装进度”问题，折射出学校在快速扩张与转设过程中，对学生生活品质保障的投入存在滞后。此外，随着山东省高考改革的深入，民办本科面临公办本科扩招及职业本科崛起的双重挤压。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "考研圣地",
+        "莱山核心",
+        "原烟大血统",
+        "务实胶东",
+        "民办天花板",
+        "海滨校园"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

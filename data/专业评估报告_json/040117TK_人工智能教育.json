@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.912960",
+    "updated_at": "2026-04-22T00:41:37.651301",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040117TK_人工智能教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "2025年全新设立的\"政策风口\"专业，赌的是\"全民AI教育\"的国家战略，先发优势明显但一切都是未知数。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.68
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "本专业的核心是\"教人使用AI\"而非\"被AI替代\"。AI可以辅助教学，但教师的人际沟通、因材施教、课堂管理、情感引导能力极难被AI替代。同时，作为\"教AI的老师\"，恰恰是AI时代的刚需角色。但需注意：教育科技赛道中的部分岗位（课程内容开发、题库建设等）面临AI替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "2025年全新设立的\"政策风口\"专业，赌的是\"全民AI教育\"的国家战略，先发优势明显但一切都是未知数。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京师范大学（唯一首批布点，教育学A+，AI研究院实力强）"
+      ],
+      "tier_A": [
+        "华东师范大学",
+        "华中师范大学",
+        "东北师范大学",
+        "南京师范大学",
+        "华南师范大学"
+      ],
+      "tier_B": [
+        "陕西师范大学",
+        "西南大学",
+        "湖南师范大学",
+        "首都师范大学",
+        "浙江师范大学",
+        "天津师范大学"
+      ],
+      "tier_C_note": "各省属师范院校及综合性大学教育学院（预计2026–2028年陆续获批开设）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

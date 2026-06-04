@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.019625",
+    "updated_at": "2026-04-25T15:30:02.109959",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081202",
+    "name": "遥感科学与技术",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "站在国家空天信息战略风口上的硬核工科，技术壁垒高、政策红利足，但学习曲线陡峭，本科就业需考研加码方能兑现前景。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.6,
+      "education_resources": 3.8,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 4.02
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "遥感图像智能解译需要AI与领域知识深度融合，物理光学原理、传感器校准、多源数据融合等核心技能难以被AI独立替代；但基础图像标注、数据录入等低端岗位已被AI快速侵蚀。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在国家空天信息战略风口上的硬核工科，技术壁垒高、政策红利足，但学习曲线陡峭，本科就业需考研加码方能兑现前景。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "武汉大学",
+        "北京航空航天大学"
+      ],
+      "tier_A": [
+        "中南大学",
+        "中国矿业大学（北京）",
+        "长安大学",
+        "西南交通大学",
+        "中国地质大学（武汉）",
+        "北京大学",
+        "哈尔滨工业大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "西安电子科技大学",
+        "山东科技大学",
+        "河海大学",
+        "中国矿业大学",
+        "辽宁工程技术大学",
+        "中国地质大学（北京）",
+        "河南理工大学",
+        "南京信息工程大学",
+        "北京师范大学",
+        "合肥工业大学"
+      ],
+      "tier_C_note": "西安科技大学、成都理工大学、郑州大学、东华理工大学、首都师范大学、安徽理工大学、南京工业大学、北京建筑大学、兰州交通大学、山东农业大学、湖南科技大学、广州大学、新疆大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

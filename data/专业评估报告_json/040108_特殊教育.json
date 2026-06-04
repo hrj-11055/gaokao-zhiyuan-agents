@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.078300",
+    "updated_at": "2026-04-22T00:03:20.742533",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "040108",
+    "name": "特殊教育",
+    "category": "教育学",
+    "recommendation_level": "yellow",
+    "summary": "用爱与耐心撑起的\"冷门铁饭碗\"，就业率极高但薪资天花板低，适合真正有情怀者——为了\"铁饭碗\"来的，会被真实工作劝退。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.8,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.29
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "特殊教育的核心是人与人的深度互动——情绪安抚、行为矫正、个性化康复训练——这些高度依赖人类的同理心、肢体接触和即时判断，AI 难以替代。AI 可辅助诊断和制定训练方案，但无法执行核心教学环节。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "用爱与耐心撑起的\"冷门铁饭碗\"，就业率极高但薪资天花板低，适合真正有情怀者——为了\"铁饭碗\"来的，会被真实工作劝退。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京师范大学",
+        "华东师范大学"
+      ],
+      "tier_A": [
+        "华中师范大学",
+        "西南大学",
+        "东北师范大学",
+        "陕西师范大学",
+        "南京师范大学"
+      ],
+      "tier_B": [
+        "浙江师范大学",
+        "华南师范大学",
+        "重庆师范大学",
+        "湖南师范大学",
+        "辽宁师范大学",
+        "长春大学",
+        "四川师范大学"
+      ],
+      "tier_C_note": "郑州师范学院、绥化学院、泉州师范学院、南京特殊教育师范学院、滨州医学院、邯郸学院、潍坊学院、贵州师范学院及各省地方师范院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

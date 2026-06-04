@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.056097",
+    "updated_at": "2026-04-26T03:58:32.367982",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090207TK_国家公园建设与管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "踩着国家公园体制改革的政策风口而生，全国仅4校开设的稀缺专业，保研率40%碾压多数专业，但首届毕业生尚未出炉，就业闭环仍有待验证。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.41
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "核心技能涉及野外生态调查、社区协调、多方利益博弈、自然资源实地评估等高度依赖\"在场性\"和\"人际沟通\"的工作，AI可辅助数据分析（如遥感监测、物种识别），但无法替代实地踏勘、政策执行中的复杂人际协调。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "踩着国家公园体制改革的政策风口而生，全国仅4校开设的稀缺专业，保研率40%碾压多数专业，但首届毕业生尚未出炉，就业闭环仍有待验证。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京林业大学（全国首家国家公园学院，梁希实验班，保研率~40%，首批20人精英培养）"
+      ],
+      "tier_A": [
+        "东北林业大学（双一流，林学A+学科支撑，八院系联动，2024年首批招生）"
+      ],
+      "tier_B": [
+        "中南林业科技大学（全国首个\"森林旅游\"专业前身，2025年新设）",
+        "华南农业大学"
+      ],
+      "tier_C_note": "暂无（该专业仅4校开设，尚未扩展到普通本科层次）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

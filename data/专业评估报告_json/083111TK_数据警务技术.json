@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.130508",
+    "updated_at": "2026-04-26T01:27:29.317281",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083111TK_数据警务技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "公安系统里的\"数据极客\"，入警率超 90%、赛道小众且政策红利强，但职业路径高度锁定体制内，转行几乎等于重头来过。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.85
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "数据警务技术的核心不只是数据分析算法，而是将数据分析嵌入警务实战场景（犯罪研判、情报分析、指挥决策），需要安全审查权限、涉密场景理解和人机协作判断，这些均无法被 AI 完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "公安系统里的\"数据极客\"，入警率超 90%、赛道小众且政策红利强，但职业路径高度锁定体制内，转行几乎等于重头来过。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民公安大学",
+        "中国人民警察大学"
+      ],
+      "tier_A": [
+        "中国刑事警察学院",
+        "南京警察学院"
+      ],
+      "tier_B": [
+        "江苏警官学院",
+        "吉林警察学院"
+      ],
+      "tier_C_note": "中央司法警官学院（司法行政方向）、浙江警察学院（设有数据警务方向）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.064492",
+    "updated_at": "2026-04-25T11:13:29.230008",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080806T_智能装备与系统",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "制造业升级的\"硬核选手\"，机械+AI的交叉利器，但开设院校仅22所、课程难度高，适合真正爱动手的技术控。",
+    "radar": {
+      "market_return": 4.1,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.9,
+      "career_path": 3.6,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "该专业本身就是将 AI 技术应用于装备系统的交叉学科，核心技能包括硬件设计、控制算法、机器人系统集成，这些都是 AI 辅助而非替代的领域——AI 替代的是重复性脑力劳动，而非硬件设计与物理系统集成。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "制造业升级的\"硬核选手\"，机械+AI的交叉利器，但开设院校仅22所、课程难度高，适合真正爱动手的技术控。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工业大学",
+        "中国传媒大学"
+      ],
+      "tier_A": [
+        "北京交通大学",
+        "桂林电子科技大学",
+        "南京师范大学"
+      ],
+      "tier_B": [
+        "江苏科技大学",
+        "浙江农林大学",
+        "太原科技大学",
+        "南京理工大学紫金学院"
+      ],
+      "tier_C_note": "盐城工学院、渤海大学、吉林化工学院、巢湖学院、南通理工学院、青岛恒星科技学院、山东石油化工学院、四川旅游学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

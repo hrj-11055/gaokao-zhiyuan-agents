@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.924405",
+    "updated_at": "2026-04-21T01:43:48.057950",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "030502",
+    "name": "中国共产党历史",
+    "category": "法学",
+    "recommendation_level": "yellow",
+    "summary": "\"政策风口上的窄门专业，体制内对口优势突出，但就业面极窄，非考公考编党慎入。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.6,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.9
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "党史研究涉及大量档案辨析、口述史料交叉验证和政治判断，AI 难以替代政治敏感度、政策写作和意识形态把关能力。但文献整理、资料检索等基础性工作已被 AI 大幅辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"政策风口上的窄门专业，体制内对口优势突出，但就业面极窄，非考公考编党慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学（全国首家中共党史党建学院，马克思主义理论 A+）"
+      ],
+      "tier_A": [
+        "武汉大学",
+        "湘潭大学（中共党史博士点，学科传统深厚）"
+      ],
+      "tier_B": [
+        "山东师范大学",
+        "延安大学（红色资源区位优势）",
+        "河南师范大学",
+        "井冈山大学（井冈山根据地研究特色）",
+        "内蒙古师范大学（全国第二家实体性中共党史党建学院）"
+      ],
+      "tier_C_note": "赣南师范大学、广西民族大学、上饶师范学院、信阳师范大学、乐山师范学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

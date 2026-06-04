@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.126108",
+    "updated_at": "2026-04-24T23:44:26.281771",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070204T_声学",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "物理分支中的\"隐形冠军\"，全国仅4校开设、年培不足百人，供需严重失衡，消费电子与新能源车声学赛道需求爆发。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.8,
+      "career_path": 3.6,
+      "education_resources": 3.2,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.93
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "12,000–18,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "声学核心技能（声场建模、NVH仿真、物理声学测量、超声检测）依赖深厚的物理直觉和实验经验，AI难以替代；反而，声学与AI的结合（语音识别、声纹识别、声学AI算法）正在创造大量新岗位。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "物理分支中的\"隐形冠军\"，全国仅4校开设、年培不足百人，供需严重失衡，消费电子与新能源车声学赛道需求爆发。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京大学（物理学A+，声学本科专业全国唯一顶尖，近代声学教育部重点实验室）"
+      ],
+      "tier_A": [
+        "安徽建筑大学（建筑声学特色方向，ABC排名A+）",
+        "中国海洋大学（水声学方向突出）"
+      ],
+      "tier_B": [
+        "中国计量大学（声学计量与检测特色）"
+      ],
+      "tier_C_note": "目前仅4所高校开设，无C档院校。其他院校可通过物理学、电子信息工程等专业下的声学方向进入该领域。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

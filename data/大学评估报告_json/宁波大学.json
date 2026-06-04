@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.612146",
+    "updated_at": "2026-05-11T11:58:30.001454",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "宁波大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.83,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "浙江工业大学",
+        "similarity": "同类院校",
+        "key_difference": "宁波大学拥有“双一流”头衔，在国家级政策支持和海洋、水产等特色领域更具优势；而浙工大在传统工科底蕴（如化工、机械）和省内认可度上略胜一筹。宁大更像是一所快速崛起的综合性新锐，而浙工大则是稳健的省属工科老牌。"
+      },
+      {
+        "name": "苏州大学",
+        "similarity": "同类院校",
+        "key_difference": "苏州大学在排名和综合实力上领先宁大一个身位，但宁大在特定学科（如力学、水产）的专业深度上具有竞争力，且宁波的落户政策与生活成本相对苏州更具吸引力。"
+      },
+      {
+        "name": "温州大学",
+        "similarity": "同类院校",
+        "key_difference": "宁大在行政级别、学科层次和全国知名度上全面领先，是浙东地区的教育龙头。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "宁波大学（Ningbo University）是一所具有传奇色彩的“新锐”高校。其诞生于改革开放初期，由包玉刚等“宁波帮”人士捐资创立，并由北京大学、复旦大学、浙江大学、中国科学技术大学等名校对口援建。这种“名校基因”与“侨资背景”的结合，使得宁大在短短不到四十年的时间里，完成了从地方院校到国家“双一流”建设高校的跨越式发展。\n\n从学术维度看，宁大目前处于“高原期”向“高峰期”突破的关键阶段。虽然在第四轮学科评估中缺乏A类学科，但其力学、水产、数学等学科已展现出冲击顶尖水平的潜力。特别是力学学科，在经历“双一流”警示后，通过大规模引进高层次人才和优化科研方向，已实现触底反弹。\n\n在就业与价值实现方面，宁大充分吃到了宁波作为“制造业单项冠军之城”的红利。学校与地方产业的耦合度极高，毕业生在长三角地区的认可度甚至在某些领域超过了部分偏远地区的“985/211”高校。对于务实、看重就业前景的考生而言，宁大是一个极具性价比的选择。\n\n然而，宁大也面临着省内“双一流”高校竞争加剧的压力。随着浙江工业大学、浙江师范大学等省属重点高校的持续发力，宁大需要在保持“海味”特色的同时，进一步提升基础学科的厚度，并解决学科发展不平衡的问题。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "浙江工业大学",
+          "similarity": "同类院校",
+          "key_difference": "宁波大学拥有“双一流”头衔，在国家级政策支持和海洋、水产等特色领域更具优势；而浙工大在传统工科底蕴（如化工、机械）和省内认可度上略胜一筹。宁大更像是一所快速崛起的综合性新锐，而浙工大则是稳健的省属工科老牌。"
+        },
+        {
+          "name": "苏州大学",
+          "similarity": "同类院校",
+          "key_difference": "苏州大学在排名和综合实力上领先宁大一个身位，但宁大在特定学科（如力学、水产）的专业深度上具有竞争力，且宁波的落户政策与生活成本相对苏州更具吸引力。"
+        },
+        {
+          "name": "温州大学",
+          "similarity": "同类院校",
+          "key_difference": "宁大在行政级别、学科层次和全国知名度上全面领先，是浙东地区的教育龙头。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "海味",
+        "宁波帮",
+        "双创",
+        "新锐",
+        "考研大户",
+        "制造业之友",
+        "知行合一"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.599701",
+    "updated_at": "2026-05-01T01:37:43.382521",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "嘉应学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "公办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.5,
+      "graduate_value": 2.8,
+      "location_advantage": 2.0,
+      "globalization": 2.1,
+      "student_empowerment": 2.4,
+      "brand_asset": 2.6
+    },
+    "weighted_score": 2.48,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "韶关学院",
+        "similarity": "同类院校",
+        "key_difference": "两校同为粤东西北的“老牌二本”。韶关学院在工科应用（如机械、自动化）方面略显厚重，而嘉应学院在人文底蕴、客家学研究以及体育教育（足球）上更具辨识度。随着2024年嘉应学院硕士点的正式落地，其在后续的省重点学科建设经费竞争中将占据先机。"
+      },
+      {
+        "name": "惠州学院",
+        "similarity": "同类院校",
+        "key_difference": "惠州学院得益于大湾区的区位优势，在电子信息、服装设计等产业对接上更具活力，毕业生起薪普遍高于嘉应学院。但嘉应学院的校园占地面积更大，生活成本更低，且在师范教育的传统积淀上更为深厚。"
+      },
+      {
+        "name": "肇庆学院",
+        "similarity": "同类院校",
+        "key_difference": "肇庆学院在艺术类专业和基础理学上表现不俗，而嘉应学院的“农医教”三位一体格局更加稳固，尤其在服务乡村振兴战略方面，嘉应学院的学科布局与地方需求的耦合度更高。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "嘉应学院是一所具有百年师范教育底蕴的广东省属公办本科高校。其核心定位非常明确：立足梅州、服务粤东、辐射全省的应用型人才培养基地。2024年，学校正式获批成为硕士学位授予单位，这标志着嘉应学院从单纯的本科教学型大学向教学研究型大学转型的关键起点。\n\n在优势领域，嘉应学院展现出极强的“行业垄断性”。在梅州及周边地区，超过60%的中小学校长和骨干教师毕业于此，这种深厚的校友根基为师范类毕业生提供了极高的就业护城河。同时，学校在客家文化研究、足球运动教育以及地方特色农业（如金柚、茶叶）等领域拥有不可替代的学术地位。\n\n然而，受限于梅州市整体经济体量和产业结构的限制，学校在吸引高水平科研人才、对接高新产业需求方面存在天然短板。非师范类专业，尤其是纯理论或高新科技类专业，在珠三角就业市场的竞争力相对平庸。校园文化呈现出明显的“务实、守旧、乡土”特征，对于追求极致国际化视野或互联网大厂氛围的学生而言，适配度较低。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "韶关学院",
+          "similarity": "同类院校",
+          "key_difference": "两校同为粤东西北的“老牌二本”。韶关学院在工科应用（如机械、自动化）方面略显厚重，而嘉应学院在人文底蕴、客家学研究以及体育教育（足球）上更具辨识度。随着2024年嘉应学院硕士点的正式落地，其在后续的省重点学科建设经费竞争中将占据先机。"
+        },
+        {
+          "name": "惠州学院",
+          "similarity": "同类院校",
+          "key_difference": "惠州学院得益于大湾区的区位优势，在电子信息、服装设计等产业对接上更具活力，毕业生起薪普遍高于嘉应学院。但嘉应学院的校园占地面积更大，生活成本更低，且在师范教育的传统积淀上更为深厚。"
+        },
+        {
+          "name": "肇庆学院",
+          "similarity": "同类院校",
+          "key_difference": "肇庆学院在艺术类专业和基础理学上表现不俗，而嘉应学院的“农医教”三位一体格局更加稳固，尤其在服务乡村振兴战略方面，嘉应学院的学科布局与地方需求的耦合度更高。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "考编圣地",
+        "客家之光",
+        "足球基因",
+        "性价比极高",
+        "苏区长子",
+        "百年积淀"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

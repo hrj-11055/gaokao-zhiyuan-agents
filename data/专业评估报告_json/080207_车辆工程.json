@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.927463",
+    "updated_at": "2026-04-25T04:05:49.618637",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080207",
+    "name": "车辆工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "新能源与智能网联加持，传统工科里的\"翻红选手\"，但行业正在剧烈分化——跟对赛道吃肉，跟错方向喝汤。",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.6,
+      "education_resources": 3.4,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.7
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "~68%",
+      "starting_salary": "5,300–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 已能自动化部分设计与测试流程（某知名车企裁减15%工程师岗位，约2000人），传统CAD/CAE制图岗被替代风险高；但底盘调校、NVH优化、实车测试等依赖物理直觉的岗位短期难被替代，懂AI+车辆的复合型人才反而更吃香。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "新能源与智能网联加持，传统工科里的\"翻红选手\"，但行业正在剧烈分化——跟对赛道吃肉，跟错方向喝汤。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "北京理工大学",
+        "吉林大学",
+        "湖南大学",
+        "西安交通大学"
+      ],
+      "tier_A": [
+        "同济大学",
+        "哈尔滨工业大学",
+        "浙江大学",
+        "重庆大学",
+        "武汉理工大学",
+        "西南交通大学",
+        "合肥工业大学",
+        "北京航空航天大学",
+        "大连理工大学"
+      ],
+      "tier_B": [
+        "江苏大学",
+        "福州大学",
+        "长安大学",
+        "南京航空航天大学",
+        "燕山大学",
+        "河北工业大学",
+        "河南科技大学",
+        "湖北汽车工业学院",
+        "重庆理工大学",
+        "山东理工大学"
+      ],
+      "tier_C_note": "全国249所开设车辆工程的高校中，除上述院校外的其余院校。对于中等分数段考生，可优先选择产业腹地城市的院校（如长春、十堰、柳州等汽车产业集群城市的高校），实习与就业机会更多。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

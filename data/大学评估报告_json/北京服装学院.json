@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.737187",
+    "updated_at": "2026-05-09T14:01:23.836052",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "北京服装学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 0.0,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "东华大学",
+        "similarity": "同类院校",
+        "key_difference": "东华（原中纺大）是 211/双一流，工科底蕴更深，在纺织材料、学术研究上更具权威；北服则在“时尚感”、设计前卫性、北京区位资源以及与媒体/商业的对接上更胜一筹。"
+      },
+      {
+        "name": "中国美院/清华美院",
+        "similarity": "同类院校",
+        "key_difference": "国美、清美更偏向纯艺术和综合设计；北服则在“服装”这一垂直领域做到了极致，其商业化和产业化程度更高。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "北京服装学院是一所典型的“小而精、特而强”的行业领军型大学。它不以规模取胜，而以在时尚全产业链上的深度渗透力见长。对于那些热爱时尚、渴望在创意产业证明自己、且具备较强抗压能力的考生来说，北服提供了国内最接近国际时尚脉搏的教育环境。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "东华大学",
+          "similarity": "同类院校",
+          "key_difference": "东华（原中纺大）是 211/双一流，工科底蕴更深，在纺织材料、学术研究上更具权威；北服则在“时尚感”、设计前卫性、北京区位资源以及与媒体/商业的对接上更胜一筹。"
+        },
+        {
+          "name": "中国美院/清华美院",
+          "similarity": "同类院校",
+          "key_difference": "国美、清美更偏向纯艺术和综合设计；北服则在“服装”这一垂直领域做到了极致，其商业化和产业化程度更高。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

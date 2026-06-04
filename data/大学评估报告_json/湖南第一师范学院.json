@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.882378",
+    "updated_at": "2026-05-09T18:51:52.085647",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖南第一师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.5,
+      "graduate_value": 3.5,
+      "location_advantage": 3.8,
+      "globalization": 1.5,
+      "student_empowerment": 1.2,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 3.03,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 4800,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "岳麓",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "强制性作息",
+        "description": "大一、大二学生通常被要求参加早操和晚自习。晚自习期间有学生干部和老师巡查，严禁玩手机或进行非学习活动。"
+      },
+      {
+        "category": "宿舍管理极严",
+        "description": "一师的宿舍检查频率极高，且标准近乎苛刻。2025年5月引发热议的“泡牛奶通报”事件并非孤例。在学生反馈中，宿舍内放置过多杂物、床铺不整齐、甚至在非规定时间睡觉都可能面临通报批评。"
+      },
+      {
+        "category": "转专业门槛",
+        "description": "虽然政策上允许转专业，但实际操作中名额有限，且通常要求原专业成绩排名前 10%-15%。对于从热门师范专业转往非师范专业，学校通常持保留态度。\n\n### 5.2 基础设施与生活品质：现代与传统的交织\n\n*   **校区分布**：东方红校区（主校区）建筑风格宏伟，带有浓郁的民国复古风，是著名的“网红打卡地”。城南校区则是老校区，承载了更多的历史底蕴，但设施相对陈旧。\n*   **居住体验**：东方红校区宿舍多为 4 人间，配备空调（需租赁）和独立卫浴。然而，学校对空调的使用有严格的时间和温度限制，这在夏季酷热的长沙经常引发学生吐槽。\n*   **餐饮文化**：一师的食堂在长沙高校中口碑尚可，尤其是五、六食堂，价格低廉且口味纯正。由于女生比例高，食堂的菜色通常较为精致，甜点和轻食档口较多。\n\n### 5.3 品牌资产：毛泽东母校的政治红利\n\n一师的品牌价值在很大程度上是由其历史地位支撑的。\n\n| 品牌维度 | 评价 | 影响力 |\n| :--- | :--- | :--- |\n| 历史底蕴 | 顶级 | “毛泽东母校”是其永久的政治名片 |\n| 社会声誉 | 优良 | 在家长和基础教育界口碑极佳 |\n| 媒体活跃度 | 中等 | 官方宣传多集中在红色文化和党建 |\n\n**品牌深度分析**：\n一师的品牌具有极强的“红色属性”。这使得学校在获取政府资源、政策支持（如公费生计划）方面具有天然优势。然而，这种品牌形象也带来了一定的束缚，使得学校在尝试现代化、国际化转型时，往往显得步履蹒跚，难以摆脱“传统师范”的刻板印象。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.951885",
+    "updated_at": "2026-04-25T00:50:58.473975",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070603T_气象技术与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众赛道里的隐形冠军——国家战略加持+AI融合前景好，但开设院校极少、深造门槛高，适合真正热爱气象的数理强者。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.6,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.4
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "气象预报虽然大量使用AI模型（如华为盘古气象大模型），但气象探测设备的维护、极端天气现场研判、跨学科工程方案设计等核心工作需要物理直觉和工程经验，AI更多是\"工具升级\"而非\"替代\"。但纯数据处理和基础预报岗位面临AI压缩风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众赛道里的隐形冠军——国家战略加持+AI融合前景好，但开设院校极少、深造门槛高，适合真正热爱气象的数理强者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京信息工程大学（大气科学A+，该专业全国首创，全球气象学科前列）",
+        "北京大学（大气与海洋科学系，顶尖学术资源）"
+      ],
+      "tier_A": [
+        "成都信息工程大学（气象技术与工程软科2024专业排名第一）",
+        "中山大学（大气科学学院）",
+        "清华大学（地球系统科学系）"
+      ],
+      "tier_B": [
+        "中国气象科学研究院（研究生培养）",
+        "中国科学技术大学（地球和空间科学学院）",
+        "浙江大学（地球科学学院大气科学方向）"
+      ],
+      "tier_C_note": "北京工业大学耿丹学院（2025年浙江高考录取线481分）、其他新开设该专业的省属院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

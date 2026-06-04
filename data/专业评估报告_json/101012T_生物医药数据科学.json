@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.150274",
+    "updated_at": "2026-04-27T05:52:09.637130",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "101012T_生物医药数据科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "医药×数据的交叉新贵，行业爆发但专业极新、院校极少，赌的是赛道红利而非专业成熟度。",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.2,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 4.3
+    },
+    "weighted_score": 3.85
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–14,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "核心技能包括生物信息学算法设计、多组学数据整合分析、统计建模与因果推断等，需要深厚的领域知识和人类判断力。AI工具（如AlphaFold）是辅助而非替代，掌握AI工具的从业者反而更具竞争力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "医药×数据的交叉新贵，行业爆发但专业极新、院校极少，赌的是赛道红利而非专业成熟度。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "复旦大学",
+        "上海交通大学",
+        "浙江大学",
+        "北京大学（医学部）"
+      ],
+      "tier_A": [
+        "华中科技大学",
+        "中山大学",
+        "四川大学",
+        "中南大学",
+        "武汉大学"
+      ],
+      "tier_B": [
+        "山东大学",
+        "南京大学",
+        "同济大学",
+        "厦门大学",
+        "西安交通大学",
+        "南方医科大学",
+        "首都医科大学"
+      ],
+      "tier_C_note": "部分\"双一流\"建设高校及省属重点医科大学/综合大学开设的相关方向",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

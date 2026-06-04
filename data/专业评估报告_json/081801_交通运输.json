@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.040635",
+    "updated_at": "2026-04-25T18:33:27.993587",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081801",
+    "name": "交通运输",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "国家基建硬核刚需，铁饭碗稳但天花板低，想拿高薪得往\"智慧交通+AI\"方向卷，传统方向别碰。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 4.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.5
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "~65%",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "传统调度、票务、基础规划岗位正在被AI和自动化系统替代（如智能调度系统、自动驾驶货运）；但大型枢纽规划、交通安全评估、智慧交通系统集成等需要综合判断力的工作短期内不易被完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家基建硬核刚需，铁饭碗稳但天花板低，想拿高薪得往\"智慧交通+AI\"方向卷，传统方向别碰。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东南大学",
+        "西南交通大学",
+        "北京交通大学"
+      ],
+      "tier_A": [
+        "同济大学",
+        "北京航空航天大学",
+        "中南大学",
+        "长安大学",
+        "大连海事大学",
+        "哈尔滨工业大学（深圳）"
+      ],
+      "tier_B": [
+        "武汉理工大学",
+        "吉林大学",
+        "南京航空航天大学",
+        "重庆交通大学",
+        "兰州交通大学",
+        "长沙理工大学",
+        "华东交通大学",
+        "上海海事大学",
+        "石家庄铁道大学",
+        "中国民航大学"
+      ],
+      "tier_C_note": "山东交通学院、内蒙古大学、西南民族大学、郑州轻工业大学等全国约 70+ 所普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

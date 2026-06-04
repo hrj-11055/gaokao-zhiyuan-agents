@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.637298",
+    "updated_at": "2026-05-10T00:28:18.697857",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西南交通大学希望学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.5,
+      "graduate_value": 3.5,
+      "location_advantage": 3.2,
+      "globalization": 2.2,
+      "student_empowerment": 3.0,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 3.0,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "四川大学锦江学院",
+        "similarity": "同类院校",
+        "key_difference": "锦江学院更偏向文理综合，校园环境更优美，适合追求大学体验和综合素质的学生；而交大希望更像是一所“准职业军校”，适合目标明确、追求稳定就业的学生。"
+      },
+      {
+        "name": "成都理工大学工程技术学院",
+        "similarity": "同类院校",
+        "key_difference": "两者在工科领域有重合，但交大希望在“轨道交通”这一细分赛道的专业性更强，而理工工程在核工业、地质领域更有优势。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "西南交通大学希望学院是一所典型的“行业驱动型”大学。它不以学术研究见长，却在就业市场上拥有极强的生存智慧。通过深度绑定西南交通大学的品牌与铁路行业的用人标准，它成功地在民办教育市场中开辟了一条“铁路人才流水线”。\n\n*   **核心优势**：无与伦比的铁路系统校招资源。\n*   **核心劣势**：学术底蕴薄弱，对母体学校依赖度高。\n*   **未来展望**：随着中国高铁“走出去”和城市轨道交通的持续扩张，该校的专业红利期仍将持续至少 10 年。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "四川大学锦江学院",
+          "similarity": "同类院校",
+          "key_difference": "锦江学院更偏向文理综合，校园环境更优美，适合追求大学体验和综合素质的学生；而交大希望更像是一所“准职业军校”，适合目标明确、追求稳定就业的学生。"
+        },
+        {
+          "name": "成都理工大学工程技术学院",
+          "similarity": "同类院校",
+          "key_difference": "两者在工科领域有重合，但交大希望在“轨道交通”这一细分赛道的专业性更强，而理工工程在核工业、地质领域更有优势。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

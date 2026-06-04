@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.829818",
+    "updated_at": "2026-05-09T17:13:58.986996",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西安戏剧学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "公办",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.38,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：全国第三所、西北地区唯一的独立设置公办戏剧类本科院校。它是陕西省“十四五”重点文化教育工程，旨在打造“丝绸之路”上的艺术高地。\n*   **Ace（王牌优势）**：顶级的行业背书与“国家队”级别的援建体系。中央戏剧学院、中国传媒大学、中国艺术研究院三方联合援建，确保了其教学大纲与学术标准直接对标国内顶尖水平。\n*   **Vibe（文化特质）**：兼具秦汉厚重底蕴与现代艺术先锋性的“拓荒者”气质。这里没有陈旧的校规束缚，首届学生将深度参与学校文化的共创。\n*   **Risk（潜在风险）**：新校基础设施的初期磨合、校园文化积淀的缺失，以及首届毕业生在 2029 年进入市场时，用人单位对其教学质量的认知滞后风险。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "西戏元年",
+        "秦腔之魂",
+        "名校援建",
+        "高师生比",
+        "秦汉底蕴",
+        "艺术拓荒",
+        "丝路起点",
+        "硬核专业"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

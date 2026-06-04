@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.950532",
+    "updated_at": "2026-04-25T05:18:52.821928",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080407",
+    "name": "高分子材料与工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "\"新材料赛道的硬核选手，脱坑加速中，但本科只能算半成品——不读研，只能进厂拧螺丝。\"",
+    "radar": {
+      "market_return": 3.3,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.8,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.67
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–7500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "高分子材料研发涉及材料合成、配方设计、性能测试等高度实验性工作，AI可在模拟计算和数据分析方面辅助，但核心的实验验证、工艺调优和规模化生产仍依赖人的经验和动手能力。材料计算工程师等AI融合岗位反而在快速崛起。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"新材料赛道的硬核选手，脱坑加速中，但本科只能算半成品——不读研，只能进厂拧螺丝。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "北京航空航天大学",
+        "浙江大学",
+        "中国科学技术大学",
+        "四川大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_A": [
+        "上海交通大学",
+        "武汉理工大学",
+        "西北工业大学",
+        "华南理工大学",
+        "天津大学",
+        "北京理工大学",
+        "北京化工大学",
+        "东华大学",
+        "复旦大学"
+      ],
+      "tier_B": [
+        "中南大学",
+        "东北大学",
+        "西安交通大学",
+        "北京科技大学",
+        "南京大学",
+        "深圳大学",
+        "青岛科技大学",
+        "武汉工程大学",
+        "江苏大学"
+      ],
+      "tier_C_note": "各地方综合性大学及化工类院校中开设高分子材料与工程的普通本科院校（全国共187所开设，大部分属此类）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

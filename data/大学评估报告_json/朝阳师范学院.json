@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.503305",
+    "updated_at": "2026-05-12T11:27:52.915293",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "朝阳师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.19,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "朝阳师范学院（原朝阳师范高等专科学校）于 2024 年 5 月正式获教育部批准升格为公办全日制普通本科高校。这一转型标志着辽宁省在优化高等教育布局、补齐辽西地区本科教育短板方面迈出了关键一步。从深度尽职调查的角度看，该校正处于“身份红利期”与“转型阵痛期”的交汇点。\n\n**核心定位（Identity）**：学校是辽宁省朝阳市唯一一所公办本科院校，承载着为辽西地区乃至全省培养基层教育人才的核心使命。其办学底色是纯正的师范教育，具有极强的行业垂直度。\n\n**王牌优势（Ace）**：深耕师范教育 64 年，学前教育、小学教育等传统优势专业在省内享有极高声誉。其毕业生在辽西地区的教师招聘中具有天然的“主场优势”，校友资源覆盖了当地绝大多数中小学及幼儿园。\n\n**文化特质（Vibe）**：校园文化呈现出明显的“务实、艰苦、守纪”特征。由于长期作为专科院校办学，学校管理模式带有一定的“高中化”痕迹，学生群体普遍以考取编制、实现稳定就业为最高目标，学习氛围浓厚但创新活跃度有待提升。\n\n**潜在风险（Risk）**：作为新晋本科，学校面临“硬件达标、软件待建”的挑战。高层次人才（尤其是具有博士学位的学科带头人）占比偏低，科研平台尚处于起步阶段，本科教学质量监控体系仍需时间磨合。此外，由于地处三线城市，对一线城市高端人才的吸引力有限。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

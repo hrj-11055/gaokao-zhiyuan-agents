@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.836790",
+    "updated_at": "2026-05-11T13:21:31.506570",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "杭州职业技术大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "最适合希望扎根杭州、追求高技能就业、且分数在普通本科线附近，不愿在平庸二本中虚度光阴的务实型考生。",
+    "radar": {
+      "academic_capital": 3.2,
+      "graduate_value": 4.0,
+      "location_advantage": 4.5,
+      "globalization": 2.8,
+      "student_empowerment": 3.2,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 3.63,
+    "one_sentence_recommend": "最适合希望扎根杭州、追求高技能就业、且分数在普通本科线附近，不愿在平庸二本中虚度光阴的务实型考生。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：杭州职业技术大学（以下简称“杭职大”）是杭州市人民政府主办的一所全日制公办本科层次职业学校。它不仅是国家“双高计划”建设单位，更是中国职业教育改革的“杭州窗口”。其核心使命是为杭州乃至长三角地区的先进制造业和现代服务业培养“高素质技术技能人才”。\n\n**Ace（王牌优势）**：杭职大的核心竞争力在于其“校企共同体”模式。学校与奥的斯（Otis）、吉利汽车、达利中国等行业巨头建立了深度嵌入式的合作关系。以电梯工程技术为例，该专业不仅拥有国家级的实训基地，其毕业生在行业内几乎拥有“免检”的就业竞争力。这种深度耦合的产教融合，使得学校的专业设置与市场需求实现了“零距离”对接。\n\n**Vibe（文化特质）**：学校弥漫着一种务实且严谨的“工匠精神”。校园氛围介于现代化工厂的精准与大学校园的自由之间。学生在校期间不仅学习理论，更多时间是在模拟真实生产环境的实训室中度过。这种“手脑并用”的教育环境，塑造了学生极强的动手能力和解决复杂工程问题的能力。\n\n**Risk（潜在风险）**：尽管已升格为本科，但社会对“职业本科”学位的认知仍存在惯性偏差，部分用人单位在招聘时可能仍将其与传统学术型本科区别对待。此外，随着办学层次的提升，学校在引进高水平博士人才与维持“双师型”教师比例之间面临平衡压力。",
+      "one_sentence_recommend": "最适合希望扎根杭州、追求高技能就业、且分数在普通本科线附近，不愿在平庸二本中虚度光阴的务实型考生。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实到骨子里",
+        "下沙技能高地",
+        "起薪收割机",
+        "产教融合天花板",
+        "新质生产力先行者",
+        "就业稳如泰山"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

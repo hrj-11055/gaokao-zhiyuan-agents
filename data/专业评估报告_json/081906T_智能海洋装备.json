@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.021456",
+    "updated_at": "2026-04-25T19:36:37.008869",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081906T_智能海洋装备",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "2024年刚上目录的\"新生儿\"专业，站在海洋强国+AI双重风口上，但全国仅2所院校开设，尚无毕业生数据可供验证——属于\"赌赛道\"型选择。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.3,
+      "future_adaptability": 4.0,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.53
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业本身就是\"海洋工程+AI\"的交叉学科，核心技能是运用AI解决海洋环境中的物理问题（水下感知、流体力学建模、深海通信），AI是赋能工具而非替代者。水下环境的高度不确定性使人类专家判断力仍不可替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "2024年刚上目录的\"新生儿\"专业，站在海洋强国+AI双重风口上，但全国仅2所院校开设，尚无毕业生数据可供验证——属于\"赌赛道\"型选择。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海交通大学",
+        "哈尔滨工程大学（母学科A+，未来最有可能开设智能海洋装备方向）"
+      ],
+      "tier_A": [
+        "华南理工大学（唯一开设此专业的985高校，院士导师团队",
+        "本硕博贯通",
+        "80%保研率）",
+        "天津大学",
+        "西北工业大学",
+        "大连理工大学"
+      ],
+      "tier_B": [
+        "中国海洋大学",
+        "武汉理工大学",
+        "江苏科技大学",
+        "浙江海洋大学"
+      ],
+      "tier_C_note": "广州航海学院（2025年获批开设此专业）、上海海事大学、集美大学、大连海洋大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

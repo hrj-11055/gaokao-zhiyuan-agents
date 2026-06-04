@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.923314",
+    "updated_at": "2026-05-10T00:08:04.007577",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海视觉艺术学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "211",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.2,
+      "graduate_value": 3.5,
+      "location_advantage": 4.8,
+      "globalization": 3.8,
+      "student_empowerment": 3.7,
+      "brand_asset": 4.2
+    },
+    "weighted_score": 3.72,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "上海视觉艺术学院（SIVA）是中国高等教育改革中的一个“特例”。作为一所混合所有制的新型综合艺术院校，它既摆脱了传统公办院校体制内的僵化，又凭借早期复旦大学的背书和上海广播电视台（SMG）等巨头的注资，拥有了普通民办院校难以企及的行业资源。\n\n**核心定位分析：** SIVA 被公认为中国民办艺术院校的“天花板”。它的存在并非为了填补低端艺术教育的空白，而是直指“应用型、国际化、高素质”的艺术人才市场。在上海建设“国际设计之都”的宏大背景下，SIVA 扮演了极为精准的产业对接器角色。\n\n**王牌优势深度解读：** 核心竞争力在于“德稻大师班”与“工作室制”。这种模式打破了传统的“大班课”逻辑，将教学场景直接搬进模拟或真实的行业工作室。尤其在视觉传达、时尚设计和数字媒体领域，SIVA 的课程更新速度几乎与上海文创行业的脉搏同步。\n\n**文化特质与氛围：** 学校散发着浓郁的“海派”气息——精致、务实且极具商业敏锐度。这里的学生往往比同龄人更早地接触到商业项目，更早地理解“艺术如何变现”。这种氛围虽然被部分纯艺术追求者批评为“过于商业化”，但在就业市场，这正是其毕业生起薪领先的关键。\n\n**潜在风险与挑战：** 财务门槛是绕不开的话题。每年 5-8 万的学费，加上艺术类专业高昂的耗材、器材费用，使得 SIVA 成为一个典型的“中产及以上家庭”的选择。这种生源构成在带来优质社交圈层的同时，也可能导致校园内出现一定的消费主义倾向和社交压力。此外，作为非公办院校，其在国家级重大科研课题的竞争上，仍与老牌美院存在天然代差。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "海派先锋",
+        "商业艺术",
+        "工作室制",
+        "松江大学城",
+        "德稻大师",
+        "高昂学费",
+        "精致利己与极致努力并存",
+        "作品集导向"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

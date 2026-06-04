@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.038934",
+    "updated_at": "2026-04-21T01:13:38.929842",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "030301",
+    "name": "社会学",
+    "category": "法学",
+    "recommendation_level": "yellow",
+    "summary": "一门\"什么都懂一点、什么都不精\"的万金油学科，升学深造是主流出路，本科直面的就业市场窄、薪资低，名校光环是唯一护城河。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 2.6,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 2.78
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 可替代大量基础数据分析、问卷设计、文献综述工作；但田野调查、深度访谈、社会现象的\"理解与诠释\"能力，以及人际关系协调与社区动员等实践技能，目前仍难以被 AI 替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "一门\"什么都懂一点、什么都不精\"的万金油学科，升学深造是主流出路，本科直面的就业市场窄、薪资低，名校光环是唯一护城河。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "中国人民大学",
+        "南京大学"
+      ],
+      "tier_A": [
+        "清华大学",
+        "复旦大学",
+        "上海大学",
+        "中山大学",
+        "南开大学"
+      ],
+      "tier_B": [
+        "中央民族大学",
+        "吉林大学",
+        "华东师范大学",
+        "华中科技大学",
+        "厦门大学",
+        "武汉大学",
+        "浙江大学",
+        "北京师范大学"
+      ],
+      "tier_C_note": "华东理工大学、中国农业大学、河海大学、山东大学、中南大学、云南民族大学、西安交通大学、苏州大学、云南大学、西南大学、兰州大学等其余开设社会学专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

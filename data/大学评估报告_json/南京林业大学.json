@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.763401",
+    "updated_at": "2026-05-08T01:33:46.558031",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京林业大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 3.5,
+      "location_advantage": 4.5,
+      "globalization": 3.8,
+      "student_empowerment": 4.0,
+      "brand_asset": 3.9
+    },
+    "weighted_score": 3.96,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "北京林业大学",
+        "similarity": "同类院校",
+        "key_difference": "北林作为教育部直属的 211 高校，位处北京，拥有更强的政治资源和行业管理影响力，其园林植物与观赏园艺学科在全国范围内略胜一筹。而南林作为省部共建高校，在工科属性上更强，特别是在林业工程、木材科学与技术、家具设计等领域，南林的产业转化能力和工程实践背景更具硬核实力。对于南方生源而言，南林在南京的区位优势和相对较低的生活成本也是重要加分项。"
+      },
+      {
+        "name": "南京农业大学",
+        "similarity": "同类院校",
+        "key_difference": "南农在综合排名和生命科学底蕴上更为深厚，属于传统的农林类强校。南林则在“美学+工程”的交叉领域形成了独特护城河。例如，南林的风景园林学更偏向于建筑与工程结合，而南农则更偏向于植物与生物学结合。对于希望进入设计院、建筑行业的学生，南林的专业背景往往更受认可。"
+      },
+      {
+        "name": "东北林业大学",
+        "similarity": "同类院校",
+        "key_difference": "东林拥有极佳的森林资源研究基地，但在区位势能上受限于东北地域经济环境。南林地处长三角核心区，其毕业生在就业选择、实习机会以及与现代制造业（如智能家居、绿色建筑）的对接上，拥有东林难以比拟的地理优势。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南京林业大学（以下简称“南林”）是一所以林科为特色，以资源、生态和环境类学科为优势的多科性大学。作为国家“双一流”建设高校，南林在中国的林业高等教育版图中占据着举足轻重的地位。其核心竞争力源于深厚的历史积淀——溯源至 1902 年的三江师范学堂，并在 1952 年由南京大学、金陵大学等名校的林学系合并组建。这种“名门之后”的血统，使其在学术底蕴上天然领先于多数同类院校。\n\n从战略定位来看，南林是国家生态文明建设的主力军。在“碳中和、碳达峰”的国家战略背景下，南林的林学、林业工程、生态学等传统优势学科正在焕发新的生命力。学校不仅在木材加工、家具设计等下游应用领域拥有极高的行业话语权，在上游的种质资源开发、森林碳汇研究方面也处于国际前沿。\n\n然而，南林也面临着行业特色高校普遍的挑战。尽管在林业领域贵为“领头羊”，但在综合性排名中，受限于学科门类的垂直性，其在非林学科（如电子信息、经管类）的品牌溢价相对有限。此外，学校近年来在人才引进与考核制度上的激进尝试，也引发了学术界关于“非升即走”考核强度的广泛讨论。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "北京林业大学",
+          "similarity": "同类院校",
+          "key_difference": "北林作为教育部直属的 211 高校，位处北京，拥有更强的政治资源和行业管理影响力，其园林植物与观赏园艺学科在全国范围内略胜一筹。而南林作为省部共建高校，在工科属性上更强，特别是在林业工程、木材科学与技术、家具设计等领域，南林的产业转化能力和工程实践背景更具硬核实力。对于南方生源而言，南林在南京的区位优势和相对较低的生活成本也是重要加分项。"
+        },
+        {
+          "name": "南京农业大学",
+          "similarity": "同类院校",
+          "key_difference": "南农在综合排名和生命科学底蕴上更为深厚，属于传统的农林类强校。南林则在“美学+工程”的交叉领域形成了独特护城河。例如，南林的风景园林学更偏向于建筑与工程结合，而南农则更偏向于植物与生物学结合。对于希望进入设计院、建筑行业的学生，南林的专业背景往往更受认可。"
+        },
+        {
+          "name": "东北林业大学",
+          "similarity": "同类院校",
+          "key_difference": "东林拥有极佳的森林资源研究基地，但在区位势能上受限于东北地域经济环境。南林地处长三角核心区，其毕业生在就业选择、实习机会以及与现代制造业（如智能家居、绿色建筑）的对接上，拥有东林难以比拟的地理优势。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "樱花大学",
+        "林业领头羊",
+        "玄武湖后花园",
+        "画图民工",
+        "务实低调",
+        "双一流",
+        "家具黄埔军校",
+        "碳中和先锋"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

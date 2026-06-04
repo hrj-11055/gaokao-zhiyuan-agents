@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.580387",
+    "updated_at": "2026-05-11T19:06:40.525123",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "铜陵学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.3,
+      "graduate_value": 2.8,
+      "location_advantage": 2.5,
+      "globalization": 1.8,
+      "student_empowerment": 2.6,
+      "brand_asset": 2.5
+    },
+    "weighted_score": 2.465,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "铜陵学院是一所典型的“专业特色驱动型”地方本科院校。它没有名牌大学的光环，但在特定的行业赛道（如会计、铜加工）中拥有极高的性价比。\n\n*   **核心定位**：安徽省应用型高水平大学建设单位，财经类人才培养的“腰部力量”。\n*   **王牌优势**：会计学、国际经济与贸易、计算机科学与技术。这些专业不仅拥有国家级一流专业称号，更在就业市场上有实打实的口碑。\n*   **文化特质**：极其务实，甚至带有一定的“职业培训”色彩。学生普遍早熟，对职业规划有清晰的认识。\n*   **潜在风险**：随着高等教育竞争加剧，单纯依靠“会计”标签可能面临合肥、芜湖等地高校的挤压；城市吸引力不足可能导致高水平博士人才流失。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实到骨子里",
+        "会计人的黄埔军校",
+        "铜都守望者",
+        "考证狂魔",
+        "长三角就业跳板"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

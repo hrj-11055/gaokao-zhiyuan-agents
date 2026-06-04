@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.094226",
+    "updated_at": "2026-04-27T13:38:48.281219",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120418T_慈善管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"情怀拉满但饭碗极窄的超小众专业，全国仅个位数院校开设，对口岗位稀少、薪资偏低，除非你决心投身公益行业，否则慎入。\"",
+    "radar": {
+      "market_return": 1.5,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.5,
+      "career_path": 2.0,
+      "education_resources": 1.8,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 2.16
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3500–5000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "慈善管理的核心技能——人际沟通、社群动员、公益项目设计与评估——短期内不会被AI完全替代，但项目报告撰写、数据统计分析、文案传播等大量事务性工作正被AI加速替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"情怀拉满但饭碗极窄的超小众专业，全国仅个位数院校开设，对口岗位稀少、薪资偏低，除非你决心投身公益行业，否则慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（无顶尖高校开设此专业）"
+      ],
+      "tier_A": [
+        "暂无（无\"双一流\"高校开设此专业）"
+      ],
+      "tier_B": [
+        "南京工业大学浦江学院（国内首批开设，与公益慈善学院合作办学，方向特色较鲜明）",
+        "山东管理学院"
+      ],
+      "tier_C_note": "电子科技大学成都学院等少数地方本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

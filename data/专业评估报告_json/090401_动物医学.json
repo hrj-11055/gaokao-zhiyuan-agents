@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.020564",
+    "updated_at": "2026-04-26T11:43:53.878105",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090401",
+    "name": "动物医学",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "宠物经济风口上的\"铁饭碗\"，执业考试淘汰率超八成，熬过三年规培才算入行，适合真心热爱动物且抗压能力强的人。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.44
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–5,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "兽医诊断需要大量触诊、手术实操和临床直觉判断，AI 可辅助影像识别（X 光、B 超分析）但无法替代手术和现场诊疗。不过，基础问诊和常规检查岗位面临 AI 辅助转型的压力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "宠物经济风口上的\"铁饭碗\"，执业考试淘汰率超八成，熬过三年规培才算入行，适合真心热爱动物且抗压能力强的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学",
+        "华中农业大学"
+      ],
+      "tier_A": [
+        "华南农业大学",
+        "扬州大学",
+        "吉林大学",
+        "南京农业大学",
+        "东北农业大学",
+        "西北农林科技大学"
+      ],
+      "tier_B": [
+        "浙江大学",
+        "四川农业大学",
+        "河南农业大学",
+        "山西农业大学",
+        "山东农业大学",
+        "湖南农业大学",
+        "甘肃农业大学",
+        "西南大学"
+      ],
+      "tier_C_note": "河北农业大学、江西农业大学、青岛农业大学、广西大学、福建农林大学、新疆农业大学、石河子大学、北京农学院、黑龙江八一农垦大学，以及各地方农业院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

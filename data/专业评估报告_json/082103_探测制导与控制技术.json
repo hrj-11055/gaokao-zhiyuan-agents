@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.963267",
+    "updated_at": "2026-04-25T20:32:09.920948",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082103",
+    "name": "探测制导与控制技术",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "\"造导弹的硬核专业，军工铁饭碗稳但圈子极小，高薪靠读研进研究所，本科就业面窄如针眼。\"",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.49
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "制导控制涉及物理世界建模、传感器融合、实时控制系统等高度依赖领域知识的硬核技术，核心算法（卡尔曼滤波、PID控制、惯性导航）需要深厚的数学/物理基础和工程经验，AI短期内难以替代此类复杂的系统工程决策。但部分辅助性仿真、信号处理工作可能被AI工具增强。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"造导弹的硬核专业，军工铁饭碗稳但圈子极小，高薪靠读研进研究所，本科就业面窄如针眼。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西北工业大学",
+        "北京理工大学"
+      ],
+      "tier_A": [
+        "南京理工大学",
+        "北京航空航天大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_B": [
+        "西安电子科技大学",
+        "南京航空航天大学",
+        "沈阳理工大学",
+        "中北大学"
+      ],
+      "tier_C_note": "长春理工大学、电子科技大学（成都）及其他开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

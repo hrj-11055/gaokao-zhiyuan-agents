@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.114466",
+    "updated_at": "2026-04-22T01:22:09.475303",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040210TK_电子竞技运动与管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在风口上的\"打游戏\"专业：行业大热但对口率惨淡，只有进头部院校+赛事运营方向才有未来。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 4.0,
+      "future_adaptability": 2.5,
+      "career_path": 1.8,
+      "education_resources": 1.5,
+      "discipline_core": 1.5
+    },
+    "weighted_score": 2.51
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~52.7%",
+      "alignment_rate": "",
+      "starting_salary": "5000–8500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "赛事运营、内容加工、数据统计等岗位的标准化流程部分可被AI工具替代。AI在视频剪辑、数据可视化、文案生成、赛事解说辅助等方面的能力快速提升。但线下活动执行、人际沟通协调、创意策划等环节短期内难以完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在风口上的\"打游戏\"专业：行业大热但对口率惨淡，只有进头部院校+赛事运营方向才有未来。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（本专业尚无院校形成明显学科壁垒和行业统治力）"
+      ],
+      "tier_A": [
+        "首都体育学院",
+        "山东体育学院（校友会A+评级，在该专业上有先发优势和行业资源）"
+      ],
+      "tier_B": [
+        "广州体育学院",
+        "齐鲁工业大学",
+        "河北传媒学院（开设较早，有行业对接资源）"
+      ],
+      "tier_C_note": "三亚学院、四川电影电视学院及各应用型本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

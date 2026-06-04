@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.919597",
+    "updated_at": "2026-04-27T18:43:06.825933",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120207",
+    "name": "审计学",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "\"财务世界的'守门人'，就业率超高但天花板取决于能否啃下CPA，四大是黄金跳板但加班文化极度劝退。\"",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 3.6,
+      "future_adaptability": 2.8,
+      "career_path": 4.2,
+      "education_resources": 3.8,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.5
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6800–11000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "基础审计程序（凭证抽查、数据核对、报表勾稽）可被RPA和AI工具大量替代。但审计职业判断、舞弊识别、复杂交易分析等高阶能力仍依赖人类经验。AI更多替代的是初级审计员的重复性工作，高级审计师/合伙人的核心价值难以替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"财务世界的'守门人'，就业率超高但天花板取决于能否啃下CPA，四大是黄金跳板但加班文化极度劝退。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "清华大学",
+        "上海交通大学",
+        "中山大学",
+        "厦门大学"
+      ],
+      "tier_A": [
+        "南京审计大学（审计学特色王牌）",
+        "西南财经大学",
+        "中央财经大学",
+        "上海财经大学",
+        "对外经济贸易大学",
+        "北京大学",
+        "南开大学",
+        "复旦大学"
+      ],
+      "tier_B": [
+        "浙江工商大学",
+        "广东外语外贸大学",
+        "郑州航空工业管理学院",
+        "天津财经大学",
+        "浙江财经大学",
+        "南京财经大学",
+        "北京工商大学"
+      ],
+      "tier_C_note": "各省地方财经类院校及综合类大学审计学专业，如山东财经大学、云南财经大学、哈尔滨商业大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

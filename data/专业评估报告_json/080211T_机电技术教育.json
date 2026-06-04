@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.924015",
+    "updated_at": "2026-04-25T04:18:31.036680",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080211T_机电技术教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "机电技术涉及大量物理设备的调试、操作和维护，需要动手能力与现场经验，AI难以替代实体操作层面的工作。但常规编程（如PLC编程）和教学设计部分可能被AI辅助工具部分替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业整体缺乏顶尖院校布局）"
+      ],
+      "tier_A": [
+        "浙江师范大学（A+，校友会排名第1）",
+        "天津职业技术师范大学（本硕博贯通，行业标杆）"
+      ],
+      "tier_B": [
+        "河南科技学院（A+）",
+        "岭南师范学院",
+        "江苏理工学院"
+      ],
+      "tier_C_note": "该专业开设院校已全部列出，无更多C档院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.090735",
+    "updated_at": "2026-04-25T05:21:41.114810",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080408",
+    "name": "复合材料与工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "\"航空航天和新能源的'隐形骨架'，战略地位飙升但深造就不了业，硕士是入场券。\"",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.68
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "复合材料结构设计、工艺参数优化、无损检测等核心工作高度依赖实体实验经验和跨学科综合判断，AI 可辅助仿真和数据分析（如有限元分析），但无法替代工艺验证、产线调试和复杂问题诊断。AI+太赫兹无损检测等交叉方向反而是增值机会。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"航空航天和新能源的'隐形骨架'，战略地位飙升但深造就不了业，硕士是入场券。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工业大学",
+        "西北工业大学",
+        "北京航空航天大学"
+      ],
+      "tier_A": [
+        "武汉理工大学",
+        "东华大学",
+        "华东理工大学",
+        "南京工业大学",
+        "上海交通大学"
+      ],
+      "tier_B": [
+        "江苏大学",
+        "青岛科技大学",
+        "济南大学",
+        "中北大学",
+        "哈尔滨工程大学",
+        "天津工业大学",
+        "东莞理工学院"
+      ],
+      "tier_C_note": "黑龙江工程学院、金陵科技学院、重庆科技大学、合肥大学、山东交通学院等 20+ 所地方本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

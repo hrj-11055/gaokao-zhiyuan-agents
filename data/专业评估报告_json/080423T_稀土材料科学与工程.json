@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.998133",
+    "updated_at": "2026-04-25T06:08:22.377223",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080423T_稀土材料科学与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在国家战略风口的\"工业维生素\"猎人，小众精英赛道就业稳、薪资高，但地域受限、深造刚需，耐得住寂寞才值。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.8,
+      "future_adaptability": 3.8,
+      "career_path": 3.2,
+      "education_resources": 2.8,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.72
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "稀土材料研发涉及大量实验室实验验证、材料制备工艺调试和性能测试，这些物理实验环节难以被AI完全替代。但AI辅助材料设计（如材料基因工程、高通量计算筛选）正在渗透研发流程，中国稀土集团已成立\"稀土新材料智能设计研究中心\"。来源：微信公众平台·中稀科创"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在国家战略风口的\"工业维生素\"猎人，小众精英赛道就业稳、薪资高，但地域受限、深造刚需，耐得住寂寞才值。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中南大学（矿业工程/冶金方向A+）",
+        "北京科技大学（冶金工程顶尖）"
+      ],
+      "tier_A": [
+        "东北大学（冶金工程+稀土智能制造）",
+        "江西理工大学（南方稀土核心院校）"
+      ],
+      "tier_B": [
+        "内蒙古科技大学（唯一开设该本科专业）",
+        "西南石油大学（稀土工程方向）",
+        "成都理工大学"
+      ],
+      "tier_C_note": "武汉工程大学、南昌大学、广东工业大学等开设材料类相关专业且具稀土研究方向的高校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

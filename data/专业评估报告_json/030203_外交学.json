@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.952722",
+    "updated_at": "2026-04-21T00:58:49.216786",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "030203",
+    "name": "外交学",
+    "category": "法学",
+    "recommendation_level": "yellow",
+    "summary": "极小众精英赛道，\"外交官摇篮\"光环耀眼，但招生规模极小、对口路径窄，非外交学院/北大/北外基本与\"外交官梦\"无缘。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.3
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,500–9,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "外交谈判中的跨文化理解、政治直觉、人际博弈和利益权衡需要极高的人际感知与策略判断，AI难以替代。但初级政策研究、文本翻译、信息检索类工作可能被AI工具增强/部分替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极小众精英赛道，\"外交官摇篮\"光环耀眼，但招生规模极小、对口路径窄，非外交学院/北大/北外基本与\"外交官梦\"无缘。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "外交学院",
+        "北京大学"
+      ],
+      "tier_A": [
+        "北京外国语大学",
+        "中国人民大学",
+        "武汉大学"
+      ],
+      "tier_B": [
+        "厦门大学",
+        "吉林大学",
+        "广东外语外贸大学"
+      ],
+      "tier_C_note": "西安外国语大学、天津外国语大学、四川外国语大学等开设外交学的省属院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

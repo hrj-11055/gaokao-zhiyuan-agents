@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.954462",
+    "updated_at": "2026-04-25T06:39:58.817120",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080604T_电气工程与智能控制",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "电气+智能双修，踩中新能源与智能制造风口，就业硬核但课程难度大，进国网仍需拼学历。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.3
+    },
+    "weighted_score": 4.14
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~95.8%",
+      "alignment_rate": "",
+      "starting_salary": "7,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "该专业的核心工作涉及硬件电路设计、现场设备调试、物理系统建模与安全验证，这些环节依赖对真实物理世界的理解和动手能力，AI 可辅助优化算法和故障诊断，但无法替代硬件层面的工程判断和现场决策。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "电气+智能双修，踩中新能源与智能制造风口，就业硬核但课程难度大，进国网仍需拼学历。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西南交通大学",
+        "合肥工业大学"
+      ],
+      "tier_A": [
+        "西安理工大学",
+        "沈阳工业大学",
+        "上海海事大学",
+        "辽宁工程技术大学"
+      ],
+      "tier_B": [
+        "山东科技大学",
+        "苏州大学",
+        "西南石油大学",
+        "黑龙江科技大学",
+        "中北大学",
+        "青岛理工大学",
+        "南京工程学院",
+        "北华航天工业学院",
+        "上海电机学院"
+      ],
+      "tier_C_note": "沈阳工程学院、东莞理工学院、福建理工大学、泉州师范学院、周口师范学院、太原工业学院、攀枝花学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

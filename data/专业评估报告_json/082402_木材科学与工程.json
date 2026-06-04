@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.968249",
+    "updated_at": "2026-04-25T21:46:03.927506",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082402",
+    "name": "木材科学与工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "传统木材的科技重生——绿色风口下的冷门赛道，竞争少、就业稳，但圈子小、天花板依赖深造。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.4,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.17
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "木材微观结构分析、复合材料配方优化、木结构工程力学计算等核心技能涉及物理实验和现场工程判断，AI 可辅助但不能替代。但基础绘图、常规检测报告编写等环节存在被自动化工具替代的风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "传统木材的科技重生——绿色风口下的冷门赛道，竞争少、就业稳，但圈子小、天花板依赖深造。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东北林业大学（211，林业工程 A+）",
+        "南京林业大学（双一流，林业工程 A+）"
+      ],
+      "tier_A": [
+        "北京林业大学（211，林业工程 B）",
+        "西北农林科技大学（985，林业工程 B+）"
+      ],
+      "tier_B": [
+        "中南林业科技大学",
+        "浙江农林大学",
+        "西南林业大学",
+        "安徽农业大学",
+        "福建农林大学",
+        "广西大学"
+      ],
+      "tier_C_note": "北华大学、内蒙古农业大学、江西农业大学、华南农业大学、山西农业大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

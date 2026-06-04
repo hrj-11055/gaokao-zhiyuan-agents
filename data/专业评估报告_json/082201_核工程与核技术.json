@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.035546",
+    "updated_at": "2026-04-25T20:53:23.298824",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082201",
+    "name": "核工程与核技术",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "国家战略刚需的\"小众精英赛道\"，壁垒高、就业稳、薪资有竞争力，但高度依赖深造，工作地点偏远且受行业天花板限制。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.4,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.6,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.77
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~90%",
+      "alignment_rate": "~85%",
+      "starting_salary": "8000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "核反应堆物理计算、辐射防护设计、安全分析等涉及复杂物理建模和严格安全监管的环节，AI 只能辅助运算，核心决策和责任必须由持证专业人员承担；注册核安全工程师等准入门槛强化了人力不可替代性。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略刚需的\"小众精英赛道\"，壁垒高、就业稳、薪资有竞争力，但高度依赖深造，工作地点偏远且受行业天花板限制。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "中国科学技术大学",
+        "西安交通大学",
+        "上海交通大学"
+      ],
+      "tier_A": [
+        "哈尔滨工程大学",
+        "四川大学",
+        "北京大学",
+        "复旦大学",
+        "武汉大学"
+      ],
+      "tier_B": [
+        "南华大学（核技术应用与辐射防护特色）",
+        "东华理工大学（铀矿采冶特色）",
+        "华北电力大学（核电与电气结合）",
+        "重庆大学",
+        "南京航空航天大学",
+        "成都理工大学",
+        "兰州大学"
+      ],
+      "tier_C_note": "烟台大学、成都理工大学工程技术学院、沈阳工程学院、东北电力大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.010905",
+    "updated_at": "2026-04-23T13:34:34.212160",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050254",
+    "name": "斯洛文尼亚语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极度稀缺的\"冷兵器\"，全国仅两校开设、年毕业生不足百人，外交部定点收割；但市场总量极小，纯语言路线天花板低，必须\"语言+\"才有出路。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 2.5,
+      "future_adaptability": 1.8,
+      "career_path": 2.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "翻译行业是AI冲击最直接的领域之一。中国翻译协会2025报告显示大语言模型应用渗透率达97.1%，65%翻译岗位将演变为AI辅助型。斯洛文尼亚语虽属稀缺语种，AI训练数据较少，但随着模型能力提升，基础翻译和文本处理类工作仍面临替代风险。仅外交口译、文学翻译、跨文化沟通等高端场景仍高度依赖人工。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度稀缺的\"冷兵器\"，全国仅两校开设、年毕业生不足百人，外交部定点收割；但市场总量极小，纯语言路线天花板低，必须\"语言+\"才有出路。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学"
+      ],
+      "tier_A": [
+        "（无）"
+      ],
+      "tier_B": [
+        "北京第二外国语学院"
+      ],
+      "tier_C_note": "（全国仅以上2所开设，无更多院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

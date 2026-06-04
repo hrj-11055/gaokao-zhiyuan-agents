@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.942384",
+    "updated_at": "2026-04-28T12:51:41.357389",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130402",
+    "name": "绘画",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "手握画笔的浪漫主义者——被AI冲击最狠的艺术专业之一，天赋与资源双重筛选，纯艺术道路九死一生。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.0,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 2.56
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3,500–5,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "AI 绘画工具（Midjourney v6、Stable Diffusion XL、DALL-E 3、Firefly）已能生成商用级图像，商业插画、概念设计、平面素材等传统绘画就业领域正被 AI 大规模替代。仅纯原创艺术表达、策展、艺术批评等领域尚有一定抗性。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "手握画笔的浪漫主义者——被AI冲击最狠的艺术专业之一，天赋与资源双重筛选，纯艺术道路九死一生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央美术学院",
+        "中国美术学院",
+        "清华大学（美术学院）"
+      ],
+      "tier_A": [
+        "广州美术学院",
+        "四川美术学院",
+        "鲁迅美术学院",
+        "西安美术学院",
+        "天津美术学院",
+        "湖北美术学院（以上为\"八大美院\"其余六所）",
+        "南京艺术学院",
+        "上海大学（上海美术学院）"
+      ],
+      "tier_B": [
+        "首都师范大学",
+        "华东师范大学",
+        "东北师范大学",
+        "南京师范大学",
+        "湖南师范大学",
+        "西南大学",
+        "山东艺术学院",
+        "广西艺术学院",
+        "云南艺术学院",
+        "吉林艺术学院"
+      ],
+      "tier_C_note": "各省属综合性大学的美术学院（如河北师范大学、河南大学、西北师范大学等），以及近年来新开设美术类专业的地方本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

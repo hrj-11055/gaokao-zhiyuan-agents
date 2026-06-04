@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.808090",
+    "updated_at": "2026-05-10T01:14:22.271122",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖北商贸学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 2.6,
+      "location_advantage": 4.5,
+      "globalization": 2.0,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.2
+    },
+    "weighted_score": 2.82,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 55210,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "武汉",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "湖北商贸学院是一所以经、管、艺为主干，工、文、外、教等多学科协调发展的全日制普通民办本科高校。其前身可追溯至 2003 年创办的湖北工业大学商贸学院，2015 年经教育部批准转设为独立设置的民办普通本科高校。\n\n**Identity（核心定位）**：深耕武汉、以财经与艺术见长的头部应用型民办本科高校。学校在转设后经历了快速的品牌重塑，试图从传统的“独立学院”影子中脱离，构建以“商贸+艺术”为核心的双轮驱动模式。\n\n**Ace（王牌优势）**：地理位置是该校的核心护城河。武汉校区坐落于光谷核心区的杨家湾，紧邻地铁 2 号线，这种“出门即商圈、入校即静谧”的区位在民办高校中极具稀缺性。此外，其艺术设计学院在省内民办高校中积淀较深，多次在全国大学生广告艺术大赛等赛事中获奖。\n\n**Vibe（文化特质）**：务实、商业化导向，注重考证与技能竞赛。校园氛围相对活跃，由于地处光谷，学生受周边高新企业和创业氛围影响较大，整体呈现出较强的“就业导向型”特质。\n\n**Risk（潜在风险）**：学费成本与产出比的博弈是核心矛盾。年学费在 2.2 万至 2.8 万之间，对于普通家庭而言是一笔不小的开支。同时，尽管就业率数据尚可，但高质量就业（如进入头部大厂、考取名校研究生）的比例仍有待提升，生源质量在不同省份之间存在较大跨度。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "光谷核心",
+        "艺术见长",
+        "考证达人",
+        "地铁大学",
+        "务实就业",
+        "双校区生活",
+        "商圈环绕"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

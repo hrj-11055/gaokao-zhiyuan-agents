@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.983288",
+    "updated_at": "2026-04-26T02:39:29.307964",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090102",
+    "name": "园艺",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "\"看似诗情画意的'种花种菜'专业，实则薪酬偏低、路径单一，唯一指望是搭上智慧农业和乡村振兴的政策快车。\"",
+    "radar": {
+      "market_return": 2.7,
+      "industry_outlook": 3.3,
+      "future_adaptability": 3.2,
+      "career_path": 2.5,
+      "education_resources": 3.3,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.02
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3,000–5,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "园艺核心技能涉及田间实践操作（嫁接、修剪、育种选育）、植物病虫害实地诊断、设施环境调控等，高度依赖经验判断和手工操作，短期内难以被 AI 完全替代。但 AI 正在改变上游（育种算法、精准灌溉决策），未来需主动拥抱 AI 工具才能保持竞争力。来源：国务院《关于深入实施\"人工智能+\"行动的意见》（2025 年 8 月）；南京农业大学、中国农业大学 AI+农业成果发布。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"看似诗情画意的'种花种菜'专业，实则薪酬偏低、路径单一，唯一指望是搭上智慧农业和乡村振兴的政策快车。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "华中农业大学",
+        "浙江大学",
+        "南京农业大学"
+      ],
+      "tier_A": [
+        "中国农业大学",
+        "西北农林科技大学",
+        "上海交通大学",
+        "华南农业大学",
+        "沈阳农业大学",
+        "山东农业大学",
+        "湖南农业大学"
+      ],
+      "tier_B": [
+        "河北农业大学",
+        "安徽农业大学",
+        "福建农林大学",
+        "西南大学",
+        "东北农业大学",
+        "四川农业大学",
+        "海南大学",
+        "河南农业大学"
+      ],
+      "tier_C_note": "各省属农业大学及地方本科院校中开设园艺专业的学校，如山西农业大学、甘肃农业大学、云南农业大学、新疆农业大学、石河子大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

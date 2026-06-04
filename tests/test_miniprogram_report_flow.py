@@ -126,6 +126,56 @@ class MiniprogramReportFlowTests(unittest.TestCase):
         self.assertIn("err.statusCode === 429", page)
         self.assertIn("isCooldown", page)
 
+    def test_report_generation_polls_pregeneration_before_long_request(self):
+        page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
+        pregen_composable = self.read("gaokao-miniprogram/src/composables/useReportPregen.js")
+        pregen_api = self.read("gaokao-miniprogram/src/api/pregenerate.js")
+        helper_path = ROOT / "gaokao-miniprogram/src/utils/report-pregen-wait.js"
+
+        self.assertTrue(helper_path.exists(), "report pre-generation polling helper is required")
+        helper = helper_path.read_text(encoding="utf-8")
+
+        self.assertIn("tryTriggerPregenerate({ force: true })", page)
+        self.assertIn("waitForPregeneratedReport", page)
+        self.assertIn("force = false", pregen_composable)
+        self.assertIn("!force && lastFingerprint === fingerprint", pregen_composable)
+        self.assertIn("/api/report/pre-generate/status?t=${Date.now()}", pregen_api)
+        self.assertIn("async function claimPregeneratedReport()", page)
+        self.assertGreaterEqual(page.count("await claimPregeneratedReport()"), 2)
+        save_helper = page.split("function saveGeneratedReportResult", 1)[1].split(
+            "async function claimPregeneratedReport", 1
+        )[0]
+        self.assertIn("isFakeProgressActive.value = false", save_helper)
+
+        script = textwrap.dedent(f"""
+            const fs = require('node:fs')
+            const assert = require('node:assert/strict')
+            const source = fs.readFileSync({str(helper_path)!r}, 'utf8')
+            const moduleUrl = `data:text/javascript;base64,${{Buffer.from(source).toString('base64')}}`
+
+            ;(async () => {{
+              const {{ waitForPregeneratedReport }} = await import(moduleUrl)
+              const statuses = [
+                {{ status: 'pending' }},
+                {{ status: 'pending' }},
+                {{ status: 'ready', url: 'https://example.com/report.html', completedAt: 123 }},
+              ]
+              const result = await waitForPregeneratedReport({{
+                checkStatus: async () => statuses.shift(),
+                intervalMs: 0,
+                timeoutMs: 1000,
+                sleep: async () => {{}},
+              }})
+
+              assert.equal(result.url, 'https://example.com/report.html')
+              assert.equal(statuses.length, 0)
+            }})().catch((err) => {{
+              console.error(err)
+              process.exitCode = 1
+            }})
+        """)
+        subprocess.run(["node", "-e", script], check=True, capture_output=True, text=True)
+
 
 if __name__ == "__main__":
     unittest.main()

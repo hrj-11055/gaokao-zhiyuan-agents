@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.933945",
+    "updated_at": "2026-04-27T05:38:21.829163",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "101009T_康复物理治疗",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "踩中老龄化+运动健康两大风口，行业需求旺盛但人才培养体系尚不成熟，属于\"赛道好但学历溢价有限\"的实操型专业。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.6,
+      "future_adaptability": 4.2,
+      "career_path": 3.4,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.86
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "物理治疗的核心是徒手操作、人体运动功能评估和个性化治疗方案的制定，需要高度的手部精细操作能力和与患者的面对面交互，AI和机器人目前仅能辅助评估和辅助训练，无法替代核心治疗操作。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "踩中老龄化+运动健康两大风口，行业需求旺盛但人才培养体系尚不成熟，属于\"赛道好但学历溢价有限\"的实操型专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "复旦大学（华山医院康复）",
+        "四川大学（华西医院康复）",
+        "中山大学"
+      ],
+      "tier_A": [
+        "首都医科大学",
+        "南京医科大学",
+        "上海中医药大学",
+        "北京中医药大学",
+        "温州医科大学",
+        "南方医科大学"
+      ],
+      "tier_B": [
+        "福建医科大学",
+        "昆明医科大学",
+        "徐州医科大学",
+        "湖南中医药大学",
+        "黑龙江中医药大学",
+        "广州中医药大学"
+      ],
+      "tier_C_note": "各地方医学院及综合大学中近年新开设该专业的院校（如赣南医学院、齐鲁医药学院等），该专业在普通院校中仍有开设意义，因为康复治疗师全国缺口巨大，地方院校毕业生在基层医疗机构就业有明确需求。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.596695",
+    "updated_at": "2026-05-11T19:48:51.320814",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "阜阳理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.31,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "阜阳师范大学",
+        "similarity": "同类院校",
+        "key_difference": "阜阳理工在行政级别、学术积淀和保研资格上完全处于下风，但其优势在于“包袱轻、转型快”。在专业设置上，阜阳理工更敢于砍掉夕阳专业，上马人工智能、新能源等热门方向。"
+      },
+      {
+        "name": "省内其他民办本科",
+        "similarity": "同类院校",
+        "key_difference": "阜阳理工的“国资背景”是其最大的护城河。在民办高校普遍面临生源危机和资金链压力的背景下，阜阳理工的政府信用背书使其在校企合作、实习基地建设以及校园扩建上拥有极强的资源调配能力。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "阜阳理工学院（Fuyang Institute of Technology）是一所极具特殊性的应用型本科高校。其核心标签在于“国有独资民办”——由阜阳市属国企（阜阳投资发展集团）举办，这使其在办学稳定性上远超传统家族式或企业式民办院校。学校前身为阜阳师范大学信息工程学院，于2023年底正式完成转设。\n\n从学术维度看，学校目前正处于“去师范化”并向“硬核理工”转型的阵痛期。虽然在国家级奖项和高层次人才储备上尚显薄弱，但其学科布局紧贴皖北及长三角制造业需求。在生源端，学校在安徽省内拥有稳定的二本客群，且随着西湖校区（新校区）的全面投入使用，硬件设施已跃居省内同类院校领先水平。\n\n风险方面，主要集中在品牌重塑的周期性压力。社会公众对“理工学院”这一新身份的认知仍需时间沉淀，且在高端就业市场（如头部互联网、金融机构）的竞争力仍有待通过多届毕业生的表现来证明。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "阜阳师范大学",
+          "similarity": "同类院校",
+          "key_difference": "阜阳理工在行政级别、学术积淀和保研资格上完全处于下风，但其优势在于“包袱轻、转型快”。在专业设置上，阜阳理工更敢于砍掉夕阳专业，上马人工智能、新能源等热门方向。"
+        },
+        {
+          "name": "省内其他民办本科",
+          "similarity": "同类院校",
+          "key_difference": "阜阳理工的“国资背景”是其最大的护城河。在民办高校普遍面临生源危机和资金链压力的背景下，阜阳理工的政府信用背书使其在校企合作、实习基地建设以及校园扩建上拥有极强的资源调配能力。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

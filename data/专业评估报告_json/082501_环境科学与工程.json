@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.891457",
+    "updated_at": "2026-04-25T22:01:23.571457",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082501",
+    "name": "环境科学与工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "\"双碳风口下的'冷门工科'，政策红利确定但变现慢，起薪中游需靠证书和深造翻盘，属于'前苦后甜'的长线专业。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.4,
+      "career_path": 3.0,
+      "education_resources": 3.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.38
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "环境监测、采样分析等标准化环节面临 AI+自动化替代风险，但现场调查、复杂环境系统诊断、环评报告撰写中的法规判断、碳核算中的政策解读等需要人类经验与判断力的任务不易被替代。AI 更可能成为辅助工具而非替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"双碳风口下的'冷门工科'，政策红利确定但变现慢，起薪中游需靠证书和深造翻盘，属于'前苦后甜'的长线专业。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "同济大学",
+        "哈尔滨工业大学",
+        "北京大学",
+        "南京大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "北京师范大学",
+        "复旦大学",
+        "河海大学",
+        "中国海洋大学",
+        "厦门大学",
+        "武汉大学",
+        "华中科技大学",
+        "西安建筑科技大学"
+      ],
+      "tier_B": [
+        "北京工业大学",
+        "华东理工大学",
+        "南京工业大学",
+        "浙江工业大学",
+        "广东工业大学",
+        "云南大学",
+        "山东科技大学",
+        "江苏大学",
+        "桂林理工大学",
+        "长沙理工大学"
+      ],
+      "tier_C_note": "河北环境工程学院、山西农业大学、吉林化工学院、绍兴文理学院、青岛理工大学、南昌航空大学、内蒙古科技大学、天津理工大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

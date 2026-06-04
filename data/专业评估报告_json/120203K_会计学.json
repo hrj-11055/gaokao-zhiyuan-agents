@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.929216",
+    "updated_at": "2026-04-28T01:04:46.748098",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120203K_会计学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "万金油也万金油——就业面宽但内卷极深，考下注会才是分水岭，AI 来袭后低端核算岗加速消亡，高端分析岗逆势吃香。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.0,
+      "future_adaptability": 2.5,
+      "career_path": 3.5,
+      "education_resources": 4.0,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.09
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "基础核算、报表编制、凭证录入等重复性工作已被 RPA（机器人流程自动化）和 AI 财务系统大量替代。德勤、普华永道等已部署 AI 审计工具。但涉及复杂职业判断（如公允价值评估、舞弊识别、税务筹划）的岗位短期内仍依赖人类专家。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "万金油也万金油——就业面宽但内卷极深，考下注会才是分水岭，AI 来袭后低端核算岗加速消亡，高端分析岗逆势吃香。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "上海财经大学",
+        "厦门大学",
+        "清华大学",
+        "北京大学"
+      ],
+      "tier_A": [
+        "中央财经大学",
+        "对外经济贸易大学",
+        "中山大学",
+        "复旦大学",
+        "南开大学",
+        "西南财经大学",
+        "中南财经政法大学",
+        "东北财经大学",
+        "南京大学",
+        "西安交通大学",
+        "武汉大学",
+        "湖南大学（含湖南财经学院合并）"
+      ],
+      "tier_B": [
+        "江西财经大学",
+        "浙江工商大学",
+        "天津财经大学",
+        "首都经济贸易大学",
+        "北京工商大学",
+        "山东财经大学",
+        "云南财经大学",
+        "安徽财经大学",
+        "浙江财经大学",
+        "广东财经大学",
+        "南京财经大学",
+        "哈尔滨商业大学"
+      ],
+      "tier_C_note": "各省属综合类大学及地方财经类院校，如河北大学、河南大学、广西大学、贵州大学等开设会计学专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

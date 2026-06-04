@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.175331",
+    "updated_at": "2026-04-25T17:04:10.257389",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081406T_智能地球探测",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "AI 赋能地质勘探的新工科\"试验田\"，方向性感十足但开课仅五年、全国仅五校开设，建议高分段冲名校、低分段观望。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.8,
+      "future_adaptability": 4.2,
+      "career_path": 2.8,
+      "education_resources": 2.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业本身就是\"AI + 地球科学\"的交叉产物，核心价值在于利用 AI 解决物理世界探测问题——野外数据采集、多源异构数据融合、复杂地质条件下的反演建模等场景，高度依赖物理直觉和领域经验，AI 是工具而非替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "AI 赋能地质勘探的新工科\"试验田\"，方向性感十足但开课仅五年、全国仅五校开设，建议高分段冲名校、低分段观望。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国地质大学（北京）（211/双一流，地质资源与地质工程 A+，2025 软科排名第一）"
+      ],
+      "tier_A": [
+        "西南交通大学（211/双一流，2025 ABC 排名全国第一，地质资源与地质工程 B+）"
+      ],
+      "tier_B": [
+        "东华理工大学（省重点，校友会 2025 排名全国第一，核地质特色鲜明，地球物理学 B）",
+        "华北水利水电大学（省重点，水利特色）"
+      ],
+      "tier_C_note": "山东石油化工学院（普通本科，石油石化行业背景，尚未参评）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

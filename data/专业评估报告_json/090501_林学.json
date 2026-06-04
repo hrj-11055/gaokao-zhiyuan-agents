@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.984499",
+    "updated_at": "2026-04-26T12:45:56.039218",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090501",
+    "name": "林学",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "\"绿水青山就是金山银山\"的国策风口专业，但起薪低、地域偏、需\"林学+\"复合技能才能翻盘，纯传统路径天花板明显。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.26
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "林学的野外调查、生态系统评估、植物识别等核心工作涉及大量非标准化场景和实地经验，AI可辅助数据分析但难以完全替代。智慧林业反而是林学+AI的增量机会。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"绿水青山就是金山银山\"的国策风口专业，但起薪低、地域偏、需\"林学+\"复合技能才能翻盘，纯传统路径天花板明显。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京林业大学",
+        "南京林业大学"
+      ],
+      "tier_A": [
+        "西北农林科技大学（985/A-）",
+        "东北林业大学（211/B+）",
+        "浙江农林大学（B+）",
+        "福建农林大学（B+）"
+      ],
+      "tier_B": [
+        "中南林业科技大学",
+        "四川农业大学",
+        "西南林业大学",
+        "华南农业大学",
+        "内蒙古农业大学"
+      ],
+      "tier_C_note": "河北农业大学、江西农业大学、山东农业大学、安徽农业大学、河南农业大学、贵州大学、北华大学、沈阳农业大学、甘肃农业大学、山西农业大学、吉林农业大学、新疆农业大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

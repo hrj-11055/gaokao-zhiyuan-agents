@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.130093",
+    "updated_at": "2026-04-27T03:11:14.205962",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100706T_药物化学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"药企研发的幕后英雄——高学历门槛、长周期回报，入行容易出头难，读研是标配不是选项。\"",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.8,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5500–7500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 辅助药物设计（AIDD）正在快速发展，可加速分子筛选和结构优化，但药物化学的核心——合成路线设计、反应条件优化、手性控制——仍高度依赖实验经验和化学直觉，短期内 AI 难以完全替代。AI 更可能成为药物化学家的工具而非替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"药企研发的幕后英雄——高学历门槛、长周期回报，入行容易出头难，读研是标配不是选项。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国药科大学",
+        "北京大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "四川大学（华西）",
+        "沈阳药科大学",
+        "浙江大学",
+        "上海交通大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "山东大学",
+        "华中科技大学",
+        "中南大学",
+        "华东理工大学",
+        "南京医科大学",
+        "广东药科大学",
+        "浙江工业大学"
+      ],
+      "tier_C_note": "各地方医学院校及综合性大学的药学类院系，如蚌埠医学院、徐州医科大学、江西中医药大学等设有药物化学方向的本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

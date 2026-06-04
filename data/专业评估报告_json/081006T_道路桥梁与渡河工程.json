@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.006428",
+    "updated_at": "2026-04-25T14:33:26.642850",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081006T_道路桥梁与渡河工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"基建狂魔的核心引擎，就业稳但薪资钝化，野外常驻是甜蜜的代价——能吃苦才有未来。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.8,
+      "career_path": 3.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.1
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "复杂地质条件下的结构设计决策、现场工程判断、施工方案优化仍高度依赖人类工程师经验。但BIM正向设计、结构计算、图纸生成等重复性工作正被AI加速替代（AI设计工具减少人为错误率达40%）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"基建狂魔的核心引擎，就业稳但薪资钝化，野外常驻是甜蜜的代价——能吃苦才有未来。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东南大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_A": [
+        "长安大学",
+        "西南交通大学",
+        "吉林大学",
+        "武汉理工大学",
+        "郑州大学",
+        "长沙理工大学"
+      ],
+      "tier_B": [
+        "河北工业大学",
+        "兰州交通大学",
+        "兰州理工大学",
+        "太原理工大学",
+        "安徽建筑大学",
+        "山东建筑大学",
+        "沈阳建筑大学",
+        "重庆交通大学",
+        "广东工业大学",
+        "天津城建大学"
+      ],
+      "tier_C_note": "华北水利水电大学、内蒙古大学、吉林建筑大学、青岛理工大学、河南工业大学、南华大学、宁夏大学、长春工程学院、台州学院、东莞理工学院、黑龙江科技大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

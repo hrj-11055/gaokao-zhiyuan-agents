@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.700320",
+    "updated_at": "2026-05-11T20:56:25.677014",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "石家庄学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "最适合希望在河北省内（尤其是石家庄）从事教育、医药、电子信息或政法行业，且追求“高就业率+低试错成本”的省内中段位考生。",
+    "radar": {},
+    "weighted_score": 2.73,
+    "one_sentence_recommend": "最适合希望在河北省内（尤其是石家庄）从事教育、医药、电子信息或政法行业，且追求“高就业率+低试错成本”的省内中段位考生。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**1. Identity（核心定位）：**\n石家庄学院是河北省属重点转型应用型本科院校，也是石家庄市唯一的全日制公办本科高校。其身份具有双重属性：一方面承袭了深厚的师范教育传统，是当地基础教育师资的重要摇篮；另一方面，作为“石家庄市自己的大学”，它在近年来深度绑定了城市发展战略，成为石家庄建设“中国药都”和“电子信息名城”的核心人才储备库。\n\n**2. Ace（王牌优势）：**\n学校的绝对优势在于“产教融合的深度”。不同于传统研究型大学，石家庄学院将实验室直接对接高新区的生产线。其生物医药现代产业学院是河北省首批示范性产业学院，与石药集团、以岭药业等行业巨头建立了“订单式”培养机制。此外，师范类专业在省内地市级学校中具有极强的校友网络优势。\n\n**3. Vibe（文化特质）：**\n务实、稳健、考研导向。校园氛围并不浮躁，学生群体表现出极强的“向上流动”欲望。在石家庄学院，图书馆的灯光通常比操场的喧闹更持久。这种文化特质使得该校学生在考公、考编以及考研（尤其是逆袭至 211/985 高校）方面具有较强的韧性。\n\n**4. Risk（潜在风险）：**\n学科层次的“天花板”效应明显。目前学校尚无博士点，硕士点建设虽在加速但总量仍有限，这限制了其在国家级重大科研项目上的竞争能力。同时，学校的品牌影响力高度集中在京津冀地区，省外知名度有待提升，对于希望跨区域就业的学生来说，品牌溢价能力较弱。",
+      "one_sentence_recommend": "最适合希望在河北省内（尤其是石家庄）从事教育、医药、电子信息或政法行业，且追求“高就业率+低试错成本”的省内中段位考生。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "考研大户",
+        "药都子弟",
+        "师范底色",
+        "高新区",
+        "性价比",
+        "踏实",
+        "逆袭"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

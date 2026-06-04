@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.905900",
+    "updated_at": "2026-04-27T12:56:39.636501",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120410T_健康服务与管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "风口上的\"大健康\"赛道选手，行业万亿增长但专业壁垒低，本科毕业易沦为\"万金油\"，考研或考证才能站稳脚跟。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 4.4,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 2.8,
+      "discipline_core": 2.2
+    },
+    "weighted_score": 3.19
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "健康数据分析、风险评估报告生成、个性化健康方案制定等核心工作内容中，大量流程化、数据驱动的环节可被AI辅助甚至替代。AI在健康画像生成、慢病管理方案推荐等方面已开始应用。但需要人际沟通和线下服务交付的岗位（如社区健康管理、健康咨询面对面服务）尚有一定护城河。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "风口上的\"大健康\"赛道选手，行业万亿增长但专业壁垒低，本科毕业易沦为\"万金油\"，考研或考证才能站稳脚跟。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东北大学（秦皇岛分校）",
+        "南方医科大学"
+      ],
+      "tier_A": [
+        "杭州师范大学",
+        "中国药科大学",
+        "中国医科大学",
+        "哈尔滨医科大学",
+        "广州中医药大学",
+        "广西师范大学"
+      ],
+      "tier_B": [
+        "浙江中医药大学",
+        "湖北医药学院",
+        "新乡医学院",
+        "西南医科大学",
+        "上海健康医学院",
+        "成都中医药大学",
+        "山东中医药大学",
+        "天津中医药大学"
+      ],
+      "tier_C_note": "其余约100余所开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

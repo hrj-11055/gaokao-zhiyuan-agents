@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.969569",
+    "updated_at": "2026-04-25T14:59:53.878974",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081013T_工程软件",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略催生的\"工程+软件\"交叉新贵，卡脖子领域的破局尖兵，但2024年刚开专业、全国仅山大一所，无毕业生先例，是一场高赔率的前瞻性押注。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.7,
+      "future_adaptability": 4.2,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 4.0
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "工程软件的核心——几何建模内核、多物理场求解器、有限元分析算法——需要极深的数学/力学/工程领域知识，AI 短期无法替代。但低级代码编写和参数调优可能被 AI 辅助工具部分替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略催生的\"工程+软件\"交叉新贵，卡脖子领域的破局尖兵，但2024年刚开专业、全国仅山大一所，无毕业生先例，是一场高赔率的前瞻性押注。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "山东大学（全国唯一开设院校，依托土木工程 A- 和软件工程 A- 双学科，院士领衔，2024 年首招 60 人）"
+      ],
+      "tier_A": [
+        "[暂无，专业尚未推广。但以下院校在相关交叉方向具备强势基础，未来可能跟进开设]"
+      ],
+      "tier_B": [
+        "[暂无]"
+      ],
+      "tier_C_note": "[暂无其他院校开设]",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

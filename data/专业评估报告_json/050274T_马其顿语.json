@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.183493",
+    "updated_at": "2026-04-24T09:44:26.813821",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "050274T_马其顿语",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国年毕业生不足50人的超稀缺语种，依附\"一带一路\"战略获得少量刚性需求，但岗位极度有限，本质是一场\"赌国运\"的小众博弈。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.5,
+      "career_path": 2.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "马其顿语属于低资源语言（全球仅约200万人使用），主流 AI 大模型对其语料覆盖极差——塞尔维亚语在通用模型中 token 占比不足 0.1%，马其顿语情况更为严峻（来源：2025世界人工智能大会WAIC研讨）。短期内 AI 机器翻译无法有效替代马其顿语人工翻译，专业稀缺性反而构成了一定的\"AI护城河\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国年毕业生不足50人的超稀缺语种，依附\"一带一路\"战略获得少量刚性需求，但岗位极度有限，本质是一场\"赌国运\"的小众博弈。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（国内唯一具备完整马其顿语本科培养体系的院校，外交部定点选拔，与斯科普里大学合作，师资最强）"
+      ],
+      "tier_A": [
+        "上海外国语大学（外国语言文学A+学科，若开设马其顿语方向则资源优质）"
+      ],
+      "tier_B": [
+        "广东外语外贸大学（侧重经贸方向，部分来源提及开设）"
+      ],
+      "tier_C_note": "暂无其他院校稳定开设此专业",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

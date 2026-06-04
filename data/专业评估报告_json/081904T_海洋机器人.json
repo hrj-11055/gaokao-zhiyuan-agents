@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.964145",
+    "updated_at": "2026-04-25T19:28:28.114618",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081904T_海洋机器人",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略风口上的小众硬核专业，技术壁垒极高、就业面极窄但薪资可观，适合决心深耕海洋+AI交叉领域的理工学霸。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "海洋机器人本身就是AI技术的应用场景和推动者，其核心技能——水下导航算法、深海感知融合、极端环境自主决策——属于AI最前沿的应用方向，AI是赋能工具而非替代威胁。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略风口上的小众硬核专业，技术壁垒极高、就业面极窄但薪资可观，适合决心深耕海洋+AI交叉领域的理工学霸。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工程大学（全国首创",
+        "A+学科支撑",
+        "国家级重点实验室）"
+      ],
+      "tier_A": [
+        "湖南科技大学（A+评级",
+        "学科建设成熟）"
+      ],
+      "tier_B": [
+        "山东交通学院（2024软科A+，应用型特色）",
+        "福建理工大学（2023年新设，发展中）"
+      ],
+      "tier_C_note": "暂无。该专业全国仅4所高校开设，均为有意为之的战略布局。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

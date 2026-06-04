@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.956209",
+    "updated_at": "2026-04-25T01:26:12.285483",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070804TK_行星科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略级冷门学科，赛道窄但增速猛，必须读博才能\"上岸\"，非科研狂热者慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.48
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "行星科学核心涉及复杂物理建模、遥感数据解译、野外地质类比分析、多学科交叉推理——这些任务需要物理直觉和创造性科学思维，AI可辅助数据处理但无法替代科学家的假设提出和任务设计能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略级冷门学科，赛道窄但增速猛，必须读博才能\"上岸\"，非科研狂热者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "中国科学技术大学"
+      ],
+      "tier_A": [
+        "南京大学"
+      ],
+      "tier_B": [
+        "中山大学",
+        "成都理工大学"
+      ],
+      "tier_C_note": "中国地质大学（北京）、贵州大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

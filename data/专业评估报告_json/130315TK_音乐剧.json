@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.086525",
+    "updated_at": "2026-04-28T09:58:55.059714",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130315TK_音乐剧",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "舞台梦的窄门，天赋与资本双高门槛，就业极度集中于一线城市，非名校+非天赋型选手慎入。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 3.8,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 2.88
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "音乐剧表演需要真人舞台呈现、即兴互动、情感表达与肢体协调，这些是 AI 难以替代的核心能力。但部分幕后岗位（编曲、舞美设计辅助）已受 AI 工具冲击。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "舞台梦的窄门，天赋与资本双高门槛，就业极度集中于一线城市，非名校+非天赋型选手慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央戏剧学院",
+        "上海音乐学院"
+      ],
+      "tier_A": [
+        "北京舞蹈学院",
+        "上海戏剧学院",
+        "南京艺术学院",
+        "中国传媒大学"
+      ],
+      "tier_B": [
+        "浙江音乐学院",
+        "星海音乐学院",
+        "四川音乐学院",
+        "武汉音乐学院",
+        "沈阳音乐学院",
+        "山东艺术学院"
+      ],
+      "tier_C_note": "部分综合类大学艺术学院（如重庆大学美视电影学院等）的音乐剧方向",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

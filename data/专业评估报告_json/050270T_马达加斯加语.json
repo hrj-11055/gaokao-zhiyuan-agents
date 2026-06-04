@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.004032",
+    "updated_at": "2026-04-24T09:22:38.204714",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "050270T_马达加斯加语",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国唯一的\"独苗\"专业，极度稀缺但需求极窄，体制内通道明确，体制外几乎无路——赌的是中非合作的未来。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.5,
+      "career_path": 2.6,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.9
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "马达加斯加语使用人口约2700万，语料库规模小，AI大模型训练数据极度匮乏，机器翻译质量远不如英/法/西等大语种。高端外交谈判、商务谈判中的口译和文化斡旋能力难以被AI替代。但基础文本翻译功能已被AI部分覆盖。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国唯一的\"独苗\"专业，极度稀缺但需求极窄，体制内通道明确，体制外几乎无路——赌的是中非合作的未来。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（全国唯一专业点，双一流/211，非洲学院资源丰富，马语+法语复语培养，与塔那那利佛大学有校际合作）"
+      ],
+      "tier_A": [
+        "暂无（该专业全国仅北外开设）"
+      ],
+      "tier_B": [
+        "暂无"
+      ],
+      "tier_C_note": "暂无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

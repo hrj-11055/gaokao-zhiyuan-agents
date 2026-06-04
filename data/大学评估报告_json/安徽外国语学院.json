@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.921782",
+    "updated_at": "2026-05-11T19:26:58.126747",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "安徽外国语学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.1,
+      "graduate_value": 2.8,
+      "location_advantage": 3.2,
+      "globalization": 3.5,
+      "student_empowerment": 3.0,
+      "brand_asset": 3.4
+    },
+    "weighted_score": 2.79,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "安徽三联学院",
+        "similarity": "同类院校",
+        "key_difference": "三联学院以工科、交通类专业见长，具有较强的产业背景；而安外在文科、语言类及国际化氛围上具有压倒性优势。对于文科生或计划从事涉外工作的学生，安外的专业匹配度更高。"
+      },
+      {
+        "name": "安徽新华学院",
+        "similarity": "同类院校",
+        "key_difference": "新华学院规模更大，学科门类更全，综合排名略高；但安外在“外国语”这一细分赛道上的品牌垂直度更深，其小语种专业群的完整度在省内民办高校中首屈一指。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "安徽外国语学院（Anhui International Studies University）作为中部地区唯一一所独立设置的民办全日制本科外国语学院，其在安徽省乃至华东地区的民办教育版图中占据着独特的生态位。从学术维度看，该校正处于从“纯教学型”向“应用研究型”转型的关键期，2024年正式获批硕士学位授予立项建设单位，标志着其办学层次即将实现质的飞跃。\n\n在人才培养方面，学校表现出极强的“市场导向”特征。其学科建设紧密围绕“外语+”模式，试图在传统语言学习与现代经贸、跨境电商、数字媒体之间建立桥梁。这种模式在长三角地区的外贸产业链中具有较高的认可度。然而，作为民办院校，其学术底蕴与公办老牌外语院校相比仍有显著差距，主要体现在高层次人才储备不足、国家级科研平台匮乏以及生源质量受限于录取批次。\n\n校园文化上，安外以其“欧式城堡”风格的建筑群在社交媒体上拥有极高的辨识度，这种视觉资本不仅转化为品牌吸引力，也为学生提供了一定的国际化氛围感知。但硬币的另一面是，学校位于合肥市郊的紫蓬山区域，虽然环境优美，但与主城区的物理距离在一定程度上限制了学生参与高频次城市实习与文化活动的机会。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "安徽三联学院",
+          "similarity": "同类院校",
+          "key_difference": "三联学院以工科、交通类专业见长，具有较强的产业背景；而安外在文科、语言类及国际化氛围上具有压倒性优势。对于文科生或计划从事涉外工作的学生，安外的专业匹配度更高。"
+        },
+        {
+          "name": "安徽新华学院",
+          "similarity": "同类院校",
+          "key_difference": "新华学院规模更大，学科门类更全，综合排名略高；但安外在“外国语”这一细分赛道上的品牌垂直度更深，其小语种专业群的完整度在省内民办高校中首屈一指。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "欧式城堡",
+        "外语见长",
+        "紫蓬山",
+        "跨境电商",
+        "考研大军",
+        "民办头部",
+        "社牛属性"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>方案B：仪表盘式进度中心 — 峰哥咨询参考</title>
+<style>
+@import url('../themes/tokens.css');
+/* ─── Tokens (inline fallback) ─── */
+:root {
+  --color-blue: #2563EB;
+  --color-blue-dark: #1D4ED8;
+  --color-orange: #F97316;
+  --color-orange-dark: #EA580C;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --bg-page: #F8FAFC;
+  --bg-card: rgba(255,255,255,0.96);
+  --bg-input: #F1F5F9;
+  --border-light: rgba(15,23,42,0.08);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+  --font-body: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  --phone-width: 375px;
+  --phone-height: 812px;
+
+  /* Dashboard-specific */
+  --color-green: #10B981;
+  --color-purple: #8B5CF6;
+  --color-red: #EF4444;
+  --ring-bg: #E2E8F0;
+  --ring-size: 180px;
+}
+
+/* ─── Reset ─── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background: #E2E8F0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 24px 0;
+}
+
+/* ─── Phone Frame ─── */
+.phone {
+  width: var(--phone-width);
+  min-height: var(--phone-height);
+  background: #FFFFFF;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0,0,0,.15), 0 0 0 1px rgba(0,0,0,.05);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Status bar */
+.status-bar {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.status-bar .time { font-weight: 700; }
+.status-bar .icons { display: flex; gap: 5px; align-items: center; }
+.status-bar .icons svg { width: 16px; height: 16px; }
+
+/* ─── Header ─── */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 20px 12px;
+  border-bottom: 1px solid var(--border-light);
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 16px;
+}
+.header-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.3px;
+}
+.header-right {
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+}
+.header-right svg {
+  width: 22px;
+  height: 22px;
+  color: var(--text-secondary);
+}
+.badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 8px;
+  height: 8px;
+  background: var(--color-red);
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* ─── Content ─── */
+.content {
+  flex: 1;
+  padding: 16px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+/* ─── Profile Card ─── */
+.profile-card {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  background: #FAFBFC;
+  position: relative;
+  cursor: pointer;
+  transition: background .2s;
+}
+.profile-card:hover { background: #F1F5F9; }
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-detail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.profile-tag {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+.profile-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+.edit-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-light);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color .2s;
+}
+.edit-btn:hover { border-color: var(--color-blue); }
+.edit-btn svg { width: 14px; height: 14px; color: var(--text-muted); }
+
+/* Skeleton state */
+.profile-card.empty .profile-detail { display: none; }
+.profile-card.empty .edit-btn { display: none; }
+.profile-card.filled .skeleton-area { display: none; }
+
+.skeleton-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.skeleton-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.skeleton-line {
+  height: 12px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #E2E8F0 25%, #F1F5F9 50%, #E2E8F0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+.skeleton-line.w70 { width: 180px; }
+.skeleton-line.w50 { width: 120px; }
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.fill-hint {
+  font-size: 12px;
+  color: var(--color-blue);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.fill-hint svg { width: 14px; height: 14px; }
+
+/* ─── Ring Progress ─── */
+.ring-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 0 4px;
+}
+.ring-label {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+.ring-wrapper {
+  position: relative;
+  width: var(--ring-size);
+  height: var(--ring-size);
+  cursor: pointer;
+  transition: transform .15s;
+}
+.ring-wrapper:hover { transform: scale(1.03); }
+.ring-wrapper:active { transform: scale(0.97); }
+
+.ring {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* conic-gradient: 5 segments, each 72deg (360/5) */
+  background: conic-gradient(
+    var(--color-blue) 0deg,
+    var(--color-blue) 72deg,
+    var(--ring-bg) 72deg,
+    var(--ring-bg) 144deg,
+    var(--color-blue) 144deg,
+    var(--color-blue) 216deg,
+    var(--ring-bg) 216deg,
+    var(--ring-bg) 288deg,
+    var(--ring-bg) 288deg,
+    var(--ring-bg) 360deg
+  );
+  -webkit-mask: radial-gradient(circle, transparent 58px, #000 59px);
+  mask: radial-gradient(circle, transparent 58px, #000 59px);
+  transition: background .4s ease;
+}
+.ring-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ring-number {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+}
+.ring-number .total {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.ring-status {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* Step labels */
+.step-labels {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  max-width: 320px;
+}
+.step-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--text-muted);
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  background: var(--bg-input);
+  transition: all .2s;
+}
+.step-label.done {
+  color: var(--color-blue);
+  background: rgba(37,99,235,.08);
+}
+.step-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+.step-label.done .step-dot {
+  background: var(--color-blue);
+}
+
+/* ─── Quick Actions ─── */
+.section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+  padding-left: 2px;
+}
+.quick-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.quick-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  background: #FAFBFC;
+  cursor: pointer;
+  transition: all .2s;
+}
+.quick-item:hover {
+  background: #F1F5F9;
+  border-color: rgba(15,23,42,.12);
+}
+.quick-item:active { transform: scale(0.97); }
+
+.quick-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.quick-icon svg { width: 20px; height: 20px; color: #fff; }
+
+.quick-icon.blue { background: var(--color-blue); }
+.quick-icon.green { background: var(--color-green); }
+.quick-icon.purple { background: var(--color-purple); }
+.quick-icon.orange { background: var(--color-orange); }
+
+.quick-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.quick-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.quick-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ─── CTA Button ─── */
+.cta-area {
+  padding: 0 20px 28px;
+  margin-top: auto;
+}
+.cta-btn {
+  width: 100%;
+  height: 52px;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.cta-btn:active { transform: scale(0.97); }
+
+.cta-btn.active {
+  background: var(--color-blue);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(37,99,235,.3);
+}
+.cta-btn.active:hover {
+  background: var(--color-blue-dark);
+}
+
+.cta-btn.disabled {
+  background: #E2E8F0;
+  color: var(--text-muted);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.cta-btn svg { width: 18px; height: 18px; }
+
+/* ─── State Toggle Indicator ─── */
+.toggle-hint {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: -8px;
+  padding-bottom: 4px;
+}
+
+/* ─── Animations ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.content > * {
+  animation: fadeUp .4s ease both;
+}
+.content > *:nth-child(2) { animation-delay: .05s; }
+.content > *:nth-child(3) { animation-delay: .1s; }
+.content > *:nth-child(4) { animation-delay: .15s; }
+</style>
+</head>
+<body>
+
+<div class="phone" id="app">
+  <!-- Status Bar -->
+  <div class="status-bar">
+    <span class="time">9:41</span>
+    <div class="icons">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 9l4-4 4 4"/><path d="M5 5v14"/><path d="M12 3c4.97 0 9 4.03 9 9"/><path d="M12 7c2.76 0 5 2.24 5 5"/><path d="M12 11c.55 0 1 .45 1 1"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="10" x2="23" y2="14"/></svg>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="logo">峰</div>
+      <span class="header-title">峰哥咨询参考</span>
+    </div>
+    <div class="header-right">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+      </svg>
+      <span class="badge"></span>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <!-- Profile Card -->
+    <div class="profile-card filled" id="profileCard" onclick="toggleProfile()">
+      <!-- Filled State -->
+      <div class="profile-info">
+        <div class="profile-detail">
+          <span class="profile-tag">浙江</span>
+          <span class="profile-dot"></span>
+          <span class="profile-tag">理科</span>
+          <span class="profile-dot"></span>
+          <span class="profile-tag"><b>632</b> 分</span>
+          <span class="profile-dot"></span>
+          <span class="profile-tag">位次 <b>18,425</b></span>
+        </div>
+        <div class="edit-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+          </svg>
+        </div>
+      </div>
+      <!-- Empty / Skeleton State -->
+      <div class="skeleton-area">
+        <div class="skeleton-lines">
+          <div class="skeleton-line w70"></div>
+          <div class="skeleton-line w50"></div>
+        </div>
+        <div class="fill-hint">
+          点击填写
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ring Progress Section -->
+    <div class="ring-section">
+      <div class="ring-label">志愿填报进度</div>
+      <div class="ring-wrapper" id="ringWrapper" onclick="cycleProgress()">
+        <div class="ring" id="ring"></div>
+        <div class="ring-inner">
+          <div class="ring-number" id="ringNumber">2<span class="total">/5</span></div>
+          <div class="ring-status" id="ringStatus">已完成</div>
+        </div>
+      </div>
+      <div class="step-labels" id="stepLabels">
+        <div class="step-label done"><span class="step-dot"></span>基本信息</div>
+        <div class="step-label done"><span class="step-dot"></span>高考成绩</div>
+        <div class="step-label"><span class="step-dot"></span>意向偏好</div>
+        <div class="step-label"><span class="step-dot"></span>能力测评</div>
+        <div class="step-label"><span class="step-dot"></span>综合报告</div>
+      </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div>
+      <div class="section-title">快捷工具</div>
+    </div>
+    <div class="quick-grid">
+      <!-- AI 咨询 -->
+      <div class="quick-item" onclick="showToast('AI 咨询')">
+        <div class="quick-icon blue">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <div class="quick-text">
+          <span class="quick-name">AI 咨询</span>
+          <span class="quick-desc">智能问答助手</span>
+        </div>
+      </div>
+      <!-- 五环评测 -->
+      <div class="quick-item" onclick="showToast('五环评测')">
+        <div class="quick-icon green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <div class="quick-text">
+          <span class="quick-name">五环评测</span>
+          <span class="quick-desc">多维度评估</span>
+        </div>
+      </div>
+      <!-- MBTI 测试 -->
+      <div class="quick-item" onclick="showToast('MBTI 测试')">
+        <div class="quick-icon purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
+        </div>
+        <div class="quick-text">
+          <span class="quick-name">MBTI 测试</span>
+          <span class="quick-desc">性格类型分析</span>
+        </div>
+      </div>
+      <!-- 霍兰德测试 -->
+      <div class="quick-item" onclick="showToast('霍兰德测试')">
+        <div class="quick-icon orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <div class="quick-text">
+          <span class="quick-name">霍兰德测试</span>
+          <span class="quick-desc">职业兴趣测评</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-area">
+    <button class="cta-btn disabled" id="ctaBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
+      </svg>
+      生成综合志愿报告
+    </button>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" style="
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: rgba(15,23,42,.85);
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    opacity: 0;
+    transition: all .3s;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 10;
+  "></div>
+</div>
+
+<script>
+/* ─── State ─── */
+let currentStep = 2;
+const totalSteps = 5;
+const stepNames = ['基本信息', '高考成绩', '意向偏好', '能力测评', '综合报告'];
+const segmentDeg = 360 / totalSteps; // 72deg
+
+const gradients = [
+  /* 0/5 */ 'conic-gradient(var(--ring-bg) 0deg, var(--ring-bg) 360deg)',
+  /* 1/5 */ `conic-gradient(var(--color-blue) 0deg, var(--color-blue) 72deg, var(--ring-bg) 72deg, var(--ring-bg) 360deg)`,
+  /* 2/5 */ `conic-gradient(var(--color-blue) 0deg, var(--color-blue) 144deg, var(--ring-bg) 144deg, var(--ring-bg) 360deg)`,
+  /* 3/5 */ `conic-gradient(var(--color-blue) 0deg, var(--color-blue) 216deg, var(--ring-bg) 216deg, var(--ring-bg) 360deg)`,
+  /* 4/5 */ `conic-gradient(var(--color-blue) 0deg, var(--color-blue) 288deg, var(--ring-bg) 288deg, var(--ring-bg) 360deg)`,
+  /* 5/5 */ `conic-gradient(var(--color-blue) 0deg, var(--color-blue) 360deg)`,
+];
+
+function updateRing() {
+  const ring = document.getElementById('ring');
+  const number = document.getElementById('ringNumber');
+  const status = document.getElementById('ringStatus');
+  const labels = document.querySelectorAll('#stepLabels .step-label');
+  const btn = document.getElementById('ctaBtn');
+
+  ring.style.background = gradients[currentStep];
+  number.innerHTML = `${currentStep}<span class="total">/${totalSteps}</span>`;
+  status.textContent = currentStep === totalSteps ? '已完成 ✓' : '已完成';
+
+  labels.forEach((label, i) => {
+    label.classList.toggle('done', i < currentStep);
+  });
+
+  if (currentStep === totalSteps) {
+    btn.className = 'cta-btn active';
+    btn.onclick = () => showToast('报告生成中…');
+  } else {
+    btn.className = 'cta-btn disabled';
+    btn.onclick = null;
+  }
+}
+
+function cycleProgress() {
+  currentStep = (currentStep + 1) % (totalSteps + 1);
+  updateRing();
+}
+
+/* ─── Profile Toggle ─── */
+let profileFilled = true;
+function toggleProfile() {
+  const card = document.getElementById('profileCard');
+  profileFilled = !profileFilled;
+  card.classList.toggle('filled', profileFilled);
+  card.classList.toggle('empty', !profileFilled);
+}
+
+/* ─── Toast ─── */
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.style.opacity = '1';
+  t.style.transform = 'translateX(-50%) translateY(0)';
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => {
+    t.style.opacity = '0';
+    t.style.transform = 'translateX(-50%) translateY(20px)';
+  }, 1500);
+}
+
+/* ─── Init ─── */
+updateRing();
+</script>
+</body>
+</html>

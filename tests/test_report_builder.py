@@ -26,6 +26,7 @@ class ReportBuilderTests(unittest.TestCase):
                       getReportQualityIssues,
                       humanizeReportCopy,
                       normalizeReportHtml,
+                      requestDeepSeekJson,
                       renderReadableText,
                     }} = require('{ROOT / "gaokao-proxy" / "lib" / "report-builder.js"}')
 
@@ -88,6 +89,68 @@ class ReportBuilderTests(unittest.TestCase):
             const html2 = buildFinalHtml(JSON.stringify(data), { province: '广东' }, {})
             assert.equal(html2.includes('结论一'), true)
         """)
+
+    def test_deepseek_timeout_retries_flash_model(self):
+        self.run_node_test(r"""
+            const calls = []
+            global.fetch = async (_url, options) => {
+              const body = JSON.parse(options.body)
+              calls.push(body.model)
+              if (calls.length === 1) {
+                const err = new Error('The operation was aborted due to timeout')
+                err.name = 'TimeoutError'
+                throw err
+              }
+              return {
+                ok: true,
+                json: async () => ({
+                  choices: [{ message: { content: '{"ok":true}' }, finish_reason: 'stop' }]
+                })
+              }
+            }
+
+            ;(async () => {
+              const content = await requestDeepSeekJson('请输出合法 JSON')
+              assert.equal(content, '{"ok":true}')
+              assert.deepEqual(calls, ['deepseek-v4-flash', 'deepseek-v4-flash'])
+            })().catch((err) => {
+              console.error(err)
+              process.exitCode = 1
+            })
+        """)
+
+    def test_deepseek_bad_request_does_not_fall_back(self):
+        self.run_node_test(r"""
+            const calls = []
+            global.fetch = async (_url, options) => {
+              const body = JSON.parse(options.body)
+              calls.push(body.model)
+              return {
+                ok: false,
+                status: 400,
+                text: async () => '{"error":{"message":"bad prompt"}}'
+              }
+            }
+
+            ;(async () => {
+              await assert.rejects(
+                () => requestDeepSeekJson('请输出合法 JSON'),
+                /DeepSeek API error 400/
+              )
+              assert.deepEqual(calls, ['deepseek-v4-flash'])
+            })().catch((err) => {
+              console.error(err)
+              process.exitCode = 1
+            })
+        """)
+
+    def test_report_generation_uses_report_specific_flash_model(self):
+        builder = self.read("gaokao-proxy/lib/report-builder.js")
+
+        self.assertIn("REPORT_DEEPSEEK_MODEL", builder)
+        self.assertIn("deepseek-v4-flash", builder)
+        self.assertNotIn("deepseek-v4-pro", builder)
+        self.assertNotIn("process.env.DEEPSEEK_MODEL", builder)
 
     def test_holland_radar_scales_basic_results_to_basic_max_score(self):
         self.run_node_test(r"""

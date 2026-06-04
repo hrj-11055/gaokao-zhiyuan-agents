@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.478600",
+    "updated_at": "2026-05-12T10:46:36.928881",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "大连民族大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 3.2,
+      "location_advantage": 3.8,
+      "globalization": 2.9,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.4
+    },
+    "weighted_score": 3.38,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "中南民族大学",
+        "similarity": "同类院校",
+        "key_difference": "中南民大位于武汉，人文社科底蕴更深，综合排名略高；大连民大则在工科领域（尤其是生物、计算机）更具爆发力，且大连的海洋环境对北方学生更具吸引力。"
+      },
+      {
+        "name": "西南民族大学",
+        "similarity": "同类院校",
+        "key_difference": "西南民大在艺术、民族学领域领先；大连民大则在产教融合、服务地方制造业方面走得更远。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "大连民族大学是一所被严重低估的“实干型”高校。它在行政上隶属于国家民委，在学术上得到大连理工大学的深度加持，在地理上占据了东北最具活力的经济新区。\n\n*   **核心优势**：生物工程学科的 A- 评级是其学术皇冠上的明珠；计算机与电子信息专业在就业市场表现稳健；极具特色的民族融合氛围培养了学生的高情商与社会适应力。\n*   **主要短板**：非“双一流”身份在申请头部大厂（如腾讯、阿里）的校招绿卡时可能面临第一轮筛选压力；国际化视野仍局限于东北亚，全球顶尖名校的交流资源有待拓展。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "中南民族大学",
+          "similarity": "同类院校",
+          "key_difference": "中南民大位于武汉，人文社科底蕴更深，综合排名略高；大连民大则在工科领域（尤其是生物、计算机）更具爆发力，且大连的海洋环境对北方学生更具吸引力。"
+        },
+        {
+          "name": "西南民族大学",
+          "similarity": "同类院校",
+          "key_difference": "西南民大在艺术、民族学领域领先；大连民大则在产教融合、服务地方制造业方面走得更远。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

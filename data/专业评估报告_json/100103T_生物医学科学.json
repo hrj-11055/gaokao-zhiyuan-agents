@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.999202",
+    "updated_at": "2026-04-27T00:36:59.184929",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100103T_生物医学科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "科研向的\"医学×生物\"交叉尖兵，名校本博连读是正路，本科毕业直接就业路窄薪低，非科研热爱者慎入。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 4.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.49
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "核心技能——实验设计、生物样本操作、组织病理判读、分子机制推理——高度依赖实体实验和复杂系统认知，AI 可辅助数据分析（如生物信息学）但无法替代湿实验操作和原创性科研假设的提出。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "科研向的\"医学×生物\"交叉尖兵，名校本博连读是正路，本科毕业直接就业路窄薪低，非科研热爱者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海交通大学",
+        "北京大学",
+        "清华大学"
+      ],
+      "tier_A": [
+        "山东大学",
+        "复旦大学",
+        "中国科学技术大学",
+        "南方科技大学"
+      ],
+      "tier_B": [
+        "吉林大学",
+        "哈尔滨工业大学",
+        "中南大学"
+      ],
+      "tier_C_note": "该专业为特设专业，开设院校极少，普通本科院校基本不开设此专业。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

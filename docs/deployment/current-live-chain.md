@@ -91,7 +91,7 @@ MEMBERSHIP_PRICE_CENTS=1990
 MEMBERSHIP_INVITE_REQUIRED=5
 MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT=10
 MEMBERSHIP_VIP_CODES=<comma-separated launch/test codes>
-DEEPSEEK_MODEL=deepseek-v4-pro
+REPORT_DEEPSEEK_MODEL=deepseek-v4-flash
 SCORE_DATA_YEAR=2025
 DEEP_REPORT_VIEW_TOKEN_TTL_MS=600000
 VITE_PDF_DOWNLOAD_ENABLED=true
@@ -101,6 +101,7 @@ Payment test note:
 
 - 2026-05-26: 1 yuan WeChat Pay smoke test succeeded on 47 with temporary `MEMBERSHIP_PRICE_CENTS=100`; the paid order became `status=paid` and membership became `source=payment`.
 - 2026-05-28: 47 `/opt/gaokao-proxy/.env` was restored to `MEMBERSHIP_PRICE_CENTS=1990`, `DEEPSEEK_MODEL=deepseek-v4-pro`, and `WECHAT_LOGIN_MOCK=0`; `pm2 restart gaokao-proxy --update-env` completed and `/api/health` stayed `200`.
+- 2026-06-04: comprehensive report generation was moved to `REPORT_DEEPSEEK_MODEL=deepseek-v4-flash`; both the initial request and transient-error retry use Flash, and report generation no longer reads the generic `DEEPSEEK_MODEL` setting.
 - Before release, re-run one 19.9 yuan payment smoke test from a fresh WeChat account, then verify comprehensive report generation and PDF downloads.
 
 ### 159 Dify

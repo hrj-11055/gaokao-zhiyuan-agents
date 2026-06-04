@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.041118",
+    "updated_at": "2026-04-28T03:12:58.232460",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130214TK_舞蹈治疗",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "新兴交叉学科，身心治疗蓝海赛道，但国内岗位稀缺、培养体系不成熟，适合有艺术根基且甘坐冷板凳的开拓者。",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.2,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 2.68
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "舞蹈治疗的核心在于\"身体-情感\"的非言语交互体验、即兴运动评估与治疗关系的建立，高度依赖人的身体在场和共情能力，AI 无法复制身体动觉感知和实时运动即兴回应。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "新兴交叉学科，身心治疗蓝海赛道，但国内岗位稀缺、培养体系不成熟，适合有艺术根基且甘坐冷板凳的开拓者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京舞蹈学院（国内舞蹈治疗教育的标杆，师资和临床资源最丰富）"
+      ],
+      "tier_A": [
+        "南京特殊教育师范学院",
+        "华东师范大学（艺术治疗方向）"
+      ],
+      "tier_B": [
+        "中央美术学院（艺术治疗方向）",
+        "四川音乐学院（筹备中 ``）",
+        "武汉音乐学院（相关方向）"
+      ],
+      "tier_C_note": "其他已获批开设该专业的地方本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

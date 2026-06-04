@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.065767",
+    "updated_at": "2026-04-23T22:29:29.273828",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050239",
+    "name": "泰米尔语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "全中国年毕业生不足百人的\"钻石级\"稀缺语种，骑上\"一带一路\"风口能起飞，但赛道极窄，不深耕南亚就无路可走。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.11
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 对主流语言翻译替代率高，但泰米尔语语料库极小、达罗毗荼语系结构特殊，机器翻译质量远不如英语/日语等大语种。高精度翻译、跨文化谈判、外交场景仍高度依赖人类。但基础翻译和文字处理工作已开始被AI蚕食。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全中国年毕业生不足百人的\"钻石级\"稀缺语种，骑上\"一带一路\"风口能起飞，但赛道极窄，不深耕南亚就无路可走。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（211，外国语言文学A+，师资最强，外交部人才输送主渠道）",
+        "中国传媒大学（211，开设最早，国际传播特色）"
+      ],
+      "tier_A": [
+        "无"
+      ],
+      "tier_B": [
+        "云南民族大学（省重点，面向南亚地缘优势，录取分数较低）"
+      ],
+      "tier_C_note": "无（全国仅3所高校开设）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

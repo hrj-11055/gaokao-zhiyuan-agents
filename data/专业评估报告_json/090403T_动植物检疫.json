@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.893343",
+    "updated_at": "2026-04-26T11:52:39.347260",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090403T_动植物检疫",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "冷门刚需，海关\"敲门砖\"专业，稳定但天花板低，野外作业多、地域限制强，适合追求体制内稳定者。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.7,
+      "career_path": 2.6,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.87
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "动植物检疫的核心工作（现场采样、物种鉴定、疫情处置）高度依赖物理操作和现场判断，AI 可辅助图像识别和数据分析，但难以替代口岸一线的实物查验和应急决策。实验室分子检测环节受 AI 影响较大。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "冷门刚需，海关\"敲门砖\"专业，稳定但天花板低，野外作业多、地域限制强，适合追求体制内稳定者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "（该专业无传统 S 级院校，最强的也不属于全国顶尖高校）"
+      ],
+      "tier_A": [
+        "扬州大学（软科第 1/ABC 排名 A+",
+        "卓越农林计划）",
+        "四川农业大学（211/双一流）",
+        "河南农业大学（ABC 排名 A+）",
+        "湖南农业大学（省级特色/一流专业）",
+        "山西农业大学"
+      ],
+      "tier_B": [
+        "江西农业大学",
+        "云南农业大学",
+        "新疆农业大学",
+        "河南科技大学",
+        "锦州医科大学",
+        "黑龙江八一农垦大学",
+        "内蒙古农业大学"
+      ],
+      "tier_C_note": "河北北方学院、河北农业大学、河南牧业经济学院、河南科技学院、吉林农业科技学院、沈阳工学院、乐山师范学院、宜宾学院、昭通学院、佳木斯大学、甘肃民族师范学院、中国计量大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.051908",
+    "updated_at": "2026-04-25T01:46:54.451846",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "071002",
+    "name": "生物技术",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "\"21世纪的明星学科，行业前景壮阔但本科就业惨淡——典型的'读到硕士才算入行、读到博士才算立足'的硬核长线赛道。\"",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.8,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.42
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "生物技术涉及大量湿实验操作（细胞培养、基因编辑、动物实验），AI可辅助数据分析与分子设计，但核心实验技能、生物系统直觉和临床试验判断难以被AI完全替代。生物信息学方向与AI高度融合，反增就业竞争力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"21世纪的明星学科，行业前景壮阔但本科就业惨淡——典型的'读到硕士才算入行、读到博士才算立足'的硬核长线赛道。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "清华大学",
+        "上海交通大学",
+        "复旦大学",
+        "中国科学技术大学"
+      ],
+      "tier_A": [
+        "浙江大学",
+        "南京大学",
+        "武汉大学",
+        "中国农业大学",
+        "南开大学",
+        "华中农业大学",
+        "厦门大学",
+        "四川大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "山东大学",
+        "西南大学",
+        "云南大学",
+        "华东师范大学",
+        "华南理工大学",
+        "深圳大学",
+        "江南大学",
+        "南京农业大学",
+        "中国海洋大学",
+        "湖南大学"
+      ],
+      "tier_C_note": "四川农业大学、东北林业大学、内蒙古大学、浙江师范大学、河南工业大学、贵州医科大学、通化师范学院等283所开设院校中的其余院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

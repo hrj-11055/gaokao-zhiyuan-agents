@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.555809",
+    "updated_at": "2026-05-09T15:11:49.934916",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "首钢工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 1.8,
+      "graduate_value": 3.8,
+      "location_advantage": 4.5,
+      "globalization": 1.5,
+      "student_empowerment": 2.8,
+      "brand_asset": 3.0
+    },
+    "weighted_score": 3.04,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "首钢工学院（Shougang Institute of Technology）是一所极具辨识度的“厂办大学”转型样本。作为由首钢集团举办、北京市教委管理的公办应用型本科院校，它在学术金字塔中虽处于基座位置，但在特定工业生态位中拥有无可比拟的垄断力。\n\n**核心竞争力分析**：\n该校的核心价值不在于学术论文的引用量，而在于其与首钢集团及其上下游产业链的“血缘关系”。这种关系为学生提供了极高的就业确定性。在当前就业市场波动剧烈的背景下，首钢工学院的“保底”属性被显著放大。2024年恢复本科招生后，其专业设置高度契合首都“高精尖”产业结构，尤其是自动化、环境工程等领域，展现了从传统冶金向现代智能制造转型的决心。\n\n**战略性风险提示**：\n尽管就业稳健，但学校面临“学术孤岛化”的风险。由于缺乏高层次学科点和顶尖科研领军人物，学校在争取国家级重大科研项目时处于劣势。此外，校园空间与首钢技师学院共用，导致本科生、高职生与中职生混处，管理难度较大，且校园文化中“工厂味”重于“学术味”，可能不符合追求自由学术氛围的学生预期。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

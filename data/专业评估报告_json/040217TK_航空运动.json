@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.903576",
+    "updated_at": "2026-04-22T01:50:03.211144",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040217TK_航空运动",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "低空经济风口上的\"新物种\"，人才缺口巨大但专业刚出生，2029年才有首届毕业生，是一场需要勇气的长线押注。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 2.6
+    },
+    "weighted_score": 3.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "航空运动核心技能为飞行操控、现场安全判断、气象解读和空中决策，这些高度依赖身体协调、空间感知和实时应变能力，AI难以替代实体飞行操作。但无人机飞行中的自动化调度和航迹规划可能被AI部分替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "低空经济风口上的\"新物种\"，人才缺口巨大但专业刚出生，2029年才有首届毕业生，是一场需要勇气的长线押注。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无"
+      ],
+      "tier_A": [
+        "吉林体育学院（全国唯一开设院校，2025年首批招生）"
+      ],
+      "tier_B": [],
+      "tier_C_note": "暂无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

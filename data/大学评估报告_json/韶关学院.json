@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.832937",
+    "updated_at": "2026-05-01T01:28:15.414555",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "韶关学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.1,
+      "graduate_value": 2.9,
+      "location_advantage": 2.6,
+      "globalization": 1.8,
+      "student_empowerment": 2.8,
+      "brand_asset": 2.5
+    },
+    "weighted_score": 2.46,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "嘉应学院（梅州）",
+        "similarity": "同类院校",
+        "key_difference": "两校同为粤东西北的公办本科。韶关学院在学科综合性（含医、农）和校园面积上占优，且受“东数西算”政策加持，工科潜力更大；嘉应学院则在客家文化研究和特定师范领域更具特色。"
+      },
+      {
+        "name": "惠州学院",
+        "similarity": "同类院校",
+        "key_difference": "惠州学院地处珠三角，区位优势明显优于韶关学院，毕业生起薪更高；但韶关学院在粤北的统治力更强，且拥有更完整的农林医教育体系。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：粤北地区高等教育的“定海神针”，典型的应用型公办本科。\n*   **Ace（王牌优势）**：师范教育与现代农业。在粤北地区，韶关学院的毕业生拥有近乎垄断的基层就业竞争力。\n*   **Vibe（文化特质）**：务实、安逸、慢节奏。这里没有一线城市高校的极度内卷，更多的是一种扎根地方、服务基层的平实感。\n*   **Risk（潜在风险）**：地理位置的相对孤立可能导致信息滞后；高层次科研资源的匮乏限制了学术上限。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "嘉应学院（梅州）",
+          "similarity": "同类院校",
+          "key_difference": "两校同为粤东西北的公办本科。韶关学院在学科综合性（含医、农）和校园面积上占优，且受“东数西算”政策加持，工科潜力更大；嘉应学院则在客家文化研究和特定师范领域更具特色。"
+        },
+        {
+          "name": "惠州学院",
+          "similarity": "同类院校",
+          "key_difference": "惠州学院地处珠三角，区位优势明显优于韶关学院，毕业生起薪更高；但韶关学院在粤北的统治力更强，且拥有更完整的农林医教育体系。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "山城气质",
+        "师范摇篮",
+        "算力新贵",
+        "空调自由",
+        "慢生活",
+        "基层中坚"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

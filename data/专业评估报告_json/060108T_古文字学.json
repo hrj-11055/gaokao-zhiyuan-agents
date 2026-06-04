@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.115787",
+    "updated_at": "2026-04-24T23:05:23.308270",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "060108T_古文字学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"冷门绝学里的'黄金坑'——国家强基计划重点扶持，AI+数字化打开新赛道，但极度依赖深造，非真心热爱者慎入。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.8,
+      "career_path": 2.5,
+      "education_resources": 4.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.36
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "古文字释读、出土文献缀合、疑难字形考释等核心工作需要极高的人类学术判断力和创造性推理，AI目前仅能作为辅助工具（识别准确率93%，但释读与考释仍需人工判定）。南京大学、吉林大学等正在推进\"AI+古文字\"研究，AI是赋能者而非替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"冷门绝学里的'黄金坑'——国家强基计划重点扶持，AI+数字化打开新赛道，但极度依赖深造，非真心热爱者慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "吉林大学",
+        "北京大学",
+        "清华大学"
+      ],
+      "tier_A": [
+        "复旦大学",
+        "南京大学",
+        "中国人民大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "武汉大学",
+        "华中科技大学",
+        "华东师范大学",
+        "首都师范大学"
+      ],
+      "tier_C_note": "古文字学为强基计划特设专业，目前仅在\"双一流\"高校开设，普通本科院校基本不开设此专业。C档对应各校的历史学/汉语言文学专业中古文字方向，如西南大学、郑州大学等。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

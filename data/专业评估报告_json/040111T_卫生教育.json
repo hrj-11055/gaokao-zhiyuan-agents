@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.168762",
+    "updated_at": "2026-04-22T00:16:47.757786",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040111T_卫生教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "顺应\"健康中国\"的冷门特设专业，赛道窄但政策红利明确，不过就业面窄、薪酬偏低，适合真正热爱健康教育的人。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.99
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3,000–5,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "健康教育涉及大量人际沟通、情绪感知、现场急救操作和个性化健康指导场景，需要面对面的信任建立和互动。但基础的课程内容设计、健康数据分析等环节存在一定AI辅助替代可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "顺应\"健康中国\"的冷门特设专业，赛道窄但政策红利明确，不过就业面窄、薪酬偏低，适合真正热爱健康教育的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业尚无院校形成突出的学科优势）"
+      ],
+      "tier_A": [
+        "北京师范大学",
+        "华东师范大学",
+        "上海杉达学院（全国首家",
+        "上海市一流本科专业）"
+      ],
+      "tier_B": [
+        "东北师范大学",
+        "南京师范大学",
+        "华中师范大学",
+        "首都师范大学"
+      ],
+      "tier_C_note": "其他开设卫生教育方向的普通师范类院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

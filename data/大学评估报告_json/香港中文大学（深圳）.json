@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.643828",
+    "updated_at": "2026-05-01T02:13:18.937734",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "香港中文大学（深圳）",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.8,
+      "graduate_value": 4.9,
+      "location_advantage": 4.7,
+      "globalization": 4.9,
+      "student_empowerment": 4.2,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 4.77,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "龙岗",
+      "region": "粤港澳大湾区",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "香港中文大学（深圳）（以下简称“港中大（深圳）”）自2014年成立以来，已迅速崛起为中国高等教育改革的标杆。它不仅是深港教育融合的成功范式，更是国内高分考生在“清北华五”之外的最强竞争选项。\n\n- **Identity（核心定位）**：一所立足中国、面向世界的顶尖研究型大学。它并非传统意义上的“分校”，而是在行政与学术上保持高度独立，同时共享香港中文大学学术标准的共同体。\n- **Ace（王牌优势）**：极高的名校深造率与接轨国际的学术评估体系。其毕业生在申请全球顶尖名校时，由于全英文教学环境和国际认可的成绩单，具备天然的“免检”优势。\n- **Vibe（文化特质）**：高压、精英化、全英文环境。这里没有传统大学的“安逸”，取而代之的是与国际接轨的学术诚信要求和极高强度的课程负荷。\n- **Risk（潜在风险）**：学费昂贵（11.5万/年），生活成本高；全英文教学对英语基础薄弱者是巨大的心理与学业挑战；绩点（GPA）竞争极其激烈，可能导致部分学生产生严重的同辈焦虑。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "国际化",
+        "高压卷王",
+        "书院制",
+        "全英文",
+        "深港融合",
+        "精英主义",
+        "学术诚信"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

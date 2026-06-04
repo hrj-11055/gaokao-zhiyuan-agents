@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.619121",
+    "updated_at": "2026-05-11T14:07:29.929115",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "聊城大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 3.6,
+      "location_advantage": 3.0,
+      "globalization": 3.2,
+      "student_empowerment": 3.0,
+      "brand_asset": 3.4
+    },
+    "weighted_score": 3.39,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "鲁东大学",
+        "similarity": "同类院校",
+        "key_difference": "两者同为省属师范起家的综合性大学。鲁东大学占据烟台的区位优势，在海洋学科上更强；而聊城大学在基础理学（ESI排名）和区域国别研究上更具深度。"
+      },
+      {
+        "name": "山东理工大学",
+        "similarity": "同类院校",
+        "key_difference": "山东理工在工科底蕴和产学研结合上略胜一筹；聊城大学则在文理基础学科和师范教育上更有积淀。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "聊城大学是一所被低估的省属综合性大学。它在资源并不占优的鲁西地区，凭借对学术高地的精准占领（如太平洋岛国研究）和对学生奋斗精神的极致激发（考研文化），走出了一条差异化发展道路。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "鲁东大学",
+          "similarity": "同类院校",
+          "key_difference": "两者同为省属师范起家的综合性大学。鲁东大学占据烟台的区位优势，在海洋学科上更强；而聊城大学在基础理学（ESI排名）和区域国别研究上更具深度。"
+        },
+        {
+          "name": "山东理工大学",
+          "similarity": "同类院校",
+          "key_difference": "山东理工在工科底蕴和产学研结合上略胜一筹；聊城大学则在文理基础学科和师范教育上更有积淀。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

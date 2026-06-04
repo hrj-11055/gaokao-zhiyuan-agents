@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.543063",
+    "updated_at": "2026-05-10T00:03:25.059150",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "武昌理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 3.4,
+      "location_advantage": 4.2,
+      "globalization": 3.2,
+      "student_empowerment": 3.6,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 3.65,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "武昌理工学院是一所典型的“高投入、高产出”的应用型民办大学。它成功地在竞争激烈的武汉高校圈中，通过“成功素质教育”这一差异化标签，建立起了极高的品牌护城河。\n\n*   **核心优势**：在于其无与伦比的区位优势和在民办体系内堪称奢侈的科研平台。对于希望在生物医药、人工智能、艺术设计领域有所建树，但高考分数受限的学生来说，这里提供了一个极佳的“逆袭”平台。\n*   **文化特质**：学校推行的是一种“实用主义精英教育”。它不鼓励学生死读书，而是通过大量的社会实践、学科竞赛和社团活动，强制性地提升学生的综合素质。\n*   **潜在挑战**：随着出生率下降导致的生源竞争加剧，以及学费的持续上涨，学校未来需要证明其教育溢价是否能持续覆盖学生的经济成本。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

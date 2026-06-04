@@ -13,7 +13,7 @@ export function useReportPregen() {
   const { step3Done, refresh } = useHomeProgress()
   const membershipStore = useMembershipStore(pinia)
 
-  async function tryTriggerPregenerate() {
+  async function tryTriggerPregenerate({ force = false } = {}) {
     refresh()
     if (!step3Done.value) {
       console.log('[Pregen] 2 assessments not yet complete.')
@@ -40,7 +40,7 @@ export function useReportPregen() {
     const fingerprint = JSON.stringify(fingerprintObj)
     const lastFingerprint = uni.getStorageSync('pregen_fingerprint')
 
-    if (lastFingerprint === fingerprint) {
+    if (!force && lastFingerprint === fingerprint) {
       console.log('[Pregen] Assessments unchanged. Skipping pre-generation.')
       return { status: 'skipped' }
     }

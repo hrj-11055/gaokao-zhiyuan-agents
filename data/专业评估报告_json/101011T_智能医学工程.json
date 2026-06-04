@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.926202",
+    "updated_at": "2026-04-27T05:48:51.295785",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "101011T_智能医学工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "医疗+AI双风口上的新贵，行业爆发但培养体系尚不成熟，读研几乎是标配，本科毕业需靠技术硬实力说话。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.7,
+      "future_adaptability": 4.3,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.95
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业本身就是\"驾驭 AI\"的学科——核心技能是医学知识建模、AI 算法设计、医疗数据分析，这些需要人类跨领域判断力和医学伦理决策，AI 反而是工具而非替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "医疗+AI双风口上的新贵，行业爆发但培养体系尚不成熟，读研几乎是标配，本科毕业需靠技术硬实力说话。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "天津大学",
+        "东南大学",
+        "山东大学"
+      ],
+      "tier_A": [
+        "华中科技大学",
+        "北京航空航天大学",
+        "哈尔滨工业大学",
+        "北京邮电大学",
+        "重庆大学",
+        "南开大学"
+      ],
+      "tier_B": [
+        "天津医科大学",
+        "南方科技大学",
+        "西安电子科技大学",
+        "东北大学",
+        "山西医科大学",
+        "电子科技大学",
+        "四川大学"
+      ],
+      "tier_C_note": "各省属医科大学/理工类院校（如潍坊医学院、川北医学院、辽宁何氏医学院、深圳技术大学、沈阳城市学院、赣南医科大学、桂林医学院等约 60+ 所院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

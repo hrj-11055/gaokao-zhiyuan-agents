@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.167867",
+    "updated_at": "2026-04-22T00:24:37.953535",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040113T_融合教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "新兴政策驱动型专业，国家战略强力背书但院校极少，就业赛道窄而深，吃的是\"政策饭\"和\"情怀饭\"。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.155
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "融合教育的核心工作是人与人之间的情感沟通、行为观察、个性化教学方案设计与实施，以及家校协同。AI 可以辅助评估和辅助教学（如孤独症儿童的AI辅助筛查与训练），但无法替代教师的情感支持、现场应变和人际沟通能力。AI+特殊教育更多是\"赋能\"而非\"替代\"（来源：2025WAIC智能特殊教育分论坛、人民论坛网）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "新兴政策驱动型专业，国家战略强力背书但院校极少，就业赛道窄而深，吃的是\"政策饭\"和\"情怀饭\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "华中师范大学（211/双一流，教育学A类学科，全国首设融合教育专业）"
+      ],
+      "tier_A": [
+        "重庆第二师范学院（A+评级，区域特色鲜明），郑州师范学院（B级，师范类传统院校）"
+      ],
+      "tier_B": [
+        "青岛滨海学院（山东省首个且唯一获批院校，\"医—教—产\"培养模式）"
+      ],
+      "tier_C_note": "长春人文学院（民办院校，专业起步阶段）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

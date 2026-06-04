@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.791208",
+    "updated_at": "2026-05-09T19:47:09.638263",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "四川警察学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "最适合：",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 4.5,
+      "location_advantage": 3.2,
+      "globalization": 1.5,
+      "student_empowerment": 2.0,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.3,
+    "one_sentence_recommend": "最适合："
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "四川警察学院（Sichuan Police College）作为四川省唯一一所全日制公安本科院校，其核心价值在于其强烈的“行业垄断性”与“就业确定性”。在当前宏观就业环境波动的背景下，该校凭借公安联考制度，为学生提供了一条通往公务员序列的极窄但极稳的通道。\n\n**核心定位分析**：\n学校不仅是四川基层警力的“摇篮”，更是四川省公安科学研究和警务技能培训的高地。其办学逻辑完全不同于综合性大学，学术产出高度服务于实战需求。对于学生而言，这里更像是一座“职业预备营”，而非单纯的学术殿堂。\n\n**优势与壁垒**：\n其王牌优势在于极高的“入警率”。通过公安联考，绝大多数公安专业毕业生能直接进入四川省各级公安机关。这种“入学即入警”的预期，使得该校在提前批次的录取分数线连年攀升，甚至在部分年份超过了省内部分 211 高校。\n\n**文化与风险**：\n校园文化以硬核纪律、半军事化管理为底色。学生必须适应早操、制服、叠被子和高强度的体能训练。潜在风险则高度集中在“非公安专业”学生身上，这部分学生无法参加公安联考，在就业市场上既缺乏警察身份的加持，又面临综合性大学毕业生的竞争，存在显著的“就业落差”。",
+      "one_sentence_recommend": "最适合：",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

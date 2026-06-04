@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.069176",
+    "updated_at": "2026-04-25T00:12:04.479483",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070306T_化学测量学与技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在\"科学仪器国产替代\"风口上的小众交叉学科，就业面广但极度吃学历，本科出身体感偏低，硕博才是真正的起飞跑道。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.2
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "化学测量涉及复杂样品前处理、仪器操作与维护、非标准化实验设计，这些环节高度依赖人的经验判断和动手操作能力，AI 短期内难以完全替代。但基础数据处理、图谱识别等环节已逐步被自动化工具渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在\"科学仪器国产替代\"风口上的小众交叉学科，就业面广但极度吃学历，本科出身体感偏低，硕博才是真正的起飞跑道。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "厦门大学（985/双一流，化学学科A类，全国唯一具备完整研究平台支撑的开设院校）"
+      ],
+      "tier_A": [
+        "（暂无，开设院校太少，其余院校与厦门大学差距过大）"
+      ],
+      "tier_B": [
+        "临沂大学（省属综合大学，软科评分17.1，适合500–600分段考生）"
+      ],
+      "tier_C_note": "吉林化工学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.101637",
+    "updated_at": "2026-04-28T03:26:00.659863",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130302",
+    "name": "戏剧学",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "聚光灯下的窄门：浪漫光环远多于饭碗，极吃天赋与名校，普通院校毕业生\"用爱发电\"是常态。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 3.0,
+      "future_adaptability": 2.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 2.7
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 可替代基础文案、剧本梗概生成等辅助性工作，但戏剧的核心——现场演出的不可复制性、人物情感的深度理解、导演的整体艺术把控——仍难以被 AI 替代。编剧中低端岗位受冲击较大。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "聚光灯下的窄门：浪漫光环远多于饭碗，极吃天赋与名校，普通院校毕业生\"用爱发电\"是常态。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央戏剧学院",
+        "上海戏剧学院"
+      ],
+      "tier_A": [
+        "北京电影学院",
+        "中国戏曲学院",
+        "中国传媒大学",
+        "南京大学",
+        "厦门大学"
+      ],
+      "tier_B": [
+        "南京艺术学院",
+        "山东艺术学院",
+        "云南艺术学院",
+        "广西艺术学院",
+        "吉林艺术学院",
+        "上海大学",
+        "西南大学",
+        "西北大学"
+      ],
+      "tier_C_note": "开设戏剧学专业的普通本科院校（如部分地方师范类院校、新建本科院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

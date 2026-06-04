@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.037141",
+    "updated_at": "2026-04-26T13:14:43.271314",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090604TK_水生动物医学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "窄而稳的\"水下兽医\"赛道，行业刚需但圈子极小，不怕脏不怕苦的\"水痴\"才能守到春天。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.6,
+      "future_adaptability": 3.4,
+      "career_path": 3.0,
+      "education_resources": 2.6,
+      "discipline_core": 3.6
+    },
+    "weighted_score": 3.16
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "水生动物疾病现场诊断需要解剖实操经验、水质检测综合判断，涉及大量非标准化场景（不同鱼种、不同养殖环境），AI可辅助图像识别和数据分析，但难以替代\"塘边兽医\"的临床决策和实操能力。AI主要替代的是重复性监测和数据分析工作，反而提升了该专业人才的技术门槛价值。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "窄而稳的\"水下兽医\"赛道，行业刚需但圈子极小，不怕脏不怕苦的\"水痴\"才能守到春天。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海海洋大学（全国首创该专业，水产学科A+，2012年设立全国首个水生动物医学专业方向）"
+      ],
+      "tier_A": [
+        "集美大学（A+，软科全国第二，完整本硕博培养体系，农业农村部特色优势专业）",
+        "中国海洋大学（水产学科A+，综合实力强）"
+      ],
+      "tier_B": [
+        "湖南农业大学（B+，内陆水产特色）",
+        "广东海洋大学（B，华南水产重镇）",
+        "大连海洋大学（B，北方水产龙头）"
+      ],
+      "tier_C_note": "仲恺农业工程学院、青岛农业大学、天津农学院（华北唯一）、盐城工学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

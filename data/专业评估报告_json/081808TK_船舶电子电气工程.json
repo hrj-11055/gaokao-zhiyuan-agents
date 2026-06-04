@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.151903",
+    "updated_at": "2026-04-25T18:59:23.952425",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081808TK_船舶电子电气工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "舶电工程是\"蓝色经济\"的硬核赛道——全国仅 12 校开设，需求增速 32%，但招生有体检硬门槛，上船才能赚大钱，上岸则需拼学历。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.63
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "船舶电子电气系统的维护与故障排查需要实地操作能力和对复杂物理系统的直觉判断，难以被纯软件 AI 完全替代。但智能监控和预测性维护技术正在减少对人工巡检的依赖。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "舶电工程是\"蓝色经济\"的硬核赛道——全国仅 12 校开设，需求增速 32%，但招生有体检硬门槛，上船才能赚大钱，上岸则需拼学历。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "大连海事大学",
+        "上海海事大学"
+      ],
+      "tier_A": [
+        "重庆交通大学",
+        "集美大学"
+      ],
+      "tier_B": [
+        "天津理工大学",
+        "桂林电子科技大学",
+        "山东交通学院",
+        "广州航海学院"
+      ],
+      "tier_C_note": "北部湾大学、南通理工学院、海南热带海洋学院、海军工程大学（军校特殊通道）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

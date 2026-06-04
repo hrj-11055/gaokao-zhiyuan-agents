@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.120780",
+    "updated_at": "2026-04-25T04:27:02.874828",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080214T_智能车辆工程",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "风口上的黄金赛道，政策+资本双轮驱动，但课程负荷极重、技术迭代飞快，适合能\"硬核到底\"的理工科选手。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.7,
+      "future_adaptability": 4.0,
+      "career_path": 3.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 4.16
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "12,000–18,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "智能车辆工程本身就是 AI 的\"使用者\"而非\"被替代者\"。自动驾驶感知算法、决策规划、传感器融合等核心技能需要将 AI 技术落地到物理世界，涉及硬件-软件协同，纯 AI 难以替代。但纯机械设计类岗位存在一定替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "风口上的黄金赛道，政策+资本双轮驱动，但课程负荷极重、技术迭代飞快，适合能\"硬核到底\"的理工科选手。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工业大学（威海）",
+        "清华大学（车辆工程智能方向）",
+        "同济大学（汽车学院智能方向）",
+        "北京理工大学（机械与车辆学院）"
+      ],
+      "tier_A": [
+        "合肥工业大学",
+        "湖南大学",
+        "大连理工大学",
+        "东南大学",
+        "北京交通大学",
+        "华南理工大学",
+        "长安大学"
+      ],
+      "tier_B": [
+        "武汉科技大学",
+        "南京林业大学",
+        "河南科技大学",
+        "西南大学",
+        "重庆理工大学",
+        "沈阳理工大学",
+        "上海工程技术大学",
+        "重庆邮电大学",
+        "湖北汽车工业学院"
+      ],
+      "tier_C_note": "安徽农业大学、江苏理工学院、重庆工商大学、北京信息科技大学、中原工学院、皖西学院、厦门理工学院、苏州工学院、重庆科技大学、重庆文理学院、湖北文理学院、三江学院、南通理工学院、吉利学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

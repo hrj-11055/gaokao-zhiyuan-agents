@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.790162",
+    "updated_at": "2026-05-08T03:12:06.822407",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京邮电大学通达学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 4.0,
+      "location_advantage": 3.5,
+      "globalization": 2.5,
+      "student_empowerment": 3.0,
+      "brand_asset": 4.0
+    },
+    "weighted_score": 3.58,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "江苏省扬州",
+      "region": "长三角",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "东南大学成贤学院",
+        "similarity": "同类院校",
+        "key_difference": "成贤学院侧重土木、机械等传统工科，而通达学院在通信、互联网领域具有压倒性优势。"
+      },
+      {
+        "name": "苏州城市学院（原苏大文正）",
+        "similarity": "同类院校",
+        "key_difference": "文正学院在人文艺术和综合性上更强，而通达学院的“工科纯度”更高，就业指向性更明确。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "通达学院是一所典型的“行业驱动型”大学。它成功地将南京邮电大学的学术基因移植到了应用型本科的土壤中。对于那些分数不足以进入双一流名校，但又希望在信息技术领域获得一席之地的学生来说，这里提供了极高的性价比。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "东南大学成贤学院",
+          "similarity": "同类院校",
+          "key_difference": "成贤学院侧重土木、机械等传统工科，而通达学院在通信、互联网领域具有压倒性优势。"
+        },
+        {
+          "name": "苏州城市学院（原苏大文正）",
+          "similarity": "同类院校",
+          "key_difference": "文正学院在人文艺术和综合性上更强，而通达学院的“工科纯度”更高，就业指向性更明确。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

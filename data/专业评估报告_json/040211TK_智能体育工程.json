@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.135830",
+    "updated_at": "2026-04-22T01:26:00.363836",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040211TK_智能体育工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "体育+AI的交叉新贵，赛道性感但专业极新、院校极少，就业数据近乎空白，属于\"赌未来\"的高风险选择。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.53
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业本身就是\"AI+体育\"的交叉产物，核心技能包括传感器技术开发、运动数据分析算法设计、动作捕捉系统研发等，属于 AI 的使用者而非被替代者。但纯数据录入和基础统计分析类工作可能被 AI 工具部分替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "体育+AI的交叉新贵，赛道性感但专业极新、院校极少，就业数据近乎空白，属于\"赌未来\"的高风险选择。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京体育大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "上海体育大学",
+        "武汉体育学院"
+      ],
+      "tier_B": [
+        "天津体育学院",
+        "山东体育学院"
+      ],
+      "tier_C_note": "暂无更多院校列入",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

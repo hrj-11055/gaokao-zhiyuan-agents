@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.006767",
+    "updated_at": "2026-05-17T01:15:41.242878",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "020307T_经济与金融",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 4.5,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 3.5,
+      "education_resources": 4.0,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.79
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~98.2%",
+      "alignment_rate": "~85%",
+      "starting_salary": "7,400–11,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "基础数据分析、简单建模、重复性金融服务容易被AI替代，但复杂决策、人际沟通、创新产品设计仍需要人类智慧。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [],
+      "tier_A": [],
+      "tier_B": [],
+      "tier_C_note": "",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

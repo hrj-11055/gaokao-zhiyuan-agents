@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.486497",
+    "updated_at": "2026-05-09T19:10:06.167256",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "四川农业大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.57,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "华中农业大学",
+        "similarity": "同类院校",
+        "key_difference": "川农大在西南地区具备绝对的行业垄断力，但在全国综合排名及 A+ 学科数量上略逊于华农。华农的生物学底蕴更深，而川农在应用农学和地方产业结合上更具灵活性。"
+      },
+      {
+        "name": "西南大学",
+        "similarity": "同类院校",
+        "key_difference": "川农大的农学特色更纯粹、科研转化率更高，但在综合性（文理教育）和城市中心化程度上弱于位于重庆的西南大学。西南大学更像是一所“大而全”的综合性大学，而川农则是“精而强”的行业领军校。"
+      },
+      {
+        "name": "西北农林科技大学",
+        "similarity": "同类院校",
+        "key_difference": "作为 985，西农在行政级别和国家投入上占优，但川农成都校区的地理位置优于西农所在的杨凌，在就业便利性和城市生活体验上，川农成都校区更具吸引力。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：国家“双一流”、“211 工程”重点建设高校，中国西部农林人才培养与科研的战略高地。四川农业大学不仅是一所学术机构，更是四川乃至西南地区农业现代化的“智力引擎”。\n*   **Ace（王牌优势）**：作物学与畜牧学具备全国顶尖竞争力，在水稻育种、猪肉安全、动物营养等领域拥有国家级话语权。其科研成果转化率在农林院校中名列前茅，真正做到了“把论文写在大地上”。\n*   **Vibe（文化特质）**：以“艰苦奋斗、献身农业”为核心的“川农大精神”，塑造了学生极强的抗压能力与务实作风。在企业雇主眼中，川农毕业生以“下得去、留得住、干得好”著称。\n*   **Risk（潜在风险）**：三校区办学导致资源分布不均，雅安校区地理位置相对偏远，对优秀师资和生源的吸引力存在天然挑战；非农专业在非农行业的品牌溢价有限，学生在跨行就业时需付出更多努力。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "华中农业大学",
+          "similarity": "同类院校",
+          "key_difference": "川农大在西南地区具备绝对的行业垄断力，但在全国综合排名及 A+ 学科数量上略逊于华农。华农的生物学底蕴更深，而川农在应用农学和地方产业结合上更具灵活性。"
+        },
+        {
+          "name": "西南大学",
+          "similarity": "同类院校",
+          "key_difference": "川农大的农学特色更纯粹、科研转化率更高，但在综合性（文理教育）和城市中心化程度上弱于位于重庆的西南大学。西南大学更像是一所“大而全”的综合性大学，而川农则是“精而强”的行业领军校。"
+        },
+        {
+          "name": "西北农林科技大学",
+          "similarity": "同类院校",
+          "key_difference": "作为 985，西农在行政级别和国家投入上占优，但川农成都校区的地理位置优于西农所在的杨凌，在就业便利性和城市生活体验上，川农成都校区更具吸引力。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.752335",
+    "updated_at": "2026-05-08T03:26:50.005850",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "连云港师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 1.8,
+      "graduate_value": 2.1,
+      "location_advantage": 2.5,
+      "globalization": 1.5,
+      "student_empowerment": 2.2,
+      "brand_asset": 2.4
+    },
+    "weighted_score": 2.05,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：连云港师范学院是 2025 年经教育部批准，由连云港师范高等专科学校升格而来的公办全日制普通本科院校。它是苏北地区基础教育师资培养的重要基地，具有鲜明的“师范性、地方性、应用型”特征。\n*   **Ace（王牌优势）**：学校的“压舱石”在于其深厚的初等教育积淀。学前教育与小学教育专业在江苏省内享有极高声誉，其毕业生在苏北各市县的小学、幼儿园入编考试中具有极强的竞争力，校友网络覆盖了连云港及周边地区近 70% 的基层教育管理岗位。\n*   **Vibe（文化特质）**：典型的“老牌师范”气质，校风淳朴且管理严格。学生群体表现出极高的务实性，校园内考证、练字（粉笔、钢笔、毛笔）、背诵教育学理论的氛围浓厚，是一种典型的以“考编”为终极目标的奋斗型文化。\n*   **Risk（潜在风险）**：升本初期的“阵痛期”不可忽视。主要表现为：高层次学科带头人匮乏，本科教学质量保障体系尚在磨合，科研经费投入与成熟本科院校相比差距巨大。此外，由于长期深耕师范领域，非师范专业的社会认可度与就业质量仍需时间检验。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

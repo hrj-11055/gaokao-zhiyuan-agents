@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.888265",
+    "updated_at": "2026-04-25T01:15:39.922175",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070801",
+    "name": "地球物理学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "冷门中的\"硬核贵族\"，地震局与石油系统的对口利器，但圈子极窄、深造刚需、AI 正在吃掉低端岗位。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 3.6
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,800元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 正在快速渗透地震数据处理（去噪、面波分离、全波形反演等环节），但野外观测设计、复杂地质解释、跨学科综合判断等核心能力仍需人类专家。北大宋晓东团队已将 AI 应用于全球层析成像，说明 AI 更像是效率工具而非替代者。物理直觉和实地经验是 AI 短期无法取代的护城河。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "冷门中的\"硬核贵族\"，地震局与石油系统的对口利器，但圈子极窄、深造刚需、AI 正在吃掉低端岗位。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国科学技术大学",
+        "武汉大学"
+      ],
+      "tier_A": [
+        "北京大学",
+        "中国地质大学（武汉）",
+        "中国地质大学（北京）",
+        "中国石油大学（北京）"
+      ],
+      "tier_B": [
+        "同济大学",
+        "吉林大学",
+        "南方科技大学",
+        "中山大学",
+        "成都理工大学"
+      ],
+      "tier_C_note": "长江大学、中国石油大学（华东）、山东科技大学、东华理工大学、防灾科技学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

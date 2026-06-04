@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.092498",
+    "updated_at": "2026-04-25T18:48:44.705395",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081805K_飞行技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "民航金领天花板，入行门槛极高、体检一票否决、停飞风险如影随形——过了独木桥就是百万年薪，但大部分人连桥都上不去。",
+    "radar": {
+      "market_return": 4.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.62
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "",
+      "starting_salary": "20,000–30,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "飞行员需要实时处理复杂的物理环境变化、突发气象条件和多因素决策，涉及高度的身体协调、空间感知和情境判断，AI短期内无法替代机长级决策；但自动驾驶辅助系统正在逐步承担更多常规飞行操作。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "民航金领天花板，入行门槛极高、体检一票否决、停飞风险如影随形——过了独木桥就是百万年薪，但大部分人连桥都上不去。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京航空航天大学",
+        "南京航空航天大学",
+        "中国民用航空飞行学院",
+        "中国民航大学"
+      ],
+      "tier_A": [
+        "上海工程技术大学",
+        "滨州学院",
+        "中国民航飞行学院（新津/广汉分院联动）"
+      ],
+      "tier_B": [
+        "昆明理工大学",
+        "西安航空学院",
+        "太原理工大学",
+        "黑龙江八一农垦大学"
+      ],
+      "tier_C_note": "安阳工学院、郑州航空工业管理学院、北京理工大学珠海学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

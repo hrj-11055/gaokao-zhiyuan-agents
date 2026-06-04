@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.936741",
+    "updated_at": "2026-04-25T05:52:49.049169",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080418T_光电信息材料与器件",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "直指\"中国芯\"卡脖子痛点的硬核赛道，高壁垒高回报，但极度依赖硕博学历和名校平台，数理弱者慎入。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.6,
+      "future_adaptability": 3.7,
+      "career_path": 2.8,
+      "education_resources": 3.2,
+      "discipline_core": 4.4
+    },
+    "weighted_score": 3.85
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "光电材料研发、半导体器件工艺、芯片设计等核心工作依赖物理实验和工程实践，涉及纳米级精密操作和跨尺度材料表征，AI 可辅助仿真但无法替代实验验证和工艺创新。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "直指\"中国芯\"卡脖子痛点的硬核赛道，高壁垒高回报，但极度依赖硕博学历和名校平台，数理弱者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工业大学",
+        "南方科技大学"
+      ],
+      "tier_A": [
+        "南京航空航天大学",
+        "桂林电子科技大学"
+      ],
+      "tier_B": [
+        "重庆理工大学",
+        "齐鲁工业大学",
+        "陕西科技大学",
+        "天津理工大学"
+      ],
+      "tier_C_note": "江苏理工学院、济宁学院、宝鸡文理学院、芜湖学院（原安徽师范大学皖江学院）、南昌航空大学科技学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

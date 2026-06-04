@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.026718",
+    "updated_at": "2026-04-26T01:16:40.298230",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083108TK_网络安全与执法",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "公安系统的\"技术特种兵\"，入警率高、赛道刚需，但锁定体制内路径，自由度有限，数学不好慎入。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 0.0
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "网络犯罪侦查中的电子取证、法律判断、跨系统综合分析需要人类判断力；但部分自动化漏洞扫描、日志分析任务正被AI工具替代。体制内岗位（公安）本身具有强职业保护。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "公安系统的\"技术特种兵\"，入警率高、赛道刚需，但锁定体制内路径，自由度有限，数学不好慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民公安大学",
+        "中国刑事警察学院"
+      ],
+      "tier_A": [
+        "郑州警察学院",
+        "中国人民警察大学",
+        "北京警察学院",
+        "南京警察学院"
+      ],
+      "tier_B": [
+        "四川警察学院",
+        "浙江警察学院",
+        "辽宁警察学院",
+        "山西警察学院",
+        "山东警察学院"
+      ],
+      "tier_C_note": "各省地方警察学院（开设网安方向的省属公安院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

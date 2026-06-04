@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.816610",
+    "updated_at": "2026-05-08T02:14:27.231426",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "苏州工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.135,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "苏州工学院正处于其校史上最重要的转型窗口期。作为由江苏科技大学苏州理工学院（独立学院）成功转设而来的地方公办应用型本科高校，它不仅填补了张家港市作为全国百强县前三甲却缺乏本土公办本科院校的空白，更承接了母体学校江苏科技大学在船舶、海洋、蚕桑等领域的深厚学术基因。\n\n从评估结果看，该校的核心竞争力在于“极高的产业耦合度”与“公办化带来的制度红利”。在苏南地区，尤其是张家港这种以冶金、机械、化工为支柱产业的工业强市，苏州工学院的专业设置几乎是为本地龙头企业（如沙钢、永钢、信义玻璃等）量身定制。这种“校门对厂门”的无缝对接，使得其毕业生在就业市场，尤其是工程技术岗位上具有极强的生存能力。\n\n然而，挑战同样明显。转设后的苏州工学院面临着师资队伍从“母体依赖”向“自主引育”的阵痛。虽然公办编制对人才有吸引力，但要在短时间内建立起独立的高水平科研体系和博士点储备，仍需较长的周期。目前，学校的学术产出仍带有浓厚的江苏科技大学印记，自主品牌的学术影响力尚在构建中。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实主义",
+        "硬核工科",
+        "沙洲湖畔",
+        "考研黑马",
+        "公办红利",
+        "张家港长子",
+        "制造业脊梁"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

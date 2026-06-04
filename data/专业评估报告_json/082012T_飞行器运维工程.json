@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.104145",
+    "updated_at": "2026-04-25T20:22:28.310287",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082012T_飞行器运维工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "民航业\"幕后硬汉\"，壁垒高、缺口大，但新专业尚无毕业生验证，院校选择面极窄，非民航圈家庭慎重。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.51
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "飞行器运维涉及大量实物检测、精密装配、现场排故等需要\"手眼协调\"和\"情境感知\"的操作性工作，AI 难以直接替代。但文档编写、数据分析等辅助环节存在被 AI 工具（如智能诊断系统、数字孪生技术）辅助/部分替代的可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "民航业\"幕后硬汉\"，壁垒高、缺口大，但新专业尚无毕业生验证，院校选择面极窄，非民航圈家庭慎重。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国民航大学（民航局直属，专业发源地，唯一有完整毕业生数据的院校）"
+      ],
+      "tier_A": [
+        "上海电机学院（依托上海航空产业集群，2025 年新开设）",
+        "南昌航空大学/江西飞行学院（航空传统院校）"
+      ],
+      "tier_B": [
+        "郑州航空工业管理学院（航空管理特色）",
+        "鄂尔多斯应用技术学院（拥有 B737-500 实训平台）"
+      ],
+      "tier_C_note": "新疆工程学院、南京航空航天大学金城学院（独立学院）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

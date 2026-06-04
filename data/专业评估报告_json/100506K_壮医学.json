@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.141644",
+    "updated_at": "2026-04-27T02:08:26.028131",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100506K_壮医学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "极度小众的民族医学专业，地域锁定广西，就业面极窄但竞争也小，适合\"扎根壮乡、热爱民族医药\"的考生。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 2.5,
+      "future_adaptability": 2.0,
+      "career_path": 2.0,
+      "education_resources": 3.0,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 2.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3500–5000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "壮医核心诊疗（壮医目诊、壮医针灸、壮药辨识与炮制）高度依赖师承经验和个体化辨证，属于典型的\"手艺型\"医学，AI 在民族医学领域的替代能力极弱。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度小众的民族医学专业，地域锁定广西，就业面极窄但竞争也小，适合\"扎根壮乡、热爱民族医药\"的考生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业体量不足以支撑 S 档评级）"
+      ],
+      "tier_A": [
+        "广西中医药大学（壮医药学院，全国唯一的壮医药本科教育基地，学科建设最完善）"
+      ],
+      "tier_B": [
+        "广西医科大学（民族医学方向）"
+      ],
+      "tier_C_note": "右江民族医学院（百色，有民族医学课程但非独立壮医学专业）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

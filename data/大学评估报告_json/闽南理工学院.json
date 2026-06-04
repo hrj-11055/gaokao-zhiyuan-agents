@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.930994",
+    "updated_at": "2026-05-12T12:22:04.212456",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "闽南理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.5,
+      "graduate_value": 3.2,
+      "location_advantage": 4.2,
+      "globalization": 1.5,
+      "student_empowerment": 3.0,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.92,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "仰恩大学",
+        "similarity": "同类院校",
+        "key_difference": "仰恩大学历史更久，人文底蕴深，但在近十年的工科转型中动作较慢；闽南理工则凭借石狮的工业势能，在硬件和就业转化上实现了后来居上。"
+      },
+      {
+        "name": "厦门华厦学院",
+        "similarity": "同类院校",
+        "key_difference": "华厦学院侧重于检测、康养等现代服务业；闽南理工则在“重工业”和“智能制造”领域占据绝对优势。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "闽南理工学院是一所典型的“产业驱动型”大学。它不追求虚幻的学术排名，而是将办学根基深深扎在闽南的工厂与车间里。\n- **Identity**：福建省民办工科教育的领头羊。\n- **Ace**：机械、服装、电气专业，是进入闽南民营龙头企业的“通行证”。\n- **Vibe**：务实、商业化、充满“爱拼才会赢”的闽南精神。\n- **Risk**：高昂的学费与相对单一的县域生活环境。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "仰恩大学",
+          "similarity": "同类院校",
+          "key_difference": "仰恩大学历史更久，人文底蕴深，但在近十年的工科转型中动作较慢；闽南理工则凭借石狮的工业势能，在硬件和就业转化上实现了后来居上。"
+        },
+        {
+          "name": "厦门华厦学院",
+          "similarity": "同类院校",
+          "key_difference": "华厦学院侧重于检测、康养等现代服务业；闽南理工则在“重工业”和“智能制造”领域占据绝对优势。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "石狮工业黄埔",
+        "爱拼才会赢",
+        "宝盖山下",
+        "产教融合",
+        "考研逆袭",
+        "民办翘楚",
+        "红砖校园"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.997714",
+    "updated_at": "2026-04-27T03:22:12.720946",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100708T_化妆品科学与技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在颜值经济风口上的\"配方师\"，行业火热但专业极小众，院校少、圈子窄，选对学校比选对专业更重要。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–7,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "化妆品配方开发涉及大量感官评价、原料复配经验、稳定性测试等需要物理实验验证的工作，AI 可辅助数据分析和文献检索，但无法替代实验操作和配方调优的手感经验。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在颜值经济风口上的\"配方师\"，行业火热但专业极小众，院校少、圈子窄，选对学校比选对专业更重要。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京工商大学（化妆品行业\"黄埔军校\"，校友网络覆盖最广）"
+      ],
+      "tier_A": [
+        "上海应用技术大学（香料香精特色）",
+        "江南大学（日化工程方向底蕴深厚）",
+        "广东药科大学（功效评价方向突出）"
+      ],
+      "tier_B": [
+        "郑州轻工业大学",
+        "陕西科技大学",
+        "齐鲁工业大学",
+        "武汉工程大学",
+        "南京中医药大学"
+      ],
+      "tier_C_note": "其他近年新开设该专业的普通本科院校，如部分地方应用型本科高校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

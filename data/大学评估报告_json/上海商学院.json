@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.795694",
+    "updated_at": "2026-05-09T18:04:27.168372",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海商学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "最适合希望在上海商业、金融、零售及现代服务业扎根，且分数段位于普通一本线至二本线之间、追求高就业性价比的务实型考生。",
+    "radar": {},
+    "weighted_score": 3.23,
+    "one_sentence_recommend": "最适合希望在上海商业、金融、零售及现代服务业扎根，且分数段位于普通一本线至二本线之间、追求高就业性价比的务实型考生。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "上海商学院（SBS）是一所以商科为特色、上海市属的公办应用型本科高校。在当前高等教育分类发展的背景下，该校精准定位为“应用型”，避开了与研究型大学（如上财、复交）在学术指标上的硬碰硬，转而深耕行业对接。其核心竞争力在于**极高的行业嵌入度**，特别是在连锁经营、酒店管理、电子商务等领域，学校不仅是人才培养基地，更是上海商业决策的智库。\n\n从生源角度看，上海商学院是典型的“地域溢价型”高校。对于非上海籍考生，其录取分数往往溢出其学术排名所对应的区间，这反映了考生对上海就业市场的溢价支付意愿。学校的“海派务实”气质显著，课程设置紧贴市场需求，学生在校期间的职业化训练强度较高。\n\n然而，学校的短板同样明显。学术底蕴相对薄弱，缺乏具有全国影响力的学术带头人，且奉贤主校区的地理位置在一定程度上限制了学生与市中心金融圈的日常高频互动。此外，在全国范围内的品牌认知度仍有待提升，常被外省家长误认为民办院校，这在一定程度上影响了其在全国人才市场的溢价能力。",
+      "one_sentence_recommend": "最适合希望在上海商业、金融、零售及现代服务业扎根，且分数段位于普通一本线至二本线之间、追求高就业性价比的务实型考生。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

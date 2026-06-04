@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.127935",
+    "updated_at": "2026-04-25T11:44:42.275626",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080906",
+    "name": "数字媒体技术",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "技术+创意的\"数字瑞士军刀\"，行业风口上岗位多元、起薪不低，但知识面广而不深，极度依赖自学力和作品集。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 3.2,
+      "discipline_core": 2.0
+    },
+    "weighted_score": 3.58
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AIGC（AI生成内容）对基础图像处理、简单视频剪辑、模板化设计冲击巨大；但创意策划、交互逻辑设计、游戏引擎开发、VR/AR场景构建等需要人类判断力和系统思维的环节仍难被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "技术+创意的\"数字瑞士军刀\"，行业风口上岗位多元、起薪不低，但知识面广而不深，极度依赖自学力和作品集。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江大学",
+        "哈尔滨工业大学",
+        "北京邮电大学",
+        "清华大学"
+      ],
+      "tier_A": [
+        "山东大学",
+        "厦门大学",
+        "湖南大学",
+        "大连理工大学",
+        "上海大学",
+        "东北大学",
+        "江南大学",
+        "中国传媒大学",
+        "华中科技大学"
+      ],
+      "tier_B": [
+        "南京邮电大学",
+        "杭州电子科技大学",
+        "浙江工业大学",
+        "东北师范大学",
+        "华中师范大学",
+        "重庆邮电大学",
+        "北京工业大学",
+        "浙江理工大学",
+        "中国传媒大学",
+        "北京电影学院",
+        "浙江传媒学院",
+        "吉林动画学院"
+      ],
+      "tier_C_note": "全国 214 所开设该专业的普通本科院校，包括各省市的地方综合大学、师范类院校和应用技术型大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

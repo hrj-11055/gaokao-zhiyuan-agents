@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.136691",
+    "updated_at": "2026-04-25T05:39:27.294213",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080414T_新能源材料与器件",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "新能源赛道的\"硬核入场券\"，行业风口正盛，但本质是材料人，读不了研就别来——本科出去做工艺，研究生才是真研发。",
+    "radar": {
+      "market_return": 3.9,
+      "industry_outlook": 4.8,
+      "future_adaptability": 3.6,
+      "career_path": 3.2,
+      "education_resources": 3.8,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.98
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "材料合成实验设计、电化学性能测试、器件工艺优化依赖大量实验试错和物理直觉，AI 可辅助材料筛选和模拟，但无法替代实验验证与工程落地。核心的\"动手做\"能力短期内难以被 AI 替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "新能源赛道的\"硬核入场券\"，行业风口正盛，但本质是材料人，读不了研就别来——本科出去做工艺，研究生才是真研发。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "四川大学",
+        "中南大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_A": [
+        "华东理工大学",
+        "武汉理工大学",
+        "电子科技大学",
+        "北京理工大学",
+        "同济大学",
+        "合肥工业大学",
+        "南京航空航天大学",
+        "苏州大学"
+      ],
+      "tier_B": [
+        "华北电力大学",
+        "南京工业大学",
+        "昆明理工大学",
+        "上海电力大学",
+        "中国矿业大学",
+        "湘潭大学",
+        "长沙理工大学",
+        "浙江理工大学"
+      ],
+      "tier_C_note": "三峡大学、山东科技大学、河北大学、桂林电子科技大学、哈尔滨理工大学、西安建筑科技大学、济南大学、安徽师范大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

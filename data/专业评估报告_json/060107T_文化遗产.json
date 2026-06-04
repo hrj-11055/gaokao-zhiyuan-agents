@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.989575",
+    "updated_at": "2026-04-24T23:01:42.079947",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "060107T_文化遗产",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的冷门精品，情怀驱动型专业，编制是核心出口，市场化岗位极窄，读研几乎是标配。",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.2,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 4.8
+    },
+    "weighted_score": 2.9
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–6,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "田野调查、实物修复、现场勘探等核心工作高度依赖物理世界操作和手工经验，AI难以替代。但文献整理、基础资料分析、展览文案撰写等部分可被AI辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的冷门精品，情怀驱动型专业，编制是核心出口，市场化岗位极窄，读研几乎是标配。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学（考古学顶尖，文化遗产保护方向博导）",
+        "复旦大学（文物与博物馆学强校，遗产研究前沿）",
+        "西北大学（考古学A+，文化遗产保护重镇）"
+      ],
+      "tier_A": [
+        "首都师范大学（文化遗产专业软科排名第1，A+评级）",
+        "南京农业大学（文化遗产专业软科排名第2，A+评级，农业文化遗产研究特色）",
+        "山东大学（\"文物全科人才\"定向培养，毕业即入编）"
+      ],
+      "tier_B": [
+        "湖北大学（B+评级）",
+        "景德镇陶瓷大学（B+评级，陶瓷文化遗产特色）",
+        "山西大学（考古文博学院，文化遗产大省优势）"
+      ],
+      "tier_C_note": "淮北师范大学、重庆文理学院、洛阳理工学院、嘉应学院、长治学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

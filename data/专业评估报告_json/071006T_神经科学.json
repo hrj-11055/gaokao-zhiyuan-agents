@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.096771",
+    "updated_at": "2026-04-25T02:00:47.514001",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "071006T_神经科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "脑科学的星辰大海很美，但本科毕业几乎是\"裸泳\"——极少数学校开设、极依赖硕博深造，不是科研狂人别碰。",
+    "radar": {
+      "market_return": 2.3,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 1.5,
+      "education_resources": 3.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.01
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "神经科学的核心在于实验设计、脑成像数据解读、动物模型操作、临床诊断等需要高度专业判断的环节，短期内 AI 无法替代人类研究者的实验直觉和创造性假设能力。但数据分析、文献综述等辅助性工作正被 AI 加速渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "脑科学的星辰大海很美，但本科毕业几乎是\"裸泳\"——极少数学校开设、极依赖硕博深造，不是科研狂人别碰。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "清华大学",
+        "复旦大学",
+        "中国科学院大学（中科院脑智卓越中心）",
+        "上海交通大学"
+      ],
+      "tier_A": [
+        "中国科学技术大学",
+        "浙江大学",
+        "北京师范大学（认知神经科学与学习国重实验室）",
+        "南京大学",
+        "华中科技大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "南开大学",
+        "武汉大学",
+        "厦门大学",
+        "四川大学",
+        "中南大学",
+        "首都医科大学",
+        "华东师范大学",
+        "东北师范大学"
+      ],
+      "tier_C_note": "华中农业大学、中国农业大学、山东大学、暨南大学、西南大学等在生物学方向具有基础的综合性院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

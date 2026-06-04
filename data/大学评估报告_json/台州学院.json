@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.890775",
+    "updated_at": "2026-05-11T11:32:32.436822",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "台州学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.2,
+      "graduate_value": 3.5,
+      "location_advantage": 3.8,
+      "globalization": 2.8,
+      "student_empowerment": 3.4,
+      "brand_asset": 3.3
+    },
+    "weighted_score": 3.36,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "更名进程的焦虑",
+        "description": "全校师生对“台州大学”的挂牌期待已久，但受限于研究生比例、硕士毕业生届数等硬性指标，更名仍处于“临门一脚”的攻坚期。若进程再度延后，可能会对高分生源的吸引力产生短期负面影响。"
+      },
+      {
+        "category": "学科发展的失衡",
+        "description": "工科、医学、师范类强势，但艺术、体育及部分纯文科专业资源相对匮乏，存在“偏科”现象。"
+      },
+      {
+        "category": "高端人才留存",
+        "description": "虽然引进了大量博士，但如何让这些高层次人才在台州这个“三线城市”长期扎根，而非将其作为跳往沪杭的“跳板”，是学校面临的长期挑战。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "台州学院是一所典型的“产业驱动型”地方本科院校。它成功地将自身的命运与台州发达的民营经济捆绑在一起，通过精准的学科设置和务实的人才培养模式，在激烈的省属高校竞争中杀出重围。\n\n*   **核心竞争力**：极高的产业耦合度与本地就业保障。\n*   **未来增长点**：一旦成功更名为“台州大学”，其品牌价值将迎来质的飞跃，吸引更多省外优质生源。\n*   **建议**：对于追求务实就业、希望在长三角制造业或医药业深耕，或是目标为浙东地区教师、医生的考生，台州学院是性价比极高的选择。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "制造之都的亲儿子",
+        "考研卷王",
+        "药厂CEO摇篮",
+        "务实到骨子里",
+        "古城与新城的交织",
+        "升大梦工厂"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

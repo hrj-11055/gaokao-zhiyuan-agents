@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.005225",
+    "updated_at": "2026-05-17T00:50:39.524467",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120802T_电子商务及法律",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 2.7
+    },
+    "weighted_score": 3.53
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "电商运营中的文案撰写、数据分析等环节易被AI替代，但法律合规审核、复杂纠纷解决仍需人工判断。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西北政法大学（国家级一流本科专业建设点）"
+      ],
+      "tier_A": [
+        "西南政法大学",
+        "上海政法学院",
+        "北京邮电大学"
+      ],
+      "tier_B": [
+        "河南财经政法大学",
+        "安徽工程大学",
+        "重庆理工大学",
+        "广东金融学院"
+      ],
+      "tier_C_note": "安阳师范学院、湖南文理学院、其他开设该专业的普通本科院校",
+      "selection_advice": "优先选择政法类或财经类院校，普通综合院校需谨慎，务必确认课程设置中法律模块的深度和电商实务的比重。"
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

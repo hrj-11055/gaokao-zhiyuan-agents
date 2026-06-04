@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.705802",
+    "updated_at": "2026-05-10T00:11:19.044631",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "北京工业大学耿丹学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "211",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 2.8,
+      "location_advantage": 4.2,
+      "globalization": 3.8,
+      "student_empowerment": 3.5,
+      "brand_asset": 2.9
+    },
+    "weighted_score": 2.98,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "北京工业大学耿丹学院（以下简称“耿丹学院”）是一所以“在地国际化”为核心战略、正处于转设关键期的民办本科院校。在当前的中国高等教育版图中，耿丹学院代表了从“母体依赖型”独立学院向“自主品牌型”应用型大学转型的典型样本。其核心竞争力并非建立在深厚的学术积淀上，而是建立在对市场需求的敏锐捕捉、极高的校园审美建设以及与国际接轨的培养模式之上。\n\n从学术维度看，学校避开了传统学术型大学的竞争赛道，深耕艺术设计、社会工作及应用工科，通过北京市一流专业建设点确立了在民办教育界的“精品店”地位。然而，随着 2026 年转设更名为“北京耿丹学院”的进程推进，失去“北京工业大学”这一公办名校的品牌背书，将是学校未来三年面临的最大挑战。\n\n在学生体验方面，耿丹学院呈现出极端的两极分化：一方面是极具人文关怀的校园景观、自由的转专业政策和丰富的国际交流机会；另一方面则是近期在基层管理中暴露出的教条化倾向（如生理期假条争议），这种管理层面的“温差”反映了民办高校在快速扩张与品牌升级过程中的内部治理矛盾。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "樱花校园",
+        "转专业自由",
+        "在地国际化",
+        "顺义牛栏山",
+        "工业风建筑",
+        "学费贵",
+        "审美在线",
+        "基层管理争议"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

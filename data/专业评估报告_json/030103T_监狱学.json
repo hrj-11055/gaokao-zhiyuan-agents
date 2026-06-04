@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.217741",
+    "updated_at": "2026-04-21T00:11:31.800289",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030103T_监狱学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "穿上警服就是体制人，高确定性但路径极窄，适合目标明确、服从纪律、甘守封闭的考生。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 3.0,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.13
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "监狱学的核心工作——罪犯心理评估、行为矫正、安全管理、人际沟通——高度依赖人类情感判断和现场应变能力，AI短期内无法替代。但AI正在辅助生成矫正方案、心理测评、档案管理，可提升效率但不会取代人力。[司法部监狱管理局, 2024；福建监狱\"AI+智慧监狱\"联合实验室]"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "穿上警服就是体制人，高确定性但路径极窄，适合目标明确、服从纪律、甘守封闭的考生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央司法警官学院（司法部直属，该领域绝对标杆）"
+      ],
+      "tier_A": [
+        "上海政法学院（国家级特色专业",
+        "应用型排名第一）",
+        "山东政法学院（国家级一流本科专业建设点，公职就业率极高）"
+      ],
+      "tier_B": [
+        "辽宁警察学院",
+        "福建警察学院",
+        "甘肃政法大学",
+        "贵州警察学院"
+      ],
+      "tier_C_note": "广西警察学院、新疆政法学院、昆明理工大学津桥学院（民办）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

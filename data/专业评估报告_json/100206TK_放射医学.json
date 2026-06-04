@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.992603",
+    "updated_at": "2026-04-27T01:06:55.711964",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100206TK_放射医学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "医学界的\"隐形尖兵\"，赛道极窄但壁垒极高，靠放疗设备井喷吃红利，普通人慎入——选了就得读到头。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.42
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "放射医学涉及放疗计划制定、辐射剂量计算、影像引导等核心决策环节，AI 可辅助（如自动勾画靶区、AI 辅助诊断），但治疗方案的最终制定、患者的个体化管理仍高度依赖临床医生判断，且医疗伦理和法规要求人类最终担责。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "医学界的\"隐形尖兵\"，赛道极窄但壁垒极高，靠放疗设备井喷吃红利，普通人慎入——选了就得读到头。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "苏州大学（放射医学与防护学院，全国第一，国防特色学科）"
+      ],
+      "tier_A": [
+        "复旦大学（放射医学研究所，科研实力强，以研究生为主）",
+        "吉林大学"
+      ],
+      "tier_B": [
+        "安徽医科大学",
+        "内蒙古医科大学"
+      ],
+      "tier_C_note": "新乡医学院等少数地方院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

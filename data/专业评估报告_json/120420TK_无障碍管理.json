@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.121905",
+    "updated_at": "2026-04-27T20:12:02.144323",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120420TK_无障碍管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "新兴国控专业，政策红利大但岗位极少，全国仅1–2所院校开设，属\"先发优势与高风险并存\"的小众赛道。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "无障碍管理涉及残疾人事务协调、政策法规解读、无障碍设施实地评估、跨部门沟通等人际互动和政策执行工作，AI可辅助信息无障碍技术（如自动字幕、语音识别），但无法替代人文关怀、法规落地协调和物理空间体验评估。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "新兴国控专业，政策红利大但岗位极少，全国仅1–2所院校开设，属\"先发优势与高风险并存\"的小众赛道。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（专业太新，尚无公认强势院校）"
+      ],
+      "tier_A": [
+        "南京特殊教育师范学院（全国首个开设该专业的高校，中国残联合作紧密，特殊教育领域积累深厚）"
+      ],
+      "tier_B": [
+        "[待核实，可能有滨州医学院等开设相关方向的院校]"
+      ],
+      "tier_C_note": "暂无其他已知开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

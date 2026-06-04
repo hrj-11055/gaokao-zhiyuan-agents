@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.080801",
+    "updated_at": "2026-04-27T21:44:01.762057",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120803T_跨境电子商务",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "乘风万亿赛道的\"新贸易人\"，行业爆发但专业年轻，重实战轻理论，名校光环弱，拼的是外语+运营+选品三板斧。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.49
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 对跨境电商的冲击呈现\"替代运营执行、增强策略决策\"的双面性。具体而言：\n- **易被替代**：基础文案翻译、listing 优化、客服回复、广告出价等重复性运营工作，ChatGPT、Midjourney 等 AI 工具已能大幅提效\n- **不易被替代**：跨文化商业洞察、选品直觉、供应链谈判、海外市场本地化策略、与人脉网络相关的商务拓展\n- **行业共识**：AI 将淘汰\"纯执行型\"运营，但\"AI+运营\"的复合型人才价值反而上升"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "乘风万亿赛道的\"新贸易人\"，行业爆发但专业年轻，重实战轻理论，名校光环弱，拼的是外语+运营+选品三板斧。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江大学",
+        "对外经济贸易大学"
+      ],
+      "tier_A": [
+        "杭州师范大学",
+        "广东外语外贸大学",
+        "深圳大学",
+        "厦门大学",
+        "上海对外经贸大学",
+        "天津大学"
+      ],
+      "tier_B": [
+        "浙江工商大学",
+        "宁波大学",
+        "义乌工商职业技术学院（本科层次职业教育）",
+        "武汉纺织大学",
+        "华南师范大学",
+        "河南财经政法大学",
+        "长沙理工大学"
+      ],
+      "tier_C_note": "各省地方本科院校中开设跨境电商方向或专业的普通本科高校（如部分省属财经类院校、应用型本科院校），地处内陆、缺乏跨境电商产业集群支撑的院校。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

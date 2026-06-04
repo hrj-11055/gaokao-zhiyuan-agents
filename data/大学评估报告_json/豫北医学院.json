@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.731698",
+    "updated_at": "2026-05-11T17:58:52.583318",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "豫北医学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.94,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "黄河科技学院（医学院）",
+        "similarity": "同类院校",
+        "key_difference": "豫北医学院在医学专业的垂直度和专业性上更胜一筹，考研风气更浓。"
+      },
+      {
+        "name": "商丘医学院（原商丘医学高等专科学校升本）",
+        "similarity": "同类院校",
+        "key_difference": "豫北医学院在本科办学经验和平原校区的硬件设施上具有明显优势，但学费成本更高。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "豫北医学院（原三全学院）是中国独立学院转设路径中的典型成功案例。它通过深度绑定母体学校的教学质量，同时利用民办机制的灵活性，在河南这一高考大省杀出重围。学校的核心竞争力在于其**“硬核”的学术氛围**和**极高的考研产出**，这精准击中了中国家长对于医学教育“学历进阶”的痛点。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "黄河科技学院（医学院）",
+          "similarity": "同类院校",
+          "key_difference": "豫北医学院在医学专业的垂直度和专业性上更胜一筹，考研风气更浓。"
+        },
+        {
+          "name": "商丘医学院（原商丘医学高等专科学校升本）",
+          "similarity": "同类院校",
+          "key_difference": "豫北医学院在本科办学经验和平原校区的硬件设施上具有明显优势，但学费成本更高。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "考研卷王",
+        "书院制社区",
+        "平原校区豪宅宿舍",
+        "医学严谨性",
+        "民办医学领头羊"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

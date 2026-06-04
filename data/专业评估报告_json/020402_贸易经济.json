@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.981974",
+    "updated_at": "2026-05-17T01:27:33.631249",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "020402",
+    "name": "贸易经济",
+    "category": "经济学",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 2.8,
+      "career_path": 3.2,
+      "education_resources": 3.8,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.48
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6500–8500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "单证制作、报关报检、基础翻译等标准化流程易被AI替代；但客户关系维护、商务谈判、市场开拓等仍需人工。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "西安交通大学"
+      ],
+      "tier_A": [
+        "中央财经大学",
+        "中南财经政法大学",
+        "首都经济贸易大学",
+        "南京审计大学",
+        "南京财经大学",
+        "北京工商大学"
+      ],
+      "tier_B": [
+        "上海对外经贸大学",
+        "浙江工商大学",
+        "山东财经大学",
+        "天津商业大学",
+        "哈尔滨商业大学",
+        "安徽财经大学",
+        "江西财经大学"
+      ],
+      "tier_C_note": "其他开设贸易经济专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

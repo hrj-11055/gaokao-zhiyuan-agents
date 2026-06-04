@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.980256",
+    "updated_at": "2026-04-24T22:42:58.525976",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "060102",
+    "name": "世界史",
+    "category": "历史学",
+    "recommendation_level": "yellow",
+    "summary": "小众冷门中的\"贵族\"专业，名校硕士起步才有体面出路，就业面窄但学术路深，适合真正热爱历史、耐得住寂寞的人。",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 2.0,
+      "future_adaptability": 2.5,
+      "career_path": 2.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 2.3
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "历史文献整理、基础翻译、内容概括等重复性工作可被 AI 替代；但深度历史分析、跨文明比较、策展叙事等需要人文洞察力的核心能力短期内难以被替代。AI 生成历史内容的可靠性问题使人类专家仍具不可替代性。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众冷门中的\"贵族\"专业，名校硕士起步才有体面出路，就业面窄但学术路深，适合真正热爱历史、耐得住寂寞的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "华东师范大学",
+        "南开大学"
+      ],
+      "tier_A": [
+        "东北师范大学",
+        "首都师范大学",
+        "北京师范大学",
+        "复旦大学",
+        "南京大学",
+        "武汉大学"
+      ],
+      "tier_B": [
+        "中国人民大学",
+        "天津师范大学",
+        "西北大学",
+        "吉林大学",
+        "上海师范大学",
+        "浙江大学",
+        "厦门大学",
+        "四川大学",
+        "陕西师范大学"
+      ],
+      "tier_C_note": "山东大学、华中师范大学、中山大学、暨南大学、华南师范大学、河南大学、郑州大学、延边大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

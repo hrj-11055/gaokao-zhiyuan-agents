@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.081420",
+    "updated_at": "2026-04-27T01:49:46.199947",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100502K_针灸推拿学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "靠双手吃饭的铁饭碗，政策东风劲吹、AI 替代极低，但入门周期长、收入天花板明显，不深造难进好医院。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 4.2,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.5
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "针灸推拿是高度依赖手工操作的临床技能，涉及穴位精准定位、进针角度深度、手法力度等，属于\"手艺人\"型职业，AI 和机器人短期内无法替代人类医师的临床判断和精细操作。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "靠双手吃饭的铁饭碗，政策东风劲吹、AI 替代极低，但入门周期长、收入天花板明显，不深造难进好医院。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京中医药大学",
+        "上海中医药大学"
+      ],
+      "tier_A": [
+        "广州中医药大学",
+        "南京中医药大学",
+        "成都中医药大学",
+        "天津中医药大学",
+        "黑龙江中医药大学",
+        "浙江中医药大学"
+      ],
+      "tier_B": [
+        "山东中医药大学",
+        "湖南中医药大学",
+        "湖北中医药大学",
+        "广西中医药大学",
+        "河南中医药大学",
+        "安徽中医药大学",
+        "长春中医药大学",
+        "陕西中医药大学",
+        "甘肃中医药大学",
+        "云南中医药大学"
+      ],
+      "tier_C_note": "江西中医药大学、辽宁中医药大学、福建中医药大学、贵阳中医药大学及各省新开设针灸推拿专业的综合性大学/地方医学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

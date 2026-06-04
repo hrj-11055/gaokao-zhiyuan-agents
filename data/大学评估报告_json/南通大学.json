@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.735328",
+    "updated_at": "2026-05-08T01:43:13.648283",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南通大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.3,
+      "graduate_value": 3.6,
+      "location_advantage": 4.0,
+      "globalization": 2.9,
+      "student_empowerment": 3.0,
+      "brand_asset": 3.7
+    },
+    "weighted_score": 3.48,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南通大学是一所**被低估的省属重点大学**。它完美的诠释了“地方性、应用型、综合性”的内涵。\n*   **核心定位**：它是苏中地区的医疗卫生中心、基础教育摇篮和工程技术支撑。\n*   **王牌优势**：医学是其绝对的护城河，尤其是神经科学相关的科研与临床实力。\n*   **文化特质**：务实、低调、带有浓厚的近代实业家情怀。\n*   **潜在风险**：在全国范围内的品牌穿透力不足，非优势学科在激烈的就业竞争中面临“高不成低不就”的尴尬。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "张謇传人",
+        "医学高地",
+        "考研基地",
+        "万亿城市",
+        "务实严谨",
+        "长三角跳板",
+        "管理严格",
+        "海鲜食堂"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.972536",
+    "updated_at": "2026-04-27T12:09:10.217037",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120303TK_乡村治理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "乡村振兴政策风口上的新专业，就业绑定体制内，但专业太新、开设院校少、社会认知度低，选它等于押注国家政策的长期定力。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.6,
+      "education_resources": 2.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.26
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "乡村治理的核心工作涉及人际沟通、利益协调、现场问题解决、文化理解和情感共鸣——这些是AI最难替代的领域。基层治理中的矛盾调解、群众动员、政策解读等工作高度依赖人的\"软技能\"。但基础数据整理、报表填报等行政事务存在被AI辅助替代的可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "乡村振兴政策风口上的新专业，就业绑定体制内，但专业太新、开设院校少、社会认知度低，选它等于押注国家政策的长期定力。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "海南大学（全国首创，211/双一流，服务海南自贸港建设，软科A+）",
+        "西南大学（211/双一流，ABC排名第1）"
+      ],
+      "tier_A": [
+        "福建农林大学（多榜排名第1，农林经济管理底蕴）",
+        "河南农业大学（公共管理省级重点学科）"
+      ],
+      "tier_B": [
+        "山西农业大学",
+        "甘肃农业大学（西部乡村治理特色方向）"
+      ],
+      "tier_C_note": "临沂大学、怀化学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

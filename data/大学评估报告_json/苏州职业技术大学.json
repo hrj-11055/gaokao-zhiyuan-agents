@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.872237",
+    "updated_at": "2026-05-08T03:30:26.081225",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "苏州职业技术大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 4.2,
+      "location_advantage": 4.9,
+      "globalization": 2.5,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.65,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "南京工业职业技术大学",
+        "similarity": "同类院校",
+        "key_difference": "南工大作为全国首个职业本科，在国家级奖项和全国名气上略胜一筹；但苏职大在"
+      },
+      {
+        "name": "普通二本（如常熟理工学院）",
+        "similarity": "同类院校",
+        "key_difference": "常熟理工更偏向传统学术型培养，而苏职大的学生在毕业第一年的"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "苏州职业技术大学是一所**“以产定教、以城兴校”**的典型代表。它不追求在学术论文排名上的虚名，而是深耕苏州制造业的每一个环节。在从专科向职业本科转型的过程中，它成功保留了“高就业率”的优良基因，并叠加了“高层次学位”的社会溢价。对于那些希望在长三角地区获得一份体面、稳定且具有技术门槛工作的考生来说，苏职大的性价比远超许多偏远地区的普通公办本科。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "南京工业职业技术大学",
+          "similarity": "同类院校",
+          "key_difference": "南工大作为全国首个职业本科，在国家级奖项和全国名气上略胜一筹；但苏职大在"
+        },
+        {
+          "name": "普通二本（如常熟理工学院）",
+          "similarity": "同类院校",
+          "key_difference": "常熟理工更偏向传统学术型培养，而苏职大的学生在毕业第一年的"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实主义",
+        "石湖学霸",
+        "大厂预备役",
+        "技能溢价",
+        "苏州智造",
+        "产教共生",
+        "不卷论文卷实操"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

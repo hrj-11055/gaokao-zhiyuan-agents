@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.974547",
+    "updated_at": "2026-04-23T19:18:04.625200",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050211",
+    "name": "梵语巴利语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "学术象牙塔里的\"绝学\"，季羡林亲手缔造，全国仅两校开设，出路窄但壁垒极高，非学术信徒慎入。",
+    "radar": {
+      "market_return": 1.5,
+      "industry_outlook": 1.0,
+      "future_adaptability": 2.0,
+      "career_path": 1.5,
+      "education_resources": 4.5,
+      "discipline_core": 5.0
+    },
+    "weighted_score": 1.95
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "梵语巴利语文献释读、古代语言翻译与校勘需要极高的人工学术判断力，涉及多语种交叉考证（梵语、巴利语、藏语、犍陀罗语等），AI 目前完全无法替代该领域的深度研究工作。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "学术象牙塔里的\"绝学\"，季羡林亲手缔造，全国仅两校开设，出路窄但壁垒极高，非学术信徒慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学（季羡林/金克木开创，本硕博全链条，国际一流）"
+      ],
+      "tier_A": [
+        "北京外国语大学（2018 年创建，师资 3 人博士团队，国际合作活跃）"
+      ],
+      "tier_B": [
+        "无（全国仅 2 校开设）"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

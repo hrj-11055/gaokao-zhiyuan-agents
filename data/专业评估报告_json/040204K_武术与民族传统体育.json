@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.163253",
+    "updated_at": "2026-04-22T00:59:42.088545",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040204K_武术与民族传统体育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"身怀绝技但赛道极窄，靠武术吃饭的饭碗少而精，没有名校加持和段位傍身，前路相当硬核。\"",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.5,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 2.65
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "武术的核心在于身体技能训练、实际操作指导和人际互动示范——这些高度依赖\"具身性\"和现场感知，AI 目前难以替代。但武术理论教学、赛事数据分析等环节面临 AI 辅助竞争。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"身怀绝技但赛道极窄，靠武术吃饭的饭碗少而精，没有名校加持和段位傍身，前路相当硬核。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京体育大学",
+        "上海体育大学"
+      ],
+      "tier_A": [
+        "成都体育学院",
+        "河南大学",
+        "东北师范大学",
+        "武汉体育学院",
+        "首都体育学院"
+      ],
+      "tier_B": [
+        "山东师范大学",
+        "集美大学",
+        "山西大学",
+        "南京体育学院",
+        "沈阳体育学院",
+        "江西师范大学",
+        "苏州大学",
+        "吉首大学",
+        "湖南师范大学"
+      ],
+      "tier_C_note": "天津体育学院、河北师范大学、广州体育学院、山东体育学院、云南师范大学、河北体育学院、吉林体育学院、西安体育学院、山西师范大学、杭州师范大学、沧州师范学院、哈尔滨体育学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

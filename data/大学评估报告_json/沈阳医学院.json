@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.841221",
+    "updated_at": "2026-05-12T10:12:13.639515",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "沈阳医学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.91,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "沈阳医学院（Shenyang Medical College）是一所具有深厚地方底蕴的省属普通本科医学院校。其核心定位非常清晰：立足沈阳、服务辽宁、辐射东北，培养高素质的应用型医学人才。在当前的医疗行业背景下，沈阳医学院展现出了极强的“抗周期性”。\n\n**核心竞争力分析：**\n学校的王牌在于其极高的“就业性价比”。相比于同省的中国医科大学和大连医科大学，沈阳医学院的录取分数线更为亲和，但在沈阳本地及周边城市的二甲、三甲医院中，沈医毕业生的占有率极高。特别是在临床医学、口腔医学和预防医学领域，学校通过完善的附属医院体系（包括附属中心医院、附属第二医院等）为学生提供了扎实的临床实践平台。\n\n**发展态势评估：**\n从学术维度看，学校正处于从“教学型”向“教学研究型”转型的阵痛期。目前虽然拥有硕士学位授予权，但博士点的缺失是制约其学科高度的关键瓶颈。不过，2024-2025年的数据显示，学校在科研经费投入和高层次人才引进上力度加大，临床医学学科进入ESI全球前1%是一个重要的里程碑，标志着其学术影响力开始跨入国际主流视野。\n\n**风险与挑战：**\n学生端的主要矛盾集中在“日益增长的深造需求与相对有限的学术平台”之间。随着医学考研竞争的白热化，沈医学生面临着巨大的升学压力。此外，校园基础设施的现代化程度（如宿舍空调安装、智慧校园建设）与学生预期仍有差距，这在社交媒体上形成了一定的负面舆论。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实到骨子里",
+        "考研卷王",
+        "白衣情怀",
+        "沈阳北郊",
+        "临床技能点满",
+        "性价比之王"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

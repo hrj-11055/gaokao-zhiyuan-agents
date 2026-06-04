@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.202201",
+    "updated_at": "2026-04-22T00:37:04.431273",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040116TK_孤独症儿童教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略催生的\"稀缺赛道\"，需求爆炸但供给几乎为零，唯一开设院校意味着巨大师资缺口=确定性就业，但薪资天花板低、职业成就感靠\"用爱发电\"。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.16
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3500–5000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "孤独症儿童教育的核心是\"人际互动、情感共情、行为观察与即时干预\"——这些高度依赖人与人之间真实的情感连接和身体互动，AI 无法替代教师在与孤独症儿童面对面教学中所需的灵活应变和情感调节能力。AI 更可能扮演辅助评估和数据分析工具的角色。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略催生的\"稀缺赛道\"，需求爆炸但供给几乎为零，唯一开设院校意味着巨大师资缺口=确定性就业，但薪资天花板低、职业成就感靠\"用爱发电\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "（暂无——该专业仅 1 所院校开设）"
+      ],
+      "tier_A": [
+        "南京特殊教育师范学院（全国唯一开设院校，特教师资培养的\"国家队\"）"
+      ],
+      "tier_B": [
+        "（暂无——短期内可能有师范类院校跟进开设）"
+      ],
+      "tier_C_note": "（暂无）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

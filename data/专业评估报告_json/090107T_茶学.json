@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.088586",
+    "updated_at": "2026-04-26T02:57:57.725994",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090107T_茶学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众而精致的\"国饮\"学科，行业天花板低、起薪寒碜，但对真正热爱茶文化的人有不可替代的\"情怀溢价\"。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.3,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.88
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–5,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "茶叶感官审评（品鉴、分级）依赖人类味觉嗅觉经验积累，茶园管理的田间决策也依赖实地经验，短期内 AI 难以完全替代；但茶叶电商直播、基础品控检验等岗位正被 AI 工具渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众而精致的\"国饮\"学科，行业天花板低、起薪寒碜，但对真正热爱茶文化的人有不可替代的\"情怀溢价\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江大学"
+      ],
+      "tier_A": [
+        "安徽农业大学",
+        "湖南农业大学",
+        "福建农林大学",
+        "南京农业大学",
+        "华中农业大学"
+      ],
+      "tier_B": [
+        "华南农业大学",
+        "四川农业大学",
+        "西北农林科技大学",
+        "云南农业大学",
+        "西南大学",
+        "武夷学院"
+      ],
+      "tier_C_note": "河南农业大学、山东农业大学、青岛农业大学、贵州大学、信阳师范学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

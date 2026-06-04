@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.959439",
+    "updated_at": "2026-04-24T23:47:50.029571",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070205T_系统科学与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "极小众的\"万金油\"交叉学科，全国仅4所高校开设，就业面广但专业认知度低，深造是主旋律。",
+    "radar": {
+      "market_return": 3.4,
+      "industry_outlook": 3.6,
+      "future_adaptability": 4.2,
+      "career_path": 2.8,
+      "education_resources": 2.8,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.55
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~95%",
+      "alignment_rate": "",
+      "starting_salary": "12,000–18,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "系统科学与工程的核心在于\"系统性思维\"——从整体视角分析复杂系统各组成部分的相互作用与动态演化，这种顶层设计、跨学科整合、全局优化的能力难以被AI替代。但低层级的数据处理、模型搭建工作可能被AI工具辅助甚至替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极小众的\"万金油\"交叉学科，全国仅4所高校开设，就业面广但专业认知度低，深造是主旋律。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京交通大学（系统科学A+",
+        "学科底蕴最深）",
+        "北京师范大学（系统科学A+",
+        "综合985平台）"
+      ],
+      "tier_A": [
+        "无（开设院校过少，中间层次断层）"
+      ],
+      "tier_B": [
+        "中山大学（虽未列入本科专业开设名单，但系统科学与工程学院硕博培养体系成熟，本科升学可作为跳板）",
+        "国防科技大学（系统科学A+，但军校体制特殊）"
+      ],
+      "tier_C_note": "玉林师范学院（2024年浙江录取分数线约513分，为该专业最低入门门槛）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

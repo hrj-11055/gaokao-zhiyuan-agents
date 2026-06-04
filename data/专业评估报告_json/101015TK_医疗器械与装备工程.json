@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.011746",
+    "updated_at": "2026-04-27T06:06:06.943786",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "101015TK_医疗器械与装备工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的\"硬核蓝海\"，站在国产替代浪潮之巅，但作为 2024 年新设专业，培养体系尚未经市场检验，先行者既是探路者也是试水者。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.65
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "医疗器械与装备涉及硬件设计、物理测试、临床验证、法规合规等多维度工作，其中硬件调试、设备校准、临床现场支持等环节需要\"手眼协调\"和实体操作，AI 短期内难以替代。但部分工作（如设计验证、文档撰写、数据分析）可能被 AI 工具辅助，且法规审核类工作可能被 AI 部分自动化。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的\"硬核蓝海\"，站在国产替代浪潮之巅，但作为 2024 年新设专业，培养体系尚未经市场检验，先行者既是探路者也是试水者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东南大学",
+        "华中科技大学",
+        "上海交通大学"
+      ],
+      "tier_A": [
+        "清华大学",
+        "北京航空航天大学",
+        "浙江大学",
+        "四川大学",
+        "西安交通大学"
+      ],
+      "tier_B": [
+        "上海理工大学（医疗器械方向传统强校）",
+        "华南理工大学",
+        "天津大学",
+        "电子科技大学",
+        "重庆大学"
+      ],
+      "tier_C_note": "首批获批开设该专业的其他普通本科院校，具体名单待教育部公布",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

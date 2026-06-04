@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.077123",
+    "updated_at": "2026-04-27T05:21:14.582191",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "101005",
+    "name": "康复治疗学",
+    "category": "医学",
+    "recommendation_level": "yellow",
+    "summary": "大健康风口上的\"手艺人\"——康复治疗学踩中了人口老龄化与运动健康两大趋势，行业需求真实且增长迅猛。但本科起薪偏低、职业天花板明显、考证壁垒高、工作强度大，是典型的\"越老越吃香但前期熬人\"专业。适合有耐心、体力好、真正愿意\"动手干活\"的学生，不适合幻想坐办公室拿高薪的人。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.3,
+      "future_adaptability": 4.0,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.48
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "康复治疗的核心是\"手触评估+个性化治疗方案+患者互动\"，涉及大量精细的触觉感知、运动判断和人际沟通，这些是 AI 和机器人极难替代的能力。AI 可能在评估辅助、方案推荐等环节提供工具支持，但无法取代治疗师的核心工作。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "大健康风口上的\"手艺人\"——康复治疗学踩中了人口老龄化与运动健康两大趋势，行业需求真实且增长迅猛。但本科起薪偏低、职业天花板明显、考证壁垒高、工作强度大，是典型的\"越老越吃香但前期熬人\"专业。适合有耐心、体力好、真正愿意\"动手干活\"的学生，不适合幻想坐办公室拿高薪的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [],
+      "tier_A": [],
+      "tier_B": [],
+      "tier_C_note": "",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

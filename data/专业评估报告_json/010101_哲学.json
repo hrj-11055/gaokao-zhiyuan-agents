@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.116589",
+    "updated_at": "2026-04-20T19:25:30.804054",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "010101",
+    "name": "哲学",
+    "category": "哲学",
+    "recommendation_level": "yellow",
+    "summary": "思想的淬炼炉，名校深造的跳板，但本科即就业≈裸奔，无对口行业是致命伤。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 1.5,
+      "future_adaptability": 3.2,
+      "career_path": 2.3,
+      "education_resources": 3.8,
+      "discipline_core": 4.8
+    },
+    "weighted_score": 2.53
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–5200元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "哲学训练的核心——批判性思维、逻辑推理、伦理判断——属于 AI 难以替代的高阶认知能力。但哲学毕业生的典型就业岗位（行政、文秘、党务）中大量重复性工作可被 AI 替代，形成\"能力抗 AI、岗位不抗 AI\"的矛盾局面。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "思想的淬炼炉，名校深造的跳板，但本科即就业≈裸奔，无对口行业是致命伤。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "复旦大学",
+        "中国人民大学",
+        "南京大学"
+      ],
+      "tier_A": [
+        "北京师范大学",
+        "中山大学",
+        "武汉大学",
+        "吉林大学",
+        "清华大学",
+        "南开大学"
+      ],
+      "tier_B": [
+        "华东师范大学",
+        "浙江大学",
+        "山东大学",
+        "黑龙江大学",
+        "东南大学",
+        "华中科技大学",
+        "山西大学"
+      ],
+      "tier_C_note": "各地方综合大学及师范类院校（如湖南师范大学、四川大学、陕西师范大学、辽宁大学等），全国共约 84 所高校参评哲学学科评估",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

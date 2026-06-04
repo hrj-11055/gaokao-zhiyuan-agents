@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.185876",
+    "updated_at": "2026-04-21T02:44:56.741418",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030617TK_海警执法",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "带编\"蓝盾卫士\"，国家战略刚需但极窄赛道，仅一所院校开设，毕业即入海警系统，体能与政审是硬门槛。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.72
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "海警执法核心技能为海上现场执法、舰艇指挥、危机处置、人际对抗与谈判，高度依赖体力和现场判断力，AI 难以替代海上实际执勤和物理对抗场景。法律文书辅助等环节可能被 AI 工具增效，但不构成替代威胁。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "带编\"蓝盾卫士\"，国家战略刚需但极窄赛道，仅一所院校开设，毕业即入海警系统，体能与政审是硬门槛。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民武装警察部队海警学院（唯一开设院校，\"独苗\"地位）"
+      ],
+      "tier_A": [
+        "中国人民警察大学（海警方向/相关培养）",
+        "大连海事大学（涉海法律+航海技术支撑）",
+        "中国海洋大学（海洋法方向）"
+      ],
+      "tier_B": [
+        "上海海洋大学",
+        "浙江海洋大学（涉海学科背景，可向海警方向考研深造）"
+      ],
+      "tier_C_note": "不适用——该专业为特设控制布点专业，仅 S 档院校开设，其他院校不开设此专业。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

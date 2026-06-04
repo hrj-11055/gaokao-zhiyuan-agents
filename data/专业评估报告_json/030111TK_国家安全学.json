@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.212627",
+    "updated_at": "2026-04-21T00:40:31.103216",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030111TK_国家安全学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略级\"朝阳学科\"，政策红利极强但仅有 4 校开设、尚无本科毕业生，就业确定性高却路径极窄，适合政审过硬、志向坚定的少数人。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.52
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "情报研判、战略分析、涉密决策等核心工作涉及政治判断力和人际情报网络，AI 难以替代；但基础数据收集、舆情监测等辅助性工作已开始被 AI 工具替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略级\"朝阳学科\"，政策红利极强但仅有 4 校开设、尚无本科毕业生，就业确定性高却路径极窄，适合政审过硬、志向坚定的少数人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "国际关系学院"
+      ],
+      "tier_A": [
+        "甘肃政法大学"
+      ],
+      "tier_B": [
+        "新疆政法学院",
+        "新疆警察学院"
+      ],
+      "tier_C_note": "暂无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

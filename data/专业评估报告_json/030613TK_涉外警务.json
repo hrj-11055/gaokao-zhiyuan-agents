@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.050621",
+    "updated_at": "2026-04-21T02:34:03.745161",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030613TK_涉外警务",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "穿警服的外交官、讲外语的执法者——入警率 90%+的体制内铁饭碗，但招生院校极少、政审体能双卡，能考上的都是\"六边形战士\"。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 3.9,
+      "future_adaptability": 3.6,
+      "career_path": 3.3,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.63
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "涉外警务核心技能为跨文化沟通、现场处置、国际法律适用、人际谈判，均依赖人类的情境判断和人际交互能力，AI 难以替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "穿警服的外交官、讲外语的执法者——入警率 90%+的体制内铁饭碗，但招生院校极少、政审体能双卡，能考上的都是\"六边形战士\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民公安大学（公安部直属，国家级一流本科专业建设点，2022 年获批）"
+      ],
+      "tier_A": [
+        "浙江警察学院（软科排名第一，国家级一流本科专业建设点）",
+        "中国刑事警察学院（校友会 A+）"
+      ],
+      "tier_B": [
+        "江苏警官学院",
+        "中国人民警察大学",
+        "北京警察学院"
+      ],
+      "tier_C_note": "吉林警察学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

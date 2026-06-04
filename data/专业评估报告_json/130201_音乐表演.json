@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.052722",
+    "updated_at": "2026-04-28T02:03:57.277346",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130201",
+    "name": "音乐表演",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "聚光灯下的艺术梦想，镜头外的生存战场——名校光环才有出路，普通院校毕业即转行，才艺与饭碗之间横亘一道残酷的现实鸿沟。",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 2.5,
+      "future_adaptability": 2.0,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 2.37
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,800–6,300元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 已能在作曲、编曲、音乐生成方面替代大量基础工作（Suno、Udio 等工具），但现场演奏的情感表达和人际互动短期内难以完全替代。然而，音乐制作、录音、混音等技术岗位受 AI 冲击明显。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "聚光灯下的艺术梦想，镜头外的生存战场——名校光环才有出路，普通院校毕业即转行，才艺与饭碗之间横亘一道残酷的现实鸿沟。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央音乐学院",
+        "上海音乐学院",
+        "中国音乐学院"
+      ],
+      "tier_A": [
+        "星海音乐学院",
+        "武汉音乐学院",
+        "四川音乐学院",
+        "西安音乐学院",
+        "南京艺术学院",
+        "中央民族大学"
+      ],
+      "tier_B": [
+        "沈阳音乐学院",
+        "天津音乐学院",
+        "浙江音乐学院",
+        "哈尔滨音乐学院",
+        "湖南师范大学",
+        "东北师范大学",
+        "郑州大学",
+        "江西师范大学",
+        "山东师范大学",
+        "深圳大学"
+      ],
+      "tier_C_note": "各省属师范大学（音乐类）、综合类大学音乐系、地方艺术学院等全国约500余所开设此专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

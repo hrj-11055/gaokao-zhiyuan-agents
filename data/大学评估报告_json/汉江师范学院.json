@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.812601",
+    "updated_at": "2026-05-09T15:43:20.141373",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "汉江师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "最适合",
+    "radar": {},
+    "weighted_score": 2.68,
+    "one_sentence_recommend": "最适合"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "湖北文理学院",
+        "similarity": "同类院校",
+        "key_difference": "湖北文理学院已成功转型为综合性大学，拥有硕士点，在机械、汽车等工科领域实力更强，且襄阳的城市能级高于十堰。但汉师在“师范教育”的纯粹性和历史底蕴上更胜一筹，对于一心从教的学生来说，汉师的专业氛围更浓。"
+      },
+      {
+        "name": "黄冈师范学院",
+        "similarity": "同类院校",
+        "key_difference": "黄冈师范在全省名气更大，硕士点建设更早。汉师则在鄂西北地区拥有绝对的统治力。两校在师范生培养模式上高度相似，汉师目前的追赶势头非常明显，尤其是在新校区建设和博士人才引进方面。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "汉江师范学院是一所典型的“区域深耕型”本科院校。其核心竞争力源于超过一个世纪的师范教育积淀。在当前就业市场波动较大的背景下，该校凭借“师范性”这一护城河，展现出了比同类综合性大学更强的抗风险能力。\n\n**核心定位（Identity）**：学校是湖北省属全日制普通本科院校，其前身为郧阳师范高等专科学校。作为鄂西北地区唯一的本科师范院校，它承担着为该区域乃至全省培养基础教育师资的重任。\n\n**王牌优势（Ace）**：小学教育、学前教育是其绝对的“拳头产品”。这两个专业不仅拥有国家级一流本科专业建设点的背书，更在就业市场上拥有极高的认可度。在湖北省内的县域小学和幼儿园中，汉师校友的覆盖率极高，形成了强大的校友网络。\n\n**文化特质（Vibe）**：务实、勤奋、考研风气浓厚。由于地处非省会城市，学生普遍具有较强的危机感和进取心，图书馆和自习室的利用率极高，这种“学风红利”是该校近年来考研升学率稳步提升的关键。\n\n**潜在风险（Risk）**：学术天花板是目前最大的制约因素。虽然已列入硕士学位授予立项建设单位，但在正式获得硕士点之前，其科研平台对高层次人才的吸引力有限。此外，非师范类专业（如部分工科和经管类）在十堰本地的就业空间受限，面临与武汉高校毕业生的直接竞争。",
+      "one_sentence_recommend": "最适合",
+      "horizontal_comparison": [
+        {
+          "name": "湖北文理学院",
+          "similarity": "同类院校",
+          "key_difference": "湖北文理学院已成功转型为综合性大学，拥有硕士点，在机械、汽车等工科领域实力更强，且襄阳的城市能级高于十堰。但汉师在“师范教育”的纯粹性和历史底蕴上更胜一筹，对于一心从教的学生来说，汉师的专业氛围更浓。"
+        },
+        {
+          "name": "黄冈师范学院",
+          "similarity": "同类院校",
+          "key_difference": "黄冈师范在全省名气更大，硕士点建设更早。汉师则在鄂西北地区拥有绝对的统治力。两校在师范生培养模式上高度相似，汉师目前的追赶势头非常明显，尤其是在新校区建设和博士人才引进方面。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

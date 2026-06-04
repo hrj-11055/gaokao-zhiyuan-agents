@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.484635",
+    "updated_at": "2026-05-11T18:09:05.562527",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "郑州商学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "最适合高考成绩在本科二批线附近，家庭经济条件允许，且希望在严谨管理环境下习得一技之长、未来立足河南本地就业的商科倾向考生。",
+    "radar": {},
+    "weighted_score": 2.43,
+    "one_sentence_recommend": "最适合高考成绩在本科二批线附近，家庭经济条件允许，且希望在严谨管理环境下习得一技之长、未来立足河南本地就业的商科倾向考生。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "巩义",
+      "region": "",
+      "industrial_clusters": [
+        "存在大量的实体企业"
+      ],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "郑州工商学院",
+        "similarity": "同类院校",
+        "key_difference": "郑州工商学院占据了郑东新区的地利优势，生源位次普遍高于郑州商学院，且在综合性学科布局上更广。但郑州商学院在商科垂直领域的积淀更深，其“成功文化”带来的校园凝聚力与校友资源在商界（尤其是豫商群体）中有独特影响力。"
+      },
+      {
+        "name": "黄河科技学院",
+        "similarity": "同类院校",
+        "key_difference": "黄河科技学院作为国内民办教育的先行者，规模更大、名气更响，拥有更多的硕士点建设资源。相比之下，郑州商学院更像是一所“精品商学院”，管理更细致，校园环境的精致度（尤其是欧式建筑风格）往往优于老牌民办院校。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "最适合高考成绩在本科二批线附近，家庭经济条件允许，且希望在严谨管理环境下习得一技之长、未来立足河南本地就业的商科倾向考生。",
+      "horizontal_comparison": [
+        {
+          "name": "郑州工商学院",
+          "similarity": "同类院校",
+          "key_difference": "郑州工商学院占据了郑东新区的地利优势，生源位次普遍高于郑州商学院，且在综合性学科布局上更广。但郑州商学院在商科垂直领域的积淀更深，其“成功文化”带来的校园凝聚力与校友资源在商界（尤其是豫商群体）中有独特影响力。"
+        },
+        {
+          "name": "黄河科技学院",
+          "similarity": "同类院校",
+          "key_difference": "黄河科技学院作为国内民办教育的先行者，规模更大、名气更响，拥有更多的硕士点建设资源。相比之下，郑州商学院更像是一所“精品商学院”，管理更细致，校园环境的精致度（尤其是欧式建筑风格）往往优于老牌民办院校。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

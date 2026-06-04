@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.883014",
+    "updated_at": "2026-05-11T17:03:04.893729",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "洛阳师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.6,
+      "graduate_value": 3.0,
+      "location_advantage": 3.5,
+      "globalization": 2.4,
+      "student_empowerment": 3.2,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.885,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：一所以师范教育为根基，理学和工学快速崛起的地方高水平应用型大学。它是豫西地区基础教育的摇篮，也是洛阳城市转型的重要智库。\n*   **Ace（王牌优势）**：化学与工程学科的学术产出能力；师范类专业在省内的就业垄断力；书院制带来的优越校园生活体验。\n*   **Vibe（文化特质）**：务实、勤奋、略显保守但极具韧性。这里是“考研人的天堂”，也是“务实者的乐土”。\n*   **Risk（潜在风险）**：学科发展不平衡，人文社科类专业在数字化转型中步伐较慢；高层次领军人才储备不足，可能面临学科增长瓶颈。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

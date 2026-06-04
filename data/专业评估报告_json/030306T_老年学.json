@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.126991",
+    "updated_at": "2026-04-21T01:31:28.878605",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030306T_老年学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "踩中\"银发经济\"万亿风口，政策红利拉满，但专业太新、路径太窄，薪资前期偏低，属于\"信念驱动型\"选手。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "老年服务的核心——人文关怀、情感陪伴、个性化照护方案设计——高度依赖人的同理心和现场判断，AI可在数据分析、健康监测辅助层面替代部分工作，但核心的人际互动不可替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "踩中\"银发经济\"万亿风口，政策红利拉满，但专业太新、路径太窄，薪资前期偏低，属于\"信念驱动型\"选手。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学（社会学A+，设有老年学博士点，国内学术引领者）",
+        "北京大学（社会学A+，人口学/老龄研究底蕴深厚）"
+      ],
+      "tier_A": [
+        "天津理工大学（国内首批本科老年学专业，2021年招生，校友会排名第1，突出智慧养老特色）",
+        "复旦大学（社会学A-，老龄研究院实力强）",
+        "南京大学（社会学A-）"
+      ],
+      "tier_B": [
+        "湖南女子学院",
+        "玉溪师范学院",
+        "华东理工大学（社会工作实力强，老龄服务方向）",
+        "首都经济贸易大学（劳动与社会保障-老龄方向）"
+      ],
+      "tier_C_note": "由于专业开设院校极少，目前暂无大量C档院校。选择社会学/社会工作大类较强的普通本科院校作为替代路径同样可行。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

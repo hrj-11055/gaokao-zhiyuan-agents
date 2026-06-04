@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.988287",
+    "updated_at": "2026-04-22T01:19:02.496703",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040209T_冰雪运动",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "踩着冬奥红利站上万亿风口，但极度依赖地域和季节，\"雪季月入两万、淡季喝西北风\"是常态。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 2.6
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "冰雪运动教学高度依赖身体示范、现场纠偏、安全保障和人际互动，这些是AI难以替代的实体操作场景。但赛事数据分析、训练计划优化等辅助环节可能被AI渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "踩着冬奥红利站上万亿风口，但极度依赖地域和季节，\"雪季月入两万、淡季喝西北风\"是常态。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京体育大学（中国冰雪运动学院，A+，行业绝对龙头）"
+      ],
+      "tier_A": [
+        "东北师范大学（A+，211/双一流，综合学术实力强）",
+        "哈尔滨体育学院（冰雪人才培养核心基地，博士点）"
+      ],
+      "tier_B": [
+        "首都体育学院",
+        "吉林体育学院",
+        "河北体育学院（在校生规模最大）",
+        "北华大学"
+      ],
+      "tier_C_note": "哈尔滨学院、张家口学院、部分省属体育/师范类院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

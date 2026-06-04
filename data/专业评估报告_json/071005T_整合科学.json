@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.911705",
+    "updated_at": "2026-04-25T01:56:54.247936",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "071005T_整合科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国仅 3 校开设的\"精英试验田\"，跨学科底子硬但极度依赖读研，非北大中山级别的学霸慎入。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.8,
+      "future_adaptability": 4.5,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.61
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "整合科学培养的核心能力是跨学科整合思维和复杂系统建模能力，AI 能替代特定计算任务，但难以替代多学科知识融合、科研问题定义和实验设计能力。恰恰是整合科学人才在训练 AI 模型应用于生命科学领域。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅 3 校开设的\"精英试验田\"，跨学科底子硬但极度依赖读研，非北大中山级别的学霸慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学（2014 年首创，生物学 A+，汤超院士领衔，定量生物学中心+北大-清华生命科学联合中心支撑）"
+      ],
+      "tier_A": [
+        "中山大学（2023 年设立，生物学 A+，五院联合共建，4 个国家一流学科支撑）"
+      ],
+      "tier_B": [
+        "哈尔滨工业大学（理工科综合优势强，深圳校区区位优势）"
+      ],
+      "tier_C_note": "暂无。该专业全国仅 3 校开设，均为 985/双一流高校。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

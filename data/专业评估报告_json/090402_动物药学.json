@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.207578",
+    "updated_at": "2026-04-26T11:48:32.083828",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090402",
+    "name": "动物药学",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "宠物经济风口上的\"冷门硬核\"，行业增速惊人但圈子窄、薪资起步低，适合耐得住寂寞的化学+生物双料玩家。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "兽药研发中的药效评价、动物实验设计、药物残留检测等核心环节依赖实验室实操与生物实验验证，AI 可辅助分子筛选和药代动力学建模（提高效率 30%–40%），但无法替代动物实验和临床验证环节。兽药注册申报、药政管理等需要法规理解与人际沟通，AI 替代难度较高。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "宠物经济风口上的\"冷门硬核\"，行业增速惊人但圈子窄、薪资起步低，适合耐得住寂寞的化学+生物双料玩家。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京农业大学",
+        "华南农业大学"
+      ],
+      "tier_A": [
+        "西北农林科技大学",
+        "西南大学",
+        "东北农业大学",
+        "中国农业大学（注：中农大兽医学 A+，但动物药学本科招生需确认）"
+      ],
+      "tier_B": [
+        "河南农业大学",
+        "吉林农业大学",
+        "江西农业大学",
+        "湖南农业大学",
+        "华中农业大学（兽医学 A+，动物药学方向强）"
+      ],
+      "tier_C_note": "新疆农业大学、黑龙江八一农垦大学、沈阳农业大学、甘肃农业大学、武汉轻工大学、河南牧业经济学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

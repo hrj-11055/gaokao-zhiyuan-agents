@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.154478",
+    "updated_at": "2026-04-21T00:03:34.620162",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030101K_法学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "高声望高壁垒的经典学科，名校光环+法考是入场券，但600所高校开设导致严重内卷，普通院校毕业生就业率连续垫底。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.8,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.33
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI在法律检索、合同审查、文书生成等重复性工作中已展现强大替代能力（2025年法律科技调查报告显示AI正在重构法律行业工作方式），但核心的法律推理、法庭辩论、客户关系管理、复杂商业谈判等需要人类判断力和同理心的工作短期内不可替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "高声望高壁垒的经典学科，名校光环+法考是入场券，但600所高校开设导致严重内卷，普通院校毕业生就业率连续垫底。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "中国政法大学",
+        "北京大学",
+        "清华大学",
+        "武汉大学（第五轮A+）",
+        "华东政法大学"
+      ],
+      "tier_A": [
+        "西南政法大学",
+        "对外经济贸易大学",
+        "吉林大学",
+        "上海交通大学",
+        "南京大学",
+        "浙江大学",
+        "厦门大学",
+        "中南财经政法大学",
+        "北京师范大学",
+        "复旦大学",
+        "南开大学"
+      ],
+      "tier_B": [
+        "西北政法大学",
+        "湘潭大学",
+        "山东大学",
+        "四川大学",
+        "中山大学",
+        "湖南大学",
+        "重庆大学",
+        "辽宁大学",
+        "苏州大学",
+        "南京师范大学",
+        "中央财经大学",
+        "中国人民公安大学",
+        "大连海事大学",
+        "海南大学"
+      ],
+      "tier_C_note": "全国约600所开设法学的高校中，除上述院校外的普通本科院校。对于中等分数段考生，优先选择有法学硕士点或地处一线/省会城市的院校。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.027595",
+    "updated_at": "2026-04-23T22:24:30.305394",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050235",
+    "name": "土耳其语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "\"一带一路上的稀缺语种，中土贸易升温带来红利，但极窄的赛道容不下太多人，非名校需靠复合技能破局。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.6,
+      "future_adaptability": 2.4,
+      "career_path": 2.8,
+      "education_resources": 2.6,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 2.92
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 翻译对主流语种（英、日、西等）准确率已达 92%以上，但土耳其语作为低资源语种，训练语料有限，AI 翻译质量明显低于主流语种。日常简单文本可被 AI 替代，但高精度商务谈判、法律合同翻译、文化语境理解等场景仍高度依赖人工。需注意，随着 AI 对小语种支持力度加大，长期风险上升。土耳其语属黏着语，语法结构特殊（元音和谐、大量词缀变化），AI 短期内难以完全攻克。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"一带一路上的稀缺语种，中土贸易升温带来红利，但极窄的赛道容不下太多人，非名校需靠复合技能破局。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学",
+        "上海外国语大学"
+      ],
+      "tier_A": [
+        "广东外语外贸大学",
+        "北京语言大学",
+        "中国传媒大学"
+      ],
+      "tier_B": [
+        "北京第二外国语学院",
+        "天津外国语大学",
+        "四川外国语大学",
+        "西安外国语大学"
+      ],
+      "tier_C_note": "浙江越秀外国语学院、浙江外国语学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

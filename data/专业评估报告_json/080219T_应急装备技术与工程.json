@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.165390",
+    "updated_at": "2026-04-25T04:41:53.408065",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080219T_应急装备技术与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略催生的政策新贵，万亿蓝海赛道，但专业太新、院校太少、行业认知度低，需赌一手\"风口能否持续\"。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "应急装备设计涉及硬件-软件协同集成、灾害场景复杂判断、现场应急决策，这些核心技能需要物理世界交互和多变量非结构化决策，AI短期内难以完全替代。但AI将深度赋能该领域（如智能监测预警、无人机协同救援），专业人才需掌握AI工具。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略催生的政策新贵，万亿蓝海赛道，但专业太新、院校太少、行业认知度低，需赌一手\"风口能否持续\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（专业太新，尚无院校形成显著学术声誉）"
+      ],
+      "tier_A": [
+        "山东科技大学",
+        "南京工业大学"
+      ],
+      "tier_B": [
+        "中国消防救援学院（消防/救援方向特色鲜明）",
+        "华北科技学院（应急管理部直属，正筹建应急管理大学）",
+        "太原科技大学",
+        "石家庄铁道大学"
+      ],
+      "tier_C_note": "辽宁工业大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

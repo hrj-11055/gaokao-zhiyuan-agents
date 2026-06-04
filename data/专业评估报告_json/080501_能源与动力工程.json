@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.107113",
+    "updated_at": "2026-04-25T06:11:33.301691",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080501",
+    "name": "能源与动力工程",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "\"新能源时代的'发动机'专业，就业率全国登顶、五年薪酬翻倍领跑，但跟着政策走、踩对赛道（电力/新能源 vs 传统热能）才是关键分水岭。\"",
+    "radar": {
+      "market_return": 4.3,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.8,
+      "education_resources": 4.0,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 4.17
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,200–6,800元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "13-18%",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业核心涉及热力学计算、流体力学仿真、能源系统设计与物理实验验证，这些需要复杂的物理建模和工程判断，AI可辅助仿真优化但难以替代工程决策和现场调试能力。国家能源局2025年发布的《\"人工智能+\"能源高质量发展实施意见》表明，AI更多是赋能工具而非替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"新能源时代的'发动机'专业，就业率全国登顶、五年薪酬翻倍领跑，但跟着政策走、踩对赛道（电力/新能源 vs 传统热能）才是关键分水岭。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "西安交通大学",
+        "上海交通大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "天津大学",
+        "华北电力大学",
+        "哈尔滨工业大学",
+        "华中科技大学",
+        "北京航空航天大学",
+        "大连理工大学",
+        "东南大学",
+        "中国科学技术大学"
+      ],
+      "tier_B": [
+        "北京理工大学",
+        "华东理工大学",
+        "上海理工大学",
+        "江苏大学",
+        "哈尔滨工程大学",
+        "南京航空航天大学",
+        "山东大学",
+        "重庆大学",
+        "同济大学",
+        "中国石油大学",
+        "武汉大学"
+      ],
+      "tier_C_note": "南京工业大学、东北电力大学、上海电力大学、浙江工业大学、武汉理工大学、华南理工大学、四川大学、兰州理工大学、郑州大学、长沙理工大学等开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

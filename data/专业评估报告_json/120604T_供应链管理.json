@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.003151",
+    "updated_at": "2026-04-28T01:33:35.241031",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120604T_供应链管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "电商时代的新宠，理论与实践并重，行业缺口大但专业太年轻，院校质量参差不齐，名校加持效果显著。",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 3.2,
+      "education_resources": 3.0,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.68
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–7,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "供应链中的重复性操作（订单处理、库存录入、基础报表）正在被 RPA 和 AI 替代，但战略层面的供应商关系管理、跨部门协同决策、风险预判等需要人类判断力和谈判能力的技能仍不可替代。AI 更多是赋能工具而非完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "电商时代的新宠，理论与实践并重，行业缺口大但专业太年轻，院校质量参差不齐，名校加持效果显著。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "上海交通大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "北京交通大学",
+        "中央财经大学",
+        "同济大学",
+        "南京大学",
+        "南开大学",
+        "厦门大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "上海海事大学（物流与供应链传统强校）",
+        "北京物资学院（物流特色鲜明）",
+        "西南财经大学",
+        "武汉理工大学",
+        "大连海事大学",
+        "华南理工大学",
+        "北京航空航天大学"
+      ],
+      "tier_C_note": "各地方财经类院校、综合类大学中近年新开设供应链管理专业的院校。由于该专业开设门槛较低（无需昂贵实验设备），近年扩招明显，C 档院校质量参差不齐，需关注师资背景和校企合作资源。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

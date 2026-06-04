@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.084460",
+    "updated_at": "2026-04-27T01:12:20.485368",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100207TK_儿科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"缺口大但收入垫底，出生率下滑雪上加霜——用爱发电的医者之路，铁了心想当儿科医生的才值得入。\"",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.13
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "儿科问诊的核心——与患儿及家长的沟通互动、体格检查、综合判断——高度依赖人类共情能力和精细操作。但AI辅助诊断已在儿科开始试点应用（2025年新华网报道\"AI儿科医生上岗\"），未来可替代部分初级诊断和分诊工作。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"缺口大但收入垫底，出生率下滑雪上加霜——用爱发电的医者之路，铁了心想当儿科医生的才值得入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海交通大学",
+        "首都医科大学",
+        "浙江大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "华中科技大学",
+        "北京协和医学院",
+        "南京医科大学",
+        "南方医科大学",
+        "四川大学（华西）",
+        "重庆医科大学"
+      ],
+      "tier_B": [
+        "温州医科大学",
+        "哈尔滨医科大学",
+        "中国医科大学",
+        "广州医科大学",
+        "安徽医科大学",
+        "郑州大学",
+        "武汉大学",
+        "吉林大学"
+      ],
+      "tier_C_note": "桂林医学院、杭州师范大学、贵州医科大学等新开设儿科学本科的院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

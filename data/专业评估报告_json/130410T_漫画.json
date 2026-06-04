@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.156553",
+    "updated_at": "2026-04-28T13:30:16.629362",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130410T_漫画",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "天马行空的画笔背后是残酷的生存竞赛——AI正在吞噬中低端绘图市场，唯有顶级叙事能力和个人IP才是真正的护城河。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.0,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.76
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI绘画工具（Midjourney V6、Stable Diffusion XL、DALL-E 3、Flux）已能生成高质量插画和漫画分镜，中低端商业插画、素材图、上色等环节被大量替代。仅具备\"讲故事\"能力和原创IP塑造能力的顶级创作者具有较强抗风险性，但纯技法型画师面临严重冲击。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "天马行空的画笔背后是残酷的生存竞赛——AI正在吞噬中低端绘图市场，唯有顶级叙事能力和个人IP才是真正的护城河。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京电影学院",
+        "中国传媒大学"
+      ],
+      "tier_A": [
+        "中央美术学院",
+        "中国美术学院",
+        "广州美术学院",
+        "四川美术学院",
+        "鲁迅美术学院"
+      ],
+      "tier_B": [
+        "吉林动画学院",
+        "南京艺术学院",
+        "天津美术学院",
+        "湖北美术学院",
+        "西安美术学院",
+        "浙江传媒学院"
+      ],
+      "tier_C_note": "各地综合性大学的美术/艺术设计学院下属漫画方向",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

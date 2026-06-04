@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.951427",
+    "updated_at": "2026-04-27T21:50:26.560430",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120901K_旅游管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "看似\"行万里路\"的浪漫，实则是服务行业的苦差事。行业复苏红利明显，但低门槛、低薪酬、高流动是绕不开的现实。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 2.8,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.1
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 正在替代旅游管理的多个核心工作环节——智能客服替代咨询、AI 行程规划替代人工计调、机器翻译替代部分导游讲解功能。导游的情感价值和现场应变能力是主要护城河，但基础岗位正被快速蚕食。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "看似\"行万里路\"的浪漫，实则是服务行业的苦差事。行业复苏红利明显，但低门槛、低薪酬、高流动是绕不开的现实。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中山大学",
+        "复旦大学"
+      ],
+      "tier_A": [
+        "北京第二外国语学院",
+        "云南大学",
+        "厦门大学",
+        "暨南大学",
+        "南开大学",
+        "浙江大学"
+      ],
+      "tier_B": [
+        "华南师范大学",
+        "华东师范大学",
+        "陕西师范大学",
+        "西南财经大学",
+        "湖南师范大学",
+        "华侨大学",
+        "海南大学",
+        "桂林理工大学",
+        "上海师范大学",
+        "四川大学"
+      ],
+      "tier_C_note": "各省属综合类大学及师范类院校中开设旅游管理的普通本科，如地方师范学院、地方文理学院等。对于分数处于中段的考生，建议优先选择旅游城市或旅游大省（如云南、海南、广西、浙江）的省属院校，地域实习资源更丰富。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

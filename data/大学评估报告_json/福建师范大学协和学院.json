@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.728883",
+    "updated_at": "2026-05-12T12:35:13.627988",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "福建师范大学协和学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 3.0,
+      "location_advantage": 4.0,
+      "globalization": 3.8,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.6
+    },
+    "weighted_score": 3.07,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "转设不确定性",
+        "description": "根据国家政策，独立学院需进行转设（转为公办、民办或终止办学）。目前协和学院的转设路径尚未最终尘埃落定，这在一定程度上引发了部分家长对未来校名及学历认可度的担忧。"
+      },
+      {
+        "category": "学费压力",
+        "description": "作为民办性质院校，学费逐年上涨，对于部分工薪阶层家庭而言是不小的负担。"
+      },
+      {
+        "category": "竞争加剧",
+        "description": "随着省内其他民办高校（如阳光学院、福州外语外贸学院）加大投入，协和在硬件和生源上的领先优势面临挑战。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "- **Identity（核心定位）**：福建省内最具品牌影响力的应用型本科独立学院，人文与商科教育的标杆。\n- **Ace（王牌优势）**：优越的地理位置（福州大学城）、强大的母体支持（福建师大）、成熟的国际化通道（SQA AD）。\n- **Vibe（文化特质）**：精致、自由、充满商业活力与艺术气息的“山水学村”。\n- **Risk（潜在风险）**：转设过渡期的政策风险，以及高昂学费带来的性价比博弈。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

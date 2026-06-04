@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.710210",
+    "updated_at": "2026-05-11T12:52:20.984142",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "温州商学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 3.5,
+      "location_advantage": 4.2,
+      "globalization": 3.8,
+      "student_empowerment": 4.5,
+      "brand_asset": 3.6
+    },
+    "weighted_score": 3.54,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "温州理工学院",
+        "similarity": "同类院校",
+        "key_difference": "温州商学院在硬件设施、国际交流资源、创业支持上具有显著优势，其市场化运作效率更高，但学费是公办院校的 6-8 倍。对于追求“性价比”的家庭，温州理工更优；对于追求“资源圈层”的家庭，温商院更具吸引力。"
+      },
+      {
+        "name": "温州肯恩大学",
+        "similarity": "同类院校",
+        "key_difference": "温商院的本土商业资源更深，更接地气，适合立足国内市场创业的学生；而温州肯恩大学则提供纯正的美式教育环境，学术国际认可度更高。两者在国际化路线上各有侧重，温商院更倾向于“商科+实战”，温肯更倾向于“学术+语言”。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：温州商学院是浙南地区唯一的商科类民办本科高校，其前身为温州大学城市学院。自转设以来，该校坚定地走“创业型大学”路线，试图打破传统学术型教育的桎梏，将教育逻辑从“知识传授”转向“商业实战”。这种定位使其在浙江省内乃至全国民办高校中具有极高的辨识度。\n\n**Ace（王牌优势）**：其核心竞争力在于极强的商科应用性与创业孵化能力。学校不仅提供理论课程，更通过“国家级众创空间”等平台，将温州本地的商业基因植入教学。此外，其硬件设施（如被誉为“五星级”的宿舍和商业街式校园）在吸引优质生源方面发挥了巨大的溢价作用，成功将“大学生活”转化为一种“高品质生活方式”。\n\n**Vibe（文化特质）**：务实、重商、精致。校园氛围更接近于一所“准职场培训中心”或“高级商学院”，而非传统的象牙塔。学生群体中普遍存在较强的金钱意识和创业冲动，这种环境对于目标明确的学生是催化剂，但对于追求纯粹学术研究的学生可能存在不适。\n\n**Risk（潜在风险）**：高昂的学费（年均 3.5 万至 5 万人民币）是其最显著的门槛，这使得生源结构呈现出明显的“阶层化”特征。此外，尽管学校在应用型人才培养上表现出色，但在国家级科研成果、博士点建设等硬核学术指标上仍处于劣势，长期发展的学术底蕴有待补强。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "温州理工学院",
+          "similarity": "同类院校",
+          "key_difference": "温州商学院在硬件设施、国际交流资源、创业支持上具有显著优势，其市场化运作效率更高，但学费是公办院校的 6-8 倍。对于追求“性价比”的家庭，温州理工更优；对于追求“资源圈层”的家庭，温商院更具吸引力。"
+        },
+        {
+          "name": "温州肯恩大学",
+          "similarity": "同类院校",
+          "key_difference": "温商院的本土商业资源更深，更接地气，适合立足国内市场创业的学生；而温州肯恩大学则提供纯正的美式教育环境，学术国际认可度更高。两者在国际化路线上各有侧重，温商院更倾向于“商科+实战”，温肯更倾向于“学术+语言”。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "精致利己主义的正面转化",
+        "温州模式接班人",
+        "五星级宿舍天花板",
+        "商界人脉孵化器",
+        "务实主义至上",
+        "高溢价教育产品"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

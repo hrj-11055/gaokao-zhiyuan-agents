@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.105366",
+    "updated_at": "2026-04-25T18:39:57.992888",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081803K_航海技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "远洋高薪不是白拿的——收入天花板极高，但代价是常年漂泊海上、半军事化管理，身体和心理都得\"硬核\"，适合真正热爱海洋的人。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.3,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.7
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~90%",
+      "alignment_rate": "~75%",
+      "starting_salary": "15,000–20,800元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "智能船舶与自主航行技术正在快速发展，远期可能减少对传统驾驶员的需求。但短期内（10–15年），IMO法规仍要求船舶配备合格船员，复杂海况下的判断和应急处理能力难以完全被AI替代。关键在于从\"驾驶者\"向\"监控者和管理者\"角色转型。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "远洋高薪不是白拿的——收入天花板极高，但代价是常年漂泊海上、半军事化管理，身体和心理都得\"硬核\"，适合真正热爱海洋的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "大连海事大学",
+        "武汉理工大学"
+      ],
+      "tier_A": [
+        "上海海事大学",
+        "集美大学",
+        "重庆交通大学",
+        "宁波大学"
+      ],
+      "tier_B": [
+        "广州航海学院",
+        "浙江海洋大学",
+        "广东海洋大学",
+        "山东交通学院",
+        "北部湾大学"
+      ],
+      "tier_C_note": "其他具有海事教育培训资质的本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

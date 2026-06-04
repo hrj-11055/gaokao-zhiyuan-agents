@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.050289",
+    "updated_at": "2026-04-26T03:36:26.632420",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090201",
+    "name": "农业资源与环境",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的\"冷门宝藏\"——碳中和红利确定，但起薪低、路径窄，考研几乎是标配，耐得住寂寞才等得到春天。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.6,
+      "future_adaptability": 3.2,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "野外土壤采样、环境监测实地勘察、复杂生态系统的综合判断等核心工作依赖物理世界交互和多维度现场感知，AI 难以完全替代。但实验室数据分析、报告撰写等环节存在被 AI 工具辅助/部分替代的可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的\"冷门宝藏\"——碳中和红利确定，但起薪低、路径窄，考研几乎是标配，耐得住寂寞才等得到春天。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江大学",
+        "南京农业大学"
+      ],
+      "tier_A": [
+        "西南大学",
+        "华中农业大学",
+        "东北农业大学",
+        "中国农业大学"
+      ],
+      "tier_B": [
+        "山东农业大学",
+        "上海交通大学",
+        "浙江农林大学",
+        "福建农林大学",
+        "华南农业大学",
+        "湖南农业大学",
+        "河南农业大学",
+        "山西农业大学",
+        "四川农业大学"
+      ],
+      "tier_C_note": "海南大学、沈阳农业大学、新疆农业大学、河北农业大学、安徽农业大学、吉林农业大学、云南农业大学、内蒙古农业大学、广西大学、贵州大学、石河子大学、黑龙江大学，以及其他开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

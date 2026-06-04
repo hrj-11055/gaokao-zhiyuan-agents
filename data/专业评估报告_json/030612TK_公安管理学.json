@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.100820",
+    "updated_at": "2026-04-21T02:31:25.030009",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030612TK_公安管理学",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "\"穿警服的公务员，入警率超九成、铁饭碗中的铁饭碗，但受限于院校少、体能政审双门槛，不是你想进就能进。\"",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 3.6,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.9
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "警务管理涉及大量复杂人际沟通、现场决策、突发事件处置、社会矛盾调解等场景，这些能力依赖人类的情境感知和即时判断，AI 在可预见的未来无法替代一线警务人员。即使智慧警务推进，也更多是辅助工具而非替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"穿警服的公务员，入警率超九成、铁饭碗中的铁饭碗，但受限于院校少、体能政审双门槛，不是你想进就能进。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民公安大学（北京，公安部直属，\"双一流\"，该专业创始院校，1984年开设）"
+      ],
+      "tier_A": [
+        "四川警察学院（A+级，校友会排名前三）",
+        "江苏警官学院",
+        "南京警察学院（公安部直属）",
+        "浙江警察学院"
+      ],
+      "tier_B": [
+        "北京警察学院",
+        "河南警察学院",
+        "江西警察学院",
+        "郑州警察学院（铁道警察学院，公安部直属）"
+      ],
+      "tier_C_note": "山西警察学院、广西警察学院、贵州警察学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

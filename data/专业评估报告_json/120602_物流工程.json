@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.915620",
+    "updated_at": "2026-04-27T20:50:08.941114",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120602",
+    "name": "物流工程",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "站在万亿物流风口上的\"系统优化师\"，行业大但专业辨识度低，吃的是供应链全局思维的红利，不是搬砖的命，但也别想躺平。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 2.0
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–7,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础物流操作（仓储拣选、路径规划、单据处理）正被 AI 和自动化替代，但供应链网络设计、多目标优化建模、复杂系统协调等高阶能力短期内不易被 AI 完全取代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在万亿物流风口上的\"系统优化师\"，行业大但专业辨识度低，吃的是供应链全局思维的红利，不是搬砖的命，但也别想躺平。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京交通大学",
+        "上海交通大学",
+        "同济大学"
+      ],
+      "tier_A": [
+        "西南交通大学",
+        "东南大学",
+        "北京航空航天大学",
+        "天津大学",
+        "大连海事大学",
+        "华中科技大学"
+      ],
+      "tier_B": [
+        "重庆大学",
+        "武汉理工大学",
+        "长安大学",
+        "北京物资学院",
+        "中南大学",
+        "华南理工大学",
+        "上海海事大学",
+        "吉林大学"
+      ],
+      "tier_C_note": "各省交通类、理工类综合院校，如山东交通学院、石家庄铁道大学、华东交通大学、大连交通大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

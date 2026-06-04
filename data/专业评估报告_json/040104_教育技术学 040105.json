@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.015559",
+    "updated_at": "2026-04-22T12:07:28.151526",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "040104",
+    "name": "教育技术学 040105",
+    "category": "教育学",
+    "recommendation_level": "yellow",
+    "summary": "教育与技术的\"混血儿\"，踩中了教育数字化国家战略的风口，但定位尴尬：既卷不过纯技术，又拼不过师范科班，需以\"交叉能力\"破局。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.34
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "教育技术学中涉及\"教学设计、学习科学理论、教育策略制定\"等需要深度理解人类认知的环节不易被AI替代，但\"课件制作、教育内容录入、基础运维\"等执行层工作正被AI工具快速替代。然而，该专业本身也是\"用AI赋能教育\"的核心推动者，具备\"驾驭AI\"的先发优势——关键在于能否从\"工具使用者\"进化为\"AI+教育系统设计者\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "教育与技术的\"混血儿\"，踩中了教育数字化国家战略的风口，但定位尴尬：既卷不过纯技术，又拼不过师范科班，需以\"交叉能力\"破局。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "华东师范大学",
+        "北京师范大学",
+        "华南师范大学"
+      ],
+      "tier_A": [
+        "华中师范大学",
+        "东北师范大学",
+        "陕西师范大学",
+        "西南大学",
+        "南京师范大学",
+        "浙江师范大学"
+      ],
+      "tier_B": [
+        "河南大学",
+        "首都师范大学",
+        "广西师范大学",
+        "江西师范大学",
+        "杭州师范大学",
+        "山东师范大学",
+        "江南大学",
+        "湖南师范大学",
+        "深圳大学",
+        "天津师范大学"
+      ],
+      "tier_C_note": "福建师范大学、江苏师范大学、南京邮电大学、河北师范大学、四川师范大学、湖北大学、云南师范大学、安徽师范大学、曲阜师范大学、南昌工程学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

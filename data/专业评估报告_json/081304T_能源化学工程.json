@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.909912",
+    "updated_at": "2026-04-25T16:19:19.011810",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081304T_能源化学工程",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "站在\"双碳\"风口上的化工新贵，硕士起步是标配，赛道热但坑位精，选对方向就是新能源时代的\"炼金术士\"。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.2,
+      "education_resources": 3.6,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.95
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~95%",
+      "alignment_rate": "",
+      "starting_salary": "6,000–7,554元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "能源化学工程的核心涉及实验室配方优化、反应器设计、材料合成与测试等实体操作，需大量物理实验和工程经验积累，短期内难以被 AI 完全替代。但重复性的流程模拟和数据分析环节确实正在被 AI 工具辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在\"双碳\"风口上的化工新贵，硕士起步是标配，赛道热但坑位精，选对方向就是新能源时代的\"炼金术士\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "大连理工大学",
+        "北京化工大学",
+        "北京理工大学",
+        "华南理工大学"
+      ],
+      "tier_A": [
+        "中国石油大学（北京）",
+        "中国石油大学（华东）",
+        "浙江工业大学",
+        "西北大学",
+        "合肥工业大学",
+        "华北电力大学"
+      ],
+      "tier_B": [
+        "燕山大学",
+        "中国矿业大学",
+        "武汉大学",
+        "兰州大学",
+        "武汉工程大学",
+        "常州大学",
+        "沈阳化工大学",
+        "广东工业大学",
+        "东北电力大学"
+      ],
+      "tier_C_note": "新疆大学、陕西科技大学、中北大学、太原科技大学、辽宁科技大学、山东理工大学、青海大学、内蒙古工业大学、西安石油大学、齐鲁工业大学、广西民族大学、江苏科技大学、河北科技大学、湖南科技大学、安徽理工大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

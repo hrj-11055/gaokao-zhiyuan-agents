@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.961995",
+    "updated_at": "2026-04-25T06:34:27.367385",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080602T_智能电网信息工程",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "电网信息化的\"特种兵\"，背靠万亿赛道和国家电网海量岗位，但课程硬核、晋升慢，适合耐得住寂寞的理工猛人。",
+    "radar": {
+      "market_return": 4.0,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 3.8,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.96
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "智能电网核心工作涉及电力系统物理层调度、设备运维、现场调试，需要跨学科（电力+通信+控制）的复合判断力，AI 可辅助数据分析但不能替代现场决策和硬件调试。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "电网信息化的\"特种兵\"，背靠万亿赛道和国家电网海量岗位，但课程硬核、晋升慢，适合耐得住寂寞的理工猛人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "华北电力大学",
+        "天津大学"
+      ],
+      "tier_A": [
+        "电子科技大学",
+        "南京理工大学",
+        "东北电力大学",
+        "南京邮电大学",
+        "福州大学",
+        "合肥工业大学",
+        "长沙理工大学",
+        "三峡大学"
+      ],
+      "tier_B": [
+        "西安理工大学",
+        "南京工程学院",
+        "厦门理工学院",
+        "山东理工大学",
+        "郑州轻工业大学",
+        "辽宁工程技术大学",
+        "重庆科技大学",
+        "南昌工程学院"
+      ],
+      "tier_C_note": "湖南工业大学、江西水利电力大学、浙江水利水电学院、重庆文理学院、长春工程学院、湖北汽车工业学院、岭南师范学院、河南城建学院、许昌学院、文华学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

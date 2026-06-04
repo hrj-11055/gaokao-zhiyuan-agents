@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.087334",
+    "updated_at": "2026-04-27T13:00:01.050839",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120411TK_海警后勤管理",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "军校独家专业，毕业包分配入海警，铁饭碗稳如泰山——但路只有一条，不接受被安排的人生慎入。",
+    "radar": {
+      "market_return": 4.0,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.6
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~96%",
+      "alignment_rate": "",
+      "starting_salary": "6,500–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "海警后勤管理涉及军事物资调配、现场保障决策、人员协调等高度依赖情境判断和人际协调的工作，且军事体系的特殊性使AI替代意愿和可能性均较低。但后勤信息系统的数字化（如ERP、供应链管理平台）将改变部分工作方式。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "军校独家专业，毕业包分配入海警，铁饭碗稳如泰山——但路只有一条，不接受被安排的人生慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "武警海警学院（唯一开设院校，全国独家，毕业即入警）"
+      ],
+      "tier_A": [
+        "无（专业独家开设，无竞争对手）"
+      ],
+      "tier_B": [
+        "无"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

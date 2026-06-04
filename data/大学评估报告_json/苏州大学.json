@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.562451",
+    "updated_at": "2026-05-08T09:26:24.991945",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "苏州大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.3,
+      "graduate_value": 4.4,
+      "location_advantage": 4.9,
+      "globalization": 4.1,
+      "student_empowerment": 3.9,
+      "brand_asset": 4.2
+    },
+    "weighted_score": 4.37,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 16768,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 7200,
+      "top_destinations": [],
+      "top_employers": [
+        "代表性雇主"
+      ]
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [
+        "百度等研发中心，以及数以千计的生物医药初创公司"
+      ],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "苏州大学是当前中国地方高校发展的“天花板”。它成功地将百年名校的文化底蕴与现代城市的产业活力结合在一起。对于学生而言，苏大不仅提供了一个学术平台，更提供了一个进入长三角高新产业层的“快速通道”。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "精致利己与理想主义的平衡",
+        "长三角产业宠儿",
+        "医科巨头",
+        "园林里的实验室",
+        "211 领头羊"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

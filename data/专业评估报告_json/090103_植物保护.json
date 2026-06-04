@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.020988",
+    "updated_at": "2026-04-26T02:43:01.510265",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090103",
+    "name": "植物保护",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "国家粮食安全的\"幕后守护者\"，就业稳但起薪平庸，深造是突破薪资天花板的必经之路，怕下地者慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.22
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–6,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "植保核心技能——田间病虫害诊断、综合防治方案设计、实验操作——依赖复杂的实地判断和生物系统认知，短期内 AI 难以完全替代。但基础性病虫害图像识别、数据监测等环节正在被 AI 赋能，从业者需从\"执行者\"转型为\"AI + 专业知识\"的复合型角色。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家粮食安全的\"幕后守护者\"，就业稳但起薪平庸，深造是突破薪资天花板的必经之路，怕下地者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京农业大学",
+        "浙江大学",
+        "中国农业大学"
+      ],
+      "tier_A": [
+        "西北农林科技大学",
+        "福建农林大学",
+        "贵州大学",
+        "华中农业大学",
+        "华南农业大学"
+      ],
+      "tier_B": [
+        "山东农业大学",
+        "西南大学",
+        "安徽农业大学",
+        "沈阳农业大学",
+        "河南农业大学",
+        "云南农业大学",
+        "湖南农业大学",
+        "扬州大学"
+      ],
+      "tier_C_note": "河北农业大学、山西农业大学、吉林农业大学、东北农业大学、吉林大学、海南大学、广西大学、内蒙古农业大学、四川农业大学、石河子大学、长江大学、江西农业大学、甘肃农业大学、河南科技大学、青岛农业大学、黑龙江八一农垦大学、塔里木大学、西藏农牧大学、天津农学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

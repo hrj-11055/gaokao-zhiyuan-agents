@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.857756",
+    "updated_at": "2026-05-11T20:45:54.376173",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "河北民族师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 2.6,
+      "location_advantage": 2.3,
+      "globalization": 1.8,
+      "student_empowerment": 2.8,
+      "brand_asset": 2.5
+    },
+    "weighted_score": 2.36,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "廊坊师范学院",
+        "similarity": "同类院校",
+        "key_difference": "廊坊师范占据京津走廊的地理优势，学生实习和就业的地理便利性更高；但河北民师在民族政策支持、校园文化特色及特定学科（如民族学）上更具底蕴。"
+      },
+      {
+        "name": "承德医学院",
+        "similarity": "同类院校",
+        "key_difference": "同处承德，承德医学院在专业壁垒和全国知名度上更高，但河北民师的专业覆盖面更广，人文气息更浓。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "河北民族师范学院是一所典型的“小而美”且“务实”的地方本科院校。它在学术上不追求虚名，而是紧紧抓住“民族”与“师范”两大核心，在区域教育生态中占据了不可替代的生态位。\n\n*   **核心优势**：师范类专业的就业护城河深厚，民族学研究具有差异化竞争优势，考研学风极佳。\n*   **核心劣势**：地理位置相对封闭，高层次人才吸引力弱，非师范专业就业竞争力有待提升。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "廊坊师范学院",
+          "similarity": "同类院校",
+          "key_difference": "廊坊师范占据京津走廊的地理优势，学生实习和就业的地理便利性更高；但河北民师在民族政策支持、校园文化特色及特定学科（如民族学）上更具底蕴。"
+        },
+        {
+          "name": "承德医学院",
+          "similarity": "同类院校",
+          "key_difference": "同处承德，承德医学院在专业壁垒和全国知名度上更高，但河北民师的专业覆盖面更广，人文气息更浓。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "师范底色",
+        "考研基地",
+        "民族团结",
+        "承德避暑",
+        "务实低调",
+        "基层教师摇篮"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

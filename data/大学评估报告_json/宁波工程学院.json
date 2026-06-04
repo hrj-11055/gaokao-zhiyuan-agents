@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.807161",
+    "updated_at": "2026-05-11T11:49:32.451853",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "宁波工程学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.4,
+      "graduate_value": 3.1,
+      "location_advantage": 4.2,
+      "globalization": 3.2,
+      "student_empowerment": 2.5,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 3.01,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**核心定位与战略价值：**\n宁波工程学院是一所以工科为核心、多学科协调发展的应用型本科院校。作为教育部首批“卓越工程师教育培养计划”实施高校，该校在浙江省内的定位非常明确：即为宁波及长三角地区的制造业转型升级提供“即插即用”的技术骨干。其核心竞争力并非源于高深的理论研究，而是源于其与地方产业，尤其是汽车、石化、建筑等支柱产业的深度捆绑。\n\n**优势分析（Ace）：**\n学校最大的亮点在于其“产教融合”的深度。以杭州湾汽车学院为例，该学院直接坐落在宁波前湾新区，周边环绕着吉利汽车、上汽大众等巨头企业。这种“把大学建在产业园里”的模式，极大地缩短了学生从课堂到车间的距离。此外，作为公办院校，其学费标准与宁波雄厚的财政补贴相结合，使得学生能以较低的成本获取极具市场竞争力的工程实践机会。\n\n**文化特质与氛围（Vibe）：**\n宁工的校园文化呈现出一种“准职场化”的务实特征。学生群体中，考证、实习、参加工程竞赛的氛围远浓厚于纯学术探讨。这种氛围对于目标明确、希望尽早进入职场并获得稳定收入的学生来说是极佳的孵化器，但对于追求人文气息或纯粹科学真理的学生而言，可能会感到略显枯燥。\n\n**风险与局限（Risk）：**\n学术天花板是该校最显著的短板。**目前学校仍未获得推免（保研）资格**，这意味着即便学生在校表现极其优异，也必须通过全国统考才能进入更高层次的高校深造。此外，2021 年发生的涉及外教的极端刑事案件，虽然在法律层面已尘埃落定，但其对学校国际化声誉及校园安全治理的负面印记在互联网记忆中依然存在，对部分高分考生的心理预期造成了长尾影响。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实到骨子里",
+        "硬核工科男/女",
+        "宁波制造业基石",
+        "知行合一",
+        "考研逆袭者",
+        "前湾新区孤独守望者"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.877941",
+    "updated_at": "2026-05-09T18:46:17.859666",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖南财政经济学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.0,
+      "graduate_value": 4.2,
+      "location_advantage": 4.0,
+      "globalization": 2.8,
+      "student_empowerment": 3.2,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 3.55,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 26500,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "湖南财政经济学院是一所典型的“小而精”应用型财经院校。它不以学术排名见长，而以行业渗透力取胜。\n\n*   **核心竞争力**：在于其与湖南省财政、税务、金融系统的血缘关系。这种关系转化为极高的就业质量和校友资源。\n*   **发展瓶颈**：受限于“学院”更名“大学”的进程，以及博士学位授予权的缺失，在吸引顶尖科研人才和提升全国排名上面临挑战。\n*   **未来展望**：随着雷锋校区的全面启用和数智财经学科群的建立，湖财正在从传统的“会计工厂”向“数智财经人才基地”转型。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

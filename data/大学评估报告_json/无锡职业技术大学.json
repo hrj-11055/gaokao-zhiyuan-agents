@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.751848",
+    "updated_at": "2026-05-08T03:28:40.578799",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "无锡职业技术大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.5,
+      "location_advantage": 4.8,
+      "globalization": 3.5,
+      "student_empowerment": 3.8,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 4.32,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "政策红利",
+        "description": "作为职业本科试点，拥有更多先行先试的权力。"
+      },
+      {
+        "category": "校友资源",
+        "description": "数以万计的校友遍布苏南制造业的中高层管理岗位，形成了强大的“锡职帮”。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：中国职业教育的“排头兵”，智能制造人才的“摇篮”。\n*   **Ace（王牌优势）**：机械制造、物联网、自动化。\n*   **Vibe（文化特质）**：极度务实，崇尚技能，典型的苏南工业文明气质。\n*   **Risk（潜在风险）**：职业本科的社会认知仍需时间沉淀；工科专业课业负担重，实训强度大。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬核制造",
+        "苏南工匠",
+        "物联网先锋",
+        "就业收割机",
+        "实体清单上榜",
+        "职业本科",
+        "万亿城市底色"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

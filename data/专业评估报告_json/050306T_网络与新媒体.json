@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.183922",
+    "updated_at": "2026-04-24T12:02:17.838254",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "050306T_网络与新媒体",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "人人都能做新媒体，但不是人人都能做好——低门槛入场、高门槛出头，创意与数据缺一不可的\"数字时代万金油\"。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.2,
+      "discipline_core": 2.2
+    },
+    "weighted_score": 3.38
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AIGC（AI 生成内容）对基础内容创作冲击巨大——ChatGPT/GPT-4 可替代文案撰写，Midjourney/Sora 可替代基础图片/视频生成，AI 工具已能完成排版、摘要、SEO 优化等传统新媒体核心工作。唯有\"人设 IP 打造\"\"情感共鸣\"\"热点敏感度\"等软实力尚难被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "人人都能做新媒体，但不是人人都能做好——低门槛入场、高门槛出头，创意与数据缺一不可的\"数字时代万金油\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西安交通大学",
+        "中国传媒大学",
+        "暨南大学",
+        "四川大学"
+      ],
+      "tier_A": [
+        "深圳大学",
+        "南京师范大学",
+        "华东师范大学",
+        "中山大学",
+        "中国人民大学（新闻传播学底蕴深厚，虽非本专业最早开设但实力强）",
+        "华中科技大学",
+        "北京师范大学"
+      ],
+      "tier_B": [
+        "浙江传媒学院",
+        "苏州大学",
+        "华南师范大学",
+        "天津工业大学",
+        "南京财经大学",
+        "上海政法学院",
+        "郑州大学",
+        "西南大学",
+        "华中师范大学",
+        "华东政法大学"
+      ],
+      "tier_C_note": "全国其余 300+ 所开设该专业的普通本科院校，如青岛理工大学、西南民族大学、广东金融学院、河南工业大学、湖北师范大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

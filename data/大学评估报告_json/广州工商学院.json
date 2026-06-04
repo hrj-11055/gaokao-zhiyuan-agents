@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.627531",
+    "updated_at": "2026-05-03T01:53:22.413460",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广州工商学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 2.5,
+      "location_advantage": 3.8,
+      "globalization": 2.4,
+      "student_empowerment": 2.6,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.63,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "广州北大门，紧邻白云国际机场和广州北站。花都的支柱产业是汽车制造和皮革皮具，同时也是广州重点打造的国际航空枢纽。这为学校的国际贸易、航空服务、",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "广州工商学院是一所典型的、以应用型为导向的粤港澳大湾区民办本科院校。其核心竞争力并非建立在深厚的学术积淀或顶尖的科研产出上，而是建立在对区域产业需求的精准捕捉与极强的“就业工具属性”之上。学校通过在广州花都和佛山三水两地的布局，成功切入了珠三角制造业与现代服务业的交汇地带，为其商科专业提供了天然的实习与就业土壤。\n\n从学术维度看，该校在民办高校序列中表现尚可，尤其是物流管理专业的国家级认定，为其在同类院校中争取到了一定的品牌溢价。然而，由于缺乏硕士点（目前处于立项建设阶段）和高层次领军人才，其学术天花板较为明显。对于追求学术深造或科研发展的学生而言，该校并非理想选择。\n\n在管理模式上，广州工商学院推行极具特色的“五进”育人模式。这种模式在本质上是一种“强干预型”的教育管理，旨在通过高频次的集体活动和严格的考勤制度，强制性地提升民办高校学生的自律性。这种“准军事化”或“高中化”的管理风格，在学生群体中引发了极大的评价分化：一部分学生认为这有助于养成良好习惯，而另一部分追求自由度的学生则感到压抑。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实主义",
+        "严格考勤",
+        "物流大户",
+        "珠三角就业跳板",
+        "学费刺客",
+        "五进文化"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

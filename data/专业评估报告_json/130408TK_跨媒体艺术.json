@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.067101",
+    "updated_at": "2026-04-28T13:19:15.474556",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130408TK_跨媒体艺术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "前沿实验艺术的\"先锋阵地\"，名校资源极度集中，就业高度依赖个人才华与城市选择，非真爱且非名校慎入。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.84
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "跨媒体艺术的核心——观念创新、跨媒介实验、社会批判性思考——高度依赖人类的主观创造力和文化感知力。AI 可生成图像和视频，但无法替代艺术家对媒介本体的反思性创作。不过，纯技术执行层面（修图、基础动画）的替代风险较高。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "前沿实验艺术的\"先锋阵地\"，名校资源极度集中，就业高度依赖个人才华与城市选择，非真爱且非名校慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国美术学院（跨媒体艺术学院，国内最早设立，学科最完整）",
+        "中央美术学院（实验艺术方向）"
+      ],
+      "tier_A": [
+        "中国传媒大学",
+        "四川美术学院",
+        "广州美术学院",
+        "鲁迅美术学院"
+      ],
+      "tier_B": [
+        "湖北美术学院",
+        "天津美术学院",
+        "西安美术学院",
+        "上海大学上海美术学院"
+      ],
+      "tier_C_note": "部分综合类大学艺术学院新开设此方向的院校，如南京艺术学院、山东艺术学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

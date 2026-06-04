@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.529068",
+    "updated_at": "2026-05-09T18:12:48.398571",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中南大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.8,
+      "graduate_value": 4.7,
+      "location_advantage": 4.3,
+      "globalization": 3.9,
+      "student_empowerment": 4.1,
+      "brand_asset": 4.6
+    },
+    "weighted_score": 4.56,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "湖南省省会长沙。长沙作为“新一线城",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "校区分散",
+        "description": "四个主要校区分布在长沙不同区域，给跨校区交流带来一定不便。"
+      },
+      {
+        "category": "医学部舆情",
+        "description": "近年来湘雅二医院等附属医院出现的个别负面事件，对“湘雅”这一百年品牌的声誉造成了一定冲击，学校正在加大整改力度。"
+      },
+      {
+        "category": "传统学科转型",
+        "description": "在数字化浪潮下，冶金、矿业等传统强势学科如何与人工智能、大数据深度融合，是学校面临的长期挑战。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "中南大学是一所典型的“实力大于名气”的硬核 985 高校。它在有色金属、轨道交通和医学三大领域构建了极高的学术护城河。对于追求技术深度、看重就业实效的考生来说，中南大学提供了极高的投资回报率。虽然其地理位置在中部，但凭借长沙的产业势能和极具竞争力的生活成本，其对人才的吸引力正在持续增强。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

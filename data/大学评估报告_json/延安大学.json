@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.490775",
+    "updated_at": "2026-05-09T16:30:46.528040",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "延安大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.61,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "延安大学（Yan'an University）作为中国共产党创办的第一所综合性大学，其历史地位与政治意义远超其单纯的学术排名。在当前的评估周期内，延安大学展现出了极强的“红色韧性”与“区域服务能力”。学校不仅是陕西省属重点建设的高水平大学，更是教育部与陕西省人民政府共建高校。\n\n从学术维度看，延安大学在马克思主义理论、政治学等领域拥有深厚的积淀，这与其特殊的历史背景高度契合。然而，受限于地理位置和资源集中度，学校在顶尖理工科人才引进和国家级重大科研平台的突破上仍面临挑战。医学部（原延安医学院）是学校的另一大支柱，在西北地区基层医疗体系中拥有极高的认可度和校友网络。\n\n在毕业生价值实现方面，延安大学表现出明显的“稳健型”特征。毕业生在公职系统、教育系统及医疗卫生系统的就业比例较高，这为学生提供了极强的抗风险能力。尽管起薪水平受限于西北地区的整体经济环境，但其长期职业发展的稳定性是许多同类院校难以比拟的。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "红色基因",
+        "西北医林",
+        "朴实无华",
+        "考公大户",
+        "新区豪宅",
+        "延安精神",
+        "扎根西部",
+        "能源支柱"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

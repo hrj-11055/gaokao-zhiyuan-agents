@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.214357",
+    "updated_at": "2026-04-25T21:04:30.139406",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082204",
+    "name": "核化工与核燃料工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "极小众的\"核燃料炼金术\"，国家战略刚需护体，但全国仅 5 校开设、就业面窄如刀锋，适合数理化硬核且甘守冷门者。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.2,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.31
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "核燃料循环涉及放射化学工艺、核材料辐照行为分析、放射性废物处理等，核心工作在高度涉密、强辐射环境中进行，需实物操作与安全审查，AI 无法替代现场核化工操作和安全监护。核级软件开发等高端岗位虽涉及计算，但其稀缺性和专业性极高。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极小众的\"核燃料炼金术\"，国家战略刚需护体，但全国仅 5 校开设、就业面窄如刀锋，适合数理化硬核且甘守冷门者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工程大学（\"三海一核\"核心院校，国防工业背景深厚，核科学与技术实力顶尖）"
+      ],
+      "tier_A": [
+        "南华大学（校友会排名第 1，国防紧缺专业，中国工程教育认证专业，核燃料循环方向特色鲜明），兰州大学（985 院校，核学科底蕴深厚）"
+      ],
+      "tier_B": [
+        "东华理工大学（核地质与核燃料勘探特色），西南科技大学（核废物处理与环境安全方向）"
+      ],
+      "tier_C_note": "无。该专业全国仅 5 校开设，不存在\"一般院校\"的冗余。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

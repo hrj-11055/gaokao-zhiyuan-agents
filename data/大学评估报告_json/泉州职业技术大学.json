@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.699377",
+    "updated_at": "2026-05-12T12:23:34.344936",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "泉州职业技术大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "如果你是一名务实主义者，希望在四年后获得一份体面的工作或在闽南开启创业之路，且不反感严格的行为规范，那么这里是你的最优选。",
+    "radar": {
+      "academic_capital": 3.0,
+      "graduate_value": 3.8,
+      "location_advantage": 4.5,
+      "globalization": 2.8,
+      "student_empowerment": 2.5,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 3.48,
+    "one_sentence_recommend": "如果你是一名务实主义者，希望在四年后获得一份体面的工作或在闽南开启创业之路，且不反感严格的行为规范，那么这里是你的最优选。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "泉州职业技术大学是一所“偏科”极其明显的大学。它放弃了在学术排名上的无效竞争，转而将所有资源投入到“产业适配”中。\n\n- **核心定位**：它是闽南产业工人的“黄埔军校”，是职业教育本科化的实验尖兵。\n- **王牌优势**：无与伦比的就业保障和产业对接能力。在晋江，这所学校的文凭比许多外省公办本科更好使。\n- **文化特质**：实用主义至上，强调纪律、技能与创业精神。\n- **潜在风险**：管理模式的僵化可能压抑学生的创造力；民办学费对部分家庭仍是负担。",
+      "one_sentence_recommend": "如果你是一名务实主义者，希望在四年后获得一份体面的工作或在闽南开启创业之路，且不反感严格的行为规范，那么这里是你的最优选。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.761756",
+    "updated_at": "2026-05-09T19:48:33.064023",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "成都医学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.2,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "川北医学院",
+        "similarity": "同类院校",
+        "key_difference": "成医的优势在于“成都区位”，这为学生提供了更优质的实习资源（如成都市内多家三甲医院）和更多的企业校招机会；劣势在于学科积淀稍逊于川北医，且川北医在川北地区的医疗统治力极强。"
+      },
+      {
+        "name": "西南医科大学",
+        "similarity": "同类院校",
+        "key_difference": "西南医科大学已更名大学并拥有博士点，在行政级别和科研平台上领先成医一个身位。但成医凭借军校背景的严谨学风和成都的产业吸引力，在生源质量上正逐年缩小差距。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "川北医学院",
+          "similarity": "同类院校",
+          "key_difference": "成医的优势在于“成都区位”，这为学生提供了更优质的实习资源（如成都市内多家三甲医院）和更多的企业校招机会；劣势在于学科积淀稍逊于川北医，且川北医在川北地区的医疗统治力极强。"
+        },
+        {
+          "name": "西南医科大学",
+          "similarity": "同类院校",
+          "key_difference": "西南医科大学已更名大学并拥有博士点，在行政级别和科研平台上领先成医一个身位。但成医凭借军校背景的严谨学风和成都的产业吸引力，在生源质量上正逐年缩小差距。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

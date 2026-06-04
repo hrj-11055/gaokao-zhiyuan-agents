@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.172218",
+    "updated_at": "2026-04-25T19:16:59.200326",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081901",
+    "name": "船舶与海洋工程",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "中国造船全球第一的硬核工科，行业景气但极度地域集中，吃苦耐劳+名校光环缺一不可。",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.7,
+      "career_path": 3.4,
+      "education_resources": 3.8,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.88
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "船舶结构设计中的流体力学仿真、船型优化等核心工作依赖复杂物理建模和工程经验判断，AI 可辅助但不能替代；现场建造管理、海上作业等物理场景完全无法被 AI 替代。但基础的制图、数据整理工作面临 AI 工具化替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "中国造船全球第一的硬核工科，行业景气但极度地域集中，吃苦耐劳+名校光环缺一不可。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工程大学",
+        "上海交通大学"
+      ],
+      "tier_A": [
+        "天津大学（A）",
+        "海军工程大学（B+）",
+        "大连理工大学（C+但综合实力强）",
+        "西北工业大学（B-）",
+        "华中科技大学（C+）",
+        "武汉理工大学（B-）",
+        "大连海事大学（B）"
+      ],
+      "tier_B": [
+        "江苏科技大学（C，\"造船工程师摇篮\"之称）",
+        "上海海事大学（C-）",
+        "集美大学",
+        "河海大学（B）",
+        "中国海洋大学（B）",
+        "华南理工大学（B）",
+        "宁波大学",
+        "浙江海洋大学"
+      ],
+      "tier_C_note": "山东交通学院、重庆交通大学、广东海洋大学、大连海洋大学、广州航海学院、北部湾大学、鲁东大学、渤海大学、江苏科技大学苏州理工学院（民办）、南通理工学院（民办）、青岛黄海学院（民办）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

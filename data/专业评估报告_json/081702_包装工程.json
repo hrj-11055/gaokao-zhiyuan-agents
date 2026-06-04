@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.070941",
+    "updated_at": "2026-04-25T18:12:27.055404",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081702",
+    "name": "包装工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "被严重低估的交叉工科——小众但刚需，就业面广、起薪中等，绿色转型和电商物流带来结构性机会，但传统岗位天花板低，得靠\"材料+管理\"复合能力往上走。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.3
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "包装结构设计（防震、缓冲计算）、材料选型测试、供应链优化等核心工作依赖物理实验和工程经验判断，不易被 AI 完全替代。但基础平面包装设计和简单排版已被 AI 工具大幅辅助，低端设计岗面临压缩。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "被严重低估的交叉工科——小众但刚需，就业面广、起薪中等，绿色转型和电商物流带来结构性机会，但传统岗位天花板低，得靠\"材料+管理\"复合能力往上走。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "江南大学（211/双一流，软科第 1，轻工 A+，包装工程最强院校）"
+      ],
+      "tier_A": [
+        "天津科技大学（ABC 排名 A+，轻工特色强校）",
+        "陕西科技大学（软科第 3，西部轻工重镇）",
+        "广西大学（211/双一流，软科第 2）",
+        "暨南大学（211/双一流，软科第 5）"
+      ],
+      "tier_B": [
+        "南京林业大学（双一流，林工结合）",
+        "西安理工大学",
+        "齐鲁工业大学（省科学院合并，科教融合）",
+        "武汉轻工大学",
+        "华南农业大学（双一流）",
+        "湖南工业大学（包装特色鲜明）",
+        "北京印刷学院（印刷包装交叉）",
+        "西南大学（211/双一流）"
+      ],
+      "tier_C_note": "中北大学、郑州轻工业大学、河南科技大学、吉林大学、哈尔滨商业大学等约 20 所普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

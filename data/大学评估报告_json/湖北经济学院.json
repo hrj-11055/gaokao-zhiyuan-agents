@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.872740",
+    "updated_at": "2026-05-09T16:04:44.976614",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖北经济学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.6,
+      "graduate_value": 3.4,
+      "location_advantage": 4.2,
+      "globalization": 3.2,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.1
+    },
+    "weighted_score": 3.24,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：湖北经济学院（HBUE）是湖北省属唯一的财经类本科院校，被誉为湖北省金融人才的“摇篮”。它不仅是武汉“藏龙岛”学术圈的核心，更是华中地区应用型财经人才培养的高地。学校在长期办学中形成了“以经管法为主体，工文理艺多学科协调发展”的格局，其核心灵魂在于对“新财经”转型的主动拥抱。\n\n**Ace（王牌优势）**：金融学、会计学、财政学等传统优势专业在湖北省内具有极高的行业认可度。学校与各大商业银行、税务系统建立了深厚的产教融合关系，四大行及地方性银行（如汉口银行、湖北银行）的校招资源极为丰富。此外，学校在低碳经济、楚菜文化研究等细分领域拥有全国性的学术话语权。\n\n**Vibe（文化特质）**：务实、考证氛围浓厚、商业气息与学术严谨并存。经院学子普遍具有较强的职业规划意识，从大一开始便投身于各类职业资格证（CPA、ACCA、CFA）的备考中，这种“就业导向”的校园文化使得毕业生在实务操作能力上表现突出。\n\n**Risk（潜在风险）**：非“双一流”身份是其在顶级就业市场（如头部券商总部、外资投行、顶级咨询公司）竞争中的硬伤。此外，地理位置位于江夏区藏龙岛，虽然环境优美，但距离武汉传统市中心较远，学生在实习通勤和跨校交流上存在一定的时间成本。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "极度务实",
+        "考证狂魔",
+        "银行亲儿子",
+        "藏龙岛岛民",
+        "楚菜传人",
+        "光谷后花园",
+        "新财经先锋"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

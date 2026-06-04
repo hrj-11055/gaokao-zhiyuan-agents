@@ -52,10 +52,30 @@ function createPaymentFlowError(message, code, details = {}) {
 
 export function normalizeRequestPaymentError(err = {}) {
   const message = String(err.errMsg || err.message || '')
-  if (/cancel|取消/i.test(message)) {
+  if (err.errCode === -2 || /cancel|取消/i.test(message)) {
     return createPaymentFlowError('支付已取消', 'PAYMENT_CANCELLED', { originalError: err })
   }
   return createPaymentFlowError('支付失败，请稍后重试', 'PAYMENT_FAILED', { originalError: err })
+}
+
+function requestVirtualPayment(params = {}) {
+  return new Promise((resolve, reject) => {
+    // #ifdef MP-WEIXIN
+    if (typeof wx !== 'undefined' && wx.requestVirtualPayment) {
+      wx.requestVirtualPayment({
+        mode: params.mode,
+        signData: params.signData,
+        paySig: params.paySig,
+        signature: params.signature,
+        success: resolve,
+        fail: reject,
+      })
+      return
+    }
+    // #endif
+
+    reject(createPaymentFlowError('当前微信版本不支持虚拟支付，请升级微信后重试', 'VIRTUAL_PAYMENT_UNSUPPORTED'))
+  })
 }
 
 export function createPendingPaymentError(orderId = '', orderStatus = '') {
@@ -214,13 +234,7 @@ export const useMembershipStore = defineStore('membership', {
       }
       this.lastOrderId = data.orderId || ''
       try {
-        await new Promise((resolve, reject) => {
-          uni.requestPayment({
-            ...data.payment,
-            success: resolve,
-            fail: reject,
-          })
-        })
+        await requestVirtualPayment(data.virtualPayment)
       } catch (err) {
         throw normalizeRequestPaymentError(err)
       }

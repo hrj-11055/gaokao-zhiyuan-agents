@@ -36,9 +36,10 @@ export async function triggerPregenerate({
  */
 export async function checkPregenerateStatus({ sessionToken }) {
   return requestBackendData({
-    path: '/api/report/pre-generate/status',
+    path: `/api/report/pre-generate/status?t=${Date.now()}`,
     method: 'GET',
     header: {
+      'Cache-Control': 'no-store',
       ...(sessionToken ? { Authorization: `Bearer ${sessionToken}` } : {}),
     },
     timeout: 10000,

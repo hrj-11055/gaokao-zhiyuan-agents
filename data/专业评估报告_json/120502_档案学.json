@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.073840",
+    "updated_at": "2026-04-27T20:29:14.165253",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120502",
+    "name": "档案学",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "小众但稳如磐石的\"体制内敲门砖\"——档案学就业率奇高、对口率惊人，但薪酬天花板低、路径高度依赖编制，适合追求稳定而非财富自由的人。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 2.6,
+      "future_adaptability": 3.0,
+      "career_path": 3.2,
+      "education_resources": 4.0,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.0
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "档案整理、分类、著录等重复性工作正被 AI 和 OCR 技术替代，但档案鉴定（判断文件价值）、档案法规适用、涉密管理、历史档案解读等核心工作需要人类判断，短期内完全替代可能性低。长期看，AI 将大幅减少基础档案工作岗位数量。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众但稳如磐石的\"体制内敲门砖\"——档案学就业率奇高、对口率惊人，但薪酬天花板低、路径高度依赖编制，适合追求稳定而非财富自由的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "武汉大学"
+      ],
+      "tier_A": [
+        "南京大学",
+        "中山大学",
+        "浙江大学"
+      ],
+      "tier_B": [
+        "云南大学",
+        "四川大学",
+        "山东大学",
+        "黑龙江大学",
+        "上海大学",
+        "苏州大学",
+        "南昌大学",
+        "湘潭大学"
+      ],
+      "tier_C_note": "湖北大学、福建师范大学、广西民族大学、郑州航空工业管理学院、盐城师范学院等地方性院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

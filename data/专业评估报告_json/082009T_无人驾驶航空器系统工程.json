@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.965259",
+    "updated_at": "2026-04-25T20:10:46.974115",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082009T_无人驾驶航空器系统工程",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "站在万亿低空经济风口的硬核工科，产业红利拉满，但专业太新（2017年设立），院校质量参差，非头部院校需谨慎。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.8,
+      "future_adaptability": 4.3,
+      "career_path": 3.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 4.26
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业的核心技能——飞行器系统设计、飞控算法开发、气动分析、嵌入式系统——涉及物理世界的深度耦合，需要硬件+软件+物理建模的综合能力，AI难以直接替代。但基础的航拍操控、简单巡检等低技能岗位面临AI自主飞行技术替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在万亿低空经济风口的硬核工科，产业红利拉满，但专业太新（2017年设立），院校质量参差，非头部院校需谨慎。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京航空航天大学"
+      ],
+      "tier_A": [
+        "南京航空航天大学",
+        "电子科技大学",
+        "中国民航大学"
+      ],
+      "tier_B": [
+        "南昌航空大学",
+        "中国民用航空飞行学院",
+        "西华大学",
+        "深圳技术大学"
+      ],
+      "tier_C_note": "郑州航空工业管理学院、台州学院、北航宁波创新研究院（独立学院/合作办学）、中原工学院、珠海科技学院等其余开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

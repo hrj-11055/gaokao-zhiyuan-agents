@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.517289",
+    "updated_at": "2026-05-08T09:32:54.348707",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "江苏科技大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.2,
+      "graduate_value": 3.6,
+      "location_advantage": 3.8,
+      "globalization": 3.1,
+      "student_empowerment": 3.4,
+      "brand_asset": 3.1
+    },
+    "weighted_score": 3.4,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）：** 江苏科技大学（JUST）是一所以工为主、特色鲜明的省属重点大学，是中国船舶工业集团公司等大型央企的重要人才培养基地。其历史可追溯至1933年的上海大公职业学校，后经多次迁徙与合并，形成了“船舶、海洋、蚕桑”三大特色领域。它是江苏省高水平建设高校，也是典型的“行业支撑型”大学。\n\n**Ace（王牌优势）：** 学校在船舶与海洋工程、材料科学（尤其是焊接技术）、自动化控制等领域具有极强的行业护城河。其焊接技术在全国享有盛誉，被誉为“中国焊接人才的摇篮”。此外，学校拥有的中国农业科学院蚕业研究所，使其在蚕桑丝绸研究领域处于国际领先地位。\n\n**Vibe（文化特质）：** 务实、硬核、典型的工科气质。随着长山新校区的全面启用，学校的硬件环境发生了质的飞跃，呈现出一种“现代工业感与学术严谨性”交织的氛围。学生群体普遍具有较强的动手能力和吃苦耐劳的精神，这与船舶制造行业的艰苦环境与高精度要求高度契合。\n\n**Risk（潜在风险）：** 2025年爆发的“首席科学家”学术造假事件（郭某某事件）是学校近年来最大的品牌危机，暴露了高层次人才引进审核机制的严重漏洞。此外，学校在非工科专业（如人文社科）的资源投入相对薄弱，学科发展存在明显的不平衡性。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

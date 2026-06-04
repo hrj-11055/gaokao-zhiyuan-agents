@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.980707",
+    "updated_at": "2026-04-23T22:06:40.935109",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050232",
+    "name": "葡萄牙语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "稀缺小语种的\"金饭碗\"，中非/中巴经贸红利加持，但外派艰苦+AI替代纯翻译，需复合型突围。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 3.5,
+      "education_resources": 3.5,
+      "discipline_core": 3.9
+    },
+    "weighted_score": 3.52
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "纯文本翻译、基础口译已被 AI 大模型快速侵蚀，DeepL、ChatGPT 等工具的葡语翻译质量已接近初级译者水平。但高端商务谈判、跨文化沟通、外派现场管理等需要人际信任和实时应变能力的场景仍难以替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "稀缺小语种的\"金饭碗\"，中非/中巴经贸红利加持，但外派艰苦+AI替代纯翻译，需复合型突围。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学",
+        "北京大学"
+      ],
+      "tier_A": [
+        "上海外国语大学",
+        "北京师范大学",
+        "广东外语外贸大学",
+        "对外经济贸易大学"
+      ],
+      "tier_B": [
+        "中国传媒大学",
+        "湖南师范大学",
+        "北京交通大学",
+        "南开大学",
+        "北京语言大学",
+        "北京第二外国语学院"
+      ],
+      "tier_C_note": "西安外国语大学、大连外国语大学、天津外国语大学、四川外国语大学、哈尔滨师范大学、河北师范大学、湖北大学、华东交通大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

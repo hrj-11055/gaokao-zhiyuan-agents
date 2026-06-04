@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.973737",
+    "updated_at": "2026-04-28T13:14:44.911266",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130407TK_实验艺术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "实验艺术是小众先锋赛道，天花板高但地板极低，极度依赖个人才华、资源积累与名校光环，普通院校毕业生生存艰难。",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 2.5,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 2.57
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "实验艺术的核心——观念创新、批判性思维、跨媒介表达——依赖人类独特的创造力和文化语境理解，AI 可作为创作工具但难以替代艺术家的观念生产和文化判断。但部分技术性工作（图像生成、视频剪辑）正被 AI 替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "实验艺术是小众先锋赛道，天花板高但地板极低，极度依赖个人才华、资源积累与名校光环，普通院校毕业生生存艰难。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央美术学院",
+        "中国美术学院"
+      ],
+      "tier_A": [
+        "广州美术学院",
+        "四川美术学院",
+        "鲁迅美术学院",
+        "天津美术学院"
+      ],
+      "tier_B": [
+        "西安美术学院",
+        "湖北美术学院",
+        "南京艺术学院",
+        "山东艺术学院",
+        "上海大学上海美术学院"
+      ],
+      "tier_C_note": "部分综合类大学美术学院的实验艺术方向（如云南艺术学院、广西艺术学院等），以及近年新获批开设该专业的院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

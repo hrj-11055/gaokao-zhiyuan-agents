@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.185508",
+    "updated_at": "2026-04-25T03:44:36.186490",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080201",
+    "name": "机械工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "工科万金油，稳就业但涨薪慢，传统赛道天花板明显，拥抱智能制造才能翻盘。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "8-10%",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "机械工程涉及物理结构设计、空间推理、材料选型与实物调试，这些核心能力依赖对三维物理世界的直觉理解，短期内AI难以完全替代。但重复性制图、标准件选型等环节已被AI工具加速替代。麦肯锡2025年《中国工业自动化》报告指出，AI与自动化深度融合正在重塑机械行业，\"机械+AI\"复合人才反而成为稀缺资源。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "工科万金油，稳就业但涨薪慢，传统赛道天花板明显，拥抱智能制造才能翻盘。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "哈尔滨工业大学",
+        "华中科技大学",
+        "上海交通大学",
+        "浙江大学",
+        "西安交通大学"
+      ],
+      "tier_A": [
+        "北京航空航天大学",
+        "北京理工大学",
+        "大连理工大学",
+        "吉林大学",
+        "同济大学",
+        "南京航空航天大学",
+        "湖南大学",
+        "重庆大学",
+        "西南交通大学",
+        "燕山大学",
+        "中南大学",
+        "武汉大学"
+      ],
+      "tier_B": [
+        "武汉理工大学",
+        "合肥工业大学",
+        "江苏大学",
+        "南京理工大学",
+        "华东理工大学",
+        "东华大学",
+        "华南理工大学",
+        "西北工业大学",
+        "北京科技大学",
+        "上海大学",
+        "广东工业大学",
+        "浙江工业大学"
+      ],
+      "tier_C_note": "各省属重点工科院校及地方本科院校，如沈阳工业大学、太原科技大学、河南科技大学、湖北工业大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

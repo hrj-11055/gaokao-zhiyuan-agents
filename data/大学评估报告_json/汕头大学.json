@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.634700",
+    "updated_at": "2026-05-01T01:14:43.951146",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "汕头大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.0,
+      "graduate_value": 4.2,
+      "location_advantage": 3.5,
+      "globalization": 4.6,
+      "student_empowerment": 4.4,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 4.045,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "深圳大学",
+        "similarity": "同类院校",
+        "key_difference": "深大赢在“城市势能”和“大厂近水楼台”，就业爆发力强；汕大赢在“学术底蕴”和“国际化氛围”，尤其是医学和基础科学研究更扎实，生均资源占有率更高。"
+      },
+      {
+        "name": "暨南大学",
+        "similarity": "同类院校",
+        "key_difference": "暨大作为 211，在保研率和校友网络广度上占优；汕大在“书院生活体验”和“小班化教学”上更具特色，对于不喜欢大规模校区的学生更具吸引力。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "汕头大学是一所“**特质鲜明、精致国际化**”的综合性大学。它在公立大学的框架下，成功引入了私立基金会的灵活性和国际化视野。\n-   **核心优势**：医学学科的全国性竞争力、书院制带来的全人教育环境、以及远超同类院校的生师比和英语教学水平。\n-   **主要短板**：地理位置对顶尖互联网/金融实习资源的限制，以及在国家级大平台（如国家实验室）数量上与省会 985/211 的差距。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "深圳大学",
+          "similarity": "同类院校",
+          "key_difference": "深大赢在“城市势能”和“大厂近水楼台”，就业爆发力强；汕大赢在“学术底蕴”和“国际化氛围”，尤其是医学和基础科学研究更扎实，生均资源占有率更高。"
+        },
+        {
+          "name": "暨南大学",
+          "similarity": "同类院校",
+          "key_difference": "暨大作为 211，在保研率和校友网络广度上占优；汕大在“书院生活体验”和“小班化教学”上更具特色，对于不喜欢大规模校区的学生更具吸引力。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "国际化",
+        "书院制",
+        "精致小众",
+        "医学强校",
+        "自由探索",
+        "全人教育",
+        "潮汕美食",
+        "东海岸日出"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

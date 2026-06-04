@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.648701",
+    "updated_at": "2026-05-10T00:11:35.702934",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海师范大学天华学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 3.2,
+      "location_advantage": 4.2,
+      "globalization": 4.5,
+      "student_empowerment": 2.8,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 3.19,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "上海",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "上海师范大学天华学院（以下简称“天华学院”）是一所典型的“上海特色”民办本科院校。其核心竞争力并非建立在深厚的学术积淀或科研产出上，而是建立在**极强的市场导向、优质的区位资源以及深度的国际化合作**之上。学校在专业设置上精准对标上海城市发展的刚需，如学前教育、康复治疗以及人工智能。\n\n从办学模式看，天华学院成功实现了从独立学院向高水平民办高校的转型。其管理风格以“严”著称，这种“高中式”的管理模式在民办高校中褒贬不一，但客观上保证了较高的考证通过率和就业基本盘。对于家庭经济条件优渥、希望在上海获得本科学历并有出国意向的学生而言，天华是一个高性价比的“跳板”。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "精致的利己主义",
+        "考证达人",
+        "国际化视野",
+        "规矩森严",
+        "上海户口梦",
+        "学前教育黄埔军校"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

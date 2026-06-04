@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.071750",
+    "updated_at": "2026-04-23T12:06:54.469248",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050236",
+    "name": "希腊语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "超小众\"冰河级\"语种，全国年产量不到50人，供需双窄：外交部定点捡漏，非外交梦者慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 2.5,
+      "future_adaptability": 3.0,
+      "career_path": 3.2,
+      "education_resources": 2.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 2.87
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础翻译和日常语言交互已被AI大模型大幅压缩，2024年翻译行业AI应用渗透率达97.1%[来源：中国翻译协会]。但希腊语作为超低资源语言，AI训练数据极度匮乏，机器翻译质量远不如英日法等主流语种。短期内，涉及希腊文化、古典学、商务谈判的深度翻译仍有不可替代性。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "超小众\"冰河级\"语种，全国年产量不到50人，供需双窄：外交部定点捡漏，非外交梦者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学",
+        "上海外国语大学"
+      ],
+      "tier_A": [
+        "对外经济贸易大学",
+        "广东外语外贸大学"
+      ],
+      "tier_B": [
+        "天津外国语大学",
+        "吉林外国语大学"
+      ],
+      "tier_C_note": "无（开设院校极少，均在B档及以上）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

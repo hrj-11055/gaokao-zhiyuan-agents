@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.483663",
+    "updated_at": "2026-05-12T09:49:39.635413",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "大连工业大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.34,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "大连工业大学（Dalian Polytechnic University）是一所以“大轻工”为鲜明特色的多科性大学。作为原轻工业部直属的八大院校之一，该校在半个多世纪的办学历程中，形成了以食品科学、轻工技术、艺术设计为核心的学科集群。在当前的教育生态中，大连工业大学扮演着“行业垂直领军者”的角色，尤其在海洋食品加工、特种功能食品开发以及服装设计领域，其学术地位与行业影响力远超其综合排名。\n\n从学术维度看，朱蓓薇院士的领衔使得该校在食品科学领域拥有了与顶尖 985 高校对话的资本。然而，受限于东北地区的宏观经济环境以及学校整体资源的分配，其非核心学科（如基础理学、部分传统文科）的发展相对平缓。对于学生而言，这所学校的价值在于其极高的“性价比”——在同等分数段下，能够获得全国顶尖的行业资源和就业推力。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

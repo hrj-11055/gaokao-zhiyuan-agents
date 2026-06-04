@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.966559",
+    "updated_at": "2026-04-25T12:10:37.581255",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080913T_电影制作",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "计算机外壳下的电影梦，横跨技术与艺术，但AI视频生成工具的爆发正动摇其技术护城河，非名校+无作品集者慎入。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.3,
+      "career_path": 3.2,
+      "education_resources": 3.0,
+      "discipline_core": 6.0
+    },
+    "weighted_score": 2.93
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI视频生成工具（Sora、可灵AI、即梦AI、Runway等）已能从文本直接生成4K视频，特效制作周期从72小时压缩至10分钟（澎湃新闻2025年报道）。AI剪辑工具（Premiere Pro AI版）与资深剪辑师作品相似度达79%，效率提升8倍。后期制作、基础摄影、特效生成等环节面临直接替代风险。但导演的创意决策、情感叙事、人际协作等能力仍难以被AI替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "计算机外壳下的电影梦，横跨技术与艺术，但AI视频生成工具的爆发正动摇其技术护城河，非名校+无作品集者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海大学（211，上海电影学院，全英文教学，国内首个开设）"
+      ],
+      "tier_A": [
+        "浙江传媒学院（传媒类强校，A+评级）"
+      ],
+      "tier_B": [
+        "四川传媒学院",
+        "沈阳城市学院（应用型领先）",
+        "重庆移通学院",
+        "晋中信息学院"
+      ],
+      "tier_C_note": "重庆工程学院、青岛电影学院、上海师范大学天华学院（如有开设）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

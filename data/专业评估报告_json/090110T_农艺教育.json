@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.962866",
+    "updated_at": "2026-04-26T03:08:12.541116",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090110T_农艺教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "极度小众的\"农学+师范\"交叉专业，全国仅5所院校开设，就业面窄但方向明确，适合铁了心去职业院校当农学老师的考生。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 2.3,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.83
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "农业田间诊断、技术推广中的面对面沟通、农民培训教学等核心工作依赖实地经验和人际互动，短期内难以被AI完全替代；但基础数据采集、简单技术咨询可能被AI工具分流。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度小众的\"农学+师范\"交叉专业，全国仅5所院校开设，就业面窄但方向明确，适合铁了心去职业院校当农学老师的考生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业无985/双一流高校以农艺教育为特色）"
+      ],
+      "tier_A": [
+        "海南大学（211工程）",
+        "江西农业大学"
+      ],
+      "tier_B": [
+        "吉林农业大学",
+        "甘肃农业大学"
+      ],
+      "tier_C_note": "贵阳人文科技学院（民办）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

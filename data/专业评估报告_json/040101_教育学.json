@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.887765",
+    "updated_at": "2026-04-27T15:27:46.922176",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "040101",
+    "name": "教育学",
+    "category": "教育学",
+    "recommendation_level": "yellow",
+    "summary": "稳定压倒一切的\"铁饭碗\"预科班——就业对口率高但薪资垫底，考编内卷白热化，非师范院校慎选。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.5,
+      "education_resources": 3.5,
+      "discipline_core": 5.0
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–4,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "中小学教师的AI替代风险仅约15-20%（远低于行政、翻译、客服等60%以上的替代风险）。教育教学中的情感互动、个性化引导、班级管理、师生关系建立等核心能力难以被AI替代。但教育技术类岗位（课件制作、教务管理）受AI冲击较大。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "稳定压倒一切的\"铁饭碗\"预科班——就业对口率高但薪资垫底，考编内卷白热化，非师范院校慎选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京师范大学",
+        "华东师范大学"
+      ],
+      "tier_A": [
+        "东北师范大学",
+        "南京师范大学",
+        "华中师范大学",
+        "西南大学",
+        "北京大学",
+        "浙江大学"
+      ],
+      "tier_B": [
+        "清华大学",
+        "厦门大学",
+        "华南师范大学",
+        "湖南师范大学",
+        "陕西师范大学",
+        "首都师范大学",
+        "上海师范大学",
+        "浙江师范大学"
+      ],
+      "tier_C_note": "各省属师范大学（如河北师范大学、山东师范大学、河南师范大学等）、地方综合性大学教育学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

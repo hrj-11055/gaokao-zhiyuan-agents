@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.781906",
+    "updated_at": "2026-05-03T01:48:05.081982",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广州应用科技学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "最适合希望留在珠三角就业、对校园硬件有较高要求、分数在本科线上且不以学术深造为首要目标的务实型考生。",
+    "radar": {},
+    "weighted_score": 2.38,
+    "one_sentence_recommend": "最适合希望留在珠三角就业、对校园硬件有较高要求、分数在本科线上且不以学术深造为首要目标的务实型考生。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 5500,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "粤港澳大湾区",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "- **Identity（核心定位）**：深耕大湾区的应用型民办本科，正从独立学院向独立办学的“新型应用型大学”转型。\n- **Ace（王牌优势）**：体育学与法学专业在同类院校中具备较强竞争力；肇庆校区硬件设施（宿舍、体育场馆）达到省内民办领先水平。\n- **Vibe（文化特质）**：务实、就业导向、校园氛围相对活跃，具有明显的“大湾区打工人预备役”气质。\n- **Risk（潜在风险）**：学术底蕴薄弱，考研氛围淡薄；近期曾出现论文抄袭举报处理争议，反映出教学管理精细度仍有提升空间。",
+      "one_sentence_recommend": "最适合希望留在珠三角就业、对校园硬件有较高要求、分数在本科线上且不以学术深造为首要目标的务实型考生。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

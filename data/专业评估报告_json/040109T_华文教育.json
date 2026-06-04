@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.943766",
+    "updated_at": "2026-04-22T00:08:10.863521",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040109T_华文教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众到全国仅4所大学开设的\"侨务特供\"专业，吃政策饭、走海外路，国内就业面极窄，除非你有海外华校资源或坚定的\"出海\"决心。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 2.73
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "",
+      "starting_salary": "4500–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "跨文化沟通、教学互动中的情感调动、文化情境的即兴讲解等核心能力短期内难以被AI完全替代；但基础语法教学、汉字书写练习、HSK备考等标准化内容正在被AI语言学习工具（如科大讯飞跳跳龙等）快速替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众到全国仅4所大学开设的\"侨务特供\"专业，吃政策饭、走海外路，国内就业面极窄，除非你有海外华校资源或坚定的\"出海\"决心。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暨南大学（211/双一流，华文教育全国第一，华侨最高学府，广州区位优势+深厚侨务资源+海外校友网络）"
+      ],
+      "tier_A": [
+        "华侨大学（中央统战部直属，华文学院为品牌学院，泉州/厦门双校区，东南亚侨务资源丰富）"
+      ],
+      "tier_B": [
+        "云南师范大学（面向东南亚区位独特，昆明为南亚东南亚辐射中心）"
+      ],
+      "tier_C_note": "楚雄师范学院（应用型办学特色，但层次有限）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.171794",
+    "updated_at": "2026-04-28T03:50:12.050307",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130308",
+    "name": "录音艺术",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "声音世界的匠人，极窄赛道极强壁垒，但岗位稀缺、极度依赖城市与圈子，非\"真爱+名校\"慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 3.6
+    },
+    "weighted_score": 3.12
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 已在自动混音、噪声消除、语音合成（TTS）、AI 配乐生成等领域取得显著进展，基础性的音频处理工作正被自动化工具替代；但高端混音的审美判断、声音设计的创意层面、现场录音的临场应变仍需人类主导。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "声音世界的匠人，极窄赛道极强壁垒，但岗位稀缺、极度依赖城市与圈子，非\"真爱+名校\"慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国传媒大学",
+        "北京电影学院"
+      ],
+      "tier_A": [
+        "上海音乐学院",
+        "中央音乐学院",
+        "星海音乐学院",
+        "南京艺术学院"
+      ],
+      "tier_B": [
+        "武汉音乐学院",
+        "四川音乐学院",
+        "西安音乐学院",
+        "浙江传媒学院",
+        "云南艺术学院",
+        "首都师范大学"
+      ],
+      "tier_C_note": "各省属综合性大学中开设录音艺术方向的院校（如广西艺术学院、沈阳音乐学院等）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

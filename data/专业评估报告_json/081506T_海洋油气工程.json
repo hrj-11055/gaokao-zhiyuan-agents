@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.076349",
+    "updated_at": "2026-04-25T17:29:37.138480",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081506T_海洋油气工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "踩着深海浪花挖黑金的硬核专业，国家能源安全战略加持，但就业面极窄，长期出海是硬伤，怕苦怕孤单者慎入。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.31
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 在钻井轨迹优化（大港油田 AI 辅助设计将匹配时间从 5–8 天缩短至 2 小时）、数字孪生油田系统等领域加速渗透，但海洋油气工程的核心——极端海洋环境下的物理作业、现场设备维护、应急决策——高度依赖现场经验与人的判断力，AI 硬件在深海高盐、高压、低温环境下故障率较陆地高 5–8 倍（知乎/AI 海工产业链分析），短期内难以替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "踩着深海浪花挖黑金的硬核专业，国家能源安全战略加持，但就业面极窄，长期出海是硬伤，怕苦怕孤单者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国石油大学（北京）",
+        "中国石油大学（华东）"
+      ],
+      "tier_A": [
+        "西南石油大学"
+      ],
+      "tier_B": [
+        "东北石油大学",
+        "长安大学",
+        "长江大学"
+      ],
+      "tier_C_note": "西安石油大学、浙江海洋大学、辽宁石油化工大学、广东石油化工学院、重庆科技大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

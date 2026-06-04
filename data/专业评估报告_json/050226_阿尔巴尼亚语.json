@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.909019",
+    "updated_at": "2026-04-23T21:36:24.608428",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050226",
+    "name": "阿尔巴尼亚语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极度冷门的小语种，稀缺性是唯一筹码，但岗位屈指可数，全国仅4所院校开设，非\"外交世家\"或\"巴尔干情怀\"慎入。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 2.2,
+      "future_adaptability": 2.5,
+      "career_path": 2.2,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.47
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "阿尔巴尼亚语语料极少（全球使用人口约760万），AI 训练数据不足，机器翻译质量远低于主流语种。低频小语种的口译、文学翻译、地缘分析在短期内不易被 AI 替代。但基础文件翻译、日常沟通场景的 AI 替代正在推进。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度冷门的小语种，稀缺性是唯一筹码，但岗位屈指可数，全国仅4所院校开设，非\"外交世家\"或\"巴尔干情怀\"慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（国内唯一本硕博齐全",
+        "1961年开设",
+        "最强师资和学术积累）"
+      ],
+      "tier_A": [
+        "北京第二外国语学院（校友会2025排名第二，有一定培养传统）"
+      ],
+      "tier_B": [
+        "上海外国语大学（外国语言文学A+平台，可能以研究方向形式存在）"
+      ],
+      "tier_C_note": "广东外语外贸大学（外国语言文学A类，搜索结果提到但开设状态不稳定）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

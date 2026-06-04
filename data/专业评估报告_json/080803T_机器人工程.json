@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.044694",
+    "updated_at": "2026-04-25T11:02:48.192326",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080803T_机器人工程",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "国家战略级硬核赛道，产业爆发中但高度内卷，985 硕士是头部企业入场券，普通本科建议深耕应用端。",
+    "radar": {
+      "market_return": 4.1,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.6,
+      "education_resources": 3.8,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.1
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~95%",
+      "alignment_rate": "~72%",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "机器人工程师核心能力涉及机械结构设计、运动控制、传感器融合、嵌入式系统等物理世界交互技能，AI 难以替代\"手-脑-眼\"协同的硬件调试与系统集成工作。纯软件算法岗面临一定 AI 辅助编码冲击，但系统级设计能力仍不可替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略级硬核赛道，产业爆发中但高度内卷，985 硕士是头部企业入场券，普通本科建议深耕应用端。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工业大学",
+        "东南大学",
+        "北京航空航天大学",
+        "浙江大学",
+        "上海交通大学"
+      ],
+      "tier_A": [
+        "清华大学",
+        "西安交通大学",
+        "华中科技大学",
+        "北京理工大学",
+        "西北工业大学",
+        "南京航空航天大学",
+        "哈尔滨工程大学",
+        "电子科技大学",
+        "东北大学",
+        "山东大学"
+      ],
+      "tier_B": [
+        "北京科技大学",
+        "南京理工大学",
+        "广东工业大学",
+        "上海大学",
+        "燕山大学",
+        "杭州电子科技大学",
+        "西南交通大学",
+        "西安电子科技大学",
+        "中国矿业大学",
+        "中北大学"
+      ],
+      "tier_C_note": "全国 359 所开设院校中的普通本科院校。对于中段分数考生，可重点关注有工业基础的省份院校（如广东、江苏、浙江、山东等地的省属高校），就业对接当地智能制造产业集群。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

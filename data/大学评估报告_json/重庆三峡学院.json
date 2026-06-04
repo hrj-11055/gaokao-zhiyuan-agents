@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.552375",
+    "updated_at": "2026-05-12T13:14:07.976444",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "重庆三峡学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "适合人群：",
+    "radar": {},
+    "weighted_score": 2.44,
+    "one_sentence_recommend": "适合人群："
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "重庆三峡学院（以下简称“三峡学院”）是一所典型的“区域支撑型”大学。其核心身份是重庆市属、位于万州区的综合性本科院校。从历史沿革看，它承接了原万州师范专科学校的深厚底蕴，这使得其在师范教育领域于渝东北地区拥有近乎垄断的话语权。\n\n**核心竞争力分析：**\n学校的“王牌”并非体现在全国性的学术排名上，而在于其与“三峡库区”这一国家战略地理单元的深度绑定。在农业工程、环境科学以及三峡文化研究领域，学校拥有不可替代的田野调查优势和政策支持。对于希望在重庆区县体制内（如教师、公务员）发展的学生，该校提供了极高的性价比。\n\n**潜在风险与挑战：**\n地理位置是其双刃剑。万州虽为重庆第二大城市，但与主城区的资源集聚效应相比仍有差距，这直接导致了高层次人才（如国家杰青、长江学者）的引进难度极大。此外，近期曝出的采购合规性争议，反映出学校在快速扩张和数字化转型过程中的内部治理效能仍有待提升。",
+      "one_sentence_recommend": "适合人群：",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "考研大户",
+        "万州格格",
+        "库区守护者",
+        "性价比之王",
+        "阶梯健身房"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

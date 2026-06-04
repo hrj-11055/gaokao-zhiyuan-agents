@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.140711",
+    "updated_at": "2026-04-24T23:24:30.690470",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070103T_数理基础科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"理科中的理科\"，底层思维无敌但培养周期极长，非顶尖院校+深造意愿者慎入——这是个\"博士起步才有话语权\"的专业。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.6,
+      "future_adaptability": 4.3,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 4.8
+    },
+    "weighted_score": 3.49
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "数理基础科学培养的抽象推理、定理证明、数学建模能力是 AI 系统的\"上游\"，当前 AI 能辅助计算但无法替代人类提出新数学结构和物理理论，属于\"造 AI 的人\"而非\"被 AI 替代的人\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"理科中的理科\"，底层思维无敌但培养周期极长，非顶尖院校+深造意愿者慎入——这是个\"博士起步才有话语权\"的专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学（A+，全国第一，钱学森班/求真书院，深造率80%+，直博普林斯顿等顶级路径）"
+      ],
+      "tier_A": [
+        "大连理工大学（A+，理科实力雄厚，盘锦校区分数相对友好），电子科技大学（A+评级，信息+数理交叉优势）"
+      ],
+      "tier_B": [
+        "云南大学（B 级，双一流高校，区域特色）"
+      ],
+      "tier_C_note": "广西民族大学、内蒙古大学（开设较早但学科影响力有限，适合分数中等且有强烈深造意愿的考生）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

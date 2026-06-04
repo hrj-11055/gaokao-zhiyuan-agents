@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.117788",
+    "updated_at": "2026-04-25T15:26:55.842320",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081201",
+    "name": "测绘工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "传统工科的\"地盘守护者\"，北斗+无人机正在重塑行业，但外业吃苦、起薪平平是硬伤，适合耐得住寂寞的实干派。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.4,
+      "future_adaptability": 3.3,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI已能替代重复性高的数据标注、基础图像分析、批量数据处理等工作；但复杂地形综合判断、现场突发问题处理、个性化测绘方案设计等仍需人类经验。未来AI更多作为\"辅助工具\"而非完全替代——从业者需向\"AI+测绘\"复合型转型。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "传统工科的\"地盘守护者\"，北斗+无人机正在重塑行业，但外业吃苦、起薪平平是硬伤，适合耐得住寂寞的实干派。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "武汉大学",
+        "战略支援部队信息工程大学"
+      ],
+      "tier_A": [
+        "同济大学",
+        "中国矿业大学",
+        "中南大学",
+        "西南交通大学",
+        "长安大学",
+        "东北大学"
+      ],
+      "tier_B": [
+        "中国地质大学（武汉）",
+        "山东科技大学",
+        "辽宁工程技术大学",
+        "河南理工大学",
+        "桂林理工大学",
+        "东华理工大学",
+        "北京建筑大学"
+      ],
+      "tier_C_note": "各地方工科院校及综合大学（如黑龙江工程学院、闽江学院等应用型院校在该专业也有一定基础）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

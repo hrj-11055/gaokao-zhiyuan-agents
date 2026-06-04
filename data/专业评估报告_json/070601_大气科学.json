@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.017220",
+    "updated_at": "2026-04-25T00:42:20.344027",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070601",
+    "name": "大气科学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "小众硬核，就业极稳但口径窄；深造是分水岭，硕博进新能源和商业气象可年薪30万+，本科直接就业多扎基层台站。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 4.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.68
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "大气科学核心能力在于复杂物理系统的数值模拟、海量气象数据的同化分析、以及对天气气候系统的深层物理理解。AI 目前能辅助数据处理和模式优化，但无法替代人类对极端天气事件的研判决策和物理机制理解。气象预报员的\"经验判断\"仍是不可替代环节。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众硬核，就业极稳但口径窄；深造是分水岭，硕博进新能源和商业气象可年薪30万+，本科直接就业多扎基层台站。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "南京大学",
+        "南京信息工程大学"
+      ],
+      "tier_A": [
+        "兰州大学",
+        "中国海洋大学",
+        "中山大学",
+        "浙江大学"
+      ],
+      "tier_B": [
+        "清华大学",
+        "中国科学技术大学",
+        "成都信息工程大学",
+        "云南大学",
+        "广东海洋大学"
+      ],
+      "tier_C_note": "无锡学院、中国民用航空飞行学院、南宁师范大学、喀什大学、内蒙古大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

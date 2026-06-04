@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.141176",
+    "updated_at": "2026-04-22T01:46:30.264584",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040216T_体育康养",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在\"银发经济\"风口上的新专业，产业万亿级但人才需求尚未标准化，先发优势与试水风险并存。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.41
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "体育康养的核心工作涉及面对面的老年人运动指导、身体评估（如体适能测评）、慢性病运动干预方案制定，需要高度的人际沟通、情感关怀和个性化身体接触。AI可辅助健康数据分析与方案生成，但无法替代\"人对人\"的运动实操指导与老年心理陪伴。尤其是老年群体对人际互动的需求远高于对技术工具的接受度。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在\"银发经济\"风口上的新专业，产业万亿级但人才需求尚未标准化，先发优势与试水风险并存。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无 — 专业设立时间过短，无法按传统标准分档"
+      ],
+      "tier_A": [
+        "广州体育学院（全国首创，师资配置最完善，依托国家体育总局重点实验室和省级实验教学示范中心）"
+      ],
+      "tier_B": [
+        "首都体育学院（已获批，体育学学科实力强）",
+        "河南医药大学（2025年新增，医药院校背景提供医学支撑）"
+      ],
+      "tier_C_note": "吉林师范大学博达学院（独立学院）、河南财政金融学院（新建本科）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

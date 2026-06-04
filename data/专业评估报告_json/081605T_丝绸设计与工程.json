@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.933457",
+    "updated_at": "2026-04-25T18:03:11.294504",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081605T_丝绸设计与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国仅一所院校开设的\"非遗级\"小众专业，背靠\"一带一路\"与文化复兴东风，但赛道极窄、选择极少，需以热爱为前提。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 2.9
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "丝绸织造涉及大量实体工艺操作（缫丝、织造、印染），传统手工技艺和材料手感经验短期内难以被AI替代；AI已在花型设计领域辅助应用，但核心的工艺判断、材料创新仍依赖人工经验。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅一所院校开设的\"非遗级\"小众专业，背靠\"一带一路\"与文化复兴东风，但赛道极窄、选择极少，需以热爱为前提。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江理工大学（全国唯一开设该专业的高校，校友会5★评级，纺织学科全球前3）"
+      ],
+      "tier_A": [
+        "（无，该专业仅1所院校开设）"
+      ],
+      "tier_B": [
+        "（无）"
+      ],
+      "tier_C_note": "（无）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

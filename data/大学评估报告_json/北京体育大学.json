@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.910023",
+    "updated_at": "2026-05-09T14:42:28.809919",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "北京体育大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.0,
+      "location_advantage": 4.8,
+      "globalization": 4.1,
+      "student_empowerment": 3.5,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 4.22,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "北京体育大学（Beijing Sport University, BSU）作为国家体育总局直属的唯一一所“双一流”建设高校，在中国体育教育版图中占据着无可撼动的“领头羊”地位。它不仅是一所培养竞技体育人才的摇篮，更是中国体育科学研究、政策咨询和体育外交的核心阵地。\n\n在学术层面，北体大凭借“体育学”A+的绝对优势，构建了从基础体育理论到前沿运动人体科学的完整体系。其科研力量深度参与了历届奥运会的科技攻关，是“科技助奥”战略的主力军。在就业层面，北体大毕业生在全国体育系统、教育系统及头部体育企业中拥有极高的认可度，形成了强大的校友网络。\n\n然而，学校也面临着基础设施陈旧、行政化色彩浓厚以及近期高层人事变动带来的治理挑战。对于学生而言，这里既有与世界冠军同窗的荣耀，也有在老旧宿舍中挥汗如雨的艰辛。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "野蛮体魄",
+        "文明精神",
+        "冠军摇篮",
+        "海淀体校",
+        "自律狂人",
+        "体育最高学府",
+        "科技助奥",
+        "家国情怀"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

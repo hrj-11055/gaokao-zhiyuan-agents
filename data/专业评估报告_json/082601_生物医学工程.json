@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.171361",
+    "updated_at": "2026-04-25T22:27:45.976135",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082601",
+    "name": "生物医学工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "名字最坑的工科专业——不是学生物也不是当医生，是造医疗器械的硬核交叉学科，深造几乎是刚需，但赛道天花板极高。",
+    "radar": {
+      "market_return": 3.4,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.77
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "医疗器械研发需要跨学科的系统集成能力（硬件+软件+医学知识+法规合规），AI 目前能替代部分影像识别算法编写，但无法替代硬件设计、临床需求分析、产品注册合规和跨学科工程决策。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "名字最坑的工科专业——不是学生物也不是当医生，是造医疗器械的硬核交叉学科，深造几乎是刚需，但赛道天花板极高。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东南大学",
+        "清华大学",
+        "上海交通大学",
+        "华中科技大学"
+      ],
+      "tier_A": [
+        "北京航空航天大学",
+        "浙江大学",
+        "四川大学",
+        "北京大学",
+        "天津大学",
+        "复旦大学",
+        "电子科技大学",
+        "西安交通大学"
+      ],
+      "tier_B": [
+        "华南理工大学",
+        "重庆大学",
+        "南方医科大学",
+        "深圳大学",
+        "上海理工大学",
+        "首都医科大学",
+        "哈尔滨工业大学",
+        "中国科学技术大学",
+        "中山大学",
+        "空军军医大学"
+      ],
+      "tier_C_note": "太原理工大学、苏州大学、厦门大学、武汉大学、西南交通大学、天津医科大学、南京大学、山东大学、东北大学、大连理工大学及各省属医科/理工类院校（约 60+ 所）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

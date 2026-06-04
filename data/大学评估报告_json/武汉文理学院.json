@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.838074",
+    "updated_at": "2026-05-10T00:15:09.007467",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "武汉文理学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.1,
+      "graduate_value": 2.6,
+      "location_advantage": 3.5,
+      "globalization": 2.3,
+      "student_empowerment": 3.2,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.61,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "武汉文理学院（Wuhan College of Arts and Sciences）是一所正处于转型上升期的民办普通本科高校。其前身为江汉大学文理学院，于 2020 年成功转设为独立设置的民办本科。在当前的中国高等教育版图中，该校展现出鲜明的“应用型”与“就业导向”特征。\n\n**核心竞争力分析：**\n学校的战略重心非常明确，即避开与研究型大学在基础理论研究上的直接竞争，转而深耕高就业率的垂直领域。医学院（尤其是护理学和药学）是其品牌的核心支撑，其护考通过率和三甲医院入职率在同类院校中具有显著优势。此外，学校在“无损检测”这一小众但高门槛的工科领域形成了独特的产教融合模式，为毕业生构建了坚实的行业护城河。\n\n**发展环境评估：**\n地理位置是该校的重要资产。随着武汉“长江新区”建设的推进，学校所处的区位正从传统的郊区向新兴产业集聚区转变。这种区位红利直接转化为实习机会和产学研合作资源，尤其是在大健康和智能制造领域。然而，作为民办院校，其学术底蕴的积累仍需时间，师资结构中高层次领军人才的匮乏是制约其向更高水平迈进的主要瓶颈。\n\n**风险与挑战：**\n尽管就业表现优异，但学校在全国范围内的品牌认知度仍有待提升。学费成本与生源质量的平衡是民办高校共同面临的课题。在考研竞争日益激烈的背景下，学校虽然营造了浓厚的考研氛围，但如何提升高层次名校的录取率，仍是其教学质量改进的关键指标。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实主义",
+        "考研逆袭",
+        "医护摇篮",
+        "长江新区",
+        "产教融合",
+        "半封闭式管理",
+        "高就业率"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.183099",
+    "updated_at": "2026-04-24T11:58:03.885572",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050305",
+    "name": "编辑出版学",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "\"纸上得来终觉浅\"——传统出版业正被 AI 和数字洪流改写，编辑出版学是文化情怀与产业寒冬的碰撞体，复合型人才有一席之地，单技能选手需慎入。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 2.5,
+      "future_adaptability": 2.8,
+      "career_path": 3.2,
+      "education_resources": 3.0,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.71
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "1-2%",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI已实现出版全流程覆盖——2024年某儿童出版社用AI批量生成50本分级读物，编辑仅需调整10%；\"AI编辑工作室\"已在300+出版机构部署。基础编校、文字润色、选题辅助等环节正被AI替代。但高阶的内容品位判断、文化价值把关、原创选题洞察仍需人类编辑。来源：《AIGC技术对中国出版行业影响及应用情况调研报告》（华东师范大学上海出版研究院）、出版商务周报"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"纸上得来终觉浅\"——传统出版业正被 AI 和数字洪流改写，编辑出版学是文化情怀与产业寒冬的碰撞体，复合型人才有一席之地，单技能选手需慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "武汉大学",
+        "南京大学",
+        "北京大学"
+      ],
+      "tier_A": [
+        "中国传媒大学",
+        "华东师范大学",
+        "陕西师范大学",
+        "中国人民大学"
+      ],
+      "tier_B": [
+        "湖南师范大学",
+        "上海理工大学",
+        "安徽大学",
+        "北京印刷学院",
+        "浙江传媒学院",
+        "南开大学",
+        "复旦大学 [待核实部分]"
+      ],
+      "tier_C_note": "各省属师范类院校及其他开设编辑出版学的普通本科院校，如河北大学、河南大学、云南大学等。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

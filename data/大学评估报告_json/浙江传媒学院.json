@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.788351",
+    "updated_at": "2026-05-11T12:00:03.445081",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "浙江传媒学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 4.5,
+      "location_advantage": 4.9,
+      "globalization": 3.8,
+      "student_empowerment": 4.2,
+      "brand_asset": 4.6
+    },
+    "weighted_score": 4.185,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）：** 浙传是中国传媒人才的“实战摇篮”。它不以深厚的学术理论见长，而以敏锐的行业洞察和极强的动手能力立身。\n*   **Ace（王牌优势）：** 播音、编导、摄制等专业在行业内拥有极高的“免检”声誉。与浙江广电及杭州互联网产业的深度融合，为学生提供了闭环的成长路径。\n*   **Vibe（文化特质）：** 这是一个“审美先行”的校园。高颜值、高情商、重社交、重实践是这里的标签。\n*   **Risk（潜在风险）：** 传媒行业的结构性变革要求学生必须具备更强的跨界能力。单纯的“艺术生”思维已难以应对 AI 时代的竞争。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "审美先行",
+        "实践至上",
+        "社交达人",
+        "熬夜冠军",
+        "杭州地缘",
+        "传媒正统",
+        "跨界玩家",
+        "视觉动物"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.834747",
+    "updated_at": "2026-05-10T00:04:12.403755",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西京学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "如果你是一名理科生，高考分数在本科线上 30-50 分，希望通过四年的严管实现考研深造或进入大型制造业企业，且家庭能够承担较高的学费，西京学院是性价比极高的选择。",
+    "radar": {
+      "academic_capital": 2.9,
+      "graduate_value": 2.6,
+      "location_advantage": 3.2,
+      "globalization": 1.8,
+      "student_empowerment": 2.3,
+      "brand_asset": 3.6
+    },
+    "weighted_score": 2.785,
+    "one_sentence_recommend": "如果你是一名理科生，高考分数在本科线上 30-50 分，希望通过四年的严管实现考研深造或进入大型制造业企业，且家庭能够承担较高的学费，西京学院是性价比极高的选择。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "-   **Identity（核心定位）**：中国民办高等教育的“学术派”领军者，应用型本科的标杆。\n-   **Ace（王牌优势）**：硕士研究生培养体系成熟，工科科研实力足以比肩部分公办双非院校。\n-   **Vibe（文化特质）**：高压管理下的高品质生活。校园环境优美，但学业压力和纪律要求显著高于同类院校。\n-   **Risk（潜在风险）**：学费成本较高；管理模式可能导致部分学生产生逆反心理；文科专业的学术深度仍有提升空间。",
+      "one_sentence_recommend": "如果你是一名理科生，高考分数在本科线上 30-50 分，希望通过四年的严管实现考研深造或进入大型制造业企业，且家庭能够承担较高的学费，西京学院是性价比极高的选择。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬核工科",
+        "民办天花板",
+        "五星级宿舍",
+        "考研集中营",
+        "严谨治学",
+        "西安长安区",
+        "务实就业"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

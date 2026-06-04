@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.674951",
+    "updated_at": "2026-05-11T15:30:07.115506",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "山东财经大学燕山学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 2.6,
+      "location_advantage": 2.5,
+      "globalization": 2.0,
+      "student_empowerment": 2.7,
+      "brand_asset": 2.4
+    },
+    "weighted_score": 2.39,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "山东财经大学东方学院",
+        "similarity": "同类院校",
+        "key_difference": "燕山学院在生源质量和校园设施上略占优势，且由于位于莱芜（济南市辖区），在行政归属感上略强于位于泰安的东方学院。"
+      },
+      {
+        "name": "山东工商学院（公办）",
+        "similarity": "同类院校",
+        "key_difference": "燕山学院在学费上处于劣势（每年约 2-3 万），但在专业集中度和母体资源共享上，能为学生提供不亚于普通公办二本的专业教育。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：山东财经大学燕山学院是一所以财经为核心、管理严格、考研氛围浓厚的民办本科层次独立学院。\n*   **Ace（王牌优势）**：其会计学与金融学专业在山东省内具有极高的行业认可度，毕业生在基层银行、税务及企事业单位财会岗具有较强的竞争力。\n*   **Vibe（文化特质）**：校园文化呈现出“务实、勤奋、略显压抑”的特征，是典型的“考研型”大学。\n*   **Risk（潜在风险）**：转设路径的不确定性可能影响未来的品牌走向；莱芜校区与主城区的距离限制了高端实习资源的获取。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "山东财经大学东方学院",
+          "similarity": "同类院校",
+          "key_difference": "燕山学院在生源质量和校园设施上略占优势，且由于位于莱芜（济南市辖区），在行政归属感上略强于位于泰安的东方学院。"
+        },
+        {
+          "name": "山东工商学院（公办）",
+          "similarity": "同类院校",
+          "key_difference": "燕山学院在学费上处于劣势（每年约 2-3 万），但在专业集中度和母体资源共享上，能为学生提供不亚于普通公办二本的专业教育。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

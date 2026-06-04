@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.210786",
+    "updated_at": "2026-04-25T14:24:36.958849",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081004",
+    "name": "建筑电气与智能化",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "智慧建筑浪潮下的\"硬核电工\"，踩中新基建风口，但传统建筑业下行周期拉扯明显，需向数字化方向突围。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.6,
+      "career_path": 3.2,
+      "education_resources": 3.2,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,500–10,600元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业涉及大量物理系统调试、现场施工管理、多子系统集成等需要在真实环境中操作的工作，AI可辅助BIM设计和方案优化，但无法替代现场施工协调、设备调试和突发问题处理。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "智慧建筑浪潮下的\"硬核电工\"，踩中新基建风口，但传统建筑业下行周期拉扯明显，需向数字化方向突围。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "同济大学",
+        "哈尔滨工业大学",
+        "重庆大学"
+      ],
+      "tier_A": [
+        "西安建筑科技大学",
+        "北京建筑大学",
+        "南京工业大学",
+        "沈阳建筑大学",
+        "华东交通大学"
+      ],
+      "tier_B": [
+        "苏州科技大学",
+        "兰州交通大学",
+        "桂林电子科技大学",
+        "福建理工大学",
+        "郑州轻工业大学",
+        "天津城建大学",
+        "河北建筑工程学院"
+      ],
+      "tier_C_note": "全国约 40+ 所地方本科院校均有开设，如吉林建筑大学、长春工程学院、青岛理工大学、内蒙古科技大学、闽南理工学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

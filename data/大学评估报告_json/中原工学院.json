@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.643323",
+    "updated_at": "2026-05-11T16:32:37.255679",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中原工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "最适合希望以“双非”分数博取未来“电子科技大学”品牌红利，且目标明确、倾向于在电子信息或先进制造领域发展的务实型理工科考生。",
+    "radar": {},
+    "weighted_score": 3.22,
+    "one_sentence_recommend": "最适合希望以“双非”分数博取未来“电子科技大学”品牌红利，且目标明确、倾向于在电子信息或先进制造领域发展的务实型理工科考生。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "学科资源倾斜",
+        "description": "随着重心全面转向电子信息，传统的纺织、服装、艺术类专业在经费申请、职称评定上可能会面临边缘化。"
+      },
+      {
+        "category": "更名后的竞争压力",
+        "description": "更名后，学校将直接与西安电子科技大学、杭州电子科技大学等强校在同一赛道竞争，如何保持特色而不被平庸化，是管理层需要思考的问题。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "中原工学院目前正处于其校史上最重要的“二次创业”阶段。作为一所拥有深厚纺织工业底蕴的省属本科院校，该校正在河南省政府的强力支持下，全方位向“河南电子科技大学”转型。这种转型并非简单的更名，而是学科结构、人才引进、科研导向的系统性重塑。\n\n从学术资本看，学校虽然在传统学科评估中表现平稳，但在“新工科”领域爆发力十足，尤其是金刚石半导体材料与智能织物电子的交叉研究，已形成国内独特的学术标签。毕业生在河南及周边省份的制造业、信息技术业拥有极高的认可度，随着更名预期的升温，其生源质量已出现明显的“抢跑”现象。\n\n然而，转型期的阵痛依然存在。传统纺织服装类专业如何与电子信息技术深度融合，以及在更名后如何在高水平人才引进上与国内老牌“电子科技大学”竞争，是其未来五年面临的核心挑战。",
+      "one_sentence_recommend": "最适合希望以“双非”分数博取未来“电子科技大学”品牌红利，且目标明确、倾向于在电子信息或先进制造领域发展的务实型理工科考生。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

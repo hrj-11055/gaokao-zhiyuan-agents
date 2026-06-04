@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.953959",
+    "updated_at": "2026-04-25T14:17:10.407999",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081002",
+    "name": "建筑环境与能源应用工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "暖通空调的\"幕后英雄\"，乘双碳东风翻身，但行业仍在土木周期底部，需熬得住寂寞、吃得下工地的苦。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI主要用于暖通系统能耗优化和负荷预测（数据驱动），但建筑环境系统设计涉及复杂的现场条件判断、多专业协调、工程经验决策，且驻场调试和运维管理需要物理空间操作，AI难以替代核心工程决策和现场工作。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "暖通空调的\"幕后英雄\"，乘双碳东风翻身，但行业仍在土木周期底部，需熬得住寂寞、吃得下工地的苦。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "同济大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_A": [
+        "东南大学",
+        "重庆大学",
+        "天津大学",
+        "大连理工大学",
+        "湖南大学",
+        "中南大学",
+        "华中科技大学"
+      ],
+      "tier_B": [
+        "北京工业大学",
+        "西南交通大学",
+        "武汉理工大学",
+        "长安大学",
+        "中国矿业大学",
+        "广州大学",
+        "西安建筑科技大学",
+        "北京科技大学",
+        "北京建筑大学",
+        "河北工业大学",
+        "南京工业大学",
+        "青岛理工大学"
+      ],
+      "tier_C_note": "全国159所开设院校中，除上述院校外的其余约135所普通本科院校，如长沙理工大学、苏州科技大学、南华大学、安徽建筑大学、沈阳建筑大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.811424",
+    "updated_at": "2026-05-11T11:08:31.394028",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖北经济学院法商学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 3.2,
+      "location_advantage": 3.8,
+      "globalization": 2.8,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.4
+    },
+    "weighted_score": 2.99,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 495,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 5100,
+      "top_destinations": [],
+      "top_employers": [
+        "运营",
+        "财务",
+        "供应链岗位"
+      ]
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [
+        "平安银行信用卡中心以及大量的金融科技"
+      ],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "湖北经济学院法商学院（以下简称“法商学院”）是经教育部批准设立的一所全日制普通本科高校。其核心竞争力在于与母体学校——湖北经济学院（以下简称“湖经”）的“同址办学、资源共享”。这种模式在全国独立学院中并不多见，使得法商学院的学生能够以相对较低的分数，享受到省属重点财经大学的硬件设施、师资力量和学术氛围。\n\n从品牌定位来看，法商学院稳居湖北省内独立学院的第一梯队。在财经专业领域，其生源质量和毕业生口碑甚至优于部分偏远地区的公办本科院校。学校的专业设置紧贴市场需求，会计、金融、审计等王牌专业在湖北乃至华中地区的金融系统、会计师事务所中拥有较高的校友渗透率。\n\n然而，作为独立学院，法商学院也面临着转设（转为公办或民办普通本科）的政策压力。虽然目前转设路径尚待最终明确，但这种不确定性在一定程度上影响了部分高分考生的决策。此外，财经类专业的高度集中既是优势也是风险，在金融行业结构性调整的背景下，单一的学科结构可能面临就业市场的波动。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "财经底色",
+        "考证大户",
+        "藏龙岛居民",
+        "本部资源",
+        "务实就业",
+        "法商结合",
+        "金融港后花园"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

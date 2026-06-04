@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.944938",
+    "updated_at": "2026-04-25T10:09:31.350254",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080711T_医学信息工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "医疗+IT交叉赛道，政策风口明确、需求旺盛，但学科成熟度低、院校参差大，选校比选专业更重要。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 3.2,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.63
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业的核心在于\"医疗领域知识+信息技术\"的复合能力——理解医疗业务流程、处理医疗数据标准（如HL7、DICOM）、遵守医疗合规要求，这些领域知识和跨学科整合能力是AI短期内难以替代的。但纯编码类工作存在被AI辅助工具压缩的风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "医疗+IT交叉赛道，政策风口明确、需求旺盛，但学科成熟度低、院校参差大，选校比选专业更重要。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "四川大学（华西医学中心+综合工科实力，A+评级）",
+        "浙江大学（生物医学工程国家重点学科，交叉资源极强）"
+      ],
+      "tier_A": [
+        "杭州电子科技大学（A+评级，智能医疗装备特色）",
+        "上海理工大学（校友会排名研究型第1）",
+        "南京信息工程大学",
+        "重庆邮电大学",
+        "广州中医药大学",
+        "南京中医药大学"
+      ],
+      "tier_B": [
+        "浙江中医药大学",
+        "重庆医科大学",
+        "成都中医药大学",
+        "天津中医药大学",
+        "湖北中医药大学",
+        "湖南中医药大学",
+        "哈尔滨医科大学",
+        "大连医科大学"
+      ],
+      "tier_C_note": "沈阳医学院、吉林医药学院、新疆理工学院、辽宁何氏医学院、大连东软信息学院、新疆科技学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

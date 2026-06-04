@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.214754",
+    "updated_at": "2026-04-25T15:33:30.702332",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081203T_导航工程",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "北斗时代的\"黄金赛道\"，技术壁垒高、政策红利足，但院校极少、数理门槛硬，能考上武大的才算真正入门。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.0
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "导航工程的核心技能——传感器融合、惯性导航算法、多源组合定位系统设计——涉及物理世界建模与硬件交互，AI 难以完全替代。但部分中间层算法开发（如路径规划、标定）正被端到端 AI 模型压缩，存在结构性调整风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "北斗时代的\"黄金赛道\"，技术壁垒高、政策红利足，但院校极少、数理门槛硬，能考上武大的才算真正入门。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "武汉大学",
+        "国防科技大学",
+        "战略支援部队信息工程大学"
+      ],
+      "tier_A": [
+        "武汉理工大学",
+        "北京建筑大学"
+      ],
+      "tier_B": [
+        "安徽理工大学",
+        "桂林电子科技大学",
+        "中国民用航空飞行学院"
+      ],
+      "tier_C_note": "北华航天工业学院、滁州学院、湖南工业大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

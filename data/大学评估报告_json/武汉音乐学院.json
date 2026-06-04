@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.626413",
+    "updated_at": "2026-05-09T16:03:09.124686",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "武汉音乐学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 4.16,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "四川音乐学院",
+        "similarity": "同类院校",
+        "key_difference": "川音规模更大，流行音乐与商业化程度更高；武音则在学术研究、传统音乐理论及古典音乐教学上显得更加精进和纯粹。"
+      },
+      {
+        "name": "西安音乐学院",
+        "similarity": "同类院校",
+        "key_difference": "两校均有深厚的地域文化底蕴（秦乐 vs 楚乐），但武音得益于武汉更强的经济实力和更活跃的文化市场，毕业生的就业天花板相对更高。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "武汉音乐学院是一所**“学术底蕴深厚、地域特色鲜明、专业实力顶尖”**的艺术殿堂。它不仅是培养演奏家、歌唱家的摇篮，更是中国传统音乐文化在现代语境下焕发新生的重要基地。\n\n*   **核心定位**：中部地区艺术教育的领航者，中国音乐理论研究的高地。\n*   **王牌优势**：音乐学理论、民族声乐、编钟乐学。\n*   **文化特质**：在极度专注的练琴文化中，融入了荆楚文化的灵动与大气。\n*   **潜在风险**：老校区硬件改善速度需加快，学生在面对艺术市场波动时的抗风险能力需通过跨学科教育进一步增强。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "四川音乐学院",
+          "similarity": "同类院校",
+          "key_difference": "川音规模更大，流行音乐与商业化程度更高；武音则在学术研究、传统音乐理论及古典音乐教学上显得更加精进和纯粹。"
+        },
+        {
+          "name": "西安音乐学院",
+          "similarity": "同类院校",
+          "key_difference": "两校均有深厚的地域文化底蕴（秦乐 vs 楚乐），但武音得益于武汉更强的经济实力和更活跃的文化市场，毕业生的就业天花板相对更高。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

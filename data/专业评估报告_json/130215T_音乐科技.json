@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.139399",
+    "updated_at": "2026-04-28T12:15:54.790257",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130215T_音乐科技",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "技术与艺术的十字路口，AI 正在重塑行业，拥抱变革者有机，固守传统者出局。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.12
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 已深度渗透音乐创作全链条。2025 年 Suno、Udio 等工具使\"一键生成\"成为标配，超过 50% 的专业制作人已在私下使用 AI 工具辅助创作（Sonarworks 调研）。未来五年 AI 驱动的音乐内容预计占整体市场份额 30% 以上。纯音频制作、编曲、混音等执行层岗位面临替代风险。但需要\"技术 + 艺术 + 编程\"复合能力的岗位（如音频算法工程师、交互式声音设计师）抗风险性更强。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "技术与艺术的十字路口，AI 正在重塑行业，拥抱变革者有机，固守传统者出局。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央音乐学院",
+        "上海音乐学院"
+      ],
+      "tier_A": [
+        "中国音乐学院",
+        "中国传媒大学",
+        "北京电影学院",
+        "星海音乐学院"
+      ],
+      "tier_B": [
+        "浙江音乐学院",
+        "武汉音乐学院",
+        "四川音乐学院",
+        "南京艺术学院",
+        "上海戏剧学院"
+      ],
+      "tier_C_note": "各地区综合类大学音乐系开设的录音艺术/音乐科技方向，如首都师范大学、福建师范大学、沈阳音乐学院、天津音乐学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

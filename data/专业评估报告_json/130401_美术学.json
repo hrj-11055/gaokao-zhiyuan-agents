@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.112659",
+    "updated_at": "2026-04-28T12:47:55.015887",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130401",
+    "name": "美术学",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "\"手艺人的浪漫，靠画笔吃饭但饭碗不稳，名校+读研是两条腿，缺一条都走得艰难。\"",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.4,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.88
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI绘画工具（Midjourney、DALL·E、Stable Diffusion）已能生成高质量图像，商业插画、原画设计等\"执行型\"美术岗位被替代风险高。但策展、美术批评、艺术教育、原创纯艺术等需要深层审美判断和文化理解的领域尚有护城河。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"手艺人的浪漫，靠画笔吃饭但饭碗不稳，名校+读研是两条腿，缺一条都走得艰难。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央美术学院",
+        "中国美术学院",
+        "清华大学（美术学院）"
+      ],
+      "tier_A": [
+        "南京艺术学院",
+        "西安美术学院",
+        "四川美术学院",
+        "广州美术学院",
+        "天津美术学院",
+        "鲁迅美术学院",
+        "湖北美术学院"
+      ],
+      "tier_B": [
+        "上海大学（上海美术学院）",
+        "首都师范大学",
+        "南京师范大学",
+        "华东师范大学",
+        "西南大学",
+        "东北师范大学",
+        "陕西师范大学",
+        "山东艺术学院",
+        "广西艺术学院",
+        "云南艺术学院"
+      ],
+      "tier_C_note": "各省属综合性大学的美术学专业（如湖南师范大学、福建师范大学、浙江师范大学等设有美术学院的省属高校），以及地方美术学院的美术学专业",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

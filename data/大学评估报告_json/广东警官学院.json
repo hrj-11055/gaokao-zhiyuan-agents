@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.571126",
+    "updated_at": "2026-05-01T01:50:20.041325",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广东警官学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "211",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.57,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "海珠",
+      "region": "粤港澳大湾区",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "广东警官学院（以下简称“广警”）作为广东省属唯一的公安本科院校，其核心价值并非体现在传统的学术排名或科研产出上，而在于其极高的“行业垄断性”与“就业确定性”。在当前宏观经济环境波动、高校毕业生就业压力激增的大背景下，广警的公安类专业凭借“公安联考”这一政策红利，成为了广东省内性价比极高的职业入场券。\n\n从身份定位来看，广警是广东省公安机关后备人才培养的绝对主阵地。学校的专业设置、教学大纲乃至日常管理，均高度服从于公安实战需求。这种“订单式”的培养模式，使得学生在校期间便完成了从学生到警察的初步职业化转变。\n\n从王牌优势分析，广警的公安联考通过率长期保持在 90% 以上，这意味着只要学生能够顺利毕业并通过体检、政审及联考，几乎可以稳拿公务员编制。在广东省内，广警校友遍布各级公安机关，这种庞大的行业校友网络为毕业生的职业发展提供了无形的支撑。\n\n然而，风险与局限性同样明显。非公安类专业（如法学、计算机科学与技术等非公安方向）无法参加公安联考，其就业竞争优势与普通双非院校相比并无显著差异，甚至因准军事化管理导致学生在实习、考研准备上受到一定限制。此外，学校目前缺乏硕士学位授权点，对于有志于高端学术研究或跨行业深造的学生而言，广警并非理想的跳板。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "绝对忠诚",
+        "纪律高于一切",
+        "体能怪兽",
+        "编制信仰",
+        "广东本土",
+        "实战派",
+        "蓝色青春"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.164129",
+    "updated_at": "2026-04-23T01:06:40.756378",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050104",
+    "name": "中国少数民族语言文学",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极度小众的\"文化守护者\"赛道，政策护航但市场极窄，强地域绑定，非热爱民族文化的慎入。",
+    "radar": {
+      "market_return": 2.4,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.6,
+      "career_path": 2.5,
+      "education_resources": 3.2,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.7
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6200元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "少数民族语言语料库稀缺，AI难以覆盖55个民族语言体系；但基础翻译、文本数字化录入等任务已被AI逐步替代。核心的人类学田野调查、文化阐释、跨文化沟通能力不易被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度小众的\"文化守护者\"赛道，政策护航但市场极窄，强地域绑定，非热爱民族文化的慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央民族大学（A+，985/双一流，学科鼻祖）",
+        "内蒙古大学（A+，211/双一流）"
+      ],
+      "tier_A": [
+        "新疆大学（A，211/双一流）",
+        "西南民族大学（A）",
+        "西北民族大学（B+）",
+        "广西民族大学（B+）",
+        "延边大学（B+，211）",
+        "西藏大学（B+，211/双一流）",
+        "云南民族大学（B+）"
+      ],
+      "tier_B": [
+        "青海师范大学",
+        "内蒙古师范大学",
+        "新疆师范大学",
+        "黑龙江大学",
+        "青海民族大学",
+        "贵州民族大学",
+        "喀什大学",
+        "西昌学院",
+        "石河子大学（211）"
+      ],
+      "tier_C_note": "塔里木大学、伊犁师范大学、昌吉学院、赤峰学院、甘肃民族师范学院、河套学院、楚雄师范学院、阿坝师范学院、四川民族学院、红河学院、新疆理工学院、呼和浩特民族学院、贵阳人文科技学院（民办）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

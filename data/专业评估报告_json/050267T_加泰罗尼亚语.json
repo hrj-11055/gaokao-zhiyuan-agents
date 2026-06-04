@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.198284",
+    "updated_at": "2026-04-24T09:10:04.051178",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "050267T_加泰罗尼亚语",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "极度冷门的\"超小语种\"，全中国每年毕业生屈指可数，岗位稀如钻石，若无赴西班牙深造或外交系统直通，慎选。",
+    "radar": {
+      "market_return": 2.0,
+      "industry_outlook": 2.0,
+      "future_adaptability": 1.5,
+      "career_path": 2.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.03
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "AI 翻译（尤其是 DeepL、Google Translate）对小语种的覆盖持续扩展，加泰罗尼亚语已有较成熟的机器翻译支持。基础翻译、文本本地化岗位面临直接替代，仅高端同传、文化深度解读和外交谈判中的\"人际信任\"维度不易被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度冷门的\"超小语种\"，全中国每年毕业生屈指可数，岗位稀如钻石，若无赴西班牙深造或外交系统直通，慎选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学"
+      ],
+      "tier_A": [
+        "上海外国语大学"
+      ],
+      "tier_B": [
+        "无独立开设院校（部分高校在西班牙语专业下作为第二外语/选修开设）"
+      ],
+      "tier_C_note": "无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

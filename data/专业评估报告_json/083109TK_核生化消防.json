@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.185105",
+    "updated_at": "2026-04-26T01:19:24.532439",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083109TK_核生化消防",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "冷门但不可替代的\"特种安全尖兵\"，就业面极窄但供需紧平衡，适合使命感强、抗压能力突出的考生，非体制情怀者慎入。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 4.8
+    },
+    "weighted_score": 3.39
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "核辐射现场应急处置、生化危险源检测与操作、灾害现场指挥决策等核心技能依赖实地操作经验和临场判断，AI 无法替代高危物理场景中的人类行动。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "冷门但不可替代的\"特种安全尖兵\"，就业面极窄但供需紧平衡，适合使命感强、抗压能力突出的考生，非体制情怀者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民警察大学（全国唯一以核生化消防为特色王牌专业的高校，2002 年首创，校友会排名连续多年全国第 1）"
+      ],
+      "tier_A": [
+        "中国消防救援学院（应急管理部直属，消防类相关专业实力强，核生化方向有交叉培养）"
+      ],
+      "tier_B": [
+        "暂无其他独立开设该专业的本科院校。以下院校在安全工程/消防工程等相近方向有优势：中国科学技术大学（安全科学与工程）",
+        "北京理工大学（安全工程）",
+        "中南大学（消防工程方向）"
+      ],
+      "tier_C_note": "暂无。该专业全国开设院校极少，目前不具有 C 档院校群体。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

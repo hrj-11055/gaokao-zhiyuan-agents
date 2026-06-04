@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.156932",
+    "updated_at": "2026-04-26T00:59:30.598410",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083103TK_交通管理工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "公安系统的\"铁饭碗直通车\"，入警率超90%，但职业天花板低、路径窄，适合对体制内从警有坚定信念者。",
+    "radar": {
+      "market_return": 3.9,
+      "industry_outlook": 3.6,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.41
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "交通执法涉及行政权力行使、现场复杂判断、人际沟通与冲突处置，这些能力难以被 AI 完全替代。但交通监控、违法行为识别等技术环节已逐步被 AI 取代部分人力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "公安系统的\"铁饭碗直通车\"，入警率超90%，但职业天花板低、路径窄，适合对体制内从警有坚定信念者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民公安大学（唯一双一流",
+        "国家级特色专业",
+        "硕博点齐全）"
+      ],
+      "tier_A": [
+        "四川警察学院",
+        "浙江警察学院",
+        "广东警官学院",
+        "江苏警官学院",
+        "江西警察学院"
+      ],
+      "tier_B": [
+        "湖南警察学院",
+        "吉林警察学院",
+        "云南警官学院",
+        "福建警察学院",
+        "河南警察学院",
+        "北京警察学院（北京市重点建设一流专业）"
+      ],
+      "tier_C_note": "湖北警官学院、广西警察学院、山西警察学院、辽宁警察学院、贵州警察学院、山东警察学院、重庆警察学院、陕西警察学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

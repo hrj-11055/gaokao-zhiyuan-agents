@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.111426",
+    "updated_at": "2026-04-25T11:29:20.959447",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080902",
+    "name": "软件工程",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "数字时代的\"基建铁军\"，起薪高、路径广，但AI冲击下，只会写CRUD的码农即将被淘汰，唯有持续进化的工程师才能吃香。",
+    "radar": {
+      "market_return": 4.5,
+      "industry_outlook": 4.4,
+      "future_adaptability": 3.8,
+      "career_path": 4.2,
+      "education_resources": 4.3,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.26
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7092元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI代码生成工具（GitHub Copilot、Cursor等）已可替代大量重复性编码工作，初级程序员替代风险极高（部分报告称≥85%）；但系统架构设计、复杂业务逻辑抽象、安全审计、跨系统集成等核心能力仍难被AI替代。具备AI协作能力和垂直领域知识的工程师反将受益。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "数字时代的\"基建铁军\"，起薪高、路径广，但AI冲击下，只会写CRUD的码农即将被淘汰，唯有持续进化的工程师才能吃香。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京航空航天大学",
+        "浙江大学",
+        "国防科技大学",
+        "北京大学",
+        "清华大学"
+      ],
+      "tier_A": [
+        "华东师范大学",
+        "南京大学",
+        "武汉大学",
+        "上海交通大学",
+        "哈尔滨工业大学",
+        "中国科学技术大学",
+        "同济大学",
+        "四川大学",
+        "天津大学",
+        "东北大学"
+      ],
+      "tier_B": [
+        "北京邮电大学",
+        "电子科技大学",
+        "大连理工大学",
+        "北京理工大学",
+        "复旦大学",
+        "东南大学",
+        "华南理工大学",
+        "西安电子科技大学",
+        "西北工业大学",
+        "苏州大学",
+        "中山大学",
+        "山东大学"
+      ],
+      "tier_C_note": "全国581所开设院校中，除上述院校外的其余普通本科院校，如各省属理工大学、工业大学、邮电大学等。软件工程作为实践性极强的专业，在C档院校中只要学校重视实践项目和校企合作，毕业生仍有良好的就业前景。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

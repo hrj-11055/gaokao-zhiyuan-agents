@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.024123",
+    "updated_at": "2026-04-25T03:55:41.781261",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080204",
+    "name": "机械电子工程",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "\"万金油工科，智能制造时代的刚需选手——薪资中等偏上，就业面宽但深度靠个人，吃的是'软硬兼施'的真功夫。\"",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.97
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "",
+      "starting_salary": "5800–6900元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "机械电子工程涉及大量物理世界的感知、执行与调试工作——机械结构设计、传感器集成、产线调试均需人与物理环境的深度交互，这类\"软硬结合\"的实体技能是当前AI最难替代的领域。相反，AI发展反而需要更多机电人才来部署和维护智能设备。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"万金油工科，智能制造时代的刚需选手——薪资中等偏上，就业面宽但深度靠个人，吃的是'软硬兼施'的真功夫。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工业大学",
+        "北京理工大学",
+        "清华大学（机械工程A+）",
+        "上海交通大学（机械工程A+）",
+        "华中科技大学（机械工程A+）"
+      ],
+      "tier_A": [
+        "重庆大学",
+        "西北工业大学",
+        "同济大学",
+        "华南理工大学",
+        "广东工业大学",
+        "上海大学",
+        "北京交通大学",
+        "江苏大学",
+        "西安交通大学",
+        "浙江大学"
+      ],
+      "tier_B": [
+        "浙江理工大学",
+        "河北工业大学",
+        "长安大学",
+        "太原理工大学",
+        "武汉科技大学",
+        "南京工程学院",
+        "广东工业大学（地方强校）",
+        "桂林电子科技大学",
+        "中北大学"
+      ],
+      "tier_C_note": "其余293所开设院校中未列入上述三档的普通本科院校。对于中等分数段考生，地方工科院校（如河南科技大学、太原科技大学、兰州理工大学等）的机电专业仍具有较好的就业保障。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

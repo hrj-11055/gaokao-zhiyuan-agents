@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.702430",
+    "updated_at": "2026-05-08T09:43:21.979979",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京农业大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.7,
+      "graduate_value": 4.2,
+      "location_advantage": 4.3,
+      "globalization": 3.9,
+      "student_empowerment": 3.8,
+      "brand_asset": 4.2
+    },
+    "weighted_score": 4.32,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南京农业大学（NAU）不仅是一所典型的“双一流”与“211”工程重点建设高校，更是中国现代农业高等教育的摇篮之一。其学术底蕴深厚，在作物学、植物保护、农业资源与环境等领域拥有绝对的全国统治力。随着滨江校区的正式启用，南农彻底告别了长期以来制约其发展的硬件短板，实现了从“卫岗时代”向“滨江时代”的跨越式发展。\n\n从人才培养逻辑看，南农是一所极度务实的学校。它在生命科学的基础研究与农业应用的成果转化之间找到了精准的平衡点。对于学生而言，南农提供的不仅是名校的头衔，更是一套完整的、深入产业链底层的知识体系。在当前国家强调“粮食安全”与“乡村振兴”的大背景下，南农的学科溢价正在显著提升，其毕业生在选调生市场和生物科技产业中的竞争力不容小觑。\n\n然而，南农也面临着传统农科院校的共同挑战：如何在“生化环材”的社会偏见中重塑学科吸引力，以及如何在激烈的长三角人才争夺战中，保持对顶尖生源的持续号召力。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

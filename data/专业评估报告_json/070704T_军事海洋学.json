@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.975347",
+    "updated_at": "2026-04-25T01:09:19.035744",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070704T_军事海洋学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国防刚需的\"冷门硬骨头\"，就业方向极度明确但面极窄，适合铁了心为海军建设献身的少数人，想留退路者慎入。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.34
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 正在被整合进海洋科学（如深度学习海浪预报大模型、AI 海洋遥感），成为研究工具而非替代手段。军事海洋学的核心——海洋战场环境评估、战略决策支持、军事行动保障——涉及复杂的军事判断和国家安全决策，AI 无法独立完成。但常规数据处理和数值模拟工作正被 AI 辅助加速。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国防刚需的\"冷门硬骨头\"，就业方向极度明确但面极窄，适合铁了心为海军建设献身的少数人，想留退路者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "国防科技大学",
+        "中国海洋大学"
+      ],
+      "tier_A": [
+        "海军大连舰艇学院",
+        "海军工程大学",
+        "厦门大学"
+      ],
+      "tier_B": [
+        "解放军理工大学（已并入国防科技大学）",
+        "同济大学（海洋科学方向强）",
+        "中山大学"
+      ],
+      "tier_C_note": "浙江海洋大学、广东海洋大学、上海海洋大学、大连海洋大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

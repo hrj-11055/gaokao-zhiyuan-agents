@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.975749",
+    "updated_at": "2026-04-25T06:29:18.174819",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080507TK_可持续能源",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在全球能源转型的超级风口上，行业万亿级但专业极新、院校极少，属于\"赛道火爆、门票稀缺\"的高赌注型选择。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.8,
+      "future_adaptability": 4.0,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.85
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业本身就是\"AI+能源\"交叉定位，核心技能包括智能电网优化、储能系统算法、电力市场交易模型等，这些恰恰是运用AI而非被AI替代的领域。传统能源工程中的标准化设计、报表分析可能被AI替代，但系统级集成决策和创新研发高度依赖人类专家。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在全球能源转型的超级风口上，行业万亿级但专业极新、院校极少，属于\"赛道火爆、门票稀缺\"的高赌注型选择。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海交通大学（溥渊未来技术学院，本硕博贯通，\"AI+可持续能源\"核心定位）"
+      ],
+      "tier_A": [
+        "福州大学（211/双一流，全国第二个获批，材料学院牵头，碳中和方向）"
+      ],
+      "tier_B": [
+        "河南师范大学（如有招生，偏师范/基础研究特色 ）"
+      ],
+      "tier_C_note": "暂无更多开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

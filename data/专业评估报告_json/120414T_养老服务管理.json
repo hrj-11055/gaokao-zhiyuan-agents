@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.184321",
+    "updated_at": "2026-04-27T13:17:21.498320",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120414T_养老服务管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "银发浪潮下的\"确定性王牌\"——就业率100%、缺口550万，但起薪偏低、专业太新缺乏历史验证，适合有情怀且耐得住寂寞的人。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.44
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~100%",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "养老服务的核心是人际互动、情感关怀和身体照护，这些是AI难以替代的\"高接触\"场景。AI更多用于辅助（如智慧健康监测、数据管理），而非取代人本服务。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "银发浪潮下的\"确定性王牌\"——就业率100%、缺口550万，但起薪偏低、专业太新缺乏历史验证，适合有情怀且耐得住寂寞的人。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "安徽医科大学（医学+管理双轮驱动，软科2025排名第1）",
+        "南京中医药大学（中医康养特色，教育部专题报道）"
+      ],
+      "tier_A": [
+        "上海工程技术大学（全国首批开设，产业资源丰富，就业100%）",
+        "山东女子学院（全国首批开设，应用型5★A++）",
+        "广西医科大学（校友会2024研究型排名第1）"
+      ],
+      "tier_B": [
+        "沈阳医学院",
+        "桂林医学院",
+        "吉林财经大学",
+        "中华女子学院",
+        "南昌医学院",
+        "西安文理学院"
+      ],
+      "tier_C_note": "铜陵学院、上海建桥学院、郑州财经学院、烟台南山学院等新开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

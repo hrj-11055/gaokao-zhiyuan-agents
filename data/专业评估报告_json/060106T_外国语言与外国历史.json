@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.137082",
+    "updated_at": "2026-04-24T22:58:11.951290",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "060106T_外国语言与外国历史",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "极小众的跨学科\"双刃剑\"，语言+历史双修赋予稀缺的跨文化洞察力，但就业面窄、无明确对口岗位，极度依赖名校深造。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 2.0,
+      "future_adaptability": 2.5,
+      "career_path": 3.5,
+      "education_resources": 4.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 2.63
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "翻译、基础文献整理、语言教学等核心技能正是 AI 翻译和大语言模型的直接冲击对象。麦肯锡预测到 2030 年全球约 30% 的外语相关工作将被 AI 部分或完全替代（来源：麦肯锡全球研究院）。但\"跨文化深度理解\"和\"历史叙事构建\"能力仍有一定护城河。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极小众的跨学科\"双刃剑\"，语言+历史双修赋予稀缺的跨文化洞察力，但就业面窄、无明确对口岗位，极度依赖名校深造。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学（元培学院/外国语学院/历史系联合培养，全国唯一完整体系）"
+      ],
+      "tier_A": [
+        "北京外国语大学（语言资源丰富，外事方向优势突出）"
+      ],
+      "tier_B": [
+        "上海科技大学（小而精，依托上海区位优势）"
+      ],
+      "tier_C_note": "河北师范大学、聊城大学（地方师范院校，面向基础教育方向）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.481812",
+    "updated_at": "2026-05-09T19:39:35.548128",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "成都大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "最适合希望留在成都发展、看重校园生活品质、分数在省属重点线附近波动且追求高性价比硬件环境的务实型考生。",
+    "radar": {
+      "academic_capital": 2.6,
+      "graduate_value": 3.1,
+      "location_advantage": 4.5,
+      "globalization": 3.2,
+      "student_empowerment": 3.3,
+      "brand_asset": 3.4
+    },
+    "weighted_score": 3.22,
+    "one_sentence_recommend": "最适合希望留在成都发展、看重校园生活品质、分数在省属重点线附近波动且追求高性价比硬件环境的务实型考生。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：成都市政府倾力打造的“城市大学”旗舰。与传统的省属高校不同，成都大学的资源投入更多来自于成都市本级财政，这使其在基础设施建设、校城融合方面具有极高的行政效率。它不仅是一所大学，更是成都展示城市形象的窗口（大运村所在地）。\n*   **Ace（王牌优势）**：药学（依托四川抗菌素工业研究所）是其学术灵魂。此外，大运会留下的“遗产”——包括超一流的体育场馆、现代化的宿舍群以及高度数字化的校园管理系统，构成了其在省属高校中降维打击的硬件优势。\n*   **Vibe（文化特质）**：务实、开放、充满“成都式”生活气息。这里的学生较少有老牌名校的沉重包袱，更多表现出对本地生活的融入感和对就业市场的灵敏度。校风相对自由，鼓励学生参与社会实践。\n*   **Risk（潜在风险）**：历史遗留的治理结构争议（2020 年事件）虽已平息，但对学校中长期声誉的微妙影响仍需观察。此外，学科建设存在“大而不强”的现象，部分新设专业在师资积淀上略显单薄。",
+      "one_sentence_recommend": "最适合希望留在成都发展、看重校园生活品质、分数在省属重点线附近波动且追求高性价比硬件环境的务实型考生。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

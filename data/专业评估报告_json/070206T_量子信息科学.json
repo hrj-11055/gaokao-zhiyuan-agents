@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.201731",
+    "updated_at": "2026-04-24T23:51:47.735077",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070206T_量子信息科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "量子信息科学：站上国家战略风口的\"硬核前沿\"，高门槛高天花板，但行业仍在襁褓期，非名校硕博慎入。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.76
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "9,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "量子信息科学处理的是量子力学底层原理（叠加态、纠缠、退相干）和量子算法设计，这些核心能力依赖深刻的物理直觉和数学建模能力，是当前 AI 完全无法替代的领域。相反，量子计算本身是下一代计算范式，可能反过来颠覆经典 AI 算力架构。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "量子信息科学：站上国家战略风口的\"硬核前沿\"，高门槛高天花板，但行业仍在襁褓期，非名校硕博慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国科学技术大学"
+      ],
+      "tier_A": [
+        "北京理工大学",
+        "安徽大学"
+      ],
+      "tier_B": [
+        "福州大学",
+        "太原理工大学",
+        "西南大学",
+        "湖北大学",
+        "河南大学"
+      ],
+      "tier_C_note": "郑州轻工业大学、长江大学等其余开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

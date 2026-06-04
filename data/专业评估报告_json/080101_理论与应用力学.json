@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.904025",
+    "updated_at": "2026-04-25T03:38:37.338304",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080101",
+    "name": "理论与应用力学",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "万金油中的\"理工双修\"——航空航天与高端制造的底层引擎，但本科不考研几乎等于白读，对数学天赋要求极高。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.8
+    },
+    "weighted_score": 3.38
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "力学建模、偏微分方程求解、复杂结构优化设计等核心能力依赖深度物理直觉与跨学科综合分析，AI目前可辅助计算但难以替代\"建模—验证—迭代\"的工程判断力。CAE仿真工程师的人机协同模式反而是加分项。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "万金油中的\"理工双修\"——航空航天与高端制造的底层引擎，但本科不考研几乎等于白读，对数学天赋要求极高。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "清华大学"
+      ],
+      "tier_A": [
+        "哈尔滨工业大学",
+        "中国科学技术大学",
+        "西安交通大学",
+        "北京航空航天大学",
+        "大连理工大学"
+      ],
+      "tier_B": [
+        "兰州大学",
+        "南方科技大学",
+        "上海大学",
+        "中山大学",
+        "复旦大学",
+        "天津大学"
+      ],
+      "tier_C_note": "其他开设理论与应用力学或工程力学的普通本科院校（如重庆科技大学等）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

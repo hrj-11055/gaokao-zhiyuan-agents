@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.938410",
+    "updated_at": "2026-04-28T00:39:35.530149",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120108T_大数据管理与应用",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在数据与管理的交叉路口——技术底子不如计科硬，管理含量不如 MBA 深，但\"懂数据的管理者\"这一定位在数字化浪潮中确有独特价值，关键是选对学校、学精工具。",
+    "radar": {
+      "market_return": 3.6,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.2,
+      "education_resources": 3.0,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.77
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础数据处理、报表生成、简单统计分析正被 AI 工具（如 ChatGPT、Copilot）快速替代。但数据治理架构设计、业务问题抽象建模、跨部门数据战略规划等高阶能力仍依赖人类判断。抗风险程度取决于能力层次——越靠近\"用数据驱动业务决策\"越安全，越靠近\"写 SQL 拉报表\"越危险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在数据与管理的交叉路口——技术底子不如计科硬，管理含量不如 MBA 深，但\"懂数据的管理者\"这一定位在数字化浪潮中确有独特价值，关键是选对学校、学精工具。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "北京大学",
+        "西安交通大学",
+        "哈尔滨工业大学",
+        "中国人民大学"
+      ],
+      "tier_A": [
+        "同济大学",
+        "华中科技大学",
+        "复旦大学",
+        "上海交通大学",
+        "南京大学",
+        "武汉大学",
+        "浙江大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "西安电子科技大学",
+        "北京交通大学",
+        "中南大学",
+        "大连理工大学",
+        "电子科技大学",
+        "西南财经大学",
+        "华东师范大学",
+        "上海财经大学"
+      ],
+      "tier_C_note": "各省属重点综合性大学及理工类院校，如浙江工业大学、杭州电子科技大学、重庆邮电大学、南京信息工程大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.170516",
+    "updated_at": "2026-04-26T04:11:14.193193",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090303T_蜂学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国仅两所高校开设的\"蜜蜂王国\"专业，壁垒极高、赛道极窄，入行容易出头难，真爱昆虫和农业者才适合。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.0,
+      "future_adaptability": 3.0,
+      "career_path": 2.3,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.82
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "蜜蜂养殖涉及大量户外实践操作、生物行为观察和现场判断，AI 难以替代蜂群管理的实地经验和动手技能。但蜂产品营销、数据分析等环节存在 AI 替代可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅两所高校开设的\"蜜蜂王国\"专业，壁垒极高、赛道极窄，入行容易出头难，真爱昆虫和农业者才适合。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "福建农林大学"
+      ],
+      "tier_A": [
+        "云南农业大学"
+      ],
+      "tier_B": [
+        "（暂无其他开设蜂学本科的院校）"
+      ],
+      "tier_C_note": "（暂无）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

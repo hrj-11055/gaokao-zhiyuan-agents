@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.215200",
+    "updated_at": "2026-04-26T03:51:52.360139",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090205T_土地科学与技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策刚需驱动的\"冷门小众\"，绑定耕地保护与国土空间规划国家战略，就业稳定但薪资天花板低，名校+证书才是王道。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "土地调查、实地测绘、确权登记等涉及大量外业实地工作和复杂政策判断，AI难以替代；但GIS数据处理、遥感影像解译等环节正被AI加速渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策刚需驱动的\"冷门小众\"，绑定耕地保护与国土空间规划国家战略，就业稳定但薪资天花板低，名校+证书才是王道。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学（985，A+，土地科学领域绝对龙头，设有土地科学与技术学院）"
+      ],
+      "tier_A": [
+        "西南大学（211，A+）",
+        "西北农林科技大学（985，B+）"
+      ],
+      "tier_B": [
+        "四川农业大学（211，B）",
+        "青岛农业大学（B）",
+        "湖南农业大学（B）"
+      ],
+      "tier_C_note": "内蒙古农业大学、仲恺农业工程学院、新疆农业大学、韶关学院、宜春学院、绵阳师范学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

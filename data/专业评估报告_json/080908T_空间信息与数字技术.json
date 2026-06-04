@@ -1,0 +1,93 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.011330",
+    "updated_at": "2026-04-25T11:52:27.600813",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080908T_空间信息与数字技术",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "站在北斗和智慧城市风口上的冷门工科，技能壁垒高、赛道窄但竞争小，选对学校就赢了八成。",
+    "radar": {
+      "market_return": 3.9,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.0
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "核心技能（GIS开发、遥感图像解译、空间数据建模、卫星通信系统设计）需要跨领域专业知识和场景理解能力，AI可辅助遥感影像分类和基础制图，但无法替代空间决策、行业应用场景理解和复杂系统设计。搜狐行业分析指出，用人单位\"非常欢迎身兼多学科优势的跨界人才\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在北斗和智慧城市风口上的冷门工科，技能壁垒高、赛道窄但竞争小，选对学校就赢了八成。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西安电子科技大学",
+        "武汉大学"
+      ],
+      "tier_A": [
+        "中国地质大学（武汉）",
+        "电子科技大学",
+        "北京邮电大学",
+        "吉林大学"
+      ],
+      "tier_B": [
+        "上海海洋大学",
+        "浙江工业大学",
+        "重庆邮电大学",
+        "成都理工大学",
+        "河南工业大学",
+        "云南师范大学"
+      ],
+      "tier_C_note": "其他开设此专业的院校（共约11所，含部分新建专业院校如山东航空学院等）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

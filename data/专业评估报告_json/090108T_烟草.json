@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.025494",
+    "updated_at": "2026-04-26T03:00:53.123016",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090108T_烟草",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家垄断行业的\"窄门金钥匙\"，入门极难但一旦进入即享高稳定高福利，路径单一却旱涝保收。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.41
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "烟草种植的田间实践、卷烟工艺调香、烟叶质量感官评定等核心技能高度依赖经验积累和物理操作，短期内难以被 AI 完全替代。但数据分析、市场预测、供应链优化等环节已有 AI 渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家垄断行业的\"窄门金钥匙\"，入门极难但一旦进入即享高稳定高福利，路径单一却旱涝保收。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "河南农业大学",
+        "贵州大学"
+      ],
+      "tier_A": [
+        "云南农业大学",
+        "湖南农业大学",
+        "郑州轻工业大学"
+      ],
+      "tier_B": [
+        "山东农业大学",
+        "青岛农业大学",
+        "西昌学院"
+      ],
+      "tier_C_note": "四川农业大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

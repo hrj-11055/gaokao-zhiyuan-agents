@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.572196",
+    "updated_at": "2026-05-09T14:35:56.674399",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "中国消防救援学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "211",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.2,
+      "graduate_value": 4.8,
+      "location_advantage": 4.2,
+      "globalization": 2.5,
+      "student_empowerment": 1.5,
+      "brand_asset": 4.0
+    },
+    "weighted_score": 3.76,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 568,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：\n中国消防救援学院是应急管理部直属的唯一“国字号”全日制普通本科院校。其前身是具有深厚历史积淀的中国人民武装警察部队警种学院。2018 年随着国家机构改革，该校正式转隶应急管理部，成为国家综合性消防救援队伍的最高学府。它不仅是培养消防指挥员的摇篮，更是国家应急管理体系中不可或缺的智库与科研基地。\n\n**Ace（王牌优势）**：\n该校最核心的竞争力在于其“闭环式”的就业保障体系。在当前就业形势严峻的大环境下，中国消防救援学院的毕业生通过内部招录考核后，几乎 100% 进入国家综合性消防救援队伍，授予消防救援衔，拥有行政编制。这种“入学即入伍（准军事化管理）、毕业即入编”的特质，使其在提前批次招生中具有极强的吸引力。\n\n**Vibe（文化特质）**：\n校园文化呈现出鲜明的“纪律性”与“奉献感”。半军事化管理贯穿始终，从早操、内务整理到晚自习，学生的生活节奏高度统一。这种环境培养了学生极强的执行力和集体荣誉感，但也意味着个人自由度的极大稀释。\n\n**Risk（潜在风险）**：\n职业路径的单一性是其最大的潜在风险。学生在校期间接受的是高度专业化的消防与救援训练，若未来因身体原因或个人意愿选择跨行就业，其专业技能的通用性相对较窄。此外，长期处于封闭式管理环境中，学生对社会多元化竞争的适应能力可能面临挑战。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.049398",
+    "updated_at": "2026-04-21T23:39:14.124357",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "040102",
+    "name": "科学教育",
+    "category": "教育学",
+    "recommendation_level": "yellow",
+    "summary": "国家战略级\"政策风口\"专业，供需严重失衡带来确定性就业，但薪酬天花板明显，适合热爱教育与科普、不追求高薪的稳定型人才。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.8,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–5,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "科学教育的核心是实验教学、探究引导和面对面互动——这些高度依赖人类的身体在场、情境感知和即时反馈能力。AI可辅助生成教学内容和评估工具，但无法替代教师带领学生做实验、激发好奇心和处理课堂突发状况。不过，纯知识讲授型教学面临AI工具的替代压力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略级\"政策风口\"专业，供需严重失衡带来确定性就业，但薪酬天花板明显，适合热爱教育与科普、不追求高薪的稳定型人才。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "陕西师范大学（211/双一流/部属师范）",
+        "华中师范大学（211/双一流/部属师范）",
+        "华南师范大学（211/双一流）"
+      ],
+      "tier_A": [
+        "浙江师范大学（软科排名第1）",
+        "杭州师范大学",
+        "广西师范大学",
+        "重庆师范大学",
+        "上海师范大学"
+      ],
+      "tier_B": [
+        "河北师范大学",
+        "四川师范大学",
+        "湖南第一师范学院",
+        "长春师范大学",
+        "闽南师范大学",
+        "湖州师范学院",
+        "绍兴文理学院",
+        "台州学院",
+        "安庆师范大学"
+      ],
+      "tier_C_note": "琼台师范学院、桂林师范学院、洛阳师范学院、昌吉学院、新疆师范大学等约30余所普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

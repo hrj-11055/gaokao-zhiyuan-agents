@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.053180",
+    "updated_at": "2026-04-26T00:19:47.914799",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082807T_智慧建筑与建造",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "建筑行业的\"新物种\"——乘着智能建造万亿风口起飞，但全国仅 11 校开设，培养体系远未成熟，属于高风险高潜力的\"早鸟专业\"。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 2.2
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业本身就是\"AI+建筑\"的交叉方向，核心能力在于整合 BIM、IoT、AI 算法、数字孪生等工具解决建筑全生命周期问题。AI 会替代标准化绘图和计算工作，但建筑项目中的跨系统协调、现场复杂问题解决、多学科决策判断仍然高度依赖人类经验。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "建筑行业的\"新物种\"——乘着智能建造万亿风口起飞，但全国仅 11 校开设，培养体系远未成熟，属于高风险高潜力的\"早鸟专业\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "天津大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_A": [
+        "武汉大学",
+        "西安交通大学"
+      ],
+      "tier_B": [
+        "山西大学",
+        "南昌航空大学"
+      ],
+      "tier_C_note": "其余 5 所开设院校（井冈山大学等），由于该专业极新，C 档院校的具体名单和办学质量尚需持续关注",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

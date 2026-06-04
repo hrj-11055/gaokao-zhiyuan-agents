@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>方案A：引导式单任务流 — 温暖安心风格</title>
+  <style>
+    @import url('../themes/tokens.css');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: #E8E0D8;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 24px 0;
+    }
+
+    /* Phone frame */
+    .phone {
+      width: var(--phone-width);
+      height: var(--phone-height);
+      background: linear-gradient(180deg, #FFF7ED 0%, #FFFBF5 40%, #FFF7ED 100%);
+      border-radius: 40px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.18), 0 0 0 8px #1a1a1a, 0 0 0 10px #333;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Status bar mock */
+    .status-bar {
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 28px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-primary);
+      flex-shrink: 0;
+    }
+    .status-bar .notch {
+      width: 120px;
+      height: 28px;
+      background: #1a1a1a;
+      border-radius: 0 0 18px 18px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+
+    /* Scrollable content area */
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 0 20px 24px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .content::-webkit-scrollbar { display: none; }
+
+    /* ---- Greeting ---- */
+    .greeting {
+      padding-top: 8px;
+      margin-bottom: 20px;
+    }
+    .greeting-hello {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .greeting-date {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ---- Progress Stepper ---- */
+    .stepper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      padding: 0 4px;
+    }
+    .stepper-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1;
+      cursor: pointer;
+      position: relative;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .stepper-step .step-dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      border: 2px solid #E2E8F0;
+      background: #FFFFFF;
+      color: var(--text-muted);
+      position: relative;
+      z-index: 2;
+    }
+    .stepper-step.active .step-dot {
+      background: #F97316;
+      border-color: #F97316;
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(249, 115, 22, 0.35);
+    }
+    .stepper-step.completed .step-dot {
+      background: #10B981;
+      border-color: #10B981;
+      color: #FFFFFF;
+    }
+    .stepper-label {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 6px;
+      white-space: nowrap;
+      transition: color 0.3s;
+    }
+    .stepper-step.active .stepper-label {
+      color: #F97316;
+      font-weight: 700;
+    }
+    .stepper-step.completed .stepper-label {
+      color: #10B981;
+    }
+    .stepper-line {
+      flex: 1;
+      height: 2px;
+      background: #E2E8F0;
+      margin: 0 -4px 20px;
+      position: relative;
+      z-index: 1;
+      transition: background 0.3s;
+    }
+    .stepper-line.done {
+      background: #10B981;
+    }
+
+    /* ---- Step Panels ---- */
+    .step-panel {
+      display: none;
+      animation: fadeIn 0.35s ease;
+    }
+    .step-panel.visible {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---- Main Card ---- */
+    .main-card {
+      background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 50%, #FED7AA 100%);
+      border-radius: 20px;
+      padding: 28px 22px;
+      box-shadow: 0 4px 24px rgba(249, 115, 22, 0.10), 0 1px 4px rgba(0,0,0,0.04);
+      margin-bottom: 20px;
+    }
+    .main-card-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .main-card-desc {
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-secondary);
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+
+    /* Form styles */
+    .form-group {
+      margin-bottom: 14px;
+    }
+    .form-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+      display: block;
+    }
+    .form-select,
+    .form-input {
+      width: 100%;
+      height: 44px;
+      border: 1.5px solid #FDBA74;
+      border-radius: 12px;
+      padding: 0 14px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-primary);
+      background: #FFFFFF;
+      appearance: none;
+      -webkit-appearance: none;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      font-family: var(--font-body);
+    }
+    .form-select:focus,
+    .form-input:focus {
+      border-color: #F97316;
+      box-shadow: 0 0 0 3px rgba(249,115,22,0.12);
+    }
+    .form-select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2394A3B8' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      padding-right: 36px;
+    }
+
+    /* Primary button */
+    .btn-primary {
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: var(--font-body);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 16px rgba(249, 115, 22, 0.30);
+      transition: transform 0.15s, box-shadow 0.15s;
+      margin-top: 20px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .btn-primary:active {
+      transform: scale(0.97);
+      box-shadow: 0 2px 8px rgba(249, 115, 22, 0.25);
+    }
+    .btn-primary svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* ---- Step 2: Assessment Cards ---- */
+    .assessment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .assessment-card {
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border: 1.5px solid transparent;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .assessment-card:active {
+      transform: scale(0.98);
+    }
+    .assessment-card.completed {
+      border-color: #10B981;
+    }
+    .assessment-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .assessment-icon.icon-five {
+      background: #FEF3C7;
+    }
+    .assessment-icon.icon-five svg { color: #F59E0B; }
+    .assessment-icon.icon-mbti {
+      background: #DBEAFE;
+    }
+    .assessment-icon.icon-mbti svg { color: #3B82F6; }
+    .assessment-icon.icon-holland {
+      background: #FCE7F3;
+    }
+    .assessment-icon.icon-holland svg { color: #EC4899; }
+    .assessment-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .assessment-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+    .assessment-sub {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .assessment-status {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .assessment-status svg {
+      width: 22px;
+      height: 22px;
+    }
+    .check-circle {
+      color: #10B981;
+    }
+    .arrow-right {
+      color: #CBD5E1;
+    }
+
+    /* ---- Step 3: Report ---- */
+    .report-visual {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0 8px;
+    }
+    .report-icon-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #F97316 0%, #FB923C 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 28px rgba(249,115,22,0.25);
+      margin-bottom: 16px;
+    }
+    .report-icon-wrap svg {
+      width: 36px;
+      height: 36px;
+      color: #FFFFFF;
+    }
+    .report-checklist {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .report-check-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+    .report-check-item svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+    .report-check-item.done svg {
+      color: #10B981;
+    }
+    .report-check-item.done {
+      color: var(--text-primary);
+    }
+    .report-check-item.pending svg {
+      color: #CBD5E1;
+    }
+
+    /* ---- Bottom AI Entry ---- */
+    .ai-entry {
+      background: #FFFFFF;
+      border-radius: 14px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      cursor: pointer;
+      transition: transform 0.15s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .ai-entry:active {
+      transform: scale(0.98);
+    }
+    .ai-entry-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #93C5FD 0%, #60A5FA 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ai-entry-icon svg {
+      width: 18px;
+      height: 18px;
+      color: #FFFFFF;
+    }
+    .ai-entry-text {
+      flex: 1;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+    .ai-entry-text span {
+      color: #3B82F6;
+      font-weight: 700;
+    }
+    .ai-entry-arrow {
+      color: #CBD5E1;
+      flex-shrink: 0;
+    }
+    .ai-entry-arrow svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Design label */
+    .design-label {
+      position: absolute;
+      top: 56px;
+      right: 8px;
+      font-size: 10px;
+      font-weight: 600;
+      color: #F97316;
+      background: rgba(249,115,22,0.08);
+      padding: 3px 8px;
+      border-radius: 6px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+<div class="phone">
+  <div class="status-bar">
+    <span>9:41</span>
+    <div class="notch"></div>
+    <span>
+      <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:4px">
+        <rect x="0" y="5" width="3" height="7" rx="1" fill="#0F172A"/>
+        <rect x="4.5" y="3" width="3" height="9" rx="1" fill="#0F172A"/>
+        <rect x="9" y="1" width="3" height="11" rx="1" fill="#0F172A"/>
+        <rect x="13.5" y="0" width="2.5" height="12" rx="1" fill="#0F172A" opacity="0.3"/>
+      </svg>
+      <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle">
+        <rect x="0.5" y="0.5" width="19" height="11" rx="2" stroke="#0F172A" stroke-opacity="0.35"/>
+        <rect x="2" y="2" width="14" height="8" rx="1" fill="#0F172A"/>
+        <path d="M21 4v4a1.5 1.5 0 000-4z" fill="#0F172A" opacity="0.4"/>
+      </svg>
+    </span>
+  </div>
+
+  <span class="design-label">方案 A · 引导式</span>
+
+  <div class="content">
+
+    <!-- Greeting -->
+    <div class="greeting">
+      <div class="greeting-hello">你好，同学</div>
+      <div class="greeting-date">2026年6月25日 · 星期四</div>
+    </div>
+
+    <!-- Progress Stepper -->
+    <div class="stepper">
+      <div class="stepper-step active" data-step="1" onclick="switchStep(1)">
+        <div class="step-dot">1</div>
+        <div class="stepper-label">填信息</div>
+      </div>
+      <div class="stepper-line"></div>
+      <div class="stepper-step" data-step="2" onclick="switchStep(2)">
+        <div class="step-dot">2</div>
+        <div class="stepper-label">做测评</div>
+      </div>
+      <div class="stepper-line"></div>
+      <div class="stepper-step" data-step="3" onclick="switchStep(3)">
+        <div class="step-dot">3</div>
+        <div class="stepper-label">得报告</div>
+      </div>
+    </div>
+
+    <!-- Step 1: Fill Info -->
+    <div class="step-panel visible" id="step-1">
+      <div class="main-card">
+        <div class="main-card-title">先告诉我你的基本信息</div>
+        <div class="main-card-desc">只有 3 项，填完即可开始匹配适合你的专业和院校。</div>
+
+        <div class="form-group">
+          <label class="form-label">省份</label>
+          <select class="form-select">
+            <option value="" disabled selected>请选择省份</option>
+            <option>北京</option><option>上海</option><option>广东</option>
+            <option>浙江</option><option>江苏</option><option>四川</option>
+            <option>湖北</option><option>湖南</option><option>山东</option>
+            <option>河南</option><option>河北</option><option>福建</option>
+            <option>安徽</option><option>陕西</option><option>重庆</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">科类</label>
+          <select class="form-select">
+            <option value="" disabled selected>请选择科类</option>
+            <option>物理类</option>
+            <option>历史类</option>
+            <option>理科</option>
+            <option>文科</option>
+            <option>综合</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">高考分数（预估或实考）</label>
+          <input class="form-input" type="number" placeholder="例如：580" min="0" max="750">
+        </div>
+
+        <button class="btn-primary" onclick="switchStep(2)">
+          保存并开始
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 2: Assessments -->
+    <div class="step-panel" id="step-2">
+      <div class="main-card" style="background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 50%, #BFDBFE 100%);">
+        <div class="main-card-title">完成测评，了解自己</div>
+        <div class="main-card-desc">每项约 3 分钟，完成后可以更精准地推荐。</div>
+
+        <div class="assessment-list">
+          <!-- Five Rings - completed -->
+          <div class="assessment-card completed" onclick="switchStep(2)">
+            <div class="assessment-icon icon-five">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 2a10 10 0 010 20"/>
+                <path d="M12 2a10 10 0 000 20"/>
+                <path d="M2 12h20"/>
+              </svg>
+            </div>
+            <div class="assessment-info">
+              <div class="assessment-name">五环性格测评</div>
+              <div class="assessment-sub">已用时 2 分 30 秒</div>
+            </div>
+            <div class="assessment-status">
+              <svg class="check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- MBTI - not completed -->
+          <div class="assessment-card" onclick="switchStep(2)">
+            <div class="assessment-icon icon-mbti">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1"/>
+                <rect x="14" y="3" width="7" height="7" rx="1"/>
+                <rect x="3" y="14" width="7" height="7" rx="1"/>
+                <rect x="14" y="14" width="7" height="7" rx="1"/>
+              </svg>
+            </div>
+            <div class="assessment-info">
+              <div class="assessment-name">MBTI 职业性格</div>
+              <div class="assessment-sub">约 60 题 · 预计 5 分钟</div>
+            </div>
+            <div class="assessment-status">
+              <svg class="arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Holland - not completed -->
+          <div class="assessment-card" onclick="switchStep(2)">
+            <div class="assessment-icon icon-holland">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 22 20 2 20"/>
+                <line x1="12" y1="10" x2="12" y2="15"/>
+                <circle cx="12" cy="17.5" r="0.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="assessment-info">
+              <div class="assessment-name">霍兰德兴趣测评</div>
+              <div class="assessment-sub">约 48 题 · 预计 4 分钟</div>
+            </div>
+            <div class="assessment-status">
+              <svg class="arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-primary" onclick="switchStep(3)" style="background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%); box-shadow: 0 4px 16px rgba(59,130,246,0.30);">
+          全部完成，下一步
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Step 3: Generate Report -->
+    <div class="step-panel" id="step-3">
+      <div class="main-card" style="background: linear-gradient(135deg, #FFF7ED 0%, #FEF3C7 50%, #FDE68A 100%);">
+        <div class="report-visual">
+          <div class="report-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <div class="main-card-title" style="text-align:center;">一切就绪</div>
+          <div class="main-card-desc" style="text-align:center;margin-bottom:0;">基于你的信息和测评结果，为你生成专属志愿方案。</div>
+        </div>
+
+        <div class="report-checklist">
+          <div class="report-check-item done">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            基本信息 — 已填写
+          </div>
+          <div class="report-check-item done">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            测评完成 — 1/3（可继续补充）
+          </div>
+          <div class="report-check-item done">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+            志愿报告 — 准备生成
+          </div>
+        </div>
+
+        <button class="btn-primary" onclick="alert('报告生成中...')">
+          生成专属志愿报告
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom AI Entry -->
+    <div class="ai-entry">
+      <div class="ai-entry-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+        </svg>
+      </div>
+      <div class="ai-entry-text">也可以随时 <span>免费咨询 AI</span>，回答你的志愿问题</div>
+      <div class="ai-entry-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 18l6-6-6-6"/>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  let currentStep = 1;
+
+  function switchStep(step) {
+    currentStep = step;
+
+    // Update stepper
+    document.querySelectorAll('.stepper-step').forEach(function(el) {
+      var s = parseInt(el.getAttribute('data-step'));
+      el.classList.remove('active', 'completed');
+      if (s === step) {
+        el.classList.add('active');
+      } else if (s < step) {
+        el.classList.add('completed');
+        // Show checkmark for completed steps
+        el.querySelector('.step-dot').innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+      } else {
+        el.querySelector('.step-dot').textContent = s;
+      }
+    });
+
+    // Update lines
+    var lines = document.querySelectorAll('.stepper-line');
+    lines[0].classList.toggle('done', step > 1);
+    lines[1].classList.toggle('done', step > 2);
+
+    // Update panels
+    document.querySelectorAll('.step-panel').forEach(function(el) {
+      el.classList.remove('visible');
+    });
+    var target = document.getElementById('step-' + step);
+    if (target) {
+      target.classList.add('visible');
+    }
+  }
+</script>
+
+</body>
+</html>

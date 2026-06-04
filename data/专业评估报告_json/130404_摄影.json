@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.180642",
+    "updated_at": "2026-04-28T13:00:01.742408",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130404",
+    "name": "摄影",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "用光影讲故事的艺术，入门易精通难，高度依赖作品集与人脉，AI 图像生成正蚕食中低端市场。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.0,
+      "future_adaptability": 2.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.83
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 图像生成（Midjourney、Stable Diffusion、DALL·E、Adobe Firefly）已能替代大量商品图、证件照、创意概念图等标准化拍摄需求。但现场纪实摄影、新闻摄影、人文摄影、复杂布光的商业摄影仍需人类判断力和审美直觉，短期内难以完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "用光影讲故事的艺术，入门易精通难，高度依赖作品集与人脉，AI 图像生成正蚕食中低端市场。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京电影学院（摄影学院/摄影系）"
+      ],
+      "tier_A": [
+        "中国传媒大学",
+        "中央美术学院",
+        "中国美术学院",
+        "鲁迅美术学院",
+        "广州美术学院"
+      ],
+      "tier_B": [
+        "浙江传媒学院",
+        "南京艺术学院",
+        "四川美术学院",
+        "天津美术学院",
+        "西安美术学院",
+        "山东工艺美术学院",
+        "上海戏剧学院"
+      ],
+      "tier_C_note": "各省综合性大学的艺术设计学院中开设摄影专业的院校，如辽宁大学、河南大学、广西艺术学院、云南艺术学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

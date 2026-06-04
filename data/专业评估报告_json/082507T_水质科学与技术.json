@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.036727",
+    "updated_at": "2026-04-25T22:24:20.920486",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082507T_水质科学与技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "环保刚需中的\"小众铁饭碗\"——全国仅 8 校开设，政策红利厚、就业稳，但赛道窄、选择少，适合坚定走水处理路线的考生。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.24
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "水质实验室分析虽可部分自动化，但现场采样、工艺调试、突发水污染应急处置等核心环节依赖现场经验与综合判断，短期内 AI 难以替代。同时，智慧水务的兴起反而需要本专业人才具备数据分析能力，属于\"AI 赋能\"而非\"AI 替代\"的职业。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "环保刚需中的\"小众铁饭碗\"——全国仅 8 校开设，政策红利厚、就业稳，但赛道窄、选择少，适合坚定走水处理路线的考生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业无 985/双一流高校独立开设本专业）"
+      ],
+      "tier_A": [
+        "南京工业大学",
+        "沈阳化工大学"
+      ],
+      "tier_B": [
+        "河南工业大学",
+        "南京工程学院"
+      ],
+      "tier_C_note": "四川文理学院、南阳师范学院、九江学院、呼和浩特民族学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

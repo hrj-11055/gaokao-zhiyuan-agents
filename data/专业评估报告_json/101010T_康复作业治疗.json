@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.134218",
+    "updated_at": "2026-04-27T05:43:24.860495",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "101010T_康复作业治疗",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"康复三巨头\"里最被低估的那个——老龄化+残障双刚需驱动，人才缺口巨大，但社会认知度极低，起薪寒酸，耐得住冷板凳才能熬出头。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.4,
+      "future_adaptability": 4.3,
+      "career_path": 3.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.62
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "作业治疗的核心工作是面对面评估患者的日常生活活动能力（进食、穿衣、如厕等）、设计个性化训练方案、制作适配辅具、进行认知功能训练和职业能力评估。这些工作高度依赖人际互动、创造性问题解决、对患者的共情和灵活调整能力。AI 可以辅助评估工具和数据分析，但无法替代治疗师与患者之间的治疗性关系和创造性活动设计。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"康复三巨头\"里最被低估的那个——老龄化+残障双刚需驱动，人才缺口巨大，但社会认知度极低，起薪寒酸，耐得住冷板凳才能熬出头。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "首都医科大学",
+        "四川大学华西临床医学院"
+      ],
+      "tier_A": [
+        "复旦大学上海医学院",
+        "中山大学",
+        "南京医科大学",
+        "华中科技大学同济医学院",
+        "北京大学医学部（OT 方向）"
+      ],
+      "tier_B": [
+        "南方医科大学",
+        "温州医科大学",
+        "广州医科大学",
+        "福建医科大学",
+        "昆明医科大学",
+        "上海中医药大学",
+        "山东中医药大学"
+      ],
+      "tier_C_note": "全国约 15–20 所开设康复作业治疗或设有 OT 方向的普通本科院校及地方医学院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

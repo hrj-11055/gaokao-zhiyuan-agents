@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.060244",
+    "updated_at": "2026-04-25T07:01:24.396868",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080701",
+    "name": "电子信息工程",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "硬核工科之王，半导体+国产替代双风口叠加，本科可就业但深造更值，数理底子不硬慎入。",
+    "radar": {
+      "market_return": 4.3,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.8,
+      "education_resources": 4.0,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 4.21
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "~68%",
+      "starting_salary": "6500–7500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "15-20%",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "芯片设计验证、硬件电路调试、射频工程、嵌入式系统开发等核心工作涉及物理世界实现与硬件-软件协同，AI目前主要辅助EDA工具自动化和代码生成，尚无法替代物理调试、工艺适配和系统级工程决策。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "硬核工科之王，半导体+国产替代双风口叠加，本科可就业但深造更值，数理底子不硬慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "电子科技大学",
+        "西安电子科技大学",
+        "北京邮电大学"
+      ],
+      "tier_A": [
+        "北京航空航天大学",
+        "浙江大学",
+        "中国科学技术大学",
+        "北京理工大学",
+        "哈尔滨工业大学",
+        "南京邮电大学",
+        "天津大学",
+        "南京理工大学",
+        "东南大学"
+      ],
+      "tier_B": [
+        "深圳大学",
+        "华中科技大学",
+        "大连理工大学",
+        "西北工业大学",
+        "杭州电子科技大学",
+        "重庆邮电大学",
+        "中北大学",
+        "桂林电子科技大学",
+        "武汉理工大学"
+      ],
+      "tier_C_note": "全国579所开设院校中排名B级及以下的普通本科院校，如各省属工科院校（山东科技大学、成都信息工程大学、西安邮电大学等），对于中等分数段考生仍可作为务实选择。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

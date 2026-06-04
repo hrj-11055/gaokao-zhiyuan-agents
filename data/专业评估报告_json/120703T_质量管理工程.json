@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.926634",
+    "updated_at": "2026-04-27T21:24:20.723576",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120703T_质量管理工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众但不可缺的\"质量守门人\"，就业面窄但稳，考证是关键跳板，适合细心且有系统思维的务实派。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.06
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5500–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "质量管理的核心在于标准解读、跨部门协调、供应商审核和体系设计——这些需要情境判断和人际沟通，AI 可辅助数据分析（如 SPC 统计过程控制），但难以替代体系审核和管理决策。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众但不可缺的\"质量守门人\"，就业面窄但稳，考证是关键跳板，适合细心且有系统思维的务实派。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国计量大学（该专业的绝对龙头，国家级特色专业）"
+      ],
+      "tier_A": [
+        "北京信息科技大学",
+        "南京财经大学",
+        "上海理工大学",
+        "昆明理工大学"
+      ],
+      "tier_B": [
+        "河南城建学院",
+        "湖北汽车工业学院",
+        "常州工学院",
+        "郑州航空工业管理学院",
+        "桂林电子科技大学"
+      ],
+      "tier_C_note": "部分省属普通本科院校近年陆续开设此专业，如岭南师范学院、成都信息工程大学银杏酒店管理学院（已转设）等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.925003",
+    "updated_at": "2026-05-09T17:51:48.478971",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海音乐学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 4.74,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 13330,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：中国现代专业音乐教育的奠基者，国家“双一流”建设中唯一的独立建制音乐学院。上音不仅是一所教学机构，更是中国音乐标准的制定者之一，承载着从“贺绿汀时代”至今的深厚红色基因与海派文化传统。\n*   **Ace（王牌优势）**：音乐与舞蹈学学科实力全国顶尖，在教育部历次学科评估中稳居 A+。QS 2024 音乐学科排名位列全球第 10，这标志着其在国际学术话语权上已进入世界第一梯队，尤其在作曲、声乐、钢琴及民族器乐领域具备统治力。\n*   **Vibe（文化特质）**：精致、高冷且极具海派文化底蕴。校园氛围呈现出一种“学术压力与艺术自由”的奇妙平衡。汾阳路校区的洋房建筑与现代化的上音歌剧院交相辉映，形成了极具精英感的艺术场域。\n*   **Risk（潜在风险）**：普通批次（非艺术类）招生名额极少，录取分数线波动受政策影响大，且文化课要求逐年提高；艺术类就业市场虽然高端，但基层竞争白热化，对学生个人综合素质及人脉经营能力要求极高。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

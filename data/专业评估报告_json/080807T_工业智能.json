@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.055643",
+    "updated_at": "2026-04-25T11:17:22.518383",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080807T_工业智能",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "工业4.0时代的\"工科新贵\"，AI+制造的交叉宠儿，赛道火爆但只有10所院校开设、供给极紧，名校硕士起步才能真正吃到红利。",
+    "radar": {
+      "market_return": 4.3,
+      "industry_outlook": 4.7,
+      "future_adaptability": 4.2,
+      "career_path": 3.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.24
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "工业智能本身就是AI的应用者和创造者，核心技能（工业场景建模、数字孪生系统架构、生产调度优化算法）需要深度理解物理系统与AI的交叉，纯AI难以替代这种\"懂工业又懂算法\"的复合能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "工业4.0时代的\"工科新贵\"，AI+制造的交叉宠儿，赛道火爆但只有10所院校开设、供给极紧，名校硕士起步才能真正吃到红利。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东北大学（全国首设，控制A类，沈阳自动化所联合培养资源）",
+        "清华大学（控制A+，虽未直接开设该专业但可走自动化→工业AI路径）",
+        "浙江大学（控制A+）",
+        "哈尔滨工业大学（控制A+）"
+      ],
+      "tier_A": [
+        "重庆邮电大学（ABC排名A+，信息通信+工业智能交叉优势）",
+        "沈阳工业大学（B+，老牌工科底蕴）",
+        "上海交通大学（控制A类，可走自动化深造路径）"
+      ],
+      "tier_B": [
+        "湖南工商大学（B类，商科+工科交叉特色）",
+        "湖南第一师范学院（B类）",
+        "安徽工业大学（B+，冶金工业背景）"
+      ],
+      "tier_C_note": "宁波工程学院、洛阳理工学院、青岛黄海学院等近年新开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

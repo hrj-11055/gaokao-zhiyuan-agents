@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.146582",
+    "updated_at": "2026-04-27T12:39:09.424058",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120406TK_海关管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"体制内铁饭碗的'窄门专业'，全国仅两所核心院校，国考海关定向招录优势巨大，但赛道极窄、容错率极低，非定向生慎入。\"",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 3.2,
+      "future_adaptability": 2.8,
+      "career_path": 4.2,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.33
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "深圳海关等已部署\"AI数智关员\"进行智能审图、风险研判和自动通关处理，AI正在替代大量重复性的报关审单、单证核对等基础工作。但海关执法权、政策制定、风险决策、国际合作谈判等核心职能仍需人工判断，短期内AI无法完全替代。（来源：东方财富网、中国政府网）"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"体制内铁饭碗的'窄门专业'，全国仅两所核心院校，国考海关定向招录优势巨大，但赛道极窄、容错率极低，非定向生慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "上海海关学院（海关总署直属，国考\"绿通道\"）",
+        "对外经济贸易大学（211/双一流，学术资源最强）"
+      ],
+      "tier_A": [
+        "国际关系学院",
+        "外交学院"
+      ],
+      "tier_B": [
+        "吉林财经大学",
+        "浙江工商大学等开设海关管理方向的院校"
+      ],
+      "tier_C_note": "其他普通本科院校中开设公共管理类含海关方向的高校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

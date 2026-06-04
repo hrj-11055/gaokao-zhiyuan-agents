@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.853441",
+    "updated_at": "2026-05-01T02:06:37.394299",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南方科技大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.8,
+      "graduate_value": 4.9,
+      "location_advantage": 5.0,
+      "globalization": 4.8,
+      "student_empowerment": 4.9,
+      "brand_asset": 4.6
+    },
+    "weighted_score": 4.85,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）：** 南科大是中国高等教育改革的先锋，是一所“扎根中国大地、对标世界一流”的新型研究型大学。它不属于传统的 985/211 体系，但在资源投入和生源质量上已完全超越了大多数同类学校。\n*   **Ace（王牌优势）：** 极高的科研起点。本科生即可参与前沿课题，全英文环境与国际化师资为学生提供了通往全球学术殿堂的直通车。\n*   **Vibe（文化特质）：** 极度务实、极度勤奋、极度自由。这里没有繁琐的行政束缚，只有对科学真理的追求和对技术创新的渴望。\n*   **Risk（潜在风险）：** 1. **学业压力：** 全英文授课+高强度科研要求，对于英语基础薄弱或自我驱动力不足的学生是巨大的挑战。2. **校友积淀：** 相比百年名校，南科大在政界、传统国企等领域的校友资源较薄，更适合志在科创与学术的学生。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "深圳速度",
+        "学术特区",
+        "全英挑战",
+        "书院温情",
+        "专业自由",
+        "科研狂魔",
+        "去行政化",
+        "631 模式"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

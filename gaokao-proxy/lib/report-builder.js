@@ -7,8 +7,11 @@ const { fetchMajorReports, fetchUnivReports, fetchDifyMessages } = require('./da
 
 const REPORTS_DIR = process.env.REPORTS_DIR || path.join(__dirname, '../reports')
 const REPORT_DRAFTS_DIR = process.env.REPORT_DRAFTS_DIR || path.join(REPORTS_DIR, 'drafts')
-const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-v4-pro'
+const REPORT_DEEPSEEK_MODEL = process.env.REPORT_DEEPSEEK_MODEL || 'deepseek-v4-flash'
+const REPORT_MAX_TOKENS = Number(process.env.REPORT_MAX_TOKENS || 16384)
 const REPORT_GENERATION_TIMEOUT_MS = Number(process.env.REPORT_GENERATION_TIMEOUT_MS || 600000)
+const REPORT_PRIMARY_TIMEOUT_MS = Number(process.env.REPORT_PRIMARY_TIMEOUT_MS || Math.min(REPORT_GENERATION_TIMEOUT_MS, 180000))
+const REPORT_RETRY_TIMEOUT_MS = Number(process.env.REPORT_RETRY_TIMEOUT_MS || Math.max(1000, REPORT_GENERATION_TIMEOUT_MS - REPORT_PRIMARY_TIMEOUT_MS))
 const MIN_MODULE_CONTENT_CHARS = Number(process.env.REPORT_MIN_MODULE_CONTENT_CHARS || 1000)
 const REPORT_AUTO_EXPAND_SHORT_MODULES = process.env.REPORT_AUTO_EXPAND_SHORT_MODULES === 'true'
 const REPORT_ENFORCE_MODULE_LENGTH = process.env.REPORT_ENFORCE_MODULE_LENGTH === 'true'
@@ -66,34 +69,106 @@ async function generateReport({
 }
 
 async function requestDeepSeekJson(prompt) {
-  const res = await fetch('https://api.deepseek.com/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
-    },
-    body: JSON.stringify({
-      model: DEEPSEEK_MODEL,
-      messages: [{ role: 'user', content: prompt }],
-      max_tokens: 32768,
-      temperature: 0.7,
-      response_format: { type: 'json_object' }
-    }),
-    signal: AbortSignal.timeout(REPORT_GENERATION_TIMEOUT_MS),
-  })
+  try {
+    return await requestDeepSeekJsonFromModel(prompt, {
+      model: REPORT_DEEPSEEK_MODEL,
+      timeoutMs: REPORT_PRIMARY_TIMEOUT_MS,
+      attempt: 'primary',
+    })
+  } catch (err) {
+    if (!shouldRetryDeepSeekModel(err)) {
+      throw err
+    }
+    console.warn('DeepSeek report generation retrying:', JSON.stringify({
+      model: REPORT_DEEPSEEK_MODEL,
+      reason: err.message,
+      elapsedMs: err.elapsedMs,
+    }))
+    return requestDeepSeekJsonFromModel(prompt, {
+      model: REPORT_DEEPSEEK_MODEL,
+      timeoutMs: REPORT_RETRY_TIMEOUT_MS,
+      attempt: 'retry',
+    })
+  }
+}
+
+async function requestDeepSeekJsonFromModel(prompt, { model, timeoutMs, attempt }) {
+  const startedAt = Date.now()
+  console.log('DeepSeek report generation started:', JSON.stringify({
+    attempt,
+    model,
+    promptChars: prompt.length,
+    maxTokens: REPORT_MAX_TOKENS,
+    timeoutMs,
+  }))
+
+  let res
+  try {
+    res = await fetch('https://api.deepseek.com/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model,
+        messages: [{ role: 'user', content: prompt }],
+        max_tokens: REPORT_MAX_TOKENS,
+        temperature: 0.7,
+        response_format: { type: 'json_object' }
+      }),
+      signal: AbortSignal.timeout(timeoutMs),
+    })
+  } catch (err) {
+    err.elapsedMs = Date.now() - startedAt
+    console.error('DeepSeek report generation attempt failed:', JSON.stringify({
+      attempt,
+      model,
+      elapsedMs: err.elapsedMs,
+      error: err.message,
+    }))
+    throw err
+  }
 
   if (!res.ok) {
-    const err = await res.text()
-    throw new Error(`DeepSeek API error ${res.status}: ${err.slice(0, 200)}`)
+    const body = await res.text()
+    const err = new Error(`DeepSeek API error ${res.status}: ${body.slice(0, 200)}`)
+    err.statusCode = res.status
+    err.elapsedMs = Date.now() - startedAt
+    console.error('DeepSeek report generation attempt failed:', JSON.stringify({
+      attempt,
+      model,
+      statusCode: res.status,
+      elapsedMs: err.elapsedMs,
+      error: err.message,
+    }))
+    throw err
   }
 
   const data = await res.json()
   const content = data?.choices?.[0]?.message?.content
   if (!content) {
     const reason = data?.choices?.[0]?.finish_reason || 'unknown'
-    throw new Error(`DeepSeek 返回空内容 (finish_reason: ${reason})`)
+    const err = new Error(`DeepSeek 返回空内容 (finish_reason: ${reason})`)
+    err.elapsedMs = Date.now() - startedAt
+    throw err
   }
+
+  console.log('DeepSeek report generation completed:', JSON.stringify({
+    attempt,
+    model,
+    elapsedMs: Date.now() - startedAt,
+    outputChars: content.length,
+    finishReason: data?.choices?.[0]?.finish_reason || 'unknown',
+  }))
   return content
+}
+
+function shouldRetryDeepSeekModel(err) {
+  if (!err) return false
+  if (err.name === 'TimeoutError' || err.name === 'AbortError') return true
+  if (err.statusCode === 429 || err.statusCode >= 500) return true
+  return /timeout|timed out|aborted|fetch failed|network/i.test(err.message || '')
 }
 
 async function saveReport(userId, html) {
@@ -964,5 +1039,6 @@ module.exports = {
   collectModuleContentText,
   getReportQualityIssues,
   buildReportExpansionPrompt,
-  buildFinalHtml
+  buildFinalHtml,
+  requestDeepSeekJson,
 }

@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.893784",
+    "updated_at": "2026-04-24T12:18:58.771019",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "050310T_会展",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在城市会展之都风口上的新兴专业，创意与人脉是核心资本，但开设院校极少、行业高度集中在一线城市，地域与资源壁垒决定了这不是一个\"通用型\"选择。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.0,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–7,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI已深入渗透会展行业——智能导览、AI匹配参展商与买家、虚拟展厅、数据分析和内容生成等功能日益成熟（麦肯锡2025报告显示88%的组织已在至少一个业务功能中采用AI）。但线下活动的现场统筹、人际沟通、创意策划和商业谈判等核心环节仍高度依赖人的\"在场感\"和关系网络，短期内难以被完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在城市会展之都风口上的新兴专业，创意与人脉是核心资本，但开设院校极少、行业高度集中在一线城市，地域与资源壁垒决定了这不是一个\"通用型\"选择。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中山大学",
+        "南开大学",
+        "四川大学",
+        "华南理工大学"
+      ],
+      "tier_A": [
+        "上海大学",
+        "海南大学",
+        "上海对外经贸大学",
+        "华侨大学",
+        "北京第二外国语学院",
+        "华南师范大学",
+        "云南财经大学"
+      ],
+      "tier_B": [
+        "北京石油化工学院",
+        "广东财经大学",
+        "南昌大学",
+        "天津财经大学",
+        "福建商学院",
+        "东华大学",
+        "浙江外国语学院"
+      ],
+      "tier_C_note": "各地方本科院校中开设会展经济与管理的约50余所普通院校（如中西部省份的地方财经/师范类院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

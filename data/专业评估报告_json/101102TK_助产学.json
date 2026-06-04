@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.132954",
+    "updated_at": "2026-04-27T06:26:48.842470",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "101102TK_助产学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "迎接新生命的\"白衣天使\"，就业确定性极高但薪酬天花板明显，辛苦程度远超想象，需极强的体力与爱心。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.06
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "助产涉及大量临床触诊、分娩接生、紧急情况判断等高触感（high-touch）操作，需要面对面的人际沟通与情感支持，AI难以替代。但产前检查的影像分析、胎心监护数据分析等辅助环节可能被AI部分介入。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "迎接新生命的\"白衣天使\"，就业确定性极高但薪酬天花板明显，辛苦程度远超想象，需极强的体力与爱心。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京协和医学院",
+        "中南大学（湘雅护理学院）",
+        "四川大学（华西护理学院）"
+      ],
+      "tier_A": [
+        "首都医科大学",
+        "复旦大学",
+        "第二军医大学（海军军医大学）",
+        "中山大学",
+        "华中科技大学",
+        "北京大学"
+      ],
+      "tier_B": [
+        "南方医科大学",
+        "南京医科大学",
+        "哈尔滨医科大学",
+        "重庆医科大学",
+        "天津医科大学",
+        "福建医科大学",
+        "温州医科大学"
+      ],
+      "tier_C_note": "各省地方医学院校如安徽医科大学、广西医科大学、贵州医科大学、新乡医学院、滨州医学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

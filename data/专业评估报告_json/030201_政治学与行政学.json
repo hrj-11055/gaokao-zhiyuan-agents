@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.929995",
+    "updated_at": "2026-04-21T00:52:48.887284",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "030201",
+    "name": "政治学与行政学",
+    "category": "法学",
+    "recommendation_level": "yellow",
+    "summary": "\"体制内的入场券，但赛道窄、晋升慢、极度依赖考公上岸，非'公考体质'慎入。\"",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 2.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 3.8,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.02
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5500–7500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础行政文书的AI替代已开始（公文写作、信息汇总），但涉及利益博弈、政策研判、人际协调的核心治理环节短期内难以被AI取代。AI更多是\"工具增强\"而非\"全面替代\"（来源：清华大学公共管理学院唐啸副教授分析、北京大学公共治理研究所刘颜俊研究）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"体制内的入场券，但赛道窄、晋升慢、极度依赖考公上岸，非'公考体质'慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "复旦大学",
+        "中国人民大学"
+      ],
+      "tier_A": [
+        "清华大学",
+        "南开大学",
+        "吉林大学",
+        "华中师范大学",
+        "中国政法大学",
+        "南京大学",
+        "武汉大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "天津师范大学",
+        "华东师范大学",
+        "厦门大学",
+        "山东大学",
+        "云南大学",
+        "暨南大学",
+        "东北师范大学",
+        "湖南师范大学",
+        "上海外国语大学",
+        "对外经济贸易大学"
+      ],
+      "tier_C_note": "湘潭大学、山西大学、河北大学、西北师范大学、贵州大学、新疆大学、广西民族大学、中南民族大学、山东师范大学、江西师范大学、聊城大学、青岛大学等开设该专业的约90余所普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

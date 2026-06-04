@@ -180,7 +180,34 @@ def report_summary(data):
     return ""
 
 
+def calculate_report_word_count(data):
+    """按深度报告阅读器实际展示的正文计算字数。"""
+    if not isinstance(data, dict):
+        return 0
+
+    count = 0
+    layer3 = data.get("layer3_detail") or data.get("layer3_details") or {}
+    if isinstance(layer3, dict):
+        for module in layer3.values():
+            if isinstance(module, dict):
+                count += len(module.get("raw_content") or "")
+    if count > 0:
+        return count
+
+    layer4 = data.get("layer4_supplement") or {}
+    if isinstance(layer4, dict):
+        return len(layer4.get("full_raw_content") or "")
+    return 0
+
+
+def with_visible_word_count(row):
+    normalized = dict(row)
+    normalized["word_count"] = calculate_report_word_count(normalized.get("data"))
+    return normalized
+
+
 def public_major(row):
+    row = with_visible_word_count(row)
     data = row.get("data") or {}
     return {
         "code": row.get("code"),
@@ -194,6 +221,7 @@ def public_major(row):
 
 
 def public_university(row):
+    row = with_visible_word_count(row)
     data = row.get("data") or {}
     return {
         "name": row.get("name"),
@@ -673,7 +701,7 @@ def reports_majors():
         params + [page_size, offset],
     )
 
-    data = rows if wants_full_report() else [public_major(row) for row in rows]
+    data = [with_visible_word_count(row) for row in rows] if wants_full_report() else [public_major(row) for row in rows]
     return jsonify({
         "total": int(total),
         "page": page,
@@ -692,7 +720,7 @@ def reports_major_detail(code):
     if not rows:
         return jsonify({"error": "专业不存在"}), 404
     row = rows[0]
-    return jsonify(row if wants_full_report() else public_major(row))
+    return jsonify(with_visible_word_count(row) if wants_full_report() else public_major(row))
 
 
 @app.route("/api/reports/universities")
@@ -713,7 +741,7 @@ def reports_universities():
         params + [page_size, offset],
     )
 
-    data = rows if wants_full_report() else [public_university(row) for row in rows]
+    data = [with_visible_word_count(row) for row in rows] if wants_full_report() else [public_university(row) for row in rows]
     return jsonify({
         "total": int(total),
         "page": page,
@@ -732,7 +760,7 @@ def reports_university_detail(name):
     if not rows:
         return jsonify({"error": "院校不存在"}), 404
     row = rows[0]
-    return jsonify(row if wants_full_report() else public_university(row))
+    return jsonify(with_visible_word_count(row) if wants_full_report() else public_university(row))
 
 
 if __name__ == "__main__":

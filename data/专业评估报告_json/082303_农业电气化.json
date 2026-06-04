@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.215601",
+    "updated_at": "2026-04-25T21:21:04.690333",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082303",
+    "name": "农业电气化",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "乡村振兴的\"电力心脏\"，政策东风强劲但赛道窄、招生少，适合能吃苦、愿扎根农业的电气工科生。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.6,
+      "future_adaptability": 3.3,
+      "career_path": 3.2,
+      "education_resources": 2.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.24
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "农业电气化涉及大量现场设备调试、农村电网实地勘测、田间传感器部署等需要\"动手+现场判断\"的工作，AI 难以替代；但部分设计计算和数据分析工作可被 AI 辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "乡村振兴的\"电力心脏\"，政策东风强劲但赛道窄、招生少，适合能吃苦、愿扎根农业的电气工科生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "江苏大学",
+        "南京农业大学"
+      ],
+      "tier_A": [
+        "东北农业大学",
+        "河北农业大学"
+      ],
+      "tier_B": [
+        "河南科技大学",
+        "山西农业大学"
+      ],
+      "tier_C_note": "内蒙古农业大学、黑龙江八一农垦大学、西藏农牧学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

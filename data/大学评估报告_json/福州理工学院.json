@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.660652",
+    "updated_at": "2026-05-12T12:46:07.867209",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "福州理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 1.8,
+      "graduate_value": 2.4,
+      "location_advantage": 3.2,
+      "globalization": 1.5,
+      "student_empowerment": 1.8,
+      "brand_asset": 2.6
+    },
+    "weighted_score": 2.24,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "福州理工学院是一所**“企业基因深植、就业导向极强、管理风格严苛”**的民办应用型本科。\n\n- **核心定位**：它更像是一个大型的“企业人才预科班”。对于那些希望在大学期间掌握一技之长、毕业后直接进入互联网行业的学生来说，这里提供了极佳的实践平台。\n- **核心优势**：产教融合不是口号。网龙提供的 VR 实验室、游戏开发引擎资源以及企业导师，是普通公办二本院校难以企及的硬件优势。\n- **核心劣势**：校园生活体验较差。严苛的管理制度、偏远的地理位置以及薄弱的学术氛围，使得这里不适合有志于学术深造或追求自由校园生活的学生。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.194757",
+    "updated_at": "2026-04-26T03:55:42.472888",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090206T_湿地保护与恢复",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策催生的\"生态新贵\"，赛道窄但竞争更少，野外吃苦是常态，吃不了苦别来。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.2,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.17
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "湿地野外调查、生物多样性识别、生态系统评估等核心工作高度依赖实地经验和复杂环境判断力，AI 难以替代野外采样和生态决策。但 GIS 分析、遥感数据处理等环节已有 AI 辅助工具渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策催生的\"生态新贵\"，赛道窄但竞争更少，野外吃苦是常态，吃不了苦别来。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（专业太新，尚无院校建立明显学科优势）"
+      ],
+      "tier_A": [
+        "西南林业大学（全国首个获批，设有湿地学院，地处云南湿地资源丰富区）"
+      ],
+      "tier_B": [
+        "盐城师范学院（位于国际湿地城市盐城，地域优势突出）"
+      ],
+      "tier_C_note": "后续新增院校待观察",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

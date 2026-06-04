@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.897682",
+    "updated_at": "2026-04-25T20:18:49.420099",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082011T_空天智能电推进技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"国家航天战略的'金钥匙'——赛道极窄、门槛极高，上岸等于锁定国防航天核心岗位，但全国仅北航一家开设，容错率为零。\"",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.8,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.0,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.85
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "12000–20000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "电推进系统设计涉及等离子体物理、电磁场仿真、真空环境实验等高度依赖物理直觉和实验验证的硬核技术，AI 可辅助仿真和数据优化，但核心的工程判断和创新设计难以被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"国家航天战略的'金钥匙'——赛道极窄、门槛极高，上岸等于锁定国防航天核心岗位，但全国仅北航一家开设，容错率为零。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京航空航天大学（目前全国唯一开设此专业的院校，A+ 学科，院士领衔）"
+      ],
+      "tier_A": [
+        "西北工业大学（A+ 学科，航天推进方向强校）",
+        "哈尔滨工业大学（B+ 学科，卫星技术见长）"
+      ],
+      "tier_B": [
+        "南京航空航天大学（B+ 学科）",
+        "国防科技大学（B+ 学科，军工背景）",
+        "北京理工大学（B 类学科）"
+      ],
+      "tier_C_note": "沈阳航空航天大学（B- 类学科）、中国民航大学（C- 类学科）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

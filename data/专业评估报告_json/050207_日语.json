@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.160756",
+    "updated_at": "2026-04-23T19:00:57.798590",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050207",
+    "name": "日语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "\"语言是工具不是护城河，纯日语已成红海，'日语+X'复合能力才是生存法则，AI 翻译正加速淘汰纯语言岗。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.5,
+      "career_path": 3.2,
+      "education_resources": 3.8,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.89
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "机器翻译（DeepL、Google 翻译等）在日中翻译对的准确率持续提升，低端文书翻译、基础客服、简单口语交流岗位正被 AI 快速替代。高级别同传、文学翻译、文化本地化、跨文化商务谈判仍有较高不可替代性，但这些岗位仅占少数。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"语言是工具不是护城河，纯日语已成红海，'日语+X'复合能力才是生存法则，AI 翻译正加速淘汰纯语言岗。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "北京外国语大学",
+        "上海外国语大学"
+      ],
+      "tier_A": [
+        "南京大学",
+        "复旦大学",
+        "浙江大学",
+        "中国人民大学",
+        "北京师范大学",
+        "对外经济贸易大学",
+        "北京语言大学",
+        "广东外语外贸大学",
+        "南开大学",
+        "厦门大学",
+        "上海交通大学",
+        "武汉大学"
+      ],
+      "tier_B": [
+        "大连外国语大学",
+        "天津外国语大学",
+        "西安外国语大学",
+        "四川外国语大学",
+        "黑龙江大学",
+        "湖南师范大学",
+        "延边大学",
+        "东北师范大学",
+        "吉林大学",
+        "北京第二外国语学院",
+        "山东大学",
+        "同济大学",
+        "华东师范大学"
+      ],
+      "tier_C_note": "全国 425 所开设日语专业的高校中，除上述院校外的普通本科院校。此类院校日语专业同质化严重，需靠\"日语+辅修\"构建差异化竞争力。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

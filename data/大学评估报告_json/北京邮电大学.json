@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.794279",
+    "updated_at": "2026-05-09T14:02:45.940316",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "北京邮电大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "最适合：",
+    "radar": {
+      "academic_capital": 4.6,
+      "graduate_value": 4.9,
+      "location_advantage": 4.8,
+      "globalization": 3.9,
+      "student_empowerment": 3.6,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 4.59,
+    "one_sentence_recommend": "最适合："
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "北京邮电大学（BUPT）作为新中国第一所邮电高等学府，其历史地位与产业深度紧密绑定。在当前的数字化转型与人工智能浪潮中，北邮不仅是人才的输出地，更是技术标准的制定参与者。其核心竞争力在于“极高的行业垂直度”，这种垂直度使得北邮在 ICT（信息通信技术）领域拥有超越其综合排名的社会声望与就业溢价。\n\n从学术维度看，北邮的学科布局呈现典型的“倒 T 型”结构：在通信、计算机、电子等领域拥有极深的垂直深度，而在人文社科、理学基础等领域相对薄弱。这种结构在工业时代和互联网红利期是巨大的优势，但在跨学科创新日益重要的今天，也面临着学科边界拓展的挑战。\n\n在人才培养方面，北邮以“务实”著称。其课程体系深度对接产业需求，学生在校期间积累了大量的工程实践经验。这种培养模式直接导致了北邮毕业生在就业市场上的“即插即用”属性，深受华为、腾讯、字节跳动等技术驱动型企业的青睐。然而，高强度的专业学习和极高的同质化竞争，也使得校园文化呈现出明显的“内卷”特征，学生在人文关怀与多元化发展方面存在一定的补偿性需求。",
+      "one_sentence_recommend": "最适合：",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "极客",
+        "内卷",
+        "高薪",
+        "传邮万里",
+        "代码工厂",
+        "行业垄断",
+        "技术立校"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

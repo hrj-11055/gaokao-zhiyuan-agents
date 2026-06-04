@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.043776",
+    "updated_at": "2026-05-17T01:18:44.984249",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "020309T_互联网金融",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 3.2,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.87
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "数据处理和分析能力可能被AI替代，但复杂的金融决策、客户关系管理和创新产品开发仍需要人的综合判断。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "安徽大学",
+        "电子科技大学"
+      ],
+      "tier_A": [
+        "安徽财经大学",
+        "云南财经大学",
+        "广东金融学院",
+        "安徽工业大学"
+      ],
+      "tier_B": [
+        "山西工商学院",
+        "福建理工大学",
+        "晋中信息学院",
+        "山西晋中理工学院"
+      ],
+      "tier_C_note": "其他开设该专业的普通本科院校",
+      "selection_advice": "优先选择财经类特色院校或理工科强校，地域选择要聚焦金融中心城市，重视学校的实习和就业资源。"
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

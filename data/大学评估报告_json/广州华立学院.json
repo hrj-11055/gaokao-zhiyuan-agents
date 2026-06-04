@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.480474",
+    "updated_at": "2026-05-03T01:46:00.368530",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广州华立学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.8,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "广州华商学院",
+        "similarity": "同类院校",
+        "key_difference": "华商学院以经管类专业见长，校园硬件设施（如宿舍、图书馆）以“豪华”著称，商业氛围浓厚。相比之下，华立学院的“理工底色”更重，其机械、土木、自动化等专业的实验室配置更为硬核。如果学生未来志在金融、会计领域，华商更具优势；若志在智能制造、建筑工程或电子信息，华立的学科积淀更深。"
+      },
+      {
+        "name": "广州理工学院",
+        "similarity": "同类院校",
+        "key_difference": "两校同为工科背景深厚的民办高校。广州理工学院近年来在科研投入上动作频频，而华立学院则在“产教融合”和校企合作方面走得更稳。华立的江门校区为学校提供了巨大的物理扩张空间，未来在对接江门及粤西产业带方面具有先发优势。"
+      }
+    ],
+    "risks": [
+      {
+        "category": "学费压力",
+        "description": "年学费普遍在 3 万-4 万元人民币，加上生活费，四年总开支接近 20 万。对于农村家庭而言，投入产出比（ROI）是必须精算的问题。"
+      },
+      {
+        "category": "生源分层",
+        "description": "由于录取分数跨度较大，校园内既有刻苦钻研的“卷王”，也有虚度光阴的“躺平者”，学习氛围受宿舍圈子影响较大。"
+      },
+      {
+        "category": "转设过渡",
+        "description": "部分老教师流失与新教师引进之间的磨合，以及行政管理效率的提升，仍是学校面临的长期课题。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：广州华立学院（原广东工业大学华立学院）是经教育部批准设立的民办全日制普通本科高校。学校紧贴粤港澳大湾区经济社会发展需求，形成了以工科为主，经、管、文、医、艺等多学科协调发展的格局。\n*   **Ace（王牌优势）**：学校的机械工程、土木工程等传统工科专业具有极强的行业穿透力。依托原母体学校广东工业大学的教学管理经验，其工科实训条件在同类民办院校中处于领先地位，毕业生在珠三角建筑工程、智能制造领域拥有较高的认可度。\n*   **Vibe（文化特质）**：务实、就业驱动、技能导向。校园文化深受岭南商业文明影响，学生普遍具有较强的生存能力和职业敏感度，是典型的“大湾区产业后备军”。\n*   **Risk（潜在风险）**：作为民办院校，学费成本是家庭决策的重要考量因素；在转设为独立建制的普通本科后，品牌知名度的重塑仍需时间；此外，生源位次决定了其在高端学术科研领域的竞争门槛较高。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "广州华商学院",
+          "similarity": "同类院校",
+          "key_difference": "华商学院以经管类专业见长，校园硬件设施（如宿舍、图书馆）以“豪华”著称，商业氛围浓厚。相比之下，华立学院的“理工底色”更重，其机械、土木、自动化等专业的实验室配置更为硬核。如果学生未来志在金融、会计领域，华商更具优势；若志在智能制造、建筑工程或电子信息，华立的学科积淀更深。"
+        },
+        {
+          "name": "广州理工学院",
+          "similarity": "同类院校",
+          "key_difference": "两校同为工科背景深厚的民办高校。广州理工学院近年来在科研投入上动作频频，而华立学院则在“产教融合”和校企合作方面走得更稳。华立的江门校区为学校提供了巨大的物理扩张空间，未来在对接江门及粤西产业带方面具有先发优势。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

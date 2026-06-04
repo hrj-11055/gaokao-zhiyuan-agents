@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.991802",
+    "updated_at": "2026-04-25T18:44:01.445250",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081804K_轮机工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "高薪高壁垒的\"海上铁饭碗\"，年薪20万起步但一年300天见不到家人——海洋强国战略撑腰，但身心适配性比分数更重要。",
+    "radar": {
+      "market_return": 4.0,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.3,
+      "career_path": 2.5,
+      "education_resources": 3.3,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.57
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~95%",
+      "alignment_rate": "~80%",
+      "starting_salary": "10,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "轮机工程核心技能涉及大型机械设备拆装维护、现场故障诊断与应急处理、海上复杂环境下的实操决策，这些高度依赖物理操作和经验判断的技能，AI 和机器人在可预见的未来难以完全替代。智能船舶主要辅助监测和预测性维护，仍需轮机员在船值守。来源：武汉理工大学严新平院士团队研究、万方数据相关论文。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "高薪高壁垒的\"海上铁饭碗\"，年薪20万起步但一年300天见不到家人——海洋强国战略撑腰，但身心适配性比分数更重要。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "大连海事大学（海事领域绝对龙头）",
+        "哈尔滨工程大学（船舶与海洋工程 A+",
+        "国防背景）"
+      ],
+      "tier_A": [
+        "武汉理工大学",
+        "上海交通大学（船舶学科 A+，但轮机工程非主打方向）",
+        "上海海事大学",
+        "华中科技大学",
+        "集美大学"
+      ],
+      "tier_B": [
+        "中国海洋大学",
+        "重庆交通大学",
+        "江苏科技大学",
+        "宁波大学",
+        "天津大学"
+      ],
+      "tier_C_note": "大连海洋大学、广州航海学院、山东交通学院、天津理工大学、浙江海洋大学、广东海洋大学、海南大学、烟台大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

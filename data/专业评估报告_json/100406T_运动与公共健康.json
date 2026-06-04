@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.065351",
+    "updated_at": "2026-04-27T01:42:49.434646",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100406T_运动与公共健康",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "体育与医学的交叉新物种，踩在\"全民健身\"风口上，但专业太新、认知度低，就业仍需靠自己打开局面。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.11
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "核心工作涉及对个体的运动能力评估、运动处方制定、社区健康干预方案设计和面对面健康指导，这些需要人际沟通和现场评估的任务不易被 AI 完全替代。但数据统计、健康档案管理部分可被 AI 辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "体育与医学的交叉新物种，踩在\"全民健身\"风口上，但专业太新、认知度低，就业仍需靠自己打开局面。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京体育大学（体育学 A+，公共卫生方向资源丰富）"
+      ],
+      "tier_A": [
+        "上海体育大学（体育学 A+，运动健康研究领先）",
+        "首都体育学院"
+      ],
+      "tier_B": [
+        "广州体育学院",
+        "成都体育学院",
+        "武汉体育学院",
+        "天津体育学院",
+        "沈阳体育学院"
+      ],
+      "tier_C_note": "部分地方医科大学/师范学院中开设此专业的院校（如山东第一医科大学等可能开设的院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

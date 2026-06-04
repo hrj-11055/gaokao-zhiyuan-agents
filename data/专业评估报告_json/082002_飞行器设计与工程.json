@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.946741",
+    "updated_at": "2026-04-25T19:43:37.477195",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082002",
+    "name": "飞行器设计与工程",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "国之重器核心专业，站在万亿航天赛道风口，但门槛极高、名校依赖度拉满，非顶尖工科院校慎选。",
+    "radar": {
+      "market_return": 3.9,
+      "industry_outlook": 4.7,
+      "future_adaptability": 4.2,
+      "career_path": 3.6,
+      "education_resources": 4.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 4.18
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "飞行器设计涉及复杂的物理建模（气动、结构耦合）、多学科系统集成优化和物理实验验证，AI可辅助仿真计算但无法替代创造性设计和工程判断。核心的总体方案决策、安全裕度评估等高度依赖人类工程师的经验与责任判断。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国之重器核心专业，站在万亿航天赛道风口，但门槛极高、名校依赖度拉满，非顶尖工科院校慎选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京航空航天大学",
+        "西北工业大学"
+      ],
+      "tier_A": [
+        "哈尔滨工业大学",
+        "南京航空航天大学",
+        "北京理工大学"
+      ],
+      "tier_B": [
+        "西安交通大学",
+        "沈阳航空航天大学",
+        "厦门大学",
+        "浙江大学",
+        "南昌航空大学",
+        "华中科技大学",
+        "复旦大学",
+        "大连理工大学",
+        "哈尔滨工程大学",
+        "西南交通大学"
+      ],
+      "tier_C_note": "中国民用航空飞行学院、重庆交通大学、郑州航空工业管理学院、中北大学、北华航天工业学院、太原理工大学、江南大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

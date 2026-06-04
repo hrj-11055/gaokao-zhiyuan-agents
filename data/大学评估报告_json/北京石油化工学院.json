@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.821678",
+    "updated_at": "2026-05-09T14:06:37.174942",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "北京石油化工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 3.2,
+      "location_advantage": 3.8,
+      "globalization": 2.7,
+      "student_empowerment": 3.5,
+      "brand_asset": 2.6
+    },
+    "weighted_score": 3.08,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 118500,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "地理位置的局限性",
+        "description": "虽然大兴在发展，但距离北京核心文化区（如海淀学府区）较远，学生跨校交流的物理成本较高。"
+      },
+      {
+        "category": "行业依赖风险",
+        "description": "学校的发展与石化行业紧密绑定。在“双碳”背景下，传统石化行业面临转型压力，学校能否在新能源领域迅速完成学术资本的二次积累，决定了其未来的上限。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "北京石油化工学院（BIPT）是一所典型的“行业底色深厚、应用导向鲜明”的北京市属高校。在学术资本维度，虽然缺乏顶尖的 A 类学科和全职院士，但其在能源化工领域的垂直深耕，使其在细分赛道拥有极高的专业壁垒。学校的 8 个国家级一流本科专业建设点，基本覆盖了石化产业链的核心环节，这种“小而精”的学科布局，确保了其在行业内的生存韧性。\n\n从毕业生价值实现来看，北石化展现出了极强的“抗周期性”。在近年来就业形势严峻的大背景下，依托与中石油、中石化、中海油等大型央企的长期合作关系，其毕业生在能源、化工、智能制造等领域的就业质量保持稳定。虽然在京外地区的品牌溢价有限，但在北京及周边地区的行业圈层内，北石化毕业生的“好用、耐用、务实”标签已成为其核心竞争力。\n\n区位优势是北石化的另一大加分项。随着北京大兴国际机场的投运以及大兴区“氢能谷”、医药健康产业园的快速崛起，学校正从传统的“石化”向“新材料、新能源、智能制造”转型。这种与区域经济的深度耦合，为学生提供了大量的实习与产学研结合机会，使其在应用型人才培养上走在了同类院校前列。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "大兴一哥",
+        "石化黄埔",
+        "硬核工科",
+        "转专业天堂",
+        "央企预备役",
+        "务实主义",
+        "氢能先锋"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.063286",
+    "updated_at": "2026-04-21T02:42:21.148552",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030616TK_技术侦查学",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "公安系统\"科技尖兵\"，入警率 90%+ 毕业即入编，但政审体测卡人、学习强度拉满，是\"铁饭碗+硬技术\"的双刃剑。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.9,
+      "career_path": 3.6,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 4.02
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "技术侦查的核心——犯罪现场勘查、电子证据链构建、跨部门协同决策——需要人类的情境判断力和法律伦理把控。AI 可辅助数据分析，但无法替代\"人+技术\"的侦查决策。相反，掌握 AI 工具的技术侦查人才将因 AI 而增值。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "公安系统\"科技尖兵\"，入警率 90%+ 毕业即入编，但政审体测卡人、学习强度拉满，是\"铁饭碗+硬技术\"的双刃剑。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民公安大学（\"双一流\"，公安部直属）",
+        "中国刑事警察学院（技术侦查学全国第 1）"
+      ],
+      "tier_A": [
+        "中国人民警察大学",
+        "四川警察学院",
+        "江苏警官学院",
+        "浙江警察学院"
+      ],
+      "tier_B": [
+        "西北政法大学（侦查学方向）",
+        "中国政法大学",
+        "湖南警察学院",
+        "广东警官学院"
+      ],
+      "tier_C_note": "中央司法警官学院、各省属警察学院中开设技术侦查学方向的院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

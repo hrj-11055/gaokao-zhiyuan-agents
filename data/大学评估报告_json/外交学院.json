@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.560454",
+    "updated_at": "2026-05-09T14:37:22.636024",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "外交学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.8,
+      "location_advantage": 4.9,
+      "globalization": 4.7,
+      "student_empowerment": 3.2,
+      "brand_asset": 4.5
+    },
+    "weighted_score": 4.52,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "外交学院是一所“优缺点都极其明显”的大学。它不是为了培养通才而设计的，而是为了培养国家急需的高端外交外事人才而存在的“特种部队”。\n\n- **核心竞争力：** 拥有全国最强的外交学资源和最直接的体制内就业渠道。\n- **适宜人群：** 政治立场坚定、外语天赋高、追求精英化社交、立志进入体制内或国际组织的学霸。\n- **避坑指南：** 追求浪漫校园生活、渴望跨学科自由探索、对政治不感兴趣或无法接受高压纪律的学生应慎重报考。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "小而精的极致",
+        "外交官的摇篮",
+        "家国情怀",
+        "纪律严明",
+        "英语狂魔",
+        "体制内天花板",
+        "沙河村的精英",
+        "展览路的贵族"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

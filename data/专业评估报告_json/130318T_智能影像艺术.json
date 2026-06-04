@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.167020",
+    "updated_at": "2026-04-28T12:44:21.251337",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130318T_智能影像艺术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在 AI 颠覆影像创作的最前沿，风口之上机会汹涌，但专业太新、赛道太卷、技术迭代太快，非\"技术+艺术\"双修者慎入。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.37
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–9,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "该专业本身就是\"被 AI 颠覆\"的前线——AI 视频生成（Sora、Kling、Pika）正在快速替代基础拍摄、后期剪辑、调色等传统执行层工作。核心创意叙事能力、对影像美学的深度理解、人机协作的策展能力相对安全，但传统技术执行岗面临直接冲击。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在 AI 颠覆影像创作的最前沿，风口之上机会汹涌，但专业太新、赛道太卷、技术迭代太快，非\"技术+艺术\"双修者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京电影学院",
+        "中国传媒大学"
+      ],
+      "tier_A": [
+        "上海戏剧学院",
+        "中央戏剧学院",
+        "南京艺术学院"
+      ],
+      "tier_B": [
+        "浙江传媒学院",
+        "山东艺术学院",
+        "四川电影电视学院",
+        "云南艺术学院"
+      ],
+      "tier_C_note": "部分综合类大学新开设此专业的院校（如各省属师范大学、理工类大学数字媒体学院），具体名单待教育部当年招生计划公布后确认。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

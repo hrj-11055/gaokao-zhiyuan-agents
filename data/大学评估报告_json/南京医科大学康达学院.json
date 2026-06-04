@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.788817",
+    "updated_at": "2026-05-08T02:56:59.214435",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京医科大学康达学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.93,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "转设悬疑",
+        "description": "这是所有独立学院共同的焦虑。若未来转设为民办普通本科，失去“南京医科大学”的冠名，其录取分数线和品牌影响力大概率会出现下滑。"
+      },
+      {
+        "category": "地理位置的边际效应",
+        "description": "连云港虽然产业强，但城市生活丰富度、交通便利度（尤其是高铁通达度）与南京相比仍有差距，这在一定程度上影响了高素质青年教师的留存率。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "**Identity（核心定位）**：南京医科大学康达学院是一所典型的“名校办民校”模式下的应用型医药类本科院校。其核心竞争力紧紧锚定在母体学校南京医科大学的学术背书与连云港作为“中华药港”的产业资源之上。在江苏省内，它是公办本科线边缘考生的重要选择，尤其是在临床医学、预防医学等核心医疗领域，具有极强的专业壁垒。\n\n**Ace（王牌优势）**：学院的医学教育背景极其纯正。不同于综合性独立学院，康达学院的专业设置高度聚焦，其临床医学、护理学等专业在江苏省内独立学院中长期处于领跑地位。此外，学院与连云港当地头部药企（如恒瑞医药、正大天晴）的深度绑定，为药学类学生提供了极具竞争力的实习与就业绿色通道。\n\n**Vibe（文化特质）**：学风严谨是其最显著的标签。受医学学科特性的影响，学生普遍面临较大的课业压力，“考研”与“考编”是校园生活的主旋律。由于校区位于连云港海州区，远离大都市的喧嚣，校园氛围相对单纯，但也存在部分学生对地理位置偏远的心理落差。\n\n**Risk（潜在风险）**：最大的不确定性来自“独立学院转设”。虽然目前康达学院维持现有的校名与办学性质，但在全国独立学院转设的大背景下，未来是否会更名、是否会与高职院校合并转设为职业本科，仍是悬在考生头上的达摩克利斯之剑。此外，从南京迁址连云港后的十年间，虽然硬件设施大幅提升，但对苏南、苏中生源的吸引力确实出现了一定程度的边际递减。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "严谨到骨子里",
+        "考研卷王",
+        "药港打工人",
+        "南医大嫡系",
+        "基层医疗脊梁"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.543882",
+    "updated_at": "2026-05-03T01:32:59.919840",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广东培正学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.58,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "广州商学院",
+        "similarity": "同类院校",
+        "key_difference": "广州商学院近年来在校园硬件升级和华为云学院等产教融合项目上投入巨大，学科布局更偏向“商科+技术”。相比之下，培正学院的优势在于更纯粹的语言环境和非营利性办学带来的相对稳定的学费结构。"
+      },
+      {
+        "name": "广东白云学院",
+        "similarity": "同类院校",
+        "key_difference": "白云学院在工科和职业技能对接上更具优势，而培正学院在商科的细分领域（如会计、国际贸易）以及人文氛围上略胜一筹。"
+      },
+      {
+        "name": "珠海科技学院/广州南方学院",
+        "similarity": "同类院校",
+        "key_difference": "这两者属于民办高校的“第一梯队”，在生源质量和学术资源上领先培正一个身位。培正属于“第二梯队”中的佼佼者，性价比更高。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "广东培正学院是一所以经管类学科为主、英语教学为核心特色的民办非营利性应用型本科高校。在广东省内民办高校序列中，培正学院以其独特的“英语强化教学”模式和深厚的商科底蕴占据了一席之地。\n\n**核心竞争力（Ace）**：**“全方位英语浸润式教学”**。学校最显著的标签是其外教规模。在大多数民办院校将外教视为“点缀”时，培正学院坚持大一全员外教小班口语课，这种高投入的语言训练为学生在珠三角外贸、跨境电商领域就业提供了极强的差异化竞争力。\n\n**校园氛围（Vibe）**：**“务实、商业、活跃”**。受广州商业文化影响，培正的学生群体表现出较强的实践倾向。校园内创业氛围浓厚，学生社团的运作模式往往带有模拟商业社会的影子，这使得毕业生在进入职场后能较快适应高强度的商业环境。\n\n**潜在风险（Risk）**：**学术深度与高层次人才断层**。作为典型的教学型民办院校，其科研平台和高层次学术带头人匮乏。在国家推动“新工科”建设的背景下，培正以传统商科为主的学科结构面临转型压力。此外，学生考研深造的学术支撑体系尚不完善，导致深造率长期处于低位。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "广州商学院",
+          "similarity": "同类院校",
+          "key_difference": "广州商学院近年来在校园硬件升级和华为云学院等产教融合项目上投入巨大，学科布局更偏向“商科+技术”。相比之下，培正学院的优势在于更纯粹的语言环境和非营利性办学带来的相对稳定的学费结构。"
+        },
+        {
+          "name": "广东白云学院",
+          "similarity": "同类院校",
+          "key_difference": "白云学院在工科和职业技能对接上更具优势，而培正学院在商科的细分领域（如会计、国际贸易）以及人文氛围上略胜一筹。"
+        },
+        {
+          "name": "珠海科技学院/广州南方学院",
+          "similarity": "同类院校",
+          "key_difference": "这两者属于民办高校的“第一梯队”，在生源质量和学术资源上领先培正一个身位。培正属于“第二梯队”中的佼佼者，性价比更高。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

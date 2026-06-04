@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
+const crypto = require('crypto')
 const { generateReport, saveReport, saveReportDraft, REPORTS_DIR } = require('./lib/report-builder')
 const { generatePdfFromHtml, isGeneratedPdfFresh } = require('./lib/pdf-generator')
 const { createReportRoutes } = require('./lib/report-routes')
@@ -12,7 +13,7 @@ const redis = require('./lib/redis')
 const { createCommerceStore } = require('./lib/commerce-store')
 const { signSessionToken, verifySessionToken } = require('./lib/session-token')
 const { exchangeCodeForSession } = require('./lib/wechat-auth')
-const { createJsapiPayment, parseWechatPayNotify } = require('./lib/wechat-pay')
+const { createVirtualPayment, parseVirtualPayGoodsNotify } = require('./lib/wechat-virtual-pay')
 const { msgSecCheck } = require('./lib/content-security')
 const {
   buildDeepProfileGateAnswer,
@@ -49,6 +50,7 @@ const PROXY_API_TOKEN = process.env.PROXY_API_TOKEN || ''
 const COMMERCE_SESSION_SECRET = process.env.COMMERCE_SESSION_SECRET || process.env.JWT_SECRET || 'local-commerce-session-secret'
 const LIMITED_FREE_UNLOCK_ENABLED = process.env.LIMITED_FREE_UNLOCK_ENABLED !== 'false'
 const DEEP_REPORT_VIEW_TOKEN_TTL_MS = Number(process.env.DEEP_REPORT_VIEW_TOKEN_TTL_MS || 10 * 60 * 1000)
+const WECHAT_MESSAGE_TOKEN = process.env.WECHAT_MESSAGE_TOKEN || process.env.WECHAT_PUSH_TOKEN || ''
 
 function hasRequiredAssessmentResults(assessments = {}) {
   return Boolean(assessments?.mbti?.completed && assessments?.holland?.completed)
@@ -202,6 +204,29 @@ function requireMembershipForReports(req, res, next) {
   }
   req.membership = membership
   next()
+}
+
+function verifyWechatMessageSignature({ signature = '', timestamp = '', nonce = '', token = WECHAT_MESSAGE_TOKEN } = {}) {
+  if (!token) return false
+  const expected = [token, timestamp, nonce]
+    .sort()
+    .join('')
+  const digest = crypto.createHash('sha1').update(expected).digest('hex')
+  return digest === signature
+}
+
+function requireWechatMessageSignature(req, res, next) {
+  if (!WECHAT_MESSAGE_TOKEN) {
+    return res.status(503).send('WECHAT_MESSAGE_TOKEN is required')
+  }
+  if (!verifyWechatMessageSignature(req.query || {})) {
+    return res.status(403).send('invalid signature')
+  }
+  next()
+}
+
+function handleWechatMessageVerify(req, res) {
+  res.send(String(req.query?.echostr || ''))
 }
 
 function validateChatRequest(req, res, next) {
@@ -690,6 +715,7 @@ app.post('/api/auth/wechat-login', async (req, res) => {
     const user = commerceStore.upsertWechatUser({
       openid: session.openid,
       unionid: session.unionid || '',
+      sessionKey: session.sessionKey || '',
       inviterId,
     })
     const membership = commerceStore.getMembershipStatus(user.userId)
@@ -789,19 +815,19 @@ app.post('/api/payment/create', requireCommerceAuth, async (req, res) => {
 
   try {
     const order = commerceStore.createPaymentOrder(req.commerceAuth.userId)
-    const paymentResult = await createJsapiPayment({
+    const user = commerceStore.getUser(req.commerceAuth.userId)
+    const virtualPayment = createVirtualPayment({
       order,
-      openid: req.commerceAuth.openid,
-      description: '深度填报会员',
+      sessionKey: user?.sessionKey || '',
     })
-    commerceStore.attachPrepayId(order.orderId, paymentResult.prepayId)
+    commerceStore.attachPrepayId(order.orderId, `virtual:${order.outTradeNo}`)
     res.json({
       orderId: order.orderId,
-      payment: paymentResult.payment,
+      virtualPayment,
     })
   } catch (err) {
-    const status = err.code === 'WECHAT_PAY_NOT_CONFIGURED' ? 503 : 502
-    res.status(status).json({ error: err.message || '微信支付下单失败', code: err.code || 'WECHAT_PAY_FAILED' })
+    const status = err.code === 'WECHAT_VIRTUAL_PAY_NOT_CONFIGURED' ? 503 : 502
+    res.status(status).json({ error: err.message || '微信虚拟支付下单失败', code: err.code || 'WECHAT_VIRTUAL_PAY_FAILED' })
   }
 })
 
@@ -816,41 +842,40 @@ app.get('/api/payment/order/:orderId', requireCommerceAuth, (req, res) => {
   })
 })
 
-app.post('/api/payment/wechat/notify', async (req, res) => {
+function handleVirtualPaymentNotify(req, res) {
   let notifyLogContext = {}
   try {
-    const notify = parseWechatPayNotify(req.body, {
-      headers: req.headers,
-      rawBody: req.rawBody || '',
-    })
-    const resource = notify.resource || notify
-    const outTradeNo = resource.out_trade_no || notify.out_trade_no
-    const transactionId = resource.transaction_id || notify.transaction_id || ''
-    const tradeState = resource.trade_state || notify.trade_state || 'SUCCESS'
-    notifyLogContext = { outTradeNo, transactionId, tradeState }
-
-    if (!outTradeNo) {
-      return res.status(400).json({ code: 'FAIL', message: 'out_trade_no is required' })
-    }
-    if (tradeState !== 'SUCCESS') {
-      return res.json({ code: 'SUCCESS', message: 'ignored' })
+    const notify = parseVirtualPayGoodsNotify(req.body)
+    notifyLogContext = {
+      outTradeNo: notify.outTradeNo,
+      transactionId: notify.transactionId,
+      productId: notify.productId,
     }
 
-    commerceStore.markOrderPaid(outTradeNo, transactionId, notify)
-    res.json({ code: 'SUCCESS', message: '成功' })
+    commerceStore.markOrderPaid(notify.outTradeNo, notify.transactionId, req.body)
+    res.json({ ErrCode: 0, ErrMsg: 'success' })
   } catch (err) {
-    console.error('WeChat pay notify error:', {
+    console.error('WeChat virtual pay notify error:', {
       ...notifyLogContext,
-      errorCode: err.code || 'WECHAT_PAY_NOTIFY_FAILED',
+      errorCode: err.code || 'WECHAT_VIRTUAL_PAY_NOTIFY_FAILED',
       message: err.message,
     })
     res.status(500).json({
-      code: 'FAIL',
-      message: err.message || '支付通知处理失败',
-      errorCode: err.code || 'WECHAT_PAY_NOTIFY_FAILED',
+      ErrCode: 1,
+      ErrMsg: err.message || '虚拟支付通知处理失败',
+      errorCode: err.code || 'WECHAT_VIRTUAL_PAY_NOTIFY_FAILED',
     })
   }
-})
+}
+
+app.post('/api/payment/virtual/notify', handleVirtualPaymentNotify)
+app.get('/xpay/goods/deliver/notify', requireWechatMessageSignature, handleWechatMessageVerify)
+app.post(
+  '/xpay/goods/deliver/notify',
+  express.text({ type: ['text/xml', 'application/xml', '*/xml'] }),
+  requireWechatMessageSignature,
+  handleVirtualPaymentNotify
+)
 
 // Blocking mode
 app.post('/api/chat', async (req, res) => {

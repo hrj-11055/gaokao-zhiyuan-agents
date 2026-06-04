@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.477246",
+    "updated_at": "2026-05-10T00:14:31.400045",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "成都外国语学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.06,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "四川外国语大学（公办）",
+        "similarity": "同类院校",
+        "key_difference": "成都外国语学院在学术底蕴、保研率及国家级科研项目上存在天然代差。但其优势在于办学机制灵活，转专业门槛极低，且在课程设置上更贴近市场需求（如开设大量商务、经贸类实操课程），适合不追求学术深造、以就业为导向的学生。"
+      },
+      {
+        "name": "吉林外国语大学（民办顶尖）",
+        "similarity": "同类院校",
+        "key_difference": "吉林外国语大学作为民办语言类高校的领头羊，已拥有成熟的硕士点和更强的全国影响力。成都外国语学院目前处于追赶状态，但其占据成都这一西南经济高地，在实习机会、城市吸引力及对东南亚/欧洲贸易的区位耦合上，具有更强的地域性优势。"
+      },
+      {
+        "name": "省内综合性民办本科",
+        "similarity": "同类院校",
+        "key_difference": "相比于四川工商学院、成都锦城学院等综合性院校，成外的专业壁垒更高，校园文化更具“洋气”特质，学生在涉外领域的竞争力明显更强。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "成都外国语学院（原四川外国语大学成都学院）正处于从“独立学院”向“独立设置的民办普通本科高校”转型的关键阵痛期与红利期并存阶段。作为四川省唯一的专业外国语民办本科高校，其核心竞争力在于极高的专业垂直度与市场敏感度。\n\n在学术层面，该校通过“贡嘎计划”及硕士点立项建设，正在努力摆脱民办高校“教学型”的单一标签，向“应用研究型”过渡。其多语种覆盖能力（16 门外语）在西南地区民办高校中无出其右，这为其在跨境电商、涉外工程翻译等细分赛道赢得了生存空间。\n\n然而，风险点同样清晰：转设后品牌溢价的重塑需要时间，学生及家长对“川外”金字招牌的路径依赖尚未完全消除。同时，随着人工智能（AI）翻译技术的爆发，传统语言类专业的就业逻辑正在被重构，学校提出的“外语+”战略是否能真正转化为学生的职场竞争力，仍需观察。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "四川外国语大学（公办）",
+          "similarity": "同类院校",
+          "key_difference": "成都外国语学院在学术底蕴、保研率及国家级科研项目上存在天然代差。但其优势在于办学机制灵活，转专业门槛极低，且在课程设置上更贴近市场需求（如开设大量商务、经贸类实操课程），适合不追求学术深造、以就业为导向的学生。"
+        },
+        {
+          "name": "吉林外国语大学（民办顶尖）",
+          "similarity": "同类院校",
+          "key_difference": "吉林外国语大学作为民办语言类高校的领头羊，已拥有成熟的硕士点和更强的全国影响力。成都外国语学院目前处于追赶状态，但其占据成都这一西南经济高地，在实习机会、城市吸引力及对东南亚/欧洲贸易的区位耦合上，具有更强的地域性优势。"
+        },
+        {
+          "name": "省内综合性民办本科",
+          "similarity": "同类院校",
+          "key_difference": "相比于四川工商学院、成都锦城学院等综合性院校，成外的专业壁垒更高，校园文化更具“洋气”特质，学生在涉外领域的竞争力明显更强。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

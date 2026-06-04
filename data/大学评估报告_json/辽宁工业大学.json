@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.518463",
+    "updated_at": "2026-05-12T09:54:22.181476",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "辽宁工业大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "对于高考位次处于省控线上 50-80 分、希望通过扎实的工科技术进入汽车或机械制造行业、且能适应东北气候与生活节奏的考生来说，辽宁工业大学是性价比极高的选择。",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 3.2,
+      "location_advantage": 2.6,
+      "globalization": 2.3,
+      "student_empowerment": 3.3,
+      "brand_asset": 2.9
+    },
+    "weighted_score": 2.7,
+    "one_sentence_recommend": "对于高考位次处于省控线上 50-80 分、希望通过扎实的工科技术进入汽车或机械制造行业、且能适应东北气候与生活节奏的考生来说，辽宁工业大学是性价比极高的选择。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "辽宁工业大学（Liaoning University of Technology）是一所以工为主，理、经、管、文、法、艺多学科协调发展的省属重点大学。在 2023-2026 年的观察周期内，该校展现出极强的“行业深耕”特征。\n\n**1. 核心定位与身份（Identity）**：\n学校被定义为“辽西工业摇篮”，其核心竞争力紧紧围绕“汽车”与“智能制造”展开。在东北老工业基地振兴的背景下，辽工大承担了大量应用型人才培养任务，其教学风格务实，具有典型的“下得去、留得住、用得好”的工科特质。\n\n**2. 王牌优势（Ace）**：\n车辆工程及其衍生的控制科学、机械工程是学校的灵魂。特别是“万得赛车队”，不仅是学生实践的平台，更是学校在全国高校中的一张名片。这种“以赛促学”的模式，使得辽工大毕业生在汽车制造、零部件研发领域拥有极高的行业认可度，甚至在某些细分岗位上能与 211 高校毕业生同台竞争。\n\n**3. 校园文化与氛围（Vibe）**：\n校风淳朴且管理相对严格。在锦州这座充满生活气息的城市，辽工大的学生展现出一种“低调务实”的特质。学校对考试纪律、学风建设抓得较紧，这种“严师出高徒”的传统在一定程度上保证了毕业生的基本功扎实。\n\n**4. 潜在风险与挑战（Risk）**：\n最大的挑战来自于地理位置与人才吸引力的错位。锦州作为三线城市，在吸引南方高水平博士及留住顶尖教授方面存在天然劣势。此外，随着新能源汽车产业的爆发式增长，学校在电池技术、自动驾驶算法等前沿领域的学科转型速度，将决定其在未来十年的行业地位。",
+      "one_sentence_recommend": "对于高考位次处于省控线上 50-80 分、希望通过扎实的工科技术进入汽车或机械制造行业、且能适应东北气候与生活节奏的考生来说，辽宁工业大学是性价比极高的选择。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

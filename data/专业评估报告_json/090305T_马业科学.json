@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.968667",
+    "updated_at": "2026-04-26T04:17:05.934987",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090305T_马业科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众到全国年毕业仅300人的\"蓝海\"专业，政策风口+消费升级双轮驱动，但极度依赖热爱和地域，不适合\"骑墙派\"。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 2.7,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 2.93
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "马匹饲养管理、骑术教学、赛事组织等核心工作高度依赖人与动物的物理互动和现场经验判断，AI 难以替代。马匹行为观察、骑手沟通、赛事现场应变等均为不可自动化技能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众到全国年毕业仅300人的\"蓝海\"专业，政策风口+消费升级双轮驱动，但极度依赖热爱和地域，不适合\"骑墙派\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "（无——马业科学尚无顶尖985/211高校将其作为核心专业）"
+      ],
+      "tier_A": [
+        "内蒙古农业大学",
+        "青岛农业大学"
+      ],
+      "tier_B": [
+        "新疆农业大学",
+        "武汉商学院"
+      ],
+      "tier_C_note": "锡林郭勒职业学院（高职层次）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

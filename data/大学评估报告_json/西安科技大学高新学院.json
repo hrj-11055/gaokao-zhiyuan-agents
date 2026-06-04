@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.846481",
+    "updated_at": "2026-05-10T01:21:14.548839",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西安科技大学高新学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.75,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "西安科技大学高新学院是 2006 年经教育部批准，由西安科技大学与社会力量合作举办的独立学院。在当前中国高等教育转设的大背景下，该校正处于从“独立学院”向“独立设置的民办本科高校”过渡的关键期。\n\n从评估结果看，该校的核心竞争力在于其“母体基因”的成功移植。西安科技大学作为传统的能源、矿业强校，为其高新学院注入了深厚的工科底蕴。学校并非盲目扩张专业，而是紧贴陕西及西部地区的产业结构，在能源动力、测绘、土木、计算机等领域形成了较强的应用型人才培养能力。\n\n然而，作为民办性质的院校，其学术资本的积累仍受限于科研投入和高层次人才引进的成本压力。目前的学术表现更多体现在“教学型”而非“研究型”。对于学生而言，该校提供了一个相对高标准的硬件环境和与产业接轨的课程体系，但在品牌溢价和深造天花板上，仍面临民办院校普遍存在的社会认知挑战。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

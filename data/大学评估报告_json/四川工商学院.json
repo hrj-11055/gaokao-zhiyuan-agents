@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.926851",
+    "updated_at": "2026-05-11T11:19:47.291678",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "四川工商学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.1,
+      "graduate_value": 2.4,
+      "location_advantage": 3.2,
+      "globalization": 2.5,
+      "student_empowerment": 3.0,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.51,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "成都锦城学院",
+        "similarity": "同类院校",
+        "key_difference": "锦城学院在生源质量和综合排名上略胜一筹，其背后的社会资源整合能力极强。相比之下，四川工商学院在“电子信息”等工科领域的垂直深耕更具特色，且在眉山校区的建设上展现了更大的扩张野心和硬件优势。"
+      },
+      {
+        "name": "四川大学锦江学院",
+        "similarity": "同类院校",
+        "key_difference": "锦江学院位于眉山彭山，环境优美但相对静谧；四川工商学院的成都校区位于郫都区团结镇，周边商业极其发达，学生接触社会的机会更多，生活便利度更高。"
+      },
+      {
+        "name": "成都文理学院",
+        "similarity": "同类院校",
+        "key_difference": "文理学院侧重于人文艺术，而四川工商学院在“工科+商科”的结合上更为紧密，对于理科生而言，四川工商学院的专业对口性通常更强。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "四川工商学院是一所典型的应用型民办本科高校，其发展历程经历了从“四川师范大学成都学院”到独立设置的华丽转身。在当前的民办高等教育版图中，该校展现出了极强的“生存韧性”与“差异化竞争”策略。\n\n**核心定位（Identity）**：学校明确以“应用型、地方性、国际化”为办学定位，重点服务于四川省的电子信息、现代服务业及文化创意产业。其办学逻辑并非追求高深的基础研究，而是通过产教融合，将学生培养为“上手快、留得住”的一线工程师与管理人才。\n\n**王牌优势（Ace）**：双创教育是该校最亮眼的标签。在“中国国际大学生创新大赛”中，四川工商学院作为民办院校，能够与公办重点大学同台竞技并斩获金银奖，这证明了其在创新人才培养模式上的独特成功。学校投入大量资源建设的省级众创空间，不仅是物理空间，更是学生从校园走向市场的“练兵场”。\n\n**文化特质（Vibe）**：务实、商业导向且充满活力。校园文化深受成都“安逸”与“包容”的影响，同时又带有强烈的职业化色彩。学生在校期间接触大量的企业项目实训，使得整体氛围更接近于“准职场”。\n\n**潜在风险（Risk）**：作为民办高校，其学术底蕴与公办院校相比仍有显著差距，尤其在高级别科研项目和高层次人才引进上存在天然短板。此外，随着四川省内民办本科竞争加剧，学费成本与就业回报的性价比平衡，是学校未来生源竞争中必须面对的挑战。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "成都锦城学院",
+          "similarity": "同类院校",
+          "key_difference": "锦城学院在生源质量和综合排名上略胜一筹，其背后的社会资源整合能力极强。相比之下，四川工商学院在“电子信息”等工科领域的垂直深耕更具特色，且在眉山校区的建设上展现了更大的扩张野心和硬件优势。"
+        },
+        {
+          "name": "四川大学锦江学院",
+          "similarity": "同类院校",
+          "key_difference": "锦江学院位于眉山彭山，环境优美但相对静谧；四川工商学院的成都校区位于郫都区团结镇，周边商业极其发达，学生接触社会的机会更多，生活便利度更高。"
+        },
+        {
+          "name": "成都文理学院",
+          "similarity": "同类院校",
+          "key_difference": "文理学院侧重于人文艺术，而四川工商学院在“工科+商科”的结合上更为紧密，对于理科生而言，四川工商学院的专业对口性通常更强。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实主义",
+        "团结镇美食家",
+        "双创黑马",
+        "眉山新贵",
+        "就业先锋",
+        "民办中坚",
+        "产教融合"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.113056",
+    "updated_at": "2026-04-25T21:49:02.117563",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082403",
+    "name": "林产化工",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "小众到全国仅8所高校开设的\"冷门工科\"，背靠双碳政策有想象空间，但岗位极度稀缺、起薪平庸，适合真爱党而非投机者。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.95
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "林产化工涉及天然产物化学、植物资源转化、生物质工艺设计等高度依赖实验和实地验证的领域，AI可辅助数据分析但难以替代化学合成实验、工艺调试和现场生产管理。但标准化检测和配方优化环节存在一定AI替代可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众到全国仅8所高校开设的\"冷门工科\"，背靠双碳政策有想象空间，但岗位极度稀缺、起薪平庸，适合真爱党而非投机者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京林业大学（A+，2024软科排名第1 / 2024 ABC排名第1）",
+        "东北林业大学（A+，211/双一流）"
+      ],
+      "tier_A": [
+        "北京林业大学（2024软科排名第1 / ABC排名前2，985平台）",
+        "西北农林科技大学（985/双一流）"
+      ],
+      "tier_B": [
+        "中南林业科技大学",
+        "中国林业科学研究院（研究生培养单位）"
+      ],
+      "tier_C_note": "江西农业大学、福建农林大学、西南林业大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

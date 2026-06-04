@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.191544",
+    "updated_at": "2026-04-25T05:04:52.502901",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080403",
+    "name": "材料化学",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "从\"天坑\"到\"风口\"的逆袭者——半导体、新能源双轮驱动，材料化学正翻盘，但深造仍是高薪入场券。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.46
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 在材料化学领域的应用正在加速——科学仿真、模型预测、高通量实验、自动化表征等环节已可部分替代人工（北京科技大学、清华大学等已有突破性成果），但实验验证、复杂配方调试、跨领域材料创新仍依赖人类经验判断。AI 更多是\"赋能工具\"而非\"替代者\"，掌握 AI 辅助材料设计能力的人才将具备更强竞争力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "从\"天坑\"到\"风口\"的逆袭者——半导体、新能源双轮驱动，材料化学正翻盘，但深造仍是高薪入场券。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国科学技术大学",
+        "清华大学",
+        "北京大学",
+        "上海交通大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_A": [
+        "北京理工大学",
+        "西北工业大学",
+        "北京航空航天大学",
+        "南开大学",
+        "浙江大学",
+        "北京科技大学",
+        "武汉理工大学",
+        "中山大学",
+        "复旦大学"
+      ],
+      "tier_B": [
+        "吉林大学",
+        "兰州大学",
+        "南京理工大学",
+        "山东大学",
+        "西北大学",
+        "华南理工大学",
+        "厦门大学",
+        "四川大学",
+        "天津大学",
+        "中南大学"
+      ],
+      "tier_C_note": "全国共 135 所院校开设材料化学专业，除上述院校外，各省属重点大学和具有材料学科特色的普通本科院校均可作为保底选择",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

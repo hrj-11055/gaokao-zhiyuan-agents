@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.089476",
+    "updated_at": "2026-04-26T01:06:45.141441",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083105TK_公安视听技术",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "公安系统\"技术直通车\"，入警率超90%，但全国仅7校开设、招生极少，是高度体制内锁定的稀缺专业。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.1,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.8,
+      "discipline_core": 3.6
+    },
+    "weighted_score": 3.87
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 虽可辅助视频图像分析（目标识别准确率已达95%），但刑事证据链构建、现场勘查决策、法律程序中的视听资料鉴定等核心工作需要人类专业判断和法律认证资格，AI 目前无法替代司法鉴定人签名和法律主体责任。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "公安系统\"技术直通车\"，入警率超90%，但全国仅7校开设、招生极少，是高度体制内锁定的稀缺专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国刑事警察学院",
+        "中国人民公安大学"
+      ],
+      "tier_A": [
+        "江苏警官学院",
+        "辽宁警察学院"
+      ],
+      "tier_B": [
+        "甘肃政法大学",
+        "吉林警察学院"
+      ],
+      "tier_C_note": "山西警察学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

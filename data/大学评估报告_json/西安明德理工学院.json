@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.511491",
+    "updated_at": "2026-05-10T01:12:44.477319",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西安明德理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "民办",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.88,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "西安明德理工学院（原西北工业大学明德学院）是一所以工科为核心，多学科协调发展的民办普通本科高校。作为陕西省首批完成转设的独立学院之一，该校深度承袭了西北工业大学（NWPU）的国防工业基因与严谨治学传统。在民办高等教育体系中，明德理工以“硬核工科”立身，其通信工程、机械设计、飞行器制造等专业在同类院校中具有显著的竞争优势。\n\n从学术维度看，学校虽不具备国家级重点实验室或A类学科，但在应用型人才培养上走在了前列。国家级一流本科专业建设点的获批，标志着其教学质量得到了官方认可。然而，转设后的“阵痛期”依然存在，主要表现为与母体学校资源剥离后的品牌重塑压力，以及在高层次人才引进上的天然短板。\n\n在毕业生去向方面，明德理工展现了极强的“产业适配性”。其毕业生大量流入西安本地及长三角、珠三角的制造业、电子信息产业。虽然深造率（考研率）与公办名校相比有较大差距，但在就业市场的“工具属性”极强，深受中型制造企业和技术服务型企业的青睐。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬核工科",
+        "务实主义",
+        "西工大余晖",
+        "秦岭校友会",
+        "考研钉子户",
+        "就业工具人",
+        "管理严苛"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

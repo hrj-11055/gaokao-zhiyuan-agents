@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.897158",
+    "updated_at": "2026-05-17T00:45:36.806181",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120202",
+    "name": "市场营销",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.2,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.45
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5500–7500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "AI可高效完成市场调研数据分析、文案生成、广告投放优化等重复性工作，基础营销岗面临替代压力；但策略制定、品牌洞察、创意策划等高阶职能短期内难以被AI取代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "清华大学",
+        "上海交通大学",
+        "中山大学"
+      ],
+      "tier_A": [
+        "北京大学",
+        "南开大学",
+        "复旦大学",
+        "南京大学",
+        "厦门大学",
+        "武汉大学",
+        "西安交通大学",
+        "对外经济贸易大学",
+        "中央财经大学",
+        "上海财经大学"
+      ],
+      "tier_B": [
+        "重庆大学",
+        "湖南大学",
+        "华中科技大学",
+        "暨南大学",
+        "西南财经大学",
+        "中南财经政法大学",
+        "山东大学",
+        "浙江大学（含所有第四轮学科评估 B 类及以上高校）"
+      ],
+      "tier_C_note": "其他开设市场营销专业的普通本科院校",
+      "selection_advice": "**名校优先选商科强校（人大、清北复交），中等分数优先考虑区域中心城市高校（实习资源丰富），普通院校注重实战技能培养。**"
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

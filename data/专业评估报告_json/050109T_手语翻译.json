@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.072606",
+    "updated_at": "2026-04-23T09:51:21.777324",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "050109T_手语翻译",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "社会急需但养不活自己的\"冷门良心专业\"，供需比2000:1听着震撼，但岗位预算有限、天花板低，靠情怀吃饭。",
+    "radar": {
+      "market_return": 2.3,
+      "industry_outlook": 2.5,
+      "future_adaptability": 3.8,
+      "career_path": 1.8,
+      "education_resources": 2.0,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 2.59
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3500–5000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 手语翻译技术（如数字人手语播报）正在发展，基于计算机视觉和自然语言处理，已应用于新闻播报、会议翻译等场景。但在情感表达、语境理解、面对面沟通（如医疗问诊、法律咨询）等复杂场景中，人工手语翻译的共情能力和灵活应变远超 AI，短期内无法被完全替代。但基础性、标准化场景的翻译工作将逐步被 AI 分流。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "社会急需但养不活自己的\"冷门良心专业\"，供需比2000:1听着震撼，但岗位预算有限、天花板低，靠情怀吃饭。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "（无。该专业无 985/211 院校开设，无学科评估 A 类）"
+      ],
+      "tier_A": [
+        "南京特殊教育师范学院（全国唯一独立设置的特教师范本科，手语翻译专业最权威开设院校）"
+      ],
+      "tier_B": [
+        "郑州工程技术学院",
+        "北京联合大学（特殊教育学院）",
+        "绥化学院"
+      ],
+      "tier_C_note": "其他开设手语翻译或相关方向的本科/专科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

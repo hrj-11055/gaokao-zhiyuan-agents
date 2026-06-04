@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.497832",
+    "updated_at": "2026-05-09T17:44:09.852592",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海外国语大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.7,
+      "location_advantage": 4.8,
+      "globalization": 4.9,
+      "student_empowerment": 3.8,
+      "brand_asset": 4.3
+    },
+    "weighted_score": 4.5,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [
+        "对于研究生而言，这里距离各大企业"
+      ],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "上海外国语大学（SISU）不仅是中国外语教育的先行者，更是当下全球治理人才培养的战略高地。在“双一流”建设背景下，上外已成功实现从传统“单语种”教学向“多语种+”复合型人才培养的华丽转型。其核心竞争力在于：极高的行业准入溢价、无可比拟的国际化视野以及深度嵌入上海城市基因的商业灵敏度。\n\n从学术维度看，上外在外国语言文学领域的统治力依然稳固，尤其是高级翻译学院（GIIT）作为亚洲唯一获得国际会议口译员协会（AIIC）最高评级的机构，确立了其在翻译界的“黄埔军校”地位。然而，面对人工智能（AI）对基础翻译岗位的冲击，上外正通过强化“区域国别研究”和“国际舆论监测”等智库功能，重新定义语言学科的学术边界。\n\n在就业市场，上外毕业生展现出极强的“跨界”能力。他们不仅活跃在外交部、联合国等传统高端外事领域，更在跨国咨询、金融贸易、互联网出海等高薪赛道表现抢眼。这种“语言+专业”的组合拳，使得上外在经济下行周期中依然保持了极高的起薪水平和就业韧性。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.005636",
+    "updated_at": "2026-04-25T02:16:55.070273",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "071202",
+    "name": "应用统计学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "数据时代的\"万金油\"，就业面广但分化严重——名校+编程能力=高薪入场券，普通院校+纸上谈兵=毕业即转行。",
+    "radar": {
+      "market_return": 3.7,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.9,
+      "career_path": 3.6,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.85
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "基础统计计算和简单回归分析正被AI工具快速替代，但高阶统计建模（因果推断、实验设计、贝叶斯分析）和\"从数据到商业决策\"的闭环能力极难被AI取代。真正的风险在于——只会套公式不会思考的\"表哥表姐\"将被淘汰。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "数据时代的\"万金油\"，就业面广但分化严重——名校+编程能力=高薪入场券，普通院校+纸上谈兵=毕业即转行。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "中国人民大学"
+      ],
+      "tier_A": [
+        "南开大学",
+        "华东师范大学",
+        "厦门大学",
+        "东北师范大学",
+        "北京师范大学",
+        "上海财经大学",
+        "中国科学技术大学"
+      ],
+      "tier_B": [
+        "中央财经大学",
+        "浙江工商大学",
+        "江西财经大学",
+        "东北财经大学",
+        "复旦大学",
+        "清华大学（非主攻但实力强）",
+        "中南财经政法大学",
+        "中山大学",
+        "西南财经大学",
+        "中南大学"
+      ],
+      "tier_C_note": "全国约190所开设应用统计学的普通本科院校，如地方财经类院校、综合性大学的统计系等。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

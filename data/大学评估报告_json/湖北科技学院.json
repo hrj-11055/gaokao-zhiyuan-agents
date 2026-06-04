@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.814650",
+    "updated_at": "2026-05-09T15:54:00.364824",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖北科技学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.8,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "湖北医药学院（十堰）",
+        "similarity": "同类院校",
+        "key_difference": "湖北医药学院医学专业更精、排名更高，但湖北科技学院学科门类更全，拥有师范、工科等多元背景，学生综合素质培养更具弹性。"
+      },
+      {
+        "name": "湖北理工学院（黄石）",
+        "similarity": "同类院校",
+        "key_difference": "湖北理工侧重传统重工业（机械、土木），而湖北科技学院在大健康、生物医药及核能应用领域具有显著的差异化优势。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "湖北科技学院（Hubei University of Science and Technology）是一所位于湖北省咸宁市的省属综合性本科院校。其核心竞争力源于 2002 年由原咸宁医学院与咸宁师范高等专科学校的强强合并。\n\n**核心定位**：学校已发展成为湖北省“转型发展”的标杆院校，重点培养面向基层、面向产业一线的应用型高级专门人才。其医学教育在湖北省内享有“基层名医摇篮”的美誉，而核技术、师范教育则构成了学校的另外两根支柱。\n\n**王牌优势**：临床医学、药学及核技术应用。作为国家“卓越医生教育培养计划”试点高校，其医学毕业生在湖北省县域医疗机构的覆盖率极高。此外，依托咸宁作为“中国核电之城”的战略地位，其核工程专业在省属高校中具有不可替代的稀缺性。\n\n**发展态势**：学校正处于从“规模扩张”向“内涵提升”的关键转型期。通过建设“智慧校园”和更新实验实训设备，硬件水平已跨入省属高校第一梯队。然而，非省会城市的地理位置在吸引顶尖学术带头人方面仍存在天然短板。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "湖北医药学院（十堰）",
+          "similarity": "同类院校",
+          "key_difference": "湖北医药学院医学专业更精、排名更高，但湖北科技学院学科门类更全，拥有师范、工科等多元背景，学生综合素质培养更具弹性。"
+        },
+        {
+          "name": "湖北理工学院（黄石）",
+          "similarity": "同类院校",
+          "key_difference": "湖北理工侧重传统重工业（机械、土木），而湖北科技学院在大健康、生物医药及核能应用领域具有显著的差异化优势。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实医者",
+        "鄂南明珠",
+        "核电先锋",
+        "考研基地",
+        "转型标杆"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.166205",
+    "updated_at": "2026-04-23T13:19:52.579969",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050251",
+    "name": "爱尔兰语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "全国仅3所院校开设的\"超冷门小语种\"，稀缺性是双刃剑——竞争极小但岗位池也极小，只适合对凯尔特文化有执念、且愿意赴爱尔兰发展的语言狂热者。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 1.8,
+      "future_adaptability": 2.5,
+      "career_path": 2.0,
+      "education_resources": 1.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 2.1
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–9,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "主流 AI 大模型对低资源语言（如爱尔兰语）支持严重不足，数字化语料稀缺，短期内 AI 无法替代爱尔兰语专业翻译。但这也意味着该语言的使用场景本身就极为有限——\"AI 替代不了\"不等于\"有市场需求\"。来源：2025 WAIC 世界人工智能大会、36氪报道"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅3所院校开设的\"超冷门小语种\"，稀缺性是双刃剑——竞争极小但岗位池也极小，只适合对凯尔特文化有执念、且愿意赴爱尔兰发展的语言狂热者。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "北京外国语大学（外国语言文学 A+，极大概率拥有爱尔兰语方向或师资）"
+      ],
+      "tier_A": [
+        "上海外国语大学（外国语言文学 A+）",
+        "北京语言大学"
+      ],
+      "tier_B": [
+        "广东外语外贸大学",
+        "黑龙江大学",
+        "大连外国语大学",
+        "四川外国语大学",
+        "西安外国语大学",
+        "天津外国语大学"
+      ],
+      "tier_C_note": "部分地方综合性大学（如延边大学、广西民族大学等有小语种传统的高校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

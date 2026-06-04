@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.987411",
+    "updated_at": "2026-04-22T01:04:59.247025",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "040205",
+    "name": "运动人体科学",
+    "category": "教育学",
+    "recommendation_level": "yellow",
+    "summary": "体育与医学的\"夹心层\"——政策风口下前景可期，但缺乏独立职业准入通道，薪资天花板偏低，深造几乎是刚需。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 2.5,
+      "education_resources": 2.8,
+      "discipline_core": 3.3
+    },
+    "weighted_score": 3.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,500–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "运动人体科学的核心工作涉及人体的物理评估、手法治疗、运动处方制定等，需要精细的触觉反馈和面对面的个性化判断，这些能力目前 AI 和机器人难以完全替代。但数据分析、运动监测等环节可能被 AI 工具辅助或部分替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "体育与医学的\"夹心层\"——政策风口下前景可期，但缺乏独立职业准入通道，薪资天花板偏低，深造几乎是刚需。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京体育大学",
+        "上海体育大学"
+      ],
+      "tier_A": [
+        "首都体育学院",
+        "成都体育学院",
+        "南京体育学院",
+        "广州体育学院"
+      ],
+      "tier_B": [
+        "沈阳体育学院",
+        "西安体育学院",
+        "武汉体育学院",
+        "天津体育学院",
+        "湖南师范大学"
+      ],
+      "tier_C_note": "其他开设运动人体科学专业的省属体育院校及综合类院校（如山东体育学院、吉林体育学院、哈尔滨体育学院等）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

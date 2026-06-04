@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.993944",
+    "updated_at": "2026-04-25T20:14:13.093732",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082010T_智能飞行器技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略级\"尖兵专业\"，全国仅 3 校开设，人才缺口百万级，但门槛极高、资源极度集中，非顶尖学霸慎入。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.8,
+      "future_adaptability": 3.8,
+      "career_path": 3.2,
+      "education_resources": 2.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 4.02
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "12,000–22,600元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "该专业本身就是 AI 与航空航天的深度融合——开发的是让飞行器\"变聪明\"的算法和系统，而非被 AI 替代的对象。核心技能包括飞控算法设计、气动分析、嵌入式系统开发、自主导航规划等，均为 AI 时代的\"造轮子\"型能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略级\"尖兵专业\"，全国仅 3 校开设，人才缺口百万级，但门槛极高、资源极度集中，非顶尖学霸慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京航空航天大学（985/211/\"双一流\"，航空宇航科学全国顶尖，校友会/软科排名第 1）"
+      ],
+      "tier_A": [
+        "南京航空航天大学（211/\"双一流\"，直升机设计全国领先，2 个全国重点实验室）",
+        "国防科技大学（985/211，军校体系，校友会 2025 研究型排名第 1）"
+      ],
+      "tier_B": [
+        "暂无（该专业开设院校过少，尚无更多梯队）"
+      ],
+      "tier_C_note": "暂无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

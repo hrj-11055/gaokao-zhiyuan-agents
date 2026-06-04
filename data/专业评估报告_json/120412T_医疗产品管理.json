@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.167424",
+    "updated_at": "2026-04-27T13:07:14.244026",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120412T_医疗产品管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "医疗器械万亿赛道的\"通行证办理员\"——小众专业，对口率逆天，但赛道窄、学校少，赌的是行业红利能否持续。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 2.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.63
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "医疗器械注册涉及大量法规解读、技术文档审核、与监管部门沟通等需要\"人判断\"的工作。AI 可辅助检索法规条款和生成申报材料模板，但无法替代人工对合规风险的判断、与审评中心的沟通斡旋。核心壁垒在于对法规体系的深度理解和人际沟通。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "医疗器械万亿赛道的\"通行证办理员\"——小众专业，对口率逆天，但赛道窄、学校少，赌的是行业红利能否持续。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国药科大学（211",
+        "双一流",
+        "药学顶尖，该专业在药学院开设，资源雄厚）"
+      ],
+      "tier_A": [
+        "沈阳药科大学（软科 2025 专业排名 A+ 第一，药学传统强校）",
+        "上海健康医学院（全国首设此专业",
+        "行业实习资源丰富",
+        "首届就业数据亮眼）"
+      ],
+      "tier_B": [
+        "大连工业大学",
+        "河南中医药大学 （开设较早但专业建设尚在完善中）"
+      ],
+      "tier_C_note": "[该专业开设院校总数仅 6–7 所，其余院校数据有限，暂不列出]",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.216865",
+    "updated_at": "2026-04-25T00:46:20.770265",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070602",
+    "name": "应用气象学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "\"小众但不可替代的'天气翻译官'，政策东风劲吹，但赛道窄、门槛高，编制外生存空间有限。\"",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.7,
+      "future_adaptability": 3.4,
+      "career_path": 3.0,
+      "education_resources": 3.2,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.38
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "气象数据分析需要深厚的物理直觉和领域知识，AI虽然能辅助模式预报和数据处理，但极端天气判断、多源数据综合解读、行业定制化气象服务方案设计等核心环节仍高度依赖人工经验。AI更多是\"赋能工具\"而非\"替代者\"。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"小众但不可替代的'天气翻译官'，政策东风劲吹，但赛道窄、门槛高，编制外生存空间有限。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京信息工程大学",
+        "南京大学"
+      ],
+      "tier_A": [
+        "兰州大学",
+        "中山大学",
+        "中国农业大学"
+      ],
+      "tier_B": [
+        "成都信息工程大学",
+        "中国民航大学",
+        "沈阳农业大学"
+      ],
+      "tier_C_note": "中国民用航空飞行学院、防灾科技学院、东北农业大学、广西大学、云南大学等其余开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

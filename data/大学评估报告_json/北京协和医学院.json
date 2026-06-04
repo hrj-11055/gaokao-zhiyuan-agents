@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.698252",
+    "updated_at": "2026-05-09T14:12:05.249918",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "北京协和医学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 5.0,
+      "graduate_value": 5.0,
+      "location_advantage": 4.9,
+      "globalization": 4.8,
+      "student_empowerment": 3.2,
+      "brand_asset": 5.0
+    },
+    "weighted_score": 4.88,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "北京协和医学院（PUMC）不仅是一所大学，更是中国现代医学教育的起点与标杆。作为国家卫生健康委员会直属的唯一一所全国重点大学，它与中国医学科学院（CAMS）实行“院校合一”的独特管理体制。这种体制确保了协和在科研资源、临床平台和政策支持上拥有其他医学院难以企及的“国家队”优势。\n\n在学术层面，协和代表了中国医学的最高水平。其临床医学、基础医学、药学等核心学科在历次评估中均稳居 A+ 阵列。学校坚持“小规模、精英化”的办学理念，每年的招生规模极小，确保了极高的生师比和资源分配率。对于学生而言，进入协和意味着进入了一个由顶尖院士、知名教授和行业领袖构成的封闭式精英社交圈。\n\n然而，这种精英主义也伴随着极高的代价。协和的学制严苛，尤其是临床医学八年制，其淘汰率和学业压力在业内闻名。学生在享受顶级资源的同时，必须承受长达八年的高强度训练和近乎残酷的竞争环境。此外，校园空间的局促（东单校区）与医学人文的厚重形成了鲜明对比，这要求学生必须具备极强的心理调节能力和对医学事业的绝对忠诚。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.969130",
+    "updated_at": "2026-04-25T05:08:26.541388",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080404",
+    "name": "冶金工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "工业基石型硬核专业，对口就业率极高但择业面窄，吃\"钢铁饭\"也靠钢铁命，选校大于选专业，非头部院校慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 2.6,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 3.2,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 2.88
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~92%",
+      "alignment_rate": "~75%",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "冶金工艺涉及大量现场实操、高温反应控制、设备调试等物理世界操作，短期内AI难以替代。但冶金大数据建模、流程模拟仿真等辅助环节已被AI渗透，掌握Python+TensorFlow的冶金工程师薪资溢价41%（applysquare数据）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "工业基石型硬核专业，对口就业率极高但择业面窄，吃\"钢铁饭\"也靠钢铁命，选校大于选专业，非头部院校慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中南大学",
+        "北京科技大学",
+        "东北大学"
+      ],
+      "tier_A": [
+        "武汉科技大学",
+        "重庆大学",
+        "昆明理工大学",
+        "上海大学",
+        "内蒙古科技大学"
+      ],
+      "tier_B": [
+        "辽宁科技大学",
+        "安徽工业大学",
+        "江西理工大学",
+        "贵州大学",
+        "西安建筑科技大学"
+      ],
+      "tier_C_note": "赣南科技学院、攀枝花学院、华北理工大学轻工学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

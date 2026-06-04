@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.196583",
+    "updated_at": "2026-04-25T10:55:27.480697",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "080801",
+    "name": "自动化",
+    "category": "工学",
+    "recommendation_level": "green",
+    "summary": "万金油的升级版——从PLC到AI全能接，技术壁垒厚、赛道多，但本科阶段\"博而不精\"，需要靠深造或实战打磨出真刀真枪的硬功夫。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.3,
+      "future_adaptability": 4.5,
+      "career_path": 4.0,
+      "education_resources": 4.0,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 4.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "自动化工程师的核心在于\"将抽象算法落地到物理世界\"——需要处理传感器实时数据、设备安全约束、物理环境的不确定性，这种\"虚实结合\"的复杂工程问题难以被纯AI替代。AI视觉算法可辅助故障检测，但自动化工程师需统筹化学反应实时数据与设备安全运行等多维度挑战，属于AI时代天然的\"AI+工程\"融合型人才。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "万金油的升级版——从PLC到AI全能接，技术壁垒厚、赛道多，但本科阶段\"博而不精\"，需要靠深造或实战打磨出真刀真枪的硬功夫。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "浙江大学",
+        "哈尔滨工业大学",
+        "北京航空航天大学",
+        "东北大学"
+      ],
+      "tier_A": [
+        "上海交通大学",
+        "华中科技大学",
+        "西安交通大学",
+        "北京理工大学",
+        "东南大学",
+        "南京航空航天大学",
+        "中南大学",
+        "西北工业大学",
+        "北京科技大学",
+        "华南理工大学"
+      ],
+      "tier_B": [
+        "重庆邮电大学（自动化特色专业，工信部重点实验室）",
+        "南京理工大学",
+        "武汉理工大学",
+        "哈尔滨工程大学",
+        "杭州电子科技大学",
+        "广东工业大学",
+        "燕山大学",
+        "浙江工业大学"
+      ],
+      "tier_C_note": "各省属理工类本科院校、地方综合大学自动化系（如XX理工大学、XX工程学院等410所开设院校中非AB档的普通本科院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

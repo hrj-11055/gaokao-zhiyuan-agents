@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.809135",
+    "updated_at": "2026-05-11T15:08:41.089587",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "青岛黄海学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 0.0,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "内务检查",
+        "description": "要求被子叠成“豆腐块”，桌面不能放杂物，甚至对垃圾桶里的垃圾量都有规定。"
+      },
+      {
+        "category": "早晚自习",
+        "description": "大一、大二学生强制参加，缺勤直接扣除学分。"
+      },
+      {
+        "category": "跑操制度",
+        "description": "清晨 6 点多的操场上，常能看到成群结队的黄海学子在寒风中奔跑。\n这种管理模式被校方视为“养成教育”，但在学生眼中则是“高四复读班”的延续。\n\n### 5.3 品牌资产与文化印记（权重 10%）`[需搜索：搜索组 G]`\n\n| 指标 | 数据 | 数据来源 |\n|------|------|---------|\n| 软科排名（民办） | 第 20 名 (2025) | 软科官方 |\n| 校友会排名（民办） | 第 16 名 (2024) | 校友会 |\n| 抖音官方粉丝 | 15.8 万 | 抖音 |\n\n**品牌影响力分析**：\n在民办教育界，青岛黄海学院与青岛滨海学院并称为“青岛民办双雄”。其品牌核心竞争力在于“稳健”。它不追求花哨的国际化标签，而是深耕本地就业市场。在山东省内，黄海学院的毕业证在中小企业中具有较高的认可度。\n\n### 5.4 校园文化：博物馆里的大学\n\n该校拥有一个极具特色的“中华传统文化博物馆”，馆藏丰富，甚至包含大量珍贵的文物。学校将“传统文化教育”作为必修课，要求学生学习书法、茶道或儒家经典。这种将“极度现代的军事化管理”与“极度传统的儒家教育”结合的文化怪圈，构成了黄海学院独特的精神内核。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

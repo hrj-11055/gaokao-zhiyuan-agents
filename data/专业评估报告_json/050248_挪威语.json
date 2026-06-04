@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.974149",
+    "updated_at": "2026-04-23T13:06:18.637308",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050248",
+    "name": "挪威语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "全球仅500万母语者的\"冰川语种\"，稀缺是双刃剑——对口岗位极度有限，但竞争者更少。AI翻译浪潮下，纯语言技能的护城河正在消融。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.2,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 2.65
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "翻译是AI替代的首批重灾区。麦肯锡预测到2030年全球约30%外语相关工作将被AI部分或完全替代。挪威语虽属低资源语言（训练数据少），但DeepL、Google Translate等已支持挪威语翻译，且能力在快速提升。纯语言技能护城河正在瓦解，唯有\"语言+行业专业能力\"的复合型定位才有抗风险能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全球仅500万母语者的\"冰川语种\"，稀缺是双刃剑——对口岗位极度有限，但竞争者更少。AI翻译浪潮下，纯语言技能的护城河正在消融。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（国内唯一系统性培养挪威语人才的院校，拥有北欧研究中心，公派留学渠道成熟）"
+      ],
+      "tier_A": [
+        "上海外国语大学（如有开设）"
+      ],
+      "tier_B": [
+        "黑龙江大学（俄语传统强校，北欧语言有一定地缘优势）[待核实是否实际开设挪威语]"
+      ],
+      "tier_C_note": "暂无其他明确开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

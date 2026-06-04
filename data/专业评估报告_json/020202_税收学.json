@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.085684",
+    "updated_at": "2026-05-17T01:01:52.533574",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "020202",
+    "name": "税收学",
+    "category": "经济学",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.2,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.51
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~88%",
+      "alignment_rate": "~72%",
+      "starting_salary": "5,600–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "基础算税、报税操作容易被AI替代，但税务筹划、政策解读、复杂案件处理仍需人类专业判断。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央财经大学",
+        "中国人民大学",
+        "上海财经大学",
+        "厦门大学",
+        "西南财经大学"
+      ],
+      "tier_A": [
+        "对外经济贸易大学",
+        "中南财经政法大学",
+        "东北财经大学",
+        "江西财经大学",
+        "浙江财经大学",
+        "首都经济贸易大学",
+        "天津财经大学",
+        "南京财经大学",
+        "山东财经大学",
+        "河南财经政法大学"
+      ],
+      "tier_B": [
+        "上海立信会计金融学院",
+        "南京审计大学",
+        "广东财经大学",
+        "云南财经大学",
+        "贵州财经大学",
+        "安徽财经大学",
+        "重庆工商大学",
+        "哈尔滨商业大学",
+        "河北经贸大学",
+        "山西财经大学"
+      ],
+      "tier_C_note": "其他开设税收学专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.159496",
+    "updated_at": "2026-04-28T04:03:39.543132",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130311T_影视摄影与制作",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "光影艺术与技术交织的\"匠人之路\"，入行门槛不低但回报极度依赖个人作品和行业人脉，非真爱慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.0,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI视频生成工具（Sora、Runway、Pika、可灵等）正在快速迭代，可自动生成影视风格镜头和后期特效，对中低端商业视频、短视频内容制作的替代效应逐步显现。但高端电影摄影中的现场决策、光影艺术把控和导演协作仍依赖人类，短期不可替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "光影艺术与技术交织的\"匠人之路\"，入行门槛不低但回报极度依赖个人作品和行业人脉，非真爱慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京电影学院",
+        "中国传媒大学"
+      ],
+      "tier_A": [
+        "上海戏剧学院",
+        "中央戏剧学院",
+        "浙江传媒学院",
+        "南京艺术学院",
+        "中国美术学院"
+      ],
+      "tier_B": [
+        "吉林动画学院",
+        "山西传媒学院",
+        "武汉传媒学院",
+        "四川传媒学院",
+        "河北传媒学院",
+        "云南艺术学院",
+        "广西艺术学院",
+        "山东艺术学院",
+        "大连艺术学院"
+      ],
+      "tier_C_note": "部分地方综合性大学开设的影视摄影与制作专业（如哈尔滨师范大学、重庆大学美视电影学院等），有基本教学条件但在业界影响力有限。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

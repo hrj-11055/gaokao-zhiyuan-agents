@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.209897",
+    "updated_at": "2026-04-24T23:18:03.753636",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070101",
+    "name": "数学与应用数学",
+    "category": "理学",
+    "recommendation_level": "green",
+    "summary": "基础学科的\"万能底座\"，AI/金融赛道溢价极高，但本科直聘竞争力不足，深造几乎是高薪路径的标配。",
+    "radar": {
+      "market_return": 4.0,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.3,
+      "career_path": 3.5,
+      "education_resources": 4.0,
+      "discipline_core": 4.8
+    },
+    "weighted_score": 4.18
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~86.1%",
+      "alignment_rate": "",
+      "starting_salary": "6,900–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "数学建模、逻辑推理、抽象证明等核心认知能力是AI系统的\"设计工具\"而非\"替代对象\"，数学人才恰恰是AI系统的构建者而非被替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "基础学科的\"万能底座\"，AI/金融赛道溢价极高，但本科直聘竞争力不足，深造几乎是高薪路径的标配。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "复旦大学",
+        "山东大学",
+        "清华大学",
+        "南开大学",
+        "中国科学技术大学"
+      ],
+      "tier_A": [
+        "北京师范大学",
+        "上海交通大学",
+        "西安交通大学",
+        "南京大学",
+        "浙江大学",
+        "吉林大学",
+        "哈尔滨工业大学",
+        "同济大学",
+        "华东师范大学",
+        "武汉大学",
+        "中山大学",
+        "四川大学"
+      ],
+      "tier_B": [
+        "首都师范大学",
+        "湖南师范大学",
+        "华南师范大学",
+        "东北师范大学",
+        "南京师范大学",
+        "苏州大学",
+        "兰州大学",
+        "大连理工大学",
+        "厦门大学",
+        "华中科技大学",
+        "中南大学",
+        "西北工业大学",
+        "北京航空航天大学",
+        "天津大学",
+        "重庆大学"
+      ],
+      "tier_C_note": "各省属重点师范大学（如浙江师范大学、河南师范大学、安徽师范大学等）、各省属综合类大学，全国共617所本科院校开设该专业，C档院校覆盖面极广",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

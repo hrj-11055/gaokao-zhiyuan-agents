@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.999610",
+    "updated_at": "2026-04-22T12:11:42.673289",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040202K_运动训练",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "体教融合下的\"竞技派\"，赛道窄但天花板高，极度依赖运动天赋与专项等级证书，普通人需慎重考虑。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.3
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–5,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI在运动数据分析、训练计划优化、伤病预测等方面应用日益广泛，但运动训练的核心——身体示范、动作纠偏、现场战术指导和心理激励——高度依赖人际互动和临场判断，短期内无法被AI完全替代。AI更可能成为教练的辅助工具而非替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "体教融合下的\"竞技派\"，赛道窄但天花板高，极度依赖运动天赋与专项等级证书，普通人需慎重考虑。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京体育大学",
+        "上海体育大学"
+      ],
+      "tier_A": [
+        "华东师范大学",
+        "武汉体育学院",
+        "天津体育学院",
+        "华南师范大学",
+        "成都体育学院",
+        "福建师范大学"
+      ],
+      "tier_B": [
+        "首都体育学院",
+        "沈阳体育学院",
+        "西安体育学院",
+        "广州体育学院",
+        "山东体育学院",
+        "南京体育学院",
+        "吉林体育学院",
+        "哈尔滨体育学院"
+      ],
+      "tier_C_note": "2025年175所单招院校中的普通本科院校（如洛阳师范学院、西南科技大学等地方院校）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

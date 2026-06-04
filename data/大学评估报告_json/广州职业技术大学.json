@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.705215",
+    "updated_at": "2026-05-01T02:23:27.464577",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "广州职业技术大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "最适合：",
+    "radar": {},
+    "weighted_score": 4.29,
+    "one_sentence_recommend": "最适合："
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "广州",
+      "region": "粤港澳大湾区",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "深圳职业技术大学",
+        "similarity": "同类院校",
+        "key_difference": "深职大在电子信息和全球知名度上略胜一筹；广职大则在艺术设计、轨道交通和番禺本土制造业的耦合度上更具特色。"
+      },
+      {
+        "name": "普通公办二本",
+        "similarity": "同类院校",
+        "key_difference": "广职大的实训设备和企业资源通常远超同分段的普通二本，但在考研氛围和学术底蕴上略显薄弱。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "- **Identity（核心定位）**：中国职业教育的“清华预备队”，由全国顶尖高职升格而来的公办职业本科旗舰。它代表了中国高等教育的一种新范式——不再以论文论英雄，而以解决复杂工程问题的能力为准绳。\n- **Ace（王牌优势）**：产教融合的深度与广度。学校不是在“模拟”生产，而是在“参与”生产。其艺术设计、智慧汽车、轨道交通专业已形成强大的行业护城河。\n- **Vibe（文化特质）**：务实、硬核、工匠精神。这里的学生不空谈理论，他们更相信手中的工具和眼前的代码。\n- **Risk（潜在风险）**：社会偏见依然存在。尽管升格本科，但在部分用人单位眼中，职业本科的含金量仍需时间检验。此外，随着规模扩大，如何保持高水平的生均实训资源也是一大挑战。",
+      "one_sentence_recommend": "最适合：",
+      "horizontal_comparison": [
+        {
+          "name": "深圳职业技术大学",
+          "similarity": "同类院校",
+          "key_difference": "深职大在电子信息和全球知名度上略胜一筹；广职大则在艺术设计、轨道交通和番禺本土制造业的耦合度上更具特色。"
+        },
+        {
+          "name": "普通公办二本",
+          "similarity": "同类院校",
+          "key_difference": "广职大的实训设备和企业资源通常远超同分段的普通二本，但在考研氛围和学术底蕴上略显薄弱。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实到骨子里",
+        "大湾区就业王",
+        "工匠精神",
+        "轨道交通先锋",
+        "公办职本排头兵",
+        "艺术设计高地"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

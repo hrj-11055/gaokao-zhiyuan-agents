@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.820630",
+    "updated_at": "2026-05-11T11:27:05.021363",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖州师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "211",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 3.33,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "湖州师范大学（Huzhou University）是一所具有深厚历史底蕴、正处于快速上升期的省属重点建设高校。2024-2025年间，学校完成了从“学院”到“大学”的华丽转身，这不仅是名称的变更，更是办学层次和资源获取能力的质变。\n\n- **Identity（核心定位）**：长三角核心区位、以师范教育为根基、以医护学科为两翼、多学科协调发展的综合性大学。它是湖州高等教育的“长子”，承载着城市转型升级的智力支持任务。\n- **Ace（王牌优势）**：护理学、小学教育、数学与应用数学。其护理学院在浙江省内乃至全国具有较高知名度，毕业生在长三角三甲医院供不应求；师范类专业则垄断了湖州及周边地区大量的基础教育师资市场。\n- **Vibe（文化特质）**：务实、稳健、生态。校园文化深度融合了“绿水青山就是金山银山”的生态理念，学风扎实，学生群体呈现出较强的考公、考编及考研倾向。\n- **Risk（潜在风险）**：目前尚无博士学位授予权（正处于冲刺阶段），这在一定程度上限制了顶尖科研人才的引进和高层次科研平台的突破。对于志在顶尖学术研究的学生，本科后的深造平台需通过考研至更高层次院校来实现。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实",
+        "考研大户",
+        "长三角教师摇篮",
+        "医护强校",
+        "高铁半小时到沪",
+        "生态文明",
+        "更名大学成功"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

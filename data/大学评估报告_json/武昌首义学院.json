@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.772269",
+    "updated_at": "2026-05-10T00:00:11.005810",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "武昌首义学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "对于高考分数在本科线上 30–60 分、家庭经济条件允许、且希望在工科或新闻传播领域获得扎实技能实操训练的考生，武昌首义学院是民办序列中的最优解。",
+    "radar": {},
+    "weighted_score": 2.93,
+    "one_sentence_recommend": "对于高考分数在本科线上 30–60 分、家庭经济条件允许、且希望在工科或新闻传播领域获得扎实技能实操训练的考生，武昌首义学院是民办序列中的最优解。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 5500,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": [
+      {
+        "category": "历史积淀",
+        "description": "作为最早一批转设的独立学院，它完整继承了华科大的教学管理体系，这种“先发优势”转化为了深厚的校友资源。"
+      },
+      {
+        "category": "官方认可",
+        "description": "国家级一流本科专业的获批，是官方对其办学质量的最高背书，这在民办教育界具有极强的排他性。"
+      },
+      {
+        "category": "社会评价",
+        "description": "在湖北省内，用人单位对“首义毕业生”有一套独立的评价体系，认为其素质等同于普通公办二本，这种品牌溢价直接体现在了就业率上。\n\n### 5.3 学生赋权：转专业与个性化发展\n\n学校在学生赋权方面表现得相对开明。\n*   **转专业零门槛（相对）**：除了个别极热门专业有成绩排名要求外，大部分学生在大一结束后都能根据自己的兴趣重新选择专业。这对于高考志愿填报失误的学生来说，是第二次生命。\n*   **社团与创新**：学校鼓励学生参加各类学科竞赛（如红点奖、蓝桥杯、数学建模）。学校不仅提供指导老师，还设有专项奖学金，这种“以赛促学”的氛围极大地提升了学生的自信心。\n\n---"
+      }
+    ]
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "对于高考分数在本科线上 30–60 分、家庭经济条件允许、且希望在工科或新闻传播领域获得扎实技能实操训练的考生，武昌首义学院是民办序列中的最优解。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

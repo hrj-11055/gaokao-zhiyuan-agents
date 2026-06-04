@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.164991",
+    "updated_at": "2026-04-22T01:37:17.734215",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040214TK_足球运动",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策催生的\"新物种\"，背靠万亿体育产业但首届毕业生还没走出校门，赌的是中国足球的未来。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.15
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~90%",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "足球运动的核心在于身体实践、现场决策、人际互动和运动技能示范，这些高度依赖\"身体在场\"的能力，AI 难以替代教练的现场指导、技战术实时调整和运动员心理疏导。但赛事数据分析、体能监测等环节正被 AI 工具辅助增强。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策催生的\"新物种\"，背靠万亿体育产业但首届毕业生还没走出校门，赌的是中国足球的未来。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京体育大学",
+        "上海体育大学"
+      ],
+      "tier_A": [
+        "福建师范大学",
+        "成都体育学院",
+        "沈阳体育学院",
+        "武汉体育学院",
+        "天津体育学院",
+        "河海大学"
+      ],
+      "tier_B": [
+        "山东体育学院",
+        "广州体育学院",
+        "西安体育学院",
+        "辽宁师范大学",
+        "江苏师范大学",
+        "曲阜师范大学",
+        "海南师范大学"
+      ],
+      "tier_C_note": "大连大学、淮北师范大学、闽南师范大学、东华理工大学、江汉大学、湖南科技大学、菏泽学院、贵州师范大学、贵州警察学院、河西学院、喀什大学、伊犁师范大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

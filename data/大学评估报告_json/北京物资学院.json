@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.776003",
+    "updated_at": "2026-05-09T14:32:16.983644",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "北京物资学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.6,
+      "graduate_value": 4.2,
+      "location_advantage": 4.7,
+      "globalization": 3.0,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.61,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 19068,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "53.6%",
+      "starting_salary_median": 7200,
+      "top_destinations": [],
+      "top_employers": [
+        "美团（配送端）",
+        "字节跳动（供应链端）",
+        "阿里。"
+      ]
+    },
+    "location_advantage": {
+      "city": "北京通州",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "北京工商大学",
+        "similarity": "同类院校",
+        "key_difference": "北工商综合实力更强，拥有博士点，学科覆盖面广（食品、轻工等）；而北物则在物流、采购等细分赛道更具“统治力”，行业垂直就业资源甚至优于部分 211 院校。"
+      },
+      {
+        "name": "北京联合大学",
+        "similarity": "同类院校",
+        "key_difference": "北联大规模大、专业杂；北物则更加聚焦，在财经和物流领域的品牌溢价明显高于北联大。"
+      },
+      {
+        "name": "首都经济贸易大学",
+        "similarity": "同类院校",
+        "key_difference": "首经贸在财经领域整体实力领先北物一个身位，但北物在物流这一特定领域的专业深度和校友资源可与首经贸一搏。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（身份）**：国内首开物流、期货、采购专业的“行业特色财经院校”。\n*   **Ace（王牌）**：物流管理与供应链管理，行业校友资源遍布全国头部物流企业。\n*   **Vibe（氛围）**：务实、垂直、小而精，具有强烈的行业导向和职业化色彩。\n*   **Risk（风险）**：校名限制了非物流行业的认知度，校园面积较小，学术天花板受限于目前尚未取得博士学位授予权（正在积极申请中）。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "北京工商大学",
+          "similarity": "同类院校",
+          "key_difference": "北工商综合实力更强，拥有博士点，学科覆盖面广（食品、轻工等）；而北物则在物流、采购等细分赛道更具“统治力”，行业垂直就业资源甚至优于部分 211 院校。"
+        },
+        {
+          "name": "北京联合大学",
+          "similarity": "同类院校",
+          "key_difference": "北联大规模大、专业杂；北物则更加聚焦，在财经和物流领域的品牌溢价明显高于北联大。"
+        },
+        {
+          "name": "首都经济贸易大学",
+          "similarity": "同类院校",
+          "key_difference": "首经贸在财经领域整体实力领先北物一个身位，但北物在物流这一特定领域的专业深度和校友资源可与首经贸一搏。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "物流皇埔",
+        "副中心红利",
+        "务实主义",
+        "小而精",
+        "期货摇篮",
+        "通州一哥",
+        "供应链专家",
+        "上手快"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

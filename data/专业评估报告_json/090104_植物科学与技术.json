@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.181039",
+    "updated_at": "2026-04-26T02:47:23.686790",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090104",
+    "name": "植物科学与技术",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "粮安国策下的硬核农科，方向选对是\"芯片工程师\"，方向选错就是\"高学历农民\"——深造是分水岭。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.3,
+      "future_adaptability": 3.0,
+      "career_path": 2.6,
+      "education_resources": 3.2,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.09
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "田间试验设计、植物表型观察、品种选育等核心工作涉及大量实体操作和经验判断，短期内难以被 AI 完全替代。但数据统计分析、文献综述等环节已面临 AI 工具的渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "粮安国策下的硬核农科，方向选对是\"芯片工程师\"，方向选错就是\"高学历农民\"——深造是分水岭。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "华中农业大学",
+        "西北农林科技大学",
+        "上海交通大学"
+      ],
+      "tier_A": [
+        "西南大学",
+        "山东农业大学",
+        "中国农业大学（虽未直接开设该专业名称，但作物学实力顶尖，可作为近似参考）"
+      ],
+      "tier_B": [
+        "福建农林大学",
+        "云南大学",
+        "郑州大学",
+        "河南大学（国家级一流本科专业建设点）",
+        "内蒙古农业大学"
+      ],
+      "tier_C_note": "甘肃农业大学、河北科技师范学院、河北农业大学、青岛农业大学、吉首大学、榆林大学、荆楚理工学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

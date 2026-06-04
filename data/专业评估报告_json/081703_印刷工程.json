@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.048479",
+    "updated_at": "2026-04-25T18:16:15.393879",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081703",
+    "name": "印刷工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "传统印刷黄昏已至，数字包装是唯一出口，但赛道窄、学校少、天花板低，非真爱慎入。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.5,
+      "career_path": 2.5,
+      "education_resources": 2.2,
+      "discipline_core": 2.7
+    },
+    "weighted_score": 2.56
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI已在印刷设计、版面编排、质量检测（从\"人工挑错\"到\"AI秒杀\"）、色彩校正等环节大规模替代人工。传统印刷操作岗位受冲击最大；但懂AI+印刷的复合型技术人才反而因AI赋能获得溢价。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "传统印刷黄昏已至，数字包装是唯一出口，但赛道窄、学校少、天花板低，非真爱慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "武汉大学（综合性985，轻工技术与工程学科底蕴深厚）"
+      ],
+      "tier_A": [
+        "北京印刷学院（行业唯一专门院校，学科评估最优）",
+        "西安理工大学（软科排名第1）",
+        "天津科技大学",
+        "陕西科技大学"
+      ],
+      "tier_B": [
+        "湖南工业大学（包装印刷特色鲜明）",
+        "齐鲁工业大学",
+        "河南工程学院"
+      ],
+      "tier_C_note": "荆楚理工学院、东莞城市学院、其他地方性本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

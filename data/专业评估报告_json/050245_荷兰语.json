@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.064079",
+    "updated_at": "2026-04-23T12:42:45.212754",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050245",
+    "name": "荷兰语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "欧洲小语种里的\"窄门精品\"，全国仅3所高校开设，人才极度稀缺，但就业面窄、高度依赖北京上海，适合有明确涉外方向规划的考生。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 2.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.77
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "机器翻译（DeepL、Google Translate）在荷兰语-中文方向已有较高准确度，基础翻译和口译工作正被 AI 快速替代。但高级外交谈判、文学翻译、跨文化沟通等仍需人类判断力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "欧洲小语种里的\"窄门精品\"，全国仅3所高校开设，人才极度稀缺，但就业面窄、高度依赖北京上海，适合有明确涉外方向规划的考生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学",
+        "上海外国语大学"
+      ],
+      "tier_A": [
+        "中国传媒大学"
+      ],
+      "tier_B": [
+        "（暂无）"
+      ],
+      "tier_C_note": "（暂无）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

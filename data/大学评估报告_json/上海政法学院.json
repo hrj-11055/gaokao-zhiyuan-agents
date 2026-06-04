@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.517862",
+    "updated_at": "2026-05-09T18:00:42.752289",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海政法学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "985",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.2,
+      "graduate_value": 4.0,
+      "location_advantage": 3.8,
+      "globalization": 4.0,
+      "student_empowerment": 3.2,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.97,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "华东政法大学",
+        "similarity": "同类院校",
+        "key_difference": "华政是“长子”，底蕴深厚，校友圈遍布上海公检法高层；上政是“锐意进取的次子”，在涉外法治、国家安全等新兴领域更具冲劲，且拥有上合基地这一国家级“核武器”。"
+      },
+      {
+        "name": "西北政法大学",
+        "similarity": "同类院校",
+        "key_difference": "西政拥有更辉煌的历史和全国性的名气，但受限于西安的法律市场容量；上政则凭借上海的金融与贸易环境，在毕业生起薪和高端律所就业上更具优势。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "上海政法学院是一所**处于快速上升期的行业特色强校**。它成功地将“上海的区位优势”与“国家战略的平台优势”结合在一起。对于学生而言，这里不是一个享受安逸的地方，而是一个**高强度的职业训练场**。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "华东政法大学",
+          "similarity": "同类院校",
+          "key_difference": "华政是“长子”，底蕴深厚，校友圈遍布上海公检法高层；上政是“锐意进取的次子”，在涉外法治、国家安全等新兴领域更具冲劲，且拥有上合基地这一国家级“核武器”。"
+        },
+        {
+          "name": "西北政法大学",
+          "similarity": "同类院校",
+          "key_difference": "西政拥有更辉煌的历史和全国性的名气，但受限于西安的法律市场容量；上政则凭借上海的金融与贸易环境，在毕业生起薪和高端律所就业上更具优势。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

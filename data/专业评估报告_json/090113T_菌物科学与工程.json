@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.914674",
+    "updated_at": "2026-04-26T03:18:43.240729",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090113T_菌物科学与工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "全国仅 4 校开设的\"种蘑菇\"硬核专业，产业 3000 亿但人才极度稀缺，考研率超 50%，冷门中的潜力股。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.31
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "菌物科学涉及大量实验室微生物操作、田间栽培管理、菌种选育等需要精细手眼协调和实物交互的工作，AI 可辅助数据分析和基因序列比对，但无法替代培养皿操作、菌株筛选、大棚管理等核心技能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "全国仅 4 校开设的\"种蘑菇\"硬核专业，产业 3000 亿但人才极度稀缺，考研率超 50%，冷门中的潜力股。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "吉林农业大学（国内首家菌物学院，院士领衔，软科 2025 排名第 1）"
+      ],
+      "tier_A": [
+        "天津农学院（校友会 2026 排名 A+，办学较早）"
+      ],
+      "tier_B": [
+        "鲁东大学（全国首批 4 所开设院校之一，对接山东食用菌产业）",
+        "河西学院（甘肃，对接西北菌物资源）"
+      ],
+      "tier_C_note": "暂无更多开设院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

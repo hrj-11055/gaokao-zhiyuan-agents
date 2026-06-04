@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.015109",
+    "updated_at": "2026-04-28T02:32:35.152412",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130207T_舞蹈教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"用身体书写的职业，体制内稳当、培训市场火热，但天花板清晰，热爱与生计之间需要精打细算。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 3.2,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.1
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "舞蹈教学涉及身体示范、动作纠正、情感表达等高度具身化的技能，AI 难以替代面对面教学中的即时反馈和身体引导。但舞蹈理论教学、编排辅助等环节已开始被 AI 工具渗透。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"用身体书写的职业，体制内稳当、培训市场火热，但天花板清晰，热爱与生计之间需要精打细算。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京舞蹈学院",
+        "中央音乐学院"
+      ],
+      "tier_A": [
+        "中央民族大学",
+        "上海音乐学院",
+        "中国音乐学院",
+        "南京艺术学院"
+      ],
+      "tier_B": [
+        "福建师范大学",
+        "首都师范大学",
+        "天津音乐学院",
+        "星海音乐学院",
+        "四川音乐学院",
+        "沈阳音乐学院",
+        "武汉音乐学院",
+        "北京师范大学"
+      ],
+      "tier_C_note": "山东艺术学院、广西艺术学院、云南艺术学院、吉林艺术学院、新疆艺术学院、河北张家口学院，以及各地方师范类院校开设舞蹈教育方向的本科院校（如长江师范学院、凯里学院等）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

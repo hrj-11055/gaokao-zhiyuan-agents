@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.156143",
+    "updated_at": "2026-04-28T03:21:58.247733",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130301",
+    "name": "表演",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "光环耀眼但金字塔极陡——头部1%名利双收，其余99%在跑组、等戏、转行中挣扎，天赋、颜值、资源缺一不可。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 2.5,
+      "future_adaptability": 1.8,
+      "career_path": 1.9,
+      "education_resources": 3.0,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 2.28
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3,000–5,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 虚拟人、数字人、AI换脸/语音克隆技术正在快速发展，短剧、广告、配音等中低端表演工作面临AI替代压力。但需要真实情感表达和现场即兴反应的高端表演（话剧、精品影视）短期内仍不可替代。综合评估为\"较高风险\"而非\"极高风险\"，因为顶尖表演的核心——人类情感的真实传递——仍具不可替代性。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "光环耀眼但金字塔极陡——头部1%名利双收，其余99%在跑组、等戏、转行中挣扎，天赋、颜值、资源缺一不可。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央戏剧学院",
+        "北京电影学院",
+        "上海戏剧学院"
+      ],
+      "tier_A": [
+        "中国戏曲学院",
+        "中国传媒大学",
+        "南京艺术学院",
+        "山东艺术学院",
+        "吉林艺术学院",
+        "云南艺术学院"
+      ],
+      "tier_B": [
+        "浙江传媒学院",
+        "天津音乐学院",
+        "星海音乐学院",
+        "沈阳音乐学院",
+        "四川音乐学院",
+        "北京城市学院（民办）",
+        "上海视觉艺术学院（民办）"
+      ],
+      "tier_C_note": "全国各综合性大学艺术学院/戏剧影视系（如重庆大学美视电影学院、暨南大学艺术学院、厦门大学艺术学院等），以及各省属师范类院校的艺术学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

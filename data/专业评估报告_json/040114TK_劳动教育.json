@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.219456",
+    "updated_at": "2026-04-22T00:29:32.242713",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "040114TK_劳动教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的新兴专业，师资缺口巨大但院校极少、尚无毕业生验证，赌的是\"劳动课\"能否真正落地。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 2.0,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 2.91
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "劳动教育以实践操作（农耕种植、手工制作、烹饪、木工等）、师生互动、价值观引导为核心，属于需要身体参与和情感连接的教学活动，AI 难以替代现场实践指导和师生关系构建。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的新兴专业，师资缺口巨大但院校极少、尚无毕业生验证，赌的是\"劳动课\"能否真正落地。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "[暂无] — 该专业为新增专业，无历史积淀和学科评估数据"
+      ],
+      "tier_A": [
+        "中国劳动关系学院（该专业的发起院校和标准制定参与者，设有独立的劳动教育学院，中华全国总工会直属，政策资源优势显著）"
+      ],
+      "tier_B": [
+        "天津职业技术师范大学（职业教育师资培养传统优势校，教育部卓越教师培养计划院校）"
+      ],
+      "tier_C_note": "[暂无其他开设院校]",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

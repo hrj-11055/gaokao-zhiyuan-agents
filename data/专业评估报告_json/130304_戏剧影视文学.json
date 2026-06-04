@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.122324",
+    "updated_at": "2026-04-28T03:34:24.796840",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130304",
+    "name": "戏剧影视文学",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "文字造梦者的修行路：创作天赋是门票，但行业极度依赖人脉与地域，AI 冲击下\"会写\"已不够，\"写得独特\"才是护城河。",
+    "radar": {
+      "market_return": 2.2,
+      "industry_outlook": 2.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.5,
+      "education_resources": 4.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.68
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4,000–6,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "ChatGPT、Claude 等大语言模型已能生成剧本框架和对白初稿，AI 可替代\"套路化\"写作和辅助编剧工作；但原创性叙事、深刻人物塑造和文化语境理解仍有难以替代的壁垒。行业已出现 AI 辅助编剧工具（如\"星火编剧\"等），中低端编剧岗位面临直接挤压。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "文字造梦者的修行路：创作天赋是门票，但行业极度依赖人脉与地域，AI 冲击下\"会写\"已不够，\"写得独特\"才是护城河。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京电影学院",
+        "中央戏剧学院",
+        "上海戏剧学院"
+      ],
+      "tier_A": [
+        "中国传媒大学",
+        "南京艺术学院",
+        "中国戏曲学院",
+        "浙江传媒学院",
+        "山东艺术学院"
+      ],
+      "tier_B": [
+        "南京大学",
+        "武汉大学",
+        "厦门大学（综合大学中的戏剧影视文学方向）",
+        "云南艺术学院",
+        "吉林艺术学院",
+        "广西艺术学院",
+        "四川音乐学院"
+      ],
+      "tier_C_note": "全国各类省属综合院校及师范学院开设的戏剧影视文学专业（如重庆大学、西北大学、辽宁大学等院校的相关方向），约 150+ 所。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

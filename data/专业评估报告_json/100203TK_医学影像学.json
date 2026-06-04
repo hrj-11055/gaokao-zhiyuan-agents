@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.219882",
+    "updated_at": "2026-04-27T04:24:19.801553",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100203TK_医学影像学",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "影像科医生的\"读片人生\"：铁饭碗稳、AI 来了也不慌，但五年本科只是起点，三甲医院的入场券是考研+规培+执医三连。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.8,
+      "education_resources": 4.0,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.86
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 在医学影像识别方面已有显著进展（如肺结节检测、眼底筛查），但影像科医生的核心价值在于**综合临床判断、鉴别诊断和治疗方案建议**，这些需要结合患者病史和其他检查结果，不是单纯的\"读图\"。AI 更可能成为影像科医生的辅助工具而非替代者。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "影像科医生的\"读片人生\"：铁饭碗稳、AI 来了也不慌，但五年本科只是起点，三甲医院的入场券是考研+规培+执医三连。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京协和医学院",
+        "北京大学医学部",
+        "复旦大学上海医学院",
+        "上海交通大学医学院"
+      ],
+      "tier_A": [
+        "华中科技大学同济医学院",
+        "中山大学中山医学院",
+        "四川大学华西医学中心",
+        "中南大学湘雅医学院",
+        "浙江大学医学院",
+        "首都医科大学"
+      ],
+      "tier_B": [
+        "中国医科大学",
+        "哈尔滨医科大学",
+        "南方医科大学",
+        "南京医科大学",
+        "重庆医科大学",
+        "天津医科大学",
+        "徐州医科大学",
+        "广州医科大学"
+      ],
+      "tier_C_note": "各省属医科大学/医学院中有开设医学影像学专业的院校（如安徽医科大学、广西医科大学、新疆医科大学等），作为地方性影像科人才储备，仍有就业保障。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

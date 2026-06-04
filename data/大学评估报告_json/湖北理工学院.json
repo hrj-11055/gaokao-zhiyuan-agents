@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.601174",
+    "updated_at": "2026-05-09T15:52:37.028323",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖北理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 2.64,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "湖北理工学院是一所以工为主、多学科协调发展的省属全日制普通本科高校。在 2023-2025 年的评估周期内，该校实现了跨越式发展，最显著的标志是 2024 年正式获批硕士学位授予单位，这标志着学校从单纯的本科教学型向教学研究型高校转型的初步成功。\n\n*   **Identity（核心定位）**：学校根植于“青铜之都”黄石，具有浓厚的工业基因。它是典型的“产教融合”示范校，致力于为湖北乃至全国的制造业、环境治理和基层医疗输送应用型高级专门人才。\n*   **Ace（王牌优势）**：环境工程与临床医学是其双翼。环境工程依托国家级特色专业建设点，在重金属污染治理、矿山修复领域具有区域领先地位；临床医学则凭借进入 ESI 全球排名前 1% 的硬实力，在湖北同类院校中脱颖而出。\n*   **Vibe（文化特质）**：校园文化呈现出一种“磁湖式的静谧”与“工科式的务实”的结合。学生群体普遍具有较强的吃苦耐劳精神，考研氛围浓厚，被誉为“鄂东南的考研基地”之一。\n*   **Risk（潜在风险）**：尽管已获批硕士点，但学科积淀仍需时间转化。地理位置上，黄石虽然紧邻武汉，但在高端人才引进和毕业生首选就业地的竞争中，仍面临武汉高校的强烈挤压。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

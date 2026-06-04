@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.108857",
+    "updated_at": "2026-04-25T02:04:05.371442",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "071101",
+    "name": "心理学",
+    "category": "理学",
+    "recommendation_level": "yellow",
+    "summary": "\"助人自助的理想学科，赛道在扩张但门槛在升高，本科不够用、深造是刚需，善用'心理学+X'可打开多元出路。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.8,
+      "career_path": 2.9,
+      "education_resources": 3.5,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.5
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–10000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "心理咨询与治疗的核心是深度共情、人际关系建立和复杂情境判断，这些是 AI 难以替代的人类独特能力。但心理测评实施、基础数据分析等标准化工作已被 AI 部分替代。AI+心理学正在创造新岗位（情感计算、AI 心理辅助工具研发），而非纯粹替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"助人自助的理想学科，赛道在扩张但门槛在升高，本科不够用、深造是刚需，善用'心理学+X'可打开多元出路。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京师范大学",
+        "北京大学"
+      ],
+      "tier_A": [
+        "华东师范大学",
+        "华南师范大学",
+        "西南大学",
+        "中国科学院大学（心理所）",
+        "浙江大学",
+        "中山大学"
+      ],
+      "tier_B": [
+        "华中师范大学",
+        "陕西师范大学",
+        "东北师范大学",
+        "首都师范大学",
+        "深圳大学",
+        "南京师范大学",
+        "天津师范大学",
+        "上海师范大学",
+        "山东师范大学"
+      ],
+      "tier_C_note": "河北师范大学、四川师范大学、安徽师范大学、福建师范大学、曲阜师范大学、河南大学、辽宁师范大学等各省属师范院校及综合类院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

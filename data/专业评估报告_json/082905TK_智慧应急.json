@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.013845",
+    "updated_at": "2026-04-26T00:37:36.089905",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082905TK_智慧应急",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在国家\"大应急\"战略风口的全新专业，550 万人才缺口是真金白银的机遇，但 2025 年首届招生、全国仅 1 校开设，吃螃蟹要有胆量。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.8
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "智慧应急的 核心 是运用 AI 技术解决应急管理问题（用 AI 的人 不怕被 AI 替代）。复杂灾害场景下的现场研判、跨部门协调决策、应急资源动态调度等任务需要人类的情境判断力，AI 是辅助工具而非替代者。但纯数据录入、基础监测岗存在被 AI 自动化替代的可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在国家\"大应急\"战略风口的全新专业，550 万人才缺口是真金白银的机遇，但 2025 年首届招生、全国仅 1 校开设，吃螃蟹要有胆量。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国科学技术大学（安全科学与工程 A+，灾害科学研究中心）",
+        "中国矿业大学（安全科学与工程 A+）"
+      ],
+      "tier_A": [
+        "中南大学（A-）",
+        "河南理工大学（A-）",
+        "西安科技大学（A-）",
+        "清华大学（B+，综合实力顶尖）",
+        "暨南大学（应急管理 A+）",
+        "河海大学（应急管理 A+）"
+      ],
+      "tier_B": [
+        "**防灾科技学院**（全国首个智慧应急专业开设校，背靠中国地震局，防灾减灾特色鲜明）",
+        "北京科技大学（B+）",
+        "中国石油大学（B+）",
+        "南京工业大学（B+）",
+        "武汉理工大学（B-）"
+      ],
+      "tier_C_note": "未来其他获批开设智慧应急的普通本科院校（预计 2026–2028 年逐步扩容）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

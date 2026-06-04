@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.864407",
+    "updated_at": "2026-05-08T09:46:18.011222",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "南京艺术学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "green",
+    "summary": "",
+    "radar": {
+      "academic_capital": 4.8,
+      "graduate_value": 4.0,
+      "location_advantage": 4.6,
+      "globalization": 4.0,
+      "student_empowerment": 4.5,
+      "brand_asset": 4.8
+    },
+    "weighted_score": 4.44,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "南京艺术学院（简称“南艺”）不仅是中国独立建制创办最早的高等艺术学府，更是当代中国艺术教育版图中的“综合性实验场”。作为江苏省唯一的综合性艺术院校，南艺在第五轮学科评估中展现了惊人的统治力，其美术学获评 A+，设计学获评 A，艺术学理论与音乐与舞蹈学获评 A-，这种“全 A 类”的学科集群在全国艺术院校中绝无仅有。\n\n**核心定位：** 南艺已从传统的艺术技能培训院校，转型为“艺术+科技”、“艺术+人文”的综合性研究型艺术大学。其坐落于南京市中心鼓楼区的地理位置，使其不仅是一所学校，更是一个开放的城市文化地标。\n\n**竞争优势：** 相比于纯美院（如国美、央美）或纯音院（如上音、中音），南艺最大的优势在于“综合性”。在这里，美术系的学生可以轻易接触到戏剧系的表演资源，设计系的学生可以与流行音乐系跨界合作。这种天然的跨学科土壤，使得南艺毕业生在就业市场上展现出极强的适应性和创造力。\n\n**潜在风险：** 尽管学术地位稳固，但南艺也面临着老校区空间饱和、宿舍硬件两极分化以及近期高层廉政风险带来的治理挑战。此外，随着全国艺术类招生改革（文化课权重增加），南艺如何在保持艺术先锋性的同时，筛选出文化底蕴深厚的生源，是其未来五年的核心课题。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

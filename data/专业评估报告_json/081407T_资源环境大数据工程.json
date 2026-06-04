@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.073458",
+    "updated_at": "2026-04-25T17:07:38.102451",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081407T_资源环境大数据工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "新赛道新专业，踩中\"双碳+大数据\"双风口，但首批学生尚未毕业，课程体系仍在磨合，选校定前途。",
+    "radar": {
+      "market_return": 3.4,
+      "industry_outlook": 4.2,
+      "future_adaptability": 4.0,
+      "career_path": 3.2,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.62
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业的核心竞争力在于\"领域知识+数据技术\"的交叉融合。AI 可以辅助数据处理和模型训练，但理解地质资源特征、环境化学过程、碳排放核算规则等领域的专业知识，以及将环境问题转化为数据问题的跨学科建模能力，难以被纯 AI 替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "新赛道新专业，踩中\"双碳+大数据\"双风口，但首批学生尚未毕业，课程体系仍在磨合，选校定前途。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国地质大学（武汉）— 211/双一流，地质资源与地质工程 A+ 学科，全国首个开设此专业的高校"
+      ],
+      "tier_A": [
+        "长江大学 — ESI 全球前 1% 的\"地球科学\"和\"环境与生态学\"学科支撑，2023 年全国首批招生院校之一"
+      ],
+      "tier_B": [
+        "河北地质大学（地质类传统院校，校友会 2025 研究型排名第一）",
+        "西安建筑科技大学"
+      ],
+      "tier_C_note": "齐鲁师范学院等后续获批院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

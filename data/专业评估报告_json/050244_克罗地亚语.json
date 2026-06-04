@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.939302",
+    "updated_at": "2026-04-23T12:39:00.154054",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050244",
+    "name": "克罗地亚语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极度稀缺的非通用语种，市场极小但竞争者更少，严重依赖北外单一院校和外交/贸易渠道，非\"铁了心\"慎入。",
+    "radar": {
+      "market_return": 2.6,
+      "industry_outlook": 3.0,
+      "future_adaptability": 2.5,
+      "career_path": 2.0,
+      "education_resources": 1.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.56
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI 翻译（DeepL、Google Translate）对克罗地亚语等斯拉夫语族的覆盖虽不如英法德等大语种完善，但正快速提升。《2024中国翻译行业发展报告》显示，80%以上翻译企业已积极拥抱大模型技术，半数以上业务使用机器翻译。克罗地亚语使用者超千万，AI 训练数据量虽少于大语种，但 Serbo-Croatian 语料库已有相当积累。长期看，基础翻译和口译工作被替代的风险不可忽视。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度稀缺的非通用语种，市场极小但竞争者更少，严重依赖北外单一院校和外交/贸易渠道，非\"铁了心\"慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（全国唯一开设本科专业的院校，教育部直属\"双一流\"高校，省级一流本科专业建设点）"
+      ],
+      "tier_A": [
+        "（无独立开设院校，以下为有相关研究方向或交换项目的院校）北京大学（南斯拉夫语/塞尔维亚-克罗地亚语研究方向）",
+        "上海外国语大学（巴尔干地区研究）",
+        "广东外语外贸大学（非通用语种体系）"
+      ],
+      "tier_B": [
+        "北京体育大学（校友会排名中并列，可能与体育外交方向的克罗地亚语应用有关）",
+        "中国传媒大学（国际传播方向）"
+      ],
+      "tier_C_note": "（暂无其他院校开设该专业本科）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

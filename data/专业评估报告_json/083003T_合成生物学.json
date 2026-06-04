@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.042531",
+    "updated_at": "2026-04-26T00:48:03.760170",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083003T_合成生物学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"造物时代的新引擎，赛道足够性感但窗口期未至——本科毕业大多只能搬砖，硕士起步、博士标配才能摸到核心。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.48
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI+合成生物是深度融合趋势——AI加速蛋白质设计、菌株优化和实验自动化，但核心的实验操作、生物系统验证、代谢通路设计等需要人类判断和跨学科综合能力，AI更多是赋能工具而非替代。来源：Nature子刊（2025）；Lux Research《AI in Synthetic Biology》"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"造物时代的新引擎，赛道足够性感但窗口期未至——本科毕业大多只能搬砖，硕士起步、博士标配才能摸到核心。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "天津大学（全国第1，强基计划入选，国家级一流本科专业建设点）"
+      ],
+      "tier_A": [
+        "南京师范大学（A+评级）",
+        "江南大学（211，生物工程传统强校）"
+      ],
+      "tier_B": [
+        "山西大学",
+        "深圳理工大学（2025年新获批，中科院深圳先进院背景）",
+        "青岛科技大学",
+        "湖北大学"
+      ],
+      "tier_C_note": "其他新获批的5所院校（2024年教育部审批新增，部分院校信息待更新）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

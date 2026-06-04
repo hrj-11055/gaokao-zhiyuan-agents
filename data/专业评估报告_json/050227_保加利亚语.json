@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.022880",
+    "updated_at": "2026-04-23T21:40:52.792504",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050227",
+    "name": "保加利亚语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "\"一带一路上的冷门斯拉夫小语种，稀缺是优势也是牢笼——就业面极窄，全靠'保语+X'复合能力破局。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 2.5,
+      "future_adaptability": 2.6,
+      "career_path": 2.4,
+      "education_resources": 2.5,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 2.64
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "保加利亚语属于低资源语言，AI训练数据少，短期内机器翻译质量有限，但大模型技术正快速覆盖小语种（IDC《中国AI翻译技术评估》报告），基础笔译岗位面临替代。口译、外交谈判等高阶场景仍有壁垒。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"一带一路上的冷门斯拉夫小语种，稀缺是优势也是牢笼——就业面极窄，全靠'保语+X'复合能力破局。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（1961年开设，国家级一流本科专业，硕博完整培养体系，教育部保加利亚研究中心）"
+      ],
+      "tier_A": [
+        "广东外语外贸大学（软科A+评级，浙江2025高考录取615分）"
+      ],
+      "tier_B": [
+        "北京第二外国语学院",
+        "天津外国语大学"
+      ],
+      "tier_C_note": "暂无更多开设院校（全国仅2-4所高校开设保加利亚语专业）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

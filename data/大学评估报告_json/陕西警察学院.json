@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.695383",
+    "updated_at": "2026-05-09T17:08:30.232039",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "陕西警察学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "211",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.5,
+      "graduate_value": 4.5,
+      "location_advantage": 3.8,
+      "globalization": 1.5,
+      "student_empowerment": 1.5,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 3.245,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "西安，这座城",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "陕西警察学院（原陕西警官职业学院）在 2024 年迎来了学校发展史上的里程碑——正式获批升格为普通本科高校。这一转变不仅是名称的更迭，更是其在全国公安教育版图中地位的跃升。作为陕西省唯一一所省属公安本科院校，该校的核心竞争力在于其极高的“入警率”和“职业确定性”。\n\n从宏观定位来看，学校是陕西警务人才培养的“主阵地”。在公安部与省政府的共建框架下，其专业设置与实战需求高度契合。对于考生而言，进入该校的公安类专业，几乎等同于拿到了进入公务员体制的“预备入场券”。然而，这种高确定性是以牺牲大学生活的自由度为代价的。准军事化管理、严格的体能训练以及相对封闭的社交环境，构成了该校独特的校园生态。\n\n从风险维度分析，学校存在明显的“专业壁垒”。公安类专业与非公安类专业在就业前景上存在天壤之别。非公安专业学生无法参加公安联考，在考公和就业市场上面临与普通高校法学、计算机专业学生的直接竞争，且在学术资源和名气上并无优势。因此，报考该校必须精准锁定“提前批”的公安专业。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "硬核纪律",
+        "藏青蓝情怀",
+        "入警绿色通道",
+        "体能狂人",
+        "西安浐灞",
+        "忠诚可靠",
+        "豆腐块被子"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

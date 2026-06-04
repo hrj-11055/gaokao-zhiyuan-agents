@@ -24,6 +24,15 @@ function toUser(row) {
   }
 }
 
+function toUserWithSession(row) {
+  const user = toUser(row)
+  if (!user) return null
+  return {
+    ...user,
+    sessionKey: row.session_key || '',
+  }
+}
+
 function toOrder(row) {
   if (!row) return null
   return {
@@ -60,7 +69,13 @@ function createCommerceError(message, code) {
 
 function extractNotifyAmountCents(rawNotify = {}) {
   const resource = rawNotify.resource || rawNotify
+  const goodsInfo = rawNotify.GoodsInfo || rawNotify.goodsInfo
   const total = resource?.amount?.total
+    ?? goodsInfo?.ActualPrice
+    ?? goodsInfo?.actualPrice
+    ?? goodsInfo?.OrigPrice
+    ?? goodsInfo?.origPrice
+    ?? rawNotify.amountCents
   if (total === undefined || total === null || total === '') return null
   const amount = Number(total)
   return Number.isFinite(amount) ? Math.trunc(amount) : null
@@ -94,6 +109,7 @@ function createCommerceStore({
       id TEXT PRIMARY KEY,
       openid TEXT UNIQUE NOT NULL,
       unionid TEXT,
+      session_key TEXT,
       nickname TEXT,
       avatar_url TEXT,
       invited_by_user_id TEXT,
@@ -165,21 +181,25 @@ function createCommerceStore({
   if (!userColumns.includes('profile_json')) {
     db.exec('ALTER TABLE users ADD COLUMN profile_json TEXT')
   }
+  if (!userColumns.includes('session_key')) {
+    db.exec('ALTER TABLE users ADD COLUMN session_key TEXT')
+  }
 
   const getUserById = db.prepare('SELECT * FROM users WHERE id = ?')
   const getUserByOpenid = db.prepare('SELECT * FROM users WHERE openid = ?')
   const insertUser = db.prepare(`
     INSERT INTO users (
-      id, openid, unionid, nickname, avatar_url, invited_by_user_id,
+      id, openid, unionid, session_key, nickname, avatar_url, invited_by_user_id,
       profile_completed_at, created_at, updated_at
     ) VALUES (
-      @id, @openid, @unionid, @nickname, @avatarUrl, @invitedByUserId,
+      @id, @openid, @unionid, @sessionKey, @nickname, @avatarUrl, @invitedByUserId,
       @profileCompletedAt, @createdAt, @updatedAt
     )
   `)
   const updateUser = db.prepare(`
     UPDATE users
     SET unionid = COALESCE(@unionid, unionid),
+        session_key = COALESCE(@sessionKey, session_key),
         nickname = COALESCE(@nickname, nickname),
         avatar_url = COALESCE(@avatarUrl, avatar_url),
         invited_by_user_id = COALESCE(invited_by_user_id, @invitedByUserId),
@@ -401,7 +421,7 @@ function createCommerceStore({
     }
   }
 
-  const upsertWechatUserTx = db.transaction(({ openid, unionid = '', nickname = '', avatarUrl = '', inviterId = '' }) => {
+  const upsertWechatUserTx = db.transaction(({ openid, unionid = '', sessionKey = '', nickname = '', avatarUrl = '', inviterId = '' }) => {
     if (!openid || typeof openid !== 'string') {
       throw new Error('openid is required')
     }
@@ -415,6 +435,7 @@ function createCommerceStore({
       updateUser.run({
         id: userId,
         unionid: unionid || null,
+        sessionKey: sessionKey || null,
         nickname: nickname || null,
         avatarUrl: avatarUrl || null,
         invitedByUserId: inviterId || null,
@@ -426,6 +447,7 @@ function createCommerceStore({
         id: userId,
         openid,
         unionid,
+        sessionKey,
         nickname,
         avatarUrl,
         invitedByUserId: inviterId || '',
@@ -611,6 +633,9 @@ function createCommerceStore({
 
   return {
     upsertWechatUser: upsertWechatUserTx,
+    getUser(userId) {
+      return toUserWithSession(getUserById.get(userId))
+    },
     completeProfile: completeProfileTx,
     saveProfile(userId, profile) {
       const row = getUserById.get(userId)

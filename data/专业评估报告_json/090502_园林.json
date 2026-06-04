@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.939870",
+    "updated_at": "2026-04-26T12:49:21.265011",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "090502",
+    "name": "园林",
+    "category": "农学",
+    "recommendation_level": "yellow",
+    "summary": "左手画图右手种树，生态修复是新风口，但房地产退潮后传统设计岗收缩明显，吃苦耐劳比天赋更重要。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.2,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI已能实现公园布局自动生成（LandscapeGAN等）、概念方案快速产出，大幅压缩初级设计师的生存空间。但园林设计涉及甲方需求沟通、场地复杂条件处理、多学科综合协调等高阶能力，AI目前无法替代。牛津大学研究显示风景园林师不可替代性排名全球第133位（702种职业中）。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "左手画图右手种树，生态修复是新风口，但房地产退潮后传统设计岗收缩明显，吃苦耐劳比天赋更重要。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京林业大学",
+        "清华大学"
+      ],
+      "tier_A": [
+        "同济大学",
+        "东南大学",
+        "南京林业大学",
+        "天津大学",
+        "华南理工大学",
+        "哈尔滨工业大学",
+        "重庆大学",
+        "华中农业大学"
+      ],
+      "tier_B": [
+        "东北林业大学",
+        "福建农林大学",
+        "四川农业大学",
+        "西安建筑科技大学",
+        "西北农林科技大学",
+        "浙江农林大学",
+        "上海交通大学",
+        "华中科技大学"
+      ],
+      "tier_C_note": "各省属农业大学及建筑类院校，如河北农业大学、沈阳建筑大学、中南林业科技大学、西南林业大学、河南农业大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

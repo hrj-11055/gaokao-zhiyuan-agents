@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.920485",
+    "updated_at": "2026-04-26T00:44:48.307985",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "083002T_生物制药",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在万亿赛道的风口上，但本科学历只是入场券，研发岗的门票写在硕博文凭里——读不了研慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.41
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "生物制药涉及湿实验操作（细胞培养、蛋白纯化、动物实验）、法规合规判断和复杂临床试验设计，这些环节难以被AI完全替代。AI可加速药物筛选和数据分析，但实验验证和监管审批仍需人工深度参与。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在万亿赛道的风口上，但本科学历只是入场券，研发岗的门票写在硕博文凭里——读不了研慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国药科大学",
+        "华中科技大学",
+        "武汉大学"
+      ],
+      "tier_A": [
+        "吉林大学",
+        "温州医科大学",
+        "暨南大学",
+        "沈阳药科大学",
+        "华南理工大学",
+        "苏州大学",
+        "南方医科大学"
+      ],
+      "tier_B": [
+        "河北医科大学",
+        "天津医科大学",
+        "山东大学",
+        "南京工业大学",
+        "浙江工业大学",
+        "广东药科大学",
+        "浙江理工大学",
+        "福建医科大学"
+      ],
+      "tier_C_note": "其余约90余所开设该专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

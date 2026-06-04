@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.151091",
+    "updated_at": "2026-04-27T19:42:25.057357",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120216T_创业管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "一个连毕业生都还没几届的\"新物种\"专业，赌的是政策风口和创业浪潮，但\"学创业\"本身就是一个悖论——创业者更多是实战淬炼而非课堂产物。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 2.5,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 3.12
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "创业管理的核心——机会识别、资源整合、人际沟通、商业模式创新——依赖高度非结构化的情境判断和人际信任构建，短期内 AI 难以完全替代。但市场分析、商业计划书撰写等辅助环节已可被 AI 大幅提效。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "一个连毕业生都还没几届的\"新物种\"专业，赌的是政策风口和创业浪潮，但\"学创业\"本身就是一个悖论——创业者更多是实战淬炼而非课堂产物。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江大学",
+        "中国人民大学",
+        "清华大学（x-lab/创新创业方向）"
+      ],
+      "tier_A": [
+        "对外经济贸易大学",
+        "上海财经大学",
+        "中南财经政法大学",
+        "厦门大学"
+      ],
+      "tier_B": [
+        "浙江工商大学",
+        "广东财经大学",
+        "山东财经大学",
+        "天津商业大学"
+      ],
+      "tier_C_note": "各地方财经类院校及应用型本科院校（以当年招生目录为准）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

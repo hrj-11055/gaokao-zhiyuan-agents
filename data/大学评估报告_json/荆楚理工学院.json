@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.576143",
+    "updated_at": "2026-05-09T16:01:34.527829",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "荆楚理工学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 2.6,
+      "location_advantage": 2.8,
+      "globalization": 2.1,
+      "student_empowerment": 2.8,
+      "brand_asset": 2.3
+    },
+    "weighted_score": 2.44,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "湖北省中部，是“宜荆荆”都",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "湖北工程学院（孝感）",
+        "similarity": "同类院校",
+        "key_difference": "荆楚理工在工业门类的细分领域（如化工、电池）更具优势，且荆门的产业集中度更高，就业指向性更强；湖北工程学院则在教育、文史类专业上略胜一筹，且更受武汉辐射圈的影响。"
+      },
+      {
+        "name": "湖北医药学院（十堰）",
+        "similarity": "同类院校",
+        "key_difference": "在医学领域，荆楚理工的护理学虽强，但整体医学实力无法与专门的医学院抗衡。然而，荆楚理工的综合性更强，转专业空间更大。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "湖北工程学院（孝感）",
+          "similarity": "同类院校",
+          "key_difference": "荆楚理工在工业门类的细分领域（如化工、电池）更具优势，且荆门的产业集中度更高，就业指向性更强；湖北工程学院则在教育、文史类专业上略胜一筹，且更受武汉辐射圈的影响。"
+        },
+        {
+          "name": "湖北医药学院（十堰）",
+          "similarity": "同类院校",
+          "key_difference": "在医学领域，荆楚理工的护理学虽强，但整体医学实力无法与专门的医学院抗衡。然而，荆楚理工的综合性更强，转专业空间更大。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实工业风",
+        "新能源黄埔",
+        "象山学子",
+        "留荆率高",
+        "考研大户",
+        "应用型标杆"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

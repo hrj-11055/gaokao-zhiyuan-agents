@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.054403",
+    "updated_at": "2026-05-17T01:03:35.621467",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "020203TK_国际税收",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.5,
+      "education_resources": 3.2,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 4.01
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–11,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "基础税务计算和申报流程易被AI自动化，但跨境税务筹划、国际税制协调、复杂争议解决仍需人工判断和跨文化沟通能力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央财经大学",
+        "中国人民大学",
+        "上海财经大学",
+        "厦门大学"
+      ],
+      "tier_A": [
+        "西南财经大学",
+        "东北财经大学",
+        "浙江财经大学",
+        "吉林财经大学",
+        "中南财经政法大学"
+      ],
+      "tier_B": [
+        "江西财经大学",
+        "天津财经大学",
+        "南京财经大学",
+        "山东财经大学",
+        "安徽财经大学"
+      ],
+      "tier_C_note": "其他地方财经类院校及综合类大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

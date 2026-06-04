@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.995661",
+    "updated_at": "2026-04-27T05:26:54.091053",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "101006",
+    "name": "口腔医学技术",
+    "category": "医学",
+    "recommendation_level": "yellow",
+    "summary": "名字像医生，毕业是技师——\"口腔医学技术\"和\"口腔医学\"差两个字，命运差十万八千里。做义齿、磨牙冠、调矫治器是本职，动不了刀、看不了病、开不了处方。行业有刚需但天花板低，AI+数字化正在重塑义齿制作全流程，不会编程的技师终将被 CAD/CAM 系统替代。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.96
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "AI 和自动化对口腔医学技术行业的冲击是直接且深远的。CAD/CAM 系统已能自动完成牙冠设计、切削加工，3D 打印技术正在替代传统蜡型和铸造工艺。口内扫描仪 + AI 设计软件（如 exocad、3Shape）使义齿设计环节自动化程度大幅提升。初级技师（排牙、灌模、打磨等重复性工作）面临直接替代风险。仅高端美学修复设计、复杂种植修复方案等需要丰富经验的环节尚存安全边际。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "名字像医生，毕业是技师——\"口腔医学技术\"和\"口腔医学\"差两个字，命运差十万八千里。做义齿、磨牙冠、调矫治器是本职，动不了刀、看不了病、开不了处方。行业有刚需但天花板低，AI+数字化正在重塑义齿制作全流程，不会编程的技师终将被 CAD/CAM 系统替代。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "四川大学（华西）",
+        "北京大学",
+        "上海交通大学"
+      ],
+      "tier_A": [
+        "空军军医大学（四医大）",
+        "武汉大学",
+        "中山大学",
+        "南京医科大学",
+        "首都医科大学"
+      ],
+      "tier_B": [
+        "中国医科大学",
+        "吉林大学",
+        "哈尔滨医科大学",
+        "重庆医科大学",
+        "广西医科大学",
+        "昆明医科大学",
+        "滨州医学院"
+      ],
+      "tier_C_note": "各省属医学院校及部分民办医学院校，全国约 50-70 所",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

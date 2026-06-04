@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.915163",
+    "updated_at": "2026-04-25T10:13:19.840014",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080712T_电磁场与无线技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"国防+5G的硬核小众王牌，薪酬不输计算机但路子极窄，不读研基本白学，入坑前先掂量自己能不能啃麦克斯韦方程组。\"",
+    "radar": {
+      "market_return": 4.1,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.93
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "电磁场理论（麦克斯韦方程组求解）、射频电路调试、天线设计优化、EMC 问题排查等核心工作需要物理直觉+工程经验+实测验证的深度结合，AI 可辅助仿真和参数优化，但无法替代实验调试和系统级设计决策。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"国防+5G的硬核小众王牌，薪酬不输计算机但路子极窄，不读研基本白学，入坑前先掂量自己能不能啃麦克斯韦方程组。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "电子科技大学",
+        "西安电子科技大学"
+      ],
+      "tier_A": [
+        "北京航空航天大学",
+        "哈尔滨工业大学",
+        "西北工业大学"
+      ],
+      "tier_B": [
+        "南京邮电大学",
+        "华中科技大学"
+      ],
+      "tier_C_note": "全国仅 11 所高校开设此专业，不在上述名单中的其余院校（如西安邮电大学、咸阳师范学院等）开设时间较短或规模较小，需结合具体师资力量判断。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

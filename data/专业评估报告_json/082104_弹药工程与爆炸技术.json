@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.147381",
+    "updated_at": "2026-04-25T20:34:21.004165",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082104",
+    "name": "弹药工程与爆炸技术",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "极度稀缺的国防硬核专业，全国仅 8 校开设、年毕业不到 1000 人，就业率近 100%，但方向窄、地域集中，入行需想清楚。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.8,
+      "career_path": 2.6,
+      "education_resources": 3.5,
+      "discipline_core": 4.2
+    },
+    "weighted_score": 3.52
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "~80%",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "弹药工程设计涉及物理实验验证、安全评估、保密环境操作，核心爆炸力学仿真和含能材料研发需高度专业知识和实体试验，AI 短期无法替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度稀缺的国防硬核专业，全国仅 8 校开设、年毕业不到 1000 人，就业率近 100%，但方向窄、地域集中，入行需想清楚。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京理工大学（985/双一流，A+）",
+        "南京理工大学（211，A+）"
+      ],
+      "tier_A": [
+        "中北大学（省重点，本硕博完整培养体系）",
+        "陆军工程大学（军事院校）"
+      ],
+      "tier_B": [
+        "安徽理工大学（国家级一流专业，民爆方向特色）",
+        "沈阳理工大学（省级重点学科）"
+      ],
+      "tier_C_note": "沈阳工学院（民办，工程实践导向）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

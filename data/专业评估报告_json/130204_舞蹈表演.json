@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.932212",
+    "updated_at": "2026-04-28T02:19:16.196859",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "130204",
+    "name": "舞蹈表演",
+    "category": "艺术学",
+    "recommendation_level": "yellow",
+    "summary": "舞台上的光鲜掩盖不了残酷的\"青春饭\"现实——极低就业率、极低起薪、极窄路径，除非你是天才型选手，否则慎入。",
+    "radar": {
+      "market_return": 1.5,
+      "industry_outlook": 2.0,
+      "future_adaptability": 1.8,
+      "career_path": 2.0,
+      "education_resources": 2.5,
+      "discipline_core": 2.0
+    },
+    "weighted_score": 1.86
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "3500–5500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "舞蹈表演的核心是身体表达和现场演出，AI 可辅助编舞、生成音乐和视觉效果，但短期内无法替代真人舞者的身体表现力和现场感染力。然而，AI 生成的虚拟演出、虚拟偶像对线下演出有一定冲击。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "舞台上的光鲜掩盖不了残酷的\"青春饭\"现实——极低就业率、极低起薪、极窄路径，除非你是天才型选手，否则慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京舞蹈学院",
+        "中央民族大学"
+      ],
+      "tier_A": [
+        "上海戏剧学院",
+        "南京艺术学院",
+        "星海音乐学院",
+        "四川音乐学院",
+        "武汉音乐学院",
+        "沈阳音乐学院",
+        "西安音乐学院"
+      ],
+      "tier_B": [
+        "广西艺术学院",
+        "云南艺术学院",
+        "吉林艺术学院",
+        "山东艺术学院",
+        "天津音乐学院",
+        "首都师范大学",
+        "湖南师范大学",
+        "福建师范大学"
+      ],
+      "tier_C_note": "各省级师范类院校（含舞蹈表演方向的师范院校）、各地方综合类大学艺术学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

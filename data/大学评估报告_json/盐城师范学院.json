@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.716415",
+    "updated_at": "2026-05-08T02:04:21.283871",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "盐城师范学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 3.5,
+      "location_advantage": 3.4,
+      "globalization": 2.6,
+      "student_empowerment": 2.9,
+      "brand_asset": 3.0
+    },
+    "weighted_score": 3.105,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "盐城师范学院（以下简称“盐城师院”）是一所典型的、处于上升期的省属本科公办院校。其核心竞争力紧紧锚定在“师范”二字上。在江苏省内，该校与淮阴师范学院并称为“苏北师范双雄”，承担了苏北乃至苏中地区大量基础教育师资的培养任务。\n\n**Identity（核心定位）**：它是江苏省基础教育人才的摇篮，尤其在小学教育、学前教育及中学主科教育领域拥有极高的行业渗透率。\n**Ace（王牌优势）**：极高的“考编成功率”是其吸引生源的杀手锏。学校通过系统的师范生技能训练、模拟面试及深厚的校友资源，构建了从校园到讲台的闭环。\n**Vibe（文化特质）**：务实、勤奋、考证导向。校园内弥漫着浓厚的“准教师”气质，学生对职业规划的清晰度远高于同类综合性大学。\n**Risk（潜在风险）**：随着人口出生率变动对基础教育市场的长期冲击，单一的师范路径面临结构性风险；此外，非师范专业在长三角高端制造业及互联网行业的品牌溢价仍有待提升。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

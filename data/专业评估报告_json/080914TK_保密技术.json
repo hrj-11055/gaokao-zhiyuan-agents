@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.215989",
+    "updated_at": "2026-04-25T13:53:14.099338",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080914TK_保密技术",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "国家安全刚需催生的\"数字锁匠\"，极度稀缺但院校极少、政审严格，属于\"高壁垒窄赛道\"的体制内铁饭碗+大厂高薪双通道专业。",
+    "radar": {
+      "market_return": 4.5,
+      "industry_outlook": 4.3,
+      "future_adaptability": 4.2,
+      "career_path": 3.8,
+      "education_resources": 3.2,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.17
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "保密技术的核心——密码学设计、安全架构、物理隔离策略、涉密系统管控——高度依赖人类专家的判断力和对特定场景的理解，AI难以替代\"信任\"与\"合规决策\"。AI反而会增强该领域的需求（AI自身需要安全保障），但基础的日志分析和漏洞扫描工作可能被AI工具辅助。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家安全刚需催生的\"数字锁匠\"，极度稀缺但院校极少、政审严格，属于\"高壁垒窄赛道\"的体制内铁饭碗+大厂高薪双通道专业。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "复旦大学（国内最早开设保密方向，2011年成立国家保密学院，网络空间安全博士点）",
+        "西北工业大学（军工背景深厚，2011年获批国家保密学院）"
+      ],
+      "tier_A": [
+        "北京交通大学（网络空间安全学院+国家保密学院，学科实力强）",
+        "中国海洋大学（2024年ABC评级A）"
+      ],
+      "tier_B": [
+        "湖南大学（985院校，B+评级）",
+        "贵州大学（211院校，大数据区域优势）"
+      ],
+      "tier_C_note": "齐鲁工业大学（山东保密学院，2021年成立）、塔里木大学（服务新疆区域保密需求）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

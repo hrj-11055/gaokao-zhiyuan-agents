@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.040208",
+    "updated_at": "2026-04-25T19:32:38.141879",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081905T_智慧海洋技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "国家战略加持的蓝海赛道，AI+海洋的交叉前沿，但专业太新（2022年设立）、院校极少（仅4所），就业数据尚在积累期，适合有冒险精神的理工尖子生。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.0,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.68
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "智慧海洋技术本身就是\"AI+海洋\"的交叉学科，核心工作包括海洋传感器研发、海洋大数据建模、智能装备算法设计等，属于驾驭AI而非被AI替代的岗位。物理世界的海洋环境感知与装备操控依赖真实实验与现场数据，AI难以直接替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略加持的蓝海赛道，AI+海洋的交叉前沿，但专业太新（2022年设立）、院校极少（仅4所），就业数据尚在积累期，适合有冒险精神的理工尖子生。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "哈尔滨工程大学（船舶与海洋工程A+，国防七子，海洋装备研发核心院校）"
+      ],
+      "tier_A": [
+        "浙江海洋大学（ABC排名A+，浙江省海洋科研主力院校）"
+      ],
+      "tier_B": [
+        "福建理工大学（2023年开设，地处海峡西岸，区位优势明显）"
+      ],
+      "tier_C_note": "山东交通学院（2025年河北录取最低535分，适合中等分数段考生保底）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

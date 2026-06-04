@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.950966",
+    "updated_at": "2026-04-25T20:00:42.436536",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082006T_飞行器质量与可靠性",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "航天系统的\"守门员\"，壁垒高、坑位少、对口稳，但就业极度依赖军工央企和一线城市，非名校慎入。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.59
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "~94%",
+      "alignment_rate": "~80%",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "可靠性工程核心依赖复杂系统的故障建模、物理试验验证（如百万次疲劳试验）、适航法规合规判定——这些需要物理世界交互和法规解读，AI 可辅助数据分析但难以替代人工判定和现场审核。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "航天系统的\"守门员\"，壁垒高、坑位少、对口稳，但就业极度依赖军工央企和一线城市，非名校慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京航空航天大学"
+      ],
+      "tier_A": [
+        "沈阳航空航天大学",
+        "中国民航大学"
+      ],
+      "tier_B": [
+        "郑州航空工业管理学院",
+        "桂林航天工业学院",
+        "西安航空学院"
+      ],
+      "tier_C_note": "安阳工学院、电子科技大学成都学院（应用型）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

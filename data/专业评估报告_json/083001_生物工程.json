@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.019167",
+    "updated_at": "2026-04-26T00:41:53.315486",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "083001",
+    "name": "生物工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "表面光鲜的\"21世纪学科\"，本科毕业≈失业预备役，硕士起步才算入场，博士才是刚需——典型的\"学历内卷之王\"。",
+    "radar": {
+      "market_return": 2.3,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.19
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–9,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": ""
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "生物工程的核心实验操作（细胞培养、发酵工艺调控、生物反应器设计）涉及高度精细的手工操作和实时决策判断，AI 在短期内难以完全替代。但数据分析、文献综述、药物筛选等环节已受到 AI 制药的显著冲击。掌握\"AI + 生物\"交叉技能的复合型人才将更具竞争力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "表面光鲜的\"21世纪学科\"，本科毕业≈失业预备役，硕士起步才算入场，博士才是刚需——典型的\"学历内卷之王\"。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "华东理工大学",
+        "北京化工大学",
+        "浙江大学",
+        "上海交通大学",
+        "清华大学"
+      ],
+      "tier_A": [
+        "华中农业大学",
+        "东南大学",
+        "华中科技大学",
+        "江南大学",
+        "中国农业大学",
+        "四川大学",
+        "天津大学",
+        "北京大学"
+      ],
+      "tier_B": [
+        "北京理工大学",
+        "大连理工大学",
+        "华南理工大学",
+        "南京工业大学",
+        "西北大学",
+        "陕西科技大学",
+        "浙江工业大学",
+        "齐鲁工业大学"
+      ],
+      "tier_C_note": "全国 243 所开设院校中排名中后段的普通本科院校，如安阳工学院、武汉生物工程学院、湖北大学知行学院等，适合分数在二本线附近的考生作为\"入门跳板\"——考研翻盘是主要出路。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

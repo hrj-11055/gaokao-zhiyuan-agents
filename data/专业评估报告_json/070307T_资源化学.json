@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.891968",
+    "updated_at": "2026-04-25T00:15:50.593598",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "070307T_资源化学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在\"双碳\"风口的新兴交叉学科，首批招生才两年，路是宽的但试错成本极高——适合化学功底扎实的赌徒型选手。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.49
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–7,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "资源化学的核心能力——实验设计与操作、材料表征分析、工艺流程优化——高度依赖物理世界的实操验证，AI 可辅助数据分析和模拟计算，但无法替代实验室动手能力和现场调试经验。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在\"双碳\"风口的新兴交叉学科，首批招生才两年，路是宽的但试错成本极高——适合化学功底扎实的赌徒型选手。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "清华大学",
+        "中国科学技术大学",
+        "中国科学院大学"
+      ],
+      "tier_A": [
+        "北京化工大学（已开设，首批建设单位）",
+        "南开大学",
+        "南京大学",
+        "吉林大学",
+        "复旦大学"
+      ],
+      "tier_B": [
+        "东华理工大学（已开设）",
+        "武汉大学",
+        "浙江大学",
+        "四川大学",
+        "厦门大学",
+        "中山大学"
+      ],
+      "tier_C_note": "各省属重点大学中化学/化工学科有一定基础的院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

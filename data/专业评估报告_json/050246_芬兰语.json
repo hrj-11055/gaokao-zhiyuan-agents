@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.152764",
+    "updated_at": "2026-04-23T12:59:45.818728",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050246",
+    "name": "芬兰语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极度稀缺的\"冷门钥匙\"——全国年毕业不足50人，供需紧平衡，但就业面极窄，赛道只容得下真爱玩家。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 2.8,
+      "future_adaptability": 2.5,
+      "career_path": 3.5,
+      "education_resources": 3.5,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.03
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–10,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "芬兰语属于乌拉尔语系，语法结构独特（15个格变化），当前机器翻译对芬兰语的支持程度远低于英语、西语等大语种，短期内AI难以完全替代专业翻译；但基础口笔译、日常沟通场景正被DeepL、Google Translate等工具快速覆盖。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度稀缺的\"冷门钥匙\"——全国年毕业不足50人，供需紧平衡，但就业面极窄，赛道只容得下真爱玩家。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学"
+      ],
+      "tier_A": [
+        "天津外国语大学"
+      ],
+      "tier_B": [
+        "暂无"
+      ],
+      "tier_C_note": "暂无",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

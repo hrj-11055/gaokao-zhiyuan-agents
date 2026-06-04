@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.054001",
+    "updated_at": "2026-04-28T04:12:11.337688",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130313T_戏剧教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众而美好的\"斜杠专业\"，政策春风利好但岗位稀缺，既要有舞台梦也要有教案功，出路在体制内编制和自由戏剧工作坊之间二选一。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.0,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.99
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "戏剧教育的核心是身体表达、情感体验、即兴互动和现场教学引导，这些能力高度依赖人与人之间的临场感知与情感连接，AI 难以替代。但课程设计、教案编写等辅助性工作可能被AI辅助工具部分替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众而美好的\"斜杠专业\"，政策春风利好但岗位稀缺，既要有舞台梦也要有教案功，出路在体制内编制和自由戏剧工作坊之间二选一。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央戏剧学院",
+        "上海戏剧学院"
+      ],
+      "tier_A": [
+        "北京师范大学",
+        "南京艺术学院",
+        "吉林艺术学院",
+        "山东艺术学院"
+      ],
+      "tier_B": [
+        "云南艺术学院",
+        "四川音乐学院",
+        "天津音乐学院",
+        "首都师范大学"
+      ],
+      "tier_C_note": "部分省属师范类院校及地方艺术院校（如广西艺术学院、新疆艺术学院等），具体需查询当年招生目录",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

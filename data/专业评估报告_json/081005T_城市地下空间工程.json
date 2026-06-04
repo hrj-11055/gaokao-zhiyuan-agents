@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.102890",
+    "updated_at": "2026-04-25T14:29:16.496971",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081005T_城市地下空间工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–9000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "地下工程涉及岩土力学现场判断、复杂地质条件分析、施工方案实时调整等高度依赖经验和直觉的任务，现场环境复杂多变，AI短期内难以替代。但BIM建模、结构计算等标准化环节正逐步被软件自动化取代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "东南大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_A": [
+        "重庆大学",
+        "山东大学",
+        "中南大学",
+        "西南交通大学",
+        "四川大学",
+        "长安大学",
+        "中国矿业大学(北京)"
+      ],
+      "tier_B": [
+        "南京工业大学",
+        "同济大学（虽未列排名但其土木顶尖）",
+        "中国地质大学(北京/武汉)",
+        "北京交通大学",
+        "天津大学",
+        "大连理工大学",
+        "河海大学",
+        "太原理工大学",
+        "成都理工大学",
+        "石家庄铁道大学"
+      ],
+      "tier_C_note": "山东科技大学、青岛理工大学、天津城建大学、中北大学、南华大学、华侨大学、福建理工大学、哈尔滨学院、东华理工大学、淮阴工学院、成都工业学院等（共77所开设院校中约50余所）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

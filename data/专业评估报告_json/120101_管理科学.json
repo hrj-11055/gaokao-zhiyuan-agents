@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.067918",
+    "updated_at": "2026-04-27T23:58:35.159584",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120101",
+    "name": "管理科学",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "管理层的\"理科生\"——用数学建模优化决策，但就业面宽而不深，极吃学校品牌和个人复合能力。",
+    "radar": {
+      "market_return": 3.0,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.0,
+      "education_resources": 3.2,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础数据处理和简单建模工作已可被 AI 工具部分替代，但复杂系统的建模优化、跨领域决策分析仍需要人类专家判断和领域知识整合。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "管理层的\"理科生\"——用数学建模优化决策，但就业面宽而不深，极吃学校品牌和个人复合能力。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "同济大学",
+        "国防科技大学"
+      ],
+      "tier_A": [
+        "北京航空航天大学",
+        "天津大学",
+        "哈尔滨工业大学",
+        "西安交通大学",
+        "上海交通大学",
+        "浙江大学",
+        "中国科学技术大学",
+        "复旦大学"
+      ],
+      "tier_B": [
+        "合肥工业大学",
+        "北京理工大学",
+        "南京大学",
+        "武汉大学",
+        "华中科技大学",
+        "四川大学",
+        "中南大学",
+        "东南大学",
+        "中国人民大学"
+      ],
+      "tier_C_note": "各省属重点大学如南京财经大学、浙江工商大学、山东财经大学等财经类院校，以及开设管理科学专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

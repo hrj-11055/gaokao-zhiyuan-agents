@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.201286",
+    "updated_at": "2026-04-28T01:51:20.799449",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130102T_艺术管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "文化产业里的\"万金油\"，懂艺术又懂管理是理想，现实是两头都不精，极度依赖城市资源和个人实习积累，非一线城市慎入。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 2.8,
+      "education_resources": 3.0,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.05
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 对艺术管理的冲击呈分化态势——基础的票务管理、数据统计、文案撰写等事务性工作正被 AI 替代；但艺术策展策划、人际资源整合、现场演出管理、艺术家经纪等需要高度人际互动和审美判断的工作短期内不易被替代。核心挑战在于\"入门级岗位\"被 AI 压缩最快，而这恰好是毕业生的主要就业入口。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "文化产业里的\"万金油\"，懂艺术又懂管理是理想，现实是两头都不精，极度依赖城市资源和个人实习积累，非一线城市慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央美术学院",
+        "北京大学（研究生层面）",
+        "上海交通大学（文创学院ICCI）"
+      ],
+      "tier_A": [
+        "中国传媒大学",
+        "上海戏剧学院",
+        "北京电影学院",
+        "中国音乐学院",
+        "中国戏曲学院",
+        "中央戏剧学院",
+        "中国美术学院"
+      ],
+      "tier_B": [
+        "南京艺术学院",
+        "山东艺术学院",
+        "广州美术学院",
+        "四川美术学院",
+        "天津音乐学院",
+        "星海音乐学院",
+        "云南艺术学院",
+        "广西艺术学院"
+      ],
+      "tier_C_note": "各类综合性大学的艺术管理方向、地方艺术学院的此专业，如吉林艺术学院、新疆艺术学院等，以及部分综合类高校新开设的此专业。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.853889",
+    "updated_at": "2026-05-08T03:17:16.949512",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "常州大学怀德学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 3.5,
+      "location_advantage": 3.8,
+      "globalization": 1.2,
+      "student_empowerment": 3.5,
+      "brand_asset": 2.8
+    },
+    "weighted_score": 2.855,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "- **Identity（核心定位）**：常州大学怀德学院是一所典型的“产业驱动型”独立学院。它成功地将母体学校的学术基因植入了靖江这个工业强县的土壤中。\n- **Ace（王牌优势）**：其核心竞争力在于“极高的性价比”与“精准的就业定位”。对于分数线在本科线附近的考生，它提供了一个进入长三角制造业管理层的稳健通道。\n- **Vibe（文化特质）**：校园文化呈现出一种“务实的进取感”。学生普遍意识到自己处于学历竞争的下游，因此在考研和考证上表现出极强的功利性（褒义）和勤奋度。\n- **Risk（潜在风险）**：最大的不确定性来自“独立学院转设”。虽然目前运行平稳，但未来若脱离常州大学品牌，其生源吸引力可能面临重估。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "靖江重工",
+        "考研逆袭",
+        "空调四人间",
+        "常大血统",
+        "务实主义",
+        "长三角蓝领管理层"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

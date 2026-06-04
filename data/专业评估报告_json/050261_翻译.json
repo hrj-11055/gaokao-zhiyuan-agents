@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.129207",
+    "updated_at": "2026-04-23T23:55:04.452795",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050261",
+    "name": "翻译",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "\"语言桥梁的建造者，AI 狂潮下低端岗首当其冲，高端口译与专业领域翻译仍是金饭碗，但入行门槛正在急速抬高。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.0,
+      "future_adaptability": 2.5,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 3.6
+    },
+    "weighted_score": 2.94
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–7,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "AI翻译效率已提高近9倍、成本降低90%，97.1%的翻译企业已采用翻译技术，26%的项目采用\"全机器翻译交付\"，33.2%采用\"机器翻译+译后编辑\"模式（中国翻译协会2025报告）。初级笔译和一般口译面临直接替代风险，但高端同传、文学翻译、法律/医学等专业领域翻译仍有不可替代性。美国BLS也将翻译列为AI高风险行业。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"语言桥梁的建造者，AI 狂潮下低端岗首当其冲，高端口译与专业领域翻译仍是金饭碗，但入行门槛正在急速抬高。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "北京外国语大学",
+        "上海外国语大学",
+        "复旦大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "南京大学",
+        "上海交通大学",
+        "广东外语外贸大学",
+        "对外经济贸易大学",
+        "黑龙江大学",
+        "武汉大学",
+        "华东师范大学",
+        "北京航空航天大学",
+        "西安外国语大学",
+        "四川外国语大学"
+      ],
+      "tier_B": [
+        "华中科技大学",
+        "山东大学",
+        "大连外国语大学",
+        "天津外国语大学",
+        "北京语言大学",
+        "首都师范大学",
+        "中南大学",
+        "暨南大学",
+        "湖南师范大学"
+      ],
+      "tier_C_note": "各地师范类院校、地方综合大学的外国语学院（全国共132所院校开设翻译专业）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

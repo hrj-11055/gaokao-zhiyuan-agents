@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.696319",
+    "updated_at": "2026-05-09T16:42:11.420391",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西安音乐学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "公办",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.8,
+      "graduate_value": 3.5,
+      "location_advantage": 4.2,
+      "globalization": 3.2,
+      "student_empowerment": 2.8,
+      "brand_asset": 4.0
+    },
+    "weighted_score": 3.68,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "四川音乐学院",
+        "similarity": "同类院校",
+        "key_difference": "川音规模更大，流行音乐与新媒体艺术产业化走在全国前列；西音则更显“精干”，在传统音乐、民族音乐的学术深度上更胜一筹。"
+      },
+      {
+        "name": "武汉音乐学院",
+        "similarity": "同类院校",
+        "key_difference": "武音在华中地区影响力巨大，硬件设施更新较快；西音的优势在于“一带一路”国家战略下的区位独特性，是向西传播中国音乐文化的桥头堡。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "西安音乐学院是一所**优缺点极其鲜明**的专业艺术院校。它是西北地区音乐人才的“黄埔军校”，在民族音乐研究和作曲理论方面拥有全国级的话语权。尽管硬件设施（尤其是宿舍条件）备受诟病，但其深厚的学术底蕴和西安这座城市赋予的文旅产业势能，使其在同类院校中保持着强劲的竞争力。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "四川音乐学院",
+          "similarity": "同类院校",
+          "key_difference": "川音规模更大，流行音乐与新媒体艺术产业化走在全国前列；西音则更显“精干”，在传统音乐、民族音乐的学术深度上更胜一筹。"
+        },
+        {
+          "name": "武汉音乐学院",
+          "similarity": "同类院校",
+          "key_difference": "武音在华中地区影响力巨大，硬件设施更新较快；西音的优势在于“一带一路”国家战略下的区位独特性，是向西传播中国音乐文化的桥头堡。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

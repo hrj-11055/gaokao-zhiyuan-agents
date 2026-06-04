@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.120343",
+    "updated_at": "2026-04-28T12:35:12.003778",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "130316T_数字戏剧",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "中戏独家新文科实验品，站在数字文化风口上，但零届毕业生、就业数据空白，只有能接受\"当小白鼠\"的冒险者才适合冲。",
+    "radar": {
+      "market_return": 2.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.5,
+      "education_resources": 3.5,
+      "discipline_core": 3.0
+    },
+    "weighted_score": 3.25
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI已能完成剧本自动生成、虚拟角色制作、舞台预演设计等技术性工作（中戏2020年即开设\"AI戏剧\"博士方向）。但戏剧的核心——现场情感交流、即兴互动、人际共情——是AI难以替代的（表演艺术家多次公开阐述此观点）。数字戏剧从业者需同时具备艺术审美和技术整合能力，纯技术端岗位被AI替代风险更高，复合型人才更具韧性。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "中戏独家新文科实验品，站在数字文化风口上，但零届毕业生、就业数据空白，只有能接受\"当小白鼠\"的冒险者才适合冲。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中央戏剧学院（独家开设数字戏剧本科，五年制，教育部重点实验室，硕博完整培养体系，AI戏剧博士方向首创者）"
+      ],
+      "tier_A": [
+        "（暂无其他院校开设\"数字戏剧\"同名专业，但以下院校在\"戏剧+数字技术\"方向有较强培养能力）上海戏剧学院（2024年申报\"数字演艺设计\"专业）",
+        "北京电影学院",
+        "中国传媒大学"
+      ],
+      "tier_B": [
+        "南京艺术学院",
+        "浙江传媒学院",
+        "山东艺术学院",
+        "吉林艺术学院（设有数字媒体/虚拟演出相关方向）"
+      ],
+      "tier_C_note": "暂无。该专业为特设专业（T标识），目前仅中戏独家开设，未来若有更多院校申报开设，C档评估将相应更新。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

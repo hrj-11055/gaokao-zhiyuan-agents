@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.080357",
+    "updated_at": "2026-04-25T20:50:11.839376",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082108T_智能无人系统技术",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "国家战略风口上的\"硬核工科\"，低空经济+无人装备双重红利，但开设院校极少、课程极难，数学编程不过关者慎入。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.7,
+      "future_adaptability": 4.3,
+      "career_path": 3.5,
+      "education_resources": 3.4,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.19
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "12,000–18,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业本身就是\"AI+工程\"的交叉学科，核心技能——传感器融合、自主导航、多智能体协同、嵌入式系统开发——正是AI时代的技术基石，AI是工具而非威胁。但纯执行层的编码工作可能被AI辅助替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略风口上的\"硬核工科\"，低空经济+无人装备双重红利，但开设院校极少、课程极难，数学编程不过关者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京理工大学（兵器A+，985，最早开设且实力最强）",
+        "大连理工大学（985，2025年新开设，平台实力强）"
+      ],
+      "tier_A": [
+        "中北大学（兵工特色鲜明，仪器科学与技术",
+        "控制科学底蕴深厚）"
+      ],
+      "tier_B": [
+        "沈阳理工大学",
+        "西安邮电大学",
+        "四川轻化工大学（依托四川省无人机产业园）"
+      ],
+      "tier_C_note": "太原工业学院、湖北汽车工业学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

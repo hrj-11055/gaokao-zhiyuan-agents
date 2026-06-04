@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.098619",
+    "updated_at": "2026-04-25T23:22:07.364106",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082707T_食品营养与检验教育",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "食品安全的\"守门员\"专业，方向小众、开设院校少，背靠千亿检测赛道，但起薪偏低、天花板靠证书和经验抬升，属\"先苦后甜\"型。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.34
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "食品检验涉及大量实验室操作、现场抽检和感官评估，短期内难以被 AI 完全替代。但 AI 视觉+微型光谱技术已实现果蔬农残 10 秒快检，人工成本降低 70%，基础重复性检测岗位面临转型压力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "食品安全的\"守门员\"专业，方向小众、开设院校少，背靠千亿检测赛道，但起薪偏低、天花板靠证书和经验抬升，属\"先苦后甜\"型。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业无 985/211 院校开设）"
+      ],
+      "tier_A": [
+        "河南工业大学（校友会 2024 研究型第 1）",
+        "河南农业大学（软科排名第 1）",
+        "内蒙古农业大学（赶考猫 A+ 排名第 1）"
+      ],
+      "tier_B": [
+        "锦州医科大学",
+        "齐齐哈尔医学院",
+        "吉林工程技术师范学院",
+        "遵义师范学院"
+      ],
+      "tier_C_note": "邢台学院、新疆理工学院、广州工商学院、青岛工学院、吉林工商学院、贵阳信息科技学院",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

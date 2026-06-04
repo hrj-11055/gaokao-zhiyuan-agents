@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.071356",
+    "updated_at": "2026-04-24T09:37:37.679787",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "050273T_阿非利卡语",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "极稀缺的非洲语种，背靠中非合作风口，但市场极窄，非非洲方向者慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 2.5,
+      "future_adaptability": 2.0,
+      "career_path": 1.8,
+      "education_resources": 1.5,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 2.32
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "语言翻译和口译是AI（如DeepL、GPT系列）最容易替代的领域之一。阿非利卡语虽为小语种，但AI翻译能力持续提升，基础翻译岗位面临冲击。跨文化沟通和商务谈判中的语言能力仍有不可替代性，但纯语言技能壁垒正在降低。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极稀缺的非洲语种，背靠中非合作风口，但市场极窄，非非洲方向者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（全国唯一稳定开设该专业的顶尖院校，外国语言文学A+学科）"
+      ],
+      "tier_A": [
+        "上海外国语大学（外国语言文学A+，据部分资料提及开设该方向）"
+      ],
+      "tier_B": [
+        "广东外语外贸大学（外国语言文学A类，非洲研究方向）",
+        "中国传媒大学（小语种特色）"
+      ],
+      "tier_C_note": "目前无其他院校确认开设阿非利卡语专业",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

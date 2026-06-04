@@ -26,7 +26,7 @@
 - 正式会员价格：`¥19.9`，后端金额 `MEMBERSHIP_PRICE_CENTS=1990`。
 - 会员替代解锁：邀请 5 位有效新用户，或兑换后台发放的邀请码。
 - 当前报告生成前置测评：只要求性格类型定位（MBTI 结果摘要）和霍兰德职业兴趣（RIASEC code/scores/indicators）。五环问卷入口已关闭，旧五环数据保留但不再参与报告准备度、接口校验、专业资料抓取或最终 prompt。
-- 综合报告目标模型：`DEEPSEEK_MODEL=deepseek-v4-pro`。
+- 综合报告目标模型：`REPORT_DEEPSEEK_MODEL=deepseek-v4-flash`。
 - 深度报告在线阅读免费；深度 PDF 下载需要会员并消耗额度。
 - 客服反馈微信号：`HRJ-11055`。
 - 订单/会员人工排查：47 服务器 `/opt/gaokao-proxy` 下使用 `npm run commerce-ops -- lookup ...`。

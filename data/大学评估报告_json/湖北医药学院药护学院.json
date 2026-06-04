@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.740198",
+    "updated_at": "2026-05-10T01:18:10.602649",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "湖北医药学院药护学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.2,
+      "graduate_value": 2.8,
+      "location_advantage": 3.5,
+      "globalization": 1.2,
+      "student_empowerment": 2.0,
+      "brand_asset": 3.0
+    },
+    "weighted_score": 2.55,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "湖北科技学院（公办二本）",
+        "similarity": "同类院校",
+        "key_difference": "湖科大在学费上有绝对优势，且拥有硕士点。但药护学院在十堰市内的临床实习资源（太和医院）要优于湖科大在咸宁的实习资源。"
+      },
+      {
+        "name": "武汉大学珞珈学院（民办综合类）",
+        "similarity": "同类院校",
+        "key_difference": "药护学院的专业壁垒极高，就业稳定性远超一般的民办综合性大学。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "*   **Identity（核心定位）**：一所深耕鄂西北、以临床实践见长的应用型医学院校。\n*   **Ace（王牌优势）**：无与伦比的实习资源。学生在本科阶段接触到的病例数量和手术机会，甚至超过部分省会城市的公办医学院。\n*   **Vibe（文化特质）**：极度务实。这里没有太多浪漫主义色彩，更多的是对解剖图谱的死记硬背和对执业医师证的执着追求。\n*   **Risk（潜在风险）**：转设过程中的校名变动可能短期影响品牌认知度；高昂的学费对贫困家庭是不小的负担。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "湖北科技学院（公办二本）",
+          "similarity": "同类院校",
+          "key_difference": "湖科大在学费上有绝对优势，且拥有硕士点。但药护学院在十堰市内的临床实习资源（太和医院）要优于湖科大在咸宁的实习资源。"
+        },
+        {
+          "name": "武汉大学珞珈学院（民办综合类）",
+          "similarity": "同类院校",
+          "key_difference": "药护学院的专业壁垒极高，就业稳定性远超一般的民办综合性大学。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

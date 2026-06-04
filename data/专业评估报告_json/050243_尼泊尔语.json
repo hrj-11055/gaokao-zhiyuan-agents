@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.023715",
+    "updated_at": "2026-04-23T12:34:14.288484",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "050243",
+    "name": "尼泊尔语",
+    "category": "文学",
+    "recommendation_level": "yellow",
+    "summary": "极度稀缺的\"一带一路\"冷门语言，全国年毕业生不足百人，外交/基建通道独家卡位，但就业面极窄，纯语言岗天花板低，必须叠加第二技能。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 2.5,
+      "career_path": 2.5,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.9
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "尼泊尔语属极低资源语言（全世界使用人口约4000万），AI翻译训练数据极度匮乏，机器翻译质量远低于英/日/法等主流语种。外交谈判、基建项目现场口译、文化理解等场景仍高度依赖人类翻译。但随着大模型能力扩展，中长期风险需关注。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极度稀缺的\"一带一路\"冷门语言，全国年毕业生不足百人，外交/基建通道独家卡位，但就业面极窄，纯语言岗天花板低，必须叠加第二技能。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京外国语大学（外交部核心生源校",
+        "A+评级",
+        "全国最早开设）"
+      ],
+      "tier_A": [
+        "中国传媒大学（国际传播特色鲜明",
+        "外交部已有毕业生",
+        "A+评级）"
+      ],
+      "tier_B": [
+        "云南大学（211",
+        "面向南亚辐射中心战略）",
+        "云南民族大学（校友会排名靠前）"
+      ],
+      "tier_C_note": "西藏民族大学/西藏大学（地缘优势，服务地方边贸需求）",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

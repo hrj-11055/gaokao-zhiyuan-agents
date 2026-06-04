@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.184748",
+    "updated_at": "2026-04-25T20:56:46.466290",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082202",
+    "name": "辐射防护与核安全",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "国家战略刚需的\"小众硬核\"赛道——招生少、院校少、对口率高，但圈子极窄，入了行就别想出来。",
+    "radar": {
+      "market_return": 3.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.4,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.68
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–9,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "辐射防护涉及现场剂量测量、放射性废物处理工艺、核安全监管决策等需要物理实验与现场判断的环节，AI 可辅助数据处理和模拟，但无法替代现场操作和安全监管的核心决策。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "国家战略刚需的\"小众硬核\"赛道——招生少、院校少、对口率高，但圈子极窄，入了行就别想出来。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "兰州大学",
+        "哈尔滨工程大学"
+      ],
+      "tier_A": [
+        "华北电力大学",
+        "南京航空航天大学"
+      ],
+      "tier_B": [
+        "南华大学（核工业部直属背景）",
+        "成都理工大学",
+        "东华理工大学（国防紧缺专业",
+        "核资源国家重点实验室）"
+      ],
+      "tier_C_note": "西南科技大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

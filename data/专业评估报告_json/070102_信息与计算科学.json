@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.172627",
+    "updated_at": "2026-04-24T23:20:53.106840",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "070102",
+    "name": "信息与计算科学",
+    "category": "理学",
+    "recommendation_level": "green",
+    "summary": "数学底子硬、算法能力强，横跨金融量化与AI的\"万能型人才\"，但本科杂而不精，深造是拉开差距的关键。",
+    "radar": {
+      "market_return": 4.4,
+      "industry_outlook": 4.5,
+      "future_adaptability": 4.3,
+      "career_path": 3.9,
+      "education_resources": 4.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 4.32
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "12,000–18,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "核心技能为数学建模、算法设计、底层计算逻辑——恰恰是驱动AI的能力，而非被AI替代的执行层。但纯编码类低阶工作确实受到AI编程工具冲击。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "数学底子硬、算法能力强，横跨金融量化与AI的\"万能型人才\"，但本科杂而不精，深造是拉开差距的关键。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "清华大学",
+        "中国科学技术大学",
+        "复旦大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "山东大学",
+        "西安交通大学",
+        "南开大学",
+        "南京大学",
+        "湘潭大学",
+        "四川大学",
+        "中山大学",
+        "吉林大学",
+        "中南大学",
+        "大连理工大学",
+        "哈尔滨工业大学",
+        "武汉大学",
+        "北京航空航天大学"
+      ],
+      "tier_B": [
+        "首都师范大学",
+        "厦门大学",
+        "华中科技大学",
+        "东南大学",
+        "北京理工大学",
+        "湖南大学",
+        "电子科技大学",
+        "南京航空航天大学",
+        "西安电子科技大学",
+        "上海财经大学",
+        "湘潭大学（计算数学传统强校）"
+      ],
+      "tier_C_note": "全国共335所高校开设该专业，80个国家级一流本科专业点。对于中等分数段考生，省属重点大学（如广西大学、贵州师范大学、兰州交通大学等）仍可作为务实选择。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

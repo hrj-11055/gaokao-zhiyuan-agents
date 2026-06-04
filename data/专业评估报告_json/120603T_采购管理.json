@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.956681",
+    "updated_at": "2026-04-27T20:54:48.424556",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120603T_采购管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众但务实的\"供应链前端操盘手\"，就业面窄但竞争也小，靠证书和经验堆出来的越老越吃香行当。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.6,
+      "future_adaptability": 2.8,
+      "career_path": 3.5,
+      "education_resources": 2.0,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.1
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–7000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 正在替代采购中的重复性工作（自动比价、发票处理、合同审查、需求预测），但战略采购核心能力（供应商关系管理、谈判博弈、品类策略制定、跨部门协同）仍高度依赖人的判断力和关系网络。预计 5–10 年内，基础采购岗位（如采购文员、订单跟进）将大幅缩减，而战略采购岗位需求稳定甚至上升。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众但务实的\"供应链前端操盘手\"，就业面窄但竞争也小，靠证书和经验堆出来的越老越吃香行当。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业无顶尖名校形成绝对优势）"
+      ],
+      "tier_A": [
+        "北京物资学院",
+        "中南财经政法大学",
+        "西南财经大学"
+      ],
+      "tier_B": [
+        "云南财经大学",
+        "河北地质大学",
+        "广西财经学院"
+      ],
+      "tier_C_note": "郑州升达经贸管理学院、武汉学院、烟台南山学院等其他开设该专业的应用型本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

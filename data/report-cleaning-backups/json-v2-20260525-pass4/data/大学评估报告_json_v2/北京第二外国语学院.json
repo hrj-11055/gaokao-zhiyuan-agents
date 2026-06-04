@@ -1,0 +1,681 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generated_at": "2026-05-20T07:58:06.176030",
+    "updated_at": "2026-05-09T14:24:33.908571",
+    "source_file": "北京第二外国语学院.md",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ],
+    "cleaning_version": "report-source-clean-v1"
+  },
+  "layer1_overview": {
+    "name": "北京第二外国语学院",
+    "location": "{",
+    "type": "公办",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 3.2,
+      "graduate_value": 4.2,
+      "location_advantage": 4.8,
+      "globalization": 4.0,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.9,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "summary": ""
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {
+      "title": "1.4 保送生与特殊招生",
+      "raw_content": "北二外作为全国具有保送生资格的 16 所外国语学校的重要对接高校，每年招收大量外语类保送生。\n\n| 年份 | 保送生总数 | 外语类 | 竞赛类 | 其他 | 数据来源 |\n| --- | --- | --- | --- | --- | --- |\n| 2025 | 105 [拟] | 105 | 0 | 0 | 阳光高考公示 |\n| 2024 | 112 | 112 | 0 | 0 | 阳光高考公示 |\n| 2023 | 108 | 108 | 0 | 0 | 阳光高考公示 |\n\n**录取难度评估**：高。依据：保送生主要面向全国 16 所外国语中学，竞争者均为各校顶尖学霸，且需通过严苛的校测面试。"
+    },
+    "module2_student_competitiveness": {
+      "title": "2.1 文科/历史组录取数据",
+      "raw_content": "#### 北京第二外国语学院 2025 年文科/历史组录取信息（部分省份）\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度（全省前 X%） |\n| --- | --- | --- | --- |\n| 北京 | 514 | 33743 | 约 6.5% |\n| 河北 | 599 | 6241 | 约 1.2% |\n| 广东 | 574 | 12450 | 约 1.8% |\n| 江苏 | 579 | 11880 | 约 2.1% |\n\n#### 北京第二外国语学院 2024 年文科/历史组录取信息\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 北京 | 526 | 21881 | 约 4.2% |\n| 广东 | 554 | 18500 | 约 2.6% |\n| 四川 | 556 | 8900 | 约 1.5% |\n\n**文科生源深度分析**：北二外在文科生心中具有极高的品牌溢价，尤其在华北和华东地区。近三年录取位次保持稳定，北京本地生源竞争相对缓和，但河北、山东等高考大省的录取位次常年处于全省前 2% 以内。建议位次在全省前 5% 的文科考生将其作为稳妥或保底选择。"
+    },
+    "module3_graduate_value": {
+      "title": "3.2 就业去向全景",
+      "raw_content": "| 去向方向 | 占比 | 关键细节 |\n| --- | --- | --- |\n| 国内深造 | 12.13% | 主要去向为北外、上外、北大、人大 |\n| 出国深造 | 11.89% | 集中在伦敦大学学院、爱丁堡大学等 |\n| 考公/选调 | 15.5% | 以外交部、商务部、北京市各级机关为主 |\n| 企业就业 | 60.48% | 集中在旅游、教育、互联网、金融行业 |\n\n**顶级雇主 Top 5**：外交部、中国银行、华为、中青旅、字节跳动。"
+    },
+    "module4_location_industry": {
+      "title": "4.1 区位与产业势能",
+      "raw_content": "| 指标 | 数据 | 来源 |\n| --- | --- | --- |\n| 所在城市 | 北京市朝阳区 | — |\n| 最新年度 GDP | 43760.7 亿元 | 北京市统计局 |\n| 全国城市 GDP 排名 | 第 2 名 | 官方统计 |\n| 城市定位 | 国际交往中心、科技创新中心 | 城市规划 |\n\n**产业-学科共振分析**：\n\n| 城市支柱产业 | 耦合学科 | 耦合度 |\n| --- | --- | --- |\n| 旅游会展业 | 旅游管理 | 高度共振 |\n| 外交外事 | 外国语言文学 | 高度共振 |\n| 国际贸易 | 国际经济与贸易 | 中度耦合 |\n\n**耦合实例**：北二外紧邻北京 CBD，学生在校期间常年参与“一带一路”高峰论坛、中非合作论坛等国家级外事活动的志愿服务，这种“实战化”教学直接转化为就业竞争力。"
+    },
+    "module5_campus_ecosystem": {
+      "title": "5.3 品牌资产与文化印记",
+      "raw_content": "| 指标 | 数据 | 数据来源 |\n| --- | --- | --- |\n| 软科排名 | 语言类第 7 名 | 2025 软科 |\n| 校友会排名 | 第 179 名 | 2025 校友会 |\n| B 站官方粉丝 | 1.2 万 | Bilibili 官网 |\n| 抖音官方粉丝 | 4.6 万 | 抖音官网 |\n| 社交媒体内容风格 | 稳重、官方，侧重校园美景与学子风采 | — |"
+    },
+    "module6_comprehensive_evaluation": {
+      "title": "6.1 六维评分表",
+      "raw_content": "| 评估维度 | 核心依据摘要 | 维度得分 |\n| --- | --- | --- |\n| 学术资本 | 缺乏 A 类学科，但 B 类学科行业认可度极高 | 3.2 |\n| 毕业生价值实现 | 外交、旅游行业就业极强，起薪在北京具有竞争力 | 4.2 |\n| 区位与产业势能 | 坐落北京 CBD 边缘，产业耦合度极高 | 4.8 |\n| 全球化能力 | 交换项目丰富，国际化氛围浓厚 | 4.0 |\n| 学生赋权与自由度 | 转专业有门槛，但“复语复合”模式提供多元路径 | 3.5 |\n| 品牌资产与文化印记 | “外交官摇篮”及“旅游最高学府”双标签 | 3.8 |"
+    },
+    "module7_culture_cards": {
+      "title": "7.2 一句话校园精神测试",
+      "raw_content": "**问题**：如果周五晚上有一个突发的国际会议志愿服务机会，但会错过周六的社团聚会，你会？\n- **A.** 拒绝，享受大学生活。 → 点评：你可能不太适合二外的实战氛围。\n- **B.** 报名，这是绝佳的简历加分项。 → 点评：恭喜，你拥有纯正的二外基因。"
+    },
+    "module8_raw_data": {
+      "title": "8.1 数据源汇总",
+      "raw_content": "| 数据项 | 引用来源 | 可信度 |\n| --- | --- | --- |\n| 学科评估结果 | 教育部学位中心 | 高 |\n| 录取分数线 | 掌上高考、各省教育考试院 | 高 |\n| 就业/深造数据 | 北二外 2023 毕业生就业质量报告 | 高 |\n| 薪酬数据 | 中国薪酬网、麦可思 | 中 |"
+    }
+  },
+  "layer4_supplement": {
+    "full_raw_content": "## 北京第二外国语学院（BISU）深度尽职调查报告\n\n**报告日期**：2026 年 5 月 9 日\n**研究目标**：北京第二外国语学院（以下简称“北二外”）\n**研究背景**：基于 2023–2025 年实时数据，对该校学术资本、生源质量、就业价值及校园生态进行全方位评估。\n\n---\n\n## 模块一：学术资本\n\n### 1.1 学科金字塔\n\n北二外是一所以外语和旅游为优势特色的市属重点高校。在教育部第四轮学科评估中，该校并未获得 A 类学科，其核心竞争力集中在 B 类。\n\n| 学科名称 | 评估等级 | 所属门类 |\n| --- | --- | --- |\n| 外国语言文学 | B | 文学 |\n| 工商管理 | B | 管理学 |\n| 中国语言文学 | C | 文学 |\n\n**A 类学科总数**：0 个\n**学科强项集中领域**：北二外的学科优势呈现典型的“外语+旅游”双核驱动模式。外国语言文学稳居全国前列，尤其在非通用语种（小语种）领域具有深厚积淀；工商管理学科则依托其全国顶尖的旅游管理专业，形成了极强的行业应用特色。\n\n### 1.2 顶尖智力资产\n\n作为文科类特色院校，北二外暂无全职中国科学院或工程院院士。其顶尖人才主要集中在翻译、外交及旅游规划领域。\n\n| 类别 | 人数 | 数据来源 |\n| --- | --- | --- |\n| 中国科学院院士 | 0 | 学校官网 |\n| 中国工程院院士 | 0 | 学校官网 |\n| 海外/外籍院士 | 0 | 学校官网 |\n| **合计** | **0** |  |\n\n**代表人物**：王毅（知名校友，外交部部长），虽非在职院士，但代表了该校在外交外事人才培养上的最高成就。\n\n### 1.3 国家级科研平台\n\n北二外拥有多个省部级及以上科研平台，重点服务于国家文化贸易和旅游战略。\n\n| 平台名称 | 级别/类型 | 主要研究方向 |\n| --- | --- | --- |\n| 汉阿高级翻译教程课程虚拟教研室 | 国家级虚拟教研室 | 阿拉伯语翻译教学与实践 |\n| 旅游人才素质提升实验室 | 文化和旅游部重点实验室 | 旅游管理与人才测评 |\n| 对外文化传播研究基地 | 北京市级研究基地 | 国际传播与文化贸易 |\n\n### 1.4 保送生与特殊招生\n\n北二外作为全国具有保送生资格的 16 所外国语学校的重要对接高校，每年招收大量外语类保送生。\n\n| 年份 | 保送生总数 | 外语类 | 竞赛类 | 其他 | 数据来源 |\n| --- | --- | --- | --- | --- | --- |\n| 2025 | 105 [拟] | 105 | 0 | 0 | 阳光高考公示 |\n| 2024 | 112 | 112 | 0 | 0 | 阳光高考公示 |\n| 2023 | 108 | 108 | 0 | 0 | 阳光高考公示 |\n\n**录取难度评估**：高。依据：保送生主要面向全国 16 所外国语中学，竞争者均为各校顶尖学霸，且需通过严苛的校测面试。\n\n### 1.5 双学位与辅修项目\n\n北二外推行“复语+复合”培养模式，鼓励学生跨学科发展。\n\n| 项目名称 | 合作院校（如有） | 可选专业 | 备注 |\n| --- | --- | --- | --- |\n| “外培计划”双学位 | 海外合作院校（如昆士兰大学） | 翻译、旅游管理等 | 1+2+1 或 2+2 模式 |\n| 校内双学位/辅修 | 本校 | 国际经济与贸易、法学、财务管理 | 需学有余力 |\n\n---\n\n## 模块二：生源竞争力\n\n### 2.1 文科/历史组录取数据\n\n#### 北京第二外国语学院 2025 年文科/历史组录取信息（部分省份）\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度（全省前 X%） |\n| --- | --- | --- | --- |\n| 北京 | 514 | 33743 | 约 6.5% |\n| 河北 | 599 | 6241 | 约 1.2% |\n| 广东 | 574 | 12450 | 约 1.8% |\n| 江苏 | 579 | 11880 | 约 2.1% |\n\n#### 北京第二外国语学院 2024 年文科/历史组录取信息\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 北京 | 526 | 21881 | 约 4.2% |\n| 广东 | 554 | 18500 | 约 2.6% |\n| 四川 | 556 | 8900 | 约 1.5% |\n\n**文科生源深度分析**：北二外在文科生心中具有极高的品牌溢价，尤其在华北和华东地区。近三年录取位次保持稳定，北京本地生源竞争相对缓和，但河北、山东等高考大省的录取位次常年处于全省前 2% 以内。建议位次在全省前 5% 的文科考生将其作为稳妥或保底选择。\n\n### 2.2 理科/物理组录取数据\n\n#### 北京第二外国语学院 2025 年理科/物理组录取信息\n\n| 省份 | 录取分数线 | 全省位次 | 竞争激烈程度 |\n| --- | --- | --- | --- |\n| 北京 | 514 | 33743 | 约 6.5% |\n| 河北 | 577 | 48060 | 约 9.2% |\n| 广东 | 556 | 72839 | 约 10.5% |\n| 江苏 | 573 | 63454 | 约 11.2% |\n\n**理科生源深度分析**：相比文科，北二外对理科生的吸引力略逊，录取位次明显低于文科。这反映了语言类院校普遍的生源结构失衡。对于想通过理科分数进入北京核心地段、获取外语优势的考生，北二外是一个性价比极高的“捡漏”选择。\n\n---\n\n## 模块三：毕业生价值实现\n\n### 3.1 深造质量\n\n| 指标 | 数值 | 数据来源 |\n| --- | --- | --- |\n| 本科毕业生总数 | 1554 人 | 2023 就业报告 |\n| 国内深造率 | 12.13% | 2023 就业报告 |\n| 出国（境）深造率 | 11.89% | 2023 就业报告 |\n| 进入 QS 前 50 比例 | 约 35%（出国生中） |  |\n| 最受欢迎海外深造地 Top 3 | 英国、美国、日本 | 2023 就业报告 |\n\n### 3.2 就业去向全景\n\n| 去向方向 | 占比 | 关键细节 |\n| --- | --- | --- |\n| 国内深造 | 12.13% | 主要去向为北外、上外、北大、人大 |\n| 出国深造 | 11.89% | 集中在伦敦大学学院、爱丁堡大学等 |\n| 考公/选调 | 15.5% | 以外交部、商务部、北京市各级机关为主 |\n| 企业就业 | 60.48% | 集中在旅游、教育、互联网、金融行业 |\n\n**顶级雇主 Top 5**：外交部、中国银行、华为、中青旅、字节跳动。\n\n### 3.3 薪酬竞争力\n\n| 指标 | 数值 | 数据来源 |\n| --- | --- | --- |\n| 毕业起薪中位数 | 8800 元/月 | 2024 薪酬排行榜推算 |\n| 毕业 5 年薪酬中位数 | 15500 元/月 | 麦可思数据参考 |\n| 同类高校薪酬水平 | 略高于 | 依据：地处北京 CBD 边缘，实习机会极多 |\n\n---\n\n## 模块四：区位与全球化\n\n### 4.1 区位与产业势能\n\n| 指标 | 数据 | 来源 |\n| --- | --- | --- |\n| 所在城市 | 北京市朝阳区 | — |\n| 最新年度 GDP | 43760.7 亿元 | 北京市统计局 |\n| 全国城市 GDP 排名 | 第 2 名 | 官方统计 |\n| 城市定位 | 国际交往中心、科技创新中心 | 城市规划 |\n\n**产业-学科共振分析**：\n\n| 城市支柱产业 | 耦合学科 | 耦合度 |\n| --- | --- | --- |\n| 旅游会展业 | 旅游管理 | 高度共振 |\n| 外交外事 | 外国语言文学 | 高度共振 |\n| 国际贸易 | 国际经济与贸易 | 中度耦合 |\n\n**耦合实例**：北二外紧邻北京 CBD，学生在校期间常年参与“一带一路”高峰论坛、中非合作论坛等国家级外事活动的志愿服务，这种“实战化”教学直接转化为就业竞争力。\n\n### 4.2 全球化能力\n\n| 指标 | 数据 |\n| --- | --- |\n| 实质性交换项目合作院校数 | 190 余所 |\n| 其中 QS 前 100 院校 | 伦敦大学学院、爱丁堡大学、东京大学等 |\n| 中外合作办学机构 | 无（主要为 SQA-AD 项目及联合培养） |\n| 高层次双学位项目 | 昆士兰大学 2+2 项目、北亚利桑那大学项目 |\n\n---\n\n## 模块五：校园生态与品牌\n\n### 5.1 学生赋权与自由度\n\n**转专业政策**：\n- 申请时间：大一学年结束前\n- 申请次数：1 次\n- 成绩要求：通常要求专业前 10%-20%\n- 考核方式：笔试+面试\n- 成功率：约 60%（数据来源：（社区反馈，需核验））\n\n### 5.2 基础设施与生活品质\n\n**宿舍条件**：本科生多为 6 人间，上床下桌。6 号楼被称为“C 位”，条件相对较好，配有电梯。宿舍普遍空间较紧凑，但空调、暖气设施齐全。（社区反馈，需核验）\n**食堂评级**：拥有“风味食堂”等多个餐厅。特色招牌包括二外大包子、麻辣烫。食堂食物选择丰富度在软科调查中位列全国前 5%。（社区反馈，需核验）\n\n### 5.3 品牌资产与文化印记\n\n| 指标 | 数据 | 数据来源 |\n| --- | --- | --- |\n| 软科排名 | 语言类第 7 名 | 2025 软科 |\n| 校友会排名 | 第 179 名 | 2025 校友会 |\n| B 站官方粉丝 | 1.2 万 | Bilibili 官网 |\n| 抖音官方粉丝 | 4.6 万 | 抖音官网 |\n| 社交媒体内容风格 | 稳重、官方，侧重校园美景与学子风采 | — |\n\n### 5.4 学术氛围与社团生态\n\n**学术压力画像**：语言类专业压力极大，晨读（早自习）是二外传统。学生普遍反映“大一像高四”，尤其是小语种专业，背诵量惊人。（社区反馈，需核验）\n**标志性社团/活动**：多语种唱响、外语戏剧节。\n\n### 5.6 已知风险点\n\n| 风险点 | 事件概要 | 后续处理 | 当前状况 |\n| --- | --- | --- | --- |\n| 高管廉政风险 | 原党委书记顾晓园因贪污受贿被判刑 13 年 | 纪委深度整改 | 校园风气重塑中 |\n| 学术不端争议 | 2021 年曾有教师被举报学术不端并查实 | 调离教学岗位 | 强化师德建设 |\n\n---\n\n## 模块六：综合评估与量化评分\n\n### 6.1 六维评分表\n\n| 评估维度 | 核心依据摘要 | 维度得分 |\n| --- | --- | --- |\n| 学术资本 | 缺乏 A 类学科，但 B 类学科行业认可度极高 | 3.2 |\n| 毕业生价值实现 | 外交、旅游行业就业极强，起薪在北京具有竞争力 | 4.2 |\n| 区位与产业势能 | 坐落北京 CBD 边缘，产业耦合度极高 | 4.8 |\n| 全球化能力 | 交换项目丰富，国际化氛围浓厚 | 4.0 |\n| 学生赋权与自由度 | 转专业有门槛，但“复语复合”模式提供多元路径 | 3.5 |\n| 品牌资产与文化印记 | “外交官摇篮”及“旅游最高学府”双标签 | 3.8 |\n\n### 6.2 执行摘要\n北二外是一所**“小而精”的行业特色型大学**。其核心王牌是**旅游管理与非通用语种**，在外交外事领域拥有极高的校友资源。校园气质**务实且国际化**，学生实习实践机会冠绝同类院校。潜在风险在于**学科单一性**，且近年来受行业波动影响，旅游类专业热度有所下滑。\n\n### 6.3 一句话推荐\n适合**目标明确、渴望进入外交外事或高端旅游行业，且能承受高强度语言学习压力**的文科考生。\n\n### 6.4 横向对比\n对比**北京语言大学**：北语更侧重“对外汉语”与“汉学研究”，国际学生比例更高；北二外则更侧重“应用型”人才培养，尤其在旅游管理和实战翻译上更具优势。\n\n---\n\n## 模块七：文化揭秘卡片\n\n### 7.1 刻板印象 vs 现实\n**公众眼中的北二外**：“北外的备胎”、“学旅游的导游学校”。\n**我们眼中的自己**：“定福庄皇家旅游学院”、“外交官的摇篮”、“全北京最努力晨读的学校”。\n\n### 7.2 一句话校园精神测试\n**问题**：如果周五晚上有一个突发的国际会议志愿服务机会，但会错过周六的社团聚会，你会？\n- **A.** 拒绝，享受大学生活。 → 点评：你可能不太适合二外的实战氛围。\n- **B.** 报名，这是绝佳的简历加分项。 → 点评：恭喜，你拥有纯正的二外基因。\n\n### 7.3 气质标签云\n[定福庄] [外交官] [早自习] [二外大包子] [小香港] [多语种]\n\n---\n\n## 模块八：原始数据汇总\n\n### 8.1 数据源汇总\n\n| 数据项 | 引用来源 | 可信度 |\n| --- | --- | --- |\n| 学科评估结果 | 教育部学位中心 | 高 |\n| 录取分数线 | 掌上高考、各省教育考试院 | 高 |\n| 就业/深造数据 | 北二外 2023 毕业生就业质量报告 | 高 |\n| 薪酬数据 | 中国薪酬网、麦可思 | 中 |\n\n### 8.2 未检索到数据清单\n- [未检索到] 2025 年具体的 QS 前 50 深造精确百分比（仅有大致区间）。\n- [未检索到] 2025 年最新保送生最终录取总人数（目前仅有拟录取公示）。\n\n---\n\n## 模块九：结构化数据导出 (JSON)\n\n```json\n{\n\"university_name\": \"北京第二外国语学院\",\n\"academic\": {\n\"a_plus_count\": 0,\n\"a_count\": 0,\n\"a_minus_count\": 0,\n\"academician_count\": 0\n},\n\"employment\": {\n\"domestic_further_study_rate\": \"12.13%\",\n\"overseas_further_study_rate\": \"11.89%\",\n\"starting_salary\": 8800\n},\n\"location\": {\n\"city\": \"北京\",\n\"city_gdp\": \"43760.7亿元\"\n},\n\"scores\": {\n\"comprehensive_score\": 3.90\n}\n}\n```\n\n---\n## Google 搜索来源\n\n- [gaokzx.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHNqrzO3jr8jJawkox6EyOT0DqOTSFJMwI1wdUkUGkn9rjfsXHf2vO2WSFD7DOHuHqADY5dAL6kE6xos2V1Bh6BG3E_q6DAmWAX5tTtw-skOiCrKfJfwMCeH6XG9UV5a7AJtaXIdhCZ)\n- [gaokaozhitongche.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFelMVJPTiVPt4xCZ1ccAY-tVMK435CKd86oeuwbnldn9lL7BzWr-bKqAp94NPGbOdl5Uf7sCNOgeI-762HvoIpyo9acPbVzIDforbGDd52tlGPuNfscVpX6toguV8gYH3-BvjK7Kgcx0GhFg==)\n- [gaoxiaojob.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEi8pwa_Iv9V5n-3ntS5W4EDFZic9-1DMgPMivRGcAIY7HhL07bGT7odqm4OHAZRefe1gxKBd1Zl9HqAOosPUEylwnefjGDyYhHE6ckMNV3tvzWY1t1Ol53pVEvG36Ta5wRBskpQ_Ilj8N7d3Jx)\n- [cscse.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHMwYdgv0QtTZhfVazAs9qpzQCGsyHBnvurkOQORT8QoGSLI4oS1yWHzF1GqnoECxnoNS_gKGKaV2kEJeFidHLIOPZVNC8k95QgoPzfxtSUAdIjXkBGWPpI9S1OxzQO3JO1gufGecWIWp8KxRToF7ZvAEC2iSUTTs6mULd_HftMD16dtPOP3LhXsvAhjiKC6MkdzOIYq5Q=)\n- [beijing.gov.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0_bksmtkWYODQ6jw4aWFRNmUvrYCGi-wWjxy2-dC6WOsiPqHZRxcweAJ7kybU6OYb1qRT2a2azC-h8DJKvHf_ojZc8NAOw62KItbebnbC1hfgI8Ur4GRT0ws47sVeLJQb2CrXccKheWRfI-gJnRJphrZPhvgpV3K9otEUFA==)\n- [bjd.com.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGF-apebhaMQa19jaUzq6kiUisBbQp1qP1TiZ4j-LriEBxLTdYefb0p6AzMqE0Rl47hNaVMAjIEeYgyfyQTXLxkQSquNnnzacDqSGNiKvIRR5uVSwkR3sptl-DLZONjUXi8KcvB4ZN45iqaqpW7goksDJVCizuQPhxJC1E=)\n- [gk100.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHhQc54CqHC5EyynoKbKfiVuK4qD7ZMCtgEot4Ptgw2u7kw44hsGuej1ZG9rvBl4WaevYnCrGxFhEZ8OHKJ0O4tWgpxjMBamK8N_JtyaNfrlaVx_5LGztLJjA7QpzxDoi9W6DGnSFw3OM8kUCtlC0nZIv4iXiNCB1_n0wf8KFgXIo1opI4C)\n- [peopleapp.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVfPKXypiMZgVwMqp0es51iKRIqePKkbSDM5fpag3kHI9tCGomGTlQFXJmhiiULXkchuUom0rw7LBBqE5N70pCkuiTIkqzkZXaZ2UuHJ9YrFH-bKMtlyhe4RzLed5K2PXgJarXuLb3UYhlaw==)\n- [un.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFoJmLGhPEnyQ04Jk2ZBjumtZKUgeufxF_BKUtoRpfVWCQdC4XXWwpsieHwxu01xALa7GcFsOCwX5-B4ne9KaUceZgmC50-k0TfdkKFom2ZZxZXJfrFHwKZIc6GFluwhJIqjHXzxFfCq53q268SKXfZurlARXVkiuu3wnt1jARFemb9gd-6V0dnZdNoVc0LOsv6ZHzEvf4pMLz4H8TfyG2BBcgoQPOp7eacgyajR2zlO2tRvkq7fpfXqrBk_G0na-TYwUggIEZqhHUnFmA7Sf4zKx40yf0M4OsatMSxkuDAeuKz4i4_qbe9J7r2DZcSzf2ZGOHQz_Xmwei2PdM6cHCsYQLYos3bn0YxePATuPend9KebtFr6N9-U6ENj_Rwg7EMB4qm5pGA7qCDMoGJCGg0dzWxHFGeFF9pLsJUS5rE6UaD49Kmkrpsu7tpSk9eySQ-H2NjFTKKDWfeSNWnIIPTeg==)\n- [cscse.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHnxcZKO0b8Jott7HQWMQkDaj3BKcG0ryAqyYktZ_CYWYNenW24DKXiGhFckrKGacSFrEuoKK4ZLRB5iZ5vsjq_eaeQGmgXyoAsdJzAVttGx9jKh9la_Qmd5kkDXYQ4aqtDFCM7e8XSwHFw0oA7TPfvgRxBicFFlGwh90l1Y03tq4uCKIIe8w18dbhQgy06uREe3j4x5ns_tE8=)\n- [zizzs.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-66f5bhr_8ybmbcHsHCfDmsNg8StP4vpupnkYjfsbTYitBGKbTp69quNU0bSHDcFT2QRy2rxUYjdVUStmQ1-NEn9Ezx-1wTdZyNnD6hA37HlqsKfGO-WzW6facRVdgXPLh_I9mnfh-Epu8UCtk5v-4MQ=)\n- [uibe.edu.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEHK2I9RkLUJGln7Ui-dFjSPExC5ehr7Z9njcOfrwPZQONU0O5CzRQcOAWsvanSV2RjsJJqOjAxmhQLhTKhcMQAL9H-gpaSIx-MExEI1QLj3nFB1IsSFXt42rALQQkHVHr6m17k2UhJeUxVOYIAfGzH-qM8MhJB7R17IprwBkoBaLAPZBQLjNFnghykbOsw7MEv7qMQfA==)\n- [baai.ac.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFx26LMfbwd4fwb3SZ1WpjPFINih3M5mXDhJofjRnFnVTxybBLtz4Y8B-R4qatIgSRoOjF3D89PXDBlgBArypkosBJ_oCANKF_d5V82HNWOZZc5a9ektAVQ0snrKA==)\n- [beijing.gov.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaNp6yf2NWIq6FxW7EXVDZnkS5NPnzfnWfWRehwlIfSOke3Ki9ffbQtfqrgh80rMnzzXGFymh7XyvF6wcBer2x0NyQIiyUiQLvurIx5B8b3lVyOrBO3KuGeUP8RtYfJciBtHdQFxWr2n5IomjAN3bqDIEDisJhoE_KnTmkazmWBaTL)\n- [gaokzx.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8NGva8Ul1XrnGldfjdbNDgsiL0rTVux_Gca3rpYgfjgyOBJlrEAfPZk0mQaSQ3TP0a2Q3MCdzbfTy1BioeRvN3XbV-yB6lnD8ZkIPvTvw9EiCQe7M5dKJb38IlFO2k05jqWwwhA==)\n- [bjd.com.cn](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEaUfAxtDFEFIUBrzHlPNN4AgRoLT49Sd7QswRlh1pF6-UNQS_5erHpfhGSpwlFp-BecdVdrJcYHcxzejn93uaM4XGyaavU6ElMfdfRGvHHgH1XAv1QcdmPpvTP1eHzuoTfe31z2yamntUpG2aBEZ998V6wiTv4iCfkLO8=)\n- [gk100.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHaG5KJT8oWX9wUCfOMQZJ9TGp2fjz4buPoO1k0tneZyLO2kJyedPNR5gpQD6QYvIrtv-mpk6Zy8ZgYp9CeAqvA9ZLPxvjNARFxkZ1yRF-H7ys76MHgua6rjo2G7tj_SWJWw3Tks4_B7hNkPs6_0goasdc6Oh_z30vimuG7fyRVvHI6mQaA)",
+    "tables": [
+      [
+        [
+          "学科名称",
+          "评估等级",
+          "所属门类"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "外国语言文学",
+          "B",
+          "文学"
+        ],
+        [
+          "工商管理",
+          "B",
+          "管理学"
+        ],
+        [
+          "中国语言文学",
+          "C",
+          "文学"
+        ]
+      ],
+      [
+        [
+          "类别",
+          "人数",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "中国科学院院士",
+          "0",
+          "学校官网"
+        ],
+        [
+          "中国工程院院士",
+          "0",
+          "学校官网"
+        ],
+        [
+          "海外/外籍院士",
+          "0",
+          "学校官网"
+        ],
+        [
+          "**合计**",
+          "**0**",
+          ""
+        ]
+      ],
+      [
+        [
+          "平台名称",
+          "级别/类型",
+          "主要研究方向"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "汉阿高级翻译教程课程虚拟教研室",
+          "国家级虚拟教研室",
+          "阿拉伯语翻译教学与实践"
+        ],
+        [
+          "旅游人才素质提升实验室",
+          "文化和旅游部重点实验室",
+          "旅游管理与人才测评"
+        ],
+        [
+          "对外文化传播研究基地",
+          "北京市级研究基地",
+          "国际传播与文化贸易"
+        ]
+      ],
+      [
+        [
+          "年份",
+          "保送生总数",
+          "外语类",
+          "竞赛类",
+          "其他",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "2025",
+          "105 [拟]",
+          "105",
+          "0",
+          "0",
+          "阳光高考公示"
+        ],
+        [
+          "2024",
+          "112",
+          "112",
+          "0",
+          "0",
+          "阳光高考公示"
+        ],
+        [
+          "2023",
+          "108",
+          "108",
+          "0",
+          "0",
+          "阳光高考公示"
+        ]
+      ],
+      [
+        [
+          "项目名称",
+          "合作院校（如有）",
+          "可选专业",
+          "备注"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "“外培计划”双学位",
+          "海外合作院校（如昆士兰大学）",
+          "翻译、旅游管理等",
+          "1+2+1 或 2+2 模式"
+        ],
+        [
+          "校内双学位/辅修",
+          "本校",
+          "国际经济与贸易、法学、财务管理",
+          "需学有余力"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度（全省前 X%）"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "北京",
+          "514",
+          "33743",
+          "约 6.5%"
+        ],
+        [
+          "河北",
+          "599",
+          "6241",
+          "约 1.2%"
+        ],
+        [
+          "广东",
+          "574",
+          "12450",
+          "约 1.8%"
+        ],
+        [
+          "江苏",
+          "579",
+          "11880",
+          "约 2.1%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "北京",
+          "526",
+          "21881",
+          "约 4.2%"
+        ],
+        [
+          "广东",
+          "554",
+          "18500",
+          "约 2.6%"
+        ],
+        [
+          "四川",
+          "556",
+          "8900",
+          "约 1.5%"
+        ]
+      ],
+      [
+        [
+          "省份",
+          "录取分数线",
+          "全省位次",
+          "竞争激烈程度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "北京",
+          "514",
+          "33743",
+          "约 6.5%"
+        ],
+        [
+          "河北",
+          "577",
+          "48060",
+          "约 9.2%"
+        ],
+        [
+          "广东",
+          "556",
+          "72839",
+          "约 10.5%"
+        ],
+        [
+          "江苏",
+          "573",
+          "63454",
+          "约 11.2%"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数值",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "本科毕业生总数",
+          "1554 人",
+          "2023 就业报告"
+        ],
+        [
+          "国内深造率",
+          "12.13%",
+          "2023 就业报告"
+        ],
+        [
+          "出国（境）深造率",
+          "11.89%",
+          "2023 就业报告"
+        ],
+        [
+          "进入 QS 前 50 比例",
+          "约 35%（出国生中）",
+          "（需核验）"
+        ],
+        [
+          "最受欢迎海外深造地 Top 3",
+          "英国、美国、日本",
+          "2023 就业报告"
+        ]
+      ],
+      [
+        [
+          "去向方向",
+          "占比",
+          "关键细节"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "国内深造",
+          "12.13%",
+          "主要去向为北外、上外、北大、人大"
+        ],
+        [
+          "出国深造",
+          "11.89%",
+          "集中在伦敦大学学院、爱丁堡大学等"
+        ],
+        [
+          "考公/选调",
+          "15.5%",
+          "以外交部、商务部、北京市各级机关为主"
+        ],
+        [
+          "企业就业",
+          "60.48%",
+          "集中在旅游、教育、互联网、金融行业"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数值",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "毕业起薪中位数",
+          "8800 元/月",
+          "2024 薪酬排行榜推算"
+        ],
+        [
+          "毕业 5 年薪酬中位数",
+          "15500 元/月",
+          "麦可思数据参考"
+        ],
+        [
+          "同类高校薪酬水平",
+          "略高于",
+          "依据：地处北京 CBD 边缘，实习机会极多"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据",
+          "来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "所在城市",
+          "北京市朝阳区",
+          "—"
+        ],
+        [
+          "最新年度 GDP",
+          "43760.7 亿元",
+          "北京市统计局"
+        ],
+        [
+          "全国城市 GDP 排名",
+          "第 2 名",
+          "官方统计"
+        ],
+        [
+          "城市定位",
+          "国际交往中心、科技创新中心",
+          "城市规划"
+        ]
+      ],
+      [
+        [
+          "城市支柱产业",
+          "耦合学科",
+          "耦合度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "旅游会展业",
+          "旅游管理",
+          "高度共振"
+        ],
+        [
+          "外交外事",
+          "外国语言文学",
+          "高度共振"
+        ],
+        [
+          "国际贸易",
+          "国际经济与贸易",
+          "中度耦合"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据"
+        ],
+        [
+          ":---",
+          ":---"
+        ],
+        [
+          "实质性交换项目合作院校数",
+          "190 余所"
+        ],
+        [
+          "其中 QS 前 100 院校",
+          "伦敦大学学院、爱丁堡大学、东京大学等"
+        ],
+        [
+          "中外合作办学机构",
+          "无（主要为 SQA-AD 项目及联合培养）"
+        ],
+        [
+          "高层次双学位项目",
+          "昆士兰大学 2+2 项目、北亚利桑那大学项目"
+        ]
+      ],
+      [
+        [
+          "指标",
+          "数据",
+          "数据来源"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "软科排名",
+          "语言类第 7 名",
+          "2025 软科"
+        ],
+        [
+          "校友会排名",
+          "第 179 名",
+          "2025 校友会"
+        ],
+        [
+          "B 站官方粉丝",
+          "1.2 万",
+          "Bilibili 官网"
+        ],
+        [
+          "抖音官方粉丝",
+          "4.6 万",
+          "抖音官网"
+        ],
+        [
+          "社交媒体内容风格",
+          "稳重、官方，侧重校园美景与学子风采",
+          "—"
+        ]
+      ],
+      [
+        [
+          "风险点",
+          "事件概要",
+          "后续处理",
+          "当前状况"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "高管廉政风险",
+          "原党委书记顾晓园因贪污受贿被判刑 13 年",
+          "纪委深度整改",
+          "校园风气重塑中"
+        ],
+        [
+          "学术不端争议",
+          "2021 年曾有教师被举报学术不端并查实",
+          "调离教学岗位",
+          "强化师德建设"
+        ]
+      ],
+      [
+        [
+          "评估维度",
+          "核心依据摘要",
+          "维度得分",
+          "权重",
+          "加权得分"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "学术资本",
+          "缺乏 A 类学科，但 B 类学科行业认可度极高",
+          "3.2",
+          "30%",
+          "0.96"
+        ],
+        [
+          "毕业生价值实现",
+          "外交、旅游行业就业极强，起薪在北京具有竞争力",
+          "4.2",
+          "30%",
+          "1.26"
+        ],
+        [
+          "区位与产业势能",
+          "坐落北京 CBD 边缘，产业耦合度极高",
+          "4.8",
+          "15%",
+          "0.72"
+        ],
+        [
+          "全球化能力",
+          "交换项目丰富，国际化氛围浓厚",
+          "4.0",
+          "10%",
+          "0.40"
+        ],
+        [
+          "学生赋权与自由度",
+          "转专业有门槛，但“复语复合”模式提供多元路径",
+          "3.5",
+          "5%",
+          "0.18"
+        ],
+        [
+          "品牌资产与文化印记",
+          "“外交官摇篮”及“旅游最高学府”双标签",
+          "3.8",
+          "10%",
+          "0.38"
+        ],
+        [
+          "**加权总分**",
+          "",
+          "**100%**",
+          "",
+          "**3.90**"
+        ]
+      ],
+      [
+        [
+          "数据项",
+          "引用来源",
+          "可信度"
+        ],
+        [
+          ":---",
+          ":---",
+          ":---"
+        ],
+        [
+          "学科评估结果",
+          "教育部学位中心",
+          "高"
+        ],
+        [
+          "录取分数线",
+          "掌上高考、各省教育考试院",
+          "高"
+        ],
+        [
+          "就业/深造数据",
+          "北二外 2023 毕业生就业质量报告",
+          "高"
+        ],
+        [
+          "薪酬数据",
+          "中国薪酬网、麦可思",
+          "中"
+        ]
+      ]
+    ],
+    "module9_structured_export": {
+      "title": "模块九：结构化数据导出",
+      "raw_content": "```json\n{\n\"university_name\": \"北京第二外国语学院\",\n\"academic\": {\n\"a_plus_count\": 0,\n\"a_count\": 0,\n\"a_minus_count\": 0,\n\"academician_count\": 0\n},\n\"employment\": {\n\"domestic_further_study_rate\": \"12.13%\",\n\"overseas_further_study_rate\": \"11.89%\",\n\"starting_salary\": 8800\n},\n\"location\": {\n\"city\": \"北京\",\n\"city_gdp\": \"43760.7亿元\"\n},\n\"scores\": {\n\"comprehensive_score\": 3.90\n}\n}\n```\n\n---"
+    }
+  }
+}

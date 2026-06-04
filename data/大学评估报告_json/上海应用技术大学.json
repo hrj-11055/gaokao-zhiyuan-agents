@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.519669",
+    "updated_at": "2026-05-09T17:34:21.511057",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "上海应用技术大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "如果你是一名理科生，分数够不上 211，但希望未来在上海从事化工、化妆品、智能制造或电子信息行业，上海应用技术大学是你的最优选，没有之一。",
+    "radar": {
+      "academic_capital": 3.5,
+      "graduate_value": 3.8,
+      "location_advantage": 4.5,
+      "globalization": 3.3,
+      "student_empowerment": 3.4,
+      "brand_asset": 3.5
+    },
+    "weighted_score": 3.72,
+    "one_sentence_recommend": "如果你是一名理科生，分数够不上 211，但希望未来在上海从事化工、化妆品、智能制造或电子信息行业，上海应用技术大学是你的最优选，没有之一。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "上海应用技术大学是一所典型的**“小而精、专而强”**的行业特色高校。它不追求大而全的学科布局，而是将所有资源集中在精细化工、智能制造等优势领域。对于那些希望在上海立足、且不排斥工科背景的考生来说，这所学校提供的不仅是学历，更是一张进入上海核心产业圈的门票。\n\n**核心优势：**\n1. **行业统治力**：香料香精专业在全国范围内具有不可替代性。\n2. **就业确定性**：与上海及长三角制造业深度绑定，毕业生供不应求。\n3. **学术进阶路径清晰**：拥有博士点，考研华东理工等名校有传统优势。\n\n**主要劣势：**\n1. **地理位置**：奉贤校区偏远，增加了学生获取校外实习和社交资源的成本。\n2. **学科单一**：文科、理科（非工）专业相对薄弱，缺乏综合性大学的文化氛围。",
+      "one_sentence_recommend": "如果你是一名理科生，分数够不上 211，但希望未来在上海从事化工、化妆品、智能制造或电子信息行业，上海应用技术大学是你的最优选，没有之一。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": [
+        "务实到骨子里",
+        "香料界的黄埔军校",
+        "奉贤海风吹过的青春",
+        "就业收割机",
+        "新工科先锋",
+        "实验室里的调香师"
+      ]
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

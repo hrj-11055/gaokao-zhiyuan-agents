@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.197011",
+    "updated_at": "2026-04-25T14:21:41.837411",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "081003",
+    "name": "给排水科学与工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "城市水系统的\"命脉工程师\"，就业稳如管道、薪水中等偏上，但必须拿下\"注册公用设备工程师\"才能打通高薪天花板——典型的\"闷声发大财\"型工科。",
+    "radar": {
+      "market_return": 3.2,
+      "industry_outlook": 3.0,
+      "future_adaptability": 3.3,
+      "career_path": 3.8,
+      "education_resources": 3.5,
+      "discipline_core": 3.4
+    },
+    "weighted_score": 3.27
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8000–12500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI+智慧水务正在深入行业（如数字孪生管网优化、AI辅助水处理工艺控制），但给排水工程的核心——现场勘察、管网系统设计决策、多规范综合判断、工程合规审批——需要复杂情境判断和法律责任承担，AI目前仅作为辅助工具。此外，大量现场施工协调、设备调试等物理空间工作无法被AI替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "城市水系统的\"命脉工程师\"，就业稳如管道、薪水中等偏上，但必须拿下\"注册公用设备工程师\"才能打通高薪天花板——典型的\"闷声发大财\"型工科。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "哈尔滨工业大学",
+        "同济大学"
+      ],
+      "tier_A": [
+        "东南大学",
+        "重庆大学",
+        "华中科技大学",
+        "武汉大学",
+        "北京工业大学",
+        "湖南大学",
+        "河海大学"
+      ],
+      "tier_B": [
+        "广州大学",
+        "西安建筑科技大学",
+        "合肥工业大学",
+        "华东交通大学",
+        "兰州交通大学",
+        "武汉理工大学",
+        "长安大学",
+        "青岛理工大学",
+        "南京工业大学",
+        "沈阳建筑大学",
+        "北京建筑大学"
+      ],
+      "tier_C_note": "苏州科技大学、安徽建筑大学、山东建筑大学、天津城建大学、吉林建筑大学、河北工程大学、南华大学、长沙理工大学等地方院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

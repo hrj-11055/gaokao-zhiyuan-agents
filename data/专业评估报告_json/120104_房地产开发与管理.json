@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.948602",
+    "updated_at": "2026-04-28T00:12:09.618056",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120104",
+    "name": "房地产开发与管理",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "产业寒冬中的\"周期囚徒\"——专业知识有价值，但未来十年难逃房地产行业结构性收缩的宿命，入局前先问自己能不能等到下一个春天。",
+    "radar": {
+      "market_return": 1.8,
+      "industry_outlook": 1.2,
+      "future_adaptability": 2.5,
+      "career_path": 2.5,
+      "education_resources": 3.0,
+      "discipline_core": 2.8
+    },
+    "weighted_score": 2.03
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成熟期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "房地产开发中的市场调研、投资测算、方案比选等环节可被 AI 辅助甚至替代；估价模型中的批量估价已逐步自动化。仅复杂项目的谈判、关系协调、政府审批等环节短期内 AI 难以替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "产业寒冬中的\"周期囚徒\"——专业知识有价值，但未来十年难逃房地产行业结构性收缩的宿命，入局前先问自己能不能等到下一个春天。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民大学",
+        "清华大学"
+      ],
+      "tier_A": [
+        "同济大学",
+        "重庆大学",
+        "东南大学",
+        "哈尔滨工业大学",
+        "浙江大学"
+      ],
+      "tier_B": [
+        "华中科技大学",
+        "南京大学",
+        "武汉大学",
+        "华东师范大学",
+        "中央财经大学",
+        "上海财经大学"
+      ],
+      "tier_C_note": "各地方综合性大学及财经类院校，如浙江财经大学、首都经济贸易大学、天津城建大学、湖南大学、暨南大学、华南理工大学等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

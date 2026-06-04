@@ -1,0 +1,69 @@
+{
+  "meta": {
+    "version": "2.0.0",
+    "generated_at": "2026-05-20T07:58:05.937632",
+    "updated_at": "2026-05-14T00:18:03",
+    "source_file": "CLAUDE.md",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "CLAUDE",
+    "location": "",
+    "type": "公办",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {},
+    "weighted_score": 0.0,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "summary": ""
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {
+      "title": "模块一：学术资本",
+      "raw_content": ""
+    },
+    "module2_student_competitiveness": {
+      "title": "模块二：生源竞争力",
+      "raw_content": ""
+    },
+    "module3_graduate_value": {
+      "title": "模块三：毕业生价值实现",
+      "raw_content": ""
+    },
+    "module4_location_industry": {
+      "title": "模块四：区位与产业势能",
+      "raw_content": ""
+    },
+    "module5_campus_ecosystem": {
+      "title": "模块五：校园生态",
+      "raw_content": ""
+    },
+    "module6_comprehensive_evaluation": {
+      "title": "质量验收（总分 5 分，4.0 合格）",
+      "raw_content": "准确性 40%（2.0）| 内容完整性 30%（1.5）| 实用性 20%（1.0）| 字数达标 10%（0.5）\n\n编造数据一票否决重做。字数 5000 字以下 0 分，5000+ 满分。"
+    },
+    "module7_culture_cards": {
+      "title": "模块七：文化揭秘与避坑指南",
+      "raw_content": ""
+    },
+    "module8_raw_data": {
+      "title": "模块八：原始数据汇总",
+      "raw_content": ""
+    }
+  },
+  "layer4_supplement": {
+    "full_raw_content": "# CLAUDE.md\n\nThis file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n## 项目概述\n\n大学深度研究报告批量生产项目。为全国 174 所本科院校各生成一篇 8000 字以上的 Markdown 深度研究报告，面向高考家庭，提供志愿填报参考。\n\n## 核心文件\n\n- `大学深度研究-运行提示词.md` — 提示词模板，含搜索策略、8 章结构、写作要求（生成报告的唯一指令来源）\n- `大学深度研究-待办任务.md` — 任务清单，按省份分组，含交付要求、质量验收标准、最低内容要求\n- `{大学名称}.md` — 成品报告（如 `重庆大学.md`）\n\n## 执行流程\n\n1. 从待办清单中选一所未完成学校（`[ ]` 标记）\n2. 用实际校名替换提示词模板中的 `[大学名称：XXX]`，关注专业填「无特定关注」\n3. 执行多轮搜索生成报告，保存为 `{大学名称}.md`\n4. 质量检查后在待办清单中标记为 `[x]`\n\n## 报告 8 章固定结构（章节标题不可更改）\n\n1. 学术实力 — 2. 录取与生源 — 3. 毕业生出路 — 4. 区位与产业 — 5. 国际化 — 6. 校园生态 — 7. 风险提示 — 8. 总结评价\n\n每章的最低内容要求见 `大学深度研究-待办任务.md` 中的表格。\n\n## 数据红线\n\n- **严禁编造**任何录取分数、就业率、薪酬、学科评估等级、排名数据——一票否决\n- 找不到确切数据就写「未检索到」，不用模糊表述掩盖\n- 第三方平台数据标注为\"第三方汇总\"，提示以官方公布为准\n- 数据来源优先级：学校官网/招生网 > 就业质量报告 > 教育部/省考试院/阳光高考 > 第三方平台\n\n## 质量验收（总分 5 分，4.0 合格）\n\n准确性 40%（2.0）| 内容完整性 30%（1.5）| 实用性 20%（1.0）| 字数达标 10%（0.5）\n\n编造数据一票否决重做。字数 5000 字以下 0 分，5000+ 满分。\n\n## 当前进度\n\n查看 `大学深度研究-待办任务.md` 中各省的勾选状态。剩余未完成省份：甘肃（8 所）、青海（6 所）、宁夏（10 所）、新疆（26 所），共约 50 所。",
+    "tables": [],
+    "module9_structured_export": {
+      "title": "模块九：结构化数据导出",
+      "raw_content": ""
+    }
+  }
+}

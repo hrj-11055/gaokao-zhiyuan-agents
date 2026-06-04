@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.978615",
+    "updated_at": "2026-04-21T02:36:39.509346",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030614TK_国内安全保卫",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "极小众公安特设专业，入警率超90%但政治门槛极高，铁饭碗锁定体制内，想清楚再跳。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 3.8,
+      "future_adaptability": 2.5,
+      "career_path": 3.5,
+      "education_resources": 3.0,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "国内安全保卫的核心工作涉及政治判断、人际渗透侦查、现场处置、审讯博弈等高度依赖人类判断力和人际互动的领域，AI难以替代。但部分辅助性工作（情报筛选、数据分析）可能被AI工具增强。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "极小众公安特设专业，入警率超90%但政治门槛极高，铁饭碗锁定体制内，想清楚再跳。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国人民公安大学"
+      ],
+      "tier_A": [
+        "云南警官学院"
+      ],
+      "tier_B": [
+        "福建警察学院",
+        "山东警察学院"
+      ],
+      "tier_C_note": "暂无其他开设院校信息",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

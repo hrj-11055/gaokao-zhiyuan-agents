@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.515108",
+    "updated_at": "2026-05-09T16:08:32.176586",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "西北大学",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "最适合那些对考古、地质、历史有极高热忱，或希望在西安及西北地区体制内、能源行业深耕的学子。",
+    "radar": {
+      "academic_capital": 4.5,
+      "graduate_value": 3.8,
+      "location_advantage": 3.6,
+      "globalization": 3.4,
+      "student_empowerment": 3.7,
+      "brand_asset": 4.2
+    },
+    "weighted_score": 3.98,
+    "one_sentence_recommend": "最适合那些对考古、地质、历史有极高热忱，或希望在西安及西北地区体制内、能源行业深耕的学子。"
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "- **Identity（核心定位）**：中国西北地区历史最悠久的综合性全国重点大学，基础理科与人文考古的学术重镇。\n- **Ace（王牌优势）**：考古学与地质学，其实力可与清华、北大、中科大等顶尖名校横向对标。\n- **Vibe（文化特质）**：沉稳、厚重、略显保守，具有浓郁的关中书院气息与“板凳甘坐十年冷”的学术定力。\n- **Risk（潜在风险）**：学科发展不平衡，文史哲地以外的工科、经管类学科在全国竞争力相对平庸；近年来曾因个别学术人事争议（如贾浅浅事件）引发品牌声誉波动。",
+      "one_sentence_recommend": "最适合那些对考古、地质、历史有极高热忱，或希望在西安及西北地区体制内、能源行业深耕的学子。",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

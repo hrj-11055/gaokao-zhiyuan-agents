@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.959829",
+    "updated_at": "2026-04-27T13:12:50.175318",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120413T_医疗保险",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "跨界新物种：左手病历右手精算，踩在万亿医保风口上，但专业太新、太窄，赛道明确但路要自己蹚。",
+    "radar": {
+      "market_return": 3.4,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 2.8,
+      "discipline_core": 3.3
+    },
+    "weighted_score": 3.49
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,500–8,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础核保、简单理赔审核等重复性工作正被AI替代（智能核保已在头部险企全面铺开），但复杂医疗风险评估、医保政策博弈分析、医患关系协调等需要医学专业知识与人际沟通的环节，短期内AI难以取代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "跨界新物种：左手病历右手精算，踩在万亿医保风口上，但专业太新、太窄，赛道明确但路要自己蹚。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "南京医科大学（软科第1",
+        "ABC第1，医学学科底蕴深厚，医疗保障研究院）"
+      ],
+      "tier_A": [
+        "安徽医科大学（A+评级）",
+        "福建医科大学",
+        "广东医科大学",
+        "广西医科大学"
+      ],
+      "tier_B": [
+        "华北理工大学",
+        "山东第一医科大学",
+        "湖南中医药大学",
+        "安徽中医药大学",
+        "湖北经济学院（保险学背景特色）"
+      ],
+      "tier_C_note": "锦州医科大学、内蒙古医科大学、皖南医学院、齐鲁医药学院、南京医科大学康达学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

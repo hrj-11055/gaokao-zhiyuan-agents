@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.719864",
+    "updated_at": "2026-05-09T16:55:55.545544",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "榆林学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "中外合作办学",
+    "philosophy": "",
+    "recommendation_level": "yellow",
+    "summary": "",
+    "radar": {
+      "academic_capital": 2.8,
+      "graduate_value": 3.5,
+      "location_advantage": 4.5,
+      "globalization": 2.2,
+      "student_empowerment": 3.5,
+      "brand_asset": 3.8
+    },
+    "weighted_score": 3.35,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 5200,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "榆林学院是一所被严重低估的“宝藏院校”。它完美诠释了什么是“产教融合”。在学术界，它可能不是最耀眼的，但在产业界，它是陕北能源基地的“黄埔军校”。\n\n*   **核心定位**：陕甘宁蒙晋交界区最具实力的应用型本科，即将更名为“榆林大学”。\n*   **王牌优势**：化工、能源、农林专业与地方经济深度绑定，毕业生在陕北地区拥有近乎“统治级”的就业竞争力。\n*   **文化特质**：务实、低调、艰苦奋斗。这里没有太多虚头巴脑的学术秀，更多的是解决实际问题的工程思维。\n*   **潜在风险**：地理位置对于向往一线城市生活的学生来说是巨大挑战；高层次全职人才的留存率受限于城市气候和配套。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": []
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

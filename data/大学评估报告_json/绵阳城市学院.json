@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:40.690054",
+    "updated_at": "2026-05-10T00:25:56.665245",
+    "data_sources": [
+      "软科排名",
+      "校友会排名",
+      "各高校就业质量报告",
+      "官方招生数据"
+    ]
+  },
+  "layer1_overview": {
+    "name": "绵阳城市学院",
+    "english_name": "",
+    "former_name": "",
+    "location": "",
+    "type": "双一流",
+    "philosophy": "",
+    "recommendation_level": "red",
+    "summary": "",
+    "radar": {
+      "academic_capital": 1.8,
+      "graduate_value": 2.4,
+      "location_advantage": 3.5,
+      "globalization": 1.5,
+      "student_empowerment": 3.5,
+      "brand_asset": 2.6
+    },
+    "weighted_score": 2.38,
+    "one_sentence_recommend": ""
+  },
+  "layer2_core": {
+    "academic_strength": {
+      "esi_top_1_percent": [],
+      "national_first_class_majors": [],
+      "academician_count": 0,
+      "teaching_language": "Chinese",
+      "student_teacher_ratio": ""
+    },
+    "admission_data": {
+      "guangdong_history_rank": 0,
+      "guangdong_physics_rank": 0,
+      "comp_eval_ratio": "",
+      "tuition_fee": ""
+    },
+    "graduate_outcomes": {
+      "further_study_rate": "",
+      "qs_top_100_admission_rate": "",
+      "starting_salary_median": 0,
+      "top_destinations": [],
+      "top_employers": []
+    },
+    "location_advantage": {
+      "city": "",
+      "region": "",
+      "industrial_clusters": [],
+      "policy_benefits": []
+    },
+    "comparison_peers": [
+      {
+        "name": "四川工商学院",
+        "similarity": "同类院校",
+        "key_difference": "绵阳城市学院的工科底蕴更深，依托绵阳工业的实习机会更多；而四川工商学院在成都的区位优势使其在商科和传媒领域更具吸引力。"
+      },
+      {
+        "name": "成都锦城学院",
+        "similarity": "同类院校",
+        "key_difference": "锦城学院作为省内民办“领头羊”，在生源质量和品牌溢价上完胜绵阳城市学院，但学费也更高，录取分数线通常超出本科线 40-60 分。"
+      },
+      {
+        "name": "西南科技大学（母体）",
+        "similarity": "同类院校",
+        "key_difference": "两者已无行政隶属关系。绵城学生在共享母体图书馆、实验室资源方面已受到限制，品牌剥离带来的“阵痛”依然存在。"
+      }
+    ],
+    "risks": []
+  },
+  "layer3_detail": {
+    "module1_academic_capital": {},
+    "module2_student_competitiveness": {},
+    "module3_graduate_value": {},
+    "module4_location_industry": {},
+    "module5_campus_ecosystem": {},
+    "module6_comprehensive_evaluation": {
+      "executive_summary": "绵阳城市学院是一所典型的**“就业导向型”民办本科**。它在学术上不具备与公办大学竞争的实力，但在**人才培养的颗粒度**上做得更细。学校通过极高的录取友好度，吸纳了大量本科线附近的考生，并利用绵阳本地的工业基础，将这些学生转化为准工程师或管理人才。\n\n**核心优势**：\n1. **硬件降维打击**：安州校区的住宿条件在全四川高校中处于第一梯队。\n2. **专业实用性**：测绘、土木、财管等专业经过多年积累，教学体系成熟。\n3. **地理位置**：位于四川第二大城市，既有产业支撑，生活成本又低于成都。\n\n**核心劣势**：\n1. **学费昂贵**：年均 2 万左右的学费对农村家庭是不小的负担。\n2. **生源学力弱**：压线录取的策略导致课堂教学深度受限。\n3. **品牌溢价低**：在省外就业时，民办本科的身份仍面临一定的隐形歧视。",
+      "one_sentence_recommend": "",
+      "horizontal_comparison": [
+        {
+          "name": "四川工商学院",
+          "similarity": "同类院校",
+          "key_difference": "绵阳城市学院的工科底蕴更深，依托绵阳工业的实习机会更多；而四川工商学院在成都的区位优势使其在商科和传媒领域更具吸引力。"
+        },
+        {
+          "name": "成都锦城学院",
+          "similarity": "同类院校",
+          "key_difference": "锦城学院作为省内民办“领头羊”，在生源质量和品牌溢价上完胜绵阳城市学院，但学费也更高，录取分数线通常超出本科线 40-60 分。"
+        },
+        {
+          "name": "西南科技大学（母体）",
+          "similarity": "同类院校",
+          "key_difference": "两者已无行政隶属关系。绵城学生在共享母体图书馆、实验室资源方面已受到限制，品牌剥离带来的“阵痛”依然存在。"
+        }
+      ]
+    },
+    "module7_culture_cards": {
+      "temperament_tags": []
+    }
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {},
+    "module9_structured_export": {}
+  }
+}

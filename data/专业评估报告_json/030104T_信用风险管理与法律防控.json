@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.128381",
+    "updated_at": "2026-04-21T00:14:01.847450",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030104T_信用风险管理与法律防控",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "法学与金融的跨界\"缝合怪\"——政策红利猛、人才缺口大，但专业太新、院校太少、社会认知度几乎为零，非头部院校慎入。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.8,
+      "education_resources": 2.0,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.44
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8,000–12,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "该专业的核心在于法律条文解读、合规判断、风险决策——这些需要法律推理和人际博弈的领域 AI 短期内难以完全替代。但数据采集、初级风控建模等标准化工作正被 AI 快速替代，从业者需向\"AI+法律+风控\"复合方向升级。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "法学与金融的跨界\"缝合怪\"——政策红利猛、人才缺口大，但专业太新、院校太少、社会认知度几乎为零，非头部院校慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（无一所 985/五院四系开设此专业）"
+      ],
+      "tier_A": [
+        "湘潭大学（首创院校，双一流，法学底蕴深厚，校友会连续多年排名研究型第一）"
+      ],
+      "tier_B": [
+        "广东金融学院（金融实践资源丰富）",
+        "山东工商学院"
+      ],
+      "tier_C_note": "河南财政金融学院、宿迁学院、盐城师范学院、福建技术师范学院、新疆政法学院、大连财经学院、吉林外国语大学、江西农业大学南昌商学院、广州商学院、河北科技学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

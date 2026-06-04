@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.192002",
+    "updated_at": "2026-04-25T11:59:24.110549",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080910T_数据科学与大数据技术",
+    "category": "未知",
+    "recommendation_level": "green",
+    "summary": "站在AI与数据的风口上，起薪亮眼但正在\"去泡沫\"，技术迭代极快，唯有真才实学才能站稳脚跟。",
+    "radar": {
+      "market_return": 4.2,
+      "industry_outlook": 4.5,
+      "future_adaptability": 3.8,
+      "career_path": 3.8,
+      "education_resources": 3.5,
+      "discipline_core": 4.0
+    },
+    "weighted_score": 4.08
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "12,000–15,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础数据分析、报表制作、简单数据清洗等低阶工作正被AI工具（如ChatGPT、Copilot）快速替代；但大数据架构设计、复杂建模、特征工程、业务洞察等高阶岗位仍需深度人类判断，短期内不可替代。AI对数据科学是\"双刃剑\"——淘汰低端岗位的同时也提升了高端岗位的价值。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在AI与数据的风口上，起薪亮眼但正在\"去泡沫\"，技术迭代极快，唯有真才实学才能站稳脚跟。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "清华大学",
+        "中国科学技术大学",
+        "复旦大学",
+        "上海交通大学",
+        "浙江大学",
+        "南京大学"
+      ],
+      "tier_A": [
+        "哈尔滨工业大学",
+        "同济大学",
+        "中国人民大学",
+        "华中科技大学",
+        "武汉大学",
+        "北京理工大学",
+        "电子科技大学",
+        "西安交通大学",
+        "西北工业大学",
+        "天津大学",
+        "华东师范大学"
+      ],
+      "tier_B": [
+        "中南大学",
+        "北京邮电大学",
+        "西安电子科技大学",
+        "东南大学",
+        "中山大学",
+        "四川大学",
+        "山东大学",
+        "重庆大学",
+        "湖南大学",
+        "北京交通大学",
+        "西南交通大学"
+      ],
+      "tier_C_note": "各省属重点高校中开设该专业的院校（如各省师范大学、理工科院校等），以及部分综合性大学。该专业因与数字经济强绑定，即便一般院校毕业生在本地就业市场仍有需求。",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

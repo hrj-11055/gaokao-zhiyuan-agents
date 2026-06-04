@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.145690",
+    "updated_at": "2026-04-21T00:32:47.288439",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "030109TK_国际法",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "站在\"一带一路\"风口上的稀缺物种，国家急需但门槛极高——名校+法考+外语缺一不可，普通院校毕业可能连入场券都拿不到。",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.5,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 4.5
+    },
+    "weighted_score": 3.58
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "7,000–9,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "AI 可替代法律文书检索和基础合同审查，但国际法核心技能——跨境谈判、多法域协调、法庭辩论、文化敏感性判断——高度依赖人类判断力和人际互动，短期内不易被替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "站在\"一带一路\"风口上的稀缺物种，国家急需但门槛极高——名校+法考+外语缺一不可，普通院校毕业可能连入场券都拿不到。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "北京大学",
+        "中国人民大学",
+        "中国政法大学",
+        "武汉大学"
+      ],
+      "tier_A": [
+        "清华大学",
+        "对外经济贸易大学",
+        "华东政法大学",
+        "厦门大学",
+        "西南政法大学",
+        "吉林大学",
+        "中南财经政法大学"
+      ],
+      "tier_B": [
+        "西安交通大学",
+        "上海交通大学",
+        "浙江大学",
+        "南京大学",
+        "复旦大学",
+        "中山大学",
+        "深圳大学",
+        "大连海事大学（海商法特色）"
+      ],
+      "tier_C_note": "其他获批开设法学专业的普通本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.927066",
+    "updated_at": "2026-04-26T00:04:54.341475",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082803",
+    "name": "风景园林",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "诗与远方的专业外衣下，是地产寒冬的重灾区。设计院降薪裁员、薪资连年下滑，唯有生态修复与智慧园林是突围之路。",
+    "radar": {
+      "market_return": 2.3,
+      "industry_outlook": 2.4,
+      "future_adaptability": 2.8,
+      "career_path": 3.4,
+      "education_resources": 3.8,
+      "discipline_core": 3.6
+    },
+    "weighted_score": 2.93
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6000–8000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "AI 已能自动生成景观方案、效果图渲染（\"图生图\"技术）和植物配置建议，替代大量初级设计工作。北林研究显示，景观设计\"不可替代性\"在各行业中排第 133 位，处于中等偏下水平。但场地综合研判、甲方沟通、跨学科协调等高阶工作短期内仍依赖人。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "诗与远方的专业外衣下，是地产寒冬的重灾区。设计院降薪裁员、薪资连年下滑，唯有生态修复与智慧园林是突围之路。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "清华大学",
+        "北京林业大学"
+      ],
+      "tier_A": [
+        "同济大学",
+        "东南大学",
+        "南京林业大学",
+        "天津大学",
+        "华南理工大学",
+        "哈尔滨工业大学"
+      ],
+      "tier_B": [
+        "重庆大学",
+        "浙江大学",
+        "华中科技大学",
+        "西北农林科技大学",
+        "东北林业大学",
+        "四川农业大学",
+        "南京农业大学",
+        "西南大学",
+        "中国美术学院",
+        "中南林业科技大学",
+        "浙江农林大学"
+      ],
+      "tier_C_note": "苏州科技大学、青岛理工大学、安徽建筑大学、河北工程大学、河南科技大学、云南农业大学、山东农业大学等区域农林/建筑类院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

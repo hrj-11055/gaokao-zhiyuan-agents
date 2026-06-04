@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.034685",
+    "updated_at": "2026-04-26T03:05:24.046499",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "090109T_应用生物科学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"生物经济的'冷门门票'——赛道宏大、政策加持，但本科出口窄、名校极度集中，不读研慎入。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 3.5,
+      "career_path": 2.6,
+      "education_resources": 2.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.29
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "实验操作（细胞培养、动物实验、田间试验）属于高度依赖物理世界交互的技能，AI 难以直接替代。但生物信息分析、文献综述等数据密集型工作面临 AI 工具的效率竞争。整体而言，AI 更多是赋能工具（AI+制药、AI+育种），而非完全替代。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"生物经济的'冷门门票'——赛道宏大、政策加持，但本科出口窄、名校极度集中，不读研慎入。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "浙江大学（985/211，园艺学 A+，综合实力顶尖）"
+      ],
+      "tier_A": [
+        "华中农业大学（211，ABC 排名 A+，作物学/园艺学优势突出）",
+        "山东农业大学（ABC 排名 A+，农业学科底蕴深厚）"
+      ],
+      "tier_B": [
+        "东北农业大学（211，B+）",
+        "西南林业大学（B+，特色方向）",
+        "武汉轻工大学（B）",
+        "河南科技学院（B）",
+        "承德医学院（B+，医学方向特色）",
+        "塔里木大学（B）",
+        "贵州师范学院（B）"
+      ],
+      "tier_C_note": "兴义民族师范学院、宜宾学院、赤峰学院、玉溪师范学院、滇西科技师范学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

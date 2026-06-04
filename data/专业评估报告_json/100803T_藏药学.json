@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.985338",
+    "updated_at": "2026-04-27T04:39:19.668504",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "100803T_藏药学",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "民族医药的\"独门绝技\"，赛道极窄但壁垒极高，全国仅五六所院校开设，就业高度锁定藏区——非藏区情怀者慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.2,
+      "future_adaptability": 2.5,
+      "career_path": 2.4,
+      "education_resources": 2.0,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.01
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4000–6000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "",
+      "reason": "藏药鉴定、炮制工艺涉及大量经验性、手感性和口传心授的传统技艺，药材真伪辨识依赖实地经验，AI难以替代。藏医药理论体系独特，与中医理论差异较大，通用医疗AI对此覆盖不足。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "民族医药的\"独门绝技\"，赛道极窄但壁垒极高，全国仅五六所院校开设，就业高度锁定藏区——非藏区情怀者慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西藏藏医药大学",
+        "成都中医药大学"
+      ],
+      "tier_A": [
+        "青海大学"
+      ],
+      "tier_B": [
+        "青海民族大学",
+        "甘肃中医药大学",
+        "西南民族大学"
+      ],
+      "tier_C_note": "暂无其他院校广泛开设",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

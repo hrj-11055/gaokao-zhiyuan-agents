@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.008893",
+    "updated_at": "2026-04-27T23:18:42.810424",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "120903",
+    "name": "会展经济与管理",
+    "category": "管理学",
+    "recommendation_level": "yellow",
+    "summary": "城市高度绑定的\"窄赛道\"专业——核心就业高度依赖上海、广州、北京等会展中心城市，行业恢复中但岗位容量有限，非目标城市院校慎选。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 3.0,
+      "discipline_core": 2.7
+    },
+    "weighted_score": 3.09
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "4500–6500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "会展策划中的标准化环节（展位分配、物流调度、数据分析、客户跟进）正被AI工具替代；线上/虚拟会展技术的成熟进一步压缩初级岗位需求。但高端会展策划涉及的人际沟通、创意方案、客户关系管理等仍需人工完成，完全替代尚需时日。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "城市高度绑定的\"窄赛道\"专业——核心就业高度依赖上海、广州、北京等会展中心城市，行业恢复中但岗位容量有限，非目标城市院校慎选。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中山大学",
+        "复旦大学",
+        "南开大学"
+      ],
+      "tier_A": [
+        "华东师范大学",
+        "浙江大学",
+        "厦门大学",
+        "暨南大学",
+        "北京第二外国语学院",
+        "上海对外经贸大学"
+      ],
+      "tier_B": [
+        "云南大学",
+        "华南师范大学",
+        "东华大学",
+        "四川大学",
+        "天津商业大学",
+        "上海师范大学",
+        "广州大学",
+        "浙江传媒学院"
+      ],
+      "tier_C_note": "全国约60-80所普通本科院校，包括各地财经类院校、师范类院校、旅游类院校等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

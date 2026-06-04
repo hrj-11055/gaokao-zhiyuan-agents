@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.193341",
+    "updated_at": "2026-04-25T19:06:45.415855",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081810T_邮轮工程与管理",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"搭上国产邮轮万亿赛道的早班车，但专业太新、院校太少、数据验证期不足，属于高赔率博弯型选择。\"",
+    "radar": {
+      "market_return": 3.5,
+      "industry_outlook": 4.3,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 2.8,
+      "discipline_core": 3.2
+    },
+    "weighted_score": 3.51
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "8000–12000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "邮轮工程涉及船舶动力系统维护、安全检查、设备故障排除等高度依赖现场操作和实体交互的环节，短期内难以被AI替代；但邮轮运营管理中的调度优化、客户服务等环节存在AI辅助甚至部分替代可能。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"搭上国产邮轮万亿赛道的早班车，但专业太新、院校太少、数据验证期不足，属于高赔率博弯型选择。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "暂无（该专业尚无985/211院校独立开设）"
+      ],
+      "tier_A": [
+        "广州航海学院（该专业领域排名第1，校友会应用型6星级）",
+        "上海工程技术大学（邮轮绿皮书联合发布单位，区位优势极强——毗邻上海吴淞口邮轮港和外高桥造船厂）"
+      ],
+      "tier_B": [
+        "集美大学（航海教育传统强校）",
+        "海南热带海洋学院（自贸港政策加持）",
+        "烟台大学"
+      ],
+      "tier_C_note": "该专业开设院校较少，C档主要指其他新开设或招生规模较小的地方性院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

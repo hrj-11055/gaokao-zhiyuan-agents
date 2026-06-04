@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.902213",
+    "updated_at": "2026-04-25T21:10:15.209988",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": "082301",
+    "name": "农业工程",
+    "category": "工学",
+    "recommendation_level": "yellow",
+    "summary": "政策风口上的硬核工科，下得了田、写得了代码，但行业还在从\"传统农机\"向\"智慧农业\"转型的阵痛期，薪资天花板不高，耐得住寂寞才能等来风口。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.8,
+      "future_adaptability": 3.5,
+      "career_path": 3.2,
+      "education_resources": 3.5,
+      "discipline_core": 3.8
+    },
+    "weighted_score": 3.35
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "核心关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "农业工程涉及大量实地勘测、设备调试、复杂环境适应性设计等需要物理世界交互的技能，纯AI难以替代。但简单灌溉调度、数据录入类工作将被AI接管。智慧农业方向反而需要AI+农业复合人才，属于\"与AI共进化\"而非\"被AI替代\"的典型专业。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "政策风口上的硬核工科，下得了田、写得了代码，但行业还在从\"传统农机\"向\"智慧农业\"转型的阵痛期，薪资天花板不高，耐得住寂寞才能等来风口。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国农业大学",
+        "浙江大学"
+      ],
+      "tier_A": [
+        "江苏大学",
+        "吉林大学",
+        "华南农业大学",
+        "西北农林科技大学",
+        "东北农业大学"
+      ],
+      "tier_B": [
+        "河海大学",
+        "南京农业大学",
+        "河南农业大学",
+        "华中农业大学",
+        "内蒙古农业大学",
+        "沈阳农业大学"
+      ],
+      "tier_C_note": "石河子大学、山东理工大学、西南大学、云南师范大学、河北农业大学、青岛农业大学、甘肃农业大学、扬州大学、黄河科技学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

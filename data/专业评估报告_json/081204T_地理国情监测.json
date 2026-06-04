@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.910426",
+    "updated_at": "2026-04-25T15:37:40.664144",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "081204T_地理国情监测",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "小众测绘特设专业，吃的是\"天地图+北斗\"的国家饭，就业窄但稳定，极度依赖武大等头部院校，普通人慎入。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.6,
+      "future_adaptability": 3.3,
+      "career_path": 2.7,
+      "education_resources": 2.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 3.1
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "6,000–8,500元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供需平衡"
+    },
+    "ai_risk": {
+      "level": "中等风险",
+      "reason": "基础数据采集（外业测量、影像解译）正被AI自动化替代，2025年注册测绘师考试大纲已新增\"人工智能影像解译\"内容；但复杂空间分析、多源数据融合、GIS建模等高阶能力短期内仍需人工判断。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "小众测绘特设专业，吃的是\"天地图+北斗\"的国家饭，就业窄但稳定，极度依赖武大等头部院校，普通人慎入。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "武汉大学"
+      ],
+      "tier_A": [
+        "战略支援部队信息工程大学",
+        "中国矿业大学"
+      ],
+      "tier_B": [
+        "北京大学",
+        "同济大学",
+        "中南大学",
+        "山东科技大学",
+        "中国地质大学",
+        "西南交通大学",
+        "长安大学"
+      ],
+      "tier_C_note": "辽宁工程技术大学、河海大学、河南理工大学、北京建筑大学、北京师范大学、东南大学、西安科技大学、东北大学、东华理工大学、中国石油大学、江西理工大学、桂林理工大学、昆明理工大学",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

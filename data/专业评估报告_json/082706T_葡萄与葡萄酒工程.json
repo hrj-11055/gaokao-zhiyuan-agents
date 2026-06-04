@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.994784",
+    "updated_at": "2026-04-25T23:18:05.797069",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "082706T_葡萄与葡萄酒工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"浪漫与苦涩并存的小众赛道：行业深度调整期，对口就业窄、地域集中度高，唯有扎根核心产区、拿下头部酒庄才能酿造好前程。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 2.5,
+      "future_adaptability": 3.0,
+      "career_path": 3.0,
+      "education_resources": 3.5,
+      "discipline_core": 3.5
+    },
+    "weighted_score": 2.9
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–8,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "弱关联",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "葡萄酒酿造涉及复杂的感官品鉴（味觉/嗅觉）、风土判断、工艺微调等高度依赖人工经验的技能，AI 短期内难以替代酿酒师的核心感官判断。但销售、市场推广等岗位面临较高 AI 替代风险。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"浪漫与苦涩并存的小众赛道：行业深度调整期，对口就业窄、地域集中度高，唯有扎根核心产区、拿下头部酒庄才能酿造好前程。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "西北农林科技大学",
+        "中国农业大学"
+      ],
+      "tier_A": [
+        "大连工业大学",
+        "沈阳药科大学",
+        "云南农业大学"
+      ],
+      "tier_B": [
+        "宁夏大学",
+        "山东农业大学",
+        "石河子大学",
+        "新疆农业大学",
+        "甘肃农业大学",
+        "山西农业大学"
+      ],
+      "tier_C_note": "泰山学院、河西学院、茅台学院、楚雄师范学院、桂林旅游学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

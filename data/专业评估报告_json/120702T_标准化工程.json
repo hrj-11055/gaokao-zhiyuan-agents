@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:38.217326",
+    "updated_at": "2026-04-27T21:15:26.845291",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "120702T_标准化工程",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "\"小众但紧扣国家质量战略的'隐形冠军'专业，就业窄但对口率高，极度依赖中国计量大学这单一院校体系。\"",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 3.5,
+      "future_adaptability": 3.2,
+      "career_path": 2.5,
+      "education_resources": 2.0,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 2.94
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,000–7,000元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "强关联",
+      "supply_demand": "供不应求"
+    },
+    "ai_risk": {
+      "level": "低风险",
+      "reason": "标准化工作的核心——标准文本的编制、审查、协调——涉及多方利益博弈、政策理解和行业深度认知，AI 可辅助起草和检索，但无法替代标准制定中的人际协商、政策判断和行业共识构建。然而，基础性检测数据的采集和分析确实面临 AI+自动化的替代压力。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "\"小众但紧扣国家质量战略的'隐形冠军'专业，就业窄但对口率高，极度依赖中国计量大学这单一院校体系。\"",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "中国计量大学（唯一标杆，标准化学院的设立者，全国标准化领域绝对龙头）"
+      ],
+      "tier_A": [
+        "青岛大学（依托山东制造业和标准化工作基础）"
+      ],
+      "tier_B": [
+        "辽宁工程技术大学",
+        "岭南师范学院",
+        "四川文理学院"
+      ],
+      "tier_C_note": "部分近年新获批开设该专业的应用型本科院校",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}

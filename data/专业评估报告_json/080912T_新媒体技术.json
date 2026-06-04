@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated_at": "2026-05-17T06:27:37.885076",
+    "updated_at": "2026-04-25T12:06:40.880313",
+    "data_sources": [
+      "麦可思就业报告",
+      "教育部数据",
+      "各高校就业质量报告"
+    ]
+  },
+  "layer1_overview": {
+    "code": null,
+    "name": "080912T_新媒体技术",
+    "category": "未知",
+    "recommendation_level": "yellow",
+    "summary": "工学门下的小众特设专业，沾了\"新媒体\"的热度和\"计算机类\"的招牌，但开设院校仅14所、学科根基尚浅，更像是\"轻量版数字媒体技术\"——入门容易但护城河不深，需靠自学和实操补位。",
+    "radar": {
+      "market_return": 2.8,
+      "industry_outlook": 4.0,
+      "future_adaptability": 3.2,
+      "career_path": 3.0,
+      "education_resources": 2.0,
+      "discipline_core": 2.5
+    },
+    "weighted_score": 3.11
+  },
+  "layer2_core": {
+    "employment": {
+      "rate": "",
+      "alignment_rate": "",
+      "starting_salary": "5,400–7,300元/月",
+      "salary_5yr": "",
+      "further_study_rate": ""
+    },
+    "industry": {
+      "stage": "成长期",
+      "cagr": "",
+      "strategy_relevance": "",
+      "supply_demand": "供过于求"
+    },
+    "ai_risk": {
+      "level": "高风险",
+      "reason": "新媒体运营中的基础文案撰写、数据分析、图片处理、视频剪辑等核心技能正在被AIGC工具（ChatGPT、Midjourney、Sora等）快速替代。具有技术壁垒的岗位（如平台开发、算法推荐）需要更扎实的计算机功底。"
+    },
+    "top_universities": [],
+    "career_paths": [],
+    "study_cost": {
+      "level": "",
+      "description": ""
+    }
+  },
+  "layer3_detail": {
+    "module1_image": {
+      "ai_summary": "工学门下的小众特设专业，沾了\"新媒体\"的热度和\"计算机类\"的招牌，但开设院校仅14所、学科根基尚浅，更像是\"轻量版数字媒体技术\"——入门容易但护城河不深，需靠自学和实操补位。",
+      "six_dimension_table": []
+    },
+    "module2_six_dimensions": {},
+    "module3_university_tiers": {
+      "tier_S": [
+        "无（该专业无传统名校强势布局，985/211中仅海南大学开设）"
+      ],
+      "tier_A": [
+        "上海理工大学",
+        "齐鲁工业大学"
+      ],
+      "tier_B": [
+        "陕西科技大学",
+        "海南大学（211）",
+        "广西科技大学"
+      ],
+      "tier_C_note": "信阳师范大学、重庆移通学院、成都锦城学院、大连医科大学中山学院、吉林动画学院、内蒙古鸿德文理学院、齐鲁理工学院等",
+      "selection_advice": ""
+    },
+    "module4_comparison": {},
+    "module5_career_paths": {},
+    "module6_fun_cards": {},
+    "module7_personality_tags": {}
+  },
+  "layer4_supplement": {
+    "module8_raw_data": {
+      "employment_data": [],
+      "salary_data": [],
+      "industry_data": []
+    }
+  }
+}
