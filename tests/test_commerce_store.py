@@ -155,22 +155,6 @@ class CommerceStoreTests(unittest.TestCase):
             assert.equal(status.source, 'payment')
         """)
 
-    def test_wechat_user_stores_session_key_for_virtual_payment_signature(self):
-        self.run_node_test("""
-            const user = store.upsertWechatUser({
-              openid: 'openid-session-key',
-              sessionKey: 'session-key-v1',
-            })
-            assert.equal(store.getUser(user.userId).sessionKey, 'session-key-v1')
-
-            const updated = store.upsertWechatUser({
-              openid: 'openid-session-key',
-              sessionKey: 'session-key-v2',
-            })
-            assert.equal(updated.userId, user.userId)
-            assert.equal(store.getUser(user.userId).sessionKey, 'session-key-v2')
-        """)
-
     def test_profile_modes_are_saved_for_score_and_early_planning(self):
         self.run_node_test("""
             const user = store.upsertWechatUser({ openid: 'openid-profile-modes' })

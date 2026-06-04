@@ -36,7 +36,7 @@ export async function generateReport({
         'Content-Type': 'application/json',
         ...(sessionToken ? { Authorization: `Bearer ${sessionToken}` } : {}),
       },
-      timeout: 300000,
+      timeout: 360000,
     })
     return data
   } catch (err) {
