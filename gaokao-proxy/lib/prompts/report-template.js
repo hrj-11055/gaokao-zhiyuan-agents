@@ -1,5 +1,75 @@
-module.exports = function buildPrompt(profile, messages, majorReports, univData, assessments = {}) {
+function hasUsableScore(profile = {}) {
+  const score = Number(profile.score)
+  return Number.isFinite(score) && score >= 0 && score <= 750
+}
+
+function classifyReportMode(profile = {}) {
+  if ((profile.planning_mode === 'early' || profile.report_mode === 'planning') && !hasUsableScore(profile)) {
+    return 'planning'
+  }
+  if (profile.score_type === 'estimated' || profile.report_mode === 'estimated') {
+    return 'estimated'
+  }
+  if (hasUsableScore(profile)) return 'official'
+  return 'planning'
+}
+
+function buildTimeAndModeSection(mode) {
+  if (mode === 'planning') {
+    return `【时间与数据背景】
+当前是提前规划场景，用户可能是高一/高二家长，尚未掌握正式分数。报告重点是专业方向、孩子画像、能力差距、学习路径、目标分数段和家长行动。严禁输出精确冲稳保院校排序。`
+  }
+  if (mode === 'estimated') {
+    return `【时间与数据背景】
+当前使用的是预估分数。预估分数只作为粗定位参考，不是分数预测产品；允许合理误差。报告核心价值必须来自专业适配、孩子画像、家庭约束、风险判断和行动质量。可以给出大致院校层次参考，但不要把预估分建议写成录取承诺，也不要反复用校准提醒打断报告。`
+  }
+  return `【时间与数据背景】
+当前时间背景是 2026 年 6 月至 7 月，正处于高考出分后、家长和考生集中填报志愿的关键阶段。2025 年录取分数线已经可作为核心历史参考；2023、2024 年数据可辅助判断波动趋势。报告读者是家长和孩子，必须把“能不能上、值不值得上、适不适合上、风险在哪里、下一步怎么核验”讲清楚。`
+}
+
+function buildCandidatePoolSection(mode, recText) {
+  if (mode === 'planning') {
+    return `【院校层次认知与后续校准策略资料】
+当前没有正式分数和位次，结构化冲稳保候选池不作为本报告核心依据。Tab 5 应解释未来如何看院校层次、需要收集哪些分数/位次/专业组数据、什么时候回来校准。`
+  }
+  return `【2025 年结构化冲稳保候选池（Tab 5 院校研究核心依据，禁止编造列表外学校）】
+${recText}`
+}
+
+function buildCandidatePoolRules(mode) {
+  if (mode === 'planning') {
+    return `【院校层次策略使用规则】
+- 当前无正式分数，不能输出具体冲稳保学校排序，也不要把候选池为空当作报告弱点。
+- Tab 5 必须转为“院校层次认知与后续校准策略”：说明家长未来要收集分数、位次、专业组、招生计划和城市约束，再回来做院校定位。
+- 可以讲院校层次、城市选择、专业组风险的判断方法，但不要虚构学校、专业、分数线和位次。`
+  }
+  if (mode === 'estimated') {
+    return `【预估分候选池使用规则】
+- 预估分数只用于粗定位参考，不是分数预测产品；允许合理误差，核心价值仍是专业适配、孩子画像、家庭约束、风险判断和行动质量。
+- Tab 5 可以结合候选池做大致院校层次参考，但必须使用“预估定位”口径，不要写成录取承诺。
+- 只在关键位置提醒正式分数/位次出来后再校准，不要反复用校准提醒打断报告。
+- 使用候选池时，优先引用 2025 年最低分、最低位次、分差和批次；不得把 2025 年历史录取线表述为 2026 年最终录取线。`
+  }
+  return `【冲稳保候选池使用规则】
+- 冲稳保候选池只约束 Tab 5“大学深度研究”和 Tab 6 中涉及院校排序的部分；不要让冲稳保分数线挤占 Tab 1-4 的测评画像、专业适配和专业研究内容。
+- Tab 5 可围绕候选池学校做院校定位，只能围绕上方候选池中的学校/专业组/专业做选择、排序和解释；候选池为空时，必须说明“当前结构化数据库召回不足”，不要凭空补学校。
+- 使用候选池时，优先引用 2025 年最低分、最低位次、分差和批次；不得把 2025 年历史录取线表述为 2026 年最终录取线。
+- 候选池是后端按考生分数/位次附近召回的小范围数据，不是全量数据库；你负责做家长能看懂的取舍解释，不负责扩写原始分数线表。`
+}
+
+function buildTab5ModeRules(mode) {
+  if (mode === 'planning') {
+    return `- Tab 5 标题和内容应转为“院校层次认知与后续校准策略”，解释未来如何看院校层次、需要收集哪些分数/位次/专业组数据、什么时候回来校准；严禁输出精确冲稳保院校排序。`
+  }
+  if (mode === 'estimated') {
+    return `- Tab 5 可以结合候选池做粗定位和层次参考，但必须用“预估定位”口径表达；只需要在关键位置提示正式分数/位次出来后再校准，不要让校准提醒压过专业和行动分析。`
+  }
+  return `- Tab 5 必须基于“2025 年结构化冲稳保候选池”中的学校，严禁虚构学校、专业、分数线和位次；每个候选解释都要说明“历史数据参考，不等于 2026 年录取承诺”。`
+}
+
+function buildPrompt(profile, messages, majorReports, univData, assessments = {}) {
   const arr = v => (Array.isArray(v) ? v.join('、') : v || '未作答')
+  const reportMode = classifyReportMode(profile)
   const studentScore = Number(profile.score) || 0
   const mbti = assessments.mbti || {}
   const holland = assessments.holland || {}
@@ -65,11 +135,10 @@ module.exports = function buildPrompt(profile, messages, majorReports, univData,
 
   return `你是一位专业的高考志愿填报顾问，风格参考资深规划专家：直接、专业、给具体可操作的建议。根据以下考生完整信息，生成一份个人化的综合测评参考报告。
 
-【时间与数据背景】
-当前时间背景是 2026 年 6 月至 7 月，正处于高考出分后、家长和考生集中填报志愿的关键阶段。2025 年录取分数线已经可作为核心历史参考；2023、2024 年数据可辅助判断波动趋势。报告读者是家长和孩子，必须把“能不能上、值不值得上、适不适合上、风险在哪里、下一步怎么核验”讲清楚。
+${buildTimeAndModeSection(reportMode)}
 
 【考生基本信息】
-省份：${profile.province || '未填写'} | 科目：${profile.category || '未填写'} | 分数：${profile.score || '未填写'} | 位次：${profile.rank || '未填写'}
+省份：${profile.province || '未填写'} | 科目：${profile.category || '未填写'} | 分数：${profile.score || '未填写'} | 位次：${profile.rank || '未填写'} | 规划模式：${profile.planning_mode || 'score'} | 分数类型：${profile.score_type || (reportMode === 'official' ? 'official' : '未填写')} | 年级/身份：${[profile.grade, profile.identity].filter(Boolean).join('/') || '未填写'} | 预估分段：${profile.score_range || '未填写'}
 
 【测评结果摘要】
 ${mbtiText}
@@ -78,14 +147,9 @@ ${hollandText}
 【AI 对话记录（最近 20 条）】
 ${msgText}
 
-【2025 年结构化冲稳保候选池（Tab 5 院校研究核心依据，禁止编造列表外学校）】
-${recText}
+${buildCandidatePoolSection(reportMode, recText)}
 
-【冲稳保候选池使用规则】
-- 冲稳保候选池只约束 Tab 5“大学深度研究”和 Tab 6 中涉及院校排序的部分；不要让冲稳保分数线挤占 Tab 1-4 的测评画像、专业适配和专业研究内容。
-- Tab 5 只能围绕上方候选池中的学校/专业组/专业做选择、排序和解释；候选池为空时，必须说明“当前结构化数据库召回不足”，不要凭空补学校。
-- 使用候选池时，优先引用 2025 年最低分、最低位次、分差和批次；不得把 2025 年历史录取线表述为 2026 年最终录取线。
-- 候选池是后端按考生分数/位次附近召回的小范围数据，不是全量数据库；你负责做家长能看懂的取舍解释，不负责扩写原始分数线表。
+${buildCandidatePoolRules(reportMode)}
 
 【专业深度研究资料（Tab 4 直接引用，不得编造数据）】
 ${majorText}
@@ -147,7 +211,11 @@ ${univText}
 - 必须包含“志愿执行清单”：使用 list 或 alert 形式，每条建议必须包含动作、原因、核验材料。
 - 每个模块至少包含 1 个 level 为 "warning" 或 "danger" 的 alert 块，作为“家长核验动作”。
 - Tab 4 专业深度研究和 Tab 5 大学深度研究是综合报告正文的一部分，也必须各写不少于 1000 字：先基于资料做长篇决策分析，再在该模块最后一个 block 中添加 text，内容提示“完整 5000 字以上 PDF 已入库，需要到小程序‘深度报告下载页’付费后选择对应专业/学校下载”。
-- Tab 5 必须基于“2025 年结构化冲稳保候选池”中的学校，严禁虚构学校、专业、分数线和位次；每个候选解释都要说明“历史数据参考，不等于 2026 年录取承诺”。
+${buildTab5ModeRules(reportMode)}
 - 不要生成额外的目录页、Table 页或单独的表格页；表格只能作为正文中的辅助 block，核心价值必须来自顾问式文字分析。
 - 不要使用“AI 总评”“大模型认为”等词汇，统一改成“顾问结论”。`
 }
+
+module.exports = Object.assign(buildPrompt, {
+  classifyReportMode,
+})

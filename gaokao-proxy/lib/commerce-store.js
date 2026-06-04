@@ -351,9 +351,19 @@ function createCommerceStore({
   function normalizeProfile(profile = {}, timestamp = now()) {
     const score = toIntOrEmpty(profile.score)
     const rank = toIntOrEmpty(profile.rank)
+    const planningMode = profile.planning_mode === 'early' ? 'early' : 'score'
+    const hasScore = typeof score === 'number' && score >= 0 && score <= 750
+    const scoreType = planningMode === 'early'
+      ? ''
+      : (profile.score_type === 'estimated' ? 'estimated' : (hasScore ? 'official' : ''))
     return {
       province: typeof profile.province === 'string' ? profile.province.trim() : '',
       category: typeof profile.category === 'string' ? profile.category.trim() : '',
+      planning_mode: planningMode,
+      score_type: scoreType,
+      score_range: typeof profile.score_range === 'string' ? profile.score_range.trim() : '',
+      grade: typeof profile.grade === 'string' ? profile.grade.trim() : '',
+      identity: typeof profile.identity === 'string' ? profile.identity.trim() : '',
       score,
       rank,
       family_resources: typeof profile.family_resources === 'string' ? profile.family_resources.trim() : '',
@@ -370,6 +380,9 @@ function createCommerceStore({
     }
     if (!['物理类', '历史类'].includes(profile.category)) {
       throw new Error('category is invalid')
+    }
+    if (profile.planning_mode === 'early') {
+      return
     }
     if (typeof profile.score !== 'number' || profile.score < 0 || profile.score > 750) {
       throw new Error('score is invalid')

@@ -33,8 +33,8 @@
         </view>
         <view class="info-divider"></view>
         <view class="info-field" @click="goEditProfile">
-          <text class="info-value highlight">{{ profile.score || '--' }}</text>
-          <text class="info-label">分数</text>
+          <text class="info-value highlight">{{ profileScoreDisplay }}</text>
+          <text class="info-label">{{ profileScoreLabel }}</text>
         </view>
       </view>
     </view>
@@ -56,7 +56,7 @@
         <text class="vip-benefit">PDF 下载额度：当前 {{ membershipStore.downloadQuota.remaining }}/{{ membershipStore.downloadQuota.limit }}</text>
         <text class="vip-benefit">支付后客服兜底：异常可联系 {{ CUSTOMER_WECHAT_ID }}</text>
       </view>
-      <text v-if="!membershipStore.isActive" class="invite-rule">有效邀请：新用户通过你的分享进入，并完成省份、科类、分数基础资料才计数。</text>
+      <text v-if="!membershipStore.isActive" class="invite-rule">有效邀请：新用户通过你的分享进入，并完成基础资料才计数。</text>
       <view class="vip-status-actions">
         <button class="vip-action primary" @click="onMembershipAction">
           {{ membershipStore.isActive ? '查看报告' : `${MEMBERSHIP_PRICE_LABEL} 解锁` }}
@@ -76,7 +76,7 @@
         <view class="grid-item" @click="goAssessments">
           <view class="grid-icon bg-orange">
              <text class="emoji">🧠</text>
-             <view v-if="assessmentCount > 0" class="badge">{{ assessmentCount }}/3</view>
+             <view v-if="assessmentCount > 0" class="badge">{{ assessmentCount }}/2</view>
           </view>
           <text class="grid-label">我的测评</text>
         </view>
@@ -147,7 +147,7 @@ import { computed, ref } from 'vue'
 import { onShow, onShareAppMessage } from '@dcloudio/uni-app'
 import { CUSTOMER_WECHAT_ID, CUSTOMER_WECHAT_QR_IMAGE, MEMBERSHIP_PRICE_LABEL } from '../../config.js'
 import { useMembershipStore } from '../../stores/membership.js'
-import { loadUserProfile, loadAssessments } from '../../utils/storage.js'
+import { getProfileReportMode, loadUserProfile, loadAssessments } from '../../utils/storage.js'
 
 const membershipStore = useMembershipStore()
 const profile = ref(loadUserProfile())
@@ -156,6 +156,21 @@ const showContactSheet = ref(false)
 const contactSheetTitle = ref('添加客服微信')
 
 const shortUserId = computed(() => (membershipStore.userId || 'CLOUD').slice(0, 8).toUpperCase())
+const profileReportMode = computed(() => getProfileReportMode(profile.value))
+const profileScoreDisplay = computed(() => {
+  if (profileReportMode.value === 'planning') {
+    return profile.value.score_range || profile.value.grade || '提前规划'
+  }
+  if (profileReportMode.value === 'estimated') {
+    return profile.value.score || profile.value.score_range || '--'
+  }
+  return profile.value.score || '--'
+})
+const profileScoreLabel = computed(() => {
+  if (profileReportMode.value === 'planning') return '规划'
+  if (profileReportMode.value === 'estimated') return '预估分'
+  return '分数'
+})
 
 const assessmentCount = computed(() => {
   let n = 0

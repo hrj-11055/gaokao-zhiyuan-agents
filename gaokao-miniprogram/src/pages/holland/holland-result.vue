@@ -131,6 +131,15 @@
         </view>
       </view>
 
+      <view class="next-step-bar" @click="goNextStep">
+        <view class="next-step-copy">
+          <text class="next-step-kicker">下一步</text>
+          <text class="next-step-title">{{ nextStepTitle }}</text>
+          <text class="next-step-desc">{{ nextStepDesc }}</text>
+        </view>
+        <text class="next-step-action">{{ nextStepAction }}</text>
+      </view>
+
       <!-- 底部悬浮按钮 -->
       <view class="footer-bar">
         <view class="footer-blur" />
@@ -181,6 +190,7 @@ const result = ref({
 })
 const resultVersion = ref('')
 const majorInsights = ref({})
+const assessmentSnapshot = ref({ mbti: {}, holland: {} })
 
 const showConfirm = ref(false)
 
@@ -191,6 +201,12 @@ const hollandDimensionMaxScores = computed(() => getHollandDimensionMaxScores(re
 const hollandMaxScore = computed(() => getHollandMaxScore(resultVersion.value))
 const resultModeName = computed(() => resultVersion.value === 'basic' ? '精简版' : '完整版')
 const scoreScaleTip = computed(() => `${resultModeName.value}雷达图按本版满分 ${hollandMaxScore.value} 分绘制`)
+const mbtiDone = computed(() => Boolean(assessmentSnapshot.value?.mbti?.completed))
+const nextStepTitle = computed(() => (mbtiDone.value ? '生成综合报告' : '继续完成性格类型定位'))
+const nextStepDesc = computed(() => (
+  mbtiDone.value ? '两项测评已完成，可以进入报告生成页。' : '补上性格类型，报告会更能判断学习方式和专业适配。'
+))
+const nextStepAction = computed(() => (mbtiDone.value ? '去报告' : '去测评'))
 
 // 排序后的维度（按分数降序）
 const sortedDimensions = computed(() => {
@@ -363,6 +379,14 @@ function retry() {
   showConfirm.value = true
 }
 
+function goNextStep() {
+  if (!mbtiDone.value) {
+    uni.navigateTo({ url: '/pages/mbti/mbti' })
+    return
+  }
+  uni.switchTab({ url: '/pages/report/report' })
+}
+
 function confirmRetry() {
   const assessments = loadAssessments()
   assessments.holland = {
@@ -400,6 +424,7 @@ function handleUpgrade() {
 
 onShow(() => {
   const assessments = loadAssessments()
+  assessmentSnapshot.value = assessments
   if (!assessments.holland.completed) {
     uni.showToast({ title: '请先完成测评', icon: 'none' })
     setTimeout(() => {
@@ -813,6 +838,56 @@ onShow(() => {
   font-size: 22rpx;
   color: $text-secondary;
   line-height: 1.5;
+}
+
+.next-step-bar {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1rpx solid #E2E8F0;
+  border-radius: 16rpx;
+  padding: 22rpx 24rpx;
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(15, 23, 42, 0.04);
+}
+
+.next-step-copy {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+
+.next-step-kicker {
+  font-size: 21rpx;
+  color: #0F766E;
+  font-weight: 800;
+}
+
+.next-step-title {
+  font-size: 28rpx;
+  color: $text-primary;
+  font-weight: 800;
+}
+
+.next-step-desc {
+  font-size: 22rpx;
+  color: $text-muted;
+  line-height: 1.45;
+}
+
+.next-step-action {
+  flex-shrink: 0;
+  min-width: 112rpx;
+  text-align: center;
+  border-radius: 999rpx;
+  background: #F0FDFA;
+  border: 1rpx solid #CCFBF1;
+  color: #0F766E;
+  font-size: 24rpx;
+  font-weight: 800;
+  padding: 14rpx 18rpx;
 }
 
 // 底部悬浮按钮与弹窗

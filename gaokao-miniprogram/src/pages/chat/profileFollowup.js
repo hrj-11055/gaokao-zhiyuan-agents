@@ -146,8 +146,15 @@ export function isCoreProfileField(field) {
   return CORE_FOLLOWUP_STEPS.some((step) => step.field === field)
 }
 
+function isEarlyPlanningInputs(inputs = {}) {
+  return inputs.planning_mode === 'early' || inputs.report_mode === 'planning'
+}
+
 export function getNextCoreProfileFollowup(inputs = {}) {
-  return CORE_FOLLOWUP_STEPS.find((step) => !hasValue(inputs[step.field])) || null
+  return CORE_FOLLOWUP_STEPS.find((step) => {
+    if (step.field === 'score' && isEarlyPlanningInputs(inputs)) return false
+    return !hasValue(inputs[step.field])
+  }) || null
 }
 
 export function getNextPersonalProfileFollowup(inputs = {}) {

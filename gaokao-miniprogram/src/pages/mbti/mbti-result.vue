@@ -181,6 +181,15 @@
         </view>
       </view>
 
+      <view v-if="!isSharedResult" class="next-step-bar" @click="goNextStep">
+        <view class="next-step-copy">
+          <text class="next-step-kicker">下一步</text>
+          <text class="next-step-title">{{ nextStepTitle }}</text>
+          <text class="next-step-desc">{{ nextStepDesc }}</text>
+        </view>
+        <text class="next-step-action">{{ nextStepAction }}</text>
+      </view>
+
       <!-- 底部操作区域 -->
       <view class="footer-bar">
         <view class="footer-blur" />
@@ -231,6 +240,7 @@ const showConfirmModal = ref(false)
 const majorInsights = ref({})
 const localUserId = ref('')
 const isSharedResult = ref(false)
+const assessmentSnapshot = ref({ mbti: {}, holland: {} })
 
 // 维度配置
 const dimensions = {
@@ -372,6 +382,13 @@ const questionCount = computed(() => (resultVersion.value === 'basic' ? 16 : 48)
 
 const durationLabel = computed(() => (resultVersion.value === 'basic' ? '约3分钟' : '约10分钟'))
 
+const hollandDone = computed(() => Boolean(assessmentSnapshot.value?.holland?.completed))
+const nextStepTitle = computed(() => (hollandDone.value ? '生成综合报告' : '继续完成霍兰德测评'))
+const nextStepDesc = computed(() => (
+  hollandDone.value ? '两项测评已完成，可以进入报告生成页。' : '补上职业兴趣，报告会更能判断专业方向。'
+))
+const nextStepAction = computed(() => (hollandDone.value ? '去报告' : '去测评'))
+
 const recommendedMajorNames = computed(() => (
   buildMajorCards(typeInfo.value?.majors || []).map((major) => major.name)
 ))
@@ -384,6 +401,7 @@ const majorCards = computed(() => {
 function loadResult() {
   localUserId.value = getUserId()
   const assessments = loadAssessments()
+  assessmentSnapshot.value = assessments
   if (assessments.mbti?.completed) {
     result.value = {
       type: assessments.mbti.type,
@@ -519,6 +537,14 @@ function viewMajorDetail(major) {
 // 返回测评页
 function goBack() {
   uni.navigateBack()
+}
+
+function goNextStep() {
+  if (!hollandDone.value) {
+    uni.navigateTo({ url: '/pages/holland/holland' })
+    return
+  }
+  uni.switchTab({ url: '/pages/report/report' })
 }
 
 // 重新测试
@@ -1288,6 +1314,56 @@ onShareTimeline(() => ({
   .major-card:active & {
     transform: translateX(6rpx);
   }
+}
+
+.next-step-bar {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1rpx solid #E2E8F0;
+  border-radius: 16rpx;
+  padding: 22rpx 24rpx;
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(15, 23, 42, 0.04);
+}
+
+.next-step-copy {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+
+.next-step-kicker {
+  font-size: 21rpx;
+  color: #0F766E;
+  font-weight: 800;
+}
+
+.next-step-title {
+  font-size: 28rpx;
+  color: $text-primary;
+  font-weight: 800;
+}
+
+.next-step-desc {
+  font-size: 22rpx;
+  color: $text-muted;
+  line-height: 1.45;
+}
+
+.next-step-action {
+  flex-shrink: 0;
+  min-width: 112rpx;
+  text-align: center;
+  border-radius: 999rpx;
+  background: #F0FDFA;
+  border: 1rpx solid #CCFBF1;
+  color: #0F766E;
+  font-size: 24rpx;
+  font-weight: 800;
+  padding: 14rpx 18rpx;
 }
 
 // 底部悬浮按钮

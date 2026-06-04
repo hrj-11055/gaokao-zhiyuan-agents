@@ -2,7 +2,7 @@
   <view class="report-page">
     <view class="bg-glow-blue" />
     <view class="header-banner">
-      <text class="page-title">{{ latestReport ? '测评与报告中心' : '测评与报告准备' }}</text>
+      <text class="page-title">{{ pageTitle }}</text>
     </view>
 
     <view class="main-content">
@@ -16,7 +16,7 @@
           <view class="progress-bar">
             <view class="progress-fill" :style="{ width: progressPercent + '%' }"></view>
           </view>
-          <text class="progress-count-text">{{ completedAssessments }} / 2 项测评已完成</text>
+          <text class="progress-count-text">{{ completedSteps }} / 4 步已完成</text>
         </view>
       </view>
 
@@ -112,9 +112,9 @@
           </view>
 
           <view class="hero-content">
-            <text class="hero-title">综合志愿参考报告</text>
+            <text class="hero-title">{{ reportModeLabel }}</text>
             <text class="hero-time" v-if="latestReport.generatedAt">{{ formatTime(latestReport.generatedAt) }}</text>
-            <button class="hero-btn" @click="openLatest" hover-class="hero-btn-hover">点击查看综合报告</button>
+            <button class="hero-btn" @click="openLatest" hover-class="hero-btn-hover">点击查看{{ reportModeLabel }}</button>
           </view>
         </view>
 
@@ -181,16 +181,16 @@
     <!-- 解锁弹窗 -->
     <view v-if="showUnlockSheet" class="unlock-sheet-mask" @click="closeUnlockSheet">
       <view class="unlock-sheet" @click.stop>
-        <text class="sheet-title">生成完整志愿报告需要 VIP</text>
-        <text class="sheet-desc">开通后可生成综合报告，并使用院校/专业深度阅读和 PDF 下载额度。</text>
+        <text class="sheet-title">生成{{ reportModeLabel }}需要 VIP</text>
+        <text class="sheet-desc">开通后可生成{{ reportModeLabel }}，并使用院校/专业深度阅读和 PDF 下载额度。</text>
         <view class="sheet-benefits">
-          <text class="sheet-benefit">完整志愿报告：学校/专业判断、风险提醒、下一步行动</text>
+          <text class="sheet-benefit">{{ reportModeLabel }}：学校/专业判断、风险提醒、下一步行动</text>
           <text class="sheet-benefit">深度阅读：院校和专业在线阅读不限次数</text>
           <text class="sheet-benefit">PDF 下载：剩余额度 {{ membershipStore.downloadQuota.remaining }}/{{ membershipStore.downloadQuota.limit }}</text>
           <text class="sheet-benefit">客服兜底：支付或报告异常可联系 {{ CUSTOMER_WECHAT_ID }}</text>
         </view>
-        <text class="sheet-rule">邀请 5 位新用户解锁：新用户通过你的分享进入，并完成省份、科类、分数基础资料，才算有效邀请。当前 {{ membershipStore.effectiveInviteCount }}/{{ membershipStore.requiredInviteCount }}。</text>
-        <button class="sheet-primary" @click="onPayWithWechat">{{ MEMBERSHIP_PRICE_LABEL }} 解锁完整报告</button>
+        <text class="sheet-rule">邀请 5 位新用户解锁：新用户通过你的分享进入，并完成基础资料，才算有效邀请。当前 {{ membershipStore.effectiveInviteCount }}/{{ membershipStore.requiredInviteCount }}。</text>
+        <button class="sheet-primary" @click="onPayWithWechat">{{ MEMBERSHIP_PRICE_LABEL }} 解锁{{ reportModeLabel }}</button>
         <button class="sheet-secondary" open-type="share">邀请 5 位新用户解锁</button>
         <view class="code-row">
           <input v-model.trim="unlockCode" class="code-input" placeholder="输入会员邀请码" />
@@ -216,6 +216,7 @@ import { checkPregenerateStatus } from '../../api/pregenerate.js'
 import { useReportPregen } from '../../composables/useReportPregen.js'
 import { buildReportAssessmentPayload } from '../../utils/report-assessments.js'
 import {
+  getProfileReportMode,
   loadHistory,
   loadUserProfile,
   loadReport,
@@ -224,22 +225,37 @@ import {
 
 const membershipStore = useMembershipStore(pinia)
 const {
+  profile: progressProfile,
   step1Done,
   step2Done,
   mbtiDone,
   hollandDone,
   step3Done: allAssessmentsDone,
   step3Count: completedAssessments,
+  completedSteps,
   refresh: refreshProgress,
 } = useHomeProgress()
 
+const currentProfile = computed(() => progressProfile.value || loadUserProfile())
+const reportMode = computed(() => getProfileReportMode(currentProfile.value))
+const reportModeLabel = computed(() => {
+  if (reportMode.value === 'planning') return '专业规划报告'
+  if (reportMode.value === 'estimated') return '预估定位报告'
+  return '院校定位报告'
+})
+const pageTitle = computed(() => (
+  latestReport.value ? '测评与报告中心' : `${reportModeLabel.value}准备`
+))
 const progressPercent = computed(() => {
-  return Math.round((completedAssessments.value / 2) * 100)
+  return Math.round((completedSteps.value / 4) * 100)
 })
 const allPrerequisitesDone = computed(() => step1Done.value && step2Done.value && allAssessmentsDone.value)
-const profileStatusText = computed(() => (
-  step1Done.value ? '省份、科类和分数已记录' : '请先补全省份、科类和分数'
-))
+const profileStatusText = computed(() => {
+  if (!step1Done.value) return '请先补充省份和科类，可暂不填正式分数'
+  if (reportMode.value === 'planning') return '基础资料已记录，可先生成专业规划报告'
+  if (reportMode.value === 'estimated') return '预估分已记录，正式分/位次出来后再校准'
+  return '省份、科类和正式分数已记录'
+})
 const chatStatusText = computed(() => (
   step2Done.value ? '已完成至少 1 轮咨询' : '先聊 1 轮，让报告纳入现实约束'
 ))
@@ -247,17 +263,17 @@ const assessmentStatusText = computed(() => (
   allAssessmentsDone.value ? '两项测评已完成' : `已完成 ${completedAssessments.value}/2`
 ))
 const generateButtonText = computed(() => {
-  if (!step1Done.value) return '先补全基础资料'
+  if (!step1Done.value) return '先补充基础资料'
   if (!step2Done.value) return '先完成 1 轮 AI 咨询'
   if (!allAssessmentsDone.value) return '需先完成上方 2 项测评'
-  if (!membershipStore.isActive) return `${MEMBERSHIP_PRICE_LABEL} 解锁完整报告`
-  return '立即生成综合报告'
+  if (!membershipStore.isActive) return `${MEMBERSHIP_PRICE_LABEL} 解锁${reportModeLabel.value}`
+  return `立即生成${reportModeLabel.value}`
 })
 const generateHintText = computed(() => {
-  if (!step1Done.value) return '基础资料决定学校层次和省份规则。'
+  if (!step1Done.value) return '基础资料决定报告口径：无分数看专业规划，有分数看院校定位。'
   if (!step2Done.value) return 'AI 咨询会补充城市、专业、预算和家庭约束。'
   if (!allAssessmentsDone.value) return '测评结果会用于补充“分数之外的信息”，帮助报告更准确。'
-  if (!membershipStore.isActive) return '完整报告包含学校/专业判断、风险提醒、下一步行动和 PDF 权益。'
+  if (!membershipStore.isActive) return `${reportModeLabel.value}包含专业判断、风险提醒、下一步行动和 PDF 权益。`
   return '报告通常需要 1-2 分钟，请保持页面打开。'
 })
 
@@ -271,7 +287,7 @@ const unlockSheetReason = ref('')
 const { tryTriggerPregenerate } = useReportPregen()
 
 const fakeProgress = ref(0)
-const progressTitle = ref('正在生成志愿报告')
+const progressTitle = ref('正在生成综合报告')
 const progressSub = ref('正在整合考生信息、测评结果与对话记录')
 const progressTip = ref('通常需要 1-2 分钟，请保持页面打开')
 const isFakeProgressActive = ref(false)
@@ -286,7 +302,7 @@ onShow(() => {
 })
 
 onShareAppMessage(() => ({
-  title: '邀请你一起生成高考志愿参考报告',
+  title: `邀请你一起生成${reportModeLabel.value}`,
   path: `/pages/index/index?inviterId=${membershipStore.userId || ''}`,
 }))
 
@@ -382,7 +398,7 @@ function runFakeProgressBar(cachedUrl) {
   fakeProgress.value = 0
   progressTitle.value = '正在整合分析结果…'
   progressSub.value = '正在整合性格特质与RIASEC职业兴趣...'
-  progressTip.value = '即将为您呈现深度个人发展建议'
+  progressTip.value = `即将为你呈现${reportModeLabel.value}`
 
   // Step 1: 1s -> 30%
   setTimeout(() => {
@@ -409,7 +425,7 @@ function runFakeProgressBar(cachedUrl) {
   setTimeout(() => {
     fakeProgress.value = 100
     progressTitle.value = '报告生成完毕！'
-    progressSub.value = '欢迎进入属于你的志愿报告'
+    progressSub.value = `欢迎进入属于你的${reportModeLabel.value}`
   }, 5000)
 
   // Step 5: 5.5s -> navigate and reset
@@ -470,7 +486,7 @@ async function onGenerate() {
   // Reset loader variables
   isFakeProgressActive.value = false
   fakeProgress.value = 0
-  progressTitle.value = '正在生成志愿报告'
+  progressTitle.value = `正在生成${reportModeLabel.value}`
   progressSub.value = '正在整合考生信息、测评结果与对话记录'
   progressTip.value = '通常需要 1-2 分钟，请保持页面打开'
 
@@ -598,7 +614,7 @@ function goDeepReportDownload(mode = 'university') {
 
 function getReadinessBlocker() {
   if (!step1Done.value) {
-    return { toast: '请先补全基础资料', action: goHomeProfile }
+    return { toast: '请先补充基础资料', action: goHomeProfile }
   }
   if (!step2Done.value) {
     return { toast: '请先完成 1 轮 AI 咨询', action: goChat }

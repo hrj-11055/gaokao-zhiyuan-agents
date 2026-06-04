@@ -113,7 +113,7 @@ class ReportQualityImprovementTests(unittest.TestCase):
         self.assertIn("REPORT_GENERATION_TIMEOUT_MS", builder)
         self.assertIn("REPORT_GENERATION_TIMEOUT_MS || 600000", builder)
         # Client timeout should not be dramatically shorter than server timeout
-        self.assertIn("timeout: 300000", client)
+        self.assertIn("timeout: 360000", client)
 
     def test_miniprogram_deep_report_cards_expose_actionable_summary(self):
         page = self.read("gaokao-miniprogram/src/pages/deep-report-download/deep-report-download.vue")

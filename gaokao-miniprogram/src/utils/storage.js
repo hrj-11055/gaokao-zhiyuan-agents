@@ -93,15 +93,49 @@ function toTrimmedString(value) {
   return typeof value === 'string' ? value.trim() : ''
 }
 
+export const PROFILE_PLANNING_MODES = {
+  SCORE: 'score',
+  EARLY: 'early',
+}
+
+export const PROFILE_SCORE_TYPES = {
+  OFFICIAL: 'official',
+  ESTIMATED: 'estimated',
+}
+
+function normalizePlanningMode(value) {
+  return value === PROFILE_PLANNING_MODES.EARLY
+    ? PROFILE_PLANNING_MODES.EARLY
+    : PROFILE_PLANNING_MODES.SCORE
+}
+
+function isValidScore(value) {
+  return typeof value === 'number' && value >= 0 && value <= 750
+}
+
+function normalizeScoreType(value, planningMode, hasScore) {
+  if (planningMode === PROFILE_PLANNING_MODES.EARLY) return ''
+  if (value === PROFILE_SCORE_TYPES.ESTIMATED) return PROFILE_SCORE_TYPES.ESTIMATED
+  return hasScore ? PROFILE_SCORE_TYPES.OFFICIAL : ''
+}
+
 /**
  * 规范化考生信息，字段顺序固定为：省份、科目、分数、位次。
  */
 export function normalizeUserProfile(profile = {}) {
+  const score = toIntOrEmpty(profile.score)
+  const planningMode = normalizePlanningMode(profile.planning_mode)
+  const hasScore = isValidScore(score)
   return {
     nickname: toTrimmedString(profile.nickname),
     province: toTrimmedString(profile.province),
     category: toTrimmedString(profile.category),
-    score: toIntOrEmpty(profile.score),
+    planning_mode: planningMode,
+    score_type: normalizeScoreType(profile.score_type, planningMode, hasScore),
+    score_range: toTrimmedString(profile.score_range),
+    grade: toTrimmedString(profile.grade),
+    identity: toTrimmedString(profile.identity),
+    score,
     rank: toIntOrEmpty(profile.rank),
     family_resources: toTrimmedString(profile.family_resources),
     interest_subjects: toTrimmedString(profile.interest_subjects),
@@ -135,18 +169,37 @@ export function loadUserProfile() {
   }
 }
 
+export function hasProfileScore(profile = {}) {
+  const data = normalizeUserProfile(profile)
+  return isValidScore(data.score)
+}
+
+export function getProfileReportMode(profile = {}) {
+  const data = normalizeUserProfile(profile)
+  if (data.planning_mode === PROFILE_PLANNING_MODES.EARLY && !isValidScore(data.score)) {
+    return 'planning'
+  }
+  if (data.score_type === PROFILE_SCORE_TYPES.ESTIMATED) {
+    return 'estimated'
+  }
+  if (isValidScore(data.score)) {
+    return 'official'
+  }
+  return 'planning'
+}
+
 /**
  * 智能填报最低必填项：省份、科目、分数。
  */
 export function isProfileComplete(profile) {
   const data = normalizeUserProfile(profile)
-  return Boolean(
+  const hasBase = Boolean(
     data.province &&
-    (data.category === '物理类' || data.category === '历史类') &&
-    typeof data.score === 'number' &&
-    data.score >= 0 &&
-    data.score <= 750
+    (data.category === '物理类' || data.category === '历史类')
   )
+  if (!hasBase) return false
+  if (data.planning_mode === PROFILE_PLANNING_MODES.EARLY) return true
+  return isValidScore(data.score)
 }
 
 /**
@@ -160,6 +213,20 @@ export function buildProfileInputs(profile) {
   }
   if (data.category) {
     inputs.category = data.category
+  }
+  inputs.planning_mode = data.planning_mode
+  inputs.report_mode = getProfileReportMode(data)
+  if (data.score_type) {
+    inputs.score_type = data.score_type
+  }
+  if (data.score_range) {
+    inputs.score_range = data.score_range
+  }
+  if (data.grade) {
+    inputs.grade = data.grade
+  }
+  if (data.identity) {
+    inputs.identity = data.identity
   }
   if (typeof data.score === 'number') {
     inputs.score = String(data.score)

@@ -13,16 +13,16 @@
     </view>
 
     <!-- 顶部进度卡 -->
-    <view class="progress-card" :class="{ ready: isReady }">
+    <view class="progress-card">
       <view class="progress-top">
-        <text class="progress-label">我的志愿报告</text>
-        <text class="progress-hint">{{ progressHint }}</text>
+        <text class="progress-label">规划进度</text>
+        <text class="progress-hint">{{ nextActionText }}</text>
       </view>
       <view class="progress-stat">
         <text class="progress-frac">{{ completedSteps }}<text class="progress-total"> / 4 步</text></text>
       </view>
       <view class="progress-bar"><view class="progress-fill" :style="{ width: progressPercent + '%' }" /></view>
-      <text class="progress-guide">按顺序完成：基础资料 → AI 咨询 → 两项测评 → 完整报告</text>
+      <text class="progress-guide">无分数看专业规划，有分数看院校定位</text>
     </view>
 
     <!-- 步骤 1: 基础信息 -->
@@ -108,7 +108,29 @@
           <text class="profile-sheet-title">填写基础信息</text>
           <text class="profile-sheet-close" @click="closeProfileSheet">×</text>
         </view>
-        <text class="profile-sheet-desc">省份、科类和分数会决定推荐边界，也会作为有效邀请的计数条件。</text>
+        <text class="profile-sheet-desc">先确定省份和科类；正式分数未出时，也可以用预估分或先做专业规划。</text>
+
+        <view class="field-block">
+          <text class="field-label">当前阶段</text>
+          <view class="mode-cards">
+            <view
+              class="mode-card"
+              :class="{ active: draft.planning_mode === 'score' }"
+              @click="selectPlanningMode('score')"
+            >
+              <text class="mode-title">成绩/预估成绩</text>
+              <text class="mode-desc">已有正式分或大致预估分</text>
+            </view>
+            <view
+              class="mode-card"
+              :class="{ active: draft.planning_mode === 'early' }"
+              @click="selectPlanningMode('early')"
+            >
+              <text class="mode-title">提前规划</text>
+              <text class="mode-desc">高一高二可先不填分数</text>
+            </view>
+          </view>
+        </view>
 
         <view class="field-block">
           <text class="field-label">省份</text>
@@ -135,15 +157,56 @@
           </view>
         </view>
 
-        <view class="field-row">
+        <view v-if="draft.planning_mode === 'score'" class="field-block">
+          <text class="field-label">分数类型</text>
+          <view class="segment">
+            <view
+              class="segment-option"
+              :class="{ active: draft.score_type !== 'estimated' }"
+              @click="selectScoreType('official')"
+            >
+              <text class="segment-text">正式分数</text>
+            </view>
+            <view
+              class="segment-option"
+              :class="{ active: draft.score_type === 'estimated' }"
+              @click="selectScoreType('estimated')"
+            >
+              <text class="segment-text">预估分数</text>
+            </view>
+          </view>
+        </view>
+
+        <view v-if="draft.planning_mode === 'score'" class="field-row">
           <view class="field-block half">
-            <text class="field-label">分数</text>
-            <input v-model.trim="draft.score" class="field-input" type="number" placeholder="例如：580" />
+            <text class="field-label">{{ scoreFieldLabel }}</text>
+            <input v-model.trim="draft.score" class="field-input" type="number" :placeholder="scorePlaceholder" />
           </view>
           <view class="field-block half">
             <text class="field-label">位次</text>
             <input v-model.trim="draft.rank" class="field-input" type="number" placeholder="选填" />
           </view>
+        </view>
+
+        <view v-if="draft.planning_mode === 'score' && draft.score_type === 'estimated'" class="field-block">
+          <text class="field-label">预估分数区间</text>
+          <input v-model.trim="draft.score_range" class="field-input" placeholder="选填，例如：540-570" />
+        </view>
+
+        <view v-if="draft.planning_mode === 'early'" class="field-row">
+          <view class="field-block half">
+            <text class="field-label">年级</text>
+            <input v-model.trim="draft.grade" class="field-input" placeholder="例如：高二" />
+          </view>
+          <view class="field-block half">
+            <text class="field-label">身份</text>
+            <input v-model.trim="draft.identity" class="field-input" placeholder="例如：家长" />
+          </view>
+        </view>
+
+        <view v-if="draft.planning_mode === 'early'" class="field-block">
+          <text class="field-label">预估分数区间</text>
+          <input v-model.trim="draft.score_range" class="field-input" placeholder="选填，例如：520-560" />
         </view>
 
         <view class="field-block">
@@ -170,6 +233,7 @@ import { useHomeProgress, StepStatus } from '../../composables/useHomeProgress.j
 import { useMembershipStore } from '../../stores/membership.js'
 import { MEMBERSHIP_PRICE_LABEL } from '../../config.js'
 import {
+  getProfileReportMode,
   isProfileComplete,
   saveUserProfile,
 } from '../../utils/storage.js'
@@ -192,11 +256,17 @@ const {
 } = useHomeProgress()
 
 function createDraft(source = {}) {
+  const hasSourceScore = source.score !== '' && source.score !== undefined && source.score !== null
   return {
     province: source.province || '',
     category: source.category || '',
-    score: source.score === '' || source.score === undefined ? '' : String(source.score),
-    rank: source.rank === '' || source.rank === undefined ? '' : String(source.rank),
+    planning_mode: source.planning_mode || 'score',
+    score_type: source.score_type || (hasSourceScore ? 'official' : ''),
+    score_range: source.score_range || '',
+    grade: source.grade || '',
+    identity: source.identity || '',
+    score: source.score === '' || source.score === undefined || source.score === null ? '' : String(source.score),
+    rank: source.rank === '' || source.rank === undefined || source.rank === null ? '' : String(source.rank),
     family_resources: source.family_resources || '',
     interest_subjects: source.interest_subjects || '',
     region_preference: source.region_preference || '',
@@ -208,20 +278,22 @@ const showProfileSheet = ref(false)
 const draft = ref(createDraft(profile.value))
 
 // === 进度卡 ===
-const isReady = computed(() => step3Done.value || reportDone.value)
 const progressPercent = computed(() => Math.round((completedSteps.value / 4) * 100))
-const progressHint = computed(() => {
+const nextActionText = computed(() => {
   if (completedSteps.value === 0) return '从第 1 步开始'
   if (reportDone.value) return '已生成报告'
   if (step3Done.value) return '准备就绪'
   return `还差 ${4 - completedSteps.value} 步`
 })
+const scoreFieldLabel = computed(() => (draft.value.score_type === 'estimated' ? '预估分数' : '分数'))
+const scorePlaceholder = computed(() => (draft.value.score_type === 'estimated' ? '例如：560' : '例如：580'))
 // === 招呼语 ===
 const greetingText = computed(() => {
   if (!step1Done.value) return '你好，先花 30 秒了解一下吧'
   const tail = step3Done.value ? '已就绪' : `已完成 ${completedSteps.value}/4`
   const cat = profile.value.category ? profile.value.category.replace('类', '') : ''
-  return `${profile.value.province} · ${cat} · ${profile.value.score}分 · ${tail}`
+  const scoreText = buildProfileBrief(profile.value)
+  return `${profile.value.province} · ${cat} · ${scoreText} · ${tail}`
 })
 
 // === 每个步骤的状态 / class / icon / desc ===
@@ -256,15 +328,15 @@ const step4IconText = computed(() =>
 const step1DescText = computed(() => {
   if (step1Done.value) {
     const cat = profile.value.category ? profile.value.category : ''
-    return `${profile.value.province} · ${cat} · ${profile.value.score}分`
+    return `${profile.value.province} · ${cat} · ${buildProfileBrief(profile.value)}`
   }
-  return '省份、科类、分数决定推荐边界'
+  return '省份和科类先定边界，分数可后补'
 })
 
 const step2DescText = computed(() => {
   if (step2Status.value === StepStatus.LOCKED) return '完成上一步后开始'
   if (step2Done.value) return `已聊 ${chatRounds.value} 轮 · 点击继续`
-  return '先确认分数段、城市和家庭约束'
+  return '先补充孩子画像、城市和家庭约束'
 })
 
 const step3DescText = computed(() => {
@@ -360,9 +432,33 @@ function selectCategory(category) {
   draft.value.category = category
 }
 
+function selectPlanningMode(mode) {
+  draft.value.planning_mode = mode === 'early' ? 'early' : 'score'
+  if (draft.value.planning_mode === 'early') {
+    draft.value.score_type = ''
+    draft.value.score = ''
+    draft.value.rank = ''
+    return
+  }
+  if (!draft.value.score_type) {
+    draft.value.score_type = 'official'
+  }
+}
+
+function selectScoreType(type) {
+  draft.value.score_type = type === 'estimated' ? 'estimated' : 'official'
+}
+
+function buildProfileBrief(data = {}) {
+  const mode = getProfileReportMode(data)
+  if (mode === 'planning') return data.grade || '提前规划'
+  if (mode === 'estimated') return data.score ? `预估${data.score}分` : (data.score_range || '预估分')
+  return data.score ? `${data.score}分` : '待补分数'
+}
+
 async function saveProfileDraft() {
   if (!isProfileComplete(draft.value)) {
-    uni.showToast({ title: '请补全省份、科类和分数', icon: 'none' })
+    uni.showToast({ title: '请先补充省份和科类', icon: 'none' })
     return
   }
   saveUserProfile(draft.value)
@@ -416,27 +512,26 @@ onUnload(() => {
 
 /* === 进度卡 === */
 .progress-card {
-  background: white; border-radius: 20rpx; padding: 24rpx 28rpx;
-  box-shadow: 0 4rpx 14rpx rgba(17, 24, 39, 0.05);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1rpx solid #eef2f7;
+  border-radius: 16rpx;
+  padding: 22rpx 24rpx;
+  box-shadow: 0 2rpx 8rpx rgba(15, 23, 42, 0.03);
   margin-bottom: 24rpx;
 }
-.progress-card.ready { background: linear-gradient(135deg, #ecfdf5, #ffffff); }
 .progress-top { display: flex; justify-content: space-between; align-items: center; }
 .progress-label { font-size: 24rpx; color: #6b7280; }
-.progress-hint { font-size: 22rpx; color: #f97316; font-weight: 600; }
-.progress-card.ready .progress-hint { color: #10b981; }
+.progress-hint { font-size: 22rpx; color: #0f766e; font-weight: 600; }
 .progress-stat { margin-top: 6rpx; }
-.progress-frac { font-size: 40rpx; font-weight: 800; color: #111827; }
-.progress-card.ready .progress-frac { color: #10b981; }
+.progress-frac { font-size: 38rpx; font-weight: 800; color: #111827; }
 .progress-total { font-size: 24rpx; font-weight: 500; color: #9ca3af; }
-.progress-bar { height: 10rpx; background: #f3f4f6; border-radius: 99rpx; margin-top: 14rpx; overflow: hidden; }
+.progress-bar { height: 8rpx; background: #f3f4f6; border-radius: 99rpx; margin-top: 12rpx; overflow: hidden; }
 .progress-fill {
   height: 100%; border-radius: 99rpx;
-  background: linear-gradient(90deg, #f97316, #fb923c);
+  background: linear-gradient(90deg, #14b8a6, #f59e0b);
   transition: width 0.4s ease;
 }
-.progress-card.ready .progress-fill { background: linear-gradient(90deg, #10b981, #34d399); }
-.progress-guide { display: block; font-size: 21rpx; color: #6b7280; margin-top: 14rpx; line-height: 1.5; }
+.progress-guide { display: block; font-size: 21rpx; color: #7c8794; margin-top: 12rpx; line-height: 1.5; }
 
 /* === 步骤卡 === */
 .step {
@@ -574,6 +669,38 @@ onUnload(() => {
   color: #111827;
   box-sizing: border-box;
 }
+.mode-cards {
+  display: flex;
+  gap: 14rpx;
+}
+.mode-card {
+  flex: 1;
+  min-height: 116rpx;
+  border-radius: 12rpx;
+  background: #f9fafb;
+  border: 1rpx solid #e5e7eb;
+  padding: 18rpx 16rpx;
+  box-sizing: border-box;
+}
+.mode-card.active {
+  background: #f0fdfa;
+  border-color: #14b8a6;
+}
+.mode-title {
+  display: block;
+  color: #111827;
+  font-size: 25rpx;
+  font-weight: 800;
+  line-height: 1.25;
+}
+.mode-desc {
+  display: block;
+  color: #6b7280;
+  font-size: 21rpx;
+  line-height: 1.35;
+  margin-top: 8rpx;
+}
+.mode-card.active .mode-title { color: #0f766e; }
 .segment {
   display: flex;
   gap: 14rpx;

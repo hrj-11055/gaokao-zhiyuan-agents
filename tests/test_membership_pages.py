@@ -61,6 +61,17 @@ class MembershipPagesTests(unittest.TestCase):
         self.assertIn("/static/contact/wechat-qr.png", config)
         self.assertTrue((ROOT / "gaokao-miniprogram/src/static/contact/wechat-qr.png").exists())
 
+    def test_profile_page_summarizes_score_mode_without_requiring_score(self):
+        text = self.read("gaokao-miniprogram/src/pages/profile/profile.vue")
+
+        self.assertIn("getProfileReportMode", text)
+        self.assertIn("profileScoreDisplay", text)
+        self.assertIn("profileScoreLabel", text)
+        self.assertIn("预估", text)
+        self.assertIn("提前规划", text)
+        self.assertIn("有效邀请：新用户通过你的分享进入，并完成基础资料才计数", text)
+        self.assertNotIn("完成省份、科类、分数基础资料", text)
+
     def test_report_page_has_membership_lock_and_auth_header(self):
         text = self.read("gaokao-miniprogram/src/pages/report/report.vue")
         api = self.read("gaokao-miniprogram/src/api/report.js")
@@ -73,8 +84,9 @@ class MembershipPagesTests(unittest.TestCase):
             "loadHistory",
             "sessionToken: membershipStore.sessionToken",
             "已保留草稿",
-            "生成完整志愿报告需要 VIP",
-            "开通后可生成综合报告",
+            "生成{{ reportModeLabel }}需要 VIP",
+            "开通后可生成{{ reportModeLabel }}",
+            "reportModeLabel",
             "邀请 5 位新用户",
             "输入会员邀请码",
             "showUnlockSheet",
@@ -93,7 +105,7 @@ class MembershipPagesTests(unittest.TestCase):
             "path: '/api/report/generate'",
             "Authorization",
             "Bearer ${sessionToken}",
-            "timeout: 300000",
+            "timeout: 360000",
         ]:
             self.assertIn(snippet, api)
 

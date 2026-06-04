@@ -13,8 +13,8 @@
         <ChatBubble type="ai" :content="welcomeMsg" :show-actions="false" />
 
         <view v-if="!isProfileReady" class="profile-gate">
-          <text class="profile-gate-title">先补全基础资料</text>
-          <text class="profile-gate-desc">省份、科类和分数会影响院校层次、专业建议和风险判断。</text>
+          <text class="profile-gate-title">先补充基础资料</text>
+          <text class="profile-gate-desc">基础资料可以先不填正式分数；有预估分就按预估定位，没有分数也能先做专业规划。</text>
           <view class="profile-gate-btn" @click="goCompleteProfile">
             <text class="profile-gate-btn-text">去填写资料</text>
           </view>
@@ -114,7 +114,7 @@ const isProfileReady = computed(() => isProfileComplete(profile.value))
 const quickQuestions = computed(() => buildCandidateQuestions(profile.value))
 const showWelcomeSuggestions = computed(() => messages.value.length === 0 && isProfileReady.value)
 const inputPlaceholder = computed(() => (
-  isProfileReady.value ? '写下你的纠结，或直接选上面的处境...' : '请先补全省份、科类和分数'
+  isProfileReady.value ? '写下你的纠结，或直接选上面的处境...' : '先补充省份和科类，可暂不填正式分数'
 ))
 const hasUserMessage = computed(() => messages.value.some((msg) => msg.role === 'user'))
 
@@ -162,7 +162,7 @@ function onQuickSelect(question) {
 
 function handleSend() {
   if (!isProfileReady.value) {
-    uni.showToast({ title: '请先补全省份、科类和分数', icon: 'none' })
+    uni.showToast({ title: '请先补充基础资料', icon: 'none' })
     return
   }
   onSend({

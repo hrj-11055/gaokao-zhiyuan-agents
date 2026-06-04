@@ -42,7 +42,7 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
 
         self.run_node_test(
             source,
-            "import { saveUserProfile, loadUserProfile, isProfileComplete, buildProfileInputs } from './module.mjs'",
+            "import { saveUserProfile, loadUserProfile, normalizeUserProfile, isProfileComplete, buildProfileInputs, getProfileReportMode } from './module.mjs'",
             """
             const storage = new Map()
             globalThis.uni = {
@@ -57,10 +57,51 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
 
             assert.equal(isProfileComplete({ province: '广东', category: '物理类', score: 600 }), true)
             assert.equal(isProfileComplete({ province: '广东', category: '物理类' }), false)
+            assert.equal(isProfileComplete({ province: '广东', category: '物理类', planning_mode: 'early' }), true)
+            assert.equal(isProfileComplete({ province: '广东', category: '物理类', planning_mode: 'score', score_type: 'estimated', score: 560 }), true)
+            assert.equal(isProfileComplete({ province: '广东', category: '物理类', planning_mode: 'score', score_type: 'estimated' }), false)
+
+            const early = normalizeUserProfile({
+              province: '广东',
+              category: '物理类',
+              planning_mode: 'early',
+              grade: '高二',
+              identity: '家长',
+              score_range: '520-560'
+            })
+            assert.deepEqual(
+              {
+                planning_mode: early.planning_mode,
+                score_type: early.score_type,
+                grade: early.grade,
+                identity: early.identity,
+                score_range: early.score_range,
+                report_mode: getProfileReportMode(early)
+              },
+              {
+                planning_mode: 'early',
+                score_type: '',
+                grade: '高二',
+                identity: '家长',
+                score_range: '520-560',
+                report_mode: 'planning'
+              }
+            )
+            assert.deepEqual(buildProfileInputs(early), {
+              province: '广东',
+              category: '物理类',
+              planning_mode: 'early',
+              score_range: '520-560',
+              grade: '高二',
+              identity: '家长',
+              report_mode: 'planning'
+            })
 
             saveUserProfile({
               province: '广东',
               category: '物理类',
+              planning_mode: 'score',
+              score_type: 'estimated',
               score: '600',
               rank: '32000',
               family_resources: '家庭年收入30万，父母是老师和医生',
@@ -73,6 +114,11 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
               nickname: '',
               province: '广东',
               category: '物理类',
+              planning_mode: 'score',
+              score_type: 'estimated',
+              score_range: '',
+              grade: '',
+              identity: '',
               score: 600,
               rank: 32000,
               family_resources: '家庭年收入30万，父母是老师和医生',
@@ -84,6 +130,9 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
             assert.deepEqual(buildProfileInputs(loadUserProfile()), {
               province: '广东',
               category: '物理类',
+              planning_mode: 'score',
+              report_mode: 'estimated',
+              score_type: 'estimated',
               score: '600',
               rank: '32000',
               family_resources: '家庭年收入30万，父母是老师和医生',
@@ -171,6 +220,7 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
             assert.equal(score.field, 'score')
             assert.equal(/家庭|兴趣|地域|考研|考公/.test(score.question), false)
 
+            assert.equal(getNextCoreProfileFollowup({ province: '广东', category: '物理类', planning_mode: 'early', report_mode: 'planning' }), null)
             assert.equal(getNextCoreProfileFollowup({ province: '广东', category: '物理类', score: '600' }), null)
 
             const rank = getNextPersonalProfileFollowup({ province: '广东', category: '物理类', score: '600' })
@@ -364,13 +414,28 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
         self.assertIn("isProfileComplete", chat_page)
         self.assertIn("const isProfileReady = computed(() => isProfileComplete(profile.value))", chat_page)
         self.assertIn("v-if=\"!isProfileReady\"", chat_page)
+        self.assertIn("基础资料可以先不填正式分数", chat_page)
         self.assertIn("showWelcomeSuggestions", chat_page)
         self.assertIn("messages.value.length === 0 && isProfileReady.value", chat_page)
         self.assertIn(":disabled=\"isStreaming || !isProfileReady\"", chat_page)
         self.assertIn("!isProfileReady", chat_page)
+        self.assertNotIn("请先补全省份、科类和分数", chat_page)
 
         self.assertIn("if (!isProfileComplete(loadUserProfile()))", use_chat)
-        self.assertIn("请先补全省份、科类和分数", use_chat)
+        self.assertIn("请先补充基础资料", use_chat)
+
+    def test_home_page_uses_light_parent_planning_workbench(self):
+        home = (ROOT / "gaokao-miniprogram" / "src" / "pages" / "index" / "index.vue").read_text(encoding="utf-8")
+
+        self.assertIn("规划进度", home)
+        self.assertIn("成绩/预估成绩", home)
+        self.assertIn("提前规划", home)
+        self.assertIn("预估分数区间", home)
+        self.assertIn("无分数看专业规划，有分数看院校定位", home)
+        self.assertIn("selectPlanningMode", home)
+        self.assertIn("selectScoreType", home)
+        self.assertNotIn("progress-card.ready", home)
+        self.assertNotIn("请补全省份、科类和分数", home)
 
     def test_candidate_questions_are_anchored_below_ai_replies(self):
         chat_page = (ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "chat.vue").read_text(encoding="utf-8")
@@ -394,6 +459,10 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
         self.assertIn("const profileInputsKey = getProfileInputsKey(profileInputs)", use_chat)
         self.assertIn("chatStore.conversationId = ''", use_chat)
         self.assertIn("chatStore.setProfileInputsKey(profileInputsKey)", use_chat)
+        self.assertIn("planning_mode: inputs.planning_mode || ''", use_chat)
+        self.assertIn("score_type: inputs.score_type || ''", use_chat)
+        self.assertIn("score_range: inputs.score_range || ''", use_chat)
+        self.assertIn("report_mode: inputs.report_mode || ''", use_chat)
         self.assertIn("family_resources: inputs.family_resources || ''", use_chat)
         self.assertIn("career_goal: inputs.career_goal || ''", use_chat)
 
@@ -585,6 +654,11 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
         assert.deepEqual(saved, {{
           province: '广东',
           category: '物理类',
+          planning_mode: 'score',
+          score_type: 'official',
+          score_range: '',
+          grade: '',
+          identity: '',
           score: 600,
           rank: 32000,
           family_resources: '',

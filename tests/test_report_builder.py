@@ -305,6 +305,54 @@ class ReportBuilderTests(unittest.TestCase):
             path.write_text(script, encoding="utf-8")
             subprocess.run(["node", str(path)], check=True, capture_output=True, text=True)
 
+    def test_report_prompt_branches_by_score_state(self):
+        script = textwrap.dedent(f"""
+            const assert = require('node:assert/strict')
+            const buildPrompt = require('{ROOT / "gaokao-proxy" / "lib" / "prompts" / "report-template.js"}')
+
+            assert.equal(buildPrompt.classifyReportMode({{ province: '广东', category: '物理类', score: 600 }}), 'official')
+            assert.equal(buildPrompt.classifyReportMode({{ province: '广东', category: '物理类', planning_mode: 'score', score_type: 'estimated', score: 560 }}), 'estimated')
+            assert.equal(buildPrompt.classifyReportMode({{ province: '广东', category: '物理类', planning_mode: 'early' }}), 'planning')
+
+            const officialPrompt = buildPrompt(
+              {{ province: '广东', category: '物理类', score: 600 }},
+              [],
+              [],
+              {{ recommendations: [{{ school_name: '中山大学', min_score: 600 }}], reports: [] }},
+              {{}}
+            )
+            assert.equal(officialPrompt.includes('2025 年结构化冲稳保候选池'), true)
+            assert.equal(officialPrompt.includes('Tab 5 可围绕候选池学校做院校定位'), true)
+
+            const estimatedPrompt = buildPrompt(
+              {{ province: '广东', category: '物理类', planning_mode: 'score', score_type: 'estimated', score: 560 }},
+              [],
+              [],
+              {{ recommendations: [], reports: [] }},
+              {{}}
+            )
+            assert.equal(estimatedPrompt.includes('预估分数'), true)
+            assert.equal(estimatedPrompt.includes('不是分数预测产品'), true)
+            assert.equal(estimatedPrompt.includes('不要反复用校准提醒打断报告'), true)
+            assert.equal(estimatedPrompt.includes('专业适配、孩子画像、家庭约束'), true)
+
+            const planningPrompt = buildPrompt(
+              {{ province: '广东', category: '物理类', planning_mode: 'early', grade: '高二', identity: '家长' }},
+              [],
+              [],
+              {{ recommendations: [], reports: [] }},
+              {{}}
+            )
+            assert.equal(planningPrompt.includes('出分后、家长和考生集中填报志愿的关键阶段'), false)
+            assert.equal(planningPrompt.includes('院校层次认知与后续校准策略'), true)
+            assert.equal(planningPrompt.includes('严禁输出精确冲稳保院校排序'), true)
+          """)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "prompt-mode-test.js"
+            path.write_text(script, encoding="utf-8")
+            subprocess.run(["node", str(path)], check=True, capture_output=True, text=True)
+
     def test_pdf_generator_runtime_style_uses_print_layout_v4(self):
         text = self.read("gaokao-proxy/lib/pdf-generator.js")
 

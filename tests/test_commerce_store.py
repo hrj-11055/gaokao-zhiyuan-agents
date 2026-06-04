@@ -155,6 +155,53 @@ class CommerceStoreTests(unittest.TestCase):
             assert.equal(status.source, 'payment')
         """)
 
+    def test_wechat_user_stores_session_key_for_virtual_payment_signature(self):
+        self.run_node_test("""
+            const user = store.upsertWechatUser({
+              openid: 'openid-session-key',
+              sessionKey: 'session-key-v1',
+            })
+            assert.equal(store.getUser(user.userId).sessionKey, 'session-key-v1')
+
+            const updated = store.upsertWechatUser({
+              openid: 'openid-session-key',
+              sessionKey: 'session-key-v2',
+            })
+            assert.equal(updated.userId, user.userId)
+            assert.equal(store.getUser(user.userId).sessionKey, 'session-key-v2')
+        """)
+
+    def test_profile_modes_are_saved_for_score_and_early_planning(self):
+        self.run_node_test("""
+            const user = store.upsertWechatUser({ openid: 'openid-profile-modes' })
+
+            const earlyProfile = store.saveProfile(user.userId, {
+              province: '广东',
+              category: '物理类',
+              planning_mode: 'early',
+              grade: '高二',
+              identity: '家长',
+              score_range: '520-560'
+            })
+            assert.equal(earlyProfile.planning_mode, 'early')
+            assert.equal(earlyProfile.score_type, '')
+            assert.equal(earlyProfile.score, '')
+            assert.equal(earlyProfile.score_range, '520-560')
+            assert.equal(earlyProfile.grade, '高二')
+            assert.equal(earlyProfile.identity, '家长')
+
+            const estimatedProfile = store.saveProfile(user.userId, {
+              province: '广东',
+              category: '物理类',
+              planning_mode: 'score',
+              score_type: 'estimated',
+              score: 560
+            })
+            assert.equal(estimatedProfile.planning_mode, 'score')
+            assert.equal(estimatedProfile.score_type, 'estimated')
+            assert.equal(estimatedProfile.score, 560)
+        """)
+
     def test_payment_notify_rejects_amount_mismatch_without_unlocking(self):
         self.run_node_test("""
             const user = store.upsertWechatUser({ openid: 'openid-amount-mismatch' })

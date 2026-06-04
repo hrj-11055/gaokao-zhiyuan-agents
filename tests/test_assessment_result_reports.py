@@ -48,6 +48,19 @@ class AssessmentResultReportTests(unittest.TestCase):
         self.assertNotIn("getMajorDesc", text)
         self.assertNotIn("热门专业方向", text)
 
+    def test_assessment_result_pages_have_light_next_step_bars(self):
+        mbti = self.read("gaokao-miniprogram/src/pages/mbti/mbti-result.vue")
+        holland = self.read("gaokao-miniprogram/src/pages/holland/holland-result.vue")
+
+        for text in [mbti, holland]:
+            self.assertIn("next-step-bar", text)
+            self.assertIn("下一步", text)
+            self.assertIn("goNextStep", text)
+            self.assertIn("/pages/report/report", text)
+
+        self.assertIn("/pages/holland/holland", mbti)
+        self.assertIn("/pages/mbti/mbti", holland)
+
     def test_user_facing_personality_test_label_hides_mbti(self):
         user_facing_files = [
             "gaokao-miniprogram/src/pages.json",

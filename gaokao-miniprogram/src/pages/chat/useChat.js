@@ -25,6 +25,12 @@ function getProfileInputsKey(inputs) {
   return JSON.stringify({
     province: inputs.province || '',
     category: inputs.category || '',
+    planning_mode: inputs.planning_mode || '',
+    score_type: inputs.score_type || '',
+    score_range: inputs.score_range || '',
+    grade: inputs.grade || '',
+    identity: inputs.identity || '',
+    report_mode: inputs.report_mode || '',
     score: inputs.score || '',
     rank: inputs.rank || '',
     family_resources: inputs.family_resources || '',
@@ -287,7 +293,7 @@ export function useChat() {
     const text = inputText.value.trim()
     if (!text || isStreaming.value) return
     if (!isProfileComplete(loadUserProfile())) {
-      uni.showToast({ title: '请先补全省份、科类和分数', icon: 'none' })
+      uni.showToast({ title: '请先补充基础资料', icon: 'none' })
       return
     }
     sendQuery(text, callbacks)

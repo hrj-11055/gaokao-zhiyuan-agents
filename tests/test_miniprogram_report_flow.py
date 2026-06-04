@@ -64,8 +64,18 @@ class MiniprogramReportFlowTests(unittest.TestCase):
             self.assertNotIn("/pages/questionnaire/questionnaire", text)
             self.assertNotIn("3 项测评", text)
 
-        self.assertIn("{{ completedAssessments }} / 2 项测评已完成", report_page)
+        self.assertIn("{{ completedSteps }} / 4 步已完成", report_page)
         self.assertIn("{{ completedCount }} / 2 项已完成", assessments_page)
+
+    def test_report_page_labels_match_profile_report_modes(self):
+        report_page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
+
+        self.assertIn("reportModeLabel", report_page)
+        self.assertIn("专业规划报告", report_page)
+        self.assertIn("预估定位报告", report_page)
+        self.assertIn("院校定位报告", report_page)
+        self.assertIn("completedSteps", report_page)
+        self.assertIn("getProfileReportMode", report_page)
 
     def test_major_insights_extractor_reads_courses_abilities_and_salary(self):
         script = textwrap.dedent(f"""
