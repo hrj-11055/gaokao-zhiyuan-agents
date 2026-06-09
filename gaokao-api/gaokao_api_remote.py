@@ -24,10 +24,14 @@
 """
 
 import os
+import sys
 import psycopg2
 from functools import wraps
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+
+sys.path.insert(0, os.path.dirname(__file__))
+from recommendation_context import build_recommendation_context, resolve_recommendation_query
 
 app = Flask(__name__)
 CORS(app)
@@ -475,6 +479,59 @@ def score_match():
         "稳": stable[:limit],
         "保": safe[:limit],
     })
+
+
+@app.route("/api/scores/recommendation-context")
+def recommendation_context():
+    """统一提供给 AI 咨询和综合报告的院校候选池。"""
+    province = request.args.get("province", "")
+    requested_category = request.args.get("category", "")
+    year = request.args.get("year", 2025, type=int)
+    limit = min(request.args.get("limit_per_tier", request.args.get("limit", 10), type=int), 30)
+    query_info = resolve_recommendation_query(request.args)
+
+    if not province or not requested_category or not query_info.get("score"):
+        return jsonify({"error": "province, category, score or score_range are required"}), 400
+
+    province_clean = normalize_province_name(province)
+    category = normalize_score_category(province_clean, requested_category)
+    category_aliases = score_category_aliases(province_clean, category)
+    category_placeholders = ",".join(["%s"] * len(category_aliases))
+    query_info.update({
+        "province": province,
+        "category": requested_category,
+        "query_category": category,
+        "year": year,
+    })
+    position_condition = "s.min_score BETWEEN %s AND %s"
+    position_params = [query_info["score"] - 45, query_info["score"] + 45]
+    if query_info.get("rank"):
+        position_condition = f"({position_condition} OR s.min_rank BETWEEN %s AND %s)"
+        position_params.extend([
+            round(query_info["rank"] * 0.7),
+            round(query_info["rank"] * 1.5),
+        ])
+
+    rows = query("""
+        SELECT s.id AS source_record_id, s.school_name, s.major_name, s.category, s.batch, s.min_score,
+               s.min_rank, s.avg_score, s.year
+        FROM scores s
+        WHERE s.province_name = %s
+          AND s.year = %s
+          AND s.category IN ({category_placeholders})
+          AND s.min_score IS NOT NULL
+          AND {position_condition}
+        ORDER BY s.min_score DESC
+        LIMIT 5000
+    """.format(
+        category_placeholders=category_placeholders,
+        position_condition=position_condition,
+    ), [
+        province_clean,
+        year,
+    ] + category_aliases + position_params)
+
+    return jsonify(build_recommendation_context(rows, query_info, limit))
 
 
 @app.route("/api/scores/recommend")

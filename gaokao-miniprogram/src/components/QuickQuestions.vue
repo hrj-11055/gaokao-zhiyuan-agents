@@ -24,7 +24,7 @@
 
     <view class="guide-strip">
       <text class="guide-strip-title">真心话</text>
-      <text class="guide-strip-copy">先问风险，再问学校；先看位次，再谈冲稳保。</text>
+      <text class="guide-strip-copy">{{ guideStripCopy }}</text>
     </view>
   </view>
 </template>
@@ -41,9 +41,17 @@ const props = defineProps({
   }
 })
 
+const isEarlyPlanning = computed(() => (
+  props.profile?.planning_mode === 'early' || props.profile?.report_mode === 'planning'
+))
+
 const profileLine = computed(() => {
   const province = props.profile?.province || '你的省份'
   const category = props.profile?.category || '科类'
+  if (isEarlyPlanning.value) {
+    const stage = props.profile?.grade || '提前规划'
+    return `${province} · ${category} · ${stage}`
+  }
   const score = props.profile?.score ? `${props.profile.score}分` : '分数'
   const rank = props.profile?.rank ? `，位次${props.profile.rank}` : ''
   return `${province} · ${category} · ${score}${rank}`
@@ -52,6 +60,44 @@ const profileLine = computed(() => {
 const guideCards = computed(() => {
   const province = props.profile?.province || '广东'
   const category = props.profile?.category || '物理类'
+  if (isEarlyPlanning.value) {
+    const stage = props.profile?.grade || '高一/高二'
+    const base = `${province}${category}${stage}`
+    return [
+      {
+        key: 'planning-map',
+        tone: 'blue',
+        badge: '01',
+        label: '升学规划',
+        copy: '先明确未来一年最值得验证的方向和任务。',
+        prompt: `我是${base}家长，请帮我做提前升学规划，告诉我现在最该验证什么。`
+      },
+      {
+        key: 'major-explore',
+        tone: 'amber',
+        badge: '02',
+        label: '专业探索',
+        copy: '先找到值得深入了解和需要谨慎的专业方向。',
+        prompt: `结合${category}，哪些专业方向值得优先探索，哪些方向要谨慎？`
+      },
+      {
+        key: 'ability-path',
+        tone: 'green',
+        badge: '03',
+        label: '能力路径',
+        copy: '把学科能力、实践经历和探索任务排出优先级。',
+        prompt: '未来一年应该重点补哪些学科能力、实践经历和信息搜集任务？'
+      },
+      {
+        key: 'parent-actions',
+        tone: 'slate',
+        badge: '04',
+        label: '家长行动',
+        copy: '帮助孩子探索，但不替孩子做决定。',
+        prompt: '家长现在应该怎样帮助孩子做专业探索，又避免替孩子做决定？'
+      }
+    ]
+  }
   const score = props.profile?.score || '580'
   const rankPart = props.profile?.rank ? `，位次${props.profile.rank}` : ''
   const base = `${province}${category}${score}分${rankPart}`
@@ -91,6 +137,12 @@ const guideCards = computed(() => {
     }
   ]
 })
+
+const guideStripCopy = computed(() => (
+  isEarlyPlanning.value
+    ? '先认识孩子，再看专业方向；先做探索，再谈未来院校层次。'
+    : '先问风险，再问学校；先看位次，再谈冲稳保。'
+))
 </script>
 
 <style lang="scss" scoped>

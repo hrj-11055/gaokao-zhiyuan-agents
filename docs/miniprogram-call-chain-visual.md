@@ -2,7 +2,7 @@
 
 > 适用范围：`gaokao-miniprogram`、`gaokao-proxy`、Dify、分数线 API、报告 PostgreSQL/SQLite 数据。
 > 核心结论：小程序不直接访问 Dify 和数据库；所有业务请求先进入后端网关，再由网关决定转发 Dify、查 PostgreSQL/SQLite、调用微信服务、调用 DeepSeek 或读取静态报告。
-> 本次公开接口校验：`https://gaokao.aicoming.cn/api/health` 返回 `{"status":"ok"}`；公开综合报告 PDF 返回 `application/pdf`；会员 token 下深度 PDF 返回 `application/pdf`；`http://159.75.110.157/v1` 返回 Dify `X-Version: 1.13.3`、`X-Env: PRODUCTION`。
+> 本次公开接口校验：`https://gaokao.aicoming.cn/api/health` 返回 `{"status":"ok"}`；公开综合报告 PDF 返回 `application/pdf`；1.3.0 免费开关下，登录 token 可下载深度 PDF；`http://159.75.110.157/v1` 返回 Dify `X-Version: 1.13.3`、`X-Env: PRODUCTION`。
 
 ## 1. 当前线上拓扑
 
@@ -243,8 +243,9 @@ gaokao-api 对外暴露的核心接口：
 |---|---|---|---|
 | `GET /api/health` | 运维/健康检查 | 无 | `{ status, records/database }` |
 | `GET /api/stats` | 数据检查 | 无 | 总记录数、学校数、年份数、省份数 |
-| `GET /api/scores/match` | Dify 工具 `score_match` | `province, score, category, year, limit` | `冲/稳/保` 三档学校 |
-| `GET /api/scores/recommend` | 综合报告生成 | `province, score, category, year, limit` | `recommendations[]`，含 `tier` |
+| `GET /api/scores/recommendation-context` | AI 咨询 + 综合报告生成 | `province, category, year, mode, score?, rank?, score_range?, limit_per_tier?` | 统一候选池；高三返回正式冲稳保，高一高二返回预估院校层次参考 |
+| `GET /api/scores/match` | 旧 Dify 工具 `score_match` | `province, score, category, year, limit` | 兼容旧调用的冲/稳/保三档学校 |
+| `GET /api/scores/recommend` | 旧综合报告链路 | `province, score, category, year, limit` | 兼容旧调用的 `recommendations[]` |
 | `GET /api/scores/schools/:school/provinces/:province` | Dify 工具 `school_scores` | `school_name, province, year` | 该校在该省专业录取线 |
 | `GET /api/scores/majors/:keyword` | 专业分数查询 | `keyword, province?, year?, limit?` | 匹配专业的学校/分数线 |
 
@@ -266,7 +267,7 @@ sequenceDiagram
   Proxy->>Proxy: 校验 MBTI completed\nHolland completed
   Proxy->>Proxy: 检查 10 分钟冷却
   Proxy->>Pg: fetchMajorReports({})\n五环旧数据不参与
-  Proxy->>Score: /api/scores/recommend
+  Proxy->>Score: /api/scores/recommendation-context
   Proxy->>Pg: fetchUnivReports(profile)
   Proxy->>Dify: /v1/messages?conversation_id=...
   Proxy->>DeepSeek: chat/completions\n生成完整 HTML
@@ -402,7 +403,7 @@ erDiagram
 | 报告查询 | `GET /api/reports/*` | 查询 majors/universities/stats | PostgreSQL | 报告 JSON |
 | 专业组合洞察 | `GET /api/reports/major-insights` | 按专业名称聚合结构化信息 | PostgreSQL | `data[]` |
 | 深度在线阅读 | `POST /api/reports/deep/view-token` -> `GET /reports/deep/view/:token` | 免费生成短期签名链接并渲染 HTML 阅读器 | PostgreSQL、HTML 渲染器 | 可搜索 HTML |
-| 深度 PDF | `GET /api/reports/deep/pdf` | 会员/额度校验，生成学校或专业 PDF | SQLite、PostgreSQL、PDF 生成器 | `application/pdf` |
+| 深度 PDF | `GET /api/reports/deep/pdf` | 登录校验；1.3.0 免费开关关闭后恢复会员/额度校验；生成学校或专业 PDF | SQLite、PostgreSQL、PDF 生成器 | `application/pdf` |
 
 ## 6. 关键运行时事实与注意点
 
@@ -410,7 +411,7 @@ erDiagram
 2. `159.75.110.157` 是 Dify、Dify 依赖栈、`gaokao-api` 与报告 PostgreSQL 数据的核心服务器。
 3. 47 的 `gaokao-proxy` 会把 `/api/chat` 和 `/api/chat/stream` 转发到 `${DIFY_API_URL}/v1/chat-messages`；因此 `DIFY_API_URL` 不应重复带 `/v1`。
 4. 报告生成依赖多段链路：会员状态、测评完整性、PostgreSQL、分数 API、Dify 历史消息、DeepSeek。排障时应先判断失败发生在哪一段。
-5. 深度报告在线阅读用短期签名链接，不消耗 PDF 下载额度；PDF 下载仍消耗 `MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT`。
+5. 深度报告在线阅读用短期签名链接；1.3.0 免费开关下，登录后下载 PDF 也不消耗 `MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT`。
 6. 分数 API 的 live 入口是 159 Nginx 反代 `http://159.75.110.157/score-api`；直接公开访问 `:5000` 或 `:5001` 失败时，不等于 47 到分数 API 链路失败。
 
 ## 7. 排障入口图

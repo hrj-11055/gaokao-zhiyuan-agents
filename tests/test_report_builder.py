@@ -26,7 +26,9 @@ class ReportBuilderTests(unittest.TestCase):
                       getReportQualityIssues,
                       humanizeReportCopy,
                       normalizeReportHtml,
+                      requestDeepSeekJson,
                       renderReadableText,
+                      sanitizeReportAdmissionData,
                     }} = require('{ROOT / "gaokao-proxy" / "lib" / "report-builder.js"}')
 
                     {test_body}
@@ -88,6 +90,68 @@ class ReportBuilderTests(unittest.TestCase):
             const html2 = buildFinalHtml(JSON.stringify(data), { province: '广东' }, {})
             assert.equal(html2.includes('结论一'), true)
         """)
+
+    def test_deepseek_timeout_retries_flash_model(self):
+        self.run_node_test(r"""
+            const calls = []
+            global.fetch = async (_url, options) => {
+              const body = JSON.parse(options.body)
+              calls.push(body.model)
+              if (calls.length === 1) {
+                const err = new Error('The operation was aborted due to timeout')
+                err.name = 'TimeoutError'
+                throw err
+              }
+              return {
+                ok: true,
+                json: async () => ({
+                  choices: [{ message: { content: '{"ok":true}' }, finish_reason: 'stop' }]
+                })
+              }
+            }
+
+            ;(async () => {
+              const content = await requestDeepSeekJson('请输出合法 JSON')
+              assert.equal(content, '{"ok":true}')
+              assert.deepEqual(calls, ['deepseek-v4-flash', 'deepseek-v4-flash'])
+            })().catch((err) => {
+              console.error(err)
+              process.exitCode = 1
+            })
+        """)
+
+    def test_deepseek_bad_request_does_not_fall_back(self):
+        self.run_node_test(r"""
+            const calls = []
+            global.fetch = async (_url, options) => {
+              const body = JSON.parse(options.body)
+              calls.push(body.model)
+              return {
+                ok: false,
+                status: 400,
+                text: async () => '{"error":{"message":"bad prompt"}}'
+              }
+            }
+
+            ;(async () => {
+              await assert.rejects(
+                () => requestDeepSeekJson('请输出合法 JSON'),
+                /DeepSeek API error 400/
+              )
+              assert.deepEqual(calls, ['deepseek-v4-flash'])
+            })().catch((err) => {
+              console.error(err)
+              process.exitCode = 1
+            })
+        """)
+
+    def test_report_generation_uses_report_specific_flash_model(self):
+        builder = self.read("gaokao-proxy/lib/report-builder.js")
+
+        self.assertIn("REPORT_DEEPSEEK_MODEL", builder)
+        self.assertIn("deepseek-v4-flash", builder)
+        self.assertNotIn("deepseek-v4-pro", builder)
+        self.assertNotIn("process.env.DEEPSEEK_MODEL", builder)
 
     def test_holland_radar_scales_basic_results_to_basic_max_score(self):
         self.run_node_test(r"""
@@ -313,6 +377,7 @@ class ReportBuilderTests(unittest.TestCase):
             assert.equal(buildPrompt.classifyReportMode({{ province: '广东', category: '物理类', score: 600 }}), 'official')
             assert.equal(buildPrompt.classifyReportMode({{ province: '广东', category: '物理类', planning_mode: 'score', score_type: 'estimated', score: 560 }}), 'estimated')
             assert.equal(buildPrompt.classifyReportMode({{ province: '广东', category: '物理类', planning_mode: 'early' }}), 'planning')
+            assert.equal(buildPrompt.classifyReportMode({{ province: '广东', category: '物理类', planning_mode: 'early', score: 560 }}), 'planning')
 
             const officialPrompt = buildPrompt(
               {{ province: '广东', category: '物理类', score: 600 }},
@@ -344,14 +409,102 @@ class ReportBuilderTests(unittest.TestCase):
               {{}}
             )
             assert.equal(planningPrompt.includes('出分后、家长和考生集中填报志愿的关键阶段'), false)
+            assert.equal(planningPrompt.includes('专业升学规划顾问'), true)
+            assert.equal(planningPrompt.includes('你是一位专业的高考志愿填报顾问'), false)
             assert.equal(planningPrompt.includes('院校层次认知与后续校准策略'), true)
             assert.equal(planningPrompt.includes('严禁输出精确冲稳保院校排序'), true)
+
+            const planningRangePrompt = buildPrompt(
+              {{ province: '广东', category: '物理类', planning_mode: 'early', grade: '高二', score_range: '540-570' }},
+              [],
+              [],
+              {{
+                recommendations: [{{
+                  bucket: '稳',
+                  school_name: '目标层次大学',
+                  major_name: '计算机类',
+                  min_score: 555,
+                  year: 2025
+                }}],
+                reports: []
+              }},
+              {{}}
+            )
+            assert.equal(planningRangePrompt.includes('按用户预估分数或分数区间生成'), true)
+            assert.equal(planningRangePrompt.includes('目标层次大学'), true)
+            assert.equal(planningRangePrompt.includes('不能作为正式冲稳保志愿推荐'), true)
           """)
 
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "prompt-mode-test.js"
             path.write_text(script, encoding="utf-8")
             subprocess.run(["node", str(path)], check=True, capture_output=True, text=True)
+
+    def test_report_prompt_prioritizes_2024_2025_admission_data(self):
+        script = textwrap.dedent(f"""
+            const assert = require('node:assert/strict')
+            const buildPrompt = require('{ROOT / "gaokao-proxy" / "lib" / "prompts" / "report-template.js"}')
+
+            const prompt = buildPrompt(
+              {{ province: '广东', category: '物理类', planning_mode: 'early', grade: '高二', identity: '家长' }},
+              [],
+              [],
+              {{
+                recommendations: [],
+                reports: [
+                  '2023 年录取数据：某大学最低分 580 分。',
+                  '2025 年录取数据：某大学最低分 602 分。'
+                ]
+              }},
+              {{}}
+            )
+
+            assert.equal(prompt.includes('录取数据只允许优先使用 2024-2025 年'), true)
+            assert.equal(prompt.includes('2025 年录取数据：某大学最低分 602 分。'), true)
+            assert.equal(prompt.includes('2023 年录取数据：某大学最低分 580 分。'), false)
+            assert.equal(prompt.includes('2023、2024 年数据可辅助判断波动趋势'), false)
+          """)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "prompt-admission-freshness-test.js"
+            path.write_text(script, encoding="utf-8")
+            subprocess.run(["node", str(path)], check=True, capture_output=True, text=True)
+
+    def test_report_output_removes_2023_admission_data_but_keeps_other_facts(self):
+        self.run_node_test(r"""
+            const data = {
+              conclusions: [
+                '根据2023年录取数据，这所学校最低分580分。',
+                '2025年录取数据更适合作为当前参考。'
+              ],
+              modules: [{
+                id: 'tab5',
+                title: '大学深度研究',
+                summary: '学校在2023年新建实验室。2023年最低录取分580分，位次30000。2025年最低录取分602分。',
+                blocks: [
+                  {
+                    type: 'table',
+                    title: '历年录取分数线',
+                    headers: ['年份', '最低分', '位次'],
+                    rows: [
+                      ['2023', '580', '30000'],
+                      ['2024', '595', '25000'],
+                      ['2025', '602', '22000']
+                    ]
+                  }
+                ]
+              }]
+            }
+
+            const sanitized = sanitizeReportAdmissionData(data)
+            const text = JSON.stringify(sanitized)
+
+            assert.equal(text.includes('2023年最低录取分580分'), false)
+            assert.equal(text.includes('["2023","580","30000"]'), false)
+            assert.equal(text.includes('学校在2023年新建实验室'), true)
+            assert.equal(text.includes('2025年最低录取分602分'), true)
+            assert.equal(text.includes('["2024","595","25000"]'), true)
+          """)
 
     def test_pdf_generator_runtime_style_uses_print_layout_v4(self):
         text = self.read("gaokao-proxy/lib/pdf-generator.js")

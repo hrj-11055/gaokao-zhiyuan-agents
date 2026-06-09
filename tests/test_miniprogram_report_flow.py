@@ -21,7 +21,7 @@ class MiniprogramReportFlowTests(unittest.TestCase):
         self.assertIn("Boolean(report.value?.url)", progress)
         self.assertIn("if (reportDone.value) return StepStatus.DONE", progress)
         self.assertNotIn("if (membershipStore.isActive) return StepStatus.DONE", index)
-        self.assertIn("会员特权已解锁，一键生成", index)
+        self.assertIn("深度报告已开放，一键生成", index)
 
     def test_report_generation_submits_stored_assessments_and_bearer_token(self):
         page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
@@ -77,6 +77,25 @@ class MiniprogramReportFlowTests(unittest.TestCase):
         self.assertIn("completedSteps", report_page)
         self.assertIn("getProfileReportMode", report_page)
 
+    def test_home_has_deep_report_shortcuts_for_universities_and_majors(self):
+        index_page = self.read("gaokao-miniprogram/src/pages/index/index.vue")
+
+        for text in [
+            "深度报告库",
+            "院校深度报告",
+            "看清学校定位、王牌专业与毕业出路",
+            "专业深度报告",
+            "判断专业前景、适合人群与报考风险",
+        ]:
+            self.assertIn(text, index_page)
+
+        self.assertIn("goDeepReport('university')", index_page)
+        self.assertIn("goDeepReport('major')", index_page)
+        self.assertIn(
+            "/pages/deep-report-download/deep-report-download?mode=${encodeURIComponent(mode)}",
+            index_page,
+        )
+
     def test_major_insights_extractor_reads_courses_abilities_and_salary(self):
         script = textwrap.dedent(f"""
             const assert = require('node:assert/strict')
@@ -125,6 +144,56 @@ class MiniprogramReportFlowTests(unittest.TestCase):
         page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
         self.assertIn("err.statusCode === 429", page)
         self.assertIn("isCooldown", page)
+
+    def test_report_generation_polls_pregeneration_before_long_request(self):
+        page = self.read("gaokao-miniprogram/src/pages/report/report.vue")
+        pregen_composable = self.read("gaokao-miniprogram/src/composables/useReportPregen.js")
+        pregen_api = self.read("gaokao-miniprogram/src/api/pregenerate.js")
+        helper_path = ROOT / "gaokao-miniprogram/src/utils/report-pregen-wait.js"
+
+        self.assertTrue(helper_path.exists(), "report pre-generation polling helper is required")
+        helper = helper_path.read_text(encoding="utf-8")
+
+        self.assertIn("tryTriggerPregenerate({ force: true })", page)
+        self.assertIn("waitForPregeneratedReport", page)
+        self.assertIn("force = false", pregen_composable)
+        self.assertIn("!force && lastFingerprint === fingerprint", pregen_composable)
+        self.assertIn("/api/report/pre-generate/status?t=${Date.now()}", pregen_api)
+        self.assertIn("async function claimPregeneratedReport()", page)
+        self.assertGreaterEqual(page.count("await claimPregeneratedReport()"), 2)
+        save_helper = page.split("function saveGeneratedReportResult", 1)[1].split(
+            "async function claimPregeneratedReport", 1
+        )[0]
+        self.assertIn("isFakeProgressActive.value = false", save_helper)
+
+        script = textwrap.dedent(f"""
+            const fs = require('node:fs')
+            const assert = require('node:assert/strict')
+            const source = fs.readFileSync({str(helper_path)!r}, 'utf8')
+            const moduleUrl = `data:text/javascript;base64,${{Buffer.from(source).toString('base64')}}`
+
+            ;(async () => {{
+              const {{ waitForPregeneratedReport }} = await import(moduleUrl)
+              const statuses = [
+                {{ status: 'pending' }},
+                {{ status: 'pending' }},
+                {{ status: 'ready', url: 'https://example.com/report.html', completedAt: 123 }},
+              ]
+              const result = await waitForPregeneratedReport({{
+                checkStatus: async () => statuses.shift(),
+                intervalMs: 0,
+                timeoutMs: 1000,
+                sleep: async () => {{}},
+              }})
+
+              assert.equal(result.url, 'https://example.com/report.html')
+              assert.equal(statuses.length, 0)
+            }})().catch((err) => {{
+              console.error(err)
+              process.exitCode = 1
+            }})
+        """)
+        subprocess.run(["node", "-e", script], check=True, capture_output=True, text=True)
 
 
 if __name__ == "__main__":

@@ -7,8 +7,11 @@ const { fetchMajorReports, fetchUnivReports, fetchDifyMessages } = require('./da
 
 const REPORTS_DIR = process.env.REPORTS_DIR || path.join(__dirname, '../reports')
 const REPORT_DRAFTS_DIR = process.env.REPORT_DRAFTS_DIR || path.join(REPORTS_DIR, 'drafts')
-const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-v4-pro'
+const REPORT_DEEPSEEK_MODEL = process.env.REPORT_DEEPSEEK_MODEL || 'deepseek-v4-flash'
+const REPORT_MAX_TOKENS = Number(process.env.REPORT_MAX_TOKENS || 16384)
 const REPORT_GENERATION_TIMEOUT_MS = Number(process.env.REPORT_GENERATION_TIMEOUT_MS || 600000)
+const REPORT_PRIMARY_TIMEOUT_MS = Number(process.env.REPORT_PRIMARY_TIMEOUT_MS || Math.min(REPORT_GENERATION_TIMEOUT_MS, 180000))
+const REPORT_RETRY_TIMEOUT_MS = Number(process.env.REPORT_RETRY_TIMEOUT_MS || Math.max(1000, REPORT_GENERATION_TIMEOUT_MS - REPORT_PRIMARY_TIMEOUT_MS))
 const MIN_MODULE_CONTENT_CHARS = Number(process.env.REPORT_MIN_MODULE_CONTENT_CHARS || 1000)
 const REPORT_AUTO_EXPAND_SHORT_MODULES = process.env.REPORT_AUTO_EXPAND_SHORT_MODULES === 'true'
 const REPORT_ENFORCE_MODULE_LENGTH = process.env.REPORT_ENFORCE_MODULE_LENGTH === 'true'
@@ -35,7 +38,7 @@ async function generateReport({
 
   try {
     const content = await requestDeepSeekJson(prompt)
-    let reportData = extractJsonFromContent(content)
+    let reportData = sanitizeReportAdmissionData(extractJsonFromContent(content))
     let qualityIssues = getReportQualityIssues(reportData)
 
     if (qualityIssues.length > 0) {
@@ -45,7 +48,7 @@ async function generateReport({
     if (qualityIssues.length > 0 && REPORT_AUTO_EXPAND_SHORT_MODULES && !skipExpansion) {
       console.warn('Requesting report module expansion')
       const expandedContent = await requestDeepSeekJson(buildReportExpansionPrompt(reportData, qualityIssues))
-      reportData = extractJsonFromContent(expandedContent)
+      reportData = sanitizeReportAdmissionData(extractJsonFromContent(expandedContent))
       qualityIssues = getReportQualityIssues(reportData)
     }
 
@@ -66,34 +69,106 @@ async function generateReport({
 }
 
 async function requestDeepSeekJson(prompt) {
-  const res = await fetch('https://api.deepseek.com/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
-    },
-    body: JSON.stringify({
-      model: DEEPSEEK_MODEL,
-      messages: [{ role: 'user', content: prompt }],
-      max_tokens: 32768,
-      temperature: 0.7,
-      response_format: { type: 'json_object' }
-    }),
-    signal: AbortSignal.timeout(REPORT_GENERATION_TIMEOUT_MS),
-  })
+  try {
+    return await requestDeepSeekJsonFromModel(prompt, {
+      model: REPORT_DEEPSEEK_MODEL,
+      timeoutMs: REPORT_PRIMARY_TIMEOUT_MS,
+      attempt: 'primary',
+    })
+  } catch (err) {
+    if (!shouldRetryDeepSeekModel(err)) {
+      throw err
+    }
+    console.warn('DeepSeek report generation retrying:', JSON.stringify({
+      model: REPORT_DEEPSEEK_MODEL,
+      reason: err.message,
+      elapsedMs: err.elapsedMs,
+    }))
+    return requestDeepSeekJsonFromModel(prompt, {
+      model: REPORT_DEEPSEEK_MODEL,
+      timeoutMs: REPORT_RETRY_TIMEOUT_MS,
+      attempt: 'retry',
+    })
+  }
+}
+
+async function requestDeepSeekJsonFromModel(prompt, { model, timeoutMs, attempt }) {
+  const startedAt = Date.now()
+  console.log('DeepSeek report generation started:', JSON.stringify({
+    attempt,
+    model,
+    promptChars: prompt.length,
+    maxTokens: REPORT_MAX_TOKENS,
+    timeoutMs,
+  }))
+
+  let res
+  try {
+    res = await fetch('https://api.deepseek.com/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
+      },
+      body: JSON.stringify({
+        model,
+        messages: [{ role: 'user', content: prompt }],
+        max_tokens: REPORT_MAX_TOKENS,
+        temperature: 0.7,
+        response_format: { type: 'json_object' }
+      }),
+      signal: AbortSignal.timeout(timeoutMs),
+    })
+  } catch (err) {
+    err.elapsedMs = Date.now() - startedAt
+    console.error('DeepSeek report generation attempt failed:', JSON.stringify({
+      attempt,
+      model,
+      elapsedMs: err.elapsedMs,
+      error: err.message,
+    }))
+    throw err
+  }
 
   if (!res.ok) {
-    const err = await res.text()
-    throw new Error(`DeepSeek API error ${res.status}: ${err.slice(0, 200)}`)
+    const body = await res.text()
+    const err = new Error(`DeepSeek API error ${res.status}: ${body.slice(0, 200)}`)
+    err.statusCode = res.status
+    err.elapsedMs = Date.now() - startedAt
+    console.error('DeepSeek report generation attempt failed:', JSON.stringify({
+      attempt,
+      model,
+      statusCode: res.status,
+      elapsedMs: err.elapsedMs,
+      error: err.message,
+    }))
+    throw err
   }
 
   const data = await res.json()
   const content = data?.choices?.[0]?.message?.content
   if (!content) {
     const reason = data?.choices?.[0]?.finish_reason || 'unknown'
-    throw new Error(`DeepSeek 返回空内容 (finish_reason: ${reason})`)
+    const err = new Error(`DeepSeek 返回空内容 (finish_reason: ${reason})`)
+    err.elapsedMs = Date.now() - startedAt
+    throw err
   }
+
+  console.log('DeepSeek report generation completed:', JSON.stringify({
+    attempt,
+    model,
+    elapsedMs: Date.now() - startedAt,
+    outputChars: content.length,
+    finishReason: data?.choices?.[0]?.finish_reason || 'unknown',
+  }))
   return content
+}
+
+function shouldRetryDeepSeekModel(err) {
+  if (!err) return false
+  if (err.name === 'TimeoutError' || err.name === 'AbortError') return true
+  if (err.statusCode === 429 || err.statusCode >= 500) return true
+  return /timeout|timed out|aborted|fetch failed|network/i.test(err.message || '')
 }
 
 async function saveReport(userId, html) {
@@ -376,6 +451,74 @@ function collectModuleContentText(mod = {}) {
   return parts.join('\n')
 }
 
+const STALE_ADMISSION_YEAR_PATTERN = /2023\s*年?/u
+const ADMISSION_DATA_PATTERN = /录取|分数线|最低分|位次|投档|专业组|招生|冲稳保/u
+
+function stripStaleAdmissionSentences(value = '', context = '') {
+  const text = String(value || '')
+  if (!STALE_ADMISSION_YEAR_PATTERN.test(text)) return text
+
+  const contextIsAdmissionData = ADMISSION_DATA_PATTERN.test(String(context || ''))
+  const parts = text.split(/([。！？；\n]+)/u)
+  let result = ''
+
+  for (let index = 0; index < parts.length; index += 2) {
+    const sentence = parts[index] || ''
+    const separator = parts[index + 1] || ''
+    const isStaleAdmissionSentence = (
+      STALE_ADMISSION_YEAR_PATTERN.test(sentence) &&
+      (contextIsAdmissionData || ADMISSION_DATA_PATTERN.test(sentence))
+    )
+    if (!isStaleAdmissionSentence) {
+      result += sentence + separator
+    }
+  }
+
+  return result.trim()
+}
+
+function sanitizeReportAdmissionData(data = {}) {
+  const sanitized = JSON.parse(JSON.stringify(data || {}))
+  sanitized.conclusions = (Array.isArray(sanitized.conclusions) ? sanitized.conclusions : [])
+    .map((item) => stripStaleAdmissionSentences(item))
+    .filter(Boolean)
+
+  sanitized.modules = (Array.isArray(sanitized.modules) ? sanitized.modules : []).map((mod) => {
+    const moduleContext = mod.title || mod.id || ''
+    if (typeof mod.summary === 'string') {
+      mod.summary = stripStaleAdmissionSentences(mod.summary, moduleContext)
+    }
+
+    mod.blocks = (Array.isArray(mod.blocks) ? mod.blocks : []).map((block) => {
+      const blockContext = [
+        moduleContext,
+        block.title || '',
+        ...(Array.isArray(block.headers) ? block.headers : []),
+      ].join(' ')
+
+      for (const key of ['content', 'text']) {
+        if (typeof block[key] === 'string') {
+          block[key] = stripStaleAdmissionSentences(block[key], blockContext)
+        }
+      }
+      if (Array.isArray(block.items)) {
+        block.items = block.items
+          .map((item) => stripStaleAdmissionSentences(item, blockContext))
+          .filter(Boolean)
+      }
+      if (Array.isArray(block.rows) && ADMISSION_DATA_PATTERN.test(blockContext)) {
+        block.rows = block.rows.filter((row) => !STALE_ADMISSION_YEAR_PATTERN.test(
+          Array.isArray(row) ? row.join(' ') : String(row || '')
+        ))
+      }
+      return block
+    })
+    return mod
+  })
+
+  return sanitized
+}
+
 function getReportQualityIssues(data = {}, minModuleChars = MIN_MODULE_CONTENT_CHARS) {
   const modules = Array.isArray(data.modules) ? data.modules : []
   const requiredIds = ['tab1', 'tab2', 'tab3', 'tab4', 'tab5', 'tab6']
@@ -417,9 +560,10 @@ ${qualityIssues.map((issue) => `- ${issue.id} ${issue.title || ''}：当前 ${is
 扩写要求：
 - 返回完整合法 JSON 对象，必须保留 conclusions 和全部 6 个 modules。
 - 保留原来的 id、title、事实依据、分数线和风险判断，不要编造结构化院校推荐列表之外的学校。
+- 录取分数、位次、投档线和专业组数据只使用 2024-2025 年，禁止重新加入 2023 年录取数据。
 - 只扩写过短模块；已达标模块可以保持原意，但输出时仍要放回完整 JSON。
 - 每个过短模块至少补足 4 个实质分析 blocks，其中至少 2 个 text block 各不少于 250 字。
-- Tab 4 和 Tab 5 也必须作为综合报告正文写足，不要只写 500-800 字摘要；最后仍保留“完整 5000 字以上 PDF 已入库，需要到小程序‘深度报告下载页’付费后选择对应专业/学校下载”的提示。
+- Tab 4 和 Tab 5 也必须作为综合报告正文写足，不要只写 500-800 字摘要；最后仍保留“完整 5000 字以上 PDF 已入库，可到小程序‘深度报告下载页’选择对应专业/学校在线阅读或下载”的提示。
 - 不要生成额外目录页、Table 页、独立表格页或模板代码。
 
 当前 JSON：
@@ -962,7 +1106,9 @@ module.exports = {
   buildHollandRadarSVG,
   countReportContentChars,
   collectModuleContentText,
+  sanitizeReportAdmissionData,
   getReportQualityIssues,
   buildReportExpansionPrompt,
-  buildFinalHtml
+  buildFinalHtml,
+  requestDeepSeekJson,
 }

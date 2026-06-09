@@ -27,9 +27,9 @@ Mini program:
 
 - `gaokao-miniprogram/.env` should use `VITE_API_BASE=https://gaokao.aicoming.cn`.
 - The mini program should call `gaokao.aicoming.cn` through normal HTTPS requests; do not add or re-enable cloud-hosting request branches.
-- For PDF-enabled experience builds, set `VITE_PDF_DOWNLOAD_ENABLED=true`; PDF access is now gated by membership/session state, not by a missing HTTPS domain.
-- VIP report access can be unlocked by 19.9 yuan payment, 5 effective invites, or a configured member invite code.
-- Deep university/major online HTML reading is free and unlimited; deep PDF downloads are VIP-only and count against `MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT`.
+- For PDF-enabled experience builds, set `VITE_PDF_DOWNLOAD_ENABLED=true`.
+- Version 1.3.0 enables free deep reports with `VITE_FREE_DEEP_REPORTS_ENABLED=true` and disables payment UI with `VITE_PAYMENT_ENABLED=false`; payment, invite, and member-code capabilities remain in the codebase for later re-enablement.
+- Deep university/major online HTML reading and authenticated PDF downloads are free in 1.3.0. When `FREE_DEEP_REPORTS_ENABLED=false`, PDF downloads return to membership/quota enforcement.
 - Do not point `VITE_API_BASE` at `159.75.110.157`; 159 is the Dify/data server, not the mini-program gateway.
 
 47 `gaokao-proxy` verified facts:
@@ -41,10 +41,10 @@ Mini program:
 - `GET https://gaokao.aicoming.cn/reports/<file>.html` returns generated HTML.
 - `GET https://gaokao.aicoming.cn/reports/<file>.pdf` returns `application/pdf`; verified with `u_1779266091610_u1ynfoti-1779266155844.pdf`.
 - `GET https://gaokao.aicoming.cn/api/reports/health` returns report-library health with connected Postgres counts.
-- `POST https://gaokao.aicoming.cn/api/reports/deep/view-token` returns a short-lived online HTML reader URL without requiring membership; PDF download remains membership-gated.
-- `GET https://gaokao.aicoming.cn/api/reports/deep/pdf?type=major&id=080901` returns `application/pdf` when called with an active member session token; without a token it correctly returns `401`.
+- `POST https://gaokao.aicoming.cn/api/reports/deep/view-token` returns a short-lived online HTML reader URL without requiring membership.
+- `GET https://gaokao.aicoming.cn/api/reports/deep/pdf?type=major&id=080901` returns `application/pdf` with an authenticated session token while 1.3.0 free access is enabled; without a token it correctly returns `401`.
 - `root@47.113.125.147` is reachable with `/Users/MarkHuang/Downloads/mark123-.pem`.
-- On 47, `/opt/gaokao-proxy/.env` includes `DIFY_API_URL=http://159.75.110.157`, `PORT=3001`, `REPORT_BASE_URL=https://gaokao.aicoming.cn`, and `SCORE_API_URL=http://159.75.110.157/score-api`. Release-blocking envs to keep aligned are `MEMBERSHIP_PRICE_CENTS=1990` and `DEEPSEEK_MODEL=deepseek-v4-pro`.
+- On 47, `/opt/gaokao-proxy/.env` includes `DIFY_API_URL=http://159.75.110.157`, `PORT=3001`, `REPORT_BASE_URL=https://gaokao.aicoming.cn`, and `SCORE_API_URL=http://159.75.110.157/score-api`. Release-blocking envs to keep aligned are `MEMBERSHIP_PRICE_CENTS=1990` and `REPORT_DEEPSEEK_MODEL=deepseek-v4-flash`.
 - PM2 process `gaokao-proxy` runs `/opt/gaokao-proxy/server.js`; Nginx routes `/api/chat`, `/api/report`, and `/reports` to `127.0.0.1:3001`.
 
 159 Dify/data verified facts:

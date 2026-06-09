@@ -181,26 +181,27 @@
         </view>
       </view>
 
-      <view v-if="!isSharedResult" class="next-step-bar" @click="goNextStep">
-        <view class="next-step-copy">
-          <text class="next-step-kicker">下一步</text>
-          <text class="next-step-title">{{ nextStepTitle }}</text>
-          <text class="next-step-desc">{{ nextStepDesc }}</text>
-        </view>
-        <text class="next-step-action">{{ nextStepAction }}</text>
-      </view>
-
       <!-- 底部操作区域 -->
       <view class="footer-bar">
         <view class="footer-blur" />
         <view class="footer-inner">
           <text class="footer-progress">已完成 {{ resultVersion === 'basic' ? '精简版' : '完整版' }}性格测试 · {{ questionCount }}题</text>
-          <button v-if="resultVersion === 'basic' && !isSharedResult" class="upgrade-btn" @click="handleUpgrade">🔬 升级到完整版 (48题)</button>
+          <button v-if="!isSharedResult" class="footer-next-step" @click="goNextStep">
+            <text class="footer-next-kicker">下一步要做的事情</text>
+            <text class="footer-next-title">{{ nextStepTitle }}</text>
+            <text class="footer-next-action">{{ nextStepAction }}</text>
+          </button>
           <view class="footer-btns">
             <button class="share-report-btn" open-type="share" data-share-kind="report">分享报告</button>
-            <button class="share-test-btn" open-type="share" data-share-kind="test">分享测试</button>
+            <button
+              v-if="resultVersion === 'basic' && !isSharedResult"
+              class="footer-upgrade-btn"
+              @click="handleUpgrade"
+            >
+              升级完整版
+            </button>
           </view>
-          <button v-if="!isSharedResult" class="retry-link" @click="handleRetry">重新测试</button>
+          <button v-if="!isSharedResult" class="retry-link" @click="handleRetry">结果不满意，重新测一次</button>
         </view>
       </view>
     </view>
@@ -383,10 +384,7 @@ const questionCount = computed(() => (resultVersion.value === 'basic' ? 16 : 48)
 const durationLabel = computed(() => (resultVersion.value === 'basic' ? '约3分钟' : '约10分钟'))
 
 const hollandDone = computed(() => Boolean(assessmentSnapshot.value?.holland?.completed))
-const nextStepTitle = computed(() => (hollandDone.value ? '生成综合报告' : '继续完成霍兰德测评'))
-const nextStepDesc = computed(() => (
-  hollandDone.value ? '两项测评已完成，可以进入报告生成页。' : '补上职业兴趣，报告会更能判断专业方向。'
-))
+const nextStepTitle = computed(() => (hollandDone.value ? '生成综合报告' : '霍兰德职业测试'))
 const nextStepAction = computed(() => (hollandDone.value ? '去报告' : '去测评'))
 
 const recommendedMajorNames = computed(() => (
@@ -540,11 +538,11 @@ function goBack() {
 }
 
 function goNextStep() {
-  if (!hollandDone.value) {
-    uni.navigateTo({ url: '/pages/holland/holland' })
+  if (hollandDone.value) {
+    uni.switchTab({ url: '/pages/report/report' })
     return
   }
-  uni.switchTab({ url: '/pages/report/report' })
+  uni.navigateTo({ url: '/pages/holland/holland' })
 }
 
 // 重新测试
@@ -618,14 +616,7 @@ onShow(() => {
   loadMajorInsightsForResult()
 })
 
-onShareAppMessage((res = {}) => {
-  const shareKind = res.target?.dataset?.shareKind
-  if (shareKind === 'test') {
-    return {
-      title: '做个性格测试，看看哪些专业更适合你',
-      path: '/pages/mbti/mbti',
-    }
-  }
+onShareAppMessage(() => {
   return {
     title: `我的性格测试报告：${result.value?.type || ''} ${typeInfo.value?.name || ''}`,
     path: buildSharedReportPath(),
@@ -646,7 +637,7 @@ onShareTimeline(() => ({
     linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
   padding: 32rpx;
   padding-top: calc(32rpx + env(safe-area-inset-top));
-  padding-bottom: calc(260rpx + env(safe-area-inset-bottom));
+  padding-bottom: calc(340rpx + env(safe-area-inset-bottom));
   box-sizing: border-box;
   position: relative;
   overflow-x: hidden;
@@ -1372,7 +1363,7 @@ onShareTimeline(() => ({
   bottom: 0;
   left: 0;
   right: 0;
-  min-height: calc(190rpx + env(safe-area-inset-bottom));
+  min-height: calc(300rpx + env(safe-area-inset-bottom));
   z-index: 50;
   display: flex;
   flex-direction: column;
@@ -1394,7 +1385,7 @@ onShareTimeline(() => ({
 
 .footer-inner {
   position: relative;
-  padding: 20rpx 32rpx 12rpx;
+  padding: 18rpx 32rpx 12rpx;
   padding-bottom: env(safe-area-inset-bottom);
   z-index: 2;
 }
@@ -1407,13 +1398,52 @@ onShareTimeline(() => ({
   margin-bottom: 14rpx;
 }
 
+.footer-next-step {
+  width: 100%;
+  height: 88rpx;
+  margin-bottom: 14rpx;
+  padding: 0 18rpx;
+  background: #F0FDFA;
+  border: 1rpx solid #CCFBF1;
+  border-radius: $radius-full;
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  box-shadow: 0 8rpx 18rpx rgba(15, 118, 110, 0.12);
+}
+
+.footer-next-kicker {
+  flex-shrink: 0;
+  font-size: 20rpx;
+  color: #0F766E;
+  font-weight: 800;
+}
+
+.footer-next-title {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  font-size: 28rpx;
+  color: $text-primary;
+  font-weight: 800;
+}
+
+.footer-next-action {
+  flex-shrink: 0;
+  min-width: 108rpx;
+  text-align: center;
+  color: #0F766E;
+  font-size: 25rpx;
+  font-weight: 800;
+}
+
 .footer-btns {
   display: flex;
   gap: 18rpx;
 }
 
 .share-report-btn,
-.share-test-btn {
+.footer-upgrade-btn {
   flex: 1;
   height: 84rpx;
   border-radius: $radius-full;
@@ -1436,16 +1466,16 @@ onShareTimeline(() => ({
   border: 1px solid rgba(239, 68, 68, 0.28);
 }
 
-.share-test-btn {
+.footer-upgrade-btn {
   background: $grad-primary;
   color: #fff;
   box-shadow: 0 8rpx 18rpx rgba(239, 68, 68, 0.24);
 }
 
 .share-report-btn::after,
-.share-test-btn::after,
+.footer-upgrade-btn::after,
 .retry-link::after,
-.upgrade-btn::after {
+.footer-next-step::after {
   border: none;
 }
 
@@ -1606,28 +1636,4 @@ onShareTimeline(() => ({
   }
 }
 
-// 升级按钮
-.upgrade-btn {
-  width: 100%;
-  height: 72rpx;
-  background: $grad-royal;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: $radius-full;
-  font-size: 26rpx;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 6rpx 16rpx rgba(99, 102, 241, 0.3);
-  margin-bottom: 14rpx;
-  transition: all 0.2s;
-
-  &:active {
-    transform: scale(0.98);
-  }
-}
-.upgrade-btn::after {
-  border: none;
-}
 </style>

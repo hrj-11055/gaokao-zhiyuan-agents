@@ -59,8 +59,31 @@ const PERSONAL_FOLLOWUP_STEPS = [
 
 const RECOMMENDATION_PROFILE_STEPS = PERSONAL_FOLLOWUP_STEPS.filter((step) => step.field !== 'rank')
 
+const EARLY_PLANNING_PROFILE_STEPS = [
+  {
+    field: 'family_resources',
+    question: '做提前升学规划，我先了解一个现实条件：家里预算和资源大概是什么情况？比如是否考虑民办或中外合作，父母行业能提供哪些认知或实践机会。',
+  },
+  {
+    field: 'interest_subjects',
+    question: '孩子目前更喜欢或更擅长哪些学科？有没有明确抗拒、学起来很吃力，或者愿意长期投入探索的方向？',
+  },
+  {
+    field: 'region_preference',
+    question: '家庭对未来城市和地域有什么倾向？比如优先省内、接受外省，或者更看重产业机会和生活成本。',
+  },
+  {
+    field: 'career_goal',
+    question: '家庭目前更看重哪类长期方向？比如稳定、高薪、深造、考公，还是希望先广泛探索再逐步收敛。',
+  },
+]
+
 function hasValue(value) {
   return value !== undefined && value !== null && String(value).trim() !== ''
+}
+
+function isEarlyPlanningInputs(inputs = {}) {
+  return inputs.planning_mode === 'early' || inputs.report_mode === 'planning'
 }
 
 function isRecommendationIntent(text = '') {
@@ -181,15 +204,20 @@ function extractSchoolScoreLookup(query = '', inputs = {}) {
 }
 
 function getNextCoreProfileFollowup(inputs = {}) {
-  return CORE_FOLLOWUP_STEPS.find((step) => !hasValue(inputs[step.field])) || null
+  return CORE_FOLLOWUP_STEPS.find((step) => {
+    if (step.field === 'score' && isEarlyPlanningInputs(inputs)) return false
+    return !hasValue(inputs[step.field])
+  }) || null
 }
 
 function getNextPersonalProfileFollowup(inputs = {}) {
-  return PERSONAL_FOLLOWUP_STEPS.find((step) => !hasValue(inputs[step.field])) || null
+  const steps = isEarlyPlanningInputs(inputs) ? EARLY_PLANNING_PROFILE_STEPS : PERSONAL_FOLLOWUP_STEPS
+  return steps.find((step) => !hasValue(inputs[step.field])) || null
 }
 
 function getNextRecommendationProfileFollowup(inputs = {}) {
-  return RECOMMENDATION_PROFILE_STEPS.find((step) => !hasValue(inputs[step.field])) || null
+  const steps = isEarlyPlanningInputs(inputs) ? EARLY_PLANNING_PROFILE_STEPS : RECOMMENDATION_PROFILE_STEPS
+  return steps.find((step) => !hasValue(inputs[step.field])) || null
 }
 
 function hasAnyPersonalProfileInput(inputs = {}) {
@@ -222,9 +250,13 @@ function buildDeepProfileGateAnswer({ query = '', inputs = {}, conversationId = 
   const followup = getNextRecommendationProfileFollowup(inputs)
   if (!followup) return null
 
+  const introduction = isEarlyPlanningInputs(inputs)
+    ? '当前是提前升学规划。先把孩子的兴趣、能力、家庭约束和未来方向说清楚，再安排可执行的探索任务。'
+    : '先别急着直接排冲稳保。只按省份、科类和分数给学校名单，很容易把专业、城市和家庭成本这些关键约束漏掉。'
+
   return {
     answer: [
-      '先别急着直接排冲稳保。只按省份、科类和分数给学校名单，很容易把专业、城市和家庭成本这些关键约束漏掉。',
+      introduction,
       followup.question,
     ].join('\n\n'),
     conversation_id: conversationId || '',
@@ -240,6 +272,9 @@ function formatProfileLine(inputs = {}) {
   const parts = []
   if (inputs.province) parts.push(inputs.province)
   if (inputs.category) parts.push(inputs.category)
+  if (inputs.grade) parts.push(inputs.grade)
+  if (inputs.identity) parts.push(inputs.identity)
+  if (inputs.score_range) parts.push(`预估区间${inputs.score_range}`)
   if (inputs.score) parts.push(`${inputs.score}分`)
   if (inputs.rank) parts.push(`位次${inputs.rank}`)
   return parts.join(' · ')
@@ -263,6 +298,24 @@ function buildStarterGuidanceAnswer({ inputs = {}, conversationId = '' } = {}) {
   const profileLine = formatProfileLine(inputs)
   const next = getNextPersonalProfileFollowup(inputs)
   const followup = next ? `\n\n${next.question}` : ''
+
+  if (isEarlyPlanningInputs(inputs)) {
+    return {
+      event: 'message',
+      answer: [
+        profileLine ? `我先按你的档案看：${profileLine}。` : '我先按你目前给的信息看。',
+        '当前先做提前升学规划，把专业探索和未来一年的行动安排清楚。',
+        '建议先按这个顺序来：识别孩子的学科优势和兴趣边界，筛专业方向，再规划能力补齐、选科与实践探索，最后建立未来院校层次的校准方法。',
+        '我最建议你先问这一句：未来一年最值得优先验证哪些专业方向，家长和孩子分别要做什么。'
+      ].join('\n') + followup,
+      conversation_id: conversationId || '',
+      message_id: `starter_guidance_${Date.now()}`,
+      metadata: {
+        starter_guidance: true,
+        planning_mode: true,
+      },
+    }
+  }
 
   return {
     event: 'message',
@@ -288,11 +341,18 @@ function compactText(value, maxLength = 80) {
 function formatScoreMatchContext(matchData = {}, inputs = {}) {
   const tiers = ['冲', '稳', '保']
   const lines = []
+  const contextTiers = matchData.tiers || matchData
+  const isEstimated = matchData.query?.mode && matchData.query.mode !== 'official'
+  const estimatedTierLabels = { '冲': '较高目标层', '稳': '匹配目标层', '保': '保守目标层' }
+  const scoreLabel = inputs.score
+    ? `${inputs.score}分`
+    : (inputs.score_range ? `预估区间${inputs.score_range}` : `${matchData.query?.score || matchData.score || ''}分`)
 
-  lines.push(`查询条件：${inputs.province || matchData.province || ''} ${inputs.category || matchData.category || ''} ${inputs.score || matchData.score || ''}分，年份 ${matchData.year || inputs.year || '未标明'}`)
+  lines.push(`定位性质：${isEstimated ? '预估院校层次参考，不是正式志愿推荐' : '正式冲稳保参考'}`)
+  lines.push(`查询条件：${inputs.province || matchData.query?.province || matchData.province || ''} ${inputs.category || matchData.query?.category || matchData.category || ''} ${scoreLabel}，年份 ${matchData.query?.year || matchData.year || inputs.year || '未标明'}`)
 
   for (const tier of tiers) {
-    const rows = Array.isArray(matchData[tier]) ? matchData[tier] : []
+    const rows = Array.isArray(contextTiers[tier]) ? contextTiers[tier] : []
     if (rows.length === 0) {
       lines.push(`${tier}：本次查询未返回可用学校`)
       continue
@@ -304,7 +364,9 @@ function formatScoreMatchContext(matchData = {}, inputs = {}) {
         : '分数未返回'
       const rankText = row.min_rank ? `，最低位次 ${row.min_rank}` : ''
       const majors = row.majors ? `，专业：${compactText(row.majors, 120)}` : ''
-      lines.push(`${tier}${index + 1}. ${school}：${scoreText}${rankText}${majors}`)
+      const reason = row.reason ? `，依据：${row.reason}` : ''
+      const tierLabel = isEstimated ? estimatedTierLabels[tier] : tier
+      lines.push(`${tierLabel}${index + 1}. ${school}：${scoreText}${rankText}${majors}${reason}`)
     })
   }
 
@@ -349,12 +411,25 @@ function buildCurrentAdvisoryContext(inputs = {}) {
   const profileParts = []
   if (inputs.province) profileParts.push(`省份：${inputs.province}`)
   if (inputs.category) profileParts.push(`科类：${inputs.category}`)
+  if (inputs.grade) profileParts.push(`年级：${inputs.grade}`)
+  if (inputs.identity) profileParts.push(`身份：${inputs.identity}`)
+  if (inputs.score_range) profileParts.push(`预估区间：${inputs.score_range}`)
   if (inputs.score) profileParts.push(`分数：${inputs.score}`)
   if (inputs.rank) profileParts.push(`位次：${inputs.rank}`)
   if (inputs.family_resources) profileParts.push(`家庭资源：${inputs.family_resources}`)
   if (inputs.interest_subjects) profileParts.push(`兴趣学科：${inputs.interest_subjects}`)
   if (inputs.region_preference) profileParts.push(`地域偏好：${inputs.region_preference}`)
   if (inputs.career_goal) profileParts.push(`发展倾向：${inputs.career_goal}`)
+
+  if (isEarlyPlanningInputs(inputs)) {
+    return [
+      '【当前咨询背景】',
+      '当前用户是高一/高二家庭的提前升学规划场景，尚未掌握正式高考分数和位次。',
+      '咨询重点是专业方向、学科能力、选科与学习路径、探索任务、家庭约束和未来校准方法；不能输出精确冲稳保或把院校名单当成最终志愿推荐。',
+      '涉及历史录取数据时，只使用 2024-2025 年数据，优先使用 2025 年后端分数线或知识库结果；没有返回就明确说未覆盖。',
+      profileParts.length ? `【已知考生档案】${profileParts.join('；')}` : '【已知考生档案】本轮未取得完整档案。',
+    ].join('\n')
+  }
 
   return [
     '【当前咨询背景】',
@@ -381,12 +456,19 @@ function buildRecommendationGuidedQuery(query = '', options = {}) {
   const inputs = options.inputs || {}
   const scoreContext = String(options.scoreContext || '').trim()
   const questionClass = classifyScoreQuestion(query)
-  if (questionClass === 'general_advice' && !scoreContext) return query
+  const earlyPlanning = isEarlyPlanningInputs(inputs)
+  if (questionClass === 'general_advice' && !scoreContext && !earlyPlanning) return query
 
   const needsScoreContext = shouldUseScoreContext(query)
   const postAnswerFollowup = buildPostAnswerFollowupInstruction(inputs)
   const recommendationIntent = isRecommendationIntent(query)
-  const taskInstruction = recommendationIntent
+  const taskInstruction = earlyPlanning
+    ? [
+        '当前任务是提前升学规划，不是高三志愿填报推荐。',
+        '即使用户说“推荐学校”或“冲稳保”，也要先解释当前不能输出精确冲稳保，并转为专业方向、能力差距、学习路径、探索任务、家长行动和未来院校层次校准方法。',
+        '如果系统提供了【后端预估院校层次参考】，可以用其中学校帮助家庭理解目标层次，但必须称为预估参考，不能当作最终志愿推荐或录取承诺。',
+      ].join('\n')
+    : recommendationIntent
     ? [
         '若给出院校、专业或志愿推荐，每个关键推荐必须包含：年份、最低分/位次等分数线证据、为什么推荐、风险点、下一步。',
         '必须优先使用【后端分数线查询结果】里的学校和分数；没有出现在查询结果里的学校，不能说成“已查到”。',
@@ -405,7 +487,7 @@ function buildRecommendationGuidedQuery(query = '', options = {}) {
     '整段回复里最多出现一个问句。',
     postAnswerFollowup,
     scoreContext
-      ? `\n【后端分数线查询结果】\n${scoreContext}`
+      ? `\n【${earlyPlanning ? '后端预估院校层次参考' : '后端分数线查询结果'}】\n${scoreContext}`
       : (needsScoreContext ? '\n【后端分数线查询结果】本次未取得可用分数线数据；涉及学校/分数/推荐时必须明确说明数据未返回，不能编造分数线。' : ''),
     '',
     `用户原问题：${query}`,

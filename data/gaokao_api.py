@@ -24,10 +24,14 @@
 """
 
 import os
+import sys
 import psycopg2
 from functools import wraps
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "gaokao-api"))
+from recommendation_context import build_recommendation_context, resolve_recommendation_query
 
 app = Flask(__name__)
 CORS(app)
@@ -180,7 +184,34 @@ def report_summary(data):
     return ""
 
 
+def calculate_report_word_count(data):
+    """按深度报告阅读器实际展示的正文计算字数。"""
+    if not isinstance(data, dict):
+        return 0
+
+    count = 0
+    layer3 = data.get("layer3_detail") or data.get("layer3_details") or {}
+    if isinstance(layer3, dict):
+        for module in layer3.values():
+            if isinstance(module, dict):
+                count += len(module.get("raw_content") or "")
+    if count > 0:
+        return count
+
+    layer4 = data.get("layer4_supplement") or {}
+    if isinstance(layer4, dict):
+        return len(layer4.get("full_raw_content") or "")
+    return 0
+
+
+def with_visible_word_count(row):
+    normalized = dict(row)
+    normalized["word_count"] = calculate_report_word_count(normalized.get("data"))
+    return normalized
+
+
 def public_major(row):
+    row = with_visible_word_count(row)
     data = row.get("data") or {}
     return {
         "code": row.get("code"),
@@ -194,6 +225,7 @@ def public_major(row):
 
 
 def public_university(row):
+    row = with_visible_word_count(row)
     data = row.get("data") or {}
     return {
         "name": row.get("name"),
@@ -399,6 +431,58 @@ def search_scores():
     rows = query(data_sql, params + [limit, offset])
 
     return jsonify({"total": total, "limit": limit, "offset": offset, "data": rows})
+
+
+@app.route("/api/scores/recommendation-context")
+def recommendation_context():
+    """统一提供给 AI 咨询和综合报告的院校候选池。"""
+    province = request.args.get("province", "")
+    requested_category = request.args.get("category", "")
+    year = request.args.get("year", 2025, type=int)
+    limit = min(request.args.get("limit_per_tier", request.args.get("limit", 10), type=int), 30)
+    query_info = resolve_recommendation_query(request.args)
+
+    if not province or not requested_category or not query_info.get("score"):
+        return jsonify({"error": "province, category, score or score_range are required"}), 400
+
+    province_clean = normalize_province_name(province)
+    category = normalize_score_category(province_clean, requested_category)
+    query_info.update({
+        "province": province,
+        "category": requested_category,
+        "query_category": category,
+        "year": year,
+    })
+
+    conditions = [
+        "s.province_name = %s",
+        "s.year = %s",
+        "s.min_score IS NOT NULL",
+    ]
+    params = [province_clean, year]
+    add_category_condition(conditions, params, "s.category", province_clean, category)
+
+    position_condition = "s.min_score BETWEEN %s AND %s"
+    position_params = [query_info["score"] - 45, query_info["score"] + 45]
+    if query_info.get("rank"):
+        position_condition = f"({position_condition} OR s.min_rank BETWEEN %s AND %s)"
+        position_params.extend([
+            round(query_info["rank"] * 0.7),
+            round(query_info["rank"] * 1.5),
+        ])
+    conditions.append(position_condition)
+    params.extend(position_params)
+
+    rows = query("""
+        SELECT s.id AS source_record_id, s.school_name, s.major_name,
+               s.category, s.batch, s.min_score, s.min_rank, s.avg_score, s.year
+        FROM scores s
+        WHERE {where}
+        ORDER BY s.min_score DESC
+        LIMIT 5000
+    """.format(where=" AND ".join(conditions)), params)
+
+    return jsonify(build_recommendation_context(rows, query_info, limit))
 
 
 @app.route("/api/recommend")
@@ -673,7 +757,7 @@ def reports_majors():
         params + [page_size, offset],
     )
 
-    data = rows if wants_full_report() else [public_major(row) for row in rows]
+    data = [with_visible_word_count(row) for row in rows] if wants_full_report() else [public_major(row) for row in rows]
     return jsonify({
         "total": int(total),
         "page": page,
@@ -692,7 +776,7 @@ def reports_major_detail(code):
     if not rows:
         return jsonify({"error": "专业不存在"}), 404
     row = rows[0]
-    return jsonify(row if wants_full_report() else public_major(row))
+    return jsonify(with_visible_word_count(row) if wants_full_report() else public_major(row))
 
 
 @app.route("/api/reports/universities")
@@ -713,7 +797,7 @@ def reports_universities():
         params + [page_size, offset],
     )
 
-    data = rows if wants_full_report() else [public_university(row) for row in rows]
+    data = [with_visible_word_count(row) for row in rows] if wants_full_report() else [public_university(row) for row in rows]
     return jsonify({
         "total": int(total),
         "page": page,
@@ -732,7 +816,7 @@ def reports_university_detail(name):
     if not rows:
         return jsonify({"error": "院校不存在"}), 404
     row = rows[0]
-    return jsonify(row if wants_full_report() else public_university(row))
+    return jsonify(with_visible_word_count(row) if wants_full_report() else public_university(row))
 
 
 if __name__ == "__main__":

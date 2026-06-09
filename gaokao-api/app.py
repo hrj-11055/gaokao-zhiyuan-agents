@@ -17,6 +17,9 @@ import json
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
+sys.path.insert(0, os.path.dirname(__file__))
+from recommendation_context import build_recommendation_context, resolve_recommendation_query
+
 # ============================================================
 # 配置
 # ============================================================
@@ -265,6 +268,64 @@ def stats():
                 release_db(conn)
         except Exception as e:
             return jsonify({'error': str(e)}), 500
+
+
+@app.route('/api/scores/recommendation-context', methods=['GET'])
+def recommendation_context():
+    """统一提供给 AI 咨询和综合报告的 2025 院校候选池。"""
+    try:
+        province = request.args.get('province')
+        requested_category = request.args.get('category', '')
+        category = normalize_score_category(province, requested_category)
+        year = int(request.args.get('year', 2025))
+        limit = min(int(request.args.get('limit_per_tier', request.args.get('limit', 10))), 30)
+        query_info = resolve_recommendation_query(request.args)
+
+        if not province or not category or not query_info.get('score'):
+            return jsonify({'error': '缺少必要参数: province, category, score 或 score_range'}), 400
+
+        normalized_province = normalize_province_name(province)
+        query_info.update({
+            'province': province,
+            'category': requested_category,
+            'query_category': category,
+            'year': year,
+        })
+
+        if USE_JSON:
+            records = _get_filtered_data(normalized_province, year, category)
+        else:
+            conn = get_db()
+            try:
+                cursor = conn.cursor(cursor_factory=RealDictCursor)
+                province_id = province_id_for_query(province)
+                cat_cond, cat_params = _db_category_filter(category)
+                position_condition = "min_score BETWEEN %s AND %s"
+                position_params = [query_info['score'] - 45, query_info['score'] + 45]
+                if query_info.get('rank'):
+                    position_condition = f"({position_condition} OR min_rank BETWEEN %s AND %s)"
+                    position_params.extend([
+                        round(query_info['rank'] * 0.7),
+                        round(query_info['rank'] * 1.5),
+                    ])
+                cursor.execute(f"""
+                    SELECT id AS source_record_id, school_name, major_name, category, batch,
+                           min_score, min_rank, avg_score, year
+                    FROM scores
+                    WHERE province_id = %s AND {cat_cond} AND year = %s
+                      AND min_score IS NOT NULL
+                      AND {position_condition}
+                    ORDER BY min_score DESC
+                    LIMIT 5000
+                """, [province_id] + cat_params + [year] + position_params)
+                records = [dict(row) for row in cursor.fetchall()]
+                cursor.close()
+            finally:
+                release_db(conn)
+
+        return jsonify(build_recommendation_context(records, query_info, limit))
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 
 @app.route('/api/scores/match', methods=['GET'])

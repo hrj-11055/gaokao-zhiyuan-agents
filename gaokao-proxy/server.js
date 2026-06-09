@@ -1,9 +1,11 @@
 require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
+const crypto = require('crypto')
 const { generateReport, saveReport, saveReportDraft, REPORTS_DIR } = require('./lib/report-builder')
 const { generatePdfFromHtml, isGeneratedPdfFresh } = require('./lib/pdf-generator')
 const { createReportRoutes } = require('./lib/report-routes')
+const { resolveUniversityLogo } = require('./lib/university-logo-service')
 const { fetchReportDetail, normalizeType } = require('./lib/report-data-client')
 const { buildDeepReportHtml, buildDeepReportReaderHtml, generateDeepReportPdf } = require('./lib/deep-report-pdf')
 const { createDeepReportViewToken, verifyDeepReportViewToken } = require('./lib/deep-report-view-token')
@@ -12,8 +14,9 @@ const redis = require('./lib/redis')
 const { createCommerceStore } = require('./lib/commerce-store')
 const { signSessionToken, verifySessionToken } = require('./lib/session-token')
 const { exchangeCodeForSession } = require('./lib/wechat-auth')
-const { createJsapiPayment, parseWechatPayNotify } = require('./lib/wechat-pay')
+const { createVirtualPayment, parseVirtualPayGoodsNotify } = require('./lib/wechat-virtual-pay')
 const { msgSecCheck } = require('./lib/content-security')
+const { fetchRecommendationContext } = require('./lib/recommendation-context-client')
 const {
   buildDeepProfileGateAnswer,
   buildProfileGateAnswer,
@@ -48,7 +51,9 @@ const MAX_QUERY_LENGTH = Number(process.env.MAX_QUERY_LENGTH || 2000)
 const PROXY_API_TOKEN = process.env.PROXY_API_TOKEN || ''
 const COMMERCE_SESSION_SECRET = process.env.COMMERCE_SESSION_SECRET || process.env.JWT_SECRET || 'local-commerce-session-secret'
 const LIMITED_FREE_UNLOCK_ENABLED = process.env.LIMITED_FREE_UNLOCK_ENABLED !== 'false'
+const FREE_DEEP_REPORTS_ENABLED = process.env.FREE_DEEP_REPORTS_ENABLED !== 'false'
 const DEEP_REPORT_VIEW_TOKEN_TTL_MS = Number(process.env.DEEP_REPORT_VIEW_TOKEN_TTL_MS || 10 * 60 * 1000)
+const WECHAT_MESSAGE_TOKEN = process.env.WECHAT_MESSAGE_TOKEN || process.env.WECHAT_PUSH_TOKEN || ''
 
 function hasRequiredAssessmentResults(assessments = {}) {
   return Boolean(assessments?.mbti?.completed && assessments?.holland?.completed)
@@ -191,6 +196,13 @@ function getOptionalCommerceAuth(req) {
 
 function requireMembershipForReports(req, res, next) {
   const membership = commerceStore.getMembershipStatus(req.commerceAuth.userId)
+  if (FREE_DEEP_REPORTS_ENABLED) {
+    req.membership = {
+      ...membership,
+      source: membership.source || 'free_deep_reports_1_3',
+    }
+    return next()
+  }
   if (membership.status !== 'active') {
     return res.status(402).json({
       error: '请先解锁深度填报会员',
@@ -202,6 +214,29 @@ function requireMembershipForReports(req, res, next) {
   }
   req.membership = membership
   next()
+}
+
+function verifyWechatMessageSignature({ signature = '', timestamp = '', nonce = '', token = WECHAT_MESSAGE_TOKEN } = {}) {
+  if (!token) return false
+  const expected = [token, timestamp, nonce]
+    .sort()
+    .join('')
+  const digest = crypto.createHash('sha1').update(expected).digest('hex')
+  return digest === signature
+}
+
+function requireWechatMessageSignature(req, res, next) {
+  if (!WECHAT_MESSAGE_TOKEN) {
+    return res.status(503).send('WECHAT_MESSAGE_TOKEN is required')
+  }
+  if (!verifyWechatMessageSignature(req.query || {})) {
+    return res.status(403).send('invalid signature')
+  }
+  next()
+}
+
+function handleWechatMessageVerify(req, res) {
+  res.send(String(req.query?.echostr || ''))
 }
 
 function validateChatRequest(req, res, next) {
@@ -255,24 +290,19 @@ async function checkContentSecurity(req, res, next) {
 
 async function fetchScoreMatchData(query, inputs = {}) {
   if (classifyScoreQuestion(query) === 'general_advice') return null
-  if (!inputs.province || !inputs.category || !inputs.score) return null
-
-  const url = new URL(`${SCORE_API_URL.replace(/\/+$/, '')}/api/scores/match`)
-  url.searchParams.set('province', inputs.province)
-  url.searchParams.set('category', normalizeScoreApiCategory(inputs.province, inputs.category))
-  url.searchParams.set('score', String(inputs.score))
-  url.searchParams.set('year', String(SCORE_DATA_YEAR))
-  url.searchParams.set('limit', '5')
+  if (!inputs.province || !inputs.category || (!inputs.score && !inputs.score_range)) return null
 
   try {
-    const res = await fetch(url, { signal: AbortSignal.timeout(5000) })
-    if (!res.ok) {
-      console.warn('Score match API failed:', res.status, await res.text())
-      return null
-    }
-    return await res.json()
+    return await fetchRecommendationContext({
+      ...inputs,
+      category: normalizeScoreApiCategory(inputs.province, inputs.category),
+    }, {
+      scoreApiUrl: SCORE_API_URL,
+      year: SCORE_DATA_YEAR,
+      limitPerTier: 5,
+    })
   } catch (err) {
-    console.warn('Score match API error:', err.message)
+    console.warn('Recommendation context API error:', err.message)
     return null
   }
 }
@@ -284,6 +314,7 @@ async function fetchScoreMatchContext(query, inputs = {}) {
     province: inputs.province,
     category: inputs.category,
     score: inputs.score,
+    score_range: inputs.score_range,
     year: SCORE_DATA_YEAR,
   })
 }
@@ -416,7 +447,24 @@ function sanitizeProfileInputs(inputs = {}) {
       clean.rank = String(Math.trunc(rank))
     }
   }
-  ;['family_resources', 'interest_subjects', 'region_preference', 'career_goal'].forEach((key) => {
+  if (['score', 'early'].includes(inputs.planning_mode)) {
+    clean.planning_mode = inputs.planning_mode
+  }
+  if (['official', 'estimated'].includes(inputs.score_type)) {
+    clean.score_type = inputs.score_type
+  }
+  if (['official', 'estimated', 'planning'].includes(inputs.report_mode)) {
+    clean.report_mode = inputs.report_mode
+  }
+  ;[
+    'score_range',
+    'grade',
+    'identity',
+    'family_resources',
+    'interest_subjects',
+    'region_preference',
+    'career_goal',
+  ].forEach((key) => {
     if (typeof inputs[key] === 'string' && inputs[key].trim()) {
       clean[key] = inputs[key].trim()
     }
@@ -428,8 +476,20 @@ function buildProfileInputs(profile = {}) {
   const inputs = {}
   if (profile.province) inputs.province = profile.province
   if (profile.category) inputs.category = profile.category
+  if (profile.planning_mode) inputs.planning_mode = profile.planning_mode
+  if (profile.score_type) inputs.score_type = profile.score_type
+  if (profile.score_range) inputs.score_range = profile.score_range
+  if (profile.grade) inputs.grade = profile.grade
+  if (profile.identity) inputs.identity = profile.identity
   if (typeof profile.score === 'number') inputs.score = String(profile.score)
   if (typeof profile.rank === 'number' && profile.rank > 0) inputs.rank = String(profile.rank)
+  if (profile.planning_mode === 'early') {
+    inputs.report_mode = 'planning'
+  } else if (profile.score_type === 'estimated') {
+    inputs.report_mode = 'estimated'
+  } else if (inputs.score) {
+    inputs.report_mode = 'official'
+  }
   ;['family_resources', 'interest_subjects', 'region_preference', 'career_goal'].forEach((key) => {
     if (profile[key]) inputs[key] = profile[key]
   })
@@ -569,6 +629,27 @@ app.get('/api/reports/stats', reportRoutes.getStats)
 app.get('/api/reports/majors', reportRoutes.listMajors)
 app.get('/api/reports/majors/:code', reportRoutes.getMajor)
 app.get('/api/reports/universities', reportRoutes.listUniversities)
+app.get('/api/reports/universities/logo', async (req, res) => {
+  const name = String(req.query.name || '').trim()
+  if (!name) {
+    res.status(400).json({ error: 'name is required' })
+    return
+  }
+
+  try {
+    const logo = await resolveUniversityLogo(name)
+    if (!logo) {
+      res.status(404).json({ error: '院校 logo 未找到' })
+      return
+    }
+    res.setHeader('Content-Type', logo.contentType)
+    res.setHeader('Cache-Control', 'public, max-age=604800, immutable')
+    res.send(logo.buffer)
+  } catch (err) {
+    console.error('University logo error:', err.message)
+    res.status(502).json({ error: '院校 logo 暂时不可用' })
+  }
+})
 app.get('/api/reports/universities/:name', reportRoutes.getUniversity)
 
 app.get('/api/reports/major-insights', async (req, res) => {
@@ -616,18 +697,20 @@ app.get('/api/reports/deep/pdf', requireCommerceAuth, requireMembershipForReport
     return
   }
 
-  const quotaCheck = commerceStore.canDownloadDeepReport(req.commerceAuth.userId)
-  if (!quotaCheck.allowed) {
-    const statusCode = quotaCheck.code === 'DOWNLOAD_QUOTA_EXHAUSTED' ? 429 : 402
-    res.status(statusCode).json({
-      code: quotaCheck.code,
-      error: quotaCheck.code === 'DOWNLOAD_QUOTA_EXHAUSTED'
-        ? '深度报告下载次数已用完'
-        : '请先解锁深度填报会员',
-      membership: quotaCheck.membership,
-      downloadQuota: quotaCheck.membership?.downloadQuota,
-    })
-    return
+  if (!FREE_DEEP_REPORTS_ENABLED) {
+    const quotaCheck = commerceStore.canDownloadDeepReport(req.commerceAuth.userId)
+    if (!quotaCheck.allowed) {
+      const statusCode = quotaCheck.code === 'DOWNLOAD_QUOTA_EXHAUSTED' ? 429 : 402
+      res.status(statusCode).json({
+        code: quotaCheck.code,
+        error: quotaCheck.code === 'DOWNLOAD_QUOTA_EXHAUSTED'
+          ? '深度报告下载次数已用完'
+          : '请先解锁深度填报会员',
+        membership: quotaCheck.membership,
+        downloadQuota: quotaCheck.membership?.downloadQuota,
+      })
+      return
+    }
   }
 
   try {
@@ -644,13 +727,17 @@ app.get('/api/reports/deep/pdf', requireCommerceAuth, requireMembershipForReport
       'Content-Disposition',
       `attachment; filename*=UTF-8''${encodeURIComponent(`${title}-${filename}`)}`
     )
-    const membership = commerceStore.recordDeepReportDownload({
-      userId: req.commerceAuth.userId,
-      reportType: type,
-      reportId: id,
-      filename,
-    })
-    res.setHeader('X-Deep-Report-Downloads-Remaining', String(membership.downloadQuota.remaining))
+    if (FREE_DEEP_REPORTS_ENABLED) {
+      res.setHeader('X-Deep-Report-Free-Access', '1')
+    } else {
+      const membership = commerceStore.recordDeepReportDownload({
+        userId: req.commerceAuth.userId,
+        reportType: type,
+        reportId: id,
+        filename,
+      })
+      res.setHeader('X-Deep-Report-Downloads-Remaining', String(membership.downloadQuota.remaining))
+    }
     res.sendFile(pdfPath)
   } catch (err) {
     console.error('Deep report PDF error:', err.message)
@@ -690,6 +777,7 @@ app.post('/api/auth/wechat-login', async (req, res) => {
     const user = commerceStore.upsertWechatUser({
       openid: session.openid,
       unionid: session.unionid || '',
+      sessionKey: session.sessionKey || '',
       inviterId,
     })
     const membership = commerceStore.getMembershipStatus(user.userId)
@@ -789,19 +877,19 @@ app.post('/api/payment/create', requireCommerceAuth, async (req, res) => {
 
   try {
     const order = commerceStore.createPaymentOrder(req.commerceAuth.userId)
-    const paymentResult = await createJsapiPayment({
+    const user = commerceStore.getUser(req.commerceAuth.userId)
+    const virtualPayment = createVirtualPayment({
       order,
-      openid: req.commerceAuth.openid,
-      description: '深度填报会员',
+      sessionKey: user?.sessionKey || '',
     })
-    commerceStore.attachPrepayId(order.orderId, paymentResult.prepayId)
+    commerceStore.attachPrepayId(order.orderId, `virtual:${order.outTradeNo}`)
     res.json({
       orderId: order.orderId,
-      payment: paymentResult.payment,
+      virtualPayment,
     })
   } catch (err) {
-    const status = err.code === 'WECHAT_PAY_NOT_CONFIGURED' ? 503 : 502
-    res.status(status).json({ error: err.message || '微信支付下单失败', code: err.code || 'WECHAT_PAY_FAILED' })
+    const status = err.code === 'WECHAT_VIRTUAL_PAY_NOT_CONFIGURED' ? 503 : 502
+    res.status(status).json({ error: err.message || '微信虚拟支付下单失败', code: err.code || 'WECHAT_VIRTUAL_PAY_FAILED' })
   }
 })
 
@@ -816,41 +904,40 @@ app.get('/api/payment/order/:orderId', requireCommerceAuth, (req, res) => {
   })
 })
 
-app.post('/api/payment/wechat/notify', async (req, res) => {
+function handleVirtualPaymentNotify(req, res) {
   let notifyLogContext = {}
   try {
-    const notify = parseWechatPayNotify(req.body, {
-      headers: req.headers,
-      rawBody: req.rawBody || '',
-    })
-    const resource = notify.resource || notify
-    const outTradeNo = resource.out_trade_no || notify.out_trade_no
-    const transactionId = resource.transaction_id || notify.transaction_id || ''
-    const tradeState = resource.trade_state || notify.trade_state || 'SUCCESS'
-    notifyLogContext = { outTradeNo, transactionId, tradeState }
-
-    if (!outTradeNo) {
-      return res.status(400).json({ code: 'FAIL', message: 'out_trade_no is required' })
-    }
-    if (tradeState !== 'SUCCESS') {
-      return res.json({ code: 'SUCCESS', message: 'ignored' })
+    const notify = parseVirtualPayGoodsNotify(req.body)
+    notifyLogContext = {
+      outTradeNo: notify.outTradeNo,
+      transactionId: notify.transactionId,
+      productId: notify.productId,
     }
 
-    commerceStore.markOrderPaid(outTradeNo, transactionId, notify)
-    res.json({ code: 'SUCCESS', message: '成功' })
+    commerceStore.markOrderPaid(notify.outTradeNo, notify.transactionId, req.body)
+    res.json({ ErrCode: 0, ErrMsg: 'success' })
   } catch (err) {
-    console.error('WeChat pay notify error:', {
+    console.error('WeChat virtual pay notify error:', {
       ...notifyLogContext,
-      errorCode: err.code || 'WECHAT_PAY_NOTIFY_FAILED',
+      errorCode: err.code || 'WECHAT_VIRTUAL_PAY_NOTIFY_FAILED',
       message: err.message,
     })
     res.status(500).json({
-      code: 'FAIL',
-      message: err.message || '支付通知处理失败',
-      errorCode: err.code || 'WECHAT_PAY_NOTIFY_FAILED',
+      ErrCode: 1,
+      ErrMsg: err.message || '虚拟支付通知处理失败',
+      errorCode: err.code || 'WECHAT_VIRTUAL_PAY_NOTIFY_FAILED',
     })
   }
-})
+}
+
+app.post('/api/payment/virtual/notify', handleVirtualPaymentNotify)
+app.get('/xpay/goods/deliver/notify', requireWechatMessageSignature, handleWechatMessageVerify)
+app.post(
+  '/xpay/goods/deliver/notify',
+  express.text({ type: ['text/xml', 'application/xml', '*/xml'] }),
+  requireWechatMessageSignature,
+  handleVirtualPaymentNotify
+)
 
 // Blocking mode
 app.post('/api/chat', async (req, res) => {

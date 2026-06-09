@@ -21,7 +21,7 @@
         </view>
 
         <view v-if="showWelcomeSuggestions" class="suggestion-panel">
-          <text class="suggestion-title">建议下一问</text>
+          <text class="suggestion-title">从关键决策开始</text>
           <view class="suggestion-list">
             <view
               v-for="chip in quickQuestions"
@@ -55,19 +55,12 @@
               </view>
             </view>
 
-            <view v-if="shouldShowSuggestionsAfterMessage(msg, index)" class="suggestion-panel after-message">
-              <text class="suggestion-title">建议下一问</text>
-              <view class="suggestion-list">
-                <view
-                  v-for="chip in quickQuestions"
-                  :key="chip"
-                  class="suggestion-chip"
-                  @click="onQuickSelect(chip)"
-                >
-                  <text class="suggestion-chip-text">{{ chip }}</text>
-                </view>
-              </view>
-            </view>
+            <PersonalityAssessmentGuide
+              v-if="index === personalityGuideMessageIndex"
+              :started="hasStartedPersonalityTest"
+              @start="goPersonalityTest"
+              @dismiss="dismissPersonalityGuideCard"
+            />
           </view>
         </template>
 
@@ -100,17 +93,45 @@
 import { ref, computed, nextTick } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import ChatBubble from '../../components/ChatBubble.vue'
+import PersonalityAssessmentGuide from '../../components/PersonalityAssessmentGuide.vue'
 import { useChat } from './useChat.js'
-import { isProfileComplete, loadUserProfile } from '../../utils/storage.js'
+import {
+  dismissPersonalityGuide,
+  getProfileReportMode,
+  isPersonalityGuideDismissed,
+  isProfileComplete,
+  loadAssessments,
+  loadUserProfile
+} from '../../utils/storage.js'
 import { buildCandidateQuestions } from './profileFollowup.js'
-
-const welcomeMsg = '你不用先想出一个完美问题。我们先把分数、位次、专业方向和现实约束拆开看；我会尽量用分数线说话，也会直接提醒不值得赌的地方。'
+import { findPersonalityGuideMessageIndex } from './personalityAssessmentGuide.js'
 
 const scrollTop = ref(0)
 const profile = ref(loadUserProfile())
+const assessments = ref(loadAssessments())
+const personalityGuideDismissed = ref(isPersonalityGuideDismissed())
 const { chatStore, inputText, isStreaming, onSend, onRetry } = useChat()
 const messages = computed(() => chatStore.messages)
 const isProfileReady = computed(() => isProfileComplete(profile.value))
+const hasStartedPersonalityTest = computed(() => Boolean(
+  assessments.value.mbti.questionIndex > 0 ||
+  (Array.isArray(assessments.value.mbti.answers) && assessments.value.mbti.answers.length > 0)
+))
+const personalityGuideMessageIndex = computed(() => {
+  if (
+    isStreaming.value ||
+    assessments.value.mbti.completed ||
+    personalityGuideDismissed.value
+  ) {
+    return -1
+  }
+  return findPersonalityGuideMessageIndex(messages.value)
+})
+const welcomeMsg = computed(() => (
+  getProfileReportMode(profile.value) === 'planning'
+    ? '你不用先想出一个完美问题。当前先做提前升学规划：一起看专业方向、学科能力、探索任务和家庭约束，不需要先有正式分数和位次。'
+    : '你不用先想出一个完美问题。我们先把分数、位次、专业方向和现实约束拆开看；我会尽量用分数线说话，也会直接提醒不值得赌的地方。'
+))
 const quickQuestions = computed(() => buildCandidateQuestions(profile.value))
 const showWelcomeSuggestions = computed(() => messages.value.length === 0 && isProfileReady.value)
 const inputPlaceholder = computed(() => (
@@ -120,6 +141,8 @@ const hasUserMessage = computed(() => messages.value.some((msg) => msg.role === 
 
 onShow(() => {
   profile.value = loadUserProfile()
+  assessments.value = loadAssessments()
+  personalityGuideDismissed.value = isPersonalityGuideDismissed()
   chatStore.loadHistory()
 })
 
@@ -180,6 +203,15 @@ function goCompleteProfile() {
   setTimeout(() => uni.$emit('open-profile-sheet'), 200)
 }
 
+function goPersonalityTest() {
+  uni.navigateTo({ url: '/pages/mbti/mbti' })
+}
+
+function dismissPersonalityGuideCard() {
+  dismissPersonalityGuide()
+  personalityGuideDismissed.value = true
+}
+
 function handleRetry() {
   onRetry({
     onScrollToBottom: scrollToBottom,
@@ -201,13 +233,6 @@ function canRegenerateMessage(msg, index) {
   )
 }
 
-function shouldShowSuggestionsAfterMessage(msg, index) {
-  return Boolean(
-    msg.role === 'ai' &&
-    index === messages.value.length - 1 &&
-    !isStreaming.value
-  )
-}
 </script>
 
 <style lang="scss">
@@ -314,10 +339,6 @@ page {
   border: 2rpx solid rgba(255, 255, 255, 0.8);
   box-shadow: 0 10rpx 28rpx rgba(15, 23, 42, 0.05);
   box-sizing: border-box;
-}
-
-.suggestion-panel.after-message {
-  margin-top: -18rpx;
 }
 
 .suggestion-title {

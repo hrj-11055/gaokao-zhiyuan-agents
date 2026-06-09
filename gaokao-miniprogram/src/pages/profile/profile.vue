@@ -7,17 +7,17 @@
       <view class="card-top">
         <view class="avatar-wrap">
           <view class="avatar">
-            <text class="avatar-text">峰</text>
+            <image class="avatar-image" :src="profileIdentity.avatar" mode="aspectFill" />
           </view>
         </view>
         <view class="user-info">
-          <text class="user-name">志愿同学</text>
+          <text class="user-name">{{ profileIdentity.nickname }}</text>
           <view class="id-wrap">
             <text class="user-id">ID: {{ shortUserId }}</text>
           </view>
         </view>
-        <view class="vip-badge" :class="{ active: membershipStore.isActive }">
-          {{ membershipStore.isActive ? '尊享 VIP' : '未解锁' }}
+        <view class="vip-badge" :class="{ active: reportAccessOpen }">
+          {{ reportAccessOpen ? '报告开放' : '未开放' }}
         </view>
       </view>
 
@@ -39,29 +39,23 @@
       </view>
     </view>
 
-    <!-- VIP Status Card -->
-    <view class="vip-status-card" :class="{ active: membershipStore.isActive }">
+    <!-- Report Access Card -->
+    <view class="vip-status-card active">
       <view class="vip-status-header">
-        <text class="vip-status-title">志愿填报 VIP</text>
-        <text class="vip-status-badge">{{ membershipStore.isActive ? '已开通' : '未开通' }}</text>
+        <text class="vip-status-title">志愿报告权益</text>
+        <text class="vip-status-badge">{{ reportAccessOpen ? '已开放' : '未开放' }}</text>
       </view>
       <text class="vip-status-desc">
-        {{ membershipStore.isActive
-           ? `权益已解锁 · 剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
-           : `${MEMBERSHIP_PRICE_LABEL} 解锁完整报告权益 · 有效邀请 ${membershipStore.inviteProgressText}` }}
+        {{ reportAccessDesc }}
       </text>
       <view class="vip-benefit-list">
         <text class="vip-benefit">完整志愿报告：学校/专业判断、风险提醒、下一步行动</text>
-        <text class="vip-benefit">院校/专业深度阅读：在线阅读不限次数</text>
-        <text class="vip-benefit">PDF 下载额度：当前 {{ membershipStore.downloadQuota.remaining }}/{{ membershipStore.downloadQuota.limit }}</text>
-        <text class="vip-benefit">支付后客服兜底：异常可联系 {{ CUSTOMER_WECHAT_ID }}</text>
+        <text class="vip-benefit">院校/专业深度阅读：1.3.0 免费开放在线阅读</text>
+        <text class="vip-benefit">PDF 下载：当前版本开放下载，方便离线保存</text>
+        <text class="vip-benefit">客服兜底：报告异常可联系 {{ CUSTOMER_WECHAT_ID }}</text>
       </view>
-      <text v-if="!membershipStore.isActive" class="invite-rule">有效邀请：新用户通过你的分享进入，并完成基础资料才计数。</text>
       <view class="vip-status-actions">
-        <button class="vip-action primary" @click="onMembershipAction">
-          {{ membershipStore.isActive ? '查看报告' : `${MEMBERSHIP_PRICE_LABEL} 解锁` }}
-        </button>
-        <button v-if="!membershipStore.isActive" class="vip-action outline" open-type="share">邀请好友</button>
+        <button class="vip-action primary" @click="goReport">查看报告</button>
       </view>
     </view>
 
@@ -121,21 +115,39 @@
           <text class="contact-title">{{ contactSheetTitle }}</text>
           <text class="contact-close" @click="closeContactSheet">×</text>
         </view>
-        <text class="contact-desc">添加客服微信，发送付款截图、用户 ID 或问题截图，我们会继续跟进。</text>
-        <image
-          class="contact-qr"
-          :src="CUSTOMER_WECHAT_QR_IMAGE"
-          mode="aspectFit"
-          @click="previewCustomerWechatQr"
-        />
-        <text class="contact-tip">扫码上方二维码，或复制微信号添加好友。</text>
-        <view class="contact-id-row">
-          <text class="contact-id-label">微信号</text>
-          <text class="contact-id">{{ CUSTOMER_WECHAT_ID }}</text>
+        <view v-if="contactSheetMode === 'about'" class="about-copy">
+          <image
+            class="about-logo"
+            src="/static/yuanshuo-logo.png"
+            mode="aspectFit"
+          />
+          <text class="about-paragraph">
+            我们是深圳元说科技，一直在为高考志愿填报做准备。我们关注的不只是分数和院校，更希望每个家庭在关键选择前，都能获得真实、清晰、可理解的信息。
+          </text>
+          <text class="about-paragraph">
+            很多家长和学生并不缺努力，缺的是足够透明的资料、可靠的判断，以及有人把复杂规则讲明白。我们希望用产品一点点抹平信息差，让志愿填报回到理性、坦诚和对孩子长期发展的尊重。
+          </text>
+          <text class="about-paragraph">
+            我们设计 AI 咨询模块，也是在向张雪峰老师长期用真实话语普及升学信息的方式致敬。希望通过准确、直接、有用的回答，帮学生和家长多了解专业、学校、就业与风险，少走弯路，做出更踏实的选择。
+          </text>
         </view>
-        <view class="contact-actions">
-          <button class="contact-action primary" @click="copyCustomerWechatId">复制微信号</button>
-          <button class="contact-action secondary" @click="previewCustomerWechatQr">查看二维码</button>
+        <view v-else>
+          <text class="contact-desc">添加客服微信，发送用户 ID 或问题截图，我们会继续跟进。</text>
+          <image
+            class="contact-qr"
+            :src="CUSTOMER_WECHAT_QR_IMAGE"
+            mode="aspectFit"
+            @click="previewCustomerWechatQr"
+          />
+          <text class="contact-tip">扫码上方二维码，或复制微信号添加好友。</text>
+          <view class="contact-id-row">
+            <text class="contact-id-label">微信号</text>
+            <text class="contact-id">{{ CUSTOMER_WECHAT_ID }}</text>
+          </view>
+          <view class="contact-actions">
+            <button class="contact-action primary" @click="copyCustomerWechatId">复制微信号</button>
+            <button class="contact-action secondary" @click="previewCustomerWechatQr">查看二维码</button>
+          </view>
         </view>
       </view>
     </view>
@@ -145,21 +157,32 @@
 <script setup>
 import { computed, ref } from 'vue'
 import { onShow, onShareAppMessage } from '@dcloudio/uni-app'
-import { CUSTOMER_WECHAT_ID, CUSTOMER_WECHAT_QR_IMAGE, MEMBERSHIP_PRICE_LABEL } from '../../config.js'
+import { CUSTOMER_WECHAT_ID, CUSTOMER_WECHAT_QR_IMAGE, FREE_DEEP_REPORTS_ENABLED } from '../../config.js'
 import { useMembershipStore } from '../../stores/membership.js'
+import { getOrCreateProfileIdentity } from '../../utils/profile-identity.js'
 import { getProfileReportMode, loadUserProfile, loadAssessments } from '../../utils/storage.js'
 
 const membershipStore = useMembershipStore()
+const profileIdentity = ref(getOrCreateProfileIdentity())
 const profile = ref(loadUserProfile())
 const assessments = ref(loadAssessments())
 const showContactSheet = ref(false)
 const contactSheetTitle = ref('添加客服微信')
+const contactSheetMode = ref('contact')
 
 const shortUserId = computed(() => (membershipStore.userId || 'CLOUD').slice(0, 8).toUpperCase())
+const reportAccessOpen = computed(() => FREE_DEEP_REPORTS_ENABLED || membershipStore.isActive)
+const reportAccessDesc = computed(() => (
+  FREE_DEEP_REPORTS_ENABLED
+    ? '1.3.0 免费开放 · 无需支付或兑换码，可直接生成报告'
+    : membershipStore.isActive
+      ? `权益已解锁 · 剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
+      : '报告权益暂未开放'
+))
 const profileReportMode = computed(() => getProfileReportMode(profile.value))
 const profileScoreDisplay = computed(() => {
   if (profileReportMode.value === 'planning') {
-    return profile.value.score_range || profile.value.grade || '提前规划'
+    return profile.value.score || profile.value.score_range || profile.value.grade || '提前规划'
   }
   if (profileReportMode.value === 'estimated') {
     return profile.value.score || profile.value.score_range || '--'
@@ -197,33 +220,6 @@ function goReport() {
   uni.switchTab({ url: '/pages/report/report' })
 }
 
-async function onMembershipAction() {
-  if (membershipStore.isActive) {
-    goReport()
-    return
-  }
-  await onPayWithWechat()
-}
-
-async function onPayWithWechat() {
-  try {
-    await membershipStore.openMembership()
-    await membershipStore.loadStatus()
-    uni.showToast({ title: 'VIP 已开通', icon: 'success' })
-  } catch (err) {
-    const message = err.message || '支付暂时不可用'
-    uni.showModal({
-      title: err.code === 'PAYMENT_PENDING' ? '支付确认中' : '支付未完成',
-      content: `${message}\n\n如已付款但未解锁，请添加客服微信 ${CUSTOMER_WECHAT_ID} 处理。`,
-      confirmText: '联系客服',
-      cancelText: '关闭',
-      success(res) {
-        if (res.confirm) openContactSheet('联系客服')
-      },
-    })
-  }
-}
-
 function goPrivacy() {
   uni.navigateTo({ url: '/pages/privacy/privacy' })
 }
@@ -233,15 +229,16 @@ function goFeedback() {
 }
 
 function goAbout() {
-  openContactSheet('关于我们')
+  openContactSheet('关于我们', 'about')
 }
 
 function onShare() {
   uni.showToast({ title: '请用右上角 ··· 分享', icon: 'none' })
 }
 
-function openContactSheet(title = '添加客服微信') {
+function openContactSheet(title = '添加客服微信', mode = 'contact') {
   contactSheetTitle.value = title
+  contactSheetMode.value = mode
   showContactSheet.value = true
 }
 
@@ -266,6 +263,7 @@ function previewCustomerWechatQr() {
 }
 
 onShow(() => {
+  profileIdentity.value = getOrCreateProfileIdentity()
   profile.value = loadUserProfile()
   assessments.value = loadAssessments()
   membershipStore.loadStatus().catch(() => {})
@@ -332,18 +330,17 @@ onShareAppMessage(() => ({
 .avatar {
   width: 100rpx;
   height: 100rpx;
-  background: $grad-primary;
+  background: #fff;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8rpx 20rpx rgba(37, 99, 235, 0.25);
+  overflow: hidden;
+  border: 4rpx solid #fff;
+  box-shadow: 0 8rpx 20rpx rgba(249, 115, 22, 0.2);
 }
 
-.avatar-text {
-  color: #fff;
-  font-size: 40rpx;
-  font-weight: 800;
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .user-info {
@@ -429,7 +426,7 @@ onShareAppMessage(() => ({
   background: #E2E8F0;
 }
 
-/* ---- VIP Card ---- */
+/* ---- Report Access Card ---- */
 .vip-status-card {
   background: $grad-vip;
   border-radius: $radius-lg;
@@ -671,6 +668,29 @@ onShareAppMessage(() => ({
   color: $text-secondary;
   font-size: 26rpx;
   line-height: 1.5;
+}
+
+.about-copy {
+  padding: 4rpx 0 8rpx;
+}
+
+.about-logo {
+  width: 144rpx;
+  height: 144rpx;
+  display: block;
+  margin: 4rpx auto 28rpx;
+}
+
+.about-paragraph {
+  display: block;
+  color: $text-secondary;
+  font-size: 28rpx;
+  line-height: 1.72;
+  margin-bottom: 20rpx;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contact-qr {

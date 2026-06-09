@@ -1,6 +1,6 @@
 # Current Live Service Chain
 
-> Last verified: 2026-05-28
+> Last verified: 2026-06-09
 > Purpose: this is the source of truth for current live routing. Use this before older migration, roadmap, or prompt documents.
 
 ## Server Roles
@@ -8,7 +8,7 @@
 | Host | Current role | Verified evidence |
 |---|---|---|
 | `159.75.110.157` | Dify v1.13.3, Dify PostgreSQL/Redis/Weaviate stack, `gaokao-api` container | `curl http://159.75.110.157/v1` returns `X-Version: 1.13.3`; SSH `ubuntu@159.75.110.157` shows Dify containers and `gaokao-api` running; from 159 itself `http://127.0.0.1:5001/api/health` returns `{"records":894681,"status":"ok"}`; from 47, `SCORE_API_URL=http://159.75.110.157/score-api` returns healthy score API responses |
-| `47.113.125.147` | `gaokao-proxy`, report generation, static report/PDF hosting, exposed as `https://gaokao.aicoming.cn` | `GET https://gaokao.aicoming.cn/api/health` returns `{"status":"ok"}`; static report PDF returns `application/pdf`; authenticated deep-report PDF returns `application/pdf`; PM2 process `gaokao-proxy` runs `/opt/gaokao-proxy` on port `3001`; Nginx routes `/api/chat`, `/api/report`, `/reports` to `127.0.0.1:3001`; HTTP redirects to HTTPS |
+| `47.113.125.147` | `gaokao-proxy`, report generation, static report/PDF hosting, exposed as `https://gaokao.aicoming.cn` | `GET https://gaokao.aicoming.cn/api/health` returns `{"status":"ok"}`; static report PDF returns `application/pdf`; authenticated deep-report PDF returns `application/pdf`; 1.3.0 free deep-report access is enabled; PM2 process `gaokao-proxy` runs `/opt/gaokao-proxy` on port `3001`; Nginx routes `/api/chat`, `/api/report`, `/reports` to `127.0.0.1:3001`; HTTP redirects to HTTPS |
 
 ## Runtime Chain
 
@@ -91,9 +91,12 @@ MEMBERSHIP_PRICE_CENTS=1990
 MEMBERSHIP_INVITE_REQUIRED=5
 MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT=10
 MEMBERSHIP_VIP_CODES=<comma-separated launch/test codes>
-DEEPSEEK_MODEL=deepseek-v4-pro
+REPORT_DEEPSEEK_MODEL=deepseek-v4-flash
 SCORE_DATA_YEAR=2025
 DEEP_REPORT_VIEW_TOKEN_TTL_MS=600000
+FREE_DEEP_REPORTS_ENABLED=true
+VITE_FREE_DEEP_REPORTS_ENABLED=true
+VITE_PAYMENT_ENABLED=false
 VITE_PDF_DOWNLOAD_ENABLED=true
 ```
 
@@ -101,7 +104,8 @@ Payment test note:
 
 - 2026-05-26: 1 yuan WeChat Pay smoke test succeeded on 47 with temporary `MEMBERSHIP_PRICE_CENTS=100`; the paid order became `status=paid` and membership became `source=payment`.
 - 2026-05-28: 47 `/opt/gaokao-proxy/.env` was restored to `MEMBERSHIP_PRICE_CENTS=1990`, `DEEPSEEK_MODEL=deepseek-v4-pro`, and `WECHAT_LOGIN_MOCK=0`; `pm2 restart gaokao-proxy --update-env` completed and `/api/health` stayed `200`.
-- Before release, re-run one 19.9 yuan payment smoke test from a fresh WeChat account, then verify comprehensive report generation and PDF downloads.
+- 2026-06-04: comprehensive report generation was moved to `REPORT_DEEPSEEK_MODEL=deepseek-v4-flash`; both the initial request and transient-error retry use Flash, and report generation no longer reads the generic `DEEPSEEK_MODEL` setting.
+- Payment capability is retained but disabled in the 1.3.0 mini-program build. Re-run a real payment smoke test before re-enabling `VITE_PAYMENT_ENABLED=true`.
 
 ### 159 Dify
 
@@ -153,7 +157,7 @@ curl http://127.0.0.1:5001/api/health
 
 1. Mini program calls `POST https://gaokao.aicoming.cn/api/report/generate`.
 2. Nginx on 47 routes to `127.0.0.1:3001`.
-3. `gaokao-proxy` validates `userId`, membership/session state, MBTI completion, and Holland completion. Five-ring completion is no longer required.
+3. `gaokao-proxy` validates `userId`, session state, MBTI completion, and Holland completion. In 1.3.0, `FREE_DEEP_REPORTS_ENABLED=true` bypasses membership gating. Five-ring completion is no longer required.
 4. `gaokao-proxy` builds report context from compact MBTI/Holland assessment summaries, optional Dify conversation history, score/university data, and direct DeepSeek report generation. Existing five-ring questionnaire data is ignored.
 5. Generated HTML is saved under the reports directory on 47.
 6. Response returns `https://gaokao.aicoming.cn/reports/<file>.html`.
@@ -182,12 +186,12 @@ curl -L -s -o /tmp/gaokao-report-domain-test.pdf \
 # 200 application/pdf 129882
 ```
 
-The deep report PDF endpoint is membership protected:
+The deep report PDF endpoint requires an authenticated session. In 1.3.0, free access bypasses membership and quota checks:
 
 ```bash
 GET https://gaokao.aicoming.cn/api/reports/deep/pdf?type=major&id=080901
 # without Authorization: 401
-# with active member Bearer token: 200 application/pdf
+# with authenticated Bearer token and FREE_DEEP_REPORTS_ENABLED=true: 200 application/pdf
 ```
 
 Online deep report reading is separate from PDF download:
@@ -197,7 +201,7 @@ POST https://gaokao.aicoming.cn/api/reports/deep/view-token
 # no membership required: {"url":"https://gaokao.aicoming.cn/reports/deep/view/<signed-token>","expiresIn":600}
 ```
 
-The reader URL renders a searchable HTML report for free and does not consume `MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT`. PDF download remains the offline/export action and consumes one quota.
+The reader URL renders a searchable HTML report for free. In 1.3.0, authenticated PDF download is also free and does not consume `MEMBERSHIP_DEEP_REPORT_DOWNLOAD_LIMIT`; quota enforcement resumes when `FREE_DEEP_REPORTS_ENABLED=false`.
 
 Mini-program builds that should expose PDF download need:
 

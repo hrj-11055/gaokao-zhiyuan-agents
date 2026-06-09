@@ -57,7 +57,7 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         )
         subprocess.run(["node", "-e", script], cwd=ROOT, check=True)
 
-    def test_miniprogram_declares_deep_report_download_page_and_pdf_guards(self):
+    def test_miniprogram_declares_free_deep_report_download_page(self):
         pages = json.loads(self.read("gaokao-miniprogram/src/pages.json"))
         page_paths = [page["path"] for page in pages["pages"]]
 
@@ -74,24 +74,25 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         self.assertIn("在线阅读", download_page)
         self.assertIn("在线阅读不限次数", download_page)
         self.assertIn("在线阅读免费不限次数", download_page)
+        self.assertIn("1.3.0 免费开放", download_page)
+        self.assertIn("ensureReportDownloadAccess", download_page)
+        self.assertIn("FREE_DEEP_REPORTS_ENABLED", download_page)
         self.assertIn("/pages/report-view/report-view", download_page)
         self.assertIn("Authorization", download_page)
         self.assertIn("Bearer ${membershipStore.sessionToken}", download_page)
         self.assertIn("application/pdf", download_page)
-        self.assertIn("5000 字以上完整报告", download_page)
         self.assertIn("暂未找到可下载报告", download_page)
         self.assertIn("请至少输入 2 个字", download_page)
         self.assertIn("uni.showModal", download_page)
-        self.assertIn("uni.switchTab({ url: '/pages/profile/profile' })", download_page)
         self.assertIn("PDF_DOWNLOAD_ENABLED", download_page)
         self.assertIn("PDF 下载未在当前小程序构建中开启", download_page)
         self.assertIn("if (!PDF_DOWNLOAD_ENABLED)", download_page)
-        self.assertIn("downloadQuota", download_page)
-        self.assertIn("剩余下载次数", download_page)
-        self.assertIn("DOWNLOAD_QUOTA_EXHAUSTED", download_page)
-        self.assertIn("深度报告下载次数已用完", download_page)
         self.assertIn("onLoad", download_page)
         self.assertIn("if (membershipStore.sessionToken)", download_page)
+        self.assertNotIn("完整深度报告属于付费权益", download_page)
+        self.assertNotIn("去开通", download_page)
+        self.assertNotIn("uni.switchTab({ url: '/pages/profile/profile' })", download_page)
+        self.assertNotIn("DOWNLOAD_QUOTA_EXHAUSTED", download_page)
 
         open_start = download_page.index("async function openDeepReport")
         open_end = download_page.index("async function downloadDeepPdf")
@@ -102,6 +103,17 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         report_view_page = self.read("gaokao-miniprogram/src/pages/report-view/report-view.vue")
         self.assertIn("/reports/deep/view/", report_view_page)
         self.assertIn("/pages/deep-report-download/deep-report-download", report_view_page)
+
+    def test_download_page_uses_profile_province_school_examples_without_full_report_badge(self):
+        download_page = self.read("gaokao-miniprogram/src/pages/deep-report-download/deep-report-download.vue")
+
+        self.assertIn("loadUserProfile", download_page)
+        self.assertIn("currentProfile", download_page)
+        self.assertIn("PROVINCE_UNIVERSITY_EXAMPLES", download_page)
+        self.assertIn("广东: ['中山大学', '华南理工大学', '深圳大学']", download_page)
+        self.assertIn("湖南: ['湖南大学', '中南大学', '湖南师范大学']", download_page)
+        self.assertIn("provinceUniversityExamples", download_page)
+        self.assertNotIn("5000 字以上完整报告", download_page)
 
     def test_gaokao_api_exposes_token_protected_report_endpoints(self):
         api = self.read("data/gaokao_api.py")
@@ -119,7 +131,7 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         ]:
             self.assertIn(snippet, api)
 
-    def test_proxy_routes_include_paid_deep_pdf_endpoint(self):
+    def test_proxy_routes_include_free_deep_pdf_endpoint(self):
         server = self.read("gaokao-proxy/server.js")
         prompt = self.read("gaokao-proxy/lib/prompts/report-template.js")
 
@@ -132,10 +144,9 @@ class DeepReportDownloadFlowTests(unittest.TestCase):
         self.assertIn("verifyDeepReportViewToken", server)
         self.assertIn("buildDeepReportReaderHtml", server)
         self.assertIn("/reports/deep-reports", server)
+        self.assertIn("FREE_DEEP_REPORTS_ENABLED", server)
         self.assertIn("requireMembershipForReports", server)
-        self.assertIn("commerceStore.canDownloadDeepReport", server)
-        self.assertIn("DOWNLOAD_QUOTA_EXHAUSTED", server)
-        self.assertIn("commerceStore.recordDeepReportDownload", server)
+        self.assertIn("if (!FREE_DEEP_REPORTS_ENABLED)", server)
         self.assertIn("buildDeepReportHtml", server)
         self.assertIn("完整 5000 字以上 PDF", prompt)
         self.assertIn("深度报告下载页", prompt)

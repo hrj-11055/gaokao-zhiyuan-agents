@@ -4,7 +4,7 @@ function hasUsableScore(profile = {}) {
 }
 
 function classifyReportMode(profile = {}) {
-  if ((profile.planning_mode === 'early' || profile.report_mode === 'planning') && !hasUsableScore(profile)) {
+  if (profile.planning_mode === 'early' || profile.report_mode === 'planning') {
     return 'planning'
   }
   if (profile.score_type === 'estimated' || profile.report_mode === 'estimated') {
@@ -17,20 +17,57 @@ function classifyReportMode(profile = {}) {
 function buildTimeAndModeSection(mode) {
   if (mode === 'planning') {
     return `【时间与数据背景】
-当前是提前规划场景，用户可能是高一/高二家长，尚未掌握正式分数。报告重点是专业方向、孩子画像、能力差距、学习路径、目标分数段和家长行动。严禁输出精确冲稳保院校排序。`
+当前是提前规划场景，用户可能是高一/高二家长，尚未掌握正式分数。报告重点是专业方向、孩子画像、能力差距、学习路径、目标分数段和家长行动。涉及录取参考时优先使用 2025 年数据，并用 2024 年数据判断趋势。严禁输出精确冲稳保院校排序。`
   }
   if (mode === 'estimated') {
     return `【时间与数据背景】
 当前使用的是预估分数。预估分数只作为粗定位参考，不是分数预测产品；允许合理误差。报告核心价值必须来自专业适配、孩子画像、家庭约束、风险判断和行动质量。可以给出大致院校层次参考，但不要把预估分建议写成录取承诺，也不要反复用校准提醒打断报告。`
   }
   return `【时间与数据背景】
-当前时间背景是 2026 年 6 月至 7 月，正处于高考出分后、家长和考生集中填报志愿的关键阶段。2025 年录取分数线已经可作为核心历史参考；2023、2024 年数据可辅助判断波动趋势。报告读者是家长和孩子，必须把“能不能上、值不值得上、适不适合上、风险在哪里、下一步怎么核验”讲清楚。`
+当前时间背景是 2026 年 6 月至 7 月，正处于高考出分后、家长和考生集中填报志愿的关键阶段。2025 年录取分数线已经可作为核心历史参考，2024 年数据用于判断波动趋势。报告读者是家长和孩子，必须把“能不能上、值不值得上、适不适合上、风险在哪里、下一步怎么核验”讲清楚。`
 }
 
-function buildCandidatePoolSection(mode, recText) {
+function buildAdvisorRole(mode) {
   if (mode === 'planning') {
-    return `【院校层次认知与后续校准策略资料】
-当前没有正式分数和位次，结构化冲稳保候选池不作为本报告核心依据。Tab 5 应解释未来如何看院校层次、需要收集哪些分数/位次/专业组数据、什么时候回来校准。`
+    return '你是一位专业升学规划顾问，擅长帮助高一、高二家庭做专业探索、能力规划和长期行动安排。'
+  }
+  if (mode === 'estimated') {
+    return '你是一位专业升学规划与志愿定位顾问，擅长基于预估成绩做方向判断和后续校准。'
+  }
+  return '你是一位专业的高考志愿填报顾问，风格参考资深规划专家：直接、专业、给具体可操作的建议。'
+}
+
+function buildAdmissionDataFreshnessRules() {
+  return `【录取数据时效硬规则】
+- 录取数据只允许优先使用 2024-2025 年，2025 年为第一优先，2024 年用于趋势校验。
+- 不得引用或输出 2023 年录取分数、位次、投档线或专业组数据。
+- 如果 2024-2025 年录取数据不足，必须明确说明“近两年数据未覆盖”，不能用 2023 年旧数据代替，也不能自行编造。`
+}
+
+function stripStaleAdmissionLines(value = '') {
+  let admissionContext = false
+  return String(value || '')
+    .split('\n')
+    .filter((line) => {
+      const trimmed = line.trim()
+      if (!trimmed) {
+        admissionContext = false
+        return true
+      }
+      if (/录取|分数线|最低分|位次|投档|招生|专业组/u.test(line)) {
+        admissionContext = true
+      }
+      return !(admissionContext && /2023\s*年?|[|]\s*2023\s*[|]/u.test(line))
+    })
+    .join('\n')
+}
+
+function buildCandidatePoolSection(mode, recText, hasRecommendations = false) {
+  if (mode === 'planning') {
+    return `【2025 年预估院校层次参考与后续校准策略资料】
+当前没有正式分数和位次，以下内容${hasRecommendations ? '按用户预估分数或分数区间生成' : '未取得可用预估分数定位数据'}，只能用于理解目标院校层次，不能作为正式冲稳保志愿推荐。
+${recText}
+Tab 5 应解释未来如何看院校层次、需要收集哪些分数/位次/专业组数据、什么时候回来校准。`
   }
   return `【2025 年结构化冲稳保候选池（Tab 5 院校研究核心依据，禁止编造列表外学校）】
 ${recText}`
@@ -40,6 +77,7 @@ function buildCandidatePoolRules(mode) {
   if (mode === 'planning') {
     return `【院校层次策略使用规则】
 - 当前无正式分数，不能输出具体冲稳保学校排序，也不要把候选池为空当作报告弱点。
+- 如果提供了预估院校层次参考，可以解释这些学校代表的目标层次和能力差距，但必须明确它基于预估分数/区间，不是正式志愿表。
 - Tab 5 必须转为“院校层次认知与后续校准策略”：说明家长未来要收集分数、位次、专业组、招生计划和城市约束，再回来做院校定位。
 - 可以讲院校层次、城市选择、专业组风险的判断方法，但不要虚构学校、专业、分数线和位次。`
   }
@@ -107,20 +145,27 @@ function buildPrompt(profile, messages, majorReports, univData, assessments = {}
     : '（暂无对话记录）'
 
   const majorText = majorReports.length > 0
-    ? majorReports.join('\n\n')
+    ? majorReports.map(stripStaleAdmissionLines).filter(Boolean).join('\n\n')
     : '（该专业深度评估报告正在测算中，目前仅提供基础大模型分析）'
 
   const { recommendations = [], reports = [] } = univData || {}
-  
-  const recText = recommendations.length > 0
-    ? recommendations.slice(0, 18).map(r => {
+  const freshRecommendations = recommendations.filter((item) => {
+    const year = Number(item.year || 2025)
+    return year === 2024 || year === 2025
+  })
+
+  const recText = freshRecommendations.length > 0
+    ? freshRecommendations.slice(0, 18).map(r => {
         const year = r.year || 2025
         const school = r.school_name || r.name || r.school || '未命名院校'
         const major = r.major_name || r.major || r.group_name || r.special_group || '专业组/专业未标注'
         const batch = r.batch || r.batch_name || '批次未标注'
         const minScore = r.min_score ?? '---'
         const minRank = r.min_rank ?? '---'
-        const bucket = r.bucket || r.risk || r.level || '候选'
+        const rawBucket = r.bucket || r.risk || r.level || '候选'
+        const bucket = reportMode === 'planning'
+          ? ({ '冲': '较高目标层', '稳': '匹配目标层', '保': '保守目标层' }[rawBucket] || '目标层次参考')
+          : rawBucket
         const scoreGap = Number.isFinite(Number(minScore)) && studentScore
           ? Number(minScore) - studentScore
           : null
@@ -130,12 +175,14 @@ function buildPrompt(profile, messages, majorReports, univData, assessments = {}
     : '（暂无结构化推荐数据）'
 
   const univText = reports.length > 0
-    ? reports.join('\n\n')
+    ? reports.map(stripStaleAdmissionLines).filter(Boolean).join('\n\n')
     : '（该大学深度评估报告正在测算中，目前仅提供基础大模型分析）'
 
-  return `你是一位专业的高考志愿填报顾问，风格参考资深规划专家：直接、专业、给具体可操作的建议。根据以下考生完整信息，生成一份个人化的综合测评参考报告。
+  return `${buildAdvisorRole(reportMode)}根据以下考生完整信息，生成一份个人化的综合测评参考报告。
 
 ${buildTimeAndModeSection(reportMode)}
+
+${buildAdmissionDataFreshnessRules()}
 
 【考生基本信息】
 省份：${profile.province || '未填写'} | 科目：${profile.category || '未填写'} | 分数：${profile.score || '未填写'} | 位次：${profile.rank || '未填写'} | 规划模式：${profile.planning_mode || 'score'} | 分数类型：${profile.score_type || (reportMode === 'official' ? 'official' : '未填写')} | 年级/身份：${[profile.grade, profile.identity].filter(Boolean).join('/') || '未填写'} | 预估分段：${profile.score_range || '未填写'}
@@ -147,7 +194,7 @@ ${hollandText}
 【AI 对话记录（最近 20 条）】
 ${msgText}
 
-${buildCandidatePoolSection(reportMode, recText)}
+${buildCandidatePoolSection(reportMode, recText, freshRecommendations.length > 0)}
 
 ${buildCandidatePoolRules(reportMode)}
 
@@ -210,7 +257,7 @@ ${univText}
 - 每个模块至少包含 4 个实质分析 blocks，其中至少 2 个 text block 各不少于 250 字；用“结论 + 原因 + 对考生的影响 + 家长核验动作”的方式展开，禁止空泛重复和注水。
 - 必须包含“志愿执行清单”：使用 list 或 alert 形式，每条建议必须包含动作、原因、核验材料。
 - 每个模块至少包含 1 个 level 为 "warning" 或 "danger" 的 alert 块，作为“家长核验动作”。
-- Tab 4 专业深度研究和 Tab 5 大学深度研究是综合报告正文的一部分，也必须各写不少于 1000 字：先基于资料做长篇决策分析，再在该模块最后一个 block 中添加 text，内容提示“完整 5000 字以上 PDF 已入库，需要到小程序‘深度报告下载页’付费后选择对应专业/学校下载”。
+- Tab 4 专业深度研究和 Tab 5 大学深度研究是综合报告正文的一部分，也必须各写不少于 1000 字：先基于资料做长篇决策分析，再在该模块最后一个 block 中添加 text，内容提示“完整 5000 字以上 PDF 已入库，可到小程序‘深度报告下载页’选择对应专业/学校在线阅读或下载”。
 ${buildTab5ModeRules(reportMode)}
 - 不要生成额外的目录页、Table 页或单独的表格页；表格只能作为正文中的辅助 block，核心价值必须来自顾问式文字分析。
 - 不要使用“AI 总评”“大模型认为”等词汇，统一改成“顾问结论”。`

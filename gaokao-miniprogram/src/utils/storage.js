@@ -3,7 +3,9 @@
 const STORAGE_KEY = 'chat_history'
 const USER_ID_KEY = 'user_id'
 const USER_PROFILE_KEY = 'user_profile'
+const PROFILE_IDENTITY_KEY = 'profile_identity'
 const REPORT_KEY = 'user_report'
+const PERSONALITY_GUIDE_DISMISSED_KEY = 'chat_personality_guide_dismissed'
 
 /**
  * 获取或创建用户 ID（本地生成，无需微信登录）
@@ -67,6 +69,14 @@ export function clearHistory() {
   uni.removeStorageSync(STORAGE_KEY)
 }
 
+export function isPersonalityGuideDismissed() {
+  return uni.getStorageSync(PERSONALITY_GUIDE_DISMISSED_KEY) === true
+}
+
+export function dismissPersonalityGuide() {
+  uni.setStorageSync(PERSONALITY_GUIDE_DISMISSED_KEY, true)
+}
+
 /**
  * 清空本地保存的用户数据。
  */
@@ -75,9 +85,11 @@ export function clearAllLocalData() {
     STORAGE_KEY,
     USER_ID_KEY,
     USER_PROFILE_KEY,
+    PROFILE_IDENTITY_KEY,
     QUESTIONNAIRE_KEY,
     ASSESSMENTS_KEY,
-    REPORT_KEY
+    REPORT_KEY,
+    PERSONALITY_GUIDE_DISMISSED_KEY
   ].forEach((key) => uni.removeStorageSync(key))
 }
 
@@ -176,7 +188,7 @@ export function hasProfileScore(profile = {}) {
 
 export function getProfileReportMode(profile = {}) {
   const data = normalizeUserProfile(profile)
-  if (data.planning_mode === PROFILE_PLANNING_MODES.EARLY && !isValidScore(data.score)) {
+  if (data.planning_mode === PROFILE_PLANNING_MODES.EARLY) {
     return 'planning'
   }
   if (data.score_type === PROFILE_SCORE_TYPES.ESTIMATED) {

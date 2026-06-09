@@ -82,6 +82,35 @@ class ReportQualityImprovementTests(unittest.TestCase):
             assert.equal(html.includes('Noto Sans CJK SC'), true)
         """)
 
+    def test_deep_report_uses_structured_sections_without_repeating_full_raw_content(self):
+        self.run_node_test(r"""
+            const report = {
+              code: '080710T',
+              name: '集成电路设计与集成系统',
+              word_count: 6800,
+              data: {
+                layer3_detail: {
+                  overview: {
+                    title: '专业画像',
+                    raw_content: '精排章节唯一内容😀'
+                  }
+                },
+                layer4_supplement: {
+                  full_raw_content: '精排章节唯一内容😀\n原始全文不应再次展示'
+                }
+              }
+            }
+
+            const pdfHtml = deep.buildDeepReportHtml({ type: 'major', report })
+            const readerHtml = deep.buildDeepReportReaderHtml({ type: 'major', report })
+
+            assert.equal(pdfHtml.includes('完整原始研究'), false)
+            assert.equal(readerHtml.includes('完整原始研究'), false)
+            assert.equal(pdfHtml.includes('原始全文不应再次展示'), false)
+            assert.equal(readerHtml.includes('原始全文不应再次展示'), false)
+            assert.equal(readerHtml.includes('<span class="hero-pill">9 字</span>'), true)
+        """)
+
     def test_report_pdf_generation_forces_cjk_fonts_and_regenerates_old_pdfs(self):
         builder = self.read("gaokao-proxy/lib/report-builder.js")
         pdf_generator = self.read("gaokao-proxy/lib/pdf-generator.js")
@@ -122,8 +151,10 @@ class ReportQualityImprovementTests(unittest.TestCase):
             "summary-card-row",
             "decisionBadges",
             "summaryTakeaways",
-            "重点摘要",
-            "行动建议",
+            "关键判断",
+            "下一步核验",
+            "school-logo",
+            "/api/reports/universities/logo",
         ]:
             self.assertIn(snippet, page)
 

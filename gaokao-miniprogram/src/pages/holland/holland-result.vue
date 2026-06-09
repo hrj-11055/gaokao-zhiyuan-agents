@@ -131,21 +131,20 @@
         </view>
       </view>
 
-      <view class="next-step-bar" @click="goNextStep">
-        <view class="next-step-copy">
-          <text class="next-step-kicker">下一步</text>
-          <text class="next-step-title">{{ nextStepTitle }}</text>
-          <text class="next-step-desc">{{ nextStepDesc }}</text>
-        </view>
-        <text class="next-step-action">{{ nextStepAction }}</text>
-      </view>
-
       <!-- 底部悬浮按钮 -->
       <view class="footer-bar">
         <view class="footer-blur" />
-        <view class="footer-btns">
-          <button v-if="resultVersion === 'basic'" class="upgrade-btn" @click="handleUpgrade">🔬 升级到完整版 (60题)</button>
-          <button class="retry-btn" @click="retry">重新测试</button>
+        <view class="footer-inner">
+          <text class="footer-progress">已完成 {{ resultVersion === 'basic' ? '精简版' : '完整版' }}霍兰德测试 · {{ questionCount }}题</text>
+          <button class="footer-next-step" @click="goNextStep">
+            <text class="footer-next-kicker">下一步要做的事情</text>
+            <text class="footer-next-title">{{ nextStepTitle }}</text>
+            <text class="footer-next-action">{{ nextStepAction }}</text>
+          </button>
+          <view class="footer-btns">
+            <button v-if="resultVersion === 'basic'" class="footer-upgrade-btn" @click="handleUpgrade">升级完整版</button>
+          </view>
+          <button class="retry-link" @click="retry">结果不满意，重新测一次</button>
         </view>
       </view>
     </view>
@@ -200,12 +199,10 @@ const dimensionLabels = HOLLAND_TYPE_LABELS
 const hollandDimensionMaxScores = computed(() => getHollandDimensionMaxScores(resultVersion.value))
 const hollandMaxScore = computed(() => getHollandMaxScore(resultVersion.value))
 const resultModeName = computed(() => resultVersion.value === 'basic' ? '精简版' : '完整版')
+const questionCount = computed(() => (resultVersion.value === 'basic' ? 12 : 60))
 const scoreScaleTip = computed(() => `${resultModeName.value}雷达图按本版满分 ${hollandMaxScore.value} 分绘制`)
 const mbtiDone = computed(() => Boolean(assessmentSnapshot.value?.mbti?.completed))
 const nextStepTitle = computed(() => (mbtiDone.value ? '生成综合报告' : '继续完成性格类型定位'))
-const nextStepDesc = computed(() => (
-  mbtiDone.value ? '两项测评已完成，可以进入报告生成页。' : '补上性格类型，报告会更能判断学习方式和专业适配。'
-))
 const nextStepAction = computed(() => (mbtiDone.value ? '去报告' : '去测评'))
 
 // 排序后的维度（按分数降序）
@@ -448,7 +445,7 @@ onShow(() => {
   min-height: 100vh;
   background: #F4F7FA; // 参考图极简冷灰蓝背景
   padding: 32rpx;
-  padding-bottom: calc(160rpx + env(safe-area-inset-bottom));
+  padding-bottom: calc(340rpx + env(safe-area-inset-bottom));
   box-sizing: border-box;
   position: relative;
 }
@@ -896,7 +893,7 @@ onShow(() => {
   bottom: 0;
   left: 0;
   right: 0;
-  height: calc(120rpx + env(safe-area-inset-bottom));
+  min-height: calc(300rpx + env(safe-area-inset-bottom));
   z-index: 50;
   display: flex;
   flex-direction: column;
@@ -916,37 +913,66 @@ onShow(() => {
   z-index: 1;
 }
 
-.footer-btns {
+.footer-inner {
   position: relative;
-  padding: 0 32rpx;
+  padding: 18rpx 32rpx 12rpx;
   padding-bottom: env(safe-area-inset-bottom);
   z-index: 2;
 }
 
-.retry-btn {
+.footer-progress {
+  display: block;
+  text-align: center;
+  font-size: 23rpx;
+  color: $text-muted;
+  margin-bottom: 14rpx;
+}
+
+.footer-next-step {
   width: 100%;
-  height: 84rpx;
-  background: #FFFFFF;
-  color: $text-primary;
-  border: 1px solid #E2E8F0;
+  height: 88rpx;
+  margin-bottom: 14rpx;
+  padding: 0 18rpx;
+  background: #F0FDFA;
+  border: 1rpx solid #CCFBF1;
   border-radius: $radius-full;
-  font-size: 28rpx;
-  font-weight: 700;
   display: flex;
-  justify-content: center;
   align-items: center;
-  transition: all 0.2s;
-
-  &:active {
-    background: #F1F5F9;
-  }
+  gap: 12rpx;
+  box-shadow: 0 8rpx 18rpx rgba(15, 118, 110, 0.12);
 }
 
-.retry-btn::after {
-  border: none;
+.footer-next-kicker {
+  flex-shrink: 0;
+  font-size: 20rpx;
+  color: #0F766E;
+  font-weight: 800;
 }
 
-.upgrade-btn {
+.footer-next-title {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  font-size: 28rpx;
+  color: $text-primary;
+  font-weight: 800;
+}
+
+.footer-next-action {
+  flex-shrink: 0;
+  min-width: 108rpx;
+  text-align: center;
+  color: #0F766E;
+  font-size: 25rpx;
+  font-weight: 800;
+}
+
+.footer-btns {
+  display: flex;
+  gap: 18rpx;
+}
+
+.footer-upgrade-btn {
   width: 100%;
   height: 84rpx;
   background: $brand-primary;
@@ -957,9 +983,27 @@ onShow(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 16rpx;
+  transition: all 0.2s;
 }
-.upgrade-btn::after { border: none; }
+
+.retry-link {
+  width: 100%;
+  height: 48rpx;
+  margin-top: 8rpx;
+  background: transparent;
+  color: $text-muted;
+  border: none;
+  font-size: 23rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-next-step::after,
+.footer-upgrade-btn::after,
+.retry-link::after {
+  border: none;
+}
 
 .modal-overlay {
   position: fixed;

@@ -60,16 +60,19 @@ class ReportImporter:
         print("✓ 数据库连接已关闭")
 
     def calculate_word_count(self, data: Dict) -> int:
-        """计算报告字数"""
+        """按用户实际可见的正文计算报告字数。"""
         count = 0
         if 'layer3_detail' in data:
             for module_key, module_data in data['layer3_detail'].items():
                 if isinstance(module_data, dict) and 'raw_content' in module_data:
                     count += len(module_data['raw_content'])
-        if 'layer4_supplement' in data:
-            if 'full_raw_content' in data['layer4_supplement']:
-                count += len(data['layer4_supplement']['full_raw_content'])
-        return count
+        if count > 0:
+            return count
+
+        layer4 = data.get('layer4_supplement', {})
+        if isinstance(layer4, dict):
+            return len(layer4.get('full_raw_content', ''))
+        return 0
 
     def import_major(self, code: str, data: Dict) -> bool:
         """导入单个专业报告"""

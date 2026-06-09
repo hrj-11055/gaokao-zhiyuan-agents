@@ -97,6 +97,23 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
               report_mode: 'planning'
             })
 
+            const earlyWithEstimatedScore = normalizeUserProfile({
+              province: '广东',
+              category: '物理类',
+              planning_mode: 'early',
+              grade: '高二',
+              score: 550
+            })
+            assert.equal(getProfileReportMode(earlyWithEstimatedScore), 'planning')
+            assert.deepEqual(buildProfileInputs(earlyWithEstimatedScore), {
+              province: '广东',
+              category: '物理类',
+              planning_mode: 'early',
+              grade: '高二',
+              score: '550',
+              report_mode: 'planning'
+            })
+
             saveUserProfile({
               province: '广东',
               category: '物理类',
@@ -141,6 +158,26 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
               career_goal: '优先高薪，能接受考研'
             })
             """.replace("1710000000000", str(1710000000000)),
+        )
+
+    def test_clear_all_local_data_removes_profile_identity(self):
+        source = (ROOT / "gaokao-miniprogram" / "src" / "utils" / "storage.js").read_text(encoding="utf-8")
+
+        self.run_node_test(
+            source,
+            "import { clearAllLocalData } from './module.mjs'",
+            """
+            const removedKeys = []
+            globalThis.uni = {
+              removeStorageSync(key) {
+                removedKeys.push(key)
+              }
+            }
+
+            clearAllLocalData()
+
+            assert.equal(removedKeys.includes('profile_identity'), true)
+            """,
         )
 
     def test_dify_stream_request_includes_profile_inputs(self):
@@ -227,6 +264,16 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
             assert.equal(rank.field, 'rank')
             assert.equal(/家庭|兴趣|地域|考研|考公/.test(rank.question), false)
             assert.deepEqual(mergeFollowupAnswer({}, 'rank', '位次32000'), { rank: 32000 })
+
+            const earlyPersonal = getNextPersonalProfileFollowup({
+              province: '广东',
+              category: '物理类',
+              planning_mode: 'early',
+              report_mode: 'planning',
+              grade: '高二'
+            })
+            assert.equal(earlyPersonal.field, 'family_resources')
+            assert.equal(/全省位次|同分段/.test(earlyPersonal.question), false)
 
             const firstRecommendationProfile = getNextRecommendationProfileFollowup({
               province: '广东',
@@ -328,8 +375,25 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
             })
             assert.equal(questions.length, 4)
             assert.ok(questions.some((question) => question.includes('广东') && question.includes('600分')))
-            assert.ok(questions.some((question) => question.includes('工科') || question.includes('理科')))
-            assert.equal(questions.includes('推荐哪些学校？'), false)
+            assert.ok(questions.some((question) => question.includes('踩坑')))
+            assert.ok(questions.some((question) => question.includes('怎么排序')))
+            assert.ok(questions.some((question) => question.includes('3 条报考路线')))
+            assert.ok(questions.some((question) => question.includes('热门专业')))
+            assert.equal(questions.some((question) => /工科还是理科|补充哪些个人信息/.test(question)), false)
+
+            const earlyQuestions = buildCandidateQuestions({
+              province: '广东',
+              category: '物理类',
+              planning_mode: 'early',
+              grade: '高二',
+              identity: '家长'
+            })
+            assert.equal(earlyQuestions.length, 4)
+            assert.ok(earlyQuestions.some((question) => question.includes('优先验证')))
+            assert.ok(earlyQuestions.some((question) => question.includes('真实体验')))
+            assert.ok(earlyQuestions.some((question) => question.includes('能力')))
+            assert.ok(earlyQuestions.some((question) => question.includes('行动清单')))
+            assert.equal(earlyQuestions.some((question) => /分数|位次|冲稳保|能上什么学校/.test(question)), false)
             """,
         )
 
@@ -358,6 +422,18 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
           inputs: {{ province: '广东', category: '物理类', score: '600' }}
         }})
         assert.equal(completeCore, null)
+
+        const earlyPlanning = buildProfileGateAnswer({{
+          query: '帮我推荐学校',
+          inputs: {{
+            province: '广东',
+            category: '物理类',
+            planning_mode: 'early',
+            report_mode: 'planning',
+            grade: '高二'
+          }}
+        }})
+        assert.equal(earlyPlanning, null)
 
         const afterOnePersonalField = buildProfileGateAnswer({{
           query: '帮我推荐学校',
@@ -407,6 +483,16 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
         self.assertIn("inputs: profileInputs", text)
         self.assertNotIn("!hasAnyPersonalProfileInput(profileInputs)", text)
 
+    def test_proxy_preserves_planning_mode_inputs(self):
+        server = (ROOT / "gaokao-proxy" / "server.js").read_text(encoding="utf-8")
+
+        self.assertIn("inputs.planning_mode", server)
+        self.assertIn("inputs.report_mode", server)
+        self.assertIn("inputs.score_type", server)
+        self.assertIn("'score_range'", server)
+        self.assertIn("'grade'", server)
+        self.assertIn("'identity'", server)
+
     def test_chat_page_blocks_input_until_core_profile_is_complete(self):
         chat_page = (ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "chat.vue").read_text(encoding="utf-8")
         use_chat = (ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "useChat.js").read_text(encoding="utf-8")
@@ -432,21 +518,46 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
         self.assertIn("提前规划", home)
         self.assertIn("预估分数区间", home)
         self.assertIn("无分数看专业规划，有分数看院校定位", home)
+        self.assertIn("calc(92rpx + env(safe-area-inset-top))", home)
+        self.assertIn("width: 104rpx; height: 104rpx", home)
         self.assertIn("selectPlanningMode", home)
         self.assertIn("selectScoreType", home)
         self.assertNotIn("progress-card.ready", home)
         self.assertNotIn("请补全省份、科类和分数", home)
 
-    def test_candidate_questions_are_anchored_below_ai_replies(self):
+    def test_home_profile_sheet_uses_province_picker(self):
+        home = (ROOT / "gaokao-miniprogram" / "src" / "pages" / "index" / "index.vue").read_text(encoding="utf-8")
+
+        self.assertIn("<picker", home)
+        self.assertIn('mode="selector"', home)
+        self.assertIn(":range=\"PROVINCE_OPTIONS\"", home)
+        self.assertIn("@change=\"selectProvince\"", home)
+        self.assertIn("provincePickerIndex", home)
+        self.assertIn("province-picker", home)
+        self.assertNotIn('v-model.trim="draft.province" class="field-input" placeholder="例如：广东"', home)
+
+    def test_chat_guides_multi_round_answers_to_personality_test(self):
         chat_page = (ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "chat.vue").read_text(encoding="utf-8")
+        guide = (ROOT / "gaokao-miniprogram" / "src" / "components" / "PersonalityAssessmentGuide.vue").read_text(encoding="utf-8")
+        trigger = (ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "personalityAssessmentGuide.js").read_text(encoding="utf-8")
 
         self.assertIn("showWelcomeSuggestions", chat_page)
-        self.assertIn("shouldShowSuggestionsAfterMessage(msg, index)", chat_page)
+        self.assertIn('v-if="index === personalityGuideMessageIndex"', chat_page)
+        self.assertIn("findPersonalityGuideMessageIndex", chat_page)
+        self.assertIn("loadAssessments", chat_page)
+        self.assertIn("assessments.value.mbti.completed", chat_page)
+        self.assertIn("PERSONALITY_GUIDE_LONG_ANSWER_MIN_ROUND = 3", trigger)
+        self.assertIn("PERSONALITY_GUIDE_LONG_ANSWER_MIN_LENGTH = 500", trigger)
+        self.assertIn("PERSONALITY_GUIDE_FALLBACK_ROUND = 6", trigger)
+        self.assertIn("message.truncated", trigger)
+        self.assertIn("去做性格测试", guide)
+        self.assertIn("稍后再说", guide)
+        self.assertIn("uni.navigateTo({ url: '/pages/mbti/mbti' })", chat_page)
         self.assertIn("suggestion-panel", chat_page)
-        self.assertIn("建议下一问", chat_page)
+        self.assertIn("从关键决策开始", chat_page)
         self.assertIn("messages.value.length === 0 && isProfileReady.value", chat_page)
-        self.assertIn("msg.role === 'ai'", chat_page)
-        self.assertIn("index === messages.value.length - 1", chat_page)
+        self.assertNotIn("shouldShowSuggestionsAfterMessage", chat_page)
+        self.assertNotIn("建议下一问", chat_page)
         self.assertNotIn("<!-- Chips -->", chat_page)
         self.assertNotIn("v-if=\"messages.length === 0 && isProfileReady\"", chat_page)
 
@@ -552,6 +663,20 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
         assert.match(deepGate.answer, /先别急着直接排冲稳保/)
         assert.doesNotMatch(deepGate.answer, /全省位次/)
 
+        const earlyDeepGate = buildDeepProfileGateAnswer({{
+          query: '帮我推荐学校',
+          inputs: {{
+            province: '广东',
+            category: '物理类',
+            planning_mode: 'early',
+            report_mode: 'planning',
+            grade: '高二'
+          }}
+        }})
+        assert.equal(earlyDeepGate.metadata.field, 'family_resources')
+        assert.match(earlyDeepGate.answer, /提前升学规划/)
+        assert.doesNotMatch(earlyDeepGate.answer, /分数|位次|冲稳保/)
+
         const readyForRecommendation = buildDeepProfileGateAnswer({{
           query: '广东600分物理类能上什么学校',
           inputs: {{
@@ -581,6 +706,16 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
         assert.match(followup, /回答完用户当前问题后/)
         assert.match(followup, /全省位次/)
 
+        const earlyFollowup = buildPostAnswerFollowupInstruction({{
+          province: '广东',
+          category: '物理类',
+          planning_mode: 'early',
+          report_mode: 'planning',
+          grade: '高二'
+        }})
+        assert.match(earlyFollowup, /家里预算和资源/)
+        assert.doesNotMatch(earlyFollowup, /全省位次/)
+
         const guidedWithInputs = buildRecommendationGuidedQuery('广东600分物理类能上什么学校', {{
           inputs: {{ province: '广东', category: '物理类', score: '600' }},
           scoreContext: '稳1. 山东大学：609分，最低位次 16821'
@@ -606,6 +741,33 @@ class ProfileStorageAndInputsTests(unittest.TestCase):
         assert.equal(starter.metadata.starter_guidance, true)
         assert.match(starter.answer, /你不用会提问/)
         assert.match(starter.answer, /专业排雷/)
+
+        const earlyStarter = buildStarterGuidanceAnswer({{
+          inputs: {{
+            province: '广东',
+            category: '物理类',
+            planning_mode: 'early',
+            report_mode: 'planning',
+            grade: '高二'
+          }}
+        }})
+        assert.match(earlyStarter.answer, /提前升学规划/)
+        assert.doesNotMatch(earlyStarter.answer, /分数和位次|冲稳保/)
+
+        const earlyGuided = buildRecommendationGuidedQuery('帮我推荐学校', {{
+          inputs: {{
+            province: '广东',
+            category: '物理类',
+            planning_mode: 'early',
+            report_mode: 'planning',
+            grade: '高二'
+          }}
+        }})
+        assert.match(earlyGuided, /提前升学规划/)
+        assert.match(earlyGuided, /不能输出精确冲稳保/)
+        assert.match(earlyGuided, /年级：高二/)
+        assert.doesNotMatch(earlyGuided, /2026 年高考生/)
+        assert.doesNotMatch(earlyGuided, /每个关键推荐必须包含/)
 
         assert.deepEqual(
           extractSchoolScoreLookup('中山大学在广东录取线是多少', {{}}),

@@ -4,6 +4,11 @@ const SCORE_API_URL = process.env.SCORE_API_URL || 'http://159.75.110.157/score-
 const pg = require('./pg')
 const { extractFullContent } = require('./deep-report-pdf')
 const {
+  fetchRecommendationContext,
+  flattenRecommendationContext,
+  hasRecommendationPosition,
+} = require('./recommendation-context-client')
+const {
   fetchReportDetail,
   hasReportDataApi,
   listReports,
@@ -101,22 +106,27 @@ async function fetchMajorReports(questionnaire) {
  * 获取院校推荐和大学报告内容（从 PostgreSQL）
  */
 async function fetchUnivReports(profile) {
-  const { province, score, category } = profile || {}
-  if (!province || !score) return { recommendations: [], reports: [] }
-
-  let recommendations = []
-  try {
-    const url = `${SCORE_API_URL.replace(/\/+$/, '')}/api/recommend?province=${encodeURIComponent(province)}&score=${score}&category=${encodeURIComponent(category || '')}&year=2025&limit=15`
-    const res = await fetch(url, { signal: AbortSignal.timeout(5000) })
-    if (res.ok) {
-      const data = await res.json()
-      recommendations = data.recommendations || data.schools || []
-    }
-  } catch (err) {
-    console.warn('Score API failed:', err.message)
+  const { province, category } = profile || {}
+  if (!province || !category || !hasRecommendationPosition(profile)) {
+    return { recommendations: [], reports: [], recommendationContext: null }
   }
 
-  if (recommendations.length === 0) return { recommendations: [], reports: [] }
+  let recommendations = []
+  let recommendationContext = null
+  try {
+    recommendationContext = await fetchRecommendationContext(profile, {
+      scoreApiUrl: SCORE_API_URL,
+      year: 2025,
+      limitPerTier: 10,
+    })
+    recommendations = flattenRecommendationContext(recommendationContext)
+  } catch (err) {
+    console.warn('Recommendation context API failed:', err.message)
+  }
+
+  if (recommendations.length === 0) {
+    return { recommendations: [], reports: [], recommendationContext }
+  }
 
   const univNames = recommendations.slice(0, 5).map(r => r.school_name || r.name || r.school).filter(Boolean)
 
@@ -135,8 +145,9 @@ async function fetchUnivReports(profile) {
     }
 
     return {
-      recommendations: recommendations.slice(0, 10),
+      recommendations: recommendations.slice(0, 18),
       reports,
+      recommendationContext,
     }
   }
 
@@ -160,8 +171,9 @@ async function fetchUnivReports(profile) {
   }
 
   return {
-    recommendations: recommendations.slice(0, 10),
-    reports: reports.filter(Boolean)
+    recommendations: recommendations.slice(0, 18),
+    reports: reports.filter(Boolean),
+    recommendationContext,
   }
 }
 

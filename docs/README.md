@@ -23,11 +23,11 @@
 - 小程序 API Base：`https://gaokao.aicoming.cn`。
 - 47 服务器：`gaokao-proxy`、会员/支付、综合报告生成、静态报告/PDF。
 - 159 服务器：Dify、Dify 依赖栈、`gaokao-api`、报告 PostgreSQL 数据。
-- 正式会员价格：`¥19.9`，后端金额 `MEMBERSHIP_PRICE_CENTS=1990`。
-- 会员替代解锁：邀请 5 位有效新用户，或兑换后台发放的邀请码。
+- 1.3.0 默认免费开放深度报告与 PDF 下载：前端 `VITE_FREE_DEEP_REPORTS_ENABLED=true`、`VITE_PAYMENT_ENABLED=false`，后端 `FREE_DEEP_REPORTS_ENABLED=true`。
+- 原会员、支付、邀请和邀请码能力仍保留，关闭免费开关后可恢复；历史正式价格配置为 `¥19.9`。
 - 当前报告生成前置测评：只要求性格类型定位（MBTI 结果摘要）和霍兰德职业兴趣（RIASEC code/scores/indicators）。五环问卷入口已关闭，旧五环数据保留但不再参与报告准备度、接口校验、专业资料抓取或最终 prompt。
-- 综合报告目标模型：`DEEPSEEK_MODEL=deepseek-v4-pro`。
-- 深度报告在线阅读免费；深度 PDF 下载需要会员并消耗额度。
+- 综合报告目标模型：`REPORT_DEEPSEEK_MODEL=deepseek-v4-flash`。
+- 深度报告在线阅读免费；1.3.0 下登录后可免费下载深度 PDF，不消耗会员额度。
 - 客服反馈微信号：`HRJ-11055`。
 - 订单/会员人工排查：47 服务器 `/opt/gaokao-proxy` 下使用 `npm run commerce-ops -- lookup ...`。
 

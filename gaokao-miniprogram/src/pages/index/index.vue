@@ -88,18 +88,46 @@
     </view>
 
     <!-- 已就绪时底部的报告 hero -->
-    <view v-if="step3Done && !membershipStore.isActive && !reportDone" class="report-hero" @click="goReport">
+    <view v-if="step3Done && !reportDone" class="report-hero" @click="goReport">
       <view class="report-hero-glow" />
       <view class="report-hero-content">
         <view class="report-hero-text">
-          <text class="report-hero-title">完整志愿报告待解锁</text>
-          <text class="report-hero-price">{{ MEMBERSHIP_PRICE_LABEL }}</text>
+          <text class="report-hero-title">志愿报告可以生成了</text>
+          <text class="report-hero-price">1.3.0 免费开放</text>
           <text class="report-hero-sub">完整报告 + 深度阅读 + PDF 下载额度</text>
-          <text class="report-hero-sub">邀请 5 位同学免费获取：新用户完成基础资料才计数 ({{ membershipStore.effectiveInviteCount }}/{{ membershipStore.requiredInviteCount }})</text>
+          <text class="report-hero-sub">无需支付或兑换码，完成准备后可直接生成</text>
         </view>
         <text class="report-hero-icon">报告</text>
       </view>
-      <view class="report-hero-cta">查看权益并生成报告 →</view>
+      <view class="report-hero-cta">立即生成报告 →</view>
+    </view>
+
+    <!-- 院校与专业深度报告快捷入口 -->
+    <view class="deep-report-section">
+      <view class="section-heading">
+        <text class="section-title">深度报告库</text>
+        <text class="section-subtitle">先研究清楚，再做志愿选择</text>
+      </view>
+      <view class="deep-report-grid">
+        <view class="deep-report-card university" @click="goDeepReport('university')">
+          <view class="deep-report-icon">校</view>
+          <text class="deep-report-title">院校深度报告</text>
+          <text class="deep-report-desc">看清学校定位、王牌专业与毕业出路</text>
+          <view class="deep-report-link">
+            <text>查院校</text>
+            <text class="deep-report-arrow">›</text>
+          </view>
+        </view>
+        <view class="deep-report-card major" @click="goDeepReport('major')">
+          <view class="deep-report-icon">专</view>
+          <text class="deep-report-title">专业深度报告</text>
+          <text class="deep-report-desc">判断专业前景、适合人群与报考风险</text>
+          <view class="deep-report-link">
+            <text>查专业</text>
+            <text class="deep-report-arrow">›</text>
+          </view>
+        </view>
+      </view>
     </view>
 
     <view v-if="showProfileSheet" class="profile-sheet-mask" @click="closeProfileSheet">
@@ -134,7 +162,17 @@
 
         <view class="field-block">
           <text class="field-label">省份</text>
-          <input v-model.trim="draft.province" class="field-input" placeholder="例如：广东" />
+          <picker
+            mode="selector"
+            :range="PROVINCE_OPTIONS"
+            :value="provincePickerValue"
+            @change="selectProvince"
+          >
+            <view class="province-picker" :class="{ placeholder: !draft.province }">
+              <text class="province-picker-text">{{ draft.province || '请选择省份' }}</text>
+              <text class="province-picker-arrow">⌄</text>
+            </view>
+          </picker>
         </view>
 
         <view class="field-block">
@@ -204,14 +242,15 @@
           </view>
         </view>
 
-        <view v-if="draft.planning_mode === 'early'" class="field-block">
-          <text class="field-label">预估分数区间</text>
-          <input v-model.trim="draft.score_range" class="field-input" placeholder="选填，例如：520-560" />
-        </view>
-
-        <view class="field-block">
-          <text class="field-label">家庭预算或城市偏好</text>
-          <input v-model.trim="draft.family_resources" class="field-input" placeholder="选填，例如：预算敏感、优先广东" />
+        <view v-if="draft.planning_mode === 'early'" class="field-row">
+          <view class="field-block half">
+            <text class="field-label">预估分数</text>
+            <input v-model.trim="draft.score" class="field-input" type="number" placeholder="选填，例如：550" />
+          </view>
+          <view class="field-block half">
+            <text class="field-label">预估分数区间</text>
+            <input v-model.trim="draft.score_range" class="field-input" placeholder="选填，例如：520-560" />
+          </view>
         </view>
 
         <button class="profile-save-btn" @click="saveProfileDraft">保存信息</button>
@@ -228,15 +267,48 @@
 
 <script setup>
 import { computed, ref } from 'vue'
-import { onLoad, onShow, onUnload } from '@dcloudio/uni-app'
+import { onLoad, onShow, onUnload, onShareAppMessage } from '@dcloudio/uni-app'
 import { useHomeProgress, StepStatus } from '../../composables/useHomeProgress.js'
 import { useMembershipStore } from '../../stores/membership.js'
-import { MEMBERSHIP_PRICE_LABEL } from '../../config.js'
 import {
   getProfileReportMode,
   isProfileComplete,
   saveUserProfile,
 } from '../../utils/storage.js'
+
+const PROVINCE_OPTIONS = [
+  '北京',
+  '天津',
+  '河北',
+  '山西',
+  '内蒙古',
+  '辽宁',
+  '吉林',
+  '黑龙江',
+  '上海',
+  '江苏',
+  '浙江',
+  '安徽',
+  '福建',
+  '江西',
+  '山东',
+  '河南',
+  '湖北',
+  '湖南',
+  '广东',
+  '广西',
+  '海南',
+  '重庆',
+  '四川',
+  '贵州',
+  '云南',
+  '西藏',
+  '陕西',
+  '甘肃',
+  '青海',
+  '宁夏',
+  '新疆',
+]
 
 const membershipStore = useMembershipStore()
 const {
@@ -267,7 +339,7 @@ function createDraft(source = {}) {
     identity: source.identity || '',
     score: source.score === '' || source.score === undefined || source.score === null ? '' : String(source.score),
     rank: source.rank === '' || source.rank === undefined || source.rank === null ? '' : String(source.rank),
-    family_resources: source.family_resources || '',
+    family_resources: '',
     interest_subjects: source.interest_subjects || '',
     region_preference: source.region_preference || '',
     career_goal: source.career_goal || '',
@@ -287,6 +359,8 @@ const nextActionText = computed(() => {
 })
 const scoreFieldLabel = computed(() => (draft.value.score_type === 'estimated' ? '预估分数' : '分数'))
 const scorePlaceholder = computed(() => (draft.value.score_type === 'estimated' ? '例如：560' : '例如：580'))
+const provincePickerIndex = computed(() => PROVINCE_OPTIONS.indexOf(draft.value.province))
+const provincePickerValue = computed(() => (provincePickerIndex.value >= 0 ? provincePickerIndex.value : 0))
 // === 招呼语 ===
 const greetingText = computed(() => {
   if (!step1Done.value) return '你好，先花 30 秒了解一下吧'
@@ -353,8 +427,8 @@ const step3DescText = computed(() => {
 const step4DescText = computed(() => {
   if (step4Status.value === StepStatus.LOCKED) return '完成测评后解锁'
   if (reportDone.value) return '报告已生成 · 点击查看'
-  if (membershipStore.isActive) return '会员特权已解锁，一键生成'
-  return `${MEMBERSHIP_PRICE_LABEL} 一次解锁 · 邀请 5 人免费`
+  if (membershipStore.canUseDeepReports) return '深度报告已开放，一键生成'
+  return '报告权益暂未开放'
 })
 
 function chipStatus(key) {
@@ -415,6 +489,11 @@ function onClickStep4() {
 function goReport() {
   uni.switchTab({ url: '/pages/report/report' })
 }
+function goDeepReport(mode) {
+  uni.navigateTo({
+    url: `/pages/deep-report-download/deep-report-download?mode=${encodeURIComponent(mode)}`,
+  })
+}
 function goPrivacy() {
   uni.navigateTo({ url: '/pages/privacy/privacy' })
 }
@@ -426,6 +505,11 @@ function openProfileSheet() {
 
 function closeProfileSheet() {
   showProfileSheet.value = false
+}
+
+function selectProvince(event) {
+  const index = Number(event?.detail?.value)
+  draft.value.province = PROVINCE_OPTIONS[index] || ''
 }
 
 function selectCategory(category) {
@@ -451,7 +535,10 @@ function selectScoreType(type) {
 
 function buildProfileBrief(data = {}) {
   const mode = getProfileReportMode(data)
-  if (mode === 'planning') return data.grade || '提前规划'
+  if (mode === 'planning') {
+    const estimate = data.score ? `预估${data.score}分` : data.score_range
+    return [data.grade, estimate].filter(Boolean).join(' · ') || '提前规划'
+  }
   if (mode === 'estimated') return data.score ? `预估${data.score}分` : (data.score_range || '预估分')
   return data.score ? `${data.score}分` : '待补分数'
 }
@@ -481,13 +568,18 @@ onShow(() => {
 onUnload(() => {
   uni.$off('open-profile-sheet', openProfileSheet)
 })
+
+onShareAppMessage(() => ({
+  title: '邀请你一起生成高考志愿参考报告',
+  path: `/pages/index/index?inviterId=${membershipStore.userId || ''}`,
+}))
 </script>
 
 <style lang="scss" scoped>
 .page {
   min-height: 100vh;
   background: linear-gradient(180deg, #fff7ed 0%, #ffffff 25%, #f9fafb 100%);
-  padding: 32rpx 28rpx 60rpx;
+  padding: calc(92rpx + env(safe-area-inset-top)) 28rpx 72rpx;
   position: relative;
   box-sizing: border-box;
 }
@@ -498,58 +590,58 @@ onUnload(() => {
 }
 
 /* === 顶部品牌 === */
-.brand { text-align: center; padding: 16rpx 0 28rpx; position: relative; z-index: 1; }
+.brand { text-align: center; padding: 14rpx 0 38rpx; position: relative; z-index: 1; }
 .logo {
-  width: 84rpx; height: 84rpx; margin: 0 auto 12rpx;
-  border-radius: 50%; overflow: hidden;
-  background: linear-gradient(135deg, #f97316, #ea580c);
-  box-shadow: 0 8rpx 24rpx rgba(249, 115, 22, 0.28);
+  width: 104rpx; height: 104rpx; margin: 0 auto 16rpx;
+  border-radius: 26rpx; overflow: hidden;
+  background: transparent;
+  box-shadow: 0 10rpx 24rpx rgba(194, 65, 12, 0.16);
   display: flex; align-items: center; justify-content: center;
 }
-.logo-img { width: 64rpx; height: 64rpx; }
-.brand-name { display: block; font-size: 36rpx; font-weight: 700; color: #111827; }
-.brand-greet { display: block; font-size: 22rpx; color: #6b7280; margin-top: 6rpx; }
+.logo-img { width: 104rpx; height: 104rpx; }
+.brand-name { display: block; font-size: 40rpx; font-weight: 800; color: #111827; }
+.brand-greet { display: block; font-size: 26rpx; color: #64748b; margin-top: 10rpx; }
 
 /* === 进度卡 === */
 .progress-card {
   background: rgba(255, 255, 255, 0.9);
   border: 1rpx solid #eef2f7;
-  border-radius: 16rpx;
-  padding: 22rpx 24rpx;
+  border-radius: 20rpx;
+  padding: 26rpx 26rpx;
   box-shadow: 0 2rpx 8rpx rgba(15, 23, 42, 0.03);
-  margin-bottom: 24rpx;
+  margin-bottom: 26rpx;
 }
 .progress-top { display: flex; justify-content: space-between; align-items: center; }
-.progress-label { font-size: 24rpx; color: #6b7280; }
-.progress-hint { font-size: 22rpx; color: #0f766e; font-weight: 600; }
-.progress-stat { margin-top: 6rpx; }
-.progress-frac { font-size: 38rpx; font-weight: 800; color: #111827; }
-.progress-total { font-size: 24rpx; font-weight: 500; color: #9ca3af; }
-.progress-bar { height: 8rpx; background: #f3f4f6; border-radius: 99rpx; margin-top: 12rpx; overflow: hidden; }
+.progress-label { font-size: 27rpx; color: #6b7280; font-weight: 600; }
+.progress-hint { font-size: 25rpx; color: #0f766e; font-weight: 700; }
+.progress-stat { margin-top: 8rpx; }
+.progress-frac { font-size: 44rpx; font-weight: 800; color: #111827; }
+.progress-total { font-size: 27rpx; font-weight: 500; color: #9ca3af; }
+.progress-bar { height: 9rpx; background: #f3f4f6; border-radius: 99rpx; margin-top: 14rpx; overflow: hidden; }
 .progress-fill {
   height: 100%; border-radius: 99rpx;
   background: linear-gradient(90deg, #14b8a6, #f59e0b);
   transition: width 0.4s ease;
 }
-.progress-guide { display: block; font-size: 21rpx; color: #7c8794; margin-top: 12rpx; line-height: 1.5; }
+.progress-guide { display: block; font-size: 24rpx; color: #7c8794; margin-top: 14rpx; line-height: 1.5; }
 
 /* === 步骤卡 === */
 .step {
-  background: white; border-radius: 18rpx;
-  padding: 22rpx 24rpx; margin-bottom: 14rpx;
-  display: flex; align-items: center; gap: 18rpx;
+  background: white; border-radius: 20rpx;
+  padding: 26rpx 24rpx; margin-bottom: 16rpx;
+  display: flex; align-items: center; gap: 20rpx;
   box-shadow: 0 2rpx 8rpx rgba(17, 24, 39, 0.04);
 }
 .step-icon {
-  width: 56rpx; height: 56rpx; border-radius: 14rpx;
+  width: 62rpx; height: 62rpx; border-radius: 16rpx;
   background: #f3f4f6; color: #9ca3af;
   display: flex; align-items: center; justify-content: center;
-  font-weight: 700; font-size: 26rpx; flex-shrink: 0;
+  font-weight: 700; font-size: 29rpx; flex-shrink: 0;
 }
 .step-body { flex: 1; min-width: 0; }
-.step-title { display: block; font-size: 28rpx; font-weight: 600; color: #111827; }
-.step-desc { display: block; font-size: 22rpx; color: #9ca3af; margin-top: 4rpx; }
-.step-arrow { color: #d1d5db; font-size: 32rpx; }
+.step-title { display: block; font-size: 31rpx; font-weight: 700; color: #111827; }
+.step-desc { display: block; font-size: 25rpx; color: #9ca3af; margin-top: 6rpx; line-height: 1.4; }
+.step-arrow { color: #d1d5db; font-size: 36rpx; }
 
 .step-done .step-icon { background: #d1fae5; color: #059669; }
 .step-done .step-desc { color: #059669; }
@@ -566,17 +658,17 @@ onUnload(() => {
 /* === 展开形态 === */
 .step-expanded {
   flex-direction: column; align-items: stretch;
-  padding: 24rpx; gap: 0;
+  padding: 28rpx 26rpx; gap: 0;
 }
-.step-expanded .step-top-row { display: flex; align-items: center; gap: 18rpx; }
-.chips { display: flex; gap: 12rpx; margin-top: 18rpx; }
+.step-expanded .step-top-row { display: flex; align-items: center; gap: 20rpx; }
+.chips { display: flex; gap: 14rpx; margin-top: 20rpx; }
 .chip {
   flex: 1; background: #f9fafb; border-radius: 10rpx;
-  padding: 12rpx 6rpx; text-align: center;
+  padding: 14rpx 6rpx; text-align: center;
   border: 1rpx solid #e5e7eb;
 }
-.chip-label { display: block; font-size: 22rpx; color: #6b7280; }
-.chip-status { display: block; font-size: 22rpx; color: #9ca3af; margin-top: 4rpx; }
+.chip-label { display: block; font-size: 25rpx; color: #6b7280; }
+.chip-status { display: block; font-size: 24rpx; color: #9ca3af; margin-top: 4rpx; }
 .chip.done { background: #ecfdf5; border-color: #a7f3d0; }
 .chip.done .chip-status { color: #059669; font-weight: 700; }
 .chip.next { background: #fff7ed; border-color: #fdba74; }
@@ -615,6 +707,83 @@ onUnload(() => {
   text-align: center; padding: 18rpx; border-radius: 14rpx;
   font-weight: 700; font-size: 28rpx;
 }
+
+/* === 深度报告快捷入口 === */
+.deep-report-section { margin-top: 34rpx; }
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20rpx;
+  margin-bottom: 18rpx;
+  padding: 0 4rpx;
+}
+.section-title { color: #111827; font-size: 32rpx; font-weight: 800; }
+.section-subtitle { color: #94a3b8; font-size: 23rpx; text-align: right; }
+.deep-report-grid { display: flex; gap: 16rpx; }
+.deep-report-card {
+  flex: 1;
+  min-width: 0;
+  min-height: 264rpx;
+  border-radius: 22rpx;
+  padding: 24rpx 22rpx 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: 1rpx solid transparent;
+  box-shadow: 0 8rpx 24rpx rgba(15, 23, 42, 0.06);
+}
+.deep-report-card.university {
+  background: linear-gradient(145deg, #eff6ff 0%, #ffffff 100%);
+  border-color: #dbeafe;
+}
+.deep-report-card.major {
+  background: linear-gradient(145deg, #fff7ed 0%, #ffffff 100%);
+  border-color: #ffedd5;
+}
+.deep-report-icon {
+  width: 58rpx;
+  height: 58rpx;
+  border-radius: 17rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 27rpx;
+  font-weight: 800;
+  box-shadow: 0 6rpx 16rpx rgba(15, 23, 42, 0.12);
+}
+.university .deep-report-icon { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+.major .deep-report-icon { background: linear-gradient(135deg, #fb923c, #ea580c); }
+.deep-report-title {
+  display: block;
+  color: #111827;
+  font-size: 29rpx;
+  font-weight: 800;
+  margin-top: 20rpx;
+  line-height: 1.3;
+}
+.deep-report-desc {
+  display: block;
+  color: #64748b;
+  font-size: 23rpx;
+  line-height: 1.55;
+  margin-top: 10rpx;
+  flex: 1;
+}
+.deep-report-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18rpx;
+  padding-top: 16rpx;
+  border-top: 1rpx solid rgba(148, 163, 184, 0.18);
+  font-size: 24rpx;
+  font-weight: 700;
+}
+.university .deep-report-link { color: #2563eb; }
+.major .deep-report-link { color: #ea580c; }
+.deep-report-arrow { font-size: 32rpx; line-height: 1; }
 
 /* === 基础信息弹窗 === */
 .profile-sheet-mask {
@@ -668,6 +837,32 @@ onUnload(() => {
   font-size: 28rpx;
   color: #111827;
   box-sizing: border-box;
+}
+.province-picker {
+  height: 78rpx;
+  background: #f9fafb;
+  border: 1rpx solid #e5e7eb;
+  border-radius: 12rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16rpx;
+}
+.province-picker-text {
+  flex: 1;
+  min-width: 0;
+  color: #111827;
+  font-size: 28rpx;
+}
+.province-picker.placeholder .province-picker-text {
+  color: #9ca3af;
+}
+.province-picker-arrow {
+  color: #9ca3af;
+  font-size: 24rpx;
+  line-height: 1;
 }
 .mode-cards {
   display: flex;
@@ -738,7 +933,7 @@ onUnload(() => {
 .profile-save-btn::after { border: none; }
 
 /* === 免责声明 === */
-.disclaimer { margin-top: 40rpx; text-align: center; }
-.disclaimer-text { display: block; font-size: 20rpx; color: #9ca3af; line-height: 1.6; }
-.privacy-link { display: inline-block; font-size: 22rpx; color: #f97316; margin-top: 8rpx; }
+.disclaimer { margin-top: 44rpx; text-align: center; }
+.disclaimer-text { display: block; font-size: 22rpx; color: #9ca3af; line-height: 1.65; }
+.privacy-link { display: inline-block; font-size: 24rpx; color: #f97316; margin-top: 10rpx; }
 </style>

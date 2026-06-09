@@ -1,8 +1,7 @@
 <template>
   <view class="download-page">
     <view class="page-header">
-      <text class="eyebrow">深度报告库</text>
-      <text class="title">在线阅读与下载</text>
+      <text class="title">深度报告库</text>
       <text class="subtitle">选择学校或专业，先在线阅读精排版报告；需要离线保存时再下载 PDF。</text>
     </view>
 
@@ -41,16 +40,9 @@
       </button>
     </view>
 
-    <view class="access-card" :class="{ active: membershipStore.isActive }">
-      <text class="access-title">{{ membershipStore.isActive ? '会员权益已开通' : '在线阅读免费，PDF 需要会员权益' }}</text>
-      <text class="access-desc">
-        {{
-          membershipStore.isActive
-            ? `在线阅读不限次数，PDF 剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
-            : '在线阅读免费不限次数；需要离线保存或转发时，再开通会员下载完整 PDF。'
-        }}
-      </text>
-      <button v-if="!membershipStore.isActive" class="access-btn" @click="goMembership">去开通</button>
+    <view class="access-card active">
+      <text class="access-title">{{ accessTitle }}</text>
+      <text class="access-desc">{{ accessDesc }}</text>
     </view>
 
     <view v-if="loading" class="state-block">
@@ -64,8 +56,22 @@
     <view v-else class="result-list">
       <view v-for="item in results" :key="itemKey(item)" class="result-item">
         <view class="result-main">
-          <text class="item-title">{{ itemTitle(item) }}</text>
-          <text class="item-meta">{{ itemMeta(item) }}</text>
+          <view class="item-head">
+            <view v-if="mode === 'university'" class="school-logo-wrap">
+              <image
+                v-if="!logoFailed[item.name]"
+                class="school-logo"
+                :src="universityLogoSrc(item)"
+                mode="aspectFit"
+                @error="markLogoFailed(item)"
+              />
+              <text v-else class="school-logo-fallback">{{ schoolLogoFallback(item) }}</text>
+            </view>
+            <view class="item-title-block">
+              <text class="item-title">{{ itemTitle(item) }}</text>
+              <text class="item-meta">{{ itemMeta(item) }}</text>
+            </view>
+          </view>
           <view class="summary-card-row">
             <text
               v-for="badge in decisionBadges(item)"
@@ -76,12 +82,16 @@
             </text>
           </view>
           <view class="takeaway-panel">
-            <text class="takeaway-title">重点摘要</text>
-            <text class="takeaway-text">{{ summaryTakeaways(item).summary }}</text>
-            <text class="takeaway-title action">行动建议</text>
-            <text class="takeaway-text">{{ summaryTakeaways(item).action }}</text>
+            <view class="takeaway-item primary">
+              <text class="takeaway-title">关键判断</text>
+              <text class="takeaway-text">{{ summaryTakeaways(item).summary }}</text>
+            </view>
+            <view class="takeaway-divider" />
+            <view class="takeaway-item action">
+              <text class="takeaway-title">下一步核验</text>
+              <text class="takeaway-text">{{ summaryTakeaways(item).action }}</text>
+            </view>
           </view>
-          <text class="item-summary">{{ item.summary || '该报告已入库，可在线阅读或下载完整 PDF 查看。' }}</text>
         </view>
         <view class="item-actions">
           <button class="read-btn" @click="openDeepReport(item)">在线阅读</button>
@@ -103,11 +113,12 @@
 
 <script setup>
 import { computed, onMounted, ref } from 'vue'
-import { onLoad } from '@dcloudio/uni-app'
-import { API_BASE, PDF_DOWNLOAD_ENABLED } from '../../config.js'
+import { onLoad, onShow } from '@dcloudio/uni-app'
+import { API_BASE, FREE_DEEP_REPORTS_ENABLED, PDF_DOWNLOAD_ENABLED } from '../../config.js'
 import { requestBackendData } from '../../api/backend.js'
 import pinia from '../../stores'
 import { useMembershipStore } from '../../stores/membership.js'
+import { loadUserProfile } from '../../utils/storage.js'
 
 const tabs = [
   { label: '大学报告', value: 'university' },
@@ -120,16 +131,68 @@ const results = ref([])
 const loading = ref(false)
 const errorMsg = ref('')
 const hasSearched = ref(false)
+const logoFailed = ref({})
+const currentProfile = ref(loadUserProfile())
 
 const membershipStore = useMembershipStore(pinia)
+
+const DEFAULT_UNIVERSITY_EXAMPLES = ['中山大学', '华南理工大学', '深圳大学']
+const PROVINCE_UNIVERSITY_EXAMPLES = {
+  北京: ['北京大学', '清华大学', '中国人民大学'],
+  天津: ['南开大学', '天津大学', '天津医科大学'],
+  河北: ['河北工业大学', '燕山大学', '河北大学'],
+  山西: ['太原理工大学', '山西大学', '中北大学'],
+  内蒙古: ['内蒙古大学', '内蒙古农业大学', '内蒙古师范大学'],
+  辽宁: ['大连理工大学', '东北大学', '辽宁大学'],
+  吉林: ['吉林大学', '东北师范大学', '延边大学'],
+  黑龙江: ['哈尔滨工业大学', '哈尔滨工程大学', '东北林业大学'],
+  上海: ['复旦大学', '上海交通大学', '同济大学'],
+  江苏: ['南京大学', '东南大学', '苏州大学'],
+  浙江: ['浙江大学', '宁波大学', '浙江工业大学'],
+  安徽: ['中国科学技术大学', '合肥工业大学', '安徽大学'],
+  福建: ['厦门大学', '福州大学', '福建师范大学'],
+  江西: ['南昌大学', '江西财经大学', '江西师范大学'],
+  山东: ['山东大学', '中国海洋大学', '中国石油大学（华东）'],
+  河南: ['郑州大学', '河南大学', '河南师范大学'],
+  湖北: ['武汉大学', '华中科技大学', '武汉理工大学'],
+  湖南: ['湖南大学', '中南大学', '湖南师范大学'],
+  广东: ['中山大学', '华南理工大学', '深圳大学'],
+  广西: ['广西大学', '广西师范大学', '桂林电子科技大学'],
+  海南: ['海南大学', '海南师范大学', '海南热带海洋学院'],
+  重庆: ['重庆大学', '西南大学', '重庆邮电大学'],
+  四川: ['四川大学', '电子科技大学', '西南交通大学'],
+  贵州: ['贵州大学', '贵州师范大学', '贵州医科大学'],
+  云南: ['云南大学', '昆明理工大学', '云南师范大学'],
+  西藏: ['西藏大学', '西藏民族大学', '西藏农牧学院'],
+  陕西: ['西安交通大学', '西北工业大学', '西安电子科技大学'],
+  甘肃: ['兰州大学', '西北师范大学', '兰州交通大学'],
+  青海: ['青海大学', '青海师范大学', '青海民族大学'],
+  宁夏: ['宁夏大学', '宁夏医科大学', '北方民族大学'],
+  新疆: ['新疆大学', '石河子大学', '新疆医科大学'],
+}
 
 const collection = computed(() => mode.value === 'major' ? 'majors' : 'universities')
 const otherMode = computed(() => mode.value === 'major' ? 'university' : 'major')
 const otherModeLabel = computed(() => mode.value === 'major' ? '搜大学报告' : '搜专业报告')
+const provinceUniversityExamples = computed(() => (
+  PROVINCE_UNIVERSITY_EXAMPLES[normalizeProvinceName(currentProfile.value?.province)] || DEFAULT_UNIVERSITY_EXAMPLES
+))
 const exampleKeywords = computed(() => (
   mode.value === 'major'
     ? ['计算机', '临床医学', '法学']
-    : ['中山大学', '华南理工大学', '深圳大学']
+    : provinceUniversityExamples.value
+))
+const accessTitle = computed(() => (
+  FREE_DEEP_REPORTS_ENABLED
+    ? '1.3.0 免费开放'
+    : membershipStore.isActive ? '会员权益已开通' : 'PDF 下载权益暂未开通'
+))
+const accessDesc = computed(() => (
+  FREE_DEEP_REPORTS_ENABLED
+    ? '在线阅读免费不限次数；当前版本也开放 PDF 下载，方便离线保存和转发给家长。'
+    : membershipStore.isActive
+      ? `在线阅读不限次数，PDF 剩余下载次数 ${membershipStore.downloadQuota.remaining}/${membershipStore.downloadQuota.limit}`
+      : '在线阅读免费不限次数；PDF 下载暂未开通。'
 ))
 
 const emptyTitle = computed(() => {
@@ -141,8 +204,8 @@ const emptyTitle = computed(() => {
 const emptyDesc = computed(() => {
   if (!hasSearched.value || !keyword.value) {
     return mode.value === 'major'
-      ? '可输入专业名称或专业代码，系统会匹配 5000 字以上完整报告。'
-      : '可输入学校全称或关键词，系统会匹配 5000 字以上完整报告。'
+      ? '可输入专业名称或专业代码，系统会匹配已入库的深度报告。'
+      : '可输入学校全称或关键词，系统会匹配已入库的深度报告。'
   }
   return '换一个更完整的名称试试，或切换到另一类报告继续查询。'
 })
@@ -164,6 +227,16 @@ onMounted(async () => {
   await searchReports()
 })
 
+onShow(() => {
+  currentProfile.value = loadUserProfile()
+})
+
+function normalizeProvinceName(province = '') {
+  return String(province || '')
+    .trim()
+    .replace(/壮族自治区$|回族自治区$|维吾尔自治区$|自治区$|省$|市$/g, '')
+}
+
 function switchMode(nextMode) {
   if (mode.value === nextMode) return
   mode.value = nextMode
@@ -171,6 +244,7 @@ function switchMode(nextMode) {
   results.value = []
   errorMsg.value = ''
   hasSearched.value = false
+  logoFailed.value = {}
   searchReports()
 }
 
@@ -196,8 +270,29 @@ function itemMeta(item) {
   if (item.univ_type) parts.push(item.univ_type)
   if (item.category) parts.push(item.category)
   if (item.word_count) parts.push(`${item.word_count} 字`)
-  parts.push('5000 字以上完整报告')
   return parts.join(' · ')
+}
+
+function universityLogoSrc(item) {
+  if (item.logo_url) return item.logo_url
+  if (!item.name) return ''
+  return `${API_BASE}/api/reports/universities/logo?name=${encodeURIComponent(item.name)}`
+}
+
+function markLogoFailed(item) {
+  if (!item?.name) return
+  logoFailed.value = {
+    ...logoFailed.value,
+    [item.name]: true,
+  }
+}
+
+function schoolLogoFallback(item) {
+  const name = String(item?.name || '校')
+    .replace(/[（）()]/g, '')
+    .replace(/大学|学院|学校|职业|技术|师范/g, '')
+    .trim()
+  return (name.slice(0, 2) || '校徽')
 }
 
 function overviewOf(item) {
@@ -222,9 +317,29 @@ function decisionBadges(item) {
   return badges
 }
 
+function cleanReportText(text = '') {
+  return String(text || '')
+    .replace(/\*\*(.*?)\*\*/g, '$1')
+    .replace(/#{1,6}\s*/g, '')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/\[(直接回答|深度扩写|需搜索[^\]]*)\]/g, '')
+    .replace(/摘要[:：]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+function compactText(text = '', maxLength = 96) {
+  const cleaned = cleanReportText(text)
+  if (cleaned.length <= maxLength) return cleaned
+  return `${cleaned.slice(0, maxLength)}...`
+}
+
 function summaryTakeaways(item) {
   const overview = overviewOf(item)
-  const summary = item.summary || overview.summary || '该报告已入库，建议先确认名称匹配，再下载完整 PDF 看细节。'
+  const summary = compactText(
+    item.summary || overview.summary || '该报告已入库，建议先确认名称匹配，再在线阅读完整报告看细节。',
+    110
+  )
   const action = mode.value === 'major'
     ? '先核验培养方案、课程难度、升学比例和近三年就业质量报告。'
     : '先核验招生章程、专业组限制、近三年位次和转专业规则。'
@@ -281,18 +396,16 @@ function reportIdentity(item) {
   }
 }
 
-async function ensureMembership({ requireDownloadQuota = false } = {}) {
+async function ensureReportDownloadAccess() {
+  await membershipStore.ensureLogin()
+  if (FREE_DEEP_REPORTS_ENABLED) return
+
   await membershipStore.loadStatus()
   if (!membershipStore.isActive) {
-    throw new Error('完整深度报告属于付费权益，请先开通会员')
+    throw new Error('PDF 下载权益暂未开通')
   }
   if (!membershipStore.sessionToken) {
     throw new Error('请先完成微信登录后再查看完整报告')
-  }
-  if (requireDownloadQuota && membershipStore.downloadQuota.remaining <= 0) {
-    const error = new Error('深度报告下载次数已用完')
-    error.code = 'DOWNLOAD_QUOTA_EXHAUSTED'
-    throw error
   }
 }
 
@@ -336,16 +449,13 @@ async function downloadDeepPdf(item) {
   }
 
   try {
-    await ensureMembership({ requireDownloadQuota: true })
+    await ensureReportDownloadAccess()
   } catch (err) {
     uni.showModal({
-      title: err.code === 'DOWNLOAD_QUOTA_EXHAUSTED' ? '下载次数已用完' : '需要会员权益',
-      content: err.message || '请先开通会员后下载完整 PDF。',
-      confirmText: '去开通',
-      cancelText: '先看看',
-      success: (res) => {
-        if (res.confirm) goMembership()
-      },
+      title: '无法下载 PDF',
+      content: err.message || '请稍后重试。',
+      confirmText: '知道了',
+      showCancel: false,
     })
     return
   }
@@ -373,11 +483,7 @@ async function downloadDeepPdf(item) {
         })
       } else {
         uni.hideLoading()
-        if (res.statusCode === 429) {
-          uni.showToast({ title: '深度报告下载次数已用完', icon: 'none' })
-        } else {
-          uni.showToast({ title: 'PDF 生成失败，请稍后重试', icon: 'none' })
-        }
+        uni.showToast({ title: 'PDF 生成失败，请稍后重试', icon: 'none' })
       }
     },
     fail: () => {
@@ -387,9 +493,6 @@ async function downloadDeepPdf(item) {
   })
 }
 
-function goMembership() {
-  uni.switchTab({ url: '/pages/profile/profile' })
-}
 </script>
 
 <style lang="scss" scoped>
@@ -407,13 +510,6 @@ function goMembership() {
   flex-direction: column;
   gap: 12rpx;
   margin-bottom: 28rpx;
-}
-
-.eyebrow {
-  color: $brand-primary;
-  font-size: 22rpx;
-  font-weight: 800;
-  letter-spacing: 0;
 }
 
 .title {
@@ -569,7 +665,46 @@ function goMembership() {
 .result-main {
   display: flex;
   flex-direction: column;
-  gap: 12rpx;
+  gap: 14rpx;
+}
+
+.item-head {
+  display: flex;
+  align-items: center;
+  gap: 18rpx;
+}
+
+.school-logo-wrap {
+  width: 76rpx;
+  height: 76rpx;
+  flex-shrink: 0;
+  border-radius: 18rpx;
+  background: #FFFFFF;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  box-shadow: 0 8rpx 18rpx rgba(15, 23, 42, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.school-logo {
+  width: 66rpx;
+  height: 66rpx;
+}
+
+.school-logo-fallback {
+  color: $brand-primary;
+  font-size: 22rpx;
+  font-weight: 850;
+}
+
+.item-title-block {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
 }
 
 .item-title {
@@ -602,36 +737,41 @@ function goMembership() {
 }
 
 .takeaway-panel {
-  padding: 18rpx 20rpx;
-  border-radius: $radius-md;
-  background: #F8FAFC;
-  border: 1px solid $border-light;
+  padding: 20rpx;
+  border-radius: 18rpx;
+  background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.takeaway-item {
   display: flex;
   flex-direction: column;
   gap: 8rpx;
 }
 
-.takeaway-title {
-  color: $text-primary;
-  font-size: 24rpx;
-  font-weight: 850;
+.takeaway-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(148, 163, 184, 0.18), rgba(148, 163, 184, 0));
 }
 
-.takeaway-title.action {
-  margin-top: 6rpx;
+.takeaway-title {
+  color: #0f766e;
+  font-size: 24rpx;
+  font-weight: 850;
+  line-height: 1.3;
+}
+
+.takeaway-item.action .takeaway-title {
   color: #b45309;
 }
 
 .takeaway-text {
   color: $text-secondary;
   font-size: 24rpx;
-  line-height: 1.55;
-}
-
-.item-summary {
-  color: $text-secondary;
-  font-size: 26rpx;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 .item-actions {
