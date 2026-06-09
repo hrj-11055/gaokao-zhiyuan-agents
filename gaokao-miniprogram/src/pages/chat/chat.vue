@@ -21,7 +21,7 @@
         </view>
 
         <view v-if="showWelcomeSuggestions" class="suggestion-panel">
-          <text class="suggestion-title">建议下一问</text>
+          <text class="suggestion-title">从关键决策开始</text>
           <view class="suggestion-list">
             <view
               v-for="chip in quickQuestions"
@@ -55,17 +55,17 @@
               </view>
             </view>
 
-            <view v-if="shouldShowSuggestionsAfterMessage(msg, index)" class="suggestion-panel after-message">
-              <text class="suggestion-title">建议下一问</text>
-              <view class="suggestion-list">
-                <view
-                  v-for="chip in quickQuestions"
-                  :key="chip"
-                  class="suggestion-chip"
-                  @click="onQuickSelect(chip)"
-                >
-                  <text class="suggestion-chip-text">{{ chip }}</text>
-                </view>
+            <view v-if="shouldShowPersonalityNextStep(msg, index)" class="next-step-card">
+              <view class="next-step-copy">
+                <text class="next-step-kicker">报考建议之后</text>
+                <text class="next-step-title">下一步：认识你的性格与决策方式</text>
+                <text class="next-step-desc">
+                  报考方向已经初步梳理好了。完成性格测试后，后续专业建议会更贴合你的判断方式、学习偏好和行动节奏。
+                </text>
+              </view>
+              <view class="next-step-btn" @click="goPersonalityTest">
+                <text class="next-step-btn-text">开始性格测试</text>
+                <text class="next-step-btn-arrow">›</text>
               </view>
             </view>
           </view>
@@ -101,16 +101,21 @@ import { ref, computed, nextTick } from 'vue'
 import { onShow } from '@dcloudio/uni-app'
 import ChatBubble from '../../components/ChatBubble.vue'
 import { useChat } from './useChat.js'
-import { isProfileComplete, loadUserProfile } from '../../utils/storage.js'
+import { getProfileReportMode, isProfileComplete, loadAssessments, loadUserProfile } from '../../utils/storage.js'
 import { buildCandidateQuestions } from './profileFollowup.js'
 
-const welcomeMsg = '你不用先想出一个完美问题。我们先把分数、位次、专业方向和现实约束拆开看；我会尽量用分数线说话，也会直接提醒不值得赌的地方。'
-
+const LONG_ANSWER_MIN_LENGTH = 500
 const scrollTop = ref(0)
 const profile = ref(loadUserProfile())
+const assessments = ref(loadAssessments())
 const { chatStore, inputText, isStreaming, onSend, onRetry } = useChat()
 const messages = computed(() => chatStore.messages)
 const isProfileReady = computed(() => isProfileComplete(profile.value))
+const welcomeMsg = computed(() => (
+  getProfileReportMode(profile.value) === 'planning'
+    ? '你不用先想出一个完美问题。当前先做提前升学规划：一起看专业方向、学科能力、探索任务和家庭约束，不需要先有正式分数和位次。'
+    : '你不用先想出一个完美问题。我们先把分数、位次、专业方向和现实约束拆开看；我会尽量用分数线说话，也会直接提醒不值得赌的地方。'
+))
 const quickQuestions = computed(() => buildCandidateQuestions(profile.value))
 const showWelcomeSuggestions = computed(() => messages.value.length === 0 && isProfileReady.value)
 const inputPlaceholder = computed(() => (
@@ -120,6 +125,7 @@ const hasUserMessage = computed(() => messages.value.some((msg) => msg.role === 
 
 onShow(() => {
   profile.value = loadUserProfile()
+  assessments.value = loadAssessments()
   chatStore.loadHistory()
 })
 
@@ -180,6 +186,10 @@ function goCompleteProfile() {
   setTimeout(() => uni.$emit('open-profile-sheet'), 200)
 }
 
+function goPersonalityTest() {
+  uni.navigateTo({ url: '/pages/mbti/mbti' })
+}
+
 function handleRetry() {
   onRetry({
     onScrollToBottom: scrollToBottom,
@@ -201,11 +211,15 @@ function canRegenerateMessage(msg, index) {
   )
 }
 
-function shouldShowSuggestionsAfterMessage(msg, index) {
+function shouldShowPersonalityNextStep(msg, index) {
+  const answerLength = String(msg.content || '').replace(/\s+/g, '').length
   return Boolean(
     msg.role === 'ai' &&
     index === messages.value.length - 1 &&
-    !isStreaming.value
+    !isStreaming.value &&
+    !msg.truncated &&
+    !assessments.value.mbti.completed &&
+    answerLength >= LONG_ANSWER_MIN_LENGTH
   )
 }
 </script>
@@ -316,10 +330,6 @@ page {
   box-sizing: border-box;
 }
 
-.suggestion-panel.after-message {
-  margin-top: -18rpx;
-}
-
 .suggestion-title {
   display: block;
   margin-bottom: 14rpx;
@@ -353,6 +363,70 @@ page {
   color: #4b5563;
   font-size: 23rpx;
   line-height: 1.35;
+}
+
+.next-step-card {
+  margin: -18rpx 32rpx 30rpx 128rpx;
+  padding: 24rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(135deg, rgba(255, 247, 237, 0.98) 0%, rgba(255, 255, 255, 0.94) 100%);
+  border: 2rpx solid rgba(249, 115, 22, 0.2);
+  box-shadow: 0 12rpx 32rpx rgba(124, 45, 18, 0.08);
+  box-sizing: border-box;
+}
+
+.next-step-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+
+.next-step-kicker {
+  color: #ea580c;
+  font-size: 22rpx;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.next-step-title {
+  color: #1f2937;
+  font-size: 28rpx;
+  line-height: 1.4;
+  font-weight: 900;
+}
+
+.next-step-desc {
+  color: #64748b;
+  font-size: 24rpx;
+  line-height: 1.55;
+}
+
+.next-step-btn {
+  height: 72rpx;
+  margin-top: 20rpx;
+  padding: 0 24rpx;
+  border-radius: 14rpx;
+  background: #f97316;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8rpx 18rpx rgba(249, 115, 22, 0.2);
+}
+
+.next-step-btn:active {
+  background: #ea580c;
+}
+
+.next-step-btn-text,
+.next-step-btn-arrow {
+  color: #ffffff;
+  font-size: 26rpx;
+  font-weight: 800;
+}
+
+.next-step-btn-arrow {
+  font-size: 36rpx;
+  line-height: 1;
 }
 
 .retry-bar {

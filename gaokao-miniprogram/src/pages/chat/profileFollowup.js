@@ -158,7 +158,10 @@ export function getNextCoreProfileFollowup(inputs = {}) {
 }
 
 export function getNextPersonalProfileFollowup(inputs = {}) {
-  return PERSONAL_FOLLOWUP_STEPS.find((step) => !hasValue(inputs[step.field])) || null
+  return PERSONAL_FOLLOWUP_STEPS.find((step) => {
+    if (step.field === 'rank' && isEarlyPlanningInputs(inputs)) return false
+    return !hasValue(inputs[step.field])
+  }) || null
 }
 
 export function getNextRecommendationProfileFollowup(inputs = {}) {
@@ -261,36 +264,26 @@ export function mergeProfileFactsFromText(profile = {}, text = '') {
 export function buildCandidateQuestions(profile = {}) {
   const province = normalizeProvince(profile.province)
   const category = normalizeCategory(profile.category)
+  if (isEarlyPlanningInputs(profile)) {
+    const stage = [profile.grade, profile.identity].filter(Boolean).join('') || '提前规划家庭'
+    const base = [province, category, stage].filter(Boolean).join(' · ')
+    return [
+      `结合${base || '我的当前阶段'}，未来一年最值得优先验证的 3 个专业方向是什么？`,
+      '我应该安排哪些真实体验，判断自己是否真的适合这些专业方向？',
+      '哪些能力短板会限制我未来的专业选择？请给出具体补齐顺序。',
+      '请给我一份从现在到填报前的阶段性行动清单，并标出每阶段的验证目标。',
+    ]
+  }
+
   const score = profile.score !== undefined && profile.score !== '' ? Number(profile.score) : ''
   const scoreText = Number.isFinite(score) ? `${score}分` : ''
   const profileText = [province, category, scoreText].filter(Boolean).join('')
+  const base = profileText ? `按我${profileText}` : '结合我的当前情况'
 
-  const questions = []
-  if (profileText) {
-    questions.push(`按我${profileText}，适合什么学校层次？`)
-  } else {
-    questions.push('我适合报考什么层次的学校？')
-  }
-
-  if (category === '物理类') {
-    questions.push('物理类更适合工科还是理科？')
-  } else if (category === '历史类') {
-    questions.push('历史类适合法学财经还是师范？')
-  } else {
-    questions.push('我应该优先看学校、专业还是城市？')
-  }
-
-  if (!hasValue(profile.family_resources)) {
-    questions.push('民办/中外合作要不要考虑？')
-  } else if (!hasValue(profile.interest_subjects)) {
-    questions.push('哪些专业方向不适合我盲目冲？')
-  } else if (!hasValue(profile.region_preference)) {
-    questions.push('省内和外省学校怎么权衡更务实？')
-  } else {
-    questions.push('哪些选择看起来体面但实际风险高？')
-  }
-
-  questions.push('我还需要补充哪些个人信息？')
-
-  return questions.slice(0, 4)
+  return [
+    `${base}，哪些选择最值得争取，哪些最容易踩坑？请说明判断依据。`,
+    `当学校层次、专业前景和城市机会冲突时，${base}应该怎么排序？`,
+    `请结合${profileText || '我的情况'}规划 3 条报考路线，并说明每条路线的风险和退路。`,
+    `结合${profileText || '我的情况'}，哪些热门专业对我并不划算？请按就业、考研和家庭成本分析。`,
+  ]
 }

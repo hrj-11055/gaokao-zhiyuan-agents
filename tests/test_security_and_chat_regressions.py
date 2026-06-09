@@ -71,7 +71,21 @@ class SecurityAndChatRegressionTests(unittest.TestCase):
         self.assertIn("必须带最低分和位次证据", quick_text)
         self.assertIn("专业排雷", quick_text)
         self.assertIn("你不用先想出一个完美问题", chat_text)
+        self.assertIn("从关键决策开始", chat_text)
+        self.assertIn("开始性格测试", chat_text)
+        self.assertNotIn("物理类更适合工科还是理科", chat_text)
         self.assertNotIn("quick-chip", quick_text)
+
+    def test_early_planning_chat_avoids_score_first_guidance(self):
+        quick_path = ROOT / "gaokao-miniprogram" / "src" / "components" / "QuickQuestions.vue"
+        chat_path = ROOT / "gaokao-miniprogram" / "src" / "pages" / "chat" / "chat.vue"
+        quick_text = quick_path.read_text(encoding="utf-8")
+        chat_text = chat_path.read_text(encoding="utf-8")
+
+        self.assertIn("isEarlyPlanning", quick_text)
+        self.assertIn("升学规划", quick_text)
+        self.assertIn("welcomeMsg", chat_text)
+        self.assertIn("提前升学规划", chat_text)
 
     def test_chat_regenerate_replaces_tts_action(self):
         bubble_path = ROOT / "gaokao-miniprogram" / "src" / "components" / "ChatBubble.vue"
